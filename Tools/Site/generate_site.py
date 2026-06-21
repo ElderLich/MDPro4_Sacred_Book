@@ -208,11 +208,29 @@ def write_examples() -> list[dict[str, object]]:
 
     public_dir = DOCS_DIR / "public" / "data"
     public_dir.mkdir(parents=True, exist_ok=True)
+    featured_ids = {int(item["id"]) for item in featured}
     public_examples = [
         {key: value for key, value in item.items() if not key.startswith("_")}
         for item in examples
     ]
     write_text(public_dir / "card-examples.json", json.dumps(public_examples, ensure_ascii=False, indent=2))
+    write_text(public_dir / "featured-card-ids.json", json.dumps(sorted(featured_ids), ensure_ascii=False, indent=2))
+
+    function_usage: dict[str, list[int]] = {}
+    for item in public_examples:
+        for name in item["api_calls"]:
+            function_usage.setdefault(str(name), []).append(int(item["id"]))
+    for card_ids in function_usage.values():
+        card_ids.sort()
+    function_usage = dict(sorted(function_usage.items(), key=lambda pair: pair[0].casefold()))
+    usage_lines = ["{"]
+    for index, (name, card_ids) in enumerate(function_usage.items()):
+        comma = "," if index + 1 < len(function_usage) else ""
+        encoded_name = json.dumps(name, ensure_ascii=False)
+        encoded_ids = json.dumps(card_ids, ensure_ascii=False, separators=(",", ":"))
+        usage_lines.append(f"  {encoded_name}: {encoded_ids}{comma}")
+    usage_lines.append("}")
+    write_text(public_dir / "function-usage.json", "\n".join(usage_lines))
 
     for item in featured:
         card_id = int(item["id"])
@@ -269,8 +287,11 @@ def write_examples() -> list[dict[str, object]]:
         f"- Script files scanned: **{len(examples)}**",
         f"- Featured pages generated: **{len(featured)}**",
         "- Full machine-readable index: `/data/card-examples.json`",
+        "- Featured card IDs: `/data/featured-card-ids.json`",
+        "- Function usage index: `/data/function-usage.json`",
+        "- Interactive search: [Script Explorer](/tools/script-explorer)",
         "",
-        "The featured pages are selected from scripts with many detected API calls and card text available. They are meant as a practical reading set while the API reference stays nearby.",
+        "The featured pages are selected from scripts with many detected API calls and card text available. The Script Explorer can search the full local script set by card ID, card name, script path, or detected API function.",
         "",
         "## Featured Examples",
         "",
@@ -320,6 +341,8 @@ def write_vitepress_config(featured: list[dict[str, object]]) -> None:
         "      { text: 'Learn', link: '/learn/' },",
         "      { text: 'API', link: '/api/' },",
         "      { text: 'Examples', link: '/examples/' },",
+        "      { text: 'Tools', link: '/tools/script-explorer' },",
+        "      { text: 'Roadmap', link: '/roadmap' },",
         "    ],",
         "    sidebar: {",
         "      '/learn/': [",
@@ -357,6 +380,14 @@ def write_vitepress_config(featured: list[dict[str, object]]) -> None:
         "            { text: 'Effect Anatomy', link: '/guides/effect-anatomy' },",
         "            { text: 'Card Database', link: '/guides/card-database' },",
         "            { text: 'Common Patterns', link: '/guides/common-patterns' },",
+        "          ],",
+        "        },",
+        "      ],",
+        "      '/tools/': [",
+        "        {",
+        "          text: 'Tools',",
+        "          items: [",
+        "            { text: 'Script Explorer', link: '/tools/script-explorer' },",
         "          ],",
         "        },",
         "      ],",

@@ -15,6 +15,10 @@ Practical documentation for MDPro3/YGOPro Lua card scripting.
     <strong>Live examples</strong>
     <span>Read real card scripts alongside detected API calls and card text.</span>
   </a>
+  <a class="sacred-card" href="tools/script-explorer">
+    <strong>Script Explorer</strong>
+    <span>Search cards by ID, name, script path, or the functions used in their Lua files.</span>
+  </a>
 </div>
 
 ## Start Here
@@ -29,3 +33,5 @@ Practical documentation for MDPro3/YGOPro Lua card scripting.
 - [Function reference](api/functions/)
 - [Constant reference](api/constants)
 - [Featured card examples](examples/)
+- [Script Explorer](tools/script-explorer)
+- [Roadmap](roadmap)

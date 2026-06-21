@@ -1,0 +1,35 @@
+# Sacred Book Roadmap
+
+This is the working todo for turning Sacred Book into a complete MDPro3 scripting reference. The goal is to teach from the first script file through advanced card behavior, while keeping every reference page grounded in this repository's own data.
+
+## Current Milestone
+
+- [x] Publish the VitePress site through GitHub Pages.
+- [x] Add a beginner learning path with MDPro3-focused examples.
+- [x] Generate API and constant pages from the Sacred Book data.
+- [x] Generate featured card example pages from `cards.cdb` and `Scripts/`.
+- [x] Add the Script Explorer for searching cards and function usage.
+- [ ] Add function usage examples directly to each API page.
+
+## Documentation Coverage
+
+- [ ] Give every function a clear summary, parameter notes, return notes, and at least one script-backed example where possible.
+- [ ] Mark uncertain or inferred behavior clearly, with source confidence.
+- [ ] Add focused pages for common scripting patterns: targeting, costs, operation flow, once-per-turn handling, field zones, counters, and summon procedures.
+- [ ] Expand the beginner path with small complete card scripts that build up one concept at a time.
+- [ ] Add terminology review passes for official Yu-Gi-Oh! wording such as Graveyard, banish, GY, hand, Deck, Extra Deck, and Set.
+
+## Data And Tools
+
+- [ ] Add generated "used by" sections to function pages from `/data/function-usage.json`.
+- [ ] Add source script snippets around each detected function call.
+- [ ] Add card text search and category filtering to the Script Explorer.
+- [ ] Review `DataEditorX/data/lua/constant*` against the generated constant docs and export updated editor-facing files.
+- [ ] Review `DataEditorX/data/mse` category and genre mappings against current scripts/locales.
+
+## Quality Checks
+
+- [ ] Add a site generation check in CI.
+- [ ] Add markdown link validation for generated and hand-written pages.
+- [ ] Add a data freshness report that compares scripts, constants, strings, and locale files against the source folders.
+- [ ] Keep milestone commits small enough that generated-data changes are easy to review.

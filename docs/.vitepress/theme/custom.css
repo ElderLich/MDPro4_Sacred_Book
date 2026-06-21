@@ -111,3 +111,234 @@
     table-layout: auto;
   }
 }
+
+
+.script-explorer {
+  margin-top: 20px;
+}
+
+.explorer-toolbar {
+  display: grid;
+  grid-template-columns: minmax(260px, 1fr) auto;
+  gap: 12px;
+  align-items: end;
+  margin: 18px 0;
+}
+
+.explorer-search {
+  display: grid;
+  gap: 6px;
+  color: var(--vp-c-text-2);
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.explorer-search input {
+  width: 100%;
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 8px;
+  padding: 11px 12px;
+  color: var(--vp-c-text-1);
+  background: var(--vp-c-bg);
+  font-size: 15px;
+}
+
+.explorer-search input:focus {
+  border-color: var(--vp-c-brand-1);
+  outline: 2px solid color-mix(in srgb, var(--vp-c-brand-1) 22%, transparent);
+}
+
+.explorer-modes {
+  display: inline-grid;
+  grid-template-columns: repeat(3, minmax(80px, 1fr));
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 8px;
+  overflow: hidden;
+  background: var(--vp-c-bg-soft);
+}
+
+.explorer-modes button {
+  min-height: 42px;
+  border: 0;
+  border-left: 1px solid var(--vp-c-divider);
+  padding: 0 12px;
+  color: var(--vp-c-text-2);
+  background: transparent;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.explorer-modes button:first-child {
+  border-left: 0;
+}
+
+.explorer-modes button.active {
+  color: var(--vp-c-brand-1);
+  background: var(--vp-c-bg);
+}
+
+.explorer-state {
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 8px;
+  padding: 16px;
+  background: var(--vp-c-bg-soft);
+}
+
+.explorer-stats {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(140px, 1fr));
+  gap: 10px;
+  margin: 18px 0 28px;
+}
+
+.explorer-stats div {
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 8px;
+  padding: 12px;
+  background: var(--vp-c-bg-soft);
+}
+
+.explorer-stats strong {
+  display: block;
+  color: var(--vp-c-text-1);
+  font-size: 22px;
+}
+
+.explorer-stats span,
+.explorer-section-head span,
+.result-meta,
+.more-chip {
+  color: var(--vp-c-text-2);
+}
+
+.explorer-section {
+  margin: 30px 0;
+}
+
+.explorer-section-head {
+  display: flex;
+  gap: 12px;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.explorer-section-head h2 {
+  margin: 0;
+}
+
+.function-chip-list,
+.matched-call-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+}
+
+.api-chip {
+  display: inline-flex;
+  max-width: 100%;
+  min-height: 28px;
+  align-items: center;
+  gap: 7px;
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 6px;
+  padding: 4px 8px;
+  color: var(--vp-c-brand-1);
+  background: var(--vp-c-bg-soft);
+  font-family: var(--vp-font-family-mono);
+  font-size: 12px;
+  line-height: 1.35;
+  overflow-wrap: anywhere;
+  text-decoration: none !important;
+}
+
+.api-chip small {
+  color: var(--vp-c-text-2);
+  font-family: var(--vp-font-family-base);
+  font-size: 11px;
+}
+
+.button-chip {
+  cursor: pointer;
+}
+
+.button-chip:hover,
+.api-chip:hover {
+  border-color: var(--vp-c-brand-1);
+  background: var(--vp-c-bg-alt);
+}
+
+.explorer-results {
+  display: grid;
+  gap: 12px;
+}
+
+.explorer-result {
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 8px;
+  padding: 14px;
+  background: var(--vp-c-bg-soft);
+}
+
+.result-main {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+}
+
+.result-main a,
+.result-main strong {
+  color: var(--vp-c-text-1);
+  font-size: 17px;
+}
+
+.result-main code {
+  border-radius: 6px;
+  padding: 3px 6px;
+  color: var(--vp-c-brand-1);
+  background: var(--vp-c-bg-mute);
+}
+
+.result-meta,
+.result-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 8px;
+  font-size: 13px;
+}
+
+.result-links a {
+  font-weight: 700;
+}
+
+.matched-call-list {
+  margin-top: 12px;
+}
+
+.more-chip {
+  display: inline-flex;
+  min-height: 28px;
+  align-items: center;
+  border: 1px dashed var(--vp-c-divider);
+  border-radius: 6px;
+  padding: 4px 8px;
+  font-size: 12px;
+}
+
+@media (max-width: 760px) {
+  .explorer-toolbar,
+  .explorer-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .explorer-modes {
+    width: 100%;
+  }
+
+  .explorer-section-head {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}

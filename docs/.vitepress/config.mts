@@ -11,6 +11,8 @@ export default defineConfig({
       { text: 'Learn', link: '/learn/' },
       { text: 'API', link: '/api/' },
       { text: 'Examples', link: '/examples/' },
+      { text: 'Tools', link: '/tools/script-explorer' },
+      { text: 'Roadmap', link: '/roadmap' },
     ],
     sidebar: {
       '/learn/': [
@@ -48,6 +50,14 @@ export default defineConfig({
             { text: 'Effect Anatomy', link: '/guides/effect-anatomy' },
             { text: 'Card Database', link: '/guides/card-database' },
             { text: 'Common Patterns', link: '/guides/common-patterns' },
+          ],
+        },
+      ],
+      '/tools/': [
+        {
+          text: 'Tools',
+          items: [
+            { text: 'Script Explorer', link: '/tools/script-explorer' },
           ],
         },
       ],

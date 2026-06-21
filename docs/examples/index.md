@@ -5,8 +5,11 @@ Generated from `cards.cdb` and `Scripts/`.
 - Script files scanned: **13389**
 - Featured pages generated: **96**
 - Full machine-readable index: `/data/card-examples.json`
+- Featured card IDs: `/data/featured-card-ids.json`
+- Function usage index: `/data/function-usage.json`
+- Interactive search: [Script Explorer](/tools/script-explorer)
 
-The featured pages are selected from scripts with many detected API calls and card text available. They are meant as a practical reading set while the API reference stays nearby.
+The featured pages are selected from scripts with many detected API calls and card text available. The Script Explorer can search the full local script set by card ID, card name, script path, or detected API function.
 
 ## Featured Examples
 
