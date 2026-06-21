@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-06-21T11:48:26+00:00",
+    "generated_at": "2026-06-21T11:55:36+00:00",
     "workspace": "D:\\Programs\\GitHub\\MDPro3_Sacred_Book",
     "dataeditorx_data": "D:\\Programs\\GitHub\\DataEditorX\\DataEditorX\\data",
     "mdpro3_locales": "D:\\Programs\\GitHub\\MDPro3_Data\\Data\\locales",
@@ -42783,17 +42783,14 @@
           "description": ""
         }
       ],
-      "returns": [
-        {
-          "type": "nil",
-          "description": ""
-        }
+      "returns": [],
+      "description_zh": [
+        "单卡合并延迟事件使用的重置检查；若持有者已经表侧表示或处于公开状态，则清空保存的事件Group。"
       ],
-      "description_zh": [],
       "description_en": [
-        "TODO document."
+        "Reset check used by single-card merged delayed events. If the owner card is now face-up or public, it clears the stored event group."
       ],
-      "english_status": "missing_documentation",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -42804,7 +42801,10 @@
       "aliases": [
         "aux.ThisCardMovedToPublicResetCheck_ToSingleCard"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -42815,28 +42815,30 @@
       "params": [
         {
           "name": "e",
-          "type": "Effect",
-          "optional": false,
+          "type": "Effect|nil",
+          "optional": true,
           "description": ""
         },
         {
           "name": "tp",
-          "type": "int",
-          "optional": false,
+          "type": "int|nil",
+          "optional": true,
           "description": ""
         }
       ],
       "returns": [
         {
-          "type": "nil",
-          "description": ""
+          "type": "bool",
+          "description": "true if tp controls a Token on the field."
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "判断tp场上是否存在衍生物。省略tp且提供e时，tp默认使用e的持有者玩家。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Returns true if tp controls a Token on the field. If tp is omitted and e is provided, tp defaults to e's handler player."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -42847,7 +42849,10 @@
       "aliases": [
         "aux.tkfcon"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -42897,15 +42902,17 @@
       "params": [],
       "returns": [
         {
-          "type": "nil",
-          "description": ""
+          "type": "bool",
+          "description": "Always true."
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "返回true。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Returns true."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -42916,7 +42923,10 @@
       "aliases": [
         "aux.TRUE"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -42927,15 +42937,17 @@
       "params": [],
       "returns": [
         {
-          "type": "nil",
-          "description": ""
+          "type": "function",
+          "description": "Iterator that yields the turn player, then the other player."
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "返回一个迭代器，先返回当前回合玩家，再返回另一名玩家。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Returns an iterator that yields the current turn player first, then the other player."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -42946,7 +42958,10 @@
       "aliases": [
         "aux.TurnPlayers"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -42964,15 +42979,17 @@
       ],
       "returns": [
         {
-          "type": "nil",
-          "description": ""
+          "type": "function",
+          "description": "Filter function taking Card c and int tp."
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "返回现代同盟怪兽装备效果使用的筛选函数；对象必须表侧表示、由tp控制、没有装备现代同盟怪兽，并满足filter。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Returns a filter for modern Union equip effects. The target must be face-up, controlled by tp, have no modern Union monster equipped, and satisfy filter."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -42983,7 +43000,10 @@
       "aliases": [
         "aux.UnionEquipFilter"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -43001,15 +43021,17 @@
       ],
       "returns": [
         {
-          "type": "nil",
-          "description": ""
+          "type": "function",
+          "description": "Equip Limit value function."
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "返回现代同盟怪兽使用的装备限制Value函数；允许处理者玩家控制且满足filter的卡，并保持当前装备对象合法。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Returns an Equip Limit value function for modern Union monsters. It allows cards controlled by the handler's player that satisfy filter, and also keeps the current equip target legal."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -43020,7 +43042,10 @@
       "aliases": [
         "aux.UnionEquipLimit"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -43031,22 +43056,24 @@
       "params": [
         {
           "name": "equip_filter",
-          "type": "any",
+          "type": "function",
           "optional": false,
           "description": ""
         }
       ],
       "returns": [
         {
-          "type": "nil",
-          "description": ""
+          "type": "function",
+          "description": "Operation function for the shared Union equip effect."
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "返回现代同盟怪兽共通装备效果的操作函数；将处理对象装备给选中的目标，若目标不再有效则因规则把处理对象送去墓地。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Returns the operation function for the shared modern Union equip effect. It equips the handler to the selected target, or sends the handler to the Graveyard by rule if the target is no longer valid."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -43057,7 +43084,10 @@
       "aliases": [
         "aux.UnionEquipOperation"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -43068,22 +43098,24 @@
       "params": [
         {
           "name": "equip_filter",
-          "type": "any",
+          "type": "function",
           "optional": false,
           "description": ""
         }
       ],
       "returns": [
         {
-          "type": "nil",
-          "description": ""
+          "type": "function",
+          "description": "Target function for the shared Union equip effect."
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "返回现代同盟怪兽共通装备效果的目标函数；检查同盟次数标记、可用魔法与陷阱区域，选择有效目标，并登记装备操作信息。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Returns the target function for the shared modern Union equip effect. It checks the once-per-turn Union flag, requires an open Spell & Trap Zone, selects a valid target, and registers equip operation info."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -43094,7 +43126,10 @@
       "aliases": [
         "aux.UnionEquipTarget"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -43117,7 +43152,7 @@
         },
         {
           "name": "r",
-          "type": "any",
+          "type": "int",
           "optional": false,
           "description": ""
         },
@@ -43130,15 +43165,17 @@
       ],
       "returns": [
         {
-          "type": "nil",
-          "description": ""
+          "type": "bool",
+          "description": "true for destruction by battle or card effect."
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "现代同盟怪兽的破坏代替Value函数；因战斗或卡片效果将被破坏时返回true。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Destroy-substitute value function for modern Union monsters; returns true for destruction by battle or card effect."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -43149,7 +43186,10 @@
       "aliases": [
         "aux.UnionReplaceFilter"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -43207,17 +43247,14 @@
           "description": ""
         }
       ],
-      "returns": [
-        {
-          "type": "nil",
-          "description": ""
-        }
+      "returns": [],
+      "description_zh": [
+        "现代同盟怪兽共通解除装备效果的操作；处理对象仍与效果关联时，将其表侧表示特殊召唤。"
       ],
-      "description_zh": [],
       "description_en": [
-        "TODO document."
+        "Operation for the shared modern Union unequip effect; Special Summons the handler in face-up position if it is still related to the effect."
       ],
-      "english_status": "missing_documentation",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -43228,7 +43265,10 @@
       "aliases": [
         "aux.UnionUnequipOperation"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -43294,15 +43334,17 @@
       ],
       "returns": [
         {
-          "type": "nil",
-          "description": ""
+          "type": "bool|nil",
+          "description": "true during valid target checks; otherwise no meaningful return value."
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "现代同盟怪兽共通解除装备效果的目标函数；检查同盟次数标记、可用怪兽区域、当前装备对象，以及处理对象能否特殊召唤。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Target function for the shared modern Union unequip effect. It checks the Union flag, available Monster Zone, current equip target, and whether the handler can be Special Summoned."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -43313,7 +43355,10 @@
       "aliases": [
         "aux.UnionUnequipTarget"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },

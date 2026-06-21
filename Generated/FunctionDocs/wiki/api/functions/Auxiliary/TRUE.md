@@ -3,12 +3,16 @@
 ## Signature
 
 ```lua
-Auxiliary.TRUE() -> void
+Auxiliary.TRUE() -> bool
 ```
 
 ## Description
 
-TODO document.
+Returns true.
+
+## Returns
+
+- `bool` - Always true.
 
 ## Source
 

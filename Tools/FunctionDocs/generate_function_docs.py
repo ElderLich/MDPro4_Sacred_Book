@@ -678,6 +678,17 @@ FUNCTION_EN_OVERRIDES = {
     "Auxiliary.ThisCardInGraveAlreadyCheckReg": ["Condition callback used by Auxiliary.AddThisCardInGraveAlreadyCheck. When this card is sent to the Graveyard by an effect, material use, or non-activated cost, it stores the responsible effect and installs reset effects; it then returns false so no separate effect operation runs."],
     "Auxiliary.ThisCardInGraveAlreadyReset1": ["Clears the stored responsible effect from the tracking effect and resets this temporary reset effect."],
     "Auxiliary.ThisCardInGraveAlreadyReset2": ["Clears the stored responsible effect through the paired reset effect, then resets both temporary reset effects."],
+    "Auxiliary.ThisCardMovedToPublicResetCheck_ToSingleCard": ["Reset check used by single-card merged delayed events. If the owner card is now face-up or public, it clears the stored event group."],
+    "Auxiliary.tkfcon": ["Returns true if tp controls a Token on the field. If tp is omitted and e is provided, tp defaults to e's handler player."],
+    "Auxiliary.TRUE": ["Returns true."],
+    "Auxiliary.TurnPlayers": ["Returns an iterator that yields the current turn player first, then the other player."],
+    "Auxiliary.UnionEquipFilter": ["Returns a filter for modern Union equip effects. The target must be face-up, controlled by tp, have no modern Union monster equipped, and satisfy filter."],
+    "Auxiliary.UnionEquipLimit": ["Returns an Equip Limit value function for modern Union monsters. It allows cards controlled by the handler's player that satisfy filter, and also keeps the current equip target legal."],
+    "Auxiliary.UnionEquipOperation": ["Returns the operation function for the shared modern Union equip effect. It equips the handler to the selected target, or sends the handler to the Graveyard by rule if the target is no longer valid."],
+    "Auxiliary.UnionEquipTarget": ["Returns the target function for the shared modern Union equip effect. It checks the once-per-turn Union flag, requires an open Spell & Trap Zone, selects a valid target, and registers equip operation info."],
+    "Auxiliary.UnionReplaceFilter": ["Destroy-substitute value function for modern Union monsters; returns true for destruction by battle or card effect."],
+    "Auxiliary.UnionUnequipOperation": ["Operation for the shared modern Union unequip effect; Special Summons the handler in face-up position if it is still related to the effect."],
+    "Auxiliary.UnionUnequipTarget": ["Target function for the shared modern Union unequip effect. It checks the Union flag, available Monster Zone, current equip target, and whether the handler can be Special Summoned."],
     "Card.branded_fusion_check": ["Material check for Branded Fusion."],
     "Card.cyber_fusion_check": ["Material check for Cyberload Fusion."],
     "Card.destruction_swordsman_fusion_check": ["Material check for Destruction Swordsman Fusion."],
@@ -828,6 +839,17 @@ FUNCTION_ZH_OVERRIDES = {
     "Auxiliary.ThisCardInGraveAlreadyCheckReg": ["Auxiliary.AddThisCardInGraveAlreadyCheck使用的条件回调；当此卡因效果、作为素材或未发动的费用送去墓地时，保存相关效果并登记重置效果，随后返回false让自身不再执行操作。"],
     "Auxiliary.ThisCardInGraveAlreadyReset1": ["清除跟踪效果保存的相关效果，并重置这个临时重置效果。"],
     "Auxiliary.ThisCardInGraveAlreadyReset2": ["通过配对的重置效果清除保存的相关效果，并重置两个临时重置效果。"],
+    "Auxiliary.ThisCardMovedToPublicResetCheck_ToSingleCard": ["单卡合并延迟事件使用的重置检查；若持有者已经表侧表示或处于公开状态，则清空保存的事件Group。"],
+    "Auxiliary.tkfcon": ["判断tp场上是否存在衍生物。省略tp且提供e时，tp默认使用e的持有者玩家。"],
+    "Auxiliary.TRUE": ["返回true。"],
+    "Auxiliary.TurnPlayers": ["返回一个迭代器，先返回当前回合玩家，再返回另一名玩家。"],
+    "Auxiliary.UnionEquipFilter": ["返回现代同盟怪兽装备效果使用的筛选函数；对象必须表侧表示、由tp控制、没有装备现代同盟怪兽，并满足filter。"],
+    "Auxiliary.UnionEquipLimit": ["返回现代同盟怪兽使用的装备限制Value函数；允许处理者玩家控制且满足filter的卡，并保持当前装备对象合法。"],
+    "Auxiliary.UnionEquipOperation": ["返回现代同盟怪兽共通装备效果的操作函数；将处理对象装备给选中的目标，若目标不再有效则因规则把处理对象送去墓地。"],
+    "Auxiliary.UnionEquipTarget": ["返回现代同盟怪兽共通装备效果的目标函数；检查同盟次数标记、可用魔法与陷阱区域，选择有效目标，并登记装备操作信息。"],
+    "Auxiliary.UnionReplaceFilter": ["现代同盟怪兽的破坏代替Value函数；因战斗或卡片效果将被破坏时返回true。"],
+    "Auxiliary.UnionUnequipOperation": ["现代同盟怪兽共通解除装备效果的操作；处理对象仍与效果关联时，将其表侧表示特殊召唤。"],
+    "Auxiliary.UnionUnequipTarget": ["现代同盟怪兽共通解除装备效果的目标函数；检查同盟次数标记、可用怪兽区域、当前装备对象，以及处理对象能否特殊召唤。"],
 }
 
 
@@ -1177,6 +1199,71 @@ CORE_DOC_OVERRIDES = {
         "params": [ParamDoc("e", "Effect")],
         "returns": [],
         "description": ["Clears the stored responsible effect and resets paired temporary reset effects."],
+    },
+    "Auxiliary.ThisCardMovedToPublicResetCheck_ToSingleCard": {
+        "params": [
+            ParamDoc("e", "Effect"), ParamDoc("tp", "int"), ParamDoc("eg", "Group"), ParamDoc("ep", "int"),
+            ParamDoc("ev", "any"), ParamDoc("re", "Effect"), ParamDoc("r", "any"), ParamDoc("rp", "int"),
+        ],
+        "returns": [],
+        "description": ["Clears the stored single-card merged-event group if the owner card is public."],
+    },
+    "Auxiliary.tkfcon": {
+        "params": [ParamDoc("e", "Effect|nil", True), ParamDoc("tp", "int|nil", True)],
+        "returns": [ReturnDoc("bool", "true if tp controls a Token on the field.")],
+        "description": ["Checks whether tp controls a Token."],
+    },
+    "Auxiliary.TRUE": {
+        "params": [],
+        "returns": [ReturnDoc("bool", "Always true.")],
+        "description": ["Returns true."],
+    },
+    "Auxiliary.TurnPlayers": {
+        "params": [],
+        "returns": [ReturnDoc("function", "Iterator that yields the turn player, then the other player.")],
+        "description": ["Returns an iterator over the current turn player and the other player."],
+    },
+    "Auxiliary.UnionEquipFilter": {
+        "params": [ParamDoc("filter", "function")],
+        "returns": [ReturnDoc("function", "Filter function taking Card c and int tp.")],
+        "description": ["Returns the target filter for modern Union equip effects."],
+    },
+    "Auxiliary.UnionEquipLimit": {
+        "params": [ParamDoc("filter", "function")],
+        "returns": [ReturnDoc("function", "Equip Limit value function.")],
+        "description": ["Returns the Equip Limit value function for modern Union monsters."],
+    },
+    "Auxiliary.UnionEquipOperation": {
+        "params": [ParamDoc("equip_filter", "function")],
+        "returns": [ReturnDoc("function", "Operation function for the shared Union equip effect.")],
+        "description": ["Returns the operation function for modern Union equip effects."],
+    },
+    "Auxiliary.UnionEquipTarget": {
+        "params": [ParamDoc("equip_filter", "function")],
+        "returns": [ReturnDoc("function", "Target function for the shared Union equip effect.")],
+        "description": ["Returns the target function for modern Union equip effects."],
+    },
+    "Auxiliary.UnionReplaceFilter": {
+        "params": [ParamDoc("e", "Effect"), ParamDoc("re", "Effect"), ParamDoc("r", "int"), ParamDoc("rp", "int")],
+        "returns": [ReturnDoc("bool", "true for destruction by battle or card effect.")],
+        "description": ["Destroy-substitute value function for modern Union monsters."],
+    },
+    "Auxiliary.UnionUnequipOperation": {
+        "params": [
+            ParamDoc("e", "Effect"), ParamDoc("tp", "int"), ParamDoc("eg", "Group"), ParamDoc("ep", "int"),
+            ParamDoc("ev", "any"), ParamDoc("re", "Effect"), ParamDoc("r", "any"), ParamDoc("rp", "int"),
+        ],
+        "returns": [],
+        "description": ["Operation for the shared modern Union unequip effect."],
+    },
+    "Auxiliary.UnionUnequipTarget": {
+        "params": [
+            ParamDoc("e", "Effect"), ParamDoc("tp", "int"), ParamDoc("eg", "Group"), ParamDoc("ep", "int"),
+            ParamDoc("ev", "any"), ParamDoc("re", "Effect"), ParamDoc("r", "any"), ParamDoc("rp", "int"),
+            ParamDoc("chk", "bool"),
+        ],
+        "returns": [ReturnDoc("bool|nil", "true during valid target checks; otherwise no meaningful return value.")],
+        "description": ["Target function for the shared modern Union unequip effect."],
     },
 }
 

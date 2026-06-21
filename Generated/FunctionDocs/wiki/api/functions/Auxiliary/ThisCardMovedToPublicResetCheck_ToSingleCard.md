@@ -8,7 +8,7 @@ Auxiliary.ThisCardMovedToPublicResetCheck_ToSingleCard(Effect e, int tp, Group e
 
 ## Description
 
-TODO document.
+Reset check used by single-card merged delayed events. If the owner card is now face-up or public, it clears the stored event group.
 
 ## Parameters
 

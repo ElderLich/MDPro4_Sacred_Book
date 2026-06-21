@@ -3,12 +3,16 @@
 ## Signature
 
 ```lua
-Auxiliary.TurnPlayers() -> void
+Auxiliary.TurnPlayers() -> function
 ```
 
 ## Description
 
-TODO document.
+Returns an iterator that yields the current turn player first, then the other player.
+
+## Returns
+
+- `function` - Iterator that yields the turn player, then the other player.
 
 ## Source
 

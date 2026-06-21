@@ -8,7 +8,7 @@ Auxiliary.UnionUnequipOperation(Effect e, int tp, Group eg, int ep, any ev, Effe
 
 ## Description
 
-TODO document.
+Operation for the shared modern Union unequip effect; Special Summons the handler in face-up position if it is still related to the effect.
 
 ## Parameters
 
