@@ -8,8 +8,7 @@ Duel.SSet(int player, Card|Group targets, [int target_player], [bool confirm]) -
 
 ## Description
 
-Let the player player place the targets into the target trap's magic trap
-If targets is Group, the number of successful operations is returned
+Makes player Set targets to target_player's Spell & Trap Zone. If targets is a Group, returns the number of cards successfully Set.
 
 ## Parameters
 

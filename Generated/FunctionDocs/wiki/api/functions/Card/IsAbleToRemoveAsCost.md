@@ -8,7 +8,7 @@ Card.IsAbleToRemoveAsCost(Card c) -> bool
 
 ## Description
 
-Check whether c can be excluded as a cost
+Checks whether c can be banished as a cost.
 
 ## Parameters
 

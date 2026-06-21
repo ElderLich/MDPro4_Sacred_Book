@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-06-21T12:32:51+00:00",
+    "generated_at": "2026-06-21T12:46:36+00:00",
     "workspace": "D:\\Programs\\GitHub\\MDPro3_Sacred_Book",
     "dataeditorx_data": "D:\\Programs\\GitHub\\DataEditorX\\DataEditorX\\data",
     "mdpro3_locales": "D:\\Programs\\GitHub\\MDPro3_Data\\Data\\locales",
@@ -399,11 +399,11 @@
         "否则还返回这个效果的触发时点的信息 e,eg,ep,ev,re,r,rp"
       ],
       "description_en": [
-        "Return to the timing of the launch of the correct c \"card launch\" effect, ignored_con = true ignoring the launch conditions, ignored_cost = true ignoring the launch cost",
-        "Copy_info = false or the free-time effect only returns the effect",
-        "Otherwise return the effect of the time point for the code when the trigger point information eg, ep, ev, re, r, rp"
+        "Checks whether c has an activation effect that can currently be activated.",
+        "If neglect_con is true, condition checks are skipped. If neglect_cost is true, cost checks are skipped.",
+        "When copy_info is true, the returned values include the triggering event information: eg, ep, ev, re, r, and rp."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
@@ -1206,10 +1206,9 @@
         "仅对魔法和陷阱有效"
       ],
       "description_en": [
-        "Returns the effect of the \"card firing\" of c, that is, the effect of type EFFECT_TYPE_ACTIVATE",
-        "Only for magic and traps"
+        "Returns c's activation effect, the effect with type EFFECT_TYPE_ACTIVATE. This is mainly used for Spell/Trap Cards."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
@@ -5122,10 +5121,9 @@
         "注：对某些多种族怪兽如动画效果的魔术猿，此函数的返回值可能是几个种族的组合值"
       ],
       "description_en": [
-        "Returns the current race of c",
-        "Note: For some multi-ethnic monsters such as animation effects of the magic ape, the function of the return value may be a combination of several racial values"
+        "Returns c's current Race value. Cards with multiple Races can return a bitmask containing more than one Race."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
@@ -5584,11 +5582,11 @@
         "在其它地方时，序号表示的是第几张卡，最下面的卡的序号为0"
       ],
       "description_en": [
-        "Returns the serial number of the current position",
-        "In the field, the sequence number on behalf of the grid, from left to right are 0-4, the venue magic number is 5, left and right pendulum area is 6-7",
-        "In other places, the serial number represents the first card, the lowest card number is 0"
+        "Returns c's sequence within its current location.",
+        "For field zones, Main Monster Zones and Spell & Trap Zones use 0-4 from left to right, the Field Zone uses 5, and Pendulum Zones use 6-7.",
+        "For other locations, sequence is the card's position in that location, starting from 0."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
@@ -6385,9 +6383,9 @@
         "检查c是否可以送去卡组"
       ],
       "description_en": [
-        "Check whether c can be sent to the card group"
+        "Checks whether c can be returned to the Deck."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
@@ -6429,9 +6427,9 @@
         "检查c是否可以作为cost送去卡组"
       ],
       "description_en": [
-        "Check whether c can be sent to the card as a cost group"
+        "Checks whether c can be returned to the Deck as a cost."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
@@ -6473,9 +6471,9 @@
         "检查c是否可以作为cost送去卡组或额外卡组（用于新宇侠、剑斗兽融合怪兽的召唤手续检测）等价于 (c:IsAbleToDeckAsCost() or c:IsAbleToExtraAsCost())"
       ],
       "description_en": [
-        "Check whether c can be sent as a cost card group or additional card group (for the new Yu-xia, sword fighting beast fusion call monster detection procedures)"
+        "Checks whether c can be returned to the Deck or Extra Deck as a cost."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
@@ -6563,9 +6561,9 @@
         "检查c是否可以作为cost送去额外卡组，主卡组的灵摆卡会返回false"
       ],
       "description_en": [
-        "Check whether c can be sent as an additional cost card group"
+        "Checks whether c can be returned to the Extra Deck as a cost."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
@@ -6745,11 +6743,10 @@
         "##以下几个函数类似"
       ],
       "description_en": [
-        "Check whether c can be sent as the cost of hand cards",
-        "Note: This function appends the actual destination of c to Card.IsAbleToHand",
-        "This function returns false when c is sent to the other hand (if the retraction loop is applicable, or c is a blend, cohomology, and oversize)"
+        "Checks whether c can be returned to the hand as a cost.",
+        "This uses c's actual return destination and returns false when the card would go somewhere other than the player's hand, such as the Extra Deck."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
@@ -6853,9 +6850,9 @@
         "检查c是否可以作为cost除外"
       ],
       "description_en": [
-        "Check whether c can be excluded as a cost"
+        "Checks whether c can be banished as a cost."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
@@ -11567,12 +11564,10 @@
         "会自动与那个效果建立联系，一旦离场，联系会重置"
       ],
       "description_en": [
-        "Check if c is linked to chained chainc",
-        "Note: Each launch into the effect of chain, the effect of launching the card, and the effect of the specified object",
-        "(With Duel.SetTargetCard or Duel.SelectTarget specified, including the take and not take objects)",
-        "Will automatically establish contact with that effect, once the departure, contact will be reset"
+        "Checks whether c is still related to chainc.",
+        "The activating card and cards selected as targets with Duel.SetTargetCard or Duel.SelectTarget automatically become related to that Chain. The relation is lost when the card leaves the expected place."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
@@ -11965,9 +11960,9 @@
         "检查c是否可以set到魔法陷阱区，ignore_field=true则无视魔陷区格子是否能使用的限制"
       ],
       "description_en": [
-        "Check whether c can be set to the magic trap area, ignore_field = true is disregard of the trap area trap trap"
+        "Checks whether c can be Set in a Spell & Trap Zone. If ignore_field is true, available zone checks are ignored."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
@@ -13888,10 +13883,9 @@
         "s不为0会检查自己场上的唯一性，o不为0则检查对方场上的唯一性"
       ],
       "description_en": [
-        "Set c to unique_code only in the field [or monster area or magic trap area, determined by the unique_location] can only exist one",
-        "S is not 0 will check the uniqueness of their field, o is not 0 check the other field uniqueness"
+        "Sets a uniqueness rule for c so only one card with unique_code can exist on the checked field, Monster Zone, or Spell & Trap Zone range."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
@@ -14426,10 +14420,9 @@
         "在残局当中， playerid ：自己=0,对方=1"
       ],
       "description_en": [
-        "Set the player information, divided into lp, the initial hand card for the startcount Zhang, drawcount each round of pumping",
-        "Playerid below 0, top 1"
+        "Sets a player's LP, starting hand count, and cards drawn each Draw Phase."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libdebug.cpp",
@@ -15675,9 +15668,9 @@
         "检查c是否是连锁chainc的效果的正确的对象"
       ],
       "description_en": [
-        "Check whether c is the correct object for chained chainc effects"
+        "Checks whether c is a valid card related to chainc."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libduel.cpp",
@@ -15900,9 +15893,9 @@
         "检查玩家player是否能支付cost点lp，must_pay表示不能用代替支付的效果"
       ],
       "description_en": [
-        "Check player player can pay cost point lp"
+        "Checks whether player can pay the specified LP cost."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libduel.cpp",
@@ -17127,14 +17120,10 @@
         "此函数仅保证紧接着的一次操作不会进行洗卡检测"
       ],
       "description_en": [
-        "So that the next operation does not check for the need for a wash card set or a hand card",
-        "Note: If you do not call this function,",
-        "In addition to calling Duel.DiscardDeck and Duel.Draw remove the card from the card group or add the card to the card",
-        "Or the card is added to the deck (not the top or bottom), the system automatically cleans the card group or the hand card at the end of the effect process",
-        "If you do not want to do so, for example, from the top of the card group, except for a card and other operations, you need to call this function",
-        "This function only ensures that no subsequent scrub detection is performed in the next operation"
+        "Disables the automatic shuffle check for the next Deck or hand operation.",
+        "Use this before operations that intentionally preserve Deck order or hand order."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libduel.cpp",
@@ -19670,9 +19659,9 @@
         "返回连锁chainc包含的操作分类的数量"
       ],
       "description_en": [
-        "Returns the number of operational classifications contained in chained chainc"
+        "Returns the number of operation categories recorded for chainc."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libduel.cpp",
@@ -19738,11 +19727,10 @@
         "后4个返回值对应Duel.SetOperationInfo的后4个参数：Card|Group targets, int count, int target_player, int target_param"
       ],
       "description_en": [
-        "Returns the operation information of the chained chainc category, with a return value of 5,",
-        "The first return value is false to indicate that the class does not exist",
-        "The last four return values ​​correspond to the last four parameters of Duel.SetOperationInfo: Card|Group targets, int count, int target_player, int target_param"
+        "Returns operation information recorded for category on chainc.",
+        "The first return value is false when that category is not recorded. Otherwise, the remaining values correspond to Duel.SetOperationInfo: targets, count, target_player, and target_param."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libduel.cpp",
@@ -19947,9 +19935,9 @@
         "返回玩家player能以原因reason解放的卡片组， use_hand=true 则包括手卡"
       ],
       "description_en": [
-        "Return to the player player can be liberated (non-superior summoned use) of the deck, use_hand is true, including the hand card"
+        "Returns the cards player can Tribute/Release for effect purposes. If use_hand is true, valid cards in the hand are included."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libduel.cpp",
@@ -20003,9 +19991,9 @@
         "返回玩家player能以原因reason解放的卡片数量， use_hand=true 则包括手卡"
       ],
       "description_en": [
-        "Return player player can be liberated (non-superior summoned with) the number of cards, use_hand is true, including the hand card"
+        "Returns the number of cards player can Tribute/Release for effect purposes. If use_hand is true, valid cards in the hand are included."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libduel.cpp",
@@ -21711,9 +21699,9 @@
         "检查玩家player是否可以效果抽[count张]卡"
       ],
       "description_en": [
-        "Check the player player can effect pumping [count Zhang] card"
+        "Checks whether player can draw count cards."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libduel.cpp",
@@ -23178,9 +23166,9 @@
         "让玩家player支付cost点lp，must_pay表示不能用代替支付的效果"
       ],
       "description_en": [
-        "Allow players to pay cost point player lp"
+        "Makes player pay the specified LP cost."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libduel.cpp",
@@ -24777,9 +24765,9 @@
         "第6个参数开始为额外参数"
       ],
       "description_en": [
-        "Filter function, allowing the player player from the field · hand card selection min-max Zhang does not equal ex to meet the conditions of f can be liberated card (non-superior call)"
+        "Lets player select min to max cards that can be Tributed/Released for effect purposes, optionally excluding ex and applying filter f."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libduel.cpp",
@@ -25369,12 +25357,10 @@
         "如果设置send_activating，则可以移动发动中的魔法陷阱卡"
       ],
       "description_en": [
-        "The reason for the targets sent to the players player card group, the return value is the actual number of operations",
-        "If player is nil, the card holder of the card is returned",
-        "If seq = 0, it is the top of the returned card group; seq = 1 is the bottom of the returned card group;",
-        "The rest of the case is to return to the top and mark the need to wash the card group"
+        "Returns targets to the Deck or Extra Deck for reason and returns the number of cards moved.",
+        "If player is nil, each card returns to its owner. seq=0 places cards on top of the Deck, seq=1 places them on the bottom, and other values use the default shuffle/return handling."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libduel.cpp",
@@ -25987,21 +25973,11 @@
         "设置连锁chainc的category分类的操作信息， chainc=0 则是表示当前连锁"
       ],
       "description_en": [
-        "Sets the operation information of the currently processed chain This operation information contains the effect classification determined in the effect processing to be processed",
-        "For example, stealth snipers need to set CATEGORY_DICE, but can not set CATEGORY_DESTROY, because not sure",
-        "For destructive effects, targets need to be set to launch the object may become the impact of chain card,",
-        "And sets count to the number of cards to be processed as determined at launch",
-        "For example, when the black hole launched, targets need to be set to all the monsters on the field, count to set the number of strange field",
-        "For CATEGORY_SPECIAL_SUMMON, CATEGORY_TOHAND, CATEGORY_TODECK, etc., which need to move the card position,",
-        "If the card to be processed is deterministic (such as fetching objects), set targets for these cards, count for the number,",
-        "If the card to be processed is uncertain (the effect can be determined when processing, is generally not take the effect of the object)",
-        "Set the targets to nil, count is expected to deal with the number of cards,",
-        "Target_player is expected to be handled by the holder of the card (not sure to 0)",
-        "Target_param is the location of the card expected to be processed",
-        "For example: SetOperationInfo (0, CATEGORY_TOHAND, nil, 1, tp, LOCATION_DECK)",
-        "Operational information is used to initiate detection of many effects, such as Stardust Dragon, Royal Valley"
+        "Records operation information for category on chainc.",
+        "Use concrete targets and count when the affected cards are known. For unresolved non-targeting movement effects, pass nil targets with the expected count, target player, and target location.",
+        "This information is used by response checks such as Stardust Dragon-style effects."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libduel.cpp",
@@ -26266,10 +26242,9 @@
         "注：会重置洗卡检测的状态"
       ],
       "description_en": [
-        "Manually cleans the player group",
-        "NOTE: The status of the wash detection is reset"
+        "Shuffles player's Deck and resets shuffle-check state."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libduel.cpp",
@@ -26356,10 +26331,9 @@
         "注：会重置洗卡检测的状态"
       ],
       "description_en": [
-        "Manual wash player player's hand card",
-        "NOTE: The status of the wash detection is reset"
+        "Shuffles player's hand and resets shuffle-check state."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libduel.cpp",
@@ -26402,9 +26376,9 @@
         "此函数现在可以洗切魔陷区的覆盖卡"
       ],
       "description_en": [
-        "Cut the card (magic hat) over the monster area"
+        "Randomly reorders the Set cards in g, used for effects such as Magical Hats."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libduel.cpp",
@@ -26866,10 +26840,9 @@
         "若targets为Group，则返回成功操作的数量"
       ],
       "description_en": [
-        "Let the player player place the targets into the target trap's magic trap",
-        "If targets is Group, the number of successful operations is returned"
+        "Makes player Set targets to target_player's Spell & Trap Zone. If targets is a Group, returns the number of cards successfully Set."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libduel.cpp",
@@ -31222,9 +31195,9 @@
         "比如 g:GetClassCount(Card.GetCode()) 就是计算g中卡名不同的卡的数量"
       ],
       "description_en": [
-        "Calculate the number of all cards in g, f is the basis of the classification, return the same value as the same category, starting from the first three parameters for additional parameters"
+        "Counts distinct classes among cards in g according to f. Cards with the same return value from f count as the same class; extra arguments are passed to f."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libgroup.cpp",

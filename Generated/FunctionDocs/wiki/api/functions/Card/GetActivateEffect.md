@@ -8,8 +8,7 @@ Card.GetActivateEffect(Card c) -> Effect,...?
 
 ## Description
 
-Returns the effect of the "card firing" of c, that is, the effect of type EFFECT_TYPE_ACTIVATE
-Only for magic and traps
+Returns c's activation effect, the effect with type EFFECT_TYPE_ACTIVATE. This is mainly used for Spell/Trap Cards.
 
 ## Parameters
 

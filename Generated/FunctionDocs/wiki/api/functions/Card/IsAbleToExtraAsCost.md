@@ -8,7 +8,7 @@ Card.IsAbleToExtraAsCost(Card c) -> bool
 
 ## Description
 
-Check whether c can be sent as an additional cost card group
+Checks whether c can be returned to the Extra Deck as a cost.
 
 ## Parameters
 

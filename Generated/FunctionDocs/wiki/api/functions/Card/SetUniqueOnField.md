@@ -8,8 +8,7 @@ Card.SetUniqueOnField(Card c, int s, int o, function|int unique_code, [int uniqu
 
 ## Description
 
-Set c to unique_code only in the field [or monster area or magic trap area, determined by the unique_location] can only exist one
-S is not 0 will check the uniqueness of their field, o is not 0 check the other field uniqueness
+Sets a uniqueness rule for c so only one card with unique_code can exist on the checked field, Monster Zone, or Spell & Trap Zone range.
 
 ## Parameters
 

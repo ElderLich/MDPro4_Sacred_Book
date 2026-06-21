@@ -8,7 +8,7 @@ Duel.ShuffleSetCard(Group g) -> void
 
 ## Description
 
-Cut the card (magic hat) over the monster area
+Randomly reorders the Set cards in g, used for effects such as Magical Hats.
 
 ## Parameters
 

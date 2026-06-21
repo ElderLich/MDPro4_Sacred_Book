@@ -8,7 +8,7 @@ Duel.GetReleaseGroupCount(int player, [bool use_hand], [int reason]) -> int
 
 ## Description
 
-Return player player can be liberated (non-superior summoned with) the number of cards, use_hand is true, including the hand card
+Returns the number of cards player can Tribute/Release for effect purposes. If use_hand is true, valid cards in the hand are included.
 
 ## Parameters
 

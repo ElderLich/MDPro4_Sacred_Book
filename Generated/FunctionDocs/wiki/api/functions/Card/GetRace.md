@@ -8,8 +8,7 @@ Card.GetRace(Card c) -> int
 
 ## Description
 
-Returns the current race of c
-Note: For some multi-ethnic monsters such as animation effects of the magic ape, the function of the return value may be a combination of several racial values
+Returns c's current Race value. Cards with multiple Races can return a bitmask containing more than one Race.
 
 ## Parameters
 

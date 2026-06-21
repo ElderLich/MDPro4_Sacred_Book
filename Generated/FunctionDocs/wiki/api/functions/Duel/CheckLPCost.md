@@ -8,7 +8,7 @@ Duel.CheckLPCost(int player, int cost, [bool must_pay]) -> bool
 
 ## Description
 
-Check player player can pay cost point lp
+Checks whether player can pay the specified LP cost.
 
 ## Parameters
 

@@ -8,9 +8,9 @@ Card.GetSequence(Card c) -> int
 
 ## Description
 
-Returns the serial number of the current position
-In the field, the sequence number on behalf of the grid, from left to right are 0-4, the venue magic number is 5, left and right pendulum area is 6-7
-In other places, the serial number represents the first card, the lowest card number is 0
+Returns c's sequence within its current location.
+For field zones, Main Monster Zones and Spell & Trap Zones use 0-4 from left to right, the Field Zone uses 5, and Pendulum Zones use 6-7.
+For other locations, sequence is the card's position in that location, starting from 0.
 
 ## Parameters
 

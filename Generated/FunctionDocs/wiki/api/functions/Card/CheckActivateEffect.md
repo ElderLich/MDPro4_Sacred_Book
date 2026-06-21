@@ -8,9 +8,9 @@ Card.CheckActivateEffect(Card c, bool neglect_con, bool neglect_cost, bool copy_
 
 ## Description
 
-Return to the timing of the launch of the correct c "card launch" effect, ignored_con = true ignoring the launch conditions, ignored_cost = true ignoring the launch cost
-Copy_info = false or the free-time effect only returns the effect
-Otherwise return the effect of the time point for the code when the trigger point information eg, ep, ev, re, r, rp
+Checks whether c has an activation effect that can currently be activated.
+If neglect_con is true, condition checks are skipped. If neglect_cost is true, cost checks are skipped.
+When copy_info is true, the returned values include the triggering event information: eg, ep, ev, re, r, and rp.
 
 ## Parameters
 

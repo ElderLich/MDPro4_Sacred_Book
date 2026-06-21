@@ -8,7 +8,7 @@ Card.IsAbleToDeckAsCost(Card c) -> bool
 
 ## Description
 
-Check whether c can be sent to the card as a cost group
+Checks whether c can be returned to the Deck as a cost.
 
 ## Parameters
 

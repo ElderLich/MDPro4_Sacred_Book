@@ -8,7 +8,7 @@ Duel.SelectReleaseGroupEx(int player, [function|nil f], int min, int max, int re
 
 ## Description
 
-Filter function, allowing the player player from the field · hand card selection min-max Zhang does not equal ex to meet the conditions of f can be liberated card (non-superior call)
+Lets player select min to max cards that can be Tributed/Released for effect purposes, optionally excluding ex and applying filter f.
 
 ## Parameters
 

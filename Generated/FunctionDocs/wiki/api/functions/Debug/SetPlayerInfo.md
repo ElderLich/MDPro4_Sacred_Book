@@ -8,8 +8,7 @@ Debug.SetPlayerInfo(int playerid, int lp, int startcount, int drawcount) -> void
 
 ## Description
 
-Set the player information, divided into lp, the initial hand card for the startcount Zhang, drawcount each round of pumping
-Playerid below 0, top 1
+Sets a player's LP, starting hand count, and cards drawn each Draw Phase.
 
 ## Parameters
 

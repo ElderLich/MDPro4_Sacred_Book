@@ -8,7 +8,7 @@ Card.IsSSetable(Card c, [bool ignore_field]) -> bool
 
 ## Description
 
-Check whether c can be set to the magic trap area, ignore_field = true is disregard of the trap area trap trap
+Checks whether c can be Set in a Spell & Trap Zone. If ignore_field is true, available zone checks are ignored.
 
 ## Parameters
 

@@ -8,7 +8,7 @@ Duel.PayLPCost(int player, int cost, [bool must_pay]) -> void
 
 ## Description
 
-Allow players to pay cost point player lp
+Makes player pay the specified LP cost.
 
 ## Parameters
 

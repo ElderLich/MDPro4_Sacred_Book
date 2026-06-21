@@ -8,7 +8,7 @@ Card.IsAbleToDeck(Card c) -> bool
 
 ## Description
 
-Check whether c can be sent to the card group
+Checks whether c can be returned to the Deck.
 
 ## Parameters
 

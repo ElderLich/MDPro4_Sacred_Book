@@ -8,9 +8,8 @@ Card.IsAbleToHandAsCost(Card c) -> bool
 
 ## Description
 
-Check whether c can be sent as the cost of hand cards
-Note: This function appends the actual destination of c to Card.IsAbleToHand
-This function returns false when c is sent to the other hand (if the retraction loop is applicable, or c is a blend, cohomology, and oversize)
+Checks whether c can be returned to the hand as a cost.
+This uses c's actual return destination and returns false when the card would go somewhere other than the player's hand, such as the Extra Deck.
 
 ## Parameters
 

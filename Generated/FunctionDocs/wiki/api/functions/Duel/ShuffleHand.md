@@ -8,8 +8,7 @@ Duel.ShuffleHand(int player) -> void
 
 ## Description
 
-Manual wash player player's hand card
-NOTE: The status of the wash detection is reset
+Shuffles player's hand and resets shuffle-check state.
 
 ## Parameters
 

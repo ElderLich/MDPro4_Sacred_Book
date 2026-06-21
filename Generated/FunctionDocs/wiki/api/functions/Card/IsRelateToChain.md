@@ -8,10 +8,8 @@ Card.IsRelateToChain(Card c, [int chainc]) -> bool
 
 ## Description
 
-Check if c is linked to chained chainc
-Note: Each launch into the effect of chain, the effect of launching the card, and the effect of the specified object
-(With Duel.SetTargetCard or Duel.SelectTarget specified, including the take and not take objects)
-Will automatically establish contact with that effect, once the departure, contact will be reset
+Checks whether c is still related to chainc.
+The activating card and cards selected as targets with Duel.SetTargetCard or Duel.SelectTarget automatically become related to that Chain. The relation is lost when the card leaves the expected place.
 
 ## Parameters
 

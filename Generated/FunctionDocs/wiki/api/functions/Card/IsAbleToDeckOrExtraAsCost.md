@@ -8,7 +8,7 @@ Card.IsAbleToDeckOrExtraAsCost(Card c) -> bool
 
 ## Description
 
-Check whether c can be sent as a cost card group or additional card group (for the new Yu-xia, sword fighting beast fusion call monster detection procedures)
+Checks whether c can be returned to the Deck or Extra Deck as a cost.
 
 ## Parameters
 

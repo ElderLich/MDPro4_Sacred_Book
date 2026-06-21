@@ -8,8 +8,7 @@ Duel.ShuffleDeck(int player) -> void
 
 ## Description
 
-Manually cleans the player group
-NOTE: The status of the wash detection is reset
+Shuffles player's Deck and resets shuffle-check state.
 
 ## Parameters
 

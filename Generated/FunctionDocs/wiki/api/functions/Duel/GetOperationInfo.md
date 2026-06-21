@@ -8,9 +8,8 @@ Duel.GetOperationInfo(int chainc, int category) -> bool,Group,int,int,int
 
 ## Description
 
-Returns the operation information of the chained chainc category, with a return value of 5,
-The first return value is false to indicate that the class does not exist
-The last four return values ​​correspond to the last four parameters of Duel.SetOperationInfo: Card|Group targets, int count, int target_player, int target_param
+Returns operation information recorded for category on chainc.
+The first return value is false when that category is not recorded. Otherwise, the remaining values correspond to Duel.SetOperationInfo: targets, count, target_player, and target_param.
 
 ## Parameters
 

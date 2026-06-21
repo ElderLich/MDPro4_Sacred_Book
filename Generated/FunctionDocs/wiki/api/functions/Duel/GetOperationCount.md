@@ -8,7 +8,7 @@ Duel.GetOperationCount(int chainc) -> int
 
 ## Description
 
-Returns the number of operational classifications contained in chained chainc
+Returns the number of operation categories recorded for chainc.
 
 ## Parameters
 

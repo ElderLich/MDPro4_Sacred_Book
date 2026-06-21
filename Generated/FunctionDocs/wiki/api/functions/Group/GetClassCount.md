@@ -8,7 +8,7 @@ Group.GetClassCount(Group g, function f, ... any) -> int
 
 ## Description
 
-Calculate the number of all cards in g, f is the basis of the classification, return the same value as the same category, starting from the first three parameters for additional parameters
+Counts distinct classes among cards in g according to f. Cards with the same return value from f count as the same class; extra arguments are passed to f.
 
 ## Parameters
 
