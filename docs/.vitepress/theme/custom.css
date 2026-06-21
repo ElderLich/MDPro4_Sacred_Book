@@ -1,0 +1,113 @@
+:root {
+  --vp-layout-max-width: 1680px;
+  --vp-sidebar-width: 300px;
+}
+
+.VPDoc .content-container {
+  max-width: 1120px !important;
+}
+
+.VPDoc.has-aside .content-container {
+  max-width: 1040px !important;
+}
+
+.vp-doc .table-container {
+  overflow-x: visible;
+}
+
+.vp-doc table {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+}
+
+.vp-doc th,
+.vp-doc td {
+  white-space: normal;
+  vertical-align: top;
+  overflow-wrap: anywhere;
+  word-break: normal;
+}
+
+.vp-doc th:first-child,
+.vp-doc td:first-child {
+  width: 22%;
+}
+
+.vp-doc td code,
+.vp-doc th code {
+  white-space: normal;
+  overflow-wrap: anywhere;
+}
+
+.vp-doc div[class*='language-text'] pre,
+.vp-doc div[class*='language-text'] code {
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+.sacred-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 12px;
+  margin: 20px 0 28px;
+}
+
+.sacred-card {
+  display: flex;
+  min-height: 118px;
+  flex-direction: column;
+  gap: 8px;
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 8px;
+  padding: 16px;
+  color: var(--vp-c-text-1);
+  background: var(--vp-c-bg-soft);
+  text-decoration: none !important;
+}
+
+.sacred-card:hover {
+  border-color: var(--vp-c-brand-1);
+  background: var(--vp-c-bg-alt);
+}
+
+.sacred-card strong {
+  font-size: 16px;
+}
+
+.sacred-card span {
+  color: var(--vp-c-text-2);
+  line-height: 1.55;
+}
+
+.script-flow {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 8px;
+  margin: 16px 0 24px;
+}
+
+.script-flow span {
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 8px;
+  padding: 10px 12px;
+  background: var(--vp-c-bg-soft);
+  font-family: var(--vp-font-family-mono);
+  font-size: 13px;
+}
+
+@media (max-width: 760px) {
+  .VPDoc .content-container,
+  .VPDoc.has-aside .content-container {
+    max-width: 100% !important;
+  }
+
+  .vp-doc .table-container {
+    overflow-x: auto;
+  }
+
+  .vp-doc table {
+    display: block;
+    table-layout: auto;
+  }
+}

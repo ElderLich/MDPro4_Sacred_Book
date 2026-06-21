@@ -1,24 +1,31 @@
 # MDPro3 Sacred Book
 
-Learn MDPro3/YGOPro card scripting from the first line of Lua to real card
-scripts, then keep the generated API reference open when you need exact
-signatures.
+Practical documentation for MDPro3/YGOPro Lua card scripting.
+
+<div class="sacred-grid">
+  <a class="sacred-card" href="learn/">
+    <strong>Learn scripting</strong>
+    <span>Follow a wiki-style path from card file structure to effect resolution.</span>
+  </a>
+  <a class="sacred-card" href="api/">
+    <strong>API reference</strong>
+    <span>Generated function and constant pages from this repository's data.</span>
+  </a>
+  <a class="sacred-card" href="examples/">
+    <strong>Live examples</strong>
+    <span>Read real card scripts alongside detected API calls and card text.</span>
+  </a>
+</div>
 
 ## Start Here
 
-- [Getting Started](getting-started/)
-- [Your First Card](getting-started/first-card)
-- [Reading Card Scripts](getting-started/reading-scripts)
+- [Learning path](learn/)
+- [Structure of a card script](learn/script-structure)
+- [Effect object creation and registration](learn/effect-object)
+- [Functions that move cards across locations](learn/moving-cards)
 
 ## Reference
 
-- [API overview](api/)
 - [Function reference](api/functions/)
 - [Constant reference](api/constants)
-
-## Learn From Real Cards
-
-- [Card Script Examples](examples/)
-
-The examples are generated from `cards.cdb` and the local `Scripts/` folder, so
-the text, stats, script source, and detected API calls stay connected.
+- [Featured card examples](examples/)

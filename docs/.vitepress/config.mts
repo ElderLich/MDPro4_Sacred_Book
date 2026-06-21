@@ -8,12 +8,27 @@ export default defineConfig({
   themeConfig: {
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Getting Started', link: '/getting-started/' },
-      { text: 'Guides', link: '/guides/' },
+      { text: 'Learn', link: '/learn/' },
       { text: 'API', link: '/api/' },
       { text: 'Examples', link: '/examples/' },
     ],
     sidebar: {
+      '/learn/': [
+        {
+          text: 'Learning Path',
+          items: [
+            { text: 'Overview', link: '/learn/' },
+            { text: 'Script Structure', link: '/learn/script-structure' },
+            { text: 'Effect Object', link: '/learn/effect-object' },
+            { text: 'Effect Types', link: '/learn/effect-types' },
+            { text: 'Callbacks', link: '/learn/effect-callbacks' },
+            { text: 'Activation Legality', link: '/learn/activation-legality' },
+            { text: 'Filters and Groups', link: '/learn/filters-and-groups' },
+            { text: 'Moving Cards', link: '/learn/moving-cards' },
+            { text: 'Archetypes and Set Codes', link: '/learn/archetypes-and-setcodes' },
+          ],
+        },
+      ],
       '/getting-started/': [
         {
           text: 'Getting Started',
