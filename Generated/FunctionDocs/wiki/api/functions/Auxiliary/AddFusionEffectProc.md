@@ -3,21 +3,25 @@
 ## Signature
 
 ```lua
-Auxiliary.AddFusionEffectProc(Card c, function filter, any mat_location, any mat_filter, any mat_operation, any params) -> void
+Auxiliary.AddFusionEffectProc(Card c, function filter, int mat_location, [function|nil mat_filter], [function|nil mat_operation], [table|nil params]) -> Effect
 ```
 
 ## Description
 
-TODO document.
+Convenience wrapper for Auxiliary.AddFusionEffectProcUltimate. It builds a params table from the common arguments and returns the created Fusion effect.
 
 ## Parameters
 
 - `c` `Card`
 - `filter` `function`
-- `mat_location` `any`
-- `mat_filter` `any`
-- `mat_operation` `any`
-- `params` `any`
+- `mat_location` `int`
+- `mat_filter` `function|nil` optional
+- `mat_operation` `function|nil` optional
+- `params` `table|nil` optional
+
+## Returns
+
+- `Effect` - The created Fusion effect.
 
 ## Source
 

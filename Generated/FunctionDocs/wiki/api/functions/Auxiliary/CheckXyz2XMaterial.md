@@ -3,21 +3,25 @@
 ## Signature
 
 ```lua
-Auxiliary.CheckXyz2XMaterial(Card c, function f, any lv, any minc, any maxc, Group mg) -> void
+Auxiliary.CheckXyz2XMaterial(Card c, function f, int lv, int minc, int maxc, Group mg) -> bool
 ```
 
 ## Description
 
-TODO document.
+Checks whether c can be Xyz Summoned using materials from mg while allowing valid EFFECT_DOUBLE_XMATERIAL cards to count as two materials.
 
 ## Parameters
 
 - `c` `Card`
 - `f` `function`
-- `lv` `any`
-- `minc` `any`
-- `maxc` `any`
+- `lv` `int`
+- `minc` `int`
+- `maxc` `int`
 - `mg` `Group`
+
+## Returns
+
+- `bool` - true if c can be Xyz Summoned with double-material support.
 
 ## Source
 

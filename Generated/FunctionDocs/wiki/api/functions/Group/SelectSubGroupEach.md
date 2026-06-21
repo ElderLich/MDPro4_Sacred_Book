@@ -3,12 +3,12 @@
 ## Signature
 
 ```lua
-Group.SelectSubGroupEach(Group g, int tp, table checks, [bool cancelable], [function f], ... any) -> Group
+Group.SelectSubGroupEach(Group g, int tp, table checks, [bool cancelable], [function f], ... any) -> Group|nil
 ```
 
 ## Description
 
-TODO document.
+Lets tp select one card for each filter in checks, optionally cancelable. If f is omitted, Auxiliary.TRUE is used for the final group check.
 
 ## Parameters
 
@@ -21,7 +21,7 @@ TODO document.
 
 ## Returns
 
-- `Group`
+- `Group|nil` - The selected subgroup, or nil if no valid selection is completed.
 
 ## Source
 

@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-06-21T11:55:36+00:00",
+    "generated_at": "2026-06-21T12:04:03+00:00",
     "workspace": "D:\\Programs\\GitHub\\MDPro3_Sacred_Book",
     "dataeditorx_data": "D:\\Programs\\GitHub\\DataEditorX\\DataEditorX\\data",
     "mdpro3_locales": "D:\\Programs\\GitHub\\MDPro3_Data\\Data\\locales",
@@ -43382,15 +43382,17 @@
       ],
       "returns": [
         {
-          "type": "nil",
-          "description": ""
+          "type": "bool",
+          "description": "true if c can be banished as an Ursarctic replacement cost."
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "「北极天熊」共通特殊召唤效果的代替费用筛选；匹配墓地中可作为费用除外，且具有编号16471775或89264428效果的卡。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Replacement-cost filter for the shared Ursarctic Special Summon effect. It accepts cards in the Graveyard that can be banished as cost through effect code 16471775 or 89264428."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -43401,7 +43403,10 @@
       "aliases": [
         "aux.UrsarcticExCostFilter"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -43419,15 +43424,17 @@
       ],
       "returns": [
         {
-          "type": "nil",
-          "description": ""
+          "type": "bool",
+          "description": "true if c is a Level 7 or higher monster in the hand."
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "「北极天熊」共通特殊召唤效果的费用筛选；匹配手牌中7星以上的怪兽。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Cost filter for the shared Ursarctic Special Summon effect. It accepts Level 7 or higher monsters in the hand."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -43438,7 +43445,10 @@
       "aliases": [
         "aux.UrsarcticReleaseFilter"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -43498,15 +43508,17 @@
       ],
       "returns": [
         {
-          "type": "nil",
-          "description": ""
+          "type": "bool",
+          "description": "true during Main Phase 1 or Main Phase 2."
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "「北极天熊」共通手牌快速效果的条件；当前为任一主要阶段时返回true。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Condition for the shared Ursarctic hand Quick Effect; returns true during either Main Phase."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -43517,7 +43529,10 @@
       "aliases": [
         "aux.UrsarcticSpSummonCondition"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -43583,15 +43598,17 @@
       ],
       "returns": [
         {
-          "type": "nil",
-          "description": ""
+          "type": "bool|nil",
+          "description": "true during cost checks; otherwise no meaningful return value."
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "检查并支付「北极天熊」共通特殊召唤费用。玩家解放手牌中1只7星以上怪兽，或除外1张可用的墓地代替费用卡并使用对应效果的次数限制。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Checks and pays the shared Ursarctic Special Summon cost. The player releases a Level 7 or higher monster from the hand, or banishes a valid Graveyard replacement-cost card and consumes that effect's count limit."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -43602,7 +43619,10 @@
       "aliases": [
         "aux.UrsarcticSpSummonCost"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -43626,15 +43646,17 @@
       ],
       "returns": [
         {
-          "type": "nil",
-          "description": ""
+          "type": "bool",
+          "description": "true for Level 0 monsters."
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "「北极天熊」共通效果处理后登记的特殊召唤限制目标；对等级为0的怪兽返回true。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Special Summon restriction target applied after the shared Ursarctic effect resolves; returns true for monsters with Level 0."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -43645,7 +43667,10 @@
       "aliases": [
         "aux.UrsarcticSpSummonLimit"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -43703,17 +43728,14 @@
           "description": ""
         }
       ],
-      "returns": [
-        {
-          "type": "nil",
-          "description": ""
-        }
+      "returns": [],
+      "description_zh": [
+        "「北极天熊」共通特殊召唤效果的操作；特殊召唤处理对象后，登记直到结束阶段的特殊召唤限制，阻止等级为0的怪兽特殊召唤。"
       ],
-      "description_zh": [],
       "description_en": [
-        "TODO document."
+        "Operation for the shared Ursarctic Special Summon effect. It Special Summons the handler, then applies the End Phase Special Summon restriction that blocks Level 0 monsters."
       ],
-      "english_status": "missing_documentation",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -43724,7 +43746,10 @@
       "aliases": [
         "aux.UrsarcticSpSummonOperation"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -43790,15 +43815,17 @@
       ],
       "returns": [
         {
-          "type": "nil",
-          "description": ""
+          "type": "bool|nil",
+          "description": "true during valid target checks; otherwise no meaningful return value."
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "「北极天熊」共通特殊召唤效果的目标处理；要求有可用怪兽区域且处理对象可以特殊召唤，然后登记特殊召唤信息。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Target function for the shared Ursarctic Special Summon effect. It requires an open Monster Zone and that the handler can be Special Summoned, then sets Special Summon operation info."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -43809,7 +43836,10 @@
       "aliases": [
         "aux.UrsarcticSpSummonTarget"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -43831,17 +43861,14 @@
           "description": ""
         }
       ],
-      "returns": [
-        {
-          "type": "nil",
-          "description": ""
-        }
+      "returns": [],
+      "description_zh": [
+        "对g中通过EFFECT_EXTRA_RELEASE_NONSUM被解放的对方卡使用次数限制，用于未通过Duel.SelectReleaseGroup选择的额外解放效果。"
       ],
-      "description_zh": [],
       "description_en": [
-        "TODO document."
+        "Consumes count limits for opponent's cards in g that were released through EFFECT_EXTRA_RELEASE_NONSUM, such as Lair of Darkness-style release effects not selected by Duel.SelectReleaseGroup."
       ],
-      "english_status": "missing_documentation",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -43852,7 +43879,10 @@
       "aliases": [
         "aux.UseExtraReleaseCount"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -43863,15 +43893,25 @@
       "params": [],
       "returns": [
         {
-          "type": "nil",
-          "description": ""
+          "type": "table",
+          "description": "The current script table."
+        },
+        {
+          "type": "int",
+          "description": "The current card code."
+        },
+        {
+          "type": "int",
+          "description": "String ID offset, 1 or 100."
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "返回当前脚本的表、卡名编号以及字符串偏移值。普通卡编号的偏移值为1，大型自定义编号的偏移值为100。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Returns the current script's table, card code, and string offset. The offset is 1 for regular card IDs and 100 for large custom IDs."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -43880,7 +43920,10 @@
         }
       ],
       "aliases": [],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -43923,14 +43966,16 @@
       "returns": [
         {
           "type": "bool",
-          "description": ""
+          "description": "true if a valid subgroup exists."
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "检查g是否存在数量在min到max之间且满足f的子组，同时考虑Duel.GrabSelectedCard已有选择和Auxiliary.GCheckAdditional。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Checks whether g has a subgroup with size between min and max that satisfies f, while respecting already selected cards from Duel.GrabSelectedCard and Auxiliary.GCheckAdditional."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -43939,7 +43984,10 @@
         }
       ],
       "aliases": [],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -43976,14 +44024,16 @@
       "returns": [
         {
           "type": "bool",
-          "description": ""
+          "description": "true if one card can satisfy each check."
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "检查g是否能为checks中的每个筛选各提供1张卡。省略f时，只要求每个位置的筛选成立。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Checks whether g can supply one card for each filter in checks. If f is omitted, only the per-position checks are required."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -43992,7 +44042,10 @@
         }
       ],
       "aliases": [],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -44046,15 +44099,17 @@
       ],
       "returns": [
         {
-          "type": "Group",
-          "description": ""
+          "type": "Group|nil",
+          "description": "The selected subgroup, or nil if no valid selection is completed."
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "让tp从g中选择数量在min到max之间且满足f的子组。会考虑已有选择；若不能完成有效选择则返回nil。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Lets tp select a subgroup from g with size between min and max that satisfies f. It respects already selected cards and returns nil if no valid selection is completed."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -44063,7 +44118,10 @@
         }
       ],
       "aliases": [],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -44111,15 +44169,17 @@
       ],
       "returns": [
         {
-          "type": "Group",
-          "description": ""
+          "type": "Group|nil",
+          "description": "The selected subgroup, or nil if no valid selection is completed."
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "让tp为checks中的每个筛选各选择1张卡，可选择是否允许取消。省略f时，最终组检查使用Auxiliary.TRUE。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Lets tp select one card for each filter in checks, optionally cancelable. If f is omitted, Auxiliary.TRUE is used for the final group check."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -44128,7 +44188,10 @@
         }
       ],
       "aliases": [],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -44180,22 +44243,24 @@
       "params": [
         {
           "name": "a",
-          "type": "any",
+          "type": "int",
           "optional": false,
           "description": ""
         }
       ],
       "returns": [
         {
-          "type": "nil",
-          "description": ""
+          "type": "int",
+          "description": "Bitwise NOT of a."
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "返回a的按位取反结果。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Returns the bitwise NOT of a."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -44204,7 +44269,10 @@
         }
       ],
       "aliases": [],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -44297,34 +44365,36 @@
       "params": [
         {
           "name": "r",
-          "type": "any",
+          "type": "int",
           "optional": false,
           "description": ""
         },
         {
           "name": "field",
-          "type": "any",
+          "type": "int",
           "optional": false,
           "description": ""
         },
         {
           "name": "width",
-          "type": "any",
-          "optional": false,
+          "type": "int",
+          "optional": true,
           "description": ""
         }
       ],
       "returns": [
         {
-          "type": "nil",
-          "description": ""
+          "type": "int",
+          "description": "The extracted bit field."
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "从r中提取从field位开始的width位。width省略时为1。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Extracts width bits from r starting at bit field. width defaults to 1."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -44333,7 +44403,10 @@
         }
       ],
       "aliases": [],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -44385,40 +44458,42 @@
       "params": [
         {
           "name": "r",
-          "type": "any",
+          "type": "int",
           "optional": false,
           "description": ""
         },
         {
           "name": "v",
-          "type": "any",
+          "type": "int",
           "optional": false,
           "description": ""
         },
         {
           "name": "field",
-          "type": "any",
+          "type": "int",
           "optional": false,
           "description": ""
         },
         {
           "name": "width",
-          "type": "any",
-          "optional": false,
+          "type": "int",
+          "optional": true,
           "description": ""
         }
       ],
       "returns": [
         {
-          "type": "nil",
-          "description": ""
+          "type": "int",
+          "description": "r with the selected bit field replaced."
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "返回把r中从field位开始的width位替换为v的低width位后的结果。width省略时为1。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Returns r with width bits starting at field replaced by the low width bits of v. width defaults to 1."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -44427,7 +44502,10 @@
         }
       ],
       "aliases": [],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -44491,19 +44569,19 @@
         },
         {
           "name": "self_location",
-          "type": "any",
-          "optional": false,
+          "type": "int",
+          "optional": true,
           "description": ""
         },
         {
           "name": "opponent_location",
-          "type": "any",
-          "optional": false,
+          "type": "int",
+          "optional": true,
           "description": ""
         },
         {
           "name": "mat_operation",
-          "type": "any",
+          "type": "function",
           "optional": false,
           "description": ""
         },
@@ -44516,15 +44594,17 @@
       ],
       "returns": [
         {
-          "type": "nil",
-          "description": ""
+          "type": "Effect",
+          "description": "The created Contact Fusion procedure effect."
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "为c登记接触融合特殊召唤手续，使用指定素材筛选位置和素材操作，并返回创建的手续效果。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Registers a Contact Fusion Special Summon procedure on c, using material filter locations and the provided material operation, and returns the created procedure effect."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/procedure.lua",
@@ -44535,7 +44615,10 @@
       "aliases": [
         "aux.AddContactFusionProcedure"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -44558,40 +44641,42 @@
         },
         {
           "name": "mat_location",
-          "type": "any",
+          "type": "int",
           "optional": false,
           "description": ""
         },
         {
           "name": "mat_filter",
-          "type": "any",
-          "optional": false,
+          "type": "function|nil",
+          "optional": true,
           "description": ""
         },
         {
           "name": "mat_operation",
-          "type": "any",
-          "optional": false,
+          "type": "function|nil",
+          "optional": true,
           "description": ""
         },
         {
           "name": "params",
-          "type": "any",
-          "optional": false,
+          "type": "table|nil",
+          "optional": true,
           "description": ""
         }
       ],
       "returns": [
         {
-          "type": "nil",
-          "description": ""
+          "type": "Effect",
+          "description": "The created Fusion effect."
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "Auxiliary.AddFusionEffectProcUltimate的便捷包装；用常用参数构造params表，并返回创建的融合效果。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Convenience wrapper for Auxiliary.AddFusionEffectProcUltimate. It builds a params table from the common arguments and returns the created Fusion effect."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/procedure.lua",
@@ -44602,7 +44687,10 @@
       "aliases": [
         "aux.AddFusionEffectProc"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -46288,52 +46376,54 @@
         },
         {
           "name": "summon_location",
-          "type": "any",
-          "optional": false,
+          "type": "int",
+          "optional": true,
           "description": ""
         },
         {
           "name": "grave_filter",
-          "type": "any",
-          "optional": false,
+          "type": "function|nil",
+          "optional": true,
           "description": ""
         },
         {
           "name": "mat_filter",
-          "type": "any",
-          "optional": false,
+          "type": "function|nil",
+          "optional": true,
           "description": ""
         },
         {
           "name": "pause",
-          "type": "Effect",
-          "optional": false,
+          "type": "bool",
+          "optional": true,
           "description": ""
         },
         {
           "name": "extra_operation",
-          "type": "any",
-          "optional": false,
+          "type": "function|nil",
+          "optional": true,
           "description": ""
         },
         {
           "name": "extra_target",
-          "type": "any",
-          "optional": false,
+          "type": "function|nil",
+          "optional": true,
           "description": ""
         }
       ],
       "returns": [
         {
-          "type": "nil",
-          "description": ""
+          "type": "Effect",
+          "description": "The created Ritual Summon effect."
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "为c添加仪式召唤效果，使用仪式怪兽的当前等级，并要求素材等级合计大于等于该等级。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Adds a Ritual Summon effect for c that uses the Ritual Monster's current Level and requires materials whose total Level is greater than or equal to it."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/procedure.lua",
@@ -46344,7 +46434,10 @@
       "aliases": [
         "aux.AddRitualProcGreater2"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -46361,58 +46454,60 @@
         },
         {
           "name": "code1",
-          "type": "any",
+          "type": "int",
           "optional": false,
           "description": ""
         },
         {
           "name": "summon_location",
-          "type": "any",
-          "optional": false,
+          "type": "int",
+          "optional": true,
           "description": ""
         },
         {
           "name": "grave_filter",
-          "type": "any",
-          "optional": false,
+          "type": "function|nil",
+          "optional": true,
           "description": ""
         },
         {
           "name": "mat_filter",
-          "type": "any",
-          "optional": false,
+          "type": "function|nil",
+          "optional": true,
           "description": ""
         },
         {
           "name": "pause",
-          "type": "Effect",
-          "optional": false,
+          "type": "bool",
+          "optional": true,
           "description": ""
         },
         {
           "name": "extra_operation",
-          "type": "any",
-          "optional": false,
+          "type": "function|nil",
+          "optional": true,
           "description": ""
         },
         {
           "name": "extra_target",
-          "type": "any",
-          "optional": false,
+          "type": "function|nil",
+          "optional": true,
           "description": ""
         }
       ],
       "returns": [
         {
-          "type": "nil",
-          "description": ""
+          "type": "Effect",
+          "description": "The created Ritual Summon effect."
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "把code1登记为c列名的编号，然后添加只适用于该编号仪式怪兽的Greater2仪式手续。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Registers code1 as listed by c, then adds the Greater2 Ritual procedure restricted to Ritual Monsters with that code."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/procedure.lua",
@@ -46423,7 +46518,10 @@
       "aliases": [
         "aux.AddRitualProcGreater2Code"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -46440,64 +46538,66 @@
         },
         {
           "name": "code1",
-          "type": "any",
+          "type": "int",
           "optional": false,
           "description": ""
         },
         {
           "name": "code2",
-          "type": "any",
+          "type": "int",
           "optional": false,
           "description": ""
         },
         {
           "name": "summon_location",
-          "type": "any",
-          "optional": false,
+          "type": "int",
+          "optional": true,
           "description": ""
         },
         {
           "name": "grave_filter",
-          "type": "any",
-          "optional": false,
+          "type": "function|nil",
+          "optional": true,
           "description": ""
         },
         {
           "name": "mat_filter",
-          "type": "any",
-          "optional": false,
+          "type": "function|nil",
+          "optional": true,
           "description": ""
         },
         {
           "name": "pause",
-          "type": "Effect",
-          "optional": false,
+          "type": "bool",
+          "optional": true,
           "description": ""
         },
         {
           "name": "extra_operation",
-          "type": "any",
-          "optional": false,
+          "type": "function|nil",
+          "optional": true,
           "description": ""
         },
         {
           "name": "extra_target",
-          "type": "any",
-          "optional": false,
+          "type": "function|nil",
+          "optional": true,
           "description": ""
         }
       ],
       "returns": [
         {
-          "type": "nil",
-          "description": ""
+          "type": "Effect",
+          "description": "The created Ritual Summon effect."
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "把code1和code2登记为c列名的编号，然后添加只适用于任一编号仪式怪兽的Greater2仪式手续。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Registers code1 and code2 as listed by c, then adds the Greater2 Ritual procedure restricted to Ritual Monsters with either code."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/procedure.lua",
@@ -46508,7 +46608,10 @@
       "aliases": [
         "aux.AddRitualProcGreater2Code2"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -46612,64 +46715,66 @@
         },
         {
           "name": "level_function",
-          "type": "any",
+          "type": "function",
           "optional": false,
           "description": ""
         },
         {
           "name": "greater_or_equal",
-          "type": "any",
+          "type": "string",
           "optional": false,
           "description": ""
         },
         {
           "name": "summon_location",
-          "type": "any",
-          "optional": false,
+          "type": "int",
+          "optional": true,
           "description": ""
         },
         {
           "name": "grave_filter",
-          "type": "any",
-          "optional": false,
+          "type": "function|nil",
+          "optional": true,
           "description": ""
         },
         {
           "name": "mat_filter",
-          "type": "any",
-          "optional": false,
+          "type": "function|nil",
+          "optional": true,
           "description": ""
         },
         {
           "name": "pause",
-          "type": "Effect",
-          "optional": false,
+          "type": "bool",
+          "optional": true,
           "description": ""
         },
         {
           "name": "extra_operation",
-          "type": "any",
-          "optional": false,
+          "type": "function|nil",
+          "optional": true,
           "description": ""
         },
         {
           "name": "extra_target",
-          "type": "any",
-          "optional": false,
+          "type": "function|nil",
+          "optional": true,
           "description": ""
         }
       ],
       "returns": [
         {
-          "type": "nil",
-          "description": ""
+          "type": "Effect",
+          "description": "The created Ritual Summon activation effect."
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "为c创建可配置的仪式召唤发动效果并返回它。该效果可选择不立即登记，可使用墓地素材，并可执行额外的目标/操作回调。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Creates the configurable Ritual Summon activation effect for c and returns it. The effect can be paused from registration, can use Graveyard materials, and can run extra target/operation callbacks."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/procedure.lua",
@@ -46680,7 +46785,10 @@
       "aliases": [
         "aux.AddRitualProcUltimate"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -47071,28 +47179,30 @@
         },
         {
           "name": "sp",
-          "type": "any",
+          "type": "int",
           "optional": false,
           "description": ""
         },
         {
           "name": "st",
-          "type": "any",
+          "type": "int",
           "optional": false,
           "description": ""
         }
       ],
       "returns": [
         {
-          "type": "nil",
-          "description": ""
+          "type": "bool",
+          "description": "true if the Summon matches /Assault Mode conditions."
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "「/爆裂体」怪兽的特殊召唤限制Value函数；允许/爆裂体召唤值，或由「爆裂模式」发动的效果。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Special Summon restriction value for /Assault Mode monsters; allows the Assault Mode summon value or effects activated by Assault Mode Activate."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/procedure.lua",
@@ -47103,7 +47213,10 @@
       "aliases": [
         "aux.AssaultModeLimit"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -47126,19 +47239,19 @@
         },
         {
           "name": "lv",
-          "type": "any",
+          "type": "int",
           "optional": false,
           "description": ""
         },
         {
           "name": "minc",
-          "type": "any",
+          "type": "int",
           "optional": false,
           "description": ""
         },
         {
           "name": "maxc",
-          "type": "any",
+          "type": "int",
           "optional": false,
           "description": ""
         },
@@ -47151,15 +47264,17 @@
       ],
       "returns": [
         {
-          "type": "nil",
-          "description": ""
+          "type": "bool",
+          "description": "true if c can be Xyz Summoned with double-material support."
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "检查c是否可以用mg中的素材进行超量召唤，并允许有效的EFFECT_DOUBLE_XMATERIAL卡按2个素材计数。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Checks whether c can be Xyz Summoned using materials from mg while allowing valid EFFECT_DOUBLE_XMATERIAL cards to count as two materials."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/procedure.lua",
@@ -47170,7 +47285,10 @@
       "aliases": [
         "aux.CheckXyz2XMaterial"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -47181,34 +47299,36 @@
       "params": [
         {
           "name": "filter",
-          "type": "function",
-          "optional": false,
+          "type": "function|nil",
+          "optional": true,
           "description": ""
         },
         {
           "name": "self_location",
-          "type": "any",
+          "type": "int",
           "optional": false,
           "description": ""
         },
         {
           "name": "opponent_location",
-          "type": "any",
+          "type": "int",
           "optional": false,
           "description": ""
         }
       ],
       "returns": [
         {
-          "type": "nil",
-          "description": ""
+          "type": "function",
+          "description": "Condition function for a Contact Fusion procedure."
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "返回接触融合手续的条件函数；从指定位置收集有效素材，并检查c的融合素材要求。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Returns the condition function for Contact Fusion procedures. It collects valid materials from the configured locations and checks c's Fusion Material requirement."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/procedure.lua",
@@ -47219,7 +47339,10 @@
       "aliases": [
         "aux.ContactFusionCondition"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -47242,22 +47365,24 @@
         },
         {
           "name": "filter",
-          "type": "function",
-          "optional": false,
+          "type": "function|nil",
+          "optional": true,
           "description": ""
         }
       ],
       "returns": [
         {
-          "type": "nil",
-          "description": ""
+          "type": "bool",
+          "description": "true if c is valid Contact Fusion material for fc."
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "接触融合手续的素材筛选；该卡必须能作为fc的融合素材，且提供filter时也必须满足filter。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Material filter for Contact Fusion procedures. The card must be usable as Fusion Material for fc and must satisfy filter when one is provided."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/procedure.lua",
@@ -47268,7 +47393,10 @@
       "aliases": [
         "aux.ContactFusionMaterialFilter"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -47279,28 +47407,30 @@
       "params": [
         {
           "name": "mat_operation",
-          "type": "any",
+          "type": "function",
           "optional": false,
           "description": ""
         },
         {
           "name": "operation_params",
-          "type": "any",
+          "type": "table",
           "optional": false,
           "description": ""
         }
       ],
       "returns": [
         {
-          "type": "nil",
-          "description": ""
+          "type": "function",
+          "description": "Operation function for a Contact Fusion procedure."
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "返回接触融合手续的操作函数；把已选择素材设置给融合怪兽，执行mat_operation，并删除保留的Group。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Returns the operation function for Contact Fusion procedures. It sets the selected materials on the Fusion Monster, runs mat_operation, and deletes the kept-alive group."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/procedure.lua",
@@ -47311,7 +47441,10 @@
       "aliases": [
         "aux.ContactFusionOperation"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -47329,15 +47462,17 @@
       ],
       "returns": [
         {
-          "type": "nil",
-          "description": ""
+          "type": "function",
+          "description": "Material operation that shuffles materials into the Deck."
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "返回接触融合素材操作函数；必要时公开里侧素材，提示墓地/除外素材，并把全部素材作为费用洗回卡组。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Returns a Contact Fusion material operation that reveals face-down materials when needed, hints Graveyard/banished materials, and shuffles all materials into the Deck as cost."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/procedure.lua",
@@ -47348,7 +47483,10 @@
       "aliases": [
         "aux.ContactFusionSendToDeck"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -47359,34 +47497,36 @@
       "params": [
         {
           "name": "filter",
-          "type": "function",
-          "optional": false,
+          "type": "function|nil",
+          "optional": true,
           "description": ""
         },
         {
           "name": "self_location",
-          "type": "any",
+          "type": "int",
           "optional": false,
           "description": ""
         },
         {
           "name": "opponent_location",
-          "type": "any",
+          "type": "int",
           "optional": false,
           "description": ""
         }
       ],
       "returns": [
         {
-          "type": "nil",
-          "description": ""
+          "type": "function",
+          "description": "Target function for a Contact Fusion procedure."
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "返回接触融合手续的目标函数；选择融合素材，保留选择的Group并保存到效果上，返回是否选择成功。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Returns the target function for Contact Fusion procedures. It selects Fusion Materials, keeps the selected group alive, stores it on the effect, and returns whether selection succeeded."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/procedure.lua",
@@ -47397,7 +47537,10 @@
       "aliases": [
         "aux.ContactFusionTarget"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -47420,28 +47563,30 @@
         },
         {
           "name": "sp",
-          "type": "any",
+          "type": "int",
           "optional": false,
           "description": ""
         },
         {
           "name": "st",
-          "type": "any",
+          "type": "int",
           "optional": false,
           "description": ""
         }
       ],
       "returns": [
         {
-          "type": "nil",
-          "description": ""
+          "type": "bool",
+          "description": "true if the Summon matches Dark Fusion conditions."
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "「邪心英雄」/「暗黑融合」类效果的特殊召唤限制Value函数；允许「暗黑融合」本身、暗黑融合召唤值，或玩家受编号72043279效果影响时的融合召唤。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Special Summon restriction value for Evil HERO/Dark Fusion effects; allows Dark Fusion itself, the Dark Fusion summon value, or Fusion Summons while the player is affected by effect code 72043279."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/procedure.lua",
@@ -47452,7 +47597,10 @@
       "aliases": [
         "aux.DarkFusionLimit"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },

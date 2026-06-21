@@ -3,17 +3,21 @@
 ## Signature
 
 ```lua
-Auxiliary.ContactFusionOperation(any mat_operation, any operation_params) -> void
+Auxiliary.ContactFusionOperation(function mat_operation, table operation_params) -> function
 ```
 
 ## Description
 
-TODO document.
+Returns the operation function for Contact Fusion procedures. It sets the selected materials on the Fusion Monster, runs mat_operation, and deletes the kept-alive group.
 
 ## Parameters
 
-- `mat_operation` `any`
-- `operation_params` `any`
+- `mat_operation` `function`
+- `operation_params` `table`
+
+## Returns
+
+- `function` - Operation function for a Contact Fusion procedure.
 
 ## Source
 

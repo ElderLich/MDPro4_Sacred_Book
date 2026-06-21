@@ -3,19 +3,23 @@
 ## Signature
 
 ```lua
-bit.replace(any r, any v, any field, any width) -> void
+bit.replace(int r, int v, int field, [int width]) -> int
 ```
 
 ## Description
 
-TODO document.
+Returns r with width bits starting at field replaced by the low width bits of v. width defaults to 1.
 
 ## Parameters
 
-- `r` `any`
-- `v` `any`
-- `field` `any`
-- `width` `any`
+- `r` `int`
+- `v` `int`
+- `field` `int`
+- `width` `int` optional
+
+## Returns
+
+- `int` - r with the selected bit field replaced.
 
 ## Source
 

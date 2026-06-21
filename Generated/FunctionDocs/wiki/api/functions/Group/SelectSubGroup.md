@@ -3,12 +3,12 @@
 ## Signature
 
 ```lua
-Group.SelectSubGroup(Group g, int tp, function f, bool cancelable, [int min], [int max], ... any) -> Group
+Group.SelectSubGroup(Group g, int tp, function f, bool cancelable, [int min], [int max], ... any) -> Group|nil
 ```
 
 ## Description
 
-TODO document.
+Lets tp select a subgroup from g with size between min and max that satisfies f. It respects already selected cards and returns nil if no valid selection is completed.
 
 ## Parameters
 
@@ -22,7 +22,7 @@ TODO document.
 
 ## Returns
 
-- `Group`
+- `Group|nil` - The selected subgroup, or nil if no valid selection is completed.
 
 ## Source
 

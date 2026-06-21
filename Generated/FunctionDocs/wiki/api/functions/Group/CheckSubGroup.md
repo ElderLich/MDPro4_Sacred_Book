@@ -8,7 +8,7 @@ Group.CheckSubGroup(Group g, function f, [int min], [int max], ... any) -> bool
 
 ## Description
 
-TODO document.
+Checks whether g has a subgroup with size between min and max that satisfies f, while respecting already selected cards from Duel.GrabSelectedCard and Auxiliary.GCheckAdditional.
 
 ## Parameters
 
@@ -20,7 +20,7 @@ TODO document.
 
 ## Returns
 
-- `bool`
+- `bool` - true if a valid subgroup exists.
 
 ## Source
 

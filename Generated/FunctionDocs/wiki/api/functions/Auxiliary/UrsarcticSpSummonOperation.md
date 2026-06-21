@@ -8,7 +8,7 @@ Auxiliary.UrsarcticSpSummonOperation(Effect e, int tp, Group eg, int ep, any ev,
 
 ## Description
 
-TODO document.
+Operation for the shared Ursarctic Special Summon effect. It Special Summons the handler, then applies the End Phase Special Summon restriction that blocks Level 0 monsters.
 
 ## Parameters
 

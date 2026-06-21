@@ -3,17 +3,21 @@
 ## Signature
 
 ```lua
-Auxiliary.UrsarcticSpSummonLimit(Effect e, Card c) -> void
+Auxiliary.UrsarcticSpSummonLimit(Effect e, Card c) -> bool
 ```
 
 ## Description
 
-TODO document.
+Special Summon restriction target applied after the shared Ursarctic effect resolves; returns true for monsters with Level 0.
 
 ## Parameters
 
 - `e` `Effect`
 - `c` `Card`
+
+## Returns
+
+- `bool` - true for Level 0 monsters.
 
 ## Source
 

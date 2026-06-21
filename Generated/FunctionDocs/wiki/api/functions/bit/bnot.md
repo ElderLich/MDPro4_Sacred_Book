@@ -3,16 +3,20 @@
 ## Signature
 
 ```lua
-bit.bnot(any a) -> void
+bit.bnot(int a) -> int
 ```
 
 ## Description
 
-TODO document.
+Returns the bitwise NOT of a.
 
 ## Parameters
 
-- `a` `any`
+- `a` `int`
+
+## Returns
+
+- `int` - Bitwise NOT of a.
 
 ## Source
 

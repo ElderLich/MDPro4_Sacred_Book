@@ -3,18 +3,22 @@
 ## Signature
 
 ```lua
-bit.extract(any r, any field, any width) -> void
+bit.extract(int r, int field, [int width]) -> int
 ```
 
 ## Description
 
-TODO document.
+Extracts width bits from r starting at bit field. width defaults to 1.
 
 ## Parameters
 
-- `r` `any`
-- `field` `any`
-- `width` `any`
+- `r` `int`
+- `field` `int`
+- `width` `int` optional
+
+## Returns
+
+- `int` - The extracted bit field.
 
 ## Source
 
