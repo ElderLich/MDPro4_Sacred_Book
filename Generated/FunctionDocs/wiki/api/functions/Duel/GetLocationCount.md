@@ -3,14 +3,13 @@
 ## Signature
 
 ```lua
-Duel.GetLocationCount(int player, int location, [int use_player], [int reason], [int zone]) -> int
+Duel.GetLocationCount(int player, int location, [int use_player], [int reason], [int zone]) -> int,int
 ```
 
 ## Description
 
-Returns the number of spaces available in the player's field
-Location can only be LOCATION_MZONE or LOCATION_SZONE
-Reason is LOCATION_REASON_TOFIELD or LOCATION_REASON_CONTROL
+Returns how many zones of location are available on player's field and the corresponding usable zone mask.
+location is normally LOCATION_MZONE or LOCATION_SZONE. use_player, reason, and zone are used by effects that restrict where cards can be placed, such as Kaiser Colosseum-style restrictions.
 
 ## Parameters
 
@@ -18,10 +17,11 @@ Reason is LOCATION_REASON_TOFIELD or LOCATION_REASON_CONTROL
 - `location` `int`
 - `use_player` `int` optional
 - `reason` `int` optional
-- `zone` `int` optional - default: 0xff
+- `zone` `int` optional
 
 ## Returns
 
+- `int`
 - `int`
 
 ## Source

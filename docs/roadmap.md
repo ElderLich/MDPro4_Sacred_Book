@@ -11,6 +11,7 @@ This is the working todo for turning Sacred Book into a complete MDPro3 scriptin
 - [x] Add the Script Explorer for searching cards and function usage.
 - [x] Add function usage and script examples directly to API pages.
 - [x] Add a generated translation review queue for awkward/imported function English.
+- [x] Record the source-plan boundary for Miraheze/scrapi-book/scrapiyard inspiration without importing their API content.
 - [ ] Translate and review the highest-use imported function descriptions.
 
 ## Documentation Coverage
@@ -22,6 +23,7 @@ This is the working todo for turning Sacred Book into a complete MDPro3 scriptin
 - [ ] Add focused pages for common scripting patterns: targeting, costs, operation flow, once-per-turn handling, field zones, counters, and summon procedures.
 - [ ] Expand the beginner path with small complete card scripts that build up one concept at a time.
 - [ ] Add terminology review passes for official Yu-Gi-Oh! wording such as Graveyard, banish, GY, hand, Deck, Extra Deck, and Set.
+- [ ] Move reviewed function docs into a multilingual machine-readable override file instead of keeping long manual batches in the generator.
 
 ## Data And Tools
 

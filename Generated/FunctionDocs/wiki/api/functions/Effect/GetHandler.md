@@ -8,7 +8,7 @@ Effect.GetHandler(Effect e) -> Card
 
 ## Description
 
-Returns the card on which the effect takes effect (usually a card that registers the effect with Card.RegisterEffect)
+Returns the card currently handling e, usually the card that registered it with Card.RegisterEffect.
 
 ## Parameters
 

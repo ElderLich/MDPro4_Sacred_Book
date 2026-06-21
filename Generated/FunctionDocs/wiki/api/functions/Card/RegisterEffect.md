@@ -3,24 +3,23 @@
 ## Signature
 
 ```lua
-Card.RegisterEffect(Card c, Effect e, [bool forced]) -> int
+Card.RegisterEffect(Card c, Effect e, [bool forced]) -> int|nil
 ```
 
 ## Description
 
-Register the effect e to c, return the global id of the effect, and set the Handler of e to c
-By default, if c is registered with the effect of immune e then the registration will fail
-If forced is true, the immune effect of c against e will not be checked
+Registers effect e to card c and returns the generated effect field ID.
+Registration also makes c the effect handler. If the card is unaffected by the current reason effect, registration can fail unless forced is true.
 
 ## Parameters
 
 - `c` `Card`
 - `e` `Effect`
-- `forced` `bool` optional - default: false
+- `forced` `bool` optional
 
 ## Returns
 
-- `int`
+- `int|nil`
 
 ## Source
 

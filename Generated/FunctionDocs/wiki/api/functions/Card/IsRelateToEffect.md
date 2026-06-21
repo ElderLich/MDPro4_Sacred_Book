@@ -8,9 +8,8 @@ Card.IsRelateToEffect(Card c, Effect e) -> bool
 
 ## Description
 
-Check whether c is associated with effect e
-Note: Each launch into the effect of chain, the effect of launching the card, and the effect of the specified object
-(With Duel.SetTargetCard or Duel.SelectTarget specified, including the take and not take objects)
+Checks whether c is still related to effect e.
+When an effect enters the Chain, its handler and cards selected with Duel.SetTargetCard or Duel.SelectTarget are related to that effect. That relation is normally lost once the card leaves its expected place.
 
 ## Parameters
 

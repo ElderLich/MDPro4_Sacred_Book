@@ -452,6 +452,63 @@ def parse_bullet_file(path: Path) -> dict[str, list[str]]:
 
 
 FUNCTION_EN_OVERRIDES = {
+    # High-use core/API functions reviewed from MDPro3/YGOPro sources.
+    "Auxiliary.Stringid": ["Returns the card-string id for card code and string index id. The index starts at 0 and is commonly passed to Effect.SetDescription, Duel.Hint, or selection prompts."],
+    "Card.IsFaceup": ["Checks whether c is in face-up position."],
+    "Card.IsLocation": [
+        "Checks whether c is currently in location.",
+        "Cards treated as not being on the field return false for field locations, including during a Summon before it successfully reaches the Monster Zone.",
+    ],
+    "Card.IsRelateToEffect": [
+        "Checks whether c is still related to effect e.",
+        "When an effect enters the Chain, its handler and cards selected with Duel.SetTargetCard or Duel.SelectTarget are related to that effect. That relation is normally lost once the card leaves its expected place.",
+    ],
+    "Card.IsSetCard": ["Checks whether c belongs to any of the supplied set codes."],
+    "Card.IsType": ["Checks whether c has at least one of the type flags in type."],
+    "Card.RegisterEffect": [
+        "Registers effect e to card c and returns the generated effect field ID.",
+        "Registration also makes c the effect handler. If the card is unaffected by the current reason effect, registration can fail unless forced is true.",
+    ],
+    "Duel.GetLocationCount": [
+        "Returns how many zones of location are available on player's field and the corresponding usable zone mask.",
+        "location is normally LOCATION_MZONE or LOCATION_SZONE. use_player, reason, and zone are used by effects that restrict where cards can be placed, such as Kaiser Colosseum-style restrictions.",
+    ],
+    "Duel.Hint": [
+        "Sends a hint message of hint_type to player using desc as the message id.",
+        "For HINT_SELECTMSG, desc is also stored as that player's last selection hint. HINT_OPSELECTED is displayed to the other player.",
+    ],
+    "Duel.IsExistingMatchingCard": [
+        "Checks whether the specified locations contain at least count cards that satisfy filter f and are not excluded by ex.",
+        "s is player's own location mask and o is the opponent's location mask from that player's viewpoint. Extra arguments after ex are passed to f.",
+    ],
+    "Duel.SelectMatchingCard": [
+        "Lets sel_player choose min to max cards from the specified locations that satisfy filter f and are not excluded by ex.",
+        "s is player's own location mask and o is the opponent's location mask from that player's viewpoint. Extra arguments after ex are passed to f.",
+    ],
+    "Effect.CreateEffect": ["Creates a new empty Effect object owned by card c."],
+    "Effect.GetHandler": ["Returns the card currently handling e, usually the card that registered it with Card.RegisterEffect."],
+    "Effect.SetCategory": ["Sets e's operation category flags, such as CATEGORY_DESTROY, CATEGORY_TOHAND, or CATEGORY_SPECIAL_SUMMON."],
+    "Effect.SetCode": ["Sets e's code. For triggered effects this is usually an event code; for continuous effects it is the effect code being applied."],
+    "Effect.SetCondition": ["Sets e's condition callback. The callback decides whether the effect can apply or be activated in the current context."],
+    "Effect.SetCountLimit": [
+        "Sets how many times e can be used before its count limit is spent.",
+        "Effects that share a nonzero code share the same usage count. Special code flags such as EFFECT_COUNT_CODE_OATH, EFFECT_COUNT_CODE_DUEL, EFFECT_COUNT_CODE_SINGLE, and EFFECT_COUNT_CODE_CHAIN change how that count is scoped.",
+    ],
+    "Effect.SetDescription": ["Sets e's description id, usually produced with Auxiliary.Stringid for card text choices."],
+    "Effect.SetOperation": ["Sets e's operation callback. Passing nil clears the operation."],
+    "Effect.SetProperty": ["Sets e's property flags. prop1 holds the normal effect property flags; prop2 is used for the second property word when needed."],
+    "Effect.SetRange": ["Sets the location range where e applies or can be activated."],
+    "Effect.SetReset": [
+        "Sets when e resets and how many reset checks it can survive.",
+        "When a phase reset is used without an explicit turn side, the core applies both RESET_SELF_TURN and RESET_OPPO_TURN.",
+    ],
+    "Effect.SetTarget": ["Sets e's target callback. For activated effects, this callback performs activation legality checks and records target or operation information."],
+    "Effect.SetType": [
+        "Sets e's effect type flags.",
+        "The core normalizes some type combinations: Spell/Trap activation effects become field activation effects, Flip Effects receive EVENT_FLIP handling, and ignition/Quick Effects gain field behavior.",
+    ],
+    "Effect.SetValue": ["Sets e's value field. The value can be a number, boolean, or callback function depending on the effect code."],
+    "Group.GetCount": ["Returns the number of cards in g."],
     "Card.GetPreviousOverlayCountOnField": ["Returns the number of cards that were overlaid on c while it was previously on the field."],
     "Card.GetSpecialSummonInfo": [
         "Returns Special Summon information for c.",
@@ -1178,6 +1235,173 @@ FUNCTION_ZH_OVERRIDES = {
 
 
 CORE_DOC_OVERRIDES = {
+    "Auxiliary.Stringid": {
+        "params": [ParamDoc("code", "int"), ParamDoc("id", "int")],
+        "returns": [ReturnDoc("int")],
+        "description": ["Returns the card-string id for card code and string index id."],
+        "description_zh": ["返回卡片code的第id个卡片字符串编号；id从0开始。"],
+    },
+    "Card.IsFaceup": {
+        "params": [ParamDoc("c", "Card")],
+        "returns": [ReturnDoc("bool")],
+        "description": ["Checks whether c is in face-up position."],
+        "description_zh": ["检查c是否为表侧表示。"],
+    },
+    "Card.IsLocation": {
+        "params": [ParamDoc("c", "Card"), ParamDoc("location", "int")],
+        "returns": [ReturnDoc("bool")],
+        "description": ["Checks whether c is currently in location."],
+        "description_zh": ["检查c当前是否在location位置。"],
+    },
+    "Card.IsRelateToEffect": {
+        "params": [ParamDoc("c", "Card"), ParamDoc("e", "Effect")],
+        "returns": [ReturnDoc("bool")],
+        "description": ["Checks whether c is still related to effect e."],
+        "description_zh": ["检查c是否仍与效果e保持联系。"],
+    },
+    "Card.IsSetCard": {
+        "params": [ParamDoc("c", "Card"), ParamDoc("...", "int")],
+        "returns": [ReturnDoc("bool")],
+        "description": ["Checks whether c belongs to any supplied set code."],
+        "description_zh": ["检查c是否属于任意给定的系列代码。"],
+    },
+    "Card.IsType": {
+        "params": [ParamDoc("c", "Card"), ParamDoc("type", "int")],
+        "returns": [ReturnDoc("bool")],
+        "description": ["Checks whether c has at least one type flag from type."],
+        "description_zh": ["检查c是否包含type中的任意类型。"],
+    },
+    "Card.RegisterEffect": {
+        "params": [ParamDoc("c", "Card"), ParamDoc("e", "Effect"), ParamDoc("forced", "bool", True)],
+        "returns": [ReturnDoc("int|nil")],
+        "description": ["Registers effect e to card c and returns the generated effect field ID."],
+        "description_zh": ["把效果e注册给c，成功时返回效果的场上编号，并设置e的Handler为c。"],
+    },
+    "Duel.GetLocationCount": {
+        "params": [
+            ParamDoc("player", "int"), ParamDoc("location", "int"), ParamDoc("use_player", "int", True),
+            ParamDoc("reason", "int", True), ParamDoc("zone", "int", True),
+        ],
+        "returns": [ReturnDoc("int"), ReturnDoc("int")],
+        "description": ["Returns the available zone count and usable zone mask for location on player's field."],
+        "description_zh": ["返回玩家player场上location可用区域数量以及对应的可用区域mask。"],
+    },
+    "Duel.Hint": {
+        "params": [ParamDoc("hint_type", "int"), ParamDoc("player", "int"), ParamDoc("desc", "int")],
+        "returns": [],
+        "description": ["Sends a hint message of hint_type to player using desc as the message id."],
+        "description_zh": ["给玩家player发送hint_type类型的提示消息，提示内容为desc。"],
+    },
+    "Duel.IsExistingMatchingCard": {
+        "params": [
+            ParamDoc("f", "function|nil", True), ParamDoc("player", "int"), ParamDoc("s", "int"),
+            ParamDoc("o", "int"), ParamDoc("count", "int"), ParamDoc("ex", "Card|Group|nil", True),
+            ParamDoc("...", "any"),
+        ],
+        "returns": [ReturnDoc("bool")],
+        "description": ["Checks whether the specified locations contain at least count matching cards."],
+        "description_zh": ["过滤函数；检查以player来看指定位置是否存在至少count张满足f且不等于ex的卡。"],
+    },
+    "Duel.SelectMatchingCard": {
+        "params": [
+            ParamDoc("sel_player", "int"), ParamDoc("f", "function|nil", True), ParamDoc("player", "int"),
+            ParamDoc("s", "int"), ParamDoc("o", "int"), ParamDoc("min", "int"), ParamDoc("max", "int"),
+            ParamDoc("ex", "Card|Group|nil", True), ParamDoc("...", "any"),
+        ],
+        "returns": [ReturnDoc("Group")],
+        "description": ["Lets sel_player choose min to max matching cards from the specified locations."],
+        "description_zh": ["过滤函数；让玩家sel_player从指定位置选择min到max张满足f且不等于ex的卡。"],
+    },
+    "Effect.CreateEffect": {
+        "params": [ParamDoc("c", "Card")],
+        "returns": [ReturnDoc("Effect")],
+        "description": ["Creates a new empty Effect object owned by card c."],
+        "description_zh": ["新建一个空效果，并把效果的Owner设为c。"],
+    },
+    "Effect.GetHandler": {
+        "params": [ParamDoc("e", "Effect")],
+        "returns": [ReturnDoc("Card")],
+        "description": ["Returns the card currently handling e."],
+        "description_zh": ["返回效果e当前在哪张卡上生效。"],
+    },
+    "Effect.SetCategory": {
+        "params": [ParamDoc("e", "Effect"), ParamDoc("cate", "int")],
+        "returns": [],
+        "description": ["Sets e's operation category flags."],
+        "description_zh": ["设置效果e的Category属性。"],
+    },
+    "Effect.SetCode": {
+        "params": [ParamDoc("e", "Effect"), ParamDoc("code", "int")],
+        "returns": [],
+        "description": ["Sets e's code."],
+        "description_zh": ["设置效果e的Code属性。"],
+    },
+    "Effect.SetCondition": {
+        "params": [ParamDoc("e", "Effect"), ParamDoc("con_func", "function")],
+        "returns": [],
+        "description": ["Sets e's condition callback."],
+        "description_zh": ["设置效果e的Condition函数。"],
+    },
+    "Effect.SetCountLimit": {
+        "params": [ParamDoc("e", "Effect"), ParamDoc("count", "int"), ParamDoc("code", "int", True)],
+        "returns": [],
+        "description": ["Sets e's count limit and optional shared count code."],
+        "description_zh": ["设置效果e的使用次数限制count，以及可选的共享次数代码code。"],
+    },
+    "Effect.SetDescription": {
+        "params": [ParamDoc("e", "Effect"), ParamDoc("desc", "int")],
+        "returns": [],
+        "description": ["Sets e's description id."],
+        "description_zh": ["设置效果e的描述编号。"],
+    },
+    "Effect.SetOperation": {
+        "params": [ParamDoc("e", "Effect"), ParamDoc("op_func", "nil|function")],
+        "returns": [],
+        "description": ["Sets or clears e's operation callback."],
+        "description_zh": ["设置或清除效果e的Operation函数。"],
+    },
+    "Effect.SetProperty": {
+        "params": [ParamDoc("e", "Effect"), ParamDoc("prop1", "int"), ParamDoc("prop2", "int", True)],
+        "returns": [],
+        "description": ["Sets e's property flags."],
+        "description_zh": ["设置效果e的Property属性。"],
+    },
+    "Effect.SetRange": {
+        "params": [ParamDoc("e", "Effect"), ParamDoc("range", "int")],
+        "returns": [],
+        "description": ["Sets the location range where e applies or can be activated."],
+        "description_zh": ["设置效果e的生效或可发动位置。"],
+    },
+    "Effect.SetReset": {
+        "params": [ParamDoc("e", "Effect"), ParamDoc("reset_flag", "int"), ParamDoc("reset_count", "int", True)],
+        "returns": [],
+        "description": ["Sets e's reset flags and optional reset count."],
+        "description_zh": ["设置效果e的reset参数和可选的reset次数。"],
+    },
+    "Effect.SetTarget": {
+        "params": [ParamDoc("e", "Effect"), ParamDoc("targ_func", "function")],
+        "returns": [],
+        "description": ["Sets e's target callback."],
+        "description_zh": ["设置效果e的Target函数。"],
+    },
+    "Effect.SetType": {
+        "params": [ParamDoc("e", "Effect"), ParamDoc("type", "int")],
+        "returns": [],
+        "description": ["Sets e's effect type flags."],
+        "description_zh": ["设置效果e的Type属性。"],
+    },
+    "Effect.SetValue": {
+        "params": [ParamDoc("e", "Effect"), ParamDoc("val", "function|int|bool")],
+        "returns": [],
+        "description": ["Sets e's value field."],
+        "description_zh": ["设置效果e的Value属性。"],
+    },
+    "Group.GetCount": {
+        "params": [ParamDoc("g", "Group")],
+        "returns": [ReturnDoc("int")],
+        "description": ["Returns the number of cards in g."],
+        "description_zh": ["返回g中的卡片数量。"],
+    },
     "Card.IsCanBePlacedOnField": {
         "params": [
             ParamDoc("c", "Card"),
@@ -2520,7 +2744,7 @@ def apply_core_doc_overrides(docs: dict[str, FunctionDoc]) -> None:
             continue
         doc.params = copy_params(override["params"])
         doc.returns = copy_returns(override["returns"])
-        doc.description_zh = list(override["description"])
+        doc.description_zh = list(override.get("description_zh", override["description"]))
         if "core-doc-override" not in doc.tags:
             doc.tags.append("core-doc-override")
 

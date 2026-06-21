@@ -8,7 +8,7 @@ Effect.SetCondition(Effect e, function con_func) -> void
 
 ## Description
 
-Set the Condition property
+Sets e's condition callback. The callback decides whether the effect can apply or be activated in the current context.
 
 ## Parameters
 

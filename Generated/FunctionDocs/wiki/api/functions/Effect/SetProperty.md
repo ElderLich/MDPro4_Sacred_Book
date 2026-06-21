@@ -8,7 +8,7 @@ Effect.SetProperty(Effect e, int prop1, [int prop2]) -> void
 
 ## Description
 
-Set the Property property
+Sets e's property flags. prop1 holds the normal effect property flags; prop2 is used for the second property word when needed.
 
 ## Parameters
 

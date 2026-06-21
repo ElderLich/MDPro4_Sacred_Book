@@ -8,7 +8,7 @@ Effect.SetDescription(Effect e, int desc) -> void
 
 ## Description
 
-Sets the effect description for effect e
+Sets e's description id, usually produced with Auxiliary.Stringid for card text choices.
 
 ## Parameters
 

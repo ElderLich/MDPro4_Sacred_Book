@@ -8,8 +8,8 @@ Duel.SelectMatchingCard(int sel_player, [function|nil f], int player, int s, int
 
 ## Description
 
-Filter function, the player sel_player select the specified location to meet the filter condition f and not equal to the ex min-max card
-The ninth parameter starts as an extra parameter
+Lets sel_player choose min to max cards from the specified locations that satisfy filter f and are not excluded by ex.
+s is player's own location mask and o is the opponent's location mask from that player's viewpoint. Extra arguments after ex are passed to f.
 
 ## Parameters
 

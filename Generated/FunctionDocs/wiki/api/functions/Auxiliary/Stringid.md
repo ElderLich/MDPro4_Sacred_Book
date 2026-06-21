@@ -3,17 +3,21 @@
 ## Signature
 
 ```lua
-Auxiliary.Stringid(int code, int id) -> void
+Auxiliary.Stringid(int code, int id) -> int
 ```
 
 ## Description
 
-Used to index the card number code for the card the first id (from 0) effect prompts
+Returns the card-string id for card code and string index id. The index starts at 0 and is commonly passed to Effect.SetDescription, Duel.Hint, or selection prompts.
 
 ## Parameters
 
 - `code` `int`
 - `id` `int`
+
+## Returns
+
+- `int`
 
 ## Source
 

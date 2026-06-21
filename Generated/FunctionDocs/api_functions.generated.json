@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-06-21T20:58:11+00:00",
+    "generated_at": "2026-06-21T22:13:58+00:00",
     "workspace": "D:\\Programs\\GitHub\\MDPro3_Sacred_Book",
     "dataeditorx_data": "D:\\Programs\\GitHub\\DataEditorX\\DataEditorX\\data",
     "mdpro3_locales": "D:\\Programs\\GitHub\\MDPro3_Data\\Data\\locales",
@@ -9075,12 +9075,12 @@
         }
       ],
       "description_zh": [
-        "检查c是否是表侧表示"
+        "检查c是否为表侧表示。"
       ],
       "description_en": [
-        "Check whether c is a surface-side representation"
+        "Checks whether c is in face-up position."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
@@ -9095,7 +9095,8 @@
       ],
       "aliases": [],
       "tags": [
-        "core-binding"
+        "core-binding",
+        "core-doc-override"
       ],
       "core_binding": true,
       "core_handler": "card_is_faceup"
@@ -10484,16 +10485,13 @@
         }
       ],
       "description_zh": [
-        "检查c当前位置是否是location",
-        "注：当怪兽召唤，反转召唤，特殊召唤时召唤成功之前，",
-        "并且location=LOCATION_MZONE时，此函数返回false"
+        "检查c当前是否在location位置。"
       ],
       "description_en": [
-        "Check if c is the current location",
-        "Note: When the monster summon, reverse call, call special summon before the success,",
-        "And location = LOCATION_MZONE, this function returns false"
+        "Checks whether c is currently in location.",
+        "Cards treated as not being on the field return false for field locations, including during a Summon before it successfully reaches the Monster Zone."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
@@ -10508,7 +10506,8 @@
       ],
       "aliases": [],
       "tags": [
-        "core-binding"
+        "core-binding",
+        "core-doc-override"
       ],
       "core_binding": true,
       "core_handler": "card_is_location"
@@ -11612,17 +11611,13 @@
         }
       ],
       "description_zh": [
-        "检查c是否和效果e有联系",
-        "注：每次发动进入连锁的效果时，发动效果的卡，以及发动效果时指定的对象",
-        "（用Duel.SetTargetCard或者Duel.SelectTarget指定的，包括取对象和不取对象）",
-        "会自动与那个效果建立联系，一旦离场，联系会重置"
+        "检查c是否仍与效果e保持联系。"
       ],
       "description_en": [
-        "Check whether c is associated with effect e",
-        "Note: Each launch into the effect of chain, the effect of launching the card, and the effect of the specified object",
-        "(With Duel.SetTargetCard or Duel.SelectTarget specified, including the take and not take objects)"
+        "Checks whether c is still related to effect e.",
+        "When an effect enters the Chain, its handler and cards selected with Duel.SetTargetCard or Duel.SelectTarget are related to that effect. That relation is normally lost once the card leaves its expected place."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
@@ -11637,7 +11632,8 @@
       ],
       "aliases": [],
       "tags": [
-        "core-binding"
+        "core-binding",
+        "core-doc-override"
       ],
       "core_binding": true,
       "core_handler": "card_is_relate_to_effect"
@@ -11761,12 +11757,12 @@
         }
       ],
       "description_zh": [
-        "检查c是否是卡名含有setname的卡"
+        "检查c是否属于任意给定的系列代码。"
       ],
       "description_en": [
-        "Check whether c is a card with the name setname"
+        "Checks whether c belongs to any of the supplied set codes."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
@@ -11781,7 +11777,8 @@
       ],
       "aliases": [],
       "tags": [
-        "core-binding"
+        "core-binding",
+        "core-doc-override"
       ],
       "core_binding": true,
       "core_handler": "card_is_set_card"
@@ -12481,12 +12478,12 @@
         }
       ],
       "description_zh": [
-        "检查c是否包含type之中任何类型"
+        "检查c是否包含type中的任意类型。"
       ],
       "description_en": [
-        "Check if c is of type type"
+        "Checks whether c has at least one of the type flags in type."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
@@ -12501,7 +12498,8 @@
       ],
       "aliases": [],
       "tags": [
-        "core-binding"
+        "core-binding",
+        "core-doc-override"
       ],
       "core_binding": true,
       "core_handler": "card_is_type"
@@ -12697,26 +12695,23 @@
           "name": "forced",
           "type": "bool",
           "optional": true,
-          "description": "default: false"
+          "description": ""
         }
       ],
       "returns": [
         {
-          "type": "int",
+          "type": "int|nil",
           "description": ""
         }
       ],
       "description_zh": [
-        "把效果e注册给c，返回效果的全局id，并设置e的Handler为c",
-        "默认情况下注册时如果c带有免疫e的效果那么注册会失败",
-        "如果forced为true则不会检查c对e的免疫效果"
+        "把效果e注册给c，成功时返回效果的场上编号，并设置e的Handler为c。"
       ],
       "description_en": [
-        "Register the effect e to c, return the global id of the effect, and set the Handler of e to c",
-        "By default, if c is registered with the effect of immune e then the registration will fail",
-        "If forced is true, the immune effect of c against e will not be checked"
+        "Registers effect e to card c and returns the generated effect field ID.",
+        "Registration also makes c the effect handler. If the card is unaffected by the current reason effect, registration can fail unless forced is true."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
@@ -12731,7 +12726,8 @@
       ],
       "aliases": [],
       "tags": [
-        "core-binding"
+        "core-binding",
+        "core-doc-override"
       ],
       "core_binding": true,
       "core_handler": "card_register_effect"
@@ -19166,27 +19162,27 @@
           "name": "zone",
           "type": "int",
           "optional": true,
-          "description": "default: 0xff"
+          "description": ""
         }
       ],
       "returns": [
         {
           "type": "int",
           "description": ""
+        },
+        {
+          "type": "int",
+          "description": ""
         }
       ],
       "description_zh": [
-        "返回玩家player的场上location可用的[区域 zone 里的]空格数",
-        "location只能是LOCATION_MZONE或者LOCATION_SZONE",
-        "reason为LOCATION_REASON_TOFIELD或LOCATION_REASON_CONTROL",
-        "##第三个第四个额外参数与凯撒斗技场等限制格子的效果有关"
+        "返回玩家player场上location可用区域数量以及对应的可用区域mask。"
       ],
       "description_en": [
-        "Returns the number of spaces available in the player's field",
-        "Location can only be LOCATION_MZONE or LOCATION_SZONE",
-        "Reason is LOCATION_REASON_TOFIELD or LOCATION_REASON_CONTROL"
+        "Returns how many zones of location are available on player's field and the corresponding usable zone mask.",
+        "location is normally LOCATION_MZONE or LOCATION_SZONE. use_player, reason, and zone are used by effects that restrict where cards can be placed, such as Kaiser Colosseum-style restrictions."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libduel.cpp",
@@ -19201,7 +19197,8 @@
       ],
       "aliases": [],
       "tags": [
-        "core-binding"
+        "core-binding",
+        "core-doc-override"
       ],
       "core_binding": true,
       "core_handler": "duel_get_location_count"
@@ -20629,19 +20626,15 @@
           "description": ""
         }
       ],
-      "returns": [
-        {
-          "type": "nil",
-          "description": ""
-        }
-      ],
+      "returns": [],
       "description_zh": [
-        "给玩家player发送hint_type类型的消息提示，提示内容为desc"
+        "给玩家player发送hint_type类型的提示消息，提示内容为desc。"
       ],
       "description_en": [
-        "Send hint_type to the player player type of message prompts, the contents of the prompt desc"
+        "Sends a hint message of hint_type to player using desc as the message id.",
+        "For HINT_SELECTMSG, desc is also stored as that player's last selection hint. HINT_OPSELECTED is displayed to the other player."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libduel.cpp",
@@ -20656,7 +20649,8 @@
       ],
       "aliases": [],
       "tags": [
-        "core-binding"
+        "core-binding",
+        "core-doc-override"
       ],
       "core_binding": true,
       "core_handler": "duel_hint"
@@ -21282,15 +21276,13 @@
         }
       ],
       "description_zh": [
-        "过滤函数，检查以player来看的指定位置是否存在至少count张满足过滤条件f并且不等于ex的卡",
-        "s代表以player来看的自己的位置，o代表以player来看的对方的位置",
-        "第7个参数开始为额外参数"
+        "过滤函数；检查以player来看指定位置是否存在至少count张满足f且不等于ex的卡。"
       ],
       "description_en": [
-        "Filter the function to check if there are at least count cards that satisfy the filter condition f and not equal to ex",
-        "The seventh argument starts as an extra parameter"
+        "Checks whether the specified locations contain at least count cards that satisfy filter f and are not excluded by ex.",
+        "s is player's own location mask and o is the opponent's location mask from that player's viewpoint. Extra arguments after ex are passed to f."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libduel.cpp",
@@ -21305,7 +21297,8 @@
       ],
       "aliases": [],
       "tags": [
-        "core-binding"
+        "core-binding",
+        "core-doc-override"
       ],
       "core_binding": true,
       "core_handler": "duel_is_existing_matching_card"
@@ -24483,15 +24476,13 @@
         }
       ],
       "description_zh": [
-        "过滤函数，让玩家sel_player选择以player来看的指定位置满足过滤条件f并且不等于ex的min-max张卡",
-        "s代表以player来看的自己的位置，o代表以player来看的对方的位置",
-        "第9个参数开始为额外参数"
+        "过滤函数；让玩家sel_player从指定位置选择min到max张满足f且不等于ex的卡。"
       ],
       "description_en": [
-        "Filter function, the player sel_player select the specified location to meet the filter condition f and not equal to the ex min-max card",
-        "The ninth parameter starts as an extra parameter"
+        "Lets sel_player choose min to max cards from the specified locations that satisfy filter f and are not excluded by ex.",
+        "s is player's own location mask and o is the opponent's location mask from that player's viewpoint. Extra arguments after ex are passed to f."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libduel.cpp",
@@ -24506,7 +24497,8 @@
       ],
       "aliases": [],
       "tags": [
-        "core-binding"
+        "core-binding",
+        "core-doc-override"
       ],
       "core_binding": true,
       "core_handler": "duel_select_matching_cards"
@@ -27512,14 +27504,12 @@
         }
       ],
       "description_zh": [
-        "新建一个空效果",
-        "并且效果的Owner为c"
+        "新建一个空效果，并把效果的Owner设为c。"
       ],
       "description_en": [
-        "Create a new empty effect",
-        "And the owner of the effect is c"
+        "Creates a new empty Effect object owned by card c."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libeffect.cpp",
@@ -27534,7 +27524,8 @@
       ],
       "aliases": [],
       "tags": [
-        "core-binding"
+        "core-binding",
+        "core-doc-override"
       ],
       "core_binding": true,
       "core_handler": "effect_new"
@@ -27955,12 +27946,12 @@
         }
       ],
       "description_zh": [
-        "返回效果在哪一张卡上生效(通常是用Card.RegisterEffect注册该效果的卡)"
+        "返回效果e当前在哪张卡上生效。"
       ],
       "description_en": [
-        "Returns the card on which the effect takes effect (usually a card that registers the effect with Card.RegisterEffect)"
+        "Returns the card currently handling e, usually the card that registered it with Card.RegisterEffect."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libeffect.cpp",
@@ -27975,7 +27966,8 @@
       ],
       "aliases": [],
       "tags": [
-        "core-binding"
+        "core-binding",
+        "core-doc-override"
       ],
       "core_binding": true,
       "core_handler": "effect_get_handler"
@@ -29039,19 +29031,14 @@
           "description": ""
         }
       ],
-      "returns": [
-        {
-          "type": "nil",
-          "description": ""
-        }
-      ],
+      "returns": [],
       "description_zh": [
-        "设置Category属性"
+        "设置效果e的Category属性。"
       ],
       "description_en": [
-        "Set the Category property"
+        "Sets e's operation category flags, such as CATEGORY_DESTROY, CATEGORY_TOHAND, or CATEGORY_SPECIAL_SUMMON."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libeffect.cpp",
@@ -29066,7 +29053,8 @@
       ],
       "aliases": [],
       "tags": [
-        "core-binding"
+        "core-binding",
+        "core-doc-override"
       ],
       "core_binding": true,
       "core_handler": "effect_set_category"
@@ -29089,19 +29077,14 @@
           "description": ""
         }
       ],
-      "returns": [
-        {
-          "type": "nil",
-          "description": ""
-        }
-      ],
+      "returns": [],
       "description_zh": [
-        "为效果e设置Code属性"
+        "设置效果e的Code属性。"
       ],
       "description_en": [
-        "Set the Code property for effect e"
+        "Sets e's code. For triggered effects this is usually an event code; for continuous effects it is the effect code being applied."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libeffect.cpp",
@@ -29116,7 +29099,8 @@
       ],
       "aliases": [],
       "tags": [
-        "core-binding"
+        "core-binding",
+        "core-doc-override"
       ],
       "core_binding": true,
       "core_handler": "effect_set_code"
@@ -29139,19 +29123,14 @@
           "description": ""
         }
       ],
-      "returns": [
-        {
-          "type": "nil",
-          "description": ""
-        }
-      ],
+      "returns": [],
       "description_zh": [
-        "设置Condition属性"
+        "设置效果e的Condition函数。"
       ],
       "description_en": [
-        "Set the Condition property"
+        "Sets e's condition callback. The callback decides whether the effect can apply or be activated in the current context."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libeffect.cpp",
@@ -29166,7 +29145,8 @@
       ],
       "aliases": [],
       "tags": [
-        "core-binding"
+        "core-binding",
+        "core-doc-override"
       ],
       "core_binding": true,
       "core_handler": "effect_set_condition"
@@ -29286,36 +29266,24 @@
           "name": "count",
           "type": "int",
           "optional": false,
-          "description": "default: 1"
+          "description": ""
         },
         {
           "name": "code",
           "type": "int",
           "optional": true,
-          "description": "default: 0"
-        }
-      ],
-      "returns": [
-        {
-          "type": "nil",
           "description": ""
         }
       ],
+      "returns": [],
       "description_zh": [
-        "设置一回合可以发动的次数count（仅触发型效果有效），相同的code(不等于0或1时)共用1个次数",
-        "code包含以下数值具有特殊的性质",
-        "EFFECT_COUNT_CODE_OATH          誓约使用次数",
-        "EFFECT_COUNT_CODE_DUEL          决斗中使用次数",
-        "EFFECT_COUNT_CODE_SINGLE        同一张卡多个效果公共使用次数（不限制同名卡）"
+        "设置效果e的使用次数限制count，以及可选的共享次数代码code。"
       ],
       "description_en": [
-        "Set the number of times a round can be launched count (only trigger type effect is valid), the same code (not equal to 0 or 1) share a number of times",
-        "The code contains the following values ​​that have special properties",
-        "EFFECT_COUNT_CODE_OATH The number of vows",
-        "EFFECT_COUNT_CODE_DUEL The number of times in the duel",
-        "EFFECT_COUNT_CODE_SINGLE the same card more than the number of public use of the effect (not the same name card)"
+        "Sets how many times e can be used before its count limit is spent.",
+        "Effects that share a nonzero code share the same usage count. Special code flags such as EFFECT_COUNT_CODE_OATH, EFFECT_COUNT_CODE_DUEL, EFFECT_COUNT_CODE_SINGLE, and EFFECT_COUNT_CODE_CHAIN change how that count is scoped."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libeffect.cpp",
@@ -29330,7 +29298,8 @@
       ],
       "aliases": [],
       "tags": [
-        "core-binding"
+        "core-binding",
+        "core-doc-override"
       ],
       "core_binding": true,
       "core_handler": "effect_set_count_limit"
@@ -29353,19 +29322,14 @@
           "description": ""
         }
       ],
-      "returns": [
-        {
-          "type": "nil",
-          "description": ""
-        }
-      ],
+      "returns": [],
       "description_zh": [
-        "为效果e设置效果描述"
+        "设置效果e的描述编号。"
       ],
       "description_en": [
-        "Sets the effect description for effect e"
+        "Sets e's description id, usually produced with Auxiliary.Stringid for card text choices."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libeffect.cpp",
@@ -29380,7 +29344,8 @@
       ],
       "aliases": [],
       "tags": [
-        "core-binding"
+        "core-binding",
+        "core-doc-override"
       ],
       "core_binding": true,
       "core_handler": "effect_set_description"
@@ -29559,19 +29524,14 @@
           "description": ""
         }
       ],
-      "returns": [
-        {
-          "type": "nil",
-          "description": ""
-        }
-      ],
+      "returns": [],
       "description_zh": [
-        "设置Operation属性"
+        "设置或清除效果e的Operation函数。"
       ],
       "description_en": [
-        "Set the Operation property"
+        "Sets e's operation callback. Passing nil clears the operation."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libeffect.cpp",
@@ -29586,7 +29546,8 @@
       ],
       "aliases": [],
       "tags": [
-        "core-binding"
+        "core-binding",
+        "core-doc-override"
       ],
       "core_binding": true,
       "core_handler": "effect_set_operation"
@@ -29665,19 +29626,14 @@
           "description": ""
         }
       ],
-      "returns": [
-        {
-          "type": "nil",
-          "description": ""
-        }
-      ],
+      "returns": [],
       "description_zh": [
-        "设置Property属性"
+        "设置效果e的Property属性。"
       ],
       "description_en": [
-        "Set the Property property"
+        "Sets e's property flags. prop1 holds the normal effect property flags; prop2 is used for the second property word when needed."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libeffect.cpp",
@@ -29692,7 +29648,8 @@
       ],
       "aliases": [],
       "tags": [
-        "core-binding"
+        "core-binding",
+        "core-doc-override"
       ],
       "core_binding": true,
       "core_handler": "effect_set_property"
@@ -29715,19 +29672,14 @@
           "description": ""
         }
       ],
-      "returns": [
-        {
-          "type": "nil",
-          "description": ""
-        }
-      ],
+      "returns": [],
       "description_zh": [
-        "为效果e设置Range属性，即e的生效位置"
+        "设置效果e的生效或可发动位置。"
       ],
       "description_en": [
-        "Set the Range property for effect e"
+        "Sets the location range where e applies or can be activated."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libeffect.cpp",
@@ -29742,7 +29694,8 @@
       ],
       "aliases": [],
       "tags": [
-        "core-binding"
+        "core-binding",
+        "core-doc-override"
       ],
       "core_binding": true,
       "core_handler": "effect_set_range"
@@ -29768,22 +29721,18 @@
           "name": "reset_count",
           "type": "int",
           "optional": true,
-          "description": "default: 1"
-        }
-      ],
-      "returns": [
-        {
-          "type": "nil",
           "description": ""
         }
       ],
+      "returns": [],
       "description_zh": [
-        "设置reset参数"
+        "设置效果e的reset参数和可选的reset次数。"
       ],
       "description_en": [
-        "Set the reset parameter"
+        "Sets when e resets and how many reset checks it can survive.",
+        "When a phase reset is used without an explicit turn side, the core applies both RESET_SELF_TURN and RESET_OPPO_TURN."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libeffect.cpp",
@@ -29798,7 +29747,8 @@
       ],
       "aliases": [],
       "tags": [
-        "core-binding"
+        "core-binding",
+        "core-doc-override"
       ],
       "core_binding": true,
       "core_handler": "effect_set_reset"
@@ -29821,19 +29771,14 @@
           "description": ""
         }
       ],
-      "returns": [
-        {
-          "type": "nil",
-          "description": ""
-        }
-      ],
+      "returns": [],
       "description_zh": [
-        "设置Target属性"
+        "设置效果e的Target函数。"
       ],
       "description_en": [
-        "Set the Target property"
+        "Sets e's target callback. For activated effects, this callback performs activation legality checks and records target or operation information."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libeffect.cpp",
@@ -29848,7 +29793,8 @@
       ],
       "aliases": [],
       "tags": [
-        "core-binding"
+        "core-binding",
+        "core-doc-override"
       ],
       "core_binding": true,
       "core_handler": "effect_set_target"
@@ -29945,19 +29891,15 @@
           "description": ""
         }
       ],
-      "returns": [
-        {
-          "type": "nil",
-          "description": ""
-        }
-      ],
+      "returns": [],
       "description_zh": [
-        "为效果e设置Type属性"
+        "设置效果e的Type属性。"
       ],
       "description_en": [
-        "Set the Type property for effect e"
+        "Sets e's effect type flags.",
+        "The core normalizes some type combinations: Spell/Trap activation effects become field activation effects, Flip Effects receive EVENT_FLIP handling, and ignition/Quick Effects gain field behavior."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libeffect.cpp",
@@ -29972,7 +29914,8 @@
       ],
       "aliases": [],
       "tags": [
-        "core-binding"
+        "core-binding",
+        "core-doc-override"
       ],
       "core_binding": true,
       "core_handler": "effect_set_type"
@@ -29995,19 +29938,14 @@
           "description": ""
         }
       ],
-      "returns": [
-        {
-          "type": "nil",
-          "description": ""
-        }
-      ],
+      "returns": [],
       "description_zh": [
-        "设置Value属性"
+        "设置效果e的Value属性。"
       ],
       "description_en": [
-        "Set the Value property"
+        "Sets e's value field. The value can be a number, boolean, or callback function depending on the effect code."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libeffect.cpp",
@@ -30022,7 +29960,8 @@
       ],
       "aliases": [],
       "tags": [
-        "core-binding"
+        "core-binding",
+        "core-doc-override"
       ],
       "core_binding": true,
       "core_handler": "effect_set_value"
@@ -31236,12 +31175,12 @@
         }
       ],
       "description_zh": [
-        "返回g中卡的数量"
+        "返回g中的卡片数量。"
       ],
       "description_en": [
-        "Returns the number of cards in g"
+        "Returns the number of cards in g."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libgroup.cpp",
@@ -31256,7 +31195,8 @@
       ],
       "aliases": [],
       "tags": [
-        "core-binding"
+        "core-binding",
+        "core-doc-override"
       ],
       "core_binding": true,
       "core_handler": "group_get_count"
@@ -42181,15 +42121,17 @@
       ],
       "returns": [
         {
-          "type": "nil",
+          "type": "int",
           "description": ""
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "Used to index the card number code for the card the first id (from 0) effect prompts"
+      "description_zh": [
+        "返回卡片code的第id个卡片字符串编号；id从0开始。"
       ],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "Returns the card-string id for card code and string index id. The index starts at 0 and is commonly passed to Effect.SetDescription, Duel.Hint, or selection prompts."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -42200,7 +42142,9 @@
       "aliases": [
         "aux.Stringid"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override"
+      ],
       "core_binding": false,
       "core_handler": ""
     },

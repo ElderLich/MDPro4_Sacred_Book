@@ -8,7 +8,7 @@ Effect.SetOperation(Effect e, nil|function op_func) -> void
 
 ## Description
 
-Set the Operation property
+Sets e's operation callback. Passing nil clears the operation.
 
 ## Parameters
 

@@ -8,7 +8,7 @@ Effect.SetCode(Effect e, int code) -> void
 
 ## Description
 
-Set the Code property for effect e
+Sets e's code. For triggered effects this is usually an event code; for continuous effects it is the effect code being applied.
 
 ## Parameters
 

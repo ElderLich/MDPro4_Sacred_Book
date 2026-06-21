@@ -8,7 +8,7 @@ Effect.SetCategory(Effect e, int cate) -> void
 
 ## Description
 
-Set the Category property
+Sets e's operation category flags, such as CATEGORY_DESTROY, CATEGORY_TOHAND, or CATEGORY_SPECIAL_SUMMON.
 
 ## Parameters
 

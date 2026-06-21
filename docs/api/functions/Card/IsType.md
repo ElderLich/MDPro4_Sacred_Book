@@ -8,7 +8,7 @@ Card.IsType(Card c, int type) -> bool
 
 ## Description
 
-Check if c is of type type
+Checks whether c has at least one of the type flags in type.
 
 ## Parameters
 

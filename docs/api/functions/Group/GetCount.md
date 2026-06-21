@@ -8,7 +8,7 @@ Group.GetCount(Group g) -> int
 
 ## Description
 
-Returns the number of cards in g
+Returns the number of cards in g.
 
 ## Parameters
 

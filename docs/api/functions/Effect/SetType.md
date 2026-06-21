@@ -8,7 +8,8 @@ Effect.SetType(Effect e, int type) -> void
 
 ## Description
 
-Set the Type property for effect e
+Sets e's effect type flags.
+The core normalizes some type combinations: Spell/Trap activation effects become field activation effects, Flip Effects receive EVENT_FLIP handling, and ignition/Quick Effects gain field behavior.
 
 ## Parameters
 

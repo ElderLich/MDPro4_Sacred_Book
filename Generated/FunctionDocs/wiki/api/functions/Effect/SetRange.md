@@ -8,7 +8,7 @@ Effect.SetRange(Effect e, int range) -> void
 
 ## Description
 
-Set the Range property for effect e
+Sets the location range where e applies or can be activated.
 
 ## Parameters
 

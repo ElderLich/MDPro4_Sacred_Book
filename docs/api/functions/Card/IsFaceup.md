@@ -8,7 +8,7 @@ Card.IsFaceup(Card c) -> bool
 
 ## Description
 
-Check whether c is a surface-side representation
+Checks whether c is in face-up position.
 
 ## Parameters
 

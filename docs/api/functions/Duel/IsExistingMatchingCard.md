@@ -8,8 +8,8 @@ Duel.IsExistingMatchingCard([function|nil f], int player, int s, int o, int coun
 
 ## Description
 
-Filter the function to check if there are at least count cards that satisfy the filter condition f and not equal to ex
-The seventh argument starts as an extra parameter
+Checks whether the specified locations contain at least count cards that satisfy filter f and are not excluded by ex.
+s is player's own location mask and o is the opponent's location mask from that player's viewpoint. Extra arguments after ex are passed to f.
 
 ## Parameters
 

@@ -8,7 +8,7 @@ Effect.SetValue(Effect e, function|int|bool val) -> void
 
 ## Description
 
-Set the Value property
+Sets e's value field. The value can be a number, boolean, or callback function depending on the effect code.
 
 ## Parameters
 

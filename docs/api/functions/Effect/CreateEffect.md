@@ -8,8 +8,7 @@ Effect.CreateEffect(Card c) -> Effect
 
 ## Description
 
-Create a new empty effect
-And the owner of the effect is c
+Creates a new empty Effect object owned by card c.
 
 ## Parameters
 

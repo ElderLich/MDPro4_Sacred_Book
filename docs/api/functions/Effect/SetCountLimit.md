@@ -8,17 +8,14 @@ Effect.SetCountLimit(Effect e, int count, [int code]) -> void
 
 ## Description
 
-Set the number of times a round can be launched count (only trigger type effect is valid), the same code (not equal to 0 or 1) share a number of times
-The code contains the following values ​​that have special properties
-EFFECT_COUNT_CODE_OATH The number of vows
-EFFECT_COUNT_CODE_DUEL The number of times in the duel
-EFFECT_COUNT_CODE_SINGLE the same card more than the number of public use of the effect (not the same name card)
+Sets how many times e can be used before its count limit is spent.
+Effects that share a nonzero code share the same usage count. Special code flags such as EFFECT_COUNT_CODE_OATH, EFFECT_COUNT_CODE_DUEL, EFFECT_COUNT_CODE_SINGLE, and EFFECT_COUNT_CODE_CHAIN change how that count is scoped.
 
 ## Parameters
 
 - `e` `Effect`
-- `count` `int` - default: 1
-- `code` `int` optional - default: 0
+- `count` `int`
+- `code` `int` optional
 
 ## Source
 

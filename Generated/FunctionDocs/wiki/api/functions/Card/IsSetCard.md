@@ -8,7 +8,7 @@ Card.IsSetCard(Card c, ... int) -> bool
 
 ## Description
 
-Check whether c is a card with the name setname
+Checks whether c belongs to any of the supplied set codes.
 
 ## Parameters
 
