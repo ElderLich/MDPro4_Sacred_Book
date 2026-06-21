@@ -8,7 +8,7 @@ Auxiliary.FALSE() -> void
 
 ## Description
 
-TODO document.
+Returns false.
 
 ## Source
 

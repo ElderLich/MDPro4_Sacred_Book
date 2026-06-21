@@ -8,7 +8,7 @@ Auxiliary.DrytronSpSummonTarget(Effect e, int tp, Group eg, int ep, any ev, Effe
 
 ## Description
 
-TODO document.
+Target function for the shared Drytron self-Summon effect. It checks the Monster Zone requirement, confirms the handler can be Special Summoned in face-up Defense Position, and sets Special Summon operation info.
 
 ## Parameters
 

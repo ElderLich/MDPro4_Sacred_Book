@@ -8,7 +8,7 @@ Auxiliary.ExtraReleaseFilter(Card c, int tp) -> void
 
 ## Description
 
-TODO document.
+Returns true for an opponent's card that has EFFECT_EXTRA_RELEASE_NONSUM available to tp.
 
 ## Parameters
 

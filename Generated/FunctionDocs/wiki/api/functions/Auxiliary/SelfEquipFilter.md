@@ -3,7 +3,7 @@
 ## Signature
 
 ```lua
-Auxiliary.SelfEquipFilter(Card c, any id) -> void
+Auxiliary.SelfEquipFilter(Card c, int id) -> void
 ```
 
 ## Description
@@ -13,7 +13,7 @@ TODO document.
 ## Parameters
 
 - `c` `Card`
-- `id` `any`
+- `id` `int`
 
 ## Source
 

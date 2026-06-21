@@ -3,7 +3,7 @@
 ## Signature
 
 ```lua
-Auxiliary.RegisterMergedDelayedEvent_ToSingleCard(Card c, Effect code, any events) -> void
+Auxiliary.RegisterMergedDelayedEvent_ToSingleCard(Card c, int code, any events) -> void
 ```
 
 ## Description
@@ -13,7 +13,7 @@ TODO document.
 ## Parameters
 
 - `c` `Card`
-- `code` `Effect`
+- `code` `int`
 - `events` `any`
 
 ## Source

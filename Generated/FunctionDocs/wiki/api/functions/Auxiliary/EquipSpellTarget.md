@@ -8,7 +8,7 @@ Auxiliary.EquipSpellTarget(bool is_self, bool is_opponent, function filter, any 
 
 ## Description
 
-TODO document.
+Returns the shared Equip Spell target function. is_self and is_opponent choose which Monster Zones can be targeted, filter selects a valid target, and eqlimit is rechecked for chained target changes and resolution.
 
 ## Parameters
 

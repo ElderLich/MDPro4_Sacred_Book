@@ -1,6 +1,6 @@
 # Function Docs Refresh Report
 
-Generated: 2026-06-21T10:52:04+00:00
+Generated: 2026-06-21T11:07:38+00:00
 
 ## Outputs
 
@@ -46,8 +46,8 @@ Generated: 2026-06-21T10:52:04+00:00
 ## English Coverage
 
 - `imported_from_dataeditorx`: 677
-- `missing_documentation`: 231
-- `translated_exact`: 90
+- `missing_documentation`: 206
+- `translated_exact`: 115
 
 ## Core Binding Gaps
 

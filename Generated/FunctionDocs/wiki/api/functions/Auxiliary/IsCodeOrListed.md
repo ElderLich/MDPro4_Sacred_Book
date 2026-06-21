@@ -3,7 +3,7 @@
 ## Signature
 
 ```lua
-Auxiliary.IsCodeOrListed(Card c, Effect code) -> void
+Auxiliary.IsCodeOrListed(Card c, int code) -> void
 ```
 
 ## Description
@@ -13,7 +13,7 @@ TODO document.
 ## Parameters
 
 - `c` `Card`
-- `code` `Effect`
+- `code` `int`
 
 ## Source
 

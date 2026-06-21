@@ -8,7 +8,7 @@ Auxiliary.GetCappedAttack(Card c) -> void
 
 ## Description
 
-TODO document.
+Returns c's current ATK, capped at MAX_PARAMETER.
 
 ## Parameters
 

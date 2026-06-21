@@ -8,7 +8,7 @@ Auxiliary.GetCappedLevel(Card c) -> void
 
 ## Description
 
-TODO document.
+Returns c's current Level, capped at MAX_PARAMETER.
 
 ## Parameters
 

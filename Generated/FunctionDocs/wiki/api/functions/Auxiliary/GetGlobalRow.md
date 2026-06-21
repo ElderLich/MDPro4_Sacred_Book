@@ -3,7 +3,7 @@
 ## Signature
 
 ```lua
-Auxiliary.GetGlobalRow(any p, any location, Effect sequence) -> void
+Auxiliary.GetGlobalRow(any p, int location, int sequence) -> void
 ```
 
 ## Description
@@ -13,8 +13,8 @@ TODO document.
 ## Parameters
 
 - `p` `any`
-- `location` `any`
-- `sequence` `Effect`
+- `location` `int`
+- `sequence` `int`
 
 ## Source
 

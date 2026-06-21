@@ -3,7 +3,7 @@
 ## Signature
 
 ```lua
-Auxiliary.ChangeBattleDamage(int player, Effect value) -> void
+Auxiliary.ChangeBattleDamage(int player, any value) -> void
 ```
 
 ## Description
@@ -13,7 +13,7 @@ Returns a value function for EFFECT_CHANGE_BATTLE_DAMAGE. player=0 changes damag
 ## Parameters
 
 - `player` `int`
-- `value` `Effect`
+- `value` `any`
 
 ## Source
 

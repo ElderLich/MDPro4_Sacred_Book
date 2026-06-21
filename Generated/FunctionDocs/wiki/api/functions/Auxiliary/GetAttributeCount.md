@@ -8,7 +8,7 @@ Auxiliary.GetAttributeCount(Group g) -> void
 
 ## Description
 
-TODO document.
+Returns how many different Attributes are represented among the cards in g; an empty group returns 0.
 
 ## Parameters
 

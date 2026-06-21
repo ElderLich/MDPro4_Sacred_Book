@@ -3,7 +3,7 @@
 ## Signature
 
 ```lua
-Auxiliary.GetLocalColumn(any location, Effect sequence) -> void
+Auxiliary.GetLocalColumn(int location, int sequence) -> void
 ```
 
 ## Description
@@ -12,8 +12,8 @@ TODO document.
 
 ## Parameters
 
-- `location` `any`
-- `sequence` `Effect`
+- `location` `int`
+- `sequence` `int`
 
 ## Source
 

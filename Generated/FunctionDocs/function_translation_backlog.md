@@ -1,336 +1,11 @@
 # Function Documentation And Translation Backlog
 
-Needs documentation or translation: 231
-
-## Auxiliary.DrytronCostFilter
-
-- Status: `missing_documentation`
-- Signature: `Auxiliary.DrytronCostFilter(Card c, int tp) -> void`
-- Core binding: `(none)`
-- Aliases: `aux.DrytronCostFilter`
-
-Current description:
-
-> TODO document.
-
-Source: `Utilities/utility.lua:1013`
-
-## Auxiliary.DrytronCounterFilter
-
-- Status: `missing_documentation`
-- Signature: `Auxiliary.DrytronCounterFilter(Card c) -> void`
-- Core binding: `(none)`
-- Aliases: `aux.DrytronCounterFilter`
-
-Current description:
-
-> TODO document.
-
-Source: `Utilities/utility.lua:1010`
-
-## Auxiliary.DrytronExtraCostFilter
-
-- Status: `missing_documentation`
-- Signature: `Auxiliary.DrytronExtraCostFilter(Card c, int tp) -> void`
-- Core binding: `(none)`
-- Aliases: `aux.DrytronExtraCostFilter`
-
-Current description:
-
-> TODO document.
-
-Source: `Utilities/utility.lua:1017`
-
-## Auxiliary.DrytronSpSummonCost
-
-- Status: `missing_documentation`
-- Signature: `Auxiliary.DrytronSpSummonCost(Effect e, int tp, Group eg, int ep, any ev, Effect re, any r, int rp, bool chk) -> void`
-- Core binding: `(none)`
-- Aliases: `aux.DrytronSpSummonCost`
-
-Current description:
-
-> TODO document.
-
-Source: `Utilities/utility.lua:1020`
-
-## Auxiliary.DrytronSpSummonLimit
-
-- Status: `missing_documentation`
-- Signature: `Auxiliary.DrytronSpSummonLimit(Effect e, Card c, any sump, Effect sumtype, any sumpos, any targetp, Effect se) -> void`
-- Core binding: `(none)`
-- Aliases: `aux.DrytronSpSummonLimit`
-
-Current description:
-
-> TODO document.
-
-Source: `Utilities/utility.lua:1054`
-
-## Auxiliary.DrytronSpSummonOperation
-
-- Status: `missing_documentation`
-- Signature: `Auxiliary.DrytronSpSummonOperation(function func) -> void`
-- Core binding: `(none)`
-- Aliases: `aux.DrytronSpSummonOperation`
-
-Current description:
-
-> TODO document.
-
-Source: `Utilities/utility.lua:1066`
-
-## Auxiliary.DrytronSpSummonTarget
-
-- Status: `missing_documentation`
-- Signature: `Auxiliary.DrytronSpSummonTarget(Effect e, int tp, Group eg, int ep, any ev, Effect re, any r, int rp, bool chk) -> void`
-- Core binding: `(none)`
-- Aliases: `aux.DrytronSpSummonTarget`
-
-Current description:
-
-> TODO document.
-
-Source: `Utilities/utility.lua:1057`
-
-## Auxiliary.dscon
-
-- Status: `missing_documentation`
-- Signature: `Auxiliary.dscon(Effect e, int tp, Group eg, int ep, any ev, Effect re, any r, int rp) -> void`
-- Core binding: `(none)`
-- Aliases: `aux.dscon`
-
-Current description:
-
-> TODO document.
-
-Source: `Utilities/utility.lua:810`
-
-## Auxiliary.dsercon
-
-- Status: `missing_documentation`
-- Signature: `Auxiliary.dsercon(Effect e, int tp, Group eg, int ep, any ev, Effect re, any r, int rp) -> void`
-- Core binding: `(none)`
-- Aliases: `aux.dsercon`
-
-Current description:
-
-> TODO document.
-
-Source: `Utilities/utility.lua:786`
-
-## Auxiliary.EffectCategoryFilter
-
-- Status: `missing_documentation`
-- Signature: `Auxiliary.EffectCategoryFilter(int category) -> function`
-- Core binding: `(none)`
-- Aliases: `aux.EffectCategoryFilter`
-
-Current description:
-
-> TODO document.
-
-Source: `Utilities/utility.lua:2012`
-
-## Auxiliary.EffectPropertyFilter
-
-- Status: `missing_documentation`
-- Signature: `Auxiliary.EffectPropertyFilter(int flag) -> function`
-- Core binding: `(none)`
-- Aliases: `aux.EffectPropertyFilter`
-
-Current description:
-
-> TODO document.
-
-Source: `Utilities/utility.lua:2020`
-
-## Auxiliary.EnableBESRemove
-
-- Status: `missing_documentation`
-- Signature: `Auxiliary.EnableBESRemove(Card c) -> void`
-- Core binding: `(none)`
-- Aliases: `aux.EnableBESRemove`
-
-Current description:
-
-> TODO document.
-
-Source: `Utilities/utility.lua:1791`
-
-## Auxiliary.EnableChangeCode
-
-- Status: `missing_documentation`
-- Signature: `Auxiliary.EnableChangeCode(Card c, Effect code, any location, function condition) -> void`
-- Core binding: `(none)`
-- Aliases: `aux.EnableChangeCode`
-
-Current description:
-
-> TODO document.
-
-Source: `Utilities/utility.lua:433`
-
-## Auxiliary.EnableExtraDeckSummonCountLimit
-
-- Status: `missing_documentation`
-- Signature: `Auxiliary.EnableExtraDeckSummonCountLimit() -> void`
-- Core binding: `(none)`
-- Aliases: `aux.EnableExtraDeckSummonCountLimit`
-
-Current description:
-
-> TODO document.
-
-Source: `Utilities/utility.lua:482`
-
-## Auxiliary.EnableNeosReturn
-
-- Status: `missing_documentation`
-- Signature: `Auxiliary.EnableNeosReturn(Card c, function operation, any set_category) -> void`
-- Core binding: `(none)`
-- Aliases: `aux.EnableNeosReturn`
-
-Current description:
-
-> TODO document.
-
-Source: `Utilities/utility.lua:222`
-
-## Auxiliary.EPDestroyOperation
-
-- Status: `missing_documentation`
-- Signature: `Auxiliary.EPDestroyOperation(Effect e, int tp, Group eg, int ep, any ev, Effect re, any r, int rp) -> void`
-- Core binding: `(none)`
-- Aliases: `aux.EPDestroyOperation`
-
-Current description:
-
-> TODO document.
-
-Source: `Utilities/utility.lua:1824`
-
-## Auxiliary.EquipSpellOperation
-
-- Status: `missing_documentation`
-- Signature: `Auxiliary.EquipSpellOperation(any eqlimit) -> void`
-- Core binding: `(none)`
-- Aliases: `aux.EquipSpellOperation`
-
-Current description:
-
-> TODO document.
-
-Source: `Utilities/utility.lua:1920`
-
-## Auxiliary.EquipSpellTarget
-
-- Status: `missing_documentation`
-- Signature: `Auxiliary.EquipSpellTarget(bool is_self, bool is_opponent, function filter, any eqlimit) -> void`
-- Core binding: `(none)`
-- Aliases: `aux.EquipSpellTarget`
-
-Current description:
-
-> TODO document.
-
-Source: `Utilities/utility.lua:1909`
-
-## Auxiliary.ExtraDeckSummonCountLimitReset
-
-- Status: `missing_documentation`
-- Signature: `Auxiliary.ExtraDeckSummonCountLimitReset() -> void`
-- Core binding: `(none)`
-- Aliases: `aux.ExtraDeckSummonCountLimitReset`
-
-Current description:
-
-> TODO document.
-
-Source: `Utilities/utility.lua:493`
-
-## Auxiliary.ExtraReleaseFilter
-
-- Status: `missing_documentation`
-- Signature: `Auxiliary.ExtraReleaseFilter(Card c, int tp) -> void`
-- Core binding: `(none)`
-- Aliases: `aux.ExtraReleaseFilter`
-
-Current description:
-
-> TODO document.
-
-Source: `Utilities/utility.lua:1515`
-
-## Auxiliary.FALSE
-
-- Status: `missing_documentation`
-- Signature: `Auxiliary.FALSE() -> void`
-- Core binding: `(none)`
-- Aliases: `aux.FALSE`
-
-Current description:
-
-> TODO document.
-
-Source: `Utilities/utility.lua:94`
-
-## Auxiliary.GetAttributeCount
-
-- Status: `missing_documentation`
-- Signature: `Auxiliary.GetAttributeCount(Group g) -> void`
-- Core binding: `(none)`
-- Aliases: `aux.GetAttributeCount`
-
-Current description:
-
-> TODO document.
-
-Source: `Utilities/utility.lua:584`
-
-## Auxiliary.GetCappedAttack
-
-- Status: `missing_documentation`
-- Signature: `Auxiliary.GetCappedAttack(Card c) -> void`
-- Core binding: `(none)`
-- Aliases: `aux.GetCappedAttack`
-
-Current description:
-
-> TODO document.
-
-Source: `Utilities/utility.lua:1537`
-
-## Auxiliary.GetCappedLevel
-
-- Status: `missing_documentation`
-- Signature: `Auxiliary.GetCappedLevel(Card c) -> void`
-- Core binding: `(none)`
-- Aliases: `aux.GetCappedLevel`
-
-Current description:
-
-> TODO document.
-
-Source: `Utilities/utility.lua:1519`
-
-## Auxiliary.GetCappedXyzLevel
-
-- Status: `missing_documentation`
-- Signature: `Auxiliary.GetCappedXyzLevel(Card c) -> void`
-- Core binding: `(none)`
-- Aliases: `aux.GetCappedXyzLevel`
-
-Current description:
-
-> TODO document.
-
-Source: `Utilities/utility.lua:1528`
+Needs documentation or translation: 206
 
 ## Auxiliary.GetGlobalColumn
 
 - Status: `missing_documentation`
-- Signature: `Auxiliary.GetGlobalColumn(any p, any location, Effect sequence) -> void`
+- Signature: `Auxiliary.GetGlobalColumn(any p, int location, int sequence) -> void`
 - Core binding: `(none)`
 - Aliases: `aux.GetGlobalColumn`
 
@@ -343,7 +18,7 @@ Source: `Utilities/utility.lua:655`
 ## Auxiliary.GetGlobalRow
 
 - Status: `missing_documentation`
-- Signature: `Auxiliary.GetGlobalRow(any p, any location, Effect sequence) -> void`
+- Signature: `Auxiliary.GetGlobalRow(any p, int location, int sequence) -> void`
 - Core binding: `(none)`
 - Aliases: `aux.GetGlobalRow`
 
@@ -356,7 +31,7 @@ Source: `Utilities/utility.lua:621`
 ## Auxiliary.GetLocalColumn
 
 - Status: `missing_documentation`
-- Signature: `Auxiliary.GetLocalColumn(any location, Effect sequence) -> void`
+- Signature: `Auxiliary.GetLocalColumn(int location, int sequence) -> void`
 - Core binding: `(none)`
 - Aliases: `aux.GetLocalColumn`
 
@@ -369,7 +44,7 @@ Source: `Utilities/utility.lua:633`
 ## Auxiliary.GetLocalRow
 
 - Status: `missing_documentation`
-- Signature: `Auxiliary.GetLocalRow(any location, Effect sequence) -> void`
+- Signature: `Auxiliary.GetLocalRow(int location, int sequence) -> void`
 - Core binding: `(none)`
 - Aliases: `aux.GetLocalRow`
 
@@ -460,7 +135,7 @@ Source: `Utilities/utility.lua:1862`
 ## Auxiliary.IsCodeOrListed
 
 - Status: `missing_documentation`
-- Signature: `Auxiliary.IsCodeOrListed(Card c, Effect code) -> void`
+- Signature: `Auxiliary.IsCodeOrListed(Card c, int code) -> void`
 - Core binding: `(none)`
 - Aliases: `aux.IsCodeOrListed`
 
@@ -499,7 +174,7 @@ Source: `Utilities/utility.lua:597`
 ## Auxiliary.IsMaterialListType
 
 - Status: `missing_documentation`
-- Signature: `Auxiliary.IsMaterialListType(Card c, Effect type) -> void`
+- Signature: `Auxiliary.IsMaterialListType(Card c, int type) -> void`
 - Core binding: `(none)`
 - Aliases: `aux.IsMaterialListType`
 
@@ -525,7 +200,7 @@ Source: `Utilities/utility.lua:1854`
 ## Auxiliary.IsSetNameMonsterListed
 
 - Status: `missing_documentation`
-- Signature: `Auxiliary.IsSetNameMonsterListed(Card c, Effect setcode) -> void`
+- Signature: `Auxiliary.IsSetNameMonsterListed(Card c, int setcode) -> void`
 - Core binding: `(none)`
 - Aliases: `aux.IsSetNameMonsterListed`
 
@@ -538,7 +213,7 @@ Source: `Utilities/utility.lua:567`
 ## Auxiliary.IsTypeInText
 
 - Status: `missing_documentation`
-- Signature: `Auxiliary.IsTypeInText(Card c, Effect type) -> void`
+- Signature: `Auxiliary.IsTypeInText(Card c, int type) -> void`
 - Core binding: `(none)`
 - Aliases: `aux.IsTypeInText`
 
@@ -902,7 +577,7 @@ Source: `Utilities/utility.lua:144`
 ## Auxiliary.RegisterMergedDelayedEvent
 
 - Status: `missing_documentation`
-- Signature: `Auxiliary.RegisterMergedDelayedEvent(Card c, Effect code, any event, Group g) -> void`
+- Signature: `Auxiliary.RegisterMergedDelayedEvent(Card c, int code, int event, Group g) -> void`
 - Core binding: `(none)`
 - Aliases: `aux.RegisterMergedDelayedEvent`
 
@@ -915,7 +590,7 @@ Source: `Utilities/utility.lua:1647`
 ## Auxiliary.RegisterMergedDelayedEvent_ToSingleCard
 
 - Status: `missing_documentation`
-- Signature: `Auxiliary.RegisterMergedDelayedEvent_ToSingleCard(Card c, Effect code, any events) -> void`
+- Signature: `Auxiliary.RegisterMergedDelayedEvent_ToSingleCard(Card c, int code, any events) -> void`
 - Core binding: `(none)`
 - Aliases: `aux.RegisterMergedDelayedEvent_ToSingleCard`
 
@@ -928,7 +603,7 @@ Source: `Utilities/utility.lua:1684`
 ## Auxiliary.RegisterMergedDelayedEvent_ToSingleCard_AddOperation
 
 - Status: `missing_documentation`
-- Signature: `Auxiliary.RegisterMergedDelayedEvent_ToSingleCard_AddOperation(Card c, Group g, any event, Effect event_code_single) -> void`
+- Signature: `Auxiliary.RegisterMergedDelayedEvent_ToSingleCard_AddOperation(Card c, Group g, int event, Effect event_code_single) -> void`
 - Core binding: `(none)`
 - Aliases: `aux.RegisterMergedDelayedEvent_ToSingleCard_AddOperation`
 
@@ -980,7 +655,7 @@ Source: `Utilities/utility.lua:1395`
 ## Auxiliary.SelfEquipFilter
 
 - Status: `missing_documentation`
-- Signature: `Auxiliary.SelfEquipFilter(Card c, any id) -> void`
+- Signature: `Auxiliary.SelfEquipFilter(Card c, int id) -> void`
 - Core binding: `(none)`
 - Aliases: `aux.SelfEquipFilter`
 

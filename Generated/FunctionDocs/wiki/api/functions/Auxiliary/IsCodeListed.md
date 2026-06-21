@@ -3,7 +3,7 @@
 ## Signature
 
 ```lua
-Auxiliary.IsCodeListed(Card c, Effect code) -> void
+Auxiliary.IsCodeListed(Card c, int code) -> void
 ```
 
 ## Description
@@ -13,7 +13,7 @@ Check if card c lists card code in its card_code_list
 ## Parameters
 
 - `c` `Card`
-- `code` `Effect`
+- `code` `int`
 
 ## Source
 

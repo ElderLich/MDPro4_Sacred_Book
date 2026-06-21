@@ -3,7 +3,7 @@
 ## Signature
 
 ```lua
-Auxiliary.IsMaterialListType(Card c, Effect type) -> void
+Auxiliary.IsMaterialListType(Card c, int type) -> void
 ```
 
 ## Description
@@ -13,7 +13,7 @@ TODO document.
 ## Parameters
 
 - `c` `Card`
-- `type` `Effect`
+- `type` `int`
 
 ## Source
 

@@ -3,7 +3,7 @@
 ## Signature
 
 ```lua
-Auxiliary.TargetEqualFunction(function f, Effect value, ... any) -> void
+Auxiliary.TargetEqualFunction(function f, any value, ... any) -> void
 ```
 
 ## Description
@@ -19,7 +19,7 @@ end
 ## Parameters
 
 - `f` `function`
-- `value` `Effect`
+- `value` `any`
 - `...` `any`
 
 ## Source

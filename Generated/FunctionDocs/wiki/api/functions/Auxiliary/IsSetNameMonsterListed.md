@@ -3,7 +3,7 @@
 ## Signature
 
 ```lua
-Auxiliary.IsSetNameMonsterListed(Card c, Effect setcode) -> void
+Auxiliary.IsSetNameMonsterListed(Card c, int setcode) -> void
 ```
 
 ## Description
@@ -13,7 +13,7 @@ TODO document.
 ## Parameters
 
 - `c` `Card`
-- `setcode` `Effect`
+- `setcode` `int`
 
 ## Source
 

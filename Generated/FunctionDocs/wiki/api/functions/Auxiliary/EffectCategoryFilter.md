@@ -8,7 +8,7 @@ Auxiliary.EffectCategoryFilter(int category) -> function
 
 ## Description
 
-TODO document.
+Returns a predicate that checks whether an Effect has category.
 
 ## Parameters
 

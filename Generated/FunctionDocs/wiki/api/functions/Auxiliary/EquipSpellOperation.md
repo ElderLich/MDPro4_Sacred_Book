@@ -8,7 +8,7 @@ Auxiliary.EquipSpellOperation(any eqlimit) -> void
 
 ## Description
 
-TODO document.
+Returns the shared Equip Spell operation. It equips the handler to the first target if both cards are still related to the effect, the target is face-up, and eqlimit allows it.
 
 ## Parameters
 

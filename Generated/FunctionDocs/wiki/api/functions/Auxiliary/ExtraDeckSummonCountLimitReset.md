@@ -8,7 +8,7 @@ Auxiliary.ExtraDeckSummonCountLimitReset() -> void
 
 ## Description
 
-TODO document.
+Resets the shared Extra Deck Summon count table to one count for each player.
 
 ## Source
 

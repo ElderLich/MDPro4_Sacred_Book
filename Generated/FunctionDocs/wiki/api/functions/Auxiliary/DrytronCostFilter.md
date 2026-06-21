@@ -8,7 +8,7 @@ Auxiliary.DrytronCostFilter(Card c, int tp) -> void
 
 ## Description
 
-TODO document.
+Cost filter for the shared Drytron Special Summon effect. It accepts Drytron monsters and Ritual Monsters that can be Tributed from the hand or field while leaving tp an open Monster Zone.
 
 ## Parameters
 

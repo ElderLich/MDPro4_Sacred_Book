@@ -8,7 +8,7 @@ Auxiliary.EffectPropertyFilter(int flag) -> function
 
 ## Description
 
-TODO document.
+Returns a predicate that checks whether an Effect has property flag.
 
 ## Parameters
 

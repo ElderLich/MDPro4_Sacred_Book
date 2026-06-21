@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-06-21T10:52:04+00:00",
+    "generated_at": "2026-06-21T11:07:38+00:00",
     "workspace": "D:\\Programs\\GitHub\\MDPro3_Sacred_Book",
     "dataeditorx_data": "D:\\Programs\\GitHub\\DataEditorX\\DataEditorX\\data",
     "mdpro3_locales": "D:\\Programs\\GitHub\\MDPro3_Data\\Data\\locales",
@@ -34616,7 +34616,7 @@
         },
         {
           "name": "value",
-          "type": "Effect",
+          "type": "any",
           "optional": false,
           "description": ""
         }
@@ -35631,11 +35631,13 @@
           "description": ""
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "「龙辉巧」共通特殊召唤效果的费用筛选；匹配可以从手牌或场上解放、且解放后会给tp留下可用怪兽区域的「龙辉巧」怪兽或仪式怪兽。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Cost filter for the shared Drytron Special Summon effect. It accepts Drytron monsters and Ritual Monsters that can be Tributed from the hand or field while leaving tp an open Monster Zone."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -35646,7 +35648,9 @@
       "aliases": [
         "aux.DrytronCostFilter"
       ],
-      "tags": [],
+      "tags": [
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -35668,11 +35672,13 @@
           "description": ""
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "「龙辉巧」共通特殊召唤效果的活动计数筛选；对不能通常召唤/盖放的卡返回true，从而让计数器判断tp本回合是否特殊召唤过可以通常召唤/盖放的怪兽。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Activity-counter filter for the shared Drytron Special Summon effect. It returns true for cards that cannot be Normal Summoned/Set, so the counter can detect whether tp Special Summoned a monster that can be Normal Summoned/Set this turn."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -35683,7 +35689,9 @@
       "aliases": [
         "aux.DrytronCounterFilter"
       ],
-      "tags": [],
+      "tags": [
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -35711,11 +35719,13 @@
           "description": ""
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "判断c是否可以由tp通过编号89771220的效果作为代替费用从墓地除外。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Checks whether c can be banished by tp as a replacement cost through effect code 89771220."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -35726,7 +35736,9 @@
       "aliases": [
         "aux.DrytronExtraCostFilter"
       ],
-      "tags": [],
+      "tags": [
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -35796,11 +35808,15 @@
           "description": ""
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "检查并支付「龙辉巧」共通的自身特殊召唤费用。",
+        "玩家本回合不能已经特殊召唤过可以通常召唤/盖放的怪兽。支付时登记对应的特殊召唤誓约，然后解放1张可用费用卡，或除外1张可用的代替费用卡。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Checks and pays the shared Drytron self-Summon cost.",
+        "The player must not have Special Summoned a monster that can be Normal Summoned/Set this turn. On payment, it applies the matching Special Summon oath, then either Tributes one valid cost card or banishes one valid replacement-cost card."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -35811,7 +35827,9 @@
       "aliases": [
         "aux.DrytronSpSummonCost"
       ],
-      "tags": [],
+      "tags": [
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -35834,25 +35852,25 @@
         },
         {
           "name": "sump",
-          "type": "any",
+          "type": "int",
           "optional": false,
           "description": ""
         },
         {
           "name": "sumtype",
-          "type": "Effect",
+          "type": "int",
           "optional": false,
           "description": ""
         },
         {
           "name": "sumpos",
-          "type": "any",
+          "type": "int",
           "optional": false,
           "description": ""
         },
         {
           "name": "targetp",
-          "type": "any",
+          "type": "int",
           "optional": false,
           "description": ""
         },
@@ -35869,11 +35887,13 @@
           "description": ""
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "「龙辉巧」共通费用登记的誓约目标；阻止特殊召唤可以通常召唤/盖放的怪兽，但排除原本种类为魔法/陷阱或陷阱怪兽的卡。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Oath target for the shared Drytron cost; it prevents Special Summoning monsters that can be Normal Summoned/Set, excluding cards whose original type is Spell/Trap or Trap Monster."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -35884,7 +35904,9 @@
       "aliases": [
         "aux.DrytronSpSummonLimit"
       ],
-      "tags": [],
+      "tags": [
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -35906,11 +35928,13 @@
           "description": ""
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "返回「龙辉巧」共通的操作包装函数；将处理对象守备表示特殊召唤，完成正规手续，然后调用func(e,tp)。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Returns the shared Drytron operation wrapper. It Special Summons the handler in face-up Defense Position, completes its procedure, then calls func(e,tp)."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -35921,7 +35945,9 @@
       "aliases": [
         "aux.DrytronSpSummonOperation"
       ],
-      "tags": [],
+      "tags": [
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -35991,11 +36017,13 @@
           "description": ""
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "「龙辉巧」共通自身特殊召唤效果的目标处理；检查怪兽区域需求，确认处理对象能以表侧守备表示特殊召唤，并登记特殊召唤信息。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Target function for the shared Drytron self-Summon effect. It checks the Monster Zone requirement, confirms the handler can be Special Summoned in face-up Defense Position, and sets Special Summon operation info."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -36006,7 +36034,9 @@
       "aliases": [
         "aux.DrytronSpSummonTarget"
       ],
-      "tags": [],
+      "tags": [
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -36109,11 +36139,13 @@
           "description": ""
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "改变攻击力/守备力的快速效果条件；不在伤害阶段时为true，或在伤害阶段且尚未进行伤害计算时为true。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Condition for Quick Effects that change ATK/DEF; true outside the Damage Phase, or during the Damage Phase before damage calculation has been performed."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -36124,7 +36156,9 @@
       "aliases": [
         "aux.dscon"
       ],
-      "tags": [],
+      "tags": [
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -36188,11 +36222,13 @@
           "description": ""
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "EVENT_DAMAGE_STEP_END效果的条件；处理对象仍与战斗关联，或已被战斗破坏时返回true。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Condition for EVENT_DAMAGE_STEP_END effects; true if the handler is still related to battle or was battle destroyed."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -36203,7 +36239,9 @@
       "aliases": [
         "aux.dsercon"
       ],
-      "tags": [],
+      "tags": [
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -36225,11 +36263,13 @@
           "description": ""
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "返回谓词函数，用于判断Effect是否包含category类别。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Returns a predicate that checks whether an Effect has category."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -36240,7 +36280,9 @@
       "aliases": [
         "aux.EffectCategoryFilter"
       ],
-      "tags": [],
+      "tags": [
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -36262,11 +36304,13 @@
           "description": ""
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "返回谓词函数，用于判断Effect是否包含flag属性。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Returns a predicate that checks whether an Effect has property flag."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -36277,7 +36321,9 @@
       "aliases": [
         "aux.EffectPropertyFilter"
       ],
-      "tags": [],
+      "tags": [
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -36350,11 +36396,13 @@
           "description": ""
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "为c登记B.E.S.共通维持触发效果；战斗后能取除1个0x1f指示物则取除，否则破坏c。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Registers the shared B.E.S. maintenance trigger on c. After c battles, it removes one 0x1f counter if possible; otherwise it destroys c."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -36365,7 +36413,9 @@
       "aliases": [
         "aux.EnableBESRemove"
       ],
-      "tags": [],
+      "tags": [
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -36382,13 +36432,13 @@
         },
         {
           "name": "code",
-          "type": "Effect",
+          "type": "int",
           "optional": false,
           "description": ""
         },
         {
           "name": "location",
-          "type": "any",
+          "type": "int",
           "optional": false,
           "description": ""
         },
@@ -36405,11 +36455,15 @@
           "description": ""
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "把code登记为c的列名编号，并给c登记取该值的EFFECT_CHANGE_CODE效果。",
+        "省略location时，怪兽默认在怪兽区域适用，非怪兽默认在魔法与陷阱区域适用。省略condition时，该卡名变更始终适用。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Registers code as a listed code for c and gives c an EFFECT_CHANGE_CODE effect with that value.",
+        "If location is omitted, monsters use the Monster Zone and non-monsters use the Spell & Trap Zone. If condition is omitted, the code change is always active."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -36420,7 +36474,9 @@
       "aliases": [
         "aux.EnableChangeCode"
       ],
-      "tags": [],
+      "tags": [
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -36435,11 +36491,13 @@
           "description": ""
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "初始化共通的额外卡组召唤次数表，双方各为1次，并登记每个抽卡阶段开始时重置的全局效果。此辅助函数只管理计数，具体卡片脚本仍需自行检查并扣除次数。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Initializes the shared Extra Deck Summon count table with one count for each player and registers a global Draw Phase Start reset. The helper only manages the counter; individual card scripts still check and decrement it."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -36450,7 +36508,9 @@
       "aliases": [
         "aux.EnableExtraDeckSummonCountLimit"
       ],
-      "tags": [],
+      "tags": [
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -36484,11 +36544,13 @@
           "description": ""
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "为c登记「元素英雄 新宇侠」融合怪兽共通的结束阶段返回效果；会创建强制返回效果，以及受编号42015635效果影响时使用的可选版本，并返回这两个效果。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Registers the shared Elemental HERO Neos Fusion End Phase return effects on c. It creates a mandatory return effect and an optional version used while c is affected by effect code 42015635, then returns both effects."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -36499,7 +36561,9 @@
       "aliases": [
         "aux.EnableNeosReturn"
       ],
-      "tags": [],
+      "tags": [
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -36657,11 +36721,13 @@
           "description": ""
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "延迟到结束阶段破坏的操作函数；破坏保存在e的label object中的Card或Group。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Operation for delayed End Phase destruction effects. It destroys the Card or Group stored as e's label object."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -36672,7 +36738,9 @@
       "aliases": [
         "aux.EPDestroyOperation"
       ],
-      "tags": [],
+      "tags": [
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -36694,11 +36762,13 @@
           "description": ""
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "返回共通装备魔法操作函数；若处理对象与第一个目标仍与效果关联、目标表侧表示且eqlimit允许，则把处理对象装备给该目标。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Returns the shared Equip Spell operation. It equips the handler to the first target if both cards are still related to the effect, the target is face-up, and eqlimit allows it."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -36709,7 +36779,9 @@
       "aliases": [
         "aux.EquipSpellOperation"
       ],
-      "tags": [],
+      "tags": [
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -36749,11 +36821,13 @@
           "description": ""
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "返回共通装备魔法目标函数；is_self和is_opponent决定可选择哪一方怪兽区域，filter选择有效目标，eqlimit会在连锁中改选目标和处理时再次检查。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Returns the shared Equip Spell target function. is_self and is_opponent choose which Monster Zones can be targeted, filter selects a valid target, and eqlimit is rechecked for chained target changes and resolution."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -36764,7 +36838,9 @@
       "aliases": [
         "aux.EquipSpellTarget"
       ],
-      "tags": [],
+      "tags": [
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -36943,11 +37019,13 @@
           "description": ""
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "把共通额外卡组召唤次数表重置为双方各1次。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Resets the shared Extra Deck Summon count table to one count for each player."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -36958,7 +37036,9 @@
       "aliases": [
         "aux.ExtraDeckSummonCountLimitReset"
       ],
-      "tags": [],
+      "tags": [
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -36986,11 +37066,13 @@
           "description": ""
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "判断c是否为对方控制、且对tp具有EFFECT_EXTRA_RELEASE_NONSUM效果的卡。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Returns true for an opponent's card that has EFFECT_EXTRA_RELEASE_NONSUM available to tp."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -37001,7 +37083,9 @@
       "aliases": [
         "aux.ExtraReleaseFilter"
       ],
-      "tags": [],
+      "tags": [
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -37016,11 +37100,13 @@
           "description": ""
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "返回false。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Returns false."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -37031,7 +37117,9 @@
       "aliases": [
         "aux.FALSE"
       ],
-      "tags": [],
+      "tags": [
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -37097,7 +37185,7 @@
         },
         {
           "name": "value",
-          "type": "Effect",
+          "type": "any",
           "optional": false,
           "description": ""
         },
@@ -37355,11 +37443,13 @@
           "description": ""
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "返回g中包含的不同属性数量；空Group返回0。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Returns how many different Attributes are represented among the cards in g; an empty group returns 0."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -37370,7 +37460,9 @@
       "aliases": [
         "aux.GetAttributeCount"
       ],
-      "tags": [],
+      "tags": [
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -37392,11 +37484,13 @@
           "description": ""
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "返回c的当前攻击力，但最高限制为MAX_PARAMETER。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Returns c's current ATK, capped at MAX_PARAMETER."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -37407,7 +37501,9 @@
       "aliases": [
         "aux.GetCappedAttack"
       ],
-      "tags": [],
+      "tags": [
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -37429,11 +37525,13 @@
           "description": ""
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "返回c的当前等级，但最高限制为MAX_PARAMETER。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Returns c's current Level, capped at MAX_PARAMETER."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -37444,7 +37542,9 @@
       "aliases": [
         "aux.GetCappedLevel"
       ],
-      "tags": [],
+      "tags": [
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -37466,11 +37566,13 @@
           "description": ""
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "返回c的当前等级，但最高限制为MAX_XYZ_LEVEL。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Returns c's current Level, capped at MAX_XYZ_LEVEL."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -37481,7 +37583,9 @@
       "aliases": [
         "aux.GetCappedXyzLevel"
       ],
-      "tags": [],
+      "tags": [
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -37586,13 +37690,13 @@
         },
         {
           "name": "location",
-          "type": "any",
+          "type": "int",
           "optional": false,
           "description": ""
         },
         {
           "name": "sequence",
-          "type": "Effect",
+          "type": "int",
           "optional": false,
           "description": ""
         }
@@ -37635,13 +37739,13 @@
         },
         {
           "name": "location",
-          "type": "any",
+          "type": "int",
           "optional": false,
           "description": ""
         },
         {
           "name": "sequence",
-          "type": "Effect",
+          "type": "int",
           "optional": false,
           "description": ""
         }
@@ -37678,13 +37782,13 @@
       "params": [
         {
           "name": "location",
-          "type": "any",
+          "type": "int",
           "optional": false,
           "description": ""
         },
         {
           "name": "sequence",
-          "type": "Effect",
+          "type": "int",
           "optional": false,
           "description": ""
         }
@@ -37721,13 +37825,13 @@
       "params": [
         {
           "name": "location",
-          "type": "any",
+          "type": "int",
           "optional": false,
           "description": ""
         },
         {
           "name": "sequence",
-          "type": "Effect",
+          "type": "int",
           "optional": false,
           "description": ""
         }
@@ -38323,7 +38427,7 @@
         },
         {
           "name": "code",
-          "type": "Effect",
+          "type": "int",
           "optional": false,
           "description": ""
         }
@@ -38366,7 +38470,7 @@
         },
         {
           "name": "code",
-          "type": "Effect",
+          "type": "int",
           "optional": false,
           "description": ""
         }
@@ -38495,7 +38599,7 @@
         },
         {
           "name": "code",
-          "type": "Effect",
+          "type": "int",
           "optional": false,
           "description": ""
         }
@@ -38538,7 +38642,7 @@
         },
         {
           "name": "setcode",
-          "type": "Effect",
+          "type": "int",
           "optional": false,
           "description": ""
         }
@@ -38581,7 +38685,7 @@
         },
         {
           "name": "type",
-          "type": "Effect",
+          "type": "int",
           "optional": false,
           "description": ""
         }
@@ -38706,7 +38810,7 @@
         },
         {
           "name": "setcode",
-          "type": "Effect",
+          "type": "int",
           "optional": false,
           "description": ""
         }
@@ -38749,7 +38853,7 @@
         },
         {
           "name": "type",
-          "type": "Effect",
+          "type": "int",
           "optional": false,
           "description": ""
         }
@@ -40652,13 +40756,13 @@
         },
         {
           "name": "code",
-          "type": "Effect",
+          "type": "int",
           "optional": false,
           "description": ""
         },
         {
           "name": "event",
-          "type": "any",
+          "type": "int",
           "optional": false,
           "description": ""
         },
@@ -40707,7 +40811,7 @@
         },
         {
           "name": "code",
-          "type": "Effect",
+          "type": "int",
           "optional": false,
           "description": ""
         },
@@ -40762,7 +40866,7 @@
         },
         {
           "name": "event",
-          "type": "any",
+          "type": "int",
           "optional": false,
           "description": ""
         },
@@ -41221,7 +41325,7 @@
         },
         {
           "name": "id",
-          "type": "any",
+          "type": "int",
           "optional": false,
           "description": ""
         }
@@ -41830,13 +41934,13 @@
       "params": [
         {
           "name": "code",
-          "type": "Effect",
+          "type": "int",
           "optional": false,
           "description": ""
         },
         {
           "name": "id",
-          "type": "any",
+          "type": "int",
           "optional": false,
           "description": ""
         }
@@ -42055,7 +42159,7 @@
         },
         {
           "name": "value",
-          "type": "Effect",
+          "type": "any",
           "optional": false,
           "description": ""
         },
@@ -50462,7 +50566,7 @@
         },
         {
           "name": "code",
-          "type": "Effect",
+          "type": "int",
           "optional": false,
           "description": ""
         }

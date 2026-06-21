@@ -8,7 +8,7 @@ Auxiliary.EPDestroyOperation(Effect e, int tp, Group eg, int ep, any ev, Effect 
 
 ## Description
 
-TODO document.
+Operation for delayed End Phase destruction effects. It destroys the Card or Group stored as e's label object.
 
 ## Parameters
 

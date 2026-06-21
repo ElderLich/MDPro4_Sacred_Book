@@ -3,21 +3,21 @@
 ## Signature
 
 ```lua
-Auxiliary.DrytronSpSummonLimit(Effect e, Card c, any sump, Effect sumtype, any sumpos, any targetp, Effect se) -> void
+Auxiliary.DrytronSpSummonLimit(Effect e, Card c, int sump, int sumtype, int sumpos, int targetp, Effect se) -> void
 ```
 
 ## Description
 
-TODO document.
+Oath target for the shared Drytron cost; it prevents Special Summoning monsters that can be Normal Summoned/Set, excluding cards whose original type is Spell/Trap or Trap Monster.
 
 ## Parameters
 
 - `e` `Effect`
 - `c` `Card`
-- `sump` `any`
-- `sumtype` `Effect`
-- `sumpos` `any`
-- `targetp` `any`
+- `sump` `int`
+- `sumtype` `int`
+- `sumpos` `int`
+- `targetp` `int`
 - `se` `Effect`
 
 ## Source

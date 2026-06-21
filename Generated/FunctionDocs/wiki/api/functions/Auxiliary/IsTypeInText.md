@@ -3,7 +3,7 @@
 ## Signature
 
 ```lua
-Auxiliary.IsTypeInText(Card c, Effect type) -> void
+Auxiliary.IsTypeInText(Card c, int type) -> void
 ```
 
 ## Description
@@ -13,7 +13,7 @@ TODO document.
 ## Parameters
 
 - `c` `Card`
-- `type` `Effect`
+- `type` `int`
 
 ## Source
 

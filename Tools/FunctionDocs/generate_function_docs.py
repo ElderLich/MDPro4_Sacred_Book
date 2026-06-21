@@ -151,10 +151,34 @@ def infer_type_from_name(name: str) -> str:
         return "Card"
     if lname in {"g", "mg", "sg", "eg", "targets", "cards"} or lname.endswith("g"):
         return "Group"
-    if lname in {"e", "re", "te", "effect"} or lname.endswith("e"):
-        return "Effect"
-    if lname in {"tp", "ep", "rp", "player", "playerid", "count", "code", "loc", "seq"}:
+    if lname in {
+        "tp",
+        "ep",
+        "rp",
+        "player",
+        "playerid",
+        "count",
+        "code",
+        "event",
+        "flag",
+        "id",
+        "loc",
+        "location",
+        "race",
+        "seq",
+        "sequence",
+        "setcode",
+        "sumpos",
+        "sump",
+        "sumtype",
+        "targetp",
+        "type",
+    }:
         return "int"
+    if lname in {"events", "value"}:
+        return "any"
+    if lname in {"e", "re", "te", "se", "effect"} or lname.endswith("e"):
+        return "Effect"
     if lname.startswith("is_") or lname in {"chk", "cancelable", "enable", "forced"}:
         return "bool"
     if lname in {"f", "filter", "func", "operation", "condition"} or lname.endswith("_func"):
@@ -554,6 +578,37 @@ FUNCTION_EN_OVERRIDES = {
     "Auxiliary.dogfcon": ["Condition for EVENT_TO_GRAVE triggers: true when the handler was previously on the field under tp's control, was destroyed, and the opponent was the reason player."],
     "Auxiliary.drccheck": ["Returns true if every card in g has a different Race."],
     "Auxiliary.drkcheck": ["Returns true if every card in g has a different Rank."],
+    "Auxiliary.DrytronCostFilter": ["Cost filter for the shared Drytron Special Summon effect. It accepts Drytron monsters and Ritual Monsters that can be Tributed from the hand or field while leaving tp an open Monster Zone."],
+    "Auxiliary.DrytronCounterFilter": ["Activity-counter filter for the shared Drytron Special Summon effect. It returns true for cards that cannot be Normal Summoned/Set, so the counter can detect whether tp Special Summoned a monster that can be Normal Summoned/Set this turn."],
+    "Auxiliary.DrytronExtraCostFilter": ["Checks whether c can be banished by tp as a replacement cost through effect code 89771220."],
+    "Auxiliary.DrytronSpSummonCost": [
+        "Checks and pays the shared Drytron self-Summon cost.",
+        "The player must not have Special Summoned a monster that can be Normal Summoned/Set this turn. On payment, it applies the matching Special Summon oath, then either Tributes one valid cost card or banishes one valid replacement-cost card.",
+    ],
+    "Auxiliary.DrytronSpSummonLimit": ["Oath target for the shared Drytron cost; it prevents Special Summoning monsters that can be Normal Summoned/Set, excluding cards whose original type is Spell/Trap or Trap Monster."],
+    "Auxiliary.DrytronSpSummonOperation": ["Returns the shared Drytron operation wrapper. It Special Summons the handler in face-up Defense Position, completes its procedure, then calls func(e,tp)."],
+    "Auxiliary.DrytronSpSummonTarget": ["Target function for the shared Drytron self-Summon effect. It checks the Monster Zone requirement, confirms the handler can be Special Summoned in face-up Defense Position, and sets Special Summon operation info."],
+    "Auxiliary.dscon": ["Condition for Quick Effects that change ATK/DEF; true outside the Damage Phase, or during the Damage Phase before damage calculation has been performed."],
+    "Auxiliary.dsercon": ["Condition for EVENT_DAMAGE_STEP_END effects; true if the handler is still related to battle or was battle destroyed."],
+    "Auxiliary.EffectCategoryFilter": ["Returns a predicate that checks whether an Effect has category."],
+    "Auxiliary.EffectPropertyFilter": ["Returns a predicate that checks whether an Effect has property flag."],
+    "Auxiliary.EnableBESRemove": ["Registers the shared B.E.S. maintenance trigger on c. After c battles, it removes one 0x1f counter if possible; otherwise it destroys c."],
+    "Auxiliary.EnableChangeCode": [
+        "Registers code as a listed code for c and gives c an EFFECT_CHANGE_CODE effect with that value.",
+        "If location is omitted, monsters use the Monster Zone and non-monsters use the Spell & Trap Zone. If condition is omitted, the code change is always active.",
+    ],
+    "Auxiliary.EnableExtraDeckSummonCountLimit": ["Initializes the shared Extra Deck Summon count table with one count for each player and registers a global Draw Phase Start reset. The helper only manages the counter; individual card scripts still check and decrement it."],
+    "Auxiliary.EnableNeosReturn": ["Registers the shared Elemental HERO Neos Fusion End Phase return effects on c. It creates a mandatory return effect and an optional version used while c is affected by effect code 42015635, then returns both effects."],
+    "Auxiliary.EPDestroyOperation": ["Operation for delayed End Phase destruction effects. It destroys the Card or Group stored as e's label object."],
+    "Auxiliary.EquipSpellOperation": ["Returns the shared Equip Spell operation. It equips the handler to the first target if both cards are still related to the effect, the target is face-up, and eqlimit allows it."],
+    "Auxiliary.EquipSpellTarget": ["Returns the shared Equip Spell target function. is_self and is_opponent choose which Monster Zones can be targeted, filter selects a valid target, and eqlimit is rechecked for chained target changes and resolution."],
+    "Auxiliary.ExtraDeckSummonCountLimitReset": ["Resets the shared Extra Deck Summon count table to one count for each player."],
+    "Auxiliary.ExtraReleaseFilter": ["Returns true for an opponent's card that has EFFECT_EXTRA_RELEASE_NONSUM available to tp."],
+    "Auxiliary.FALSE": ["Returns false."],
+    "Auxiliary.GetAttributeCount": ["Returns how many different Attributes are represented among the cards in g; an empty group returns 0."],
+    "Auxiliary.GetCappedAttack": ["Returns c's current ATK, capped at MAX_PARAMETER."],
+    "Auxiliary.GetCappedLevel": ["Returns c's current Level, capped at MAX_PARAMETER."],
+    "Auxiliary.GetCappedXyzLevel": ["Returns c's current Level, capped at MAX_XYZ_LEVEL."],
     "Card.branded_fusion_check": ["Material check for Branded Fusion."],
     "Card.cyber_fusion_check": ["Material check for Cyberload Fusion."],
     "Card.destruction_swordsman_fusion_check": ["Material check for Destruction Swordsman Fusion."],
@@ -611,6 +666,37 @@ FUNCTION_ZH_OVERRIDES = {
     "Auxiliary.dogfcon": ["EVENT_TO_GRAVE触发条件：处理对象之前在tp场上，被破坏，且原因玩家是对方时返回true。"],
     "Auxiliary.drccheck": ["判断g中的每张卡是否具有不同种族。"],
     "Auxiliary.drkcheck": ["判断g中的每张卡是否具有不同阶级。"],
+    "Auxiliary.DrytronCostFilter": ["「龙辉巧」共通特殊召唤效果的费用筛选；匹配可以从手牌或场上解放、且解放后会给tp留下可用怪兽区域的「龙辉巧」怪兽或仪式怪兽。"],
+    "Auxiliary.DrytronCounterFilter": ["「龙辉巧」共通特殊召唤效果的活动计数筛选；对不能通常召唤/盖放的卡返回true，从而让计数器判断tp本回合是否特殊召唤过可以通常召唤/盖放的怪兽。"],
+    "Auxiliary.DrytronExtraCostFilter": ["判断c是否可以由tp通过编号89771220的效果作为代替费用从墓地除外。"],
+    "Auxiliary.DrytronSpSummonCost": [
+        "检查并支付「龙辉巧」共通的自身特殊召唤费用。",
+        "玩家本回合不能已经特殊召唤过可以通常召唤/盖放的怪兽。支付时登记对应的特殊召唤誓约，然后解放1张可用费用卡，或除外1张可用的代替费用卡。",
+    ],
+    "Auxiliary.DrytronSpSummonLimit": ["「龙辉巧」共通费用登记的誓约目标；阻止特殊召唤可以通常召唤/盖放的怪兽，但排除原本种类为魔法/陷阱或陷阱怪兽的卡。"],
+    "Auxiliary.DrytronSpSummonOperation": ["返回「龙辉巧」共通的操作包装函数；将处理对象守备表示特殊召唤，完成正规手续，然后调用func(e,tp)。"],
+    "Auxiliary.DrytronSpSummonTarget": ["「龙辉巧」共通自身特殊召唤效果的目标处理；检查怪兽区域需求，确认处理对象能以表侧守备表示特殊召唤，并登记特殊召唤信息。"],
+    "Auxiliary.dscon": ["改变攻击力/守备力的快速效果条件；不在伤害阶段时为true，或在伤害阶段且尚未进行伤害计算时为true。"],
+    "Auxiliary.dsercon": ["EVENT_DAMAGE_STEP_END效果的条件；处理对象仍与战斗关联，或已被战斗破坏时返回true。"],
+    "Auxiliary.EffectCategoryFilter": ["返回谓词函数，用于判断Effect是否包含category类别。"],
+    "Auxiliary.EffectPropertyFilter": ["返回谓词函数，用于判断Effect是否包含flag属性。"],
+    "Auxiliary.EnableBESRemove": ["为c登记B.E.S.共通维持触发效果；战斗后能取除1个0x1f指示物则取除，否则破坏c。"],
+    "Auxiliary.EnableChangeCode": [
+        "把code登记为c的列名编号，并给c登记取该值的EFFECT_CHANGE_CODE效果。",
+        "省略location时，怪兽默认在怪兽区域适用，非怪兽默认在魔法与陷阱区域适用。省略condition时，该卡名变更始终适用。",
+    ],
+    "Auxiliary.EnableExtraDeckSummonCountLimit": ["初始化共通的额外卡组召唤次数表，双方各为1次，并登记每个抽卡阶段开始时重置的全局效果。此辅助函数只管理计数，具体卡片脚本仍需自行检查并扣除次数。"],
+    "Auxiliary.EnableNeosReturn": ["为c登记「元素英雄 新宇侠」融合怪兽共通的结束阶段返回效果；会创建强制返回效果，以及受编号42015635效果影响时使用的可选版本，并返回这两个效果。"],
+    "Auxiliary.EPDestroyOperation": ["延迟到结束阶段破坏的操作函数；破坏保存在e的label object中的Card或Group。"],
+    "Auxiliary.EquipSpellOperation": ["返回共通装备魔法操作函数；若处理对象与第一个目标仍与效果关联、目标表侧表示且eqlimit允许，则把处理对象装备给该目标。"],
+    "Auxiliary.EquipSpellTarget": ["返回共通装备魔法目标函数；is_self和is_opponent决定可选择哪一方怪兽区域，filter选择有效目标，eqlimit会在连锁中改选目标和处理时再次检查。"],
+    "Auxiliary.ExtraDeckSummonCountLimitReset": ["把共通额外卡组召唤次数表重置为双方各1次。"],
+    "Auxiliary.ExtraReleaseFilter": ["判断c是否为对方控制、且对tp具有EFFECT_EXTRA_RELEASE_NONSUM效果的卡。"],
+    "Auxiliary.FALSE": ["返回false。"],
+    "Auxiliary.GetAttributeCount": ["返回g中包含的不同属性数量；空Group返回0。"],
+    "Auxiliary.GetCappedAttack": ["返回c的当前攻击力，但最高限制为MAX_PARAMETER。"],
+    "Auxiliary.GetCappedLevel": ["返回c的当前等级，但最高限制为MAX_PARAMETER。"],
+    "Auxiliary.GetCappedXyzLevel": ["返回c的当前等级，但最高限制为MAX_XYZ_LEVEL。"],
 }
 
 

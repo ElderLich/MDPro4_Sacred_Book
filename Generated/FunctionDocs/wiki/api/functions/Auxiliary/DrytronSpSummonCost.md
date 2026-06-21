@@ -8,7 +8,8 @@ Auxiliary.DrytronSpSummonCost(Effect e, int tp, Group eg, int ep, any ev, Effect
 
 ## Description
 
-TODO document.
+Checks and pays the shared Drytron self-Summon cost.
+The player must not have Special Summoned a monster that can be Normal Summoned/Set this turn. On payment, it applies the matching Special Summon oath, then either Tributes one valid cost card or banishes one valid replacement-cost card.
 
 ## Parameters
 

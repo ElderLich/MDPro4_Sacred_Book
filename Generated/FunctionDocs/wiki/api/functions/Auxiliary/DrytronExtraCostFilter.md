@@ -8,7 +8,7 @@ Auxiliary.DrytronExtraCostFilter(Card c, int tp) -> void
 
 ## Description
 
-TODO document.
+Checks whether c can be banished by tp as a replacement cost through effect code 89771220.
 
 ## Parameters
 

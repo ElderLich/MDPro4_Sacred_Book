@@ -3,7 +3,7 @@
 ## Signature
 
 ```lua
-Auxiliary.Stringid(Effect code, any id) -> void
+Auxiliary.Stringid(int code, int id) -> void
 ```
 
 ## Description
@@ -12,8 +12,8 @@ Used to index the card number code for the card the first id (from 0) effect pro
 
 ## Parameters
 
-- `code` `Effect`
-- `id` `any`
+- `code` `int`
+- `id` `int`
 
 ## Source
 

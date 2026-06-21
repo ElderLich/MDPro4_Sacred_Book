@@ -8,7 +8,7 @@ Auxiliary.dscon(Effect e, int tp, Group eg, int ep, any ev, Effect re, any r, in
 
 ## Description
 
-TODO document.
+Condition for Quick Effects that change ATK/DEF; true outside the Damage Phase, or during the Damage Phase before damage calculation has been performed.
 
 ## Parameters
 

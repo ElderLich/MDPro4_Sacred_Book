@@ -3,7 +3,7 @@
 ## Signature
 
 ```lua
-Auxiliary.MustMaterialCheck(any v, int tp, Effect code) -> void
+Auxiliary.MustMaterialCheck(any v, int tp, int code) -> void
 ```
 
 ## Description
@@ -20,7 +20,7 @@ All are checks for required materials
 
 - `v` `any`
 - `tp` `int`
-- `code` `Effect`
+- `code` `int`
 
 ## Source
 
