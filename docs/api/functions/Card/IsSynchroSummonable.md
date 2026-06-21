@@ -8,7 +8,7 @@ Card.IsSynchroSummonable(Card c, [Card|nil tuner], [Group mg]) -> bool
 
 ## Description
 
-Check whether tuner can be used as an adjustment, the field card [or mg] for the coherent material on the c cohomology summon procedures
+Check whether tuner can be used as an adjustment, the field card \[or mg\] for the coherent material on the c cohomology summon procedures
 If the tuner is nil, this function has the same effect as Card.IsSpecialSummonable
 
 ## Parameters

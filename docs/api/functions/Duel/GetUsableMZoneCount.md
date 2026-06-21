@@ -8,7 +8,7 @@ Duel.GetUsableMZoneCount(int player, [int use_player]) -> int
 
 ## Description
 
-Return the number of available Monster Zones on player's field [for use_player]
+Return the number of available Monster Zones on player's field \[for use_player\]
 NOTE: The original description includes a question mark (?), indicating potential uncertainty or incomplete information; translated as written
 
 ## Parameters

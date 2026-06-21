@@ -8,7 +8,7 @@ Card.GetLinkedZone(Card c, [int player]) -> int
 
 ## Description
 
-Return the [from player's perspective on the field] Link Zones of card c
+Return the \[from player's perspective on the field\] Link Zones of card c
 
 ## Parameters
 

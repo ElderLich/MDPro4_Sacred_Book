@@ -8,7 +8,7 @@ Card.GetLinkAttribute(Card c, [int player]) -> int
 
 ## Description
 
-Return the Attribute of card c when used as Link Material [for a Link Summon by player]
+Return the Attribute of card c when used as Link Material \[for a Link Summon by player\]
 
 ## Parameters
 

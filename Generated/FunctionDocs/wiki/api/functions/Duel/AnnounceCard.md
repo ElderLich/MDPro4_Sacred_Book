@@ -8,7 +8,7 @@ Duel.AnnounceCard(int player, [... int]) -> int
 
 ## Description
 
-Let players declare a player [type type] card code
+Let players declare a player \[type type\] card code
 
 ## Parameters
 

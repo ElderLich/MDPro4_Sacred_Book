@@ -8,7 +8,7 @@ Debug.PreSummon(Card c, int sum_type, [int sum_location]) -> void
 
 ## Description
 
-Set summon information for card c: Summarize with sum_type method (usually summoned, special summoned, etc.) [from sum_location]
+Set summon information for card c: Summarize with sum_type method (usually summoned, special summoned, etc.) \[from sum_location\]
 
 ## Parameters
 

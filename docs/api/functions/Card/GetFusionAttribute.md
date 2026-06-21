@@ -8,7 +8,7 @@ Card.GetFusionAttribute(Card c, [int player]) -> int
 
 ## Description
 
-Return the Attribute of card c when used as Fusion Material [for a Fusion Summon by player]
+Return the Attribute of card c when used as Fusion Material \[for a Fusion Summon by player\]
 
 ## Parameters
 

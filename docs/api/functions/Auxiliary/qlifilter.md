@@ -17,9 +17,9 @@ function aux.qlifilter(e, te)
     if ec:IsType(TYPE_LINK) then
       return false
     elseif ec:IsType(TYPE_XYZ) then
-      return ec:GetOriginalRank()<lv
+      return ec:GetOriginalRank()&lt;lv
     else
-      return ec:GetOriginalLevel()<lv
+      return ec:GetOriginalLevel()&lt;lv
     end
   else
     return false

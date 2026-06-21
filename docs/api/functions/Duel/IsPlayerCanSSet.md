@@ -8,7 +8,7 @@ Duel.IsPlayerCanSSet(int player, [Card scard]) -> bool
 
 ## Description
 
-Check if player can Set [scard]
+Check if player can Set \[scard\]
 
 ## Parameters
 

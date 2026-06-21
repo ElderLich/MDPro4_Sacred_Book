@@ -8,7 +8,7 @@ Duel.CheckTribute(Card c, int min, [int|nil max], [Group|nil mg], [int|nil topla
 
 ## Description
 
-Check if there are min [to max] Tributes on the field [or in mg] for Normal Summoning c [to toplayer's field in zone]
+Check if there are min \[to max\] Tributes on the field \[or in mg\] for Normal Summoning c \[to toplayer's field in zone\]
 
 ## Parameters
 

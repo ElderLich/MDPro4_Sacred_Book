@@ -943,7 +943,7 @@ Generated from `Utilities/constant.lua`, with English comments carried forward f
 | `HINGMSG_NUMBER` | `565` | Select a number | 请选择一个数字 |
 | `HINGMSG_LVRANK` | `567` | Declare a Level | 请宣言一个等级 |
 | `HINTMSG_RESOLVECARD` | `568` | Select a card to resolve its effect | 请选择要处理效果的卡 |
-| `HINTMSG_ZONE` | `569` | Select the position for [%ls] | 请选择[%ls]的位置 |
+| `HINTMSG_ZONE` | `569` | Select the position for \[%ls\] | 请选择\[%ls\]的位置 |
 | `HINTMSG_DISABLEZONE` | `570` | Select a zone to make unusable | 请选择要变成不能使用的卡片区域 |
 | `HINTMSG_TOZONE` | `571` | Select a position to move to | 请选择要移动到的位置 |
 | `HINTMSG_COUNTER` | `572` | Select a card to place a counter on | 请选择要放置指示物的卡 |

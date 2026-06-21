@@ -8,7 +8,7 @@ Duel.IncreaseSummonedCount([Card c]) -> void
 
 ## Description
 
-Manual consumption of 1 player [for card c] the number of the usual call
+Manual consumption of 1 player \[for card c\] the number of the usual call
 
 ## Parameters
 

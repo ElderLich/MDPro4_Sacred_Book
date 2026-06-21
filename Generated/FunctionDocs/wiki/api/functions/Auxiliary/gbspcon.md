@@ -12,7 +12,7 @@ Simplified method for the filter condition of Gladiator Beast general effects (S
 2619149, 4253484, 31247589, 42592719, 65984457, 78868776, though written differently, work fine
 function aux.gbspcon(e, tp, eg, ep, ev, re, r, rp)
   local st=e:GetHandler():GetSummonType()
-  return st>=(SUMMON_TYPE_SPECIAL+100) and st<(SUMMON_TYPE_SPECIAL+150)
+  return st&gt;=(SUMMON_TYPE_SPECIAL+100) and st&lt;(SUMMON_TYPE_SPECIAL+150)
 end
 
 ## Parameters

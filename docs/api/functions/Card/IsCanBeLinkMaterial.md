@@ -8,7 +8,7 @@ Card.IsCanBeLinkMaterial(Card c, [Card|nil sc]) -> bool
 
 ## Description
 
-Check if c can be used as Link Material [for Link Monster sc]; if sc is not specified, must pass nil
+Check if c can be used as Link Material \[for Link Monster sc\]; if sc is not specified, must pass nil
 
 ## Parameters
 

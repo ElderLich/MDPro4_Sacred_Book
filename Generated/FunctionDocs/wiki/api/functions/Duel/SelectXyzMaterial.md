@@ -8,7 +8,7 @@ Duel.SelectXyzMaterial(int player, Card c, [function|nil f], int lv, int min, in
 
 ## Description
 
-Let the player player for the excess monster c [from the mg] to select the excess with the level of lv for the min-max meet the conditions of the stack f material
+Let the player player for the excess monster c \[from the mg\] to select the excess with the level of lv for the min-max meet the conditions of the stack f material
 
 ## Parameters
 

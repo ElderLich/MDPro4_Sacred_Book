@@ -8,7 +8,7 @@ Card.IsDefense(Card c, int def, [int atk2], [... int]) -> bool
 
 ## Description
 
-Check if c's DEF is def1 [, or def2...]; returns false if c is not a monster card or not in LOCATION_MZONE
+Check if c's DEF is def1 \[, or def2...\]; returns false if c is not a monster card or not in LOCATION_MZONE
 
 ## Parameters
 

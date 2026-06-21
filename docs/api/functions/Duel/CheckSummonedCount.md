@@ -8,7 +8,7 @@ Duel.CheckSummonedCount([Card c]) -> bool
 
 ## Description
 
-Check whether the round player can still summon this turn [Card c]
+Check whether the round player can still summon this turn \[Card c\]
 
 ## Parameters
 

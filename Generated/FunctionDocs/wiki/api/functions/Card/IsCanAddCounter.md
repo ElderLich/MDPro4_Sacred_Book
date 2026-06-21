@@ -8,7 +8,7 @@ Card.IsCanAddCounter(Card c, int countertype, int count, [int singly], [int loca
 
 ## Description
 
-Check if c can place count counters of type countertype [singly = true]
+Check if c can place count counters of type countertype \[singly = true\]
 
 ## Parameters
 

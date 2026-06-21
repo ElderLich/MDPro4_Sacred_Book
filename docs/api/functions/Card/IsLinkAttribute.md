@@ -8,7 +8,7 @@ Card.IsLinkAttribute(Card c, int attribute, [int player]) -> bool
 
 ## Description
 
-Check if card c, when used as Link Material [for a Link Summon by player], has Attribute attribute
+Check if card c, when used as Link Material \[for a Link Summon by player\], has Attribute attribute
 
 ## Parameters
 

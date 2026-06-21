@@ -11,7 +11,7 @@ Auxiliary.evospcon(Effect e, int tp, Group eg, int ep, any ev, Effect re, any r,
 Simplified method for the filter condition of Evolsaur general effects (Special Summoned by the effect of an "Evolsaur" monster), used in effect registration for SetCondition
 function aux.evospcon(e, tp, eg, ep, ev, re, r, rp)
   local st=e:GetHandler():GetSummonType()
-  return st>=(SUMMON_TYPE_SPECIAL+150) and st<(SUMMON_TYPE_SPECIAL+180)
+  return st&gt;=(SUMMON_TYPE_SPECIAL+150) and st&lt;(SUMMON_TYPE_SPECIAL+180)
 end
 
 ## Parameters

@@ -8,7 +8,7 @@ Duel.GetLocationCountFromEx(int player, [int reason_player], [Group|Card|nil tar
 
 ## Description
 
-Return the number of available slots on player's field [after targets leave due to reason_player] for Special Summoning card sc from the Extra Deck in zone
+Return the number of available slots on player's field \[after targets leave due to reason_player\] for Special Summoning card sc from the Extra Deck in zone
 
 ## Parameters
 

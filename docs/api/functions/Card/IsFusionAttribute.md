@@ -8,7 +8,7 @@ Card.IsFusionAttribute(Card c, int attribute, [int player]) -> bool
 
 ## Description
 
-Check if card c, when used as Fusion Material [for a Fusion Summon by player], has Attribute attribute
+Check if card c, when used as Fusion Material \[for a Fusion Summon by player\], has Attribute attribute
 
 ## Parameters
 

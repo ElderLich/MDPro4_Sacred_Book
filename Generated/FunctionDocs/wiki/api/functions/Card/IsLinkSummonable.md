@@ -8,7 +8,7 @@ Card.IsLinkSummonable(Card c, [Group|nil mg], [int min], [int max]) -> bool
 
 ## Description
 
-Check if card c can be Link Summoned using [min-max Link Materials] from cards on the field [or mg]
+Check if card c can be Link Summoned using \[min-max Link Materials\] from cards on the field \[or mg\]
 If mg is nil, this function is equivalent to c:IsSpecialSummonable(SUMMON_TYPE_LINK)
 
 ## Parameters

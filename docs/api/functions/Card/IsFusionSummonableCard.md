@@ -8,7 +8,7 @@ Card.IsFusionSummonableCard(Card c, [int sum_type]) -> bool
 
 ## Description
 
-Check if card c can be Fusion Summoned [using sum_type method]
+Check if card c can be Fusion Summoned \[using sum_type method\]
 
 ## Parameters
 

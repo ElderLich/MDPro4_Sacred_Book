@@ -8,7 +8,7 @@ Card.IsLevel(Card c, int level1, [int level2], [... int]) -> bool
 
 ## Description
 
-Check if card c is Level level1 [, or level2...]
+Check if card c is Level level1 \[, or level2...\]
 
 ## Parameters
 

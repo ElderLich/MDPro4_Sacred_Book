@@ -8,7 +8,7 @@ Card.GetMutualLinkedZone(Card c, [int player]) -> int
 
 ## Description
 
-Return the [from player's perspective] zones where cards mutually linked with card c are located
+Return the \[from player's perspective\] zones where cards mutually linked with card c are located
 
 ## Parameters
 

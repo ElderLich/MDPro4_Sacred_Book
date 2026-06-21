@@ -8,7 +8,7 @@ Duel.IsPlayerCanMSet(int player, [int sumtype], [Card scard]) -> bool
 
 ## Description
 
-Check if player can Set [scard using sumtype summon method]
+Check if player can Set \[scard using sumtype summon method\]
 If optional parameters are included, both must be provided
 
 ## Parameters

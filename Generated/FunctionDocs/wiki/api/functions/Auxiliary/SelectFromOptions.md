@@ -14,7 +14,7 @@ Return value starts from 1, different from Duel.SelectOption
 ## Parameters
 
 - `tp` `int`
-- `...` `table` - {condition, option[, value]}
+- `...` `table` - {condition, option\[, value\]}
 
 ## Returns
 

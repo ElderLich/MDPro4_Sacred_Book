@@ -8,7 +8,7 @@ Card.CheckFusionMaterial(Card c, [Group|nil g], [Card|nil gc], [int chkf], [bool
 
 ## Description
 
-Check if g contains a set of fusion material that c needs [must contain gc]
+Check if g contains a set of fusion material that c needs \[must contain gc\]
 
 ## Parameters
 

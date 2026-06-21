@@ -8,7 +8,7 @@ Duel.SelectFusionMaterial(int player, Card c, [Group|nil g], [Card|nil gc], [int
 
 ## Description
 
-Let the player player from the g to select a group [must contain gc] fusion fusion monster c material
+Let the player player from the g to select a group \[must contain gc\] fusion fusion monster c material
 
 ## Parameters
 

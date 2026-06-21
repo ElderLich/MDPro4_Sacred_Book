@@ -8,7 +8,7 @@ Duel.XyzSummon(int player, Card c, [Group|nil mg], [int min], [int max]) -> void
 
 ## Description
 
-Let the player player [from the mg] [choose min-max a material] on the c to call the excess procedure
+Let the player player \[from the mg\] \[choose min-max a material\] on the c to call the excess procedure
 Mg is not empty and min is 0 mg directly to all the excess material
 
 ## Parameters

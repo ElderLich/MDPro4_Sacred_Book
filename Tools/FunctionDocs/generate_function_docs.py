@@ -2811,6 +2811,10 @@ def safe_filename(name: str) -> str:
     return re.sub(r"[^A-Za-z0-9_.-]+", "_", name)
 
 
+def markdown_inline_text(value: str) -> str:
+    return (value or "").replace("[", "\\[").replace("]", "\\]").replace("<", "&lt;").replace(">", "&gt;")
+
+
 def write_vitepress_config(base: Path, namespaces: Iterable[str]) -> None:
     namespace_items = [
         f"              {{ text: '{namespace}', link: '/api/functions/{safe_filename(namespace)}/' }},"
@@ -2872,20 +2876,20 @@ def write_wiki_pages(base: Path, docs: Iterable[FunctionDoc], constant_docs: lis
             "## Description",
             "",
         ]
-        lines.extend(description)
+        lines.extend(markdown_inline_text(line) for line in description)
         lines.append("")
         if doc.params:
             lines.extend(["## Parameters", ""])
             for param in doc.params:
                 optional = " optional" if param.optional else ""
-                desc = f" - {param.description}" if param.description else ""
+                desc = f" - {markdown_inline_text(param.description)}" if param.description else ""
                 lines.append(f"- `{param.name}` `{clean_type(param.type)}`{optional}{desc}")
             lines.append("")
         useful_returns = [ret for ret in doc.returns if clean_type(ret.type) != "nil"]
         if useful_returns:
             lines.extend(["## Returns", ""])
             for ret in useful_returns:
-                desc = f" - {ret.description}" if ret.description else ""
+                desc = f" - {markdown_inline_text(ret.description)}" if ret.description else ""
                 lines.append(f"- `{clean_type(ret.type)}`{desc}")
             lines.append("")
         if doc.source_files:
@@ -3435,7 +3439,7 @@ def write_constant_markdown(path: Path, docs: list[ConstantDoc]) -> None:
 
 
 def markdown_table_cell(value: str) -> str:
-    return (value or "").replace("|", "\\|").replace("\n", "<br>")
+    return markdown_inline_text(value or "").replace("|", "\\|").replace("\n", "<br>")
 
 
 def write_constant_backlog(path: Path, docs: list[ConstantDoc]) -> None:

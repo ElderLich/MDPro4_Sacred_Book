@@ -8,7 +8,7 @@ Duel.LinkSummon(int player, Card pcard, [Group|nil mg], [Card lcard], [int minc]
 
 ## Description
 
-Have player Link Summon pcard using [minc to maxc cards from mg, excluding lcard] as materials
+Have player Link Summon pcard using \[minc to maxc cards from mg, excluding lcard\] as materials
 
 ## Parameters
 

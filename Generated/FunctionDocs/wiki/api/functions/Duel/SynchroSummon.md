@@ -8,7 +8,7 @@ Duel.SynchroSummon(int player, Card c, [Card|nil tuner], [Group|nil mg], [int mi
 
 ## Description
 
-Let the player player to tuner as the adjustment [mg for the material] on the c cohomology summon procedures
+Let the player player to tuner as the adjustment \[mg for the material\] on the c cohomology summon procedures
 
 ## Parameters
 

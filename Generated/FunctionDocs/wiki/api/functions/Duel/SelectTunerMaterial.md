@@ -8,7 +8,7 @@ Duel.SelectTunerMaterial(int player, Card c, Card tuner, [function|nil f1], [fun
 
 ## Description
 
-Let the player [from the mg] select a set of clips of the min-max cards that are tuned to be used for co-ordination of the required conditions for c.
+Let the player \[from the mg\] select a set of clips of the min-max cards that are tuned to be used for co-ordination of the required conditions for c.
 F1 is to adjust the filter conditions to be met, f2 is outside the adjustment to meet the needs of the filter conditions
 
 ## Parameters

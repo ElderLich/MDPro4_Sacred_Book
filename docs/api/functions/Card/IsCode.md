@@ -8,7 +8,7 @@ Card.IsCode(Card c, int code1, [int code2], [... int]) -> bool
 
 ## Description
 
-Check whether the card number c is code1[, or code2 ...]
+Check whether the card number c is code1\[, or code2 ...\]
 
 ## Parameters
 

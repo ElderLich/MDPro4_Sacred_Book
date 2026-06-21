@@ -8,7 +8,7 @@ Duel.SelectTribute(int player, Card c, int min, int max, [Group|nil mg], [int|ni
 
 ## Description
 
-Let the player player [from the mg] choose the min-max sacrifices that are normally used to summon c, ex = true to allow the monster on the other side of the field (the wing of the Sun God-Sphere)
+Let the player player \[from the mg\] choose the min-max sacrifices that are normally used to summon c, ex = true to allow the monster on the other side of the field (the wing of the Sun God-Sphere)
 
 ## Parameters
 
