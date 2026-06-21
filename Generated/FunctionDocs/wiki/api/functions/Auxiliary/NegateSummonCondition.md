@@ -3,12 +3,16 @@
 ## Signature
 
 ```lua
-Auxiliary.NegateSummonCondition() -> void
+Auxiliary.NegateSummonCondition() -> bool
 ```
 
 ## Description
 
-TODO document.
+Returns true when no Chain is ready, for effects that negate a Summon.
+
+## Returns
+
+- `bool` - true when no Chain is ready.
 
 ## Source
 

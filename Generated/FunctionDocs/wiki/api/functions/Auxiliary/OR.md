@@ -3,16 +3,20 @@
 ## Signature
 
 ```lua
-Auxiliary.OR(... any) -> void
+Auxiliary.OR(... function) -> function
 ```
 
 ## Description
 
-TODO document.
+Returns a composed predicate that calls each function with the same arguments and stops at the first truthy result.
 
 ## Parameters
 
-- `...` `any`
+- `...` `function`
+
+## Returns
+
+- `function` - A composed predicate.
 
 ## Source
 

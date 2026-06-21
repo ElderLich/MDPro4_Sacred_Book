@@ -3,16 +3,20 @@
 ## Signature
 
 ```lua
-Auxiliary.NeosReturnTargetForced(any set_category) -> void
+Auxiliary.NeosReturnTargetForced([function|nil set_category]) -> function
 ```
 
 ## Description
 
-TODO document.
+Returns the mandatory End Phase return target function for Elemental HERO Neos Fusions. It always allows targeting, sets to-Deck operation info, and calls set_category when provided.
 
 ## Parameters
 
-- `set_category` `any`
+- `set_category` `function|nil` optional
+
+## Returns
+
+- `function` - Target function for the mandatory return effect.
 
 ## Source
 

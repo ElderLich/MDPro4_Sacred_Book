@@ -3,19 +3,19 @@
 ## Signature
 
 ```lua
-Auxiliary.RegisterMergedDelayedEvent(Card c, int code, int event, Group g) -> void
+Auxiliary.RegisterMergedDelayedEvent(Card c, int code, int event, [Group|nil g]) -> void
 ```
 
 ## Description
 
-TODO document.
+Registers global listeners that merge multiple occurrences of event into one EVENT_CUSTOM+code event. The merged event is raised immediately outside a Chain, or at Chain End while in a Chain.
 
 ## Parameters
 
 - `c` `Card`
 - `code` `int`
 - `event` `int`
-- `g` `Group`
+- `g` `Group|nil` optional - Optional storage group; a kept-alive group is created when omitted.
 
 ## Source
 

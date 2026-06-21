@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-06-21T11:24:21+00:00",
+    "generated_at": "2026-06-21T11:34:29+00:00",
     "workspace": "D:\\Programs\\GitHub\\MDPro3_Sacred_Book",
     "dataeditorx_data": "D:\\Programs\\GitHub\\DataEditorX\\DataEditorX\\data",
     "mdpro3_locales": "D:\\Programs\\GitHub\\MDPro3_Data\\Data\\locales",
@@ -39756,15 +39756,17 @@
       ],
       "returns": [
         {
-          "type": "nil",
-          "description": ""
+          "type": "bool",
+          "description": "true if the activation can be negated and the card can be banished if needed."
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "「把发动无效并除外」类效果的条件辅助函数；要求tp可以除外，且发动的卡不再与其效果关联，或仍关联但可以被除外。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Condition helper for effects that negate an activation and banish the activating card. It requires tp to be able to banish, and the activating card must either no longer be related to its effect or be able to be banished."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -39775,7 +39777,10 @@
       "aliases": [
         "aux.nbcon"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -39845,11 +39850,13 @@
           "description": ""
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "「把发动无效并除外」类效果的目标辅助函数；登记无效信息，发动的卡仍与效果关联时登记除外信息，并在效果从墓地发动时标记CATEGORY_GRAVE_ACTION。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Target helper for effects that negate an activation and banish the activating card. It sets negate operation info, adds banish info when the activating card is still related, and marks CATEGORY_GRAVE_ACTION for effects activated in the Graveyard."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -39860,7 +39867,9 @@
       "aliases": [
         "aux.nbtg"
       ],
-      "tags": [],
+      "tags": [
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -39884,15 +39893,17 @@
       ],
       "returns": [
         {
-          "type": "nil",
-          "description": ""
+          "type": "bool",
+          "description": "true if the activation can be negated and the card can be returned to the Deck if needed."
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "「把发动无效并回到卡组」类效果的条件辅助函数；魔法/陷阱的发动、已不与效果关联的卡，或仍关联且可以回到卡组的卡均满足。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Condition helper for effects that negate an activation and return the activating card to the Deck. It accepts Spell/Trap activations, unrelated cards, or related cards that can be returned to the Deck."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -39903,7 +39914,10 @@
       "aliases": [
         "aux.ndcon"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -39956,22 +39970,24 @@
       "params": [
         {
           "name": "v",
-          "type": "any",
+          "type": "Card|Group",
           "optional": false,
           "description": ""
         }
       ],
       "returns": [
         {
-          "type": "nil",
-          "description": ""
+          "type": "bool",
+          "description": "true if the current effect was negated by the Necrovalley check."
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "检查v这个Card或Group中是否包含受「王家长眠之谷」影响的卡。若当前连锁可被无效且找到匹配卡，则无效当前效果并返回true。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Checks whether v, a Card or Group, contains a card affected by Necrovalley. If the current Chain is disablable and a matching card is found, it negates the current effect and returns true."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -39982,7 +39998,10 @@
       "aliases": [
         "aux.NecroValleyNegateCheck"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -40000,15 +40019,17 @@
       ],
       "returns": [
         {
-          "type": "nil",
-          "description": ""
+          "type": "bool",
+          "description": "true if c is a valid card to have its effects negated."
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "用于无效表侧卡效果的筛选。陷阱怪兽只需表侧表示，魔法/陷阱卡需表侧表示且尚未被无效，怪兽则使用Auxiliary.NegateMonsterFilter。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Filter for effects that negate a face-up card. Trap Monsters only need to be face-up, Spell/Trap Cards must be face-up and not already disabled, and monsters use Auxiliary.NegateMonsterFilter."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -40019,7 +40040,10 @@
       "aliases": [
         "aux.NegateAnyFilter"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -40037,15 +40061,17 @@
       ],
       "returns": [
         {
-          "type": "nil",
-          "description": ""
+          "type": "bool",
+          "description": "true if c is a valid Effect Monster to have its effects negated."
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "用于无效效果怪兽效果的筛选，例如「效果遮蒙者」；c必须表侧表示、尚未被无效，且当前为效果怪兽。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Filter for effects that negate an Effect Monster, such as Effect Veiler: c must be face-up, not already disabled, and currently an Effect Monster."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -40056,7 +40082,10 @@
       "aliases": [
         "aux.NegateEffectMonsterFilter"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -40074,15 +40103,17 @@
       ],
       "returns": [
         {
-          "type": "nil",
-          "description": ""
+          "type": "bool",
+          "description": "true if c is a valid face-up monster to have its effects negated."
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "用于无效表侧怪兽效果的筛选，例如「无限泡影」；c必须表侧表示、尚未被无效，且当前或原本为效果怪兽。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Filter for effects that negate a face-up monster, such as Infinite Impermanence: c must be face-up, not already disabled, and be or originally be an Effect Monster."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -40093,7 +40124,10 @@
       "aliases": [
         "aux.NegateMonsterFilter"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -40104,15 +40138,17 @@
       "params": [],
       "returns": [
         {
-          "type": "nil",
-          "description": ""
+          "type": "bool",
+          "description": "true when no Chain is ready."
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "没有待处理连锁时返回true，用于无效召唤的效果。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Returns true when no Chain is ready, for effects that negate a Summon."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -40123,7 +40159,10 @@
       "aliases": [
         "aux.NegateSummonCondition"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -40183,15 +40222,17 @@
       ],
       "returns": [
         {
-          "type": "nil",
-          "description": ""
+          "type": "bool",
+          "description": "true if the forced Neos return effect should apply."
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "「元素英雄 新宇侠」融合怪兽结束阶段强制返回效果的条件；处理对象未受编号42015635（「新宇宙」）效果影响时返回true。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Condition for the mandatory Elemental HERO Neos Fusion End Phase return effect; true while the handler is not affected by Neo Space's effect code 42015635."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -40202,7 +40243,10 @@
       "aliases": [
         "aux.NeosReturnConditionForced"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -40262,15 +40306,17 @@
       ],
       "returns": [
         {
-          "type": "nil",
-          "description": ""
+          "type": "bool",
+          "description": "true if the optional Neos return effect should apply."
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "「元素英雄 新宇侠」融合怪兽结束阶段可选返回效果的条件；处理对象受编号42015635（「新宇宙」）效果影响时返回true。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Condition for the optional Elemental HERO Neos Fusion End Phase return effect; true while the handler is affected by Neo Space's effect code 42015635."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -40281,7 +40327,10 @@
       "aliases": [
         "aux.NeosReturnConditionOptional"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -40292,22 +40341,24 @@
       "params": [
         {
           "name": "set_category",
-          "type": "any",
-          "optional": false,
+          "type": "function|nil",
+          "optional": true,
           "description": ""
         }
       ],
       "returns": [
         {
-          "type": "nil",
-          "description": ""
+          "type": "function",
+          "description": "Target function for the mandatory return effect."
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "返回「元素英雄 新宇侠」融合怪兽强制结束阶段返回效果的目标函数；始终允许处理，登记回到卡组信息，并在提供set_category时调用它。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Returns the mandatory End Phase return target function for Elemental HERO Neos Fusions. It always allows targeting, sets to-Deck operation info, and calls set_category when provided."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -40318,7 +40369,10 @@
       "aliases": [
         "aux.NeosReturnTargetForced"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -40329,22 +40383,24 @@
       "params": [
         {
           "name": "set_category",
-          "type": "any",
-          "optional": false,
+          "type": "function|nil",
+          "optional": true,
           "description": ""
         }
       ],
       "returns": [
         {
-          "type": "nil",
-          "description": ""
+          "type": "function",
+          "description": "Target function for the optional return effect."
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "返回「元素英雄 新宇侠」融合怪兽可选结束阶段返回效果的目标函数；要求处理对象可以回到额外卡组，登记回到卡组信息，并在提供set_category时调用它。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Returns the optional End Phase return target function for Elemental HERO Neos Fusions. It requires the handler to be able to return to the Extra Deck, sets to-Deck operation info, and calls set_category when provided."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -40355,7 +40411,10 @@
       "aliases": [
         "aux.NeosReturnTargetOptional"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -40420,15 +40479,17 @@
       ],
       "returns": [
         {
-          "type": "nil",
-          "description": ""
+          "type": "function",
+          "description": "A predicate that returns not f(...)."
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "返回将f结果取反的谓词函数。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Returns a predicate that negates f's result."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -40439,7 +40500,10 @@
       "aliases": [
         "aux.NOT"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -40454,11 +40518,13 @@
           "description": ""
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "空辅助函数；有意不执行任何处理。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Empty helper function that intentionally does nothing."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -40469,7 +40535,9 @@
       "aliases": [
         "aux.NULL"
       ],
-      "tags": [],
+      "tags": [
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -40560,22 +40628,24 @@
       "params": [
         {
           "name": "...",
-          "type": "any",
+          "type": "function",
           "optional": false,
           "description": ""
         }
       ],
       "returns": [
         {
-          "type": "nil",
-          "description": ""
+          "type": "function",
+          "description": "A composed predicate."
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "返回组合条件函数；调用时会用相同参数依次执行传入的函数，并在第一个真值处停止。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Returns a composed predicate that calls each function with the same arguments and stops at the first truthy result."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -40586,7 +40656,10 @@
       "aliases": [
         "aux.OR"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -40687,22 +40760,24 @@
         },
         {
           "name": "reason",
-          "type": "any",
-          "optional": false,
-          "description": ""
+          "type": "int",
+          "optional": true,
+          "description": "Defaults to REASON_EFFECT."
         }
       ],
       "returns": [
         {
-          "type": "nil",
-          "description": ""
+          "type": "int",
+          "description": "The number of operated cards."
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "以reason把g送到卡组最上方；让p为进入双方卡组的卡排序后，再移动到卡组最下方，并返回实际处理的卡数量。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Sends g to the top of the Deck by reason, lets p order cards that reached either Deck, moves them to the bottom, and returns the number of operated cards."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -40713,7 +40788,10 @@
       "aliases": [
         "aux.PlaceCardsOnDeckBottom"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -40736,22 +40814,24 @@
         },
         {
           "name": "reason",
-          "type": "any",
-          "optional": false,
-          "description": ""
+          "type": "int",
+          "optional": true,
+          "description": "Defaults to REASON_EFFECT."
         }
       ],
       "returns": [
         {
-          "type": "nil",
-          "description": ""
+          "type": "int",
+          "description": "The number of operated cards."
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "以reason把g送到卡组最上方；需要时让p为进入双方卡组的卡排序，并返回实际处理的卡数量。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Sends g to the top of the Deck by reason, lets p order cards that reached either Deck when needed, and returns the number of operated cards."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -40762,7 +40842,10 @@
       "aliases": [
         "aux.PlaceCardsOnDeckTop"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -40790,11 +40873,13 @@
           "description": ""
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "残局模式的结束阶段操作；把玩家0的LP变为0。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Puzzle-mode End Phase operation that sets player 0's LP to 0."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -40805,7 +40890,9 @@
       "aliases": [
         "aux.PuzzleOp"
       ],
-      "tags": [],
+      "tags": [
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -40893,22 +40980,19 @@
         },
         {
           "name": "g",
-          "type": "Group",
-          "optional": false,
-          "description": ""
+          "type": "Group|nil",
+          "optional": true,
+          "description": "Optional storage group; a kept-alive group is created when omitted."
         }
       ],
-      "returns": [
-        {
-          "type": "nil",
-          "description": ""
-        }
+      "returns": [],
+      "description_zh": [
+        "登记全局监听，把同一连锁内多次发生的event合并成1次EVENT_CUSTOM+code事件。不在连锁中则立即触发，在连锁中则于连锁结束触发。"
       ],
-      "description_zh": [],
       "description_en": [
-        "TODO document."
+        "Registers global listeners that merge multiple occurrences of event into one EVENT_CUSTOM+code event. The merged event is raised immediately outside a Chain, or at Chain End while in a Chain."
       ],
-      "english_status": "missing_documentation",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -40919,7 +41003,10 @@
       "aliases": [
         "aux.RegisterMergedDelayedEvent"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -40942,22 +41029,24 @@
         },
         {
           "name": "events",
-          "type": "any",
+          "type": "int|table",
           "optional": false,
           "description": ""
         }
       ],
       "returns": [
         {
-          "type": "nil",
-          "description": ""
+          "type": "int",
+          "description": "The generated custom event code."
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "为单张卡登记1个事件或事件表的合并延迟监听，并返回生成的自定义事件编号。持有者移动到公开状态时会清空保存的卡，并在需要时安装共通的连锁结束触发器。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Registers single-card merged delayed event listeners for one event or a table of events, returning the generated custom event code. The helper clears stored cards when the owner moves to a public state and installs the shared Chain End raiser when needed."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -40968,7 +41057,10 @@
       "aliases": [
         "aux.RegisterMergedDelayedEvent_ToSingleCard"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -40997,22 +41089,19 @@
         },
         {
           "name": "event_code_single",
-          "type": "Effect",
+          "type": "int",
           "optional": false,
           "description": ""
         }
       ],
-      "returns": [
-        {
-          "type": "nil",
-          "description": ""
-        }
+      "returns": [],
+      "description_zh": [
+        "Auxiliary.RegisterMergedDelayedEvent_ToSingleCard使用的内部辅助函数；登记1个事件监听及其连锁结束配套监听。"
       ],
-      "description_zh": [],
       "description_en": [
-        "TODO document."
+        "Internal helper that registers one event listener and its Chain End companion for Auxiliary.RegisterMergedDelayedEvent_ToSingleCard."
       ],
-      "english_status": "missing_documentation",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -41023,7 +41112,10 @@
       "aliases": [
         "aux.RegisterMergedDelayedEvent_ToSingleCard_AddOperation"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -41087,11 +41179,13 @@
           "description": ""
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "单卡合并延迟事件使用的全局连锁结束辅助函数；对每个待处理的生成自定义事件触发1次，然后清空对应Group。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Global Chain End helper for single-card merged delayed events. It raises each pending generated custom event once, then clears its stored group."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -41102,7 +41196,9 @@
       "aliases": [
         "aux.RegisterMergedDelayedEvent_ToSingleCard_RaiseEvent"
       ],
-      "tags": [],
+      "tags": [
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -41176,25 +41272,25 @@
         },
         {
           "name": "s",
-          "type": "any",
+          "type": "int",
           "optional": false,
           "description": ""
         },
         {
           "name": "o",
-          "type": "any",
+          "type": "int",
           "optional": false,
           "description": ""
         },
         {
           "name": "min",
-          "type": "any",
+          "type": "int",
           "optional": false,
           "description": ""
         },
         {
           "name": "max",
-          "type": "any",
+          "type": "int",
           "optional": false,
           "description": ""
         },
@@ -41213,15 +41309,17 @@
       ],
       "returns": [
         {
-          "type": "nil",
-          "description": ""
+          "type": "Group",
+          "description": "The selected cards."
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "选择辅助函数；先用HINTMSG_FIELD_FIRST提示玩家选择满足条件的场上卡。若取消该选择，则恢复之前的提示并回退到Duel.SelectMatchingCard。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Selection helper that first offers matching on-field cards with HINTMSG_FIELD_FIRST. If that selection is canceled, it restores the previous hint and falls back to Duel.SelectMatchingCard."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -41232,7 +41330,10 @@
       "aliases": [
         "aux.SelectCardFromFieldFirst"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -41377,25 +41478,25 @@
         },
         {
           "name": "s",
-          "type": "any",
+          "type": "int",
           "optional": false,
           "description": ""
         },
         {
           "name": "o",
-          "type": "any",
+          "type": "int",
           "optional": false,
           "description": ""
         },
         {
           "name": "min",
-          "type": "any",
+          "type": "int",
           "optional": false,
           "description": ""
         },
         {
           "name": "max",
-          "type": "any",
+          "type": "int",
           "optional": false,
           "description": ""
         },
@@ -41414,15 +41515,17 @@
       ],
       "returns": [
         {
-          "type": "nil",
-          "description": ""
+          "type": "Group",
+          "description": "The selected target cards."
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "取对象选择辅助函数；先用HINTMSG_FIELD_FIRST提示玩家选择满足条件的场上效果对象。若接受则登记为对象；否则恢复之前的提示并回退到Duel.SelectTarget。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Target-selection helper that first offers matching on-field effect targets with HINTMSG_FIELD_FIRST. If accepted, it sets those cards as targets; otherwise it restores the previous hint and falls back to Duel.SelectTarget."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -41433,7 +41536,10 @@
       "aliases": [
         "aux.SelectTargetFromFieldFirst"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -41457,15 +41563,17 @@
       ],
       "returns": [
         {
-          "type": "nil",
-          "description": ""
+          "type": "bool",
+          "description": "true if c has the flag id."
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "c持有id标记时返回true；Auxiliary.IsSelfEquip用它判断由自身效果装备的卡。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Returns true if c has a flag with id, used by Auxiliary.IsSelfEquip to identify cards equipped by their own effect."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -41476,7 +41584,10 @@
       "aliases": [
         "aux.SelfEquipFilter"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -41506,15 +41617,17 @@
       ],
       "returns": [
         {
-          "type": "nil",
-          "description": ""
+          "type": "int",
+          "description": "The global zone bit, or 0 for invalid input."
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "把玩家本地的怪兽区域或魔法与陷阱区域序号转换为全局区域位。玩家、位置或序号无效时返回0。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Converts a player's local Monster Zone or Spell & Trap Zone sequence into a global zone bit. Invalid players, locations, or sequences return 0."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -41525,7 +41638,10 @@
       "aliases": [
         "aux.SequenceToGlobal"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },

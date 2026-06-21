@@ -8,7 +8,7 @@ Auxiliary.nbtg(Effect e, int tp, Group eg, int ep, any ev, Effect re, any r, int
 
 ## Description
 
-TODO document.
+Target helper for effects that negate an activation and banish the activating card. It sets negate operation info, adds banish info when the activating card is still related, and marks CATEGORY_GRAVE_ACTION for effects activated in the Graveyard.
 
 ## Parameters
 

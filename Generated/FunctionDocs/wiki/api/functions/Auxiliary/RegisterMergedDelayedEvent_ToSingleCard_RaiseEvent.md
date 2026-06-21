@@ -8,7 +8,7 @@ Auxiliary.RegisterMergedDelayedEvent_ToSingleCard_RaiseEvent(Effect e, int tp, G
 
 ## Description
 
-TODO document.
+Global Chain End helper for single-card merged delayed events. It raises each pending generated custom event once, then clears its stored group.
 
 ## Parameters
 

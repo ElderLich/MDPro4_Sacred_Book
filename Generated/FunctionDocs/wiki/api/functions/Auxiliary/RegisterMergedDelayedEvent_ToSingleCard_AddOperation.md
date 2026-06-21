@@ -3,19 +3,19 @@
 ## Signature
 
 ```lua
-Auxiliary.RegisterMergedDelayedEvent_ToSingleCard_AddOperation(Card c, Group g, int event, Effect event_code_single) -> void
+Auxiliary.RegisterMergedDelayedEvent_ToSingleCard_AddOperation(Card c, Group g, int event, int event_code_single) -> void
 ```
 
 ## Description
 
-TODO document.
+Internal helper that registers one event listener and its Chain End companion for Auxiliary.RegisterMergedDelayedEvent_ToSingleCard.
 
 ## Parameters
 
 - `c` `Card`
 - `g` `Group`
 - `event` `int`
-- `event_code_single` `Effect`
+- `event_code_single` `int`
 
 ## Source
 

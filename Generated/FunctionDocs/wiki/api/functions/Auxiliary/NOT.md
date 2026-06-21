@@ -3,16 +3,20 @@
 ## Signature
 
 ```lua
-Auxiliary.NOT(function f) -> void
+Auxiliary.NOT(function f) -> function
 ```
 
 ## Description
 
-TODO document.
+Returns a predicate that negates f's result.
 
 ## Parameters
 
 - `f` `function`
+
+## Returns
+
+- `function` - A predicate that returns not f(...).
 
 ## Source
 

@@ -3,16 +3,20 @@
 ## Signature
 
 ```lua
-Auxiliary.NeosReturnTargetOptional(any set_category) -> void
+Auxiliary.NeosReturnTargetOptional([function|nil set_category]) -> function
 ```
 
 ## Description
 
-TODO document.
+Returns the optional End Phase return target function for Elemental HERO Neos Fusions. It requires the handler to be able to return to the Extra Deck, sets to-Deck operation info, and calls set_category when provided.
 
 ## Parameters
 
-- `set_category` `any`
+- `set_category` `function|nil` optional
+
+## Returns
+
+- `function` - Target function for the optional return effect.
 
 ## Source
 

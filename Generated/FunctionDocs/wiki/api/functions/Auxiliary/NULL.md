@@ -8,7 +8,7 @@ Auxiliary.NULL() -> void
 
 ## Description
 
-TODO document.
+Empty helper function that intentionally does nothing.
 
 ## Source
 

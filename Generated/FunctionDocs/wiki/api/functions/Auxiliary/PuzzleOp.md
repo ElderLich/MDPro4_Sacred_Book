@@ -8,7 +8,7 @@ Auxiliary.PuzzleOp(Effect e, int tp) -> void
 
 ## Description
 
-TODO document.
+Puzzle-mode End Phase operation that sets player 0's LP to 0.
 
 ## Parameters
 

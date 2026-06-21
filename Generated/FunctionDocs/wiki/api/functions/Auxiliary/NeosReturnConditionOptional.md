@@ -3,12 +3,12 @@
 ## Signature
 
 ```lua
-Auxiliary.NeosReturnConditionOptional(Effect e, int tp, Group eg, int ep, any ev, Effect re, any r, int rp) -> void
+Auxiliary.NeosReturnConditionOptional(Effect e, int tp, Group eg, int ep, any ev, Effect re, any r, int rp) -> bool
 ```
 
 ## Description
 
-TODO document.
+Condition for the optional Elemental HERO Neos Fusion End Phase return effect; true while the handler is affected by Neo Space's effect code 42015635.
 
 ## Parameters
 
@@ -20,6 +20,10 @@ TODO document.
 - `re` `Effect`
 - `r` `any`
 - `rp` `int`
+
+## Returns
+
+- `bool` - true if the optional Neos return effect should apply.
 
 ## Source
 
