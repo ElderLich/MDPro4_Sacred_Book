@@ -1,0 +1,21 @@
+# Debug.ReloadFieldBegin
+
+## Signature
+
+```lua
+Debug.ReloadFieldBegin(int flag, [int rule]) -> void
+```
+
+## Description
+
+Start with the option flag
+Flag: DUEL_ATTACK_FIRST_TURN + DUEL_SIMPLE_AI
+
+## Parameters
+
+- `flag` `int`
+- `rule` `int` optional - default: 5
+
+## Source
+
+- `D:\Programs\GitHub\ygopro-core\libdebug.cpp:209`

@@ -1,0 +1,31 @@
+# Auxiliary.UnionUnequipTarget
+
+## Signature
+
+```lua
+Auxiliary.UnionUnequipTarget(Effect e, int tp, Group eg, int ep, any ev, Effect re, any r, int rp, bool chk) -> bool|nil
+```
+
+## Description
+
+Target function for the shared modern Union unequip effect. It checks the Union flag, available Monster Zone, current equip target, and whether the handler can be Special Summoned.
+
+## Parameters
+
+- `e` `Effect`
+- `tp` `int`
+- `eg` `Group`
+- `ep` `int`
+- `ev` `any`
+- `re` `Effect`
+- `r` `any`
+- `rp` `int`
+- `chk` `bool`
+
+## Returns
+
+- `bool|nil` - true during valid target checks; otherwise no meaningful return value.
+
+## Source
+
+- `Utilities/utility.lua:421`

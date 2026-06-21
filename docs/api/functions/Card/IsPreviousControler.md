@@ -1,0 +1,24 @@
+# Card.IsPreviousControler
+
+## Signature
+
+```lua
+Card.IsPreviousControler(Card c, int player) -> bool
+```
+
+## Description
+
+Check if card c's previous controller was player
+
+## Parameters
+
+- `c` `Card`
+- `player` `int`
+
+## Returns
+
+- `bool`
+
+## Source
+
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3608`

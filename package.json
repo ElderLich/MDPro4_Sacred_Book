@@ -3,9 +3,12 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "docs:dev": "vitepress dev Generated/FunctionDocs/wiki",
-    "docs:build": "vitepress build Generated/FunctionDocs/wiki",
-    "docs:preview": "vitepress preview Generated/FunctionDocs/wiki"
+    "reference:generate": "python Tools/FunctionDocs/generate_function_docs.py",
+    "site:generate": "python Tools/Site/generate_site.py",
+    "docs:generate": "npm run reference:generate && npm run site:generate",
+    "docs:dev": "npm run docs:generate && vitepress dev docs",
+    "docs:build": "npm run docs:generate && vitepress build docs",
+    "docs:preview": "vitepress preview docs"
   },
   "devDependencies": {
     "vitepress": "^1.6.4"

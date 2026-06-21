@@ -1,0 +1,27 @@
+# Auxiliary.FCheckMixRepSelectedCond
+
+## Signature
+
+```lua
+Auxiliary.FCheckMixRepSelectedCond(int tp, Group mg, Group sg, Group g, ... any) -> bool
+```
+
+## Description
+
+Checks whether the recursive mixed-repeat selection can continue from the currently selected group, or can finish through Auxiliary.FCheckSelectMixRep.
+
+## Parameters
+
+- `tp` `int`
+- `mg` `Group`
+- `sg` `Group`
+- `g` `Group`
+- `...` `any`
+
+## Returns
+
+- `bool` - true if the current mixed-repeat selection can continue or finish.
+
+## Source
+
+- `Utilities/procedure.lua:1146`
