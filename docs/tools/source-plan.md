@@ -17,6 +17,7 @@ Sacred Book can learn from the shape of other scripting docs without importing t
 
 ## Documentation Shape
 
+- Function-page depth target: each important API page should explain when to use the function, how it fits into condition/cost/target/operation flow, common pitfalls, and a small MDPro3-style Lua example.
 - Beginner path: teach script structure first, then effect construction, activation flow, filters/groups, card movement, and shared patterns.
 - API pages: show signature, clean summary, parameters/returns, source files, used-by cards, and short script snippets.
 - Tools: provide card/name/function search through the Script Explorer, then add richer filters for card text, category bits, and constants.

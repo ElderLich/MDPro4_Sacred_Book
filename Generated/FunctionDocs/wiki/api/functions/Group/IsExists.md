@@ -8,8 +8,20 @@ Group.IsExists(Group g, function f, int count, [Card|Group|nil ex], ... any) -> 
 
 ## Description
 
-Filter function to check if there is at least count of cards in g that satisfy the filter condition f and not equal to ex
-Starting from the 5th parameter as an additional parameter
+Checks whether at least count cards in g satisfy filter f and are not excluded by ex.
+Extra arguments after ex are passed to f after the card argument.
+
+## How To Use It
+
+Use this to check whether a Group contains enough cards with a property.
+
+```lua
+if g:IsExists(Card.IsRace,1,nil,RACE_DRAGON) then
+    -- at least one Dragon is in g
+end
+```
+
+The `count` parameter is useful for requirements such as "2 or more monsters with different names" once the filter captures the condition you need.
 
 ## Parameters
 

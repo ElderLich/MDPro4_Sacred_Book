@@ -7,14 +7,14 @@ This queue tracks function pages whose English should be reviewed by hand. It is
 - Total functions: **998**
 - Functions used by current scripts: **753**
 - Functions with raw Chinese text in English fields: **0**
-- Functions queued for natural-English review: **620**
+- Functions queued for natural-English review: **606**
 
 ## English Status Counts
 
 | Status | Count |
 | --- | ---: |
-| `imported_from_dataeditorx` | 620 |
-| `translated_exact` | 378 |
+| `imported_from_dataeditorx` | 606 |
+| `translated_exact` | 392 |
 
 ## Priority Review Queue
 
@@ -22,17 +22,7 @@ Sorted by current script usage count so the most visible function pages are revi
 
 | Function | Status | Script Uses | Current English Preview |
 | --- | --- | ---: | --- |
-| [`Duel.SelectTarget`](/api/functions/Duel/SelectTarget) | `imported_from_dataeditorx` | 5043 | Filter function, so that player sel_player select the specified location to meet the filter condition f and not equal ex And can be the min-max card of the object that... |
 | [`Card.IsControler`](/api/functions/Card/IsControler) | `imported_from_dataeditorx` | 4889 | Check whether the current control of c is a controler |
-| [`Duel.IsExistingTarget`](/api/functions/Duel/IsExistingTarget) | `imported_from_dataeditorx` | 4870 | Filter function to check whether there is at least the specified number of positions to meet the filter conditions f and not equal ex And can become a card of an objec... |
-| [`Effect.SetCost`](/api/functions/Effect/SetCost) | `imported_from_dataeditorx` | 4714 | Set the Cost property |
-| [`Duel.GetFirstTarget`](/api/functions/Duel/GetFirstTarget) | `imported_from_dataeditorx` | 4696 | Returns all linked object cards that are normally only used when an object is used |
-| [`Duel.SpecialSummon`](/api/functions/Duel/SpecialSummon) | `imported_from_dataeditorx` | 4581 | Let player player to sumtype way, pos that special targets to target_player target field If nocheck is true, the card's calling condition is disregarded. If nolimit is... |
-| [`Card.IsCanBeSpecialSummoned`](/api/functions/Card/IsCanBeSpecialSummoned) | `imported_from_dataeditorx` | 4086 | Check whether c can be sumplayer with the effect of the player e to sumtype form sumpos special summon to target_player field If nocheck is true, the call condition of... |
-| [`Group.GetFirst`](/api/functions/Group/GetFirst) | `imported_from_dataeditorx` | 3524 | Returns the first card in g and resets the current pointer to the first card in g Returns nil if card does not exist in g |
-| [`Duel.GetMatchingGroup`](/api/functions/Duel/GetMatchingGroup) | `imported_from_dataeditorx` | 3195 | Filter function to return to the specified location to meet the filter condition f and not equal to the ex card The sixth parameter starts as an extra parameter |
-| [`Effect.SetTargetRange`](/api/functions/Effect/SetTargetRange) | `imported_from_dataeditorx` | 2987 | Set the Target Range property for effect e S_range refers to our area of ​​influence The o_range value affects the partner area If the EFFECT_FLAG_ABSOLUTE_RANGE flag... |
-| [`Card.IsCode`](/api/functions/Card/IsCode) | `imported_from_dataeditorx` | 2963 | Check whether the card number c is code1[, or code2 ...] |
 | [`Duel.SendtoHand`](/api/functions/Duel/SendtoHand) | `imported_from_dataeditorx` | 2963 | The reason to target the player sent to the player's hand, the return value is the actual number of operations If player is nil, the card's holder's hand is returned |
 | [`Card.IsRace`](/api/functions/Card/IsRace) | `imported_from_dataeditorx` | 2789 | Check if c is race race |
 | [`Card.IsAbleToHand`](/api/functions/Card/IsAbleToHand) | `imported_from_dataeditorx` | 2720 | Check whether c can hand Note: This function returns false only if the card or player is affected by the effect of being unable to join the hand (such as Ray King) |
@@ -41,7 +31,6 @@ Sorted by current script usage count so the most visible function pages are revi
 | [`Duel.ConfirmCards`](/api/functions/Duel/ConfirmCards) | `imported_from_dataeditorx` | 2581 | Identify targets for the player |
 | [`Effect.Clone`](/api/functions/Effect/Clone) | `imported_from_dataeditorx` | 2492 | Create a new copy of effect e |
 | [`Group.Clone`](/api/functions/Group/Clone) | `imported_from_dataeditorx` | 2491 | Create a new copy of card group g |
-| [`Group.IsExists`](/api/functions/Group/IsExists) | `imported_from_dataeditorx` | 2212 | Filter function to check if there is at least count of cards in g that satisfy the filter condition f and not equal to ex Starting from the 5th parameter as an additio... |
 | [`Duel.GetChainInfo`](/api/functions/Duel/GetChainInfo) | `imported_from_dataeditorx` | 2166 | Returns the chainc information, if chainc = 0, returns the chain of information currently being processed This function returns the corresponding number of return valu... |
 | [`Duel.RegisterEffect`](/api/functions/Duel/RegisterEffect) | `imported_from_dataeditorx` | 2115 | Register the effect e as the player's effect to the global environment |
 | [`Duel.BreakEffect`](/api/functions/Duel/BreakEffect) | `imported_from_dataeditorx` | 1927 | Interrupt the current effect, so that after the effect of treatment as not treated simultaneously, this function will cause the wrong time |
@@ -52,7 +41,6 @@ Sorted by current script usage count so the most visible function pages are revi
 | [`Effect.GetLabelObject`](/api/functions/Effect/GetLabelObject) | `imported_from_dataeditorx` | 1630 | Returns the LabelObject property |
 | [`Duel.Remove`](/api/functions/Duel/Remove) | `imported_from_dataeditorx` | 1626 | In the case of reason, except for the pos form, the return value is the actual number being manipulated If the reason contains REASON_TEMPORARY, then the exception is... |
 | [`Card.IsAttribute`](/api/functions/Card/IsAttribute) | `imported_from_dataeditorx` | 1441 | Check whether c belongs to attribute attribute |
-| [`Group.Select`](/api/functions/Group/Select) | `imported_from_dataeditorx` | 1391 | Let player player from g select the min-max Zhang is not equal to the ex card |
 | [`Auxiliary.NecroValleyFilter`](/api/functions/Auxiliary/NecroValleyFilter) | `imported_from_dataeditorx` | 1314 | Return a new filter condition based on filter condition f: cards that satisfy f and are not affected by Necrovalley function Auxiliary.NecroValleyFilter(f) return func... |
 | [`Duel.SelectYesNo`](/api/functions/Duel/SelectYesNo) | `imported_from_dataeditorx` | 1293 | Let player player select Yes or No |
 | [`Card.IsReason`](/api/functions/Card/IsReason) | `imported_from_dataeditorx` | 1246 | Check if c contains the reason |
@@ -73,12 +61,10 @@ Sorted by current script usage count so the most visible function pages are revi
 | [`Card.RegisterFlagEffect`](/api/functions/Card/RegisterFlagEffect) | `imported_from_dataeditorx` | 853 | For the registration of a logo with the results Note: The effect of the registration to the card is not used for the system, Even if the code and the built-in effect c... |
 | [`Duel.Draw`](/api/functions/Duel/Draw) | `imported_from_dataeditorx` | 826 | Let the player play the count card with the reason, and return the number of cards actually drawn If the reason contains REASON_RULE the draw is not affected by the "c... |
 | [`Duel.GetCurrentPhase`](/api/functions/Duel/GetCurrentPhase) | `imported_from_dataeditorx` | 824 | Returns the current stage |
-| [`Group.Filter`](/api/functions/Group/Filter) | `imported_from_dataeditorx` | 823 | The filter function filters the card from g that satisfies the filter condition f and is not equal to ex Starting from the 4th parameter as an additional parameter |
 | [`Duel.Damage`](/api/functions/Duel/Damage) | `imported_from_dataeditorx` | 817 | To the reason reason to give players the player caused value damage, the actual value of the damage received The return value is 0 if the damage becomes an effect such... |
 | [`Group.IsContains`](/api/functions/Group/IsContains) | `imported_from_dataeditorx` | 802 | Check g for card c |
 | [`Card.IsLevelBelow`](/api/functions/Card/IsLevelBelow) | `imported_from_dataeditorx` | 795 | Check whether c is below the level level (at least 1) |
 | [`Card.IsAbleToRemove`](/api/functions/Card/IsAbleToRemove) | `imported_from_dataeditorx` | 781 | Check whether c can be player except player |
-| [`Group.GetNext`](/api/functions/Group/GetNext) | `imported_from_dataeditorx` | 781 | Point the pointer to the next card and return the card, or nil if it does not exist |
 | [`Duel.SpecialSummonComplete`](/api/functions/Duel/SpecialSummonComplete) | `imported_from_dataeditorx` | 780 | This function is called after determining that a number of calls to Duel.SpecialSummonStep are completed, for triggering an event |
 | [`Duel.SpecialSummonStep`](/api/functions/Duel/SpecialSummonStep) | `imported_from_dataeditorx` | 779 | This function is Duel.SpecialSummon decomposition process, only a special summon a card c This function is used for an effect while simultaneously calling multiple car... |
 | [`Card.IsPreviousControler`](/api/functions/Card/IsPreviousControler) | `imported_from_dataeditorx` | 761 | Check if card c's previous controller was player |
@@ -182,7 +168,21 @@ Sorted by current script usage count so the most visible function pages are revi
 | [`Card.GetReasonPlayer`](/api/functions/Card/GetReasonPlayer) | `imported_from_dataeditorx` | 167 | Returns the player that caused the position of c to change |
 | [`Group.SelectUnselect`](/api/functions/Group/SelectUnselect) | `imported_from_dataeditorx` | 167 | Have player select 1 card from cg to add to sg and return the selected card btok indicates whether the confirm selection button is available, cancelable indicates whet... |
 | [`Card.GetAttribute`](/api/functions/Card/GetAttribute) | `imported_from_dataeditorx` | 166 | Returns the current attribute of c Note: For some multi-attribute monsters such as light and dark dragon, the return value of this function may be a combination of sev... |
-| ...and 460 more |  |  |  |
+| [`Effect.GetOwnerPlayer`](/api/functions/Effect/GetOwnerPlayer) | `imported_from_dataeditorx` | 165 | Returns the OwnerPlayer property, which is typically the controller of the Owner |
+| [`Card.GetOriginalType`](/api/functions/Card/GetOriginalType) | `imported_from_dataeditorx` | 162 | Returns the type of card entry for c |
+| [`Card.IsAttack`](/api/functions/Card/IsAttack) | `imported_from_dataeditorx` | 161 | Check if card c's ATK is atk1 [, or atk2...], returns false if c is not a monster card or not in LOCATION_MZONE |
+| [`Duel.GetCurrentChain`](/api/functions/Duel/GetCurrentChain) | `imported_from_dataeditorx` | 161 | Returns the chain number currently being processed |
+| [`Auxiliary.ExceptThisCard`](/api/functions/Auxiliary/ExceptThisCard) | `imported_from_dataeditorx` | 160 | If e:GetHandler() is related to effect e, return e:GetHandler(); otherwise return nil function aux.ExceptThisCard(e) local c=e:GetHandler() if c:IsRelateToEffect(e) th... |
+| [`Group.CreateGroup`](/api/functions/Group/CreateGroup) | `imported_from_dataeditorx` | 160 | Create a new empty deck |
+| [`Card.GetReasonCard`](/api/functions/Card/GetReasonCard) | `imported_from_dataeditorx` | 157 | Returns the card that caused the position of c to change This function is only valid when a card is destroyed by a battle, because the superior call is released, or be... |
+| [`Duel.IsChainDisablable`](/api/functions/Duel/IsChainDisablable) | `imported_from_dataeditorx` | 156 | Check chainC effect can be invalid |
+| [`Duel.GetControl`](/api/functions/Duel/GetControl) | `imported_from_dataeditorx` | 155 | Let players get control of the player, the return value indicates success |
+| [`Card.GetOverlayGroup`](/api/functions/Card/GetOverlayGroup) | `imported_from_dataeditorx` | 154 | Returns the currently stacked deck |
+| [`Card.IsAttackPos`](/api/functions/Card/IsAttackPos) | `imported_from_dataeditorx` | 154 | Check whether c is an attack |
+| [`Card.IsCanChangePosition`](/api/functions/Card/IsCanChangePosition) | `imported_from_dataeditorx` | 153 | Check if c can have its battle position changed by an effect |
+| [`Duel.ConfirmDecktop`](/api/functions/Duel/ConfirmDecktop) | `imported_from_dataeditorx` | 151 | Confirm the player card group above count cards |
+| [`Card.GetEquipTarget`](/api/functions/Card/GetEquipTarget) | `imported_from_dataeditorx` | 150 | Returns the current artefact object |
+| ...and 446 more |  |  |  |
 
 ## Raw Chinese In English Fields
 

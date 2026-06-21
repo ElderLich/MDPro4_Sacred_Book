@@ -3,12 +3,24 @@
 ## Signature
 
 ```lua
-Group.GetNext(Group g) -> Card
+Group.GetNext(Group g) -> Card|nil
 ```
 
 ## Description
 
-Point the pointer to the next card and return the card, or nil if it does not exist
+Advances g's internal iterator and returns the next card, or nil when there are no more cards.
+
+## How To Use It
+
+`GetNext` belongs to the `GetFirst` iteration pattern. It advances the same internal pointer and returns nil after the final card.
+
+```lua
+for tc in aux.Next(g) do
+    -- aux.Next wraps GetFirst/GetNext
+end
+```
+
+When you only need the number of cards, use `#g` or `g:GetCount()` instead of iterating.
 
 ## Parameters
 
@@ -16,7 +28,7 @@ Point the pointer to the next card and return the card, or nil if it does not ex
 
 ## Returns
 
-- `Card`
+- `Card|nil`
 
 ## Source
 

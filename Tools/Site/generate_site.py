@@ -667,6 +667,8 @@ def write_vitepress_config(featured: list[dict[str, object]]) -> None:
         "          items: [",
         "            { text: 'Script Explorer', link: '/tools/script-explorer' },",
         "            { text: 'Translation Review', link: '/tools/translation-review' },",
+        "            { text: 'Source Plan', link: '/tools/source-plan' },",
+        "            { text: 'Page Analysis', link: '/tools/page-analysis' },",
         "          ],",
         "        },",
         "      ],",

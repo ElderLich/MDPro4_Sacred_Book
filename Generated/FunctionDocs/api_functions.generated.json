@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-06-21T22:13:58+00:00",
+    "generated_at": "2026-06-21T22:38:11+00:00",
     "workspace": "D:\\Programs\\GitHub\\MDPro3_Sacred_Book",
     "dataeditorx_data": "D:\\Programs\\GitHub\\DataEditorX\\DataEditorX\\data",
     "mdpro3_locales": "D:\\Programs\\GitHub\\MDPro3_Data\\Data\\locales",
@@ -7815,14 +7815,13 @@
         }
       ],
       "description_zh": [
-        "检查c是否可以被玩家sumplayer用效果e[以sumtype方式和sumpos表示形式]特殊召唤[到玩家 toplayer 的区域zone]",
-        "如果nocheck是true则不检查c的召唤条件，如果nolimit是true则不检查c的苏生限制"
+        "检查c是否可以用效果e和给定的召唤参数进行特殊召唤。"
       ],
       "description_en": [
-        "Check whether c can be sumplayer with the effect of the player e to sumtype form sumpos special summon to target_player field",
-        "If nocheck is true, the call condition of c is not checked, and if nolimit is true, then the limit of c is not checked"
+        "Checks whether c can be Special Summoned by effect e using sumtype, sumplayer, sumpos, target player, and optional zone.",
+        "If nocheck is true, c's Summoning condition is skipped. If nolimit is true, c's revive limit or proper-Summon limit is skipped."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
@@ -7837,7 +7836,8 @@
       ],
       "aliases": [],
       "tags": [
-        "core-binding"
+        "core-binding",
+        "core-doc-override"
       ],
       "core_binding": true,
       "core_handler": "card_is_can_be_special_summoned"
@@ -8300,12 +8300,12 @@
         }
       ],
       "description_zh": [
-        "检查c的卡号是否是 code1[, 或者为 code2...]"
+        "检查c的卡号是否匹配任意给定的卡号。"
       ],
       "description_en": [
-        "Check whether the card number c is code1[, or code2 ...]"
+        "Checks whether c's current card code, or alternate code if it has one, matches any supplied code."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
@@ -8320,7 +8320,8 @@
       ],
       "aliases": [],
       "tags": [
-        "core-binding"
+        "core-binding",
+        "core-doc-override"
       ],
       "core_binding": true,
       "core_handler": "card_is_code"
@@ -18733,22 +18734,18 @@
       "params": [],
       "returns": [
         {
-          "type": "Card",
+          "type": "Card|nil",
           "description": ""
-        },
-        {
-          "type": "...",
-          "description": "Card"
         }
       ],
       "description_zh": [
-        "返回当前连锁的所有的对象卡，一般只有一个对象时使用",
-        "##多个对象也能使用，剩下的对象依次按顺序返回，但是很容易记错对象的顺序，所以不建议对多个对象使用"
+        "返回当前连锁登记的对象卡。"
       ],
       "description_en": [
-        "Returns all linked object cards that are normally only used when an object is used"
+        "Returns the first target card currently recorded for the resolving Chain.",
+        "If multiple target cards were recorded, the remaining target cards are returned as additional values in recorded order."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libduel.cpp",
@@ -18763,7 +18760,8 @@
       ],
       "aliases": [],
       "tags": [
-        "core-binding"
+        "core-binding",
+        "core-doc-override"
       ],
       "core_binding": true,
       "core_handler": "duel_get_first_target"
@@ -19364,15 +19362,13 @@
         }
       ],
       "description_zh": [
-        "过滤函数，返回以player来看的指定位置满足过滤条件f并且不等于ex的卡",
-        "s代表以player来看的自己的位置，o代表以player来看的对方的位置",
-        "第6个参数开始为额外参数"
+        "返回以player来看指定位置中满足f且不等于ex的卡组成的Group。"
       ],
       "description_en": [
-        "Filter function to return to the specified location to meet the filter condition f and not equal to the ex card",
-        "The sixth parameter starts as an extra parameter"
+        "Returns a Group containing cards from the specified locations that satisfy filter f and are not excluded by ex.",
+        "s is player's own location mask and o is the opponent's location mask from that player's viewpoint. Extra arguments after ex are passed to f."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libduel.cpp",
@@ -19387,7 +19383,8 @@
       ],
       "aliases": [],
       "tags": [
-        "core-binding"
+        "core-binding",
+        "core-doc-override"
       ],
       "core_binding": true,
       "core_handler": "duel_get_matching_group"
@@ -21358,14 +21355,13 @@
         }
       ],
       "description_zh": [
-        "基本同Duel.IsExistingMatchingCard ，不同之处在于需要追加判定卡片是否能成为当前正在处理的效果的对象"
+        "检查指定位置是否存在足够数量、满足f且可以成为当前效果对象的卡。"
       ],
       "description_en": [
-        "Filter function to check whether there is at least the specified number of positions to meet the filter conditions f and not equal ex",
-        "And can become a card of an object that is currently being processed",
-        "The seventh argument starts as an extra parameter"
+        "Checks whether the specified locations contain at least count cards that satisfy filter f, are not excluded by ex, and can be targeted by the currently handled effect.",
+        "Use this in Target callbacks when the card must become an official effect target."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libduel.cpp",
@@ -21380,7 +21376,8 @@
       ],
       "aliases": [],
       "tags": [
-        "core-binding"
+        "core-binding",
+        "core-doc-override"
       ],
       "core_binding": true,
       "core_handler": "duel_is_existing_target"
@@ -24972,15 +24969,13 @@
         }
       ],
       "description_zh": [
-        "基本同Duel.SelectMatchingCard ，不同之处在于此函数会同时将当前正在处理的连锁的对象设置成选择的卡"
+        "选择满足条件的对象卡，并把选择结果登记为当前连锁的对象。"
       ],
       "description_en": [
-        "Filter function, so that player sel_player select the specified location to meet the filter condition f and not equal ex",
-        "And can be the min-max card of the object that is currently processing the effect",
-        "The ninth parameter starts as an extra parameter",
-        "This function sets the currently locked object to the selected card at the same time"
+        "Lets sel_player choose min to max cards that satisfy filter f, are not excluded by ex, and can be targeted by the currently handled effect.",
+        "The selected cards are also registered as the current Chain's target cards."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libduel.cpp",
@@ -24995,7 +24990,8 @@
       ],
       "aliases": [],
       "tags": [
-        "core-binding"
+        "core-binding",
+        "core-doc-override"
       ],
       "core_binding": true,
       "core_handler": "duel_select_target"
@@ -26577,16 +26573,13 @@
         }
       ],
       "description_zh": [
-        "让玩家 sumplayer 以sumtype方式，pos表示形式把targets特殊召唤到target_player场上[的区域 zone]",
-        "如果nocheck为true则无视卡的召唤条件，如果nolimit为true则无视卡的苏生限制",
-        "返回值是特殊召唤成功的卡的数量"
+        "把targets特殊召唤到target_player场上，并返回成功特殊召唤的数量。"
       ],
       "description_en": [
-        "Let player player to sumtype way, pos that special targets to target_player target field",
-        "If nocheck is true, the card's calling condition is disregarded. If nolimit is true,",
-        "The return value is the number of cards that were successfully summoned"
+        "Special Summons targets to target_player's field in position pos and returns the number of cards successfully Summoned.",
+        "sumplayer is the player performing the Summon and sumtype records the Summon type. nocheck skips Summoning-condition checks; nolimit skips revive-limit checks."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libduel.cpp",
@@ -26601,7 +26594,8 @@
       ],
       "aliases": [],
       "tags": [
-        "core-binding"
+        "core-binding",
+        "core-doc-override"
       ],
       "core_binding": true,
       "core_handler": "duel_special_summon"
@@ -29169,19 +29163,14 @@
           "description": ""
         }
       ],
-      "returns": [
-        {
-          "type": "nil",
-          "description": ""
-        }
-      ],
+      "returns": [],
       "description_zh": [
-        "设置Cost属性"
+        "设置效果e的Cost函数。"
       ],
       "description_en": [
-        "Set the Cost property"
+        "Sets e's cost callback. For activated effects, the callback checks whether the cost can be paid and then pays it."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libeffect.cpp",
@@ -29196,7 +29185,8 @@
       ],
       "aliases": [],
       "tags": [
-        "core-binding"
+        "core-binding",
+        "core-doc-override"
       ],
       "core_binding": true,
       "core_handler": "effect_set_cost"
@@ -29823,37 +29813,15 @@
           "description": ""
         }
       ],
-      "returns": [
-        {
-          "type": "nil",
-          "description": ""
-        }
-      ],
+      "returns": [],
       "description_zh": [
-        "为效果e设置Target Range属性",
-        "s_range指影响的我方区域",
-        "o_range值影响的对方区域",
-        "如果property属性中指定了EFFECT_FLAG_ABSOLUTE_RANGE标志，",
-        "那么s_range指玩家1受到影响的区域，o_range指玩家2受到影响的区域",
-        "如果这是一个召唤(覆盖)/限制召唤(覆盖)/特殊召唤手续",
-        "(EFFECT_SUMMON_PROC/EFFECT_LIMIT_SUMMON_PROC/EFFECT_SPSUMMON_PROC等)的效果，",
-        "并且property指定了EFFECT_FLAG_SPSUM_PARAM标志，",
-        "那么s_range表示特殊召唤到的哪个玩家的场地，",
-        "o_range表示可选择的表示形式"
+        "设置效果e的Target Range属性。"
       ],
       "description_en": [
-        "Set the Target Range property for effect e",
-        "S_range refers to our area of ​​influence",
-        "The o_range value affects the partner area",
-        "If the EFFECT_FLAG_ABSOLUTE_RANGE flag is specified in the property property,",
-        "Then s_range refers to the player 1 affected area, o_range refers to player 2 affected area",
-        "If this is a call (cover) / limit call (cover) / special call procedure",
-        "(EFFECT_SUMMON_PROC / EFFECT_LIMIT_SUMMON_PROC / EFFECT_SPSUMMON_PROC, etc.)",
-        "And the property specifies the EFFECT_FLAG_SPSUM_PARAM flag,",
-        "Then s_range that special summoned to the players of the venue,",
-        "O_range represents a selectable representation"
+        "Sets e's target range fields.",
+        "For most field effects, s_range is the affected locations on the handler's controller's side and o_range is the affected locations on the opponent's side. With EFFECT_FLAG_ABSOLUTE_RANGE, they mean player 0 and player 1 instead. With EFFECT_FLAG_SPSUM_PARAM, they store Special Summon destination player and position."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libeffect.cpp",
@@ -29868,7 +29836,8 @@
       ],
       "aliases": [],
       "tags": [
-        "core-binding"
+        "core-binding",
+        "core-doc-override"
       ],
       "core_binding": true,
       "core_handler": "effect_set_target_range"
@@ -30827,14 +30796,13 @@
         }
       ],
       "description_zh": [
-        "过滤函数，从g中筛选满足筛选条件f并且不等于ex的卡",
-        "从第4个参数开始为额外参数"
+        "从g中筛选满足f且不等于ex的卡，并返回新的Group。"
       ],
       "description_en": [
-        "The filter function filters the card from g that satisfies the filter condition f and is not equal to ex",
-        "Starting from the 4th parameter as an additional parameter"
+        "Returns a new Group containing cards from g that satisfy filter f and are not excluded by ex.",
+        "Extra arguments after ex are passed to f after the card argument."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libgroup.cpp",
@@ -30849,7 +30817,8 @@
       ],
       "aliases": [],
       "tags": [
-        "core-binding"
+        "core-binding",
+        "core-doc-override"
       ],
       "core_binding": true,
       "core_handler": "group_filter"
@@ -31215,19 +31184,17 @@
       ],
       "returns": [
         {
-          "type": "Card",
+          "type": "Card|nil",
           "description": ""
         }
       ],
       "description_zh": [
-        "返回g中第一张卡，并重置当前指针到g中第一张卡",
-        "如果g中不存在卡则返回nil"
+        "返回g中的第一张卡，并把g的迭代指针重置到第一张卡。"
       ],
       "description_en": [
-        "Returns the first card in g and resets the current pointer to the first card in g",
-        "Returns nil if card does not exist in g"
+        "Returns the first card in g and resets g's internal iterator to that card. Returns nil when g is empty."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libgroup.cpp",
@@ -31242,7 +31209,8 @@
       ],
       "aliases": [],
       "tags": [
-        "core-binding"
+        "core-binding",
+        "core-doc-override"
       ],
       "core_binding": true,
       "core_handler": "group_get_first"
@@ -31389,17 +31357,17 @@
       ],
       "returns": [
         {
-          "type": "Card",
+          "type": "Card|nil",
           "description": ""
         }
       ],
       "description_zh": [
-        "使指针指向下一张卡并返回这张卡，如果不存在则返回nil"
+        "把g的迭代指针移动到下一张卡并返回该卡。"
       ],
       "description_en": [
-        "Point the pointer to the next card and return the card, or nil if it does not exist"
+        "Advances g's internal iterator and returns the next card, or nil when there are no more cards."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libgroup.cpp",
@@ -31414,7 +31382,8 @@
       ],
       "aliases": [],
       "tags": [
-        "core-binding"
+        "core-binding",
+        "core-doc-override"
       ],
       "core_binding": true,
       "core_handler": "group_get_next"
@@ -31568,14 +31537,13 @@
         }
       ],
       "description_zh": [
-        "过滤函数，检查g中是否存在至少count张满足筛选条件f并且不等于ex的卡",
-        "从第5个参数开始为额外参数"
+        "检查g中是否存在至少count张满足f且不等于ex的卡。"
       ],
       "description_en": [
-        "Filter function to check if there is at least count of cards in g that satisfy the filter condition f and not equal to ex",
-        "Starting from the 5th parameter as an additional parameter"
+        "Checks whether at least count cards in g satisfy filter f and are not excluded by ex.",
+        "Extra arguments after ex are passed to f after the card argument."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libgroup.cpp",
@@ -31590,7 +31558,8 @@
       ],
       "aliases": [],
       "tags": [
-        "core-binding"
+        "core-binding",
+        "core-doc-override"
       ],
       "core_binding": true,
       "core_handler": "group_is_exists"
@@ -31960,12 +31929,12 @@
         }
       ],
       "description_zh": [
-        "让玩家player从g中选择min-max张不等于ex的卡"
+        "让玩家player从g中选择min到max张卡。"
       ],
       "description_en": [
-        "Let player player from g select the min-max Zhang is not equal to the ex card"
+        "Lets player choose min to max cards from g, optionally excluding ex, and returns the selected Group."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libgroup.cpp",
@@ -31980,7 +31949,8 @@
       ],
       "aliases": [],
       "tags": [
-        "core-binding"
+        "core-binding",
+        "core-doc-override"
       ],
       "core_binding": true,
       "core_handler": "group_select"

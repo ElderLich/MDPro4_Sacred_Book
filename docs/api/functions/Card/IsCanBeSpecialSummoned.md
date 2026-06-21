@@ -8,8 +8,22 @@ Card.IsCanBeSpecialSummoned(Card c, Effect e, int sumtype, int sumplayer, bool n
 
 ## Description
 
-Check whether c can be sumplayer with the effect of the player e to sumtype form sumpos special summon to target_player field
-If nocheck is true, the call condition of c is not checked, and if nolimit is true, then the limit of c is not checked
+Checks whether c can be Special Summoned by effect e using sumtype, sumplayer, sumpos, target player, and optional zone.
+If nocheck is true, c's Summoning condition is skipped. If nolimit is true, c's revive limit or proper-Summon limit is skipped.
+
+## How To Use It
+
+Use this in activation checks before selecting a monster to Special Summon.
+
+The parameters should match the later `Duel.SpecialSummon` call as closely as possible: same effect, Summon type, Summon player, target player, position, and zone restrictions.
+
+```lua
+function s.spfilter(c,e,tp)
+    return c:IsCanBeSpecialSummoned(e,0,tp,false,false,POS_FACEUP,tp)
+end
+```
+
+This is only a legality check. It does not reserve a zone or Summon the card.
 
 ## Parameters
 

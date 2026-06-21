@@ -8,8 +8,21 @@ Duel.GetMatchingGroup([function|nil f], int player, int s, int o, [Card|Group|ni
 
 ## Description
 
-Filter function to return to the specified location to meet the filter condition f and not equal to the ex card
-The sixth parameter starts as an extra parameter
+Returns a Group containing cards from the specified locations that satisfy filter f and are not excluded by ex.
+s is player's own location mask and o is the opponent's location mask from that player's viewpoint. Extra arguments after ex are passed to f.
+
+## How To Use It
+
+Use this when you need to keep or further process all matching cards rather than only checking if they exist.
+
+`s` and `o` are location masks from `player`'s point of view. For example, `LOCATION_MZONE,0` means that player's Monster Zone, while `0,LOCATION_MZONE` means the opponent's Monster Zone.
+
+```lua
+local g=Duel.GetMatchingGroup(s.filter,tp,LOCATION_MZONE,LOCATION_MZONE,nil)
+if #g>0 then
+    Duel.HintSelection(g)
+end
+```
 
 ## Parameters
 
