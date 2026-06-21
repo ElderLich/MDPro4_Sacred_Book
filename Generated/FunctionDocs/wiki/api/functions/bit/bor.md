@@ -8,7 +8,7 @@ bit.bor(any a, any b) -> void
 
 ## Description
 
-TODO document.
+A or b
 
 ## Parameters
 

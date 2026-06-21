@@ -8,7 +8,7 @@ Duel.RevealSelectDeckSequence([bool enabled]) -> void
 
 ## Description
 
-启用选择卡组时显示真实序号
+Enables showing the real sequence when selecting cards from the Deck.
 
 ## Parameters
 

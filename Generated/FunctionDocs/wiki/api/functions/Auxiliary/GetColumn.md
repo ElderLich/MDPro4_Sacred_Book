@@ -8,7 +8,7 @@ Auxiliary.GetColumn(Card c, [int p]) -> int
 
 ## Description
 
-Get the column index of card c (from the viewpoint of p)
+Return the column sequence number of card c from player's perspective, excluding the Field Zone; from left to right, columns are 0-4
 
 ## Parameters
 

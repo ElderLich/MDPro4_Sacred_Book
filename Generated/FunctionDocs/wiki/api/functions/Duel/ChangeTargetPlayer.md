@@ -8,7 +8,7 @@ Duel.ChangeTargetPlayer(int chainc, int player) -> void
 
 ## Description
 
-把连锁chainc的对象玩家换成player
+The chain chainc the object player into player
 
 ## Parameters
 

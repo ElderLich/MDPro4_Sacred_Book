@@ -8,9 +8,9 @@ Duel.SpecialSummon(Card|Group targets, int sumtype, int sumplayer, int target_pl
 
 ## Description
 
-让玩家 sumplayer 以sumtype方式，pos表示形式把targets特殊召唤到target_player场上[的区域 zone]
-如果nocheck为true则无视卡的召唤条件，如果nolimit为true则无视卡的苏生限制
-返回值是特殊召唤成功的卡的数量
+Let player player to sumtype way, pos that special targets to target_player target field
+If nocheck is true, the card's calling condition is disregarded. If nolimit is true,
+The return value is the number of cards that were successfully summoned
 
 ## Parameters
 

@@ -8,7 +8,7 @@ Auxiliary.AddFusionProcCodeRep(Card c, int code1, int cc, bool sub, bool insf) -
 
 ## Description
 
-Fusion monster, name * n
+For the c designated cc the same monster for the fusion material, code for the card number
 
 ## Parameters
 

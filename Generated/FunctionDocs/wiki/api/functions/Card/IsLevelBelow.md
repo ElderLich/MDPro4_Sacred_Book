@@ -8,7 +8,7 @@ Card.IsLevelBelow(Card c, int level) -> bool
 
 ## Description
 
-检查c是否是等级level以下（至少为1）
+Check whether c is below the level level (at least 1)
 
 ## Parameters
 

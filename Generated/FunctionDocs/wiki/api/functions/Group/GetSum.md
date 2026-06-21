@@ -8,7 +8,7 @@ Group.GetSum(Group g, function f, ... any) -> int
 
 ## Description
 
-计算g中所有卡的取值的总和，f为为每张卡的取值函数，从第3个参数开始为额外参数
+Calculates the sum of the values ​​of all cards in g, f is the value function for each card, starting with the third parameter as an additional parameter
 
 ## Parameters
 

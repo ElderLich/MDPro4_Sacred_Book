@@ -8,8 +8,8 @@ Group.Merge(Group g1, Group g2) -> void
 
 ## Description
 
-把g2中的所有卡合并到g1，若g1中原本就有属于g2的卡，那些卡将不会重复
-注：g2本身不会发生变化
+Combine all cards in g2 to g1
+Note: g2 itself does not change
 
 ## Parameters
 

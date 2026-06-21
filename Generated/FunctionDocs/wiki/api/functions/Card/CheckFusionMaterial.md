@@ -8,8 +8,7 @@ Card.CheckFusionMaterial(Card c, [Group|nil g], [Card|nil gc], [int chkf], [bool
 
 ## Description
 
-检查场上[或g]是否包含了c需要[必须包含gc在内]的一组融合素材
-##根据c的种类为EFFECT_FUSION_MATERIAL的效果的Condition函数检查
+Check if g contains a set of fusion material that c needs [must contain gc]
 
 ## Parameters
 

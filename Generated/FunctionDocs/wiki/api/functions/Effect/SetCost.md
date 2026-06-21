@@ -8,7 +8,7 @@ Effect.SetCost(Effect e, function cost_func) -> void
 
 ## Description
 
-设置Cost属性
+Set the Cost property
 
 ## Parameters
 

@@ -8,7 +8,7 @@ Card.GetReasonPlayer(Card c) -> int
 
 ## Description
 
-返回导致c的位置变化的玩家
+Returns the player that caused the position of c to change
 
 ## Parameters
 

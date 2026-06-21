@@ -8,7 +8,7 @@ Card.IsCanBeLinkMaterial(Card c, [Card|nil sc]) -> bool
 
 ## Description
 
-检查c是否可以成为[连接怪兽sc的]连接素材,没有指定sc的场合，必须填nil
+Check if c can be used as Link Material [for Link Monster sc]; if sc is not specified, must pass nil
 
 ## Parameters
 

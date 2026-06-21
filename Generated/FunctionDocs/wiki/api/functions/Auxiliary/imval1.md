@@ -8,7 +8,10 @@ Auxiliary.imval1(Effect e, Card c) -> void
 
 ## Description
 
-TODO document.
+Simplified method for the filter function preventing a card from being targeted for attacks, used in effect registration for SetValue
+function aux.imval1(e, c)
+  return not c:IsImmuneToEffect(e)
+end
 
 ## Parameters
 

@@ -8,7 +8,7 @@ Effect.GetLabel(Effect e) -> ...
 
 ## Description
 
-返回Label属性
+Returns the Label property
 
 ## Parameters
 

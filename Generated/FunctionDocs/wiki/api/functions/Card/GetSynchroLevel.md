@@ -8,8 +8,8 @@ Card.GetSynchroLevel(Card c, Card sc) -> int
 
 ## Description
 
-返回c的对于同调怪兽sc的同调用等级
-此函数除了某些特定卡如调节支援士，返回值与Card.GetLevel(c)相同
+Return to the co-ordination of c with the call monster sc with the level
+This function returns the same value as Card.GetLevel(c) except for certain cards such as modems.
 
 ## Parameters
 

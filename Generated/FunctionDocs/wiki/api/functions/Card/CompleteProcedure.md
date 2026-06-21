@@ -8,8 +8,7 @@ Card.CompleteProcedure(Card c) -> void
 
 ## Description
 
-使c完成正规的召唤手续
-##此函数也可通过 c:SetStatus(STATUS_PROC_COMPLETE,true)实现
+So that c to complete the formal call procedures
 
 ## Parameters
 

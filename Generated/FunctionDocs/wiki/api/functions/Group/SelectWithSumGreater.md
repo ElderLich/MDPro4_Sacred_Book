@@ -8,7 +8,7 @@ Group.SelectWithSumGreater(Group g, int player, function f, int sum, ... any) ->
 
 ## Description
 
-让玩家player从g中选取一个子集使子集的特定函数f的和大于等于sum，从第5个参数开始为额外参数
+Let the player player select a subset from g so that the sum of the particular function f of the subset is greater than or equal to sum, starting at the fifth argument as an extra parameter
 
 ## Parameters
 

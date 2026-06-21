@@ -8,7 +8,7 @@ Card.GetLinkType(Card c) -> int
 
 ## Description
 
-返回c用作link素材时的类型（与GetType的区别在于对于魔陷区的怪兽卡，返回其原本类型）
+Return the type of card c when used as Link Material (unlike GetType, for monster cards in the Spell/Trap Zone, it returns their original type)
 
 ## Parameters
 

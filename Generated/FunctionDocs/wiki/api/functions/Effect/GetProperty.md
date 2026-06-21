@@ -8,7 +8,7 @@ Effect.GetProperty(Effect e) -> int,int
 
 ## Description
 
-返回Property属性
+Returns the Property property
 
 ## Parameters
 

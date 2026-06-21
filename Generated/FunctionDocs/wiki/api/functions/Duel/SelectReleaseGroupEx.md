@@ -8,8 +8,7 @@ Duel.SelectReleaseGroupEx(int player, [function|nil f], int min, int max, int re
 
 ## Description
 
-过滤函数，让玩家player从场上选择min-max张满足过滤条件f并且不等于ex的能以原因reason解放的卡，use_hand则包括手卡
-第6个参数开始为额外参数
+Filter function, allowing the player player from the field · hand card selection min-max Zhang does not equal ex to meet the conditions of f can be liberated card (non-superior call)
 
 ## Parameters
 

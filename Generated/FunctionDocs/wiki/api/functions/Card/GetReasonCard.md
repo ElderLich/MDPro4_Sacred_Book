@@ -8,8 +8,8 @@ Card.GetReasonCard(Card c) -> Card
 
 ## Description
 
-返回导致c的位置变化的卡
-此函数仅在某卡被战斗破坏时，因为上级召唤被解放，或者成为特殊召唤使用的素材时有效
+Returns the card that caused the position of c to change
+This function is only valid when a card is destroyed by a battle, because the superior call is released, or becomes a special call to use the material
 
 ## Parameters
 

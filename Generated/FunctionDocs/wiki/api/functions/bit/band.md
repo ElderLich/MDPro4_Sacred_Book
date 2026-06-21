@@ -8,7 +8,7 @@ bit.band(any a, any b) -> void
 
 ## Description
 
-TODO document.
+A and b with the bit
 
 ## Parameters
 

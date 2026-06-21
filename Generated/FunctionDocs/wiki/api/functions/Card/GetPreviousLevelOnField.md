@@ -8,7 +8,7 @@ Card.GetPreviousLevelOnField(Card c) -> int
 
 ## Description
 
-返回c位置变化之前在场上的等级
+Returns the rank before the c position change
 
 ## Parameters
 

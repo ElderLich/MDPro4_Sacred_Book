@@ -8,7 +8,7 @@ Card.GetTextAttack(Card c) -> int
 
 ## Description
 
-返回c的卡片记载的攻击力，返回值是负数表示是"?"
+Returns the attack power recorded on card c
 
 ## Parameters
 

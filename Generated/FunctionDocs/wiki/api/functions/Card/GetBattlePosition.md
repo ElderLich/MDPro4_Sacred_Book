@@ -8,7 +8,7 @@ Card.GetBattlePosition(Card c) -> int
 
 ## Description
 
-返回c在本次战斗发生之前的表示形式
+Returns the representation of c before this battle occurs
 
 ## Parameters
 

@@ -8,7 +8,7 @@ Duel.GetOperatedGroup() -> Group
 
 ## Description
 
-此函数返回之前一次卡片操作实际操作的卡片组。包括
+This function returns a card set that was actually manipulated before a card operation
 Duel.Destroy, Duel.Remove, Duel.SendtoGrave,
 Duel.SendtoHand, Duel.SendtoDeck, Duel.SendtoExtraP, Duel.Release,
 Duel.ChangePosition, Duel.SpecialSummon, Duel.DiscardDeck

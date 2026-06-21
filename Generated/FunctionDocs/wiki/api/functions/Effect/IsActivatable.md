@@ -8,8 +8,7 @@ Effect.IsActivatable(Effect e, int player, [bool neglect_loc], [bool neglect_tar
 
 ## Description
 
-检查效果e能否由player发动
-neglect_loc=true 为不检测发动位置(手卡)， neglect_target=true 为不检测对象要求
+Check whether the effect can be launched by the player
 
 ## Parameters
 

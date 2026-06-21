@@ -8,7 +8,7 @@ Duel.MoveSequence(Card c, int seq) -> void
 
 ## Description
 
-移动c的序号，通常用于在场上换格子或者在卡组中移动到最上方或者最下方
+Move the serial number of c, usually used to change the grid in the field or in the card group to move to the top or bottom
 
 ## Parameters
 

@@ -8,7 +8,7 @@ Duel.GetChainMaterial(int player) -> Effect|nil
 
 ## Description
 
-返回玩家player受到的连锁素材的效果，此函数仅用于融合类卡的效果
+Returns the effect of the chained material that is played by the player. This function is only used to blend the effect of a class card
 
 ## Parameters
 

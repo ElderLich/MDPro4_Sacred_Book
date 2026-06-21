@@ -8,7 +8,16 @@ Card.AssumeProperty(Card c, int assume_type, int assume_value) -> void
 
 ## Description
 
-把c的assume_type的数值当作assume_value使用（基因组斗士）
+Use the value of assume_type c as assume_value (genome fighter)
+Assume_type is the following type
+ASSUME_CODE card number
+The ASSUME_TYPE type
+ASSUME_LEVEL class
+ASSUME_RANK class
+ASSUME_ATTRIBUTE property
+ASSUME_RACE race
+ASSUME_ATTACK Attack power
+ASSUME_DEFENSE Defense
 
 ## Parameters
 

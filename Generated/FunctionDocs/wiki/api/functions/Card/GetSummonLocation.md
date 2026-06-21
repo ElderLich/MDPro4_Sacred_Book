@@ -8,7 +8,7 @@ Card.GetSummonLocation(Card c) -> int
 
 ## Description
 
-返回c的召唤/特殊召唤的位置
+Returns the call position of c
 
 ## Parameters
 

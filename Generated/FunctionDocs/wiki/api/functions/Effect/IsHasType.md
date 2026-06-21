@@ -8,7 +8,7 @@ Effect.IsHasType(Effect e, int type) -> bool
 
 ## Description
 
-检查效果是否属于类型type
+Check if the effect is of type type
 
 ## Parameters
 

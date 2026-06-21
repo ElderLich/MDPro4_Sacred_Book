@@ -8,7 +8,7 @@ Card.IsLinkRace(Card c, int race, [int player]) -> bool
 
 ## Description
 
-检查c[由player连接召唤时]用作连接素材时是否属于种族race
+Check if card c, when used as Link Material [for a Link Summon by player], has Race race
 
 ## Parameters
 

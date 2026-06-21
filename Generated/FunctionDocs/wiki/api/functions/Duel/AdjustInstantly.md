@@ -8,7 +8,7 @@ Duel.AdjustInstantly([Card c]) -> void
 
 ## Description
 
-手动刷新场上[受到卡片c影响]的卡的无效状态
+Manually refreshing the card's inactive state on card [affected by card c]
 
 ## Parameters
 

@@ -8,7 +8,7 @@ Card.GetLeaveFieldDest(Card c) -> int
 
 ## Description
 
-返回c离场时因改变去向的效果（如大宇宙）的目的地
+Returns the destination of an effect (such as the universe) that was changed as a result of departure from c
 
 ## Parameters
 

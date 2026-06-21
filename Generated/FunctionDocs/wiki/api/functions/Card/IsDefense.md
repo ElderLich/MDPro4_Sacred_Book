@@ -8,7 +8,7 @@ Card.IsDefense(Card c, int def, [int atk2], [... int]) -> bool
 
 ## Description
 
-检查c的守备力是否是 def1[, 或者为 def2...]，如果c不是怪兽卡，或者不在 LOCATION_MZONE 则都返回false
+Check if c's DEF is def1 [, or def2...]; returns false if c is not a monster card or not in LOCATION_MZONE
 
 ## Parameters
 

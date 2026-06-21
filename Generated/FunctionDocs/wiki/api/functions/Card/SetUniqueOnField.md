@@ -8,8 +8,8 @@ Card.SetUniqueOnField(Card c, int s, int o, function|int unique_code, [int uniqu
 
 ## Description
 
-设置c以unique_code只能在场上[或怪兽区域或魔陷区域，由unique_location决定]只能存在1张,function 的返回值类型必须是int
-s不为0会检查自己场上的唯一性，o不为0则检查对方场上的唯一性
+Set c to unique_code only in the field [or monster area or magic trap area, determined by the unique_location] can only exist one
+S is not 0 will check the uniqueness of their field, o is not 0 check the other field uniqueness
 
 ## Parameters
 

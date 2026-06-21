@@ -8,7 +8,7 @@ Duel.ChangeAttackTarget([Card|nil c]) -> bool
 
 ## Description
 
-将攻击对象变为c，c为nil表示直接攻击，返回值表示是否成功转移攻击对象
+Will attack the object into c, c for nil that direct attack, the return value indicates whether the successful transfer of attack objects
 
 ## Parameters
 

@@ -8,7 +8,7 @@ Card.GetOriginalLevel(Card c) -> int
 
 ## Description
 
-返回c的卡片记载的等级
+Returns the rank of the card in c
 
 ## Parameters
 

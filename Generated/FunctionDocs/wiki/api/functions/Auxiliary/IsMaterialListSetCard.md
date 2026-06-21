@@ -8,7 +8,7 @@ Auxiliary.IsMaterialListSetCard(Card c, Effect setcode) -> void
 
 ## Description
 
-TODO document.
+Check if card c lists setcode as a material in its material_setcode
 
 ## Parameters
 

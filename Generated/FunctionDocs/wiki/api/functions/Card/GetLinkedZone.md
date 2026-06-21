@@ -8,7 +8,7 @@ Card.GetLinkedZone(Card c, [int player]) -> int
 
 ## Description
 
-返回c的[以 player 来看的场上的]连接区域
+Return the [from player's perspective on the field] Link Zones of card c
 
 ## Parameters
 

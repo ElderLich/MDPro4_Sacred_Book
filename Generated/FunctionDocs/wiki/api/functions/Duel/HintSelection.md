@@ -8,7 +8,7 @@ Duel.HintSelection(Group g) -> void
 
 ## Description
 
-手动为g显示被选为对象的动画效果
+Manually displays the animated effect of the selected object for g and records that the card is selected as the object
 
 ## Parameters
 

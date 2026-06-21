@@ -8,7 +8,7 @@ Effect.GetCategory(Effect e) -> int
 
 ## Description
 
-返回Category属性
+Returns the Category property
 
 ## Parameters
 

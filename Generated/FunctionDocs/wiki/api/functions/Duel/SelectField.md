@@ -8,7 +8,8 @@ Duel.SelectField(int player, int count, int loc1, int loc2, int zone, [int code]
 
 ## Description
 
-让玩家player选择场地。
+Have player select zones; flag1 is the low bit, flag2 is the high bit, together forming the selectable zones; count is the number of zones to choose
+Return the selected zones
 
 ## Parameters
 

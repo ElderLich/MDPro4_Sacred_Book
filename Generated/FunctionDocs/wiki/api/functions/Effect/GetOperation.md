@@ -8,7 +8,7 @@ Effect.GetOperation(Effect e) -> function
 
 ## Description
 
-返回operation属性
+Returns the operation attribute
 
 ## Parameters
 

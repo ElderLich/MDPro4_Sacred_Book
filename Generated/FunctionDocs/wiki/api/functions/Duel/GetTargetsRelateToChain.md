@@ -8,7 +8,7 @@ Duel.GetTargetsRelateToChain() -> Group
 
 ## Description
 
-返回当前连锁所有有关联的对象卡
+Returns all target cards currently related to the Chain.
 
 ## Returns
 

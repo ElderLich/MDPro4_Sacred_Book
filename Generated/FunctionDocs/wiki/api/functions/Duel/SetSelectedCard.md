@@ -8,7 +8,7 @@ Duel.SetSelectedCard(Card|Group cards) -> void
 
 ## Description
 
-设置Duel.CheckWithSum，Group.CheckSubGroup等函数已选择/必须选择的卡片
+Set the card to the selected card for Group.SelectWithSumEqual or Group.SelectWithSumGreater,
 
 ## Parameters
 

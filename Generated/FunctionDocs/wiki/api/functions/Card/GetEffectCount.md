@@ -8,7 +8,7 @@ Card.GetEffectCount(Card c, int code) -> int
 
 ## Description
 
-返回c受到影响的种类是code的效果的数量
+Returns the number of effects that c is affected by the type of code
 
 ## Parameters
 

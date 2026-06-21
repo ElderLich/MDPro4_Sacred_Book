@@ -8,7 +8,7 @@ Card.IsDefenseAbove(Card c, int def) -> bool
 
 ## Description
 
-检查c是否是守备力def以上
+Check c is defensive def above
 
 ## Parameters
 

@@ -8,8 +8,8 @@ Duel.SelectOption(int player, int desc1, ... any) -> int
 
 ## Description
 
-让玩家选择选项，从第二个参数开始，每一个参数代表一条选项
-返回选择的选项的序号(从0开始)
+Let the player select the option, starting with the second argument, where each parameter represents an option
+Returns the serial number of the selected option (0-based)
 
 ## Parameters
 

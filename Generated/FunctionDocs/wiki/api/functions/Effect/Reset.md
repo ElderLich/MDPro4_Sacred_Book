@@ -8,7 +8,7 @@ Effect.Reset(Effect e) -> void
 
 ## Description
 
-把效果e重置，重置之后不可以再使用此效果
+The effect of e reset, reset can not be used after this effect
 
 ## Parameters
 

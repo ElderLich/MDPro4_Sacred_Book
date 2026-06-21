@@ -8,7 +8,7 @@ Card.SetReason(Card c, int reason) -> bool
 
 ## Description
 
-设置c来到当前位置的原因为reason
+Set the reason for card c arriving at its current position to reason
 
 ## Parameters
 

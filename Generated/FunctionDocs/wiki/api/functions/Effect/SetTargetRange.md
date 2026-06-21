@@ -8,16 +8,16 @@ Effect.SetTargetRange(Effect e, int s_range, int o_range) -> void
 
 ## Description
 
-为效果e设置Target Range属性
-s_range指影响的我方区域
-o_range值影响的对方区域
-如果property属性中指定了EFFECT_FLAG_ABSOLUTE_RANGE标志，
-那么s_range指玩家1受到影响的区域，o_range指玩家2受到影响的区域
-如果这是一个召唤(覆盖)/限制召唤(覆盖)/特殊召唤手续
-(EFFECT_SUMMON_PROC/EFFECT_LIMIT_SUMMON_PROC/EFFECT_SPSUMMON_PROC等)的效果，
-并且property指定了EFFECT_FLAG_SPSUM_PARAM标志，
-那么s_range表示特殊召唤到的哪个玩家的场地，
-o_range表示可选择的表示形式
+Set the Target Range property for effect e
+S_range refers to our area of ​​influence
+The o_range value affects the partner area
+If the EFFECT_FLAG_ABSOLUTE_RANGE flag is specified in the property property,
+Then s_range refers to the player 1 affected area, o_range refers to player 2 affected area
+If this is a call (cover) / limit call (cover) / special call procedure
+(EFFECT_SUMMON_PROC / EFFECT_LIMIT_SUMMON_PROC / EFFECT_SPSUMMON_PROC, etc.)
+And the property specifies the EFFECT_FLAG_SPSUM_PARAM flag,
+Then s_range that special summoned to the players of the venue,
+O_range represents a selectable representation
 
 ## Parameters
 

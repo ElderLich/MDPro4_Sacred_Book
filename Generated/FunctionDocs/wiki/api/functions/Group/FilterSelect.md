@@ -8,8 +8,8 @@ Group.FilterSelect(Group g, int player, function f, int min, int max, [Card|Grou
 
 ## Description
 
-过滤函数，让玩家player从g中选择 min-max 张满足筛选条件f并且不等于ex的卡
-从第7个参数开始为额外参数
+Filter function, allowing players to choose from the g player min-max sheets meet the screening conditions f and not equal to the ex card
+Starting with the 7th argument is an additional parameter
 
 ## Parameters
 

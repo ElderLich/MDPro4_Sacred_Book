@@ -8,7 +8,7 @@ Card.GetBaseDefense(Card c) -> int
 
 ## Description
 
-返回c的原本守备力
+Return to the original c of the defense
 
 ## Parameters
 

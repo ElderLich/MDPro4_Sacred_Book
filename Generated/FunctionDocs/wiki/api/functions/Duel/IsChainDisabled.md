@@ -8,7 +8,7 @@ Duel.IsChainDisabled(int chainc) -> bool
 
 ## Description
 
-检查连锁chainc是否已被无效
+Checks whether chainc has already been negated.
 
 ## Parameters
 

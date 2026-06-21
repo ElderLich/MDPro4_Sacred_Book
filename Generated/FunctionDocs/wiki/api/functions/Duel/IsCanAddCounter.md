@@ -8,7 +8,7 @@ Duel.IsCanAddCounter(int player, [int countertype], [int count], [Card c]) -> bo
 
 ## Description
 
-检查玩家player能否向卡片c添加count个countertype类型的指示物，如果 player 不是 0或者1，则返回false
+Check if the player can add count counterstype to card c
 
 ## Parameters
 

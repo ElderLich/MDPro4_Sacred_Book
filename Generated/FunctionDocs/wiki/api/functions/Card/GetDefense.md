@@ -8,7 +8,7 @@ Card.GetDefense(Card c) -> int
 
 ## Description
 
-返回c的当前守备力
+Returns the current defense of c, the return value is negative that is "?"
 
 ## Parameters
 

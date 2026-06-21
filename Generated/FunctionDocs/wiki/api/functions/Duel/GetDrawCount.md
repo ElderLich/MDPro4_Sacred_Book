@@ -8,7 +8,7 @@ Duel.GetDrawCount(int player) -> int
 
 ## Description
 
-返回玩家player每回合的规则抽卡数量
+Returns the player's number of rules drawn per turn
 
 ## Parameters
 

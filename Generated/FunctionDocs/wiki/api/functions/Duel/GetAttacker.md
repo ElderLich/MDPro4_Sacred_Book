@@ -8,7 +8,7 @@ Duel.GetAttacker() -> Card
 
 ## Description
 
-返回此次战斗攻击的卡
+Return the card for this combat attack
 
 ## Returns
 

@@ -8,7 +8,7 @@ Auxiliary.DualNormalCondition(Effect effect) -> void
 
 ## Description
 
-TODO document.
+Check if the double monster e: GetHandler () is considered a normal monster state
 
 ## Parameters
 

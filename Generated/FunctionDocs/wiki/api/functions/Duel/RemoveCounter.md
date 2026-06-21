@@ -8,8 +8,8 @@ Duel.RemoveCounter(int player, int s, int o, int countertype, int count, int rea
 
 ## Description
 
-让玩家player以reason为原因移除场上存在的countertype类型的count个指示物，返回值表示是否成功
-s表示对player来说的己方的可移除指示物的位置，o表示对player来说的对方的可移除指示物的位置
+Causes the player player to remove count objects of the countertype type present on the farm for reason reasons. The return value indicates success
+S represents the position of the player's own removable pointer, o represents the position of the opponent's removable pointer for the player
 
 ## Parameters
 

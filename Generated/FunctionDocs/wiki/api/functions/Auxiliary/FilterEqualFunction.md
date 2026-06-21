@@ -8,7 +8,13 @@ Auxiliary.FilterEqualFunction(function f, Effect value, ... any) -> void
 
 ## Description
 
-TODO document.
+Filter cards satisfying a single filter condition f with value value, returning a function with a bool return type; additional parameters start from the third parameter
+function Auxiliary.FilterEqualFunction(f, value, ...)
+  local ext_params={...}
+  return function(target)
+    return f(target, table.unpack(ext_params))==value
+  end
+end
 
 ## Parameters
 

@@ -8,7 +8,7 @@ Auxiliary.EnableDualAttribute(Card c) -> void
 
 ## Description
 
-TODO document.
+Add double for the c monster attributes
 
 ## Parameters
 

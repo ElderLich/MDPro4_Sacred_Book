@@ -8,7 +8,7 @@ Duel.SetSynchroMaterial(Group g) -> void
 
 ## Description
 
-设置g为需要使用的同调素材
+Set g to be the cohomology material you want to use
 
 ## Parameters
 

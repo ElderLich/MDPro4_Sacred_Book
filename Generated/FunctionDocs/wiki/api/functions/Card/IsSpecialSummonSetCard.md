@@ -8,7 +8,7 @@ Card.IsSpecialSummonSetCard(Card c, ... int) -> bool
 
 ## Description
 
-检查c是否被卡名含有setname的卡特殊召唤
+Checks whether c was Special Summoned by a card whose name includes setname.
 
 ## Parameters
 

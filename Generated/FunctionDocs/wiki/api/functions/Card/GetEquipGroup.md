@@ -8,7 +8,7 @@ Card.GetEquipGroup(Card c) -> Group
 
 ## Description
 
-返回c当前装备着的卡片组
+Returns the current set of cards
 
 ## Parameters
 

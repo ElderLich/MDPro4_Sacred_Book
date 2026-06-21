@@ -8,7 +8,7 @@ Card.ReleaseEffectRelation(Card c, Effect e) -> void
 
 ## Description
 
-手动释放c与效果e的联系
+Manually release the link between c and effect e
 
 ## Parameters
 

@@ -8,7 +8,7 @@ Card.IsFacedown(Card c) -> bool
 
 ## Description
 
-检查c是否是里侧表示
+Check whether c is the backside representation
 
 ## Parameters
 

@@ -8,7 +8,7 @@ Card.GetFusionAttribute(Card c, [int player]) -> int
 
 ## Description
 
-返回c[由player融合召唤时]用作融合素材时的属性
+Return the Attribute of card c when used as Fusion Material [for a Fusion Summon by player]
 
 ## Parameters
 

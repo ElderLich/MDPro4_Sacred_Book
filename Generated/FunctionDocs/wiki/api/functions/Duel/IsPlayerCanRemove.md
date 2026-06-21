@@ -8,7 +8,7 @@ Duel.IsPlayerCanRemove(int player, [Card c]) -> bool
 
 ## Description
 
-检查玩家player是否能除外c
+Check whether the player player except c
 
 ## Parameters
 

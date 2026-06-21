@@ -8,7 +8,7 @@ Card.GetSummonPlayer(Card c) -> int
 
 ## Description
 
-返回召唤/特殊召唤 c 上场的玩家
+Return to Summoner / Special Summoner c Players
 
 ## Parameters
 

@@ -8,7 +8,7 @@ Group.IsContains(Group g, Card c) -> bool
 
 ## Description
 
-检查g中是否存在卡片c
+Check g for card c
 
 ## Parameters
 

@@ -8,7 +8,7 @@ Effect.SetReset(Effect e, int reset_flag, [int reset_count]) -> void
 
 ## Description
 
-设置reset参数
+Set the reset parameter
 
 ## Parameters
 

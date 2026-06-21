@@ -8,7 +8,7 @@ Card.CheckRemoveOverlayCard(Card c, int player, int count, int reason) -> bool
 
 ## Description
 
-检查玩家player能否以reason为原因，至少移除c叠放的count张卡
+Check the player player can be reason for the reason, at least remove the c stacked count cards
 
 ## Parameters
 

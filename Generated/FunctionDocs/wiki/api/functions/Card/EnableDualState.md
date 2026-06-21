@@ -8,7 +8,7 @@ Card.EnableDualState(Card c) -> void
 
 ## Description
 
-把c设置成再召唤状态
+Set c to re-call state
 
 ## Parameters
 

@@ -8,7 +8,7 @@ Card.GetOriginalType(Card c) -> int
 
 ## Description
 
-返回c的卡片记载的类型
+Returns the type of card entry for c
 
 ## Parameters
 

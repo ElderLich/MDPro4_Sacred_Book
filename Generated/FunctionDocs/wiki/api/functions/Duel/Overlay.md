@@ -8,7 +8,7 @@ Duel.Overlay(Card c, Card|Group ocard, [bool adjust]) -> void
 
 ## Description
 
-把ocard作为c的叠放卡叠放
+The ocard as a stack of cards stacked c
 
 ## Parameters
 

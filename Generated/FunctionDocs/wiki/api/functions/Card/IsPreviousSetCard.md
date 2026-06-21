@@ -8,7 +8,7 @@ Card.IsPreviousSetCard(Card c, ... int) -> bool
 
 ## Description
 
-检查c位置变化之前是否是名字含有setname的卡
+Check whether the name c contains a setname before the c position changes
 
 ## Parameters
 

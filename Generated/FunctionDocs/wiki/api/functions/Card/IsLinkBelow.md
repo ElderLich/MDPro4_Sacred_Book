@@ -8,7 +8,7 @@ Card.IsLinkBelow(Card c, int link) -> bool
 
 ## Description
 
-检查c是否连接标记数量是link以下（至少为1）
+Check if card c's Link Marker count is link or lower (at least 1)
 
 ## Parameters
 

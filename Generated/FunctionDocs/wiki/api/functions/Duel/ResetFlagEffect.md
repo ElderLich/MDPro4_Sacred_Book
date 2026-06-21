@@ -8,7 +8,7 @@ Duel.ResetFlagEffect(int player, int code) -> void
 
 ## Description
 
-手动reset玩家player的 code 标识效果
+Manually reset the player player's specific logo effect
 
 ## Parameters
 

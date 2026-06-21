@@ -8,10 +8,9 @@ Duel.GetLocationCount(int player, int location, [int use_player], [int reason], 
 
 ## Description
 
-返回玩家player的场上location可用的[区域 zone 里的]空格数
-location只能是LOCATION_MZONE或者LOCATION_SZONE
-reason为LOCATION_REASON_TOFIELD或LOCATION_REASON_CONTROL
-##第三个第四个额外参数与凯撒斗技场等限制格子的效果有关
+Returns the number of spaces available in the player's field
+Location can only be LOCATION_MZONE or LOCATION_SZONE
+Reason is LOCATION_REASON_TOFIELD or LOCATION_REASON_CONTROL
 
 ## Parameters
 

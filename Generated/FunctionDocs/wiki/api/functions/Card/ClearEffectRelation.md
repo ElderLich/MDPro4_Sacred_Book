@@ -8,7 +8,7 @@ Card.ClearEffectRelation(Card c) -> void
 
 ## Description
 
-清空c所有联系的效果
+Clear all the effects of c contact
 
 ## Parameters
 

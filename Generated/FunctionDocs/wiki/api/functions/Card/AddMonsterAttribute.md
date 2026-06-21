@@ -8,8 +8,8 @@ Card.AddMonsterAttribute(Card c, int type, [int attribute], [int race], [int lev
 
 ## Description
 
-为魔陷卡c添加怪兽数值,type 为怪兽类型，不能是没有等级的怪兽
-注：在数据库中有记录的数值视为原本数值
+Add the monster value to the trap card
+Note: Values ​​recorded in the database are treated as the original value, and are set to zero here
 
 ## Parameters
 

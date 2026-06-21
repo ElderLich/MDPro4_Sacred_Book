@@ -8,9 +8,9 @@ Card.CheckActivateEffect(Card c, bool neglect_con, bool neglect_cost, bool copy_
 
 ## Description
 
-返回c的可以发动时机正确的“卡的发动”的效果，neglect_con=true则无视发动条件，neglect_cost=true则无视发动cost
-copy_info=false或者自由时点的效果则只返回这个效果 e
-否则还返回这个效果的触发时点的信息 e,eg,ep,ev,re,r,rp
+Return to the timing of the launch of the correct c "card launch" effect, ignored_con = true ignoring the launch conditions, ignored_cost = true ignoring the launch cost
+Copy_info = false or the free-time effect only returns the effect
+Otherwise return the effect of the time point for the code when the trigger point information eg, ep, ev, re, r, rp
 
 ## Parameters
 

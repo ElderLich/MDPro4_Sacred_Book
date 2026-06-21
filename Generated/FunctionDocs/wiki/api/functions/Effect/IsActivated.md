@@ -8,7 +8,7 @@ Effect.IsActivated(Effect e) -> bool
 
 ## Description
 
-检查效果e是否是已发动的效果
+Check the effect of e is the effect of starting (chassis)
 
 ## Parameters
 

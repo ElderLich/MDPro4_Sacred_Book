@@ -8,7 +8,7 @@ Card.GetOriginalRace(Card c) -> int
 
 ## Description
 
-返回c的卡片记载的种族
+Returns the c of the card record race
 
 ## Parameters
 

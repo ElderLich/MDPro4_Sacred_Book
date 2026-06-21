@@ -8,7 +8,7 @@ Duel.CheckChainUniqueness() -> bool
 
 ## Description
 
-检查当前连锁中是否存在同名卡的发动，返回true表示无同名卡
+Check the existence of the current chain of the same name card launch, true that no card with the same name
 
 ## Returns
 

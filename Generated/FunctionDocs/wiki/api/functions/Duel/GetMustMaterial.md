@@ -8,7 +8,7 @@ Duel.GetMustMaterial(int player, int ecode) -> Group
 
 ## Description
 
-返回必须作为素材的卡片组
+Returns the group of cards that must be used as material.
 
 ## Parameters
 

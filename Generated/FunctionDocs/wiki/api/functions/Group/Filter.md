@@ -8,8 +8,8 @@ Group.Filter(Group g, function f, [Card|Group|nil ex], ... any) -> Group
 
 ## Description
 
-过滤函数，从g中筛选满足筛选条件f并且不等于ex的卡
-从第4个参数开始为额外参数
+The filter function filters the card from g that satisfies the filter condition f and is not equal to ex
+Starting from the 4th parameter as an additional parameter
 
 ## Parameters
 

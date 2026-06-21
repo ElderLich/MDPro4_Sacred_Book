@@ -8,7 +8,7 @@ Card.GetMutualLinkedGroup(Card c) -> Group
 
 ## Description
 
-返回和c互相连接状态的卡片组
+Return the group of cards mutually linked with card c
 
 ## Parameters
 

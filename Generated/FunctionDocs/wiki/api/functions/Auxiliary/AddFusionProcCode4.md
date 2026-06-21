@@ -8,7 +8,7 @@ Auxiliary.AddFusionProcCode4(Card c, int code1, int code2, int code3, int code4,
 
 ## Description
 
-Fusion monster, name + name + name + name
+For the c designated card number for the code1, code2, code3, code4 monster for the fusion material
 
 ## Parameters
 

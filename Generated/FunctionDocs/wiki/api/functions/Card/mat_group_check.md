@@ -8,7 +8,7 @@ Card.mat_group_check(Group g, int tp) -> bool
 
 ## Description
 
-仪式怪兽的解放过滤条件
+Release group check condition for Ritual Monsters.
 
 ## Parameters
 

@@ -8,7 +8,7 @@ Duel.ConfirmDecktop(int player, int count) -> void
 
 ## Description
 
-确认玩家player卡组最上方count张卡
+Confirm the player card group above count cards
 
 ## Parameters
 

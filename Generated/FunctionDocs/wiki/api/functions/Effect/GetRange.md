@@ -8,7 +8,7 @@ Effect.GetRange(Effect e) -> int
 
 ## Description
 
-返回Range属性
+Return the Range property of effect e
 
 ## Parameters
 

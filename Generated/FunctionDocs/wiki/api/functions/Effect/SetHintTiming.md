@@ -8,7 +8,7 @@ Effect.SetHintTiming(Effect e, int s_time, [int o_time]) -> void
 
 ## Description
 
-设置提示时点，第二个和第三个参数分别表示 自己 和对方的回合
+Set the prompt point
 
 ## Parameters
 

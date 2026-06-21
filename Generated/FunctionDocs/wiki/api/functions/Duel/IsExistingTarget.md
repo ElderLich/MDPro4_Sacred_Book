@@ -8,7 +8,9 @@ Duel.IsExistingTarget([function|nil f], int player, int s, int o, int count, [Ca
 
 ## Description
 
-基本同Duel.IsExistingMatchingCard ，不同之处在于需要追加判定卡片是否能成为当前正在处理的效果的对象
+Filter function to check whether there is at least the specified number of positions to meet the filter conditions f and not equal ex
+And can become a card of an object that is currently being processed
+The seventh argument starts as an extra parameter
 
 ## Parameters
 

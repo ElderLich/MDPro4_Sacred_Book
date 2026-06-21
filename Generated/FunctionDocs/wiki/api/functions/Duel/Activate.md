@@ -8,7 +8,8 @@ Duel.Activate(Effect e) -> void
 
 ## Description
 
-发动效果e（？）
+Activate effect e
+NOTE: The original description includes a question mark (?), indicating potential uncertainty or incomplete information;
 
 ## Parameters
 

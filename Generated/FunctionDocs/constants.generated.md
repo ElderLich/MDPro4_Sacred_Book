@@ -11,6 +11,7 @@ Generated from `Utilities/constant.lua`, with English comments imported from `OL
 | `MAX_COUNTER` | `65535` | max number for adding/removing counters, by card::add_counter(), field::remove_counter() | max number for adding/removing counters, by card::add_counter(), field::remove_counter() |
 | `MAX_PARAMETER` | `0xffff` | Maximum parameter value |  |
 | `MAX_XYZ_LEVEL` | `0x0fff` | Maximum Xyz Level value |  |
+
 ## Locations
 
 | Name | Value | English | Source comment |
@@ -24,12 +25,14 @@ Generated from `Utilities/constant.lua`, with English comments imported from `OL
 | `LOCATION_EXTRA` | `0x40` | Extra Deck | 额外 |
 | `LOCATION_OVERLAY` | `0x80` | Xyz Material | 超量素材 |
 | `LOCATION_ONFIELD` | `0x0c` | Field (LOCATION_MZONE + LOCATION_SZONE) | 场上（LOCATION_MZONE+LOCATION_SZONE） |
+
 ## Locations (for redirect)
 
 | Name | Value | English | Source comment |
 | --- | --- | --- | --- |
 | `LOCATION_DECKBOT` | `0x10001` | Return to the bottom of the Deck | 弹回卡组底部 |
 | `LOCATION_DECKSHF` | `0x20001` | Return to the Deck and shuffle | 弹回卡组并洗牌 |
+
 ## Sequences (for Duel.SendtoDeck)
 
 | Name | Value | English | Source comment |
@@ -37,12 +40,14 @@ Generated from `Utilities/constant.lua`, with English comments imported from `OL
 | `SEQ_DECKTOP` | `0` | Return to the top of the Deck | 弹回卡组顶端 |
 | `SEQ_DECKBOTTOM` | `1` | Return to the bottom of the Deck | 弹回卡组底端 |
 | `SEQ_DECKSHUFFLE` | `2` | Return to the Deck and shuffle (temporarily placed at the bottom before shuffling) | 弹回卡组并洗牌（洗牌前暂时放在底端） |
+
 ## Locations of Spell Cards
 
 | Name | Value | English | Source comment |
 | --- | --- | --- | --- |
 | `LOCATION_FZONE` | `0x100` | Field Zone | 场地区 |
 | `LOCATION_PZONE` | `0x200` | Pendulum Zone | 灵摆区 |
+
 ## Positions
 
 | Name | Value | English | Source comment |
@@ -56,6 +61,7 @@ Generated from `Utilities/constant.lua`, with English comments imported from `OL
 | `POS_ATTACK` | `0x3` | Attack Position | 攻击表示 |
 | `POS_DEFENSE` | `0xc` | Defense Position | 守备表示 |
 | `NO_FLIP_EFFECT` | `0x10000` | Does not activate Flip Effects | 不发动反转效果 |
+
 ## Card Types
 
 | Name | Value | English | Source comment |
@@ -85,6 +91,7 @@ Generated from `Utilities/constant.lua`, with English comments imported from `OL
 | `TYPE_PENDULUM` | `0x1000000` | Pendulum Monster | 灵摆 |
 | `TYPE_SPSUMMON` | `0x2000000` | Special Summon Monster | 特殊召唤 |
 | `TYPE_LINK` | `0x4000000` | Link Monster | 连接 |
+
 ## Combined Types
 
 | Name | Value | English | Source comment |
@@ -92,6 +99,7 @@ Generated from `Utilities/constant.lua`, with English comments imported from `OL
 | `TYPES_TOKEN_MONSTER` | `0x4011` | Token Monster |  |
 | `TYPES_NORMAL_TRAP_MONSTER` | `0x111` | Normal Trap Monster |  |
 | `TYPES_EFFECT_TRAP_MONSTER` | `0x121` | Effect Trap Monster |  |
+
 ## Attributes
 
 | Name | Value | English | Source comment |
@@ -104,6 +112,7 @@ Generated from `Utilities/constant.lua`, with English comments imported from `OL
 | `ATTRIBUTE_LIGHT` | `0x10` | Light | 光 |
 | `ATTRIBUTE_DARK` | `0x20` | Dark | 暗 |
 | `ATTRIBUTE_DIVINE` | `0x40` | Divine | 神 |
+
 ## Races
 
 | Name | Value | English | Source comment |
@@ -135,6 +144,7 @@ Generated from `Utilities/constant.lua`, with English comments imported from `OL
 | `RACE_WYRM` | `0x800000` | Wyrm | 幻龙 |
 | `RACE_CYBERSE` | `0x1000000` | Cyberse | 电子界 |
 | `RACE_ILLUSION` | `0x2000000` | Illusion | 幻想魔 |
+
 ## Reasons
 
 | Name | Value | English | Source comment |
@@ -169,12 +179,14 @@ Generated from `Utilities/constant.lua`, with English comments imported from `OL
 | `REASON_LOST_OVERLAY` | `0x20000000` | Xyz Material lost when Xyz Monster leaves the field | 超量素材随着超量怪兽离场 |
 | `REASON_MAINTENANCE` | `0x40000000` | Maintenance cost | 维持代价 |
 | `REASON_ACTION` | `0x80000000` | Action timing, such as attack declaration | 攻击宣言之际等 |
+
 ## Location Reasons
 
 | Name | Value | English | Source comment |
 | --- | --- | --- | --- |
 | `LOCATION_REASON_TOFIELD` | `0x1` | Default value for Duel.GetLocationCount(), e.g., Kaiser Colosseum | Duel.GetLocationCount()預設值,凱薩競技場 |
 | `LOCATION_REASON_CONTROL` | `0x2` | Used by Card.IsControlerCanBeChanged() | Card.IsControlerCanBeChanged()使用 |
+
 ## Summon Types
 
 | Name | Value | English | Source comment |
@@ -190,6 +202,7 @@ Generated from `Utilities/constant.lua`, with English comments imported from `OL
 | `SUMMON_TYPE_XYZ` | `0x49000000` | Xyz Summon | 超量召唤 |
 | `SUMMON_TYPE_PENDULUM` | `0x4a000000` | Pendulum Summon | 灵摆召唤 |
 | `SUMMON_TYPE_LINK` | `0x4c000000` | Link Summon | 连接召唤 |
+
 ## Summon Values
 
 | Name | Value | English | Source comment |
@@ -206,6 +219,7 @@ Generated from `Utilities/constant.lua`, with English comments imported from `OL
 | `SUMMON_VALUE_DARK_FUSION` | `SUMMON_TYPE_FUSION|0x16` | Dark Fusion summon value |  |
 | `SUMMON_VALUE_FOSSIL_FUSION` | `SUMMON_TYPE_FUSION|0x17` | Fossil Fusion summon value |  |
 | `SUMMON_VALUE_FUTURE_FUSION` | `SUMMON_TYPE_FUSION|0x18` | Future Fusion summon value |  |
+
 ## Status
 
 | Name | Value | English | Source comment |
@@ -242,6 +256,7 @@ Generated from `Utilities/constant.lua`, with English comments imported from `OL
 | `STATUS_FLIP_SUMMON_TURN` | `0x20000000` | Flip Summoned this turn | 在本回合反转召唤 |
 | `STATUS_SPSUMMON_TURN` | `0x40000000` | Special Summoned this turn | 在本回合特殊召唤 |
 | `STATUS_FLIP_SUMMON_DISABLED` | `0x80000000` | Flip Summon negated | 反转召唤被无效 |
+
 ## Assume
 
 | Name | Value | English | Source comment |
@@ -254,6 +269,7 @@ Generated from `Utilities/constant.lua`, with English comments imported from `OL
 | `ASSUME_RACE` | `6` | Race |  |
 | `ASSUME_ATTACK` | `7` | Attack |  |
 | `ASSUME_DEFENSE` | `8` | Defense |  |
+
 ## Link Markers
 
 | Name | Value | English | Source comment |
@@ -266,12 +282,14 @@ Generated from `Utilities/constant.lua`, with English comments imported from `OL
 | `LINK_MARKER_TOP_LEFT` | `0x040` | Top-Left (↖) | ↖ |
 | `LINK_MARKER_TOP` | `0x080` | Top (↑) | ↑ |
 | `LINK_MARKER_TOP_RIGHT` | `0x100` | Top-Right (↗) | ↗ |
+
 ## Counters
 
 | Name | Value | English | Source comment |
 | --- | --- | --- | --- |
 | `COUNTER_WITHOUT_PERMIT` | `0x1000` | Counter that can be placed on non-specific targets | 可以放置在非特定對象的指示物 |
 | `COUNTER_NEED_ENABLE` | `0x2000` | N/A | N/A |
+
 ## Phases
 
 | Name | Value | English | Source comment |
@@ -286,12 +304,14 @@ Generated from `Utilities/constant.lua`, with English comments imported from `OL
 | `PHASE_BATTLE` | `0x80` | Battle Phase End | 战斗阶段結束 |
 | `PHASE_MAIN2` | `0x100` | Main Phase 2 | 主要阶段2 |
 | `PHASE_END` | `0x200` | End Phase | 结束阶段 |
+
 ## Players
 
 | Name | Value | English | Source comment |
 | --- | --- | --- | --- |
 | `PLAYER_NONE` | `2` | Neither player | 2个玩家都不是 |
 | `PLAYER_ALL` | `3` | Both players | 2个玩家都是 |
+
 ## Chain Info
 
 | Name | Value | English | Source comment |
@@ -319,6 +339,7 @@ Generated from `Utilities/constant.lua`, with English comments imported from `OL
 | `CHAININFO_TRIGGERING_RACE` | `0x200000` | Race when the chain occurred | 连锁发生时的种族 |
 | `CHAININFO_TRIGGERING_ATTACK` | `0x400000` | Attack when the chain occurred | 连锁发生时的攻击力 |
 | `CHAININFO_TRIGGERING_DEFENSE` | `0x800000` | Defense when the chain occurred | 连锁发生时的守备力 |
+
 ## Summon Info
 
 | Name | Value | English | Source comment |
@@ -334,6 +355,7 @@ Generated from `Utilities/constant.lua`, with English comments imported from `OL
 | `SUMMON_INFO_DEFENSE` | `0x100` | Summon info: DEF |  |
 | `SUMMON_INFO_REASON_EFFECT` | `0x200` | Summon info: reason Effect |  |
 | `SUMMON_INFO_REASON_PLAYER` | `0x400` | Summon info: reason player |  |
+
 ## ========== Reset ==========	--重置条件（注意：重置条件可以多个相加）
 
 | Name | Value | English | Source comment |
@@ -358,6 +380,7 @@ Generated from `Utilities/constant.lua`, with English comments imported from `OL
 | `RESET_CONTROL` | `0x02000000` | Reset when controller changes | 控制者变更重置 |
 | `RESET_OVERLAY` | `0x04000000` | Reset when used as Xyz Material | 超量叠放重置 |
 | `RESET_MSCHANGE` | `0x08000000` | Reset when moving from Monster Zone to Spell/Trap Zone or vice versa (e.g., move_to_field(), Gem Beasts) | 从怪兽区到魔法区，或者从魔法区到怪兽区(move_to_field()、寶玉獸) |
+
 ## --组合时点
 
 | Name | Value | English | Source comment |
@@ -365,6 +388,7 @@ Generated from `Utilities/constant.lua`, with English comments imported from `OL
 | `RESETS_STANDARD` | `0x1fe0000` | RESET_TOFIELD + RESET_LEAVE + RESET_TODECK + RESET_TOHAND + RESET_TEMP_REMOVE + RESET_REMOVE + RESET_TOGRAVE + RESET_TURN_SET | RESET_TOFIELD+RESET_LEAVE+RESET_TODECK+RESET_TOHAND+RESET_TEMP_REMOVE+RESET_REMOVE+RESET_TOGRAVE+RESET_TURN_SET |
 | `RESETS_REDIRECT` | `0xc7e0000` | RESETS_STANDARD + RESET_OVERLAY + RESET_MSCHANGE - RESET_TOFIELD - RESET_LEAVE (used for EFFECT_LEAVE_FIELD_REDIRECT) | RESETS_STANDARD+RESET_OVERLAY+RESET_MSCHANGE-RESET_TOFIELD-RESET_LEAVE (EFFECT_LEAVE_FIELD_REDIRECT) |
 | `RESETS_WITHOUT_TEMP_REMOVE` | `0x56e0000` | RESETS_STANDARD - RESET_TEMP_REMOVE - RESET_LEAVE + RESET_OVERLAY | RESETS_STANDARD-RESET_TEMP_REMOVE-RESET_LEAVE+RESET_OVERLAY |
+
 ## ========== Types ==========	--效果类型（定义效果触发类型，和codes一起使用）
 
 | Name | Value | English | Source comment |
@@ -384,6 +408,7 @@ Generated from `Utilities/constant.lua`, with English comments imported from `OL
 | `EFFECT_TYPE_XMATERIAL` | `0x1000` | Effect gained by an Xyz Monster when used as Xyz Material (e.g., Zoodiac) | 作为超量素材时超量怪兽获得的效果（十二兽） |
 | `EFFECT_TYPE_GRANT` | `0x2000` | Grants effects to other cards (e.g., Weather Pattern) | 使其他卡片获得效果（天气模样） |
 | `EFFECT_TYPE_TARGET` | `0x4000` | Continuous effect with sustained targets (mainly for Spells/Traps) | 影响持续取的对象的效果（基本只用于魔陷） |
+
 ## ========== Flags ==========	--效果的特殊性质
 
 | Name | Value | English | Source comment |
@@ -427,6 +452,7 @@ Generated from `Utilities/constant.lua`, with English comments imported from `OL
 | `EFFECT_FLAG2_COF` | `0x0002` | Normal Spell can activate outside Main Phase 1 (special handling for Evil Ritual) | 通常魔法卡在MP1以外发动（邪恶的仪式的特殊处理） |
 | `EFFECT_FLAG2_WICKED` | `0x0004` | Attack change for The Wicked Avatar/Dreadroot calculated last | 神之化身/恐惧之源的攻击力变化最后计算 |
 | `EFFECT_FLAG2_OPTION` | `0x0008` | Child Machine | 子機 |
+
 ## ========== Codes ==========	--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)
 
 | Name | Value | English | Source comment |
@@ -693,6 +719,7 @@ Generated from `Utilities/constant.lua`, with English comments imported from `OL
 | `EFFECT_RITUAL_LEVEL_EX` | `374` | Allows monsters without Levels to be used as Ritual Material | 支持使用没有等级的怪兽作为仪式素材 |
 | `EFFECT_DOUBLE_XMATERIAL` | `375` | Counts as 2 materials when Xyz Summoning a monster that requires 3 or more materials | 召唤需3只以上作素材的超量怪兽时可以作为2只数量的素材 |
 | `EFFECT_FLAG_EFFECT` | `0x20000000` | Flag effect created by RegisterFlagEffect() | 标记类效果，即RegisterFlagEffect()创建的效果 |
+
 ## 下面是诱发效果的诱发事件、时点 （如果是TYPE_SINGLE则自己发生以下事件后触发，如果TYPE_FIELD则场上任何卡发生以下事件都触发）
 
 | Name | Value | English | Source comment |
@@ -773,6 +800,7 @@ Generated from `Utilities/constant.lua`, with English comments imported from `OL
 | `EVENT_ADD_COUNTER` | `0x10000` | When adding a counter | 增加指示物时 |
 | `EVENT_REMOVE_COUNTER` | `0x20000` | When removing a counter (A-Counter, Card.RemoveCounter() must manually trigger this event) | 去除指示物时(A指示物)，Card.RemoveCounter()必須手動觸發此事件 |
 | `EVENT_CUSTOM` | `0x10000000` | Custom event | 自訂事件 |
+
 ## Category	效果分类（表示这个效果将要发生什么事，OperationInfo设置了效果分类才能触发针对这一类型发动的卡，如破坏->星尘龙
 
 | Name | Value | English | Source comment |
@@ -813,6 +841,7 @@ Generated from `Utilities/constant.lua`, with English comments imported from `OL
 | `CATEGORY_SSET` | `0x200000000` | Effect that includes Setting a Spell/Trap | 包含盖放魔陷的效果 |
 | `CATEGORY_HANDES_OPPO` | `0x400000000` | Effect that discards the opponent's hand | 捨棄對方手牌效果 |
 | `CATEGORY_HANDES` | `CATEGORY_HANDES_SELF+CATEGORY_HANDES_OPPO` | Discard hand effect |  |
+
 ## Hint
 
 | Name | Value | English | Source comment |
@@ -828,6 +857,7 @@ Generated from `Utilities/constant.lua`, with English comments imported from `OL
 | `HINT_NUMBER` | `9` | Number hint |  |
 | `HINT_CARD` | `10` | Card hint |  |
 | `HINT_ZONE` | `11` | Zone hint |  |
+
 ## Card Hint
 
 | Name | Value | English | Source comment |
@@ -838,6 +868,7 @@ Generated from `Utilities/constant.lua`, with English comments imported from `OL
 | `CHINT_ATTRIBUTE` | `4` | Attribute hint |  |
 | `CHINT_NUMBER` | `5` | Number hint |  |
 | `CHINT_DESC` | `6` | Description hint |  |
+
 ## Opcode
 
 | Name | Value | English | Source comment |
@@ -857,6 +888,7 @@ Generated from `Utilities/constant.lua`, with English comments imported from `OL
 | `OPCODE_ISATTRIBUTE` | `0x40000104` | Check attribute |  |
 | `DOUBLE_DAMAGE` | `-2147483648` | Double damage |  |
 | `HALF_DAMAGE` | `-2147483647` | Half damage |  |
+
 ## Hint Message	--提示消息，显示在窗口的上面
 
 | Name | Value | English | Source comment |
@@ -918,12 +950,14 @@ Generated from `Utilities/constant.lua`, with English comments imported from `OL
 | `HINTMSG_DISABLE` | `573` | Select a card to negate | 请选择要无效的卡 |
 | `HINTMSG_OPERATECARD` | `574` | Select a card to operate | 请选择要操作的卡 |
 | `HINTMSG_FIELD_FIRST` | `575` | Select a card on the field (press Cancel to select a card from another zone) | 请选择场上的卡（按取消可选择其他区域的卡） |
+
 ## Select	--请选择
 
 | Name | Value | English | Source comment |
 | --- | --- | --- | --- |
 | `SELECT_HEADS` | `60` | Heads | 正面 |
 | `SELECT_TAILS` | `61` | Tails | 反面 |
+
 ## Timing	--提示时点，可以给freechain卡片增加自动提示时点
 
 | Name | Value | English | Source comment |
@@ -956,11 +990,13 @@ Generated from `Utilities/constant.lua`, with English comments imported from `OL
 | `TIMING_EQUIP` | `0x2000000` | Equip timing | 装备时点 |
 | `TIMING_BATTLE_STEP_END` | `0x4000000` | Battle Step end timing | 戰鬥步驟結束時 |
 | `TIMING_BATTLED` | `0x8000000` | After damage calculation timing | 伤害计算后时点 |
+
 ## --组合时点
 
 | Name | Value | English | Source comment |
 | --- | --- | --- | --- |
 | `TIMINGS_CHECK_MONSTER` | `0x1c0` | Monster summoned face-up | 怪兽正面上场 |
+
 ## Global flag	--特殊标记
 
 | Name | Value | English | Source comment |
@@ -976,6 +1012,7 @@ Generated from `Utilities/constant.lua`, with English comments imported from `OL
 | `GLOBALFLAG_SELF_TOGRAVE` | `0x100` | Non-chain send to Graveyard check (EFFECT_SELF_TOGRAVE) | 不入連鎖的送墓檢查(EFFECT_SELF_TOGRAVE) |
 | `GLOBALFLAG_SPSUMMON_ONCE` | `0x200` | Can Special Summon only once per turn (Card.SetSPSummonOnce()) | 1回合只能特殊召喚1次(Card.SetSPSummonOnce()) |
 | `GLOBALFLAG_TUNE_MAGICIAN` | `0x400` | Xyz Material check (e.g., Tuning Magician) | 超量素材检查标记（调弦之魔术师） |
+
 ## count_code
 
 | Name | Value | English | Source comment |
@@ -984,6 +1021,7 @@ Generated from `Utilities/constant.lua`, with English comments imported from `OL
 | `EFFECT_COUNT_CODE_DUEL` | `0x20000000` | Duel usage count | 决斗中使用次数 |
 | `EFFECT_COUNT_CODE_CHAIN` | `0x40000000` | Use count within the same Chain | 同一连锁中使用次数 |
 | `EFFECT_COUNT_CODE_SINGLE` | `0x1` | Shared count for multiple effects on the same card | 同一张卡的多个效果公共使用次数 |
+
 ## 特殊选项
 
 | Name | Value | English | Source comment |
@@ -997,6 +1035,7 @@ Generated from `Utilities/constant.lua`, with English comments imported from `OL
 | `DUEL_SIMPLE_AI` | `0x40` | Simple AI (for puzzles) | AI(用于残局) |
 | `DUEL_RETURN_DECK_TOP` | `0x80` | Cards returned to Deck are placed on top (old default behavior in no-shuffle mode) | 回卡组洗切的卡放到卡组最上方（不洗牌模式下曾经的默认行为） |
 | `DUEL_REVEAL_DECK_SEQ` | `0x100` | Show the actual order when selecting cards from the Deck (previous default behavior) | 从卡组选卡显示实际顺序（曾经的默认行为） |
+
 ## Duel rule (Debug.ReloadFieldBegin)
 
 | Name | Value | English | Source comment |
@@ -1004,6 +1043,7 @@ Generated from `Utilities/constant.lua`, with English comments imported from `OL
 | `MASTER_RULE3` | `3` | Master Rule 3 (2014) | Master Rule 3 (2014) |
 | `NEW_MASTER_RULE` | `4` | New Master Rule (2017) | New Master Rule (2017) |
 | `MASTER_RULE_2020` | `5` | Master Rule 2020 | Master Rule 2020 |
+
 ## custom: 1-5,7 (binary: 1-5)
 
 | Name | Value | English | Source comment |
@@ -1015,6 +1055,7 @@ Generated from `Utilities/constant.lua`, with English comments imported from `OL
 | `ACTIVITY_ATTACK` | `5` | Attack |  |
 | `ACTIVITY_BATTLE_PHASE` | `6` | Enter Battle Phase (not available in custom counter) | not available in custom counter |
 | `ACTIVITY_CHAIN` | `7` | Effect activation (only available in custom counter) | only available in custom counter |
+
 ## Special cards
 
 | Name | Value | English | Source comment |
@@ -1022,6 +1063,7 @@ Generated from `Utilities/constant.lua`, with English comments imported from `OL
 | `CARD_MARINE_DOLPHIN` | `78734254` | Marine Dolphin (double name) | 海洋海豚(double name) |
 | `CARD_TWINKLE_MOSS` | `13857930` | Twinkle Moss (double name) | 光輝苔蘚(double name) |
 | `CARD_QUESTION` | `38723936` | Question | 谜题 |
+
 ## Special flag effect id
 
 | Name | Value | English | Source comment |

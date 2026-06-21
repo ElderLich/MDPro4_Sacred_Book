@@ -8,7 +8,7 @@ Card.IsFusionSummonableCard(Card c, [int sum_type]) -> bool
 
 ## Description
 
-检查c是否是可[用 sum_type 方式]融合召唤的卡
+Check if card c can be Fusion Summoned [using sum_type method]
 
 ## Parameters
 

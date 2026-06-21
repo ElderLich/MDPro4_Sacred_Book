@@ -8,7 +8,7 @@ Card.SetMaterial(Card c, [Group|nil g]) -> void
 
 ## Description
 
-把g中的所有卡作为c的素材（上级召唤，特殊召唤）
+The g of all the cards as the c material (superior summon, special summon)
 
 ## Parameters
 

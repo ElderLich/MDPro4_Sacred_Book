@@ -8,7 +8,7 @@ Card.GetAttackedGroupCount(Card c) -> int
 
 ## Description
 
-返回c本回合攻击过的卡片数量
+Returns the number of cards that have been attacked this turn
 
 ## Parameters
 

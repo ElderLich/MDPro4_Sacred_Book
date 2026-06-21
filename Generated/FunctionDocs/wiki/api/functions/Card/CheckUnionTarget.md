@@ -8,7 +8,7 @@ Card.CheckUnionTarget(Card c, Card ec) -> Card
 
 ## Description
 
-检查ec是否为c的有效同盟装备对象。会检查EFFECT_UNION_LIMIT影响和新旧同盟影响。
+Check if ec is a valid Union Equip target for c. Checks for EFFECT_UNION_LIMIT and new/old Union effects.
 
 ## Parameters
 

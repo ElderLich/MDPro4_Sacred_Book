@@ -8,7 +8,7 @@ Auxiliary.TuneMagicianCheckX(Card c, Group sg, Effect ecode) -> void
 
 ## Description
 
-TODO document.
+Exclusive to Tuning Magician (73941492)
 
 ## Parameters
 

@@ -8,7 +8,7 @@ Card.IsHasDefense(Card c) -> bool
 
 ## Description
 
-检查c是否持有守备力
+Checks whether c has DEF.
 
 ## Parameters
 

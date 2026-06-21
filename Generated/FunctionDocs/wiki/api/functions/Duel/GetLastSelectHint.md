@@ -8,7 +8,7 @@ Duel.GetLastSelectHint(int player) -> int
 
 ## Description
 
-返回上次给玩家player发送的HINT_SELECTMSG类型的提示内容
+Returns the last HINT_SELECTMSG hint sent to player.
 
 ## Parameters
 

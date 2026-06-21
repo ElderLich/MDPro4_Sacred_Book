@@ -8,8 +8,8 @@ Duel.AnnounceAttribute(int player, int count, int available) -> int
 
 ## Description
 
-让玩家player从可选的属性中宣言count个属性
-available是所有可选属性的组合值，可以自行组合
+Let the player player declare count attributes from the optional attribute
+Available is the combined value of all optional attributes
 
 ## Parameters
 

@@ -8,7 +8,7 @@ Duel.ShuffleExtra(int player) -> void
 
 ## Description
 
-手动洗切玩家player的额外卡组
+Manually shuffle player's Extra Deck
 
 ## Parameters
 

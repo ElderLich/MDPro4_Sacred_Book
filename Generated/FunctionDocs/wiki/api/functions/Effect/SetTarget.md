@@ -8,7 +8,7 @@ Effect.SetTarget(Effect e, function targ_func) -> void
 
 ## Description
 
-设置Target属性
+Set the Target property
 
 ## Parameters
 

@@ -8,8 +8,8 @@ Card.GetRace(Card c) -> int
 
 ## Description
 
-返回c的当前种族
-注：对某些多种族怪兽如动画效果的魔术猿，此函数的返回值可能是几个种族的组合值
+Returns the current race of c
+Note: For some multi-ethnic monsters such as animation effects of the magic ape, the function of the return value may be a combination of several racial values
 
 ## Parameters
 

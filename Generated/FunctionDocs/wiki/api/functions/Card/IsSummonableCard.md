@@ -8,7 +8,7 @@ Card.IsSummonableCard(Card c) -> bool
 
 ## Description
 
-检查c是否是可通常召唤的卡
+Check whether c is a card that can be called normally
 
 ## Parameters
 

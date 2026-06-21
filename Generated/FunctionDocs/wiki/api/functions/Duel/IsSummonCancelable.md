@@ -8,7 +8,7 @@ Duel.IsSummonCancelable() -> bool
 
 ## Description
 
-返回当前进行特殊召唤的行为是否可以回滚并撤销。
+Return whether the current Special Summon action can be rolled back and canceled
 
 ## Returns
 

@@ -8,8 +8,8 @@ Group.IsExists(Group g, function f, int count, [Card|Group|nil ex], ... any) -> 
 
 ## Description
 
-过滤函数，检查g中是否存在至少count张满足筛选条件f并且不等于ex的卡
-从第5个参数开始为额外参数
+Filter function to check if there is at least count of cards in g that satisfy the filter condition f and not equal to ex
+Starting from the 5th parameter as an additional parameter
 
 ## Parameters
 

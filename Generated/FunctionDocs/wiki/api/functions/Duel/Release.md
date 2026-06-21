@@ -8,9 +8,8 @@ Duel.Release(Card|Group targets, int reason, [int reason_player]) -> int
 
 ## Description
 
-以reason原因解放targets ，返回值是实际解放的数量
-如果reason含有REASON_COST，则不会检查卡片是否不受效果影响
-如果设置reason_player，则视为被玩家reason_player移动
+The reason for the liberation of targets to return the value of the actual liberation of the number of targets
+If the reason contains REASON_COST, it will not check whether the card is not affected by the effect
 
 ## Parameters
 

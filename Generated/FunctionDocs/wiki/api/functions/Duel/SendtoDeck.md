@@ -8,12 +8,10 @@ Duel.SendtoDeck(Card|Group targets, [int|nil player], int seq, int reason, [int 
 
 ## Description
 
-以reason原因把targets送去玩家player的卡组，返回值是实际被操作的数量
-如果player是nil则返回卡的持有者的卡组
-如果seq=0，则是返回卡组最顶端；seq=1则是返回卡组最底端；
-其余情况则是返回最顶端并且标记需要洗卡组
-如果设置reason_player，则视为被玩家reason_player移动
-如果设置send_activating，则可以移动发动中的魔法陷阱卡
+The reason for the targets sent to the players player card group, the return value is the actual number of operations
+If player is nil, the card holder of the card is returned
+If seq = 0, it is the top of the returned card group; seq = 1 is the bottom of the returned card group;
+The rest of the case is to return to the top and mark the need to wash the card group
 
 ## Parameters
 

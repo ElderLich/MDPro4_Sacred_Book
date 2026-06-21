@@ -8,8 +8,8 @@ Card.IsAbleToExtra(Card c) -> bool
 
 ## Description
 
-检查c是否可以送去额外卡组
-对于非融合、同调等额外怪兽或者非灵摆怪兽此函数均返回false
+Check if c can send extra cards
+This function returns false for non-fusion, cohomology, and overdrive cards
 
 ## Parameters
 

@@ -8,8 +8,8 @@ Card.IsXyzSummonable(Card c, [Group|nil mg], [int min], [int max]) -> bool
 
 ## Description
 
-检查是否可以在场上的卡[或mg][中选出 min-max 个XYZ素材]对c进行XYZ召唤手续
-如果mg为nil，此函数与 c:IsSpecialSummonable(SUMMON_TYPE_XYZ)作用相同
+Check whether mg can be selected in the [min-max months] excessive material on the c to call the excess procedure
+If mg is nil, this function has the same effect as Card.IsSpecialSummonable
 
 ## Parameters
 

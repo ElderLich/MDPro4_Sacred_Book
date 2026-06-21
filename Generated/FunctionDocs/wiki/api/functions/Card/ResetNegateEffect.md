@@ -8,7 +8,7 @@ Card.ResetNegateEffect(Card c, [int code1], [... any]) -> void
 
 ## Description
 
-重置c受到的卡号为code1[, code2...]的卡片的效果的影响
+Reset c affected by the effect of cards whose card number is code1, code2 ...
 
 ## Parameters
 

@@ -8,7 +8,7 @@ Card.CreateRelation(Card c1, Card c2, int reset_flag) -> void
 
 ## Description
 
-为c1建立与c2的联系，此联系仅会由于c1发生RESET_EVENT的事件reset
+For c1 established in c2 contact this contact, only because c1 occurred RESET_EVENT the event reset
 
 ## Parameters
 

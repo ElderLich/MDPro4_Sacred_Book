@@ -8,7 +8,7 @@ Card.GetCardTarget(Card c) -> Group
 
 ## Description
 
-返回c当前所有的永续对象
+Returns all currently persistent objects
 
 ## Parameters
 

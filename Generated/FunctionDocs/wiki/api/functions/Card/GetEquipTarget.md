@@ -8,7 +8,7 @@ Card.GetEquipTarget(Card c) -> Card
 
 ## Description
 
-返回c当前的装备对象
+Returns the current artefact object
 
 ## Parameters
 

@@ -8,7 +8,7 @@ Duel.CheckMustMaterial(int player, Group|Card cards, int ecode) -> bool
 
 ## Description
 
-检查卡片组是否满足必须作为素材的条件
+Checks whether the card group satisfies mandatory material requirements.
 
 ## Parameters
 

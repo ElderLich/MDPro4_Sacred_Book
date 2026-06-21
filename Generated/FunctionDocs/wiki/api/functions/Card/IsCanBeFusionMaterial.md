@@ -8,7 +8,7 @@ Card.IsCanBeFusionMaterial(Card c, [Card fc]) -> bool
 
 ## Description
 
-检查c是否可以成为[融合怪兽fc的]融合素材
+Check whether c can become a [fusion monster fc] fusion material, ignore_mon = true does not check whether c is a monster
 
 ## Parameters
 

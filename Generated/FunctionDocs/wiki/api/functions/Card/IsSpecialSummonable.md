@@ -8,7 +8,7 @@ Card.IsSpecialSummonable(Card c, [int sum_type]) -> bool
 
 ## Description
 
-检查是否可以对c[用 sum_type 方式]进行特殊召唤手续
+Check if you can make a special call to c
 
 ## Parameters
 

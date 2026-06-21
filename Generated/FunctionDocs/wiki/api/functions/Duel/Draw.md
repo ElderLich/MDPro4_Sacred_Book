@@ -8,8 +8,8 @@ Duel.Draw(int player, int count, int reason) -> int
 
 ## Description
 
-让玩家player以原因reason抽count张卡，返回实际抽的卡的数量
-如果reason含有REASON_RULE则此次抽卡不受“不能抽卡”的效果的影响
+Let the player play the count card with the reason, and return the number of cards actually drawn
+If the reason contains REASON_RULE the draw is not affected by the "can not draw" effect
 
 ## Parameters
 

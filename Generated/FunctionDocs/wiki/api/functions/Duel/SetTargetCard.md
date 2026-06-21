@@ -8,8 +8,8 @@ Duel.SetTargetCard(Card|Group targets) -> void
 
 ## Description
 
-把当前正在处理的连锁的对象设置成targets
-注，这里的对象指的的广义的对象，包括不取对象的效果可能要处理的对象
+Sets the currently chained objects to targets
+Note that here the object refers to the generalized object, including objects that do not take the effect that the object may have to deal with
 
 ## Parameters
 

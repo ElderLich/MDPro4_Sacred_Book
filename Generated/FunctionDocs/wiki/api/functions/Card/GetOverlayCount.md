@@ -8,7 +8,7 @@ Card.GetOverlayCount(Card c) -> int
 
 ## Description
 
-返回c当前叠放着的卡片数量
+Returns the number of cards currently stacked
 
 ## Parameters
 

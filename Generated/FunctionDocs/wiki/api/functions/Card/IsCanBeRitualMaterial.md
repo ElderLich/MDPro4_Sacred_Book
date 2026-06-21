@@ -8,7 +8,7 @@ Card.IsCanBeRitualMaterial(Card c, [Card|nil sc]) -> bool
 
 ## Description
 
-检查c是否可以作为[仪式怪兽sc的]仪式素材,没有指定sc的场合，必须填nil
+Check whether c can serve as ritual monsters sc sacrifice
 
 ## Parameters
 

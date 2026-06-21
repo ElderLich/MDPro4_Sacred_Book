@@ -8,7 +8,7 @@ Duel.RDComplete() -> void
 
 ## Description
 
-在调用Duel.Damage/Duel.Recover时，若is_step参数为true，则需调用此函数触发时点
+In the call Duel.Damage / Duel.Recover, if is_step parameter is true, you need to call this function when the trigger point
 
 ## Source
 

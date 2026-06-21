@@ -8,7 +8,7 @@ Card.CheckUniqueOnField(Card c, int check_player, [int check_location], [Card|ni
 
 ## Description
 
-检查c在check_player场上的唯一性
+Check the uniqueness of c in the check_player field
 
 ## Parameters
 

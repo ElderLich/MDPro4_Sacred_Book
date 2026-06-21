@@ -8,8 +8,7 @@ Card.EnableReviveLimit(Card c) -> void
 
 ## Description
 
-为c添加苏生限制
-##实际上是不可复制、不会被无效的EFFECT_UNSUMMONABLE_CARD和EFFECT_REVIVE_LIMIT效果
+Add a limit to the cs for c
 
 ## Parameters
 

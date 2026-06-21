@@ -8,7 +8,7 @@ Duel.EnableGlobalFlag(int global_flag) -> void
 
 ## Description
 
-设置全局标记global_flag
+Set the global flag global_flag
 
 ## Parameters
 

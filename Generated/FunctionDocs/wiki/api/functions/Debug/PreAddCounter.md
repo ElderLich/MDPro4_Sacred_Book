@@ -8,7 +8,7 @@ Debug.PreAddCounter(Card c, int counter_type, [int count]) -> void
 
 ## Description
 
-为c添加count个counter_type的指示物
+Add count counters_type counters for c
 
 ## Parameters
 

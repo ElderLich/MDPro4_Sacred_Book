@@ -8,7 +8,10 @@ Auxiliary.tgsval(Effect e, Effect re, int rp) -> void
 
 ## Description
 
-TODO document.
+Simplified method for the filter function preventing being targeted by your own card effects, used in effect registration for SetValue
+function aux.tgsval(e, re, rp)
+  return rp==e:GetHandlerPlayer()
+end
 
 ## Parameters
 

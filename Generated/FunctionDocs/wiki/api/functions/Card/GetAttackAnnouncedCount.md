@@ -8,8 +8,8 @@ Card.GetAttackAnnouncedCount(Card c) -> int
 
 ## Description
 
-返回c本回合攻击宣言的次数
-注：攻击被无效不会被计入攻击过的次数，但是会计入攻击宣言的次数
+Returns the number of times this declaration was asserted
+Note: Attack is invalid will not count the number of attacks, but will be counted into the number of attacks on the Declaration
 
 ## Parameters
 

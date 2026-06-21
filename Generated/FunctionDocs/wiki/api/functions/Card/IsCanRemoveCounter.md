@@ -8,7 +8,7 @@ Card.IsCanRemoveCounter(Card c, int player, int countertype, int count, int reas
 
 ## Description
 
-检查玩家player是否可以以原因reason移除c上的count个countertype类型的指示物
+Check if the player player can remove count counters of type c on c for reason
 
 ## Parameters
 

@@ -8,7 +8,7 @@ Effect.SetProperty(Effect e, int prop1, [int prop2]) -> void
 
 ## Description
 
-设置Property属性
+Set the Property property
 
 ## Parameters
 

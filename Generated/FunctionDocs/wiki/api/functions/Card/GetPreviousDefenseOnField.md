@@ -8,7 +8,7 @@ Card.GetPreviousDefenseOnField(Card c) -> int
 
 ## Description
 
-返回c位置变化之前在场上的守备力
+Returns the defensive power before the c position changes
 
 ## Parameters
 

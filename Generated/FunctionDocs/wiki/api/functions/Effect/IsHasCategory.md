@@ -8,7 +8,7 @@ Effect.IsHasCategory(Effect e, int cate) -> bool
 
 ## Description
 
-检查效果是否含有效果分类cate
+Check whether the effect contains cate
 
 ## Parameters
 

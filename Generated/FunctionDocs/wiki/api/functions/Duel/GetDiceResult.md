@@ -8,7 +8,7 @@ Duel.GetDiceResult() -> int,int,int,int,int
 
 ## Description
 
-返回当前掷骰子的结果
+Returns the result of the current dice
 
 ## Returns
 

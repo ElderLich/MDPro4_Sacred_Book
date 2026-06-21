@@ -8,7 +8,7 @@ Duel.IsBattlePhase() -> bool
 
 ## Description
 
-返回当前的阶段是否为战斗阶段
+Returns whether the current phase is the Battle Phase.
 
 ## Returns
 

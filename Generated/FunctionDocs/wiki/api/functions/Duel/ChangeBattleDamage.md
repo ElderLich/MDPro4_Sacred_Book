@@ -8,7 +8,7 @@ Duel.ChangeBattleDamage(int player, int value, [bool check]) -> void
 
 ## Description
 
-把玩家player在本次战斗中受到的伤害变成value，若 check=false 则原本战斗伤害就算为0也改变伤害
+The player player in this battle by the harm into value, check for false is the original combat damage to 0 also change the damage
 
 ## Parameters
 

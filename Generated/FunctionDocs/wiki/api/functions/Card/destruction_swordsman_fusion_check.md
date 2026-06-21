@@ -8,7 +8,7 @@ Card.destruction_swordsman_fusion_check(int tp, Group sg, Card fc) -> void
 
 ## Description
 
-素材检查（破坏剑士融合）
+Material check for Destruction Swordsman Fusion.
 
 ## Parameters
 

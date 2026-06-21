@@ -8,7 +8,7 @@ Duel.GetReadyChain() -> int
 
 ## Description
 
-返回当前已执行Target函数的连锁个数
+Returns the number of chains whose Target function has already been executed.
 
 ## Returns
 

@@ -8,8 +8,8 @@ Duel.DiscardHand(int player, [function|nil f], int min, int max, int reason, [Ca
 
 ## Description
 
-过滤函数让玩家player选择并以reason原因丢弃满足筛选条件f兵不等于ex的min-max张手卡
-第7个参数开始为额外参数
+Filter function allows the player to select and discard the player to meet the screening conditions f soldiers is not equal to ex min-max Zhang card
+The seventh argument starts as an extra parameter
 
 ## Parameters
 

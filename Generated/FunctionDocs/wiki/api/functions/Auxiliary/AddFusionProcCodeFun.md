@@ -8,7 +8,7 @@ Auxiliary.AddFusionProcCodeFun(Card c, int|table code1, function|table f, int cc
 
 ## Description
 
-Fusion monster, name + condition * n
+For the c designated card number for the code and cc meet the conditions of the monster f fusion material
 
 ## Parameters
 

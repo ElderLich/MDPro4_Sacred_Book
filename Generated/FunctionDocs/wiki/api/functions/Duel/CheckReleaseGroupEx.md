@@ -8,8 +8,7 @@ Duel.CheckReleaseGroupEx(int player, [function|nil f], int count, int reason, bo
 
 ## Description
 
-检查玩家player场上是否存在至少count张满足过滤条件f并且不等于ex的能以原因reason解放的卡，use_hand则包括手卡
-第5个参数开始为额外参数
+Check whether there are at least count cards that can satisfy the filter condition f and are not equal to ex. (For non-superior summoning)
 
 ## Parameters
 

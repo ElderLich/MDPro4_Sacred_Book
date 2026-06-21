@@ -8,8 +8,8 @@ Group.Sub(Group g1, Group g2) -> void
 
 ## Description
 
-从g1中移除属于g2中的卡
-注：g2本身不会发生变化
+Remove the card from g1 that belongs to g2
+Note: g2 itself does not change
 
 ## Parameters
 

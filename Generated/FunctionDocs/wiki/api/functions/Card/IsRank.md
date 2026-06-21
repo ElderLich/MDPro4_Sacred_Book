@@ -8,7 +8,7 @@ Card.IsRank(Card c, int rank1, [int rank2], [... int]) -> bool
 
 ## Description
 
-检查c是否是阶级 rank1[, 或者为 rank2...]
+Check if card c is Rank rank1 [, or rank2...]
 
 ## Parameters
 

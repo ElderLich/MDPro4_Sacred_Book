@@ -8,7 +8,7 @@ Duel.ChangeTargetCard(int chainc, Group g) -> void
 
 ## Description
 
-把连锁chainc的对象换成g
+The chain chainc the object into g
 
 ## Parameters
 

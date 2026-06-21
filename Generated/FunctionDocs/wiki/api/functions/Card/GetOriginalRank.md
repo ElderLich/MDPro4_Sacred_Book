@@ -8,7 +8,7 @@ Card.GetOriginalRank(Card c) -> int
 
 ## Description
 
-返回c的卡片记载的阶级
+Returns the class of the card in c
 
 ## Parameters
 

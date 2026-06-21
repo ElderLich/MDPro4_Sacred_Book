@@ -8,13 +8,11 @@ Duel.ChangePosition(Card|Group targets, int au, [int ad], [int du], [int dd], [b
 
 ## Description
 
-改变targets的表示形式返回实际操作的数量，若只有2个参数，则不管什么表示形式，都变成 第二个参数 代表的形式
-表侧攻击表示 = au
-里侧攻击表示 = ad
-表侧守备表示 = du
-里侧守备表示 = dd
-如果noflip=true则不触发反转效果（但会触发反转时的诱发效果）
-如果setavailable=true则对象之后变成里侧也发动反转效果
+Changing the representation of targets returns the number of actual operations
+The attack on the watch side becomes au, the attack on the inside indicates ad,
+The side of the garage that becomes du, inside the garrison said to become dd
+If noflip = true, the reverse effect will not be triggered (but the effect of inversion will be triggered)
+If setavailable = true then the object will become the back side also launched reversal effect
 
 ## Parameters
 

@@ -8,7 +8,7 @@ Effect.SetLabelObject(Effect e, Card|Group|Effect labelobject) -> void
 
 ## Description
 
-设置LabelObject属性
+Sets the LabelObject property
 
 ## Parameters
 

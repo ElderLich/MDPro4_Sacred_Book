@@ -8,7 +8,7 @@ Duel.CreateToken(int player, int code) -> Card
 
 ## Description
 
-根据code新建一个衍生物并返回，该衍生物的拥有者为player
+Creates a new Token with the passed in parameter value and returns
 
 ## Parameters
 

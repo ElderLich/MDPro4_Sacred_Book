@@ -8,8 +8,8 @@ Debug.AddCard(int code, int owner, int player, int location, int seq, int pos, [
 
 ## Description
 
-添加卡片，将卡号为code的卡片的持有者设置为owner，以表示形式pos放置在player的场上位于location上序号为seq的格子处
-proc=true则完成正规召唤程序(即解除苏生限制)
+Add a card, the card number for the card holder is set to owner, to represent the form of pos placed in the player's field is located in the location on the seq seq grid
+Proc = true then lifted the Soviet students limit
 
 ## Parameters
 

@@ -8,7 +8,7 @@ Duel.IsChainNegatable(int chainc) -> bool
 
 ## Description
 
-检查连锁chainc的发动能否被无效
+Check the chain chainc launch can be invalid
 
 ## Parameters
 

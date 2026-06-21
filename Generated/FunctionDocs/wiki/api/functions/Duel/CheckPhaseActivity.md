@@ -8,7 +8,7 @@ Duel.CheckPhaseActivity() -> bool
 
 ## Description
 
-检查玩家在当前阶段是否有操作（是否处于阶段开始时，如七皇之剑）
+Check the player at the current stage whether the operation (whether at the beginning of the stage, such as the Seven King of the sword)
 
 ## Returns
 

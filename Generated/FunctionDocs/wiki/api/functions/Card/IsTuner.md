@@ -8,8 +8,8 @@ Card.IsTuner(Card c, Card scard) -> bool
 
 ## Description
 
-检查c是否为scard的调整怪兽。
-除了检查TYPE_TUNER以外，还会检查其身上所有能让其变为调整怪兽的效果。
+Checks whether c is a Tuner monster for scard.
+Besides TYPE_TUNER, this also checks effects that can make c be treated as a Tuner.
 
 ## Parameters
 

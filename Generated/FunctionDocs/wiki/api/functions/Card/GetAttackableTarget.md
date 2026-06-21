@@ -8,7 +8,7 @@ Card.GetAttackableTarget(Card c) -> Group,bool
 
 ## Description
 
-返回c可攻击的卡片组以及能否直接攻击
+Returns the attackable card set and whether it can attack directly
 
 ## Parameters
 

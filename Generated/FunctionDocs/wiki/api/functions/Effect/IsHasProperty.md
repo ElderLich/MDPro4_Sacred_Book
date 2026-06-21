@@ -8,7 +8,7 @@ Effect.IsHasProperty(Effect e, int prop1, [int prop2]) -> bool
 
 ## Description
 
-检查效果是否含有标志prop1[和prop2]
+Check if the effect contains the flags prop1 [and prop2]
 
 ## Parameters
 

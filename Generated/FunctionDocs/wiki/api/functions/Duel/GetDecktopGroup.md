@@ -8,7 +8,7 @@ Duel.GetDecktopGroup(int player, int count) -> Group
 
 ## Description
 
-返回玩家player的卡组最上方的count张卡
+Returns the count card at the top of the player's deck
 
 ## Parameters
 

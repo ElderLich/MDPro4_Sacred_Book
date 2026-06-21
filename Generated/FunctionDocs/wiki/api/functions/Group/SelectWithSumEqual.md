@@ -8,7 +8,7 @@ Group.SelectWithSumEqual(Group g, int player, function f, int sum, int min, int 
 
 ## Description
 
-让玩家player从g中选取一个数量为min-max的子集使子集的特定函数的和等于sum，从第7个参数开始为额外参数
+Let the player player select a subset of min-max from g so that the sum of the specific functions of the subset is equal to sum, starting at the 7th argument as an extra parameter
 
 ## Parameters
 

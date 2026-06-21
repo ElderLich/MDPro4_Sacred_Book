@@ -8,8 +8,8 @@ Duel.ChangeAttacker(Card c, [bool ignore_count]) -> void
 
 ## Description
 
-将攻击怪兽变为c
-若 ignore_count=true 则原来的攻击怪兽不视为攻击过
+Will attack the monster into c
+Note: This function will make the original attack monster attack
 
 ## Parameters
 

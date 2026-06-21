@@ -8,7 +8,7 @@ Card.ultimate_fusion_check(int tp, Group sg, Card fc) -> void
 
 ## Description
 
-素材检查（究极融合）
+Material check for Ultimate Fusion.
 
 ## Parameters
 

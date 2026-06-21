@@ -8,7 +8,7 @@ Duel.IsPlayerCanSpecialSummonCount(int player, int count) -> bool
 
 ## Description
 
-检查玩家player能否特殊召唤count次
+Check whether the player player special call count times
 
 ## Parameters
 

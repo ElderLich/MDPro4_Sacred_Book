@@ -8,7 +8,7 @@ Group.__bor(Group|Card left, Group|Card right) -> Group
 
 ## Description
 
-Bitwise-or/union operator for Group/Card operands. It uses the same core handler as Group.__add.
+Code is identical to Group.__add
 
 ## Parameters
 

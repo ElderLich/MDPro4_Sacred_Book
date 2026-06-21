@@ -8,7 +8,8 @@ Duel.GetLinkedGroup(int player, int s_range, int o_range) -> Group
 
 ## Description
 
-返回以玩家player来看的 s_range 和 o_range 区域的处于连接状态的卡片组[其实只要后面2个参数不为0就行，只要不为0，都会变成LOCATION_MZONE]（？）
+Return the group of linked cards in s_range and o_range zones from player's perspective [as long as the last two parameters are not 0, they become LOCATION_MZONE]
+NOTE: The original description includes a question mark (?), indicating potential uncertainty or incomplete information; translated as written
 
 ## Parameters
 

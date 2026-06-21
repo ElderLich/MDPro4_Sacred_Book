@@ -8,7 +8,7 @@ Duel.EquipComplete() -> void
 
 ## Description
 
-在调用Duel.Equip时，若is_step参数为true，则需调用此函数触发时点
+In the call Duel.Equip, if is_step parameter is true, you need to call this function when the trigger point
 
 ## Source
 

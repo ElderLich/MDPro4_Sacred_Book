@@ -1,0 +1,13 @@
+{
+  "name": "mdpro3-sacred-book",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "docs:dev": "vitepress dev Generated/FunctionDocs/wiki",
+    "docs:build": "vitepress build Generated/FunctionDocs/wiki",
+    "docs:preview": "vitepress preview Generated/FunctionDocs/wiki"
+  },
+  "devDependencies": {
+    "vitepress": "^1.6.4"
+  }
+}

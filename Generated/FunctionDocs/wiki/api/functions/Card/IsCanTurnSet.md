@@ -8,7 +8,7 @@ Card.IsCanTurnSet(Card c) -> bool
 
 ## Description
 
-检查c是否可以转成里侧表示
+Check whether c can turn into the inside of that
 
 ## Parameters
 

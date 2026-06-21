@@ -8,7 +8,8 @@ Duel.GetFusionMaterial(int player, [int location]) -> Group,Group
 
 ## Description
 
-返回玩家player可用的用于融合召唤素材的卡片组
+Return the group of cards available to player for Fusion Summon materials
+Includes monsters in hand, on the field, and cards affected by EFFECT_EXTRA_FUSION_MATERIAL
 
 ## Parameters
 

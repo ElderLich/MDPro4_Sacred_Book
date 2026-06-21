@@ -8,8 +8,8 @@ Duel.XyzSummon(int player, Card c, [Group|nil mg], [int min], [int max]) -> void
 
 ## Description
 
-让玩家player用场上的卡[或mg][选min-max个素材]对c进行XYZ召唤手续
-mg非空且min为0则直接把mg全部作为XYZ素材
+Let the player player [from the mg] [choose min-max a material] on the c to call the excess procedure
+Mg is not empty and min is 0 mg directly to all the excess material
 
 ## Parameters
 

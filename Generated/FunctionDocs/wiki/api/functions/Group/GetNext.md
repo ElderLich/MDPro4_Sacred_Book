@@ -8,7 +8,7 @@ Group.GetNext(Group g) -> Card
 
 ## Description
 
-使指针指向下一张卡并返回这张卡，如果不存在则返回nil
+Point the pointer to the next card and return the card, or nil if it does not exist
 
 ## Parameters
 

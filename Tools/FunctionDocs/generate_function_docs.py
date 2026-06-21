@@ -432,7 +432,10 @@ FUNCTION_EN_OVERRIDES = {
         "Cards that are already negated, have no original effects, or are unaffected by e cannot be negated.",
         "The optional third parameter indicates whether this is a monster effect.",
     ],
-    "Card.IsCanBePlacedOnField": ["Checks whether c can be placed onto the field."],
+    "Card.IsCanBePlacedOnField": [
+        "Checks whether c can be placed onto the target player's field.",
+        "Returns false if the target player is invalid, c is forbidden, or placing c there would violate uniqueness checks.",
+    ],
     "Card.IsEffectProperty": ["Checks whether c has an effect matching filter."],
     "Card.IsFaceupEx": ["Checks whether c is face-up; returns true for cards in the hand, Graveyard, Main Deck, and similar hidden/non-field locations."],
     "Card.IsHasDefense": ["Checks whether c has DEF."],
@@ -455,6 +458,7 @@ FUNCTION_EN_OVERRIDES = {
     "Duel.CheckMustMaterial": ["Checks whether the card group satisfies mandatory material requirements."],
     "Duel.GetLastSelectHint": ["Returns the last HINT_SELECTMSG hint sent to player."],
     "Duel.GetMustMaterial": ["Returns the group of cards that must be used as material."],
+    "Duel.GetRitualMaterialEx": ["Returns the group of cards player can use as Ritual Material, including monsters without a Level."],
     "Duel.GetReadyChain": ["Returns the number of chains whose Target function has already been executed."],
     "Duel.GetSynchroMaterial": ["Gets the group of cards player can use as Synchro Material."],
     "Duel.GetSZoneCount": [
@@ -571,7 +575,25 @@ def apply_core_doc_overrides(docs: dict[str, FunctionDoc]) -> None:
 
 
 def normalize_bullet_records(records: dict[str, list[str]]) -> dict[str, list[str]]:
-    return {normalize_api_name(name): lines for name, lines in records.items()}
+    normalized: dict[str, list[str]] = {}
+    for name, lines in records.items():
+        cleaned = clean_imported_description(lines)
+        if cleaned:
+            normalized[normalize_api_name(name)] = cleaned
+    return normalized
+
+
+def clean_imported_description(lines: list[str]) -> list[str]:
+    cleaned: list[str] = []
+    for line in lines:
+        stripped = line.strip()
+        if stripped in {"Parameters:", "Returns:"} or stripped.startswith("Source:"):
+            break
+        cleaned.append(line)
+    meaningful = [line.strip() for line in cleaned if line.strip()]
+    if not meaningful or meaningful[0] in {"TODO document.", "TODO translate."}:
+        return []
+    return cleaned
 
 
 def attach_english(
@@ -584,6 +606,11 @@ def attach_english(
     ]
 
     for doc in docs:
+        if doc.name in FUNCTION_EN_OVERRIDES:
+            doc.description_en = FUNCTION_EN_OVERRIDES[doc.name]
+            doc.english_status = "translated_exact"
+            continue
+
         candidates = [doc.name]
         if doc.namespace == "Auxiliary":
             candidates.append("aux." + doc.short_name)
@@ -602,11 +629,6 @@ def attach_english(
             if matched:
                 break
         if matched:
-            continue
-
-        if doc.name in FUNCTION_EN_OVERRIDES:
-            doc.description_en = FUNCTION_EN_OVERRIDES[doc.name]
-            doc.english_status = "translated_exact"
             continue
 
         if doc.description_zh and all(not re.search(r"[\u3400-\u9fff]", line) for line in doc.description_zh):
@@ -692,11 +714,55 @@ def safe_filename(name: str) -> str:
     return re.sub(r"[^A-Za-z0-9_.-]+", "_", name)
 
 
-def write_wiki_pages(base: Path, docs: Iterable[FunctionDoc]) -> None:
+def write_vitepress_config(base: Path, namespaces: Iterable[str]) -> None:
+    namespace_items = [
+        f"              {{ text: '{namespace}', link: '/api/functions/{safe_filename(namespace)}/' }},"
+        for namespace in sorted(namespaces)
+    ]
+    lines = [
+        "import { defineConfig } from 'vitepress';",
+        "",
+        "export default defineConfig({",
+        "  title: 'MDPro3 Sacred Book',",
+        "  description: 'MDPro3/YGOPro Lua card scripting reference.',",
+        "  cleanUrls: true,",
+        "  themeConfig: {",
+        "    nav: [",
+        "      { text: 'API', link: '/api/' },",
+        "      { text: 'Functions', link: '/api/functions/' },",
+        "      { text: 'Constants', link: '/api/constants' },",
+        "    ],",
+        "    sidebar: {",
+        "      '/api/functions/': [",
+        "        { text: 'Function Index', link: '/api/functions/' },",
+        "        {",
+        "          text: 'Namespaces',",
+        "          collapsed: false,",
+        "          items: [",
+        *namespace_items,
+        "          ],",
+        "        },",
+        "      ],",
+        "      '/api/': [",
+        "        { text: 'API Overview', link: '/api/' },",
+        "        { text: 'Functions', link: '/api/functions/' },",
+        "        { text: 'Constants', link: '/api/constants' },",
+        "      ],",
+        "    },",
+        "  },",
+        "});",
+        "",
+    ]
+    write_text(base / ".vitepress" / "config.mts", "\n".join(lines))
+
+
+def write_wiki_pages(base: Path, docs: Iterable[FunctionDoc], constant_docs: list[ConstantDoc]) -> None:
     index_by_namespace: dict[str, list[FunctionDoc]] = {}
+    docs = list(docs)
     for doc in docs:
         index_by_namespace.setdefault(doc.namespace, []).append(doc)
         page = base / "api" / "functions" / safe_filename(doc.namespace) / f"{safe_filename(doc.short_name)}.md"
+        description = doc.description_en or doc.description_zh or ["TODO document."]
         lines = [
             f"# {doc.name}",
             "",
@@ -709,7 +775,7 @@ def write_wiki_pages(base: Path, docs: Iterable[FunctionDoc]) -> None:
             "## Description",
             "",
         ]
-        lines.extend(doc.description_zh or ["TODO document."])
+        lines.extend(description)
         lines.append("")
         if doc.params:
             lines.extend(["## Parameters", ""])
@@ -730,19 +796,89 @@ def write_wiki_pages(base: Path, docs: Iterable[FunctionDoc]) -> None:
             lines.extend(["## Source", "", f"- `{source.path}:{source.line}`", ""])
         write_text(page, "\n".join(lines).rstrip() + "\n")
 
+    core_count = sum(1 for doc in docs if doc.core_binding)
+    helper_count = sum(
+        1
+        for doc in docs
+        if not doc.core_binding and any(src.origin in {"utility", "procedure"} for src in doc.source_files)
+    )
+    root_lines = [
+        "# MDPro3 Sacred Book",
+        "",
+        "Core-specific Lua scripting reference for MDPro3/YGOPro card scripts.",
+        "",
+        "## Reference",
+        "",
+        "- [API overview](api/)",
+        "- [Function reference](api/functions/)",
+        "- [Constant reference](api/constants)",
+        "",
+        "## Current Snapshot",
+        "",
+        f"- Functions: {len(docs)}",
+        f"- Core-bound functions: {core_count}",
+        f"- Lua helper/procedure functions: {helper_count}",
+        f"- Constants: {len(constant_docs)}",
+        "",
+        "Generated from the local core bindings, function stubs, utility scripts, and DataEditorX locale data.",
+        "",
+    ]
+    write_text(base / "index.md", "\n".join(root_lines).rstrip() + "\n")
+
+    api_lines = [
+        "# API",
+        "",
+        "This API reference is generated for this project's core and helper scripts. It is intentionally kept separate from Project Ignis scrapi-book because the available bindings and helper procedures differ.",
+        "",
+        "## Sections",
+        "",
+        "- [Functions](functions/)",
+        "- [Constants](constants)",
+        "",
+        "## Sources",
+        "",
+        "- `D:\\Programs\\GitHub\\ygopro-core\\lib*.cpp`",
+        "- `Define/def.lua`",
+        "- `Utilities/utility.lua`",
+        "- `Utilities/procedure.lua`",
+        "- `OLD/Utilities/*` for older English notes",
+        "",
+    ]
+    write_text(base / "api" / "index.md", "\n".join(api_lines).rstrip() + "\n")
+
     index_lines = [
         "# Lua API Functions",
         "",
         "Generated from ygopro-core bindings, `Define/def.lua`, `Utilities/utility.lua`, and `Utilities/procedure.lua`.",
         "",
+        "## Namespaces",
+        "",
     ]
     for namespace in sorted(index_by_namespace):
-        index_lines.extend([f"## {namespace}", ""])
-        for doc in sorted(index_by_namespace[namespace], key=lambda d: d.short_name.lower()):
+        namespace_docs = sorted(index_by_namespace[namespace], key=lambda d: d.short_name.lower())
+        index_lines.append(f"- [{namespace}]({safe_filename(namespace)}/) ({len(namespace_docs)})")
+    index_lines.extend(["", "## All Functions", ""])
+    for namespace in sorted(index_by_namespace):
+        namespace_docs = sorted(index_by_namespace[namespace], key=lambda d: d.short_name.lower())
+        namespace_lines = [
+            f"# {namespace}",
+            "",
+            f"{len(namespace_docs)} functions in the `{namespace}` namespace.",
+            "",
+        ]
+        index_lines.extend([f"### {namespace}", ""])
+        for doc in namespace_docs:
             rel = f"{safe_filename(namespace)}/{safe_filename(doc.short_name)}.md"
             index_lines.append(f"- [{doc.name}]({rel})")
+            namespace_lines.append(f"- [{doc.name}]({safe_filename(doc.short_name)}.md)")
         index_lines.append("")
+        write_text(
+            base / "api" / "functions" / safe_filename(namespace) / "index.md",
+            "\n".join(namespace_lines).rstrip() + "\n",
+        )
     write_text(base / "api" / "functions" / "index.md", "\n".join(index_lines).rstrip() + "\n")
+    write_constant_markdown(base / "api" / "constants.md", constant_docs)
+    write_vitepress_config(base, index_by_namespace)
 
 
 CONSTANT_COMMENT_TRANSLATIONS = {
@@ -1118,12 +1254,18 @@ def write_constant_markdown(path: Path, docs: list[ConstantDoc]) -> None:
     for doc in docs:
         section = SECTION_TRANSLATIONS.get(doc.section, doc.section)
         if section != current_section:
+            if current_section is not None:
+                lines.append("")
             current_section = section
             lines.extend([f"## {section}", "", "| Name | Value | English | Source comment |", "| --- | --- | --- | --- |"])
         lines.append(
-            f"| `{doc.name}` | `{doc.value}` | {doc.comment_en or ''} | {doc.comment_zh or ''} |"
+            f"| `{doc.name}` | `{doc.value}` | {markdown_table_cell(doc.comment_en)} | {markdown_table_cell(doc.comment_zh)} |"
         )
     write_text(path, "\n".join(lines).rstrip() + "\n")
+
+
+def markdown_table_cell(value: str) -> str:
+    return (value or "").replace("|", "\\|").replace("\n", "<br>")
 
 
 def write_constant_backlog(path: Path, docs: list[ConstantDoc]) -> None:
@@ -1173,9 +1315,9 @@ def write_function_backlog(path: Path, docs: list[FunctionDoc]) -> None:
         if needs_function_backlog(doc)
     ]
     lines = [
-        "# Function Documentation Backlog",
+        "# Function Documentation And Translation Backlog",
         "",
-        f"Needs documentation: {len(backlog)}",
+        f"Needs documentation or translation: {len(backlog)}",
         "",
     ]
     for doc in backlog:
@@ -1548,7 +1690,7 @@ def main() -> int:
     write_json(json_path, docs, metadata)
     write_compat_file(zh_path, docs, "zh")
     write_compat_file(en_path, docs, "en")
-    write_wiki_pages(wiki_path, docs)
+    write_wiki_pages(wiki_path, docs, constant_docs)
     write_constant_json(constant_json_path, constant_docs, metadata)
     write_constant_english_lua(constant_lua_path, constant_docs)
     write_constant_markdown(constant_md_path, constant_docs)
@@ -1605,7 +1747,11 @@ def main() -> int:
             function_backlog_path,
             comparison_path,
             report_path,
+            wiki_path / "index.md",
+            wiki_path / "api" / "index.md",
             wiki_path / "api" / "functions" / "index.md",
+            wiki_path / "api" / "constants.md",
+            wiki_path / ".vitepress" / "config.mts",
         ],
         workspace,
     )

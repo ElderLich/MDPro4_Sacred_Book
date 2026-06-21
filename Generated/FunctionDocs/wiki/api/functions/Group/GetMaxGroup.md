@@ -8,9 +8,9 @@ Group.GetMaxGroup(Group g, function f, ... any) -> Group,int
 
 ## Description
 
-f为返回一个interger值的函数，从g中筛选出具有最大的f的值的卡
-第2个返回值为这个最大值，从第3个参数开始为额外参数
-要使用第2个返回值注意检查g非空
+F is the function that returns an interger value, and the card with the largest value of f is selected from g
+The second return value is the maximum value, starting with the third parameter as an additional parameter
+To use the second return value Note Check g is not empty
 
 ## Parameters
 

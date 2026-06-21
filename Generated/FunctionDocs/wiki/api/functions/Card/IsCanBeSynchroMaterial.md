@@ -8,7 +8,7 @@ Card.IsCanBeSynchroMaterial(Card c, [Card sc], [Card tuner]) -> bool
 
 ## Description
 
-检查c是否可以成为[以 tuner 为调整的同调怪兽sc的]同调素材
+Check whether c can become a homophonic homophonic monster sc material
 
 ## Parameters
 

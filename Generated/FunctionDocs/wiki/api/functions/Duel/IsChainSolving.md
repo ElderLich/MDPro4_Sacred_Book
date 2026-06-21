@@ -8,7 +8,7 @@ Duel.IsChainSolving() -> bool
 
 ## Description
 
-检查当前是处于连锁处理中，还是不入连锁的效果处理中
+Checks whether the game is currently resolving a Chain or resolving an effect that does not start a Chain.
 
 ## Returns
 

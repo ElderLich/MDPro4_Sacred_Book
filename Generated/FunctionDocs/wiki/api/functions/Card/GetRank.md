@@ -8,7 +8,7 @@ Card.GetRank(Card c) -> int
 
 ## Description
 
-返回c的当前阶级
+Returns the current class of c
 
 ## Parameters
 

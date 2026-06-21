@@ -8,25 +8,25 @@ Duel.GetChainInfo(int chainc, ... any) -> ...
 
 ## Description
 
-返回连锁chainc的信息，如果chainc=0，则返回当前正在处理的连锁的信息
-此函数根据传入的参数个数按顺序返回相应数量的返回值参数可以是:
-CHAININFO_CHAIN_COUNT               连锁序号
-CHAININFO_TRIGGERING_EFFECT         连锁的效果
-CHAININFO_TRIGGERING_PLAYER         连锁的玩家
-CHAININFO_TRIGGERING_CONTROLER      连锁发生位置所属玩家
-CHAININFO_TRIGGERING_LOCATION       连锁发生位置
-CHAININFO_TRIGGERING_SEQUENCE       连锁发生的位置的序号
-CHAININFO_TARGET_CARDS              连锁的对象卡片组
-CHAININFO_TARGET_PLAYER             连锁的对象玩家
-CHAININFO_TARGET_PARAM              连锁的对象参数
-CHAININFO_DISABLE_REASON            连锁被无效的原因效果
-CHAININFO_DISABLE_PLAYER            连锁被无效的原因玩家
-CHAININFO_CHAIN_ID                  连锁的唯一标识
-CHAININFO_TYPE                      连锁卡片的类型（怪兽·魔法·陷阱）
-CHAININFO_EXTTYPE                   连锁卡片的具体类型（例如同调怪兽·永续魔法·反击陷阱）
-举例：
-Duel.GetChainInfo(0,CHAININFO_TRIGGERING_LOCATION,CHAININFO_TARGET_CARDS)
-将会返回当前连锁发生的位置和对象卡
+Returns the chainc information, if chainc = 0, returns the chain of information currently being processed
+This function returns the corresponding number of return values ​​in sequence according to the number of arguments passed in. The arguments can be:
+CHAININFO_CHAIN_COUNT The serial number of the chain
+CHAININFO_TRIGGERING_EFFECT The effect of the chain
+CHAININFO_TRIGGERING_PLAYER
+CHAININFO_TRIGGERING_CONTROLER The player to which the chained position belongs
+CHAININFO_TRIGGERING_LOCATION The location where the chain occurred
+CHAININFO_TRIGGERING_SEQUENCE The number of the position where the chain occurred
+CHAININFO_TARGET_CARDS Chain of object cards
+CHAININFO_TARGET_PLAYER The target player for the chain
+CHAININFO_TARGET_PARAM The object parameters of the chain
+CHAININFO_DISABLE_REASON The chain is invalid for the effect of the effect
+CHAININFO_DISABLE_PLAYER The chain is invalid for the reason the player
+CHAININFO_CHAIN_ID The unique identifier for the chain
+CHAININFO_TYPE Type of Chain Card (Monster, Magic, Trap)
+CHAININFO_EXTTYPE The specific type of chain card (for example, monster, continuous magic, counterattack trap)
+For example:
+Duel.GetChainInfo(0, CHAININFO_TRIGGERING_LOCATION, CHAININFO_TARGET_CARDS)
+This will return the location and object card where the current chain occurred
 
 ## Parameters
 

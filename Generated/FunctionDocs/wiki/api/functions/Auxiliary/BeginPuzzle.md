@@ -8,7 +8,8 @@ Auxiliary.BeginPuzzle(Effect effect) -> void
 
 ## Description
 
-TODO document.
+Start the mess
+At the end of the # # turn, the player's base points become 0
 
 ## Parameters
 

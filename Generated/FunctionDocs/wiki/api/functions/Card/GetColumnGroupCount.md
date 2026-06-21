@@ -8,7 +8,7 @@ Card.GetColumnGroupCount(Card c, [int left], [int right]) -> int
 
 ## Description
 
-用法同上，只是返回的是卡片的数量
+Usage is the same as above, but returns the number of cards
 
 ## Parameters
 

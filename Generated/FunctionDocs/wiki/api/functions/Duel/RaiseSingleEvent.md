@@ -8,7 +8,7 @@ Duel.RaiseSingleEvent(Card ec, int code, Effect re, int r, int rp, int ep, int e
 
 ## Description
 
-以eg,ep,ev,re,r,rp为卡片ec触发一个单体时点 code
+To eg, ep, ev, re, r, rp for the card ec trigger a single point in time
 
 ## Parameters
 

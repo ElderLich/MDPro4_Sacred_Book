@@ -8,7 +8,7 @@ Card.IsStatus(Card c, int status) -> bool
 
 ## Description
 
-检查c是否包含某个状态码
+Check whether c contains a status code
 
 ## Parameters
 

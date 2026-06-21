@@ -8,7 +8,7 @@ Debug.PreSetTarget(Card c, Card target) -> void
 
 ## Description
 
-把target选为c的永续对象
+The target selected as the perpetual object c
 
 ## Parameters
 

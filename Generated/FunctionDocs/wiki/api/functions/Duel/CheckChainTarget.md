@@ -8,7 +8,7 @@ Duel.CheckChainTarget(int chainc, Card c) -> bool
 
 ## Description
 
-检查c是否是连锁chainc的效果的正确的对象
+Check whether c is the correct object for chained chainc effects
 
 ## Parameters
 

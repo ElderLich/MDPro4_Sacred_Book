@@ -8,7 +8,7 @@ Duel.GetLinkedZone(int player) -> int
 
 ## Description
 
-返回以玩家player来看的所有连接区域
+Return all Link Zones from player's perspective
 
 ## Parameters
 

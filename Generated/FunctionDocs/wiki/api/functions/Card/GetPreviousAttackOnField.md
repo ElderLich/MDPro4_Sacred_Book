@@ -8,7 +8,7 @@ Card.GetPreviousAttackOnField(Card c) -> int
 
 ## Description
 
-返回c位置变化之前在场上的攻击力
+Returns the attack power before the c position changes
 
 ## Parameters
 

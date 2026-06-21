@@ -8,7 +8,7 @@ Auxiliary.IsNotDualState(Effect effect) -> void
 
 ## Description
 
-TODO document.
+Antisense of aux.IsDualState
 
 ## Parameters
 

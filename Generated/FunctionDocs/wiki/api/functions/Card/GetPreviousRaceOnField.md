@@ -8,7 +8,7 @@ Card.GetPreviousRaceOnField(Card c) -> int
 
 ## Description
 
-返回c位置变化之前在场上的种族
+Returns the race before the c position changes
 
 ## Parameters
 

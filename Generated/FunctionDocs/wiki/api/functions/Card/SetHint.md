@@ -8,14 +8,14 @@ Card.SetHint(Card c, int type, int value) -> void
 
 ## Description
 
-为c设置类型为type的卡片提示信息
-type只能为以下值，对应的value类型为
-CHINT_TURN              回合数
-CHINT_CARD              卡片id
-CHINT_RACE              种族
-CHINT_ATTRIBUTE         属性
-CHINT_NUMBER            数字
-CHINT_DESC              描述
+Set the card prompt for type c to c
+Type can only be the following value, the corresponding value type is
+CHINT_TURN Turns
+CHINT_CARD card id
+CHINT_RACE race
+CHINT_ATTRIBUTE property
+CHINT_NUMBER number
+CHINT_DESC Description
 
 ## Parameters
 

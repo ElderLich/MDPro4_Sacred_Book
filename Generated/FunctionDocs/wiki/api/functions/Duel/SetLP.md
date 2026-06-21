@@ -8,7 +8,7 @@ Duel.SetLP(int player, int lp) -> void
 
 ## Description
 
-设置玩家player的当前LP为lp
+Set the player's current LP to lp
 
 ## Parameters
 

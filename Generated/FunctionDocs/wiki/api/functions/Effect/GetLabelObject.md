@@ -8,7 +8,7 @@ Effect.GetLabelObject(Effect e) -> Card|Group|Effect
 
 ## Description
 
-返回LabelObject属性
+Returns the LabelObject property
 
 ## Parameters
 

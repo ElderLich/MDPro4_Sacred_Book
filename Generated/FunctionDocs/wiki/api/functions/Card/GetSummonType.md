@@ -8,7 +8,7 @@ Card.GetSummonType(Card c) -> int
 
 ## Description
 
-返回c的召唤/特殊召唤的方式
+Returns the call / special call of c
 
 ## Parameters
 

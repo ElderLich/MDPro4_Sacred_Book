@@ -8,7 +8,7 @@ Effect.SetOwnerPlayer(Effect e, [int player]) -> void
 
 ## Description
 
-设置OwnerPlayer属性为player
+Set the OwnerPlayer property to player
 
 ## Parameters
 

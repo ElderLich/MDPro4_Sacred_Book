@@ -8,7 +8,7 @@ Card.GetLevel(Card c) -> int
 
 ## Description
 
-返回c的当前等级
+Returns the current level of c
 
 ## Parameters
 

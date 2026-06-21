@@ -8,7 +8,10 @@ Duel.SelectTarget(int sel_player, [function|nil f], int player, int s, int o, in
 
 ## Description
 
-基本同Duel.SelectMatchingCard ，不同之处在于此函数会同时将当前正在处理的连锁的对象设置成选择的卡
+Filter function, so that player sel_player select the specified location to meet the filter condition f and not equal ex
+And can be the min-max card of the object that is currently processing the effect
+The ninth parameter starts as an extra parameter
+This function sets the currently locked object to the selected card at the same time
 
 ## Parameters
 

@@ -8,8 +8,7 @@ Duel.CheckRemoveOverlayCard(int player, int s, int o, int count, int reason) -> 
 
 ## Description
 
-检查player能否以原因reason移除以player来看的指定位置至少count张卡
-s代表以player来看的自己的位置，o代表以player来看的对方的位置
+Check if the player can remove at least count cards for the specified reason
 
 ## Parameters
 

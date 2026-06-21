@@ -8,7 +8,7 @@ Card.IsSummonType(Card c, int sumtype) -> bool
 
 ## Description
 
-检查c的召唤类型是否是sumtype
+Check if card c's summon type is sumtype
 
 ## Parameters
 

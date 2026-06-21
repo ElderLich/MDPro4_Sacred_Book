@@ -8,7 +8,7 @@ Duel.GetCurrentPhase() -> int
 
 ## Description
 
-返回当前的阶段
+Returns the current stage
 
 ## Returns
 

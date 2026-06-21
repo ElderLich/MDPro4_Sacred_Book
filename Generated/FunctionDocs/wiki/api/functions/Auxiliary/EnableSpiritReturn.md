@@ -8,7 +8,7 @@ Auxiliary.EnableSpiritReturn(Card c, any event1, ... any) -> void
 
 ## Description
 
-TODO document.
+Add an effect to c for Spirit Monsters to return to the hand during the End Phase of turns when events event1,... occur
 
 ## Parameters
 

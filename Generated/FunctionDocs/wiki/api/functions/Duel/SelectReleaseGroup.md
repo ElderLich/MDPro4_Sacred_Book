@@ -8,8 +8,7 @@ Duel.SelectReleaseGroup(int sel_player, [function|nil f], int min, int max, [Car
 
 ## Description
 
-过滤函数，让玩家sel_player从场上选择min-max张不等于ex的满足条件f的能以原因REASON_COST解放的卡
-第6个参数开始为额外参数
+Filter function, allowing players to choose from the field min-max Zhang is not equal to ex to meet the conditions f can be liberated card (non-superior summon)
 
 ## Parameters
 

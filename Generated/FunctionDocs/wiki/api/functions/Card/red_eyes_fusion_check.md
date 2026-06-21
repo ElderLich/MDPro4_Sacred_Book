@@ -8,7 +8,7 @@ Card.red_eyes_fusion_check(int tp, Group sg, Card fc) -> void
 
 ## Description
 
-素材检查（真红眼融合）
+Material check for Red-Eyes Fusion.
 
 ## Parameters
 

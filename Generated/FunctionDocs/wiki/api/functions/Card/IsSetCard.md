@@ -8,7 +8,7 @@ Card.IsSetCard(Card c, ... int) -> bool
 
 ## Description
 
-检查c是否是卡名含有setname的卡
+Check whether c is a card with the name setname
 
 ## Parameters
 

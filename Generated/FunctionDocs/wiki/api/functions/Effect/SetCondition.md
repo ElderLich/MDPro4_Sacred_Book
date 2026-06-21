@@ -8,7 +8,7 @@ Effect.SetCondition(Effect e, function con_func) -> void
 
 ## Description
 
-设置Condition属性
+Set the Condition property
 
 ## Parameters
 

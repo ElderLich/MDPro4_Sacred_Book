@@ -8,7 +8,7 @@ Card.IsAbleToRemoveAsCost(Card c) -> bool
 
 ## Description
 
-检查c是否可以作为cost除外
+Check whether c can be excluded as a cost
 
 ## Parameters
 

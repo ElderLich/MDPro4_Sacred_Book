@@ -8,7 +8,7 @@ Duel.IsAbleToEnterBP() -> bool
 
 ## Description
 
-检查回合玩家能否进入战斗阶段
+Check whether the player can enter the combat phase of the round
 
 ## Returns
 

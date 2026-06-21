@@ -8,7 +8,7 @@ Card.GetLocation(Card c) -> int
 
 ## Description
 
-返回c当前的所在位置
+Returns the current position of c
 
 ## Parameters
 

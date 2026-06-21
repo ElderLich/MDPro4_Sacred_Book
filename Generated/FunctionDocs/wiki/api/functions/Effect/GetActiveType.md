@@ -8,8 +8,8 @@ Effect.GetActiveType(Effect e) -> int
 
 ## Description
 
-返回e的效果类型（怪兽·魔法·陷阱）
-与发动该效果的卡的类型不一定相同，比如灵摆效果视为魔法卡的效果
+Returns the effect type of e (monster, magic, trap)
+And launch the effect of the type of card is not necessarily the same, such as the spirit of pendulum effect as a magic card effect
 
 ## Parameters
 

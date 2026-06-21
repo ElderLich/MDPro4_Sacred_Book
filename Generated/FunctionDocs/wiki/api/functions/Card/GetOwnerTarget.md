@@ -8,7 +8,7 @@ Card.GetOwnerTarget(Card c) -> Group
 
 ## Description
 
-返回取c作为永续对象的所有卡
+Returns all cards with c as the persistent object
 
 ## Parameters
 

@@ -8,7 +8,7 @@ Card.GetTurnID(Card c) -> int
 
 ## Description
 
-返回c转移到当前位置的回合
+Return c The round to the current position
 
 ## Parameters
 

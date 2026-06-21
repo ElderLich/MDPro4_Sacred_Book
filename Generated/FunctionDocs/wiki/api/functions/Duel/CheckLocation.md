@@ -8,7 +8,7 @@ Duel.CheckLocation(int player, int location, int seq) -> bool
 
 ## Description
 
-检查玩家player的场上位于location序号为seq的空格是否可用
+Check if the player's player field is seq in the location of the space is available
 
 ## Parameters
 

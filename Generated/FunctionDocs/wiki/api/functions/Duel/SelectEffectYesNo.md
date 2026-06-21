@@ -8,7 +8,7 @@ Duel.SelectEffectYesNo(int player, Card c, [int desc]) -> bool
 
 ## Description
 
-让玩家player选择是否发动卡片c的效果[提示文字可以自行用desc替换，desc 用 aux.Stringid 获取]
+Let players choose whether to launch the card player c effect
 
 ## Parameters
 

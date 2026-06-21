@@ -8,7 +8,7 @@ Auxiliary.GetValueType(any v) -> void
 
 ## Description
 
-TODO document.
+Return the Lua type of value
 
 ## Parameters
 

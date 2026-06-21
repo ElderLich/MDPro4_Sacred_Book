@@ -8,7 +8,7 @@ Effect.SetRange(Effect e, int range) -> void
 
 ## Description
 
-为效果e设置Range属性，即e的生效位置
+Set the Range property for effect e
 
 ## Parameters
 

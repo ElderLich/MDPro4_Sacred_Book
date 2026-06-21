@@ -8,7 +8,7 @@ Effect.SetCategory(Effect e, int cate) -> void
 
 ## Description
 
-设置Category属性
+Set the Category property
 
 ## Parameters
 

@@ -8,7 +8,7 @@ Duel.ConfirmCards(int player, Card|Group targets, [bool skip_panel]) -> void
 
 ## Description
 
-给玩家player确认targets
+Identify targets for the player
 
 ## Parameters
 

@@ -8,7 +8,7 @@ Duel.GetExtraTopGroup(int player, int count) -> Group
 
 ## Description
 
-返回玩家player的额外卡组表侧表示的卡中最上方的count张卡
+Return the top count face-up cards in player's Extra Deck
 
 ## Parameters
 

@@ -8,7 +8,7 @@ Card.IsRace(Card c, int race) -> bool
 
 ## Description
 
-检查c是否属于种族race
+Check if c is race race
 
 ## Parameters
 

@@ -8,7 +8,7 @@ Card.IsEffectProperty(Card c, function filter) -> bool
 
 ## Description
 
-检查c是否为持有满足过滤条件filter效果的卡
+Checks whether c has an effect matching filter.
 
 ## Parameters
 

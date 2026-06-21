@@ -1,6 +1,6 @@
 # Function Docs Refresh Report
 
-Generated: 2026-06-21T09:57:29+00:00
+Generated: 2026-06-21T10:14:36+00:00
 
 ## Outputs
 
@@ -14,7 +14,11 @@ Generated: 2026-06-21T09:57:29+00:00
 - `Generated/FunctionDocs/function_translation_backlog.md`
 - `Generated/FunctionDocs/comparison.generated.json`
 - `Generated/FunctionDocs/report.md`
+- `Generated/FunctionDocs/wiki/index.md`
+- `Generated/FunctionDocs/wiki/api/index.md`
 - `Generated/FunctionDocs/wiki/api/functions/index.md`
+- `Generated/FunctionDocs/wiki/api/constants.md`
+- `Generated/FunctionDocs/wiki/.vitepress/config.mts`
 
 ## Function Sources
 
@@ -23,11 +27,11 @@ Generated: 2026-06-21T09:57:29+00:00
 - Lua helper functions: 376
 - Stub-only functions: 11
 - Core-bound functions without stub docs: 0
-- Existing DataEditorX `_functions.txt`: 692
-- Existing DataEditorX `_function_english.txt`: 762
+- Existing DataEditorX `_functions.txt`: 998
+- Existing DataEditorX `_function_english.txt`: 998
 - Old Utilities `_functions.txt`: 692
-- Added versus old `_functions.txt`: 334
-- Dropped versus old `_functions.txt`: 28
+- Added versus old `_functions.txt`: 0
+- Dropped versus old `_functions.txt`: 0
 
 ## Namespaces
 
@@ -42,10 +46,11 @@ Generated: 2026-06-21T09:57:29+00:00
 
 ## English Coverage
 
-- `existing_english`: 22
-- `imported_from_dataeditorx`: 731
-- `missing_documentation`: 201
-- `translated_exact`: 44
+- `existing_english`: 3
+- `imported_from_dataeditorx`: 523
+- `imported_from_old_utilities`: 168
+- `missing_documentation`: 259
+- `translated_exact`: 45
 
 ## Core Binding Gaps
 
@@ -75,11 +80,11 @@ Documented stubs that do not appear in this core binding scan:
 
 ## Constant Findings
 
-- DataEditorX constants: 808
+- DataEditorX constants: 858
 - Local utility constants: 858
-- Missing in DataEditorX: 58
-- Changed values: 5
-- Removed from local: 8
+- Missing in DataEditorX: 0
+- Changed values: 0
+- Removed from local: 0
 - Effect creator effect names: 263
 - Local `EFFECT_*` constants: 320
 - `effect_creator_settings.txt` missing local `EFFECT_*`: 61
@@ -94,35 +99,9 @@ Constant English status:
 
 Examples missing in DataEditorX constants:
 
-- `CATEGORY_HANDES_OPPO`
-- `CATEGORY_HANDES_SELF`
-- `CATEGORY_MSET`
-- `CATEGORY_SSET`
-- `DUEL_REVEAL_DECK_SEQ`
-- `EFFECT_ACTIVATION_COUNT_LIMIT`
-- `EFFECT_COUNT_CODE_CHAIN`
-- `EFFECT_DOUBLE_XMATERIAL`
-- `EFFECT_EXTRA_SYNCHRO_MATERIAL`
-- `EFFECT_FLAG2_REPEAT_UPDATE`
-- `EFFECT_FLAG_ACTIVATE_CONDITION`
-- `EFFECT_FLAG_CAN_FORBIDDEN`
-- `EFFECT_FLAG_COIN`
-- `EFFECT_FLAG_COPY`
-- `EFFECT_FLAG_DICE`
-- `EFFECT_FLAG_EFFECT`
-- `EFFECT_FLAG_FUSION_SUMMON`
-- `EFFECT_KAISER_COLOSSEUM`
-- `EFFECT_REPLACE_DAMAGE`
-- `EFFECT_RITUAL_LEVEL_EX`
-- `... 38 more`
 
 Examples changed constant values:
 
-- `CATEGORY_HANDES`
-- `DOUBLE_DAMAGE`
-- `HALF_DAMAGE`
-- `MIN_ID`
-- `RACE_ALL`
 
 ## Category Findings
 
@@ -132,78 +111,9 @@ Examples changed constant values:
 
 ## Added Function Examples
 
-- `Auxiliary.AND`
-- `Auxiliary.AddBanishRedirect`
-- `Auxiliary.AddCodeList`
-- `Auxiliary.AddContactFusionProcedure`
-- `Auxiliary.AddDrytronSpSummonEffect`
-- `Auxiliary.AddEquipSpellEffect`
-- `Auxiliary.AddFusionEffectProc`
-- `Auxiliary.AddFusionEffectProcUltimate`
-- `Auxiliary.AddMaterialCodeList`
-- `Auxiliary.AddRitualProcGreater2`
-- `Auxiliary.AddRitualProcGreater2Code`
-- `Auxiliary.AddRitualProcGreater2Code2`
-- `Auxiliary.AddRitualProcUltimate`
-- `Auxiliary.AddSetNameMonsterList`
-- `Auxiliary.AddThisCardInGraveAlreadyCheck`
-- `Auxiliary.AddUrsarcticSpSummonEffect`
-- `Auxiliary.AdjacentFilter`
-- `Auxiliary.ArcanaCoinOperation`
-- `Auxiliary.ArcanaCoinTarget`
-- `Auxiliary.ArcanaCondition`
-- `Auxiliary.AssaultModeLimit`
-- `Auxiliary.AtkEqualsDef`
-- `Auxiliary.BESRemoveCondition`
-- `Auxiliary.BESRemoveOperation`
-- `Auxiliary.BESRemoveTarget`
-- `Auxiliary.BanishRedirectCondition`
-- `Auxiliary.BecomeOriginalCode`
-- `Auxiliary.ChangeBattleDamage`
-- `Auxiliary.CheckGroupRecursive`
-- `Auxiliary.CheckGroupRecursiveCapture`
-- `Auxiliary.CheckGroupRecursiveEach`
-- `Auxiliary.CheckXyz2XMaterial`
-- `Auxiliary.ContactFusionCondition`
-- `Auxiliary.ContactFusionMaterialFilter`
-- `Auxiliary.ContactFusionOperation`
-- `Auxiliary.ContactFusionSendToDeck`
-- `Auxiliary.ContactFusionTarget`
-- `Auxiliary.CreateChecks`
-- `Auxiliary.CreateMaterialReasonCardRelation`
-- `Auxiliary.DarkFusionLimit`
-- `... 294 more`
 
 ## Dropped Old Function Examples
 
-- `Auxiliary.GetMustMaterialGroup`
-- `Auxiliary.disfilter1`
-- `Card.GetLinkMarker`
-- `Card.GetOriginalLinkMarker`
-- `Card.GetRemovedOverlayCount`
-- `Card.IsAbleToDecreaseAttackAsCost`
-- `Card.IsAbleToDecreaseDefenseAsCost`
-- `Card.IsRitualType`
-- `Card.IsXyzSummonableByRose`
-- `Card.SetCardData`
-- `Card.SetEntityCode`
-- `Duel.AnnounceCardFilter`
-- `Duel.DisableActionCheck`
-- `Duel.Exile`
-- `Duel.GetCardsInZone`
-- `Duel.GetEnvironment`
-- `Duel.GetMasterRule`
-- `Duel.IsPlayerExtraSummoned`
-- `Duel.LoadScript`
-- `Duel.MoveTurnCount`
-- `Duel.ReadCard`
-- `Duel.ResetTimeLimit`
-- `Duel.SetMetatable`
-- `Duel.SetSummonCancelable`
-- `Duel.XyzSummonByRose`
-- `Effect.GetCountLimit`
-- `Effect.SetOwner`
-- `initial_effect`
 
 ## Recommended Next Steps
 

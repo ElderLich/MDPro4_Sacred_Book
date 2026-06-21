@@ -8,7 +8,7 @@ Effect.SetValue(Effect e, function|int|bool val) -> void
 
 ## Description
 
-设置Value属性
+Set the Value property
 
 ## Parameters
 

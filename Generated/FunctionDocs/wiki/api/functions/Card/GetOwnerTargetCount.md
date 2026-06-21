@@ -8,7 +8,7 @@ Card.GetOwnerTargetCount(Card c) -> int
 
 ## Description
 
-返回取c作为永续对象的卡的数量
+Returns the number of cards that take c as the persistent object
 
 ## Parameters
 

@@ -8,7 +8,7 @@ Effect.GetFieldID(Effect e) -> int
 
 ## Description
 
-获取效果e的id
+Gets the id of the effect e
 
 ## Parameters
 

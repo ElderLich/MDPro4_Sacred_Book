@@ -8,7 +8,7 @@ Card.GetTurnCounter(Card c) -> int
 
 ## Description
 
-返回c的回合计数器
+Returns the round counter for c
 
 ## Parameters
 

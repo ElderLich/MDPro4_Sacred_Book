@@ -8,10 +8,10 @@ Card.CancelToGrave(Card c, [bool cancel]) -> void
 
 ## Description
 
-取消送墓确定状态，cancel=false则重新设置送墓确定状态
-注：送墓确定状态指的是在场上发动的不留场的魔法和陷阱后，这些卡片的状态
-送墓确定状态中的卡无法返回手卡和卡组，并且连锁结束时送去墓地
-此函数的作用是取消此状态使其留场，用于光之护封剑和废铁稻草人等卡
+Cancel to send to determine the state tomb, cancel = false to reset the tomb to determine the state
+Note: to send the tomb to determine the state refers to the field to start without leaving field magic and traps, the state of these cards
+Cards sent to the tomb determine the state can not return cards and cards, and sent to the cemetery at the end of the chain
+The purpose of this function is to cancel this state to stay in the field, for the light of the sword and seal the Scarlet Scarlet card
 
 ## Parameters
 

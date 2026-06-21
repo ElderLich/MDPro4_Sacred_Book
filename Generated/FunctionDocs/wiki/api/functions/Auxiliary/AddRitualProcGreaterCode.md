@@ -8,7 +8,9 @@ Auxiliary.AddRitualProcGreaterCode(Card c, any code1, any summon_location, any g
 
 ## Description
 
-TODO document.
+Add a Ritual Summon effect for c
+code is the card code of the Ritual Monster; the sum of the Ritual Levels of the materials can exceed the original Level of the Ritual Monster
+Equivalent to: aux.AddRitualProcGreater(c, aux.FilterBoolFunction(Card.IsCode, code)), with fit_monster=code added
 
 ## Parameters
 

@@ -8,11 +8,11 @@ Effect.SetCountLimit(Effect e, int count, [int code]) -> void
 
 ## Description
 
-设置一回合可以发动的次数count（仅触发型效果有效），相同的code(不等于0或1时)共用1个次数
-code包含以下数值具有特殊的性质
-EFFECT_COUNT_CODE_OATH          誓约使用次数
-EFFECT_COUNT_CODE_DUEL          决斗中使用次数
-EFFECT_COUNT_CODE_SINGLE        同一张卡多个效果公共使用次数（不限制同名卡）
+Set the number of times a round can be launched count (only trigger type effect is valid), the same code (not equal to 0 or 1) share a number of times
+The code contains the following values ​​that have special properties
+EFFECT_COUNT_CODE_OATH The number of vows
+EFFECT_COUNT_CODE_DUEL The number of times in the duel
+EFFECT_COUNT_CODE_SINGLE the same card more than the number of public use of the effect (not the same name card)
 
 ## Parameters
 

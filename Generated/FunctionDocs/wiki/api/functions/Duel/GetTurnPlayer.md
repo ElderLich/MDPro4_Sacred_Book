@@ -8,7 +8,7 @@ Duel.GetTurnPlayer() -> int
 
 ## Description
 
-返回当前的回合玩家
+Returns the current round of players
 
 ## Returns
 

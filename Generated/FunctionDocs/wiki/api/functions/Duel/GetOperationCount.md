@@ -8,7 +8,7 @@ Duel.GetOperationCount(int chainc) -> int
 
 ## Description
 
-返回连锁chainc包含的操作分类的数量
+Returns the number of operational classifications contained in chained chainc
 
 ## Parameters
 

@@ -8,7 +8,7 @@ Duel.GetSynchroMaterial(int player) -> Group
 
 ## Description
 
-获取玩家可以作为同调素材的卡片组
+Gets the group of cards player can use as Synchro Material.
 
 ## Parameters
 

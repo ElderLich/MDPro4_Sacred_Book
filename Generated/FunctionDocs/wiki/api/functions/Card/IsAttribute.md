@@ -8,7 +8,7 @@ Card.IsAttribute(Card c, int attribute) -> bool
 
 ## Description
 
-检查c是否属于属性attribute
+Check whether c belongs to attribute attribute
 
 ## Parameters
 

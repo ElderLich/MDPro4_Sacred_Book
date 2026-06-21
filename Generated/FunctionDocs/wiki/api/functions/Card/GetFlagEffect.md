@@ -8,7 +8,7 @@ Card.GetFlagEffect(Card c, int code) -> int
 
 ## Description
 
-返回c的种类是code的标识效果的数量
+The type of returned c is the number of identifying effects of the code
 
 ## Parameters
 

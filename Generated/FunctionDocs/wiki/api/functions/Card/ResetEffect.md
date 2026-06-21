@@ -8,13 +8,13 @@ Card.ResetEffect(Card c, int reset_code, int reset_type) -> void
 
 ## Description
 
-以重置类型为reset_type、重置种类为reset_code手动重置c受到的效果的影响
-reset_type只能是以下类型，对应的重置种类为
-RESET_EVENT       发生事件重置        reset_code为事件
-RESET_PHASE       阶段结束重置        reset_code为阶段
-RESET_CODE        重置指定code的效果  reset_code为效果的种类code，只能重置EFFECT_TYPE_SINGLE的永续型效果
-RESET_COPY        重置复制的效果      reset_code为copy_id
-RESET_CARD        重置卡片的效果      reset_code为效果owner的卡号
+To reset the type to reset_type, reset the type reset_code manual reset c impact of the impact
+The reset_type can only be one of the following types, and the corresponding reset type is
+RESET_EVENT An event reset_code is set for the event
+RESET_PHASE End of phase Reset the reset_code to phase
+RESET_CODE reset the effect of the specified code reset_code for the type of effect code, can only be reset EFFECT_TYPE_SINGLE sustainable type effect
+RESET_COPY resets the effect of the copy. Reset_code is copy_id
+RESET_CARD The effect of resetting the card reset_code is the card number of the effect owner
 
 ## Parameters
 

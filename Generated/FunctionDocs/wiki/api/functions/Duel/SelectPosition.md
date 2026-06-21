@@ -8,7 +8,7 @@ Duel.SelectPosition(int player, Card c, int pos) -> int
 
 ## Description
 
-让玩家player选择c的表示形式并返回
+Let player player select the representation of c and return
 
 ## Parameters
 

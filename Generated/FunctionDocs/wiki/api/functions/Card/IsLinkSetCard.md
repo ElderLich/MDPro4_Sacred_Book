@@ -8,7 +8,7 @@ Card.IsLinkSetCard(Card c, ... int) -> bool
 
 ## Description
 
-检查c作为link素材时能否当作名字含有setname的卡
+Check if card c, when used as Link Material, can be treated as a card with setname in its name
 
 ## Parameters
 

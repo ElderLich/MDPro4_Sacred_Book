@@ -8,7 +8,7 @@ Card.IsCode(Card c, int code1, [int code2], [... int]) -> bool
 
 ## Description
 
-检查c的卡号是否是 code1[, 或者为 code2...]
+Check whether the card number c is code1[, or code2 ...]
 
 ## Parameters
 

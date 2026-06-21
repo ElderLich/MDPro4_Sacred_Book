@@ -8,7 +8,7 @@ Duel.BreakEffect() -> void
 
 ## Description
 
-中断当前效果，使之后的效果处理视为不同时处理，此函数会造成错时点
+Interrupt the current effect, so that after the effect of treatment as not treated simultaneously, this function will cause the wrong time
 
 ## Source
 

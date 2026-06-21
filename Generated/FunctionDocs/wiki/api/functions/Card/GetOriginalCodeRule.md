@@ -8,7 +8,7 @@ Card.GetOriginalCodeRule(Card c) -> int,int
 
 ## Description
 
-返回c规则上的卡号（这张卡规则上当作...使用）
+Returns the codename on the c rule (used as a card rule on this card)
 
 ## Parameters
 

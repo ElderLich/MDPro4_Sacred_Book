@@ -8,7 +8,7 @@ Card.GetLinkAttribute(Card c, [int player]) -> int
 
 ## Description
 
-返回c[由player连接召唤时]用作连接素材时的属性
+Return the Attribute of card c when used as Link Material [for a Link Summon by player]
 
 ## Parameters
 

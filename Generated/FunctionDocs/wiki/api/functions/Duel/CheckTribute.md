@@ -8,7 +8,7 @@ Duel.CheckTribute(Card c, int min, [int|nil max], [Group|nil mg], [int|nil topla
 
 ## Description
 
-判断场上[或mg中]是否存在用于通常召唤c[到toplayer场上的区域 zone]的min[到max]个祭品
+Check if there are min [to max] Tributes on the field [or in mg] for Normal Summoning c [to toplayer's field in zone]
 
 ## Parameters
 

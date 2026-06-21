@@ -8,7 +8,7 @@ Duel.Win(int player, int win_reason) -> void
 
 ## Description
 
-当前效果处理完令player以win_reason决斗胜利
+The current effect is dealt with so players win_reason duel victory
 
 ## Parameters
 

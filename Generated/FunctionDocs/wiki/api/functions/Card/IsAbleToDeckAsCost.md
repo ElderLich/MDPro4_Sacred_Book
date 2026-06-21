@@ -8,7 +8,7 @@ Card.IsAbleToDeckAsCost(Card c) -> bool
 
 ## Description
 
-检查c是否可以作为cost送去卡组
+Check whether c can be sent to the card as a cost group
 
 ## Parameters
 

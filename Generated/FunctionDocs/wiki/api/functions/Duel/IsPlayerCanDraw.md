@@ -8,7 +8,7 @@ Duel.IsPlayerCanDraw(int player, [int count]) -> bool
 
 ## Description
 
-检查玩家player是否可以效果抽[count张]卡
+Check the player player can effect pumping [count Zhang] card
 
 ## Parameters
 

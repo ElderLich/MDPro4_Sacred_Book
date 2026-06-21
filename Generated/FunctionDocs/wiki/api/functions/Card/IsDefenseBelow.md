@@ -8,7 +8,7 @@ Card.IsDefenseBelow(Card c, int def) -> bool
 
 ## Description
 
-检查c是否是守备力def以下（至少为0）
+Check whether c is defensive def below (at least 0)
 
 ## Parameters
 

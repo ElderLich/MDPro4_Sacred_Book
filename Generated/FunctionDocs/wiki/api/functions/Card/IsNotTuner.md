@@ -8,7 +8,7 @@ Card.IsNotTuner(Card c, Card scard) -> bool
 
 ## Description
 
-检查c是否可以当成scard的非调整来使用
+Check whether c can be used as a non-adjustment
 
 ## Parameters
 

@@ -8,7 +8,7 @@ Duel.RaiseEvent(Group|Card eg, int code, Effect re, int r, int rp, int ep, int e
 
 ## Description
 
-以eg,ep,ev,re,r,rp触发一个时点 code
+To eg, ep, ev, re, r, rp trigger a point in time
 
 ## Parameters
 

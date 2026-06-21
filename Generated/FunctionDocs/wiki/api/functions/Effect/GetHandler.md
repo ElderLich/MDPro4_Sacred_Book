@@ -8,7 +8,7 @@ Effect.GetHandler(Effect e) -> Card
 
 ## Description
 
-返回效果在哪一张卡上生效(通常是用Card.RegisterEffect注册该效果的卡)
+Returns the card on which the effect takes effect (usually a card that registers the effect with Card.RegisterEffect)
 
 ## Parameters
 

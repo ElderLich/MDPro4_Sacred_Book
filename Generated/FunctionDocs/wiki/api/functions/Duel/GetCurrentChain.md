@@ -8,7 +8,7 @@ Duel.GetCurrentChain() -> int
 
 ## Description
 
-返回当前的连锁个数（即正在处理的连锁序号）
+Returns the chain number currently being processed
 
 ## Returns
 

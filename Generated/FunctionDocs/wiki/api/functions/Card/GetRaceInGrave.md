@@ -8,8 +8,7 @@ Card.GetRaceInGrave(Card c, [int reasonPlayer]) -> int
 
 ## Description
 
-检查c在墓地中会变成什么种族。
-第二个参数可选，指示假设送去墓地是由于哪个玩家。
+Return the Race card c is treated as having in the Graveyard
 
 ## Parameters
 

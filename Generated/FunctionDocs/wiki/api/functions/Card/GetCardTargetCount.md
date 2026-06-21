@@ -8,7 +8,7 @@ Card.GetCardTargetCount(Card c) -> int
 
 ## Description
 
-返回c当前的永续对象的数量
+Returns the number of current persistent objects
 
 ## Parameters
 

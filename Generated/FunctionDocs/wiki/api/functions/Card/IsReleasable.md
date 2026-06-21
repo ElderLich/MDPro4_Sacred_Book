@@ -8,7 +8,7 @@ Card.IsReleasable(Card c, [int reason]) -> bool
 
 ## Description
 
-检查c是否可以被以原因reason解放（非上级召唤用）
+Check whether c can be liberated (non-superior call)
 
 ## Parameters
 

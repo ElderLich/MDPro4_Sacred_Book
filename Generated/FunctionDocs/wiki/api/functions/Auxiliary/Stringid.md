@@ -8,7 +8,7 @@ Auxiliary.Stringid(Effect code, any id) -> void
 
 ## Description
 
-TODO document.
+Used to index the card number code for the card the first id (from 0) effect prompts
 
 ## Parameters
 

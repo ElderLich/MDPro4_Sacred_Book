@@ -8,7 +8,7 @@ Card.GetPreviousEquipTarget(Card c) -> Card
 
 ## Description
 
-返回c之前的装备对象
+Returns the device object before c
 
 ## Parameters
 

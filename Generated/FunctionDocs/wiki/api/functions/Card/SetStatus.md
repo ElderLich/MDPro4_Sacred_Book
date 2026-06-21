@@ -8,8 +8,8 @@ Card.SetStatus(Card c, int state, bool enable) -> void
 
 ## Description
 
-给c设置或者取消状态码
-除非妳清楚的了解每个状态码的含意，否则不要轻易使用此函数
+Set or cancel the status code for c
+Do not use this function unless you clearly understand the meaning of each status code
 
 ## Parameters
 

@@ -8,7 +8,7 @@ Duel.IsChainDisablable(int chainc) -> bool
 
 ## Description
 
-检查连锁chainc的效果能否被无效
+Check chainC effect can be invalid
 
 ## Parameters
 

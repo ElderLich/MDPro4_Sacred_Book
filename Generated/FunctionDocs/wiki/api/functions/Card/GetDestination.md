@@ -8,8 +8,8 @@ Card.GetDestination(Card c) -> int
 
 ## Description
 
-返回c位置变化的目的地
-此函数仅在处理位置转移代替效果时有效
+Returns the destination of the c position change
+This function is valid only when processing position transitions instead of effects
 
 ## Parameters
 

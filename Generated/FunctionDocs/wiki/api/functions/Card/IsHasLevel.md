@@ -8,7 +8,7 @@ Card.IsHasLevel(Card c) -> bool
 
 ## Description
 
-检查c是否持有等级
+Checks whether c has a Level.
 
 ## Parameters
 

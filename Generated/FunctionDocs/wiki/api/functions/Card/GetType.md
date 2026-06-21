@@ -8,7 +8,7 @@ Card.GetType(Card c) -> int
 
 ## Description
 
-返回c的当前类型
+Returns the current type of c
 
 ## Parameters
 

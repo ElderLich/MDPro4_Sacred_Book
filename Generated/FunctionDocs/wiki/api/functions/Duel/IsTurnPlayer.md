@@ -8,7 +8,7 @@ Duel.IsTurnPlayer(int playerid) -> bool
 
 ## Description
 
-返回当前的回合玩家是否为playerid
+Returns whether playerid is the current turn player.
 
 ## Parameters
 

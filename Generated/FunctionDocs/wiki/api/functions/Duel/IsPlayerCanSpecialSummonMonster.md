@@ -8,8 +8,8 @@ Duel.IsPlayerCanSpecialSummonMonster(int player, int code, [int|nil setcode], [i
 
 ## Description
 
-检查玩家player是否可以[以sumtype 方式][以 pos 表示形式]特殊召唤 给定参数的怪兽到target_player场上
-此函数通常用于判定是否可以特招token和陷阱怪兽
+Check player player can be pos to the form of special summon the parameters of the monster to the target_player field
+This function is usually used to determine whether it is possible to trick token and trap monsters
 
 ## Parameters
 

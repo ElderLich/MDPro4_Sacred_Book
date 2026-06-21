@@ -8,10 +8,10 @@ Card.IsRelateToChain(Card c, [int chainc]) -> bool
 
 ## Description
 
-检查c是否和连锁chainc有联系
-注：每次发动进入连锁的效果时，发动效果的卡，以及发动效果时指定的对象
-（用Duel.SetTargetCard或者Duel.SelectTarget指定的，包括取对象和不取对象）
-会自动与那个效果建立联系，一旦离场，联系会重置
+Check if c is linked to chained chainc
+Note: Each launch into the effect of chain, the effect of launching the card, and the effect of the specified object
+(With Duel.SetTargetCard or Duel.SelectTarget specified, including the take and not take objects)
+Will automatically establish contact with that effect, once the departure, contact will be reset
 
 ## Parameters
 

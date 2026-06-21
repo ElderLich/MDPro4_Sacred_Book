@@ -8,8 +8,8 @@ Card.IsCanBeSpecialSummoned(Card c, Effect e, int sumtype, int sumplayer, bool n
 
 ## Description
 
-检查c是否可以被玩家sumplayer用效果e[以sumtype方式和sumpos表示形式]特殊召唤[到玩家 toplayer 的区域zone]
-如果nocheck是true则不检查c的召唤条件，如果nolimit是true则不检查c的苏生限制
+Check whether c can be sumplayer with the effect of the player e to sumtype form sumpos special summon to target_player field
+If nocheck is true, the call condition of c is not checked, and if nolimit is true, then the limit of c is not checked
 
 ## Parameters
 

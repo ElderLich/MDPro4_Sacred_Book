@@ -8,7 +8,7 @@ Duel.RegisterEffect(Effect e, int player) -> void
 
 ## Description
 
-把效果e作为玩家player的效果注册给全局环境
+Register the effect e as the player's effect to the global environment
 
 ## Parameters
 

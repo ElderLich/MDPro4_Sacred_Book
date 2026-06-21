@@ -8,9 +8,8 @@ Duel.SelectMatchingCard(int sel_player, [function|nil f], int player, int s, int
 
 ## Description
 
-过滤函数，让玩家sel_player选择以player来看的指定位置满足过滤条件f并且不等于ex的min-max张卡
-s代表以player来看的自己的位置，o代表以player来看的对方的位置
-第9个参数开始为额外参数
+Filter function, the player sel_player select the specified location to meet the filter condition f and not equal to the ex min-max card
+The ninth parameter starts as an extra parameter
 
 ## Parameters
 

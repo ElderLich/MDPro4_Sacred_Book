@@ -8,7 +8,9 @@ Auxiliary.AddSynchroProcedure2(Card c, any f1, any f2) -> void
 
 ## Description
 
-TODO document.
+Add a cohomology call to c
+F1 to adjust the filter to meet the conditions, f2 to adjust to meet other than the filter conditions (usually aux.NonTuner)
+Can only be adjusted with a monster outside
 
 ## Parameters
 

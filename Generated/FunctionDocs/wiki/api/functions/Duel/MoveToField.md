@@ -8,8 +8,8 @@ Duel.MoveToField(Card c, int move_player, int target_player, int dest, int pos, 
 
 ## Description
 
-让玩家move_player把c移动的target_player的场上，返回值表示是否成功
-dest只能是LOCATION_MZONE或者LOCATION_SZONE，pos表示可选表示形式， enable 表示是否立刻适用c的效果
+Let the player move_player to move the c target_player field, the return value that is successful
+Dest can only be LOCATION_MZONE or LOCATION_SZONE, pos represents an optional representation, and enable indicates whether or not the effect of c is applied immediately
 
 ## Parameters
 

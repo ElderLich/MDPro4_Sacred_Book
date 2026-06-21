@@ -8,8 +8,8 @@ Card.IsLinkSummonable(Card c, [Group|nil mg], [int min], [int max]) -> bool
 
 ## Description
 
-检查是否可以在场上的卡[或mg][中选出 min-max 个连接素材]对c进行连接召唤手续
-如果mg为nil，此函数与 c:IsSpecialSummonable(SUMMON_TYPE_LINK)作用相同
+Check if card c can be Link Summoned using [min-max Link Materials] from cards on the field [or mg]
+If mg is nil, this function is equivalent to c:IsSpecialSummonable(SUMMON_TYPE_LINK)
 
 ## Parameters
 

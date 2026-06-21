@@ -8,7 +8,7 @@ Card.IsAllColumn(Card c) -> bool
 
 ## Description
 
-检查与c同一纵列的区域是否全都有卡
+Check if all zones in the same column as card c have cards
 
 ## Parameters
 

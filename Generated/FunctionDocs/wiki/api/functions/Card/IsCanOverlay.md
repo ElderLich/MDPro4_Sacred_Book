@@ -8,7 +8,7 @@ Card.IsCanOverlay(Card c, [int player]) -> bool
 
 ## Description
 
-检查c是否可以作为XYZ素材
+Check if c can be used as Xyz Material
 
 ## Parameters
 

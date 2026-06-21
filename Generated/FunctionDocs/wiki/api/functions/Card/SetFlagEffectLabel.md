@@ -8,7 +8,7 @@ Card.SetFlagEffectLabel(Card c, int code, int label) -> bool
 
 ## Description
 
-返回c是否存在种类为code的标识效果，若有则设置第一个的Label属性为label
+Returns whether or not c has an identifier of type code, and sets its Label property to label
 
 ## Parameters
 

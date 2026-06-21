@@ -8,7 +8,7 @@ Duel.ConfirmExtratop(int player, int count) -> void
 
 ## Description
 
-确认玩家player额外卡组里侧的卡 最上方count张卡
+Confirm the top count face-down cards in player's Extra Deck
 
 ## Parameters
 

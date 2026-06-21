@@ -8,7 +8,7 @@ Card.hero_fusion_check(int tp, Group sg, Card fc) -> void
 
 ## Description
 
-素材检查（至爱接触）
+Material check for Favorite Contact.
 
 ## Parameters
 

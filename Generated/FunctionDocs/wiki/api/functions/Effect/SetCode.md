@@ -8,7 +8,7 @@ Effect.SetCode(Effect e, int code) -> void
 
 ## Description
 
-为效果e设置Code属性
+Set the Code property for effect e
 
 ## Parameters
 

@@ -8,8 +8,8 @@ Card.IsSpecialSummonableCard(Card c) -> bool
 
 ## Description
 
-检查c是否能以正规方法特殊召唤。
-c必须有可特殊召唤的方式。
+Checks whether c can be Special Summoned by a proper procedure.
+c must have an available Special Summon procedure.
 
 ## Parameters
 

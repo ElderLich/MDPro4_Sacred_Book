@@ -8,7 +8,9 @@ Auxiliary.AddSynchroProcedure(Card c, [function|nil f1], [function|nil f2], int 
 
 ## Description
 
-Synchro monster, 1 tuner + min to max monsters
+Add a cohomology call to c
+F1 to adjust the filter to meet the conditions, f2 to adjust to meet other than the filter conditions (usually aux.NonTuner)
+Adjust monsters other than ct at least
 
 ## Parameters
 

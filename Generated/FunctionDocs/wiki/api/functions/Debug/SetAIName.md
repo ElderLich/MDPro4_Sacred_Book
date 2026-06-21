@@ -8,7 +8,7 @@ Debug.SetAIName(string name) -> void
 
 ## Description
 
-设置AI的名字，最大长度 100 个字符（1个汉字2个字符）
+Set the name of the AI
 
 ## Parameters
 

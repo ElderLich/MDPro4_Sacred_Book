@@ -8,7 +8,7 @@ Card.IsSSetable(Card c, [bool ignore_field]) -> bool
 
 ## Description
 
-检查c是否可以set到魔法陷阱区，ignore_field=true则无视魔陷区格子是否能使用的限制
+Check whether c can be set to the magic trap area, ignore_field = true is disregard of the trap area trap trap
 
 ## Parameters
 

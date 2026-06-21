@@ -8,8 +8,8 @@ Duel.GetRitualMaterial(int player) -> Group
 
 ## Description
 
-返回玩家player可用的用于仪式召唤素材的卡片组
-包含手上，场上可解放的以及墓地的仪式魔人等卡
+Returns the player's deck of cards available for ritual summoning material
+Including hands, the field can be the liberation of the ceremony and the cemetery and other magic people card
 
 ## Parameters
 

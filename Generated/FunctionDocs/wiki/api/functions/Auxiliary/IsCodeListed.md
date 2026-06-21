@@ -8,7 +8,7 @@ Auxiliary.IsCodeListed(Card c, Effect code) -> void
 
 ## Description
 
-TODO document.
+Check if card c lists card code in its card_code_list
 
 ## Parameters
 

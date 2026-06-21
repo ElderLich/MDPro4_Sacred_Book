@@ -8,7 +8,7 @@ Effect.GetCost(Effect e) -> function
 
 ## Description
 
-返回cost属性
+Returns the cost attribute
 
 ## Parameters
 

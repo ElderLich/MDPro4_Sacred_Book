@@ -8,7 +8,7 @@ bit.bxor(any a, any b) -> void
 
 ## Description
 
-TODO document.
+A and b bit XOR
 
 ## Parameters
 

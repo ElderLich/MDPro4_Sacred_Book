@@ -8,8 +8,8 @@ Duel.GetSZoneCount(int player, [Group|Card targets], [int use_player], [int reas
 
 ## Description
 
-返回玩家player场上[targets 离开后]可用的[区域 zone 里的]魔陷区数量（不含场地区域）
-##第三个第四个额外参数与凯撒斗技场等限制格子的效果有关
+Returns the number of available Spell & Trap Zones for player after targets leave, optionally restricted by zone. The Field Zone is not included.
+The additional use_player and reason parameters are used by effects that restrict zones, such as Kaiser Colosseum.
 
 ## Parameters
 

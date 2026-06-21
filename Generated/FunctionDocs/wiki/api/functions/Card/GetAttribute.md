@@ -8,8 +8,8 @@ Card.GetAttribute(Card c) -> int
 
 ## Description
 
-返回c的当前属性
-注：对某些多属性怪兽如光与暗之龙，此函数的返回值可能是几个属性的组合值
+Returns the current attribute of c
+Note: For some multi-attribute monsters such as light and dark dragon, the return value of this function may be a combination of several properties of the value
 
 ## Parameters
 

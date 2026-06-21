@@ -8,7 +8,7 @@ Card.GetOverlayTarget(Card c) -> Card
 
 ## Description
 
-返回以c为XYZ素材的卡
+Returns the card with c as the excess material
 
 ## Parameters
 

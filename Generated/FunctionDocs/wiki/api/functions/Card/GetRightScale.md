@@ -8,7 +8,7 @@ Card.GetRightScale(Card c) -> int
 
 ## Description
 
-返回c的右灵摆刻度
+Returns the right-hand pendulum scale of c
 
 ## Parameters
 

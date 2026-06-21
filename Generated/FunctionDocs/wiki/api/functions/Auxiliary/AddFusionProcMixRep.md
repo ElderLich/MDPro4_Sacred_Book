@@ -8,7 +8,9 @@ Auxiliary.AddFusionProcMixRep(Card fcard, bool sub, bool insf, number|function|t
 
 ## Description
 
-Fusion monster, mixed material * minc to maxc + material + ...
+Add a Fusion Summon procedure for c
+Use minc-maxc monsters satisfying f1 and 1 of each monster in the additional parameters as Fusion Materials
+Additional parameters can be function or card code (int code), where passing a code is equivalent to passing function(code) return c:IsFusionCode(code) end
 
 ## Parameters
 

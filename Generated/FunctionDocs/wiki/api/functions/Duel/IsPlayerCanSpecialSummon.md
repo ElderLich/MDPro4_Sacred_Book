@@ -8,8 +8,8 @@ Duel.IsPlayerCanSpecialSummon(int player, [int sumtype], [int sumpos], [int targ
 
 ## Description
 
-检查玩家player能否特殊召唤[c到target_player场上，以sumtype召唤方式，sumpos表示形式]
-如果需要可选参数，则必须全部使用
+Check player player can special summon [c to target_player field to sumtype summation, sumpos form]
+If optional parameters are required, they must all be used
 
 ## Parameters
 

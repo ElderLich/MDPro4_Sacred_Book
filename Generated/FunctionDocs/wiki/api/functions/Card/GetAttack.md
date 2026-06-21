@@ -8,7 +8,7 @@ Card.GetAttack(Card c) -> int
 
 ## Description
 
-返回c的当前攻击力
+Return the current attack power of c, the return value is a negative that is "?"
 
 ## Parameters
 

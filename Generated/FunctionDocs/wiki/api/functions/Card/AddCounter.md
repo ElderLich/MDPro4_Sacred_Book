@@ -8,7 +8,7 @@ Card.AddCounter(Card c, int countertype, int count, [int singly]) -> bool
 
 ## Description
 
-为c放置count个countertype类型的指示物，singly为true表示逐个添加至上限为止
+Place count count counter type c for c, singly true to add one to the upper limit
 
 ## Parameters
 

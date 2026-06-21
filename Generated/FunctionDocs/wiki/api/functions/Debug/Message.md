@@ -8,8 +8,7 @@ Debug.Message(any msg) -> void
 
 ## Description
 
-显示消息。
-注意，只会在本地生效，在服务器端不会生效。
+Displays the message
 
 ## Parameters
 

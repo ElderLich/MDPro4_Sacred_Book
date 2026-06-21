@@ -8,7 +8,9 @@ Auxiliary.AddFusionProcFunRep2(Card c, function|table f, int minc, int maxc, boo
 
 ## Description
 
-Fusion monster, condition * minc to maxc
+Add a Fusion Summon procedure for c
+Use minc-maxc monsters satisfying the same condition f as Fusion Materials
+Equivalent to aux.AddFusionProcMixRep(c, false, insf, f, minc, maxc)
 
 ## Parameters
 

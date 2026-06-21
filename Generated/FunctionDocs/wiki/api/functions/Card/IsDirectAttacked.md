@@ -8,7 +8,7 @@ Card.IsDirectAttacked(Card c) -> bool
 
 ## Description
 
-检查c是否直接攻击过
+Check whether c direct attack
 
 ## Parameters
 

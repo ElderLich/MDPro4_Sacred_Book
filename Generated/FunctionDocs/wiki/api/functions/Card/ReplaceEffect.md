@@ -8,8 +8,8 @@ Card.ReplaceEffect(Card c, int code, int reset_flag, [int reset_count]) -> int
 
 ## Description
 
-把c的效果替换为卡号是code的卡的效果，并且添加额外的reset条件
-返回值是表示替换效果的代号id
+Replace the effect of c with the effect of the card whose card number is code, and add additional reset conditions
+The return value is the code id representing the replacement effect
 
 ## Parameters
 

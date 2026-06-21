@@ -8,7 +8,7 @@ Duel.SetChainLimitTillChainEnd(function f) -> void
 
 ## Description
 
-功能同Duel.SetChainLimit，但是此函数设定的连锁条件直到连锁结束才会解除
+Same as Duel.SetChainLimit, but the chain limit set by this function persists until the chain ends
 
 ## Parameters
 

@@ -8,7 +8,7 @@ Card.synchro_fusion_check(int tp, Group sg, Card fc) -> void
 
 ## Description
 
-素材检查（奇迹同调融合）
+Material check for Miracle Synchro Fusion.
 
 ## Parameters
 

@@ -8,7 +8,7 @@ Duel.CheckSummonedCount([Card c]) -> bool
 
 ## Description
 
-检查回合玩家本回合是否还能通常召唤[卡片c]
+Check whether the round player can still summon this turn [Card c]
 
 ## Parameters
 

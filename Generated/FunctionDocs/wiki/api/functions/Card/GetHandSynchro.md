@@ -8,7 +8,7 @@ Card.GetHandSynchro(Card c) -> nil|Effect,function|nil,int|nil,int|nil
 
 ## Description
 
-如果卡片 c 受到手卡同调效果 EFFECT_HAND_SYNCHRO 影响，则返回 Effect e,function target,int min,int max ;否则返回nil
+If card c is affected by the hand Synchro effect EFFECT_HAND_SYNCHRO, return Effect e, function target, int min, int max; otherwise return nil
 
 ## Parameters
 

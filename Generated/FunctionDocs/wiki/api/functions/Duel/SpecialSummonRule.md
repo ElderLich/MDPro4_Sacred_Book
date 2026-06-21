@@ -8,7 +8,7 @@ Duel.SpecialSummonRule(int player, Card c, [int sumtype]) -> void
 
 ## Description
 
-让玩家player对c[用 sumtype 方式]进行特殊召唤手续（？）
+Let player player on c special summon procedures
 
 ## Parameters
 

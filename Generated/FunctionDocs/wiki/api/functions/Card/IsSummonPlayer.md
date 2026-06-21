@@ -8,7 +8,7 @@ Card.IsSummonPlayer(Card c, int player) -> bool
 
 ## Description
 
-检查将c召唤·特殊召唤的玩家是否为player
+Check if the player who Normal Summoned or Special Summoned card c is player
 
 ## Parameters
 

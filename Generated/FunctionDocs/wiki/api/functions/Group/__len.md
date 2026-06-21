@@ -8,7 +8,7 @@ Group.__len(Group g) -> int
 
 ## Description
 
-Length operator for Group. Equivalent to Group.GetCount.
+Same as Group.GetCount
 
 ## Parameters
 

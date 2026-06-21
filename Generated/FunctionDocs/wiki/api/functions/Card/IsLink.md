@@ -8,7 +8,7 @@ Card.IsLink(Card c, int link1, [int link2], [... int]) -> bool
 
 ## Description
 
-检查c的连接标记数量是否是 link1[, 或者为 link2...]
+Check if card c's Link Marker count is link1 [, or link2...]
 
 ## Parameters
 

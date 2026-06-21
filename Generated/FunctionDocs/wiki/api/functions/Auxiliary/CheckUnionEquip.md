@@ -8,7 +8,7 @@ Auxiliary.CheckUnionEquip(any uc, Card tc, any exclude_modern_count) -> void
 
 ## Description
 
-TODO document.
+Check if Union Monster uc can be equipped to monster tc as a Union Equip
 
 ## Parameters
 

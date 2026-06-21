@@ -8,7 +8,7 @@ Debug.PreEquip(Card equip_card, Card target) -> bool
 
 ## Description
 
-为target添加装备equip_card ，返回值表示是否成功
+Add equip_card to the target
 
 ## Parameters
 

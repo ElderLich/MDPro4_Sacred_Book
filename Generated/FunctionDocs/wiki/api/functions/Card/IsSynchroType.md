@@ -8,7 +8,7 @@ Card.IsSynchroType(Card c, int type) -> bool
 
 ## Description
 
-检查c用作同调素材时是否属于类型type（与IsType的区别在于对于魔陷区的怪兽卡，用其原本类型作判断）
+Check if card c, when used as Synchro Material, has type type (unlike IsType, for monster cards in the Spell/Trap Zone, it uses their original type for judgment)
 
 ## Parameters
 

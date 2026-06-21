@@ -8,7 +8,7 @@ Duel.CheckXyzMaterial(Card c, [function|nil f], int lv, int min, int max, [Group
 
 ## Description
 
-检查场上[或mg中]是否存在XYZ召唤c的XYZ用等级为lv的min-max个满足条件f的叠放素材
+Check on the field or mg in the presence of excess call c excess with the level of lv min-max meet the conditions of the stack f material
 
 ## Parameters
 

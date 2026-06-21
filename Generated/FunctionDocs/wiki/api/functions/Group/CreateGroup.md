@@ -8,7 +8,7 @@ Group.CreateGroup() -> Group
 
 ## Description
 
-新建一个空的卡片组
+Create a new empty deck
 
 ## Returns
 

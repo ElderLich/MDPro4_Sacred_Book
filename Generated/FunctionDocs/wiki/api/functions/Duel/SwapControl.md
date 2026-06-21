@@ -8,8 +8,7 @@ Duel.SwapControl(Card|Group targets1, Card|Group targets2, [int reset_phase], [i
 
 ## Description
 
-交换targets1与targets2的控制权，返回值表示是否成功
-第三个第四个参数同 Duel.GetControl
+Exchange c1 and c2 control, the return value that is successful
 
 ## Parameters
 

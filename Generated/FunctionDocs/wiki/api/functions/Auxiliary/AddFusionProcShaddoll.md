@@ -8,7 +8,7 @@ Auxiliary.AddFusionProcShaddoll(Card c, int attr) -> void
 
 ## Description
 
-Fusion monster, Shaddoll materials
+Exclusive to Shaddoll Fusion Monsters; attribute is the required Attribute
 
 ## Parameters
 

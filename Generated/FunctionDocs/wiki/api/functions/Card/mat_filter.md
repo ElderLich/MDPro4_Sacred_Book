@@ -8,8 +8,7 @@ Card.mat_filter(Card c, int tp) -> bool
 
 ## Description
 
---
-仪式怪兽的解放过滤条件
+Release filter condition for Ritual Monsters.
 
 ## Parameters
 

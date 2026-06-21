@@ -8,7 +8,7 @@ Effect.GetActivateSequence(Effect e) -> int
 
 ## Description
 
-返回效果e的发动区域序号
+Return the sequence number of the activation location of effect e
 
 ## Parameters
 

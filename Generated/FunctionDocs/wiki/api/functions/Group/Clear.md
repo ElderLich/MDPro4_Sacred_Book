@@ -8,7 +8,7 @@ Group.Clear(Group g) -> void
 
 ## Description
 
-清空卡片组
+Empty the deck
 
 ## Parameters
 

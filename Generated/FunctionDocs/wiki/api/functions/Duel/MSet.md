@@ -8,9 +8,9 @@ Duel.MSet(int player, Card c, bool ignore_count, [Effect|nil e], [int min], [int
 
 ## Description
 
-让玩家 player 以效果e对c[在区域 zone]进行通常召唤的Set，至少使用min个祭品
-如果e=nil,那么就按照一般的通常召唤规则进行通常召唤
-如果ignore_count=true，则忽略每回合的通常召唤次数限制
+Let the player to the effect of c is usually called Set, at least use min sacrifice
+If e = nil, then in accordance with the general rules of the general call usually call
+If ignore_count = true, the usual number of calls per turn limit is ignored
 
 ## Parameters
 

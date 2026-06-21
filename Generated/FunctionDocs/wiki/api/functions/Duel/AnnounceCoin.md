@@ -8,7 +8,7 @@ Duel.AnnounceCoin(int player) -> int
 
 ## Description
 
-让玩家player宣言硬币的正反面
+Let the player declare the positive and negative sides of the coin
 
 ## Parameters
 

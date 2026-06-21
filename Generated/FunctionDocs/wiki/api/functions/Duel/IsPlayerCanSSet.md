@@ -8,7 +8,7 @@ Duel.IsPlayerCanSSet(int player, [Card scard]) -> bool
 
 ## Description
 
-检查玩家player是否可以[将scard]盖放。
+Check if player can Set [scard]
 
 ## Parameters
 

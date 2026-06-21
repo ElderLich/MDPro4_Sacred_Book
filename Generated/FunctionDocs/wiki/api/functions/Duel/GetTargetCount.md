@@ -8,7 +8,7 @@ Duel.GetTargetCount([function|nil f], int player, int s, int o, [Card|Group|nil 
 
 ## Description
 
-基本同Duel.GetMatchingGroupCount ，不同之处在于需要追加判定卡片是否能成为当前正在处理的效果的对象
+Basic with Duel.GetMatchingGroupCount, the difference lies in the need to add to determine whether the card is currently being processed by the effect of the object
 
 ## Parameters
 

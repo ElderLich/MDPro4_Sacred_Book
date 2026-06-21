@@ -8,7 +8,7 @@ Group.KeepAlive(Group g) -> void
 
 ## Description
 
-让卡片组持续，把卡片组设置为效果的LabelObject需要设置
+Let the deck continue, set the deck to effect LabelObject needs to be set
 
 ## Parameters
 

@@ -8,7 +8,7 @@ Card.IsCanBeEffectTarget(Card c, [Effect e]) -> bool
 
 ## Description
 
-检查c是否可以成为效果[e的]对象
+Check whether c can be the object of effect e
 
 ## Parameters
 

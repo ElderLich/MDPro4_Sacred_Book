@@ -8,7 +8,7 @@ Duel.GetTributeGroup(Card c) -> Group
 
 ## Description
 
-返回场上用于通常召唤c可解放（上级召唤用）的卡片组
+Returns the deck of cards used for the normal summon c to be released (for higher-level summons)
 
 ## Parameters
 

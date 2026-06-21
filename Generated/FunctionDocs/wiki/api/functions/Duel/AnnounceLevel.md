@@ -8,7 +8,7 @@ Duel.AnnounceLevel(int player, [int|nil min], [int|nil max], [... int]) -> int
 
 ## Description
 
-让玩家宣言一个[min-max]等级并返回
+Let the player declare a level
 
 ## Parameters
 

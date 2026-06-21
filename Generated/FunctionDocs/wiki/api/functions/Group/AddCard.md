@@ -8,7 +8,7 @@ Group.AddCard(Group g, Card c) -> void
 
 ## Description
 
-往g中增加c
+Increase g to g
 
 ## Parameters
 

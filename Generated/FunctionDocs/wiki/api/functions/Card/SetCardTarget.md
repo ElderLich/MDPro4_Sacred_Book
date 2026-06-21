@@ -8,8 +8,8 @@ Card.SetCardTarget(Card c1, Card c2) -> void
 
 ## Description
 
-把c2作为c1的永续对象
-c1和c2的联系会在c1或c2任意一卡离场或变成里侧表示时reset
+C2 as the perpetual object of c1
+C1 and c2 of the contact will c1 or c2 any one card to leave or become the side of that reset
 
 ## Parameters
 

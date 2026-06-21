@@ -8,7 +8,7 @@ Duel.IsDamageCalculated() -> bool
 
 ## Description
 
-用于在伤害阶段检查是否已经计算了战斗伤害
+Used to check if damage has been calculated during the damage phase
 
 ## Returns
 

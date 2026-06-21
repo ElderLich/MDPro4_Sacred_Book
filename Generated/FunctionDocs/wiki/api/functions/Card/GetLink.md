@@ -8,7 +8,7 @@ Card.GetLink(Card c) -> int
 
 ## Description
 
-返回c的连接标记数量
+Return the Link Marker count of card c
 
 ## Parameters
 

@@ -8,7 +8,7 @@ Duel.IsMainPhase() -> bool
 
 ## Description
 
-返回当前的阶段是否为主要阶段
+Returns whether the current phase is a Main Phase.
 
 ## Returns
 

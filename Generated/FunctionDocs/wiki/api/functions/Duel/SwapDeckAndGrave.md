@@ -8,7 +8,7 @@ Duel.SwapDeckAndGrave(int player) -> void
 
 ## Description
 
-现世与冥界的逆转专用。把玩家player的卡组和墓地交换
+This world and the underworld reversal dedicated. The players player card group and the cemetery exchange
 
 ## Parameters
 

@@ -8,7 +8,7 @@ Card.ReverseInDeck(Card c) -> void
 
 ## Description
 
-设置c在卡组中正面表示（POS_FACEUP_DEFENSE）
+The setting c is indicated in the front of the deck
 
 ## Parameters
 

@@ -8,9 +8,8 @@ Card.IsAbleToHand(Card c) -> bool
 
 ## Description
 
-检查c是否可以送去手卡
-注：仅当卡片或者玩家受到“不能加入手卡”的效果的影响时（如雷王）此函数才返回false
-##以下几个函数类似
+Check whether c can hand
+Note: This function returns false only if the card or player is affected by the effect of being unable to join the hand (such as Ray King)
 
 ## Parameters
 

@@ -8,8 +8,8 @@ Card.IsOnField(Card c) -> bool
 
 ## Description
 
-检查c是否在场
-注：当怪兽召唤，反转召唤，特殊召唤时召唤成功之前，此函数返回false
+Check if c is present
+Note: This function returns false when the monster summons, reverses the call, and when the summon is successful
 
 ## Parameters
 

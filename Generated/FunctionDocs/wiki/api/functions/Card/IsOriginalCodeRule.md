@@ -8,7 +8,7 @@ Card.IsOriginalCodeRule(Card c, int code) -> bool
 
 ## Description
 
-检查c是否在规则上当做code使用
+Check if card c is treated as code under the rules
 
 ## Parameters
 

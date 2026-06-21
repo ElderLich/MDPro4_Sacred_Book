@@ -8,7 +8,7 @@ Card.GetSynchroType(Card c) -> int
 
 ## Description
 
-返回c用作同调素材时的类型（与GetType的区别在于对于魔陷区的怪兽卡，返回其原本类型）
+Return the type of card c when used as Synchro Material (unlike GetType, for monster cards in the Spell/Trap Zone, it returns their original type)
 
 ## Parameters
 

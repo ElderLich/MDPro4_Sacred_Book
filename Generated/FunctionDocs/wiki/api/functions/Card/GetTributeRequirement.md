@@ -8,7 +8,7 @@ Card.GetTributeRequirement(Card c) -> int,int
 
 ## Description
 
-返回通常召唤c所需要的祭品的最小和最大数量
+Returns the minimum and maximum number of sacrifices required to normally call c
 
 ## Parameters
 

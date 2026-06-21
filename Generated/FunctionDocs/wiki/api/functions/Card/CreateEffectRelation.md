@@ -8,7 +8,7 @@ Card.CreateEffectRelation(Card c, Effect e) -> void
 
 ## Description
 
-为卡片c和效果e建立联系
+For the card c and the effect of e to establish contact
 
 ## Parameters
 

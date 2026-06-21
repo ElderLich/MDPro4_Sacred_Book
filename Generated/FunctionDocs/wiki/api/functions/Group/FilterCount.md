@@ -8,7 +8,7 @@ Group.FilterCount(Group g, function f, [Card|Group|nil ex], ... any) -> int
 
 ## Description
 
-过滤函数，和Group.Filter基本相同，不同之处在于此函数只返回满足条件的卡的数量
+Filter function, and Group.Filter is basically the same, the difference is that this function only returns the number of cards to meet the conditions
 
 ## Parameters
 

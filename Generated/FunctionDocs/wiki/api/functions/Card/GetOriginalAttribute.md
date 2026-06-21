@@ -8,7 +8,7 @@ Card.GetOriginalAttribute(Card c) -> int
 
 ## Description
 
-返回c的卡片记载的属性
+Returns the attributes of the card that c is describing
 
 ## Parameters
 

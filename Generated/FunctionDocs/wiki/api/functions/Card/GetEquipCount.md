@@ -8,7 +8,7 @@ Card.GetEquipCount(Card c) -> int
 
 ## Description
 
-返回c当前装备着的卡片数量
+Returns the number of cards currently loaded
 
 ## Parameters
 

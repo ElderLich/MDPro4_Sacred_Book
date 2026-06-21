@@ -8,7 +8,7 @@ Card.IsDefensePos(Card c) -> bool
 
 ## Description
 
-检查c是否是守备表示
+Check whether c is a defensive representation
 
 ## Parameters
 

@@ -8,9 +8,9 @@ Duel.Recover(int player, int value, int reason, [bool is_step]) -> int
 
 ## Description
 
-以reason原因使玩家player回复value的LP，返回实际的回复值
-如果受到回复变成伤害等效果的影响时，返回值为0.
-is_step为true则是伤害/恢复LP过程的分解，需要调用Duel.RDComplete()触发时点
+To reason reason players to player value LP, return to the actual response value
+The return value is 0 if it is affected by an effect such as a return to harm.
+Is_step to true is the damage / recovery LP process decomposition, need to call Duel.RDComplete() trigger point
 
 ## Parameters
 

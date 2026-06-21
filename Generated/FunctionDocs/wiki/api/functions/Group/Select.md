@@ -8,7 +8,7 @@ Group.Select(Group g, int player, int min, int max, [Card|Group|nil ex]) -> Grou
 
 ## Description
 
-让玩家player从g中选择min-max张不等于ex的卡
+Let player player from g select the min-max Zhang is not equal to the ex card
 
 ## Parameters
 

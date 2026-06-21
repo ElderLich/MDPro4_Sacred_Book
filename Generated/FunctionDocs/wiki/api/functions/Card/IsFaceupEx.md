@@ -8,7 +8,7 @@ Card.IsFaceupEx(Card c) -> bool
 
 ## Description
 
-检查c是否是表侧表示，在手卡墓地主卡组等处始终返回true
+Checks whether c is face-up; returns true for cards in the hand, Graveyard, Main Deck, and similar hidden/non-field locations.
 
 ## Parameters
 

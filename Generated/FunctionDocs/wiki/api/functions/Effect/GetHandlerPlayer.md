@@ -8,7 +8,7 @@ Effect.GetHandlerPlayer(Effect e) -> int
 
 ## Description
 
-返回当前玩家，一般是Handler的控制者
+Return to the current, usually Handle controller
 
 ## Parameters
 

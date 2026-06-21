@@ -8,7 +8,7 @@ Effect.GetValue(Effect e) -> function|int
 
 ## Description
 
-返回value属性
+Returns the value attribute
 
 ## Parameters
 

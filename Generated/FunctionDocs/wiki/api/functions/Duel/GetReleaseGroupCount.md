@@ -8,7 +8,7 @@ Duel.GetReleaseGroupCount(int player, [bool use_hand], [int reason]) -> int
 
 ## Description
 
-返回玩家player能以原因reason解放的卡片数量， use_hand=true 则包括手卡
+Return player player can be liberated (non-superior summoned with) the number of cards, use_hand is true, including the hand card
 
 ## Parameters
 

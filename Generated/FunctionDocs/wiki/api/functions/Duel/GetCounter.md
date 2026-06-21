@@ -8,8 +8,8 @@ Duel.GetCounter(int player, int s, int o, int countertype) -> int
 
 ## Description
 
-返回场上存在的countertype类型的指示物的数量
-s表示对player来说的己方的可移除指示物的位置，o表示对player来说的对方的可移除指示物的位置
+Returns the number of counterstype types that exist on the farm
+S represents the position of the player's own removable pointer, o represents the position of the opponent's removable pointer for the player
 
 ## Parameters
 

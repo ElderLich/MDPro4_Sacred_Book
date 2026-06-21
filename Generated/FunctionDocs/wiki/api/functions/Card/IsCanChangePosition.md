@@ -8,7 +8,7 @@ Card.IsCanChangePosition(Card c) -> bool
 
 ## Description
 
-检查c是否可以用效果改变表示形式
+Check if c can have its battle position changed by an effect
 
 ## Parameters
 

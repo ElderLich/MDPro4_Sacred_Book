@@ -8,9 +8,9 @@ Group.SelectUnselect(Group cg, [Group|nil sg], int player, bool btok, bool cance
 
 ## Description
 
-让玩家 player 从 cg 中选择 1 张卡放入 sg ，并返回选的卡。
-btok 表示是否可以点击完成选择的按钮， cancelable 表示是否可以取消整个选择返回 nil，
-minc 和 maxc 是客户端的文字缓冲提示，表示需要选择 minc-maxc 张卡，但是这个只是影响视觉效果，并不代表必须要选择那个数量
+Have player select 1 card from cg to add to sg and return the selected card
+btok indicates whether the confirm selection button is available, cancelable indicates whether selected cards can be canceled
+minc and maxc are client-side text buffer prompts indicating the need to select minc-maxc cards, but this only affects visual display and does not enforce the selection count
 
 ## Parameters
 

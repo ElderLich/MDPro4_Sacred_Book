@@ -8,9 +8,8 @@ Duel.IsExistingMatchingCard([function|nil f], int player, int s, int o, int coun
 
 ## Description
 
-过滤函数，检查以player来看的指定位置是否存在至少count张满足过滤条件f并且不等于ex的卡
-s代表以player来看的自己的位置，o代表以player来看的对方的位置
-第7个参数开始为额外参数
+Filter the function to check if there are at least count cards that satisfy the filter condition f and not equal to ex
+The seventh argument starts as an extra parameter
 
 ## Parameters
 

@@ -8,7 +8,7 @@ Duel.SelectTribute(int player, Card c, int min, int max, [Group|nil mg], [int|ni
 
 ## Description
 
-让玩家player从场上[或mg中]选择用于通常召唤c的min-max个祭品，召唤到 toplayer 场上
+Let the player player [from the mg] choose the min-max sacrifices that are normally used to summon c, ex = true to allow the monster on the other side of the field (the wing of the Sun God-Sphere)
 
 ## Parameters
 

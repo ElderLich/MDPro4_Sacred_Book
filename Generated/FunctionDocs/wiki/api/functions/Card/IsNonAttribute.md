@@ -8,8 +8,8 @@ Card.IsNonAttribute(Card c, int attribute) -> bool
 
 ## Description
 
-检查c是否有attribute以外的属性
-（如暗黑神鸟同时具有暗和风属性，not IsAttribute(暗)是false，但IsNonAttribute(暗)是true）
+Checks whether c has any Attribute other than attribute.
+For example, if a monster is both DARK and WIND, IsAttribute(DARK) is true, but IsNonAttribute(DARK) is also true.
 
 ## Parameters
 

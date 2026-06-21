@@ -8,7 +8,8 @@ Auxiliary.AddRitualProcGreater(Card c, function filter, any summon_location, any
 
 ## Description
 
-TODO document.
+Add a ritual summon effect to c
+Filter for the ritual monster to meet the conditions, the material level can be more than the ritual monster level
 
 ## Parameters
 

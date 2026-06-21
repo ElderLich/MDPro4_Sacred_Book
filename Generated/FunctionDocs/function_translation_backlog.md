@@ -1,6 +1,84 @@
-# Function Documentation Backlog
+# Function Documentation And Translation Backlog
 
-Needs documentation: 201
+Needs documentation or translation: 259
+
+## Auxiliary.AddCodeList
+
+- Status: `missing_documentation`
+- Signature: `Auxiliary.AddCodeList(Card c, ... any) -> void`
+- Core binding: `(none)`
+- Aliases: `aux.AddCodeList`
+
+Current description:
+
+> TODO document.
+
+Source: `Utilities/utility.lua:533`
+
+## Auxiliary.AddDrytronSpSummonEffect
+
+- Status: `missing_documentation`
+- Signature: `Auxiliary.AddDrytronSpSummonEffect(Card c, function func) -> void`
+- Core binding: `(none)`
+- Aliases: `aux.AddDrytronSpSummonEffect`
+
+Current description:
+
+> TODO document.
+
+Source: `Utilities/utility.lua:999`
+
+## Auxiliary.AddMaterialCodeList
+
+- Status: `missing_documentation`
+- Signature: `Auxiliary.AddMaterialCodeList(Card c, ... any) -> void`
+- Core binding: `(none)`
+- Aliases: `aux.AddMaterialCodeList`
+
+Current description:
+
+> TODO document.
+
+Source: `Utilities/utility.lua:498`
+
+## Auxiliary.AddSetNameMonsterList
+
+- Status: `missing_documentation`
+- Signature: `Auxiliary.AddSetNameMonsterList(Card c, ... any) -> void`
+- Core binding: `(none)`
+- Aliases: `aux.AddSetNameMonsterList`
+
+Current description:
+
+> TODO document.
+
+Source: `Utilities/utility.lua:553`
+
+## Auxiliary.AddThisCardInGraveAlreadyCheck
+
+- Status: `missing_documentation`
+- Signature: `Auxiliary.AddThisCardInGraveAlreadyCheck(Card c) -> void`
+- Core binding: `(none)`
+- Aliases: `aux.AddThisCardInGraveAlreadyCheck`
+
+Current description:
+
+> TODO document.
+
+Source: `Utilities/utility.lua:1548`
+
+## Auxiliary.AddUrsarcticSpSummonEffect
+
+- Status: `missing_documentation`
+- Signature: `Auxiliary.AddUrsarcticSpSummonEffect(Card c) -> void`
+- Core binding: `(none)`
+- Aliases: `aux.AddUrsarcticSpSummonEffect`
+
+Current description:
+
+> TODO document.
+
+Source: `Utilities/utility.lua:938`
 
 ## Auxiliary.AND
 
@@ -40,6 +118,19 @@ Current description:
 > TODO document.
 
 Source: `Utilities/utility.lua:281`
+
+## Auxiliary.AtkEqualsDef
+
+- Status: `missing_documentation`
+- Signature: `Auxiliary.AtkEqualsDef(Card c) -> void`
+- Core binding: `(none)`
+- Aliases: `aux.AtkEqualsDef`
+
+Current description:
+
+> TODO document.
+
+Source: `Utilities/utility.lua:1115`
 
 ## Auxiliary.BanishRedirectCondition
 
@@ -93,6 +184,32 @@ Current description:
 
 Source: `Utilities/utility.lua:1807`
 
+## Auxiliary.bpcon
+
+- Status: `missing_documentation`
+- Signature: `Auxiliary.bpcon(Effect e, int tp, Group eg, int ep, any ev, Effect re, any r, int rp) -> void`
+- Core binding: `(none)`
+- Aliases: `aux.bpcon`
+
+Current description:
+
+> TODO document.
+
+Source: `Utilities/utility.lua:806`
+
+## Auxiliary.ChangeBattleDamage
+
+- Status: `missing_documentation`
+- Signature: `Auxiliary.ChangeBattleDamage(int player, Effect value) -> void`
+- Core binding: `(none)`
+- Aliases: `aux.ChangeBattleDamage`
+
+Current description:
+
+> TODO document.
+
+Source: `Utilities/utility.lua:726`
+
 ## Auxiliary.CheckGroupRecursive
 
 - Status: `missing_documentation`
@@ -145,6 +262,19 @@ Current description:
 
 Source: `Utilities/utility.lua:859`
 
+## Auxiliary.dabcheck
+
+- Status: `missing_documentation`
+- Signature: `Auxiliary.dabcheck(Group g) -> void`
+- Core binding: `(none)`
+- Aliases: `aux.dabcheck`
+
+Current description:
+
+> TODO document.
+
+Source: `Utilities/utility.lua:1142`
+
 ## Auxiliary.DimensionalFissureTarget
 
 - Status: `missing_documentation`
@@ -157,6 +287,84 @@ Current description:
 > TODO document.
 
 Source: `Utilities/utility.lua:1986`
+
+## Auxiliary.dlkcheck
+
+- Status: `missing_documentation`
+- Signature: `Auxiliary.dlkcheck(Group g) -> void`
+- Core binding: `(none)`
+- Aliases: `aux.dlkcheck`
+
+Current description:
+
+> TODO document.
+
+Source: `Utilities/utility.lua:1138`
+
+## Auxiliary.dlvcheck
+
+- Status: `missing_documentation`
+- Signature: `Auxiliary.dlvcheck(Group g) -> void`
+- Core binding: `(none)`
+- Aliases: `aux.dlvcheck`
+
+Current description:
+
+> TODO document.
+
+Source: `Utilities/utility.lua:1130`
+
+## Auxiliary.dncheck
+
+- Status: `missing_documentation`
+- Signature: `Auxiliary.dncheck(Group g) -> void`
+- Core binding: `(none)`
+- Aliases: `aux.dncheck`
+
+Current description:
+
+> TODO document.
+
+Source: `Utilities/utility.lua:1126`
+
+## Auxiliary.dogfcon
+
+- Status: `missing_documentation`
+- Signature: `Auxiliary.dogfcon(Effect e, int tp, Group eg, int ep, any ev, Effect re, any r, int rp) -> void`
+- Core binding: `(none)`
+- Aliases: `aux.dogfcon`
+
+Current description:
+
+> TODO document.
+
+Source: `Utilities/utility.lua:796`
+
+## Auxiliary.drccheck
+
+- Status: `missing_documentation`
+- Signature: `Auxiliary.drccheck(Group g) -> void`
+- Core binding: `(none)`
+- Aliases: `aux.drccheck`
+
+Current description:
+
+> TODO document.
+
+Source: `Utilities/utility.lua:1146`
+
+## Auxiliary.drkcheck
+
+- Status: `missing_documentation`
+- Signature: `Auxiliary.drkcheck(Group g) -> void`
+- Core binding: `(none)`
+- Aliases: `aux.drkcheck`
+
+Current description:
+
+> TODO document.
+
+Source: `Utilities/utility.lua:1134`
 
 ## Auxiliary.DrytronCostFilter
 
@@ -249,6 +457,32 @@ Current description:
 
 Source: `Utilities/utility.lua:1057`
 
+## Auxiliary.dscon
+
+- Status: `missing_documentation`
+- Signature: `Auxiliary.dscon(Effect e, int tp, Group eg, int ep, any ev, Effect re, any r, int rp) -> void`
+- Core binding: `(none)`
+- Aliases: `aux.dscon`
+
+Current description:
+
+> TODO document.
+
+Source: `Utilities/utility.lua:810`
+
+## Auxiliary.dsercon
+
+- Status: `missing_documentation`
+- Signature: `Auxiliary.dsercon(Effect e, int tp, Group eg, int ep, any ev, Effect re, any r, int rp) -> void`
+- Core binding: `(none)`
+- Aliases: `aux.dsercon`
+
+Current description:
+
+> TODO document.
+
+Source: `Utilities/utility.lua:786`
+
 ## Auxiliary.EffectCategoryFilter
 
 - Status: `missing_documentation`
@@ -287,6 +521,45 @@ Current description:
 > TODO document.
 
 Source: `Utilities/utility.lua:1791`
+
+## Auxiliary.EnableChangeCode
+
+- Status: `missing_documentation`
+- Signature: `Auxiliary.EnableChangeCode(Card c, Effect code, any location, function condition) -> void`
+- Core binding: `(none)`
+- Aliases: `aux.EnableChangeCode`
+
+Current description:
+
+> TODO document.
+
+Source: `Utilities/utility.lua:433`
+
+## Auxiliary.EnableExtraDeckSummonCountLimit
+
+- Status: `missing_documentation`
+- Signature: `Auxiliary.EnableExtraDeckSummonCountLimit() -> void`
+- Core binding: `(none)`
+- Aliases: `aux.EnableExtraDeckSummonCountLimit`
+
+Current description:
+
+> TODO document.
+
+Source: `Utilities/utility.lua:482`
+
+## Auxiliary.EnableNeosReturn
+
+- Status: `missing_documentation`
+- Signature: `Auxiliary.EnableNeosReturn(Card c, function operation, any set_category) -> void`
+- Core binding: `(none)`
+- Aliases: `aux.EnableNeosReturn`
+
+Current description:
+
+> TODO document.
+
+Source: `Utilities/utility.lua:222`
 
 ## Auxiliary.EPDestroyOperation
 
@@ -340,6 +613,19 @@ Current description:
 
 Source: `Utilities/utility.lua:493`
 
+## Auxiliary.ExtraReleaseFilter
+
+- Status: `missing_documentation`
+- Signature: `Auxiliary.ExtraReleaseFilter(Card c, int tp) -> void`
+- Core binding: `(none)`
+- Aliases: `aux.ExtraReleaseFilter`
+
+Current description:
+
+> TODO document.
+
+Source: `Utilities/utility.lua:1515`
+
 ## Auxiliary.FALSE
 
 - Status: `missing_documentation`
@@ -365,6 +651,32 @@ Current description:
 > TODO document.
 
 Source: `Utilities/utility.lua:584`
+
+## Auxiliary.GetCappedAttack
+
+- Status: `missing_documentation`
+- Signature: `Auxiliary.GetCappedAttack(Card c) -> void`
+- Core binding: `(none)`
+- Aliases: `aux.GetCappedAttack`
+
+Current description:
+
+> TODO document.
+
+Source: `Utilities/utility.lua:1537`
+
+## Auxiliary.GetCappedLevel
+
+- Status: `missing_documentation`
+- Signature: `Auxiliary.GetCappedLevel(Card c) -> void`
+- Core binding: `(none)`
+- Aliases: `aux.GetCappedLevel`
+
+Current description:
+
+> TODO document.
+
+Source: `Utilities/utility.lua:1519`
 
 ## Auxiliary.GetCappedXyzLevel
 
@@ -431,6 +743,71 @@ Current description:
 
 Source: `Utilities/utility.lua:601`
 
+## Auxiliary.GetMaterialListCount
+
+- Status: `missing_documentation`
+- Signature: `Auxiliary.GetMaterialListCount(Card c) -> void`
+- Core binding: `(none)`
+- Aliases: `aux.GetMaterialListCount`
+
+Current description:
+
+> TODO document.
+
+Source: `Utilities/utility.lua:529`
+
+## Auxiliary.GetMultiLinkedZone
+
+- Status: `missing_documentation`
+- Signature: `Auxiliary.GetMultiLinkedZone(int tp) -> void`
+- Core binding: `(none)`
+- Aliases: `aux.GetMultiLinkedZone`
+
+Current description:
+
+> TODO document.
+
+Source: `Utilities/utility.lua:1181`
+
+## Auxiliary.GetXyzNumber
+
+- Status: `missing_documentation`
+- Signature: `Auxiliary.GetXyzNumber(any v) -> void`
+- Core binding: `(none)`
+- Aliases: `aux.GetXyzNumber`
+
+Current description:
+
+> TODO document.
+
+Source: `Utilities/utility.lua:60`
+
+## Auxiliary.gfcheck
+
+- Status: `missing_documentation`
+- Signature: `Auxiliary.gfcheck(Group g, function f, any a1, any a2) -> void`
+- Core binding: `(none)`
+- Aliases: `aux.gfcheck`
+
+Current description:
+
+> TODO document.
+
+Source: `Utilities/utility.lua:1150`
+
+## Auxiliary.gffcheck
+
+- Status: `missing_documentation`
+- Signature: `Auxiliary.gffcheck(Group g, any f1, any a1, any f2, any a2) -> void`
+- Core binding: `(none)`
+- Aliases: `aux.gffcheck`
+
+Current description:
+
+> TODO document.
+
+Source: `Utilities/utility.lua:1157`
+
 ## Auxiliary.GiveUpNormalDraw
 
 - Status: `missing_documentation`
@@ -457,6 +834,45 @@ Current description:
 
 Source: `Utilities/utility.lua:550`
 
+## Auxiliary.IsCounterAdded
+
+- Status: `missing_documentation`
+- Signature: `Auxiliary.IsCounterAdded(Card c, any counter) -> void`
+- Core binding: `(none)`
+- Aliases: `aux.IsCounterAdded`
+
+Current description:
+
+> TODO document.
+
+Source: `Utilities/utility.lua:574`
+
+## Auxiliary.IsInGroup
+
+- Status: `missing_documentation`
+- Signature: `Auxiliary.IsInGroup(Card c, Group g) -> void`
+- Core binding: `(none)`
+- Aliases: `aux.IsInGroup`
+
+Current description:
+
+> TODO document.
+
+Source: `Utilities/utility.lua:597`
+
+## Auxiliary.IsMaterialListType
+
+- Status: `missing_documentation`
+- Signature: `Auxiliary.IsMaterialListType(Card c, Effect type) -> void`
+- Core binding: `(none)`
+- Aliases: `aux.IsMaterialListType`
+
+Current description:
+
+> TODO document.
+
+Source: `Utilities/utility.lua:526`
+
 ## Auxiliary.IsPlayerCanNormalDraw
 
 - Status: `missing_documentation`
@@ -469,6 +885,45 @@ Current description:
 > TODO document.
 
 Source: `Utilities/utility.lua:1854`
+
+## Auxiliary.IsSetNameMonsterListed
+
+- Status: `missing_documentation`
+- Signature: `Auxiliary.IsSetNameMonsterListed(Card c, Effect setcode) -> void`
+- Core binding: `(none)`
+- Aliases: `aux.IsSetNameMonsterListed`
+
+Current description:
+
+> TODO document.
+
+Source: `Utilities/utility.lua:567`
+
+## Auxiliary.IsTypeInText
+
+- Status: `missing_documentation`
+- Signature: `Auxiliary.IsTypeInText(Card c, Effect type) -> void`
+- Core binding: `(none)`
+- Aliases: `aux.IsTypeInText`
+
+Current description:
+
+> TODO document.
+
+Source: `Utilities/utility.lua:581`
+
+## Auxiliary.LabrynthDestroyOp
+
+- Status: `missing_documentation`
+- Signature: `Auxiliary.LabrynthDestroyOp(Effect e, int tp, any res) -> void`
+- Core binding: `(none)`
+- Aliases: `aux.LabrynthDestroyOp`
+
+Current description:
+
+> TODO document.
+
+Source: `Utilities/utility.lua:1096`
 
 ## Auxiliary.MaterialReasonCardReg
 
@@ -560,6 +1015,110 @@ Current description:
 > TODO document.
 
 Source: `Utilities/utility.lua:2028`
+
+## Auxiliary.mzctcheck
+
+- Status: `missing_documentation`
+- Signature: `Auxiliary.mzctcheck(Group g, int tp) -> void`
+- Core binding: `(none)`
+- Aliases: `aux.mzctcheck`
+
+Current description:
+
+> TODO document.
+
+Source: `Utilities/utility.lua:1163`
+
+## Auxiliary.nbcon
+
+- Status: `missing_documentation`
+- Signature: `Auxiliary.nbcon(int tp, Effect re) -> void`
+- Core binding: `(none)`
+- Aliases: `aux.nbcon`
+
+Current description:
+
+> TODO document.
+
+Source: `Utilities/utility.lua:1464`
+
+## Auxiliary.nbtg
+
+- Status: `missing_documentation`
+- Signature: `Auxiliary.nbtg(Effect e, int tp, Group eg, int ep, any ev, Effect re, any r, int rp, bool chk) -> void`
+- Core binding: `(none)`
+- Aliases: `aux.nbtg`
+
+Current description:
+
+> TODO document.
+
+Source: `Utilities/utility.lua:1469`
+
+## Auxiliary.ndcon
+
+- Status: `missing_documentation`
+- Signature: `Auxiliary.ndcon(int tp, Effect re) -> void`
+- Core binding: `(none)`
+- Aliases: `aux.ndcon`
+
+Current description:
+
+> TODO document.
+
+Source: `Utilities/utility.lua:1482`
+
+## Auxiliary.NecroValleyNegateCheck
+
+- Status: `missing_documentation`
+- Signature: `Auxiliary.NecroValleyNegateCheck(any v) -> void`
+- Core binding: `(none)`
+- Aliases: `aux.NecroValleyNegateCheck`
+
+Current description:
+
+> TODO document.
+
+Source: `Utilities/utility.lua:926`
+
+## Auxiliary.NegateAnyFilter
+
+- Status: `missing_documentation`
+- Signature: `Auxiliary.NegateAnyFilter(Card c) -> void`
+- Core binding: `(none)`
+- Aliases: `aux.NegateAnyFilter`
+
+Current description:
+
+> TODO document.
+
+Source: `Utilities/utility.lua:752`
+
+## Auxiliary.NegateEffectMonsterFilter
+
+- Status: `missing_documentation`
+- Signature: `Auxiliary.NegateEffectMonsterFilter(Card c) -> void`
+- Core binding: `(none)`
+- Aliases: `aux.NegateEffectMonsterFilter`
+
+Current description:
+
+> TODO document.
+
+Source: `Utilities/utility.lua:748`
+
+## Auxiliary.NegateMonsterFilter
+
+- Status: `missing_documentation`
+- Signature: `Auxiliary.NegateMonsterFilter(Card c) -> void`
+- Core binding: `(none)`
+- Aliases: `aux.NegateMonsterFilter`
+
+Current description:
+
+> TODO document.
+
+Source: `Utilities/utility.lua:744`
 
 ## Auxiliary.NegateSummonCondition
 
@@ -795,6 +1354,19 @@ Current description:
 
 Source: `Utilities/utility.lua:1956`
 
+## Auxiliary.SequenceToGlobal
+
+- Status: `missing_documentation`
+- Signature: `Auxiliary.SequenceToGlobal(any p, int loc, int seq) -> void`
+- Core binding: `(none)`
+- Aliases: `aux.SequenceToGlobal`
+
+Current description:
+
+> TODO document.
+
+Source: `Utilities/utility.lua:1487`
+
 ## Auxiliary.SpiritReturnConditionForced
 
 - Status: `missing_documentation`
@@ -872,6 +1444,19 @@ Current description:
 > TODO document.
 
 Source: `Utilities/utility.lua:212`
+
+## Auxiliary.SZoneSequence
+
+- Status: `missing_documentation`
+- Signature: `Auxiliary.SZoneSequence(int seq) -> void`
+- Core binding: `(none)`
+- Aliases: `aux.SZoneSequence`
+
+Current description:
+
+> TODO document.
+
+Source: `Utilities/utility.lua:722`
 
 ## Auxiliary.ThisCardInGraveAlreadyCheckReg
 
@@ -1146,6 +1731,19 @@ Current description:
 
 Source: `Utilities/utility.lua:976`
 
+## Auxiliary.UseExtraReleaseCount
+
+- Status: `missing_documentation`
+- Signature: `Auxiliary.UseExtraReleaseCount(Group g, int tp) -> void`
+- Core binding: `(none)`
+- Aliases: `aux.UseExtraReleaseCount`
+
+Current description:
+
+> TODO document.
+
+Source: `Utilities/utility.lua:1508`
+
 ## GetID
 
 - Status: `missing_documentation`
@@ -1159,6 +1757,110 @@ Current description:
 
 Source: `Utilities/utility.lua:8`
 
+## Group.CheckSubGroup
+
+- Status: `missing_documentation`
+- Signature: `Group.CheckSubGroup(Group g, function f, [int min], [int max], ... any) -> bool`
+- Core binding: `(none)`
+- Aliases: (none)
+
+Current description:
+
+> TODO document.
+
+Source: `Utilities/utility.lua:1230`
+
+## Group.CheckSubGroupEach
+
+- Status: `missing_documentation`
+- Signature: `Group.CheckSubGroupEach(Group g, table checks, [function f], ... any) -> bool`
+- Core binding: `(none)`
+- Aliases: (none)
+
+Current description:
+
+> TODO document.
+
+Source: `Utilities/utility.lua:1338`
+
+## Group.SelectSubGroup
+
+- Status: `missing_documentation`
+- Signature: `Group.SelectSubGroup(Group g, int tp, function f, bool cancelable, [int min], [int max], ... any) -> Group`
+- Core binding: `(none)`
+- Aliases: (none)
+
+Current description:
+
+> TODO document.
+
+Source: `Utilities/utility.lua:1255`
+
+## Group.SelectSubGroupEach
+
+- Status: `missing_documentation`
+- Signature: `Group.SelectSubGroupEach(Group g, int tp, table checks, [bool cancelable], [function f], ... any) -> Group`
+- Core binding: `(none)`
+- Aliases: (none)
+
+Current description:
+
+> TODO document.
+
+Source: `Utilities/utility.lua:1353`
+
+## bit.bnot
+
+- Status: `missing_documentation`
+- Signature: `bit.bnot(any a) -> void`
+- Core binding: `(none)`
+- Aliases: (none)
+
+Current description:
+
+> TODO document.
+
+Source: `Utilities/utility.lua:30`
+
+## bit.extract
+
+- Status: `missing_documentation`
+- Signature: `bit.extract(any r, any field, any width) -> void`
+- Core binding: `(none)`
+- Aliases: (none)
+
+Current description:
+
+> TODO document.
+
+Source: `Utilities/utility.lua:40`
+
+## bit.replace
+
+- Status: `missing_documentation`
+- Signature: `bit.replace(any r, any v, any field, any width) -> void`
+- Core binding: `(none)`
+- Aliases: (none)
+
+Current description:
+
+> TODO document.
+
+Source: `Utilities/utility.lua:45`
+
+## Auxiliary.AddContactFusionProcedure
+
+- Status: `missing_documentation`
+- Signature: `Auxiliary.AddContactFusionProcedure(Card c, function filter, any self_location, any opponent_location, any mat_operation, ... any) -> void`
+- Core binding: `(none)`
+- Aliases: `aux.AddContactFusionProcedure`
+
+Current description:
+
+> TODO document.
+
+Source: `Utilities/procedure.lua:1687`
+
 ## Auxiliary.AddFusionEffectProc
 
 - Status: `missing_documentation`
@@ -1171,6 +1873,58 @@ Current description:
 > TODO document.
 
 Source: `Utilities/procedure.lua:1677`
+
+## Auxiliary.AddRitualProcGreater2
+
+- Status: `missing_documentation`
+- Signature: `Auxiliary.AddRitualProcGreater2(Card c, function filter, any summon_location, any grave_filter, any mat_filter, Effect pause, any extra_operation, any extra_target) -> void`
+- Core binding: `(none)`
+- Aliases: `aux.AddRitualProcGreater2`
+
+Current description:
+
+> TODO document.
+
+Source: `Utilities/procedure.lua:1934`
+
+## Auxiliary.AddRitualProcGreater2Code
+
+- Status: `missing_documentation`
+- Signature: `Auxiliary.AddRitualProcGreater2Code(Card c, any code1, any summon_location, any grave_filter, any mat_filter, Effect pause, any extra_operation, any extra_target) -> void`
+- Core binding: `(none)`
+- Aliases: `aux.AddRitualProcGreater2Code`
+
+Current description:
+
+> TODO document.
+
+Source: `Utilities/procedure.lua:1937`
+
+## Auxiliary.AddRitualProcGreater2Code2
+
+- Status: `missing_documentation`
+- Signature: `Auxiliary.AddRitualProcGreater2Code2(Card c, any code1, any code2, any summon_location, any grave_filter, any mat_filter, Effect pause, any extra_operation, any extra_target) -> void`
+- Core binding: `(none)`
+- Aliases: `aux.AddRitualProcGreater2Code2`
+
+Current description:
+
+> TODO document.
+
+Source: `Utilities/procedure.lua:1941`
+
+## Auxiliary.AddRitualProcUltimate
+
+- Status: `missing_documentation`
+- Signature: `Auxiliary.AddRitualProcUltimate(Card c, function filter, any level_function, any greater_or_equal, any summon_location, any grave_filter, any mat_filter, Effect pause, any extra_operation, any extra_target) -> void`
+- Core binding: `(none)`
+- Aliases: `aux.AddRitualProcUltimate`
+
+Current description:
+
+> TODO document.
+
+Source: `Utilities/procedure.lua:1750`
 
 ## Auxiliary.AssaultModeLimit
 

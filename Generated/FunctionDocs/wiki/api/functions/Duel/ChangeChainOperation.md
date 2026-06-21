@@ -8,8 +8,7 @@ Duel.ChangeChainOperation(int chainc, function f) -> void
 
 ## Description
 
-把连锁chainc的效果的处理函数换成f，用于实现“把效果变成”等的效果
-f(e,tp,eg,ep,ev,re,r,rp)
+The effect of the chain chainc processing function replaced by f, used to achieve "the effect becomes" effect
 
 ## Parameters
 

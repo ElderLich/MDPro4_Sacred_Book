@@ -8,7 +8,7 @@ Card.IsDualState(Card c) -> bool
 
 ## Description
 
-检查c属否处于再召唤状态
+Check whether c is in the re-call state
 
 ## Parameters
 

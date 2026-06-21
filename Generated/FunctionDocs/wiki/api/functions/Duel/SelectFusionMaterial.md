@@ -8,8 +8,7 @@ Duel.SelectFusionMaterial(int player, Card c, [Group|nil g], [Card|nil gc], [int
 
 ## Description
 
-让玩家player从g中选择一组[必须包含gc在内的]融合怪兽c的融合素材
-##根据c的种类为EFFECT_FUSION_MATERIAL的效果的Operation操作
+Let the player player from the g to select a group [must contain gc] fusion fusion monster c material
 
 ## Parameters
 

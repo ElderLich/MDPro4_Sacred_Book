@@ -8,7 +8,7 @@ Duel.AdjustAll() -> void
 
 ## Description
 
-立刻刷新场地信息
+Immediately refreshes field information.
 
 ## Source
 

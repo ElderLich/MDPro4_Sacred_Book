@@ -8,8 +8,7 @@ Card.GetAttributeInGrave(Card c, [int reasonPlayer]) -> int
 
 ## Description
 
-检查c在墓地中会变成什么属性。
-第二个参数可选，指示假设送去墓地是由于哪个玩家。
+Return the Attribute card c is treated as having in the Graveyard
 
 ## Parameters
 

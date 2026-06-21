@@ -8,7 +8,7 @@ Card.IsLinkCode(Card c, int code, [... int]) -> bool
 
 ## Description
 
-检查c作为link素材时能否当作卡号为code的卡，额外参数是其他code
+Check if card c, when used as Link Material, can be treated as a card with code, additional parameters are other codes
 
 ## Parameters
 

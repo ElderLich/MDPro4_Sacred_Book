@@ -8,7 +8,7 @@ Card.GetLinkRace(Card c, [int player]) -> int
 
 ## Description
 
-返回c[由player连接召唤时]作为连接素材时的种族
+Return the Race of card c when used as Link Material [for a Link Summon by player]
 
 ## Parameters
 

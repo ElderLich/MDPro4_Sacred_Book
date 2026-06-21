@@ -8,7 +8,7 @@ Card.SetCounterLimit(Card c, int countertype, int count) -> void
 
 ## Description
 
-设定c放置countertype类型指示物的上限
+Set c to place the upper limit of countertype type counters
 
 ## Parameters
 

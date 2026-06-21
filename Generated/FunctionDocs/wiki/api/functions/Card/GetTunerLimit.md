@@ -8,7 +8,7 @@ Card.GetTunerLimit(Card c) -> nil|Effect,function|nil,int|nil,int|nil,int|nil
 
 ## Description
 
-如果卡片 c 受到同调素材限制效果 EFFECT_TUNER_MATERIAL_LIMIT 影响，则返回 Effect e,function target,int value,int min,int max ;否则返回nil
+If card c is affected by the Tuner Material restriction effect EFFECT_TUNER_MATERIAL_LIMIT, return Effect e, function target, int value, int min, int max; otherwise return nil
 
 ## Parameters
 

@@ -8,7 +8,7 @@ Card.GetMaterial(Card c) -> Group
 
 ## Description
 
-返回c出场使用的素材
+Returns the material used for the appearance of c
 
 ## Parameters
 

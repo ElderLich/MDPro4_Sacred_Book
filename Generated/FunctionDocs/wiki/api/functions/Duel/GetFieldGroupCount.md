@@ -8,7 +8,7 @@ Duel.GetFieldGroupCount(int player, int s, int o) -> int
 
 ## Description
 
-同 Duel.GetFieldGroup ，只是返回的是卡的数量
+Returns the number of cards in the specified location
 
 ## Parameters
 

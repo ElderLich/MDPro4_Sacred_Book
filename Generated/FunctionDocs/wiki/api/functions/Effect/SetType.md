@@ -8,7 +8,7 @@ Effect.SetType(Effect e, int type) -> void
 
 ## Description
 
-为效果e设置Type属性
+Set the Type property for effect e
 
 ## Parameters
 

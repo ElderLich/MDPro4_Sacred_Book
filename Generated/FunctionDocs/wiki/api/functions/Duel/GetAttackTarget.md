@@ -8,7 +8,7 @@ Duel.GetAttackTarget() -> Card
 
 ## Description
 
-返回此次战斗被攻击的卡，如果返回nil表示是直接攻击
+Return to the battle was attacked card, if the return nil said that a direct attack
 
 ## Returns
 

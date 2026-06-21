@@ -8,8 +8,8 @@ Card.EnableCounterPermit(Card c, int countertype, [int location], [function cond
 
 ## Description
 
-允许c[在位置location，满足条件condition]放置那个需要“可以放置”才能放置的指示物countertype
-（location的默认值与c的种类有关，灵摆怪兽需要指定能否在怪兽区域或灵摆区域放置指示物）
+Allow c [to be placed in the location location] that can be placed "can be placed on the counter countertype
+The default value of location depends on the type of c, and the monster needs to specify whether it can place a pointer in a monster or pendulum area
 
 ## Parameters
 

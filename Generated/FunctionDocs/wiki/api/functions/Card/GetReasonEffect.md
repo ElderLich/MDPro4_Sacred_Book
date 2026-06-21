@@ -8,7 +8,7 @@ Card.GetReasonEffect(Card c) -> Effect
 
 ## Description
 
-返回导致c的位置变化的效果
+Returns the effect that causes the position of c to change
 
 ## Parameters
 

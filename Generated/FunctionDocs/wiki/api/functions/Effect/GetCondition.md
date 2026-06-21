@@ -8,7 +8,7 @@ Effect.GetCondition(Effect e) -> function
 
 ## Description
 
-返回condition属性
+Returns the condition property
 
 ## Parameters
 

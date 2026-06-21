@@ -8,7 +8,7 @@ Card.IsRankBelow(Card c, int rank) -> bool
 
 ## Description
 
-检查c是否是阶级rank以下（至少为1）
+Check whether c is below the rank rank (at least 1)
 
 ## Parameters
 

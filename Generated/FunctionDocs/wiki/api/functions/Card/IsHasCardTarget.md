@@ -8,7 +8,7 @@ Card.IsHasCardTarget(Card c1, Card c2) -> bool
 
 ## Description
 
-检查c2是否取c1为永续对象
+Check whether c1 takes c2 as a persistent object
 
 ## Parameters
 

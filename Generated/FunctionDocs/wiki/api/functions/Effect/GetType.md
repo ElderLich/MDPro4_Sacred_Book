@@ -8,7 +8,7 @@ Effect.GetType(Effect e) -> int
 
 ## Description
 
-返回Type属性
+Returns the Type property
 
 ## Parameters
 

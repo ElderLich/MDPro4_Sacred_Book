@@ -8,7 +8,7 @@ Duel.NegateEffect(int chainc, [bool forced]) -> bool
 
 ## Description
 
-使连锁chainc的效果无效，返回值表示是否成功
+So that the chain chainc invalid effect, the return value that is successful
 
 ## Parameters
 

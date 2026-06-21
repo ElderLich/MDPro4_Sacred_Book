@@ -8,7 +8,7 @@ Card.IsAbleToGraveAsCost(Card c) -> bool
 
 ## Description
 
-检查c是否可以作为cost送去墓地
+Check whether c can be sent to the cemetery as a cost
 
 ## Parameters
 

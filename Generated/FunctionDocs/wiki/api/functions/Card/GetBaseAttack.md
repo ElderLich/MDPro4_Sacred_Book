@@ -8,7 +8,7 @@ Card.GetBaseAttack(Card c) -> int
 
 ## Description
 
-返回c的原本攻击力
+Return the original attack power of c
 
 ## Parameters
 

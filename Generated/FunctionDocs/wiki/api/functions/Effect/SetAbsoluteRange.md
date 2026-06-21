@@ -8,8 +8,8 @@ Effect.SetAbsoluteRange(Effect e, int playerid, int s_range, int o_range) -> voi
 
 ## Description
 
-设置target range属性并设置 EFFECT_FLAG_ABSOLUTE_TARGET 标志
-playerid != 0 s_range和o_range反转
+Set the target range property and set the EFFECT_FLAG_ABSOLUTE_RANGE flag
+Playerid! = 0 s_range and o_range invert
 
 ## Parameters
 

@@ -8,7 +8,7 @@ Card.GetMutualLinkedGroupCount(Card c) -> int
 
 ## Description
 
-返回和c互相连接状态的卡片组的数量
+Return the number of cards in the group mutually linked with card c
 
 ## Parameters
 

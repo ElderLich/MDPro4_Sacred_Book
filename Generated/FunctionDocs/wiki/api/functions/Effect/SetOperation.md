@@ -8,7 +8,7 @@ Effect.SetOperation(Effect e, nil|function op_func) -> void
 
 ## Description
 
-设置Operation属性
+Set the Operation property
 
 ## Parameters
 

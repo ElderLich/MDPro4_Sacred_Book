@@ -8,7 +8,13 @@ Duel.GetCustomActivityCount(int counter_id, int player, int activity_type) -> in
 
 ## Description
 
-代号为counter_id的计数器的计数，返回player进行以下操作的次数（目前最多为1）
+Counter number counter_id count, the number of players to return to the following (currently up to 1)
+The activity_type is of the following type
+ACTIVITY_SUMMON call (not including the usual call set)
+ACTIVITY_NORMALSUMMON usually called (including the usual call set)
+ACTIVITY_SPSUMMON Special call
+ACTIVITY_FLIPSUMMON Reverse call
+ACTIVITY_CHAIN ​​Activates the effect
 
 ## Parameters
 

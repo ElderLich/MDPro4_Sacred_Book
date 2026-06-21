@@ -8,7 +8,7 @@ Card.IsPublic(Card c) -> bool
 
 ## Description
 
-检查c是否处于公开状态
+Check if c is open
 
 ## Parameters
 

@@ -8,7 +8,7 @@ Duel.ChangeTargetParam(int chainc, int param) -> void
 
 ## Description
 
-把连锁chainc的参数换成param
+The chain chainc parameters into param
 
 ## Parameters
 

@@ -8,7 +8,7 @@ Card.GetOriginalCode(Card c) -> int
 
 ## Description
 
-返回c的卡片记载的卡号
+Returns the code number of the card in c
 
 ## Parameters
 

@@ -8,7 +8,7 @@ Group.DeleteGroup(Group g) -> void
 
 ## Description
 
-删除卡片组g
+Delete the card group g
 
 ## Parameters
 

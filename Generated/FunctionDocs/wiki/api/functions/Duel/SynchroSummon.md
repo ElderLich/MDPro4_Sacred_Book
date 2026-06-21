@@ -8,7 +8,7 @@ Duel.SynchroSummon(int player, Card c, [Card|nil tuner], [Group|nil mg], [int mi
 
 ## Description
 
-让玩家player以tuner作为调整,场上的卡[或mg]为素材，对c进行同调召唤手续
+Let the player player to tuner as the adjustment [mg for the material] on the c cohomology summon procedures
 
 ## Parameters
 

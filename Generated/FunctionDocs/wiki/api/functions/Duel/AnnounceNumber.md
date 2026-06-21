@@ -8,9 +8,9 @@ Duel.AnnounceNumber(int player, int number, ... any) -> int,int
 
 ## Description
 
-让玩家player宣言一个数字
-从第二个参数开始，每一个参数代表一个可宣言的数字
-第一个返回值是宣言的数字，第二个返回值是宣言数字在所有选项中的位置
+Let the player player declare a number
+Starting with the second argument, each parameter represents a declarable number
+The first return value is the number of declarations, and the second return value is the declaration number of the position in all options
 
 ## Parameters
 

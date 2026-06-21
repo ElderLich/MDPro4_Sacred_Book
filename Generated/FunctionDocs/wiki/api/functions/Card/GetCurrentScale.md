@@ -8,7 +8,7 @@ Card.GetCurrentScale(Card c) -> int
 
 ## Description
 
-返回c的当前灵摆刻度。如果在左灵摆区域则返回左刻度，在右灵摆区域或是不在灵摆区域则返回右刻度
+Return the current Pendulum Scale of card c. If in the Left Pendulum Zone, return the left scale; if in the Right Pendulum Zone or not in a Pendulum Zone, return the right scale
 
 ## Parameters
 

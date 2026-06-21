@@ -8,7 +8,7 @@ Group.Remove(Group g, function f, [Card|nil ex], ... any) -> void
 
 ## Description
 
-从g中移除满足筛选条件f并且不等于ex的所有卡，第4个参数开始是额外参数
+Remove all cards from g that satisfy the filter condition f and not equal to ex, the fourth parameter starts with the extra argument
 
 ## Parameters
 

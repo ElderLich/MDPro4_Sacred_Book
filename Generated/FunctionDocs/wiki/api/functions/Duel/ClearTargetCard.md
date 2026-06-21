@@ -8,7 +8,7 @@ Duel.ClearTargetCard() -> void
 
 ## Description
 
-把当前正在处理的连锁的对象全部清除
+The current processing of the chain of all the objects cleared
 
 ## Source
 

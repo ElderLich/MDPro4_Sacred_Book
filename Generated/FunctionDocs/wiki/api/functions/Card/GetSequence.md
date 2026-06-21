@@ -8,9 +8,9 @@ Card.GetSequence(Card c) -> int
 
 ## Description
 
-返回c在当前位置的序号
-在场上时，序号代表所在的格子，从左往右分别是0-4，场地魔法格的序号为5
-在其它地方时，序号表示的是第几张卡，最下面的卡的序号为0
+Returns the serial number of the current position
+In the field, the sequence number on behalf of the grid, from left to right are 0-4, the venue magic number is 5, left and right pendulum area is 6-7
+In other places, the serial number represents the first card, the lowest card number is 0
 
 ## Parameters
 

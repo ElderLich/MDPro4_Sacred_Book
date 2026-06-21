@@ -8,7 +8,7 @@ Effect.SetLabel(Effect e, ... int) -> void
 
 ## Description
 
-设置Label属性
+Sets the Label property
 
 ## Parameters
 

@@ -8,7 +8,7 @@ Card.GetOwner(Card c) -> int
 
 ## Description
 
-返回c的持有者
+Returns the holder of c
 
 ## Parameters
 

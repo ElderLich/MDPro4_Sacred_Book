@@ -8,7 +8,13 @@ Auxiliary.TargetBoolFunction(function f, ... any) -> void
 
 ## Description
 
-TODO document.
+Used in effect registration, returns a function with a bool return type; additional parameters start from the second parameter
+function Auxiliary.TargetBoolFunction(f,...)
+  local ext_params={...}
+  return function(effect,target)
+    return f(target,table.unpack(ext_params))
+  end
+end
 
 ## Parameters
 

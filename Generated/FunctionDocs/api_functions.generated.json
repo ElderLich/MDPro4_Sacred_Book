@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "generated_at": "2026-06-21T09:57:28+00:00",
-    "workspace": "D:\\Modding\\Card Scripting",
+    "generated_at": "2026-06-21T10:14:36+00:00",
+    "workspace": "D:\\Programs\\GitHub\\MDPro3_Sacred_Book",
     "dataeditorx_data": "D:\\Programs\\GitHub\\DataEditorX\\DataEditorX\\data",
     "mdpro3_locales": "D:\\Programs\\GitHub\\MDPro3_Data\\Data\\locales",
     "ygopro_core": "D:\\Programs\\GitHub\\ygopro-core",
@@ -683,8 +683,10 @@
       "description_zh": [
         "检查ec是否为c的有效同盟装备对象。会检查EFFECT_UNION_LIMIT影响和新旧同盟影响。"
       ],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "Check if ec is a valid Union Equip target for c. Checks for EFFECT_UNION_LIMIT and new/old Union effects."
+      ],
+      "english_status": "imported_from_old_utilities",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
@@ -1574,8 +1576,10 @@
         "检查c在墓地中会变成什么属性。",
         "第二个参数可选，指示假设送去墓地是由于哪个玩家。"
       ],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "Return the Attribute card c is treated as having in the Graveyard"
+      ],
+      "english_status": "imported_from_old_utilities",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
@@ -2031,8 +2035,11 @@
         "返回与c同一纵列的c以外的卡片组，后2个参数会计算卡片c左边 left 列 和右边 right 列的所有卡，",
         "比如c在中间的格子，那么 c:GetColumnGroup(2,2) 就相当于获取了除场地魔法以外的 场上的所有卡"
       ],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "Return the group of cards in the same column as card c, excluding c, the last two parameters include all cards in the left columns and right columns from c",
+        "For example, if c is in the middle zone, c:GetColumnGroup(2,2) is equivalent to retrieving all cards on the field except the Field Spell"
+      ],
+      "english_status": "imported_from_old_utilities",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
@@ -2085,8 +2092,10 @@
       "description_zh": [
         "用法同上，只是返回的是卡片的数量"
       ],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "Usage is the same as above, but returns the number of cards"
+      ],
+      "english_status": "imported_from_old_utilities",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
@@ -2152,8 +2161,10 @@
         "返回[以 player 来看的] location 范围内与 c 同一纵列[包含左边 left 列和右边 right 列]的区域，",
         "location 的值是 LOCATION_MZONE,LOCATION_SZONE,LOCATIOIN_ONFIELD"
       ],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "Return the zones [from player's perspective] within the location range that are in the same column as card c [including left columns and right columns], location values are LOCATION_MZONE, LOCATION_SZONE, LOCATION_ONFIELD"
+      ],
+      "english_status": "imported_from_old_utilities",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
@@ -2288,8 +2299,10 @@
       "description_zh": [
         "返回c的当前灵摆刻度。如果在左灵摆区域则返回左刻度，在右灵摆区域或是不在灵摆区域则返回右刻度"
       ],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "Return the current Pendulum Scale of card c. If in the Left Pendulum Zone, return the left scale; if in the Right Pendulum Zone or not in a Pendulum Zone, return the right scale"
+      ],
+      "english_status": "imported_from_old_utilities",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
@@ -2804,8 +2817,10 @@
       "description_zh": [
         "返回c[由player融合召唤时]用作融合素材时的属性"
       ],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "Return the Attribute of card c when used as Fusion Material [for a Fusion Summon by player]"
+      ],
+      "english_status": "imported_from_old_utilities",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
@@ -2898,8 +2913,10 @@
       "description_zh": [
         "返回c用作融合素材时的类型（与GetType的区别在于对于魔陷区的怪兽卡，返回其原本类型）"
       ],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "Return the type of card c when used as Fusion Material (unlike GetType, for monster cards in the Spell/Trap Zone, it returns their original type)"
+      ],
+      "english_status": "imported_from_old_utilities",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
@@ -2952,8 +2969,10 @@
       "description_zh": [
         "如果卡片 c 受到手卡同调效果 EFFECT_HAND_SYNCHRO 影响，则返回 Effect e,function target,int min,int max ;否则返回nil"
       ],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "If card c is affected by the hand Synchro effect EFFECT_HAND_SYNCHRO, return Effect e, function target, int min, int max; otherwise return nil"
+      ],
+      "english_status": "imported_from_old_utilities",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
@@ -3126,8 +3145,10 @@
       "description_zh": [
         "返回c的连接标记数量"
       ],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "Return the Link Marker count of card c"
+      ],
+      "english_status": "imported_from_old_utilities",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
@@ -3174,8 +3195,10 @@
       "description_zh": [
         "返回c[由player连接召唤时]用作连接素材时的属性"
       ],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "Return the Attribute of card c when used as Link Material [for a Link Summon by player]"
+      ],
+      "english_status": "imported_from_old_utilities",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
@@ -3224,8 +3247,10 @@
       "description_zh": [
         "返回c作为link素材的卡号（包括c原本的卡号）"
       ],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "Return the card code(s) of card c when used as Link Material (including c's original card code)"
+      ],
+      "english_status": "imported_from_old_utilities",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
@@ -3266,8 +3291,10 @@
       "description_zh": [
         "返回c所连接区的卡片组"
       ],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "Return the group of cards in the zones linked to card c"
+      ],
+      "english_status": "imported_from_old_utilities",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
@@ -3308,8 +3335,10 @@
       "description_zh": [
         "返回c所连接区的怪兽卡数量"
       ],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "Return the number of monster cards in the zones linked to card c"
+      ],
+      "english_status": "imported_from_old_utilities",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
@@ -3356,8 +3385,10 @@
       "description_zh": [
         "返回c的[以 player 来看的场上的]连接区域"
       ],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "Return the [from player's perspective on the field] Link Zones of card c"
+      ],
+      "english_status": "imported_from_old_utilities",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
@@ -3404,8 +3435,10 @@
       "description_zh": [
         "返回c[由player连接召唤时]作为连接素材时的种族"
       ],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "Return the Race of card c when used as Link Material [for a Link Summon by player]"
+      ],
+      "english_status": "imported_from_old_utilities",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
@@ -3446,8 +3479,10 @@
       "description_zh": [
         "返回c用作link素材时的类型（与GetType的区别在于对于魔陷区的怪兽卡，返回其原本类型）"
       ],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "Return the type of card c when used as Link Material (unlike GetType, for monster cards in the Spell/Trap Zone, it returns their original type)"
+      ],
+      "english_status": "imported_from_old_utilities",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
@@ -3620,8 +3655,10 @@
       "description_zh": [
         "返回和c互相连接状态的卡片组"
       ],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "Return the group of cards mutually linked with card c"
+      ],
+      "english_status": "imported_from_old_utilities",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
@@ -3662,8 +3699,10 @@
       "description_zh": [
         "返回和c互相连接状态的卡片组的数量"
       ],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "Return the number of cards in the group mutually linked with card c"
+      ],
+      "english_status": "imported_from_old_utilities",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
@@ -3710,8 +3749,10 @@
       "description_zh": [
         "返回[以 player 来看的]与卡片 c 互相连接的卡 所在的区域"
       ],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "Return the [from player's perspective] zones where cards mutually linked with card c are located"
+      ],
+      "english_status": "imported_from_old_utilities",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
@@ -5133,8 +5174,10 @@
         "检查c在墓地中会变成什么种族。",
         "第二个参数可选，指示假设送去墓地是由于哪个玩家。"
       ],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "Return the Race card c is treated as having in the Graveyard"
+      ],
+      "english_status": "imported_from_old_utilities",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
@@ -5832,8 +5875,10 @@
       "description_zh": [
         "返回c用作同调素材时的类型（与GetType的区别在于对于魔陷区的怪兽卡，返回其原本类型）"
       ],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "Return the type of card c when used as Synchro Material (unlike GetType, for monster cards in the Spell/Trap Zone, it returns their original type)"
+      ],
+      "english_status": "imported_from_old_utilities",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
@@ -6026,8 +6071,10 @@
       "description_zh": [
         "如果卡片 c 受到同调素材限制效果 EFFECT_TUNER_MATERIAL_LIMIT 影响，则返回 Effect e,function target,int value,int min,int max ;否则返回nil"
       ],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "If card c is affected by the Tuner Material restriction effect EFFECT_TUNER_MATERIAL_LIMIT, return Effect e, function target, int value, int min, int max; otherwise return nil"
+      ],
+      "english_status": "imported_from_old_utilities",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
@@ -6248,8 +6295,10 @@
       "description_zh": [
         "返回c用作同调素材时的类型（与GetType的区别在于对于魔陷区的怪兽卡，返回其原本类型）"
       ],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "Return the type of card c when used as Xyz Material (unlike GetType, for monster cards in the Spell/Trap Zone, it returns their original type)"
+      ],
+      "english_status": "imported_from_old_utilities",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
@@ -6848,8 +6897,10 @@
       "description_zh": [
         "检查与c同一纵列的区域是否全都有卡"
       ],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "Check if all zones in the same column as card c have cards"
+      ],
+      "english_status": "imported_from_old_utilities",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
@@ -7008,8 +7059,10 @@
       "description_zh": [
         "检查c的攻击力是否是 atk1[, 或者为 atk2...]，如果c不是怪兽卡，或者不在 LOCATION_MZONE 则都返回false"
       ],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "Check if card c's ATK is atk1 [, or atk2...], returns false if c is not a monster card or not in LOCATION_MZONE"
+      ],
+      "english_status": "imported_from_old_utilities",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
@@ -7572,8 +7625,10 @@
       "description_zh": [
         "检查c是否可以成为[连接怪兽sc的]连接素材,没有指定sc的场合，必须填nil"
       ],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "Check if c can be used as Link Material [for Link Monster sc]; if sc is not specified, must pass nil"
+      ],
+      "english_status": "imported_from_old_utilities",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
@@ -7628,7 +7683,8 @@
         "Returns false if the target player is invalid, c is forbidden, or placing c there would violate uniqueness checks."
       ],
       "description_en": [
-        "Checks whether c can be placed onto the field."
+        "Checks whether c can be placed onto the target player's field.",
+        "Returns false if the target player is invalid, c is forbidden, or placing c there would violate uniqueness checks."
       ],
       "english_status": "translated_exact",
       "source_files": [
@@ -7917,8 +7973,10 @@
       "description_zh": [
         "检查c是否可以用效果改变表示形式"
       ],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "Check if c can have its battle position changed by an effect"
+      ],
+      "english_status": "imported_from_old_utilities",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
@@ -7965,8 +8023,10 @@
       "description_zh": [
         "检查c上是否可以放置countertype类型的指示物"
       ],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "Check if countertype counters can be placed on c"
+      ],
+      "english_status": "imported_from_old_utilities",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
@@ -8013,8 +8073,10 @@
       "description_zh": [
         "检查c是否可以作为XYZ素材"
       ],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "Check if c can be used as Xyz Material"
+      ],
+      "english_status": "imported_from_old_utilities",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
@@ -8414,8 +8476,10 @@
       "description_zh": [
         "检查c的守备力是否是 def1[, 或者为 def2...]，如果c不是怪兽卡，或者不在 LOCATION_MZONE 则都返回false"
       ],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "Check if c's DEF is def1 [, or def2...]; returns false if c is not a monster card or not in LOCATION_MZONE"
+      ],
+      "english_status": "imported_from_old_utilities",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
@@ -8886,8 +8950,10 @@
       "description_zh": [
         "检查c原本是否为融合·同调·XYZ·连接怪兽。这个函数只检查类型，不关心被检查的怪兽的现状。"
       ],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "Check if c is originally a Fusion, Synchro, Xyz, or Link Monster. This function only checks the type, regardless of the monster's current state"
+      ],
+      "english_status": "imported_from_old_utilities",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
@@ -8928,8 +8994,10 @@
       "description_zh": [
         "检查c是否是额外连接状态"
       ],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "Check if card c is in an Extra Link state"
+      ],
+      "english_status": "imported_from_old_utilities",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
@@ -9158,8 +9226,10 @@
       "description_zh": [
         "检查c[由player融合召唤时]用作融合素材是否属于属性attribute"
       ],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "Check if card c, when used as Fusion Material [for a Fusion Summon by player], has Attribute attribute"
+      ],
+      "english_status": "imported_from_old_utilities",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
@@ -9312,8 +9382,10 @@
       "description_zh": [
         "检查c是否是可[用 sum_type 方式]融合召唤的卡"
       ],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "Check if card c can be Fusion Summoned [using sum_type method]"
+      ],
+      "english_status": "imported_from_old_utilities",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
@@ -9360,8 +9432,10 @@
       "description_zh": [
         "检查c用作融合素材时是否属于类型type（与IsType的区别在于对于魔陷区的怪兽卡，用其原本类型作判断）"
       ],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "Check if card c, when used as Fusion Material, has type type (unlike IsType, for monster cards in the Spell/Trap Zone, it uses their original type for judgment)"
+      ],
+      "english_status": "imported_from_old_utilities",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
@@ -9670,8 +9744,10 @@
       "description_zh": [
         "检查c是否是等级 level1[, 或者为 level2...]"
       ],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "Check if card c is Level level1 [, or level2...]"
+      ],
+      "english_status": "imported_from_old_utilities",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
@@ -9830,8 +9906,10 @@
       "description_zh": [
         "检查c的连接标记数量是否是 link1[, 或者为 link2...]"
       ],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "Check if card c's Link Marker count is link1 [, or link2...]"
+      ],
+      "english_status": "imported_from_old_utilities",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
@@ -9878,8 +9956,10 @@
       "description_zh": [
         "检查c是否连接标记数量是link以上"
       ],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "Check if card c's Link Marker count is link or higher"
+      ],
+      "english_status": "imported_from_old_utilities",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
@@ -9932,8 +10012,10 @@
       "description_zh": [
         "检查c[由player连接召唤时]用作连接素材是否属于属性attribute"
       ],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "Check if card c, when used as Link Material [for a Link Summon by player], has Attribute attribute"
+      ],
+      "english_status": "imported_from_old_utilities",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
@@ -9980,8 +10062,10 @@
       "description_zh": [
         "检查c是否连接标记数量是link以下（至少为1）"
       ],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "Check if card c's Link Marker count is link or lower (at least 1)"
+      ],
+      "english_status": "imported_from_old_utilities",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
@@ -10034,8 +10118,10 @@
       "description_zh": [
         "检查c作为link素材时能否当作卡号为code的卡，额外参数是其他code"
       ],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "Check if card c, when used as Link Material, can be treated as a card with code, additional parameters are other codes"
+      ],
+      "english_status": "imported_from_old_utilities",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
@@ -10082,8 +10168,19 @@
       "description_zh": [
         "检查c是否是连接标记为 dir 的卡"
       ],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "Check if card c has a Link Marker in direction dir",
+        "dir values are:",
+        "LINK_MARKER_BOTTOM_LEFT =0x001 -- ↙",
+        "LINK_MARKER_BOTTOM      =0x002 -- ↓",
+        "LINK_MARKER_BOTTOM_RIGHT=0x004 -- ↘",
+        "LINK_MARKER_LEFT        =0x008 -- ←",
+        "LINK_MARKER_RIGHT       =0x020 -- →",
+        "LINK_MARKER_TOP_LEFT    =0x040 -- ↖",
+        "LINK_MARKER_TOP         =0x080 -- ↑",
+        "LINK_MARKER_TOP_RIGHT   =0x100 -- ↗"
+      ],
+      "english_status": "imported_from_old_utilities",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
@@ -10136,8 +10233,10 @@
       "description_zh": [
         "检查c[由player连接召唤时]用作连接素材时是否属于种族race"
       ],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "Check if card c, when used as Link Material [for a Link Summon by player], has Race race"
+      ],
+      "english_status": "imported_from_old_utilities",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
@@ -10184,8 +10283,10 @@
       "description_zh": [
         "检查c作为link素材时能否当作名字含有setname的卡"
       ],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "Check if card c, when used as Link Material, can be treated as a card with setname in its name"
+      ],
+      "english_status": "imported_from_old_utilities",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
@@ -10226,8 +10327,10 @@
       "description_zh": [
         "检查c是否是连接状态"
       ],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "Check if card c is in a linked state"
+      ],
+      "english_status": "imported_from_old_utilities",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
@@ -10287,8 +10390,11 @@
         "检查是否可以在场上的卡[或mg][中选出 min-max 个连接素材]对c进行连接召唤手续",
         "如果mg为nil，此函数与 c:IsSpecialSummonable(SUMMON_TYPE_LINK)作用相同"
       ],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "Check if card c can be Link Summoned using [min-max Link Materials] from cards on the field [or mg]",
+        "If mg is nil, this function is equivalent to c:IsSpecialSummonable(SUMMON_TYPE_LINK)"
+      ],
+      "english_status": "imported_from_old_utilities",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
@@ -10335,8 +10441,10 @@
       "description_zh": [
         "检查c用作连接素材时是否属于类型type（与IsType的区别在于对于魔陷区的怪兽卡，用其原本类型作判断）"
       ],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "Check if card c, when used as Link Material, has type type (unlike IsType, for monster cards in the Spell/Trap Zone, it uses their original type for judgment)"
+      ],
+      "english_status": "imported_from_old_utilities",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
@@ -10655,8 +10763,10 @@
       "description_zh": [
         "检查c是否在规则上当做code使用"
       ],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "Check if card c is treated as code under the rules"
+      ],
+      "english_status": "imported_from_old_utilities",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
@@ -10753,8 +10863,10 @@
       "description_zh": [
         "检查c是否是原本卡名含有setname的卡"
       ],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "Check if card c is originally a card with setname in its name"
+      ],
+      "english_status": "imported_from_old_utilities",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
@@ -10851,8 +10963,10 @@
       "description_zh": [
         "检查c的上一个控制者是否为player"
       ],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "Check if card c's previous controller was player"
+      ],
+      "english_status": "imported_from_old_utilities",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
@@ -11155,8 +11269,10 @@
       "description_zh": [
         "检查c是否是阶级 rank1[, 或者为 rank2...]"
       ],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "Check if card c is Rank rank1 [, or rank2...]"
+      ],
+      "english_status": "imported_from_old_utilities",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
@@ -12064,8 +12180,10 @@
       "description_zh": [
         "检查c召唤·特殊召唤的位置是否为loc"
       ],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "Check if card c's Normal Summon or Special Summon location is loc"
+      ],
+      "english_status": "imported_from_old_utilities",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
@@ -12112,8 +12230,10 @@
       "description_zh": [
         "检查将c召唤·特殊召唤的玩家是否为player"
       ],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "Check if the player who Normal Summoned or Special Summoned card c is player"
+      ],
+      "english_status": "imported_from_old_utilities",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
@@ -12160,8 +12280,10 @@
       "description_zh": [
         "检查c的召唤类型是否是sumtype"
       ],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "Check if card c's summon type is sumtype"
+      ],
+      "english_status": "imported_from_old_utilities",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
@@ -12266,8 +12388,10 @@
       "description_zh": [
         "检查c用作同调素材时是否属于类型type（与IsType的区别在于对于魔陷区的怪兽卡，用其原本类型作判断）"
       ],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "Check if card c, when used as Synchro Material, has type type (unlike IsType, for monster cards in the Spell/Trap Zone, it uses their original type for judgment)"
+      ],
+      "english_status": "imported_from_old_utilities",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
@@ -12536,8 +12660,10 @@
       "description_zh": [
         "检查c用作XYZ素材时是否属于类型type（与IsType的区别在于对于魔陷区的怪兽卡，用其原本类型作判断）"
       ],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "Check if card c, when used as Xyz Material, has type type (unlike IsType, for monster cards in the Spell/Trap Zone, it uses their original type for judgment)"
+      ],
+      "english_status": "imported_from_old_utilities",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
@@ -13534,8 +13660,10 @@
       "description_zh": [
         "设置c来到当前位置的原因为reason"
       ],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "Set the reason for card c arriving at its current position to reason"
+      ],
+      "english_status": "imported_from_old_utilities",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
@@ -14389,8 +14517,11 @@
       "description_zh": [
         "发动效果e（？）"
       ],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "Activate effect e",
+        "NOTE: The original description includes a question mark (?), indicating potential uncertainty or incomplete information;"
+      ],
+      "english_status": "imported_from_old_utilities",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libduel.cpp",
@@ -16328,8 +16459,10 @@
       "description_zh": [
         "判断场上[或mg中]是否存在用于通常召唤c[到toplayer场上的区域 zone]的min[到max]个祭品"
       ],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "Check if there are min [to max] Tributes on the field [or in mg] for Normal Summoning c [to toplayer's field in zone]"
+      ],
+      "english_status": "imported_from_old_utilities",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libduel.cpp",
@@ -16526,8 +16659,10 @@
       "description_zh": [
         "将chainc的OperationInfo清除。用于如堕天使复制并使用墓地效果之类，卡片效果不应当被响应的情况。"
       ],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "Clear the OperationInfo of chain chainc; used for cases like Fallen Angel copying and using Graveyard effects, where card effects should not be responded to"
+      ],
+      "english_status": "imported_from_old_utilities",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libduel.cpp",
@@ -16717,8 +16852,10 @@
       "description_zh": [
         "确认玩家player额外卡组里侧的卡 最上方count张卡"
       ],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "Confirm the top count face-down cards in player's Extra Deck"
+      ],
+      "english_status": "imported_from_old_utilities",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libduel.cpp",
@@ -16942,8 +17079,10 @@
       "description_zh": [
         "关闭卡片的自爆检查。不传参或传true为关闭，传false为启用自爆检查"
       ],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "Disable card self-destruction checks; no parameter or enabled=true disables the check, enabled=false enables the check"
+      ],
+      "english_status": "imported_from_old_utilities",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libduel.cpp",
@@ -17620,8 +17759,10 @@
       "description_zh": [
         "返回由player操控的正处于战斗中的怪兽。如果没有战斗或没有目标则会返回nil。"
       ],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "Return the monster controlled by player currently in battle; returns nil if there is no battle or no target"
+      ],
+      "english_status": "imported_from_old_utilities",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libduel.cpp",
@@ -17683,8 +17824,11 @@
         "返回连锁 chainc 的相关参数，如果 chainc=0，则返回当前正在处理的连锁的相关参数",
         "返回6个参数，eg,ep,ev,re,r,rp"
       ],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "Return the parameters related to chain chainc; if chainc=0, return parameters for the currently processed chain",
+        "Returns six parameters: eg, ep, ev, re, r, rp"
+      ],
+      "english_status": "imported_from_old_utilities",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libduel.cpp",
@@ -18330,8 +18474,10 @@
       "description_zh": [
         "返回玩家player的额外卡组表侧表示的卡中最上方的count张卡"
       ],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "Return the top count face-up cards in player's Extra Deck"
+      ],
+      "english_status": "imported_from_old_utilities",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libduel.cpp",
@@ -18720,8 +18866,10 @@
       "description_zh": [
         "返回玩家player的种类为code的每个标识效果的Label，没有此效果则返回nil"
       ],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "Return the Label of the flag effect of type code for player; return nil if no such effect exists"
+      ],
+      "english_status": "imported_from_old_utilities",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libduel.cpp",
@@ -18772,8 +18920,11 @@
       "description_zh": [
         "返回玩家player可用的用于融合召唤素材的卡片组"
       ],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "Return the group of cards available to player for Fusion Summon materials",
+        "Includes monsters in hand, on the field, and cards affected by EFFECT_EXTRA_FUSION_MATERIAL"
+      ],
+      "english_status": "imported_from_old_utilities",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libduel.cpp",
@@ -18870,8 +19021,11 @@
       "description_zh": [
         "返回以玩家player来看的 s_range 和 o_range 区域的处于连接状态的卡片组[其实只要后面2个参数不为0就行，只要不为0，都会变成LOCATION_MZONE]（？）"
       ],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "Return the group of linked cards in s_range and o_range zones from player's perspective [as long as the last two parameters are not 0, they become LOCATION_MZONE]",
+        "NOTE: The original description includes a question mark (?), indicating potential uncertainty or incomplete information; translated as written"
+      ],
+      "english_status": "imported_from_old_utilities",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libduel.cpp",
@@ -18924,8 +19078,11 @@
       "description_zh": [
         "返回以玩家player来看的 s_range 和 o_range 区域的处于连接状态的卡片的数量（？）"
       ],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "Return the number of linked cards in s_range and o_range zones from player's perspective",
+        "NOTE: The original description includes a question mark (?), indicating potential uncertainty or incomplete information; translated as written"
+      ],
+      "english_status": "imported_from_old_utilities",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libduel.cpp",
@@ -18966,8 +19123,10 @@
       "description_zh": [
         "返回以玩家player来看的所有连接区域"
       ],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "Return all Link Zones from player's perspective"
+      ],
+      "english_status": "imported_from_old_utilities",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libduel.cpp",
@@ -19105,8 +19264,10 @@
       "description_zh": [
         "返回玩家player场上[假如因玩家 reason_player 的原因让 targets 离场后，把卡片 sc 在 zone 区域特殊召唤]可用的 能让额外卡组的怪兽 出场的空格数"
       ],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "Return the number of available slots on player's field [after targets leave due to reason_player] for Special Summoning card sc from the Extra Deck in zone"
+      ],
+      "english_status": "imported_from_old_utilities",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libduel.cpp",
@@ -19423,8 +19584,10 @@
         "返回玩家player场上[targets 离开后]可用的[区域 zone 里的]怪兽区数量",
         "##第三个第四个额外参数与凯撒斗技场等限制格子的效果有关"
       ],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "Return the number of available [zone slots] in the Monster Zone on player's field [after targets leave]"
+      ],
+      "english_status": "imported_from_old_utilities",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libduel.cpp",
@@ -19931,8 +20094,10 @@
       "description_zh": [
         "Duel.GetRitualMaterial并包含无等级怪兽"
       ],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "Returns the group of cards player can use as Ritual Material, including monsters without a Level."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libduel.cpp",
@@ -20393,8 +20558,11 @@
       "description_zh": [
         "返回玩家player场上[对于 use_player 来说]可用的怪兽区数量（？）"
       ],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "Return the number of available Monster Zones on player's field [for use_player]",
+        "NOTE: The original description includes a question mark (?), indicating potential uncertainty or incomplete information; translated as written"
+      ],
+      "english_status": "imported_from_old_utilities",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libduel.cpp",
@@ -20428,8 +20596,11 @@
       "description_zh": [
         "清空并返回由Duel.SetSelectedCard设置的卡片或卡片组。"
       ],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "Return the card or group of cards set by Duel.SetSelectedCard",
+        "Has no effect when used alone; must be used with Duel.SetSelectedCard first"
+      ],
+      "english_status": "imported_from_old_utilities",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libduel.cpp",
@@ -21392,8 +21563,10 @@
       "description_zh": [
         "检查玩家player是否有通常召唤外的召唤次数。"
       ],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "Check if player has additional summon counts beyond Normal Summon"
+      ],
+      "english_status": "imported_from_old_utilities",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libduel.cpp",
@@ -21647,8 +21820,11 @@
         "检查玩家player是否可以[以sumtype的召唤方式将scard]盖放。",
         "如果要加入后面的可选参数，则所有两个可选参数都必须加上。"
       ],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "Check if player can Set [scard using sumtype summon method]",
+        "If optional parameters are included, both must be provided"
+      ],
+      "english_status": "imported_from_old_utilities",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libduel.cpp",
@@ -22189,8 +22365,10 @@
       "description_zh": [
         "检查玩家player是否可以[将scard]盖放。"
       ],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "Check if player can Set [scard]"
+      ],
+      "english_status": "imported_from_old_utilities",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libduel.cpp",
@@ -22284,8 +22462,10 @@
       "description_zh": [
         "返回当前进行特殊召唤的行为是否可以回滚并撤销。"
       ],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "Return whether the current Special Summon action can be rolled back and canceled"
+      ],
+      "english_status": "imported_from_old_utilities",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libduel.cpp",
@@ -22400,8 +22580,10 @@
       "description_zh": [
         "让玩家player以mg[中除lcard以外的最少minc，最多maxc张卡]为素材将pcard连接召唤。"
       ],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "Have player Link Summon pcard using [minc to maxc cards from mg, excluding lcard] as materials"
+      ],
+      "english_status": "imported_from_old_utilities",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libduel.cpp",
@@ -23944,8 +24126,10 @@
       "description_zh": [
         "猜拳，若 repeated=false 则只猜一次；否则就是直到分出胜负为止。返回胜利的玩家号码"
       ],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "Perform Rock-Paper-Scissors; if repeat=false, perform once; otherwise, continue until a winner is determined. Return the winning player's number"
+      ],
+      "english_status": "imported_from_old_utilities",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libduel.cpp",
@@ -24149,8 +24333,11 @@
       "description_zh": [
         "让玩家player选择场地。"
       ],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "Have player select zones; flag1 is the low bit, flag2 is the high bit, together forming the selectable zones; count is the number of zones to choose",
+        "Return the selected zones"
+      ],
+      "english_status": "imported_from_old_utilities",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libduel.cpp",
@@ -24630,8 +24817,10 @@
       "description_zh": [
         "此函数只有一个 check_action_permission 操作，不知何用"
       ],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "This function only has a check_action_permission operation, purpose unknown"
+      ],
+      "english_status": "imported_from_old_utilities",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libduel.cpp",
@@ -25460,8 +25649,10 @@
       "description_zh": [
         "功能同Duel.SetChainLimit，但是此函数设定的连锁条件直到连锁结束才会解除"
       ],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "Same as Duel.SetChainLimit, but the chain limit set by this function persists until the chain ends"
+      ],
+      "english_status": "imported_from_old_utilities",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libduel.cpp",
@@ -25618,8 +25809,10 @@
       "description_zh": [
         "返回player是否存在种类为code的标识效果，若有则设置第一个的Label属性为label"
       ],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "Return whether player has a flag effect of type code and set its Label property to label"
+      ],
+      "english_status": "imported_from_old_utilities",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libduel.cpp",
@@ -26121,8 +26314,10 @@
       "description_zh": [
         "手动洗切玩家player的额外卡组"
       ],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "Manually shuffle player's Extra Deck"
+      ],
+      "english_status": "imported_from_old_utilities",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libduel.cpp",
@@ -26910,8 +27105,10 @@
       "description_zh": [
         "交换c1和c2的位置"
       ],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "Swap the positions of c1 and c2"
+      ],
+      "english_status": "imported_from_old_utilities",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libduel.cpp",
@@ -27261,8 +27458,10 @@
       "description_zh": [
         "检测玩家 p 是否还有可以发动的效果 e 的次数"
       ],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "Check if player p has remaining activation counts for effect e"
+      ],
+      "english_status": "imported_from_old_utilities",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libeffect.cpp",
@@ -27437,8 +27636,10 @@
       "description_zh": [
         "返回效果e的发动区域序号"
       ],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "Return the sequence number of the activation location of effect e"
+      ],
+      "english_status": "imported_from_old_utilities",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libeffect.cpp",
@@ -28146,8 +28347,10 @@
       "description_zh": [
         "返回Range属性"
       ],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "Return the Range property of effect e"
+      ],
+      "english_status": "imported_from_old_utilities",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libeffect.cpp",
@@ -29896,8 +30099,10 @@
       "description_zh": [
         "手动减少玩家 p 对效果 e 的 count 个可用次数[ oath_only 为 该效果是否是 EFFECT_FLAG_OATH]"
       ],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "Manually reduce player p's available activation count for effect e by count [oath_only indicates whether the effect is EFFECT_FLAG_OATH]"
+      ],
+      "english_status": "imported_from_old_utilities",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libeffect.cpp",
@@ -29944,8 +30149,10 @@
       "description_zh": [
         "Union operator for Group/Card operands. Equivalent to combining both operands into a new Group."
       ],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "Create a new card group, add all cards from target1 and target2 to this group, and return it; if there are duplicate cards, they are added only once; target1 and target2 remain unchanged"
+      ],
+      "english_status": "imported_from_old_utilities",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libgroup.cpp",
@@ -29988,8 +30195,10 @@
       "description_zh": [
         "Intersection operator for Group/Card operands."
       ],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "Create a new card group, add all cards that are identical in target1 and target2 (i.e., cards present in both) to this group, and return it; target1 and target2 remain unchanged"
+      ],
+      "english_status": "imported_from_old_utilities",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libgroup.cpp",
@@ -30032,8 +30241,10 @@
       "description_zh": [
         "Bitwise-or/union operator for Group/Card operands. It uses the same core handler as Group.__add."
       ],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "Code is identical to Group.__add"
+      ],
+      "english_status": "imported_from_old_utilities",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libgroup.cpp",
@@ -30076,8 +30287,10 @@
       "description_zh": [
         "Symmetric-difference operator for Group/Card operands."
       ],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "Create a new card group, add all cards that are different between target1 and target2 (i.e., cards present in only target1 or target2) to this group, and return it; target1 and target2 remain unchanged"
+      ],
+      "english_status": "imported_from_old_utilities",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libgroup.cpp",
@@ -30114,8 +30327,10 @@
       "description_zh": [
         "Length operator for Group. Equivalent to Group.GetCount."
       ],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "Same as Group.GetCount"
+      ],
+      "english_status": "imported_from_old_utilities",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libgroup.cpp",
@@ -30158,8 +30373,10 @@
       "description_zh": [
         "Difference operator for Group/Card operands. It removes the right operand's cards from the left operand."
       ],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "Create a new card group, add all cards from target1 to this group, then remove all cards from target2, and return the resulting group; target1 and target2 remain unchanged"
+      ],
+      "english_status": "imported_from_old_utilities",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libgroup.cpp",
@@ -30953,8 +31170,10 @@
       "description_zh": [
         "和 Group.GetClassCount 类似，但是算法不同(使用位运算)"
       ],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "Similar to Group.GetClassCount, but uses a different algorithm (bitwise operations)"
+      ],
+      "english_status": "imported_from_old_utilities",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libgroup.cpp",
@@ -31918,8 +32137,12 @@
         "btok 表示是否可以点击完成选择的按钮， cancelable 表示是否可以取消整个选择返回 nil，",
         "minc 和 maxc 是客户端的文字缓冲提示，表示需要选择 minc-maxc 张卡，但是这个只是影响视觉效果，并不代表必须要选择那个数量"
       ],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "Have player select 1 card from cg to add to sg and return the selected card",
+        "btok indicates whether the confirm selection button is available, cancelable indicates whether selected cards can be canceled",
+        "minc and maxc are client-side text buffer prompts indicating the need to select minc-maxc cards, but this only affects visual display and does not enforce the selection count"
+      ],
+      "english_status": "imported_from_old_utilities",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libgroup.cpp",
@@ -32697,7 +32920,7 @@
       "description_en": [
         "If this face-up card would leave the field, banish it instead."
       ],
-      "english_status": "existing_english",
+      "english_status": "imported_from_dataeditorx",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -32737,8 +32960,10 @@
         }
       ],
       "description_zh": [],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "TODO document."
+      ],
+      "english_status": "missing_documentation",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -32778,8 +33003,10 @@
         }
       ],
       "description_zh": [],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "TODO document."
+      ],
+      "english_status": "missing_documentation",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -32854,7 +33081,7 @@
       "description_en": [
         "Add EFFECT_TYPE_ACTIVATE effect to Equip Spell Cards"
       ],
-      "english_status": "existing_english",
+      "english_status": "imported_from_dataeditorx",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -32894,8 +33121,10 @@
         }
       ],
       "description_zh": [],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "TODO document."
+      ],
+      "english_status": "missing_documentation",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -32935,8 +33164,10 @@
         }
       ],
       "description_zh": [],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "TODO document."
+      ],
+      "english_status": "missing_documentation",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -32970,8 +33201,10 @@
         }
       ],
       "description_zh": [],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "TODO document."
+      ],
+      "english_status": "missing_documentation",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -33005,8 +33238,10 @@
         }
       ],
       "description_zh": [],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "TODO document."
+      ],
+      "english_status": "missing_documentation",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -33057,7 +33292,7 @@
       "description_en": [
         "Check if c is adjacent to (i,j)"
       ],
-      "english_status": "existing_english",
+      "english_status": "imported_from_dataeditorx",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -33297,7 +33532,7 @@
       "description_en": [
         "condition of Arcana Force monster effect from coin toss"
       ],
-      "english_status": "existing_english",
+      "english_status": "imported_from_dataeditorx",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -33331,8 +33566,10 @@
         }
       ],
       "description_zh": [],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "TODO document."
+      ],
+      "english_status": "missing_documentation",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -33445,8 +33682,14 @@
         }
       ],
       "description_zh": [],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "Check if e:GetHandler() is related to the current battle, typically used for the condition of EVENT_BATTLE_DESTROYING",
+        "function Auxiliary.bdcon(e, tp, eg, ep, ev, re, r, rp)",
+        "  local c=e:GetHandler()",
+        "  return c:IsRelateToBattle()",
+        "end"
+      ],
+      "english_status": "imported_from_old_utilities",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -33522,8 +33765,15 @@
         }
       ],
       "description_zh": [],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "Check if e:GetHandler() is related to the current battle, typically used for EVENT_BATTLE_DESTROYING and when an opponent's monster is destroyed by battle and sent to the Graveyard, as a condition",
+        "function Auxiliary.bdgcon(e, tp, eg, ep, ev, re, r, rp)",
+        "  local c=e:GetHandler()",
+        "  local bc=c:GetBattleTarget()",
+        "  return c:IsRelateToBattle() and bc:IsLocation(LOCATION_GRAVE) and bc:IsType(TYPE_MONSTER)",
+        "end"
+      ],
+      "english_status": "imported_from_old_utilities",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -33599,8 +33849,14 @@
         }
       ],
       "description_zh": [],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "Check if e:GetHandler() is related to the current battle, typically used for EVENT_BATTLE_DESTROYING and when battling an opponent's monster, as a condition",
+        "function Auxiliary.bdocon(e, tp, eg, ep, ev, re, r, rp)",
+        "  local c=e:GetHandler()",
+        "  return c:IsRelateToBattle() and c:IsStatus(STATUS_OPPO_BATTLE)",
+        "end"
+      ],
+      "english_status": "imported_from_old_utilities",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -33676,8 +33932,15 @@
         }
       ],
       "description_zh": [],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "Check if e:GetHandler() is related to the current battle, typically used for EVENT_BATTLE_DESTROYING, when battling an opponent's monster and destroying it by battle, sending it to the Graveyard, as a condition",
+        "function Auxiliary.bdogcon(e, tp, eg, ep, ev, re, r, rp)",
+        "  local c=e:GetHandler()",
+        "  local bc=c:GetBattleTarget()",
+        "  return c:IsRelateToBattle() and c:IsStatus(STATUS_OPPO_BATTLE) and bc:IsLocation(LOCATION_GRAVE) and bc:IsType(TYPE_MONSTER)",
+        "end"
+      ],
+      "english_status": "imported_from_old_utilities",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -33728,7 +33991,7 @@
       "description_en": [
         "The name of `c` becomes the original name of `tc`"
       ],
-      "english_status": "existing_english",
+      "english_status": "imported_from_dataeditorx",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -34091,8 +34354,14 @@
         }
       ],
       "description_zh": [],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "Simplified method for the filter condition of banishing this card, used in effect registration for cost",
+        "function aux.bfgcost(e, tp, eg, ep, ev, re, r, rp, chk)",
+        "  if chk==0 then return e:GetHandler():IsAbleToRemoveAsCost() end",
+        "  Duel.Remove(e:GetHandler(), POS_FACEUP, REASON_COST)",
+        "end"
+      ],
+      "english_status": "imported_from_old_utilities",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -34168,8 +34437,10 @@
         }
       ],
       "description_zh": [],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "TODO document."
+      ],
+      "english_status": "missing_documentation",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -34245,8 +34516,15 @@
         }
       ],
       "description_zh": [],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "Used by Dark Armed Dragon (81059524), equivalent to",
+        "function aux.chainreg(e, tp, eg, ep, ev, re, r, rp)",
+        "  if e:GetHandler():GetFlagEffect(1)==0 then",
+        "    e:GetHandler():RegisterFlagEffect(1, RESET_EVENT+RESETS_STANDARD-RESET_TURN_SET+RESET_CHAIN, 0, 1)",
+        "  end",
+        "end"
+      ],
+      "english_status": "imported_from_old_utilities",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -34286,8 +34564,10 @@
         }
       ],
       "description_zh": [],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "TODO document."
+      ],
+      "english_status": "missing_documentation",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -34546,8 +34826,10 @@
         }
       ],
       "description_zh": [],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "Check if Union Monster uc can be equipped to monster tc as a Union Equip"
+      ],
+      "english_status": "imported_from_old_utilities",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -34589,8 +34871,10 @@
       "description_zh": [
         "Create a table of filter functions"
       ],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "Create a table of filter functions"
+      ],
+      "english_status": "existing_english",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -34667,8 +34951,10 @@
         }
       ],
       "description_zh": [],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "TODO document."
+      ],
+      "english_status": "missing_documentation",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -34744,8 +35030,22 @@
         }
       ],
       "description_zh": [],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "Simplified method for the condition of player tp taking damage, used in effect registration for SetCondition",
+        "function aux.damcon1(e, tp, eg, ep, ev, re, r, rp)",
+        "  local e1=Duel.IsPlayerAffectedByEffect(tp, EFFECT_REVERSE_DAMAGE)",
+        "  local e2=Duel.IsPlayerAffectedByEffect(tp, EFFECT_REVERSE_RECOVER)",
+        "  local rd=e1 and not e2",
+        "  local rr=not e1 and e2",
+        "  local ex,cg,ct,cp,cv=Duel.GetOperationInfo(ev, CATEGORY_DAMAGE)",
+        "  if ex and (cp==tp or cp==PLAYER_ALL) and not rd and not Duel.IsPlayerAffectedByEffect(tp, EFFECT_NO_EFFECT_DAMAGE) then",
+        "    return true",
+        "  end",
+        "  ex,cg,ct,cp,cv=Duel.GetOperationInfo(ev, CATEGORY_RECOVER)",
+        "  return ex and (cp==tp or cp==PLAYER_ALL) and rr and not Duel.IsPlayerAffectedByEffect(tp, EFFECT_NO_EFFECT_DAMAGE)",
+        "end"
+      ],
+      "english_status": "imported_from_old_utilities",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -34822,8 +35122,10 @@
         }
       ],
       "description_zh": [],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "TODO document."
+      ],
+      "english_status": "missing_documentation",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -34857,8 +35159,10 @@
         }
       ],
       "description_zh": [],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "TODO document."
+      ],
+      "english_status": "missing_documentation",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -34892,8 +35196,10 @@
         }
       ],
       "description_zh": [],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "TODO document."
+      ],
+      "english_status": "missing_documentation",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -34969,8 +35275,14 @@
         }
       ],
       "description_zh": [],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "Check if e:GetHandler() was destroyed by the opponent and sent to the Graveyard from your field, used for SetCondition",
+        "function Auxiliary.dogcon(e, tp, eg, ep, ev, re, r, rp)",
+        "  local c=e:GetHandler()",
+        "  return c:GetPreviousControler()==tp and c:IsReason(REASON_DESTROY) and rp==1-tp",
+        "end"
+      ],
+      "english_status": "imported_from_old_utilities",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -35046,8 +35358,10 @@
         }
       ],
       "description_zh": [],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "TODO document."
+      ],
+      "english_status": "missing_documentation",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -35088,7 +35402,7 @@
         "The `nolimit` parameter for Special Summon effects of Dragon, Xyz monsters where Soul Drain Dragon is available",
         "(Soul Drain Dragon, Level 8/LIGHT/Dragon/4000/0)"
       ],
-      "english_status": "existing_english",
+      "english_status": "imported_from_dataeditorx",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -35122,8 +35436,10 @@
         }
       ],
       "description_zh": [],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "TODO document."
+      ],
+      "english_status": "missing_documentation",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -35157,8 +35473,10 @@
         }
       ],
       "description_zh": [],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "TODO document."
+      ],
+      "english_status": "missing_documentation",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -35600,7 +35918,7 @@
       "description_en": [
         "The `nolimit` parameter for Special Summon effects of Drytron cards"
       ],
-      "english_status": "existing_english",
+      "english_status": "imported_from_dataeditorx",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -35676,8 +35994,10 @@
         }
       ],
       "description_zh": [],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "TODO document."
+      ],
+      "english_status": "missing_documentation",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -35753,8 +36073,10 @@
         }
       ],
       "description_zh": [],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "TODO document."
+      ],
+      "english_status": "missing_documentation",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -35879,7 +36201,7 @@
       "description_en": [
         "add \"Toss a coin and get the following effects\" effect to Arcana Force monsters"
       ],
-      "english_status": "existing_english",
+      "english_status": "imported_from_dataeditorx",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -35968,8 +36290,10 @@
         }
       ],
       "description_zh": [],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "TODO document."
+      ],
+      "english_status": "missing_documentation",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -35996,8 +36320,10 @@
         }
       ],
       "description_zh": [],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "TODO document."
+      ],
+      "english_status": "missing_documentation",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -36043,8 +36369,10 @@
         }
       ],
       "description_zh": [],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "TODO document."
+      ],
+      "english_status": "missing_documentation",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -36090,8 +36418,10 @@
         }
       ],
       "description_zh": [],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "Add an effect to c for Spirit Monsters to return to the hand during the End Phase of turns when events event1,... occur"
+      ],
+      "english_status": "imported_from_old_utilities",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -36133,8 +36463,10 @@
       "description_zh": [
         "add effect to modern union monsters"
       ],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "add effect to modern union monsters"
+      ],
+      "english_status": "existing_english",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -36381,8 +36713,14 @@
         }
       ],
       "description_zh": [],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "Simplified method for the filter condition of Evolsaur general effects (Special Summoned by the effect of an \"Evolsaur\" monster), used in effect registration for SetCondition",
+        "function aux.evospcon(e, tp, eg, ep, ev, re, r, rp)",
+        "  local st=e:GetHandler():GetSummonType()",
+        "  return st>=(SUMMON_TYPE_SPECIAL+150) and st<(SUMMON_TYPE_SPECIAL+180)",
+        "end"
+      ],
+      "english_status": "imported_from_old_utilities",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -36416,8 +36754,13 @@
         }
       ],
       "description_zh": [],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "Simplified method for the condition that this card cannot activate its effect during the turn it was sent to the Graveyard, used for SetCondition",
+        "function aux.exccon(e)",
+        "  return Duel.GetTurnCount()~=e:GetHandler():GetTurnID() or e:GetHandler():IsReason(REASON_RETURN)",
+        "end"
+      ],
+      "english_status": "imported_from_old_utilities",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -36451,8 +36794,14 @@
         }
       ],
       "description_zh": [],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "If e:GetHandler() is related to effect e, return e:GetHandler(); otherwise return nil",
+        "function aux.ExceptThisCard(e)",
+        "  local c=e:GetHandler()",
+        "  if c:IsRelateToEffect(e) then return c else return nil end",
+        "end"
+      ],
+      "english_status": "imported_from_old_utilities",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -36522,8 +36871,10 @@
         }
       ],
       "description_zh": [],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "TODO document."
+      ],
+      "english_status": "missing_documentation",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -36593,8 +36944,16 @@
         }
       ],
       "description_zh": [],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "Filter cards satisfying a single filter condition f, returning a function with a bool return type; additional parameters start from the second parameter",
+        "function Auxiliary.FilterBoolFunction(f,...)",
+        "  local ext_params={...}",
+        "  return function(target)",
+        "    return f(target,table.unpack(ext_params))",
+        "  end",
+        "end"
+      ],
+      "english_status": "imported_from_old_utilities",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -36640,8 +36999,16 @@
         }
       ],
       "description_zh": [],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "Filter cards satisfying a single filter condition f with value value, returning a function with a bool return type; additional parameters start from the third parameter",
+        "function Auxiliary.FilterEqualFunction(f, value, ...)",
+        "  local ext_params={...}",
+        "  return function(target)",
+        "    return f(target, table.unpack(ext_params))==value",
+        "  end",
+        "end"
+      ],
+      "english_status": "imported_from_old_utilities",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -36717,8 +37084,15 @@
         }
       ],
       "description_zh": [],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "Simplified method for the filter condition of Gladiator Beast general effects (Special Summoned by the effect of a \"Gladiator Beast\" monster), used in effect registration for SetCondition",
+        "2619149, 4253484, 31247589, 42592719, 65984457, 78868776, though written differently, work fine",
+        "function aux.gbspcon(e, tp, eg, ep, ev, re, r, rp)",
+        "  local st=e:GetHandler():GetSummonType()",
+        "  return st>=(SUMMON_TYPE_SPECIAL+100) and st<(SUMMON_TYPE_SPECIAL+150)",
+        "end"
+      ],
+      "english_status": "imported_from_old_utilities",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -36769,7 +37143,7 @@
       "description_en": [
         "Subgroup check function"
       ],
-      "english_status": "existing_english",
+      "english_status": "imported_from_dataeditorx",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -36832,7 +37206,7 @@
       "description_en": [
         "Get the card group adjacent to (i,j)"
       ],
-      "english_status": "existing_english",
+      "english_status": "imported_from_dataeditorx",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -36903,8 +37277,10 @@
         }
       ],
       "description_zh": [],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "TODO document."
+      ],
+      "english_status": "missing_documentation",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -36938,8 +37314,10 @@
         }
       ],
       "description_zh": [],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "TODO document."
+      ],
+      "english_status": "missing_documentation",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -37018,8 +37396,10 @@
       "description_zh": [
         "Get the column index of card c (from the viewpoint of p)"
       ],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "Return the column sequence number of card c from player's perspective, excluding the Field Zone; from left to right, columns are 0-4"
+      ],
+      "english_status": "imported_from_old_utilities",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -37062,7 +37442,7 @@
       "description_en": [
         "Get the global row and column index of c"
       ],
-      "english_status": "existing_english",
+      "english_status": "imported_from_dataeditorx",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -37280,8 +37660,10 @@
         }
       ],
       "description_zh": [],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "TODO document."
+      ],
+      "english_status": "missing_documentation",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -37315,8 +37697,10 @@
         }
       ],
       "description_zh": [],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "TODO document."
+      ],
+      "english_status": "missing_documentation",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -37350,8 +37734,10 @@
         }
       ],
       "description_zh": [],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "Return the Lua type of value"
+      ],
+      "english_status": "imported_from_old_utilities",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -37385,8 +37771,10 @@
         }
       ],
       "description_zh": [],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "TODO document."
+      ],
+      "english_status": "missing_documentation",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -37438,8 +37826,10 @@
         }
       ],
       "description_zh": [],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "TODO document."
+      ],
+      "english_status": "missing_documentation",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -37497,8 +37887,10 @@
         }
       ],
       "description_zh": [],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "TODO document."
+      ],
+      "english_status": "missing_documentation",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -37586,7 +37978,7 @@
       "description_en": [
         "Golden Allure Queen"
       ],
-      "english_status": "existing_english",
+      "english_status": "imported_from_dataeditorx",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -37626,8 +38018,13 @@
         }
       ],
       "description_zh": [],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "Simplified method for the filter function preventing a card from being targeted for attacks, used in effect registration for SetValue",
+        "function aux.imval1(e, c)",
+        "  return not c:IsImmuneToEffect(e)",
+        "end"
+      ],
+      "english_status": "imported_from_old_utilities",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -37673,8 +38070,13 @@
         }
       ],
       "description_zh": [],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "Simplified method for the filter function preventing destruction by opponent's card effects, used in effect registration for SetValue",
+        "function aux.indoval(e, re, rp)",
+        "  return rp==1-e:GetHandlerPlayer()",
+        "end"
+      ],
+      "english_status": "imported_from_old_utilities",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -37720,8 +38122,13 @@
         }
       ],
       "description_zh": [],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "Simplified method for the filter function preventing destruction by your own card effects, used in effect registration for SetValue",
+        "function aux.indsval(e, re, rp)",
+        "  return rp==e:GetHandlerPlayer()",
+        "end"
+      ],
+      "english_status": "imported_from_old_utilities",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -37772,7 +38179,7 @@
       "description_en": [
         "Check if the effect of c becomes a Quick Effect."
       ],
-      "english_status": "existing_english",
+      "english_status": "imported_from_dataeditorx",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -37812,8 +38219,10 @@
         }
       ],
       "description_zh": [],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "Check if card c lists card code in its card_code_list"
+      ],
+      "english_status": "imported_from_old_utilities",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -37896,8 +38305,10 @@
         }
       ],
       "description_zh": [],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "TODO document."
+      ],
+      "english_status": "missing_documentation",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -37937,8 +38348,10 @@
         }
       ],
       "description_zh": [],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "TODO document."
+      ],
+      "english_status": "missing_documentation",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -37978,8 +38391,10 @@
         }
       ],
       "description_zh": [],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "Check if card c lists card code as a material in its material list"
+      ],
+      "english_status": "imported_from_old_utilities",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -38019,8 +38434,10 @@
         }
       ],
       "description_zh": [],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "Check if card c lists setcode as a material in its material_setcode"
+      ],
+      "english_status": "imported_from_old_utilities",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -38060,8 +38477,10 @@
         }
       ],
       "description_zh": [],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "TODO document."
+      ],
+      "english_status": "missing_documentation",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -38143,7 +38562,7 @@
       "description_en": [
         "Check if c has a equip card equipped by the effect of itself."
       ],
-      "english_status": "existing_english",
+      "english_status": "imported_from_dataeditorx",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -38183,8 +38602,10 @@
         }
       ],
       "description_zh": [],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "TODO document."
+      ],
+      "english_status": "missing_documentation",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -38224,8 +38645,10 @@
         }
       ],
       "description_zh": [],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "TODO document."
+      ],
+      "english_status": "missing_documentation",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -38259,8 +38682,10 @@
         }
       ],
       "description_zh": [],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "Check if the Union Monster e:GetHandler() is in a Union Equip state (used for the Condition property of effects)"
+      ],
+      "english_status": "imported_from_old_utilities",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -38306,8 +38731,10 @@
         }
       ],
       "description_zh": [],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "TODO document."
+      ],
+      "english_status": "missing_documentation",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -38858,8 +39285,10 @@
         }
       ],
       "description_zh": [],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "TODO document."
+      ],
+      "english_status": "missing_documentation",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -38907,8 +39336,10 @@
       "description_zh": [
         "Check if there is space in mzone after tp releases g by reason"
       ],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "Check if there is space in mzone after tp releases g by reason"
+      ],
+      "english_status": "existing_english",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -38942,8 +39373,10 @@
         }
       ],
       "description_zh": [],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "Return the Monster Zone sequence number; from left to right, zones are 0-4; for Extra Monster Zones, return left as 1 or right as 3"
+      ],
+      "english_status": "imported_from_old_utilities",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -38983,8 +39416,10 @@
         }
       ],
       "description_zh": [],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "TODO document."
+      ],
+      "english_status": "missing_documentation",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -39066,8 +39501,10 @@
         }
       ],
       "description_zh": [],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "TODO document."
+      ],
+      "english_status": "missing_documentation",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -39107,8 +39544,10 @@
         }
       ],
       "description_zh": [],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "TODO document."
+      ],
+      "english_status": "missing_documentation",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -39142,8 +39581,15 @@
         }
       ],
       "description_zh": [],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "Return a new filter condition based on filter condition f: cards that satisfy f and are not affected by Necrovalley",
+        "function Auxiliary.NecroValleyFilter(f)",
+        "  return function(target,...)",
+        "    return f(target,...) and not (target:IsHasEffect(EFFECT_NECRO_VALLEY) and Duel.IsChainDisablable(0))",
+        "  end",
+        "end"
+      ],
+      "english_status": "imported_from_old_utilities",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -39177,8 +39623,10 @@
         }
       ],
       "description_zh": [],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "TODO document."
+      ],
+      "english_status": "missing_documentation",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -39212,8 +39660,10 @@
         }
       ],
       "description_zh": [],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "TODO document."
+      ],
+      "english_status": "missing_documentation",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -39247,8 +39697,10 @@
         }
       ],
       "description_zh": [],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "TODO document."
+      ],
+      "english_status": "missing_documentation",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -39282,8 +39734,10 @@
         }
       ],
       "description_zh": [],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "TODO document."
+      ],
+      "english_status": "missing_documentation",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -39579,8 +40033,20 @@
         }
       ],
       "description_zh": [],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "Iterator for group g; the pointer starts at the first card and moves to the next card with each call, typically used when operating on cards in g",
+        "For example:",
+        "local g=Group.CreateGroup()",
+        "for tc in aux.Next(g) do",
+        "end",
+        "Equivalent to:",
+        "local g=Group.CreateGroup()",
+        "local tc=g:GetFirst()",
+        "while tc do",
+        "  tc=g:GetNext()",
+        "end"
+      ],
+      "english_status": "imported_from_old_utilities",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -39681,8 +40147,13 @@
         }
       ],
       "description_zh": [],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "Simplified method for the filter function for face-up monsters with non-zero ATK",
+        "function aux.nzatk(c)",
+        "  return c:IsFaceup() and c:GetAttack()>0",
+        "end"
+      ],
+      "english_status": "imported_from_old_utilities",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -39716,8 +40187,13 @@
         }
       ],
       "description_zh": [],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "Simplified method for the filter function for face-up monsters with non-zero DEF",
+        "function aux.nzdef(c)",
+        "  return c:IsFaceup() and c:GetDefense()>0",
+        "end"
+      ],
+      "english_status": "imported_from_old_utilities",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -39793,7 +40269,7 @@
       "description_en": [
         "Orcustrated Babel"
       ],
-      "english_status": "existing_english",
+      "english_status": "imported_from_dataeditorx",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -39832,7 +40308,7 @@
       "description_en": [
         "The `nolimit` parameter for Special Summon effects of Phantasms cards"
       ],
-      "english_status": "existing_english",
+      "english_status": "imported_from_dataeditorx",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -40013,8 +40489,26 @@
         }
       ],
       "description_zh": [],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "Simplified method for the filter function for Qli Monster general immunity (unaffected by effects of monsters with lower original Level/Rank than this card's Level), used in effect registration for SetValue",
+        "te is the effect that would affect e:GetHandler()",
+        "function aux.qlifilter(e, te)",
+        "  if te:IsActiveType(TYPE_MONSTER) and te:IsActivated() then",
+        "    local lv=e:GetHandler():GetLevel()",
+        "    local ec=te:GetOwner()",
+        "    if ec:IsType(TYPE_LINK) then",
+        "      return false",
+        "    elseif ec:IsType(TYPE_XYZ) then",
+        "      return ec:GetOriginalRank()<lv",
+        "    else",
+        "      return ec:GetOriginalLevel()<lv",
+        "    end",
+        "  else",
+        "    return false",
+        "  end",
+        "end"
+      ],
+      "english_status": "imported_from_old_utilities",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -40297,7 +40791,7 @@
       "description_en": [
         "Check if all cards in g have the same Attribute/Race"
       ],
-      "english_status": "existing_english",
+      "english_status": "imported_from_dataeditorx",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -40429,7 +40923,7 @@
         "Duel.SelectOption with option condition",
         "Return value starts from 1, different from Duel.SelectOption"
       ],
-      "english_status": "existing_english",
+      "english_status": "imported_from_dataeditorx",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -40498,7 +40992,7 @@
       "description_en": [
         "Select the same number of cards from each group."
       ],
-      "english_status": "existing_english",
+      "english_status": "imported_from_dataeditorx",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -40672,8 +41166,10 @@
         }
       ],
       "description_zh": [],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "TODO document."
+      ],
+      "english_status": "missing_documentation",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -40707,8 +41203,10 @@
         }
       ],
       "description_zh": [],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "Add Union Monster attributes to c"
+      ],
+      "english_status": "imported_from_old_utilities",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -41313,8 +41811,21 @@
         }
       ],
       "description_zh": [],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "Used by Yosenju Yamamisaki (39853199) and some other cards (49249907, 93368494), though the purpose of this function is unclear (★意★义★不★明★)",
+        "Card 54109233, while not using this function, uses a similar implementation, also with unclear purpose (★意★义★不★明★), equivalent to",
+        "function aux.sumreg(e, tp, eg, ep, ev, re, r, rp)",
+        "  local tc=eg:GetFirst()",
+        "  local code=e:GetLabel()",
+        "  while tc do",
+        "    if tc:GetOriginalCode()==code then",
+        "      tc:RegisterFlagEffect(code, RESET_EVENT+0x1ec0000+RESET_PHASE+PHASE_END, 0, 1)",
+        "    end",
+        "    tc=eg:GetNext()",
+        "  end",
+        "end"
+      ],
+      "english_status": "imported_from_old_utilities",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -41348,8 +41859,10 @@
         }
       ],
       "description_zh": [],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "TODO document."
+      ],
+      "english_status": "missing_documentation",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -41389,8 +41902,16 @@
         }
       ],
       "description_zh": [],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "Used in effect registration, returns a function with a bool return type; additional parameters start from the second parameter",
+        "function Auxiliary.TargetBoolFunction(f,...)",
+        "  local ext_params={...}",
+        "  return function(effect,target)",
+        "    return f(target,table.unpack(ext_params))",
+        "  end",
+        "end"
+      ],
+      "english_status": "imported_from_old_utilities",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -41436,8 +41957,16 @@
         }
       ],
       "description_zh": [],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "Used in effect registration, returns a function with a bool return type; additional parameters start from the third parameter",
+        "function Auxiliary.TargetEqualFunction(f, value, ...)",
+        "  local ext_params={...}",
+        "  return function(effect,target)",
+        "    return f(target,table.unpack(ext_params))==value",
+        "  end",
+        "end"
+      ],
+      "english_status": "imported_from_old_utilities",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -41483,8 +42012,13 @@
         }
       ],
       "description_zh": [],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "Simplified method for the filter function preventing being targeted by opponent's card effects, used in effect registration for SetValue",
+        "function aux.tgoval(e, re, rp)",
+        "  return rp==e:GetHandlerPlayer()",
+        "end"
+      ],
+      "english_status": "imported_from_old_utilities",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -41530,8 +42064,13 @@
         }
       ],
       "description_zh": [],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "Simplified method for the filter function preventing being targeted by your own card effects, used in effect registration for SetValue",
+        "function aux.tgsval(e, re, rp)",
+        "  return rp==e:GetHandlerPlayer()",
+        "end"
+      ],
+      "english_status": "imported_from_old_utilities",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -41845,7 +42384,7 @@
       "description_en": [
         "The `nolimit` parameter for Special Summon effects of Triamid cards"
       ],
-      "english_status": "existing_english",
+      "english_status": "imported_from_dataeditorx",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -42763,8 +43302,10 @@
         }
       ],
       "description_zh": [],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "TODO document."
+      ],
+      "english_status": "missing_documentation",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -42850,8 +43391,10 @@
         }
       ],
       "description_zh": [],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "TODO document."
+      ],
+      "english_status": "missing_documentation",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -42901,8 +43444,10 @@
         }
       ],
       "description_zh": [],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "TODO document."
+      ],
+      "english_status": "missing_documentation",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -42970,8 +43515,10 @@
         }
       ],
       "description_zh": [],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "TODO document."
+      ],
+      "english_status": "missing_documentation",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -43033,8 +43580,10 @@
         }
       ],
       "description_zh": [],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "TODO document."
+      ],
+      "english_status": "missing_documentation",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -43107,8 +43656,10 @@
         }
       ],
       "description_zh": [],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "TODO document."
+      ],
+      "english_status": "missing_documentation",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -43234,8 +43785,10 @@
         }
       ],
       "description_zh": [],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "TODO document."
+      ],
+      "english_status": "missing_documentation",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -43326,8 +43879,10 @@
         }
       ],
       "description_zh": [],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "TODO document."
+      ],
+      "english_status": "missing_documentation",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -43430,8 +43985,10 @@
         }
       ],
       "description_zh": [],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "TODO document."
+      ],
+      "english_status": "missing_documentation",
       "source_files": [
         {
           "path": "Utilities/procedure.lua",
@@ -43543,7 +44100,7 @@
       "description_en": [
         "Add Fusion Summon with table `params`."
       ],
-      "english_status": "existing_english",
+      "english_status": "imported_from_dataeditorx",
       "source_files": [
         {
           "path": "Utilities/procedure.lua",
@@ -43685,8 +44242,12 @@
       "description_zh": [
         "Fusion monster, name + name + condition * minc to maxc"
       ],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "Add a Fusion Summon procedure for c",
+        "Use 1 monster each with codes code1 and code2, and minc-maxc monsters satisfying filter condition f as Fusion Materials",
+        "Equivalent to aux.AddFusionProcMixRep(c, sub, insf, f, minc, maxc, code1, code2)"
+      ],
+      "english_status": "imported_from_old_utilities",
       "source_files": [
         {
           "path": "Utilities/procedure.lua",
@@ -43971,8 +44532,12 @@
       "description_zh": [
         "Fusion monster, name + condition * minc to maxc"
       ],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "Add a Fusion Summon procedure for c",
+        "Use 1 monster with code and minc-maxc monsters satisfying filter condition f as Fusion Materials",
+        "Equivalent to aux.AddFusionProcMixRep(c, sub, insf, f, minc, maxc, code1)"
+      ],
+      "english_status": "imported_from_old_utilities",
       "source_files": [
         {
           "path": "Utilities/procedure.lua",
@@ -44101,8 +44666,12 @@
       "description_zh": [
         "Fusion monster, name * minc to maxc"
       ],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "Add a Fusion Summon procedure for c",
+        "Use minc-maxc identical monsters with code as Fusion Materials",
+        "Equivalent to aux.AddFusionProcMixRep(c, sub, insf, code1, minc, maxc)"
+      ],
+      "english_status": "imported_from_old_utilities",
       "source_files": [
         {
           "path": "Utilities/procedure.lua",
@@ -44219,8 +44788,12 @@
       "description_zh": [
         "Fusion monster, condition1 + condition2 * n"
       ],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "Add a Fusion Summon procedure for c",
+        "Use 1 monster satisfying filter condition f1 and cc monsters satisfying filter condition f2 as Fusion Materials",
+        "Equivalent to aux.AddFusionProcMix(c, false, insf, f1, table.unpack(fun)), where fun is a table of cc cards satisfying condition f2"
+      ],
+      "english_status": "imported_from_old_utilities",
       "source_files": [
         {
           "path": "Utilities/procedure.lua",
@@ -44284,8 +44857,12 @@
         }
       ],
       "description_zh": [],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "Add a Fusion Summon procedure for c",
+        "Use 1 monster satisfying filter condition f1 and minc-maxc monsters satisfying filter condition f2 as Fusion Materials",
+        "Equivalent to aux.AddFusionProcMixRep(c, false, insf, f2, minc, maxc, f1)"
+      ],
+      "english_status": "imported_from_old_utilities",
       "source_files": [
         {
           "path": "Utilities/procedure.lua",
@@ -44402,8 +44979,12 @@
       "description_zh": [
         "Fusion monster, condition * minc to maxc"
       ],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "Add a Fusion Summon procedure for c",
+        "Use minc-maxc monsters satisfying the same condition f as Fusion Materials",
+        "Equivalent to aux.AddFusionProcMixRep(c, false, insf, f, minc, maxc)"
+      ],
+      "english_status": "imported_from_old_utilities",
       "source_files": [
         {
           "path": "Utilities/procedure.lua",
@@ -44457,8 +45038,12 @@
       "description_zh": [
         "Fusion monster, mixed materials (fixed count)"
       ],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "Add a Fusion Summon procedure for c",
+        "Use 1 of each card in the additional parameters as Fusion Materials; additional parameters can be function or card code (int code), where passing a code is equivalent to passing function(code) return c:IsFusionCode(code) end",
+        "sub indicates whether Fusion Substitute Materials can be used; insf=false means the Fusion Summon must use the specified materials. If this monster can only be Fusion Summoned with the specified cards, both sub and insf must be false"
+      ],
+      "english_status": "imported_from_old_utilities",
       "source_files": [
         {
           "path": "Utilities/procedure.lua",
@@ -44530,8 +45115,12 @@
       "description_zh": [
         "Fusion monster, mixed material * minc to maxc + material + ..."
       ],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "Add a Fusion Summon procedure for c",
+        "Use minc-maxc monsters satisfying f1 and 1 of each monster in the additional parameters as Fusion Materials",
+        "Additional parameters can be function or card code (int code), where passing a code is equivalent to passing function(code) return c:IsFusionCode(code) end"
+      ],
+      "english_status": "imported_from_old_utilities",
       "source_files": [
         {
           "path": "Utilities/procedure.lua",
@@ -44573,8 +45162,10 @@
       "description_zh": [
         "Fusion monster, Shaddoll materials"
       ],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "Exclusive to Shaddoll Fusion Monsters; attribute is the required Attribute"
+      ],
+      "english_status": "imported_from_old_utilities",
       "source_files": [
         {
           "path": "Utilities/procedure.lua",
@@ -44634,8 +45225,11 @@
       "description_zh": [
         "Link Summon"
       ],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "Add a Link Summon procedure for c",
+        "Use minc-maxc monsters satisfying filter condition f [and within the group satisfying filter condition gf] as Link Materials"
+      ],
+      "english_status": "imported_from_old_utilities",
       "source_files": [
         {
           "path": "Utilities/procedure.lua",
@@ -44791,8 +45385,11 @@
         }
       ],
       "description_zh": [],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "Add a Ritual Summon effect for c",
+        "filter is the condition the Ritual Monster must satisfy; the sum of the Ritual Levels of the materials must equal the Ritual Monster's Level (which may be altered by other card effects)"
+      ],
+      "english_status": "imported_from_old_utilities",
       "source_files": [
         {
           "path": "Utilities/procedure.lua",
@@ -44868,8 +45465,12 @@
         }
       ],
       "description_zh": [],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "Add a Ritual Summon effect for c",
+        "code is the card code of the Ritual Monster; the sum of the Levels of the materials must equal the Ritual Monster's Level",
+        "Equivalent to: aux.AddRitualProcEqual2(c, aux.FilterBoolFunction(Card.IsCode, code)), with fit_monster=code added"
+      ],
+      "english_status": "imported_from_old_utilities",
       "source_files": [
         {
           "path": "Utilities/procedure.lua",
@@ -44951,8 +45552,12 @@
         }
       ],
       "description_zh": [],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "Add a Ritual Summon effect for c",
+        "code1, code2 are the card codes of the Ritual Monsters; the sum of the Levels of the materials must equal the Ritual Monster's Level",
+        "Equivalent to: aux.AddRitualProcEqual2(c, aux.FilterBoolFunction(Card.IsCode, code1, code2)), with fit_monster={code1, code2} added"
+      ],
+      "english_status": "imported_from_old_utilities",
       "source_files": [
         {
           "path": "Utilities/procedure.lua",
@@ -45028,8 +45633,12 @@
         }
       ],
       "description_zh": [],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "Add a Ritual Summon effect for c",
+        "code is the card code of the Ritual Monster; the sum of the Ritual Levels of the materials must equal the original Level of the Ritual Monster",
+        "Equivalent to: aux.AddRitualProcEqual(c, aux.FilterBoolFunction(Card.IsCode, code)), with fit_monster=code added"
+      ],
+      "english_status": "imported_from_old_utilities",
       "source_files": [
         {
           "path": "Utilities/procedure.lua",
@@ -45185,8 +45794,10 @@
         }
       ],
       "description_zh": [],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "TODO document."
+      ],
+      "english_status": "missing_documentation",
       "source_files": [
         {
           "path": "Utilities/procedure.lua",
@@ -45262,8 +45873,10 @@
         }
       ],
       "description_zh": [],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "TODO document."
+      ],
+      "english_status": "missing_documentation",
       "source_files": [
         {
           "path": "Utilities/procedure.lua",
@@ -45345,8 +45958,10 @@
         }
       ],
       "description_zh": [],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "TODO document."
+      ],
+      "english_status": "missing_documentation",
       "source_files": [
         {
           "path": "Utilities/procedure.lua",
@@ -45422,8 +46037,12 @@
         }
       ],
       "description_zh": [],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "Add a Ritual Summon effect for c",
+        "code is the card code of the Ritual Monster; the sum of the Ritual Levels of the materials can exceed the original Level of the Ritual Monster",
+        "Equivalent to: aux.AddRitualProcGreater(c, aux.FilterBoolFunction(Card.IsCode, code)), with fit_monster=code added"
+      ],
+      "english_status": "imported_from_old_utilities",
       "source_files": [
         {
           "path": "Utilities/procedure.lua",
@@ -45511,8 +46130,10 @@
         }
       ],
       "description_zh": [],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "TODO document."
+      ],
+      "english_status": "missing_documentation",
       "source_files": [
         {
           "path": "Utilities/procedure.lua",
@@ -45590,8 +46211,13 @@
       "description_zh": [
         "Synchro monster, f1~f3 each 1 MONSTER + f4 min to max monsters"
       ],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "Add a Synchro Summon procedure for c",
+        "f1, f2, f3 are filter conditions satisfied by 1 card each, f4 is a filter condition satisfied by minc [to maxc] cards",
+        "At least one of f1, f2, f3, f4 must be a Tuner condition",
+        "If f2 and f3 are nil, equivalent to aux.AddSynchroProcedure(c, f1, f4, minc[, maxc])"
+      ],
+      "english_status": "imported_from_old_utilities",
       "source_files": [
         {
           "path": "Utilities/procedure.lua",
@@ -45869,8 +46495,13 @@
       "description_zh": [
         "Xyz monster, any condition(level free)"
       ],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "Add an Xyz Summon procedure for c",
+        "Use minc [to maxc] monsters satisfying condition f, and within the group satisfying condition gf, for overlay; f is a required condition, gf is an additional condition",
+        "Or overlay on a single monster (typically an Xyz Monster)",
+        "alterf is the condition this monster must satisfy, desc is the description, op is the operation required during overlay (e.g., Number F0: Utopic Future)"
+      ],
+      "english_status": "imported_from_old_utilities",
       "source_files": [
         {
           "path": "Utilities/procedure.lua",
@@ -46388,8 +47019,11 @@
         }
       ],
       "description_zh": [],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "Add Pendulum Monster attributes to c (Pendulum Summon, Pendulum Card activation)",
+        "If active_effect=false, do not register the Pendulum Card's \"card activation\" effect"
+      ],
+      "english_status": "imported_from_old_utilities",
       "source_files": [
         {
           "path": "Utilities/procedure.lua",
@@ -46429,8 +47063,11 @@
         }
       ],
       "description_zh": [],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "If monster c is Pendulum Summoned from location, it can bypass revival restrictions",
+        "NOTE: The original description includes a question mark (?), indicating potential uncertainty; translated as written (e.g., Odd-Eyes Revolution Dragon (16306932))"
+      ],
+      "english_status": "imported_from_old_utilities",
       "source_files": [
         {
           "path": "Utilities/procedure.lua",
@@ -48764,8 +49401,14 @@
         }
       ],
       "description_zh": [],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "Simplified method for the filter function preventing summoning (broadly) by methods other than Fusion Summon, used in effect registration for SetValue",
+        "se is the effect used to summon the card, sp is the summoning player, st is the summon type",
+        "function aux.fuslimit(e, se, sp, st)",
+        "  return st&SUMMON_TYPE_FUSION==SUMMON_TYPE_FUSION",
+        "end"
+      ],
+      "english_status": "imported_from_old_utilities",
       "source_files": [
         {
           "path": "Utilities/procedure.lua",
@@ -48799,8 +49442,15 @@
         }
       ],
       "description_zh": [],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "Return the number of materials card c counts as when used as a Link Material",
+        "function Auxiliary.GetLinkCount(c)",
+        "  if c:IsType(TYPE_LINK) and c:GetLink()>1 then",
+        "    return 1+0x10000*c:GetLink()",
+        "  else return 1 end",
+        "end"
+      ],
+      "english_status": "imported_from_old_utilities",
       "source_files": [
         {
           "path": "Utilities/procedure.lua",
@@ -49435,8 +50085,14 @@
         }
       ],
       "description_zh": [],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "Simplified method for the filter function preventing summoning (broadly) by methods other than Link Summon, used in effect registration for SetValue",
+        "se is the effect used to summon the card, sp is the summoning player, st is the summon type",
+        "function aux.linklimit(e, se, sp, st)",
+        "  return st&SUMMON_TYPE_LINK==SUMMON_TYPE_LINK",
+        "end"
+      ],
+      "english_status": "imported_from_old_utilities",
       "source_files": [
         {
           "path": "Utilities/procedure.lua",
@@ -49702,8 +50358,16 @@
         }
       ],
       "description_zh": [],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "Check if value contains cards or a group affected by player's effect type code",
+        "Currently involved codes are:",
+        "EFFECT_MUST_BE_SMATERIAL",
+        "EFFECT_MUST_BE_XMATERIAL",
+        "EFFECT_MUST_BE_FMATERIAL",
+        "EFFECT_MUST_BE_LMATERIAL",
+        "All are checks for required materials"
+      ],
+      "english_status": "imported_from_old_utilities",
       "source_files": [
         {
           "path": "Utilities/procedure.lua",
@@ -49743,8 +50407,10 @@
         }
       ],
       "description_zh": [],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "If group g contains card c, return false"
+      ],
+      "english_status": "imported_from_old_utilities",
       "source_files": [
         {
           "path": "Utilities/procedure.lua",
@@ -49784,8 +50450,11 @@
         }
       ],
       "description_zh": [],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "Filter non-Tuner monsters satisfying a single filter condition f, returning a function with a bool return type; if only non-Tuner monsters are required, use aux.NonTuner(nil)",
+        "Additional parameters start from the second parameter"
+      ],
+      "english_status": "imported_from_old_utilities",
       "source_files": [
         {
           "path": "Utilities/procedure.lua",
@@ -50349,8 +51018,14 @@
         }
       ],
       "description_zh": [],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "Simplified method for the filter function preventing summoning (broadly) by methods other than Pendulum Summon, used in effect registration for SetValue",
+        "se is the effect used to summon the card, sp is the summoning player, st is the summon type",
+        "function aux.penlimit(e, se, sp, st)",
+        "  return st&SUMMON_TYPE_PENDULUM==SUMMON_TYPE_PENDULUM",
+        "end"
+      ],
+      "english_status": "imported_from_old_utilities",
       "source_files": [
         {
           "path": "Utilities/procedure.lua",
@@ -50481,8 +51156,14 @@
         }
       ],
       "description_zh": [],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "Simplified method for the filter function preventing summoning (broadly) by methods other than Ritual Summon, used in effect registration for SetValue",
+        "se is the effect used to summon the card, sp is the summoning player, st is the summon type",
+        "function aux.ritlimit(e, se, sp, st)",
+        "  return st&SUMMON_TYPE_RITUAL==SUMMON_TYPE_RITUAL",
+        "end"
+      ],
+      "english_status": "imported_from_old_utilities",
       "source_files": [
         {
           "path": "Utilities/procedure.lua",
@@ -50547,7 +51228,7 @@
         "|\"'Greater'\"",
         "|\"'Equal'\""
       ],
-      "english_status": "existing_english",
+      "english_status": "imported_from_dataeditorx",
       "source_files": [
         {
           "path": "Utilities/procedure.lua",
@@ -51155,8 +51836,14 @@
         }
       ],
       "description_zh": [],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "Simplified method for the filter function preventing summoning (broadly) by methods other than Synchro Summon, used in effect registration for SetValue",
+        "se is the effect used to summon the card, sp is the summoning player, st is the summon type",
+        "function aux.synlimit(e, se, sp, st)",
+        "  return st&SUMMON_TYPE_SYNCHRO==SUMMON_TYPE_SYNCHRO",
+        "end"
+      ],
+      "english_status": "imported_from_old_utilities",
       "source_files": [
         {
           "path": "Utilities/procedure.lua",
@@ -52583,8 +53270,10 @@
         }
       ],
       "description_zh": [],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "Exclusive to Tuning Magician (73941492)"
+      ],
+      "english_status": "imported_from_old_utilities",
       "source_files": [
         {
           "path": "Utilities/procedure.lua",
@@ -52624,8 +53313,10 @@
         }
       ],
       "description_zh": [],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "Exclusive to Tuning Magician (73941492), returning a function f(e, c) with a bool return type"
+      ],
+      "english_status": "imported_from_old_utilities",
       "source_files": [
         {
           "path": "Utilities/procedure.lua",
@@ -52665,8 +53356,11 @@
         }
       ],
       "description_zh": [],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "Filter Tuner monsters satisfying a single filter condition f, returning a function with a bool return type; if only Tuner monsters are required, use aux.Tuner(nil)",
+        "Additional parameters start from the second parameter"
+      ],
+      "english_status": "imported_from_old_utilities",
       "source_files": [
         {
           "path": "Utilities/procedure.lua",
@@ -53419,8 +54113,14 @@
         }
       ],
       "description_zh": [],
-      "description_en": [],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "Simplified method for the filter function preventing summoning (broadly) by methods other than Xyz Summon, used in effect registration for SetValue",
+        "se is the effect used to summon the card, sp is the summoning player, st is the summon type",
+        "function aux.xyzlimit(e, se, sp, st)",
+        "  return st&SUMMON_TYPE_XYZ==SUMMON_TYPE_XYZ",
+        "end"
+      ],
+      "english_status": "imported_from_old_utilities",
       "source_files": [
         {
           "path": "Utilities/procedure.lua",

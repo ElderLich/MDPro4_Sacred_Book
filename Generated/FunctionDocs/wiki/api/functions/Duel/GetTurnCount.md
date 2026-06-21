@@ -8,7 +8,7 @@ Duel.GetTurnCount([int player]) -> int
 
 ## Description
 
-返回[player所经过的]当前的回合数
+Returns the current number of turns
 
 ## Parameters
 

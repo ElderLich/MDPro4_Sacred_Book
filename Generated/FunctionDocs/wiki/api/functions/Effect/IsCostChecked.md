@@ -8,7 +8,7 @@ Effect.IsCostChecked(Effect e) -> bool
 
 ## Description
 
-检查效果e是否检查过cost，即是否是被复制的
+Checks whether e's cost has already been checked, which indicates whether it was copied.
 
 ## Parameters
 

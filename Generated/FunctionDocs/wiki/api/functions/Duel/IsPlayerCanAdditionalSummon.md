@@ -8,7 +8,7 @@ Duel.IsPlayerCanAdditionalSummon(int player) -> bool
 
 ## Description
 
-检查玩家player是否有通常召唤外的召唤次数。
+Check if player has additional summon counts beyond Normal Summon
 
 ## Parameters
 

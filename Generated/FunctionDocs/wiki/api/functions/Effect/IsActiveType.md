@@ -8,7 +8,7 @@ Effect.IsActiveType(Effect e, int type) -> bool
 
 ## Description
 
-检查e的效果类型（怪兽·魔法·陷阱）是否有type
+Check if the effect type of e (monster, magic, trap) has a type
 
 ## Parameters
 

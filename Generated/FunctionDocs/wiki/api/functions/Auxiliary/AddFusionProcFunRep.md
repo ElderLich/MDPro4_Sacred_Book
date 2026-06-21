@@ -8,7 +8,7 @@ Auxiliary.AddFusionProcFunRep(Card c, function|table f, int cc, bool insf) -> vo
 
 ## Description
 
-Fusion monster, condition * n
+For the c designated cc meet the same conditions f monster for the fusion material
 
 ## Parameters
 

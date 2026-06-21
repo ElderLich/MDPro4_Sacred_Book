@@ -8,7 +8,7 @@ Card.IsType(Card c, int type) -> bool
 
 ## Description
 
-检查c是否包含type之中任何类型
+Check if c is of type type
 
 ## Parameters
 

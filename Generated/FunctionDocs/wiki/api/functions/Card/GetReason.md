@@ -8,7 +8,7 @@ Card.GetReason(Card c) -> int
 
 ## Description
 
-返回c的位置变化原因
+Returns the position change reason for c
 
 ## Parameters
 

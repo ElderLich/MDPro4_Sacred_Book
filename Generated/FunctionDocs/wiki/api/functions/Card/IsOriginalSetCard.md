@@ -8,7 +8,7 @@ Card.IsOriginalSetCard(Card c, ... int) -> bool
 
 ## Description
 
-检查c是否是原本卡名含有setname的卡
+Check if card c is originally a card with setname in its name
 
 ## Parameters
 

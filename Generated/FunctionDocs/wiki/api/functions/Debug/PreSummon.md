@@ -8,7 +8,7 @@ Debug.PreSummon(Card c, int sum_type, [int sum_location]) -> void
 
 ## Description
 
-设置卡片c的召唤信息：以 sum_type 方法(通常召唤、特殊召唤等)[从 sum_location]出场
+Set summon information for card c: Summarize with sum_type method (usually summoned, special summoned, etc.) [from sum_location]
 
 ## Parameters
 

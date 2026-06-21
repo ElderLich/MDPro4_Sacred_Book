@@ -8,7 +8,9 @@ Auxiliary.AddRitualProcEqualCode(Card c, any code1, any summon_location, any gra
 
 ## Description
 
-TODO document.
+Add a Ritual Summon effect for c
+code is the card code of the Ritual Monster; the sum of the Ritual Levels of the materials must equal the original Level of the Ritual Monster
+Equivalent to: aux.AddRitualProcEqual(c, aux.FilterBoolFunction(Card.IsCode, code)), with fit_monster=code added
 
 ## Parameters
 

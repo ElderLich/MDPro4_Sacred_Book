@@ -8,8 +8,8 @@ Duel.CheckTunerMaterial(Card c, Card tuner, [function|nil f1], [function|nil f2]
 
 ## Description
 
-检查场上[或mg中]是否存在一组以tuner作为调整,并且满足条件的卡作为同调召唤c的素材
-f1是 1 只需要满足的过滤条件，f2是 min-max 只需要满足的过滤条件
+Check to tuner as an adjustment [in the mg] whether there is a set of min-max card to meet the conditions as cohort call c material
+F1 is to adjust the filter conditions to be met, f2 is outside the adjustment to meet the needs of the filter conditions
 
 ## Parameters
 

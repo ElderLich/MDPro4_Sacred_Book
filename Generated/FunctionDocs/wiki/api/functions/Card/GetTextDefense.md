@@ -8,7 +8,7 @@ Card.GetTextDefense(Card c) -> int
 
 ## Description
 
-返回c的卡片记载的守备力，返回值是负数表示是"?"
+Return the c 's card record of the garrison
 
 ## Parameters
 

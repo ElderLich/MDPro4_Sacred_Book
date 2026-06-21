@@ -8,8 +8,8 @@ Duel.ReturnToField(Card c, [int pos], [int zone]) -> bool
 
 ## Description
 
-把c以表示形式pos返回到场上[的区域 zone]，pos默认值是离场前的表示形式，返回值表示是否成功
-c必须是以REASON_TEMPORARY原因离场，并且离场后没有离开过那个位置
+To return the form c to the field pos, pos default value is the expression before leaving the field, the return value indicates whether the success
+C must be a REASON_TEMPORARY reason to leave, and leave the position did not leave that position
 
 ## Parameters
 

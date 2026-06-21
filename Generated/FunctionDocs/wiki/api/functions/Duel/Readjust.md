@@ -8,8 +8,8 @@ Duel.Readjust() -> void
 
 ## Description
 
-刷新场上的卡的信息
-非特定情况或者不清楚原理请勿使用此函数以免形成死循环
+Refresh the card information on the field
+Unspecified or unclear principle Do not use this function to avoid an infinite loop
 
 ## Source
 

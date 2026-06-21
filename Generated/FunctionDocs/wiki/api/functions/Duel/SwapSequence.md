@@ -8,7 +8,7 @@ Duel.SwapSequence(Card c1, Card c2) -> void
 
 ## Description
 
-交换c1和c2的位置
+Swap the positions of c1 and c2
 
 ## Parameters
 

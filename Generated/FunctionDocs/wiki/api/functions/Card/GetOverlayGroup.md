@@ -8,7 +8,7 @@ Card.GetOverlayGroup(Card c) -> Group
 
 ## Description
 
-返回c当前叠放着的卡片组
+Returns the currently stacked deck
 
 ## Parameters
 

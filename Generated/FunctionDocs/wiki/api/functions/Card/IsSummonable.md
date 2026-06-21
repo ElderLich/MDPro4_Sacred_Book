@@ -8,8 +8,8 @@ Card.IsSummonable(Card c, bool ignore_count, [Effect|nil e], [int min], [int zon
 
 ## Description
 
-检查c是否可以进行通常召唤（不包含通常召唤的set)，ignore_count=true则不检查召唤次数限制
-e~=nil则检查c是否可以以效果e进行通常召唤，min表示至少需要的祭品数（用于区分妥协召唤与上级召唤）,zone 表示必须要召唤到的区域
+Check whether c is usually called (not including the normally called set), ignore_count = true does not check the number of calls limit
+E ~ = nil check whether c can be the effect of e is usually called, min said at least the number of sacrifice (used to distinguish between compromise summons and superior call)
 
 ## Parameters
 

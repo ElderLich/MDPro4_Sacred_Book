@@ -8,9 +8,8 @@ Card.IsChainAttackable(Card c, [int ac], [bool monsteronly]) -> bool
 
 ## Description
 
-检查c是否可以连续攻击，c的攻击宣言次数>=ac则返回false
-monsteronly = true 则表示只能对怪兽攻击
-注：当c因为闪光之双剑等效果进行过多次攻击之后此函数返回false
+Check whether c can be a continuous attack, c the number of attacks declared> = ac return false
+Note: This function returns false when c has made multiple attacks due to effects such as flashing swords
 
 ## Parameters
 

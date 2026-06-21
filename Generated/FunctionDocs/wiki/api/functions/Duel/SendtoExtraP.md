@@ -8,8 +8,8 @@ Duel.SendtoExtraP(Card|Group targets, [int|nil player], int reason) -> int
 
 ## Description
 
-以reason原因把灵摆卡targets表侧表示送去玩家player的额外卡组，返回值是实际被操作的数量
-如果player是nil则返回卡的持有者的额外卡组
+The reason for the reason the spirit of the swing card targets sent to the player player extra card group, the return value is the actual number of operations
+If player is nil, it returns the extra card group for the card holder
 
 ## Parameters
 

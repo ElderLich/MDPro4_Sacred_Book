@@ -8,7 +8,7 @@ Duel.ChainAttack([Card c]) -> void
 
 ## Description
 
-使攻击卡[或卡片c]可以再进行1次攻击（比如 大开辟，破灭的女王）
+So that the attack card [or card c] can be carried out an attack (opening up, the queen of the Queen)
 
 ## Parameters
 

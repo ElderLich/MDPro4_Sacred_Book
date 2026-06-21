@@ -8,7 +8,7 @@ bit.rshift(any a, any b) -> void
 
 ## Description
 
-TODO document.
+A Move to the right b
 
 ## Parameters
 

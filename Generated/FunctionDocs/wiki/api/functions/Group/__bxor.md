@@ -8,7 +8,7 @@ Group.__bxor(Group|Card left, Group|Card right) -> Group
 
 ## Description
 
-Symmetric-difference operator for Group/Card operands.
+Create a new card group, add all cards that are different between target1 and target2 (i.e., cards present in only target1 or target2) to this group, and return it; target1 and target2 remain unchanged
 
 ## Parameters
 

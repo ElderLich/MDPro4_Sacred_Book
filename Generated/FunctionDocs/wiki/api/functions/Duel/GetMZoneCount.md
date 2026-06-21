@@ -8,8 +8,7 @@ Duel.GetMZoneCount(int player, [Group|Card targets], [int use_player], [int reas
 
 ## Description
 
-返回玩家player场上[targets 离开后]可用的[区域 zone 里的]怪兽区数量
-##第三个第四个额外参数与凯撒斗技场等限制格子的效果有关
+Return the number of available [zone slots] in the Monster Zone on player's field [after targets leave]
 
 ## Parameters
 

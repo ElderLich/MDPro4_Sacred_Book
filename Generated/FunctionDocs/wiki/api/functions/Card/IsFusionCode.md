@@ -8,7 +8,7 @@ Card.IsFusionCode(Card c, int code, [... int]) -> bool
 
 ## Description
 
-检查c作为融合素材时能否当作卡号为code的卡，额外参数是其他code
+Check the c as a fusion material can be used as the card number for the code card
 
 ## Parameters
 

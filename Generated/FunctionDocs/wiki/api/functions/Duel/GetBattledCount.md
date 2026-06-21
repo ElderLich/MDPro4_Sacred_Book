@@ -8,7 +8,7 @@ Duel.GetBattledCount(int player) -> int
 
 ## Description
 
-返回玩家player这回合战斗过的次数
+Returns the number of times a player fought this turn
 
 ## Parameters
 

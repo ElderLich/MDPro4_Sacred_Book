@@ -8,8 +8,8 @@ Duel.TossDice(int player, int count1, [int count2]) -> ...
 
 ## Description
 
-让玩家player投count1次骰子[，1-player投count2次骰子](count1+count2<=5)
-返回值为count1+count2个结果，1-6
+Let the player to cast count1 dice[, 1-player to vote count2 dice] (count1 + count2 <= 5)
+The return value is count1 + count2 results, 1-6
 
 ## Parameters
 

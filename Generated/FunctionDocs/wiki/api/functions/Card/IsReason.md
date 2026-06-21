@@ -8,7 +8,7 @@ Card.IsReason(Card c, int reason) -> bool
 
 ## Description
 
-检查c是否包含reason之中任何原因
+Check if c contains the reason
 
 ## Parameters
 

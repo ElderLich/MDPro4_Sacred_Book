@@ -8,7 +8,7 @@ Card.SetTurnCounter(Card c, int counter) -> void
 
 ## Description
 
-设置c的回合计数器（光之护封剑等）
+Set c of the round counter (light of the sword, etc.)
 
 ## Parameters
 

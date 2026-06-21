@@ -8,7 +8,7 @@ Card.IsCanBeBattleTarget(Card c1, Card c2) -> bool
 
 ## Description
 
-检查c1是否可以成为c2的攻击目标
+Check whether c1 can become a target of c2
 
 ## Parameters
 

@@ -8,7 +8,7 @@ Duel.Hint(int hint_type, int player, int desc) -> void
 
 ## Description
 
-给玩家player发送hint_type类型的消息提示，提示内容为desc
+Send hint_type to the player player type of message prompts, the contents of the prompt desc
 
 ## Parameters
 

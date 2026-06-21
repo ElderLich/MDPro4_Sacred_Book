@@ -8,7 +8,7 @@ Duel.CheckTiming(int timing) -> bool
 
 ## Description
 
-检查当前是否是timing提示时点
+Check whether the current prompt is the timing point
 
 ## Parameters
 

@@ -8,7 +8,10 @@ Auxiliary.nzatk(Card c) -> void
 
 ## Description
 
-TODO document.
+Simplified method for the filter function for face-up monsters with non-zero ATK
+function aux.nzatk(c)
+  return c:IsFaceup() and c:GetAttack()>0
+end
 
 ## Parameters
 

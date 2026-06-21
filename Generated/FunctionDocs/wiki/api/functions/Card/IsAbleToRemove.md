@@ -8,7 +8,7 @@ Card.IsAbleToRemove(Card c, [int player], [int pos], [int reason]) -> bool
 
 ## Description
 
-检查c是否可以被玩家player除外
+Check whether c can be player except player
 
 ## Parameters
 

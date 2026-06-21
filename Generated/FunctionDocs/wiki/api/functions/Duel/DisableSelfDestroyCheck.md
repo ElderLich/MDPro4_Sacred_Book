@@ -8,7 +8,7 @@ Duel.DisableSelfDestroyCheck([bool enabled]) -> void
 
 ## Description
 
-关闭卡片的自爆检查。不传参或传true为关闭，传false为启用自爆检查
+Disable card self-destruction checks; no parameter or enabled=true disables the check, enabled=false enables the check
 
 ## Parameters
 

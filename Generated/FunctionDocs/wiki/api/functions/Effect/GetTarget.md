@@ -8,7 +8,7 @@ Effect.GetTarget(Effect e) -> function
 
 ## Description
 
-返回target属性
+Returns the target attribute
 
 ## Parameters
 

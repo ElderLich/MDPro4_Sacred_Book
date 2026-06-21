@@ -8,8 +8,8 @@ Debug.SetPlayerInfo(int playerid, int lp, int startcount, int drawcount) -> void
 
 ## Description
 
-设置玩家信息，基本分为lp，初始手卡为startcount张，每回合抽drawcount张
-在残局当中， playerid ：自己=0,对方=1
+Set the player information, divided into lp, the initial hand card for the startcount Zhang, drawcount each round of pumping
+Playerid below 0, top 1
 
 ## Parameters
 

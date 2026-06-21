@@ -8,7 +8,7 @@ Duel.IsPlayerCanDiscardDeckAsCost(int player, int count) -> bool
 
 ## Description
 
-检查玩家player是否能作为Cost把count张卡送去墓地。
+Check the player player can put the card group top count cards sent to the cemetery as cost
 
 ## Parameters
 

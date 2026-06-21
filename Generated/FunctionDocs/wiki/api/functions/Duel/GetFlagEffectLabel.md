@@ -8,7 +8,7 @@ Duel.GetFlagEffectLabel(int player, int code) -> int,...?
 
 ## Description
 
-返回玩家player的种类为code的每个标识效果的Label，没有此效果则返回nil
+Return the Label of the flag effect of type code for player; return nil if no such effect exists
 
 ## Parameters
 

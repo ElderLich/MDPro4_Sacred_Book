@@ -8,7 +8,11 @@ Auxiliary.ExceptThisCard(Effect e) -> void
 
 ## Description
 
-TODO document.
+If e:GetHandler() is related to effect e, return e:GetHandler(); otherwise return nil
+function aux.ExceptThisCard(e)
+  local c=e:GetHandler()
+  if c:IsRelateToEffect(e) then return c else return nil end
+end
 
 ## Parameters
 

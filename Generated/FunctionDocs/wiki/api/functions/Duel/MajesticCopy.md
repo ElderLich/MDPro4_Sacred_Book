@@ -8,8 +8,8 @@ Duel.MajesticCopy(Card c1, Card c2) -> void
 
 ## Description
 
-救世星龙专用。把c2记述的效果复制给c1
-强制发动的效果可以选择是否发动
+Salvation Star Dragon dedicated. Copy the effect described in c2 to c1
+Forced to launch the effect can choose whether to launch
 
 ## Parameters
 

@@ -8,8 +8,8 @@ Card.GetRealFieldID(Card c) -> int
 
 ## Description
 
-返回c转移到当前位置的真实的时间标识
-卡片从里侧翻开不会改变此数值
+Returns the actual timestamp for the c transition to the current position
+Opening the card from the inside does not change this value
 
 ## Parameters
 

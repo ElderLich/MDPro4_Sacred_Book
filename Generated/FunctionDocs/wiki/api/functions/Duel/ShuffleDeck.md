@@ -8,8 +8,8 @@ Duel.ShuffleDeck(int player) -> void
 
 ## Description
 
-手动洗切玩家player的卡组
-注：会重置洗卡检测的状态
+Manually cleans the player group
+NOTE: The status of the wash detection is reset
 
 ## Parameters
 

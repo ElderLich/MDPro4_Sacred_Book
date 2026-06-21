@@ -8,7 +8,7 @@ Card.IsAbleToDeck(Card c) -> bool
 
 ## Description
 
-检查c是否可以送去卡组
+Check whether c can be sent to the card group
 
 ## Parameters
 

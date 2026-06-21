@@ -8,7 +8,7 @@ Group.RemoveCard(Group g, Card c) -> void
 
 ## Description
 
-把c从g中移除
+Remove c from g
 
 ## Parameters
 

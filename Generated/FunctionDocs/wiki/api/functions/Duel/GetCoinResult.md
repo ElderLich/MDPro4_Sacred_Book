@@ -8,7 +8,7 @@ Duel.GetCoinResult() -> int,int,int,int,int
 
 ## Description
 
-返回当前投硬币的结果
+Returns the result of the current coin
 
 ## Returns
 

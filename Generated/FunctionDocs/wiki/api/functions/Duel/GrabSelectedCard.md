@@ -8,7 +8,8 @@ Duel.GrabSelectedCard() -> Group
 
 ## Description
 
-清空并返回由Duel.SetSelectedCard设置的卡片或卡片组。
+Return the card or group of cards set by Duel.SetSelectedCard
+Has no effect when used alone; must be used with Duel.SetSelectedCard first
 
 ## Returns
 

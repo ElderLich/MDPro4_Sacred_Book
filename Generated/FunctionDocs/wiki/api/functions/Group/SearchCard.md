@@ -8,7 +8,7 @@ Group.SearchCard(Group g, function f, ... any) -> Card
 
 ## Description
 
-过滤函数，返回g中满足筛选条件f的第一张卡，若没有则返回nil，从第3个参数开始为额外参数
+Returns the first card in g that satisfies the filter condition f, starting at the third argument as an extra argument
 
 ## Parameters
 

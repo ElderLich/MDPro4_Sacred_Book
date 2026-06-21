@@ -8,8 +8,8 @@ Card.GetBattledGroup(Card c) -> Group
 
 ## Description
 
-返回与c本回合进行过战斗的卡片组
-进行过战斗指发生过伤害的计算，用于剑斗兽等卡的判定
+Returns the deck of the card that fought this turn
+Fighting has occurred in the calculation of the damage occurred, for the sword and other animals, animal judgments
 
 ## Parameters
 

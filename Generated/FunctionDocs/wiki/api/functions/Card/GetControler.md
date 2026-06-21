@@ -8,7 +8,7 @@ Card.GetControler(Card c) -> int
 
 ## Description
 
-返回c的当前控制者
+Returns the current controller of c
 
 ## Parameters
 

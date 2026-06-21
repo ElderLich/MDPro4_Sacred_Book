@@ -8,7 +8,7 @@ Effect.GetOwner(Effect e) -> Card
 
 ## Description
 
-返回Owner属性
+Returns the Owner property
 
 ## Parameters
 

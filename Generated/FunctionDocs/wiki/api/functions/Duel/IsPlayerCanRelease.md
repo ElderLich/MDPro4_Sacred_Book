@@ -8,7 +8,7 @@ Duel.IsPlayerCanRelease(int player, [Card c], [int reason]) -> bool
 
 ## Description
 
-检查玩家player是否能解放[以原因reason解放c]
+Check whether the player can liberate the player c
 
 ## Parameters
 

@@ -8,7 +8,7 @@ Card.GetLinkedGroup(Card c) -> Group
 
 ## Description
 
-返回c所连接区的卡片组
+Return the group of cards in the zones linked to card c
 
 ## Parameters
 

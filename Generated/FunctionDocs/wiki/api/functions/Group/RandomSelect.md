@@ -8,8 +8,8 @@ Group.RandomSelect(Group g, int player, int count) -> Group
 
 ## Description
 
-让玩家player从g中随机选择count张卡
-因为是随机选择，所以参数player基本无用，由系统随机选取
+Let the player player randomly select count cards from g
+Because it is a random choice, so the basic parameter useless player, randomly selected by the system
 
 ## Parameters
 

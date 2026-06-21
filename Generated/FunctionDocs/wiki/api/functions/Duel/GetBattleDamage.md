@@ -8,7 +8,7 @@ Duel.GetBattleDamage(int player) -> int
 
 ## Description
 
-返回玩家player在本次战斗中受到的伤害
+Returns the player's player's damage during this battle
 
 ## Parameters
 

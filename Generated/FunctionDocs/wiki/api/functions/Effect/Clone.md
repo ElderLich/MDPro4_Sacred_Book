@@ -8,7 +8,7 @@ Effect.Clone(Effect e) -> Effect
 
 ## Description
 
-新建一个效果e的副本
+Create a new copy of effect e
 
 ## Parameters
 

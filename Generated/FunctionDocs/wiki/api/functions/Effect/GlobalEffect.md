@@ -8,7 +8,7 @@ Effect.GlobalEffect() -> Effect
 
 ## Description
 
-新建一个全局效果
+Create a new global effect
 
 ## Returns
 

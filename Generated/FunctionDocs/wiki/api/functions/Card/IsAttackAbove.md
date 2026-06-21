@@ -8,7 +8,7 @@ Card.IsAttackAbove(Card c, int atk) -> bool
 
 ## Description
 
-检查c是否是攻击力atk以上
+Check whether c is more than attack power atk
 
 ## Parameters
 

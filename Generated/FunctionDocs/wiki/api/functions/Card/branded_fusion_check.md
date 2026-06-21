@@ -8,7 +8,7 @@ Card.branded_fusion_check(int tp, Group sg, Card fc) -> void
 
 ## Description
 
-素材检查（烙印融合）
+Material check for Branded Fusion.
 
 ## Parameters
 

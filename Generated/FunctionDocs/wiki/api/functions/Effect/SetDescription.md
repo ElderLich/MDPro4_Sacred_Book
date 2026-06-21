@@ -8,7 +8,7 @@ Effect.SetDescription(Effect e, int desc) -> void
 
 ## Description
 
-为效果e设置效果描述
+Sets the effect description for effect e
 
 ## Parameters
 

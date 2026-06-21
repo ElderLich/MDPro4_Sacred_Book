@@ -8,8 +8,8 @@ Card.IsControlerCanBeChanged(Card c, [bool ignore_mzone], [int zone]) -> bool
 
 ## Description
 
-检查c的控制权是否可以改变。
-ignore_mzone=true 会忽视转移控制权后的玩家场上是否有空格位， zone 表示必须要使用的位置
+Check whether the control of c can be changed
+Note: This function appends the space on the field to the Card.IsAbleToChangeControler
 
 ## Parameters
 

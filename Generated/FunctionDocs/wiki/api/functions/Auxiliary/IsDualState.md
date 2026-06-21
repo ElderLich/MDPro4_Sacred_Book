@@ -8,7 +8,8 @@ Auxiliary.IsDualState(Effect effect) -> void
 
 ## Description
 
-TODO document.
+Check the double monster e: GetHandler () is re-call state
+Commonly used in the double monster re-summoned to obtain the effect of e Condition attribute
 
 ## Parameters
 

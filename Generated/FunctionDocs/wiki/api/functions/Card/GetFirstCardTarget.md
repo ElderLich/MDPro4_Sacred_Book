@@ -8,7 +8,7 @@ Card.GetFirstCardTarget(Card c) -> Card
 
 ## Description
 
-返回c当前第一个永续对象，没有则返回 nil
+Returns c the current first persistent object
 
 ## Parameters
 

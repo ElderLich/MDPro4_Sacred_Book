@@ -8,7 +8,7 @@ Card.IsDisabled(Card c) -> bool
 
 ## Description
 
-检查c是否处于无效状态
+Check whether c is in an invalid state
 
 ## Parameters
 

@@ -8,7 +8,7 @@ Duel.SetTargetPlayer(int player) -> void
 
 ## Description
 
-把当前正在处理的连锁的对象玩家设置成player
+Set the player that is currently handling the chained object to player
 
 ## Parameters
 

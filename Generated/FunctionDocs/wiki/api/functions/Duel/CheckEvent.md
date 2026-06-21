@@ -8,8 +8,8 @@ Duel.CheckEvent(int event, [bool get_info]) -> bool,Group,int,int,Effect,int,int
 
 ## Description
 
-检查当前是否是event时点
-若get_info=true并且是正确的时点，则还返回触发时点的信息 eg,ep,ev,re,r,rp
+Check whether the current event point
+If get_info = true and is the correct time point also returns the trigger point information eg, ep, ev, re, r, rp
 
 ## Parameters
 

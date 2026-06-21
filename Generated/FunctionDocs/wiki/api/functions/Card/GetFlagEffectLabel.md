@@ -8,7 +8,7 @@ Card.GetFlagEffectLabel(Card c, int code) -> int,...?
 
 ## Description
 
-返回c的种类为code的每个标识效果的Label，没有此效果则返回nil
+The type of c is the label that identifies the effect of code, and returns nil if it does not
 
 ## Parameters
 

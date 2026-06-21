@@ -8,9 +8,9 @@ Duel.GetOperationInfo(int chainc, int category) -> bool,Group,int,int,int
 
 ## Description
 
-返回连锁chainc的category分类的操作信息，存在的话，则返回值为5个， chainc=0 则是表示当前连锁
-第一个返回值是false的话表示不存在该分类
-后4个返回值对应Duel.SetOperationInfo的后4个参数：Card|Group targets, int count, int target_player, int target_param
+Returns the operation information of the chained chainc category, with a return value of 5,
+The first return value is false to indicate that the class does not exist
+The last four return values ​​correspond to the last four parameters of Duel.SetOperationInfo: Card|Group targets, int count, int target_player, int target_param
 
 ## Parameters
 

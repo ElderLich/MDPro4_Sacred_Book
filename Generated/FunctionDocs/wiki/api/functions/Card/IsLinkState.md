@@ -8,7 +8,7 @@ Card.IsLinkState(Card c) -> bool
 
 ## Description
 
-检查c是否是连接状态
+Check if card c is in a linked state
 
 ## Parameters
 

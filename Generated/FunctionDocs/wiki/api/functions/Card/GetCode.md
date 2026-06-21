@@ -8,7 +8,7 @@ Card.GetCode(Card c) -> int,int|nil
 
 ## Description
 
-返回c的当前卡号（可能因为效果改变）
+Returns the current codename for c (possibly because the effect changes)
 
 ## Parameters
 

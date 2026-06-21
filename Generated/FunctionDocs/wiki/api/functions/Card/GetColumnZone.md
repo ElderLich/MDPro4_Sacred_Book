@@ -8,8 +8,7 @@ Card.GetColumnZone(Card c, int location, [int left], [int right], [int player]) 
 
 ## Description
 
-返回[以 player 来看的] location 范围内与 c 同一纵列[包含左边 left 列和右边 right 列]的区域，
-location 的值是 LOCATION_MZONE,LOCATION_SZONE,LOCATIOIN_ONFIELD
+Return the zones [from player's perspective] within the location range that are in the same column as card c [including left columns and right columns], location values are LOCATION_MZONE, LOCATION_SZONE, LOCATION_ONFIELD
 
 ## Parameters
 

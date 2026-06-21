@@ -8,7 +8,7 @@ Duel.GetRitualMaterialEx(int player) -> Group
 
 ## Description
 
-Duel.GetRitualMaterial并包含无等级怪兽
+Returns the group of cards player can use as Ritual Material, including monsters without a Level.
 
 ## Parameters
 

@@ -8,7 +8,7 @@ Duel.IsPlayerAffectedByEffect(int player, int code) -> Effect|nil,...
 
 ## Description
 
-检查player是否受到种类为code的效果影响，如果有就返回该效果，没有则返回nil
+Check if the player is affected by the effect of the code type, and return the effect if there is one
 
 ## Parameters
 

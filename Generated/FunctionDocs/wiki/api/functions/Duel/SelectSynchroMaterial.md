@@ -8,9 +8,8 @@ Duel.SelectSynchroMaterial(int player, Card c, [function|nil f1], [function|nil 
 
 ## Description
 
-让玩家player从场上[或mg中]选择用于同调c需要的[必须包含smat在内（如果有mg~=nil则忽略此参数）]满足条件的一组素材
-f1是 1 只需要满足的过滤条件，f2是 min-max 只需要满足的过滤条件
-f1,f2 之中，至少有一种为调整的条件
+Let the player player [from mg] select a set of clips that are required for the cohomology c [must contain smat (if there is mg ~ = nil this parameter is ignored)] The number of min-max clips that satisfy the condition
+F1 is to adjust the filter conditions to be met, f2 is outside the adjustment to meet the needs of the filter conditions
 
 ## Parameters
 

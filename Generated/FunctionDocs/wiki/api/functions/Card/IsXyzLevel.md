@@ -8,7 +8,7 @@ Card.IsXyzLevel(Card c, Card xyzc, int lv) -> bool
 
 ## Description
 
-检查c对于XYZ怪兽xyzc的XYZ用等级是否是lv
+Check c for excess monster xyzc with the level of whether the excess is lv
 
 ## Parameters
 

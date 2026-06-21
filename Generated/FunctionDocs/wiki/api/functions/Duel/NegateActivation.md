@@ -8,7 +8,7 @@ Duel.NegateActivation(int chainc) -> bool
 
 ## Description
 
-使连锁chainc的发动无效，返回值表示是否成功
+So that the chain chainc launch invalid, the return value that is successful
 
 ## Parameters
 

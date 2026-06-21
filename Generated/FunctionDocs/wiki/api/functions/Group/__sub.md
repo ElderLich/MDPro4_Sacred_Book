@@ -8,7 +8,7 @@ Group.__sub(Group|Card left, Group|Card right) -> Group
 
 ## Description
 
-Difference operator for Group/Card operands. It removes the right operand's cards from the left operand.
+Create a new card group, add all cards from target1 to this group, then remove all cards from target2, and return the resulting group; target1 and target2 remain unchanged
 
 ## Parameters
 

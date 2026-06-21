@@ -8,7 +8,7 @@ Group.GetBinClassCount(Group g, function f, ... any) -> int
 
 ## Description
 
-和 Group.GetClassCount 类似，但是算法不同(使用位运算)
+Similar to Group.GetClassCount, but uses a different algorithm (bitwise operations)
 
 ## Parameters
 

@@ -8,8 +8,7 @@ Duel.TossCoin(int player, int count) -> ...
 
 ## Description
 
-让玩家player投count(<=20)次硬币，返回值为count个结果，0或者1, 正面是 1，反面是0
-若count=-1，投硬币直到出现反面，返回值为投掷次数
+Let the player player cast count (<= 5) coins, the return value for the count results, 0 or 1.
 
 ## Parameters
 

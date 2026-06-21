@@ -8,7 +8,7 @@ Card.IsFusionSetCard(Card c, ... int) -> bool
 
 ## Description
 
-检查c作为融合素材时能否当作名字含有setname的卡
+Check the c as a fusion material can be used as a name setname card
 
 ## Parameters
 

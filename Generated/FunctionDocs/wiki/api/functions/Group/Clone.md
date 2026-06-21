@@ -8,7 +8,7 @@ Group.Clone(Group g) -> Group
 
 ## Description
 
-新建卡片组g的副本
+Create a new copy of card group g
 
 ## Parameters
 

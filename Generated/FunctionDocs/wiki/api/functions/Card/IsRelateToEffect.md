@@ -8,10 +8,9 @@ Card.IsRelateToEffect(Card c, Effect e) -> bool
 
 ## Description
 
-检查c是否和效果e有联系
-注：每次发动进入连锁的效果时，发动效果的卡，以及发动效果时指定的对象
-（用Duel.SetTargetCard或者Duel.SelectTarget指定的，包括取对象和不取对象）
-会自动与那个效果建立联系，一旦离场，联系会重置
+Check whether c is associated with effect e
+Note: Each launch into the effect of chain, the effect of launching the card, and the effect of the specified object
+(With Duel.SetTargetCard or Duel.SelectTarget specified, including the take and not take objects)
 
 ## Parameters
 

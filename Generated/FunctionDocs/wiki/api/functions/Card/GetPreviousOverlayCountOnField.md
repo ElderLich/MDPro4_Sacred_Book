@@ -8,7 +8,7 @@ Card.GetPreviousOverlayCountOnField(Card c) -> int
 
 ## Description
 
-返回c位置变化之前在场上叠放的卡片数量
+Returns the number of cards that were overlaid on c while it was previously on the field.
 
 ## Parameters
 

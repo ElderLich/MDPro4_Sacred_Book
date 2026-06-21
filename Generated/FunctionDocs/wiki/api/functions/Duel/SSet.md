@@ -8,8 +8,8 @@ Duel.SSet(int player, Card|Group targets, [int target_player], [bool confirm]) -
 
 ## Description
 
-让玩家player把targets盖放到target_player的魔法陷阱区， confirm 表示是否需要确认
-若targets为Group，则返回成功操作的数量
+Let the player player place the targets into the target trap's magic trap
+If targets is Group, the number of successful operations is returned
 
 ## Parameters
 

@@ -8,7 +8,7 @@ Effect.IsHasRange(Effect e, int range) -> bool
 
 ## Description
 
-检查效果是否含有区域range
+Checks whether the effect includes range.
 
 ## Parameters
 

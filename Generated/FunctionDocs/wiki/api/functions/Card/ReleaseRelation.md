@@ -8,7 +8,7 @@ Card.ReleaseRelation(Card c1, Card c2) -> void
 
 ## Description
 
-手动释放c1对于c2的联系
+Manually release c1 for c2
 
 ## Parameters
 

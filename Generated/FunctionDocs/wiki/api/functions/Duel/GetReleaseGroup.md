@@ -8,7 +8,7 @@ Duel.GetReleaseGroup(int player, [bool use_hand], [int reason]) -> Group
 
 ## Description
 
-返回玩家player能以原因reason解放的卡片组， use_hand=true 则包括手卡
+Return to the player player can be liberated (non-superior summoned use) of the deck, use_hand is true, including the hand card
 
 ## Parameters
 

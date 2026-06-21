@@ -8,7 +8,7 @@ Card.GetBattleTarget(Card c) -> Card
 
 ## Description
 
-返回与c进行战斗的卡，没有则返回nil
+Returns the card that fought with c
 
 ## Parameters
 

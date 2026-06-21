@@ -8,7 +8,7 @@ Card.CheckFusionSubstitute(Card c, Card fc) -> bool
 
 ## Description
 
-检查c能否代替融合怪兽fc的记述卡名的素材
+Check whether the c can replace the material description card name of the fusion monster fc
 
 ## Parameters
 

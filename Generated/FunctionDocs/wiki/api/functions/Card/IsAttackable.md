@@ -8,7 +8,7 @@ Card.IsAttackable(Card c) -> bool
 
 ## Description
 
-检查c是否可以攻击
+Check whether c can attack
 
 ## Parameters
 

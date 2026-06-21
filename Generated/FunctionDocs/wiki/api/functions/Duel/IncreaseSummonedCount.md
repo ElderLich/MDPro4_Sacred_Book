@@ -8,7 +8,7 @@ Duel.IncreaseSummonedCount([Card c]) -> void
 
 ## Description
 
-手动增加1次玩家[对于卡片c]的已经通常召唤过的次数
+Manual consumption of 1 player [for card c] the number of the usual call
 
 ## Parameters
 

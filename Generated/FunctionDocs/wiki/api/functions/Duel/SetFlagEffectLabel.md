@@ -8,7 +8,7 @@ Duel.SetFlagEffectLabel(int player, int code, int label) -> bool
 
 ## Description
 
-返回player是否存在种类为code的标识效果，若有则设置第一个的Label属性为label
+Return whether player has a flag effect of type code and set its Label property to label
 
 ## Parameters
 

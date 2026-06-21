@@ -8,7 +8,7 @@ Effect.GetCode(Effect e) -> int
 
 ## Description
 
-返回code属性
+Returns the code property
 
 ## Parameters
 

@@ -8,7 +8,7 @@ Duel.SetFusionMaterial(Group g) -> void
 
 ## Description
 
-设置g为需要使用的融合素材
+Set g to be the fusion material you want to use
 
 ## Parameters
 

@@ -8,7 +8,7 @@ Auxiliary.IsUnionState(Effect effect) -> void
 
 ## Description
 
-TODO document.
+Check if the Union Monster e:GetHandler() is in a Union Equip state (used for the Condition property of effects)
 
 ## Parameters
 

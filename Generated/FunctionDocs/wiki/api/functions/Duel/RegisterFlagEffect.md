@@ -8,9 +8,9 @@ Duel.RegisterFlagEffect(int player, int code, int reset_flag, int property, int 
 
 ## Description
 
-为玩家player注册全局环境下的标识效果，并返回这个效果
-此效果总是影响玩家的(EFFECT_FLAG_PLAYER_TARGET)并且不会被无效化
-其余部分与Card.RegisterFlagEffect相同
+For the player to register the global environment logo effect
+This effect always affects the player's (EFFECT_FLAG_PLAYER_TARGET) and will not be invalidated
+The rest is the same as Card.RegisterFlagEffect
 
 ## Parameters
 

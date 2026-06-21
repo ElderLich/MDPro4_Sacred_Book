@@ -8,8 +8,8 @@ Duel.AnnounceRace(int player, int count, int available) -> int
 
 ## Description
 
-让玩家player从可选的种族中宣言count个种族
-available是所有可选种族的组合值，可以自行组合
+Let the player player declare count races from the optional races
+Available is the combined value of all the optional races
 
 ## Parameters
 

@@ -2,7 +2,20 @@
 
 Generated from ygopro-core bindings, `Define/def.lua`, `Utilities/utility.lua`, and `Utilities/procedure.lua`.
 
-## Auxiliary
+## Namespaces
+
+- [Auxiliary](Auxiliary/) (363)
+- [Card](Card/) (286)
+- [Debug](Debug/) (11)
+- [Duel](Duel/) (229)
+- [Effect](Effect/) (55)
+- [Global](Global/) (1)
+- [Group](Group/) (45)
+- [bit](bit/) (8)
+
+## All Functions
+
+### Auxiliary
 
 - [Auxiliary.AddBanishRedirect](Auxiliary/AddBanishRedirect.md)
 - [Auxiliary.AddCodeList](Auxiliary/AddCodeList.md)
@@ -368,7 +381,7 @@ Generated from ygopro-core bindings, `Define/def.lua`, `Utilities/utility.lua`, 
 - [Auxiliary.XyzOperation](Auxiliary/XyzOperation.md)
 - [Auxiliary.XyzTarget](Auxiliary/XyzTarget.md)
 
-## Card
+### Card
 
 - [Card.AddCounter](Card/AddCounter.md)
 - [Card.AddMonsterAttribute](Card/AddMonsterAttribute.md)
@@ -657,7 +670,7 @@ Generated from ygopro-core bindings, `Define/def.lua`, `Utilities/utility.lua`, 
 - [Card.ultimate_fusion_check](Card/ultimate_fusion_check.md)
 - [Card.zw_equip_monster](Card/zw_equip_monster.md)
 
-## Debug
+### Debug
 
 - [Debug.AddCard](Debug/AddCard.md)
 - [Debug.Message](Debug/Message.md)
@@ -671,7 +684,7 @@ Generated from ygopro-core bindings, `Define/def.lua`, `Utilities/utility.lua`, 
 - [Debug.SetPlayerInfo](Debug/SetPlayerInfo.md)
 - [Debug.ShowHint](Debug/ShowHint.md)
 
-## Duel
+### Duel
 
 - [Duel.Activate](Duel/Activate.md)
 - [Duel.AddCustomActivityCounter](Duel/AddCustomActivityCounter.md)
@@ -903,7 +916,7 @@ Generated from ygopro-core bindings, `Define/def.lua`, `Utilities/utility.lua`, 
 - [Duel.Win](Duel/Win.md)
 - [Duel.XyzSummon](Duel/XyzSummon.md)
 
-## Effect
+### Effect
 
 - [Effect.CheckCountLimit](Effect/CheckCountLimit.md)
 - [Effect.Clone](Effect/Clone.md)
@@ -961,11 +974,11 @@ Generated from ygopro-core bindings, `Define/def.lua`, `Utilities/utility.lua`, 
 - [Effect.SetValue](Effect/SetValue.md)
 - [Effect.UseCountLimit](Effect/UseCountLimit.md)
 
-## Global
+### Global
 
 - [GetID](Global/GetID.md)
 
-## Group
+### Group
 
 - [Group.__add](Group/__add.md)
 - [Group.__band](Group/__band.md)
@@ -1013,7 +1026,7 @@ Generated from ygopro-core bindings, `Define/def.lua`, `Utilities/utility.lua`, 
 - [Group.SelectWithSumGreater](Group/SelectWithSumGreater.md)
 - [Group.Sub](Group/Sub.md)
 
-## bit
+### bit
 
 - [bit.band](bit/band.md)
 - [bit.bnot](bit/bnot.md)

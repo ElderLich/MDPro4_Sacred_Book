@@ -8,8 +8,8 @@ Card.IsAbleToChangeControler(Card c) -> bool
 
 ## Description
 
-检查c是否可以改变控制权
-注：仅当卡收到了“不能改变控制权”的效果的影响时，此函数返回false
+Check whether c can change the control
+Note: This function returns false only if the card receives the effect of "Can not change control"
 
 ## Parameters
 

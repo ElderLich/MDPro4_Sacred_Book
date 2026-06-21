@@ -8,7 +8,7 @@ Card.IsCanHaveCounter(Card c, int countertype) -> bool
 
 ## Description
 
-检查c上是否可以放置countertype类型的指示物
+Check if countertype counters can be placed on c
 
 ## Parameters
 

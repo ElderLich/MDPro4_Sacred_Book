@@ -8,7 +8,7 @@ Card.IsAbleToDeckOrExtraAsCost(Card c) -> bool
 
 ## Description
 
-检查c是否可以作为cost送去卡组或额外卡组（用于新宇侠、剑斗兽融合怪兽的召唤手续检测）等价于 (c:IsAbleToDeckAsCost() or c:IsAbleToExtraAsCost())
+Check whether c can be sent as a cost card group or additional card group (for the new Yu-xia, sword fighting beast fusion call monster detection procedures)
 
 ## Parameters
 

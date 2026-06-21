@@ -8,7 +8,7 @@ Card.GetLinkedGroupCount(Card c) -> int
 
 ## Description
 
-返回c所连接区的怪兽卡数量
+Return the number of monster cards in the zones linked to card c
 
 ## Parameters
 

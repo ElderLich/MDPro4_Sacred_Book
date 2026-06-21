@@ -8,8 +8,8 @@ Group.GetFirst(Group g) -> Card
 
 ## Description
 
-返回g中第一张卡，并重置当前指针到g中第一张卡
-如果g中不存在卡则返回nil
+Returns the first card in g and resets the current pointer to the first card in g
+Returns nil if card does not exist in g
 
 ## Parameters
 

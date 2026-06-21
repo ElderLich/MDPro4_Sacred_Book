@@ -8,7 +8,7 @@ Auxiliary.SetUnionState(Card c) -> void
 
 ## Description
 
-TODO document.
+Add Union Monster attributes to c
 
 ## Parameters
 

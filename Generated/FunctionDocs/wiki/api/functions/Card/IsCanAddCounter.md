@@ -8,7 +8,7 @@ Card.IsCanAddCounter(Card c, int countertype, int count, [int singly], [int loca
 
 ## Description
 
-检查c是否可以[逐个(singly=true)在 location 区域]放置count个countertype类型的指示物
+Check if c can place count counters of type countertype [singly = true]
 
 ## Parameters
 

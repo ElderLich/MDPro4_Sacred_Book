@@ -8,7 +8,7 @@ Duel.SpecialSummonComplete() -> nil|int
 
 ## Description
 
-此函数在确定复数个Duel.SpecialSummonStep调用完毕之后调用，用于触发事件
+This function is called after determining that a number of calls to Duel.SpecialSummonStep are completed, for triggering an event
 
 ## Returns
 

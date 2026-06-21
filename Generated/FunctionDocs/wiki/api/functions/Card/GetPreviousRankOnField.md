@@ -8,7 +8,7 @@ Card.GetPreviousRankOnField(Card c) -> int
 
 ## Description
 
-返回c位置变化之前在场上的阶级
+Returns the class before the c position changes
 
 ## Parameters
 

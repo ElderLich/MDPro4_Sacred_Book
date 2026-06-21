@@ -8,7 +8,7 @@ Duel.NegateRelatedChain(Card c, int reset) -> void
 
 ## Description
 
-使和卡片c有关的连锁都无效化，发生reset事件则重置,reset 默认包含 RESET_CHAIN
+So that card c has launched the chain are invalid, reset event occurs reset
 
 ## Parameters
 

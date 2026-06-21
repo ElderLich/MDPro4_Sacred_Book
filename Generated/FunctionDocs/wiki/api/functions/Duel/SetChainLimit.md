@@ -8,10 +8,10 @@ Duel.SetChainLimit(function f) -> void
 
 ## Description
 
-设定连锁条件，f的函数原型为 bool f(e,ep,tp)
-e表示要限制连锁的效果，ep表示要限制连锁的玩家，tp表示发动该效果的玩家
-在cost或者target处理中调用此函数可以限制可以连锁的效果的种类（如超融合）
-如果f返回false表示不能连锁，一旦设置连锁条件后发生了新的连锁那么连锁条件将会解除
+Set the chain conditions, f function prototype for bool f (e, ep, tp)
+E said to limit the effect of chain, ep said to limit the chain of players, tp that launched the effect of the players
+Calling this function in cost or target processing can limit the kinds of effects that can be chained (such as superfusion)
+If f returns false, it means that the chain can not be chained. Once the chain condition has been set, the new chain will be canceled.
 
 ## Parameters
 

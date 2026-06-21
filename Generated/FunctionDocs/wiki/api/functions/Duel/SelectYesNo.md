@@ -8,7 +8,7 @@ Duel.SelectYesNo(int player, int desc) -> bool
 
 ## Description
 
-让玩家player选择是或否
+Let player player select Yes or No
 
 ## Parameters
 

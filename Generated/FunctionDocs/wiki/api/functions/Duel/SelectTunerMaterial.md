@@ -8,8 +8,8 @@ Duel.SelectTunerMaterial(int player, Card c, Card tuner, [function|nil f1], [fun
 
 ## Description
 
-让玩家从场上[或mg中]选择用于同调c需要的满足条件的以tuner作为调整的min-max张卡的一组素材
-f1是 1 只需要满足的过滤条件，f2是 min-max 只需要满足的过滤条件
+Let the player [from the mg] select a set of clips of the min-max cards that are tuned to be used for co-ordination of the required conditions for c.
+F1 is to adjust the filter conditions to be met, f2 is outside the adjustment to meet the needs of the filter conditions
 
 ## Parameters
 

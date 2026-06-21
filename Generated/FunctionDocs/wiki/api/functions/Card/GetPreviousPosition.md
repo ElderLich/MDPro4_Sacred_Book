@@ -8,7 +8,7 @@ Card.GetPreviousPosition(Card c) -> int
 
 ## Description
 
-返回c位置变化前的表示形式
+Returns the representation of the position before the c position changes
 
 ## Parameters
 

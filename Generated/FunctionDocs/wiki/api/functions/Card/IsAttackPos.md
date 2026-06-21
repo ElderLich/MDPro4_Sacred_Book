@@ -8,7 +8,7 @@ Card.IsAttackPos(Card c) -> bool
 
 ## Description
 
-检查c是否是攻击表示
+Check whether c is an attack
 
 ## Parameters
 

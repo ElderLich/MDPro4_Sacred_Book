@@ -8,7 +8,7 @@ Card.GetUnionCount(Card c) -> int,int
 
 ## Description
 
-返回c当前装备的同盟卡数量、旧同盟卡数量
+Returns the number of ally cards for the current device
 
 ## Parameters
 

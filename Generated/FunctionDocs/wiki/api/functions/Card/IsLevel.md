@@ -8,7 +8,7 @@ Card.IsLevel(Card c, int level1, [int level2], [... int]) -> bool
 
 ## Description
 
-检查c是否是等级 level1[, 或者为 level2...]
+Check if card c is Level level1 [, or level2...]
 
 ## Parameters
 

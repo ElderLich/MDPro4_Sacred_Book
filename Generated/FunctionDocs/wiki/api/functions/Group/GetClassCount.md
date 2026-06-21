@@ -8,8 +8,7 @@ Group.GetClassCount(Group g, function f, ... any) -> int
 
 ## Description
 
-计算g中所有卡的种类数量，f为分类的依据，返回相同的值视为同一种类，从第3个参数开始为额外参数
-比如 g:GetClassCount(Card.GetCode()) 就是计算g中卡名不同的卡的数量
+Calculate the number of all cards in g, f is the basis of the classification, return the same value as the same category, starting from the first three parameters for additional parameters
 
 ## Parameters
 

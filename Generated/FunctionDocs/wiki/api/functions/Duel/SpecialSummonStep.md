@@ -8,10 +8,10 @@ Duel.SpecialSummonStep(Card c, int sumtype, int sumplayer, int target_player, bo
 
 ## Description
 
-此函数是Duel.SpecialSummon的分解过程，只特殊召唤一张卡c ，其他参数用法和 Duel.SpecialSummon 一样
-此函数用于一个效果同时特殊召唤多张参数不同的卡
-此函数必须和Duel.SpecialSummonComplete一起使用
-返回值表示是否特殊召唤成功
+This function is Duel.SpecialSummon decomposition process, only a special summon a card c
+This function is used for an effect while simultaneously calling multiple cards with different parameters
+This function must be used with Duel.SpecialSummonComplete
+The return value indicates whether or not the special call succeeded
 
 ## Parameters
 

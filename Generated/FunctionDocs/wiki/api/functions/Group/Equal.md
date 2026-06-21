@@ -8,7 +8,7 @@ Group.Equal(Group g1, Group g2) -> bool
 
 ## Description
 
-判断g1和g2是否相同
+It is judged whether or not g1 and g2 are the same
 
 ## Parameters
 

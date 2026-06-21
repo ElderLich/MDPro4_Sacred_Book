@@ -8,7 +8,7 @@ Effect.CheckCountLimit(Effect e, int p) -> bool
 
 ## Description
 
-检测玩家 p 是否还有可以发动的效果 e 的次数
+Check if player p has remaining activation counts for effect e
 
 ## Parameters
 

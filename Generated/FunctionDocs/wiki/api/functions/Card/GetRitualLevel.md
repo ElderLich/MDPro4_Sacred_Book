@@ -8,8 +8,8 @@ Card.GetRitualLevel(Card c, Card rc) -> int
 
 ## Description
 
-返回c的对于仪式怪兽rc仪式解放等级
-此函数除了某些特定卡如仪式供物，返回值与Card.GetLevel(c)相同
+Returns the ritual liberation level for rc ritual monsters
+This function returns the same value as Card.GetLevel(c) except for certain cards such as ritual objects
 
 ## Parameters
 

@@ -8,8 +8,8 @@ Card.SetSPSummonOnce(Card c, int spsummon_code) -> void
 
 ## Description
 
-设置c一回合只能进行1次特殊召唤（灵兽，波动龙）
-相同的spsummon_code共用1个次数
+Set c can only be a round of a special call (they reveal, wave dragon)
+The same spsummon_code shares 1 number of times
 
 ## Parameters
 

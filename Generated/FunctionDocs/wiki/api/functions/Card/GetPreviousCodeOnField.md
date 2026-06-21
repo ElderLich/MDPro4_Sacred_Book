@@ -8,7 +8,7 @@ Card.GetPreviousCodeOnField(Card c) -> int,int|nil
 
 ## Description
 
-返回c位置变化之前在场上的卡号
+Returns the card number prior to the c position change
 
 ## Parameters
 

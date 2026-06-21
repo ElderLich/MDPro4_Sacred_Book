@@ -8,9 +8,7 @@ Duel.GetMatchingGroupCount([function|nil f], int player, int s, int o, [Card|Gro
 
 ## Description
 
-过滤函数，返回以player来看的指定位置满足过滤条件f并且不等于ex的卡的数量
-s代表以player来看的自己的位置，o代表以player来看的对方的位置
-第6个参数开始为额外参数
+Filter function to return to the specified location to meet the filter condition f and not equal to the number of ex card
 
 ## Parameters
 

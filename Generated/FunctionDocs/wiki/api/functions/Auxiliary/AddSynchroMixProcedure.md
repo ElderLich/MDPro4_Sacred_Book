@@ -8,7 +8,10 @@ Auxiliary.AddSynchroMixProcedure(Card c, [function|nil f1], [function|nil f2], [
 
 ## Description
 
-Synchro monster, f1~f3 each 1 MONSTER + f4 min to max monsters
+Add a Synchro Summon procedure for c
+f1, f2, f3 are filter conditions satisfied by 1 card each, f4 is a filter condition satisfied by minc [to maxc] cards
+At least one of f1, f2, f3, f4 must be a Tuner condition
+If f2 and f3 are nil, equivalent to aux.AddSynchroProcedure(c, f1, f4, minc[, maxc])
 
 ## Parameters
 

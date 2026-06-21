@@ -8,7 +8,7 @@ Card.IsPosition(Card c, int pos) -> bool
 
 ## Description
 
-检查c是否是表示形式pos
+Check whether c is the representation pos
 
 ## Parameters
 

@@ -8,7 +8,7 @@ Card.IsFusionAttribute(Card c, int attribute, [int player]) -> bool
 
 ## Description
 
-检查c[由player融合召唤时]用作融合素材是否属于属性attribute
+Check if card c, when used as Fusion Material [for a Fusion Summon by player], has Attribute attribute
 
 ## Parameters
 

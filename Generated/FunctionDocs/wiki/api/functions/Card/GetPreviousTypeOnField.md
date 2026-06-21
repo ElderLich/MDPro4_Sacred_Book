@@ -8,7 +8,7 @@ Card.GetPreviousTypeOnField(Card c) -> int
 
 ## Description
 
-返回c位置变化之前在场上的类型
+Returns the type before the c position change
 
 ## Parameters
 
