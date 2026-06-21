@@ -492,6 +492,22 @@ FUNCTION_EN_OVERRIDES = {
         "Registers a continuous effect on c that records the effect that sent c to the Graveyard.",
         "This lets later Graveyard-condition checks distinguish a card that was already in the Graveyard from one sent there by the currently resolving effect.",
     ],
+    "Auxiliary.AddUrsarcticSpSummonEffect": [
+        "Adds the shared Ursarctic hand Quick Effect that Special Summons c during the Main Phase.",
+        "The cost releases a Level 7 or higher monster from the hand, or banishes a valid replacement card from the Graveyard.",
+    ],
+    "Auxiliary.AND": ["Returns a composed predicate that calls each function with the same arguments and stops at the first falsy result."],
+    "Auxiliary.ArcanaCoinOperation": [
+        "Performs the shared Arcana Force coin-toss operation.",
+        "It tosses a coin, or lets the player choose the result while affected by the relevant replacement effect, then stores the result on c with client hints.",
+    ],
+    "Auxiliary.ArcanaCoinTarget": ["Declares that the shared Arcana Force effect will perform one coin toss for tp."],
+    "Auxiliary.AtkEqualsDef": ["Returns true for a non-Link Monster whose ATK equals DEF, using current values on the field or known printed values elsewhere."],
+    "Auxiliary.BanishRedirectCondition": ["Default condition for banish-redirect effects; returns true while the handler is face-up."],
+    "Auxiliary.BESRemoveCondition": ["Condition for the shared B.E.S. maintenance effect after battle; returns true if the handler is still related to that battle."],
+    "Auxiliary.BESRemoveOperation": ["Resolves the shared B.E.S. maintenance effect by removing one 0x1f counter from the handler, or destroying it if no counter can be removed."],
+    "Auxiliary.BESRemoveTarget": ["Sets destruction operation info for the shared B.E.S. maintenance effect when the handler cannot remove one 0x1f counter."],
+    "Auxiliary.bpcon": ["Returns true if the player can enter the Battle Phase, or if the current phase is already within the Battle Phase window."],
     "Card.branded_fusion_check": ["Material check for Branded Fusion."],
     "Card.cyber_fusion_check": ["Material check for Cyberload Fusion."],
     "Card.destruction_swordsman_fusion_check": ["Material check for Destruction Swordsman Fusion."],
@@ -520,6 +536,22 @@ FUNCTION_ZH_OVERRIDES = {
         "为c登记一个持续效果，用于记录把c送去墓地的效果。",
         "这样后续的墓地条件可以区分此卡原本就在墓地，还是被当前正在处理的效果送去墓地。",
     ],
+    "Auxiliary.AddUrsarcticSpSummonEffect": [
+        "为c添加「北斗天熊」共通的手牌快速效果，在主要阶段特殊召唤自身。",
+        "费用为解放手牌中1只7星以上怪兽，或从墓地除外可代替费用的对应卡。",
+    ],
+    "Auxiliary.AND": ["返回组合条件函数；调用时会用相同参数依次执行传入的函数，并在第一个假值处停止。"],
+    "Auxiliary.ArcanaCoinOperation": [
+        "处理「秘仪之力」共通的投掷硬币操作。",
+        "通常投掷1次硬币；若受对应替代效果影响，则让玩家选择结果，然后把结果以标记和客户端提示记录在c上。",
+    ],
+    "Auxiliary.ArcanaCoinTarget": ["声明「秘仪之力」共通效果会为tp进行1次投掷硬币。"],
+    "Auxiliary.AtkEqualsDef": ["判断c是否为攻击力和守备力相同的非连接怪兽；在场上使用当前数值，其他位置要求原本数值可确认。"],
+    "Auxiliary.BanishRedirectCondition": ["除外重定向效果的默认条件；处理对象表侧表示时返回true。"],
+    "Auxiliary.BESRemoveCondition": ["B.E.S.共通战斗后维持效果的条件；处理对象仍与该次战斗关联时返回true。"],
+    "Auxiliary.BESRemoveOperation": ["处理B.E.S.共通战斗后维持效果：能取除1个0x1f指示物则取除，否则破坏自身。"],
+    "Auxiliary.BESRemoveTarget": ["B.E.S.共通战斗后维持效果的目标处理；若不能取除1个0x1f指示物，则登记破坏自身的信息。"],
+    "Auxiliary.bpcon": ["判断玩家是否可以进入战斗阶段，或当前阶段是否已经处于战斗阶段范围内。"],
 }
 
 
@@ -1020,7 +1052,6 @@ def write_wiki_pages(base: Path, docs: Iterable[FunctionDoc], constant_docs: lis
         "- `Define/def.lua`",
         "- `Utilities/utility.lua`",
         "- `Utilities/procedure.lua`",
-        "- `OLD/Utilities/*` for older English notes",
         "",
     ]
     write_text(base / "api" / "index.md", "\n".join(api_lines).rstrip() + "\n")
@@ -1409,39 +1440,31 @@ def parse_constant_json_cache(path: Path) -> dict[str, ConstantDoc]:
 
 def build_constant_docs(workspace: Path, dataeditorx_data: Path) -> list[ConstantDoc]:
     current = parse_constant_docs(workspace / "Utilities" / "constant.lua", workspace, "current")
-    old = parse_constant_docs(workspace / "OLD" / "Utilities" / "constant.lua", workspace, "old")
     generated_json_cache = parse_constant_json_cache(workspace / "Generated" / "FunctionDocs" / "constants.generated.json")
     generated_lua_cache = parse_constant_docs(
         workspace / "Generated" / "FunctionDocs" / "constant_english.generated.lua",
         workspace,
-        "generated-cache",
+        "project-cache",
     )
     dataeditorx = parse_constant_docs(dataeditorx_data / "lua" / "constant.lua", workspace, "dataeditorx")
 
     docs: list[ConstantDoc] = []
     for name, doc in current.items():
-        if name in old:
-            old_doc = old[name]
-            doc.old_value = old_doc.value
-            doc.old_comment = old_doc.comment_zh
-            doc.source_files.extend(old_doc.source_files)
-            if old_doc.comment_zh and is_english_like_comment(old_doc.comment_zh):
-                doc.comment_en = old_doc.comment_zh
-                doc.english_status = "from_old_utility"
-        elif name in generated_json_cache:
+        if name in generated_json_cache:
             cache_doc = generated_json_cache[name]
-            doc.old_value = cache_doc.old_value
-            doc.old_comment = cache_doc.old_comment
-            doc.source_files.extend(src for src in cache_doc.source_files if src.origin == "old")
-            if cache_doc.comment_en and is_english_like_comment(cache_doc.comment_en):
+            if (
+                cache_doc.english_status.startswith("from_")
+                and cache_doc.comment_en
+                and is_english_like_comment(cache_doc.comment_en)
+            ):
                 doc.comment_en = cache_doc.comment_en
-                doc.english_status = cache_doc.english_status or "from_generated_cache"
+                doc.english_status = "from_project_cache"
         elif name in generated_lua_cache:
             english_doc = generated_lua_cache[name]
             doc.source_files.extend(english_doc.source_files)
             if english_doc.comment_zh and is_english_like_comment(english_doc.comment_zh):
                 doc.comment_en = english_doc.comment_zh
-                doc.english_status = "from_generated_cache"
+                doc.english_status = "from_project_cache"
         if name in dataeditorx:
             dex_doc = dataeditorx[name]
             doc.dataeditorx_value = dex_doc.value
@@ -1465,7 +1488,7 @@ def write_constant_english_lua(path: Path, docs: list[ConstantDoc]) -> None:
     lines = [
         "-- Generated by Tools/FunctionDocs/generate_function_docs.py",
         "-- Source values: Utilities/constant.lua",
-        "-- English comments are imported from OLD/Utilities/constant.lua or the previous generated cache where possible.",
+        "-- English comments are carried forward from the project cache where possible.",
         "",
     ]
     current_section = None
@@ -1483,7 +1506,7 @@ def write_constant_markdown(path: Path, docs: list[ConstantDoc]) -> None:
     lines = [
         "# Constants",
         "",
-        "Generated from `Utilities/constant.lua`, with English comments imported from `OLD/Utilities/constant.lua` or the previous generated cache where possible.",
+        "Generated from `Utilities/constant.lua`, with English comments carried forward from the project cache where possible.",
         "",
     ]
     current_section = None
@@ -1690,7 +1713,6 @@ def write_report(
     docs: list[FunctionDoc],
     old_zh: dict[str, list[str]],
     old_en: dict[str, list[str]],
-    old_utility_en: dict[str, list[str]],
     constants: dict[str, object],
     categories: dict[str, object],
     outputs: list[Path],
@@ -1744,9 +1766,8 @@ def write_report(
             f"- Core-bound functions without stub docs: {len(undocumented_core)}",
             f"- Existing DataEditorX `_functions.txt`: {len(old_zh)}",
             f"- Existing DataEditorX `_function_english.txt`: {len(old_en)}",
-            f"- Old Utilities `_functions.txt`: {len(old_utility_en)}",
-            f"- Added versus old `_functions.txt`: {len(added)}",
-            f"- Dropped versus old `_functions.txt`: {len(dropped)}",
+            f"- Added versus DataEditorX `_functions.txt`: {len(added)}",
+            f"- Dropped versus DataEditorX `_functions.txt`: {len(dropped)}",
             "",
             "## Namespaces",
             "",
@@ -1832,7 +1853,7 @@ def write_report(
     for name in limited_list(added, 40):
         lines.append(f"- `{name}`")
 
-    lines.extend(["", "## Dropped Old Function Examples", ""])
+    lines.extend(["", "## Dropped DataEditorX Function Examples", ""])
     for name in limited_list(dropped, 40):
         lines.append(f"- `{name}`")
 
@@ -1877,13 +1898,11 @@ def main() -> int:
     docs_by_name = load_all_function_docs(workspace, ygopro_core)
     old_zh = parse_bullet_file(dataeditorx_data / "lua" / "_functions.txt")
     old_en = parse_bullet_file(dataeditorx_data / "lua" / "_function_english.txt")
-    old_utility_en = parse_bullet_file(workspace / "OLD" / "Utilities" / "_functions.txt")
     docs = list(docs_by_name.values())
     attach_english(
         docs,
         [
             ("imported_from_dataeditorx", old_en),
-            ("imported_from_old_utilities", old_utility_en),
         ],
     )
 
@@ -1919,8 +1938,8 @@ def main() -> int:
             "Define/def.lua",
             "Utilities/utility.lua",
             "Utilities/procedure.lua",
-            "OLD/Utilities/_functions.txt",
-            "OLD/Utilities/constant.lua",
+            "Generated/FunctionDocs/api_functions.generated.json",
+            "Generated/FunctionDocs/constants.generated.json",
         ],
     }
     write_json(json_path, docs, metadata)
@@ -1969,7 +1988,6 @@ def main() -> int:
         docs,
         old_zh,
         old_en,
-        old_utility_en,
         constants,
         categories,
         [

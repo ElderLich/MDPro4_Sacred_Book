@@ -8,7 +8,7 @@ Auxiliary.BESRemoveTarget(Effect e, int tp, Group eg, int ep, any ev, Effect re,
 
 ## Description
 
-TODO document.
+Sets destruction operation info for the shared B.E.S. maintenance effect when the handler cannot remove one 0x1f counter.
 
 ## Parameters
 

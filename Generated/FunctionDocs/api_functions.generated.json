@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-06-21T10:34:20+00:00",
+    "generated_at": "2026-06-21T10:42:10+00:00",
     "workspace": "D:\\Programs\\GitHub\\MDPro3_Sacred_Book",
     "dataeditorx_data": "D:\\Programs\\GitHub\\DataEditorX\\DataEditorX\\data",
     "mdpro3_locales": "D:\\Programs\\GitHub\\MDPro3_Data\\Data\\locales",
@@ -14,8 +14,8 @@
       "Define/def.lua",
       "Utilities/utility.lua",
       "Utilities/procedure.lua",
-      "OLD/Utilities/_functions.txt",
-      "OLD/Utilities/constant.lua"
+      "Generated/FunctionDocs/api_functions.generated.json",
+      "Generated/FunctionDocs/constants.generated.json"
     ]
   },
   "functions": [
@@ -33263,11 +33263,15 @@
           "description": ""
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "为c添加「北斗天熊」共通的手牌快速效果，在主要阶段特殊召唤自身。",
+        "费用为解放手牌中1只7星以上怪兽，或从墓地除外可代替费用的对应卡。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Adds the shared Ursarctic hand Quick Effect that Special Summons c during the Main Phase.",
+        "The cost releases a Level 7 or higher monster from the hand, or banishes a valid replacement card from the Graveyard."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -33278,7 +33282,9 @@
       "aliases": [
         "aux.AddUrsarcticSpSummonEffect"
       ],
-      "tags": [],
+      "tags": [
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -33351,11 +33357,13 @@
           "description": ""
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "返回组合条件函数；调用时会用相同参数依次执行传入的函数，并在第一个假值处停止。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Returns a composed predicate that calls each function with the same arguments and stops at the first falsy result."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -33366,7 +33374,9 @@
       "aliases": [
         "aux.AND"
       ],
-      "tags": [],
+      "tags": [
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -33430,11 +33440,15 @@
           "description": ""
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "处理「秘仪之力」共通的投掷硬币操作。",
+        "通常投掷1次硬币；若受对应替代效果影响，则让玩家选择结果，然后把结果以标记和客户端提示记录在c上。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Performs the shared Arcana Force coin-toss operation.",
+        "It tosses a coin, or lets the player choose the result while affected by the relevant replacement effect, then stores the result on c with client hints."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -33445,7 +33459,9 @@
       "aliases": [
         "aux.ArcanaCoinOperation"
       ],
-      "tags": [],
+      "tags": [
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -33515,11 +33531,13 @@
           "description": ""
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "声明「秘仪之力」共通效果会为tp进行1次投掷硬币。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Declares that the shared Arcana Force effect will perform one coin toss for tp."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -33530,7 +33548,9 @@
       "aliases": [
         "aux.ArcanaCoinTarget"
       ],
-      "tags": [],
+      "tags": [
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -33591,11 +33611,13 @@
           "description": ""
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "判断c是否为攻击力和守备力相同的非连接怪兽；在场上使用当前数值，其他位置要求原本数值可确认。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Returns true for a non-Link Monster whose ATK equals DEF, using current values on the field or known printed values elsewhere."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -33606,7 +33628,9 @@
       "aliases": [
         "aux.AtkEqualsDef"
       ],
-      "tags": [],
+      "tags": [
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -33628,11 +33652,13 @@
           "description": ""
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "除外重定向效果的默认条件；处理对象表侧表示时返回true。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Default condition for banish-redirect effects; returns true while the handler is face-up."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -33643,7 +33669,9 @@
       "aliases": [
         "aux.BanishRedirectCondition"
       ],
-      "tags": [],
+      "tags": [
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -34130,11 +34158,13 @@
           "description": ""
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "B.E.S.共通战斗后维持效果的条件；处理对象仍与该次战斗关联时返回true。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Condition for the shared B.E.S. maintenance effect after battle; returns true if the handler is still related to that battle."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -34145,7 +34175,9 @@
       "aliases": [
         "aux.BESRemoveCondition"
       ],
-      "tags": [],
+      "tags": [
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -34209,11 +34241,13 @@
           "description": ""
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "处理B.E.S.共通战斗后维持效果：能取除1个0x1f指示物则取除，否则破坏自身。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Resolves the shared B.E.S. maintenance effect by removing one 0x1f counter from the handler, or destroying it if no counter can be removed."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -34224,7 +34258,9 @@
       "aliases": [
         "aux.BESRemoveOperation"
       ],
-      "tags": [],
+      "tags": [
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -34294,11 +34330,13 @@
           "description": ""
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "B.E.S.共通战斗后维持效果的目标处理；若不能取除1个0x1f指示物，则登记破坏自身的信息。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Sets destruction operation info for the shared B.E.S. maintenance effect when the handler cannot remove one 0x1f counter."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -34309,7 +34347,9 @@
       "aliases": [
         "aux.BESRemoveTarget"
       ],
-      "tags": [],
+      "tags": [
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -34462,11 +34502,13 @@
           "description": ""
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "判断玩家是否可以进入战斗阶段，或当前阶段是否已经处于战斗阶段范围内。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Returns true if the player can enter the Battle Phase, or if the current phase is already within the Battle Phase window."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -34477,7 +34519,9 @@
       "aliases": [
         "aux.bpcon"
       ],
-      "tags": [],
+      "tags": [
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },

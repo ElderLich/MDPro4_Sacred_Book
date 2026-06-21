@@ -13,4 +13,3 @@ This API reference is generated for this project's core and helper scripts. It i
 - `Define/def.lua`
 - `Utilities/utility.lua`
 - `Utilities/procedure.lua`
-- `OLD/Utilities/*` for older English notes

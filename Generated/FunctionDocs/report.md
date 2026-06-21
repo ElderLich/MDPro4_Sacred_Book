@@ -1,6 +1,6 @@
 # Function Docs Refresh Report
 
-Generated: 2026-06-21T10:34:20+00:00
+Generated: 2026-06-21T10:42:11+00:00
 
 ## Outputs
 
@@ -29,9 +29,8 @@ Generated: 2026-06-21T10:34:20+00:00
 - Core-bound functions without stub docs: 0
 - Existing DataEditorX `_functions.txt`: 998
 - Existing DataEditorX `_function_english.txt`: 998
-- Old Utilities `_functions.txt`: 0
-- Added versus old `_functions.txt`: 0
-- Dropped versus old `_functions.txt`: 0
+- Added versus DataEditorX `_functions.txt`: 0
+- Dropped versus DataEditorX `_functions.txt`: 0
 
 ## Namespaces
 
@@ -47,8 +46,8 @@ Generated: 2026-06-21T10:34:20+00:00
 ## English Coverage
 
 - `imported_from_dataeditorx`: 694
-- `missing_documentation`: 254
-- `translated_exact`: 50
+- `missing_documentation`: 244
+- `translated_exact`: 60
 
 ## Core Binding Gaps
 
@@ -91,7 +90,7 @@ Documented stubs that do not appear in this core binding scan:
 Constant English status:
 
 - `existing_english`: 4
-- `from_old_utility`: 799
+- `from_project_cache`: 799
 - `translated_exact`: 28
 - `translated_name`: 27
 
@@ -110,7 +109,7 @@ Examples changed constant values:
 ## Added Function Examples
 
 
-## Dropped Old Function Examples
+## Dropped DataEditorX Function Examples
 
 
 ## Recommended Next Steps

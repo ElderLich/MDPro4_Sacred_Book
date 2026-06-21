@@ -8,7 +8,7 @@ Auxiliary.BESRemoveCondition(Effect e, int tp, Group eg, int ep, any ev, Effect 
 
 ## Description
 
-TODO document.
+Condition for the shared B.E.S. maintenance effect after battle; returns true if the handler is still related to that battle.
 
 ## Parameters
 

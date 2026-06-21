@@ -8,7 +8,7 @@ Auxiliary.ArcanaCoinTarget(Effect e, int tp, Group eg, int ep, any ev, Effect re
 
 ## Description
 
-TODO document.
+Declares that the shared Arcana Force effect will perform one coin toss for tp.
 
 ## Parameters
 

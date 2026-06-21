@@ -8,7 +8,7 @@ Auxiliary.AtkEqualsDef(Card c) -> void
 
 ## Description
 
-TODO document.
+Returns true for a non-Link Monster whose ATK equals DEF, using current values on the field or known printed values elsewhere.
 
 ## Parameters
 

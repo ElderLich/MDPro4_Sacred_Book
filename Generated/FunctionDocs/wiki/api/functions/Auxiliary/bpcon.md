@@ -8,7 +8,7 @@ Auxiliary.bpcon(Effect e, int tp, Group eg, int ep, any ev, Effect re, any r, in
 
 ## Description
 
-TODO document.
+Returns true if the player can enter the Battle Phase, or if the current phase is already within the Battle Phase window.
 
 ## Parameters
 

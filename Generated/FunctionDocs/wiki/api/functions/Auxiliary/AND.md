@@ -8,7 +8,7 @@ Auxiliary.AND(... any) -> void
 
 ## Description
 
-TODO document.
+Returns a composed predicate that calls each function with the same arguments and stops at the first falsy result.
 
 ## Parameters
 

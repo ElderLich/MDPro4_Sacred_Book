@@ -8,7 +8,8 @@ Auxiliary.ArcanaCoinOperation(Effect e, int tp, Group eg, int ep, any ev, Effect
 
 ## Description
 
-TODO document.
+Performs the shared Arcana Force coin-toss operation.
+It tosses a coin, or lets the player choose the result while affected by the relevant replacement effect, then stores the result on c with client hints.
 
 ## Parameters
 
