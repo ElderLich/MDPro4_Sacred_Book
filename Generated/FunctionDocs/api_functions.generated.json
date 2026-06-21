@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-06-21T12:23:27+00:00",
+    "generated_at": "2026-06-21T12:32:51+00:00",
     "workspace": "D:\\Programs\\GitHub\\MDPro3_Sacred_Book",
     "dataeditorx_data": "D:\\Programs\\GitHub\\DataEditorX\\DataEditorX\\data",
     "mdpro3_locales": "D:\\Programs\\GitHub\\MDPro3_Data\\Data\\locales",
@@ -52775,15 +52775,17 @@
       ],
       "returns": [
         {
-          "type": "nil",
-          "description": ""
+          "type": "function",
+          "description": "Group check for Synchro material Level pruning."
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "返回同调素材选择使用的组检查函数；要求已选素材的最小同调等级合计不超过syncard的等级。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Returns a group check for Synchro material selection that keeps the sum of the selected materials' minimum Synchro Levels at or below syncard's Level."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/procedure.lua",
@@ -52794,7 +52796,10 @@
       "aliases": [
         "aux.SynGroupCheckLevelAddition"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -52870,7 +52875,7 @@
         },
         {
           "name": "f",
-          "type": "function",
+          "type": "function|nil",
           "optional": false,
           "description": ""
         },
@@ -52889,15 +52894,17 @@
       ],
       "returns": [
         {
-          "type": "nil",
-          "description": ""
+          "type": "bool",
+          "description": "true if f rejects c."
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "限制函数f存在且拒绝c作为syncard的素材时返回true。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Returns true when limiter function f exists and rejects c for syncard."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/procedure.lua",
@@ -52908,7 +52915,10 @@
       "aliases": [
         "aux.SynLimitFilter"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -52932,15 +52942,17 @@
       ],
       "returns": [
         {
-          "type": "nil",
-          "description": ""
+          "type": "bool",
+          "description": "true if c is usable Synchro Material."
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "同调素材筛选；c必须表侧表示或公开，并且可以作为syncard的同调素材。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Synchro Material filter; c must be face-up or public and usable as Synchro Material for syncard."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/procedure.lua",
@@ -52951,7 +52963,10 @@
       "aliases": [
         "aux.SynMaterialFilter"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -52968,19 +52983,19 @@
         },
         {
           "name": "sg1",
-          "type": "any",
+          "type": "Group",
           "optional": false,
           "description": ""
         },
         {
           "name": "minc",
-          "type": "any",
+          "type": "int",
           "optional": false,
           "description": ""
         },
         {
           "name": "maxc",
-          "type": "any",
+          "type": "int",
           "optional": false,
           "description": ""
         },
@@ -52992,46 +53007,48 @@
         },
         {
           "name": "mg1",
-          "type": "any",
+          "type": "Group",
           "optional": false,
           "description": ""
         },
         {
           "name": "smat",
-          "type": "any",
+          "type": "Card|nil",
           "optional": false,
           "description": ""
         },
         {
           "name": "gc",
-          "type": "any",
+          "type": "function|nil",
           "optional": false,
           "description": ""
         },
         {
           "name": "mgchk",
-          "type": "any",
+          "type": "bool",
           "optional": false,
           "description": ""
         },
         {
           "name": "goalchk",
-          "type": "any",
+          "type": "bool",
           "optional": false,
           "description": ""
         }
       ],
       "returns": [
         {
-          "type": "nil",
-          "description": ""
+          "type": "bool",
+          "description": "true if the mixed Synchro Material selection can be completed."
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "检查剩余混合同调素材池是否能在可变素材数量范围内，完成当前已选固定素材组。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Checks whether the remaining mixed Synchro Material pool can complete the selected fixed-material group within the variable material count range."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/procedure.lua",
@@ -53042,7 +53059,10 @@
       "aliases": [
         "aux.SynMixCheck"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -53065,13 +53085,13 @@
         },
         {
           "name": "minc",
-          "type": "any",
+          "type": "int",
           "optional": false,
           "description": ""
         },
         {
           "name": "ct",
-          "type": "any",
+          "type": "int",
           "optional": false,
           "description": ""
         },
@@ -53083,46 +53103,48 @@
         },
         {
           "name": "sg1",
-          "type": "any",
+          "type": "Group",
           "optional": false,
           "description": ""
         },
         {
           "name": "smat",
-          "type": "any",
+          "type": "Card|nil",
           "optional": false,
           "description": ""
         },
         {
           "name": "gc",
-          "type": "any",
+          "type": "function|nil",
           "optional": false,
           "description": ""
         },
         {
           "name": "mgchk",
-          "type": "any",
+          "type": "bool",
           "optional": false,
           "description": ""
         },
         {
           "name": "goalchk",
-          "type": "any",
+          "type": "bool",
           "optional": false,
           "description": ""
         }
       ],
       "returns": [
         {
-          "type": "nil",
-          "description": ""
+          "type": "bool",
+          "description": "true if sg plus sg1 is a valid mixed Synchro Material group."
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "混合同调素材组的最终检查；验证数量、额外怪兽区域、组回调、指定素材、必须同调素材、EFFECT_TUNE_MAGICIAN限制、等级合计、手牌素材限制以及调整限制。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Final mixed Synchro Material group check. It validates count, Extra Monster Zone availability, group callback, fixed material, mandatory Synchro Materials, EFFECT_TUNE_MAGICIAN restrictions, Level total, hand-material limits, and tuner limits."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/procedure.lua",
@@ -53133,7 +53155,10 @@
       "aliases": [
         "aux.SynMixCheckGoal"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -53150,7 +53175,7 @@
         },
         {
           "name": "sg1",
-          "type": "any",
+          "type": "Group",
           "optional": false,
           "description": ""
         },
@@ -53163,15 +53188,17 @@
       ],
       "returns": [
         {
-          "type": "nil",
-          "description": ""
+          "type": "bool",
+          "description": "true if the branch can be pruned by minimum Synchro Level total."
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "混合同调搜索的剪枝检查；当已选素材的最小同调等级合计达到syncard等级时返回true。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Pruning check for mixed Synchro searches; returns true once the selected materials' minimum Synchro Level total reaches syncard's Level."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/procedure.lua",
@@ -53182,7 +53209,10 @@
       "aliases": [
         "aux.SynMixCheckPrune"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -53217,19 +53247,19 @@
         },
         {
           "name": "ct",
-          "type": "any",
+          "type": "int",
           "optional": false,
           "description": ""
         },
         {
           "name": "minc",
-          "type": "any",
+          "type": "int",
           "optional": false,
           "description": ""
         },
         {
           "name": "maxc",
-          "type": "any",
+          "type": "int",
           "optional": false,
           "description": ""
         },
@@ -53241,52 +53271,54 @@
         },
         {
           "name": "sg1",
-          "type": "any",
+          "type": "Group",
           "optional": false,
           "description": ""
         },
         {
           "name": "smat",
-          "type": "any",
+          "type": "Card|nil",
           "optional": false,
           "description": ""
         },
         {
           "name": "gc",
-          "type": "any",
+          "type": "function|nil",
           "optional": false,
           "description": ""
         },
         {
           "name": "mgchk",
-          "type": "any",
+          "type": "bool",
           "optional": false,
           "description": ""
         },
         {
           "name": "goalchk",
-          "type": "any",
+          "type": "bool",
           "optional": false,
           "description": ""
         },
         {
           "name": "fulltraversal",
-          "type": "any",
+          "type": "bool",
           "optional": false,
           "description": ""
         }
       ],
       "returns": [
         {
-          "type": "nil",
-          "description": ""
+          "type": "bool",
+          "description": "true if the recursive search can reach a valid group."
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "混合同调素材搜索的递归辅助函数；临时加入c，检查目标，并在分支仍可能成立时继续搜索mg。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Recursive mixed Synchro Material search helper. It temporarily adds c, checks the goal, and continues through mg while the branch remains possible."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/procedure.lua",
@@ -53297,7 +53329,10 @@
       "aliases": [
         "aux.SynMixCheckRecursive"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -53308,58 +53343,60 @@
       "params": [
         {
           "name": "f1",
-          "type": "any",
+          "type": "function|nil",
           "optional": false,
           "description": ""
         },
         {
           "name": "f2",
-          "type": "any",
+          "type": "function|nil",
           "optional": false,
           "description": ""
         },
         {
           "name": "f3",
-          "type": "any",
+          "type": "function|nil",
           "optional": false,
           "description": ""
         },
         {
           "name": "f4",
-          "type": "any",
+          "type": "function|nil",
           "optional": false,
           "description": ""
         },
         {
           "name": "minct",
-          "type": "any",
+          "type": "int",
           "optional": false,
           "description": ""
         },
         {
           "name": "maxct",
-          "type": "any",
+          "type": "int",
           "optional": false,
           "description": ""
         },
         {
           "name": "gc",
-          "type": "any",
+          "type": "function|nil",
           "optional": false,
           "description": ""
         }
       ],
       "returns": [
         {
-          "type": "nil",
-          "description": ""
+          "type": "function",
+          "description": "Condition function for a mixed Synchro Summon procedure."
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "返回混合同调召唤手续的条件函数；支持最多3个固定素材筛选和1个可变素材位置。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Returns the condition function for mixed Synchro Summon procedures with up to three fixed material filters and a variable material slot."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/procedure.lua",
@@ -53370,7 +53407,10 @@
       "aliases": [
         "aux.SynMixCondition"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -53387,37 +53427,37 @@
         },
         {
           "name": "f1",
-          "type": "any",
+          "type": "function|nil",
           "optional": false,
           "description": ""
         },
         {
           "name": "f2",
-          "type": "any",
+          "type": "function|nil",
           "optional": false,
           "description": ""
         },
         {
           "name": "f3",
-          "type": "any",
+          "type": "function|nil",
           "optional": false,
           "description": ""
         },
         {
           "name": "f4",
-          "type": "any",
+          "type": "function|nil",
           "optional": false,
           "description": ""
         },
         {
           "name": "minc",
-          "type": "any",
+          "type": "int",
           "optional": false,
           "description": ""
         },
         {
           "name": "maxc",
-          "type": "any",
+          "type": "int",
           "optional": false,
           "description": ""
         },
@@ -53435,40 +53475,42 @@
         },
         {
           "name": "smat",
-          "type": "any",
+          "type": "Card|nil",
           "optional": false,
           "description": ""
         },
         {
           "name": "gc",
-          "type": "any",
+          "type": "function|nil",
           "optional": false,
           "description": ""
         },
         {
           "name": "mgchk",
-          "type": "any",
+          "type": "bool",
           "optional": false,
           "description": ""
         },
         {
           "name": "goalchk",
-          "type": "any",
+          "type": "bool",
           "optional": false,
           "description": ""
         }
       ],
       "returns": [
         {
-          "type": "nil",
-          "description": ""
+          "type": "bool",
+          "description": "true if c can fill the first fixed material slot."
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "混合同调手续的第1个固定素材候选筛选。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "First fixed-material candidate filter for mixed Synchro procedures."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/procedure.lua",
@@ -53479,7 +53521,10 @@
       "aliases": [
         "aux.SynMixFilter1"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -53496,31 +53541,31 @@
         },
         {
           "name": "f2",
-          "type": "any",
+          "type": "function|nil",
           "optional": false,
           "description": ""
         },
         {
           "name": "f3",
-          "type": "any",
+          "type": "function|nil",
           "optional": false,
           "description": ""
         },
         {
           "name": "f4",
-          "type": "any",
+          "type": "function|nil",
           "optional": false,
           "description": ""
         },
         {
           "name": "minc",
-          "type": "any",
+          "type": "int",
           "optional": false,
           "description": ""
         },
         {
           "name": "maxc",
-          "type": "any",
+          "type": "int",
           "optional": false,
           "description": ""
         },
@@ -53538,46 +53583,48 @@
         },
         {
           "name": "smat",
-          "type": "any",
+          "type": "Card|nil",
           "optional": false,
           "description": ""
         },
         {
           "name": "c1",
-          "type": "any",
+          "type": "Card",
           "optional": false,
           "description": ""
         },
         {
           "name": "gc",
-          "type": "any",
+          "type": "function|nil",
           "optional": false,
           "description": ""
         },
         {
           "name": "mgchk",
-          "type": "any",
+          "type": "bool",
           "optional": false,
           "description": ""
         },
         {
           "name": "goalchk",
-          "type": "any",
+          "type": "bool",
           "optional": false,
           "description": ""
         }
       ],
       "returns": [
         {
-          "type": "nil",
-          "description": ""
+          "type": "bool",
+          "description": "true if c can fill the second fixed material slot or advance selection."
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "混合同调手续的第2个固定素材候选筛选；若不需要第2个筛选，则转入可变素材位置。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Second fixed-material candidate filter for mixed Synchro procedures, or the transition into the variable material slot when no second filter is required."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/procedure.lua",
@@ -53588,7 +53635,10 @@
       "aliases": [
         "aux.SynMixFilter2"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -53605,25 +53655,25 @@
         },
         {
           "name": "f3",
-          "type": "any",
+          "type": "function|nil",
           "optional": false,
           "description": ""
         },
         {
           "name": "f4",
-          "type": "any",
+          "type": "function|nil",
           "optional": false,
           "description": ""
         },
         {
           "name": "minc",
-          "type": "any",
+          "type": "int",
           "optional": false,
           "description": ""
         },
         {
           "name": "maxc",
-          "type": "any",
+          "type": "int",
           "optional": false,
           "description": ""
         },
@@ -53641,52 +53691,54 @@
         },
         {
           "name": "smat",
-          "type": "any",
+          "type": "Card|nil",
           "optional": false,
           "description": ""
         },
         {
           "name": "c1",
-          "type": "any",
+          "type": "Card",
           "optional": false,
           "description": ""
         },
         {
           "name": "c2",
-          "type": "any",
+          "type": "Card",
           "optional": false,
           "description": ""
         },
         {
           "name": "gc",
-          "type": "any",
+          "type": "function|nil",
           "optional": false,
           "description": ""
         },
         {
           "name": "mgchk",
-          "type": "any",
+          "type": "bool",
           "optional": false,
           "description": ""
         },
         {
           "name": "goalchk",
-          "type": "any",
+          "type": "bool",
           "optional": false,
           "description": ""
         }
       ],
       "returns": [
         {
-          "type": "nil",
-          "description": ""
+          "type": "bool",
+          "description": "true if c can fill the third fixed material slot or advance selection."
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "混合同调手续的第3个固定素材候选筛选；若不需要第3个筛选，则转入可变素材位置。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Third fixed-material candidate filter for mixed Synchro procedures, or the transition into the variable material slot when no third filter is required."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/procedure.lua",
@@ -53697,7 +53749,10 @@
       "aliases": [
         "aux.SynMixFilter3"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -53714,19 +53769,19 @@
         },
         {
           "name": "f4",
-          "type": "any",
+          "type": "function|nil",
           "optional": false,
           "description": ""
         },
         {
           "name": "minc",
-          "type": "any",
+          "type": "int",
           "optional": false,
           "description": ""
         },
         {
           "name": "maxc",
-          "type": "any",
+          "type": "int",
           "optional": false,
           "description": ""
         },
@@ -53738,64 +53793,66 @@
         },
         {
           "name": "mg1",
-          "type": "any",
+          "type": "Group",
           "optional": false,
           "description": ""
         },
         {
           "name": "smat",
-          "type": "any",
+          "type": "Card|nil",
           "optional": false,
           "description": ""
         },
         {
           "name": "c1",
-          "type": "any",
+          "type": "Card",
           "optional": false,
           "description": ""
         },
         {
           "name": "c2",
-          "type": "any",
+          "type": "Card|nil",
           "optional": false,
           "description": ""
         },
         {
           "name": "c3",
-          "type": "any",
+          "type": "Card|nil",
           "optional": false,
           "description": ""
         },
         {
           "name": "gc",
-          "type": "any",
+          "type": "function|nil",
           "optional": false,
           "description": ""
         },
         {
           "name": "mgchk",
-          "type": "any",
+          "type": "bool",
           "optional": false,
           "description": ""
         },
         {
           "name": "goalchk",
-          "type": "any",
+          "type": "bool",
           "optional": false,
           "description": ""
         }
       ],
       "returns": [
         {
-          "type": "nil",
-          "description": ""
+          "type": "bool",
+          "description": "true if c can fill the variable material slot."
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "混合同调手续的可变素材候选筛选；加入c后检查剩余素材池是否还能完成召唤。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Variable-slot candidate filter for mixed Synchro procedures; after adding c it checks whether the remaining material pool can complete the summon."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/procedure.lua",
@@ -53806,7 +53863,10 @@
       "aliases": [
         "aux.SynMixFilter4"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -53836,15 +53896,17 @@
       ],
       "returns": [
         {
-          "type": "nil",
-          "description": ""
+          "type": "bool",
+          "description": "true if hand Synchro Materials in g are legal."
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "检查已选手牌同调素材是否由允许使用手牌同调素材的卡支持，并验证筛选和数量限制。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Checks whether selected hand Synchro Materials are allowed by a material that grants hand Synchro use, including filter and count limits."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/procedure.lua",
@@ -53855,7 +53917,10 @@
       "aliases": [
         "aux.SynMixHandCheck"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -53885,15 +53950,17 @@
       ],
       "returns": [
         {
-          "type": "nil",
-          "description": ""
+          "type": "bool",
+          "description": "true if c is a hand material enabled by another card."
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "当手牌素材是因为其他卡允许而被使用、不是依靠自身额外同调素材效果时返回true。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Returns true for a hand material that is being used because another card enables it, rather than by its own extra Synchro Material effect."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/procedure.lua",
@@ -53904,7 +53971,10 @@
       "aliases": [
         "aux.SynMixHandFilter"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -53915,58 +53985,60 @@
       "params": [
         {
           "name": "f1",
-          "type": "any",
+          "type": "function|nil",
           "optional": false,
           "description": ""
         },
         {
           "name": "f2",
-          "type": "any",
+          "type": "function|nil",
           "optional": false,
           "description": ""
         },
         {
           "name": "f3",
-          "type": "any",
+          "type": "function|nil",
           "optional": false,
           "description": ""
         },
         {
           "name": "f4",
-          "type": "any",
+          "type": "function|nil",
           "optional": false,
           "description": ""
         },
         {
           "name": "minct",
-          "type": "any",
+          "type": "int",
           "optional": false,
           "description": ""
         },
         {
           "name": "maxct",
-          "type": "any",
+          "type": "int",
           "optional": false,
           "description": ""
         },
         {
           "name": "gc",
-          "type": "any",
+          "type": "function|nil",
           "optional": false,
           "description": ""
         }
       ],
       "returns": [
         {
-          "type": "nil",
-          "description": ""
+          "type": "function",
+          "description": "Operation function for a mixed Synchro Summon procedure."
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "返回混合同调召唤手续的操作函数；设置素材，把素材送去墓地，并释放保留的Group。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Returns the operation function for mixed Synchro Summon procedures; it sets materials, sends them to the Graveyard, and releases the kept group."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/procedure.lua",
@@ -53977,7 +54049,10 @@
       "aliases": [
         "aux.SynMixOperation"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -53988,58 +54063,60 @@
       "params": [
         {
           "name": "f1",
-          "type": "any",
+          "type": "function|nil",
           "optional": false,
           "description": ""
         },
         {
           "name": "f2",
-          "type": "any",
+          "type": "function|nil",
           "optional": false,
           "description": ""
         },
         {
           "name": "f3",
-          "type": "any",
+          "type": "function|nil",
           "optional": false,
           "description": ""
         },
         {
           "name": "f4",
-          "type": "any",
+          "type": "function|nil",
           "optional": false,
           "description": ""
         },
         {
           "name": "minct",
-          "type": "any",
+          "type": "int",
           "optional": false,
           "description": ""
         },
         {
           "name": "maxct",
-          "type": "any",
+          "type": "int",
           "optional": false,
           "description": ""
         },
         {
           "name": "gc",
-          "type": "any",
+          "type": "function|nil",
           "optional": false,
           "description": ""
         }
       ],
       "returns": [
         {
-          "type": "nil",
-          "description": ""
+          "type": "function",
+          "description": "Target function for a mixed Synchro Summon procedure."
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "返回混合同调召唤手续的目标函数；引导素材选择，并把选择的Group保存在效果上。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Returns the target function for mixed Synchro Summon procedures; it guides material selection and stores the selected group on the effect."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/procedure.lua",
@@ -54050,7 +54127,10 @@
       "aliases": [
         "aux.SynMixTarget"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -54061,40 +54141,42 @@
       "params": [
         {
           "name": "f1",
-          "type": "any",
+          "type": "function|nil",
           "optional": false,
           "description": ""
         },
         {
           "name": "f2",
-          "type": "any",
+          "type": "function|nil",
           "optional": false,
           "description": ""
         },
         {
           "name": "minct",
-          "type": "any",
+          "type": "int",
           "optional": false,
           "description": ""
         },
         {
           "name": "maxct",
-          "type": "any",
+          "type": "int",
           "optional": false,
           "description": ""
         }
       ],
       "returns": [
         {
-          "type": "nil",
-          "description": ""
+          "type": "function",
+          "description": "Operation function for a basic Synchro Summon procedure."
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "返回基础同调召唤手续的操作函数；设置素材，把素材送去墓地，并释放保留的Group。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Returns the operation function for basic Synchro Summon procedures; it sets materials, sends them to the Graveyard, and releases the kept group."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/procedure.lua",
@@ -54105,7 +54187,10 @@
       "aliases": [
         "aux.SynOperation"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -54116,40 +54201,42 @@
       "params": [
         {
           "name": "f1",
-          "type": "any",
+          "type": "function|nil",
           "optional": false,
           "description": ""
         },
         {
           "name": "f2",
-          "type": "any",
+          "type": "function|nil",
           "optional": false,
           "description": ""
         },
         {
           "name": "minct",
-          "type": "any",
+          "type": "int",
           "optional": false,
           "description": ""
         },
         {
           "name": "maxct",
-          "type": "any",
+          "type": "int",
           "optional": false,
           "description": ""
         }
       ],
       "returns": [
         {
-          "type": "nil",
-          "description": ""
+          "type": "function",
+          "description": "Target function for a basic Synchro Summon procedure."
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "返回基础同调召唤手续的目标函数；选择同调素材并把选择的Group保存在效果上。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Returns the target function for basic Synchro Summon procedures; it selects Synchro Materials and stores the selected group on the effect."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/procedure.lua",
@@ -54160,7 +54247,10 @@
       "aliases": [
         "aux.SynTarget"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -54171,22 +54261,24 @@
       "params": [
         {
           "name": "ecode",
-          "type": "Effect",
+          "type": "int",
           "optional": false,
           "description": ""
         }
       ],
       "returns": [
         {
-          "type": "nil",
-          "description": ""
+          "type": "function",
+          "description": "Group check that rejects invalid EFFECT_TUNE_MAGICIAN_* pairs."
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "已废弃的工厂函数；返回组检查函数，用于排除含有对ecode无效的EFFECT_TUNE_MAGICIAN_*组合的素材组。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Deprecated factory that returns a group check rejecting groups with an invalid EFFECT_TUNE_MAGICIAN_* pair for ecode."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/procedure.lua",
@@ -54197,7 +54289,10 @@
       "aliases": [
         "aux.TuneMagicianCheckAdditionalX"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -54215,15 +54310,17 @@
       ],
       "returns": [
         {
-          "type": "nil",
-          "description": ""
+          "type": "bool",
+          "description": "true if g has no invalid EFFECT_TUNE_MAGICIAN_X pair."
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "超量素材组的额外检查；排除无效的EFFECT_TUNE_MAGICIAN_X组合。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Additional Xyz material group check that rejects invalid EFFECT_TUNE_MAGICIAN_X pairs."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/procedure.lua",
@@ -54234,7 +54331,10 @@
       "aliases": [
         "aux.TuneMagicianCheckAdditionalXyz"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -54393,13 +54493,13 @@
         },
         {
           "name": "lv",
-          "type": "any",
+          "type": "int",
           "optional": false,
           "description": ""
         },
         {
           "name": "f",
-          "type": "function",
+          "type": "function|nil",
           "optional": false,
           "description": ""
         },
@@ -54411,22 +54511,24 @@
         },
         {
           "name": "checked",
-          "type": "any",
+          "type": "bool|nil",
           "optional": false,
           "description": ""
         }
       ],
       "returns": [
         {
-          "type": "nil",
-          "description": ""
+          "type": "bool",
+          "description": "true if c has a valid EFFECT_DOUBLE_XMATERIAL effect."
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "检查c是否具有对xyzc有效的EFFECT_DOUBLE_XMATERIAL效果；checked为true时可跳过通常超量素材筛选。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Checks whether c has a valid EFFECT_DOUBLE_XMATERIAL effect for xyzc, optionally skipping the normal Xyz Material filter when checked is true."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/procedure.lua",
@@ -54437,7 +54539,10 @@
       "aliases": [
         "aux.Xyz2XMaterialEffectFilter"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -54460,28 +54565,30 @@
         },
         {
           "name": "lv",
-          "type": "any",
+          "type": "int",
           "optional": false,
           "description": ""
         },
         {
           "name": "f",
-          "type": "function",
+          "type": "function|nil",
           "optional": false,
           "description": ""
         }
       ],
       "returns": [
         {
-          "type": "nil",
-          "description": ""
+          "type": "bool",
+          "description": "true if c is valid Xyz Material for double-material handling."
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "双重素材处理用的超量素材筛选；c必须表侧表示或公开，可以作为xyzc的超量素材，匹配lv，并在提供f时满足f。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Xyz Material filter for double-material handling; c must be face-up or public, usable as Xyz Material for xyzc, match lv, and satisfy f when provided."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/procedure.lua",
@@ -54492,7 +54599,10 @@
       "aliases": [
         "aux.Xyz2XMaterialFilter"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -54521,22 +54631,24 @@
         },
         {
           "name": "minc",
-          "type": "any",
+          "type": "int",
           "optional": false,
           "description": ""
         }
       ],
       "returns": [
         {
-          "type": "nil",
-          "description": ""
+          "type": "bool",
+          "description": "true if g satisfies the double-material Xyz requirements."
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "可能使用EFFECT_DOUBLE_XMATERIAL的超量召唤最终组检查；验证额外怪兽区域、EFFECT_XYZ_MIN_COUNT，以及双重素材效果是否足以满足minc。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Final group check for Xyz Summons that may use EFFECT_DOUBLE_XMATERIAL. It validates Extra Monster Zone availability, EFFECT_XYZ_MIN_COUNT, and whether double-material effects cover minc."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/procedure.lua",
@@ -54547,7 +54659,10 @@
       "aliases": [
         "aux.Xyz2XMaterialGoal"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -54576,28 +54691,25 @@
         },
         {
           "name": "minct",
-          "type": "any",
+          "type": "int",
           "optional": false,
           "description": ""
         },
         {
           "name": "maxct",
-          "type": "any",
+          "type": "int",
           "optional": false,
           "description": ""
         }
       ],
-      "returns": [
-        {
-          "type": "nil",
-          "description": ""
-        }
+      "returns": [],
+      "description_zh": [
+        "为已选素材组中需要用于满足最小素材数量的EFFECT_DOUBLE_XMATERIAL卡消耗次数限制。"
       ],
-      "description_zh": [],
       "description_en": [
-        "TODO document."
+        "Consumes the count limits for selected EFFECT_DOUBLE_XMATERIAL cards needed for the selected group to satisfy the minimum material count."
       ],
-      "english_status": "missing_documentation",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/procedure.lua",
@@ -54608,7 +54720,10 @@
       "aliases": [
         "aux.Xyz2XMaterialOperation"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -54625,7 +54740,7 @@
         },
         {
           "name": "alterf",
-          "type": "any",
+          "type": "function",
           "optional": false,
           "description": ""
         },
@@ -54649,22 +54764,24 @@
         },
         {
           "name": "alterop",
-          "type": "any",
+          "type": "function|nil",
           "optional": false,
           "description": ""
         }
       ],
       "returns": [
         {
-          "type": "nil",
-          "description": ""
+          "type": "bool",
+          "description": "true if c is a valid alternate Xyz Material."
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "替代超量召唤候选筛选；检查alterf、超量素材合法性、额外怪兽区域、必须超量素材、EFFECT_XYZ_MIN_COUNT以及可选alterop验证。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Alternate Xyz Summon candidate filter. It checks alterf, Xyz Material legality, Extra Monster Zone availability, mandatory Xyz Materials, EFFECT_XYZ_MIN_COUNT, and optional alterop validation."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/procedure.lua",
@@ -54675,7 +54792,10 @@
       "aliases": [
         "aux.XyzAlterFilter"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -54686,58 +54806,60 @@
       "params": [
         {
           "name": "f",
-          "type": "function",
+          "type": "function|nil",
           "optional": false,
           "description": ""
         },
         {
           "name": "lv",
-          "type": "any",
+          "type": "int",
           "optional": false,
           "description": ""
         },
         {
           "name": "minct",
-          "type": "any",
+          "type": "int",
           "optional": false,
           "description": ""
         },
         {
           "name": "maxct",
-          "type": "any",
+          "type": "int",
           "optional": false,
           "description": ""
         },
         {
           "name": "alterf",
-          "type": "any",
+          "type": "function|nil",
           "optional": false,
           "description": ""
         },
         {
           "name": "alterdesc",
-          "type": "any",
+          "type": "int|string|nil",
           "optional": false,
           "description": ""
         },
         {
           "name": "alterop",
-          "type": "any",
+          "type": "function|nil",
           "optional": false,
           "description": ""
         }
       ],
       "returns": [
         {
-          "type": "nil",
-          "description": ""
+          "type": "function",
+          "description": "Condition function for a standard Xyz Summon procedure."
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "返回标准超量召唤手续的条件函数，支持可选的1张素材替代超量召唤以及EFFECT_DOUBLE_XMATERIAL处理。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Returns the condition function for standard Xyz Summon procedures, including optional alternate one-card Xyz Summon and EFFECT_DOUBLE_XMATERIAL handling."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/procedure.lua",
@@ -54748,7 +54870,10 @@
       "aliases": [
         "aux.XyzCondition"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -54759,58 +54884,60 @@
       "params": [
         {
           "name": "f",
-          "type": "function",
+          "type": "function|nil",
           "optional": false,
           "description": ""
         },
         {
           "name": "gf",
-          "type": "any",
+          "type": "function|nil",
           "optional": false,
           "description": ""
         },
         {
           "name": "minct",
-          "type": "any",
+          "type": "int",
           "optional": false,
           "description": ""
         },
         {
           "name": "maxct",
-          "type": "any",
+          "type": "int",
           "optional": false,
           "description": ""
         },
         {
           "name": "alterf",
-          "type": "any",
+          "type": "function|nil",
           "optional": false,
           "description": ""
         },
         {
           "name": "alterdesc",
-          "type": "any",
+          "type": "int|string|nil",
           "optional": false,
           "description": ""
         },
         {
           "name": "alterop",
-          "type": "any",
+          "type": "function|nil",
           "optional": false,
           "description": ""
         }
       ],
       "returns": [
         {
-          "type": "nil",
-          "description": ""
+          "type": "function",
+          "description": "Condition function for a Level-free Xyz Summon procedure."
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "返回不检查等级的超量召唤手续的条件函数，支持可选组筛选和1张素材替代超量召唤。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Returns the condition function for Level-free Xyz Summon procedures with optional group filter and alternate one-card Xyz Summon support."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/procedure.lua",
@@ -54821,7 +54948,10 @@
       "aliases": [
         "aux.XyzLevelFreeCondition"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -54844,22 +54974,24 @@
         },
         {
           "name": "f",
-          "type": "function",
+          "type": "function|nil",
           "optional": false,
           "description": ""
         }
       ],
       "returns": [
         {
-          "type": "nil",
-          "description": ""
+          "type": "bool",
+          "description": "true if c is valid Level-free Xyz Material."
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "不检查等级的超量素材筛选；c在场上时必须表侧表示，可以作为xyzc的超量素材，并在提供f时满足f。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Level-free Xyz Material filter; c must be face-up if on the field, usable as Xyz Material for xyzc, and satisfy f when provided."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/procedure.lua",
@@ -54870,7 +55002,10 @@
       "aliases": [
         "aux.XyzLevelFreeFilter"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -54899,22 +55034,24 @@
         },
         {
           "name": "gf",
-          "type": "any",
+          "type": "function|nil",
           "optional": false,
           "description": ""
         }
       ],
       "returns": [
         {
-          "type": "nil",
-          "description": ""
+          "type": "bool",
+          "description": "true if g satisfies the Level-free Xyz requirements."
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "不检查等级的超量召唤最终组检查；验证额外怪兽区域、可选组筛选gf以及EFFECT_XYZ_MIN_COUNT要求。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Final group check for Level-free Xyz Summons. It validates Extra Monster Zone availability, optional group filter gf, and EFFECT_XYZ_MIN_COUNT requirements."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/procedure.lua",
@@ -54925,7 +55062,10 @@
       "aliases": [
         "aux.XyzLevelFreeGoal"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -54936,58 +55076,60 @@
       "params": [
         {
           "name": "f",
-          "type": "function",
+          "type": "function|nil",
           "optional": false,
           "description": ""
         },
         {
           "name": "gf",
-          "type": "any",
+          "type": "function|nil",
           "optional": false,
           "description": ""
         },
         {
           "name": "minct",
-          "type": "any",
+          "type": "int",
           "optional": false,
           "description": ""
         },
         {
           "name": "maxct",
-          "type": "any",
+          "type": "int",
           "optional": false,
           "description": ""
         },
         {
           "name": "alterf",
-          "type": "any",
+          "type": "function|nil",
           "optional": false,
           "description": ""
         },
         {
           "name": "alterdesc",
-          "type": "any",
+          "type": "int|string|nil",
           "optional": false,
           "description": ""
         },
         {
           "name": "alterop",
-          "type": "any",
+          "type": "function|nil",
           "optional": false,
           "description": ""
         }
       ],
       "returns": [
         {
-          "type": "nil",
-          "description": ""
+          "type": "function",
+          "description": "Operation function for a Level-free Xyz Summon procedure."
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "返回不检查等级的超量召唤手续操作函数；处理替代召唤，把原本叠放素材因规则送去墓地，设置素材并叠放。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Returns the operation function for Level-free Xyz Summon procedures; it handles alternate summons, sends old overlay cards to the Graveyard by rule, sets materials, and overlays them."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/procedure.lua",
@@ -54998,7 +55140,10 @@
       "aliases": [
         "aux.XyzLevelFreeOperation"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -55009,58 +55154,60 @@
       "params": [
         {
           "name": "f",
-          "type": "function",
+          "type": "function|nil",
           "optional": false,
           "description": ""
         },
         {
           "name": "gf",
-          "type": "any",
+          "type": "function|nil",
           "optional": false,
           "description": ""
         },
         {
           "name": "minct",
-          "type": "any",
+          "type": "int",
           "optional": false,
           "description": ""
         },
         {
           "name": "maxct",
-          "type": "any",
+          "type": "int",
           "optional": false,
           "description": ""
         },
         {
           "name": "alterf",
-          "type": "any",
+          "type": "function|nil",
           "optional": false,
           "description": ""
         },
         {
           "name": "alterdesc",
-          "type": "any",
+          "type": "int|string|nil",
           "optional": false,
           "description": ""
         },
         {
           "name": "alterop",
-          "type": "any",
+          "type": "function|nil",
           "optional": false,
           "description": ""
         }
       ],
       "returns": [
         {
-          "type": "nil",
-          "description": ""
+          "type": "function",
+          "description": "Target function for a Level-free Xyz Summon procedure."
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "返回不检查等级的超量召唤手续目标函数；在替代素材和通常组选素材之间选择，并保存所选Group。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Returns the target function for Level-free Xyz Summon procedures; it chooses between alternate material and regular group selection and stores the selected group."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/procedure.lua",
@@ -55071,7 +55218,10 @@
       "aliases": [
         "aux.XyzLevelFreeTarget"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -55141,58 +55291,60 @@
       "params": [
         {
           "name": "f",
-          "type": "function",
+          "type": "function|nil",
           "optional": false,
           "description": ""
         },
         {
           "name": "lv",
-          "type": "any",
+          "type": "int",
           "optional": false,
           "description": ""
         },
         {
           "name": "minct",
-          "type": "any",
+          "type": "int",
           "optional": false,
           "description": ""
         },
         {
           "name": "maxct",
-          "type": "any",
+          "type": "int",
           "optional": false,
           "description": ""
         },
         {
           "name": "alterf",
-          "type": "any",
+          "type": "function|nil",
           "optional": false,
           "description": ""
         },
         {
           "name": "alterdesc",
-          "type": "any",
+          "type": "int|string|nil",
           "optional": false,
           "description": ""
         },
         {
           "name": "alterop",
-          "type": "any",
+          "type": "function|nil",
           "optional": false,
           "description": ""
         }
       ],
       "returns": [
         {
-          "type": "nil",
-          "description": ""
+          "type": "function",
+          "description": "Operation function for a standard Xyz Summon procedure."
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "返回标准超量召唤手续的操作函数；处理替代召唤、双重素材次数限制，把原本叠放素材因规则送去墓地，设置素材并叠放。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Returns the operation function for standard Xyz Summon procedures; it handles alternate summons, double-material count limits, sends old overlay cards to the Graveyard by rule, sets materials, and overlays them."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/procedure.lua",
@@ -55203,7 +55355,10 @@
       "aliases": [
         "aux.XyzOperation"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -55214,58 +55369,60 @@
       "params": [
         {
           "name": "f",
-          "type": "function",
+          "type": "function|nil",
           "optional": false,
           "description": ""
         },
         {
           "name": "lv",
-          "type": "any",
+          "type": "int",
           "optional": false,
           "description": ""
         },
         {
           "name": "minct",
-          "type": "any",
+          "type": "int",
           "optional": false,
           "description": ""
         },
         {
           "name": "maxct",
-          "type": "any",
+          "type": "int",
           "optional": false,
           "description": ""
         },
         {
           "name": "alterf",
-          "type": "any",
+          "type": "function|nil",
           "optional": false,
           "description": ""
         },
         {
           "name": "alterdesc",
-          "type": "any",
+          "type": "int|string|nil",
           "optional": false,
           "description": ""
         },
         {
           "name": "alterop",
-          "type": "any",
+          "type": "function|nil",
           "optional": false,
           "description": ""
         }
       ],
       "returns": [
         {
-          "type": "nil",
-          "description": ""
+          "type": "function",
+          "description": "Target function for a standard Xyz Summon procedure."
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "返回标准超量召唤手续的目标函数；在替代素材、双重素材组选取以及通常超量素材选择之间进行处理。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Returns the target function for standard Xyz Summon procedures; it chooses between alternate material, double-material group selection, and regular Xyz Material selection."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/procedure.lua",
@@ -55276,7 +55433,10 @@
       "aliases": [
         "aux.XyzTarget"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     }

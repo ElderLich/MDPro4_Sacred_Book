@@ -3,22 +3,26 @@
 ## Signature
 
 ```lua
-Auxiliary.SynMixCondition(any f1, any f2, any f3, any f4, any minct, any maxct, any gc) -> void
+Auxiliary.SynMixCondition(function|nil f1, function|nil f2, function|nil f3, function|nil f4, int minct, int maxct, function|nil gc) -> function
 ```
 
 ## Description
 
-TODO document.
+Returns the condition function for mixed Synchro Summon procedures with up to three fixed material filters and a variable material slot.
 
 ## Parameters
 
-- `f1` `any`
-- `f2` `any`
-- `f3` `any`
-- `f4` `any`
-- `minct` `any`
-- `maxct` `any`
-- `gc` `any`
+- `f1` `function|nil`
+- `f2` `function|nil`
+- `f3` `function|nil`
+- `f4` `function|nil`
+- `minct` `int`
+- `maxct` `int`
+- `gc` `function|nil`
+
+## Returns
+
+- `function` - Condition function for a mixed Synchro Summon procedure.
 
 ## Source
 

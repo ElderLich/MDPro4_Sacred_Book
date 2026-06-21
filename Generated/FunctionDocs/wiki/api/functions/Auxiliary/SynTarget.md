@@ -3,19 +3,23 @@
 ## Signature
 
 ```lua
-Auxiliary.SynTarget(any f1, any f2, any minct, any maxct) -> void
+Auxiliary.SynTarget(function|nil f1, function|nil f2, int minct, int maxct) -> function
 ```
 
 ## Description
 
-TODO document.
+Returns the target function for basic Synchro Summon procedures; it selects Synchro Materials and stores the selected group on the effect.
 
 ## Parameters
 
-- `f1` `any`
-- `f2` `any`
-- `minct` `any`
-- `maxct` `any`
+- `f1` `function|nil`
+- `f2` `function|nil`
+- `minct` `int`
+- `maxct` `int`
+
+## Returns
+
+- `function` - Target function for a basic Synchro Summon procedure.
 
 ## Source
 

@@ -3,21 +3,25 @@
 ## Signature
 
 ```lua
-Auxiliary.Xyz2XMaterialEffectFilter(Card c, Card xyzc, any lv, function f, int tp, any checked) -> void
+Auxiliary.Xyz2XMaterialEffectFilter(Card c, Card xyzc, int lv, function|nil f, int tp, bool|nil checked) -> bool
 ```
 
 ## Description
 
-TODO document.
+Checks whether c has a valid EFFECT_DOUBLE_XMATERIAL effect for xyzc, optionally skipping the normal Xyz Material filter when checked is true.
 
 ## Parameters
 
 - `c` `Card`
 - `xyzc` `Card`
-- `lv` `any`
-- `f` `function`
+- `lv` `int`
+- `f` `function|nil`
 - `tp` `int`
-- `checked` `any`
+- `checked` `bool|nil`
+
+## Returns
+
+- `bool` - true if c has a valid EFFECT_DOUBLE_XMATERIAL effect.
 
 ## Source
 

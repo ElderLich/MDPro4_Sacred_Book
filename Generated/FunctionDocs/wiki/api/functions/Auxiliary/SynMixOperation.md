@@ -3,22 +3,26 @@
 ## Signature
 
 ```lua
-Auxiliary.SynMixOperation(any f1, any f2, any f3, any f4, any minct, any maxct, any gc) -> void
+Auxiliary.SynMixOperation(function|nil f1, function|nil f2, function|nil f3, function|nil f4, int minct, int maxct, function|nil gc) -> function
 ```
 
 ## Description
 
-TODO document.
+Returns the operation function for mixed Synchro Summon procedures; it sets materials, sends them to the Graveyard, and releases the kept group.
 
 ## Parameters
 
-- `f1` `any`
-- `f2` `any`
-- `f3` `any`
-- `f4` `any`
-- `minct` `any`
-- `maxct` `any`
-- `gc` `any`
+- `f1` `function|nil`
+- `f2` `function|nil`
+- `f3` `function|nil`
+- `f4` `function|nil`
+- `minct` `int`
+- `maxct` `int`
+- `gc` `function|nil`
+
+## Returns
+
+- `function` - Operation function for a mixed Synchro Summon procedure.
 
 ## Source
 

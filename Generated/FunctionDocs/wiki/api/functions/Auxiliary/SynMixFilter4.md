@@ -3,28 +3,32 @@
 ## Signature
 
 ```lua
-Auxiliary.SynMixFilter4(Card c, any f4, any minc, any maxc, Card syncard, any mg1, any smat, any c1, any c2, any c3, any gc, any mgchk, any goalchk) -> void
+Auxiliary.SynMixFilter4(Card c, function|nil f4, int minc, int maxc, Card syncard, Group mg1, Card|nil smat, Card c1, Card|nil c2, Card|nil c3, function|nil gc, bool mgchk, bool goalchk) -> bool
 ```
 
 ## Description
 
-TODO document.
+Variable-slot candidate filter for mixed Synchro procedures; after adding c it checks whether the remaining material pool can complete the summon.
 
 ## Parameters
 
 - `c` `Card`
-- `f4` `any`
-- `minc` `any`
-- `maxc` `any`
+- `f4` `function|nil`
+- `minc` `int`
+- `maxc` `int`
 - `syncard` `Card`
-- `mg1` `any`
-- `smat` `any`
-- `c1` `any`
-- `c2` `any`
-- `c3` `any`
-- `gc` `any`
-- `mgchk` `any`
-- `goalchk` `any`
+- `mg1` `Group`
+- `smat` `Card|nil`
+- `c1` `Card`
+- `c2` `Card|nil`
+- `c3` `Card|nil`
+- `gc` `function|nil`
+- `mgchk` `bool`
+- `goalchk` `bool`
+
+## Returns
+
+- `bool` - true if c can fill the variable material slot.
 
 ## Source
 

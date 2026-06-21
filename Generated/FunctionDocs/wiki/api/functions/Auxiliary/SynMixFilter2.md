@@ -3,28 +3,32 @@
 ## Signature
 
 ```lua
-Auxiliary.SynMixFilter2(Card c, any f2, any f3, any f4, any minc, any maxc, Card syncard, Group mg, any smat, any c1, any gc, any mgchk, any goalchk) -> void
+Auxiliary.SynMixFilter2(Card c, function|nil f2, function|nil f3, function|nil f4, int minc, int maxc, Card syncard, Group mg, Card|nil smat, Card c1, function|nil gc, bool mgchk, bool goalchk) -> bool
 ```
 
 ## Description
 
-TODO document.
+Second fixed-material candidate filter for mixed Synchro procedures, or the transition into the variable material slot when no second filter is required.
 
 ## Parameters
 
 - `c` `Card`
-- `f2` `any`
-- `f3` `any`
-- `f4` `any`
-- `minc` `any`
-- `maxc` `any`
+- `f2` `function|nil`
+- `f3` `function|nil`
+- `f4` `function|nil`
+- `minc` `int`
+- `maxc` `int`
 - `syncard` `Card`
 - `mg` `Group`
-- `smat` `any`
-- `c1` `any`
-- `gc` `any`
-- `mgchk` `any`
-- `goalchk` `any`
+- `smat` `Card|nil`
+- `c1` `Card`
+- `gc` `function|nil`
+- `mgchk` `bool`
+- `goalchk` `bool`
+
+## Returns
+
+- `bool` - true if c can fill the second fixed material slot or advance selection.
 
 ## Source
 

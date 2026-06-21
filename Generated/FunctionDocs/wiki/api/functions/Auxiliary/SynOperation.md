@@ -3,19 +3,23 @@
 ## Signature
 
 ```lua
-Auxiliary.SynOperation(any f1, any f2, any minct, any maxct) -> void
+Auxiliary.SynOperation(function|nil f1, function|nil f2, int minct, int maxct) -> function
 ```
 
 ## Description
 
-TODO document.
+Returns the operation function for basic Synchro Summon procedures; it sets materials, sends them to the Graveyard, and releases the kept group.
 
 ## Parameters
 
-- `f1` `any`
-- `f2` `any`
-- `minct` `any`
-- `maxct` `any`
+- `f1` `function|nil`
+- `f2` `function|nil`
+- `minct` `int`
+- `maxct` `int`
+
+## Returns
+
+- `function` - Operation function for a basic Synchro Summon procedure.
 
 ## Source
 

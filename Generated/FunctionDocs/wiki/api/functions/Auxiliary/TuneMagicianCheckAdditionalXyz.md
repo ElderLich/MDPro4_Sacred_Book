@@ -3,16 +3,20 @@
 ## Signature
 
 ```lua
-Auxiliary.TuneMagicianCheckAdditionalXyz(Group g) -> void
+Auxiliary.TuneMagicianCheckAdditionalXyz(Group g) -> bool
 ```
 
 ## Description
 
-TODO document.
+Additional Xyz material group check that rejects invalid EFFECT_TUNE_MAGICIAN_X pairs.
 
 ## Parameters
 
 - `g` `Group`
+
+## Returns
+
+- `bool` - true if g has no invalid EFFECT_TUNE_MAGICIAN_X pair.
 
 ## Source
 

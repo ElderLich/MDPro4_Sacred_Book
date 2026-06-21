@@ -3,22 +3,26 @@
 ## Signature
 
 ```lua
-Auxiliary.XyzCondition(function f, any lv, any minct, any maxct, any alterf, any alterdesc, any alterop) -> void
+Auxiliary.XyzCondition(function|nil f, int lv, int minct, int maxct, function|nil alterf, int|string|nil alterdesc, function|nil alterop) -> function
 ```
 
 ## Description
 
-TODO document.
+Returns the condition function for standard Xyz Summon procedures, including optional alternate one-card Xyz Summon and EFFECT_DOUBLE_XMATERIAL handling.
 
 ## Parameters
 
-- `f` `function`
-- `lv` `any`
-- `minct` `any`
-- `maxct` `any`
-- `alterf` `any`
-- `alterdesc` `any`
-- `alterop` `any`
+- `f` `function|nil`
+- `lv` `int`
+- `minct` `int`
+- `maxct` `int`
+- `alterf` `function|nil`
+- `alterdesc` `int|string|nil`
+- `alterop` `function|nil`
+
+## Returns
+
+- `function` - Condition function for a standard Xyz Summon procedure.
 
 ## Source
 

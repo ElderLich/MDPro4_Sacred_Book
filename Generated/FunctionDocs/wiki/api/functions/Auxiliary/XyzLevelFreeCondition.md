@@ -3,22 +3,26 @@
 ## Signature
 
 ```lua
-Auxiliary.XyzLevelFreeCondition(function f, any gf, any minct, any maxct, any alterf, any alterdesc, any alterop) -> void
+Auxiliary.XyzLevelFreeCondition(function|nil f, function|nil gf, int minct, int maxct, function|nil alterf, int|string|nil alterdesc, function|nil alterop) -> function
 ```
 
 ## Description
 
-TODO document.
+Returns the condition function for Level-free Xyz Summon procedures with optional group filter and alternate one-card Xyz Summon support.
 
 ## Parameters
 
-- `f` `function`
-- `gf` `any`
-- `minct` `any`
-- `maxct` `any`
-- `alterf` `any`
-- `alterdesc` `any`
-- `alterop` `any`
+- `f` `function|nil`
+- `gf` `function|nil`
+- `minct` `int`
+- `maxct` `int`
+- `alterf` `function|nil`
+- `alterdesc` `int|string|nil`
+- `alterop` `function|nil`
+
+## Returns
+
+- `function` - Condition function for a Level-free Xyz Summon procedure.
 
 ## Source
 

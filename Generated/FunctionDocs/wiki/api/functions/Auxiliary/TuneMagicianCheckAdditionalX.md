@@ -3,16 +3,20 @@
 ## Signature
 
 ```lua
-Auxiliary.TuneMagicianCheckAdditionalX(Effect ecode) -> void
+Auxiliary.TuneMagicianCheckAdditionalX(int ecode) -> function
 ```
 
 ## Description
 
-TODO document.
+Deprecated factory that returns a group check rejecting groups with an invalid EFFECT_TUNE_MAGICIAN_* pair for ecode.
 
 ## Parameters
 
-- `ecode` `Effect`
+- `ecode` `int`
+
+## Returns
+
+- `function` - Group check that rejects invalid EFFECT_TUNE_MAGICIAN_* pairs.
 
 ## Source
 
