@@ -35,5 +35,7 @@ The production site is written to `docs/.vitepress/dist`.
 ## GitHub Pages
 
 The workflow in `.github/workflows/deploy.yml` builds and deploys the site with
-GitHub Actions. In the GitHub repository settings, set Pages to use
-`GitHub Actions` as the source.
+GitHub Actions. It asks GitHub to enable Pages automatically during deployment.
+
+If GitHub blocks automatic enablement, open the repository settings and set
+Pages to use `GitHub Actions` as the source, then rerun the workflow.
