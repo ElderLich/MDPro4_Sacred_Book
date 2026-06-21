@@ -21,3 +21,28 @@ Returns the class before the c position changes
 ## Source
 
 - `D:\Programs\GitHub\ygopro-core\libcard.cpp:3449`
+
+## Used By
+
+Generated from the local `Scripts/` folder and `cards.cdb`.
+
+- Detected in **1** indexed script(s).
+- Search this function in the [Script Explorer](/tools/script-explorer) with `Card.GetPreviousRankOnField`.
+
+| Card | ID | Script | Detected Calls |
+| --- | ---: | --- | ---: |
+| Seven Stars Slash - Army Annihilator Hagun | `65114115` | [Scripts/c65114115.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c65114115.lua) | 57 |
+
+## Script Examples
+
+### Seven Stars Slash - Army Annihilator Hagun (`65114115`)
+
+Source: [Scripts/c65114115.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c65114115.lua)
+
+```lua
+end
+function s.thcfilter(c,tp)
+	return (c:GetPreviousLevelOnField()>=8 or c:GetPreviousRankOnField()>=8) and c:IsPreviousControler(1-tp)
+end
+function s.thcon2(e,tp,eg,ep,ev,re,r,rp)
+```

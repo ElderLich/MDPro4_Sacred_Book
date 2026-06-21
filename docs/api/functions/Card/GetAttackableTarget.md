@@ -22,3 +22,55 @@ Returns the attackable card set and whether it can attack directly
 ## Source
 
 - `D:\Programs\GitHub\ygopro-core\libcard.cpp:3654`
+
+## Used By
+
+Generated from the local `Scripts/` folder and `cards.cdb`.
+
+- Detected in **4** indexed script(s).
+- Search this function in the [Script Explorer](/tools/script-explorer) with `Card.GetAttackableTarget`.
+
+| Card | ID | Script | Detected Calls |
+| --- | ---: | --- | ---: |
+| Apple Magician Girl | `56132807` | [Scripts/c56132807.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c56132807.lua) | 48 |
+| Chocolate Magician Girl | `7198399` | [Scripts/c7198399.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c7198399.lua) | 45 |
+| Mutant Mindmaster | `11508758` | [Scripts/c11508758.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c11508758.lua) | 32 |
+| Ultimate Tyranno | `15894048` | [Scripts/c15894048.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c15894048.lua) | 17 |
+
+## Script Examples
+
+### Apple Magician Girl (`56132807`)
+
+Source: [Scripts/c56132807.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c56132807.lua)
+
+```lua
+	if tc and Duel.SpecialSummon(tc,0,tp,tp,false,false,POS_FACEUP)~=0 then
+		local a=Duel.GetAttacker()
+		local ag=a:GetAttackableTarget()
+		if a:IsAttackable() and not a:IsImmuneToEffect(e) and ag:IsContains(tc) then
+			Duel.BreakEffect()
+```
+
+### Chocolate Magician Girl (`7198399`)
+
+Source: [Scripts/c7198399.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c7198399.lua)
+
+```lua
+	if tc:IsRelateToEffect(e) and Duel.SpecialSummon(tc,0,tp,tp,false,false,POS_FACEUP)>0 then
+		local a=Duel.GetAttacker()
+		local ag=a:GetAttackableTarget()
+		if a:IsAttackable() and not a:IsImmuneToEffect(e) and ag:IsContains(tc) then
+			Duel.BreakEffect()
+```
+
+### Mutant Mindmaster (`11508758`)
+
+Source: [Scripts/c11508758.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c11508758.lua)
+
+```lua
+			tc:RegisterEffect(e1)
+			if tc:IsAttackable() and not tc:IsImmuneToEffect(e) then
+				local ats=tc:GetAttackableTarget()
+				if #ats==0 then return end
+				Duel.Hint(HINT_SELECTMSG,tp,aux.Stringid(11508758,1))
+```

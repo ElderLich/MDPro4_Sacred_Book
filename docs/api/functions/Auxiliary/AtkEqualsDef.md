@@ -17,3 +17,62 @@ Returns true for a non-Link Monster whose ATK equals DEF, using current values o
 ## Source
 
 - `Utilities/utility.lua:1115`
+
+## Used By
+
+Generated from the local `Scripts/` folder and `cards.cdb`.
+
+- Detected in **11** indexed script(s).
+- Search this function in the [Script Explorer](/tools/script-explorer) with `Auxiliary.AtkEqualsDef`.
+
+| Card | ID | Script | Detected Calls |
+| --- | ---: | --- | ---: |
+| Despian Luluwalilith | `53971455` | [Scripts/c53971455.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c53971455.lua) | 48 |
+| The Three Champions of Swordsoul | `74405783` | [Scripts/c74405783.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c74405783.lua) | 48 |
+| Gizmek Inaba, the Hopping Hare of Hakuto | `50901852` | [Scripts/c50901852.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c50901852.lua) | 47 |
+| Sacred Scrolls of the Gizmek Legend | `24793135` | [Scripts/c24793135.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c24793135.lua) | 43 |
+| Checkker | `77435268` | [Scripts/c77435268.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c77435268.lua) | 42 |
+| Gizmek Arakami, the Hailbringer Hog | `59789370` | [Scripts/c59789370.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c59789370.lua) | 40 |
+| The Golden Swordsoul | `82489470` | [Scripts/c82489470.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c82489470.lua) | 40 |
+| Gizmek Uka, the Festive Fox of Fecundity | `90361289` | [Scripts/c90361289.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c90361289.lua) | 38 |
+| Gizmek Taniguku, the Immobile Intellect | `23384666` | [Scripts/c23384666.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c23384666.lua) | 37 |
+| Gizmek Naganaki, the Sunrise Signaler | `96399967` | [Scripts/c96399967.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c96399967.lua) | 35 |
+| Gizmek Makami, the Ferocious Fanged Fortress | `46809548` | [Scripts/c46809548.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c46809548.lua) | 33 |
+
+## Script Examples
+
+### Despian Luluwalilith (`53971455`)
+
+Source: [Scripts/c53971455.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c53971455.lua)
+
+```lua
+end
+function c53971455.spfilter(c,e,tp)
+	return c:IsAttribute(ATTRIBUTE_LIGHT) and c:IsRace(RACE_SPELLCASTER) and aux.AtkEqualsDef(c) and c:IsCanBeSpecialSummoned(e,0,tp,false,false)
+end
+function c53971455.sptg(e,tp,eg,ep,ev,re,r,rp,chk)
+```
+
+### The Three Champions of Swordsoul (`74405783`)
+
+Source: [Scripts/c74405783.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c74405783.lua)
+
+```lua
+end
+function s.thfilter(c)
+	return aux.AtkEqualsDef(c) and c:IsRace(RACE_SPELLCASTER)
+		and c:IsLevel(4,8) and c:IsAbleToHand()
+end
+```
+
+### Gizmek Inaba, the Hopping Hare of Hakuto (`50901852`)
+
+Source: [Scripts/c50901852.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c50901852.lua)
+
+```lua
+end
+function c50901852.spfilter(c,e,tp)
+	return aux.AtkEqualsDef(c) and c:IsRace(RACE_MACHINE)
+		and c:IsCanBeSpecialSummoned(e,0,tp,false,false,POS_FACEUP_DEFENSE)
+end
+```

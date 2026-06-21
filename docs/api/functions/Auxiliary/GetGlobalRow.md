@@ -23,3 +23,11 @@ Returns the row index for location and sequence from player 0's viewpoint. For p
 ## Source
 
 - `Utilities/utility.lua:621`
+
+## Used By
+
+Generated from the local `Scripts/` folder and `cards.cdb`.
+
+No indexed local card script currently calls this function.
+
+This can mean the function is unused in the current script set, is only called through an alias, or is available for future/manual scripts.

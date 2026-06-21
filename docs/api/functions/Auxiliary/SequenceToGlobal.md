@@ -23,3 +23,57 @@ Converts a player's local Monster Zone or Spell & Trap Zone sequence into a glob
 ## Source
 
 - `Utilities/utility.lua:1487`
+
+## Used By
+
+Generated from the local `Scripts/` folder and `cards.cdb`.
+
+- Detected in **6** indexed script(s).
+- Search this function in the [Script Explorer](/tools/script-explorer) with `Auxiliary.SequenceToGlobal`.
+
+| Card | ID | Script | Detected Calls |
+| --- | ---: | --- | ---: |
+| Ninjitsu Art of Shadow Sealing | `13629812` | [Scripts/c13629812.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c13629812.lua) | 42 |
+| Ghostrick Socuteboss | `32224143` | [Scripts/c32224143.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c32224143.lua) | 40 |
+| Rage of Kairyu-Shin | `82685480` | [Scripts/c82685480.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c82685480.lua) | 37 |
+| Dimensionhole | `22959079` | [Scripts/c22959079.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c22959079.lua) | 32 |
+| Magical Musket - Crooked Crown | `47810543` | [Scripts/c47810543.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c47810543.lua) | 30 |
+| Prometeor, the Burning Star | `75713017` | [Scripts/c75713017.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c75713017.lua) | 25 |
+
+## Script Examples
+
+### Ninjitsu Art of Shadow Sealing (`13629812`)
+
+Source: [Scripts/c13629812.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c13629812.lua)
+
+```lua
+	local c=e:GetHandler()
+	local tc=Duel.GetFirstTarget()
+	local val=aux.SequenceToGlobal(tc:GetControler(),LOCATION_MZONE,tc:GetSequence())
+	if tc:IsRelateToEffect(e) and Duel.Remove(tc,0,REASON_EFFECT+REASON_TEMPORARY)~=0 and tc:IsLocation(LOCATION_REMOVED) then
+		c:SetCardTarget(tc)
+```
+
+### Ghostrick Socuteboss (`32224143`)
+
+Source: [Scripts/c32224143.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c32224143.lua)
+
+```lua
+function c32224143.operation(e,tp,eg,ep,ev,re,r,rp)
+	local tc=Duel.GetFirstTarget()
+	local val=aux.SequenceToGlobal(tc:GetControler(),LOCATION_MZONE,tc:GetSequence())
+	if tc:IsRelateToEffect(e) and tc:IsFaceup() and Duel.Destroy(tc,REASON_EFFECT)~=0 then
+		local e1=Effect.CreateEffect(e:GetHandler())
+```
+
+### Rage of Kairyu-Shin (`82685480`)
+
+Source: [Scripts/c82685480.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c82685480.lua)
+
+```lua
+	local tc=og:GetFirst()
+	while tc do
+		val=val|aux.SequenceToGlobal(tc:GetPreviousControler(),LOCATION_MZONE,tc:GetPreviousSequence())
+		tc=og:GetNext()
+	end
+```

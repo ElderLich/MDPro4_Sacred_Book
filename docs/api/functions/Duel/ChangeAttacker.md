@@ -19,3 +19,28 @@ Note: This function will make the original attack monster attack
 ## Source
 
 - `D:\Programs\GitHub\ygopro-core\libduel.cpp:4919`
+
+## Used By
+
+Generated from the local `Scripts/` folder and `cards.cdb`.
+
+- Detected in **1** indexed script(s).
+- Search this function in the [Script Explorer](/tools/script-explorer) with `Duel.ChangeAttacker`.
+
+| Card | ID | Script | Detected Calls |
+| --- | ---: | --- | ---: |
+| Dark Spirit of the Silent | `93599951` | [Scripts/c93599951.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c93599951.lua) | 23 |
+
+## Script Examples
+
+### Dark Spirit of the Silent (`93599951`)
+
+Source: [Scripts/c93599951.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c93599951.lua)
+
+```lua
+			Duel.ChangePosition(tc,POS_FACEUP_ATTACK)
+		end
+		Duel.ChangeAttacker(tc)
+	end
+end
+```

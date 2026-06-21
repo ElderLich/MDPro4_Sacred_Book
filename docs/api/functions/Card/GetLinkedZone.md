@@ -22,3 +22,76 @@ Return the \[from player's perspective on the field\] Link Zones of card c
 ## Source
 
 - `D:\Programs\GitHub\ygopro-core\libcard.cpp:3421`
+
+## Used By
+
+Generated from the local `Scripts/` folder and `cards.cdb`.
+
+- Detected in **60** indexed script(s).
+- Search this function in the [Script Explorer](/tools/script-explorer) with `Card.GetLinkedZone`.
+
+| Card | ID | Script | Detected Calls |
+| --- | ---: | --- | ---: |
+| [Bujinki Ahashima](/examples/cards/71095768) | `71095768` | [Scripts/c71095768.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c71095768.lua) | 62 |
+| Duel Link Dragon, the Duel Dragon | `60025883` | [Scripts/c60025883.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c60025883.lua) | 59 |
+| Cyberse Contract Witch | `37458564` | [Scripts/c37458564.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c37458564.lua) | 55 |
+| Overburst Dragon | `15627227` | [Scripts/c15627227.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c15627227.lua) | 53 |
+| Cyberse Witch | `11674673` | [Scripts/c11674673.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c11674673.lua) | 53 |
+| Salamangreat Sunlight Wolf | `87871125` | [Scripts/c87871125.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c87871125.lua) | 52 |
+| Cynet Circuit | `82886276` | [Scripts/c82886276.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c82886276.lua) | 52 |
+| S-Force Justify | `35334193` | [Scripts/c35334193.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c35334193.lua) | 51 |
+| Allied Code Talker @Ignister | `39138610` | [Scripts/c39138610.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c39138610.lua) | 50 |
+| Borreload Dragon | `31833038` | [Scripts/c31833038.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c31833038.lua) | 50 |
+| Qliphort Genius | `22423493` | [Scripts/c22423493.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c22423493.lua) | 49 |
+| Battle Shogun of the Six Samurai | `74752631` | [Scripts/c74752631.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c74752631.lua) | 48 |
+| Transcendosaurus Exaraptor | `56818742` | [Scripts/c56818742.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c56818742.lua) | 48 |
+| Appliancer Test | `66380357` | [Scripts/c66380357.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c66380357.lua) | 48 |
+| Xtra HERO Wonder Driver | `1948619` | [Scripts/c1948619.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c1948619.lua) | 47 |
+| Flash Charge Dragon | `95372220` | [Scripts/c95372220.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c95372220.lua) | 47 |
+| Bloom Harmonist the Melodious Composer | `34974462` | [Scripts/c34974462.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c34974462.lua) | 46 |
+| Tindangle Base Gardna | `94365540` | [Scripts/c94365540.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c94365540.lua) | 46 |
+| Parallel Panzer | `93394164` | [Scripts/c93394164.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c93394164.lua) | 46 |
+| Subterror Behemoth Fiendess | `74937659` | [Scripts/c74937659.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c74937659.lua) | 45 |
+| Borreload Liberator Dragon | `27096833` | [Scripts/c27096833.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c27096833.lua) | 44 |
+| Dark Templar @Ignister | `97383507` | [Scripts/c97383507.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c97383507.lua) | 44 |
+| Summon Sorceress | `61665245` | [Scripts/c61665245.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c61665245.lua) | 43 |
+| Brotherhood of the Fire Fist - Peacock | `20265095` | [Scripts/c20265095.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c20265095.lua) | 43 |
+| ...and 36 more |  |  |  |
+
+## Script Examples
+
+### Bujinki Ahashima (`71095768`)
+
+Source: [Scripts/c71095768.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c71095768.lua)
+
+```lua
+		and c71095768[1]==LOCATION_MZONE and re:IsActiveType(TYPE_XYZ)) then return false end
+	local c=e:GetHandler()
+	local zone=(c:GetLinkedZone(0) & 0x7f) | ((c:GetLinkedZone(1) & 0x7f)<<0x10)
+	local seq=c71095768[2]
+	return seq and bit.extract(zone,seq)~=0
+```
+
+### Duel Link Dragon, the Duel Dragon (`60025883`)
+
+Source: [Scripts/c60025883.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c60025883.lua)
+
+```lua
+end
+function c60025883.sptg(e,tp,eg,ep,ev,re,r,rp,chk)
+	local zone=bit.band(e:GetHandler():GetLinkedZone(tp),0x1f)
+	if chk==0 then return Duel.GetLocationCount(tp,LOCATION_MZONE,tp,LOCATION_REASON_TOFIELD,zone)>0 and zone~=0 end
+	Duel.SetOperationInfo(0,CATEGORY_SPECIAL_SUMMON,nil,1,0,0)
+```
+
+### Cyberse Contract Witch (`37458564`)
+
+Source: [Scripts/c37458564.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c37458564.lua)
+
+```lua
+		return ec:GetLinkedGroup():IsContains(c)
+	else
+		return bit.extract(ec:GetLinkedZone(c:GetPreviousControler()),c:GetPreviousSequence())~=0
+	end
+end
+```

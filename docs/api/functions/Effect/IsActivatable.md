@@ -24,3 +24,54 @@ Check whether the effect can be launched by the player
 ## Source
 
 - `D:\Programs\GitHub\ygopro-core\libeffect.cpp:654`
+
+## Used By
+
+Generated from the local `Scripts/` folder and `cards.cdb`.
+
+- Detected in **3** indexed script(s).
+- Search this function in the [Script Explorer](/tools/script-explorer) with `Effect.IsActivatable`.
+
+| Card | ID | Script | Detected Calls |
+| --- | ---: | --- | ---: |
+| Favorite Hero | `11881272` | [Scripts/c11881272.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c11881272.lua) | 55 |
+| Bait Doll | `7165085` | [Scripts/c7165085.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c7165085.lua) | 45 |
+| Metaverse | `89208725` | [Scripts/c89208725.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c89208725.lua) | 33 |
+
+## Script Examples
+
+### Favorite Hero (`11881272`)
+
+Source: [Scripts/c11881272.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c11881272.lua)
+
+```lua
+end
+function c11881272.actfilter(c,tp)
+	return c:IsType(TYPE_FIELD) and c:GetActivateEffect():IsActivatable(tp,true,true)
+end
+function c11881272.acttg(e,tp,eg,ep,ev,re,r,rp,chk)
+```
+
+### Bait Doll (`7165085`)
+
+Source: [Scripts/c7165085.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c7165085.lua)
+
+```lua
+			local target=te:GetTarget()
+			local operation=te:GetOperation()
+			if te:GetCode()==EVENT_FREE_CHAIN and te:IsActivatable(tep)
+				and (not condition or condition(te,tep,eg,ep,ev,re,r,rp))
+				and (not cost or cost(te,tep,eg,ep,ev,re,r,rp,0))
+```
+
+### Metaverse (`89208725`)
+
+Source: [Scripts/c89208725.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c89208725.lua)
+
+```lua
+end
+function c89208725.filter(c,tp)
+	return c:IsType(TYPE_FIELD) and (c:IsAbleToHand() or c:GetActivateEffect():IsActivatable(tp,true,true))
+end
+function c89208725.target(e,tp,eg,ep,ev,re,r,rp,chk)
+```

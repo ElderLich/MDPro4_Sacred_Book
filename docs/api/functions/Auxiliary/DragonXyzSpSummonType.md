@@ -22,3 +22,55 @@ The `nolimit` parameter for Special Summon effects of Dragon, Xyz monsters where
 ## Source
 
 - `Utilities/utility.lua:1086`
+
+## Used By
+
+Generated from the local `Scripts/` folder and `cards.cdb`.
+
+- Detected in **4** indexed script(s).
+- Search this function in the [Script Explorer](/tools/script-explorer) with `Auxiliary.DragonXyzSpSummonType`.
+
+| Card | ID | Script | Detected Calls |
+| --- | ---: | --- | ---: |
+| Number 46: Dragluon | `2978414` | [Scripts/c2978414.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c2978414.lua) | 44 |
+| Queen Dragun Djinn | `90726340` | [Scripts/c90726340.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c90726340.lua) | 36 |
+| Galaxy Stealth Dragon | `54358015` | [Scripts/c54358015.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c54358015.lua) | 34 |
+| Hieratic Dragon King of Atum | `27337596` | [Scripts/c27337596.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c27337596.lua) | 33 |
+
+## Script Examples
+
+### Number 46: Dragluon (`2978414`)
+
+Source: [Scripts/c2978414.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c2978414.lua)
+
+```lua
+end
+function c2978414.spfilter(c,e,tp)
+	return c:IsRace(RACE_DRAGON) and c:IsCanBeSpecialSummoned(e,0,tp,false,aux.DragonXyzSpSummonType(c))
+end
+function c2978414.sptg(e,tp,eg,ep,ev,re,r,rp,chk)
+```
+
+### Queen Dragun Djinn (`90726340`)
+
+Source: [Scripts/c90726340.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c90726340.lua)
+
+```lua
+end
+function c90726340.spfilter(c,e,tp)
+	return c:IsLevelAbove(5) and c:IsRace(RACE_DRAGON) and c:IsCanBeSpecialSummoned(e,0,tp,false,aux.DragonXyzSpSummonType(c))
+end
+function c90726340.sptg(e,tp,eg,ep,ev,re,r,rp,chk,chkc)
+```
+
+### Galaxy Stealth Dragon (`54358015`)
+
+Source: [Scripts/c54358015.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c54358015.lua)
+
+```lua
+end
+function c54358015.spfilter(c,e,tp)
+	return c:IsRace(RACE_DRAGON) and c:IsCanBeSpecialSummoned(e,0,tp,false,aux.DragonXyzSpSummonType(c))
+end
+function c54358015.sptg(e,tp,eg,ep,ev,re,r,rp,chk)
+```

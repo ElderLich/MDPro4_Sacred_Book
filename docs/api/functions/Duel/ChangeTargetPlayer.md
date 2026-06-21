@@ -18,3 +18,27 @@ The chain chainc the object player into player
 ## Source
 
 - `D:\Programs\GitHub\ygopro-core\libduel.cpp:4925`
+
+## Used By
+
+Generated from the local `Scripts/` folder and `cards.cdb`.
+
+- Detected in **1** indexed script(s).
+- Search this function in the [Script Explorer](/tools/script-explorer) with `Duel.ChangeTargetPlayer`.
+
+| Card | ID | Script | Detected Calls |
+| --- | ---: | --- | ---: |
+| Mystical Refpanel | `35563539` | [Scripts/c35563539.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c35563539.lua) | 13 |
+
+## Script Examples
+
+### Mystical Refpanel (`35563539`)
+
+Source: [Scripts/c35563539.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c35563539.lua)
+
+```lua
+function c35563539.activate(e,tp,eg,ep,ev,re,r,rp)
+	local p=Duel.GetChainInfo(ev,CHAININFO_TARGET_PLAYER)
+	Duel.ChangeTargetPlayer(ev,1-p)
+end
+```

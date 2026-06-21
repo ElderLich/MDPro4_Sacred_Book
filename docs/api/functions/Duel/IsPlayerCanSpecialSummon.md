@@ -26,3 +26,76 @@ If optional parameters are required, they must all be used
 ## Source
 
 - `D:\Programs\GitHub\ygopro-core\libduel.cpp:5050`
+
+## Used By
+
+Generated from the local `Scripts/` folder and `cards.cdb`.
+
+- Detected in **27** indexed script(s).
+- Search this function in the [Script Explorer](/tools/script-explorer) with `Duel.IsPlayerCanSpecialSummon`.
+
+| Card | ID | Script | Detected Calls |
+| --- | ---: | --- | ---: |
+| [Yummy★Snatchy](/examples/cards/30581601) | `30581601` | [Scripts/c30581601.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c30581601.lua) | 61 |
+| Saiba the Soldier Swordsmith | `36608728` | [Scripts/c36608728.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c36608728.lua) | 57 |
+| Naturia Blessing | `34813545` | [Scripts/c34813545.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c34813545.lua) | 54 |
+| Masterking Archfiend | `35606858` | [Scripts/c35606858.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c35606858.lua) | 53 |
+| Stand Up Centur-Ion! | `41371602` | [Scripts/c41371602.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c41371602.lua) | 49 |
+| Super Koi Koi | `66171432` | [Scripts/c66171432.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c66171432.lua) | 48 |
+| Re-dyce-cle | `85704698` | [Scripts/c85704698.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c85704698.lua) | 48 |
+| The Kaiju Files | `11163040` | [Scripts/c11163040.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c11163040.lua) | 47 |
+| Interrupted Kaiju Slumber | `99330325` | [Scripts/c99330325.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c99330325.lua) | 47 |
+| Super Quantal Alphan Spike | `72332074` | [Scripts/c72332074.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c72332074.lua) | 46 |
+| Etude of the Branded | `45675980` | [Scripts/c45675980.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c45675980.lua) | 44 |
+| Crystal Boon | `85766789` | [Scripts/c85766789.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c85766789.lua) | 43 |
+| Transforming Sphere | `66094973` | [Scripts/c66094973.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c66094973.lua) | 41 |
+| Dark Magical Curtain | `41350417` | [Scripts/c41350417.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c41350417.lua) | 38 |
+| Mimikuril | `74879881` | [Scripts/c74879881.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c74879881.lua) | 37 |
+| Gunkan Suship Ikura | `61027400` | [Scripts/c61027400.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c61027400.lua) | 36 |
+| Yang Zing Unleashed | `77783947` | [Scripts/c77783947.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c77783947.lua) | 36 |
+| Monster Gate | `43040603` | [Scripts/c43040603.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c43040603.lua) | 34 |
+| Last Turn | `28566710` | [Scripts/c28566710.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c28566710.lua) | 32 |
+| Lullaby of Obedience | `39238953` | [Scripts/c39238953.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c39238953.lua) | 32 |
+| Cynet Storm | `42461852` | [Scripts/c42461852.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c42461852.lua) | 31 |
+| Illusion Balloons | `62161698` | [Scripts/c62161698.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c62161698.lua) | 31 |
+| One or Eight | `74202664` | [Scripts/c74202664.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c74202664.lua) | 30 |
+| Reasoning | `58577036` | [Scripts/c58577036.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c58577036.lua) | 30 |
+| ...and 3 more |  |  |  |
+
+## Script Examples
+
+### Yummy★Snatchy (`30581601`)
+
+Source: [Scripts/c30581601.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c30581601.lua)
+
+```lua
+function s.sctg(e,tp,eg,ep,ev,re,r,rp,chk)
+	if chk==0 then
+		if not Duel.IsPlayerCanSpecialSummon(tp) then return false end
+		local mg=Duel.GetSynchroMaterial(tp)
+		if mg:IsExists(Card.GetHandSynchro,1,nil) then
+```
+
+### Saiba the Soldier Swordsmith (`36608728`)
+
+Source: [Scripts/c36608728.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c36608728.lua)
+
+```lua
+function s.sctg(e,tp,eg,ep,ev,re,r,rp,chk)
+	if chk==0 then
+		if not Duel.IsPlayerCanSpecialSummon(tp) then return false end
+		local mg=Duel.GetSynchroMaterial(tp)
+		if mg:IsExists(Card.GetHandSynchro,1,nil) then
+```
+
+### Naturia Blessing (`34813545`)
+
+Source: [Scripts/c34813545.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c34813545.lua)
+
+```lua
+function c34813545.sctg(e,tp,eg,ep,ev,re,r,rp,chk)
+	if chk==0 then
+		if not Duel.IsPlayerCanSpecialSummon(tp) then return false end
+		local mg=Duel.GetSynchroMaterial(tp)
+		if mg:IsExists(Card.GetHandSynchro,1,nil) then
+```

@@ -23,3 +23,28 @@ Oath target for the shared Drytron cost; it prevents Special Summoning monsters 
 ## Source
 
 - `Utilities/utility.lua:1054`
+
+## Used By
+
+Generated from the local `Scripts/` folder and `cards.cdb`.
+
+- Detected in **1** indexed script(s).
+- Search this function in the [Script Explorer](/tools/script-explorer) with `Auxiliary.DrytronSpSummonLimit`.
+
+| Card | ID | Script | Detected Calls |
+| --- | ---: | --- | ---: |
+| Drytron Nova | `94187078` | [Scripts/c94187078.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c94187078.lua) | 37 |
+
+## Script Examples
+
+### Drytron Nova (`94187078`)
+
+Source: [Scripts/c94187078.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c94187078.lua)
+
+```lua
+	e1:SetProperty(EFFECT_FLAG_PLAYER_TARGET+EFFECT_FLAG_OATH)
+	e1:SetTargetRange(1,0)
+	e1:SetTarget(Auxiliary.DrytronSpSummonLimit)
+	e1:SetReset(RESET_PHASE+PHASE_END)
+	Duel.RegisterEffect(e1,tp)
+```

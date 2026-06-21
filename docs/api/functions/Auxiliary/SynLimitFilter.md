@@ -24,3 +24,11 @@ Returns true when limiter function f exists and rejects c for syncard.
 ## Source
 
 - `Utilities/procedure.lua:158`
+
+## Used By
+
+Generated from the local `Scripts/` folder and `cards.cdb`.
+
+No indexed local card script currently calls this function.
+
+This can mean the function is unused in the current script set, is only called through an alias, or is available for future/manual scripts.

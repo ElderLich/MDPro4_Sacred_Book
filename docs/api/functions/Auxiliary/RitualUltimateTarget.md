@@ -27,3 +27,41 @@ Returns the target function for configurable Ritual Summon effects. It checks Ri
 ## Source
 
 - `Utilities/procedure.lua:1845`
+
+## Used By
+
+Generated from the local `Scripts/` folder and `cards.cdb`.
+
+- Detected in **2** indexed script(s).
+- Search this function in the [Script Explorer](/tools/script-explorer) with `Auxiliary.RitualUltimateTarget`.
+
+| Card | ID | Script | Detected Calls |
+| --- | ---: | --- | ---: |
+| Stars Align Above the Shrine | `15306543` | [Scripts/c15306543.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c15306543.lua) | 42 |
+| Mitsurugi Magatama | `76725398` | [Scripts/c76725398.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c76725398.lua) | 38 |
+
+## Script Examples
+
+### Stars Align Above the Shrine (`15306543`)
+
+Source: [Scripts/c15306543.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c15306543.lua)
+
+```lua
+	e2:SetRange(LOCATION_FZONE)
+	e2:SetCountLimit(1)
+	e2:SetTarget(aux.RitualUltimateTarget(table.unpack(t)))
+	e2:SetOperation(aux.RitualUltimateOperation(table.unpack(t)))
+	c:RegisterEffect(e2)
+```
+
+### Mitsurugi Magatama (`76725398`)
+
+Source: [Scripts/c76725398.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c76725398.lua)
+
+```lua
+	local c1=not e:IsCostChecked() or Duel.CheckReleaseGroup(tp,s.cfilter,1,nil,tp)
+	local b1=c1 and Duel.IsExistingTarget(Card.IsFaceup,tp,0,LOCATION_ONFIELD,1,nil)
+	local b2=aux.RitualUltimateTarget(s.ritual_filter,Card.GetLevel,"Greater",LOCATION_HAND,nil,s.mfilter)(e,tp,eg,ep,ev,re,r,rp,0)
+	if chkc then
+		if e:GetLabel()~=1 then return false end
+```

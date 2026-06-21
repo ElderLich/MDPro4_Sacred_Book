@@ -9,11 +9,15 @@ This is the working todo for turning Sacred Book into a complete MDPro3 scriptin
 - [x] Generate API and constant pages from the Sacred Book data.
 - [x] Generate featured card example pages from `cards.cdb` and `Scripts/`.
 - [x] Add the Script Explorer for searching cards and function usage.
-- [ ] Add function usage examples directly to each API page.
+- [x] Add function usage and script examples directly to API pages.
+- [x] Add a generated translation review queue for awkward/imported function English.
+- [ ] Translate and review the highest-use imported function descriptions.
 
 ## Documentation Coverage
 
 - [ ] Give every function a clear summary, parameter notes, return notes, and at least one script-backed example where possible.
+- [ ] Review all `imported_from_dataeditorx` function English and replace awkward machine-style wording with natural MDPro3 terminology.
+- [ ] Check for any raw Chinese text that leaked into English fields after each generation.
 - [ ] Mark uncertain or inferred behavior clearly, with source confidence.
 - [ ] Add focused pages for common scripting patterns: targeting, costs, operation flow, once-per-turn handling, field zones, counters, and summon procedures.
 - [ ] Expand the beginner path with small complete card scripts that build up one concept at a time.
@@ -21,9 +25,10 @@ This is the working todo for turning Sacred Book into a complete MDPro3 scriptin
 
 ## Data And Tools
 
-- [ ] Add generated "used by" sections to function pages from `/data/function-usage.json`.
-- [ ] Add source script snippets around each detected function call.
+- [x] Add generated "used by" sections to function pages from `/data/function-usage.json`.
+- [x] Add source script snippets around detected function calls.
 - [ ] Add card text search and category filtering to the Script Explorer.
+- [ ] Sync reviewed `_functions` and `_function_english` exports into DataEditorX and commit that repo separately.
 - [ ] Review `DataEditorX/data/lua/constant*` against the generated constant docs and export updated editor-facing files.
 - [ ] Review `DataEditorX/data/mse` category and genre mappings against current scripts/locales.
 

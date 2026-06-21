@@ -22,3 +22,55 @@ Condition helper for effects that negate an activation and return the activating
 ## Source
 
 - `Utilities/utility.lua:1482`
+
+## Used By
+
+Generated from the local `Scripts/` folder and `cards.cdb`.
+
+- Detected in **4** indexed script(s).
+- Search this function in the [Script Explorer](/tools/script-explorer) with `Auxiliary.ndcon`.
+
+| Card | ID | Script | Detected Calls |
+| --- | ---: | --- | ---: |
+| Rebirth of Parshath | `42444868` | [Scripts/c42444868.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c42444868.lua) | 43 |
+| Nine Pillars of Yang Zing | `57831349` | [Scripts/c57831349.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c57831349.lua) | 29 |
+| Stall Turn | `86060749` | [Scripts/c86060749.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c86060749.lua) | 26 |
+| Cash Back | `59957503` | [Scripts/c59957503.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c59957503.lua) | 20 |
+
+## Script Examples
+
+### Rebirth of Parshath (`42444868`)
+
+Source: [Scripts/c42444868.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c42444868.lua)
+
+```lua
+end
+function c42444868.target(e,tp,eg,ep,ev,re,r,rp,chk)
+	if chk==0 then return aux.ndcon(tp,re) end
+	Duel.SetOperationInfo(0,CATEGORY_NEGATE,eg,1,0,0)
+	if re:GetHandler():IsRelateToEffect(re) then
+```
+
+### Nine Pillars of Yang Zing (`57831349`)
+
+Source: [Scripts/c57831349.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c57831349.lua)
+
+```lua
+end
+function c57831349.target(e,tp,eg,ep,ev,re,r,rp,chk)
+	if chk==0 then return aux.ndcon(tp,re) end
+	Duel.SetOperationInfo(0,CATEGORY_NEGATE,eg,1,0,0)
+	if re:GetHandler():IsRelateToEffect(re) then
+```
+
+### Stall Turn (`86060749`)
+
+Source: [Scripts/c86060749.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c86060749.lua)
+
+```lua
+function c86060749.target(e,tp,eg,ep,ev,re,r,rp,chk)
+	local rc=re:GetHandler()
+	if chk==0 then return aux.ndcon(tp,re) end
+	Duel.SetOperationInfo(0,CATEGORY_NEGATE,eg,1,0,0)
+	if rc:IsRelateToEffect(re) then
+```

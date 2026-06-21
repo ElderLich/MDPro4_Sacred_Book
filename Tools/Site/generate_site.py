@@ -7,6 +7,7 @@ import json
 import re
 import shutil
 import sqlite3
+from collections import Counter
 from dataclasses import dataclass
 from pathlib import Path
 
@@ -17,6 +18,10 @@ GENERATED_DIR = WORKSPACE / "Generated" / "FunctionDocs"
 SCRIPTS_DIR = WORKSPACE / "Scripts"
 CARDS_DB = WORKSPACE / "cards.cdb"
 EXAMPLE_LIMIT = 96
+USAGE_TABLE_LIMIT = 24
+USAGE_SNIPPET_LIMIT = 3
+USAGE_SNIPPET_CONTEXT = 2
+TRANSLATION_REVIEW_LIMIT = 160
 
 DOT_CALL_RE = re.compile(r"\b(aux|Auxiliary|Duel|Card|Effect|Group|Debug|bit)\.([A-Za-z_]\w*)")
 COLON_CALL_RE = re.compile(r"\b[A-Za-z_]\w*:([A-Za-z_]\w*)")
@@ -127,8 +132,14 @@ def extract_api_calls(script: str, api_names: set[str], method_names: dict[str, 
     return sorted(calls)
 
 
+def split_api_name(name: str) -> tuple[str, str]:
+    if "." in name:
+        return name.rsplit(".", 1)
+    return "Global", name
+
+
 def api_link(name: str) -> str:
-    namespace, short = name.rsplit(".", 1)
+    namespace, short = split_api_name(name)
     return f"/api/functions/{safe_filename(namespace)}/{safe_filename(short)}"
 
 
@@ -138,6 +149,273 @@ def markdown_table_escape(value: str) -> str:
 
 def code_block(text: str) -> str:
     return text.replace("```", "` ` `")
+
+
+def github_script_url(script_path: str) -> str:
+    return f"https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/{script_path}"
+
+
+def has_cjk(text: str) -> bool:
+    return bool(re.search(r"[\u3400-\u9fff]", text))
+
+
+def call_patterns(name: str) -> list[re.Pattern[str]]:
+    namespace, short = split_api_name(name)
+    escaped_short = re.escape(short)
+    escaped_name = re.escape(name)
+    patterns: list[str] = []
+
+    if namespace == "Auxiliary":
+        patterns.extend([
+            rf"\baux\s*\.\s*{escaped_short}\b",
+            rf"\bAuxiliary\s*\.\s*{escaped_short}\b",
+        ])
+    elif namespace in {"Card", "Effect", "Group"}:
+        patterns.extend([
+            rf":\s*{escaped_short}\b",
+            rf"\b{re.escape(namespace)}\s*\.\s*{escaped_short}\b",
+        ])
+    elif namespace == "Global":
+        patterns.append(rf"\b{escaped_short}\b")
+    else:
+        patterns.append(rf"\b{escaped_name}\b")
+
+    return [re.compile(pattern) for pattern in patterns]
+
+
+def extract_call_snippet(script: str, name: str) -> str:
+    patterns = call_patterns(name)
+    lines = script.splitlines()
+    for index, line in enumerate(lines):
+        if not any(pattern.search(line) for pattern in patterns):
+            continue
+        start = max(0, index - USAGE_SNIPPET_CONTEXT)
+        end = min(len(lines), index + USAGE_SNIPPET_CONTEXT + 1)
+        snippet = "\n".join(lines[start:end]).strip("\n")
+        if len(snippet) > 1800:
+            snippet = snippet[:1800].rstrip() + "\n-- ..."
+        return snippet
+    return ""
+
+
+def usage_by_function(examples: list[dict[str, object]]) -> dict[str, list[dict[str, object]]]:
+    usage: dict[str, list[dict[str, object]]] = {}
+    for item in examples:
+        for name in item["api_calls"]:
+            usage.setdefault(str(name), []).append(item)
+    return usage
+
+
+def sort_usage_items(
+    items: list[dict[str, object]],
+    featured_ids: set[int],
+) -> list[dict[str, object]]:
+    return sorted(
+        items,
+        key=lambda item: (
+            int(item["id"]) not in featured_ids,
+            -len(item["api_calls"]),
+            -int(item["desc_length"]),
+            str(item["name"]).casefold(),
+            int(item["id"]),
+        ),
+    )
+
+
+def api_page_path(name: str) -> Path:
+    namespace, short = split_api_name(name)
+    return DOCS_DIR / "api" / "functions" / safe_filename(namespace) / f"{safe_filename(short)}.md"
+
+
+def append_api_usage_sections(examples: list[dict[str, object]], featured_ids: set[int]) -> None:
+    api_payload = json.loads(read_text(GENERATED_DIR / "api_functions.generated.json"))
+    usage = usage_by_function(examples)
+
+    for doc in api_payload["functions"]:
+        name = str(doc["name"])
+        page = api_page_path(name)
+        if not page.exists():
+            continue
+
+        items = sort_usage_items(usage.get(name, []), featured_ids)
+        lines = [
+            "",
+            "## Used By",
+            "",
+            "Generated from the local `Scripts/` folder and `cards.cdb`.",
+            "",
+        ]
+
+        if not items:
+            lines.extend(
+                [
+                    "No indexed local card script currently calls this function.",
+                    "",
+                    "This can mean the function is unused in the current script set, is only called through an alias, or is available for future/manual scripts.",
+                ]
+            )
+        else:
+            lines.extend(
+                [
+                    f"- Detected in **{len(items)}** indexed script(s).",
+                    f"- Search this function in the [Script Explorer](/tools/script-explorer) with `{name}`.",
+                    "",
+                    "| Card | ID | Script | Detected Calls |",
+                    "| --- | ---: | --- | ---: |",
+                ]
+            )
+            for item in items[:USAGE_TABLE_LIMIT]:
+                card_id = int(item["id"])
+                card_name = markdown_table_escape(str(item["name"]))
+                card_label = (
+                    f"[{card_name}](/examples/cards/{card_id})"
+                    if card_id in featured_ids
+                    else card_name
+                )
+                script_path = str(item["script"])
+                lines.append(
+                    f"| {card_label} | `{card_id}` | [{markdown_table_escape(script_path)}]({github_script_url(script_path)}) | {len(item['api_calls'])} |"
+                )
+            if len(items) > USAGE_TABLE_LIMIT:
+                lines.append(f"| ...and {len(items) - USAGE_TABLE_LIMIT} more |  |  |  |")
+
+            snippet_entries: list[tuple[dict[str, object], str]] = []
+            for item in items:
+                snippet = extract_call_snippet(str(item["_script_text"]), name)
+                if snippet:
+                    snippet_entries.append((item, snippet))
+                if len(snippet_entries) >= USAGE_SNIPPET_LIMIT:
+                    break
+
+            lines.extend(["", "## Script Examples", ""])
+            if not snippet_entries:
+                lines.append("No direct snippet was generated for this function call pattern yet.")
+            else:
+                for item, snippet in snippet_entries:
+                    card_id = int(item["id"])
+                    script_path = str(item["script"])
+                    lines.extend(
+                        [
+                            f"### {item['name']} (`{card_id}`)",
+                            "",
+                            f"Source: [{script_path}]({github_script_url(script_path)})",
+                            "",
+                            "```lua",
+                            code_block(snippet),
+                            "```",
+                            "",
+                        ]
+                    )
+
+        page_text = read_text(page).rstrip()
+        marker = "\n## Used By\n"
+        if marker in page_text:
+            page_text = page_text.split(marker, 1)[0].rstrip()
+        write_text(page, page_text + "\n" + "\n".join(lines).rstrip())
+
+
+def first_sentence(lines: list[str], limit: int = 170) -> str:
+    text = " ".join(line.strip() for line in lines if line.strip())
+    text = text.replace("|", "\\|")
+    if len(text) <= limit:
+        return text
+    return text[: limit - 3].rstrip() + "..."
+
+
+def write_translation_review(examples: list[dict[str, object]]) -> None:
+    api_payload = json.loads(read_text(GENERATED_DIR / "api_functions.generated.json"))
+    docs = list(api_payload["functions"])
+    usage_counts = {name: len(items) for name, items in usage_by_function(examples).items()}
+    status_counts = Counter(str(doc.get("english_status", "missing")) for doc in docs)
+
+    cjk_docs = []
+    for doc in docs:
+        english_parts = list(doc.get("description_en", []))
+        english_parts.extend(str(param.get("description", "")) for param in doc.get("params", []))
+        english_parts.extend(str(ret.get("description", "")) for ret in doc.get("returns", []))
+        if has_cjk("\n".join(english_parts)):
+            cjk_docs.append(doc)
+
+    review_statuses = {
+        "imported_from_dataeditorx",
+        "existing_english",
+        "missing_translation",
+        "missing_documentation",
+    }
+    review_docs = [
+        doc
+        for doc in docs
+        if str(doc.get("english_status", "missing")) in review_statuses
+        or has_cjk("\n".join(doc.get("description_en", [])))
+    ]
+    review_docs.sort(
+        key=lambda doc: (
+            -usage_counts.get(str(doc["name"]), 0),
+            str(doc.get("english_status", "")),
+            str(doc["name"]).casefold(),
+        )
+    )
+
+    lines = [
+        "# Function Translation Review",
+        "",
+        "This queue tracks function pages whose English should be reviewed by hand. It is stricter than the generator backlog: imported English can be technically present but still read like a rough machine translation.",
+        "",
+        "## Summary",
+        "",
+        f"- Total functions: **{len(docs)}**",
+        f"- Functions used by current scripts: **{sum(1 for doc in docs if usage_counts.get(str(doc['name']), 0))}**",
+        f"- Functions with raw Chinese text in English fields: **{len(cjk_docs)}**",
+        f"- Functions queued for natural-English review: **{len(review_docs)}**",
+        "",
+        "## English Status Counts",
+        "",
+        "| Status | Count |",
+        "| --- | ---: |",
+    ]
+    for status, count in sorted(status_counts.items()):
+        lines.append(f"| `{status}` | {count} |")
+
+    lines.extend(
+        [
+            "",
+            "## Priority Review Queue",
+            "",
+            "Sorted by current script usage count so the most visible function pages are reviewed first.",
+            "",
+            "| Function | Status | Script Uses | Current English Preview |",
+            "| --- | --- | ---: | --- |",
+        ]
+    )
+    for doc in review_docs[:TRANSLATION_REVIEW_LIMIT]:
+        name = str(doc["name"])
+        lines.append(
+            f"| [`{name}`]({api_link(name)}) | `{doc.get('english_status', 'missing')}` | {usage_counts.get(name, 0)} | {markdown_table_escape(first_sentence(doc.get('description_en', [])))} |"
+        )
+    if len(review_docs) > TRANSLATION_REVIEW_LIMIT:
+        lines.append(f"| ...and {len(review_docs) - TRANSLATION_REVIEW_LIMIT} more |  |  |  |")
+
+    lines.extend(["", "## Raw Chinese In English Fields", ""])
+    if not cjk_docs:
+        lines.append("No raw Chinese text was detected in English fields during this generation.")
+    else:
+        lines.extend(["| Function | Status | Script Uses |", "| --- | --- | ---: |"])
+        for doc in cjk_docs:
+            name = str(doc["name"])
+            lines.append(
+                f"| [`{name}`]({api_link(name)}) | `{doc.get('english_status', 'missing')}` | {usage_counts.get(name, 0)} |"
+            )
+
+    lines.extend(
+        [
+            "",
+            "## DataEditorX Sync Rule",
+            "",
+            "Sync generated `_functions` and `_function_english` files to DataEditorX only after the reviewed text has been regenerated here. Sacred Book is the source of truth for the next pass.",
+        ]
+    )
+
+    write_text(DOCS_DIR / "tools" / "translation-review.md", "\n".join(lines))
 
 
 def sync_api_reference() -> None:
@@ -200,7 +478,7 @@ def scan_examples() -> tuple[list[dict[str, object]], list[dict[str, object]]]:
     return examples, featured
 
 
-def write_examples() -> list[dict[str, object]]:
+def write_examples() -> tuple[list[dict[str, object]], list[dict[str, object]]]:
     examples, featured = scan_examples()
     examples_dir = DOCS_DIR / "examples"
     cards_dir = examples_dir / "cards"
@@ -306,7 +584,7 @@ def write_examples() -> list[dict[str, object]]:
             f" | `{card_id}` | {len(item['api_calls'])} | `{item['script']}` |"
         )
     write_text(examples_dir / "index.md", "\n".join(index_lines))
-    return featured
+    return examples, featured
 
 
 def ts_string(value: object, limit: int | None = None) -> str:
@@ -388,6 +666,7 @@ def write_vitepress_config(featured: list[dict[str, object]]) -> None:
         "          text: 'Tools',",
         "          items: [",
         "            { text: 'Script Explorer', link: '/tools/script-explorer' },",
+        "            { text: 'Translation Review', link: '/tools/translation-review' },",
         "          ],",
         "        },",
         "      ],",
@@ -433,10 +712,14 @@ def write_vitepress_config(featured: list[dict[str, object]]) -> None:
 
 def main() -> int:
     sync_api_reference()
-    featured = write_examples()
+    examples, featured = write_examples()
+    featured_ids = {int(item["id"]) for item in featured}
+    append_api_usage_sections(examples, featured_ids)
+    write_translation_review(examples)
     write_vitepress_config(featured)
     print(f"Synced API reference into {DOCS_DIR / 'api'}")
     print(f"Generated {len(featured)} featured card example pages")
+    print("Added API usage sections and translation review queue")
     return 0
 
 

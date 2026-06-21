@@ -24,3 +24,11 @@ Condition for EVENT_TO_GRAVE triggers: true when the handler was previously on t
 ## Source
 
 - `Utilities/utility.lua:796`
+
+## Used By
+
+Generated from the local `Scripts/` folder and `cards.cdb`.
+
+No indexed local card script currently calls this function.
+
+This can mean the function is unused in the current script set, is only called through an alias, or is available for future/manual scripts.

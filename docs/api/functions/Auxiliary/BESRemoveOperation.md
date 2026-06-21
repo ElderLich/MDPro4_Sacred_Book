@@ -24,3 +24,11 @@ Resolves the shared B.E.S. maintenance effect by removing one 0x1f counter from 
 ## Source
 
 - `Utilities/utility.lua:1813`
+
+## Used By
+
+Generated from the local `Scripts/` folder and `cards.cdb`.
+
+No indexed local card script currently calls this function.
+
+This can mean the function is unused in the current script set, is only called through an alias, or is available for future/manual scripts.

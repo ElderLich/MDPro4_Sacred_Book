@@ -24,3 +24,11 @@ Xyz Material filter for double-material handling; c must be face-up or public, u
 ## Source
 
 - `Utilities/procedure.lua:529`
+
+## Used By
+
+Generated from the local `Scripts/` folder and `cards.cdb`.
+
+No indexed local card script currently calls this function.
+
+This can mean the function is unused in the current script set, is only called through an alias, or is available for future/manual scripts.

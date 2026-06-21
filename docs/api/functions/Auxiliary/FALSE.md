@@ -13,3 +13,76 @@ Returns false.
 ## Source
 
 - `Utilities/utility.lua:94`
+
+## Used By
+
+Generated from the local `Scripts/` folder and `cards.cdb`.
+
+- Detected in **122** indexed script(s).
+- Search this function in the [Script Explorer](/tools/script-explorer) with `Auxiliary.FALSE`.
+
+| Card | ID | Script | Detected Calls |
+| --- | ---: | --- | ---: |
+| [Eternal Favorite](/examples/cards/87532344) | `87532344` | [Scripts/c87532344.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c87532344.lua) | 73 |
+| [Ultra Polymerization](/examples/cards/76647978) | `76647978` | [Scripts/c76647978.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c76647978.lua) | 71 |
+| [Odd-Eyes Revolution Dragon](/examples/cards/16306932) | `16306932` | [Scripts/c16306932.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c16306932.lua) | 64 |
+| [Enlightenment Dragon](/examples/cards/46186135) | `46186135` | [Scripts/c46186135.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c46186135.lua) | 62 |
+| Super Duper Polymerization | `44886582` | [Scripts/c44886582.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c44886582.lua) | 59 |
+| Exosisters Magnifica | `59242457` | [Scripts/c59242457.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c59242457.lua) | 56 |
+| Chaos Emperor Dragon - Envoy of the End | `82301904` | [Scripts/c82301904.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c82301904.lua) | 53 |
+| Phara, the Goddess of the Beginning | `82344137` | [Scripts/c82344137.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c82344137.lua) | 52 |
+| Ma'at | `18631392` | [Scripts/c18631392.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c18631392.lua) | 51 |
+| Blackwing - Aurora the Northern Lights | `4068622` | [Scripts/c4068622.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c4068622.lua) | 50 |
+| King's Resonance | `17269895` | [Scripts/c17269895.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c17269895.lua) | 48 |
+| Royal Straight Slasher | `11020863` | [Scripts/c11020863.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c11020863.lua) | 46 |
+| Destiny HERO - Plasma | `83965310` | [Scripts/c83965310.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c83965310.lua) | 46 |
+| Myutant Fusion | `42577802` | [Scripts/c42577802.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c42577802.lua) | 46 |
+| Super Polymerization | `48130397` | [Scripts/c48130397.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c48130397.lua) | 46 |
+| Chaos End Ruler - Ruler of the Beginning and the End | `41424250` | [Scripts/c41424250.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c41424250.lua) | 45 |
+| Knight Armed Dragon, the Armored Knight Dragon | `98007437` | [Scripts/c98007437.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c98007437.lua) | 45 |
+| Uria, Lord of Searing Flames | `6007213` | [Scripts/c6007213.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c6007213.lua) | 45 |
+| The Winged Dragon of Ra - Immortal Phoenix | `10000090` | [Scripts/c10000090.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c10000090.lua) | 44 |
+| Raviel, Lord of Phantasms | `69890967` | [Scripts/c69890967.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c69890967.lua) | 44 |
+| Slifer the Sky Dragon | `10000020` | [Scripts/c10000020.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c10000020.lua) | 43 |
+| Malefic Truth Dragon | `37115575` | [Scripts/c37115575.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c37115575.lua) | 42 |
+| Uria, Lord of Searing Flames - Sacred Beast of Cataclysmic Fire | `23856331` | [Scripts/c23856331.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c23856331.lua) | 42 |
+| Xyz Encore | `78610936` | [Scripts/c78610936.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c78610936.lua) | 42 |
+| ...and 98 more |  |  |  |
+
+## Script Examples
+
+### Eternal Favorite (`87532344`)
+
+Source: [Scripts/c87532344.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c87532344.lua)
+
+```lua
+	e:SetLabel(1)
+	if Duel.GetCurrentChain()==0 then
+		Duel.SetChainLimitTillChainEnd(aux.FALSE)
+	elseif Duel.GetCurrentChain()==1 then
+		e:GetHandler():RegisterFlagEffect(id,RESET_EVENT+RESETS_STANDARD,0,1)
+```
+
+### Ultra Polymerization (`76647978`)
+
+Source: [Scripts/c76647978.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c76647978.lua)
+
+```lua
+	Duel.SetOperationInfo(0,CATEGORY_SPECIAL_SUMMON,nil,1,tp,LOCATION_EXTRA)
+	if e:IsHasType(EFFECT_TYPE_ACTIVATE) then
+		Duel.SetChainLimit(aux.FALSE)
+	end
+end
+```
+
+### Odd-Eyes Revolution Dragon (`16306932`)
+
+Source: [Scripts/c16306932.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c16306932.lua)
+
+```lua
+	e3:SetProperty(EFFECT_FLAG_CANNOT_DISABLE+EFFECT_FLAG_UNCOPYABLE)
+	e3:SetCode(EFFECT_SPSUMMON_CONDITION)
+	e3:SetValue(aux.FALSE)
+	c:RegisterEffect(e3)
+	--special summon rule
+```

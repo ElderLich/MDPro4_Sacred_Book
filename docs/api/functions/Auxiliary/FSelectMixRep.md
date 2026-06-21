@@ -28,3 +28,11 @@ Candidate test for mixed-repeat Fusion selection. It temporarily adds c to sg an
 ## Source
 
 - `Utilities/procedure.lua:1188`
+
+## Used By
+
+Generated from the local `Scripts/` folder and `cards.cdb`.
+
+No indexed local card script currently calls this function.
+
+This can mean the function is unused in the current script set, is only called through an alias, or is available for future/manual scripts.

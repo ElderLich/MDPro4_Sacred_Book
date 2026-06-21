@@ -24,3 +24,11 @@ Shared precheck for mixed-repeat Fusion Material goals. It rejects invalid Tune 
 ## Source
 
 - `Utilities/procedure.lua:1107`
+
+## Used By
+
+Generated from the local `Scripts/` folder and `cards.cdb`.
+
+No indexed local card script currently calls this function.
+
+This can mean the function is unused in the current script set, is only called through an alias, or is available for future/manual scripts.

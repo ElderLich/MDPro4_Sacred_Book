@@ -58,6 +58,7 @@ export default defineConfig({
           text: 'Tools',
           items: [
             { text: 'Script Explorer', link: '/tools/script-explorer' },
+            { text: 'Translation Review', link: '/tools/translation-review' },
           ],
         },
       ],

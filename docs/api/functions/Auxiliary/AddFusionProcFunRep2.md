@@ -23,3 +23,55 @@ Equivalent to aux.AddFusionProcMixRep(c, false, insf, f, minc, maxc)
 ## Source
 
 - `Utilities/procedure.lua:1296`
+
+## Used By
+
+Generated from the local `Scripts/` folder and `cards.cdb`.
+
+- Detected in **4** indexed script(s).
+- Search this function in the [Script Explorer](/tools/script-explorer) with `Auxiliary.AddFusionProcFunRep2`.
+
+| Card | ID | Script | Detected Calls |
+| --- | ---: | --- | ---: |
+| Worm Zero | `74506079` | [Scripts/c74506079.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c74506079.lua) | 43 |
+| Charmers of the Grand Circle | `48016074` | [Scripts/c48016074.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c48016074.lua) | 42 |
+| Chimeratech Rampage Dragon | `84058253` | [Scripts/c84058253.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c84058253.lua) | 36 |
+| Extox Hydra | `26050548` | [Scripts/c26050548.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c26050548.lua) | 34 |
+
+## Script Examples
+
+### Worm Zero (`74506079`)
+
+Source: [Scripts/c74506079.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c74506079.lua)
+
+```lua
+	--fusion material
+	c:EnableReviveLimit()
+	aux.AddFusionProcFunRep2(c,c74506079.ffilter,2,127,true)
+	--summon success
+	local e2=Effect.CreateEffect(c)
+```
+
+### Charmers of the Grand Circle (`48016074`)
+
+Source: [Scripts/c48016074.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c48016074.lua)
+
+```lua
+	--fusion material
+	c:EnableReviveLimit()
+	aux.AddFusionProcFunRep2(c,s.ffilter,2,127,true)
+	--summon success
+	local e1=Effect.CreateEffect(c)
+```
+
+### Chimeratech Rampage Dragon (`84058253`)
+
+Source: [Scripts/c84058253.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c84058253.lua)
+
+```lua
+	--fusion material
+	c:EnableReviveLimit()
+	aux.AddFusionProcFunRep2(c,aux.FilterBoolFunction(Card.IsFusionSetCard,0x1093),2,127,false)
+	--destroy
+	local e2=Effect.CreateEffect(c)
+```

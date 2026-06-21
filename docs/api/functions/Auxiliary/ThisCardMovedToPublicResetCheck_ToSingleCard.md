@@ -24,3 +24,11 @@ Reset check used by single-card merged delayed events. If the owner card is now 
 ## Source
 
 - `Utilities/utility.lua:1744`
+
+## Used By
+
+Generated from the local `Scripts/` folder and `cards.cdb`.
+
+No indexed local card script currently calls this function.
+
+This can mean the function is unused in the current script set, is only called through an alias, or is available for future/manual scripts.

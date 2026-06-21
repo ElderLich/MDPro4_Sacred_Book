@@ -21,3 +21,28 @@ Returns the local column for a Spell & Trap Zone sequence from the controller's 
 ## Source
 
 - `Utilities/utility.lua:722`
+
+## Used By
+
+Generated from the local `Scripts/` folder and `cards.cdb`.
+
+- Detected in **1** indexed script(s).
+- Search this function in the [Script Explorer](/tools/script-explorer) with `Auxiliary.SZoneSequence`.
+
+| Card | ID | Script | Detected Calls |
+| --- | ---: | --- | ---: |
+| Broken Line | `88086137` | [Scripts/c88086137.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c88086137.lua) | 19 |
+
+## Script Examples
+
+### Broken Line (`88086137`)
+
+Source: [Scripts/c88086137.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c88086137.lua)
+
+```lua
+	elseif loc&LOCATION_SZONE~=0 then
+		if seq>4 then return false end
+		col=aux.SZoneSequence(seq)
+	else
+		return false
+```
