@@ -1,6 +1,6 @@
 # Function Docs Refresh Report
 
-Generated: 2026-06-21T10:14:36+00:00
+Generated: 2026-06-21T10:24:40+00:00
 
 ## Outputs
 
@@ -46,9 +46,7 @@ Generated: 2026-06-21T10:14:36+00:00
 
 ## English Coverage
 
-- `existing_english`: 3
-- `imported_from_dataeditorx`: 523
-- `imported_from_old_utilities`: 168
+- `imported_from_dataeditorx`: 694
 - `missing_documentation`: 259
 - `translated_exact`: 45
 

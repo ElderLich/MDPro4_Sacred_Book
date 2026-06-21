@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-06-21T10:14:36+00:00",
+    "generated_at": "2026-06-21T10:24:40+00:00",
     "workspace": "D:\\Programs\\GitHub\\MDPro3_Sacred_Book",
     "dataeditorx_data": "D:\\Programs\\GitHub\\DataEditorX\\DataEditorX\\data",
     "mdpro3_locales": "D:\\Programs\\GitHub\\MDPro3_Data\\Data\\locales",
@@ -686,7 +686,7 @@
       "description_en": [
         "Check if ec is a valid Union Equip target for c. Checks for EFFECT_UNION_LIMIT and new/old Union effects."
       ],
-      "english_status": "imported_from_old_utilities",
+      "english_status": "imported_from_dataeditorx",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
@@ -1579,7 +1579,7 @@
       "description_en": [
         "Return the Attribute card c is treated as having in the Graveyard"
       ],
-      "english_status": "imported_from_old_utilities",
+      "english_status": "imported_from_dataeditorx",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
@@ -2039,7 +2039,7 @@
         "Return the group of cards in the same column as card c, excluding c, the last two parameters include all cards in the left columns and right columns from c",
         "For example, if c is in the middle zone, c:GetColumnGroup(2,2) is equivalent to retrieving all cards on the field except the Field Spell"
       ],
-      "english_status": "imported_from_old_utilities",
+      "english_status": "imported_from_dataeditorx",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
@@ -2095,7 +2095,7 @@
       "description_en": [
         "Usage is the same as above, but returns the number of cards"
       ],
-      "english_status": "imported_from_old_utilities",
+      "english_status": "imported_from_dataeditorx",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
@@ -2164,7 +2164,7 @@
       "description_en": [
         "Return the zones [from player's perspective] within the location range that are in the same column as card c [including left columns and right columns], location values are LOCATION_MZONE, LOCATION_SZONE, LOCATION_ONFIELD"
       ],
-      "english_status": "imported_from_old_utilities",
+      "english_status": "imported_from_dataeditorx",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
@@ -2302,7 +2302,7 @@
       "description_en": [
         "Return the current Pendulum Scale of card c. If in the Left Pendulum Zone, return the left scale; if in the Right Pendulum Zone or not in a Pendulum Zone, return the right scale"
       ],
-      "english_status": "imported_from_old_utilities",
+      "english_status": "imported_from_dataeditorx",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
@@ -2820,7 +2820,7 @@
       "description_en": [
         "Return the Attribute of card c when used as Fusion Material [for a Fusion Summon by player]"
       ],
-      "english_status": "imported_from_old_utilities",
+      "english_status": "imported_from_dataeditorx",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
@@ -2916,7 +2916,7 @@
       "description_en": [
         "Return the type of card c when used as Fusion Material (unlike GetType, for monster cards in the Spell/Trap Zone, it returns their original type)"
       ],
-      "english_status": "imported_from_old_utilities",
+      "english_status": "imported_from_dataeditorx",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
@@ -2972,7 +2972,7 @@
       "description_en": [
         "If card c is affected by the hand Synchro effect EFFECT_HAND_SYNCHRO, return Effect e, function target, int min, int max; otherwise return nil"
       ],
-      "english_status": "imported_from_old_utilities",
+      "english_status": "imported_from_dataeditorx",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
@@ -3148,7 +3148,7 @@
       "description_en": [
         "Return the Link Marker count of card c"
       ],
-      "english_status": "imported_from_old_utilities",
+      "english_status": "imported_from_dataeditorx",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
@@ -3198,7 +3198,7 @@
       "description_en": [
         "Return the Attribute of card c when used as Link Material [for a Link Summon by player]"
       ],
-      "english_status": "imported_from_old_utilities",
+      "english_status": "imported_from_dataeditorx",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
@@ -3250,7 +3250,7 @@
       "description_en": [
         "Return the card code(s) of card c when used as Link Material (including c's original card code)"
       ],
-      "english_status": "imported_from_old_utilities",
+      "english_status": "imported_from_dataeditorx",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
@@ -3294,7 +3294,7 @@
       "description_en": [
         "Return the group of cards in the zones linked to card c"
       ],
-      "english_status": "imported_from_old_utilities",
+      "english_status": "imported_from_dataeditorx",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
@@ -3338,7 +3338,7 @@
       "description_en": [
         "Return the number of monster cards in the zones linked to card c"
       ],
-      "english_status": "imported_from_old_utilities",
+      "english_status": "imported_from_dataeditorx",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
@@ -3388,7 +3388,7 @@
       "description_en": [
         "Return the [from player's perspective on the field] Link Zones of card c"
       ],
-      "english_status": "imported_from_old_utilities",
+      "english_status": "imported_from_dataeditorx",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
@@ -3438,7 +3438,7 @@
       "description_en": [
         "Return the Race of card c when used as Link Material [for a Link Summon by player]"
       ],
-      "english_status": "imported_from_old_utilities",
+      "english_status": "imported_from_dataeditorx",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
@@ -3482,7 +3482,7 @@
       "description_en": [
         "Return the type of card c when used as Link Material (unlike GetType, for monster cards in the Spell/Trap Zone, it returns their original type)"
       ],
-      "english_status": "imported_from_old_utilities",
+      "english_status": "imported_from_dataeditorx",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
@@ -3658,7 +3658,7 @@
       "description_en": [
         "Return the group of cards mutually linked with card c"
       ],
-      "english_status": "imported_from_old_utilities",
+      "english_status": "imported_from_dataeditorx",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
@@ -3702,7 +3702,7 @@
       "description_en": [
         "Return the number of cards in the group mutually linked with card c"
       ],
-      "english_status": "imported_from_old_utilities",
+      "english_status": "imported_from_dataeditorx",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
@@ -3752,7 +3752,7 @@
       "description_en": [
         "Return the [from player's perspective] zones where cards mutually linked with card c are located"
       ],
-      "english_status": "imported_from_old_utilities",
+      "english_status": "imported_from_dataeditorx",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
@@ -5177,7 +5177,7 @@
       "description_en": [
         "Return the Race card c is treated as having in the Graveyard"
       ],
-      "english_status": "imported_from_old_utilities",
+      "english_status": "imported_from_dataeditorx",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
@@ -5878,7 +5878,7 @@
       "description_en": [
         "Return the type of card c when used as Synchro Material (unlike GetType, for monster cards in the Spell/Trap Zone, it returns their original type)"
       ],
-      "english_status": "imported_from_old_utilities",
+      "english_status": "imported_from_dataeditorx",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
@@ -6074,7 +6074,7 @@
       "description_en": [
         "If card c is affected by the Tuner Material restriction effect EFFECT_TUNER_MATERIAL_LIMIT, return Effect e, function target, int value, int min, int max; otherwise return nil"
       ],
-      "english_status": "imported_from_old_utilities",
+      "english_status": "imported_from_dataeditorx",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
@@ -6298,7 +6298,7 @@
       "description_en": [
         "Return the type of card c when used as Xyz Material (unlike GetType, for monster cards in the Spell/Trap Zone, it returns their original type)"
       ],
-      "english_status": "imported_from_old_utilities",
+      "english_status": "imported_from_dataeditorx",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
@@ -6900,7 +6900,7 @@
       "description_en": [
         "Check if all zones in the same column as card c have cards"
       ],
-      "english_status": "imported_from_old_utilities",
+      "english_status": "imported_from_dataeditorx",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
@@ -7062,7 +7062,7 @@
       "description_en": [
         "Check if card c's ATK is atk1 [, or atk2...], returns false if c is not a monster card or not in LOCATION_MZONE"
       ],
-      "english_status": "imported_from_old_utilities",
+      "english_status": "imported_from_dataeditorx",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
@@ -7628,7 +7628,7 @@
       "description_en": [
         "Check if c can be used as Link Material [for Link Monster sc]; if sc is not specified, must pass nil"
       ],
-      "english_status": "imported_from_old_utilities",
+      "english_status": "imported_from_dataeditorx",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
@@ -7976,7 +7976,7 @@
       "description_en": [
         "Check if c can have its battle position changed by an effect"
       ],
-      "english_status": "imported_from_old_utilities",
+      "english_status": "imported_from_dataeditorx",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
@@ -8026,7 +8026,7 @@
       "description_en": [
         "Check if countertype counters can be placed on c"
       ],
-      "english_status": "imported_from_old_utilities",
+      "english_status": "imported_from_dataeditorx",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
@@ -8076,7 +8076,7 @@
       "description_en": [
         "Check if c can be used as Xyz Material"
       ],
-      "english_status": "imported_from_old_utilities",
+      "english_status": "imported_from_dataeditorx",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
@@ -8479,7 +8479,7 @@
       "description_en": [
         "Check if c's DEF is def1 [, or def2...]; returns false if c is not a monster card or not in LOCATION_MZONE"
       ],
-      "english_status": "imported_from_old_utilities",
+      "english_status": "imported_from_dataeditorx",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
@@ -8953,7 +8953,7 @@
       "description_en": [
         "Check if c is originally a Fusion, Synchro, Xyz, or Link Monster. This function only checks the type, regardless of the monster's current state"
       ],
-      "english_status": "imported_from_old_utilities",
+      "english_status": "imported_from_dataeditorx",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
@@ -8997,7 +8997,7 @@
       "description_en": [
         "Check if card c is in an Extra Link state"
       ],
-      "english_status": "imported_from_old_utilities",
+      "english_status": "imported_from_dataeditorx",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
@@ -9229,7 +9229,7 @@
       "description_en": [
         "Check if card c, when used as Fusion Material [for a Fusion Summon by player], has Attribute attribute"
       ],
-      "english_status": "imported_from_old_utilities",
+      "english_status": "imported_from_dataeditorx",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
@@ -9385,7 +9385,7 @@
       "description_en": [
         "Check if card c can be Fusion Summoned [using sum_type method]"
       ],
-      "english_status": "imported_from_old_utilities",
+      "english_status": "imported_from_dataeditorx",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
@@ -9435,7 +9435,7 @@
       "description_en": [
         "Check if card c, when used as Fusion Material, has type type (unlike IsType, for monster cards in the Spell/Trap Zone, it uses their original type for judgment)"
       ],
-      "english_status": "imported_from_old_utilities",
+      "english_status": "imported_from_dataeditorx",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
@@ -9747,7 +9747,7 @@
       "description_en": [
         "Check if card c is Level level1 [, or level2...]"
       ],
-      "english_status": "imported_from_old_utilities",
+      "english_status": "imported_from_dataeditorx",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
@@ -9909,7 +9909,7 @@
       "description_en": [
         "Check if card c's Link Marker count is link1 [, or link2...]"
       ],
-      "english_status": "imported_from_old_utilities",
+      "english_status": "imported_from_dataeditorx",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
@@ -9959,7 +9959,7 @@
       "description_en": [
         "Check if card c's Link Marker count is link or higher"
       ],
-      "english_status": "imported_from_old_utilities",
+      "english_status": "imported_from_dataeditorx",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
@@ -10015,7 +10015,7 @@
       "description_en": [
         "Check if card c, when used as Link Material [for a Link Summon by player], has Attribute attribute"
       ],
-      "english_status": "imported_from_old_utilities",
+      "english_status": "imported_from_dataeditorx",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
@@ -10065,7 +10065,7 @@
       "description_en": [
         "Check if card c's Link Marker count is link or lower (at least 1)"
       ],
-      "english_status": "imported_from_old_utilities",
+      "english_status": "imported_from_dataeditorx",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
@@ -10121,7 +10121,7 @@
       "description_en": [
         "Check if card c, when used as Link Material, can be treated as a card with code, additional parameters are other codes"
       ],
-      "english_status": "imported_from_old_utilities",
+      "english_status": "imported_from_dataeditorx",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
@@ -10180,7 +10180,7 @@
         "LINK_MARKER_TOP         =0x080 -- ↑",
         "LINK_MARKER_TOP_RIGHT   =0x100 -- ↗"
       ],
-      "english_status": "imported_from_old_utilities",
+      "english_status": "imported_from_dataeditorx",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
@@ -10236,7 +10236,7 @@
       "description_en": [
         "Check if card c, when used as Link Material [for a Link Summon by player], has Race race"
       ],
-      "english_status": "imported_from_old_utilities",
+      "english_status": "imported_from_dataeditorx",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
@@ -10286,7 +10286,7 @@
       "description_en": [
         "Check if card c, when used as Link Material, can be treated as a card with setname in its name"
       ],
-      "english_status": "imported_from_old_utilities",
+      "english_status": "imported_from_dataeditorx",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
@@ -10330,7 +10330,7 @@
       "description_en": [
         "Check if card c is in a linked state"
       ],
-      "english_status": "imported_from_old_utilities",
+      "english_status": "imported_from_dataeditorx",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
@@ -10394,7 +10394,7 @@
         "Check if card c can be Link Summoned using [min-max Link Materials] from cards on the field [or mg]",
         "If mg is nil, this function is equivalent to c:IsSpecialSummonable(SUMMON_TYPE_LINK)"
       ],
-      "english_status": "imported_from_old_utilities",
+      "english_status": "imported_from_dataeditorx",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
@@ -10444,7 +10444,7 @@
       "description_en": [
         "Check if card c, when used as Link Material, has type type (unlike IsType, for monster cards in the Spell/Trap Zone, it uses their original type for judgment)"
       ],
-      "english_status": "imported_from_old_utilities",
+      "english_status": "imported_from_dataeditorx",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
@@ -10766,7 +10766,7 @@
       "description_en": [
         "Check if card c is treated as code under the rules"
       ],
-      "english_status": "imported_from_old_utilities",
+      "english_status": "imported_from_dataeditorx",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
@@ -10866,7 +10866,7 @@
       "description_en": [
         "Check if card c is originally a card with setname in its name"
       ],
-      "english_status": "imported_from_old_utilities",
+      "english_status": "imported_from_dataeditorx",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
@@ -10966,7 +10966,7 @@
       "description_en": [
         "Check if card c's previous controller was player"
       ],
-      "english_status": "imported_from_old_utilities",
+      "english_status": "imported_from_dataeditorx",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
@@ -11272,7 +11272,7 @@
       "description_en": [
         "Check if card c is Rank rank1 [, or rank2...]"
       ],
-      "english_status": "imported_from_old_utilities",
+      "english_status": "imported_from_dataeditorx",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
@@ -12183,7 +12183,7 @@
       "description_en": [
         "Check if card c's Normal Summon or Special Summon location is loc"
       ],
-      "english_status": "imported_from_old_utilities",
+      "english_status": "imported_from_dataeditorx",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
@@ -12233,7 +12233,7 @@
       "description_en": [
         "Check if the player who Normal Summoned or Special Summoned card c is player"
       ],
-      "english_status": "imported_from_old_utilities",
+      "english_status": "imported_from_dataeditorx",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
@@ -12283,7 +12283,7 @@
       "description_en": [
         "Check if card c's summon type is sumtype"
       ],
-      "english_status": "imported_from_old_utilities",
+      "english_status": "imported_from_dataeditorx",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
@@ -12391,7 +12391,7 @@
       "description_en": [
         "Check if card c, when used as Synchro Material, has type type (unlike IsType, for monster cards in the Spell/Trap Zone, it uses their original type for judgment)"
       ],
-      "english_status": "imported_from_old_utilities",
+      "english_status": "imported_from_dataeditorx",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
@@ -12663,7 +12663,7 @@
       "description_en": [
         "Check if card c, when used as Xyz Material, has type type (unlike IsType, for monster cards in the Spell/Trap Zone, it uses their original type for judgment)"
       ],
-      "english_status": "imported_from_old_utilities",
+      "english_status": "imported_from_dataeditorx",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
@@ -13663,7 +13663,7 @@
       "description_en": [
         "Set the reason for card c arriving at its current position to reason"
       ],
-      "english_status": "imported_from_old_utilities",
+      "english_status": "imported_from_dataeditorx",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
@@ -14521,7 +14521,7 @@
         "Activate effect e",
         "NOTE: The original description includes a question mark (?), indicating potential uncertainty or incomplete information;"
       ],
-      "english_status": "imported_from_old_utilities",
+      "english_status": "imported_from_dataeditorx",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libduel.cpp",
@@ -16462,7 +16462,7 @@
       "description_en": [
         "Check if there are min [to max] Tributes on the field [or in mg] for Normal Summoning c [to toplayer's field in zone]"
       ],
-      "english_status": "imported_from_old_utilities",
+      "english_status": "imported_from_dataeditorx",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libduel.cpp",
@@ -16662,7 +16662,7 @@
       "description_en": [
         "Clear the OperationInfo of chain chainc; used for cases like Fallen Angel copying and using Graveyard effects, where card effects should not be responded to"
       ],
-      "english_status": "imported_from_old_utilities",
+      "english_status": "imported_from_dataeditorx",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libduel.cpp",
@@ -16855,7 +16855,7 @@
       "description_en": [
         "Confirm the top count face-down cards in player's Extra Deck"
       ],
-      "english_status": "imported_from_old_utilities",
+      "english_status": "imported_from_dataeditorx",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libduel.cpp",
@@ -17082,7 +17082,7 @@
       "description_en": [
         "Disable card self-destruction checks; no parameter or enabled=true disables the check, enabled=false enables the check"
       ],
-      "english_status": "imported_from_old_utilities",
+      "english_status": "imported_from_dataeditorx",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libduel.cpp",
@@ -17762,7 +17762,7 @@
       "description_en": [
         "Return the monster controlled by player currently in battle; returns nil if there is no battle or no target"
       ],
-      "english_status": "imported_from_old_utilities",
+      "english_status": "imported_from_dataeditorx",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libduel.cpp",
@@ -17828,7 +17828,7 @@
         "Return the parameters related to chain chainc; if chainc=0, return parameters for the currently processed chain",
         "Returns six parameters: eg, ep, ev, re, r, rp"
       ],
-      "english_status": "imported_from_old_utilities",
+      "english_status": "imported_from_dataeditorx",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libduel.cpp",
@@ -18477,7 +18477,7 @@
       "description_en": [
         "Return the top count face-up cards in player's Extra Deck"
       ],
-      "english_status": "imported_from_old_utilities",
+      "english_status": "imported_from_dataeditorx",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libduel.cpp",
@@ -18869,7 +18869,7 @@
       "description_en": [
         "Return the Label of the flag effect of type code for player; return nil if no such effect exists"
       ],
-      "english_status": "imported_from_old_utilities",
+      "english_status": "imported_from_dataeditorx",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libduel.cpp",
@@ -18924,7 +18924,7 @@
         "Return the group of cards available to player for Fusion Summon materials",
         "Includes monsters in hand, on the field, and cards affected by EFFECT_EXTRA_FUSION_MATERIAL"
       ],
-      "english_status": "imported_from_old_utilities",
+      "english_status": "imported_from_dataeditorx",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libduel.cpp",
@@ -19025,7 +19025,7 @@
         "Return the group of linked cards in s_range and o_range zones from player's perspective [as long as the last two parameters are not 0, they become LOCATION_MZONE]",
         "NOTE: The original description includes a question mark (?), indicating potential uncertainty or incomplete information; translated as written"
       ],
-      "english_status": "imported_from_old_utilities",
+      "english_status": "imported_from_dataeditorx",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libduel.cpp",
@@ -19082,7 +19082,7 @@
         "Return the number of linked cards in s_range and o_range zones from player's perspective",
         "NOTE: The original description includes a question mark (?), indicating potential uncertainty or incomplete information; translated as written"
       ],
-      "english_status": "imported_from_old_utilities",
+      "english_status": "imported_from_dataeditorx",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libduel.cpp",
@@ -19126,7 +19126,7 @@
       "description_en": [
         "Return all Link Zones from player's perspective"
       ],
-      "english_status": "imported_from_old_utilities",
+      "english_status": "imported_from_dataeditorx",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libduel.cpp",
@@ -19267,7 +19267,7 @@
       "description_en": [
         "Return the number of available slots on player's field [after targets leave due to reason_player] for Special Summoning card sc from the Extra Deck in zone"
       ],
-      "english_status": "imported_from_old_utilities",
+      "english_status": "imported_from_dataeditorx",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libduel.cpp",
@@ -19587,7 +19587,7 @@
       "description_en": [
         "Return the number of available [zone slots] in the Monster Zone on player's field [after targets leave]"
       ],
-      "english_status": "imported_from_old_utilities",
+      "english_status": "imported_from_dataeditorx",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libduel.cpp",
@@ -20562,7 +20562,7 @@
         "Return the number of available Monster Zones on player's field [for use_player]",
         "NOTE: The original description includes a question mark (?), indicating potential uncertainty or incomplete information; translated as written"
       ],
-      "english_status": "imported_from_old_utilities",
+      "english_status": "imported_from_dataeditorx",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libduel.cpp",
@@ -20600,7 +20600,7 @@
         "Return the card or group of cards set by Duel.SetSelectedCard",
         "Has no effect when used alone; must be used with Duel.SetSelectedCard first"
       ],
-      "english_status": "imported_from_old_utilities",
+      "english_status": "imported_from_dataeditorx",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libduel.cpp",
@@ -21566,7 +21566,7 @@
       "description_en": [
         "Check if player has additional summon counts beyond Normal Summon"
       ],
-      "english_status": "imported_from_old_utilities",
+      "english_status": "imported_from_dataeditorx",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libduel.cpp",
@@ -21824,7 +21824,7 @@
         "Check if player can Set [scard using sumtype summon method]",
         "If optional parameters are included, both must be provided"
       ],
-      "english_status": "imported_from_old_utilities",
+      "english_status": "imported_from_dataeditorx",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libduel.cpp",
@@ -22368,7 +22368,7 @@
       "description_en": [
         "Check if player can Set [scard]"
       ],
-      "english_status": "imported_from_old_utilities",
+      "english_status": "imported_from_dataeditorx",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libduel.cpp",
@@ -22465,7 +22465,7 @@
       "description_en": [
         "Return whether the current Special Summon action can be rolled back and canceled"
       ],
-      "english_status": "imported_from_old_utilities",
+      "english_status": "imported_from_dataeditorx",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libduel.cpp",
@@ -22583,7 +22583,7 @@
       "description_en": [
         "Have player Link Summon pcard using [minc to maxc cards from mg, excluding lcard] as materials"
       ],
-      "english_status": "imported_from_old_utilities",
+      "english_status": "imported_from_dataeditorx",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libduel.cpp",
@@ -24129,7 +24129,7 @@
       "description_en": [
         "Perform Rock-Paper-Scissors; if repeat=false, perform once; otherwise, continue until a winner is determined. Return the winning player's number"
       ],
-      "english_status": "imported_from_old_utilities",
+      "english_status": "imported_from_dataeditorx",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libduel.cpp",
@@ -24337,7 +24337,7 @@
         "Have player select zones; flag1 is the low bit, flag2 is the high bit, together forming the selectable zones; count is the number of zones to choose",
         "Return the selected zones"
       ],
-      "english_status": "imported_from_old_utilities",
+      "english_status": "imported_from_dataeditorx",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libduel.cpp",
@@ -24820,7 +24820,7 @@
       "description_en": [
         "This function only has a check_action_permission operation, purpose unknown"
       ],
-      "english_status": "imported_from_old_utilities",
+      "english_status": "imported_from_dataeditorx",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libduel.cpp",
@@ -25652,7 +25652,7 @@
       "description_en": [
         "Same as Duel.SetChainLimit, but the chain limit set by this function persists until the chain ends"
       ],
-      "english_status": "imported_from_old_utilities",
+      "english_status": "imported_from_dataeditorx",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libduel.cpp",
@@ -25812,7 +25812,7 @@
       "description_en": [
         "Return whether player has a flag effect of type code and set its Label property to label"
       ],
-      "english_status": "imported_from_old_utilities",
+      "english_status": "imported_from_dataeditorx",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libduel.cpp",
@@ -26317,7 +26317,7 @@
       "description_en": [
         "Manually shuffle player's Extra Deck"
       ],
-      "english_status": "imported_from_old_utilities",
+      "english_status": "imported_from_dataeditorx",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libduel.cpp",
@@ -27108,7 +27108,7 @@
       "description_en": [
         "Swap the positions of c1 and c2"
       ],
-      "english_status": "imported_from_old_utilities",
+      "english_status": "imported_from_dataeditorx",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libduel.cpp",
@@ -27461,7 +27461,7 @@
       "description_en": [
         "Check if player p has remaining activation counts for effect e"
       ],
-      "english_status": "imported_from_old_utilities",
+      "english_status": "imported_from_dataeditorx",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libeffect.cpp",
@@ -27639,7 +27639,7 @@
       "description_en": [
         "Return the sequence number of the activation location of effect e"
       ],
-      "english_status": "imported_from_old_utilities",
+      "english_status": "imported_from_dataeditorx",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libeffect.cpp",
@@ -28350,7 +28350,7 @@
       "description_en": [
         "Return the Range property of effect e"
       ],
-      "english_status": "imported_from_old_utilities",
+      "english_status": "imported_from_dataeditorx",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libeffect.cpp",
@@ -30102,7 +30102,7 @@
       "description_en": [
         "Manually reduce player p's available activation count for effect e by count [oath_only indicates whether the effect is EFFECT_FLAG_OATH]"
       ],
-      "english_status": "imported_from_old_utilities",
+      "english_status": "imported_from_dataeditorx",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libeffect.cpp",
@@ -30152,7 +30152,7 @@
       "description_en": [
         "Create a new card group, add all cards from target1 and target2 to this group, and return it; if there are duplicate cards, they are added only once; target1 and target2 remain unchanged"
       ],
-      "english_status": "imported_from_old_utilities",
+      "english_status": "imported_from_dataeditorx",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libgroup.cpp",
@@ -30198,7 +30198,7 @@
       "description_en": [
         "Create a new card group, add all cards that are identical in target1 and target2 (i.e., cards present in both) to this group, and return it; target1 and target2 remain unchanged"
       ],
-      "english_status": "imported_from_old_utilities",
+      "english_status": "imported_from_dataeditorx",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libgroup.cpp",
@@ -30244,7 +30244,7 @@
       "description_en": [
         "Code is identical to Group.__add"
       ],
-      "english_status": "imported_from_old_utilities",
+      "english_status": "imported_from_dataeditorx",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libgroup.cpp",
@@ -30290,7 +30290,7 @@
       "description_en": [
         "Create a new card group, add all cards that are different between target1 and target2 (i.e., cards present in only target1 or target2) to this group, and return it; target1 and target2 remain unchanged"
       ],
-      "english_status": "imported_from_old_utilities",
+      "english_status": "imported_from_dataeditorx",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libgroup.cpp",
@@ -30330,7 +30330,7 @@
       "description_en": [
         "Same as Group.GetCount"
       ],
-      "english_status": "imported_from_old_utilities",
+      "english_status": "imported_from_dataeditorx",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libgroup.cpp",
@@ -30376,7 +30376,7 @@
       "description_en": [
         "Create a new card group, add all cards from target1 to this group, then remove all cards from target2, and return the resulting group; target1 and target2 remain unchanged"
       ],
-      "english_status": "imported_from_old_utilities",
+      "english_status": "imported_from_dataeditorx",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libgroup.cpp",
@@ -31173,7 +31173,7 @@
       "description_en": [
         "Similar to Group.GetClassCount, but uses a different algorithm (bitwise operations)"
       ],
-      "english_status": "imported_from_old_utilities",
+      "english_status": "imported_from_dataeditorx",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libgroup.cpp",
@@ -32142,7 +32142,7 @@
         "btok indicates whether the confirm selection button is available, cancelable indicates whether selected cards can be canceled",
         "minc and maxc are client-side text buffer prompts indicating the need to select minc-maxc cards, but this only affects visual display and does not enforce the selection count"
       ],
-      "english_status": "imported_from_old_utilities",
+      "english_status": "imported_from_dataeditorx",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libgroup.cpp",
@@ -33689,7 +33689,7 @@
         "  return c:IsRelateToBattle()",
         "end"
       ],
-      "english_status": "imported_from_old_utilities",
+      "english_status": "imported_from_dataeditorx",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -33773,7 +33773,7 @@
         "  return c:IsRelateToBattle() and bc:IsLocation(LOCATION_GRAVE) and bc:IsType(TYPE_MONSTER)",
         "end"
       ],
-      "english_status": "imported_from_old_utilities",
+      "english_status": "imported_from_dataeditorx",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -33856,7 +33856,7 @@
         "  return c:IsRelateToBattle() and c:IsStatus(STATUS_OPPO_BATTLE)",
         "end"
       ],
-      "english_status": "imported_from_old_utilities",
+      "english_status": "imported_from_dataeditorx",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -33940,7 +33940,7 @@
         "  return c:IsRelateToBattle() and c:IsStatus(STATUS_OPPO_BATTLE) and bc:IsLocation(LOCATION_GRAVE) and bc:IsType(TYPE_MONSTER)",
         "end"
       ],
-      "english_status": "imported_from_old_utilities",
+      "english_status": "imported_from_dataeditorx",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -34361,7 +34361,7 @@
         "  Duel.Remove(e:GetHandler(), POS_FACEUP, REASON_COST)",
         "end"
       ],
-      "english_status": "imported_from_old_utilities",
+      "english_status": "imported_from_dataeditorx",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -34524,7 +34524,7 @@
         "  end",
         "end"
       ],
-      "english_status": "imported_from_old_utilities",
+      "english_status": "imported_from_dataeditorx",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -34829,7 +34829,7 @@
       "description_en": [
         "Check if Union Monster uc can be equipped to monster tc as a Union Equip"
       ],
-      "english_status": "imported_from_old_utilities",
+      "english_status": "imported_from_dataeditorx",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -34874,7 +34874,7 @@
       "description_en": [
         "Create a table of filter functions"
       ],
-      "english_status": "existing_english",
+      "english_status": "imported_from_dataeditorx",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -35045,7 +35045,7 @@
         "  return ex and (cp==tp or cp==PLAYER_ALL) and rr and not Duel.IsPlayerAffectedByEffect(tp, EFFECT_NO_EFFECT_DAMAGE)",
         "end"
       ],
-      "english_status": "imported_from_old_utilities",
+      "english_status": "imported_from_dataeditorx",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -35282,7 +35282,7 @@
         "  return c:GetPreviousControler()==tp and c:IsReason(REASON_DESTROY) and rp==1-tp",
         "end"
       ],
-      "english_status": "imported_from_old_utilities",
+      "english_status": "imported_from_dataeditorx",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -36421,7 +36421,7 @@
       "description_en": [
         "Add an effect to c for Spirit Monsters to return to the hand during the End Phase of turns when events event1,... occur"
       ],
-      "english_status": "imported_from_old_utilities",
+      "english_status": "imported_from_dataeditorx",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -36466,7 +36466,7 @@
       "description_en": [
         "add effect to modern union monsters"
       ],
-      "english_status": "existing_english",
+      "english_status": "imported_from_dataeditorx",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -36720,7 +36720,7 @@
         "  return st>=(SUMMON_TYPE_SPECIAL+150) and st<(SUMMON_TYPE_SPECIAL+180)",
         "end"
       ],
-      "english_status": "imported_from_old_utilities",
+      "english_status": "imported_from_dataeditorx",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -36760,7 +36760,7 @@
         "  return Duel.GetTurnCount()~=e:GetHandler():GetTurnID() or e:GetHandler():IsReason(REASON_RETURN)",
         "end"
       ],
-      "english_status": "imported_from_old_utilities",
+      "english_status": "imported_from_dataeditorx",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -36801,7 +36801,7 @@
         "  if c:IsRelateToEffect(e) then return c else return nil end",
         "end"
       ],
-      "english_status": "imported_from_old_utilities",
+      "english_status": "imported_from_dataeditorx",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -36953,7 +36953,7 @@
         "  end",
         "end"
       ],
-      "english_status": "imported_from_old_utilities",
+      "english_status": "imported_from_dataeditorx",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -37008,7 +37008,7 @@
         "  end",
         "end"
       ],
-      "english_status": "imported_from_old_utilities",
+      "english_status": "imported_from_dataeditorx",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -37092,7 +37092,7 @@
         "  return st>=(SUMMON_TYPE_SPECIAL+100) and st<(SUMMON_TYPE_SPECIAL+150)",
         "end"
       ],
-      "english_status": "imported_from_old_utilities",
+      "english_status": "imported_from_dataeditorx",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -37399,7 +37399,7 @@
       "description_en": [
         "Return the column sequence number of card c from player's perspective, excluding the Field Zone; from left to right, columns are 0-4"
       ],
-      "english_status": "imported_from_old_utilities",
+      "english_status": "imported_from_dataeditorx",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -37737,7 +37737,7 @@
       "description_en": [
         "Return the Lua type of value"
       ],
-      "english_status": "imported_from_old_utilities",
+      "english_status": "imported_from_dataeditorx",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -38024,7 +38024,7 @@
         "  return not c:IsImmuneToEffect(e)",
         "end"
       ],
-      "english_status": "imported_from_old_utilities",
+      "english_status": "imported_from_dataeditorx",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -38076,7 +38076,7 @@
         "  return rp==1-e:GetHandlerPlayer()",
         "end"
       ],
-      "english_status": "imported_from_old_utilities",
+      "english_status": "imported_from_dataeditorx",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -38128,7 +38128,7 @@
         "  return rp==e:GetHandlerPlayer()",
         "end"
       ],
-      "english_status": "imported_from_old_utilities",
+      "english_status": "imported_from_dataeditorx",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -38222,7 +38222,7 @@
       "description_en": [
         "Check if card c lists card code in its card_code_list"
       ],
-      "english_status": "imported_from_old_utilities",
+      "english_status": "imported_from_dataeditorx",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -38394,7 +38394,7 @@
       "description_en": [
         "Check if card c lists card code as a material in its material list"
       ],
-      "english_status": "imported_from_old_utilities",
+      "english_status": "imported_from_dataeditorx",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -38437,7 +38437,7 @@
       "description_en": [
         "Check if card c lists setcode as a material in its material_setcode"
       ],
-      "english_status": "imported_from_old_utilities",
+      "english_status": "imported_from_dataeditorx",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -38685,7 +38685,7 @@
       "description_en": [
         "Check if the Union Monster e:GetHandler() is in a Union Equip state (used for the Condition property of effects)"
       ],
-      "english_status": "imported_from_old_utilities",
+      "english_status": "imported_from_dataeditorx",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -39339,7 +39339,7 @@
       "description_en": [
         "Check if there is space in mzone after tp releases g by reason"
       ],
-      "english_status": "existing_english",
+      "english_status": "imported_from_dataeditorx",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -39376,7 +39376,7 @@
       "description_en": [
         "Return the Monster Zone sequence number; from left to right, zones are 0-4; for Extra Monster Zones, return left as 1 or right as 3"
       ],
-      "english_status": "imported_from_old_utilities",
+      "english_status": "imported_from_dataeditorx",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -39589,7 +39589,7 @@
         "  end",
         "end"
       ],
-      "english_status": "imported_from_old_utilities",
+      "english_status": "imported_from_dataeditorx",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -40046,7 +40046,7 @@
         "  tc=g:GetNext()",
         "end"
       ],
-      "english_status": "imported_from_old_utilities",
+      "english_status": "imported_from_dataeditorx",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -40153,7 +40153,7 @@
         "  return c:IsFaceup() and c:GetAttack()>0",
         "end"
       ],
-      "english_status": "imported_from_old_utilities",
+      "english_status": "imported_from_dataeditorx",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -40193,7 +40193,7 @@
         "  return c:IsFaceup() and c:GetDefense()>0",
         "end"
       ],
-      "english_status": "imported_from_old_utilities",
+      "english_status": "imported_from_dataeditorx",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -40508,7 +40508,7 @@
         "  end",
         "end"
       ],
-      "english_status": "imported_from_old_utilities",
+      "english_status": "imported_from_dataeditorx",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -41206,7 +41206,7 @@
       "description_en": [
         "Add Union Monster attributes to c"
       ],
-      "english_status": "imported_from_old_utilities",
+      "english_status": "imported_from_dataeditorx",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -41825,7 +41825,7 @@
         "  end",
         "end"
       ],
-      "english_status": "imported_from_old_utilities",
+      "english_status": "imported_from_dataeditorx",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -41911,7 +41911,7 @@
         "  end",
         "end"
       ],
-      "english_status": "imported_from_old_utilities",
+      "english_status": "imported_from_dataeditorx",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -41966,7 +41966,7 @@
         "  end",
         "end"
       ],
-      "english_status": "imported_from_old_utilities",
+      "english_status": "imported_from_dataeditorx",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -42018,7 +42018,7 @@
         "  return rp==e:GetHandlerPlayer()",
         "end"
       ],
-      "english_status": "imported_from_old_utilities",
+      "english_status": "imported_from_dataeditorx",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -42070,7 +42070,7 @@
         "  return rp==e:GetHandlerPlayer()",
         "end"
       ],
-      "english_status": "imported_from_old_utilities",
+      "english_status": "imported_from_dataeditorx",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -44247,7 +44247,7 @@
         "Use 1 monster each with codes code1 and code2, and minc-maxc monsters satisfying filter condition f as Fusion Materials",
         "Equivalent to aux.AddFusionProcMixRep(c, sub, insf, f, minc, maxc, code1, code2)"
       ],
-      "english_status": "imported_from_old_utilities",
+      "english_status": "imported_from_dataeditorx",
       "source_files": [
         {
           "path": "Utilities/procedure.lua",
@@ -44537,7 +44537,7 @@
         "Use 1 monster with code and minc-maxc monsters satisfying filter condition f as Fusion Materials",
         "Equivalent to aux.AddFusionProcMixRep(c, sub, insf, f, minc, maxc, code1)"
       ],
-      "english_status": "imported_from_old_utilities",
+      "english_status": "imported_from_dataeditorx",
       "source_files": [
         {
           "path": "Utilities/procedure.lua",
@@ -44671,7 +44671,7 @@
         "Use minc-maxc identical monsters with code as Fusion Materials",
         "Equivalent to aux.AddFusionProcMixRep(c, sub, insf, code1, minc, maxc)"
       ],
-      "english_status": "imported_from_old_utilities",
+      "english_status": "imported_from_dataeditorx",
       "source_files": [
         {
           "path": "Utilities/procedure.lua",
@@ -44793,7 +44793,7 @@
         "Use 1 monster satisfying filter condition f1 and cc monsters satisfying filter condition f2 as Fusion Materials",
         "Equivalent to aux.AddFusionProcMix(c, false, insf, f1, table.unpack(fun)), where fun is a table of cc cards satisfying condition f2"
       ],
-      "english_status": "imported_from_old_utilities",
+      "english_status": "imported_from_dataeditorx",
       "source_files": [
         {
           "path": "Utilities/procedure.lua",
@@ -44862,7 +44862,7 @@
         "Use 1 monster satisfying filter condition f1 and minc-maxc monsters satisfying filter condition f2 as Fusion Materials",
         "Equivalent to aux.AddFusionProcMixRep(c, false, insf, f2, minc, maxc, f1)"
       ],
-      "english_status": "imported_from_old_utilities",
+      "english_status": "imported_from_dataeditorx",
       "source_files": [
         {
           "path": "Utilities/procedure.lua",
@@ -44984,7 +44984,7 @@
         "Use minc-maxc monsters satisfying the same condition f as Fusion Materials",
         "Equivalent to aux.AddFusionProcMixRep(c, false, insf, f, minc, maxc)"
       ],
-      "english_status": "imported_from_old_utilities",
+      "english_status": "imported_from_dataeditorx",
       "source_files": [
         {
           "path": "Utilities/procedure.lua",
@@ -45043,7 +45043,7 @@
         "Use 1 of each card in the additional parameters as Fusion Materials; additional parameters can be function or card code (int code), where passing a code is equivalent to passing function(code) return c:IsFusionCode(code) end",
         "sub indicates whether Fusion Substitute Materials can be used; insf=false means the Fusion Summon must use the specified materials. If this monster can only be Fusion Summoned with the specified cards, both sub and insf must be false"
       ],
-      "english_status": "imported_from_old_utilities",
+      "english_status": "imported_from_dataeditorx",
       "source_files": [
         {
           "path": "Utilities/procedure.lua",
@@ -45120,7 +45120,7 @@
         "Use minc-maxc monsters satisfying f1 and 1 of each monster in the additional parameters as Fusion Materials",
         "Additional parameters can be function or card code (int code), where passing a code is equivalent to passing function(code) return c:IsFusionCode(code) end"
       ],
-      "english_status": "imported_from_old_utilities",
+      "english_status": "imported_from_dataeditorx",
       "source_files": [
         {
           "path": "Utilities/procedure.lua",
@@ -45165,7 +45165,7 @@
       "description_en": [
         "Exclusive to Shaddoll Fusion Monsters; attribute is the required Attribute"
       ],
-      "english_status": "imported_from_old_utilities",
+      "english_status": "imported_from_dataeditorx",
       "source_files": [
         {
           "path": "Utilities/procedure.lua",
@@ -45229,7 +45229,7 @@
         "Add a Link Summon procedure for c",
         "Use minc-maxc monsters satisfying filter condition f [and within the group satisfying filter condition gf] as Link Materials"
       ],
-      "english_status": "imported_from_old_utilities",
+      "english_status": "imported_from_dataeditorx",
       "source_files": [
         {
           "path": "Utilities/procedure.lua",
@@ -45389,7 +45389,7 @@
         "Add a Ritual Summon effect for c",
         "filter is the condition the Ritual Monster must satisfy; the sum of the Ritual Levels of the materials must equal the Ritual Monster's Level (which may be altered by other card effects)"
       ],
-      "english_status": "imported_from_old_utilities",
+      "english_status": "imported_from_dataeditorx",
       "source_files": [
         {
           "path": "Utilities/procedure.lua",
@@ -45470,7 +45470,7 @@
         "code is the card code of the Ritual Monster; the sum of the Levels of the materials must equal the Ritual Monster's Level",
         "Equivalent to: aux.AddRitualProcEqual2(c, aux.FilterBoolFunction(Card.IsCode, code)), with fit_monster=code added"
       ],
-      "english_status": "imported_from_old_utilities",
+      "english_status": "imported_from_dataeditorx",
       "source_files": [
         {
           "path": "Utilities/procedure.lua",
@@ -45557,7 +45557,7 @@
         "code1, code2 are the card codes of the Ritual Monsters; the sum of the Levels of the materials must equal the Ritual Monster's Level",
         "Equivalent to: aux.AddRitualProcEqual2(c, aux.FilterBoolFunction(Card.IsCode, code1, code2)), with fit_monster={code1, code2} added"
       ],
-      "english_status": "imported_from_old_utilities",
+      "english_status": "imported_from_dataeditorx",
       "source_files": [
         {
           "path": "Utilities/procedure.lua",
@@ -45638,7 +45638,7 @@
         "code is the card code of the Ritual Monster; the sum of the Ritual Levels of the materials must equal the original Level of the Ritual Monster",
         "Equivalent to: aux.AddRitualProcEqual(c, aux.FilterBoolFunction(Card.IsCode, code)), with fit_monster=code added"
       ],
-      "english_status": "imported_from_old_utilities",
+      "english_status": "imported_from_dataeditorx",
       "source_files": [
         {
           "path": "Utilities/procedure.lua",
@@ -46042,7 +46042,7 @@
         "code is the card code of the Ritual Monster; the sum of the Ritual Levels of the materials can exceed the original Level of the Ritual Monster",
         "Equivalent to: aux.AddRitualProcGreater(c, aux.FilterBoolFunction(Card.IsCode, code)), with fit_monster=code added"
       ],
-      "english_status": "imported_from_old_utilities",
+      "english_status": "imported_from_dataeditorx",
       "source_files": [
         {
           "path": "Utilities/procedure.lua",
@@ -46217,7 +46217,7 @@
         "At least one of f1, f2, f3, f4 must be a Tuner condition",
         "If f2 and f3 are nil, equivalent to aux.AddSynchroProcedure(c, f1, f4, minc[, maxc])"
       ],
-      "english_status": "imported_from_old_utilities",
+      "english_status": "imported_from_dataeditorx",
       "source_files": [
         {
           "path": "Utilities/procedure.lua",
@@ -46501,7 +46501,7 @@
         "Or overlay on a single monster (typically an Xyz Monster)",
         "alterf is the condition this monster must satisfy, desc is the description, op is the operation required during overlay (e.g., Number F0: Utopic Future)"
       ],
-      "english_status": "imported_from_old_utilities",
+      "english_status": "imported_from_dataeditorx",
       "source_files": [
         {
           "path": "Utilities/procedure.lua",
@@ -47023,7 +47023,7 @@
         "Add Pendulum Monster attributes to c (Pendulum Summon, Pendulum Card activation)",
         "If active_effect=false, do not register the Pendulum Card's \"card activation\" effect"
       ],
-      "english_status": "imported_from_old_utilities",
+      "english_status": "imported_from_dataeditorx",
       "source_files": [
         {
           "path": "Utilities/procedure.lua",
@@ -47067,7 +47067,7 @@
         "If monster c is Pendulum Summoned from location, it can bypass revival restrictions",
         "NOTE: The original description includes a question mark (?), indicating potential uncertainty; translated as written (e.g., Odd-Eyes Revolution Dragon (16306932))"
       ],
-      "english_status": "imported_from_old_utilities",
+      "english_status": "imported_from_dataeditorx",
       "source_files": [
         {
           "path": "Utilities/procedure.lua",
@@ -49408,7 +49408,7 @@
         "  return st&SUMMON_TYPE_FUSION==SUMMON_TYPE_FUSION",
         "end"
       ],
-      "english_status": "imported_from_old_utilities",
+      "english_status": "imported_from_dataeditorx",
       "source_files": [
         {
           "path": "Utilities/procedure.lua",
@@ -49450,7 +49450,7 @@
         "  else return 1 end",
         "end"
       ],
-      "english_status": "imported_from_old_utilities",
+      "english_status": "imported_from_dataeditorx",
       "source_files": [
         {
           "path": "Utilities/procedure.lua",
@@ -50092,7 +50092,7 @@
         "  return st&SUMMON_TYPE_LINK==SUMMON_TYPE_LINK",
         "end"
       ],
-      "english_status": "imported_from_old_utilities",
+      "english_status": "imported_from_dataeditorx",
       "source_files": [
         {
           "path": "Utilities/procedure.lua",
@@ -50367,7 +50367,7 @@
         "EFFECT_MUST_BE_LMATERIAL",
         "All are checks for required materials"
       ],
-      "english_status": "imported_from_old_utilities",
+      "english_status": "imported_from_dataeditorx",
       "source_files": [
         {
           "path": "Utilities/procedure.lua",
@@ -50410,7 +50410,7 @@
       "description_en": [
         "If group g contains card c, return false"
       ],
-      "english_status": "imported_from_old_utilities",
+      "english_status": "imported_from_dataeditorx",
       "source_files": [
         {
           "path": "Utilities/procedure.lua",
@@ -50454,7 +50454,7 @@
         "Filter non-Tuner monsters satisfying a single filter condition f, returning a function with a bool return type; if only non-Tuner monsters are required, use aux.NonTuner(nil)",
         "Additional parameters start from the second parameter"
       ],
-      "english_status": "imported_from_old_utilities",
+      "english_status": "imported_from_dataeditorx",
       "source_files": [
         {
           "path": "Utilities/procedure.lua",
@@ -51025,7 +51025,7 @@
         "  return st&SUMMON_TYPE_PENDULUM==SUMMON_TYPE_PENDULUM",
         "end"
       ],
-      "english_status": "imported_from_old_utilities",
+      "english_status": "imported_from_dataeditorx",
       "source_files": [
         {
           "path": "Utilities/procedure.lua",
@@ -51163,7 +51163,7 @@
         "  return st&SUMMON_TYPE_RITUAL==SUMMON_TYPE_RITUAL",
         "end"
       ],
-      "english_status": "imported_from_old_utilities",
+      "english_status": "imported_from_dataeditorx",
       "source_files": [
         {
           "path": "Utilities/procedure.lua",
@@ -51843,7 +51843,7 @@
         "  return st&SUMMON_TYPE_SYNCHRO==SUMMON_TYPE_SYNCHRO",
         "end"
       ],
-      "english_status": "imported_from_old_utilities",
+      "english_status": "imported_from_dataeditorx",
       "source_files": [
         {
           "path": "Utilities/procedure.lua",
@@ -53273,7 +53273,7 @@
       "description_en": [
         "Exclusive to Tuning Magician (73941492)"
       ],
-      "english_status": "imported_from_old_utilities",
+      "english_status": "imported_from_dataeditorx",
       "source_files": [
         {
           "path": "Utilities/procedure.lua",
@@ -53316,7 +53316,7 @@
       "description_en": [
         "Exclusive to Tuning Magician (73941492), returning a function f(e, c) with a bool return type"
       ],
-      "english_status": "imported_from_old_utilities",
+      "english_status": "imported_from_dataeditorx",
       "source_files": [
         {
           "path": "Utilities/procedure.lua",
@@ -53360,7 +53360,7 @@
         "Filter Tuner monsters satisfying a single filter condition f, returning a function with a bool return type; if only Tuner monsters are required, use aux.Tuner(nil)",
         "Additional parameters start from the second parameter"
       ],
-      "english_status": "imported_from_old_utilities",
+      "english_status": "imported_from_dataeditorx",
       "source_files": [
         {
           "path": "Utilities/procedure.lua",
@@ -54120,7 +54120,7 @@
         "  return st&SUMMON_TYPE_XYZ==SUMMON_TYPE_XYZ",
         "end"
       ],
-      "english_status": "imported_from_old_utilities",
+      "english_status": "imported_from_dataeditorx",
       "source_files": [
         {
           "path": "Utilities/procedure.lua",
