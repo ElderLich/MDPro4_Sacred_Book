@@ -152,7 +152,7 @@ REASON_ACTION	=0x80000000	--Action timing, such as attack declaration
 LOCATION_REASON_TOFIELD	=0x1	--Default value for Duel.GetLocationCount(), e.g., Kaiser Colosseum
 LOCATION_REASON_CONTROL	=0x2	--Used by Card.IsControlerCanBeChanged()
 
---Summon Types
+--Summon Type
 SUMMON_TYPE_NORMAL	=0x10000000	--Normal Summon (can modify value with EFFECT_SUMMON_PROC, EFFECT_SET_PROC)
 SUMMON_TYPE_ADVANCE	=0x11000000	--Advanced Summon
 SUMMON_TYPE_DUAL	=0x12000000	--Gemini Summon (re-summon)
@@ -165,7 +165,7 @@ SUMMON_TYPE_XYZ	=0x49000000	--Xyz Summon
 SUMMON_TYPE_PENDULUM	=0x4a000000	--Pendulum Summon
 SUMMON_TYPE_LINK	=0x4c000000	--Link Summon
 
---Summon Values
+--Summon Value
 SUMMON_VALUE_SELF	=0x1	--By own effect or condition
 SUMMON_VALUE_SYNCHRO_MATERIAL	=0x11	--Special Summoned and used as Synchro Material (e.g., Blackwing - Shura the Blue Flame check)
 SUMMON_VALUE_DARK_SANCTUARY	=0x12	--Dark Sanctuary
@@ -233,11 +233,11 @@ LINK_MARKER_TOP_LEFT	=0x040	--Top-Left (↖)
 LINK_MARKER_TOP	=0x080	--Top (↑)
 LINK_MARKER_TOP_RIGHT	=0x100	--Top-Right (↗)
 
---Counters
+--Counter
 COUNTER_WITHOUT_PERMIT	=0x1000	--Counter that can be placed on non-specific targets
 COUNTER_NEED_ENABLE	=0x2000	--N/A
 
---Phases
+--Phase
 PHASE_DRAW	=0x01	--Draw Phase
 PHASE_STANDBY	=0x02	--Standby Phase
 PHASE_MAIN1	=0x04	--Main Phase 1
@@ -249,11 +249,11 @@ PHASE_BATTLE	=0x80	--Battle Phase End
 PHASE_MAIN2	=0x100	--Main Phase 2
 PHASE_END	=0x200	--End Phase
 
---Players
+--Player
 PLAYER_NONE	=2	--Neither player
 PLAYER_ALL	=3	--Both players
 
---Chain Info
+--Chain info
 CHAININFO_CHAIN_COUNT	=0x01	--Chain number
 CHAININFO_TRIGGERING_EFFECT	=0x02	--Effect of the chain
 CHAININFO_TRIGGERING_PLAYER	=0x04	--Player who activated the chain
@@ -291,7 +291,7 @@ SUMMON_INFO_DEFENSE	=0x100	--Summon info: DEF
 SUMMON_INFO_REASON_EFFECT	=0x200	--Summon info: reason Effect
 SUMMON_INFO_REASON_PLAYER	=0x400	--Summon info: reason player
 
---========== Reset ==========	--重置条件（注意：重置条件可以多个相加）
+--Reset Conditions
 RESET_SELF_TURN	=0x10000000	--Reset at the end of your turn's phase
 RESET_OPPO_TURN	=0x20000000	--Reset at the end of opponent's turn's phase
 RESET_PHASE	=0x40000000	--Reset at phase end (typically used with phases above)
@@ -313,12 +313,12 @@ RESET_CONTROL	=0x02000000	--Reset when controller changes
 RESET_OVERLAY	=0x04000000	--Reset when used as Xyz Material
 RESET_MSCHANGE	=0x08000000	--Reset when moving from Monster Zone to Spell/Trap Zone or vice versa (e.g., move_to_field(), Gem Beasts)
 
-----组合时点
+--Combined Timings
 RESETS_STANDARD	=0x1fe0000	--RESET_TOFIELD + RESET_LEAVE + RESET_TODECK + RESET_TOHAND + RESET_TEMP_REMOVE + RESET_REMOVE + RESET_TOGRAVE + RESET_TURN_SET
 RESETS_REDIRECT	=0xc7e0000	--RESETS_STANDARD + RESET_OVERLAY + RESET_MSCHANGE - RESET_TOFIELD - RESET_LEAVE (used for EFFECT_LEAVE_FIELD_REDIRECT)
 RESETS_WITHOUT_TEMP_REMOVE	=0x56e0000	--RESETS_STANDARD - RESET_TEMP_REMOVE - RESET_LEAVE + RESET_OVERLAY
 
---========== Types ==========	--效果类型（定义效果触发类型，和codes一起使用）
+--Effect Types
 EFFECT_TYPE_SINGLE	=0x0001	--Triggered when the card's own status changes
 EFFECT_TYPE_FIELD	=0x0002	--Triggered when any card on the field's status changes
 EFFECT_TYPE_EQUIP	=0x0004	--Equip effect
@@ -335,7 +335,7 @@ EFFECT_TYPE_XMATERIAL	=0x1000	--Effect gained by an Xyz Monster when used as Xyz
 EFFECT_TYPE_GRANT	=0x2000	--Grants effects to other cards (e.g., Weather Pattern)
 EFFECT_TYPE_TARGET	=0x4000	--Continuous effect with sustained targets (mainly for Spells/Traps)
 
---========== Flags ==========	--效果的特殊性质
+--Effect Flags
 EFFECT_FLAG_INITIAL	=0x0001	--Can be activated
 EFFECT_FLAG_FUNC_VALUE	=0x0002	--The Value property of this effect is a function
 EFFECT_FLAG_COUNT_LIMIT	=0x0004	--Activation count limit
@@ -376,7 +376,7 @@ EFFECT_FLAG2_COF	=0x0002	--Normal Spell can activate outside Main Phase 1 (speci
 EFFECT_FLAG2_WICKED	=0x0004	--Attack change for The Wicked Avatar/Dreadroot calculated last
 EFFECT_FLAG2_OPTION	=0x0008	--Child Machine
 
---========== Codes ==========	--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)
+--Effect Codes
 EFFECT_IMMUNE_EFFECT	=1	--Immune to effects
 EFFECT_DISABLE	=2	--Negates effects (e.g., Skill Drain)
 EFFECT_CANNOT_DISABLE	=3	--Effect cannot be negated
@@ -640,7 +640,7 @@ EFFECT_RITUAL_LEVEL_EX	=374	--Allows monsters without Levels to be used as Ritua
 EFFECT_DOUBLE_XMATERIAL	=375	--Counts as 2 materials when Xyz Summoning a monster that requires 3 or more materials
 EFFECT_FLAG_EFFECT	=0x20000000	--Flag effect created by RegisterFlagEffect()
 
---下面是诱发效果的诱发事件、时点 （如果是TYPE_SINGLE则自己发生以下事件后触发，如果TYPE_FIELD则场上任何卡发生以下事件都触发）
+--Events
 EVENT_STARTUP	=1000	--N/A
 EVENT_FLIP	=1001	--When flipped
 EVENT_FREE_CHAIN	=1002	--Free Chain timing (e.g., Torrential Tribute, or Quick Effects like Pleiades)
@@ -718,7 +718,7 @@ EVENT_ADD_COUNTER	=0x10000	--When adding a counter
 EVENT_REMOVE_COUNTER	=0x20000	--When removing a counter (A-Counter, Card.RemoveCounter() must manually trigger this event)
 EVENT_CUSTOM	=0x10000000	--Custom event
 
---Category	效果分类（表示这个效果将要发生什么事，OperationInfo设置了效果分类才能触发针对这一类型发动的卡，如破坏->星尘龙
+--Categories
 CATEGORY_DESTROY	=0x1	--Destruction effect
 CATEGORY_RELEASE	=0x2	--Tribute effect
 CATEGORY_REMOVE	=0x4	--Banish effect
@@ -794,7 +794,7 @@ OPCODE_ISATTRIBUTE	=0x40000104	--Check attribute
 DOUBLE_DAMAGE	=-2147483648	--Double damage
 HALF_DAMAGE	=-2147483647	--Half damage
 
---Hint Message	--提示消息，显示在窗口的上面
+--Hint Messages
 HINTMSG_RELEASE	=500	--Select a card to Tribute
 HINTMSG_DISCARD	=501	--Select a card to discard from hand
 HINTMSG_DESTROY	=502	--Select a card to destroy
@@ -853,11 +853,11 @@ HINTMSG_DISABLE	=573	--Select a card to negate
 HINTMSG_OPERATECARD	=574	--Select a card to operate
 HINTMSG_FIELD_FIRST	=575	--Select a card on the field (press Cancel to select a card from another zone)
 
---Select	--请选择
+--Selection Constants
 SELECT_HEADS	=60	--Heads
 SELECT_TAILS	=61	--Tails
 
---Timing	--提示时点，可以给freechain卡片增加自动提示时点
+--Timings
 TIMING_DRAW_PHASE	=0x1	--Draw Phase timing
 TIMING_STANDBY_PHASE	=0x2	--Standby Phase timing
 TIMING_MAIN_END	=0x4	--Main Phase end timing
@@ -887,10 +887,10 @@ TIMING_EQUIP	=0x2000000	--Equip timing
 TIMING_BATTLE_STEP_END	=0x4000000	--Battle Step end timing
 TIMING_BATTLED	=0x8000000	--After damage calculation timing
 
-----组合时点
+--Combined Timings
 TIMINGS_CHECK_MONSTER	=0x1c0	--Monster summoned face-up
 
---Global flag	--特殊标记
+--Global Flags
 GLOBALFLAG_DECK_REVERSE_CHECK	=0x1	--Deck reverse check
 GLOBALFLAG_BRAINWASHING_CHECK	=0x2	--Brainwashing release check
 GLOBALFLAG_SCRAP_CHIMERA	=0x4	--Scrap Chimera check
@@ -909,7 +909,7 @@ EFFECT_COUNT_CODE_DUEL	=0x20000000	--Duel usage count
 EFFECT_COUNT_CODE_CHAIN	=0x40000000	--Use count within the same Chain
 EFFECT_COUNT_CODE_SINGLE	=0x1	--Shared count for multiple effects on the same card
 
---特殊选项
+--Duel Options
 DUEL_TEST_MODE	=0x01	--Test mode (currently none)
 DUEL_ATTACK_FIRST_TURN	=0x02	--First turn can attack (for puzzles)
 DUEL_OLD_REPLAY	=0x04	--Old replay

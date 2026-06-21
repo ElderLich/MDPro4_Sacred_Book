@@ -187,7 +187,7 @@ Generated from `Utilities/constant.lua`, with English comments carried forward f
 | `LOCATION_REASON_TOFIELD` | `0x1` | Default value for Duel.GetLocationCount(), e.g., Kaiser Colosseum | Duel.GetLocationCount()預設值,凱薩競技場 |
 | `LOCATION_REASON_CONTROL` | `0x2` | Used by Card.IsControlerCanBeChanged() | Card.IsControlerCanBeChanged()使用 |
 
-## Summon Types
+## Summon Type
 
 | Name | Value | English | Source comment |
 | --- | --- | --- | --- |
@@ -203,7 +203,7 @@ Generated from `Utilities/constant.lua`, with English comments carried forward f
 | `SUMMON_TYPE_PENDULUM` | `0x4a000000` | Pendulum Summon | 灵摆召唤 |
 | `SUMMON_TYPE_LINK` | `0x4c000000` | Link Summon | 连接召唤 |
 
-## Summon Values
+## Summon Value
 
 | Name | Value | English | Source comment |
 | --- | --- | --- | --- |
@@ -283,14 +283,14 @@ Generated from `Utilities/constant.lua`, with English comments carried forward f
 | `LINK_MARKER_TOP` | `0x080` | Top (↑) | ↑ |
 | `LINK_MARKER_TOP_RIGHT` | `0x100` | Top-Right (↗) | ↗ |
 
-## Counters
+## Counter
 
 | Name | Value | English | Source comment |
 | --- | --- | --- | --- |
 | `COUNTER_WITHOUT_PERMIT` | `0x1000` | Counter that can be placed on non-specific targets | 可以放置在非特定對象的指示物 |
 | `COUNTER_NEED_ENABLE` | `0x2000` | N/A | N/A |
 
-## Phases
+## Phase
 
 | Name | Value | English | Source comment |
 | --- | --- | --- | --- |
@@ -305,14 +305,14 @@ Generated from `Utilities/constant.lua`, with English comments carried forward f
 | `PHASE_MAIN2` | `0x100` | Main Phase 2 | 主要阶段2 |
 | `PHASE_END` | `0x200` | End Phase | 结束阶段 |
 
-## Players
+## Player
 
 | Name | Value | English | Source comment |
 | --- | --- | --- | --- |
 | `PLAYER_NONE` | `2` | Neither player | 2个玩家都不是 |
 | `PLAYER_ALL` | `3` | Both players | 2个玩家都是 |
 
-## Chain Info
+## Chain info
 
 | Name | Value | English | Source comment |
 | --- | --- | --- | --- |
@@ -356,7 +356,7 @@ Generated from `Utilities/constant.lua`, with English comments carried forward f
 | `SUMMON_INFO_REASON_EFFECT` | `0x200` | Summon info: reason Effect |  |
 | `SUMMON_INFO_REASON_PLAYER` | `0x400` | Summon info: reason player |  |
 
-## ========== Reset ==========	--重置条件（注意：重置条件可以多个相加）
+## Reset Conditions
 
 | Name | Value | English | Source comment |
 | --- | --- | --- | --- |
@@ -381,7 +381,7 @@ Generated from `Utilities/constant.lua`, with English comments carried forward f
 | `RESET_OVERLAY` | `0x04000000` | Reset when used as Xyz Material | 超量叠放重置 |
 | `RESET_MSCHANGE` | `0x08000000` | Reset when moving from Monster Zone to Spell/Trap Zone or vice versa (e.g., move_to_field(), Gem Beasts) | 从怪兽区到魔法区，或者从魔法区到怪兽区(move_to_field()、寶玉獸) |
 
-## --组合时点
+## Combined Timings
 
 | Name | Value | English | Source comment |
 | --- | --- | --- | --- |
@@ -389,7 +389,7 @@ Generated from `Utilities/constant.lua`, with English comments carried forward f
 | `RESETS_REDIRECT` | `0xc7e0000` | RESETS_STANDARD + RESET_OVERLAY + RESET_MSCHANGE - RESET_TOFIELD - RESET_LEAVE (used for EFFECT_LEAVE_FIELD_REDIRECT) | RESETS_STANDARD+RESET_OVERLAY+RESET_MSCHANGE-RESET_TOFIELD-RESET_LEAVE (EFFECT_LEAVE_FIELD_REDIRECT) |
 | `RESETS_WITHOUT_TEMP_REMOVE` | `0x56e0000` | RESETS_STANDARD - RESET_TEMP_REMOVE - RESET_LEAVE + RESET_OVERLAY | RESETS_STANDARD-RESET_TEMP_REMOVE-RESET_LEAVE+RESET_OVERLAY |
 
-## ========== Types ==========	--效果类型（定义效果触发类型，和codes一起使用）
+## Effect Types
 
 | Name | Value | English | Source comment |
 | --- | --- | --- | --- |
@@ -409,7 +409,7 @@ Generated from `Utilities/constant.lua`, with English comments carried forward f
 | `EFFECT_TYPE_GRANT` | `0x2000` | Grants effects to other cards (e.g., Weather Pattern) | 使其他卡片获得效果（天气模样） |
 | `EFFECT_TYPE_TARGET` | `0x4000` | Continuous effect with sustained targets (mainly for Spells/Traps) | 影响持续取的对象的效果（基本只用于魔陷） |
 
-## ========== Flags ==========	--效果的特殊性质
+## Effect Flags
 
 | Name | Value | English | Source comment |
 | --- | --- | --- | --- |
@@ -453,7 +453,7 @@ Generated from `Utilities/constant.lua`, with English comments carried forward f
 | `EFFECT_FLAG2_WICKED` | `0x0004` | Attack change for The Wicked Avatar/Dreadroot calculated last | 神之化身/恐惧之源的攻击力变化最后计算 |
 | `EFFECT_FLAG2_OPTION` | `0x0008` | Child Machine | 子機 |
 
-## ========== Codes ==========	--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)
+## Effect Codes
 
 | Name | Value | English | Source comment |
 | --- | --- | --- | --- |
@@ -720,7 +720,7 @@ Generated from `Utilities/constant.lua`, with English comments carried forward f
 | `EFFECT_DOUBLE_XMATERIAL` | `375` | Counts as 2 materials when Xyz Summoning a monster that requires 3 or more materials | 召唤需3只以上作素材的超量怪兽时可以作为2只数量的素材 |
 | `EFFECT_FLAG_EFFECT` | `0x20000000` | Flag effect created by RegisterFlagEffect() | 标记类效果，即RegisterFlagEffect()创建的效果 |
 
-## 下面是诱发效果的诱发事件、时点 （如果是TYPE_SINGLE则自己发生以下事件后触发，如果TYPE_FIELD则场上任何卡发生以下事件都触发）
+## Events
 
 | Name | Value | English | Source comment |
 | --- | --- | --- | --- |
@@ -801,7 +801,7 @@ Generated from `Utilities/constant.lua`, with English comments carried forward f
 | `EVENT_REMOVE_COUNTER` | `0x20000` | When removing a counter (A-Counter, Card.RemoveCounter() must manually trigger this event) | 去除指示物时(A指示物)，Card.RemoveCounter()必須手動觸發此事件 |
 | `EVENT_CUSTOM` | `0x10000000` | Custom event | 自訂事件 |
 
-## Category	效果分类（表示这个效果将要发生什么事，OperationInfo设置了效果分类才能触发针对这一类型发动的卡，如破坏->星尘龙
+## Categories
 
 | Name | Value | English | Source comment |
 | --- | --- | --- | --- |
@@ -889,7 +889,7 @@ Generated from `Utilities/constant.lua`, with English comments carried forward f
 | `DOUBLE_DAMAGE` | `-2147483648` | Double damage |  |
 | `HALF_DAMAGE` | `-2147483647` | Half damage |  |
 
-## Hint Message	--提示消息，显示在窗口的上面
+## Hint Messages
 
 | Name | Value | English | Source comment |
 | --- | --- | --- | --- |
@@ -951,14 +951,14 @@ Generated from `Utilities/constant.lua`, with English comments carried forward f
 | `HINTMSG_OPERATECARD` | `574` | Select a card to operate | 请选择要操作的卡 |
 | `HINTMSG_FIELD_FIRST` | `575` | Select a card on the field (press Cancel to select a card from another zone) | 请选择场上的卡（按取消可选择其他区域的卡） |
 
-## Select	--请选择
+## Selection Constants
 
 | Name | Value | English | Source comment |
 | --- | --- | --- | --- |
 | `SELECT_HEADS` | `60` | Heads | 正面 |
 | `SELECT_TAILS` | `61` | Tails | 反面 |
 
-## Timing	--提示时点，可以给freechain卡片增加自动提示时点
+## Timings
 
 | Name | Value | English | Source comment |
 | --- | --- | --- | --- |
@@ -991,13 +991,13 @@ Generated from `Utilities/constant.lua`, with English comments carried forward f
 | `TIMING_BATTLE_STEP_END` | `0x4000000` | Battle Step end timing | 戰鬥步驟結束時 |
 | `TIMING_BATTLED` | `0x8000000` | After damage calculation timing | 伤害计算后时点 |
 
-## --组合时点
+## Combined Timings
 
 | Name | Value | English | Source comment |
 | --- | --- | --- | --- |
 | `TIMINGS_CHECK_MONSTER` | `0x1c0` | Monster summoned face-up | 怪兽正面上场 |
 
-## Global flag	--特殊标记
+## Global Flags
 
 | Name | Value | English | Source comment |
 | --- | --- | --- | --- |
@@ -1022,7 +1022,7 @@ Generated from `Utilities/constant.lua`, with English comments carried forward f
 | `EFFECT_COUNT_CODE_CHAIN` | `0x40000000` | Use count within the same Chain | 同一连锁中使用次数 |
 | `EFFECT_COUNT_CODE_SINGLE` | `0x1` | Shared count for multiple effects on the same card | 同一张卡的多个效果公共使用次数 |
 
-## 特殊选项
+## Duel Options
 
 | Name | Value | English | Source comment |
 | --- | --- | --- | --- |

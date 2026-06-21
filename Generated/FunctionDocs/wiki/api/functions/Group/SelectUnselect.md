@@ -15,7 +15,7 @@ minc and maxc are client-side text buffer prompts indicating the need to select 
 ## Parameters
 
 - `cg` `Group`
-- `sg` `Group|nil` optional - 已选的卡，可以从中取消选择
+- `sg` `Group|nil` optional - already selected cards that can be unselected
 - `player` `int`
 - `btok` `bool` - default: false
 - `cancelable` `bool` - default: false

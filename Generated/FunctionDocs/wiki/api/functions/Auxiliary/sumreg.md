@@ -8,8 +8,8 @@ Auxiliary.sumreg(Effect e, int tp, Group eg, int ep, any ev, Effect re, any r, i
 
 ## Description
 
-Used by Yosenju Yamamisaki (39853199) and some other cards (49249907, 93368494), though the purpose of this function is unclear (★意★义★不★明★)
-Card 54109233, while not using this function, uses a similar implementation, also with unclear purpose (★意★义★不★明★), equivalent to
+Used by Yosenju Yamamisaki (39853199) and some other cards (49249907, 93368494), though the purpose of this function is unclear.
+Card 54109233, while not using this function, uses a similar implementation with an unclear purpose, equivalent to
 function aux.sumreg(e, tp, eg, ep, ev, re, r, rp)
   local tc=eg:GetFirst()
   local code=e:GetLabel()

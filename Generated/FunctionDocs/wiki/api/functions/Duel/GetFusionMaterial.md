@@ -18,8 +18,8 @@ Includes monsters in hand, on the field, and cards affected by EFFECT_EXTRA_FUSI
 
 ## Returns
 
-- `Group` - material_all 包含受EFFECT_EXTRA_FUSION_MATERIAL影响的卡
-- `Group` - material_base 只取那些区域的卡
+- `Group` - material_all includes cards affected by EFFECT_EXTRA_FUSION_MATERIAL
+- `Group` - material_base contains only cards from the requested locations
 
 ## Source
 

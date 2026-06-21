@@ -13,7 +13,7 @@ Returns the group of cards that must be used as material.
 ## Parameters
 
 - `player` `int`
-- `ecode` `int` - EFFECT_MUST_BE_FMATERIAL等
+- `ecode` `int` - for example, EFFECT_MUST_BE_FMATERIAL
 
 ## Returns
 

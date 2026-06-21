@@ -19,12 +19,12 @@ If get_info = true and is the correct time point also returns the trigger point 
 ## Returns
 
 - `bool`
-- `Group` - 可能为空
-- `int` - 可能为空
-- `int` - 可能为空
-- `Effect` - 可能为空
-- `int` - 可能为空
-- `int` - 可能为空
+- `Group` - may be nil
+- `int` - may be nil
+- `int` - may be nil
+- `Effect` - may be nil
+- `int` - may be nil
+- `int` - may be nil
 
 ## Source
 

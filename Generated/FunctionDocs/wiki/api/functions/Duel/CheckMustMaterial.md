@@ -14,7 +14,7 @@ Checks whether the card group satisfies mandatory material requirements.
 
 - `player` `int`
 - `cards` `Group|Card`
-- `ecode` `int` - EFFECT_MUST_BE_FMATERIAL等
+- `ecode` `int` - for example, EFFECT_MUST_BE_FMATERIAL
 
 ## Returns
 

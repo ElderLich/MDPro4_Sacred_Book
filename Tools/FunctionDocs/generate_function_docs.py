@@ -2477,6 +2477,31 @@ CORE_DOC_OVERRIDES = {
 }
 
 
+FUNCTION_ANNOTATION_TRANSLATIONS = {
+    "可能为空": "may be nil",
+    "EFFECT_MUST_BE_FMATERIAL等": "for example, EFFECT_MUST_BE_FMATERIAL",
+    "material_all 包含受EFFECT_EXTRA_FUSION_MATERIAL影响的卡": "material_all includes cards affected by EFFECT_EXTRA_FUSION_MATERIAL",
+    "material_base 只取那些区域的卡": "material_base contains only cards from the requested locations",
+    "不能为空": "cannot be nil when selecting materials",
+    "已选的卡，可以从中取消选择": "already selected cards that can be unselected",
+}
+
+
+def translate_function_annotation(text: str) -> str:
+    translated = text
+    for source, replacement in FUNCTION_ANNOTATION_TRANSLATIONS.items():
+        translated = translated.replace(source, replacement)
+    return translated
+
+
+def translate_function_annotations(docs: Iterable[FunctionDoc]) -> None:
+    for doc in docs:
+        doc.description_en = [translate_function_annotation(line) for line in doc.description_en]
+        for param in doc.params:
+            param.description = translate_function_annotation(param.description)
+        for ret in doc.returns:
+            ret.description = translate_function_annotation(ret.description)
+
 def copy_params(params: list[ParamDoc]) -> list[ParamDoc]:
     return [
         ParamDoc(param.name, param.type, param.optional, param.description)
@@ -3139,6 +3164,18 @@ SECTION_TRANSLATIONS = {
     "Chain info\t--连锁信息": "Chain Info",
     "Chain info --连锁信息": "Chain Info",
     "Summon info": "Summon Info",
+    "Reset": "Reset Conditions",
+    "Types": "Effect Types",
+    "Flags": "Effect Flags",
+    "Codes": "Effect Codes",
+    "下面是诱发效果的诱发事件、时点 （如果是TYPE_SINGLE则自己发生以下事件后触发，如果TYPE_FIELD则场上任何卡发生以下事件都触发）": "Events",
+    "Category": "Categories",
+    "Hint Message": "Hint Messages",
+    "Select": "Selection Constants",
+    "Timing": "Timings",
+    "组合时点": "Combined Timings",
+    "Global flag": "Global Flags",
+    "特殊选项": "Duel Options",
 }
 
 
@@ -3232,6 +3269,19 @@ def seed_constant_translation(name: str, comment: str) -> tuple[str, str]:
     return f"TODO translate: {cleaned}", "missing_translation"
 
 
+def normalize_constant_section(section: str) -> str:
+    section = section.strip().lstrip("-").strip()
+    section = re.sub(r"^=+\s*", "", section)
+    section = re.sub(r"\s*=+\s*", "", section).strip()
+    if "--" in section:
+        section = section.split("--", 1)[0].strip() or section.split("--", 1)[1].strip()
+    if "\t" in section:
+        head, _tail = section.split("\t", 1)
+        if head.strip():
+            section = head.strip()
+    return section
+
+
 def parse_constant_docs(path: Path, workspace: Path, origin: str) -> OrderedDict[str, ConstantDoc]:
     docs: OrderedDict[str, ConstantDoc] = OrderedDict()
     if not path.exists():
@@ -3244,7 +3294,7 @@ def parse_constant_docs(path: Path, workspace: Path, origin: str) -> OrderedDict
         if not stripped:
             continue
         if stripped.startswith("--"):
-            section = stripped[2:].strip()
+            section = normalize_constant_section(stripped[2:])
             if section:
                 current_section = section
             continue
@@ -3830,6 +3880,7 @@ def main() -> int:
             ("imported_from_dataeditorx", old_en),
         ],
     )
+    translate_function_annotations(docs)
 
     constants = analyze_constants(workspace, dataeditorx_data)
     categories = analyze_categories(dataeditorx_data, mdpro3_locales)

@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-06-21T12:46:36+00:00",
+    "generated_at": "2026-06-21T14:11:26+00:00",
     "workspace": "D:\\Programs\\GitHub\\MDPro3_Sacred_Book",
     "dataeditorx_data": "D:\\Programs\\GitHub\\DataEditorX\\DataEditorX\\data",
     "mdpro3_locales": "D:\\Programs\\GitHub\\MDPro3_Data\\Data\\locales",
@@ -3022,7 +3022,7 @@
     {
       "name": "SUMMON_TYPE_NORMAL",
       "value": "0x10000000",
-      "section": "Summon Type --召唤类型",
+      "section": "Summon Type",
       "comment_zh": "通常召唤(EFFECT_SUMMON_PROC,EFFECT_SET_PROC 可用Value修改數值)",
       "comment_en": "Normal Summon (can modify value with EFFECT_SUMMON_PROC, EFFECT_SET_PROC)",
       "english_status": "from_project_cache",
@@ -3046,7 +3046,7 @@
     {
       "name": "SUMMON_TYPE_ADVANCE",
       "value": "0x11000000",
-      "section": "Summon Type --召唤类型",
+      "section": "Summon Type",
       "comment_zh": "上级召唤",
       "comment_en": "Advanced Summon",
       "english_status": "from_project_cache",
@@ -3070,7 +3070,7 @@
     {
       "name": "SUMMON_TYPE_DUAL",
       "value": "0x12000000",
-      "section": "Summon Type --召唤类型",
+      "section": "Summon Type",
       "comment_zh": "再度召唤（二重）",
       "comment_en": "Gemini Summon (re-summon)",
       "english_status": "from_project_cache",
@@ -3094,7 +3094,7 @@
     {
       "name": "SUMMON_TYPE_FLIP",
       "value": "0x20000000",
-      "section": "Summon Type --召唤类型",
+      "section": "Summon Type",
       "comment_zh": "翻转召唤",
       "comment_en": "Flip Summon",
       "english_status": "from_project_cache",
@@ -3118,7 +3118,7 @@
     {
       "name": "SUMMON_TYPE_SPECIAL",
       "value": "0x40000000",
-      "section": "Summon Type --召唤类型",
+      "section": "Summon Type",
       "comment_zh": "特殊召唤(EFFECT_SPSUMMON_PROC,EFFECT_SPSUMMON_PROC_G 可用Value修改數值)",
       "comment_en": "Special Summon (can modify value with EFFECT_SPSUMMON_PROC, EFFECT_SPSUMMON_PROC_G)",
       "english_status": "from_project_cache",
@@ -3142,7 +3142,7 @@
     {
       "name": "SUMMON_TYPE_FUSION",
       "value": "0x43000000",
-      "section": "Summon Type --召唤类型",
+      "section": "Summon Type",
       "comment_zh": "融合召唤",
       "comment_en": "Fusion Summon",
       "english_status": "from_project_cache",
@@ -3166,7 +3166,7 @@
     {
       "name": "SUMMON_TYPE_RITUAL",
       "value": "0x45000000",
-      "section": "Summon Type --召唤类型",
+      "section": "Summon Type",
       "comment_zh": "仪式召唤",
       "comment_en": "Ritual Summon",
       "english_status": "from_project_cache",
@@ -3190,7 +3190,7 @@
     {
       "name": "SUMMON_TYPE_SYNCHRO",
       "value": "0x46000000",
-      "section": "Summon Type --召唤类型",
+      "section": "Summon Type",
       "comment_zh": "同调召唤",
       "comment_en": "Synchro Summon",
       "english_status": "from_project_cache",
@@ -3214,7 +3214,7 @@
     {
       "name": "SUMMON_TYPE_XYZ",
       "value": "0x49000000",
-      "section": "Summon Type --召唤类型",
+      "section": "Summon Type",
       "comment_zh": "超量召唤",
       "comment_en": "Xyz Summon",
       "english_status": "from_project_cache",
@@ -3238,7 +3238,7 @@
     {
       "name": "SUMMON_TYPE_PENDULUM",
       "value": "0x4a000000",
-      "section": "Summon Type --召唤类型",
+      "section": "Summon Type",
       "comment_zh": "灵摆召唤",
       "comment_en": "Pendulum Summon",
       "english_status": "from_project_cache",
@@ -3262,7 +3262,7 @@
     {
       "name": "SUMMON_TYPE_LINK",
       "value": "0x4c000000",
-      "section": "Summon Type --召唤类型",
+      "section": "Summon Type",
       "comment_zh": "连接召唤",
       "comment_en": "Link Summon",
       "english_status": "from_project_cache",
@@ -3286,7 +3286,7 @@
     {
       "name": "SUMMON_VALUE_SELF",
       "value": "0x1",
-      "section": "Summon Value --特定的召唤方式",
+      "section": "Summon Value",
       "comment_zh": "自身效果或条件",
       "comment_en": "By own effect or condition",
       "english_status": "from_project_cache",
@@ -3310,7 +3310,7 @@
     {
       "name": "SUMMON_VALUE_SYNCHRO_MATERIAL",
       "value": "0x11",
-      "section": "Summon Value --特定的召唤方式",
+      "section": "Summon Value",
       "comment_zh": "特殊召唤并作为同调素材（黑羽-东云之东风检查）",
       "comment_en": "Special Summoned and used as Synchro Material (e.g., Blackwing - Shura the Blue Flame check)",
       "english_status": "from_project_cache",
@@ -3334,7 +3334,7 @@
     {
       "name": "SUMMON_VALUE_DARK_SANCTUARY",
       "value": "0x12",
-      "section": "Summon Value --特定的召唤方式",
+      "section": "Summon Value",
       "comment_zh": "暗黑圣域",
       "comment_en": "Dark Sanctuary",
       "english_status": "from_project_cache",
@@ -3358,7 +3358,7 @@
     {
       "name": "SUMMON_VALUE_MONSTER_REBORN",
       "value": "0x13",
-      "section": "Summon Value --特定的召唤方式",
+      "section": "Summon Value",
       "comment_zh": "死者苏生（千年的启示）",
       "comment_en": "Monster Reborn (e.g., Thousand-Eyes Restrict)",
       "english_status": "from_project_cache",
@@ -3382,7 +3382,7 @@
     {
       "name": "SUMMON_VALUE_MASK_CHANGE",
       "value": "0x14",
-      "section": "Summon Value --特定的召唤方式",
+      "section": "Summon Value",
       "comment_zh": "",
       "comment_en": "Mask Change summon value",
       "english_status": "translated_name",
@@ -3406,7 +3406,7 @@
     {
       "name": "SUMMON_VALUE_ASSAULT_MODE",
       "value": "0x15",
-      "section": "Summon Value --特定的召唤方式",
+      "section": "Summon Value",
       "comment_zh": "",
       "comment_en": "Assault Mode summon value",
       "english_status": "translated_name",
@@ -3430,7 +3430,7 @@
     {
       "name": "SUMMON_VALUE_LV",
       "value": "0x1000",
-      "section": "Summon Value --特定的召唤方式",
+      "section": "Summon Value",
       "comment_zh": "对应LV怪兽的效果",
       "comment_en": "Corresponds to LV Monster effects",
       "english_status": "from_project_cache",
@@ -3454,7 +3454,7 @@
     {
       "name": "SUMMON_VALUE_GLADIATOR",
       "value": "0x2000",
-      "section": "Summon Value --特定的召唤方式",
+      "section": "Summon Value",
       "comment_zh": "剑斗兽",
       "comment_en": "Gladiator Beast",
       "english_status": "from_project_cache",
@@ -3478,7 +3478,7 @@
     {
       "name": "SUMMON_VALUE_EVOLTILE",
       "value": "0x4000",
-      "section": "Summon Value --特定的召唤方式",
+      "section": "Summon Value",
       "comment_zh": "进化虫",
       "comment_en": "Evoltile",
       "english_status": "from_project_cache",
@@ -3502,7 +3502,7 @@
     {
       "name": "SUMMON_VALUE_DARK_FUSION",
       "value": "SUMMON_TYPE_FUSION|0x16",
-      "section": "Summon Value --特定的召唤方式",
+      "section": "Summon Value",
       "comment_zh": "",
       "comment_en": "Dark Fusion summon value",
       "english_status": "translated_name",
@@ -3526,7 +3526,7 @@
     {
       "name": "SUMMON_VALUE_FOSSIL_FUSION",
       "value": "SUMMON_TYPE_FUSION|0x17",
-      "section": "Summon Value --特定的召唤方式",
+      "section": "Summon Value",
       "comment_zh": "",
       "comment_en": "Fossil Fusion summon value",
       "english_status": "translated_name",
@@ -3550,7 +3550,7 @@
     {
       "name": "SUMMON_VALUE_FUTURE_FUSION",
       "value": "SUMMON_TYPE_FUSION|0x18",
-      "section": "Summon Value --特定的召唤方式",
+      "section": "Summon Value",
       "comment_zh": "",
       "comment_en": "Future Fusion summon value",
       "english_status": "translated_name",
@@ -3574,7 +3574,7 @@
     {
       "name": "STATUS_DISABLED",
       "value": "0x0001",
-      "section": "Status\t--卡片当前状态",
+      "section": "Status",
       "comment_zh": "效果被无效",
       "comment_en": "Effect negated",
       "english_status": "from_project_cache",
@@ -3598,7 +3598,7 @@
     {
       "name": "STATUS_TO_ENABLE",
       "value": "0x0002",
-      "section": "Status\t--卡片当前状态",
+      "section": "Status",
       "comment_zh": "将变成有效",
       "comment_en": "Will become enabled",
       "english_status": "from_project_cache",
@@ -3622,7 +3622,7 @@
     {
       "name": "STATUS_TO_DISABLE",
       "value": "0x0004",
-      "section": "Status\t--卡片当前状态",
+      "section": "Status",
       "comment_zh": "将变成无效",
       "comment_en": "Will become disabled",
       "english_status": "from_project_cache",
@@ -3646,7 +3646,7 @@
     {
       "name": "STATUS_PROC_COMPLETE",
       "value": "0x0008",
-      "section": "Status\t--卡片当前状态",
+      "section": "Status",
       "comment_zh": "完成正规召唤（解除苏生限制）",
       "comment_en": "Completed proper summon (bypasses revival restrictions)",
       "english_status": "from_project_cache",
@@ -3670,7 +3670,7 @@
     {
       "name": "STATUS_SET_TURN",
       "value": "0x0010",
-      "section": "Status\t--卡片当前状态",
+      "section": "Status",
       "comment_zh": "在本回合覆盖",
       "comment_en": "Set this turn",
       "english_status": "from_project_cache",
@@ -3694,7 +3694,7 @@
     {
       "name": "STATUS_NO_LEVEL",
       "value": "0x0020",
-      "section": "Status\t--卡片当前状态",
+      "section": "Status",
       "comment_zh": "无等级",
       "comment_en": "No Level",
       "english_status": "from_project_cache",
@@ -3718,7 +3718,7 @@
     {
       "name": "STATUS_BATTLE_RESULT",
       "value": "0x0040",
-      "section": "Status\t--卡片当前状态",
+      "section": "Status",
       "comment_zh": "傷害計算結果預計要破壞的怪獸",
       "comment_en": "Monster expected to be destroyed due to damage calculation",
       "english_status": "from_project_cache",
@@ -3742,7 +3742,7 @@
     {
       "name": "STATUS_SPSUMMON_STEP",
       "value": "0x0080",
-      "section": "Status\t--卡片当前状态",
+      "section": "Status",
       "comment_zh": "效果特召處理中",
       "comment_en": "In Special Summon process",
       "english_status": "from_project_cache",
@@ -3766,7 +3766,7 @@
     {
       "name": "STATUS_CANNOT_CHANGE_FORM",
       "value": "0x0100",
-      "section": "Status\t--卡片当前状态",
+      "section": "Status",
       "comment_zh": "回合玩家不能手动改变表示形式",
       "comment_en": "The turn player cannot manually change battle position",
       "english_status": "translated_exact",
@@ -3790,7 +3790,7 @@
     {
       "name": "STATUS_SUMMONING",
       "value": "0x0200",
-      "section": "Status\t--卡片当前状态",
+      "section": "Status",
       "comment_zh": "召唤中",
       "comment_en": "In summon process",
       "english_status": "from_project_cache",
@@ -3814,7 +3814,7 @@
     {
       "name": "STATUS_EFFECT_ENABLED",
       "value": "0x0400",
-      "section": "Status\t--卡片当前状态",
+      "section": "Status",
       "comment_zh": "卡片準備就緒(不在移動、召喚、魔法陷阱發動中)",
       "comment_en": "Card ready (not moving, summoning, or activating Spell/Trap)",
       "english_status": "from_project_cache",
@@ -3838,7 +3838,7 @@
     {
       "name": "STATUS_SUMMON_TURN",
       "value": "0x0800",
-      "section": "Status\t--卡片当前状态",
+      "section": "Status",
       "comment_zh": "在本回合召喚/SET",
       "comment_en": "Summoned/Set this turn",
       "english_status": "from_project_cache",
@@ -3862,7 +3862,7 @@
     {
       "name": "STATUS_DESTROY_CONFIRMED",
       "value": "0x1000",
-      "section": "Status\t--卡片当前状态",
+      "section": "Status",
       "comment_zh": "预定被破坏",
       "comment_en": "Destruction confirmed",
       "english_status": "from_project_cache",
@@ -3886,7 +3886,7 @@
     {
       "name": "STATUS_LEAVE_CONFIRMED",
       "value": "0x2000",
-      "section": "Status\t--卡片当前状态",
+      "section": "Status",
       "comment_zh": "連鎖處理完後送去墓地的魔法陷阱",
       "comment_en": "Spell/Trap sent to Graveyard after chain resolution",
       "english_status": "from_project_cache",
@@ -3910,7 +3910,7 @@
     {
       "name": "STATUS_BATTLE_DESTROYED",
       "value": "0x4000",
-      "section": "Status\t--卡片当前状态",
+      "section": "Status",
       "comment_zh": "战斗破坏确定後尚未移動",
       "comment_en": "Confirmed destroyed by battle, not yet moved",
       "english_status": "from_project_cache",
@@ -3934,7 +3934,7 @@
     {
       "name": "STATUS_COPYING_EFFECT",
       "value": "0x8000",
-      "section": "Status\t--卡片当前状态",
+      "section": "Status",
       "comment_zh": "正在复制效果",
       "comment_en": "Copying effect",
       "english_status": "from_project_cache",
@@ -3958,7 +3958,7 @@
     {
       "name": "STATUS_CHAINING",
       "value": "0x10000",
-      "section": "Status\t--卡片当前状态",
+      "section": "Status",
       "comment_zh": "正在連鎖串中",
       "comment_en": "In chain",
       "english_status": "from_project_cache",
@@ -3982,7 +3982,7 @@
     {
       "name": "STATUS_SUMMON_DISABLED",
       "value": "0x20000",
-      "section": "Status\t--卡片当前状态",
+      "section": "Status",
       "comment_zh": "召唤无效後尚未移動",
       "comment_en": "Summon negated, not yet moved",
       "english_status": "from_project_cache",
@@ -4006,7 +4006,7 @@
     {
       "name": "STATUS_ACTIVATE_DISABLED",
       "value": "0x40000",
-      "section": "Status\t--卡片当前状态",
+      "section": "Status",
       "comment_zh": "发动无效後尚未移動",
       "comment_en": "Activation negated, not yet moved",
       "english_status": "from_project_cache",
@@ -4030,7 +4030,7 @@
     {
       "name": "STATUS_EFFECT_REPLACED",
       "value": "0x80000",
-      "section": "Status\t--卡片当前状态",
+      "section": "Status",
       "comment_zh": "效果被替代(红莲霸权)",
       "comment_en": "Effect replaced (e.g., Crimson Nova Trinity)",
       "english_status": "from_project_cache",
@@ -4054,7 +4054,7 @@
     {
       "name": "STATUS_FLIP_SUMMONING",
       "value": "0x100000",
-      "section": "Status\t--卡片当前状态",
+      "section": "Status",
       "comment_zh": "反转召唤中",
       "comment_en": "Being Flip Summoned",
       "english_status": "translated_exact",
@@ -4078,7 +4078,7 @@
     {
       "name": "STATUS_ATTACK_CANCELED",
       "value": "0x200000",
-      "section": "Status\t--卡片当前状态",
+      "section": "Status",
       "comment_zh": "若其為攻擊者，則攻擊中止",
       "comment_en": "Attack canceled if this card is the attacker",
       "english_status": "from_project_cache",
@@ -4102,7 +4102,7 @@
     {
       "name": "STATUS_INITIALIZING",
       "value": "0x400000",
-      "section": "Status\t--卡片当前状态",
+      "section": "Status",
       "comment_zh": "正在初始化",
       "comment_en": "Initializing",
       "english_status": "from_project_cache",
@@ -4126,7 +4126,7 @@
     {
       "name": "STATUS_TO_HAND_WITHOUT_CONFIRM",
       "value": "0x800000",
-      "section": "Status\t--卡片当前状态",
+      "section": "Status",
       "comment_zh": "非公开的卡被效果加入手卡但未给对方确认",
       "comment_en": "Non-public card added to hand by effect without opponent confirmation",
       "english_status": "from_project_cache",
@@ -4150,7 +4150,7 @@
     {
       "name": "STATUS_JUST_POS",
       "value": "0x1000000",
-      "section": "Status\t--卡片当前状态",
+      "section": "Status",
       "comment_zh": "已改變表示形式(用於STATUS_CONTINUOUS_POS判定)",
       "comment_en": "Position changed (used for STATUS_CONTINUOUS_POS check)",
       "english_status": "from_project_cache",
@@ -4174,7 +4174,7 @@
     {
       "name": "STATUS_CONTINUOUS_POS",
       "value": "0x2000000",
-      "section": "Status\t--卡片当前状态",
+      "section": "Status",
       "comment_zh": "改變後再次設定成其他表示形式",
       "comment_en": "Changed to another position after initial change",
       "english_status": "from_project_cache",
@@ -4198,7 +4198,7 @@
     {
       "name": "STATUS_FORBIDDEN",
       "value": "0x4000000",
-      "section": "Status\t--卡片当前状态",
+      "section": "Status",
       "comment_zh": "不能play",
       "comment_en": "Cannot be played",
       "english_status": "from_project_cache",
@@ -4222,7 +4222,7 @@
     {
       "name": "STATUS_ACT_FROM_HAND",
       "value": "0x8000000",
-      "section": "Status\t--卡片当前状态",
+      "section": "Status",
       "comment_zh": "從手牌发动",
       "comment_en": "Activated from hand",
       "english_status": "from_project_cache",
@@ -4246,7 +4246,7 @@
     {
       "name": "STATUS_OPPO_BATTLE",
       "value": "0x10000000",
-      "section": "Status\t--卡片当前状态",
+      "section": "Status",
       "comment_zh": "和對手的怪兽戰鬥",
       "comment_en": "Battled an opponent's monster",
       "english_status": "from_project_cache",
@@ -4270,7 +4270,7 @@
     {
       "name": "STATUS_FLIP_SUMMON_TURN",
       "value": "0x20000000",
-      "section": "Status\t--卡片当前状态",
+      "section": "Status",
       "comment_zh": "在本回合反转召唤",
       "comment_en": "Flip Summoned this turn",
       "english_status": "from_project_cache",
@@ -4294,7 +4294,7 @@
     {
       "name": "STATUS_SPSUMMON_TURN",
       "value": "0x40000000",
-      "section": "Status\t--卡片当前状态",
+      "section": "Status",
       "comment_zh": "在本回合特殊召唤",
       "comment_en": "Special Summoned this turn",
       "english_status": "from_project_cache",
@@ -4318,7 +4318,7 @@
     {
       "name": "STATUS_FLIP_SUMMON_DISABLED",
       "value": "0x80000000",
-      "section": "Status\t--卡片当前状态",
+      "section": "Status",
       "comment_zh": "反转召唤被无效",
       "comment_en": "Flip Summon negated",
       "english_status": "translated_exact",
@@ -4726,7 +4726,7 @@
     {
       "name": "COUNTER_WITHOUT_PERMIT",
       "value": "0x1000",
-      "section": "Counter\t--指示物",
+      "section": "Counter",
       "comment_zh": "可以放置在非特定對象的指示物",
       "comment_en": "Counter that can be placed on non-specific targets",
       "english_status": "from_project_cache",
@@ -4750,7 +4750,7 @@
     {
       "name": "COUNTER_NEED_ENABLE",
       "value": "0x2000",
-      "section": "Counter\t--指示物",
+      "section": "Counter",
       "comment_zh": "N/A",
       "comment_en": "N/A",
       "english_status": "from_project_cache",
@@ -4774,7 +4774,7 @@
     {
       "name": "PHASE_DRAW",
       "value": "0x01",
-      "section": "Phase\t--阶段",
+      "section": "Phase",
       "comment_zh": "抽卡阶段",
       "comment_en": "Draw Phase",
       "english_status": "from_project_cache",
@@ -4798,7 +4798,7 @@
     {
       "name": "PHASE_STANDBY",
       "value": "0x02",
-      "section": "Phase\t--阶段",
+      "section": "Phase",
       "comment_zh": "准备阶段",
       "comment_en": "Standby Phase",
       "english_status": "from_project_cache",
@@ -4822,7 +4822,7 @@
     {
       "name": "PHASE_MAIN1",
       "value": "0x04",
-      "section": "Phase\t--阶段",
+      "section": "Phase",
       "comment_zh": "主要阶段1",
       "comment_en": "Main Phase 1",
       "english_status": "from_project_cache",
@@ -4846,7 +4846,7 @@
     {
       "name": "PHASE_BATTLE_START",
       "value": "0x08",
-      "section": "Phase\t--阶段",
+      "section": "Phase",
       "comment_zh": "战斗阶段开始",
       "comment_en": "Battle Phase Start",
       "english_status": "from_project_cache",
@@ -4870,7 +4870,7 @@
     {
       "name": "PHASE_BATTLE_STEP",
       "value": "0x10",
-      "section": "Phase\t--阶段",
+      "section": "Phase",
       "comment_zh": "战斗步驟",
       "comment_en": "Battle Step",
       "english_status": "from_project_cache",
@@ -4894,7 +4894,7 @@
     {
       "name": "PHASE_DAMAGE",
       "value": "0x20",
-      "section": "Phase\t--阶段",
+      "section": "Phase",
       "comment_zh": "伤害步驟",
       "comment_en": "Damage Step",
       "english_status": "from_project_cache",
@@ -4918,7 +4918,7 @@
     {
       "name": "PHASE_DAMAGE_CAL",
       "value": "0x40",
-      "section": "Phase\t--阶段",
+      "section": "Phase",
       "comment_zh": "伤害计算时",
       "comment_en": "Damage Calculation",
       "english_status": "from_project_cache",
@@ -4942,7 +4942,7 @@
     {
       "name": "PHASE_BATTLE",
       "value": "0x80",
-      "section": "Phase\t--阶段",
+      "section": "Phase",
       "comment_zh": "战斗阶段結束",
       "comment_en": "Battle Phase End",
       "english_status": "from_project_cache",
@@ -4966,7 +4966,7 @@
     {
       "name": "PHASE_MAIN2",
       "value": "0x100",
-      "section": "Phase\t--阶段",
+      "section": "Phase",
       "comment_zh": "主要阶段2",
       "comment_en": "Main Phase 2",
       "english_status": "from_project_cache",
@@ -4990,7 +4990,7 @@
     {
       "name": "PHASE_END",
       "value": "0x200",
-      "section": "Phase\t--阶段",
+      "section": "Phase",
       "comment_zh": "结束阶段",
       "comment_en": "End Phase",
       "english_status": "from_project_cache",
@@ -5014,7 +5014,7 @@
     {
       "name": "PLAYER_NONE",
       "value": "2",
-      "section": "Player\t--玩家",
+      "section": "Player",
       "comment_zh": "2个玩家都不是",
       "comment_en": "Neither player",
       "english_status": "from_project_cache",
@@ -5038,7 +5038,7 @@
     {
       "name": "PLAYER_ALL",
       "value": "3",
-      "section": "Player\t--玩家",
+      "section": "Player",
       "comment_zh": "2个玩家都是",
       "comment_en": "Both players",
       "english_status": "from_project_cache",
@@ -5062,7 +5062,7 @@
     {
       "name": "CHAININFO_CHAIN_COUNT",
       "value": "0x01",
-      "section": "Chain info\t--连锁信息",
+      "section": "Chain info",
       "comment_zh": "连锁数",
       "comment_en": "Chain number",
       "english_status": "from_project_cache",
@@ -5086,7 +5086,7 @@
     {
       "name": "CHAININFO_TRIGGERING_EFFECT",
       "value": "0x02",
-      "section": "Chain info\t--连锁信息",
+      "section": "Chain info",
       "comment_zh": "连锁的效果",
       "comment_en": "Effect of the chain",
       "english_status": "from_project_cache",
@@ -5110,7 +5110,7 @@
     {
       "name": "CHAININFO_TRIGGERING_PLAYER",
       "value": "0x04",
-      "section": "Chain info\t--连锁信息",
+      "section": "Chain info",
       "comment_zh": "连锁的玩家",
       "comment_en": "Player who activated the chain",
       "english_status": "from_project_cache",
@@ -5134,7 +5134,7 @@
     {
       "name": "CHAININFO_TRIGGERING_CONTROLER",
       "value": "0x08",
-      "section": "Chain info\t--连锁信息",
+      "section": "Chain info",
       "comment_zh": "连锁的卡的控制者",
       "comment_en": "Controller of the card in the chain",
       "english_status": "from_project_cache",
@@ -5158,7 +5158,7 @@
     {
       "name": "CHAININFO_TRIGGERING_LOCATION",
       "value": "0x10",
-      "section": "Chain info\t--连锁信息",
+      "section": "Chain info",
       "comment_zh": "连锁的位置",
       "comment_en": "Location of the chain",
       "english_status": "from_project_cache",
@@ -5182,7 +5182,7 @@
     {
       "name": "CHAININFO_TRIGGERING_SEQUENCE",
       "value": "0x20",
-      "section": "Chain info\t--连锁信息",
+      "section": "Chain info",
       "comment_zh": "连锁的位置的编号（指怪兽和魔陷区的格子）",
       "comment_en": "Sequence number of the chain's location (Monster or Spell/Trap Zone)",
       "english_status": "from_project_cache",
@@ -5206,7 +5206,7 @@
     {
       "name": "CHAININFO_TARGET_CARDS",
       "value": "0x40",
-      "section": "Chain info\t--连锁信息",
+      "section": "Chain info",
       "comment_zh": "连锁的效果的对象（以下3个需要在target函数里设置）",
       "comment_en": "Target cards of the chain effect (the next 3 must be set in the target function)",
       "english_status": "from_project_cache",
@@ -5230,7 +5230,7 @@
     {
       "name": "CHAININFO_TARGET_PLAYER",
       "value": "0x80",
-      "section": "Chain info\t--连锁信息",
+      "section": "Chain info",
       "comment_zh": "连锁的效果的对象（玩家）",
       "comment_en": "Target player of the chain effect",
       "english_status": "from_project_cache",
@@ -5254,7 +5254,7 @@
     {
       "name": "CHAININFO_TARGET_PARAM",
       "value": "0x100",
-      "section": "Chain info\t--连锁信息",
+      "section": "Chain info",
       "comment_zh": "连锁的效果的参数值",
       "comment_en": "Parameter value of the chain effect",
       "english_status": "from_project_cache",
@@ -5278,7 +5278,7 @@
     {
       "name": "CHAININFO_DISABLE_REASON",
       "value": "0x200",
-      "section": "Chain info\t--连锁信息",
+      "section": "Chain info",
       "comment_zh": "无效的原因效果",
       "comment_en": "Reason for negation",
       "english_status": "from_project_cache",
@@ -5302,7 +5302,7 @@
     {
       "name": "CHAININFO_DISABLE_PLAYER",
       "value": "0x400",
-      "section": "Chain info\t--连锁信息",
+      "section": "Chain info",
       "comment_zh": "无效的玩家",
       "comment_en": "Player who negated the chain",
       "english_status": "from_project_cache",
@@ -5326,7 +5326,7 @@
     {
       "name": "CHAININFO_CHAIN_ID",
       "value": "0x800",
-      "section": "Chain info\t--连锁信息",
+      "section": "Chain info",
       "comment_zh": "连锁ID",
       "comment_en": "Chain ID",
       "english_status": "from_project_cache",
@@ -5350,7 +5350,7 @@
     {
       "name": "CHAININFO_TYPE",
       "value": "0x1000",
-      "section": "Chain info\t--连锁信息",
+      "section": "Chain info",
       "comment_zh": "连锁类型",
       "comment_en": "Chain type",
       "english_status": "from_project_cache",
@@ -5374,7 +5374,7 @@
     {
       "name": "CHAININFO_EXTTYPE",
       "value": "0x2000",
-      "section": "Chain info\t--连锁信息",
+      "section": "Chain info",
       "comment_zh": "连锁额外类型",
       "comment_en": "Chain extra type",
       "english_status": "from_project_cache",
@@ -5398,7 +5398,7 @@
     {
       "name": "CHAININFO_TRIGGERING_POSITION",
       "value": "0x4000",
-      "section": "Chain info\t--连锁信息",
+      "section": "Chain info",
       "comment_zh": "连锁发生时的表示形式",
       "comment_en": "Position when the chain occurred",
       "english_status": "from_project_cache",
@@ -5422,7 +5422,7 @@
     {
       "name": "CHAININFO_TRIGGERING_CODE",
       "value": "0x8000",
-      "section": "Chain info\t--连锁信息",
+      "section": "Chain info",
       "comment_zh": "连锁发生时的密码",
       "comment_en": "Code when the chain occurred",
       "english_status": "from_project_cache",
@@ -5446,7 +5446,7 @@
     {
       "name": "CHAININFO_TRIGGERING_CODE2",
       "value": "0x10000",
-      "section": "Chain info\t--连锁信息",
+      "section": "Chain info",
       "comment_zh": "连锁发生时的其他密码",
       "comment_en": "Other code when the chain occurred",
       "english_status": "from_project_cache",
@@ -5470,7 +5470,7 @@
     {
       "name": "CHAININFO_TRIGGERING_LEVEL",
       "value": "0x40000",
-      "section": "Chain info\t--连锁信息",
+      "section": "Chain info",
       "comment_zh": "连锁发生时的等级",
       "comment_en": "Level when the chain occurred",
       "english_status": "from_project_cache",
@@ -5494,7 +5494,7 @@
     {
       "name": "CHAININFO_TRIGGERING_RANK",
       "value": "0x80000",
-      "section": "Chain info\t--连锁信息",
+      "section": "Chain info",
       "comment_zh": "连锁发生时的阶级",
       "comment_en": "Rank when the chain occurred",
       "english_status": "from_project_cache",
@@ -5518,7 +5518,7 @@
     {
       "name": "CHAININFO_TRIGGERING_ATTRIBUTE",
       "value": "0x100000",
-      "section": "Chain info\t--连锁信息",
+      "section": "Chain info",
       "comment_zh": "连锁发生时的属性",
       "comment_en": "Attribute when the chain occurred",
       "english_status": "from_project_cache",
@@ -5542,7 +5542,7 @@
     {
       "name": "CHAININFO_TRIGGERING_RACE",
       "value": "0x200000",
-      "section": "Chain info\t--连锁信息",
+      "section": "Chain info",
       "comment_zh": "连锁发生时的种族",
       "comment_en": "Race when the chain occurred",
       "english_status": "from_project_cache",
@@ -5566,7 +5566,7 @@
     {
       "name": "CHAININFO_TRIGGERING_ATTACK",
       "value": "0x400000",
-      "section": "Chain info\t--连锁信息",
+      "section": "Chain info",
       "comment_zh": "连锁发生时的攻击力",
       "comment_en": "Attack when the chain occurred",
       "english_status": "from_project_cache",
@@ -5590,7 +5590,7 @@
     {
       "name": "CHAININFO_TRIGGERING_DEFENSE",
       "value": "0x800000",
-      "section": "Chain info\t--连锁信息",
+      "section": "Chain info",
       "comment_zh": "连锁发生时的守备力",
       "comment_en": "Defense when the chain occurred",
       "english_status": "from_project_cache",
@@ -5878,7 +5878,7 @@
     {
       "name": "RESET_SELF_TURN",
       "value": "0x10000000",
-      "section": "========== Reset ==========\t--重置条件（注意：重置条件可以多个相加）",
+      "section": "Reset",
       "comment_zh": "自己回合的階段重置",
       "comment_en": "Reset at the end of your turn's phase",
       "english_status": "from_project_cache",
@@ -5902,7 +5902,7 @@
     {
       "name": "RESET_OPPO_TURN",
       "value": "0x20000000",
-      "section": "========== Reset ==========\t--重置条件（注意：重置条件可以多个相加）",
+      "section": "Reset",
       "comment_zh": "对方回合的階段重置",
       "comment_en": "Reset at the end of opponent's turn's phase",
       "english_status": "from_project_cache",
@@ -5926,7 +5926,7 @@
     {
       "name": "RESET_PHASE",
       "value": "0x40000000",
-      "section": "========== Reset ==========\t--重置条件（注意：重置条件可以多个相加）",
+      "section": "Reset",
       "comment_zh": "阶段结束重置(一般和上面那些阶段配合使用)",
       "comment_en": "Reset at phase end (typically used with phases above)",
       "english_status": "from_project_cache",
@@ -5950,7 +5950,7 @@
     {
       "name": "RESET_CHAIN",
       "value": "0x80000000",
-      "section": "========== Reset ==========\t--重置条件（注意：重置条件可以多个相加）",
+      "section": "Reset",
       "comment_zh": "连锁结束重置",
       "comment_en": "Reset at chain end",
       "english_status": "from_project_cache",
@@ -5974,7 +5974,7 @@
     {
       "name": "RESET_EVENT",
       "value": "0x1000",
-      "section": "========== Reset ==========\t--重置条件（注意：重置条件可以多个相加）",
+      "section": "Reset",
       "comment_zh": "指定的條件下重置(一般和下面这些事件配合使用)",
       "comment_en": "Reset under specified conditions (typically used with events below)",
       "english_status": "from_project_cache",
@@ -5998,7 +5998,7 @@
     {
       "name": "RESET_CARD",
       "value": "0x2000",
-      "section": "========== Reset ==========\t--重置条件（注意：重置条件可以多个相加）",
+      "section": "Reset",
       "comment_zh": "重置Owner為指定卡片的效果",
       "comment_en": "Reset effects with a specific card as Owner",
       "english_status": "from_project_cache",
@@ -6022,7 +6022,7 @@
     {
       "name": "RESET_CODE",
       "value": "0x4000",
-      "section": "========== Reset ==========\t--重置条件（注意：重置条件可以多个相加）",
+      "section": "Reset",
       "comment_zh": "重置指定Code的single效果(不含EFFECT_FLAG_SINGLE_RANGE)",
       "comment_en": "Reset single effects with a specific Code (excluding EFFECT_FLAG_SINGLE_RANGE)",
       "english_status": "from_project_cache",
@@ -6046,7 +6046,7 @@
     {
       "name": "RESET_COPY",
       "value": "0x8000",
-      "section": "========== Reset ==========\t--重置条件（注意：重置条件可以多个相加）",
+      "section": "Reset",
       "comment_zh": "重置以复制取得的效果",
       "comment_en": "Reset effects obtained by copying",
       "english_status": "from_project_cache",
@@ -6070,7 +6070,7 @@
     {
       "name": "RESET_DISABLE",
       "value": "0x00010000",
-      "section": "========== Reset ==========\t--重置条件（注意：重置条件可以多个相加）",
+      "section": "Reset",
       "comment_zh": "效果无效重置(只適用於owner==handler的效果)",
       "comment_en": "Reset for negated effects (only applies to effects where owner==handler)",
       "english_status": "from_project_cache",
@@ -6094,7 +6094,7 @@
     {
       "name": "RESET_TURN_SET",
       "value": "0x00020000",
-      "section": "========== Reset ==========\t--重置条件（注意：重置条件可以多个相加）",
+      "section": "Reset",
       "comment_zh": "变里侧重置(皆為事件觸發前重置)",
       "comment_en": "Reset when Set (before event triggers)",
       "english_status": "from_project_cache",
@@ -6118,7 +6118,7 @@
     {
       "name": "RESET_TOGRAVE",
       "value": "0x00040000",
-      "section": "========== Reset ==========\t--重置条件（注意：重置条件可以多个相加）",
+      "section": "Reset",
       "comment_zh": "去墓地重置",
       "comment_en": "Reset when sent to Graveyard",
       "english_status": "from_project_cache",
@@ -6142,7 +6142,7 @@
     {
       "name": "RESET_REMOVE",
       "value": "0x00080000",
-      "section": "========== Reset ==========\t--重置条件（注意：重置条件可以多个相加）",
+      "section": "Reset",
       "comment_zh": "除外重置",
       "comment_en": "Reset when banished",
       "english_status": "from_project_cache",
@@ -6166,7 +6166,7 @@
     {
       "name": "RESET_TEMP_REMOVE",
       "value": "0x00100000",
-      "section": "========== Reset ==========\t--重置条件（注意：重置条件可以多个相加）",
+      "section": "Reset",
       "comment_zh": "暂时除外重置",
       "comment_en": "Reset when temporarily banished",
       "english_status": "from_project_cache",
@@ -6190,7 +6190,7 @@
     {
       "name": "RESET_TOHAND",
       "value": "0x00200000",
-      "section": "========== Reset ==========\t--重置条件（注意：重置条件可以多个相加）",
+      "section": "Reset",
       "comment_zh": "回手牌或加入手牌重置",
       "comment_en": "Reset when returned to hand or added to hand",
       "english_status": "from_project_cache",
@@ -6214,7 +6214,7 @@
     {
       "name": "RESET_TODECK",
       "value": "0x00400000",
-      "section": "========== Reset ==========\t--重置条件（注意：重置条件可以多个相加）",
+      "section": "Reset",
       "comment_zh": "回卡组重置",
       "comment_en": "Reset when returned to Deck",
       "english_status": "from_project_cache",
@@ -6238,7 +6238,7 @@
     {
       "name": "RESET_LEAVE",
       "value": "0x00800000",
-      "section": "========== Reset ==========\t--重置条件（注意：重置条件可以多个相加）",
+      "section": "Reset",
       "comment_zh": "从怪兽区或魔法区到不同区域",
       "comment_en": "Reset when moving from Monster Zone or Spell/Trap Zone to a different location",
       "english_status": "from_project_cache",
@@ -6262,7 +6262,7 @@
     {
       "name": "RESET_TOFIELD",
       "value": "0x01000000",
-      "section": "========== Reset ==========\t--重置条件（注意：重置条件可以多个相加）",
+      "section": "Reset",
       "comment_zh": "除了返回场上以外，从不同区域移动到怪兽区或魔法区",
       "comment_en": "Reset when moving to Monster Zone or Spell/Trap Zone from a different location (except returning to field)",
       "english_status": "from_project_cache",
@@ -6286,7 +6286,7 @@
     {
       "name": "RESET_CONTROL",
       "value": "0x02000000",
-      "section": "========== Reset ==========\t--重置条件（注意：重置条件可以多个相加）",
+      "section": "Reset",
       "comment_zh": "控制者变更重置",
       "comment_en": "Reset when controller changes",
       "english_status": "from_project_cache",
@@ -6310,7 +6310,7 @@
     {
       "name": "RESET_OVERLAY",
       "value": "0x04000000",
-      "section": "========== Reset ==========\t--重置条件（注意：重置条件可以多个相加）",
+      "section": "Reset",
       "comment_zh": "超量叠放重置",
       "comment_en": "Reset when used as Xyz Material",
       "english_status": "from_project_cache",
@@ -6334,7 +6334,7 @@
     {
       "name": "RESET_MSCHANGE",
       "value": "0x08000000",
-      "section": "========== Reset ==========\t--重置条件（注意：重置条件可以多个相加）",
+      "section": "Reset",
       "comment_zh": "从怪兽区到魔法区，或者从魔法区到怪兽区(move_to_field()、寶玉獸)",
       "comment_en": "Reset when moving from Monster Zone to Spell/Trap Zone or vice versa (e.g., move_to_field(), Gem Beasts)",
       "english_status": "from_project_cache",
@@ -6358,7 +6358,7 @@
     {
       "name": "RESETS_STANDARD",
       "value": "0x1fe0000",
-      "section": "--组合时点",
+      "section": "组合时点",
       "comment_zh": "RESET_TOFIELD+RESET_LEAVE+RESET_TODECK+RESET_TOHAND+RESET_TEMP_REMOVE+RESET_REMOVE+RESET_TOGRAVE+RESET_TURN_SET",
       "comment_en": "RESET_TOFIELD + RESET_LEAVE + RESET_TODECK + RESET_TOHAND + RESET_TEMP_REMOVE + RESET_REMOVE + RESET_TOGRAVE + RESET_TURN_SET",
       "english_status": "from_project_cache",
@@ -6382,7 +6382,7 @@
     {
       "name": "RESETS_REDIRECT",
       "value": "0xc7e0000",
-      "section": "--组合时点",
+      "section": "组合时点",
       "comment_zh": "RESETS_STANDARD+RESET_OVERLAY+RESET_MSCHANGE-RESET_TOFIELD-RESET_LEAVE (EFFECT_LEAVE_FIELD_REDIRECT)",
       "comment_en": "RESETS_STANDARD + RESET_OVERLAY + RESET_MSCHANGE - RESET_TOFIELD - RESET_LEAVE (used for EFFECT_LEAVE_FIELD_REDIRECT)",
       "english_status": "from_project_cache",
@@ -6406,7 +6406,7 @@
     {
       "name": "RESETS_WITHOUT_TEMP_REMOVE",
       "value": "0x56e0000",
-      "section": "--组合时点",
+      "section": "组合时点",
       "comment_zh": "RESETS_STANDARD-RESET_TEMP_REMOVE-RESET_LEAVE+RESET_OVERLAY",
       "comment_en": "RESETS_STANDARD - RESET_TEMP_REMOVE - RESET_LEAVE + RESET_OVERLAY",
       "english_status": "from_project_cache",
@@ -6430,7 +6430,7 @@
     {
       "name": "EFFECT_TYPE_SINGLE",
       "value": "0x0001",
-      "section": "========== Types ==========\t--效果类型（定义效果触发类型，和codes一起使用）",
+      "section": "Types",
       "comment_zh": "自己状态变化时触发",
       "comment_en": "Triggered when the card's own status changes",
       "english_status": "from_project_cache",
@@ -6454,7 +6454,7 @@
     {
       "name": "EFFECT_TYPE_FIELD",
       "value": "0x0002",
-      "section": "========== Types ==========\t--效果类型（定义效果触发类型，和codes一起使用）",
+      "section": "Types",
       "comment_zh": "场上所有卡状态变化时触发",
       "comment_en": "Triggered when any card on the field's status changes",
       "english_status": "from_project_cache",
@@ -6478,7 +6478,7 @@
     {
       "name": "EFFECT_TYPE_EQUIP",
       "value": "0x0004",
-      "section": "========== Types ==========\t--效果类型（定义效果触发类型，和codes一起使用）",
+      "section": "Types",
       "comment_zh": "装备效果",
       "comment_en": "Equip effect",
       "english_status": "from_project_cache",
@@ -6502,7 +6502,7 @@
     {
       "name": "EFFECT_TYPE_ACTIONS",
       "value": "0x0008",
-      "section": "========== Types ==========\t--效果类型（定义效果触发类型，和codes一起使用）",
+      "section": "Types",
       "comment_zh": "触发型，以下類型會自動添加此屬性（对峙的G）",
       "comment_en": "Trigger-type, automatically added to the following types (e.g., Confrontation G)",
       "english_status": "from_project_cache",
@@ -6526,7 +6526,7 @@
     {
       "name": "EFFECT_TYPE_ACTIVATE",
       "value": "0x0010",
-      "section": "========== Types ==========\t--效果类型（定义效果触发类型，和codes一起使用）",
+      "section": "Types",
       "comment_zh": "魔陷发动",
       "comment_en": "Spell/Trap activation",
       "english_status": "from_project_cache",
@@ -6550,7 +6550,7 @@
     {
       "name": "EFFECT_TYPE_FLIP",
       "value": "0x0020",
-      "section": "========== Types ==========\t--效果类型（定义效果触发类型，和codes一起使用）",
+      "section": "Types",
       "comment_zh": "翻转效果",
       "comment_en": "Flip effect",
       "english_status": "from_project_cache",
@@ -6574,7 +6574,7 @@
     {
       "name": "EFFECT_TYPE_IGNITION",
       "value": "0x0040",
-      "section": "========== Types ==========\t--效果类型（定义效果触发类型，和codes一起使用）",
+      "section": "Types",
       "comment_zh": "起动效果",
       "comment_en": "Ignition effect",
       "english_status": "from_project_cache",
@@ -6598,7 +6598,7 @@
     {
       "name": "EFFECT_TYPE_TRIGGER_O",
       "value": "0x0080",
-      "section": "========== Types ==========\t--效果类型（定义效果触发类型，和codes一起使用）",
+      "section": "Types",
       "comment_zh": "诱发选发效果",
       "comment_en": "Optional Trigger effect",
       "english_status": "from_project_cache",
@@ -6622,7 +6622,7 @@
     {
       "name": "EFFECT_TYPE_QUICK_O",
       "value": "0x0100",
-      "section": "========== Types ==========\t--效果类型（定义效果触发类型，和codes一起使用）",
+      "section": "Types",
       "comment_zh": "诱发即时效果",
       "comment_en": "Quick Optional effect",
       "english_status": "from_project_cache",
@@ -6646,7 +6646,7 @@
     {
       "name": "EFFECT_TYPE_TRIGGER_F",
       "value": "0x0200",
-      "section": "========== Types ==========\t--效果类型（定义效果触发类型，和codes一起使用）",
+      "section": "Types",
       "comment_zh": "诱发必发效果",
       "comment_en": "Mandatory Trigger effect",
       "english_status": "from_project_cache",
@@ -6670,7 +6670,7 @@
     {
       "name": "EFFECT_TYPE_QUICK_F",
       "value": "0x0400",
-      "section": "========== Types ==========\t--效果类型（定义效果触发类型，和codes一起使用）",
+      "section": "Types",
       "comment_zh": "诱发即时必发效果（熊猫龙等）",
       "comment_en": "Mandatory Quick effect (e.g., Dragonmaid Tidying)",
       "english_status": "from_project_cache",
@@ -6694,7 +6694,7 @@
     {
       "name": "EFFECT_TYPE_CONTINUOUS",
       "value": "0x0800",
-      "section": "========== Types ==========\t--效果类型（定义效果触发类型，和codes一起使用）",
+      "section": "Types",
       "comment_zh": "由事件觸發的輔助用效果/永續效果",
       "comment_en": "Auxiliary effect triggered by events / Continuous effect",
       "english_status": "from_project_cache",
@@ -6718,7 +6718,7 @@
     {
       "name": "EFFECT_TYPE_XMATERIAL",
       "value": "0x1000",
-      "section": "========== Types ==========\t--效果类型（定义效果触发类型，和codes一起使用）",
+      "section": "Types",
       "comment_zh": "作为超量素材时超量怪兽获得的效果（十二兽）",
       "comment_en": "Effect gained by an Xyz Monster when used as Xyz Material (e.g., Zoodiac)",
       "english_status": "from_project_cache",
@@ -6742,7 +6742,7 @@
     {
       "name": "EFFECT_TYPE_GRANT",
       "value": "0x2000",
-      "section": "========== Types ==========\t--效果类型（定义效果触发类型，和codes一起使用）",
+      "section": "Types",
       "comment_zh": "使其他卡片获得效果（天气模样）",
       "comment_en": "Grants effects to other cards (e.g., Weather Pattern)",
       "english_status": "from_project_cache",
@@ -6766,7 +6766,7 @@
     {
       "name": "EFFECT_TYPE_TARGET",
       "value": "0x4000",
-      "section": "========== Types ==========\t--效果类型（定义效果触发类型，和codes一起使用）",
+      "section": "Types",
       "comment_zh": "影响持续取的对象的效果（基本只用于魔陷）",
       "comment_en": "Continuous effect with sustained targets (mainly for Spells/Traps)",
       "english_status": "from_project_cache",
@@ -6790,7 +6790,7 @@
     {
       "name": "EFFECT_FLAG_INITIAL",
       "value": "0x0001",
-      "section": "========== Flags ==========\t--效果的特殊性质",
+      "section": "Flags",
       "comment_zh": "卡片记载的效果(internal)",
       "comment_en": "Can be activated",
       "english_status": "from_project_cache",
@@ -6814,7 +6814,7 @@
     {
       "name": "EFFECT_FLAG_FUNC_VALUE",
       "value": "0x0002",
-      "section": "========== Flags ==========\t--效果的特殊性质",
+      "section": "Flags",
       "comment_zh": "此效果的Value属性是函数(internal)",
       "comment_en": "The Value property of this effect is a function",
       "english_status": "from_project_cache",
@@ -6838,7 +6838,7 @@
     {
       "name": "EFFECT_FLAG_COUNT_LIMIT",
       "value": "0x0004",
-      "section": "========== Flags ==========\t--效果的特殊性质",
+      "section": "Flags",
       "comment_zh": "发动次数限制(internal)",
       "comment_en": "Activation count limit",
       "english_status": "from_project_cache",
@@ -6862,7 +6862,7 @@
     {
       "name": "EFFECT_FLAG_FIELD_ONLY",
       "value": "0x0008",
-      "section": "========== Flags ==========\t--效果的特殊性质",
+      "section": "Flags",
       "comment_zh": "此效果是注册给玩家的(internal)",
       "comment_en": "Registered to the global environment",
       "english_status": "from_project_cache",
@@ -6886,7 +6886,7 @@
     {
       "name": "EFFECT_FLAG_CARD_TARGET",
       "value": "0x0010",
-      "section": "========== Flags ==========\t--效果的特殊性质",
+      "section": "Flags",
       "comment_zh": "取对象效果",
       "comment_en": "Targeting effect",
       "english_status": "from_project_cache",
@@ -6910,7 +6910,7 @@
     {
       "name": "EFFECT_FLAG_IGNORE_RANGE",
       "value": "0x0020",
-      "section": "========== Flags ==========\t--效果的特殊性质",
+      "section": "Flags",
       "comment_zh": "影响所有区域的卡（大宇宙）",
       "comment_en": "Affects cards in all zones (e.g., Macro Cosmos)",
       "english_status": "from_project_cache",
@@ -6934,7 +6934,7 @@
     {
       "name": "EFFECT_FLAG_ABSOLUTE_TARGET",
       "value": "0x0040",
-      "section": "========== Flags ==========\t--效果的特殊性质",
+      "section": "Flags",
       "comment_zh": "Target Range固定為某個玩家的視角所見的自己/對方(internal)",
       "comment_en": "Target Range fixed to a player's perspective of self/opponent (used with SetAbsoluteRange())",
       "english_status": "from_project_cache",
@@ -6958,7 +6958,7 @@
     {
       "name": "EFFECT_FLAG_IGNORE_IMMUNE",
       "value": "0x0080",
-      "section": "========== Flags ==========\t--效果的特殊性质",
+      "section": "Flags",
       "comment_zh": "无视效果免疫",
       "comment_en": "Ignores effect immunity",
       "english_status": "from_project_cache",
@@ -6982,7 +6982,7 @@
     {
       "name": "EFFECT_FLAG_SET_AVAILABLE",
       "value": "0x0100",
-      "section": "========== Flags ==========\t--效果的特殊性质",
+      "section": "Flags",
       "comment_zh": "裡側狀態可發動的效果、影响场上里侧的卡的永續型效果",
       "comment_en": "Effect can activate in face-down state, or continuous effect affecting face-down cards on the field",
       "english_status": "from_project_cache",
@@ -7006,7 +7006,7 @@
     {
       "name": "EFFECT_FLAG_CAN_FORBIDDEN",
       "value": "0x0200",
-      "section": "========== Flags ==========\t--效果的特殊性质",
+      "section": "Flags",
       "comment_zh": "可被禁止令停止適用的效果（與EFFECT_FLAG_CANNOT_DISABLE並用）",
       "comment_en": "Effect that can be stopped by Prohibition (used with EFFECT_FLAG_CANNOT_DISABLE)",
       "english_status": "translated_exact",
@@ -7030,7 +7030,7 @@
     {
       "name": "EFFECT_FLAG_CANNOT_DISABLE",
       "value": "0x0400",
-      "section": "========== Flags ==========\t--效果的特殊性质",
+      "section": "Flags",
       "comment_zh": "效果不会被无效",
       "comment_en": "Effect cannot be negated",
       "english_status": "from_project_cache",
@@ -7054,7 +7054,7 @@
     {
       "name": "EFFECT_FLAG_PLAYER_TARGET",
       "value": "0x0800",
-      "section": "========== Flags ==========\t--效果的特殊性质",
+      "section": "Flags",
       "comment_zh": "含有\"以玩家为对象\"的特性（精靈之鏡）、影響玩家的永續型效果(SetTargetRange()改成指定玩家)",
       "comment_en": "Has \"targeting a player\" property (e.g., Mirror of the Spirits), or continuous effect affecting players (SetTargetRange() changed to target players)",
       "english_status": "from_project_cache",
@@ -7078,7 +7078,7 @@
     {
       "name": "EFFECT_FLAG_BOTH_SIDE",
       "value": "0x1000",
-      "section": "========== Flags ==========\t--效果的特殊性质",
+      "section": "Flags",
       "comment_zh": "双方都能使用（部分场地，弹压）",
       "comment_en": "Usable by both players (e.g., some Field Spells, Imperial Order)",
       "english_status": "from_project_cache",
@@ -7102,7 +7102,7 @@
     {
       "name": "EFFECT_FLAG_COPY",
       "value": "0x2000",
-      "section": "========== Flags ==========\t--效果的特殊性质",
+      "section": "Flags",
       "comment_zh": "复制得到的效果(internal)",
       "comment_en": "Copied effect (internal)",
       "english_status": "translated_exact",
@@ -7126,7 +7126,7 @@
     {
       "name": "EFFECT_FLAG_DAMAGE_STEP",
       "value": "0x4000",
-      "section": "========== Flags ==========\t--效果的特殊性质",
+      "section": "Flags",
       "comment_zh": "可以在伤害步骤发动",
       "comment_en": "Can activate during Damage Step",
       "english_status": "from_project_cache",
@@ -7150,7 +7150,7 @@
     {
       "name": "EFFECT_FLAG_DAMAGE_CAL",
       "value": "0x8000",
-      "section": "========== Flags ==========\t--效果的特殊性质",
+      "section": "Flags",
       "comment_zh": "可以在伤害计算时发动",
       "comment_en": "Can activate during Damage Calculation",
       "english_status": "from_project_cache",
@@ -7174,7 +7174,7 @@
     {
       "name": "EFFECT_FLAG_DELAY",
       "value": "0x10000",
-      "section": "========== Flags ==========\t--效果的特殊性质",
+      "section": "Flags",
       "comment_zh": "場合型誘發效果、用於永續效果的EFFECT_TYPE_CONTINUOUS",
       "comment_en": "Optional trigger effect or used for EFFECT_TYPE_CONTINUOUS continuous effects",
       "english_status": "from_project_cache",
@@ -7198,7 +7198,7 @@
     {
       "name": "EFFECT_FLAG_SINGLE_RANGE",
       "value": "0x20000",
-      "section": "========== Flags ==========\t--效果的特殊性质",
+      "section": "Flags",
       "comment_zh": "只对自己有效",
       "comment_en": "Only affects the card itself",
       "english_status": "from_project_cache",
@@ -7222,7 +7222,7 @@
     {
       "name": "EFFECT_FLAG_UNCOPYABLE",
       "value": "0x40000",
-      "section": "========== Flags ==========\t--效果的特殊性质",
+      "section": "Flags",
       "comment_zh": "不能复制的原始效果（效果外文本）",
       "comment_en": "Original effect cannot be copied (effect text)",
       "english_status": "from_project_cache",
@@ -7246,7 +7246,7 @@
     {
       "name": "EFFECT_FLAG_OATH",
       "value": "0x80000",
-      "section": "========== Flags ==========\t--效果的特殊性质",
+      "section": "Flags",
       "comment_zh": "誓约效果",
       "comment_en": "Oath effect",
       "english_status": "from_project_cache",
@@ -7270,7 +7270,7 @@
     {
       "name": "EFFECT_FLAG_SPSUM_PARAM",
       "value": "0x100000",
-      "section": "========== Flags ==========\t--效果的特殊性质",
+      "section": "Flags",
       "comment_zh": "指定召喚/规则特殊召唤的位置和表示形式(熔岩魔神)",
       "comment_en": "Specifies position and form for summon/special summon (e.g., Lava Golem)",
       "english_status": "from_project_cache",
@@ -7294,7 +7294,7 @@
     {
       "name": "EFFECT_FLAG_REPEAT",
       "value": "0x200000",
-      "section": "========== Flags ==========\t--效果的特殊性质",
+      "section": "Flags",
       "comment_zh": "N/A",
       "comment_en": "N/A",
       "english_status": "from_project_cache",
@@ -7318,7 +7318,7 @@
     {
       "name": "EFFECT_FLAG_NO_TURN_RESET",
       "value": "0x400000",
-      "section": "========== Flags ==========\t--效果的特殊性质",
+      "section": "Flags",
       "comment_zh": "发条等“这张卡在场上只能发动一次”的效果",
       "comment_en": "Effects like \"this card can only activate once while on the field\" (e.g., Springans)",
       "english_status": "from_project_cache",
@@ -7342,7 +7342,7 @@
     {
       "name": "EFFECT_FLAG_EVENT_PLAYER",
       "value": "0x800000",
-      "section": "========== Flags ==========\t--效果的特殊性质",
+      "section": "Flags",
       "comment_zh": "发动/处理效果的玩家为触发事件的玩家而不是卡片的持有者，如仪式魔人，万魔殿",
       "comment_en": "Treated as opponent's effect (action?)",
       "english_status": "from_project_cache",
@@ -7366,7 +7366,7 @@
     {
       "name": "EFFECT_FLAG_OWNER_RELATE",
       "value": "0x1000000",
-      "section": "========== Flags ==========\t--效果的特殊性质",
+      "section": "Flags",
       "comment_zh": "与效果owner关联的效果",
       "comment_en": "Effect tied to the effect's owner",
       "english_status": "from_project_cache",
@@ -7390,7 +7390,7 @@
     {
       "name": "EFFECT_FLAG_CANNOT_INACTIVATE",
       "value": "0x2000000",
-      "section": "========== Flags ==========\t--效果的特殊性质",
+      "section": "Flags",
       "comment_zh": "發動不會被無效",
       "comment_en": "Activation cannot be negated",
       "english_status": "from_project_cache",
@@ -7414,7 +7414,7 @@
     {
       "name": "EFFECT_FLAG_CLIENT_HINT",
       "value": "0x4000000",
-      "section": "========== Flags ==========\t--效果的特殊性质",
+      "section": "Flags",
       "comment_zh": "客户端提示",
       "comment_en": "Client hint",
       "english_status": "from_project_cache",
@@ -7438,7 +7438,7 @@
     {
       "name": "EFFECT_FLAG_CONTINUOUS_TARGET",
       "value": "0x8000000",
-      "section": "========== Flags ==========\t--效果的特殊性质",
+      "section": "Flags",
       "comment_zh": "建立持續對象的永續魔法/永續陷阱/早埋系以外的裝備魔法卡",
       "comment_en": "Continuous Spell/Trap or Equip Spell (excluding early burial types) that establishes continuous targets",
       "english_status": "from_project_cache",
@@ -7462,7 +7462,7 @@
     {
       "name": "EFFECT_FLAG_LIMIT_ZONE",
       "value": "0x10000000",
-      "section": "========== Flags ==========\t--效果的特殊性质",
+      "section": "Flags",
       "comment_zh": "限制魔法·陷阱卡发动时可以放置的区域",
       "comment_en": "Restricts zones where Spell/Trap cards can be activated",
       "english_status": "from_project_cache",
@@ -7486,7 +7486,7 @@
     {
       "name": "EFFECT_FLAG_ACTIVATE_CONDITION",
       "value": "0x20000000",
-      "section": "========== Flags ==========\t--效果的特殊性质",
+      "section": "Flags",
       "comment_zh": "诱发效果即将发动时检查条件（手卡诱发之外的无此标记的诱发效果为触发事件时检查）",
       "comment_en": "Check the condition when a Trigger Effect is about to activate; Trigger Effects without this flag, except hand triggers, check when the event occurs",
       "english_status": "translated_exact",
@@ -7510,7 +7510,7 @@
     {
       "name": "EFFECT_FLAG_CVAL_CHECK",
       "value": "0x40000000",
-      "section": "========== Flags ==========\t--效果的特殊性质",
+      "section": "Flags",
       "comment_zh": "N/A",
       "comment_en": "N/A",
       "english_status": "from_project_cache",
@@ -7534,7 +7534,7 @@
     {
       "name": "EFFECT_FLAG_IMMEDIATELY_APPLY",
       "value": "0x80000000",
-      "section": "========== Flags ==========\t--效果的特殊性质",
+      "section": "Flags",
       "comment_zh": "卡在发动时效果就立即适用",
       "comment_en": "Effect applies immediately upon card activation",
       "english_status": "from_project_cache",
@@ -7558,7 +7558,7 @@
     {
       "name": "EFFECT_FLAG_COIN",
       "value": "0x100000000",
-      "section": "========== Flags ==========\t--效果的特殊性质",
+      "section": "Flags",
       "comment_zh": "",
       "comment_en": "Effect uses a coin toss",
       "english_status": "translated_name",
@@ -7582,7 +7582,7 @@
     {
       "name": "EFFECT_FLAG_DICE",
       "value": "0x200000000",
-      "section": "========== Flags ==========\t--效果的特殊性质",
+      "section": "Flags",
       "comment_zh": "",
       "comment_en": "Effect uses a die roll",
       "english_status": "translated_name",
@@ -7606,7 +7606,7 @@
     {
       "name": "EFFECT_FLAG_FUSION_SUMMON",
       "value": "0x400000000",
-      "section": "========== Flags ==========\t--效果的特殊性质",
+      "section": "Flags",
       "comment_zh": "",
       "comment_en": "Effect performs a Fusion Summon",
       "english_status": "translated_name",
@@ -7630,7 +7630,7 @@
     {
       "name": "EFFECT_FLAG2_REPEAT_UPDATE",
       "value": "0x0001",
-      "section": "========== Flags ==========\t--效果的特殊性质",
+      "section": "Flags",
       "comment_zh": "最后计算的攻击力上升",
       "comment_en": "Final calculated ATK increase",
       "english_status": "translated_exact",
@@ -7654,7 +7654,7 @@
     {
       "name": "EFFECT_FLAG2_COF",
       "value": "0x0002",
-      "section": "========== Flags ==========\t--效果的特殊性质",
+      "section": "Flags",
       "comment_zh": "通常魔法卡在MP1以外发动（邪恶的仪式的特殊处理）",
       "comment_en": "Normal Spell can activate outside Main Phase 1 (special handling for Evil Ritual)",
       "english_status": "from_project_cache",
@@ -7678,7 +7678,7 @@
     {
       "name": "EFFECT_FLAG2_WICKED",
       "value": "0x0004",
-      "section": "========== Flags ==========\t--效果的特殊性质",
+      "section": "Flags",
       "comment_zh": "神之化身/恐惧之源的攻击力变化最后计算",
       "comment_en": "Attack change for The Wicked Avatar/Dreadroot calculated last",
       "english_status": "from_project_cache",
@@ -7702,7 +7702,7 @@
     {
       "name": "EFFECT_FLAG2_OPTION",
       "value": "0x0008",
-      "section": "========== Flags ==========\t--效果的特殊性质",
+      "section": "Flags",
       "comment_zh": "子機",
       "comment_en": "Child Machine",
       "english_status": "from_project_cache",
@@ -7726,7 +7726,7 @@
     {
       "name": "EFFECT_IMMUNE_EFFECT",
       "value": "1",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "效果免疫",
       "comment_en": "Immune to effects",
       "english_status": "from_project_cache",
@@ -7750,7 +7750,7 @@
     {
       "name": "EFFECT_DISABLE",
       "value": "2",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "效果无效（技能抽取）",
       "comment_en": "Negates effects (e.g., Skill Drain)",
       "english_status": "from_project_cache",
@@ -7774,7 +7774,7 @@
     {
       "name": "EFFECT_CANNOT_DISABLE",
       "value": "3",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "卡的效果不能被无效",
       "comment_en": "Effect cannot be negated",
       "english_status": "from_project_cache",
@@ -7798,7 +7798,7 @@
     {
       "name": "EFFECT_SET_CONTROL",
       "value": "4",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "设置控制权",
       "comment_en": "Sets control",
       "english_status": "from_project_cache",
@@ -7822,7 +7822,7 @@
     {
       "name": "EFFECT_CANNOT_CHANGE_CONTROL",
       "value": "5",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "不能改变控制权",
       "comment_en": "Cannot change control",
       "english_status": "from_project_cache",
@@ -7846,7 +7846,7 @@
     {
       "name": "EFFECT_CANNOT_ACTIVATE",
       "value": "6",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "玩家不能发动效果",
       "comment_en": "Player cannot activate effects",
       "english_status": "from_project_cache",
@@ -7870,7 +7870,7 @@
     {
       "name": "EFFECT_CANNOT_TRIGGER",
       "value": "7",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "卡不能发动效果",
       "comment_en": "Card cannot trigger effects",
       "english_status": "from_project_cache",
@@ -7894,7 +7894,7 @@
     {
       "name": "EFFECT_DISABLE_EFFECT",
       "value": "8",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "效果无效（聖杯）",
       "comment_en": "Negates effects (e.g., Forbidden Chalice)",
       "english_status": "from_project_cache",
@@ -7918,7 +7918,7 @@
     {
       "name": "EFFECT_DISABLE_CHAIN",
       "value": "9",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "在連鎖串中無效(processor.cpp)",
       "comment_en": "Negates in chain (processor.cpp)",
       "english_status": "from_project_cache",
@@ -7942,7 +7942,7 @@
     {
       "name": "EFFECT_DISABLE_TRAPMONSTER",
       "value": "10",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "陷阱怪兽无效",
       "comment_en": "Negates Trap Monsters",
       "english_status": "from_project_cache",
@@ -7966,7 +7966,7 @@
     {
       "name": "EFFECT_CANNOT_INACTIVATE",
       "value": "12",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "发动不能被无效",
       "comment_en": "Activation cannot be negated",
       "english_status": "from_project_cache",
@@ -7990,7 +7990,7 @@
     {
       "name": "EFFECT_CANNOT_DISEFFECT",
       "value": "13",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "发动的效果不能被无效",
       "comment_en": "Cannot be negated during effect processing",
       "english_status": "from_project_cache",
@@ -8014,7 +8014,7 @@
     {
       "name": "EFFECT_CANNOT_CHANGE_POSITION",
       "value": "14",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "不能改变表示形式",
       "comment_en": "Cannot change position",
       "english_status": "from_project_cache",
@@ -8038,7 +8038,7 @@
     {
       "name": "EFFECT_TRAP_ACT_IN_HAND",
       "value": "15",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "陷阱可以从手牌发动",
       "comment_en": "Trap can activate from hand",
       "english_status": "from_project_cache",
@@ -8062,7 +8062,7 @@
     {
       "name": "EFFECT_TRAP_ACT_IN_SET_TURN",
       "value": "16",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "陷阱可以在盖放的回合发动",
       "comment_en": "Trap can activate in the turn it was Set",
       "english_status": "from_project_cache",
@@ -8086,7 +8086,7 @@
     {
       "name": "EFFECT_REMAIN_FIELD",
       "value": "17",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "X回合内留在场上（光之护封剑等）",
       "comment_en": "Remains on field for X turns (e.g., Swords of Revealing Light)",
       "english_status": "from_project_cache",
@@ -8110,7 +8110,7 @@
     {
       "name": "EFFECT_MONSTER_SSET",
       "value": "18",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "怪兽可以在魔陷区放置",
       "comment_en": "Monster can be Set in Spell/Trap Zone",
       "english_status": "from_project_cache",
@@ -8134,7 +8134,7 @@
     {
       "name": "EFFECT_CANNOT_SUMMON",
       "value": "20",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "不能召唤怪兽",
       "comment_en": "Cannot Normal Summon monsters",
       "english_status": "from_project_cache",
@@ -8158,7 +8158,7 @@
     {
       "name": "EFFECT_CANNOT_FLIP_SUMMON",
       "value": "21",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "不能翻转召唤怪兽",
       "comment_en": "Cannot Flip Summon monsters",
       "english_status": "from_project_cache",
@@ -8182,7 +8182,7 @@
     {
       "name": "EFFECT_CANNOT_SPECIAL_SUMMON",
       "value": "22",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "不能特殊召唤怪兽",
       "comment_en": "Cannot Special Summon monsters",
       "english_status": "from_project_cache",
@@ -8206,7 +8206,7 @@
     {
       "name": "EFFECT_CANNOT_MSET",
       "value": "23",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "不能覆盖怪兽",
       "comment_en": "Cannot Set monsters",
       "english_status": "from_project_cache",
@@ -8230,7 +8230,7 @@
     {
       "name": "EFFECT_CANNOT_SSET",
       "value": "24",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "不能覆盖魔陷",
       "comment_en": "Cannot Set Spells/Traps",
       "english_status": "from_project_cache",
@@ -8254,7 +8254,7 @@
     {
       "name": "EFFECT_CANNOT_DRAW",
       "value": "25",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "不能抽卡",
       "comment_en": "Cannot draw cards",
       "english_status": "from_project_cache",
@@ -8278,7 +8278,7 @@
     {
       "name": "EFFECT_CANNOT_DISABLE_SUMMON",
       "value": "26",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "召唤不会无效",
       "comment_en": "Summon cannot be negated",
       "english_status": "from_project_cache",
@@ -8302,7 +8302,7 @@
     {
       "name": "EFFECT_CANNOT_DISABLE_SPSUMMON",
       "value": "27",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "特殊召唤不会无效",
       "comment_en": "Special Summon cannot be negated",
       "english_status": "from_project_cache",
@@ -8326,7 +8326,7 @@
     {
       "name": "EFFECT_SET_SUMMON_COUNT_LIMIT",
       "value": "28",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "设置每回合召唤次数",
       "comment_en": "Limits Normal Summon count per turn",
       "english_status": "from_project_cache",
@@ -8350,7 +8350,7 @@
     {
       "name": "EFFECT_EXTRA_SUMMON_COUNT",
       "value": "29",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "增加召唤（通常召唤）次数",
       "comment_en": "Increases Normal Summon count",
       "english_status": "from_project_cache",
@@ -8374,7 +8374,7 @@
     {
       "name": "EFFECT_SPSUMMON_CONDITION",
       "value": "30",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "特殊召唤条件",
       "comment_en": "Special Summon condition",
       "english_status": "from_project_cache",
@@ -8398,7 +8398,7 @@
     {
       "name": "EFFECT_REVIVE_LIMIT",
       "value": "31",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "有苏生限制的怪獸(Card.EnableReviveLimit())",
       "comment_en": "Monsters with revival restrictions (Card.EnableReviveLimit())",
       "english_status": "from_project_cache",
@@ -8422,7 +8422,7 @@
     {
       "name": "EFFECT_SUMMON_PROC",
       "value": "32",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "召唤规则效果",
       "comment_en": "Summon rule effect",
       "english_status": "from_project_cache",
@@ -8446,7 +8446,7 @@
     {
       "name": "EFFECT_LIMIT_SUMMON_PROC",
       "value": "33",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "召唤规则限制",
       "comment_en": "Summon rule restriction",
       "english_status": "from_project_cache",
@@ -8470,7 +8470,7 @@
     {
       "name": "EFFECT_SPSUMMON_PROC",
       "value": "34",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "特殊召唤规则",
       "comment_en": "Special Summon rule",
       "english_status": "from_project_cache",
@@ -8494,7 +8494,7 @@
     {
       "name": "EFFECT_EXTRA_SET_COUNT",
       "value": "35",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "增加盖放（通常召唤）次数",
       "comment_en": "Increases Set (Normal Summon) count",
       "english_status": "from_project_cache",
@@ -8518,7 +8518,7 @@
     {
       "name": "EFFECT_SET_PROC",
       "value": "36",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "放置（通常召唤）规则",
       "comment_en": "Set (Normal Summon) rule",
       "english_status": "from_project_cache",
@@ -8542,7 +8542,7 @@
     {
       "name": "EFFECT_LIMIT_SET_PROC",
       "value": "37",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "放置（通常召唤）规则限制",
       "comment_en": "Set (Normal Summon) rule restriction",
       "english_status": "from_project_cache",
@@ -8566,7 +8566,7 @@
     {
       "name": "EFFECT_DIVINE_LIGHT",
       "value": "38",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "神圣光辉",
       "comment_en": "Divine Light",
       "english_status": "from_project_cache",
@@ -8590,7 +8590,7 @@
     {
       "name": "EFFECT_CANNOT_DISABLE_FLIP_SUMMON",
       "value": "39",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "翻转召唤不会无效",
       "comment_en": "Flip Summon cannot be negated",
       "english_status": "from_project_cache",
@@ -8614,7 +8614,7 @@
     {
       "name": "EFFECT_INDESTRUCTABLE",
       "value": "40",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "不会被破坏",
       "comment_en": "Cannot be destroyed",
       "english_status": "from_project_cache",
@@ -8638,7 +8638,7 @@
     {
       "name": "EFFECT_INDESTRUCTABLE_EFFECT",
       "value": "41",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "不会被效果破坏",
       "comment_en": "Cannot be destroyed by effects",
       "english_status": "from_project_cache",
@@ -8662,7 +8662,7 @@
     {
       "name": "EFFECT_INDESTRUCTABLE_BATTLE",
       "value": "42",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "不会被战斗破坏",
       "comment_en": "Cannot be destroyed by battle",
       "english_status": "from_project_cache",
@@ -8686,7 +8686,7 @@
     {
       "name": "EFFECT_UNRELEASABLE_SUM",
       "value": "43",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "不能做上级召唤的祭品",
       "comment_en": "Cannot be used as Tribute for Advanced Summon",
       "english_status": "from_project_cache",
@@ -8710,7 +8710,7 @@
     {
       "name": "EFFECT_UNRELEASABLE_NONSUM",
       "value": "44",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "不能做上级召唤以外的祭品",
       "comment_en": "Cannot be used as Tribute for non-Advanced Summon",
       "english_status": "from_project_cache",
@@ -8734,7 +8734,7 @@
     {
       "name": "EFFECT_DESTROY_SUBSTITUTE",
       "value": "45",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "必選的代替破壞(此卡被破壞時用其他卡代替)",
       "comment_en": "Mandatory destruction substitute (replace this card's destruction with another card)",
       "english_status": "from_project_cache",
@@ -8758,7 +8758,7 @@
     {
       "name": "EFFECT_CANNOT_RELEASE",
       "value": "46",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "不能进行解放行为",
       "comment_en": "Cannot perform Tribute actions",
       "english_status": "from_project_cache",
@@ -8782,7 +8782,7 @@
     {
       "name": "EFFECT_INDESTRUCTABLE_COUNT",
       "value": "47",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "一回合几次不会被破坏",
       "comment_en": "Cannot be destroyed X times per turn",
       "english_status": "from_project_cache",
@@ -8806,7 +8806,7 @@
     {
       "name": "EFFECT_UNRELEASABLE_EFFECT",
       "value": "48",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "不能被解放",
       "comment_en": "Cannot be Tributed",
       "english_status": "from_project_cache",
@@ -8830,7 +8830,7 @@
     {
       "name": "EFFECT_DESTROY_REPLACE",
       "value": "50",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "可選的代替破壞(將破壞改成其他動作)",
       "comment_en": "Optional destruction substitute (replace destruction with another action)",
       "english_status": "from_project_cache",
@@ -8854,7 +8854,7 @@
     {
       "name": "EFFECT_RELEASE_REPLACE",
       "value": "51",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "代替解放",
       "comment_en": "Tribute substitute",
       "english_status": "from_project_cache",
@@ -8878,7 +8878,7 @@
     {
       "name": "EFFECT_SEND_REPLACE",
       "value": "52",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "可以不送去XX而送去OO（甜点城堡等）",
       "comment_en": "Can send to another location instead of the intended one (e.g., Dessert Castle)",
       "english_status": "from_project_cache",
@@ -8902,7 +8902,7 @@
     {
       "name": "EFFECT_CANNOT_DISCARD_HAND",
       "value": "55",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "不能丢弃手牌",
       "comment_en": "Cannot discard from hand",
       "english_status": "from_project_cache",
@@ -8926,7 +8926,7 @@
     {
       "name": "EFFECT_CANNOT_DISCARD_DECK",
       "value": "56",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "不能把卡组的卡送去墓地",
       "comment_en": "Cannot send cards from Deck to Graveyard",
       "english_status": "from_project_cache",
@@ -8950,7 +8950,7 @@
     {
       "name": "EFFECT_CANNOT_USE_AS_COST",
       "value": "57",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "不能作为COST使用",
       "comment_en": "Cannot be used as cost",
       "english_status": "from_project_cache",
@@ -8974,7 +8974,7 @@
     {
       "name": "EFFECT_CANNOT_PLACE_COUNTER",
       "value": "58",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "不能放置counter",
       "comment_en": "Cannot place counters",
       "english_status": "from_project_cache",
@@ -8998,7 +8998,7 @@
     {
       "name": "EFFECT_CANNOT_TO_GRAVE_AS_COST",
       "value": "59",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "不能作为COST送去墓地",
       "comment_en": "Cannot be sent to Graveyard as cost",
       "english_status": "from_project_cache",
@@ -9022,7 +9022,7 @@
     {
       "name": "EFFECT_LEAVE_FIELD_REDIRECT",
       "value": "60",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "离场时重新指定去向",
       "comment_en": "Redirect destination when leaving field",
       "english_status": "from_project_cache",
@@ -9046,7 +9046,7 @@
     {
       "name": "EFFECT_TO_HAND_REDIRECT",
       "value": "61",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "回手牌时重新指定去向",
       "comment_en": "Redirect destination when returning to hand",
       "english_status": "from_project_cache",
@@ -9070,7 +9070,7 @@
     {
       "name": "EFFECT_TO_DECK_REDIRECT",
       "value": "62",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "回卡组时重新指定去向",
       "comment_en": "Redirect destination when returning to Deck",
       "english_status": "from_project_cache",
@@ -9094,7 +9094,7 @@
     {
       "name": "EFFECT_TO_GRAVE_REDIRECT",
       "value": "63",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "去墓地时重新指定去向",
       "comment_en": "Redirect destination when sent to Graveyard",
       "english_status": "from_project_cache",
@@ -9118,7 +9118,7 @@
     {
       "name": "EFFECT_REMOVE_REDIRECT",
       "value": "64",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "除外时重新指定去向",
       "comment_en": "Redirect destination when banished",
       "english_status": "from_project_cache",
@@ -9142,7 +9142,7 @@
     {
       "name": "EFFECT_CANNOT_TO_HAND",
       "value": "65",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "不能加入手牌",
       "comment_en": "Cannot be added to hand",
       "english_status": "from_project_cache",
@@ -9166,7 +9166,7 @@
     {
       "name": "EFFECT_CANNOT_TO_DECK",
       "value": "66",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "不能回卡组",
       "comment_en": "Cannot be returned to Deck",
       "english_status": "from_project_cache",
@@ -9190,7 +9190,7 @@
     {
       "name": "EFFECT_CANNOT_REMOVE",
       "value": "67",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "不能除外",
       "comment_en": "Cannot be banished",
       "english_status": "from_project_cache",
@@ -9214,7 +9214,7 @@
     {
       "name": "EFFECT_CANNOT_TO_GRAVE",
       "value": "68",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "不能去墓地",
       "comment_en": "Cannot be sent to Graveyard",
       "english_status": "from_project_cache",
@@ -9238,7 +9238,7 @@
     {
       "name": "EFFECT_CANNOT_TURN_SET",
       "value": "69",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "不能变里侧",
       "comment_en": "Cannot be Set face-down",
       "english_status": "from_project_cache",
@@ -9262,7 +9262,7 @@
     {
       "name": "EFFECT_CANNOT_BE_BATTLE_TARGET",
       "value": "70",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "不能成为攻击对象",
       "comment_en": "Cannot be targeted for attacks",
       "english_status": "from_project_cache",
@@ -9286,7 +9286,7 @@
     {
       "name": "EFFECT_CANNOT_BE_EFFECT_TARGET",
       "value": "71",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "不能成为效果对象",
       "comment_en": "Cannot be targeted by effects",
       "english_status": "from_project_cache",
@@ -9310,7 +9310,7 @@
     {
       "name": "EFFECT_IGNORE_BATTLE_TARGET",
       "value": "72",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "不能成为攻击对象-鶸型（传说的渔人）",
       "comment_en": "Cannot be targeted for attacks - weak type (e.g., Legendary Fisherman)",
       "english_status": "from_project_cache",
@@ -9334,7 +9334,7 @@
     {
       "name": "EFFECT_CANNOT_DIRECT_ATTACK",
       "value": "73",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "不能直接攻击",
       "comment_en": "Cannot attack directly",
       "english_status": "from_project_cache",
@@ -9358,7 +9358,7 @@
     {
       "name": "EFFECT_DIRECT_ATTACK",
       "value": "74",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "可以直接攻击",
       "comment_en": "Can attack directly",
       "english_status": "from_project_cache",
@@ -9382,7 +9382,7 @@
     {
       "name": "EFFECT_DUAL_STATUS",
       "value": "75",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "二重状态",
       "comment_en": "Gemini status",
       "english_status": "from_project_cache",
@@ -9406,7 +9406,7 @@
     {
       "name": "EFFECT_EQUIP_LIMIT",
       "value": "76",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "装备对象限制",
       "comment_en": "Equip target restriction",
       "english_status": "from_project_cache",
@@ -9430,7 +9430,7 @@
     {
       "name": "EFFECT_DUAL_SUMMONABLE",
       "value": "77",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "可以再度召唤",
       "comment_en": "Can be re-summoned (Gemini)",
       "english_status": "from_project_cache",
@@ -9454,7 +9454,7 @@
     {
       "name": "EFFECT_UNION_LIMIT",
       "value": "78",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "",
       "comment_en": "Union restriction",
       "english_status": "from_project_cache",
@@ -9478,7 +9478,7 @@
     {
       "name": "EFFECT_REVERSE_DAMAGE",
       "value": "80",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "伤害变回复",
       "comment_en": "Converts damage to recovery",
       "english_status": "from_project_cache",
@@ -9502,7 +9502,7 @@
     {
       "name": "EFFECT_REVERSE_RECOVER",
       "value": "81",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "回复变伤害",
       "comment_en": "Converts recovery to damage",
       "english_status": "from_project_cache",
@@ -9526,7 +9526,7 @@
     {
       "name": "EFFECT_CHANGE_DAMAGE",
       "value": "82",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "改变伤害数值",
       "comment_en": "Changes damage value",
       "english_status": "from_project_cache",
@@ -9550,7 +9550,7 @@
     {
       "name": "EFFECT_REFLECT_DAMAGE",
       "value": "83",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "反射伤害",
       "comment_en": "Reflects damage",
       "english_status": "from_project_cache",
@@ -9574,7 +9574,7 @@
     {
       "name": "EFFECT_CANNOT_ATTACK",
       "value": "85",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "不能攻击",
       "comment_en": "Cannot attack",
       "english_status": "from_project_cache",
@@ -9598,7 +9598,7 @@
     {
       "name": "EFFECT_CANNOT_ATTACK_ANNOUNCE",
       "value": "86",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "不能攻击宣言",
       "comment_en": "Cannot declare an attack",
       "english_status": "from_project_cache",
@@ -9622,7 +9622,7 @@
     {
       "name": "EFFECT_CANNOT_CHANGE_POS_E",
       "value": "87",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "不会被卡的效果变成守备表示（攻击性云魔物）",
       "comment_en": "Cannot be changed to Defense Position by effects (e.g., Aggro Cloud)",
       "english_status": "from_project_cache",
@@ -9646,7 +9646,7 @@
     {
       "name": "EFFECT_ACTIVATE_COST",
       "value": "90",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "发动代价（魔力之枷）",
       "comment_en": "Activation cost (e.g., Magical Shackles)",
       "english_status": "from_project_cache",
@@ -9670,7 +9670,7 @@
     {
       "name": "EFFECT_SUMMON_COST",
       "value": "91",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "召唤代价",
       "comment_en": "Summon cost",
       "english_status": "from_project_cache",
@@ -9694,7 +9694,7 @@
     {
       "name": "EFFECT_SPSUMMON_COST",
       "value": "92",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "特殊召唤代价（暴君龙）",
       "comment_en": "Special Summon cost (e.g., Tyrant Dragon)",
       "english_status": "from_project_cache",
@@ -9718,7 +9718,7 @@
     {
       "name": "EFFECT_FLIPSUMMON_COST",
       "value": "93",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "翻转召唤代价",
       "comment_en": "Flip Summon cost",
       "english_status": "from_project_cache",
@@ -9742,7 +9742,7 @@
     {
       "name": "EFFECT_MSET_COST",
       "value": "94",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "怪兽放置代价",
       "comment_en": "Monster Set cost",
       "english_status": "from_project_cache",
@@ -9766,7 +9766,7 @@
     {
       "name": "EFFECT_SSET_COST",
       "value": "95",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "魔陷放置代价",
       "comment_en": "Spell/Trap Set cost",
       "english_status": "from_project_cache",
@@ -9790,7 +9790,7 @@
     {
       "name": "EFFECT_ATTACK_COST",
       "value": "96",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "攻击代价（霞之谷猎鹰）",
       "comment_en": "Attack cost (e.g., Mist Valley Falcon)",
       "english_status": "from_project_cache",
@@ -9814,7 +9814,7 @@
     {
       "name": "EFFECT_UPDATE_ATTACK",
       "value": "100",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "增减攻击力",
       "comment_en": "Increase/decrease ATK",
       "english_status": "from_project_cache",
@@ -9838,7 +9838,7 @@
     {
       "name": "EFFECT_SET_ATTACK",
       "value": "101",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "设置自身攻击力、攻击力变成X特殊召唤、持续改变攻击力",
       "comment_en": "Set ATK, ATK becomes X for Special Summon, or continuously change ATK",
       "english_status": "from_project_cache",
@@ -9862,7 +9862,7 @@
     {
       "name": "EFFECT_SET_ATTACK_FINAL",
       "value": "102",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "暂时改变攻击力（所有置入连锁的效果）",
       "comment_en": "Temporarily change ATK (all chain-entering effects)",
       "english_status": "from_project_cache",
@@ -9886,7 +9886,7 @@
     {
       "name": "EFFECT_SET_BASE_ATTACK",
       "value": "103",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "设置自身原本攻击力、持续改变原本攻击力",
       "comment_en": "Set original ATK or continuously change original ATK",
       "english_status": "from_project_cache",
@@ -9910,7 +9910,7 @@
     {
       "name": "EFFECT_UPDATE_DEFENSE",
       "value": "104",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "增减守备力",
       "comment_en": "Increase/decrease DEF",
       "english_status": "from_project_cache",
@@ -9934,7 +9934,7 @@
     {
       "name": "EFFECT_SET_DEFENSE",
       "value": "105",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "设置自身守备力、守备力变成X特殊召唤、持续改变守备力",
       "comment_en": "Set DEF, DEF becomes X for Special Summon, or continuously change DEF",
       "english_status": "from_project_cache",
@@ -9958,7 +9958,7 @@
     {
       "name": "EFFECT_SET_DEFENSE_FINAL",
       "value": "106",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "暂时改变守备力（所有置入连锁的效果）",
       "comment_en": "Temporarily change DEF (all chain-entering effects)",
       "english_status": "from_project_cache",
@@ -9982,7 +9982,7 @@
     {
       "name": "EFFECT_SET_BASE_DEFENSE",
       "value": "107",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "设置自身原本守备力、持续改变原本守备力",
       "comment_en": "Set original DEF or continuously change original DEF",
       "english_status": "from_project_cache",
@@ -10006,7 +10006,7 @@
     {
       "name": "EFFECT_REVERSE_UPDATE",
       "value": "108",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "倒置增减攻击力、防御力（天邪鬼）",
       "comment_en": "Invert ATK/DEF increase/decrease (e.g., Tengu)",
       "english_status": "from_project_cache",
@@ -10030,7 +10030,7 @@
     {
       "name": "EFFECT_SWAP_AD",
       "value": "109",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "交换攻守(超級漏洞人)",
       "comment_en": "Swap ATK and DEF (e.g., Super Crashbug)",
       "english_status": "from_project_cache",
@@ -10054,7 +10054,7 @@
     {
       "name": "EFFECT_SWAP_BASE_AD",
       "value": "110",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "交换原本攻守",
       "comment_en": "Swap original ATK and DEF",
       "english_status": "from_project_cache",
@@ -10078,7 +10078,7 @@
     {
       "name": "EFFECT_SET_BASE_ATTACK_FINAL",
       "value": "111",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "暂时改变原本攻击力",
       "comment_en": "Temporarily change original ATK",
       "english_status": "from_project_cache",
@@ -10102,7 +10102,7 @@
     {
       "name": "EFFECT_SET_BASE_DEFENSE_FINAL",
       "value": "112",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "暂时改变原本防御力",
       "comment_en": "Temporarily change original DEF",
       "english_status": "from_project_cache",
@@ -10126,7 +10126,7 @@
     {
       "name": "EFFECT_ADD_CODE",
       "value": "113",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "增加卡名",
       "comment_en": "Add card code",
       "english_status": "from_project_cache",
@@ -10150,7 +10150,7 @@
     {
       "name": "EFFECT_CHANGE_CODE",
       "value": "114",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "改变卡名",
       "comment_en": "Change card code",
       "english_status": "from_project_cache",
@@ -10174,7 +10174,7 @@
     {
       "name": "EFFECT_ADD_TYPE",
       "value": "115",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "增加卡片种类（types）",
       "comment_en": "Add card type (Types)",
       "english_status": "from_project_cache",
@@ -10198,7 +10198,7 @@
     {
       "name": "EFFECT_REMOVE_TYPE",
       "value": "116",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "删除卡片种类",
       "comment_en": "Remove card type",
       "english_status": "from_project_cache",
@@ -10222,7 +10222,7 @@
     {
       "name": "EFFECT_CHANGE_TYPE",
       "value": "117",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "改变卡片种类",
       "comment_en": "Change card type",
       "english_status": "from_project_cache",
@@ -10246,7 +10246,7 @@
     {
       "name": "EFFECT_ADD_RACE",
       "value": "120",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "增加种族",
       "comment_en": "Add race",
       "english_status": "from_project_cache",
@@ -10270,7 +10270,7 @@
     {
       "name": "EFFECT_REMOVE_RACE",
       "value": "121",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "删除种族",
       "comment_en": "Remove race",
       "english_status": "from_project_cache",
@@ -10294,7 +10294,7 @@
     {
       "name": "EFFECT_CHANGE_RACE",
       "value": "122",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "改变种族",
       "comment_en": "Change race",
       "english_status": "from_project_cache",
@@ -10318,7 +10318,7 @@
     {
       "name": "EFFECT_ADD_ATTRIBUTE",
       "value": "125",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "增加属性",
       "comment_en": "Add attribute",
       "english_status": "from_project_cache",
@@ -10342,7 +10342,7 @@
     {
       "name": "EFFECT_REMOVE_ATTRIBUTE",
       "value": "126",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "删除属性",
       "comment_en": "Remove attribute",
       "english_status": "from_project_cache",
@@ -10366,7 +10366,7 @@
     {
       "name": "EFFECT_CHANGE_ATTRIBUTE",
       "value": "127",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "改变属性",
       "comment_en": "Change attribute",
       "english_status": "from_project_cache",
@@ -10390,7 +10390,7 @@
     {
       "name": "EFFECT_UPDATE_LEVEL",
       "value": "130",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "改变等级",
       "comment_en": "Change Level",
       "english_status": "from_project_cache",
@@ -10414,7 +10414,7 @@
     {
       "name": "EFFECT_CHANGE_LEVEL",
       "value": "131",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "设置等级",
       "comment_en": "Set Level",
       "english_status": "from_project_cache",
@@ -10438,7 +10438,7 @@
     {
       "name": "EFFECT_UPDATE_RANK",
       "value": "132",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "改变阶级",
       "comment_en": "Change Rank",
       "english_status": "from_project_cache",
@@ -10462,7 +10462,7 @@
     {
       "name": "EFFECT_CHANGE_RANK",
       "value": "133",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "设置阶级",
       "comment_en": "Set Rank",
       "english_status": "from_project_cache",
@@ -10486,7 +10486,7 @@
     {
       "name": "EFFECT_UPDATE_LSCALE",
       "value": "134",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "改变左刻度",
       "comment_en": "Change Left Scale",
       "english_status": "from_project_cache",
@@ -10510,7 +10510,7 @@
     {
       "name": "EFFECT_CHANGE_LSCALE",
       "value": "135",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "设置左刻度",
       "comment_en": "Set Left Scale",
       "english_status": "from_project_cache",
@@ -10534,7 +10534,7 @@
     {
       "name": "EFFECT_UPDATE_RSCALE",
       "value": "136",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "改变右刻度",
       "comment_en": "Change Right Scale",
       "english_status": "from_project_cache",
@@ -10558,7 +10558,7 @@
     {
       "name": "EFFECT_CHANGE_RSCALE",
       "value": "137",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "设置右刻度",
       "comment_en": "Set Right Scale",
       "english_status": "from_project_cache",
@@ -10582,7 +10582,7 @@
     {
       "name": "EFFECT_SET_POSITION",
       "value": "140",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "設定表示形式",
       "comment_en": "Set position",
       "english_status": "from_project_cache",
@@ -10606,7 +10606,7 @@
     {
       "name": "EFFECT_SELF_DESTROY",
       "value": "141",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "不入連鎖的破壞（罪系列等）",
       "comment_en": "Non-chain destruction (e.g., Sin series)",
       "english_status": "from_project_cache",
@@ -10630,7 +10630,7 @@
     {
       "name": "EFFECT_SELF_TOGRAVE",
       "value": "142",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "不入連鎖的送墓",
       "comment_en": "Non-chain send to Graveyard",
       "english_status": "from_project_cache",
@@ -10654,7 +10654,7 @@
     {
       "name": "EFFECT_DOUBLE_TRIBUTE",
       "value": "150",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "可以作为2个祭品",
       "comment_en": "Can be used as two Tributes",
       "english_status": "from_project_cache",
@@ -10678,7 +10678,7 @@
     {
       "name": "EFFECT_DECREASE_TRIBUTE",
       "value": "151",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "减少祭品",
       "comment_en": "Decrease Tributes",
       "english_status": "from_project_cache",
@@ -10702,7 +10702,7 @@
     {
       "name": "EFFECT_DECREASE_TRIBUTE_SET",
       "value": "152",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "减少放置怪兽的祭品",
       "comment_en": "Decrease Tributes for Setting monsters",
       "english_status": "from_project_cache",
@@ -10726,7 +10726,7 @@
     {
       "name": "EFFECT_EXTRA_RELEASE",
       "value": "153",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "必須使用的代替解放（灵魂交错）",
       "comment_en": "Mandatory Tribute substitute (e.g., Soul Exchange)",
       "english_status": "from_project_cache",
@@ -10750,7 +10750,7 @@
     {
       "name": "EFFECT_TRIBUTE_LIMIT",
       "value": "154",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "祭品限制",
       "comment_en": "Tribute restriction",
       "english_status": "from_project_cache",
@@ -10774,7 +10774,7 @@
     {
       "name": "EFFECT_EXTRA_RELEASE_SUM",
       "value": "155",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "代替召唤解放（帝王的烈旋）",
       "comment_en": "Tribute substitute for summon (e.g., Kaiser Cyclone)",
       "english_status": "from_project_cache",
@@ -10798,7 +10798,7 @@
     {
       "name": "EFFECT_TRIPLE_TRIBUTE",
       "value": "156",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "N/A",
       "comment_en": "N/A",
       "english_status": "from_project_cache",
@@ -10822,7 +10822,7 @@
     {
       "name": "EFFECT_ADD_EXTRA_TRIBUTE",
       "value": "157",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "增加可使用的祭品（真龙）",
       "comment_en": "Add usable Tributes (e.g., True Draco)",
       "english_status": "from_project_cache",
@@ -10846,7 +10846,7 @@
     {
       "name": "EFFECT_EXTRA_RELEASE_NONSUM",
       "value": "158",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "代替效果COST的解放（闇黒世界）",
       "comment_en": "Tribute substitute for effect cost (e.g., Dark World)",
       "english_status": "from_project_cache",
@@ -10870,7 +10870,7 @@
     {
       "name": "EFFECT_PUBLIC",
       "value": "160",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "公开手牌",
       "comment_en": "Make hand public",
       "english_status": "from_project_cache",
@@ -10894,7 +10894,7 @@
     {
       "name": "EFFECT_COUNTER_PERMIT",
       "value": "0x10000",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "允许放置指示物类型",
       "comment_en": "Allow placement of counter type",
       "english_status": "from_project_cache",
@@ -10918,7 +10918,7 @@
     {
       "name": "EFFECT_COUNTER_LIMIT",
       "value": "0x20000",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "允许放置指示物数量",
       "comment_en": "Allow number of counters",
       "english_status": "from_project_cache",
@@ -10942,7 +10942,7 @@
     {
       "name": "EFFECT_RCOUNTER_REPLACE",
       "value": "0x30000",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "代替取除指示物",
       "comment_en": "Substitute for removing counters",
       "english_status": "from_project_cache",
@@ -10966,7 +10966,7 @@
     {
       "name": "EFFECT_LPCOST_CHANGE",
       "value": "170",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "改变生命值代价數值",
       "comment_en": "Change LP cost value",
       "english_status": "from_project_cache",
@@ -10990,7 +10990,7 @@
     {
       "name": "EFFECT_LPCOST_REPLACE",
       "value": "171",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "以其他動作代替生命值代价",
       "comment_en": "Replace LP cost with another action",
       "english_status": "from_project_cache",
@@ -11014,7 +11014,7 @@
     {
       "name": "EFFECT_SKIP_DP",
       "value": "180",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "跳过抽卡阶段",
       "comment_en": "Skip Draw Phase",
       "english_status": "from_project_cache",
@@ -11038,7 +11038,7 @@
     {
       "name": "EFFECT_SKIP_SP",
       "value": "181",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "跳过准备阶段",
       "comment_en": "Skip Standby Phase",
       "english_status": "from_project_cache",
@@ -11062,7 +11062,7 @@
     {
       "name": "EFFECT_SKIP_M1",
       "value": "182",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "跳过主要阶段1",
       "comment_en": "Skip Main Phase 1",
       "english_status": "from_project_cache",
@@ -11086,7 +11086,7 @@
     {
       "name": "EFFECT_SKIP_BP",
       "value": "183",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "跳过战斗阶段",
       "comment_en": "Skip Battle Phase",
       "english_status": "from_project_cache",
@@ -11110,7 +11110,7 @@
     {
       "name": "EFFECT_SKIP_M2",
       "value": "184",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "跳过主要阶段2",
       "comment_en": "Skip Main Phase 2",
       "english_status": "from_project_cache",
@@ -11134,7 +11134,7 @@
     {
       "name": "EFFECT_CANNOT_BP",
       "value": "185",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "不能进入战斗阶段",
       "comment_en": "Cannot enter Battle Phase",
       "english_status": "from_project_cache",
@@ -11158,7 +11158,7 @@
     {
       "name": "EFFECT_CANNOT_M2",
       "value": "186",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "不能进入主要阶段2",
       "comment_en": "Cannot enter Main Phase 2",
       "english_status": "from_project_cache",
@@ -11182,7 +11182,7 @@
     {
       "name": "EFFECT_CANNOT_EP",
       "value": "187",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "不能进入结束阶段",
       "comment_en": "Cannot enter End Phase",
       "english_status": "from_project_cache",
@@ -11206,7 +11206,7 @@
     {
       "name": "EFFECT_SKIP_TURN",
       "value": "188",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "跳过整个回合",
       "comment_en": "Skip entire turn",
       "english_status": "from_project_cache",
@@ -11230,7 +11230,7 @@
     {
       "name": "EFFECT_DEFENSE_ATTACK",
       "value": "190",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "可以守备表示攻击",
       "comment_en": "Can attack in Defense Position",
       "english_status": "from_project_cache",
@@ -11254,7 +11254,7 @@
     {
       "name": "EFFECT_MUST_ATTACK",
       "value": "191",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "必须攻击",
       "comment_en": "Must attack",
       "english_status": "from_project_cache",
@@ -11278,7 +11278,7 @@
     {
       "name": "EFFECT_FIRST_ATTACK",
       "value": "192",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "必须第一个攻击",
       "comment_en": "Must attack first",
       "english_status": "from_project_cache",
@@ -11302,7 +11302,7 @@
     {
       "name": "EFFECT_ATTACK_ALL",
       "value": "193",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "可以攻击所有怪兽",
       "comment_en": "Can attack all monsters",
       "english_status": "from_project_cache",
@@ -11326,7 +11326,7 @@
     {
       "name": "EFFECT_EXTRA_ATTACK",
       "value": "194",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "增加攻击次数",
       "comment_en": "Increase attack count",
       "english_status": "from_project_cache",
@@ -11350,7 +11350,7 @@
     {
       "name": "EFFECT_MUST_BE_ATTACKED",
       "value": "195",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "N/A",
       "comment_en": "N/A",
       "english_status": "from_project_cache",
@@ -11374,7 +11374,7 @@
     {
       "name": "EFFECT_ONLY_BE_ATTACKED",
       "value": "196",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "只能攻击此卡",
       "comment_en": "Can only attack this card",
       "english_status": "from_project_cache",
@@ -11398,7 +11398,7 @@
     {
       "name": "EFFECT_ATTACK_DISABLED",
       "value": "197",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "攻击已被無效(Duel.NegateAttack()成功的標記)",
       "comment_en": "Attack negated (marker for successful Duel.NegateAttack())",
       "english_status": "from_project_cache",
@@ -11422,7 +11422,7 @@
     {
       "name": "EFFECT_NO_BATTLE_DAMAGE",
       "value": "200",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "不会给对方造成战斗伤害",
       "comment_en": "Does not inflict battle damage to opponent",
       "english_status": "from_project_cache",
@@ -11446,7 +11446,7 @@
     {
       "name": "EFFECT_AVOID_BATTLE_DAMAGE",
       "value": "201",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "不会对自己造成战斗伤害",
       "comment_en": "Does not take battle damage",
       "english_status": "from_project_cache",
@@ -11470,7 +11470,7 @@
     {
       "name": "EFFECT_REFLECT_BATTLE_DAMAGE",
       "value": "202",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "战斗伤害由对方代为承受",
       "comment_en": "Opponent takes battle damage instead",
       "english_status": "from_project_cache",
@@ -11494,7 +11494,7 @@
     {
       "name": "EFFECT_PIERCE",
       "value": "203",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "贯穿伤害",
       "comment_en": "Piercing damage",
       "english_status": "from_project_cache",
@@ -11518,7 +11518,7 @@
     {
       "name": "EFFECT_BATTLE_DESTROY_REDIRECT",
       "value": "204",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "战斗破坏时重新指定去向",
       "comment_en": "Redirect destination when destroyed by battle",
       "english_status": "from_project_cache",
@@ -11542,7 +11542,7 @@
     {
       "name": "EFFECT_BATTLE_DAMAGE_TO_EFFECT",
       "value": "205",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "战斗伤害视为效果伤害",
       "comment_en": "Treat battle damage as effect damage",
       "english_status": "from_project_cache",
@@ -11566,7 +11566,7 @@
     {
       "name": "EFFECT_BOTH_BATTLE_DAMAGE",
       "value": "206",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "战斗伤害由双方承受",
       "comment_en": "Both players take battle damage",
       "english_status": "from_project_cache",
@@ -11590,7 +11590,7 @@
     {
       "name": "EFFECT_ALSO_BATTLE_DAMAGE",
       "value": "207",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "对自己的战斗伤害让对方也承受",
       "comment_en": "Opponent also takes battle damage dealt to you",
       "english_status": "from_project_cache",
@@ -11614,7 +11614,7 @@
     {
       "name": "EFFECT_CHANGE_BATTLE_DAMAGE",
       "value": "208",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "改变此卡给予的战斗伤害、改变玩家受到的战斗伤害",
       "comment_en": "Change battle damage dealt by this card or received by player",
       "english_status": "from_project_cache",
@@ -11638,7 +11638,7 @@
     {
       "name": "EFFECT_TOSS_COIN_REPLACE",
       "value": "220",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "重新抛硬币",
       "comment_en": "Replace coin toss",
       "english_status": "from_project_cache",
@@ -11662,7 +11662,7 @@
     {
       "name": "EFFECT_TOSS_DICE_REPLACE",
       "value": "221",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "重新掷骰子",
       "comment_en": "Replace dice roll",
       "english_status": "from_project_cache",
@@ -11686,7 +11686,7 @@
     {
       "name": "EFFECT_FUSION_MATERIAL",
       "value": "230",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "指定融合素材的條件",
       "comment_en": "Specify Fusion Material conditions",
       "english_status": "from_project_cache",
@@ -11710,7 +11710,7 @@
     {
       "name": "EFFECT_CHAIN_MATERIAL",
       "value": "231",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "改变融合素材选取方法（连锁素材、电子融合支援）",
       "comment_en": "Player affected by Chain Material effect",
       "english_status": "from_project_cache",
@@ -11734,7 +11734,7 @@
     {
       "name": "EFFECT_EXTRA_SYNCHRO_MATERIAL",
       "value": "232",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "在手卡或对方场上也可以当作自己的同调素材",
       "comment_en": "Can be treated as your Synchro Material from the hand or opponent's field",
       "english_status": "translated_exact",
@@ -11758,7 +11758,7 @@
     {
       "name": "EFFECT_XYZ_MATERIAL",
       "value": "233",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "在对方场上也可以当作自己的超量素材",
       "comment_en": "Can be used as Xyz Material",
       "english_status": "from_project_cache",
@@ -11782,7 +11782,7 @@
     {
       "name": "EFFECT_FUSION_SUBSTITUTE",
       "value": "234",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "代替融合素材",
       "comment_en": "Fusion Material substitute",
       "english_status": "from_project_cache",
@@ -11806,7 +11806,7 @@
     {
       "name": "EFFECT_CANNOT_BE_FUSION_MATERIAL",
       "value": "235",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "不能做融合素材",
       "comment_en": "Cannot be used as Fusion Material",
       "english_status": "from_project_cache",
@@ -11830,7 +11830,7 @@
     {
       "name": "EFFECT_CANNOT_BE_SYNCHRO_MATERIAL",
       "value": "236",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "不能做同调素材",
       "comment_en": "Cannot be used as Synchro Material",
       "english_status": "from_project_cache",
@@ -11854,7 +11854,7 @@
     {
       "name": "EFFECT_SYNCHRO_MATERIAL_CUSTOM",
       "value": "237",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "自定义Tuner的同调过程",
       "comment_en": "Custom Tuner Synchro process",
       "english_status": "from_project_cache",
@@ -11878,7 +11878,7 @@
     {
       "name": "EFFECT_CANNOT_BE_XYZ_MATERIAL",
       "value": "238",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "不能做超量素材",
       "comment_en": "Cannot be used as Xyz Material",
       "english_status": "from_project_cache",
@@ -11902,7 +11902,7 @@
     {
       "name": "EFFECT_CANNOT_BE_LINK_MATERIAL",
       "value": "239",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "不能做连接素材",
       "comment_en": "Cannot be used as Link Material",
       "english_status": "from_project_cache",
@@ -11926,7 +11926,7 @@
     {
       "name": "EFFECT_SYNCHRO_LEVEL",
       "value": "240",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "做同调素材时的等级",
       "comment_en": "Level when used as Synchro Material",
       "english_status": "from_project_cache",
@@ -11950,7 +11950,7 @@
     {
       "name": "EFFECT_RITUAL_LEVEL",
       "value": "241",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "做仪式祭品时的等级",
       "comment_en": "Level when used as Ritual Tribute",
       "english_status": "from_project_cache",
@@ -11974,7 +11974,7 @@
     {
       "name": "EFFECT_XYZ_LEVEL",
       "value": "242",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "做超量素材时的等级",
       "comment_en": "Level when used as Xyz Material",
       "english_status": "from_project_cache",
@@ -11998,7 +11998,7 @@
     {
       "name": "EFFECT_EXTRA_RITUAL_MATERIAL",
       "value": "243",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "在墓地当做仪式祭品",
       "comment_en": "Can be used as Ritual Tribute from Graveyard",
       "english_status": "from_project_cache",
@@ -12022,7 +12022,7 @@
     {
       "name": "EFFECT_NONTUNER",
       "value": "244",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "同调召唤时可以当作调整以外的怪兽（幻影王 幽骑）",
       "comment_en": "Treated as non-Tuner monster (e.g., Phantom King Hydride)",
       "english_status": "from_project_cache",
@@ -12046,7 +12046,7 @@
     {
       "name": "EFFECT_OVERLAY_REMOVE_REPLACE",
       "value": "245",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "代替去除超量素材",
       "comment_en": "Substitute for removing Xyz Material",
       "english_status": "from_project_cache",
@@ -12070,7 +12070,7 @@
     {
       "name": "EFFECT_SCRAP_CHIMERA",
       "value": "246",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "废铁奇美拉",
       "comment_en": "Scrap Chimera",
       "english_status": "from_project_cache",
@@ -12094,7 +12094,7 @@
     {
       "name": "EFFECT_TUNE_MAGICIAN_X",
       "value": "247",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "调弦之魔术师超量素材限制",
       "comment_en": "Tuning Magician Xyz Material restriction",
       "english_status": "from_project_cache",
@@ -12118,7 +12118,7 @@
     {
       "name": "EFFECT_TUNE_MAGICIAN_F",
       "value": "248",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "调弦之魔术师融合素材限制",
       "comment_en": "Tuning Magician Fusion Material restriction",
       "english_status": "from_project_cache",
@@ -12142,7 +12142,7 @@
     {
       "name": "EFFECT_PRE_MONSTER",
       "value": "250",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "可存取怪獸的各項數值(Card.AddMonsterAttribute()專用)",
       "comment_en": "Access various monster values (used with Card.AddMonsterAttribute())",
       "english_status": "from_project_cache",
@@ -12166,7 +12166,7 @@
     {
       "name": "EFFECT_MATERIAL_CHECK",
       "value": "251",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "检查素材",
       "comment_en": "Check materials",
       "english_status": "from_project_cache",
@@ -12190,7 +12190,7 @@
     {
       "name": "EFFECT_DISABLE_FIELD",
       "value": "260",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "无效区域（扰乱王等）",
       "comment_en": "Disable zones (e.g., Ojama King)",
       "english_status": "from_project_cache",
@@ -12214,7 +12214,7 @@
     {
       "name": "EFFECT_USE_EXTRA_MZONE",
       "value": "261",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "怪兽区域封锁",
       "comment_en": "Lock Monster Zones",
       "english_status": "from_project_cache",
@@ -12238,7 +12238,7 @@
     {
       "name": "EFFECT_USE_EXTRA_SZONE",
       "value": "262",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "魔法区域封锁",
       "comment_en": "Lock Spell/Trap Zones",
       "english_status": "from_project_cache",
@@ -12262,7 +12262,7 @@
     {
       "name": "EFFECT_MAX_MZONE",
       "value": "263",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "怪獸区格數上限",
       "comment_en": "Maximum Monster Zone slots",
       "english_status": "from_project_cache",
@@ -12286,7 +12286,7 @@
     {
       "name": "EFFECT_MAX_SZONE",
       "value": "264",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "魔陷区格數上限",
       "comment_en": "Maximum Spell/Trap Zone slots",
       "english_status": "from_project_cache",
@@ -12310,7 +12310,7 @@
     {
       "name": "EFFECT_MUST_USE_MZONE",
       "value": "265",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "必须使用怪兽区的格子",
       "comment_en": "Must use specific Monster Zone slots",
       "english_status": "from_project_cache",
@@ -12334,7 +12334,7 @@
     {
       "name": "EFFECT_HAND_LIMIT",
       "value": "270",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "手牌数量限制",
       "comment_en": "Hand size limit",
       "english_status": "from_project_cache",
@@ -12358,7 +12358,7 @@
     {
       "name": "EFFECT_DRAW_COUNT",
       "value": "271",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "抽卡阶段的抽卡数",
       "comment_en": "Number of cards drawn in Draw Phase",
       "english_status": "from_project_cache",
@@ -12382,7 +12382,7 @@
     {
       "name": "EFFECT_SPIRIT_DONOT_RETURN",
       "value": "280",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "灵魂怪兽不返回手牌",
       "comment_en": "Spirit Monster does not return to hand",
       "english_status": "from_project_cache",
@@ -12406,7 +12406,7 @@
     {
       "name": "EFFECT_SPIRIT_MAYNOT_RETURN",
       "value": "281",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "灵魂怪兽可以不返回手牌",
       "comment_en": "Spirit Monster can choose not to return to hand",
       "english_status": "from_project_cache",
@@ -12430,7 +12430,7 @@
     {
       "name": "EFFECT_CHANGE_ENVIRONMENT",
       "value": "290",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "改变场地",
       "comment_en": "Change Field Spell",
       "english_status": "from_project_cache",
@@ -12454,7 +12454,7 @@
     {
       "name": "EFFECT_NECRO_VALLEY",
       "value": "291",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "王家长眠之谷",
       "comment_en": "Necrovalley",
       "english_status": "from_project_cache",
@@ -12478,7 +12478,7 @@
     {
       "name": "EFFECT_FORBIDDEN",
       "value": "292",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "不能Play(禁止令)",
       "comment_en": "Cannot be played (e.g., Forbidden Order)",
       "english_status": "from_project_cache",
@@ -12502,7 +12502,7 @@
     {
       "name": "EFFECT_NECRO_VALLEY_IM",
       "value": "293",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "不受「王家长眠之谷」的影响",
       "comment_en": "Unaffected by Necrovalley",
       "english_status": "from_project_cache",
@@ -12526,7 +12526,7 @@
     {
       "name": "EFFECT_REVERSE_DECK",
       "value": "294",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "翻转卡组",
       "comment_en": "Reverse Deck order",
       "english_status": "from_project_cache",
@@ -12550,7 +12550,7 @@
     {
       "name": "EFFECT_REMOVE_BRAINWASHING",
       "value": "295",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "洗脑解除",
       "comment_en": "Remove brainwashing",
       "english_status": "from_project_cache",
@@ -12574,7 +12574,7 @@
     {
       "name": "EFFECT_BP_TWICE",
       "value": "296",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "2次战斗阶段",
       "comment_en": "Two Battle Phases",
       "english_status": "from_project_cache",
@@ -12598,7 +12598,7 @@
     {
       "name": "EFFECT_UNIQUE_CHECK",
       "value": "297",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "場上只能存在1張(Card.SetUniqueOnField()專用)",
       "comment_en": "Only one can exist on field (used with Card.SetUniqueOnField())",
       "english_status": "from_project_cache",
@@ -12622,7 +12622,7 @@
     {
       "name": "EFFECT_MATCH_KILL",
       "value": "300",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "Match胜利(胜利龙)",
       "comment_en": "Match victory (e.g., Victory Dragon)",
       "english_status": "from_project_cache",
@@ -12646,7 +12646,7 @@
     {
       "name": "EFFECT_SYNCHRO_CHECK",
       "value": "310",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "基因组斗士",
       "comment_en": "Genomix Fighter",
       "english_status": "from_project_cache",
@@ -12670,7 +12670,7 @@
     {
       "name": "EFFECT_QP_ACT_IN_NTPHAND",
       "value": "311",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "对方回合从自己手卡发动（失乐的圣女）",
       "comment_en": "Activate from hand in opponent's turn (e.g., Ecclesia the Virtuous)",
       "english_status": "from_project_cache",
@@ -12694,7 +12694,7 @@
     {
       "name": "EFFECT_MUST_BE_SMATERIAL",
       "value": "312",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "必须作为同调素材（波动龙 声子龙）",
       "comment_en": "Must be used as Synchro Material (e.g., Phonon Pulse Dragon)",
       "english_status": "from_project_cache",
@@ -12718,7 +12718,7 @@
     {
       "name": "EFFECT_TO_GRAVE_REDIRECT_CB",
       "value": "313",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "重新指定去向(寶玉獸)",
       "comment_en": "Redirect destination (e.g., Gem Beasts)",
       "english_status": "from_project_cache",
@@ -12742,7 +12742,7 @@
     {
       "name": "EFFECT_CHANGE_INVOLVING_BATTLE_DAMAGE",
       "value": "314",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "改变此卡的战斗产生的战斗伤害",
       "comment_en": "Change battle damage caused by this card",
       "english_status": "from_project_cache",
@@ -12766,7 +12766,7 @@
     {
       "name": "EFFECT_CHANGE_RANK_FINAL",
       "value": "315",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "N/A",
       "comment_en": "N/A",
       "english_status": "from_project_cache",
@@ -12790,7 +12790,7 @@
     {
       "name": "EFFECT_MUST_BE_FMATERIAL",
       "value": "316",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "必须作为融合素材",
       "comment_en": "Must be used as Fusion Material",
       "english_status": "from_project_cache",
@@ -12814,7 +12814,7 @@
     {
       "name": "EFFECT_MUST_BE_XMATERIAL",
       "value": "317",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "必须作为超量素材",
       "comment_en": "Must be used as Xyz Material",
       "english_status": "from_project_cache",
@@ -12838,7 +12838,7 @@
     {
       "name": "EFFECT_MUST_BE_LMATERIAL",
       "value": "318",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "必须作为连接素材",
       "comment_en": "Must be used as Link Material",
       "english_status": "from_project_cache",
@@ -12862,7 +12862,7 @@
     {
       "name": "EFFECT_SPSUMMON_PROC_G",
       "value": "320",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "P召唤规则",
       "comment_en": "Pendulum Summon rule",
       "english_status": "from_project_cache",
@@ -12886,7 +12886,7 @@
     {
       "name": "EFFECT_SPSUMMON_COUNT_LIMIT",
       "value": "330",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "特殊召唤次数限制",
       "comment_en": "Special Summon count limit",
       "english_status": "from_project_cache",
@@ -12910,7 +12910,7 @@
     {
       "name": "EFFECT_LEFT_SPSUMMON_COUNT",
       "value": "331",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "剩餘召喚次數(召喚限制網)",
       "comment_en": "Remaining summon count (e.g., Summon Limit)",
       "english_status": "from_project_cache",
@@ -12934,7 +12934,7 @@
     {
       "name": "EFFECT_CANNOT_SELECT_BATTLE_TARGET",
       "value": "332",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "對手不能選擇為攻擊對象",
       "comment_en": "Opponent cannot select as attack target",
       "english_status": "from_project_cache",
@@ -12958,7 +12958,7 @@
     {
       "name": "EFFECT_CANNOT_SELECT_EFFECT_TARGET",
       "value": "333",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "對手不能選擇為效果對象",
       "comment_en": "Opponent cannot select as effect target",
       "english_status": "from_project_cache",
@@ -12982,7 +12982,7 @@
     {
       "name": "EFFECT_ADD_SETCODE",
       "value": "334",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "视为「XX」字段的效果",
       "comment_en": "Treated as specific archetype effect",
       "english_status": "from_project_cache",
@@ -13006,7 +13006,7 @@
     {
       "name": "EFFECT_NO_EFFECT_DAMAGE",
       "value": "335",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "玩家已受到\"效果傷害變成0\"的效果影響（只用于检查，实际免伤仍需要EFFECT_CHANGE_DAMAGE等）",
       "comment_en": "Player affected by \"effect damage becomes 0\"",
       "english_status": "from_project_cache",
@@ -13030,7 +13030,7 @@
     {
       "name": "EFFECT_UNSUMMONABLE_CARD",
       "value": "336",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "N/A",
       "comment_en": "N/A",
       "english_status": "from_project_cache",
@@ -13054,7 +13054,7 @@
     {
       "name": "EFFECT_DISABLE_CHAIN_FIELD",
       "value": "337",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "N/A",
       "comment_en": "N/A",
       "english_status": "from_project_cache",
@@ -13078,7 +13078,7 @@
     {
       "name": "EFFECT_DISCARD_COST_CHANGE",
       "value": "338",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "反制陷阱捨棄手牌的代價改變(解放之阿里阿德涅)",
       "comment_en": "Change discard cost for Counter Traps (e.g., Ariadne the Absolver)",
       "english_status": "from_project_cache",
@@ -13102,7 +13102,7 @@
     {
       "name": "EFFECT_HAND_SYNCHRO",
       "value": "339",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "用手牌的怪獸當作同步素材",
       "comment_en": "Use hand monsters as Synchro Material",
       "english_status": "from_project_cache",
@@ -13126,7 +13126,7 @@
     {
       "name": "EFFECT_ADD_FUSION_CODE",
       "value": "340",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "作为融合素材时可以当作某一卡名(融合识别)",
       "comment_en": "Treated as specific card name for Fusion Material (e.g., Fusion Identification)",
       "english_status": "from_project_cache",
@@ -13150,7 +13150,7 @@
     {
       "name": "EFFECT_ADD_FUSION_SETCODE",
       "value": "341",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "作为融合素材时可以当作某一字段(魔玩具改造)",
       "comment_en": "Treated as specific archetype for Fusion Material (e.g., Toy Parade)",
       "english_status": "from_project_cache",
@@ -13174,7 +13174,7 @@
     {
       "name": "EFFECT_RISE_TO_FULL_HEIGHT",
       "value": "342",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "N/A",
       "comment_en": "N/A",
       "english_status": "from_project_cache",
@@ -13198,7 +13198,7 @@
     {
       "name": "EFFECT_ONLY_ATTACK_MONSTER",
       "value": "343",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "只能攻擊X",
       "comment_en": "Can only attack specific monster",
       "english_status": "from_project_cache",
@@ -13222,7 +13222,7 @@
     {
       "name": "EFFECT_MUST_ATTACK_MONSTER",
       "value": "344",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "若攻擊則必須攻擊X",
       "comment_en": "Must attack specific monster if attacking",
       "english_status": "from_project_cache",
@@ -13246,7 +13246,7 @@
     {
       "name": "EFFECT_PATRICIAN_OF_DARKNESS",
       "value": "345",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "由對手選擇攻擊對象(黑暗貴族)",
       "comment_en": "Opponent chooses attack target (e.g., Patrician of Darkness)",
       "english_status": "from_project_cache",
@@ -13270,7 +13270,7 @@
     {
       "name": "EFFECT_EXTRA_ATTACK_MONSTER",
       "value": "346",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "對怪獸攻擊X次",
       "comment_en": "Attack a monster X times",
       "english_status": "from_project_cache",
@@ -13294,7 +13294,7 @@
     {
       "name": "EFFECT_UNION_STATUS",
       "value": "347",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "同盟状态",
       "comment_en": "Union status",
       "english_status": "from_project_cache",
@@ -13318,7 +13318,7 @@
     {
       "name": "EFFECT_OLDUNION_STATUS",
       "value": "348",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "旧同盟状态",
       "comment_en": "Old Union status",
       "english_status": "from_project_cache",
@@ -13342,7 +13342,7 @@
     {
       "name": "EFFECT_ADD_FUSION_ATTRIBUTE",
       "value": "349",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "reserve",
       "comment_en": "(reserved)",
       "english_status": "from_project_cache",
@@ -13366,7 +13366,7 @@
     {
       "name": "EFFECT_REMOVE_FUSION_ATTRIBUTE",
       "value": "350",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "reserve",
       "comment_en": "(reserved)",
       "english_status": "from_project_cache",
@@ -13390,7 +13390,7 @@
     {
       "name": "EFFECT_CHANGE_FUSION_ATTRIBUTE",
       "value": "351",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "用作融合素材时的属性",
       "comment_en": "Attribute when used as Fusion Material",
       "english_status": "from_project_cache",
@@ -13414,7 +13414,7 @@
     {
       "name": "EFFECT_EXTRA_FUSION_MATERIAL",
       "value": "352",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "增加融合素材(万溶炼金师)",
       "comment_en": "Additional Fusion Material (e.g., Omni Alchemist)",
       "english_status": "from_project_cache",
@@ -13438,7 +13438,7 @@
     {
       "name": "EFFECT_TUNER_MATERIAL_LIMIT",
       "value": "353",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "同调素材限制",
       "comment_en": "Synchro Material restriction",
       "english_status": "from_project_cache",
@@ -13462,7 +13462,7 @@
     {
       "name": "EFFECT_ADD_LINK_CODE",
       "value": "354",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "用作连接素材时的卡名",
       "comment_en": "Card name when used as Link Material",
       "english_status": "from_project_cache",
@@ -13486,7 +13486,7 @@
     {
       "name": "EFFECT_ADD_LINK_SETCODE",
       "value": "355",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "reserve",
       "comment_en": "(reserved)",
       "english_status": "from_project_cache",
@@ -13510,7 +13510,7 @@
     {
       "name": "EFFECT_ADD_LINK_ATTRIBUTE",
       "value": "356",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "用作连接素材时的属性",
       "comment_en": "Attribute when used as Link Material",
       "english_status": "from_project_cache",
@@ -13534,7 +13534,7 @@
     {
       "name": "EFFECT_ADD_LINK_RACE",
       "value": "357",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "用作连接素材时的种族",
       "comment_en": "Race when used as Link Material",
       "english_status": "from_project_cache",
@@ -13558,7 +13558,7 @@
     {
       "name": "EFFECT_EXTRA_LINK_MATERIAL",
       "value": "358",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "手卡的连接素材",
       "comment_en": "Hand as Link Material",
       "english_status": "from_project_cache",
@@ -13582,7 +13582,7 @@
     {
       "name": "EFFECT_QP_ACT_IN_SET_TURN",
       "value": "359",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "速攻魔法可以在盖放的回合发动",
       "comment_en": "Quick-Play Spell can activate in the turn it was Set",
       "english_status": "from_project_cache",
@@ -13606,7 +13606,7 @@
     {
       "name": "EFFECT_EXTRA_PENDULUM_SUMMON",
       "value": "360",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "extra pendulum summon",
       "comment_en": "Additional Pendulum Summon",
       "english_status": "from_project_cache",
@@ -13630,7 +13630,7 @@
     {
       "name": "EFFECT_MATERIAL_LIMIT",
       "value": "361",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "",
       "comment_en": "Material restriction",
       "english_status": "from_project_cache",
@@ -13654,7 +13654,7 @@
     {
       "name": "EFFECT_SET_BATTLE_ATTACK",
       "value": "362",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "战斗的伤害计算用设置的攻击力进行",
       "comment_en": "Use set ATK for battle damage calculation",
       "english_status": "from_project_cache",
@@ -13678,7 +13678,7 @@
     {
       "name": "EFFECT_SET_BATTLE_DEFENSE",
       "value": "363",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "战斗的伤害计算用设置的守备力进行",
       "comment_en": "Use set DEF for battle damage calculation",
       "english_status": "from_project_cache",
@@ -13702,7 +13702,7 @@
     {
       "name": "EFFECT_OVERLAY_RITUAL_MATERIAL",
       "value": "364",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "此卡的超量素材也能用于仪式召唤",
       "comment_en": "Xyz Materials can be used for Ritual Summon",
       "english_status": "from_project_cache",
@@ -13726,7 +13726,7 @@
     {
       "name": "EFFECT_CHANGE_GRAVE_ATTRIBUTE",
       "value": "365",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "墓地的卡将会改变属性（升级转变）",
       "comment_en": "Change attribute of cards in Graveyard (e.g., Advanced Shift)",
       "english_status": "from_project_cache",
@@ -13750,7 +13750,7 @@
     {
       "name": "EFFECT_CHANGE_GRAVE_RACE",
       "value": "366",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "墓地的卡将会改变种族（升级转变）",
       "comment_en": "Change race of cards in Graveyard (e.g., Advanced Shift)",
       "english_status": "from_project_cache",
@@ -13774,7 +13774,7 @@
     {
       "name": "EFFECT_ACTIVATION_COUNT_LIMIT",
       "value": "367",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "reserve",
       "comment_en": "reserve",
       "english_status": "existing_english",
@@ -13798,7 +13798,7 @@
     {
       "name": "EFFECT_LIMIT_SPECIAL_SUMMON_POSITION",
       "value": "368",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "不能以特定表示形式特殊召唤",
       "comment_en": "Cannot Special Summon in specific position",
       "english_status": "from_project_cache",
@@ -13822,7 +13822,7 @@
     {
       "name": "EFFECT_TUNER",
       "value": "369",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "同调召唤时可以当作调整（百檎龙-苹果鳞虫）",
       "comment_en": "Can be treated as a Tuner for a Synchro Summon (Hundred Apple Dragon - Apple Wyrm)",
       "english_status": "translated_exact",
@@ -13846,7 +13846,7 @@
     {
       "name": "EFFECT_KAISER_COLOSSEUM",
       "value": "370",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "皇帝斗技场",
       "comment_en": "Kaiser Colosseum",
       "english_status": "translated_exact",
@@ -13870,7 +13870,7 @@
     {
       "name": "EFFECT_REPLACE_DAMAGE",
       "value": "371",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "伤害由特定行动代替",
       "comment_en": "Damage is replaced by a specific action",
       "english_status": "translated_exact",
@@ -13894,7 +13894,7 @@
     {
       "name": "EFFECT_XYZ_MIN_COUNT",
       "value": "372",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "只能用在X只以上的超量召唤",
       "comment_en": "Can only be used for an Xyz Summon with at least X materials",
       "english_status": "translated_exact",
@@ -13918,7 +13918,7 @@
     {
       "name": "EFFECT_SYNCHRO_LEVEL_EX",
       "value": "373",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "支持使用没有等级的怪兽作为同调素材",
       "comment_en": "Allows monsters without Levels to be used as Synchro Material",
       "english_status": "translated_exact",
@@ -13942,7 +13942,7 @@
     {
       "name": "EFFECT_RITUAL_LEVEL_EX",
       "value": "374",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "支持使用没有等级的怪兽作为仪式素材",
       "comment_en": "Allows monsters without Levels to be used as Ritual Material",
       "english_status": "translated_exact",
@@ -13966,7 +13966,7 @@
     {
       "name": "EFFECT_DOUBLE_XMATERIAL",
       "value": "375",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "召唤需3只以上作素材的超量怪兽时可以作为2只数量的素材",
       "comment_en": "Counts as 2 materials when Xyz Summoning a monster that requires 3 or more materials",
       "english_status": "translated_exact",
@@ -13990,7 +13990,7 @@
     {
       "name": "EFFECT_FLAG_EFFECT",
       "value": "0x20000000",
-      "section": "========== Codes ==========\t--对永续性效果表示效果类型(EFFECT开头)，对诱发型效果表示触发效果的事件/时点(EVENT开头)",
+      "section": "Codes",
       "comment_zh": "标记类效果，即RegisterFlagEffect()创建的效果",
       "comment_en": "Flag effect created by RegisterFlagEffect()",
       "english_status": "translated_exact",
@@ -15838,7 +15838,7 @@
     {
       "name": "CATEGORY_DESTROY",
       "value": "0x1",
-      "section": "Category\t效果分类（表示这个效果将要发生什么事，OperationInfo设置了效果分类才能触发针对这一类型发动的卡，如破坏->星尘龙",
+      "section": "Category",
       "comment_zh": "破坏效果",
       "comment_en": "Destruction effect",
       "english_status": "from_project_cache",
@@ -15862,7 +15862,7 @@
     {
       "name": "CATEGORY_RELEASE",
       "value": "0x2",
-      "section": "Category\t效果分类（表示这个效果将要发生什么事，OperationInfo设置了效果分类才能触发针对这一类型发动的卡，如破坏->星尘龙",
+      "section": "Category",
       "comment_zh": "解放效果",
       "comment_en": "Tribute effect",
       "english_status": "from_project_cache",
@@ -15886,7 +15886,7 @@
     {
       "name": "CATEGORY_REMOVE",
       "value": "0x4",
-      "section": "Category\t效果分类（表示这个效果将要发生什么事，OperationInfo设置了效果分类才能触发针对这一类型发动的卡，如破坏->星尘龙",
+      "section": "Category",
       "comment_zh": "除外效果",
       "comment_en": "Banish effect",
       "english_status": "from_project_cache",
@@ -15910,7 +15910,7 @@
     {
       "name": "CATEGORY_TOHAND",
       "value": "0x8",
-      "section": "Category\t效果分类（表示这个效果将要发生什么事，OperationInfo设置了效果分类才能触发针对这一类型发动的卡，如破坏->星尘龙",
+      "section": "Category",
       "comment_zh": "回手牌效果",
       "comment_en": "Return to hand effect",
       "english_status": "from_project_cache",
@@ -15934,7 +15934,7 @@
     {
       "name": "CATEGORY_TODECK",
       "value": "0x10",
-      "section": "Category\t效果分类（表示这个效果将要发生什么事，OperationInfo设置了效果分类才能触发针对这一类型发动的卡，如破坏->星尘龙",
+      "section": "Category",
       "comment_zh": "回卡组效果",
       "comment_en": "Return to Deck effect",
       "english_status": "from_project_cache",
@@ -15958,7 +15958,7 @@
     {
       "name": "CATEGORY_TOGRAVE",
       "value": "0x20",
-      "section": "Category\t效果分类（表示这个效果将要发生什么事，OperationInfo设置了效果分类才能触发针对这一类型发动的卡，如破坏->星尘龙",
+      "section": "Category",
       "comment_zh": "送去墓地效果",
       "comment_en": "Send to Graveyard effect",
       "english_status": "from_project_cache",
@@ -15982,7 +15982,7 @@
     {
       "name": "CATEGORY_DECKDES",
       "value": "0x40",
-      "section": "Category\t效果分类（表示这个效果将要发生什么事，OperationInfo设置了效果分类才能触发针对这一类型发动的卡，如破坏->星尘龙",
+      "section": "Category",
       "comment_zh": "包含從卡组送去墓地或特殊召唤效果",
       "comment_en": "Includes sending from Deck to Graveyard or Special Summon effects",
       "english_status": "from_project_cache",
@@ -16006,7 +16006,7 @@
     {
       "name": "CATEGORY_HANDES_SELF",
       "value": "0x80",
-      "section": "Category\t效果分类（表示这个效果将要发生什么事，OperationInfo设置了效果分类才能触发针对这一类型发动的卡，如破坏->星尘龙",
+      "section": "Category",
       "comment_zh": "捨棄自身手牌效果",
       "comment_en": "Effect that discards your own hand",
       "english_status": "translated_exact",
@@ -16030,7 +16030,7 @@
     {
       "name": "CATEGORY_SUMMON",
       "value": "0x100",
-      "section": "Category\t效果分类（表示这个效果将要发生什么事，OperationInfo设置了效果分类才能触发针对这一类型发动的卡，如破坏->星尘龙",
+      "section": "Category",
       "comment_zh": "含召唤的效果",
       "comment_en": "Includes Normal Summon effect",
       "english_status": "from_project_cache",
@@ -16054,7 +16054,7 @@
     {
       "name": "CATEGORY_SPECIAL_SUMMON",
       "value": "0x200",
-      "section": "Category\t效果分类（表示这个效果将要发生什么事，OperationInfo设置了效果分类才能触发针对这一类型发动的卡，如破坏->星尘龙",
+      "section": "Category",
       "comment_zh": "含特殊召唤的效果",
       "comment_en": "Includes Special Summon effect",
       "english_status": "from_project_cache",
@@ -16078,7 +16078,7 @@
     {
       "name": "CATEGORY_TOKEN",
       "value": "0x400",
-      "section": "Category\t效果分类（表示这个效果将要发生什么事，OperationInfo设置了效果分类才能触发针对这一类型发动的卡，如破坏->星尘龙",
+      "section": "Category",
       "comment_zh": "含衍生物效果",
       "comment_en": "Includes Token effect",
       "english_status": "from_project_cache",
@@ -16102,7 +16102,7 @@
     {
       "name": "CATEGORY_GRAVE_ACTION",
       "value": "0x800",
-      "section": "Category\t效果分类（表示这个效果将要发生什么事，OperationInfo设置了效果分类才能触发针对这一类型发动的卡，如破坏->星尘龙",
+      "section": "Category",
       "comment_zh": "包含特殊召喚以外移動墓地的卡的效果（屋敷わらし）",
       "comment_en": "Includes moving cards in Graveyard other than Special Summon (e.g., House Duston)",
       "english_status": "from_project_cache",
@@ -16126,7 +16126,7 @@
     {
       "name": "CATEGORY_POSITION",
       "value": "0x1000",
-      "section": "Category\t效果分类（表示这个效果将要发生什么事，OperationInfo设置了效果分类才能触发针对这一类型发动的卡，如破坏->星尘龙",
+      "section": "Category",
       "comment_zh": "改变表示形式效果",
       "comment_en": "Change position effect",
       "english_status": "from_project_cache",
@@ -16150,7 +16150,7 @@
     {
       "name": "CATEGORY_CONTROL",
       "value": "0x2000",
-      "section": "Category\t效果分类（表示这个效果将要发生什么事，OperationInfo设置了效果分类才能触发针对这一类型发动的卡，如破坏->星尘龙",
+      "section": "Category",
       "comment_zh": "改变控制权效果",
       "comment_en": "Change control effect",
       "english_status": "from_project_cache",
@@ -16174,7 +16174,7 @@
     {
       "name": "CATEGORY_DISABLE",
       "value": "0x4000",
-      "section": "Category\t效果分类（表示这个效果将要发生什么事，OperationInfo设置了效果分类才能触发针对这一类型发动的卡，如破坏->星尘龙",
+      "section": "Category",
       "comment_zh": "使效果无效效果",
       "comment_en": "Negate effect",
       "english_status": "from_project_cache",
@@ -16198,7 +16198,7 @@
     {
       "name": "CATEGORY_DISABLE_SUMMON",
       "value": "0x8000",
-      "section": "Category\t效果分类（表示这个效果将要发生什么事，OperationInfo设置了效果分类才能触发针对这一类型发动的卡，如破坏->星尘龙",
+      "section": "Category",
       "comment_zh": "无效召唤效果",
       "comment_en": "Negate summon effect",
       "english_status": "from_project_cache",
@@ -16222,7 +16222,7 @@
     {
       "name": "CATEGORY_DRAW",
       "value": "0x10000",
-      "section": "Category\t效果分类（表示这个效果将要发生什么事，OperationInfo设置了效果分类才能触发针对这一类型发动的卡，如破坏->星尘龙",
+      "section": "Category",
       "comment_zh": "抽卡效果",
       "comment_en": "Draw effect",
       "english_status": "from_project_cache",
@@ -16246,7 +16246,7 @@
     {
       "name": "CATEGORY_SEARCH",
       "value": "0x20000",
-      "section": "Category\t效果分类（表示这个效果将要发生什么事，OperationInfo设置了效果分类才能触发针对这一类型发动的卡，如破坏->星尘龙",
+      "section": "Category",
       "comment_zh": "检索卡组效果",
       "comment_en": "Search Deck effect",
       "english_status": "from_project_cache",
@@ -16270,7 +16270,7 @@
     {
       "name": "CATEGORY_EQUIP",
       "value": "0x40000",
-      "section": "Category\t效果分类（表示这个效果将要发生什么事，OperationInfo设置了效果分类才能触发针对这一类型发动的卡，如破坏->星尘龙",
+      "section": "Category",
       "comment_zh": "把自己装备效果（请勿用于把其他卡装备的效果）",
       "comment_en": "Equip effect",
       "english_status": "from_project_cache",
@@ -16294,7 +16294,7 @@
     {
       "name": "CATEGORY_DAMAGE",
       "value": "0x80000",
-      "section": "Category\t效果分类（表示这个效果将要发生什么事，OperationInfo设置了效果分类才能触发针对这一类型发动的卡，如破坏->星尘龙",
+      "section": "Category",
       "comment_zh": "伤害效果",
       "comment_en": "Damage effect",
       "english_status": "from_project_cache",
@@ -16318,7 +16318,7 @@
     {
       "name": "CATEGORY_RECOVER",
       "value": "0x100000",
-      "section": "Category\t效果分类（表示这个效果将要发生什么事，OperationInfo设置了效果分类才能触发针对这一类型发动的卡，如破坏->星尘龙",
+      "section": "Category",
       "comment_zh": "回复效果",
       "comment_en": "Recovery effect",
       "english_status": "from_project_cache",
@@ -16342,7 +16342,7 @@
     {
       "name": "CATEGORY_ATKCHANGE",
       "value": "0x200000",
-      "section": "Category\t效果分类（表示这个效果将要发生什么事，OperationInfo设置了效果分类才能触发针对这一类型发动的卡，如破坏->星尘龙",
+      "section": "Category",
       "comment_zh": "改变攻击效果",
       "comment_en": "Change ATK effect",
       "english_status": "from_project_cache",
@@ -16366,7 +16366,7 @@
     {
       "name": "CATEGORY_DEFCHANGE",
       "value": "0x400000",
-      "section": "Category\t效果分类（表示这个效果将要发生什么事，OperationInfo设置了效果分类才能触发针对这一类型发动的卡，如破坏->星尘龙",
+      "section": "Category",
       "comment_zh": "改变防御效果",
       "comment_en": "Change DEF effect",
       "english_status": "from_project_cache",
@@ -16390,7 +16390,7 @@
     {
       "name": "CATEGORY_COUNTER",
       "value": "0x800000",
-      "section": "Category\t效果分类（表示这个效果将要发生什么事，OperationInfo设置了效果分类才能触发针对这一类型发动的卡，如破坏->星尘龙",
+      "section": "Category",
       "comment_zh": "指示物效果",
       "comment_en": "Counter effect",
       "english_status": "from_project_cache",
@@ -16414,7 +16414,7 @@
     {
       "name": "CATEGORY_COIN",
       "value": "0x1000000",
-      "section": "Category\t效果分类（表示这个效果将要发生什么事，OperationInfo设置了效果分类才能触发针对这一类型发动的卡，如破坏->星尘龙",
+      "section": "Category",
       "comment_zh": "硬币效果",
       "comment_en": "Coin toss effect",
       "english_status": "from_project_cache",
@@ -16438,7 +16438,7 @@
     {
       "name": "CATEGORY_DICE",
       "value": "0x2000000",
-      "section": "Category\t效果分类（表示这个效果将要发生什么事，OperationInfo设置了效果分类才能触发针对这一类型发动的卡，如破坏->星尘龙",
+      "section": "Category",
       "comment_zh": "骰子效果",
       "comment_en": "Dice roll effect",
       "english_status": "from_project_cache",
@@ -16462,7 +16462,7 @@
     {
       "name": "CATEGORY_LEAVE_GRAVE",
       "value": "0x4000000",
-      "section": "Category\t效果分类（表示这个效果将要发生什么事，OperationInfo设置了效果分类才能触发针对这一类型发动的卡，如破坏->星尘龙",
+      "section": "Category",
       "comment_zh": "涉及墓地的效果(王家長眠之谷)",
       "comment_en": "Involves Graveyard effects (e.g., Necrovalley)",
       "english_status": "from_project_cache",
@@ -16486,7 +16486,7 @@
     {
       "name": "CATEGORY_GRAVE_SPSUMMON",
       "value": "0x8000000",
-      "section": "Category\t效果分类（表示这个效果将要发生什么事，OperationInfo设置了效果分类才能触发针对这一类型发动的卡，如破坏->星尘龙",
+      "section": "Category",
       "comment_zh": "包含從墓地特殊召喚的效果（屋敷わらし、冥神）",
       "comment_en": "Includes Special Summon from Graveyard (e.g., House Duston, Underworld God)",
       "english_status": "from_project_cache",
@@ -16510,7 +16510,7 @@
     {
       "name": "CATEGORY_NEGATE",
       "value": "0x10000000",
-      "section": "Category\t效果分类（表示这个效果将要发生什么事，OperationInfo设置了效果分类才能触发针对这一类型发动的卡，如破坏->星尘龙",
+      "section": "Category",
       "comment_zh": "使发动无效效果",
       "comment_en": "Negate activation effect",
       "english_status": "from_project_cache",
@@ -16534,7 +16534,7 @@
     {
       "name": "CATEGORY_ANNOUNCE",
       "value": "0x20000000",
-      "section": "Category\t效果分类（表示这个效果将要发生什么事，OperationInfo设置了效果分类才能触发针对这一类型发动的卡，如破坏->星尘龙",
+      "section": "Category",
       "comment_zh": "發動時宣言卡名的效果",
       "comment_en": "Effect that declares a card name upon activation",
       "english_status": "from_project_cache",
@@ -16558,7 +16558,7 @@
     {
       "name": "CATEGORY_FUSION_SUMMON",
       "value": "0x40000000",
-      "section": "Category\t效果分类（表示这个效果将要发生什么事，OperationInfo设置了效果分类才能触发针对这一类型发动的卡，如破坏->星尘龙",
+      "section": "Category",
       "comment_zh": "融合召唤效果（暴走魔法阵）",
       "comment_en": "Fusion Summon effect (e.g., Magical Rampage Array)",
       "english_status": "from_project_cache",
@@ -16582,7 +16582,7 @@
     {
       "name": "CATEGORY_TOEXTRA",
       "value": "0x80000000",
-      "section": "Category\t效果分类（表示这个效果将要发生什么事，OperationInfo设置了效果分类才能触发针对这一类型发动的卡，如破坏->星尘龙",
+      "section": "Category",
       "comment_zh": "回额外卡组效果",
       "comment_en": "Return to Extra Deck effect",
       "english_status": "from_project_cache",
@@ -16606,7 +16606,7 @@
     {
       "name": "CATEGORY_MSET",
       "value": "0x100000000",
-      "section": "Category\t效果分类（表示这个效果将要发生什么事，OperationInfo设置了效果分类才能触发针对这一类型发动的卡，如破坏->星尘龙",
+      "section": "Category",
       "comment_zh": "包含盖放怪兽的效果",
       "comment_en": "Effect that includes Setting a monster",
       "english_status": "translated_exact",
@@ -16630,7 +16630,7 @@
     {
       "name": "CATEGORY_SSET",
       "value": "0x200000000",
-      "section": "Category\t效果分类（表示这个效果将要发生什么事，OperationInfo设置了效果分类才能触发针对这一类型发动的卡，如破坏->星尘龙",
+      "section": "Category",
       "comment_zh": "包含盖放魔陷的效果",
       "comment_en": "Effect that includes Setting a Spell/Trap",
       "english_status": "translated_exact",
@@ -16654,7 +16654,7 @@
     {
       "name": "CATEGORY_HANDES_OPPO",
       "value": "0x400000000",
-      "section": "Category\t效果分类（表示这个效果将要发生什么事，OperationInfo设置了效果分类才能触发针对这一类型发动的卡，如破坏->星尘龙",
+      "section": "Category",
       "comment_zh": "捨棄對方手牌效果",
       "comment_en": "Effect that discards the opponent's hand",
       "english_status": "translated_exact",
@@ -16678,7 +16678,7 @@
     {
       "name": "CATEGORY_HANDES",
       "value": "CATEGORY_HANDES_SELF+CATEGORY_HANDES_OPPO",
-      "section": "Category\t效果分类（表示这个效果将要发生什么事，OperationInfo设置了效果分类才能触发针对这一类型发动的卡，如破坏->星尘龙",
+      "section": "Category",
       "comment_zh": "",
       "comment_en": "Discard hand effect",
       "english_status": "from_project_cache",
@@ -17470,7 +17470,7 @@
     {
       "name": "HINTMSG_RELEASE",
       "value": "500",
-      "section": "Hint Message\t--提示消息，显示在窗口的上面",
+      "section": "Hint Message",
       "comment_zh": "请选择要解放的卡",
       "comment_en": "Select a card to Tribute",
       "english_status": "from_project_cache",
@@ -17494,7 +17494,7 @@
     {
       "name": "HINTMSG_DISCARD",
       "value": "501",
-      "section": "Hint Message\t--提示消息，显示在窗口的上面",
+      "section": "Hint Message",
       "comment_zh": "请选择要丢弃的手牌",
       "comment_en": "Select a card to discard from hand",
       "english_status": "from_project_cache",
@@ -17518,7 +17518,7 @@
     {
       "name": "HINTMSG_DESTROY",
       "value": "502",
-      "section": "Hint Message\t--提示消息，显示在窗口的上面",
+      "section": "Hint Message",
       "comment_zh": "请选择要破坏的卡",
       "comment_en": "Select a card to destroy",
       "english_status": "from_project_cache",
@@ -17542,7 +17542,7 @@
     {
       "name": "HINTMSG_REMOVE",
       "value": "503",
-      "section": "Hint Message\t--提示消息，显示在窗口的上面",
+      "section": "Hint Message",
       "comment_zh": "请选择要除外的卡",
       "comment_en": "Select a card to banish",
       "english_status": "from_project_cache",
@@ -17566,7 +17566,7 @@
     {
       "name": "HINTMSG_TOGRAVE",
       "value": "504",
-      "section": "Hint Message\t--提示消息，显示在窗口的上面",
+      "section": "Hint Message",
       "comment_zh": "请选择要送去墓地的卡",
       "comment_en": "Select a card to send to the Graveyard",
       "english_status": "from_project_cache",
@@ -17590,7 +17590,7 @@
     {
       "name": "HINTMSG_RTOHAND",
       "value": "505",
-      "section": "Hint Message\t--提示消息，显示在窗口的上面",
+      "section": "Hint Message",
       "comment_zh": "请选择要返回手牌的卡",
       "comment_en": "Select a card to return to the hand",
       "english_status": "from_project_cache",
@@ -17614,7 +17614,7 @@
     {
       "name": "HINTMSG_ATOHAND",
       "value": "506",
-      "section": "Hint Message\t--提示消息，显示在窗口的上面",
+      "section": "Hint Message",
       "comment_zh": "请选择要加入手牌的卡",
       "comment_en": "Select a card to add to the hand",
       "english_status": "from_project_cache",
@@ -17638,7 +17638,7 @@
     {
       "name": "HINTMSG_TODECK",
       "value": "507",
-      "section": "Hint Message\t--提示消息，显示在窗口的上面",
+      "section": "Hint Message",
       "comment_zh": "请选择要返回卡组的卡",
       "comment_en": "Select a card to return to the Deck",
       "english_status": "from_project_cache",
@@ -17662,7 +17662,7 @@
     {
       "name": "HINTMSG_SUMMON",
       "value": "508",
-      "section": "Hint Message\t--提示消息，显示在窗口的上面",
+      "section": "Hint Message",
       "comment_zh": "请选择要召唤的卡",
       "comment_en": "Select a card to Normal Summon",
       "english_status": "from_project_cache",
@@ -17686,7 +17686,7 @@
     {
       "name": "HINTMSG_SPSUMMON",
       "value": "509",
-      "section": "Hint Message\t--提示消息，显示在窗口的上面",
+      "section": "Hint Message",
       "comment_zh": "请选择要特殊召唤的卡",
       "comment_en": "Select a card to Special Summon",
       "english_status": "from_project_cache",
@@ -17710,7 +17710,7 @@
     {
       "name": "HINTMSG_SET",
       "value": "510",
-      "section": "Hint Message\t--提示消息，显示在窗口的上面",
+      "section": "Hint Message",
       "comment_zh": "请选择要盖放的卡",
       "comment_en": "Select a card to Set",
       "english_status": "from_project_cache",
@@ -17734,7 +17734,7 @@
     {
       "name": "HINTMSG_FMATERIAL",
       "value": "511",
-      "section": "Hint Message\t--提示消息，显示在窗口的上面",
+      "section": "Hint Message",
       "comment_zh": "请选择要作为融合素材的卡",
       "comment_en": "Select a card to use as Fusion Material",
       "english_status": "from_project_cache",
@@ -17758,7 +17758,7 @@
     {
       "name": "HINTMSG_SMATERIAL",
       "value": "512",
-      "section": "Hint Message\t--提示消息，显示在窗口的上面",
+      "section": "Hint Message",
       "comment_zh": "请选择要作为同调素材的卡",
       "comment_en": "Select a card to use as Synchro Material",
       "english_status": "from_project_cache",
@@ -17782,7 +17782,7 @@
     {
       "name": "HINTMSG_XMATERIAL",
       "value": "513",
-      "section": "Hint Message\t--提示消息，显示在窗口的上面",
+      "section": "Hint Message",
       "comment_zh": "请选择要作为超量素材的卡",
       "comment_en": "Select a card to use as Xyz Material",
       "english_status": "from_project_cache",
@@ -17806,7 +17806,7 @@
     {
       "name": "HINTMSG_FACEUP",
       "value": "514",
-      "section": "Hint Message\t--提示消息，显示在窗口的上面",
+      "section": "Hint Message",
       "comment_zh": "请选择表侧表示的卡",
       "comment_en": "Select a face-up card",
       "english_status": "from_project_cache",
@@ -17830,7 +17830,7 @@
     {
       "name": "HINTMSG_FACEDOWN",
       "value": "515",
-      "section": "Hint Message\t--提示消息，显示在窗口的上面",
+      "section": "Hint Message",
       "comment_zh": "请选择里侧表示的卡",
       "comment_en": "Select a face-down card",
       "english_status": "from_project_cache",
@@ -17854,7 +17854,7 @@
     {
       "name": "HINTMSG_ATTACK",
       "value": "516",
-      "section": "Hint Message\t--提示消息，显示在窗口的上面",
+      "section": "Hint Message",
       "comment_zh": "请选择攻击表示的怪兽",
       "comment_en": "Select an Attack Position monster",
       "english_status": "from_project_cache",
@@ -17878,7 +17878,7 @@
     {
       "name": "HINTMSG_DEFENSE",
       "value": "517",
-      "section": "Hint Message\t--提示消息，显示在窗口的上面",
+      "section": "Hint Message",
       "comment_zh": "请选择守备表示的怪兽",
       "comment_en": "Select a Defense Position monster",
       "english_status": "from_project_cache",
@@ -17902,7 +17902,7 @@
     {
       "name": "HINTMSG_EQUIP",
       "value": "518",
-      "section": "Hint Message\t--提示消息，显示在窗口的上面",
+      "section": "Hint Message",
       "comment_zh": "请选择要装备的卡",
       "comment_en": "Select a card to equip",
       "english_status": "from_project_cache",
@@ -17926,7 +17926,7 @@
     {
       "name": "HINTMSG_REMOVEXYZ",
       "value": "519",
-      "section": "Hint Message\t--提示消息，显示在窗口的上面",
+      "section": "Hint Message",
       "comment_zh": "请选择要取除的超量素材",
       "comment_en": "Select an Xyz Material to remove",
       "english_status": "from_project_cache",
@@ -17950,7 +17950,7 @@
     {
       "name": "HINTMSG_CONTROL",
       "value": "520",
-      "section": "Hint Message\t--提示消息，显示在窗口的上面",
+      "section": "Hint Message",
       "comment_zh": "请选择要改变控制权的怪兽",
       "comment_en": "Select a monster to change control of",
       "english_status": "from_project_cache",
@@ -17974,7 +17974,7 @@
     {
       "name": "HINTMSG_DESREPLACE",
       "value": "521",
-      "section": "Hint Message\t--提示消息，显示在窗口的上面",
+      "section": "Hint Message",
       "comment_zh": "请选择要代替破坏的卡",
       "comment_en": "Select a card to replace destruction",
       "english_status": "from_project_cache",
@@ -17998,7 +17998,7 @@
     {
       "name": "HINTMSG_FACEUPATTACK",
       "value": "522",
-      "section": "Hint Message\t--提示消息，显示在窗口的上面",
+      "section": "Hint Message",
       "comment_zh": "请选择表侧攻击表示的怪兽",
       "comment_en": "Select a face-up Attack Position monster",
       "english_status": "from_project_cache",
@@ -18022,7 +18022,7 @@
     {
       "name": "HINTMSG_FACEUPDEFENSE",
       "value": "523",
-      "section": "Hint Message\t--提示消息，显示在窗口的上面",
+      "section": "Hint Message",
       "comment_zh": "请选择表侧守备表示的怪兽",
       "comment_en": "Select a face-up Defense Position monster",
       "english_status": "from_project_cache",
@@ -18046,7 +18046,7 @@
     {
       "name": "HINTMSG_FACEDOWNATTACK",
       "value": "524",
-      "section": "Hint Message\t--提示消息，显示在窗口的上面",
+      "section": "Hint Message",
       "comment_zh": "请选择里侧攻击表示的怪兽",
       "comment_en": "Select a face-down Attack Position monster",
       "english_status": "from_project_cache",
@@ -18070,7 +18070,7 @@
     {
       "name": "HINTMSG_FACEDOWNDEFENSE",
       "value": "525",
-      "section": "Hint Message\t--提示消息，显示在窗口的上面",
+      "section": "Hint Message",
       "comment_zh": "请选择里侧守备表示的怪兽",
       "comment_en": "Select a face-down Defense Position monster",
       "english_status": "from_project_cache",
@@ -18094,7 +18094,7 @@
     {
       "name": "HINTMSG_CONFIRM",
       "value": "526",
-      "section": "Hint Message\t--提示消息，显示在窗口的上面",
+      "section": "Hint Message",
       "comment_zh": "请选择给对方确认的卡",
       "comment_en": "Select a card to confirm to the opponent",
       "english_status": "from_project_cache",
@@ -18118,7 +18118,7 @@
     {
       "name": "HINTMSG_TOFIELD",
       "value": "527",
-      "section": "Hint Message\t--提示消息，显示在窗口的上面",
+      "section": "Hint Message",
       "comment_zh": "请选择要放置到场上的卡",
       "comment_en": "Select a card to place on the field",
       "english_status": "from_project_cache",
@@ -18142,7 +18142,7 @@
     {
       "name": "HINTMSG_POSCHANGE",
       "value": "528",
-      "section": "Hint Message\t--提示消息，显示在窗口的上面",
+      "section": "Hint Message",
       "comment_zh": "请选择要改变表示形式的怪兽",
       "comment_en": "Select a monster to change position",
       "english_status": "from_project_cache",
@@ -18166,7 +18166,7 @@
     {
       "name": "HINTMSG_SELF",
       "value": "529",
-      "section": "Hint Message\t--提示消息，显示在窗口的上面",
+      "section": "Hint Message",
       "comment_zh": "请选择自己的卡",
       "comment_en": "Select your own card",
       "english_status": "from_project_cache",
@@ -18190,7 +18190,7 @@
     {
       "name": "HINTMSG_OPPO",
       "value": "530",
-      "section": "Hint Message\t--提示消息，显示在窗口的上面",
+      "section": "Hint Message",
       "comment_zh": "请选择对方的卡",
       "comment_en": "Select an opponent's card",
       "english_status": "from_project_cache",
@@ -18214,7 +18214,7 @@
     {
       "name": "HINTMSG_TRIBUTE",
       "value": "531",
-      "section": "Hint Message\t--提示消息，显示在窗口的上面",
+      "section": "Hint Message",
       "comment_zh": "请选择上级召唤用需要解放的怪兽",
       "comment_en": "Select a monster to Tribute for an Advanced Summon",
       "english_status": "from_project_cache",
@@ -18238,7 +18238,7 @@
     {
       "name": "HINTMSG_DEATTACHFROM",
       "value": "532",
-      "section": "Hint Message\t--提示消息，显示在窗口的上面",
+      "section": "Hint Message",
       "comment_zh": "请选择要取除超量素材的怪兽",
       "comment_en": "Select a monster to remove Xyz Material from",
       "english_status": "from_project_cache",
@@ -18262,7 +18262,7 @@
     {
       "name": "HINTMSG_LMATERIAL",
       "value": "533",
-      "section": "Hint Message\t--提示消息，显示在窗口的上面",
+      "section": "Hint Message",
       "comment_zh": "请选择要作为连接素材的卡",
       "comment_en": "Select a card to use as Link Material",
       "english_status": "from_project_cache",
@@ -18286,7 +18286,7 @@
     {
       "name": "HINTMSG_ATTACKTARGET",
       "value": "549",
-      "section": "Hint Message\t--提示消息，显示在窗口的上面",
+      "section": "Hint Message",
       "comment_zh": "请选择攻击的对象",
       "comment_en": "Select an attack target",
       "english_status": "from_project_cache",
@@ -18310,7 +18310,7 @@
     {
       "name": "HINTMSG_EFFECT",
       "value": "550",
-      "section": "Hint Message\t--提示消息，显示在窗口的上面",
+      "section": "Hint Message",
       "comment_zh": "请选择要发动的效果",
       "comment_en": "Select an effect to activate",
       "english_status": "from_project_cache",
@@ -18334,7 +18334,7 @@
     {
       "name": "HINTMSG_TARGET",
       "value": "551",
-      "section": "Hint Message\t--提示消息，显示在窗口的上面",
+      "section": "Hint Message",
       "comment_zh": "请选择效果的对象",
       "comment_en": "Select an effect target",
       "english_status": "from_project_cache",
@@ -18358,7 +18358,7 @@
     {
       "name": "HINTMSG_COIN",
       "value": "552",
-      "section": "Hint Message\t--提示消息，显示在窗口的上面",
+      "section": "Hint Message",
       "comment_zh": "请选择硬币的正反面",
       "comment_en": "Select heads or tails for a coin toss",
       "english_status": "from_project_cache",
@@ -18382,7 +18382,7 @@
     {
       "name": "HINTMSG_DICE",
       "value": "553",
-      "section": "Hint Message\t--提示消息，显示在窗口的上面",
+      "section": "Hint Message",
       "comment_zh": "请选择骰子的结果",
       "comment_en": "Select a dice roll result",
       "english_status": "from_project_cache",
@@ -18406,7 +18406,7 @@
     {
       "name": "HINTMSG_CARDTYPE",
       "value": "554",
-      "section": "Hint Message\t--提示消息，显示在窗口的上面",
+      "section": "Hint Message",
       "comment_zh": "请选择一个种类",
       "comment_en": "Select a card type",
       "english_status": "from_project_cache",
@@ -18430,7 +18430,7 @@
     {
       "name": "HINTMSG_OPTION",
       "value": "555",
-      "section": "Hint Message\t--提示消息，显示在窗口的上面",
+      "section": "Hint Message",
       "comment_zh": "请选择一个选项",
       "comment_en": "Select an option",
       "english_status": "from_project_cache",
@@ -18454,7 +18454,7 @@
     {
       "name": "HINTMSG_RESOLVEEFFECT",
       "value": "556",
-      "section": "Hint Message\t--提示消息，显示在窗口的上面",
+      "section": "Hint Message",
       "comment_zh": "请选择要发动/处理的效果",
       "comment_en": "Select an effect to activate or resolve",
       "english_status": "from_project_cache",
@@ -18478,7 +18478,7 @@
     {
       "name": "HINTMSG_SELECT",
       "value": "560",
-      "section": "Hint Message\t--提示消息，显示在窗口的上面",
+      "section": "Hint Message",
       "comment_zh": "请选择",
       "comment_en": "Select",
       "english_status": "from_project_cache",
@@ -18502,7 +18502,7 @@
     {
       "name": "HINTMSG_POSITION",
       "value": "561",
-      "section": "Hint Message\t--提示消息，显示在窗口的上面",
+      "section": "Hint Message",
       "comment_zh": "请选择表示形式",
       "comment_en": "Select a position",
       "english_status": "from_project_cache",
@@ -18526,7 +18526,7 @@
     {
       "name": "HINTMSG_ATTRIBUTE",
       "value": "562",
-      "section": "Hint Message\t--提示消息，显示在窗口的上面",
+      "section": "Hint Message",
       "comment_zh": "请选择要宣言的属性",
       "comment_en": "Select an attribute to declare",
       "english_status": "from_project_cache",
@@ -18550,7 +18550,7 @@
     {
       "name": "HINTMSG_RACE",
       "value": "563",
-      "section": "Hint Message\t--提示消息，显示在窗口的上面",
+      "section": "Hint Message",
       "comment_zh": "请选择要宣言的种族",
       "comment_en": "Select a race to declare",
       "english_status": "from_project_cache",
@@ -18574,7 +18574,7 @@
     {
       "name": "HINTMSG_CODE",
       "value": "564",
-      "section": "Hint Message\t--提示消息，显示在窗口的上面",
+      "section": "Hint Message",
       "comment_zh": "请宣言一个卡名",
       "comment_en": "Declare a card name",
       "english_status": "from_project_cache",
@@ -18598,7 +18598,7 @@
     {
       "name": "HINGMSG_NUMBER",
       "value": "565",
-      "section": "Hint Message\t--提示消息，显示在窗口的上面",
+      "section": "Hint Message",
       "comment_zh": "请选择一个数字",
       "comment_en": "Select a number",
       "english_status": "from_project_cache",
@@ -18622,7 +18622,7 @@
     {
       "name": "HINGMSG_LVRANK",
       "value": "567",
-      "section": "Hint Message\t--提示消息，显示在窗口的上面",
+      "section": "Hint Message",
       "comment_zh": "请宣言一个等级",
       "comment_en": "Declare a Level",
       "english_status": "from_project_cache",
@@ -18646,7 +18646,7 @@
     {
       "name": "HINTMSG_RESOLVECARD",
       "value": "568",
-      "section": "Hint Message\t--提示消息，显示在窗口的上面",
+      "section": "Hint Message",
       "comment_zh": "请选择要处理效果的卡",
       "comment_en": "Select a card to resolve its effect",
       "english_status": "from_project_cache",
@@ -18670,7 +18670,7 @@
     {
       "name": "HINTMSG_ZONE",
       "value": "569",
-      "section": "Hint Message\t--提示消息，显示在窗口的上面",
+      "section": "Hint Message",
       "comment_zh": "请选择[%ls]的位置",
       "comment_en": "Select the position for [%ls]",
       "english_status": "from_project_cache",
@@ -18694,7 +18694,7 @@
     {
       "name": "HINTMSG_DISABLEZONE",
       "value": "570",
-      "section": "Hint Message\t--提示消息，显示在窗口的上面",
+      "section": "Hint Message",
       "comment_zh": "请选择要变成不能使用的卡片区域",
       "comment_en": "Select a zone to make unusable",
       "english_status": "from_project_cache",
@@ -18718,7 +18718,7 @@
     {
       "name": "HINTMSG_TOZONE",
       "value": "571",
-      "section": "Hint Message\t--提示消息，显示在窗口的上面",
+      "section": "Hint Message",
       "comment_zh": "请选择要移动到的位置",
       "comment_en": "Select a position to move to",
       "english_status": "from_project_cache",
@@ -18742,7 +18742,7 @@
     {
       "name": "HINTMSG_COUNTER",
       "value": "572",
-      "section": "Hint Message\t--提示消息，显示在窗口的上面",
+      "section": "Hint Message",
       "comment_zh": "请选择要放置指示物的卡",
       "comment_en": "Select a card to place a counter on",
       "english_status": "from_project_cache",
@@ -18766,7 +18766,7 @@
     {
       "name": "HINTMSG_DISABLE",
       "value": "573",
-      "section": "Hint Message\t--提示消息，显示在窗口的上面",
+      "section": "Hint Message",
       "comment_zh": "请选择要无效的卡",
       "comment_en": "Select a card to negate",
       "english_status": "from_project_cache",
@@ -18790,7 +18790,7 @@
     {
       "name": "HINTMSG_OPERATECARD",
       "value": "574",
-      "section": "Hint Message\t--提示消息，显示在窗口的上面",
+      "section": "Hint Message",
       "comment_zh": "请选择要操作的卡",
       "comment_en": "Select a card to operate",
       "english_status": "from_project_cache",
@@ -18814,7 +18814,7 @@
     {
       "name": "HINTMSG_FIELD_FIRST",
       "value": "575",
-      "section": "Hint Message\t--提示消息，显示在窗口的上面",
+      "section": "Hint Message",
       "comment_zh": "请选择场上的卡（按取消可选择其他区域的卡）",
       "comment_en": "Select a card on the field (press Cancel to select a card from another zone)",
       "english_status": "translated_exact",
@@ -18838,7 +18838,7 @@
     {
       "name": "SELECT_HEADS",
       "value": "60",
-      "section": "Select\t--请选择",
+      "section": "Select",
       "comment_zh": "正面",
       "comment_en": "Heads",
       "english_status": "from_project_cache",
@@ -18862,7 +18862,7 @@
     {
       "name": "SELECT_TAILS",
       "value": "61",
-      "section": "Select\t--请选择",
+      "section": "Select",
       "comment_zh": "反面",
       "comment_en": "Tails",
       "english_status": "from_project_cache",
@@ -18886,7 +18886,7 @@
     {
       "name": "TIMING_DRAW_PHASE",
       "value": "0x1",
-      "section": "Timing\t--提示时点，可以给freechain卡片增加自动提示时点",
+      "section": "Timing",
       "comment_zh": "抽卡阶段时点",
       "comment_en": "Draw Phase timing",
       "english_status": "from_project_cache",
@@ -18910,7 +18910,7 @@
     {
       "name": "TIMING_STANDBY_PHASE",
       "value": "0x2",
-      "section": "Timing\t--提示时点，可以给freechain卡片增加自动提示时点",
+      "section": "Timing",
       "comment_zh": "准备阶段时点",
       "comment_en": "Standby Phase timing",
       "english_status": "from_project_cache",
@@ -18934,7 +18934,7 @@
     {
       "name": "TIMING_MAIN_END",
       "value": "0x4",
-      "section": "Timing\t--提示时点，可以给freechain卡片增加自动提示时点",
+      "section": "Timing",
       "comment_zh": "主要阶段结束时点",
       "comment_en": "Main Phase end timing",
       "english_status": "from_project_cache",
@@ -18958,7 +18958,7 @@
     {
       "name": "TIMING_BATTLE_START",
       "value": "0x8",
-      "section": "Timing\t--提示时点，可以给freechain卡片增加自动提示时点",
+      "section": "Timing",
       "comment_zh": "战斗阶段开始时点",
       "comment_en": "Battle Phase start timing",
       "english_status": "from_project_cache",
@@ -18982,7 +18982,7 @@
     {
       "name": "TIMING_BATTLE_END",
       "value": "0x10",
-      "section": "Timing\t--提示时点，可以给freechain卡片增加自动提示时点",
+      "section": "Timing",
       "comment_zh": "战斗阶段结束时点",
       "comment_en": "Battle Phase end timing",
       "english_status": "from_project_cache",
@@ -19006,7 +19006,7 @@
     {
       "name": "TIMING_END_PHASE",
       "value": "0x20",
-      "section": "Timing\t--提示时点，可以给freechain卡片增加自动提示时点",
+      "section": "Timing",
       "comment_zh": "结束阶段时点",
       "comment_en": "End Phase timing",
       "english_status": "from_project_cache",
@@ -19030,7 +19030,7 @@
     {
       "name": "TIMING_SUMMON",
       "value": "0x40",
-      "section": "Timing\t--提示时点，可以给freechain卡片增加自动提示时点",
+      "section": "Timing",
       "comment_zh": "召唤时点",
       "comment_en": "Normal Summon timing",
       "english_status": "from_project_cache",
@@ -19054,7 +19054,7 @@
     {
       "name": "TIMING_SPSUMMON",
       "value": "0x80",
-      "section": "Timing\t--提示时点，可以给freechain卡片增加自动提示时点",
+      "section": "Timing",
       "comment_zh": "特殊召唤时点",
       "comment_en": "Special Summon timing",
       "english_status": "from_project_cache",
@@ -19078,7 +19078,7 @@
     {
       "name": "TIMING_FLIPSUMMON",
       "value": "0x100",
-      "section": "Timing\t--提示时点，可以给freechain卡片增加自动提示时点",
+      "section": "Timing",
       "comment_zh": "翻转召唤时点",
       "comment_en": "Flip Summon timing",
       "english_status": "from_project_cache",
@@ -19102,7 +19102,7 @@
     {
       "name": "TIMING_MSET",
       "value": "0x200",
-      "section": "Timing\t--提示时点，可以给freechain卡片增加自动提示时点",
+      "section": "Timing",
       "comment_zh": "放置怪兽时点",
       "comment_en": "Monster Set timing",
       "english_status": "from_project_cache",
@@ -19126,7 +19126,7 @@
     {
       "name": "TIMING_SSET",
       "value": "0x400",
-      "section": "Timing\t--提示时点，可以给freechain卡片增加自动提示时点",
+      "section": "Timing",
       "comment_zh": "放置魔陷时点",
       "comment_en": "Spell/Trap Set timing",
       "english_status": "from_project_cache",
@@ -19150,7 +19150,7 @@
     {
       "name": "TIMING_POS_CHANGE",
       "value": "0x800",
-      "section": "Timing\t--提示时点，可以给freechain卡片增加自动提示时点",
+      "section": "Timing",
       "comment_zh": "表示形式变更时点",
       "comment_en": "Position change timing",
       "english_status": "from_project_cache",
@@ -19174,7 +19174,7 @@
     {
       "name": "TIMING_ATTACK",
       "value": "0x1000",
-      "section": "Timing\t--提示时点，可以给freechain卡片增加自动提示时点",
+      "section": "Timing",
       "comment_zh": "攻击宣言时点",
       "comment_en": "Attack declaration timing",
       "english_status": "from_project_cache",
@@ -19198,7 +19198,7 @@
     {
       "name": "TIMING_DAMAGE_STEP",
       "value": "0x2000",
-      "section": "Timing\t--提示时点，可以给freechain卡片增加自动提示时点",
+      "section": "Timing",
       "comment_zh": "伤害步骤时点",
       "comment_en": "Damage Step timing",
       "english_status": "from_project_cache",
@@ -19222,7 +19222,7 @@
     {
       "name": "TIMING_DAMAGE_CAL",
       "value": "0x4000",
-      "section": "Timing\t--提示时点，可以给freechain卡片增加自动提示时点",
+      "section": "Timing",
       "comment_zh": "伤害计算时点",
       "comment_en": "Damage Calculation timing",
       "english_status": "from_project_cache",
@@ -19246,7 +19246,7 @@
     {
       "name": "TIMING_CHAIN_END",
       "value": "0x8000",
-      "section": "Timing\t--提示时点，可以给freechain卡片增加自动提示时点",
+      "section": "Timing",
       "comment_zh": "连锁结束时点",
       "comment_en": "Chain end timing",
       "english_status": "from_project_cache",
@@ -19270,7 +19270,7 @@
     {
       "name": "TIMING_DRAW",
       "value": "0x10000",
-      "section": "Timing\t--提示时点，可以给freechain卡片增加自动提示时点",
+      "section": "Timing",
       "comment_zh": "抽卡时点（不是抽卡阶段",
       "comment_en": "Draw timing (not Draw Phase)",
       "english_status": "from_project_cache",
@@ -19294,7 +19294,7 @@
     {
       "name": "TIMING_DAMAGE",
       "value": "0x20000",
-      "section": "Timing\t--提示时点，可以给freechain卡片增加自动提示时点",
+      "section": "Timing",
       "comment_zh": "造成伤害时点",
       "comment_en": "Damage dealt timing",
       "english_status": "from_project_cache",
@@ -19318,7 +19318,7 @@
     {
       "name": "TIMING_RECOVER",
       "value": "0x40000",
-      "section": "Timing\t--提示时点，可以给freechain卡片增加自动提示时点",
+      "section": "Timing",
       "comment_zh": "回复时点",
       "comment_en": "Recovery timing",
       "english_status": "from_project_cache",
@@ -19342,7 +19342,7 @@
     {
       "name": "TIMING_DESTROY",
       "value": "0x80000",
-      "section": "Timing\t--提示时点，可以给freechain卡片增加自动提示时点",
+      "section": "Timing",
       "comment_zh": "破坏时点",
       "comment_en": "Destruction timing",
       "english_status": "from_project_cache",
@@ -19366,7 +19366,7 @@
     {
       "name": "TIMING_REMOVE",
       "value": "0x100000",
-      "section": "Timing\t--提示时点，可以给freechain卡片增加自动提示时点",
+      "section": "Timing",
       "comment_zh": "除外时点",
       "comment_en": "Banish timing",
       "english_status": "from_project_cache",
@@ -19390,7 +19390,7 @@
     {
       "name": "TIMING_TOHAND",
       "value": "0x200000",
-      "section": "Timing\t--提示时点，可以给freechain卡片增加自动提示时点",
+      "section": "Timing",
       "comment_zh": "加入手牌时点（检索、回收等）",
       "comment_en": "Add to hand timing (e.g., search, recovery)",
       "english_status": "from_project_cache",
@@ -19414,7 +19414,7 @@
     {
       "name": "TIMING_TODECK",
       "value": "0x400000",
-      "section": "Timing\t--提示时点，可以给freechain卡片增加自动提示时点",
+      "section": "Timing",
       "comment_zh": "回卡组时点",
       "comment_en": "Return to Deck timing",
       "english_status": "from_project_cache",
@@ -19438,7 +19438,7 @@
     {
       "name": "TIMING_TOGRAVE",
       "value": "0x800000",
-      "section": "Timing\t--提示时点，可以给freechain卡片增加自动提示时点",
+      "section": "Timing",
       "comment_zh": "进墓地时点",
       "comment_en": "Send to Graveyard timing",
       "english_status": "from_project_cache",
@@ -19462,7 +19462,7 @@
     {
       "name": "TIMING_BATTLE_PHASE",
       "value": "0x1000000",
-      "section": "Timing\t--提示时点，可以给freechain卡片增加自动提示时点",
+      "section": "Timing",
       "comment_zh": "战斗阶段时点",
       "comment_en": "Battle Phase timing",
       "english_status": "from_project_cache",
@@ -19486,7 +19486,7 @@
     {
       "name": "TIMING_EQUIP",
       "value": "0x2000000",
-      "section": "Timing\t--提示时点，可以给freechain卡片增加自动提示时点",
+      "section": "Timing",
       "comment_zh": "装备时点",
       "comment_en": "Equip timing",
       "english_status": "from_project_cache",
@@ -19510,7 +19510,7 @@
     {
       "name": "TIMING_BATTLE_STEP_END",
       "value": "0x4000000",
-      "section": "Timing\t--提示时点，可以给freechain卡片增加自动提示时点",
+      "section": "Timing",
       "comment_zh": "戰鬥步驟結束時",
       "comment_en": "Battle Step end timing",
       "english_status": "from_project_cache",
@@ -19534,7 +19534,7 @@
     {
       "name": "TIMING_BATTLED",
       "value": "0x8000000",
-      "section": "Timing\t--提示时点，可以给freechain卡片增加自动提示时点",
+      "section": "Timing",
       "comment_zh": "伤害计算后时点",
       "comment_en": "After damage calculation timing",
       "english_status": "from_project_cache",
@@ -19558,7 +19558,7 @@
     {
       "name": "TIMINGS_CHECK_MONSTER",
       "value": "0x1c0",
-      "section": "--组合时点",
+      "section": "组合时点",
       "comment_zh": "怪兽正面上场",
       "comment_en": "Monster summoned face-up",
       "english_status": "from_project_cache",
@@ -19582,7 +19582,7 @@
     {
       "name": "GLOBALFLAG_DECK_REVERSE_CHECK",
       "value": "0x1",
-      "section": "Global flag\t--特殊标记",
+      "section": "Global flag",
       "comment_zh": "卡组翻转标记",
       "comment_en": "Deck reverse check",
       "english_status": "from_project_cache",
@@ -19606,7 +19606,7 @@
     {
       "name": "GLOBALFLAG_BRAINWASHING_CHECK",
       "value": "0x2",
-      "section": "Global flag\t--特殊标记",
+      "section": "Global flag",
       "comment_zh": "洗脑解除标记",
       "comment_en": "Brainwashing release check",
       "english_status": "from_project_cache",
@@ -19630,7 +19630,7 @@
     {
       "name": "GLOBALFLAG_SCRAP_CHIMERA",
       "value": "0x4",
-      "section": "Global flag\t--特殊标记",
+      "section": "Global flag",
       "comment_zh": "废铁奇美拉标记",
       "comment_en": "Scrap Chimera check",
       "english_status": "from_project_cache",
@@ -19654,7 +19654,7 @@
     {
       "name": "GLOBALFLAG_DELAYED_QUICKEFFECT",
       "value": "0x8",
-      "section": "Global flag\t--特殊标记",
+      "section": "Global flag",
       "comment_zh": "N/A",
       "comment_en": "N/A",
       "english_status": "from_project_cache",
@@ -19678,7 +19678,7 @@
     {
       "name": "GLOBALFLAG_DETACH_EVENT",
       "value": "0x10",
-      "section": "Global flag\t--特殊标记",
+      "section": "Global flag",
       "comment_zh": "EVENT_DETACH_MATERIAL",
       "comment_en": "EVENT_DETACH_MATERIAL",
       "english_status": "from_project_cache",
@@ -19702,7 +19702,7 @@
     {
       "name": "GLOBALFLAG_MUST_BE_SMATERIAL",
       "value": "0x20",
-      "section": "Global flag\t--特殊标记",
+      "section": "Global flag",
       "comment_zh": "N/A",
       "comment_en": "Must be used as Synchro Material (e.g., Phonon Pulse Dragon)",
       "english_status": "from_project_cache",
@@ -19726,7 +19726,7 @@
     {
       "name": "GLOBALFLAG_SPSUMMON_COUNT",
       "value": "0x40",
-      "section": "Global flag\t--特殊标记",
+      "section": "Global flag",
       "comment_zh": "玩家的特殊召唤次数限制",
       "comment_en": "Player's Special Summon count limit",
       "english_status": "from_project_cache",
@@ -19750,7 +19750,7 @@
     {
       "name": "GLOBALFLAG_XMAT_COUNT_LIMIT",
       "value": "0x80",
-      "section": "Global flag\t--特殊标记",
+      "section": "Global flag",
       "comment_zh": "超量素材数量限制标记（光天使 天座）",
       "comment_en": "Xyz Material count limit check (e.g., Archlord Kristya)",
       "english_status": "from_project_cache",
@@ -19774,7 +19774,7 @@
     {
       "name": "GLOBALFLAG_SELF_TOGRAVE",
       "value": "0x100",
-      "section": "Global flag\t--特殊标记",
+      "section": "Global flag",
       "comment_zh": "不入連鎖的送墓檢查(EFFECT_SELF_TOGRAVE)",
       "comment_en": "Non-chain send to Graveyard check (EFFECT_SELF_TOGRAVE)",
       "english_status": "from_project_cache",
@@ -19798,7 +19798,7 @@
     {
       "name": "GLOBALFLAG_SPSUMMON_ONCE",
       "value": "0x200",
-      "section": "Global flag\t--特殊标记",
+      "section": "Global flag",
       "comment_zh": "1回合只能特殊召喚1次(Card.SetSPSummonOnce())",
       "comment_en": "Can Special Summon only once per turn (Card.SetSPSummonOnce())",
       "english_status": "from_project_cache",
@@ -19822,7 +19822,7 @@
     {
       "name": "GLOBALFLAG_TUNE_MAGICIAN",
       "value": "0x400",
-      "section": "Global flag\t--特殊标记",
+      "section": "Global flag",
       "comment_zh": "超量素材检查标记（调弦之魔术师）",
       "comment_en": "Xyz Material check (e.g., Tuning Magician)",
       "english_status": "from_project_cache",

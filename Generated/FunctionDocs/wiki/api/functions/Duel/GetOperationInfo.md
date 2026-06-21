@@ -19,10 +19,10 @@ The first return value is false when that category is not recorded. Otherwise, t
 ## Returns
 
 - `bool`
-- `Group` - 可能为空
-- `int` - 可能为空
-- `int` - 可能为空
-- `int` - 可能为空
+- `Group` - may be nil
+- `int` - may be nil
+- `int` - may be nil
+- `int` - may be nil
 
 ## Source
 

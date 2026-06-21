@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-06-21T12:46:36+00:00",
+    "generated_at": "2026-06-21T14:11:26+00:00",
     "workspace": "D:\\Programs\\GitHub\\MDPro3_Sacred_Book",
     "dataeditorx_data": "D:\\Programs\\GitHub\\DataEditorX\\DataEditorX\\data",
     "mdpro3_locales": "D:\\Programs\\GitHub\\MDPro3_Data\\Data\\locales",
@@ -15752,27 +15752,27 @@
         },
         {
           "type": "Group",
-          "description": "可能为空"
+          "description": "may be nil"
         },
         {
           "type": "int",
-          "description": "可能为空"
+          "description": "may be nil"
         },
         {
           "type": "int",
-          "description": "可能为空"
+          "description": "may be nil"
         },
         {
           "type": "Effect",
-          "description": "可能为空"
+          "description": "may be nil"
         },
         {
           "type": "int",
-          "description": "可能为空"
+          "description": "may be nil"
         },
         {
           "type": "int",
-          "description": "可能为空"
+          "description": "may be nil"
         }
       ],
       "description_zh": [
@@ -15936,7 +15936,7 @@
           "name": "ecode",
           "type": "int",
           "optional": false,
-          "description": "EFFECT_MUST_BE_FMATERIAL等"
+          "description": "for example, EFFECT_MUST_BE_FMATERIAL"
         }
       ],
       "returns": [
@@ -18897,11 +18897,11 @@
       "returns": [
         {
           "type": "Group",
-          "description": "material_all 包含受EFFECT_EXTRA_FUSION_MATERIAL影响的卡"
+          "description": "material_all includes cards affected by EFFECT_EXTRA_FUSION_MATERIAL"
         },
         {
           "type": "Group",
-          "description": "material_base 只取那些区域的卡"
+          "description": "material_base contains only cards from the requested locations"
         }
       ],
       "description_zh": [
@@ -19486,7 +19486,7 @@
           "name": "ecode",
           "type": "int",
           "optional": false,
-          "description": "EFFECT_MUST_BE_FMATERIAL等"
+          "description": "for example, EFFECT_MUST_BE_FMATERIAL"
         }
       ],
       "returns": [
@@ -19706,19 +19706,19 @@
         },
         {
           "type": "Group",
-          "description": "可能为空"
+          "description": "may be nil"
         },
         {
           "type": "int",
-          "description": "可能为空"
+          "description": "may be nil"
         },
         {
           "type": "int",
-          "description": "可能为空"
+          "description": "may be nil"
         },
         {
           "type": "int",
-          "description": "可能为空"
+          "description": "may be nil"
         }
       ],
       "description_zh": [
@@ -24362,7 +24362,7 @@
           "name": "g",
           "type": "Group|nil",
           "optional": true,
-          "description": "不能为空"
+          "description": "cannot be nil when selecting materials"
         },
         {
           "name": "gc",
@@ -32060,7 +32060,7 @@
           "name": "sg",
           "type": "Group|nil",
           "optional": true,
-          "description": "已选的卡，可以从中取消选择"
+          "description": "already selected cards that can be unselected"
         },
         {
           "name": "player",
@@ -42266,8 +42266,8 @@
       ],
       "description_zh": [],
       "description_en": [
-        "Used by Yosenju Yamamisaki (39853199) and some other cards (49249907, 93368494), though the purpose of this function is unclear (★意★义★不★明★)",
-        "Card 54109233, while not using this function, uses a similar implementation, also with unclear purpose (★意★义★不★明★), equivalent to",
+        "Used by Yosenju Yamamisaki (39853199) and some other cards (49249907, 93368494), though the purpose of this function is unclear.",
+        "Card 54109233, while not using this function, uses a similar implementation with an unclear purpose, equivalent to",
         "function aux.sumreg(e, tp, eg, ep, ev, re, r, rp)",
         "  local tc=eg:GetFirst()",
         "  local code=e:GetLabel()",

@@ -14,7 +14,7 @@ Let the player player from the g to select a group [must contain gc] fusion fusi
 
 - `player` `int`
 - `c` `Card`
-- `g` `Group|nil` optional - 不能为空
+- `g` `Group|nil` optional - cannot be nil when selecting materials
 - `gc` `Card|nil` optional
 - `chkf` `int` optional - default: PLAYER_NONE
 - `not_material` `bool` optional - default: false
