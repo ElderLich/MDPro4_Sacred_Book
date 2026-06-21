@@ -381,6 +381,7 @@ def load_all_function_docs(workspace: Path, core_root: Path) -> OrderedDict[str,
             else:
                 all_docs[name] = doc
     apply_core_doc_overrides(all_docs)
+    apply_function_zh_overrides(all_docs)
 
     return OrderedDict(
         sorted(
@@ -477,6 +478,20 @@ FUNCTION_EN_OVERRIDES = {
     "Effect.IsHasRange": ["Checks whether the effect includes range."],
     "Effect.SetCostCheck": ["Sets e's cost-check flag to b."],
     "Group.CancelableSelect": ["Lets player select min to max cards from g, excluding ex; the selection can be canceled and return nil."],
+    "Auxiliary.AddCodeList": ["Registers one or more card codes as codes listed by c, so later checks such as Auxiliary.IsCodeListed can find them. Skipped while c is copying an effect."],
+    "Auxiliary.AddDrytronSpSummonEffect": [
+        "Adds the shared Drytron ignition effect that Special Summons c from the hand or Graveyard.",
+        "The effect uses the common Drytron release cost, target, operation wrapper, and custom activity counter.",
+    ],
+    "Auxiliary.AddMaterialCodeList": [
+        "Registers one or more material card codes for c and also adds each code to c's listed-code table.",
+        "Fusion Monsters normally do not need this helper.",
+    ],
+    "Auxiliary.AddSetNameMonsterList": ["Registers set codes of monsters listed by c, so Auxiliary.IsSetNameMonsterListed can check them later. Skipped while c is copying an effect."],
+    "Auxiliary.AddThisCardInGraveAlreadyCheck": [
+        "Registers a continuous effect on c that records the effect that sent c to the Graveyard.",
+        "This lets later Graveyard-condition checks distinguish a card that was already in the Graveyard from one sent there by the currently resolving effect.",
+    ],
     "Card.branded_fusion_check": ["Material check for Branded Fusion."],
     "Card.cyber_fusion_check": ["Material check for Cyberload Fusion."],
     "Card.destruction_swordsman_fusion_check": ["Material check for Destruction Swordsman Fusion."],
@@ -487,6 +502,24 @@ FUNCTION_EN_OVERRIDES = {
     "Card.synchro_fusion_check": ["Material check for Miracle Synchro Fusion."],
     "Card.ultimate_fusion_check": ["Material check for Ultimate Fusion."],
     "Card.zw_equip_monster": ["Equips this card as an Equip Card for ZW - monsters."],
+}
+
+
+FUNCTION_ZH_OVERRIDES = {
+    "Auxiliary.AddCodeList": ["为c登记1个或多个卡名编号，供Auxiliary.IsCodeListed等函数判断这些编号是否被c列名。复制效果时不处理。"],
+    "Auxiliary.AddDrytronSpSummonEffect": [
+        "为c添加「龙辉巧」共通的从手牌或墓地特殊召唤自身的起动效果。",
+        "该效果使用共通的解放费用、目标、操作包装函数以及特殊召唤限制计数器。",
+    ],
+    "Auxiliary.AddMaterialCodeList": [
+        "为c登记1个或多个素材卡名编号，并同时把这些编号加入c的列名编号表。",
+        "融合怪兽通常不需要使用此辅助函数。",
+    ],
+    "Auxiliary.AddSetNameMonsterList": ["为c登记其文本中列名的怪兽系列编号，供Auxiliary.IsSetNameMonsterListed等函数之后判断。复制效果时不处理。"],
+    "Auxiliary.AddThisCardInGraveAlreadyCheck": [
+        "为c登记一个持续效果，用于记录把c送去墓地的效果。",
+        "这样后续的墓地条件可以区分此卡原本就在墓地，还是被当前正在处理的效果送去墓地。",
+    ],
 }
 
 
@@ -572,6 +605,16 @@ def apply_core_doc_overrides(docs: dict[str, FunctionDoc]) -> None:
         doc.description_zh = list(override["description"])
         if "core-doc-override" not in doc.tags:
             doc.tags.append("core-doc-override")
+
+
+def apply_function_zh_overrides(docs: dict[str, FunctionDoc]) -> None:
+    for name, description in FUNCTION_ZH_OVERRIDES.items():
+        doc = docs.get(name)
+        if not doc:
+            continue
+        doc.description_zh = list(description)
+        if "manual-zh-doc" not in doc.tags:
+            doc.tags.append("manual-zh-doc")
 
 
 def normalize_bullet_records(records: dict[str, list[str]]) -> dict[str, list[str]]:
@@ -1327,9 +1370,52 @@ def parse_constant_docs(path: Path, workspace: Path, origin: str) -> OrderedDict
     return docs
 
 
+def parse_constant_json_cache(path: Path) -> dict[str, ConstantDoc]:
+    if not path.exists():
+        return {}
+    try:
+        payload = json.loads(read_text(path))
+    except json.JSONDecodeError:
+        return {}
+
+    docs: dict[str, ConstantDoc] = {}
+    for item in payload.get("constants", []):
+        name = item.get("name")
+        if not name:
+            continue
+        docs[name] = ConstantDoc(
+            name=name,
+            value=item.get("value", ""),
+            section=item.get("section", ""),
+            comment_zh=item.get("comment_zh", ""),
+            comment_en=item.get("comment_en", ""),
+            english_status=item.get("english_status", "missing"),
+            dataeditorx_value=item.get("dataeditorx_value", ""),
+            dataeditorx_comment=item.get("dataeditorx_comment", ""),
+            old_value=item.get("old_value", ""),
+            old_comment=item.get("old_comment", ""),
+            source_files=[
+                SourceRef(
+                    src.get("path", ""),
+                    int(src.get("line", 0) or 0),
+                    src.get("origin", ""),
+                )
+                for src in item.get("source_files", [])
+                if isinstance(src, dict)
+            ],
+        )
+    return docs
+
+
 def build_constant_docs(workspace: Path, dataeditorx_data: Path) -> list[ConstantDoc]:
     current = parse_constant_docs(workspace / "Utilities" / "constant.lua", workspace, "current")
     old = parse_constant_docs(workspace / "OLD" / "Utilities" / "constant.lua", workspace, "old")
+    generated_json_cache = parse_constant_json_cache(workspace / "Generated" / "FunctionDocs" / "constants.generated.json")
+    generated_lua_cache = parse_constant_docs(
+        workspace / "Generated" / "FunctionDocs" / "constant_english.generated.lua",
+        workspace,
+        "generated-cache",
+    )
     dataeditorx = parse_constant_docs(dataeditorx_data / "lua" / "constant.lua", workspace, "dataeditorx")
 
     docs: list[ConstantDoc] = []
@@ -1342,6 +1428,20 @@ def build_constant_docs(workspace: Path, dataeditorx_data: Path) -> list[Constan
             if old_doc.comment_zh and is_english_like_comment(old_doc.comment_zh):
                 doc.comment_en = old_doc.comment_zh
                 doc.english_status = "from_old_utility"
+        elif name in generated_json_cache:
+            cache_doc = generated_json_cache[name]
+            doc.old_value = cache_doc.old_value
+            doc.old_comment = cache_doc.old_comment
+            doc.source_files.extend(src for src in cache_doc.source_files if src.origin == "old")
+            if cache_doc.comment_en and is_english_like_comment(cache_doc.comment_en):
+                doc.comment_en = cache_doc.comment_en
+                doc.english_status = cache_doc.english_status or "from_generated_cache"
+        elif name in generated_lua_cache:
+            english_doc = generated_lua_cache[name]
+            doc.source_files.extend(english_doc.source_files)
+            if english_doc.comment_zh and is_english_like_comment(english_doc.comment_zh):
+                doc.comment_en = english_doc.comment_zh
+                doc.english_status = "from_generated_cache"
         if name in dataeditorx:
             dex_doc = dataeditorx[name]
             doc.dataeditorx_value = dex_doc.value
@@ -1365,7 +1465,7 @@ def write_constant_english_lua(path: Path, docs: list[ConstantDoc]) -> None:
     lines = [
         "-- Generated by Tools/FunctionDocs/generate_function_docs.py",
         "-- Source values: Utilities/constant.lua",
-        "-- English comments are imported from OLD/Utilities/constant.lua where possible.",
+        "-- English comments are imported from OLD/Utilities/constant.lua or the previous generated cache where possible.",
         "",
     ]
     current_section = None
@@ -1383,7 +1483,7 @@ def write_constant_markdown(path: Path, docs: list[ConstantDoc]) -> None:
     lines = [
         "# Constants",
         "",
-        "Generated from `Utilities/constant.lua`, with English comments imported from `OLD/Utilities/constant.lua` where possible.",
+        "Generated from `Utilities/constant.lua`, with English comments imported from `OLD/Utilities/constant.lua` or the previous generated cache where possible.",
         "",
     ]
     current_section = None

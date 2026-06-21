@@ -8,7 +8,8 @@ Auxiliary.AddDrytronSpSummonEffect(Card c, function func) -> void
 
 ## Description
 
-TODO document.
+Adds the shared Drytron ignition effect that Special Summons c from the hand or Graveyard.
+The effect uses the common Drytron release cost, target, operation wrapper, and custom activity counter.
 
 ## Parameters
 

@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-06-21T10:24:40+00:00",
+    "generated_at": "2026-06-21T10:34:20+00:00",
     "workspace": "D:\\Programs\\GitHub\\MDPro3_Sacred_Book",
     "dataeditorx_data": "D:\\Programs\\GitHub\\DataEditorX\\DataEditorX\\data",
     "mdpro3_locales": "D:\\Programs\\GitHub\\MDPro3_Data\\Data\\locales",
@@ -32959,11 +32959,13 @@
           "description": ""
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "为c登记1个或多个卡名编号，供Auxiliary.IsCodeListed等函数判断这些编号是否被c列名。复制效果时不处理。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Registers one or more card codes as codes listed by c, so later checks such as Auxiliary.IsCodeListed can find them. Skipped while c is copying an effect."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -32974,7 +32976,9 @@
       "aliases": [
         "aux.AddCodeList"
       ],
-      "tags": [],
+      "tags": [
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -33002,11 +33006,15 @@
           "description": ""
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "为c添加「龙辉巧」共通的从手牌或墓地特殊召唤自身的起动效果。",
+        "该效果使用共通的解放费用、目标、操作包装函数以及特殊召唤限制计数器。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Adds the shared Drytron ignition effect that Special Summons c from the hand or Graveyard.",
+        "The effect uses the common Drytron release cost, target, operation wrapper, and custom activity counter."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -33017,7 +33025,9 @@
       "aliases": [
         "aux.AddDrytronSpSummonEffect"
       ],
-      "tags": [],
+      "tags": [
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -33120,11 +33130,15 @@
           "description": ""
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "为c登记1个或多个素材卡名编号，并同时把这些编号加入c的列名编号表。",
+        "融合怪兽通常不需要使用此辅助函数。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Registers one or more material card codes for c and also adds each code to c's listed-code table.",
+        "Fusion Monsters normally do not need this helper."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -33135,7 +33149,9 @@
       "aliases": [
         "aux.AddMaterialCodeList"
       ],
-      "tags": [],
+      "tags": [
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -33163,11 +33179,13 @@
           "description": ""
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "为c登记其文本中列名的怪兽系列编号，供Auxiliary.IsSetNameMonsterListed等函数之后判断。复制效果时不处理。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Registers set codes of monsters listed by c, so Auxiliary.IsSetNameMonsterListed can check them later. Skipped while c is copying an effect."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -33178,7 +33196,9 @@
       "aliases": [
         "aux.AddSetNameMonsterList"
       ],
-      "tags": [],
+      "tags": [
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -33200,11 +33220,15 @@
           "description": ""
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "为c登记一个持续效果，用于记录把c送去墓地的效果。",
+        "这样后续的墓地条件可以区分此卡原本就在墓地，还是被当前正在处理的效果送去墓地。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Registers a continuous effect on c that records the effect that sent c to the Graveyard.",
+        "This lets later Graveyard-condition checks distinguish a card that was already in the Graveyard from one sent there by the currently resolving effect."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -33215,7 +33239,9 @@
       "aliases": [
         "aux.AddThisCardInGraveAlreadyCheck"
       ],
-      "tags": [],
+      "tags": [
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },

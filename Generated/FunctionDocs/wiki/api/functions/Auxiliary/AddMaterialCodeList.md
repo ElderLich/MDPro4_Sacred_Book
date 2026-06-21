@@ -8,7 +8,8 @@ Auxiliary.AddMaterialCodeList(Card c, ... any) -> void
 
 ## Description
 
-TODO document.
+Registers one or more material card codes for c and also adds each code to c's listed-code table.
+Fusion Monsters normally do not need this helper.
 
 ## Parameters
 

@@ -8,7 +8,7 @@ Auxiliary.AddSetNameMonsterList(Card c, ... any) -> void
 
 ## Description
 
-TODO document.
+Registers set codes of monsters listed by c, so Auxiliary.IsSetNameMonsterListed can check them later. Skipped while c is copying an effect.
 
 ## Parameters
 

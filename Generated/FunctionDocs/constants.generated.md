@@ -1,6 +1,6 @@
 # Constants
 
-Generated from `Utilities/constant.lua`, with English comments imported from `OLD/Utilities/constant.lua` where possible.
+Generated from `Utilities/constant.lua`, with English comments imported from `OLD/Utilities/constant.lua` or the previous generated cache where possible.
 
 ## Min/Max Values
 

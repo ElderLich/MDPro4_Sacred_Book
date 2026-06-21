@@ -1,6 +1,6 @@
 # Function Docs Refresh Report
 
-Generated: 2026-06-21T10:24:40+00:00
+Generated: 2026-06-21T10:34:20+00:00
 
 ## Outputs
 
@@ -29,7 +29,7 @@ Generated: 2026-06-21T10:24:40+00:00
 - Core-bound functions without stub docs: 0
 - Existing DataEditorX `_functions.txt`: 998
 - Existing DataEditorX `_function_english.txt`: 998
-- Old Utilities `_functions.txt`: 692
+- Old Utilities `_functions.txt`: 0
 - Added versus old `_functions.txt`: 0
 - Dropped versus old `_functions.txt`: 0
 
@@ -47,8 +47,8 @@ Generated: 2026-06-21T10:24:40+00:00
 ## English Coverage
 
 - `imported_from_dataeditorx`: 694
-- `missing_documentation`: 259
-- `translated_exact`: 45
+- `missing_documentation`: 254
+- `translated_exact`: 50
 
 ## Core Binding Gaps
 
