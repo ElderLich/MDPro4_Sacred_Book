@@ -1,6 +1,6 @@
 # Function Docs Refresh Report
 
-Generated: 2026-06-21T11:34:30+00:00
+Generated: 2026-06-21T11:48:26+00:00
 
 ## Outputs
 
@@ -46,8 +46,8 @@ Generated: 2026-06-21T11:34:30+00:00
 ## English Coverage
 
 - `imported_from_dataeditorx`: 677
-- `missing_documentation`: 154
-- `translated_exact`: 167
+- `missing_documentation`: 144
+- `translated_exact`: 177
 
 ## Core Binding Gaps
 
@@ -68,6 +68,14 @@ Documented stubs that do not appear in this core binding scan:
 - `Card.ultimate_fusion_check`
 - `Card.zw_equip_monster`
 - `Group.ForEach`
+
+## Return Signature Audit
+
+Lua helper docs that still render as `void` while their source body contains a `return`:
+
+- Count: 0
+
+- None
 
 ## Compatibility Findings
 

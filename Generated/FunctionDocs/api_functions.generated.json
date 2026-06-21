@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-06-21T11:34:29+00:00",
+    "generated_at": "2026-06-21T11:48:26+00:00",
     "workspace": "D:\\Programs\\GitHub\\MDPro3_Sacred_Book",
     "dataeditorx_data": "D:\\Programs\\GitHub\\DataEditorX\\DataEditorX\\data",
     "mdpro3_locales": "D:\\Programs\\GitHub\\MDPro3_Data\\Data\\locales",
@@ -41738,15 +41738,17 @@
       ],
       "returns": [
         {
-          "type": "nil",
-          "description": ""
+          "type": "bool",
+          "description": "true if the mandatory Spirit return effect should apply."
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "灵魂怪兽结束阶段强制回到手牌效果的条件；处理对象没有禁止回手效果，且没有可选择不回手效果时返回true。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Condition for the mandatory Spirit Monster End Phase return effect. It returns true while the handler is not prevented from returning and does not have the optional-return permission effect."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -41757,7 +41759,10 @@
       "aliases": [
         "aux.SpiritReturnConditionForced"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -41817,15 +41822,17 @@
       ],
       "returns": [
         {
-          "type": "nil",
-          "description": ""
+          "type": "bool",
+          "description": "true if the optional Spirit return effect should apply."
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "灵魂怪兽结束阶段可选回到手牌效果的条件；处理对象没有禁止回手效果，且具有可选择不回手效果时返回true。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Condition for the optional Spirit Monster End Phase return effect. It returns true while the handler is not prevented from returning and does have the optional-return permission effect."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -41836,7 +41843,10 @@
       "aliases": [
         "aux.SpiritReturnConditionOptional"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -41894,17 +41904,14 @@
           "description": ""
         }
       ],
-      "returns": [
-        {
-          "type": "nil",
-          "description": ""
-        }
+      "returns": [],
+      "description_zh": [
+        "灵魂怪兽共通结束阶段回到手牌效果的操作；处理对象仍与效果关联时，将其回到手牌。"
       ],
-      "description_zh": [],
       "description_en": [
-        "TODO document."
+        "Operation for the shared Spirit Monster End Phase return effect. If the handler is still related to the effect, it returns that card to the hand."
       ],
-      "english_status": "missing_documentation",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -41915,7 +41922,10 @@
       "aliases": [
         "aux.SpiritReturnOperation"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -41973,17 +41983,14 @@
           "description": ""
         }
       ],
-      "returns": [
-        {
-          "type": "nil",
-          "description": ""
-        }
+      "returns": [],
+      "description_zh": [
+        "登记Auxiliary.EnableSpiritReturn创建的临时结束阶段回手效果：1个强制触发效果和1个可选触发效果。"
       ],
-      "description_zh": [],
       "description_en": [
-        "TODO document."
+        "Registers the temporary End Phase return effects created by Auxiliary.EnableSpiritReturn: one mandatory trigger and one optional trigger."
       ],
-      "english_status": "missing_documentation",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -41994,7 +42001,10 @@
       "aliases": [
         "aux.SpiritReturnReg"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -42060,15 +42070,17 @@
       ],
       "returns": [
         {
-          "type": "nil",
-          "description": ""
+          "type": "bool|nil",
+          "description": "true during target checks; otherwise no meaningful return value."
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "灵魂怪兽结束阶段强制回到手牌效果的目标函数；检查阶段始终返回true，之后登记回到手牌的操作信息。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Target function for the mandatory Spirit Monster End Phase return effect. During the check step it always returns true, then registers return-to-hand operation info."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -42079,7 +42091,10 @@
       "aliases": [
         "aux.SpiritReturnTargetForced"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -42145,15 +42160,17 @@
       ],
       "returns": [
         {
-          "type": "nil",
-          "description": ""
+          "type": "bool|nil",
+          "description": "true during valid target checks; otherwise no meaningful return value."
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "灵魂怪兽结束阶段可选回到手牌效果的目标函数；检查阶段要求处理对象可以回到手牌，之后登记回到手牌的操作信息。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Target function for the optional Spirit Monster End Phase return effect. During the check step it requires the handler to be able to return to the hand, then registers return-to-hand operation info."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -42164,7 +42181,10 @@
       "aliases": [
         "aux.SpiritReturnTargetOptional"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -42315,15 +42335,17 @@
       ],
       "returns": [
         {
-          "type": "nil",
-          "description": ""
+          "type": "int",
+          "description": "The local column index, or NULL_VALUE for invalid input."
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "从控制者视角返回魔法与陷阱区域序号对应的本地列编号。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Returns the local column for a Spell & Trap Zone sequence from the controller's viewpoint."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -42334,7 +42356,10 @@
       "aliases": [
         "aux.SZoneSequence"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -42602,15 +42627,17 @@
       ],
       "returns": [
         {
-          "type": "nil",
-          "description": ""
+          "type": "bool",
+          "description": "Always false after any tracking setup is done."
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "Auxiliary.AddThisCardInGraveAlreadyCheck使用的条件回调；当此卡因效果、作为素材或未发动的费用送去墓地时，保存相关效果并登记重置效果，随后返回false让自身不再执行操作。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Condition callback used by Auxiliary.AddThisCardInGraveAlreadyCheck. When this card is sent to the Graveyard by an effect, material use, or non-activated cost, it stores the responsible effect and installs reset effects; it then returns false so no separate effect operation runs."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -42621,7 +42648,10 @@
       "aliases": [
         "aux.ThisCardInGraveAlreadyCheckReg"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -42637,17 +42667,14 @@
           "description": ""
         }
       ],
-      "returns": [
-        {
-          "type": "nil",
-          "description": ""
-        }
+      "returns": [],
+      "description_zh": [
+        "清除跟踪效果保存的相关效果，并重置这个临时重置效果。"
       ],
-      "description_zh": [],
       "description_en": [
-        "TODO document."
+        "Clears the stored responsible effect from the tracking effect and resets this temporary reset effect."
       ],
-      "english_status": "missing_documentation",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -42658,7 +42685,10 @@
       "aliases": [
         "aux.ThisCardInGraveAlreadyReset1"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -42674,17 +42704,14 @@
           "description": ""
         }
       ],
-      "returns": [
-        {
-          "type": "nil",
-          "description": ""
-        }
+      "returns": [],
+      "description_zh": [
+        "通过配对的重置效果清除保存的相关效果，并重置两个临时重置效果。"
       ],
-      "description_zh": [],
       "description_en": [
-        "TODO document."
+        "Clears the stored responsible effect through the paired reset effect, then resets both temporary reset effects."
       ],
-      "english_status": "missing_documentation",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -42695,7 +42722,10 @@
       "aliases": [
         "aux.ThisCardInGraveAlreadyReset2"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },

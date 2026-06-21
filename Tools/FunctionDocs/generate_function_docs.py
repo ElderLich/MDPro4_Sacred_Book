@@ -23,6 +23,10 @@ FUNCTION_RE = re.compile(
 ASSIGNED_FUNCTION_RE = re.compile(
     r"^\s*([A-Za-z_]\w*(?:[.:][A-Za-z_]\w*)?)\s*=\s*function\s*\(([^)]*)\)"
 )
+LUA_FUNCTION_START_RE = re.compile(
+    r"^\s*(?:local\s+)?function\s+[A-Za-z_]\w*(?:[.:][A-Za-z_]\w*)?\s*\("
+    r"|^\s*[A-Za-z_]\w*(?:[.:][A-Za-z_]\w*)?\s*=\s*function\s*\("
+)
 BULLET_RE = re.compile(r"^.(?:[^\s]+\s+)*([A-Za-z_]\w*(?:\.[A-Za-z_]\w*)?)\s*\(")
 
 
@@ -664,6 +668,16 @@ FUNCTION_EN_OVERRIDES = {
     "Auxiliary.SelectTargetFromFieldFirst": ["Target-selection helper that first offers matching on-field effect targets with HINTMSG_FIELD_FIRST. If accepted, it sets those cards as targets; otherwise it restores the previous hint and falls back to Duel.SelectTarget."],
     "Auxiliary.SelfEquipFilter": ["Returns true if c has a flag with id, used by Auxiliary.IsSelfEquip to identify cards equipped by their own effect."],
     "Auxiliary.SequenceToGlobal": ["Converts a player's local Monster Zone or Spell & Trap Zone sequence into a global zone bit. Invalid players, locations, or sequences return 0."],
+    "Auxiliary.SpiritReturnConditionForced": ["Condition for the mandatory Spirit Monster End Phase return effect. It returns true while the handler is not prevented from returning and does not have the optional-return permission effect."],
+    "Auxiliary.SpiritReturnConditionOptional": ["Condition for the optional Spirit Monster End Phase return effect. It returns true while the handler is not prevented from returning and does have the optional-return permission effect."],
+    "Auxiliary.SpiritReturnOperation": ["Operation for the shared Spirit Monster End Phase return effect. If the handler is still related to the effect, it returns that card to the hand."],
+    "Auxiliary.SpiritReturnReg": ["Registers the temporary End Phase return effects created by Auxiliary.EnableSpiritReturn: one mandatory trigger and one optional trigger."],
+    "Auxiliary.SpiritReturnTargetForced": ["Target function for the mandatory Spirit Monster End Phase return effect. During the check step it always returns true, then registers return-to-hand operation info."],
+    "Auxiliary.SpiritReturnTargetOptional": ["Target function for the optional Spirit Monster End Phase return effect. During the check step it requires the handler to be able to return to the hand, then registers return-to-hand operation info."],
+    "Auxiliary.SZoneSequence": ["Returns the local column for a Spell & Trap Zone sequence from the controller's viewpoint."],
+    "Auxiliary.ThisCardInGraveAlreadyCheckReg": ["Condition callback used by Auxiliary.AddThisCardInGraveAlreadyCheck. When this card is sent to the Graveyard by an effect, material use, or non-activated cost, it stores the responsible effect and installs reset effects; it then returns false so no separate effect operation runs."],
+    "Auxiliary.ThisCardInGraveAlreadyReset1": ["Clears the stored responsible effect from the tracking effect and resets this temporary reset effect."],
+    "Auxiliary.ThisCardInGraveAlreadyReset2": ["Clears the stored responsible effect through the paired reset effect, then resets both temporary reset effects."],
     "Card.branded_fusion_check": ["Material check for Branded Fusion."],
     "Card.cyber_fusion_check": ["Material check for Cyberload Fusion."],
     "Card.destruction_swordsman_fusion_check": ["Material check for Destruction Swordsman Fusion."],
@@ -804,6 +818,16 @@ FUNCTION_ZH_OVERRIDES = {
     "Auxiliary.SelectTargetFromFieldFirst": ["取对象选择辅助函数；先用HINTMSG_FIELD_FIRST提示玩家选择满足条件的场上效果对象。若接受则登记为对象；否则恢复之前的提示并回退到Duel.SelectTarget。"],
     "Auxiliary.SelfEquipFilter": ["c持有id标记时返回true；Auxiliary.IsSelfEquip用它判断由自身效果装备的卡。"],
     "Auxiliary.SequenceToGlobal": ["把玩家本地的怪兽区域或魔法与陷阱区域序号转换为全局区域位。玩家、位置或序号无效时返回0。"],
+    "Auxiliary.SpiritReturnConditionForced": ["灵魂怪兽结束阶段强制回到手牌效果的条件；处理对象没有禁止回手效果，且没有可选择不回手效果时返回true。"],
+    "Auxiliary.SpiritReturnConditionOptional": ["灵魂怪兽结束阶段可选回到手牌效果的条件；处理对象没有禁止回手效果，且具有可选择不回手效果时返回true。"],
+    "Auxiliary.SpiritReturnOperation": ["灵魂怪兽共通结束阶段回到手牌效果的操作；处理对象仍与效果关联时，将其回到手牌。"],
+    "Auxiliary.SpiritReturnReg": ["登记Auxiliary.EnableSpiritReturn创建的临时结束阶段回手效果：1个强制触发效果和1个可选触发效果。"],
+    "Auxiliary.SpiritReturnTargetForced": ["灵魂怪兽结束阶段强制回到手牌效果的目标函数；检查阶段始终返回true，之后登记回到手牌的操作信息。"],
+    "Auxiliary.SpiritReturnTargetOptional": ["灵魂怪兽结束阶段可选回到手牌效果的目标函数；检查阶段要求处理对象可以回到手牌，之后登记回到手牌的操作信息。"],
+    "Auxiliary.SZoneSequence": ["从控制者视角返回魔法与陷阱区域序号对应的本地列编号。"],
+    "Auxiliary.ThisCardInGraveAlreadyCheckReg": ["Auxiliary.AddThisCardInGraveAlreadyCheck使用的条件回调；当此卡因效果、作为素材或未发动的费用送去墓地时，保存相关效果并登记重置效果，随后返回false让自身不再执行操作。"],
+    "Auxiliary.ThisCardInGraveAlreadyReset1": ["清除跟踪效果保存的相关效果，并重置这个临时重置效果。"],
+    "Auxiliary.ThisCardInGraveAlreadyReset2": ["通过配对的重置效果清除保存的相关效果，并重置两个临时重置效果。"],
 }
 
 
@@ -1080,6 +1104,79 @@ CORE_DOC_OVERRIDES = {
         "params": [ParamDoc("p", "int"), ParamDoc("loc", "int"), ParamDoc("seq", "int")],
         "returns": [ReturnDoc("int", "The global zone bit, or 0 for invalid input.")],
         "description": ["Converts a local zone sequence to a global zone bit."],
+    },
+    "Auxiliary.SpiritReturnConditionForced": {
+        "params": [
+            ParamDoc("e", "Effect"), ParamDoc("tp", "int"), ParamDoc("eg", "Group"), ParamDoc("ep", "int"),
+            ParamDoc("ev", "any"), ParamDoc("re", "Effect"), ParamDoc("r", "any"), ParamDoc("rp", "int"),
+        ],
+        "returns": [ReturnDoc("bool", "true if the mandatory Spirit return effect should apply.")],
+        "description": ["Condition for the mandatory Spirit Monster End Phase return effect."],
+    },
+    "Auxiliary.SpiritReturnConditionOptional": {
+        "params": [
+            ParamDoc("e", "Effect"), ParamDoc("tp", "int"), ParamDoc("eg", "Group"), ParamDoc("ep", "int"),
+            ParamDoc("ev", "any"), ParamDoc("re", "Effect"), ParamDoc("r", "any"), ParamDoc("rp", "int"),
+        ],
+        "returns": [ReturnDoc("bool", "true if the optional Spirit return effect should apply.")],
+        "description": ["Condition for the optional Spirit Monster End Phase return effect."],
+    },
+    "Auxiliary.SpiritReturnOperation": {
+        "params": [
+            ParamDoc("e", "Effect"), ParamDoc("tp", "int"), ParamDoc("eg", "Group"), ParamDoc("ep", "int"),
+            ParamDoc("ev", "any"), ParamDoc("re", "Effect"), ParamDoc("r", "any"), ParamDoc("rp", "int"),
+        ],
+        "returns": [],
+        "description": ["Operation for the shared Spirit Monster End Phase return effect."],
+    },
+    "Auxiliary.SpiritReturnReg": {
+        "params": [
+            ParamDoc("e", "Effect"), ParamDoc("tp", "int"), ParamDoc("eg", "Group"), ParamDoc("ep", "int"),
+            ParamDoc("ev", "any"), ParamDoc("re", "Effect"), ParamDoc("r", "any"), ParamDoc("rp", "int"),
+        ],
+        "returns": [],
+        "description": ["Registers the temporary Spirit Monster End Phase return effects."],
+    },
+    "Auxiliary.SpiritReturnTargetForced": {
+        "params": [
+            ParamDoc("e", "Effect"), ParamDoc("tp", "int"), ParamDoc("eg", "Group"), ParamDoc("ep", "int"),
+            ParamDoc("ev", "any"), ParamDoc("re", "Effect"), ParamDoc("r", "any"), ParamDoc("rp", "int"),
+            ParamDoc("chk", "bool"),
+        ],
+        "returns": [ReturnDoc("bool|nil", "true during target checks; otherwise no meaningful return value.")],
+        "description": ["Target function for the mandatory Spirit Monster End Phase return effect."],
+    },
+    "Auxiliary.SpiritReturnTargetOptional": {
+        "params": [
+            ParamDoc("e", "Effect"), ParamDoc("tp", "int"), ParamDoc("eg", "Group"), ParamDoc("ep", "int"),
+            ParamDoc("ev", "any"), ParamDoc("re", "Effect"), ParamDoc("r", "any"), ParamDoc("rp", "int"),
+            ParamDoc("chk", "bool"),
+        ],
+        "returns": [ReturnDoc("bool|nil", "true during valid target checks; otherwise no meaningful return value.")],
+        "description": ["Target function for the optional Spirit Monster End Phase return effect."],
+    },
+    "Auxiliary.SZoneSequence": {
+        "params": [ParamDoc("seq", "int")],
+        "returns": [ReturnDoc("int", "The local column index, or NULL_VALUE for invalid input.")],
+        "description": ["Returns the local column for a Spell & Trap Zone sequence."],
+    },
+    "Auxiliary.ThisCardInGraveAlreadyCheckReg": {
+        "params": [
+            ParamDoc("e", "Effect"), ParamDoc("tp", "int"), ParamDoc("eg", "Group"), ParamDoc("ep", "int"),
+            ParamDoc("ev", "any"), ParamDoc("re", "Effect"), ParamDoc("r", "any"), ParamDoc("rp", "int"),
+        ],
+        "returns": [ReturnDoc("bool", "Always false after any tracking setup is done.")],
+        "description": ["Condition callback for Auxiliary.AddThisCardInGraveAlreadyCheck."],
+    },
+    "Auxiliary.ThisCardInGraveAlreadyReset1": {
+        "params": [ParamDoc("e", "Effect")],
+        "returns": [],
+        "description": ["Clears the stored responsible effect and resets this temporary reset effect."],
+    },
+    "Auxiliary.ThisCardInGraveAlreadyReset2": {
+        "params": [ParamDoc("e", "Effect")],
+        "returns": [],
+        "description": ["Clears the stored responsible effect and resets paired temporary reset effects."],
     },
 }
 
@@ -2176,6 +2273,51 @@ def limited_list(values: list[str], limit: int = 40) -> list[str]:
     return values[:limit] + [f"... {len(values) - limit} more"]
 
 
+def primary_helper_source(doc: FunctionDoc) -> SourceRef | None:
+    for source in doc.source_files:
+        if source.origin in {"utility", "procedure"}:
+            return source
+    return None
+
+
+def source_path_for(source: SourceRef, workspace: Path) -> Path:
+    path = Path(source.path)
+    if path.is_absolute():
+        return path
+    return workspace / path
+
+
+def source_span_contains_return(source: SourceRef, workspace: Path) -> bool:
+    path = source_path_for(source, workspace)
+    if not path.exists():
+        return False
+    lines = read_text(path).splitlines()
+    start = max(source.line - 1, 0)
+    for index in range(start, len(lines)):
+        line = lines[index]
+        if index > start and LUA_FUNCTION_START_RE.match(line):
+            break
+        code = line.split("--", 1)[0]
+        match = re.search(r"\breturn\b(.*)", code)
+        if not match:
+            continue
+        tail = match.group(1).strip()
+        if tail and not tail.startswith(("end", "else")):
+            return True
+    return False
+
+
+def default_void_helpers_with_return(docs: list[FunctionDoc], workspace: Path) -> list[str]:
+    names: list[str] = []
+    for doc in docs:
+        if doc.core_binding or doc.returns:
+            continue
+        source = primary_helper_source(doc)
+        if source and source_span_contains_return(source, workspace):
+            names.append(doc.name)
+    return sorted(names)
+
+
 def write_report(
     path: Path,
     docs: list[FunctionDoc],
@@ -2194,6 +2336,7 @@ def write_report(
         for doc in docs
         if not doc.core_binding and any(src.origin in {"utility", "procedure"} for src in doc.source_files)
     }
+    suspicious_void_helpers = default_void_helpers_with_return(docs, workspace)
     stub_only_names = {
         doc.name
         for doc in docs
@@ -2211,6 +2354,7 @@ def write_report(
     english_counts = Counter(doc.english_status for doc in docs)
     added = sorted(generated_compare_names - old_zh_names)
     dropped = sorted(old_zh_names - generated_compare_names)
+    suspicious_void_helpers = default_void_helpers_with_return(docs, workspace)
 
     lines = [
         "# Function Docs Refresh Report",
@@ -2259,6 +2403,23 @@ def write_report(
     lines.extend(["", "Documented stubs that do not appear in this core binding scan:", ""])
     if stub_only_names:
         for name in limited_list(sorted(stub_only_names), 40):
+            lines.append(f"- `{name}`")
+    else:
+        lines.append("- None")
+
+    lines.extend(
+        [
+            "",
+            "## Return Signature Audit",
+            "",
+            "Lua helper docs that still render as `void` while their source body contains a `return`:",
+            "",
+            f"- Count: {len(suspicious_void_helpers)}",
+            "",
+        ]
+    )
+    if suspicious_void_helpers:
+        for name in limited_list(suspicious_void_helpers, 60):
             lines.append(f"- `{name}`")
     else:
         lines.append("- None")
@@ -2429,6 +2590,7 @@ def main() -> int:
         for doc in docs
         if not doc.core_binding and any(src.origin in {"utility", "procedure"} for src in doc.source_files)
     }
+    suspicious_void_helpers = default_void_helpers_with_return(docs, workspace)
     stub_only_names = {
         doc.name
         for doc in docs
@@ -2439,6 +2601,7 @@ def main() -> int:
         "dropped_vs_dataeditorx_functions": sorted(old_zh_compare_names - generated_compare_names),
         "core_bound_functions": sorted(core_names),
         "lua_helper_functions": sorted(helper_names),
+        "default_void_helpers_with_return": suspicious_void_helpers,
         "stub_only_functions": sorted(stub_only_names),
         "core_bound_missing_stub_docs": sorted(
             doc.name

@@ -8,7 +8,7 @@ Auxiliary.SpiritReturnOperation(Effect e, int tp, Group eg, int ep, any ev, Effe
 
 ## Description
 
-TODO document.
+Operation for the shared Spirit Monster End Phase return effect. If the handler is still related to the effect, it returns that card to the hand.
 
 ## Parameters
 

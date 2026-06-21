@@ -8,7 +8,7 @@ Auxiliary.ThisCardInGraveAlreadyReset1(Effect e) -> void
 
 ## Description
 
-TODO document.
+Clears the stored responsible effect from the tracking effect and resets this temporary reset effect.
 
 ## Parameters
 

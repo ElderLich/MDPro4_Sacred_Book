@@ -3,16 +3,20 @@
 ## Signature
 
 ```lua
-Auxiliary.SZoneSequence(int seq) -> void
+Auxiliary.SZoneSequence(int seq) -> int
 ```
 
 ## Description
 
-TODO document.
+Returns the local column for a Spell & Trap Zone sequence from the controller's viewpoint.
 
 ## Parameters
 
 - `seq` `int`
+
+## Returns
+
+- `int` - The local column index, or NULL_VALUE for invalid input.
 
 ## Source
 

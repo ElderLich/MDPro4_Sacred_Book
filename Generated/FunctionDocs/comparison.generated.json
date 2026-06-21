@@ -992,6 +992,7 @@
     "bit.replace",
     "bit.rshift"
   ],
+  "default_void_helpers_with_return": [],
   "stub_only_functions": [
     "Card.branded_fusion_check",
     "Card.cyber_fusion_check",

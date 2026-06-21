@@ -8,7 +8,7 @@ Auxiliary.SpiritReturnReg(Effect e, int tp, Group eg, int ep, any ev, Effect re,
 
 ## Description
 
-TODO document.
+Registers the temporary End Phase return effects created by Auxiliary.EnableSpiritReturn: one mandatory trigger and one optional trigger.
 
 ## Parameters
 
