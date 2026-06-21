@@ -3,12 +3,12 @@
 ## Signature
 
 ```lua
-Auxiliary.FCheckMixRepFilter(Card c, Group sg, Group g, Card fc, any sub, any chkf, any fun1, any minc, any maxc, any fun2, ... any) -> void
+Auxiliary.FCheckMixRepFilter(Card c, Group sg, Group g, Card fc, bool sub, int chkf, function fun1, int minc, int maxc, [function|nil fun2], ... function) -> bool
 ```
 
 ## Description
 
-TODO document.
+Recursive helper for Auxiliary.FCheckMixRep. It temporarily assigns c to one remaining fixed material function and continues checking the rest.
 
 ## Parameters
 
@@ -16,13 +16,17 @@ TODO document.
 - `sg` `Group`
 - `g` `Group`
 - `fc` `Card`
-- `sub` `any`
-- `chkf` `any`
-- `fun1` `any`
-- `minc` `any`
-- `maxc` `any`
-- `fun2` `any`
-- `...` `any`
+- `sub` `bool`
+- `chkf` `int`
+- `fun1` `function`
+- `minc` `int`
+- `maxc` `int`
+- `fun2` `function|nil` optional
+- `...` `function`
+
+## Returns
+
+- `bool` - true if c can satisfy this fixed material slot and the rest can be completed.
 
 ## Source
 

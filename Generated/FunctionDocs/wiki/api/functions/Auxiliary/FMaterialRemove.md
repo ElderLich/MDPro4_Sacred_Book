@@ -3,16 +3,16 @@
 ## Signature
 
 ```lua
-Auxiliary.FMaterialRemove(any mat) -> void
+Auxiliary.FMaterialRemove(Group|Card mat) -> void
 ```
 
 ## Description
 
-TODO document.
+Default operation for banishing Fusion Materials with Fusion reason flags.
 
 ## Parameters
 
-- `mat` `any`
+- `mat` `Group|Card`
 
 ## Source
 

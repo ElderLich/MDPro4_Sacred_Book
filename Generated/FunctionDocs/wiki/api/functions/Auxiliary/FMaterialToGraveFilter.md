@@ -3,18 +3,22 @@
 ## Signature
 
 ```lua
-Auxiliary.FMaterialToGraveFilter(Card c, Effect e, int tp) -> void
+Auxiliary.FMaterialToGraveFilter(Card c, Effect e, int tp) -> bool
 ```
 
 ## Description
 
-TODO document.
+Default Fusion Material filter for effects that send materials to the Graveyard; returns whether c can be sent to the Graveyard.
 
 ## Parameters
 
 - `c` `Card`
 - `e` `Effect`
 - `tp` `int`
+
+## Returns
+
+- `bool` - true if c can be sent to the Graveyard.
 
 ## Source
 

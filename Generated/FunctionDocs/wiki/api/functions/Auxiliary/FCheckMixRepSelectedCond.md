@@ -3,12 +3,12 @@
 ## Signature
 
 ```lua
-Auxiliary.FCheckMixRepSelectedCond(int tp, Group mg, Group sg, Group g, ... any) -> void
+Auxiliary.FCheckMixRepSelectedCond(int tp, Group mg, Group sg, Group g, ... any) -> bool
 ```
 
 ## Description
 
-TODO document.
+Checks whether the recursive mixed-repeat selection can continue from the currently selected group, or can finish through Auxiliary.FCheckSelectMixRep.
 
 ## Parameters
 
@@ -17,6 +17,10 @@ TODO document.
 - `sg` `Group`
 - `g` `Group`
 - `...` `any`
+
+## Returns
+
+- `bool` - true if the current mixed-repeat selection can continue or finish.
 
 ## Source
 

@@ -3,12 +3,12 @@
 ## Signature
 
 ```lua
-Auxiliary.FCheckSelectMixRep(int tp, Group mg, Group sg, Group g, Card fc, any sub, any chkfnf, any fun1, any minc, any maxc, ... any) -> void
+Auxiliary.FCheckSelectMixRep(int tp, Group mg, Group sg, Group g, Card fc, bool sub, int chkfnf, function fun1, int minc, int maxc, ... function) -> bool
 ```
 
 ## Description
 
-TODO document.
+Checks whether a mixed-repeat Fusion Material selection can be completed from the current chosen group.
 
 ## Parameters
 
@@ -17,12 +17,16 @@ TODO document.
 - `sg` `Group`
 - `g` `Group`
 - `fc` `Card`
-- `sub` `any`
-- `chkfnf` `any`
-- `fun1` `any`
-- `minc` `any`
-- `maxc` `any`
-- `...` `any`
+- `sub` `bool`
+- `chkfnf` `int`
+- `fun1` `function`
+- `minc` `int`
+- `maxc` `int`
+- `...` `function`
+
+## Returns
+
+- `bool` - true if the current selection can be completed.
 
 ## Source
 

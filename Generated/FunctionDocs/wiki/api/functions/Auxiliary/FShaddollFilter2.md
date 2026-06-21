@@ -3,17 +3,21 @@
 ## Signature
 
 ```lua
-Auxiliary.FShaddollFilter2(Card c, any attr) -> void
+Auxiliary.FShaddollFilter2(Card c, int attr) -> bool
 ```
 
 ## Description
 
-TODO document.
+Returns true if c has the required Fusion Attribute or effect code 4904633.
 
 ## Parameters
 
 - `c` `Card`
-- `attr` `any`
+- `attr` `int`
+
+## Returns
+
+- `bool` - true if c has attr as Fusion Attribute or effect code 4904633.
 
 ## Source
 

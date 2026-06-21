@@ -3,28 +3,32 @@
 ## Signature
 
 ```lua
-Auxiliary.FCheckMixRepTemplate(Card c, any cond, int tp, Group mg, Group sg, Group g, Card fc, any sub, any chkfnf, any fun1, any minc, any maxc, ... any) -> void
+Auxiliary.FCheckMixRepTemplate(Card c, function cond, int tp, Group mg, Group sg, Group g, Card fc, bool sub, int chkfnf, function fun1, int minc, int maxc, ... function) -> bool
 ```
 
 ## Description
 
-TODO document.
+Generic recursive template for mixed-repeat Fusion Material checks. It tries assigning c to each fixed material function or to the repeated material slot.
 
 ## Parameters
 
 - `c` `Card`
-- `cond` `any`
+- `cond` `function`
 - `tp` `int`
 - `mg` `Group`
 - `sg` `Group`
 - `g` `Group`
 - `fc` `Card`
-- `sub` `any`
-- `chkfnf` `any`
-- `fun1` `any`
-- `minc` `any`
-- `maxc` `any`
-- `...` `any`
+- `sub` `bool`
+- `chkfnf` `int`
+- `fun1` `function`
+- `minc` `int`
+- `maxc` `int`
+- `...` `function`
+
+## Returns
+
+- `bool` - true if c can be assigned to a fixed or repeated material slot.
 
 ## Source
 

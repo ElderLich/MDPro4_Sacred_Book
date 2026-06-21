@@ -3,16 +3,20 @@
 ## Signature
 
 ```lua
-Auxiliary.FShaddollCondition(any attr) -> void
+Auxiliary.FShaddollCondition(int attr) -> function
 ```
 
 ## Description
 
-TODO document.
+Returns the condition function for Shaddoll Fusion procedures. It checks for one Shaddoll material and one material with the required Attribute, with optional field-spell opponent-material support.
 
 ## Parameters
 
-- `attr` `any`
+- `attr` `int`
+
+## Returns
+
+- `function` - Condition function for a Shaddoll Fusion procedure.
 
 ## Source
 

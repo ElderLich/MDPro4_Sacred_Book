@@ -3,18 +3,22 @@
 ## Signature
 
 ```lua
-Auxiliary.FConditionMix(any insf, any sub, ... any) -> void
+Auxiliary.FConditionMix(bool insf, bool sub, ... function) -> function
 ```
 
 ## Description
 
-TODO document.
+Returns the condition function for fixed mixed Fusion Material procedures.
 
 ## Parameters
 
-- `insf` `any`
-- `sub` `any`
-- `...` `any`
+- `insf` `bool`
+- `sub` `bool`
+- `...` `function`
+
+## Returns
+
+- `function` - Condition function for a fixed mixed Fusion Material procedure.
 
 ## Source
 

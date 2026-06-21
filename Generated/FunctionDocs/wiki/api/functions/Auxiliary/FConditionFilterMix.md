@@ -3,20 +3,24 @@
 ## Signature
 
 ```lua
-Auxiliary.FConditionFilterMix(Card c, Card fc, any sub, any notfusion, ... any) -> void
+Auxiliary.FConditionFilterMix(Card c, Card fc, bool sub, bool notfusion, ... function) -> bool
 ```
 
 ## Description
 
-TODO document.
+Material filter used by mixed Fusion procedures. It checks whether c can be used as Fusion Material for fc and satisfies at least one required material function.
 
 ## Parameters
 
 - `c` `Card`
 - `fc` `Card`
-- `sub` `any`
-- `notfusion` `any`
-- `...` `any`
+- `sub` `bool`
+- `notfusion` `bool`
+- `...` `function`
+
+## Returns
+
+- `bool` - true if c is valid material and satisfies any required material function.
 
 ## Source
 

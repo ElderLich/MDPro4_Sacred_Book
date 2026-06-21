@@ -3,12 +3,12 @@
 ## Signature
 
 ```lua
-Auxiliary.FSelectMixRep(Card c, int tp, Group mg, Group sg, Card fc, any sub, any chkfnf, ... any) -> void
+Auxiliary.FSelectMixRep(Card c, int tp, Group mg, Group sg, Card fc, bool sub, int chkfnf, ... function) -> bool
 ```
 
 ## Description
 
-TODO document.
+Candidate test for mixed-repeat Fusion selection. It temporarily adds c to sg and returns whether the selection is already valid or can still be completed.
 
 ## Parameters
 
@@ -17,9 +17,13 @@ TODO document.
 - `mg` `Group`
 - `sg` `Group`
 - `fc` `Card`
-- `sub` `any`
-- `chkfnf` `any`
-- `...` `any`
+- `sub` `bool`
+- `chkfnf` `int`
+- `...` `function`
+
+## Returns
+
+- `bool` - true if adding c can complete or continue the selection.
 
 ## Source
 

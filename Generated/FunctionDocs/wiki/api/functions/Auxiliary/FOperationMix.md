@@ -3,18 +3,22 @@
 ## Signature
 
 ```lua
-Auxiliary.FOperationMix(any insf, any sub, ... any) -> void
+Auxiliary.FOperationMix(bool insf, bool sub, ... function) -> function
 ```
 
 ## Description
 
-TODO document.
+Returns the operation function for fixed mixed Fusion Material procedures; it selects valid materials and stores them with Duel.SetFusionMaterial.
 
 ## Parameters
 
-- `insf` `any`
-- `sub` `any`
-- `...` `any`
+- `insf` `bool`
+- `sub` `bool`
+- `...` `function`
+
+## Returns
+
+- `function` - Operation function for a fixed mixed Fusion Material procedure.
 
 ## Source
 

@@ -3,21 +3,25 @@
 ## Signature
 
 ```lua
-Auxiliary.FCheckMixGoal(Group sg, int tp, Card fc, any sub, any chkfnf, ... any) -> void
+Auxiliary.FCheckMixGoal(Group sg, int tp, Card fc, bool sub, int chkfnf, ... function) -> bool
 ```
 
 ## Description
 
-TODO document.
+Final group check for mixed Fusion Materials. It validates mandatory Fusion Materials, Tune Magician restrictions, Extra Monster Zone availability, and additional Fusion goal hooks.
 
 ## Parameters
 
 - `sg` `Group`
 - `tp` `int`
 - `fc` `Card`
-- `sub` `any`
-- `chkfnf` `any`
-- `...` `any`
+- `sub` `bool`
+- `chkfnf` `int`
+- `...` `function`
+
+## Returns
+
+- `bool` - true if sg is a valid mixed Fusion Material group.
 
 ## Source
 

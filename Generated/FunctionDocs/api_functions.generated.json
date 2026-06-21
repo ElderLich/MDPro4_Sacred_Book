@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-06-21T12:04:03+00:00",
+    "generated_at": "2026-06-21T12:12:23+00:00",
     "workspace": "D:\\Programs\\GitHub\\MDPro3_Sacred_Book",
     "dataeditorx_data": "D:\\Programs\\GitHub\\DataEditorX\\DataEditorX\\data",
     "mdpro3_locales": "D:\\Programs\\GitHub\\MDPro3_Data\\Data\\locales",
@@ -47797,40 +47797,42 @@
         },
         {
           "name": "sub",
-          "type": "any",
+          "type": "bool",
           "optional": false,
           "description": ""
         },
         {
           "name": "fun1",
-          "type": "any",
+          "type": "function",
           "optional": false,
           "description": ""
         },
         {
           "name": "fun2",
-          "type": "any",
-          "optional": false,
+          "type": "function|nil",
+          "optional": true,
           "description": ""
         },
         {
           "name": "...",
-          "type": "any",
+          "type": "function",
           "optional": false,
           "description": ""
         }
       ],
       "returns": [
         {
-          "type": "nil",
-          "description": ""
+          "type": "bool",
+          "description": "true if the remaining mixed Fusion Material functions can be satisfied."
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "混合融合素材递归检查；按顺序检查每个必需素材函数，把已选素材记录在sg中，并在需要时消耗代替融合素材许可。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Recursive mixed Fusion Material checker. It tests one required material function at a time, tracks selected materials in sg, and consumes the substitute-material allowance when needed."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/procedure.lua",
@@ -47841,7 +47843,10 @@
       "aliases": [
         "aux.FCheckMix"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -47870,34 +47875,36 @@
         },
         {
           "name": "sub",
-          "type": "any",
+          "type": "bool",
           "optional": false,
           "description": ""
         },
         {
           "name": "chkfnf",
-          "type": "any",
+          "type": "int",
           "optional": false,
           "description": ""
         },
         {
           "name": "...",
-          "type": "any",
+          "type": "function",
           "optional": false,
           "description": ""
         }
       ],
       "returns": [
         {
-          "type": "nil",
-          "description": ""
+          "type": "bool",
+          "description": "true if sg is a valid mixed Fusion Material group."
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "混合融合素材的最终组检查；验证必须使用的融合素材、EFFECT_TUNE_MAGICIAN_F限制、额外怪兽区域可用性以及额外融合目标检查。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Final group check for mixed Fusion Materials. It validates mandatory Fusion Materials, Tune Magician restrictions, Extra Monster Zone availability, and additional Fusion goal hooks."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/procedure.lua",
@@ -47908,7 +47915,10 @@
       "aliases": [
         "aux.FCheckMixGoal"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -47937,58 +47947,60 @@
         },
         {
           "name": "sub",
-          "type": "any",
+          "type": "bool",
           "optional": false,
           "description": ""
         },
         {
           "name": "chkf",
-          "type": "any",
+          "type": "int",
           "optional": false,
           "description": ""
         },
         {
           "name": "fun1",
-          "type": "any",
+          "type": "function",
           "optional": false,
           "description": ""
         },
         {
           "name": "minc",
-          "type": "any",
+          "type": "int",
           "optional": false,
           "description": ""
         },
         {
           "name": "maxc",
-          "type": "any",
+          "type": "int",
           "optional": false,
           "description": ""
         },
         {
           "name": "fun2",
-          "type": "any",
-          "optional": false,
+          "type": "function|nil",
+          "optional": true,
           "description": ""
         },
         {
           "name": "...",
-          "type": "any",
+          "type": "function",
           "optional": false,
           "description": ""
         }
       ],
       "returns": [
         {
-          "type": "nil",
-          "description": ""
+          "type": "bool",
+          "description": "true if the mixed-repeat material requirements can be satisfied."
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "检查已选择的重复混合融合素材组；可重复素材函数负责可变数量素材，其余每个素材函数各满足1次。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Checks a selected mixed-repeat Fusion Material group. The repeated material function must cover the variable-count materials, while each remaining function is satisfied once."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/procedure.lua",
@@ -47999,7 +48011,10 @@
       "aliases": [
         "aux.FCheckMixRep"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -48034,58 +48049,60 @@
         },
         {
           "name": "sub",
-          "type": "any",
+          "type": "bool",
           "optional": false,
           "description": ""
         },
         {
           "name": "chkf",
-          "type": "any",
+          "type": "int",
           "optional": false,
           "description": ""
         },
         {
           "name": "fun1",
-          "type": "any",
+          "type": "function",
           "optional": false,
           "description": ""
         },
         {
           "name": "minc",
-          "type": "any",
+          "type": "int",
           "optional": false,
           "description": ""
         },
         {
           "name": "maxc",
-          "type": "any",
+          "type": "int",
           "optional": false,
           "description": ""
         },
         {
           "name": "fun2",
-          "type": "any",
-          "optional": false,
+          "type": "function|nil",
+          "optional": true,
           "description": ""
         },
         {
           "name": "...",
-          "type": "any",
+          "type": "function",
           "optional": false,
           "description": ""
         }
       ],
       "returns": [
         {
-          "type": "nil",
-          "description": ""
+          "type": "bool",
+          "description": "true if c can satisfy this fixed material slot and the rest can be completed."
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "Auxiliary.FCheckMixRep使用的递归辅助函数；临时把c分配给剩余的一个固定素材函数，并继续检查其余要求。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Recursive helper for Auxiliary.FCheckMixRep. It temporarily assigns c to one remaining fixed material function and continues checking the rest."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/procedure.lua",
@@ -48096,7 +48113,10 @@
       "aliases": [
         "aux.FCheckMixRepFilter"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -48125,52 +48145,54 @@
         },
         {
           "name": "sub",
-          "type": "any",
+          "type": "bool",
           "optional": false,
           "description": ""
         },
         {
           "name": "chkfnf",
-          "type": "any",
+          "type": "int",
           "optional": false,
           "description": ""
         },
         {
           "name": "fun1",
-          "type": "any",
+          "type": "function",
           "optional": false,
           "description": ""
         },
         {
           "name": "minc",
-          "type": "any",
+          "type": "int",
           "optional": false,
           "description": ""
         },
         {
           "name": "maxc",
-          "type": "any",
+          "type": "int",
           "optional": false,
           "description": ""
         },
         {
           "name": "...",
-          "type": "any",
+          "type": "function",
           "optional": false,
           "description": ""
         }
       ],
       "returns": [
         {
-          "type": "nil",
-          "description": ""
+          "type": "bool",
+          "description": "true if sg is a valid mixed-repeat Fusion Material group."
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "重复混合融合素材的最终目标检查；验证已选数量限制、额外怪兽区域可用性、额外融合检查以及固定/重复素材要求。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Final goal check for mixed-repeat Fusion Materials. It validates selected count limits, Extra Monster Zone availability, additional Fusion hooks, and fixed/repeated material requirements."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/procedure.lua",
@@ -48181,7 +48203,10 @@
       "aliases": [
         "aux.FCheckMixRepGoal"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -48210,22 +48235,24 @@
         },
         {
           "name": "chkfnf",
-          "type": "any",
+          "type": "int",
           "optional": false,
           "description": ""
         }
       ],
       "returns": [
         {
-          "type": "nil",
-          "description": ""
+          "type": "bool",
+          "description": "true if shared mixed-repeat goal prechecks pass."
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "重复混合融合素材目标的共通预检查；排除无效的EFFECT_TUNE_MAGICIAN_F组合、缺少必须融合素材以及额外目标检查失败的情况。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Shared precheck for mixed-repeat Fusion Material goals. It rejects invalid Tune Magician combinations, missing mandatory Fusion Materials, and failed goal hooks."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/procedure.lua",
@@ -48236,7 +48263,10 @@
       "aliases": [
         "aux.FCheckMixRepGoalCheck"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -48260,15 +48290,17 @@
       ],
       "returns": [
         {
-          "type": "nil",
-          "description": ""
+          "type": "bool",
+          "description": "true if the selected-material recursion can succeed."
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "重复混合融合素材选择递归辅助函数；使用已选择素材条件转交Auxiliary.FCheckMixRepTemplate处理。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Selection-recursion helper for mixed-repeat Fusion Materials; it delegates to Auxiliary.FCheckMixRepTemplate using the selected-material condition."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/procedure.lua",
@@ -48279,7 +48311,10 @@
       "aliases": [
         "aux.FCheckMixRepSelected"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -48321,15 +48356,17 @@
       ],
       "returns": [
         {
-          "type": "nil",
-          "description": ""
+          "type": "bool",
+          "description": "true if the current mixed-repeat selection can continue or finish."
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "判断当前重复混合融合素材选择是否可以继续递归，或是否可以通过Auxiliary.FCheckSelectMixRep完成。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Checks whether the recursive mixed-repeat selection can continue from the currently selected group, or can finish through Auxiliary.FCheckSelectMixRep."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/procedure.lua",
@@ -48340,7 +48377,10 @@
       "aliases": [
         "aux.FCheckMixRepSelectedCond"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -48357,7 +48397,7 @@
         },
         {
           "name": "cond",
-          "type": "any",
+          "type": "function",
           "optional": false,
           "description": ""
         },
@@ -48393,52 +48433,54 @@
         },
         {
           "name": "sub",
-          "type": "any",
+          "type": "bool",
           "optional": false,
           "description": ""
         },
         {
           "name": "chkfnf",
-          "type": "any",
+          "type": "int",
           "optional": false,
           "description": ""
         },
         {
           "name": "fun1",
-          "type": "any",
+          "type": "function",
           "optional": false,
           "description": ""
         },
         {
           "name": "minc",
-          "type": "any",
+          "type": "int",
           "optional": false,
           "description": ""
         },
         {
           "name": "maxc",
-          "type": "any",
+          "type": "int",
           "optional": false,
           "description": ""
         },
         {
           "name": "...",
-          "type": "any",
+          "type": "function",
           "optional": false,
           "description": ""
         }
       ],
       "returns": [
         {
-          "type": "nil",
-          "description": ""
+          "type": "bool",
+          "description": "true if c can be assigned to a fixed or repeated material slot."
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "重复混合融合素材检查的通用递归模板；尝试把c分配给每个固定素材函数，或分配给可重复素材位置。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Generic recursive template for mixed-repeat Fusion Material checks. It tries assigning c to each fixed material function or to the repeated material slot."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/procedure.lua",
@@ -48449,7 +48491,10 @@
       "aliases": [
         "aux.FCheckMixRepTemplate"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -48490,52 +48535,54 @@
         },
         {
           "name": "sub",
-          "type": "any",
+          "type": "bool",
           "optional": false,
           "description": ""
         },
         {
           "name": "chkfnf",
-          "type": "any",
+          "type": "int",
           "optional": false,
           "description": ""
         },
         {
           "name": "fun1",
-          "type": "any",
+          "type": "function",
           "optional": false,
           "description": ""
         },
         {
           "name": "minc",
-          "type": "any",
+          "type": "int",
           "optional": false,
           "description": ""
         },
         {
           "name": "maxc",
-          "type": "any",
+          "type": "int",
           "optional": false,
           "description": ""
         },
         {
           "name": "...",
-          "type": "any",
+          "type": "function",
           "optional": false,
           "description": ""
         }
       ],
       "returns": [
         {
-          "type": "nil",
-          "description": ""
+          "type": "bool",
+          "description": "true if the current selection can be completed."
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "检查当前重复混合融合素材选择是否可以从已选Group继续完成。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Checks whether a mixed-repeat Fusion Material selection can be completed from the current chosen group."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/procedure.lua",
@@ -48546,7 +48593,10 @@
       "aliases": [
         "aux.FCheckSelectMixRep"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -48593,58 +48643,60 @@
         },
         {
           "name": "sub",
-          "type": "any",
+          "type": "bool",
           "optional": false,
           "description": ""
         },
         {
           "name": "chkf",
-          "type": "any",
+          "type": "int",
           "optional": false,
           "description": ""
         },
         {
           "name": "fun1",
-          "type": "any",
+          "type": "function",
           "optional": false,
           "description": ""
         },
         {
           "name": "minc",
-          "type": "any",
+          "type": "int",
           "optional": false,
           "description": ""
         },
         {
           "name": "maxc",
-          "type": "any",
+          "type": "int",
           "optional": false,
           "description": ""
         },
         {
           "name": "fun2",
-          "type": "any",
-          "optional": false,
+          "type": "function|nil",
+          "optional": true,
           "description": ""
         },
         {
           "name": "...",
-          "type": "any",
+          "type": "function",
           "optional": false,
           "description": ""
         }
       ],
       "returns": [
         {
-          "type": "nil",
-          "description": ""
+          "type": "bool",
+          "description": "true if the selection can be completed through c."
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "重复混合融合选择使用的递归辅助函数；用于场地空间限制已经满足或不需要检查的情况。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Recursive helper for mixed-repeat Fusion selection when field-space constraints are already satisfied or not required."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/procedure.lua",
@@ -48655,7 +48707,10 @@
       "aliases": [
         "aux.FCheckSelectMixRepAll"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -48685,15 +48740,17 @@
       ],
       "returns": [
         {
-          "type": "nil",
-          "description": ""
+          "type": "bool",
+          "description": "true if c is a valid Monster Zone candidate and the selection can be completed."
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "重复混合融合选择使用的递归辅助函数；要求下一个候选素材由tp控制且位于怪兽区域。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Recursive helper for mixed-repeat Fusion selection that requires the next candidate to be controlled by tp in the Monster Zone."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/procedure.lua",
@@ -48704,7 +48761,10 @@
       "aliases": [
         "aux.FCheckSelectMixRepM"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -48727,34 +48787,36 @@
         },
         {
           "name": "sub",
-          "type": "any",
+          "type": "bool",
           "optional": false,
           "description": ""
         },
         {
           "name": "notfusion",
-          "type": "any",
+          "type": "bool",
           "optional": false,
           "description": ""
         },
         {
           "name": "...",
-          "type": "any",
+          "type": "function",
           "optional": false,
           "description": ""
         }
       ],
       "returns": [
         {
-          "type": "nil",
-          "description": ""
+          "type": "bool",
+          "description": "true if c is valid material and satisfies any required material function."
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "混合融合手续使用的素材筛选；检查c是否可以作为fc的融合素材，并满足至少1个必需素材函数。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Material filter used by mixed Fusion procedures. It checks whether c can be used as Fusion Material for fc and satisfies at least one required material function."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/procedure.lua",
@@ -48765,7 +48827,10 @@
       "aliases": [
         "aux.FConditionFilterMix"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -48776,34 +48841,36 @@
       "params": [
         {
           "name": "insf",
-          "type": "any",
+          "type": "bool",
           "optional": false,
           "description": ""
         },
         {
           "name": "sub",
-          "type": "any",
+          "type": "bool",
           "optional": false,
           "description": ""
         },
         {
           "name": "...",
-          "type": "any",
+          "type": "function",
           "optional": false,
           "description": ""
         }
       ],
       "returns": [
         {
-          "type": "nil",
-          "description": ""
+          "type": "function",
+          "description": "Condition function for a fixed mixed Fusion Material procedure."
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "返回固定混合融合素材手续的条件函数。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Returns the condition function for fixed mixed Fusion Material procedures."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/procedure.lua",
@@ -48814,7 +48881,10 @@
       "aliases": [
         "aux.FConditionMix"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -48825,52 +48895,54 @@
       "params": [
         {
           "name": "insf",
-          "type": "any",
+          "type": "bool",
           "optional": false,
           "description": ""
         },
         {
           "name": "sub",
-          "type": "any",
+          "type": "bool",
           "optional": false,
           "description": ""
         },
         {
           "name": "fun1",
-          "type": "any",
+          "type": "function",
           "optional": false,
           "description": ""
         },
         {
           "name": "minc",
-          "type": "any",
+          "type": "int",
           "optional": false,
           "description": ""
         },
         {
           "name": "maxc",
-          "type": "any",
+          "type": "int",
           "optional": false,
           "description": ""
         },
         {
           "name": "...",
-          "type": "any",
+          "type": "function",
           "optional": false,
           "description": ""
         }
       ],
       "returns": [
         {
-          "type": "nil",
-          "description": ""
+          "type": "function",
+          "description": "Condition function for a mixed-repeat Fusion Material procedure."
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "返回带可重复素材位置的混合融合素材手续的条件函数。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Returns the condition function for mixed Fusion Material procedures with a repeated material slot."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/procedure.lua",
@@ -48881,7 +48953,10 @@
       "aliases": [
         "aux.FConditionMixRep"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -48911,15 +48986,17 @@
       ],
       "returns": [
         {
-          "type": "nil",
-          "description": ""
+          "type": "bool",
+          "description": "true if c can be used as Fusion Material."
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "融合效果的默认融合素材筛选；判断c是否可以作为融合素材。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Default Fusion Material filter for Fusion effects; returns whether c can be used as Fusion Material."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/procedure.lua",
@@ -48930,7 +49007,10 @@
       "aliases": [
         "aux.FMaterialFilter"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -48941,22 +49021,19 @@
       "params": [
         {
           "name": "mat",
-          "type": "any",
+          "type": "Group|Card",
           "optional": false,
           "description": ""
         }
       ],
-      "returns": [
-        {
-          "type": "nil",
-          "description": ""
-        }
+      "returns": [],
+      "description_zh": [
+        "把融合素材以融合相关原因标记除外的默认操作。"
       ],
-      "description_zh": [],
       "description_en": [
-        "TODO document."
+        "Default operation for banishing Fusion Materials with Fusion reason flags."
       ],
-      "english_status": "missing_documentation",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/procedure.lua",
@@ -48967,7 +49044,10 @@
       "aliases": [
         "aux.FMaterialRemove"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -48997,15 +49077,17 @@
       ],
       "returns": [
         {
-          "type": "nil",
-          "description": ""
+          "type": "bool",
+          "description": "true if c can be banished."
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "会除外素材的融合效果使用的默认墓地素材筛选；判断c是否可以除外。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Default Graveyard-material filter for Fusion effects that banish materials; returns whether c can be banished."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/procedure.lua",
@@ -49016,7 +49098,10 @@
       "aliases": [
         "aux.FMaterialRemoveFilter"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -49027,22 +49112,19 @@
       "params": [
         {
           "name": "mat",
-          "type": "any",
+          "type": "Group|Card",
           "optional": false,
           "description": ""
         }
       ],
-      "returns": [
-        {
-          "type": "nil",
-          "description": ""
-        }
+      "returns": [],
+      "description_zh": [
+        "把融合素材以融合相关原因标记回到卡组的默认操作。"
       ],
-      "description_zh": [],
       "description_en": [
-        "TODO document."
+        "Default operation for returning Fusion Materials to the Deck with Fusion reason flags."
       ],
-      "english_status": "missing_documentation",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/procedure.lua",
@@ -49053,7 +49135,10 @@
       "aliases": [
         "aux.FMaterialToDeck"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -49064,22 +49149,19 @@
       "params": [
         {
           "name": "mat",
-          "type": "any",
+          "type": "Group|Card",
           "optional": false,
           "description": ""
         }
       ],
-      "returns": [
-        {
-          "type": "nil",
-          "description": ""
-        }
+      "returns": [],
+      "description_zh": [
+        "把融合素材以融合相关原因标记送去墓地的默认操作。"
       ],
-      "description_zh": [],
       "description_en": [
-        "TODO document."
+        "Default operation for sending Fusion Materials to the Graveyard with Fusion reason flags."
       ],
-      "english_status": "missing_documentation",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/procedure.lua",
@@ -49090,7 +49172,10 @@
       "aliases": [
         "aux.FMaterialToGrave"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -49120,15 +49205,17 @@
       ],
       "returns": [
         {
-          "type": "nil",
-          "description": ""
+          "type": "bool",
+          "description": "true if c can be sent to the Graveyard."
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "会把素材送去墓地的融合效果使用的默认素材筛选；判断c是否可以送去墓地。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Default Fusion Material filter for effects that send materials to the Graveyard; returns whether c can be sent to the Graveyard."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/procedure.lua",
@@ -49139,7 +49226,10 @@
       "aliases": [
         "aux.FMaterialToGraveFilter"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -49150,34 +49240,36 @@
       "params": [
         {
           "name": "insf",
-          "type": "any",
+          "type": "bool",
           "optional": false,
           "description": ""
         },
         {
           "name": "sub",
-          "type": "any",
+          "type": "bool",
           "optional": false,
           "description": ""
         },
         {
           "name": "...",
-          "type": "any",
+          "type": "function",
           "optional": false,
           "description": ""
         }
       ],
       "returns": [
         {
-          "type": "nil",
-          "description": ""
+          "type": "function",
+          "description": "Operation function for a fixed mixed Fusion Material procedure."
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "返回固定混合融合素材手续的操作函数；选择有效融合素材并通过Duel.SetFusionMaterial保存。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Returns the operation function for fixed mixed Fusion Material procedures; it selects valid materials and stores them with Duel.SetFusionMaterial."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/procedure.lua",
@@ -49188,7 +49280,10 @@
       "aliases": [
         "aux.FOperationMix"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -49199,52 +49294,54 @@
       "params": [
         {
           "name": "insf",
-          "type": "any",
+          "type": "bool",
           "optional": false,
           "description": ""
         },
         {
           "name": "sub",
-          "type": "any",
+          "type": "bool",
           "optional": false,
           "description": ""
         },
         {
           "name": "fun1",
-          "type": "any",
+          "type": "function",
           "optional": false,
           "description": ""
         },
         {
           "name": "minc",
-          "type": "any",
+          "type": "int",
           "optional": false,
           "description": ""
         },
         {
           "name": "maxc",
-          "type": "any",
+          "type": "int",
           "optional": false,
           "description": ""
         },
         {
           "name": "...",
-          "type": "any",
+          "type": "function",
           "optional": false,
           "description": ""
         }
       ],
       "returns": [
         {
-          "type": "nil",
-          "description": ""
+          "type": "function",
+          "description": "Operation function for a mixed-repeat Fusion Material procedure."
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "返回带可重复素材位置的混合融合素材手续的操作函数；让玩家构建有效素材组并保存。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Returns the operation function for mixed Fusion Material procedures with a repeated material slot; it lets the player build a valid material group and stores it."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/procedure.lua",
@@ -49255,7 +49352,10 @@
       "aliases": [
         "aux.FOperationMixRep"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -49278,28 +49378,30 @@
         },
         {
           "name": "sp",
-          "type": "any",
+          "type": "int",
           "optional": false,
           "description": ""
         },
         {
           "name": "st",
-          "type": "any",
+          "type": "int",
           "optional": false,
           "description": ""
         }
       ],
       "returns": [
         {
-          "type": "nil",
-          "description": ""
+          "type": "bool",
+          "description": "true if the Summon matches Fossil Fusion conditions."
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "化石融合类效果的特殊召唤限制Value函数；允许化石融合召唤值、「化石融合」本身，或处理对象不在额外卡组。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Special Summon restriction value for Fossil Fusion effects; allows Fossil Fusion's summon value, Fossil Fusion itself, or non-Extra Deck handlers."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/procedure.lua",
@@ -49310,7 +49412,10 @@
       "aliases": [
         "aux.FossilFusionLimit"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -49351,34 +49456,36 @@
         },
         {
           "name": "sub",
-          "type": "any",
+          "type": "bool",
           "optional": false,
           "description": ""
         },
         {
           "name": "chkfnf",
-          "type": "any",
+          "type": "int",
           "optional": false,
           "description": ""
         },
         {
           "name": "...",
-          "type": "any",
+          "type": "function",
           "optional": false,
           "description": ""
         }
       ],
       "returns": [
         {
-          "type": "nil",
-          "description": ""
+          "type": "bool",
+          "description": "true if adding c can complete or continue the selection."
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "重复混合融合选择的候选检查；临时把c加入sg，并返回当前选择是否已经有效或仍可完成。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Candidate test for mixed-repeat Fusion selection. It temporarily adds c to sg and returns whether the selection is already valid or can still be completed."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/procedure.lua",
@@ -49389,7 +49496,10 @@
       "aliases": [
         "aux.FSelectMixRep"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -49400,22 +49510,24 @@
       "params": [
         {
           "name": "attr",
-          "type": "any",
+          "type": "int",
           "optional": false,
           "description": ""
         }
       ],
       "returns": [
         {
-          "type": "nil",
-          "description": ""
+          "type": "function",
+          "description": "Condition function for a Shaddoll Fusion procedure."
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "返回「影依」融合手续的条件函数；检查1个「影依」素材和1个指定属性素材，并支持场地效果使用对方怪兽作为素材。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Returns the condition function for Shaddoll Fusion procedures. It checks for one Shaddoll material and one material with the required Attribute, with optional field-spell opponent-material support."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/procedure.lua",
@@ -49426,7 +49538,10 @@
       "aliases": [
         "aux.FShaddollCondition"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -49449,7 +49564,7 @@
         },
         {
           "name": "attr",
-          "type": "any",
+          "type": "int",
           "optional": false,
           "description": ""
         },
@@ -49462,15 +49577,17 @@
       ],
       "returns": [
         {
-          "type": "nil",
-          "description": ""
+          "type": "bool",
+          "description": "true if c is a valid opponent-field Shaddoll Fusion Material."
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "配合编号81788994效果使用的对方场上「影依」融合素材筛选；c必须表侧表示、受该场地效果影响，并满足标准「影依」素材筛选。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Opponent-field Shaddoll Fusion Material filter used with effect code 81788994; c must be face-up, affected by the field effect, and pass the standard Shaddoll material filter."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/procedure.lua",
@@ -49481,7 +49598,10 @@
       "aliases": [
         "aux.FShaddollExFilter"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -49504,22 +49624,24 @@
         },
         {
           "name": "attr",
-          "type": "any",
+          "type": "int",
           "optional": false,
           "description": ""
         }
       ],
       "returns": [
         {
-          "type": "nil",
-          "description": ""
+          "type": "bool",
+          "description": "true if c is valid Shaddoll Fusion Material."
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "标准「影依」融合素材筛选；该卡必须是「影依」怪兽或匹配指定属性，可以作为融合素材，且未被编号6205579效果阻止。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Standard Shaddoll Fusion Material filter. The card must be either a Shaddoll monster or match the required Attribute, be usable as Fusion Material, and not be blocked by effect 6205579."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/procedure.lua",
@@ -49530,7 +49652,10 @@
       "aliases": [
         "aux.FShaddollFilter"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -49548,15 +49673,17 @@
       ],
       "returns": [
         {
-          "type": "nil",
-          "description": ""
+          "type": "bool",
+          "description": "true if c belongs to Shaddoll Fusion set 0x9d."
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "c属于「影依」融合系列0x9d时返回true。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Returns true if c belongs to the Shaddoll Fusion set 0x9d."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/procedure.lua",
@@ -49567,7 +49694,10 @@
       "aliases": [
         "aux.FShaddollFilter1"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -49584,22 +49714,24 @@
         },
         {
           "name": "attr",
-          "type": "any",
+          "type": "int",
           "optional": false,
           "description": ""
         }
       ],
       "returns": [
         {
-          "type": "nil",
-          "description": ""
+          "type": "bool",
+          "description": "true if c has attr as Fusion Attribute or effect code 4904633."
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "c具有指定融合属性，或具有编号4904633效果时返回true。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Returns true if c has the required Fusion Attribute or effect code 4904633."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/procedure.lua",
@@ -49610,7 +49742,10 @@
       "aliases": [
         "aux.FShaddollFilter2"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },

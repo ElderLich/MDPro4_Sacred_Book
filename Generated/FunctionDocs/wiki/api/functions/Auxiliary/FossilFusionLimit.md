@@ -3,19 +3,23 @@
 ## Signature
 
 ```lua
-Auxiliary.FossilFusionLimit(Effect e, Effect se, any sp, any st) -> void
+Auxiliary.FossilFusionLimit(Effect e, Effect se, int sp, int st) -> bool
 ```
 
 ## Description
 
-TODO document.
+Special Summon restriction value for Fossil Fusion effects; allows Fossil Fusion's summon value, Fossil Fusion itself, or non-Extra Deck handlers.
 
 ## Parameters
 
 - `e` `Effect`
 - `se` `Effect`
-- `sp` `any`
-- `st` `any`
+- `sp` `int`
+- `st` `int`
+
+## Returns
+
+- `bool` - true if the Summon matches Fossil Fusion conditions.
 
 ## Source
 

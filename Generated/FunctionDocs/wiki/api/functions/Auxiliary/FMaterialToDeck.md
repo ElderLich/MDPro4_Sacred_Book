@@ -3,16 +3,16 @@
 ## Signature
 
 ```lua
-Auxiliary.FMaterialToDeck(any mat) -> void
+Auxiliary.FMaterialToDeck(Group|Card mat) -> void
 ```
 
 ## Description
 
-TODO document.
+Default operation for returning Fusion Materials to the Deck with Fusion reason flags.
 
 ## Parameters
 
-- `mat` `any`
+- `mat` `Group|Card`
 
 ## Source
 

@@ -3,16 +3,20 @@
 ## Signature
 
 ```lua
-Auxiliary.FShaddollFilter1(Card c) -> void
+Auxiliary.FShaddollFilter1(Card c) -> bool
 ```
 
 ## Description
 
-TODO document.
+Returns true if c belongs to the Shaddoll Fusion set 0x9d.
 
 ## Parameters
 
 - `c` `Card`
+
+## Returns
+
+- `bool` - true if c belongs to Shaddoll Fusion set 0x9d.
 
 ## Source
 

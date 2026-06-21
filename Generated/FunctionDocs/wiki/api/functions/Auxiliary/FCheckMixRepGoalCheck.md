@@ -3,19 +3,23 @@
 ## Signature
 
 ```lua
-Auxiliary.FCheckMixRepGoalCheck(int tp, Group sg, Card fc, any chkfnf) -> void
+Auxiliary.FCheckMixRepGoalCheck(int tp, Group sg, Card fc, int chkfnf) -> bool
 ```
 
 ## Description
 
-TODO document.
+Shared precheck for mixed-repeat Fusion Material goals. It rejects invalid Tune Magician combinations, missing mandatory Fusion Materials, and failed goal hooks.
 
 ## Parameters
 
 - `tp` `int`
 - `sg` `Group`
 - `fc` `Card`
-- `chkfnf` `any`
+- `chkfnf` `int`
+
+## Returns
+
+- `bool` - true if shared mixed-repeat goal prechecks pass.
 
 ## Source
 

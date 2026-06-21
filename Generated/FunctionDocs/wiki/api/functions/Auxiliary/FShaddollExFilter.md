@@ -3,19 +3,23 @@
 ## Signature
 
 ```lua
-Auxiliary.FShaddollExFilter(Card c, Card fc, any attr, Effect fe) -> void
+Auxiliary.FShaddollExFilter(Card c, Card fc, int attr, Effect fe) -> bool
 ```
 
 ## Description
 
-TODO document.
+Opponent-field Shaddoll Fusion Material filter used with effect code 81788994; c must be face-up, affected by the field effect, and pass the standard Shaddoll material filter.
 
 ## Parameters
 
 - `c` `Card`
 - `fc` `Card`
-- `attr` `any`
+- `attr` `int`
 - `fe` `Effect`
+
+## Returns
+
+- `bool` - true if c is a valid opponent-field Shaddoll Fusion Material.
 
 ## Source
 

@@ -3,16 +3,16 @@
 ## Signature
 
 ```lua
-Auxiliary.FMaterialToGrave(any mat) -> void
+Auxiliary.FMaterialToGrave(Group|Card mat) -> void
 ```
 
 ## Description
 
-TODO document.
+Default operation for sending Fusion Materials to the Graveyard with Fusion reason flags.
 
 ## Parameters
 
-- `mat` `any`
+- `mat` `Group|Card`
 
 ## Source
 
