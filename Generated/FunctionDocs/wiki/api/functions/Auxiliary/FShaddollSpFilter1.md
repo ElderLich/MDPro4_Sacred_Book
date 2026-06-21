@@ -3,12 +3,12 @@
 ## Signature
 
 ```lua
-Auxiliary.FShaddollSpFilter1(Card c, Card fc, int tp, Group mg, Group exg, any attr, any chkf) -> void
+Auxiliary.FShaddollSpFilter1(Card c, Card fc, int tp, Group mg, Group|nil exg, int attr, int chkf) -> bool
 ```
 
 ## Description
 
-TODO document.
+Checks whether c can be paired with another valid Shaddoll Fusion Material from mg or exg.
 
 ## Parameters
 
@@ -16,9 +16,13 @@ TODO document.
 - `fc` `Card`
 - `tp` `int`
 - `mg` `Group`
-- `exg` `Group`
-- `attr` `any`
-- `chkf` `any`
+- `exg` `Group|nil`
+- `attr` `int`
+- `chkf` `int`
+
+## Returns
+
+- `bool` - true if c can be paired with another valid material.
 
 ## Source
 

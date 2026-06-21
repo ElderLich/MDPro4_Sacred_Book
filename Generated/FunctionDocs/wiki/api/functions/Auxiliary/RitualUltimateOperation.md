@@ -3,22 +3,26 @@
 ## Signature
 
 ```lua
-Auxiliary.RitualUltimateOperation(function filter, any level_function, any greater_or_equal, any summon_location, any grave_filter, any mat_filter, any extra_operation) -> void
+Auxiliary.RitualUltimateOperation(function|nil filter, function level_function, string greater_or_equal, int summon_location, function|nil grave_filter, function|nil mat_filter, function|nil extra_operation) -> function
 ```
 
 ## Description
 
-TODO document.
+Returns the operation function for configurable Ritual Summon effects. It selects the Ritual Monster and materials, releases or banishes the materials, Special Summons the monster, and runs extra callbacks.
 
 ## Parameters
 
-- `filter` `function`
-- `level_function` `any`
-- `greater_or_equal` `any`
-- `summon_location` `any`
-- `grave_filter` `any`
-- `mat_filter` `any`
-- `extra_operation` `any`
+- `filter` `function|nil`
+- `level_function` `function`
+- `greater_or_equal` `string`
+- `summon_location` `int`
+- `grave_filter` `function|nil`
+- `mat_filter` `function|nil`
+- `extra_operation` `function|nil`
+
+## Returns
+
+- `function` - Operation function for a configurable Ritual Summon effect.
 
 ## Source
 

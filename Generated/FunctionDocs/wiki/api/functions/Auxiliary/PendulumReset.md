@@ -3,12 +3,12 @@
 ## Signature
 
 ```lua
-Auxiliary.PendulumReset(Effect e, int tp, Group eg, int ep, any ev, Effect re, any r, int rp) -> void
+Auxiliary.PendulumReset(Effect e, int tp, Group eg, int ep, int ev, Effect re, int r, int rp) -> void
 ```
 
 ## Description
 
-TODO document.
+Resets the shared Pendulum Summon checklist at the start of the Draw Phase.
 
 ## Parameters
 
@@ -16,9 +16,9 @@ TODO document.
 - `tp` `int`
 - `eg` `Group`
 - `ep` `int`
-- `ev` `any`
+- `ev` `int`
 - `re` `Effect`
-- `r` `any`
+- `r` `int`
 - `rp` `int`
 
 ## Source

@@ -8,7 +8,7 @@ Auxiliary.FusionEffectUltimateOperation(table params) -> function
 
 ## Description
 
-TODO document.
+Returns the operation function for configurable Fusion Summon effects. It builds the material pool, handles Chain Material, applies per-location material operations, Special Summons the chosen Fusion Monster, and runs extra callbacks.
 
 ## Parameters
 
@@ -16,7 +16,7 @@ TODO document.
 
 ## Returns
 
-- `function`
+- `function` - Operation function for a configurable Fusion Summon effect.
 
 ## Source
 

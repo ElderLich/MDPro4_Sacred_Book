@@ -3,18 +3,22 @@
 ## Signature
 
 ```lua
-Auxiliary.PendOperationCheck(any ft1, any ft2, any ft) -> void
+Auxiliary.PendOperationCheck(int ft1, int ft2, int ft) -> function
 ```
 
 ## Description
 
-TODO document.
+Returns a group check that enforces the hand, Extra Deck, and total zone limits for a Pendulum Summon selection.
 
 ## Parameters
 
-- `ft1` `any`
-- `ft2` `any`
-- `ft` `any`
+- `ft1` `int`
+- `ft2` `int`
+- `ft` `int`
+
+## Returns
+
+- `function` - Group check for Pendulum Summon zone limits.
 
 ## Source
 

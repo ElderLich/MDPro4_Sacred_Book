@@ -8,7 +8,7 @@ Auxiliary.RitualCheckGreater(Group g, Card c, int lv) -> bool
 
 ## Description
 
-TODO document.
+Checks whether g's Ritual Levels are greater than or equal to lv for c.
 
 ## Parameters
 
@@ -18,7 +18,7 @@ TODO document.
 
 ## Returns
 
-- `bool`
+- `bool` - true if g reaches at least lv.
 
 ## Source
 

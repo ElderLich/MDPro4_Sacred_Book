@@ -3,17 +3,17 @@
 ## Signature
 
 ```lua
-Auxiliary.LExtraMaterialCount(Group mg, any lc, int tp) -> void
+Auxiliary.LExtraMaterialCount(Group mg, Card lc, int tp) -> void
 ```
 
 ## Description
 
-TODO document.
+Consumes count limits for selected Link Materials that were used through valid EFFECT_EXTRA_LINK_MATERIAL effects.
 
 ## Parameters
 
 - `mg` `Group`
-- `lc` `any`
+- `lc` `Card`
 - `tp` `int`
 
 ## Source

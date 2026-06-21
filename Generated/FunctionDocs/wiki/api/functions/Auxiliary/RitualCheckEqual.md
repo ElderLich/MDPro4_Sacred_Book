@@ -8,7 +8,7 @@ Auxiliary.RitualCheckEqual(Group g, Card c, int lv) -> bool
 
 ## Description
 
-TODO document.
+Checks whether g's Ritual Levels exactly equal lv for c.
 
 ## Parameters
 
@@ -18,7 +18,7 @@ TODO document.
 
 ## Returns
 
-- `bool`
+- `bool` - true if g exactly matches lv.
 
 ## Source
 

@@ -3,12 +3,12 @@
 ## Signature
 
 ```lua
-Auxiliary.PendOperation(Effect e, int tp, Group eg, int ep, any ev, Effect re, any r, int rp, Card c, Group sg, Group og) -> void
+Auxiliary.PendOperation(Effect e, int tp, Group eg, int ep, int ev, Effect re, int r, int rp, Card c, Group sg, Group|nil og) -> void
 ```
 
 ## Description
 
-TODO document.
+Operation function for the shared Pendulum Summon procedure. It chooses the regular or extra Pendulum Summon effect, selects monsters within hand/Extra Deck zone limits, updates the checklist, and merges the selection into sg.
 
 ## Parameters
 
@@ -16,13 +16,13 @@ TODO document.
 - `tp` `int`
 - `eg` `Group`
 - `ep` `int`
-- `ev` `any`
+- `ev` `int`
 - `re` `Effect`
-- `r` `any`
+- `r` `int`
 - `rp` `int`
 - `c` `Card`
 - `sg` `Group`
-- `og` `Group`
+- `og` `Group|nil`
 
 ## Source
 

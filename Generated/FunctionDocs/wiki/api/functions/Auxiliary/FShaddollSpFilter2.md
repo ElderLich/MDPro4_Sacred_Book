@@ -3,21 +3,25 @@
 ## Signature
 
 ```lua
-Auxiliary.FShaddollSpFilter2(Card c, Card fc, int tp, any mc, any attr, any chkf) -> void
+Auxiliary.FShaddollSpFilter2(Card c, Card fc, int tp, Card mc, int attr, int chkf) -> bool
 ```
 
 ## Description
 
-TODO document.
+Checks whether c and mc form the required Shaddoll Fusion Material pair while respecting mandatory Fusion Material and additional Fusion checks.
 
 ## Parameters
 
 - `c` `Card`
 - `fc` `Card`
 - `tp` `int`
-- `mc` `any`
-- `attr` `any`
-- `chkf` `any`
+- `mc` `Card`
+- `attr` `int`
+- `chkf` `int`
+
+## Returns
+
+- `bool` - true if c and mc form a valid Shaddoll Fusion Material pair.
 
 ## Source
 

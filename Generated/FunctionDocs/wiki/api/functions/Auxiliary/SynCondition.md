@@ -3,19 +3,23 @@
 ## Signature
 
 ```lua
-Auxiliary.SynCondition(any f1, any f2, any minct, any maxct) -> void
+Auxiliary.SynCondition(function|nil f1, function|nil f2, int minct, int maxct) -> function
 ```
 
 ## Description
 
-TODO document.
+Returns the condition function for basic Synchro Summon procedures, including optional fixed tuner material handling.
 
 ## Parameters
 
-- `f1` `any`
-- `f2` `any`
-- `minct` `any`
-- `maxct` `any`
+- `f1` `function|nil`
+- `f2` `function|nil`
+- `minct` `int`
+- `maxct` `int`
+
+## Returns
+
+- `function` - Condition function for a basic Synchro Summon procedure.
 
 ## Source
 

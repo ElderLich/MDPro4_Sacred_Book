@@ -3,12 +3,12 @@
 ## Signature
 
 ```lua
-Auxiliary.PSSCompleteProcedure(Effect e, int tp, Group eg, int ep, any ev, Effect re, any r, int rp) -> void
+Auxiliary.PSSCompleteProcedure(Effect e, int tp, Group eg, int ep, int ev, Effect re, int r, int rp) -> void
 ```
 
 ## Description
 
-TODO document.
+Completes the procedure for monsters that were Special Summoned by Pendulum Summon through the revive-limit helper.
 
 ## Parameters
 
@@ -16,9 +16,9 @@ TODO document.
 - `tp` `int`
 - `eg` `Group`
 - `ep` `int`
-- `ev` `any`
+- `ev` `int`
 - `re` `Effect`
-- `r` `any`
+- `r` `int`
 - `rp` `int`
 
 ## Source

@@ -3,19 +3,23 @@
 ## Signature
 
 ```lua
-Auxiliary.LinkCondition(function f, any minct, any maxct, any gf) -> void
+Auxiliary.LinkCondition(function|nil f, int minct, int maxct, function|nil gf) -> function
 ```
 
 ## Description
 
-TODO document.
+Returns the condition function for Link Summon procedures.
 
 ## Parameters
 
-- `f` `function`
-- `minct` `any`
-- `maxct` `any`
-- `gf` `any`
+- `f` `function|nil`
+- `minct` `int`
+- `maxct` `int`
+- `gf` `function|nil`
+
+## Returns
+
+- `function` - Condition function for a Link Summon procedure.
 
 ## Source
 

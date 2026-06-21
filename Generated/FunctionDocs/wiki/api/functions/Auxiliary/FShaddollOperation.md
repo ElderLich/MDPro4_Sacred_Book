@@ -3,16 +3,20 @@
 ## Signature
 
 ```lua
-Auxiliary.FShaddollOperation(any attr) -> void
+Auxiliary.FShaddollOperation(int attr) -> function
 ```
 
 ## Description
 
-TODO document.
+Returns the operation function for Shaddoll Fusion procedures; it selects the two required materials, optionally using the opponent-field material effect, and stores them with Duel.SetFusionMaterial.
 
 ## Parameters
 
-- `attr` `any`
+- `attr` `int`
+
+## Returns
+
+- `function` - Operation function for a Shaddoll Fusion procedure.
 
 ## Source
 

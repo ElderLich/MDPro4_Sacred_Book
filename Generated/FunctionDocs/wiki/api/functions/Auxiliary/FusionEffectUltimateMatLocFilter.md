@@ -3,12 +3,12 @@
 ## Signature
 
 ```lua
-Auxiliary.FusionEffectUltimateMatLocFilter(Card c, Effect e, int tp, int loc, function f) -> void
+Auxiliary.FusionEffectUltimateMatLocFilter(Card c, Effect e, int tp, int loc, function|nil f) -> bool
 ```
 
 ## Description
 
-TODO document.
+Location-specific Fusion material filter; cards outside loc pass, and cards in loc must satisfy f when one is provided.
 
 ## Parameters
 
@@ -16,7 +16,11 @@ TODO document.
 - `e` `Effect`
 - `tp` `int`
 - `loc` `int`
-- `f` `function`
+- `f` `function|nil`
+
+## Returns
+
+- `bool` - true if c is outside loc or passes f.
 
 ## Source
 

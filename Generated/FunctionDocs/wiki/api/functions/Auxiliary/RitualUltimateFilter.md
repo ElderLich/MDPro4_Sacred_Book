@@ -3,24 +3,28 @@
 ## Signature
 
 ```lua
-Auxiliary.RitualUltimateFilter(Card c, function filter, Effect e, int tp, any m1, any m2, any level_function, any greater_or_equal, bool chk) -> void
+Auxiliary.RitualUltimateFilter(Card c, function|nil filter, Effect e, int tp, Group m1, Group|nil m2, function level_function, string greater_or_equal, bool|nil chk) -> bool
 ```
 
 ## Description
 
-TODO document.
+Checks whether c is a valid Ritual Monster that can be Ritual Summoned with the available material groups and the selected Equal or Greater level rule.
 
 ## Parameters
 
 - `c` `Card`
-- `filter` `function`
+- `filter` `function|nil`
 - `e` `Effect`
 - `tp` `int`
-- `m1` `any`
-- `m2` `any`
-- `level_function` `any`
-- `greater_or_equal` `any`
-- `chk` `bool`
+- `m1` `Group`
+- `m2` `Group|nil`
+- `level_function` `function`
+- `greater_or_equal` `string`
+- `chk` `bool|nil`
+
+## Returns
+
+- `bool` - true if c can be Ritual Summoned.
 
 ## Source
 

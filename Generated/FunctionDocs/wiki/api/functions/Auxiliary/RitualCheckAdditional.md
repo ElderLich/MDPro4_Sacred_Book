@@ -3,18 +3,22 @@
 ## Signature
 
 ```lua
-Auxiliary.RitualCheckAdditional(Card c, any lv, any greater_or_equal) -> void
+Auxiliary.RitualCheckAdditional(Card c, int lv, string greater_or_equal) -> function
 ```
 
 ## Description
 
-TODO document.
+Returns an additional subgroup check used while selecting Ritual Materials for Equal or Greater Ritual procedures.
 
 ## Parameters
 
 - `c` `Card`
-- `lv` `any`
-- `greater_or_equal` `any`
+- `lv` `int`
+- `greater_or_equal` `string`
+
+## Returns
+
+- `function` - Additional Ritual Material subgroup check.
 
 ## Source
 

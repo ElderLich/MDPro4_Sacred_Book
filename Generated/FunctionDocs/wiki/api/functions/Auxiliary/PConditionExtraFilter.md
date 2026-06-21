@@ -3,21 +3,25 @@
 ## Signature
 
 ```lua
-Auxiliary.PConditionExtraFilter(Card c, Effect e, int tp, Effect lscale, Effect rscale, any eset) -> void
+Auxiliary.PConditionExtraFilter(Card c, Effect e, int tp, int lscale, int rscale, table eset) -> bool
 ```
 
 ## Description
 
-TODO document.
+Checks whether any extra Pendulum Summon effect in eset allows c for the current scales.
 
 ## Parameters
 
 - `c` `Card`
 - `e` `Effect`
 - `tp` `int`
-- `lscale` `Effect`
-- `rscale` `Effect`
-- `eset` `any`
+- `lscale` `int`
+- `rscale` `int`
+- `eset` `table`
+
+## Returns
+
+- `bool` - true if any extra Pendulum Summon effect allows c.
 
 ## Source
 

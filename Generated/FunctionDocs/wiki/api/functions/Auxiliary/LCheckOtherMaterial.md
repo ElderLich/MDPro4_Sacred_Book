@@ -3,19 +3,23 @@
 ## Signature
 
 ```lua
-Auxiliary.LCheckOtherMaterial(Card c, Group mg, any lc, int tp) -> void
+Auxiliary.LCheckOtherMaterial(Card c, Group mg, Card lc, int tp) -> bool
 ```
 
 ## Description
 
-TODO document.
+Checks whether c is compatible with the other selected Link Materials through EFFECT_EXTRA_LINK_MATERIAL handlers.
 
 ## Parameters
 
 - `c` `Card`
 - `mg` `Group`
-- `lc` `any`
+- `lc` `Card`
 - `tp` `int`
+
+## Returns
+
+- `bool` - true if c is compatible with mg.
 
 ## Source
 

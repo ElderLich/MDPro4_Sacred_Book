@@ -3,19 +3,23 @@
 ## Signature
 
 ```lua
-Auxiliary.LinkTarget(function f, any minct, any maxct, any gf) -> void
+Auxiliary.LinkTarget(function|nil f, int minct, int maxct, function|nil gf) -> function
 ```
 
 ## Description
 
-TODO document.
+Returns the target function for Link Summon procedures; it selects a valid Link Material subgroup and stores it on the effect.
 
 ## Parameters
 
-- `f` `function`
-- `minct` `any`
-- `maxct` `any`
-- `gf` `any`
+- `f` `function|nil`
+- `minct` `int`
+- `maxct` `int`
+- `gf` `function|nil`
+
+## Returns
+
+- `function` - Target function for a Link Summon procedure.
 
 ## Source
 

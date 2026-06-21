@@ -3,12 +3,12 @@
 ## Signature
 
 ```lua
-Auxiliary.FusionEffectUltimateFilter(Card c, Effect e, int tp, Group mg, any chkf, any params) -> void
+Auxiliary.FusionEffectUltimateFilter(Card c, Effect e, int tp, Group mg, int chkf, table params) -> bool
 ```
 
 ## Description
 
-TODO document.
+Checks whether c is a Fusion Monster that can be Fusion Summoned by e using mg and the filters stored in params.
 
 ## Parameters
 
@@ -16,8 +16,12 @@ TODO document.
 - `e` `Effect`
 - `tp` `int`
 - `mg` `Group`
-- `chkf` `any`
-- `params` `any`
+- `chkf` `int`
+- `params` `table`
+
+## Returns
+
+- `bool` - true if c can be Fusion Summoned with the provided material pool.
 
 ## Source
 

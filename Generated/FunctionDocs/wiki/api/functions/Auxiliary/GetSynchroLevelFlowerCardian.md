@@ -3,16 +3,20 @@
 ## Signature
 
 ```lua
-Auxiliary.GetSynchroLevelFlowerCardian(Card c) -> void
+Auxiliary.GetSynchroLevelFlowerCardian(Card c) -> int
 ```
 
 ## Description
 
-TODO document.
+Returns the fixed Synchro Level value used by Flower Cardian helpers.
 
 ## Parameters
 
 - `c` `Card`
+
+## Returns
+
+- `int` - Fixed Synchro Level value 2.
 
 ## Source
 

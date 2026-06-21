@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-06-21T12:12:23+00:00",
+    "generated_at": "2026-06-21T12:23:27+00:00",
     "workspace": "D:\\Programs\\GitHub\\MDPro3_Sacred_Book",
     "dataeditorx_data": "D:\\Programs\\GitHub\\DataEditorX\\DataEditorX\\data",
     "mdpro3_locales": "D:\\Programs\\GitHub\\MDPro3_Data\\Data\\locales",
@@ -49756,22 +49756,24 @@
       "params": [
         {
           "name": "attr",
-          "type": "any",
+          "type": "int",
           "optional": false,
           "description": ""
         }
       ],
       "returns": [
         {
-          "type": "nil",
-          "description": ""
+          "type": "function",
+          "description": "Operation function for a Shaddoll Fusion procedure."
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "返回「影依」融合手续的操作函数；选择2张必需融合素材，必要时使用对方场上素材效果，并通过Duel.SetFusionMaterial保存。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Returns the operation function for Shaddoll Fusion procedures; it selects the two required materials, optionally using the opponent-field material effect, and stores them with Duel.SetFusionMaterial."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/procedure.lua",
@@ -49782,7 +49784,10 @@
       "aliases": [
         "aux.FShaddollOperation"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -49817,34 +49822,36 @@
         },
         {
           "name": "exg",
-          "type": "Group",
+          "type": "Group|nil",
           "optional": false,
           "description": ""
         },
         {
           "name": "attr",
-          "type": "any",
+          "type": "int",
           "optional": false,
           "description": ""
         },
         {
           "name": "chkf",
-          "type": "any",
+          "type": "int",
           "optional": false,
           "description": ""
         }
       ],
       "returns": [
         {
-          "type": "nil",
-          "description": ""
+          "type": "bool",
+          "description": "true if c can be paired with another valid material."
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "检查c是否可以和mg或exg中的另一张有效「影依」融合素材配对。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Checks whether c can be paired with another valid Shaddoll Fusion Material from mg or exg."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/procedure.lua",
@@ -49855,7 +49862,10 @@
       "aliases": [
         "aux.FShaddollSpFilter1"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -49884,34 +49894,36 @@
         },
         {
           "name": "mc",
-          "type": "any",
+          "type": "Card",
           "optional": false,
           "description": ""
         },
         {
           "name": "attr",
-          "type": "any",
+          "type": "int",
           "optional": false,
           "description": ""
         },
         {
           "name": "chkf",
-          "type": "any",
+          "type": "int",
           "optional": false,
           "description": ""
         }
       ],
       "returns": [
         {
-          "type": "nil",
-          "description": ""
+          "type": "bool",
+          "description": "true if c and mc form a valid Shaddoll Fusion Material pair."
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "检查c和mc是否组成所需的「影依」融合素材组合，并同时遵守必须融合素材和额外融合检查。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Checks whether c and mc form the required Shaddoll Fusion Material pair while respecting mandatory Fusion Material and additional Fusion checks."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/procedure.lua",
@@ -49922,7 +49934,10 @@
       "aliases": [
         "aux.FShaddollSpFilter2"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -49957,28 +49972,30 @@
         },
         {
           "name": "chkf",
-          "type": "any",
+          "type": "int",
           "optional": false,
           "description": ""
         },
         {
           "name": "params",
-          "type": "any",
+          "type": "table",
           "optional": false,
           "description": ""
         }
       ],
       "returns": [
         {
-          "type": "nil",
-          "description": ""
+          "type": "bool",
+          "description": "true if c can be Fusion Summoned with the provided material pool."
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "检查c是否为可由e使用mg和params中筛选条件进行融合召唤的融合怪兽。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Checks whether c is a Fusion Monster that can be Fusion Summoned by e using mg and the filters stored in params."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/procedure.lua",
@@ -49989,7 +50006,10 @@
       "aliases": [
         "aux.FusionEffectUltimateFilter"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -50018,22 +50038,24 @@
         },
         {
           "name": "f",
-          "type": "function",
+          "type": "function|nil",
           "optional": false,
           "description": ""
         }
       ],
       "returns": [
         {
-          "type": "nil",
-          "description": ""
+          "type": "bool",
+          "description": "true if c is affected by e and passes f when provided."
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "融合效果素材筛选；排除不受e影响的素材，并在提供f时套用该素材筛选。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Fusion effect material filter; rejects materials immune to e and applies the optional material filter f."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/procedure.lua",
@@ -50044,7 +50066,10 @@
       "aliases": [
         "aux.FusionEffectUltimateMatFilter"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -50079,22 +50104,24 @@
         },
         {
           "name": "f",
-          "type": "function",
+          "type": "function|nil",
           "optional": false,
           "description": ""
         }
       ],
       "returns": [
         {
-          "type": "nil",
-          "description": ""
+          "type": "bool",
+          "description": "true if c is outside loc or passes f."
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "按位置使用的融合素材筛选；不在loc的卡直接通过，在loc的卡则需要在提供f时满足f。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Location-specific Fusion material filter; cards outside loc pass, and cards in loc must satisfy f when one is provided."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/procedure.lua",
@@ -50105,7 +50132,10 @@
       "aliases": [
         "aux.FusionEffectUltimateMatLocFilter"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -50124,14 +50154,16 @@
       "returns": [
         {
           "type": "function",
-          "description": ""
+          "description": "Operation function for a configurable Fusion Summon effect."
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "返回可配置融合召唤效果的操作函数；构建素材池，处理连锁素材，按位置执行素材操作，特殊召唤选择的融合怪兽，并执行额外回调。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Returns the operation function for configurable Fusion Summon effects. It builds the material pool, handles Chain Material, applies per-location material operations, Special Summons the chosen Fusion Monster, and runs extra callbacks."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/procedure.lua",
@@ -50142,7 +50174,10 @@
       "aliases": [
         "aux.FusionEffectUltimateOperation"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -50153,22 +50188,24 @@
       "params": [
         {
           "name": "params",
-          "type": "any",
+          "type": "table",
           "optional": false,
           "description": ""
         }
       ],
       "returns": [
         {
-          "type": "nil",
-          "description": ""
+          "type": "function",
+          "description": "Target function for a configurable Fusion Summon effect."
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "返回可配置融合召唤效果的目标函数；检查可召唤融合怪兽和素材池，处理连锁素材的备用检查，并登记操作信息。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Returns the target function for configurable Fusion Summon effects. It checks available Fusion Monsters and material pools, handles Chain Material fallback, and registers operation information."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/procedure.lua",
@@ -50179,7 +50216,10 @@
       "aliases": [
         "aux.FusionEffectUltimateTarget"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -50297,13 +50337,13 @@
         },
         {
           "name": "f",
-          "type": "function",
+          "type": "function|nil",
           "optional": false,
           "description": ""
         },
         {
           "name": "lc",
-          "type": "any",
+          "type": "Card",
           "optional": false,
           "description": ""
         },
@@ -50316,15 +50356,17 @@
       ],
       "returns": [
         {
-          "type": "nil",
-          "description": ""
+          "type": "Group",
+          "description": "Available Link Materials."
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "返回tp可用的连接素材，包括通常怪兽区域素材，以及由额外连接素材效果允许使用的卡。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Returns the available Link Materials for tp, including regular Monster Zone materials and cards allowed by extra Link Material effects."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/procedure.lua",
@@ -50335,7 +50377,10 @@
       "aliases": [
         "aux.GetLinkMaterials"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -50359,15 +50404,17 @@
       ],
       "returns": [
         {
-          "type": "nil",
-          "description": ""
+          "type": "int",
+          "description": "Smallest Synchro Level value c can provide."
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "返回c可为syncard提供的最小同调等级，包括打包保存的可选同调等级。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Returns the smallest Synchro Level value c can provide for syncard, including packed alternative Synchro Levels."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/procedure.lua",
@@ -50378,7 +50425,10 @@
       "aliases": [
         "aux.GetMinSynchroLevel"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -50396,15 +50446,17 @@
       ],
       "returns": [
         {
-          "type": "nil",
-          "description": ""
+          "type": "int",
+          "description": "Fixed Synchro Level value 2."
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "返回「花札卫」辅助函数使用的固定同调等级。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Returns the fixed Synchro Level value used by Flower Cardian helpers."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/procedure.lua",
@@ -50415,7 +50467,10 @@
       "aliases": [
         "aux.GetSynchroLevelFlowerCardian"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -50439,15 +50494,17 @@
       ],
       "returns": [
         {
-          "type": "nil",
-          "description": ""
+          "type": "Group",
+          "description": "Available Synchro Materials."
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "返回tp对syncard可用的同调素材；若场上素材允许使用手牌同调素材，也会合并有效手牌素材。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Returns the available Synchro Materials for tp and syncard, including valid hand materials when any field material enables hand Synchro use."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/procedure.lua",
@@ -50458,7 +50515,10 @@
       "aliases": [
         "aux.GetSynMaterials"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -50556,34 +50616,36 @@
         },
         {
           "name": "lc",
-          "type": "any",
+          "type": "Card",
           "optional": false,
           "description": ""
         },
         {
           "name": "gf",
-          "type": "any",
+          "type": "function|nil",
           "optional": false,
           "description": ""
         },
         {
           "name": "lmat",
-          "type": "any",
+          "type": "Card|nil",
           "optional": false,
           "description": ""
         }
       ],
       "returns": [
         {
-          "type": "nil",
-          "description": ""
+          "type": "bool",
+          "description": "true if sg is a valid Link Material group."
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "连接素材组的最终检查；验证连接数值合计、额外怪兽区域可用性、可选组筛选、额外素材兼容性，以及是否包含指定lmat。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Final Link Material group check. It verifies Link Rating total, Extra Monster Zone availability, optional group filter, extra-material compatibility, and required lmat inclusion."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/procedure.lua",
@@ -50594,7 +50656,10 @@
       "aliases": [
         "aux.LCheckGoal"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -50617,7 +50682,7 @@
         },
         {
           "name": "lc",
-          "type": "any",
+          "type": "Card",
           "optional": false,
           "description": ""
         },
@@ -50630,15 +50695,17 @@
       ],
       "returns": [
         {
-          "type": "nil",
-          "description": ""
+          "type": "bool",
+          "description": "true if c is compatible with mg."
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "通过EFFECT_EXTRA_LINK_MATERIAL处理函数检查c是否与其他已选连接素材兼容。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Checks whether c is compatible with the other selected Link Materials through EFFECT_EXTRA_LINK_MATERIAL handlers."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/procedure.lua",
@@ -50649,7 +50716,10 @@
       "aliases": [
         "aux.LCheckOtherMaterial"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -50666,13 +50736,13 @@
         },
         {
           "name": "f",
-          "type": "function",
+          "type": "function|nil",
           "optional": false,
           "description": ""
         },
         {
           "name": "lc",
-          "type": "any",
+          "type": "Card",
           "optional": false,
           "description": ""
         },
@@ -50685,15 +50755,17 @@
       ],
       "returns": [
         {
-          "type": "nil",
-          "description": ""
+          "type": "bool",
+          "description": "true if c is regular Link Material."
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "通常连接素材筛选；该卡必须可见或可被e选择，可以作为lc的连接素材，并在提供f时满足f。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Regular Link Material filter. The card must be visible or selectable by e, usable as Link Material for lc, and satisfy f when provided."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/procedure.lua",
@@ -50704,7 +50776,10 @@
       "aliases": [
         "aux.LConditionFilter"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -50721,13 +50796,13 @@
         },
         {
           "name": "f",
-          "type": "function",
+          "type": "function|nil",
           "optional": false,
           "description": ""
         },
         {
           "name": "lc",
-          "type": "any",
+          "type": "Card",
           "optional": false,
           "description": ""
         },
@@ -50740,15 +50815,17 @@
       ],
       "returns": [
         {
-          "type": "nil",
-          "description": ""
+          "type": "bool",
+          "description": "true if c can be used through an extra Link Material effect."
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "由EFFECT_EXTRA_LINK_MATERIAL允许的额外连接素材筛选，用于手牌、魔法/陷阱区域或对方场上的卡。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Extra Link Material filter for hand, Spell & Trap Zone, or opponent-field cards granted by EFFECT_EXTRA_LINK_MATERIAL."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/procedure.lua",
@@ -50759,7 +50836,10 @@
       "aliases": [
         "aux.LExtraFilter"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -50776,7 +50856,7 @@
         },
         {
           "name": "lc",
-          "type": "any",
+          "type": "Card",
           "optional": false,
           "description": ""
         },
@@ -50787,17 +50867,14 @@
           "description": ""
         }
       ],
-      "returns": [
-        {
-          "type": "nil",
-          "description": ""
-        }
+      "returns": [],
+      "description_zh": [
+        "对通过有效EFFECT_EXTRA_LINK_MATERIAL效果使用的已选连接素材消耗次数限制。"
       ],
-      "description_zh": [],
       "description_en": [
-        "TODO document."
+        "Consumes count limits for selected Link Materials that were used through valid EFFECT_EXTRA_LINK_MATERIAL effects."
       ],
-      "english_status": "missing_documentation",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/procedure.lua",
@@ -50808,7 +50885,10 @@
       "aliases": [
         "aux.LExtraMaterialCount"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -50819,40 +50899,42 @@
       "params": [
         {
           "name": "f",
-          "type": "function",
+          "type": "function|nil",
           "optional": false,
           "description": ""
         },
         {
           "name": "minct",
-          "type": "any",
+          "type": "int",
           "optional": false,
           "description": ""
         },
         {
           "name": "maxct",
-          "type": "any",
+          "type": "int",
           "optional": false,
           "description": ""
         },
         {
           "name": "gf",
-          "type": "any",
+          "type": "function|nil",
           "optional": false,
           "description": ""
         }
       ],
       "returns": [
         {
-          "type": "nil",
-          "description": ""
+          "type": "function",
+          "description": "Condition function for a Link Summon procedure."
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "返回连接召唤手续的条件函数。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Returns the condition function for Link Summon procedures."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/procedure.lua",
@@ -50863,7 +50945,10 @@
       "aliases": [
         "aux.LinkCondition"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -50933,40 +51018,42 @@
       "params": [
         {
           "name": "f",
-          "type": "function",
+          "type": "function|nil",
           "optional": false,
           "description": ""
         },
         {
           "name": "minct",
-          "type": "any",
+          "type": "int",
           "optional": false,
           "description": ""
         },
         {
           "name": "maxct",
-          "type": "any",
+          "type": "int",
           "optional": false,
           "description": ""
         },
         {
           "name": "gf",
-          "type": "any",
+          "type": "function|nil",
           "optional": false,
           "description": ""
         }
       ],
       "returns": [
         {
-          "type": "nil",
-          "description": ""
+          "type": "function",
+          "description": "Operation function for a Link Summon procedure."
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "返回连接召唤手续的操作函数；设置素材，消耗额外素材次数限制，并把素材送去墓地。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Returns the operation function for Link Summon procedures; it sets the materials, consumes extra-material count limits, and sends the materials to the Graveyard."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/procedure.lua",
@@ -50977,7 +51064,10 @@
       "aliases": [
         "aux.LinkOperation"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -50988,40 +51078,42 @@
       "params": [
         {
           "name": "f",
-          "type": "function",
+          "type": "function|nil",
           "optional": false,
           "description": ""
         },
         {
           "name": "minct",
-          "type": "any",
+          "type": "int",
           "optional": false,
           "description": ""
         },
         {
           "name": "maxct",
-          "type": "any",
+          "type": "int",
           "optional": false,
           "description": ""
         },
         {
           "name": "gf",
-          "type": "any",
+          "type": "function|nil",
           "optional": false,
           "description": ""
         }
       ],
       "returns": [
         {
-          "type": "nil",
-          "description": ""
+          "type": "function",
+          "description": "Target function for a Link Summon procedure."
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "返回连接召唤手续的目标函数；选择有效连接素材子组并保存在效果上。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Returns the target function for Link Summon procedures; it selects a valid Link Material subgroup and stores it on the effect."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/procedure.lua",
@@ -51032,7 +51124,10 @@
       "aliases": [
         "aux.LinkTarget"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -51055,7 +51150,7 @@
         },
         {
           "name": "lc",
-          "type": "any",
+          "type": "Card",
           "optional": false,
           "description": ""
         },
@@ -51068,15 +51163,17 @@
       ],
       "returns": [
         {
-          "type": "nil",
-          "description": ""
+          "type": "bool",
+          "description": "true if c is incompatible with the rest of sg."
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "c与其他已选连接素材不兼容时返回true。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Returns true when c is not compatible with the other selected Link Materials."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/procedure.lua",
@@ -51087,7 +51184,10 @@
       "aliases": [
         "aux.LUncompatibilityFilter"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -51110,28 +51210,30 @@
         },
         {
           "name": "sp",
-          "type": "any",
+          "type": "int",
           "optional": false,
           "description": ""
         },
         {
           "name": "st",
-          "type": "any",
+          "type": "int",
           "optional": false,
           "description": ""
         }
       ],
       "returns": [
         {
-          "type": "nil",
-          "description": ""
+          "type": "bool",
+          "description": "true if the Summon matches Mask Change conditions."
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "Masked HERO/Mask Change类效果的特殊召唤限制Value函数；允许Mask Change召唤值，或由编号21143940的卡发动的效果。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Special Summon restriction value for Masked HERO/Mask Change effects; allows the Mask Change summon value or effects activated by card code 21143940."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/procedure.lua",
@@ -51142,7 +51244,10 @@
       "aliases": [
         "aux.MaskChangeLimit"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -51313,34 +51418,36 @@
         },
         {
           "name": "lscale",
-          "type": "Effect",
+          "type": "int",
           "optional": false,
           "description": ""
         },
         {
           "name": "rscale",
-          "type": "Effect",
+          "type": "int",
           "optional": false,
           "description": ""
         },
         {
           "name": "eset",
-          "type": "any",
+          "type": "table",
           "optional": false,
           "description": ""
         }
       ],
       "returns": [
         {
-          "type": "nil",
-          "description": ""
+          "type": "bool",
+          "description": "true if any extra Pendulum Summon effect allows c."
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "检查eset中的任意额外灵摆召唤效果是否允许c在当前刻度下使用。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Checks whether any extra Pendulum Summon effect in eset allows c for the current scales."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/procedure.lua",
@@ -51351,7 +51458,10 @@
       "aliases": [
         "aux.PConditionExtraFilter"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -51380,34 +51490,36 @@
         },
         {
           "name": "lscale",
-          "type": "Effect",
+          "type": "int",
           "optional": false,
           "description": ""
         },
         {
           "name": "rscale",
-          "type": "Effect",
+          "type": "int",
           "optional": false,
           "description": ""
         },
         {
           "name": "te",
-          "type": "Effect",
+          "type": "Effect|nil",
           "optional": false,
           "description": ""
         }
       ],
       "returns": [
         {
-          "type": "nil",
-          "description": ""
+          "type": "bool",
+          "description": "true if te allows c or te is nil."
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "检查1个额外灵摆召唤效果是否允许c在当前刻度下使用。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Checks whether one extra Pendulum Summon effect allows c for the current scales."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/procedure.lua",
@@ -51418,7 +51530,10 @@
       "aliases": [
         "aux.PConditionExtraFilterSpecific"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -51447,34 +51562,36 @@
         },
         {
           "name": "lscale",
-          "type": "Effect",
+          "type": "int",
           "optional": false,
           "description": ""
         },
         {
           "name": "rscale",
-          "type": "Effect",
+          "type": "int",
           "optional": false,
           "description": ""
         },
         {
           "name": "eset",
-          "type": "any",
+          "type": "table",
           "optional": false,
           "description": ""
         }
       ],
       "returns": [
         {
-          "type": "nil",
-          "description": ""
+          "type": "bool",
+          "description": "true if c can be Pendulum Summoned."
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "灵摆召唤候选筛选；检查位置、等级或pendulum_level、刻度、特殊召唤合法性、禁止状态，以及额外灵摆召唤许可。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Pendulum Summon candidate filter. It checks location, Level or pendulum_level, scales, Special Summon legality, forbidden state, and extra Pendulum Summon permissions."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/procedure.lua",
@@ -51485,7 +51602,10 @@
       "aliases": [
         "aux.PConditionFilter"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -51502,28 +51622,30 @@
         },
         {
           "name": "c",
-          "type": "Card",
+          "type": "Card|nil",
           "optional": false,
           "description": ""
         },
         {
           "name": "og",
-          "type": "Group",
+          "type": "Group|nil",
           "optional": false,
           "description": ""
         }
       ],
       "returns": [
         {
-          "type": "nil",
-          "description": ""
+          "type": "bool",
+          "description": "true if a Pendulum Summon is available."
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "共通灵摆召唤手续的条件函数；检查2个灵摆区域、可用位置和区域、每回合状态，以及可召唤怪兽。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Condition function for the shared Pendulum Summon procedure. It checks the two Pendulum Zones, available locations and zones, once-per-turn state, and valid summonable monsters."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/procedure.lua",
@@ -51534,7 +51656,10 @@
       "aliases": [
         "aux.PendCondition"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -51569,7 +51694,7 @@
         },
         {
           "name": "ev",
-          "type": "any",
+          "type": "int",
           "optional": false,
           "description": ""
         },
@@ -51581,7 +51706,7 @@
         },
         {
           "name": "r",
-          "type": "any",
+          "type": "int",
           "optional": false,
           "description": ""
         },
@@ -51605,22 +51730,19 @@
         },
         {
           "name": "og",
-          "type": "Group",
+          "type": "Group|nil",
           "optional": false,
           "description": ""
         }
       ],
-      "returns": [
-        {
-          "type": "nil",
-          "description": ""
-        }
+      "returns": [],
+      "description_zh": [
+        "共通灵摆召唤手续的操作函数；选择通常或额外灵摆召唤效果，在手牌/额外卡组区域限制内选择怪兽，更新检查标记，并把选择合并到sg。"
       ],
-      "description_zh": [],
       "description_en": [
-        "TODO document."
+        "Operation function for the shared Pendulum Summon procedure. It chooses the regular or extra Pendulum Summon effect, selects monsters within hand/Extra Deck zone limits, updates the checklist, and merges the selection into sg."
       ],
-      "english_status": "missing_documentation",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/procedure.lua",
@@ -51631,7 +51753,10 @@
       "aliases": [
         "aux.PendOperation"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -51642,34 +51767,36 @@
       "params": [
         {
           "name": "ft1",
-          "type": "any",
+          "type": "int",
           "optional": false,
           "description": ""
         },
         {
           "name": "ft2",
-          "type": "any",
+          "type": "int",
           "optional": false,
           "description": ""
         },
         {
           "name": "ft",
-          "type": "any",
+          "type": "int",
           "optional": false,
           "description": ""
         }
       ],
       "returns": [
         {
-          "type": "nil",
-          "description": ""
+          "type": "function",
+          "description": "Group check for Pendulum Summon zone limits."
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "返回组检查函数，用于限制一次灵摆召唤选择中的手牌数量、额外卡组数量和总区域数量。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Returns a group check that enforces the hand, Extra Deck, and total zone limits for a Pendulum Summon selection."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/procedure.lua",
@@ -51680,7 +51807,10 @@
       "aliases": [
         "aux.PendOperationCheck"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -51715,7 +51845,7 @@
         },
         {
           "name": "ev",
-          "type": "any",
+          "type": "int",
           "optional": false,
           "description": ""
         },
@@ -51727,7 +51857,7 @@
         },
         {
           "name": "r",
-          "type": "any",
+          "type": "int",
           "optional": false,
           "description": ""
         },
@@ -51738,17 +51868,14 @@
           "description": ""
         }
       ],
-      "returns": [
-        {
-          "type": "nil",
-          "description": ""
-        }
+      "returns": [],
+      "description_zh": [
+        "在抽卡阶段开始时重置共通灵摆召唤检查标记。"
       ],
-      "description_zh": [],
       "description_en": [
-        "TODO document."
+        "Resets the shared Pendulum Summon checklist at the start of the Draw Phase."
       ],
-      "english_status": "missing_documentation",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/procedure.lua",
@@ -51759,7 +51886,10 @@
       "aliases": [
         "aux.PendulumReset"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -51777,15 +51907,17 @@
       ],
       "returns": [
         {
-          "type": "nil",
-          "description": ""
+          "type": "bool",
+          "description": "true if c's current location is Pendulum Summonable by its flag."
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "c具有psummonable_location标记且当前位置包含在其中时返回true。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Returns true if c has a psummonable_location flag that includes its current location."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/procedure.lua",
@@ -51796,7 +51928,10 @@
       "aliases": [
         "aux.PendulumSummonableBool"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -51890,7 +52025,7 @@
         },
         {
           "name": "ev",
-          "type": "any",
+          "type": "int",
           "optional": false,
           "description": ""
         },
@@ -51902,7 +52037,7 @@
         },
         {
           "name": "r",
-          "type": "any",
+          "type": "int",
           "optional": false,
           "description": ""
         },
@@ -51913,17 +52048,14 @@
           "description": ""
         }
       ],
-      "returns": [
-        {
-          "type": "nil",
-          "description": ""
-        }
+      "returns": [],
+      "description_zh": [
+        "对通过复活限制辅助函数设置、并以灵摆召唤特殊召唤的怪兽完成正规手续。"
       ],
-      "description_zh": [],
       "description_en": [
-        "TODO document."
+        "Completes the procedure for monsters that were Special Summoned by Pendulum Summon through the revive-limit helper."
       ],
-      "english_status": "missing_documentation",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/procedure.lua",
@@ -51934,7 +52066,10 @@
       "aliases": [
         "aux.PSSCompleteProcedure"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -52075,28 +52210,30 @@
         },
         {
           "name": "lv",
-          "type": "any",
+          "type": "int",
           "optional": false,
           "description": ""
         },
         {
           "name": "greater_or_equal",
-          "type": "any",
+          "type": "string",
           "optional": false,
           "description": ""
         }
       ],
       "returns": [
         {
-          "type": "nil",
-          "description": ""
+          "type": "function",
+          "description": "Additional Ritual Material subgroup check."
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "返回仪式素材选择时使用的额外子组检查函数，支持Equal或Greater仪式手续。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Returns an additional subgroup check used while selecting Ritual Materials for Equal or Greater Ritual procedures."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/procedure.lua",
@@ -52107,7 +52244,10 @@
       "aliases": [
         "aux.RitualCheckAdditional"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -52131,15 +52271,17 @@
       ],
       "returns": [
         {
-          "type": "nil",
-          "description": ""
+          "type": "int",
+          "description": "Smallest usable Ritual Level value."
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "当c的仪式等级打包了2个可选数值时，返回较小的可用仪式等级。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Returns the smaller usable Ritual Level value for c when its Ritual Level packs two alternatives."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/procedure.lua",
@@ -52150,7 +52292,10 @@
       "aliases": [
         "aux.RitualCheckAdditionalLevel"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -52181,14 +52326,16 @@
       "returns": [
         {
           "type": "bool",
-          "description": ""
+          "description": "true if g exactly matches lv."
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "检查g中仪式等级合计是否正好等于c所需的lv。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Checks whether g's Ritual Levels exactly equal lv for c."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/procedure.lua",
@@ -52199,7 +52346,10 @@
       "aliases": [
         "aux.RitualCheckEqual"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -52230,14 +52380,16 @@
       "returns": [
         {
           "type": "bool",
-          "description": ""
+          "description": "true if g reaches at least lv."
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "检查g中仪式等级合计是否大于或等于c所需的lv。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Checks whether g's Ritual Levels are greater than or equal to lv for c."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/procedure.lua",
@@ -52248,7 +52400,10 @@
       "aliases": [
         "aux.RitualCheckGreater"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -52272,15 +52427,17 @@
       ],
       "returns": [
         {
-          "type": "nil",
-          "description": ""
+          "type": "bool",
+          "description": "true if c is valid extra Graveyard Ritual Material."
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "墓地仪式素材筛选；c必须是f接受的有等级怪兽，并且可以被除外。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Graveyard Ritual Material filter; c must be a Level monster accepted by f and able to be banished."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/procedure.lua",
@@ -52291,7 +52448,10 @@
       "aliases": [
         "aux.RitualExtraFilter"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -52308,7 +52468,7 @@
         },
         {
           "name": "filter",
-          "type": "function",
+          "type": "function|nil",
           "optional": false,
           "description": ""
         },
@@ -52326,46 +52486,48 @@
         },
         {
           "name": "m1",
-          "type": "any",
+          "type": "Group",
           "optional": false,
           "description": ""
         },
         {
           "name": "m2",
-          "type": "any",
+          "type": "Group|nil",
           "optional": false,
           "description": ""
         },
         {
           "name": "level_function",
-          "type": "any",
+          "type": "function",
           "optional": false,
           "description": ""
         },
         {
           "name": "greater_or_equal",
-          "type": "any",
+          "type": "string",
           "optional": false,
           "description": ""
         },
         {
           "name": "chk",
-          "type": "bool",
+          "type": "bool|nil",
           "optional": false,
           "description": ""
         }
       ],
       "returns": [
         {
-          "type": "nil",
-          "description": ""
+          "type": "bool",
+          "description": "true if c can be Ritual Summoned."
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "检查c是否为可用现有素材组以及所选Equal或Greater等级规则进行仪式召唤的有效仪式怪兽。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Checks whether c is a valid Ritual Monster that can be Ritual Summoned with the available material groups and the selected Equal or Greater level rule."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/procedure.lua",
@@ -52376,7 +52538,10 @@
       "aliases": [
         "aux.RitualUltimateFilter"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -52387,58 +52552,60 @@
       "params": [
         {
           "name": "filter",
-          "type": "function",
+          "type": "function|nil",
           "optional": false,
           "description": ""
         },
         {
           "name": "level_function",
-          "type": "any",
+          "type": "function",
           "optional": false,
           "description": ""
         },
         {
           "name": "greater_or_equal",
-          "type": "any",
+          "type": "string",
           "optional": false,
           "description": ""
         },
         {
           "name": "summon_location",
-          "type": "any",
+          "type": "int",
           "optional": false,
           "description": ""
         },
         {
           "name": "grave_filter",
-          "type": "any",
+          "type": "function|nil",
           "optional": false,
           "description": ""
         },
         {
           "name": "mat_filter",
-          "type": "any",
+          "type": "function|nil",
           "optional": false,
           "description": ""
         },
         {
           "name": "extra_operation",
-          "type": "any",
+          "type": "function|nil",
           "optional": false,
           "description": ""
         }
       ],
       "returns": [
         {
-          "type": "nil",
-          "description": ""
+          "type": "function",
+          "description": "Operation function for a configurable Ritual Summon effect."
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "返回可配置仪式召唤效果的操作函数；选择仪式怪兽和素材，解放或除外素材，特殊召唤该怪兽，并执行额外回调。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Returns the operation function for configurable Ritual Summon effects. It selects the Ritual Monster and materials, releases or banishes the materials, Special Summons the monster, and runs extra callbacks."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/procedure.lua",
@@ -52449,7 +52616,10 @@
       "aliases": [
         "aux.RitualUltimateOperation"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -52460,58 +52630,60 @@
       "params": [
         {
           "name": "filter",
-          "type": "function",
+          "type": "function|nil",
           "optional": false,
           "description": ""
         },
         {
           "name": "level_function",
-          "type": "any",
+          "type": "function",
           "optional": false,
           "description": ""
         },
         {
           "name": "greater_or_equal",
-          "type": "any",
+          "type": "string",
           "optional": false,
           "description": ""
         },
         {
           "name": "summon_location",
-          "type": "any",
+          "type": "int",
           "optional": false,
           "description": ""
         },
         {
           "name": "grave_filter",
-          "type": "any",
+          "type": "function|nil",
           "optional": false,
           "description": ""
         },
         {
           "name": "mat_filter",
-          "type": "any",
+          "type": "function|nil",
           "optional": false,
           "description": ""
         },
         {
           "name": "extra_target",
-          "type": "any",
+          "type": "function|nil",
           "optional": false,
           "description": ""
         }
       ],
       "returns": [
         {
-          "type": "nil",
-          "description": ""
+          "type": "function",
+          "description": "Target function for a configurable Ritual Summon effect."
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "返回可配置仪式召唤效果的目标函数；检查仪式怪兽和素材池，并登记特殊召唤、除外及额外目标信息。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Returns the target function for configurable Ritual Summon effects. It checks Ritual Monsters and material pools, then registers Special Summon, banish, and extra target information."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/procedure.lua",
@@ -52522,7 +52694,10 @@
       "aliases": [
         "aux.RitualUltimateTarget"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -52533,40 +52708,42 @@
       "params": [
         {
           "name": "f1",
-          "type": "any",
+          "type": "function|nil",
           "optional": false,
           "description": ""
         },
         {
           "name": "f2",
-          "type": "any",
+          "type": "function|nil",
           "optional": false,
           "description": ""
         },
         {
           "name": "minct",
-          "type": "any",
+          "type": "int",
           "optional": false,
           "description": ""
         },
         {
           "name": "maxct",
-          "type": "any",
+          "type": "int",
           "optional": false,
           "description": ""
         }
       ],
       "returns": [
         {
-          "type": "nil",
-          "description": ""
+          "type": "function",
+          "description": "Condition function for a basic Synchro Summon procedure."
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "返回基础同调召唤手续的条件函数，并支持可选的固定调整素材处理。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Returns the condition function for basic Synchro Summon procedures, including optional fixed tuner material handling."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/procedure.lua",
@@ -52577,7 +52754,10 @@
       "aliases": [
         "aux.SynCondition"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },

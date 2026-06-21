@@ -3,16 +3,20 @@
 ## Signature
 
 ```lua
-Auxiliary.FusionEffectUltimateTarget(any params) -> void
+Auxiliary.FusionEffectUltimateTarget(table params) -> function
 ```
 
 ## Description
 
-TODO document.
+Returns the target function for configurable Fusion Summon effects. It checks available Fusion Monsters and material pools, handles Chain Material fallback, and registers operation information.
 
 ## Parameters
 
-- `params` `any`
+- `params` `table`
+
+## Returns
+
+- `function` - Target function for a configurable Fusion Summon effect.
 
 ## Source
 
