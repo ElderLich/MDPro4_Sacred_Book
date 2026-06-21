@@ -3,12 +3,12 @@
 ## Signature
 
 ```lua
-Auxiliary.MimighoulFlipCondition(Effect e, int tp, Group eg, int ep, any ev, Effect re, any r, int rp) -> void
+Auxiliary.MimighoulFlipCondition(Effect e, int tp, Group eg, int ep, any ev, Effect re, any r, int rp) -> bool
 ```
 
 ## Description
 
-TODO document.
+Returns true during either Main Phase.
 
 ## Parameters
 
@@ -20,6 +20,10 @@ TODO document.
 - `re` `Effect`
 - `r` `any`
 - `rp` `int`
+
+## Returns
+
+- `bool` - true during either Main Phase.
 
 ## Source
 

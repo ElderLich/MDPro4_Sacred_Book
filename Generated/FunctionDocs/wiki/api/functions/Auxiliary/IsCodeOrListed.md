@@ -3,17 +3,21 @@
 ## Signature
 
 ```lua
-Auxiliary.IsCodeOrListed(Card c, int code) -> void
+Auxiliary.IsCodeOrListed(Card c, int code) -> bool
 ```
 
 ## Description
 
-TODO document.
+Returns true if c's current code matches code or code is registered in c's listed-code table.
 
 ## Parameters
 
 - `c` `Card`
 - `code` `int`
+
+## Returns
+
+- `bool` - true if c has or lists code.
 
 ## Source
 

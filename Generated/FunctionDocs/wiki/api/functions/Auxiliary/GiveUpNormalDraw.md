@@ -8,7 +8,7 @@ Auxiliary.GiveUpNormalDraw(Effect e, int tp, [int property]) -> void
 
 ## Description
 
-TODO document.
+Makes tp give up the normal draw for the current Draw Phase by setting EFFECT_DRAW_COUNT to 0 and registering FLAG_ID_NO_NORMAL_DRAW.
 
 ## Parameters
 

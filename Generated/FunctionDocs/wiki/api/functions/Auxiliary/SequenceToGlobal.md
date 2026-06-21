@@ -3,7 +3,7 @@
 ## Signature
 
 ```lua
-Auxiliary.SequenceToGlobal(any p, int loc, int seq) -> void
+Auxiliary.SequenceToGlobal(int p, int loc, int seq) -> void
 ```
 
 ## Description
@@ -12,7 +12,7 @@ TODO document.
 
 ## Parameters
 
-- `p` `any`
+- `p` `int`
 - `loc` `int`
 - `seq` `int`
 

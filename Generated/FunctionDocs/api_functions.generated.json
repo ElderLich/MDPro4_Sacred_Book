@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-06-21T11:07:38+00:00",
+    "generated_at": "2026-06-21T11:24:21+00:00",
     "workspace": "D:\\Programs\\GitHub\\MDPro3_Sacred_Book",
     "dataeditorx_data": "D:\\Programs\\GitHub\\DataEditorX\\DataEditorX\\data",
     "mdpro3_locales": "D:\\Programs\\GitHub\\MDPro3_Data\\Data\\locales",
@@ -37684,7 +37684,7 @@
       "params": [
         {
           "name": "p",
-          "type": "any",
+          "type": "int",
           "optional": false,
           "description": ""
         },
@@ -37703,15 +37703,17 @@
       ],
       "returns": [
         {
-          "type": "nil",
-          "description": ""
+          "type": "int",
+          "description": "The global column index, or NULL_VALUE for invalid input."
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "从玩家0视角返回location和sequence对应的列编号。若p为玩家1，则会把本地列镜像；无效位置或序号返回NULL_VALUE。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Returns the column index for location and sequence from player 0's viewpoint. For player 1, the local column is mirrored. Invalid locations/sequences return NULL_VALUE."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -37722,7 +37724,10 @@
       "aliases": [
         "aux.GetGlobalColumn"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -37733,7 +37738,7 @@
       "params": [
         {
           "name": "p",
-          "type": "any",
+          "type": "int",
           "optional": false,
           "description": ""
         },
@@ -37752,15 +37757,17 @@
       ],
       "returns": [
         {
-          "type": "nil",
-          "description": ""
+          "type": "int",
+          "description": "The global row index, or NULL_VALUE for invalid input."
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "从玩家0视角返回location和sequence对应的行编号。若p为玩家1，则会把本地行镜像；无效位置或序号返回NULL_VALUE。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Returns the row index for location and sequence from player 0's viewpoint. For player 1, the local row is mirrored. Invalid locations/sequences return NULL_VALUE."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -37771,7 +37778,10 @@
       "aliases": [
         "aux.GetGlobalRow"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -37795,15 +37805,17 @@
       ],
       "returns": [
         {
-          "type": "nil",
-          "description": ""
+          "type": "int",
+          "description": "The local column index, or NULL_VALUE for invalid input."
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "返回魔法与陷阱区域或怪兽区域序号对应的本地列编号。额外怪兽区域序号5和6分别对应列1和列3；无效输入返回NULL_VALUE。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Returns the local column index for a Spell & Trap Zone or Monster Zone sequence. Extra Monster Zone sequences 5 and 6 map to columns 1 and 3; invalid inputs return NULL_VALUE."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -37814,7 +37826,10 @@
       "aliases": [
         "aux.GetLocalColumn"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -37838,15 +37853,17 @@
       ],
       "returns": [
         {
-          "type": "nil",
-          "description": ""
+          "type": "int",
+          "description": "The local row index, or NULL_VALUE for invalid input."
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "返回魔法与陷阱区域或怪兽区域序号对应的本地行编号。主要怪兽区域为行1，额外怪兽区域为行2；无效输入返回NULL_VALUE。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Returns the local row index for a Spell & Trap Zone or Monster Zone sequence. Main Monster Zones are row 1, Extra Monster Zones are row 2, and invalid inputs return NULL_VALUE."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -37857,7 +37874,10 @@
       "aliases": [
         "aux.GetLocalRow"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -37875,15 +37895,21 @@
       ],
       "returns": [
         {
-          "type": "nil",
-          "description": ""
+          "type": "int",
+          "description": "Minimum material count."
+        },
+        {
+          "type": "int",
+          "description": "Maximum material count."
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "返回c登记的素材数量下限和上限。若c没有material_count表，则返回0,0。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Returns c's stored minimum and maximum material counts. If c has no material_count table, returns 0,0."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -37894,7 +37920,10 @@
       "aliases": [
         "aux.GetMaterialListCount"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -37912,15 +37941,17 @@
       ],
       "returns": [
         {
-          "type": "nil",
-          "description": ""
+          "type": "int",
+          "description": "Zone mask for zones linked by at least two Link Monsters."
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "返回tp的怪兽区域中，被任意场上至少2只表侧连接怪兽连接到的区域掩码。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Returns the zone mask of tp's Monster Zones that are linked by at least two face-up Link Monsters on either field."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -37931,7 +37962,10 @@
       "aliases": [
         "aux.GetMultiLinkedZone"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -37986,15 +38020,17 @@
       ],
       "returns": [
         {
-          "type": "nil",
-          "description": ""
+          "type": "int|nil",
+          "description": "Registered Xyz Number value, if any."
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "返回v对应的已登记「No.」数值；v可以是Card或数字卡名编号。未登记时返回nil。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Returns the stored Xyz Number value for v, where v can be a Card or a numeric card code. Returns nil when no value is registered."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -38005,7 +38041,10 @@
       "aliases": [
         "aux.GetXyzNumber"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -38041,15 +38080,17 @@
       ],
       "returns": [
         {
-          "type": "nil",
-          "description": ""
+          "type": "bool",
+          "description": "true if the two cards satisfy the filter in either order."
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "检查2张卡的Group是否能按任意顺序满足同一个筛选：一张满足f(c,a1)，另一张满足f(c,a2)。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Checks a 2-card group against one filter in either order: one card must satisfy f(c,a1) and the other f(c,a2)."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -38060,7 +38101,10 @@
       "aliases": [
         "aux.gfcheck"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -38077,7 +38121,7 @@
         },
         {
           "name": "f1",
-          "type": "any",
+          "type": "function",
           "optional": false,
           "description": ""
         },
@@ -38089,7 +38133,7 @@
         },
         {
           "name": "f2",
-          "type": "any",
+          "type": "function",
           "optional": false,
           "description": ""
         },
@@ -38102,15 +38146,17 @@
       ],
       "returns": [
         {
-          "type": "nil",
-          "description": ""
+          "type": "bool",
+          "description": "true if the two cards satisfy both filters in either order."
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "检查2张卡的Group是否能按任意顺序满足两个筛选：一张满足f1(c,a1)，另一张满足f2(c,a2)。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Checks a 2-card group against two filters in either order: one card must satisfy f1(c,a1) and the other f2(c,a2)."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -38121,7 +38167,10 @@
       "aliases": [
         "aux.gffcheck"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -38155,11 +38204,13 @@
           "description": ""
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "让tp放弃当前抽卡阶段的通常抽卡：登记EFFECT_DRAW_COUNT为0，并登记FLAG_ID_NO_NORMAL_DRAW。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Makes tp give up the normal draw for the current Draw Phase by setting EFFECT_DRAW_COUNT to 0 and registering FLAG_ID_NO_NORMAL_DRAW."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -38170,7 +38221,9 @@
       "aliases": [
         "aux.GiveUpNormalDraw"
       ],
-      "tags": [],
+      "tags": [
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -38477,15 +38530,17 @@
       ],
       "returns": [
         {
-          "type": "nil",
-          "description": ""
+          "type": "bool",
+          "description": "true if c has or lists code."
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "判断c的当前卡名是否为code，或code是否已登记在c的列名编号表中。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Returns true if c's current code matches code or code is registered in c's listed-code table."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -38496,7 +38551,10 @@
       "aliases": [
         "aux.IsCodeOrListed"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -38513,22 +38571,24 @@
         },
         {
           "name": "counter",
-          "type": "any",
+          "type": "int",
           "optional": false,
           "description": ""
         }
       ],
       "returns": [
         {
-          "type": "nil",
-          "description": ""
+          "type": "bool",
+          "description": "true if counter is registered on c."
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "判断counter是否已登记在c.counter_add_list中。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Returns true if counter is registered in c.counter_add_list."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -38539,7 +38599,10 @@
       "aliases": [
         "aux.IsCounterAdded"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -38563,15 +38626,17 @@
       ],
       "returns": [
         {
-          "type": "nil",
-          "description": ""
+          "type": "bool",
+          "description": "true if g contains c."
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "判断g是否包含c。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Returns true if g contains c."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -38582,7 +38647,10 @@
       "aliases": [
         "aux.IsInGroup"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -38692,15 +38760,17 @@
       ],
       "returns": [
         {
-          "type": "nil",
-          "description": ""
+          "type": "bool",
+          "description": "true if c's material type mask contains type."
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "判断c登记的素材种类掩码是否包含type。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Returns true if c's stored material type mask contains type."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -38711,7 +38781,10 @@
       "aliases": [
         "aux.IsMaterialListType"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -38733,11 +38806,13 @@
           "description": ""
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "判断tp是否可以进行通常抽卡：抽卡数量大于0，卡组不为空，且没有FLAG_ID_NO_NORMAL_DRAW。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Checks whether tp can perform a normal draw: draw count is positive, the Deck is not empty, and FLAG_ID_NO_NORMAL_DRAW is not set."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -38748,7 +38823,9 @@
       "aliases": [
         "aux.IsPlayerCanNormalDraw"
       ],
-      "tags": [],
+      "tags": [
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -38817,15 +38894,17 @@
       ],
       "returns": [
         {
-          "type": "nil",
-          "description": ""
+          "type": "bool",
+          "description": "true if c lists a matching monster set code."
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "判断setcode是否匹配c登记的怪兽系列编号；比较规则与系列判断辅助函数一致。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Returns true if setcode matches one of the monster set codes registered for c, using the same set-code comparison rules as set membership helpers."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -38836,7 +38915,10 @@
       "aliases": [
         "aux.IsSetNameMonsterListed"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -38860,15 +38942,17 @@
       ],
       "returns": [
         {
-          "type": "nil",
-          "description": ""
+          "type": "bool",
+          "description": "true if c's text type mask contains type."
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "判断c文本登记的种类掩码是否包含type。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Returns true if c's text-registered type mask contains type."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -38879,7 +38963,10 @@
       "aliases": [
         "aux.IsTypeInText"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -38950,11 +39037,13 @@
           "description": ""
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "「白银之迷宫城」共通的追加破坏处理；非从手牌发动的「拉比林斯迷宫欢迎」通常陷阱处理后，可破坏场上1张卡，并使用场地效果的次数限制。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Shared extra destroy operation for the Labrynth field effect. After a non-hand-activated Welcome Labrynth Normal Trap resolves, it can destroy one card on the field and consumes the field effect's count limit."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -38965,7 +39054,9 @@
       "aliases": [
         "aux.LabrynthDestroyOp"
       ],
-      "tags": [],
+      "tags": [
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -39029,11 +39120,13 @@
           "description": ""
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "Auxiliary.CreateMaterialReasonCardRelation使用的EVENT_BE_MATERIAL回调；让召唤出的怪兽与保存的效果对象建立效果关联。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "EVENT_BE_MATERIAL callback used by Auxiliary.CreateMaterialReasonCardRelation. It creates an effect relation between the Summoned monster and the stored effect object."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -39044,7 +39137,9 @@
       "aliases": [
         "aux.MaterialReasonCardReg"
       ],
-      "tags": [],
+      "tags": [
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -39108,11 +39203,13 @@
           "description": ""
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "Auxiliary.RegisterMergedDelayedEvent使用的内部回调；收集事件卡，若当前不在连锁中，则立刻触发EVENT_CUSTOM加保存编号的事件。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Internal callback for Auxiliary.RegisterMergedDelayedEvent. It collects event cards and, if not inside a Chain, raises EVENT_CUSTOM plus the stored code immediately."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -39123,7 +39220,9 @@
       "aliases": [
         "aux.MergedDelayEventCheck1"
       ],
-      "tags": [],
+      "tags": [
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -39187,11 +39286,13 @@
           "description": ""
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "单卡合并延迟事件使用的内部回调；收集事件卡，若持有者自身移动则清空，并在可立即处理时触发保存的自定义事件。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Internal callback for single-card merged delayed events. It collects event cards, clears them if the owner card moved, and raises the stored custom event immediately when possible."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -39202,7 +39303,9 @@
       "aliases": [
         "aux.MergedDelayEventCheck1_ToSingleCard"
       ],
-      "tags": [],
+      "tags": [
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -39266,11 +39369,13 @@
           "description": ""
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "Auxiliary.RegisterMergedDelayedEvent使用的内部回调；在连锁结束时，对已收集的卡只触发1次合并后的自定义事件，然后清空保存的Group。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Internal callback for Auxiliary.RegisterMergedDelayedEvent. At Chain End, it raises one merged custom event for all collected cards, then clears the stored group."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -39281,7 +39386,9 @@
       "aliases": [
         "aux.MergedDelayEventCheck2"
       ],
-      "tags": [],
+      "tags": [
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -39345,11 +39452,13 @@
           "description": ""
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "单卡合并延迟事件使用的连锁结束内部回调；清理因公开移动而失效的记录，对收集到的卡触发保存的自定义事件，然后清空Group。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Internal Chain End callback for single-card merged delayed events. It clears stale public-move entries, raises the stored custom event for collected cards, then clears the group."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -39360,7 +39469,9 @@
       "aliases": [
         "aux.MergedDelayEventCheck2_ToSingleCard"
       ],
-      "tags": [],
+      "tags": [
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -39420,15 +39531,17 @@
       ],
       "returns": [
         {
-          "type": "nil",
-          "description": ""
+          "type": "bool",
+          "description": "true during either Main Phase."
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "当前处于任一主要阶段时返回true。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Returns true during either Main Phase."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -39439,7 +39552,10 @@
       "aliases": [
         "aux.MimighoulFlipCondition"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -39461,11 +39577,13 @@
           "description": ""
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "返回谓词函数，用于判断Effect是否包含flag属性，且效果范围不在灵摆区域。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Returns a predicate that checks whether an Effect has property flag and is not ranged to the Pendulum Zone."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -39476,7 +39594,9 @@
       "aliases": [
         "aux.MonsterEffectPropertyFilter"
       ],
-      "tags": [],
+      "tags": [
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -39500,15 +39620,17 @@
       ],
       "returns": [
         {
-          "type": "nil",
-          "description": ""
+          "type": "bool",
+          "description": "true if tp has an open Monster Zone after releasing g."
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "判断tp在解放g之后是否会有可用怪兽区域。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Returns true if tp would have an open Monster Zone after releasing g."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -39519,7 +39641,10 @@
       "aliases": [
         "aux.mzctcheck"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -40550,7 +40675,7 @@
       "params": [
         {
           "name": "p",
-          "type": "any",
+          "type": "int",
           "optional": false,
           "description": ""
         },
@@ -40599,7 +40724,7 @@
       "params": [
         {
           "name": "p",
-          "type": "any",
+          "type": "int",
           "optional": false,
           "description": ""
         },
@@ -41362,7 +41487,7 @@
       "params": [
         {
           "name": "p",
-          "type": "any",
+          "type": "int",
           "optional": false,
           "description": ""
         },

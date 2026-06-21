@@ -3,17 +3,21 @@
 ## Signature
 
 ```lua
-Auxiliary.IsInGroup(Card c, Group g) -> void
+Auxiliary.IsInGroup(Card c, Group g) -> bool
 ```
 
 ## Description
 
-TODO document.
+Returns true if g contains c.
 
 ## Parameters
 
 - `c` `Card`
 - `g` `Group`
+
+## Returns
+
+- `bool` - true if g contains c.
 
 ## Source
 

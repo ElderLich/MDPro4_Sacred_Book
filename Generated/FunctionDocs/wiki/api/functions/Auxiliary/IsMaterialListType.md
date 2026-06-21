@@ -3,17 +3,21 @@
 ## Signature
 
 ```lua
-Auxiliary.IsMaterialListType(Card c, int type) -> void
+Auxiliary.IsMaterialListType(Card c, int type) -> bool
 ```
 
 ## Description
 
-TODO document.
+Returns true if c's stored material type mask contains type.
 
 ## Parameters
 
 - `c` `Card`
 - `type` `int`
+
+## Returns
+
+- `bool` - true if c's material type mask contains type.
 
 ## Source
 

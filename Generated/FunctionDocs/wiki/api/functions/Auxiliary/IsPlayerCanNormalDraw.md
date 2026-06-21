@@ -8,7 +8,7 @@ Auxiliary.IsPlayerCanNormalDraw(int tp) -> bool
 
 ## Description
 
-TODO document.
+Checks whether tp can perform a normal draw: draw count is positive, the Deck is not empty, and FLAG_ID_NO_NORMAL_DRAW is not set.
 
 ## Parameters
 

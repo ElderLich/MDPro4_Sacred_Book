@@ -3,17 +3,21 @@
 ## Signature
 
 ```lua
-Auxiliary.IsCounterAdded(Card c, any counter) -> void
+Auxiliary.IsCounterAdded(Card c, int counter) -> bool
 ```
 
 ## Description
 
-TODO document.
+Returns true if counter is registered in c.counter_add_list.
 
 ## Parameters
 
 - `c` `Card`
-- `counter` `any`
+- `counter` `int`
+
+## Returns
+
+- `bool` - true if counter is registered on c.
 
 ## Source
 

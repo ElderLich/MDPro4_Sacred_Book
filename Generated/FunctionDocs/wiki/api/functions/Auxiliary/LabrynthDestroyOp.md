@@ -8,7 +8,7 @@ Auxiliary.LabrynthDestroyOp(Effect e, int tp, any res) -> void
 
 ## Description
 
-TODO document.
+Shared extra destroy operation for the Labrynth field effect. After a non-hand-activated Welcome Labrynth Normal Trap resolves, it can destroy one card on the field and consumes the field effect's count limit.
 
 ## Parameters
 

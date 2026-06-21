@@ -3,12 +3,12 @@
 ## Signature
 
 ```lua
-Auxiliary.gfcheck(Group g, function f, any a1, any a2) -> void
+Auxiliary.gfcheck(Group g, function f, any a1, any a2) -> bool
 ```
 
 ## Description
 
-TODO document.
+Checks a 2-card group against one filter in either order: one card must satisfy f(c,a1) and the other f(c,a2).
 
 ## Parameters
 
@@ -16,6 +16,10 @@ TODO document.
 - `f` `function`
 - `a1` `any`
 - `a2` `any`
+
+## Returns
+
+- `bool` - true if the two cards satisfy the filter in either order.
 
 ## Source
 

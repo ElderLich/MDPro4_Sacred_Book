@@ -8,7 +8,7 @@ Auxiliary.MergedDelayEventCheck2(Effect e, int tp, Group eg, int ep, any ev, Eff
 
 ## Description
 
-TODO document.
+Internal callback for Auxiliary.RegisterMergedDelayedEvent. At Chain End, it raises one merged custom event for all collected cards, then clears the stored group.
 
 ## Parameters
 

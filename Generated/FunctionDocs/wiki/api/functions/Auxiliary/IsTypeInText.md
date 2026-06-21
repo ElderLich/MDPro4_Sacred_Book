@@ -3,17 +3,21 @@
 ## Signature
 
 ```lua
-Auxiliary.IsTypeInText(Card c, int type) -> void
+Auxiliary.IsTypeInText(Card c, int type) -> bool
 ```
 
 ## Description
 
-TODO document.
+Returns true if c's text-registered type mask contains type.
 
 ## Parameters
 
 - `c` `Card`
 - `type` `int`
+
+## Returns
+
+- `bool` - true if c's text type mask contains type.
 
 ## Source
 

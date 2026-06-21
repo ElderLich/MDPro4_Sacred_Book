@@ -8,7 +8,7 @@ Auxiliary.MergedDelayEventCheck2_ToSingleCard(Effect e, int tp, Group eg, int ep
 
 ## Description
 
-TODO document.
+Internal Chain End callback for single-card merged delayed events. It clears stale public-move entries, raises the stored custom event for collected cards, then clears the group.
 
 ## Parameters
 

@@ -3,17 +3,21 @@
 ## Signature
 
 ```lua
-Auxiliary.IsSetNameMonsterListed(Card c, int setcode) -> void
+Auxiliary.IsSetNameMonsterListed(Card c, int setcode) -> bool
 ```
 
 ## Description
 
-TODO document.
+Returns true if setcode matches one of the monster set codes registered for c, using the same set-code comparison rules as set membership helpers.
 
 ## Parameters
 
 - `c` `Card`
 - `setcode` `int`
+
+## Returns
+
+- `bool` - true if c lists a matching monster set code.
 
 ## Source
 

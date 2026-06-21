@@ -8,7 +8,7 @@ Auxiliary.MergedDelayEventCheck1_ToSingleCard(Effect e, int tp, Group eg, int ep
 
 ## Description
 
-TODO document.
+Internal callback for single-card merged delayed events. It collects event cards, clears them if the owner card moved, and raises the stored custom event immediately when possible.
 
 ## Parameters
 

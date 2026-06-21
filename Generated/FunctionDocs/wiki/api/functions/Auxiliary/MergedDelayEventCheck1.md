@@ -8,7 +8,7 @@ Auxiliary.MergedDelayEventCheck1(Effect e, int tp, Group eg, int ep, any ev, Eff
 
 ## Description
 
-TODO document.
+Internal callback for Auxiliary.RegisterMergedDelayedEvent. It collects event cards and, if not inside a Chain, raises EVENT_CUSTOM plus the stored code immediately.
 
 ## Parameters
 
