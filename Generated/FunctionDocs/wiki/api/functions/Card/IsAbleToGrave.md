@@ -8,7 +8,7 @@ Card.IsAbleToGrave(Card c) -> bool
 
 ## Description
 
-Check whether c can be sent to the cemetery
+Checks whether c can be sent to the Graveyard.
 
 ## Parameters
 

@@ -8,7 +8,7 @@ Auxiliary.CheckGroupRecursive(Card c, Group sg, Group g, function f, any min, an
 
 ## Description
 
-TODO document.
+Internal recursive helper for Group.CheckSubGroup. It tries adding c to sg, respects Auxiliary.GCheckAdditional, and searches for a subgroup between min and max that satisfies f.
 
 ## Parameters
 

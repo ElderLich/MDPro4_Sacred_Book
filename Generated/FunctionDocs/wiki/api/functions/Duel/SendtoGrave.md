@@ -8,7 +8,7 @@ Duel.SendtoGrave(Card|Group targets, int reason, [int reason_player]) -> int
 
 ## Description
 
-The reason for the targets to the cemetery, the return value is the actual number of operations
+Sends targets to the Graveyard for reason, optionally treating reason_player as the player that moved them, and returns the number actually moved.
 
 ## Parameters
 

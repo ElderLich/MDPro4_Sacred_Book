@@ -8,9 +8,8 @@ Duel.MSet(int player, Card c, bool ignore_count, [Effect|nil e], [int min], [int
 
 ## Description
 
-Let the player to the effect of c is usually called Set, at least use min sacrifice
-If e = nil, then in accordance with the general rules of the general call usually call
-If ignore_count = true, the usual number of calls per turn limit is ignored
+Makes player Set c by a Normal Summon procedure, optionally using effect e and requiring at least min Tributes.
+If e is nil, regular Normal Summon/Set rules are used. If ignore_count is true, the once-per-turn Normal Summon limit is ignored.
 
 ## Parameters
 

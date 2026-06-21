@@ -8,7 +8,7 @@ Auxiliary.ChangeBattleDamage(int player, Effect value) -> void
 
 ## Description
 
-TODO document.
+Returns a value function for EFFECT_CHANGE_BATTLE_DAMAGE. player=0 changes damage taken by the effect owner, player=1 changes damage taken by the opponent; otherwise it returns -1 to keep the damage unchanged.
 
 ## Parameters
 

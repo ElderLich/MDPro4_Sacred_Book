@@ -8,7 +8,7 @@ Duel.IsPlayerCanDiscardDeck(int player, int count) -> bool
 
 ## Description
 
-Check player player can put the card group top count cards sent to the cemetery
+Checks whether player can send count cards from the top of the Deck to the Graveyard.
 
 ## Parameters
 

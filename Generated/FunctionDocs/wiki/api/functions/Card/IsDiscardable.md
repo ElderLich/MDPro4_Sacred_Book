@@ -8,9 +8,8 @@ Card.IsDiscardable(Card c, [int reason]) -> bool
 
 ## Description
 
-Check whether c can be discarded
-Note: This function is only used to detect,
-REASON_DISCARD as a reason to hand a card to the tomb and will not lead to that card can not be discarded
+Checks whether c can be discarded for reason.
+This is only a check: sending a card from the hand to the Graveyard with REASON_DISCARD does not by itself make that card unable to be discarded.
 
 ## Parameters
 

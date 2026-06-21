@@ -8,8 +8,7 @@ Effect.GetActiveType(Effect e) -> int
 
 ## Description
 
-Returns the effect type of e (monster, magic, trap)
-And launch the effect of the type of card is not necessarily the same, such as the spirit of pendulum effect as a magic card effect
+Returns the active effect type, such as monster, Spell, or Trap. This can differ from the type of the card that activated the effect, such as Pendulum effects being treated as Spell effects.
 
 ## Parameters
 

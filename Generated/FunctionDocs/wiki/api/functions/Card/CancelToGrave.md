@@ -8,10 +8,9 @@ Card.CancelToGrave(Card c, [bool cancel]) -> void
 
 ## Description
 
-Cancel to send to determine the state tomb, cancel = false to reset the tomb to determine the state
-Note: to send the tomb to determine the state refers to the field to start without leaving field magic and traps, the state of these cards
-Cards sent to the tomb determine the state can not return cards and cards, and sent to the cemetery at the end of the chain
-The purpose of this function is to cancel this state to stay in the field, for the light of the sword and seal the Scarlet Scarlet card
+Cancels the confirmed-to-Graveyard state for c. If cancel is false, sets that state again.
+This state is used for non-continuous Spell/Trap Cards activated on the field before they leave the field; while set, they cannot return to the hand or Deck and are sent to the Graveyard when the Chain ends.
+Use this helper to keep such cards on the field, as with Swords of Revealing Light or Scrap-Iron Scarecrow.
 
 ## Parameters
 

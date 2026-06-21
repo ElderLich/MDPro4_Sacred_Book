@@ -8,7 +8,7 @@ Auxiliary.CheckGroupRecursiveEach(Card c, Group sg, Group g, function f, any che
 
 ## Description
 
-TODO document.
+Internal recursive helper for Group.CheckSubGroupEach and Group.SelectSubGroupEach. Each selected card must satisfy the filter at the matching position in checks before the final group is tested by f.
 
 ## Parameters
 

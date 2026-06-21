@@ -8,7 +8,7 @@ Card.IsCanBeRitualMaterial(Card c, [Card|nil sc]) -> bool
 
 ## Description
 
-Check whether c can serve as ritual monsters sc sacrifice
+Checks whether c can be used as Ritual Material for sc; pass nil when no Ritual Monster is being checked.
 
 ## Parameters
 

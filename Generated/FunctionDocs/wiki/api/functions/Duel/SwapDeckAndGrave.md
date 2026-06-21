@@ -8,7 +8,7 @@ Duel.SwapDeckAndGrave(int player) -> void
 
 ## Description
 
-This world and the underworld reversal dedicated. The players player card group and the cemetery exchange
+For Exchange of the Spirit-style effects, swaps player's Deck and Graveyard.
 
 ## Parameters
 

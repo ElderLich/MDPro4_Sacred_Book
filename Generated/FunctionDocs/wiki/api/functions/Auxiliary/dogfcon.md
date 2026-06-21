@@ -8,7 +8,7 @@ Auxiliary.dogfcon(Effect e, int tp, Group eg, int ep, any ev, Effect re, any r, 
 
 ## Description
 
-TODO document.
+Condition for EVENT_TO_GRAVE triggers: true when the handler was previously on the field under tp's control, was destroyed, and the opponent was the reason player.
 
 ## Parameters
 

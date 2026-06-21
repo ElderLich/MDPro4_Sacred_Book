@@ -8,7 +8,7 @@ Duel.ReleaseRitualMaterial(Group g) -> void
 
 ## Description
 
-Liberation ceremony with the material g, if the ceremony is the cemetery and other magic cards are excluded
+Tributes the Ritual Materials in g; materials such as Ritual Djinn monsters in the Graveyard are banished instead.
 
 ## Parameters
 

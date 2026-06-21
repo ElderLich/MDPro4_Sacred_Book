@@ -8,7 +8,7 @@ Duel.DiscardDeck(int player, int count, int reason) -> int
 
 ## Description
 
-To reason player player card group top count cards sent to the cemetery, the actual transfer of the number
+Sends count cards from the top of player's Deck to the Graveyard for reason, and returns the number actually moved.
 
 ## Parameters
 

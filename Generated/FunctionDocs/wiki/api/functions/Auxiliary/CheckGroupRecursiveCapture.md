@@ -8,7 +8,7 @@ Auxiliary.CheckGroupRecursiveCapture(Card c, Group sg, Group g, function f, any 
 
 ## Description
 
-TODO document.
+Internal recursive helper for Group.SelectSubGroup. It searches like Auxiliary.CheckGroupRecursive and stores one valid subgroup in Auxiliary.SubGroupCaptured.
 
 ## Parameters
 

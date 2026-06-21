@@ -8,8 +8,7 @@ Duel.GetRitualMaterial(int player) -> Group
 
 ## Description
 
-Returns the player's deck of cards available for ritual summoning material
-Including hands, the field can be the liberation of the ceremony and the cemetery and other magic people card
+Returns the cards player can use as Ritual Material, including cards in the hand/field that can be Tributed and cards such as Ritual Djinn monsters in the Graveyard.
 
 ## Parameters
 

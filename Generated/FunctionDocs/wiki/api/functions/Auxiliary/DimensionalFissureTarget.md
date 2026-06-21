@@ -8,7 +8,7 @@ Auxiliary.DimensionalFissureTarget(Effect e, Card c) -> void
 
 ## Description
 
-TODO document.
+Target filter for Dimensional Fissure-style replacement effects. It matches cards whose original type includes Monster, excluding Xyz Materials and cards currently treated as Spell/Trap Cards.
 
 ## Parameters
 

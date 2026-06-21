@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-06-21T10:42:10+00:00",
+    "generated_at": "2026-06-21T10:52:04+00:00",
     "workspace": "D:\\Programs\\GitHub\\MDPro3_Sacred_Book",
     "dataeditorx_data": "D:\\Programs\\GitHub\\DataEditorX\\DataEditorX\\data",
     "mdpro3_locales": "D:\\Programs\\GitHub\\MDPro3_Data\\Data\\locales",
@@ -309,12 +309,11 @@
         "此函数的作用是取消此状态使其留场，用于光之护封剑和废铁稻草人等卡"
       ],
       "description_en": [
-        "Cancel to send to determine the state tomb, cancel = false to reset the tomb to determine the state",
-        "Note: to send the tomb to determine the state refers to the field to start without leaving field magic and traps, the state of these cards",
-        "Cards sent to the tomb determine the state can not return cards and cards, and sent to the cemetery at the end of the chain",
-        "The purpose of this function is to cancel this state to stay in the field, for the light of the sword and seal the Scarlet Scarlet card"
+        "Cancels the confirmed-to-Graveyard state for c. If cancel is false, sets that state again.",
+        "This state is used for non-continuous Spell/Trap Cards activated on the field before they leave the field; while set, they cannot return to the hand or Deck and are sent to the Graveyard when the Chain ends.",
+        "Use this helper to keep such cards on the field, as with Swords of Revealing Light or Scrap-Iron Scarecrow."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
@@ -6608,9 +6607,9 @@
         "检查c是否可以送去墓地"
       ],
       "description_en": [
-        "Check whether c can be sent to the cemetery"
+        "Checks whether c can be sent to the Graveyard."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
@@ -6652,9 +6651,9 @@
         "检查c是否可以作为cost送去墓地"
       ],
       "description_en": [
-        "Check whether c can be sent to the cemetery as a cost"
+        "Checks whether c can be sent to the Graveyard as a cost."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
@@ -7730,9 +7729,9 @@
         "检查c是否可以作为[仪式怪兽sc的]仪式素材,没有指定sc的场合，必须填nil"
       ],
       "description_en": [
-        "Check whether c can serve as ritual monsters sc sacrifice"
+        "Checks whether c can be used as Ritual Material for sc; pass nil when no Ritual Monster is being checked."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
@@ -8811,11 +8810,10 @@
         "以REASON_DISCARD作为原因把一张手卡送墓并不会导致那张卡不能丢弃"
       ],
       "description_en": [
-        "Check whether c can be discarded",
-        "Note: This function is only used to detect,",
-        "REASON_DISCARD as a reason to hand a card to the tomb and will not lead to that card can not be discarded"
+        "Checks whether c can be discarded for reason.",
+        "This is only a check: sending a card from the hand to the Graveyard with REASON_DISCARD does not by itself make that card unable to be discarded."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
@@ -12086,10 +12084,10 @@
         "e~=nil则检查c是否可以以效果e进行通常召唤，min表示至少需要的祭品数（用于区分妥协召唤与上级召唤）,zone 表示必须要召唤到的区域"
       ],
       "description_en": [
-        "Check whether c is usually called (not including the normally called set), ignore_count = true does not check the number of calls limit",
-        "E ~ = nil check whether c can be the effect of e is usually called, min said at least the number of sacrifice (used to distinguish between compromise summons and superior call)"
+        "Checks whether c can be Normal Summoned, excluding Normal Summon/Set.",
+        "If e is not nil, checks whether c can be Normal Summoned by that effect. min is the minimum number of Tributes, and zone restricts the zone it must be Summoned to."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
@@ -17190,9 +17188,9 @@
         "以原因reason把玩家player的卡组最上端count张卡送去墓地，返回实际转移的数量"
       ],
       "description_en": [
-        "To reason player player card group top count cards sent to the cemetery, the actual transfer of the number"
+        "Sends count cards from the top of player's Deck to the Graveyard for reason, and returns the number actually moved."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libduel.cpp",
@@ -20050,10 +20048,9 @@
         "包含手上，场上可解放的以及墓地的仪式魔人等卡"
       ],
       "description_en": [
-        "Returns the player's deck of cards available for ritual summoning material",
-        "Including hands, the field can be the liberation of the ceremony and the cemetery and other magic people card"
+        "Returns the cards player can use as Ritual Material, including cards in the hand/field that can be Tributed and cards such as Ritual Djinn monsters in the Graveyard."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libduel.cpp",
@@ -21614,9 +21611,9 @@
         "检查玩家player是否可以把卡组顶端count张卡送去墓地"
       ],
       "description_en": [
-        "Check player player can put the card group top count cards sent to the cemetery"
+        "Checks whether player can send count cards from the top of the Deck to the Graveyard."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libduel.cpp",
@@ -21664,9 +21661,9 @@
         "检查玩家player是否能作为Cost把count张卡送去墓地。"
       ],
       "description_en": [
-        "Check the player player can put the card group top count cards sent to the cemetery as cost"
+        "Checks whether player can send count cards from the top of the Deck to the Graveyard as a cost."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libduel.cpp",
@@ -22028,9 +22025,9 @@
         "检查玩家是否能把c送去墓地"
       ],
       "description_en": [
-        "Check whether the player can send c to the cemetery"
+        "Checks whether player can send c to the Graveyard."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libduel.cpp",
@@ -22841,11 +22838,10 @@
         "如果ignore_count=true，则忽略每回合的通常召唤次数限制"
       ],
       "description_en": [
-        "Let the player to the effect of c is usually called Set, at least use min sacrifice",
-        "If e = nil, then in accordance with the general rules of the general call usually call",
-        "If ignore_count = true, the usual number of calls per turn limit is ignored"
+        "Makes player Set c by a Normal Summon procedure, optionally using effect e and requiring at least min Tributes.",
+        "If e is nil, regular Normal Summon/Set rules are used. If ignore_count is true, the once-per-turn Normal Summon limit is ignored."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libduel.cpp",
@@ -23715,9 +23711,9 @@
         "解放仪式用的素材g，如果是墓地的仪式魔人等卡则除外"
       ],
       "description_en": [
-        "Liberation ceremony with the material g, if the ceremony is the cemetery and other magic cards are excluded"
+        "Tributes the Ritual Materials in g; materials such as Ritual Djinn monsters in the Graveyard are banished instead."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libduel.cpp",
@@ -25491,9 +25487,9 @@
         "如果设置reason_player，则视为被玩家reason_player移动"
       ],
       "description_en": [
-        "The reason for the targets to the cemetery, the return value is the actual number of operations"
+        "Sends targets to the Graveyard for reason, optionally treating reason_player as the player that moved them, and returns the number actually moved."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libduel.cpp",
@@ -26947,11 +26943,10 @@
         "如果ignore_count=true，则忽略每回合的通常召唤次数限制"
       ],
       "description_en": [
-        "Let the player to the effect of e to c is usually called (not set), at least use min sacrifice",
-        "If e = nil, then in accordance with the general rules of the general call usually call",
-        "If ignore_count = true, the usual number of calls per turn limit is ignored"
+        "Makes player Normal Summon c, not Set it, optionally by effect e and requiring at least min Tributes.",
+        "If e is nil, regular Normal Summon rules are used. If ignore_count is true, the once-per-turn Normal Summon limit is ignored."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libduel.cpp",
@@ -27056,9 +27051,9 @@
         "现世与冥界的逆转专用。把玩家player的卡组和墓地交换"
       ],
       "description_en": [
-        "This world and the underworld reversal dedicated. The players player card group and the cemetery exchange"
+        "For Exchange of the Spirit-style effects, swaps player's Deck and Graveyard."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libduel.cpp",
@@ -27682,10 +27677,9 @@
         "与发动该效果的卡的类型不一定相同，比如灵摆效果视为魔法卡的效果"
       ],
       "description_en": [
-        "Returns the effect type of e (monster, magic, trap)",
-        "And launch the effect of the type of card is not necessarily the same, such as the spirit of pendulum effect as a magic card effect"
+        "Returns the active effect type, such as monster, Spell, or Trap. This can differ from the type of the card that activated the effect, such as Pendulum effects being treated as Spell effects."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libeffect.cpp",
@@ -33264,7 +33258,7 @@
         }
       ],
       "description_zh": [
-        "为c添加「北斗天熊」共通的手牌快速效果，在主要阶段特殊召唤自身。",
+        "为c添加「北极天熊」共通的手牌快速效果，在主要阶段特殊召唤自身。",
         "费用为解放手牌中1只7星以上怪兽，或从墓地除外可代替费用的对应卡。"
       ],
       "description_en": [
@@ -34633,11 +34627,13 @@
           "description": ""
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "返回用于EFFECT_CHANGE_BATTLE_DAMAGE的Value函数。player=0时改写效果持有者受到的战斗伤害，player=1时改写对方受到的战斗伤害；其他情况返回-1表示不改写。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Returns a value function for EFFECT_CHANGE_BATTLE_DAMAGE. player=0 changes damage taken by the effect owner, player=1 changes damage taken by the opponent; otherwise it returns -1 to keep the damage unchanged."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -34648,7 +34644,9 @@
       "aliases": [
         "aux.ChangeBattleDamage"
       ],
-      "tags": [],
+      "tags": [
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -34706,11 +34704,13 @@
           "description": ""
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "Group.CheckSubGroup使用的内部递归辅助函数；尝试把c加入sg，遵守Auxiliary.GCheckAdditional，并寻找数量在min到max之间且满足f的子组。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Internal recursive helper for Group.CheckSubGroup. It tries adding c to sg, respects Auxiliary.GCheckAdditional, and searches for a subgroup between min and max that satisfies f."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -34721,7 +34721,9 @@
       "aliases": [
         "aux.CheckGroupRecursive"
       ],
-      "tags": [],
+      "tags": [
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -34779,11 +34781,13 @@
           "description": ""
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "Group.SelectSubGroup使用的内部递归辅助函数；按Auxiliary.CheckGroupRecursive的方式搜索，并把找到的一个有效子组保存到Auxiliary.SubGroupCaptured。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Internal recursive helper for Group.SelectSubGroup. It searches like Auxiliary.CheckGroupRecursive and stores one valid subgroup in Auxiliary.SubGroupCaptured."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -34794,7 +34798,9 @@
       "aliases": [
         "aux.CheckGroupRecursiveCapture"
       ],
-      "tags": [],
+      "tags": [
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -34846,11 +34852,13 @@
           "description": ""
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "Group.CheckSubGroupEach和Group.SelectSubGroupEach使用的内部递归辅助函数；每张被选卡必须满足checks中对应位置的筛选函数，最终组再交给f检查。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Internal recursive helper for Group.CheckSubGroupEach and Group.SelectSubGroupEach. Each selected card must satisfy the filter at the matching position in checks before the final group is tested by f."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -34861,7 +34869,9 @@
       "aliases": [
         "aux.CheckGroupRecursiveEach"
       ],
-      "tags": [],
+      "tags": [
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -34983,11 +34993,13 @@
           "description": ""
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "为c登记EVENT_BE_MATERIAL持续效果；当c作为素材使用时，让召唤出的怪兽与te建立效果关联。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Registers an EVENT_BE_MATERIAL continuous effect on c so that, when c is used as material, the Summoned monster creates an effect relation with te."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -34998,7 +35010,9 @@
       "aliases": [
         "aux.CreateMaterialReasonCardRelation"
       ],
-      "tags": [],
+      "tags": [
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -35020,11 +35034,13 @@
           "description": ""
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "判断g中的每张卡是否具有不同属性。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Returns true if every card in g has a different Attribute."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -35035,7 +35051,9 @@
       "aliases": [
         "aux.dabcheck"
       ],
-      "tags": [],
+      "tags": [
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -35154,11 +35172,13 @@
           "description": ""
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "「次元裂缝」类替代效果使用的目标筛选；匹配原本种类包含怪兽的卡，但排除超量素材以及当前作为魔法/陷阱处理的卡。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Target filter for Dimensional Fissure-style replacement effects. It matches cards whose original type includes Monster, excluding Xyz Materials and cards currently treated as Spell/Trap Cards."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -35169,7 +35189,9 @@
       "aliases": [
         "aux.DimensionalFissureTarget"
       ],
-      "tags": [],
+      "tags": [
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -35191,11 +35213,13 @@
           "description": ""
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "判断g中的每张卡是否具有不同连接数值。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Returns true if every card in g has a different Link Rating."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -35206,7 +35230,9 @@
       "aliases": [
         "aux.dlkcheck"
       ],
-      "tags": [],
+      "tags": [
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -35228,11 +35254,13 @@
           "description": ""
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "判断g中的每张卡是否具有不同等级。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Returns true if every card in g has a different Level."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -35243,7 +35271,9 @@
       "aliases": [
         "aux.dlvcheck"
       ],
-      "tags": [],
+      "tags": [
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -35265,11 +35295,13 @@
           "description": ""
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "判断g中的每张卡是否具有不同卡名编号。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Returns true if every card in g has a different card code."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -35280,7 +35312,9 @@
       "aliases": [
         "aux.dncheck"
       ],
-      "tags": [],
+      "tags": [
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -35427,11 +35461,13 @@
           "description": ""
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "EVENT_TO_GRAVE触发条件：处理对象之前在tp场上，被破坏，且原因玩家是对方时返回true。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Condition for EVENT_TO_GRAVE triggers: true when the handler was previously on the field under tp's control, was destroyed, and the opponent was the reason player."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -35442,7 +35478,9 @@
       "aliases": [
         "aux.dogfcon"
       ],
-      "tags": [],
+      "tags": [
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -35505,11 +35543,13 @@
           "description": ""
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "判断g中的每张卡是否具有不同种族。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Returns true if every card in g has a different Race."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -35520,7 +35560,9 @@
       "aliases": [
         "aux.drccheck"
       ],
-      "tags": [],
+      "tags": [
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -35542,11 +35584,13 @@
           "description": ""
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "TODO document."
+      "description_zh": [
+        "判断g中的每张卡是否具有不同阶级。"
       ],
-      "english_status": "missing_documentation",
+      "description_en": [
+        "Returns true if every card in g has a different Rank."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -35557,7 +35601,9 @@
       "aliases": [
         "aux.drkcheck"
       ],
-      "tags": [],
+      "tags": [
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },

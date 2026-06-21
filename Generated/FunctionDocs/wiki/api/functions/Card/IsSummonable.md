@@ -8,8 +8,8 @@ Card.IsSummonable(Card c, bool ignore_count, [Effect|nil e], [int min], [int zon
 
 ## Description
 
-Check whether c is usually called (not including the normally called set), ignore_count = true does not check the number of calls limit
-E ~ = nil check whether c can be the effect of e is usually called, min said at least the number of sacrifice (used to distinguish between compromise summons and superior call)
+Checks whether c can be Normal Summoned, excluding Normal Summon/Set.
+If e is not nil, checks whether c can be Normal Summoned by that effect. min is the minimum number of Tributes, and zone restricts the zone it must be Summoned to.
 
 ## Parameters
 

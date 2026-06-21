@@ -8,7 +8,7 @@ Auxiliary.drkcheck(Group g) -> void
 
 ## Description
 
-TODO document.
+Returns true if every card in g has a different Rank.
 
 ## Parameters
 

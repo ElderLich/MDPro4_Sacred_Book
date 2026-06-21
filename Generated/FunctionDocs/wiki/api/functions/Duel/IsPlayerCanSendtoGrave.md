@@ -8,7 +8,7 @@ Duel.IsPlayerCanSendtoGrave(int player, [Card c]) -> bool
 
 ## Description
 
-Check whether the player can send c to the cemetery
+Checks whether player can send c to the Graveyard.
 
 ## Parameters
 
