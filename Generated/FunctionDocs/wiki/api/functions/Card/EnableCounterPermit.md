@@ -8,8 +8,8 @@ Card.EnableCounterPermit(Card c, int countertype, [int location], [function cond
 
 ## Description
 
-Allow c \[to be placed in the location location\] that can be placed "can be placed on the counter countertype
-The default value of location depends on the type of c, and the monster needs to specify whether it can place a pointer in a monster or pendulum area
+Registers a single-card counter permit effect allowing c to receive counters of countertype in the chosen range.
+If location is omitted, monsters default to LOCATION_MZONE and non-monsters default to LOCATION_SZONE + LOCATION_FZONE. An optional condition callback is stored on the permit effect.
 
 ## Parameters
 

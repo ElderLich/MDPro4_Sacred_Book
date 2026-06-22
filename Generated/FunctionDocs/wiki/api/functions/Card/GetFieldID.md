@@ -8,9 +8,8 @@ Card.GetFieldID(Card c) -> int
 
 ## Description
 
-Returns the time stamp of the transition to the current position
-This value is unique, the smaller the c is the earlier appear in that position
-Opening the card from the inside will also change this value
+Returns c's current field ID, the core timestamp assigned when c moved to its current place.
+Smaller values are older. This differs from Card.GetRealFieldID, which tracks the real field ID used by battle-state checks.
 
 ## Parameters
 

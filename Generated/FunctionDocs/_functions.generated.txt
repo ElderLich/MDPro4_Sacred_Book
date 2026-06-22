@@ -188,7 +188,8 @@ Returns:
 Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3522
 
 ●bool Card.CheckUniqueOnField(Card c, int check_player, [int check_location], [Card|nil icard])
-检查c在check_player场上的唯一性
+检查c在check_player场上是否满足当前唯一性规则，可以与已存在的卡共存。
+check_location默认LOCATION_ONFIELD，并会被限制为场上位置；测试即将移动的卡时，可用icard指定一张忽略的卡。
 Parameters:
   c: Card
   check_player: int
@@ -238,8 +239,8 @@ Parameters:
 Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3557
 
 ●void Card.EnableCounterPermit(Card c, int countertype, [int location], [function condition])
-允许c[在位置location，满足条件condition]放置那个需要“可以放置”才能放置的指示物countertype
-（location的默认值与c的种类有关，灵摆怪兽需要指定能否在怪兽区域或灵摆区域放置指示物）
+给c登记单卡的指示物许可效果，使其可以在指定范围放置countertype类型的指示物。
+省略location时，怪兽默认LOCATION_MZONE，非怪兽默认LOCATION_SZONE + LOCATION_FZONE。提供condition时会作为该许可效果的条件回调保存。
 Parameters:
   c: Card
   countertype: int
@@ -524,9 +525,8 @@ Returns:
 Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3519
 
 ●int Card.GetFieldID(Card c)
-返回c转移到当前位置的时间标识
-此数值唯一，越小表示c是越早出现在那个位置
-卡片从里侧翻开也会改变此数值
+返回c当前的field ID，即核心在c移动到当前位置时分配的时间标识。
+数值越小表示越早进入当前位置。此值不同于Card.GetRealFieldID，后者用于战斗状态等真实位置检查。
 Parameters:
   c: Card
 Returns:
@@ -550,14 +550,15 @@ Returns:
   int
 Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3553
 
-●int,...? Card.GetFlagEffectLabel(Card c, int code)
-返回c的种类为code的每个标识效果的Label，没有此效果则返回nil
+●int|nil,...? Card.GetFlagEffectLabel(Card c, int code)
+返回c上编号为code的每个标记效果的第1个Label值。
+没有匹配的标记效果时返回nil；匹配的标记效果没有Label时，该位置返回0。
 Parameters:
   c: Card
   code: int
 Returns:
-  int
-  ...? - integer
+  int|nil - First label value, or nil if no matching flag effect exists.
+  ...? - Additional integer label values from additional matching flag effects.
 Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3556
 
 ●int Card.GetFusionAttribute(Card c, [int player])
@@ -700,11 +701,11 @@ Returns:
 Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3466
 
 ●Group Card.GetMaterial(Card c)
-返回c出场使用的素材
+返回c当前记录的素材卡Group。
 Parameters:
   c: Card
 Returns:
-  Group
+  Group - Cards currently stored as c's material cards.
 Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3515
 
 ●int Card.GetMaterialCount(Card c)
@@ -1378,7 +1379,8 @@ Returns:
 Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3619
 
 ●bool Card.IsAttackBelow(Card c, int atk)
-检查c是否是攻击力atk以下（至少为0）
+检查c是否为怪兽或被当作怪兽，并且当前攻击力已确定且小于等于atk。
+攻击力未知的卡返回false，因为核心要求当前攻击力至少为0。
 Parameters:
   c: Card
   atk: int
@@ -1557,7 +1559,8 @@ Returns:
 Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3636
 
 ●bool Card.IsCanTurnSet(Card c)
-检查c是否可以转成里侧表示
+检查c能否被当前原因玩家变成里侧表示。
+连接怪兽、衍生物、已经里侧表示的卡，以及受到EFFECT_CANNOT_TURN_SET影响的卡或玩家会返回false。
 Parameters:
   c: Card
 Returns:
@@ -2284,7 +2287,7 @@ Returns:
 Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3572
 
 ●bool Card.IsSummonLocation(Card c, int loc)
-检查c召唤·特殊召唤的位置是否为loc
+检查c记录的召唤位置是否包含loc。
 Parameters:
   c: Card
   loc: int
@@ -2683,8 +2686,8 @@ Parameters:
 Source: D:\Programs\GitHub\ygopro-core\libduel.cpp:4886
 
 ●void Duel.AddCustomActivityCounter(int counter_id, int activity_type, function f)
-设置操作类型为activity_type、代号为counter_id的计数器，放在initial_effect函数内
-f为过滤函数，以Card类型为参数，返回值为false的卡片进行以下类型的操作，计数器增加1（目前最多为1）
+为指定ACTIVITY_*类型登记编号为counter_id的自定义行动计数器。
+召唤和攻击类计数器会以Card调用f，f返回false时计数增加。ACTIVITY_CHAIN会以effect, player, chain_id调用f，同样在返回false时计数。
 Parameters:
   counter_id: int
   activity_type: int
@@ -3277,7 +3280,8 @@ Returns:
 Source: D:\Programs\GitHub\ygopro-core\libduel.cpp:4947
 
 ●Effect|nil Duel.GetChainMaterial(int player)
-返回玩家player受到的连锁素材的效果，此函数仅用于融合类卡的效果
+返回当前适用于player的第1个EFFECT_CHAIN_MATERIAL效果；没有时返回nil。
+融合类脚本通常读取该效果的Target和Operation回调，用于处理连锁素材替代流程。
 Parameters:
   player: int
 Returns:
@@ -3332,7 +3336,8 @@ Returns:
 Source: D:\Programs\GitHub\ygopro-core\libduel.cpp:4954
 
 ●int Duel.GetCustomActivityCount(int counter_id, int player, int activity_type)
-代号为counter_id的计数器的计数，返回player进行以下操作的次数（目前最多为1）
+返回counter_id和指定ACTIVITY_*类型下，player对应的自定义计数。
+计数每回合重置。在此核心中，多数以卡为对象的自定义计数器只记录该玩家是否至少进行过1次被计数行动；连锁计数器会随连锁建立和取消而增减。
 Parameters:
   counter_id: int
   player: int
@@ -3342,7 +3347,7 @@ Returns:
 Source: D:\Programs\GitHub\ygopro-core\libduel.cpp:5069
 
 ●Group Duel.GetDecktopGroup(int player, int count)
-返回玩家player的卡组最上方的count张卡
+返回玩家player卡组最上方最多count张卡组成的Group。
 Parameters:
   player: int
   count: int
@@ -3449,13 +3454,14 @@ Returns:
 Source: D:\Programs\GitHub\ygopro-core\libduel.cpp:4857
 
 ●Group,Group Duel.GetFusionMaterial(int player, [int location])
-返回玩家player可用的用于融合召唤素材的卡片组
+返回player的两个Group：当前可用的全部融合素材候选，以及来自指定位置的基础素材池。
+location默认LOCATION_HAND + LOCATION_MZONE。魔法与陷阱区域或墓地中受EFFECT_EXTRA_FUSION_MATERIAL影响的卡只加入第1个返回Group；第2个Group只包含location指定位置的卡。
 Parameters:
   player: int
   location: int optional - default: LOCATION_HAND + LOCATION_MZONE
 Returns:
-  Group - material_all includes cards affected by EFFECT_EXTRA_FUSION_MATERIAL
-  Group - material_base contains only cards from the requested locations
+  Group - All currently usable Fusion Material candidates, including extra Fusion Material effects.
+  Group - Base material pool from the requested locations only.
 Source: D:\Programs\GitHub\ygopro-core\libduel.cpp:5000
 
 ●int Duel.GetLastSelectHint(int player)
@@ -4180,11 +4186,12 @@ Returns:
   bool
 Source: D:\Programs\GitHub\ygopro-core\libduel.cpp:4930
 
-●void Duel.NegateRelatedChain(Card c, int reset)
-使和卡片c有关的连锁都无效化，发生reset事件则重置,reset 默认包含 RESET_CHAIN
+●void Duel.NegateRelatedChain(Card c, int reset_flag)
+对当前连锁中由c发动且仍与c保持关联的连锁，给c登记临时的EFFECT_DISABLE_CHAIN效果。
+该无效效果以RESET_CHAIN、RESET_EVENT和传入的reset标志重置；若没有可处理的早前连锁，或c不受当前处理效果影响，核心不做处理。
 Parameters:
   c: Card
-  reset: int
+  reset_flag: int
 Source: D:\Programs\GitHub\ygopro-core\libduel.cpp:4931
 
 ●void Duel.NegateSummon(Card|Group targets)
@@ -5026,7 +5033,7 @@ Returns:
 Source: D:\Programs\GitHub\ygopro-core\libeffect.cpp:631
 
 ●int Effect.GetFieldID(Effect e)
-获取效果e的id
+返回效果e的内部field ID。
 Parameters:
   e: Effect
 Returns:
@@ -5184,7 +5191,8 @@ Returns:
 Source: D:\Programs\GitHub\ygopro-core\libeffect.cpp:651
 
 ●bool Effect.IsHasProperty(Effect e, int prop1, [int prop2])
-检查效果是否含有标志prop1[和prop2]
+检查效果e是否包含指定的效果Property标志。
+prop1检查第1个Property字段，可选的prop2检查第2个Property字段；某个字段传0时该字段视为通过。
 Parameters:
   e: Effect
   prop1: int

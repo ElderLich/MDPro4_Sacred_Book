@@ -8,7 +8,8 @@ Card.CheckUniqueOnField(Card c, int check_player, [int check_location], [Card|ni
 
 ## Description
 
-Check the uniqueness of c in the check_player field
+Checks whether c can coexist on check_player's field under the current unique-on-field rules.
+check_location defaults to LOCATION_ONFIELD and is masked to on-field locations. icard can be supplied as an ignored card when testing a pending move.
 
 ## Parameters
 

@@ -8,7 +8,7 @@ Effect.GetFieldID(Effect e) -> int
 
 ## Description
 
-Gets the id of the effect e
+Returns e's internal field ID.
 
 ## Parameters
 

@@ -3,12 +3,13 @@
 ## Signature
 
 ```lua
-Card.GetFlagEffectLabel(Card c, int code) -> int,...?
+Card.GetFlagEffectLabel(Card c, int code) -> int|nil,...?
 ```
 
 ## Description
 
-The type of c is the label that identifies the effect of code, and returns nil if it does not
+Returns the first label value from each flag effect with the given code on c.
+If c has no matching flag effect, the core returns nil. Matching flag effects with no label return 0 for that slot.
 
 ## Parameters
 
@@ -17,8 +18,8 @@ The type of c is the label that identifies the effect of code, and returns nil i
 
 ## Returns
 
-- `int`
-- `...?` - integer
+- `int|nil` - First label value, or nil if no matching flag effect exists.
+- `...?` - Additional integer label values from additional matching flag effects.
 
 ## Source
 

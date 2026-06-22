@@ -195,7 +195,8 @@ Returns:
 Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3522
 
 ●bool Card.CheckUniqueOnField(Card c, int check_player, [int check_location], [Card|nil icard])
-Check the uniqueness of c in the check_player field
+Checks whether c can coexist on check_player's field under the current unique-on-field rules.
+check_location defaults to LOCATION_ONFIELD and is masked to on-field locations. icard can be supplied as an ignored card when testing a pending move.
 Parameters:
   c: Card
   check_player: int
@@ -245,8 +246,8 @@ Parameters:
 Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3557
 
 ●void Card.EnableCounterPermit(Card c, int countertype, [int location], [function condition])
-Allow c [to be placed in the location location] that can be placed "can be placed on the counter countertype
-The default value of location depends on the type of c, and the monster needs to specify whether it can place a pointer in a monster or pendulum area
+Registers a single-card counter permit effect allowing c to receive counters of countertype in the chosen range.
+If location is omitted, monsters default to LOCATION_MZONE and non-monsters default to LOCATION_SZONE + LOCATION_FZONE. An optional condition callback is stored on the permit effect.
 Parameters:
   c: Card
   countertype: int
@@ -527,9 +528,8 @@ Returns:
 Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3519
 
 ●int Card.GetFieldID(Card c)
-Returns the time stamp of the transition to the current position
-This value is unique, the smaller the c is the earlier appear in that position
-Opening the card from the inside will also change this value
+Returns c's current field ID, the core timestamp assigned when c moved to its current place.
+Smaller values are older. This differs from Card.GetRealFieldID, which tracks the real field ID used by battle-state checks.
 Parameters:
   c: Card
 Returns:
@@ -553,14 +553,15 @@ Returns:
   int
 Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3553
 
-●int,...? Card.GetFlagEffectLabel(Card c, int code)
-The type of c is the label that identifies the effect of code, and returns nil if it does not
+●int|nil,...? Card.GetFlagEffectLabel(Card c, int code)
+Returns the first label value from each flag effect with the given code on c.
+If c has no matching flag effect, the core returns nil. Matching flag effects with no label return 0 for that slot.
 Parameters:
   c: Card
   code: int
 Returns:
-  int
-  ...? - integer
+  int|nil - First label value, or nil if no matching flag effect exists.
+  ...? - Additional integer label values from additional matching flag effects.
 Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3556
 
 ●int Card.GetFusionAttribute(Card c, [int player])
@@ -703,11 +704,11 @@ Returns:
 Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3466
 
 ●Group Card.GetMaterial(Card c)
-Returns the material used for the appearance of c
+Returns a Group containing the cards currently stored as c's material cards.
 Parameters:
   c: Card
 Returns:
-  Group
+  Group - Cards currently stored as c's material cards.
 Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3515
 
 ●int Card.GetMaterialCount(Card c)
@@ -1368,7 +1369,8 @@ Returns:
 Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3619
 
 ●bool Card.IsAttackBelow(Card c, int atk)
-Check whether c is attack power atk below (at least 0)
+Checks whether c is a monster, or treated as one, whose current ATK is known and less than or equal to atk.
+Cards with unknown ATK return false because the core requires the current ATK to be at least 0.
 Parameters:
   c: Card
   atk: int
@@ -1548,7 +1550,8 @@ Returns:
 Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3636
 
 ●bool Card.IsCanTurnSet(Card c)
-Check whether c can turn into the inside of that
+Checks whether c can be turned face-down by the current reason player.
+The core returns false for Link Monsters, Tokens, already face-down cards, and cards or players affected by EFFECT_CANNOT_TURN_SET.
 Parameters:
   c: Card
 Returns:
@@ -2280,7 +2283,7 @@ Returns:
 Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3572
 
 ●bool Card.IsSummonLocation(Card c, int loc)
-Check if card c's Normal Summon or Special Summon location is loc
+Checks whether c's recorded Summon location contains loc.
 Parameters:
   c: Card
   loc: int
@@ -2672,14 +2675,8 @@ Parameters:
 Source: D:\Programs\GitHub\ygopro-core\libduel.cpp:4886
 
 ●void Duel.AddCustomActivityCounter(int counter_id, int activity_type, function f)
-Set the action type to activity_type, code counter_id counter, placed in the initial_effect function
-F for the filter function, the card type parameters, the return value of false cards for the following types of operations, the counter increased by 1 (at present up to 1)
-The activity_type is of the following type
-ACTIVITY_SUMMON call (not including the usual call set)
-ACTIVITY_NORMALSUMMON usually called (including the usual call set)
-ACTIVITY_SPSUMMON Special call
-ACTIVITY_FLIPSUMMON Reverse call
-ACTIVITY_CHAIN ​​Activates the effect
+Registers a custom activity counter with id counter_id for the selected ACTIVITY_* type.
+For Summon and attack counters, f is called with a Card and the counter increases when f returns false. For ACTIVITY_CHAIN, f is called with effect, player, chain_id and also counts false results.
 Parameters:
   counter_id: int
   activity_type: int
@@ -3250,7 +3247,8 @@ Returns:
 Source: D:\Programs\GitHub\ygopro-core\libduel.cpp:4947
 
 ●Effect|nil Duel.GetChainMaterial(int player)
-Returns the effect of the chained material that is played by the player. This function is only used to blend the effect of a class card
+Returns the first EFFECT_CHAIN_MATERIAL effect currently applying to player, or nil if none applies.
+Fusion-style scripts use the returned effect's target and operation callbacks to handle Chain Material alternatives.
 Parameters:
   player: int
 Returns:
@@ -3305,13 +3303,8 @@ Returns:
 Source: D:\Programs\GitHub\ygopro-core\libduel.cpp:4954
 
 ●int Duel.GetCustomActivityCount(int counter_id, int player, int activity_type)
-Counter number counter_id count, the number of players to return to the following (currently up to 1)
-The activity_type is of the following type
-ACTIVITY_SUMMON call (not including the usual call set)
-ACTIVITY_NORMALSUMMON usually called (including the usual call set)
-ACTIVITY_SPSUMMON Special call
-ACTIVITY_FLIPSUMMON Reverse call
-ACTIVITY_CHAIN ​​Activates the effect
+Returns player 0's or player 1's count for the custom counter_id and ACTIVITY_* type.
+Counts are reset each turn. In this core, most card-based custom counters only record whether that player has performed a counted activity at least once, while Chain counters can increase and decrease with Chain creation and cancellation.
 Parameters:
   counter_id: int
   player: int
@@ -3321,7 +3314,7 @@ Returns:
 Source: D:\Programs\GitHub\ygopro-core\libduel.cpp:5069
 
 ●Group Duel.GetDecktopGroup(int player, int count)
-Returns the count card at the top of the player's deck
+Returns a Group containing up to count cards from the top of player's Deck.
 Parameters:
   player: int
   count: int
@@ -3427,14 +3420,14 @@ Returns:
 Source: D:\Programs\GitHub\ygopro-core\libduel.cpp:4857
 
 ●Group,Group Duel.GetFusionMaterial(int player, [int location])
-Return the group of cards available to player for Fusion Summon materials
-Includes monsters in hand, on the field, and cards affected by EFFECT_EXTRA_FUSION_MATERIAL
+Returns two Groups for player: all currently usable Fusion Material candidates, then the base material pool from the requested locations.
+location defaults to LOCATION_HAND + LOCATION_MZONE. Extra Fusion Material effects in the Spell & Trap Zone or GY are added to the first returned Group, while the second Group contains only cards from location.
 Parameters:
   player: int
   location: int optional - default: LOCATION_HAND + LOCATION_MZONE
 Returns:
-  Group - material_all includes cards affected by EFFECT_EXTRA_FUSION_MATERIAL
-  Group - material_base contains only cards from the requested locations
+  Group - All currently usable Fusion Material candidates, including extra Fusion Material effects.
+  Group - Base material pool from the requested locations only.
 Source: D:\Programs\GitHub\ygopro-core\libduel.cpp:5000
 
 ●int Duel.GetLastSelectHint(int player)
@@ -4162,11 +4155,12 @@ Returns:
   bool
 Source: D:\Programs\GitHub\ygopro-core\libduel.cpp:4930
 
-●void Duel.NegateRelatedChain(Card c, int reset)
-So that card c has launched the chain are invalid, reset event occurs reset
+●void Duel.NegateRelatedChain(Card c, int reset_flag)
+For each current Chain Link whose triggering effect is handled by c and still related to c, registers a temporary EFFECT_DISABLE_CHAIN effect on c.
+The generated disable effect resets with RESET_CHAIN, RESET_EVENT, and the supplied reset flags. The core does nothing if there is no earlier Chain Link to disable or if c is unaffected by the resolving effect.
 Parameters:
   c: Card
-  reset: int
+  reset_flag: int
 Source: D:\Programs\GitHub\ygopro-core\libduel.cpp:4931
 
 ●void Duel.NegateSummon(Card|Group targets)
@@ -4975,7 +4969,7 @@ Returns:
 Source: D:\Programs\GitHub\ygopro-core\libeffect.cpp:631
 
 ●int Effect.GetFieldID(Effect e)
-Gets the id of the effect e
+Returns e's internal field ID.
 Parameters:
   e: Effect
 Returns:
@@ -5131,7 +5125,8 @@ Returns:
 Source: D:\Programs\GitHub\ygopro-core\libeffect.cpp:651
 
 ●bool Effect.IsHasProperty(Effect e, int prop1, [int prop2])
-Check if the effect contains the flags prop1 [and prop2]
+Checks whether e contains the requested effect property flags.
+prop1 is checked against the first property word and optional prop2 against the second property word. Passing 0 for a word makes that word pass.
 Parameters:
   e: Effect
   prop1: int

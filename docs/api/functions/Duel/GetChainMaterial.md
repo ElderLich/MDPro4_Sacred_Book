@@ -8,7 +8,8 @@ Duel.GetChainMaterial(int player) -> Effect|nil
 
 ## Description
 
-Returns the effect of the chained material that is played by the player. This function is only used to blend the effect of a class card
+Returns the first EFFECT_CHAIN_MATERIAL effect currently applying to player, or nil if none applies.
+Fusion-style scripts use the returned effect's target and operation callbacks to handle Chain Material alternatives.
 
 ## Parameters
 

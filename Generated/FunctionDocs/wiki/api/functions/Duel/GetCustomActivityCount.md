@@ -8,13 +8,8 @@ Duel.GetCustomActivityCount(int counter_id, int player, int activity_type) -> in
 
 ## Description
 
-Counter number counter_id count, the number of players to return to the following (currently up to 1)
-The activity_type is of the following type
-ACTIVITY_SUMMON call (not including the usual call set)
-ACTIVITY_NORMALSUMMON usually called (including the usual call set)
-ACTIVITY_SPSUMMON Special call
-ACTIVITY_FLIPSUMMON Reverse call
-ACTIVITY_CHAIN ​​Activates the effect
+Returns player 0's or player 1's count for the custom counter_id and ACTIVITY_* type.
+Counts are reset each turn. In this core, most card-based custom counters only record whether that player has performed a counted activity at least once, while Chain counters can increase and decrease with Chain creation and cancellation.
 
 ## Parameters
 

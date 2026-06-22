@@ -8,14 +8,8 @@ Duel.AddCustomActivityCounter(int counter_id, int activity_type, function f) -> 
 
 ## Description
 
-Set the action type to activity_type, code counter_id counter, placed in the initial_effect function
-F for the filter function, the card type parameters, the return value of false cards for the following types of operations, the counter increased by 1 (at present up to 1)
-The activity_type is of the following type
-ACTIVITY_SUMMON call (not including the usual call set)
-ACTIVITY_NORMALSUMMON usually called (including the usual call set)
-ACTIVITY_SPSUMMON Special call
-ACTIVITY_FLIPSUMMON Reverse call
-ACTIVITY_CHAIN ​​Activates the effect
+Registers a custom activity counter with id counter_id for the selected ACTIVITY_* type.
+For Summon and attack counters, f is called with a Card and the counter increases when f returns false. For ACTIVITY_CHAIN, f is called with effect, player, chain_id and also counts false results.
 
 ## Parameters
 

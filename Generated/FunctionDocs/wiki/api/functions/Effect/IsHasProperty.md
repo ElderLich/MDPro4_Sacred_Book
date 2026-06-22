@@ -8,7 +8,8 @@ Effect.IsHasProperty(Effect e, int prop1, [int prop2]) -> bool
 
 ## Description
 
-Check if the effect contains the flags prop1 \[and prop2\]
+Checks whether e contains the requested effect property flags.
+prop1 is checked against the first property word and optional prop2 against the second property word. Passing 0 for a word makes that word pass.
 
 ## Parameters
 

@@ -8,8 +8,8 @@ Duel.GetFusionMaterial(int player, [int location]) -> Group,Group
 
 ## Description
 
-Return the group of cards available to player for Fusion Summon materials
-Includes monsters in hand, on the field, and cards affected by EFFECT_EXTRA_FUSION_MATERIAL
+Returns two Groups for player: all currently usable Fusion Material candidates, then the base material pool from the requested locations.
+location defaults to LOCATION_HAND + LOCATION_MZONE. Extra Fusion Material effects in the Spell & Trap Zone or GY are added to the first returned Group, while the second Group contains only cards from location.
 
 ## Parameters
 
@@ -18,8 +18,8 @@ Includes monsters in hand, on the field, and cards affected by EFFECT_EXTRA_FUSI
 
 ## Returns
 
-- `Group` - material_all includes cards affected by EFFECT_EXTRA_FUSION_MATERIAL
-- `Group` - material_base contains only cards from the requested locations
+- `Group` - All currently usable Fusion Material candidates, including extra Fusion Material effects.
+- `Group` - Base material pool from the requested locations only.
 
 ## Source
 

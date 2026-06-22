@@ -453,6 +453,58 @@ def parse_bullet_file(path: Path) -> dict[str, list[str]]:
 
 FUNCTION_EN_OVERRIDES = {
     # High-use core/API functions reviewed from MDPro3/YGOPro sources.
+    "Card.GetFlagEffectLabel": [
+        "Returns the first label value from each flag effect with the given code on c.",
+        "If c has no matching flag effect, the core returns nil. Matching flag effects with no label return 0 for that slot.",
+    ],
+    "Card.GetMaterial": ["Returns a Group containing the cards currently stored as c's material cards."],
+    "Duel.GetChainMaterial": [
+        "Returns the first EFFECT_CHAIN_MATERIAL effect currently applying to player, or nil if none applies.",
+        "Fusion-style scripts use the returned effect's target and operation callbacks to handle Chain Material alternatives.",
+    ],
+    "Duel.NegateRelatedChain": [
+        "For each current Chain Link whose triggering effect is handled by c and still related to c, registers a temporary EFFECT_DISABLE_CHAIN effect on c.",
+        "The generated disable effect resets with RESET_CHAIN, RESET_EVENT, and the supplied reset flags. The core does nothing if there is no earlier Chain Link to disable or if c is unaffected by the resolving effect.",
+    ],
+    "Card.IsSummonLocation": ["Checks whether c's recorded Summon location contains loc."],
+    "Card.GetFieldID": [
+        "Returns c's current field ID, the core timestamp assigned when c moved to its current place.",
+        "Smaller values are older. This differs from Card.GetRealFieldID, which tracks the real field ID used by battle-state checks.",
+    ],
+    "Effect.GetFieldID": ["Returns e's internal field ID."],
+    "Effect.IsHasProperty": [
+        "Checks whether e contains the requested effect property flags.",
+        "prop1 is checked against the first property word and optional prop2 against the second property word. Passing 0 for a word makes that word pass.",
+    ],
+    "Card.CheckUniqueOnField": [
+        "Checks whether c can coexist on check_player's field under the current unique-on-field rules.",
+        "check_location defaults to LOCATION_ONFIELD and is masked to on-field locations. icard can be supplied as an ignored card when testing a pending move.",
+    ],
+    "Duel.GetDecktopGroup": ["Returns a Group containing up to count cards from the top of player's Deck."],
+    "Duel.GetFusionMaterial": [
+        "Returns two Groups for player: all currently usable Fusion Material candidates, then the base material pool from the requested locations.",
+        "location defaults to LOCATION_HAND + LOCATION_MZONE. Extra Fusion Material effects in the Spell & Trap Zone or GY are added to the first returned Group, while the second Group contains only cards from location.",
+    ],
+    "Card.EnableCounterPermit": [
+        "Registers a single-card counter permit effect allowing c to receive counters of countertype in the chosen range.",
+        "If location is omitted, monsters default to LOCATION_MZONE and non-monsters default to LOCATION_SZONE + LOCATION_FZONE. An optional condition callback is stored on the permit effect.",
+    ],
+    "Card.IsCanTurnSet": [
+        "Checks whether c can be turned face-down by the current reason player.",
+        "The core returns false for Link Monsters, Tokens, already face-down cards, and cards or players affected by EFFECT_CANNOT_TURN_SET.",
+    ],
+    "Duel.AddCustomActivityCounter": [
+        "Registers a custom activity counter with id counter_id for the selected ACTIVITY_* type.",
+        "For Summon and attack counters, f is called with a Card and the counter increases when f returns false. For ACTIVITY_CHAIN, f is called with effect, player, chain_id and also counts false results.",
+    ],
+    "Card.IsAttackBelow": [
+        "Checks whether c is a monster, or treated as one, whose current ATK is known and less than or equal to atk.",
+        "Cards with unknown ATK return false because the core requires the current ATK to be at least 0.",
+    ],
+    "Duel.GetCustomActivityCount": [
+        "Returns player 0's or player 1's count for the custom counter_id and ACTIVITY_* type.",
+        "Counts are reset each turn. In this core, most card-based custom counters only record whether that player has performed a counted activity at least once, while Chain counters can increase and decrease with Chain creation and cancellation.",
+    ],
     "Card.IsCanBeSpecialSummoned": [
         "Checks whether c can be Special Summoned by effect e using sumtype, sumplayer, sumpos, target player, and optional zone.",
         "If nocheck is true, c's Summoning condition is skipped. If nolimit is true, c's revive limit or proper-Summon limit is skipped.",
@@ -1311,6 +1363,58 @@ FUNCTION_EN_OVERRIDES = {
 
 
 FUNCTION_ZH_OVERRIDES = {
+    "Card.GetFlagEffectLabel": [
+        "返回c上编号为code的每个标记效果的第1个Label值。",
+        "没有匹配的标记效果时返回nil；匹配的标记效果没有Label时，该位置返回0。",
+    ],
+    "Card.GetMaterial": ["返回c当前记录的素材卡Group。"],
+    "Duel.GetChainMaterial": [
+        "返回当前适用于player的第1个EFFECT_CHAIN_MATERIAL效果；没有时返回nil。",
+        "融合类脚本通常读取该效果的Target和Operation回调，用于处理连锁素材替代流程。",
+    ],
+    "Duel.NegateRelatedChain": [
+        "对当前连锁中由c发动且仍与c保持关联的连锁，给c登记临时的EFFECT_DISABLE_CHAIN效果。",
+        "该无效效果以RESET_CHAIN、RESET_EVENT和传入的reset标志重置；若没有可处理的早前连锁，或c不受当前处理效果影响，核心不做处理。",
+    ],
+    "Card.IsSummonLocation": ["检查c记录的召唤位置是否包含loc。"],
+    "Card.GetFieldID": [
+        "返回c当前的field ID，即核心在c移动到当前位置时分配的时间标识。",
+        "数值越小表示越早进入当前位置。此值不同于Card.GetRealFieldID，后者用于战斗状态等真实位置检查。",
+    ],
+    "Effect.GetFieldID": ["返回效果e的内部field ID。"],
+    "Effect.IsHasProperty": [
+        "检查效果e是否包含指定的效果Property标志。",
+        "prop1检查第1个Property字段，可选的prop2检查第2个Property字段；某个字段传0时该字段视为通过。",
+    ],
+    "Card.CheckUniqueOnField": [
+        "检查c在check_player场上是否满足当前唯一性规则，可以与已存在的卡共存。",
+        "check_location默认LOCATION_ONFIELD，并会被限制为场上位置；测试即将移动的卡时，可用icard指定一张忽略的卡。",
+    ],
+    "Duel.GetDecktopGroup": ["返回玩家player卡组最上方最多count张卡组成的Group。"],
+    "Duel.GetFusionMaterial": [
+        "返回player的两个Group：当前可用的全部融合素材候选，以及来自指定位置的基础素材池。",
+        "location默认LOCATION_HAND + LOCATION_MZONE。魔法与陷阱区域或墓地中受EFFECT_EXTRA_FUSION_MATERIAL影响的卡只加入第1个返回Group；第2个Group只包含location指定位置的卡。",
+    ],
+    "Card.EnableCounterPermit": [
+        "给c登记单卡的指示物许可效果，使其可以在指定范围放置countertype类型的指示物。",
+        "省略location时，怪兽默认LOCATION_MZONE，非怪兽默认LOCATION_SZONE + LOCATION_FZONE。提供condition时会作为该许可效果的条件回调保存。",
+    ],
+    "Card.IsCanTurnSet": [
+        "检查c能否被当前原因玩家变成里侧表示。",
+        "连接怪兽、衍生物、已经里侧表示的卡，以及受到EFFECT_CANNOT_TURN_SET影响的卡或玩家会返回false。",
+    ],
+    "Duel.AddCustomActivityCounter": [
+        "为指定ACTIVITY_*类型登记编号为counter_id的自定义行动计数器。",
+        "召唤和攻击类计数器会以Card调用f，f返回false时计数增加。ACTIVITY_CHAIN会以effect, player, chain_id调用f，同样在返回false时计数。",
+    ],
+    "Card.IsAttackBelow": [
+        "检查c是否为怪兽或被当作怪兽，并且当前攻击力已确定且小于等于atk。",
+        "攻击力未知的卡返回false，因为核心要求当前攻击力至少为0。",
+    ],
+    "Duel.GetCustomActivityCount": [
+        "返回counter_id和指定ACTIVITY_*类型下，player对应的自定义计数。",
+        "计数每回合重置。在此核心中，多数以卡为对象的自定义计数器只记录该玩家是否至少进行过1次被计数行动；连锁计数器会随连锁建立和取消而增减。",
+    ],
     "Auxiliary.AddCodeList": ["为c登记1个或多个卡名编号，供Auxiliary.IsCodeListed等函数判断这些编号是否被c列名。复制效果时不处理。"],
     "Auxiliary.AddDrytronSpSummonEffect": [
         "为c添加「龙辉巧」共通的从手牌或墓地特殊召唤自身的起动效果。",
@@ -1750,6 +1854,108 @@ FUNCTION_ZH_OVERRIDES = {
 
 
 CORE_DOC_OVERRIDES = {
+    "Card.GetFlagEffectLabel": {
+        "params": [ParamDoc("c", "Card"), ParamDoc("code", "int")],
+        "returns": [ReturnDoc("int|nil", "First label value, or nil if no matching flag effect exists."), ReturnDoc("...?", "Additional integer label values from additional matching flag effects.")],
+        "description": ["Returns label values from flag effects with the given code on c."],
+        "description_zh": ["返回c上编号为code的标记效果Label。"],
+    },
+    "Card.GetMaterial": {
+        "params": [ParamDoc("c", "Card")],
+        "returns": [ReturnDoc("Group", "Cards currently stored as c's material cards.")],
+        "description": ["Returns c's stored material cards."],
+        "description_zh": ["返回c记录的素材卡。"],
+    },
+    "Duel.GetChainMaterial": {
+        "params": [ParamDoc("player", "int")],
+        "returns": [ReturnDoc("Effect|nil")],
+        "description": ["Returns the first chain material effect applying to player."],
+        "description_zh": ["返回适用于player的连锁素材效果。"],
+    },
+    "Duel.NegateRelatedChain": {
+        "params": [ParamDoc("c", "Card"), ParamDoc("reset_flag", "int")],
+        "returns": [],
+        "description": ["Registers temporary chain-disable effects for related Chain Links handled by c."],
+        "description_zh": ["为c相关的连锁登记临时连锁无效效果。"],
+    },
+    "Card.IsSummonLocation": {
+        "params": [ParamDoc("c", "Card"), ParamDoc("loc", "int")],
+        "returns": [ReturnDoc("bool")],
+        "description": ["Checks c's recorded Summon location."],
+        "description_zh": ["检查c记录的召唤位置。"],
+    },
+    "Card.GetFieldID": {
+        "params": [ParamDoc("c", "Card")],
+        "returns": [ReturnDoc("int")],
+        "description": ["Returns c's current field ID."],
+        "description_zh": ["返回c当前的field ID。"],
+    },
+    "Effect.GetFieldID": {
+        "params": [ParamDoc("e", "Effect")],
+        "returns": [ReturnDoc("int")],
+        "description": ["Returns e's internal field ID."],
+        "description_zh": ["返回效果e的内部field ID。"],
+    },
+    "Effect.IsHasProperty": {
+        "params": [ParamDoc("e", "Effect"), ParamDoc("prop1", "int"), ParamDoc("prop2", "int", True)],
+        "returns": [ReturnDoc("bool")],
+        "description": ["Checks e's effect property flags."],
+        "description_zh": ["检查效果e的Property标志。"],
+    },
+    "Card.CheckUniqueOnField": {
+        "params": [
+            ParamDoc("c", "Card"), ParamDoc("check_player", "int"),
+            ParamDoc("check_location", "int", True, "default: LOCATION_ONFIELD"), ParamDoc("icard", "Card|nil", True),
+        ],
+        "returns": [ReturnDoc("bool")],
+        "description": ["Checks whether c satisfies unique-on-field restrictions for check_player."],
+        "description_zh": ["检查c在check_player场上是否满足唯一性规则。"],
+    },
+    "Duel.GetDecktopGroup": {
+        "params": [ParamDoc("player", "int"), ParamDoc("count", "int")],
+        "returns": [ReturnDoc("Group")],
+        "description": ["Returns the top cards of player's Deck as a Group."],
+        "description_zh": ["返回player卡组最上方的卡组成的Group。"],
+    },
+    "Duel.GetFusionMaterial": {
+        "params": [ParamDoc("player", "int"), ParamDoc("location", "int", True, "default: LOCATION_HAND + LOCATION_MZONE")],
+        "returns": [
+            ReturnDoc("Group", "All currently usable Fusion Material candidates, including extra Fusion Material effects."),
+            ReturnDoc("Group", "Base material pool from the requested locations only."),
+        ],
+        "description": ["Returns all Fusion Material candidates and the requested-location base pool."],
+        "description_zh": ["返回全部融合素材候选和指定位置的基础素材池。"],
+    },
+    "Card.EnableCounterPermit": {
+        "params": [ParamDoc("c", "Card"), ParamDoc("countertype", "int"), ParamDoc("location", "int", True), ParamDoc("condition", "function", True)],
+        "returns": [],
+        "description": ["Registers a counter permit effect on c."],
+        "description_zh": ["给c登记指示物许可效果。"],
+    },
+    "Card.IsCanTurnSet": {
+        "params": [ParamDoc("c", "Card")],
+        "returns": [ReturnDoc("bool")],
+        "description": ["Checks whether c can be turned face-down."],
+        "description_zh": ["检查c能否变成里侧表示。"],
+    },
+    "Duel.AddCustomActivityCounter": {
+        "params": [ParamDoc("counter_id", "int"), ParamDoc("activity_type", "int"), ParamDoc("f", "function")],
+        "returns": [],
+        "description": ["Registers a custom activity counter."],
+        "description_zh": ["登记自定义行动计数器。"],
+    },
+    "Card.IsAttackBelow": {
+        "params": [ParamDoc("c", "Card"), ParamDoc("atk", "int")],
+        "returns": [ReturnDoc("bool")],
+        "description": ["Checks whether c's current ATK is known and at most atk."],
+        "description_zh": ["检查c当前攻击力是否已确定且小于等于atk。"],
+    },
+    "Duel.GetCustomActivityCount": {
+        "params": [ParamDoc("counter_id", "int"), ParamDoc("player", "int"), ParamDoc("activity_type", "int")],
+        "returns": [ReturnDoc("int")],
+        "description": ["Returns one player's count from a custom activity counter."],
+        "description_zh": ["返回指定玩家的自定义行动计数。"],
+    },
     "Card.IsCanBeSpecialSummoned": {
         "params": [
             ParamDoc("c", "Card"), ParamDoc("e", "Effect"), ParamDoc("sumtype", "int"),

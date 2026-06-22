@@ -3,17 +3,18 @@
 ## Signature
 
 ```lua
-Duel.NegateRelatedChain(Card c, int reset) -> void
+Duel.NegateRelatedChain(Card c, int reset_flag) -> void
 ```
 
 ## Description
 
-So that card c has launched the chain are invalid, reset event occurs reset
+For each current Chain Link whose triggering effect is handled by c and still related to c, registers a temporary EFFECT_DISABLE_CHAIN effect on c.
+The generated disable effect resets with RESET_CHAIN, RESET_EVENT, and the supplied reset flags. The core does nothing if there is no earlier Chain Link to disable or if c is unaffected by the resolving effect.
 
 ## Parameters
 
 - `c` `Card`
-- `reset` `int`
+- `reset_flag` `int`
 
 ## Source
 

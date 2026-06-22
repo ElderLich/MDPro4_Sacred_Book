@@ -8,7 +8,7 @@ Card.GetMaterial(Card c) -> Group
 
 ## Description
 
-Returns the material used for the appearance of c
+Returns a Group containing the cards currently stored as c's material cards.
 
 ## Parameters
 
@@ -16,7 +16,7 @@ Returns the material used for the appearance of c
 
 ## Returns
 
-- `Group`
+- `Group` - Cards currently stored as c's material cards.
 
 ## Source
 

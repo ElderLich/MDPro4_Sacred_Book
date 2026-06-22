@@ -8,7 +8,7 @@ Card.IsSummonLocation(Card c, int loc) -> bool
 
 ## Description
 
-Check if card c's Normal Summon or Special Summon location is loc
+Checks whether c's recorded Summon location contains loc.
 
 ## Parameters
 
