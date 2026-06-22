@@ -26,16 +26,16 @@ end
 
 ## Parameters
 
-- `f` `function|nil` optional
-- `player` `int`
-- `s` `int`
-- `o` `int`
-- `ex` `Card|Group|nil` optional
-- `...` `any`
+- `f` `function|nil` optional - Filter callback; nil accepts cards that pass location and exclusion checks.
+- `player` `int` - Reference player for the s and o location masks.
+- `s` `int` - Location mask on player's side.
+- `o` `int` - Location mask on the opponent's side from player's viewpoint.
+- `ex` `Card|Group|nil` optional - Card or Group excluded from the result; nil excludes nothing.
+- `...` `any` - Extra values forwarded to f after the candidate Card.
 
 ## Returns
 
-- `Group`
+- `Group` - New Group containing every matching card.
 
 ## Source
 

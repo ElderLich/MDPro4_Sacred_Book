@@ -35,18 +35,18 @@ Use `nocheck=true` only when the effect intentionally ignores the monster's usua
 
 ## Parameters
 
-- `targets` `Card|Group`
-- `sumtype` `int`
-- `sumplayer` `int`
-- `target_player` `int`
-- `nocheck` `bool`
-- `nolimit` `bool`
-- `pos` `int`
-- `zone` `int` optional - default: 0xff
+- `targets` `Card|Group` - Card or Group to Special Summon.
+- `sumtype` `int` - Summon type value recorded for the Summon.
+- `sumplayer` `int` - Player treated as performing the Special Summon.
+- `target_player` `int` - Player whose field receives the Summoned cards.
+- `nocheck` `bool` - If true, skips Summoning-condition checks.
+- `nolimit` `bool` - If true, skips revive-limit checks.
+- `pos` `int` - POS_* position mask for the Summon.
+- `zone` `int` optional - Allowed Monster Zone bitmask; default: 0xff.
 
 ## Returns
 
-- `int`
+- `int` - Number of cards successfully Special Summoned.
 
 ## Source
 

@@ -30,9 +30,9 @@ Effects with the same nonzero code share the same count. Special flags such as `
 
 ## Parameters
 
-- `e` `Effect`
-- `count` `int`
-- `code` `int` optional
+- `e` `Effect` - Effect whose count limit is set.
+- `count` `int` - Maximum uses before the count is spent; 0 is normalized to 1 by the core.
+- `code` `int` optional - Shared count-limit code. Effects with the same nonzero code share usage.
 
 ## Source
 

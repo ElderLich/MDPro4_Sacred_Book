@@ -3,7 +3,7 @@
 ## Signature
 
 ```lua
-Duel.SetOperationInfo(int chainc, int category, [Card|Group|nil|0 targets], int count, int target_player, int target_param) -> void
+Duel.SetOperationInfo(int chainc, int category, Card|Group|nil targets, int count, int player, int param) -> void
 ```
 
 ## Description
@@ -14,12 +14,12 @@ This information is used by response checks such as Stardust Dragon-style effect
 
 ## Parameters
 
-- `chainc` `int`
-- `category` `int`
-- `targets` `Card|Group|nil|0` optional
-- `count` `int`
-- `target_player` `int`
-- `target_param` `int`
+- `chainc` `int` - Chain index/count passed to the core chain lookup; scripts commonly use 0 for the current Chain Link.
+- `category` `int` - CATEGORY_* operation category to record.
+- `targets` `Card|Group|nil` - Known affected cards. Card or Group values are cloned into a read-only Group; nil records only count, player, and param.
+- `count` `int` - Expected number of affected cards.
+- `player` `int` - Target player stored in the operation info.
+- `param` `int` - Category-specific value, commonly a destination location, amount, or other operation parameter.
 
 ## Source
 

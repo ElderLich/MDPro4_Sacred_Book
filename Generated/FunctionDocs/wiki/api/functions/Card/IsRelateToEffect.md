@@ -13,12 +13,12 @@ When an effect enters the Chain, its handler and cards selected with Duel.SetTar
 
 ## Parameters
 
-- `c` `Card`
-- `e` `Effect`
+- `c` `Card` - Card whose relation is checked.
+- `e` `Effect` - Effect relation to test against.
 
 ## Returns
 
-- `bool`
+- `bool` - True if c still has relation to e.
 
 ## Source
 

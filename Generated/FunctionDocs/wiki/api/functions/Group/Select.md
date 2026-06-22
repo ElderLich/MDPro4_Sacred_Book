@@ -3,7 +3,7 @@
 ## Signature
 
 ```lua
-Group.Select(Group g, int player, int min, int max, [Card|Group|nil ex]) -> Group
+Group.Select(Group g, int player, int min, int max, [Card|Group|nil ex]) -> Group|nil
 ```
 
 ## Description
@@ -25,15 +25,15 @@ If you still need to filter while selecting, use `Group.FilterSelect` or `Duel.S
 
 ## Parameters
 
-- `g` `Group`
-- `player` `int`
-- `min` `int`
-- `max` `int`
-- `ex` `Card|Group|nil` optional
+- `g` `Group` - Selectable card pool.
+- `player` `int` - Player who makes the selection; invalid players make the core return no values.
+- `min` `int` - Minimum number of cards to select.
+- `max` `int` - Maximum number of cards to select.
+- `ex` `Card|Group|nil` optional - Card or Group excluded from selectable cards; nil excludes nothing.
 
 ## Returns
 
-- `Group`
+- `Group|nil` - New Group containing selected cards, or nil if player is invalid.
 
 ## Source
 

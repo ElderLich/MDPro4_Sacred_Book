@@ -27,19 +27,19 @@ This is only a legality check. It does not reserve a zone or Summon the card.
 
 ## Parameters
 
-- `c` `Card`
-- `e` `Effect`
-- `sumtype` `int`
-- `sumplayer` `int`
-- `nocheck` `bool`
-- `nolimit` `bool`
-- `sumpos` `int` optional - default: POS_FACEUP
-- `toplayer` `int` optional - default: sumplayer
-- `zone` `int` optional - default: 0xff
+- `c` `Card` - Card being checked.
+- `e` `Effect` - Effect that would perform the Special Summon.
+- `sumtype` `int` - Summon type value recorded for the Special Summon.
+- `sumplayer` `int` - Player treated as performing the Special Summon.
+- `nocheck` `bool` - If true, skips c's Summoning-condition check.
+- `nolimit` `bool` - If true, skips c's revive-limit or proper-Summon limit check.
+- `sumpos` `int` optional - Summon position mask checked by the core; default: POS_FACEUP.
+- `toplayer` `int` optional - Player whose field c would be Summoned to; default: sumplayer.
+- `zone` `int` optional - Allowed Monster Zone bitmask; default: 0xff.
 
 ## Returns
 
-- `bool`
+- `bool` - True if c can be Special Summoned with the supplied parameters.
 
 ## Source
 

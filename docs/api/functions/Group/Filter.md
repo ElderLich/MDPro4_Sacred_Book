@@ -24,14 +24,14 @@ Extra arguments after `ex` are passed to the filter after the card. The original
 
 ## Parameters
 
-- `g` `Group`
-- `f` `function`
-- `ex` `Card|Group|nil` optional
-- `...` `any`
+- `g` `Group` - Group to filter; it is not modified.
+- `f` `function` - Filter callback called for each candidate card.
+- `ex` `Card|Group|nil` optional - Card or Group excluded before filtering; nil excludes nothing.
+- `...` `any` - Extra values forwarded to f after the candidate Card.
 
 ## Returns
 
-- `Group`
+- `Group` - New Group containing cards that passed f.
 
 ## Source
 

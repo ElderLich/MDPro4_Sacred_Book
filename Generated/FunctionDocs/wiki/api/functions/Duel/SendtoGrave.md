@@ -30,13 +30,13 @@ This is not the same as destroying. A card sent to the Graveyard by `Duel.Sendto
 
 ## Parameters
 
-- `targets` `Card|Group`
-- `reason` `int`
-- `reason_player` `int` optional
+- `targets` `Card|Group` - Card or Group to send to the Graveyard.
+- `reason` `int` - REASON_* flags recorded for the move.
+- `reason_player` `int` optional - Player recorded as the reason player; defaults to the core's current reason player.
 
 ## Returns
 
-- `int`
+- `int` - Number of cards actually sent to the Graveyard.
 
 ## Source
 

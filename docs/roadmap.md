@@ -22,6 +22,7 @@ This is the working todo for turning Sacred Book into a complete MDPro3 scriptin
 - [x] Add first original tutorial pass for the downloaded page coverage map.
 - [ ] Give every function a clear summary, parameter notes, return notes, and at least one script-backed example where possible.
 - [x] Add a first parameter/return detail pass for high-use flag-effect, material, counter, unique-field, Deck-top, field-ID, and related-chain functions.
+- [x] Add a second parameter/return detail pass for high-use selection, movement, relation, count-limit, and Group filtering functions.
 - [x] Review movement/action function English and stale signatures against the MDPro3 core binding.
 - [x] Review effect setter function English and behavior notes against the MDPro3 core binding.
 - [x] Run usage-ranked terminology passes for common Card, Duel, Effect, Group, bit, Xyz, Synchro, Link, Pendulum, release, negation, Set, flag-effect, callback getter, token, Fusion Material, selection, Equip target, material, Debug, and summon-procedure pages; imported English queue reduced from 593 to 0.

@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-06-22T21:47:00+00:00",
+    "generated_at": "2026-06-22T22:03:55+00:00",
     "workspace": "D:\\Programs\\GitHub\\MDPro3_Sacred_Book",
     "dataeditorx_data": "D:\\Programs\\GitHub\\DataEditorX\\DataEditorX\\data",
     "mdpro3_locales": "D:\\Programs\\GitHub\\MDPro3_Data\\Data\\locales",
@@ -7962,65 +7962,66 @@
           "name": "c",
           "type": "Card",
           "optional": false,
-          "description": ""
+          "description": "Card being checked."
         },
         {
           "name": "e",
           "type": "Effect",
           "optional": false,
-          "description": ""
+          "description": "Effect that would perform the Special Summon."
         },
         {
           "name": "sumtype",
           "type": "int",
           "optional": false,
-          "description": ""
+          "description": "Summon type value recorded for the Special Summon."
         },
         {
           "name": "sumplayer",
           "type": "int",
           "optional": false,
-          "description": ""
+          "description": "Player treated as performing the Special Summon."
         },
         {
           "name": "nocheck",
           "type": "bool",
           "optional": false,
-          "description": ""
+          "description": "If true, skips c's Summoning-condition check."
         },
         {
           "name": "nolimit",
           "type": "bool",
           "optional": false,
-          "description": ""
+          "description": "If true, skips c's revive-limit or proper-Summon limit check."
         },
         {
           "name": "sumpos",
           "type": "int",
           "optional": true,
-          "description": "default: POS_FACEUP"
+          "description": "Summon position mask checked by the core; default: POS_FACEUP."
         },
         {
           "name": "toplayer",
           "type": "int",
           "optional": true,
-          "description": "default: sumplayer"
+          "description": "Player whose field c would be Summoned to; default: sumplayer."
         },
         {
           "name": "zone",
           "type": "int",
           "optional": true,
-          "description": "default: 0xff"
+          "description": "Allowed Monster Zone bitmask; default: 0xff."
         }
       ],
       "returns": [
         {
           "type": "bool",
-          "description": ""
+          "description": "True if c can be Special Summoned with the supplied parameters."
         }
       ],
       "description_zh": [
-        "检查c是否可以用效果e和给定的召唤参数进行特殊召唤。"
+        "检查c能否通过效果e，以给定的召唤类型、召唤玩家、表示形式、目标玩家和可选区域进行特殊召唤。",
+        "nocheck为true时跳过召唤条件检查；nolimit为true时跳过苏生限制或正规召唤限制检查。"
       ],
       "description_en": [
         "Checks whether c can be Special Summoned by effect e using sumtype, sumplayer, sumpos, target player, and optional zone.",
@@ -8042,7 +8043,8 @@
       "aliases": [],
       "tags": [
         "core-binding",
-        "core-doc-override"
+        "core-doc-override",
+        "manual-zh-doc"
       ],
       "core_binding": true,
       "core_handler": "card_is_can_be_special_summoned"
@@ -11983,23 +11985,24 @@
           "name": "c",
           "type": "Card",
           "optional": false,
-          "description": ""
+          "description": "Card whose relation is checked."
         },
         {
           "name": "e",
           "type": "Effect",
           "optional": false,
-          "description": ""
+          "description": "Effect relation to test against."
         }
       ],
       "returns": [
         {
           "type": "bool",
-          "description": ""
+          "description": "True if c still has relation to e."
         }
       ],
       "description_zh": [
-        "检查c是否仍与效果e保持联系。"
+        "检查c是否仍与效果e保持联系。",
+        "效果进入连锁时，其处理卡以及通过Duel.SetTargetCard或Duel.SelectTarget选中的卡会与该效果建立联系；卡离开预期位置后通常会失去该联系。"
       ],
       "description_en": [
         "Checks whether c is still related to effect e.",
@@ -12021,7 +12024,8 @@
       "aliases": [],
       "tags": [
         "core-binding",
-        "core-doc-override"
+        "core-doc-override",
+        "manual-zh-doc"
       ],
       "core_binding": true,
       "core_handler": "card_is_relate_to_effect"
@@ -19739,47 +19743,48 @@
           "name": "f",
           "type": "function|nil",
           "optional": true,
-          "description": ""
+          "description": "Filter callback; nil accepts cards that pass location and exclusion checks."
         },
         {
           "name": "player",
           "type": "int",
           "optional": false,
-          "description": ""
+          "description": "Reference player for the s and o location masks."
         },
         {
           "name": "s",
           "type": "int",
           "optional": false,
-          "description": ""
+          "description": "Location mask on player's side."
         },
         {
           "name": "o",
           "type": "int",
           "optional": false,
-          "description": ""
+          "description": "Location mask on the opponent's side from player's viewpoint."
         },
         {
           "name": "ex",
           "type": "Card|Group|nil",
           "optional": true,
-          "description": ""
+          "description": "Card or Group excluded from the result; nil excludes nothing."
         },
         {
           "name": "...",
           "type": "any",
           "optional": false,
-          "description": ""
+          "description": "Extra values forwarded to f after the candidate Card."
         }
       ],
       "returns": [
         {
           "type": "Group",
-          "description": ""
+          "description": "New Group containing every matching card."
         }
       ],
       "description_zh": [
-        "返回以player来看指定位置中满足f且不等于ex的卡组成的Group。"
+        "返回指定位置中满足筛选函数f且不在ex中的卡组成的Group。",
+        "s是player视角下己方位置掩码，o是对方位置掩码；ex之后的额外参数会传给f。"
       ],
       "description_en": [
         "Returns a Group containing cards from the specified locations that satisfy filter f and are not excluded by ex.",
@@ -19801,7 +19806,8 @@
       "aliases": [],
       "tags": [
         "core-binding",
-        "core-doc-override"
+        "core-doc-override",
+        "manual-zh-doc"
       ],
       "core_binding": true,
       "core_handler": "duel_get_matching_group"
@@ -24886,65 +24892,66 @@
           "name": "sel_player",
           "type": "int",
           "optional": false,
-          "description": ""
+          "description": "Player who makes the selection; invalid players make the core return no values."
         },
         {
           "name": "f",
           "type": "function|nil",
           "optional": true,
-          "description": ""
+          "description": "Filter callback; nil accepts cards that pass location and exclusion checks."
         },
         {
           "name": "player",
           "type": "int",
           "optional": false,
-          "description": ""
+          "description": "Reference player for the s and o location masks."
         },
         {
           "name": "s",
           "type": "int",
           "optional": false,
-          "description": ""
+          "description": "Location mask on player's side."
         },
         {
           "name": "o",
           "type": "int",
           "optional": false,
-          "description": ""
+          "description": "Location mask on the opponent's side from player's viewpoint."
         },
         {
           "name": "min",
           "type": "int",
           "optional": false,
-          "description": ""
+          "description": "Minimum number of cards to select."
         },
         {
           "name": "max",
           "type": "int",
           "optional": false,
-          "description": ""
+          "description": "Maximum number of cards to select."
         },
         {
           "name": "ex",
           "type": "Card|Group|nil",
           "optional": true,
-          "description": ""
+          "description": "Card or Group excluded from selectable cards; nil excludes nothing."
         },
         {
           "name": "...",
           "type": "any",
           "optional": false,
-          "description": ""
+          "description": "Extra values forwarded to f after the candidate Card."
         }
       ],
       "returns": [
         {
-          "type": "Group",
-          "description": ""
+          "type": "Group|nil",
+          "description": "New Group containing the selected cards, or nil if sel_player is invalid."
         }
       ],
       "description_zh": [
-        "过滤函数；让玩家sel_player从指定位置选择min到max张满足f且不等于ex的卡。"
+        "让sel_player从指定位置中选择min到max张满足筛选函数f且不在ex中的卡。",
+        "s是player视角下己方位置掩码，o是对方位置掩码；ex之后的额外参数会传给f。"
       ],
       "description_en": [
         "Lets sel_player choose min to max cards from the specified locations that satisfy filter f and are not excluded by ex.",
@@ -24966,7 +24973,8 @@
       "aliases": [],
       "tags": [
         "core-binding",
-        "core-doc-override"
+        "core-doc-override",
+        "manual-zh-doc"
       ],
       "core_binding": true,
       "core_handler": "duel_select_matching_cards"
@@ -25912,30 +25920,29 @@
           "name": "targets",
           "type": "Card|Group",
           "optional": false,
-          "description": ""
+          "description": "Card or Group to send to the Graveyard."
         },
         {
           "name": "reason",
           "type": "int",
           "optional": false,
-          "description": ""
+          "description": "REASON_* flags recorded for the move."
         },
         {
           "name": "reason_player",
           "type": "int",
           "optional": true,
-          "description": ""
+          "description": "Player recorded as the reason player; defaults to the core's current reason player."
         }
       ],
       "returns": [
         {
           "type": "int",
-          "description": ""
+          "description": "Number of cards actually sent to the Graveyard."
         }
       ],
       "description_zh": [
-        "以reason原因把targets送去墓地，返回值是实际被操作的数量",
-        "如果设置reason_player，则视为被玩家reason_player移动"
+        "因reason将targets送去墓地，可选指定reason_player作为执行该移动的玩家，并返回实际移动的数量。"
       ],
       "description_en": [
         "Sends targets to the Graveyard for reason, optionally treating reason_player as the player that moved them, and returns the number actually moved."
@@ -25955,7 +25962,9 @@
       ],
       "aliases": [],
       "tags": [
-        "core-binding"
+        "core-binding",
+        "core-doc-override",
+        "manual-zh-doc"
       ],
       "core_binding": true,
       "core_handler": "duel_sendto_grave"
@@ -26380,60 +26389,44 @@
           "name": "chainc",
           "type": "int",
           "optional": false,
-          "description": ""
+          "description": "Chain index/count passed to the core chain lookup; scripts commonly use 0 for the current Chain Link."
         },
         {
           "name": "category",
           "type": "int",
           "optional": false,
-          "description": ""
+          "description": "CATEGORY_* operation category to record."
         },
         {
           "name": "targets",
-          "type": "Card|Group|nil|0",
-          "optional": true,
-          "description": ""
+          "type": "Card|Group|nil",
+          "optional": false,
+          "description": "Known affected cards. Card or Group values are cloned into a read-only Group; nil records only count, player, and param."
         },
         {
           "name": "count",
           "type": "int",
           "optional": false,
-          "description": ""
+          "description": "Expected number of affected cards."
         },
         {
-          "name": "target_player",
+          "name": "player",
           "type": "int",
           "optional": false,
-          "description": ""
+          "description": "Target player stored in the operation info."
         },
         {
-          "name": "target_param",
+          "name": "param",
           "type": "int",
           "optional": false,
-          "description": ""
+          "description": "Category-specific value, commonly a destination location, amount, or other operation parameter."
         }
       ],
-      "returns": [
-        {
-          "type": "nil",
-          "description": ""
-        }
-      ],
+      "returns": [],
       "description_zh": [
-        "操作信息：效果处理中确定要处理的分类",
-        "比如潜行狙击手需要设置CATEGORY_DICE，但是不能设置CATEGORY_DESTROY，因为不确定",
-        "对于破坏效果，targets需要设置成发动时可能成为连锁的影响对象的卡，",
-        "并设置count为发动时确定的要处理的卡的数量",
-        "比如黑洞发动时，targets需要设定为场上的所有怪兽，count设置成场上的怪的数量",
-        "对于需要移动卡片位置的CATEGORY_SPECIAL_SUMMON,CATEGORY_TOHAND,CATEGORY_TODECK等分类，",
-        "如果要处理的卡是确定的（比如取对象），则设置targets为这些卡，count为数量，",
-        "如果要处理的卡是不确定的（效果处理时才能确定，一般是不取对象的效果），",
-        "则设置targets为nil，count为预计要处理的卡的数量，",
-        "target_player为预计要处理的卡的持有者（不确定就为0）",
-        "target_param为预计要处理的卡的位置",
-        "例如增援：SetOperationInfo(0,CATEGORY_TOHAND,nil,1,tp,LOCATION_DECK)",
-        "操作信息用于很多效果的发动的检测，例如星尘龙，王家长眠之谷等",
-        "设置连锁chainc的category分类的操作信息， chainc=0 则是表示当前连锁"
+        "为chainc对应的连锁记录category的操作信息。",
+        "已知受影响卡时传入具体targets和count；未确定对象的非取对象移动效果，可传nil targets并填写预计数量、目标玩家和目标位置。",
+        "这些信息会被类似星尘龙的响应检查使用。"
       ],
       "description_en": [
         "Records operation information for category on chainc.",
@@ -26455,7 +26448,9 @@
       ],
       "aliases": [],
       "tags": [
-        "core-binding"
+        "core-binding",
+        "core-doc-override",
+        "manual-zh-doc"
       ],
       "core_binding": true,
       "core_handler": "duel_set_operation_info"
@@ -26987,59 +26982,60 @@
           "name": "targets",
           "type": "Card|Group",
           "optional": false,
-          "description": ""
+          "description": "Card or Group to Special Summon."
         },
         {
           "name": "sumtype",
           "type": "int",
           "optional": false,
-          "description": ""
+          "description": "Summon type value recorded for the Summon."
         },
         {
           "name": "sumplayer",
           "type": "int",
           "optional": false,
-          "description": ""
+          "description": "Player treated as performing the Special Summon."
         },
         {
           "name": "target_player",
           "type": "int",
           "optional": false,
-          "description": ""
+          "description": "Player whose field receives the Summoned cards."
         },
         {
           "name": "nocheck",
           "type": "bool",
           "optional": false,
-          "description": ""
+          "description": "If true, skips Summoning-condition checks."
         },
         {
           "name": "nolimit",
           "type": "bool",
           "optional": false,
-          "description": ""
+          "description": "If true, skips revive-limit checks."
         },
         {
           "name": "pos",
           "type": "int",
           "optional": false,
-          "description": ""
+          "description": "POS_* position mask for the Summon."
         },
         {
           "name": "zone",
           "type": "int",
           "optional": true,
-          "description": "default: 0xff"
+          "description": "Allowed Monster Zone bitmask; default: 0xff."
         }
       ],
       "returns": [
         {
           "type": "int",
-          "description": ""
+          "description": "Number of cards successfully Special Summoned."
         }
       ],
       "description_zh": [
-        "把targets特殊召唤到target_player场上，并返回成功特殊召唤的数量。"
+        "以pos表示形式把targets特殊召唤到target_player场上，并返回成功特殊召唤的数量。",
+        "sumplayer是执行召唤的玩家，sumtype记录召唤类型；nocheck跳过召唤条件检查，nolimit跳过苏生限制检查。"
       ],
       "description_en": [
         "Special Summons targets to target_player's field in position pos and returns the number of cards successfully Summoned.",
@@ -27061,7 +27057,8 @@
       "aliases": [],
       "tags": [
         "core-binding",
-        "core-doc-override"
+        "core-doc-override",
+        "manual-zh-doc"
       ],
       "core_binding": true,
       "core_handler": "duel_special_summon"
@@ -29757,24 +29754,25 @@
           "name": "e",
           "type": "Effect",
           "optional": false,
-          "description": ""
+          "description": "Effect whose count limit is set."
         },
         {
           "name": "count",
           "type": "int",
           "optional": false,
-          "description": ""
+          "description": "Maximum uses before the count is spent; 0 is normalized to 1 by the core."
         },
         {
           "name": "code",
           "type": "int",
           "optional": true,
-          "description": ""
+          "description": "Shared count-limit code. Effects with the same nonzero code share usage."
         }
       ],
       "returns": [],
       "description_zh": [
-        "设置效果e的使用次数限制count，以及可选的共享次数代码code。"
+        "设置效果e在次数限制耗尽前可以使用的次数。",
+        "count为0时核心按1处理。共享同一个非0 code的效果共用使用次数；EFFECT_COUNT_CODE_CHAIN会与EFFECT_COUNT_CODE_SINGLE一起保存。"
       ],
       "description_en": [
         "Sets how many times e can be used before its count limit is spent.",
@@ -29796,7 +29794,8 @@
       "aliases": [],
       "tags": [
         "core-binding",
-        "core-doc-override"
+        "core-doc-override",
+        "manual-zh-doc"
       ],
       "core_binding": true,
       "core_handler": "effect_set_count_limit"
@@ -31278,35 +31277,36 @@
           "name": "g",
           "type": "Group",
           "optional": false,
-          "description": ""
+          "description": "Group to filter; it is not modified."
         },
         {
           "name": "f",
           "type": "function",
           "optional": false,
-          "description": ""
+          "description": "Filter callback called for each candidate card."
         },
         {
           "name": "ex",
           "type": "Card|Group|nil",
           "optional": true,
-          "description": ""
+          "description": "Card or Group excluded before filtering; nil excludes nothing."
         },
         {
           "name": "...",
           "type": "any",
           "optional": false,
-          "description": ""
+          "description": "Extra values forwarded to f after the candidate Card."
         }
       ],
       "returns": [
         {
           "type": "Group",
-          "description": ""
+          "description": "New Group containing cards that passed f."
         }
       ],
       "description_zh": [
-        "从g中筛选满足f且不等于ex的卡，并返回新的Group。"
+        "返回由g中满足筛选函数f且不在ex中的卡组成的新Group。",
+        "ex之后的额外参数会在Card参数之后传给f。"
       ],
       "description_en": [
         "Returns a new Group containing cards from g that satisfy filter f and are not excluded by ex.",
@@ -31328,7 +31328,8 @@
       "aliases": [],
       "tags": [
         "core-binding",
-        "core-doc-override"
+        "core-doc-override",
+        "manual-zh-doc"
       ],
       "core_binding": true,
       "core_handler": "group_filter"
@@ -32410,41 +32411,41 @@
           "name": "g",
           "type": "Group",
           "optional": false,
-          "description": ""
+          "description": "Selectable card pool."
         },
         {
           "name": "player",
           "type": "int",
           "optional": false,
-          "description": ""
+          "description": "Player who makes the selection; invalid players make the core return no values."
         },
         {
           "name": "min",
           "type": "int",
           "optional": false,
-          "description": ""
+          "description": "Minimum number of cards to select."
         },
         {
           "name": "max",
           "type": "int",
           "optional": false,
-          "description": ""
+          "description": "Maximum number of cards to select."
         },
         {
           "name": "ex",
           "type": "Card|Group|nil",
           "optional": true,
-          "description": ""
+          "description": "Card or Group excluded from selectable cards; nil excludes nothing."
         }
       ],
       "returns": [
         {
-          "type": "Group",
-          "description": ""
+          "type": "Group|nil",
+          "description": "New Group containing selected cards, or nil if player is invalid."
         }
       ],
       "description_zh": [
-        "让玩家player从g中选择min到max张卡。"
+        "让player从g中选择min到max张卡，可选排除ex，并返回选中的Group。"
       ],
       "description_en": [
         "Lets player choose min to max cards from g, optionally excluding ex, and returns the selected Group."
@@ -32465,7 +32466,8 @@
       "aliases": [],
       "tags": [
         "core-binding",
-        "core-doc-override"
+        "core-doc-override",
+        "manual-zh-doc"
       ],
       "core_binding": true,
       "core_handler": "group_select"
