@@ -1,6 +1,6 @@
 # Function Docs Refresh Report
 
-Generated: 2026-06-22T05:09:09+00:00
+Generated: 2026-06-22T05:21:59+00:00
 
 ## Outputs
 
@@ -97,7 +97,8 @@ Lua helper docs that still render as `void` while their source body contains a `
 Constant English status:
 
 - `existing_english`: 4
-- `from_project_cache`: 799
+- `from_project_cache`: 792
+- `reviewed_english`: 7
 - `translated_exact`: 28
 - `translated_name`: 27
 

@@ -120,7 +120,7 @@ RACE_ILLUSION	=0x2000000	--Illusion
 REASON_DESTROY	=0x1	--Destroyed
 REASON_RELEASE	=0x2	--Tributed
 REASON_TEMPORARY	=0x4	--Temporary
-REASON_MATERIAL	=0x8	--Used as Fusion/Synchro/Xyz Material or for Ritual/Advanced Summon
+REASON_MATERIAL	=0x8	--Used as Fusion/Synchro/Xyz Material, Ritual Material, or as a Tribute for a Tribute Summon
 REASON_SUMMON	=0x10	--Summoned
 REASON_BATTLE	=0x20	--Destroyed by battle
 REASON_EFFECT	=0x40	--Affected by effect
@@ -152,9 +152,9 @@ REASON_ACTION	=0x80000000	--Action timing, such as attack declaration
 LOCATION_REASON_TOFIELD	=0x1	--Default value for Duel.GetLocationCount(), e.g., Kaiser Colosseum
 LOCATION_REASON_CONTROL	=0x2	--Used by Card.IsControlerCanBeChanged()
 
---Summon Type
+--Summon Types
 SUMMON_TYPE_NORMAL	=0x10000000	--Normal Summon (can modify value with EFFECT_SUMMON_PROC, EFFECT_SET_PROC)
-SUMMON_TYPE_ADVANCE	=0x11000000	--Advanced Summon
+SUMMON_TYPE_ADVANCE	=0x11000000	--Tribute Summon
 SUMMON_TYPE_DUAL	=0x12000000	--Gemini Summon (re-summon)
 SUMMON_TYPE_FLIP	=0x20000000	--Flip Summon
 SUMMON_TYPE_SPECIAL	=0x40000000	--Special Summon (can modify value with EFFECT_SPSUMMON_PROC, EFFECT_SPSUMMON_PROC_G)
@@ -165,7 +165,7 @@ SUMMON_TYPE_XYZ	=0x49000000	--Xyz Summon
 SUMMON_TYPE_PENDULUM	=0x4a000000	--Pendulum Summon
 SUMMON_TYPE_LINK	=0x4c000000	--Link Summon
 
---Summon Value
+--Summon Values
 SUMMON_VALUE_SELF	=0x1	--By own effect or condition
 SUMMON_VALUE_SYNCHRO_MATERIAL	=0x11	--Special Summoned and used as Synchro Material (e.g., Blackwing - Shura the Blue Flame check)
 SUMMON_VALUE_DARK_SANCTUARY	=0x12	--Dark Sanctuary
@@ -233,11 +233,11 @@ LINK_MARKER_TOP_LEFT	=0x040	--Top-Left (↖)
 LINK_MARKER_TOP	=0x080	--Top (↑)
 LINK_MARKER_TOP_RIGHT	=0x100	--Top-Right (↗)
 
---Counter
+--Counters
 COUNTER_WITHOUT_PERMIT	=0x1000	--Counter that can be placed on non-specific targets
 COUNTER_NEED_ENABLE	=0x2000	--N/A
 
---Phase
+--Phases
 PHASE_DRAW	=0x01	--Draw Phase
 PHASE_STANDBY	=0x02	--Standby Phase
 PHASE_MAIN1	=0x04	--Main Phase 1
@@ -249,11 +249,11 @@ PHASE_BATTLE	=0x80	--Battle Phase End
 PHASE_MAIN2	=0x100	--Main Phase 2
 PHASE_END	=0x200	--End Phase
 
---Player
+--Players
 PLAYER_NONE	=2	--Neither player
 PLAYER_ALL	=3	--Both players
 
---Chain info
+--Chain Info
 CHAININFO_CHAIN_COUNT	=0x01	--Chain number
 CHAININFO_TRIGGERING_EFFECT	=0x02	--Effect of the chain
 CHAININFO_TRIGGERING_PLAYER	=0x04	--Player who activated the chain
@@ -291,7 +291,7 @@ SUMMON_INFO_DEFENSE	=0x100	--Summon info: DEF
 SUMMON_INFO_REASON_EFFECT	=0x200	--Summon info: reason Effect
 SUMMON_INFO_REASON_PLAYER	=0x400	--Summon info: reason player
 
---Reset Conditions
+--========== Reset ==========	--Reset conditions. Multiple reset flags can be combined.
 RESET_SELF_TURN	=0x10000000	--Reset at the end of your turn's phase
 RESET_OPPO_TURN	=0x20000000	--Reset at the end of opponent's turn's phase
 RESET_PHASE	=0x40000000	--Reset at phase end (typically used with phases above)
@@ -313,12 +313,12 @@ RESET_CONTROL	=0x02000000	--Reset when controller changes
 RESET_OVERLAY	=0x04000000	--Reset when used as Xyz Material
 RESET_MSCHANGE	=0x08000000	--Reset when moving from Monster Zone to Spell/Trap Zone or vice versa (e.g., move_to_field(), Gem Beasts)
 
---Combined Timings
+----Combined reset masks
 RESETS_STANDARD	=0x1fe0000	--RESET_TOFIELD + RESET_LEAVE + RESET_TODECK + RESET_TOHAND + RESET_TEMP_REMOVE + RESET_REMOVE + RESET_TOGRAVE + RESET_TURN_SET
 RESETS_REDIRECT	=0xc7e0000	--RESETS_STANDARD + RESET_OVERLAY + RESET_MSCHANGE - RESET_TOFIELD - RESET_LEAVE (used for EFFECT_LEAVE_FIELD_REDIRECT)
 RESETS_WITHOUT_TEMP_REMOVE	=0x56e0000	--RESETS_STANDARD - RESET_TEMP_REMOVE - RESET_LEAVE + RESET_OVERLAY
 
---Effect Types
+--========== Types ==========	--Effect types. Used with effect/event codes to define how an effect is handled.
 EFFECT_TYPE_SINGLE	=0x0001	--Triggered when the card's own status changes
 EFFECT_TYPE_FIELD	=0x0002	--Triggered when any card on the field's status changes
 EFFECT_TYPE_EQUIP	=0x0004	--Equip effect
@@ -335,7 +335,7 @@ EFFECT_TYPE_XMATERIAL	=0x1000	--Effect gained by an Xyz Monster when used as Xyz
 EFFECT_TYPE_GRANT	=0x2000	--Grants effects to other cards (e.g., Weather Pattern)
 EFFECT_TYPE_TARGET	=0x4000	--Continuous effect with sustained targets (mainly for Spells/Traps)
 
---Effect Flags
+--========== Flags ==========	--Special effect properties
 EFFECT_FLAG_INITIAL	=0x0001	--Can be activated
 EFFECT_FLAG_FUNC_VALUE	=0x0002	--The Value property of this effect is a function
 EFFECT_FLAG_COUNT_LIMIT	=0x0004	--Activation count limit
@@ -376,7 +376,7 @@ EFFECT_FLAG2_COF	=0x0002	--Normal Spell can activate outside Main Phase 1 (speci
 EFFECT_FLAG2_WICKED	=0x0004	--Attack change for The Wicked Avatar/Dreadroot calculated last
 EFFECT_FLAG2_OPTION	=0x0008	--Child Machine
 
---Effect Codes
+--========== Codes ==========	--For continuous effects, EFFECT_* values describe behavior; for triggered effects, EVENT_* values describe event timing.
 EFFECT_IMMUNE_EFFECT	=1	--Immune to effects
 EFFECT_DISABLE	=2	--Negates effects (e.g., Skill Drain)
 EFFECT_CANNOT_DISABLE	=3	--Effect cannot be negated
@@ -417,8 +417,8 @@ EFFECT_CANNOT_DISABLE_FLIP_SUMMON	=39	--Flip Summon cannot be negated
 EFFECT_INDESTRUCTABLE	=40	--Cannot be destroyed
 EFFECT_INDESTRUCTABLE_EFFECT	=41	--Cannot be destroyed by effects
 EFFECT_INDESTRUCTABLE_BATTLE	=42	--Cannot be destroyed by battle
-EFFECT_UNRELEASABLE_SUM	=43	--Cannot be used as Tribute for Advanced Summon
-EFFECT_UNRELEASABLE_NONSUM	=44	--Cannot be used as Tribute for non-Advanced Summon
+EFFECT_UNRELEASABLE_SUM	=43	--Cannot be Tributed for a Tribute Summon
+EFFECT_UNRELEASABLE_NONSUM	=44	--Cannot be Tributed except for a Tribute Summon
 EFFECT_DESTROY_SUBSTITUTE	=45	--Mandatory destruction substitute (replace this card's destruction with another card)
 EFFECT_CANNOT_RELEASE	=46	--Cannot perform Tribute actions
 EFFECT_INDESTRUCTABLE_COUNT	=47	--Cannot be destroyed X times per turn
@@ -640,7 +640,7 @@ EFFECT_RITUAL_LEVEL_EX	=374	--Allows monsters without Levels to be used as Ritua
 EFFECT_DOUBLE_XMATERIAL	=375	--Counts as 2 materials when Xyz Summoning a monster that requires 3 or more materials
 EFFECT_FLAG_EFFECT	=0x20000000	--Flag effect created by RegisterFlagEffect()
 
---Events
+--Trigger events and timings. TYPE_SINGLE reacts to events involving itself; TYPE_FIELD reacts to matching events involving any card on the field.
 EVENT_STARTUP	=1000	--N/A
 EVENT_FLIP	=1001	--When flipped
 EVENT_FREE_CHAIN	=1002	--Free Chain timing (e.g., Torrential Tribute, or Quick Effects like Pleiades)
@@ -677,8 +677,8 @@ EVENT_FLIP_SUMMON	=1104	--During Flip Summon
 EVENT_SPSUMMON	=1105	--During Special Summon
 EVENT_MSET	=1106	--When Setting a monster
 EVENT_SSET	=1107	--When Setting a Spell/Trap
-EVENT_BE_MATERIAL	=1108	--When used as Synchro/Xyz/Link Material, Tributed for Advanced Summon, or used as Ritual/Fusion Summon material
-EVENT_BE_PRE_MATERIAL	=1109	--When about to be used as Synchro/Xyz/Link Material or Tributed for Advanced Summon
+EVENT_BE_MATERIAL	=1108	--When used as Synchro/Xyz/Link Material, used as Ritual/Fusion Material, or Tributed for a Tribute Summon
+EVENT_BE_PRE_MATERIAL	=1109	--When about to be used as Synchro/Xyz/Link Material or Tributed for a Tribute Summon
 EVENT_DRAW	=1110	--When drawing
 EVENT_DAMAGE	=1111	--When dealing battle/effect damage
 EVENT_RECOVER	=1112	--When recovering LP
@@ -718,7 +718,7 @@ EVENT_ADD_COUNTER	=0x10000	--When adding a counter
 EVENT_REMOVE_COUNTER	=0x20000	--When removing a counter (A-Counter, Card.RemoveCounter() must manually trigger this event)
 EVENT_CUSTOM	=0x10000000	--Custom event
 
---Categories
+--Category	Effect categories. Duel.SetOperationInfo records these so cards can respond to effect types, such as destruction prevention.
 CATEGORY_DESTROY	=0x1	--Destruction effect
 CATEGORY_RELEASE	=0x2	--Tribute effect
 CATEGORY_REMOVE	=0x4	--Banish effect
@@ -794,7 +794,7 @@ OPCODE_ISATTRIBUTE	=0x40000104	--Check attribute
 DOUBLE_DAMAGE	=-2147483648	--Double damage
 HALF_DAMAGE	=-2147483647	--Half damage
 
---Hint Messages
+--Hint Message	--Prompt messages shown at the top of the client window
 HINTMSG_RELEASE	=500	--Select a card to Tribute
 HINTMSG_DISCARD	=501	--Select a card to discard from hand
 HINTMSG_DESTROY	=502	--Select a card to destroy
@@ -826,7 +826,7 @@ HINTMSG_TOFIELD	=527	--Select a card to place on the field
 HINTMSG_POSCHANGE	=528	--Select a monster to change position
 HINTMSG_SELF	=529	--Select your own card
 HINTMSG_OPPO	=530	--Select an opponent's card
-HINTMSG_TRIBUTE	=531	--Select a monster to Tribute for an Advanced Summon
+HINTMSG_TRIBUTE	=531	--Select a monster to Tribute for a Tribute Summon
 HINTMSG_DEATTACHFROM	=532	--Select a monster to remove Xyz Material from
 HINTMSG_LMATERIAL	=533	--Select a card to use as Link Material
 HINTMSG_ATTACKTARGET	=549	--Select an attack target
@@ -853,11 +853,11 @@ HINTMSG_DISABLE	=573	--Select a card to negate
 HINTMSG_OPERATECARD	=574	--Select a card to operate
 HINTMSG_FIELD_FIRST	=575	--Select a card on the field (press Cancel to select a card from another zone)
 
---Selection Constants
+--Select	--Selection constants
 SELECT_HEADS	=60	--Heads
 SELECT_TAILS	=61	--Tails
 
---Timings
+--Timing	--Prompt timings; free-chain cards can use these for automatic activation prompts
 TIMING_DRAW_PHASE	=0x1	--Draw Phase timing
 TIMING_STANDBY_PHASE	=0x2	--Standby Phase timing
 TIMING_MAIN_END	=0x4	--Main Phase end timing
@@ -887,10 +887,10 @@ TIMING_EQUIP	=0x2000000	--Equip timing
 TIMING_BATTLE_STEP_END	=0x4000000	--Battle Step end timing
 TIMING_BATTLED	=0x8000000	--After damage calculation timing
 
---Combined Timings
+----Combined timings
 TIMINGS_CHECK_MONSTER	=0x1c0	--Monster summoned face-up
 
---Global Flags
+--Global flag	--Special global flags
 GLOBALFLAG_DECK_REVERSE_CHECK	=0x1	--Deck reverse check
 GLOBALFLAG_BRAINWASHING_CHECK	=0x2	--Brainwashing release check
 GLOBALFLAG_SCRAP_CHIMERA	=0x4	--Scrap Chimera check
@@ -909,7 +909,7 @@ EFFECT_COUNT_CODE_DUEL	=0x20000000	--Duel usage count
 EFFECT_COUNT_CODE_CHAIN	=0x40000000	--Use count within the same Chain
 EFFECT_COUNT_CODE_SINGLE	=0x1	--Shared count for multiple effects on the same card
 
---Duel Options
+--Special options
 DUEL_TEST_MODE	=0x01	--Test mode (currently none)
 DUEL_ATTACK_FIRST_TURN	=0x02	--First turn can attack (for puzzles)
 DUEL_OLD_REPLAY	=0x04	--Old replay

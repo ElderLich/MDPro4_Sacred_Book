@@ -4274,6 +4274,76 @@ SECTION_TRANSLATIONS = {
 }
 
 
+CONSTANT_SECTION_TITLE_OVERRIDES = {
+    "Summon Type": "Summon Types",
+    "Summon Value": "Summon Values",
+    "Counter": "Counters",
+    "Phase": "Phases",
+    "Player": "Players",
+    "Chain info": "Chain Info",
+    "Reset": "Reset Conditions",
+    "Types": "Effect Types",
+    "Flags": "Effect Flags",
+    "Codes": "Effect Codes",
+    "Category": "Categories",
+    "Hint Message": "Hint Messages",
+    "Select": "Selection Constants",
+    "Timing": "Timings",
+    "Global flag": "Global Flags",
+    "特殊选项": "Duel Options",
+}
+
+
+CONSTANT_LUA_SECTION_HEADERS = {
+    "Summon Type": "Summon Types",
+    "Summon Value": "Summon Values",
+    "Counter": "Counters",
+    "Phase": "Phases",
+    "Player": "Players",
+    "Chain info": "Chain Info",
+    "Reset": "========== Reset ==========\t--Reset conditions. Multiple reset flags can be combined.",
+    "Types": "========== Types ==========\t--Effect types. Used with effect/event codes to define how an effect is handled.",
+    "Flags": "========== Flags ==========\t--Special effect properties",
+    "Codes": "========== Codes ==========\t--For continuous effects, EFFECT_* values describe behavior; for triggered effects, EVENT_* values describe event timing.",
+    "下面是诱发效果的诱发事件、时点 （如果是TYPE_SINGLE则自己发生以下事件后触发，如果TYPE_FIELD则场上任何卡发生以下事件都触发）": "Trigger events and timings. TYPE_SINGLE reacts to events involving itself; TYPE_FIELD reacts to matching events involving any card on the field.",
+    "Category": "Category\tEffect categories. Duel.SetOperationInfo records these so cards can respond to effect types, such as destruction prevention.",
+    "Hint Message": "Hint Message\t--Prompt messages shown at the top of the client window",
+    "Select": "Select\t--Selection constants",
+    "Timing": "Timing\t--Prompt timings; free-chain cards can use these for automatic activation prompts",
+    "Global flag": "Global flag\t--Special global flags",
+    "特殊选项": "Special options",
+}
+
+
+REVIEWED_CONSTANT_TRANSLATIONS = {
+    "REASON_MATERIAL": "Used as Fusion/Synchro/Xyz Material, Ritual Material, or as a Tribute for a Tribute Summon",
+    "SUMMON_TYPE_ADVANCE": "Tribute Summon",
+    "EFFECT_UNRELEASABLE_SUM": "Cannot be Tributed for a Tribute Summon",
+    "EFFECT_UNRELEASABLE_NONSUM": "Cannot be Tributed except for a Tribute Summon",
+    "EVENT_BE_MATERIAL": "When used as Synchro/Xyz/Link Material, used as Ritual/Fusion Material, or Tributed for a Tribute Summon",
+    "EVENT_BE_PRE_MATERIAL": "When about to be used as Synchro/Xyz/Link Material or Tributed for a Tribute Summon",
+    "HINTMSG_TRIBUTE": "Select a monster to Tribute for a Tribute Summon",
+}
+
+
+def constant_section_title(doc: ConstantDoc) -> str:
+    if doc.section == "组合时点":
+        if doc.name.startswith("RESETS_"):
+            return "Combined Reset Masks"
+        if doc.name.startswith("TIMINGS_"):
+            return "Combined Timings"
+    return CONSTANT_SECTION_TITLE_OVERRIDES.get(doc.section, SECTION_TRANSLATIONS.get(doc.section, doc.section))
+
+
+def constant_lua_section_header(doc: ConstantDoc) -> str:
+    if doc.section == "组合时点":
+        if doc.name.startswith("RESETS_"):
+            return "--Combined reset masks"
+        if doc.name.startswith("TIMINGS_"):
+            return "--Combined timings"
+    return CONSTANT_LUA_SECTION_HEADERS.get(doc.section, constant_section_title(doc))
+
+
 CONSTANT_NAME_TRANSLATIONS = {
     "MAX_PARAMETER": "Maximum parameter value",
     "MAX_XYZ_LEVEL": "Maximum Xyz Level value",
@@ -4478,6 +4548,9 @@ def build_constant_docs(workspace: Path, dataeditorx_data: Path) -> list[Constan
             doc.source_files.extend(dex_doc.source_files)
         if not doc.comment_en:
             doc.comment_en, doc.english_status = seed_constant_translation(name, doc.comment_zh)
+        if name in REVIEWED_CONSTANT_TRANSLATIONS:
+            doc.comment_en = REVIEWED_CONSTANT_TRANSLATIONS[name]
+            doc.english_status = "reviewed_english"
         docs.append(doc)
     return docs
 
@@ -4499,7 +4572,7 @@ def write_constant_english_lua(path: Path, docs: list[ConstantDoc]) -> None:
     ]
     current_section = None
     for doc in docs:
-        section = SECTION_TRANSLATIONS.get(doc.section, doc.section)
+        section = constant_lua_section_header(doc)
         if section != current_section:
             current_section = section
             lines.extend(["", f"--{section}"])
@@ -4517,7 +4590,7 @@ def write_constant_markdown(path: Path, docs: list[ConstantDoc]) -> None:
     ]
     current_section = None
     for doc in docs:
-        section = SECTION_TRANSLATIONS.get(doc.section, doc.section)
+        section = constant_section_title(doc)
         if section != current_section:
             if current_section is not None:
                 lines.append("")
@@ -4548,7 +4621,7 @@ def write_constant_backlog(path: Path, docs: list[ConstantDoc]) -> None:
                 f"## {doc.name}",
                 "",
                 f"- Value: `{doc.value}`",
-                f"- Section: `{SECTION_TRANSLATIONS.get(doc.section, doc.section)}`",
+                f"- Section: `{constant_section_title(doc)}`",
                 f"- Status: `{doc.english_status}`",
                 f"- Current comment: {doc.comment_zh or '(none)'}",
                 f"- Seed English: {doc.comment_en or '(none)'}",

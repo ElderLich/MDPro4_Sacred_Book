@@ -152,7 +152,7 @@ Generated from `Utilities/constant.lua`, with English comments carried forward f
 | `REASON_DESTROY` | `0x1` | Destroyed | 破坏 |
 | `REASON_RELEASE` | `0x2` | Tributed | 解放 |
 | `REASON_TEMPORARY` | `0x4` | Temporary | 暂时 |
-| `REASON_MATERIAL` | `0x8` | Used as Fusion/Synchro/Xyz Material or for Ritual/Advanced Summon | 作为融合/同调/超量素材或用於儀式/升級召喚 |
+| `REASON_MATERIAL` | `0x8` | Used as Fusion/Synchro/Xyz Material, Ritual Material, or as a Tribute for a Tribute Summon | 作为融合/同调/超量素材或用於儀式/升級召喚 |
 | `REASON_SUMMON` | `0x10` | Summoned | 召唤 |
 | `REASON_BATTLE` | `0x20` | Destroyed by battle | 战斗破坏 |
 | `REASON_EFFECT` | `0x40` | Affected by effect | 效果 |
@@ -187,12 +187,12 @@ Generated from `Utilities/constant.lua`, with English comments carried forward f
 | `LOCATION_REASON_TOFIELD` | `0x1` | Default value for Duel.GetLocationCount(), e.g., Kaiser Colosseum | Duel.GetLocationCount()預設值,凱薩競技場 |
 | `LOCATION_REASON_CONTROL` | `0x2` | Used by Card.IsControlerCanBeChanged() | Card.IsControlerCanBeChanged()使用 |
 
-## Summon Type
+## Summon Types
 
 | Name | Value | English | Source comment |
 | --- | --- | --- | --- |
 | `SUMMON_TYPE_NORMAL` | `0x10000000` | Normal Summon (can modify value with EFFECT_SUMMON_PROC, EFFECT_SET_PROC) | 通常召唤(EFFECT_SUMMON_PROC,EFFECT_SET_PROC 可用Value修改數值) |
-| `SUMMON_TYPE_ADVANCE` | `0x11000000` | Advanced Summon | 上级召唤 |
+| `SUMMON_TYPE_ADVANCE` | `0x11000000` | Tribute Summon | 上级召唤 |
 | `SUMMON_TYPE_DUAL` | `0x12000000` | Gemini Summon (re-summon) | 再度召唤（二重） |
 | `SUMMON_TYPE_FLIP` | `0x20000000` | Flip Summon | 翻转召唤 |
 | `SUMMON_TYPE_SPECIAL` | `0x40000000` | Special Summon (can modify value with EFFECT_SPSUMMON_PROC, EFFECT_SPSUMMON_PROC_G) | 特殊召唤(EFFECT_SPSUMMON_PROC,EFFECT_SPSUMMON_PROC_G 可用Value修改數值) |
@@ -203,7 +203,7 @@ Generated from `Utilities/constant.lua`, with English comments carried forward f
 | `SUMMON_TYPE_PENDULUM` | `0x4a000000` | Pendulum Summon | 灵摆召唤 |
 | `SUMMON_TYPE_LINK` | `0x4c000000` | Link Summon | 连接召唤 |
 
-## Summon Value
+## Summon Values
 
 | Name | Value | English | Source comment |
 | --- | --- | --- | --- |
@@ -283,14 +283,14 @@ Generated from `Utilities/constant.lua`, with English comments carried forward f
 | `LINK_MARKER_TOP` | `0x080` | Top (↑) | ↑ |
 | `LINK_MARKER_TOP_RIGHT` | `0x100` | Top-Right (↗) | ↗ |
 
-## Counter
+## Counters
 
 | Name | Value | English | Source comment |
 | --- | --- | --- | --- |
 | `COUNTER_WITHOUT_PERMIT` | `0x1000` | Counter that can be placed on non-specific targets | 可以放置在非特定對象的指示物 |
 | `COUNTER_NEED_ENABLE` | `0x2000` | N/A | N/A |
 
-## Phase
+## Phases
 
 | Name | Value | English | Source comment |
 | --- | --- | --- | --- |
@@ -305,14 +305,14 @@ Generated from `Utilities/constant.lua`, with English comments carried forward f
 | `PHASE_MAIN2` | `0x100` | Main Phase 2 | 主要阶段2 |
 | `PHASE_END` | `0x200` | End Phase | 结束阶段 |
 
-## Player
+## Players
 
 | Name | Value | English | Source comment |
 | --- | --- | --- | --- |
 | `PLAYER_NONE` | `2` | Neither player | 2个玩家都不是 |
 | `PLAYER_ALL` | `3` | Both players | 2个玩家都是 |
 
-## Chain info
+## Chain Info
 
 | Name | Value | English | Source comment |
 | --- | --- | --- | --- |
@@ -381,7 +381,7 @@ Generated from `Utilities/constant.lua`, with English comments carried forward f
 | `RESET_OVERLAY` | `0x04000000` | Reset when used as Xyz Material | 超量叠放重置 |
 | `RESET_MSCHANGE` | `0x08000000` | Reset when moving from Monster Zone to Spell/Trap Zone or vice versa (e.g., move_to_field(), Gem Beasts) | 从怪兽区到魔法区，或者从魔法区到怪兽区(move_to_field()、寶玉獸) |
 
-## Combined Timings
+## Combined Reset Masks
 
 | Name | Value | English | Source comment |
 | --- | --- | --- | --- |
@@ -497,8 +497,8 @@ Generated from `Utilities/constant.lua`, with English comments carried forward f
 | `EFFECT_INDESTRUCTABLE` | `40` | Cannot be destroyed | 不会被破坏 |
 | `EFFECT_INDESTRUCTABLE_EFFECT` | `41` | Cannot be destroyed by effects | 不会被效果破坏 |
 | `EFFECT_INDESTRUCTABLE_BATTLE` | `42` | Cannot be destroyed by battle | 不会被战斗破坏 |
-| `EFFECT_UNRELEASABLE_SUM` | `43` | Cannot be used as Tribute for Advanced Summon | 不能做上级召唤的祭品 |
-| `EFFECT_UNRELEASABLE_NONSUM` | `44` | Cannot be used as Tribute for non-Advanced Summon | 不能做上级召唤以外的祭品 |
+| `EFFECT_UNRELEASABLE_SUM` | `43` | Cannot be Tributed for a Tribute Summon | 不能做上级召唤的祭品 |
+| `EFFECT_UNRELEASABLE_NONSUM` | `44` | Cannot be Tributed except for a Tribute Summon | 不能做上级召唤以外的祭品 |
 | `EFFECT_DESTROY_SUBSTITUTE` | `45` | Mandatory destruction substitute (replace this card's destruction with another card) | 必選的代替破壞(此卡被破壞時用其他卡代替) |
 | `EFFECT_CANNOT_RELEASE` | `46` | Cannot perform Tribute actions | 不能进行解放行为 |
 | `EFFECT_INDESTRUCTABLE_COUNT` | `47` | Cannot be destroyed X times per turn | 一回合几次不会被破坏 |
@@ -760,8 +760,8 @@ Generated from `Utilities/constant.lua`, with English comments carried forward f
 | `EVENT_SPSUMMON` | `1105` | During Special Summon | 特殊召唤之际 |
 | `EVENT_MSET` | `1106` | When Setting a monster | 放置怪兽时 |
 | `EVENT_SSET` | `1107` | When Setting a Spell/Trap | 放置魔陷时 |
-| `EVENT_BE_MATERIAL` | `1108` | When used as Synchro/Xyz/Link Material, Tributed for Advanced Summon, or used as Ritual/Fusion Summon material | 作为同调/超量/连结素材、用于升级召唤的解放、作为仪式/融合召唤的素材 |
-| `EVENT_BE_PRE_MATERIAL` | `1109` | When about to be used as Synchro/Xyz/Link Material or Tributed for Advanced Summon | 将要作为同调/超量/连结素材、用于升级召唤的解放 |
+| `EVENT_BE_MATERIAL` | `1108` | When used as Synchro/Xyz/Link Material, used as Ritual/Fusion Material, or Tributed for a Tribute Summon | 作为同调/超量/连结素材、用于升级召唤的解放、作为仪式/融合召唤的素材 |
+| `EVENT_BE_PRE_MATERIAL` | `1109` | When about to be used as Synchro/Xyz/Link Material or Tributed for a Tribute Summon | 将要作为同调/超量/连结素材、用于升级召唤的解放 |
 | `EVENT_DRAW` | `1110` | When drawing | 抽卡时 |
 | `EVENT_DAMAGE` | `1111` | When dealing battle/effect damage | 造成战斗/效果伤害时 |
 | `EVENT_RECOVER` | `1112` | When recovering LP | 回复生命值时 |
@@ -924,7 +924,7 @@ Generated from `Utilities/constant.lua`, with English comments carried forward f
 | `HINTMSG_POSCHANGE` | `528` | Select a monster to change position | 请选择要改变表示形式的怪兽 |
 | `HINTMSG_SELF` | `529` | Select your own card | 请选择自己的卡 |
 | `HINTMSG_OPPO` | `530` | Select an opponent's card | 请选择对方的卡 |
-| `HINTMSG_TRIBUTE` | `531` | Select a monster to Tribute for an Advanced Summon | 请选择上级召唤用需要解放的怪兽 |
+| `HINTMSG_TRIBUTE` | `531` | Select a monster to Tribute for a Tribute Summon | 请选择上级召唤用需要解放的怪兽 |
 | `HINTMSG_DEATTACHFROM` | `532` | Select a monster to remove Xyz Material from | 请选择要取除超量素材的怪兽 |
 | `HINTMSG_LMATERIAL` | `533` | Select a card to use as Link Material | 请选择要作为连接素材的卡 |
 | `HINTMSG_ATTACKTARGET` | `549` | Select an attack target | 请选择攻击的对象 |
