@@ -1476,6 +1476,7 @@ FUNCTION_EN_OVERRIDES = {
     "Card.IsSynchroSummonable": [
         "Checks whether c can be Synchro Summoned with tuner and the available material group mg.",
         "If tuner is nil, this behaves like the regular Special Summon procedure check for c.",
+        "min and max restrict the number of non-Tuner Synchro Materials used by the procedure.",
     ],
     "Duel.SynchroSummon": [
         "Performs a Synchro Summon of c for player, optionally requiring tuner and selecting materials from mg.",
@@ -1668,7 +1669,10 @@ FUNCTION_EN_OVERRIDES = {
         "Checks whether c can be returned to the hand as a cost.",
         "This uses c's actual return destination and returns false when the card would go somewhere other than the player's hand, such as the Extra Deck.",
     ],
-    "Card.IsAbleToRemoveAsCost": ["Checks whether c can be banished as a cost."],
+    "Card.IsAbleToRemoveAsCost": [
+        "Checks whether c can be banished as a cost by the current reason player.",
+        "pos controls the banished position and defaults to POS_FACEUP.",
+    ],
     "Card.IsRelateToChain": [
         "Checks whether c is still related to chainc.",
         "The activating card and cards selected as targets with Duel.SetTargetCard or Duel.SelectTarget automatically become related to that Chain. The relation is lost when the card leaves the expected place.",
@@ -1783,7 +1787,10 @@ FUNCTION_EN_OVERRIDES = {
     "Duel.GetRitualMaterial": ["Returns the cards player can use as Ritual Material, including cards in the hand/field that can be Tributed and cards such as Ritual Djinn monsters in the Graveyard."],
     "Duel.GetRitualMaterialEx": ["Returns the group of cards player can use as Ritual Material, including monsters without a Level."],
     "Duel.GetReadyChain": ["Returns the number of chains whose Target function has already been executed."],
-    "Duel.GetSynchroMaterial": ["Gets the group of cards player can use as Synchro Material."],
+    "Duel.GetSynchroMaterial": [
+        "Gets the group of cards player can use as Synchro Material.",
+        "Face-down cards in the Monster Zone are omitted unless facedown is true.",
+    ],
     "Duel.GetSZoneCount": [
         "Returns the number of available Spell & Trap Zones for player after targets leave, optionally restricted by zone. The Field Zone is not included.",
         "The additional use_player and reason parameters are used by effects that restrict zones, such as Kaiser Colosseum.",
@@ -3078,9 +3085,22 @@ FUNCTION_ZH_OVERRIDES = {
         "等价于Auxiliary.AddSynchroProcedure(c, f1, f2, 1, 1)。",
     ],
     "Card.IsAbleToExtra": ["判断c能否由当前原因玩家返回额外卡组。"],
+    "Card.IsAbleToHand": [
+        "判断c能否由player送去或返回手牌。",
+        "player省略时使用当前原因玩家。",
+    ],
+    "Card.IsAbleToRemoveAsCost": [
+        "判断c能否由当前原因玩家作为cost除外。",
+        "pos指定除外时的表示形式，省略时为POS_FACEUP。",
+    ],
     "Card.IsSynchroSummonable": [
         "判断c能否使用tuner以及可用素材组mg进行同调召唤。",
         "tuner为nil时，相当于检查c通常的特殊召唤手续。",
+        "min和max限制该手续使用的非调整同调素材数量。",
+    ],
+    "Duel.GetSynchroMaterial": [
+        "返回player可作为同调素材使用的卡组。",
+        "怪兽区域中里侧表示的卡只有在facedown为true时才包含。",
     ],
     "Duel.SynchroSummon": [
         "为player进行c的同调召唤；可以指定必须使用的tuner，并可从mg中选择素材。",

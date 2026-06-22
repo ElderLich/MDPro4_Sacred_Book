@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-06-22T20:30:35+00:00",
+    "generated_at": "2026-06-22T20:49:53+00:00",
     "workspace": "D:\\Programs\\GitHub\\MDPro3_Sacred_Book",
     "dataeditorx_data": "D:\\Programs\\GitHub\\DataEditorX\\DataEditorX\\data",
     "mdpro3_locales": "D:\\Programs\\GitHub\\MDPro3_Data\\Data\\locales",
@@ -72,7 +72,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 1569,
+          "line": 1576,
           "origin": "def"
         }
       ],
@@ -151,7 +151,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 1722,
+          "line": 1738,
           "origin": "def"
         }
       ],
@@ -206,7 +206,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 1793,
+          "line": 1809,
           "origin": "def"
         }
       ],
@@ -253,7 +253,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 991,
+          "line": 993,
           "origin": "def"
         }
       ],
@@ -310,7 +310,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 1730,
+          "line": 1746,
           "origin": "def"
         }
       ],
@@ -400,7 +400,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 1024,
+          "line": 1026,
           "origin": "def"
         }
       ],
@@ -452,7 +452,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 877,
+          "line": 879,
           "origin": "def"
         }
       ],
@@ -524,7 +524,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 1678,
+          "line": 1694,
           "origin": "def"
         }
       ],
@@ -575,7 +575,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 1684,
+          "line": 1700,
           "origin": "def"
         }
       ],
@@ -641,7 +641,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 912,
+          "line": 914,
           "origin": "def"
         }
       ],
@@ -695,7 +695,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 883,
+          "line": 885,
           "origin": "def"
         }
       ],
@@ -761,7 +761,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 1781,
+          "line": 1797,
           "origin": "def"
         }
       ],
@@ -807,7 +807,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 1143,
+          "line": 1145,
           "origin": "def"
         }
       ],
@@ -852,7 +852,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 1201,
+          "line": 1203,
           "origin": "def"
         }
       ],
@@ -917,7 +917,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 1182,
+          "line": 1184,
           "origin": "def"
         }
       ],
@@ -966,7 +966,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 1134,
+          "line": 1136,
           "origin": "def"
         }
       ],
@@ -1019,7 +1019,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 1124,
+          "line": 1126,
           "origin": "def"
         }
       ],
@@ -1080,7 +1080,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 1591,
+          "line": 1598,
           "origin": "def"
         }
       ],
@@ -1121,7 +1121,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 825,
+          "line": 827,
           "origin": "def"
         }
       ],
@@ -1168,7 +1168,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 1196,
+          "line": 1198,
           "origin": "def"
         }
       ],
@@ -1217,7 +1217,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 1008,
+          "line": 1010,
           "origin": "def"
         }
       ],
@@ -1310,7 +1310,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 1747,
+          "line": 1763,
           "origin": "def"
         }
       ],
@@ -1356,7 +1356,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 954,
+          "line": 956,
           "origin": "def"
         }
       ],
@@ -1402,7 +1402,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 937,
+          "line": 939,
           "origin": "def"
         }
       ],
@@ -1448,7 +1448,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 926,
+          "line": 928,
           "origin": "def"
         }
       ],
@@ -1493,7 +1493,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 931,
+          "line": 933,
           "origin": "def"
         }
       ],
@@ -1729,7 +1729,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 943,
+          "line": 945,
           "origin": "def"
         }
       ],
@@ -1774,7 +1774,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 948,
+          "line": 950,
           "origin": "def"
         }
       ],
@@ -1866,7 +1866,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 1741,
+          "line": 1757,
           "origin": "def"
         }
       ],
@@ -1912,7 +1912,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 970,
+          "line": 972,
           "origin": "def"
         }
       ],
@@ -1958,7 +1958,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 980,
+          "line": 982,
           "origin": "def"
         }
       ],
@@ -2258,7 +2258,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 1583,
+          "line": 1590,
           "origin": "def"
         }
       ],
@@ -2450,7 +2450,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 1078,
+          "line": 1080,
           "origin": "def"
         }
       ],
@@ -2496,7 +2496,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 860,
+          "line": 862,
           "origin": "def"
         }
       ],
@@ -2542,7 +2542,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 855,
+          "line": 857,
           "origin": "def"
         }
       ],
@@ -2588,7 +2588,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 865,
+          "line": 867,
           "origin": "def"
         }
       ],
@@ -2682,7 +2682,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 975,
+          "line": 977,
           "origin": "def"
         }
       ],
@@ -2734,7 +2734,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 1099,
+          "line": 1101,
           "origin": "def"
         }
       ],
@@ -2791,7 +2791,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 1118,
+          "line": 1120,
           "origin": "def"
         }
       ],
@@ -3000,7 +3000,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 1041,
+          "line": 1043,
           "origin": "def"
         }
       ],
@@ -3619,7 +3619,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 845,
+          "line": 847,
           "origin": "def"
         }
       ],
@@ -3665,7 +3665,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 850,
+          "line": 852,
           "origin": "def"
         }
       ],
@@ -4272,7 +4272,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 899,
+          "line": 901,
           "origin": "def"
         }
       ],
@@ -4318,7 +4318,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 894,
+          "line": 896,
           "origin": "def"
         }
       ],
@@ -4364,7 +4364,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 904,
+          "line": 906,
           "origin": "def"
         }
       ],
@@ -4454,7 +4454,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 996,
+          "line": 998,
           "origin": "def"
         }
       ],
@@ -4499,7 +4499,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 1001,
+          "line": 1003,
           "origin": "def"
         }
       ],
@@ -4826,7 +4826,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 870,
+          "line": 872,
           "origin": "def"
         }
       ],
@@ -6153,7 +6153,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 1736,
+          "line": 1752,
           "origin": "def"
         }
       ],
@@ -6215,7 +6215,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 1033,
+          "line": 1035,
           "origin": "def"
         }
       ],
@@ -6261,7 +6261,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 835,
+          "line": 837,
           "origin": "def"
         }
       ],
@@ -6404,7 +6404,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 889,
+          "line": 891,
           "origin": "def"
         }
       ],
@@ -6495,7 +6495,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 1553,
+          "line": 1560,
           "origin": "def"
         }
       ],
@@ -6541,7 +6541,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 1313,
+          "line": 1319,
           "origin": "def"
         }
       ],
@@ -6585,7 +6585,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 1345,
+          "line": 1351,
           "origin": "def"
         }
       ],
@@ -6629,7 +6629,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 1355,
+          "line": 1361,
           "origin": "def"
         }
       ],
@@ -6673,7 +6673,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 1319,
+          "line": 1325,
           "origin": "def"
         }
       ],
@@ -6718,7 +6718,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 1350,
+          "line": 1356,
           "origin": "def"
         }
       ],
@@ -6762,7 +6762,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 1324,
+          "line": 1330,
           "origin": "def"
         }
       ],
@@ -6806,7 +6806,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 1360,
+          "line": 1366,
           "origin": "def"
         }
       ],
@@ -6827,6 +6827,12 @@
           "type": "Card",
           "optional": false,
           "description": ""
+        },
+        {
+          "name": "player",
+          "type": "int",
+          "optional": true,
+          "description": "default: reason player"
         }
       ],
       "returns": [
@@ -6836,9 +6842,8 @@
         }
       ],
       "description_zh": [
-        "检查c是否可以送去手卡",
-        "注：仅当卡片或者玩家受到“不能加入手卡”的效果的影响时（如雷王）此函数才返回false",
-        "##以下几个函数类似"
+        "判断c能否由player送去或返回手牌。",
+        "player省略时使用当前原因玩家。"
       ],
       "description_en": [
         "Checks whether c can be returned or added to the hand by the current reason player.",
@@ -6853,13 +6858,14 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 1308,
+          "line": 1314,
           "origin": "def"
         }
       ],
       "aliases": [],
       "tags": [
-        "core-binding"
+        "core-binding",
+        "manual-zh-doc"
       ],
       "core_binding": true,
       "core_handler": "card_is_able_to_hand"
@@ -6901,7 +6907,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 1340,
+          "line": 1346,
           "origin": "def"
         }
       ],
@@ -6964,7 +6970,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 1332,
+          "line": 1338,
           "origin": "def"
         }
       ],
@@ -6985,6 +6991,12 @@
           "type": "Card",
           "optional": false,
           "description": ""
+        },
+        {
+          "name": "pos",
+          "type": "int",
+          "optional": true,
+          "description": "default: POS_FACEUP"
         }
       ],
       "returns": [
@@ -6994,10 +7006,12 @@
         }
       ],
       "description_zh": [
-        "检查c是否可以作为cost除外"
+        "判断c能否由当前原因玩家作为cost除外。",
+        "pos指定除外时的表示形式，省略时为POS_FACEUP。"
       ],
       "description_en": [
-        "Checks whether c can be banished as a cost."
+        "Checks whether c can be banished as a cost by the current reason player.",
+        "pos controls the banished position and defaults to POS_FACEUP."
       ],
       "english_status": "translated_exact",
       "source_files": [
@@ -7008,13 +7022,14 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 1365,
+          "line": 1372,
           "origin": "def"
         }
       ],
       "aliases": [],
       "tags": [
-        "core-binding"
+        "core-binding",
+        "manual-zh-doc"
       ],
       "core_binding": true,
       "core_handler": "card_is_able_to_remove_as_cost"
@@ -7103,7 +7118,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 760,
+          "line": 762,
           "origin": "def"
         }
       ],
@@ -7153,7 +7168,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 639,
+          "line": 641,
           "origin": "def"
         }
       ],
@@ -7217,7 +7232,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 695,
+          "line": 697,
           "origin": "def"
         }
       ],
@@ -7265,7 +7280,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 1389,
+          "line": 1396,
           "origin": "def"
         }
       ],
@@ -7319,7 +7334,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 1515,
+          "line": 1522,
           "origin": "def"
         }
       ],
@@ -7373,7 +7388,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 1509,
+          "line": 1516,
           "origin": "def"
         }
       ],
@@ -7419,7 +7434,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 1413,
+          "line": 1420,
           "origin": "def"
         }
       ],
@@ -7471,7 +7486,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 722,
+          "line": 724,
           "origin": "def"
         }
       ],
@@ -7541,7 +7556,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 1616,
+          "line": 1631,
           "origin": "def"
         }
       ],
@@ -7593,7 +7608,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 1711,
+          "line": 1727,
           "origin": "def"
         }
       ],
@@ -7654,7 +7669,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 1699,
+          "line": 1715,
           "origin": "def"
         }
       ],
@@ -7704,7 +7719,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 1705,
+          "line": 1721,
           "origin": "def"
         }
       ],
@@ -7763,7 +7778,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 1643,
+          "line": 1659,
           "origin": "def"
         }
       ],
@@ -7815,7 +7830,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 1668,
+          "line": 1684,
           "origin": "def"
         }
       ],
@@ -7872,6 +7887,11 @@
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
           "line": 3583,
           "origin": "core"
+        },
+        {
+          "path": "Define/def.lua",
+          "line": 1617,
+          "origin": "def"
         }
       ],
       "aliases": [],
@@ -7921,7 +7941,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 1656,
+          "line": 1672,
           "origin": "def"
         }
       ],
@@ -8014,7 +8034,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 1301,
+          "line": 1306,
           "origin": "def"
         }
       ],
@@ -8071,7 +8091,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 1650,
+          "line": 1666,
           "origin": "def"
         }
       ],
@@ -8125,7 +8145,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 1662,
+          "line": 1678,
           "origin": "def"
         }
       ],
@@ -8173,7 +8193,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 1602,
+          "line": 1609,
           "origin": "def"
         }
       ],
@@ -8225,7 +8245,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 1631,
+          "line": 1646,
           "origin": "def"
         }
       ],
@@ -8279,7 +8299,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 1637,
+          "line": 1652,
           "origin": "def"
         }
       ],
@@ -8349,7 +8369,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 1625,
+          "line": 1640,
           "origin": "def"
         }
       ],
@@ -8397,7 +8417,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 1607,
+          "line": 1622,
           "origin": "def"
         }
       ],
@@ -8457,7 +8477,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 1398,
+          "line": 1405,
           "origin": "def"
         }
       ],
@@ -8521,7 +8541,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 627,
+          "line": 629,
           "origin": "def"
         }
       ],
@@ -8572,7 +8592,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 1441,
+          "line": 1448,
           "origin": "def"
         }
       ],
@@ -8630,7 +8650,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 1561,
+          "line": 1568,
           "origin": "def"
         }
       ],
@@ -8696,7 +8716,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 703,
+          "line": 705,
           "origin": "def"
         }
       ],
@@ -8750,7 +8770,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 1527,
+          "line": 1534,
           "origin": "def"
         }
       ],
@@ -8804,7 +8824,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 1521,
+          "line": 1528,
           "origin": "def"
         }
       ],
@@ -8850,7 +8870,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 1423,
+          "line": 1430,
           "origin": "def"
         }
       ],
@@ -8904,7 +8924,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 1212,
+          "line": 1214,
           "origin": "def"
         }
       ],
@@ -8950,7 +8970,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 959,
+          "line": 961,
           "origin": "def"
         }
       ],
@@ -8995,7 +9015,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 1206,
+          "line": 1208,
           "origin": "def"
         }
       ],
@@ -9050,7 +9070,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 1384,
+          "line": 1391,
           "origin": "def"
         }
       ],
@@ -9094,7 +9114,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 821,
+          "line": 823,
           "origin": "def"
         }
       ],
@@ -9146,7 +9166,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 809,
+          "line": 811,
           "origin": "def"
         }
       ],
@@ -9190,7 +9210,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 748,
+          "line": 750,
           "origin": "def"
         }
       ],
@@ -9281,7 +9301,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 1418,
+          "line": 1425,
           "origin": "def"
         }
       ],
@@ -9325,7 +9345,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 1403,
+          "line": 1410,
           "origin": "def"
         }
       ],
@@ -9370,7 +9390,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 1408,
+          "line": 1415,
           "origin": "def"
         }
       ],
@@ -9414,7 +9434,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 1547,
+          "line": 1554,
           "origin": "def"
         }
       ],
@@ -9473,7 +9493,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 729,
+          "line": 731,
           "origin": "def"
         }
       ],
@@ -9644,7 +9664,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 1229,
+          "line": 1231,
           "origin": "def"
         }
       ],
@@ -9697,7 +9717,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 645,
+          "line": 647,
           "origin": "def"
         }
       ],
@@ -9749,7 +9769,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 986,
+          "line": 988,
           "origin": "def"
         }
       ],
@@ -9795,7 +9815,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 1537,
+          "line": 1544,
           "origin": "def"
         }
       ],
@@ -9857,7 +9877,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 1060,
+          "line": 1062,
           "origin": "def"
         }
       ],
@@ -9903,7 +9923,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 1532,
+          "line": 1539,
           "origin": "def"
         }
       ],
@@ -9953,7 +9973,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 1690,
+          "line": 1706,
           "origin": "def"
         }
       ],
@@ -10017,7 +10037,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 671,
+          "line": 673,
           "origin": "def"
         }
       ],
@@ -10068,7 +10088,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 1479,
+          "line": 1486,
           "origin": "def"
         }
       ],
@@ -10118,7 +10138,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 1473,
+          "line": 1480,
           "origin": "def"
         }
       ],
@@ -10180,7 +10200,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 687,
+          "line": 689,
           "origin": "def"
         }
       ],
@@ -10232,7 +10252,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 1503,
+          "line": 1510,
           "origin": "def"
         }
       ],
@@ -10292,7 +10312,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 736,
+          "line": 738,
           "origin": "def"
         }
       ],
@@ -10344,7 +10364,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 1497,
+          "line": 1504,
           "origin": "def"
         }
       ],
@@ -10520,7 +10540,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 716,
+          "line": 718,
           "origin": "def"
         }
       ],
@@ -10702,7 +10722,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 1261,
+          "line": 1266,
           "origin": "def"
         }
       ],
@@ -10754,7 +10774,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 663,
+          "line": 665,
           "origin": "def"
         }
       ],
@@ -10807,7 +10827,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 1461,
+          "line": 1468,
           "origin": "def"
         }
       ],
@@ -10878,7 +10898,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 1281,
+          "line": 1286,
           "origin": "def"
         }
       ],
@@ -10931,7 +10951,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 743,
+          "line": 745,
           "origin": "def"
         }
       ],
@@ -10981,7 +11001,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 790,
+          "line": 792,
           "origin": "def"
         }
       ],
@@ -11028,7 +11048,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 1453,
+          "line": 1460,
           "origin": "def"
         }
       ],
@@ -11092,7 +11112,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 619,
+          "line": 621,
           "origin": "def"
         }
       ],
@@ -11144,7 +11164,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 803,
+          "line": 805,
           "origin": "def"
         }
       ],
@@ -11258,7 +11278,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 1429,
+          "line": 1436,
           "origin": "def"
         }
       ],
@@ -11309,7 +11329,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 1447,
+          "line": 1454,
           "origin": "def"
         }
       ],
@@ -11359,7 +11379,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 1467,
+          "line": 1474,
           "origin": "def"
         }
       ],
@@ -11409,7 +11429,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 1435,
+          "line": 1442,
           "origin": "def"
         }
       ],
@@ -11520,7 +11540,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 1542,
+          "line": 1549,
           "origin": "def"
         }
       ],
@@ -11571,7 +11591,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 709,
+          "line": 711,
           "origin": "def"
         }
       ],
@@ -11635,7 +11655,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 679,
+          "line": 681,
           "origin": "def"
         }
       ],
@@ -11687,7 +11707,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 1491,
+          "line": 1498,
           "origin": "def"
         }
       ],
@@ -11739,7 +11759,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 1485,
+          "line": 1492,
           "origin": "def"
         }
       ],
@@ -11791,7 +11811,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 754,
+          "line": 756,
           "origin": "def"
         }
       ],
@@ -11836,7 +11856,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 1173,
+          "line": 1175,
           "origin": "def"
         }
       ],
@@ -11886,7 +11906,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 1167,
+          "line": 1169,
           "origin": "def"
         }
       ],
@@ -11942,7 +11962,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 1161,
+          "line": 1163,
           "origin": "def"
         }
       ],
@@ -11993,7 +12013,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 1152,
+          "line": 1154,
           "origin": "def"
         }
       ],
@@ -12046,7 +12066,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 1371,
+          "line": 1378,
           "origin": "def"
         }
       ],
@@ -12092,7 +12112,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 1376,
+          "line": 1383,
           "origin": "def"
         }
       ],
@@ -12195,7 +12215,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 1235,
+          "line": 1237,
           "origin": "def"
         }
       ],
@@ -12242,7 +12262,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 1223,
+          "line": 1225,
           "origin": "def"
         }
       ],
@@ -12342,7 +12362,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 1287,
+          "line": 1292,
           "origin": "def"
         }
       ],
@@ -12392,7 +12412,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 784,
+          "line": 786,
           "origin": "def"
         }
       ],
@@ -12463,7 +12483,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 1271,
+          "line": 1276,
           "origin": "def"
         }
       ],
@@ -12509,7 +12529,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 1217,
+          "line": 1219,
           "origin": "def"
         }
       ],
@@ -12561,7 +12581,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 772,
+          "line": 774,
           "origin": "def"
         }
       ],
@@ -12613,7 +12633,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 778,
+          "line": 780,
           "origin": "def"
         }
       ],
@@ -12664,7 +12684,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 766,
+          "line": 768,
           "origin": "def"
         }
       ],
@@ -12698,6 +12718,18 @@
           "type": "Group",
           "optional": true,
           "description": ""
+        },
+        {
+          "name": "min",
+          "type": "int",
+          "optional": true,
+          "description": "default: 0"
+        },
+        {
+          "name": "max",
+          "type": "int",
+          "optional": true,
+          "description": "default: 0"
         }
       ],
       "returns": [
@@ -12708,11 +12740,13 @@
       ],
       "description_zh": [
         "判断c能否使用tuner以及可用素材组mg进行同调召唤。",
-        "tuner为nil时，相当于检查c通常的特殊召唤手续。"
+        "tuner为nil时，相当于检查c通常的特殊召唤手续。",
+        "min和max限制该手续使用的非调整同调素材数量。"
       ],
       "description_en": [
         "Checks whether c can be Synchro Summoned with tuner and the available material group mg.",
-        "If tuner is nil, this behaves like the regular Special Summon procedure check for c."
+        "If tuner is nil, this behaves like the regular Special Summon procedure check for c.",
+        "min and max restrict the number of non-Tuner Synchro Materials used by the procedure."
       ],
       "english_status": "translated_exact",
       "source_files": [
@@ -12723,7 +12757,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 1243,
+          "line": 1247,
           "origin": "def"
         }
       ],
@@ -12774,7 +12808,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 651,
+          "line": 653,
           "origin": "def"
         }
       ],
@@ -12828,7 +12862,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 797,
+          "line": 799,
           "origin": "def"
         }
       ],
@@ -12878,7 +12912,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 633,
+          "line": 635,
           "origin": "def"
         }
       ],
@@ -12999,7 +13033,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 1252,
+          "line": 1256,
           "origin": "def"
         }
       ],
@@ -13051,7 +13085,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 657,
+          "line": 659,
           "origin": "def"
         }
       ],
@@ -13110,7 +13144,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 1050,
+          "line": 1052,
           "origin": "def"
         }
       ],
@@ -13196,7 +13230,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 1093,
+          "line": 1095,
           "origin": "def"
         }
       ],
@@ -13241,7 +13275,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 1139,
+          "line": 1141,
           "origin": "def"
         }
       ],
@@ -13293,7 +13327,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 1129,
+          "line": 1131,
           "origin": "def"
         }
       ],
@@ -13364,7 +13398,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 1577,
+          "line": 1584,
           "origin": "def"
         }
       ],
@@ -13436,7 +13470,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 921,
+          "line": 923,
           "origin": "def"
         }
       ],
@@ -13502,7 +13536,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 1191,
+          "line": 1193,
           "origin": "def"
         }
       ],
@@ -13555,7 +13589,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 1072,
+          "line": 1074,
           "origin": "def"
         }
       ],
@@ -13602,7 +13636,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 1104,
+          "line": 1106,
           "origin": "def"
         }
       ],
@@ -13660,7 +13694,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 1787,
+          "line": 1803,
           "origin": "def"
         }
       ],
@@ -13702,7 +13736,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 1764,
+          "line": 1780,
           "origin": "def"
         }
       ],
@@ -13751,7 +13785,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 965,
+          "line": 967,
           "origin": "def"
         }
       ],
@@ -13804,7 +13838,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 1597,
+          "line": 1604,
           "origin": "def"
         }
       ],
@@ -13862,7 +13896,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 1111,
+          "line": 1113,
           "origin": "def"
         }
       ],
@@ -13915,7 +13949,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 1760,
+          "line": 1776,
           "origin": "def"
         }
       ],
@@ -13967,7 +14001,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 840,
+          "line": 842,
           "origin": "def"
         }
       ],
@@ -14066,7 +14100,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 1799,
+          "line": 1815,
           "origin": "def"
         }
       ],
@@ -14121,7 +14155,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 816,
+          "line": 818,
           "origin": "def"
         }
       ],
@@ -14168,7 +14202,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 830,
+          "line": 832,
           "origin": "def"
         }
       ],
@@ -14239,7 +14273,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 1773,
+          "line": 1789,
           "origin": "def"
         }
       ],
@@ -14319,7 +14353,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 4082,
+          "line": 4104,
           "origin": "def"
         }
       ],
@@ -14365,7 +14399,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 4070,
+          "line": 4092,
           "origin": "def"
         }
       ],
@@ -14422,7 +14456,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 4113,
+          "line": 4135,
           "origin": "def"
         }
       ],
@@ -14473,7 +14507,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 4102,
+          "line": 4124,
           "origin": "def"
         }
       ],
@@ -14524,7 +14558,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 4107,
+          "line": 4129,
           "origin": "def"
         }
       ],
@@ -14581,7 +14615,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 4096,
+          "line": 4118,
           "origin": "def"
         }
       ],
@@ -14627,7 +14661,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 4121,
+          "line": 4143,
           "origin": "def"
         }
       ],
@@ -14666,7 +14700,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 4124,
+          "line": 4146,
           "origin": "def"
         }
       ],
@@ -14711,7 +14745,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 4128,
+          "line": 4150,
           "origin": "def"
         }
       ],
@@ -14775,7 +14809,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 4090,
+          "line": 4112,
           "origin": "def"
         }
       ],
@@ -14819,7 +14853,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 4133,
+          "line": 4155,
           "origin": "def"
         }
       ],
@@ -14864,7 +14898,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 2145,
+          "line": 2161,
           "origin": "def"
         }
       ],
@@ -14918,7 +14952,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 3459,
+          "line": 3477,
           "origin": "def"
         }
       ],
@@ -14957,7 +14991,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 2650,
+          "line": 2666,
           "origin": "def"
         }
       ],
@@ -14998,7 +15032,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 2647,
+          "line": 2663,
           "origin": "def"
         }
       ],
@@ -15058,7 +15092,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 3203,
+          "line": 3220,
           "origin": "def"
         }
       ],
@@ -15116,7 +15150,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 3218,
+          "line": 3235,
           "origin": "def"
         }
       ],
@@ -15162,7 +15196,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 3239,
+          "line": 3256,
           "origin": "def"
         }
       ],
@@ -15238,7 +15272,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 3211,
+          "line": 3228,
           "origin": "def"
         }
       ],
@@ -15308,7 +15342,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 3234,
+          "line": 3251,
           "origin": "def"
         }
       ],
@@ -15366,7 +15400,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 3195,
+          "line": 3212,
           "origin": "def"
         }
       ],
@@ -15414,7 +15448,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 3224,
+          "line": 3241,
           "origin": "def"
         }
       ],
@@ -15454,7 +15488,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 2415,
+          "line": 2431,
           "origin": "def"
         }
       ],
@@ -15507,7 +15541,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 2386,
+          "line": 2402,
           "origin": "def"
         }
       ],
@@ -15550,7 +15584,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 2639,
+          "line": 2655,
           "origin": "def"
         }
       ],
@@ -15604,7 +15638,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 2374,
+          "line": 2390,
           "origin": "def"
         }
       ],
@@ -15651,7 +15685,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 2379,
+          "line": 2395,
           "origin": "def"
         }
       ],
@@ -15706,7 +15740,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 2397,
+          "line": 2413,
           "origin": "def"
         }
       ],
@@ -15753,7 +15787,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 2421,
+          "line": 2437,
           "origin": "def"
         }
       ],
@@ -15831,7 +15865,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 2102,
+          "line": 2118,
           "origin": "def"
         }
       ],
@@ -15877,7 +15911,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 2402,
+          "line": 2418,
           "origin": "def"
         }
       ],
@@ -15929,7 +15963,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 2412,
+          "line": 2428,
           "origin": "def"
         }
       ],
@@ -15980,7 +16014,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 2407,
+          "line": 2423,
           "origin": "def"
         }
       ],
@@ -16031,7 +16065,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 3436,
+          "line": 3454,
           "origin": "def"
         }
       ],
@@ -16068,7 +16102,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 3440,
+          "line": 3458,
           "origin": "def"
         }
       ],
@@ -16146,7 +16180,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 2197,
+          "line": 2213,
           "origin": "def"
         }
       ],
@@ -16204,7 +16238,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 2533,
+          "line": 2549,
           "origin": "def"
         }
       ],
@@ -16262,7 +16296,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 2307,
+          "line": 2323,
           "origin": "def"
         }
       ],
@@ -16318,7 +16352,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 2881,
+          "line": 2897,
           "origin": "def"
         }
       ],
@@ -16355,7 +16389,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 3452,
+          "line": 3470,
           "origin": "def"
         }
       ],
@@ -16427,7 +16461,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 2764,
+          "line": 2780,
           "origin": "def"
         }
       ],
@@ -16510,7 +16544,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 2787,
+          "line": 2803,
           "origin": "def"
         }
       ],
@@ -16581,7 +16615,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 3104,
+          "line": 3121,
           "origin": "def"
         }
       ],
@@ -16627,7 +16661,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 2450,
+          "line": 2466,
           "origin": "def"
         }
       ],
@@ -16708,7 +16742,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 2932,
+          "line": 2949,
           "origin": "def"
         }
       ],
@@ -16753,7 +16787,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 2222,
+          "line": 2238,
           "origin": "def"
         }
       ],
@@ -16830,7 +16864,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 2824,
+          "line": 2840,
           "origin": "def"
         }
       ],
@@ -16912,7 +16946,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 2957,
+          "line": 2974,
           "origin": "def"
         }
       ],
@@ -16987,7 +17021,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 3061,
+          "line": 3078,
           "origin": "def"
         }
       ],
@@ -17027,7 +17061,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 3051,
+          "line": 3068,
           "origin": "def"
         }
       ],
@@ -17061,7 +17095,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 2999,
+          "line": 3016,
           "origin": "def"
         }
       ],
@@ -17120,7 +17154,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 2177,
+          "line": 2193,
           "origin": "def"
         }
       ],
@@ -17167,7 +17201,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 2166,
+          "line": 2182,
           "origin": "def"
         }
       ],
@@ -17219,7 +17253,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 2171,
+          "line": 2187,
           "origin": "def"
         }
       ],
@@ -17272,7 +17306,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 2013,
+          "line": 2029,
           "origin": "def"
         }
       ],
@@ -17339,7 +17373,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 2254,
+          "line": 2270,
           "origin": "def"
         }
       ],
@@ -17405,7 +17439,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 1885,
+          "line": 1901,
           "origin": "def"
         }
       ],
@@ -17444,7 +17478,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 2345,
+          "line": 2361,
           "origin": "def"
         }
       ],
@@ -17496,7 +17530,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 2341,
+          "line": 2357,
           "origin": "def"
         }
       ],
@@ -17552,7 +17586,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 2320,
+          "line": 2336,
           "origin": "def"
         }
       ],
@@ -17634,7 +17668,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 2332,
+          "line": 2348,
           "origin": "def"
         }
       ],
@@ -17692,7 +17726,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 2244,
+          "line": 2260,
           "origin": "def"
         }
       ],
@@ -17731,7 +17765,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 1803,
+          "line": 1819,
           "origin": "def"
         }
       ],
@@ -17804,7 +17838,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 2278,
+          "line": 2294,
           "origin": "def"
         }
       ],
@@ -17841,7 +17875,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 2281,
+          "line": 2297,
           "origin": "def"
         }
       ],
@@ -17909,7 +17943,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 3448,
+          "line": 3466,
           "origin": "def"
         }
       ],
@@ -17948,7 +17982,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 2620,
+          "line": 2636,
           "origin": "def"
         }
       ],
@@ -17985,7 +18019,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 2624,
+          "line": 2640,
           "origin": "def"
         }
       ],
@@ -18029,7 +18063,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 2391,
+          "line": 2407,
           "origin": "def"
         }
       ],
@@ -18075,7 +18109,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 3471,
+          "line": 3489,
           "origin": "def"
         }
       ],
@@ -18126,7 +18160,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 2630,
+          "line": 2646,
           "origin": "def"
         }
       ],
@@ -18192,7 +18226,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 2576,
+          "line": 2592,
           "origin": "def"
         }
       ],
@@ -18263,7 +18297,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 2565,
+          "line": 2581,
           "origin": "def"
         }
       ],
@@ -18309,7 +18343,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 2161,
+          "line": 2177,
           "origin": "def"
         }
       ],
@@ -18348,7 +18382,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 3267,
+          "line": 3284,
           "origin": "def"
         }
       ],
@@ -18420,7 +18454,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 2291,
+          "line": 2307,
           "origin": "def"
         }
       ],
@@ -18483,7 +18517,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 2085,
+          "line": 2101,
           "origin": "def"
         }
       ],
@@ -18522,7 +18556,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 2537,
+          "line": 2553,
           "origin": "def"
         }
       ],
@@ -18561,7 +18595,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 2603,
+          "line": 2619,
           "origin": "def"
         }
       ],
@@ -18619,7 +18653,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 3466,
+          "line": 3484,
           "origin": "def"
         }
       ],
@@ -18671,7 +18705,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 2670,
+          "line": 2686,
           "origin": "def"
         }
       ],
@@ -18726,7 +18760,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 3275,
+          "line": 3292,
           "origin": "def"
         }
       ],
@@ -18772,7 +18806,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 1832,
+          "line": 1848,
           "origin": "def"
         }
       ],
@@ -18824,7 +18858,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 2676,
+          "line": 2692,
           "origin": "def"
         }
       ],
@@ -18883,7 +18917,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 2526,
+          "line": 2542,
           "origin": "def"
         }
       ],
@@ -18941,7 +18975,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 2657,
+          "line": 2673,
           "origin": "def"
         }
       ],
@@ -18998,7 +19032,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 2664,
+          "line": 2680,
           "origin": "def"
         }
       ],
@@ -19074,7 +19108,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 2712,
+          "line": 2728,
           "origin": "def"
         }
       ],
@@ -19114,7 +19148,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 2582,
+          "line": 2598,
           "origin": "def"
         }
       ],
@@ -19165,7 +19199,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 1855,
+          "line": 1871,
           "origin": "def"
         }
       ],
@@ -19222,7 +19256,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 1874,
+          "line": 1890,
           "origin": "def"
         }
       ],
@@ -19280,7 +19314,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 2979,
+          "line": 2996,
           "origin": "def"
         }
       ],
@@ -19326,7 +19360,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 3126,
+          "line": 3143,
           "origin": "def"
         }
       ],
@@ -19382,7 +19416,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 2506,
+          "line": 2522,
           "origin": "def"
         }
       ],
@@ -19440,7 +19474,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 2513,
+          "line": 2529,
           "origin": "def"
         }
       ],
@@ -19485,7 +19519,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 2518,
+          "line": 2534,
           "origin": "def"
         }
       ],
@@ -19560,7 +19594,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 2462,
+          "line": 2478,
           "origin": "def"
         }
       ],
@@ -19635,7 +19669,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 2493,
+          "line": 2509,
           "origin": "def"
         }
       ],
@@ -19681,7 +19715,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 1808,
+          "line": 1824,
           "origin": "def"
         }
       ],
@@ -19757,7 +19791,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 2688,
+          "line": 2704,
           "origin": "def"
         }
       ],
@@ -19835,7 +19869,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 2700,
+          "line": 2716,
           "origin": "def"
         }
       ],
@@ -19885,7 +19919,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 2874,
+          "line": 2890,
           "origin": "def"
         }
       ],
@@ -19959,7 +19993,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 2473,
+          "line": 2489,
           "origin": "def"
         }
       ],
@@ -19996,7 +20030,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 1943,
+          "line": 1959,
           "origin": "def"
         }
       ],
@@ -20041,7 +20075,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 3047,
+          "line": 3064,
           "origin": "def"
         }
       ],
@@ -20110,7 +20144,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 3042,
+          "line": 3059,
           "origin": "def"
         }
       ],
@@ -20166,7 +20200,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 3094,
+          "line": 3111,
           "origin": "def"
         }
       ],
@@ -20224,7 +20258,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 3086,
+          "line": 3103,
           "origin": "def"
         }
       ],
@@ -20263,7 +20297,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 2541,
+          "line": 2557,
           "origin": "def"
         }
       ],
@@ -20319,7 +20353,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 2747,
+          "line": 2763,
           "origin": "def"
         }
       ],
@@ -20375,7 +20409,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 2754,
+          "line": 2770,
           "origin": "def"
         }
       ],
@@ -20420,7 +20454,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 2963,
+          "line": 2980,
           "origin": "def"
         }
       ],
@@ -20464,7 +20498,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 2968,
+          "line": 2985,
           "origin": "def"
         }
       ],
@@ -20485,6 +20519,12 @@
           "type": "int",
           "optional": false,
           "description": ""
+        },
+        {
+          "name": "facedown",
+          "type": "bool",
+          "optional": true,
+          "description": "default: false"
         }
       ],
       "returns": [
@@ -20494,10 +20534,12 @@
         }
       ],
       "description_zh": [
-        "获取玩家可以作为同调素材的卡片组"
+        "返回player可作为同调素材使用的卡组。",
+        "怪兽区域中里侧表示的卡只有在facedown为true时才包含。"
       ],
       "description_en": [
-        "Gets the group of cards player can use as Synchro Material."
+        "Gets the group of cards player can use as Synchro Material.",
+        "Face-down cards in the Monster Zone are omitted unless facedown is true."
       ],
       "english_status": "translated_exact",
       "source_files": [
@@ -20508,13 +20550,14 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 2905,
+          "line": 2922,
           "origin": "def"
         }
       ],
       "aliases": [],
       "tags": [
-        "core-binding"
+        "core-binding",
+        "manual-zh-doc"
       ],
       "core_binding": true,
       "core_handler": "duel_get_synchro_material"
@@ -20582,7 +20625,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 2484,
+          "line": 2500,
           "origin": "def"
         }
       ],
@@ -20656,7 +20699,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 2844,
+          "line": 2860,
           "origin": "def"
         }
       ],
@@ -20695,7 +20738,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 2586,
+          "line": 2602,
           "origin": "def"
         }
       ],
@@ -20751,7 +20794,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 2814,
+          "line": 2830,
           "origin": "def"
         }
       ],
@@ -20796,7 +20839,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 2805,
+          "line": 2821,
           "origin": "def"
         }
       ],
@@ -20843,7 +20886,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 1827,
+          "line": 1843,
           "origin": "def"
         }
       ],
@@ -20881,7 +20924,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 1822,
+          "line": 1838,
           "origin": "def"
         }
       ],
@@ -20933,7 +20976,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 2499,
+          "line": 2515,
           "origin": "def"
         }
       ],
@@ -20972,7 +21015,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 2991,
+          "line": 3008,
           "origin": "def"
         }
       ],
@@ -21025,7 +21068,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 3121,
+          "line": 3138,
           "origin": "def"
         }
       ],
@@ -21070,7 +21113,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 3130,
+          "line": 3147,
           "origin": "def"
         }
       ],
@@ -21114,7 +21157,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 2445,
+          "line": 2461,
           "origin": "def"
         }
       ],
@@ -21154,7 +21197,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 3475,
+          "line": 3493,
           "origin": "def"
         }
       ],
@@ -21193,7 +21236,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 2599,
+          "line": 2615,
           "origin": "def"
         }
       ],
@@ -21257,7 +21300,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 2054,
+          "line": 2070,
           "origin": "def"
         }
       ],
@@ -21335,7 +21378,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 2076,
+          "line": 2092,
           "origin": "def"
         }
       ],
@@ -21383,7 +21426,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 3425,
+          "line": 3443,
           "origin": "def"
         }
       ],
@@ -21428,7 +21471,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 3430,
+          "line": 3448,
           "origin": "def"
         }
       ],
@@ -21474,7 +21517,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 3420,
+          "line": 3438,
           "origin": "def"
         }
       ],
@@ -21512,7 +21555,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 3415,
+          "line": 3433,
           "origin": "def"
         }
       ],
@@ -21549,7 +21592,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 2616,
+          "line": 2632,
           "origin": "def"
         }
       ],
@@ -21609,7 +21652,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 2231,
+          "line": 2247,
           "origin": "def"
         }
       ],
@@ -21692,7 +21735,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 2725,
+          "line": 2741,
           "origin": "def"
         }
       ],
@@ -21774,7 +21817,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 2855,
+          "line": 2871,
           "origin": "def"
         }
       ],
@@ -21812,7 +21855,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 2595,
+          "line": 2611,
           "origin": "def"
         }
       ],
@@ -21856,7 +21899,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 2591,
+          "line": 2607,
           "origin": "def"
         }
       ],
@@ -21910,7 +21953,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 3294,
+          "line": 3311,
           "origin": "def"
         }
       ],
@@ -21954,7 +21997,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 3411,
+          "line": 3429,
           "origin": "def"
         }
       ],
@@ -22006,7 +22049,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 3306,
+          "line": 3323,
           "origin": "def"
         }
       ],
@@ -22056,7 +22099,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 3312,
+          "line": 3329,
           "origin": "def"
         }
       ],
@@ -22106,7 +22149,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 3300,
+          "line": 3317,
           "origin": "def"
         }
       ],
@@ -22156,7 +22199,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 3351,
+          "line": 3368,
           "origin": "def"
         }
       ],
@@ -22213,7 +22256,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 3329,
+          "line": 3346,
           "origin": "def"
         }
       ],
@@ -22272,7 +22315,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 3382,
+          "line": 3399,
           "origin": "def"
         }
       ],
@@ -22332,7 +22375,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 3388,
+          "line": 3406,
           "origin": "def"
         }
       ],
@@ -22384,7 +22427,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 3406,
+          "line": 3424,
           "origin": "def"
         }
       ],
@@ -22435,7 +22478,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 3400,
+          "line": 3418,
           "origin": "def"
         }
       ],
@@ -22485,7 +22528,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 3394,
+          "line": 3412,
           "origin": "def"
         }
       ],
@@ -22556,7 +22599,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 3345,
+          "line": 3362,
           "origin": "def"
         }
       ],
@@ -22610,7 +22653,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 3375,
+          "line": 3392,
           "origin": "def"
         }
       ],
@@ -22724,7 +22767,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 3369,
+          "line": 3386,
           "origin": "def"
         }
       ],
@@ -22776,7 +22819,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 3335,
+          "line": 3352,
           "origin": "def"
         }
       ],
@@ -22836,7 +22879,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 3321,
+          "line": 3338,
           "origin": "def"
         }
       ],
@@ -22875,7 +22918,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 2983,
+          "line": 3000,
           "origin": "def"
         }
       ],
@@ -22920,7 +22963,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 1818,
+          "line": 1834,
           "origin": "def"
         }
       ],
@@ -22991,7 +23034,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 1987,
+          "line": 2003,
           "origin": "def"
         }
       ],
@@ -23045,7 +23088,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 3485,
+          "line": 3503,
           "origin": "def"
         }
       ],
@@ -23093,7 +23136,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 2136,
+          "line": 2152,
           "origin": "def"
         }
       ],
@@ -23177,7 +23220,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 2123,
+          "line": 2139,
           "origin": "def"
         }
       ],
@@ -23254,7 +23297,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 1998,
+          "line": 2014,
           "origin": "def"
         }
       ],
@@ -23298,7 +23341,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 2426,
+          "line": 2442,
           "origin": "def"
         }
       ],
@@ -23338,7 +23381,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 2635,
+          "line": 2651,
           "origin": "def"
         }
       ],
@@ -23390,7 +23433,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 2432,
+          "line": 2448,
           "origin": "def"
         }
       ],
@@ -23438,7 +23481,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 2437,
+          "line": 2453,
           "origin": "def"
         }
       ],
@@ -23481,7 +23524,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 2441,
+          "line": 2457,
           "origin": "def"
         }
       ],
@@ -23540,7 +23583,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 3078,
+          "line": 3095,
           "origin": "def"
         }
       ],
@@ -23596,7 +23639,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 2313,
+          "line": 2329,
           "origin": "def"
         }
       ],
@@ -23673,7 +23716,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 2207,
+          "line": 2223,
           "origin": "def"
         }
       ],
@@ -23750,7 +23793,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 2217,
+          "line": 2233,
           "origin": "def"
         }
       ],
@@ -23784,7 +23827,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 2267,
+          "line": 2283,
           "origin": "def"
         }
       ],
@@ -23820,7 +23863,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 2643,
+          "line": 2659,
           "origin": "def"
         }
       ],
@@ -23886,7 +23929,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 2264,
+          "line": 2280,
           "origin": "def"
         }
       ],
@@ -23937,7 +23980,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 1837,
+          "line": 1853,
           "origin": "def"
         }
       ],
@@ -24013,7 +24056,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 1849,
+          "line": 1865,
           "origin": "def"
         }
       ],
@@ -24073,7 +24116,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 2111,
+          "line": 2127,
           "origin": "def"
         }
       ],
@@ -24117,7 +24160,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 2972,
+          "line": 2989,
           "origin": "def"
         }
       ],
@@ -24182,7 +24225,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 1895,
+          "line": 1911,
           "origin": "def"
         }
       ],
@@ -24258,7 +24301,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 2065,
+          "line": 2081,
           "origin": "def"
         }
       ],
@@ -24336,7 +24379,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 3115,
+          "line": 3132,
           "origin": "def"
         }
       ],
@@ -24383,7 +24426,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 1860,
+          "line": 1876,
           "origin": "def"
         }
       ],
@@ -24443,7 +24486,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 2131,
+          "line": 2147,
           "origin": "def"
         }
       ],
@@ -24489,7 +24532,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 2349,
+          "line": 2365,
           "origin": "def"
         }
       ],
@@ -24533,7 +24576,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 3259,
+          "line": 3276,
           "origin": "def"
         }
       ],
@@ -24605,7 +24648,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 3187,
+          "line": 3204,
           "origin": "def"
         }
       ],
@@ -24663,7 +24706,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 3137,
+          "line": 3154,
           "origin": "def"
         }
       ],
@@ -24740,7 +24783,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 3171,
+          "line": 3188,
           "origin": "def"
         }
       ],
@@ -24818,7 +24861,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 2892,
+          "line": 2908,
           "origin": "def"
         }
       ],
@@ -24913,7 +24956,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 2740,
+          "line": 2756,
           "origin": "def"
         }
       ],
@@ -24972,7 +25015,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 3151,
+          "line": 3168,
           "origin": "def"
         }
       ],
@@ -25029,7 +25072,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 3161,
+          "line": 3178,
           "origin": "def"
         }
       ],
@@ -25107,7 +25150,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 2775,
+          "line": 2791,
           "origin": "def"
         }
       ],
@@ -25195,7 +25238,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 2800,
+          "line": 2816,
           "origin": "def"
         }
       ],
@@ -25227,7 +25270,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 3154,
+          "line": 3171,
           "origin": "def"
         }
       ],
@@ -25317,7 +25360,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 2919,
+          "line": 2936,
           "origin": "def"
         }
       ],
@@ -25411,7 +25454,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 2868,
+          "line": 2884,
           "origin": "def"
         }
       ],
@@ -25488,7 +25531,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 2834,
+          "line": 2850,
           "origin": "def"
         }
       ],
@@ -25576,7 +25619,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 2945,
+          "line": 2962,
           "origin": "def"
         }
       ],
@@ -25657,7 +25700,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 3072,
+          "line": 3089,
           "origin": "def"
         }
       ],
@@ -25708,7 +25751,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 3143,
+          "line": 3160,
           "origin": "def"
         }
       ],
@@ -25788,7 +25831,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 1928,
+          "line": 1944,
           "origin": "def"
         }
       ],
@@ -25844,7 +25887,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 1936,
+          "line": 1952,
           "origin": "def"
         }
       ],
@@ -25903,7 +25946,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 1903,
+          "line": 1919,
           "origin": "def"
         }
       ],
@@ -25968,7 +26011,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 1913,
+          "line": 1929,
           "origin": "def"
         }
       ],
@@ -26009,7 +26052,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 2152,
+          "line": 2168,
           "origin": "def"
         }
       ],
@@ -26050,7 +26093,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 2156,
+          "line": 2172,
           "origin": "def"
         }
       ],
@@ -26102,7 +26145,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 3281,
+          "line": 3298,
           "origin": "def"
         }
       ],
@@ -26166,7 +26209,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 3287,
+          "line": 3304,
           "origin": "def"
         }
       ],
@@ -26224,7 +26267,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 1867,
+          "line": 1883,
           "origin": "def"
         }
       ],
@@ -26265,7 +26308,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 2896,
+          "line": 2912,
           "origin": "def"
         }
       ],
@@ -26312,7 +26355,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 1813,
+          "line": 1829,
           "origin": "def"
         }
       ],
@@ -26403,7 +26446,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 3030,
+          "line": 3047,
           "origin": "def"
         }
       ],
@@ -26442,7 +26485,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 2987,
+          "line": 3004,
           "origin": "def"
         }
       ],
@@ -26488,7 +26531,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 2900,
+          "line": 2916,
           "origin": "def"
         }
       ],
@@ -26535,7 +26578,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 2996,
+          "line": 3013,
           "origin": "def"
         }
       ],
@@ -26579,7 +26622,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 3007,
+          "line": 3024,
           "origin": "def"
         }
       ],
@@ -26623,7 +26666,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 3003,
+          "line": 3020,
           "origin": "def"
         }
       ],
@@ -26668,7 +26711,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 2354,
+          "line": 2370,
           "origin": "def"
         }
       ],
@@ -26707,7 +26750,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 2358,
+          "line": 2374,
           "origin": "def"
         }
       ],
@@ -26754,7 +26797,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 2363,
+          "line": 2379,
           "origin": "def"
         }
       ],
@@ -26799,7 +26842,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 2368,
+          "line": 2384,
           "origin": "def"
         }
       ],
@@ -26864,7 +26907,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 2612,
+          "line": 2628,
           "origin": "def"
         }
       ],
@@ -26919,7 +26962,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 2184,
+          "line": 2200,
           "origin": "def"
         }
       ],
@@ -27008,7 +27051,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 2027,
+          "line": 2043,
           "origin": "def"
         }
       ],
@@ -27046,7 +27089,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 2046,
+          "line": 2062,
           "origin": "def"
         }
       ],
@@ -27098,7 +27141,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 1960,
+          "line": 1976,
           "origin": "def"
         }
       ],
@@ -27190,7 +27233,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 2042,
+          "line": 2058,
           "origin": "def"
         }
       ],
@@ -27253,7 +27296,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 2007,
+          "line": 2023,
           "origin": "def"
         }
       ],
@@ -27330,7 +27373,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 1954,
+          "line": 1970,
           "origin": "def"
         }
       ],
@@ -27394,7 +27437,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 2300,
+          "line": 2316,
           "origin": "def"
         }
       ],
@@ -27440,7 +27483,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 3479,
+          "line": 3497,
           "origin": "def"
         }
       ],
@@ -27487,7 +27530,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 2141,
+          "line": 2157,
           "origin": "def"
         }
       ],
@@ -27565,7 +27608,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 1969,
+          "line": 1985,
           "origin": "def"
         }
       ],
@@ -27622,7 +27665,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 3246,
+          "line": 3263,
           "origin": "def"
         }
       ],
@@ -27686,7 +27729,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 3254,
+          "line": 3271,
           "origin": "def"
         }
       ],
@@ -27733,7 +27776,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 2236,
+          "line": 2252,
           "origin": "def"
         }
       ],
@@ -27798,7 +27841,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 1978,
+          "line": 1994,
           "origin": "def"
         }
       ],
@@ -27850,7 +27893,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 3789,
+          "line": 3807,
           "origin": "def"
         }
       ],
@@ -27895,7 +27938,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 3500,
+          "line": 3518,
           "origin": "def"
         }
       ],
@@ -27939,7 +27982,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 3491,
+          "line": 3509,
           "origin": "def"
         }
       ],
@@ -27984,7 +28027,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 3778,
+          "line": 3796,
           "origin": "def"
         }
       ],
@@ -28030,7 +28073,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 3783,
+          "line": 3801,
           "origin": "def"
         }
       ],
@@ -28076,7 +28119,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 3707,
+          "line": 3725,
           "origin": "def"
         }
       ],
@@ -28120,7 +28163,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 3661,
+          "line": 3679,
           "origin": "def"
         }
       ],
@@ -28166,7 +28209,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 3635,
+          "line": 3653,
           "origin": "def"
         }
       ],
@@ -28211,7 +28254,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 3681,
+          "line": 3699,
           "origin": "def"
         }
       ],
@@ -28257,7 +28300,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 3691,
+          "line": 3709,
           "origin": "def"
         }
       ],
@@ -28303,7 +28346,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 3630,
+          "line": 3648,
           "origin": "def"
         }
       ],
@@ -28348,7 +28391,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 3509,
+          "line": 3527,
           "origin": "def"
         }
       ],
@@ -28394,7 +28437,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 3676,
+          "line": 3694,
           "origin": "def"
         }
       ],
@@ -28439,7 +28482,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 3724,
+          "line": 3742,
           "origin": "def"
         }
       ],
@@ -28483,7 +28526,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 3651,
+          "line": 3669,
           "origin": "def"
         }
       ],
@@ -28527,7 +28570,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 3656,
+          "line": 3674,
           "origin": "def"
         }
       ],
@@ -28571,7 +28614,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 3701,
+          "line": 3719,
           "origin": "def"
         }
       ],
@@ -28617,7 +28660,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 3671,
+          "line": 3689,
           "origin": "def"
         }
       ],
@@ -28662,7 +28705,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 3719,
+          "line": 3737,
           "origin": "def"
         }
       ],
@@ -28712,7 +28755,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 3646,
+          "line": 3664,
           "origin": "def"
         }
       ],
@@ -28758,7 +28801,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 3666,
+          "line": 3684,
           "origin": "def"
         }
       ],
@@ -28803,7 +28846,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 3686,
+          "line": 3704,
           "origin": "def"
         }
       ],
@@ -28849,7 +28892,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 3640,
+          "line": 3658,
           "origin": "def"
         }
       ],
@@ -28894,7 +28937,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 3696,
+          "line": 3714,
           "origin": "def"
         }
       ],
@@ -28933,7 +28976,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 3495,
+          "line": 3513,
           "origin": "def"
         }
       ],
@@ -28997,7 +29040,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 3758,
+          "line": 3776,
           "origin": "def"
         }
       ],
@@ -29043,7 +29086,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 3763,
+          "line": 3781,
           "origin": "def"
         }
       ],
@@ -29095,7 +29138,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 3713,
+          "line": 3731,
           "origin": "def"
         }
       ],
@@ -29139,7 +29182,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 3768,
+          "line": 3786,
           "origin": "def"
         }
       ],
@@ -29189,7 +29232,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 3737,
+          "line": 3755,
           "origin": "def"
         }
       ],
@@ -29249,7 +29292,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 3731,
+          "line": 3749,
           "origin": "def"
         }
       ],
@@ -29301,7 +29344,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 3749,
+          "line": 3767,
           "origin": "def"
         }
       ],
@@ -29351,7 +29394,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 3743,
+          "line": 3761,
           "origin": "def"
         }
       ],
@@ -29395,7 +29438,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 3504,
+          "line": 3522,
           "origin": "def"
         }
       ],
@@ -29454,7 +29497,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 3547,
+          "line": 3565,
           "origin": "def"
         }
       ],
@@ -29501,7 +29544,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 3589,
+          "line": 3607,
           "origin": "def"
         }
       ],
@@ -29547,7 +29590,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 3519,
+          "line": 3537,
           "origin": "def"
         }
       ],
@@ -29593,7 +29636,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 3600,
+          "line": 3618,
           "origin": "def"
         }
       ],
@@ -29640,7 +29683,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 3610,
+          "line": 3628,
           "origin": "def"
         }
       ],
@@ -29691,7 +29734,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 3773,
+          "line": 3791,
           "origin": "def"
         }
       ],
@@ -29743,7 +29786,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 3557,
+          "line": 3575,
           "origin": "def"
         }
       ],
@@ -29789,7 +29832,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 3514,
+          "line": 3532,
           "origin": "def"
         }
       ],
@@ -29846,7 +29889,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 3595,
+          "line": 3613,
           "origin": "def"
         }
       ],
@@ -29896,7 +29939,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 3579,
+          "line": 3597,
           "origin": "def"
         }
       ],
@@ -29946,7 +29989,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 3584,
+          "line": 3602,
           "origin": "def"
         }
       ],
@@ -29991,7 +30034,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 3620,
+          "line": 3638,
           "origin": "def"
         }
       ],
@@ -30039,7 +30082,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 3625,
+          "line": 3643,
           "origin": "def"
         }
       ],
@@ -30093,7 +30136,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 3574,
+          "line": 3592,
           "origin": "def"
         }
       ],
@@ -30139,7 +30182,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 3524,
+          "line": 3542,
           "origin": "def"
         }
       ],
@@ -30192,7 +30235,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 3563,
+          "line": 3581,
           "origin": "def"
         }
       ],
@@ -30238,7 +30281,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 3605,
+          "line": 3623,
           "origin": "def"
         }
       ],
@@ -30291,7 +30334,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 3539,
+          "line": 3557,
           "origin": "def"
         }
       ],
@@ -30338,7 +30381,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 3568,
+          "line": 3586,
           "origin": "def"
         }
       ],
@@ -30384,7 +30427,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 3615,
+          "line": 3633,
           "origin": "def"
         }
       ],
@@ -30444,7 +30487,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 3796,
+          "line": 3814,
           "origin": "def"
         }
       ],
@@ -30772,7 +30815,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 3834,
+          "line": 3856,
           "origin": "def"
         }
       ],
@@ -30841,7 +30884,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 3929,
+          "line": 3951,
           "origin": "def"
         }
       ],
@@ -30915,7 +30958,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 3952,
+          "line": 3974,
           "origin": "def"
         }
       ],
@@ -30981,7 +31024,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 3976,
+          "line": 3998,
           "origin": "def"
         }
       ],
@@ -31022,7 +31065,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 3829,
+          "line": 3851,
           "origin": "def"
         }
       ],
@@ -31068,7 +31111,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 3819,
+          "line": 3841,
           "origin": "def"
         }
       ],
@@ -31105,7 +31148,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 3806,
+          "line": 3828,
           "origin": "def"
         }
       ],
@@ -31114,7 +31157,11 @@
         "core-binding",
         "class Group",
         "operator add(Group|Card): Group",
+        "operator bor(Group|Card): Group",
         "operator sub(Group|Card): Group",
+        "operator band(Group): Group",
+        "operator bxor(Group): Group",
+        "operator len: integer",
         "core-doc-override",
         "manual-zh-doc"
       ],
@@ -31156,7 +31203,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 3814,
+          "line": 3836,
           "origin": "def"
         }
       ],
@@ -31207,7 +31254,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 4045,
+          "line": 4067,
           "origin": "def"
         }
       ],
@@ -31271,7 +31318,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 3870,
+          "line": 3892,
           "origin": "def"
         }
       ],
@@ -31336,7 +31383,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 3878,
+          "line": 3900,
           "origin": "def"
         }
       ],
@@ -31419,7 +31466,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 3890,
+          "line": 3912,
           "origin": "def"
         }
       ],
@@ -31465,7 +31512,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 3825,
+          "line": 3847,
           "origin": "def"
         }
       ],
@@ -31522,7 +31569,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 4065,
+          "line": 4087,
           "origin": "def"
         }
       ],
@@ -31580,7 +31627,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 4020,
+          "line": 4042,
           "origin": "def"
         }
       ],
@@ -31624,7 +31671,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 3855,
+          "line": 3877,
           "origin": "def"
         }
       ],
@@ -31669,7 +31716,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 3850,
+          "line": 3872,
           "origin": "def"
         }
       ],
@@ -31732,7 +31779,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 4005,
+          "line": 4027,
           "origin": "def"
         }
       ],
@@ -31796,7 +31843,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 3995,
+          "line": 4017,
           "origin": "def"
         }
       ],
@@ -31842,7 +31889,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 3844,
+          "line": 3866,
           "origin": "def"
         }
       ],
@@ -31899,7 +31946,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 4012,
+          "line": 4034,
           "origin": "def"
         }
       ],
@@ -31951,7 +31998,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 4051,
+          "line": 4073,
           "origin": "def"
         }
       ],
@@ -32020,7 +32067,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 3939,
+          "line": 3961,
           "origin": "def"
         }
       ],
@@ -32065,7 +32112,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 3810,
+          "line": 3832,
           "origin": "def"
         }
       ],
@@ -32117,7 +32164,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 4033,
+          "line": 4055,
           "origin": "def"
         }
       ],
@@ -32175,7 +32222,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 3920,
+          "line": 3942,
           "origin": "def"
         }
       ],
@@ -32234,7 +32281,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 4027,
+          "line": 4049,
           "origin": "def"
         }
       ],
@@ -32281,7 +32328,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 3839,
+          "line": 3861,
           "origin": "def"
         }
       ],
@@ -32339,7 +32386,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 4058,
+          "line": 4080,
           "origin": "def"
         }
       ],
@@ -32408,7 +32455,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 3899,
+          "line": 3921,
           "origin": "def"
         }
       ],
@@ -32491,7 +32538,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 3912,
+          "line": 3934,
           "origin": "def"
         }
       ],
@@ -32575,7 +32622,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 3963,
+          "line": 3985,
           "origin": "def"
         }
       ],
@@ -32645,7 +32692,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 3985,
+          "line": 4007,
           "origin": "def"
         }
       ],
@@ -32691,7 +32738,7 @@
         },
         {
           "path": "Define/def.lua",
-          "line": 4039,
+          "line": 4061,
           "origin": "def"
         }
       ],
@@ -33223,7 +33270,7 @@
       "source_files": [
         {
           "path": "Define/def.lua",
-          "line": 3861,
+          "line": 3883,
           "origin": "def"
         }
       ],

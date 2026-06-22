@@ -3,7 +3,7 @@
 ## Signature
 
 ```lua
-Card.IsAbleToHand(Card c) -> bool
+Card.IsAbleToHand(Card c, [int player]) -> bool
 ```
 
 ## Description
@@ -14,6 +14,7 @@ An optional player argument can be passed when a specific player is performing t
 ## Parameters
 
 - `c` `Card`
+- `player` `int` optional - default: reason player
 
 ## Returns
 

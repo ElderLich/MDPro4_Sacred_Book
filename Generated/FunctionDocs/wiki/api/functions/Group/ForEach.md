@@ -18,4 +18,4 @@ Utility stub for calling f once for each card in g with any extra arguments.
 
 ## Source
 
-- `Define/def.lua:3861`
+- `Define/def.lua:3883`

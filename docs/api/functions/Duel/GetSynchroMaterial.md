@@ -3,16 +3,18 @@
 ## Signature
 
 ```lua
-Duel.GetSynchroMaterial(int player) -> Group
+Duel.GetSynchroMaterial(int player, [bool facedown]) -> Group
 ```
 
 ## Description
 
 Gets the group of cards player can use as Synchro Material.
+Face-down cards in the Monster Zone are omitted unless facedown is true.
 
 ## Parameters
 
 - `player` `int`
+- `facedown` `bool` optional - default: false
 
 ## Returns
 
