@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-06-22T21:29:27+00:00",
+    "generated_at": "2026-06-22T21:47:00+00:00",
     "workspace": "D:\\Programs\\GitHub\\MDPro3_Sacred_Book",
     "dataeditorx_data": "D:\\Programs\\GitHub\\DataEditorX\\DataEditorX\\data",
     "mdpro3_locales": "D:\\Programs\\GitHub\\MDPro3_Data\\Data\\locales",
@@ -718,31 +718,31 @@
           "name": "c",
           "type": "Card",
           "optional": false,
-          "description": ""
+          "description": "Card being tested against unique-on-field restrictions."
         },
         {
           "name": "check_player",
           "type": "int",
           "optional": false,
-          "description": ""
+          "description": "Player whose field is checked for a uniqueness conflict."
         },
         {
           "name": "check_location",
           "type": "int",
           "optional": true,
-          "description": "default: LOCATION_ONFIELD"
+          "description": "On-field location mask to check; default: LOCATION_ONFIELD. The core masks this value to LOCATION_ONFIELD."
         },
         {
           "name": "icard",
           "type": "Card|nil",
           "optional": true,
-          "description": ""
+          "description": "Optional card ignored during the check, useful when testing a pending replacement or move."
         }
       ],
       "returns": [
         {
           "type": "bool",
-          "description": ""
+          "description": "True if c can coexist under the unique-on-field rules for the requested player and location."
         }
       ],
       "description_zh": [
@@ -1042,25 +1042,25 @@
           "name": "c",
           "type": "Card",
           "optional": false,
-          "description": ""
+          "description": "Card receiving the counter permit effect."
         },
         {
           "name": "countertype",
           "type": "int",
           "optional": false,
-          "description": ""
+          "description": "Counter type that c is allowed to hold."
         },
         {
           "name": "location",
           "type": "int",
           "optional": true,
-          "description": ""
+          "description": "Single-effect range for the permit. Omitted defaults to LOCATION_MZONE for monsters, otherwise LOCATION_SZONE + LOCATION_FZONE."
         },
         {
           "name": "condition",
           "type": "function",
           "optional": true,
-          "description": ""
+          "description": "Optional condition callback stored on the permit effect; ignored unless this argument is a function."
         }
       ],
       "returns": [],
@@ -2611,22 +2611,22 @@
           "name": "c",
           "type": "Card",
           "optional": false,
-          "description": ""
+          "description": "Card whose current field ID is returned."
         }
       ],
       "returns": [
         {
           "type": "int",
-          "description": ""
+          "description": "Current field ID assigned by the core for c's current field identity."
         }
       ],
       "description_zh": [
         "返回c当前的field ID，即核心在c移动到当前位置时分配的时间标识。",
-        "数值越小表示越早进入当前位置。此值不同于Card.GetRealFieldID，后者用于战斗状态等真实位置检查。"
+        "数值越小表示越早进入当前位置。核心会在卡获得新的场上身份时更新该值，例如进入场上或变更控制者。此值不同于Card.GetRealFieldID，后者用于战斗状态等真实位置检查。"
       ],
       "description_en": [
         "Returns c's current field ID, the core timestamp assigned when c moved to its current place.",
-        "Smaller values are older. This differs from Card.GetRealFieldID, which tracks the real field ID used by battle-state checks."
+        "Smaller values are older. The core refreshes this value when the card gains a new field identity, such as entering the field or changing controller. This differs from Card.GetRealFieldID, which tracks the real field ID used by battle-state checks."
       ],
       "english_status": "translated_exact",
       "source_files": [
@@ -2756,13 +2756,13 @@
           "name": "c",
           "type": "Card",
           "optional": false,
-          "description": ""
+          "description": "Card whose single-card flag effects are inspected."
         },
         {
           "name": "code",
           "type": "int",
           "optional": false,
-          "description": ""
+          "description": "Flag-effect code; the core masks it with MAX_CARD_ID and adds EFFECT_FLAG_EFFECT."
         }
       ],
       "returns": [
@@ -3596,13 +3596,13 @@
           "name": "c",
           "type": "Card",
           "optional": false,
-          "description": ""
+          "description": "Card whose stored material list is being read."
         }
       ],
       "returns": [
         {
           "type": "Group",
-          "description": "Cards currently stored as c's material cards."
+          "description": "New Group containing c's stored material cards; the Group is empty if no material cards are stored."
         }
       ],
       "description_zh": [
@@ -7303,19 +7303,19 @@
           "name": "c",
           "type": "Card",
           "optional": false,
-          "description": ""
+          "description": "Card whose current ATK is checked."
         },
         {
           "name": "atk",
           "type": "int",
           "optional": false,
-          "description": ""
+          "description": "Minimum ATK value accepted by the check."
         }
       ],
       "returns": [
         {
           "type": "bool",
-          "description": ""
+          "description": "True if c is a monster or treated as one and its current ATK is at least atk."
         }
       ],
       "description_zh": [
@@ -7357,19 +7357,19 @@
           "name": "c",
           "type": "Card",
           "optional": false,
-          "description": ""
+          "description": "Card whose current ATK is checked."
         },
         {
           "name": "atk",
           "type": "int",
           "optional": false,
-          "description": ""
+          "description": "Maximum ATK value accepted by the check."
         }
       ],
       "returns": [
         {
           "type": "bool",
-          "description": ""
+          "description": "True if c is a monster or treated as one, has known ATK, and that ATK is at most atk."
         }
       ],
       "description_zh": [
@@ -8392,13 +8392,13 @@
           "name": "c",
           "type": "Card",
           "optional": false,
-          "description": ""
+          "description": "Card checked for whether it can be turned face-down."
         }
       ],
       "returns": [
         {
           "type": "bool",
-          "description": ""
+          "description": "True if c can be turned face-down by the current reason player."
         }
       ],
       "description_zh": [
@@ -12552,26 +12552,26 @@
           "name": "c",
           "type": "Card",
           "optional": false,
-          "description": ""
+          "description": "Card whose recorded Summon location is checked."
         },
         {
           "name": "loc",
           "type": "int",
           "optional": false,
-          "description": ""
+          "description": "Location mask to test against the stored Summon location, such as LOCATION_EXTRA or LOCATION_GRAVE."
         }
       ],
       "returns": [
         {
           "type": "bool",
-          "description": ""
+          "description": "True if any bit in loc is present in c's recorded Summon location."
         }
       ],
       "description_zh": [
-        "检查c记录的召唤位置是否包含loc。"
+        "检查c记录的召唤位置是否包含loc。该函数读取召唤信息，不检查c的当前位置。"
       ],
       "description_en": [
-        "Checks whether c's recorded Summon location contains loc."
+        "Checks whether c's recorded Summon location contains loc. This reads the Summon information, not c's current location."
       ],
       "english_status": "translated_exact",
       "source_files": [
@@ -14920,29 +14920,29 @@
           "name": "counter_id",
           "type": "int",
           "optional": false,
-          "description": ""
+          "description": "Script-chosen identifier used later with Duel.GetCustomActivityCount."
         },
         {
           "name": "activity_type",
           "type": "int",
           "optional": false,
-          "description": ""
+          "description": "ACTIVITY_* constant selecting which activity map receives the counter."
         },
         {
           "name": "f",
           "type": "function",
           "optional": false,
-          "description": ""
+          "description": "Filter callback. Returning false marks that activity as counted for the acting player."
         }
       ],
       "returns": [],
       "description_zh": [
         "为指定ACTIVITY_*类型登记编号为counter_id的自定义行动计数器。",
-        "召唤和攻击类计数器会以Card调用f，f返回false时计数增加。ACTIVITY_CHAIN会以effect, player, chain_id调用f，同样在返回false时计数。"
+        "召唤和攻击类计数器会以Card调用f，f返回false时计数增加。ACTIVITY_CHAIN会以effect, player, chain_id调用f，同样在返回false时计数。在此核心中，ACTIVITY_BATTLE_PHASE和未知行动类型不会登记自定义计数器。"
       ],
       "description_en": [
         "Registers a custom activity counter with id counter_id for the selected ACTIVITY_* type.",
-        "For Summon and attack counters, f is called with a Card and the counter increases when f returns false. For ACTIVITY_CHAIN, f is called with effect, player, chain_id and also counts false results."
+        "For Summon and attack counters, f is called with a Card and the counter increases when f returns false. For ACTIVITY_CHAIN, f is called with effect, player, chain_id and also counts false results. ACTIVITY_BATTLE_PHASE and unknown activity types do not register a custom counter in this core."
       ],
       "english_status": "translated_exact",
       "source_files": [
@@ -18318,13 +18318,13 @@
           "name": "player",
           "type": "int",
           "optional": false,
-          "description": ""
+          "description": "Player checked for an applying EFFECT_CHAIN_MATERIAL effect."
         }
       ],
       "returns": [
         {
           "type": "Effect|nil",
-          "description": ""
+          "description": "First applying EFFECT_CHAIN_MATERIAL effect; no Lua value is pushed if player is invalid or no such effect exists, which behaves as nil in normal assignment."
         }
       ],
       "description_zh": [
@@ -18616,25 +18616,25 @@
           "name": "counter_id",
           "type": "int",
           "optional": false,
-          "description": ""
+          "description": "Identifier previously registered with Duel.AddCustomActivityCounter."
         },
         {
           "name": "player",
           "type": "int",
           "optional": false,
-          "description": ""
+          "description": "Player whose count is read; use 0 or 1."
         },
         {
           "name": "activity_type",
           "type": "int",
           "optional": false,
-          "description": ""
+          "description": "ACTIVITY_* constant selecting which custom activity map is read."
         }
       ],
       "returns": [
         {
           "type": "int",
-          "description": ""
+          "description": "Stored count for that player, counter ID, and activity type, or 0 if no matching custom counter exists."
         }
       ],
       "description_zh": [
@@ -18676,26 +18676,28 @@
           "name": "player",
           "type": "int",
           "optional": false,
-          "description": ""
+          "description": "Player whose Deck is read."
         },
         {
           "name": "count",
           "type": "int",
           "optional": false,
-          "description": ""
+          "description": "Maximum number of cards to include from the top of the Deck."
         }
       ],
       "returns": [
         {
           "type": "Group",
-          "description": ""
+          "description": "New Group containing the top Deck cards, or an empty Group if no cards are available."
         }
       ],
       "description_zh": [
-        "返回玩家player卡组最上方最多count张卡组成的Group。"
+        "返回玩家player卡组最上方最多count张卡组成的Group。",
+        "若count大于剩余卡组数量，只包含实际存在的卡。该读取函数本身不会确认或公开这些卡。"
       ],
       "description_en": [
-        "Returns a Group containing up to count cards from the top of player's Deck."
+        "Returns a Group containing up to count cards from the top of player's Deck.",
+        "If count is larger than the remaining Deck size, only the available cards are included. This accessor does not confirm or reveal those cards by itself."
       ],
       "english_status": "translated_exact",
       "source_files": [
@@ -19221,13 +19223,13 @@
           "name": "player",
           "type": "int",
           "optional": false,
-          "description": ""
+          "description": "Player whose player flag effects are inspected."
         },
         {
           "name": "code",
           "type": "int",
           "optional": false,
-          "description": ""
+          "description": "Flag-effect code; the core masks it with MAX_CARD_ID and adds EFFECT_FLAG_EFFECT."
         }
       ],
       "returns": [
@@ -19237,16 +19239,16 @@
         },
         {
           "type": "int...",
-          "description": "Additional matching labels."
+          "description": "Additional matching labels; a matching effect with no label contributes 0."
         }
       ],
       "description_zh": [
         "返回player身上code对应标志效果保存的Label值。",
-        "没有对应标志效果时核心返回nil；存在多个对应标志效果时，会按每个效果返回一个Label值。"
+        "没有对应标志效果时核心返回nil；存在多个对应标志效果时，会按每个效果返回一个Label值。匹配的标志效果没有Label时，该位置返回0。"
       ],
       "description_en": [
         "Returns the label values stored on player flag effects with code.",
-        "If no matching flag effect exists, the core returns nil; if multiple matching flag effects exist, it returns one label value for each."
+        "If no matching flag effect exists, the core returns nil; if multiple matching flag effects exist, it returns one label value for each. A matching flag effect with no label returns 0 for that slot."
       ],
       "english_status": "translated_exact",
       "source_files": [
@@ -19279,13 +19281,13 @@
           "name": "player",
           "type": "int",
           "optional": false,
-          "description": ""
+          "description": "Player whose Fusion Material pool is collected."
         },
         {
           "name": "location",
           "type": "int",
           "optional": true,
-          "description": "default: LOCATION_HAND + LOCATION_MZONE"
+          "description": "Location mask for the base pool; default: LOCATION_HAND + LOCATION_MZONE."
         }
       ],
       "returns": [
@@ -23455,13 +23457,13 @@
           "name": "c",
           "type": "Card",
           "optional": false,
-          "description": ""
+          "description": "Card whose related earlier Chain Links should receive EFFECT_DISABLE_CHAIN."
         },
         {
           "name": "reset_flag",
           "type": "int",
           "optional": false,
-          "description": ""
+          "description": "Additional reset mask ORed with RESET_CHAIN and RESET_EVENT on each generated disable effect."
         }
       ],
       "returns": [],
@@ -28368,13 +28370,13 @@
           "name": "e",
           "type": "Effect",
           "optional": false,
-          "description": ""
+          "description": "Effect whose internal field ID is returned."
         }
       ],
       "returns": [
         {
           "type": "int",
-          "description": ""
+          "description": "Internal effect ID stored in e."
         }
       ],
       "description_zh": [
@@ -29255,25 +29257,25 @@
           "name": "e",
           "type": "Effect",
           "optional": false,
-          "description": ""
+          "description": "Effect whose property words are checked."
         },
         {
           "name": "prop1",
           "type": "int",
           "optional": false,
-          "description": ""
+          "description": "Mask checked against the first property word. Use 0 to ignore this word."
         },
         {
           "name": "prop2",
           "type": "int",
           "optional": true,
-          "description": ""
+          "description": "Mask checked against the second property word. Omitted or 0 means this word passes."
         }
       ],
       "returns": [
         {
           "type": "bool",
-          "description": ""
+          "description": "True when every nonzero requested property mask is present on e."
         }
       ],
       "description_zh": [

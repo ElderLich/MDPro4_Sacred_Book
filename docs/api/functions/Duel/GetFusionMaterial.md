@@ -13,8 +13,8 @@ location defaults to LOCATION_HAND + LOCATION_MZONE. Extra Fusion Material effec
 
 ## Parameters
 
-- `player` `int`
-- `location` `int` optional - default: LOCATION_HAND + LOCATION_MZONE
+- `player` `int` - Player whose Fusion Material pool is collected.
+- `location` `int` optional - Location mask for the base pool; default: LOCATION_HAND + LOCATION_MZONE.
 
 ## Returns
 

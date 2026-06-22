@@ -13,12 +13,12 @@ Unlike Card.IsAttackBelow, this core does not add a separate guard for unknown A
 
 ## Parameters
 
-- `c` `Card`
-- `atk` `int`
+- `c` `Card` - Card whose current ATK is checked.
+- `atk` `int` - Minimum ATK value accepted by the check.
 
 ## Returns
 
-- `bool`
+- `bool` - True if c is a monster or treated as one and its current ATK is at least atk.
 
 ## Source
 

@@ -13,13 +13,13 @@ prop1 is checked against the first property word and optional prop2 against the 
 
 ## Parameters
 
-- `e` `Effect`
-- `prop1` `int`
-- `prop2` `int` optional
+- `e` `Effect` - Effect whose property words are checked.
+- `prop1` `int` - Mask checked against the first property word. Use 0 to ignore this word.
+- `prop2` `int` optional - Mask checked against the second property word. Omitted or 0 means this word passes.
 
 ## Returns
 
-- `bool`
+- `bool` - True when every nonzero requested property mask is present on e.
 
 ## Source
 

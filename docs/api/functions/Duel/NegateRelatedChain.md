@@ -13,8 +13,8 @@ The generated disable effect resets with RESET_CHAIN, RESET_EVENT, and the suppl
 
 ## Parameters
 
-- `c` `Card`
-- `reset_flag` `int`
+- `c` `Card` - Card whose related earlier Chain Links should receive EFFECT_DISABLE_CHAIN.
+- `reset_flag` `int` - Additional reset mask ORed with RESET_CHAIN and RESET_EVENT on each generated disable effect.
 
 ## Source
 

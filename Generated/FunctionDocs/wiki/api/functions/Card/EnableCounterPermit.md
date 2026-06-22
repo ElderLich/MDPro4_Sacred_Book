@@ -13,10 +13,10 @@ If location is omitted, monsters default to LOCATION_MZONE and non-monsters defa
 
 ## Parameters
 
-- `c` `Card`
-- `countertype` `int`
-- `location` `int` optional
-- `condition` `function` optional
+- `c` `Card` - Card receiving the counter permit effect.
+- `countertype` `int` - Counter type that c is allowed to hold.
+- `location` `int` optional - Single-effect range for the permit. Omitted defaults to LOCATION_MZONE for monsters, otherwise LOCATION_SZONE + LOCATION_FZONE.
+- `condition` `function` optional - Optional condition callback stored on the permit effect; ignored unless this argument is a function.
 
 ## Source
 

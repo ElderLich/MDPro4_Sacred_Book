@@ -13,13 +13,13 @@ Counts are reset each turn. In this core, most card-based custom counters only r
 
 ## Parameters
 
-- `counter_id` `int`
-- `player` `int`
-- `activity_type` `int`
+- `counter_id` `int` - Identifier previously registered with Duel.AddCustomActivityCounter.
+- `player` `int` - Player whose count is read; use 0 or 1.
+- `activity_type` `int` - ACTIVITY_* constant selecting which custom activity map is read.
 
 ## Returns
 
-- `int`
+- `int` - Stored count for that player, counter ID, and activity type, or 0 if no matching custom counter exists.
 
 ## Source
 

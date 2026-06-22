@@ -13,8 +13,8 @@ If c has no matching flag effect, the core returns nil. Matching flag effects wi
 
 ## Parameters
 
-- `c` `Card`
-- `code` `int`
+- `c` `Card` - Card whose single-card flag effects are inspected.
+- `code` `int` - Flag-effect code; the core masks it with MAX_CARD_ID and adds EFFECT_FLAG_EFFECT.
 
 ## Returns
 

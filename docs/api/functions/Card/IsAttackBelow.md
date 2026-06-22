@@ -13,12 +13,12 @@ Cards with unknown ATK return false because the core requires the current ATK to
 
 ## Parameters
 
-- `c` `Card`
-- `atk` `int`
+- `c` `Card` - Card whose current ATK is checked.
+- `atk` `int` - Maximum ATK value accepted by the check.
 
 ## Returns
 
-- `bool`
+- `bool` - True if c is a monster or treated as one, has known ATK, and that ATK is at most atk.
 
 ## Source
 

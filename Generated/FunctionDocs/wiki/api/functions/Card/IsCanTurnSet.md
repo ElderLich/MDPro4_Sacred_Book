@@ -13,11 +13,11 @@ The core returns false for Link Monsters, Tokens, already face-down cards, and c
 
 ## Parameters
 
-- `c` `Card`
+- `c` `Card` - Card checked for whether it can be turned face-down.
 
 ## Returns
 
-- `bool`
+- `bool` - True if c can be turned face-down by the current reason player.
 
 ## Source
 

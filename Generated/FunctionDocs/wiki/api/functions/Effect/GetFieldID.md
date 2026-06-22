@@ -12,11 +12,11 @@ Returns e's internal field ID.
 
 ## Parameters
 
-- `e` `Effect`
+- `e` `Effect` - Effect whose internal field ID is returned.
 
 ## Returns
 
-- `int`
+- `int` - Internal effect ID stored in e.
 
 ## Source
 

@@ -13,11 +13,11 @@ Fusion-style scripts use the returned effect's target and operation callbacks to
 
 ## Parameters
 
-- `player` `int`
+- `player` `int` - Player checked for an applying EFFECT_CHAIN_MATERIAL effect.
 
 ## Returns
 
-- `Effect|nil`
+- `Effect|nil` - First applying EFFECT_CHAIN_MATERIAL effect; no Lua value is pushed if player is invalid or no such effect exists, which behaves as nil in normal assignment.
 
 ## Source
 

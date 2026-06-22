@@ -8,16 +8,16 @@ Card.IsSummonLocation(Card c, int loc) -> bool
 
 ## Description
 
-Checks whether c's recorded Summon location contains loc.
+Checks whether c's recorded Summon location contains loc. This reads the Summon information, not c's current location.
 
 ## Parameters
 
-- `c` `Card`
-- `loc` `int`
+- `c` `Card` - Card whose recorded Summon location is checked.
+- `loc` `int` - Location mask to test against the stored Summon location, such as LOCATION_EXTRA or LOCATION_GRAVE.
 
 ## Returns
 
-- `bool`
+- `bool` - True if any bit in loc is present in c's recorded Summon location.
 
 ## Source
 
