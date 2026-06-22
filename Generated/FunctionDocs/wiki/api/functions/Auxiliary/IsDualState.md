@@ -3,17 +3,20 @@
 ## Signature
 
 ```lua
-Auxiliary.IsDualState(Effect effect) -> void
+Auxiliary.IsDualState(Effect e) -> bool
 ```
 
 ## Description
 
-Check the double monster e: GetHandler () is re-call state
-Commonly used in the double monster re-summoned to obtain the effect of e Condition attribute
+Condition helper that is true when e's handler is not disabled and is in Dual State.
 
 ## Parameters
 
-- `effect` `Effect`
+- `e` `Effect`
+
+## Returns
+
+- `bool`
 
 ## Source
 

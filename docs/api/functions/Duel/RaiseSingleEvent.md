@@ -3,18 +3,18 @@
 ## Signature
 
 ```lua
-Duel.RaiseSingleEvent(Card ec, int code, Effect re, int r, int rp, int ep, int ev) -> void
+Duel.RaiseSingleEvent(Card ec, int code, Effect|nil re, int r, int rp, int ep, int ev) -> void
 ```
 
 ## Description
 
-To eg, ep, ev, re, r, rp for the card ec trigger a single point in time
+Raises a single-card event for ec with code, re, r, rp, ep, and ev, then processes single-card events.
 
 ## Parameters
 
 - `ec` `Card`
 - `code` `int`
-- `re` `Effect`
+- `re` `Effect|nil`
 - `r` `int`
 - `rp` `int`
 - `ep` `int`

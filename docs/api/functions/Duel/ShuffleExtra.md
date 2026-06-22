@@ -8,7 +8,7 @@ Duel.ShuffleExtra(int player) -> void
 
 ## Description
 
-Manually shuffle player's Extra Deck
+Shuffles player's Extra Deck.
 
 ## Parameters
 

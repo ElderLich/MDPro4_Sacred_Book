@@ -8,7 +8,7 @@ Card.GetTurnCounter(Card c) -> int
 
 ## Description
 
-Returns the round counter for c
+Returns c's turn counter.
 
 ## Parameters
 

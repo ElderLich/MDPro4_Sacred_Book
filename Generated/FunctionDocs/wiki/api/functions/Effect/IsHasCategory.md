@@ -8,7 +8,7 @@ Effect.IsHasCategory(Effect e, int cate) -> bool
 
 ## Description
 
-Check whether the effect contains cate
+Checks whether e's category bitmask contains cate.
 
 ## Parameters
 

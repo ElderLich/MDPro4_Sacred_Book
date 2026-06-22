@@ -3,12 +3,12 @@
 ## Signature
 
 ```lua
-Card.GetFirstCardTarget(Card c) -> Card
+Card.GetFirstCardTarget(Card c) -> Card|nil
 ```
 
 ## Description
 
-Returns c the current first persistent object
+Returns c's first persistent card target, or nil.
 
 ## Parameters
 
@@ -16,7 +16,7 @@ Returns c the current first persistent object
 
 ## Returns
 
-- `Card`
+- `Card|nil`
 
 ## Source
 

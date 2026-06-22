@@ -3,16 +3,16 @@
 ## Signature
 
 ```lua
-Duel.ClearOperationInfo(int chainc) -> void
+Duel.ClearOperationInfo(int ct) -> void
 ```
 
 ## Description
 
-Clear the OperationInfo of chain chainc; used for cases like Fallen Angel copying and using Graveyard effects, where card effects should not be responded to
+Clears operation info for chain ct; it is a no-op if that Chain Link does not exist.
 
 ## Parameters
 
-- `chainc` `int`
+- `ct` `int`
 
 ## Source
 

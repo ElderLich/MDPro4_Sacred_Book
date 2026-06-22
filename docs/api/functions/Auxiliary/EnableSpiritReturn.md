@@ -3,18 +3,19 @@
 ## Signature
 
 ```lua
-Auxiliary.EnableSpiritReturn(Card c, any event1, ... any) -> void
+Auxiliary.EnableSpiritReturn(Card c, int event1, [... int]) -> void
 ```
 
 ## Description
 
-Add an effect to c for Spirit Monsters to return to the hand during the End Phase of turns when events event1,... occur
+Registers Spirit return setup for c.
+When any listed event happens, it creates End Phase return-to-hand effects in the Monster Zone, respecting EFFECT_SPIRIT_DONOT_RETURN and EFFECT_SPIRIT_MAYNOT_RETURN.
 
 ## Parameters
 
 - `c` `Card`
-- `event1` `any`
-- `...` `any`
+- `event1` `int`
+- `...` `int` optional
 
 ## Source
 

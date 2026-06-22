@@ -8,7 +8,7 @@ Card.ResetFlagEffect(Card c, int code) -> void
 
 ## Description
 
-Manually clear the type of c is the code of the identification effect
+Resets all flag effects on c with code.
 
 ## Parameters
 

@@ -8,7 +8,7 @@ Duel.IsDamageCalculated() -> bool
 
 ## Description
 
-Used to check if damage has been calculated during the damage phase
+Returns whether damage calculation has been performed in the current battle/damage-step state.
 
 ## Returns
 

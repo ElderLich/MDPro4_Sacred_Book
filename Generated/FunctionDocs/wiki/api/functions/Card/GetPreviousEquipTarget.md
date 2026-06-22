@@ -3,12 +3,12 @@
 ## Signature
 
 ```lua
-Card.GetPreviousEquipTarget(Card c) -> Card
+Card.GetPreviousEquipTarget(Card c) -> Card|nil
 ```
 
 ## Description
 
-Returns the device object before c
+Returns c's previous Equip target, or nil.
 
 ## Parameters
 
@@ -16,7 +16,7 @@ Returns the device object before c
 
 ## Returns
 
-- `Card`
+- `Card|nil`
 
 ## Source
 

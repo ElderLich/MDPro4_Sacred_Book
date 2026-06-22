@@ -8,8 +8,7 @@ Auxiliary.RitualCheck(Group g, int tp, Card c, int lv, string greater_or_equal) 
 
 ## Description
 
-|"'Greater'"
-|"'Equal'"
+Ritual material group predicate that checks zone availability, the requested Greater/Equal level rule, custom mat_group_check, and RCheckAdditional.
 
 ## Parameters
 

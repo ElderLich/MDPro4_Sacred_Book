@@ -8,7 +8,7 @@ Duel.RDComplete() -> void
 
 ## Description
 
-In the call Duel.Damage / Duel.Recover, if is_step parameter is true, you need to call this function when the trigger point
+Completes reserved step damage/recover processing after Duel.Damage or Duel.Recover is called with is_step=true.
 
 ## Source
 

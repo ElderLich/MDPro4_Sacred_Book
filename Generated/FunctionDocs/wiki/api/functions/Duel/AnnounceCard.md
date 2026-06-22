@@ -3,16 +3,17 @@
 ## Signature
 
 ```lua
-Duel.AnnounceCard(int player, [... int]) -> int
+Duel.AnnounceCard(int player, [int opcode1], [... int]) -> int
 ```
 
 ## Description
 
-Let players declare a player \[type type\] card code
+Lets player declare a card code matching the optional opcode/filter expression and returns the selected code.
 
 ## Parameters
 
 - `player` `int`
+- `opcode1` `int` optional
 - `...` `int` optional
 
 ## Returns

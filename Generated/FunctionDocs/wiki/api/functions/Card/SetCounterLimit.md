@@ -3,18 +3,18 @@
 ## Signature
 
 ```lua
-Card.SetCounterLimit(Card c, int countertype, int count) -> void
+Card.SetCounterLimit(Card c, int countertype, int limit) -> void
 ```
 
 ## Description
 
-Set c to place the upper limit of countertype type counters
+Adds an EFFECT_COUNTER_LIMIT for countertype to c with value limit.
 
 ## Parameters
 
 - `c` `Card`
 - `countertype` `int`
-- `count` `int`
+- `limit` `int`
 
 ## Source
 

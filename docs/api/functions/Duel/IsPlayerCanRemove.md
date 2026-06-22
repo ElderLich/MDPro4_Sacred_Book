@@ -3,17 +3,19 @@
 ## Signature
 
 ```lua
-Duel.IsPlayerCanRemove(int player, [Card c]) -> bool
+Duel.IsPlayerCanRemove(int player, [Card c], [int reason]) -> bool
 ```
 
 ## Description
 
-Check whether the player player except c
+With only player, checks whether player is not forbidden from banishing.
+With c, checks whether player can banish c for reason; reason defaults to REASON_EFFECT.
 
 ## Parameters
 
 - `player` `int`
 - `c` `Card` optional
+- `reason` `int` optional - default: REASON_EFFECT
 
 ## Returns
 

@@ -8,7 +8,7 @@ Auxiliary.CreateChecks(function f, table list) -> table
 
 ## Description
 
-Create a table of filter functions
+Returns a table of one-card check functions where each function calls f(c, list\[i\]).
 
 ## Parameters
 

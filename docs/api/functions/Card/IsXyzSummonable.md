@@ -3,20 +3,19 @@
 ## Signature
 
 ```lua
-Card.IsXyzSummonable(Card c, [Group|nil mg], [int min], [int max]) -> bool
+Card.IsXyzSummonable(Card c, [Group|nil materials], [int minc], [int maxc]) -> bool
 ```
 
 ## Description
 
-Check whether mg can be selected in the \[min-max months\] excessive material on the c to call the excess procedure
-If mg is nil, this function has the same effect as Card.IsSpecialSummonable
+Checks whether Xyz Monster c can be Xyz Summoned by the current reason player with an optional material group and min/max constraints.
 
 ## Parameters
 
 - `c` `Card`
-- `mg` `Group|nil` optional
-- `min` `int` optional - default: 0
-- `max` `int` optional - default: 0
+- `materials` `Group|nil` optional
+- `minc` `int` optional
+- `maxc` `int` optional
 
 ## Returns
 

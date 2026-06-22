@@ -8,7 +8,8 @@ Card.IsDefenseBelow(Card c, int def) -> bool
 
 ## Description
 
-Check whether c is defensive def below (at least 0)
+Checks whether c has known current DEF less than or equal to def.
+Link Monsters and non-monsters return false, and unknown or negative DEF also returns false.
 
 ## Parameters
 

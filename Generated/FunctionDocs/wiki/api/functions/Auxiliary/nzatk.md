@@ -3,19 +3,20 @@
 ## Signature
 
 ```lua
-Auxiliary.nzatk(Card c) -> void
+Auxiliary.nzatk(Card c) -> bool
 ```
 
 ## Description
 
-Simplified method for the filter function for face-up monsters with non-zero ATK
-function aux.nzatk(c)
-  return c:IsFaceup() and c:GetAttack()&gt;0
-end
+Filter helper that is true for face-up cards with current ATK greater than 0.
 
 ## Parameters
 
 - `c` `Card`
+
+## Returns
+
+- `bool`
 
 ## Source
 

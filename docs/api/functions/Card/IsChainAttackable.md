@@ -8,14 +8,14 @@ Card.IsChainAttackable(Card c, [int ac], [bool monsteronly]) -> bool
 
 ## Description
 
-Check whether c can be a continuous attack, c the number of attacks declared&gt; = ac return false
-Note: This function returns false when c has made multiple attacks due to effects such as flashing swords
+Checks whether the current attacker can make another attack under chain-attack rules.
+This core binding validates c but tests the duel's current attacker. ac defaults to 2, and monsteronly requires an attack target instead of allowing a direct attack.
 
 ## Parameters
 
 - `c` `Card`
-- `ac` `int` optional
-- `monsteronly` `bool` optional
+- `ac` `int` optional - default: 2
+- `monsteronly` `bool` optional - default: false
 
 ## Returns
 

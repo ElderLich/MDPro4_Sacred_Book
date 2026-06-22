@@ -8,7 +8,7 @@ Card.IsLink(Card c, int link1, [int link2], [... int]) -> bool
 
 ## Description
 
-Check if card c's Link Marker count is link1 \[, or link2...\]
+Checks whether c:GetLink() equals any supplied link value. Nil link arguments are skipped; non-Link cards compare as 0.
 
 ## Parameters
 

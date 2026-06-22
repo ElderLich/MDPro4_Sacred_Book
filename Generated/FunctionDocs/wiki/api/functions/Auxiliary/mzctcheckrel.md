@@ -8,13 +8,13 @@ Auxiliary.mzctcheckrel(Group g, int tp, [int reason]) -> bool
 
 ## Description
 
-Check if there is space in mzone after tp releases g by reason
+Checks whether releasing group g by reason leaves a Monster Zone and g is a valid release group for tp.
 
 ## Parameters
 
 - `g` `Group`
 - `tp` `int`
-- `reason` `int` optional
+- `reason` `int` optional - default: REASON_COST
 
 ## Returns
 

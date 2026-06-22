@@ -8,11 +8,11 @@ Duel.SetChainLimitTillChainEnd(function f) -> void
 
 ## Description
 
-Same as Duel.SetChainLimit, but the chain limit set by this function persists until the chain ends
+Registers a chain-limit callback that persists until the current chain ends.
 
 ## Parameters
 
-- `f` `function`
+- `f` `function` - callback: f(e, chain_player, activating_player)
 
 ## Source
 

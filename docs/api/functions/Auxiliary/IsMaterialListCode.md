@@ -3,17 +3,21 @@
 ## Signature
 
 ```lua
-Auxiliary.IsMaterialListCode(Card c, int code) -> void
+Auxiliary.IsMaterialListCode(Card c, int code) -> bool|nil
 ```
 
 ## Description
 
-Check if card c lists card code as a material in its material list
+Checks whether code is present in c.material, normally populated by AddMaterialCodeList; returns true or nil.
 
 ## Parameters
 
 - `c` `Card`
 - `code` `int`
+
+## Returns
+
+- `bool|nil`
 
 ## Source
 

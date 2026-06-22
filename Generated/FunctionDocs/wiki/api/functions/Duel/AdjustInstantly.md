@@ -8,7 +8,8 @@ Duel.AdjustInstantly([Card c]) -> void
 
 ## Description
 
-Manually refreshing the card's inactive state on card \[affected by card c\]
+Runs immediate field adjustment.
+When c is supplied, the core refreshes disable relations for cards related to c before adjusting the field.
 
 ## Parameters
 

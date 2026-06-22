@@ -3,17 +3,17 @@
 ## Signature
 
 ```lua
-Card.SetTurnCounter(Card c, int counter) -> void
+Card.SetTurnCounter(Card c, int ct) -> void
 ```
 
 ## Description
 
-Set c of the round counter (light of the sword, etc.)
+Sets c's turn counter.
 
 ## Parameters
 
 - `c` `Card`
-- `counter` `int`
+- `ct` `int`
 
 ## Source
 

@@ -8,7 +8,7 @@ Card.IsReleasableByEffect(Card c) -> bool
 
 ## Description
 
-Check whether c can be liberated by the effect
+Checks whether c can be Released by the current resolving effect, using the current reason player and reason effect.
 
 ## Parameters
 
