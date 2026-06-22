@@ -3,16 +3,12 @@
 ## Signature
 
 ```lua
-Auxiliary.bdocon(Effect e, int tp, Group eg, int ep, any ev, Effect re, any r, int rp) -> void
+Auxiliary.bdocon(Effect e, int tp, Group eg, int ep, any ev, Effect re, any r, int rp) -> bool
 ```
 
 ## Description
 
-Check if e:GetHandler() is related to the current battle, typically used for EVENT_BATTLE_DESTROYING and when battling an opponent's monster, as a condition
-function Auxiliary.bdocon(e, tp, eg, ep, ev, re, r, rp)
-  local c=e:GetHandler()
-  return c:IsRelateToBattle() and c:IsStatus(STATUS_OPPO_BATTLE)
-end
+Condition helper for EVENT_BATTLE_DESTROYING effects; it returns true when the handler is still related to battle and battled an opponent's monster.
 
 ## Parameters
 
@@ -24,6 +20,10 @@ end
 - `re` `Effect`
 - `r` `any`
 - `rp` `int`
+
+## Returns
+
+- `bool`
 
 ## Source
 

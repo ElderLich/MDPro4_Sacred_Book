@@ -8,7 +8,7 @@ Card.GetOriginalAttribute(Card c) -> int
 
 ## Description
 
-Returns the attributes of the card that c is describing
+Returns c's original Attribute from card data, or 0 while c is marked with STATUS_NO_LEVEL.
 
 ## Parameters
 

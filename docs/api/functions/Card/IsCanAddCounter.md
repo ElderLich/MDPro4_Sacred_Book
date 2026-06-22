@@ -3,20 +3,21 @@
 ## Signature
 
 ```lua
-Card.IsCanAddCounter(Card c, int countertype, int count, [int singly], [int location]) -> bool
+Card.IsCanAddCounter(Card c, int countertype, int count, [bool singly], [int loc]) -> bool
 ```
 
 ## Description
 
-Check if c can place count counters of type countertype \[singly = true\]
+Checks whether the current reason player can place count counters of countertype on c.
+When loc is 0, c must currently be face-up on the field. When loc is nonzero, the counter permit range is checked against loc instead. If singly is true, counter limits are tested as current count + 1 rather than current count + count.
 
 ## Parameters
 
 - `c` `Card`
 - `countertype` `int`
 - `count` `int`
-- `singly` `int` optional - default: false
-- `location` `int` optional
+- `singly` `bool` optional - default: false
+- `loc` `int` optional - default: 0
 
 ## Returns
 

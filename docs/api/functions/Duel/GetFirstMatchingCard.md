@@ -3,13 +3,13 @@
 ## Signature
 
 ```lua
-Duel.GetFirstMatchingCard([function|nil f], int player, int s, int o, [Card|Group|nil ex], ... any) -> Card
+Duel.GetFirstMatchingCard([function|nil f], int player, int s, int o, [Card|Group|nil ex], [... any]) -> Card|nil
 ```
 
 ## Description
 
-Filter function to return to the specified location to meet the filter condition f and not equal to the first card ex
-The sixth parameter starts as an extra parameter
+Returns the first card in the specified locations that satisfies f and is not excluded by ex.
+f may be nil. ex may be a Card, a Group, or nil, and extra arguments after ex are passed to f. Returns nil when no matching card is found.
 
 ## Parameters
 
@@ -18,11 +18,11 @@ The sixth parameter starts as an extra parameter
 - `s` `int`
 - `o` `int`
 - `ex` `Card|Group|nil` optional
-- `...` `any`
+- `...` `any` optional
 
 ## Returns
 
-- `Card`
+- `Card|nil`
 
 ## Source
 

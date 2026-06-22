@@ -8,7 +8,7 @@ Card.GetLinkedGroup(Card c) -> Group
 
 ## Description
 
-Return the group of cards in the zones linked to card c
+Returns the cards currently occupying zones linked by c.
 
 ## Parameters
 

@@ -8,7 +8,8 @@ Effect.UseCountLimit(Effect e, int p, [int count], [bool oath_only]) -> void
 
 ## Description
 
-Manually reduce player p's available activation count for effect e by count \[oath_only indicates whether the effect is EFFECT_FLAG_OATH\]
+Manually consumes count uses of e's count limit for player p.
+count defaults to 1. If oath_only is true, the count is consumed only when e's count code includes EFFECT_COUNT_CODE_OATH; otherwise the binding decrements the count limit directly.
 
 ## Parameters
 

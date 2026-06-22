@@ -8,7 +8,7 @@ Card.GetPreviousTypeOnField(Card c) -> int
 
 ## Description
 
-Returns the type before the c position change
+Returns the Type value recorded for c's previous on-field state.
 
 ## Parameters
 

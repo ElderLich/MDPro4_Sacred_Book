@@ -3,12 +3,13 @@
 ## Signature
 
 ```lua
-Duel.SelectTribute(int player, Card c, int min, int max, [Group|nil mg], [int|nil toplayer]) -> Group
+Duel.SelectTribute(int player, Card c, int min, int max, [Group|nil mg], [int toplayer]) -> Group
 ```
 
 ## Description
 
-Let the player player \[from the mg\] choose the min-max sacrifices that are normally used to summon c, ex = true to allow the monster on the other side of the field (the wing of the Sun God-Sphere)
+Lets player select min to max Tribute candidates for Normal Summoning or Setting c and returns the selected Group.
+mg can restrict the candidate pool. toplayer defaults to player; when toplayer differs, the core builds the extra release list for Tributing to that player's field.
 
 ## Parameters
 
@@ -17,7 +18,7 @@ Let the player player \[from the mg\] choose the min-max sacrifices that are nor
 - `min` `int`
 - `max` `int`
 - `mg` `Group|nil` optional
-- `toplayer` `int|nil` optional - default: c:GetControler()
+- `toplayer` `int` optional - default: player
 
 ## Returns
 

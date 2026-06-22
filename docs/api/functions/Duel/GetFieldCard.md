@@ -3,22 +3,23 @@
 ## Signature
 
 ```lua
-Duel.GetFieldCard(int player, int location, int seq) -> Card
+Duel.GetFieldCard(int player, int location, int sequence) -> Card|nil
 ```
 
 ## Description
 
-Back to player The player's field is located in the location number seq card, commonly used to obtain the field area · Spirit pendulum area card
+Returns the card at player, location, and sequence, or nil if that slot is empty or invalid.
+The binding also returns nil while the card at that slot is in Summoning or Special Summon step status. Field Zone sequence 0 maps to the Field Zone, and Pendulum Zone sequences 0 and 1 only return cards currently marked as Pendulum Zone cards.
 
 ## Parameters
 
 - `player` `int`
 - `location` `int`
-- `seq` `int`
+- `sequence` `int`
 
 ## Returns
 
-- `Card`
+- `Card|nil`
 
 ## Source
 

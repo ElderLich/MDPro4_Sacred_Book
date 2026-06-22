@@ -8,7 +8,7 @@ Card.GetEquipGroup(Card c) -> Group
 
 ## Description
 
-Returns the current set of cards
+Returns the Equip Cards currently equipped to c as a Group.
 
 ## Parameters
 

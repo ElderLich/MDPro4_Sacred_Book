@@ -3,25 +3,25 @@
 ## Signature
 
 ```lua
-Duel.AnnounceNumber(int player, int number, ... any) -> int,int
+Duel.AnnounceNumber(int player, int number1, [int number2], [... int]) -> int,int
 ```
 
 ## Description
 
-Let the player player declare a number
-Starting with the second argument, each parameter represents a declarable number
-The first return value is the number of declarations, and the second return value is the declaration number of the position in all options
+Lets player choose one of the supplied numbers.
+Returns the selected number and the core's 0-based option index for that number.
 
 ## Parameters
 
 - `player` `int`
-- `number` `int`
-- `...` `any`
+- `number1` `int`
+- `number2` `int` optional
+- `...` `int` optional
 
 ## Returns
 
-- `int`
-- `int`
+- `int` - Selected number.
+- `int` - 0-based option index selected by the core.
 
 ## Source
 

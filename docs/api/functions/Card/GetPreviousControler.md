@@ -8,7 +8,7 @@ Card.GetPreviousControler(Card c) -> int
 
 ## Description
 
-Returns the controller before the position change of c
+Returns c's previous controller value.
 
 ## Parameters
 

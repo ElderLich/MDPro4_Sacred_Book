@@ -3,30 +3,25 @@
 ## Signature
 
 ```lua
-Duel.GetActivityCount(int player, int activity_type, ... any) -> int,...
+Duel.GetActivityCount(int player, int activity_type1, [int activity_type2], [... int]) -> int,...?
 ```
 
 ## Description
 
-Returns the number of times the player performed the corresponding activity_type operation
-The activity_type is of the following type
-ACTIVITY_SUMMON call (not including the usual call placed)
-ACTIVITY_NORMALSUMMON Usually called (including the usual call placed)
-ACTIVITY_SPSUMMON Special call
-ACTIVITY_FLIPSUMMON Reverse call
-ACTIVITY_ATTACK attack
-ACTIVITY_BATTLE_PHASE enters the combat phase
+Returns activity counts for player in the same order as the requested activity_type values.
+Supported built-in activity types are ACTIVITY_SUMMON, ACTIVITY_NORMALSUMMON, ACTIVITY_SPSUMMON, ACTIVITY_FLIPSUMMON, ACTIVITY_ATTACK, and ACTIVITY_BATTLE_PHASE. Other values, including ACTIVITY_CHAIN in this binding, return 0.
 
 ## Parameters
 
 - `player` `int`
-- `activity_type` `int`
-- `...` `any`
+- `activity_type1` `int`
+- `activity_type2` `int` optional
+- `...` `int` optional
 
 ## Returns
 
-- `int`
-- `...`
+- `int` - Count for activity_type1.
+- `...?` - Additional counts for each extra activity_type.
 
 ## Source
 

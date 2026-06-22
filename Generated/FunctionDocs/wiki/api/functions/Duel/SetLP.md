@@ -8,7 +8,7 @@ Duel.SetLP(int player, int lp) -> void
 
 ## Description
 
-Set the player's current LP to lp
+Sets player's LP to lp, clamping negative lp values to 0, and sends the LP update message.
 
 ## Parameters
 

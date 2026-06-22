@@ -8,7 +8,7 @@ Card.GetBaseDefense(Card c) -> int
 
 ## Description
 
-Return to the original c of the defense
+Returns c's current base DEF. Unknown or negative base DEF values are clamped to 0 by this binding.
 
 ## Parameters
 

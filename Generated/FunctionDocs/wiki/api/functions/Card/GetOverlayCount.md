@@ -8,7 +8,7 @@ Card.GetOverlayCount(Card c) -> int
 
 ## Description
 
-Returns the number of cards currently stacked
+Returns the number of current Xyz Materials attached to c.
 
 ## Parameters
 

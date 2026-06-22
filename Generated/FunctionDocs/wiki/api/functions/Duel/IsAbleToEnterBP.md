@@ -8,7 +8,8 @@ Duel.IsAbleToEnterBP() -> bool
 
 ## Description
 
-Check whether the player can enter the combat phase of the round
+Checks whether the current turn player can still enter the Battle Phase.
+The core requires the duel to allow first-turn attacks or not be turn 1, the current phase to be before PHASE_BATTLE_START, and the turn player not to be affected by EFFECT_CANNOT_BP.
 
 ## Returns
 

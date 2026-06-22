@@ -453,6 +453,90 @@ def parse_bullet_file(path: Path) -> dict[str, list[str]]:
 
 FUNCTION_EN_OVERRIDES = {
     # High-use core/API functions reviewed from MDPro3/YGOPro sources.
+    "Duel.GetFirstMatchingCard": [
+        "Returns the first card in the specified locations that satisfies f and is not excluded by ex.",
+        "f may be nil. ex may be a Card, a Group, or nil, and extra arguments after ex are passed to f. Returns nil when no matching card is found.",
+    ],
+    "Card.IsFusionAttribute": [
+        "Checks whether c's Attribute while used as Fusion Material contains attribute.",
+        "player defaults to the current reason player. The core uses c:GetFusionAttribute(player), so Fusion Material Attribute-changing effects are included.",
+    ],
+    "Duel.GetActivityCount": [
+        "Returns activity counts for player in the same order as the requested activity_type values.",
+        "Supported built-in activity types are ACTIVITY_SUMMON, ACTIVITY_NORMALSUMMON, ACTIVITY_SPSUMMON, ACTIVITY_FLIPSUMMON, ACTIVITY_ATTACK, and ACTIVITY_BATTLE_PHASE. Other values, including ACTIVITY_CHAIN in this binding, return 0.",
+    ],
+    "Effect.UseCountLimit": [
+        "Manually consumes count uses of e's count limit for player p.",
+        "count defaults to 1. If oath_only is true, the count is consumed only when e's count code includes EFFECT_COUNT_CODE_OATH; otherwise the binding decrements the count limit directly.",
+    ],
+    "Card.GetOriginalRace": ["Returns c's original Race from card data, or 0 while c is marked with STATUS_NO_LEVEL."],
+    "Card.GetOverlayCount": ["Returns the number of current Xyz Materials attached to c."],
+    "Card.IsCanAddCounter": [
+        "Checks whether the current reason player can place count counters of countertype on c.",
+        "When loc is 0, c must currently be face-up on the field. When loc is nonzero, the counter permit range is checked against loc instead. If singly is true, counter limits are tested as current count + 1 rather than current count + count.",
+    ],
+    "Duel.SetLP": ["Sets player's LP to lp, clamping negative lp values to 0, and sends the LP update message."],
+    "Auxiliary.AddFusionProcCodeFun": [
+        "Registers a Fusion Summon procedure on c requiring code1 and cc additional Fusion Materials matching f.",
+        "The helper builds cc copies of f and forwards them to Auxiliary.AddFusionProcMix together with sub and insf.",
+    ],
+    "Duel.AnnounceNumber": [
+        "Lets player choose one of the supplied numbers.",
+        "Returns the selected number and the core's 0-based option index for that number.",
+    ],
+    "Card.GetBaseDefense": ["Returns c's current base DEF. Unknown or negative base DEF values are clamped to 0 by this binding."],
+    "Card.SetSPSummonOnce": [
+        "Marks c as sharing a once-per-turn Special Summon limit under spsummon_code.",
+        "Cards with the same nonzero spsummon_code share the limit for each player. The binding does nothing while c is copying another card's effect.",
+    ],
+    "Card.IsPreviousSetCard": [
+        "Checks whether c's previous card-code or added previous set-code data matches any supplied setcode value.",
+        "Nil setcode arguments are skipped. This uses the previous state recorded before the last relevant field or position update, not c's current Set membership.",
+    ],
+    "Duel.IsAbleToEnterBP": [
+        "Checks whether the current turn player can still enter the Battle Phase.",
+        "The core requires the duel to allow first-turn attacks or not be turn 1, the current phase to be before PHASE_BATTLE_START, and the turn player not to be affected by EFFECT_CANNOT_BP.",
+    ],
+    "Duel.CheckTribute": [
+        "Checks whether there is a valid Tribute set for Normal Summoning or Setting c.",
+        "max defaults to min, mg can restrict the candidate pool, toplayer defaults to c's current controller, and zone defaults to the current extra-summon zone limit when present or 0x1f otherwise.",
+    ],
+    "Effect.GetActivateLocation": ["Returns the location from which effect e was activated."],
+    "Card.AddMonsterAttribute": [
+        "Adds temporary monster properties to c through effects.",
+        "The binding clears STATUS_NO_LEVEL, applies EFFECT_PRE_MONSTER with type, and applies Attribute, Race, Level, base ATK, and base DEF changes for nonzero supplied values.",
+    ],
+    "Card.GetPreviousTypeOnField": ["Returns the Type value recorded for c's previous on-field state."],
+    "Duel.GetFieldCard": [
+        "Returns the card at player, location, and sequence, or nil if that slot is empty or invalid.",
+        "The binding also returns nil while the card at that slot is in Summoning or Special Summon step status. Field Zone sequence 0 maps to the Field Zone, and Pendulum Zone sequences 0 and 1 only return cards currently marked as Pendulum Zone cards.",
+    ],
+    "Card.GetOriginalAttribute": ["Returns c's original Attribute from card data, or 0 while c is marked with STATUS_NO_LEVEL."],
+    "Duel.SelectTribute": [
+        "Lets player select min to max Tribute candidates for Normal Summoning or Setting c and returns the selected Group.",
+        "mg can restrict the candidate pool. toplayer defaults to player; when toplayer differs, the core builds the extra release list for Tributing to that player's field.",
+    ],
+    "Auxiliary.bdocon": ["Condition helper for EVENT_BATTLE_DESTROYING effects; it returns true when the handler is still related to battle and battled an opponent's monster."],
+    "Card.IsCanBeXyzMaterial": [
+        "Checks whether c can be used as Xyz Material, optionally for sc.",
+        "The core rejects Tokens, cards whose Xyz-material type is not a monster, cards with STATUS_FORBIDDEN, and applicable EFFECT_CANNOT_BE_XYZ_MATERIAL effects.",
+    ],
+    "Card.GetPreviousControler": ["Returns c's previous controller value."],
+    "Card.GetEquipGroup": ["Returns the Equip Cards currently equipped to c as a Group."],
+    "Card.GetLinkedGroup": ["Returns the cards currently occupying zones linked by c."],
+    "Card.GetLinkedZone": [
+        "Returns the linked-zone bitmask generated by c.",
+        "By default the bitmask is from c's controller perspective. Passing the opponent as player swaps the self and opponent halves to that player's perspective.",
+    ],
+    "Card.GetPreviousSequence": ["Returns c's previous sequence value."],
+    "Duel.ChainAttack": [
+        "Marks the current attacker so it can make another attack, optionally against card c.",
+        "The binding only sets chain-attack state. It returns no Lua value and does nothing if there is no current attacker or the attacker is not affected by the resolving effect.",
+    ],
+    "Duel.IsCanRemoveCounter": [
+        "Checks whether player can remove count counters of countertype for reason from the selected field locations.",
+        "s marks locations on player's own field and o marks locations on the opponent's field, from player's perspective.",
+    ],
     "Card.IsControlerCanBeChanged": [
         "Checks whether control of c can currently move to the other player.",
         "The card must be in the Monster Zone and must not be affected by EFFECT_CANNOT_CHANGE_CONTROL. Unless ignore_mzone is true, the opponent must also have an available Monster Zone in zone.",
@@ -1522,6 +1606,90 @@ FUNCTION_EN_OVERRIDES = {
 
 
 FUNCTION_ZH_OVERRIDES = {
+    "Duel.GetFirstMatchingCard": [
+        "返回指定位置中第一张满足f且未被ex排除的卡。",
+        "f可以为nil。ex可以是Card、Group或nil，ex之后的额外参数会传给f。没有匹配卡时返回nil。",
+    ],
+    "Card.IsFusionAttribute": [
+        "检查c作为融合素材使用时的属性是否包含attribute。",
+        "player默认当前原因玩家。核心使用c:GetFusionAttribute(player)，因此会计入融合素材用属性变更效果。",
+    ],
+    "Duel.GetActivityCount": [
+        "按传入的activity_type顺序返回player的行动次数。",
+        "内置支持ACTIVITY_SUMMON、ACTIVITY_NORMALSUMMON、ACTIVITY_SPSUMMON、ACTIVITY_FLIPSUMMON、ACTIVITY_ATTACK和ACTIVITY_BATTLE_PHASE。其他值在该绑定中返回0，包括ACTIVITY_CHAIN。",
+    ],
+    "Effect.UseCountLimit": [
+        "手动消耗玩家p对效果e的count次次数限制。",
+        "count默认1。oath_only为true时，只有e的次数代码包含EFFECT_COUNT_CODE_OATH才会消耗次数；否则该绑定会直接减少次数限制。",
+    ],
+    "Card.GetOriginalRace": ["返回c卡片数据中的原本种族；c带STATUS_NO_LEVEL时返回0。"],
+    "Card.GetOverlayCount": ["返回c当前叠放的超量素材数量。"],
+    "Card.IsCanAddCounter": [
+        "检查当前原因玩家能否在c上放置count个countertype类型的指示物。",
+        "loc为0时，c必须当前表侧表示存在于场上。loc不为0时，改为用loc检查指示物许可效果的范围。singly为true时，指示物上限按当前数量+1检查，而不是按当前数量+count检查。",
+    ],
+    "Duel.SetLP": ["将player的LP设为lp；lp为负数时限制为0，并发送LP更新消息。"],
+    "Auxiliary.AddFusionProcCodeFun": [
+        "给c登记需要code1以及cc个满足f的额外融合素材的融合召唤手续。",
+        "该辅助函数会构造cc份f，并连同sub和insf转交给Auxiliary.AddFusionProcMix。",
+    ],
+    "Duel.AnnounceNumber": [
+        "让player从给定数字中选择1个。",
+        "返回被选择的数字，以及该数字在核心选项列表中的0基序号。",
+    ],
+    "Card.GetBaseDefense": ["返回c当前的基础守备力。未知或负数基础守备力会被该绑定限制为0。"],
+    "Card.SetSPSummonOnce": [
+        "将c标记为按spsummon_code共享每回合1次的特殊召唤限制。",
+        "具有相同非零spsummon_code的卡对每名玩家共享该限制。c正在复制其他卡效果时，该绑定不做处理。",
+    ],
+    "Card.IsPreviousSetCard": [
+        "检查c之前记录的卡号或附加系列数据是否匹配任意给定setcode。",
+        "nil的setcode参数会被跳过。该函数使用最近相关场上状态或表示形式更新前记录的状态，不检查c当前的系列。",
+    ],
+    "Duel.IsAbleToEnterBP": [
+        "检查当前回合玩家是否仍能进入战斗阶段。",
+        "核心要求决斗允许先攻攻击或当前不是第1回合，当前阶段早于PHASE_BATTLE_START，并且回合玩家不受EFFECT_CANNOT_BP影响。",
+    ],
+    "Duel.CheckTribute": [
+        "检查是否存在可用于通常召唤或盖放c的合法祭品组合。",
+        "max默认等于min，mg可以限制候选素材池，toplayer默认c当前控制者，zone默认当前额外召唤区域限制，若没有限制则为0x1f。",
+    ],
+    "Effect.GetActivateLocation": ["返回效果e发动时所在的位置。"],
+    "Card.AddMonsterAttribute": [
+        "通过效果给c追加临时怪兽属性。",
+        "该绑定会清除STATUS_NO_LEVEL，用type适用EFFECT_PRE_MONSTER，并对非零的属性、种族、等级、基础攻击力和基础守备力数值适用对应变更效果。",
+    ],
+    "Card.GetPreviousTypeOnField": ["返回c之前场上状态记录的种类数值。"],
+    "Duel.GetFieldCard": [
+        "返回player的location中sequence位置的卡；该位置为空或无效时返回nil。",
+        "若该位置的卡正在召唤或处于特殊召唤步骤状态，该绑定也返回nil。场地区域使用sequence 0，灵摆区域只在sequence 0和1且该卡当前标记为灵摆区域卡时返回。",
+    ],
+    "Card.GetOriginalAttribute": ["返回c卡片数据中的原本属性；c带STATUS_NO_LEVEL时返回0。"],
+    "Duel.SelectTribute": [
+        "让player为通常召唤或盖放c选择min到max只祭品，并返回选择的Group。",
+        "mg可以限制候选素材池。toplayer默认player；toplayer不同于player时，核心会构建用于向该玩家场上解放的额外候选列表。",
+    ],
+    "Auxiliary.bdocon": ["EVENT_BATTLE_DESTROYING效果常用的条件辅助函数；处理者仍与战斗关联并且和对方怪兽战斗时返回true。"],
+    "Card.IsCanBeXyzMaterial": [
+        "检查c能否作为超量素材使用，可选指定要召唤的sc。",
+        "核心会拒绝衍生物、超量素材用种类不是怪兽的卡、带STATUS_FORBIDDEN的卡，以及适用的EFFECT_CANNOT_BE_XYZ_MATERIAL效果。",
+    ],
+    "Card.GetPreviousControler": ["返回c之前记录的控制者。"],
+    "Card.GetEquipGroup": ["以Group返回当前装备给c的装备卡。"],
+    "Card.GetLinkedGroup": ["返回当前位于c连接区域中的卡。"],
+    "Card.GetLinkedZone": [
+        "返回c产生的连接区域位掩码。",
+        "默认从c控制者视角返回。传入对方玩家作为player时，会交换自己/对方两部分位掩码，转换为该玩家视角。",
+    ],
+    "Card.GetPreviousSequence": ["返回c之前记录的位置序号。"],
+    "Duel.ChainAttack": [
+        "标记当前攻击怪兽，使其可以再次攻击；可选将攻击对象限制为卡c。",
+        "该绑定只设置连续攻击状态，不返回Lua值。没有当前攻击怪兽，或攻击怪兽不受当前处理效果影响时，不做处理。",
+    ],
+    "Duel.IsCanRemoveCounter": [
+        "检查player能否因reason从指定场上位置取除count个countertype类型的指示物。",
+        "s表示从player视角看的己方场上位置，o表示对方场上位置。",
+    ],
     "Card.IsControlerCanBeChanged": [
         "检查c的控制权当前能否转移给另一名玩家。",
         "c必须在怪兽区域，且不受EFFECT_CANNOT_CHANGE_CONTROL影响。ignore_mzone不为true时，对方还必须在zone指定范围内有可用的怪兽区域。",
@@ -2172,6 +2340,203 @@ FUNCTION_ZH_OVERRIDES = {
 
 
 CORE_DOC_OVERRIDES = {
+    "Duel.GetFirstMatchingCard": {
+        "params": [
+            ParamDoc("f", "function|nil", True), ParamDoc("player", "int"), ParamDoc("s", "int"),
+            ParamDoc("o", "int"), ParamDoc("ex", "Card|Group|nil", True), ParamDoc("...", "any", True),
+        ],
+        "returns": [ReturnDoc("Card|nil")],
+        "description": ["Returns the first matching card from the specified locations."],
+        "description_zh": ["返回指定位置中第一张满足条件的卡。"],
+    },
+    "Card.IsFusionAttribute": {
+        "params": [ParamDoc("c", "Card"), ParamDoc("attribute", "int"), ParamDoc("player", "int", True, "default: current reason player")],
+        "returns": [ReturnDoc("bool")],
+        "description": ["Checks c's Attribute while used as Fusion Material."],
+        "description_zh": ["检查c作为融合素材使用时的属性。"],
+    },
+    "Duel.GetActivityCount": {
+        "params": [ParamDoc("player", "int"), ParamDoc("activity_type1", "int"), ParamDoc("activity_type2", "int", True), ParamDoc("...", "int", True)],
+        "returns": [ReturnDoc("int", "Count for activity_type1."), ReturnDoc("...?", "Additional counts for each extra activity_type.")],
+        "description": ["Returns current activity counts for player."],
+        "description_zh": ["返回player当前的行动次数。"],
+    },
+    "Effect.UseCountLimit": {
+        "params": [ParamDoc("e", "Effect"), ParamDoc("p", "int"), ParamDoc("count", "int", True, "default: 1"), ParamDoc("oath_only", "bool", True, "default: false")],
+        "returns": [],
+        "description": ["Manually consumes e's count limit for player p."],
+        "description_zh": ["手动消耗玩家p对效果e的次数限制。"],
+    },
+    "Card.GetOriginalRace": {
+        "params": [ParamDoc("c", "Card")],
+        "returns": [ReturnDoc("int")],
+        "description": ["Returns c's original Race."],
+        "description_zh": ["返回c的原本种族。"],
+    },
+    "Card.GetOverlayCount": {
+        "params": [ParamDoc("c", "Card")],
+        "returns": [ReturnDoc("int")],
+        "description": ["Returns the number of Xyz Materials attached to c."],
+        "description_zh": ["返回c叠放的超量素材数量。"],
+    },
+    "Card.IsCanAddCounter": {
+        "params": [
+            ParamDoc("c", "Card"), ParamDoc("countertype", "int"), ParamDoc("count", "int"),
+            ParamDoc("singly", "bool", True, "default: false"), ParamDoc("loc", "int", True, "default: 0"),
+        ],
+        "returns": [ReturnDoc("bool")],
+        "description": ["Checks whether counters can be placed on c."],
+        "description_zh": ["检查能否在c上放置指示物。"],
+    },
+    "Duel.SetLP": {
+        "params": [ParamDoc("player", "int"), ParamDoc("lp", "int")],
+        "returns": [],
+        "description": ["Sets player's LP."],
+        "description_zh": ["设置player的LP。"],
+    },
+    "Auxiliary.AddFusionProcCodeFun": {
+        "params": [ParamDoc("c", "Card"), ParamDoc("code1", "int|table"), ParamDoc("f", "function|table"), ParamDoc("cc", "int"), ParamDoc("sub", "bool"), ParamDoc("insf", "bool")],
+        "returns": [],
+        "description": ["Registers a code-plus-filter Fusion Material procedure."],
+        "description_zh": ["登记卡号加筛选条件的融合素材手续。"],
+    },
+    "Duel.AnnounceNumber": {
+        "params": [ParamDoc("player", "int"), ParamDoc("number1", "int"), ParamDoc("number2", "int", True), ParamDoc("...", "int", True)],
+        "returns": [ReturnDoc("int", "Selected number."), ReturnDoc("int", "0-based option index selected by the core.")],
+        "description": ["Lets player choose one of the supplied numbers."],
+        "description_zh": ["让player从给定数字中选择1个。"],
+    },
+    "Card.GetBaseDefense": {
+        "params": [ParamDoc("c", "Card")],
+        "returns": [ReturnDoc("int")],
+        "description": ["Returns c's current base DEF."],
+        "description_zh": ["返回c当前的基础守备力。"],
+    },
+    "Card.SetSPSummonOnce": {
+        "params": [ParamDoc("c", "Card"), ParamDoc("spsummon_code", "int")],
+        "returns": [],
+        "description": ["Sets c's shared once-per-turn Special Summon code."],
+        "description_zh": ["设置c共享的每回合1次特殊召唤代码。"],
+    },
+    "Card.IsPreviousSetCard": {
+        "params": [ParamDoc("c", "Card"), ParamDoc("setcode1", "int"), ParamDoc("setcode2", "int", True), ParamDoc("...", "int", True)],
+        "returns": [ReturnDoc("bool")],
+        "description": ["Checks c's previously recorded Set membership."],
+        "description_zh": ["检查c之前记录的系列。"],
+    },
+    "Duel.IsAbleToEnterBP": {
+        "params": [],
+        "returns": [ReturnDoc("bool")],
+        "description": ["Checks whether the current turn player can enter the Battle Phase."],
+        "description_zh": ["检查当前回合玩家能否进入战斗阶段。"],
+    },
+    "Duel.CheckTribute": {
+        "params": [
+            ParamDoc("c", "Card"), ParamDoc("min", "int"), ParamDoc("max", "int", True, "default: min"),
+            ParamDoc("mg", "Group|nil", True), ParamDoc("toplayer", "int", True, "default: c's controller"),
+            ParamDoc("zone", "int", True, "default: current extra-summon zone limit or 0x1f"),
+        ],
+        "returns": [ReturnDoc("bool")],
+        "description": ["Checks whether valid Tribute candidates exist for c."],
+        "description_zh": ["检查c是否存在合法祭品候选。"],
+    },
+    "Effect.GetActivateLocation": {
+        "params": [ParamDoc("e", "Effect")],
+        "returns": [ReturnDoc("int")],
+        "description": ["Returns e's activation location."],
+        "description_zh": ["返回效果e发动的位置。"],
+    },
+    "Card.AddMonsterAttribute": {
+        "params": [
+            ParamDoc("c", "Card"), ParamDoc("type", "int"), ParamDoc("attribute", "int", True, "default: 0"),
+            ParamDoc("race", "int", True, "default: 0"), ParamDoc("level", "int", True, "default: 0"),
+            ParamDoc("atk", "int", True, "default: 0"), ParamDoc("def", "int", True, "default: 0"),
+        ],
+        "returns": [],
+        "description": ["Adds temporary monster properties to c."],
+        "description_zh": ["给c追加临时怪兽属性。"],
+    },
+    "Card.GetPreviousTypeOnField": {
+        "params": [ParamDoc("c", "Card")],
+        "returns": [ReturnDoc("int")],
+        "description": ["Returns c's previously recorded on-field Type."],
+        "description_zh": ["返回c之前记录的场上种类。"],
+    },
+    "Duel.GetFieldCard": {
+        "params": [ParamDoc("player", "int"), ParamDoc("location", "int"), ParamDoc("sequence", "int")],
+        "returns": [ReturnDoc("Card|nil")],
+        "description": ["Returns the card at a field location and sequence."],
+        "description_zh": ["返回指定位置序号上的卡。"],
+    },
+    "Card.GetOriginalAttribute": {
+        "params": [ParamDoc("c", "Card")],
+        "returns": [ReturnDoc("int")],
+        "description": ["Returns c's original Attribute."],
+        "description_zh": ["返回c的原本属性。"],
+    },
+    "Duel.SelectTribute": {
+        "params": [
+            ParamDoc("player", "int"), ParamDoc("c", "Card"), ParamDoc("min", "int"), ParamDoc("max", "int"),
+            ParamDoc("mg", "Group|nil", True), ParamDoc("toplayer", "int", True, "default: player"),
+        ],
+        "returns": [ReturnDoc("Group")],
+        "description": ["Lets player select Tribute candidates for c."],
+        "description_zh": ["让player为c选择祭品。"],
+    },
+    "Auxiliary.bdocon": {
+        "params": [ParamDoc("e", "Effect"), ParamDoc("tp", "int"), ParamDoc("eg", "Group"), ParamDoc("ep", "int"), ParamDoc("ev", "any"), ParamDoc("re", "Effect"), ParamDoc("r", "any"), ParamDoc("rp", "int")],
+        "returns": [ReturnDoc("bool")],
+        "description": ["Checks the opponent-battle EVENT_BATTLE_DESTROYING condition."],
+        "description_zh": ["检查对方怪兽战斗破坏条件。"],
+    },
+    "Card.IsCanBeXyzMaterial": {
+        "params": [ParamDoc("c", "Card"), ParamDoc("sc", "Card|nil", True)],
+        "returns": [ReturnDoc("bool")],
+        "description": ["Checks whether c can be used as Xyz Material."],
+        "description_zh": ["检查c能否作为超量素材。"],
+    },
+    "Card.GetPreviousControler": {
+        "params": [ParamDoc("c", "Card")],
+        "returns": [ReturnDoc("int")],
+        "description": ["Returns c's previous controller."],
+        "description_zh": ["返回c之前的控制者。"],
+    },
+    "Card.GetEquipGroup": {
+        "params": [ParamDoc("c", "Card")],
+        "returns": [ReturnDoc("Group")],
+        "description": ["Returns Equip Cards currently equipped to c."],
+        "description_zh": ["返回当前装备给c的装备卡。"],
+    },
+    "Card.GetLinkedGroup": {
+        "params": [ParamDoc("c", "Card")],
+        "returns": [ReturnDoc("Group")],
+        "description": ["Returns cards currently in zones linked by c."],
+        "description_zh": ["返回当前位于c连接区域中的卡。"],
+    },
+    "Card.GetLinkedZone": {
+        "params": [ParamDoc("c", "Card"), ParamDoc("player", "int", True, "default: c's controller")],
+        "returns": [ReturnDoc("int")],
+        "description": ["Returns c's linked-zone bitmask."],
+        "description_zh": ["返回c的连接区域位掩码。"],
+    },
+    "Card.GetPreviousSequence": {
+        "params": [ParamDoc("c", "Card")],
+        "returns": [ReturnDoc("int")],
+        "description": ["Returns c's previous sequence."],
+        "description_zh": ["返回c之前的位置序号。"],
+    },
+    "Duel.ChainAttack": {
+        "params": [ParamDoc("c", "Card", True)],
+        "returns": [],
+        "description": ["Marks the current attacker for another attack."],
+        "description_zh": ["标记当前攻击怪兽可以再次攻击。"],
+    },
+    "Duel.IsCanRemoveCounter": {
+        "params": [ParamDoc("player", "int"), ParamDoc("s", "int"), ParamDoc("o", "int"), ParamDoc("countertype", "int"), ParamDoc("count", "int"), ParamDoc("reason", "int")],
+        "returns": [ReturnDoc("bool")],
+        "description": ["Checks whether player can remove counters from field locations."],
+        "description_zh": ["检查player能否从场上位置取除指示物。"],
+    },
     "Card.IsControlerCanBeChanged": {
         "params": [ParamDoc("c", "Card"), ParamDoc("ignore_mzone", "bool", True, "default: false"), ParamDoc("zone", "int", True, "default: 0xff")],
         "returns": [ReturnDoc("bool")],

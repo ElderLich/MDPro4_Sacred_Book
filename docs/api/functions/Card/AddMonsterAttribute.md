@@ -8,18 +8,18 @@ Card.AddMonsterAttribute(Card c, int type, [int attribute], [int race], [int lev
 
 ## Description
 
-Add the monster value to the trap card
-Note: Values ​​recorded in the database are treated as the original value, and are set to zero here
+Adds temporary monster properties to c through effects.
+The binding clears STATUS_NO_LEVEL, applies EFFECT_PRE_MONSTER with type, and applies Attribute, Race, Level, base ATK, and base DEF changes for nonzero supplied values.
 
 ## Parameters
 
 - `c` `Card`
 - `type` `int`
-- `attribute` `int` optional
-- `race` `int` optional
-- `level` `int` optional
-- `atk` `int` optional
-- `def` `int` optional
+- `attribute` `int` optional - default: 0
+- `race` `int` optional - default: 0
+- `level` `int` optional - default: 0
+- `atk` `int` optional - default: 0
+- `def` `int` optional - default: 0
 
 ## Source
 

@@ -8,8 +8,8 @@ Duel.IsCanRemoveCounter(int player, int s, int o, int countertype, int count, in
 
 ## Description
 
-Checks whether the player player can remove count objects of the countertype type on the farm for reason reasons
-S represents the position of the player's own removable pointer, o represents the position of the opponent's removable pointer for the player
+Checks whether player can remove count counters of countertype for reason from the selected field locations.
+s marks locations on player's own field and o marks locations on the opponent's field, from player's perspective.
 
 ## Parameters
 

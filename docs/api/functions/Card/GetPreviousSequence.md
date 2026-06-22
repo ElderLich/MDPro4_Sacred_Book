@@ -8,7 +8,7 @@ Card.GetPreviousSequence(Card c) -> int
 
 ## Description
 
-Returns the sequence number before the c position changes
+Returns c's previous sequence value.
 
 ## Parameters
 

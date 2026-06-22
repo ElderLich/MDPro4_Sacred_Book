@@ -3,25 +3,26 @@
 ## Signature
 
 ```lua
-Duel.CheckTribute(Card c, int min, [int|nil max], [Group|nil mg], [int|nil toplayer], [int|nil zone]) -> Group
+Duel.CheckTribute(Card c, int min, [int max], [Group|nil mg], [int toplayer], [int zone]) -> bool
 ```
 
 ## Description
 
-Check if there are min \[to max\] Tributes on the field \[or in mg\] for Normal Summoning c \[to toplayer's field in zone\]
+Checks whether there is a valid Tribute set for Normal Summoning or Setting c.
+max defaults to min, mg can restrict the candidate pool, toplayer defaults to c's current controller, and zone defaults to the current extra-summon zone limit when present or 0x1f otherwise.
 
 ## Parameters
 
 - `c` `Card`
 - `min` `int`
-- `max` `int|nil` optional - default: min
+- `max` `int` optional - default: min
 - `mg` `Group|nil` optional
-- `toplayer` `int|nil` optional - default: c:GetControler()
-- `zone` `int|nil` optional - default: 0x1f
+- `toplayer` `int` optional - default: c's controller
+- `zone` `int` optional - default: current extra-summon zone limit or 0x1f
 
 ## Returns
 
-- `Group`
+- `bool`
 
 ## Source
 

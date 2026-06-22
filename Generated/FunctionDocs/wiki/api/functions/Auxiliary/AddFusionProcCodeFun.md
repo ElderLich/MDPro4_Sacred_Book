@@ -8,7 +8,8 @@ Auxiliary.AddFusionProcCodeFun(Card c, int|table code1, function|table f, int cc
 
 ## Description
 
-For the c designated card number for the code and cc meet the conditions of the monster f fusion material
+Registers a Fusion Summon procedure on c requiring code1 and cc additional Fusion Materials matching f.
+The helper builds cc copies of f and forwards them to Auxiliary.AddFusionProcMix together with sub and insf.
 
 ## Parameters
 

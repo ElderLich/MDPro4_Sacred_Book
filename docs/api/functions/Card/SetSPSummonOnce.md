@@ -8,8 +8,8 @@ Card.SetSPSummonOnce(Card c, int spsummon_code) -> void
 
 ## Description
 
-Set c can only be a round of a special call (they reveal, wave dragon)
-The same spsummon_code shares 1 number of times
+Marks c as sharing a once-per-turn Special Summon limit under spsummon_code.
+Cards with the same nonzero spsummon_code share the limit for each player. The binding does nothing while c is copying another card's effect.
 
 ## Parameters
 

@@ -8,7 +8,7 @@ Effect.GetActivateLocation(Effect e) -> int
 
 ## Description
 
-Returns the firing area of ​​the effect e
+Returns the location from which effect e was activated.
 
 ## Parameters
 
