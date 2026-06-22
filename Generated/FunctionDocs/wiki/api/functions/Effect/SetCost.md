@@ -9,6 +9,7 @@ Effect.SetCost(Effect e, function cost_func) -> void
 ## Description
 
 Sets e's cost callback. For activated effects, the callback checks whether the cost can be paid and then pays it.
+Cost callbacks should only test legality when chk is 0; irreversible payment belongs in the nonzero chk branch.
 
 ## How To Use It
 
@@ -22,6 +23,12 @@ end
 ```
 
 Do not perform irreversible actions during the `chk==0` check. The engine may call that branch just to test activation legality.
+
+## Related Functions
+
+- [Duel.CheckLPCost](/api/functions/Duel/CheckLPCost)
+- [Duel.PayLPCost](/api/functions/Duel/PayLPCost)
+- [Effect.IsCostChecked](/api/functions/Effect/IsCostChecked)
 
 ## Parameters
 

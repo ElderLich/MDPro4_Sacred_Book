@@ -7,14 +7,14 @@ This queue tracks function pages whose English should be reviewed by hand. It is
 - Total functions: **998**
 - Functions used by current scripts: **753**
 - Functions with raw Chinese text in English fields: **0**
-- Functions queued for natural-English review: **594**
+- Functions queued for natural-English review: **593**
 
 ## English Status Counts
 
 | Status | Count |
 | --- | ---: |
-| `imported_from_dataeditorx` | 594 |
-| `translated_exact` | 404 |
+| `imported_from_dataeditorx` | 593 |
+| `translated_exact` | 405 |
 
 ## Priority Review Queue
 
@@ -182,7 +182,7 @@ Sorted by current script usage count so the most visible function pages are revi
 | [`Card.IsLinkRace`](/api/functions/Card/IsLinkRace) | `imported_from_dataeditorx` | 136 | Check if card c, when used as Link Material [for a Link Summon by player], has Race race |
 | [`Auxiliary.SelectFromOptions`](/api/functions/Auxiliary/SelectFromOptions) | `imported_from_dataeditorx` | 135 | Duel.SelectOption with option condition Return value starts from 1, different from Duel.SelectOption |
 | [`Card.IsCanBeFusionMaterial`](/api/functions/Card/IsCanBeFusionMaterial) | `imported_from_dataeditorx` | 132 | Check whether c can become a [fusion monster fc] fusion material, ignore_mon = true does not check whether c is a monster |
-| ...and 434 more |  |  |  |
+| ...and 433 more |  |  |  |
 
 ## Raw Chinese In English Fields
 

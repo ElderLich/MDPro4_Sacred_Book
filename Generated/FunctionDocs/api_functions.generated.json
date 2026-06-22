@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-06-22T04:49:31+00:00",
+    "generated_at": "2026-06-22T05:09:09+00:00",
     "workspace": "D:\\Programs\\GitHub\\MDPro3_Sacred_Book",
     "dataeditorx_data": "D:\\Programs\\GitHub\\DataEditorX\\DataEditorX\\data",
     "mdpro3_locales": "D:\\Programs\\GitHub\\MDPro3_Data\\Data\\locales",
@@ -28960,21 +28960,15 @@
           "description": ""
         }
       ],
-      "returns": [
-        {
-          "type": "nil",
-          "description": ""
-        }
-      ],
+      "returns": [],
       "description_zh": [
-        "设置target range属性并设置 EFFECT_FLAG_ABSOLUTE_TARGET 标志",
-        "playerid != 0 s_range和o_range反转"
+        "以绝对玩家视角设置效果e的Target Range属性。playerid为1时，s_range和o_range会在核心中交换保存。"
       ],
       "description_en": [
-        "Set the target range property and set the EFFECT_FLAG_ABSOLUTE_RANGE flag",
-        "Playerid! = 0 s_range and o_range invert"
+        "Sets e's target range from an absolute player viewpoint and marks the effect with EFFECT_FLAG_ABSOLUTE_TARGET.",
+        "If playerid is 1, the supplied ranges are swapped internally so the stored ranges still line up with player 0/player 1 absolute handling."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libeffect.cpp",
@@ -28989,7 +28983,8 @@
       ],
       "aliases": [],
       "tags": [
-        "core-binding"
+        "core-binding",
+        "core-doc-override"
       ],
       "core_binding": true,
       "core_handler": "effect_set_absolute_range"
@@ -29014,10 +29009,11 @@
       ],
       "returns": [],
       "description_zh": [
-        "设置效果e的Category属性。"
+        "设置效果e的Category属性，用于声明效果可能包含的操作类别。"
       ],
       "description_en": [
-        "Sets e's operation category flags, such as CATEGORY_DESTROY, CATEGORY_TOHAND, or CATEGORY_SPECIAL_SUMMON."
+        "Sets e's operation category flags, such as CATEGORY_DESTROY, CATEGORY_TOHAND, or CATEGORY_SPECIAL_SUMMON.",
+        "Categories describe what the effect may do; known operation details should still be recorded with Duel.SetOperationInfo in the Target callback."
       ],
       "english_status": "translated_exact",
       "source_files": [
@@ -29155,7 +29151,8 @@
         "设置效果e的Cost函数。"
       ],
       "description_en": [
-        "Sets e's cost callback. For activated effects, the callback checks whether the cost can be paid and then pays it."
+        "Sets e's cost callback. For activated effects, the callback checks whether the cost can be paid and then pays it.",
+        "Cost callbacks should only test legality when chk is 0; irreversible payment belongs in the nonzero chk branch."
       ],
       "english_status": "translated_exact",
       "source_files": [
@@ -29258,7 +29255,7 @@
       ],
       "description_en": [
         "Sets how many times e can be used before its count limit is spent.",
-        "Effects that share a nonzero code share the same usage count. Special code flags such as EFFECT_COUNT_CODE_OATH, EFFECT_COUNT_CODE_DUEL, EFFECT_COUNT_CODE_SINGLE, and EFFECT_COUNT_CODE_CHAIN change how that count is scoped."
+        "If count is 0, the core treats it as 1. Effects that share a nonzero code share the same usage count. EFFECT_COUNT_CODE_CHAIN is stored together with EFFECT_COUNT_CODE_SINGLE."
       ],
       "english_status": "translated_exact",
       "source_files": [
@@ -29608,7 +29605,8 @@
         "设置效果e的Property属性。"
       ],
       "description_en": [
-        "Sets e's property flags. prop1 holds the normal effect property flags; prop2 is used for the second property word when needed."
+        "Sets e's property flags. prop1 holds the normal effect property flags; prop2 is used for the second property word when needed.",
+        "Internal flags are preserved when prop1 is replaced."
       ],
       "english_status": "translated_exact",
       "source_files": [
@@ -29707,7 +29705,7 @@
       ],
       "description_en": [
         "Sets when e resets and how many reset checks it can survive.",
-        "When a phase reset is used without an explicit turn side, the core applies both RESET_SELF_TURN and RESET_OPPO_TURN."
+        "If reset_count is 0 or omitted, the core stores 1. When a phase reset is used without an explicit turn side, the core applies both RESET_SELF_TURN and RESET_OPPO_TURN."
       ],
       "english_status": "translated_exact",
       "source_files": [
@@ -29805,8 +29803,8 @@
         "设置效果e的Target Range属性。"
       ],
       "description_en": [
-        "Sets e's target range fields.",
-        "For most field effects, s_range is the affected locations on the handler's controller's side and o_range is the affected locations on the opponent's side. With EFFECT_FLAG_ABSOLUTE_RANGE, they mean player 0 and player 1 instead. With EFFECT_FLAG_SPSUM_PARAM, they store Special Summon destination player and position."
+        "Sets e's target range fields and clears EFFECT_FLAG_ABSOLUTE_TARGET.",
+        "For most field effects, s_range is the affected locations on the handler's controller's side and o_range is the affected locations on the opponent's side. With EFFECT_FLAG_SPSUM_PARAM, they store Special Summon destination player and position."
       ],
       "english_status": "translated_exact",
       "source_files": [

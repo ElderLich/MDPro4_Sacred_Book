@@ -15,13 +15,14 @@ This is the working todo for turning Sacred Book into a complete MDPro3 scriptin
 - [ ] Translate and review the highest-use imported function descriptions.
 - [x] Add tutorial-style `How To Use It` sections for targeting and Group basics.
 - [x] Add tutorial-style `How To Use It` sections for core movement/action functions.
-- [ ] Add tutorial-style `How To Use It` sections for effect setter functions.
+- [x] Add tutorial-style `How To Use It` sections for effect setter functions.
 
 ## Documentation Coverage
 
 - [x] Add first original tutorial pass for the downloaded page coverage map.
 - [ ] Give every function a clear summary, parameter notes, return notes, and at least one script-backed example where possible.
 - [x] Review movement/action function English and stale signatures against the MDPro3 core binding.
+- [x] Review effect setter function English and behavior notes against the MDPro3 core binding.
 - [ ] Review all `imported_from_dataeditorx` function English and replace awkward machine-style wording with natural MDPro3 terminology.
 - [ ] Check for any raw Chinese text that leaked into English fields after each generation.
 - [ ] Mark uncertain or inferred behavior clearly, with source confidence.
