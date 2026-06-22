@@ -46,7 +46,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Numeron Chaos Ritual | `41850466` | [Scripts/c41850466.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c41850466.lua) | 52 |
 | Yummyusment★Acroquey | `93360904` | [Scripts/c93360904.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c93360904.lua) | 51 |
 | Unchained Soul Lord of Yama | `24269961` | [Scripts/c24269961.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c24269961.lua) | 51 |
-| Ghost Mourner & Moonlit Chill | `52038441` | [Scripts/c52038441.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c52038441.lua) | 50 |
+| Ghost Mourner &amp; Moonlit Chill | `52038441` | [Scripts/c52038441.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c52038441.lua) | 50 |
 | Stardust Dragon - Victim Sanctuary | `76636978` | [Scripts/c76636978.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c76636978.lua) | 49 |
 | Vesper Girsu | `97345699` | [Scripts/c97345699.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c97345699.lua) | 49 |
 | Qliphort Genius | `22423493` | [Scripts/c22423493.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c22423493.lua) | 49 |

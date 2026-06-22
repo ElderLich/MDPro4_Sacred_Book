@@ -33,7 +33,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | --- | ---: | --- | ---: |
 | Hushed Psychic Cleric | `25343017` | [Scripts/c25343017.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c25343017.lua) | 49 |
 | Buerillabaisse de Nouvelles | `26223582` | [Scripts/c26223582.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c26223582.lua) | 48 |
-| Floowandereeze & Empen | `80611581` | [Scripts/c80611581.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c80611581.lua) | 48 |
+| Floowandereeze &amp; Empen | `80611581` | [Scripts/c80611581.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c80611581.lua) | 48 |
 | Angry Burger | `28306253` | [Scripts/c28306253.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c28306253.lua) | 48 |
 | Goblin Freefall Squad | `85123771` | [Scripts/c85123771.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c85123771.lua) | 48 |
 | Lancea, Ancestral Dragon of the Ice Mountain | `96402918` | [Scripts/c96402918.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c96402918.lua) | 47 |

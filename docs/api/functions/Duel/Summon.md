@@ -48,7 +48,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Primite Imperial Dragon | `81418467` | [Scripts/c81418467.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c81418467.lua) | 50 |
 | Bahalutiya, the Grand Radiance | `53318263` | [Scripts/c53318263.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c53318263.lua) | 49 |
 | Hi-Speedroid Rubber Band Shooter | `72813401` | [Scripts/c72813401.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c72813401.lua) | 49 |
-| Floowandereeze & Empen | `80611581` | [Scripts/c80611581.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c80611581.lua) | 48 |
+| Floowandereeze &amp; Empen | `80611581` | [Scripts/c80611581.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c80611581.lua) | 48 |
 | Exosister Betrayal | `52335937` | [Scripts/c52335937.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c52335937.lua) | 48 |
 | Gizmek Yata, the Gleaming Vanguard | `13224603` | [Scripts/c13224603.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c13224603.lua) | 47 |
 | Repair Genex Controller | `8173184` | [Scripts/c8173184.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c8173184.lua) | 47 |

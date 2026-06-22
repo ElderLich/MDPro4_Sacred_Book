@@ -39,7 +39,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Armor Dragon Ritual | `58827995` | [Scripts/c58827995.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c58827995.lua) | 37 |
 | Primal Cry | `47435107` | [Scripts/c47435107.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c47435107.lua) | 32 |
 | Litmus Doom Ritual | `8955148` | [Scripts/c8955148.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c8955148.lua) | 27 |
-| Good & Evil in the Burning Abyss | `62835876` | [Scripts/c62835876.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c62835876.lua) | 26 |
+| Good &amp; Evil in the Burning Abyss | `62835876` | [Scripts/c62835876.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c62835876.lua) | 26 |
 | Ritual of Grace | `60234913` | [Scripts/c60234913.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c60234913.lua) | 25 |
 | Ritual of the Matador | `70105073` | [Scripts/c70105073.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c70105073.lua) | 24 |
 | Prediction Ritual | `30392583` | [Scripts/c30392583.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c30392583.lua) | 22 |

@@ -45,7 +45,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | The Legendary Fisherman III | `44968687` | [Scripts/c44968687.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c44968687.lua) | 44 |
 | Trap Tracks | `70825459` | [Scripts/c70825459.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c70825459.lua) | 42 |
 | Mulcharmy Purulia | `84192580` | [Scripts/c84192580.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c84192580.lua) | 39 |
-| Ghost Sister & Spooky Dogwood | `60643553` | [Scripts/c60643553.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c60643553.lua) | 39 |
+| Ghost Sister &amp; Spooky Dogwood | `60643553` | [Scripts/c60643553.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c60643553.lua) | 39 |
 | Mulcharmy Fuwalos | `42141493` | [Scripts/c42141493.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c42141493.lua) | 38 |
 | Mulcharmy Meowls | `87126721` | [Scripts/c87126721.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c87126721.lua) | 38 |
 | Trap Trick | `80101899` | [Scripts/c80101899.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c80101899.lua) | 38 |

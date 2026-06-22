@@ -54,7 +54,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Psiics, Moonlight of the Ghoti | `26523337` | [Scripts/c26523337.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c26523337.lua) | 33 |
 | Primite Scream | `27556460` | [Scripts/c27556460.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c27556460.lua) | 32 |
 | Sauravis, the Ancient and Ascended | `4810828` | [Scripts/c4810828.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c4810828.lua) | 31 |
-| Ghost Reaper & Winter Cherries | `62015408` | [Scripts/c62015408.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c62015408.lua) | 30 |
+| Ghost Reaper &amp; Winter Cherries | `62015408` | [Scripts/c62015408.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c62015408.lua) | 30 |
 | Let's Go Together | `38625110` | [Scripts/c38625110.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c38625110.lua) | 29 |
 | ...and 8 more |  |  |  |
 

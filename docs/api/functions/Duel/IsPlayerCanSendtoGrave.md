@@ -32,7 +32,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Evil★Twins Ki-sikil & Lil-la | `62098216` | [Scripts/c62098216.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c62098216.lua) | 41 |
+| Evil★Twins Ki-sikil &amp; Lil-la | `62098216` | [Scripts/c62098216.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c62098216.lua) | 41 |
 | Dogmatikamatrix | `35569555` | [Scripts/c35569555.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c35569555.lua) | 35 |
 | Destructive Daruma Karma Cannon | `30748475` | [Scripts/c30748475.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c30748475.lua) | 20 |
 

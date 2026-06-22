@@ -144,7 +144,15 @@ def api_link(name: str) -> str:
 
 
 def markdown_table_escape(value: str) -> str:
-    return value.replace("|", "\\|").replace("\n", " ")
+    return (
+        value.replace("&", "&amp;")
+        .replace("<", "&lt;")
+        .replace(">", "&gt;")
+        .replace("[", "\\[")
+        .replace("]", "\\]")
+        .replace("|", "\\|")
+        .replace("\n", " ")
+    )
 
 
 def code_block(text: str) -> str:
@@ -316,7 +324,6 @@ def append_api_usage_sections(examples: list[dict[str, object]], featured_ids: s
 
 def first_sentence(lines: list[str], limit: int = 170) -> str:
     text = " ".join(line.strip() for line in lines if line.strip())
-    text = text.replace("|", "\\|")
     if len(text) <= limit:
         return text
     return text[: limit - 3].rstrip() + "..."

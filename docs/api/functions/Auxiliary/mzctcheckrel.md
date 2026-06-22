@@ -54,7 +54,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | King Beast Barbaros | `63972571` | [Scripts/c63972571.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c63972571.lua) | 43 |
 | Keurse, the Ogdoadic Light | `62383431` | [Scripts/c62383431.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c62383431.lua) | 42 |
 | Ice Master | `32750510` | [Scripts/c32750510.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c32750510.lua) | 42 |
-| Evil★Twins Ki-sikil & Lil-la | `62098216` | [Scripts/c62098216.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c62098216.lua) | 41 |
+| Evil★Twins Ki-sikil &amp; Lil-la | `62098216` | [Scripts/c62098216.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c62098216.lua) | 41 |
 | Stardust Synchron | `37799519` | [Scripts/c37799519.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c37799519.lua) | 41 |
 | Aleirtt, the Ogdoadic Dark | `98787535` | [Scripts/c98787535.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c98787535.lua) | 41 |
 | ...and 19 more |  |  |  |

@@ -39,7 +39,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Melffy Staring Contest | `76981308` | [Scripts/c76981308.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c76981308.lua) | 52 |
 | Gilti-Gearfried the Magical Steel Knight | `49161188` | [Scripts/c49161188.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c49161188.lua) | 51 |
 | Mythical Beast Medusa | `54965929` | [Scripts/c54965929.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c54965929.lua) | 48 |
-| Floowandereeze & Empen | `80611581` | [Scripts/c80611581.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c80611581.lua) | 48 |
+| Floowandereeze &amp; Empen | `80611581` | [Scripts/c80611581.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c80611581.lua) | 48 |
 | Cherubini, Ebon Angel of the Burning Abyss | `58699500` | [Scripts/c58699500.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c58699500.lua) | 48 |
 | Dimension Reflector | `54297661` | [Scripts/c54297661.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c54297661.lua) | 48 |
 | Light and Darkness Dragonlord | `19652159` | [Scripts/c19652159.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c19652159.lua) | 47 |

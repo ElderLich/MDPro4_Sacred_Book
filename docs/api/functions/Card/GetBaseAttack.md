@@ -51,7 +51,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Brilliant Fusion | `7394770` | [Scripts/c7394770.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c7394770.lua) | 51 |
 | Keel, Shipwright Fur Hire | `66736884` | [Scripts/c66736884.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c66736884.lua) | 50 |
 | Blackwing - Aurora the Northern Lights | `4068622` | [Scripts/c4068622.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c4068622.lua) | 50 |
-| Ghost Mourner & Moonlit Chill | `52038441` | [Scripts/c52038441.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c52038441.lua) | 50 |
+| Ghost Mourner &amp; Moonlit Chill | `52038441` | [Scripts/c52038441.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c52038441.lua) | 50 |
 | Mythical Beast Master Cerberus | `53842431` | [Scripts/c53842431.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c53842431.lua) | 49 |
 | Junk Speeder | `77075360` | [Scripts/c77075360.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c77075360.lua) | 49 |
 | Salamangreat Pyro Phoenix | `31313405` | [Scripts/c31313405.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c31313405.lua) | 49 |

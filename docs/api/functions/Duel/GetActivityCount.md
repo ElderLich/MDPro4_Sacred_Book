@@ -56,9 +56,9 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Golden Castle of Stromberg | `72283691` | [Scripts/c72283691.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c72283691.lua) | 44 |
 | Shadow's Light | `61322713` | [Scripts/c61322713.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c61322713.lua) | 44 |
 | Destiny End Dragoon | `76263644` | [Scripts/c76263644.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c76263644.lua) | 43 |
-| Floowandereeze & Toccan | `17827173` | [Scripts/c17827173.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c17827173.lua) | 42 |
+| Floowandereeze &amp; Toccan | `17827173` | [Scripts/c17827173.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c17827173.lua) | 42 |
 | Skull Flame | `99899504` | [Scripts/c99899504.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c99899504.lua) | 42 |
-| Floowandereeze & Stri | `80433039` | [Scripts/c80433039.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c80433039.lua) | 41 |
+| Floowandereeze &amp; Stri | `80433039` | [Scripts/c80433039.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c80433039.lua) | 41 |
 | Blackwing - Silverwind the Ascendant | `33236860` | [Scripts/c33236860.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c33236860.lua) | 41 |
 | Nekroz of Sophia | `21105106` | [Scripts/c21105106.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c21105106.lua) | 40 |
 | Time Maiden | `27107590` | [Scripts/c27107590.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c27107590.lua) | 40 |
