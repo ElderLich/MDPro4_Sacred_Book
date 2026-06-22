@@ -3,12 +3,13 @@
 ## Signature
 
 ```lua
-Duel.TossCoin(int player, int count) -> ...
+Duel.TossCoin(int player, int count) -> int,...?
 ```
 
 ## Description
 
-Let the player player cast count (&lt;= 5) coins, the return value for the count results, 0 or 1.
+Tosses count coins for player and returns one integer result per toss.
+Results are 0 or 1. Normal script use passes a positive count up to MAX_COIN_COUNT; the binding rejects 0 and values below -1, and clamps large positive counts to the core maximum.
 
 ## Parameters
 
@@ -17,7 +18,8 @@ Let the player player cast count (&lt;= 5) coins, the return value for the count
 
 ## Returns
 
-- `...`
+- `int` - First coin result, 0 or 1.
+- `...?` - Additional coin results.
 
 ## Source
 

@@ -8,7 +8,8 @@ Duel.IsPlayerCanSpecialSummonCount(int player, int count) -> bool
 
 ## Description
 
-Check whether the player player special call count times
+Checks whether player can perform count Special Summons under the current remaining Special Summon-count limits.
+The core checks EFFECT_LEFT_SPSUMMON_COUNT effects and the player's Special Summon counter.
 
 ## Parameters
 

@@ -3,17 +3,21 @@
 ## Signature
 
 ```lua
-bit.bor(any a, any b) -> void
+bit.bor(int a, int b) -> int
 ```
 
 ## Description
 
-A or b
+Returns the bitwise OR of a and b.
 
 ## Parameters
 
-- `a` `any`
-- `b` `any`
+- `a` `int`
+- `b` `int`
+
+## Returns
+
+- `int`
 
 ## Source
 

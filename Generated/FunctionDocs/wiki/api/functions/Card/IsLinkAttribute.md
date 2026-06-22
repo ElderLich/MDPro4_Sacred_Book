@@ -8,13 +8,14 @@ Card.IsLinkAttribute(Card c, int attribute, [int player]) -> bool
 
 ## Description
 
-Check if card c, when used as Link Material \[for a Link Summon by player\], has Attribute attribute
+Checks whether c's Attribute while used as Link Material contains attribute.
+player defaults to the current reason player. The core uses c:GetLinkAttribute(player), so Link Material Attribute-changing effects are included.
 
 ## Parameters
 
 - `c` `Card`
 - `attribute` `int`
-- `player` `int` optional
+- `player` `int` optional - default: current reason player
 
 ## Returns
 

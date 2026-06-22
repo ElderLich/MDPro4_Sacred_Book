@@ -3,17 +3,18 @@
 ## Signature
 
 ```lua
-Effect.SetOwnerPlayer(Effect e, [int player]) -> void
+Effect.SetOwnerPlayer(Effect e, int player) -> void
 ```
 
 ## Description
 
-Set the OwnerPlayer property to player
+Sets e's owner player to player.
+Only player values 0 and 1 are accepted; any other value leaves the effect unchanged.
 
 ## Parameters
 
 - `e` `Effect`
-- `player` `int` optional - default: 0
+- `player` `int`
 
 ## Source
 

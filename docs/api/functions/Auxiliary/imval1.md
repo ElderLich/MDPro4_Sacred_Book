@@ -3,20 +3,21 @@
 ## Signature
 
 ```lua
-Auxiliary.imval1(Effect e, Card c) -> void
+Auxiliary.imval1(Effect e, Card c) -> bool
 ```
 
 ## Description
 
-Simplified method for the filter function preventing a card from being targeted for attacks, used in effect registration for SetValue
-function aux.imval1(e, c)
-  return not c:IsImmuneToEffect(e)
-end
+Default value helper for EFFECT_CANNOT_BE_BATTLE_TARGET; it returns true when c is not immune to e.
 
 ## Parameters
 
 - `e` `Effect`
 - `c` `Card`
+
+## Returns
+
+- `bool`
 
 ## Source
 

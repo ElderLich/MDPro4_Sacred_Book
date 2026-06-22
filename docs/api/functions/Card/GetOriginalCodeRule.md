@@ -3,12 +3,13 @@
 ## Signature
 
 ```lua
-Card.GetOriginalCodeRule(Card c) -> int,int
+Card.GetOriginalCodeRule(Card c) -> int,int|nil
 ```
 
 ## Description
 
-Returns the codename on the c rule (used as a card rule on this card)
+Returns c's rule-original card code.
+Double-code cards return two codes: the printed original code and the second rule code. Other cards return only the duel code used by the core.
 
 ## Parameters
 
@@ -16,8 +17,8 @@ Returns the codename on the c rule (used as a card rule on this card)
 
 ## Returns
 
-- `int`
-- `int`
+- `int` - Primary rule-original code.
+- `int|nil` - Second rule code, when present.
 
 ## Source
 

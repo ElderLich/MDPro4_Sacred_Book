@@ -3,26 +3,25 @@
 ## Signature
 
 ```lua
-Duel.SelectDisableField(int player, int count, int s, int o, int filter) -> int
+Duel.SelectDisableField(int player, int count, int location1, int location2, int filter) -> int
 ```
 
 ## Description
 
-Let the player player select the specified position to meet the marker condition filter count of the available space, and return to select the location of the marker
-Commonly used to select areas can not use or move the monster grid
-0: 16) + (l \[i\] == LOCATION_MZONE? 0: 8)) ## flag|= 1 &lt;&lt; (seq \[i\] + (p \[i\] == player?
+Lets player select count available field zones from the requested own-side and opponent-side locations, then returns the selected zone bitmask.
+location1 applies to player's field and location2 applies to the opponent's field. The core clamps count to the available number of zones and returns no value if no zone can be selected.
 
 ## Parameters
 
 - `player` `int`
 - `count` `int`
-- `s` `int`
-- `o` `int`
+- `location1` `int`
+- `location2` `int`
 - `filter` `int`
 
 ## Returns
 
-- `int`
+- `int` - Selected zone bitmask.
 
 ## Source
 

@@ -3,23 +3,24 @@
 ## Signature
 
 ```lua
-Duel.TossDice(int player, int count1, [int count2]) -> ...
+Duel.TossDice(int player, int count1, [int count2]) -> int,...?
 ```
 
 ## Description
 
-Let the player to cast count1 dice\[, 1-player to vote count2 dice\] (count1 + count2 &lt;= 5)
-The return value is count1 + count2 results, 1-6
+Tosses count1 dice for player and, when count2 is supplied, count2 dice for the opponent.
+Valid dice results are integers from 1 to 6. Normal script use should keep count1 + count2 at 5 or less; the core rejects count1 &lt;= 0 and count2 &lt; 0.
 
 ## Parameters
 
 - `player` `int`
 - `count1` `int`
-- `count2` `int` optional
+- `count2` `int` optional - default: 0
 
 ## Returns
 
-- `...`
+- `int` - First die result.
+- `...?` - Additional die results.
 
 ## Source
 

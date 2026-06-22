@@ -8,7 +8,8 @@ Card.CreateEffectRelation(Card c, Effect e) -> void
 
 ## Description
 
-For the card c and the effect of e to establish contact
+Creates a relation between c and effect e.
+If e is the triggering effect of a current Chain Link, the relation is tied to that Chain Link; otherwise the core stores a direct effect relation.
 
 ## Parameters
 

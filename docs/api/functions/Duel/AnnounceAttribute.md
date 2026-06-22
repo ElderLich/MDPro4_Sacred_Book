@@ -8,8 +8,8 @@ Duel.AnnounceAttribute(int player, int count, int available) -> int
 
 ## Description
 
-Let the player player declare count attributes from the optional attribute
-Available is the combined value of all optional attributes
+Lets player declare count Attributes from the available Attribute bitmask and returns the selected Attribute bitmask.
+available should be a bitwise combination of ATTRIBUTE_* constants.
 
 ## Parameters
 
@@ -19,7 +19,7 @@ Available is the combined value of all optional attributes
 
 ## Returns
 
-- `int`
+- `int` - Selected Attribute bitmask.
 
 ## Source
 

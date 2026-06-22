@@ -3,17 +3,20 @@
 ## Signature
 
 ```lua
-Card.IsOriginalCodeRule(Card c, int code) -> bool
+Card.IsOriginalCodeRule(Card c, int code1, [int code2], [... int]) -> bool
 ```
 
 ## Description
 
-Check if card c is treated as code under the rules
+Checks whether c's rule-original card code matches any supplied code.
+Nil code arguments are skipped. For double-code cards, the core checks both rule-original codes; otherwise it checks the card's duel code.
 
 ## Parameters
 
 - `c` `Card`
-- `code` `int`
+- `code1` `int`
+- `code2` `int` optional
+- `...` `int` optional
 
 ## Returns
 

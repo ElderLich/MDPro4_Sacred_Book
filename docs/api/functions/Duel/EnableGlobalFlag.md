@@ -8,7 +8,7 @@ Duel.EnableGlobalFlag(int global_flag) -> void
 
 ## Description
 
-Set the global flag global_flag
+Enables the supplied core global_flag bit for the Duel and returns no Lua value.
 
 ## Parameters
 

@@ -3,12 +3,13 @@
 ## Signature
 
 ```lua
-Duel.GetBattleMonster(int player) -> Card,Card
+Duel.GetBattleMonster(int player) -> Card|nil,Card|nil
 ```
 
 ## Description
 
-Return the monster controlled by player currently in battle; returns nil if there is no battle or no target
+Returns the monster controlled by player that is currently in battle, followed by the monster controlled by the opponent that is currently in battle.
+Each return can be nil if there is no attacker or attack target for that controller.
 
 ## Parameters
 
@@ -16,8 +17,8 @@ Return the monster controlled by player currently in battle; returns nil if ther
 
 ## Returns
 
-- `Card`
-- `Card`
+- `Card|nil` - Monster controlled by player.
+- `Card|nil` - Monster controlled by the opponent.
 
 ## Source
 

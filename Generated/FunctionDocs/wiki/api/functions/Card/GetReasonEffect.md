@@ -3,12 +3,12 @@
 ## Signature
 
 ```lua
-Card.GetReasonEffect(Card c) -> Effect
+Card.GetReasonEffect(Card c) -> Effect|nil
 ```
 
 ## Description
 
-Returns the effect that causes the position of c to change
+Returns c's current reason effect, or nil when no reason effect is recorded.
 
 ## Parameters
 
@@ -16,7 +16,7 @@ Returns the effect that causes the position of c to change
 
 ## Returns
 
-- `Effect`
+- `Effect|nil`
 
 ## Source
 

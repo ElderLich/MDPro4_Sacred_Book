@@ -8,7 +8,7 @@ Card.GetPreviousRaceOnField(Card c) -> int
 
 ## Description
 
-Returns the race before the c position changes
+Returns the Race value recorded for c's previous on-field state.
 
 ## Parameters
 

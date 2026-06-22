@@ -8,7 +8,7 @@ Card.GetLink(Card c) -> int
 
 ## Description
 
-Return the Link Marker count of card c
+Returns c's Link Rating, or 0 if c is not a Link Monster.
 
 ## Parameters
 

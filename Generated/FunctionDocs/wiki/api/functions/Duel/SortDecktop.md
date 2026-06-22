@@ -8,7 +8,8 @@ Duel.SortDecktop(int sort_player, int target_player, int count) -> void
 
 ## Description
 
-Let the player sort_player on the player target_player card group at the top count card sort
+Lets sort_player reorder the top count cards of target_player's Main Deck.
+Both players must be valid and count must be at least 1. If count is larger than the remaining Deck size, the processor only sorts the available top cards.
 
 ## Parameters
 

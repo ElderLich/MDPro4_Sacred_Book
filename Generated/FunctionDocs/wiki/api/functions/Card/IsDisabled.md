@@ -8,7 +8,7 @@ Card.IsDisabled(Card c) -> bool
 
 ## Description
 
-Check whether c is in an invalid state
+Checks whether c currently has STATUS_DISABLED.
 
 ## Parameters
 

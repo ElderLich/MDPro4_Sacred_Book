@@ -3,19 +3,17 @@
 ## Signature
 
 ```lua
-Card.GetColumnGroup(Card c, [int left], [int right]) -> Group
+Card.GetColumnGroup(Card c) -> Group
 ```
 
 ## Description
 
-Return the group of cards in the same column as card c, excluding c, the last two parameters include all cards in the left columns and right columns from c
-For example, if c is in the middle zone, c:GetColumnGroup(2,2) is equivalent to retrieving all cards on the field except the Field Spell
+Returns a Group containing cards in the same column as c.
+This MDPro3/YGOPro binding only takes c. It uses c's current on-field column, including related Monster Zones, Spell & Trap Zones, and Extra Monster Zone column relationships; if c is not on the field, the returned Group is empty.
 
 ## Parameters
 
 - `c` `Card`
-- `left` `int` optional - default: 0
-- `right` `int` optional - default: 0
 
 ## Returns
 

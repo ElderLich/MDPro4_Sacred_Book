@@ -8,7 +8,8 @@ Card.IsAttackable(Card c) -> bool
 
 ## Description
 
-Check whether c can attack
+Checks whether c currently satisfies the core's basic attack-capable conditions.
+The card must be face-up Attack Position, or face-up Defense Position with EFFECT_DEFENSE_ATTACK, and it must not be forbidden, unable to attack, attack-disabled, or under a skipped Battle Phase. This does not check attack-announcement costs.
 
 ## Parameters
 

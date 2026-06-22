@@ -3,18 +3,18 @@
 ## Signature
 
 ```lua
-Card.SetStatus(Card c, int state, bool enable) -> void
+Card.SetStatus(Card c, int status, bool enable) -> void
 ```
 
 ## Description
 
-Set or cancel the status code for c
-Do not use this function unless you clearly understand the meaning of each status code
+Sets or clears status on c.
+This is an internal-status helper. The binding does nothing while c is copying another card's effect.
 
 ## Parameters
 
 - `c` `Card`
-- `state` `int`
+- `status` `int`
 - `enable` `bool`
 
 ## Source

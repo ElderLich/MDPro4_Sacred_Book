@@ -453,6 +453,105 @@ def parse_bullet_file(path: Path) -> dict[str, list[str]]:
 
 FUNCTION_EN_OVERRIDES = {
     # High-use core/API functions reviewed from MDPro3/YGOPro sources.
+    "Duel.SortDecktop": [
+        "Lets sort_player reorder the top count cards of target_player's Main Deck.",
+        "Both players must be valid and count must be at least 1. If count is larger than the remaining Deck size, the processor only sorts the available top cards.",
+    ],
+    "Duel.RemoveCounter": [
+        "Lets player remove count counters of countertype from the selected field locations for reason and returns whether removal succeeded.",
+        "s marks locations on player's own field and o marks locations on the opponent's field, from player's perspective. The core can offer applicable counter-removal replacement effects before removing counters.",
+    ],
+    "Duel.TossDice": [
+        "Tosses count1 dice for player and, when count2 is supplied, count2 dice for the opponent.",
+        "Valid dice results are integers from 1 to 6. Normal script use should keep count1 + count2 at 5 or less; the core rejects count1 <= 0 and count2 < 0.",
+    ],
+    "Card.IsLinkAttribute": [
+        "Checks whether c's Attribute while used as Link Material contains attribute.",
+        "player defaults to the current reason player. The core uses c:GetLinkAttribute(player), so Link Material Attribute-changing effects are included.",
+    ],
+    "Card.IsOriginalCodeRule": [
+        "Checks whether c's rule-original card code matches any supplied code.",
+        "Nil code arguments are skipped. For double-code cards, the core checks both rule-original codes; otherwise it checks the card's duel code.",
+    ],
+    "Duel.GetBattleMonster": [
+        "Returns the monster controlled by player that is currently in battle, followed by the monster controlled by the opponent that is currently in battle.",
+        "Each return can be nil if there is no attacker or attack target for that controller.",
+    ],
+    "Duel.SkipPhase": [
+        "Applies a temporary field effect that makes player skip phase.",
+        "The phase must be one of PHASE_DRAW, PHASE_STANDBY, PHASE_MAIN1, PHASE_BATTLE, PHASE_MAIN2, or PHASE_END. reset_count values of 0 or less are treated as 1, and value is stored on the generated skip effect.",
+    ],
+    "Card.GetPreviousRaceOnField": ["Returns the Race value recorded for c's previous on-field state."],
+    "Card.CreateEffectRelation": [
+        "Creates a relation between c and effect e.",
+        "If e is the triggering effect of a current Chain Link, the relation is tied to that Chain Link; otherwise the core stores a direct effect relation.",
+    ],
+    "Card.GetLink": ["Returns c's Link Rating, or 0 if c is not a Link Monster."],
+    "Card.IsAttackable": [
+        "Checks whether c currently satisfies the core's basic attack-capable conditions.",
+        "The card must be face-up Attack Position, or face-up Defense Position with EFFECT_DEFENSE_ATTACK, and it must not be forbidden, unable to attack, attack-disabled, or under a skipped Battle Phase. This does not check attack-announcement costs.",
+    ],
+    "Card.SetStatus": [
+        "Sets or clears status on c.",
+        "This is an internal-status helper. The binding does nothing while c is copying another card's effect.",
+    ],
+    "Duel.AnnounceAttribute": [
+        "Lets player declare count Attributes from the available Attribute bitmask and returns the selected Attribute bitmask.",
+        "available should be a bitwise combination of ATTRIBUTE_* constants.",
+    ],
+    "Group.GetMaxGroup": [
+        "Calls f for each card in g, forwards any extra arguments, and returns a Group containing every card tied for the maximum value.",
+        "The second return is the maximum integer value. If g is empty, this binding returns no Lua values.",
+    ],
+    "bit.bor": ["Returns the bitwise OR of a and b."],
+    "Card.IsDefenseAbove": [
+        "Checks whether c has current DEF greater than or equal to def.",
+        "Link Monsters and cards that are not monsters or currently treated as monsters return false.",
+    ],
+    "Effect.SetOwnerPlayer": [
+        "Sets e's owner player to player.",
+        "Only player values 0 and 1 are accepted; any other value leaves the effect unchanged.",
+    ],
+    "Auxiliary.imval1": ["Default value helper for EFFECT_CANNOT_BE_BATTLE_TARGET; it returns true when c is not immune to e."],
+    "Card.GetReasonEffect": ["Returns c's current reason effect, or nil when no reason effect is recorded."],
+    "Card.GetTurnID": [
+        "Returns c's stored turn ID.",
+        "The core updates this value when the card is added to a location, so scripts commonly compare it with Duel.GetTurnCount() for same-turn timing checks.",
+    ],
+    "Card.IsDisabled": ["Checks whether c currently has STATUS_DISABLED."],
+    "Duel.NegateSummon": [
+        "Negates a current Normal Summon, Flip Summon, or Special Summon for targets.",
+        "targets may be a Card or Group. Normal and Flip Summon negation require a single card; Special Summon negation can process a group and only negates cards whose Summon is negatable by the current reason effect. The core raises the matching *_SUMMON_NEGATED event and returns no Lua value.",
+    ],
+    "Duel.SelectDisableField": [
+        "Lets player select count available field zones from the requested own-side and opponent-side locations, then returns the selected zone bitmask.",
+        "location1 applies to player's field and location2 applies to the opponent's field. The core clamps count to the available number of zones and returns no value if no zone can be selected.",
+    ],
+    "Duel.IsPlayerCanSpecialSummonCount": [
+        "Checks whether player can perform count Special Summons under the current remaining Special Summon-count limits.",
+        "The core checks EFFECT_LEFT_SPSUMMON_COUNT effects and the player's Special Summon counter.",
+    ],
+    "Card.CheckEquipTarget": [
+        "Checks whether c2 is a valid Equip target for c1.",
+        "The core requires c1 to be affected by an EFFECT_EQUIP_LIMIT that accepts c2, and it also enforces old and modern Union count limits.",
+    ],
+    "Card.GetOriginalCodeRule": [
+        "Returns c's rule-original card code.",
+        "Double-code cards return two codes: the printed original code and the second rule code. Other cards return only the duel code used by the core.",
+    ],
+    "Auxiliary.chainreg": [
+        "Registers FLAG_ID_CHAINING on e's handler if that flag is not already present.",
+        "The flag resets by the standard event reset, except turn Set reset, and also at the end of the Chain.",
+    ],
+    "Duel.EnableGlobalFlag": ["Enables the supplied core global_flag bit for the Duel and returns no Lua value."],
+    "Duel.TossCoin": [
+        "Tosses count coins for player and returns one integer result per toss.",
+        "Results are 0 or 1. Normal script use passes a positive count up to MAX_COIN_COUNT; the binding rejects 0 and values below -1, and clamps large positive counts to the core maximum.",
+    ],
+    "Card.GetColumnGroup": [
+        "Returns a Group containing cards in the same column as c.",
+        "This MDPro3/YGOPro binding only takes c. It uses c's current on-field column, including related Monster Zones, Spell & Trap Zones, and Extra Monster Zone column relationships; if c is not on the field, the returned Group is empty.",
+    ],
     "Duel.GetFirstMatchingCard": [
         "Returns the first card in the specified locations that satisfies f and is not excluded by ex.",
         "f may be nil. ex may be a Card, a Group, or nil, and extra arguments after ex are passed to f. Returns nil when no matching card is found.",
@@ -1606,6 +1705,105 @@ FUNCTION_EN_OVERRIDES = {
 
 
 FUNCTION_ZH_OVERRIDES = {
+    "Duel.SortDecktop": [
+        "让sort_player重新排列target_player主卡组最上方count张卡。",
+        "两名玩家都必须有效，且count至少为1。count大于剩余卡组数量时，处理器只排列实际存在的最上方卡。",
+    ],
+    "Duel.RemoveCounter": [
+        "让player因reason从指定场上位置取除count个countertype类型的指示物，并返回是否成功取除。",
+        "s表示从player视角看的己方场上位置，o表示对方场上位置。核心会在取除指示物前提供可适用的指示物取除替代效果。",
+    ],
+    "Duel.TossDice": [
+        "为player投掷count1个骰子；提供count2时，为对方再投掷count2个骰子。",
+        "有效骰子结果为1到6的整数。通常脚本用法应保持count1 + count2不超过5；核心会拒绝count1 <= 0和count2 < 0。",
+    ],
+    "Card.IsLinkAttribute": [
+        "检查c作为连接素材使用时的属性是否包含attribute。",
+        "player默认当前原因玩家。核心使用c:GetLinkAttribute(player)，因此会计入连接素材用属性变更效果。",
+    ],
+    "Card.IsOriginalCodeRule": [
+        "检查c按规则使用的原本卡号是否匹配任意给定code。",
+        "nil的code参数会被跳过。双卡号卡会检查两个规则原本卡号；其他卡检查核心使用的决斗卡号。",
+    ],
+    "Duel.GetBattleMonster": [
+        "返回当前战斗中由player控制的怪兽，然后返回当前战斗中由对方控制的怪兽。",
+        "若对应控制者没有攻击怪兽或攻击对象，则对应返回值为nil。",
+    ],
+    "Duel.SkipPhase": [
+        "适用一个临时场上效果，使player跳过phase阶段。",
+        "phase必须是PHASE_DRAW、PHASE_STANDBY、PHASE_MAIN1、PHASE_BATTLE、PHASE_MAIN2或PHASE_END之一。reset_count小于等于0时按1处理，value会保存在生成的跳过阶段效果上。",
+    ],
+    "Card.GetPreviousRaceOnField": ["返回c之前场上状态记录的种族数值。"],
+    "Card.CreateEffectRelation": [
+        "在c与效果e之间建立关联。",
+        "若e是当前连锁中某个连锁环的发动效果，该关联会绑定到该连锁环；否则核心会保存直接的效果关联。",
+    ],
+    "Card.GetLink": ["返回c的连接值；c不是连接怪兽时返回0。"],
+    "Card.IsAttackable": [
+        "检查c当前是否满足核心的基础可攻击条件。",
+        "该卡必须是表侧攻击表示，或带EFFECT_DEFENSE_ATTACK的表侧守备表示，并且不能处于禁止状态、不能攻击、攻击被无效，或回合玩家被跳过战斗阶段。该函数不检查攻击宣言费用。",
+    ],
+    "Card.SetStatus": [
+        "设置或清除c上的status状态位。",
+        "这是内部状态辅助函数。c正在复制其他卡效果时，该绑定不做处理。",
+    ],
+    "Duel.AnnounceAttribute": [
+        "让player从available属性位掩码中宣言count个属性，并返回所选属性位掩码。",
+        "available应为ATTRIBUTE_*常量的按位组合。",
+    ],
+    "Group.GetMaxGroup": [
+        "对g中的每张卡调用f，转发额外参数，并返回所有最大值并列卡组成的Group。",
+        "第二个返回值是最大整数值。g为空时，该绑定不返回Lua值。",
+    ],
+    "bit.bor": ["返回a与b的按位或结果。"],
+    "Card.IsDefenseAbove": [
+        "检查c当前守备力是否大于等于def。",
+        "连接怪兽，以及不是怪兽且当前未被当作怪兽的卡，返回false。",
+    ],
+    "Effect.SetOwnerPlayer": [
+        "将效果e的拥有者玩家设为player。",
+        "只接受0和1作为player；其他值不会改变该效果。",
+    ],
+    "Auxiliary.imval1": ["EFFECT_CANNOT_BE_BATTLE_TARGET默认Value辅助函数；c不免疫e时返回true。"],
+    "Card.GetReasonEffect": ["返回c当前记录的原因效果；没有记录原因效果时返回nil。"],
+    "Card.GetTurnID": [
+        "返回c保存的回合ID。",
+        "核心在卡加入某个位置时更新该值，因此脚本常用它与Duel.GetTurnCount()比较来判断同回合时点。",
+    ],
+    "Card.IsDisabled": ["检查c当前是否带STATUS_DISABLED。"],
+    "Duel.NegateSummon": [
+        "无效targets正在进行的通常召唤、反转召唤或特殊召唤。",
+        "targets可以是Card或Group。通常召唤与反转召唤的无效要求只有1张卡；特殊召唤无效可以处理Group，并且只无效当前原因效果可以无效其召唤的卡。核心会引发对应的*_SUMMON_NEGATED事件，且不返回Lua值。",
+    ],
+    "Duel.SelectDisableField": [
+        "让player从请求的己方与对方位置中选择count个可用场地区域，并返回所选区域位掩码。",
+        "location1应用于player场上，location2应用于对方场上。核心会把count限制为可用区域数量；没有可选区域时不返回值。",
+    ],
+    "Duel.IsPlayerCanSpecialSummonCount": [
+        "检查player在当前剩余特殊召唤次数限制下，能否进行count次特殊召唤。",
+        "核心会检查EFFECT_LEFT_SPSUMMON_COUNT效果以及该玩家的特殊召唤计数器。",
+    ],
+    "Card.CheckEquipTarget": [
+        "检查c2是否是c1的合法装备对象。",
+        "核心要求c1受到接受c2的EFFECT_EQUIP_LIMIT影响，并且还会检查旧式和现代同盟怪兽的装备数量限制。",
+    ],
+    "Card.GetOriginalCodeRule": [
+        "返回c按规则使用的原本卡号。",
+        "双卡号卡返回两个卡号：记载的原本卡号和第二规则卡号。其他卡只返回核心使用的决斗卡号。",
+    ],
+    "Auxiliary.chainreg": [
+        "若效果e的处理者还没有FLAG_ID_CHAINING，则给其登记该标记效果。",
+        "该标记按标准事件重置，但不因回合盖放重置，并会在连锁结束时重置。",
+    ],
+    "Duel.EnableGlobalFlag": ["启用决斗中的指定core global_flag位，且不返回Lua值。"],
+    "Duel.TossCoin": [
+        "为player投掷count枚硬币，并为每次投掷返回1个整数结果。",
+        "结果为0或1。通常脚本用法传入正数count且不超过MAX_COIN_COUNT；该绑定拒绝0和小于-1的值，并将过大的正数限制为核心最大值。",
+    ],
+    "Card.GetColumnGroup": [
+        "返回与c位于同一纵列的卡组成的Group。",
+        "此MDPro3/YGOPro绑定只接收c。它使用c当前场上的纵列，包含相关怪兽区域、魔法与陷阱区域以及额外怪兽区域的纵列关系；若c不在场上，返回的Group为空。",
+    ],
     "Duel.GetFirstMatchingCard": [
         "返回指定位置中第一张满足f且未被ex排除的卡。",
         "f可以为nil。ex可以是Card、Group或nil，ex之后的额外参数会传给f。没有匹配卡时返回nil。",
@@ -2340,6 +2538,186 @@ FUNCTION_ZH_OVERRIDES = {
 
 
 CORE_DOC_OVERRIDES = {
+    "Duel.SortDecktop": {
+        "params": [ParamDoc("sort_player", "int"), ParamDoc("target_player", "int"), ParamDoc("count", "int")],
+        "returns": [],
+        "description": ["Lets one player sort cards on top of a Main Deck."],
+        "description_zh": ["让一名玩家排列主卡组最上方的卡。"],
+    },
+    "Duel.RemoveCounter": {
+        "params": [ParamDoc("player", "int"), ParamDoc("s", "int"), ParamDoc("o", "int"), ParamDoc("countertype", "int"), ParamDoc("count", "int"), ParamDoc("reason", "int")],
+        "returns": [ReturnDoc("bool")],
+        "description": ["Removes counters from selected field locations."],
+        "description_zh": ["从指定场上位置取除指示物。"],
+    },
+    "Duel.TossDice": {
+        "params": [ParamDoc("player", "int"), ParamDoc("count1", "int"), ParamDoc("count2", "int", True, "default: 0")],
+        "returns": [ReturnDoc("int", "First die result."), ReturnDoc("...?", "Additional die results.")],
+        "description": ["Tosses dice and returns their results."],
+        "description_zh": ["投掷骰子并返回结果。"],
+    },
+    "Card.IsLinkAttribute": {
+        "params": [ParamDoc("c", "Card"), ParamDoc("attribute", "int"), ParamDoc("player", "int", True, "default: current reason player")],
+        "returns": [ReturnDoc("bool")],
+        "description": ["Checks c's Attribute while used as Link Material."],
+        "description_zh": ["检查c作为连接素材使用时的属性。"],
+    },
+    "Card.IsOriginalCodeRule": {
+        "params": [ParamDoc("c", "Card"), ParamDoc("code1", "int"), ParamDoc("code2", "int", True), ParamDoc("...", "int", True)],
+        "returns": [ReturnDoc("bool")],
+        "description": ["Checks c's rule-original card code."],
+        "description_zh": ["检查c按规则使用的原本卡号。"],
+    },
+    "Duel.GetBattleMonster": {
+        "params": [ParamDoc("player", "int")],
+        "returns": [ReturnDoc("Card|nil", "Monster controlled by player."), ReturnDoc("Card|nil", "Monster controlled by the opponent.")],
+        "description": ["Returns the battling monsters for player and the opponent."],
+        "description_zh": ["返回player与对方当前战斗中的怪兽。"],
+    },
+    "Duel.SkipPhase": {
+        "params": [ParamDoc("player", "int"), ParamDoc("phase", "int"), ParamDoc("reset_flag", "int"), ParamDoc("reset_count", "int"), ParamDoc("value", "int", True, "default: 0")],
+        "returns": [],
+        "description": ["Makes player skip a phase."],
+        "description_zh": ["使player跳过指定阶段。"],
+    },
+    "Card.GetPreviousRaceOnField": {
+        "params": [ParamDoc("c", "Card")],
+        "returns": [ReturnDoc("int")],
+        "description": ["Returns c's previously recorded on-field Race."],
+        "description_zh": ["返回c之前记录的场上种族。"],
+    },
+    "Card.CreateEffectRelation": {
+        "params": [ParamDoc("c", "Card"), ParamDoc("e", "Effect")],
+        "returns": [],
+        "description": ["Creates an effect relation for c."],
+        "description_zh": ["为c建立效果关联。"],
+    },
+    "Card.GetLink": {
+        "params": [ParamDoc("c", "Card")],
+        "returns": [ReturnDoc("int")],
+        "description": ["Returns c's Link Rating."],
+        "description_zh": ["返回c的连接值。"],
+    },
+    "Card.IsAttackable": {
+        "params": [ParamDoc("c", "Card")],
+        "returns": [ReturnDoc("bool")],
+        "description": ["Checks whether c is currently attack-capable."],
+        "description_zh": ["检查c当前是否可攻击。"],
+    },
+    "Card.SetStatus": {
+        "params": [ParamDoc("c", "Card"), ParamDoc("status", "int"), ParamDoc("enable", "bool")],
+        "returns": [],
+        "description": ["Sets or clears a status bit on c."],
+        "description_zh": ["设置或清除c的状态位。"],
+    },
+    "Duel.AnnounceAttribute": {
+        "params": [ParamDoc("player", "int"), ParamDoc("count", "int"), ParamDoc("available", "int")],
+        "returns": [ReturnDoc("int", "Selected Attribute bitmask.")],
+        "description": ["Lets player declare Attributes."],
+        "description_zh": ["让player宣言属性。"],
+    },
+    "Group.GetMaxGroup": {
+        "params": [ParamDoc("g", "Group"), ParamDoc("f", "function"), ParamDoc("...", "any", True)],
+        "returns": [ReturnDoc("Group|nil", "Cards tied for maximum value."), ReturnDoc("int|nil", "Maximum value.")],
+        "description": ["Returns cards with the maximum value produced by f."],
+        "description_zh": ["返回使f取得最大值的卡。"],
+    },
+    "bit.bor": {
+        "params": [ParamDoc("a", "int"), ParamDoc("b", "int")],
+        "returns": [ReturnDoc("int")],
+        "description": ["Returns the bitwise OR of a and b."],
+        "description_zh": ["返回a与b的按位或。"],
+    },
+    "Card.IsDefenseAbove": {
+        "params": [ParamDoc("c", "Card"), ParamDoc("def", "int")],
+        "returns": [ReturnDoc("bool")],
+        "description": ["Checks whether c's current DEF is at least def."],
+        "description_zh": ["检查c当前守备力是否大于等于def。"],
+    },
+    "Effect.SetOwnerPlayer": {
+        "params": [ParamDoc("e", "Effect"), ParamDoc("player", "int")],
+        "returns": [],
+        "description": ["Sets e's owner player."],
+        "description_zh": ["设置效果e的拥有者玩家。"],
+    },
+    "Auxiliary.imval1": {
+        "params": [ParamDoc("e", "Effect"), ParamDoc("c", "Card")],
+        "returns": [ReturnDoc("bool")],
+        "description": ["Default battle-target immunity value helper."],
+        "description_zh": ["战斗对象免疫检查用默认Value辅助函数。"],
+    },
+    "Card.GetReasonEffect": {
+        "params": [ParamDoc("c", "Card")],
+        "returns": [ReturnDoc("Effect|nil")],
+        "description": ["Returns c's current reason effect."],
+        "description_zh": ["返回c当前的原因效果。"],
+    },
+    "Card.GetTurnID": {
+        "params": [ParamDoc("c", "Card")],
+        "returns": [ReturnDoc("int")],
+        "description": ["Returns c's stored turn ID."],
+        "description_zh": ["返回c保存的回合ID。"],
+    },
+    "Card.IsDisabled": {
+        "params": [ParamDoc("c", "Card")],
+        "returns": [ReturnDoc("bool")],
+        "description": ["Checks whether c has STATUS_DISABLED."],
+        "description_zh": ["检查c是否带STATUS_DISABLED。"],
+    },
+    "Duel.NegateSummon": {
+        "params": [ParamDoc("targets", "Card|Group")],
+        "returns": [],
+        "description": ["Negates the current Summon for targets."],
+        "description_zh": ["无效targets当前正在进行的召唤。"],
+    },
+    "Duel.SelectDisableField": {
+        "params": [ParamDoc("player", "int"), ParamDoc("count", "int"), ParamDoc("location1", "int"), ParamDoc("location2", "int"), ParamDoc("filter", "int")],
+        "returns": [ReturnDoc("int", "Selected zone bitmask.")],
+        "description": ["Lets player select field zones to disable."],
+        "description_zh": ["让player选择要禁用的场地区域。"],
+    },
+    "Duel.IsPlayerCanSpecialSummonCount": {
+        "params": [ParamDoc("player", "int"), ParamDoc("count", "int")],
+        "returns": [ReturnDoc("bool")],
+        "description": ["Checks whether player can perform count Special Summons."],
+        "description_zh": ["检查player能否进行count次特殊召唤。"],
+    },
+    "Card.CheckEquipTarget": {
+        "params": [ParamDoc("c1", "Card"), ParamDoc("c2", "Card")],
+        "returns": [ReturnDoc("bool")],
+        "description": ["Checks whether c2 is a valid Equip target for c1."],
+        "description_zh": ["检查c2是否是c1的合法装备对象。"],
+    },
+    "Card.GetOriginalCodeRule": {
+        "params": [ParamDoc("c", "Card")],
+        "returns": [ReturnDoc("int", "Primary rule-original code."), ReturnDoc("int|nil", "Second rule code, when present.")],
+        "description": ["Returns c's rule-original card code."],
+        "description_zh": ["返回c按规则使用的原本卡号。"],
+    },
+    "Auxiliary.chainreg": {
+        "params": [ParamDoc("e", "Effect"), ParamDoc("tp", "int"), ParamDoc("eg", "Group"), ParamDoc("ep", "int"), ParamDoc("ev", "any"), ParamDoc("re", "Effect"), ParamDoc("r", "any"), ParamDoc("rp", "int")],
+        "returns": [],
+        "description": ["Registers the chaining flag on e's handler."],
+        "description_zh": ["给效果e的处理者登记连锁标记。"],
+    },
+    "Duel.EnableGlobalFlag": {
+        "params": [ParamDoc("global_flag", "int")],
+        "returns": [],
+        "description": ["Enables a Duel global flag bit."],
+        "description_zh": ["启用决斗全局标记位。"],
+    },
+    "Duel.TossCoin": {
+        "params": [ParamDoc("player", "int"), ParamDoc("count", "int")],
+        "returns": [ReturnDoc("int", "First coin result, 0 or 1."), ReturnDoc("...?", "Additional coin results.")],
+        "description": ["Tosses coins and returns their results."],
+        "description_zh": ["投掷硬币并返回结果。"],
+    },
+    "Card.GetColumnGroup": {
+        "params": [ParamDoc("c", "Card")],
+        "returns": [ReturnDoc("Group")],
+        "description": ["Returns cards in c's column."],
+        "description_zh": ["返回与c同纵列的卡。"],
+    },
     "Duel.GetFirstMatchingCard": {
         "params": [
             ParamDoc("f", "function|nil", True), ParamDoc("player", "int"), ParamDoc("s", "int"),

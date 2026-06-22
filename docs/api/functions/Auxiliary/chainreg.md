@@ -8,12 +8,8 @@ Auxiliary.chainreg(Effect e, int tp, Group eg, int ep, any ev, Effect re, any r,
 
 ## Description
 
-Used by Dark Armed Dragon (81059524), equivalent to
-function aux.chainreg(e, tp, eg, ep, ev, re, r, rp)
-  if e:GetHandler():GetFlagEffect(1)==0 then
-    e:GetHandler():RegisterFlagEffect(1, RESET_EVENT+RESETS_STANDARD-RESET_TURN_SET+RESET_CHAIN, 0, 1)
-  end
-end
+Registers FLAG_ID_CHAINING on e's handler if that flag is not already present.
+The flag resets by the standard event reset, except turn Set reset, and also at the end of the Chain.
 
 ## Parameters
 

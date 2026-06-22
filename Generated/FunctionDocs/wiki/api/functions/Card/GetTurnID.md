@@ -8,7 +8,8 @@ Card.GetTurnID(Card c) -> int
 
 ## Description
 
-Return c The round to the current position
+Returns c's stored turn ID.
+The core updates this value when the card is added to a location, so scripts commonly compare it with Duel.GetTurnCount() for same-turn timing checks.
 
 ## Parameters
 

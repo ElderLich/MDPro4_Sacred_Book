@@ -8,7 +8,8 @@ Card.IsDefenseAbove(Card c, int def) -> bool
 
 ## Description
 
-Check c is defensive def above
+Checks whether c has current DEF greater than or equal to def.
+Link Monsters and cards that are not monsters or currently treated as monsters return false.
 
 ## Parameters
 
