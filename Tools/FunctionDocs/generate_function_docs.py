@@ -688,6 +688,50 @@ FUNCTION_EN_OVERRIDES = {
         "f1 filters the Tuner material, f2 filters non-Tuner materials, min and max restrict the non-Tuner count, smat forces a required material, and mg supplies an optional material pool.",
     ],
     "Duel.SetSynchroMaterial": ["Stores g as the Synchro Material group for the current Summon procedure."],
+    "Effect.GetOperation": ["Returns e's operation callback, or nil if no operation callback is set."],
+    "Effect.GetTarget": ["Returns e's target callback, or nil if no target callback is set."],
+    "Card.GetType": ["Returns c's current type mask, including temporary type changes applied to the card."],
+    "Effect.GetType": ["Returns e's effect type mask, such as EFFECT_TYPE_SINGLE, EFFECT_TYPE_FIELD, or EFFECT_TYPE_TRIGGER_O."],
+    "Card.CheckFusionMaterial": [
+        "Checks whether c's Fusion Material requirements can be satisfied by g, optionally requiring gc to be included.",
+        "chkf is forwarded to the Fusion Material condition check, and not_material is used by procedures that check material availability without treating the cards as actual materials yet.",
+    ],
+    "Duel.CreateToken": [
+        "Creates a Token card with card code code for player and returns it.",
+        "The returned Token is not placed on the field automatically; scripts normally pass it to Duel.SpecialSummon or another operation afterwards.",
+    ],
+    "Group.FilterSelect": [
+        "Lets player choose min to max cards from g that satisfy filter f, excluding ex, and returns the selected Group.",
+        "Extra arguments after ex are passed to f after the Card argument.",
+    ],
+    "Effect.GetValue": ["Returns e's value field. For function-valued effects this is the stored callback; otherwise it is the stored integer value."],
+    "Auxiliary.tgoval": [
+        "Shared value function for EFFECT_CANNOT_BE_EFFECT_TARGET effects that protect against the opponent's effects.",
+        "It returns true when the reason player rp is the opponent of e's handler player.",
+    ],
+    "Duel.GetTurnCount": [
+        "Returns the current turn count.",
+        "With no player argument, this returns the duel-wide turn number; with player 0 or 1, it returns that player's personal turn count.",
+    ],
+    "Card.IsFusionSetCard": [
+        "Checks whether c can be treated as belonging to any supplied set code while used as Fusion Material.",
+        "nil set-code arguments are ignored.",
+    ],
+    "Card.IsPublic": ["Checks whether c is currently public to both players, represented by face-up position in this core."],
+    "Card.IsHasEffect": [
+        "Returns the effects currently affecting c with effect code code, or nil if none match.",
+        "When player is supplied, only effects whose count limit can still be used by that player are returned. Multiple matching effects are returned as multiple Lua return values.",
+    ],
+    "Card.IsPosition": ["Checks whether c's current battle position includes pos."],
+    "Card.GetEquipTarget": ["Returns the card that c is currently equipped to, or nil if c has no equip target."],
+    "Duel.SelectFusionMaterial": [
+        "Lets player select a valid Fusion Material group for Fusion Monster c from g and returns the selected Group.",
+        "gc, when supplied, must be included. The returned Group also contains gc, matching the core selection behavior.",
+    ],
+    "Group.DeleteGroup": [
+        "Releases a Group previously preserved with Group.KeepAlive so Lua can manage it normally again.",
+        "Calling this on an ordinary Group has no effect.",
+    ],
     "Card.IsLevel": [
         "Checks whether c's current Level equals any supplied level value.",
         "nil level arguments are ignored.",
@@ -1451,6 +1495,50 @@ FUNCTION_ZH_OVERRIDES = {
         "f1筛选调整素材，f2筛选非调整素材，min和max限制非调整数量，smat指定必须包含的素材，mg提供可选的素材范围。",
     ],
     "Duel.SetSynchroMaterial": ["把g保存为当前召唤手续使用的同调素材组。"],
+    "Effect.GetOperation": ["返回e的Operation回调函数；未设置时返回nil。"],
+    "Effect.GetTarget": ["返回e的Target回调函数；未设置时返回nil。"],
+    "Card.GetType": ["返回c当前的类型掩码，包含卡片当前受到的临时类型变更。"],
+    "Effect.GetType": ["返回e的效果类型掩码，例如EFFECT_TYPE_SINGLE、EFFECT_TYPE_FIELD或EFFECT_TYPE_TRIGGER_O。"],
+    "Card.CheckFusionMaterial": [
+        "检查c的融合素材要求是否可以由g满足，并可要求必须包含gc。",
+        "chkf会传给融合素材条件检查；not_material用于只检查素材可用性、但暂不把卡视为实际素材的手续。",
+    ],
+    "Duel.CreateToken": [
+        "为player创建卡号为code的衍生物并返回该Card。",
+        "返回的衍生物不会自动放到场上；脚本通常会随后把它传给Duel.SpecialSummon或其他处理。",
+    ],
+    "Group.FilterSelect": [
+        "让player从g中选择min到max张满足筛选函数f且不在ex中的卡，并返回选中的Group。",
+        "ex之后的额外参数会在Card参数之后传给f。",
+    ],
+    "Effect.GetValue": ["返回e的Value字段。函数值效果返回保存的回调函数；否则返回保存的整数值。"],
+    "Auxiliary.tgoval": [
+        "EFFECT_CANNOT_BE_EFFECT_TARGET常用的Value函数，用于防止成为对方效果的对象。",
+        "当原因玩家rp是e处理对象玩家的对方时返回true。",
+    ],
+    "Duel.GetTurnCount": [
+        "返回当前回合数。",
+        "不传player时返回整场决斗的回合数；传入player 0或1时返回该玩家经过的个人回合数。",
+    ],
+    "Card.IsFusionSetCard": [
+        "判断c作为融合素材时是否可以视为属于任一传入的系列编号。",
+        "nil系列编号参数会被忽略。",
+    ],
+    "Card.IsPublic": ["判断c当前是否为双方公开状态；在当前核心中表现为表侧表示。"],
+    "Card.IsHasEffect": [
+        "返回当前影响c且效果编号为code的效果；没有匹配效果时返回nil。",
+        "提供player时，只返回该玩家仍可使用次数限制的效果。多个匹配效果会作为多个Lua返回值返回。",
+    ],
+    "Card.IsPosition": ["判断c当前表示形式是否包含pos。"],
+    "Card.GetEquipTarget": ["返回c当前装备到的卡；如果c没有装备对象则返回nil。"],
+    "Duel.SelectFusionMaterial": [
+        "让player从g中为融合怪兽c选择有效的融合素材组，并返回选中的Group。",
+        "提供gc时，所选素材必须包含gc；返回的Group也会包含gc，与核心选择行为一致。",
+    ],
+    "Group.DeleteGroup": [
+        "释放之前通过Group.KeepAlive保留的Group，使其重新交由Lua正常管理。",
+        "对普通Group调用此函数没有效果。",
+    ],
     "Card.GetAttack": ["返回c当前的攻击力；未知或负数攻击力按0返回。"],
     "Card.IsLevel": [
         "判断c当前等级是否等于任一传入的等级值。",
@@ -1764,6 +1852,62 @@ CORE_DOC_OVERRIDES = {
         "returns": [],
         "description": ["Sets e's target range fields."],
         "description_zh": ["设置效果e的Target Range属性。"],
+    },
+    "Effect.GetOperation": {
+        "params": [ParamDoc("e", "Effect")],
+        "returns": [ReturnDoc("function|nil")],
+        "description": ["Returns e's operation callback, or nil if no operation callback is set."],
+        "description_zh": ["返回e的Operation回调函数；未设置时返回nil。"],
+    },
+    "Effect.GetTarget": {
+        "params": [ParamDoc("e", "Effect")],
+        "returns": [ReturnDoc("function|nil")],
+        "description": ["Returns e's target callback, or nil if no target callback is set."],
+        "description_zh": ["返回e的Target回调函数；未设置时返回nil。"],
+    },
+    "Effect.GetValue": {
+        "params": [ParamDoc("e", "Effect")],
+        "returns": [ReturnDoc("function|int")],
+        "description": ["Returns e's value callback or integer value."],
+        "description_zh": ["返回e的Value回调函数或整数值。"],
+    },
+    "Card.IsHasEffect": {
+        "params": [ParamDoc("c", "Card"), ParamDoc("code", "int"), ParamDoc("player", "int", True)],
+        "returns": [ReturnDoc("Effect|nil"), ReturnDoc("... Effect", "Additional matching effects, if any.")],
+        "description": ["Returns effects affecting c with code, or nil if none match."],
+        "description_zh": ["返回影响c且编号为code的效果；没有匹配效果时返回nil。"],
+    },
+    "Card.GetEquipTarget": {
+        "params": [ParamDoc("c", "Card")],
+        "returns": [ReturnDoc("Card|nil")],
+        "description": ["Returns the card that c is equipped to."],
+        "description_zh": ["返回c当前装备到的卡。"],
+    },
+    "Duel.CreateToken": {
+        "params": [ParamDoc("player", "int"), ParamDoc("code", "int")],
+        "returns": [ReturnDoc("Card|false")],
+        "description": ["Creates a Token card for player."],
+        "description_zh": ["为player创建衍生物Card。"],
+    },
+    "Duel.SelectFusionMaterial": {
+        "params": [
+            ParamDoc("player", "int"), ParamDoc("c", "Card"), ParamDoc("g", "Group"),
+            ParamDoc("gc", "Card|nil", True), ParamDoc("chkf", "int", True, "default: PLAYER_NONE"),
+            ParamDoc("not_material", "bool", True, "default: false"),
+        ],
+        "returns": [ReturnDoc("Group")],
+        "description": ["Lets player select Fusion Materials for c from g."],
+        "description_zh": ["让player从g中为c选择融合素材。"],
+    },
+    "Group.FilterSelect": {
+        "params": [
+            ParamDoc("g", "Group"), ParamDoc("player", "int"), ParamDoc("f", "function"),
+            ParamDoc("min", "int"), ParamDoc("max", "int"), ParamDoc("ex", "Card|Group|nil", True),
+            ParamDoc("...", "any"),
+        ],
+        "returns": [ReturnDoc("Group")],
+        "description": ["Lets player choose matching cards from g."],
+        "description_zh": ["让player从g中选择满足条件的卡。"],
     },
     "Group.Filter": {
         "params": [ParamDoc("g", "Group"), ParamDoc("f", "function"), ParamDoc("ex", "Card|Group|nil", True), ParamDoc("...", "any")],

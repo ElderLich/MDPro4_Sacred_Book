@@ -8,10 +8,8 @@ Auxiliary.tgoval(Effect e, Effect re, int rp) -> void
 
 ## Description
 
-Simplified method for the filter function preventing being targeted by opponent's card effects, used in effect registration for SetValue
-function aux.tgoval(e, re, rp)
-  return rp==e:GetHandlerPlayer()
-end
+Shared value function for EFFECT_CANNOT_BE_EFFECT_TARGET effects that protect against the opponent's effects.
+It returns true when the reason player rp is the opponent of e's handler player.
 
 ## Parameters
 

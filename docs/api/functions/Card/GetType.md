@@ -8,7 +8,7 @@ Card.GetType(Card c) -> int
 
 ## Description
 
-Returns the current type of c
+Returns c's current type mask, including temporary type changes applied to the card.
 
 ## Parameters
 

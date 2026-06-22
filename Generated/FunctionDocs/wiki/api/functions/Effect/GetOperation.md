@@ -3,12 +3,12 @@
 ## Signature
 
 ```lua
-Effect.GetOperation(Effect e) -> function
+Effect.GetOperation(Effect e) -> function|nil
 ```
 
 ## Description
 
-Returns the operation attribute
+Returns e's operation callback, or nil if no operation callback is set.
 
 ## Parameters
 
@@ -16,7 +16,7 @@ Returns the operation attribute
 
 ## Returns
 
-- `function`
+- `function|nil`
 
 ## Source
 

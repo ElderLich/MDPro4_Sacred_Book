@@ -8,7 +8,7 @@ Effect.GetValue(Effect e) -> function|int
 
 ## Description
 
-Returns the value attribute
+Returns e's value field. For function-valued effects this is the stored callback; otherwise it is the stored integer value.
 
 ## Parameters
 

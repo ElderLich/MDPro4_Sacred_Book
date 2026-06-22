@@ -3,12 +3,13 @@
 ## Signature
 
 ```lua
-Duel.CreateToken(int player, int code) -> Card
+Duel.CreateToken(int player, int code) -> Card|false
 ```
 
 ## Description
 
-Creates a new Token with the passed in parameter value and returns
+Creates a Token card with card code code for player and returns it.
+The returned Token is not placed on the field automatically; scripts normally pass it to Duel.SpecialSummon or another operation afterwards.
 
 ## Parameters
 
@@ -17,7 +18,7 @@ Creates a new Token with the passed in parameter value and returns
 
 ## Returns
 
-- `Card`
+- `Card|false`
 
 ## Source
 

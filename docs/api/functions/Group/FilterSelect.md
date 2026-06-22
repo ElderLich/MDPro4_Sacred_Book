@@ -8,8 +8,8 @@ Group.FilterSelect(Group g, int player, function f, int min, int max, [Card|Grou
 
 ## Description
 
-Filter function, allowing players to choose from the g player min-max sheets meet the screening conditions f and not equal to the ex card
-Starting with the 7th argument is an additional parameter
+Lets player choose min to max cards from g that satisfy filter f, excluding ex, and returns the selected Group.
+Extra arguments after ex are passed to f after the Card argument.
 
 ## Parameters
 

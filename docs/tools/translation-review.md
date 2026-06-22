@@ -7,14 +7,14 @@ This queue tracks function pages whose English should be reviewed by hand. It is
 - Total functions: **998**
 - Functions used by current scripts: **753**
 - Functions with raw Chinese text in English fields: **0**
-- Functions queued for natural-English review: **485**
+- Functions queued for natural-English review: **468**
 
 ## English Status Counts
 
 | Status | Count |
 | --- | ---: |
-| `imported_from_dataeditorx` | 485 |
-| `translated_exact` | 513 |
+| `imported_from_dataeditorx` | 468 |
+| `translated_exact` | 530 |
 
 ## Priority Review Queue
 
@@ -22,22 +22,6 @@ Sorted by current script usage count so the most visible function pages are revi
 
 | Function | Status | Script Uses | Current English Preview |
 | --- | --- | ---: | --- |
-| [`Effect.GetOperation`](/api/functions/Effect/GetOperation) | `imported_from_dataeditorx` | 253 | Returns the operation attribute |
-| [`Effect.GetTarget`](/api/functions/Effect/GetTarget) | `imported_from_dataeditorx` | 253 | Returns the target attribute |
-| [`Card.GetType`](/api/functions/Card/GetType) | `imported_from_dataeditorx` | 246 | Returns the current type of c |
-| [`Effect.GetType`](/api/functions/Effect/GetType) | `imported_from_dataeditorx` | 246 | Returns the Type property |
-| [`Card.CheckFusionMaterial`](/api/functions/Card/CheckFusionMaterial) | `imported_from_dataeditorx` | 244 | Check if g contains a set of fusion material that c needs \[must contain gc\] |
-| [`Duel.CreateToken`](/api/functions/Duel/CreateToken) | `imported_from_dataeditorx` | 239 | Creates a new Token with the passed in parameter value and returns |
-| [`Group.FilterSelect`](/api/functions/Group/FilterSelect) | `imported_from_dataeditorx` | 239 | Filter function, allowing players to choose from the g player min-max sheets meet the screening conditions f and not equal to the ex card Starting with the 7th argumen... |
-| [`Effect.GetValue`](/api/functions/Effect/GetValue) | `imported_from_dataeditorx` | 238 | Returns the value attribute |
-| [`Auxiliary.tgoval`](/api/functions/Auxiliary/tgoval) | `imported_from_dataeditorx` | 234 | Simplified method for the filter function preventing being targeted by opponent's card effects, used in effect registration for SetValue function aux.tgoval(e, re, rp)... |
-| [`Duel.GetTurnCount`](/api/functions/Duel/GetTurnCount) | `imported_from_dataeditorx` | 231 | Returns the current number of turns |
-| [`Card.IsFusionSetCard`](/api/functions/Card/IsFusionSetCard) | `imported_from_dataeditorx` | 229 | Check the c as a fusion material can be used as a name setname card |
-| [`Card.IsPublic`](/api/functions/Card/IsPublic) | `imported_from_dataeditorx` | 229 | Check if c is open |
-| [`Card.IsHasEffect`](/api/functions/Card/IsHasEffect) | `imported_from_dataeditorx` | 223 | Check if c is affected by the effect type |
-| [`Card.IsPosition`](/api/functions/Card/IsPosition) | `imported_from_dataeditorx` | 222 | Check whether c is the representation pos |
-| [`Duel.SelectFusionMaterial`](/api/functions/Duel/SelectFusionMaterial) | `imported_from_dataeditorx` | 222 | Let the player player from the g to select a group \[must contain gc\] fusion fusion monster c material |
-| [`Group.DeleteGroup`](/api/functions/Group/DeleteGroup) | `imported_from_dataeditorx` | 221 | Delete the card group g |
 | [`Card.GetFlagEffectLabel`](/api/functions/Card/GetFlagEffectLabel) | `imported_from_dataeditorx` | 217 | The type of c is the label that identifies the effect of code, and returns nil if it does not |
 | [`Card.GetMaterial`](/api/functions/Card/GetMaterial) | `imported_from_dataeditorx` | 214 | Returns the material used for the appearance of c |
 | [`Duel.GetChainMaterial`](/api/functions/Duel/GetChainMaterial) | `imported_from_dataeditorx` | 212 | Returns the effect of the chained material that is played by the player. This function is only used to blend the effect of a class card |
@@ -70,7 +54,6 @@ Sorted by current script usage count so the most visible function pages are revi
 | [`Card.IsAttackPos`](/api/functions/Card/IsAttackPos) | `imported_from_dataeditorx` | 154 | Check whether c is an attack |
 | [`Card.IsCanChangePosition`](/api/functions/Card/IsCanChangePosition) | `imported_from_dataeditorx` | 153 | Check if c can have its battle position changed by an effect |
 | [`Duel.ConfirmDecktop`](/api/functions/Duel/ConfirmDecktop) | `imported_from_dataeditorx` | 151 | Confirm the player card group above count cards |
-| [`Card.GetEquipTarget`](/api/functions/Card/GetEquipTarget) | `imported_from_dataeditorx` | 150 | Returns the current artefact object |
 | [`Auxiliary.MustMaterialCheck`](/api/functions/Auxiliary/MustMaterialCheck) | `imported_from_dataeditorx` | 147 | Check if value contains cards or a group affected by player's effect type code Currently involved codes are: EFFECT_MUST_BE_SMATERIAL EFFECT_MUST_BE_XMATERIAL EFFECT_M... |
 | [`Effect.IsActivated`](/api/functions/Effect/IsActivated) | `imported_from_dataeditorx` | 147 | Check the effect of e is the effect of starting (chassis) |
 | [`Group.GetSum`](/api/functions/Group/GetSum) | `imported_from_dataeditorx` | 142 | Calculates the sum of the values ​​of all cards in g, f is the value function for each card, starting with the third parameter as an additional parameter |
@@ -182,7 +165,24 @@ Sorted by current script usage count so the most visible function pages are revi
 | [`Card.GetPreviousEquipTarget`](/api/functions/Card/GetPreviousEquipTarget) | `imported_from_dataeditorx` | 45 | Returns the device object before c |
 | [`Duel.CheckRemoveOverlayCard`](/api/functions/Duel/CheckRemoveOverlayCard) | `imported_from_dataeditorx` | 45 | Check if the player can remove at least count cards for the specified reason |
 | [`Auxiliary.IsMaterialListCode`](/api/functions/Auxiliary/IsMaterialListCode) | `imported_from_dataeditorx` | 44 | Check if card c lists card code as a material in its material list |
-| ...and 325 more |  |  |  |
+| [`Card.IsChainAttackable`](/api/functions/Card/IsChainAttackable) | `imported_from_dataeditorx` | 44 | Check whether c can be a continuous attack, c the number of attacks declared&gt; = ac return false Note: This function returns false when c has made multiple attacks due... |
+| [`Auxiliary.IsDualState`](/api/functions/Auxiliary/IsDualState) | `imported_from_dataeditorx` | 43 | Check the double monster e: GetHandler () is re-call state Commonly used in the double monster re-summoned to obtain the effect of e Condition attribute |
+| [`Auxiliary.mzctcheckrel`](/api/functions/Auxiliary/mzctcheckrel) | `imported_from_dataeditorx` | 43 | Check if there is space in mzone after tp releases g by reason |
+| [`Duel.SetChainLimitTillChainEnd`](/api/functions/Duel/SetChainLimitTillChainEnd) | `imported_from_dataeditorx` | 43 | Same as Duel.SetChainLimit, but the chain limit set by this function persists until the chain ends |
+| [`Duel.IsDamageCalculated`](/api/functions/Duel/IsDamageCalculated) | `imported_from_dataeditorx` | 42 | Used to check if damage has been calculated during the damage phase |
+| [`Duel.RDComplete`](/api/functions/Duel/RDComplete) | `imported_from_dataeditorx` | 42 | In the call Duel.Damage / Duel.Recover, if is_step parameter is true, you need to call this function when the trigger point |
+| [`Card.IsReleasableByEffect`](/api/functions/Card/IsReleasableByEffect) | `imported_from_dataeditorx` | 41 | Check whether c can be liberated by the effect |
+| [`Duel.AdjustInstantly`](/api/functions/Duel/AdjustInstantly) | `imported_from_dataeditorx` | 40 | Manually refreshing the card's inactive state on card \[affected by card c\] |
+| [`Auxiliary.EnableSpiritReturn`](/api/functions/Auxiliary/EnableSpiritReturn) | `imported_from_dataeditorx` | 39 | Add an effect to c for Spirit Monsters to return to the hand during the End Phase of turns when events event1,... occur |
+| [`Card.ResetFlagEffect`](/api/functions/Card/ResetFlagEffect) | `imported_from_dataeditorx` | 39 | Manually clear the type of c is the code of the identification effect |
+| [`Duel.RemoveOverlayCard`](/api/functions/Duel/RemoveOverlayCard) | `imported_from_dataeditorx` | 39 | Let the player remove the min-max overlay card at the specified location for the reason reason. The return value indicates success |
+| [`Effect.IsHasCategory`](/api/functions/Effect/IsHasCategory) | `imported_from_dataeditorx` | 38 | Check whether the effect contains cate |
+| [`Card.GetTurnCounter`](/api/functions/Card/GetTurnCounter) | `imported_from_dataeditorx` | 37 | Returns the round counter for c |
+| [`Card.IsLink`](/api/functions/Card/IsLink) | `imported_from_dataeditorx` | 37 | Check if card c's Link Marker count is link1 \[, or link2...\] |
+| [`Card.IsSynchroType`](/api/functions/Card/IsSynchroType) | `imported_from_dataeditorx` | 37 | Check if card c, when used as Synchro Material, has type type (unlike IsType, for monster cards in the Spell/Trap Zone, it uses their original type for judgment) |
+| [`Duel.ClearOperationInfo`](/api/functions/Duel/ClearOperationInfo) | `imported_from_dataeditorx` | 37 | Clear the OperationInfo of chain chainc; used for cases like Fallen Angel copying and using Graveyard effects, where card effects should not be responded to |
+| [`Duel.ShuffleExtra`](/api/functions/Duel/ShuffleExtra) | `imported_from_dataeditorx` | 37 | Manually shuffle player's Extra Deck |
+| ...and 308 more |  |  |  |
 
 ## Raw Chinese In English Fields
 

@@ -8,7 +8,8 @@ Card.IsFusionSetCard(Card c, ... int) -> bool
 
 ## Description
 
-Check the c as a fusion material can be used as a name setname card
+Checks whether c can be treated as belonging to any supplied set code while used as Fusion Material.
+nil set-code arguments are ignored.
 
 ## Parameters
 

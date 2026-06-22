@@ -146,8 +146,8 @@ Returns:
 Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3521
 
 ●bool Card.CheckFusionMaterial(Card c, [Group|nil g], [Card|nil gc], [int chkf], [bool not_material])
-检查场上[或g]是否包含了c需要[必须包含gc在内]的一组融合素材
-##根据c的种类为EFFECT_FUSION_MATERIAL的效果的Condition函数检查
+检查c的融合素材要求是否可以由g满足，并可要求必须包含gc。
+chkf会传给融合素材条件检查；not_material用于只检查素材可用性、但暂不把卡视为实际素材的手续。
 Parameters:
   c: Card
   g: Group|nil optional
@@ -515,12 +515,12 @@ Returns:
   Group
 Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3517
 
-●Card Card.GetEquipTarget(Card c)
-返回c当前的装备对象
+●Card|nil Card.GetEquipTarget(Card c)
+返回c当前装备到的卡；如果c没有装备对象则返回nil。
 Parameters:
   c: Card
 Returns:
-  Card
+  Card|nil
 Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3519
 
 ●int Card.GetFieldID(Card c)
@@ -1194,7 +1194,7 @@ Returns:
 Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3476
 
 ●int Card.GetType(Card c)
-返回c的当前类型
+返回c当前的类型掩码，包含卡片当前受到的临时类型变更。
 Parameters:
   c: Card
 Returns:
@@ -1766,7 +1766,8 @@ Returns:
 Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3391
 
 ●bool Card.IsFusionSetCard(Card c, ... int)
-检查c作为融合素材时能否当作名字含有setname的卡
+判断c作为融合素材时是否可以视为属于任一传入的系列编号。
+nil系列编号参数会被忽略。
 Parameters:
   c: Card
   ...: int
@@ -1809,17 +1810,16 @@ Returns:
   bool
 Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3623
 
-●Effect,...? Card.IsHasEffect(Card c, int code, [int player])
-检查c是否受到效果种类是code的效果的影响
-没有则返回nil
-有则返回那些效果
+●Effect|nil,... Effect Card.IsHasEffect(Card c, int code, [int player])
+返回当前影响c且效果编号为code的效果；没有匹配效果时返回nil。
+提供player时，只返回该玩家仍可使用次数限制的效果。多个匹配效果会作为多个Lua返回值返回。
 Parameters:
   c: Card
   code: int
   player: int optional
 Returns:
-  Effect
-  ...? - Effect
+  Effect|nil
+  ... Effect - Additional matching effects, if any.
 Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3549
 
 ●bool Card.IsHasLevel(Card c)
@@ -2053,7 +2053,7 @@ Returns:
 Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3394
 
 ●bool Card.IsPosition(Card c, int pos)
-检查c是否是表示形式pos
+判断c当前表示形式是否包含pos。
 Parameters:
   c: Card
   pos: int
@@ -2098,7 +2098,7 @@ Returns:
 Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3395
 
 ●bool Card.IsPublic(Card c)
-检查c是否处于公开状态
+判断c当前是否为双方公开状态；在当前核心中表现为表侧表示。
 Parameters:
   c: Card
 Returns:
@@ -3073,13 +3073,14 @@ Parameters:
   count: int
 Source: D:\Programs\GitHub\ygopro-core\libduel.cpp:4891
 
-●Card Duel.CreateToken(int player, int code)
-根据code新建一个衍生物并返回，该衍生物的拥有者为player
+●Card|false Duel.CreateToken(int player, int code)
+为player创建卡号为code的衍生物并返回该Card。
+返回的衍生物不会自动放到场上；脚本通常会随后把它传给Duel.SpecialSummon或其他处理。
 Parameters:
   player: int
   code: int
 Returns:
-  Card
+  Card|false
 Source: D:\Programs\GitHub\ygopro-core\libduel.cpp:4872
 
 ●int Duel.Damage(int player, int value, int reason, [bool is_step])
@@ -3735,7 +3736,8 @@ Returns:
 Source: D:\Programs\GitHub\ygopro-core\libduel.cpp:4980
 
 ●int Duel.GetTurnCount([int player])
-返回[player所经过的]当前的回合数
+返回当前回合数。
+不传player时返回整场决斗的回合数；传入player 0或1时返回该玩家经过的个人回合数。
 Parameters:
   player: int optional
 Returns:
@@ -4406,13 +4408,13 @@ Returns:
   int
 Source: D:\Programs\GitHub\ygopro-core\libduel.cpp:5027
 
-●Group Duel.SelectFusionMaterial(int player, Card c, [Group|nil g], [Card|nil gc], [int chkf], [bool not_material])
-让玩家player从g中选择一组[必须包含gc在内的]融合怪兽c的融合素材
-##根据c的种类为EFFECT_FUSION_MATERIAL的效果的Operation操作
+●Group Duel.SelectFusionMaterial(int player, Card c, Group g, [Card|nil gc], [int chkf], [bool not_material])
+让player从g中为融合怪兽c选择有效的融合素材组，并返回选中的Group。
+提供gc时，所选素材必须包含gc；返回的Group也会包含gc，与核心选择行为一致。
 Parameters:
   player: int
   c: Card
-  g: Group|nil optional - cannot be nil when selecting materials
+  g: Group
   gc: Card|nil optional
   chkf: int optional - default: PLAYER_NONE
   not_material: bool optional - default: false
@@ -5063,12 +5065,12 @@ Returns:
   Card|Group|Effect
 Source: D:\Programs\GitHub\ygopro-core\libeffect.cpp:636
 
-●function Effect.GetOperation(Effect e)
-返回operation属性
+●function|nil Effect.GetOperation(Effect e)
+返回e的Operation回调函数；未设置时返回nil。
 Parameters:
   e: Effect
 Returns:
-  function
+  function|nil
 Source: D:\Programs\GitHub\ygopro-core\libeffect.cpp:645
 
 ●Card Effect.GetOwner(Effect e)
@@ -5105,16 +5107,16 @@ Returns:
   int
 Source: D:\Programs\GitHub\ygopro-core\libeffect.cpp:638
 
-●function Effect.GetTarget(Effect e)
-返回target属性
+●function|nil Effect.GetTarget(Effect e)
+返回e的Target回调函数；未设置时返回nil。
 Parameters:
   e: Effect
 Returns:
-  function
+  function|nil
 Source: D:\Programs\GitHub\ygopro-core\libeffect.cpp:642
 
 ●int Effect.GetType(Effect e)
-返回Type属性
+返回e的效果类型掩码，例如EFFECT_TYPE_SINGLE、EFFECT_TYPE_FIELD或EFFECT_TYPE_TRIGGER_O。
 Parameters:
   e: Effect
 Returns:
@@ -5122,7 +5124,7 @@ Returns:
 Source: D:\Programs\GitHub\ygopro-core\libeffect.cpp:633
 
 ●function|int Effect.GetValue(Effect e)
-返回value属性
+返回e的Value字段。函数值效果返回保存的回调函数；否则返回保存的整数值。
 Parameters:
   e: Effect
 Returns:
@@ -5497,7 +5499,8 @@ Returns:
 Source: D:\Programs\GitHub\ygopro-core\libgroup.cpp:900
 
 ●void Group.DeleteGroup(Group g)
-删除卡片组g
+释放之前通过Group.KeepAlive保留的Group，使其重新交由Lua正常管理。
+对普通Group调用此函数没有效果。
 Parameters:
   g: Group
 Source: D:\Programs\GitHub\ygopro-core\libgroup.cpp:902
@@ -5535,8 +5538,8 @@ Returns:
 Source: D:\Programs\GitHub\ygopro-core\libgroup.cpp:913
 
 ●Group Group.FilterSelect(Group g, int player, function f, int min, int max, [Card|Group|nil ex], ... any)
-过滤函数，让玩家player从g中选择 min-max 张满足筛选条件f并且不等于ex的卡
-从第7个参数开始为额外参数
+让player从g中选择min到max张满足筛选函数f且不在ex中的卡，并返回选中的Group。
+ex之后的额外参数会在Card参数之后传给f。
 Parameters:
   g: Group
   player: int
@@ -7465,7 +7468,8 @@ Parameters:
 Source: Utilities/utility.lua:448
 
 ●void Auxiliary.tgoval(Effect e, Effect re, int rp)
-TODO document.
+EFFECT_CANNOT_BE_EFFECT_TARGET常用的Value函数，用于防止成为对方效果的对象。
+当原因玩家rp是e处理对象玩家的对方时返回true。
 Parameters:
   e: Effect
   re: Effect

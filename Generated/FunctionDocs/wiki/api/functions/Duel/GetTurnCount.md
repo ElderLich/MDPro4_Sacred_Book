@@ -8,7 +8,8 @@ Duel.GetTurnCount([int player]) -> int
 
 ## Description
 
-Returns the current number of turns
+Returns the current turn count.
+With no player argument, this returns the duel-wide turn number; with player 0 or 1, it returns that player's personal turn count.
 
 ## Parameters
 

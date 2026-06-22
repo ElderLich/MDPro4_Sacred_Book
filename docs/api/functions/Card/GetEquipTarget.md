@@ -3,12 +3,12 @@
 ## Signature
 
 ```lua
-Card.GetEquipTarget(Card c) -> Card
+Card.GetEquipTarget(Card c) -> Card|nil
 ```
 
 ## Description
 
-Returns the current artefact object
+Returns the card that c is currently equipped to, or nil if c has no equip target.
 
 ## Parameters
 
@@ -16,7 +16,7 @@ Returns the current artefact object
 
 ## Returns
 
-- `Card`
+- `Card|nil`
 
 ## Source
 

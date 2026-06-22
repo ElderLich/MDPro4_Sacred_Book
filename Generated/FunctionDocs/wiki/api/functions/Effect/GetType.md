@@ -8,7 +8,7 @@ Effect.GetType(Effect e) -> int
 
 ## Description
 
-Returns the Type property
+Returns e's effect type mask, such as EFFECT_TYPE_SINGLE, EFFECT_TYPE_FIELD, or EFFECT_TYPE_TRIGGER_O.
 
 ## Parameters
 

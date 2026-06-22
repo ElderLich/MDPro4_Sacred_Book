@@ -8,7 +8,8 @@ Group.DeleteGroup(Group g) -> void
 
 ## Description
 
-Delete the card group g
+Releases a Group previously preserved with Group.KeepAlive so Lua can manage it normally again.
+Calling this on an ordinary Group has no effect.
 
 ## Parameters
 

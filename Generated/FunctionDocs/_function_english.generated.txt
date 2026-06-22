@@ -153,7 +153,8 @@ Returns:
 Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3521
 
 ●bool Card.CheckFusionMaterial(Card c, [Group|nil g], [Card|nil gc], [int chkf], [bool not_material])
-Check if g contains a set of fusion material that c needs [must contain gc]
+Checks whether c's Fusion Material requirements can be satisfied by g, optionally requiring gc to be included.
+chkf is forwarded to the Fusion Material condition check, and not_material is used by procedures that check material availability without treating the cards as actual materials yet.
 Parameters:
   c: Card
   g: Group|nil optional
@@ -517,12 +518,12 @@ Returns:
   Group
 Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3517
 
-●Card Card.GetEquipTarget(Card c)
-Returns the current artefact object
+●Card|nil Card.GetEquipTarget(Card c)
+Returns the card that c is currently equipped to, or nil if c has no equip target.
 Parameters:
   c: Card
 Returns:
-  Card
+  Card|nil
 Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3519
 
 ●int Card.GetFieldID(Card c)
@@ -1185,7 +1186,7 @@ Returns:
 Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3476
 
 ●int Card.GetType(Card c)
-Returns the current type of c
+Returns c's current type mask, including temporary type changes applied to the card.
 Parameters:
   c: Card
 Returns:
@@ -1754,7 +1755,8 @@ Returns:
 Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3391
 
 ●bool Card.IsFusionSetCard(Card c, ... int)
-Check the c as a fusion material can be used as a name setname card
+Checks whether c can be treated as belonging to any supplied set code while used as Fusion Material.
+nil set-code arguments are ignored.
 Parameters:
   c: Card
   ...: int
@@ -1797,15 +1799,16 @@ Returns:
   bool
 Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3623
 
-●Effect,...? Card.IsHasEffect(Card c, int code, [int player])
-Check if c is affected by the effect type
+●Effect|nil,... Effect Card.IsHasEffect(Card c, int code, [int player])
+Returns the effects currently affecting c with effect code code, or nil if none match.
+When player is supplied, only effects whose count limit can still be used by that player are returned. Multiple matching effects are returned as multiple Lua return values.
 Parameters:
   c: Card
   code: int
   player: int optional
 Returns:
-  Effect
-  ...? - Effect
+  Effect|nil
+  ... Effect - Additional matching effects, if any.
 Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3549
 
 ●bool Card.IsHasLevel(Card c)
@@ -2048,7 +2051,7 @@ Returns:
 Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3394
 
 ●bool Card.IsPosition(Card c, int pos)
-Check whether c is the representation pos
+Checks whether c's current battle position includes pos.
 Parameters:
   c: Card
   pos: int
@@ -2093,7 +2096,7 @@ Returns:
 Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3395
 
 ●bool Card.IsPublic(Card c)
-Check if c is open
+Checks whether c is currently public to both players, represented by face-up position in this core.
 Parameters:
   c: Card
 Returns:
@@ -3061,13 +3064,14 @@ Parameters:
   count: int
 Source: D:\Programs\GitHub\ygopro-core\libduel.cpp:4891
 
-●Card Duel.CreateToken(int player, int code)
-Creates a new Token with the passed in parameter value and returns
+●Card|false Duel.CreateToken(int player, int code)
+Creates a Token card with card code code for player and returns it.
+The returned Token is not placed on the field automatically; scripts normally pass it to Duel.SpecialSummon or another operation afterwards.
 Parameters:
   player: int
   code: int
 Returns:
-  Card
+  Card|false
 Source: D:\Programs\GitHub\ygopro-core\libduel.cpp:4872
 
 ●int Duel.Damage(int player, int value, int reason, [bool is_step])
@@ -3710,7 +3714,8 @@ Returns:
 Source: D:\Programs\GitHub\ygopro-core\libduel.cpp:4980
 
 ●int Duel.GetTurnCount([int player])
-Returns the current number of turns
+Returns the current turn count.
+With no player argument, this returns the duel-wide turn number; with player 0 or 1, it returns that player's personal turn count.
 Parameters:
   player: int optional
 Returns:
@@ -4379,12 +4384,13 @@ Returns:
   int
 Source: D:\Programs\GitHub\ygopro-core\libduel.cpp:5027
 
-●Group Duel.SelectFusionMaterial(int player, Card c, [Group|nil g], [Card|nil gc], [int chkf], [bool not_material])
-Let the player player from the g to select a group [must contain gc] fusion fusion monster c material
+●Group Duel.SelectFusionMaterial(int player, Card c, Group g, [Card|nil gc], [int chkf], [bool not_material])
+Lets player select a valid Fusion Material group for Fusion Monster c from g and returns the selected Group.
+gc, when supplied, must be included. The returned Group also contains gc, matching the core selection behavior.
 Parameters:
   player: int
   c: Card
-  g: Group|nil optional - cannot be nil when selecting materials
+  g: Group
   gc: Card|nil optional
   chkf: int optional - default: PLAYER_NONE
   not_material: bool optional - default: false
@@ -5008,12 +5014,12 @@ Returns:
   Card|Group|Effect
 Source: D:\Programs\GitHub\ygopro-core\libeffect.cpp:636
 
-●function Effect.GetOperation(Effect e)
-Returns the operation attribute
+●function|nil Effect.GetOperation(Effect e)
+Returns e's operation callback, or nil if no operation callback is set.
 Parameters:
   e: Effect
 Returns:
-  function
+  function|nil
 Source: D:\Programs\GitHub\ygopro-core\libeffect.cpp:645
 
 ●Card Effect.GetOwner(Effect e)
@@ -5049,16 +5055,16 @@ Returns:
   int
 Source: D:\Programs\GitHub\ygopro-core\libeffect.cpp:638
 
-●function Effect.GetTarget(Effect e)
-Returns the target attribute
+●function|nil Effect.GetTarget(Effect e)
+Returns e's target callback, or nil if no target callback is set.
 Parameters:
   e: Effect
 Returns:
-  function
+  function|nil
 Source: D:\Programs\GitHub\ygopro-core\libeffect.cpp:642
 
 ●int Effect.GetType(Effect e)
-Returns the Type property
+Returns e's effect type mask, such as EFFECT_TYPE_SINGLE, EFFECT_TYPE_FIELD, or EFFECT_TYPE_TRIGGER_O.
 Parameters:
   e: Effect
 Returns:
@@ -5066,7 +5072,7 @@ Returns:
 Source: D:\Programs\GitHub\ygopro-core\libeffect.cpp:633
 
 ●function|int Effect.GetValue(Effect e)
-Returns the value attribute
+Returns e's value field. For function-valued effects this is the stored callback; otherwise it is the stored integer value.
 Parameters:
   e: Effect
 Returns:
@@ -5448,7 +5454,8 @@ Returns:
 Source: D:\Programs\GitHub\ygopro-core\libgroup.cpp:900
 
 ●void Group.DeleteGroup(Group g)
-Delete the card group g
+Releases a Group previously preserved with Group.KeepAlive so Lua can manage it normally again.
+Calling this on an ordinary Group has no effect.
 Parameters:
   g: Group
 Source: D:\Programs\GitHub\ygopro-core\libgroup.cpp:902
@@ -5487,8 +5494,8 @@ Returns:
 Source: D:\Programs\GitHub\ygopro-core\libgroup.cpp:913
 
 ●Group Group.FilterSelect(Group g, int player, function f, int min, int max, [Card|Group|nil ex], ... any)
-Filter function, allowing players to choose from the g player min-max sheets meet the screening conditions f and not equal to the ex card
-Starting with the 7th argument is an additional parameter
+Lets player choose min to max cards from g that satisfy filter f, excluding ex, and returns the selected Group.
+Extra arguments after ex are passed to f after the Card argument.
 Parameters:
   g: Group
   player: int
@@ -7526,10 +7533,8 @@ Parameters:
 Source: Utilities/utility.lua:448
 
 ●void Auxiliary.tgoval(Effect e, Effect re, int rp)
-Simplified method for the filter function preventing being targeted by opponent's card effects, used in effect registration for SetValue
-function aux.tgoval(e, re, rp)
-  return rp==e:GetHandlerPlayer()
-end
+Shared value function for EFFECT_CANNOT_BE_EFFECT_TARGET effects that protect against the opponent's effects.
+It returns true when the reason player rp is the opponent of e's handler player.
 Parameters:
   e: Effect
   re: Effect

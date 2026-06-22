@@ -8,7 +8,8 @@ Card.CheckFusionMaterial(Card c, [Group|nil g], [Card|nil gc], [int chkf], [bool
 
 ## Description
 
-Check if g contains a set of fusion material that c needs \[must contain gc\]
+Checks whether c's Fusion Material requirements can be satisfied by g, optionally requiring gc to be included.
+chkf is forwarded to the Fusion Material condition check, and not_material is used by procedures that check material availability without treating the cards as actual materials yet.
 
 ## Parameters
 

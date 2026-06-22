@@ -8,7 +8,7 @@ Card.IsPublic(Card c) -> bool
 
 ## Description
 
-Check if c is open
+Checks whether c is currently public to both players, represented by face-up position in this core.
 
 ## Parameters
 

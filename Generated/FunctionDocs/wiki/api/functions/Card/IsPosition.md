@@ -8,7 +8,7 @@ Card.IsPosition(Card c, int pos) -> bool
 
 ## Description
 
-Check whether c is the representation pos
+Checks whether c's current battle position includes pos.
 
 ## Parameters
 

@@ -3,12 +3,12 @@
 ## Signature
 
 ```lua
-Effect.GetTarget(Effect e) -> function
+Effect.GetTarget(Effect e) -> function|nil
 ```
 
 ## Description
 
-Returns the target attribute
+Returns e's target callback, or nil if no target callback is set.
 
 ## Parameters
 
@@ -16,7 +16,7 @@ Returns the target attribute
 
 ## Returns
 
-- `function`
+- `function|nil`
 
 ## Source
 
