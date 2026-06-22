@@ -1,6 +1,6 @@
 # Function Docs Refresh Report
 
-Generated: 2026-06-22T20:59:46+00:00
+Generated: 2026-06-22T21:11:40+00:00
 
 ## Outputs
 
@@ -79,6 +79,7 @@ Lua helper docs that still render as `void` while their source body contains a `
 
 - DataEditorX currently consumes `_functions.txt` through `CodeConfig.AddFunction()`, so the generated bullet text keeps that format.
 - The structured JSON is the better source for a future wiki or richer editor integration.
+- Reviewed function summaries, signatures, parameters, and returns are loaded from `Tools/FunctionDocs/function_doc_overrides.json` instead of being embedded in the generator.
 - DataEditorX `MySyntaxHighlighter.cs` receives function names from `CodeConfig.LongTooltipDic`, so highlighting follows the generated `_functions` or `_function_english` file after tooltips are loaded.
 - The old hardcoded highlighter lists remain only as a startup fallback and should eventually be removed once generated function data is loaded before the first highlight pass.
 
@@ -132,6 +133,6 @@ Examples changed constant values:
 ## Recommended Next Steps
 
 1. Review the generated compatibility text files and copy them into DataEditorX only after spot-checking tooltips.
-2. Replace the hardcoded function regex lists in `MySyntaxHighlighter.cs` with generated namespace lists.
+2. Finish DataEditorX autocomplete/highlighting cleanup by removing the startup fallback lists once generated Lua data is loaded before the first highlight pass.
 3. Translate missing English entries from the JSON source instead of editing `_function_english.txt` by hand.
 4. Use the generated markdown tree as the seed for a VitePress wiki like scrapi-book, but keep this project's core-specific API separate.
