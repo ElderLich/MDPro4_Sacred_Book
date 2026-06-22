@@ -3,24 +3,22 @@
 ## Signature
 
 ```lua
-Auxiliary.FilterEqualFunction(function f, any value, ... any) -> void
+Auxiliary.FilterEqualFunction(function f, any value, [... any]) -> function
 ```
 
 ## Description
 
-Filter cards satisfying a single filter condition f with value value, returning a function with a bool return type; additional parameters start from the third parameter
-function Auxiliary.FilterEqualFunction(f, value, ...)
-  local ext_params={...}
-  return function(target)
-    return f(target, table.unpack(ext_params))==value
-  end
-end
+Returns a card filter that calls f on the card and extra arguments, then checks whether the result equals value.
 
 ## Parameters
 
 - `f` `function`
 - `value` `any`
-- `...` `any`
+- `...` `any` optional
+
+## Returns
+
+- `function`
 
 ## Source
 

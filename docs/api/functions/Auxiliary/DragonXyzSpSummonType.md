@@ -8,8 +8,7 @@ Auxiliary.DragonXyzSpSummonType(Card c) -> bool
 
 ## Description
 
-The `nolimit` parameter for Special Summon effects of Dragon, Xyz monsters where Soul Drain Dragon is available
-(Soul Drain Dragon, Level 8/LIGHT/Dragon/4000/0)
+Returns true only for Soul Drain Dragon, used as a Special Summon procedure-type helper.
 
 ## Parameters
 

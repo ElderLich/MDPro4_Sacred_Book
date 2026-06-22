@@ -8,7 +8,7 @@ Auxiliary.PhantasmsSpSummonType(Card c) -> bool
 
 ## Description
 
-The `nolimit` parameter for Special Summon effects of Phantasms cards
+Returns whether c is a Special Summon procedure monster, used by Phantasm Special Summon helpers.
 
 ## Parameters
 

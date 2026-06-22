@@ -7,14 +7,14 @@ This queue tracks function pages whose English should be reviewed by hand. It is
 - Total functions: **998**
 - Functions used by current scripts: **753**
 - Functions with raw Chinese text in English fields: **0**
-- Functions queued for natural-English review: **152**
+- Functions queued for natural-English review: **102**
 
 ## English Status Counts
 
 | Status | Count |
 | --- | ---: |
-| `imported_from_dataeditorx` | 152 |
-| `translated_exact` | 846 |
+| `imported_from_dataeditorx` | 102 |
+| `translated_exact` | 896 |
 
 ## Priority Review Queue
 
@@ -22,56 +22,6 @@ Sorted by current script usage count so the most visible function pages are revi
 
 | Function | Status | Script Uses | Current English Preview |
 | --- | --- | ---: | --- |
-| [`Card.CheckFusionSubstitute`](/api/functions/Card/CheckFusionSubstitute) | `imported_from_dataeditorx` | 5 | Check whether the c can replace the material description card name of the fusion monster fc |
-| [`Card.GetPreviousLocation`](/api/functions/Card/GetPreviousLocation) | `imported_from_dataeditorx` | 5 | Returns the position before the c position changes |
-| [`Duel.GetFlagEffectLabel`](/api/functions/Duel/GetFlagEffectLabel) | `imported_from_dataeditorx` | 5 | Return the Label of the flag effect of type code for player; return nil if no such effect exists |
-| [`Duel.GetOverlayGroup`](/api/functions/Duel/GetOverlayGroup) | `imported_from_dataeditorx` | 5 | Returns all stacked cards at a specified location |
-| [`Duel.IsPlayerCanRelease`](/api/functions/Duel/IsPlayerCanRelease) | `imported_from_dataeditorx` | 5 | Check whether the player can liberate the player c |
-| [`Duel.SetFlagEffectLabel`](/api/functions/Duel/SetFlagEffectLabel) | `imported_from_dataeditorx` | 5 | Return whether player has a flag effect of type code and set its Label property to label |
-| [`Duel.SetFusionMaterial`](/api/functions/Duel/SetFusionMaterial) | `imported_from_dataeditorx` | 5 | Set g to be the fusion material you want to use |
-| [`Auxiliary.AddFusionProcFunRep2`](/api/functions/Auxiliary/AddFusionProcFunRep2) | `imported_from_dataeditorx` | 4 | Add a Fusion Summon procedure for c Use minc-maxc monsters satisfying the same condition f as Fusion Materials Equivalent to aux.AddFusionProcMixRep(c, false, insf, f,... |
-| [`Auxiliary.DragonXyzSpSummonType`](/api/functions/Auxiliary/DragonXyzSpSummonType) | `imported_from_dataeditorx` | 4 | The `nolimit` parameter for Special Summon effects of Dragon, Xyz monsters where Soul Drain Dragon is available (Soul Drain Dragon, Level 8/LIGHT/Dragon/4000/0) |
-| [`Auxiliary.GetColumn`](/api/functions/Auxiliary/GetColumn) | `imported_from_dataeditorx` | 4 | Return the column sequence number of card c from player's perspective, excluding the Field Zone; from left to right, columns are 0-4 |
-| [`Auxiliary.GetValueType`](/api/functions/Auxiliary/GetValueType) | `imported_from_dataeditorx` | 4 | Return the Lua type of value |
-| [`Auxiliary.IsSelfEquip`](/api/functions/Auxiliary/IsSelfEquip) | `imported_from_dataeditorx` | 4 | Check if c has a equip card equipped by the effect of itself. |
-| [`Card.GetAttackableTarget`](/api/functions/Card/GetAttackableTarget) | `imported_from_dataeditorx` | 4 | Returns the attackable card set and whether it can attack directly |
-| [`Card.GetAttackedCount`](/api/functions/Card/GetAttackedCount) | `imported_from_dataeditorx` | 4 | Returns the number of times this round has been attacked Note: If this value is different from the return value of the previous function, then this card has been a dir... |
-| [`Card.GetLeaveFieldDest`](/api/functions/Card/GetLeaveFieldDest) | `imported_from_dataeditorx` | 4 | Returns the destination of an effect (such as the universe) that was changed as a result of departure from c |
-| [`Card.GetPreviousLevelOnField`](/api/functions/Card/GetPreviousLevelOnField) | `imported_from_dataeditorx` | 4 | Returns the rank before the c position change |
-| [`Card.IsXyzLevel`](/api/functions/Card/IsXyzLevel) | `imported_from_dataeditorx` | 4 | Check c for excess monster xyzc with the level of whether the excess is lv |
-| [`Duel.DisableSelfDestroyCheck`](/api/functions/Duel/DisableSelfDestroyCheck) | `imported_from_dataeditorx` | 4 | Disable card self-destruction checks; no parameter or enabled=true disables the check, enabled=false enables the check |
-| [`Effect.GetCondition`](/api/functions/Effect/GetCondition) | `imported_from_dataeditorx` | 4 | Returns the condition property |
-| [`Auxiliary.AddRitualProcEqualCode`](/api/functions/Auxiliary/AddRitualProcEqualCode) | `imported_from_dataeditorx` | 3 | Add a Ritual Summon effect for c code is the card code of the Ritual Monster; the sum of the Ritual Levels of the materials must equal the original Level of the Ritual... |
-| [`Auxiliary.ArcanaCondition`](/api/functions/Auxiliary/ArcanaCondition) | `imported_from_dataeditorx` | 3 | condition of Arcana Force monster effect from coin toss |
-| [`Auxiliary.dogcon`](/api/functions/Auxiliary/dogcon) | `imported_from_dataeditorx` | 3 | Check if e:GetHandler() was destroyed by the opponent and sent to the Graveyard from your field, used for SetCondition function Auxiliary.dogcon(e, tp, eg, ep, ev, re,... |
-| [`Auxiliary.DrytronSpSummonType`](/api/functions/Auxiliary/DrytronSpSummonType) | `imported_from_dataeditorx` | 3 | The `nolimit` parameter for Special Summon effects of Drytron cards |
-| [`Auxiliary.indsval`](/api/functions/Auxiliary/indsval) | `imported_from_dataeditorx` | 3 | Simplified method for the filter function preventing destruction by your own card effects, used in effect registration for SetValue function aux.indsval(e, re, rp) ret... |
-| [`Auxiliary.PhantasmsSpSummonType`](/api/functions/Auxiliary/PhantasmsSpSummonType) | `imported_from_dataeditorx` | 3 | The `nolimit` parameter for Special Summon effects of Phantasms cards |
-| [`Auxiliary.TriamidSpSummonType`](/api/functions/Auxiliary/TriamidSpSummonType) | `imported_from_dataeditorx` | 3 | The `nolimit` parameter for Special Summon effects of Triamid cards |
-| [`Card.CancelCardTarget`](/api/functions/Card/CancelCardTarget) | `imported_from_dataeditorx` | 3 | Cancel c2 as a perpetual object of c1 |
-| [`Card.GetMutualLinkedGroup`](/api/functions/Card/GetMutualLinkedGroup) | `imported_from_dataeditorx` | 3 | Return the group of cards mutually linked with card c |
-| [`Card.IsCanBeLinkMaterial`](/api/functions/Card/IsCanBeLinkMaterial) | `imported_from_dataeditorx` | 3 | Check if c can be used as Link Material \[for Link Monster sc\]; if sc is not specified, must pass nil |
-| [`Card.IsLinkMarker`](/api/functions/Card/IsLinkMarker) | `imported_from_dataeditorx` | 3 | Check if card c has a Link Marker in direction dir dir values are: LINK_MARKER_BOTTOM_LEFT =0x001 -- ↙ LINK_MARKER_BOTTOM      =0x002 -- ↓ LINK_MARKER_BOTTOM_RIGHT=0x0... |
-| [`Card.ReleaseEffectRelation`](/api/functions/Card/ReleaseEffectRelation) | `imported_from_dataeditorx` | 3 | Manually release the link between c and effect e |
-| [`Card.ReverseInDeck`](/api/functions/Card/ReverseInDeck) | `imported_from_dataeditorx` | 3 | The setting c is indicated in the front of the deck |
-| [`Duel.ChangeBattleDamage`](/api/functions/Duel/ChangeBattleDamage) | `imported_from_dataeditorx` | 3 | The player player in this battle by the harm into value, check for false is the original combat damage to 0 also change the damage |
-| [`Duel.GetCoinResult`](/api/functions/Duel/GetCoinResult) | `imported_from_dataeditorx` | 3 | Returns the result of the current coin |
-| [`Duel.GetDrawCount`](/api/functions/Duel/GetDrawCount) | `imported_from_dataeditorx` | 3 | Returns the player's number of rules drawn per turn |
-| [`Effect.IsActivatable`](/api/functions/Effect/IsActivatable) | `imported_from_dataeditorx` | 3 | Check whether the effect can be launched by the player |
-| [`Auxiliary.AddFusionProcCode4`](/api/functions/Auxiliary/AddFusionProcCode4) | `imported_from_dataeditorx` | 2 | For the c designated card number for the code1, code2, code3, code4 monster for the fusion material |
-| [`Auxiliary.EnableReviveLimitPendulumSummonable`](/api/functions/Auxiliary/EnableReviveLimitPendulumSummonable) | `imported_from_dataeditorx` | 2 | If monster c is Pendulum Summoned from location, it can bypass revival restrictions NOTE: The original description includes a question mark (?), indicating potential u... |
-| [`Auxiliary.FilterEqualFunction`](/api/functions/Auxiliary/FilterEqualFunction) | `imported_from_dataeditorx` | 2 | Filter cards satisfying a single filter condition f with value value, returning a function with a bool return type; additional parameters start from the third paramete... |
-| [`Auxiliary.penlimit`](/api/functions/Auxiliary/penlimit) | `imported_from_dataeditorx` | 2 | Simplified method for the filter function preventing summoning (broadly) by methods other than Pendulum Summon, used in effect registration for SetValue se is the effe... |
-| [`Auxiliary.TargetEqualFunction`](/api/functions/Auxiliary/TargetEqualFunction) | `imported_from_dataeditorx` | 2 | Used in effect registration, returns a function with a bool return type; additional parameters start from the third parameter function Auxiliary.TargetEqualFunction(f,... |
-| [`Auxiliary.tgsval`](/api/functions/Auxiliary/tgsval) | `imported_from_dataeditorx` | 2 | Simplified method for the filter function preventing being targeted by your own card effects, used in effect registration for SetValue function aux.tgsval(e, re, rp) r... |
-| [`Card.AssumeProperty`](/api/functions/Card/AssumeProperty) | `imported_from_dataeditorx` | 2 | Use the value of assume_type c as assume_value (genome fighter) Assume_type is the following type ASSUME_CODE card number The ASSUME_TYPE type ASSUME_LEVEL class ASSUM... |
-| [`Card.GetAttributeInGrave`](/api/functions/Card/GetAttributeInGrave) | `imported_from_dataeditorx` | 2 | Return the Attribute card c is treated as having in the Graveyard |
-| [`Card.GetPreviousDefenseOnField`](/api/functions/Card/GetPreviousDefenseOnField) | `imported_from_dataeditorx` | 2 | Returns the defensive power before the c position changes |
-| [`Card.GetSummonLocation`](/api/functions/Card/GetSummonLocation) | `imported_from_dataeditorx` | 2 | Returns the call position of c |
-| [`Card.ReplaceEffect`](/api/functions/Card/ReplaceEffect) | `imported_from_dataeditorx` | 2 | Replace the effect of c with the effect of the card whose card number is code, and add additional reset conditions The return value is the code id representing the rep... |
-| [`Duel.GetDiceResult`](/api/functions/Duel/GetDiceResult) | `imported_from_dataeditorx` | 2 | Returns the result of the current dice |
-| [`Duel.IsPlayerCanSSet`](/api/functions/Duel/IsPlayerCanSSet) | `imported_from_dataeditorx` | 2 | Check if player can Set \[scard\] |
-| [`Duel.SetDiceResult`](/api/functions/Duel/SetDiceResult) | `imported_from_dataeditorx` | 2 | Forcibly modify the result of casting dice to res This function is used in the persistent EVENT_TOSS_DICE event |
 | [`Auxiliary.AddFusionProcCode2FunRep`](/api/functions/Auxiliary/AddFusionProcCode2FunRep) | `imported_from_dataeditorx` | 1 | Add a Fusion Summon procedure for c Use 1 monster each with codes code1 and code2, and minc-maxc monsters satisfying filter condition f as Fusion Materials Equivalent... |
 | [`Auxiliary.AddFusionProcMixRep`](/api/functions/Auxiliary/AddFusionProcMixRep) | `imported_from_dataeditorx` | 1 | Add a Fusion Summon procedure for c Use minc-maxc monsters satisfying f1 and 1 of each monster in the additional parameters as Fusion Materials Additional parameters c... |
 | [`Auxiliary.AddRitualProcEqual`](/api/functions/Auxiliary/AddRitualProcEqual) | `imported_from_dataeditorx` | 1 | Add a ritual summon effect to c Filter for the ritual monster to meet the conditions, the material level must be equal to the ritual monster level |

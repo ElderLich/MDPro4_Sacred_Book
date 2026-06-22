@@ -3,17 +3,17 @@
 ## Signature
 
 ```lua
-Card.CancelCardTarget(Card c1, Card c2) -> void
+Card.CancelCardTarget(Card c, Card target) -> void
 ```
 
 ## Description
 
-Cancel c2 as a perpetual object of c1
+Removes target from c's persistent card-target relation list.
 
 ## Parameters
 
-- `c1` `Card`
-- `c2` `Card`
+- `c` `Card`
+- `target` `Card`
 
 ## Source
 

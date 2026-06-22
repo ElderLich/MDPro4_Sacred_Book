@@ -3,20 +3,16 @@
 ## Signature
 
 ```lua
-Duel.GetCoinResult() -> int,int,int,int,int
+Duel.GetCoinResult() -> int...
 ```
 
 ## Description
 
-Returns the result of the current coin
+Returns the stored coin toss results for the current coin-toss event, one result per coin.
 
 ## Returns
 
-- `int`
-- `int`
-- `int`
-- `int`
-- `int`
+- `int...` - One value per stored coin result.
 
 ## Source
 

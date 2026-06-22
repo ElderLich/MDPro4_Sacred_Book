@@ -3,12 +3,13 @@
 ## Signature
 
 ```lua
-Duel.GetFlagEffectLabel(int player, int code) -> int,...?
+Duel.GetFlagEffectLabel(int player, int code) -> int|nil,int...
 ```
 
 ## Description
 
-Return the Label of the flag effect of type code for player; return nil if no such effect exists
+Returns the label values stored on player flag effects with code.
+If no matching flag effect exists, the core returns nil; if multiple matching flag effects exist, it returns one label value for each.
 
 ## Parameters
 
@@ -17,8 +18,8 @@ Return the Label of the flag effect of type code for player; return nil if no su
 
 ## Returns
 
-- `int`
-- `...?` - integer
+- `int|nil` - First matching label, or nil if no matching flag effect exists.
+- `int...` - Additional matching labels.
 
 ## Source
 

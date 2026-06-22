@@ -8,7 +8,7 @@ Auxiliary.DrytronSpSummonType(Card c) -> bool
 
 ## Description
 
-The `nolimit` parameter for Special Summon effects of Drytron cards
+Returns whether c is a Special Summon procedure monster, used by Drytron Special Summon helpers.
 
 ## Parameters
 

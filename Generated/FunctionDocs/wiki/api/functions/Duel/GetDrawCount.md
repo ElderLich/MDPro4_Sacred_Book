@@ -3,12 +3,12 @@
 ## Signature
 
 ```lua
-Duel.GetDrawCount(int player) -> int
+Duel.GetDrawCount(int player) -> int|nil
 ```
 
 ## Description
 
-Returns the player's number of rules drawn per turn
+Returns player's current rule draw count for the Draw Phase.
 
 ## Parameters
 
@@ -16,7 +16,7 @@ Returns the player's number of rules drawn per turn
 
 ## Returns
 
-- `int`
+- `int|nil` - Draw count, or nil if player is invalid.
 
 ## Source
 

@@ -8,7 +8,7 @@ Card.GetAttackableTarget(Card c) -> Group,bool
 
 ## Description
 
-Returns the attackable card set and whether it can attack directly
+Returns the Group of cards c can attack and a boolean indicating whether c can attack directly.
 
 ## Parameters
 
@@ -16,8 +16,8 @@ Returns the attackable card set and whether it can attack directly
 
 ## Returns
 
-- `Group`
-- `bool`
+- `Group` - Attackable monsters.
+- `bool` - Whether c can attack directly.
 
 ## Source
 

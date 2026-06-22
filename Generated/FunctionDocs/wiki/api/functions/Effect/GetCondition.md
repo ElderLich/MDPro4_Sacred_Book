@@ -3,12 +3,12 @@
 ## Signature
 
 ```lua
-Effect.GetCondition(Effect e) -> function
+Effect.GetCondition(Effect e) -> function|nil
 ```
 
 ## Description
 
-Returns the condition property
+Returns e's condition callback, or nil when no condition is set.
 
 ## Parameters
 
@@ -16,7 +16,7 @@ Returns the condition property
 
 ## Returns
 
-- `function`
+- `function|nil`
 
 ## Source
 

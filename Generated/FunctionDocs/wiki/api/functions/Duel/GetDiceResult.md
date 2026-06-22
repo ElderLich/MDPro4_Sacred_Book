@@ -8,15 +8,15 @@ Duel.GetDiceResult() -> int,int,int,int,int
 
 ## Description
 
-Returns the result of the current dice
+Returns the five stored dice-result slots for the current dice event.
 
 ## Returns
 
-- `int`
-- `int`
-- `int`
-- `int`
-- `int`
+- `int` - First dice result.
+- `int` - Second dice result.
+- `int` - Third dice result.
+- `int` - Fourth dice result.
+- `int` - Fifth dice result.
 
 ## Source
 

@@ -3,12 +3,12 @@
 ## Signature
 
 ```lua
-Duel.GetOverlayGroup(int player, int s, int o) -> Group
+Duel.GetOverlayGroup(int player, int s, int o) -> Group|nil
 ```
 
 ## Description
 
-Returns all stacked cards at a specified location
+Returns the Xyz Materials attached to cards in player-relative locations s and o.
 
 ## Parameters
 
@@ -18,7 +18,7 @@ Returns all stacked cards at a specified location
 
 ## Returns
 
-- `Group`
+- `Group|nil` - Overlay group, or nil if player is invalid.
 
 ## Source
 

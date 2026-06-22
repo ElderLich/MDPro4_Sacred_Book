@@ -3,17 +3,17 @@
 ## Signature
 
 ```lua
-Card.GetAttributeInGrave(Card c, [int reasonPlayer]) -> int
+Card.GetAttributeInGrave(Card c, [int player]) -> int
 ```
 
 ## Description
 
-Return the Attribute card c is treated as having in the Graveyard
+Returns the Attribute c is treated as having in the GY for player, defaulting to the current reason player.
 
 ## Parameters
 
 - `c` `Card`
-- `reasonPlayer` `int` optional
+- `player` `int` optional - default: current reason player
 
 ## Returns
 

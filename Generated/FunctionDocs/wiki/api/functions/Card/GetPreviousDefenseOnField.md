@@ -8,7 +8,7 @@ Card.GetPreviousDefenseOnField(Card c) -> int
 
 ## Description
 
-Returns the defensive power before the c position changes
+Returns the DEF value c had while it was previously on the field.
 
 ## Parameters
 

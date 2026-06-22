@@ -8,7 +8,7 @@ Auxiliary.TriamidSpSummonType(Card c) -> bool
 
 ## Description
 
-The `nolimit` parameter for Special Summon effects of Triamid cards
+Returns whether c is a Special Summon procedure monster, used by Triamid Special Summon helpers.
 
 ## Parameters
 

@@ -8,7 +8,8 @@ Duel.IsPlayerCanRelease(int player, [Card c], [int reason]) -> bool
 
 ## Description
 
-Check whether the player can liberate the player c
+Checks whether player can release cards at all, or whether player can release c for reason.
+When c is supplied and reason is omitted, the core uses REASON_COST.
 
 ## Parameters
 

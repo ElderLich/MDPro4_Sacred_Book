@@ -3,17 +3,17 @@
 ## Signature
 
 ```lua
-Card.CheckFusionSubstitute(Card c, Card fc) -> bool
+Card.CheckFusionSubstitute(Card c, Card fcard) -> bool
 ```
 
 ## Description
 
-Check whether the c can replace the material description card name of the fusion monster fc
+Checks whether c can substitute for a specifically named Fusion Material listed by Fusion Monster fcard.
 
 ## Parameters
 
 - `c` `Card`
-- `fc` `Card`
+- `fcard` `Card`
 
 ## Returns
 

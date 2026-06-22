@@ -3,18 +3,18 @@
 ## Signature
 
 ```lua
-Auxiliary.EnableReviveLimitPendulumSummonable(Card c, int loc) -> void
+Auxiliary.EnableReviveLimitPendulumSummonable(Card c, [int loc]) -> void
 ```
 
 ## Description
 
-If monster c is Pendulum Summoned from location, it can bypass revival restrictions
-NOTE: The original description includes a question mark (?), indicating potential uncertainty; translated as written (e.g., Odd-Eyes Revolution Dragon (16306932))
+Enables revive-limit handling for c while also allowing it to be Pendulum Summoned from loc.
+The helper stores loc on c's metatable and completes c's procedure when it is successfully Pendulum Summoned.
 
 ## Parameters
 
 - `c` `Card`
-- `loc` `int`
+- `loc` `int` optional - default: 0xff
 
 ## Source
 

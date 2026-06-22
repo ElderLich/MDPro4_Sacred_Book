@@ -8,7 +8,8 @@ Duel.ChangeBattleDamage(int player, int value, [bool check]) -> void
 
 ## Description
 
-The player player in this battle by the harm into value, check for false is the original combat damage to 0 also change the damage
+Changes player battle damage for the current battle to value.
+When check is true or omitted, existing 0 battle damage is left unchanged.
 
 ## Parameters
 

@@ -8,7 +8,8 @@ Card.ReverseInDeck(Card c) -> void
 
 ## Description
 
-The setting c is indicated in the front of the deck
+Marks c face-up while it is in the Deck.
+If c is the current top card of the Main Deck, the core also sends the top-of-Deck update to the client.
 
 ## Parameters
 

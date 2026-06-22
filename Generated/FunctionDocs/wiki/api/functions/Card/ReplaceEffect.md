@@ -3,20 +3,20 @@
 ## Signature
 
 ```lua
-Card.ReplaceEffect(Card c, int code, int reset_flag, [int reset_count]) -> int
+Card.ReplaceEffect(Card c, int code, int reset, [int count]) -> int
 ```
 
 ## Description
 
-Replace the effect of c with the effect of the card whose card number is code, and add additional reset conditions
-The return value is the code id representing the replacement effect
+Replaces c's effects with the effects of card code under the given reset flags and returns the replacement id.
+count defaults to 1; phase resets automatically include both players' turns when no turn side is specified.
 
 ## Parameters
 
 - `c` `Card`
 - `code` `int`
-- `reset_flag` `int`
-- `reset_count` `int` optional - default: 1
+- `reset` `int`
+- `count` `int` optional - default: 1
 
 ## Returns
 

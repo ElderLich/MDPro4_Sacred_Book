@@ -3,17 +3,17 @@
 ## Signature
 
 ```lua
-Card.IsCanBeLinkMaterial(Card c, [Card|nil sc]) -> bool
+Card.IsCanBeLinkMaterial(Card c, [Card scard]) -> bool
 ```
 
 ## Description
 
-Check if c can be used as Link Material \[for Link Monster sc\]; if sc is not specified, must pass nil
+Checks whether c can be used as Link Material, optionally for Link Monster scard.
 
 ## Parameters
 
 - `c` `Card`
-- `sc` `Card|nil` optional
+- `scard` `Card` optional
 
 ## Returns
 

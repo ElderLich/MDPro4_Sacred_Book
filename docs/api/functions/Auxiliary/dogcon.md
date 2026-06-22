@@ -3,16 +3,12 @@
 ## Signature
 
 ```lua
-Auxiliary.dogcon(Effect e, int tp, Group eg, int ep, any ev, Effect re, any r, int rp) -> void
+Auxiliary.dogcon(Effect e, int tp, Group eg, int ep, int ev, Effect re, int r, int rp) -> bool
 ```
 
 ## Description
 
-Check if e:GetHandler() was destroyed by the opponent and sent to the Graveyard from your field, used for SetCondition
-function Auxiliary.dogcon(e, tp, eg, ep, ev, re, r, rp)
-  local c=e:GetHandler()
-  return c:GetPreviousControler()==tp and c:IsReason(REASON_DESTROY) and rp==1-tp
-end
+EVENT_TO_GRAVE condition helper that checks whether the handler was previously controlled by tp and destroyed by the opponent.
 
 ## Parameters
 
@@ -20,10 +16,14 @@ end
 - `tp` `int`
 - `eg` `Group`
 - `ep` `int`
-- `ev` `any`
+- `ev` `int`
 - `re` `Effect`
-- `r` `any`
+- `r` `int`
 - `rp` `int`
+
+## Returns
+
+- `bool`
 
 ## Source
 

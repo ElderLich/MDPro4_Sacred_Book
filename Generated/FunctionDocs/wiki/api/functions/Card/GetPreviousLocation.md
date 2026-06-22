@@ -8,7 +8,7 @@ Card.GetPreviousLocation(Card c) -> int
 
 ## Description
 
-Returns the position before the c position changes
+Returns c's previous location bitmask from before its last location change.
 
 ## Parameters
 

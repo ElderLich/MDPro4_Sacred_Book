@@ -3,18 +3,20 @@
 ## Signature
 
 ```lua
-Duel.SetDiceResult(int res, ... any) -> void
+Duel.SetDiceResult([int res1], [int res2], [int res3], [int res4], [int res5]) -> void
 ```
 
 ## Description
 
-Forcibly modify the result of casting dice to res
-This function is used in the persistent EVENT_TOSS_DICE event
+Sets the five stored dice-result slots; missing or out-of-range values are stored as 1.
 
 ## Parameters
 
-- `res` `int`
-- `...` `any`
+- `res1` `int` optional
+- `res2` `int` optional
+- `res3` `int` optional
+- `res4` `int` optional
+- `res5` `int` optional
 
 ## Source
 

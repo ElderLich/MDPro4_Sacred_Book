@@ -8,14 +8,14 @@ Effect.IsActivatable(Effect e, int player, [bool neglect_loc], [bool neglect_tar
 
 ## Description
 
-Check whether the effect can be launched by the player
+Checks whether e can currently be activated by player, with optional booleans to ignore location and target checks.
 
 ## Parameters
 
 - `e` `Effect`
 - `player` `int`
-- `neglect_loc` `bool` optional - default: false
-- `neglect_target` `bool` optional - default: false
+- `neglect_loc` `bool` optional
+- `neglect_target` `bool` optional
 
 ## Returns
 

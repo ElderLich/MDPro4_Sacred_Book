@@ -8,7 +8,7 @@ Duel.SetFusionMaterial(Group g) -> void
 
 ## Description
 
-Set g to be the fusion material you want to use
+Replaces the core's current Fusion Material set with the cards in g.
 
 ## Parameters
 

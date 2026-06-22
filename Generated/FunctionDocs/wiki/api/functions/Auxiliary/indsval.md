@@ -3,21 +3,22 @@
 ## Signature
 
 ```lua
-Auxiliary.indsval(Effect e, Effect re, int rp) -> void
+Auxiliary.indsval(Effect e, Effect re, int rp) -> bool
 ```
 
 ## Description
 
-Simplified method for the filter function preventing destruction by your own card effects, used in effect registration for SetValue
-function aux.indsval(e, re, rp)
-  return rp==e:GetHandlerPlayer()
-end
+Value helper for self-protection from effect destruction; it returns true when the reason player is the handler's player.
 
 ## Parameters
 
 - `e` `Effect`
 - `re` `Effect`
 - `rp` `int`
+
+## Returns
+
+- `bool`
 
 ## Source
 

@@ -8,7 +8,7 @@ Card.GetLeaveFieldDest(Card c) -> int
 
 ## Description
 
-Returns the destination of an effect (such as the universe) that was changed as a result of departure from c
+Returns the location c would be redirected to by leave-field effects for REASON_EFFECT.
 
 ## Parameters
 

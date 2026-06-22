@@ -3,17 +3,17 @@
 ## Signature
 
 ```lua
-Duel.IsPlayerCanSSet(int player, [Card scard]) -> bool
+Duel.IsPlayerCanSSet(int player, [Card c]) -> bool
 ```
 
 ## Description
 
-Check if player can Set \[scard\]
+Checks whether player can Set Spell/Trap Cards at all, or whether player can Set c as a Spell/Trap Card.
 
 ## Parameters
 
 - `player` `int`
-- `scard` `Card` optional
+- `c` `Card` optional
 
 ## Returns
 

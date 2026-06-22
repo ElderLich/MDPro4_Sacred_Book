@@ -8,7 +8,7 @@ Card.GetSummonLocation(Card c) -> int
 
 ## Description
 
-Returns the call position of c
+Returns the location c was Summoned from, decoded from its summon information.
 
 ## Parameters
 

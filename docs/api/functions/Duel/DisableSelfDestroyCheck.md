@@ -3,16 +3,16 @@
 ## Signature
 
 ```lua
-Duel.DisableSelfDestroyCheck([bool enabled]) -> void
+Duel.DisableSelfDestroyCheck([bool disable]) -> void
 ```
 
 ## Description
 
-Disable card self-destruction checks; no parameter or enabled=true disables the check, enabled=false enables the check
+Sets whether the core's self-destruction check is disabled; omitting disable disables the check.
 
 ## Parameters
 
-- `enabled` `bool` optional - default: true
+- `disable` `bool` optional - default: true
 
 ## Source
 

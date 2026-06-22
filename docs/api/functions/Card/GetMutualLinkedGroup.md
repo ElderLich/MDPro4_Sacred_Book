@@ -8,7 +8,7 @@ Card.GetMutualLinkedGroup(Card c) -> Group
 
 ## Description
 
-Return the group of cards mutually linked with card c
+Returns the Group of cards mutually linked with c.
 
 ## Parameters
 

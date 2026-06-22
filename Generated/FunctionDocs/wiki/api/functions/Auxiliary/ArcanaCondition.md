@@ -8,7 +8,7 @@ Auxiliary.ArcanaCondition(Effect e) -> bool
 
 ## Description
 
-condition of Arcana Force monster effect from coin toss
+Arcana Force condition helper that checks whether the handler has a stored Arcana coin-result flag.
 
 ## Parameters
 

@@ -8,8 +8,7 @@ Card.GetAttackedCount(Card c) -> int
 
 ## Description
 
-Returns the number of times this round has been attacked
-Note: If this value is different from the return value of the previous function, then this card has been a direct attack this round
+Returns c's attack count for the current turn.
 
 ## Parameters
 

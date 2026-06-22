@@ -8,7 +8,7 @@ Card.GetPreviousLevelOnField(Card c) -> int
 
 ## Description
 
-Returns the rank before the c position change
+Returns the Level value c had while it was previously on the field.
 
 ## Parameters
 

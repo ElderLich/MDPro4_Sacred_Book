@@ -8,7 +8,7 @@ Card.IsXyzLevel(Card c, Card xyzc, int lv) -> bool
 
 ## Description
 
-Check c for excess monster xyzc with the level of whether the excess is lv
+Checks whether c can provide Xyz Level lv for Xyz Monster xyzc.
 
 ## Parameters
 

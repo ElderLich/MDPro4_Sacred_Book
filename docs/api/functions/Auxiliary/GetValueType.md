@@ -3,16 +3,20 @@
 ## Signature
 
 ```lua
-Auxiliary.GetValueType(any v) -> void
+Auxiliary.GetValueType(any v) -> string
 ```
 
 ## Description
 
-Return the Lua type of value
+Returns Lua's type string for ordinary values, or Card, Group, or Effect for those userdata objects.
 
 ## Parameters
 
 - `v` `any`
+
+## Returns
+
+- `string`
 
 ## Source
 

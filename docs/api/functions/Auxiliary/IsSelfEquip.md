@@ -8,7 +8,7 @@ Auxiliary.IsSelfEquip(Card c, int id) -> bool
 
 ## Description
 
-Check if c has a equip card equipped by the effect of itself.
+Checks whether c has an equipped card carrying flag effect id, which marks equipment created by that card's own effect.
 
 ## Parameters
 
