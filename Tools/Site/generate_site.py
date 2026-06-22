@@ -635,6 +635,8 @@ def write_vitepress_config(featured: list[dict[str, object]]) -> None:
         "            { text: 'Activation Legality', link: '/learn/activation-legality' },",
         "            { text: 'Filters and Groups', link: '/learn/filters-and-groups' },",
         "            { text: 'Moving Cards', link: '/learn/moving-cards' },",
+        "            { text: 'Continuous Effects', link: '/learn/continuous-effects' },",
+        "            { text: 'Affecting Cards', link: '/learn/affecting-cards' },",
         "            { text: 'Archetypes and Set Codes', link: '/learn/archetypes-and-setcodes' },",
         "          ],",
         "        },",

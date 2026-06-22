@@ -9,20 +9,27 @@ e1:SetTarget(s.target)
 e1:SetOperation(s.operation)
 ```
 
-The common callback arguments are:
+Not every effect uses all four. A simple continuous stat effect might only use
+`SetValue`; a simple activated effect might only use `SetTarget` and
+`SetOperation`.
+
+## Common Callback Arguments
 
 | Name | Meaning |
 | --- | --- |
 | `e` | The effect being checked or resolving. |
-| `tp` | The player activating or controlling the effect context. |
+| `tp` | The player activating the effect or the player used as this effect's context. |
 | `eg` | Event group, when an event gives cards to the callback. |
 | `ep` | Event player. |
 | `ev` | Event value. |
 | `re` | Related effect that caused the event. |
 | `r` | Reason flags. |
 | `rp` | Reason player. |
-| `chk` | Target/cost legality check flag. |
+| `chk` | Cost/target legality check flag. |
 | `chkc` | Re-target check for target effects. |
+
+The first eight arguments appear together so often that many scripts keep the
+same names even when only one or two are used.
 
 ## Condition
 
@@ -30,46 +37,84 @@ Conditions answer whether the effect may be considered.
 
 ```lua
 function s.condition(e,tp,eg,ep,ev,re,r,rp)
-  return Duel.IsMainPhase()
+    return Duel.IsMainPhase()
 end
 ```
+
+Use a condition for timing or event requirements: "during the Main Phase",
+"when this card is Summoned", "if this card was destroyed by battle", and so on.
 
 ## Cost
 
-Costs must be payable while `chk==0`, then paid when `chk` is not `0`.
+Costs have two phases. When `chk==0`, only answer whether the cost can be paid.
+When `chk` is not 0, actually pay it.
 
 ```lua
 function s.cost(e,tp,eg,ep,ev,re,r,rp,chk)
-  if chk==0 then return Duel.CheckReleaseGroup(tp,s.cfilter,1,nil) end
-  local g=Duel.SelectReleaseGroup(tp,s.cfilter,1,1,nil)
-  Duel.Release(g,REASON_COST)
+    if chk==0 then return Duel.CheckLPCost(tp,1000) end
+    Duel.PayLPCost(tp,1000)
 end
 ```
+
+Do not release, discard, banish, or pay LP in the `chk==0` branch. The engine
+may call that branch just to test whether the effect can be activated.
 
 ## Target
 
-Targets check activation legality and declare operation info.
+Target callbacks usually do two jobs:
+
+1. During `chk==0`, prove the effect can be activated.
+2. During the real activation, select targets and announce operation info.
 
 ```lua
 function s.target(e,tp,eg,ep,ev,re,r,rp,chk,chkc)
-  if chk==0 then return Duel.IsPlayerCanDraw(tp,1) end
-  Duel.SetOperationInfo(0,CATEGORY_DRAW,nil,0,tp,1)
+    if chkc then return chkc:IsOnField() and s.filter(chkc) end
+    if chk==0 then
+        return Duel.IsExistingTarget(s.filter,tp,LOCATION_MZONE,0,1,nil)
+    end
+    Duel.Hint(HINT_SELECTMSG,tp,HINTMSG_TARGET)
+    Duel.SelectTarget(tp,s.filter,tp,LOCATION_MZONE,0,1,1,nil)
+    Duel.SetOperationInfo(0,CATEGORY_DESTROY,nil,1,tp,LOCATION_MZONE)
 end
 ```
+
+Use `Duel.IsExistingTarget` and `Duel.SelectTarget` when the effect targets.
+Use matching-card functions when the card text does not target.
 
 ## Operation
 
-Operations resolve the effect. Re-check that affected cards are still related to
-the effect before moving or modifying them.
+Operations resolve the effect. The game state may have changed after activation,
+so re-check cards before moving or modifying them.
 
 ```lua
 function s.operation(e,tp,eg,ep,ev,re,r,rp)
-  Duel.Draw(tp,1,REASON_EFFECT)
+    local tc=Duel.GetFirstTarget()
+    if tc and tc:IsRelateToEffect(e) then
+        Duel.Destroy(tc,REASON_EFFECT)
+    end
 end
 ```
 
+If several target cards were selected, use `Duel.GetTargetsRelateToChain()` or
+`Duel.GetChainInfo(0,CHAININFO_TARGET_CARDS):Filter(Card.IsRelateToEffect,nil,e)`
+depending on what the script needs to preserve.
+
+## `Duel.SetOperationInfo`
+
+`Duel.SetOperationInfo` tells the engine and UI what the effect intends to do.
+It does not perform the action. The actual action belongs in the operation.
+
+```lua
+Duel.SetOperationInfo(0,CATEGORY_TOHAND,nil,1,tp,LOCATION_DECK)
+```
+
+Use categories that match the real operation: draw, destroy, send to GY, banish,
+Special Summon, equip, search, and so on.
+
 Relevant API pages:
 
+- [`Effect.SetCondition`](/api/functions/Effect/SetCondition)
+- [`Effect.SetCost`](/api/functions/Effect/SetCost)
+- [`Effect.SetTarget`](/api/functions/Effect/SetTarget)
+- [`Effect.SetOperation`](/api/functions/Effect/SetOperation)
 - [`Duel.SetOperationInfo`](/api/functions/Duel/SetOperationInfo)
-- [`Duel.Draw`](/api/functions/Duel/Draw)
-- [`Duel.Release`](/api/functions/Duel/Release)

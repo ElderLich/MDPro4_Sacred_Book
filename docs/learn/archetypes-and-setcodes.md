@@ -10,9 +10,20 @@ Use exact card IDs when a script names a specific card.
 
 ```lua
 function s.filter(c)
-  return c:IsCode(12345678)
+    return c:IsCode(12345678)
 end
 ```
+
+`Card.IsCode` can accept several IDs.
+
+```lua
+function s.matfilter(c)
+    return c:IsCode(89631139,23995346)
+end
+```
+
+Use this when the card text references one exact card, or a short list of exact
+cards.
 
 ## Set Code
 
@@ -20,13 +31,26 @@ Use `IsSetCard` when a script cares about an archetype or family.
 
 ```lua
 function s.filter(c)
-  return c:IsFaceup() and c:IsSetCard(0x123)
+    return c:IsFaceup() and c:IsSetCard(0x123)
 end
 ```
 
 Set codes can represent a broad family or a smaller branch of that family. When
 a script needs the smaller branch, use the more specific set code used by the
 local scripts and card data.
+
+## Subarchetypes
+
+Some families contain nested groups. A broad set code might match the whole
+family, while a more specific set code matches only a branch. Do not guess from
+the displayed name alone.
+
+Safer process:
+
+1. Search local scripts for the card family or known card IDs.
+2. Check which `IsSetCard(0x...)` value existing cards use.
+3. Check card data when a script must match newly added cards.
+4. Use the narrowest set code that matches the card text.
 
 ## Listed Cards
 
@@ -35,9 +59,26 @@ functions for that instead of searching text manually.
 
 ```lua
 function s.filter(c)
-  return c:IsType(TYPE_MONSTER) and aux.IsCodeListed(c,12345678)
+    return c:IsType(TYPE_MONSTER) and aux.IsCodeListed(c,12345678)
 end
 ```
+
+`aux.IsCodeOrListed` is useful when a card can be the exact named card or a card
+that lists it.
+
+## Name Changes and Alternate Codes
+
+Some effects change a card's code. `Card.IsCode` checks the current code and
+alternate code behavior exposed by the engine, so it is safer than comparing a
+manual field.
+
+```lua
+if c:IsCode(id) then
+    -- this card is currently treated as that ID
+end
+```
+
+For families, prefer `IsSetCard` unless the card text demands exact IDs.
 
 Useful API pages:
 

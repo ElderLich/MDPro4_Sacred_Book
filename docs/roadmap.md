@@ -17,6 +17,7 @@ This is the working todo for turning Sacred Book into a complete MDPro3 scriptin
 
 ## Documentation Coverage
 
+- [x] Add first original tutorial pass for the downloaded page coverage map.
 - [ ] Give every function a clear summary, parameter notes, return notes, and at least one script-backed example where possible.
 - [ ] Review all `imported_from_dataeditorx` function English and replace awkward machine-style wording with natural MDPro3 terminology.
 - [ ] Check for any raw Chinese text that leaked into English fields after each generation.

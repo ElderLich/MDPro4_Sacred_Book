@@ -26,6 +26,10 @@ This is the working analysis of the downloaded YGOPRO Scripting Wiki pages in `C
 | `Methods for affecting cards` | Add a guide that groups common Card/Duel operations by outcome: destroy, send, banish, return, change ATK/DEF, negate, equip, and change control. |
 | `Subarchetype` | Expand `/learn/archetypes-and-setcodes` with set-code matching, sub-set behavior, and script examples using `Card.IsSetCard`. |
 
+## Current Learning Pass
+
+The first original learning-pass pages now cover script structure, effect object creation, effect types, callbacks, activation legality, filters/groups, movement functions, continuous effects, methods for affecting cards, and archetypes/set codes. These pages are intentionally tutorial-level; deeper function-specific examples continue to live on generated API pages.
+
 ## Function Page Standard
 
 Important function pages should eventually include:
