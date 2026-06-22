@@ -26,6 +26,13 @@ end
 
 Use `nocheck=true` only when the effect intentionally ignores the monster's usual Summoning condition. Use `nolimit=true` only when the effect intentionally ignores the proper Summon/revive limit.
 
+## Related Functions
+
+- [Card.IsCanBeSpecialSummoned](/api/functions/Card/IsCanBeSpecialSummoned)
+- [Duel.SpecialSummonStep](/api/functions/Duel/SpecialSummonStep)
+- [Duel.SpecialSummonComplete](/api/functions/Duel/SpecialSummonComplete)
+- [Duel.GetLocationCount](/api/functions/Duel/GetLocationCount)
+
 ## Parameters
 
 - `targets` `Card|Group`

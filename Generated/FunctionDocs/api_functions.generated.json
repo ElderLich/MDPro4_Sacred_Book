@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-06-21T22:38:11+00:00",
+    "generated_at": "2026-06-22T04:49:31+00:00",
     "workspace": "D:\\Programs\\GitHub\\MDPro3_Sacred_Book",
     "dataeditorx_data": "D:\\Programs\\GitHub\\DataEditorX\\DataEditorX\\data",
     "mdpro3_locales": "D:\\Programs\\GitHub\\MDPro3_Data\\Data\\locales",
@@ -15437,12 +15437,6 @@
           "type": "bool",
           "optional": true,
           "description": "default: false"
-        },
-        {
-          "name": "setavailable",
-          "type": "bool",
-          "optional": true,
-          "description": "default: false"
         }
       ],
       "returns": [
@@ -15452,22 +15446,14 @@
         }
       ],
       "description_zh": [
-        "改变targets的表示形式返回实际操作的数量，若只有2个参数，则不管什么表示形式，都变成 第二个参数 代表的形式",
-        "表侧攻击表示 = au",
-        "里侧攻击表示 = ad",
-        "表侧守备表示 = du",
-        "里侧守备表示 = dd",
-        "如果noflip=true则不触发反转效果（但会触发反转时的诱发效果）",
-        "如果setavailable=true则对象之后变成里侧也发动反转效果"
+        "变更targets的表示形式，并返回实际变更表示形式的卡的数量。",
+        "au、ad、du、dd分别对应当前表侧攻击、里侧攻击、表侧守备、里侧守备的目标表示形式；省略时使用au。MDPro3核心不读取旧文档中的第7个setavailable参数。"
       ],
       "description_en": [
-        "Changing the representation of targets returns the number of actual operations",
-        "The attack on the watch side becomes au, the attack on the inside indicates ad,",
-        "The side of the garage that becomes du, inside the garrison said to become dd",
-        "If noflip = true, the reverse effect will not be triggered (but the effect of inversion will be triggered)",
-        "If setavailable = true then the object will become the back side also launched reversal effect"
+        "Changes the battle position of targets and returns the number of cards whose position actually changed.",
+        "The position arguments map by current position: au for face-up Attack Position, ad for face-down Attack Position, du for face-up Defense Position, and dd for face-down Defense Position. Omitted values use au."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libduel.cpp",
@@ -15482,7 +15468,8 @@
       ],
       "aliases": [],
       "tags": [
-        "core-binding"
+        "core-binding",
+        "core-doc-override"
       ],
       "core_binding": true,
       "core_handler": "duel_change_form"
@@ -17022,11 +17009,10 @@
         "如果设置reason_player，则视为被玩家reason_player移动"
       ],
       "description_en": [
-        "Destroy targets dest by reason reason, the return value is actually destroyed by the number",
-        "If the reason contains REASON_RULE, the break event will not check whether the card is immune,",
-        "Does not trigger the generation of breaking effect and ignore the \"can not destroy\""
+        "Destroys targets for reason and returns the number of cards actually destroyed.",
+        "dest defaults to LOCATION_GRAVE. reason_player defaults to the current Chain's reason player. Use REASON_EFFECT for normal card effects and reserve REASON_RULE for rule/procedure cleanup."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libduel.cpp",
@@ -17428,11 +17414,10 @@
         "is_step=true则是装备过程的分解，需要配合Duel.EquipComplete使用"
       ],
       "description_en": [
-        "The player as a player c1 equipment card equipment to the c2, the return value that is successful",
-        "Up = false to retain the card before the representation",
-        "Is_step = true is the decomposition of the equipment process, the need to cooperate with Duel.EquipComplete use"
+        "Equips c1 to c2 for player and returns true if the equip succeeds.",
+        "up defaults to true and makes the Equip Card face-up. When is_step is true, call Duel.EquipComplete after all step equips have been created."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libduel.cpp",
@@ -17467,9 +17452,9 @@
         "在调用Duel.Equip时，若is_step参数为true，则需调用此函数触发时点"
       ],
       "description_en": [
-        "In the call Duel.Equip, if is_step parameter is true, you need to call this function when the trigger point"
+        "Completes a batch of step equips created with Duel.Equip(..., true) by enabling the equipped cards and raising the equip events."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libduel.cpp",
@@ -18053,18 +18038,19 @@
       ],
       "returns": [
         {
-          "type": "bool",
+          "type": "int",
           "description": ""
         }
       ],
       "description_zh": [
-        "让玩家 player [直到 reset_count 次 reset_phase 时][在区域 zone]",
-        "得到 targets 的控制权，返回值表示是否成功"
+        "把targets的控制权转移给player，并返回实际变更控制权的卡的数量。",
+        "临时获得控制权时传入reset_phase和reset_count，例如PHASE_END, 1；只想指定可用区域时传入0, 0, zone。"
       ],
       "description_en": [
-        "Let players get control of the player, the return value indicates success"
+        "Moves control of targets to player and returns the number of cards whose control actually changed.",
+        "Use reset_phase and reset_count for temporary control, such as PHASE_END, 1. To pass only a zone mask, use 0, 0, zone."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libduel.cpp",
@@ -18079,7 +18065,8 @@
       ],
       "aliases": [],
       "tags": [
-        "core-binding"
+        "core-binding",
+        "core-doc-override"
       ],
       "core_binding": true,
       "core_handler": "duel_get_control"
@@ -22739,10 +22726,10 @@
         "dest只能是LOCATION_MZONE或者LOCATION_SZONE，pos表示可选表示形式， enable 表示是否立刻适用c的效果"
       ],
       "description_en": [
-        "Let the player move_player to move the c target_player field, the return value that is successful",
-        "Dest can only be LOCATION_MZONE or LOCATION_SZONE, pos represents an optional representation, and enable indicates whether or not the effect of c is applied immediately"
+        "Moves c onto target_player's field and returns true if the move succeeds.",
+        "dest is normally LOCATION_MZONE or LOCATION_SZONE. LOCATION_FZONE and LOCATION_PZONE are accepted and converted to the matching Spell & Trap Zone handling by the core."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libduel.cpp",
@@ -23100,9 +23087,10 @@
         "把ocard作为c的叠放卡叠放"
       ],
       "description_en": [
-        "The ocard as a stack of cards stacked c"
+        "Overlays ocard under c as Xyz Material.",
+        "By default the field is adjusted after the overlay. Pass adjust=false only when a larger procedure will adjust afterward."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libduel.cpp",
@@ -23644,10 +23632,10 @@
         "如果设置reason_player，则视为被玩家reason_player移动"
       ],
       "description_en": [
-        "The reason for the liberation of targets to return the value of the actual liberation of the number of targets",
-        "If the reason contains REASON_COST, it will not check whether the card is not affected by the effect"
+        "Tributes/Releases targets for reason and returns the number of cards actually released.",
+        "Use REASON_COST when paying a cost and REASON_EFFECT or REASON_SPSUMMON when the release is part of an effect or Summon procedure."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libduel.cpp",
@@ -23753,10 +23741,10 @@
         "如果设置reason_player，则视为被玩家reason_player移动"
       ],
       "description_en": [
-        "In the case of reason, except for the pos form, the return value is the actual number being manipulated",
-        "If the reason contains REASON_TEMPORARY, then the exception is considered temporary, you can return to the field by Duel.ReturnToField"
+        "Banishes targets in position pos for reason and returns the number of cards actually banished.",
+        "If reason includes REASON_TEMPORARY, the banish is treated as temporary and the card can later be returned with Duel.ReturnToField."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libduel.cpp",
@@ -25525,10 +25513,10 @@
         "如果设置reason_player，则视为被玩家reason_player移动"
       ],
       "description_en": [
-        "The reason to target the player sent to the player's hand, the return value is the actual number of operations",
-        "If player is nil, the card's holder's hand is returned"
+        "Sends targets to a hand for reason and returns the number of cards actually moved.",
+        "Pass nil for player to use the normal return destination. Pass a specific player only when the effect says the cards go to that player's hand."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libduel.cpp",
@@ -26607,17 +26595,17 @@
       "params": [],
       "returns": [
         {
-          "type": "nil|int",
+          "type": "int",
           "description": ""
         }
       ],
       "description_zh": [
-        "此函数在确定复数个Duel.SpecialSummonStep调用完毕之后调用，用于触发事件"
+        "完成由Duel.SpecialSummonStep开始的特殊召唤处理，触发召唤相关事件，并返回完成的特殊召唤数量。"
       ],
       "description_en": [
-        "This function is called after determining that a number of calls to Duel.SpecialSummonStep are completed, for triggering an event"
+        "Completes a batch of successful Duel.SpecialSummonStep calls, raises the Summon events, and returns the number of completed Summons."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libduel.cpp",
@@ -26632,7 +26620,8 @@
       ],
       "aliases": [],
       "tags": [
-        "core-binding"
+        "core-binding",
+        "core-doc-override"
       ],
       "core_binding": true,
       "core_handler": "duel_special_summon_complete"
@@ -26760,12 +26749,10 @@
         "返回值表示是否特殊召唤成功"
       ],
       "description_en": [
-        "This function is Duel.SpecialSummon decomposition process, only a special summon a card c",
-        "This function is used for an effect while simultaneously calling multiple cards with different parameters",
-        "This function must be used with Duel.SpecialSummonComplete",
-        "The return value indicates whether or not the special call succeeded"
+        "Special Summons one card as part of a multi-step Summon procedure and returns true if that step succeeds.",
+        "Every successful step batch must finish with Duel.SpecialSummonComplete."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libduel.cpp",

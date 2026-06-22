@@ -8,8 +8,26 @@ Duel.Remove(Card|Group targets, int pos, int reason, [int reason_player]) -> int
 
 ## Description
 
-In the case of reason, except for the pos form, the return value is the actual number being manipulated
-If the reason contains REASON_TEMPORARY, then the exception is considered temporary, you can return to the field by Duel.ReturnToField
+Banishes targets in position pos for reason and returns the number of cards actually banished.
+If reason includes REASON_TEMPORARY, the banish is treated as temporary and the card can later be returned with Duel.ReturnToField.
+
+## How To Use It
+
+Use this for banishing cards. The second argument is the banished position, usually `POS_FACEUP` or `POS_FACEDOWN`.
+
+```lua
+if c:IsRelateToEffect(e) then
+    Duel.Remove(c,POS_FACEUP,REASON_EFFECT)
+end
+```
+
+For temporary banish effects, scripts commonly include `REASON_TEMPORARY`; those cards can later be returned with `Duel.ReturnToField`.
+
+## Related Functions
+
+- [Card.IsAbleToRemove](/api/functions/Card/IsAbleToRemove)
+- [Duel.ReturnToField](/api/functions/Duel/ReturnToField)
+- [Duel.SetOperationInfo](/api/functions/Duel/SetOperationInfo)
 
 ## Parameters
 

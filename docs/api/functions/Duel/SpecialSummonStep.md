@@ -8,10 +8,19 @@ Duel.SpecialSummonStep(Card c, int sumtype, int sumplayer, int target_player, bo
 
 ## Description
 
-This function is Duel.SpecialSummon decomposition process, only a special summon a card c
-This function is used for an effect while simultaneously calling multiple cards with different parameters
-This function must be used with Duel.SpecialSummonComplete
-The return value indicates whether or not the special call succeeded
+Special Summons one card as part of a multi-step Summon procedure and returns true if that step succeeds.
+Every successful step batch must finish with Duel.SpecialSummonComplete.
+
+## How To Use It
+
+Use this only for procedures that need to Special Summon cards one at a time before raising the final Summon events.
+
+Every batch must end with `Duel.SpecialSummonComplete`. For ordinary effects that just Special Summon one Card or Group, use `Duel.SpecialSummon` instead.
+
+## Related Functions
+
+- [Duel.SpecialSummonComplete](/api/functions/Duel/SpecialSummonComplete)
+- [Card.IsCanBeSpecialSummoned](/api/functions/Card/IsCanBeSpecialSummoned)
 
 ## Parameters
 

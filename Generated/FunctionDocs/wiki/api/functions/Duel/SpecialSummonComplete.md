@@ -3,16 +3,33 @@
 ## Signature
 
 ```lua
-Duel.SpecialSummonComplete() -> nil|int
+Duel.SpecialSummonComplete() -> int
 ```
 
 ## Description
 
-This function is called after determining that a number of calls to Duel.SpecialSummonStep are completed, for triggering an event
+Completes a batch of successful Duel.SpecialSummonStep calls, raises the Summon events, and returns the number of completed Summons.
+
+## How To Use It
+
+Use this after a batch of successful `Duel.SpecialSummonStep` calls.
+
+```lua
+if Duel.SpecialSummonStep(tc,0,tp,tp,false,false,POS_FACEUP) then
+    Duel.SpecialSummonComplete()
+end
+```
+
+Without the complete call, the step Summons do not finish their event handling correctly.
+
+## Related Functions
+
+- [Duel.SpecialSummonStep](/api/functions/Duel/SpecialSummonStep)
+- [Duel.SpecialSummon](/api/functions/Duel/SpecialSummon)
 
 ## Returns
 
-- `nil|int`
+- `int`
 
 ## Source
 

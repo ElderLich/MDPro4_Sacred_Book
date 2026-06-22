@@ -607,6 +607,52 @@ FUNCTION_EN_OVERRIDES = {
     "Debug.SetPlayerInfo": ["Sets a player's LP, starting hand count, and cards drawn each Draw Phase."],
     "Duel.CheckChainTarget": ["Checks whether c is a valid card related to chainc."],
     "Duel.CheckLPCost": ["Checks whether player can pay the specified LP cost."],
+    "Duel.ChangePosition": [
+        "Changes the battle position of targets and returns the number of cards whose position actually changed.",
+        "The position arguments map by current position: au for face-up Attack Position, ad for face-down Attack Position, du for face-up Defense Position, and dd for face-down Defense Position. Omitted values use au.",
+    ],
+    "Duel.Destroy": [
+        "Destroys targets for reason and returns the number of cards actually destroyed.",
+        "dest defaults to LOCATION_GRAVE. reason_player defaults to the current Chain's reason player. Use REASON_EFFECT for normal card effects and reserve REASON_RULE for rule/procedure cleanup.",
+    ],
+    "Duel.Equip": [
+        "Equips c1 to c2 for player and returns true if the equip succeeds.",
+        "up defaults to true and makes the Equip Card face-up. When is_step is true, call Duel.EquipComplete after all step equips have been created.",
+    ],
+    "Duel.EquipComplete": [
+        "Completes a batch of step equips created with Duel.Equip(..., true) by enabling the equipped cards and raising the equip events.",
+    ],
+    "Duel.GetControl": [
+        "Moves control of targets to player and returns the number of cards whose control actually changed.",
+        "Use reset_phase and reset_count for temporary control, such as PHASE_END, 1. To pass only a zone mask, use 0, 0, zone.",
+    ],
+    "Duel.MoveToField": [
+        "Moves c onto target_player's field and returns true if the move succeeds.",
+        "dest is normally LOCATION_MZONE or LOCATION_SZONE. LOCATION_FZONE and LOCATION_PZONE are accepted and converted to the matching Spell & Trap Zone handling by the core.",
+    ],
+    "Duel.Overlay": [
+        "Overlays ocard under c as Xyz Material.",
+        "By default the field is adjusted after the overlay. Pass adjust=false only when a larger procedure will adjust afterward.",
+    ],
+    "Duel.Release": [
+        "Tributes/Releases targets for reason and returns the number of cards actually released.",
+        "Use REASON_COST when paying a cost and REASON_EFFECT or REASON_SPSUMMON when the release is part of an effect or Summon procedure.",
+    ],
+    "Duel.Remove": [
+        "Banishes targets in position pos for reason and returns the number of cards actually banished.",
+        "If reason includes REASON_TEMPORARY, the banish is treated as temporary and the card can later be returned with Duel.ReturnToField.",
+    ],
+    "Duel.SendtoHand": [
+        "Sends targets to a hand for reason and returns the number of cards actually moved.",
+        "Pass nil for player to use the normal return destination. Pass a specific player only when the effect says the cards go to that player's hand.",
+    ],
+    "Duel.SpecialSummonComplete": [
+        "Completes a batch of successful Duel.SpecialSummonStep calls, raises the Summon events, and returns the number of completed Summons.",
+    ],
+    "Duel.SpecialSummonStep": [
+        "Special Summons one card as part of a multi-step Summon procedure and returns true if that step succeeds.",
+        "Every successful step batch must finish with Duel.SpecialSummonComplete.",
+    ],
     "Duel.DisableShuffleCheck": [
         "Disables the automatic shuffle check for the next Deck or hand operation.",
         "Use this before operations that intentionally preserve Deck order or hand order.",
@@ -1336,6 +1382,36 @@ CORE_DOC_OVERRIDES = {
         "returns": [ReturnDoc("int")],
         "description": ["Special Summons targets and returns the number of cards successfully Summoned."],
         "description_zh": ["把targets特殊召唤到target_player场上，并返回成功特殊召唤的数量。"],
+    },
+    "Duel.ChangePosition": {
+        "params": [
+            ParamDoc("targets", "Card|Group"), ParamDoc("au", "int"), ParamDoc("ad", "int", True, "default: au"),
+            ParamDoc("du", "int", True, "default: au"), ParamDoc("dd", "int", True, "default: au"), ParamDoc("noflip", "bool", True, "default: false"),
+        ],
+        "returns": [ReturnDoc("int")],
+        "description": ["Changes battle positions and returns the number of cards whose position actually changed."],
+        "description_zh": [
+            "变更targets的表示形式，并返回实际变更表示形式的卡的数量。",
+            "au、ad、du、dd分别对应当前表侧攻击、里侧攻击、表侧守备、里侧守备的目标表示形式；省略时使用au。MDPro3核心不读取旧文档中的第7个setavailable参数。",
+        ],
+    },
+    "Duel.GetControl": {
+        "params": [
+            ParamDoc("targets", "Card|Group"), ParamDoc("player", "int"), ParamDoc("reset_phase", "int", True, "default: 0"),
+            ParamDoc("reset_count", "int", True, "default: 0"), ParamDoc("zone", "int", True, "default: 0xff"),
+        ],
+        "returns": [ReturnDoc("int")],
+        "description": ["Moves control of targets to player and returns the number of cards whose control actually changed."],
+        "description_zh": [
+            "把targets的控制权转移给player，并返回实际变更控制权的卡的数量。",
+            "临时获得控制权时传入reset_phase和reset_count，例如PHASE_END, 1；只想指定可用区域时传入0, 0, zone。",
+        ],
+    },
+    "Duel.SpecialSummonComplete": {
+        "params": [],
+        "returns": [ReturnDoc("int")],
+        "description": ["Completes Special Summons started with Duel.SpecialSummonStep."],
+        "description_zh": ["完成由Duel.SpecialSummonStep开始的特殊召唤处理，触发召唤相关事件，并返回完成的特殊召唤数量。"],
     },
     "Effect.SetCost": {
         "params": [ParamDoc("e", "Effect"), ParamDoc("cost_func", "function")],
@@ -2991,6 +3067,25 @@ def lua_signature(doc: FunctionDoc) -> str:
     params = ", ".join(format_param(param) for param in doc.params)
     return f"{format_returns(doc.returns)} {doc.name}({params})"
 
+FUNCTION_RELATED_GUIDES = {
+    "Duel.ChangePosition": ["Card.IsCanChangePosition", "Card.IsPosition"],
+    "Duel.Destroy": ["Card.IsDestructable", "Duel.SetOperationInfo", "Duel.SendtoGrave"],
+    "Duel.Equip": ["Card.CheckEquipTarget", "Duel.EquipComplete", "Auxiliary.AddEquipSpellEffect"],
+    "Duel.EquipComplete": ["Duel.Equip"],
+    "Duel.GetControl": ["Card.IsControler", "Duel.SwapControl", "Duel.CheckLocation"],
+    "Duel.MoveToField": ["Duel.GetLocationCount", "Duel.GetSZoneCount", "Duel.ReturnToField"],
+    "Duel.Overlay": ["Duel.GetOverlayGroup", "Duel.RemoveOverlayCard", "Card.GetOverlayGroup"],
+    "Duel.Release": ["Card.IsReleasable", "Duel.GetReleaseGroup", "Duel.SelectReleaseGroupEx"],
+    "Duel.Remove": ["Card.IsAbleToRemove", "Duel.ReturnToField", "Duel.SetOperationInfo"],
+    "Duel.SendtoDeck": ["Card.IsAbleToDeck", "Duel.SetOperationInfo", "Auxiliary.PlaceCardsOnDeckTop"],
+    "Duel.SendtoGrave": ["Card.IsAbleToGrave", "Duel.SetOperationInfo", "Duel.Destroy"],
+    "Duel.SendtoHand": ["Card.IsAbleToHand", "Duel.SetOperationInfo"],
+    "Duel.SpecialSummon": ["Card.IsCanBeSpecialSummoned", "Duel.SpecialSummonStep", "Duel.SpecialSummonComplete", "Duel.GetLocationCount"],
+    "Duel.SpecialSummonComplete": ["Duel.SpecialSummonStep", "Duel.SpecialSummon"],
+    "Duel.SpecialSummonStep": ["Duel.SpecialSummonComplete", "Card.IsCanBeSpecialSummoned"],
+}
+
+
 FUNCTION_DETAIL_GUIDES = {
     "Duel.IsExistingMatchingCard": [
         "Use this for activation checks that only need to know whether matching cards exist.",
@@ -3099,6 +3194,180 @@ FUNCTION_DETAIL_GUIDES = {
         "```",
         "",
         "Use `nocheck=true` only when the effect intentionally ignores the monster's usual Summoning condition. Use `nolimit=true` only when the effect intentionally ignores the proper Summon/revive limit.",
+    ],
+    "Duel.ChangePosition": [
+        "Use this when an effect changes battle position during resolution.",
+        "",
+        "The short form changes every target to the same position:",
+        "",
+        "```lua",
+        "if tc:IsRelateToEffect(e) then",
+        "    Duel.ChangePosition(tc,POS_FACEUP_DEFENSE)",
+        "end",
+        "```",
+        "",
+        "For mixed current positions, pass the destination for face-up Attack, face-down Attack, face-up Defense, and face-down Defense in that order. MDPro3's core does not read the old seventh `setavailable` argument.",
+    ],
+    "Duel.Destroy": [
+        "Use this during resolution after checking that the target is still related to the effect.",
+        "",
+        "The return value is important. It is 0 when no card was actually destroyed, for example because the card left the expected place or could not be destroyed.",
+        "",
+        "```lua",
+        "local tc=Duel.GetFirstTarget()",
+        "if tc and tc:IsRelateToEffect(e) and Duel.Destroy(tc,REASON_EFFECT)>0 then",
+        "    -- follow-up that requires successful destruction",
+        "end",
+        "```",
+        "",
+        "Use `Duel.SetOperationInfo(0,CATEGORY_DESTROY,...)` in the Target callback when the destruction is known before resolution.",
+    ],
+    "Duel.Equip": [
+        "Use this after both the Equip Card and the monster it will equip to are still valid.",
+        "",
+        "A self-equip effect usually creates an Equip Limit after the equip succeeds so the card stays attached only to the intended monster:",
+        "",
+        "```lua",
+        "local tc=Duel.GetFirstTarget()",
+        "local c=e:GetHandler()",
+        "if tc and tc:IsRelateToEffect(e) and c:IsRelateToEffect(e) and Duel.Equip(tp,c,tc) then",
+        "    local e1=Effect.CreateEffect(c)",
+        "    e1:SetType(EFFECT_TYPE_SINGLE)",
+        "    e1:SetCode(EFFECT_EQUIP_LIMIT)",
+        "    e1:SetProperty(EFFECT_FLAG_CANNOT_DISABLE)",
+        "    e1:SetValue(function(e,ec) return ec==tc end)",
+        "    e1:SetReset(RESET_EVENT+RESETS_STANDARD)",
+        "    c:RegisterEffect(e1)",
+        "end",
+        "```",
+        "",
+        "When several cards are equipped as one procedure with `is_step=true`, call `Duel.EquipComplete()` after the final successful step.",
+    ],
+    "Duel.EquipComplete": [
+        "Use this only after one or more `Duel.Equip(..., true)` step equips.",
+        "",
+        "It enables the equipped cards and raises the equip events as one completed procedure:",
+        "",
+        "```lua",
+        "if Duel.Equip(tp,ec,tc,true,true) then",
+        "    -- more step equips can be added here",
+        "    Duel.EquipComplete()",
+        "end",
+        "```",
+    ],
+    "Duel.GetControl": [
+        "Use this when an effect takes control of cards.",
+        "",
+        "For temporary control, pass a phase and count. For permanent control, omit those arguments. If you only need to restrict the destination zone, pass `0,0,zone` before the zone mask.",
+        "",
+        "```lua",
+        "local tc=Duel.GetFirstTarget()",
+        "if tc and tc:IsRelateToEffect(e) then",
+        "    Duel.GetControl(tc,tp,PHASE_END,1)",
+        "end",
+        "```",
+        "",
+        "The return value is the number of cards that actually changed control, so use `>0` when later logic depends on success.",
+    ],
+    "Duel.MoveToField": [
+        "Use this for effects that place an existing card directly onto the field, such as moving a card to the Field Zone, Pendulum Zone, or Spell & Trap Zone.",
+        "",
+        "```lua",
+        "if tc:IsRelateToEffect(e) then",
+        "    Duel.MoveToField(tc,tp,tp,LOCATION_SZONE,POS_FACEUP,true)",
+        "end",
+        "```",
+        "",
+        "`enable=true` applies the moved card's field effects immediately. The optional `zone` mask restricts which zone can be used.",
+    ],
+    "Duel.Overlay": [
+        "Use this when a procedure or effect turns cards into Xyz Materials under an Xyz Monster.",
+        "",
+        "The first argument is the Xyz Monster that will receive the materials. The second argument can be one Card or a Group:",
+        "",
+        "```lua",
+        "Duel.Overlay(xyzc,mg)",
+        "```",
+        "",
+        "Leave `adjust` omitted for normal scripts. Pass `false` only inside a larger procedure that will adjust the field afterward.",
+    ],
+    "Duel.Release": [
+        "Use this to Tribute/Release cards as a cost, effect, or Summon procedure.",
+        "",
+        "When selecting a release cost, select cards that are legal to release, then release them with the same reason used for the cost:",
+        "",
+        "```lua",
+        "local g=Duel.SelectReleaseGroupEx(tp,nil,1,1,REASON_COST,false,nil)",
+        "if #g>0 then",
+        "    Duel.Release(g,REASON_COST)",
+        "end",
+        "```",
+        "",
+        "The return value is the number of cards actually released.",
+    ],
+    "Duel.Remove": [
+        "Use this for banishing cards. The second argument is the banished position, usually `POS_FACEUP` or `POS_FACEDOWN`.",
+        "",
+        "```lua",
+        "if c:IsRelateToEffect(e) then",
+        "    Duel.Remove(c,POS_FACEUP,REASON_EFFECT)",
+        "end",
+        "```",
+        "",
+        "For temporary banish effects, scripts commonly include `REASON_TEMPORARY`; those cards can later be returned with `Duel.ReturnToField`.",
+    ],
+    "Duel.SendtoDeck": [
+        "Use this for returning cards to the Main Deck or Extra Deck.",
+        "",
+        "`player` can be nil for the normal return destination. `seq` controls placement: `SEQ_DECKTOP`, `SEQ_DECKBOTTOM`, or `SEQ_DECKSHUFFLE`.",
+        "",
+        "```lua",
+        "if #g>0 then",
+        "    Duel.SendtoDeck(g,nil,SEQ_DECKSHUFFLE,REASON_EFFECT)",
+        "end",
+        "```",
+        "",
+        "Check the return value when a later part of the effect depends on a card actually reaching the Deck or Extra Deck.",
+    ],
+    "Duel.SendtoGrave": [
+        "Use this for sending cards to the Graveyard by effect, cost, discard, or material handling.",
+        "",
+        "```lua",
+        "if #g>0 then",
+        "    Duel.SendtoGrave(g,REASON_EFFECT)",
+        "end",
+        "```",
+        "",
+        "This is not the same as destroying. A card sent to the Graveyard by `Duel.SendtoGrave` was not destroyed unless the reason and prior action also say it was destroyed.",
+    ],
+    "Duel.SendtoHand": [
+        "Use this for adding or returning cards to the hand.",
+        "",
+        "Pass nil for `player` when the card should go to its normal return destination. Pass a specific player only when the effect explicitly sends the card to that player's hand.",
+        "",
+        "```lua",
+        "if Duel.SendtoHand(sg,nil,REASON_EFFECT)>0 then",
+        "    Duel.ConfirmCards(1-tp,sg)",
+        "end",
+        "```",
+        "",
+        "When the card came from a hidden location and must be shown, reveal the result with `Duel.ConfirmCards` after it reaches the hand.",
+    ],
+    "Duel.SpecialSummonComplete": [
+        "Use this after a batch of successful `Duel.SpecialSummonStep` calls.",
+        "",
+        "```lua",
+        "if Duel.SpecialSummonStep(tc,0,tp,tp,false,false,POS_FACEUP) then",
+        "    Duel.SpecialSummonComplete()",
+        "end",
+        "```",
+        "",
+        "Without the complete call, the step Summons do not finish their event handling correctly.",
+    ],
+    "Duel.SpecialSummonStep": [
+        "Use this only for procedures that need to Special Summon cards one at a time before raising the final Summon events.",
+        "",
+        "Every batch must end with `Duel.SpecialSummonComplete`. For ordinary effects that just Special Summon one Card or Group, use `Duel.SpecialSummon` instead.",
     ],
     "Card.IsCanBeSpecialSummoned": [
         "Use this in activation checks before selecting a monster to Special Summon.",
@@ -3466,6 +3735,13 @@ def write_wiki_pages(base: Path, docs: Iterable[FunctionDoc], constant_docs: lis
         if guide:
             lines.extend(["## How To Use It", ""])
             lines.extend(guide)
+            lines.append("")
+        related = FUNCTION_RELATED_GUIDES.get(doc.name, [])
+        if related:
+            lines.extend(["## Related Functions", ""])
+            for related_name in related:
+                namespace, short_name = related_name.split(".", 1)
+                lines.append(f"- [{related_name}](/api/functions/{safe_filename(namespace)}/{safe_filename(short_name)})")
             lines.append("")
         if doc.params:
             lines.extend(["## Parameters", ""])
