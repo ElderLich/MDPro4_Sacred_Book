@@ -8,7 +8,7 @@ Auxiliary.BecomeOriginalCode(Card c, Card tc, [int reset]) -> Effect
 
 ## Description
 
-The name of `c` becomes the original name of `tc`
+Registers an EFFECT_CHANGE_CODE effect on c so its code becomes tc's original rule code until reset; reset defaults to standard event reset through the End Phase.
 
 ## Parameters
 

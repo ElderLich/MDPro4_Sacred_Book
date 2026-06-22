@@ -8,8 +8,7 @@ Card.GetBattledGroup(Card c) -> Group
 
 ## Description
 
-Returns the deck of the card that fought this turn
-Fighting has occurred in the calculation of the damage occurred, for the sword and other animals, animal judgments
+Returns the Group of cards that c has battled.
 
 ## Parameters
 

@@ -8,7 +8,7 @@ Card.IsSpecialSummonable(Card c, [int sum_type]) -> bool
 
 ## Description
 
-Check if you can make a special call to c
+Checks whether c can be Special Summoned by player under sum_type, defaulting to 0 and using the current reason player.
 
 ## Parameters
 

@@ -3,12 +3,12 @@
 ## Signature
 
 ```lua
-Card.GetTunerLimit(Card c) -> nil|Effect,function|nil,int|nil,int|nil,int|nil
+Card.GetTunerLimit(Card c) -> Effect,function|nil,int|nil,int,int
 ```
 
 ## Description
 
-If card c is affected by the Tuner Material restriction effect EFFECT_TUNER_MATERIAL_LIMIT, return Effect e, function target, int value, int min, int max; otherwise return nil
+Returns the tuner-material-limit effect affecting c, that effect's target function or nil, its value or nil, and the allowed minimum and maximum counts; if no such effect applies, no values are returned.
 
 ## Parameters
 
@@ -16,11 +16,11 @@ If card c is affected by the Tuner Material restriction effect EFFECT_TUNER_MATE
 
 ## Returns
 
-- `nil|Effect`
-- `function|nil`
-- `int|nil`
-- `int|nil`
-- `int|nil`
+- `Effect` - The tuner-material-limit effect.
+- `function|nil` - The effect target function, if any.
+- `int|nil` - The effect value, if any.
+- `int` - Minimum allowed material count.
+- `int` - Maximum allowed material count.
 
 ## Source
 

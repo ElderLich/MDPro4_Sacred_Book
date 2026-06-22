@@ -8,7 +8,7 @@ Duel.GetBattledCount(int player) -> int
 
 ## Description
 
-Returns the number of times a player fought this turn
+Returns how many battles player has conducted in the current Battle Phase tracking state.
 
 ## Parameters
 

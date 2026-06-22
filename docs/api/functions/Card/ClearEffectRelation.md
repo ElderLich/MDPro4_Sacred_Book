@@ -8,7 +8,7 @@ Card.ClearEffectRelation(Card c) -> void
 
 ## Description
 
-Clear all the effects of c contact
+Clears all effect relations currently stored on c.
 
 ## Parameters
 

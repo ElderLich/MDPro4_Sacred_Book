@@ -8,8 +8,7 @@ Duel.GrabSelectedCard() -> Group
 
 ## Description
 
-Return the card or group of cards set by Duel.SetSelectedCard
-Has no effect when used alone; must be used with Duel.SetSelectedCard first
+Returns the current must-select cards as a Group and clears the core must-select list.
 
 ## Returns
 

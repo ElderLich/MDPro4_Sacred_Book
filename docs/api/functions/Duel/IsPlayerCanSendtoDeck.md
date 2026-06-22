@@ -8,7 +8,7 @@ Duel.IsPlayerCanSendtoDeck(int player, Card c) -> bool
 
 ## Description
 
-Check whether the player can send c to the card group
+Checks whether player can send cards to the Deck at all, or whether player can send c to the Deck.
 
 ## Parameters
 

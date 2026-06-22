@@ -8,7 +8,8 @@ Auxiliary.AddFusionEffectProcUltimate(Card c, table params) -> Effect
 
 ## Description
 
-Add Fusion Summon with table `params`.
+Creates the configurable Fusion Summon activation effect described by params.
+Missing material locations, material filters, material operations, Special Summon nocheck, and category fields are filled with the MDPro3 defaults. Unless params.reg is false, the effect is registered to c as an activation effect.
 
 ## Parameters
 

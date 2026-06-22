@@ -8,7 +8,7 @@ Duel.ChangeTargetPlayer(int chainc, int player) -> void
 
 ## Description
 
-The chain chainc the object player into player
+Changes the target player recorded for Chain Link count.
 
 ## Parameters
 

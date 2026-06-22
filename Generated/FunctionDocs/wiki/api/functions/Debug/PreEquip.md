@@ -8,7 +8,7 @@ Debug.PreEquip(Card equip_card, Card target) -> bool
 
 ## Description
 
-Add equip_card to the target
+Pre-equips equip_card to target during field setup and returns whether the relationship was created.
 
 ## Parameters
 

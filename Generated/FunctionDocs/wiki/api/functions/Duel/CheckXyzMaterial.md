@@ -8,7 +8,7 @@ Duel.CheckXyzMaterial(Card c, [function|nil f], int lv, int min, int max, [Group
 
 ## Description
 
-Check on the field or mg in the presence of excess call c excess with the level of lv min-max meet the conditions of the stack f material
+Checks whether scard has a legal Xyz Material selection for Level lv, material count range, optional filter, and optional material group.
 
 ## Parameters
 

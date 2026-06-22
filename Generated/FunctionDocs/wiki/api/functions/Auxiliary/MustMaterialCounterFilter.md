@@ -8,7 +8,7 @@ Auxiliary.MustMaterialCounterFilter(Card c, Group g) -> void
 
 ## Description
 
-If group g contains card c, return false
+Returns true when c is not contained in g; used to detect mandatory materials missing from a candidate material group.
 
 ## Parameters
 

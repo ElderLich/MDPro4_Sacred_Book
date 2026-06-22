@@ -8,7 +8,7 @@ Auxiliary.IsNotDualState(Effect effect) -> void
 
 ## Description
 
-Antisense of aux.IsDualState
+Gemini helper condition that returns true when the effect is disabled or its handler is not in Gemini treated-as-effect state.
 
 ## Parameters
 

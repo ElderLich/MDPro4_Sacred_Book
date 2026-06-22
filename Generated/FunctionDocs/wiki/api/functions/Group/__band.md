@@ -8,7 +8,7 @@ Group.__band(Group|Card left, Group|Card right) -> Group
 
 ## Description
 
-Create a new card group, add all cards that are identical in target1 and target2 (i.e., cards present in both) to this group, and return it; target1 and target2 remain unchanged
+Returns a new Group containing cards present in both operands.
 
 ## Parameters
 

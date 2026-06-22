@@ -8,7 +8,7 @@ Auxiliary.TuneMagicianFilter(Card c, Effect e) -> void
 
 ## Description
 
-Exclusive to Tuning Magician (73941492), returning a function f(e, c) with a bool return type
+Calls the effect's value function as f(e, c) and returns that result.
 
 ## Parameters
 

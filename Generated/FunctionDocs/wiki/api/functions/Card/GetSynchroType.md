@@ -8,7 +8,7 @@ Card.GetSynchroType(Card c) -> int
 
 ## Description
 
-Return the type of card c when used as Synchro Material (unlike GetType, for monster cards in the Spell/Trap Zone, it returns their original type)
+Returns c's Synchro Material Type mask used by Synchro Material checks.
 
 ## Parameters
 

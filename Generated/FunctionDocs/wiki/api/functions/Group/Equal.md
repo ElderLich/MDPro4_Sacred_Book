@@ -8,7 +8,7 @@ Group.Equal(Group g1, Group g2) -> bool
 
 ## Description
 
-It is judged whether or not g1 and g2 are the same
+Checks whether g1 and g2 contain exactly the same cards in the same internal order.
 
 ## Parameters
 

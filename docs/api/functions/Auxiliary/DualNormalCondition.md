@@ -8,7 +8,7 @@ Auxiliary.DualNormalCondition(Effect effect) -> void
 
 ## Description
 
-Check if the double monster e: GetHandler () is considered a normal monster state
+Gemini helper condition that returns true when the handler is face-up and not currently in Gemini treated-as-effect state.
 
 ## Parameters
 

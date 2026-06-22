@@ -8,7 +8,7 @@ Card.GetAttackedGroup(Card c) -> Group
 
 ## Description
 
-Returns the card set attacked by this turn
+Returns the Group of cards that c has attacked.
 
 ## Parameters
 

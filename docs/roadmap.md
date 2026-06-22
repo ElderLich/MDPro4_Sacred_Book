@@ -23,8 +23,8 @@ This is the working todo for turning Sacred Book into a complete MDPro3 scriptin
 - [ ] Give every function a clear summary, parameter notes, return notes, and at least one script-backed example where possible.
 - [x] Review movement/action function English and stale signatures against the MDPro3 core binding.
 - [x] Review effect setter function English and behavior notes against the MDPro3 core binding.
-- [x] Run usage-ranked terminology passes for common Card, Duel, Effect, Group, bit, Xyz, Synchro, Link, Pendulum, release, negation, Set, flag-effect, callback getter, token, Fusion Material, selection, and Equip target pages; imported English queue reduced from 593 to 468.
-- [ ] Review all `imported_from_dataeditorx` function English and replace awkward machine-style wording with natural MDPro3 terminology.
+- [x] Run usage-ranked terminology passes for common Card, Duel, Effect, Group, bit, Xyz, Synchro, Link, Pendulum, release, negation, Set, flag-effect, callback getter, token, Fusion Material, selection, Equip target, material, Debug, and summon-procedure pages; imported English queue reduced from 593 to 0.
+- [x] Review all `imported_from_dataeditorx` function English and replace awkward machine-style wording with natural MDPro3 terminology.
 - [ ] Check for any raw Chinese text that leaked into English fields after each generation.
 - [ ] Mark uncertain or inferred behavior clearly, with source confidence.
 - [ ] Add focused pages for common scripting patterns: targeting, costs, operation flow, once-per-turn handling, field zones, counters, and summon procedures.
@@ -38,7 +38,7 @@ This is the working todo for turning Sacred Book into a complete MDPro3 scriptin
 - [x] Add generated "used by" sections to function pages from `/data/function-usage.json`.
 - [x] Add source script snippets around detected function calls.
 - [ ] Add card text search and category filtering to the Script Explorer.
-- [ ] Sync reviewed `_functions` and `_function_english` exports into DataEditorX and commit that repo separately.
+- [x] Sync reviewed `_functions` and `_function_english` exports into DataEditorX and commit that repo separately.
 - [x] Review `DataEditorX/data/lua/constant*` against the generated constant docs and export updated editor-facing files.
 - [x] Review `effect_creator_settings.txt` against current `EFFECT_*` constants; the audit now separates effect codes, properties, and reserved/internal constants.
 - [x] Review `DataEditorX/data/mse` category and genre mappings against current scripts/locales. `data/mse` is empty; active category labels are in `data/languages/cardinfo_*.txt`, and the generated audit reports 0 mismatches.

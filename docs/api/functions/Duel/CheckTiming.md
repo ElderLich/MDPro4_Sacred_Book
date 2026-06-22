@@ -8,7 +8,7 @@ Duel.CheckTiming(int timing) -> bool
 
 ## Description
 
-Check whether the current prompt is the timing point
+Checks whether timing is present in either player's current hint timing mask.
 
 ## Parameters
 

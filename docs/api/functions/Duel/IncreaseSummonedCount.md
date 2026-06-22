@@ -8,7 +8,7 @@ Duel.IncreaseSummonedCount([Card c]) -> void
 
 ## Description
 
-Manual consumption of 1 player \[for card c\] the number of the usual call
+Consumes the current reason player's Normal Summon/Set count, or invokes c's extra summon-count effect when present.
 
 ## Parameters
 

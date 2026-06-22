@@ -8,7 +8,7 @@ Duel.IsPlayerCanSendtoHand(int player, Card c) -> bool
 
 ## Description
 
-Check whether the player can send c to hand
+Checks whether player can send cards to the hand at all, or whether player can send c to the hand.
 
 ## Parameters
 

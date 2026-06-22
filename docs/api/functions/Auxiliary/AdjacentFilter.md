@@ -8,7 +8,7 @@ Auxiliary.AdjacentFilter(Card c, int i, int j) -> bool
 
 ## Description
 
-Check if c is adjacent to (i,j)
+Returns whether c's global field coordinate is directly adjacent to (i, j), sharing an edge rather than a diagonal.
 
 ## Parameters
 

@@ -3,13 +3,12 @@
 ## Signature
 
 ```lua
-Debug.AddCard(int code, int owner, int player, int location, int seq, int pos, [bool proc]) -> Card
+Debug.AddCard(int code, int owner, int player, int location, int seq, int pos, [bool proc]) -> Card|nil
 ```
 
 ## Description
 
-Add a card, the card number for the card holder is set to owner, to represent the form of pos placed in the player's field is located in the location on the seq seq grid
-Proc = true then lifted the Soviet students limit
+Creates a card with code and places it in the requested test field location, or attaches it as Xyz Material if an occupied Monster Zone contains an Xyz Monster; proc marks its procedure complete.
 
 ## Parameters
 
@@ -19,11 +18,11 @@ Proc = true then lifted the Soviet students limit
 - `location` `int`
 - `seq` `int`
 - `pos` `int`
-- `proc` `bool` optional - default: false
+- `proc` `bool` optional
 
 ## Returns
 
-- `Card`
+- `Card|nil`
 
 ## Source
 

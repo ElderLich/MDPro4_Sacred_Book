@@ -8,7 +8,7 @@ Effect.GetActivateSequence(Effect e) -> int
 
 ## Description
 
-Return the sequence number of the activation location of effect e
+Returns the sequence where e was activated.
 
 ## Parameters
 

@@ -8,7 +8,7 @@ Card.GetOriginalRightScale(Card c) -> int
 
 ## Description
 
-Returns the original right pendulum scale of c
+Returns c's printed right Pendulum Scale.
 
 ## Parameters
 

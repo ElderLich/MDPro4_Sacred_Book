@@ -8,7 +8,7 @@ Debug.ReloadFieldEnd() -> void
 
 ## Description
 
-Layout ends
+Finishes a field reload by disabling pending shuffle checks and rebuilding field information.
 
 ## Source
 

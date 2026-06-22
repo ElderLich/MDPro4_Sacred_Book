@@ -8,7 +8,7 @@ Debug.Message(any msg) -> void
 
 ## Description
 
-Displays the message
+Sends tostring(msg) to the local debug message handler.
 
 ## Parameters
 

@@ -8,7 +8,7 @@ Group.__bor(Group|Card left, Group|Card right) -> Group
 
 ## Description
 
-Code is identical to Group.__add
+Returns a new Group containing cards from both operands; this uses the same core handler as Group.__add.
 
 ## Parameters
 

@@ -8,9 +8,7 @@ Duel.GetTributeCount(Card c, [Group mg], [bool ex]) -> int
 
 ## Description
 
-Returns the number of sacrifices that are normally used to invoke c, where ex = true allows monsters on the other side of the field (the wing of the Sun God-Sphere)
-This number does not necessarily equal the number of cards in the return value of Duel.GetTributeGroup
-Because some cards can be used as two sacrifices
+Returns the number of available Tribute candidates for target, optionally restricted to mg and extra handling.
 
 ## Parameters
 

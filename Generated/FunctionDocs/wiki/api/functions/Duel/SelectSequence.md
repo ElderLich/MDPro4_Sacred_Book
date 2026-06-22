@@ -8,7 +8,7 @@ Duel.SelectSequence() -> void
 
 ## Description
 
-This function only has a check_action_permission operation, purpose unknown
+No-op stub in this core; it only checks action permission and returns no values.
 
 ## Source
 

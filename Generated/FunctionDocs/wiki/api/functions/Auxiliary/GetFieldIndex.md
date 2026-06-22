@@ -8,7 +8,7 @@ Auxiliary.GetFieldIndex(Card c) -> int,int
 
 ## Description
 
-Get the global row and column index of c
+Returns c's global row and column indexes from player 0's field viewpoint.
 
 ## Parameters
 

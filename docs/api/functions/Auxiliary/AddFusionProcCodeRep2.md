@@ -8,9 +8,7 @@ Auxiliary.AddFusionProcCodeRep2(Card c, int|table code1, int minc, int maxc, boo
 
 ## Description
 
-Add a Fusion Summon procedure for c
-Use minc-maxc identical monsters with code as Fusion Materials
-Equivalent to aux.AddFusionProcMixRep(c, sub, insf, code1, minc, maxc)
+Registers a Fusion Material procedure requiring between minc and maxc copies of code1, with optional substitute and Instant Fusion handling.
 
 ## Parameters
 

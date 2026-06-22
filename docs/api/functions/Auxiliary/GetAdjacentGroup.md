@@ -8,7 +8,7 @@ Auxiliary.GetAdjacentGroup(int tp, int location1, int location2, int i, int j) -
 
 ## Description
 
-Get the card group adjacent to (i,j)
+Returns cards from location1/location2 that are orthogonally adjacent to the global field coordinate (i, j).
 
 ## Parameters
 

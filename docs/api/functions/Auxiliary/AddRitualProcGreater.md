@@ -8,8 +8,7 @@ Auxiliary.AddRitualProcGreater(Card c, function filter, any summon_location, any
 
 ## Description
 
-Add a ritual summon effect to c
-Filter for the ritual monster to meet the conditions, the material level can be more than the ritual monster level
+Creates a Ritual Summon activation effect whose selected materials' Ritual Levels must be greater than or equal to the Ritual Monster's original Level.
 
 ## Parameters
 

@@ -8,7 +8,7 @@ Card.GetOwnerTargetCount(Card c) -> int
 
 ## Description
 
-Returns the number of cards that take c as the persistent object
+Returns the number of cards targeting c as their persistent card-target owner.
 
 ## Parameters
 

@@ -8,8 +8,7 @@ Duel.GetLinkedGroupCount(int player, int s_range, int o_range) -> int
 
 ## Description
 
-Return the number of linked cards in s_range and o_range zones from player's perspective
-NOTE: The original description includes a question mark (?), indicating potential uncertainty or incomplete information; translated as written
+Returns the number of cards linked to player-relative locations s and o.
 
 ## Parameters
 

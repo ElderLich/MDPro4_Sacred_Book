@@ -8,7 +8,7 @@ Card.ResetNegateEffect(Card c, [int code1], [... any]) -> void
 
 ## Description
 
-Reset c affected by the effect of cards whose card number is code1, code2 ...
+Resets negate-related card effects on c for each supplied reset code.
 
 ## Parameters
 

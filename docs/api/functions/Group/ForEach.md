@@ -8,7 +8,7 @@ Group.ForEach(Group g, function f, ... any) -> void
 
 ## Description
 
-Call f once for each card in g as a parameter
+Utility stub for calling f once for each card in g with any extra arguments.
 
 ## Parameters
 

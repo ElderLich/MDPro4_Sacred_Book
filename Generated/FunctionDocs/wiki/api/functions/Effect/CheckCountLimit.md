@@ -8,7 +8,7 @@ Effect.CheckCountLimit(Effect e, int p) -> bool
 
 ## Description
 
-Check if player p has remaining activation counts for effect e
+Checks whether e's count limit is still available for player p.
 
 ## Parameters
 

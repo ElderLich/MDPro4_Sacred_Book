@@ -8,7 +8,7 @@ Group.SelectWithSumGreater(Group g, int player, function f, int sum, ... any) ->
 
 ## Description
 
-Let the player player select a subset from g so that the sum of the particular function f of the subset is greater than or equal to sum, starting at the fifth argument as an extra parameter
+Lets player select a subset of g whose f-value sum reaches or exceeds sum according to the core's exact greater-sum selection rule; returns an empty Group if no valid subset exists.
 
 ## Parameters
 

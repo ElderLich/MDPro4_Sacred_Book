@@ -8,8 +8,7 @@ Duel.SetCoinResult(int res, ... any) -> void
 
 ## Description
 
-Forcibly modify the result of casting coins to res
-This function is used in the persistent EVENT_TOSS_COIN event
+Sets the stored coin results in the core result slots; only 0 and 1 are preserved, and other values are stored as 0.
 
 ## Parameters
 

@@ -8,7 +8,7 @@ Card.IsAllColumn(Card c) -> bool
 
 ## Description
 
-Check if all zones in the same column as card c have cards
+Checks whether c is treated as occupying or applying to all columns.
 
 ## Parameters
 

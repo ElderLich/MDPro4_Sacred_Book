@@ -8,7 +8,7 @@ Effect.GlobalEffect() -> Effect
 
 ## Description
 
-Create a new global effect
+Creates a new effect owned by the duel temporary card with effect owner player 0.
 
 ## Returns
 

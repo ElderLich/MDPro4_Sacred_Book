@@ -8,7 +8,7 @@ Duel.ChangeTargetParam(int chainc, int param) -> void
 
 ## Description
 
-The chain chainc parameters into param
+Changes target parameter data for Chain Link count to param.
 
 ## Parameters
 

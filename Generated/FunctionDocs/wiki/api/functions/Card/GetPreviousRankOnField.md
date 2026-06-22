@@ -8,7 +8,7 @@ Card.GetPreviousRankOnField(Card c) -> int
 
 ## Description
 
-Returns the class before the c position changes
+Returns the Rank value c had while it was previously on the field.
 
 ## Parameters
 

@@ -8,8 +8,7 @@ Duel.CheckSynchroMaterial(Card c, [function|nil f1], [function|nil f2], int min,
 
 ## Description
 
-Check \[mg\] whether there is a group \[must include smat\] meet the conditions of the min-max cards as cohort calls c material
-F1 is to adjust the filter conditions to be met, f2 is outside the adjustment to meet the needs of the filter conditions
+Checks whether scard has a legal Synchro Material selection with optional tuner/non-tuner filters, count limits, required Synchro Material, and material group.
 
 ## Parameters
 

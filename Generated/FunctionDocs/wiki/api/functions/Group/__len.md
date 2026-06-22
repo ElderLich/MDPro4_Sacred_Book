@@ -8,7 +8,7 @@ Group.__len(Group g) -> int
 
 ## Description
 
-Same as Group.GetCount
+Returns the number of cards in g.
 
 ## Parameters
 

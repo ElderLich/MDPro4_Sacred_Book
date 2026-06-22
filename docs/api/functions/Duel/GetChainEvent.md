@@ -3,26 +3,25 @@
 ## Signature
 
 ```lua
-Duel.GetChainEvent(int chainc) -> Group,int,int,Effect,int,int
+Duel.GetChainEvent(int count) -> Group,int,int,Effect,int,int
 ```
 
 ## Description
 
-Return the parameters related to chain chainc; if chainc=0, return parameters for the currently processed chain
-Returns six parameters: eg, ep, ev, re, r, rp
+Returns the event group, event player, event value, reason effect, reason, and reason player stored on Chain Link count.
 
 ## Parameters
 
-- `chainc` `int`
+- `count` `int`
 
 ## Returns
 
-- `Group`
-- `int`
-- `int`
-- `Effect`
-- `int`
-- `int`
+- `Group` - Event cards.
+- `int` - Event player.
+- `int` - Event value.
+- `Effect` - Reason effect.
+- `int` - Reason flags.
+- `int` - Reason player.
 
 ## Source
 

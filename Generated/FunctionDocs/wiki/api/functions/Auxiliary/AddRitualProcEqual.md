@@ -8,8 +8,7 @@ Auxiliary.AddRitualProcEqual(Card c, function filter, any summon_location, any g
 
 ## Description
 
-Add a ritual summon effect to c
-Filter for the ritual monster to meet the conditions, the material level must be equal to the ritual monster level
+Creates a Ritual Summon activation effect whose selected materials' Ritual Levels must exactly equal the Ritual Monster's original Level.
 
 ## Parameters
 

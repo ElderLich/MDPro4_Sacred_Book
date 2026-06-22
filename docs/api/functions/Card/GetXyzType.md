@@ -8,7 +8,7 @@ Card.GetXyzType(Card c) -> int
 
 ## Description
 
-Return the type of card c when used as Xyz Material (unlike GetType, for monster cards in the Spell/Trap Zone, it returns their original type)
+Returns c's Xyz Material Type mask used by Xyz Material checks.
 
 ## Parameters
 

@@ -8,7 +8,7 @@ Group.__add(Group|Card left, Group|Card right) -> Group
 
 ## Description
 
-Create a new card group, add all cards from target1 and target2 to this group, and return it; if there are duplicate cards, they are added only once; target1 and target2 remain unchanged
+Returns a new Group containing cards from both operands, where each operand may be a Card or Group.
 
 ## Parameters
 

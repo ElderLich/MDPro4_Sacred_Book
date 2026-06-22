@@ -8,7 +8,7 @@ Duel.IsSummonCancelable() -> bool
 
 ## Description
 
-Return whether the current Special Summon action can be rolled back and canceled
+Returns the core summon-cancelable flag for the current Summon selection.
 
 ## Returns
 

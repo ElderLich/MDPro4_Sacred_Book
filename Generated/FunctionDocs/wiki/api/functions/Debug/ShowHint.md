@@ -8,7 +8,7 @@ Debug.ShowHint(string msg) -> void
 
 ## Description
 
-A message box appears
+Writes tostring(msg) as a local show-hint message, truncated to the core hint buffer size.
 
 ## Parameters
 

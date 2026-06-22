@@ -8,7 +8,7 @@ Card.IsFusionSummonableCard(Card c, [int sum_type]) -> bool
 
 ## Description
 
-Check if card c can be Fusion Summoned \[using sum_type method\]
+Checks whether c can be Fusion Summoned as a Fusion Monster for summon type sum_type, defaulting to 0.
 
 ## Parameters
 

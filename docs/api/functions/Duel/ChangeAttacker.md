@@ -8,8 +8,8 @@ Duel.ChangeAttacker(Card c, [bool ignore_count]) -> void
 
 ## Description
 
-Will attack the monster into c
-Note: This function will make the original attack monster attack
+Changes the current attacking monster to attacker.
+Unless ignore_count is true, the new attacker gains an attack announcement count, and during the Damage Phase also gains attacked-count and attacked-card records.
 
 ## Parameters
 

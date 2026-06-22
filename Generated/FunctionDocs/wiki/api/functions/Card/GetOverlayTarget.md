@@ -8,7 +8,7 @@ Card.GetOverlayTarget(Card c) -> Card
 
 ## Description
 
-Returns the card with c as the excess material
+Returns the card that c is attached to as an Xyz Material, or nil when c is not attached.
 
 ## Parameters
 

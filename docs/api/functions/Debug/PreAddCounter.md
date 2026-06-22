@@ -8,7 +8,7 @@ Debug.PreAddCounter(Card c, int counter_type, [int count]) -> void
 
 ## Description
 
-Add count counters_type counters for c
+Adds count counters of countertype directly to c for field setup; count defaults to 1.
 
 ## Parameters
 

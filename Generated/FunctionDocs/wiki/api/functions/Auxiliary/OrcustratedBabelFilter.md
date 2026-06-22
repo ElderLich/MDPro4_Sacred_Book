@@ -8,7 +8,7 @@ Auxiliary.OrcustratedBabelFilter(Card c) -> bool
 
 ## Description
 
-Orcustrated Babel
+Returns true for original Orcust cards that are Link Monsters on the field or monsters in the GY.
 
 ## Parameters
 

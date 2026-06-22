@@ -8,8 +8,7 @@ Auxiliary.BeginPuzzle(Effect effect) -> void
 
 ## Description
 
-Start the mess
-At the end of the # # turn, the player's base points become 0
+Sets up puzzle-duel handling by skipping player 0's Draw and Standby Phases and making player 0 lose at the End Phase.
 
 ## Parameters
 

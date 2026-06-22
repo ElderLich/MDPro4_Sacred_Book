@@ -8,7 +8,7 @@ Card.SetReason(Card c, int reason) -> bool
 
 ## Description
 
-Set the reason for card c arriving at its current position to reason
+Sets c's current reason bitmask to reason.
 
 ## Parameters
 

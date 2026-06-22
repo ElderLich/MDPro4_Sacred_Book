@@ -3,20 +3,20 @@
 ## Signature
 
 ```lua
-Duel.RockPaperScissors([bool repeated]) -> int
+Duel.RockPaperScissors([bool repeat]) -> int
 ```
 
 ## Description
 
-Perform Rock-Paper-Scissors; if repeat=false, perform once; otherwise, continue until a winner is determined. Return the winning player's number
+Runs the Rock-Paper-Scissors selector and returns the winning player; repeat defaults to true.
 
 ## Parameters
 
-- `repeated` `bool` optional - default: true
+- `repeat` `bool` optional - default: true
 
 ## Returns
 
-- `int`
+- `int` - Winning player.
 
 ## Source
 

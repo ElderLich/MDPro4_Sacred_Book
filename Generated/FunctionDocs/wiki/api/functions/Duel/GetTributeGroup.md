@@ -8,7 +8,7 @@ Duel.GetTributeGroup(Card c) -> Group
 
 ## Description
 
-Returns the deck of cards used for the normal summon c to be released (for higher-level summons)
+Returns the Group of cards that can be Tributed for a Normal Summon/Set of target.
 
 ## Parameters
 

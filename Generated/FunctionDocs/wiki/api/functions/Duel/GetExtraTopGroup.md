@@ -8,7 +8,7 @@ Duel.GetExtraTopGroup(int player, int count) -> Group
 
 ## Description
 
-Return the top count face-up cards in player's Extra Deck
+Returns a Group containing up to count cards from the top of player's Extra Deck, after the face-up Pendulum section.
 
 ## Parameters
 

@@ -8,7 +8,7 @@ Card.ReleaseRelation(Card c1, Card c2) -> void
 
 ## Description
 
-Manually release c1 for c2
+Releases c1's relation to card c2.
 
 ## Parameters
 

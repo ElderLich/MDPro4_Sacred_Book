@@ -8,7 +8,7 @@ Duel.IsPlayerCanFlipSummon(int player, Card c) -> bool
 
 ## Description
 
-Check whether the player can reverse the call player c
+Checks whether player can Flip Summon at all, or whether player can Flip Summon c.
 
 ## Parameters
 

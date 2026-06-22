@@ -8,7 +8,7 @@ Auxiliary.GoldenAllureQueenFilter(Card c) -> bool
 
 ## Description
 
-Golden Allure Queen
+Returns true for cards whose original set code is 0x3, used by Golden Allure Queen quick-effect handling.
 
 ## Parameters
 

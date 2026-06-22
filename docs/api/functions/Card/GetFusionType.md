@@ -8,7 +8,7 @@ Card.GetFusionType(Card c) -> int
 
 ## Description
 
-Return the type of card c when used as Fusion Material (unlike GetType, for monster cards in the Spell/Trap Zone, it returns their original type)
+Returns c's Fusion Material Type mask used by Fusion Material checks.
 
 ## Parameters
 

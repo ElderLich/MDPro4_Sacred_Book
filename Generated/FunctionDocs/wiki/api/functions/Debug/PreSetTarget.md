@@ -8,7 +8,7 @@ Debug.PreSetTarget(Card c, Card target) -> void
 
 ## Description
 
-The target selected as the perpetual object c
+Adds target as a persistent card target of c during field setup.
 
 ## Parameters
 

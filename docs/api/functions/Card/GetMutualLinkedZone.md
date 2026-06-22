@@ -8,7 +8,7 @@ Card.GetMutualLinkedZone(Card c, [int player]) -> int
 
 ## Description
 
-Return the \[from player's perspective\] zones where cards mutually linked with card c are located
+Returns the zone mask of c's mutually linked zones, swapped to player viewpoint when a player argument opposite c's controller is supplied.
 
 ## Parameters
 

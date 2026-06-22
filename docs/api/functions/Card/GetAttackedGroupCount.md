@@ -8,7 +8,7 @@ Card.GetAttackedGroupCount(Card c) -> int
 
 ## Description
 
-Returns the number of cards that have been attacked this turn
+Returns the number of attack records stored for c.
 
 ## Parameters
 

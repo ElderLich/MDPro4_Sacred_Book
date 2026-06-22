@@ -8,8 +8,7 @@ Duel.CheckTunerMaterial(Card c, Card tuner, [function|nil f1], [function|nil f2]
 
 ## Description
 
-Check to tuner as an adjustment \[in the mg\] whether there is a set of min-max card to meet the conditions as cohort call c material
-F1 is to adjust the filter conditions to be met, f2 is outside the adjustment to meet the needs of the filter conditions
+Checks whether tuner can be used with scard under the supplied tuner/non-tuner filters, count limits, and optional material group.
 
 ## Parameters
 

@@ -8,7 +8,7 @@ Card.GetRaceInGrave(Card c, [int reasonPlayer]) -> int
 
 ## Description
 
-Return the Race card c is treated as having in the Graveyard
+Returns the Race c is treated as having in the GY for player, defaulting to the current reason player.
 
 ## Parameters
 

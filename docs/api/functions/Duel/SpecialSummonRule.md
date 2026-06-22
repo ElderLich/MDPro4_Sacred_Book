@@ -8,7 +8,7 @@ Duel.SpecialSummonRule(int player, Card c, [int sumtype]) -> void
 
 ## Description
 
-Let player player on c special summon procedures
+Performs a rule Special Summon of c for player with optional summon type sumtype, unless the core is in effect damage step processing.
 
 ## Parameters
 

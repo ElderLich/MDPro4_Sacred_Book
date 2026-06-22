@@ -8,7 +8,7 @@ Debug.SetAIName(string name) -> void
 
 ## Description
 
-Set the name of the AI
+Writes the local AI name message, truncated to the core AI-name buffer size.
 
 ## Parameters
 

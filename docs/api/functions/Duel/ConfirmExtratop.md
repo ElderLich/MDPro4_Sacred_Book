@@ -8,7 +8,7 @@ Duel.ConfirmExtratop(int player, int count) -> void
 
 ## Description
 
-Confirm the top count face-down cards in player's Extra Deck
+Reveals count cards from the top of player's Extra Deck to the client, skipping face-up Pendulum cards tracked at the Extra Deck top.
 
 ## Parameters
 

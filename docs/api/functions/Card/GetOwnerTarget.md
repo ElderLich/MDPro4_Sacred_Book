@@ -8,7 +8,7 @@ Card.GetOwnerTarget(Card c) -> Group
 
 ## Description
 
-Returns all cards with c as the persistent object
+Returns the Group of cards that are targeting c as their persistent card-target owner.
 
 ## Parameters
 

@@ -8,7 +8,7 @@ Effect.GetRange(Effect e) -> int
 
 ## Description
 
-Return the Range property of effect e
+Returns e's range bitmask.
 
 ## Parameters
 
