@@ -1,7 +1,9 @@
 node_modules/
 docs/.vitepress/cache/
+docs/.vitepress/.temp/
 docs/.vitepress/dist/
 Generated/FunctionDocs/wiki/.vitepress/cache/
+Generated/FunctionDocs/wiki/.vitepress/.temp/
 Generated/FunctionDocs/wiki/.vitepress/dist/
 __pycache__/
 *.pyc

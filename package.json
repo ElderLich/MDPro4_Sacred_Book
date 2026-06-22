@@ -5,6 +5,7 @@
   "scripts": {
     "reference:generate": "python Tools/FunctionDocs/generate_function_docs.py",
     "site:generate": "python Tools/Site/generate_site.py",
+    "links:check": "python Tools/Site/validate_markdown_links.py",
     "docs:generate": "npm run reference:generate && npm run site:generate",
     "docs:dev": "npm run docs:generate && vitepress dev docs",
     "docs:build": "npm run docs:generate && vitepress build docs",

@@ -45,6 +45,9 @@ jobs:
       - name: Generate site data
         run: npm run docs:generate
 
+      - name: Validate markdown links
+        run: npm run links:check
+
       - name: Build site
         env:
           NODE_OPTIONS: --max-old-space-size=6144
