@@ -8,7 +8,7 @@ Card.IsCanBeEffectTarget(Card c, [Effect e]) -> bool
 
 ## Description
 
-Check whether c can be the object of effect e
+Checks whether c can be targeted by e, or by the current reason effect when e is omitted.
 
 ## Parameters
 

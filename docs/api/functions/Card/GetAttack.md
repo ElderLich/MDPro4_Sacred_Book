@@ -8,7 +8,7 @@ Card.GetAttack(Card c) -> int
 
 ## Description
 
-Returns c's current ATK. A negative value represents unknown ATK.
+Returns c's current ATK, with unknown or negative ATK reported as 0.
 
 ## Parameters
 

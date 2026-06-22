@@ -8,7 +8,7 @@ Card.GetOwner(Card c) -> int
 
 ## Description
 
-Returns the holder of c
+Returns c's original owner player.
 
 ## Parameters
 

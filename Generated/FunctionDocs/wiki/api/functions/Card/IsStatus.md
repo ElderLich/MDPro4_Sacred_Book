@@ -8,7 +8,7 @@ Card.IsStatus(Card c, int status) -> bool
 
 ## Description
 
-Check whether c contains a status code
+Checks whether c currently has at least one status flag from status.
 
 ## Parameters
 

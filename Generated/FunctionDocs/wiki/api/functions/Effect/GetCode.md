@@ -8,7 +8,7 @@ Effect.GetCode(Effect e) -> int
 
 ## Description
 
-Returns the code property
+Returns e's effect code.
 
 ## Parameters
 

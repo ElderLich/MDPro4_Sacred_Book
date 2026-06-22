@@ -3,13 +3,13 @@
 ## Signature
 
 ```lua
-Duel.IsPlayerCanSpecialSummonMonster(int player, int code, [int|nil setcode], [int|nil type], [int|nil atk], [int|nil def], [int|nil level], [int|nil race], [int|nil attribute], [int pos], [int target_player], [int sumtype], [int zone]) -> bool
+Duel.IsPlayerCanSpecialSummonMonster(int player, int code, [int|nil setcode], [int|nil type], [int|nil atk], [int|nil def], [int|nil level], [int|nil race], [int|nil attribute], [int pos], [int target_player], [int sumtype]) -> bool
 ```
 
 ## Description
 
-Check player player can be pos to the form of special summon the parameters of the monster to the target_player field
-This function is usually used to determine whether it is possible to trick token and trap monsters
+Checks whether player can Special Summon a virtual monster with the supplied card data.
+Optional arguments override the loaded card data, then pos, target_player, and sumtype describe how and where the monster would be Summoned. This MDPro3 binding does not read a zone argument.
 
 ## Parameters
 
@@ -22,14 +22,13 @@ This function is usually used to determine whether it is possible to trick token
 - `level` `int|nil` optional
 - `race` `int|nil` optional
 - `attribute` `int|nil` optional
-- `pos` `int` optional - default: POS_FACEUP
-- `target_player` `int` optional - default: player
-- `sumtype` `int` optional - default: 0
-- `zone` `int` optional
+- `pos` `int` optional
+- `target_player` `int` optional
+- `sumtype` `int` optional
 
 ## Returns
 
-- `bool`
+- `bool` - true if the virtual monster can be Special Summoned.
 
 ## Source
 

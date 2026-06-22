@@ -3,18 +3,18 @@
 ## Signature
 
 ```lua
-Auxiliary.EnablePendulumAttribute(Card c, Group reg) -> void
+Auxiliary.EnablePendulumAttribute(Card c, [bool|nil reg]) -> void
 ```
 
 ## Description
 
-Add Pendulum Monster attributes to c (Pendulum Summon, Pendulum Card activation)
-If active_effect=false, do not register the Pendulum Card's "card activation" effect
+Registers the Pendulum Summon procedure for Pendulum Monster c.
+Unless reg is false, it also registers the Pendulum Card activation effect from the hand.
 
 ## Parameters
 
 - `c` `Card`
-- `reg` `Group`
+- `reg` `bool|nil` optional
 
 ## Source
 

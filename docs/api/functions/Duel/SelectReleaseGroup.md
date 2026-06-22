@@ -8,7 +8,8 @@ Duel.SelectReleaseGroup(int sel_player, [function|nil f], int min, int max, [Car
 
 ## Description
 
-Filter function, allowing players to choose from the field min-max Zhang is not equal to ex to meet the conditions f can be liberated card (non-superior summon)
+Lets player select min to max releasable cards matching f, excluding ex, and returns the selected Group.
+Extra arguments after ex are passed to f after the Card argument.
 
 ## Parameters
 

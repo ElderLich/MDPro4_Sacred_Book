@@ -8,9 +8,8 @@ Duel.Recover(int player, int value, int reason, [bool is_step]) -> int
 
 ## Description
 
-To reason reason players to player value LP, return to the actual response value
-The return value is 0 if it is affected by an effect such as a return to harm.
-Is_step to true is the damage / recovery LP process decomposition, need to call Duel.RDComplete() trigger point
+Gives player LP for reason and returns the amount processed.
+Effects can reverse recovery into damage. With is_step=true, finish the damage/recovery batch with Duel.RDComplete.
 
 ## Parameters
 

@@ -8,7 +8,8 @@ Group.FilterCount(Group g, function f, [Card|Group|nil ex], ... any) -> int
 
 ## Description
 
-Filter function, and Group.Filter is basically the same, the difference is that this function only returns the number of cards to meet the conditions
+Counts cards in g that satisfy f, excluding ex.
+Extra arguments after ex are passed to f after the Card argument.
 
 ## Parameters
 

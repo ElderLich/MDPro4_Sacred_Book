@@ -8,7 +8,7 @@ Card.IsForbidden(Card c) -> bool
 
 ## Description
 
-Check whether c is in the declaration prohibition state
+Checks whether c currently has STATUS_FORBIDDEN.
 
 ## Parameters
 

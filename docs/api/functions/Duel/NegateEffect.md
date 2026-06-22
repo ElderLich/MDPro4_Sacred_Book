@@ -8,7 +8,7 @@ Duel.NegateEffect(int chainc, [bool forced]) -> bool
 
 ## Description
 
-So that the chain chainc invalid effect, the return value that is successful
+Attempts to negate the effect of chainc and returns true if it succeeds. forced requests a forced disable.
 
 ## Parameters
 

@@ -8,7 +8,8 @@ Duel.IsChainNegatable(int chainc) -> bool
 
 ## Description
 
-Check the chain chainc launch can be invalid
+Compatibility check for whether chainc's activation can be negated.
+In this MDPro3 core binding, the function currently returns true for any chain count.
 
 ## Parameters
 

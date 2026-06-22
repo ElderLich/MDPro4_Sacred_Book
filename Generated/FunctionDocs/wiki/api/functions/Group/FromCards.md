@@ -8,7 +8,7 @@ Group.FromCards(... Card) -> Group
 
 ## Description
 
-Indefinite parameters, the incoming card into a combination of all cards and return
+Creates and returns a new Group containing the non-nil Card arguments.
 
 ## Parameters
 

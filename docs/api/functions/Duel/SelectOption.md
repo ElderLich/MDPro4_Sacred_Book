@@ -8,8 +8,8 @@ Duel.SelectOption(int player, int desc1, ... any) -> int
 
 ## Description
 
-Let the player select the option, starting with the second argument, where each parameter represents an option
-Returns the serial number of the selected option (0-based)
+Shows player a list of description ids and returns the zero-based index of the selected option.
+The selected description id is also announced to the client.
 
 ## Parameters
 

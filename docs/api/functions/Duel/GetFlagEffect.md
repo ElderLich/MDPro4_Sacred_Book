@@ -8,7 +8,7 @@ Duel.GetFlagEffect(int player, int code) -> int
 
 ## Description
 
-Returns the number of specific marker effects for the player's player
+Returns how many player flag effects with code are registered on player.
 
 ## Parameters
 

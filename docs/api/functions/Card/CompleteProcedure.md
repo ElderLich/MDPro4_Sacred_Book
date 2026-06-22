@@ -8,7 +8,7 @@ Card.CompleteProcedure(Card c) -> void
 
 ## Description
 
-So that c to complete the formal call procedures
+Marks c as having completed its proper Summon procedure.
 
 ## Parameters
 

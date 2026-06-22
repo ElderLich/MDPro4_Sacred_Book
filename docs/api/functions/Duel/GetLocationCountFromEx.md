@@ -3,24 +3,26 @@
 ## Signature
 
 ```lua
-Duel.GetLocationCountFromEx(int player, [int reason_player], [Group|Card|nil targets], [Card|int sc], [int zone]) -> int
+Duel.GetLocationCountFromEx(int player, [int reason_player], [Group|Card|nil targets], [Card|int|nil sc], [int zone]) -> int,int
 ```
 
 ## Description
 
-Return the number of available slots on player's field \[after targets leave due to reason_player\] for Special Summoning card sc from the Extra Deck in zone
+Returns the usable Monster Zone count for Special Summoning from the Extra Deck, followed by the usable zone mask.
+reason_player defaults to the current reason player. targets are treated as leaving the field before the count is checked.
 
 ## Parameters
 
 - `player` `int`
-- `reason_player` `int` optional - default: player
+- `reason_player` `int` optional
 - `targets` `Group|Card|nil` optional
-- `sc` `Card|int` optional
-- `zone` `int` optional - default: 0xff
+- `sc` `Card|int|nil` optional
+- `zone` `int` optional
 
 ## Returns
 
-- `int`
+- `int` - Number of usable Monster Zones.
+- `int` - Usable zone mask.
 
 ## Source
 

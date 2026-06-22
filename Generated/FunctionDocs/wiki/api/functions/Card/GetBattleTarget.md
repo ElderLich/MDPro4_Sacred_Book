@@ -3,12 +3,12 @@
 ## Signature
 
 ```lua
-Card.GetBattleTarget(Card c) -> Card
+Card.GetBattleTarget(Card c) -> Card|nil
 ```
 
 ## Description
 
-Returns the card that fought with c
+Returns the monster currently battling c, or nil if c is not the current attacker or attack target.
 
 ## Parameters
 
@@ -16,7 +16,7 @@ Returns the card that fought with c
 
 ## Returns
 
-- `Card`
+- `Card|nil` - The monster battling c, or nil.
 
 ## Source
 

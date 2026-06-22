@@ -8,7 +8,7 @@ Card.GetBaseAttack(Card c) -> int
 
 ## Description
 
-Return the original attack power of c
+Returns c's current base ATK, with unknown or negative ATK reported as 0.
 
 ## Parameters
 

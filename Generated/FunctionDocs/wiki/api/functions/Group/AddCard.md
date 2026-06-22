@@ -8,7 +8,7 @@ Group.AddCard(Group g, Card c) -> void
 
 ## Description
 
-Increase g to g
+Adds c to g if g is mutable.
 
 ## Parameters
 

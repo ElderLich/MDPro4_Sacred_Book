@@ -8,8 +8,8 @@ Card.IsMSetable(Card c, bool ignore_count, [Effect|nil e], [int min], [int zone]
 
 ## Description
 
-Check whether c can be normally called set, ignore_count = true does not check the number of calls limit
-E ~ = nil then check whether c can be the effect of e is usually called set, min that at least the number of sacrifices needed (used to distinguish between compromise summoned set and superior summoned set)
+Checks whether c can be Normal Set in a Monster Zone for the current reason player.
+ignore_count skips the Normal Summon/Set count check. e checks Set legality for that effect, min is the minimum number of releases required, and zone restricts usable Monster Zones.
 
 ## Parameters
 

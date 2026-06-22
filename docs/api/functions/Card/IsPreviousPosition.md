@@ -8,7 +8,7 @@ Card.IsPreviousPosition(Card c, int pos) -> bool
 
 ## Description
 
-Check whether the c position before the change is represented by pos
+Checks whether c's previous position included pos.
 
 ## Parameters
 

@@ -8,9 +8,8 @@ Duel.RegisterFlagEffect(int player, int code, int reset_flag, int property, int 
 
 ## Description
 
-For the player to register the global environment logo effect
-This effect always affects the player's (EFFECT_FLAG_PLAYER_TARGET) and will not be invalidated
-The rest is the same as Card.RegisterFlagEffect
+Registers a player/global flag effect on player and returns the created Effect.
+The flag effect is player-targeted, field-only, cannot be disabled, and count=0 is treated as 1.
 
 ## Parameters
 

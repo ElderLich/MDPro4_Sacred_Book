@@ -8,8 +8,8 @@ Duel.CheckReleaseGroup(int player, [function|nil f], int count, [Card|Group|nil 
 
 ## Description
 
-Check if the player has at least count of cards that meet the filter condition f and are not equal to ex (non-superior summons)
-The fifth parameter starts as an extra parameter
+Checks whether player can release at least count cards matching f, excluding ex.
+Extra arguments after ex are passed to f after the Card argument. This helper uses REASON_COST.
 
 ## Parameters
 

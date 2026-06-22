@@ -23,7 +23,7 @@ This is the working todo for turning Sacred Book into a complete MDPro3 scriptin
 - [ ] Give every function a clear summary, parameter notes, return notes, and at least one script-backed example where possible.
 - [x] Review movement/action function English and stale signatures against the MDPro3 core binding.
 - [x] Review effect setter function English and behavior notes against the MDPro3 core binding.
-- [x] Run a first usage-ranked terminology pass for common Card, Duel, Effect, Group, bit, Xyz, and Synchro function pages; imported English queue reduced from 593 to 528.
+- [x] Run usage-ranked terminology passes for common Card, Duel, Effect, Group, bit, Xyz, Synchro, Link, Pendulum, release, negation, Set, and flag-effect pages; imported English queue reduced from 593 to 485.
 - [ ] Review all `imported_from_dataeditorx` function English and replace awkward machine-style wording with natural MDPro3 terminology.
 - [ ] Check for any raw Chinese text that leaked into English fields after each generation.
 - [ ] Mark uncertain or inferred behavior clearly, with source confidence.

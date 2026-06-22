@@ -3,23 +3,22 @@
 ## Signature
 
 ```lua
-Auxiliary.TargetBoolFunction(function f, ... any) -> void
+Auxiliary.TargetBoolFunction(function f, ... any) -> function
 ```
 
 ## Description
 
-Used in effect registration, returns a function with a bool return type; additional parameters start from the second parameter
-function Auxiliary.TargetBoolFunction(f,...)
-  local ext_params={...}
-  return function(effect,target)
-    return f(target,table.unpack(ext_params))
-  end
-end
+Returns an effect target callback that calls f(target, ...) with the extra arguments captured now.
+Use this when SetTarget or similar APIs expect a function with parameters (effect, target).
 
 ## Parameters
 
 - `f` `function`
 - `...` `any`
+
+## Returns
+
+- `function` - A target callback with parameters (effect, target).
 
 ## Source
 

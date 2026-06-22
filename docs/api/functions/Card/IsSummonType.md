@@ -8,7 +8,7 @@ Card.IsSummonType(Card c, int sumtype) -> bool
 
 ## Description
 
-Check if card c's summon type is sumtype
+Checks whether c's recorded Summon type includes every flag in sumtype.
 
 ## Parameters
 

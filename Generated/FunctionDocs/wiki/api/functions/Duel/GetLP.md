@@ -8,7 +8,7 @@ Duel.GetLP(int player) -> int
 
 ## Description
 
-Returns the current LP of the player's player
+Returns player's current LP.
 
 ## Parameters
 

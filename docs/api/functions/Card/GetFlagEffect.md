@@ -8,7 +8,7 @@ Card.GetFlagEffect(Card c, int code) -> int
 
 ## Description
 
-The type of returned c is the number of identifying effects of the code
+Returns how many flag effects with code are registered on c.
 
 ## Parameters
 

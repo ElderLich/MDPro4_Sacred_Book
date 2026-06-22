@@ -8,10 +8,7 @@ Duel.GetOperatedGroup() -> Group
 
 ## Description
 
-This function returns a card set that was actually manipulated before a card operation
-Duel.Destroy, Duel.Remove, Duel.SendtoGrave,
-Duel.SendtoHand, Duel.SendtoDeck, Duel.SendtoExtraP, Duel.Release,
-Duel.ChangePosition, Duel.SpecialSummon, Duel.DiscardDeck
+Returns the group of cards actually processed by the most recent card operation.
 
 ## Returns
 

@@ -8,8 +8,8 @@ Auxiliary.AddLinkProcedure(Card c, [function|nil f], int min, [int max], [functi
 
 ## Description
 
-Add a Link Summon procedure for c
-Use minc-maxc monsters satisfying filter condition f \[and within the group satisfying filter condition gf\] as Link Materials
+Registers the standard Link Summon procedure for c and returns the created Effect.
+f filters materials, min/max constrain the material count, and gf optionally checks the selected material group.
 
 ## Parameters
 

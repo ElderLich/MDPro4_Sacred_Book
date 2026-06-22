@@ -8,7 +8,7 @@ Card.SetMaterial(Card c, [Group|nil g]) -> void
 
 ## Description
 
-The g of all the cards as the c material (superior summon, special summon)
+Sets g as c's material group for a Summon, or clears c's materials when g is nil.
 
 ## Parameters
 

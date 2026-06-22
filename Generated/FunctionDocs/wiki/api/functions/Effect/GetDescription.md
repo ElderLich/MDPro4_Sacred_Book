@@ -8,7 +8,7 @@ Effect.GetDescription(Effect e) -> int
 
 ## Description
 
-Returns the description of the effect
+Returns e's description id.
 
 ## Parameters
 

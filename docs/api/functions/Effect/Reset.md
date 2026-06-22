@@ -8,7 +8,7 @@ Effect.Reset(Effect e) -> void
 
 ## Description
 
-The effect of e reset, reset can not be used after this effect
+Removes e from its registered card or field effect list when e is still attached to a valid owner and handler.
 
 ## Parameters
 

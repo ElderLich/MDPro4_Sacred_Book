@@ -8,7 +8,7 @@ Duel.SelectEffectYesNo(int player, Card c, [int desc]) -> bool
 
 ## Description
 
-Let players choose whether to launch the card player c effect
+Asks player whether to use c's effect with description id desc, defaulting to 95.
 
 ## Parameters
 

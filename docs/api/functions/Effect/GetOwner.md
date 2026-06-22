@@ -8,7 +8,7 @@ Effect.GetOwner(Effect e) -> Card
 
 ## Description
 
-Returns the Owner property
+Returns the card that owns e.
 
 ## Parameters
 
