@@ -3,17 +3,21 @@
 ## Signature
 
 ```lua
-bit.band(any a, any b) -> void
+bit.band(int a, int b) -> int
 ```
 
 ## Description
 
-A and b with the bit
+Returns the bitwise AND of a and b.
 
 ## Parameters
 
-- `a` `any`
-- `b` `any`
+- `a` `int`
+- `b` `int`
+
+## Returns
+
+- `int` - Bitwise AND of a and b.
 
 ## Source
 

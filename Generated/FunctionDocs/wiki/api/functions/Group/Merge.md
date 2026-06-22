@@ -8,8 +8,7 @@ Group.Merge(Group g1, Group g2) -> void
 
 ## Description
 
-Combine all cards in g2 to g1
-Note: g2 itself does not change
+Adds every card from g2 into g1. g2 itself is not changed.
 
 ## Parameters
 

@@ -8,11 +8,7 @@ Auxiliary.bfgcost(Effect e, int tp, Group eg, int ep, any ev, Effect re, any r, 
 
 ## Description
 
-Simplified method for the filter condition of banishing this card, used in effect registration for cost
-function aux.bfgcost(e, tp, eg, ep, ev, re, r, rp, chk)
-  if chk==0 then return e:GetHandler():IsAbleToRemoveAsCost() end
-  Duel.Remove(e:GetHandler(), POS_FACEUP, REASON_COST)
-end
+Shared cost function that checks whether the handler can be banished as cost, then banishes it face-up as REASON_COST.
 
 ## Parameters
 

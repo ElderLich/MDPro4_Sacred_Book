@@ -8,7 +8,7 @@ Effect.GetLabelObject(Effect e) -> Card|Group|Effect
 
 ## Description
 
-Returns the LabelObject property
+Returns e's stored label object, or nil if none is stored or the object is no longer valid.
 
 ## Parameters
 

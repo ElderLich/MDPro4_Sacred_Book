@@ -8,7 +8,7 @@ Group.Clone(Group g) -> Group
 
 ## Description
 
-Create a new copy of card group g
+Creates and returns a new Group containing the same cards as g.
 
 ## Parameters
 

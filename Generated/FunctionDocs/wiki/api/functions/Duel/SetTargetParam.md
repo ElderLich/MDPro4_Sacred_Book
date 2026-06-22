@@ -8,7 +8,7 @@ Duel.SetTargetParam(int param) -> void
 
 ## Description
 
-Sets the object parameters of the chain that is currently being processed into param
+Stores param as the target parameter for the currently handled Chain.
 
 ## Parameters
 

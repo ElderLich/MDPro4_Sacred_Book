@@ -8,7 +8,7 @@ Effect.SetLabel(Effect e, ... int) -> void
 
 ## Description
 
-Sets the Label property
+Stores one or more integer label values on e, replacing any previous labels.
 
 ## Parameters
 

@@ -8,7 +8,7 @@ Card.IsControler(Card c, int controler) -> bool
 
 ## Description
 
-Check whether the current control of c is a controler
+Checks whether c's current controller is controler.
 
 ## Parameters
 

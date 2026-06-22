@@ -8,7 +8,7 @@ Effect.IsHasType(Effect e, int type) -> bool
 
 ## Description
 
-Check if the effect is of type type
+Checks whether e's effect type contains at least one flag from type.
 
 ## Parameters
 

@@ -8,7 +8,8 @@ Card.IsAbleToRemove(Card c, [int player], [int pos], [int reason]) -> bool
 
 ## Description
 
-Check whether c can be player except player
+Checks whether c can be banished by player in position pos for reason.
+player defaults to the current reason player, pos defaults to POS_FACEUP, and reason defaults to REASON_EFFECT.
 
 ## Parameters
 

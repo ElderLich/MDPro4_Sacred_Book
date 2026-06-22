@@ -8,7 +8,7 @@ Group.IsContains(Group g, Card c) -> bool
 
 ## Description
 
-Check g for card c
+Checks whether g contains card c.
 
 ## Parameters
 

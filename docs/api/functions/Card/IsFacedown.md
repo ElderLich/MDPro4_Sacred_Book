@@ -8,7 +8,7 @@ Card.IsFacedown(Card c) -> bool
 
 ## Description
 
-Check whether c is the backside representation
+Checks whether c is in face-down position.
 
 ## Parameters
 

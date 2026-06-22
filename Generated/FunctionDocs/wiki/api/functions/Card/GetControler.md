@@ -8,7 +8,7 @@ Card.GetControler(Card c) -> int
 
 ## Description
 
-Returns the current controller of c
+Returns c's current controller.
 
 ## Parameters
 

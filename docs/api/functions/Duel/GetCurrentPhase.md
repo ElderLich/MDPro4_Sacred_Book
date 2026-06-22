@@ -8,7 +8,7 @@ Duel.GetCurrentPhase() -> int
 
 ## Description
 
-Returns the current stage
+Returns the current phase constant.
 
 ## Returns
 

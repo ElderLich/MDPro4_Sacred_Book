@@ -8,8 +8,7 @@ Card.IsAbleToExtra(Card c) -> bool
 
 ## Description
 
-Check if c can send extra cards
-This function returns false for non-fusion, cohomology, and overdrive cards
+Checks whether c can be returned to the Extra Deck by the current reason player.
 
 ## Parameters
 

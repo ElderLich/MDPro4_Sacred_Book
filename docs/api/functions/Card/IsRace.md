@@ -8,7 +8,7 @@ Card.IsRace(Card c, int race) -> bool
 
 ## Description
 
-Check if c is race race
+Checks whether c currently has at least one Race flag from race.
 
 ## Parameters
 

@@ -8,7 +8,7 @@ Card.GetCode(Card c) -> int,int|nil
 
 ## Description
 
-Returns the current codename for c (possibly because the effect changes)
+Returns c's current card code and, when present, its secondary code.
 
 ## Parameters
 

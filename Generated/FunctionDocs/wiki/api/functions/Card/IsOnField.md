@@ -8,8 +8,7 @@ Card.IsOnField(Card c) -> bool
 
 ## Description
 
-Check if c is present
-Note: This function returns false when the monster summons, reverses the call, and when the summon is successful
+Checks whether c is currently on the field and is not being treated as off the field.
 
 ## Parameters
 

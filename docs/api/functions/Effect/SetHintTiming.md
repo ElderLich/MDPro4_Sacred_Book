@@ -8,7 +8,7 @@ Effect.SetHintTiming(Effect e, int s_time, [int o_time]) -> void
 
 ## Description
 
-Set the prompt point
+Sets when the client should offer or highlight e for the handler's controller and, optionally, the opponent.
 
 ## Parameters
 

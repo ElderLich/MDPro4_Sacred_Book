@@ -8,7 +8,7 @@ Duel.GetFieldGroupCount(int player, int s, int o) -> int
 
 ## Description
 
-Returns the number of cards in the specified location
+Returns the number of cards in the specified locations from player's viewpoint.
 
 ## Parameters
 

@@ -8,7 +8,7 @@ Card.IsAttribute(Card c, int attribute) -> bool
 
 ## Description
 
-Check whether c belongs to attribute attribute
+Checks whether c currently has at least one Attribute flag from attribute.
 
 ## Parameters
 

@@ -12,7 +12,7 @@ This is the working todo for turning Sacred Book into a complete MDPro3 scriptin
 - [x] Add function usage and script examples directly to API pages.
 - [x] Add a generated translation review queue for awkward/imported function English.
 - [x] Record the source-plan boundary for Miraheze/scrapi-book/scrapiyard inspiration without importing their API content.
-- [ ] Translate and review the highest-use imported function descriptions.
+- [x] Translate and review the first usage-ranked batch of highest-use imported function descriptions.
 - [x] Add tutorial-style `How To Use It` sections for targeting and Group basics.
 - [x] Add tutorial-style `How To Use It` sections for core movement/action functions.
 - [x] Add tutorial-style `How To Use It` sections for effect setter functions.
@@ -23,6 +23,7 @@ This is the working todo for turning Sacred Book into a complete MDPro3 scriptin
 - [ ] Give every function a clear summary, parameter notes, return notes, and at least one script-backed example where possible.
 - [x] Review movement/action function English and stale signatures against the MDPro3 core binding.
 - [x] Review effect setter function English and behavior notes against the MDPro3 core binding.
+- [x] Run a first usage-ranked terminology pass for common Card, Duel, Effect, Group, bit, Xyz, and Synchro function pages; imported English queue reduced from 593 to 528.
 - [ ] Review all `imported_from_dataeditorx` function English and replace awkward machine-style wording with natural MDPro3 terminology.
 - [ ] Check for any raw Chinese text that leaked into English fields after each generation.
 - [ ] Mark uncertain or inferred behavior clearly, with source confidence.

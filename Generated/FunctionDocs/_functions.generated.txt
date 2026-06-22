@@ -1253,8 +1253,7 @@ Returns:
 Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3592
 
 ●bool Card.IsAbleToExtra(Card c)
-检查c是否可以送去额外卡组
-对于非融合、同调等额外怪兽或者非灵摆怪兽此函数均返回false
+判断c能否由当前原因玩家返回额外卡组。
 Parameters:
   c: Card
 Returns:
@@ -2312,8 +2311,8 @@ Returns:
 Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3501
 
 ●bool Card.IsSynchroSummonable(Card c, [Card|nil tuner], [Group mg])
-检查是否可以以tuner作为调整，场上的卡[或mg]为同调素材对c进行同调召唤手续
-如果tuner是nil，此函数与Card.IsSpecialSummonable作用相同
+判断c能否使用tuner以及可用素材组mg进行同调召唤。
+tuner为nil时，相当于检查c通常的特殊召唤手续。
 Parameters:
   c: Card
   tuner: Card|nil optional
@@ -4495,9 +4494,8 @@ Source: D:\Programs\GitHub\ygopro-core\libduel.cpp:4979
 Source: D:\Programs\GitHub\ygopro-core\libduel.cpp:5025
 
 ●Group Duel.SelectSynchroMaterial(int player, Card c, [function|nil f1], [function|nil f2], int min, int max, [Card|nil smat], [Group|nil mg])
-让玩家player从场上[或mg中]选择用于同调c需要的[必须包含smat在内（如果有mg~=nil则忽略此参数）]满足条件的一组素材
-f1是 1 只需要满足的过滤条件，f2是 min-max 只需要满足的过滤条件
-f1,f2 之中，至少有一种为调整的条件
+让player为c选择同调素材，并返回选中的Group。
+f1筛选调整素材，f2筛选非调整素材，min和max限制非调整数量，smat指定必须包含的素材，mg提供可选的素材范围。
 Parameters:
   player: int
   c: Card
@@ -4717,7 +4715,7 @@ Parameters:
 Source: D:\Programs\GitHub\ygopro-core\libduel.cpp:5002
 
 ●void Duel.SetSynchroMaterial(Group g)
-设置g为需要使用的同调素材
+把g保存为当前召唤手续使用的同调素材组。
 Parameters:
   g: Group
 Source: D:\Programs\GitHub\ygopro-core\libduel.cpp:4991
@@ -4886,7 +4884,8 @@ Parameters:
 Source: D:\Programs\GitHub\ygopro-core\libduel.cpp:4885
 
 ●void Duel.SynchroSummon(int player, Card c, [Card|nil tuner], [Group|nil mg], [int minc], [int maxc])
-让玩家player以tuner作为调整,场上的卡[或mg]为素材，对c进行同调召唤手续
+为player进行c的同调召唤；可以指定必须使用的tuner，并可从mg中选择素材。
+minc和maxc可以限制该手续使用的非调整素材数量。
 Parameters:
   player: int
   c: Card
@@ -7773,11 +7772,13 @@ Returns:
 Source: Utilities/utility.lua:1353
 
 ========== bit ==========
-●void bit.band(any a, any b)
-TODO document.
+●int bit.band(int a, int b)
+返回a和b的按位与结果。
 Parameters:
-  a: any
-  b: any
+  a: int
+  b: int
+Returns:
+  int - Bitwise AND of a and b.
 Source: Utilities/utility.lua:15
 
 ●int bit.bnot(int a)
@@ -8230,12 +8231,13 @@ Parameters:
   maxc: int optional
 Source: Utilities/procedure.lua:60
 
-●void Auxiliary.AddSynchroProcedure2(Card c, any f1, any f2)
-TODO document.
+●void Auxiliary.AddSynchroProcedure2(Card c, [function|nil f1], [function|nil f2])
+为c登记旧式同调召唤手续，要求1只调整和1只非调整怪兽作为素材。
+等价于Auxiliary.AddSynchroProcedure(c, f1, f2, 1, 1)。
 Parameters:
   c: Card
-  f1: any
-  f2: any
+  f1: function|nil optional
+  f2: function|nil optional
 Source: Utilities/procedure.lua:123
 
 ●void Auxiliary.AddXyzProcedure(Card c, [function|nil f], int lv, int ct, [function alterf], [string alterdesc], [int maxct], [function alterop])

@@ -8,7 +8,7 @@ Card.IsPreviousControler(Card c, int player) -> bool
 
 ## Description
 
-Check if card c's previous controller was player
+Checks whether c's previous controller was player.
 
 ## Parameters
 

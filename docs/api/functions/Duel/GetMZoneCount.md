@@ -8,7 +8,8 @@ Duel.GetMZoneCount(int player, [Group|Card targets], [int use_player], [int reas
 
 ## Description
 
-Return the number of available \[zone slots\] in the Monster Zone on player's field \[after targets leave\]
+Returns the number of usable Monster Zones for player after targets leave, plus the usable zone mask.
+use_player, reason, and zone are used by effects that restrict where monsters can be placed.
 
 ## Parameters
 

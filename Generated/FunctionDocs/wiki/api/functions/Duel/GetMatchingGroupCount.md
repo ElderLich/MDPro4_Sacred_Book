@@ -8,7 +8,8 @@ Duel.GetMatchingGroupCount([function|nil f], int player, int s, int o, [Card|Gro
 
 ## Description
 
-Filter function to return to the specified location to meet the filter condition f and not equal to the number of ex card
+Counts cards in the specified locations that satisfy filter f and are not excluded by ex.
+Extra arguments after ex are passed to f after the card argument.
 
 ## Parameters
 

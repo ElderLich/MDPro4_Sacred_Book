@@ -8,7 +8,7 @@ Effect.SetLabelObject(Effect e, Card|Group|Effect labelobject) -> void
 
 ## Description
 
-Sets the LabelObject property
+Stores a Card, Group, Effect, or nil as e's label object.
 
 ## Parameters
 

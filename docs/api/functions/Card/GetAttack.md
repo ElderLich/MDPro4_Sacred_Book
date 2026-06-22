@@ -8,7 +8,7 @@ Card.GetAttack(Card c) -> int
 
 ## Description
 
-Return the current attack power of c, the return value is a negative that is "?"
+Returns c's current ATK. A negative value represents unknown ATK.
 
 ## Parameters
 

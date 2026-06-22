@@ -8,7 +8,7 @@ Effect.GetLabel(Effect e) -> ...
 
 ## Description
 
-Returns the Label property
+Returns e's stored integer labels. If no label was set, returns 0.
 
 ## Parameters
 

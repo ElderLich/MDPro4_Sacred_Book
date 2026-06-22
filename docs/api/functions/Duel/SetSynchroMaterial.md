@@ -8,7 +8,7 @@ Duel.SetSynchroMaterial(Group g) -> void
 
 ## Description
 
-Set g to be the cohomology material you want to use
+Stores g as the Synchro Material group for the current Summon procedure.
 
 ## Parameters
 

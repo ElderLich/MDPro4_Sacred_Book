@@ -8,7 +8,7 @@ Duel.GetAttackTarget() -> Card
 
 ## Description
 
-Return to the battle was attacked card, if the return nil said that a direct attack
+Returns the monster currently being attacked, or nil for a direct attack.
 
 ## Returns
 

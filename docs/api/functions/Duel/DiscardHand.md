@@ -8,8 +8,8 @@ Duel.DiscardHand(int player, [function|nil f], int min, int max, int reason, [Ca
 
 ## Description
 
-Filter function allows the player to select and discard the player to meet the screening conditions f soldiers is not equal to ex min-max Zhang card
-The seventh argument starts as an extra parameter
+Lets player choose and discard min to max matching cards from their hand for reason, then returns the number discarded.
+Cards in ex are excluded. Extra arguments after ex are passed to filter f.
 
 ## Parameters
 

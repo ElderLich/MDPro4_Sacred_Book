@@ -8,7 +8,7 @@ Effect.GetHandlerPlayer(Effect e) -> int
 
 ## Description
 
-Return to the current, usually Handle controller
+Returns the current controller of e's handler.
 
 ## Parameters
 

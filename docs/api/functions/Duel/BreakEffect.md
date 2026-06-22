@@ -8,7 +8,8 @@ Duel.BreakEffect() -> void
 
 ## Description
 
-Interrupt the current effect, so that after the effect of treatment as not treated simultaneously, this function will cause the wrong time
+Separates the current resolving effect into a later timing window, then raises EVENT_BREAK_EFFECT.
+Use this when card text says to do one action, then do another action afterward, so later triggers do not see both actions as simultaneous.
 
 ## Source
 

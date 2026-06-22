@@ -8,7 +8,7 @@ Card.EnableReviveLimit(Card c) -> void
 
 ## Description
 
-Add a limit to the cs for c
+Marks c as needing to be properly Summoned before it can be Special Summoned from public locations.
 
 ## Parameters
 

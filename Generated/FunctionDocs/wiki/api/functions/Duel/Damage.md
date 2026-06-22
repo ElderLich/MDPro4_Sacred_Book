@@ -8,9 +8,8 @@ Duel.Damage(int player, int value, int reason, [bool is_step]) -> int
 
 ## Description
 
-To the reason reason to give players the player caused value damage, the actual value of the damage received
-The return value is 0 if the damage becomes an effect such as a reply.
-Is_step to true is the damage / recovery LP process decomposition, need to call Duel.RDComplete() trigger point
+Deals value effect damage to player for reason and returns the damage actually applied.
+If damage is changed into LP recovery or prevented, the return value reflects the final applied damage. With is_step=true, finish the damage/recovery batch with Duel.RDComplete.
 
 ## Parameters
 

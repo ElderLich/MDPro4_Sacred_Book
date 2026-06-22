@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-06-22T05:45:36+00:00",
+    "generated_at": "2026-06-22T15:57:34+00:00",
     "workspace": "D:\\Programs\\GitHub\\MDPro3_Sacred_Book",
     "dataeditorx_data": "D:\\Programs\\GitHub\\DataEditorX\\DataEditorX\\data",
     "mdpro3_locales": "D:\\Programs\\GitHub\\MDPro3_Data\\Data\\locales",
@@ -1157,9 +1157,9 @@
         "##实际上是不可复制、不会被无效的EFFECT_UNSUMMONABLE_CARD和EFFECT_REVIVE_LIMIT效果"
       ],
       "description_en": [
-        "Add a limit to the cs for c"
+        "Marks c as needing to be properly Summoned before it can be Special Summoned from public locations."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
@@ -1250,9 +1250,9 @@
         "返回c的当前攻击力"
       ],
       "description_en": [
-        "Return the current attack power of c, the return value is a negative that is \"?\""
+        "Returns c's current ATK. A negative value represents unknown ATK."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
@@ -1977,9 +1977,9 @@
         "返回c的当前卡号（可能因为效果改变）"
       ],
       "description_en": [
-        "Returns the current codename for c (possibly because the effect changes)"
+        "Returns c's current card code and, when present, its secondary code."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
@@ -2204,9 +2204,9 @@
         "返回c的当前控制者"
       ],
       "description_en": [
-        "Returns the current controller of c"
+        "Returns c's current controller."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
@@ -3100,9 +3100,9 @@
         "返回c的当前等级"
       ],
       "description_en": [
-        "Returns the current level of c"
+        "Returns c's current Level."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
@@ -6512,14 +6512,12 @@
         }
       ],
       "description_zh": [
-        "检查c是否可以送去额外卡组",
-        "对于非融合、同调等额外怪兽或者非灵摆怪兽此函数均返回false"
+        "判断c能否由当前原因玩家返回额外卡组。"
       ],
       "description_en": [
-        "Check if c can send extra cards",
-        "This function returns false for non-fusion, cohomology, and overdrive cards"
+        "Checks whether c can be returned to the Extra Deck by the current reason player."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
@@ -6534,7 +6532,8 @@
       ],
       "aliases": [],
       "tags": [
-        "core-binding"
+        "core-binding",
+        "manual-zh-doc"
       ],
       "core_binding": true,
       "core_handler": "card_is_able_to_extra"
@@ -6695,10 +6694,10 @@
         "##以下几个函数类似"
       ],
       "description_en": [
-        "Check whether c can hand",
-        "Note: This function returns false only if the card or player is affected by the effect of being unable to join the hand (such as Ray King)"
+        "Checks whether c can be returned or added to the hand by the current reason player.",
+        "An optional player argument can be passed when a specific player is performing the action."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
@@ -6806,9 +6805,10 @@
         "检查c是否可以被玩家player除外"
       ],
       "description_en": [
-        "Check whether c can be player except player"
+        "Checks whether c can be banished by player in position pos for reason.",
+        "player defaults to the current reason player, pos defaults to POS_FACEUP, and reason defaults to REASON_EFFECT."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
@@ -7294,9 +7294,9 @@
         "检查c是否属于属性attribute"
       ],
       "description_en": [
-        "Check whether c belongs to attribute attribute"
+        "Checks whether c currently has at least one Attribute flag from attribute."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
@@ -8354,9 +8354,9 @@
         "检查c的当前控制着是否是controler"
       ],
       "description_en": [
-        "Check whether the current control of c is a controler"
+        "Checks whether c's current controller is controler."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
@@ -9035,9 +9035,9 @@
         "检查c是否是里侧表示"
       ],
       "description_en": [
-        "Check whether c is the backside representation"
+        "Checks whether c is in face-down position."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
@@ -9680,9 +9680,9 @@
         "检查c是否免疫效果e（即不受效果e的影响）"
       ],
       "description_en": [
-        "Check whether c immune effect e (that is not affected by the impact of e)"
+        "Checks whether c is unaffected by effect e."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
@@ -9792,9 +9792,9 @@
         "检查c是否是等级level以上"
       ],
       "description_en": [
-        "Check whether c is above level level"
+        "Checks whether c has a Level greater than 0 and greater than or equal to level."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
@@ -9842,9 +9842,9 @@
         "检查c是否是等级level以下（至少为1）"
       ],
       "description_en": [
-        "Check whether c is below the level level (at least 1)"
+        "Checks whether c has a Level greater than 0 and less than or equal to level."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
@@ -10708,10 +10708,9 @@
         "注：当怪兽召唤，反转召唤，特殊召唤时召唤成功之前，此函数返回false"
       ],
       "description_en": [
-        "Check if c is present",
-        "Note: This function returns false when the monster summons, reverses the call, and when the summon is successful"
+        "Checks whether c is currently on the field and is not being treated as off the field."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
@@ -10959,9 +10958,9 @@
         "检查c的上一个控制者是否为player"
       ],
       "description_en": [
-        "Check if card c's previous controller was player"
+        "Checks whether c's previous controller was player."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
@@ -11009,9 +11008,9 @@
         "检查c之前的位置是否是location"
       ],
       "description_en": [
-        "Check if the location before c is location"
+        "Checks whether c's previous location included location."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
@@ -11203,9 +11202,9 @@
         "检查c是否属于种族race"
       ],
       "description_en": [
-        "Check if c is race race"
+        "Checks whether c currently has at least one Race flag from race."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
@@ -11415,9 +11414,9 @@
         "检查c是否包含reason之中任何原因"
       ],
       "description_en": [
-        "Check if c contains the reason"
+        "Checks whether c's current reason flags include reason."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
@@ -11460,10 +11459,9 @@
         "注：此效果通常用于伤害计算后伤害阶段结束前，用于检查战斗的卡是否离场过"
       ],
       "description_en": [
-        "Check whether c is associated with this battle",
-        "Note: This effect is usually used for damage calculation before the end of the injury phase, used to check whether the fighting off the card too"
+        "Checks whether c is still related to the current battle, usually during the Damage Step or shortly after damage calculation."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
@@ -12325,14 +12323,14 @@
         }
       ],
       "description_zh": [
-        "检查是否可以以tuner作为调整，场上的卡[或mg]为同调素材对c进行同调召唤手续",
-        "如果tuner是nil，此函数与Card.IsSpecialSummonable作用相同"
+        "判断c能否使用tuner以及可用素材组mg进行同调召唤。",
+        "tuner为nil时，相当于检查c通常的特殊召唤手续。"
       ],
       "description_en": [
-        "Check whether tuner can be used as an adjustment, the field card [or mg] for the coherent material on the c cohomology summon procedures",
-        "If the tuner is nil, this function has the same effect as Card.IsSpecialSummonable"
+        "Checks whether c can be Synchro Summoned with tuner and the available material group mg.",
+        "If tuner is nil, this behaves like the regular Special Summon procedure check for c."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
@@ -12347,7 +12345,8 @@
       ],
       "aliases": [],
       "tags": [
-        "core-binding"
+        "core-binding",
+        "manual-zh-doc"
       ],
       "core_binding": true,
       "core_handler": "card_is_synchro_summonable"
@@ -12795,13 +12794,10 @@
         "并且不会无效化，不受卡的免疫效果影响"
       ],
       "description_en": [
-        "For the registration of a logo with the results",
-        "Note: The effect of the registration to the card is not used for the system,",
-        "Even if the code and the built-in effect code coincidence will not affect,",
-        "And the type is always EFFECT_TYPE_SINGLE, reset method, property, and the general effect of the same,",
-        "And will not be invalidated, immune effect from the card"
+        "Registers a special single-card flag effect on c and returns the created Effect.",
+        "Flag effects are script markers: their code is kept separate from regular effect codes, they cannot be disabled, and count=0 is treated as 1."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
@@ -15071,9 +15067,10 @@
         "中断当前效果，使之后的效果处理视为不同时处理，此函数会造成错时点"
       ],
       "description_en": [
-        "Interrupt the current effect, so that after the effect of treatment as not treated simultaneously, this function will cause the wrong time"
+        "Separates the current resolving effect into a later timing window, then raises EVENT_BREAK_EFFECT.",
+        "Use this when card text says to do one action, then do another action afterward, so later triggers do not see both actions as simultaneous."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libduel.cpp",
@@ -16728,9 +16725,10 @@
         "给玩家player确认targets"
       ],
       "description_en": [
-        "Identify targets for the player"
+        "Reveals a Card or Group to player and waits for the client confirmation.",
+        "If skip_panel is true, the client skips the extra confirmation panel when possible."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libduel.cpp",
@@ -16942,11 +16940,10 @@
         "is_step为true则是伤害/恢复LP过程的分解，需要调用Duel.RDComplete()触发时点"
       ],
       "description_en": [
-        "To the reason reason to give players the player caused value damage, the actual value of the damage received",
-        "The return value is 0 if the damage becomes an effect such as a reply.",
-        "Is_step to true is the damage / recovery LP process decomposition, need to call Duel.RDComplete() trigger point"
+        "Deals value effect damage to player for reason and returns the damage actually applied.",
+        "If damage is changed into LP recovery or prevented, the return value reflects the final applied damage. With is_step=true, finish the damage/recovery batch with Duel.RDComplete."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libduel.cpp",
@@ -17241,10 +17238,10 @@
         "第7个参数开始为额外参数"
       ],
       "description_en": [
-        "Filter function allows the player to select and discard the player to meet the screening conditions f soldiers is not equal to ex min-max Zhang card",
-        "The seventh argument starts as an extra parameter"
+        "Lets player choose and discard min to max matching cards from their hand for reason, then returns the number discarded.",
+        "Cards in ex are excluded. Extra arguments after ex are passed to filter f."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libduel.cpp",
@@ -17299,10 +17296,10 @@
         "如果reason含有REASON_RULE则此次抽卡不受“不能抽卡”的效果的影响"
       ],
       "description_en": [
-        "Let the player play the count card with the reason, and return the number of cards actually drawn",
-        "If the reason contains REASON_RULE the draw is not affected by the \"can not draw\" effect"
+        "Makes player draw up to count cards for reason and returns the number actually drawn.",
+        "When reason includes REASON_RULE, effects that prevent drawing are ignored."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libduel.cpp",
@@ -17556,9 +17553,9 @@
         "返回此次战斗攻击的卡"
       ],
       "description_en": [
-        "Return the card for this combat attack"
+        "Returns the monster that is currently attacking, or nil if there is no current attacker."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libduel.cpp",
@@ -17593,9 +17590,9 @@
         "返回此次战斗被攻击的卡，如果返回nil表示是直接攻击"
       ],
       "description_en": [
-        "Return to the battle was attacked card, if the return nil said that a direct attack"
+        "Returns the monster currently being attacked, or nil for a direct attack."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libduel.cpp",
@@ -17863,27 +17860,10 @@
         "将会返回当前连锁发生的位置和对象卡"
       ],
       "description_en": [
-        "Returns the chainc information, if chainc = 0, returns the chain of information currently being processed",
-        "This function returns the corresponding number of return values ​​in sequence according to the number of arguments passed in. The arguments can be:",
-        "CHAININFO_CHAIN_COUNT The serial number of the chain",
-        "CHAININFO_TRIGGERING_EFFECT The effect of the chain",
-        "CHAININFO_TRIGGERING_PLAYER",
-        "CHAININFO_TRIGGERING_CONTROLER The player to which the chained position belongs",
-        "CHAININFO_TRIGGERING_LOCATION The location where the chain occurred",
-        "CHAININFO_TRIGGERING_SEQUENCE The number of the position where the chain occurred",
-        "CHAININFO_TARGET_CARDS Chain of object cards",
-        "CHAININFO_TARGET_PLAYER The target player for the chain",
-        "CHAININFO_TARGET_PARAM The object parameters of the chain",
-        "CHAININFO_DISABLE_REASON The chain is invalid for the effect of the effect",
-        "CHAININFO_DISABLE_PLAYER The chain is invalid for the reason the player",
-        "CHAININFO_CHAIN_ID The unique identifier for the chain",
-        "CHAININFO_TYPE Type of Chain Card (Monster, Magic, Trap)",
-        "CHAININFO_EXTTYPE The specific type of chain card (for example, monster, continuous magic, counterattack trap)",
-        "For example:",
-        "Duel.GetChainInfo(0, CHAININFO_TRIGGERING_LOCATION, CHAININFO_TARGET_CARDS)",
-        "This will return the location and object card where the current chain occurred"
+        "Returns information fields from chainc in the same order as the requested CHAININFO_* constants.",
+        "Use chainc=0 for the currently resolving Chain. Unknown requested fields return nil, and no values are returned if the Chain does not exist."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libduel.cpp",
@@ -18187,9 +18167,9 @@
         "返回当前的阶段"
       ],
       "description_en": [
-        "Returns the current stage"
+        "Returns the current phase constant."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libduel.cpp",
@@ -18615,9 +18595,9 @@
         "同 Duel.GetFieldGroup ，只是返回的是卡的数量"
       ],
       "description_en": [
-        "Returns the number of cards in the specified location"
+        "Returns the number of cards in the specified locations from player's viewpoint."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libduel.cpp",
@@ -19430,9 +19410,10 @@
         "第6个参数开始为额外参数"
       ],
       "description_en": [
-        "Filter function to return to the specified location to meet the filter condition f and not equal to the number of ex card"
+        "Counts cards in the specified locations that satisfy filter f and are not excluded by ex.",
+        "Extra arguments after ex are passed to f after the card argument."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libduel.cpp",
@@ -19553,9 +19534,10 @@
         "##第三个第四个额外参数与凯撒斗技场等限制格子的效果有关"
       ],
       "description_en": [
-        "Return the number of available [zone slots] in the Monster Zone on player's field [after targets leave]"
+        "Returns the number of usable Monster Zones for player after targets leave, plus the usable zone mask.",
+        "use_player, reason, and zone are used by effects that restrict where monsters can be placed."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libduel.cpp",
@@ -20475,9 +20457,9 @@
         "返回当前的回合玩家"
       ],
       "description_en": [
-        "Returns the current round of players"
+        "Returns the current turn player."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libduel.cpp",
@@ -20661,9 +20643,9 @@
         "手动为g显示被选为对象的动画效果"
       ],
       "description_en": [
-        "Manually displays the animated effect of the selected object for g and records that the card is selected as the object"
+        "Displays the selection animation for g and records those cards as selected for client feedback."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libduel.cpp",
@@ -21482,9 +21464,9 @@
         "检查player是否受到种类为code的效果影响，如果有就返回该效果，没有则返回nil"
       ],
       "description_en": [
-        "Check if the player is affected by the effect of the code type, and return the effect if there is one"
+        "Returns an effect affecting player with code, or nil if no matching effect exists. Some effects may return additional values."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libduel.cpp",
@@ -23496,9 +23478,9 @@
         "把效果e作为玩家player的效果注册给全局环境"
       ],
       "description_en": [
-        "Register the effect e as the player's effect to the global environment"
+        "Registers e as a player/global effect for player."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libduel.cpp",
@@ -24862,15 +24844,14 @@
         }
       ],
       "description_zh": [
-        "让玩家player从场上[或mg中]选择用于同调c需要的[必须包含smat在内（如果有mg~=nil则忽略此参数）]满足条件的一组素材",
-        "f1是 1 只需要满足的过滤条件，f2是 min-max 只需要满足的过滤条件",
-        "f1,f2 之中，至少有一种为调整的条件"
+        "让player为c选择同调素材，并返回选中的Group。",
+        "f1筛选调整素材，f2筛选非调整素材，min和max限制非调整数量，smat指定必须包含的素材，mg提供可选的素材范围。"
       ],
       "description_en": [
-        "Let the player player [from mg] select a set of clips that are required for the cohomology c [must contain smat (if there is mg ~ = nil this parameter is ignored)] The number of min-max clips that satisfy the condition",
-        "F1 is to adjust the filter conditions to be met, f2 is outside the adjustment to meet the needs of the filter conditions"
+        "Lets player select Synchro Materials for c and returns the selected Group.",
+        "f1 filters the Tuner material, f2 filters non-Tuner materials, min and max restrict the non-Tuner count, smat forces a required material, and mg supplies an optional material pool."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libduel.cpp",
@@ -24885,7 +24866,8 @@
       ],
       "aliases": [],
       "tags": [
-        "core-binding"
+        "core-binding",
+        "manual-zh-doc"
       ],
       "core_binding": true,
       "core_handler": "duel_select_synchro_material"
@@ -25254,9 +25236,9 @@
         "让玩家player选择是或否"
       ],
       "description_en": [
-        "Let player player select Yes or No"
+        "Asks player a yes/no prompt using description id desc and returns true for Yes."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libduel.cpp",
@@ -26036,12 +26018,12 @@
         }
       ],
       "description_zh": [
-        "设置g为需要使用的同调素材"
+        "把g保存为当前召唤手续使用的同调素材组。"
       ],
       "description_en": [
-        "Set g to be the cohomology material you want to use"
+        "Stores g as the Synchro Material group for the current Summon procedure."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libduel.cpp",
@@ -26056,7 +26038,8 @@
       ],
       "aliases": [],
       "tags": [
-        "core-binding"
+        "core-binding",
+        "manual-zh-doc"
       ],
       "core_binding": true,
       "core_handler": "duel_set_synchro_material"
@@ -26084,10 +26067,10 @@
         "注，这里的对象指的的广义的对象，包括不取对象的效果可能要处理的对象"
       ],
       "description_en": [
-        "Sets the currently chained objects to targets",
-        "Note that here the object refers to the generalized object, including objects that do not take the effect that the object may have to deal with"
+        "Stores targets as the target cards for the currently handled Chain.",
+        "This records broad operation targets; it does not by itself check whether the cards are legal effect targets."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libduel.cpp",
@@ -26129,9 +26112,9 @@
         "把当前正在处理的连锁的对象参数设置成param"
       ],
       "description_en": [
-        "Sets the object parameters of the chain that is currently being processed into param"
+        "Stores param as the target parameter for the currently handled Chain."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libduel.cpp",
@@ -26173,9 +26156,9 @@
         "把当前正在处理的连锁的对象玩家设置成player"
       ],
       "description_en": [
-        "Set the player that is currently handling the chained object to player"
+        "Stores player as the target player for the currently handled Chain."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libduel.cpp",
@@ -27118,12 +27101,14 @@
         }
       ],
       "description_zh": [
-        "让玩家player以tuner作为调整,场上的卡[或mg]为素材，对c进行同调召唤手续"
+        "为player进行c的同调召唤；可以指定必须使用的tuner，并可从mg中选择素材。",
+        "minc和maxc可以限制该手续使用的非调整素材数量。"
       ],
       "description_en": [
-        "Let the player player to tuner as the adjustment [mg for the material] on the c cohomology summon procedures"
+        "Performs a Synchro Summon of c for player, optionally requiring tuner and selecting materials from mg.",
+        "minc and maxc can restrict the number of non-Tuner materials used by the procedure."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libduel.cpp",
@@ -27138,7 +27123,8 @@
       ],
       "aliases": [],
       "tags": [
-        "core-binding"
+        "core-binding",
+        "manual-zh-doc"
       ],
       "core_binding": true,
       "core_handler": "duel_synchro_summon"
@@ -27444,9 +27430,9 @@
         "新建一个效果e的副本"
       ],
       "description_en": [
-        "Create a new copy of effect e"
+        "Creates and returns a new Effect object copied from e."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libeffect.cpp",
@@ -27975,9 +27961,9 @@
         "返回当前玩家，一般是Handler的控制者"
       ],
       "description_en": [
-        "Return to the current, usually Handle controller"
+        "Returns the current controller of e's handler."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libeffect.cpp",
@@ -28019,9 +28005,9 @@
         "返回Label属性"
       ],
       "description_en": [
-        "Returns the Label property"
+        "Returns e's stored integer labels. If no label was set, returns 0."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libeffect.cpp",
@@ -28063,9 +28049,9 @@
         "返回LabelObject属性"
       ],
       "description_en": [
-        "Returns the LabelObject property"
+        "Returns e's stored label object, or nil if none is stored or the object is no longer valid."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libeffect.cpp",
@@ -28614,9 +28600,9 @@
         "检查e的效果类型（怪兽·魔法·陷阱）是否有type"
       ],
       "description_en": [
-        "Check if the effect type of e (monster, magic, trap) has a type"
+        "Checks whether e's active card type contains at least one flag from type."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libeffect.cpp",
@@ -28864,9 +28850,9 @@
         "检查效果是否属于类型type"
       ],
       "description_en": [
-        "Check if the effect is of type type"
+        "Checks whether e's effect type contains at least one flag from type."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libeffect.cpp",
@@ -29358,9 +29344,9 @@
         "设置提示时点，第二个和第三个参数分别表示 自己 和对方的回合"
       ],
       "description_en": [
-        "Set the prompt point"
+        "Sets when the client should offer or highlight e for the handler's controller and, optionally, the opponent."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libeffect.cpp",
@@ -29408,9 +29394,9 @@
         "设置Label属性"
       ],
       "description_en": [
-        "Sets the Label property"
+        "Stores one or more integer label values on e, replacing any previous labels."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libeffect.cpp",
@@ -29458,9 +29444,9 @@
         "设置LabelObject属性"
       ],
       "description_en": [
-        "Sets the LabelObject property"
+        "Stores a Card, Group, Effect, or nil as e's label object."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libeffect.cpp",
@@ -30588,9 +30574,9 @@
         "新建卡片组g的副本"
       ],
       "description_en": [
-        "Create a new copy of card group g"
+        "Creates and returns a new Group containing the same cards as g."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libgroup.cpp",
@@ -31457,9 +31443,9 @@
         "检查g中是否存在卡片c"
       ],
       "description_en": [
-        "Check g for card c"
+        "Checks whether g contains card c."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libgroup.cpp",
@@ -31622,10 +31608,9 @@
         "注：g2本身不会发生变化"
       ],
       "description_en": [
-        "Combine all cards in g2 to g1",
-        "Note: g2 itself does not change"
+        "Adds every card from g2 into g1. g2 itself is not changed."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libgroup.cpp",
@@ -34283,13 +34268,9 @@
       ],
       "description_zh": [],
       "description_en": [
-        "Simplified method for the filter condition of banishing this card, used in effect registration for cost",
-        "function aux.bfgcost(e, tp, eg, ep, ev, re, r, rp, chk)",
-        "  if chk==0 then return e:GetHandler():IsAbleToRemoveAsCost() end",
-        "  Duel.Remove(e:GetHandler(), POS_FACEUP, REASON_COST)",
-        "end"
+        "Shared cost function that checks whether the handler can be banished as cost, then banishes it face-up as REASON_COST."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -37017,15 +36998,10 @@
       ],
       "description_zh": [],
       "description_en": [
-        "Filter cards satisfying a single filter condition f, returning a function with a bool return type; additional parameters start from the second parameter",
-        "function Auxiliary.FilterBoolFunction(f,...)",
-        "  local ext_params={...}",
-        "  return function(target)",
-        "    return f(target,table.unpack(ext_params))",
-        "  end",
-        "end"
+        "Returns a filter function that calls f(target, ...) with the extra arguments captured now.",
+        "Use this when another API expects a one-argument Card filter but the real filter needs fixed extra values."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -39809,14 +39785,9 @@
       ],
       "description_zh": [],
       "description_en": [
-        "Return a new filter condition based on filter condition f: cards that satisfy f and are not affected by Necrovalley",
-        "function Auxiliary.NecroValleyFilter(f)",
-        "  return function(target,...)",
-        "    return f(target,...) and not (target:IsHasEffect(EFFECT_NECRO_VALLEY) and Duel.IsChainDisablable(0))",
-        "  end",
-        "end"
+        "Returns a wrapper filter that requires f(target, ...) and also rejects cards currently protected by Necrovalley while the Chain is disablable."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -44074,28 +44045,30 @@
       "params": [
         {
           "name": "a",
-          "type": "any",
+          "type": "int",
           "optional": false,
           "description": ""
         },
         {
           "name": "b",
-          "type": "any",
+          "type": "int",
           "optional": false,
           "description": ""
         }
       ],
       "returns": [
         {
-          "type": "nil",
-          "description": ""
+          "type": "int",
+          "description": "Bitwise AND of a and b."
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "A and b with the bit"
+      "description_zh": [
+        "返回a和b的按位与结果。"
       ],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "Returns the bitwise AND of a and b."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -44104,7 +44077,10 @@
         }
       ],
       "aliases": [],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -46794,11 +46770,10 @@
         "Synchro monster, 1 tuner + min to max monsters"
       ],
       "description_en": [
-        "Add a cohomology call to c",
-        "F1 to adjust the filter to meet the conditions, f2 to adjust to meet other than the filter conditions (usually aux.NonTuner)",
-        "Adjust monsters other than ct at least"
+        "Registers the standard Synchro Summon procedure for c.",
+        "f1 filters the Tuner material, f2 filters non-Tuner materials, and minc/maxc set the number of non-Tuner materials required."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/procedure.lua",
@@ -46826,30 +46801,27 @@
         },
         {
           "name": "f1",
-          "type": "any",
-          "optional": false,
+          "type": "function|nil",
+          "optional": true,
           "description": ""
         },
         {
           "name": "f2",
-          "type": "any",
-          "optional": false,
+          "type": "function|nil",
+          "optional": true,
           "description": ""
         }
       ],
-      "returns": [
-        {
-          "type": "nil",
-          "description": ""
-        }
+      "returns": [],
+      "description_zh": [
+        "为c登记旧式同调召唤手续，要求1只调整和1只非调整怪兽作为素材。",
+        "等价于Auxiliary.AddSynchroProcedure(c, f1, f2, 1, 1)。"
       ],
-      "description_zh": [],
       "description_en": [
-        "Add a cohomology call to c",
-        "F1 to adjust the filter to meet the conditions, f2 to adjust to meet other than the filter conditions (usually aux.NonTuner)",
-        "Can only be adjusted with a monster outside"
+        "Backward-compatible helper for a Synchro Monster that uses exactly 1 Tuner and 1 non-Tuner material.",
+        "It calls Auxiliary.AddSynchroProcedure(c, f1, f2, 1, 1)."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/procedure.lua",
@@ -46860,7 +46832,10 @@
       "aliases": [
         "aux.AddSynchroProcedure2"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -46928,12 +46903,10 @@
         "Xyz monster, lv k*n"
       ],
       "description_en": [
-        "Add an excess summon for c",
-        "With the conditions to meet the conditions for the f-level cv-maxct lv monster to be stacked",
-        "The rest of the parameters are used to stack on a single monster (usually an excess of monsters)",
-        "Alterf for this monster to meet the conditions, desc for the description, op for the stacked operation (hope Huanglong)"
+        "Registers the standard Xyz Summon procedure for c.",
+        "f filters materials, lv is the required Level, ct is the minimum material count, and maxct optionally caps the maximum. alterf/alterdesc/alterop define an alternate one-card Xyz Summon route."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/procedure.lua",
@@ -51247,10 +51220,10 @@
       ],
       "description_zh": [],
       "description_en": [
-        "Filter non-Tuner monsters satisfying a single filter condition f, returning a function with a bool return type; if only non-Tuner monsters are required, use aux.NonTuner(nil)",
-        "Additional parameters start from the second parameter"
+        "Returns a non-Tuner material filter that also applies f when f is supplied.",
+        "Extra arguments are captured now and passed to f after the Card argument."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/procedure.lua",

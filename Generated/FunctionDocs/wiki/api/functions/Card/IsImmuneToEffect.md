@@ -8,7 +8,7 @@ Card.IsImmuneToEffect(Card c, Effect e) -> bool
 
 ## Description
 
-Check whether c immune effect e (that is not affected by the impact of e)
+Checks whether c is unaffected by effect e.
 
 ## Parameters
 

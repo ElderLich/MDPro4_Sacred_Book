@@ -8,7 +8,7 @@ Duel.GetAttacker() -> Card
 
 ## Description
 
-Return the card for this combat attack
+Returns the monster that is currently attacking, or nil if there is no current attacker.
 
 ## Returns
 

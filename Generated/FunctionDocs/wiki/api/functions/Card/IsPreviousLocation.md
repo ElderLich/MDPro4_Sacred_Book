@@ -8,7 +8,7 @@ Card.IsPreviousLocation(Card c, int location) -> bool
 
 ## Description
 
-Check if the location before c is location
+Checks whether c's previous location included location.
 
 ## Parameters
 

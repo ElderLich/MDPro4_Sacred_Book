@@ -8,7 +8,7 @@ Effect.Clone(Effect e) -> Effect
 
 ## Description
 
-Create a new copy of effect e
+Creates and returns a new Effect object copied from e.
 
 ## Parameters
 

@@ -8,8 +8,8 @@ Card.IsAbleToHand(Card c) -> bool
 
 ## Description
 
-Check whether c can hand
-Note: This function returns false only if the card or player is affected by the effect of being unable to join the hand (such as Ray King)
+Checks whether c can be returned or added to the hand by the current reason player.
+An optional player argument can be passed when a specific player is performing the action.
 
 ## Parameters
 

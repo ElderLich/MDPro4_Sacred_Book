@@ -8,7 +8,7 @@ Effect.IsActiveType(Effect e, int type) -> bool
 
 ## Description
 
-Check if the effect type of e (monster, magic, trap) has a type
+Checks whether e's active card type contains at least one flag from type.
 
 ## Parameters
 

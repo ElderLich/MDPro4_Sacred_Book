@@ -8,8 +8,7 @@ Card.IsRelateToBattle(Card c) -> bool
 
 ## Description
 
-Check whether c is associated with this battle
-Note: This effect is usually used for damage calculation before the end of the injury phase, used to check whether the fighting off the card too
+Checks whether c is still related to the current battle, usually during the Damage Step or shortly after damage calculation.
 
 ## Parameters
 

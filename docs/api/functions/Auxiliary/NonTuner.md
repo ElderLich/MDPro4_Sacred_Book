@@ -8,8 +8,8 @@ Auxiliary.NonTuner(function f, ... any) -> void
 
 ## Description
 
-Filter non-Tuner monsters satisfying a single filter condition f, returning a function with a bool return type; if only non-Tuner monsters are required, use aux.NonTuner(nil)
-Additional parameters start from the second parameter
+Returns a non-Tuner material filter that also applies f when f is supplied.
+Extra arguments are captured now and passed to f after the Card argument.
 
 ## Parameters
 
