@@ -8,6 +8,7 @@
     "docs:generate": "npm run reference:generate && npm run site:generate",
     "docs:dev": "npm run docs:generate && vitepress dev docs",
     "docs:build": "npm run docs:generate && vitepress build docs",
+    "site:build": "vitepress build docs",
     "docs:preview": "vitepress preview docs"
   },
   "devDependencies": {

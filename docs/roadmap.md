@@ -45,7 +45,7 @@ This is the working todo for turning Sacred Book into a complete MDPro3 scriptin
 
 ## Quality Checks
 
-- [ ] Add a site generation check in CI.
+- [x] Add a site generation check in CI.
 - [ ] Add markdown link validation for generated and hand-written pages.
 - [ ] Add a data freshness report that compares scripts, constants, strings, and locale files against the source folders.
 - [ ] Keep milestone commits small enough that generated-data changes are easy to review.
