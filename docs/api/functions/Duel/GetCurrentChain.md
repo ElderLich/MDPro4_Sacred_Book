@@ -8,7 +8,7 @@ Duel.GetCurrentChain() -> int
 
 ## Description
 
-Returns the chain number currently being processed
+Returns the number of Chain Links currently stored in the active Chain.
 
 ## Returns
 

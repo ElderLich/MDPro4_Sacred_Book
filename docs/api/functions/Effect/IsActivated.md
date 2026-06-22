@@ -8,7 +8,7 @@ Effect.IsActivated(Effect e) -> bool
 
 ## Description
 
-Check the effect of e is the effect of starting (chassis)
+Checks whether e has one of the EFFECT_TYPES_CHAIN_LINK type bits.
 
 ## Parameters
 

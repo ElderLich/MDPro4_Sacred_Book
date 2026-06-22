@@ -8,7 +8,8 @@ Card.IsAttack(Card c, int atk1, [int atk2], [... int]) -> bool
 
 ## Description
 
-Check if card c's ATK is atk1 \[, or atk2...\], returns false if c is not a monster card or not in LOCATION_MZONE
+Checks whether c is a monster or currently treated as one, and whether its current ATK equals any supplied atk value.
+Nil atk arguments are skipped. Non-monsters that are not treated as monsters return false.
 
 ## Parameters
 

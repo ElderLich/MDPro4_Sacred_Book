@@ -8,7 +8,7 @@ Card.GetOriginalType(Card c) -> int
 
 ## Description
 
-Returns the type of card entry for c
+Returns c's original card-data type bitmask, not its current modified type.
 
 ## Parameters
 

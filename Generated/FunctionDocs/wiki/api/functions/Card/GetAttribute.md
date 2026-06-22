@@ -8,8 +8,8 @@ Card.GetAttribute(Card c) -> int
 
 ## Description
 
-Returns the current attribute of c
-Note: For some multi-attribute monsters such as light and dark dragon, the return value of this function may be a combination of several properties of the value
+Returns c's current Attribute bitmask.
+Cards treated as having multiple Attributes can return a bitwise combination of ATTRIBUTE_* values.
 
 ## Parameters
 

@@ -8,7 +8,7 @@ Auxiliary.AddFusionProcFun2(Card c, function|table f1, function|table f2, bool i
 
 ## Description
 
-For the c to specify conditions for the f1 and f2 monsters for the fusion material
+Registers a Fusion Summon procedure on c that requires one material satisfying f1 and one material satisfying f2.
 
 ## Parameters
 

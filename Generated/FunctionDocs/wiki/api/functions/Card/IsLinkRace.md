@@ -8,13 +8,13 @@ Card.IsLinkRace(Card c, int race, [int player]) -> bool
 
 ## Description
 
-Check if card c, when used as Link Material \[for a Link Summon by player\], has Race race
+Checks whether c's Race while used as Link Material for player contains race. player defaults to the current reason player.
 
 ## Parameters
 
 - `c` `Card`
 - `race` `int`
-- `player` `int` optional
+- `player` `int` optional - default: current reason player
 
 ## Returns
 

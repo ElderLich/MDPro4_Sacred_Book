@@ -8,7 +8,8 @@ Card.IsAttackAbove(Card c, int atk) -> bool
 
 ## Description
 
-Check whether c is more than attack power atk
+Checks whether c is a monster or currently treated as one, and whether its current ATK is at least atk.
+Unlike Card.IsAttackBelow, this core does not add a separate guard for unknown ATK before comparing.
 
 ## Parameters
 

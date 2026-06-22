@@ -8,7 +8,7 @@ Effect.GetOwnerPlayer(Effect e) -> int
 
 ## Description
 
-Returns the OwnerPlayer property, which is typically the controller of the Owner
+Returns the player stored as e's owner player.
 
 ## Parameters
 

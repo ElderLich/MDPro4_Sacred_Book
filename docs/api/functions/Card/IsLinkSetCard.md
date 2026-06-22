@@ -3,17 +3,19 @@
 ## Signature
 
 ```lua
-Card.IsLinkSetCard(Card c, ... int) -> bool
+Card.IsLinkSetCard(Card c, int setcode1, [int setcode2], [... int]) -> bool
 ```
 
 ## Description
 
-Check if card c, when used as Link Material, can be treated as a card with setname in its name
+Checks whether c can be treated as any supplied setcode while used as Link Material. Nil setcode arguments are skipped.
 
 ## Parameters
 
 - `c` `Card`
-- `...` `int`
+- `setcode1` `int`
+- `setcode2` `int` optional
+- `...` `int` optional
 
 ## Returns
 

@@ -3,28 +3,27 @@
 ## Signature
 
 ```lua
-Group.SelectUnselect(Group cg, [Group|nil sg], int player, bool btok, bool cancelable, int minc, int maxc) -> Card|nil
+Group.SelectUnselect(Group cg, [Group|nil sg], int player, [bool finishable], [bool cancelable], [int min], [int max]) -> Card|nil
 ```
 
 ## Description
 
-Have player select 1 card from cg to add to sg and return the selected card
-btok indicates whether the confirm selection button is available, cancelable indicates whether selected cards can be canceled
-minc and maxc are client-side text buffer prompts indicating the need to select minc-maxc cards, but this only affects visual display and does not enforce the selection count
+Lets player choose one card from cg to add to the current selection or one card from sg to remove from it, then returns the card that was chosen.
+sg may be nil. finishable controls whether the selection can finish at its current size, cancelable allows cancellation, and cancellation returns nil. min and max default to 1.
 
 ## Parameters
 
 - `cg` `Group`
-- `sg` `Group|nil` optional - already selected cards that can be unselected
+- `sg` `Group|nil` optional
 - `player` `int`
-- `btok` `bool` - default: false
-- `cancelable` `bool` - default: false
-- `minc` `int`
-- `maxc` `int`
+- `finishable` `bool` optional - default: false
+- `cancelable` `bool` optional - default: false
+- `min` `int` optional - default: 1
+- `max` `int` optional - default: 1
 
 ## Returns
 
-- `Card|nil`
+- `Card|nil` - Chosen card, or nil if the selection is canceled.
 
 ## Source
 

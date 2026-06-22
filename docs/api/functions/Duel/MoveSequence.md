@@ -8,7 +8,8 @@ Duel.MoveSequence(Card c, int seq) -> void
 
 ## Description
 
-Move the serial number of c, usually used to change the grid in the field or in the card group to move to the top or bottom
+Moves c to sequence seq within its current controller and location if c is affected by the resolving reason effect.
+The core raises EVENT_MOVE for the moved card and returns no Lua values.
 
 ## Parameters
 

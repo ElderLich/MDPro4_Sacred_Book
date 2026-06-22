@@ -8,7 +8,7 @@ Card.IsAttackPos(Card c) -> bool
 
 ## Description
 
-Check whether c is an attack
+Checks whether c's current position contains POS_ATTACK.
 
 ## Parameters
 

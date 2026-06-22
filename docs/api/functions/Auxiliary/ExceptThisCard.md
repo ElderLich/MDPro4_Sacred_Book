@@ -3,20 +3,20 @@
 ## Signature
 
 ```lua
-Auxiliary.ExceptThisCard(Effect e) -> void
+Auxiliary.ExceptThisCard(Effect e) -> Card|nil
 ```
 
 ## Description
 
-If e:GetHandler() is related to effect e, return e:GetHandler(); otherwise return nil
-function aux.ExceptThisCard(e)
-  local c=e:GetHandler()
-  if c:IsRelateToEffect(e) then return c else return nil end
-end
+Returns e's handler while that card is still related to the current Chain; otherwise returns nil.
 
 ## Parameters
 
 - `e` `Effect`
+
+## Returns
+
+- `Card|nil` - e's handler if it is still related to the current Chain; otherwise nil.
 
 ## Source
 

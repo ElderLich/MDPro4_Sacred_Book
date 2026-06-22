@@ -8,7 +8,7 @@ Group.CreateGroup() -> Group
 
 ## Description
 
-Create a new empty deck
+Creates and returns a new empty Group.
 
 ## Returns
 

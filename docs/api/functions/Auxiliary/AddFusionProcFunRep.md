@@ -8,7 +8,7 @@ Auxiliary.AddFusionProcFunRep(Card c, function|table f, int cc, bool insf) -> vo
 
 ## Description
 
-For the c designated cc meet the same conditions f monster for the fusion material
+Registers a Fusion Summon procedure on c that requires cc materials satisfying the same material filter f.
 
 ## Parameters
 

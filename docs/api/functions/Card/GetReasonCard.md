@@ -3,13 +3,12 @@
 ## Signature
 
 ```lua
-Card.GetReasonCard(Card c) -> Card
+Card.GetReasonCard(Card c) -> Card|nil
 ```
 
 ## Description
 
-Returns the card that caused the position of c to change
-This function is only valid when a card is destroyed by a battle, because the superior call is released, or becomes a special call to use the material
+Returns c's current reason card, or nil when no reason card is recorded.
 
 ## Parameters
 
@@ -17,7 +16,7 @@ This function is only valid when a card is destroyed by a battle, because the su
 
 ## Returns
 
-- `Card`
+- `Card|nil`
 
 ## Source
 

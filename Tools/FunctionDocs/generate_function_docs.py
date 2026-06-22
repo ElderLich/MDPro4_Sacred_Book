@@ -453,6 +453,78 @@ def parse_bullet_file(path: Path) -> dict[str, list[str]]:
 
 FUNCTION_EN_OVERRIDES = {
     # High-use core/API functions reviewed from MDPro3/YGOPro sources.
+    "Auxiliary.IsCodeListed": [
+        "Checks whether code is registered in c's card_code_list by Auxiliary.AddCodeList or a related helper.",
+        "The Lua helper returns true for a listed code and nil otherwise, so it is normally used as a truthy check.",
+    ],
+    "Card.IsCanOverlay": [
+        "Checks whether c can be used as Xyz Material by player.",
+        "player defaults to the current reason player. The core rejects Tokens, forbidden cards in invalid states, and cards controlled by the other player that cannot change control.",
+    ],
+    "Card.GetReasonPlayer": ["Returns c's current reason player, the player recorded in c's current reason state."],
+    "Group.SelectUnselect": [
+        "Lets player choose one card from cg to add to the current selection or one card from sg to remove from it, then returns the card that was chosen.",
+        "sg may be nil. finishable controls whether the selection can finish at its current size, cancelable allows cancellation, and cancellation returns nil. min and max default to 1.",
+    ],
+    "Card.GetAttribute": [
+        "Returns c's current Attribute bitmask.",
+        "Cards treated as having multiple Attributes can return a bitwise combination of ATTRIBUTE_* values.",
+    ],
+    "Effect.GetOwnerPlayer": ["Returns the player stored as e's owner player."],
+    "Card.GetOriginalType": ["Returns c's original card-data type bitmask, not its current modified type."],
+    "Card.IsAttack": [
+        "Checks whether c is a monster or currently treated as one, and whether its current ATK equals any supplied atk value.",
+        "Nil atk arguments are skipped. Non-monsters that are not treated as monsters return false.",
+    ],
+    "Duel.GetCurrentChain": ["Returns the number of Chain Links currently stored in the active Chain."],
+    "Auxiliary.ExceptThisCard": ["Returns e's handler while that card is still related to the current Chain; otherwise returns nil."],
+    "Group.CreateGroup": ["Creates and returns a new empty Group."],
+    "Card.GetReasonCard": ["Returns c's current reason card, or nil when no reason card is recorded."],
+    "Card.GetOverlayGroup": ["Returns a Group containing the cards currently attached to c as Xyz Materials."],
+    "Card.IsAttackPos": ["Checks whether c's current position contains POS_ATTACK."],
+    "Card.IsCanChangePosition": [
+        "Checks the core's effect-specific position-change capability for c.",
+        "In this MDPro3/YGOPro core, that helper returns false for Link Monsters and true for other cards; it does not perform the broader manual battle-position-change checks.",
+    ],
+    "Duel.ConfirmDecktop": [
+        "Reveals up to count cards from the top of player's Main Deck to the client.",
+        "count is clamped to the remaining Deck size. The function yields for the reveal wait and returns no Lua values.",
+    ],
+    "Auxiliary.MustMaterialCheck": [
+        "Checks whether tp's required-material effects of type code are satisfied.",
+        "When v is nil, the helper succeeds only if Duel.GetMustMaterial(tp, code) is empty, except for the hard-coded Xyz and Synchro material exceptions present in the utility script. When v is supplied, it returns Duel.CheckMustMaterial(tp, v, code).",
+    ],
+    "Effect.IsActivated": ["Checks whether e has one of the EFFECT_TYPES_CHAIN_LINK type bits."],
+    "Group.GetSum": ["Calls f for each card in g, forwards any extra arguments, and returns the sum of the integer values produced."],
+    "Card.AddCounter": [
+        "Attempts to add count counters of countertype to c and returns whether the core accepted the addition.",
+        "The card must be affected by the resolving reason effect. The current reason player is used as the player adding the counters. When singly is true, counter-limit checks allow a partial addition up to the remaining limit.",
+    ],
+    "Duel.MoveSequence": [
+        "Moves c to sequence seq within its current controller and location if c is affected by the resolving reason effect.",
+        "The core raises EVENT_MOVE for the moved card and returns no Lua values.",
+    ],
+    "Auxiliary.AddFusionProcFun2": ["Registers a Fusion Summon procedure on c that requires one material satisfying f1 and one material satisfying f2."],
+    "Group.RandomSelect": [
+        "Returns a new Group containing count randomly chosen cards from g.",
+        "count is clamped to g's size. The player argument is written to the random-selection message but does not influence the random choice.",
+    ],
+    "Card.IsAttackAbove": [
+        "Checks whether c is a monster or currently treated as one, and whether its current ATK is at least atk.",
+        "Unlike Card.IsAttackBelow, this core does not add a separate guard for unknown ATK before comparing.",
+    ],
+    "Card.IsLinkRace": ["Checks whether c's Race while used as Link Material for player contains race. player defaults to the current reason player."],
+    "Auxiliary.SelectFromOptions": [
+        "Filters option tables by their condition, calls Duel.SelectOption with the available option labels, and returns the selected table's custom value or original index.",
+        "Each option is {condition, option[, value]}. If no condition is true, the helper returns nil. Its default index return is 1-based, unlike Duel.SelectOption's 0-based return.",
+    ],
+    "Card.IsCanBeFusionMaterial": [
+        "Checks whether c can be used as Fusion Material for fc and summon_type.",
+        "fc is optional and summon_type defaults to SUMMON_TYPE_FUSION. The binding has no ignore_mon argument; it delegates to the core Fusion Material legality checks.",
+    ],
+    "Card.IsLinkType": ["Checks whether c's type while used as Link Material contains type."],
+    "Card.IsLinkSetCard": ["Checks whether c can be treated as any supplied setcode while used as Link Material. Nil setcode arguments are skipped."],
+    "Auxiliary.AddFusionProcFunRep": ["Registers a Fusion Summon procedure on c that requires cc materials satisfying the same material filter f."],
     "Card.GetFlagEffectLabel": [
         "Returns the first label value from each flag effect with the given code on c.",
         "If c has no matching flag effect, the core returns nil. Matching flag effects with no label return 0 for that slot.",
@@ -1363,6 +1435,78 @@ FUNCTION_EN_OVERRIDES = {
 
 
 FUNCTION_ZH_OVERRIDES = {
+    "Auxiliary.IsCodeListed": [
+        "检查code是否已通过Auxiliary.AddCodeList或相关辅助函数登记在c的card_code_list中。",
+        "该Lua辅助函数在列名时返回true，否则返回nil，通常作为真假判断使用。",
+    ],
+    "Card.IsCanOverlay": [
+        "检查c能否由player作为超量素材使用。",
+        "player省略时使用当前原因玩家。核心会排除衍生物、处于非法状态的禁止使用卡，以及由对方控制且不能变更控制权的卡。",
+    ],
+    "Card.GetReasonPlayer": ["返回c当前记录的原因玩家，即c当前原因状态中的玩家。"],
+    "Group.SelectUnselect": [
+        "让player从cg中选择1张卡加入当前选择，或从sg中选择1张卡移出当前选择，并返回被选择的那张卡。",
+        "sg可以为nil。finishable控制当前数量下能否结束选择，cancelable允许取消；取消时返回nil。min和max默认均为1。",
+    ],
+    "Card.GetAttribute": [
+        "返回c当前的属性位掩码。",
+        "被视为具有多个属性的卡可能返回多个ATTRIBUTE_*值的按位组合。",
+    ],
+    "Effect.GetOwnerPlayer": ["返回效果e记录的拥有者玩家。"],
+    "Card.GetOriginalType": ["返回c原本卡片数据中的种类位掩码，而不是当前被修改后的种类。"],
+    "Card.IsAttack": [
+        "检查c是否为怪兽或当前被当作怪兽，并且当前攻击力是否等于任意给定的atk值。",
+        "nil的atk参数会被跳过。不是怪兽且未被当作怪兽的卡返回false。",
+    ],
+    "Duel.GetCurrentChain": ["返回当前连锁中已记录的连锁环数量。"],
+    "Auxiliary.ExceptThisCard": ["当效果e的处理者仍与当前连锁保持关联时返回该卡；否则返回nil。"],
+    "Group.CreateGroup": ["新建并返回一个空Group。"],
+    "Card.GetReasonCard": ["返回c当前记录的原因卡；没有记录原因卡时返回nil。"],
+    "Card.GetOverlayGroup": ["返回当前叠放在c下面作为超量素材的卡组成的Group。"],
+    "Card.IsAttackPos": ["检查c当前表示形式是否包含POS_ATTACK。"],
+    "Card.IsCanChangePosition": [
+        "检查核心中供效果改变表示形式使用的能力判断。",
+        "在此MDPro3/YGOPro核心中，该底层辅助函数对连接怪兽返回false，对其他卡返回true；它不会执行更完整的手动改变战斗表示形式检查。",
+    ],
+    "Duel.ConfirmDecktop": [
+        "向客户端公开player卡组最上方最多count张卡。",
+        "count会被限制为剩余主卡组数量。函数会为公开等待而yield，不返回Lua值。",
+    ],
+    "Auxiliary.MustMaterialCheck": [
+        "检查tp受到的code类型必须素材效果是否已经满足。",
+        "v为nil时，只有Duel.GetMustMaterial(tp, code)为空才成功，但utility脚本中存在硬编码的超量和同调素材例外。v提供时，返回Duel.CheckMustMaterial(tp, v, code)的结果。",
+    ],
+    "Effect.IsActivated": ["检查效果e是否具有EFFECT_TYPES_CHAIN_LINK中的类型位。"],
+    "Group.GetSum": ["对g中的每张卡调用f，转发额外参数，并返回各次整数结果的总和。"],
+    "Card.AddCounter": [
+        "尝试给c放置count个countertype类型的指示物，并返回核心是否接受该次放置。",
+        "c必须受当前处理中的原因效果影响。放置指示物的玩家使用当前原因玩家。singly为true时，指示物上限检查允许只放置到剩余上限为止。",
+    ],
+    "Duel.MoveSequence": [
+        "若c受当前处理中的原因效果影响，将c在其当前控制者与当前位置内移动到序号seq。",
+        "核心会对移动的卡引发EVENT_MOVE，且不返回Lua值。",
+    ],
+    "Auxiliary.AddFusionProcFun2": ["给c登记需要1个满足f1和1个满足f2的素材的融合召唤手续。"],
+    "Group.RandomSelect": [
+        "返回一个新Group，包含从g中随机选出的count张卡。",
+        "count会被限制为g的数量。player参数会写入随机选择消息，但不影响随机结果。",
+    ],
+    "Card.IsAttackAbove": [
+        "检查c是否为怪兽或当前被当作怪兽，并且当前攻击力是否大于等于atk。",
+        "不同于Card.IsAttackBelow，此核心在比较前不会额外检查攻击力未知的情况。",
+    ],
+    "Card.IsLinkRace": ["检查c作为player的连接素材使用时的种族是否包含race。player省略时使用当前原因玩家。"],
+    "Auxiliary.SelectFromOptions": [
+        "按条件筛选选项表，用可用选项文本调用Duel.SelectOption，并返回所选表的自定义值或原始序号。",
+        "每个选项为{condition, option[, value]}。没有条件成立时返回nil。默认返回的序号从1开始，不同于Duel.SelectOption从0开始。",
+    ],
+    "Card.IsCanBeFusionMaterial": [
+        "检查c能否作为fc和summon_type的融合素材使用。",
+        "fc可省略，summon_type默认SUMMON_TYPE_FUSION。该绑定没有ignore_mon参数，而是交给核心的融合素材合法性检查处理。",
+    ],
+    "Card.IsLinkType": ["检查c作为连接素材使用时的种类是否包含type。"],
+    "Card.IsLinkSetCard": ["检查c作为连接素材使用时能否视为任意给定setcode的系列卡。nil的setcode参数会被跳过。"],
+    "Auxiliary.AddFusionProcFunRep": ["给c登记需要cc个满足同一素材筛选函数f的素材的融合召唤手续。"],
     "Card.GetFlagEffectLabel": [
         "返回c上编号为code的每个标记效果的第1个Label值。",
         "没有匹配的标记效果时返回nil；匹配的标记效果没有Label时，该位置返回0。",
@@ -1854,6 +1998,190 @@ FUNCTION_ZH_OVERRIDES = {
 
 
 CORE_DOC_OVERRIDES = {
+    "Auxiliary.IsCodeListed": {
+        "params": [ParamDoc("c", "Card"), ParamDoc("code", "int")],
+        "returns": [ReturnDoc("bool|nil", "true if code is listed by c; nil otherwise.")],
+        "description": ["Checks whether c lists code."],
+        "description_zh": ["检查c是否列名code。"],
+    },
+    "Card.IsCanOverlay": {
+        "params": [ParamDoc("c", "Card"), ParamDoc("player", "int", True, "default: current reason player")],
+        "returns": [ReturnDoc("bool")],
+        "description": ["Checks whether c can be used as Xyz Material by player."],
+        "description_zh": ["检查c能否由player作为超量素材使用。"],
+    },
+    "Card.GetReasonPlayer": {
+        "params": [ParamDoc("c", "Card")],
+        "returns": [ReturnDoc("int")],
+        "description": ["Returns c's current reason player."],
+        "description_zh": ["返回c当前记录的原因玩家。"],
+    },
+    "Group.SelectUnselect": {
+        "params": [
+            ParamDoc("cg", "Group"), ParamDoc("sg", "Group|nil", True), ParamDoc("player", "int"),
+            ParamDoc("finishable", "bool", True, "default: false"), ParamDoc("cancelable", "bool", True, "default: false"),
+            ParamDoc("min", "int", True, "default: 1"), ParamDoc("max", "int", True, "default: 1"),
+        ],
+        "returns": [ReturnDoc("Card|nil", "Chosen card, or nil if the selection is canceled.")],
+        "description": ["Lets player add or remove one card from an interactive selection."],
+        "description_zh": ["让player在交互选择中加入或移出1张卡。"],
+    },
+    "Card.GetAttribute": {
+        "params": [ParamDoc("c", "Card")],
+        "returns": [ReturnDoc("int")],
+        "description": ["Returns c's current Attribute bitmask."],
+        "description_zh": ["返回c当前的属性位掩码。"],
+    },
+    "Effect.GetOwnerPlayer": {
+        "params": [ParamDoc("e", "Effect")],
+        "returns": [ReturnDoc("int")],
+        "description": ["Returns e's owner player."],
+        "description_zh": ["返回效果e的拥有者玩家。"],
+    },
+    "Card.GetOriginalType": {
+        "params": [ParamDoc("c", "Card")],
+        "returns": [ReturnDoc("int")],
+        "description": ["Returns c's original card-data type."],
+        "description_zh": ["返回c原本卡片数据中的种类。"],
+    },
+    "Card.IsAttack": {
+        "params": [ParamDoc("c", "Card"), ParamDoc("atk1", "int"), ParamDoc("atk2", "int", True), ParamDoc("...", "int", True)],
+        "returns": [ReturnDoc("bool")],
+        "description": ["Checks whether c's current ATK matches any supplied value."],
+        "description_zh": ["检查c当前攻击力是否匹配任意给定值。"],
+    },
+    "Duel.GetCurrentChain": {
+        "params": [],
+        "returns": [ReturnDoc("int")],
+        "description": ["Returns the active Chain size."],
+        "description_zh": ["返回当前连锁数量。"],
+    },
+    "Auxiliary.ExceptThisCard": {
+        "params": [ParamDoc("e", "Effect")],
+        "returns": [ReturnDoc("Card|nil", "e's handler if it is still related to the current Chain; otherwise nil.")],
+        "description": ["Returns e's handler while it is still related to the current Chain."],
+        "description_zh": ["在处理者仍与当前连锁关联时返回处理者。"],
+    },
+    "Group.CreateGroup": {
+        "params": [],
+        "returns": [ReturnDoc("Group")],
+        "description": ["Creates an empty Group."],
+        "description_zh": ["创建空Group。"],
+    },
+    "Card.GetReasonCard": {
+        "params": [ParamDoc("c", "Card")],
+        "returns": [ReturnDoc("Card|nil")],
+        "description": ["Returns c's current reason card."],
+        "description_zh": ["返回c当前记录的原因卡。"],
+    },
+    "Card.GetOverlayGroup": {
+        "params": [ParamDoc("c", "Card")],
+        "returns": [ReturnDoc("Group")],
+        "description": ["Returns c's current Xyz Materials."],
+        "description_zh": ["返回c当前的超量素材。"],
+    },
+    "Card.IsAttackPos": {
+        "params": [ParamDoc("c", "Card")],
+        "returns": [ReturnDoc("bool")],
+        "description": ["Checks whether c is in Attack Position."],
+        "description_zh": ["检查c是否为攻击表示。"],
+    },
+    "Card.IsCanChangePosition": {
+        "params": [ParamDoc("c", "Card")],
+        "returns": [ReturnDoc("bool")],
+        "description": ["Checks the effect-specific position-change helper for c."],
+        "description_zh": ["检查c的效果改变表示形式能力。"],
+    },
+    "Duel.ConfirmDecktop": {
+        "params": [ParamDoc("player", "int"), ParamDoc("count", "int")],
+        "returns": [],
+        "description": ["Reveals the top cards of player's Main Deck."],
+        "description_zh": ["公开player主卡组最上方的卡。"],
+    },
+    "Auxiliary.MustMaterialCheck": {
+        "params": [ParamDoc("v", "Card|Group|nil"), ParamDoc("tp", "int"), ParamDoc("code", "int")],
+        "returns": [ReturnDoc("bool")],
+        "description": ["Checks whether required-material effects are satisfied."],
+        "description_zh": ["检查必须素材效果是否已满足。"],
+    },
+    "Effect.IsActivated": {
+        "params": [ParamDoc("e", "Effect")],
+        "returns": [ReturnDoc("bool")],
+        "description": ["Checks whether e has a Chain Link effect type."],
+        "description_zh": ["检查效果e是否具有连锁环效果类型。"],
+    },
+    "Group.GetSum": {
+        "params": [ParamDoc("g", "Group"), ParamDoc("f", "function"), ParamDoc("...", "any")],
+        "returns": [ReturnDoc("int")],
+        "description": ["Sums f's value for every card in g."],
+        "description_zh": ["累计g中每张卡调用f得到的数值。"],
+    },
+    "Card.AddCounter": {
+        "params": [ParamDoc("c", "Card"), ParamDoc("countertype", "int"), ParamDoc("count", "int"), ParamDoc("singly", "bool", True, "default: false")],
+        "returns": [ReturnDoc("bool")],
+        "description": ["Adds counters to c through the current reason effect."],
+        "description_zh": ["通过当前原因效果给c放置指示物。"],
+    },
+    "Duel.MoveSequence": {
+        "params": [ParamDoc("c", "Card"), ParamDoc("seq", "int")],
+        "returns": [],
+        "description": ["Moves c to another sequence in its current location."],
+        "description_zh": ["将c移动到当前位置内的另一序号。"],
+    },
+    "Auxiliary.AddFusionProcFun2": {
+        "params": [ParamDoc("c", "Card"), ParamDoc("f1", "function|table"), ParamDoc("f2", "function|table"), ParamDoc("insf", "bool")],
+        "returns": [],
+        "description": ["Registers a two-filter Fusion Material procedure."],
+        "description_zh": ["登记双筛选条件的融合素材手续。"],
+    },
+    "Group.RandomSelect": {
+        "params": [ParamDoc("g", "Group"), ParamDoc("player", "int"), ParamDoc("count", "int")],
+        "returns": [ReturnDoc("Group")],
+        "description": ["Returns a random subset of g."],
+        "description_zh": ["返回g的随机子Group。"],
+    },
+    "Card.IsAttackAbove": {
+        "params": [ParamDoc("c", "Card"), ParamDoc("atk", "int")],
+        "returns": [ReturnDoc("bool")],
+        "description": ["Checks whether c's current ATK is at least atk."],
+        "description_zh": ["检查c当前攻击力是否大于等于atk。"],
+    },
+    "Card.IsLinkRace": {
+        "params": [ParamDoc("c", "Card"), ParamDoc("race", "int"), ParamDoc("player", "int", True, "default: current reason player")],
+        "returns": [ReturnDoc("bool")],
+        "description": ["Checks c's Race while used as Link Material."],
+        "description_zh": ["检查c作为连接素材使用时的种族。"],
+    },
+    "Auxiliary.SelectFromOptions": {
+        "params": [ParamDoc("tp", "int"), ParamDoc("...", "table")],
+        "returns": [ReturnDoc("any|nil", "Selected option value or 1-based option index; nil if no option is available.")],
+        "description": ["Selects from conditionally available options."],
+        "description_zh": ["从满足条件的选项中选择。"],
+    },
+    "Card.IsCanBeFusionMaterial": {
+        "params": [ParamDoc("c", "Card"), ParamDoc("fc", "Card|nil", True), ParamDoc("summon_type", "int", True, "default: SUMMON_TYPE_FUSION")],
+        "returns": [ReturnDoc("bool")],
+        "description": ["Checks whether c can be used as Fusion Material."],
+        "description_zh": ["检查c能否作为融合素材。"],
+    },
+    "Card.IsLinkType": {
+        "params": [ParamDoc("c", "Card"), ParamDoc("type", "int")],
+        "returns": [ReturnDoc("bool")],
+        "description": ["Checks c's type while used as Link Material."],
+        "description_zh": ["检查c作为连接素材使用时的种类。"],
+    },
+    "Card.IsLinkSetCard": {
+        "params": [ParamDoc("c", "Card"), ParamDoc("setcode1", "int"), ParamDoc("setcode2", "int", True), ParamDoc("...", "int", True)],
+        "returns": [ReturnDoc("bool")],
+        "description": ["Checks c's set codes while used as Link Material."],
+        "description_zh": ["检查c作为连接素材使用时的系列。"],
+    },
+    "Auxiliary.AddFusionProcFunRep": {
+        "params": [ParamDoc("c", "Card"), ParamDoc("f", "function|table"), ParamDoc("cc", "int"), ParamDoc("insf", "bool")],
+        "returns": [],
+        "description": ["Registers a repeated-filter Fusion Material procedure."],
+        "description_zh": ["登记重复筛选条件的融合素材手续。"],
+    },
     "Card.GetFlagEffectLabel": {
         "params": [ParamDoc("c", "Card"), ParamDoc("code", "int")],
         "returns": [ReturnDoc("int|nil", "First label value, or nil if no matching flag effect exists."), ReturnDoc("...?", "Additional integer label values from additional matching flag effects.")],

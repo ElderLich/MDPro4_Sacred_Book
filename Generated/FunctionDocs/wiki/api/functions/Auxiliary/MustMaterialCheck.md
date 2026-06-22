@@ -3,24 +3,23 @@
 ## Signature
 
 ```lua
-Auxiliary.MustMaterialCheck(any v, int tp, int code) -> void
+Auxiliary.MustMaterialCheck(Card|Group|nil v, int tp, int code) -> bool
 ```
 
 ## Description
 
-Check if value contains cards or a group affected by player's effect type code
-Currently involved codes are:
-EFFECT_MUST_BE_SMATERIAL
-EFFECT_MUST_BE_XMATERIAL
-EFFECT_MUST_BE_FMATERIAL
-EFFECT_MUST_BE_LMATERIAL
-All are checks for required materials
+Checks whether tp's required-material effects of type code are satisfied.
+When v is nil, the helper succeeds only if Duel.GetMustMaterial(tp, code) is empty, except for the hard-coded Xyz and Synchro material exceptions present in the utility script. When v is supplied, it returns Duel.CheckMustMaterial(tp, v, code).
 
 ## Parameters
 
-- `v` `any`
+- `v` `Card|Group|nil`
 - `tp` `int`
 - `code` `int`
+
+## Returns
+
+- `bool`
 
 ## Source
 

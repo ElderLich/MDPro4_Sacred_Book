@@ -8,7 +8,7 @@ Card.GetReasonPlayer(Card c) -> int
 
 ## Description
 
-Returns the player that caused the position of c to change
+Returns c's current reason player, the player recorded in c's current reason state.
 
 ## Parameters
 

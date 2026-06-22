@@ -8,8 +8,8 @@ Group.RandomSelect(Group g, int player, int count) -> Group
 
 ## Description
 
-Let the player player randomly select count cards from g
-Because it is a random choice, so the basic parameter useless player, randomly selected by the system
+Returns a new Group containing count randomly chosen cards from g.
+count is clamped to g's size. The player argument is written to the random-selection message but does not influence the random choice.
 
 ## Parameters
 

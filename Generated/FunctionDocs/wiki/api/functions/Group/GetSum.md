@@ -8,7 +8,7 @@ Group.GetSum(Group g, function f, ... any) -> int
 
 ## Description
 
-Calculates the sum of the values ​​of all cards in g, f is the value function for each card, starting with the third parameter as an additional parameter
+Calls f for each card in g, forwards any extra arguments, and returns the sum of the integer values produced.
 
 ## Parameters
 

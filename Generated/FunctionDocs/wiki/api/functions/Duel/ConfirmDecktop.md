@@ -8,7 +8,8 @@ Duel.ConfirmDecktop(int player, int count) -> void
 
 ## Description
 
-Confirm the player card group above count cards
+Reveals up to count cards from the top of player's Main Deck to the client.
+count is clamped to the remaining Deck size. The function yields for the reveal wait and returns no Lua values.
 
 ## Parameters
 

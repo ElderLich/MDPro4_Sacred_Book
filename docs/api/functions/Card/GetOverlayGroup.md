@@ -8,7 +8,7 @@ Card.GetOverlayGroup(Card c) -> Group
 
 ## Description
 
-Returns the currently stacked deck
+Returns a Group containing the cards currently attached to c as Xyz Materials.
 
 ## Parameters
 
