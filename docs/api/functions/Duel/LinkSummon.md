@@ -3,21 +3,22 @@
 ## Signature
 
 ```lua
-Duel.LinkSummon(int player, Card pcard, [Group|nil mg], [Card lcard], [int minc], [int maxc]) -> void
+Duel.LinkSummon(int player, Card c, Group|nil materials, [Card|nil lcard], [int minc], [int maxc]) -> void
 ```
 
 ## Description
 
-Have player Link Summon pcard using \[minc to maxc cards from mg, excluding lcard\] as materials
+Starts a rule Link Summon of c for player.
+materials, lcard, minc, and maxc become temporary Link Summon limits; the binding yields to the core and returns no Lua value.
 
 ## Parameters
 
 - `player` `int`
-- `pcard` `Card`
-- `mg` `Group|nil` optional
-- `lcard` `Card` optional
-- `minc` `int` optional
-- `maxc` `int` optional
+- `c` `Card`
+- `materials` `Group|nil`
+- `lcard` `Card|nil` optional
+- `minc` `int` optional - default: 0
+- `maxc` `int` optional - default: 0
 
 ## Source
 

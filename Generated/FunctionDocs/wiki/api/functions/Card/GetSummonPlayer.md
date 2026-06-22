@@ -8,7 +8,7 @@ Card.GetSummonPlayer(Card c) -> int
 
 ## Description
 
-Return to Summoner / Special Summoner c Players
+Returns the player recorded as having Summoned c.
 
 ## Parameters
 

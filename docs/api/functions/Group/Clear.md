@@ -8,7 +8,7 @@ Group.Clear(Group g) -> void
 
 ## Description
 
-Empty the deck
+Clears g unless it is a read-only group.
 
 ## Parameters
 

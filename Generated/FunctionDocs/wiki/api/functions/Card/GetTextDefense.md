@@ -8,7 +8,7 @@ Card.GetTextDefense(Card c) -> int
 
 ## Description
 
-Return the c 's card record of the garrison
+Returns c's printed/stored DEF value, or 0 while c has no-Level status.
 
 ## Parameters
 

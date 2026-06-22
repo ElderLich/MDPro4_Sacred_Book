@@ -8,8 +8,7 @@ Card.GetRealFieldID(Card c) -> int
 
 ## Description
 
-Returns the actual timestamp for the c transition to the current position
-Opening the card from the inside does not change this value
+Returns c's real field ID, the core field identifier used for relation tracking.
 
 ## Parameters
 

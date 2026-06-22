@@ -3,19 +3,18 @@
 ## Signature
 
 ```lua
-Card.GetColumnZone(Card c, int location, [int left], [int right], [int player]) -> int
+Card.GetColumnZone(Card c, int loc, [int player]) -> int
 ```
 
 ## Description
 
-Return the zones \[from player's perspective\] within the location range that are in the same column as card c \[including left columns and right columns\], location values are LOCATION_MZONE, LOCATION_SZONE, LOCATION_ONFIELD
+Returns the zone bitmask for columns overlapping c within loc.
+When player is supplied as the opposing perspective, the core swaps the player/opponent halves of the mask.
 
 ## Parameters
 
 - `c` `Card`
-- `location` `int`
-- `left` `int` optional
-- `right` `int` optional
+- `loc` `int`
 - `player` `int` optional
 
 ## Returns

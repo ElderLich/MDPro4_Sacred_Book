@@ -8,8 +8,7 @@ Card.GetAttackAnnouncedCount(Card c) -> int
 
 ## Description
 
-Returns the number of times this declaration was asserted
-Note: Attack is invalid will not count the number of attacks, but will be counted into the number of attacks on the Declaration
+Returns c's attack declaration count.
 
 ## Parameters
 

@@ -3,26 +3,24 @@
 ## Signature
 
 ```lua
-Auxiliary.AddXyzProcedureLevelFree(Card c, [function|nil f], [function|nil gf], int minc, int maxc, [function alterf], [string alterdesc], [function alterop]) -> void
+Auxiliary.AddXyzProcedureLevelFree(Card c, function|nil f, function|nil gf, int minc, int maxc, [function|nil alterf], [int alterdesc], [function|nil alterop]) -> void
 ```
 
 ## Description
 
-Add an Xyz Summon procedure for c
-Use minc \[to maxc\] monsters satisfying condition f, and within the group satisfying condition gf, for overlay; f is a required condition, gf is an additional condition
-Or overlay on a single monster (typically an Xyz Monster)
-alterf is the condition this monster must satisfy, desc is the description, op is the operation required during overlay (e.g., Number F0: Utopic Future)
+Registers a Level-free Xyz Summon procedure on c.
+This helper uses f, gf, minc, maxc, and optional alternate-summon settings, and returns no explicit value.
 
 ## Parameters
 
 - `c` `Card`
-- `f` `function|nil` optional
-- `gf` `function|nil` optional
+- `f` `function|nil`
+- `gf` `function|nil`
 - `minc` `int`
 - `maxc` `int`
-- `alterf` `function` optional
-- `alterdesc` `string` optional
-- `alterop` `function` optional
+- `alterf` `function|nil` optional
+- `alterdesc` `int` optional
+- `alterop` `function|nil` optional
 
 ## Source
 

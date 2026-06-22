@@ -8,7 +8,7 @@ Auxiliary.AddFusionProcCode3(Card c, int code1, int code2, int code3, bool sub, 
 
 ## Description
 
-For the c designated card number code1, code2, code3 monster for the fusion material
+Registers a Fusion Material procedure requiring monsters with code1, code2, and code3 as fixed materials.
 
 ## Parameters
 

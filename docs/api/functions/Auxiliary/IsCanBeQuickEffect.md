@@ -8,7 +8,7 @@ Auxiliary.IsCanBeQuickEffect(Card c, int tp, int code) -> bool
 
 ## Description
 
-Check if the effect of c becomes a Quick Effect.
+Checks whether player tp is affected by code, code has a registered quick-effect filter, and that filter accepts c.
 
 ## Parameters
 

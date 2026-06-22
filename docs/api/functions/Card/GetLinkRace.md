@@ -8,12 +8,12 @@ Card.GetLinkRace(Card c, [int player]) -> int
 
 ## Description
 
-Return the Race of card c when used as Link Material \[for a Link Summon by player\]
+Returns the Race c uses as Link Material for player, defaulting to the current reason player.
 
 ## Parameters
 
 - `c` `Card`
-- `player` `int` optional
+- `player` `int` optional - default: current reason player
 
 ## Returns
 

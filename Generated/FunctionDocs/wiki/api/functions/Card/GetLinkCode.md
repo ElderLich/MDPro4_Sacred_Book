@@ -3,12 +3,12 @@
 ## Signature
 
 ```lua
-Card.GetLinkCode(Card c) -> int,int|nil,...|nil
+Card.GetLinkCode(Card c) -> int,...?
 ```
 
 ## Description
 
-Return the card code(s) of card c when used as Link Material (including c's original card code)
+Returns c's Link Material codes: current code, second code when present, then EFFECT_ADD_LINK_CODE values.
 
 ## Parameters
 
@@ -16,9 +16,8 @@ Return the card code(s) of card c when used as Link Material (including c's orig
 
 ## Returns
 
-- `int`
-- `int|nil`
-- `...|nil`
+- `int` - Current code.
+- `...?` - Additional Link Material code values, if any.
 
 ## Source
 

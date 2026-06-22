@@ -8,12 +8,12 @@ Auxiliary.SameValueCheck(Group g, function f) -> bool
 
 ## Description
 
-Check if all cards in g have the same Attribute/Race
+Checks whether every card in g shares at least one bit returned by f; groups of 0 or 1 card return true.
 
 ## Parameters
 
 - `g` `Group`
-- `f` `function` - Like Card.GetAttribute, must return binary value
+- `f` `function`
 
 ## Returns
 

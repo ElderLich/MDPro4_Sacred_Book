@@ -3,12 +3,13 @@
 ## Signature
 
 ```lua
-Card.GetFusionCode(Card c) -> int,int|nil,...|nil
+Card.GetFusionCode(Card c) -> int,...?
 ```
 
 ## Description
 
-Return c as the fusion material when the card number (including the original c card number)
+Returns c's Fusion Material codes: current code, second code when present, then EFFECT_ADD_FUSION_CODE values.
+When the core is checking with not_material set, only the current and second codes are returned.
 
 ## Parameters
 
@@ -16,9 +17,8 @@ Return c as the fusion material when the card number (including the original c c
 
 ## Returns
 
-- `int`
-- `int|nil`
-- `...|nil`
+- `int` - Current code.
+- `...?` - Additional Fusion Material code values, if any.
 
 ## Source
 

@@ -3,17 +3,12 @@
 ## Signature
 
 ```lua
-Auxiliary.gbspcon(Effect e, int tp, Group eg, int ep, any ev, Effect re, any r, int rp) -> void
+Auxiliary.gbspcon(Effect e, int tp, Group eg, int ep, int ev, Effect re, int r, int rp) -> bool
 ```
 
 ## Description
 
-Simplified method for the filter condition of Gladiator Beast general effects (Special Summoned by the effect of a "Gladiator Beast" monster), used in effect registration for SetCondition
-2619149, 4253484, 31247589, 42592719, 65984457, 78868776, though written differently, work fine
-function aux.gbspcon(e, tp, eg, ep, ev, re, r, rp)
-  local st=e:GetHandler():GetSummonType()
-  return st&gt;=(SUMMON_TYPE_SPECIAL+100) and st&lt;(SUMMON_TYPE_SPECIAL+150)
-end
+Special Summon condition helper for Gladiator Beast-style returns and set 0x1019 monster Special Summons.
 
 ## Parameters
 
@@ -21,10 +16,14 @@ end
 - `tp` `int`
 - `eg` `Group`
 - `ep` `int`
-- `ev` `any`
+- `ev` `int`
 - `re` `Effect`
-- `r` `any`
+- `r` `int`
 - `rp` `int`
+
+## Returns
+
+- `bool`
 
 ## Source
 

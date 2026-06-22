@@ -3,16 +3,21 @@
 ## Signature
 
 ```lua
-Auxiliary.IsUnionState(Effect effect) -> void
+Auxiliary.IsUnionState(Effect effect) -> Card|false|nil
 ```
 
 ## Description
 
-Check if the Union Monster e:GetHandler() is in a Union Equip state (used for the Condition property of effects)
+Returns the equipped Union target for effect's handler when it has EFFECT_UNION_STATUS and is equipped.
+The Lua expression returns a truthy Card on success, false when the status effect is missing, or nil when no equip target exists.
 
 ## Parameters
 
 - `effect` `Effect`
+
+## Returns
+
+- `Card|false|nil` - Equipped target when truthy.
 
 ## Source
 

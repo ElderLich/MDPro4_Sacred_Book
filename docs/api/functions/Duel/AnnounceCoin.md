@@ -8,7 +8,7 @@ Duel.AnnounceCoin(int player) -> int
 
 ## Description
 
-Let the player declare the positive and negative sides of the coin
+Lets player choose one of the built-in coin-side options and returns the zero-based option index.
 
 ## Parameters
 
@@ -16,7 +16,7 @@ Let the player declare the positive and negative sides of the coin
 
 ## Returns
 
-- `int`
+- `int` - Zero-based option index.
 
 ## Source
 

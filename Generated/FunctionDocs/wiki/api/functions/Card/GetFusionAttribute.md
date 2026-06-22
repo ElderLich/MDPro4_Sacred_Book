@@ -8,12 +8,12 @@ Card.GetFusionAttribute(Card c, [int player]) -> int
 
 ## Description
 
-Return the Attribute of card c when used as Fusion Material \[for a Fusion Summon by player\]
+Returns the Attribute c uses as Fusion Material for player, defaulting to the current reason player.
 
 ## Parameters
 
 - `c` `Card`
-- `player` `int` optional
+- `player` `int` optional - default: current reason player
 
 ## Returns
 

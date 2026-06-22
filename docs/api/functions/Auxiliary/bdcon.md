@@ -3,16 +3,12 @@
 ## Signature
 
 ```lua
-Auxiliary.bdcon(Effect e, int tp, Group eg, int ep, any ev, Effect re, any r, int rp) -> void
+Auxiliary.bdcon(Effect e, int tp, Group eg, int ep, int ev, Effect re, int r, int rp) -> bool
 ```
 
 ## Description
 
-Check if e:GetHandler() is related to the current battle, typically used for the condition of EVENT_BATTLE_DESTROYING
-function Auxiliary.bdcon(e, tp, eg, ep, ev, re, r, rp)
-  local c=e:GetHandler()
-  return c:IsRelateToBattle()
-end
+Battle-destroying condition helper that returns true while the handler is still related to battle.
 
 ## Parameters
 
@@ -20,10 +16,14 @@ end
 - `tp` `int`
 - `eg` `Group`
 - `ep` `int`
-- `ev` `any`
+- `ev` `int`
 - `re` `Effect`
-- `r` `any`
+- `r` `int`
 - `rp` `int`
+
+## Returns
+
+- `bool`
 
 ## Source
 

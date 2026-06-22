@@ -8,7 +8,7 @@ Card.GetMutualLinkedGroupCount(Card c) -> int
 
 ## Description
 
-Return the number of cards in the group mutually linked with card c
+Returns the number of cards mutually linked with c.
 
 ## Parameters
 

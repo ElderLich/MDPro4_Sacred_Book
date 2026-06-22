@@ -8,7 +8,7 @@ Card.IsLinkBelow(Card c, int link) -> bool
 
 ## Description
 
-Check if card c's Link Marker count is link or lower (at least 1)
+Checks whether c has a nonzero Link Rating that is less than or equal to link.
 
 ## Parameters
 

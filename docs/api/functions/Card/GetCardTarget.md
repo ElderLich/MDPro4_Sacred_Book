@@ -8,7 +8,7 @@ Card.GetCardTarget(Card c) -> Group
 
 ## Description
 
-Returns all currently persistent objects
+Returns a Group containing all persistent card targets currently recorded on c.
 
 ## Parameters
 

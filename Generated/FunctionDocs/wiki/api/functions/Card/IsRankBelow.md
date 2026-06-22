@@ -8,7 +8,7 @@ Card.IsRankBelow(Card c, int rank) -> bool
 
 ## Description
 
-Check whether c is below the rank rank (at least 1)
+Checks whether c has a nonzero Rank that is less than or equal to rank.
 
 ## Parameters
 

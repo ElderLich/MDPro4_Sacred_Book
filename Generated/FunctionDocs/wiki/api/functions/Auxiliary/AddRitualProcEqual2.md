@@ -3,24 +3,27 @@
 ## Signature
 
 ```lua
-Auxiliary.AddRitualProcEqual2(Card c, function filter, any summon_location, any grave_filter, any mat_filter, Effect pause, any extra_operation, any extra_target) -> void
+Auxiliary.AddRitualProcEqual2(Card c, function filter, int summon_location, [function|nil grave_filter], [function|nil mat_filter], [bool pause], [function|nil extra_operation], [function|nil extra_target]) -> Effect
 ```
 
 ## Description
 
-Add a Ritual Summon effect for c
-filter is the condition the Ritual Monster must satisfy; the sum of the Ritual Levels of the materials must equal the Ritual Monster's Level (which may be altered by other card effects)
+Registers an exact-Level Ritual Summon procedure using Card.GetLevel and returns the created Effect.
 
 ## Parameters
 
 - `c` `Card`
 - `filter` `function`
-- `summon_location` `any`
-- `grave_filter` `any`
-- `mat_filter` `any`
-- `pause` `Effect`
-- `extra_operation` `any`
-- `extra_target` `any`
+- `summon_location` `int`
+- `grave_filter` `function|nil` optional
+- `mat_filter` `function|nil` optional
+- `pause` `bool` optional
+- `extra_operation` `function|nil` optional
+- `extra_target` `function|nil` optional
+
+## Returns
+
+- `Effect`
 
 ## Source
 

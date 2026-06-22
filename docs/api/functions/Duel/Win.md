@@ -3,17 +3,17 @@
 ## Signature
 
 ```lua
-Duel.Win(int player, int win_reason) -> void
+Duel.Win(int player, int reason) -> void
 ```
 
 ## Description
 
-The current effect is dealt with so players win_reason duel victory
+Sets player as the duel winner with reason, but only if no winner has already been set.
 
 ## Parameters
 
 - `player` `int`
-- `win_reason` `int`
+- `reason` `int`
 
 ## Source
 

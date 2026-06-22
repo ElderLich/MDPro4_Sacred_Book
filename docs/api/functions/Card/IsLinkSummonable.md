@@ -3,20 +3,21 @@
 ## Signature
 
 ```lua
-Card.IsLinkSummonable(Card c, [Group|nil mg], [int min], [int max]) -> bool
+Card.IsLinkSummonable(Card c, Group|nil materials, [Card|nil lcard], [int minc], [int maxc]) -> bool
 ```
 
 ## Description
 
-Check if card c can be Link Summoned using \[min-max Link Materials\] from cards on the field \[or mg\]
-If mg is nil, this function is equivalent to c:IsSpecialSummonable(SUMMON_TYPE_LINK)
+Checks whether Link Monster c can be Link Summoned by the current reason player.
+Optional materials, lcard, minc, and maxc restrict the Link Material pool and material count used by the core check.
 
 ## Parameters
 
 - `c` `Card`
-- `mg` `Group|nil` optional
-- `min` `int` optional - default: 0
-- `max` `int` optional - default: 0
+- `materials` `Group|nil`
+- `lcard` `Card|nil` optional
+- `minc` `int` optional - default: 0
+- `maxc` `int` optional - default: 0
 
 ## Returns
 

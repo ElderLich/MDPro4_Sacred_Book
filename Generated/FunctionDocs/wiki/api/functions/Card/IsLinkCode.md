@@ -3,17 +3,19 @@
 ## Signature
 
 ```lua
-Card.IsLinkCode(Card c, int code, [... int]) -> bool
+Card.IsLinkCode(Card c, int code1, [int code2], [... int]) -> bool
 ```
 
 ## Description
 
-Check if card c, when used as Link Material, can be treated as a card with code, additional parameters are other codes
+Checks whether c matches any supplied code while used as Link Material.
+This includes c's current code, second code, and EFFECT_ADD_LINK_CODE values. If no link-code additions apply, the binding falls back to Card.IsCode.
 
 ## Parameters
 
 - `c` `Card`
-- `code` `int`
+- `code1` `int`
+- `code2` `int` optional
 - `...` `int` optional
 
 ## Returns

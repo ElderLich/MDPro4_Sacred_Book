@@ -8,7 +8,8 @@ Duel.SwapControl(Card|Group targets1, Card|Group targets2, [int reset_phase], [i
 
 ## Description
 
-Exchange c1 and c2 control, the return value that is successful
+Swaps control between two Cards or between two Groups and returns whether the swap processor succeeded.
+reset_phase and reset_count are optional temporary-control reset settings.
 
 ## Parameters
 

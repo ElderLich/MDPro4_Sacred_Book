@@ -8,7 +8,7 @@ Card.GetPosition(Card c) -> int
 
 ## Description
 
-Returns the current representation of c
+Returns c's current position value.
 
 ## Parameters
 

@@ -8,7 +8,7 @@ Card.GetCardTargetCount(Card c) -> int
 
 ## Description
 
-Returns the number of current persistent objects
+Returns the number of persistent card targets currently recorded on c.
 
 ## Parameters
 

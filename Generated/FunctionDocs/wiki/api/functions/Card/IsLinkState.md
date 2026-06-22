@@ -8,7 +8,7 @@ Card.IsLinkState(Card c) -> bool
 
 ## Description
 
-Check if card c is in a linked state
+Checks whether c is currently in linked state.
 
 ## Parameters
 

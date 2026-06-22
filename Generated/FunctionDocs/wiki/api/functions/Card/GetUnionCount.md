@@ -8,7 +8,7 @@ Card.GetUnionCount(Card c) -> int,int
 
 ## Description
 
-Returns the number of ally cards for the current device
+Returns c's modern Union count and old Union count.
 
 ## Parameters
 
@@ -16,8 +16,8 @@ Returns the number of ally cards for the current device
 
 ## Returns
 
-- `int`
-- `int`
+- `int` - Modern Union count.
+- `int` - Old Union count.
 
 ## Source
 

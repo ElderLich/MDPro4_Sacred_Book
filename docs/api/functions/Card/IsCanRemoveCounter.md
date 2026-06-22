@@ -3,12 +3,12 @@
 ## Signature
 
 ```lua
-Card.IsCanRemoveCounter(Card c, int player, int countertype, int count, int reason) -> bool
+Card.IsCanRemoveCounter(Card c, int player, int countertype, int count, int reason) -> bool|nil
 ```
 
 ## Description
 
-Check if the player player can remove count counters of type c on c for reason
+Checks whether player can remove count counters of countertype from c for reason.
 
 ## Parameters
 
@@ -20,7 +20,7 @@ Check if the player player can remove count counters of type c on c for reason
 
 ## Returns
 
-- `bool`
+- `bool|nil` - nil if player is invalid.
 
 ## Source
 

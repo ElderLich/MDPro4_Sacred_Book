@@ -8,7 +8,7 @@ Duel.ClearTargetCard() -> void
 
 ## Description
 
-The current processing of the chain of all the objects cleared
+Clears the target-card group recorded on the current Chain Link, if one exists.
 
 ## Source
 

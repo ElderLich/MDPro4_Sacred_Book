@@ -8,7 +8,7 @@ Card.IsExtraDeckMonster(Card c) -> bool
 
 ## Description
 
-Check if c is originally a Fusion, Synchro, Xyz, or Link Monster. This function only checks the type, regardless of the monster's current state
+Checks whether c is a card kind treated by the core as an Extra Deck monster.
 
 ## Parameters
 

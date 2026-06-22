@@ -8,7 +8,7 @@ Duel.ChangeChainOperation(int chainc, function f) -> void
 
 ## Description
 
-The effect of the chain chainc processing function replaced by f, used to achieve "the effect becomes" effect
+Replaces the operation function of Chain Link chainc with f.
 
 ## Parameters
 

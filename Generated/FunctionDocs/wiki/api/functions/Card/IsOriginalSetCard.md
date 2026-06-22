@@ -3,17 +3,19 @@
 ## Signature
 
 ```lua
-Card.IsOriginalSetCard(Card c, ... int) -> bool
+Card.IsOriginalSetCard(Card c, int setcode1, [int setcode2], [... int]) -> bool
 ```
 
 ## Description
 
-Check if card c is originally a card with setname in its name
+Checks whether c's original set data matches any supplied set code.
 
 ## Parameters
 
 - `c` `Card`
-- `...` `int`
+- `setcode1` `int`
+- `setcode2` `int` optional
+- `...` `int` optional
 
 ## Returns
 

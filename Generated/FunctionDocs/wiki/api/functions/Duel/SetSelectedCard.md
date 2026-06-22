@@ -3,16 +3,16 @@
 ## Signature
 
 ```lua
-Duel.SetSelectedCard(Card|Group cards) -> void
+Duel.SetSelectedCard(Card|Group targets) -> void
 ```
 
 ## Description
 
-Set the card to the selected card for Group.SelectWithSumEqual or Group.SelectWithSumGreater,
+Sets the core must-select list to a Card or all cards in a Group for later selection helpers.
 
 ## Parameters
 
-- `cards` `Card|Group`
+- `targets` `Card|Group`
 
 ## Source
 

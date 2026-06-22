@@ -3,17 +3,12 @@
 ## Signature
 
 ```lua
-Auxiliary.bdgcon(Effect e, int tp, Group eg, int ep, any ev, Effect re, any r, int rp) -> void
+Auxiliary.bdgcon(Effect e, int tp, Group eg, int ep, int ev, Effect re, int r, int rp) -> bool
 ```
 
 ## Description
 
-Check if e:GetHandler() is related to the current battle, typically used for EVENT_BATTLE_DESTROYING and when an opponent's monster is destroyed by battle and sent to the Graveyard, as a condition
-function Auxiliary.bdgcon(e, tp, eg, ep, ev, re, r, rp)
-  local c=e:GetHandler()
-  local bc=c:GetBattleTarget()
-  return c:IsRelateToBattle() and bc:IsLocation(LOCATION_GRAVE) and bc:IsType(TYPE_MONSTER)
-end
+Battle-destroying condition helper for a handler whose battle target is a monster in the Graveyard.
 
 ## Parameters
 
@@ -21,10 +16,14 @@ end
 - `tp` `int`
 - `eg` `Group`
 - `ep` `int`
-- `ev` `any`
+- `ev` `int`
 - `re` `Effect`
-- `r` `any`
+- `r` `int`
 - `rp` `int`
+
+## Returns
+
+- `bool`
 
 ## Source
 

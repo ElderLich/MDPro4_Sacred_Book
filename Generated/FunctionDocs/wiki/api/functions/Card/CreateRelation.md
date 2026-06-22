@@ -3,18 +3,18 @@
 ## Signature
 
 ```lua
-Card.CreateRelation(Card c1, Card c2, int reset_flag) -> void
+Card.CreateRelation(Card c1, Card c2, int reset) -> void
 ```
 
 ## Description
 
-For c1 established in c2 contact this contact, only because c1 occurred RESET_EVENT the event reset
+Creates a relation from c1 to c2 that is cleared by reset.
 
 ## Parameters
 
 - `c1` `Card`
 - `c2` `Card`
-- `reset_flag` `int`
+- `reset` `int`
 
 ## Source
 
