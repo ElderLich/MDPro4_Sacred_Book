@@ -8,7 +8,8 @@ Card.IsRank(Card c, int rank1, [int rank2], [... int]) -> bool
 
 ## Description
 
-Check if card c is Rank rank1 \[, or rank2...\]
+Checks whether c:GetRank() equals any supplied rank value.
+Nil rank arguments are skipped. The binding compares the numeric Rank directly; it does not separately require c to be an Xyz Monster, so non-Xyz cards compare as Rank 0.
 
 ## Parameters
 

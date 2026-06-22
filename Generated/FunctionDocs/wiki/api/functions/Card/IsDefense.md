@@ -3,18 +3,19 @@
 ## Signature
 
 ```lua
-Card.IsDefense(Card c, int def, [int atk2], [... int]) -> bool
+Card.IsDefense(Card c, int def1, [int def2], [... int]) -> bool
 ```
 
 ## Description
 
-Check if c's DEF is def1 \[, or def2...\]; returns false if c is not a monster card or not in LOCATION_MZONE
+Checks whether c is not a Link Monster, is a monster or currently treated as one, and has current DEF equal to any supplied def value.
+Nil def arguments are skipped. Unlike the old imported text, the binding does not explicitly require c to be in the Monster Zone.
 
 ## Parameters
 
 - `c` `Card`
-- `def` `int`
-- `atk2` `int` optional
+- `def1` `int`
+- `def2` `int` optional
 - `...` `int` optional
 
 ## Returns

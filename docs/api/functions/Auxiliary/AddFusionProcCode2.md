@@ -8,8 +8,8 @@ Auxiliary.AddFusionProcCode2(Card c, int code1, int code2, bool sub, bool insf) 
 
 ## Description
 
-For the c designated card number for the code1 and code2 monster for the fusion material
-Sub that can use fusion instead of material, insf that can be summoned with a simple fusion
+Registers a Fusion Summon procedure on c requiring materials with card codes code1 and code2.
+The helper forwards sub and insf unchanged to Auxiliary.AddFusionProcMix.
 
 ## Parameters
 

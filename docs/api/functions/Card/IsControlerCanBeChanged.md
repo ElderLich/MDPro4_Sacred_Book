@@ -8,8 +8,8 @@ Card.IsControlerCanBeChanged(Card c, [bool ignore_mzone], [int zone]) -> bool
 
 ## Description
 
-Check whether the control of c can be changed
-Note: This function appends the space on the field to the Card.IsAbleToChangeControler
+Checks whether control of c can currently move to the other player.
+The card must be in the Monster Zone and must not be affected by EFFECT_CANNOT_CHANGE_CONTROL. Unless ignore_mzone is true, the opponent must also have an available Monster Zone in zone.
 
 ## Parameters
 

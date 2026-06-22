@@ -8,7 +8,8 @@ Card.IsDestructable(Card c, [Effect e]) -> bool
 
 ## Description
 
-Check whether c is destructible
+Checks whether c can be destroyed.
+Without e, the core only rejects Xyz Materials and cards already in the GY or banished. With e, it checks whether c is affected by e and whether effect-destruction protection applies for the current reason player.
 
 ## Parameters
 

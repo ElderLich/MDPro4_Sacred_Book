@@ -8,9 +8,8 @@ Duel.IsEnvironment(int code, [int player], [int loc]) -> bool
 
 ## Description
 
-Check whether the player player is the source code of the venue code
-The site code refers to the code of the venue card in effect, or the value of the effect of the venue change
-Source Player is the controller of the card in effect, or the controller of the Poseidon Witch, etc.
+Checks whether code is currently treated as the environment card or as a matching face-up card in the requested locations.
+player defaults to PLAYER_ALL and loc defaults to LOCATION_ONFIELD. The core checks Field Zones first; if no face-up Field Zone card exists, it can also match the latest EFFECT_CHANGE_ENVIRONMENT effect.
 
 ## Parameters
 

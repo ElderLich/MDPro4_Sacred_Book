@@ -8,7 +8,7 @@ Card.IsDefensePos(Card c) -> bool
 
 ## Description
 
-Check whether c is a defensive representation
+Checks whether c's current position contains POS_DEFENSE.
 
 ## Parameters
 

@@ -8,7 +8,7 @@ Group.RemoveCard(Group g, Card c) -> void
 
 ## Description
 
-Remove c from g
+Removes c from g. The function mutates g unless g is read-only and returns no Lua value.
 
 ## Parameters
 

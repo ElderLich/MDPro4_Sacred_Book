@@ -8,7 +8,8 @@ Card.RemoveOverlayCard(Card c, int player, int min, int max, int reason) -> int
 
 ## Description
 
-For reason reason, let players player remove c stacked min-max card, the return value that is successful
+Lets player remove between min and max Xyz Materials from c for reason and returns the number actually removed.
+The core also offers applicable EFFECT_OVERLAY_REMOVE_REPLACE effects before selecting materials.
 
 ## Parameters
 
@@ -20,7 +21,7 @@ For reason reason, let players player remove c stacked min-max card, the return 
 
 ## Returns
 
-- `int`
+- `int` - Number of Xyz Materials actually removed.
 
 ## Source
 

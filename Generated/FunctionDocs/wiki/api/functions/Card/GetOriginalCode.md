@@ -8,7 +8,7 @@ Card.GetOriginalCode(Card c) -> int
 
 ## Description
 
-Returns the code number of the card in c
+Returns c's original card code from card data.
 
 ## Parameters
 

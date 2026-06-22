@@ -3,19 +3,20 @@
 ## Signature
 
 ```lua
-Auxiliary.exccon(Effect e) -> void
+Auxiliary.exccon(Effect e) -> bool
 ```
 
 ## Description
 
-Simplified method for the condition that this card cannot activate its effect during the turn it was sent to the Graveyard, used for SetCondition
-function aux.exccon(e)
-  return Duel.GetTurnCount()~=e:GetHandler():GetTurnID() or e:GetHandler():IsReason(REASON_RETURN)
-end
+Condition helper for effects that cannot be activated during the same turn their handler was sent to the GY, unless that handler was returned.
 
 ## Parameters
 
 - `e` `Effect`
+
+## Returns
+
+- `bool`
 
 ## Source
 

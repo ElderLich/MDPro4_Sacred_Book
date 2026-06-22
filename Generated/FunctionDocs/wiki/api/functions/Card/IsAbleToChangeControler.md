@@ -8,8 +8,7 @@ Card.IsAbleToChangeControler(Card c) -> bool
 
 ## Description
 
-Check whether c can change the control
-Note: This function returns false only if the card receives the effect of "Can not change control"
+Checks only whether c is free of EFFECT_CANNOT_CHANGE_CONTROL.
 
 ## Parameters
 

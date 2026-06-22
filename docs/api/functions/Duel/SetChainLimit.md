@@ -8,10 +8,8 @@ Duel.SetChainLimit(function f) -> void
 
 ## Description
 
-Set the chain conditions, f function prototype for bool f (e, ep, tp)
-E said to limit the effect of chain, ep said to limit the chain of players, tp that launched the effect of the players
-Calling this function in cost or target processing can limit the kinds of effects that can be chained (such as superfusion)
-If f returns false, it means that the chain can not be chained. Once the chain condition has been set, the new chain will be canceled.
+Registers a temporary chain-limit callback for the current Chain window.
+The callback is stored with the current reason player and is later called as f(e, chain_player, activating_player). If it returns false, that effect cannot be chained.
 
 ## Parameters
 

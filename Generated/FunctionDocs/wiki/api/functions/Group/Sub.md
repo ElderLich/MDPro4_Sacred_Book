@@ -8,8 +8,7 @@ Group.Sub(Group g1, Group g2) -> void
 
 ## Description
 
-Remove the card from g1 that belongs to g2
-Note: g2 itself does not change
+Removes every card in g2 from g1. g1 is mutated unless it is read-only; g2 is not changed.
 
 ## Parameters
 

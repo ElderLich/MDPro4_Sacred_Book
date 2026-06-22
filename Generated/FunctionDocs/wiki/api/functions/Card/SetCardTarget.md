@@ -8,8 +8,8 @@ Card.SetCardTarget(Card c1, Card c2) -> void
 
 ## Description
 
-C2 as the perpetual object of c1
-C1 and c2 of the contact will c1 or c2 any one card to leave or become the side of that reset
+Registers c2 as a persistent card target of c1.
+This stores a card-target relation used by functions such as Card.GetCardTarget and by related-card disable checks; it is separate from Duel.SelectTarget's Chain target list.
 
 ## Parameters
 

@@ -3,21 +3,22 @@
 ## Signature
 
 ```lua
-Auxiliary.indoval(Effect e, Effect re, int rp) -> void
+Auxiliary.indoval(Effect e, Effect re, int rp) -> bool
 ```
 
 ## Description
 
-Simplified method for the filter function preventing destruction by opponent's card effects, used in effect registration for SetValue
-function aux.indoval(e, re, rp)
-  return rp==1-e:GetHandlerPlayer()
-end
+Value helper for indestructibility against opponent's effects; it returns true when rp is the opponent of e's handler player.
 
 ## Parameters
 
 - `e` `Effect`
 - `re` `Effect`
 - `rp` `int`
+
+## Returns
+
+- `bool`
 
 ## Source
 

@@ -3,18 +3,19 @@
 ## Signature
 
 ```lua
-Duel.RaiseEvent(Group|Card eg, int code, Effect re, int r, int rp, int ep, int ev) -> void
+Duel.RaiseEvent(Card|Group eg, int code, Effect|nil re, int r, int rp, int ep, int ev) -> void
 ```
 
 ## Description
 
-To eg, ep, ev, re, r, rp trigger a point in time
+Raises event code for a Card or Group with the supplied effect, reason, reason player, event player, and event value.
+The core processes instant events after raising the event and yields without returning Lua values.
 
 ## Parameters
 
-- `eg` `Group|Card`
+- `eg` `Card|Group`
 - `code` `int`
-- `re` `Effect`
+- `re` `Effect|nil`
 - `r` `int`
 - `rp` `int`
 - `ep` `int`

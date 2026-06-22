@@ -8,7 +8,7 @@ Card.GetDefense(Card c) -> int
 
 ## Description
 
-Returns the current defense of c, the return value is negative that is "?"
+Returns c's current DEF. Unknown or negative DEF values are clamped to 0 by this binding.
 
 ## Parameters
 

@@ -8,7 +8,8 @@ Card.GetRank(Card c) -> int
 
 ## Description
 
-Returns the current class of c
+Returns c's current Rank.
+Non-Xyz cards return 0. Xyz Monsters outside the Monster Zone return their original Rank; in the Monster Zone, Rank-changing effects are applied and the result is at least 1.
 
 ## Parameters
 

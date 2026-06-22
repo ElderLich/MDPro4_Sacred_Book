@@ -8,7 +8,7 @@ Card.GetOriginalLevel(Card c) -> int
 
 ## Description
 
-Returns the rank of the card in c
+Returns c's original Level from card data, or 0 for Xyz Monsters, Link Monsters, and cards marked with STATUS_NO_LEVEL.
 
 ## Parameters
 

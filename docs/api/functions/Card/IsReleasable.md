@@ -8,7 +8,8 @@ Card.IsReleasable(Card c, [int reason]) -> bool
 
 ## Description
 
-Check whether c can be liberated (non-superior call)
+Checks whether c can be Released for a non-Summon reason by the current reason player.
+reason defaults to REASON_COST. The core rejects cards being Summoned, Xyz Materials, cards in the GY or banished, Spell/Trap Cards in the hand, cards the player cannot release, and cards affected by EFFECT_UNRELEASABLE_NONSUM.
 
 ## Parameters
 

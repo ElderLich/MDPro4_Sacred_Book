@@ -3,18 +3,18 @@
 ## Signature
 
 ```lua
-Duel.CheckLocation(int player, int location, int seq) -> bool
+Duel.CheckLocation(int player, int location, int sequence) -> bool
 ```
 
 ## Description
 
-Check if the player's player field is seq in the location of the space is available
+Checks whether player can use the given sequence in location.
 
 ## Parameters
 
 - `player` `int`
 - `location` `int`
-- `seq` `int`
+- `sequence` `int`
 
 ## Returns
 

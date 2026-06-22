@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-06-22T17:28:26+00:00",
+    "generated_at": "2026-06-22T17:47:04+00:00",
     "workspace": "D:\\Programs\\GitHub\\MDPro3_Sacred_Book",
     "dataeditorx_data": "D:\\Programs\\GitHub\\DataEditorX\\DataEditorX\\data",
     "mdpro3_locales": "D:\\Programs\\GitHub\\MDPro3_Data\\Data\\locales",
@@ -636,12 +636,14 @@
         }
       ],
       "description_zh": [
-        "检查玩家player能否以reason为原因，至少移除c叠放的count张卡"
+        "检查player能否为了reason从c上取除至少count个超量素材。",
+        "即使c本身素材不足，可适用的EFFECT_OVERLAY_REMOVE_REPLACE替代效果也可能使该函数返回true。"
       ],
       "description_en": [
-        "Check the player player can be reason for the reason, at least remove the c stacked count cards"
+        "Checks whether player can remove at least count Xyz Materials from c for reason.",
+        "Replacement effects with EFFECT_OVERLAY_REMOVE_REPLACE can make this return true even when c itself has too few materials."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
@@ -656,7 +658,9 @@
       ],
       "aliases": [],
       "tags": [
-        "core-binding"
+        "core-binding",
+        "core-doc-override",
+        "manual-zh-doc"
       ],
       "core_binding": true,
       "core_handler": "card_check_remove_overlay_card"
@@ -2264,12 +2268,14 @@
         }
       ],
       "description_zh": [
-        "返回c上的countertype类型的指示物的数量， countertype=0 则返回c上所有类型的指示物数量之和"
+        "返回c上的countertype类型指示物信息。",
+        "countertype为0时，此核心返回c当前拥有的不同指示物类型数量，而不是全部指示物的总数。"
       ],
       "description_en": [
-        "Returns the number of countertype types on c"
+        "Returns counters on c for countertype.",
+        "When countertype is 0, this core returns the number of different counter types currently present on c, not the total number of all counters."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
@@ -2284,7 +2290,9 @@
       ],
       "aliases": [],
       "tags": [
-        "core-binding"
+        "core-binding",
+        "core-doc-override",
+        "manual-zh-doc"
       ],
       "core_binding": true,
       "core_handler": "card_get_counter"
@@ -2352,12 +2360,12 @@
         }
       ],
       "description_zh": [
-        "返回c的当前守备力"
+        "返回c当前的守备力。未知或负数守备力会被该绑定限制为0。"
       ],
       "description_en": [
-        "Returns the current defense of c, the return value is negative that is \"?\""
+        "Returns c's current DEF. Unknown or negative DEF values are clamped to 0 by this binding."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
@@ -2372,7 +2380,9 @@
       ],
       "aliases": [],
       "tags": [
-        "core-binding"
+        "core-binding",
+        "core-doc-override",
+        "manual-zh-doc"
       ],
       "core_binding": true,
       "core_handler": "card_get_defense"
@@ -3855,12 +3865,12 @@
         }
       ],
       "description_zh": [
-        "返回c的卡片记载的卡号"
+        "返回c卡片数据中的原本卡号。"
       ],
       "description_en": [
-        "Returns the code number of the card in c"
+        "Returns c's original card code from card data."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
@@ -3875,7 +3885,9 @@
       ],
       "aliases": [],
       "tags": [
-        "core-binding"
+        "core-binding",
+        "core-doc-override",
+        "manual-zh-doc"
       ],
       "core_binding": true,
       "core_handler": "card_get_origin_code"
@@ -3991,12 +4003,12 @@
         }
       ],
       "description_zh": [
-        "返回c的卡片记载的等级"
+        "返回c卡片数据中的原本等级；超量怪兽、连接怪兽以及带STATUS_NO_LEVEL的卡返回0。"
       ],
       "description_en": [
-        "Returns the rank of the card in c"
+        "Returns c's original Level from card data, or 0 for Xyz Monsters, Link Monsters, and cards marked with STATUS_NO_LEVEL."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
@@ -4011,7 +4023,9 @@
       ],
       "aliases": [],
       "tags": [
-        "core-binding"
+        "core-binding",
+        "core-doc-override",
+        "manual-zh-doc"
       ],
       "core_binding": true,
       "core_handler": "card_get_origin_level"
@@ -5240,12 +5254,14 @@
         }
       ],
       "description_zh": [
-        "返回c的当前阶级"
+        "返回c当前的阶级。",
+        "非超量卡返回0。超量怪兽不在怪兽区域时返回原本阶级；在怪兽区域时会应用阶级变更效果，结果最低为1。"
       ],
       "description_en": [
-        "Returns the current class of c"
+        "Returns c's current Rank.",
+        "Non-Xyz cards return 0. Xyz Monsters outside the Monster Zone return their original Rank; in the Monster Zone, Rank-changing effects are applied and the result is at least 1."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
@@ -5260,7 +5276,9 @@
       ],
       "aliases": [],
       "tags": [
-        "core-binding"
+        "core-binding",
+        "core-doc-override",
+        "manual-zh-doc"
       ],
       "core_binding": true,
       "core_handler": "card_get_rank"
@@ -5943,12 +5961,14 @@
         }
       ],
       "description_zh": [
-        "返回c的卡片记载的攻击力，返回值是负数表示是\"?\""
+        "返回c卡片数据中记录的攻击力。",
+        "这是记载/数据库数值，不是当前攻击力。不同于Card.GetAttack，该绑定不会把未知攻击力限制为0；但带STATUS_NO_LEVEL的卡返回0。"
       ],
       "description_en": [
-        "Returns the attack power recorded on card c"
+        "Returns the ATK value recorded in c's card data.",
+        "This is the printed/database value, not the current ATK. Unlike Card.GetAttack, the binding does not clamp unknown ATK to 0, except cards marked STATUS_NO_LEVEL return 0."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
@@ -5963,7 +5983,9 @@
       ],
       "aliases": [],
       "tags": [
-        "core-binding"
+        "core-binding",
+        "core-doc-override",
+        "manual-zh-doc"
       ],
       "core_binding": true,
       "core_handler": "card_get_text_attack"
@@ -6364,14 +6386,12 @@
         }
       ],
       "description_zh": [
-        "检查c是否可以改变控制权",
-        "注：仅当卡收到了“不能改变控制权”的效果的影响时，此函数返回false"
+        "只检查c是否不受EFFECT_CANNOT_CHANGE_CONTROL影响。"
       ],
       "description_en": [
-        "Check whether c can change the control",
-        "Note: This function returns false only if the card receives the effect of \"Can not change control\""
+        "Checks only whether c is free of EFFECT_CANNOT_CHANGE_CONTROL."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
@@ -6386,7 +6406,9 @@
       ],
       "aliases": [],
       "tags": [
-        "core-binding"
+        "core-binding",
+        "core-doc-override",
+        "manual-zh-doc"
       ],
       "core_binding": true,
       "core_handler": "card_is_able_to_change_controler"
@@ -8474,14 +8496,14 @@
         }
       ],
       "description_zh": [
-        "检查c的控制权是否可以改变。",
-        "ignore_mzone=true 会忽视转移控制权后的玩家场上是否有空格位， zone 表示必须要使用的位置"
+        "检查c的控制权当前能否转移给另一名玩家。",
+        "c必须在怪兽区域，且不受EFFECT_CANNOT_CHANGE_CONTROL影响。ignore_mzone不为true时，对方还必须在zone指定范围内有可用的怪兽区域。"
       ],
       "description_en": [
-        "Check whether the control of c can be changed",
-        "Note: This function appends the space on the field to the Card.IsAbleToChangeControler"
+        "Checks whether control of c can currently move to the other player.",
+        "The card must be in the Monster Zone and must not be affected by EFFECT_CANNOT_CHANGE_CONTROL. Unless ignore_mzone is true, the opponent must also have an available Monster Zone in zone."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
@@ -8496,7 +8518,9 @@
       ],
       "aliases": [],
       "tags": [
-        "core-binding"
+        "core-binding",
+        "core-doc-override",
+        "manual-zh-doc"
       ],
       "core_binding": true,
       "core_handler": "card_is_controler_can_be_changed"
@@ -8513,13 +8537,13 @@
           "description": ""
         },
         {
-          "name": "def",
+          "name": "def1",
           "type": "int",
           "optional": false,
           "description": ""
         },
         {
-          "name": "atk2",
+          "name": "def2",
           "type": "int",
           "optional": true,
           "description": ""
@@ -8538,12 +8562,14 @@
         }
       ],
       "description_zh": [
-        "检查c的守备力是否是 def1[, 或者为 def2...]，如果c不是怪兽卡，或者不在 LOCATION_MZONE 则都返回false"
+        "检查c不是连接怪兽、是怪兽或当前被当作怪兽，并且当前守备力是否等于任意给定def值。",
+        "nil的def参数会被跳过。不同于旧导入文本，该绑定不会明确要求c位于怪兽区域。"
       ],
       "description_en": [
-        "Check if c's DEF is def1 [, or def2...]; returns false if c is not a monster card or not in LOCATION_MZONE"
+        "Checks whether c is not a Link Monster, is a monster or currently treated as one, and has current DEF equal to any supplied def value.",
+        "Nil def arguments are skipped. Unlike the old imported text, the binding does not explicitly require c to be in the Monster Zone."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
@@ -8558,7 +8584,9 @@
       ],
       "aliases": [],
       "tags": [
-        "core-binding"
+        "core-binding",
+        "core-doc-override",
+        "manual-zh-doc"
       ],
       "core_binding": true,
       "core_handler": "card_is_defense"
@@ -8682,12 +8710,12 @@
         }
       ],
       "description_zh": [
-        "检查c是否是守备表示"
+        "检查c当前表示形式是否包含POS_DEFENSE。"
       ],
       "description_en": [
-        "Check whether c is a defensive representation"
+        "Checks whether c's current position contains POS_DEFENSE."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
@@ -8702,7 +8730,9 @@
       ],
       "aliases": [],
       "tags": [
-        "core-binding"
+        "core-binding",
+        "core-doc-override",
+        "manual-zh-doc"
       ],
       "core_binding": true,
       "core_handler": "card_is_defense_pos"
@@ -8732,12 +8762,14 @@
         }
       ],
       "description_zh": [
-        "检查c是否是可被[效果 e]破坏的"
+        "检查c能否被破坏。",
+        "不传e时，核心只排除超量素材以及已经在墓地或除外的卡。传入e时，会检查c是否受e影响，以及按当前原因玩家判断的效果破坏耐性。"
       ],
       "description_en": [
-        "Check whether c is destructible"
+        "Checks whether c can be destroyed.",
+        "Without e, the core only rejects Xyz Materials and cards already in the GY or banished. With e, it checks whether c is affected by e and whether effect-destruction protection applies for the current reason player."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
@@ -8752,7 +8784,9 @@
       ],
       "aliases": [],
       "tags": [
-        "core-binding"
+        "core-binding",
+        "core-doc-override",
+        "manual-zh-doc"
       ],
       "core_binding": true,
       "core_handler": "card_is_destructable"
@@ -9498,12 +9532,14 @@
         }
       ],
       "description_zh": [
-        "检查c用作融合素材时是否属于类型type（与IsType的区别在于对于魔陷区的怪兽卡，用其原本类型作判断）"
+        "检查c作为融合素材使用时的种类是否包含type。",
+        "原本为怪兽的卡位于魔法与陷阱区域，且正在素材检查时，核心使用卡片数据中的种类；其他情况使用c当前种类。"
       ],
       "description_en": [
-        "Check if card c, when used as Fusion Material, has type type (unlike IsType, for monster cards in the Spell/Trap Zone, it uses their original type for judgment)"
+        "Checks whether c's type while used as Fusion Material contains type.",
+        "For an original Monster Card in the Spell & Trap Zone, the core uses the card-data type while material checks are active; otherwise it uses c's current type."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
@@ -9518,7 +9554,9 @@
       ],
       "aliases": [],
       "tags": [
-        "core-binding"
+        "core-binding",
+        "core-doc-override",
+        "manual-zh-doc"
       ],
       "core_binding": true,
       "core_handler": "card_is_fusion_type"
@@ -11359,12 +11397,14 @@
         }
       ],
       "description_zh": [
-        "检查c是否是阶级 rank1[, 或者为 rank2...]"
+        "检查c:GetRank()是否等于任意给定rank值。",
+        "nil的rank参数会被跳过。该绑定直接比较数值阶级，不会额外要求c必须是超量怪兽，因此非超量卡会按阶级0参与比较。"
       ],
       "description_en": [
-        "Check if card c is Rank rank1 [, or rank2...]"
+        "Checks whether c:GetRank() equals any supplied rank value.",
+        "Nil rank arguments are skipped. The binding compares the numeric Rank directly; it does not separately require c to be an Xyz Monster, so non-Xyz cards compare as Rank 0."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
@@ -11379,7 +11419,9 @@
       ],
       "aliases": [],
       "tags": [
-        "core-binding"
+        "core-binding",
+        "core-doc-override",
+        "manual-zh-doc"
       ],
       "core_binding": true,
       "core_handler": "card_is_rank"
@@ -11760,12 +11802,14 @@
         }
       ],
       "description_zh": [
-        "检查c是否可以被以原因reason解放（非上级召唤用）"
+        "检查c能否由当前原因玩家作为非召唤用途被解放。",
+        "reason默认REASON_COST。正在召唤中的卡、超量素材、墓地或除外的卡、手牌中的魔法/陷阱卡、玩家不能解放的卡，以及受EFFECT_UNRELEASABLE_NONSUM影响的卡会返回false。"
       ],
       "description_en": [
-        "Check whether c can be liberated (non-superior call)"
+        "Checks whether c can be Released for a non-Summon reason by the current reason player.",
+        "reason defaults to REASON_COST. The core rejects cards being Summoned, Xyz Materials, cards in the GY or banished, Spell/Trap Cards in the hand, cards the player cannot release, and cards affected by EFFECT_UNRELEASABLE_NONSUM."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
@@ -11780,7 +11824,9 @@
       ],
       "aliases": [],
       "tags": [
-        "core-binding"
+        "core-binding",
+        "core-doc-override",
+        "manual-zh-doc"
       ],
       "core_binding": true,
       "core_handler": "card_is_releasable"
@@ -13127,16 +13173,18 @@
       "returns": [
         {
           "type": "int",
-          "description": ""
+          "description": "Number of Xyz Materials actually removed."
         }
       ],
       "description_zh": [
-        "以reason为原因，让玩家player移除c叠放的min-max张卡，返回值表示移除的数量"
+        "让player为了reason从c上取除min到max个超量素材，并返回实际取除数量。",
+        "核心会在选择素材前提供可适用的EFFECT_OVERLAY_REMOVE_REPLACE替代效果。"
       ],
       "description_en": [
-        "For reason reason, let players player remove c stacked min-max card, the return value that is successful"
+        "Lets player remove between min and max Xyz Materials from c for reason and returns the number actually removed.",
+        "The core also offers applicable EFFECT_OVERLAY_REMOVE_REPLACE effects before selecting materials."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
@@ -13151,7 +13199,9 @@
       ],
       "aliases": [],
       "tags": [
-        "core-binding"
+        "core-binding",
+        "core-doc-override",
+        "manual-zh-doc"
       ],
       "core_binding": true,
       "core_handler": "card_remove_overlay_card"
@@ -13456,21 +13506,16 @@
           "description": ""
         }
       ],
-      "returns": [
-        {
-          "type": "nil",
-          "description": ""
-        }
-      ],
+      "returns": [],
       "description_zh": [
-        "把c2作为c1的永续对象",
-        "c1和c2的联系会在c1或c2任意一卡离场或变成里侧表示时reset"
+        "把c2登记为c1的持续卡片对象。",
+        "该函数保存的是供Card.GetCardTarget等函数以及相关卡无效检查使用的卡片对象关系，不是Duel.SelectTarget登记的连锁对象列表。"
       ],
       "description_en": [
-        "C2 as the perpetual object of c1",
-        "C1 and c2 of the contact will c1 or c2 any one card to leave or become the side of that reset"
+        "Registers c2 as a persistent card target of c1.",
+        "This stores a card-target relation used by functions such as Card.GetCardTarget and by related-card disable checks; it is separate from Duel.SelectTarget's Chain target list."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
@@ -13485,7 +13530,9 @@
       ],
       "aliases": [],
       "tags": [
-        "core-binding"
+        "core-binding",
+        "core-doc-override",
+        "manual-zh-doc"
       ],
       "core_binding": true,
       "core_handler": "card_set_card_target"
@@ -15897,7 +15944,7 @@
           "description": ""
         },
         {
-          "name": "seq",
+          "name": "sequence",
           "type": "int",
           "optional": false,
           "description": ""
@@ -15910,12 +15957,12 @@
         }
       ],
       "description_zh": [
-        "检查玩家player的场上位于location序号为seq的空格是否可用"
+        "检查player能否使用location中的sequence位置。"
       ],
       "description_en": [
-        "Check if the player's player field is seq in the location of the space is available"
+        "Checks whether player can use the given sequence in location."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libduel.cpp",
@@ -15930,7 +15977,9 @@
       ],
       "aliases": [],
       "tags": [
-        "core-binding"
+        "core-binding",
+        "core-doc-override",
+        "manual-zh-doc"
       ],
       "core_binding": true,
       "core_handler": "duel_check_location"
@@ -21283,16 +21332,14 @@
         }
       ],
       "description_zh": [
-        "检查场地卡号是否是code [，来源玩家是否是 player][，生效区域是否在 loc 内]",
-        "场地卡号指当前生效的场地卡的卡号，或者海神的巫女把场地变化效果的值",
-        "来源玩家指当前生效的场地卡的控制者，或者海神的巫女等卡的控制者"
+        "检查code当前是否被视为环境卡，或是否在请求的位置中存在匹配的表侧表示卡。",
+        "player默认PLAYER_ALL，loc默认LOCATION_ONFIELD。核心会先检查场地区域；若没有表侧场地区域卡，也可以匹配最新的EFFECT_CHANGE_ENVIRONMENT效果。"
       ],
       "description_en": [
-        "Check whether the player player is the source code of the venue code",
-        "The site code refers to the code of the venue card in effect, or the value of the effect of the venue change",
-        "Source Player is the controller of the card in effect, or the controller of the Poseidon Witch, etc."
+        "Checks whether code is currently treated as the environment card or as a matching face-up card in the requested locations.",
+        "player defaults to PLAYER_ALL and loc defaults to LOCATION_ONFIELD. The core checks Field Zones first; if no face-up Field Zone card exists, it can also match the latest EFFECT_CHANGE_ENVIRONMENT effect."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libduel.cpp",
@@ -21307,7 +21354,9 @@
       ],
       "aliases": [],
       "tags": [
-        "core-binding"
+        "core-binding",
+        "core-doc-override",
+        "manual-zh-doc"
       ],
       "core_binding": true,
       "core_handler": "duel_is_environment"
@@ -22985,14 +23034,14 @@
         }
       ],
       "description_zh": [
-        "无效此次攻击，返回值表示是否成功",
-        "此次攻击已经被其他效果无效或导致攻击的卡不能攻击则返回false"
+        "尝试无效当前攻击，并返回是否成功无效该次攻击。",
+        "没有有效攻击怪兽、攻击怪兽离场或field ID变化、攻击怪兽不能攻击、伤害步骤状态不允许无效攻击，或攻击怪兽不受当前处理效果影响时，核心返回false。"
       ],
       "description_en": [
-        "Invalid This attack, the return value indicates whether the success",
-        "This attack has been invalidated by other effects or cause the attack card can not attack is false"
+        "Attempts to negate the current attack and returns whether the attack was successfully negated.",
+        "The core fails if there is no valid current attacker, if the attacker moved or changed field ID, if the attacker cannot attack, if the Damage Step state blocks attack negation, or if the attacker is not affected by the resolving effect."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libduel.cpp",
@@ -23007,7 +23056,9 @@
       ],
       "aliases": [],
       "tags": [
-        "core-binding"
+        "core-binding",
+        "core-doc-override",
+        "manual-zh-doc"
       ],
       "core_binding": true,
       "core_handler": "duel_disable_attack"
@@ -23276,7 +23327,7 @@
       "params": [
         {
           "name": "eg",
-          "type": "Group|Card",
+          "type": "Card|Group",
           "optional": false,
           "description": ""
         },
@@ -23288,7 +23339,7 @@
         },
         {
           "name": "re",
-          "type": "Effect",
+          "type": "Effect|nil",
           "optional": false,
           "description": ""
         },
@@ -23317,19 +23368,16 @@
           "description": ""
         }
       ],
-      "returns": [
-        {
-          "type": "nil",
-          "description": ""
-        }
-      ],
+      "returns": [],
       "description_zh": [
-        "以eg,ep,ev,re,r,rp触发一个时点 code"
+        "以给定效果、原因、原因玩家、事件玩家和事件值，对Card或Group引发事件code。",
+        "核心在引发事件后处理即时事件并yield，不返回Lua值。"
       ],
       "description_en": [
-        "To eg, ep, ev, re, r, rp trigger a point in time"
+        "Raises event code for a Card or Group with the supplied effect, reason, reason player, event player, and event value.",
+        "The core processes instant events after raising the event and yields without returning Lua values."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libduel.cpp",
@@ -23344,7 +23392,9 @@
       ],
       "aliases": [],
       "tags": [
-        "core-binding"
+        "core-binding",
+        "core-doc-override",
+        "manual-zh-doc"
       ],
       "core_binding": true,
       "core_handler": "duel_raise_event"
@@ -24081,7 +24131,7 @@
           "name": "pos",
           "type": "int",
           "optional": true,
-          "description": ""
+          "description": "default: previous position"
         },
         {
           "name": "zone",
@@ -24092,19 +24142,19 @@
       ],
       "returns": [
         {
-          "type": "bool",
-          "description": ""
+          "type": "bool|nil",
+          "description": "Success flag, or nil if c was not temporarily removed from the field."
         }
       ],
       "description_zh": [
-        "把c以表示形式pos返回到场上[的区域 zone]，pos默认值是离场前的表示形式，返回值表示是否成功",
-        "c必须是以REASON_TEMPORARY原因离场，并且离场后没有离开过那个位置"
+        "把临时离场的卡返回到其之前的控制者和之前的位置。",
+        "pos默认之前的表示形式，zone默认0xff。若c不是因REASON_TEMPORARY离场，该绑定不返回Lua值；否则会yield并返回移动是否成功。"
       ],
       "description_en": [
-        "To return the form c to the field pos, pos default value is the expression before leaving the field, the return value indicates whether the success",
-        "C must be a REASON_TEMPORARY reason to leave, and leave the position did not leave that position"
+        "Returns a card temporarily removed from the field to its previous controller and previous location.",
+        "pos defaults to the previous position and zone defaults to 0xff. If c was not removed for REASON_TEMPORARY, the binding returns no Lua value; otherwise it yields and returns whether the move succeeded."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libduel.cpp",
@@ -24119,7 +24169,9 @@
       ],
       "aliases": [],
       "tags": [
-        "core-binding"
+        "core-binding",
+        "core-doc-override",
+        "manual-zh-doc"
       ],
       "core_binding": true,
       "core_handler": "duel_return_to_field"
@@ -25656,25 +25708,16 @@
           "description": ""
         }
       ],
-      "returns": [
-        {
-          "type": "nil",
-          "description": ""
-        }
-      ],
+      "returns": [],
       "description_zh": [
-        "设定连锁条件，f的函数原型为 bool f(e,ep,tp)",
-        "e表示要限制连锁的效果，ep表示要限制连锁的玩家，tp表示发动该效果的玩家",
-        "在cost或者target处理中调用此函数可以限制可以连锁的效果的种类（如超融合）",
-        "如果f返回false表示不能连锁，一旦设置连锁条件后发生了新的连锁那么连锁条件将会解除"
+        "为当前连锁窗口登记临时连锁限制回调。",
+        "该回调会与当前原因玩家一起保存，之后以f(e, chain_player, activating_player)调用；返回false时，该效果不能连锁。"
       ],
       "description_en": [
-        "Set the chain conditions, f function prototype for bool f (e, ep, tp)",
-        "E said to limit the effect of chain, ep said to limit the chain of players, tp that launched the effect of the players",
-        "Calling this function in cost or target processing can limit the kinds of effects that can be chained (such as superfusion)",
-        "If f returns false, it means that the chain can not be chained. Once the chain condition has been set, the new chain will be canceled."
+        "Registers a temporary chain-limit callback for the current Chain window.",
+        "The callback is stored with the current reason player and is later called as f(e, chain_player, activating_player). If it returns false, that effect cannot be chained."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libduel.cpp",
@@ -25689,7 +25732,9 @@
       ],
       "aliases": [],
       "tags": [
-        "core-binding"
+        "core-binding",
+        "core-doc-override",
+        "manual-zh-doc"
       ],
       "core_binding": true,
       "core_handler": "duel_set_chain_limit"
@@ -31930,19 +31975,14 @@
           "description": ""
         }
       ],
-      "returns": [
-        {
-          "type": "nil",
-          "description": ""
-        }
-      ],
+      "returns": [],
       "description_zh": [
-        "把c从g中移除"
+        "从g中移除c。除非g为只读Group，否则会直接修改g；不返回Lua值。"
       ],
       "description_en": [
-        "Remove c from g"
+        "Removes c from g. The function mutates g unless g is read-only and returns no Lua value."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libgroup.cpp",
@@ -31957,7 +31997,9 @@
       ],
       "aliases": [],
       "tags": [
-        "core-binding"
+        "core-binding",
+        "core-doc-override",
+        "manual-zh-doc"
       ],
       "core_binding": true,
       "core_handler": "group_remove_card"
@@ -32337,21 +32379,14 @@
           "description": ""
         }
       ],
-      "returns": [
-        {
-          "type": "nil",
-          "description": ""
-        }
-      ],
+      "returns": [],
       "description_zh": [
-        "从g1中移除属于g2中的卡",
-        "注：g2本身不会发生变化"
+        "从g1中移除g2包含的每张卡。除非g1只读，否则会直接修改g1；g2不会改变。"
       ],
       "description_en": [
-        "Remove the card from g1 that belongs to g2",
-        "Note: g2 itself does not change"
+        "Removes every card in g2 from g1. g1 is mutated unless it is read-only; g2 is not changed."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libgroup.cpp",
@@ -32366,7 +32401,9 @@
       ],
       "aliases": [],
       "tags": [
-        "core-binding"
+        "core-binding",
+        "core-doc-override",
+        "manual-zh-doc"
       ],
       "core_binding": true,
       "core_handler": "group_sub"
@@ -36952,18 +36989,17 @@
       ],
       "returns": [
         {
-          "type": "nil",
+          "type": "bool",
           "description": ""
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "Simplified method for the condition that this card cannot activate its effect during the turn it was sent to the Graveyard, used for SetCondition",
-        "function aux.exccon(e)",
-        "  return Duel.GetTurnCount()~=e:GetHandler():GetTurnID() or e:GetHandler():IsReason(REASON_RETURN)",
-        "end"
+      "description_zh": [
+        "用于“送去墓地的当回合不能发动”类效果的条件辅助函数；处理者不是本回合送去墓地，或处理者因返回而记录原因时返回true。"
       ],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "Condition helper for effects that cannot be activated during the same turn their handler was sent to the GY, unless that handler was returned."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -36974,7 +37010,10 @@
       "aliases": [
         "aux.exccon"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -37332,7 +37371,7 @@
         {
           "name": "c",
           "type": "Card|nil",
-          "optional": true,
+          "optional": false,
           "description": ""
         },
         {
@@ -37349,12 +37388,14 @@
         }
       ],
       "description_zh": [
-        "Subgroup check function"
+        "Group.CheckSubGroup及相关选择辅助函数使用的全局额外子组检查钩子。",
+        "默认实现返回true。召唤和选择手续会临时替换该函数以施加额外组限制，之后再恢复。"
       ],
       "description_en": [
-        "Subgroup check function"
+        "Global additional subgroup-check hook used by Group.CheckSubGroup and related selection helpers.",
+        "The default implementation returns true. Summon and selection procedures temporarily replace this function to enforce extra group constraints, then restore it."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -37365,7 +37406,10 @@
       "aliases": [
         "aux.GCheckAdditional"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -38345,18 +38389,17 @@
       ],
       "returns": [
         {
-          "type": "nil",
+          "type": "bool",
           "description": ""
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "Simplified method for the filter function preventing destruction by opponent's card effects, used in effect registration for SetValue",
-        "function aux.indoval(e, re, rp)",
-        "  return rp==1-e:GetHandlerPlayer()",
-        "end"
+      "description_zh": [
+        "对方效果破坏耐性使用的Value辅助函数；当rp是效果e处理者玩家的对方时返回true。"
       ],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "Value helper for indestructibility against opponent's effects; it returns true when rp is the opponent of e's handler player."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -38367,7 +38410,10 @@
       "aliases": [
         "aux.indoval"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -44795,20 +44841,16 @@
           "description": ""
         }
       ],
-      "returns": [
-        {
-          "type": "nil",
-          "description": ""
-        }
-      ],
+      "returns": [],
       "description_zh": [
-        "Fusion monster, name + name"
+        "给c登记需要卡号为code1和code2的素材的融合召唤手续。",
+        "该辅助函数会把sub和insf原样转交给Auxiliary.AddFusionProcMix。"
       ],
       "description_en": [
-        "For the c designated card number for the code1 and code2 monster for the fusion material",
-        "Sub that can use fusion instead of material, insf that can be summoned with a simple fusion"
+        "Registers a Fusion Summon procedure on c requiring materials with card codes code1 and code2.",
+        "The helper forwards sub and insf unchanged to Auxiliary.AddFusionProcMix."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/procedure.lua",
@@ -44819,7 +44861,10 @@
       "aliases": [
         "aux.AddFusionProcCode2"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -50259,32 +50304,30 @@
         },
         {
           "name": "sp",
-          "type": "any",
+          "type": "int",
           "optional": false,
           "description": ""
         },
         {
           "name": "st",
-          "type": "any",
+          "type": "int",
           "optional": false,
           "description": ""
         }
       ],
       "returns": [
         {
-          "type": "nil",
+          "type": "bool",
           "description": ""
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "Simplified method for the filter function preventing summoning (broadly) by methods other than Fusion Summon, used in effect registration for SetValue",
-        "se is the effect used to summon the card, sp is the summoning player, st is the summon type",
-        "function aux.fuslimit(e, se, sp, st)",
-        "  return st&SUMMON_TYPE_FUSION==SUMMON_TYPE_FUSION",
-        "end"
+      "description_zh": [
+        "特殊召唤条件辅助函数；当召唤类型st包含SUMMON_TYPE_FUSION时返回true。"
       ],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "Special Summon condition helper that returns true when summon type st contains SUMMON_TYPE_FUSION."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/procedure.lua",
@@ -50295,7 +50338,10 @@
       "aliases": [
         "aux.fuslimit"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },

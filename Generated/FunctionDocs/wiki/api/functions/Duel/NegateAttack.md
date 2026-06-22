@@ -8,8 +8,8 @@ Duel.NegateAttack() -> bool
 
 ## Description
 
-Invalid This attack, the return value indicates whether the success
-This attack has been invalidated by other effects or cause the attack card can not attack is false
+Attempts to negate the current attack and returns whether the attack was successfully negated.
+The core fails if there is no valid current attacker, if the attacker moved or changed field ID, if the attacker cannot attack, if the Damage Step state blocks attack negation, or if the attacker is not affected by the resolving effect.
 
 ## Returns
 

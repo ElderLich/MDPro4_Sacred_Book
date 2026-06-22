@@ -453,6 +453,93 @@ def parse_bullet_file(path: Path) -> dict[str, list[str]]:
 
 FUNCTION_EN_OVERRIDES = {
     # High-use core/API functions reviewed from MDPro3/YGOPro sources.
+    "Card.IsControlerCanBeChanged": [
+        "Checks whether control of c can currently move to the other player.",
+        "The card must be in the Monster Zone and must not be affected by EFFECT_CANNOT_CHANGE_CONTROL. Unless ignore_mzone is true, the opponent must also have an available Monster Zone in zone.",
+    ],
+    "Duel.NegateAttack": [
+        "Attempts to negate the current attack and returns whether the attack was successfully negated.",
+        "The core fails if there is no valid current attacker, if the attacker moved or changed field ID, if the attacker cannot attack, if the Damage Step state blocks attack negation, or if the attacker is not affected by the resolving effect.",
+    ],
+    "Card.GetCounter": [
+        "Returns counters on c for countertype.",
+        "When countertype is 0, this core returns the number of different counter types currently present on c, not the total number of all counters.",
+    ],
+    "Card.GetDefense": ["Returns c's current DEF. Unknown or negative DEF values are clamped to 0 by this binding."],
+    "Card.IsDefensePos": ["Checks whether c's current position contains POS_DEFENSE."],
+    "Card.IsReleasable": [
+        "Checks whether c can be Released for a non-Summon reason by the current reason player.",
+        "reason defaults to REASON_COST. The core rejects cards being Summoned, Xyz Materials, cards in the GY or banished, Spell/Trap Cards in the hand, cards the player cannot release, and cards affected by EFFECT_UNRELEASABLE_NONSUM.",
+    ],
+    "Card.SetCardTarget": [
+        "Registers c2 as a persistent card target of c1.",
+        "This stores a card-target relation used by functions such as Card.GetCardTarget and by related-card disable checks; it is separate from Duel.SelectTarget's Chain target list.",
+    ],
+    "Auxiliary.exccon": ["Condition helper for effects that cannot be activated during the same turn their handler was sent to the GY, unless that handler was returned."],
+    "Card.GetOriginalLevel": ["Returns c's original Level from card data, or 0 for Xyz Monsters, Link Monsters, and cards marked with STATUS_NO_LEVEL."],
+    "Group.RemoveCard": ["Removes c from g. The function mutates g unless g is read-only and returns no Lua value."],
+    "Auxiliary.AddFusionProcCode2": [
+        "Registers a Fusion Summon procedure on c requiring materials with card codes code1 and code2.",
+        "The helper forwards sub and insf unchanged to Auxiliary.AddFusionProcMix.",
+    ],
+    "Duel.IsEnvironment": [
+        "Checks whether code is currently treated as the environment card or as a matching face-up card in the requested locations.",
+        "player defaults to PLAYER_ALL and loc defaults to LOCATION_ONFIELD. The core checks Field Zones first; if no face-up Field Zone card exists, it can also match the latest EFFECT_CHANGE_ENVIRONMENT effect.",
+    ],
+    "Auxiliary.indoval": ["Value helper for indestructibility against opponent's effects; it returns true when rp is the opponent of e's handler player."],
+    "Duel.RaiseEvent": [
+        "Raises event code for a Card or Group with the supplied effect, reason, reason player, event player, and event value.",
+        "The core processes instant events after raising the event and yields without returning Lua values.",
+    ],
+    "Auxiliary.GCheckAdditional": [
+        "Global additional subgroup-check hook used by Group.CheckSubGroup and related selection helpers.",
+        "The default implementation returns true. Summon and selection procedures temporarily replace this function to enforce extra group constraints, then restore it.",
+    ],
+    "Card.IsRank": [
+        "Checks whether c:GetRank() equals any supplied rank value.",
+        "Nil rank arguments are skipped. The binding compares the numeric Rank directly; it does not separately require c to be an Xyz Monster, so non-Xyz cards compare as Rank 0.",
+    ],
+    "Card.GetTextAttack": [
+        "Returns the ATK value recorded in c's card data.",
+        "This is the printed/database value, not the current ATK. Unlike Card.GetAttack, the binding does not clamp unknown ATK to 0, except cards marked STATUS_NO_LEVEL return 0.",
+    ],
+    "Duel.CheckLocation": ["Checks whether player can use the given sequence in location."],
+    "Card.GetRank": [
+        "Returns c's current Rank.",
+        "Non-Xyz cards return 0. Xyz Monsters outside the Monster Zone return their original Rank; in the Monster Zone, Rank-changing effects are applied and the result is at least 1.",
+    ],
+    "Card.GetOriginalCode": ["Returns c's original card code from card data."],
+    "Card.IsDefense": [
+        "Checks whether c is not a Link Monster, is a monster or currently treated as one, and has current DEF equal to any supplied def value.",
+        "Nil def arguments are skipped. Unlike the old imported text, the binding does not explicitly require c to be in the Monster Zone.",
+    ],
+    "Auxiliary.fuslimit": ["Special Summon condition helper that returns true when summon type st contains SUMMON_TYPE_FUSION."],
+    "Card.IsAbleToChangeControler": ["Checks only whether c is free of EFFECT_CANNOT_CHANGE_CONTROL."],
+    "Group.Sub": ["Removes every card in g2 from g1. g1 is mutated unless it is read-only; g2 is not changed."],
+    "Card.IsFusionType": [
+        "Checks whether c's type while used as Fusion Material contains type.",
+        "For an original Monster Card in the Spell & Trap Zone, the core uses the card-data type while material checks are active; otherwise it uses c's current type.",
+    ],
+    "Duel.ReturnToField": [
+        "Returns a card temporarily removed from the field to its previous controller and previous location.",
+        "pos defaults to the previous position and zone defaults to 0xff. If c was not removed for REASON_TEMPORARY, the binding returns no Lua value; otherwise it yields and returns whether the move succeeded.",
+    ],
+    "Duel.SetChainLimit": [
+        "Registers a temporary chain-limit callback for the current Chain window.",
+        "The callback is stored with the current reason player and is later called as f(e, chain_player, activating_player). If it returns false, that effect cannot be chained.",
+    ],
+    "Card.CheckRemoveOverlayCard": [
+        "Checks whether player can remove at least count Xyz Materials from c for reason.",
+        "Replacement effects with EFFECT_OVERLAY_REMOVE_REPLACE can make this return true even when c itself has too few materials.",
+    ],
+    "Card.IsDestructable": [
+        "Checks whether c can be destroyed.",
+        "Without e, the core only rejects Xyz Materials and cards already in the GY or banished. With e, it checks whether c is affected by e and whether effect-destruction protection applies for the current reason player.",
+    ],
+    "Card.RemoveOverlayCard": [
+        "Lets player remove between min and max Xyz Materials from c for reason and returns the number actually removed.",
+        "The core also offers applicable EFFECT_OVERLAY_REMOVE_REPLACE effects before selecting materials.",
+    ],
     "Auxiliary.IsCodeListed": [
         "Checks whether code is registered in c's card_code_list by Auxiliary.AddCodeList or a related helper.",
         "The Lua helper returns true for a listed code and nil otherwise, so it is normally used as a truthy check.",
@@ -1435,6 +1522,93 @@ FUNCTION_EN_OVERRIDES = {
 
 
 FUNCTION_ZH_OVERRIDES = {
+    "Card.IsControlerCanBeChanged": [
+        "检查c的控制权当前能否转移给另一名玩家。",
+        "c必须在怪兽区域，且不受EFFECT_CANNOT_CHANGE_CONTROL影响。ignore_mzone不为true时，对方还必须在zone指定范围内有可用的怪兽区域。",
+    ],
+    "Duel.NegateAttack": [
+        "尝试无效当前攻击，并返回是否成功无效该次攻击。",
+        "没有有效攻击怪兽、攻击怪兽离场或field ID变化、攻击怪兽不能攻击、伤害步骤状态不允许无效攻击，或攻击怪兽不受当前处理效果影响时，核心返回false。",
+    ],
+    "Card.GetCounter": [
+        "返回c上的countertype类型指示物信息。",
+        "countertype为0时，此核心返回c当前拥有的不同指示物类型数量，而不是全部指示物的总数。",
+    ],
+    "Card.GetDefense": ["返回c当前的守备力。未知或负数守备力会被该绑定限制为0。"],
+    "Card.IsDefensePos": ["检查c当前表示形式是否包含POS_DEFENSE。"],
+    "Card.IsReleasable": [
+        "检查c能否由当前原因玩家作为非召唤用途被解放。",
+        "reason默认REASON_COST。正在召唤中的卡、超量素材、墓地或除外的卡、手牌中的魔法/陷阱卡、玩家不能解放的卡，以及受EFFECT_UNRELEASABLE_NONSUM影响的卡会返回false。",
+    ],
+    "Card.SetCardTarget": [
+        "把c2登记为c1的持续卡片对象。",
+        "该函数保存的是供Card.GetCardTarget等函数以及相关卡无效检查使用的卡片对象关系，不是Duel.SelectTarget登记的连锁对象列表。",
+    ],
+    "Auxiliary.exccon": ["用于“送去墓地的当回合不能发动”类效果的条件辅助函数；处理者不是本回合送去墓地，或处理者因返回而记录原因时返回true。"],
+    "Card.GetOriginalLevel": ["返回c卡片数据中的原本等级；超量怪兽、连接怪兽以及带STATUS_NO_LEVEL的卡返回0。"],
+    "Group.RemoveCard": ["从g中移除c。除非g为只读Group，否则会直接修改g；不返回Lua值。"],
+    "Auxiliary.AddFusionProcCode2": [
+        "给c登记需要卡号为code1和code2的素材的融合召唤手续。",
+        "该辅助函数会把sub和insf原样转交给Auxiliary.AddFusionProcMix。",
+    ],
+    "Duel.IsEnvironment": [
+        "检查code当前是否被视为环境卡，或是否在请求的位置中存在匹配的表侧表示卡。",
+        "player默认PLAYER_ALL，loc默认LOCATION_ONFIELD。核心会先检查场地区域；若没有表侧场地区域卡，也可以匹配最新的EFFECT_CHANGE_ENVIRONMENT效果。",
+    ],
+    "Auxiliary.indoval": ["对方效果破坏耐性使用的Value辅助函数；当rp是效果e处理者玩家的对方时返回true。"],
+    "Duel.RaiseEvent": [
+        "以给定效果、原因、原因玩家、事件玩家和事件值，对Card或Group引发事件code。",
+        "核心在引发事件后处理即时事件并yield，不返回Lua值。",
+    ],
+    "Auxiliary.GCheckAdditional": [
+        "Group.CheckSubGroup及相关选择辅助函数使用的全局额外子组检查钩子。",
+        "默认实现返回true。召唤和选择手续会临时替换该函数以施加额外组限制，之后再恢复。",
+    ],
+    "Card.IsRank": [
+        "检查c:GetRank()是否等于任意给定rank值。",
+        "nil的rank参数会被跳过。该绑定直接比较数值阶级，不会额外要求c必须是超量怪兽，因此非超量卡会按阶级0参与比较。",
+    ],
+    "Card.GetTextAttack": [
+        "返回c卡片数据中记录的攻击力。",
+        "这是记载/数据库数值，不是当前攻击力。不同于Card.GetAttack，该绑定不会把未知攻击力限制为0；但带STATUS_NO_LEVEL的卡返回0。",
+    ],
+    "Duel.CheckLocation": ["检查player能否使用location中的sequence位置。"],
+    "Card.GetRank": [
+        "返回c当前的阶级。",
+        "非超量卡返回0。超量怪兽不在怪兽区域时返回原本阶级；在怪兽区域时会应用阶级变更效果，结果最低为1。",
+    ],
+    "Card.GetOriginalCode": ["返回c卡片数据中的原本卡号。"],
+    "Card.IsDefense": [
+        "检查c不是连接怪兽、是怪兽或当前被当作怪兽，并且当前守备力是否等于任意给定def值。",
+        "nil的def参数会被跳过。不同于旧导入文本，该绑定不会明确要求c位于怪兽区域。",
+    ],
+    "Auxiliary.fuslimit": ["特殊召唤条件辅助函数；当召唤类型st包含SUMMON_TYPE_FUSION时返回true。"],
+    "Card.IsAbleToChangeControler": ["只检查c是否不受EFFECT_CANNOT_CHANGE_CONTROL影响。"],
+    "Group.Sub": ["从g1中移除g2包含的每张卡。除非g1只读，否则会直接修改g1；g2不会改变。"],
+    "Card.IsFusionType": [
+        "检查c作为融合素材使用时的种类是否包含type。",
+        "原本为怪兽的卡位于魔法与陷阱区域，且正在素材检查时，核心使用卡片数据中的种类；其他情况使用c当前种类。",
+    ],
+    "Duel.ReturnToField": [
+        "把临时离场的卡返回到其之前的控制者和之前的位置。",
+        "pos默认之前的表示形式，zone默认0xff。若c不是因REASON_TEMPORARY离场，该绑定不返回Lua值；否则会yield并返回移动是否成功。",
+    ],
+    "Duel.SetChainLimit": [
+        "为当前连锁窗口登记临时连锁限制回调。",
+        "该回调会与当前原因玩家一起保存，之后以f(e, chain_player, activating_player)调用；返回false时，该效果不能连锁。",
+    ],
+    "Card.CheckRemoveOverlayCard": [
+        "检查player能否为了reason从c上取除至少count个超量素材。",
+        "即使c本身素材不足，可适用的EFFECT_OVERLAY_REMOVE_REPLACE替代效果也可能使该函数返回true。",
+    ],
+    "Card.IsDestructable": [
+        "检查c能否被破坏。",
+        "不传e时，核心只排除超量素材以及已经在墓地或除外的卡。传入e时，会检查c是否受e影响，以及按当前原因玩家判断的效果破坏耐性。",
+    ],
+    "Card.RemoveOverlayCard": [
+        "让player为了reason从c上取除min到max个超量素材，并返回实际取除数量。",
+        "核心会在选择素材前提供可适用的EFFECT_OVERLAY_REMOVE_REPLACE替代效果。",
+    ],
     "Auxiliary.IsCodeListed": [
         "检查code是否已通过Auxiliary.AddCodeList或相关辅助函数登记在c的card_code_list中。",
         "该Lua辅助函数在列名时返回true，否则返回nil，通常作为真假判断使用。",
@@ -1998,6 +2172,186 @@ FUNCTION_ZH_OVERRIDES = {
 
 
 CORE_DOC_OVERRIDES = {
+    "Card.IsControlerCanBeChanged": {
+        "params": [ParamDoc("c", "Card"), ParamDoc("ignore_mzone", "bool", True, "default: false"), ParamDoc("zone", "int", True, "default: 0xff")],
+        "returns": [ReturnDoc("bool")],
+        "description": ["Checks whether control of c can move to the other player."],
+        "description_zh": ["检查c的控制权能否转移给另一名玩家。"],
+    },
+    "Duel.NegateAttack": {
+        "params": [],
+        "returns": [ReturnDoc("bool")],
+        "description": ["Attempts to negate the current attack."],
+        "description_zh": ["尝试无效当前攻击。"],
+    },
+    "Card.GetCounter": {
+        "params": [ParamDoc("c", "Card"), ParamDoc("countertype", "int")],
+        "returns": [ReturnDoc("int")],
+        "description": ["Returns counter information on c."],
+        "description_zh": ["返回c上的指示物信息。"],
+    },
+    "Card.GetDefense": {
+        "params": [ParamDoc("c", "Card")],
+        "returns": [ReturnDoc("int")],
+        "description": ["Returns c's current DEF."],
+        "description_zh": ["返回c当前的守备力。"],
+    },
+    "Card.IsDefensePos": {
+        "params": [ParamDoc("c", "Card")],
+        "returns": [ReturnDoc("bool")],
+        "description": ["Checks whether c is in Defense Position."],
+        "description_zh": ["检查c是否为守备表示。"],
+    },
+    "Card.IsReleasable": {
+        "params": [ParamDoc("c", "Card"), ParamDoc("reason", "int", True, "default: REASON_COST")],
+        "returns": [ReturnDoc("bool")],
+        "description": ["Checks whether c can be Released for a non-Summon reason."],
+        "description_zh": ["检查c能否作为非召唤用途被解放。"],
+    },
+    "Card.SetCardTarget": {
+        "params": [ParamDoc("c1", "Card"), ParamDoc("c2", "Card")],
+        "returns": [],
+        "description": ["Registers c2 as a card target of c1."],
+        "description_zh": ["把c2登记为c1的卡片对象。"],
+    },
+    "Auxiliary.exccon": {
+        "params": [ParamDoc("e", "Effect")],
+        "returns": [ReturnDoc("bool")],
+        "description": ["Checks the shared GY timing condition for the handler."],
+        "description_zh": ["检查处理者的共通墓地时点条件。"],
+    },
+    "Card.GetOriginalLevel": {
+        "params": [ParamDoc("c", "Card")],
+        "returns": [ReturnDoc("int")],
+        "description": ["Returns c's original Level."],
+        "description_zh": ["返回c的原本等级。"],
+    },
+    "Group.RemoveCard": {
+        "params": [ParamDoc("g", "Group"), ParamDoc("c", "Card")],
+        "returns": [],
+        "description": ["Removes c from g."],
+        "description_zh": ["从g中移除c。"],
+    },
+    "Auxiliary.AddFusionProcCode2": {
+        "params": [ParamDoc("c", "Card"), ParamDoc("code1", "int"), ParamDoc("code2", "int"), ParamDoc("sub", "bool"), ParamDoc("insf", "bool")],
+        "returns": [],
+        "description": ["Registers a two-code Fusion Material procedure."],
+        "description_zh": ["登记双卡号融合素材手续。"],
+    },
+    "Duel.IsEnvironment": {
+        "params": [ParamDoc("code", "int"), ParamDoc("player", "int", True, "default: PLAYER_ALL"), ParamDoc("loc", "int", True, "default: LOCATION_ONFIELD")],
+        "returns": [ReturnDoc("bool")],
+        "description": ["Checks the current environment card/code state."],
+        "description_zh": ["检查当前环境卡/卡号状态。"],
+    },
+    "Auxiliary.indoval": {
+        "params": [ParamDoc("e", "Effect"), ParamDoc("re", "Effect"), ParamDoc("rp", "int")],
+        "returns": [ReturnDoc("bool")],
+        "description": ["Returns true for opponent-effect indestructibility checks."],
+        "description_zh": ["对方效果破坏耐性检查用辅助函数。"],
+    },
+    "Duel.RaiseEvent": {
+        "params": [ParamDoc("eg", "Card|Group"), ParamDoc("code", "int"), ParamDoc("re", "Effect|nil"), ParamDoc("r", "int"), ParamDoc("rp", "int"), ParamDoc("ep", "int"), ParamDoc("ev", "int")],
+        "returns": [],
+        "description": ["Raises an event for a Card or Group."],
+        "description_zh": ["对Card或Group引发事件。"],
+    },
+    "Auxiliary.GCheckAdditional": {
+        "params": [ParamDoc("sg", "Group"), ParamDoc("c", "Card|nil"), ParamDoc("g", "Group")],
+        "returns": [ReturnDoc("bool")],
+        "description": ["Additional subgroup-check hook."],
+        "description_zh": ["额外子组检查钩子。"],
+    },
+    "Card.IsRank": {
+        "params": [ParamDoc("c", "Card"), ParamDoc("rank1", "int"), ParamDoc("rank2", "int", True), ParamDoc("...", "int", True)],
+        "returns": [ReturnDoc("bool")],
+        "description": ["Checks whether c's Rank matches any supplied value."],
+        "description_zh": ["检查c的阶级是否匹配任意给定值。"],
+    },
+    "Card.GetTextAttack": {
+        "params": [ParamDoc("c", "Card")],
+        "returns": [ReturnDoc("int")],
+        "description": ["Returns c's card-data ATK."],
+        "description_zh": ["返回c卡片数据中的攻击力。"],
+    },
+    "Duel.CheckLocation": {
+        "params": [ParamDoc("player", "int"), ParamDoc("location", "int"), ParamDoc("sequence", "int")],
+        "returns": [ReturnDoc("bool")],
+        "description": ["Checks whether a location sequence is usable."],
+        "description_zh": ["检查位置序号是否可用。"],
+    },
+    "Card.GetRank": {
+        "params": [ParamDoc("c", "Card")],
+        "returns": [ReturnDoc("int")],
+        "description": ["Returns c's current Rank."],
+        "description_zh": ["返回c当前的阶级。"],
+    },
+    "Card.GetOriginalCode": {
+        "params": [ParamDoc("c", "Card")],
+        "returns": [ReturnDoc("int")],
+        "description": ["Returns c's original card code."],
+        "description_zh": ["返回c的原本卡号。"],
+    },
+    "Card.IsDefense": {
+        "params": [ParamDoc("c", "Card"), ParamDoc("def1", "int"), ParamDoc("def2", "int", True), ParamDoc("...", "int", True)],
+        "returns": [ReturnDoc("bool")],
+        "description": ["Checks whether c's current DEF matches any supplied value."],
+        "description_zh": ["检查c当前守备力是否匹配任意给定值。"],
+    },
+    "Auxiliary.fuslimit": {
+        "params": [ParamDoc("e", "Effect"), ParamDoc("se", "Effect"), ParamDoc("sp", "int"), ParamDoc("st", "int")],
+        "returns": [ReturnDoc("bool")],
+        "description": ["Checks whether st includes SUMMON_TYPE_FUSION."],
+        "description_zh": ["检查st是否包含SUMMON_TYPE_FUSION。"],
+    },
+    "Card.IsAbleToChangeControler": {
+        "params": [ParamDoc("c", "Card")],
+        "returns": [ReturnDoc("bool")],
+        "description": ["Checks whether c is free of cannot-change-control effects."],
+        "description_zh": ["检查c是否不受不能变更控制权效果影响。"],
+    },
+    "Group.Sub": {
+        "params": [ParamDoc("g1", "Group"), ParamDoc("g2", "Group")],
+        "returns": [],
+        "description": ["Removes g2's cards from g1."],
+        "description_zh": ["从g1中移除g2的卡。"],
+    },
+    "Card.IsFusionType": {
+        "params": [ParamDoc("c", "Card"), ParamDoc("type", "int")],
+        "returns": [ReturnDoc("bool")],
+        "description": ["Checks c's type while used as Fusion Material."],
+        "description_zh": ["检查c作为融合素材使用时的种类。"],
+    },
+    "Duel.ReturnToField": {
+        "params": [ParamDoc("c", "Card"), ParamDoc("pos", "int", True, "default: previous position"), ParamDoc("zone", "int", True, "default: 0xff")],
+        "returns": [ReturnDoc("bool|nil", "Success flag, or nil if c was not temporarily removed from the field.")],
+        "description": ["Returns a temporarily removed card to the field."],
+        "description_zh": ["把临时离场的卡返回场上。"],
+    },
+    "Duel.SetChainLimit": {
+        "params": [ParamDoc("f", "function")],
+        "returns": [],
+        "description": ["Registers a temporary Chain limit callback."],
+        "description_zh": ["登记临时连锁限制回调。"],
+    },
+    "Card.CheckRemoveOverlayCard": {
+        "params": [ParamDoc("c", "Card"), ParamDoc("player", "int"), ParamDoc("count", "int"), ParamDoc("reason", "int")],
+        "returns": [ReturnDoc("bool")],
+        "description": ["Checks whether player can remove Xyz Materials from c."],
+        "description_zh": ["检查player能否从c上取除超量素材。"],
+    },
+    "Card.IsDestructable": {
+        "params": [ParamDoc("c", "Card"), ParamDoc("e", "Effect", True)],
+        "returns": [ReturnDoc("bool")],
+        "description": ["Checks whether c can be destroyed."],
+        "description_zh": ["检查c能否被破坏。"],
+    },
+    "Card.RemoveOverlayCard": {
+        "params": [ParamDoc("c", "Card"), ParamDoc("player", "int"), ParamDoc("min", "int"), ParamDoc("max", "int"), ParamDoc("reason", "int")],
+        "returns": [ReturnDoc("int", "Number of Xyz Materials actually removed.")],
+        "description": ["Removes Xyz Materials from c."],
+        "description_zh": ["从c上取除超量素材。"],
+    },
     "Auxiliary.IsCodeListed": {
         "params": [ParamDoc("c", "Card"), ParamDoc("code", "int")],
         "returns": [ReturnDoc("bool|nil", "true if code is listed by c; nil otherwise.")],
