@@ -3,18 +3,16 @@
 ## Signature
 
 ```lua
-Card.GetColumnGroupCount(Card c, [int left], [int right]) -> int
+Card.GetColumnGroupCount(Card c) -> int
 ```
 
 ## Description
 
-Usage is the same as above, but returns the number of cards
+Returns the number of cards in columns overlapping c.
 
 ## Parameters
 
 - `c` `Card`
-- `left` `int` optional - default: 0
-- `right` `int` optional - default: 0
 
 ## Returns
 

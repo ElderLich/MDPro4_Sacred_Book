@@ -8,7 +8,7 @@ Card.GetOriginalRank(Card c) -> int
 
 ## Description
 
-Returns the class of the card in c
+Returns c's printed Rank from card data, or 0 if c is not an Xyz Monster.
 
 ## Parameters
 

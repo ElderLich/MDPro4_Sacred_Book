@@ -8,7 +8,7 @@ Card.GetBattledGroupCount(Card c) -> int
 
 ## Description
 
-Returns the number of cards battled for this turn
+Returns the number of cards currently recorded in c's battled-cards set.
 
 ## Parameters
 

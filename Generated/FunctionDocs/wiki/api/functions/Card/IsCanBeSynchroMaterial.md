@@ -3,17 +3,17 @@
 ## Signature
 
 ```lua
-Card.IsCanBeSynchroMaterial(Card c, [Card sc], [Card tuner]) -> bool
+Card.IsCanBeSynchroMaterial(Card c, [Card scard], [Card tuner]) -> bool
 ```
 
 ## Description
 
-Check whether c can become a homophonic homophonic monster sc material
+Checks whether c can be used as Synchro Material for scard, with tuner supplied when the core needs the paired Tuner.
 
 ## Parameters
 
 - `c` `Card`
-- `sc` `Card` optional
+- `scard` `Card` optional
 - `tuner` `Card` optional
 
 ## Returns

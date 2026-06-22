@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-06-22T19:37:26+00:00",
+    "generated_at": "2026-06-22T20:03:48+00:00",
     "workspace": "D:\\Programs\\GitHub\\MDPro3_Sacred_Book",
     "dataeditorx_data": "D:\\Programs\\GitHub\\DataEditorX\\DataEditorX\\data",
     "mdpro3_locales": "D:\\Programs\\GitHub\\MDPro3_Data\\Data\\locales",
@@ -677,7 +677,7 @@
           "description": ""
         },
         {
-          "name": "ec",
+          "name": "target",
           "type": "Card",
           "optional": false,
           "description": ""
@@ -685,17 +685,19 @@
       ],
       "returns": [
         {
-          "type": "Card",
+          "type": "bool",
           "description": ""
         }
       ],
       "description_zh": [
-        "检查ec是否为c的有效同盟装备对象。会检查EFFECT_UNION_LIMIT影响和新旧同盟影响。"
+        "检查target是否是在EFFECT_UNION_LIMIT下c的合法同盟装备对象。",
+        "核心还会检查c与target之间的新式/旧式同盟数量兼容性。"
       ],
       "description_en": [
-        "Check if ec is a valid Union Equip target for c. Checks for EFFECT_UNION_LIMIT and new/old Union effects."
+        "Checks whether target is a valid Union equip target for c under EFFECT_UNION_LIMIT.",
+        "The core also enforces new/old Union count compatibility between c and target."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
@@ -710,7 +712,9 @@
       ],
       "aliases": [],
       "tags": [
-        "core-binding"
+        "core-binding",
+        "core-doc-override",
+        "manual-zh-doc"
       ],
       "core_binding": true,
       "core_handler": "card_check_union_target"
@@ -1111,19 +1115,14 @@
           "description": ""
         }
       ],
-      "returns": [
-        {
-          "type": "nil",
-          "description": ""
-        }
-      ],
+      "returns": [],
       "description_zh": [
-        "把c设置成再召唤状态"
+        "给c登记带客户端提示的EFFECT_DUAL_STATUS效果。"
       ],
       "description_en": [
-        "Set c to re-call state"
+        "Registers an EFFECT_DUAL_STATUS client-hint effect on c."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
@@ -1138,7 +1137,9 @@
       ],
       "aliases": [],
       "tags": [
-        "core-binding"
+        "core-binding",
+        "core-doc-override",
+        "manual-zh-doc"
       ],
       "core_binding": true,
       "core_handler": "card_enable_dual_state"
@@ -1765,12 +1766,12 @@
         }
       ],
       "description_zh": [
-        "返回与c本回合进行过战斗的的卡片数量"
+        "返回c当前记录的已战斗卡集合数量。"
       ],
       "description_en": [
-        "Returns the number of cards battled for this turn"
+        "Returns the number of cards currently recorded in c's battled-cards set."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
@@ -1785,7 +1786,9 @@
       ],
       "aliases": [],
       "tags": [
-        "core-binding"
+        "core-binding",
+        "core-doc-override",
+        "manual-zh-doc"
       ],
       "core_binding": true,
       "core_handler": "card_get_battled_group_count"
@@ -2080,18 +2083,6 @@
           "type": "Card",
           "optional": false,
           "description": ""
-        },
-        {
-          "name": "left",
-          "type": "int",
-          "optional": true,
-          "description": "default: 0"
-        },
-        {
-          "name": "right",
-          "type": "int",
-          "optional": true,
-          "description": "default: 0"
         }
       ],
       "returns": [
@@ -2101,12 +2092,12 @@
         }
       ],
       "description_zh": [
-        "用法同上，只是返回的是卡片的数量"
+        "返回与c所在纵列重叠的卡数量。"
       ],
       "description_en": [
-        "Usage is the same as above, but returns the number of cards"
+        "Returns the number of cards in columns overlapping c."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
@@ -2121,7 +2112,9 @@
       ],
       "aliases": [],
       "tags": [
-        "core-binding"
+        "core-binding",
+        "core-doc-override",
+        "manual-zh-doc"
       ],
       "core_binding": true,
       "core_handler": "card_get_column_group_count"
@@ -2397,14 +2390,12 @@
         }
       ],
       "description_zh": [
-        "返回c位置变化的目的地",
-        "此函数仅在处理位置转移代替效果时有效"
+        "返回c当前送去参数中保存的目标位置。"
       ],
       "description_en": [
-        "Returns the destination of the c position change",
-        "This function is valid only when processing position transitions instead of effects"
+        "Returns the destination location currently stored in c's send-to parameters."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
@@ -2419,7 +2410,9 @@
       ],
       "aliases": [],
       "tags": [
-        "core-binding"
+        "core-binding",
+        "core-doc-override",
+        "manual-zh-doc"
       ],
       "core_binding": true,
       "core_handler": "card_get_destination"
@@ -2979,29 +2972,31 @@
       ],
       "returns": [
         {
-          "type": "nil|Effect",
-          "description": ""
+          "type": "Effect|nil",
+          "description": "Hand Synchro enabling effect."
         },
         {
           "type": "function|nil",
-          "description": ""
+          "description": "Effect target function."
         },
         {
           "type": "int|nil",
-          "description": ""
+          "description": "Minimum hand-material count."
         },
         {
           "type": "int|nil",
-          "description": ""
+          "description": "Maximum hand-material count."
         }
       ],
       "description_zh": [
-        "如果卡片 c 受到手卡同调效果 EFFECT_HAND_SYNCHRO 影响，则返回 Effect e,function target,int min,int max ;否则返回nil"
+        "返回c上的手牌同调启用效果、其Target函数，以及手牌素材数量min/max。",
+        "只检查怪兽区域中的卡。优先检查EFFECT_HAND_SYNCHRO，其次检查带LOCATION_HAND的EFFECT_TUNER_MATERIAL_LIMIT。"
       ],
       "description_en": [
-        "If card c is affected by the hand Synchro effect EFFECT_HAND_SYNCHRO, return Effect e, function target, int min, int max; otherwise return nil"
+        "Returns the hand-Synchro enabling effect on c, its target function, and the min/max hand-material counts.",
+        "Only Monster Zone cards are checked. EFFECT_HAND_SYNCHRO has priority, then EFFECT_TUNER_MATERIAL_LIMIT with LOCATION_HAND."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
@@ -3016,7 +3011,9 @@
       ],
       "aliases": [],
       "tags": [
-        "core-binding"
+        "core-binding",
+        "core-doc-override",
+        "manual-zh-doc"
       ],
       "core_binding": true,
       "core_handler": "card_get_hand_synchro"
@@ -3216,7 +3213,7 @@
           "name": "player",
           "type": "int",
           "optional": true,
-          "description": ""
+          "description": "default: current reason player"
         }
       ],
       "returns": [
@@ -3226,12 +3223,12 @@
         }
       ],
       "description_zh": [
-        "返回c[由player连接召唤时]用作连接素材时的属性"
+        "返回c作为连接素材使用时对player使用的属性；player省略时使用当前原因玩家。"
       ],
       "description_en": [
-        "Return the Attribute of card c when used as Link Material [for a Link Summon by player]"
+        "Returns the Attribute c uses as Link Material for player, defaulting to the current reason player."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
@@ -3246,7 +3243,9 @@
       ],
       "aliases": [],
       "tags": [
-        "core-binding"
+        "core-binding",
+        "core-doc-override",
+        "manual-zh-doc"
       ],
       "core_binding": true,
       "core_handler": "card_get_link_attribute"
@@ -4120,12 +4119,12 @@
         }
       ],
       "description_zh": [
-        "返回c的卡片记载的阶级"
+        "返回c卡片数据中的原本阶级；c不是超量怪兽时返回0。"
       ],
       "description_en": [
-        "Returns the class of the card in c"
+        "Returns c's printed Rank from card data, or 0 if c is not an Xyz Monster."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
@@ -4140,7 +4139,9 @@
       ],
       "aliases": [],
       "tags": [
-        "core-binding"
+        "core-binding",
+        "core-doc-override",
+        "manual-zh-doc"
       ],
       "core_binding": true,
       "core_handler": "card_get_origin_rank"
@@ -4569,12 +4570,12 @@
         }
       ],
       "description_zh": [
-        "返回c位置变化之前在场上的攻击力"
+        "返回c之前场上状态记录的攻击力数值。"
       ],
       "description_en": [
-        "Returns the attack power before the c position changes"
+        "Returns the ATK value recorded for c's previous on-field state."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
@@ -4589,7 +4590,9 @@
       ],
       "aliases": [],
       "tags": [
-        "core-binding"
+        "core-binding",
+        "core-doc-override",
+        "manual-zh-doc"
       ],
       "core_binding": true,
       "core_handler": "card_get_previous_attack_onfield"
@@ -5583,12 +5586,12 @@
         }
       ],
       "description_zh": [
-        "返回c的右灵摆刻度"
+        "返回c当前的右灵摆刻度数值。"
       ],
       "description_en": [
-        "Returns the right-hand pendulum scale of c"
+        "Returns c's current right Pendulum Scale value."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
@@ -5603,7 +5606,9 @@
       ],
       "aliases": [],
       "tags": [
-        "core-binding"
+        "core-binding",
+        "core-doc-override",
+        "manual-zh-doc"
       ],
       "core_binding": true,
       "core_handler": "card_get_rscale"
@@ -5633,14 +5638,12 @@
         }
       ],
       "description_zh": [
-        "返回c的对于仪式怪兽rc仪式解放等级",
-        "此函数除了某些特定卡如仪式供物，返回值与Card.GetLevel(c)相同"
+        "返回c为仪式怪兽rc提供的仪式等级数值。"
       ],
       "description_en": [
-        "Returns the ritual liberation level for rc ritual monsters",
-        "This function returns the same value as Card.GetLevel(c) except for certain cards such as ritual objects"
+        "Returns the Ritual Level value c contributes for Ritual Monster rc."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
@@ -5655,7 +5658,9 @@
       ],
       "aliases": [],
       "tags": [
-        "core-binding"
+        "core-binding",
+        "core-doc-override",
+        "manual-zh-doc"
       ],
       "core_binding": true,
       "core_handler": "card_get_ritual_level"
@@ -5917,7 +5922,7 @@
           "description": ""
         },
         {
-          "name": "sc",
+          "name": "scard",
           "type": "Card",
           "optional": false,
           "description": ""
@@ -5930,14 +5935,12 @@
         }
       ],
       "description_zh": [
-        "返回c的对于同调怪兽sc的同调用等级",
-        "此函数除了某些特定卡如调节支援士，返回值与Card.GetLevel(c)相同"
+        "返回c为同调怪兽scard提供的同调等级数值。"
       ],
       "description_en": [
-        "Return to the co-ordination of c with the call monster sc with the level",
-        "This function returns the same value as Card.GetLevel(c) except for certain cards such as modems."
+        "Returns the Synchro Level value c contributes for Synchro Monster scard."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
@@ -5952,7 +5955,9 @@
       ],
       "aliases": [],
       "tags": [
-        "core-binding"
+        "core-binding",
+        "core-doc-override",
+        "manual-zh-doc"
       ],
       "core_binding": true,
       "core_handler": "card_get_synchro_level"
@@ -6110,20 +6115,20 @@
       "returns": [
         {
           "type": "int",
-          "description": ""
+          "description": "Minimum Tribute count."
         },
         {
           "type": "int",
-          "description": ""
+          "description": "Maximum Tribute count."
         }
       ],
       "description_zh": [
-        "返回通常召唤c所需要的祭品的最小和最大数量"
+        "返回通常召唤c所需的最小和最大解放数量。"
       ],
       "description_en": [
-        "Returns the minimum and maximum number of sacrifices required to normally call c"
+        "Returns the minimum and maximum Tribute counts for Normal Summoning c."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
@@ -6138,7 +6143,9 @@
       ],
       "aliases": [],
       "tags": [
-        "core-binding"
+        "core-binding",
+        "core-doc-override",
+        "manual-zh-doc"
       ],
       "core_binding": true,
       "core_handler": "card_get_tribute_requirement"
@@ -8008,7 +8015,7 @@
           "description": ""
         },
         {
-          "name": "sc",
+          "name": "scard",
           "type": "Card",
           "optional": true,
           "description": ""
@@ -8027,12 +8034,12 @@
         }
       ],
       "description_zh": [
-        "检查c是否可以成为[以 tuner 为调整的同调怪兽sc的]同调素材"
+        "检查c能否作为scard的同调素材；核心需要配对调整时可提供tuner。"
       ],
       "description_en": [
-        "Check whether c can become a homophonic homophonic monster sc material"
+        "Checks whether c can be used as Synchro Material for scard, with tuner supplied when the core needs the paired Tuner."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
@@ -8047,7 +8054,9 @@
       ],
       "aliases": [],
       "tags": [
-        "core-binding"
+        "core-binding",
+        "core-doc-override",
+        "manual-zh-doc"
       ],
       "core_binding": true,
       "core_handler": "card_is_can_be_synchro_material"
@@ -8179,12 +8188,12 @@
         }
       ],
       "description_zh": [
-        "检查c上是否可以放置countertype类型的指示物"
+        "检查c能否持有countertype类型的指示物。"
       ],
       "description_en": [
-        "Check if countertype counters can be placed on c"
+        "Checks whether c can hold counters of countertype."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
@@ -8199,7 +8208,9 @@
       ],
       "aliases": [],
       "tags": [
-        "core-binding"
+        "core-binding",
+        "core-doc-override",
+        "manual-zh-doc"
       ],
       "core_binding": true,
       "core_handler": "card_is_can_have_counter"
@@ -9045,12 +9056,12 @@
         }
       ],
       "description_zh": [
-        "检查c属否处于再召唤状态"
+        "检查c当前是否受EFFECT_DUAL_STATUS影响。"
       ],
       "description_en": [
-        "Check whether c is in the re-call state"
+        "Checks whether c is currently affected by EFFECT_DUAL_STATUS."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
@@ -9065,7 +9076,9 @@
       ],
       "aliases": [],
       "tags": [
-        "core-binding"
+        "core-binding",
+        "core-doc-override",
+        "manual-zh-doc"
       ],
       "core_binding": true,
       "core_handler": "card_is_dual_state"
@@ -10935,12 +10948,12 @@
         }
       ],
       "description_zh": [
-        "检查c是否可以当成scard的非调整来使用"
+        "检查c对同调怪兽scard而言是否被视为非调整。"
       ],
       "description_en": [
-        "Check whether c can be used as a non-adjustment"
+        "Checks whether c is treated as a non-Tuner for Synchro Monster scard."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
@@ -10955,7 +10968,9 @@
       ],
       "aliases": [],
       "tags": [
-        "core-binding"
+        "core-binding",
+        "core-doc-override",
+        "manual-zh-doc"
       ],
       "core_binding": true,
       "core_handler": "card_is_not_tuner"
@@ -11838,12 +11853,12 @@
         }
       ],
       "description_zh": [
-        "检查c1是否和c2有联系"
+        "检查c1当前是否与c2保持关系。"
       ],
       "description_en": [
-        "Check whether c1 and c2 are linked"
+        "Checks whether c1 currently has a relation to c2."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
@@ -11858,7 +11873,9 @@
       ],
       "aliases": [],
       "tags": [
-        "core-binding"
+        "core-binding",
+        "core-doc-override",
+        "manual-zh-doc"
       ],
       "core_binding": true,
       "core_handler": "card_is_relate_to_card"
@@ -13860,33 +13877,14 @@
           "description": ""
         }
       ],
-      "returns": [
-        {
-          "type": "nil",
-          "description": ""
-        }
-      ],
+      "returns": [],
       "description_zh": [
-        "为c设置类型为type的卡片提示信息",
-        "type只能为以下值，对应的value类型为",
-        "CHINT_TURN              回合数",
-        "CHINT_CARD              卡片id",
-        "CHINT_RACE              种族",
-        "CHINT_ATTRIBUTE         属性",
-        "CHINT_NUMBER            数字",
-        "CHINT_DESC              描述"
+        "向客户端发送c的卡片提示消息，内容为提示type和值value；type大于等于CHINT_DESC_ADD时会被忽略。"
       ],
       "description_en": [
-        "Set the card prompt for type c to c",
-        "Type can only be the following value, the corresponding value type is",
-        "CHINT_TURN Turns",
-        "CHINT_CARD card id",
-        "CHINT_RACE race",
-        "CHINT_ATTRIBUTE property",
-        "CHINT_NUMBER number",
-        "CHINT_DESC Description"
+        "Sends a client card-hint message for c with hint type and value; types at or above CHINT_DESC_ADD are ignored."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
@@ -13901,7 +13899,9 @@
       ],
       "aliases": [],
       "tags": [
-        "core-binding"
+        "core-binding",
+        "core-doc-override",
+        "manual-zh-doc"
       ],
       "core_binding": true,
       "core_handler": "card_set_hint"
@@ -16030,12 +16030,12 @@
         }
       ],
       "description_zh": [
-        "检查当前连锁中是否存在同名卡的发动，返回true表示无同名卡"
+        "检查当前全部连锁环的处理对象卡号是否互不相同。"
       ],
       "description_en": [
-        "Check the existence of the current chain of the same name card launch, true that no card with the same name"
+        "Checks whether all current Chain Links have different handler card codes."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libduel.cpp",
@@ -16050,7 +16050,9 @@
       ],
       "aliases": [],
       "tags": [
-        "core-binding"
+        "core-binding",
+        "core-doc-override",
+        "manual-zh-doc"
       ],
       "core_binding": true,
       "core_handler": "duel_check_chain_uniqueness"
@@ -18453,19 +18455,17 @@
       ],
       "returns": [
         {
-          "type": "int",
-          "description": ""
+          "type": "int|nil",
+          "description": "Counter count, or nil if player is invalid."
         }
       ],
       "description_zh": [
-        "返回场上存在的countertype类型的指示物的数量",
-        "s表示对player来说的己方的可移除指示物的位置，o表示对player来说的对方的可移除指示物的位置"
+        "返回player视角下s和o位置中countertype类型指示物的总数。"
       ],
       "description_en": [
-        "Returns the number of counterstype types that exist on the farm",
-        "S represents the position of the player's own removable pointer, o represents the position of the opponent's removable pointer for the player"
+        "Returns the total number of countertype counters in player-relative locations s and o."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libduel.cpp",
@@ -18480,7 +18480,9 @@
       ],
       "aliases": [],
       "tags": [
-        "core-binding"
+        "core-binding",
+        "core-doc-override",
+        "manual-zh-doc"
       ],
       "core_binding": true,
       "core_handler": "duel_get_counter"
@@ -19329,13 +19331,13 @@
           "description": ""
         },
         {
-          "name": "s_range",
+          "name": "s",
           "type": "int",
           "optional": false,
           "description": ""
         },
         {
-          "name": "o_range",
+          "name": "o",
           "type": "int",
           "optional": false,
           "description": ""
@@ -19343,18 +19345,17 @@
       ],
       "returns": [
         {
-          "type": "Group",
-          "description": ""
+          "type": "Group|nil",
+          "description": "Linked cards, or nil if player is invalid."
         }
       ],
       "description_zh": [
-        "返回以玩家player来看的 s_range 和 o_range 区域的处于连接状态的卡片组[其实只要后面2个参数不为0就行，只要不为0，都会变成LOCATION_MZONE]（？）"
+        "返回player视角下s和o位置中处于连接状态区域的卡组成的Group。"
       ],
       "description_en": [
-        "Return the group of linked cards in s_range and o_range zones from player's perspective [as long as the last two parameters are not 0, they become LOCATION_MZONE]",
-        "NOTE: The original description includes a question mark (?), indicating potential uncertainty or incomplete information; translated as written"
+        "Returns a Group of cards in player-relative locations s and o that are linked."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libduel.cpp",
@@ -19369,7 +19370,9 @@
       ],
       "aliases": [],
       "tags": [
-        "core-binding"
+        "core-binding",
+        "core-doc-override",
+        "manual-zh-doc"
       ],
       "core_binding": true,
       "core_handler": "duel_get_linked_group"
@@ -20126,18 +20129,17 @@
       ],
       "returns": [
         {
-          "type": "int",
-          "description": ""
+          "type": "int|nil",
+          "description": "Overlay count, or nil if player is invalid."
         }
       ],
       "description_zh": [
-        "返回以player来看的指定位置的所有叠放的卡的数量",
-        "s代表以player来看的自己的位置，o代表以player来看的对方的位置"
+        "返回player视角下s和o位置中的超量素材数量。"
       ],
       "description_en": [
-        "Returns the number of all stacked cards in the specified location"
+        "Returns the number of Xyz Materials attached to cards in player-relative locations s and o."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libduel.cpp",
@@ -20152,7 +20154,9 @@
       ],
       "aliases": [],
       "tags": [
-        "core-binding"
+        "core-binding",
+        "core-doc-override",
+        "manual-zh-doc"
       ],
       "core_binding": true,
       "core_handler": "duel_get_overlay_count"
@@ -20886,23 +20890,24 @@
           "name": "use_player",
           "type": "int",
           "optional": true,
-          "description": ""
+          "description": "default: current reason player"
         }
       ],
       "returns": [
         {
-          "type": "int",
-          "description": ""
+          "type": "int|nil",
+          "description": "Usable Monster Zone count, or nil if player is invalid."
         }
       ],
       "description_zh": [
-        "返回玩家player场上[对于 use_player 来说]可用的怪兽区数量（？）"
+        "返回player可用于怪兽进场的怪兽区域数量。",
+        "use_player省略时使用当前原因玩家，并用于涉及行动玩家的区域限制检查。"
       ],
       "description_en": [
-        "Return the number of available Monster Zones on player's field [for use_player]",
-        "NOTE: The original description includes a question mark (?), indicating potential uncertainty or incomplete information; translated as written"
+        "Returns how many Monster Zones player can use for a monster entering the field.",
+        "use_player defaults to the current reason player and is used for zone-limit checks involving the acting player."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libduel.cpp",
@@ -20917,7 +20922,9 @@
       ],
       "aliases": [],
       "tags": [
-        "core-binding"
+        "core-binding",
+        "core-doc-override",
+        "manual-zh-doc"
       ],
       "core_binding": true,
       "core_handler": "duel_get_usable_mzone_count"
@@ -23767,21 +23774,16 @@
       "namespace": "Duel",
       "short_name": "Readjust",
       "params": [],
-      "returns": [
-        {
-          "type": "nil",
-          "description": ""
-        }
-      ],
+      "returns": [],
       "description_zh": [
-        "刷新场上的卡的信息",
-        "非特定情况或者不清楚原理请勿使用此函数以免形成死循环"
+        "为当前原因效果的处理对象请求场地重新调整。",
+        "同一处理对象在当前追踪表中请求超过3次时，核心会把它因规则送去墓地。"
       ],
       "description_en": [
-        "Refresh the card information on the field",
-        "Unspecified or unclear principle Do not use this function to avoid an infinite loop"
+        "Requests a field readjust for the current reason effect's handler.",
+        "If the same handler requests readjustment more than three times in the current tracking map, the core sends it to the Graveyard by rule instead."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libduel.cpp",
@@ -23796,7 +23798,9 @@
       ],
       "aliases": [],
       "tags": [
-        "core-binding"
+        "core-binding",
+        "core-doc-override",
+        "manual-zh-doc"
       ],
       "core_binding": true,
       "core_handler": "duel_readjust"
@@ -24659,25 +24663,25 @@
           "description": ""
         },
         {
-          "name": "loc1",
+          "name": "location1",
           "type": "int",
           "optional": false,
           "description": ""
         },
         {
-          "name": "loc2",
+          "name": "location2",
           "type": "int",
           "optional": false,
           "description": ""
         },
         {
-          "name": "zone",
+          "name": "filter",
           "type": "int",
           "optional": false,
           "description": ""
         },
         {
-          "name": "code",
+          "name": "desc",
           "type": "int",
           "optional": true,
           "description": ""
@@ -24685,18 +24689,19 @@
       ],
       "returns": [
         {
-          "type": "int",
-          "description": ""
+          "type": "int|nil",
+          "description": "Selected zone bitmask, or nil if player is invalid."
         }
       ],
       "description_zh": [
-        "让玩家player选择场地。"
+        "让player从location1/location2对应的场地区域中选择count个区域，并把filter视为不可选择区域。",
+        "提供desc时，核心会显示该选择提示。返回值是从player视角表示已选区域的位掩码。"
       ],
       "description_en": [
-        "Have player select zones; flag1 is the low bit, flag2 is the high bit, together forming the selectable zones; count is the number of zones to choose",
-        "Return the selected zones"
+        "Lets player select count field zones from location1/location2 after applying filter as unavailable zones.",
+        "When desc is supplied, the core shows it as a selection hint. The return value is a bitmask of selected zones from player's viewpoint."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libduel.cpp",
@@ -24711,7 +24716,9 @@
       ],
       "aliases": [],
       "tags": [
-        "core-binding"
+        "core-binding",
+        "core-doc-override",
+        "manual-zh-doc"
       ],
       "core_binding": true,
       "core_handler": "duel_select_field"
@@ -27427,19 +27434,16 @@
           "description": ""
         }
       ],
-      "returns": [
-        {
-          "type": "nil",
-          "description": ""
-        }
-      ],
+      "returns": [],
       "description_zh": [
-        "交换c1和c2的位置"
+        "当c1和c2由同一玩家控制、都在怪兽区域且都受当前原因效果影响时，交换它们的怪兽区域序号。",
+        "交换成功时，核心会为这两张卡引发移动事件。"
       ],
       "description_en": [
-        "Swap the positions of c1 and c2"
+        "Swaps the Monster Zone sequences of c1 and c2 when both are controlled by the same player, both are affected by the current reason effect, and both are in the Monster Zone.",
+        "The core raises move events for the swapped cards when the swap occurs."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libduel.cpp",
@@ -27454,7 +27458,9 @@
       ],
       "aliases": [],
       "tags": [
-        "core-binding"
+        "core-binding",
+        "core-doc-override",
+        "manual-zh-doc"
       ],
       "core_binding": true,
       "core_handler": "duel_swap_sequence"
@@ -28063,12 +28069,12 @@
         }
       ],
       "description_zh": [
-        "返回Category属性"
+        "返回e的Category位掩码。"
       ],
       "description_en": [
-        "Returns the Category property"
+        "Returns e's category bitmask."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libeffect.cpp",
@@ -28083,7 +28089,9 @@
       ],
       "aliases": [],
       "tags": [
-        "core-binding"
+        "core-binding",
+        "core-doc-override",
+        "manual-zh-doc"
       ],
       "core_binding": true,
       "core_handler": "effect_get_category"
@@ -32149,29 +32157,24 @@
         {
           "name": "ex",
           "type": "Card|nil",
-          "optional": true,
+          "optional": false,
           "description": ""
         },
         {
           "name": "...",
           "type": "any",
-          "optional": false,
+          "optional": true,
           "description": ""
         }
       ],
-      "returns": [
-        {
-          "type": "nil",
-          "description": ""
-        }
-      ],
+      "returns": [],
       "description_zh": [
-        "从g中移除满足筛选条件f并且不等于ex的所有卡，第4个参数开始是额外参数"
+        "从可修改的Group g中移除满足f且不等于ex的卡，并把额外参数传给f。"
       ],
       "description_en": [
-        "Remove all cards from g that satisfy the filter condition f and not equal to ex, the fourth parameter starts with the extra argument"
+        "Removes cards from mutable group g that satisfy f and are not ex, passing any extra arguments to f."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libgroup.cpp",
@@ -32186,7 +32189,9 @@
       ],
       "aliases": [],
       "tags": [
-        "core-binding"
+        "core-binding",
+        "core-doc-override",
+        "manual-zh-doc"
       ],
       "core_binding": true,
       "core_handler": "group_remove"
@@ -33189,22 +33194,17 @@
           "name": "condition",
           "type": "function",
           "optional": true,
-          "description": ""
+          "description": "default: face-up condition"
         }
       ],
-      "returns": [
-        {
-          "type": "nil",
-          "description": ""
-        }
-      ],
+      "returns": [],
       "description_zh": [
-        "If this face-up card would leave the field, banish it instead."
+        "登记EFFECT_LEAVE_FIELD_REDIRECT效果，使condition为真时离场的c改为除外；默认条件为c表侧表示。"
       ],
       "description_en": [
-        "If this face-up card would leave the field, banish it instead."
+        "Registers an EFFECT_LEAVE_FIELD_REDIRECT effect that banishes c when condition is true, defaulting to face-up c."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -33215,7 +33215,10 @@
       "aliases": [
         "aux.AddBanishRedirect"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -33347,35 +33350,37 @@
         {
           "name": "eqlimit",
           "type": "function|nil",
-          "optional": true,
+          "optional": false,
           "description": ""
         },
         {
           "name": "pause",
           "type": "bool",
           "optional": true,
-          "description": ""
+          "description": "default: false"
         },
         {
           "name": "skip_target",
           "type": "bool",
           "optional": true,
-          "description": ""
+          "description": "default: false"
         }
       ],
       "returns": [
         {
-          "type": "nil",
-          "description": ""
+          "type": "Effect",
+          "description": "Created activation effect."
         }
       ],
       "description_zh": [
-        "Add EFFECT_TYPE_ACTIVATE effect to Equip Spell Cards"
+        "为c创建装备魔法发动效果，并登记对应的EFFECT_EQUIP_LIMIT。",
+        "返回创建的发动效果；pause为true时只创建该效果，不立即登记到c上。"
       ],
       "description_en": [
-        "Add EFFECT_TYPE_ACTIVATE effect to Equip Spell Cards"
+        "Creates an Equip Spell activation effect for c and registers the matching EFFECT_EQUIP_LIMIT.",
+        "The activation effect is returned; when pause is true it is created but not registered on c."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -33386,7 +33391,10 @@
       "aliases": [
         "aux.AddEquipSpellEffect"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -35167,7 +35175,7 @@
       "params": [
         {
           "name": "uc",
-          "type": "any",
+          "type": "Card",
           "optional": false,
           "description": ""
         },
@@ -35179,22 +35187,24 @@
         },
         {
           "name": "exclude_modern_count",
-          "type": "any",
-          "optional": false,
+          "type": "int",
+          "optional": true,
           "description": ""
         }
       ],
       "returns": [
         {
-          "type": "nil",
+          "type": "bool",
           "description": ""
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "Check if Union Monster uc can be equipped to monster tc as a Union Equip"
+      "description_zh": [
+        "检查同盟怪兽uc与对象tc之间的同盟装备数量兼容性，可选择忽略部分新式同盟数量。"
       ],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "Checks Union equip count compatibility between Union Monster uc and target tc, optionally ignoring some modern Union count."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -35205,7 +35215,10 @@
       "aliases": [
         "aux.CheckUnionEquip"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -36630,23 +36643,20 @@
         {
           "name": "...",
           "type": "int",
-          "optional": false,
+          "optional": true,
           "description": ""
         }
       ],
-      "returns": [
-        {
-          "type": "nil",
-          "description": ""
-        }
-      ],
+      "returns": [],
       "description_zh": [
-        "add \"Toss a coin and get the following effects\" effect to Arcana Force monsters"
+        "为c在event1以及额外事件上登记「秘仪之力」式强制投掷硬币触发效果。",
+        "共用操作会把硬币结果记录为FLAG_ID_ARCANA_COIN；受「逆转命运」影响时改为由玩家选择结果。"
       ],
       "description_en": [
-        "add \"Toss a coin and get the following effects\" effect to Arcana Force monsters"
+        "Registers Arcana Force-style mandatory coin-toss trigger effects on c for event1 and any extra events.",
+        "The shared operation records the coin result as FLAG_ID_ARCANA_COIN; Reversal of Fate replaces the toss with a player choice."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -36657,7 +36667,10 @@
       "aliases": [
         "aux.EnableArcanaCoin"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -37160,7 +37173,7 @@
         },
         {
           "name": "ev",
-          "type": "any",
+          "type": "int",
           "optional": false,
           "description": ""
         },
@@ -37172,7 +37185,7 @@
         },
         {
           "name": "r",
-          "type": "any",
+          "type": "int",
           "optional": false,
           "description": ""
         },
@@ -37185,19 +37198,17 @@
       ],
       "returns": [
         {
-          "type": "nil",
+          "type": "bool",
           "description": ""
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "Simplified method for the filter condition of Evolsaur general effects (Special Summoned by the effect of an \"Evolsaur\" monster), used in effect registration for SetCondition",
-        "function aux.evospcon(e, tp, eg, ep, ev, re, r, rp)",
-        "  local st=e:GetHandler():GetSummonType()",
-        "  return st>=(SUMMON_TYPE_SPECIAL+150) and st<(SUMMON_TYPE_SPECIAL+180)",
-        "end"
+      "description_zh": [
+        "进化龙式效果以及0x304e系列怪兽特殊召唤用的特殊召唤条件辅助函数。"
       ],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "Special Summon condition helper for Evolsaur-style effects and set 0x304e monster Special Summons."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -37208,7 +37219,10 @@
       "aliases": [
         "aux.evospcon"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -39024,15 +39038,17 @@
       ],
       "returns": [
         {
-          "type": "nil",
+          "type": "bool",
           "description": ""
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "Check if card c lists setcode as a material in its material_setcode"
+      "description_zh": [
+        "检查c的material_setcode元数据是否列有setcode，并支持打包子系列匹配。"
       ],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "Checks whether c lists setcode in its material_setcode metadata, including packed sub-set matching."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -39043,7 +39059,10 @@
       "aliases": [
         "aux.IsMaterialListSetCard"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -40030,15 +40049,17 @@
       ],
       "returns": [
         {
-          "type": "nil",
+          "type": "int",
           "description": ""
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "Return the Monster Zone sequence number; from left to right, zones are 0-4; for Extra Monster Zones, return left as 1 or right as 3"
+      "description_zh": [
+        "从控制者视角返回怪兽区域序号seq对应的本地纵列编号。"
       ],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "Returns the local column index for Monster Zone sequence seq from that controller's viewpoint."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -40049,7 +40070,10 @@
       "aliases": [
         "aux.MZoneSequence"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -40904,18 +40928,17 @@
       ],
       "returns": [
         {
-          "type": "nil",
+          "type": "bool",
           "description": ""
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "Simplified method for the filter function for face-up monsters with non-zero DEF",
-        "function aux.nzdef(c)",
-        "  return c:IsFaceup() and c:GetDefense()>0",
-        "end"
+      "description_zh": [
+        "表侧表示且当前守备力大于0的卡返回true。"
       ],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "Returns true for face-up cards with current DEF greater than 0."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -40926,7 +40949,10 @@
       "aliases": [
         "aux.nzdef"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -41225,31 +41251,19 @@
       ],
       "returns": [
         {
-          "type": "nil",
+          "type": "bool",
           "description": ""
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "Simplified method for the filter function for Qli Monster general immunity (unaffected by effects of monsters with lower original Level/Rank than this card's Level), used in effect registration for SetValue",
-        "te is the effect that would affect e:GetHandler()",
-        "function aux.qlifilter(e, te)",
-        "  if te:IsActiveType(TYPE_MONSTER) and te:IsActivated() then",
-        "    local lv=e:GetHandler():GetLevel()",
-        "    local ec=te:GetOwner()",
-        "    if ec:IsType(TYPE_LINK) then",
-        "      return false",
-        "    elseif ec:IsType(TYPE_XYZ) then",
-        "      return ec:GetOriginalRank()<lv",
-        "    else",
-        "      return ec:GetOriginalLevel()<lv",
-        "    end",
-        "  else",
-        "    return false",
-        "  end",
-        "end"
+      "description_zh": [
+        "机壳免疫用Value辅助函数。",
+        "接受由原本等级或阶级低于处理对象当前等级的怪兽发动的怪兽效果，并拒绝连接怪兽。"
       ],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "Qli immunity value helper.",
+        "It accepts activated monster effects from monsters whose original Level or Rank is lower than the handler's current Level, and rejects Link Monsters."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -41260,7 +41274,10 @@
       "aliases": [
         "aux.qlifilter"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -41726,34 +41743,36 @@
           "name": "min",
           "type": "int",
           "optional": true,
-          "description": "Cards to select from each group, minimum"
+          "description": "default: 1"
         },
         {
           "name": "max",
           "type": "int",
           "optional": true,
-          "description": "Cards to select from each group, maximum"
+          "description": "default: min(#g1, #g2, 127)"
         },
         {
           "name": "except",
-          "type": "Card|Group",
+          "type": "Card|Group|nil",
           "optional": true,
           "description": ""
         }
       ],
       "returns": [
         {
-          "type": "Group",
+          "type": "Group|nil",
           "description": ""
         }
       ],
       "description_zh": [
-        "Select the same number of cards from each group."
+        "让tp构建一个从g1和g2中选取相同数量卡的选择结果。",
+        "except会先从两个Group中移除。若min大于计算出的max，结果可以为nil。"
       ],
       "description_en": [
-        "Select the same number of cards from each group."
+        "Lets tp build a selection that contains the same number of cards from g1 and g2.",
+        "except is removed from both groups before selection. The result can be nil if min is greater than the computed max."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -41764,7 +41783,10 @@
       "aliases": [
         "aux.SelectSameCount"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -44648,28 +44670,30 @@
       "params": [
         {
           "name": "a",
-          "type": "any",
+          "type": "int",
           "optional": false,
           "description": ""
         },
         {
           "name": "b",
-          "type": "any",
+          "type": "int",
           "optional": false,
           "description": ""
         }
       ],
       "returns": [
         {
-          "type": "nil",
+          "type": "int",
           "description": ""
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "A and b bit XOR"
+      "description_zh": [
+        "返回a与b的按位异或结果。"
       ],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "Returns the bitwise XOR of a and b."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -44678,7 +44702,10 @@
         }
       ],
       "aliases": [],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -44741,28 +44768,30 @@
       "params": [
         {
           "name": "a",
-          "type": "any",
+          "type": "int",
           "optional": false,
           "description": ""
         },
         {
           "name": "b",
-          "type": "any",
+          "type": "int",
           "optional": false,
           "description": ""
         }
       ],
       "returns": [
         {
-          "type": "nil",
+          "type": "int",
           "description": ""
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "A Move to the left b"
+      "description_zh": [
+        "返回a左移b位后的结果。"
       ],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "Returns a shifted left by b bits."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -44771,7 +44800,10 @@
         }
       ],
       "aliases": [],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -44840,28 +44872,30 @@
       "params": [
         {
           "name": "a",
-          "type": "any",
+          "type": "int",
           "optional": false,
           "description": ""
         },
         {
           "name": "b",
-          "type": "any",
+          "type": "int",
           "optional": false,
           "description": ""
         }
       ],
       "returns": [
         {
-          "type": "nil",
+          "type": "int",
           "description": ""
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "A Move to the right b"
+      "description_zh": [
+        "返回a右移b位后的结果。"
       ],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "Returns a shifted right by b bits."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/utility.lua",
@@ -44870,7 +44904,10 @@
         }
       ],
       "aliases": [],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -45468,21 +45505,14 @@
           "description": ""
         }
       ],
-      "returns": [
-        {
-          "type": "nil",
-          "description": ""
-        }
-      ],
+      "returns": [],
       "description_zh": [
-        "Fusion monster, name + condition * minc to maxc"
+        "登记融合手续，要求code1以及minc到maxc只满足f的素材。"
       ],
       "description_en": [
-        "Add a Fusion Summon procedure for c",
-        "Use 1 monster with code and minc-maxc monsters satisfying filter condition f as Fusion Materials",
-        "Equivalent to aux.AddFusionProcMixRep(c, sub, insf, f, minc, maxc, code1)"
+        "Registers a Fusion procedure requiring code1 plus between minc and maxc materials that satisfy f."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/procedure.lua",
@@ -45493,7 +45523,10 @@
       "aliases": [
         "aux.AddFusionProcCodeFunRep"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -45533,19 +45566,14 @@
           "description": ""
         }
       ],
-      "returns": [
-        {
-          "type": "nil",
-          "description": ""
-        }
-      ],
+      "returns": [],
       "description_zh": [
-        "Fusion monster, name * n"
+        "登记固定数量融合素材手续，要求cc只卡号为code1的怪兽。"
       ],
       "description_en": [
-        "For the c designated cc the same monster for the fusion material, code for the card number"
+        "Registers a fixed-count Fusion Material procedure requiring cc monsters with card code code1."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/procedure.lua",
@@ -45556,7 +45584,10 @@
       "aliases": [
         "aux.AddFusionProcCodeRep"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -45722,21 +45753,14 @@
           "description": ""
         }
       ],
-      "returns": [
-        {
-          "type": "nil",
-          "description": ""
-        }
-      ],
+      "returns": [],
       "description_zh": [
-        "Fusion monster, condition1 + condition2 * n"
+        "登记融合手续，要求1只满足f1的素材以及cc只满足f2的素材。"
       ],
       "description_en": [
-        "Add a Fusion Summon procedure for c",
-        "Use 1 monster satisfying filter condition f1 and cc monsters satisfying filter condition f2 as Fusion Materials",
-        "Equivalent to aux.AddFusionProcMix(c, false, insf, f1, table.unpack(fun)), where fun is a table of cc cards satisfying condition f2"
+        "Registers a Fusion procedure requiring one material satisfying f1 and cc materials satisfying f2."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/procedure.lua",
@@ -45747,7 +45771,10 @@
       "aliases": [
         "aux.AddFusionProcFunFun"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -45764,48 +45791,43 @@
         },
         {
           "name": "f1",
-          "type": "any",
+          "type": "function|table",
           "optional": false,
           "description": ""
         },
         {
           "name": "f2",
-          "type": "any",
+          "type": "function|table",
           "optional": false,
           "description": ""
         },
         {
           "name": "minc",
-          "type": "any",
+          "type": "int",
           "optional": false,
           "description": ""
         },
         {
           "name": "maxc",
-          "type": "any",
+          "type": "int",
           "optional": false,
           "description": ""
         },
         {
           "name": "insf",
-          "type": "any",
+          "type": "bool",
           "optional": false,
           "description": ""
         }
       ],
-      "returns": [
-        {
-          "type": "nil",
-          "description": ""
-        }
+      "returns": [],
+      "description_zh": [
+        "登记融合手续，要求1只满足f1的素材以及minc到maxc只满足f2的素材。"
       ],
-      "description_zh": [],
       "description_en": [
-        "Add a Fusion Summon procedure for c",
-        "Use 1 monster satisfying filter condition f1 and minc-maxc monsters satisfying filter condition f2 as Fusion Materials",
-        "Equivalent to aux.AddFusionProcMixRep(c, false, insf, f2, minc, maxc, f1)"
+        "Registers a Fusion procedure requiring f1 plus between minc and maxc materials that satisfy f2."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/procedure.lua",
@@ -45816,7 +45838,10 @@
       "aliases": [
         "aux.AddFusionProcFunFunRep"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -45955,36 +45980,31 @@
           "name": "sub",
           "type": "bool",
           "optional": false,
-          "description": "Can be fusion summoned with substitute material"
+          "description": ""
         },
         {
           "name": "insf",
           "type": "bool",
           "optional": false,
-          "description": "Can be fusion summoned with no material (Instant Fusion)"
+          "description": ""
         },
         {
           "name": "...",
-          "type": "number|function|table",
+          "type": "int|function|table",
           "optional": false,
           "description": ""
         }
       ],
-      "returns": [
-        {
-          "type": "nil",
-          "description": ""
-        }
-      ],
+      "returns": [],
       "description_zh": [
-        "Fusion monster, mixed materials (fixed count)"
+        "给fcard登记固定数量的混合融合素材手续。",
+        "每个额外参数都是一个必需素材槽，可以是卡号、筛选函数或替代项table。数字素材槽会更新列名素材元数据。"
       ],
       "description_en": [
-        "Add a Fusion Summon procedure for c",
-        "Use 1 of each card in the additional parameters as Fusion Materials; additional parameters can be function or card code (int code), where passing a code is equivalent to passing function(code) return c:IsFusionCode(code) end",
-        "sub indicates whether Fusion Substitute Materials can be used; insf=false means the Fusion Summon must use the specified materials. If this monster can only be Fusion Summoned with the specified cards, both sub and insf must be false"
+        "Registers a fixed-count mixed Fusion Material procedure on fcard.",
+        "Each extra argument is a required material slot and may be a card code, filter function, or table of alternatives. Numeric material slots update listed-material metadata."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/procedure.lua",
@@ -45995,7 +46015,10 @@
       "aliases": [
         "aux.AddFusionProcMix"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -46094,19 +46117,14 @@
           "description": ""
         }
       ],
-      "returns": [
-        {
-          "type": "nil",
-          "description": ""
-        }
-      ],
+      "returns": [],
       "description_zh": [
-        "Fusion monster, Shaddoll materials"
+        "登记影依融合素材手续，要求1只影依素材以及1只把attr作为融合素材属性的素材。"
       ],
       "description_en": [
-        "Exclusive to Shaddoll Fusion Monsters; attribute is the required Attribute"
+        "Registers the Shaddoll Fusion Material procedure requiring one Shaddoll material and one material with attr as Fusion Attribute."
       ],
-      "english_status": "imported_from_dataeditorx",
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/procedure.lua",
@@ -46117,7 +46135,10 @@
       "aliases": [
         "aux.AddFusionProcShaddoll"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -51299,32 +51320,30 @@
         },
         {
           "name": "sp",
-          "type": "any",
+          "type": "int",
           "optional": false,
           "description": ""
         },
         {
           "name": "st",
-          "type": "any",
+          "type": "int",
           "optional": false,
           "description": ""
         }
       ],
       "returns": [
         {
-          "type": "nil",
+          "type": "bool",
           "description": ""
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "Simplified method for the filter function preventing summoning (broadly) by methods other than Link Summon, used in effect registration for SetValue",
-        "se is the effect used to summon the card, sp is the summoning player, st is the summon type",
-        "function aux.linklimit(e, se, sp, st)",
-        "  return st&SUMMON_TYPE_LINK==SUMMON_TYPE_LINK",
-        "end"
+      "description_zh": [
+        "特殊召唤条件辅助函数：仅当st包含SUMMON_TYPE_LINK时返回true。"
       ],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "Special Summon condition helper that returns true only when st contains SUMMON_TYPE_LINK."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/procedure.lua",
@@ -51335,7 +51354,10 @@
       "aliases": [
         "aux.linklimit"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -54689,22 +54711,24 @@
         },
         {
           "name": "ecode",
-          "type": "Effect",
+          "type": "int",
           "optional": false,
           "description": ""
         }
       ],
       "returns": [
         {
-          "type": "nil",
+          "type": "bool",
           "description": ""
         }
       ],
-      "description_zh": [],
-      "description_en": [
-        "Exclusive to Tuning Magician (73941492)"
+      "description_zh": [
+        "检查c是否具有ecode效果，且该效果的Value会拒绝已选Group sg中的至少另一张卡。"
       ],
-      "english_status": "imported_from_dataeditorx",
+      "description_en": [
+        "Checks whether c has an ecode effect whose value rejects at least one other card in selected group sg."
+      ],
+      "english_status": "translated_exact",
       "source_files": [
         {
           "path": "Utilities/procedure.lua",
@@ -54715,7 +54739,10 @@
       "aliases": [
         "aux.TuneMagicianCheckX"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },

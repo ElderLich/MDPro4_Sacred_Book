@@ -3,12 +3,12 @@
 ## Signature
 
 ```lua
-Duel.GetOverlayCount(int player, int s, int o) -> int
+Duel.GetOverlayCount(int player, int s, int o) -> int|nil
 ```
 
 ## Description
 
-Returns the number of all stacked cards in the specified location
+Returns the number of Xyz Materials attached to cards in player-relative locations s and o.
 
 ## Parameters
 
@@ -18,7 +18,7 @@ Returns the number of all stacked cards in the specified location
 
 ## Returns
 
-- `int`
+- `int|nil` - Overlay count, or nil if player is invalid.
 
 ## Source
 

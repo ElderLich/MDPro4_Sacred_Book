@@ -8,7 +8,7 @@ Card.IsRelateToCard(Card c1, Card c2) -> bool
 
 ## Description
 
-Check whether c1 and c2 are linked
+Checks whether c1 currently has a relation to c2.
 
 ## Parameters
 

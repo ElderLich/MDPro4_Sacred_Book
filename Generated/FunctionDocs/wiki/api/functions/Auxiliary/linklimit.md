@@ -3,23 +3,23 @@
 ## Signature
 
 ```lua
-Auxiliary.linklimit(Effect e, Effect se, any sp, any st) -> void
+Auxiliary.linklimit(Effect e, Effect se, int sp, int st) -> bool
 ```
 
 ## Description
 
-Simplified method for the filter function preventing summoning (broadly) by methods other than Link Summon, used in effect registration for SetValue
-se is the effect used to summon the card, sp is the summoning player, st is the summon type
-function aux.linklimit(e, se, sp, st)
-  return st&SUMMON_TYPE_LINK==SUMMON_TYPE_LINK
-end
+Special Summon condition helper that returns true only when st contains SUMMON_TYPE_LINK.
 
 ## Parameters
 
 - `e` `Effect`
 - `se` `Effect`
-- `sp` `any`
-- `st` `any`
+- `sp` `int`
+- `st` `int`
+
+## Returns
+
+- `bool`
 
 ## Source
 

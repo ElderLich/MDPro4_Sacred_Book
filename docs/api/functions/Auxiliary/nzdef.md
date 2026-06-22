@@ -3,19 +3,20 @@
 ## Signature
 
 ```lua
-Auxiliary.nzdef(Card c) -> void
+Auxiliary.nzdef(Card c) -> bool
 ```
 
 ## Description
 
-Simplified method for the filter function for face-up monsters with non-zero DEF
-function aux.nzdef(c)
-  return c:IsFaceup() and c:GetDefense()&gt;0
-end
+Returns true for face-up cards with current DEF greater than 0.
 
 ## Parameters
 
 - `c` `Card`
+
+## Returns
+
+- `bool`
 
 ## Source
 

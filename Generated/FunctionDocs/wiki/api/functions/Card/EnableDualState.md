@@ -8,7 +8,7 @@ Card.EnableDualState(Card c) -> void
 
 ## Description
 
-Set c to re-call state
+Registers an EFFECT_DUAL_STATUS client-hint effect on c.
 
 ## Parameters
 

@@ -3,22 +3,22 @@
 ## Signature
 
 ```lua
-Duel.GetUsableMZoneCount(int player, [int use_player]) -> int
+Duel.GetUsableMZoneCount(int player, [int use_player]) -> int|nil
 ```
 
 ## Description
 
-Return the number of available Monster Zones on player's field \[for use_player\]
-NOTE: The original description includes a question mark (?), indicating potential uncertainty or incomplete information; translated as written
+Returns how many Monster Zones player can use for a monster entering the field.
+use_player defaults to the current reason player and is used for zone-limit checks involving the acting player.
 
 ## Parameters
 
 - `player` `int`
-- `use_player` `int` optional
+- `use_player` `int` optional - default: current reason player
 
 ## Returns
 
-- `int`
+- `int|nil` - Usable Monster Zone count, or nil if player is invalid.
 
 ## Source
 

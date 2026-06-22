@@ -3,17 +3,21 @@
 ## Signature
 
 ```lua
-Auxiliary.IsMaterialListSetCard(Card c, int setcode) -> void
+Auxiliary.IsMaterialListSetCard(Card c, int setcode) -> bool
 ```
 
 ## Description
 
-Check if card c lists setcode as a material in its material_setcode
+Checks whether c lists setcode in its material_setcode metadata, including packed sub-set matching.
 
 ## Parameters
 
 - `c` `Card`
 - `setcode` `int`
+
+## Returns
+
+- `bool`
 
 ## Source
 

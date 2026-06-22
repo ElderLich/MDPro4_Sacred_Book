@@ -8,8 +8,8 @@ Duel.Readjust() -> void
 
 ## Description
 
-Refresh the card information on the field
-Unspecified or unclear principle Do not use this function to avoid an infinite loop
+Requests a field readjust for the current reason effect's handler.
+If the same handler requests readjustment more than three times in the current tracking map, the core sends it to the Graveyard by rule instead.
 
 ## Source
 

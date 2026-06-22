@@ -3,26 +3,26 @@
 ## Signature
 
 ```lua
-Duel.SelectField(int player, int count, int loc1, int loc2, int zone, [int code]) -> int
+Duel.SelectField(int player, int count, int location1, int location2, int filter, [int desc]) -> int|nil
 ```
 
 ## Description
 
-Have player select zones; flag1 is the low bit, flag2 is the high bit, together forming the selectable zones; count is the number of zones to choose
-Return the selected zones
+Lets player select count field zones from location1/location2 after applying filter as unavailable zones.
+When desc is supplied, the core shows it as a selection hint. The return value is a bitmask of selected zones from player's viewpoint.
 
 ## Parameters
 
 - `player` `int`
 - `count` `int`
-- `loc1` `int`
-- `loc2` `int`
-- `zone` `int`
-- `code` `int` optional
+- `location1` `int`
+- `location2` `int`
+- `filter` `int`
+- `desc` `int` optional
 
 ## Returns
 
-- `int`
+- `int|nil` - Selected zone bitmask, or nil if player is invalid.
 
 ## Source
 

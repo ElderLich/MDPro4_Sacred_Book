@@ -8,12 +8,12 @@ Auxiliary.AddBanishRedirect(Card c, [function condition]) -> void
 
 ## Description
 
-If this face-up card would leave the field, banish it instead.
+Registers an EFFECT_LEAVE_FIELD_REDIRECT effect that banishes c when condition is true, defaulting to face-up c.
 
 ## Parameters
 
 - `c` `Card`
-- `condition` `function` optional
+- `condition` `function` optional - default: face-up condition
 
 ## Source
 

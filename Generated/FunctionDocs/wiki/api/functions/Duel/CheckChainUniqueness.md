@@ -8,7 +8,7 @@ Duel.CheckChainUniqueness() -> bool
 
 ## Description
 
-Check the existence of the current chain of the same name card launch, true that no card with the same name
+Checks whether all current Chain Links have different handler card codes.
 
 ## Returns
 

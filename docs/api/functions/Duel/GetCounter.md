@@ -3,13 +3,12 @@
 ## Signature
 
 ```lua
-Duel.GetCounter(int player, int s, int o, int countertype) -> int
+Duel.GetCounter(int player, int s, int o, int countertype) -> int|nil
 ```
 
 ## Description
 
-Returns the number of counterstype types that exist on the farm
-S represents the position of the player's own removable pointer, o represents the position of the opponent's removable pointer for the player
+Returns the total number of countertype counters in player-relative locations s and o.
 
 ## Parameters
 
@@ -20,7 +19,7 @@ S represents the position of the player's own removable pointer, o represents th
 
 ## Returns
 
-- `int`
+- `int|nil` - Counter count, or nil if player is invalid.
 
 ## Source
 

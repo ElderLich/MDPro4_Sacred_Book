@@ -3,21 +3,22 @@
 ## Signature
 
 ```lua
-Card.CheckUnionTarget(Card c, Card ec) -> Card
+Card.CheckUnionTarget(Card c, Card target) -> bool
 ```
 
 ## Description
 
-Check if ec is a valid Union Equip target for c. Checks for EFFECT_UNION_LIMIT and new/old Union effects.
+Checks whether target is a valid Union equip target for c under EFFECT_UNION_LIMIT.
+The core also enforces new/old Union count compatibility between c and target.
 
 ## Parameters
 
 - `c` `Card`
-- `ec` `Card`
+- `target` `Card`
 
 ## Returns
 
-- `Card`
+- `bool`
 
 ## Source
 

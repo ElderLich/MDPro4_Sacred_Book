@@ -3,16 +3,12 @@
 ## Signature
 
 ```lua
-Auxiliary.evospcon(Effect e, int tp, Group eg, int ep, any ev, Effect re, any r, int rp) -> void
+Auxiliary.evospcon(Effect e, int tp, Group eg, int ep, int ev, Effect re, int r, int rp) -> bool
 ```
 
 ## Description
 
-Simplified method for the filter condition of Evolsaur general effects (Special Summoned by the effect of an "Evolsaur" monster), used in effect registration for SetCondition
-function aux.evospcon(e, tp, eg, ep, ev, re, r, rp)
-  local st=e:GetHandler():GetSummonType()
-  return st&gt;=(SUMMON_TYPE_SPECIAL+150) and st&lt;(SUMMON_TYPE_SPECIAL+180)
-end
+Special Summon condition helper for Evolsaur-style effects and set 0x304e monster Special Summons.
 
 ## Parameters
 
@@ -20,10 +16,14 @@ end
 - `tp` `int`
 - `eg` `Group`
 - `ep` `int`
-- `ev` `any`
+- `ev` `int`
 - `re` `Effect`
-- `r` `any`
+- `r` `int`
 - `rp` `int`
+
+## Returns
+
+- `bool`
 
 ## Source
 

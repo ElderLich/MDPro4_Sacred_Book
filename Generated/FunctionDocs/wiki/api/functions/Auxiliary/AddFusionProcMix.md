@@ -3,21 +3,20 @@
 ## Signature
 
 ```lua
-Auxiliary.AddFusionProcMix(Card fcard, bool sub, bool insf, ... number|function|table) -> void
+Auxiliary.AddFusionProcMix(Card fcard, bool sub, bool insf, ... int|function|table) -> void
 ```
 
 ## Description
 
-Add a Fusion Summon procedure for c
-Use 1 of each card in the additional parameters as Fusion Materials; additional parameters can be function or card code (int code), where passing a code is equivalent to passing function(code) return c:IsFusionCode(code) end
-sub indicates whether Fusion Substitute Materials can be used; insf=false means the Fusion Summon must use the specified materials. If this monster can only be Fusion Summoned with the specified cards, both sub and insf must be false
+Registers a fixed-count mixed Fusion Material procedure on fcard.
+Each extra argument is a required material slot and may be a card code, filter function, or table of alternatives. Numeric material slots update listed-material metadata.
 
 ## Parameters
 
 - `fcard` `Card`
-- `sub` `bool` - Can be fusion summoned with substitute material
-- `insf` `bool` - Can be fusion summoned with no material (Instant Fusion)
-- `...` `number|function|table`
+- `sub` `bool`
+- `insf` `bool`
+- `...` `int|function|table`
 
 ## Source
 

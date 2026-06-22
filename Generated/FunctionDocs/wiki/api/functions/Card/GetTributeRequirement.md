@@ -8,7 +8,7 @@ Card.GetTributeRequirement(Card c) -> int,int
 
 ## Description
 
-Returns the minimum and maximum number of sacrifices required to normally call c
+Returns the minimum and maximum Tribute counts for Normal Summoning c.
 
 ## Parameters
 
@@ -16,8 +16,8 @@ Returns the minimum and maximum number of sacrifices required to normally call c
 
 ## Returns
 
-- `int`
-- `int`
+- `int` - Minimum Tribute count.
+- `int` - Maximum Tribute count.
 
 ## Source
 

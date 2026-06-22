@@ -8,14 +8,7 @@ Card.SetHint(Card c, int type, int value) -> void
 
 ## Description
 
-Set the card prompt for type c to c
-Type can only be the following value, the corresponding value type is
-CHINT_TURN Turns
-CHINT_CARD card id
-CHINT_RACE race
-CHINT_ATTRIBUTE property
-CHINT_NUMBER number
-CHINT_DESC Description
+Sends a client card-hint message for c with hint type and value; types at or above CHINT_DESC_ADD are ignored.
 
 ## Parameters
 

@@ -3,17 +3,21 @@
 ## Signature
 
 ```lua
-bit.lshift(any a, any b) -> void
+bit.lshift(int a, int b) -> int
 ```
 
 ## Description
 
-A Move to the left b
+Returns a shifted left by b bits.
 
 ## Parameters
 
-- `a` `any`
-- `b` `any`
+- `a` `int`
+- `b` `int`
+
+## Returns
+
+- `int`
 
 ## Source
 

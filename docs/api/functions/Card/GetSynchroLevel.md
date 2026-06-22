@@ -3,18 +3,17 @@
 ## Signature
 
 ```lua
-Card.GetSynchroLevel(Card c, Card sc) -> int
+Card.GetSynchroLevel(Card c, Card scard) -> int
 ```
 
 ## Description
 
-Return to the co-ordination of c with the call monster sc with the level
-This function returns the same value as Card.GetLevel(c) except for certain cards such as modems.
+Returns the Synchro Level value c contributes for Synchro Monster scard.
 
 ## Parameters
 
 - `c` `Card`
-- `sc` `Card`
+- `scard` `Card`
 
 ## Returns
 

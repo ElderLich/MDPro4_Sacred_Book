@@ -8,8 +8,7 @@ Card.GetRitualLevel(Card c, Card rc) -> int
 
 ## Description
 
-Returns the ritual liberation level for rc ritual monsters
-This function returns the same value as Card.GetLevel(c) except for certain cards such as ritual objects
+Returns the Ritual Level value c contributes for Ritual Monster rc.
 
 ## Parameters
 

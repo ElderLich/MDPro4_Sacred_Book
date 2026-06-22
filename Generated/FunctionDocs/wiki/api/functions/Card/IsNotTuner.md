@@ -8,7 +8,7 @@ Card.IsNotTuner(Card c, Card scard) -> bool
 
 ## Description
 
-Check whether c can be used as a non-adjustment
+Checks whether c is treated as a non-Tuner for Synchro Monster scard.
 
 ## Parameters
 

@@ -8,7 +8,7 @@ Card.GetPreviousAttackOnField(Card c) -> int
 
 ## Description
 
-Returns the attack power before the c position changes
+Returns the ATK value recorded for c's previous on-field state.
 
 ## Parameters
 

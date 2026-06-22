@@ -8,7 +8,8 @@ Duel.SwapSequence(Card c1, Card c2) -> void
 
 ## Description
 
-Swap the positions of c1 and c2
+Swaps the Monster Zone sequences of c1 and c2 when both are controlled by the same player, both are affected by the current reason effect, and both are in the Monster Zone.
+The core raises move events for the swapped cards when the swap occurs.
 
 ## Parameters
 

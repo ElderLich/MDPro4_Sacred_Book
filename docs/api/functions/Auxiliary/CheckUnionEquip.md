@@ -3,18 +3,22 @@
 ## Signature
 
 ```lua
-Auxiliary.CheckUnionEquip(any uc, Card tc, any exclude_modern_count) -> void
+Auxiliary.CheckUnionEquip(Card uc, Card tc, [int exclude_modern_count]) -> bool
 ```
 
 ## Description
 
-Check if Union Monster uc can be equipped to monster tc as a Union Equip
+Checks Union equip count compatibility between Union Monster uc and target tc, optionally ignoring some modern Union count.
 
 ## Parameters
 
-- `uc` `any`
+- `uc` `Card`
 - `tc` `Card`
-- `exclude_modern_count` `any`
+- `exclude_modern_count` `int` optional
+
+## Returns
+
+- `bool`
 
 ## Source
 

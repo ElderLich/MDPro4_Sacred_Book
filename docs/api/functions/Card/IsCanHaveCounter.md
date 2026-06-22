@@ -8,7 +8,7 @@ Card.IsCanHaveCounter(Card c, int countertype) -> bool
 
 ## Description
 
-Check if countertype counters can be placed on c
+Checks whether c can hold counters of countertype.
 
 ## Parameters
 

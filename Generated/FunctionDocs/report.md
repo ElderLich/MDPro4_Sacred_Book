@@ -1,6 +1,6 @@
 # Function Docs Refresh Report
 
-Generated: 2026-06-22T19:37:27+00:00
+Generated: 2026-06-22T20:03:48+00:00
 
 ## Outputs
 
@@ -45,8 +45,8 @@ Generated: 2026-06-22T19:37:27+00:00
 
 ## English Coverage
 
-- `imported_from_dataeditorx`: 202
-- `translated_exact`: 796
+- `imported_from_dataeditorx`: 152
+- `translated_exact`: 846
 
 ## Core Binding Gaps
 
@@ -72,9 +72,9 @@ Documented stubs that do not appear in this core binding scan:
 
 Lua helper docs that still render as `void` while their source body contains a `return`:
 
-- Count: 0
+- Count: 1
 
-- None
+- `Auxiliary.AddFusionProcMix`
 
 ## Compatibility Findings
 

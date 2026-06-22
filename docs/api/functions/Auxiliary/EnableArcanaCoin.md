@@ -3,18 +3,19 @@
 ## Signature
 
 ```lua
-Auxiliary.EnableArcanaCoin(Card c, int event1, ... int) -> void
+Auxiliary.EnableArcanaCoin(Card c, int event1, [... int]) -> void
 ```
 
 ## Description
 
-add "Toss a coin and get the following effects" effect to Arcana Force monsters
+Registers Arcana Force-style mandatory coin-toss trigger effects on c for event1 and any extra events.
+The shared operation records the coin result as FLAG_ID_ARCANA_COIN; Reversal of Fate replaces the toss with a player choice.
 
 ## Parameters
 
 - `c` `Card`
 - `event1` `int`
-- `...` `int`
+- `...` `int` optional
 
 ## Source
 

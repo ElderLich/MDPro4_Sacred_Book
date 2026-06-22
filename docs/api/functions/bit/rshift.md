@@ -3,17 +3,21 @@
 ## Signature
 
 ```lua
-bit.rshift(any a, any b) -> void
+bit.rshift(int a, int b) -> int
 ```
 
 ## Description
 
-A Move to the right b
+Returns a shifted right by b bits.
 
 ## Parameters
 
-- `a` `any`
-- `b` `any`
+- `a` `int`
+- `b` `int`
+
+## Returns
+
+- `int`
 
 ## Source
 

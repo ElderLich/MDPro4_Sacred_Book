@@ -8,7 +8,7 @@ Effect.GetCategory(Effect e) -> int
 
 ## Description
 
-Returns the Category property
+Returns e's category bitmask.
 
 ## Parameters
 

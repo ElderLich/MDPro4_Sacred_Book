@@ -8,8 +8,7 @@ Card.GetDestination(Card c) -> int
 
 ## Description
 
-Returns the destination of the c position change
-This function is valid only when processing position transitions instead of effects
+Returns the destination location currently stored in c's send-to parameters.
 
 ## Parameters
 

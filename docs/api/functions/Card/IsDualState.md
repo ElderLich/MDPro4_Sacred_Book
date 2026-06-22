@@ -8,7 +8,7 @@ Card.IsDualState(Card c) -> bool
 
 ## Description
 
-Check whether c is in the re-call state
+Checks whether c is currently affected by EFFECT_DUAL_STATUS.
 
 ## Parameters
 
