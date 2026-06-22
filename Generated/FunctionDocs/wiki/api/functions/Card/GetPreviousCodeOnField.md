@@ -8,7 +8,8 @@ Card.GetPreviousCodeOnField(Card c) -> int,int|nil
 
 ## Description
 
-Returns the card number prior to the c position change
+Returns the card code recorded for c's previous on-field state.
+If the previous state had a second code, that code is returned as a second value.
 
 ## Parameters
 
@@ -17,7 +18,7 @@ Returns the card number prior to the c position change
 ## Returns
 
 - `int`
-- `int|nil`
+- `int|nil` - Second previous code, when present.
 
 ## Source
 

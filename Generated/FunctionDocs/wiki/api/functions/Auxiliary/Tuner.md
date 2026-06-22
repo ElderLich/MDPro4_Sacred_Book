@@ -3,18 +3,21 @@
 ## Signature
 
 ```lua
-Auxiliary.Tuner(function f, ... any) -> void
+Auxiliary.Tuner(function|nil f, [... any]) -> function
 ```
 
 ## Description
 
-Filter Tuner monsters satisfying a single filter condition f, returning a function with a bool return type; if only Tuner monsters are required, use aux.Tuner(nil)
-Additional parameters start from the second parameter
+Returns a material filter that accepts cards that are Tuners for syncard and also satisfy f(target, ...), when f is supplied.
 
 ## Parameters
 
-- `f` `function`
-- `...` `any`
+- `f` `function|nil`
+- `...` `any` optional
+
+## Returns
+
+- `function`
 
 ## Source
 

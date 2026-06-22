@@ -3,12 +3,12 @@
 ## Signature
 
 ```lua
-Effect.GetCost(Effect e) -> function
+Effect.GetCost(Effect e) -> function|nil
 ```
 
 ## Description
 
-Returns the cost attribute
+Returns e's cost function, or nil when no cost function is set.
 
 ## Parameters
 
@@ -16,7 +16,7 @@ Returns the cost attribute
 
 ## Returns
 
-- `function`
+- `function|nil`
 
 ## Source
 

@@ -453,6 +453,94 @@ def parse_bullet_file(path: Path) -> dict[str, list[str]]:
 
 FUNCTION_EN_OVERRIDES = {
     # High-use core/API functions reviewed from MDPro3/YGOPro sources.
+    "Duel.ChangeTargetCard": ["Replaces the target card group recorded for Chain Link chainc with g."],
+    "Card.RemoveCounter": [
+        "Removes count counters of countertype from c for reason, using player as the removing player.",
+        "When countertype is 0, the core clears every counter on c and returns no Lua value. Otherwise it yields and returns whether the requested counters were removed.",
+    ],
+    "Duel.CalculateDamage": [
+        "Starts damage calculation between attacker and attack_target, or a direct attack when attack_target is nil.",
+        "new_attack is optional and is passed to the damage-step processor. If attacker and attack_target are the same card, the binding returns no value and does not start damage calculation.",
+    ],
+    "Effect.GetProperty": ["Returns e's two property flag fields, flag1 and flag2."],
+    "Auxiliary.SetUnionState": [
+        "Applies the equipped Union state to c after it becomes equipped.",
+        "If c has an EFFECT_UNION_LIMIT effect, this registers the matching EFFECT_EQUIP_LIMIT and EFFECT_UNION_STATUS reset effects. Old Union cards also receive EFFECT_OLDUNION_STATUS.",
+    ],
+    "Card.IsLinkAbove": ["Checks whether c has a nonzero Link Rating greater than or equal to link."],
+    "Card.IsSummonableCard": [
+        "Checks whether c's card data represents a monster that is allowed to be Normal Summoned or Set by card kind.",
+        "This rejects non-monsters, Extra Deck monsters, Ritual Monsters, Special Summon-only monsters, and Tokens. It does not check current costs, Summon count, locations, or player restrictions.",
+    ],
+    "Duel.AnnounceRace": ["Lets player declare count Races from available and returns the selected RACE_* bitmask."],
+    "Duel.ChangeAttackTarget": [
+        "Changes the current attack target to target, or to a direct attack when target is nil, and returns whether the change succeeded.",
+        "The current attacker must exist, be able to attack, and not have its attack canceled. A card target must be one of the current legal attack targets; direct attack requires that the attacker is not forbidden from attacking directly.",
+    ],
+    "Duel.IsPlayerCanSpecialSummon": [
+        "With only player, checks whether player is allowed to perform a Special Summon and still has Special Summon count available.",
+        "With the optional card-specific arguments, checks whether player can Special Summon c to target_player in sumpos with sumtype, using the current reason effect.",
+    ],
+    "Duel.ResetFlagEffect": ["Resets all player flag effects with code for player."],
+    "Duel.SelectPosition": ["Lets player choose one of the allowed positions for c and returns the selected POS_* value."],
+    "Effect.GetCost": ["Returns e's cost function, or nil when no cost function is set."],
+    "Card.GetLeftScale": ["Returns c's current left Pendulum Scale value."],
+    "Card.GetPreviousAttributeOnField": ["Returns the Attribute value recorded for c's previous on-field state."],
+    "Card.GetSummonType": ["Returns c's recorded Summon Type bits masked to the default Summon Type field."],
+    "Duel.IsPlayerCanSummon": [
+        "With only player, checks whether player is not forbidden from performing a Normal Summon by an untargeted EFFECT_CANNOT_SUMMON.",
+        "With sumtype and c, checks player EFFECT_CANNOT_SUMMON restrictions for Normal Summoning c with that sumtype. This binding does not check Summon count, costs, tribute availability, or zone availability.",
+    ],
+    "Card.CopyEffect": [
+        "Copies the initial_effect of card code onto c and returns the generated copy id, or -1 if code belongs to a Normal Monster.",
+        "reset defaults to RESETS_STANDARD when 0. count defaults to 1; phase resets without a turn side are normalized to both players' turns. If c is a non-Effect Monster, the core also adds TYPE_EFFECT for the same reset.",
+    ],
+    "Card.GetMaterialCount": ["Returns the number of cards currently recorded as c's materials."],
+    "Card.IsRankAbove": ["Checks whether c has a nonzero Rank greater than or equal to rank."],
+    "Duel.CheckPhaseActivity": ["Returns whether an action has been recorded for the current phase."],
+    "Auxiliary.Tuner": ["Returns a material filter that accepts cards that are Tuners for syncard and also satisfy f(target, ...), when f is supplied."],
+    "Card.GetBattlePosition": ["Returns c's temporary battle-position snapshot."],
+    "Card.IsXyzType": ["Checks whether c's type while used as Xyz Material contains type."],
+    "Duel.AnnounceLevel": [
+        "Lets player declare a Level and returns the declared Level plus the zero-based option index.",
+        "min and max default to 1 and 12 and are swapped if min is greater than max. Extra level arguments are excluded from the options; if no Levels remain, the binding returns no value.",
+    ],
+    "Duel.GetTargetCount": ["Counts cards matching filter in the given field locations that can be used as effect targets, excluding exception when supplied."],
+    "Duel.IsCanAddCounter": [
+        "With only player, checks whether player is not forbidden from placing counters.",
+        "With countertype, count, and c, checks whether player can place that many counters of countertype on c.",
+    ],
+    "Duel.SendtoExtraP": ["Sends cards to player-side Extra Deck face-up for reason and returns the number of cards moved."],
+    "Auxiliary.ritlimit": ["Special Summon condition helper that returns true only when the Summon Type contains SUMMON_TYPE_RITUAL."],
+    "Card.GetCurrentScale": [
+        "Returns the Pendulum Scale c currently uses.",
+        "In a Pendulum Zone, this returns the left or right current scale according to c's zone sequence. Outside a Pendulum Zone, it returns c's printed left scale value.",
+    ],
+    "Card.GetLocation": ["Returns c's current location, or 0 if c is currently treated as not being on the field."],
+    "Duel.AnnounceType": [
+        "Lets player choose one of the engine's built-in Monster/Spell/Trap type options and returns the zero-based option index.",
+        "The return value is the selected option index, not a TYPE_* bitmask.",
+    ],
+    "Duel.IsPlayerCanAdditionalSummon": ["Returns true when player has no pending extra Normal Summon marker in core.extra_summon."],
+    "Group.GetMinGroup": [
+        "Calls f for each card in g, forwards any extra arguments, and returns a Group containing every card tied for the minimum value.",
+        "The second return is the minimum integer value. If g is empty, this binding returns no Lua values.",
+    ],
+    "Card.GetPreviousCodeOnField": [
+        "Returns the card code recorded for c's previous on-field state.",
+        "If the previous state had a second code, that code is returned as a second value.",
+    ],
+    "Card.IsHasCardTarget": ["Checks whether c1 currently has c2 as a persistent card target."],
+    "Duel.GetBattleDamage": ["Returns the battle damage currently recorded for player."],
+    "Duel.GetLinkedZone": ["Returns the zone bitmask currently pointed to by Link Markers from player's perspective."],
+    "Auxiliary.damcon1": [
+        "Condition helper for effects that would make player tp take effect damage.",
+        "It checks the operation info for damage to tp, or recovery to tp that is reversed into damage, and respects EFFECT_REVERSE_DAMAGE, EFFECT_REVERSE_RECOVER, and EFFECT_NO_EFFECT_DAMAGE.",
+    ],
+    "Auxiliary.EnableUnionAttribute": [
+        "Registers the standard modern Union Monster package on c.",
+        "The helper adds equipped-card destruction substitution, an EFFECT_UNION_LIMIT using filter, an ignition effect to equip c from the Monster Zone to a valid monster, and an ignition effect to Special Summon c from the Spell & Trap Zone.",
+    ],
     "Card.GetReason": [
         "Returns c's current reason bitmask/value.",
         "This is the reason recorded in c's current state, such as REASON_EFFECT, REASON_COST, or REASON_BATTLE; it is not limited to position changes.",
@@ -1781,6 +1869,94 @@ FUNCTION_EN_OVERRIDES = {
 
 
 FUNCTION_ZH_OVERRIDES = {
+    "Duel.ChangeTargetCard": ["把chainc连锁环记录的取对象卡组替换为g。"],
+    "Card.RemoveCounter": [
+        "由player因reason从c上取除count个countertype类型的指示物。",
+        "countertype为0时，核心会清除c上的全部指示物且不返回Lua值。否则会让处理器取除指定指示物，并返回是否成功。",
+    ],
+    "Duel.CalculateDamage": [
+        "开始attacker与attack_target之间的伤害计算；attack_target为nil时表示直接攻击。",
+        "new_attack为可选参数，会传给伤害步骤处理器。attacker和attack_target是同一张卡时，该绑定不开始伤害计算且不返回值。",
+    ],
+    "Effect.GetProperty": ["返回e的两个属性标志字段flag1和flag2。"],
+    "Auxiliary.SetUnionState": [
+        "在c成为装备卡后，为其适用已装备的同盟状态。",
+        "若c具有EFFECT_UNION_LIMIT效果，则登记对应的EFFECT_EQUIP_LIMIT和EFFECT_UNION_STATUS重置效果。旧式同盟卡还会获得EFFECT_OLDUNION_STATUS。",
+    ],
+    "Card.IsLinkAbove": ["检查c是否具有非0连接值，且连接值大于等于link。"],
+    "Card.IsSummonableCard": [
+        "检查c的卡片数据是否属于按卡种可以通常召唤或盖放的怪兽。",
+        "非怪兽、额外卡组怪兽、仪式怪兽、特殊召唤怪兽和衍生物会返回false。该函数不检查当前费用、召唤次数、位置或玩家限制。",
+    ],
+    "Duel.AnnounceRace": ["让player从available中宣言count个种族，并返回所选RACE_*位掩码。"],
+    "Duel.ChangeAttackTarget": [
+        "把当前攻击对象改为target；target为nil时改为直接攻击。返回是否成功变更。",
+        "当前攻击怪兽必须存在、可以攻击，且攻击未被取消。卡片对象必须是当前合法攻击对象之一；直接攻击要求攻击怪兽未被禁止直接攻击。",
+    ],
+    "Duel.IsPlayerCanSpecialSummon": [
+        "只提供player时，检查player是否允许进行特殊召唤，且仍有可用的特殊召唤次数。",
+        "提供可选的卡片相关参数时，使用当前原因效果检查player能否以sumtype和sumpos把c特殊召唤到target_player场上。",
+    ],
+    "Duel.ResetFlagEffect": ["重置player持有的code对应全部玩家标志效果。"],
+    "Duel.SelectPosition": ["让player为c从允许的表示形式中选择一个，并返回所选POS_*数值。"],
+    "Effect.GetCost": ["返回e的费用函数；未设置费用函数时返回nil。"],
+    "Card.GetLeftScale": ["返回c当前的左灵摆刻度数值。"],
+    "Card.GetPreviousAttributeOnField": ["返回c之前场上状态记录的属性数值。"],
+    "Card.GetSummonType": ["返回c记录的召唤类型位，并按默认召唤类型字段进行掩码。"],
+    "Duel.IsPlayerCanSummon": [
+        "只提供player时，检查player是否未被无目标的EFFECT_CANNOT_SUMMON禁止通常召唤。",
+        "提供sumtype和c时，检查player对c以该sumtype通常召唤时受到的EFFECT_CANNOT_SUMMON限制。该绑定不检查召唤次数、费用、解放可用性或区域可用性。",
+    ],
+    "Card.CopyEffect": [
+        "把卡号code的initial_effect复制到c上，并返回生成的复制id；code对应通常怪兽时返回-1。",
+        "reset为0时默认RESETS_STANDARD。count默认1；带阶段重置但未指定自己/对方回合时，会规范为双方回合。若c是非效果怪兽，核心还会以同样重置条件追加TYPE_EFFECT。",
+    ],
+    "Card.GetMaterialCount": ["返回当前记录为c素材的卡数量。"],
+    "Card.IsRankAbove": ["检查c是否具有非0阶级，且阶级大于等于rank。"],
+    "Duel.CheckPhaseActivity": ["返回当前阶段是否已经记录过行动。"],
+    "Auxiliary.Tuner": ["返回一个素材筛选函数：接受对syncard来说是调整，且在提供f时满足f(target, ...)的卡。"],
+    "Card.GetBattlePosition": ["返回c的临时战斗表示形式快照。"],
+    "Card.IsXyzType": ["检查c作为超量素材使用时的类型是否包含type。"],
+    "Duel.AnnounceLevel": [
+        "让player宣言等级，并返回宣言的等级以及从0开始的选项索引。",
+        "min和max默认1与12；min大于max时会交换。额外的等级参数会从选项中排除；没有剩余等级时，该绑定不返回值。",
+    ],
+    "Duel.GetTargetCount": ["统计给定场上位置中匹配filter且可作为效果对象的卡数量；提供exception时将其排除。"],
+    "Duel.IsCanAddCounter": [
+        "只提供player时，检查player是否未被禁止放置指示物。",
+        "提供countertype、count和c时，检查player能否在c上放置该数量的countertype指示物。",
+    ],
+    "Duel.SendtoExtraP": ["因reason把卡以表侧送去player方额外卡组，并返回实际移动的卡数量。"],
+    "Auxiliary.ritlimit": ["特殊召唤条件辅助函数：仅当召唤类型包含SUMMON_TYPE_RITUAL时返回true。"],
+    "Card.GetCurrentScale": [
+        "返回c当前使用的灵摆刻度。",
+        "在灵摆区域时，会按c所在区域序号返回当前左/右刻度；不在灵摆区域时，返回c记载的左刻度数值。",
+    ],
+    "Card.GetLocation": ["返回c当前所在位置；c当前被当作不在场上时返回0。"],
+    "Duel.AnnounceType": [
+        "让player从核心内置的怪兽/魔法/陷阱类型选项中选择，并返回从0开始的选项索引。",
+        "返回值是所选选项索引，不是TYPE_*位掩码。",
+    ],
+    "Duel.IsPlayerCanAdditionalSummon": ["当player在core.extra_summon中没有待处理的额外通常召唤标记时返回true。"],
+    "Group.GetMinGroup": [
+        "对g中的每张卡调用f，转发额外参数，并返回所有最小值并列卡组成的Group。",
+        "第二个返回值是最小整数值。g为空时，该绑定不返回Lua值。",
+    ],
+    "Card.GetPreviousCodeOnField": [
+        "返回c之前场上状态记录的卡号。",
+        "若之前状态有第二卡号，则第二卡号作为第2个返回值返回。",
+    ],
+    "Card.IsHasCardTarget": ["检查c1当前是否把c2作为持续取对象卡。"],
+    "Duel.GetBattleDamage": ["返回当前为player记录的战斗伤害。"],
+    "Duel.GetLinkedZone": ["返回从player视角看当前被连接标记指向的区域位掩码。"],
+    "Auxiliary.damcon1": [
+        "用于判断玩家tp是否会受到效果伤害的条件辅助函数。",
+        "它检查操作信息中对tp造成的伤害，或被反转成伤害的对tp恢复，并会考虑EFFECT_REVERSE_DAMAGE、EFFECT_REVERSE_RECOVER和EFFECT_NO_EFFECT_DAMAGE。",
+    ],
+    "Auxiliary.EnableUnionAttribute": [
+        "为c登记标准现代同盟怪兽组件。",
+        "该辅助函数会添加装备卡破坏代替、使用filter的EFFECT_UNION_LIMIT、从怪兽区域把c装备给合法怪兽的起动效果，以及从魔法与陷阱区域特殊召唤c的起动效果。",
+    ],
     "Card.GetReason": [
         "返回c当前记录的原因位掩码/数值。",
         "这是c当前状态中记录的原因，例如REASON_EFFECT、REASON_COST或REASON_BATTLE；并不只用于表示形式变更。",
@@ -2690,6 +2866,246 @@ FUNCTION_ZH_OVERRIDES = {
 
 
 CORE_DOC_OVERRIDES = {
+    "Duel.ChangeTargetCard": {
+        "params": [ParamDoc("chainc", "int"), ParamDoc("g", "Group")],
+        "returns": [],
+        "description": ["Changes a Chain Link's target card group."],
+        "description_zh": ["变更连锁环的取对象卡组。"],
+    },
+    "Card.RemoveCounter": {
+        "params": [ParamDoc("c", "Card"), ParamDoc("player", "int"), ParamDoc("countertype", "int"), ParamDoc("count", "int"), ParamDoc("reason", "int")],
+        "returns": [ReturnDoc("bool|nil")],
+        "description": ["Removes counters from c."],
+        "description_zh": ["从c上取除指示物。"],
+    },
+    "Duel.CalculateDamage": {
+        "params": [ParamDoc("attacker", "Card"), ParamDoc("attack_target", "Card|nil"), ParamDoc("new_attack", "bool", True, "default: false")],
+        "returns": [],
+        "description": ["Starts damage calculation."],
+        "description_zh": ["开始伤害计算。"],
+    },
+    "Effect.GetProperty": {
+        "params": [ParamDoc("e", "Effect")],
+        "returns": [ReturnDoc("int", "flag1."), ReturnDoc("int", "flag2.")],
+        "description": ["Returns effect property flags."],
+        "description_zh": ["返回效果属性标志。"],
+    },
+    "Auxiliary.SetUnionState": {
+        "params": [ParamDoc("c", "Card")],
+        "returns": [],
+        "description": ["Sets equipped Union state."],
+        "description_zh": ["设置已装备同盟状态。"],
+    },
+    "Card.IsLinkAbove": {
+        "params": [ParamDoc("c", "Card"), ParamDoc("link", "int")],
+        "returns": [ReturnDoc("bool")],
+        "description": ["Checks c's Link Rating lower bound."],
+        "description_zh": ["检查c的连接值下限。"],
+    },
+    "Card.IsSummonableCard": {
+        "params": [ParamDoc("c", "Card")],
+        "returns": [ReturnDoc("bool")],
+        "description": ["Checks whether c is a Normal Summonable card kind."],
+        "description_zh": ["检查c是否属于可通常召唤的卡种。"],
+    },
+    "Duel.AnnounceRace": {
+        "params": [ParamDoc("player", "int"), ParamDoc("count", "int"), ParamDoc("available", "int")],
+        "returns": [ReturnDoc("int")],
+        "description": ["Lets player declare Race values."],
+        "description_zh": ["让player宣言种族。"],
+    },
+    "Duel.ChangeAttackTarget": {
+        "params": [ParamDoc("target", "Card|nil")],
+        "returns": [ReturnDoc("bool")],
+        "description": ["Changes the current attack target."],
+        "description_zh": ["变更当前攻击对象。"],
+    },
+    "Duel.IsPlayerCanSpecialSummon": {
+        "params": [ParamDoc("player", "int"), ParamDoc("sumtype", "int", True), ParamDoc("sumpos", "int", True), ParamDoc("target_player", "int", True), ParamDoc("c", "Card", True)],
+        "returns": [ReturnDoc("bool")],
+        "description": ["Checks whether player can Special Summon."],
+        "description_zh": ["检查player能否特殊召唤。"],
+    },
+    "Duel.ResetFlagEffect": {
+        "params": [ParamDoc("player", "int"), ParamDoc("code", "int")],
+        "returns": [],
+        "description": ["Resets player flag effects."],
+        "description_zh": ["重置玩家标志效果。"],
+    },
+    "Duel.SelectPosition": {
+        "params": [ParamDoc("player", "int"), ParamDoc("c", "Card"), ParamDoc("positions", "int")],
+        "returns": [ReturnDoc("int")],
+        "description": ["Lets player select a position."],
+        "description_zh": ["让player选择表示形式。"],
+    },
+    "Effect.GetCost": {
+        "params": [ParamDoc("e", "Effect")],
+        "returns": [ReturnDoc("function|nil")],
+        "description": ["Returns e's cost function."],
+        "description_zh": ["返回e的费用函数。"],
+    },
+    "Card.GetLeftScale": {
+        "params": [ParamDoc("c", "Card")],
+        "returns": [ReturnDoc("int")],
+        "description": ["Returns c's left Pendulum Scale."],
+        "description_zh": ["返回c的左灵摆刻度。"],
+    },
+    "Card.GetPreviousAttributeOnField": {
+        "params": [ParamDoc("c", "Card")],
+        "returns": [ReturnDoc("int")],
+        "description": ["Returns c's previous on-field Attribute."],
+        "description_zh": ["返回c之前场上属性。"],
+    },
+    "Card.GetSummonType": {
+        "params": [ParamDoc("c", "Card")],
+        "returns": [ReturnDoc("int")],
+        "description": ["Returns c's Summon Type bits."],
+        "description_zh": ["返回c的召唤类型位。"],
+    },
+    "Duel.IsPlayerCanSummon": {
+        "params": [ParamDoc("player", "int"), ParamDoc("sumtype", "int", True), ParamDoc("c", "Card", True)],
+        "returns": [ReturnDoc("bool")],
+        "description": ["Checks whether player can Normal Summon."],
+        "description_zh": ["检查player能否通常召唤。"],
+    },
+    "Card.CopyEffect": {
+        "params": [ParamDoc("c", "Card"), ParamDoc("code", "int"), ParamDoc("reset", "int"), ParamDoc("count", "int", True, "default: 1")],
+        "returns": [ReturnDoc("int")],
+        "description": ["Copies another card's initial_effect."],
+        "description_zh": ["复制另一张卡的initial_effect。"],
+    },
+    "Card.GetMaterialCount": {
+        "params": [ParamDoc("c", "Card")],
+        "returns": [ReturnDoc("int")],
+        "description": ["Returns material count."],
+        "description_zh": ["返回素材数量。"],
+    },
+    "Card.IsRankAbove": {
+        "params": [ParamDoc("c", "Card"), ParamDoc("rank", "int")],
+        "returns": [ReturnDoc("bool")],
+        "description": ["Checks c's Rank lower bound."],
+        "description_zh": ["检查c的阶级下限。"],
+    },
+    "Duel.CheckPhaseActivity": {
+        "params": [],
+        "returns": [ReturnDoc("bool")],
+        "description": ["Returns phase action state."],
+        "description_zh": ["返回阶段行动状态。"],
+    },
+    "Auxiliary.Tuner": {
+        "params": [ParamDoc("f", "function|nil"), ParamDoc("...", "any", True)],
+        "returns": [ReturnDoc("function")],
+        "description": ["Creates a Tuner material filter."],
+        "description_zh": ["创建调整素材筛选函数。"],
+    },
+    "Card.GetBattlePosition": {
+        "params": [ParamDoc("c", "Card")],
+        "returns": [ReturnDoc("int")],
+        "description": ["Returns c's battle position snapshot."],
+        "description_zh": ["返回c的战斗表示形式快照。"],
+    },
+    "Card.IsXyzType": {
+        "params": [ParamDoc("c", "Card"), ParamDoc("type", "int")],
+        "returns": [ReturnDoc("bool")],
+        "description": ["Checks c's Xyz Material type."],
+        "description_zh": ["检查c的超量素材用类型。"],
+    },
+    "Duel.AnnounceLevel": {
+        "params": [ParamDoc("player", "int"), ParamDoc("min", "int", True, "default: 1"), ParamDoc("max", "int", True, "default: 12"), ParamDoc("excluded_level1", "int", True), ParamDoc("...", "int", True)],
+        "returns": [ReturnDoc("int|nil", "Declared Level."), ReturnDoc("int|nil", "Zero-based option index.")],
+        "description": ["Lets player declare a Level."],
+        "description_zh": ["让player宣言等级。"],
+    },
+    "Duel.GetTargetCount": {
+        "params": [ParamDoc("filter", "function|nil"), ParamDoc("player", "int"), ParamDoc("location1", "int"), ParamDoc("location2", "int"), ParamDoc("exception", "Card|Group|nil"), ParamDoc("...", "any", True)],
+        "returns": [ReturnDoc("int")],
+        "description": ["Counts targetable matching cards."],
+        "description_zh": ["统计可取对象的匹配卡。"],
+    },
+    "Duel.IsCanAddCounter": {
+        "params": [ParamDoc("player", "int"), ParamDoc("countertype", "int", True), ParamDoc("count", "int", True), ParamDoc("c", "Card", True)],
+        "returns": [ReturnDoc("bool")],
+        "description": ["Checks whether counters can be placed."],
+        "description_zh": ["检查是否能放置指示物。"],
+    },
+    "Duel.SendtoExtraP": {
+        "params": [ParamDoc("targets", "Card|Group"), ParamDoc("player", "int"), ParamDoc("reason", "int")],
+        "returns": [ReturnDoc("int")],
+        "description": ["Sends cards to the Extra Deck face-up."],
+        "description_zh": ["把卡以表侧送去额外卡组。"],
+    },
+    "Auxiliary.ritlimit": {
+        "params": [ParamDoc("e", "Effect"), ParamDoc("se", "Effect"), ParamDoc("sp", "int"), ParamDoc("st", "int")],
+        "returns": [ReturnDoc("bool")],
+        "description": ["Checks for Ritual Summon type."],
+        "description_zh": ["检查是否为仪式召唤类型。"],
+    },
+    "Card.GetCurrentScale": {
+        "params": [ParamDoc("c", "Card")],
+        "returns": [ReturnDoc("int")],
+        "description": ["Returns c's current Pendulum Scale."],
+        "description_zh": ["返回c当前灵摆刻度。"],
+    },
+    "Card.GetLocation": {
+        "params": [ParamDoc("c", "Card")],
+        "returns": [ReturnDoc("int")],
+        "description": ["Returns c's current location."],
+        "description_zh": ["返回c当前位置。"],
+    },
+    "Duel.AnnounceType": {
+        "params": [ParamDoc("player", "int")],
+        "returns": [ReturnDoc("int")],
+        "description": ["Lets player choose Monster/Spell/Trap."],
+        "description_zh": ["让player选择怪兽/魔法/陷阱。"],
+    },
+    "Duel.IsPlayerCanAdditionalSummon": {
+        "params": [ParamDoc("player", "int")],
+        "returns": [ReturnDoc("bool")],
+        "description": ["Checks extra Normal Summon availability."],
+        "description_zh": ["检查额外通常召唤可用性。"],
+    },
+    "Group.GetMinGroup": {
+        "params": [ParamDoc("g", "Group"), ParamDoc("f", "function"), ParamDoc("...", "any", True)],
+        "returns": [ReturnDoc("Group|nil", "Cards tied for the minimum value."), ReturnDoc("int|nil", "Minimum value.")],
+        "description": ["Returns cards tied for minimum function value."],
+        "description_zh": ["返回函数值最小的并列卡。"],
+    },
+    "Card.GetPreviousCodeOnField": {
+        "params": [ParamDoc("c", "Card")],
+        "returns": [ReturnDoc("int"), ReturnDoc("int|nil", "Second previous code, when present.")],
+        "description": ["Returns c's previous on-field code."],
+        "description_zh": ["返回c之前场上卡号。"],
+    },
+    "Card.IsHasCardTarget": {
+        "params": [ParamDoc("c1", "Card"), ParamDoc("c2", "Card")],
+        "returns": [ReturnDoc("bool")],
+        "description": ["Checks persistent card targeting."],
+        "description_zh": ["检查持续取对象卡。"],
+    },
+    "Duel.GetBattleDamage": {
+        "params": [ParamDoc("player", "int")],
+        "returns": [ReturnDoc("int")],
+        "description": ["Returns recorded battle damage."],
+        "description_zh": ["返回记录的战斗伤害。"],
+    },
+    "Duel.GetLinkedZone": {
+        "params": [ParamDoc("player", "int")],
+        "returns": [ReturnDoc("int")],
+        "description": ["Returns linked-zone bitmask."],
+        "description_zh": ["返回连接区域位掩码。"],
+    },
+    "Auxiliary.damcon1": {
+        "params": [ParamDoc("e", "Effect"), ParamDoc("tp", "int"), ParamDoc("eg", "Group"), ParamDoc("ep", "int"), ParamDoc("ev", "int"), ParamDoc("re", "Effect"), ParamDoc("r", "int"), ParamDoc("rp", "int")],
+        "returns": [ReturnDoc("bool")],
+        "description": ["Condition helper for taking effect damage."],
+        "description_zh": ["受到效果伤害的条件辅助函数。"],
+    },
+    "Auxiliary.EnableUnionAttribute": {
+        "params": [ParamDoc("c", "Card"), ParamDoc("filter", "function")],
+        "returns": [],
+        "description": ["Registers modern Union effects."],
+        "description_zh": ["登记现代同盟效果。"],
+    },
     "Card.GetReason": {
         "params": [ParamDoc("c", "Card")],
         "returns": [ReturnDoc("int")],

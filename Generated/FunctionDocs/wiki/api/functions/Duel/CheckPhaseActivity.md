@@ -8,7 +8,7 @@ Duel.CheckPhaseActivity() -> bool
 
 ## Description
 
-Check the player at the current stage whether the operation (whether at the beginning of the stage, such as the Seven King of the sword)
+Returns whether an action has been recorded for the current phase.
 
 ## Returns
 

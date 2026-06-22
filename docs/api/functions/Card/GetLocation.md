@@ -8,7 +8,7 @@ Card.GetLocation(Card c) -> int
 
 ## Description
 
-Returns the current position of c
+Returns c's current location, or 0 if c is currently treated as not being on the field.
 
 ## Parameters
 

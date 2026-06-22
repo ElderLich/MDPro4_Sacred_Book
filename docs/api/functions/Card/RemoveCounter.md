@@ -3,12 +3,13 @@
 ## Signature
 
 ```lua
-Card.RemoveCounter(Card c, int player, int countertype, int count, int reason) -> void
+Card.RemoveCounter(Card c, int player, int countertype, int count, int reason) -> bool|nil
 ```
 
 ## Description
 
-Let the player player remove count counters of type c on c with reason
+Removes count counters of countertype from c for reason, using player as the removing player.
+When countertype is 0, the core clears every counter on c and returns no Lua value. Otherwise it yields and returns whether the requested counters were removed.
 
 ## Parameters
 
@@ -17,6 +18,10 @@ Let the player player remove count counters of type c on c with reason
 - `countertype` `int`
 - `count` `int`
 - `reason` `int`
+
+## Returns
+
+- `bool|nil`
 
 ## Source
 

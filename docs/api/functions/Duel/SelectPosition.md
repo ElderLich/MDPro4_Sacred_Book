@@ -3,18 +3,18 @@
 ## Signature
 
 ```lua
-Duel.SelectPosition(int player, Card c, int pos) -> int
+Duel.SelectPosition(int player, Card c, int positions) -> int
 ```
 
 ## Description
 
-Let player player select the representation of c and return
+Lets player choose one of the allowed positions for c and returns the selected POS_* value.
 
 ## Parameters
 
 - `player` `int`
 - `c` `Card`
-- `pos` `int`
+- `positions` `int`
 
 ## Returns
 

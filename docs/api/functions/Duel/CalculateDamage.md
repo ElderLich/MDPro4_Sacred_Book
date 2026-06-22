@@ -3,17 +3,18 @@
 ## Signature
 
 ```lua
-Duel.CalculateDamage(Card c1, Card c2, [bool new_attack]) -> void
+Duel.CalculateDamage(Card attacker, Card|nil attack_target, [bool new_attack]) -> void
 ```
 
 ## Description
 
-Let c1 and c2 combat damage calculation
+Starts damage calculation between attacker and attack_target, or a direct attack when attack_target is nil.
+new_attack is optional and is passed to the damage-step processor. If attacker and attack_target are the same card, the binding returns no value and does not start damage calculation.
 
 ## Parameters
 
-- `c1` `Card`
-- `c2` `Card`
+- `attacker` `Card`
+- `attack_target` `Card|nil`
 - `new_attack` `bool` optional - default: false
 
 ## Source

@@ -8,7 +8,8 @@ Duel.IsCanAddCounter(int player, [int countertype], [int count], [Card c]) -> bo
 
 ## Description
 
-Check if the player can add count counterstype to card c
+With only player, checks whether player is not forbidden from placing counters.
+With countertype, count, and c, checks whether player can place that many counters of countertype on c.
 
 ## Parameters
 

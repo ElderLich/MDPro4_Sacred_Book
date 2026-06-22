@@ -8,7 +8,7 @@ Card.IsHasCardTarget(Card c1, Card c2) -> bool
 
 ## Description
 
-Check whether c1 takes c2 as a persistent object
+Checks whether c1 currently has c2 as a persistent card target.
 
 ## Parameters
 

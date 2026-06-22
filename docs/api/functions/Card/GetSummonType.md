@@ -8,7 +8,7 @@ Card.GetSummonType(Card c) -> int
 
 ## Description
 
-Returns the call / special call of c
+Returns c's recorded Summon Type bits masked to the default Summon Type field.
 
 ## Parameters
 

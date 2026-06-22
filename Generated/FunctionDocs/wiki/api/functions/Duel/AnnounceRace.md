@@ -8,8 +8,7 @@ Duel.AnnounceRace(int player, int count, int available) -> int
 
 ## Description
 
-Let the player player declare count races from the optional races
-Available is the combined value of all the optional races
+Lets player declare count Races from available and returns the selected RACE_* bitmask.
 
 ## Parameters
 

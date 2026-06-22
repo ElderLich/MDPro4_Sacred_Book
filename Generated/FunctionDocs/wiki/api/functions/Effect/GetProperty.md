@@ -8,7 +8,7 @@ Effect.GetProperty(Effect e) -> int,int
 
 ## Description
 
-Returns the Property property
+Returns e's two property flag fields, flag1 and flag2.
 
 ## Parameters
 
@@ -16,8 +16,8 @@ Returns the Property property
 
 ## Returns
 
-- `int`
-- `int`
+- `int` - flag1.
+- `int` - flag2.
 
 ## Source
 

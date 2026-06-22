@@ -8,7 +8,8 @@ Duel.AnnounceType(int player) -> int
 
 ## Description
 
-Let the player player declare a card type
+Lets player choose one of the engine's built-in Monster/Spell/Trap type options and returns the zero-based option index.
+The return value is the selected option index, not a TYPE_* bitmask.
 
 ## Parameters
 

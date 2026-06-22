@@ -3,25 +3,24 @@
 ## Signature
 
 ```lua
-Group.GetMinGroup(Group g, function f, ... any) -> Group,int
+Group.GetMinGroup(Group g, function f, [... any]) -> Group|nil,int|nil
 ```
 
 ## Description
 
-F is a function that returns an interger value, and the card with the smallest value of f is selected from g
-The second return value is the minimum value, starting at the third parameter as an additional parameter
-To use the second return value Note Check g is not empty
+Calls f for each card in g, forwards any extra arguments, and returns a Group containing every card tied for the minimum value.
+The second return is the minimum integer value. If g is empty, this binding returns no Lua values.
 
 ## Parameters
 
 - `g` `Group`
 - `f` `function`
-- `...` `any`
+- `...` `any` optional
 
 ## Returns
 
-- `Group`
-- `int`
+- `Group|nil` - Cards tied for the minimum value.
+- `int|nil` - Minimum value.
 
 ## Source
 

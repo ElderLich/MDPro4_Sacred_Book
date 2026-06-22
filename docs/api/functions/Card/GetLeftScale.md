@@ -8,7 +8,7 @@ Card.GetLeftScale(Card c) -> int
 
 ## Description
 
-Returns the left-hand pendulum scale of c
+Returns c's current left Pendulum Scale value.
 
 ## Parameters
 

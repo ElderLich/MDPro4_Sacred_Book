@@ -8,7 +8,8 @@ Card.GetCurrentScale(Card c) -> int
 
 ## Description
 
-Return the current Pendulum Scale of card c. If in the Left Pendulum Zone, return the left scale; if in the Right Pendulum Zone or not in a Pendulum Zone, return the right scale
+Returns the Pendulum Scale c currently uses.
+In a Pendulum Zone, this returns the left or right current scale according to c's zone sequence. Outside a Pendulum Zone, it returns c's printed left scale value.
 
 ## Parameters
 

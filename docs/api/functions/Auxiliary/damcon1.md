@@ -3,24 +3,13 @@
 ## Signature
 
 ```lua
-Auxiliary.damcon1(Effect e, int tp, Group eg, int ep, any ev, Effect re, any r, int rp) -> void
+Auxiliary.damcon1(Effect e, int tp, Group eg, int ep, int ev, Effect re, int r, int rp) -> bool
 ```
 
 ## Description
 
-Simplified method for the condition of player tp taking damage, used in effect registration for SetCondition
-function aux.damcon1(e, tp, eg, ep, ev, re, r, rp)
-  local e1=Duel.IsPlayerAffectedByEffect(tp, EFFECT_REVERSE_DAMAGE)
-  local e2=Duel.IsPlayerAffectedByEffect(tp, EFFECT_REVERSE_RECOVER)
-  local rd=e1 and not e2
-  local rr=not e1 and e2
-  local ex,cg,ct,cp,cv=Duel.GetOperationInfo(ev, CATEGORY_DAMAGE)
-  if ex and (cp==tp or cp==PLAYER_ALL) and not rd and not Duel.IsPlayerAffectedByEffect(tp, EFFECT_NO_EFFECT_DAMAGE) then
-    return true
-  end
-  ex,cg,ct,cp,cv=Duel.GetOperationInfo(ev, CATEGORY_RECOVER)
-  return ex and (cp==tp or cp==PLAYER_ALL) and rr and not Duel.IsPlayerAffectedByEffect(tp, EFFECT_NO_EFFECT_DAMAGE)
-end
+Condition helper for effects that would make player tp take effect damage.
+It checks the operation info for damage to tp, or recovery to tp that is reversed into damage, and respects EFFECT_REVERSE_DAMAGE, EFFECT_REVERSE_RECOVER, and EFFECT_NO_EFFECT_DAMAGE.
 
 ## Parameters
 
@@ -28,10 +17,14 @@ end
 - `tp` `int`
 - `eg` `Group`
 - `ep` `int`
-- `ev` `any`
+- `ev` `int`
 - `re` `Effect`
-- `r` `any`
+- `r` `int`
 - `rp` `int`
+
+## Returns
+
+- `bool`
 
 ## Source
 

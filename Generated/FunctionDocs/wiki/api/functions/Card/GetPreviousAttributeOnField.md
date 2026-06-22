@@ -8,7 +8,7 @@ Card.GetPreviousAttributeOnField(Card c) -> int
 
 ## Description
 
-Returns the attribute before the c position change
+Returns the Attribute value recorded for c's previous on-field state.
 
 ## Parameters
 

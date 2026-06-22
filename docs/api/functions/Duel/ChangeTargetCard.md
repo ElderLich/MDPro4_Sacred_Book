@@ -8,7 +8,7 @@ Duel.ChangeTargetCard(int chainc, Group g) -> void
 
 ## Description
 
-The chain chainc the object into g
+Replaces the target card group recorded for Chain Link chainc with g.
 
 ## Parameters
 

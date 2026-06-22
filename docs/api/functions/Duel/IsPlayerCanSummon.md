@@ -8,9 +8,8 @@ Duel.IsPlayerCanSummon(int player, [int sumtype], [Card c]) -> bool
 
 ## Description
 
-Check player player can usually call \[c, to sumtype\]
-If optional parameters are required, they must all be used
-Returns false only if the player receives an effect such as "can not summon a superordinate"
+With only player, checks whether player is not forbidden from performing a Normal Summon by an untargeted EFFECT_CANNOT_SUMMON.
+With sumtype and c, checks player EFFECT_CANNOT_SUMMON restrictions for Normal Summoning c with that sumtype. This binding does not check Summon count, costs, tribute availability, or zone availability.
 
 ## Parameters
 

@@ -8,7 +8,7 @@ Card.GetMaterialCount(Card c) -> int
 
 ## Description
 
-Returns the amount of material used for c appearance
+Returns the number of cards currently recorded as c's materials.
 
 ## Parameters
 

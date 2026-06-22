@@ -8,7 +8,7 @@ Duel.GetLinkedZone(int player) -> int
 
 ## Description
 
-Return all Link Zones from player's perspective
+Returns the zone bitmask currently pointed to by Link Markers from player's perspective.
 
 ## Parameters
 

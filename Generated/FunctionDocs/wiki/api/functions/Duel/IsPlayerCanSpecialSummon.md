@@ -8,8 +8,8 @@ Duel.IsPlayerCanSpecialSummon(int player, [int sumtype], [int sumpos], [int targ
 
 ## Description
 
-Check player player can special summon \[c to target_player field to sumtype summation, sumpos form\]
-If optional parameters are required, they must all be used
+With only player, checks whether player is allowed to perform a Special Summon and still has Special Summon count available.
+With the optional card-specific arguments, checks whether player can Special Summon c to target_player in sumpos with sumtype, using the current reason effect.
 
 ## Parameters
 

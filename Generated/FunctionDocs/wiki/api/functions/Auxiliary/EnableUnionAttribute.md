@@ -8,7 +8,8 @@ Auxiliary.EnableUnionAttribute(Card c, function filter) -> void
 
 ## Description
 
-add effect to modern union monsters
+Registers the standard modern Union Monster package on c.
+The helper adds equipped-card destruction substitution, an EFFECT_UNION_LIMIT using filter, an ignition effect to equip c from the Monster Zone to a valid monster, and an ignition effect to Special Summon c from the Spell & Trap Zone.
 
 ## Parameters
 

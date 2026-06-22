@@ -8,7 +8,7 @@ Duel.IsPlayerCanAdditionalSummon(int player) -> bool
 
 ## Description
 
-Check if player has additional summon counts beyond Normal Summon
+Returns true when player has no pending extra Normal Summon marker in core.extra_summon.
 
 ## Parameters
 

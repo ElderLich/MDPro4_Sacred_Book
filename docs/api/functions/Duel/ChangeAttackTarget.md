@@ -3,16 +3,17 @@
 ## Signature
 
 ```lua
-Duel.ChangeAttackTarget([Card|nil c]) -> bool
+Duel.ChangeAttackTarget(Card|nil target) -> bool
 ```
 
 ## Description
 
-Will attack the object into c, c for nil that direct attack, the return value indicates whether the successful transfer of attack objects
+Changes the current attack target to target, or to a direct attack when target is nil, and returns whether the change succeeded.
+The current attacker must exist, be able to attack, and not have its attack canceled. A card target must be one of the current legal attack targets; direct attack requires that the attacker is not forbidden from attacking directly.
 
 ## Parameters
 
-- `c` `Card|nil` optional
+- `target` `Card|nil`
 
 ## Returns
 

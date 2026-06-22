@@ -8,7 +8,7 @@ Card.GetBattlePosition(Card c) -> int
 
 ## Description
 
-Returns the representation of c before this battle occurs
+Returns c's temporary battle-position snapshot.
 
 ## Parameters
 
