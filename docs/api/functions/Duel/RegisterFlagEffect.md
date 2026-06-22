@@ -3,7 +3,7 @@
 ## Signature
 
 ```lua
-Duel.RegisterFlagEffect(int player, int code, int reset_flag, int property, int reset_count, [int label]) -> Effect
+Duel.RegisterFlagEffect(int player, int code, int reset_flag, int property, int reset_count, [int label]) -> Effect|nil
 ```
 
 ## Description
@@ -13,16 +13,16 @@ The flag effect is player-targeted, field-only, cannot be disabled, and count=0 
 
 ## Parameters
 
-- `player` `int`
-- `code` `int`
-- `reset_flag` `int`
-- `property` `int`
-- `reset_count` `int` - default: 1
-- `label` `int` optional
+- `player` `int` - Player that receives the marker; invalid players make the core return no values.
+- `code` `int` - Flag-effect code; the core masks it with MAX_CARD_ID and adds EFFECT_FLAG_EFFECT.
+- `reset_flag` `int` - RESET_* mask controlling when the marker expires.
+- `property` `int` - Effect property flags stored on the created marker; player-target, field-only, and cannot-disable flags are always added.
+- `reset_count` `int` - Reset counter for the created marker; 0 is treated as 1.
+- `label` `int` optional - Optional integer payload stored on the marker.
 
 ## Returns
 
-- `Effect`
+- `Effect|nil` - The created flag effect, or nil if player is invalid.
 
 ## Source
 

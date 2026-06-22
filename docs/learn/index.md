@@ -29,6 +29,10 @@ back into the generated API reference and live card examples.
     <strong>Continuous effects</strong>
     <span>How always-on, field, equip, and event-watching effects are built.</span>
   </a>
+  <a class="sacred-card" href="flag-effects">
+    <strong>Flag effects</strong>
+    <span>How scripts remember player or card state with RegisterFlagEffect and GetFlagEffect.</span>
+  </a>
 </div>
 
 ## Suggested Order
@@ -41,8 +45,9 @@ back into the generated API reference and live card examples.
 6. Work with cards and groups through [Filters, Card objects, and Group objects](filters-and-groups).
 7. Move cards correctly with [Functions that move cards across locations](moving-cards).
 8. Read always-on behavior through [Continuous effects](continuous-effects).
-9. Apply outcomes through [Methods for affecting cards](affecting-cards).
-10. Use card families through [Archetypes and set codes](archetypes-and-setcodes).
+9. Track temporary script memory with [Flag effects](flag-effects).
+10. Apply outcomes through [Methods for affecting cards](affecting-cards).
+11. Use card families through [Archetypes and set codes](archetypes-and-setcodes).
 
 ## How To Read This Book
 

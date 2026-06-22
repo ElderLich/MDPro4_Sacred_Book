@@ -27,3 +27,9 @@ end
 
 The target checks legality and declares what will happen. The operation performs
 the effect.
+
+## Flag Effects
+
+Use [Flag effects](/learn/flag-effects) when a script needs temporary memory,
+such as whether a player has already used one option this turn or whether a
+specific card was marked by an earlier operation.

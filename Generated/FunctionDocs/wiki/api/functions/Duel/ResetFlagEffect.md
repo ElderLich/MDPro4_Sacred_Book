@@ -12,8 +12,8 @@ Resets all player flag effects with code for player.
 
 ## Parameters
 
-- `player` `int`
-- `code` `int`
+- `player` `int` - Player whose matching flag effects are reset.
+- `code` `int` - Flag-effect code to clear.
 
 ## Source
 

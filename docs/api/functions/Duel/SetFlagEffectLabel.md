@@ -12,9 +12,9 @@ Sets the first matching player flag effect's label to label and returns whether 
 
 ## Parameters
 
-- `player` `int`
-- `code` `int`
-- `label` `int`
+- `player` `int` - Player whose matching flag effect is updated.
+- `code` `int` - Flag-effect code to find.
+- `label` `int` - New integer label stored on the first matching player flag effect.
 
 ## Returns
 

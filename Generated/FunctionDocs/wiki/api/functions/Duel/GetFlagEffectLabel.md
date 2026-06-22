@@ -18,7 +18,7 @@ If no matching flag effect exists, the core returns nil; if multiple matching fl
 
 ## Returns
 
-- `int|nil` - First matching label, or nil if no matching flag effect exists.
+- `int|nil` - First matching label, or nil if player is invalid or no matching flag effect exists.
 - `int...` - Additional matching labels; a matching effect with no label contributes 0.
 
 ## Source

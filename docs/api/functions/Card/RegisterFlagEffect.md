@@ -13,17 +13,17 @@ Flag effects are script markers: their code is kept separate from regular effect
 
 ## Parameters
 
-- `c` `Card`
-- `code` `int`
-- `reset_flag` `int`
-- `property` `int`
-- `reset_count` `int`
-- `label` `int` optional
-- `desc` `int` optional
+- `c` `Card` - Card that receives the marker.
+- `code` `int` - Flag-effect code; the core masks it with MAX_CARD_ID and adds EFFECT_FLAG_EFFECT.
+- `reset_flag` `int` - RESET_* mask controlling when the marker expires.
+- `property` `int` - Effect property flags stored on the created marker; EFFECT_FLAG_CANNOT_DISABLE is always added.
+- `reset_count` `int` - Reset counter for the created marker; 0 is treated as 1.
+- `label` `int` optional - Optional integer payload stored on the marker.
+- `desc` `int` optional - Optional client description id for marker hints.
 
 ## Returns
 
-- `Effect`
+- `Effect` - The created flag effect.
 
 ## Source
 

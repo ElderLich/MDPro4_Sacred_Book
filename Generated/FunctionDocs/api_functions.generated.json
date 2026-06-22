@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-06-22T22:03:55+00:00",
+    "generated_at": "2026-06-22T22:19:41+00:00",
     "workspace": "D:\\Programs\\GitHub\\MDPro3_Sacred_Book",
     "dataeditorx_data": "D:\\Programs\\GitHub\\DataEditorX\\DataEditorX\\data",
     "mdpro3_locales": "D:\\Programs\\GitHub\\MDPro3_Data\\Data\\locales",
@@ -2705,19 +2705,19 @@
           "name": "c",
           "type": "Card",
           "optional": false,
-          "description": ""
+          "description": "Card whose single-card flag effects are counted."
         },
         {
           "name": "code",
           "type": "int",
           "optional": false,
-          "description": ""
+          "description": "Flag-effect code; the core masks it with MAX_CARD_ID and adds EFFECT_FLAG_EFFECT."
         }
       ],
       "returns": [
         {
           "type": "int",
-          "description": ""
+          "description": "Number of matching flag effects on c."
         }
       ],
       "description_zh": [
@@ -2742,6 +2742,7 @@
       "aliases": [],
       "tags": [
         "core-binding",
+        "core-doc-override",
         "manual-zh-doc"
       ],
       "core_binding": true,
@@ -13170,57 +13171,54 @@
           "name": "c",
           "type": "Card",
           "optional": false,
-          "description": ""
+          "description": "Card that receives the marker."
         },
         {
           "name": "code",
           "type": "int",
           "optional": false,
-          "description": ""
+          "description": "Flag-effect code; the core masks it with MAX_CARD_ID and adds EFFECT_FLAG_EFFECT."
         },
         {
           "name": "reset_flag",
           "type": "int",
           "optional": false,
-          "description": ""
+          "description": "RESET_* mask controlling when the marker expires."
         },
         {
           "name": "property",
           "type": "int",
           "optional": false,
-          "description": ""
+          "description": "Effect property flags stored on the created marker; EFFECT_FLAG_CANNOT_DISABLE is always added."
         },
         {
           "name": "reset_count",
           "type": "int",
           "optional": false,
-          "description": ""
+          "description": "Reset counter for the created marker; 0 is treated as 1."
         },
         {
           "name": "label",
           "type": "int",
           "optional": true,
-          "description": ""
+          "description": "Optional integer payload stored on the marker."
         },
         {
           "name": "desc",
           "type": "int",
           "optional": true,
-          "description": ""
+          "description": "Optional client description id for marker hints."
         }
       ],
       "returns": [
         {
           "type": "Effect",
-          "description": ""
+          "description": "The created flag effect."
         }
       ],
       "description_zh": [
-        "为c注册一个标识用效果",
-        "注：注册给卡的标识用效果不会用于系统，",
-        "即使code与内置效果code重合也不会影响，",
-        "并且类型总是EFFECT_TYPE_SINGLE，reset方法，property和一般的效果相同，",
-        "并且不会无效化，不受卡的免疫效果影响"
+        "在c上登记单卡标记效果，并返回创建的Effect。",
+        "标记效果是脚本用的标记：其code与普通效果code分开保存，不能被无效，且count=0会按1处理。"
       ],
       "description_en": [
         "Registers a special single-card flag effect on c and returns the created Effect.",
@@ -13241,7 +13239,9 @@
       ],
       "aliases": [],
       "tags": [
-        "core-binding"
+        "core-binding",
+        "core-doc-override",
+        "manual-zh-doc"
       ],
       "core_binding": true,
       "core_handler": "card_register_flag_effect"
@@ -13616,13 +13616,13 @@
           "name": "c",
           "type": "Card",
           "optional": false,
-          "description": ""
+          "description": "Card whose matching flag effects are reset."
         },
         {
           "name": "code",
           "type": "int",
           "optional": false,
-          "description": ""
+          "description": "Flag-effect code to clear."
         }
       ],
       "returns": [],
@@ -13865,25 +13865,25 @@
           "name": "c",
           "type": "Card",
           "optional": false,
-          "description": ""
+          "description": "Card whose matching flag effect is updated."
         },
         {
           "name": "code",
           "type": "int",
           "optional": false,
-          "description": ""
+          "description": "Flag-effect code to find."
         },
         {
           "name": "label",
           "type": "int",
           "optional": false,
-          "description": ""
+          "description": "New integer label stored on the first matching flag effect."
         }
       ],
       "returns": [
         {
           "type": "bool",
-          "description": ""
+          "description": "True if a matching flag effect was updated; false if none exists."
         }
       ],
       "description_zh": [
@@ -19176,19 +19176,19 @@
           "name": "player",
           "type": "int",
           "optional": false,
-          "description": ""
+          "description": "Player whose flag effects are counted."
         },
         {
           "name": "code",
           "type": "int",
           "optional": false,
-          "description": ""
+          "description": "Flag-effect code; the core masks it with MAX_CARD_ID and adds EFFECT_FLAG_EFFECT."
         }
       ],
       "returns": [
         {
-          "type": "int",
-          "description": ""
+          "type": "int|nil",
+          "description": "Number of matching player flag effects, or nil if player is invalid."
         }
       ],
       "description_zh": [
@@ -19213,6 +19213,7 @@
       "aliases": [],
       "tags": [
         "core-binding",
+        "core-doc-override",
         "manual-zh-doc"
       ],
       "core_binding": true,
@@ -19239,7 +19240,7 @@
       "returns": [
         {
           "type": "int|nil",
-          "description": "First matching label, or nil if no matching flag effect exists."
+          "description": "First matching label, or nil if player is invalid or no matching flag effect exists."
         },
         {
           "type": "int...",
@@ -24009,43 +24010,43 @@
           "name": "player",
           "type": "int",
           "optional": false,
-          "description": ""
+          "description": "Player that receives the marker; invalid players make the core return no values."
         },
         {
           "name": "code",
           "type": "int",
           "optional": false,
-          "description": ""
+          "description": "Flag-effect code; the core masks it with MAX_CARD_ID and adds EFFECT_FLAG_EFFECT."
         },
         {
           "name": "reset_flag",
           "type": "int",
           "optional": false,
-          "description": ""
+          "description": "RESET_* mask controlling when the marker expires."
         },
         {
           "name": "property",
           "type": "int",
           "optional": false,
-          "description": ""
+          "description": "Effect property flags stored on the created marker; player-target, field-only, and cannot-disable flags are always added."
         },
         {
           "name": "reset_count",
           "type": "int",
           "optional": false,
-          "description": "default: 1"
+          "description": "Reset counter for the created marker; 0 is treated as 1."
         },
         {
           "name": "label",
           "type": "int",
           "optional": true,
-          "description": ""
+          "description": "Optional integer payload stored on the marker."
         }
       ],
       "returns": [
         {
-          "type": "Effect",
-          "description": ""
+          "type": "Effect|nil",
+          "description": "The created flag effect, or nil if player is invalid."
         }
       ],
       "description_zh": [
@@ -24072,6 +24073,7 @@
       "aliases": [],
       "tags": [
         "core-binding",
+        "core-doc-override",
         "manual-zh-doc"
       ],
       "core_binding": true,
@@ -24410,13 +24412,13 @@
           "name": "player",
           "type": "int",
           "optional": false,
-          "description": ""
+          "description": "Player whose matching flag effects are reset."
         },
         {
           "name": "code",
           "type": "int",
           "optional": false,
-          "description": ""
+          "description": "Flag-effect code to clear."
         }
       ],
       "returns": [],
@@ -26243,19 +26245,19 @@
           "name": "player",
           "type": "int",
           "optional": false,
-          "description": ""
+          "description": "Player whose matching flag effect is updated."
         },
         {
           "name": "code",
           "type": "int",
           "optional": false,
-          "description": ""
+          "description": "Flag-effect code to find."
         },
         {
           "name": "label",
           "type": "int",
           "optional": false,
-          "description": ""
+          "description": "New integer label stored on the first matching player flag effect."
         }
       ],
       "returns": [

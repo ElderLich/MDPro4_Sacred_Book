@@ -28,6 +28,7 @@ export default defineConfig({
             { text: 'Filters and Groups', link: '/learn/filters-and-groups' },
             { text: 'Moving Cards', link: '/learn/moving-cards' },
             { text: 'Continuous Effects', link: '/learn/continuous-effects' },
+            { text: 'Flag Effects', link: '/learn/flag-effects' },
             { text: 'Affecting Cards', link: '/learn/affecting-cards' },
             { text: 'Archetypes and Set Codes', link: '/learn/archetypes-and-setcodes' },
           ],

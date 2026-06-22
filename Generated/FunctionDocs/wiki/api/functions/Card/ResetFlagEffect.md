@@ -12,8 +12,8 @@ Resets all flag effects on c with code.
 
 ## Parameters
 
-- `c` `Card`
-- `code` `int`
+- `c` `Card` - Card whose matching flag effects are reset.
+- `code` `int` - Flag-effect code to clear.
 
 ## Source
 

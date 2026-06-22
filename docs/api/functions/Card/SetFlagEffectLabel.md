@@ -12,13 +12,13 @@ Sets the first matching flag effect label for code on c to label and returns whe
 
 ## Parameters
 
-- `c` `Card`
-- `code` `int`
-- `label` `int`
+- `c` `Card` - Card whose matching flag effect is updated.
+- `code` `int` - Flag-effect code to find.
+- `label` `int` - New integer label stored on the first matching flag effect.
 
 ## Returns
 
-- `bool`
+- `bool` - True if a matching flag effect was updated; false if none exists.
 
 ## Source
 

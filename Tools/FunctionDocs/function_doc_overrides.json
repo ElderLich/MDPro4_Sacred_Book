@@ -11899,6 +11899,30 @@
       ],
       "summary_zh": [
         "返回c上编号为code的标记效果数量。"
+      ],
+      "core_summary_en": [
+        "Counts card flag effects by code."
+      ],
+      "core_summary_zh": [
+        "按code统计卡片标记效果。"
+      ],
+      "params": [
+        {
+          "name": "c",
+          "type": "Card",
+          "description": "Card whose single-card flag effects are counted."
+        },
+        {
+          "name": "code",
+          "type": "int",
+          "description": "Flag-effect code; the core masks it with MAX_CARD_ID and adds EFFECT_FLAG_EFFECT."
+        }
+      ],
+      "returns": [
+        {
+          "type": "int",
+          "description": "Number of matching flag effects on c."
+        }
       ]
     },
     "Card.GetFlagEffectLabel": {
@@ -16255,6 +16279,61 @@
       "summary_en": [
         "Registers a special single-card flag effect on c and returns the created Effect.",
         "Flag effects are script markers: their code is kept separate from regular effect codes, they cannot be disabled, and count=0 is treated as 1."
+      ],
+      "summary_zh": [
+        "在c上登记单卡标记效果，并返回创建的Effect。",
+        "标记效果是脚本用的标记：其code与普通效果code分开保存，不能被无效，且count=0会按1处理。"
+      ],
+      "core_summary_en": [
+        "Registers a single-card flag effect."
+      ],
+      "core_summary_zh": [
+        "登记单卡标记效果。"
+      ],
+      "params": [
+        {
+          "name": "c",
+          "type": "Card",
+          "description": "Card that receives the marker."
+        },
+        {
+          "name": "code",
+          "type": "int",
+          "description": "Flag-effect code; the core masks it with MAX_CARD_ID and adds EFFECT_FLAG_EFFECT."
+        },
+        {
+          "name": "reset_flag",
+          "type": "int",
+          "description": "RESET_* mask controlling when the marker expires."
+        },
+        {
+          "name": "property",
+          "type": "int",
+          "description": "Effect property flags stored on the created marker; EFFECT_FLAG_CANNOT_DISABLE is always added."
+        },
+        {
+          "name": "reset_count",
+          "type": "int",
+          "description": "Reset counter for the created marker; 0 is treated as 1."
+        },
+        {
+          "name": "label",
+          "type": "int",
+          "optional": true,
+          "description": "Optional integer payload stored on the marker."
+        },
+        {
+          "name": "desc",
+          "type": "int",
+          "optional": true,
+          "description": "Optional client description id for marker hints."
+        }
+      ],
+      "returns": [
+        {
+          "type": "Effect",
+          "description": "The created flag effect."
+        }
       ]
     },
     "Card.ReleaseEffectRelation": {
@@ -16463,11 +16542,13 @@
       "params": [
         {
           "name": "c",
-          "type": "Card"
+          "type": "Card",
+          "description": "Card whose matching flag effects are reset."
         },
         {
           "name": "code",
-          "type": "int"
+          "type": "int",
+          "description": "Flag-effect code to clear."
         }
       ],
       "returns": []
@@ -16575,20 +16656,24 @@
       "params": [
         {
           "name": "c",
-          "type": "Card"
+          "type": "Card",
+          "description": "Card whose matching flag effect is updated."
         },
         {
           "name": "code",
-          "type": "int"
+          "type": "int",
+          "description": "Flag-effect code to find."
         },
         {
           "name": "label",
-          "type": "int"
+          "type": "int",
+          "description": "New integer label stored on the first matching flag effect."
         }
       ],
       "returns": [
         {
-          "type": "bool"
+          "type": "bool",
+          "description": "True if a matching flag effect was updated; false if none exists."
         }
       ]
     },
@@ -18598,6 +18683,30 @@
       ],
       "summary_zh": [
         "返回player上编号为code的玩家标记效果数量。"
+      ],
+      "core_summary_en": [
+        "Counts player flag effects by code."
+      ],
+      "core_summary_zh": [
+        "按code统计玩家标记效果。"
+      ],
+      "params": [
+        {
+          "name": "player",
+          "type": "int",
+          "description": "Player whose flag effects are counted."
+        },
+        {
+          "name": "code",
+          "type": "int",
+          "description": "Flag-effect code; the core masks it with MAX_CARD_ID and adds EFFECT_FLAG_EFFECT."
+        }
+      ],
+      "returns": [
+        {
+          "type": "int|nil",
+          "description": "Number of matching player flag effects, or nil if player is invalid."
+        }
       ]
     },
     "Duel.GetFlagEffectLabel": {
@@ -18630,7 +18739,7 @@
       "returns": [
         {
           "type": "int|nil",
-          "description": "First matching label, or nil if no matching flag effect exists."
+          "description": "First matching label, or nil if player is invalid or no matching flag effect exists."
         },
         {
           "type": "int...",
@@ -20271,6 +20380,51 @@
       "summary_zh": [
         "为player登记玩家/全局标记效果，并返回创建的Effect。",
         "该标记效果以玩家为对象、只作为场地效果存在、不能被无效，且count=0会按1处理。"
+      ],
+      "core_summary_en": [
+        "Registers a player/global flag effect."
+      ],
+      "core_summary_zh": [
+        "登记玩家/全局标记效果。"
+      ],
+      "params": [
+        {
+          "name": "player",
+          "type": "int",
+          "description": "Player that receives the marker; invalid players make the core return no values."
+        },
+        {
+          "name": "code",
+          "type": "int",
+          "description": "Flag-effect code; the core masks it with MAX_CARD_ID and adds EFFECT_FLAG_EFFECT."
+        },
+        {
+          "name": "reset_flag",
+          "type": "int",
+          "description": "RESET_* mask controlling when the marker expires."
+        },
+        {
+          "name": "property",
+          "type": "int",
+          "description": "Effect property flags stored on the created marker; player-target, field-only, and cannot-disable flags are always added."
+        },
+        {
+          "name": "reset_count",
+          "type": "int",
+          "description": "Reset counter for the created marker; 0 is treated as 1."
+        },
+        {
+          "name": "label",
+          "type": "int",
+          "optional": true,
+          "description": "Optional integer payload stored on the marker."
+        }
+      ],
+      "returns": [
+        {
+          "type": "Effect|nil",
+          "description": "The created flag effect, or nil if player is invalid."
+        }
       ]
     },
     "Duel.Release": {
@@ -20400,11 +20554,13 @@
       "params": [
         {
           "name": "player",
-          "type": "int"
+          "type": "int",
+          "description": "Player whose matching flag effects are reset."
         },
         {
           "name": "code",
-          "type": "int"
+          "type": "int",
+          "description": "Flag-effect code to clear."
         }
       ],
       "returns": []
@@ -21117,15 +21273,18 @@
       "params": [
         {
           "name": "player",
-          "type": "int"
+          "type": "int",
+          "description": "Player whose matching flag effect is updated."
         },
         {
           "name": "code",
-          "type": "int"
+          "type": "int",
+          "description": "Flag-effect code to find."
         },
         {
           "name": "label",
-          "type": "int"
+          "type": "int",
+          "description": "New integer label stored on the first matching player flag effect."
         }
       ],
       "returns": [
