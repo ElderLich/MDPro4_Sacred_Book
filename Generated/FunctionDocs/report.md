@@ -1,6 +1,6 @@
 # Function Docs Refresh Report
 
-Generated: 2026-06-22T20:49:53+00:00
+Generated: 2026-06-22T20:59:46+00:00
 
 ## Outputs
 
@@ -79,7 +79,8 @@ Lua helper docs that still render as `void` while their source body contains a `
 
 - DataEditorX currently consumes `_functions.txt` through `CodeConfig.AddFunction()`, so the generated bullet text keeps that format.
 - The structured JSON is the better source for a future wiki or richer editor integration.
-- `MySyntaxHighlighter.cs` also hardcodes many function names, so editor highlighting will remain stale until it is changed to read generated data.
+- DataEditorX `MySyntaxHighlighter.cs` receives function names from `CodeConfig.LongTooltipDic`, so highlighting follows the generated `_functions` or `_function_english` file after tooltips are loaded.
+- The old hardcoded highlighter lists remain only as a startup fallback and should eventually be removed once generated function data is loaded before the first highlight pass.
 
 ## Constant Findings
 
