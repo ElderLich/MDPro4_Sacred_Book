@@ -4699,15 +4699,79 @@ def parse_constants(path: Path) -> dict[str, tuple[str, str]]:
     return constants
 
 
-def parse_effect_creator(path: Path) -> set[str]:
-    effects: set[str] = set()
+def parse_effect_creator(path: Path) -> dict[str, object]:
+    active: set[str] = set()
+    commented: set[str] = set()
+    active_by_section: dict[str, set[str]] = {}
+    commented_by_section: dict[str, set[str]] = {}
+    section = "__root__"
+    active_by_section[section] = set()
+    commented_by_section[section] = set()
     if not path.exists():
-        return effects
+        return {
+            "active": active,
+            "commented": commented,
+            "active_by_section": active_by_section,
+            "commented_by_section": commented_by_section,
+        }
     for raw in read_text(path).splitlines():
         stripped = raw.strip()
-        if stripped.startswith("EFFECT_"):
-            effects.add(stripped.split(None, 1)[0])
-    return effects
+        if not stripped:
+            continue
+        if stripped.startswith("!"):
+            section = stripped[1:].strip()
+            active_by_section.setdefault(section, set())
+            commented_by_section.setdefault(section, set())
+            continue
+        is_comment = stripped.startswith("#")
+        payload = stripped[1:].strip() if is_comment else stripped
+        if not payload.startswith("EFFECT_"):
+            continue
+        name = payload.split(None, 1)[0]
+        if is_comment:
+            commented.add(name)
+            commented_by_section.setdefault(section, set()).add(name)
+        else:
+            active.add(name)
+            active_by_section.setdefault(section, set()).add(name)
+    return {
+        "active": active,
+        "commented": commented,
+        "active_by_section": active_by_section,
+        "commented_by_section": commented_by_section,
+    }
+
+
+EFFECT_CREATOR_IGNORED_EFFECT_CODES = {
+    "EFFECT_ACTIVATION_COUNT_LIMIT",
+    "EFFECT_DISABLE_CHAIN_FIELD",
+    "EFFECT_MUST_BE_ATTACKED",
+    "EFFECT_RISE_TO_FULL_HEIGHT",
+    "EFFECT_UNSUMMONABLE_CARD",
+}
+
+EFFECT_CREATOR_INTERNAL_PROPERTIES = {
+    "EFFECT_FLAG_COPY",
+    "EFFECT_FLAG_COUNT_LIMIT",
+    "EFFECT_FLAG_CVAL_CHECK",
+    "EFFECT_FLAG_EFFECT",
+    "EFFECT_FLAG_FIELD_ONLY",
+    "EFFECT_FLAG_FUNC_VALUE",
+    "EFFECT_FLAG_INITIAL",
+}
+
+
+def is_effect_creator_effect_code(name: str) -> bool:
+    return (
+        name.startswith("EFFECT_")
+        and not name.startswith("EFFECT_FLAG")
+        and not name.startswith("EFFECT_TYPE_")
+        and not name.startswith("EFFECT_COUNT_CODE_")
+    )
+
+
+def is_effect_creator_property(name: str) -> bool:
+    return name.startswith("EFFECT_FLAG")
 
 
 def parse_mdpro3_systems(path: Path) -> dict[int, str]:
@@ -4742,7 +4806,18 @@ def analyze_constants(workspace: Path, dataeditorx_data: Path) -> dict[str, obje
     dex_constant = parse_constants(dataeditorx_data / "lua" / "constant.lua")
     local_constant = parse_constants(workspace / "Utilities" / "constant.lua")
     effect_creator = parse_effect_creator(dataeditorx_data / "lua" / "effect_creator_settings.txt")
+    effect_creator_active = effect_creator["active"]
+    effect_creator_commented = effect_creator["commented"]
+    effect_creator_sections = effect_creator["active_by_section"]
     local_effects = {name for name in local_constant if name.startswith("EFFECT_")}
+    local_effect_codes = {name for name in local_effects if is_effect_creator_effect_code(name)}
+    local_effect_properties = {name for name in local_effects if is_effect_creator_property(name)}
+    effect_creator_codes = effect_creator_sections.get("EFFECT_CODES", set())
+    effect_creator_properties = effect_creator_sections.get("EFFECT_PROPERTY", set())
+    ignored_effect_codes = EFFECT_CREATOR_IGNORED_EFFECT_CODES & local_effect_codes
+    ignored_properties = EFFECT_CREATOR_INTERNAL_PROPERTIES & local_effect_properties
+    missing_effect_codes = sorted(local_effect_codes - effect_creator_codes - ignored_effect_codes)
+    missing_properties = sorted(local_effect_properties - effect_creator_properties - ignored_properties)
 
     missing = sorted(set(local_constant) - set(dex_constant))
     removed = sorted(set(dex_constant) - set(local_constant))
@@ -4758,10 +4833,21 @@ def analyze_constants(workspace: Path, dataeditorx_data: Path) -> dict[str, obje
         "missing_in_dataeditorx": missing,
         "removed_from_local": removed,
         "changed_values": changed,
-        "effect_creator_effect_count": len(effect_creator),
+        "effect_creator_effect_count": len(effect_creator_active),
+        "effect_creator_commented_count": len(effect_creator_commented),
+        "effect_creator_effect_code_count": len(effect_creator_codes),
+        "effect_creator_property_count": len(effect_creator_properties),
         "local_effect_constant_count": len(local_effects),
-        "effect_creator_missing_effects": sorted(local_effects - effect_creator),
-        "effect_creator_unknown_effects": sorted(effect_creator - local_effects),
+        "local_effect_code_constant_count": len(local_effect_codes),
+        "local_effect_property_constant_count": len(local_effect_properties),
+        "effect_creator_missing_effects": sorted(set(missing_effect_codes) | set(missing_properties)),
+        "effect_creator_missing_effect_codes": missing_effect_codes,
+        "effect_creator_missing_properties": missing_properties,
+        "effect_creator_ignored_effect_codes": sorted(ignored_effect_codes),
+        "effect_creator_ignored_properties": sorted(ignored_properties),
+        "effect_creator_unknown_effects": sorted(effect_creator_active - set(local_constant)),
+        "effect_creator_unknown_effect_codes": sorted(effect_creator_codes - local_effect_codes),
+        "effect_creator_unknown_properties": sorted(effect_creator_properties - local_effect_properties),
     }
 
 
@@ -4954,9 +5040,18 @@ def write_report(
             f"- Missing in DataEditorX: {len(constants['missing_in_dataeditorx'])}",
             f"- Changed values: {len(constants['changed_values'])}",
             f"- Removed from local: {len(constants['removed_from_local'])}",
-            f"- Effect creator effect names: {constants['effect_creator_effect_count']}",
+            f"- Effect creator active `EFFECT_*` names: {constants['effect_creator_effect_count']}",
+            f"- Effect creator commented `EFFECT_*` names: {constants['effect_creator_commented_count']}",
+            f"- Effect creator effect-code names: {constants['effect_creator_effect_code_count']}",
+            f"- Effect creator property names: {constants['effect_creator_property_count']}",
             f"- Local `EFFECT_*` constants: {constants['local_effect_constant_count']}",
-            f"- `effect_creator_settings.txt` missing local `EFFECT_*`: {len(constants['effect_creator_missing_effects'])}",
+            f"- Local effect-code constants: {constants['local_effect_code_constant_count']}",
+            f"- Local effect-property constants: {constants['local_effect_property_constant_count']}",
+            f"- `effect_creator_settings.txt` missing effect-code constants: {len(constants['effect_creator_missing_effect_codes'])}",
+            f"- `effect_creator_settings.txt` missing effect-property constants: {len(constants['effect_creator_missing_properties'])}",
+            f"- Reserved/internal effect-code constants intentionally ignored: {len(constants['effect_creator_ignored_effect_codes'])}",
+            f"- Internal property constants intentionally ignored: {len(constants['effect_creator_ignored_properties'])}",
+            f"- Unknown active effect creator names: {len(constants['effect_creator_unknown_effects'])}",
             f"- Generated constant docs: {constants.get('generated_constant_count', 0)}",
             "",
             "Constant English status:",

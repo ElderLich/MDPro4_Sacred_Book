@@ -1,6 +1,6 @@
 # Function Docs Refresh Report
 
-Generated: 2026-06-22T05:21:59+00:00
+Generated: 2026-06-22T05:45:36+00:00
 
 ## Outputs
 
@@ -89,9 +89,18 @@ Lua helper docs that still render as `void` while their source body contains a `
 - Missing in DataEditorX: 0
 - Changed values: 0
 - Removed from local: 0
-- Effect creator effect names: 263
+- Effect creator active `EFFECT_*` names: 289
+- Effect creator commented `EFFECT_*` names: 6
+- Effect creator effect-code names: 256
+- Effect creator property names: 33
 - Local `EFFECT_*` constants: 320
-- `effect_creator_settings.txt` missing local `EFFECT_*`: 61
+- Local effect-code constants: 261
+- Local effect-property constants: 40
+- `effect_creator_settings.txt` missing effect-code constants: 0
+- `effect_creator_settings.txt` missing effect-property constants: 0
+- Reserved/internal effect-code constants intentionally ignored: 5
+- Internal property constants intentionally ignored: 7
+- Unknown active effect creator names: 0
 - Generated constant docs: 858
 
 Constant English status:

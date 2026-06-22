@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-06-22T05:21:59+00:00",
+    "generated_at": "2026-06-22T05:45:36+00:00",
     "workspace": "D:\\Programs\\GitHub\\MDPro3_Sacred_Book",
     "dataeditorx_data": "D:\\Programs\\GitHub\\DataEditorX\\DataEditorX\\data",
     "mdpro3_locales": "D:\\Programs\\GitHub\\MDPro3_Data\\Data\\locales",
@@ -2331,7 +2331,7 @@
       "comment_en": "Used as Fusion/Synchro/Xyz Material, Ritual Material, or as a Tribute for a Tribute Summon",
       "english_status": "reviewed_english",
       "dataeditorx_value": "0x8",
-      "dataeditorx_comment": "Used as Fusion/Synchro/Xyz Material or for Ritual/Advanced Summon",
+      "dataeditorx_comment": "Used as Fusion/Synchro/Xyz Material, Ritual Material, or as a Tribute for a Tribute Summon",
       "old_value": "",
       "old_comment": "",
       "source_files": [
@@ -3051,7 +3051,7 @@
       "comment_en": "Tribute Summon",
       "english_status": "reviewed_english",
       "dataeditorx_value": "0x11000000",
-      "dataeditorx_comment": "Advanced Summon",
+      "dataeditorx_comment": "Tribute Summon",
       "old_value": "",
       "old_comment": "",
       "source_files": [
@@ -8691,7 +8691,7 @@
       "comment_en": "Cannot be Tributed for a Tribute Summon",
       "english_status": "reviewed_english",
       "dataeditorx_value": "43",
-      "dataeditorx_comment": "Cannot be used as Tribute for Advanced Summon",
+      "dataeditorx_comment": "Cannot be Tributed for a Tribute Summon",
       "old_value": "",
       "old_comment": "",
       "source_files": [
@@ -8715,7 +8715,7 @@
       "comment_en": "Cannot be Tributed except for a Tribute Summon",
       "english_status": "reviewed_english",
       "dataeditorx_value": "44",
-      "dataeditorx_comment": "Cannot be used as Tribute for non-Advanced Summon",
+      "dataeditorx_comment": "Cannot be Tributed except for a Tribute Summon",
       "old_value": "",
       "old_comment": "",
       "source_files": [
@@ -14883,7 +14883,7 @@
       "comment_en": "When used as Synchro/Xyz/Link Material, used as Ritual/Fusion Material, or Tributed for a Tribute Summon",
       "english_status": "reviewed_english",
       "dataeditorx_value": "1108",
-      "dataeditorx_comment": "When used as Synchro/Xyz/Link Material, Tributed for Advanced Summon, or used as Ritual/Fusion Summon material",
+      "dataeditorx_comment": "When used as Synchro/Xyz/Link Material, used as Ritual/Fusion Material, or Tributed for a Tribute Summon",
       "old_value": "",
       "old_comment": "",
       "source_files": [
@@ -14907,7 +14907,7 @@
       "comment_en": "When about to be used as Synchro/Xyz/Link Material or Tributed for a Tribute Summon",
       "english_status": "reviewed_english",
       "dataeditorx_value": "1109",
-      "dataeditorx_comment": "When about to be used as Synchro/Xyz/Link Material or Tributed for Advanced Summon",
+      "dataeditorx_comment": "When about to be used as Synchro/Xyz/Link Material or Tributed for a Tribute Summon",
       "old_value": "",
       "old_comment": "",
       "source_files": [
@@ -18219,7 +18219,7 @@
       "comment_en": "Select a monster to Tribute for a Tribute Summon",
       "english_status": "reviewed_english",
       "dataeditorx_value": "531",
-      "dataeditorx_comment": "Select a monster to Tribute for an Advanced Summon",
+      "dataeditorx_comment": "Select a monster to Tribute for a Tribute Summon",
       "old_value": "",
       "old_comment": "",
       "source_files": [
