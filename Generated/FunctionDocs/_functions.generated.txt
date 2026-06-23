@@ -4703,7 +4703,9 @@ Returns:
 Source: D:\Programs\GitHub\ygopro-core\libduel.cpp:4856
 
 ●void Duel.SetFusionMaterial(Group g)
-把核心当前的融合素材集合替换为g中的卡。
+用g中的卡替换核心当前保存的融合素材组。
+融合素材手续的操作函数在选出合法素材组后使用它，使之后的融合召唤操作可以读取所选素材。
+本函数只记录选择；不会移动素材，也不返回值。
 Parameters:
   g: Group
 Source: D:\Programs\GitHub\ygopro-core\libduel.cpp:4990
@@ -7962,14 +7964,15 @@ Returns:
 Source: Utilities/procedure.lua:1687
 
 ●Effect Auxiliary.AddFusionEffectProc(Card c, function filter, int mat_location, [function|nil mat_filter], [function|nil mat_operation], [table|nil params])
-Auxiliary.AddFusionEffectProcUltimate的便捷包装；用常用参数构造params表，并返回创建的融合效果。
+Auxiliary.AddFusionEffectProcUltimate的便捷包装。
+它会根据常用的融合召唤参数构造params表：额外卡组过滤、素材位置、素材过滤、素材移动操作以及可选的高级params。
 Parameters:
   c: Card
-  filter: function
-  mat_location: int
-  mat_filter: function|nil optional
-  mat_operation: function|nil optional
-  params: table|nil optional
+  filter: function - Fusion Monster filter for the Extra Deck candidate.
+  mat_location: int - Base material locations, commonly LOCATION_HAND+LOCATION_MZONE.
+  mat_filter: function|nil optional - Optional candidate material filter.
+  mat_operation: function|nil optional - Optional operation that moves the selected material group.
+  params: table|nil optional - Optional advanced params forwarded to AddFusionEffectProcUltimate.
 Returns:
   Effect - The created Fusion effect.
 Source: Utilities/procedure.lua:1677
@@ -7977,6 +7980,7 @@ Source: Utilities/procedure.lua:1677
 ●Effect Auxiliary.AddFusionEffectProcUltimate(Card c, table params)
 创建由params描述的可配置融合召唤发动效果。
 缺省的素材位置、素材筛选、素材操作、特殊召唤nocheck和Category字段会填入MDPro3默认值。除非params.reg为false，否则该效果会作为发动效果登记给c。
+生成的效果会检查额外卡组中的融合怪兽、取得并过滤融合素材、支持Chain Material后备流程、选择素材、按配置操作移动素材、以SUMMON_TYPE_FUSION特殊召唤，并完成正规手续。
 Parameters:
   c: Card
   params: table

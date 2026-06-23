@@ -8,16 +8,17 @@ Auxiliary.AddFusionEffectProc(Card c, function filter, int mat_location, [functi
 
 ## Description
 
-Convenience wrapper for Auxiliary.AddFusionEffectProcUltimate. It builds a params table from the common arguments and returns the created Fusion effect.
+Convenience wrapper for Auxiliary.AddFusionEffectProcUltimate.
+It builds a params table from the common Fusion Summon arguments: Extra Deck filter, material locations, material filter, material movement operation, and optional advanced params.
 
 ## Parameters
 
 - `c` `Card`
-- `filter` `function`
-- `mat_location` `int`
-- `mat_filter` `function|nil` optional
-- `mat_operation` `function|nil` optional
-- `params` `table|nil` optional
+- `filter` `function` - Fusion Monster filter for the Extra Deck candidate.
+- `mat_location` `int` - Base material locations, commonly LOCATION_HAND+LOCATION_MZONE.
+- `mat_filter` `function|nil` optional - Optional candidate material filter.
+- `mat_operation` `function|nil` optional - Optional operation that moves the selected material group.
+- `params` `table|nil` optional - Optional advanced params forwarded to AddFusionEffectProcUltimate.
 
 ## Returns
 
