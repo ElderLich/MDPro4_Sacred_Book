@@ -9,7 +9,8 @@ Effect.SetCountLimit(Effect e, int count, [int code]) -> void
 ## Description
 
 Sets how many times e can be used before its count limit is spent.
-If count is 0, the core treats it as 1. Effects that share a nonzero code share the same usage count. EFFECT_COUNT_CODE_CHAIN is stored together with EFFECT_COUNT_CODE_SINGLE.
+If count is 0, the core treats it as 1. Effects that share a nonzero code share the same usage count for the checked player.
+EFFECT_COUNT_CODE_OATH uses oath-style rollback on negated activations and failed procedure attempts; EFFECT_COUNT_CODE_DUEL uses the duel-long count map; EFFECT_COUNT_CODE_SINGLE shares usage by handler instance; EFFECT_COUNT_CODE_CHAIN uses the chain count map.
 
 ## How To Use It
 
@@ -32,7 +33,7 @@ Effects with the same nonzero code share the same count. Special flags such as `
 
 - `e` `Effect` - Effect whose count limit is set.
 - `count` `int` - Maximum uses before the count is spent; 0 is normalized to 1 by the core.
-- `code` `int` optional - Shared count-limit code. Effects with the same nonzero code share usage.
+- `code` `int` optional - Shared count-limit code. Effects with the same nonzero code share usage for the checked player; combine a card id with EFFECT_COUNT_CODE_OATH, EFFECT_COUNT_CODE_DUEL, or EFFECT_COUNT_CODE_SINGLE when that special behavior is needed. Passing exactly EFFECT_COUNT_CODE_CHAIN stores it together with EFFECT_COUNT_CODE_SINGLE in this core.
 
 ## Source
 

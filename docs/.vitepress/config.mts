@@ -29,6 +29,7 @@ export default defineConfig({
             { text: 'Moving Cards', link: '/learn/moving-cards' },
             { text: 'Continuous Effects', link: '/learn/continuous-effects' },
             { text: 'Flag Effects', link: '/learn/flag-effects' },
+            { text: 'Count Limits', link: '/learn/count-limits' },
             { text: 'Affecting Cards', link: '/learn/affecting-cards' },
             { text: 'Archetypes and Set Codes', link: '/learn/archetypes-and-setcodes' },
           ],

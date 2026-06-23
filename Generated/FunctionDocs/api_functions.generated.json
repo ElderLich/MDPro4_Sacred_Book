@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-06-22T22:19:41+00:00",
+    "generated_at": "2026-06-23T05:09:48+00:00",
     "workspace": "D:\\Programs\\GitHub\\MDPro3_Sacred_Book",
     "dataeditorx_data": "D:\\Programs\\GitHub\\DataEditorX\\DataEditorX\\data",
     "mdpro3_locales": "D:\\Programs\\GitHub\\MDPro3_Data\\Data\\locales",
@@ -27865,26 +27865,31 @@
           "name": "e",
           "type": "Effect",
           "optional": false,
-          "description": ""
+          "description": "Effect whose remaining count is checked.",
+          "description_zh": "要检查剩余次数的效果。"
         },
         {
           "name": "p",
           "type": "int",
           "optional": false,
-          "description": ""
+          "description": "Player whose local or shared count map is checked.",
+          "description_zh": "要检查本地或共享次数表的玩家。"
         }
       ],
       "returns": [
         {
           "type": "bool",
-          "description": ""
+          "description": "True if e has no exhausted count limit for p; false when the count is already spent.",
+          "description_zh": "如果e对p没有耗尽次数限制则返回true；次数已经用尽时返回false。"
         }
       ],
       "description_zh": [
-        "检查效果e对玩家p是否仍有可用次数。"
+        "检查效果e对玩家p是否仍有可用次数。",
+        "通常的发动检查已经会执行核心次数限制检查；此函数主要用于脚本手动检查另一个Effect对象。"
       ],
       "description_en": [
-        "Checks whether e's count limit is still available for player p."
+        "Checks whether e's count limit is still available for player p.",
+        "Normal activation checks already use the core count-limit check; this helper is mainly for scripts that manually inspect another Effect object."
       ],
       "english_status": "translated_exact",
       "source_files": [
@@ -27902,6 +27907,7 @@
       "aliases": [],
       "tags": [
         "core-binding",
+        "core-doc-override",
         "manual-zh-doc"
       ],
       "core_binding": true,
@@ -29756,29 +29762,34 @@
           "name": "e",
           "type": "Effect",
           "optional": false,
-          "description": "Effect whose count limit is set."
+          "description": "Effect whose count limit is set.",
+          "description_zh": "要设置次数限制的效果。"
         },
         {
           "name": "count",
           "type": "int",
           "optional": false,
-          "description": "Maximum uses before the count is spent; 0 is normalized to 1 by the core."
+          "description": "Maximum uses before the count is spent; 0 is normalized to 1 by the core.",
+          "description_zh": "次数耗尽前的最大使用次数；核心会将0按1处理。"
         },
         {
           "name": "code",
           "type": "int",
           "optional": true,
-          "description": "Shared count-limit code. Effects with the same nonzero code share usage."
+          "description": "Shared count-limit code. Effects with the same nonzero code share usage for the checked player; combine a card id with EFFECT_COUNT_CODE_OATH, EFFECT_COUNT_CODE_DUEL, or EFFECT_COUNT_CODE_SINGLE when that special behavior is needed. Passing exactly EFFECT_COUNT_CODE_CHAIN stores it together with EFFECT_COUNT_CODE_SINGLE in this core.",
+          "description_zh": "共享次数限制代码。同一个非0代码的效果会对被检查的玩家共用使用次数；需要特殊行为时可将卡号与EFFECT_COUNT_CODE_OATH、EFFECT_COUNT_CODE_DUEL或EFFECT_COUNT_CODE_SINGLE组合。传入的代码正好是EFFECT_COUNT_CODE_CHAIN时，此核心会同时保存EFFECT_COUNT_CODE_SINGLE。"
         }
       ],
       "returns": [],
       "description_zh": [
         "设置效果e在次数限制耗尽前可以使用的次数。",
-        "count为0时核心按1处理。共享同一个非0 code的效果共用使用次数；EFFECT_COUNT_CODE_CHAIN会与EFFECT_COUNT_CODE_SINGLE一起保存。"
+        "count为0时核心按1处理。共享同一个非0 code的效果会对被检查的玩家共用使用次数。",
+        "EFFECT_COUNT_CODE_OATH在发动被无效或手续失败时使用誓约式次数回退；EFFECT_COUNT_CODE_DUEL使用决斗内次数表；EFFECT_COUNT_CODE_SINGLE按处理者实例共享次数；EFFECT_COUNT_CODE_CHAIN使用连锁次数表。"
       ],
       "description_en": [
         "Sets how many times e can be used before its count limit is spent.",
-        "If count is 0, the core treats it as 1. Effects that share a nonzero code share the same usage count. EFFECT_COUNT_CODE_CHAIN is stored together with EFFECT_COUNT_CODE_SINGLE."
+        "If count is 0, the core treats it as 1. Effects that share a nonzero code share the same usage count for the checked player.",
+        "EFFECT_COUNT_CODE_OATH uses oath-style rollback on negated activations and failed procedure attempts; EFFECT_COUNT_CODE_DUEL uses the duel-long count map; EFFECT_COUNT_CODE_SINGLE shares usage by handler instance; EFFECT_COUNT_CODE_CHAIN uses the chain count map."
       ],
       "english_status": "translated_exact",
       "source_files": [
@@ -30452,25 +30463,29 @@
           "name": "e",
           "type": "Effect",
           "optional": false,
-          "description": ""
+          "description": "Effect whose count is manually consumed.",
+          "description_zh": "要手动消耗次数的效果。"
         },
         {
           "name": "p",
           "type": "int",
           "optional": false,
-          "description": ""
+          "description": "Player whose local or shared count is consumed.",
+          "description_zh": "要消耗本地或共享次数的玩家。"
         },
         {
           "name": "count",
           "type": "int",
           "optional": true,
-          "description": "default: 1"
+          "description": "Number of uses to consume; default: 1.",
+          "description_zh": "要消耗的使用次数；默认值为1。"
         },
         {
           "name": "oath_only",
           "type": "bool",
           "optional": true,
-          "description": "default: false"
+          "description": "If true, consume only when e's count code includes EFFECT_COUNT_CODE_OATH; default: false.",
+          "description_zh": "若为true，则仅在e的次数代码包含EFFECT_COUNT_CODE_OATH时消耗次数；默认值为false。"
         }
       ],
       "returns": [],

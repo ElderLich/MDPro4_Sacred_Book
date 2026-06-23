@@ -33,3 +33,10 @@ the effect.
 Use [Flag effects](/learn/flag-effects) when a script needs temporary memory,
 such as whether a player has already used one option this turn or whether a
 specific card was marked by an earlier operation.
+
+## Count Limits
+
+Use [count limits](/learn/count-limits) for normal once-per-turn and shared-use
+limits. `SetCountLimit(1,id)` spends a use of the effect's shared count code,
+while custom activity counters handle restrictions based on Summons, attacks,
+or chains that already happened this turn.

@@ -70,12 +70,14 @@ class ParamDoc:
     type: str = "any"
     optional: bool = False
     description: str = ""
+    description_zh: str = ""
 
 
 @dataclass
 class ReturnDoc:
     type: str = "nil"
     description: str = ""
+    description_zh: str = ""
 
 
 @dataclass
@@ -477,6 +479,7 @@ def _override_params(value: object) -> list[ParamDoc]:
                 type=str(raw.get("type", "any")),
                 optional=bool(raw.get("optional", False)),
                 description=str(raw.get("description", "")),
+                description_zh=str(raw.get("description_zh", "")),
             )
         )
     return params
@@ -495,6 +498,7 @@ def _override_returns(value: object) -> list[ReturnDoc]:
             ReturnDoc(
                 type=str(raw.get("type", "nil")),
                 description=str(raw.get("description", "")),
+                description_zh=str(raw.get("description_zh", "")),
             )
         )
     return returns
@@ -567,13 +571,13 @@ def translate_function_annotations(docs: Iterable[FunctionDoc]) -> None:
 
 def copy_params(params: list[ParamDoc]) -> list[ParamDoc]:
     return [
-        ParamDoc(param.name, param.type, param.optional, param.description)
+        ParamDoc(param.name, param.type, param.optional, param.description, param.description_zh)
         for param in params
     ]
 
 
 def copy_returns(returns: list[ReturnDoc]) -> list[ReturnDoc]:
-    return [ReturnDoc(ret.type, ret.description) for ret in returns]
+    return [ReturnDoc(ret.type, ret.description, ret.description_zh) for ret in returns]
 
 
 def apply_core_doc_overrides(docs: dict[str, FunctionDoc]) -> None:
@@ -1462,7 +1466,8 @@ def write_compat_file(path: Path, docs: Iterable[FunctionDoc], language: str) ->
         if doc.params:
             lines.append("Parameters:")
             for param in doc.params:
-                suffix = f" - {param.description}" if param.description else ""
+                param_description = param.description_zh if language == "zh" and param.description_zh else param.description
+                suffix = f" - {param_description}" if param_description else ""
                 optional = " optional" if param.optional else ""
                 lines.append(f"  {param.name}: {clean_type(param.type)}{optional}{suffix}")
         if doc.returns:
@@ -1470,7 +1475,8 @@ def write_compat_file(path: Path, docs: Iterable[FunctionDoc], language: str) ->
             if useful_returns:
                 lines.append("Returns:")
                 for ret in useful_returns:
-                    suffix = f" - {ret.description}" if ret.description else ""
+                    return_description = ret.description_zh if language == "zh" and ret.description_zh else ret.description
+                    suffix = f" - {return_description}" if return_description else ""
                     lines.append(f"  {clean_type(ret.type)}{suffix}")
         if doc.source_files:
             source = doc.source_files[0]
@@ -2713,9 +2719,19 @@ def write_report(
 
 
 def write_json(path: Path, docs: list[FunctionDoc], metadata: dict[str, object]) -> None:
+    def doc_payload(doc: FunctionDoc) -> dict[str, object]:
+        payload = asdict(doc)
+        for param in payload["params"]:
+            if not param.get("description_zh"):
+                param.pop("description_zh", None)
+        for ret in payload["returns"]:
+            if not ret.get("description_zh"):
+                ret.pop("description_zh", None)
+        return payload
+
     payload = {
         "metadata": metadata,
-        "functions": [asdict(doc) for doc in docs],
+        "functions": [doc_payload(doc) for doc in docs],
     }
     write_text(path, json.dumps(payload, ensure_ascii=False, indent=2) + "\n")
 

@@ -13,10 +13,10 @@ count defaults to 1. If oath_only is true, the count is consumed only when e's c
 
 ## Parameters
 
-- `e` `Effect`
-- `p` `int`
-- `count` `int` optional - default: 1
-- `oath_only` `bool` optional - default: false
+- `e` `Effect` - Effect whose count is manually consumed.
+- `p` `int` - Player whose local or shared count is consumed.
+- `count` `int` optional - Number of uses to consume; default: 1.
+- `oath_only` `bool` optional - If true, consume only when e's count code includes EFFECT_COUNT_CODE_OATH; default: false.
 
 ## Source
 
