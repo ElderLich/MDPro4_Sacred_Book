@@ -10,6 +10,7 @@ Duel.SpecialSummon(Card|Group targets, int sumtype, int sumplayer, int target_pl
 
 Special Summons targets to target_player's field in position pos and returns the number of cards successfully Summoned.
 sumplayer is the player performing the Summon and sumtype records the Summon type. nocheck skips Summoning-condition checks; nolimit skips revive-limit checks.
+For revive-limit monsters, a successful Duel.SpecialSummon does not automatically mark the card as properly Summoned. Call Card.CompleteProcedure only when this resolving effect is intended to be that card's proper Summon method.
 
 ## How To Use It
 
@@ -39,8 +40,8 @@ Use `nocheck=true` only when the effect intentionally ignores the monster's usua
 - `sumtype` `int` - Summon type value recorded for the Summon.
 - `sumplayer` `int` - Player treated as performing the Special Summon.
 - `target_player` `int` - Player whose field receives the Summoned cards.
-- `nocheck` `bool` - If true, skips Summoning-condition checks.
-- `nolimit` `bool` - If true, skips revive-limit checks.
+- `nocheck` `bool` - If true, skips Summoning-condition checks, including EFFECT_SPSUMMON_CONDITION-style restrictions.
+- `nolimit` `bool` - If true, skips revive-limit and proper-Summon completion checks.
 - `pos` `int` - POS_* position mask for the Summon.
 - `zone` `int` optional - Allowed Monster Zone bitmask; default: 0xff.
 

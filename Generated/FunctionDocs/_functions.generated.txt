@@ -212,8 +212,10 @@ Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3561
 
 ●void Card.CompleteProcedure(Card c)
 把c标记为已经完成正规召唤手续。
+当效果处理成功执行了带苏生限制怪兽的正规召唤时使用，例如效果处理中的仪式、融合、同调、超量、连接或特殊召唤怪兽自身的正规召唤。
+不要把普通苏生效果标记为正规召唤。由EFFECT_SPSUMMON_PROC登记的规则召唤手续成功后会由核心完成该状态。
 Parameters:
-  c: Card
+  c: Card - 要标记正规召唤手续已完成的卡。
 Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3569
 
 ●int Card.CopyEffect(Card c, int code, int reset, [int count])
@@ -261,10 +263,11 @@ Parameters:
 Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3511
 
 ●void Card.EnableReviveLimit(Card c)
-为c添加苏生限制
-##实际上是不可复制、不会被无效的EFFECT_UNSUMMONABLE_CARD和EFFECT_REVIVE_LIMIT效果
+给c设置苏生限制，使普通特殊召唤效果在其未正规召唤前不能从公开区域把它特殊召唤回来。
+核心会在c上登记EFFECT_REVIVE_LIMIT效果。应与该卡的正规召唤手续配合使用，或在效果成功执行正规召唤后调用CompleteProcedure。
+本地核心在该卡移动到手牌或卡组时会清除正规召唤手续已完成状态。
 Parameters:
-  c: Card
+  c: Card - 需要先正规召唤，之后普通苏生效果才能特殊召唤的卡。
 Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3568
 
 ●Effect|nil Card.GetActivateEffect(Card c)
@@ -1500,14 +1503,15 @@ Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3641
 
 ●bool Card.IsCanBeSpecialSummoned(Card c, Effect e, int sumtype, int sumplayer, bool nocheck, bool nolimit, [int sumpos], [int toplayer], [int zone])
 检查c能否通过效果e，以给定的召唤类型、召唤玩家、表示形式、目标玩家和可选区域进行特殊召唤。
-nocheck为true时跳过召唤条件检查；nolimit为true时跳过苏生限制或正规召唤限制检查。
+这里的nocheck、nolimit、表示形式、目标玩家和区域限制应与之后的Duel.SpecialSummon调用保持一致。
+nocheck为true时跳过召唤条件检查；nolimit为true时跳过苏生限制或正规召唤限制检查。除非卡片文本和本地脚本模式明确需要绕过这些检查，否则两者都应保持false。
 Parameters:
   c: Card - Card being checked.
   e: Effect - Effect that would perform the Special Summon.
   sumtype: int - Summon type value recorded for the Special Summon.
   sumplayer: int - Player treated as performing the Special Summon.
-  nocheck: bool - If true, skips c's Summoning-condition check.
-  nolimit: bool - If true, skips c's revive-limit or proper-Summon limit check.
+  nocheck: bool - 为true时跳过c的召唤条件检查，包括类似EFFECT_SPSUMMON_CONDITION的限制。
+  nolimit: bool - 为true时跳过c的苏生限制或正规召唤手续完成检查。
   sumpos: int optional - Summon position mask checked by the core; default: POS_FACEUP.
   toplayer: int optional - Player whose field c would be Summoned to; default: sumplayer.
   zone: int optional - Allowed Monster Zone bitmask; default: 0xff.
@@ -2264,21 +2268,22 @@ Returns:
 Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3393
 
 ●bool Card.IsSpecialSummonable(Card c, [int sum_type])
-检查c能否由当前原因玩家以sum_type特殊召唤；sum_type默认0。
+检查c当前能否由当前原因玩家以sum_type特殊召唤；sum_type默认0。
+这是较宽泛的核心检查。用于效果处理或发动筛选时，通常优先使用Card.IsCanBeSpecialSummoned，以便效果、目标玩家、表示形式、nocheck、nolimit和区域与之后的Duel.SpecialSummon一致。
 Parameters:
-  c: Card
-  sum_type: int optional
+  c: Card - 要检查的卡。
+  sum_type: int optional - 要检查的召唤类型值；默认值：0。
 Returns:
-  bool
+  bool - 若核心当前认为c在该召唤类型下可以特殊召唤则为true。
 Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3575
 
 ●bool Card.IsSpecialSummonableCard(Card c)
-检查c是否能以正规方法特殊召唤。
-c必须有可特殊召唤的方式。
+检查c能否通过正规手续特殊召唤。
+c必须有可用的特殊召唤手续。这个检查适合用于寻找已经满足苏生限制、并且仍有合法手续型特殊召唤路径的墓地怪兽。
 Parameters:
-  c: Card
+  c: Card - 要检查的卡。
 Returns:
-  bool
+  bool - 若c在当前局面有可用的正规特殊召唤手续则为true。
 Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3573
 
 ●bool Card.IsSpecialSummonSetCard(Card c, ... int)
@@ -4834,13 +4839,14 @@ Source: D:\Programs\GitHub\ygopro-core\libduel.cpp:4893
 ●int Duel.SpecialSummon(Card|Group targets, int sumtype, int sumplayer, int target_player, bool nocheck, bool nolimit, int pos, [int zone])
 以pos表示形式把targets特殊召唤到target_player场上，并返回成功特殊召唤的数量。
 sumplayer是执行召唤的玩家，sumtype记录召唤类型；nocheck跳过召唤条件检查，nolimit跳过苏生限制检查。
+对于有苏生限制的怪兽，Duel.SpecialSummon成功本身不会自动把该卡标记为正规召唤完成。只有当这个效果处理本身就是该卡的正规召唤方式时，才调用Card.CompleteProcedure。
 Parameters:
   targets: Card|Group - Card or Group to Special Summon.
   sumtype: int - Summon type value recorded for the Summon.
   sumplayer: int - Player treated as performing the Special Summon.
   target_player: int - Player whose field receives the Summoned cards.
-  nocheck: bool - If true, skips Summoning-condition checks.
-  nolimit: bool - If true, skips revive-limit checks.
+  nocheck: bool - 为true时跳过召唤条件检查，包括类似EFFECT_SPSUMMON_CONDITION的限制。
+  nolimit: bool - 为true时跳过苏生限制和正规召唤手续完成检查。
   pos: int - POS_* position mask for the Summon.
   zone: int optional - Allowed Monster Zone bitmask; default: 0xff.
 Returns:
@@ -4855,10 +4861,11 @@ Source: D:\Programs\GitHub\ygopro-core\libduel.cpp:4875
 
 ●void Duel.SpecialSummonRule(int player, Card c, [int sumtype])
 为player按规则特殊召唤c，可带召唤类型sumtype；核心处于效果伤害步骤处理时不会执行。
+多数普通卡片脚本会登记EFFECT_SPSUMMON_PROC，而不是直接调用此函数。除非本地脚本模式明确需要这个核心入口，否则优先使用既有手续辅助函数。
 Parameters:
-  player: int
-  c: Card
-  sumtype: int optional - default: 0
+  player: int - 执行规则特殊召唤的玩家。
+  c: Card - 要按规则特殊召唤的卡。
+  sumtype: int optional - 为这次规则召唤记录的召唤类型值；默认值：0。
 Source: D:\Programs\GitHub\ygopro-core\libduel.cpp:4866
 
 ●bool Duel.SpecialSummonStep(Card c, int sumtype, int sumplayer, int target_player, bool nocheck, bool nolimit, int pos, [int zone])
@@ -5403,11 +5410,12 @@ Parameters:
 Source: D:\Programs\GitHub\ygopro-core\libeffect.cpp:626
 
 ●void Effect.SetTargetRange(Effect e, int s_range, int o_range)
-设置效果e的Target Range属性。
+设置效果e的Target Range字段，并清除EFFECT_FLAG_ABSOLUTE_TARGET。
+对多数场地效果来说，s_range是处理者控制者一侧受影响的位置，o_range是对方一侧受影响的位置。带有EFFECT_FLAG_SPSUM_PARAM时，这两个字段改为保存特殊召唤的表示形式和召唤到哪一方场上。
 Parameters:
-  e: Effect
-  s_range: int
-  o_range: int
+  e: Effect - 要设置Target Range字段的效果。
+  s_range: int - 通常表示处理者控制者一侧受影响的位置。带EFFECT_FLAG_SPSUM_PARAM时表示允许的特殊召唤表示形式。
+  o_range: int - 通常表示对方一侧受影响的位置。带EFFECT_FLAG_SPSUM_PARAM时表示特殊召唤到哪一方场上的玩家值。
 Source: D:\Programs\GitHub\ygopro-core\libeffect.cpp:615
 
 ●void Effect.SetType(Effect e, int type)

@@ -211,8 +211,10 @@ Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3561
 
 ●void Card.CompleteProcedure(Card c)
 Marks c as having completed its proper Summon procedure.
+Use this after a resolving effect successfully performs a proper Summon for a revive-limit monster, such as an effect-driven Ritual, Fusion, Synchro, Xyz, Link, or Special Summon-only procedure.
+Do not call this for ordinary revive effects. Normal rule procedures registered with EFFECT_SPSUMMON_PROC are completed by the core after the procedure succeeds.
 Parameters:
-  c: Card
+  c: Card - Card whose proper Summon status is being completed.
 Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3569
 
 ●int Card.CopyEffect(Card c, int code, int reset, [int count])
@@ -260,9 +262,11 @@ Parameters:
 Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3511
 
 ●void Card.EnableReviveLimit(Card c)
-Marks c as needing to be properly Summoned before it can be Special Summoned from public locations.
+Marks c as needing to be properly Summoned before ordinary Special Summon effects can bring it back from public locations.
+The core registers an EFFECT_REVIVE_LIMIT effect on c. Pair this with the card's proper Summon procedure or with an effect that calls CompleteProcedure after a successful proper Summon.
+Local core handling clears the completed-procedure status when the card moves to the hand or Deck.
 Parameters:
-  c: Card
+  c: Card - Card that should require a proper Summon before ordinary revive effects can Special Summon it.
 Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3568
 
 ●Effect|nil Card.GetActivateEffect(Card c)
@@ -1487,14 +1491,15 @@ Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3641
 
 ●bool Card.IsCanBeSpecialSummoned(Card c, Effect e, int sumtype, int sumplayer, bool nocheck, bool nolimit, [int sumpos], [int toplayer], [int zone])
 Checks whether c can be Special Summoned by effect e using sumtype, sumplayer, sumpos, target player, and optional zone.
-If nocheck is true, c's Summoning condition is skipped. If nolimit is true, c's revive limit or proper-Summon limit is skipped.
+Use the same nocheck, nolimit, position, target player, and zone values that the later Duel.SpecialSummon call will use.
+If nocheck is true, c's Summoning condition is skipped. If nolimit is true, c's revive limit or proper-Summon limit is skipped. Leave both false unless the card text and local pattern justify bypassing those checks.
 Parameters:
   c: Card - Card being checked.
   e: Effect - Effect that would perform the Special Summon.
   sumtype: int - Summon type value recorded for the Special Summon.
   sumplayer: int - Player treated as performing the Special Summon.
-  nocheck: bool - If true, skips c's Summoning-condition check.
-  nolimit: bool - If true, skips c's revive-limit or proper-Summon limit check.
+  nocheck: bool - If true, skips c's Summoning-condition check, including EFFECT_SPSUMMON_CONDITION-style restrictions.
+  nolimit: bool - If true, skips c's revive-limit or proper-Summon completion check.
   sumpos: int optional - Summon position mask checked by the core; default: POS_FACEUP.
   toplayer: int optional - Player whose field c would be Summoned to; default: sumplayer.
   zone: int optional - Allowed Monster Zone bitmask; default: 0xff.
@@ -2247,21 +2252,22 @@ Returns:
 Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3393
 
 ●bool Card.IsSpecialSummonable(Card c, [int sum_type])
-Checks whether c can be Special Summoned by player under sum_type, defaulting to 0 and using the current reason player.
+Checks whether c can currently be Special Summoned by the current reason player under sum_type, defaulting to 0.
+This is a broad core check. For effect resolution and activation filters, prefer Card.IsCanBeSpecialSummoned so the effect, target player, position, nocheck, nolimit, and zone match the later Duel.SpecialSummon call.
 Parameters:
-  c: Card
-  sum_type: int optional
+  c: Card - Card being checked.
+  sum_type: int optional - Summon type value to test; default: 0.
 Returns:
-  bool
+  bool - True if the core currently considers c Special Summonable under that summon type.
 Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3575
 
 ●bool Card.IsSpecialSummonableCard(Card c)
 Checks whether c can be Special Summoned by a proper procedure.
-c must have an available Special Summon procedure.
+c must have an available Special Summon procedure. This is useful for cards that look for monsters in the GY that already satisfy their revive-limit requirements and still have a legal procedure-style Special Summon path.
 Parameters:
-  c: Card
+  c: Card - Card being checked.
 Returns:
-  bool
+  bool - True if c has an available proper Special Summon procedure in the current game state.
 Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3573
 
 ●bool Card.IsSpecialSummonSetCard(Card c, ... int)
@@ -4798,13 +4804,14 @@ Source: D:\Programs\GitHub\ygopro-core\libduel.cpp:4893
 ●int Duel.SpecialSummon(Card|Group targets, int sumtype, int sumplayer, int target_player, bool nocheck, bool nolimit, int pos, [int zone])
 Special Summons targets to target_player's field in position pos and returns the number of cards successfully Summoned.
 sumplayer is the player performing the Summon and sumtype records the Summon type. nocheck skips Summoning-condition checks; nolimit skips revive-limit checks.
+For revive-limit monsters, a successful Duel.SpecialSummon does not automatically mark the card as properly Summoned. Call Card.CompleteProcedure only when this resolving effect is intended to be that card's proper Summon method.
 Parameters:
   targets: Card|Group - Card or Group to Special Summon.
   sumtype: int - Summon type value recorded for the Summon.
   sumplayer: int - Player treated as performing the Special Summon.
   target_player: int - Player whose field receives the Summoned cards.
-  nocheck: bool - If true, skips Summoning-condition checks.
-  nolimit: bool - If true, skips revive-limit checks.
+  nocheck: bool - If true, skips Summoning-condition checks, including EFFECT_SPSUMMON_CONDITION-style restrictions.
+  nolimit: bool - If true, skips revive-limit and proper-Summon completion checks.
   pos: int - POS_* position mask for the Summon.
   zone: int optional - Allowed Monster Zone bitmask; default: 0xff.
 Returns:
@@ -4819,10 +4826,11 @@ Source: D:\Programs\GitHub\ygopro-core\libduel.cpp:4875
 
 ●void Duel.SpecialSummonRule(int player, Card c, [int sumtype])
 Performs a rule Special Summon of c for player with optional summon type sumtype, unless the core is in effect damage step processing.
+Most ordinary card scripts register an EFFECT_SPSUMMON_PROC instead of calling this directly. Prefer the established procedure helpers unless a local script pattern specifically needs this core entry point.
 Parameters:
-  player: int
-  c: Card
-  sumtype: int optional - default: 0
+  player: int - Player performing the rule Special Summon.
+  c: Card - Card to Special Summon by rule.
+  sumtype: int optional - Summon type value recorded for the rule Summon; default: 0.
 Source: D:\Programs\GitHub\ygopro-core\libduel.cpp:4866
 
 ●bool Duel.SpecialSummonStep(Card c, int sumtype, int sumplayer, int target_player, bool nocheck, bool nolimit, int pos, [int zone])
@@ -5368,9 +5376,9 @@ Source: D:\Programs\GitHub\ygopro-core\libeffect.cpp:626
 Sets e's target range fields and clears EFFECT_FLAG_ABSOLUTE_TARGET.
 For most field effects, s_range is the affected locations on the handler's controller's side and o_range is the affected locations on the opponent's side. With EFFECT_FLAG_SPSUM_PARAM, they store Special Summon destination player and position.
 Parameters:
-  e: Effect
-  s_range: int
-  o_range: int
+  e: Effect - Effect whose target range fields are being set.
+  s_range: int - Usually the handler controller's affected locations. With EFFECT_FLAG_SPSUM_PARAM, this is the allowed Special Summon position.
+  o_range: int - Usually the opponent's affected locations. With EFFECT_FLAG_SPSUM_PARAM, this is the destination player value for the Special Summon.
 Source: D:\Programs\GitHub\ygopro-core\libeffect.cpp:615
 
 ●void Effect.SetType(Effect e, int type)

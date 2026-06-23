@@ -53,6 +53,10 @@ back into the generated API reference and live card examples.
     <strong>Pendulum procedures</strong>
     <span>Enable Pendulum Summons, script Pendulum Zone effects, read scales, and place cards.</span>
   </a>
+  <a class="sacred-card" href="special-summon-only-monsters">
+    <strong>Special Summon-only monsters</strong>
+    <span>Build revive limits, hand procedures, reveal costs, summon restrictions, and proper-Summon completion.</span>
+  </a>
   <a class="sacred-card" href="filters-and-groups">
     <strong>Filters and Groups</strong>
     <span>How scripts find, select, count, and iterate cards.</span>
@@ -119,20 +123,21 @@ back into the generated API reference and live card examples.
 12. Learn overlaying and detaching with [Xyz Procedure Guide](xyz-procedure).
 13. Learn Link Rating, materials, and linked zones with [Link Procedure Guide](link-procedure).
 14. Learn Pendulum Zones, scales, and Pendulum Summon flow with [Pendulum Procedure Guide](pendulum-procedure).
-15. Work with cards and groups through [Filters, Card objects, and Group objects](filters-and-groups).
-16. Move cards correctly with [Functions that move cards across locations](moving-cards).
-17. Place cards and read zones with [Field zones and sequences](field-zones-and-sequences).
-18. Script Field Spell patterns with [Field Spells](field-spells).
-19. Target cards correctly with [Targeting flow](targeting-flow).
-20. Resolve activated effects with [Cost, target, and operation lifecycle](cost-target-operation-lifecycle).
-21. Read always-on behavior through [Continuous effects](continuous-effects).
-22. Build visible modifiers with [Continuous stat modifiers](continuous-stat-modifiers).
-23. Script Equip Cards with [Equip Spells and Equip Cards](equip-spells).
-24. Script LP changes with [LP Recovery and Effect Damage](lp-recovery-and-damage).
-25. Track temporary script memory with [Flag effects](flag-effects).
-26. Limit effect usage with [Count limits and once per turn](count-limits).
-27. Apply outcomes through [Methods for affecting cards](affecting-cards).
-28. Use card families through [Archetypes and set codes](archetypes-and-setcodes).
+15. Handle revive limits and self-Summon procedures with [Special Summon-only Monster Guide](special-summon-only-monsters).
+16. Work with cards and groups through [Filters, Card objects, and Group objects](filters-and-groups).
+17. Move cards correctly with [Functions that move cards across locations](moving-cards).
+18. Place cards and read zones with [Field zones and sequences](field-zones-and-sequences).
+19. Script Field Spell patterns with [Field Spells](field-spells).
+20. Target cards correctly with [Targeting flow](targeting-flow).
+21. Resolve activated effects with [Cost, target, and operation lifecycle](cost-target-operation-lifecycle).
+22. Read always-on behavior through [Continuous effects](continuous-effects).
+23. Build visible modifiers with [Continuous stat modifiers](continuous-stat-modifiers).
+24. Script Equip Cards with [Equip Spells and Equip Cards](equip-spells).
+25. Script LP changes with [LP Recovery and Effect Damage](lp-recovery-and-damage).
+26. Track temporary script memory with [Flag effects](flag-effects).
+27. Limit effect usage with [Count limits and once per turn](count-limits).
+28. Apply outcomes through [Methods for affecting cards](affecting-cards).
+29. Use card families through [Archetypes and set codes](archetypes-and-setcodes).
 
 ## Tutorial Equivalents
 

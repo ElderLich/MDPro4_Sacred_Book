@@ -34,9 +34,9 @@ For Special Summon procedure effects using `EFFECT_FLAG_SPSUM_PARAM`, these fiel
 
 ## Parameters
 
-- `e` `Effect`
-- `s_range` `int`
-- `o_range` `int`
+- `e` `Effect` - Effect whose target range fields are being set.
+- `s_range` `int` - Usually the handler controller's affected locations. With EFFECT_FLAG_SPSUM_PARAM, this is the allowed Special Summon position.
+- `o_range` `int` - Usually the opponent's affected locations. With EFFECT_FLAG_SPSUM_PARAM, this is the destination player value for the Special Summon.
 
 ## Source
 
