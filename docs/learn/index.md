@@ -25,6 +25,10 @@ back into the generated API reference and live card examples.
     <strong>Moving cards</strong>
     <span>Which Duel functions send, destroy, banish, summon, equip, or set cards.</span>
   </a>
+  <a class="sacred-card" href="field-zones-and-sequences">
+    <strong>Field zones</strong>
+    <span>How location counts, sequence numbers, zone masks, and columns fit together.</span>
+  </a>
   <a class="sacred-card" href="targeting-flow">
     <strong>Targeting flow</strong>
     <span>How scripts check, select, record, and resolve official effect targets.</span>
@@ -56,13 +60,14 @@ back into the generated API reference and live card examples.
 5. Check legality with [Activation legality](activation-legality).
 6. Work with cards and groups through [Filters, Card objects, and Group objects](filters-and-groups).
 7. Move cards correctly with [Functions that move cards across locations](moving-cards).
-8. Target cards correctly with [Targeting flow](targeting-flow).
-9. Resolve activated effects with [Cost, target, and operation lifecycle](cost-target-operation-lifecycle).
-10. Read always-on behavior through [Continuous effects](continuous-effects).
-11. Track temporary script memory with [Flag effects](flag-effects).
-12. Limit effect usage with [Count limits and once per turn](count-limits).
-13. Apply outcomes through [Methods for affecting cards](affecting-cards).
-14. Use card families through [Archetypes and set codes](archetypes-and-setcodes).
+8. Place cards and read zones with [Field zones and sequences](field-zones-and-sequences).
+9. Target cards correctly with [Targeting flow](targeting-flow).
+10. Resolve activated effects with [Cost, target, and operation lifecycle](cost-target-operation-lifecycle).
+11. Read always-on behavior through [Continuous effects](continuous-effects).
+12. Track temporary script memory with [Flag effects](flag-effects).
+13. Limit effect usage with [Count limits and once per turn](count-limits).
+14. Apply outcomes through [Methods for affecting cards](affecting-cards).
+15. Use card families through [Archetypes and set codes](archetypes-and-setcodes).
 
 ## How To Read This Book
 

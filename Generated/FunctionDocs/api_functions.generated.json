@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-06-23T05:36:37+00:00",
+    "generated_at": "2026-06-23T15:46:29+00:00",
     "workspace": "D:\\Programs\\GitHub\\MDPro3_Sacred_Book",
     "dataeditorx_data": "D:\\Programs\\GitHub\\DataEditorX\\DataEditorX\\data",
     "mdpro3_locales": "D:\\Programs\\GitHub\\MDPro3_Data\\Data\\locales",
@@ -5689,19 +5689,21 @@
           "name": "c",
           "type": "Card",
           "optional": false,
-          "description": ""
+          "description": "Card whose current sequence is returned.",
+          "description_zh": "要读取当前序号的卡。"
         }
       ],
       "returns": [
         {
           "type": "int",
-          "description": ""
+          "description": "Sequence in c's current location.",
+          "description_zh": "c在当前位置中的序号。"
         }
       ],
       "description_zh": [
-        "返回c在当前位置的序号",
-        "在场上时，序号代表所在的格子，从左往右分别是0-4，场地魔法格的序号为5",
-        "在其它地方时，序号表示的是第几张卡，最下面的卡的序号为0"
+        "返回c在当前位置中的序号。",
+        "在场上时，主要怪兽区域和魔法与陷阱区域从左到右使用0-4；场地区域使用5；灵摆区域使用6-7。",
+        "在其他位置时，序号表示该卡在该位置中的顺序，从0开始。"
       ],
       "description_en": [
         "Returns c's sequence within its current location.",
@@ -5723,7 +5725,9 @@
       ],
       "aliases": [],
       "tags": [
-        "core-binding"
+        "core-binding",
+        "core-doc-override",
+        "manual-zh-doc"
       ],
       "core_binding": true,
       "core_handler": "card_get_sequence"
@@ -19544,49 +19548,59 @@
           "name": "player",
           "type": "int",
           "optional": false,
-          "description": ""
+          "description": "Player whose field is checked.",
+          "description_zh": "要检查其场上的玩家。"
         },
         {
           "name": "location",
           "type": "int",
           "optional": false,
-          "description": ""
+          "description": "Location to count, normally LOCATION_MZONE or LOCATION_SZONE.",
+          "description_zh": "要统计的位置，通常为LOCATION_MZONE或LOCATION_SZONE。"
         },
         {
           "name": "use_player",
           "type": "int",
           "optional": true,
-          "description": ""
+          "description": "Player treated as placing the card. Defaults to the current reason player.",
+          "description_zh": "视为要放置卡的玩家。省略时使用当前原因玩家。"
         },
         {
           "name": "reason",
           "type": "int",
           "optional": true,
-          "description": ""
+          "description": "Placement reason such as LOCATION_REASON_TOFIELD or LOCATION_REASON_CONTROL. Defaults to LOCATION_REASON_TOFIELD.",
+          "description_zh": "放置原因，例如LOCATION_REASON_TOFIELD或LOCATION_REASON_CONTROL。省略时为LOCATION_REASON_TOFIELD。"
         },
         {
           "name": "zone",
           "type": "int",
           "optional": true,
-          "description": ""
+          "description": "Zone mask to restrict the count. Defaults to 0xff.",
+          "description_zh": "限制统计范围的区域掩码。省略时为0xff。"
         }
       ],
       "returns": [
         {
           "type": "int",
-          "description": ""
+          "description": "Available zone count. The core comment notes this can be negative.",
+          "description_zh": "可用区域数量。核心注释说明该值可能为负数。"
         },
         {
           "type": "int",
-          "description": ""
+          "description": "Usable zone mask.",
+          "description_zh": "可用区域掩码。"
         }
       ],
       "description_zh": [
-        "返回玩家player场上location可用区域数量以及对应的可用区域mask。"
+        "返回player场上location中可用区域数量以及对应的可用区域掩码。",
+        "location通常为LOCATION_MZONE或LOCATION_SZONE。use_player、reason和zone用于会限制放置区域的效果，例如类似凯撒斗技场的限制。",
+        "数量可能为负数；因此会把区域作为Cost腾出的脚本有时检查ft > -1，而不是ft > 0。"
       ],
       "description_en": [
         "Returns how many zones of location are available on player's field and the corresponding usable zone mask.",
-        "location is normally LOCATION_MZONE or LOCATION_SZONE. use_player, reason, and zone are used by effects that restrict where cards can be placed, such as Kaiser Colosseum-style restrictions."
+        "location is normally LOCATION_MZONE or LOCATION_SZONE. use_player, reason, and zone are used by effects that restrict where cards can be placed, such as Kaiser Colosseum-style restrictions.",
+        "The count can be negative, so scripts that free a zone as a cost sometimes check ft > -1 instead of ft > 0."
       ],
       "english_status": "translated_exact",
       "source_files": [
@@ -19604,7 +19618,8 @@
       "aliases": [],
       "tags": [
         "core-binding",
-        "core-doc-override"
+        "core-doc-override",
+        "manual-zh-doc"
       ],
       "core_binding": true,
       "core_handler": "duel_get_location_count"
@@ -19944,46 +19959,53 @@
           "name": "player",
           "type": "int",
           "optional": false,
-          "description": ""
+          "description": "Player whose Monster Zones are checked.",
+          "description_zh": "要检查其怪兽区域的玩家。"
         },
         {
           "name": "targets",
-          "type": "Group|Card",
+          "type": "Card|Group|nil",
           "optional": true,
-          "description": ""
+          "description": "Card or Group treated as leaving the field before the count is checked.",
+          "description_zh": "在统计前视为将离场的Card或Group。"
         },
         {
           "name": "use_player",
           "type": "int",
           "optional": true,
-          "description": ""
+          "description": "Player treated as placing the monster. Defaults to the current reason player.",
+          "description_zh": "视为要放置怪兽的玩家。省略时使用当前原因玩家。"
         },
         {
           "name": "reason",
           "type": "int",
           "optional": true,
-          "description": ""
+          "description": "Placement reason. Defaults to LOCATION_REASON_TOFIELD.",
+          "description_zh": "放置原因。省略时为LOCATION_REASON_TOFIELD。"
         },
         {
           "name": "zone",
           "type": "int",
           "optional": true,
-          "description": "default: 0xff"
+          "description": "Monster Zone mask to restrict the count. Defaults to 0xff.",
+          "description_zh": "限制统计范围的怪兽区域掩码。省略时为0xff。"
         }
       ],
       "returns": [
         {
           "type": "int",
-          "description": ""
+          "description": "Usable Monster Zone count after targets are ignored.",
+          "description_zh": "忽略targets后的可用怪兽区域数量。"
         },
         {
           "type": "int",
-          "description": "zone"
+          "description": "Usable Monster Zone mask.",
+          "description_zh": "可用怪兽区域掩码。"
         }
       ],
       "description_zh": [
-        "返回玩家player场上[targets 离开后]可用的[区域 zone 里的]怪兽区数量",
-        "##第三个第四个额外参数与凯撒斗技场等限制格子的效果有关"
+        "返回targets离场后player可用的怪兽区域数量，并额外返回可用区域掩码。",
+        "use_player、reason和zone用于会限制怪兽可放置区域的效果。"
       ],
       "description_en": [
         "Returns the number of usable Monster Zones for player after targets leave, plus the usable zone mask.",
@@ -20004,7 +20026,9 @@
       ],
       "aliases": [],
       "tags": [
-        "core-binding"
+        "core-binding",
+        "core-doc-override",
+        "manual-zh-doc"
       ],
       "core_binding": true,
       "core_handler": "duel_get_mzone_count"
@@ -20576,46 +20600,53 @@
           "name": "player",
           "type": "int",
           "optional": false,
-          "description": ""
+          "description": "Player whose Spell & Trap Zones are checked.",
+          "description_zh": "要检查其魔法与陷阱区域的玩家。"
         },
         {
           "name": "targets",
-          "type": "Group|Card",
+          "type": "Card|Group|nil",
           "optional": true,
-          "description": ""
+          "description": "Card or Group treated as leaving the field before the count is checked.",
+          "description_zh": "在统计前视为将离场的Card或Group。"
         },
         {
           "name": "use_player",
           "type": "int",
           "optional": true,
-          "description": ""
+          "description": "Player treated as placing the card. Defaults to the current reason player.",
+          "description_zh": "视为要放置卡的玩家。省略时使用当前原因玩家。"
         },
         {
           "name": "reason",
           "type": "int",
           "optional": true,
-          "description": ""
+          "description": "Placement reason. Defaults to LOCATION_REASON_TOFIELD.",
+          "description_zh": "放置原因。省略时为LOCATION_REASON_TOFIELD。"
         },
         {
           "name": "zone",
           "type": "int",
           "optional": true,
-          "description": "default: 0xff"
+          "description": "Spell & Trap Zone mask to restrict the count. Defaults to 0xff.",
+          "description_zh": "限制统计范围的魔法与陷阱区域掩码。省略时为0xff。"
         }
       ],
       "returns": [
         {
           "type": "int",
-          "description": ""
+          "description": "Usable Spell & Trap Zone count after targets are ignored.",
+          "description_zh": "忽略targets后的可用魔法与陷阱区域数量。"
         },
         {
           "type": "int",
-          "description": "zone"
+          "description": "Usable Spell & Trap Zone mask.",
+          "description_zh": "可用魔法与陷阱区域掩码。"
         }
       ],
       "description_zh": [
-        "返回玩家player场上[targets 离开后]可用的[区域 zone 里的]魔陷区数量（不含场地区域）",
-        "##第三个第四个额外参数与凯撒斗技场等限制格子的效果有关"
+        "返回targets离场后player可用的魔法与陷阱区域数量，并可用zone限制统计范围；不包含场地区域。",
+        "额外的use_player和reason参数用于会限制区域的效果，例如凯撒斗技场。"
       ],
       "description_en": [
         "Returns the number of available Spell & Trap Zones for player after targets leave, optionally restricted by zone. The Field Zone is not included.",
@@ -20636,7 +20667,9 @@
       ],
       "aliases": [],
       "tags": [
-        "core-binding"
+        "core-binding",
+        "core-doc-override",
+        "manual-zh-doc"
       ],
       "core_binding": true,
       "core_handler": "duel_get_szone_count"
@@ -24612,46 +24645,54 @@
           "name": "player",
           "type": "int",
           "optional": false,
-          "description": ""
+          "description": "Player who selects zones and whose viewpoint defines the returned mask.",
+          "description_zh": "选择区域的玩家；返回掩码也以该玩家视角表示。"
         },
         {
           "name": "count",
           "type": "int",
           "optional": false,
-          "description": ""
+          "description": "Number of zones to select. The core reduces this to the number of available zones if needed.",
+          "description_zh": "要选择的区域数量；必要时核心会把该值限制到可用区域数量。"
         },
         {
           "name": "location1",
           "type": "int",
           "optional": false,
-          "description": ""
+          "description": "Selectable locations on player's field, usually LOCATION_MZONE and/or LOCATION_SZONE.",
+          "description_zh": "player场上可选择的位置，通常为LOCATION_MZONE和/或LOCATION_SZONE。"
         },
         {
           "name": "location2",
           "type": "int",
           "optional": false,
-          "description": ""
+          "description": "Selectable locations on the opponent's field, usually LOCATION_MZONE and/or LOCATION_SZONE.",
+          "description_zh": "对方场上可选择的位置，通常为LOCATION_MZONE和/或LOCATION_SZONE。"
         },
         {
           "name": "filter",
           "type": "int",
           "optional": false,
-          "description": ""
+          "description": "Player-relative mask of zones that cannot be selected.",
+          "description_zh": "以player视角表示的不可选择区域掩码。"
         }
       ],
       "returns": [
         {
           "type": "int",
-          "description": "Selected zone bitmask."
+          "description": "Selected zone bitmask, or no return value if no zone can be selected.",
+          "description_zh": "所选区域掩码；没有可选区域时不返回值。"
         }
       ],
       "description_zh": [
         "让player从请求的己方与对方位置中选择count个可用场地区域，并返回所选区域位掩码。",
-        "location1应用于player场上，location2应用于对方场上。核心会把count限制为可用区域数量；没有可选区域时不返回值。"
+        "location1应用于player场上，location2应用于对方场上。核心会把count限制为可用区域数量；没有可选区域时不返回值。",
+        "返回掩码使用player视角位：己方怪兽区域为seq，己方魔法与陷阱区域为seq+8，对方怪兽区域为seq+16，对方魔法与陷阱区域为seq+24。"
       ],
       "description_en": [
         "Lets player select count available field zones from the requested own-side and opponent-side locations, then returns the selected zone bitmask.",
-        "location1 applies to player's field and location2 applies to the opponent's field. The core clamps count to the available number of zones and returns no value if no zone can be selected."
+        "location1 applies to player's field and location2 applies to the opponent's field. The core clamps count to the available number of zones and returns no value if no zone can be selected.",
+        "The returned mask uses player-relative bits: own Monster Zone seq, own Spell & Trap Zone seq+8, opponent Monster Zone seq+16, and opponent Spell & Trap Zone seq+24."
       ],
       "english_status": "translated_exact",
       "source_files": [
@@ -38056,26 +38097,31 @@
           "name": "c",
           "type": "Card",
           "optional": false,
-          "description": ""
+          "description": "Card whose field column is checked.",
+          "description_zh": "要检查所在纵列的卡。"
         },
         {
           "name": "p",
           "type": "int",
           "optional": true,
-          "description": "default: 0"
+          "description": "Viewpoint player. Defaults to 0.",
+          "description_zh": "视角玩家。省略时为0。"
         }
       ],
       "returns": [
         {
           "type": "int",
-          "description": ""
+          "description": "Column index from p's viewpoint, or NULL_VALUE if c has no field column.",
+          "description_zh": "从p视角看的纵列编号；若c没有场上纵列则为NULL_VALUE。"
         }
       ],
       "description_zh": [
-        "从玩家p视角返回c所在纵列编号；c没有场上纵列时返回NULL_VALUE。"
+        "从玩家p视角返回c所在纵列编号；c没有场上纵列时返回NULL_VALUE。",
+        "本地辅助函数把通常怪兽区域、魔法与陷阱区域映射为0-4列；额外怪兽区域序号5和6分别映射为1列和3列。"
       ],
       "description_en": [
-        "Returns c's column index from player p's viewpoint, or NULL_VALUE when c has no field column."
+        "Returns c's column index from player p's viewpoint, or NULL_VALUE when c has no field column.",
+        "The local helper maps ordinary Monster Zones and Spell & Trap Zones to columns 0-4; Extra Monster Zone sequences 5 and 6 map to columns 1 and 3."
       ],
       "english_status": "translated_exact",
       "source_files": [
@@ -42115,32 +42161,38 @@
           "name": "p",
           "type": "int",
           "optional": false,
-          "description": ""
+          "description": "Player whose local field sequence is converted.",
+          "description_zh": "要转换其本地区域序号的玩家。"
         },
         {
           "name": "loc",
           "type": "int",
           "optional": false,
-          "description": ""
+          "description": "LOCATION_MZONE or LOCATION_SZONE.",
+          "description_zh": "LOCATION_MZONE或LOCATION_SZONE。"
         },
         {
           "name": "seq",
           "type": "int",
           "optional": false,
-          "description": ""
+          "description": "Sequence inside loc. Monster Zone sequences up to 6 are accepted; Spell & Trap Zone sequences up to 4 are accepted.",
+          "description_zh": "loc中的序号。怪兽区域可接受到6；魔法与陷阱区域可接受到4。"
         }
       ],
       "returns": [
         {
           "type": "int",
-          "description": "The global zone bit, or 0 for invalid input."
+          "description": "The global zone bit, or 0 for invalid input.",
+          "description_zh": "全局区域位；输入无效时为0。"
         }
       ],
       "description_zh": [
-        "把玩家本地的怪兽区域或魔法与陷阱区域序号转换为全局区域位。玩家、位置或序号无效时返回0。"
+        "把玩家本地的怪兽区域或魔法与陷阱区域序号转换为全局区域位。玩家、位置或序号无效时返回0。",
+        "怪兽区域位按16*p+seq位移；魔法与陷阱区域位按16*p+seq+8位移。"
       ],
       "description_en": [
-        "Converts a player's local Monster Zone or Spell & Trap Zone sequence into a global zone bit. Invalid players, locations, or sequences return 0."
+        "Converts a player's local Monster Zone or Spell & Trap Zone sequence into a global zone bit. Invalid players, locations, or sequences return 0.",
+        "Monster Zone bits are shifted by 16*p+seq; Spell & Trap Zone bits are shifted by 16*p+seq+8."
       ],
       "english_status": "translated_exact",
       "source_files": [

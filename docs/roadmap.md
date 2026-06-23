@@ -27,13 +27,14 @@ This is the working todo for turning Sacred Book into a complete MDPro3 scriptin
 - [x] Add a focused count-limit guide for once-per-turn codes, manual count spending, and custom activity counters.
 - [x] Add a focused targeting flow guide for target checks, official Chain targets, and resolution relation checks.
 - [x] Add a focused cost/target/operation lifecycle guide for activation checks, cost payment, stored Chain data, and resolution rechecks.
+- [x] Add a focused field-zone guide for location counts, sequence numbers, zone masks, and columns.
 - [x] Review movement/action function English and stale signatures against the MDPro3 core binding.
 - [x] Review effect setter function English and behavior notes against the MDPro3 core binding.
 - [x] Run usage-ranked terminology passes for common Card, Duel, Effect, Group, bit, Xyz, Synchro, Link, Pendulum, release, negation, Set, flag-effect, callback getter, token, Fusion Material, selection, Equip target, material, Debug, and summon-procedure pages; imported English queue reduced from 593 to 0.
 - [x] Review all `imported_from_dataeditorx` function English and replace awkward machine-style wording with natural MDPro3 terminology.
 - [ ] Check for any raw Chinese text that leaked into English fields after each generation.
 - [ ] Mark uncertain or inferred behavior clearly, with source confidence.
-- [ ] Add focused pages for common scripting patterns: field zones, counters, and summon procedures.
+- [ ] Add focused pages for common scripting patterns: counters and summon procedures.
 - [ ] Expand the beginner path with small complete card scripts that build up one concept at a time.
 - [ ] Analyze every downloaded tutorial page and create an original Sacred Book equivalent for each topic.
 - [ ] Add terminology review passes for official Yu-Gi-Oh! wording such as Graveyard, banish, GY, hand, Deck, Extra Deck, and Set.

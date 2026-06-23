@@ -3,7 +3,7 @@
 ## Signature
 
 ```lua
-Duel.GetSZoneCount(int player, [Group|Card targets], [int use_player], [int reason], [int zone]) -> int,int
+Duel.GetSZoneCount(int player, [Card|Group|nil targets], [int use_player], [int reason], [int zone]) -> int,int
 ```
 
 ## Description
@@ -13,16 +13,16 @@ The additional use_player and reason parameters are used by effects that restric
 
 ## Parameters
 
-- `player` `int`
-- `targets` `Group|Card` optional
-- `use_player` `int` optional
-- `reason` `int` optional
-- `zone` `int` optional - default: 0xff
+- `player` `int` - Player whose Spell & Trap Zones are checked.
+- `targets` `Card|Group|nil` optional - Card or Group treated as leaving the field before the count is checked.
+- `use_player` `int` optional - Player treated as placing the card. Defaults to the current reason player.
+- `reason` `int` optional - Placement reason. Defaults to LOCATION_REASON_TOFIELD.
+- `zone` `int` optional - Spell & Trap Zone mask to restrict the count. Defaults to 0xff.
 
 ## Returns
 
-- `int`
-- `int` - zone
+- `int` - Usable Spell & Trap Zone count after targets are ignored.
+- `int` - Usable Spell & Trap Zone mask.
 
 ## Source
 

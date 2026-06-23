@@ -14,11 +14,11 @@ For other locations, sequence is the card's position in that location, starting 
 
 ## Parameters
 
-- `c` `Card`
+- `c` `Card` - Card whose current sequence is returned.
 
 ## Returns
 
-- `int`
+- `int` - Sequence in c's current location.
 
 ## Source
 
