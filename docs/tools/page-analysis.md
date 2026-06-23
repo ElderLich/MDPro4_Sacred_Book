@@ -35,6 +35,27 @@ simulator-specific helper names and examples with local MDPro3/YGOPro behavior.
 | Methods for affecting cards | [Methods for Affecting Cards](/learn/affecting-cards) acts as the outcome router for immediate actions, continuous changes, negation, stat/property changes, control, equip, and review checks. |
 | Subarchetype | [Archetypes and Set Codes](/learn/archetypes-and-setcodes) covers IDs, `IsSetCard`, multiple set-code checks, subarchetype bit structure, listed cards, and alternate codes. |
 
+## Conversion Answer
+
+The downloaded wiki/tutorial pages listed above have Sacred Book equivalents.
+That does not mean they are finished forever. They are converted as original
+MDPro3/YGOPro lessons, with the external page used as a coverage checklist.
+Where a downloaded page used EDO-style examples or helper names, Sacred Book
+should replace them with local YGOPro examples from `ygopro-scripts`, local
+define files, generated API pages, and core behavior.
+
+Future passes should keep splitting large subjects into focused lessons instead
+of pouring every detail into one page. The broad navigation shape should be:
+
+| Classification area | Sacred Book split |
+| --- | --- |
+| Monster Cards: Normal, Ritual, Fusion, Synchro, Xyz, Pendulum, Link, Special Summon Monsters | Keep general script foundations in [Learning Path](/learn/), then add separate procedure guides for Ritual, Fusion, Synchro, Xyz, Link, Pendulum, and Special Summon-only monsters. |
+| Monster subtypes: Gemini, Toon, Union, Spirit | Add subtype guides only after the core procedure pages, because each subtype needs its own rule hooks, reset patterns, and local examples. |
+| Spell Cards: Normal, Continuous, Equip, Field, Quick-Play, Ritual | Keep [Equip Spells and Equip Cards](/learn/equip-spells) and the field/continuous coverage, then split Normal/Quick-Play/Ritual Spell activation patterns into smaller pages under the activation lifecycle. |
+| Trap Cards: Normal, Continuous, Counter | Add a trap guide cluster that separates activation timing, continuous trap effects, and Counter Trap/Spell Speed 3 patterns. |
+| Effects that affect cards | Expand [Methods for Affecting Cards](/learn/affecting-cards) into focused child pages for stat changes, immunity/negation, control changes, position changes, equip relationships, and location movement. |
+| Effects that affect players | Keep LP changes in [LP Recovery and Effect Damage](/learn/lp-recovery-and-damage), then add player restrictions, draw/hand/deck access restrictions, and player-targeted effects as separate pages. |
+
 ## Verification Notes
 
 Several details were verified directly against local MDPro3/YGOPro sources:

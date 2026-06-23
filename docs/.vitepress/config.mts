@@ -1,5 +1,16 @@
 import { defineConfig } from 'vitepress';
 
+function renderSearchMarkdown(src: string, env: any, md: any) {
+  const relativePath = String(env.relativePath || '').replace(/\\/g, '/');
+  if (relativePath.startsWith('examples/cards/')) {
+    return '';
+  }
+  if (relativePath.startsWith('api/functions/')) {
+    src = src.split(/\n## Used By\n/)[0];
+  }
+  return md.render(src, env);
+}
+
 export default defineConfig({
   title: 'MDPro3 Sacred Book',
   description: 'MDPro3/YGOPro Lua card scripting lessons, examples, and API reference.',
@@ -134,7 +145,21 @@ export default defineConfig({
       label: 'Contents',
       level: [2, 4],
     },
-    search: { provider: 'local' },
+    search: {
+      provider: 'local',
+      options: {
+        detailedView: true,
+        disableQueryPersistence: true,
+        miniSearch: {
+          searchOptions: {
+            prefix: true,
+            fuzzy: 0.2,
+            boost: { title: 4, titles: 2, text: 1 },
+          },
+        },
+        _render: renderSearchMarkdown,
+      },
+    },
     socialLinks: [
       { icon: 'github', link: 'https://github.com/ElderLich/MDPro3_Sacred_Book' },
     ],
