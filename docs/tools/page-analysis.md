@@ -31,6 +31,7 @@ simulator-specific helper names and examples with local MDPro3/YGOPro behavior.
 | Effects that apply continuously | [Effects That Apply Continuously](/learn/continuous-effects) covers single, field, equip, Xyz Material, player-affecting, event-watching, and temporary continuous effects. |
 | Tutorial for scripting a simple continuous effect | [Continuous stat modifiers](/learn/continuous-stat-modifiers) gives the focused ATK/DEF tutorial for self, field, equip, material, temporary, and cloned modifiers. |
 | Equip Spell | [Equip Spells and Equip Cards](/learn/equip-spells) covers manual Equip Spell activation, `Auxiliary.AddEquipSpellEffect`, equip rules, equip limits, `EFFECT_TYPE_EQUIP`, monsters equipped by effects, activated effects on Equip Cards, previous equip targets, card targets, summon-then-equip patterns, and stepped equip. |
+| Field Spell | [Field Spells](/learn/field-spells) covers Field Spell activation shape, `LOCATION_FZONE`, Field Zone replacement, activating/placing Field Spells from the Deck, environment checks, counters, and common pitfalls. |
 | Recovering LP and inflicting effect damage | [LP Recovery and Effect Damage](/learn/lp-recovery-and-damage) covers fixed amounts, resolution-calculated amounts, target-player data, target-based recovery, stepped LP changes, event-value amounts, conjuncted effects, event-count vs resolution-count amounts, categories, and return values. |
 | Methods for affecting cards | [Methods for Affecting Cards](/learn/affecting-cards) acts as the outcome router for immediate actions, continuous changes, negation, stat/property changes, control, equip, and review checks. |
 | Subarchetype | [Archetypes and Set Codes](/learn/archetypes-and-setcodes) covers IDs, `IsSetCard`, multiple set-code checks, subarchetype bit structure, listed cards, and alternate codes. |
@@ -78,6 +79,8 @@ Several details were verified directly against local MDPro3/YGOPro sources:
 - `Duel.Damage`, `Duel.Recover`, `Duel.RDComplete`, `Duel.Equip`, and
   `Duel.EquipComplete` are bound in `ygopro-core\libduel.cpp` and documented in
   `ygopro-scripts-define\def.lua`.
+- `Duel.MoveToField` is bound in `ygopro-core\libduel.cpp`; the binding accepts
+  `LOCATION_FZONE` and maps it to the Field Zone's Spell & Trap Zone slot.
 - `Duel.Damage` and `Duel.Recover` return the actual changed LP value and clamp
   negative input amounts to `0` in the local core binding.
 - `Auxiliary.AddEquipSpellEffect` in local `utility.lua` creates the normal
@@ -99,6 +102,7 @@ Several details were verified directly against local MDPro3/YGOPro sources:
 | --- | --- | --- |
 | 2026-06-23 | Activation lifecycle: activated effects, activation legality, and condition/cost/target/operation callbacks | Expanded [Conditions, Costs, Activation Procedures, and Resolution](/learn/effect-callbacks), [Activation Legality](/learn/activation-legality), [Activated Effects](/learn/activated-effects), and [Cost, Target, And Operation Lifecycle](/learn/cost-target-operation-lifecycle) with event-condition signatures, Damage Step legality, Quick Effect negation checks, activation restrictions, Red-Eyes Fusion and Cyber Dragon Infinity examples, and API links for the referenced functions. |
 | 2026-06-23 | Foundation forever pass: effect objects, filters/groups, movement, continuous effects, stat modifiers, and LP effects | Expanded [Creation, building, and registration of an effect object](/learn/effect-object), [Filters, Card Objects, and Group Objects](/learn/filters-and-groups), [Functions that move cards across locations](/learn/moving-cards), [Effects That Apply Continuously](/learn/continuous-effects), [Continuous stat modifiers](/learn/continuous-stat-modifiers), and [LP Recovery and Effect Damage](/learn/lp-recovery-and-damage) with setter-shape maps, target-range modes, property flags, subgroup selection, movement routing, local dynamic value examples, pure LP activation checks, stepped LP examples, and API links. |
+| 2026-06-23 | Equip and Field Spell strict pass | Expanded [Equip Spells and Equip Cards](/learn/equip-spells) with activation-shape differences, core equip housekeeping, non-applying equip modifiers, lost-target triggers, and summon-then-equip notes. Added [Field Spells](/learn/field-spells) as a focused local-source guide because the Field Spell downloaded page is not present in the current archive folder. |
 
 ## Intentional Rewrites
 
@@ -109,6 +113,9 @@ local equivalents instead of imported directly:
 - Equip procedure material is documented through local
   `Auxiliary.AddEquipSpellEffect`, `Duel.Equip`, `EFFECT_EQUIP_LIMIT`, and equip
   target APIs instead of EDO-only helper names.
+- Field Spell material was reconstructed from local scripts and core behavior
+  because no downloaded `Field Spell - YGOPRO Scripting Wiki.html` file exists
+  in the current archive folder.
 - Movement-table entries that used non-local function names were translated to
   local APIs such as `Duel.GetControl` and `Duel.SendtoExtraP`.
 - Examples sourced from external repositories were replaced with local-script

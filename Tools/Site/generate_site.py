@@ -655,6 +655,7 @@ def write_vitepress_config(featured: list[dict[str, object]]) -> None:
         "            { text: 'Filters and Groups', link: '/learn/filters-and-groups' },",
         "            { text: 'Moving Cards', link: '/learn/moving-cards' },",
         "            { text: 'Field Zones', link: '/learn/field-zones-and-sequences' },",
+        "            { text: 'Field Spells', link: '/learn/field-spells' },",
         "            { text: 'Targeting Flow', link: '/learn/targeting-flow' },",
         "            { text: 'Effect Lifecycle', link: '/learn/cost-target-operation-lifecycle' },",
         "            { text: 'Continuous Effects', link: '/learn/continuous-effects' },",

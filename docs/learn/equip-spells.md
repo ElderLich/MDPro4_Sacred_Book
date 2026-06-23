@@ -58,6 +58,22 @@ end
 This is the same shape used by local Equip Spell scripts such as the one that
 registers an ATK bonus and an equip limit after its activation effect.
 
+## Activation Shapes
+
+Not every effect that equips a card uses the same target shape.
+
+| Shape | Targeting pattern | Equip timing |
+| --- | --- | --- |
+| Ordinary Equip Spell activation | `EFFECT_FLAG_CARD_TARGET+EFFECT_FLAG_CONTINUOUS_TARGET`, `Duel.SelectTarget` on a face-up monster | `Duel.Equip` during the activation's operation |
+| Effect that Special Summons, then equips itself | Usually targets the monster in the GY/banished/other source location, without `EFFECT_FLAG_CONTINUOUS_TARGET` | Special Summon first, then `Duel.Equip` and register the equip limit |
+| Monster or Trap becoming an Equip Card | Often non-activation or monster-effect flow | `Duel.Equip` changes the card into equip state and the script adds limits/effects |
+| Existing Equip Card moving to a new monster | Target or select the new monster and check `CheckEquipTarget` | `Duel.Equip` changes the equip relationship |
+
+An effect does not target just because it will equip something. In script
+terms, targeting comes from the effect property and target APIs. `Duel.Equip`
+creates the equip relationship during resolution; it does not retroactively
+make a non-targeting effect into an activation-time targeting effect.
+
 ## Rules-Facing Script Notes
 
 Equip Cards are unusually sensitive to the difference between "this card is
@@ -76,6 +92,24 @@ The script should not treat a failed stat bonus as the same thing as an illegal
 equip target. For example, a monster might be unaffected by a continuous equip
 modifier while the Equip Card itself is still legally equipped. The equip limit
 answers the legal-target question.
+
+## What The Core Handles
+
+Local core behavior does a lot of equip housekeeping for scripts:
+
+- If `Duel.Equip` cannot keep the Equip Card on the field because the target is
+  not a face-up monster or there is no usable Spell & Trap Zone, the Equip Card
+  is sent to the GY by rule.
+- When a card becomes equipped and it was not already an Equip Spell, the core
+  adds the temporary type-change support needed for equip state.
+- If the equipped monster leaves the field or the equip relationship is lost,
+  local core destroys the Equip Card with `REASON_RULE+REASON_LOST_TARGET`.
+- If the equipped monster remains but no longer satisfies `EFFECT_EQUIP_LIMIT`,
+  the core destroys the Equip Card by rule during adjustment.
+
+That means ordinary equip scripts do not need to manually poll the equipped
+monster every frame. They do need to register the correct equip limit and use
+the correct reason checks when a later trigger cares why the Equip Card left.
 
 ## Equip Effects
 
@@ -98,6 +132,12 @@ function s.atkval(e,c)
     return e:GetHandler():GetCounter(0x1)*500
 end
 ```
+
+`EFFECT_TYPE_EQUIP` is already tied to equip state, so a normal equip modifier
+does not need `SetRange(LOCATION_SZONE)`. If the equipped monster cannot use a
+particular continuous value, such as a DEF update on a Link Monster, the
+modifier simply has no useful result for that monster; it is not automatically
+the same as an illegal equip target.
 
 ## Equip Limits
 
@@ -212,6 +252,20 @@ local ec=e:GetHandler():GetPreviousEquipTarget()
 
 This is useful for "if this equipped card is sent..." style effects.
 
+Local `c11913700.lua` shows the common lost-target trigger shape:
+
+```lua
+function s.spcon(e,tp,eg,ep,ev,re,r,rp)
+    local ec=e:GetHandler():GetPreviousEquipTarget()
+    return e:GetHandler():IsReason(REASON_LOST_TARGET)
+        and ec and not ec:IsLocation(LOCATION_ONFIELD+LOCATION_OVERLAY)
+end
+```
+
+Use `GetPreviousEquipTarget` for this kind of trigger because by the time the
+Equip Card is in the GY, `GetEquipTarget` no longer describes the old
+relationship.
+
 ## Continuous Card Targets
 
 Equip state is not the only long-term relationship a card can keep. Some local
@@ -243,6 +297,12 @@ if Duel.SpecialSummon(tc,0,tp,tp,false,false,POS_FACEUP)>0
 end
 ```
 
+Local `c10204849.lua` uses this category: it targets a monster in the GY,
+Special Summons it, then equips the Spell to that monster and registers the
+equip limit during resolution. That is why the activation effect uses ordinary
+card targeting for the GY monster, not the continuous target flag used by a
+normal Equip Spell activation.
+
 If the later card text destroys or sends the equipped monster when the Equip
 Card leaves, store or read the relevant equip/card target relationship and
 recheck it during that later operation.
@@ -269,11 +329,14 @@ the stepped argument.
 | Registering only the ATK/DEF bonus. | Also register `EFFECT_EQUIP_LIMIT` when the card needs a legal equipped monster. |
 | Treating an Equip effect as `EFFECT_TYPE_SINGLE`. | Use `EFFECT_TYPE_EQUIP` for effects applied to the equipped monster. |
 | Moving a monster to the Spell & Trap Zone when the card should be equipped. | Use `Duel.Equip` for equip state; use `Duel.MoveToField` for Continuous Spell/Trap state. |
+| Checking `GetEquipTarget` after the Equip Card has already left the field. | Use `GetPreviousEquipTarget` in leave-field or sent-to-GY triggers. |
+| Assuming a non-applying equip bonus means the equip itself is illegal. | Separate equip legality from whether a specific continuous effect can affect that monster. |
 
 Useful API pages:
 
 - [`Duel.Equip`](/api/functions/Duel/Equip)
 - [`Duel.EquipComplete`](/api/functions/Duel/EquipComplete)
+- [`Duel.MoveToField`](/api/functions/Duel/MoveToField)
 - [`Card.GetEquipTarget`](/api/functions/Card/GetEquipTarget)
 - [`Card.GetPreviousEquipTarget`](/api/functions/Card/GetPreviousEquipTarget)
 - [`Card.GetEquipGroup`](/api/functions/Card/GetEquipGroup)

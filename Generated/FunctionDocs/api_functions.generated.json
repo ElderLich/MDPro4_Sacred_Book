@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-06-23T17:10:18+00:00",
+    "generated_at": "2026-06-23T18:11:37+00:00",
     "workspace": "D:\\Programs\\GitHub\\MDPro3_Sacred_Book",
     "dataeditorx_data": "D:\\Programs\\GitHub\\DataEditorX\\DataEditorX\\data",
     "mdpro3_locales": "D:\\Programs\\GitHub\\MDPro3_Data\\Data\\locales",
@@ -1194,20 +1194,20 @@
       ],
       "returns": [
         {
-          "type": "Effect",
-          "description": ""
-        },
-        {
-          "type": "...?",
-          "description": "Effect"
+          "type": "Effect|nil",
+          "description": "The activation effect registered on c, or nil if none is registered.",
+          "description_zh": "c上登记的发动效果；没有登记时返回nil。"
         }
       ],
       "description_zh": [
-        "返回c的“卡片发动”的效果，即类型为EFFECT_TYPE_ACTIVATE的效果",
-        "仅对魔法和陷阱有效"
+        "返回c的发动效果，即类型包含EFFECT_TYPE_ACTIVATE的效果；主要用于魔法/陷阱卡。",
+        "如果该卡没有登记发动效果则返回nil，因此调用Effect方法前应先检查返回值。",
+        "当其他效果要移动或处理场地魔法等魔法/陷阱的发动时，可用返回的Effect先检查其是否可以发动。"
       ],
       "description_en": [
-        "Returns c's activation effect, the effect with type EFFECT_TYPE_ACTIVATE. This is mainly used for Spell/Trap Cards."
+        "Returns c's activation effect, the effect with type EFFECT_TYPE_ACTIVATE. This is mainly used for Spell/Trap Cards.",
+        "Returns nil when the card has no registered activation effect, so guard the result before calling Effect methods.",
+        "Use the returned Effect to check whether a Field Spell or other Spell/Trap can be activated before moving or resolving it through another effect."
       ],
       "english_status": "translated_exact",
       "source_files": [
@@ -1224,7 +1224,9 @@
       ],
       "aliases": [],
       "tags": [
-        "core-binding"
+        "core-binding",
+        "core-doc-override",
+        "manual-zh-doc"
       ],
       "core_binding": true,
       "core_handler": "card_get_activate_effect"

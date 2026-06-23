@@ -266,14 +266,14 @@ Parameters:
   c: Card
 Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3568
 
-●Effect,...? Card.GetActivateEffect(Card c)
-返回c的“卡片发动”的效果，即类型为EFFECT_TYPE_ACTIVATE的效果
-仅对魔法和陷阱有效
+●Effect|nil Card.GetActivateEffect(Card c)
+返回c的发动效果，即类型包含EFFECT_TYPE_ACTIVATE的效果；主要用于魔法/陷阱卡。
+如果该卡没有登记发动效果则返回nil，因此调用Effect方法前应先检查返回值。
+当其他效果要移动或处理场地魔法等魔法/陷阱的发动时，可用返回的Effect先检查其是否可以发动。
 Parameters:
   c: Card
 Returns:
-  Effect
-  ...? - Effect
+  Effect|nil - c上登记的发动效果；没有登记时返回nil。
 Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3544
 
 ●int Card.GetAttack(Card c)

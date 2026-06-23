@@ -11219,7 +11219,33 @@
     },
     "Card.GetActivateEffect": {
       "summary_en": [
-        "Returns c's activation effect, the effect with type EFFECT_TYPE_ACTIVATE. This is mainly used for Spell/Trap Cards."
+        "Returns c's activation effect, the effect with type EFFECT_TYPE_ACTIVATE. This is mainly used for Spell/Trap Cards.",
+        "Returns nil when the card has no registered activation effect, so guard the result before calling Effect methods.",
+        "Use the returned Effect to check whether a Field Spell or other Spell/Trap can be activated before moving or resolving it through another effect."
+      ],
+      "summary_zh": [
+        "返回c的发动效果，即类型包含EFFECT_TYPE_ACTIVATE的效果；主要用于魔法/陷阱卡。",
+        "如果该卡没有登记发动效果则返回nil，因此调用Effect方法前应先检查返回值。",
+        "当其他效果要移动或处理场地魔法等魔法/陷阱的发动时，可用返回的Effect先检查其是否可以发动。"
+      ],
+      "core_summary_en": [
+        "Returns c's activation effect."
+      ],
+      "core_summary_zh": [
+        "返回c的发动效果。"
+      ],
+      "params": [
+        {
+          "name": "c",
+          "type": "Card"
+        }
+      ],
+      "returns": [
+        {
+          "type": "Effect|nil",
+          "description": "The activation effect registered on c, or nil if none is registered.",
+          "description_zh": "c上登记的发动效果；没有登记时返回nil。"
+        }
       ]
     },
     "Card.GetAttack": {
