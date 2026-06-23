@@ -48,8 +48,20 @@ Several details were verified directly against local MDPro3/YGOPro sources:
   Equip Spell activation shape and registers `EFFECT_EQUIP_LIMIT`.
 - `Card.IsSetCard` is bound in `ygopro-core\libcard.cpp`; set-code matching is
   implemented through the local core set-code comparison in `card_data.h`.
+- Activation lifecycle quality pass checked the downloaded activation,
+  activation-legality, and callback pages against local scripts:
+  `c6172122.lua` for Red-Eyes Fusion activation restrictions,
+  `c10443957.lua` for Damage Step negation legality, `c102380.lua` for
+  inherent Special Summon callback shapes and mandatory trigger targeting, and
+  `utility.lua` for the local `aux.dscon` Damage Step helper.
 - Script examples were checked against local files in
   `D:\Programs\GitHub\ygopro-scripts`.
+
+## Quality Pass Log
+
+| Date | Downloaded page cluster | Sacred Book updates |
+| --- | --- | --- |
+| 2026-06-23 | Activation lifecycle: activated effects, activation legality, and condition/cost/target/operation callbacks | Expanded [Conditions, Costs, Activation Procedures, and Resolution](/learn/effect-callbacks), [Activation Legality](/learn/activation-legality), [Activated Effects](/learn/activated-effects), and [Cost, Target, And Operation Lifecycle](/learn/cost-target-operation-lifecycle) with event-condition signatures, Damage Step legality, Quick Effect negation checks, activation restrictions, Red-Eyes Fusion and Cyber Dragon Infinity examples, and API links for the referenced functions. |
 
 ## Intentional Rewrites
 

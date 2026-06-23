@@ -65,6 +65,65 @@ return not (Duel.GetLP(tp)>1500)
 
 That is clearer than relying on reader memory of Lua operator precedence.
 
+### Event And State Conditions
+
+A condition can check a live state, an event that just happened, or both.
+
+State conditions read the current Duel:
+
+```lua
+function s.condition(e,tp,eg,ep,ev,re,r,rp)
+    return Duel.IsMainPhase()
+end
+```
+
+Event conditions inspect the event arguments. In local script `c1003840.lua`,
+the trigger condition reads the first card from `eg` and checks where it came
+from:
+
+```lua
+function c1003840.thcon(e,tp,eg,ep,ev,re,r,rp)
+    local ec=eg:GetFirst()
+    return Duel.GetTurnPlayer()~=tp
+        and ec:IsPreviousLocation(LOCATION_EXTRA)
+        and ec:IsPreviousControler(tp)
+        and ec:IsType(TYPE_SYNCHRO)
+end
+```
+
+Use event arguments only when the effect is actually tied to an event such as
+`EVENT_SUMMON_SUCCESS`, `EVENT_TO_GRAVE`, `EVENT_CHAINING`, or a phase event.
+For a free-chain effect, `eg` and friends usually do not carry the card text's
+main requirement; that requirement normally belongs in the live-state checks.
+
+### Callback Shapes Change
+
+The familiar `e,tp,eg,ep,ev,re,r,rp` shape is common, but it is not universal.
+The effect type and effect code decide the callback shape.
+
+| Effect shape | Common callback shape |
+| --- | --- |
+| Activated effects and event-watching effects | `condition(e,tp,eg,ep,ev,re,r,rp)`, `operation(e,tp,eg,ep,ev,re,r,rp)` |
+| Cost or target callbacks for activated effects | add `chk`; targeting effects often add `chkc` |
+| Continuous field target filters | usually `target(e,c)` for each card being tested |
+| Continuous value callbacks | code-specific; stat modifiers often use `value(e,c)` |
+| Inherent Special Summon procedures | local scripts commonly use `condition(e,c)` and pass the Summoned card as `c` |
+
+For example, Lava Golem (`c102380.lua`) uses an inherent Special Summon
+procedure, so its condition is not the normal activated-effect shape:
+
+```lua
+function c102380.spcon(e,c)
+    if c==nil then return true end
+    local tp=c:GetControler()
+    local rg=Duel.GetMatchingGroup(Card.IsReleasable,tp,0,LOCATION_MZONE,nil,REASON_SPSUMMON)
+    return rg:CheckSubGroup(c102380.fselect,2,2,tp)
+end
+```
+
+When a callback behaves strangely, check the effect's `SetType`, `SetCode`,
+and the matching procedure helper before changing the function body.
+
 ## Cost
 
 Costs have two phases. When `chk==0`, only answer whether the cost can be paid.
@@ -218,3 +277,5 @@ Relevant API pages:
 - [`Effect.SetTarget`](/api/functions/Effect/SetTarget)
 - [`Effect.SetOperation`](/api/functions/Effect/SetOperation)
 - [`Duel.SetOperationInfo`](/api/functions/Duel/SetOperationInfo)
+- [`Duel.GetCurrentPhase`](/api/functions/Duel/GetCurrentPhase)
+- [`Group.GetFirst`](/api/functions/Group/GetFirst)

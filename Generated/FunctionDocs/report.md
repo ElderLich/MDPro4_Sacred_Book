@@ -1,6 +1,6 @@
 # Function Docs Refresh Report
 
-Generated: 2026-06-23T15:46:30+00:00
+Generated: 2026-06-23T17:10:18+00:00
 
 ## Outputs
 

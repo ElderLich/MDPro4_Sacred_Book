@@ -2291,11 +2291,12 @@ Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3581
 
 ●bool Card.IsStatus(Card c, int status)
 判断c当前状态是否包含status中的至少一个标志。
+常见合法性检查会用它判断STATUS_BATTLE_DESTROYED等临时核心状态，再决定伤害步骤的Quick效果能否发动。
 Parameters:
-  c: Card
-  status: int
+  c: Card - 要检查当前状态标志的卡。
+  status: int - 状态标志或组合状态掩码，例如STATUS_BATTLE_DESTROYED。
 Returns:
-  bool
+  bool - 若c具有status中的任意标志则为true。
 Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3504
 
 ●bool Card.IsSummonable(Card c, bool ignore_count, [Effect|nil e], [int min], [int zone])
@@ -3859,10 +3860,11 @@ Source: D:\Programs\GitHub\ygopro-core\libduel.cpp:5063
 ●bool Duel.IsChainNegatable(int chainc)
 用于兼容的连锁发动可否被无效检查。
 在当前MDPro3核心绑定中，此函数对任意连锁序号都会返回true。
+本地脚本仍会在无效发动的条件中调用它，用来表达预期的发动合法性检查。
 Parameters:
-  chainc: int
+  chainc: int - 要检查的连锁序号，通常是EVENT_CHAINING条件中的ev参数。
 Returns:
-  bool
+  bool - 若当前绑定认为该连锁环节的发动可以被无效则为true。
 Source: D:\Programs\GitHub\ygopro-core\libduel.cpp:5061
 
 ●bool Duel.IsChainSolving()
@@ -3873,8 +3875,9 @@ Source: D:\Programs\GitHub\ygopro-core\libduel.cpp:5060
 
 ●bool Duel.IsDamageCalculated()
 返回当前战斗/伤害步骤状态中是否已经进行过伤害计算。
+在伤害步骤条件中可与Duel.GetCurrentPhase搭配使用，尤其适用于伤害计算后不能再发动的ATK/DEF变更效果。
 Returns:
-  bool
+  bool - 当前战斗时点已经进行过伤害计算时为true。
 Source: D:\Programs\GitHub\ygopro-core\libduel.cpp:4956
 
 ●bool Duel.IsEnvironment(int code, [int player], [int loc])
@@ -5333,11 +5336,13 @@ Parameters:
 Source: D:\Programs\GitHub\ygopro-core\libeffect.cpp:630
 
 ●void Effect.SetProperty(Effect e, int prop1, [int prop2])
-设置效果e的Property属性。
+设置e的Property标志。prop1保存常规效果性质标志；需要第二组性质标志时使用prop2。
+替换prop1时会保留内部标志。
+学习时常见的标志包括：EFFECT_FLAG_CARD_TARGET用于正式取对象，EFFECT_FLAG_DAMAGE_STEP与EFFECT_FLAG_DAMAGE_CAL用于伤害步骤时点，EFFECT_FLAG_PLAYER_TARGET用于影响玩家的效果。
 Parameters:
-  e: Effect
-  prop1: int
-  prop2: int optional
+  e: Effect - 要设置Property标志的效果。
+  prop1: int - 主要效果性质位掩码。
+  prop2: int optional - 可选的第二组性质位掩码，用于保存在第二个Property字段中的标志。
 Source: D:\Programs\GitHub\ygopro-core\libeffect.cpp:620
 
 ●void Effect.SetRange(Effect e, int range)

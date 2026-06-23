@@ -73,6 +73,88 @@ answer timing and event questions. Action availability usually belongs in
 `target` or `cost`, because those callbacks already have the `chk==0` check
 branch.
 
+## What Is Not A Condition
+
+Some phrases in card text are handled by effect setup instead of a Condition
+callback.
+
+| Text or rule shape | Usual script home |
+| --- | --- |
+| "Once per turn", "once per Duel", shared once-per-turn wording | [`Effect.SetCountLimit`](/api/functions/Effect/SetCountLimit) |
+| "(Quick Effect)" | [`Effect.SetType`](/api/functions/Effect/SetType) with `EFFECT_TYPE_QUICK_O` or `EFFECT_TYPE_QUICK_F` |
+| "during the Damage Step" or "even during damage calculation" | [`Effect.SetProperty`](/api/functions/Effect/SetProperty) with Damage Step flags |
+| costs and activation restrictions | the `cost` callback, using `chk==0` for checks and the real branch for applying restrictions |
+
+The Condition callback still handles fine timing details. For example, an
+ATK/DEF modifier that is legal in the Damage Step but not after damage
+calculation can pair `EFFECT_FLAG_DAMAGE_STEP` with a phase check:
+
+```lua
+e1:SetProperty(EFFECT_FLAG_DAMAGE_STEP)
+e1:SetCondition(aux.dscon)
+```
+
+In the local `utility.lua`, `aux.dscon` returns true outside the Damage Phase
+and during the Damage Phase before [`Duel.IsDamageCalculated`](/api/functions/Duel/IsDamageCalculated)
+becomes true. Effects that are also legal during damage calculation use
+`EFFECT_FLAG_DAMAGE_CAL` as well, and should still keep any card-specific
+timing checks in their condition.
+
+## Damage Step Legality
+
+Damage Step scripting is a common source of accidental legality bugs. The setup
+flags open the timing window; the condition decides whether this specific effect
+should be allowed at the current point inside that window.
+
+Cyber Dragon Infinity (`c10443957.lua`) shows the shape for a negation Quick
+Effect:
+
+```lua
+e3:SetType(EFFECT_TYPE_QUICK_O)
+e3:SetCode(EVENT_CHAINING)
+e3:SetProperty(EFFECT_FLAG_DAMAGE_STEP+EFFECT_FLAG_DAMAGE_CAL)
+e3:SetCondition(c10443957.discon)
+
+function c10443957.discon(e,tp,eg,ep,ev,re,r,rp)
+    return not e:GetHandler():IsStatus(STATUS_BATTLE_DESTROYED)
+        and Duel.IsChainNegatable(ev)
+end
+```
+
+The flags say the effect may be offered in the Damage Step and during damage
+calculation. The condition still rejects a handler already marked with
+`STATUS_BATTLE_DESTROYED` and checks whether the current Chain Link can be
+negated with [`Duel.IsChainNegatable`](/api/functions/Duel/IsChainNegatable).
+That pattern is local-script-backed; the exact real-card timing still depends
+on the effect's official text and rulings.
+
+## Costs Can Apply Restrictions
+
+Some effects have an activation restriction that must be checked before
+activation and then applied immediately once the effect is activated. Red-Eyes
+Fusion (`c6172122.lua`) is a local example:
+
+```lua
+function c6172122.cost(e,tp,eg,ep,ev,re,r,rp,chk)
+    if chk==0 then
+        return Duel.GetActivityCount(tp,ACTIVITY_SUMMON)==0
+            and Duel.GetActivityCount(tp,ACTIVITY_SPSUMMON)==0
+    end
+    local e1=Effect.CreateEffect(e:GetHandler())
+    e1:SetType(EFFECT_TYPE_FIELD)
+    e1:SetCode(EFFECT_CANNOT_SUMMON)
+    e1:SetProperty(EFFECT_FLAG_PLAYER_TARGET+EFFECT_FLAG_OATH)
+    e1:SetTargetRange(1,0)
+    e1:SetReset(RESET_PHASE+PHASE_END)
+    Duel.RegisterEffect(e1,tp)
+end
+```
+
+The `chk==0` branch only asks whether the player already Summoned this turn.
+The real branch registers the oath-style restriction. Do not register that
+restriction during `chk==0`; the engine may call the check branch without the
+player actually activating the effect.
+
 ## Optional Effects Should Have A Legal Outcome
 
 Optional activated effects should normally be unavailable if they cannot make a
@@ -94,6 +176,14 @@ end
 
 The operation may still fail if the Deck changes before resolution. Legality
 only proves that the activation was valid when chosen.
+
+When an effect will free a zone as part of its cost or procedure, count that
+freed zone. Local scripts commonly use helpers such as
+[`Duel.GetMZoneCount`](/api/functions/Duel/GetMZoneCount) when the cards to
+leave the Monster Zone are already known. A plain
+[`Duel.GetLocationCount`](/api/functions/Duel/GetLocationCount) check can be
+too strict for effects that Tribute, release, or move their own monster before
+placing another card.
 
 ## Mandatory Effects Still Resolve Carefully
 
@@ -155,3 +245,14 @@ correct after the game state changes.
 | Forgetting zone checks for Special Summons or setting cards. | Check `Duel.GetLocationCount` or the relevant summon legality function. |
 | Assuming a target is still valid at resolution. | Check `tc and tc:IsRelateToEffect(e)`. |
 | Announcing a category that the operation does not perform. | Match `SetCategory` and `SetOperationInfo` to the real action. |
+
+Relevant API pages:
+
+- [`Effect.SetType`](/api/functions/Effect/SetType)
+- [`Effect.SetProperty`](/api/functions/Effect/SetProperty)
+- [`Effect.SetCountLimit`](/api/functions/Effect/SetCountLimit)
+- [`Duel.IsDamageCalculated`](/api/functions/Duel/IsDamageCalculated)
+- [`Duel.IsChainNegatable`](/api/functions/Duel/IsChainNegatable)
+- [`Card.IsStatus`](/api/functions/Card/IsStatus)
+- [`Duel.GetActivityCount`](/api/functions/Duel/GetActivityCount)
+- [`Duel.RegisterEffect`](/api/functions/Duel/RegisterEffect)

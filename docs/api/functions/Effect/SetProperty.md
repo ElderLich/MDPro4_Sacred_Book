@@ -10,6 +10,7 @@ Effect.SetProperty(Effect e, int prop1, [int prop2]) -> void
 
 Sets e's property flags. prop1 holds the normal effect property flags; prop2 is used for the second property word when needed.
 Internal flags are preserved when prop1 is replaced.
+Learner-facing flags include EFFECT_FLAG_CARD_TARGET for official targets, EFFECT_FLAG_DAMAGE_STEP and EFFECT_FLAG_DAMAGE_CAL for Damage Step timing, and EFFECT_FLAG_PLAYER_TARGET for effects that apply to players.
 
 ## How To Use It
 
@@ -31,9 +32,9 @@ Other common flags include `EFFECT_FLAG_DELAY` for missed-timing-sensitive trigg
 
 ## Parameters
 
-- `e` `Effect`
-- `prop1` `int`
-- `prop2` `int` optional
+- `e` `Effect` - Effect whose property flags are set.
+- `prop1` `int` - Primary effect property bitmask.
+- `prop2` `int` optional - Optional second property bitmask for flags stored in the second property word.
 
 ## Source
 

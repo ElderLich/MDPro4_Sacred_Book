@@ -2273,11 +2273,12 @@ Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3581
 
 ●bool Card.IsStatus(Card c, int status)
 Checks whether c currently has at least one status flag from status.
+Common legality checks use this for temporary engine states such as STATUS_BATTLE_DESTROYED before allowing a Damage Step Quick Effect.
 Parameters:
-  c: Card
-  status: int
+  c: Card - Card whose current status flags are checked.
+  status: int - Status flag or combined status mask, such as STATUS_BATTLE_DESTROYED.
 Returns:
-  bool
+  bool - true if c has any flag included in status.
 Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3504
 
 ●bool Card.IsSummonable(Card c, bool ignore_count, [Effect|nil e], [int min], [int zone])
@@ -3832,10 +3833,11 @@ Source: D:\Programs\GitHub\ygopro-core\libduel.cpp:5063
 ●bool Duel.IsChainNegatable(int chainc)
 Compatibility check for whether chainc's activation can be negated.
 In this MDPro3 core binding, the function currently returns true for any chain count.
+Local scripts still call it in negation conditions so the script expresses the intended activation-legality check.
 Parameters:
-  chainc: int
+  chainc: int - Chain Link number to test, commonly the ev argument in an EVENT_CHAINING condition.
 Returns:
-  bool
+  bool - true when this binding considers that Chain Link's activation negatable.
 Source: D:\Programs\GitHub\ygopro-core\libduel.cpp:5061
 
 ●bool Duel.IsChainSolving()
@@ -3846,8 +3848,9 @@ Source: D:\Programs\GitHub\ygopro-core\libduel.cpp:5060
 
 ●bool Duel.IsDamageCalculated()
 Returns whether damage calculation has been performed in the current battle/damage-step state.
+Use it with Duel.GetCurrentPhase in Damage Step conditions, especially for ATK/DEF-changing effects that stop being legal after damage calculation.
 Returns:
-  bool
+  bool - true after damage calculation has been performed in the current battle timing.
 Source: D:\Programs\GitHub\ygopro-core\libduel.cpp:4956
 
 ●bool Duel.IsEnvironment(int code, [int player], [int loc])
@@ -5295,10 +5298,11 @@ Source: D:\Programs\GitHub\ygopro-core\libeffect.cpp:630
 ●void Effect.SetProperty(Effect e, int prop1, [int prop2])
 Sets e's property flags. prop1 holds the normal effect property flags; prop2 is used for the second property word when needed.
 Internal flags are preserved when prop1 is replaced.
+Learner-facing flags include EFFECT_FLAG_CARD_TARGET for official targets, EFFECT_FLAG_DAMAGE_STEP and EFFECT_FLAG_DAMAGE_CAL for Damage Step timing, and EFFECT_FLAG_PLAYER_TARGET for effects that apply to players.
 Parameters:
-  e: Effect
-  prop1: int
-  prop2: int optional
+  e: Effect - Effect whose property flags are set.
+  prop1: int - Primary effect property bitmask.
+  prop2: int optional - Optional second property bitmask for flags stored in the second property word.
 Source: D:\Programs\GitHub\ygopro-core\libeffect.cpp:620
 
 ●void Effect.SetRange(Effect e, int range)

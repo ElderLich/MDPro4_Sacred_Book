@@ -9,6 +9,21 @@ The important habit is to keep each callback honest. A check branch answers
 stores data. The operation performs the effect after the Chain reaches that
 Link.
 
+## Reading Card Text Into Callbacks
+
+Modern card text gives useful punctuation clues:
+
+| Text part | Script home |
+| --- | --- |
+| Before a colon `:` | activation condition, timing condition, or other explicit requirement |
+| Before a semicolon `;` | activation-time procedure, usually cost payment or target selection |
+| After the semicolon, or after the colon when there is no semicolon | resolution, usually the operation callback |
+
+This punctuation is a guide, not a substitute for legality checks. The script
+still has to check implicit requirements such as available Monster Zones,
+whether a card can be added to the hand, whether a target can be affected, or
+whether a mandatory part of an optional effect can be attempted.
+
 ## Callback Timeline
 
 For a typical activated effect, scripts are written around this sequence:
@@ -24,6 +39,34 @@ For a typical activated effect, scripts are written around this sequence:
 Do not move cards, pay LP, remove Xyz Materials, or choose hidden information in
 the `chk==0` branch. The engine may call that branch while only testing whether
 the effect is available.
+
+## Activation Restrictions Belong With The Activation
+
+If an effect says the player cannot do something for the rest of the turn after
+activation, the check and the restriction often live in the cost callback. The
+local Red-Eyes Fusion script (`c6172122.lua`) checks whether the player has
+already Summoned, then registers the restriction only when the effect is really
+activated:
+
+```lua
+function c6172122.cost(e,tp,eg,ep,ev,re,r,rp,chk)
+    if chk==0 then
+        return Duel.GetActivityCount(tp,ACTIVITY_SUMMON)==0
+            and Duel.GetActivityCount(tp,ACTIVITY_SPSUMMON)==0
+    end
+    local e1=Effect.CreateEffect(e:GetHandler())
+    e1:SetType(EFFECT_TYPE_FIELD)
+    e1:SetCode(EFFECT_CANNOT_SUMMON)
+    e1:SetProperty(EFFECT_FLAG_PLAYER_TARGET+EFFECT_FLAG_OATH)
+    e1:SetTargetRange(1,0)
+    e1:SetReset(RESET_PHASE+PHASE_END)
+    Duel.RegisterEffect(e1,tp)
+end
+```
+
+The important split is the same as an LP cost: check first, apply later. The
+restriction is a real effect registered to the player, so creating it during
+`chk==0` would leak a restriction from a mere legality probe.
 
 ## Cost Can Store Resolution Data
 
@@ -164,3 +207,5 @@ Relevant API pages:
 - [`Duel.SetTargetPlayer`](/api/functions/Duel/SetTargetPlayer)
 - [`Duel.SetTargetParam`](/api/functions/Duel/SetTargetParam)
 - [`Duel.GetChainInfo`](/api/functions/Duel/GetChainInfo)
+- [`Duel.GetActivityCount`](/api/functions/Duel/GetActivityCount)
+- [`Duel.RegisterEffect`](/api/functions/Duel/RegisterEffect)

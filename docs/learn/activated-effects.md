@@ -42,9 +42,22 @@ cards in that branch.
 | `EFFECT_TYPE_TRIGGER_O` | Optional effects that activate after an event. |
 | `EFFECT_TYPE_TRIGGER_F` | Mandatory effects that activate after an event. |
 | `EFFECT_TYPE_QUICK_O` | Optional fast effects that can be chained at the right timing. |
+| `EFFECT_TYPE_QUICK_F` | Mandatory fast effects that the engine should force when their timing is reached. |
 
 These are usually combined with `EFFECT_TYPE_SINGLE` or `EFFECT_TYPE_FIELD`
 when the effect belongs to a monster or watches events from a range.
+
+The `_O` suffix means optional. The `_F` suffix means forced or mandatory.
+That suffix changes the legality habit: optional effects usually need a real
+legal outcome in `chk==0`, while mandatory triggers often activate because the
+event happened and then resolve as much as they can.
+
+Trigger effects are Spell Speed 1 unless another rule or card text says
+otherwise. Quick effects are Spell Speed 2 and are the usual script form for
+monster "(Quick Effect)" text. If multiple Trigger Effects want to activate at
+the same time, the Duel engine handles the Chain-building order; the script's
+job is to declare the correct type, event code, range, and optional/mandatory
+status.
 
 ```lua
 local e1=Effect.CreateEffect(c)
@@ -86,6 +99,37 @@ end
 `Duel.SelectTarget` registers official Chain targets. `Duel.GetFirstTarget`
 reads them at resolution. `Card.IsRelateToEffect` protects the operation from a
 target that left the place the effect expected.
+
+## Quick Effect Legality
+
+Quick Effects need both the correct type and the correct timing checks. A
+typical response effect uses `EFFECT_TYPE_QUICK_O`, an event such as
+`EVENT_CHAINING`, a range, and a condition that inspects the Chain Link being
+answered.
+
+Cyber Dragon Infinity (`c10443957.lua`) is a compact local example:
+
+```lua
+e3:SetCategory(CATEGORY_NEGATE+CATEGORY_DESTROY)
+e3:SetType(EFFECT_TYPE_QUICK_O)
+e3:SetCode(EVENT_CHAINING)
+e3:SetProperty(EFFECT_FLAG_DAMAGE_STEP+EFFECT_FLAG_DAMAGE_CAL)
+e3:SetRange(LOCATION_MZONE)
+e3:SetCondition(c10443957.discon)
+e3:SetCost(c10443957.discost)
+e3:SetTarget(c10443957.distg)
+e3:SetOperation(c10443957.disop)
+
+function c10443957.discon(e,tp,eg,ep,ev,re,r,rp)
+    return not e:GetHandler():IsStatus(STATUS_BATTLE_DESTROYED)
+        and Duel.IsChainNegatable(ev)
+end
+```
+
+The condition is not doing the whole timing job by itself. `SetType`,
+`SetCode`, `SetRange`, and `SetProperty` make the effect available at the broad
+timing; the condition rejects the current Chain Link when this particular card
+should not respond.
 
 ## Optional Trigger Effects
 
@@ -161,3 +205,11 @@ Related lessons:
 - [Targeting flow](targeting-flow)
 - [Cost, target, and operation lifecycle](cost-target-operation-lifecycle)
 - [EFFECT_TYPE constants and templates](effect-types)
+
+Relevant API pages:
+
+- [`Effect.SetType`](/api/functions/Effect/SetType)
+- [`Effect.SetCode`](/api/functions/Effect/SetCode)
+- [`Effect.SetProperty`](/api/functions/Effect/SetProperty)
+- [`Duel.IsChainNegatable`](/api/functions/Duel/IsChainNegatable)
+- [`Card.IsStatus`](/api/functions/Card/IsStatus)

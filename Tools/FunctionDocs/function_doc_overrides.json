@@ -16026,10 +16026,33 @@
     },
     "Card.IsStatus": {
       "summary_en": [
-        "Checks whether c currently has at least one status flag from status."
+        "Checks whether c currently has at least one status flag from status.",
+        "Common legality checks use this for temporary engine states such as STATUS_BATTLE_DESTROYED before allowing a Damage Step Quick Effect."
       ],
       "summary_zh": [
-        "判断c当前状态是否包含status中的至少一个标志。"
+        "判断c当前状态是否包含status中的至少一个标志。",
+        "常见合法性检查会用它判断STATUS_BATTLE_DESTROYED等临时核心状态，再决定伤害步骤的Quick效果能否发动。"
+      ],
+      "params": [
+        {
+          "name": "c",
+          "type": "Card",
+          "description": "Card whose current status flags are checked.",
+          "description_zh": "要检查当前状态标志的卡。"
+        },
+        {
+          "name": "status",
+          "type": "int",
+          "description": "Status flag or combined status mask, such as STATUS_BATTLE_DESTROYED.",
+          "description_zh": "状态标志或组合状态掩码，例如STATUS_BATTLE_DESTROYED。"
+        }
+      ],
+      "returns": [
+        {
+          "type": "bool",
+          "description": "true if c has any flag included in status.",
+          "description_zh": "若c具有status中的任意标志则为true。"
+        }
       ]
     },
     "Card.IsSummonLocation": {
@@ -19730,11 +19753,28 @@
     "Duel.IsChainNegatable": {
       "summary_en": [
         "Compatibility check for whether chainc's activation can be negated.",
-        "In this MDPro3 core binding, the function currently returns true for any chain count."
+        "In this MDPro3 core binding, the function currently returns true for any chain count.",
+        "Local scripts still call it in negation conditions so the script expresses the intended activation-legality check."
       ],
       "summary_zh": [
         "用于兼容的连锁发动可否被无效检查。",
-        "在当前MDPro3核心绑定中，此函数对任意连锁序号都会返回true。"
+        "在当前MDPro3核心绑定中，此函数对任意连锁序号都会返回true。",
+        "本地脚本仍会在无效发动的条件中调用它，用来表达预期的发动合法性检查。"
+      ],
+      "params": [
+        {
+          "name": "chainc",
+          "type": "int",
+          "description": "Chain Link number to test, commonly the ev argument in an EVENT_CHAINING condition.",
+          "description_zh": "要检查的连锁序号，通常是EVENT_CHAINING条件中的ev参数。"
+        }
+      ],
+      "returns": [
+        {
+          "type": "bool",
+          "description": "true when this binding considers that Chain Link's activation negatable.",
+          "description_zh": "若当前绑定认为该连锁环节的发动可以被无效则为true。"
+        }
       ]
     },
     "Duel.IsChainSolving": {
@@ -19744,10 +19784,12 @@
     },
     "Duel.IsDamageCalculated": {
       "summary_en": [
-        "Returns whether damage calculation has been performed in the current battle/damage-step state."
+        "Returns whether damage calculation has been performed in the current battle/damage-step state.",
+        "Use it with Duel.GetCurrentPhase in Damage Step conditions, especially for ATK/DEF-changing effects that stop being legal after damage calculation."
       ],
       "summary_zh": [
-        "返回当前战斗/伤害步骤状态中是否已经进行过伤害计算。"
+        "返回当前战斗/伤害步骤状态中是否已经进行过伤害计算。",
+        "在伤害步骤条件中可与Duel.GetCurrentPhase搭配使用，尤其适用于伤害计算后不能再发动的ATK/DEF变更效果。"
       ],
       "core_summary_en": [
         "Returns whether damage calculation is complete."
@@ -19758,7 +19800,9 @@
       "params": [],
       "returns": [
         {
-          "type": "bool"
+          "type": "bool",
+          "description": "true after damage calculation has been performed in the current battle timing.",
+          "description_zh": "当前战斗时点已经进行过伤害计算时为true。"
         }
       ]
     },
@@ -23164,7 +23208,13 @@
     "Effect.SetProperty": {
       "summary_en": [
         "Sets e's property flags. prop1 holds the normal effect property flags; prop2 is used for the second property word when needed.",
-        "Internal flags are preserved when prop1 is replaced."
+        "Internal flags are preserved when prop1 is replaced.",
+        "Learner-facing flags include EFFECT_FLAG_CARD_TARGET for official targets, EFFECT_FLAG_DAMAGE_STEP and EFFECT_FLAG_DAMAGE_CAL for Damage Step timing, and EFFECT_FLAG_PLAYER_TARGET for effects that apply to players."
+      ],
+      "summary_zh": [
+        "设置e的Property标志。prop1保存常规效果性质标志；需要第二组性质标志时使用prop2。",
+        "替换prop1时会保留内部标志。",
+        "学习时常见的标志包括：EFFECT_FLAG_CARD_TARGET用于正式取对象，EFFECT_FLAG_DAMAGE_STEP与EFFECT_FLAG_DAMAGE_CAL用于伤害步骤时点，EFFECT_FLAG_PLAYER_TARGET用于影响玩家的效果。"
       ],
       "core_summary_en": [
         "Sets e's property flags."
@@ -23175,16 +23225,22 @@
       "params": [
         {
           "name": "e",
-          "type": "Effect"
+          "type": "Effect",
+          "description": "Effect whose property flags are set.",
+          "description_zh": "要设置Property标志的效果。"
         },
         {
           "name": "prop1",
-          "type": "int"
+          "type": "int",
+          "description": "Primary effect property bitmask.",
+          "description_zh": "主要效果性质位掩码。"
         },
         {
           "name": "prop2",
           "type": "int",
-          "optional": true
+          "optional": true,
+          "description": "Optional second property bitmask for flags stored in the second property word.",
+          "description_zh": "可选的第二组性质位掩码，用于保存在第二个Property字段中的标志。"
         }
       ],
       "returns": []
