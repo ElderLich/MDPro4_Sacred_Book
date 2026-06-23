@@ -51,7 +51,7 @@ of pouring every detail into one page. The broad navigation shape should be:
 | Classification area | Sacred Book split |
 | --- | --- |
 | Monster Cards: Normal, Ritual, Fusion, Synchro, Xyz, Pendulum, Link, Special Summon Monsters | Keep general script foundations in [Learning Path](/learn/). [Ritual Procedure Guide](/learn/ritual-procedure), [Fusion Procedure Guide](/learn/fusion-procedure), [Synchro Procedure Guide](/learn/synchro-procedure), [Xyz Procedure Guide](/learn/xyz-procedure), [Link Procedure Guide](/learn/link-procedure), [Pendulum Procedure Guide](/learn/pendulum-procedure), [Special Summon-only Monster Guide](/learn/special-summon-only-monsters), and [Tribute Summon Materials](/learn/tribute-summon-materials) now cover the main procedure families and Tribute-material variants. |
-| Monster subtypes: Gemini, Toon, Union, Spirit | Add subtype guides only after the core procedure pages, because each subtype needs its own rule hooks, reset patterns, and local examples. |
+| Monster subtypes: Gemini, Toon, Union, Spirit | [Gemini Monsters](/learn/gemini-monsters), [Toon Monsters](/learn/toon-monsters), [Union Monsters](/learn/union-monsters), and [Spirit Monsters](/learn/spirit-monsters) now split these subtype topics into focused guides with local constants, helper patterns, reset behavior, and local examples. |
 | Spell Cards: Normal, Continuous, Equip, Field, Quick-Play, Ritual | [Spell Card Patterns](/learn/spell-card-patterns) now covers Normal, Continuous, Quick-Play, and Ritual Spell activation shapes; [Equip Spells and Equip Cards](/learn/equip-spells), [Field Spells](/learn/field-spells), and [Ritual Procedure Guide](/learn/ritual-procedure) are focused child pages. |
 | Trap Cards: Normal, Continuous, Counter | [Trap Card Patterns](/learn/trap-card-patterns) now separates Normal Trap activation, Continuous Trap face-up effects, hand/set-turn exceptions, and Counter Trap/Spell Speed 3 patterns. |
 | Effects that affect cards | Expand [Methods for Affecting Cards](/learn/affecting-cards) into focused child pages for stat changes, immunity/negation, control changes, position changes, equip relationships, counters, and location movement. [Counters](/learn/counters) now covers visible card counters as one focused child page. |
@@ -215,11 +215,36 @@ Several details were verified directly against local MDPro3/YGOPro sources:
   Files (`c11163040.lua`), Arcane Barrier (`c17896384.lua`), The World Legacy
   (`c92562411.lua`), Power of the Guardians (`c1118137.lua`), and Magical
   Citadel of Endymion (`c39910367.lua`).
+- Monster subtype behavior was checked against local `constant.lua`,
+  `procedure.lua`, `utility.lua`, `common.h`, `effect.h`, `card.cpp`,
+  `libcard.cpp`, `libduel.cpp`, `operations.cpp`, and local scripts. Gemini
+  behavior uses `TYPE_DUAL`, `SUMMON_TYPE_DUAL`,
+  `EFFECT_DUAL_SUMMONABLE`, `EFFECT_DUAL_STATUS`,
+  `Auxiliary.EnableDualAttribute`, and `Card.EnableDualState`; local examples
+  checked include Gemini Soldier (`c68366996.lua`), Gemini Ablation
+  (`c80758812.lua`), Gemini Booster (`c18096222.lua`), and Geminize Lord
+  Golknight (`c72305034.lua`). Toon behavior was verified as pattern-driven:
+  the local sources define `TYPE_TOON` but no shared `EnableToon` helper was
+  found; local examples checked include Toon Black Luster Soldier
+  (`c28711704.lua`), Blue-Eyes Toon Dragon (`c53183600.lua`), Toon Dragon
+  Egger (`c38369349.lua`), Toon Dark Magician (`c21296502.lua`), Toon Kingdom
+  (`c43175858.lua`), and Comic Hand (`c33453260.lua`). Union behavior was
+  checked through `Auxiliary.EnableUnionAttribute`,
+  `Auxiliary.CheckUnionEquip`, `Auxiliary.SetUnionState`,
+  `Card.CheckUnionTarget`, and `Card.GetUnionCount`; local examples include
+  Union Driver (`c99249638.lua`), Union Pilot (`c89357740.lua`), and Union
+  Hangar (`c66399653.lua`). Spirit behavior was checked through
+  `Auxiliary.EnableSpiritReturn`, the shared Spirit return condition/target
+  helpers, `EFFECT_SPIRIT_DONOT_RETURN`, and `EFFECT_SPIRIT_MAYNOT_RETURN`;
+  local examples include Yata Mirror (`c1200843.lua`), Kusanagi Sword
+  (`c48716139.lua`), Shinobaroness Peacock (`c25415052.lua`), and Shinobird
+  Power Spot (`c9553721.lua`).
 
 ## Quality Pass Log
 
 | Date | Downloaded page cluster | Sacred Book updates |
 | --- | --- | --- |
+| 2026-06-23 | Monster subtype expansion | Added focused [Gemini Monsters](/learn/gemini-monsters), [Toon Monsters](/learn/toon-monsters), [Union Monsters](/learn/union-monsters), and [Spirit Monsters](/learn/spirit-monsters) guides instead of folding subtype rules into a broad monster page. Each guide uses local constants, helper behavior, API links, and examples from local scripts. |
 | 2026-06-23 | Activation lifecycle: activated effects, activation legality, and condition/cost/target/operation callbacks | Expanded [Conditions, Costs, Activation Procedures, and Resolution](/learn/effect-callbacks), [Activation Legality](/learn/activation-legality), [Activated Effects](/learn/activated-effects), and [Cost, Target, And Operation Lifecycle](/learn/cost-target-operation-lifecycle) with event-condition signatures, Damage Step legality, Quick Effect negation checks, activation restrictions, Red-Eyes Fusion and Cyber Dragon Infinity examples, and API links for the referenced functions. |
 | 2026-06-23 | Foundation forever pass: effect objects, filters/groups, movement, continuous effects, stat modifiers, and LP effects | Expanded [Creation, building, and registration of an effect object](/learn/effect-object), [Filters, Card Objects, and Group Objects](/learn/filters-and-groups), [Functions that move cards across locations](/learn/moving-cards), [Effects That Apply Continuously](/learn/continuous-effects), [Continuous stat modifiers](/learn/continuous-stat-modifiers), and [LP Recovery and Effect Damage](/learn/lp-recovery-and-damage) with setter-shape maps, target-range modes, property flags, subgroup selection, movement routing, local dynamic value examples, pure LP activation checks, stepped LP examples, and API links. |
 | 2026-06-23 | Equip and Field Spell strict pass | Expanded [Equip Spells and Equip Cards](/learn/equip-spells) with activation-shape differences, core equip housekeeping, non-applying equip modifiers, lost-target triggers, and summon-then-equip notes. Added [Field Spells](/learn/field-spells) as a focused local-source guide because the Field Spell downloaded page is not present in the current archive folder. |

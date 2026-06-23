@@ -256,9 +256,11 @@ Parameters:
 Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3631
 
 ●void Card.EnableDualState(Card c)
-Registers an EFFECT_DUAL_STATUS client-hint effect on c.
+Registers EFFECT_DUAL_STATUS on c so local Gemini/Dual checks treat it as having gained its effects.
+This does not perform a Normal Summon or spend a Normal Summon. Use it only for effects that explicitly make a Gemini Monster be treated as having been Normal Summoned again.
+The registered status effect includes the local client hint and resets with the normal card event reset.
 Parameters:
-  c: Card
+  c: Card - Gemini Monster that should immediately gain Dual State.
 Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3511
 
 ●void Card.EnableReviveLimit(Card c)
@@ -1198,12 +1200,13 @@ Returns:
 Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3399
 
 ●int,int Card.GetUnionCount(Card c)
-Returns c's modern Union count and old Union count.
+Returns two values for c: the number of modern Union cards equipped to it, then the number of old Union cards equipped to it.
+The local core counts equipped cards with TYPE_UNION plus EFFECT_UNION_STATUS or EFFECT_OLDUNION_STATUS.
 Parameters:
-  c: Card
+  c: Card - Monster whose equipped Union cards should be counted.
 Returns:
-  int - Modern Union count.
-  int - Old Union count.
+  int - Number of equipped modern Union cards.
+  int - Number of equipped old Union cards.
 Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3523
 
 ●int Card.GetXyzType(Card c)
@@ -6221,13 +6224,14 @@ Parameters:
 Source: Utilities/utility.lua:1314
 
 ●bool Auxiliary.CheckUnionEquip(Card uc, Card tc, [int exclude_modern_count])
-Checks Union equip count compatibility between Union Monster uc and target tc, optionally ignoring some modern Union count.
+Checks whether Union Monster uc can be equipped to target tc under the local modern/old Union count rules.
+Use exclude_modern_count when a replacement-style effect will remove an already equipped modern Union before equipping another one.
 Parameters:
-  uc: Card
-  tc: Card
-  exclude_modern_count: int optional
+  uc: Card - Union Monster that would become equipped.
+  tc: Card - Monster that would receive the Union card.
+  exclude_modern_count: int optional - Modern Union count to ignore while checking the target, commonly 1 when replacing the currently equipped Union.
 Returns:
-  bool
+  bool - true if the target can receive this Union card under the count compatibility rule.
 Source: Utilities/utility.lua:335
 
 ●table Auxiliary.CreateChecks(function f, table list)

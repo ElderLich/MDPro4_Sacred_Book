@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-06-23T21:52:50+00:00",
+    "generated_at": "2026-06-23T22:10:55+00:00",
     "workspace": "D:\\Programs\\GitHub\\MDPro3_Sacred_Book",
     "dataeditorx_data": "D:\\Programs\\GitHub\\DataEditorX\\DataEditorX\\data",
     "mdpro3_locales": "D:\\Programs\\GitHub\\MDPro3_Data\\Data\\locales",
@@ -1118,15 +1118,20 @@
           "name": "c",
           "type": "Card",
           "optional": false,
-          "description": ""
+          "description": "Gemini Monster that should immediately gain Dual State.",
+          "description_zh": "要立即获得二重状态的二重怪兽。"
         }
       ],
       "returns": [],
       "description_zh": [
-        "给c登记带客户端提示的EFFECT_DUAL_STATUS效果。"
+        "给c登记EFFECT_DUAL_STATUS，使本地二重/Gemini检查将其视为已获得效果。",
+        "这不会进行通常召唤，也不会消耗通常召唤。只有在效果明确让二重怪兽当作再次通常召唤过时才使用。",
+        "登记的状态效果带有本地客户端提示，并按通常卡片事件重置。"
       ],
       "description_en": [
-        "Registers an EFFECT_DUAL_STATUS client-hint effect on c."
+        "Registers EFFECT_DUAL_STATUS on c so local Gemini/Dual checks treat it as having gained its effects.",
+        "This does not perform a Normal Summon or spend a Normal Summon. Use it only for effects that explicitly make a Gemini Monster be treated as having been Normal Summoned again.",
+        "The registered status effect includes the local client hint and resets with the normal card event reset."
       ],
       "english_status": "translated_exact",
       "source_files": [
@@ -6413,24 +6418,29 @@
           "name": "c",
           "type": "Card",
           "optional": false,
-          "description": ""
+          "description": "Monster whose equipped Union cards should be counted.",
+          "description_zh": "要统计其装备同盟卡数量的怪兽。"
         }
       ],
       "returns": [
         {
           "type": "int",
-          "description": "Modern Union count."
+          "description": "Number of equipped modern Union cards.",
+          "description_zh": "装备的新式同盟卡数量。"
         },
         {
           "type": "int",
-          "description": "Old Union count."
+          "description": "Number of equipped old Union cards.",
+          "description_zh": "装备的旧式同盟卡数量。"
         }
       ],
       "description_zh": [
-        "返回c当前的新式同盟数量和旧式同盟数量。"
+        "返回c的两个值：装备在其上的新式同盟数量，以及装备在其上的旧式同盟数量。",
+        "本地核心会统计带TYPE_UNION且带EFFECT_UNION_STATUS或EFFECT_OLDUNION_STATUS的装备卡。"
       ],
       "description_en": [
-        "Returns c's modern Union count and old Union count."
+        "Returns two values for c: the number of modern Union cards equipped to it, then the number of old Union cards equipped to it.",
+        "The local core counts equipped cards with TYPE_UNION plus EFFECT_UNION_STATUS or EFFECT_OLDUNION_STATUS."
       ],
       "english_status": "translated_exact",
       "source_files": [
@@ -35559,32 +35569,38 @@
           "name": "uc",
           "type": "Card",
           "optional": false,
-          "description": ""
+          "description": "Union Monster that would become equipped.",
+          "description_zh": "将要变成装备卡的同盟怪兽。"
         },
         {
           "name": "tc",
           "type": "Card",
           "optional": false,
-          "description": ""
+          "description": "Monster that would receive the Union card.",
+          "description_zh": "将要装备该同盟卡的怪兽。"
         },
         {
           "name": "exclude_modern_count",
           "type": "int",
           "optional": true,
-          "description": ""
+          "description": "Modern Union count to ignore while checking the target, commonly 1 when replacing the currently equipped Union.",
+          "description_zh": "检查对象时忽略的新式同盟数量；替换当前装备的同盟时通常为1。"
         }
       ],
       "returns": [
         {
           "type": "bool",
-          "description": ""
+          "description": "true if the target can receive this Union card under the count compatibility rule.",
+          "description_zh": "若按数量兼容规则该对象可以装备这张同盟卡，则为true。"
         }
       ],
       "description_zh": [
-        "检查同盟怪兽uc与对象tc之间的同盟装备数量兼容性，可选择忽略部分新式同盟数量。"
+        "检查同盟怪兽uc是否能按本地新式/旧式同盟数量规则装备给对象tc。",
+        "替换式效果会先移除已经装备的新式同盟再装备另一张同盟时，可使用exclude_modern_count忽略相应数量。"
       ],
       "description_en": [
-        "Checks Union equip count compatibility between Union Monster uc and target tc, optionally ignoring some modern Union count."
+        "Checks whether Union Monster uc can be equipped to target tc under the local modern/old Union count rules.",
+        "Use exclude_modern_count when a replacement-style effect will remove an already equipped modern Union before equipping another one."
       ],
       "english_status": "translated_exact",
       "source_files": [

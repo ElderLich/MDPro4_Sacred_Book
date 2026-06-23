@@ -257,9 +257,11 @@ Parameters:
 Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3631
 
 ●void Card.EnableDualState(Card c)
-给c登记带客户端提示的EFFECT_DUAL_STATUS效果。
+给c登记EFFECT_DUAL_STATUS，使本地二重/Gemini检查将其视为已获得效果。
+这不会进行通常召唤，也不会消耗通常召唤。只有在效果明确让二重怪兽当作再次通常召唤过时才使用。
+登记的状态效果带有本地客户端提示，并按通常卡片事件重置。
 Parameters:
-  c: Card
+  c: Card - 要立即获得二重状态的二重怪兽。
 Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3511
 
 ●void Card.EnableReviveLimit(Card c)
@@ -1209,12 +1211,13 @@ Returns:
 Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3399
 
 ●int,int Card.GetUnionCount(Card c)
-返回c当前的新式同盟数量和旧式同盟数量。
+返回c的两个值：装备在其上的新式同盟数量，以及装备在其上的旧式同盟数量。
+本地核心会统计带TYPE_UNION且带EFFECT_UNION_STATUS或EFFECT_OLDUNION_STATUS的装备卡。
 Parameters:
-  c: Card
+  c: Card - 要统计其装备同盟卡数量的怪兽。
 Returns:
-  int - Modern Union count.
-  int - Old Union count.
+  int - 装备的新式同盟卡数量。
+  int - 装备的旧式同盟卡数量。
 Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3523
 
 ●int Card.GetXyzType(Card c)
@@ -6259,13 +6262,14 @@ Parameters:
 Source: Utilities/utility.lua:1314
 
 ●bool Auxiliary.CheckUnionEquip(Card uc, Card tc, [int exclude_modern_count])
-检查同盟怪兽uc与对象tc之间的同盟装备数量兼容性，可选择忽略部分新式同盟数量。
+检查同盟怪兽uc是否能按本地新式/旧式同盟数量规则装备给对象tc。
+替换式效果会先移除已经装备的新式同盟再装备另一张同盟时，可使用exclude_modern_count忽略相应数量。
 Parameters:
-  uc: Card
-  tc: Card
-  exclude_modern_count: int optional
+  uc: Card - 将要变成装备卡的同盟怪兽。
+  tc: Card - 将要装备该同盟卡的怪兽。
+  exclude_modern_count: int optional - 检查对象时忽略的新式同盟数量；替换当前装备的同盟时通常为1。
 Returns:
-  bool
+  bool - 若按数量兼容规则该对象可以装备这张同盟卡，则为true。
 Source: Utilities/utility.lua:335
 
 ●table Auxiliary.CreateChecks(function f, table list)
