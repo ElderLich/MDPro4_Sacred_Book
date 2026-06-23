@@ -9,6 +9,22 @@ receives the modifier:
 - the equipped monster
 - a monster using this card as material
 
+## Choose The Modifier Shape
+
+Pick the effect type by asking who receives the modifier.
+
+| Receiver | Effect type | Key setters |
+| --- | --- | --- |
+| The handler itself | `EFFECT_TYPE_SINGLE` | `SetCode`, `SetValue`, and usually `EFFECT_FLAG_SINGLE_RANGE` plus `SetRange` |
+| Monsters or cards in a zone range | `EFFECT_TYPE_FIELD` | `SetRange`, `SetTargetRange`, optional `SetTarget`, `SetValue` |
+| The equipped monster | `EFFECT_TYPE_EQUIP` | `SetCode`, `SetValue`, plus a separate `EFFECT_EQUIP_LIMIT` |
+| The monster using this card as Xyz Material | `EFFECT_TYPE_XMATERIAL` | Material effect type, effect code, and value |
+| A temporary boost from an activated effect | Usually `EFFECT_TYPE_SINGLE` registered during resolution | `SetReset` is required |
+
+The value can be a fixed number or a callback. Use a callback when the amount
+depends on current cards, Levels, counters, materials, or another changing
+state.
+
 ## Handler-Only Modifier
 
 Use `EFFECT_TYPE_SINGLE` when the card modifies itself.
@@ -93,6 +109,16 @@ the modifier reaches.
 ```lua
 function s.val(e,c)
     return Duel.GetMatchingGroupCount(s.vfilter,e:GetOwnerPlayer(),LOCATION_MZONE,0,nil)*-300
+end
+```
+
+Local `c10002346.lua` uses the field-modifier version of this idea. It applies
+ATK and DEF updates to the controller's monsters, and the value function reads
+the handler's current Xyz Material count:
+
+```lua
+function s.val(e,c)
+    return e:GetHandler():GetOverlayCount()*200
 end
 ```
 

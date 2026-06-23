@@ -24,6 +24,25 @@ resolution.
 | [`Duel.SendtoExtraP`](/api/functions/Duel/SendtoExtraP) | Put a Pendulum Card face-up in the Extra Deck. |
 | [`Duel.GetControl`](/api/functions/Duel/GetControl) | Change control of cards. |
 
+## Movement Router
+
+Before choosing a function, identify what the card text is really doing.
+
+| Text shape | First question | Usual family |
+| --- | --- | --- |
+| "add to the hand", "send to the GY", "banish", "shuffle into the Deck" | Which destination is named? | `Duel.SendtoHand`, `Duel.SendtoGrave`, `Duel.Remove`, `Duel.SendtoDeck` |
+| "destroy" | Does the text specifically destroy? | `Duel.Destroy` |
+| "Tribute", "release" | Is it a cost, effect, or Summon procedure? | `Duel.Release` with the matching reason |
+| "discard" | Is it a discard or just send from hand to GY? | `Duel.DiscardHand` or `Duel.SendtoGrave` with discard reason |
+| "Special Summon" | Which player summons it, from where, in what position? | `Duel.SpecialSummon` |
+| "equip it to..." | Which card becomes the Equip Card? | `Duel.Equip` plus equip-limit effects |
+| "place in the Spell & Trap Zone" or "place in the Field Zone" | Is it being moved onto the field as a card type? | `Duel.MoveToField` plus type-changing effects when needed |
+| "take control" | How long does control last? | `Duel.GetControl` with reset data |
+
+This keeps "move this card somewhere" from becoming one oversized habit. The
+destination, reason, and whether the action places a card onto the field decide
+the function.
+
 ## Check The Card Can Move
 
 Movement filters should use the matching "able to" helper when one exists.
@@ -124,6 +143,18 @@ the script still needs to choose the right timing and legality checks.
 If an action places a card onto the field, check available zones before
 activation and again during resolution if the Chain can change them.
 
+Local scripts show the same routing in different card types:
+
+- `c1003840.lua` releases monsters, Special Summons the handler, then returns a
+  card to the Deck with `Duel.SendtoDeck`.
+- `c10204849.lua` uses `Duel.Equip` for an effect that turns a card into an
+  Equip Card.
+- `c1050355.lua` uses `Duel.MoveToField` when a card is placed into the Field
+  Zone.
+- `c99742859.lua` uses `Duel.SpecialSummonStep` and
+  `Duel.SpecialSummonComplete` when two monsters are Summoned in one grouped
+  process.
+
 ## Special Summon Movement
 
 Special Summon checks usually mirror the later summon call.
@@ -213,3 +244,23 @@ Duel.SendtoDeck(mat,nil,SEQ_DECKSHUFFLE,REASON_EFFECT+REASON_MATERIAL+REASON_FUS
 ```
 
 Use the reason that matches the card text and mechanic.
+
+Useful API pages:
+
+- [`Duel.SendtoHand`](/api/functions/Duel/SendtoHand)
+- [`Duel.SendtoDeck`](/api/functions/Duel/SendtoDeck)
+- [`Duel.SendtoGrave`](/api/functions/Duel/SendtoGrave)
+- [`Duel.Remove`](/api/functions/Duel/Remove)
+- [`Duel.Destroy`](/api/functions/Duel/Destroy)
+- [`Duel.Release`](/api/functions/Duel/Release)
+- [`Duel.DiscardHand`](/api/functions/Duel/DiscardHand)
+- [`Duel.SpecialSummon`](/api/functions/Duel/SpecialSummon)
+- [`Duel.SpecialSummonStep`](/api/functions/Duel/SpecialSummonStep)
+- [`Duel.SpecialSummonComplete`](/api/functions/Duel/SpecialSummonComplete)
+- [`Duel.SSet`](/api/functions/Duel/SSet)
+- [`Duel.MSet`](/api/functions/Duel/MSet)
+- [`Duel.Equip`](/api/functions/Duel/Equip)
+- [`Duel.MoveToField`](/api/functions/Duel/MoveToField)
+- [`Duel.Overlay`](/api/functions/Duel/Overlay)
+- [`Duel.SendtoExtraP`](/api/functions/Duel/SendtoExtraP)
+- [`Duel.GetControl`](/api/functions/Duel/GetControl)

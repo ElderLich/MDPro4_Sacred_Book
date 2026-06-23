@@ -27,6 +27,28 @@ LP changes affect players, not cards. That is why LP scripts often store:
 - the announced category with `Duel.SetOperationInfo`
 - event-provided damage/recovery values through callback arguments such as `ev`
 
+## Pure LP Effects And Activation Checks
+
+A pure fixed LP effect often has a simple legality branch:
+
+```lua
+function s.damtg(e,tp,eg,ep,ev,re,r,rp,chk)
+    if chk==0 then return true end
+    Duel.SetTargetPlayer(1-tp)
+    Duel.SetTargetParam(1000)
+    Duel.SetOperationInfo(0,CATEGORY_DAMAGE,nil,0,1-tp,1000)
+end
+```
+
+There is no card target and no destination to prove, so the activation check
+does not need a matching-card search. Local `c102380.lua` uses this kind of
+shape for a mandatory fixed-damage trigger.
+
+Add real checks when the LP amount or follow-up action depends on something
+that must be legal at activation: a target still needs target legality, a
+Special Summon needs an open Monster Zone, and a "destroy, then inflict damage"
+effect needs the action that comes first to be legal.
+
 ## Fixed Damage
 
 A fixed damage effect commonly stores the target player and amount during
@@ -124,6 +146,16 @@ Duel.RDComplete()
 Use stepped LP changes only when the script needs the timing behavior of a
 combined process. The define comments explicitly say `Duel.RDComplete()` is
 required after stepped `Damage` or `Recover` calls.
+
+Local `c12694768.lua` uses the simultaneous-damage style:
+
+```lua
+Duel.Damage(tp,d,REASON_EFFECT,true)
+Duel.Damage(1-tp,d,REASON_EFFECT,true)
+Duel.RDComplete()
+```
+
+Without `Duel.RDComplete()`, a stepped damage/recovery sequence is incomplete.
 
 ## Event Value Amounts
 

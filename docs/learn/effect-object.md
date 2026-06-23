@@ -40,6 +40,29 @@ c:RegisterEffect(e1)
 | `SetLabelObject` | Which object, usually another Effect or Group, should this effect remember? |
 | `SetReset` | When does a temporary effect disappear? |
 
+The setter list is not just vocabulary. It is a review checklist. If a script
+does something unexpected, ask which question was answered incorrectly: wrong
+effect type, wrong event code, missing property flag, wrong range, missing
+target range, a count code shared with the wrong effect, or a temporary effect
+without a reset.
+
+## Core Setter Shapes
+
+Most setters follow one of these shapes.
+
+| Shape | Examples | Notes |
+| --- | --- | --- |
+| Plain value | `SetType`, `SetCode`, `SetRange`, `SetValue(500)` | The effect stores an integer or bitmask. |
+| Function callback | `SetCondition`, `SetCost`, `SetTarget`, `SetOperation`, `SetValue(s.val)` | The engine calls the function later with a signature determined by the effect type/code. |
+| Player or location pair | `SetTargetRange(a,b)` | The meaning changes depending on the effect flags and effect code. |
+| Stored data | `SetLabel`, `SetLabelObject` | Labels are small integers; label objects are Effect, Group, Card, or other Lua-exposed objects. |
+| Lifetime rule | `SetReset` | Needed for temporary effects created after script load. |
+
+Do not guess callback signatures from the setter name alone. A target function
+for an activated effect, a target function for a continuous field effect, and a
+target function for an inherent Special Summon procedure all receive different
+arguments.
+
 ## User-Facing Text And Categories
 
 `SetDescription` usually receives `aux.Stringid(id,n)`, where `n` selects the
@@ -80,6 +103,40 @@ e1:SetProperty(prop1,prop2)
 
 Use the second slot only for constants that are documented as second-property
 flags. Do not mix ordinary `EFFECT_FLAG_*` values into the wrong slot.
+
+Common first-slot flags:
+
+| Flag | Use |
+| --- | --- |
+| `EFFECT_FLAG_CARD_TARGET` | The activation targets one or more cards. Pair it with target APIs. |
+| `EFFECT_FLAG_PLAYER_TARGET` | The effect targets or affects players; `SetTargetRange` usually uses `1`/`0` player bits. |
+| `EFFECT_FLAG_DELAY` | Optional trigger can activate after an event group is processed when its timing allows it. |
+| `EFFECT_FLAG_DAMAGE_STEP` | The effect may be used in the Damage Step. |
+| `EFFECT_FLAG_DAMAGE_CAL` | The effect may be used during damage calculation, when the card text/ruling allows it. |
+| `EFFECT_FLAG_SINGLE_RANGE` | A single continuous effect only applies while the handler is in `SetRange`. |
+| `EFFECT_FLAG_CANNOT_DISABLE` | Used for rule/procedure support effects that should not be negated like ordinary card effects. |
+
+These flags do not replace legality checks. For example,
+`EFFECT_FLAG_DAMAGE_STEP` can permit a Quick Effect to be offered in the Damage
+Step, but the condition/target still has to verify the card text's real
+requirements.
+
+## Target Range Modes
+
+`SetTargetRange` is context-sensitive.
+
+| Context | Example | Meaning |
+| --- | --- | --- |
+| Field effect affecting cards | `e:SetTargetRange(LOCATION_MZONE,0)` | Cards in the handler controller's Monster Zones only. |
+| Field effect affecting both fields | `e:SetTargetRange(LOCATION_MZONE,LOCATION_MZONE)` | Cards in both players' Monster Zones. |
+| Player-affecting field effect with `EFFECT_FLAG_PLAYER_TARGET` | `e:SetTargetRange(1,0)` | The handler controller is affected; the opponent is not. |
+| Special Summon procedure with `EFFECT_FLAG_SPSUM_PARAM` | `e:SetTargetRange(POS_FACEUP,1)` | Summon position and target player/opponent field parameter for that procedure. |
+
+Lava Golem's local script (`c102380.lua`) is a useful reminder that
+`SetTargetRange` can mean something very different once procedure flags are
+involved. Its Special Summon procedure uses `SetTargetRange(POS_FACEUP,1)`,
+while its later summon restriction uses `EFFECT_FLAG_PLAYER_TARGET` with
+`SetTargetRange(1,0)`.
 
 ## Hint Timing
 
@@ -196,6 +253,49 @@ scripts commonly call `g:KeepAlive()` and later clean up the kept group when the
 effect no longer needs it. Do not use a label object as a casual global
 variable; it creates lifetime concerns that a plain label avoids.
 
+Local scripts show two common long-lived Group patterns:
+
+```lua
+local sg=rg:SelectSubGroup(tp,s.fselect,true,2,2,tp)
+if sg then
+    sg:KeepAlive()
+    e:SetLabelObject(sg)
+    return true
+end
+```
+
+```lua
+local g=e:GetLabelObject()
+Duel.Release(g,REASON_SPSUMMON)
+g:DeleteGroup()
+```
+
+That shape appears in Lava Golem (`c102380.lua`): the procedure stores the
+selected Tributed monsters in the target callback, then releases and deletes
+that kept Group in the operation. Rescue Hedgehog (`c99742859.lua`) shows the
+other common pattern: keep a Group for a delayed End Phase watcher, store a
+field ID with `SetLabel`, and delete/reset the effect when the kept cards are
+gone.
+
+## Count Limits From Text
+
+`SetCountLimit` belongs on the effect object, but the correct arguments come
+from card text.
+
+| Card text shape | Common MDPro3/YGOPro shape |
+| --- | --- |
+| "Once per turn..." on one local effect | `e:SetCountLimit(1)` |
+| "You can only use this effect of [card] once per turn" | `e:SetCountLimit(1,id)` |
+| Several effects on the same card each once per turn | `id`, `id+o`, `id+o*2`, or another stable distinct code |
+| "You can only activate 1 [card] per turn" | Usually the activation effect gets the card-name count code. |
+| "Once per Chain" | `e:SetCountLimit(1,EFFECT_COUNT_CODE_CHAIN)` |
+| Shared one-effect-only clauses | Give the related effects the same count code. |
+
+For the full count-code discussion, see [Count Limits And Once Per Turn](count-limits).
+The important habit here is to decide the count code before cloning or
+registering several related effects. Accidentally sharing a code is just as bad
+as forgetting a count limit.
+
 ## Reset For Temporary Effects
 
 Effects created in `initial_effect` are usually part of the card's normal text.
@@ -230,3 +330,10 @@ Relevant API pages:
 - [`Card.RegisterEffect`](/api/functions/Card/RegisterEffect)
 - [`Duel.RegisterEffect`](/api/functions/Duel/RegisterEffect)
 - [`Effect.Clone`](/api/functions/Effect/Clone)
+- [`Effect.SetProperty`](/api/functions/Effect/SetProperty)
+- [`Effect.SetTargetRange`](/api/functions/Effect/SetTargetRange)
+- [`Effect.SetCountLimit`](/api/functions/Effect/SetCountLimit)
+- [`Effect.SetLabel`](/api/functions/Effect/SetLabel)
+- [`Effect.SetLabelObject`](/api/functions/Effect/SetLabelObject)
+- [`Group.KeepAlive`](/api/functions/Group/KeepAlive)
+- [`Group.DeleteGroup`](/api/functions/Group/DeleteGroup)

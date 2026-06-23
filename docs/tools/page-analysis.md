@@ -56,6 +56,21 @@ of pouring every detail into one page. The broad navigation shape should be:
 | Effects that affect cards | Expand [Methods for Affecting Cards](/learn/affecting-cards) into focused child pages for stat changes, immunity/negation, control changes, position changes, equip relationships, and location movement. |
 | Effects that affect players | Keep LP changes in [LP Recovery and Effect Damage](/learn/lp-recovery-and-damage), then add player restrictions, draw/hand/deck access restrictions, and player-targeted effects as separate pages. |
 
+## Forever Pass Rule
+
+Do not mark a downloaded tutorial page as fully covered until its headings,
+examples, tables, warnings, edge notes, and special cases have either:
+
+- an original Sacred Book equivalent,
+- a stronger local MDPro3/YGOPro replacement example, or
+- a documented reason for exclusion.
+
+External examples that mention another simulator should be treated as lesson
+prompts only. Replace them with local examples from `ygopro-scripts`, local
+define files, generated API data, or verified core behavior. When a downloaded
+page is too broad, split the coverage across focused Sacred Book pages rather
+than hiding every detail in one long guide.
+
 ## Verification Notes
 
 Several details were verified directly against local MDPro3/YGOPro sources:
@@ -83,6 +98,7 @@ Several details were verified directly against local MDPro3/YGOPro sources:
 | Date | Downloaded page cluster | Sacred Book updates |
 | --- | --- | --- |
 | 2026-06-23 | Activation lifecycle: activated effects, activation legality, and condition/cost/target/operation callbacks | Expanded [Conditions, Costs, Activation Procedures, and Resolution](/learn/effect-callbacks), [Activation Legality](/learn/activation-legality), [Activated Effects](/learn/activated-effects), and [Cost, Target, And Operation Lifecycle](/learn/cost-target-operation-lifecycle) with event-condition signatures, Damage Step legality, Quick Effect negation checks, activation restrictions, Red-Eyes Fusion and Cyber Dragon Infinity examples, and API links for the referenced functions. |
+| 2026-06-23 | Foundation forever pass: effect objects, filters/groups, movement, continuous effects, stat modifiers, and LP effects | Expanded [Creation, building, and registration of an effect object](/learn/effect-object), [Filters, Card Objects, and Group Objects](/learn/filters-and-groups), [Functions that move cards across locations](/learn/moving-cards), [Effects That Apply Continuously](/learn/continuous-effects), [Continuous stat modifiers](/learn/continuous-stat-modifiers), and [LP Recovery and Effect Damage](/learn/lp-recovery-and-damage) with setter-shape maps, target-range modes, property flags, subgroup selection, movement routing, local dynamic value examples, pure LP activation checks, stepped LP examples, and API links. |
 
 ## Intentional Rewrites
 

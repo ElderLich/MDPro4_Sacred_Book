@@ -19,6 +19,11 @@ Several different effect types can feel "continuous":
 The exact behavior depends on `SetCode`, `SetRange`, `SetTargetRange`,
 `SetTarget`, and `SetValue`.
 
+Continuous effects usually do not have an operation function. They are active
+rules that the engine checks while their range, target, and reset conditions
+are true. Event-watching continuous effects are the exception: those use a
+continuous type with an event code and callback functions.
+
 ## Handler-Only Effects
 
 Use `EFFECT_TYPE_SINGLE` when the card itself gains or loses a property.
@@ -79,6 +84,18 @@ e1:SetValue(s.atkval)
 
 The callback receives the effect and, for many continuous value effects, the
 card being affected.
+
+Local script `c10002346.lua` uses this pattern for a field modifier:
+
+```lua
+function s.val(e,c)
+    return e:GetHandler():GetOverlayCount()*200
+end
+```
+
+Here `e:GetHandler()` is the card providing the effect, while `c` is each
+monster receiving the ATK or DEF update. Recalculate inside the value function
+when the amount can change during the Duel.
 
 ## Equip Effects
 

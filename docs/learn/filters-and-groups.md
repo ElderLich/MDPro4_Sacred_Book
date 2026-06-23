@@ -55,6 +55,35 @@ local g=Duel.GetMatchingGroup(s.spfilter,tp,LOCATION_GRAVE,0,nil,e,tp)
 Here each filter call receives `c,e,tp`. The `nil` before `e,tp` is the
 excluded card or group.
 
+## Signature Map
+
+Most filter APIs have the same mental shape:
+
+```lua
+API(filter, player, location1, location2, min_or_count, excluded, extra...)
+```
+
+The API chooses each candidate card and calls:
+
+```lua
+filter(candidate, extra...)
+```
+
+That means the first argument in your filter is always the candidate card, not
+the activating effect or the player. Pass `e`, `tp`, archetype codes, levels,
+or other comparison data after the excluded argument.
+
+```lua
+function s.thfilter(c,setcode)
+    return c:IsSetCard(setcode) and c:IsAbleToHand()
+end
+
+Duel.IsExistingMatchingCard(s.thfilter,tp,LOCATION_GRAVE,0,1,nil,0x123)
+```
+
+This is also why direct `Card.*` functions work as filters when their argument
+order already matches the question.
+
 ## The Excluded Card Or Group
 
 Matching APIs commonly include an `ex` argument. It can be `nil`, a `Card`, or
@@ -83,6 +112,21 @@ Checking whether cards exist and selecting cards are separate actions.
 The difference matters. If the card text targets, use target functions. If it
 does not target, selection often happens during resolution with matching-card
 functions.
+
+## Which Selector Should I Reach For?
+
+Use this quick rule before writing the callback:
+
+| Text or script need | Check with | Select with |
+| --- | --- | --- |
+| The card text says "target". | `Duel.IsExistingTarget` | `Duel.SelectTarget` |
+| The effect chooses cards during resolution. | `Duel.IsExistingMatchingCard` | `Duel.SelectMatchingCard` |
+| You already collected a candidate Group. | `Group.IsExists` or `#g` | `Group.Select` or `Group.FilterSelect` |
+| You need all matching cards, not player choice. | `Duel.GetMatchingGroupCount` | `Duel.GetMatchingGroup` |
+
+Do not use `Duel.SelectTarget` just because a player chooses a card. In script
+terms, targeting is a specific activation-time promise stored on the Chain
+Link.
 
 ## Targeting Flow
 
@@ -181,6 +225,32 @@ end
 That swap pattern is useful when the two cards need stable roles, such as "my
 card" and "opponent's card."
 
+Local scripts also use two-card Groups for stricter paired checks. In
+`c99742859.lua`, the script first tests whether a candidate group has two cards
+with different race, attribute, and Level values, then splits the selected
+group:
+
+```lua
+function s.spcheck(g)
+    return #g==2
+        and g:GetClassCount(Card.GetRace)==2
+        and g:GetClassCount(Card.GetAttribute)==2
+        and g:GetClassCount(Card.GetLevel)==2
+end
+
+local sg=g:SelectSubGroup(tp,s.spcheck,false,2,2)
+if sg then
+    local tc1=sg:GetFirst()
+    local tc2=sg:GetNext()
+    Duel.SpecialSummonStep(tc1,0,tp,tp,false,false,POS_FACEUP)
+    Duel.SpecialSummonStep(tc2,0,tp,tp,false,false,POS_FACEDOWN_DEFENSE)
+    Duel.SpecialSummonComplete()
+end
+```
+
+That is a good pattern when "choose two cards that satisfy a relationship"
+cannot be expressed by a one-card filter alone.
+
 ## Filtering A Group
 
 If you already have a Group, filter it instead of scanning the field again.
@@ -200,6 +270,21 @@ local sg=g:FilterSelect(tp,Card.IsAbleToGrave,1,1,nil)
 ```
 
 Use it when the candidate pool is already in a Group.
+
+`Group.Filter` returns a new Group. `Group.FilterSelect` asks the player to
+choose from the filtered result.
+
+```lua
+local faceup=g:Filter(Card.IsFaceup,nil)
+local sendable=faceup:Filter(Card.IsAbleToGrave,nil)
+```
+
+```lua
+local sg=g:FilterSelect(tp,Card.IsAbleToGrave,1,1,nil)
+```
+
+If the effect moves every card that still qualifies, filter. If the player
+chooses some of them, filter-select or select from the filtered Group.
 
 ## Other Ways To Create Groups
 
@@ -239,6 +324,27 @@ end
 ```
 
 Use `IsExists` for a rule and `IsContains` for membership of a known card.
+
+## Checking Or Selecting Subgroups
+
+Some effects need a valid set, not just valid individual cards: two monsters
+with different names, monsters whose Levels add up, or multiple cards with
+different races. Use subgroup helpers for those.
+
+```lua
+function s.diffcheck(g)
+    return #g==2 and g:GetClassCount(Card.GetCode)==2
+end
+
+if g:CheckSubGroup(s.diffcheck,2,2) then
+    local sg=g:SelectSubGroup(tp,s.diffcheck,false,2,2)
+end
+```
+
+`CheckSubGroup` belongs in activation legality. `SelectSubGroup` belongs where
+the player actually chooses. If the chosen Group must survive until a delayed
+operation, call `KeepAlive` and later `DeleteGroup`; see
+[Creation, building, and registration of an effect object](effect-object).
 
 ## Counting
 
@@ -297,6 +403,10 @@ Useful API pages:
 - [`Duel.SelectTarget`](/api/functions/Duel/SelectTarget)
 - [`Group.Filter`](/api/functions/Group/Filter)
 - [`Group.FilterSelect`](/api/functions/Group/FilterSelect)
+- [`Group.FilterCount`](/api/functions/Group/FilterCount)
+- [`Group.GetClassCount`](/api/functions/Group/GetClassCount)
+- [`Group.CheckSubGroup`](/api/functions/Group/CheckSubGroup)
+- [`Group.SelectSubGroup`](/api/functions/Group/SelectSubGroup)
 - [`Group.Select`](/api/functions/Group/Select)
 - [`Group.IsExists`](/api/functions/Group/IsExists)
 - [`Group.IsContains`](/api/functions/Group/IsContains)
