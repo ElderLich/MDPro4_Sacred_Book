@@ -2294,25 +2294,34 @@
     },
     "Auxiliary.EnablePendulumAttribute": {
       "summary_en": [
-        "Registers the Pendulum Summon procedure for Pendulum Monster c.",
-        "Unless reg is false, it also registers the Pendulum Card activation effect from the hand."
+        "Registers the standard Pendulum Summon procedure for Pendulum Monster c.",
+        "The procedure is a LOCATION_PZONE EFFECT_SPSUMMON_PROC_G with SUMMON_TYPE_PENDULUM, using Auxiliary.PendCondition and Auxiliary.PendOperation.",
+        "Unless reg is false, the helper also registers the simple Pendulum Card activation effect from the hand."
       ],
       "summary_zh": [
-        "为灵摆怪兽c登记灵摆召唤手续。",
-        "除非reg为false，否则也会登记从手牌发动该灵摆卡的效果。"
+        "为灵摆怪兽c登记标准灵摆召唤手续。",
+        "该手续是在LOCATION_PZONE生效的EFFECT_SPSUMMON_PROC_G，召唤类型为SUMMON_TYPE_PENDULUM，并使用Auxiliary.PendCondition和Auxiliary.PendOperation。",
+        "除非reg为false，否则此辅助函数还会登记从手牌发动该灵摆卡的简易发动效果。"
       ],
       "core_summary_en": [
         "Registers the standard Pendulum Summon procedure for c."
       ],
+      "core_summary_zh": [
+        "为c登记标准灵摆召唤手续。"
+      ],
       "params": [
         {
           "name": "c",
-          "type": "Card"
+          "type": "Card",
+          "description": "Pendulum Monster receiving the shared Pendulum Summon procedure.",
+          "description_zh": "要登记共通灵摆召唤手续的灵摆怪兽。"
         },
         {
           "name": "reg",
           "type": "bool|nil",
-          "optional": true
+          "optional": true,
+          "description": "When false, skip the default hand activation effect. nil or true registers it.",
+          "description_zh": "为false时不登记默认的手牌发动效果；nil或true时登记。"
         }
       ],
       "returns": []
@@ -2320,11 +2329,11 @@
     "Auxiliary.EnableReviveLimitPendulumSummonable": {
       "summary_en": [
         "Enables revive-limit handling for c while also allowing it to be Pendulum Summoned from loc.",
-        "The helper stores loc on c's metatable and completes c's procedure when it is successfully Pendulum Summoned."
+        "The helper calls Card.EnableReviveLimit, stores loc on c's metatable as psummonable_location, and completes c's procedure when it is successfully Pendulum Summoned."
       ],
       "summary_zh": [
         "给c启用苏生限制处理，同时允许其从loc对应位置进行灵摆召唤。",
-        "该辅助函数会把loc保存到c的metatable，并在c成功灵摆召唤时完成正规手续。"
+        "该辅助函数会调用Card.EnableReviveLimit，把loc以psummonable_location保存到c的metatable，并在c成功灵摆召唤时完成正规手续。"
       ],
       "core_summary_en": [
         "Enables revive-limit Pendulum Summon handling."
@@ -2335,13 +2344,16 @@
       "params": [
         {
           "name": "c",
-          "type": "Card"
+          "type": "Card",
+          "description": "Special Summon Monster that should be allowed to complete its procedure by Pendulum Summon.",
+          "description_zh": "可通过灵摆召唤完成正规手续的特殊召唤怪兽。"
         },
         {
           "name": "loc",
           "type": "int",
           "optional": true,
-          "description": "default: 0xff"
+          "description": "Location mask from which the card is allowed to be Pendulum Summoned. Defaults to 0xff.",
+          "description_zh": "允许该卡进行灵摆召唤的位置掩码。默认值为0xff。"
         }
       ],
       "returns": []
@@ -5848,13 +5860,18 @@
     },
     "Auxiliary.PSSCompleteProcedure": {
       "summary_en": [
-        "Completes the procedure for monsters that were Special Summoned by Pendulum Summon through the revive-limit helper."
+        "Completes the procedure for monsters configured by Auxiliary.EnableReviveLimitPendulumSummonable after they are successfully Pendulum Summoned.",
+        "The operation checks Card.IsSummonType(SUMMON_TYPE_PENDULUM) before calling Card.CompleteProcedure."
       ],
       "summary_zh": [
-        "对通过复活限制辅助函数设置、并以灵摆召唤特殊召唤的怪兽完成正规手续。"
+        "对由Auxiliary.EnableReviveLimitPendulumSummonable设置、并成功灵摆召唤的怪兽完成正规手续。",
+        "该操作会先检查Card.IsSummonType(SUMMON_TYPE_PENDULUM)，再调用Card.CompleteProcedure。"
       ],
       "core_summary_en": [
         "Completes the procedure after a Pendulum Summon when appropriate."
+      ],
+      "core_summary_zh": [
+        "在适用的灵摆召唤成功后完成正规手续。"
       ],
       "params": [
         {
@@ -5894,10 +5911,12 @@
     },
     "Auxiliary.PendCondition": {
       "summary_en": [
-        "Condition function for the shared Pendulum Summon procedure. It checks the two Pendulum Zones, available locations and zones, once-per-turn state, and valid summonable monsters."
+        "Condition function for the shared Pendulum Summon procedure.",
+        "It checks the two Pendulum Zones, current scales, hand and face-up Extra Deck candidate pools, available Monster Zones, once-per-turn state, extra Pendulum Summon effects, and whether at least one candidate can be Pendulum Summoned."
       ],
       "summary_zh": [
-        "共通灵摆召唤手续的条件函数；检查2个灵摆区域、可用位置和区域、每回合状态，以及可召唤怪兽。"
+        "共通灵摆召唤手续的条件函数。",
+        "它会检查2个灵摆区域、当前刻度、手牌和表侧额外卡组的候选范围、可用怪兽区域、每回合状态、额外灵摆召唤效果，以及是否至少有1只候选怪兽可以灵摆召唤。"
       ],
       "core_summary_en": [
         "Condition function for the shared Pendulum Summon procedure."
@@ -5909,11 +5928,15 @@
         },
         {
           "name": "c",
-          "type": "Card|nil"
+          "type": "Card|nil",
+          "description": "Procedure handler. When nil, the helper returns true for the core's availability probe.",
+          "description_zh": "手续的处理卡。为nil时，此辅助函数会为核心的可用性探测返回true。"
         },
         {
           "name": "og",
-          "type": "Group|nil"
+          "type": "Group|nil",
+          "description": "Optional candidate group supplied by the core or another helper; nil uses the player's hand/Extra Deck candidates.",
+          "description_zh": "核心或其他辅助函数提供的可选候选Group；为nil时使用玩家手牌/额外卡组候选。"
         }
       ],
       "returns": [
@@ -5925,10 +5948,12 @@
     },
     "Auxiliary.PendOperation": {
       "summary_en": [
-        "Operation function for the shared Pendulum Summon procedure. It chooses the regular or extra Pendulum Summon effect, selects monsters within hand/Extra Deck zone limits, updates the checklist, and merges the selection into sg."
+        "Operation function for the shared Pendulum Summon procedure.",
+        "It chooses the regular or extra Pendulum Summon option, computes hand, Extra Deck, and total Monster Zone limits, selects a legal subgroup, updates the shared checklist or consumes the extra effect's count limit, and merges the selected cards into sg for the core group Summon path."
       ],
       "summary_zh": [
-        "共通灵摆召唤手续的操作函数；选择通常或额外灵摆召唤效果，在手牌/额外卡组区域限制内选择怪兽，更新检查标记，并把选择合并到sg。"
+        "共通灵摆召唤手续的操作函数。",
+        "它会选择通常或额外灵摆召唤选项，计算手牌、额外卡组和总怪兽区域限制，选择合法子组，更新共通检查标记或消耗额外效果次数限制，并把所选卡合并到sg供核心的组召唤流程处理。"
       ],
       "core_summary_en": [
         "Operation function for the shared Pendulum Summon procedure."
@@ -5968,25 +5993,33 @@
         },
         {
           "name": "c",
-          "type": "Card"
+          "type": "Card",
+          "description": "Left Pendulum Zone card whose procedure is being used.",
+          "description_zh": "正在使用其手续的左侧灵摆区域卡。"
         },
         {
           "name": "sg",
-          "type": "Group"
+          "type": "Group",
+          "description": "Core-provided group that receives the selected Pendulum Summon monsters.",
+          "description_zh": "核心提供的Group，用于接收选择的灵摆召唤怪兽。"
         },
         {
           "name": "og",
-          "type": "Group|nil"
+          "type": "Group|nil",
+          "description": "Optional candidate group; nil rebuilds candidates from the player's hand and face-up Extra Deck.",
+          "description_zh": "可选候选Group；为nil时从玩家手牌和表侧额外卡组重新取得候选。"
         }
       ],
       "returns": []
     },
     "Auxiliary.PendOperationCheck": {
       "summary_en": [
-        "Returns a group check that enforces the hand, Extra Deck, and total zone limits for a Pendulum Summon selection."
+        "Returns a group check that enforces the hand, Extra Deck, and total Monster Zone limits for a Pendulum Summon selection.",
+        "The returned function counts selected Extra Deck cards separately from non-Extra Deck cards before accepting the subgroup."
       ],
       "summary_zh": [
-        "返回组检查函数，用于限制一次灵摆召唤选择中的手牌数量、额外卡组数量和总区域数量。"
+        "返回组检查函数，用于限制一次灵摆召唤选择中的手牌数量、额外卡组数量和总怪兽区域数量。",
+        "返回的函数会分别统计所选额外卡组卡和非额外卡组卡，再判断该子组是否合法。"
       ],
       "core_summary_en": [
         "Returns a group check for Pendulum Summon zone limits."
@@ -5994,15 +6027,21 @@
       "params": [
         {
           "name": "ft1",
-          "type": "int"
+          "type": "int",
+          "description": "Maximum selected monsters from non-Extra Deck locations, usually the hand.",
+          "description_zh": "非额外卡组位置的最多选择数量，通常是手牌。"
         },
         {
           "name": "ft2",
-          "type": "int"
+          "type": "int",
+          "description": "Maximum selected monsters from the face-up Extra Deck.",
+          "description_zh": "表侧额外卡组的最多选择数量。"
         },
         {
           "name": "ft",
-          "type": "int"
+          "type": "int",
+          "description": "Maximum total selected monsters.",
+          "description_zh": "总共最多选择数量。"
         }
       ],
       "returns": [
@@ -6060,10 +6099,12 @@
     },
     "Auxiliary.PendulumSummonableBool": {
       "summary_en": [
-        "Returns true if c has a psummonable_location flag that includes its current location."
+        "Returns true if c has a psummonable_location flag that includes its current location.",
+        "The shared Pendulum candidate filter passes this result as the nocheck and nolimit values for Card.IsCanBeSpecialSummoned, allowing revive-limit Pendulum Summonable monsters only from configured locations."
       ],
       "summary_zh": [
-        "c具有psummonable_location标记且当前位置包含在其中时返回true。"
+        "c具有psummonable_location标记且当前位置包含在其中时返回true。",
+        "共通灵摆候选筛选会把此结果作为Card.IsCanBeSpecialSummoned的nocheck和nolimit值，因此只有位于已设置位置的复活限制怪兽才会被允许按该方式灵摆召唤。"
       ],
       "core_summary_en": [
         "Checks the psummonable_location flag for c."
@@ -6071,7 +6112,9 @@
       "params": [
         {
           "name": "c",
-          "type": "Card"
+          "type": "Card",
+          "description": "Card previously configured by Auxiliary.EnableReviveLimitPendulumSummonable.",
+          "description_zh": "先前由Auxiliary.EnableReviveLimitPendulumSummonable设置的卡。"
         }
       ],
       "returns": [
@@ -12446,10 +12489,12 @@
     },
     "Card.GetLeftScale": {
       "summary_en": [
-        "Returns c's current left Pendulum Scale value."
+        "Returns c's current left Pendulum Scale value.",
+        "While c is in a Pendulum Zone, the core applies EFFECT_UPDATE_LSCALE and EFFECT_CHANGE_LSCALE modifiers. Outside a Pendulum Zone, it returns the card-data left scale."
       ],
       "summary_zh": [
-        "返回c当前的左灵摆刻度数值。"
+        "返回c当前的左灵摆刻度数值。",
+        "c在灵摆区域时，核心会应用EFFECT_UPDATE_LSCALE和EFFECT_CHANGE_LSCALE修正；不在灵摆区域时返回卡片数据中的左刻度。"
       ],
       "core_summary_en": [
         "Returns c's left Pendulum Scale."
@@ -12465,7 +12510,9 @@
       ],
       "returns": [
         {
-          "type": "int"
+          "type": "int",
+          "description": "Current left Pendulum Scale value.",
+          "description_zh": "当前左灵摆刻度数值。"
         }
       ]
     },
@@ -13619,10 +13666,12 @@
     },
     "Card.GetRightScale": {
       "summary_en": [
-        "Returns c's current right Pendulum Scale value."
+        "Returns c's current right Pendulum Scale value.",
+        "While c is in a Pendulum Zone, the core applies EFFECT_UPDATE_RSCALE and EFFECT_CHANGE_RSCALE modifiers. Outside a Pendulum Zone, it returns the card-data right scale."
       ],
       "summary_zh": [
-        "返回c当前的右灵摆刻度数值。"
+        "返回c当前的右灵摆刻度数值。",
+        "c在灵摆区域时，核心会应用EFFECT_UPDATE_RSCALE和EFFECT_CHANGE_RSCALE修正；不在灵摆区域时返回卡片数据中的右刻度。"
       ],
       "core_summary_en": [
         "Returns right Pendulum Scale."
@@ -13638,7 +13687,9 @@
       ],
       "returns": [
         {
-          "type": "int"
+          "type": "int",
+          "description": "Current right Pendulum Scale value.",
+          "description_zh": "当前右灵摆刻度数值。"
         }
       ]
     },
@@ -18154,10 +18205,12 @@
     },
     "Duel.CheckLocation": {
       "summary_en": [
-        "Checks whether player can use the given sequence in location."
+        "Checks whether player can use the given sequence in location.",
+        "For Pendulum Zone checks, use LOCATION_PZONE with sequence 0 for the left Pendulum Zone or sequence 1 for the right Pendulum Zone."
       ],
       "summary_zh": [
-        "检查player能否使用location中的sequence位置。"
+        "检查player能否使用location中的sequence位置。",
+        "检查灵摆区域时，使用LOCATION_PZONE；sequence 0表示左侧灵摆区域，sequence 1表示右侧灵摆区域。"
       ],
       "core_summary_en": [
         "Checks whether a location sequence is usable."
@@ -18172,16 +18225,22 @@
         },
         {
           "name": "location",
-          "type": "int"
+          "type": "int",
+          "description": "Location constant to inspect, such as LOCATION_MZONE, LOCATION_SZONE, or LOCATION_PZONE.",
+          "description_zh": "要检查的位置常量，例如LOCATION_MZONE、LOCATION_SZONE或LOCATION_PZONE。"
         },
         {
           "name": "sequence",
-          "type": "int"
+          "type": "int",
+          "description": "Sequence inside that location.",
+          "description_zh": "该位置内的序号。"
         }
       ],
       "returns": [
         {
-          "type": "bool"
+          "type": "bool",
+          "description": "true if that exact location sequence is usable.",
+          "description_zh": "该具体位置序号可使用时返回true。"
         }
       ]
     },
@@ -20916,7 +20975,71 @@
     "Duel.MoveToField": {
       "summary_en": [
         "Moves c onto target_player's field and returns true if the move succeeds.",
-        "dest is normally LOCATION_MZONE or LOCATION_SZONE. LOCATION_FZONE and LOCATION_PZONE are accepted and converted to the matching Spell & Trap Zone handling by the core."
+        "dest is normally LOCATION_MZONE or LOCATION_SZONE. LOCATION_FZONE and LOCATION_PZONE are accepted and converted to the matching Spell & Trap Zone handling by the core.",
+        "For LOCATION_PZONE, the core requires a Pendulum Card, lets the player choose an open Pendulum Zone, and sends the card to the GY by rule if no matching Pendulum Zone is usable."
+      ],
+      "summary_zh": [
+        "把c移动到target_player的场上，并返回移动是否成功。",
+        "dest通常为LOCATION_MZONE或LOCATION_SZONE。LOCATION_FZONE和LOCATION_PZONE也可传入，核心会把它们转换为对应的魔法与陷阱区域处理。",
+        "使用LOCATION_PZONE时，核心要求目标为灵摆卡，并让玩家选择可用的灵摆区域；如果没有符合条件的灵摆区域可用，该卡会按规则送去GY。"
+      ],
+      "core_summary_en": [
+        "Moves a card onto the field."
+      ],
+      "core_summary_zh": [
+        "把卡移动到场上。"
+      ],
+      "params": [
+        {
+          "name": "c",
+          "type": "Card",
+          "description": "Card to move.",
+          "description_zh": "要移动的卡。"
+        },
+        {
+          "name": "move_player",
+          "type": "int",
+          "description": "Player making the placement selection.",
+          "description_zh": "进行放置选择的玩家。"
+        },
+        {
+          "name": "target_player",
+          "type": "int",
+          "description": "Player whose field receives the card.",
+          "description_zh": "接收该卡的场地区域所属玩家。"
+        },
+        {
+          "name": "dest",
+          "type": "int",
+          "description": "Destination location. LOCATION_PZONE is accepted for Pendulum Zone placement.",
+          "description_zh": "目的地位置。LOCATION_PZONE可用于放置到灵摆区域。"
+        },
+        {
+          "name": "positions",
+          "type": "int",
+          "description": "Allowed position mask, commonly POS_FACEUP for Pendulum Zone placement.",
+          "description_zh": "允许的表示形式掩码；放置到灵摆区域时通常使用POS_FACEUP。"
+        },
+        {
+          "name": "enable",
+          "type": "bool",
+          "description": "Whether to enable the card's field effects after it moves. Local Pendulum placement scripts commonly pass true.",
+          "description_zh": "移动后是否启用该卡的场上效果。本地放置灵摆卡的脚本通常传true。"
+        },
+        {
+          "name": "zone",
+          "type": "int",
+          "optional": true,
+          "description": "Optional zone mask. For LOCATION_PZONE, low bit 0 allows the left Pendulum Zone and low bit 1 allows the right Pendulum Zone; omitted defaults to both.",
+          "description_zh": "可选区域掩码。对LOCATION_PZONE而言，低位第0位允许左侧灵摆区域，低位第1位允许右侧灵摆区域；省略时默认两边都允许。"
+        }
+      ],
+      "returns": [
+        {
+          "type": "bool",
+          "description": "true if the move succeeds; false if the move is invalid or no usable zone is available.",
+          "description_zh": "移动成功时返回true；移动无效或没有可用区域时返回false。"
+        }
       ]
     },
     "Duel.NegateActivation": {

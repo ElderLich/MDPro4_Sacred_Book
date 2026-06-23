@@ -50,7 +50,7 @@ of pouring every detail into one page. The broad navigation shape should be:
 
 | Classification area | Sacred Book split |
 | --- | --- |
-| Monster Cards: Normal, Ritual, Fusion, Synchro, Xyz, Pendulum, Link, Special Summon Monsters | Keep general script foundations in [Learning Path](/learn/). [Ritual Procedure Guide](/learn/ritual-procedure), [Fusion Procedure Guide](/learn/fusion-procedure), [Synchro Procedure Guide](/learn/synchro-procedure), [Xyz Procedure Guide](/learn/xyz-procedure), and [Link Procedure Guide](/learn/link-procedure) now cover the main procedure families; Pendulum and Special Summon-only guides remain next. |
+| Monster Cards: Normal, Ritual, Fusion, Synchro, Xyz, Pendulum, Link, Special Summon Monsters | Keep general script foundations in [Learning Path](/learn/). [Ritual Procedure Guide](/learn/ritual-procedure), [Fusion Procedure Guide](/learn/fusion-procedure), [Synchro Procedure Guide](/learn/synchro-procedure), [Xyz Procedure Guide](/learn/xyz-procedure), [Link Procedure Guide](/learn/link-procedure), and [Pendulum Procedure Guide](/learn/pendulum-procedure) now cover the main procedure families; Special Summon-only remains next. |
 | Monster subtypes: Gemini, Toon, Union, Spirit | Add subtype guides only after the core procedure pages, because each subtype needs its own rule hooks, reset patterns, and local examples. |
 | Spell Cards: Normal, Continuous, Equip, Field, Quick-Play, Ritual | [Spell Card Patterns](/learn/spell-card-patterns) now covers Normal, Continuous, Quick-Play, and Ritual Spell activation shapes; [Equip Spells and Equip Cards](/learn/equip-spells), [Field Spells](/learn/field-spells), and [Ritual Procedure Guide](/learn/ritual-procedure) are focused child pages. |
 | Trap Cards: Normal, Continuous, Counter | [Trap Card Patterns](/learn/trap-card-patterns) now separates Normal Trap activation, Continuous Trap face-up effects, hand/set-turn exceptions, and Counter Trap/Spell Speed 3 patterns. |
@@ -162,6 +162,17 @@ Several details were verified directly against local MDPro3/YGOPro sources:
   and the operation records materials with `Card.SetMaterial` before sending
   them to the GY with `REASON_MATERIAL+REASON_LINK`. `Card.IsLinkSummonable`
   and `Duel.LinkSummon` are core bindings and both reject Damage Step use.
+- Pendulum procedure behavior was checked against local `procedure.lua`,
+  `libduel.cpp`, `libcard.cpp`, `operations.cpp`, and local scripts:
+  `Auxiliary.EnablePendulumAttribute` registers a `LOCATION_PZONE`
+  `EFFECT_SPSUMMON_PROC_G` with `SUMMON_TYPE_PENDULUM`, uses
+  `Auxiliary.PendCondition` and `Auxiliary.PendOperation`, and by default
+  registers a hand `EFFECT_TYPE_ACTIVATE` effect unless `reg` is false.
+  Candidate checks use the current left and right scales, hand and face-up
+  Extra Deck Pendulum locations, `Duel.GetLocationCountFromEx`, and the shared
+  Pendulum checklist reset at Draw Phase start. `Duel.MoveToField` accepts
+  `LOCATION_PZONE` by mapping it through Spell & Trap Zone placement with a
+  Pendulum Zone flag.
 
 ## Quality Pass Log
 
@@ -176,6 +187,7 @@ Several details were verified directly against local MDPro3/YGOPro sources:
 | 2026-06-23 | Synchro procedure expansion | Added [Synchro Procedure Guide](/learn/synchro-procedure) with standard and mixed Synchro procedures, Tuner/non-Tuner filters, helper internals, Level and material legality, Hop Ear Squadron effect-driven Synchro Summon flow, Accel Synchro Stardust Dragon manual Synchro-style Summon notes, material memory checks, custom Synchro material providers, and API links. |
 | 2026-06-23 | Xyz procedure expansion | Added [Xyz Procedure Guide](/learn/xyz-procedure) with standard Xyz procedures, Xyz Level checks, variable material counts, overlay operation order, detach costs, alternate one-card Xyz routes, Level-free Xyz procedures, effect-driven Xyz Summons, adding cards as Xyz Material, and API links. |
 | 2026-06-23 | Link procedure expansion | Added [Link Procedure Guide](/learn/link-procedure) with standard Link procedures, Link Rating count rules, material pool and extra-material checks, operation order, effect-driven Link Summons, fixed-material and opponent-material examples, linked-zone APIs, material memory, and API links. |
+| 2026-06-23 | Pendulum procedure expansion | Added [Pendulum Procedure Guide](/learn/pendulum-procedure) with `EnablePendulumAttribute`, default and custom Pendulum activation patterns, Pendulum Zone effects, scale reads and updates, hand/face-up Extra Deck candidate pools, regular and extra Pendulum Summon handling, `MoveToField` Pendulum Zone placement, revive-limit Pendulum Summonable monsters, and API links. |
 
 ## Intentional Rewrites
 

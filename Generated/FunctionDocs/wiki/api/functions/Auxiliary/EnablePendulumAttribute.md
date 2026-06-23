@@ -8,13 +8,14 @@ Auxiliary.EnablePendulumAttribute(Card c, [bool|nil reg]) -> void
 
 ## Description
 
-Registers the Pendulum Summon procedure for Pendulum Monster c.
-Unless reg is false, it also registers the Pendulum Card activation effect from the hand.
+Registers the standard Pendulum Summon procedure for Pendulum Monster c.
+The procedure is a LOCATION_PZONE EFFECT_SPSUMMON_PROC_G with SUMMON_TYPE_PENDULUM, using Auxiliary.PendCondition and Auxiliary.PendOperation.
+Unless reg is false, the helper also registers the simple Pendulum Card activation effect from the hand.
 
 ## Parameters
 
-- `c` `Card`
-- `reg` `bool|nil` optional
+- `c` `Card` - Pendulum Monster receiving the shared Pendulum Summon procedure.
+- `reg` `bool|nil` optional - When false, skip the default hand activation effect. nil or true registers it.
 
 ## Source
 

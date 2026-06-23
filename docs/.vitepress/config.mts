@@ -44,6 +44,7 @@ export default defineConfig({
             { text: 'Synchro Procedure', link: '/learn/synchro-procedure' },
             { text: 'Xyz Procedure', link: '/learn/xyz-procedure' },
             { text: 'Link Procedure', link: '/learn/link-procedure' },
+            { text: 'Pendulum Procedure', link: '/learn/pendulum-procedure' },
             { text: 'Filters and Groups', link: '/learn/filters-and-groups' },
             { text: 'Moving Cards', link: '/learn/moving-cards' },
             { text: 'Field Zones', link: '/learn/field-zones-and-sequences' },

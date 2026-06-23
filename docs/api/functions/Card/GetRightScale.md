@@ -9,6 +9,7 @@ Card.GetRightScale(Card c) -> int
 ## Description
 
 Returns c's current right Pendulum Scale value.
+While c is in a Pendulum Zone, the core applies EFFECT_UPDATE_RSCALE and EFFECT_CHANGE_RSCALE modifiers. Outside a Pendulum Zone, it returns the card-data right scale.
 
 ## Parameters
 
@@ -16,7 +17,7 @@ Returns c's current right Pendulum Scale value.
 
 ## Returns
 
-- `int`
+- `int` - Current right Pendulum Scale value.
 
 ## Source
 

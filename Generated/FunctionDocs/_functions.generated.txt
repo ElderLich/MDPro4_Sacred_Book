@@ -607,10 +607,11 @@ Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3475
 
 ●int Card.GetLeftScale(Card c)
 返回c当前的左灵摆刻度数值。
+c在灵摆区域时，核心会应用EFFECT_UPDATE_LSCALE和EFFECT_CHANGE_LSCALE修正；不在灵摆区域时返回卡片数据中的左刻度。
 Parameters:
   c: Card
 Returns:
-  int
+  int - 当前左灵摆刻度数值。
 Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3413
 
 ●int Card.GetLevel(Card c)
@@ -1055,10 +1056,11 @@ Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3461
 
 ●int Card.GetRightScale(Card c)
 返回c当前的右灵摆刻度数值。
+c在灵摆区域时，核心会应用EFFECT_UPDATE_RSCALE和EFFECT_CHANGE_RSCALE修正；不在灵摆区域时返回卡片数据中的右刻度。
 Parameters:
   c: Card
 Returns:
-  int
+  int - 当前右灵摆刻度数值。
 Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3415
 
 ●int Card.GetRitualLevel(Card c, Card rc)
@@ -2931,12 +2933,13 @@ Source: D:\Programs\GitHub\ygopro-core\libduel.cpp:4894
 
 ●bool Duel.CheckLocation(int player, int location, int sequence)
 检查player能否使用location中的sequence位置。
+检查灵摆区域时，使用LOCATION_PZONE；sequence 0表示左侧灵摆区域，sequence 1表示右侧灵摆区域。
 Parameters:
   player: int
-  location: int
-  sequence: int
+  location: int - 要检查的位置常量，例如LOCATION_MZONE、LOCATION_SZONE或LOCATION_PZONE。
+  sequence: int - 该位置内的序号。
 Returns:
-  bool
+  bool - 该具体位置序号可使用时返回true。
 Source: D:\Programs\GitHub\ygopro-core\libduel.cpp:4944
 
 ●bool|nil Duel.CheckLPCost(int player, int cost, [bool must_pay])
@@ -4169,19 +4172,20 @@ Parameters:
   seq: int
 Source: D:\Programs\GitHub\ygopro-core\libduel.cpp:4884
 
-●bool Duel.MoveToField(Card c, int move_player, int target_player, int dest, int pos, bool enable, [int zone])
-让玩家move_player把c移动的target_player的场上，返回值表示是否成功
-dest只能是LOCATION_MZONE或者LOCATION_SZONE，pos表示可选表示形式， enable 表示是否立刻适用c的效果
+●bool Duel.MoveToField(Card c, int move_player, int target_player, int dest, int positions, bool enable, [int zone])
+把c移动到target_player的场上，并返回移动是否成功。
+dest通常为LOCATION_MZONE或LOCATION_SZONE。LOCATION_FZONE和LOCATION_PZONE也可传入，核心会把它们转换为对应的魔法与陷阱区域处理。
+使用LOCATION_PZONE时，核心要求目标为灵摆卡，并让玩家选择可用的灵摆区域；如果没有符合条件的灵摆区域可用，该卡会按规则送去GY。
 Parameters:
-  c: Card
-  move_player: int
-  target_player: int
-  dest: int
-  pos: int
-  enable: bool
-  zone: int optional
+  c: Card - 要移动的卡。
+  move_player: int - 进行放置选择的玩家。
+  target_player: int - 接收该卡的场地区域所属玩家。
+  dest: int - 目的地位置。LOCATION_PZONE可用于放置到灵摆区域。
+  positions: int - 允许的表示形式掩码；放置到灵摆区域时通常使用POS_FACEUP。
+  enable: bool - 移动后是否启用该卡的场上效果。本地放置灵摆卡的脚本通常传true。
+  zone: int optional - 可选区域掩码。对LOCATION_PZONE而言，低位第0位允许左侧灵摆区域，低位第1位允许右侧灵摆区域；省略时默认两边都允许。
 Returns:
-  bool
+  bool - 移动成功时返回true；移动无效或没有可用区域时返回false。
 Source: D:\Programs\GitHub\ygopro-core\libduel.cpp:4882
 
 ●void Duel.MSet(int player, Card c, bool ignore_count, [Effect|nil e], [int min], [int zone])
@@ -8520,19 +8524,20 @@ Parameters:
 Source: Utilities/procedure.lua:22
 
 ●void Auxiliary.EnablePendulumAttribute(Card c, [bool|nil reg])
-为灵摆怪兽c登记灵摆召唤手续。
-除非reg为false，否则也会登记从手牌发动该灵摆卡的效果。
+为灵摆怪兽c登记标准灵摆召唤手续。
+该手续是在LOCATION_PZONE生效的EFFECT_SPSUMMON_PROC_G，召唤类型为SUMMON_TYPE_PENDULUM，并使用Auxiliary.PendCondition和Auxiliary.PendOperation。
+除非reg为false，否则此辅助函数还会登记从手牌发动该灵摆卡的简易发动效果。
 Parameters:
-  c: Card
-  reg: bool|nil optional
+  c: Card - 要登记共通灵摆召唤手续的灵摆怪兽。
+  reg: bool|nil optional - 为false时不登记默认的手牌发动效果；nil或true时登记。
 Source: Utilities/procedure.lua:1948
 
 ●void Auxiliary.EnableReviveLimitPendulumSummonable(Card c, [int loc])
 给c启用苏生限制处理，同时允许其从loc对应位置进行灵摆召唤。
-该辅助函数会把loc保存到c的metatable，并在c成功灵摆召唤时完成正规手续。
+该辅助函数会调用Card.EnableReviveLimit，把loc以psummonable_location保存到c的metatable，并在c成功灵摆召唤时完成正规手续。
 Parameters:
-  c: Card
-  loc: int optional - default: 0xff
+  c: Card - 可通过灵摆召唤完成正规手续的特殊召唤怪兽。
+  loc: int optional - 允许该卡进行灵摆召唤的位置掩码。默认值为0xff。
 Source: Utilities/procedure.lua:2097
 
 ●bool Auxiliary.FCheckMix(Card c, Group mg, Group sg, Card fc, bool sub, function fun1, [function|nil fun2], ... function)
@@ -9237,17 +9242,19 @@ Returns:
 Source: Utilities/procedure.lua:1991
 
 ●bool Auxiliary.PendCondition(Effect e, Card|nil c, Group|nil og)
-共通灵摆召唤手续的条件函数；检查2个灵摆区域、可用位置和区域、每回合状态，以及可召唤怪兽。
+共通灵摆召唤手续的条件函数。
+它会检查2个灵摆区域、当前刻度、手牌和表侧额外卡组的候选范围、可用怪兽区域、每回合状态、额外灵摆召唤效果，以及是否至少有1只候选怪兽可以灵摆召唤。
 Parameters:
   e: Effect
-  c: Card|nil
-  og: Group|nil
+  c: Card|nil - 手续的处理卡。为nil时，此辅助函数会为核心的可用性探测返回true。
+  og: Group|nil - 核心或其他辅助函数提供的可选候选Group；为nil时使用玩家手牌/额外卡组候选。
 Returns:
   bool - true if a Pendulum Summon is available.
 Source: Utilities/procedure.lua:2004
 
 ●void Auxiliary.PendOperation(Effect e, int tp, Group eg, int ep, int ev, Effect re, int r, int rp, Card c, Group sg, Group|nil og)
-共通灵摆召唤手续的操作函数；选择通常或额外灵摆召唤效果，在手牌/额外卡组区域限制内选择怪兽，更新检查标记，并把选择合并到sg。
+共通灵摆召唤手续的操作函数。
+它会选择通常或额外灵摆召唤选项，计算手牌、额外卡组和总怪兽区域限制，选择合法子组，更新共通检查标记或消耗额外效果次数限制，并把所选卡合并到sg供核心的组召唤流程处理。
 Parameters:
   e: Effect
   tp: int
@@ -9257,17 +9264,18 @@ Parameters:
   re: Effect
   r: int
   rp: int
-  c: Card
-  sg: Group
-  og: Group|nil
+  c: Card - 正在使用其手续的左侧灵摆区域卡。
+  sg: Group - 核心提供的Group，用于接收选择的灵摆召唤怪兽。
+  og: Group|nil - 可选候选Group；为nil时从玩家手牌和表侧额外卡组重新取得候选。
 Source: Utilities/procedure.lua:2033
 
 ●function Auxiliary.PendOperationCheck(int ft1, int ft2, int ft)
-返回组检查函数，用于限制一次灵摆召唤选择中的手牌数量、额外卡组数量和总区域数量。
+返回组检查函数，用于限制一次灵摆召唤选择中的手牌数量、额外卡组数量和总怪兽区域数量。
+返回的函数会分别统计所选额外卡组卡和非额外卡组卡，再判断该子组是否合法。
 Parameters:
-  ft1: int
-  ft2: int
-  ft: int
+  ft1: int - 非额外卡组位置的最多选择数量，通常是手牌。
+  ft2: int - 表侧额外卡组的最多选择数量。
+  ft: int - 总共最多选择数量。
 Returns:
   function - Group check for Pendulum Summon zone limits.
 Source: Utilities/procedure.lua:2026
@@ -9287,8 +9295,9 @@ Source: Utilities/procedure.lua:1977
 
 ●bool Auxiliary.PendulumSummonableBool(Card c)
 c具有psummonable_location标记且当前位置包含在其中时返回true。
+共通灵摆候选筛选会把此结果作为Card.IsCanBeSpecialSummoned的nocheck和nolimit值，因此只有位于已设置位置的复活限制怪兽才会被允许按该方式灵摆召唤。
 Parameters:
-  c: Card
+  c: Card - 先前由Auxiliary.EnableReviveLimitPendulumSummonable设置的卡。
 Returns:
   bool - true if c's current location is Pendulum Summonable by its flag.
 Source: Utilities/procedure.lua:2111
@@ -9305,7 +9314,8 @@ Returns:
 Source: Utilities/procedure.lua:2305
 
 ●void Auxiliary.PSSCompleteProcedure(Effect e, int tp, Group eg, int ep, int ev, Effect re, int r, int rp)
-对通过复活限制辅助函数设置、并以灵摆召唤特殊召唤的怪兽完成正规手续。
+对由Auxiliary.EnableReviveLimitPendulumSummonable设置、并成功灵摆召唤的怪兽完成正规手续。
+该操作会先检查Card.IsSummonType(SUMMON_TYPE_PENDULUM)，再调用Card.CompleteProcedure。
 Parameters:
   e: Effect
   tp: int

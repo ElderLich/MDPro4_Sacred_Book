@@ -8,7 +8,8 @@ Auxiliary.PSSCompleteProcedure(Effect e, int tp, Group eg, int ep, int ev, Effec
 
 ## Description
 
-Completes the procedure for monsters that were Special Summoned by Pendulum Summon through the revive-limit helper.
+Completes the procedure for monsters configured by Auxiliary.EnableReviveLimitPendulumSummonable after they are successfully Pendulum Summoned.
+The operation checks Card.IsSummonType(SUMMON_TYPE_PENDULUM) before calling Card.CompleteProcedure.
 
 ## Parameters
 
