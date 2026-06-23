@@ -4737,9 +4737,11 @@ Parameters:
 Source: D:\Programs\GitHub\ygopro-core\libduel.cpp:5002
 
 ●void Duel.SetSynchroMaterial(Group g)
-把g保存为当前召唤手续使用的同调素材组。
+把g保存为当前同调素材自定义手续使用的同调素材组。
+本地标准同调辅助函数通常把已选择素材组保存在手续效果上；此函数多见于花札卫等自定义同调素材提供脚本。
+它只把已选择的素材组登记给核心使用；不会移动这些卡，也没有返回值。
 Parameters:
-  g: Group
+  g: Group - Selected Synchro Material group to store for the custom procedure.
 Source: D:\Programs\GitHub\ygopro-core\libduel.cpp:4991
 
 ●void Duel.SetTargetCard(Card|Group targets)
@@ -4912,14 +4914,15 @@ Source: D:\Programs\GitHub\ygopro-core\libduel.cpp:4885
 
 ●void Duel.SynchroSummon(int player, Card c, [Card|nil tuner], [Group|nil mg], [int minc], [int maxc])
 为player进行c的同调召唤；可以指定必须使用的tuner，并可从mg中选择素材。
+通常在效果操作处理中先用Card.IsSynchroSummonable检查后再调用；被选择的同调怪兽登记的同调手续仍然决定素材是否合法。
 minc和maxc可以限制该手续使用的非调整素材数量。
 Parameters:
-  player: int
-  c: Card
-  tuner: Card|nil optional
-  mg: Group|nil optional
-  minc: int optional - default: 0
-  maxc: int optional - default: 0
+  player: int - Player performing the Synchro Summon.
+  c: Card - Synchro Monster to Summon.
+  tuner: Card|nil optional - Optional required Tuner material.
+  mg: Group|nil optional - Optional material pool to select from.
+  minc: int optional - Optional minimum non-Tuner material count override; default: 0.
+  maxc: int optional - Optional maximum non-Tuner material count override; default: 0.
 Source: D:\Programs\GitHub\ygopro-core\libduel.cpp:4867
 
 ●int,...? Duel.TossCoin(int player, int count)
@@ -8339,6 +8342,7 @@ Source: Utilities/procedure.lua:1750
 
 ●void Auxiliary.AddSynchroMixProcedure(Card c, function|nil f1, function|nil f2, function|nil f3, function|nil f4, int minc, int maxc, [function gc])
 登记混合同调召唤手续：最多3个固定素材筛选条件，加上f4重复minc到maxc次。
+该辅助函数会建立位于额外卡组的EFFECT_SPSUMMON_PROC，并使用SUMMON_TYPE_SYNCHRO；它会检查同调等级合计，并处理必须使用素材、手卡同调、调整限制以及可选的素材组检查。
 最大数量会按c的等级扣除必要固定素材后进行上限限制。
 Parameters:
   c: Card
@@ -8352,13 +8356,15 @@ Parameters:
 Source: Utilities/procedure.lua:135
 
 ●void Auxiliary.AddSynchroProcedure(Card c, [function|nil f1], [function|nil f2], int minc, [int maxc])
-Synchro monster, 1 tuner + min to max monsters
+为c登记标准同调召唤手续。
+f1筛选调整素材，f2筛选非调整素材，minc/maxc设置需要的非调整素材数量。
+建立的手续在额外卡组生效，通过核心同调辅助函数检查素材，在操作处理中读取已选择的素材组，并以REASON_MATERIAL+REASON_SYNCHRO送去GY。
 Parameters:
-  c: Card
-  f1: function|nil optional
-  f2: function|nil optional
-  minc: int
-  maxc: int optional
+  c: Card - Synchro Monster that receives the procedure.
+  f1: function|nil optional - Optional Tuner filter. nil accepts any legal Tuner.
+  f2: function|nil optional - Optional non-Tuner filter, commonly built with Auxiliary.NonTuner.
+  minc: int - Minimum number of non-Tuner materials.
+  maxc: int optional - Maximum number of non-Tuner materials. If omitted, the helper caps it by c's Level minus 1.
 Source: Utilities/procedure.lua:60
 
 ●void Auxiliary.AddSynchroProcedure2(Card c, [function|nil f1], [function|nil f2])

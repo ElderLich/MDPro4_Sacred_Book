@@ -41,6 +41,7 @@ export default defineConfig({
             { text: 'Trap Cards', link: '/learn/trap-card-patterns' },
             { text: 'Ritual Procedure', link: '/learn/ritual-procedure' },
             { text: 'Fusion Procedure', link: '/learn/fusion-procedure' },
+            { text: 'Synchro Procedure', link: '/learn/synchro-procedure' },
             { text: 'Filters and Groups', link: '/learn/filters-and-groups' },
             { text: 'Moving Cards', link: '/learn/moving-cards' },
             { text: 'Field Zones', link: '/learn/field-zones-and-sequences' },

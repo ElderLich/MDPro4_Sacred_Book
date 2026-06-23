@@ -4705,9 +4705,11 @@ Parameters:
 Source: D:\Programs\GitHub\ygopro-core\libduel.cpp:5002
 
 ●void Duel.SetSynchroMaterial(Group g)
-Stores g as the Synchro Material group for the current Summon procedure.
+Stores g as the Synchro Material group for the current Synchro Material custom procedure.
+Local standard Synchro helpers usually keep their selected material group on the procedure effect instead; this function appears in custom material-provider scripts such as Flower Cardian Synchro helpers.
+This records the selected group for the core. It does not move those cards and returns no value.
 Parameters:
-  g: Group
+  g: Group - Selected Synchro Material group to store for the custom procedure.
 Source: D:\Programs\GitHub\ygopro-core\libduel.cpp:4991
 
 ●void Duel.SetTargetCard(Card|Group targets)
@@ -4873,14 +4875,15 @@ Source: D:\Programs\GitHub\ygopro-core\libduel.cpp:4885
 
 ●void Duel.SynchroSummon(int player, Card c, [Card|nil tuner], [Group|nil mg], [int minc], [int maxc])
 Performs a Synchro Summon of c for player, optionally requiring tuner and selecting materials from mg.
+Use this in an effect operation after checking Card.IsSynchroSummonable; the chosen Synchro Monster's registered procedure still controls material legality.
 minc and maxc can restrict the number of non-Tuner materials used by the procedure.
 Parameters:
-  player: int
-  c: Card
-  tuner: Card|nil optional
-  mg: Group|nil optional
-  minc: int optional - default: 0
-  maxc: int optional - default: 0
+  player: int - Player performing the Synchro Summon.
+  c: Card - Synchro Monster to Summon.
+  tuner: Card|nil optional - Optional required Tuner material.
+  mg: Group|nil optional - Optional material pool to select from.
+  minc: int optional - Optional minimum non-Tuner material count override; default: 0.
+  maxc: int optional - Optional maximum non-Tuner material count override; default: 0.
 Source: D:\Programs\GitHub\ygopro-core\libduel.cpp:4867
 
 ●int,...? Duel.TossCoin(int player, int count)
@@ -8303,6 +8306,7 @@ Source: Utilities/procedure.lua:1750
 
 ●void Auxiliary.AddSynchroMixProcedure(Card c, function|nil f1, function|nil f2, function|nil f3, function|nil f4, int minc, int maxc, [function gc])
 Registers a mixed Synchro Summon procedure requiring up to three fixed material filters plus f4 repeated between minc and maxc times.
+The helper creates an Extra Deck EFFECT_SPSUMMON_PROC with SUMMON_TYPE_SYNCHRO, checks the exact Synchro Level total, and handles mandatory material, hand Synchro, tuner-limit, and optional group-check rules.
 The maximum count is capped by c's Level after subtracting any required fixed materials.
 Parameters:
   c: Card
@@ -8318,12 +8322,13 @@ Source: Utilities/procedure.lua:135
 ●void Auxiliary.AddSynchroProcedure(Card c, [function|nil f1], [function|nil f2], int minc, [int maxc])
 Registers the standard Synchro Summon procedure for c.
 f1 filters the Tuner material, f2 filters non-Tuner materials, and minc/maxc set the number of non-Tuner materials required.
+The created procedure lives in the Extra Deck, checks materials through the core Synchro helpers, stores the selected group for the operation, and sends materials to the GY with REASON_MATERIAL+REASON_SYNCHRO.
 Parameters:
-  c: Card
-  f1: function|nil optional
-  f2: function|nil optional
-  minc: int
-  maxc: int optional
+  c: Card - Synchro Monster that receives the procedure.
+  f1: function|nil optional - Optional Tuner filter. nil accepts any legal Tuner.
+  f2: function|nil optional - Optional non-Tuner filter, commonly built with Auxiliary.NonTuner.
+  minc: int - Minimum number of non-Tuner materials.
+  maxc: int optional - Maximum number of non-Tuner materials. If omitted, the helper caps it by c's Level minus 1.
 Source: Utilities/procedure.lua:60
 
 ●void Auxiliary.AddSynchroProcedure2(Card c, [function|nil f1], [function|nil f2])

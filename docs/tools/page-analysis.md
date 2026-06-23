@@ -50,7 +50,7 @@ of pouring every detail into one page. The broad navigation shape should be:
 
 | Classification area | Sacred Book split |
 | --- | --- |
-| Monster Cards: Normal, Ritual, Fusion, Synchro, Xyz, Pendulum, Link, Special Summon Monsters | Keep general script foundations in [Learning Path](/learn/). [Ritual Procedure Guide](/learn/ritual-procedure) and [Fusion Procedure Guide](/learn/fusion-procedure) now cover the first two procedure families; Synchro, Xyz, Link, Pendulum, and Special Summon-only guides remain next. |
+| Monster Cards: Normal, Ritual, Fusion, Synchro, Xyz, Pendulum, Link, Special Summon Monsters | Keep general script foundations in [Learning Path](/learn/). [Ritual Procedure Guide](/learn/ritual-procedure), [Fusion Procedure Guide](/learn/fusion-procedure), and [Synchro Procedure Guide](/learn/synchro-procedure) now cover the first three procedure families; Xyz, Link, Pendulum, and Special Summon-only guides remain next. |
 | Monster subtypes: Gemini, Toon, Union, Spirit | Add subtype guides only after the core procedure pages, because each subtype needs its own rule hooks, reset patterns, and local examples. |
 | Spell Cards: Normal, Continuous, Equip, Field, Quick-Play, Ritual | [Spell Card Patterns](/learn/spell-card-patterns) now covers Normal, Continuous, Quick-Play, and Ritual Spell activation shapes; [Equip Spells and Equip Cards](/learn/equip-spells), [Field Spells](/learn/field-spells), and [Ritual Procedure Guide](/learn/ritual-procedure) are focused child pages. |
 | Trap Cards: Normal, Continuous, Counter | [Trap Card Patterns](/learn/trap-card-patterns) now separates Normal Trap activation, Continuous Trap face-up effects, hand/set-turn exceptions, and Counter Trap/Spell Speed 3 patterns. |
@@ -105,6 +105,13 @@ Several details were verified directly against local MDPro3/YGOPro sources:
   `Card.CheckFusionMaterial`, `Duel.SelectFusionMaterial`, `Card.SetMaterial`,
   material movement with `REASON_FUSION`, `Duel.SpecialSummon` with
   `SUMMON_TYPE_FUSION`, and `CompleteProcedure`.
+- `Auxiliary.AddSynchroProcedure` and `Auxiliary.AddSynchroMixProcedure` in
+  local `procedure.lua` register `EFFECT_SPSUMMON_PROC` effects from the Extra
+  Deck with `SUMMON_TYPE_SYNCHRO`. Standard procedure targets use
+  `Duel.CheckSynchroMaterial`, `Duel.SelectSynchroMaterial`,
+  `Duel.CheckTunerMaterial`, and `Duel.SelectTunerMaterial`; operations call
+  `Card.SetMaterial` and send the chosen group to the GY with
+  `REASON_MATERIAL+REASON_SYNCHRO`.
 - `Duel.GetRitualMaterial`, `Duel.GetRitualMaterialEx`, and
   `Duel.ReleaseRitualMaterial` are bound in `ygopro-core\libduel.cpp`;
   `Card.IsCanBeRitualMaterial` is bound in `ygopro-core\libcard.cpp`.
@@ -112,6 +119,13 @@ Several details were verified directly against local MDPro3/YGOPro sources:
   `Duel.SetFusionMaterial` are bound in `ygopro-core\libduel.cpp`;
   `Card.IsCanBeFusionMaterial` and `Card.CheckFusionMaterial` are bound in
   `ygopro-core\libcard.cpp`.
+- `Duel.SynchroSummon`, `Duel.GetSynchroMaterial`,
+  `Duel.SetSynchroMaterial`, `Duel.CheckSynchroMaterial`,
+  `Duel.SelectSynchroMaterial`, `Duel.CheckTunerMaterial`, and
+  `Duel.SelectTunerMaterial` are bound in `ygopro-core\libduel.cpp`;
+  `Card.IsSynchroSummonable`, `Card.IsCanBeSynchroMaterial`,
+  `Card.GetSynchroLevel`, and `Card.GetHandSynchro` are bound or declared in
+  the local core/define sources.
 - Local `ygopro-core\operations.cpp` maps `SUMMON_TYPE_RITUAL` to
   `REASON_RITUAL` for material event handling.
 - Local `ygopro-core\operations.cpp` maps `SUMMON_TYPE_FUSION` to
@@ -137,6 +151,7 @@ Several details were verified directly against local MDPro3/YGOPro sources:
 | 2026-06-23 | Spell and Trap classification expansion | Added [Spell Card Patterns](/learn/spell-card-patterns) for Normal, Continuous, Quick-Play, and Ritual Spell activation shapes, and [Trap Card Patterns](/learn/trap-card-patterns) for Normal, Continuous, and Counter Trap scripting. Local examples include Pot of Greed, Monster Reborn, Mystical Space Typhoon, Transonic Bird, Infinite Impermanence, Trap Trick, Cyberdark Invasion, and Chaos Trap Hole. |
 | 2026-06-23 | Ritual procedure expansion | Added [Ritual Procedure Guide](/learn/ritual-procedure) with helper selection, `AddRitualProcUltimate` internals, target/operation flow, material subgroup checks, `SetMaterial`, `ReleaseRitualMaterial`, `SUMMON_TYPE_RITUAL`, `CompleteProcedure`, manual Sonic Tracker-style flow, Nekroz Kaleidoscope nonstandard material movement, and API links. |
 | 2026-06-23 | Fusion procedure expansion | Added [Fusion Procedure Guide](/learn/fusion-procedure) with Fusion Monster material procedures, Fusion-specific material identity checks, Polymerization flow, Deck Fusion examples, Chain Material fallback, material movement operations, Contact Fusion distinction, and API links. |
+| 2026-06-23 | Synchro procedure expansion | Added [Synchro Procedure Guide](/learn/synchro-procedure) with standard and mixed Synchro procedures, Tuner/non-Tuner filters, helper internals, Level and material legality, Hop Ear Squadron effect-driven Synchro Summon flow, Accel Synchro Stardust Dragon manual Synchro-style Summon notes, material memory checks, custom Synchro material providers, and API links. |
 
 ## Intentional Rewrites
 

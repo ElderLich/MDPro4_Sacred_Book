@@ -1246,10 +1246,12 @@
     "Auxiliary.AddSynchroMixProcedure": {
       "summary_en": [
         "Registers a mixed Synchro Summon procedure requiring up to three fixed material filters plus f4 repeated between minc and maxc times.",
+        "The helper creates an Extra Deck EFFECT_SPSUMMON_PROC with SUMMON_TYPE_SYNCHRO, checks the exact Synchro Level total, and handles mandatory material, hand Synchro, tuner-limit, and optional group-check rules.",
         "The maximum count is capped by c's Level after subtracting any required fixed materials."
       ],
       "summary_zh": [
         "登记混合同调召唤手续：最多3个固定素材筛选条件，加上f4重复minc到maxc次。",
+        "该辅助函数会建立位于额外卡组的EFFECT_SPSUMMON_PROC，并使用SUMMON_TYPE_SYNCHRO；它会检查同调等级合计，并处理必须使用素材、手卡同调、调整限制以及可选的素材组检查。",
         "最大数量会按c的等级扣除必要固定素材后进行上限限制。"
       ],
       "core_summary_en": [
@@ -1298,8 +1300,51 @@
     "Auxiliary.AddSynchroProcedure": {
       "summary_en": [
         "Registers the standard Synchro Summon procedure for c.",
-        "f1 filters the Tuner material, f2 filters non-Tuner materials, and minc/maxc set the number of non-Tuner materials required."
-      ]
+        "f1 filters the Tuner material, f2 filters non-Tuner materials, and minc/maxc set the number of non-Tuner materials required.",
+        "The created procedure lives in the Extra Deck, checks materials through the core Synchro helpers, stores the selected group for the operation, and sends materials to the GY with REASON_MATERIAL+REASON_SYNCHRO."
+      ],
+      "summary_zh": [
+        "为c登记标准同调召唤手续。",
+        "f1筛选调整素材，f2筛选非调整素材，minc/maxc设置需要的非调整素材数量。",
+        "建立的手续在额外卡组生效，通过核心同调辅助函数检查素材，在操作处理中读取已选择的素材组，并以REASON_MATERIAL+REASON_SYNCHRO送去GY。"
+      ],
+      "core_summary_en": [
+        "Registers the standard Synchro Summon procedure on c."
+      ],
+      "core_summary_zh": [
+        "为c登记标准同调召唤手续。"
+      ],
+      "params": [
+        {
+          "name": "c",
+          "type": "Card",
+          "description": "Synchro Monster that receives the procedure."
+        },
+        {
+          "name": "f1",
+          "type": "function|nil",
+          "optional": true,
+          "description": "Optional Tuner filter. nil accepts any legal Tuner."
+        },
+        {
+          "name": "f2",
+          "type": "function|nil",
+          "optional": true,
+          "description": "Optional non-Tuner filter, commonly built with Auxiliary.NonTuner."
+        },
+        {
+          "name": "minc",
+          "type": "int",
+          "description": "Minimum number of non-Tuner materials."
+        },
+        {
+          "name": "maxc",
+          "type": "int",
+          "optional": true,
+          "description": "Maximum number of non-Tuner materials. If omitted, the helper caps it by c's Level minus 1."
+        }
+      ],
+      "returns": []
     },
     "Auxiliary.AddSynchroProcedure2": {
       "summary_en": [
@@ -21955,11 +22000,29 @@
     },
     "Duel.SetSynchroMaterial": {
       "summary_en": [
-        "Stores g as the Synchro Material group for the current Summon procedure."
+        "Stores g as the Synchro Material group for the current Synchro Material custom procedure.",
+        "Local standard Synchro helpers usually keep their selected material group on the procedure effect instead; this function appears in custom material-provider scripts such as Flower Cardian Synchro helpers.",
+        "This records the selected group for the core. It does not move those cards and returns no value."
       ],
       "summary_zh": [
-        "把g保存为当前召唤手续使用的同调素材组。"
-      ]
+        "把g保存为当前同调素材自定义手续使用的同调素材组。",
+        "本地标准同调辅助函数通常把已选择素材组保存在手续效果上；此函数多见于花札卫等自定义同调素材提供脚本。",
+        "它只把已选择的素材组登记给核心使用；不会移动这些卡，也没有返回值。"
+      ],
+      "core_summary_en": [
+        "Stores a custom Synchro Material group."
+      ],
+      "core_summary_zh": [
+        "保存自定义同调素材组。"
+      ],
+      "params": [
+        {
+          "name": "g",
+          "type": "Group",
+          "description": "Selected Synchro Material group to store for the custom procedure."
+        }
+      ],
+      "returns": []
     },
     "Duel.SetTargetCard": {
       "summary_en": [
@@ -22348,12 +22411,57 @@
     "Duel.SynchroSummon": {
       "summary_en": [
         "Performs a Synchro Summon of c for player, optionally requiring tuner and selecting materials from mg.",
+        "Use this in an effect operation after checking Card.IsSynchroSummonable; the chosen Synchro Monster's registered procedure still controls material legality.",
         "minc and maxc can restrict the number of non-Tuner materials used by the procedure."
       ],
       "summary_zh": [
         "为player进行c的同调召唤；可以指定必须使用的tuner，并可从mg中选择素材。",
+        "通常在效果操作处理中先用Card.IsSynchroSummonable检查后再调用；被选择的同调怪兽登记的同调手续仍然决定素材是否合法。",
         "minc和maxc可以限制该手续使用的非调整素材数量。"
-      ]
+      ],
+      "core_summary_en": [
+        "Performs a Synchro Summon."
+      ],
+      "core_summary_zh": [
+        "进行同调召唤。"
+      ],
+      "params": [
+        {
+          "name": "player",
+          "type": "int",
+          "description": "Player performing the Synchro Summon."
+        },
+        {
+          "name": "c",
+          "type": "Card",
+          "description": "Synchro Monster to Summon."
+        },
+        {
+          "name": "tuner",
+          "type": "Card|nil",
+          "optional": true,
+          "description": "Optional required Tuner material."
+        },
+        {
+          "name": "mg",
+          "type": "Group|nil",
+          "optional": true,
+          "description": "Optional material pool to select from."
+        },
+        {
+          "name": "minc",
+          "type": "int",
+          "optional": true,
+          "description": "Optional minimum non-Tuner material count override; default: 0."
+        },
+        {
+          "name": "maxc",
+          "type": "int",
+          "optional": true,
+          "description": "Optional maximum non-Tuner material count override; default: 0."
+        }
+      ],
+      "returns": []
     },
     "Duel.TossCoin": {
       "summary_en": [
