@@ -31,10 +31,13 @@ c:RegisterEffect(e1)
 | `SetTargetRange` | Which cards or players are affected by a field/equip/procedure effect? |
 | `SetValue` | Which number or function supplies the continuous value? |
 | `SetCountLimit` | How often may this effect be used? |
+| `SetHintTiming` | Which timing hints should the client show for optional fast effects? |
 | `SetCondition` | Is the effect allowed to be considered? |
 | `SetCost` | Can the cost be paid, and how is it paid? |
 | `SetTarget` | Can it activate, and what will it affect? |
 | `SetOperation` | What happens when it resolves or when a continuous event fires? |
+| `SetLabel` | Which small integer should this effect remember? |
+| `SetLabelObject` | Which object, usually another Effect or Group, should this effect remember? |
 | `SetReset` | When does a temporary effect disappear? |
 
 ## Registering to a Card
@@ -93,6 +96,50 @@ c:RegisterEffect(e2)
 This pattern appears in scripts such as `c10002346.lua`: one field effect
 updates ATK, the clone updates DEF.
 
+Cloning copies the current settings. Change the fields that differ before
+registration. If two effects need different reset, category, code, target, or
+operation behavior, set those differences explicitly on the clone.
+
+## Labels And Label Objects
+
+`SetLabel` is useful for small numbers that the operation needs later.
+
+```lua
+e:SetLabel(op)
+```
+
+`SetLabelObject` stores a Lua-exposed object. Grant effects commonly store the
+effect object that will be granted to other cards.
+
+```lua
+local ge=Effect.CreateEffect(c)
+ge:SetType(EFFECT_TYPE_SINGLE)
+ge:SetCode(EFFECT_UPDATE_ATTACK)
+ge:SetValue(500)
+
+local e1=Effect.CreateEffect(c)
+e1:SetType(EFFECT_TYPE_FIELD+EFFECT_TYPE_GRANT)
+e1:SetLabelObject(ge)
+c:RegisterEffect(e1)
+```
+
+Use labels for simple Chain choices. Use label objects only when the local
+script pattern expects an object to be attached to the effect.
+
+## Reset For Temporary Effects
+
+Effects created in `initial_effect` are usually part of the card's normal text.
+Effects created during an operation are usually temporary and should say when
+they disappear.
+
+```lua
+e1:SetReset(RESET_EVENT+RESETS_STANDARD+RESET_PHASE+PHASE_END)
+```
+
+The exact reset depends on the card text. A stat boost until the End Phase, a
+lingering summon restriction, and a copied effect do not necessarily share the
+same reset flags.
+
 ## Building Order
 
 The engine does not require every setter to appear in a single exact order, but
@@ -101,7 +148,8 @@ readable scripts usually group them like this:
 1. User-facing fields: `SetDescription`, `SetCategory`.
 2. Shape and timing: `SetType`, `SetCode`, `SetProperty`.
 3. Location and limits: `SetRange`, `SetTargetRange`, `SetCountLimit`.
-4. Logic: `SetCondition`, `SetCost`, `SetTarget`, `SetOperation`, `SetValue`.
+4. Logic and stored data: `SetCondition`, `SetCost`, `SetTarget`,
+   `SetOperation`, `SetValue`, `SetLabel`, `SetLabelObject`.
 5. Registration: `RegisterEffect` or `Duel.RegisterEffect`.
 
 Keeping that order makes later review much easier.

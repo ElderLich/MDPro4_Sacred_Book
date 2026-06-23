@@ -39,11 +39,38 @@ Set codes can represent a broad family or a smaller branch of that family. When
 a script needs the smaller branch, use the more specific set code used by the
 local scripts and card data.
 
+`Card.IsSetCard` accepts more than one value and returns true if any of them
+match.
+
+```lua
+function s.filter(c)
+    return c:IsSetCard(0x9f,0x99)
+end
+```
+
+The core binding checks the card's current code, alternate code behavior, and
+added set-code effects. That is why scripts should call the API instead of
+trying to compare raw database fields manually.
+
 ## Subarchetypes
 
 Some families contain nested groups. A broad set code might match the whole
 family, while a more specific set code matches only a branch. Do not guess from
 the displayed name alone.
+
+MDPro3/YGOPro stores set codes as 16-bit values. The low 12 bits identify the
+base family, while the high bits can require a subtype. In practical script
+terms:
+
+| Example shape | Meaning |
+| --- | --- |
+| `0x034` | broad base family |
+| `0x1034` | subtype `0x1000` inside base family `0x034` |
+| `0x2034` | subtype `0x2000` inside base family `0x034` |
+
+A broad check can match cards in the base family. A subtype check requires the
+matching subtype bits too. This is why local scripts sometimes use a value such
+as `0x1034` when the card text is narrower than the displayed family name.
 
 Safer process:
 

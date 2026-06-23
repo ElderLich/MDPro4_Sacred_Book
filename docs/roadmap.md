@@ -36,7 +36,7 @@ This is the working todo for turning Sacred Book into a complete MDPro3 scriptin
 - [ ] Mark uncertain or inferred behavior clearly, with source confidence.
 - [ ] Add focused pages for common scripting patterns: counters and summon procedures.
 - [ ] Expand the beginner path with small complete card scripts that build up one concept at a time.
-- [ ] Analyze every downloaded tutorial page and create an original Sacred Book equivalent for each topic.
+- [x] Analyze every downloaded tutorial page and create an original Sacred Book equivalent for each topic.
 - [ ] Add terminology review passes for official Yu-Gi-Oh! wording such as Graveyard, banish, GY, hand, Deck, Extra Deck, and Set.
 - [x] Move reviewed function docs into a multilingual machine-readable override file instead of keeping long manual batches in the generator.
 

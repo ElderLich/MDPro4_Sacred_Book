@@ -29,6 +29,10 @@ Older scripts may use `function c12345678.initial_effect(c)` directly. That
 style is still common in old cards; the idea is the same, but the function names
 use `c12345678` instead of `s`.
 
+Both styles are valid in local scripts. When writing new tutorial examples,
+Sacred Book uses `local s,id=GetID()` because it keeps callback names short and
+keeps the card ID available for descriptions and count limits.
+
 ## Usual File Shape
 
 <div class="script-flow">
@@ -41,6 +45,25 @@ use `c12345678` instead of `s`.
 
 The file normally starts with the namespace, then registers effects, then
 defines the callback and filter functions referenced by those effects.
+
+## What Belongs In `initial_effect`
+
+`initial_effect(c)` should register the card's effect objects. It should not
+pay costs, select targets, or resolve effects immediately.
+
+```lua
+function s.initial_effect(c)
+    local e1=Effect.CreateEffect(c)
+    e1:SetType(EFFECT_TYPE_SINGLE)
+    e1:SetCode(EFFECT_UPDATE_ATTACK)
+    e1:SetValue(500)
+    c:RegisterEffect(e1)
+end
+```
+
+Read `c:RegisterEffect(e1)` as method-call syntax for registering the effect on
+the card. Local scripts use this colon style throughout. The object before the
+colon becomes the first argument to the underlying function.
 
 ## A Tiny Complete Effect
 
@@ -101,8 +124,49 @@ For example, `s.thtg` usually means "to hand target" and `s.thop` means "to
 hand operation". Names do not affect the engine; only the function passed to the
 setter matters.
 
+## Callback Parameters
+
+Activated-effect callbacks often keep the same parameter list even when only a
+few values are used.
+
+```lua
+function s.target(e,tp,eg,ep,ev,re,r,rp,chk,chkc)
+    -- e: the Effect object
+    -- tp: the activating player
+    -- chk: legality check branch
+    -- chkc: manual target recheck branch
+end
+```
+
+Filters are smaller and start with the candidate card.
+
+```lua
+function s.filter(c,e,tp)
+    return c:IsLevelBelow(4)
+        and c:IsCanBeSpecialSummoned(e,0,tp,false,false)
+end
+```
+
+Extra filter arguments are supplied by the Duel or Group function that calls the
+filter.
+
+## Comments And Local Style
+
+Local scripts often use short comments above effect blocks:
+
+```lua
+--draw
+local e1=Effect.CreateEffect(c)
+```
+
+Use comments to separate effects or explain a non-obvious rule. The effect
+setters themselves should usually be readable without a comment on every line.
+
 ## Reading Real Scripts
 
 Open a generated example such as [Salamandra with Chain](/examples/cards/62091148)
 and read only its `initial_effect` first. You will see several effect blocks.
 Each block is a small machine: type, timing, range, callbacks, then registration.
+
+After that, jump to the callback names referenced by the block. Read helper
+filters last. They usually answer only "which cards count?"

@@ -39,6 +39,9 @@ e1:SetProperty(EFFECT_FLAG_SINGLE_RANGE)
 e1:SetRange(LOCATION_MZONE)
 ```
 
+For a step-by-step stat-focused version of this pattern, see
+[Continuous stat modifiers](continuous-stat-modifiers).
+
 ## Field Effects
 
 Field effects apply outward. A common pattern is "while this card is face-up,
@@ -97,6 +100,46 @@ c:RegisterEffect(e2)
 ```
 
 `s.eqlimit` answers whether the equipped monster is legal for this Equip Card.
+The equip activation flow itself is covered in
+[Equip Spells and Equip Cards](equip-spells).
+
+## Xyz Material Effects
+
+Some effects apply while the card is attached as Xyz Material. In those cases
+the card is not applying a normal field or equip effect; the script uses a
+material effect type such as `EFFECT_TYPE_XMATERIAL`.
+
+```lua
+local e1=Effect.CreateEffect(c)
+e1:SetType(EFFECT_TYPE_XMATERIAL)
+e1:SetCode(EFFECT_UPDATE_ATTACK)
+e1:SetValue(500)
+c:RegisterEffect(e1)
+```
+
+Material effects should be copied from a local script using the same mechanic,
+because the correct type flag and effect code depend on how the core reads that
+material state.
+
+## Player-Affecting Field Effects
+
+Some continuous field effects apply to players instead of cards. These often
+use player target flags and a `SetTargetRange` of players rather than zones.
+
+```lua
+local e1=Effect.CreateEffect(c)
+e1:SetType(EFFECT_TYPE_FIELD)
+e1:SetCode(EFFECT_CANNOT_SPECIAL_SUMMON)
+e1:SetRange(LOCATION_MZONE)
+e1:SetProperty(EFFECT_FLAG_PLAYER_TARGET)
+e1:SetTargetRange(1,0)
+e1:SetTarget(s.splimit)
+c:RegisterEffect(e1)
+```
+
+Read `SetTargetRange(1,0)` here as "the handler controller is affected; the
+opponent is not." With card-zone effects, the same setter is usually a pair of
+locations.
 
 ## Event Watchers
 

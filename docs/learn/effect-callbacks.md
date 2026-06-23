@@ -81,6 +81,25 @@ end
 Use `Duel.IsExistingTarget` and `Duel.SelectTarget` when the effect targets.
 Use matching-card functions when the card text does not target.
 
+For continuous field effects, `SetTarget` has a different job: it filters which
+cards in the target range are affected.
+
+```lua
+e1:SetType(EFFECT_TYPE_FIELD)
+e1:SetCode(EFFECT_UPDATE_ATTACK)
+e1:SetTargetRange(LOCATION_MZONE,0)
+e1:SetTarget(s.atktg)
+e1:SetValue(300)
+
+function s.atktg(e,c)
+    return c:IsFaceup() and c:IsSetCard(0x123)
+end
+```
+
+This target callback does not receive `chk` and does not select official Chain
+targets. Always read the effect type and effect code before assuming a callback
+signature.
+
 ## Operation
 
 Operations resolve the effect. The game state may have changed after activation,
@@ -98,6 +117,21 @@ end
 If several target cards were selected, use `Duel.GetTargetsRelateToChain()` or
 `Duel.GetChainInfo(0,CHAININFO_TARGET_CARDS):Filter(Card.IsRelateToEffect,nil,e)`
 depending on what the script needs to preserve.
+
+## Value
+
+`SetValue` can be a number or a callback. Continuous ATK/DEF effects commonly
+use value callbacks when the amount depends on the current field.
+
+```lua
+function s.val(e,c)
+    return Duel.GetMatchingGroupCount(s.filter,c:GetControler(),LOCATION_MZONE,0,nil)*400
+end
+```
+
+The arguments depend on the effect code. A value function for a stat modifier
+is not the same shape as a value function for an activation restriction or an
+equip limit.
 
 ## `Duel.SetOperationInfo`
 

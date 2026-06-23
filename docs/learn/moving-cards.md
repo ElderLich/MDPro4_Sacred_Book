@@ -21,6 +21,24 @@ resolution.
 | [`Duel.MoveToField`](/api/functions/Duel/MoveToField) | Move a card to a field location. |
 | [`Duel.Overlay`](/api/functions/Duel/Overlay) | Attach cards as Xyz Materials. |
 
+## Check The Card Can Move
+
+Movement filters should use the matching "able to" helper when one exists.
+
+| Action | Common filter check |
+| --- | --- |
+| Add to hand | `c:IsAbleToHand()` |
+| Send to GY | `c:IsAbleToGrave()` or `c:IsAbleToGraveAsCost()` |
+| Return to Deck | `c:IsAbleToDeck()` or `c:IsAbleToExtra()` depending on the effect |
+| Banish | `c:IsAbleToRemove()` or `c:IsAbleToRemoveAsCost()` |
+| Set Spell/Trap | `c:IsSSetable()` |
+| Set monster | `c:IsMSetable(...)` |
+| Special Summon | `c:IsCanBeSpecialSummoned(...)` |
+| Equip | target is face-up and the Equip Card can legally equip to it |
+
+Cost filters should use cost-specific helpers where available. A card that can
+be sent to the GY by effect is not automatically legal to send as cost.
+
 ## Targeted Card Pattern
 
 ```lua
@@ -71,6 +89,24 @@ end
 
 Use this when card text says "choose" or performs a selection without targeting.
 
+## Location-To-Location Actions
+
+Many movement functions can move cards from any legal starting location, but
+the script still needs to choose the right timing and legality checks.
+
+| Source situation | Typical call |
+| --- | --- |
+| A card in Deck/GY/banished should go to hand. | `Duel.SendtoHand(g,nil,REASON_EFFECT)` |
+| A card should go to the GY without being destroyed. | `Duel.SendtoGrave(g,REASON_EFFECT)` |
+| A card should be banished face-up. | `Duel.Remove(g,POS_FACEUP,REASON_EFFECT)` |
+| A monster should be Special Summoned. | `Duel.SpecialSummon(tc,0,tp,tp,false,false,POS_FACEUP)` |
+| A Spell/Trap should be Set. | `Duel.SSet(tp,tc)` |
+| A card should become an Equip Card. | `Duel.Equip(tp,eqc,tc)` |
+| A card should become a Continuous Spell/Trap. | `Duel.MoveToField(...)` plus `EFFECT_CHANGE_TYPE` when needed |
+
+If an action places a card onto the field, check available zones before
+activation and again during resolution if the Chain can change them.
+
 ## Special Summon Movement
 
 Special Summon checks usually mirror the later summon call.
@@ -106,6 +142,23 @@ end
 
 `Duel.MoveToField` is used when a card becomes a Continuous Spell/Trap, is put
 in a Field Zone, or otherwise moves to a specific field location.
+
+For the full equip flow, see [Equip Spells and Equip Cards](equip-spells).
+
+## Return Values
+
+Many movement functions return how many cards moved or whether the action
+succeeded. Local scripts often use that return value before applying the next
+part of an effect.
+
+```lua
+if Duel.SpecialSummon(c,0,tp,tp,false,false,POS_FACEUP)>0 then
+    Duel.GetControl(tc,tp)
+end
+```
+
+Do not assume the intended card moved. Relation checks, immunity, replacement
+effects, and zone changes can all affect the final result.
 
 ## Reason Matters
 

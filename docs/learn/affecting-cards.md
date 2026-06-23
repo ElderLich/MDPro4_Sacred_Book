@@ -10,6 +10,18 @@ Card scripts affect the game in two broad ways:
 Use engine functions and registered effects. Do not try to manually edit a card
 as if it were a plain Lua table.
 
+## Choose The Right Kind Of Effect
+
+| Card text shape | Usually read next |
+| --- | --- |
+| "Activate this card/effect..." | [Activated effects](activated-effects) |
+| "Target 1 card..." | [Targeting flow](targeting-flow) |
+| "Destroy/send/banish/add..." | [Functions that move cards across locations](moving-cards) |
+| "Gain/lose ATK/DEF..." | [Continuous stat modifiers](continuous-stat-modifiers) |
+| "Equip this card..." | [Equip Spells and Equip Cards](equip-spells) |
+| "Inflict damage/recover LP..." | [LP Recovery and Effect Damage](lp-recovery-and-damage) |
+| "Cards in this Set/archetype..." | [Archetypes and set codes](archetypes-and-setcodes) |
+
 ## Immediate Actions
 
 Immediate actions usually happen in an operation callback.
@@ -27,6 +39,8 @@ Immediate actions usually happen in an operation callback.
 | Change position | `Duel.ChangePosition` |
 | Equip | `Duel.Equip` |
 | Attach as Xyz Material | `Duel.Overlay` |
+| Inflict damage | `Duel.Damage` |
+| Recover LP | `Duel.Recover` |
 
 Example:
 
@@ -111,6 +125,12 @@ e1:SetCode(EFFECT_CHANGE_TYPE)
 e1:SetValue(TYPE_SPELL+TYPE_CONTINUOUS)
 ```
 
+Permanent or always-on stat changes are usually registered in
+`initial_effect`. Temporary stat changes are usually created during an
+operation and registered to the affected card with a reset. See
+[Continuous stat modifiers](continuous-stat-modifiers) for the complete
+workflow.
+
 ## Change Control and Equip
 
 Changing control and equipping are not the same as moving a card to a zone by
@@ -123,6 +143,9 @@ Duel.Equip(tp,c,tc)
 ```
 
 After equipping, register equip effects and equip limits on the Equip Card.
+
+See [Equip Spells and Equip Cards](equip-spells) for the target, operation,
+equip limit, and `EFFECT_TYPE_EQUIP` pieces together.
 
 ## A Review Checklist
 
