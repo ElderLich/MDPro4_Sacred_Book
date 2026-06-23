@@ -9,6 +9,7 @@ Effect.SetOperation(Effect e, nil|function op_func) -> void
 ## Description
 
 Sets e's operation callback. Passing nil clears the operation.
+For activated effects, this callback resolves after the Chain reaches this Link, so it should re-check targets, locations, relation, and other state that may have changed since activation.
 
 ## How To Use It
 
@@ -35,8 +36,8 @@ Passing nil to `SetOperation` clears the operation. That is occasionally useful 
 
 ## Parameters
 
-- `e` `Effect`
-- `op_func` `nil|function`
+- `e` `Effect` - Effect whose operation callback is replaced or cleared.
+- `op_func` `nil|function` - Operation callback, or nil to clear it.
 
 ## Source
 

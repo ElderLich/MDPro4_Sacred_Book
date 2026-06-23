@@ -32,8 +32,8 @@ Do not perform irreversible actions during the `chk==0` check. The engine may ca
 
 ## Parameters
 
-- `e` `Effect`
-- `cost_func` `function`
+- `e` `Effect` - Effect whose cost callback is replaced.
+- `cost_func` `function` - Callback usually shaped as cost_func(e,tp,eg,ep,ev,re,r,rp,chk).
 
 ## Source
 

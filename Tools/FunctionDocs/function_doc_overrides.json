@@ -17668,7 +17668,46 @@
     },
     "Duel.CheckLPCost": {
       "summary_en": [
-        "Checks whether player can pay the specified LP cost."
+        "Checks whether player can pay the specified LP cost without paying it.",
+        "Use this in a Cost callback's chk==0 branch. The core returns false for nonpositive costs, and the optional must_pay flag is passed to the LP-cost check."
+      ],
+      "summary_zh": [
+        "检查player是否可以支付指定LP Cost，但不会实际支付。",
+        "通常在Cost回调的chk==0分支使用。cost小于等于0时核心返回false；可选的must_pay标志会传给LP支付检查。"
+      ],
+      "core_summary_en": [
+        "Checks whether a player can pay an LP cost."
+      ],
+      "core_summary_zh": [
+        "检查玩家能否支付LP Cost。"
+      ],
+      "params": [
+        {
+          "name": "player",
+          "type": "int",
+          "description": "Player checked for payment ability.",
+          "description_zh": "要检查支付能力的玩家。"
+        },
+        {
+          "name": "cost",
+          "type": "int",
+          "description": "LP amount to check; values of 0 or less return false.",
+          "description_zh": "要检查的LP数值；0或更小的值会返回false。"
+        },
+        {
+          "name": "must_pay",
+          "type": "bool",
+          "optional": true,
+          "description": "Passed through to the core LP-cost check; scripts use true when the player must be able to pay that exact amount.",
+          "description_zh": "传给核心LP Cost检查；脚本在玩家必须能够支付该确切数值时传true。"
+        }
+      ],
+      "returns": [
+        {
+          "type": "bool|nil",
+          "description": "True if the LP cost can be paid; false if it cannot or cost is nonpositive; nil if player is invalid.",
+          "description_zh": "可以支付时为true；不能支付或cost不为正数时为false；player无效时为nil。"
+        }
       ]
     },
     "Duel.CheckLocation": {
@@ -20291,8 +20330,41 @@
     },
     "Duel.PayLPCost": {
       "summary_en": [
-        "Makes player pay the specified LP cost."
-      ]
+        "Makes player pay the specified LP cost.",
+        "Call this only in the real Cost branch after the chk==0 branch has used Duel.CheckLPCost or an equivalent legality check."
+      ],
+      "summary_zh": [
+        "使player支付指定LP Cost。",
+        "只应在实际Cost分支调用；chk==0分支应先使用Duel.CheckLPCost或等价检查确认可以支付。"
+      ],
+      "core_summary_en": [
+        "Processes LP cost payment."
+      ],
+      "core_summary_zh": [
+        "处理LP Cost支付。"
+      ],
+      "params": [
+        {
+          "name": "player",
+          "type": "int",
+          "description": "Player who pays the LP cost.",
+          "description_zh": "支付LP Cost的玩家。"
+        },
+        {
+          "name": "cost",
+          "type": "int",
+          "description": "LP amount to pay.",
+          "description_zh": "要支付的LP数值。"
+        },
+        {
+          "name": "must_pay",
+          "type": "bool",
+          "optional": true,
+          "description": "Passed through to the core LP-cost payment processor.",
+          "description_zh": "传给核心LP Cost支付处理器。"
+        }
+      ],
+      "returns": []
     },
     "Duel.RDComplete": {
       "summary_en": [
@@ -21525,13 +21597,53 @@
     },
     "Duel.SetTargetParam": {
       "summary_en": [
-        "Stores param as the target parameter for the currently handled Chain."
-      ]
+        "Stores param as the target parameter for the currently handled Chain.",
+        "Operations commonly read it with Duel.GetChainInfo(0, CHAININFO_TARGET_PARAM), often together with CHAININFO_TARGET_PLAYER."
+      ],
+      "summary_zh": [
+        "把param保存为当前处理连锁的对象参数。",
+        "Operation回调通常用Duel.GetChainInfo(0, CHAININFO_TARGET_PARAM)读取它，并常与CHAININFO_TARGET_PLAYER一起使用。"
+      ],
+      "core_summary_en": [
+        "Sets the current Chain target parameter."
+      ],
+      "core_summary_zh": [
+        "设置当前连锁的对象参数。"
+      ],
+      "params": [
+        {
+          "name": "param",
+          "type": "int",
+          "description": "Integer target parameter stored on the current Chain.",
+          "description_zh": "保存到当前连锁上的整数对象参数。"
+        }
+      ],
+      "returns": []
     },
     "Duel.SetTargetPlayer": {
       "summary_en": [
-        "Stores player as the target player for the currently handled Chain."
-      ]
+        "Stores player as the target player for the currently handled Chain.",
+        "Operations commonly read it with Duel.GetChainInfo(0, CHAININFO_TARGET_PLAYER), often together with CHAININFO_TARGET_PARAM."
+      ],
+      "summary_zh": [
+        "把player保存为当前处理连锁的对象玩家。",
+        "Operation回调通常用Duel.GetChainInfo(0, CHAININFO_TARGET_PLAYER)读取它，并常与CHAININFO_TARGET_PARAM一起使用。"
+      ],
+      "core_summary_en": [
+        "Sets the current Chain target player."
+      ],
+      "core_summary_zh": [
+        "设置当前连锁的对象玩家。"
+      ],
+      "params": [
+        {
+          "name": "player",
+          "type": "int",
+          "description": "Player value stored on the current Chain.",
+          "description_zh": "保存到当前连锁上的玩家值。"
+        }
+      ],
+      "returns": []
     },
     "Duel.ShuffleDeck": {
       "summary_en": [
@@ -22689,6 +22801,10 @@
         "Sets e's cost callback. For activated effects, the callback checks whether the cost can be paid and then pays it.",
         "Cost callbacks should only test legality when chk is 0; irreversible payment belongs in the nonzero chk branch."
       ],
+      "summary_zh": [
+        "设置e的Cost回调。对于发动型效果，该回调用于检查Cost能否支付，并在实际发动时支付Cost。",
+        "chk为0时Cost回调只应检查合法性；不可逆的支付动作应放在chk非0的分支。"
+      ],
       "core_summary_en": [
         "Sets e's cost callback."
       ],
@@ -22698,11 +22814,15 @@
       "params": [
         {
           "name": "e",
-          "type": "Effect"
+          "type": "Effect",
+          "description": "Effect whose cost callback is replaced.",
+          "description_zh": "要替换Cost回调的效果。"
         },
         {
           "name": "cost_func",
-          "type": "function"
+          "type": "function",
+          "description": "Callback usually shaped as cost_func(e,tp,eg,ep,ev,re,r,rp,chk).",
+          "description_zh": "回调通常写作cost_func(e,tp,eg,ep,ev,re,r,rp,chk)。"
         }
       ],
       "returns": []
@@ -22791,7 +22911,12 @@
     },
     "Effect.SetOperation": {
       "summary_en": [
-        "Sets e's operation callback. Passing nil clears the operation."
+        "Sets e's operation callback. Passing nil clears the operation.",
+        "For activated effects, this callback resolves after the Chain reaches this Link, so it should re-check targets, locations, relation, and other state that may have changed since activation."
+      ],
+      "summary_zh": [
+        "设置e的Operation回调；传入nil会清除Operation。",
+        "对于发动型效果，该回调会在连锁处理到此连锁环时结算，因此应重新检查对象、位置、关联以及发动后可能变化的状态。"
       ],
       "core_summary_en": [
         "Sets or clears e's operation callback."
@@ -22802,11 +22927,15 @@
       "params": [
         {
           "name": "e",
-          "type": "Effect"
+          "type": "Effect",
+          "description": "Effect whose operation callback is replaced or cleared.",
+          "description_zh": "要替换或清除Operation回调的效果。"
         },
         {
           "name": "op_func",
-          "type": "nil|function"
+          "type": "nil|function",
+          "description": "Operation callback, or nil to clear it.",
+          "description_zh": "Operation回调；传nil表示清除。"
         }
       ],
       "returns": []

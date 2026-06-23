@@ -29,6 +29,10 @@ back into the generated API reference and live card examples.
     <strong>Targeting flow</strong>
     <span>How scripts check, select, record, and resolve official effect targets.</span>
   </a>
+  <a class="sacred-card" href="cost-target-operation-lifecycle">
+    <strong>Effect lifecycle</strong>
+    <span>How costs, target branches, labels, Chain data, and operations work together.</span>
+  </a>
   <a class="sacred-card" href="continuous-effects">
     <strong>Continuous effects</strong>
     <span>How always-on, field, equip, and event-watching effects are built.</span>
@@ -53,11 +57,12 @@ back into the generated API reference and live card examples.
 6. Work with cards and groups through [Filters, Card objects, and Group objects](filters-and-groups).
 7. Move cards correctly with [Functions that move cards across locations](moving-cards).
 8. Target cards correctly with [Targeting flow](targeting-flow).
-9. Read always-on behavior through [Continuous effects](continuous-effects).
-10. Track temporary script memory with [Flag effects](flag-effects).
-11. Limit effect usage with [Count limits and once per turn](count-limits).
-12. Apply outcomes through [Methods for affecting cards](affecting-cards).
-13. Use card families through [Archetypes and set codes](archetypes-and-setcodes).
+9. Resolve activated effects with [Cost, target, and operation lifecycle](cost-target-operation-lifecycle).
+10. Read always-on behavior through [Continuous effects](continuous-effects).
+11. Track temporary script memory with [Flag effects](flag-effects).
+12. Limit effect usage with [Count limits and once per turn](count-limits).
+13. Apply outcomes through [Methods for affecting cards](affecting-cards).
+14. Use card families through [Archetypes and set codes](archetypes-and-setcodes).
 
 ## How To Read This Book
 
