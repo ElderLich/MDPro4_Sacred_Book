@@ -8,7 +8,8 @@ Auxiliary.LinkOperation(function|nil f, int minct, int maxct, function|nil gf) -
 
 ## Description
 
-Returns the operation function for Link Summon procedures; it sets the materials, consumes extra-material count limits, and sends the materials to the Graveyard.
+Returns the operation function for Link Summon procedures.
+The returned function reads the selected group from the effect label object, records it with Card.SetMaterial, consumes valid extra-material count limits, sends the materials to the GY with REASON_MATERIAL+REASON_LINK, and deletes the kept-alive group.
 
 ## Parameters
 

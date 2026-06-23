@@ -750,11 +750,60 @@
     "Auxiliary.AddLinkProcedure": {
       "summary_en": [
         "Registers the standard Link Summon procedure for c and returns the created Effect.",
-        "f filters materials, min/max constrain the material count, and gf optionally checks the selected material group."
+        "f filters each Link Material, min/max constrain the number of selected material cards, and gf optionally checks the selected group as a whole.",
+        "The helper creates an Extra Deck EFFECT_SPSUMMON_PROC with SUMMON_TYPE_LINK, uses Auxiliary.GetLinkCount to match the Link Rating, records materials with Card.SetMaterial, and sends them to the GY with REASON_MATERIAL+REASON_LINK."
       ],
       "summary_zh": [
         "为c登记标准连接召唤手续，并返回创建的Effect。",
-        "f筛选素材，min/max限制素材数量，gf可额外检查选中的素材组。"
+        "f筛选每张连接素材，min/max限制选择的素材卡数量，gf可额外检查被选择的整组素材。",
+        "该辅助函数会建立额外卡组中的EFFECT_SPSUMMON_PROC并设为SUMMON_TYPE_LINK，使用Auxiliary.GetLinkCount匹配连接值，用Card.SetMaterial记录素材，并以REASON_MATERIAL+REASON_LINK送去墓地。"
+      ],
+      "core_summary_en": [
+        "Registers a standard Link Summon procedure."
+      ],
+      "core_summary_zh": [
+        "登记标准连接召唤手续。"
+      ],
+      "params": [
+        {
+          "name": "c",
+          "type": "Card",
+          "description": "Link Monster receiving the procedure.",
+          "description_zh": "要登记手续的连接怪兽。"
+        },
+        {
+          "name": "f",
+          "type": "function|nil",
+          "description": "Optional per-material filter. nil means no extra filter beyond normal Link Material legality.",
+          "description_zh": "可选的逐素材筛选函数。nil表示除通常连接素材合法性外没有额外筛选。"
+        },
+        {
+          "name": "min",
+          "type": "int",
+          "description": "Minimum number of material cards that must be selected.",
+          "description_zh": "必须选择的素材卡数量下限。"
+        },
+        {
+          "name": "max",
+          "type": "int",
+          "optional": true,
+          "description": "Maximum number of material cards. Defaults to c:GetLink() when omitted.",
+          "description_zh": "素材卡数量上限。省略时默认为c:GetLink()。"
+        },
+        {
+          "name": "gf",
+          "type": "function|nil",
+          "optional": true,
+          "description": "Optional whole-group validator called as gf(selected_group, link_monster, player).",
+          "description_zh": "可选的整组素材检查函数，以gf(被选择的Group, 连接怪兽, 玩家)调用。"
+        }
+      ],
+      "returns": [
+        {
+          "type": "Effect",
+          "description": "The registered Special Summon procedure effect.",
+          "description_zh": "已登记的特殊召唤手续Effect。"
+        }
       ]
     },
     "Auxiliary.AddMaterialCodeList": {
@@ -4094,10 +4143,33 @@
     },
     "Auxiliary.GetLinkCount": {
       "summary_en": [
-        "Returns 1 plus the Link Rating shifted into the high word for Link Monsters with Link Rating greater than 1; otherwise returns 1."
+        "Returns the encoded material value used by Link procedure sum checks.",
+        "Ordinary materials and Link-1 monsters count as 1. A Link Monster with Link Rating greater than 1 encodes the choice to count as either 1 or its Link Rating for Group.CheckWithSumEqual."
       ],
       "summary_zh": [
-        "连接怪兽且连接值大于1时，返回1加上连接值左移到高16位后的值；其他情况返回1。"
+        "返回连接召唤手续求和检查使用的素材数值编码。",
+        "通常素材和LINK-1怪兽按1计算。连接值大于1的连接怪兽会编码为可按1或自身连接值计算，供Group.CheckWithSumEqual使用。"
+      ],
+      "core_summary_en": [
+        "Returns Link Material count encoding."
+      ],
+      "core_summary_zh": [
+        "返回连接素材数量编码。"
+      ],
+      "params": [
+        {
+          "name": "c",
+          "type": "Card",
+          "description": "Candidate Link Material.",
+          "description_zh": "候选连接素材。"
+        }
+      ],
+      "returns": [
+        {
+          "type": "int",
+          "description": "1, or an encoded 1-or-Link-Rating value for Link Monsters with Link Rating greater than 1.",
+          "description_zh": "1；连接值大于1的连接怪兽则返回可表示1或自身连接值的编码。"
+        }
       ]
     },
     "Auxiliary.GetLinkMaterials": {
@@ -4978,10 +5050,12 @@
     },
     "Auxiliary.LinkCondition": {
       "summary_en": [
-        "Returns the condition function for Link Summon procedures."
+        "Returns the condition function for Link Summon procedures.",
+        "The returned function rejects face-up Pendulum Link Monsters in the Extra Deck, builds or filters the material pool, applies runtime min/max limits, includes required lmat material when supplied, checks EFFECT_MUST_BE_LMATERIAL, and asks whether a valid subgroup exists."
       ],
       "summary_zh": [
-        "返回连接召唤手续的条件函数。"
+        "返回连接召唤手续的条件函数。",
+        "返回的函数会拒绝额外卡组中表侧表示的灵摆连接怪兽，建立或筛选素材池，应用运行时min/max限制，在提供lmat时加入必需素材，检查EFFECT_MUST_BE_LMATERIAL，并确认是否存在合法素材子组。"
       ],
       "core_summary_en": [
         "Returns the condition function for Link Summon procedures."
@@ -5013,10 +5087,12 @@
     },
     "Auxiliary.LinkOperation": {
       "summary_en": [
-        "Returns the operation function for Link Summon procedures; it sets the materials, consumes extra-material count limits, and sends the materials to the Graveyard."
+        "Returns the operation function for Link Summon procedures.",
+        "The returned function reads the selected group from the effect label object, records it with Card.SetMaterial, consumes valid extra-material count limits, sends the materials to the GY with REASON_MATERIAL+REASON_LINK, and deletes the kept-alive group."
       ],
       "summary_zh": [
-        "返回连接召唤手续的操作函数；设置素材，消耗额外素材次数限制，并把素材送去墓地。"
+        "返回连接召唤手续的操作函数。",
+        "返回的函数从效果的LabelObject读取被选择的Group，用Card.SetMaterial记录素材，消耗合法的额外素材次数限制，以REASON_MATERIAL+REASON_LINK把素材送去墓地，并删除KeepAlive的Group。"
       ],
       "core_summary_en": [
         "Returns the operation function for Link Summon procedures."
@@ -5048,10 +5124,12 @@
     },
     "Auxiliary.LinkTarget": {
       "summary_en": [
-        "Returns the target function for Link Summon procedures; it selects a valid Link Material subgroup and stores it on the effect."
+        "Returns the target function for Link Summon procedures.",
+        "The returned function selects a Link Material subgroup with Group.SelectSubGroup and Auxiliary.LCheckGoal, keeps that group alive, and stores it on the effect for LinkOperation."
       ],
       "summary_zh": [
-        "返回连接召唤手续的目标函数；选择有效连接素材子组并保存在效果上。"
+        "返回连接召唤手续的目标函数。",
+        "返回的函数使用Group.SelectSubGroup和Auxiliary.LCheckGoal选择连接素材子组，使该Group保持存在，并保存在效果上供LinkOperation使用。"
       ],
       "core_summary_en": [
         "Returns the target function for Link Summon procedures."
@@ -12523,10 +12601,12 @@
     },
     "Card.GetLinkedGroup": {
       "summary_en": [
-        "Returns the cards currently occupying zones linked by c."
+        "Returns the cards currently occupying zones linked by c.",
+        "Use this when an effect cares about the actual cards in zones pointed to by c's Link Markers."
       ],
       "summary_zh": [
-        "返回当前位于c连接区域中的卡。"
+        "返回当前位于c连接区域中的卡。",
+        "当效果关心c的连接标记所指向区域中的实际卡时使用。"
       ],
       "core_summary_en": [
         "Returns cards currently in zones linked by c."
@@ -12542,7 +12622,9 @@
       ],
       "returns": [
         {
-          "type": "Group"
+          "type": "Group",
+          "description": "Cards currently in c's linked zones.",
+          "description_zh": "当前位于c连接区域中的卡。"
         }
       ]
     },
@@ -12574,11 +12656,13 @@
     "Card.GetLinkedZone": {
       "summary_en": [
         "Returns the linked-zone bitmask generated by c.",
-        "By default the bitmask is from c's controller perspective. Passing the opponent as player swaps the self and opponent halves to that player's perspective."
+        "By default the bitmask is from c's controller perspective. Passing player converts the mask to that player's perspective.",
+        "Use bit helpers such as bit.extract or bit.band when checking whether a specific sequence is pointed to."
       ],
       "summary_zh": [
         "返回c产生的连接区域位掩码。",
-        "默认从c控制者视角返回。传入对方玩家作为player时，会交换自己/对方两部分位掩码，转换为该玩家视角。"
+        "默认从c的控制者视角返回。传入player时，会把掩码转换为该玩家视角。",
+        "检查特定序号是否被连接标记指向时，通常配合bit.extract或bit.band等位运算辅助函数。"
       ],
       "core_summary_en": [
         "Returns c's linked-zone bitmask."
@@ -12595,12 +12679,15 @@
           "name": "player",
           "type": "int",
           "optional": true,
-          "description": "default: c's controller"
+          "description": "Perspective player for the returned zone mask. Default: c's controller.",
+          "description_zh": "返回区域掩码时使用的视角玩家。默认值：c的控制者。"
         }
       ],
       "returns": [
         {
-          "type": "int"
+          "type": "int",
+          "description": "Linked-zone bitmask from the requested perspective.",
+          "description_zh": "指定视角下的连接区域位掩码。"
         }
       ]
     },
@@ -14346,10 +14433,12 @@
     },
     "Card.IsCanBeLinkMaterial": {
       "summary_en": [
-        "Checks whether c can be used as Link Material, optionally for Link Monster scard."
+        "Checks whether c can be used as Link Material, optionally for Link Monster scard.",
+        "Standard Link procedures call this before applying their own material filters."
       ],
       "summary_zh": [
-        "检查c能否作为连接素材；可选地指定连接怪兽scard。"
+        "检查c能否作为连接素材；可选地指定连接怪兽scard。",
+        "标准连接召唤手续会在应用自身素材筛选前调用此检查。"
       ],
       "core_summary_en": [
         "Checks Link Material usability."
@@ -14365,12 +14454,16 @@
         {
           "name": "scard",
           "type": "Card",
-          "optional": true
+          "optional": true,
+          "description": "Link Monster that would use c as material.",
+          "description_zh": "要把c作为素材使用的连接怪兽。"
         }
       ],
       "returns": [
         {
-          "type": "bool"
+          "type": "bool",
+          "description": "true if c may currently be used as Link Material for scard or for a generic Link Material check.",
+          "description_zh": "若c当前可以作为scard的连接素材，或通过通用连接素材检查，则返回true。"
         }
       ]
     },
@@ -15677,11 +15770,15 @@
     "Card.IsLinkSummonable": {
       "summary_en": [
         "Checks whether Link Monster c can be Link Summoned by the current reason player.",
-        "Optional materials, lcard, minc, and maxc restrict the Link Material pool and material count used by the core check."
+        "Optional materials, lcard, minc, and maxc restrict the Link Material pool and material count used by the core check.",
+        "Use this in effect target and operation branches before calling Duel.LinkSummon. minc and maxc default to 0 when omitted, leaving the registered procedure's own count rules in control.",
+        "The core rejects this check during the Damage Step."
       ],
       "summary_zh": [
         "检查连接怪兽c能否由当前原因玩家进行连接召唤。",
-        "可选的materials、lcard、minc、maxc会限制核心检查使用的连接素材池和素材数量。"
+        "可选的materials、lcard、minc、maxc会限制核心检查使用的连接素材池和素材数量。",
+        "通常在效果的target和operation分支中，于调用Duel.LinkSummon前使用。minc和maxc省略时默认为0，由已登记手续自身的数量规则决定。",
+        "核心在伤害步骤中会拒绝这个检查。"
       ],
       "core_summary_en": [
         "Checks Link Summon availability."
@@ -15692,33 +15789,43 @@
       "params": [
         {
           "name": "c",
-          "type": "Card"
+          "type": "Card",
+          "description": "Link Monster being tested.",
+          "description_zh": "要检查的连接怪兽。"
         },
         {
           "name": "materials",
-          "type": "Group|nil"
+          "type": "Group|nil",
+          "description": "Optional temporary material pool. nil lets the registered procedure collect its normal pool.",
+          "description_zh": "可选的临时素材池。nil表示让已登记手续收集通常素材池。"
         },
         {
           "name": "lcard",
           "type": "Card|nil",
-          "optional": true
+          "optional": true,
+          "description": "Optional fixed material that the final selected group must include.",
+          "description_zh": "可选的固定素材；最终选择的Group必须包含它。"
         },
         {
           "name": "minc",
           "type": "int",
           "optional": true,
-          "description": "default: 0"
+          "description": "Runtime minimum material-card count. default: 0",
+          "description_zh": "运行时素材卡数量下限。默认值：0"
         },
         {
           "name": "maxc",
           "type": "int",
           "optional": true,
-          "description": "default: 0"
+          "description": "Runtime maximum material-card count. default: 0",
+          "description_zh": "运行时素材卡数量上限。默认值：0"
         }
       ],
       "returns": [
         {
-          "type": "bool"
+          "type": "bool",
+          "description": "true if c has a legal Link Summon under the supplied temporary limits.",
+          "description_zh": "若c在给定临时限制下存在合法连接召唤，则返回true。"
         }
       ]
     },
@@ -19256,10 +19363,12 @@
     },
     "Duel.GetLinkedGroup": {
       "summary_en": [
-        "Returns a Group of cards in player-relative locations s and o that are linked."
+        "Returns a Group of cards in player-relative locations s and o that are linked.",
+        "Use the Card.GetLinkedGroup method when checking one Link Monster; use this Duel helper for field-wide location-mask checks."
       ],
       "summary_zh": [
-        "返回player视角下s和o位置中处于连接状态区域的卡组成的Group。"
+        "返回player视角下s和o位置中处于连接状态区域的卡组成的Group。",
+        "检查单个连接怪兽时使用Card.GetLinkedGroup；需要按场上位置掩码进行全场检查时使用此Duel辅助函数。"
       ],
       "core_summary_en": [
         "Returns linked cards in field locations."
@@ -19270,15 +19379,21 @@
       "params": [
         {
           "name": "player",
-          "type": "int"
+          "type": "int",
+          "description": "Perspective player.",
+          "description_zh": "视角玩家。"
         },
         {
           "name": "s",
-          "type": "int"
+          "type": "int",
+          "description": "Location mask on player's side.",
+          "description_zh": "player自己场上的位置掩码。"
         },
         {
           "name": "o",
-          "type": "int"
+          "type": "int",
+          "description": "Location mask on the opponent's side from player's perspective.",
+          "description_zh": "从player视角看对方场上的位置掩码。"
         }
       ],
       "returns": [
@@ -19298,10 +19413,12 @@
     },
     "Duel.GetLinkedZone": {
       "summary_en": [
-        "Returns the zone bitmask currently pointed to by Link Markers from player's perspective."
+        "Returns the zone bitmask currently pointed to by Link Markers from player's perspective.",
+        "Use bit operations to test individual zones. For one Link Monster's markers, use Card.GetLinkedZone."
       ],
       "summary_zh": [
-        "返回从player视角看当前被连接标记指向的区域位掩码。"
+        "返回从player视角看当前被连接标记指向的区域位掩码。",
+        "检查单个区域时配合位运算。若只检查一只连接怪兽的连接标记，使用Card.GetLinkedZone。"
       ],
       "core_summary_en": [
         "Returns linked-zone bitmask."
@@ -19312,12 +19429,16 @@
       "params": [
         {
           "name": "player",
-          "type": "int"
+          "type": "int",
+          "description": "Perspective player for the returned zone mask.",
+          "description_zh": "返回区域掩码时使用的视角玩家。"
         }
       ],
       "returns": [
         {
-          "type": "int"
+          "type": "int",
+          "description": "Linked-zone bitmask from player's perspective.",
+          "description_zh": "player视角下的连接区域位掩码。"
         }
       ]
     },
@@ -20691,12 +20812,14 @@
     },
     "Duel.LinkSummon": {
       "summary_en": [
-        "Starts a rule Link Summon of c for player.",
-        "materials, lcard, minc, and maxc become temporary Link Summon limits; the binding yields to the core and returns no Lua value."
+        "Performs a rule Link Summon for player and c using an optional material group, fixed material, and min/max constraints.",
+        "Use this in effect operations after checking Card.IsLinkSummonable. The selected Link Monster's registered procedure still controls final material selection and sends materials to the GY.",
+        "The core rejects this during the Damage Step, yields while the Summon is processed, and returns no Lua value."
       ],
       "summary_zh": [
-        "为player开始对c进行规则连接召唤。",
-        "materials、lcard、minc、maxc会成为临时连接召唤限制；该绑定交给核心处理并且不返回Lua值。"
+        "为player和c执行规则连接召唤，可使用可选素材Group、固定素材和min/max限制。",
+        "通常在效果operation中先检查Card.IsLinkSummonable，再调用此函数。被选择连接怪兽已登记的手续仍负责最终素材选择，并把素材送去墓地。",
+        "核心在伤害步骤中会拒绝调用；处理召唤时会让脚本等待，且没有Lua返回值。"
       ],
       "core_summary_en": [
         "Performs a rule Link Summon."
@@ -20707,32 +20830,42 @@
       "params": [
         {
           "name": "player",
-          "type": "int"
+          "type": "int",
+          "description": "Player performing the Link Summon.",
+          "description_zh": "进行连接召唤的玩家。"
         },
         {
           "name": "c",
-          "type": "Card"
+          "type": "Card",
+          "description": "Link Monster to Link Summon.",
+          "description_zh": "要连接召唤的连接怪兽。"
         },
         {
           "name": "materials",
-          "type": "Group|nil"
+          "type": "Group|nil",
+          "description": "Optional temporary material pool. nil uses the Link Monster's normal procedure pool.",
+          "description_zh": "可选的临时素材池。nil表示使用该连接怪兽手续的通常素材池。"
         },
         {
           "name": "lcard",
           "type": "Card|nil",
-          "optional": true
+          "optional": true,
+          "description": "Optional fixed material that must be included in the selected group.",
+          "description_zh": "可选的固定素材；选择的Group必须包含它。"
         },
         {
           "name": "minc",
           "type": "int",
           "optional": true,
-          "description": "default: 0"
+          "description": "Runtime minimum material-card count. default: 0",
+          "description_zh": "运行时素材卡数量下限。默认值：0"
         },
         {
           "name": "maxc",
           "type": "int",
           "optional": true,
-          "description": "default: 0"
+          "description": "Runtime maximum material-card count. default: 0",
+          "description_zh": "运行时素材卡数量上限。默认值：0"
         }
       ],
       "returns": []

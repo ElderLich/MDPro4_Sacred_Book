@@ -649,10 +649,11 @@ Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3390
 
 ●Group Card.GetLinkedGroup(Card c)
 返回当前位于c连接区域中的卡。
+当效果关心c的连接标记所指向区域中的实际卡时使用。
 Parameters:
   c: Card
 Returns:
-  Group
+  Group - 当前位于c连接区域中的卡。
 Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3419
 
 ●int Card.GetLinkedGroupCount(Card c)
@@ -665,12 +666,13 @@ Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3420
 
 ●int Card.GetLinkedZone(Card c, [int player])
 返回c产生的连接区域位掩码。
-默认从c控制者视角返回。传入对方玩家作为player时，会交换自己/对方两部分位掩码，转换为该玩家视角。
+默认从c的控制者视角返回。传入player时，会把掩码转换为该玩家视角。
+检查特定序号是否被连接标记指向时，通常配合bit.extract或bit.band等位运算辅助函数。
 Parameters:
   c: Card
-  player: int optional - default: c's controller
+  player: int optional - 返回区域掩码时使用的视角玩家。默认值：c的控制者。
 Returns:
-  int
+  int - 指定视角下的连接区域位掩码。
 Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3421
 
 ●int Card.GetLinkRace(Card c, [int player])
@@ -1464,11 +1466,12 @@ Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3639
 
 ●bool Card.IsCanBeLinkMaterial(Card c, [Card scard])
 检查c能否作为连接素材；可选地指定连接怪兽scard。
+标准连接召唤手续会在应用自身素材筛选前调用此检查。
 Parameters:
   c: Card
-  scard: Card optional
+  scard: Card optional - 要把c作为素材使用的连接怪兽。
 Returns:
-  bool
+  bool - 若c当前可以作为scard的连接素材，或通过通用连接素材检查，则返回true。
 Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3643
 
 ●bool Card.IsCanBePlacedOnField(Card c, [int toplayer], [int tolocation])
@@ -1984,14 +1987,16 @@ Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3425
 ●bool Card.IsLinkSummonable(Card c, Group|nil materials, [Card|nil lcard], [int minc], [int maxc])
 检查连接怪兽c能否由当前原因玩家进行连接召唤。
 可选的materials、lcard、minc、maxc会限制核心检查使用的连接素材池和素材数量。
+通常在效果的target和operation分支中，于调用Duel.LinkSummon前使用。minc和maxc省略时默认为0，由已登记手续自身的数量规则决定。
+核心在伤害步骤中会拒绝这个检查。
 Parameters:
-  c: Card
-  materials: Group|nil
-  lcard: Card|nil optional
-  minc: int optional - default: 0
-  maxc: int optional - default: 0
+  c: Card - 要检查的连接怪兽。
+  materials: Group|nil - 可选的临时素材池。nil表示让已登记手续收集通常素材池。
+  lcard: Card|nil optional - 可选的固定素材；最终选择的Group必须包含它。
+  minc: int optional - 运行时素材卡数量下限。默认值：0
+  maxc: int optional - 运行时素材卡数量上限。默认值：0
 Returns:
-  bool
+  bool - 若c在给定临时限制下存在合法连接召唤，则返回true。
 Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3578
 
 ●bool Card.IsLinkType(Card c, int type)
@@ -3487,10 +3492,11 @@ Source: D:\Programs\GitHub\ygopro-core\libduel.cpp:5020
 
 ●Group|nil Duel.GetLinkedGroup(int player, int s, int o)
 返回player视角下s和o位置中处于连接状态区域的卡组成的Group。
+检查单个连接怪兽时使用Card.GetLinkedGroup；需要按场上位置掩码进行全场检查时使用此Duel辅助函数。
 Parameters:
-  player: int
-  s: int
-  o: int
+  player: int - 视角玩家。
+  s: int - player自己场上的位置掩码。
+  o: int - 从player视角看对方场上的位置掩码。
 Returns:
   Group|nil - Linked cards, or nil if player is invalid.
 Source: D:\Programs\GitHub\ygopro-core\libduel.cpp:4940
@@ -3507,10 +3513,11 @@ Source: D:\Programs\GitHub\ygopro-core\libduel.cpp:4941
 
 ●int Duel.GetLinkedZone(int player)
 返回从player视角看当前被连接标记指向的区域位掩码。
+检查单个区域时配合位运算。若只检查一只连接怪兽的连接标记，使用Card.GetLinkedZone。
 Parameters:
-  player: int
+  player: int - 返回区域掩码时使用的视角玩家。
 Returns:
-  int
+  int - player视角下的连接区域位掩码。
 Source: D:\Programs\GitHub\ygopro-core\libduel.cpp:4942
 
 ●int,int Duel.GetLocationCount(int player, int location, [int use_player], [int reason], [int zone])
@@ -4134,15 +4141,16 @@ Returns:
 Source: D:\Programs\GitHub\ygopro-core\libduel.cpp:4848
 
 ●void Duel.LinkSummon(int player, Card c, Group|nil materials, [Card|nil lcard], [int minc], [int maxc])
-为player开始对c进行规则连接召唤。
-materials、lcard、minc、maxc会成为临时连接召唤限制；该绑定交给核心处理并且不返回Lua值。
+为player和c执行规则连接召唤，可使用可选素材Group、固定素材和min/max限制。
+通常在效果operation中先检查Card.IsLinkSummonable，再调用此函数。被选择连接怪兽已登记的手续仍负责最终素材选择，并把素材送去墓地。
+核心在伤害步骤中会拒绝调用；处理召唤时会让脚本等待，且没有Lua返回值。
 Parameters:
-  player: int
-  c: Card
-  materials: Group|nil
-  lcard: Card|nil optional
-  minc: int optional - default: 0
-  maxc: int optional - default: 0
+  player: int - 进行连接召唤的玩家。
+  c: Card - 要连接召唤的连接怪兽。
+  materials: Group|nil - 可选的临时素材池。nil表示使用该连接怪兽手续的通常素材池。
+  lcard: Card|nil optional - 可选的固定素材；选择的Group必须包含它。
+  minc: int optional - 运行时素材卡数量下限。默认值：0
+  maxc: int optional - 运行时素材卡数量上限。默认值：0
 Source: D:\Programs\GitHub\ygopro-core\libduel.cpp:4869
 
 ●void Duel.MajesticCopy(Card c1, Card c2)
@@ -8170,17 +8178,18 @@ Parameters:
   attr: int
 Source: Utilities/procedure.lua:1342
 
-●Effect Auxiliary.AddLinkProcedure(Card c, [function|nil f], int min, [int max], [function gf])
+●Effect Auxiliary.AddLinkProcedure(Card c, function|nil f, int min, [int max], [function|nil gf])
 为c登记标准连接召唤手续，并返回创建的Effect。
-f筛选素材，min/max限制素材数量，gf可额外检查选中的素材组。
+f筛选每张连接素材，min/max限制选择的素材卡数量，gf可额外检查被选择的整组素材。
+该辅助函数会建立额外卡组中的EFFECT_SPSUMMON_PROC并设为SUMMON_TYPE_LINK，使用Auxiliary.GetLinkCount匹配连接值，用Card.SetMaterial记录素材，并以REASON_MATERIAL+REASON_LINK送去墓地。
 Parameters:
-  c: Card
-  f: function|nil optional
-  min: int
-  max: int optional
-  gf: function optional
+  c: Card - 要登记手续的连接怪兽。
+  f: function|nil - 可选的逐素材筛选函数。nil表示除通常连接素材合法性外没有额外筛选。
+  min: int - 必须选择的素材卡数量下限。
+  max: int optional - 素材卡数量上限。省略时默认为c:GetLink()。
+  gf: function|nil optional - 可选的整组素材检查函数，以gf(被选择的Group, 连接怪兽, 玩家)调用。
 Returns:
-  Effect
+  Effect - 已登记的特殊召唤手续Effect。
 Source: Utilities/procedure.lua:2128
 
 ●void Auxiliary.AddRitualProcEqual(Card c, function filter, any summon_location, any grave_filter, any mat_filter, Effect pause, any extra_operation, any extra_target)
@@ -8981,10 +8990,13 @@ Returns:
   bool
 Source: Utilities/procedure.lua:2289
 
-●void Auxiliary.GetLinkCount(Card c)
-连接怪兽且连接值大于1时，返回1加上连接值左移到高16位后的值；其他情况返回1。
+●int Auxiliary.GetLinkCount(Card c)
+返回连接召唤手续求和检查使用的素材数值编码。
+通常素材和LINK-1怪兽按1计算。连接值大于1的连接怪兽会编码为可按1或自身连接值计算，供Group.CheckWithSumEqual使用。
 Parameters:
-  c: Card
+  c: Card - 候选连接素材。
+Returns:
+  int - 1；连接值大于1的连接怪兽则返回可表示1或自身连接值的编码。
 Source: Utilities/procedure.lua:2158
 
 ●Group Auxiliary.GetLinkMaterials(int tp, function|nil f, Card lc, Effect e)
@@ -9093,6 +9105,7 @@ Source: Utilities/procedure.lua:2191
 
 ●function Auxiliary.LinkCondition(function|nil f, int minct, int maxct, function|nil gf)
 返回连接召唤手续的条件函数。
+返回的函数会拒绝额外卡组中表侧表示的灵摆连接怪兽，建立或筛选素材池，应用运行时min/max限制，在提供lmat时加入必需素材，检查EFFECT_MUST_BE_LMATERIAL，并确认是否存在合法素材子组。
 Parameters:
   f: function|nil
   minct: int
@@ -9114,7 +9127,8 @@ Returns:
 Source: Utilities/procedure.lua:2309
 
 ●function Auxiliary.LinkOperation(function|nil f, int minct, int maxct, function|nil gf)
-返回连接召唤手续的操作函数；设置素材，消耗额外素材次数限制，并把素材送去墓地。
+返回连接召唤手续的操作函数。
+返回的函数从效果的LabelObject读取被选择的Group，用Card.SetMaterial记录素材，消耗合法的额外素材次数限制，以REASON_MATERIAL+REASON_LINK把素材送去墓地，并删除KeepAlive的Group。
 Parameters:
   f: function|nil
   minct: int
@@ -9125,7 +9139,8 @@ Returns:
 Source: Utilities/procedure.lua:2263
 
 ●function Auxiliary.LinkTarget(function|nil f, int minct, int maxct, function|nil gf)
-返回连接召唤手续的目标函数；选择有效连接素材子组并保存在效果上。
+返回连接召唤手续的目标函数。
+返回的函数使用Group.SelectSubGroup和Auxiliary.LCheckGoal选择连接素材子组，使该Group保持存在，并保存在效果上供LinkOperation使用。
 Parameters:
   f: function|nil
   minct: int

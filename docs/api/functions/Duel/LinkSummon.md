@@ -8,17 +8,18 @@ Duel.LinkSummon(int player, Card c, Group|nil materials, [Card|nil lcard], [int 
 
 ## Description
 
-Starts a rule Link Summon of c for player.
-materials, lcard, minc, and maxc become temporary Link Summon limits; the binding yields to the core and returns no Lua value.
+Performs a rule Link Summon for player and c using an optional material group, fixed material, and min/max constraints.
+Use this in effect operations after checking Card.IsLinkSummonable. The selected Link Monster's registered procedure still controls final material selection and sends materials to the GY.
+The core rejects this during the Damage Step, yields while the Summon is processed, and returns no Lua value.
 
 ## Parameters
 
-- `player` `int`
-- `c` `Card`
-- `materials` `Group|nil`
-- `lcard` `Card|nil` optional
-- `minc` `int` optional - default: 0
-- `maxc` `int` optional - default: 0
+- `player` `int` - Player performing the Link Summon.
+- `c` `Card` - Link Monster to Link Summon.
+- `materials` `Group|nil` - Optional temporary material pool. nil uses the Link Monster's normal procedure pool.
+- `lcard` `Card|nil` optional - Optional fixed material that must be included in the selected group.
+- `minc` `int` optional - Runtime minimum material-card count. default: 0
+- `maxc` `int` optional - Runtime maximum material-card count. default: 0
 
 ## Source
 

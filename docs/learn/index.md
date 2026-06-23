@@ -45,6 +45,10 @@ back into the generated API reference and live card examples.
     <strong>Xyz procedures</strong>
     <span>Register Xyz Material rules, overlay materials, and detach costs safely.</span>
   </a>
+  <a class="sacred-card" href="link-procedure">
+    <strong>Link procedures</strong>
+    <span>Register Link Material rules, Link Rating counts, and linked-zone checks.</span>
+  </a>
   <a class="sacred-card" href="filters-and-groups">
     <strong>Filters and Groups</strong>
     <span>How scripts find, select, count, and iterate cards.</span>
@@ -109,20 +113,21 @@ back into the generated API reference and live card examples.
 10. Learn Fusion Material and Summon flow with [Fusion Procedure Guide](fusion-procedure).
 11. Learn Synchro procedures and effect-driven Synchro Summons with [Synchro Procedure Guide](synchro-procedure).
 12. Learn overlaying and detaching with [Xyz Procedure Guide](xyz-procedure).
-13. Work with cards and groups through [Filters, Card objects, and Group objects](filters-and-groups).
-14. Move cards correctly with [Functions that move cards across locations](moving-cards).
-15. Place cards and read zones with [Field zones and sequences](field-zones-and-sequences).
-16. Script Field Spell patterns with [Field Spells](field-spells).
-17. Target cards correctly with [Targeting flow](targeting-flow).
-18. Resolve activated effects with [Cost, target, and operation lifecycle](cost-target-operation-lifecycle).
-19. Read always-on behavior through [Continuous effects](continuous-effects).
-20. Build visible modifiers with [Continuous stat modifiers](continuous-stat-modifiers).
-21. Script Equip Cards with [Equip Spells and Equip Cards](equip-spells).
-22. Script LP changes with [LP Recovery and Effect Damage](lp-recovery-and-damage).
-23. Track temporary script memory with [Flag effects](flag-effects).
-24. Limit effect usage with [Count limits and once per turn](count-limits).
-25. Apply outcomes through [Methods for affecting cards](affecting-cards).
-26. Use card families through [Archetypes and set codes](archetypes-and-setcodes).
+13. Learn Link Rating, materials, and linked zones with [Link Procedure Guide](link-procedure).
+14. Work with cards and groups through [Filters, Card objects, and Group objects](filters-and-groups).
+15. Move cards correctly with [Functions that move cards across locations](moving-cards).
+16. Place cards and read zones with [Field zones and sequences](field-zones-and-sequences).
+17. Script Field Spell patterns with [Field Spells](field-spells).
+18. Target cards correctly with [Targeting flow](targeting-flow).
+19. Resolve activated effects with [Cost, target, and operation lifecycle](cost-target-operation-lifecycle).
+20. Read always-on behavior through [Continuous effects](continuous-effects).
+21. Build visible modifiers with [Continuous stat modifiers](continuous-stat-modifiers).
+22. Script Equip Cards with [Equip Spells and Equip Cards](equip-spells).
+23. Script LP changes with [LP Recovery and Effect Damage](lp-recovery-and-damage).
+24. Track temporary script memory with [Flag effects](flag-effects).
+25. Limit effect usage with [Count limits and once per turn](count-limits).
+26. Apply outcomes through [Methods for affecting cards](affecting-cards).
+27. Use card families through [Archetypes and set codes](archetypes-and-setcodes).
 
 ## Tutorial Equivalents
 

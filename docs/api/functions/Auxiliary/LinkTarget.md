@@ -8,7 +8,8 @@ Auxiliary.LinkTarget(function|nil f, int minct, int maxct, function|nil gf) -> f
 
 ## Description
 
-Returns the target function for Link Summon procedures; it selects a valid Link Material subgroup and stores it on the effect.
+Returns the target function for Link Summon procedures.
+The returned function selects a Link Material subgroup with Group.SelectSubGroup and Auxiliary.LCheckGoal, keeps that group alive, and stores it on the effect for LinkOperation.
 
 ## Parameters
 

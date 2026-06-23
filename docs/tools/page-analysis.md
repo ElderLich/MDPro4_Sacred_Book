@@ -50,7 +50,7 @@ of pouring every detail into one page. The broad navigation shape should be:
 
 | Classification area | Sacred Book split |
 | --- | --- |
-| Monster Cards: Normal, Ritual, Fusion, Synchro, Xyz, Pendulum, Link, Special Summon Monsters | Keep general script foundations in [Learning Path](/learn/). [Ritual Procedure Guide](/learn/ritual-procedure), [Fusion Procedure Guide](/learn/fusion-procedure), [Synchro Procedure Guide](/learn/synchro-procedure), and [Xyz Procedure Guide](/learn/xyz-procedure) now cover the first four procedure families; Link, Pendulum, and Special Summon-only guides remain next. |
+| Monster Cards: Normal, Ritual, Fusion, Synchro, Xyz, Pendulum, Link, Special Summon Monsters | Keep general script foundations in [Learning Path](/learn/). [Ritual Procedure Guide](/learn/ritual-procedure), [Fusion Procedure Guide](/learn/fusion-procedure), [Synchro Procedure Guide](/learn/synchro-procedure), [Xyz Procedure Guide](/learn/xyz-procedure), and [Link Procedure Guide](/learn/link-procedure) now cover the main procedure families; Pendulum and Special Summon-only guides remain next. |
 | Monster subtypes: Gemini, Toon, Union, Spirit | Add subtype guides only after the core procedure pages, because each subtype needs its own rule hooks, reset patterns, and local examples. |
 | Spell Cards: Normal, Continuous, Equip, Field, Quick-Play, Ritual | [Spell Card Patterns](/learn/spell-card-patterns) now covers Normal, Continuous, Quick-Play, and Ritual Spell activation shapes; [Equip Spells and Equip Cards](/learn/equip-spells), [Field Spells](/learn/field-spells), and [Ritual Procedure Guide](/learn/ritual-procedure) are focused child pages. |
 | Trap Cards: Normal, Continuous, Counter | [Trap Card Patterns](/learn/trap-card-patterns) now separates Normal Trap activation, Continuous Trap face-up effects, hand/set-turn exceptions, and Counter Trap/Spell Speed 3 patterns. |
@@ -154,6 +154,14 @@ Several details were verified directly against local MDPro3/YGOPro sources:
   `utility.lua` for the local `aux.dscon` Damage Step helper.
 - Script examples were checked against local files in
   `D:\Programs\GitHub\ygopro-scripts`.
+- Link procedure behavior was checked against local `procedure.lua`,
+  `libduel.cpp`, `libcard.cpp`, `operations.cpp`, and
+  `ygopro-scripts-define\def.lua`: `Auxiliary.AddLinkProcedure` registers an
+  Extra Deck `EFFECT_SPSUMMON_PROC` with `SUMMON_TYPE_LINK`, Link material
+  selection uses `Group.CheckWithSumEqual(Auxiliary.GetLinkCount,lc:GetLink(),#sg,#sg)`,
+  and the operation records materials with `Card.SetMaterial` before sending
+  them to the GY with `REASON_MATERIAL+REASON_LINK`. `Card.IsLinkSummonable`
+  and `Duel.LinkSummon` are core bindings and both reject Damage Step use.
 
 ## Quality Pass Log
 
@@ -167,6 +175,7 @@ Several details were verified directly against local MDPro3/YGOPro sources:
 | 2026-06-23 | Fusion procedure expansion | Added [Fusion Procedure Guide](/learn/fusion-procedure) with Fusion Monster material procedures, Fusion-specific material identity checks, Polymerization flow, Deck Fusion examples, Chain Material fallback, material movement operations, Contact Fusion distinction, and API links. |
 | 2026-06-23 | Synchro procedure expansion | Added [Synchro Procedure Guide](/learn/synchro-procedure) with standard and mixed Synchro procedures, Tuner/non-Tuner filters, helper internals, Level and material legality, Hop Ear Squadron effect-driven Synchro Summon flow, Accel Synchro Stardust Dragon manual Synchro-style Summon notes, material memory checks, custom Synchro material providers, and API links. |
 | 2026-06-23 | Xyz procedure expansion | Added [Xyz Procedure Guide](/learn/xyz-procedure) with standard Xyz procedures, Xyz Level checks, variable material counts, overlay operation order, detach costs, alternate one-card Xyz routes, Level-free Xyz procedures, effect-driven Xyz Summons, adding cards as Xyz Material, and API links. |
+| 2026-06-23 | Link procedure expansion | Added [Link Procedure Guide](/learn/link-procedure) with standard Link procedures, Link Rating count rules, material pool and extra-material checks, operation order, effect-driven Link Summons, fixed-material and opponent-material examples, linked-zone APIs, material memory, and API links. |
 
 ## Intentional Rewrites
 

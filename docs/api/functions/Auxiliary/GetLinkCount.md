@@ -3,16 +3,21 @@
 ## Signature
 
 ```lua
-Auxiliary.GetLinkCount(Card c) -> void
+Auxiliary.GetLinkCount(Card c) -> int
 ```
 
 ## Description
 
-Returns 1 plus the Link Rating shifted into the high word for Link Monsters with Link Rating greater than 1; otherwise returns 1.
+Returns the encoded material value used by Link procedure sum checks.
+Ordinary materials and Link-1 monsters count as 1. A Link Monster with Link Rating greater than 1 encodes the choice to count as either 1 or its Link Rating for Group.CheckWithSumEqual.
 
 ## Parameters
 
-- `c` `Card`
+- `c` `Card` - Candidate Link Material.
+
+## Returns
+
+- `int` - 1, or an encoded 1-or-Link-Rating value for Link Monsters with Link Rating greater than 1.
 
 ## Source
 

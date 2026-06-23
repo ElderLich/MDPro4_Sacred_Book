@@ -9,6 +9,7 @@ Auxiliary.LinkCondition(function|nil f, int minct, int maxct, function|nil gf) -
 ## Description
 
 Returns the condition function for Link Summon procedures.
+The returned function rejects face-up Pendulum Link Monsters in the Extra Deck, builds or filters the material pool, applies runtime min/max limits, includes required lmat material when supplied, checks EFFECT_MUST_BE_LMATERIAL, and asks whether a valid subgroup exists.
 
 ## Parameters
 
