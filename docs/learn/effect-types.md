@@ -42,6 +42,26 @@ do something, or responds to timing.
 
 See [Activated effects](activated-effects) for the full Chain Link lifecycle.
 
+For Continuous Spells/Traps or Field Spells whose card activation does nothing
+special, the activation effect can be very small.
+
+```lua
+local e1=Effect.CreateEffect(c)
+e1:SetType(EFFECT_TYPE_ACTIVATE)
+e1:SetCode(EVENT_FREE_CHAIN)
+c:RegisterEffect(e1)
+```
+
+The card's continuous behavior is then registered as separate effects.
+
+Quick Effects often need hint timing so the client asks at useful windows.
+
+```lua
+e1:SetType(EFFECT_TYPE_QUICK_O)
+e1:SetCode(EVENT_FREE_CHAIN)
+e1:SetHintTiming(0,TIMINGS_CHECK_MONSTER+TIMING_MAIN_END)
+```
+
 ## Common Combinations
 
 Effect types are bit flags. Scripts combine them when one effect needs both a
@@ -58,6 +78,20 @@ source shape and an activation/timing shape.
 
 Local scripts use both `+` and bitwise-style constants for these combinations.
 Read either form as "this effect has all of these type flags."
+
+## Flip Effects
+
+Flip Effects usually combine the handler shape with `EFFECT_TYPE_FLIP`.
+
+```lua
+local e1=Effect.CreateEffect(c)
+e1:SetType(EFFECT_TYPE_SINGLE+EFFECT_TYPE_FLIP)
+e1:SetOperation(s.flipop)
+c:RegisterEffect(e1)
+```
+
+If the Flip Effect also targets or has a cost-like activation check, add the
+same callback discipline used by other activated effects.
 
 ## Single Effects
 

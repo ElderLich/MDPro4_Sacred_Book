@@ -58,6 +58,25 @@ end
 This is the same shape used by local Equip Spell scripts such as the one that
 registers an ATK bonus and an equip limit after its activation effect.
 
+## Rules-Facing Script Notes
+
+Equip Cards are unusually sensitive to the difference between "this card is
+legally equipped" and "this card's continuous effect is currently applying."
+Keep these ideas separate:
+
+| Topic | Script consequence |
+| --- | --- |
+| Activation and targeting | Normal Equip Spell activation targets a face-up monster and uses continuous targeting flags. |
+| Equip legality | `EFFECT_EQUIP_LIMIT` or Union state decides which monster the card may remain equipped to. |
+| Effect application | `EFFECT_TYPE_EQUIP` applies effects to the equipped monster while the equip state is valid. |
+| Leaving the field | Equip effects stop applying when the Equip Card is no longer equipped/face-up in the expected state. |
+| Negation | A negated activation does not complete the equip operation; negated continuous equip effects do not apply their bonus. |
+
+The script should not treat a failed stat bonus as the same thing as an illegal
+equip target. For example, a monster might be unaffected by a continuous equip
+modifier while the Equip Card itself is still legally equipped. The equip limit
+answers the legal-target question.
+
 ## Equip Effects
 
 An Equip Card's bonus is usually an `EFFECT_TYPE_EQUIP` effect. It applies to
@@ -102,6 +121,17 @@ end
 for `c1`; the local define comments note that this is determined by
 `EFFECT_EQUIP_LIMIT` or Union state.
 
+```lua
+function s.filter(c,e,tp,ec)
+    return c:IsSetCard(0x207a)
+        and c:IsCanBeEffectTarget(e)
+        and c:CheckEquipTarget(ec)
+end
+```
+
+Use `CheckEquipTarget` when a script is moving an existing Equip Card to a new
+monster or choosing a target for a card that already has equip-limit logic.
+
 ## `Auxiliary.AddEquipSpellEffect`
 
 The local `utility.lua` helper `Auxiliary.AddEquipSpellEffect` creates a common
@@ -134,6 +164,89 @@ instead of becoming equipped, that is a different action. Local scripts use
 `Duel.MoveToField` and then register a type-changing effect such as
 `EFFECT_CHANGE_TYPE`.
 
+```lua
+Duel.MoveToField(tc,tp,tp,LOCATION_SZONE,POS_FACEUP,true)
+local e1=Effect.CreateEffect(e:GetHandler())
+e1:SetType(EFFECT_TYPE_SINGLE)
+e1:SetCode(EFFECT_CHANGE_TYPE)
+e1:SetProperty(EFFECT_FLAG_CANNOT_DISABLE)
+e1:SetReset(RESET_EVENT+RESETS_STANDARD)
+e1:SetValue(TYPE_SPELL+TYPE_CONTINUOUS)
+tc:RegisterEffect(e1)
+```
+
+That pattern creates a Continuous Spell/Trap style card on the field. It is not
+the same as `Duel.Equip`.
+
+## Activated Effects On Equip Cards
+
+An Equip Card can have activated effects in addition to its equip modifiers.
+Those effects use their own `SetType`, `SetRange`, and callbacks.
+
+```lua
+local e1=Effect.CreateEffect(c)
+e1:SetDescription(aux.Stringid(id,0))
+e1:SetType(EFFECT_TYPE_IGNITION)
+e1:SetRange(LOCATION_SZONE)
+e1:SetTarget(s.target)
+e1:SetOperation(s.operation)
+c:RegisterEffect(e1)
+```
+
+When an activated effect needs the currently equipped monster, read it from the
+Equip Card.
+
+```lua
+local ec=e:GetHandler():GetEquipTarget()
+if ec and ec:IsFaceup() then
+    -- use the equipped monster
+end
+```
+
+When the effect needs the monster that was equipped before the Equip Card left
+the field, local scripts use `Card.GetPreviousEquipTarget`.
+
+```lua
+local ec=e:GetHandler():GetPreviousEquipTarget()
+```
+
+This is useful for "if this equipped card is sent..." style effects.
+
+## Continuous Card Targets
+
+Equip state is not the only long-term relationship a card can keep. Some local
+scripts use card targets for continuous relationships and read them with
+`GetFirstCardTarget`.
+
+```lua
+local tc=e:GetHandler():GetFirstCardTarget()
+```
+
+Use the equip APIs for true equip relationships. Use card-target APIs only when
+the local script pattern or the card text establishes a continuous target that
+is not simply "this card is equipped to that monster."
+
+## Summon-Then-Equip Effects
+
+Some effects Special Summon a monster, then equip a card to that monster. These
+effects should only register the equip limit after `Duel.Equip` succeeds.
+
+```lua
+if Duel.SpecialSummon(tc,0,tp,tp,false,false,POS_FACEUP)>0
+    and Duel.Equip(tp,c,tc) then
+    local e1=Effect.CreateEffect(c)
+    e1:SetType(EFFECT_TYPE_SINGLE)
+    e1:SetCode(EFFECT_EQUIP_LIMIT)
+    e1:SetProperty(EFFECT_FLAG_CANNOT_DISABLE)
+    e1:SetValue(s.eqlimit)
+    c:RegisterEffect(e1)
+end
+```
+
+If the later card text destroys or sends the equipped monster when the Equip
+Card leaves, store or read the relevant equip/card target relationship and
+recheck it during that later operation.
+
 ## Stepped Equip
 
 The local define file shows optional stepped behavior:
@@ -162,6 +275,9 @@ Useful API pages:
 - [`Duel.Equip`](/api/functions/Duel/Equip)
 - [`Duel.EquipComplete`](/api/functions/Duel/EquipComplete)
 - [`Card.GetEquipTarget`](/api/functions/Card/GetEquipTarget)
+- [`Card.GetPreviousEquipTarget`](/api/functions/Card/GetPreviousEquipTarget)
+- [`Card.GetEquipGroup`](/api/functions/Card/GetEquipGroup)
 - [`Card.CheckEquipTarget`](/api/functions/Card/CheckEquipTarget)
+- [`Card.GetFirstCardTarget`](/api/functions/Card/GetFirstCardTarget)
 - [`Effect.SetType`](/api/functions/Effect/SetType)
 - [`Effect.SetValue`](/api/functions/Effect/SetValue)

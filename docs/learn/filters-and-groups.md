@@ -19,6 +19,25 @@ Keep a filter focused. It should describe one rule clearly: face-up monsters,
 cards that can be sent to the GY, cards in a Set, monsters that can be Special
 Summoned, and so on.
 
+## Predefined Functions As Filters
+
+Many `Card.*` functions can be passed directly when they already answer the
+question you need.
+
+```lua
+Duel.IsExistingMatchingCard(Card.IsFaceup,tp,LOCATION_MZONE,0,1,nil)
+```
+
+Extra arguments work the same way as custom filters.
+
+```lua
+local p=Duel.GetTurnPlayer()
+Duel.IsExistingMatchingCard(Card.IsControler,tp,LOCATION_ONFIELD,LOCATION_ONFIELD,1,nil,p)
+```
+
+Each candidate card becomes the first argument to `Card.IsControler`, and `p`
+is passed after it.
+
 ## Passing Extra Arguments
 
 Many Duel and Group functions pass extra arguments to the filter after the
@@ -102,6 +121,20 @@ end
 
 Use `#g` or `g:GetCount()` when you only need the number of cards.
 
+Do not call `Card` methods on a Group.
+
+```lua
+local g=Duel.SelectMatchingCard(tp,s.filter,tp,LOCATION_MZONE,0,1,1,nil)
+-- Wrong: g:IsAttribute(ATTRIBUTE_DARK)
+local tc=g:GetFirst()
+if tc and tc:IsAttribute(ATTRIBUTE_DARK) then
+    -- work with the card
+end
+```
+
+If a script reports an error like "attempt to call a nil value" on a card
+method, check whether the variable is actually a Group.
+
 ## Getting Cards From A Group
 
 When the group is known to contain one selected card, `GetFirst` is common.
@@ -134,6 +167,20 @@ end
 Both patterns read cards from a Group; they do not create new selections by
 themselves.
 
+For a Group that contains exactly two cards, `GetFirst` and `GetNext` can split
+them into two variables.
+
+```lua
+local c1=g:GetFirst()
+local c2=g:GetNext()
+if c1 and c1:IsControler(1-tp) then
+    c1,c2=c2,c1
+end
+```
+
+That swap pattern is useful when the two cards need stable roles, such as "my
+card" and "opponent's card."
+
 ## Filtering A Group
 
 If you already have a Group, filter it instead of scanning the field again.
@@ -153,6 +200,24 @@ local sg=g:FilterSelect(tp,Card.IsAbleToGrave,1,1,nil)
 ```
 
 Use it when the candidate pool is already in a Group.
+
+## Other Ways To Create Groups
+
+`Duel.GetMatchingGroup` uses a filter while collecting the cards.
+
+```lua
+local g=Duel.GetMatchingGroup(Card.IsFaceup,tp,LOCATION_MZONE,0,nil)
+```
+
+`Duel.GetFieldGroup` collects all cards in locations without a filter.
+
+```lua
+local g=Duel.GetFieldGroup(tp,LOCATION_ONFIELD,0)
+local faceup=g:Filter(Card.IsFaceup,nil)
+```
+
+Use `GetFieldGroup` when the starting pool is "everything in these locations."
+Use `GetMatchingGroup` when the filter is part of the collection itself.
 
 ## Checking A Group
 
@@ -185,6 +250,10 @@ Use the count helper that matches the data you have.
 | A filtered Group | `g:Filter(...):GetCount()` |
 | Cards in field locations | `Duel.GetMatchingGroupCount(...)` |
 | Cards in a simple location | `Duel.GetFieldGroupCount(player,loc1,loc2)` |
+
+Other count helpers, such as `Group.FilterCount` and class-count helpers, are
+useful when the Group already exists and the count depends on a filter or on
+distinct values. Prefer the most direct API for the question you are asking.
 
 Do not build a Group just to count cards if a count API already answers the
 question.

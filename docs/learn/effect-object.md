@@ -40,6 +40,64 @@ c:RegisterEffect(e1)
 | `SetLabelObject` | Which object, usually another Effect or Group, should this effect remember? |
 | `SetReset` | When does a temporary effect disappear? |
 
+## User-Facing Text And Categories
+
+`SetDescription` usually receives `aux.Stringid(id,n)`, where `n` selects the
+card text string shown to the player for that effect.
+
+```lua
+e1:SetDescription(aux.Stringid(id,0))
+```
+
+Some scripts use built-in description constants or raw description IDs. Prefer
+`aux.Stringid(id,n)` when the prompt belongs to this card's own text.
+
+`SetCategory` stores category flags. Combine multiple categories with the same
+bit-flag style used by local scripts.
+
+```lua
+e1:SetCategory(CATEGORY_TOHAND+CATEGORY_SEARCH)
+```
+
+The category should describe what the effect announces, not every helper check
+inside the script.
+
+## Properties
+
+`SetProperty` controls special handling such as targeting, Damage Step
+permission, delayed triggers, or continuous targeting.
+
+```lua
+e1:SetProperty(EFFECT_FLAG_CARD_TARGET+EFFECT_FLAG_DAMAGE_STEP)
+```
+
+The local core accepts a second property slot too. Local scripts mostly use the
+first slot, but the signature is:
+
+```lua
+e1:SetProperty(prop1,prop2)
+```
+
+Use the second slot only for constants that are documented as second-property
+flags. Do not mix ordinary `EFFECT_FLAG_*` values into the wrong slot.
+
+## Hint Timing
+
+`SetHintTiming` controls when the client should offer an optional activation
+prompt. The local define file documents the second argument as the handler
+controller's timing and the optional third argument as the opponent-turn timing.
+If the third argument is omitted, the second value is reused.
+
+```lua
+e1:SetHintTiming(TIMING_END_PHASE)
+e1:SetHintTiming(0,TIMINGS_CHECK_MONSTER+TIMING_MAIN_END)
+e1:SetHintTiming(TIMING_DAMAGE_STEP,TIMING_DAMAGE_STEP+TIMING_END_PHASE)
+```
+
+This does not make an effect legal by itself. It only helps the client ask at
+the right windows after the effect's type, code, condition, cost, and target
+checks allow activation.
+
 ## Registering to a Card
 
 Use `c:RegisterEffect(e)` when the effect belongs to the card whose script is
@@ -108,6 +166,13 @@ operation behavior, set those differences explicitly on the clone.
 e:SetLabel(op)
 ```
 
+The local core supports multiple integer labels.
+
+```lua
+e:SetLabel(race,attribute)
+local race,attribute=e:GetLabel()
+```
+
 `SetLabelObject` stores a Lua-exposed object. Grant effects commonly store the
 effect object that will be granted to other cards.
 
@@ -125,6 +190,11 @@ c:RegisterEffect(e1)
 
 Use labels for simple Chain choices. Use label objects only when the local
 script pattern expects an object to be attached to the effect.
+
+When storing a `Group` in a label object beyond the current callback, local
+scripts commonly call `g:KeepAlive()` and later clean up the kept group when the
+effect no longer needs it. Do not use a label object as a casual global
+variable; it creates lifetime concerns that a plain label avoids.
 
 ## Reset For Temporary Effects
 

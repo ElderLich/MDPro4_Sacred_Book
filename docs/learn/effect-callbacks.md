@@ -44,6 +44,27 @@ end
 Use a condition for timing or event requirements: "during the Main Phase",
 "when this card is Summoned", "if this card was destroyed by battle", and so on.
 
+Conditions are ordinary Lua expressions, so grouping matters.
+
+```lua
+return c:IsDefensePos() and Duel.GetLP(1-tp)>Duel.GetLP(tp)
+```
+
+Use parentheses when the card text mixes `and` and `or`.
+
+```lua
+return (a or b) and c
+return a or (b and c)
+```
+
+Be careful with `not`: write the expression you mean.
+
+```lua
+return not (Duel.GetLP(tp)>1500)
+```
+
+That is clearer than relying on reader memory of Lua operator precedence.
+
 ## Cost
 
 Costs have two phases. When `chk==0`, only answer whether the cost can be paid.
@@ -58,6 +79,27 @@ end
 
 Do not release, discard, banish, or pay LP in the `chk==0` branch. The engine
 may call that branch just to test whether the effect can be activated.
+
+Many cost functions have three practical sections:
+
+```lua
+function s.cost(e,tp,eg,ep,ev,re,r,rp,chk)
+    local c=e:GetHandler()
+    if chk==0 then
+        return c:IsDiscardable()
+    end
+    Duel.SendtoGrave(c,REASON_COST+REASON_DISCARD)
+end
+```
+
+| Section | Job |
+| --- | --- |
+| Shared setup | Read `e:GetHandler()`, count cards, or build local values used by both branches. |
+| Checking branch | Return whether the cost can be paid. |
+| Payment branch | Actually pay the cost. |
+
+Do not hide payment inside a helper that is called from both branches unless
+the helper itself also respects `chk`.
 
 ## Target
 
@@ -80,6 +122,30 @@ end
 
 Use `Duel.IsExistingTarget` and `Duel.SelectTarget` when the effect targets.
 Use matching-card functions when the card text does not target.
+
+For activated effects that do not target, the target callback often only checks
+whether the later operation has a legal attempt and announces operation info.
+
+```lua
+function s.sptg(e,tp,eg,ep,ev,re,r,rp,chk)
+    local c=e:GetHandler()
+    if chk==0 then
+        return Duel.GetLocationCount(tp,LOCATION_MZONE)>0
+            and c:IsCanBeSpecialSummoned(e,0,tp,false,false)
+    end
+    Duel.SetOperationInfo(0,CATEGORY_SPECIAL_SUMMON,c,1,0,0)
+end
+```
+
+Some effects have no legal manual target recheck. In those cases scripts may
+answer `false` in the `chkc` branch.
+
+```lua
+if chkc then return false end
+```
+
+Use that only when the effect's activation should not accept a manually chosen
+target.
 
 For continuous field effects, `SetTarget` has a different job: it filters which
 cards in the target range are affected.

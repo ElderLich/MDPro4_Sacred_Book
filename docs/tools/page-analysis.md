@@ -11,6 +11,10 @@ Sacred Book data.
 
 The downloaded editor-tool page is excluded from this tutorial-equivalent pass.
 
+This audit is section-level. It covers each downloaded scripting page's
+headings, code-pattern topics, and recurring warnings, while replacing
+simulator-specific helper names and examples with local MDPro3/YGOPro behavior.
+
 ## Coverage Map
 
 | Downloaded tutorial topic | Sacred Book equivalent |
@@ -18,16 +22,16 @@ The downloaded editor-tool page is excluded from this tutorial-equivalent pass.
 | Main scripting-wiki landing page | [Home](/), [Learning Path](/learn/), and this coverage map organize the beginner route. |
 | Structure of a card script | [Structure of a card script](/learn/script-structure) covers file naming, `GetID`, `initial_effect`, callback naming, and reading real scripts. |
 | Creation, building, and registration of an effect object | [Creation, building, and registration of an effect object](/learn/effect-object) covers `Effect.CreateEffect`, setters, registration, cloning, labels, label objects, and resets. |
-| EFFECT_TYPE constants and templates | [EFFECT_TYPE constants and templates](/learn/effect-types) covers common type flags, activated types, continuous types, combinations, material effects, and grant effects. |
-| Functions for conditions, costs, activation procedures, and resolution | [Conditions, costs, activation procedures, and resolution](/learn/effect-callbacks) plus [Cost, target, and operation lifecycle](/learn/cost-target-operation-lifecycle). |
+| EFFECT_TYPE constants and templates | [EFFECT_TYPE constants and templates](/learn/effect-types) covers common type flags, no-op Spell/Trap activation, activated types, Flip Effects, quick-effect hints, combinations, material effects, and grant effects. |
+| Functions for conditions, costs, activation procedures, and resolution | [Conditions, costs, activation procedures, and resolution](/learn/effect-callbacks) plus [Cost, target, and operation lifecycle](/learn/cost-target-operation-lifecycle) cover logical operators, `not` grouping, cost sections, target variants, non-activated targets, values, and resolution rechecks. |
 | Activation legality | [Activation legality](/learn/activation-legality) covers `chk==0`, implicit action requirements, optional effects, mandatory effects, `chkc`, and resolution rechecks. |
 | Activated effects | [Activated effects](/learn/activated-effects) covers Chain Link flow, common activated types, optional and mandatory triggers, Spell/Trap activation, and the activation/resolution split. |
 | Filters, Card objects, and Group objects | [Filters, Card Objects, and Group Objects](/learn/filters-and-groups) covers filter arguments, matching vs targeting, Groups, filtering, selecting, iterating, membership, and counts. |
-| List of functions that move cards across locations | [Functions that move cards across locations](/learn/moving-cards) covers movement APIs, able-to checks, targeting/non-targeting patterns, Special Summons, equip, `MoveToField`, returns, and reason flags. |
+| List of functions that move cards across locations | [Functions that move cards across locations](/learn/moving-cards) covers movement APIs, effect-vs-cost able-to checks, destroy checks, release/discard/control helpers, targeting/non-targeting patterns, Special Summons, equip, `MoveToField`, `SendtoExtraP`, returns, and reason flags. |
 | Effects that apply continuously | [Effects That Apply Continuously](/learn/continuous-effects) covers single, field, equip, Xyz Material, player-affecting, event-watching, and temporary continuous effects. |
 | Tutorial for scripting a simple continuous effect | [Continuous stat modifiers](/learn/continuous-stat-modifiers) gives the focused ATK/DEF tutorial for self, field, equip, material, temporary, and cloned modifiers. |
-| Equip Spell | [Equip Spells and Equip Cards](/learn/equip-spells) covers manual Equip Spell activation, `Auxiliary.AddEquipSpellEffect`, equip limits, `EFFECT_TYPE_EQUIP`, monsters equipped by effects, and stepped equip. |
-| Recovering LP and inflicting effect damage | [LP Recovery and Effect Damage](/learn/lp-recovery-and-damage) covers fixed amounts, resolution-calculated amounts, target-player data, target-based recovery, stepped LP changes, categories, and return values. |
+| Equip Spell | [Equip Spells and Equip Cards](/learn/equip-spells) covers manual Equip Spell activation, `Auxiliary.AddEquipSpellEffect`, equip rules, equip limits, `EFFECT_TYPE_EQUIP`, monsters equipped by effects, activated effects on Equip Cards, previous equip targets, card targets, summon-then-equip patterns, and stepped equip. |
+| Recovering LP and inflicting effect damage | [LP Recovery and Effect Damage](/learn/lp-recovery-and-damage) covers fixed amounts, resolution-calculated amounts, target-player data, target-based recovery, stepped LP changes, event-value amounts, conjuncted effects, event-count vs resolution-count amounts, categories, and return values. |
 | Methods for affecting cards | [Methods for Affecting Cards](/learn/affecting-cards) acts as the outcome router for immediate actions, continuous changes, negation, stat/property changes, control, equip, and review checks. |
 | Subarchetype | [Archetypes and Set Codes](/learn/archetypes-and-setcodes) covers IDs, `IsSetCard`, multiple set-code checks, subarchetype bit structure, listed cards, and alternate codes. |
 
@@ -46,6 +50,20 @@ Several details were verified directly against local MDPro3/YGOPro sources:
   implemented through the local core set-code comparison in `card_data.h`.
 - Script examples were checked against local files in
   `D:\Programs\GitHub\ygopro-scripts`.
+
+## Intentional Rewrites
+
+Some downloaded sections referenced helper APIs or simulator behavior that are
+not the local MDPro3/YGOPro source of truth. Those sections were rewritten as
+local equivalents instead of imported directly:
+
+- Equip procedure material is documented through local
+  `Auxiliary.AddEquipSpellEffect`, `Duel.Equip`, `EFFECT_EQUIP_LIMIT`, and equip
+  target APIs instead of EDO-only helper names.
+- Movement-table entries that used non-local function names were translated to
+  local APIs such as `Duel.GetControl` and `Duel.SendtoExtraP`.
+- Examples sourced from external repositories were replaced with local-script
+  style snippets and local behavior notes.
 
 ## Ongoing Standard
 

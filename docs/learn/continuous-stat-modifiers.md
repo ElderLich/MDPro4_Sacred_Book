@@ -54,6 +54,25 @@ end
 This shape is used by local scripts for monsters whose ATK depends on other
 face-up monsters.
 
+Here are common dynamic sources:
+
+```lua
+function s.levelval(e,c)
+    return c:GetLevel()*200
+end
+```
+
+```lua
+function s.oppdragonval(e,c)
+    return Duel.GetMatchingGroupCount(s.dragonfilter,c:GetControler(),0,
+        LOCATION_MZONE+LOCATION_GRAVE,nil)*500
+end
+```
+
+Use the affected card `c` when the value depends on the card receiving the
+modifier. Use `e:GetHandler()` when the value depends on the card providing the
+modifier.
+
 ## Field Modifier
 
 Use `EFFECT_TYPE_FIELD` when a card changes other cards in a range.
@@ -109,6 +128,14 @@ function s.atkval(e,c)
 end
 ```
 
+When the value depends on the equipped monster, use the affected card `c`.
+
+```lua
+function s.eqlevelval(e,c)
+    return c:GetLevel()*100
+end
+```
+
 Equip modifiers usually belong beside an Equip activation effect and an
 `EFFECT_EQUIP_LIMIT` effect. See [Equip Spells and Equip Cards](equip-spells).
 
@@ -127,9 +154,43 @@ e1:SetValue(500)
 c:RegisterEffect(e1)
 ```
 
+Dynamic Xyz Material values can read the affected Xyz Monster.
+
+```lua
+function s.xyzval(e,c)
+    return c:GetOverlayCount()*300
+end
+```
+
 Always verify material-effect patterns against local scripts for the mechanic
 you are copying. Material effects are sensitive to the exact effect type and
 where the engine expects the card to be.
+
+## Dynamic Field Modifier
+
+Field modifiers can use the affected card in the same way.
+
+```lua
+local e1=Effect.CreateEffect(c)
+e1:SetType(EFFECT_TYPE_FIELD)
+e1:SetCode(EFFECT_UPDATE_ATTACK)
+e1:SetRange(LOCATION_MZONE)
+e1:SetTargetRange(LOCATION_MZONE,0)
+e1:SetTarget(s.rttg)
+e1:SetValue(s.rtval)
+c:RegisterEffect(e1)
+
+function s.rttg(e,c)
+    return c:IsFaceup() and c:IsType(TYPE_RITUAL)
+end
+
+function s.rtval(e,c)
+    return c:GetLevel()*100
+end
+```
+
+The value callback is run for each affected monster, so `c` is the monster
+being modified, not necessarily the handler.
 
 ## Temporary Stat Modifier
 

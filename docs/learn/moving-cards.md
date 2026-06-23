@@ -14,12 +14,15 @@ resolution.
 | [`Duel.Remove`](/api/functions/Duel/Remove) | Banish cards. |
 | [`Duel.Destroy`](/api/functions/Duel/Destroy) | Destroy cards. |
 | [`Duel.Release`](/api/functions/Duel/Release) | Tribute or release cards. |
+| [`Duel.DiscardHand`](/api/functions/Duel/DiscardHand) | Discard cards from the hand. |
 | [`Duel.SpecialSummon`](/api/functions/Duel/SpecialSummon) | Special Summon a monster. |
 | [`Duel.SSet`](/api/functions/Duel/SSet) | Set a Spell/Trap. |
 | [`Duel.MSet`](/api/functions/Duel/MSet) | Set a monster. |
 | [`Duel.Equip`](/api/functions/Duel/Equip) | Equip one card to another. |
 | [`Duel.MoveToField`](/api/functions/Duel/MoveToField) | Move a card to a field location. |
 | [`Duel.Overlay`](/api/functions/Duel/Overlay) | Attach cards as Xyz Materials. |
+| [`Duel.SendtoExtraP`](/api/functions/Duel/SendtoExtraP) | Put a Pendulum Card face-up in the Extra Deck. |
+| [`Duel.GetControl`](/api/functions/Duel/GetControl) | Change control of cards. |
 
 ## Check The Card Can Move
 
@@ -30,14 +33,24 @@ Movement filters should use the matching "able to" helper when one exists.
 | Add to hand | `c:IsAbleToHand()` |
 | Send to GY | `c:IsAbleToGrave()` or `c:IsAbleToGraveAsCost()` |
 | Return to Deck | `c:IsAbleToDeck()` or `c:IsAbleToExtra()` depending on the effect |
+| Return to Deck/Extra Deck as cost | `c:IsAbleToDeckAsCost()`, `c:IsAbleToExtraAsCost()`, or `c:IsAbleToDeckOrExtraAsCost()` |
 | Banish | `c:IsAbleToRemove()` or `c:IsAbleToRemoveAsCost()` |
+| Tribute/release | `c:IsReleasableByEffect()` for effects, `c:IsReleasable()` for costs/procedures |
+| Discard | `c:IsDiscardable(REASON_EFFECT)` for effects, `c:IsDiscardable(REASON_COST)` or `c:IsDiscardable()` for costs |
 | Set Spell/Trap | `c:IsSSetable()` |
 | Set monster | `c:IsMSetable(...)` |
 | Special Summon | `c:IsCanBeSpecialSummoned(...)` |
 | Equip | target is face-up and the Equip Card can legally equip to it |
+| Attach as Xyz Material | `c:IsCanOverlay(player)` when that local check applies |
+| Change control | `c:IsControlerCanBeChanged(...)` |
 
 Cost filters should use cost-specific helpers where available. A card that can
 be sent to the GY by effect is not automatically legal to send as cost.
+
+Destroying is a special case: many effects can be legally activated even if the
+chosen card may not actually be destroyed by the resolving effect. Use
+`Card.IsDestructable` only when the card text or local pattern specifically
+needs that pre-check.
 
 ## Targeted Card Pattern
 
@@ -99,10 +112,14 @@ the script still needs to choose the right timing and legality checks.
 | A card in Deck/GY/banished should go to hand. | `Duel.SendtoHand(g,nil,REASON_EFFECT)` |
 | A card should go to the GY without being destroyed. | `Duel.SendtoGrave(g,REASON_EFFECT)` |
 | A card should be banished face-up. | `Duel.Remove(g,POS_FACEUP,REASON_EFFECT)` |
+| A card should be Tributed/released. | `Duel.Release(g,REASON_EFFECT)` or `Duel.Release(g,REASON_COST)` |
+| A card should be discarded. | `Duel.SendtoGrave(g,REASON_DISCARD+REASON_EFFECT)` or `Duel.DiscardHand(...)` |
 | A monster should be Special Summoned. | `Duel.SpecialSummon(tc,0,tp,tp,false,false,POS_FACEUP)` |
 | A Spell/Trap should be Set. | `Duel.SSet(tp,tc)` |
 | A card should become an Equip Card. | `Duel.Equip(tp,eqc,tc)` |
 | A card should become a Continuous Spell/Trap. | `Duel.MoveToField(...)` plus `EFFECT_CHANGE_TYPE` when needed |
+| A Pendulum Card should go face-up to the Extra Deck. | `Duel.SendtoExtraP(tc,tp,REASON_EFFECT)` |
+| A card should change controller. | `Duel.GetControl(tc,tp,reset_phase,reset_count)` |
 
 If an action places a card onto the field, check available zones before
 activation and again during resolution if the Chain can change them.
@@ -144,6 +161,29 @@ end
 in a Field Zone, or otherwise moves to a specific field location.
 
 For the full equip flow, see [Equip Spells and Equip Cards](equip-spells).
+
+## Change Control
+
+Changing control uses `Duel.GetControl` in this local API, despite the name
+reading like a getter.
+
+```lua
+function s.ctltg(e,tp,eg,ep,ev,re,r,rp,chk,chkc)
+    if chkc then return chkc:IsControler(1-tp) and chkc:IsLocation(LOCATION_MZONE)
+        and chkc:IsControlerCanBeChanged() end
+    if chk==0 then
+        return Duel.IsExistingTarget(Card.IsControlerCanBeChanged,tp,0,LOCATION_MZONE,1,nil)
+    end
+    Duel.Hint(HINT_SELECTMSG,tp,HINTMSG_CONTROL)
+    local g=Duel.SelectTarget(tp,Card.IsControlerCanBeChanged,tp,0,LOCATION_MZONE,1,1,nil)
+    Duel.SetOperationInfo(0,CATEGORY_CONTROL,g,1,0,0)
+end
+```
+
+Do not confuse `IsControlerCanBeChanged` with `IsAbleToChangeControler`. The
+former checks whether a control-change action can be applied; the latter is
+used by some movement-like actions where controler/possession changes as part
+of another operation.
 
 ## Return Values
 

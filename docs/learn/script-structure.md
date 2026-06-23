@@ -33,6 +33,10 @@ Both styles are valid in local scripts. When writing new tutorial examples,
 Sacred Book uses `local s,id=GetID()` because it keeps callback names short and
 keeps the card ID available for descriptions and count limits.
 
+If an old-style script has the wrong table name, the engine may fail while
+trying to call the card's `initial_effect`. Check that the file name, card ID,
+and `c12345678.initial_effect` prefix all match the loaded card.
+
 ## Usual File Shape
 
 <div class="script-flow">

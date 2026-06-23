@@ -14,6 +14,19 @@ The local define file documents that both functions return the actual LP value
 changed. If damage becomes recovery, or recovery becomes damage, the original
 function returns `0`. The core binding also clamps negative amounts to `0`.
 
+## What This Page Covers
+
+This page is about effect damage and LP recovery performed by scripts. Battle
+damage has its own battle flow and events, even though later trigger effects may
+listen for `EVENT_DAMAGE`.
+
+LP changes affect players, not cards. That is why LP scripts often store:
+
+- the target player with `Duel.SetTargetPlayer`
+- the amount with `Duel.SetTargetParam`
+- the announced category with `Duel.SetOperationInfo`
+- event-provided damage/recovery values through callback arguments such as `ev`
+
 ## Fixed Damage
 
 A fixed damage effect commonly stores the target player and amount during
@@ -111,6 +124,90 @@ Duel.RDComplete()
 Use stepped LP changes only when the script needs the timing behavior of a
 combined process. The define comments explicitly say `Duel.RDComplete()` is
 required after stepped `Damage` or `Recover` calls.
+
+## Event Value Amounts
+
+Some trigger effects use the event value `ev`. Local scripts use this when the
+amount should match the damage or recovery from the triggering event.
+
+```lua
+function s.sptg(e,tp,eg,ep,ev,re,r,rp,chk)
+    if chk==0 then
+        return Duel.GetLocationCount(tp,LOCATION_MZONE)>0
+            and e:GetHandler():IsCanBeSpecialSummoned(e,0,tp,false,false)
+    end
+    Duel.SetOperationInfo(0,CATEGORY_SPECIAL_SUMMON,e:GetHandler(),1,0,0)
+    Duel.SetOperationInfo(0,CATEGORY_RECOVER,nil,0,tp,ev)
+end
+
+function s.spop(e,tp,eg,ep,ev,re,r,rp)
+    local c=e:GetHandler()
+    if c:IsRelateToEffect(e)
+        and Duel.SpecialSummon(c,0,tp,tp,false,false,POS_FACEUP)~=0 then
+        Duel.Recover(tp,ev,REASON_EFFECT)
+    end
+end
+```
+
+Do not replace `ev` with a current LP difference unless the card text says to
+recalculate. The event value is part of the trigger data.
+
+## Conjuncted Effects
+
+When LP change is tied to another action, write the operation in the same order
+as the card text.
+
+For "do A, and if you do, inflict damage", check the result of A first.
+
+```lua
+if tc:IsRelateToEffect(e)
+    and tc:IsType(TYPE_MONSTER)
+    and Duel.Destroy(tc,REASON_EFFECT)~=0 then
+    local atk=math.floor(tc:GetTextAttack()/2)
+    if atk>0 then
+        Duel.Damage(1-tp,atk,REASON_EFFECT)
+    end
+end
+```
+
+For "inflict damage, then optionally do B", use the return value of
+`Duel.Damage` or `Duel.Recover` when actual LP changed matters.
+
+```lua
+local dealt=Duel.Damage(1-tp,500,REASON_EFFECT)
+if dealt>0 and Duel.SelectYesNo(tp,aux.Stringid(id,0)) then
+    -- follow-up action
+end
+```
+
+This is different from simply announcing both categories. Categories describe
+the Chain Link; return values and operation checks decide whether the later
+action may happen.
+
+## Event Count vs Resolution Count
+
+Two similar card texts can need different amounts:
+
+| Text shape | Script source |
+| --- | --- |
+| "for each card that was..." | Count the triggering event group or use event data. |
+| "for each card currently..." | Recount during resolution. |
+
+Event-group amounts should be captured from `eg` or event data before the field
+changes. Resolution amounts should be calculated in the operation.
+
+```lua
+local ct=eg:FilterCount(s.filter,nil,tp)
+e:SetLabel(ct)
+```
+
+```lua
+local ct=Duel.GetMatchingGroupCount(s.filter,tp,LOCATION_MZONE,0,nil)
+Duel.Recover(tp,ct*500,REASON_EFFECT)
+```
+
+The first pattern remembers what triggered the effect. The second pattern asks
+what is true now.
 
 ## Categories and Operation Info
 
