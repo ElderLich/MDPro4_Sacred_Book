@@ -50,9 +50,9 @@ of pouring every detail into one page. The broad navigation shape should be:
 
 | Classification area | Sacred Book split |
 | --- | --- |
-| Monster Cards: Normal, Ritual, Fusion, Synchro, Xyz, Pendulum, Link, Special Summon Monsters | Keep general script foundations in [Learning Path](/learn/), then add separate procedure guides for Ritual, Fusion, Synchro, Xyz, Link, Pendulum, and Special Summon-only monsters. |
+| Monster Cards: Normal, Ritual, Fusion, Synchro, Xyz, Pendulum, Link, Special Summon Monsters | Keep general script foundations in [Learning Path](/learn/). [Ritual Procedure Guide](/learn/ritual-procedure) now covers the Ritual helper/manual split, material checks, material movement, and proper Ritual Summon flow; Fusion, Synchro, Xyz, Link, Pendulum, and Special Summon-only guides remain next. |
 | Monster subtypes: Gemini, Toon, Union, Spirit | Add subtype guides only after the core procedure pages, because each subtype needs its own rule hooks, reset patterns, and local examples. |
-| Spell Cards: Normal, Continuous, Equip, Field, Quick-Play, Ritual | [Spell Card Patterns](/learn/spell-card-patterns) now covers Normal, Continuous, Quick-Play, and Ritual Spell activation shapes; [Equip Spells and Equip Cards](/learn/equip-spells) and [Field Spells](/learn/field-spells) remain focused child pages. |
+| Spell Cards: Normal, Continuous, Equip, Field, Quick-Play, Ritual | [Spell Card Patterns](/learn/spell-card-patterns) now covers Normal, Continuous, Quick-Play, and Ritual Spell activation shapes; [Equip Spells and Equip Cards](/learn/equip-spells), [Field Spells](/learn/field-spells), and [Ritual Procedure Guide](/learn/ritual-procedure) are focused child pages. |
 | Trap Cards: Normal, Continuous, Counter | [Trap Card Patterns](/learn/trap-card-patterns) now separates Normal Trap activation, Continuous Trap face-up effects, hand/set-turn exceptions, and Counter Trap/Spell Speed 3 patterns. |
 | Effects that affect cards | Expand [Methods for Affecting Cards](/learn/affecting-cards) into focused child pages for stat changes, immunity/negation, control changes, position changes, equip relationships, and location movement. |
 | Effects that affect players | Keep LP changes in [LP Recovery and Effect Damage](/learn/lp-recovery-and-damage), then add player restrictions, draw/hand/deck access restrictions, and player-targeted effects as separate pages. |
@@ -94,6 +94,16 @@ Several details were verified directly against local MDPro3/YGOPro sources:
   negative input amounts to `0` in the local core binding.
 - `Auxiliary.AddEquipSpellEffect` in local `utility.lua` creates the normal
   Equip Spell activation shape and registers `EFFECT_EQUIP_LIMIT`.
+- `Auxiliary.AddRitualProcUltimate` and its wrappers in local `procedure.lua`
+  create Ritual Spell activation effects, gather Ritual Materials with
+  `Duel.GetRitualMaterial`, filter them through `Card.IsCanBeRitualMaterial`,
+  release them with `Duel.ReleaseRitualMaterial`, Special Summon with
+  `SUMMON_TYPE_RITUAL`, and call `CompleteProcedure`.
+- `Duel.GetRitualMaterial`, `Duel.GetRitualMaterialEx`, and
+  `Duel.ReleaseRitualMaterial` are bound in `ygopro-core\libduel.cpp`;
+  `Card.IsCanBeRitualMaterial` is bound in `ygopro-core\libcard.cpp`.
+- Local `ygopro-core\operations.cpp` maps `SUMMON_TYPE_RITUAL` to
+  `REASON_RITUAL` for material event handling.
 - `Card.IsSetCard` is bound in `ygopro-core\libcard.cpp`; set-code matching is
   implemented through the local core set-code comparison in `card_data.h`.
 - Activation lifecycle quality pass checked the downloaded activation,
@@ -113,6 +123,7 @@ Several details were verified directly against local MDPro3/YGOPro sources:
 | 2026-06-23 | Foundation forever pass: effect objects, filters/groups, movement, continuous effects, stat modifiers, and LP effects | Expanded [Creation, building, and registration of an effect object](/learn/effect-object), [Filters, Card Objects, and Group Objects](/learn/filters-and-groups), [Functions that move cards across locations](/learn/moving-cards), [Effects That Apply Continuously](/learn/continuous-effects), [Continuous stat modifiers](/learn/continuous-stat-modifiers), and [LP Recovery and Effect Damage](/learn/lp-recovery-and-damage) with setter-shape maps, target-range modes, property flags, subgroup selection, movement routing, local dynamic value examples, pure LP activation checks, stepped LP examples, and API links. |
 | 2026-06-23 | Equip and Field Spell strict pass | Expanded [Equip Spells and Equip Cards](/learn/equip-spells) with activation-shape differences, core equip housekeeping, non-applying equip modifiers, lost-target triggers, and summon-then-equip notes. Added [Field Spells](/learn/field-spells) as a focused local-source guide because the Field Spell downloaded page is not present in the current archive folder. |
 | 2026-06-23 | Spell and Trap classification expansion | Added [Spell Card Patterns](/learn/spell-card-patterns) for Normal, Continuous, Quick-Play, and Ritual Spell activation shapes, and [Trap Card Patterns](/learn/trap-card-patterns) for Normal, Continuous, and Counter Trap scripting. Local examples include Pot of Greed, Monster Reborn, Mystical Space Typhoon, Transonic Bird, Infinite Impermanence, Trap Trick, Cyberdark Invasion, and Chaos Trap Hole. |
+| 2026-06-23 | Ritual procedure expansion | Added [Ritual Procedure Guide](/learn/ritual-procedure) with helper selection, `AddRitualProcUltimate` internals, target/operation flow, material subgroup checks, `SetMaterial`, `ReleaseRitualMaterial`, `SUMMON_TYPE_RITUAL`, `CompleteProcedure`, manual Sonic Tracker-style flow, Nekroz Kaleidoscope nonstandard material movement, and API links. |
 
 ## Intentional Rewrites
 

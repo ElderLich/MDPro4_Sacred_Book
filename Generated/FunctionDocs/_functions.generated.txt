@@ -1483,7 +1483,9 @@ Returns:
 Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3583
 
 ●bool Card.IsCanBeRitualMaterial(Card c, [Card|nil sc])
-检查c是否可以作为[仪式怪兽sc的]仪式素材,没有指定sc的场合，必须填nil
+检查c能否作为sc的仪式素材。
+仪式脚本通常在选定仪式怪兽后，用Card.IsCanBeRitualMaterial过滤Duel.GetRitualMaterial取得的组，以遵守该怪兽自身的素材限制。
+只有在尚未确定具体仪式怪兽、只检查通用素材池时，才对sc传入nil。
 Parameters:
   c: Card
   sc: Card|nil optional
@@ -3673,8 +3675,9 @@ Returns:
 Source: D:\Programs\GitHub\ygopro-core\libduel.cpp:4975
 
 ●Group Duel.GetRitualMaterial(int player)
-返回玩家player可用的用于仪式召唤素材的卡片组
-包含手上，场上可解放的以及墓地的仪式魔人等卡
+返回player可作为基础仪式素材使用的卡。
+该组包含手牌或场上可被解放的卡，也包含仪式素材例外，例如合适的墓地卡。
+这只是起始素材池。选定仪式怪兽后，仍应使用Card.IsCanBeRitualMaterial过滤，并继续检查素材合计是否正好相等或大于等于需求。
 Parameters:
   player: int
 Returns:
@@ -3682,7 +3685,9 @@ Returns:
 Source: D:\Programs\GitHub\ygopro-core\libduel.cpp:4997
 
 ●Group Duel.GetRitualMaterialEx(int player)
-Duel.GetRitualMaterial并包含无等级怪兽
+返回扩展仪式素材池，其中包含没有等级的怪兽。
+本地Drytron风格脚本在仪式手续比较普通等级以外的数值时使用它，例如基于攻击力的数值。
+取得该组后，仍需继续套用脚本自身的种族、卡片文本以及仪式怪兽素材检查。
 Parameters:
   player: int
 Returns:
@@ -4317,7 +4322,9 @@ Returns:
 Source: D:\Programs\GitHub\ygopro-core\libduel.cpp:4881
 
 ●void Duel.ReleaseRitualMaterial(Group g)
-解放仪式用的素材g，如果是墓地的仪式魔人等卡则除外
+按照仪式素材规则移动g中选定的仪式素材。
+通常的手牌或场上素材会被解放，而合适的墓地仪式素材等会改为除外。
+调用此函数前应先调用Card.SetMaterial；之后以SUMMON_TYPE_RITUAL特殊召唤，并在召唤成功后调用Card.CompleteProcedure。本函数不返回数量。
 Parameters:
   g: Group
 Source: D:\Programs\GitHub\ygopro-core\libduel.cpp:4999
@@ -8308,20 +8315,22 @@ Returns:
 Source: Utilities/procedure.lua:1909
 
 ●Effect Auxiliary.AddRitualProcUltimate(Card c, function filter, function level_function, string greater_or_equal, [int summon_location], [function|nil grave_filter], [function|nil mat_filter], [bool pause], [function|nil extra_operation], [function|nil extra_target])
-为c创建可配置的仪式召唤发动效果并返回它。该效果可选择不立即登记，可使用墓地素材，并可执行额外的目标/操作回调。
+为c创建可配置的仪式召唤发动效果并返回它。
+生成的效果会检查仪式怪兽、取得仪式素材、确认素材等级合计正好相等或大于等于需求、解放仪式素材、以SUMMON_TYPE_RITUAL特殊召唤，并完成正规手续。
+普通仪式魔法通常使用包装辅助函数；需要墓地素材、素材过滤、不立即登记或额外目标/操作回调时，可直接调用此函数。
 Parameters:
   c: Card
-  filter: function
-  level_function: function
-  greater_or_equal: string
-  summon_location: int optional
-  grave_filter: function|nil optional
-  mat_filter: function|nil optional
-  pause: bool optional
-  extra_operation: function|nil optional
-  extra_target: function|nil optional
+  filter: function - Ritual Monster filter. It receives the candidate Ritual Monster plus the helper's extra arguments and should return true for monsters this effect can Summon.
+  level_function: function - Function used to get the required value from the Ritual Monster, commonly Card.GetOriginalLevel or Card.GetLevel.
+  greater_or_equal: string - Use "Greater" for equal-or-higher material totals or "Equal" for exact totals.
+  summon_location: int optional - Location to search for the Ritual Monster. Defaults to LOCATION_HAND.
+  grave_filter: function|nil optional - Optional filter for extra Graveyard materials that the helper may merge into the material pool.
+  mat_filter: function|nil optional - Optional filter applied to candidate Ritual Materials before the material subgroup is selected.
+  pause: bool optional - If true, returns the effect without registering it to c.
+  extra_operation: function|nil optional - Optional callback run after the Ritual Summon operation. Local wrappers pass the Summoned monster and selected material group to this callback.
+  extra_target: function|nil optional - Optional callback run during the target branch for extra operation info or activation checks.
 Returns:
-  Effect - The created Ritual Summon activation effect.
+  Effect - The created Ritual Summon activation effect. If pause is false or nil, the helper also registers it to c.
 Source: Utilities/procedure.lua:1750
 
 ●void Auxiliary.AddSynchroMixProcedure(Card c, function|nil f1, function|nil f2, function|nil f3, function|nil f4, int minc, int maxc, [function gc])

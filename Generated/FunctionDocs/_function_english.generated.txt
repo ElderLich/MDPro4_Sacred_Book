@@ -1470,7 +1470,9 @@ Returns:
 Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3583
 
 ●bool Card.IsCanBeRitualMaterial(Card c, [Card|nil sc])
-Checks whether c can be used as Ritual Material for sc; pass nil when no Ritual Monster is being checked.
+Checks whether c can be used as Ritual Material for sc.
+Ritual scripts usually call this after choosing the Ritual Monster, filtering Duel.GetRitualMaterial's result with Card.IsCanBeRitualMaterial so monster-specific material restrictions are respected.
+Pass nil for sc only when checking the generic material pool before a specific Ritual Monster is known.
 Parameters:
   c: Card
   sc: Card|nil optional
@@ -3647,7 +3649,9 @@ Returns:
 Source: D:\Programs\GitHub\ygopro-core\libduel.cpp:4975
 
 ●Group Duel.GetRitualMaterial(int player)
-Returns the cards player can use as Ritual Material, including cards in the hand/field that can be Tributed and cards such as Ritual Djinn monsters in the Graveyard.
+Returns the cards player can use as basic Ritual Material.
+The group includes cards in the hand or field that can be Tributed, plus Ritual-material exceptions such as suitable cards in the Graveyard.
+This is only the starting pool. After a Ritual Monster is chosen, filter the group with Card.IsCanBeRitualMaterial and then perform the exact or greater-or-equal material total check.
 Parameters:
   player: int
 Returns:
@@ -3655,7 +3659,9 @@ Returns:
 Source: D:\Programs\GitHub\ygopro-core\libduel.cpp:4997
 
 ●Group Duel.GetRitualMaterialEx(int player)
-Returns the group of cards player can use as Ritual Material, including monsters without a Level.
+Returns an extended Ritual Material pool, including monsters without a Level.
+Local Drytron-style scripts use this when the Ritual procedure compares something other than ordinary Levels, such as an ATK-based value.
+After collecting the group, still apply the script's own race, card text, and Ritual Monster material checks.
 Parameters:
   player: int
 Returns:
@@ -4291,7 +4297,9 @@ Returns:
 Source: D:\Programs\GitHub\ygopro-core\libduel.cpp:4881
 
 ●void Duel.ReleaseRitualMaterial(Group g)
-Tributes the Ritual Materials in g; materials such as Ritual Djinn monsters in the Graveyard are banished instead.
+Moves the selected Ritual Materials in g using Ritual-material rules.
+Standard hand or field materials are Tributed, while materials such as suitable Graveyard Ritual Materials are banished instead.
+Call Card.SetMaterial before this function, then Special Summon with SUMMON_TYPE_RITUAL and call Card.CompleteProcedure after the Summon succeeds. The function does not return a count.
 Parameters:
   g: Group
 Source: D:\Programs\GitHub\ygopro-core\libduel.cpp:4999
@@ -8271,20 +8279,22 @@ Returns:
 Source: Utilities/procedure.lua:1909
 
 ●Effect Auxiliary.AddRitualProcUltimate(Card c, function filter, function level_function, string greater_or_equal, [int summon_location], [function|nil grave_filter], [function|nil mat_filter], [bool pause], [function|nil extra_operation], [function|nil extra_target])
-Creates the configurable Ritual Summon activation effect for c and returns it. The effect can be paused from registration, can use Graveyard materials, and can run extra target/operation callbacks.
+Creates the configurable Ritual Summon activation effect for c and returns it.
+The generated effect checks for a Ritual Monster, gathers Ritual Materials, validates an equal or greater-or-equal material total, releases Ritual Materials, Special Summons with SUMMON_TYPE_RITUAL, and completes the procedure.
+Use wrapper helpers for ordinary Ritual Spells, and call this directly when a script needs Graveyard material, a material filter, delayed registration, or extra target/operation callbacks.
 Parameters:
   c: Card
-  filter: function
-  level_function: function
-  greater_or_equal: string
-  summon_location: int optional
-  grave_filter: function|nil optional
-  mat_filter: function|nil optional
-  pause: bool optional
-  extra_operation: function|nil optional
-  extra_target: function|nil optional
+  filter: function - Ritual Monster filter. It receives the candidate Ritual Monster plus the helper's extra arguments and should return true for monsters this effect can Summon.
+  level_function: function - Function used to get the required value from the Ritual Monster, commonly Card.GetOriginalLevel or Card.GetLevel.
+  greater_or_equal: string - Use "Greater" for equal-or-higher material totals or "Equal" for exact totals.
+  summon_location: int optional - Location to search for the Ritual Monster. Defaults to LOCATION_HAND.
+  grave_filter: function|nil optional - Optional filter for extra Graveyard materials that the helper may merge into the material pool.
+  mat_filter: function|nil optional - Optional filter applied to candidate Ritual Materials before the material subgroup is selected.
+  pause: bool optional - If true, returns the effect without registering it to c.
+  extra_operation: function|nil optional - Optional callback run after the Ritual Summon operation. Local wrappers pass the Summoned monster and selected material group to this callback.
+  extra_target: function|nil optional - Optional callback run during the target branch for extra operation info or activation checks.
 Returns:
-  Effect - The created Ritual Summon activation effect.
+  Effect - The created Ritual Summon activation effect. If pause is false or nil, the helper also registers it to c.
 Source: Utilities/procedure.lua:1750
 
 ●void Auxiliary.AddSynchroMixProcedure(Card c, function|nil f1, function|nil f2, function|nil f3, function|nil f4, int minc, int maxc, [function gc])

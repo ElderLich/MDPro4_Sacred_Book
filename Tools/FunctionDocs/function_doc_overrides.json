@@ -1150,10 +1150,14 @@
     },
     "Auxiliary.AddRitualProcUltimate": {
       "summary_en": [
-        "Creates the configurable Ritual Summon activation effect for c and returns it. The effect can be paused from registration, can use Graveyard materials, and can run extra target/operation callbacks."
+        "Creates the configurable Ritual Summon activation effect for c and returns it.",
+        "The generated effect checks for a Ritual Monster, gathers Ritual Materials, validates an equal or greater-or-equal material total, releases Ritual Materials, Special Summons with SUMMON_TYPE_RITUAL, and completes the procedure.",
+        "Use wrapper helpers for ordinary Ritual Spells, and call this directly when a script needs Graveyard material, a material filter, delayed registration, or extra target/operation callbacks."
       ],
       "summary_zh": [
-        "为c创建可配置的仪式召唤发动效果并返回它。该效果可选择不立即登记，可使用墓地素材，并可执行额外的目标/操作回调。"
+        "为c创建可配置的仪式召唤发动效果并返回它。",
+        "生成的效果会检查仪式怪兽、取得仪式素材、确认素材等级合计正好相等或大于等于需求、解放仪式素材、以SUMMON_TYPE_RITUAL特殊召唤，并完成正规手续。",
+        "普通仪式魔法通常使用包装辅助函数；需要墓地素材、素材过滤、不立即登记或额外目标/操作回调时，可直接调用此函数。"
       ],
       "core_summary_en": [
         "Creates a configurable Ritual Summon activation effect."
@@ -1165,51 +1169,60 @@
         },
         {
           "name": "filter",
-          "type": "function"
+          "type": "function",
+          "description": "Ritual Monster filter. It receives the candidate Ritual Monster plus the helper's extra arguments and should return true for monsters this effect can Summon."
         },
         {
           "name": "level_function",
-          "type": "function"
+          "type": "function",
+          "description": "Function used to get the required value from the Ritual Monster, commonly Card.GetOriginalLevel or Card.GetLevel."
         },
         {
           "name": "greater_or_equal",
-          "type": "string"
+          "type": "string",
+          "description": "Use \"Greater\" for equal-or-higher material totals or \"Equal\" for exact totals."
         },
         {
           "name": "summon_location",
           "type": "int",
-          "optional": true
+          "optional": true,
+          "description": "Location to search for the Ritual Monster. Defaults to LOCATION_HAND."
         },
         {
           "name": "grave_filter",
           "type": "function|nil",
-          "optional": true
+          "optional": true,
+          "description": "Optional filter for extra Graveyard materials that the helper may merge into the material pool."
         },
         {
           "name": "mat_filter",
           "type": "function|nil",
-          "optional": true
+          "optional": true,
+          "description": "Optional filter applied to candidate Ritual Materials before the material subgroup is selected."
         },
         {
           "name": "pause",
           "type": "bool",
-          "optional": true
+          "optional": true,
+          "description": "If true, returns the effect without registering it to c."
         },
         {
           "name": "extra_operation",
           "type": "function|nil",
-          "optional": true
+          "optional": true,
+          "description": "Optional callback run after the Ritual Summon operation. Local wrappers pass the Summoned monster and selected material group to this callback."
         },
         {
           "name": "extra_target",
           "type": "function|nil",
-          "optional": true
+          "optional": true,
+          "description": "Optional callback run during the target branch for extra operation info or activation checks."
         }
       ],
       "returns": [
         {
           "type": "Effect",
-          "description": "The created Ritual Summon activation effect."
+          "description": "The created Ritual Summon activation effect. If pause is false or nil, the helper also registers it to c."
         }
       ]
     },
@@ -14262,7 +14275,14 @@
     },
     "Card.IsCanBeRitualMaterial": {
       "summary_en": [
-        "Checks whether c can be used as Ritual Material for sc; pass nil when no Ritual Monster is being checked."
+        "Checks whether c can be used as Ritual Material for sc.",
+        "Ritual scripts usually call this after choosing the Ritual Monster, filtering Duel.GetRitualMaterial's result with Card.IsCanBeRitualMaterial so monster-specific material restrictions are respected.",
+        "Pass nil for sc only when checking the generic material pool before a specific Ritual Monster is known."
+      ],
+      "summary_zh": [
+        "检查c能否作为sc的仪式素材。",
+        "仪式脚本通常在选定仪式怪兽后，用Card.IsCanBeRitualMaterial过滤Duel.GetRitualMaterial取得的组，以遵守该怪兽自身的素材限制。",
+        "只有在尚未确定具体仪式怪兽、只检查通用素材池时，才对sc传入nil。"
       ]
     },
     "Card.IsCanBeSpecialSummoned": {
@@ -19455,12 +19475,26 @@
     },
     "Duel.GetRitualMaterial": {
       "summary_en": [
-        "Returns the cards player can use as Ritual Material, including cards in the hand/field that can be Tributed and cards such as Ritual Djinn monsters in the Graveyard."
+        "Returns the cards player can use as basic Ritual Material.",
+        "The group includes cards in the hand or field that can be Tributed, plus Ritual-material exceptions such as suitable cards in the Graveyard.",
+        "This is only the starting pool. After a Ritual Monster is chosen, filter the group with Card.IsCanBeRitualMaterial and then perform the exact or greater-or-equal material total check."
+      ],
+      "summary_zh": [
+        "返回player可作为基础仪式素材使用的卡。",
+        "该组包含手牌或场上可被解放的卡，也包含仪式素材例外，例如合适的墓地卡。",
+        "这只是起始素材池。选定仪式怪兽后，仍应使用Card.IsCanBeRitualMaterial过滤，并继续检查素材合计是否正好相等或大于等于需求。"
       ]
     },
     "Duel.GetRitualMaterialEx": {
       "summary_en": [
-        "Returns the group of cards player can use as Ritual Material, including monsters without a Level."
+        "Returns an extended Ritual Material pool, including monsters without a Level.",
+        "Local Drytron-style scripts use this when the Ritual procedure compares something other than ordinary Levels, such as an ATK-based value.",
+        "After collecting the group, still apply the script's own race, card text, and Ritual Monster material checks."
+      ],
+      "summary_zh": [
+        "返回扩展仪式素材池，其中包含没有等级的怪兽。",
+        "本地Drytron风格脚本在仪式手续比较普通等级以外的数值时使用它，例如基于攻击力的数值。",
+        "取得该组后，仍需继续套用脚本自身的种族、卡片文本以及仪式怪兽素材检查。"
       ]
     },
     "Duel.GetSZoneCount": {
@@ -20895,7 +20929,14 @@
     },
     "Duel.ReleaseRitualMaterial": {
       "summary_en": [
-        "Tributes the Ritual Materials in g; materials such as Ritual Djinn monsters in the Graveyard are banished instead."
+        "Moves the selected Ritual Materials in g using Ritual-material rules.",
+        "Standard hand or field materials are Tributed, while materials such as suitable Graveyard Ritual Materials are banished instead.",
+        "Call Card.SetMaterial before this function, then Special Summon with SUMMON_TYPE_RITUAL and call Card.CompleteProcedure after the Summon succeeds. The function does not return a count."
+      ],
+      "summary_zh": [
+        "按照仪式素材规则移动g中选定的仪式素材。",
+        "通常的手牌或场上素材会被解放，而合适的墓地仪式素材等会改为除外。",
+        "调用此函数前应先调用Card.SetMaterial；之后以SUMMON_TYPE_RITUAL特殊召唤，并在召唤成功后调用Card.CompleteProcedure。本函数不返回数量。"
       ]
     },
     "Duel.Remove": {

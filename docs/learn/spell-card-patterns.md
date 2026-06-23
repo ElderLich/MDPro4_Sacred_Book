@@ -9,6 +9,7 @@ Equip and Field Spells have their own focused lessons:
 
 - [Equip Spells and Equip Cards](equip-spells)
 - [Field Spells](field-spells)
+- [Ritual Procedure Guide](ritual-procedure)
 
 This page covers the remaining Spell Card shapes: Normal Spells, Continuous
 Spells, Quick-Play Spells, Ritual Spells, and effects that activate or copy a
@@ -158,9 +159,10 @@ write the normal activation effect and let the core enforce the card-type rule.
 ## Ritual Spells
 
 A Ritual Spell is a Spell activation whose operation performs a Ritual Summon.
-The full procedure deserves its own guide because material checks, required
-Levels, replacement material, and `SUMMON_TYPE_RITUAL` all interact. For this
-classification pass, remember the shape:
+Use the [Ritual Procedure Guide](ritual-procedure) for the full material and
+Summon flow, because material checks, required Levels, replacement material, and
+`SUMMON_TYPE_RITUAL` all interact. For this classification pass, remember the
+shape:
 
 1. the card activation is still `EFFECT_TYPE_ACTIVATE`;
 2. the target branch checks whether the Ritual Monster and materials are
