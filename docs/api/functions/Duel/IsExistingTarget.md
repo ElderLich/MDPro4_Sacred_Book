@@ -29,17 +29,17 @@ end
 
 ## Parameters
 
-- `f` `function|nil` optional
-- `player` `int`
-- `s` `int`
-- `o` `int`
-- `count` `int`
-- `ex` `Card|Group|nil` optional
-- `...` `any`
+- `f` `function|nil` optional - Filter called with each candidate card first, then any extra arguments after ex.
+- `player` `int` - Viewpoint player for s and o.
+- `s` `int` - Locations on player's side to search.
+- `o` `int` - Locations on the opponent's side to search.
+- `count` `int` - Minimum number of legal targets required.
+- `ex` `Card|Group|nil` optional - Card or Group excluded from the search.
+- `...` `any` - Extra values passed to f after the candidate card.
 
 ## Returns
 
-- `bool`
+- `bool` - True if at least count matching cards can be targeted by the current effect.
 
 ## Source
 

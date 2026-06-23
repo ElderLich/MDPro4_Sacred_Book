@@ -9,7 +9,7 @@ Duel.SelectTarget(int sel_player, [function|nil f], int player, int s, int o, in
 ## Description
 
 Lets sel_player choose min to max cards that satisfy filter f, are not excluded by ex, and can be targeted by the currently handled effect.
-The selected cards are also registered as the current Chain's target cards.
+The selected cards are registered as the current Chain's target cards. For non-continuous effects, the core also creates Chain relations used by IsRelateToEffect and related helpers.
 
 ## How To Use It
 
@@ -36,19 +36,19 @@ end
 
 ## Parameters
 
-- `sel_player` `int`
-- `f` `function|nil` optional
-- `player` `int`
-- `s` `int`
-- `o` `int`
-- `min` `int`
-- `max` `int`
-- `ex` `Card|Group|nil` optional
-- `...` `any`
+- `sel_player` `int` - Player who makes the selection.
+- `f` `function|nil` optional - Filter called with each candidate card first, then any extra arguments after ex.
+- `player` `int` - Viewpoint player for s and o.
+- `s` `int` - Locations on player's side to search.
+- `o` `int` - Locations on the opponent's side to search.
+- `min` `int` - Minimum number of cards to select.
+- `max` `int` - Maximum number of cards to select.
+- `ex` `Card|Group|nil` optional - Card or Group excluded from the selection.
+- `...` `any` - Extra values passed to f after the candidate card.
 
 ## Returns
 
-- `Group`
+- `Group` - Group of cards selected by sel_player and registered as current Chain targets. If there is no current Chain or sel_player is invalid, the core returns no value.
 
 ## Source
 

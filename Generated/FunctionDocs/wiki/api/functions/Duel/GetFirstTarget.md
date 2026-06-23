@@ -28,7 +28,7 @@ For multiple targets, use `Duel.GetTargetsRelateToChain()` when you need the gro
 
 ## Returns
 
-- `Card|nil`
+- `Card|nil` - First recorded target card, followed by any additional target cards as extra Lua return values. No value is returned when the current Chain has no target cards.
 
 ## Source
 

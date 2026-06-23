@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-06-23T05:09:48+00:00",
+    "generated_at": "2026-06-23T05:25:22+00:00",
     "workspace": "D:\\Programs\\GitHub\\MDPro3_Sacred_Book",
     "dataeditorx_data": "D:\\Programs\\GitHub\\DataEditorX\\DataEditorX\\data",
     "mdpro3_locales": "D:\\Programs\\GitHub\\MDPro3_Data\\Data\\locales",
@@ -18253,41 +18253,24 @@
           "name": "chainc",
           "type": "int",
           "optional": false,
-          "description": ""
+          "description": "Chain index/count to inspect; scripts commonly use 0 for the current Chain Link."
         },
         {
           "name": "...",
           "type": "any",
           "optional": false,
-          "description": ""
+          "description": "One or more CHAININFO_* constants. Each requested field produces one return value."
         }
       ],
       "returns": [
         {
           "type": "...",
-          "description": ""
+          "description": "Values corresponding to the requested CHAININFO_* constants. CHAININFO_TARGET_CARDS returns the Chain's target Group."
         }
       ],
       "description_zh": [
-        "返回连锁chainc的信息，如果chainc=0，则返回当前正在处理的连锁的信息",
-        "此函数根据传入的参数个数按顺序返回相应数量的返回值参数可以是:",
-        "CHAININFO_CHAIN_COUNT               连锁序号",
-        "CHAININFO_TRIGGERING_EFFECT         连锁的效果",
-        "CHAININFO_TRIGGERING_PLAYER         连锁的玩家",
-        "CHAININFO_TRIGGERING_CONTROLER      连锁发生位置所属玩家",
-        "CHAININFO_TRIGGERING_LOCATION       连锁发生位置",
-        "CHAININFO_TRIGGERING_SEQUENCE       连锁发生的位置的序号",
-        "CHAININFO_TARGET_CARDS              连锁的对象卡片组",
-        "CHAININFO_TARGET_PLAYER             连锁的对象玩家",
-        "CHAININFO_TARGET_PARAM              连锁的对象参数",
-        "CHAININFO_DISABLE_REASON            连锁被无效的原因效果",
-        "CHAININFO_DISABLE_PLAYER            连锁被无效的原因玩家",
-        "CHAININFO_CHAIN_ID                  连锁的唯一标识",
-        "CHAININFO_TYPE                      连锁卡片的类型（怪兽·魔法·陷阱）",
-        "CHAININFO_EXTTYPE                   连锁卡片的具体类型（例如同调怪兽·永续魔法·反击陷阱）",
-        "举例：",
-        "Duel.GetChainInfo(0,CHAININFO_TRIGGERING_LOCATION,CHAININFO_TARGET_CARDS)",
-        "将会返回当前连锁发生的位置和对象卡"
+        "按请求的CHAININFO_*常量顺序，返回chainc对应连锁的信息字段。",
+        "chainc=0表示当前正在处理的连锁。未知字段返回nil；连锁不存在时不返回值。"
       ],
       "description_en": [
         "Returns information fields from chainc in the same order as the requested CHAININFO_* constants.",
@@ -18308,7 +18291,9 @@
       ],
       "aliases": [],
       "tags": [
-        "core-binding"
+        "core-binding",
+        "core-doc-override",
+        "manual-zh-doc"
       ],
       "core_binding": true,
       "core_handler": "duel_get_chain_info"
@@ -19136,11 +19121,12 @@
       "returns": [
         {
           "type": "Card|nil",
-          "description": ""
+          "description": "First recorded target card, followed by any additional target cards as extra Lua return values. No value is returned when the current Chain has no target cards."
         }
       ],
       "description_zh": [
-        "返回当前连锁登记的对象卡。"
+        "返回当前正在处理的连锁登记的第一张对象卡。",
+        "若登记了多张对象卡，其余对象卡会按登记顺序作为额外返回值返回。"
       ],
       "description_en": [
         "Returns the first target card currently recorded for the resolving Chain.",
@@ -19162,7 +19148,8 @@
       "aliases": [],
       "tags": [
         "core-binding",
-        "core-doc-override"
+        "core-doc-override",
+        "manual-zh-doc"
       ],
       "core_binding": true,
       "core_handler": "duel_get_first_target"
@@ -20730,14 +20717,16 @@
       "returns": [
         {
           "type": "Group",
-          "description": ""
+          "description": "New Group containing the current Chain targets whose Chain relation is still valid; empty when none qualify."
         }
       ],
       "description_zh": [
-        "返回当前连锁所有有关联的对象卡"
+        "返回当前正在处理的连锁中仍与该连锁有关联的全部对象卡。",
+        "这是多对象操作常用的关联检查辅助函数；已经离开预期位置的对象不会包含在返回的Group中。"
       ],
       "description_en": [
-        "Returns all target cards currently related to the Chain."
+        "Returns all target cards currently related to the resolving Chain.",
+        "This is the relation-aware helper for multi-target operations; targets that left their expected place are omitted from the returned Group."
       ],
       "english_status": "translated_exact",
       "source_files": [
@@ -20754,7 +20743,9 @@
       ],
       "aliases": [],
       "tags": [
-        "core-binding"
+        "core-binding",
+        "core-doc-override",
+        "manual-zh-doc"
       ],
       "core_binding": true,
       "core_handler": "duel_get_targets_relate_to_chain"
@@ -21766,53 +21757,54 @@
           "name": "f",
           "type": "function|nil",
           "optional": true,
-          "description": ""
+          "description": "Filter called with each candidate card first, then any extra arguments after ex."
         },
         {
           "name": "player",
           "type": "int",
           "optional": false,
-          "description": ""
+          "description": "Viewpoint player for s and o."
         },
         {
           "name": "s",
           "type": "int",
           "optional": false,
-          "description": ""
+          "description": "Locations on player's side to search."
         },
         {
           "name": "o",
           "type": "int",
           "optional": false,
-          "description": ""
+          "description": "Locations on the opponent's side to search."
         },
         {
           "name": "count",
           "type": "int",
           "optional": false,
-          "description": ""
+          "description": "Minimum number of legal targets required."
         },
         {
           "name": "ex",
           "type": "Card|Group|nil",
           "optional": true,
-          "description": ""
+          "description": "Card or Group excluded from the search."
         },
         {
           "name": "...",
           "type": "any",
           "optional": false,
-          "description": ""
+          "description": "Extra values passed to f after the candidate card."
         }
       ],
       "returns": [
         {
           "type": "bool",
-          "description": ""
+          "description": "True if at least count matching cards can be targeted by the current effect."
         }
       ],
       "description_zh": [
-        "检查指定位置是否存在足够数量、满足f且可以成为当前效果对象的卡。"
+        "检查指定位置中是否存在至少count张满足筛选函数f、未被ex排除、且可以成为当前处理效果对象的卡。",
+        "当卡需要成为正式效果对象时，在Target回调中使用此函数。"
       ],
       "description_en": [
         "Checks whether the specified locations contain at least count cards that satisfy filter f, are not excluded by ex, and can be targeted by the currently handled effect.",
@@ -21834,7 +21826,8 @@
       "aliases": [],
       "tags": [
         "core-binding",
-        "core-doc-override"
+        "core-doc-override",
+        "manual-zh-doc"
       ],
       "core_binding": true,
       "core_handler": "duel_is_existing_target"
@@ -25394,69 +25387,70 @@
           "name": "sel_player",
           "type": "int",
           "optional": false,
-          "description": ""
+          "description": "Player who makes the selection."
         },
         {
           "name": "f",
           "type": "function|nil",
           "optional": true,
-          "description": ""
+          "description": "Filter called with each candidate card first, then any extra arguments after ex."
         },
         {
           "name": "player",
           "type": "int",
           "optional": false,
-          "description": ""
+          "description": "Viewpoint player for s and o."
         },
         {
           "name": "s",
           "type": "int",
           "optional": false,
-          "description": ""
+          "description": "Locations on player's side to search."
         },
         {
           "name": "o",
           "type": "int",
           "optional": false,
-          "description": ""
+          "description": "Locations on the opponent's side to search."
         },
         {
           "name": "min",
           "type": "int",
           "optional": false,
-          "description": ""
+          "description": "Minimum number of cards to select."
         },
         {
           "name": "max",
           "type": "int",
           "optional": false,
-          "description": ""
+          "description": "Maximum number of cards to select."
         },
         {
           "name": "ex",
           "type": "Card|Group|nil",
           "optional": true,
-          "description": ""
+          "description": "Card or Group excluded from the selection."
         },
         {
           "name": "...",
           "type": "any",
           "optional": false,
-          "description": ""
+          "description": "Extra values passed to f after the candidate card."
         }
       ],
       "returns": [
         {
           "type": "Group",
-          "description": ""
+          "description": "Group of cards selected by sel_player and registered as current Chain targets. If there is no current Chain or sel_player is invalid, the core returns no value."
         }
       ],
       "description_zh": [
-        "选择满足条件的对象卡，并把选择结果登记为当前连锁的对象。"
+        "让sel_player选择min到max张满足筛选函数f、未被ex排除、且可以成为当前处理效果对象的卡。",
+        "选择的卡会登记为当前连锁的对象卡。对于非永续效果，核心还会建立供IsRelateToEffect等函数使用的连锁关联。"
       ],
       "description_en": [
         "Lets sel_player choose min to max cards that satisfy filter f, are not excluded by ex, and can be targeted by the currently handled effect.",
-        "The selected cards are also registered as the current Chain's target cards."
+        "The selected cards are registered as the current Chain's target cards. For non-continuous effects, the core also creates Chain relations used by IsRelateToEffect and related helpers."
       ],
       "english_status": "translated_exact",
       "source_files": [
@@ -25474,7 +25468,8 @@
       "aliases": [],
       "tags": [
         "core-binding",
-        "core-doc-override"
+        "core-doc-override",
+        "manual-zh-doc"
       ],
       "core_binding": true,
       "core_handler": "duel_select_target"
@@ -26552,21 +26547,18 @@
           "name": "targets",
           "type": "Card|Group",
           "optional": false,
-          "description": ""
+          "description": "Card or Group to record as current Chain target cards."
         }
       ],
-      "returns": [
-        {
-          "type": "nil",
-          "description": ""
-        }
-      ],
+      "returns": [],
       "description_zh": [
-        "把当前正在处理的连锁的对象设置成targets",
-        "注，这里的对象指的的广义的对象，包括不取对象的效果可能要处理的对象"
+        "把targets保存为当前处理连锁的对象卡。",
+        "对于非永续效果，核心会为这些卡建立连锁关联；若效果带有EFFECT_FLAG_CARD_TARGET，还会发送成为对象的消息。",
+        "此函数用于登记广义操作对象；它本身不会检查这些卡是否可以合法成为效果对象。"
       ],
       "description_en": [
         "Stores targets as the target cards for the currently handled Chain.",
+        "For non-continuous effects, the core creates Chain relations for those cards and sends the become-target message when the effect has EFFECT_FLAG_CARD_TARGET.",
         "This records broad operation targets; it does not by itself check whether the cards are legal effect targets."
       ],
       "english_status": "translated_exact",
@@ -26584,7 +26576,9 @@
       ],
       "aliases": [],
       "tags": [
-        "core-binding"
+        "core-binding",
+        "core-doc-override",
+        "manual-zh-doc"
       ],
       "core_binding": true,
       "core_handler": "duel_set_target_card"
@@ -30271,21 +30265,23 @@
           "name": "e",
           "type": "Effect",
           "optional": false,
-          "description": ""
+          "description": "Effect whose target callback is replaced."
         },
         {
           "name": "targ_func",
           "type": "function",
           "optional": false,
-          "description": ""
+          "description": "Callback function stored on e."
         }
       ],
       "returns": [],
       "description_zh": [
-        "设置效果e的Target函数。"
+        "设置e的Target回调。对于发动型效果，该回调用于检查发动合法性，并登记对象或操作信息。",
+        "Target回调通常在chk==0分支只回答是否合法；实际发动分支再用Duel.SelectTarget选择正式对象、用Duel.SetTargetCard登记广义对象，或用Duel.SetOperationInfo声明操作信息。"
       ],
       "description_en": [
-        "Sets e's target callback. For activated effects, this callback performs activation legality checks and records target or operation information."
+        "Sets e's target callback. For activated effects, this callback performs activation legality checks and records target or operation information.",
+        "Target callbacks normally use chk==0 only to answer legality, then use the real activation branch to select official targets with Duel.SelectTarget, record broad targets with Duel.SetTargetCard, or announce operation details with Duel.SetOperationInfo."
       ],
       "english_status": "translated_exact",
       "source_files": [
@@ -30303,7 +30299,8 @@
       "aliases": [],
       "tags": [
         "core-binding",
-        "core-doc-override"
+        "core-doc-override",
+        "manual-zh-doc"
       ],
       "core_binding": true,
       "core_handler": "effect_set_target"

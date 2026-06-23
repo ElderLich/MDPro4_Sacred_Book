@@ -18256,6 +18256,34 @@
       "summary_en": [
         "Returns information fields from chainc in the same order as the requested CHAININFO_* constants.",
         "Use chainc=0 for the currently resolving Chain. Unknown requested fields return nil, and no values are returned if the Chain does not exist."
+      ],
+      "summary_zh": [
+        "按请求的CHAININFO_*常量顺序，返回chainc对应连锁的信息字段。",
+        "chainc=0表示当前正在处理的连锁。未知字段返回nil；连锁不存在时不返回值。"
+      ],
+      "core_summary_en": [
+        "Returns requested Chain information fields."
+      ],
+      "core_summary_zh": [
+        "返回请求的连锁信息字段。"
+      ],
+      "params": [
+        {
+          "name": "chainc",
+          "type": "int",
+          "description": "Chain index/count to inspect; scripts commonly use 0 for the current Chain Link."
+        },
+        {
+          "name": "...",
+          "type": "any",
+          "description": "One or more CHAININFO_* constants. Each requested field produces one return value."
+        }
+      ],
+      "returns": [
+        {
+          "type": "...",
+          "description": "Values corresponding to the requested CHAININFO_* constants. CHAININFO_TARGET_CARDS returns the Chain's target Group."
+        }
       ]
     },
     "Duel.GetChainMaterial": {
@@ -18664,6 +18692,10 @@
         "Returns the first target card currently recorded for the resolving Chain.",
         "If multiple target cards were recorded, the remaining target cards are returned as additional values in recorded order."
       ],
+      "summary_zh": [
+        "返回当前正在处理的连锁登记的第一张对象卡。",
+        "若登记了多张对象卡，其余对象卡会按登记顺序作为额外返回值返回。"
+      ],
       "core_summary_en": [
         "Returns target cards recorded for the current Chain."
       ],
@@ -18673,7 +18705,8 @@
       "params": [],
       "returns": [
         {
-          "type": "Card|nil"
+          "type": "Card|nil",
+          "description": "First recorded target card, followed by any additional target cards as extra Lua return values. No value is returned when the current Chain has no target cards."
         }
       ]
     },
@@ -19209,7 +19242,25 @@
     },
     "Duel.GetTargetsRelateToChain": {
       "summary_en": [
-        "Returns all target cards currently related to the Chain."
+        "Returns all target cards currently related to the resolving Chain.",
+        "This is the relation-aware helper for multi-target operations; targets that left their expected place are omitted from the returned Group."
+      ],
+      "summary_zh": [
+        "返回当前正在处理的连锁中仍与该连锁有关联的全部对象卡。",
+        "这是多对象操作常用的关联检查辅助函数；已经离开预期位置的对象不会包含在返回的Group中。"
+      ],
+      "core_summary_en": [
+        "Returns target cards still related to the current Chain."
+      ],
+      "core_summary_zh": [
+        "返回仍与当前连锁有关联的对象卡。"
+      ],
+      "params": [],
+      "returns": [
+        {
+          "type": "Group",
+          "description": "New Group containing the current Chain targets whose Chain relation is still valid; empty when none qualify."
+        }
       ]
     },
     "Duel.GetTributeCount": {
@@ -19584,6 +19635,10 @@
         "Checks whether the specified locations contain at least count cards that satisfy filter f, are not excluded by ex, and can be targeted by the currently handled effect.",
         "Use this in Target callbacks when the card must become an official effect target."
       ],
+      "summary_zh": [
+        "检查指定位置中是否存在至少count张满足筛选函数f、未被ex排除、且可以成为当前处理效果对象的卡。",
+        "当卡需要成为正式效果对象时，在Target回调中使用此函数。"
+      ],
       "core_summary_en": [
         "Checks whether enough matching cards can become targets for the current effect."
       ],
@@ -19594,37 +19649,45 @@
         {
           "name": "f",
           "type": "function|nil",
-          "optional": true
+          "optional": true,
+          "description": "Filter called with each candidate card first, then any extra arguments after ex."
         },
         {
           "name": "player",
-          "type": "int"
+          "type": "int",
+          "description": "Viewpoint player for s and o."
         },
         {
           "name": "s",
-          "type": "int"
+          "type": "int",
+          "description": "Locations on player's side to search."
         },
         {
           "name": "o",
-          "type": "int"
+          "type": "int",
+          "description": "Locations on the opponent's side to search."
         },
         {
           "name": "count",
-          "type": "int"
+          "type": "int",
+          "description": "Minimum number of legal targets required."
         },
         {
           "name": "ex",
           "type": "Card|Group|nil",
-          "optional": true
+          "optional": true,
+          "description": "Card or Group excluded from the search."
         },
         {
           "name": "...",
-          "type": "any"
+          "type": "any",
+          "description": "Extra values passed to f after the candidate card."
         }
       ],
       "returns": [
         {
-          "type": "bool"
+          "type": "bool",
+          "description": "True if at least count matching cards can be targeted by the current effect."
         }
       ]
     },
@@ -20954,7 +21017,11 @@
     "Duel.SelectTarget": {
       "summary_en": [
         "Lets sel_player choose min to max cards that satisfy filter f, are not excluded by ex, and can be targeted by the currently handled effect.",
-        "The selected cards are also registered as the current Chain's target cards."
+        "The selected cards are registered as the current Chain's target cards. For non-continuous effects, the core also creates Chain relations used by IsRelateToEffect and related helpers."
+      ],
+      "summary_zh": [
+        "让sel_player选择min到max张满足筛选函数f、未被ex排除、且可以成为当前处理效果对象的卡。",
+        "选择的卡会登记为当前连锁的对象卡。对于非永续效果，核心还会建立供IsRelateToEffect等函数使用的连锁关联。"
       ],
       "core_summary_en": [
         "Selects matching target cards and registers them as the current Chain's targets."
@@ -20965,46 +21032,56 @@
       "params": [
         {
           "name": "sel_player",
-          "type": "int"
+          "type": "int",
+          "description": "Player who makes the selection."
         },
         {
           "name": "f",
           "type": "function|nil",
-          "optional": true
+          "optional": true,
+          "description": "Filter called with each candidate card first, then any extra arguments after ex."
         },
         {
           "name": "player",
-          "type": "int"
+          "type": "int",
+          "description": "Viewpoint player for s and o."
         },
         {
           "name": "s",
-          "type": "int"
+          "type": "int",
+          "description": "Locations on player's side to search."
         },
         {
           "name": "o",
-          "type": "int"
+          "type": "int",
+          "description": "Locations on the opponent's side to search."
         },
         {
           "name": "min",
-          "type": "int"
+          "type": "int",
+          "description": "Minimum number of cards to select."
         },
         {
           "name": "max",
-          "type": "int"
+          "type": "int",
+          "description": "Maximum number of cards to select."
         },
         {
           "name": "ex",
           "type": "Card|Group|nil",
-          "optional": true
+          "optional": true,
+          "description": "Card or Group excluded from the selection."
         },
         {
           "name": "...",
-          "type": "any"
+          "type": "any",
+          "description": "Extra values passed to f after the candidate card."
         }
       ],
       "returns": [
         {
-          "type": "Group"
+          "type": "Group",
+          "description": "Group of cards selected by sel_player and registered as current Chain targets. If there is no current Chain or sel_player is invalid, the core returns no value."
         }
       ]
     },
@@ -21423,8 +21500,28 @@
     "Duel.SetTargetCard": {
       "summary_en": [
         "Stores targets as the target cards for the currently handled Chain.",
+        "For non-continuous effects, the core creates Chain relations for those cards and sends the become-target message when the effect has EFFECT_FLAG_CARD_TARGET.",
         "This records broad operation targets; it does not by itself check whether the cards are legal effect targets."
-      ]
+      ],
+      "summary_zh": [
+        "把targets保存为当前处理连锁的对象卡。",
+        "对于非永续效果，核心会为这些卡建立连锁关联；若效果带有EFFECT_FLAG_CARD_TARGET，还会发送成为对象的消息。",
+        "此函数用于登记广义操作对象；它本身不会检查这些卡是否可以合法成为效果对象。"
+      ],
+      "core_summary_en": [
+        "Sets target cards for the current Chain."
+      ],
+      "core_summary_zh": [
+        "设置当前连锁的对象卡。"
+      ],
+      "params": [
+        {
+          "name": "targets",
+          "type": "Card|Group",
+          "description": "Card or Group to record as current Chain target cards."
+        }
+      ],
+      "returns": []
     },
     "Duel.SetTargetParam": {
       "summary_en": [
@@ -22821,7 +22918,12 @@
     },
     "Effect.SetTarget": {
       "summary_en": [
-        "Sets e's target callback. For activated effects, this callback performs activation legality checks and records target or operation information."
+        "Sets e's target callback. For activated effects, this callback performs activation legality checks and records target or operation information.",
+        "Target callbacks normally use chk==0 only to answer legality, then use the real activation branch to select official targets with Duel.SelectTarget, record broad targets with Duel.SetTargetCard, or announce operation details with Duel.SetOperationInfo."
+      ],
+      "summary_zh": [
+        "设置e的Target回调。对于发动型效果，该回调用于检查发动合法性，并登记对象或操作信息。",
+        "Target回调通常在chk==0分支只回答是否合法；实际发动分支再用Duel.SelectTarget选择正式对象、用Duel.SetTargetCard登记广义对象，或用Duel.SetOperationInfo声明操作信息。"
       ],
       "core_summary_en": [
         "Sets e's target callback."
@@ -22832,11 +22934,13 @@
       "params": [
         {
           "name": "e",
-          "type": "Effect"
+          "type": "Effect",
+          "description": "Effect whose target callback is replaced."
         },
         {
           "name": "targ_func",
-          "type": "function"
+          "type": "function",
+          "description": "Callback function stored on e."
         }
       ],
       "returns": []

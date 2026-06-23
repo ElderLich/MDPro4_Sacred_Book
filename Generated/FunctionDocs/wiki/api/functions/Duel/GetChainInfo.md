@@ -13,12 +13,12 @@ Use chainc=0 for the currently resolving Chain. Unknown requested fields return 
 
 ## Parameters
 
-- `chainc` `int`
-- `...` `any`
+- `chainc` `int` - Chain index/count to inspect; scripts commonly use 0 for the current Chain Link.
+- `...` `any` - One or more CHAININFO_* constants. Each requested field produces one return value.
 
 ## Returns
 
-- `...`
+- `...` - Values corresponding to the requested CHAININFO_* constants. CHAININFO_TARGET_CARDS returns the Chain's target Group.
 
 ## Source
 

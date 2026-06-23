@@ -9,6 +9,7 @@ Effect.SetTarget(Effect e, function targ_func) -> void
 ## Description
 
 Sets e's target callback. For activated effects, this callback performs activation legality checks and records target or operation information.
+Target callbacks normally use chk==0 only to answer legality, then use the real activation branch to select official targets with Duel.SelectTarget, record broad targets with Duel.SetTargetCard, or announce operation details with Duel.SetOperationInfo.
 
 ## How To Use It
 
@@ -36,8 +37,8 @@ Use `Duel.SelectTarget` for cards that are official targets. Use `Duel.SetOperat
 
 ## Parameters
 
-- `e` `Effect`
-- `targ_func` `function`
+- `e` `Effect` - Effect whose target callback is replaced.
+- `targ_func` `function` - Callback function stored on e.
 
 ## Source
 
