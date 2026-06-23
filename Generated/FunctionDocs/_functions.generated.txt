@@ -3840,14 +3840,14 @@ Source: D:\Programs\GitHub\ygopro-core\libduel.cpp:4953
 
 ●bool Duel.IsCanAddCounter(int player, [int countertype], [int count], [Card c])
 只提供player时，检查player是否未被禁止放置指示物。
-提供countertype、count和c时，检查player能否在c上放置该数量的countertype指示物。
+提供countertype、count和c时，检查该玩家针对该卡片目标的玩家层面放置限制。它不能替代Card.IsCanAddCounter；若需要确认卡片自身许可、表侧状态、所在位置和指示物上限，请使用Card.IsCanAddCounter。
 Parameters:
-  player: int
-  countertype: int optional
-  count: int optional
-  c: Card optional
+  player: int - Player attempting to place counters.
+  countertype: int optional - Counter type to test when the card-target overload is used.
+  count: int optional - Number of counters to test when the card-target overload is used.
+  c: Card optional - Card target passed to player-level counter-placement restriction effects.
 Returns:
-  bool
+  bool - true when the player-level placement check passes; this does not by itself prove c can hold or receive the counters.
 Source: D:\Programs\GitHub\ygopro-core\libduel.cpp:4876
 
 ●bool Duel.IsCanRemoveCounter(int player, int s, int o, int countertype, int count, int reason)

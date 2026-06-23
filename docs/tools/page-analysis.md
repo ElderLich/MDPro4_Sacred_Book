@@ -50,11 +50,11 @@ of pouring every detail into one page. The broad navigation shape should be:
 
 | Classification area | Sacred Book split |
 | --- | --- |
-| Monster Cards: Normal, Ritual, Fusion, Synchro, Xyz, Pendulum, Link, Special Summon Monsters | Keep general script foundations in [Learning Path](/learn/). [Ritual Procedure Guide](/learn/ritual-procedure), [Fusion Procedure Guide](/learn/fusion-procedure), [Synchro Procedure Guide](/learn/synchro-procedure), [Xyz Procedure Guide](/learn/xyz-procedure), [Link Procedure Guide](/learn/link-procedure), [Pendulum Procedure Guide](/learn/pendulum-procedure), and [Special Summon-only Monster Guide](/learn/special-summon-only-monsters) now cover the main procedure families. |
+| Monster Cards: Normal, Ritual, Fusion, Synchro, Xyz, Pendulum, Link, Special Summon Monsters | Keep general script foundations in [Learning Path](/learn/). [Ritual Procedure Guide](/learn/ritual-procedure), [Fusion Procedure Guide](/learn/fusion-procedure), [Synchro Procedure Guide](/learn/synchro-procedure), [Xyz Procedure Guide](/learn/xyz-procedure), [Link Procedure Guide](/learn/link-procedure), [Pendulum Procedure Guide](/learn/pendulum-procedure), [Special Summon-only Monster Guide](/learn/special-summon-only-monsters), and [Tribute Summon Materials](/learn/tribute-summon-materials) now cover the main procedure families and Tribute-material variants. |
 | Monster subtypes: Gemini, Toon, Union, Spirit | Add subtype guides only after the core procedure pages, because each subtype needs its own rule hooks, reset patterns, and local examples. |
 | Spell Cards: Normal, Continuous, Equip, Field, Quick-Play, Ritual | [Spell Card Patterns](/learn/spell-card-patterns) now covers Normal, Continuous, Quick-Play, and Ritual Spell activation shapes; [Equip Spells and Equip Cards](/learn/equip-spells), [Field Spells](/learn/field-spells), and [Ritual Procedure Guide](/learn/ritual-procedure) are focused child pages. |
 | Trap Cards: Normal, Continuous, Counter | [Trap Card Patterns](/learn/trap-card-patterns) now separates Normal Trap activation, Continuous Trap face-up effects, hand/set-turn exceptions, and Counter Trap/Spell Speed 3 patterns. |
-| Effects that affect cards | Expand [Methods for Affecting Cards](/learn/affecting-cards) into focused child pages for stat changes, immunity/negation, control changes, position changes, equip relationships, and location movement. |
+| Effects that affect cards | Expand [Methods for Affecting Cards](/learn/affecting-cards) into focused child pages for stat changes, immunity/negation, control changes, position changes, equip relationships, counters, and location movement. [Counters](/learn/counters) now covers visible card counters as one focused child page. |
 | Effects that affect players | Keep LP changes in [LP Recovery and Effect Damage](/learn/lp-recovery-and-damage), then add player restrictions, draw/hand/deck access restrictions, and player-targeted effects as separate pages. |
 
 ## Forever Pass Rule
@@ -185,6 +185,36 @@ Several details were verified directly against local MDPro3/YGOPro sources:
   (`c57774843.lua`), Lava Golem (`c102380.lua`), Flowerdino
   (`c10851853.lua`), The Winged Dragon of Ra - Immortal Phoenix
   (`c10000090.lua`), and the Drytron shared helper block in `utility.lua`.
+- Tribute Summon material behavior was checked against local `field.cpp`,
+  `playerop.cpp`, `operations.cpp`, `card.cpp`, `libcard.cpp`,
+  `libduel.cpp`, `constant.lua`, and `ygopro-scripts-define\def.lua`:
+  ordinary Tribute candidates receive `release_param=1`, cards affected by
+  `EFFECT_DOUBLE_TRIBUTE` receive `release_param=2`, and
+  `Duel.GetTributeCount` may differ from the number of cards in
+  `Duel.GetTributeGroup`. `EFFECT_TRIPLE_TRIBUTE` is marked `N/A` locally and
+  commented out in the core header, so Egyptian God Slime-style "treated as 3
+  Tributes" behavior is documented as a custom Summon/Set procedure. Local
+  examples checked include Kaiser Sea Horse (`c17444133.lua`), Double Coston
+  (`c44436472.lua`), The First Monarch (`c8522996.lua`), Egyptian God Slime
+  (`c42166000.lua`), Slifer the Sky Dragon (`c10000020.lua`), Simorgh, Bird of
+  Divinity (`c14989021.lua`), Amarylease (`c18988391.lua`), Simorgh, Bird of
+  Ancestry (`c86489182.lua`), Hardened Armed Dragon (`c68473226.lua`), and
+  Mausoleum of the Emperor (`c80921533.lua`).
+- Counter behavior was checked against local `card.cpp`, `libcard.cpp`,
+  `libduel.cpp`, `operations.cpp`, `playerop.cpp`, `processor.cpp`,
+  `effect.h`, `card.h`, `constant.lua`, and `ygopro-scripts-define\def.lua`.
+  `Card.EnableCounterPermit` creates a single-card `EFFECT_COUNTER_PERMIT`,
+  `Card.SetCounterLimit` creates `EFFECT_COUNTER_LIMIT`, `Card.AddCounter`
+  checks whether the card is still affected by the resolving reason effect,
+  `singly=true` can add only the amount that fits under a counter limit, and
+  field-wide `Duel.RemoveCounter` uses the internal counter-selection
+  processor. The local core exposes `Duel.IsCanAddCounter` as a player-level
+  placement check, not a replacement for `Card.IsCanAddCounter`. Local examples
+  checked include Defender, the Magical Knight (`c2525268.lua`), Magical
+  Abductor (`c10239627.lua`), Servant of Endymion (`c92559258.lua`), The Kaiju
+  Files (`c11163040.lua`), Arcane Barrier (`c17896384.lua`), The World Legacy
+  (`c92562411.lua`), Power of the Guardians (`c1118137.lua`), and Magical
+  Citadel of Endymion (`c39910367.lua`).
 
 ## Quality Pass Log
 
@@ -201,6 +231,8 @@ Several details were verified directly against local MDPro3/YGOPro sources:
 | 2026-06-23 | Link procedure expansion | Added [Link Procedure Guide](/learn/link-procedure) with standard Link procedures, Link Rating count rules, material pool and extra-material checks, operation order, effect-driven Link Summons, fixed-material and opponent-material examples, linked-zone APIs, material memory, and API links. |
 | 2026-06-23 | Pendulum procedure expansion | Added [Pendulum Procedure Guide](/learn/pendulum-procedure) with `EnablePendulumAttribute`, default and custom Pendulum activation patterns, Pendulum Zone effects, scale reads and updates, hand/face-up Extra Deck candidate pools, regular and extra Pendulum Summon handling, `MoveToField` Pendulum Zone placement, revive-limit Pendulum Summonable monsters, and API links. |
 | 2026-06-23 | Special Summon-only monster expansion | Added [Special Summon-only Monster Guide](/learn/special-summon-only-monsters) with revive limits, `EFFECT_SPSUMMON_PROC`, procedure target/operation patterns, Blue-Eyes Alternative reveal flow, condition-only procedures, `EFFECT_SPSUMMON_CONDITION`, opponent-field procedures, `EFFECT_SPSUMMON_COST`, effect-driven proper Summons, `nocheck`/`nolimit`, and API links. |
+| 2026-06-23 | Tribute Summon material expansion | Added [Tribute Summon Materials](/learn/tribute-summon-materials) with cards treated as multiple Tributes, `release_param`, Egyptian God Slime's local custom procedure, ordinary three-Tribute procedures, Tribute-reduction effects, Tribute limits, material memory, local examples, and API links. |
+| 2026-06-23 | Counter mechanics expansion | Added [Counters](/learn/counters) with counter permits, limits, `singly` additions, card-vs-field removal, removal replacement, counter events, lifecycle/reset behavior, local examples, API links, and a corrected learner note for `Duel.IsCanAddCounter`. |
 
 ## Intentional Rewrites
 

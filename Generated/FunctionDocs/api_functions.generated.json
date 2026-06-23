@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-06-23T21:30:08+00:00",
+    "generated_at": "2026-06-23T21:52:50+00:00",
     "workspace": "D:\\Programs\\GitHub\\MDPro3_Sacred_Book",
     "dataeditorx_data": "D:\\Programs\\GitHub\\DataEditorX\\DataEditorX\\data",
     "mdpro3_locales": "D:\\Programs\\GitHub\\MDPro3_Data\\Data\\locales",
@@ -21409,40 +21409,40 @@
           "name": "player",
           "type": "int",
           "optional": false,
-          "description": ""
+          "description": "Player attempting to place counters."
         },
         {
           "name": "countertype",
           "type": "int",
           "optional": true,
-          "description": ""
+          "description": "Counter type to test when the card-target overload is used."
         },
         {
           "name": "count",
           "type": "int",
           "optional": true,
-          "description": ""
+          "description": "Number of counters to test when the card-target overload is used."
         },
         {
           "name": "c",
           "type": "Card",
           "optional": true,
-          "description": ""
+          "description": "Card target passed to player-level counter-placement restriction effects."
         }
       ],
       "returns": [
         {
           "type": "bool",
-          "description": ""
+          "description": "true when the player-level placement check passes; this does not by itself prove c can hold or receive the counters."
         }
       ],
       "description_zh": [
         "只提供player时，检查player是否未被禁止放置指示物。",
-        "提供countertype、count和c时，检查player能否在c上放置该数量的countertype指示物。"
+        "提供countertype、count和c时，检查该玩家针对该卡片目标的玩家层面放置限制。它不能替代Card.IsCanAddCounter；若需要确认卡片自身许可、表侧状态、所在位置和指示物上限，请使用Card.IsCanAddCounter。"
       ],
       "description_en": [
         "With only player, checks whether player is not forbidden from placing counters.",
-        "With countertype, count, and c, checks whether player can place that many counters of countertype on c."
+        "With countertype, count, and c, checks player-wide counter placement restrictions for that card target. It does not replace Card.IsCanAddCounter; use the Card check when you need to confirm the card's permit, face-up state, location, and counter limit."
       ],
       "english_status": "translated_exact",
       "source_files": [

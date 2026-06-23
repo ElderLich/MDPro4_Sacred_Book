@@ -661,6 +661,8 @@ def write_vitepress_config(featured: list[dict[str, object]]) -> None:
         "            { text: 'Link Procedure', link: '/learn/link-procedure' },",
         "            { text: 'Pendulum Procedure', link: '/learn/pendulum-procedure' },",
         "            { text: 'Special Summon-only Monsters', link: '/learn/special-summon-only-monsters' },",
+        "            { text: 'Tribute Summon Materials', link: '/learn/tribute-summon-materials' },",
+        "            { text: 'Counters', link: '/learn/counters' },",
         "            { text: 'Filters and Groups', link: '/learn/filters-and-groups' },",
         "            { text: 'Moving Cards', link: '/learn/moving-cards' },",
         "            { text: 'Field Zones', link: '/learn/field-zones-and-sequences' },",
