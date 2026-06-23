@@ -52,8 +52,8 @@ of pouring every detail into one page. The broad navigation shape should be:
 | --- | --- |
 | Monster Cards: Normal, Ritual, Fusion, Synchro, Xyz, Pendulum, Link, Special Summon Monsters | Keep general script foundations in [Learning Path](/learn/), then add separate procedure guides for Ritual, Fusion, Synchro, Xyz, Link, Pendulum, and Special Summon-only monsters. |
 | Monster subtypes: Gemini, Toon, Union, Spirit | Add subtype guides only after the core procedure pages, because each subtype needs its own rule hooks, reset patterns, and local examples. |
-| Spell Cards: Normal, Continuous, Equip, Field, Quick-Play, Ritual | Keep [Equip Spells and Equip Cards](/learn/equip-spells) and the field/continuous coverage, then split Normal/Quick-Play/Ritual Spell activation patterns into smaller pages under the activation lifecycle. |
-| Trap Cards: Normal, Continuous, Counter | Add a trap guide cluster that separates activation timing, continuous trap effects, and Counter Trap/Spell Speed 3 patterns. |
+| Spell Cards: Normal, Continuous, Equip, Field, Quick-Play, Ritual | [Spell Card Patterns](/learn/spell-card-patterns) now covers Normal, Continuous, Quick-Play, and Ritual Spell activation shapes; [Equip Spells and Equip Cards](/learn/equip-spells) and [Field Spells](/learn/field-spells) remain focused child pages. |
+| Trap Cards: Normal, Continuous, Counter | [Trap Card Patterns](/learn/trap-card-patterns) now separates Normal Trap activation, Continuous Trap face-up effects, hand/set-turn exceptions, and Counter Trap/Spell Speed 3 patterns. |
 | Effects that affect cards | Expand [Methods for Affecting Cards](/learn/affecting-cards) into focused child pages for stat changes, immunity/negation, control changes, position changes, equip relationships, and location movement. |
 | Effects that affect players | Keep LP changes in [LP Recovery and Effect Damage](/learn/lp-recovery-and-damage), then add player restrictions, draw/hand/deck access restrictions, and player-targeted effects as separate pages. |
 
@@ -81,6 +81,15 @@ Several details were verified directly against local MDPro3/YGOPro sources:
   `ygopro-scripts-define\def.lua`.
 - `Duel.MoveToField` is bound in `ygopro-core\libduel.cpp`; the binding accepts
   `LOCATION_FZONE` and maps it to the Field Zone's Spell & Trap Zone slot.
+- `Effect.SetType` in `ygopro-core\libeffect.cpp` normalizes
+  `EFFECT_TYPE_ACTIVATE` into field activation handling and gives the effect
+  the normal hand, Spell & Trap Zone, and Field Zone activation range.
+- `effect::get_speed` in `ygopro-core\effect.cpp` makes Quick-Play Spell
+  activations Spell Speed 2, ordinary Trap activations Spell Speed 2, and
+  Counter Trap activations Spell Speed 3.
+- `effect::get_required_handorset_effects` in `ygopro-core\effect.cpp` checks
+  same-turn Set activation and hand-activation exceptions for Traps and
+  Quick-Play Spells.
 - `Duel.Damage` and `Duel.Recover` return the actual changed LP value and clamp
   negative input amounts to `0` in the local core binding.
 - `Auxiliary.AddEquipSpellEffect` in local `utility.lua` creates the normal
@@ -103,6 +112,7 @@ Several details were verified directly against local MDPro3/YGOPro sources:
 | 2026-06-23 | Activation lifecycle: activated effects, activation legality, and condition/cost/target/operation callbacks | Expanded [Conditions, Costs, Activation Procedures, and Resolution](/learn/effect-callbacks), [Activation Legality](/learn/activation-legality), [Activated Effects](/learn/activated-effects), and [Cost, Target, And Operation Lifecycle](/learn/cost-target-operation-lifecycle) with event-condition signatures, Damage Step legality, Quick Effect negation checks, activation restrictions, Red-Eyes Fusion and Cyber Dragon Infinity examples, and API links for the referenced functions. |
 | 2026-06-23 | Foundation forever pass: effect objects, filters/groups, movement, continuous effects, stat modifiers, and LP effects | Expanded [Creation, building, and registration of an effect object](/learn/effect-object), [Filters, Card Objects, and Group Objects](/learn/filters-and-groups), [Functions that move cards across locations](/learn/moving-cards), [Effects That Apply Continuously](/learn/continuous-effects), [Continuous stat modifiers](/learn/continuous-stat-modifiers), and [LP Recovery and Effect Damage](/learn/lp-recovery-and-damage) with setter-shape maps, target-range modes, property flags, subgroup selection, movement routing, local dynamic value examples, pure LP activation checks, stepped LP examples, and API links. |
 | 2026-06-23 | Equip and Field Spell strict pass | Expanded [Equip Spells and Equip Cards](/learn/equip-spells) with activation-shape differences, core equip housekeeping, non-applying equip modifiers, lost-target triggers, and summon-then-equip notes. Added [Field Spells](/learn/field-spells) as a focused local-source guide because the Field Spell downloaded page is not present in the current archive folder. |
+| 2026-06-23 | Spell and Trap classification expansion | Added [Spell Card Patterns](/learn/spell-card-patterns) for Normal, Continuous, Quick-Play, and Ritual Spell activation shapes, and [Trap Card Patterns](/learn/trap-card-patterns) for Normal, Continuous, and Counter Trap scripting. Local examples include Pot of Greed, Monster Reborn, Mystical Space Typhoon, Transonic Bird, Infinite Impermanence, Trap Trick, Cyberdark Invasion, and Chaos Trap Hole. |
 
 ## Intentional Rewrites
 

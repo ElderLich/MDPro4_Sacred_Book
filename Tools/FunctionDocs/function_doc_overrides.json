@@ -10848,7 +10848,81 @@
       "summary_en": [
         "Checks whether c has an activation effect that can currently be activated.",
         "If neglect_con is true, condition checks are skipped. If neglect_cost is true, cost checks are skipped.",
-        "When copy_info is true, the returned values include the triggering event information: eg, ep, ev, re, r, and rp."
+        "When copy_info is true and the matching activation is not a free-chain activation, the returned values include the triggering event information: eg, ep, ev, re, r, and rp.",
+        "Returns no Lua values when no activation effect is currently usable, so local scripts usually compare the first result with nil."
+      ],
+      "summary_zh": [
+        "检查c是否有当前可以发动的卡片发动效果。",
+        "neglect_con为true时跳过Condition检查；neglect_cost为true时跳过Cost检查。",
+        "copy_info为true且匹配的发动效果不是自由时点发动时，返回值会包含触发时点信息：eg、ep、ev、re、r、rp。",
+        "没有可用发动效果时不返回Lua值，因此本地脚本通常检查第一个返回值是否不为nil。"
+      ],
+      "core_summary_en": [
+        "Checks whether c has a usable activation effect."
+      ],
+      "core_summary_zh": [
+        "检查c是否有可用的发动效果。"
+      ],
+      "params": [
+        {
+          "name": "c",
+          "type": "Card"
+        },
+        {
+          "name": "neglect_con",
+          "type": "bool",
+          "description": "true to skip the activation effect's condition check.",
+          "description_zh": "为true时跳过该发动效果的Condition检查。"
+        },
+        {
+          "name": "neglect_cost",
+          "type": "bool",
+          "description": "true to skip the activation effect's cost check.",
+          "description_zh": "为true时跳过该发动效果的Cost检查。"
+        },
+        {
+          "name": "copy_info",
+          "type": "bool",
+          "description": "true to copy triggering-event information for non-free-chain activations.",
+          "description_zh": "为true时，对非自由时点发动复制触发时点信息。"
+        }
+      ],
+      "returns": [
+        {
+          "type": "Effect|nil",
+          "description": "The usable activation effect, or nil/no value if none is currently usable.",
+          "description_zh": "可用的发动效果；当前没有可用发动效果时为nil/不返回值。"
+        },
+        {
+          "type": "Group|nil",
+          "description": "eg when copy_info returns event data.",
+          "description_zh": "copy_info返回事件信息时的eg。"
+        },
+        {
+          "type": "int|nil",
+          "description": "ep when copy_info returns event data.",
+          "description_zh": "copy_info返回事件信息时的ep。"
+        },
+        {
+          "type": "int|nil",
+          "description": "ev when copy_info returns event data.",
+          "description_zh": "copy_info返回事件信息时的ev。"
+        },
+        {
+          "type": "Effect|nil",
+          "description": "re when copy_info returns event data.",
+          "description_zh": "copy_info返回事件信息时的re。"
+        },
+        {
+          "type": "int|nil",
+          "description": "r when copy_info returns event data.",
+          "description_zh": "copy_info返回事件信息时的r。"
+        },
+        {
+          "type": "int|nil",
+          "description": "rp when copy_info returns event data.",
+          "description_zh": "copy_info返回事件信息时的rp。"
+        }
       ]
     },
     "Card.CheckEquipTarget": {
@@ -22993,6 +23067,42 @@
       ],
       "returns": []
     },
+    "Effect.SetHintTiming": {
+      "summary_en": [
+        "Sets when the client should offer or highlight e for the handler's controller and, optionally, the opponent.",
+        "This controls prompting and display timing only; it does not replace activation legality checks in the effect's condition, cost, or target callbacks."
+      ],
+      "summary_zh": [
+        "设置客户端应在何时向处理者的控制者提示或高亮e，也可以单独设置对手侧提示。",
+        "该函数只控制提示与显示时机；不能替代Condition、Cost或Target回调中的发动合法性检查。"
+      ],
+      "core_summary_en": [
+        "Sets hint timing for e."
+      ],
+      "core_summary_zh": [
+        "设置e的提示时机。"
+      ],
+      "params": [
+        {
+          "name": "e",
+          "type": "Effect"
+        },
+        {
+          "name": "s_time",
+          "type": "int",
+          "description": "Hint timing mask for the handler's controller.",
+          "description_zh": "处理者控制者侧的提示时机掩码。"
+        },
+        {
+          "name": "o_time",
+          "type": "int",
+          "optional": true,
+          "description": "Hint timing mask for the opponent. Defaults to s_time.",
+          "description_zh": "对手侧的提示时机掩码；默认等于s_time。"
+        }
+      ],
+      "returns": []
+    },
     "Effect.SetCategory": {
       "summary_en": [
         "Sets e's operation category flags, such as CATEGORY_DESTROY, CATEGORY_TOHAND, or CATEGORY_SPECIAL_SUMMON.",
@@ -23157,11 +23267,6 @@
         }
       ],
       "returns": []
-    },
-    "Effect.SetHintTiming": {
-      "summary_en": [
-        "Sets when the client should offer or highlight e for the handler's controller and, optionally, the opponent."
-      ]
     },
     "Effect.SetLabel": {
       "summary_en": [

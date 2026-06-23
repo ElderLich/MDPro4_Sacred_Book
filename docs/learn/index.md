@@ -21,6 +21,14 @@ back into the generated API reference and live card examples.
     <strong>Activated effects</strong>
     <span>How Chain Links move from legal activation to later resolution.</span>
   </a>
+  <a class="sacred-card" href="spell-card-patterns">
+    <strong>Spell Cards</strong>
+    <span>Normal, Continuous, Quick-Play, and Ritual Spell activation shapes.</span>
+  </a>
+  <a class="sacred-card" href="trap-card-patterns">
+    <strong>Trap Cards</strong>
+    <span>Normal, Continuous, and Counter Trap timing patterns.</span>
+  </a>
   <a class="sacred-card" href="filters-and-groups">
     <strong>Filters and Groups</strong>
     <span>How scripts find, select, count, and iterate cards.</span>
@@ -79,20 +87,22 @@ back into the generated API reference and live card examples.
 4. Write callbacks with [Conditions, costs, activation procedures, and resolution](effect-callbacks).
 5. Understand Chain Links with [Activated effects](activated-effects).
 6. Check legality with [Activation legality](activation-legality).
-7. Work with cards and groups through [Filters, Card objects, and Group objects](filters-and-groups).
-8. Move cards correctly with [Functions that move cards across locations](moving-cards).
-9. Place cards and read zones with [Field zones and sequences](field-zones-and-sequences).
-10. Script Field Spell patterns with [Field Spells](field-spells).
-11. Target cards correctly with [Targeting flow](targeting-flow).
-12. Resolve activated effects with [Cost, target, and operation lifecycle](cost-target-operation-lifecycle).
-13. Read always-on behavior through [Continuous effects](continuous-effects).
-14. Build visible modifiers with [Continuous stat modifiers](continuous-stat-modifiers).
-15. Script Equip Cards with [Equip Spells and Equip Cards](equip-spells).
-16. Script LP changes with [LP Recovery and Effect Damage](lp-recovery-and-damage).
-17. Track temporary script memory with [Flag effects](flag-effects).
-18. Limit effect usage with [Count limits and once per turn](count-limits).
-19. Apply outcomes through [Methods for affecting cards](affecting-cards).
-20. Use card families through [Archetypes and set codes](archetypes-and-setcodes).
+7. Split Spell activations with [Spell Card Patterns](spell-card-patterns).
+8. Split Trap timing with [Trap Card Patterns](trap-card-patterns).
+9. Work with cards and groups through [Filters, Card objects, and Group objects](filters-and-groups).
+10. Move cards correctly with [Functions that move cards across locations](moving-cards).
+11. Place cards and read zones with [Field zones and sequences](field-zones-and-sequences).
+12. Script Field Spell patterns with [Field Spells](field-spells).
+13. Target cards correctly with [Targeting flow](targeting-flow).
+14. Resolve activated effects with [Cost, target, and operation lifecycle](cost-target-operation-lifecycle).
+15. Read always-on behavior through [Continuous effects](continuous-effects).
+16. Build visible modifiers with [Continuous stat modifiers](continuous-stat-modifiers).
+17. Script Equip Cards with [Equip Spells and Equip Cards](equip-spells).
+18. Script LP changes with [LP Recovery and Effect Damage](lp-recovery-and-damage).
+19. Track temporary script memory with [Flag effects](flag-effects).
+20. Limit effect usage with [Count limits and once per turn](count-limits).
+21. Apply outcomes through [Methods for affecting cards](affecting-cards).
+22. Use card families through [Archetypes and set codes](archetypes-and-setcodes).
 
 ## Tutorial Equivalents
 

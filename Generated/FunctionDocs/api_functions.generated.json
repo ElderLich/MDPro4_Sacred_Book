@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-06-23T18:11:37+00:00",
+    "generated_at": "2026-06-23T18:31:28+00:00",
     "workspace": "D:\\Programs\\GitHub\\MDPro3_Sacred_Book",
     "dataeditorx_data": "D:\\Programs\\GitHub\\DataEditorX\\DataEditorX\\data",
     "mdpro3_locales": "D:\\Programs\\GitHub\\MDPro3_Data\\Data\\locales",
@@ -337,60 +337,72 @@
           "name": "neglect_con",
           "type": "bool",
           "optional": false,
-          "description": ""
+          "description": "true to skip the activation effect's condition check.",
+          "description_zh": "为true时跳过该发动效果的Condition检查。"
         },
         {
           "name": "neglect_cost",
           "type": "bool",
           "optional": false,
-          "description": ""
+          "description": "true to skip the activation effect's cost check.",
+          "description_zh": "为true时跳过该发动效果的Cost检查。"
         },
         {
           "name": "copy_info",
           "type": "bool",
           "optional": false,
-          "description": ""
+          "description": "true to copy triggering-event information for non-free-chain activations.",
+          "description_zh": "为true时，对非自由时点发动复制触发时点信息。"
         }
       ],
       "returns": [
         {
-          "type": "Effect",
-          "description": ""
+          "type": "Effect|nil",
+          "description": "The usable activation effect, or nil/no value if none is currently usable.",
+          "description_zh": "可用的发动效果；当前没有可用发动效果时为nil/不返回值。"
         },
         {
           "type": "Group|nil",
-          "description": ""
+          "description": "eg when copy_info returns event data.",
+          "description_zh": "copy_info返回事件信息时的eg。"
         },
         {
           "type": "int|nil",
-          "description": ""
+          "description": "ep when copy_info returns event data.",
+          "description_zh": "copy_info返回事件信息时的ep。"
         },
         {
           "type": "int|nil",
-          "description": ""
+          "description": "ev when copy_info returns event data.",
+          "description_zh": "copy_info返回事件信息时的ev。"
         },
         {
           "type": "Effect|nil",
-          "description": ""
+          "description": "re when copy_info returns event data.",
+          "description_zh": "copy_info返回事件信息时的re。"
         },
         {
           "type": "int|nil",
-          "description": ""
+          "description": "r when copy_info returns event data.",
+          "description_zh": "copy_info返回事件信息时的r。"
         },
         {
           "type": "int|nil",
-          "description": ""
+          "description": "rp when copy_info returns event data.",
+          "description_zh": "copy_info返回事件信息时的rp。"
         }
       ],
       "description_zh": [
-        "返回c的可以发动时机正确的“卡的发动”的效果，neglect_con=true则无视发动条件，neglect_cost=true则无视发动cost",
-        "copy_info=false或者自由时点的效果则只返回这个效果 e",
-        "否则还返回这个效果的触发时点的信息 e,eg,ep,ev,re,r,rp"
+        "检查c是否有当前可以发动的卡片发动效果。",
+        "neglect_con为true时跳过Condition检查；neglect_cost为true时跳过Cost检查。",
+        "copy_info为true且匹配的发动效果不是自由时点发动时，返回值会包含触发时点信息：eg、ep、ev、re、r、rp。",
+        "没有可用发动效果时不返回Lua值，因此本地脚本通常检查第一个返回值是否不为nil。"
       ],
       "description_en": [
         "Checks whether c has an activation effect that can currently be activated.",
         "If neglect_con is true, condition checks are skipped. If neglect_cost is true, cost checks are skipped.",
-        "When copy_info is true, the returned values include the triggering event information: eg, ep, ev, re, r, and rp."
+        "When copy_info is true and the matching activation is not a free-chain activation, the returned values include the triggering event information: eg, ep, ev, re, r, and rp.",
+        "Returns no Lua values when no activation effect is currently usable, so local scripts usually compare the first result with nil."
       ],
       "english_status": "translated_exact",
       "source_files": [
@@ -407,7 +419,9 @@
       ],
       "aliases": [],
       "tags": [
-        "core-binding"
+        "core-binding",
+        "core-doc-override",
+        "manual-zh-doc"
       ],
       "core_binding": true,
       "core_handler": "card_check_activate_effect"
@@ -29939,26 +29953,25 @@
           "name": "s_time",
           "type": "int",
           "optional": false,
-          "description": ""
+          "description": "Hint timing mask for the handler's controller.",
+          "description_zh": "处理者控制者侧的提示时机掩码。"
         },
         {
           "name": "o_time",
           "type": "int",
           "optional": true,
-          "description": "default: s_time"
+          "description": "Hint timing mask for the opponent. Defaults to s_time.",
+          "description_zh": "对手侧的提示时机掩码；默认等于s_time。"
         }
       ],
-      "returns": [
-        {
-          "type": "nil",
-          "description": ""
-        }
-      ],
+      "returns": [],
       "description_zh": [
-        "设置提示时点，第二个和第三个参数分别表示 自己 和对方的回合"
+        "设置客户端应在何时向处理者的控制者提示或高亮e，也可以单独设置对手侧提示。",
+        "该函数只控制提示与显示时机；不能替代Condition、Cost或Target回调中的发动合法性检查。"
       ],
       "description_en": [
-        "Sets when the client should offer or highlight e for the handler's controller and, optionally, the opponent."
+        "Sets when the client should offer or highlight e for the handler's controller and, optionally, the opponent.",
+        "This controls prompting and display timing only; it does not replace activation legality checks in the effect's condition, cost, or target callbacks."
       ],
       "english_status": "translated_exact",
       "source_files": [
@@ -29975,7 +29988,9 @@
       ],
       "aliases": [],
       "tags": [
-        "core-binding"
+        "core-binding",
+        "core-doc-override",
+        "manual-zh-doc"
       ],
       "core_binding": true,
       "core_handler": "effect_set_hint_timing"

@@ -118,23 +118,24 @@ Parameters:
   cancel: bool optional - default: true
 Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3651
 
-●Effect,Group|nil,int|nil,int|nil,Effect|nil,int|nil,int|nil Card.CheckActivateEffect(Card c, bool neglect_con, bool neglect_cost, bool copy_info)
-返回c的可以发动时机正确的“卡的发动”的效果，neglect_con=true则无视发动条件，neglect_cost=true则无视发动cost
-copy_info=false或者自由时点的效果则只返回这个效果 e
-否则还返回这个效果的触发时点的信息 e,eg,ep,ev,re,r,rp
+●Effect|nil,Group|nil,int|nil,int|nil,Effect|nil,int|nil,int|nil Card.CheckActivateEffect(Card c, bool neglect_con, bool neglect_cost, bool copy_info)
+检查c是否有当前可以发动的卡片发动效果。
+neglect_con为true时跳过Condition检查；neglect_cost为true时跳过Cost检查。
+copy_info为true且匹配的发动效果不是自由时点发动时，返回值会包含触发时点信息：eg、ep、ev、re、r、rp。
+没有可用发动效果时不返回Lua值，因此本地脚本通常检查第一个返回值是否不为nil。
 Parameters:
   c: Card
-  neglect_con: bool
-  neglect_cost: bool
-  copy_info: bool
+  neglect_con: bool - 为true时跳过该发动效果的Condition检查。
+  neglect_cost: bool - 为true时跳过该发动效果的Cost检查。
+  copy_info: bool - 为true时，对非自由时点发动复制触发时点信息。
 Returns:
-  Effect
-  Group|nil
-  int|nil
-  int|nil
-  Effect|nil
-  int|nil
-  int|nil
+  Effect|nil - 可用的发动效果；当前没有可用发动效果时为nil/不返回值。
+  Group|nil - copy_info返回事件信息时的eg。
+  int|nil - copy_info返回事件信息时的ep。
+  int|nil - copy_info返回事件信息时的ev。
+  Effect|nil - copy_info返回事件信息时的re。
+  int|nil - copy_info返回事件信息时的r。
+  int|nil - copy_info返回事件信息时的rp。
 Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3545
 
 ●bool Card.CheckEquipTarget(Card c1, Card c2)
@@ -5298,11 +5299,12 @@ Parameters:
 Source: D:\Programs\GitHub\ygopro-core\libeffect.cpp:612
 
 ●void Effect.SetHintTiming(Effect e, int s_time, [int o_time])
-设置提示时点，第二个和第三个参数分别表示 自己 和对方的回合
+设置客户端应在何时向处理者的控制者提示或高亮e，也可以单独设置对手侧提示。
+该函数只控制提示与显示时机；不能替代Condition、Cost或Target回调中的发动合法性检查。
 Parameters:
   e: Effect
-  s_time: int
-  o_time: int optional - default: s_time
+  s_time: int - 处理者控制者侧的提示时机掩码。
+  o_time: int optional - 对手侧的提示时机掩码；默认等于s_time。
 Source: D:\Programs\GitHub\ygopro-core\libeffect.cpp:624
 
 ●void Effect.SetLabel(Effect e, ... int)

@@ -188,6 +188,9 @@ For Equip Spells, Field Spells, and Continuous Spells/Traps, the activation
 effect may only place the card on the field; the card's continuous effects are
 registered as separate effects on the same handler.
 
+For the card-type differences, continue into [Spell Card Patterns](spell-card-patterns)
+and [Trap Card Patterns](trap-card-patterns).
+
 ## Quick Checklist
 
 Before an activated effect is finished, check:
@@ -202,6 +205,8 @@ Before an activated effect is finished, check:
 Related lessons:
 
 - [Activation legality](activation-legality)
+- [Spell Card Patterns](spell-card-patterns)
+- [Trap Card Patterns](trap-card-patterns)
 - [Targeting flow](targeting-flow)
 - [Cost, target, and operation lifecycle](cost-target-operation-lifecycle)
 - [EFFECT_TYPE constants and templates](effect-types)

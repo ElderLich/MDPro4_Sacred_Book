@@ -41,6 +41,8 @@ Use this family when card text says the player activates an effect, chooses to
 do something, or responds to timing.
 
 See [Activated effects](activated-effects) for the full Chain Link lifecycle.
+See [Spell Card Patterns](spell-card-patterns) and [Trap Card Patterns](trap-card-patterns)
+for how card type changes the activation speed and follow-up effects.
 
 For Continuous Spells/Traps or Field Spells whose card activation does nothing
 special, the activation effect can be very small.
