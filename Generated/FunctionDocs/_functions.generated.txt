@@ -2405,11 +2405,13 @@ Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3412
 
 ●bool Card.IsXyzSummonable(Card c, [Group|nil materials], [int minc], [int maxc])
 检查超量怪兽c能否由当前原因玩家用可选素材组和min/max限制进行超量召唤。
+通常在效果的target和operation分支中，于调用Duel.XyzSummon前使用。minc和maxc省略时默认为0，由已登记手续自身的数量规则决定。
+核心在伤害步骤中会拒绝这个检查。
 Parameters:
-  c: Card
-  materials: Group|nil optional
-  minc: int optional
-  maxc: int optional
+  c: Card - 要检查的超量怪兽。
+  materials: Group|nil optional - 效果提供的可选素材范围或指定素材Group。
+  minc: int optional - 可选的素材数量下限覆盖值。默认为0。
+  maxc: int optional - 可选的素材数量上限覆盖值。默认为0。
 Returns:
   bool
 Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3577
@@ -3058,17 +3060,18 @@ Returns:
   bool
 Source: D:\Programs\GitHub\ygopro-core\libduel.cpp:4996
 
-●bool Duel.CheckXyzMaterial(Card c, [function|nil f], int lv, int min, int max, [Group|nil mg])
-检查scard是否存在合法的超量素材选择，使用等级lv、素材数量范围、可选筛选函数和可选素材Group。
+●bool Duel.CheckXyzMaterial(Card scard, function|nil f, int lv, int minc, int maxc, [Group|nil materials])
+检查scard是否存在合法的超量素材选择，使用素材超量等级lv、素材数量范围、可选筛选函数和可选素材Group。
+这是超量手续target使用的布尔检查；不会选择或移动卡。
 Parameters:
-  c: Card
-  f: function|nil optional
-  lv: int
-  min: int
-  max: int
-  mg: Group|nil optional
+  scard: Card - 要检查素材手续的超量怪兽。
+  f: function|nil - 可选的单张素材筛选函数。
+  lv: int - 要求的素材超量等级。
+  minc: int - 素材数量下限。
+  maxc: int - 素材数量上限。
+  materials: Group|nil optional - 可选的候选素材Group。省略时，手续代码通常提供玩家怪兽区域的Group。
 Returns:
-  bool
+  bool - 存在合法超量素材选择时为true。
 Source: D:\Programs\GitHub\ygopro-core\libduel.cpp:5012
 
 ●void Duel.ClearOperationInfo(int ct)
@@ -4226,11 +4229,13 @@ Parameters:
 Source: D:\Programs\GitHub\ygopro-core\libduel.cpp:4932
 
 ●void Duel.Overlay(Card c, Card|Group ocard, [bool adjust])
-把ocard作为c的叠放卡叠放
+把ocard叠放在c下方作为超量素材。
+这会把一张卡或一个Group移动到c下方；它本身不会执行正规超量召唤，也不会把怪兽标记为已完成正规手续。
+默认会在叠放后调整场地。只有在更大的手续稍后会统一调整时，才传入adjust=false。
 Parameters:
-  c: Card
-  ocard: Card|Group
-  adjust: bool optional - default: true
+  c: Card - 接收超量素材的卡。
+  ocard: Card|Group - 要叠放到c下方的卡或Group。
+  adjust: bool optional - 叠放后是否调整场地。默认为true。
 Source: D:\Programs\GitHub\ygopro-core\libduel.cpp:5014
 
 ●void Duel.PayLPCost(int player, int cost, [bool must_pay])
@@ -4588,18 +4593,19 @@ Returns:
   Group
 Source: D:\Programs\GitHub\ygopro-core\libduel.cpp:4995
 
-●Group Duel.SelectXyzMaterial(int player, Card c, [function|nil f], int lv, int min, int max, [Group|nil mg])
-让player为scard选择等级lv和素材数量范围对应的超量素材，可带可选筛选函数和素材Group。
+●Group Duel.SelectXyzMaterial(int player, Card scard, function|nil f, int lv, int minc, int maxc, [Group|nil materials])
+让player为scard选择素材超量等级lv和素材数量范围对应的超量素材，可带可选筛选函数和素材Group。
+只应在对应的Duel.CheckXyzMaterial检查成功后使用。它会让脚本等待选择并返回选择的Group。
 Parameters:
-  player: int
-  c: Card
-  f: function|nil optional
-  lv: int
-  min: int
-  max: int
-  mg: Group|nil optional
+  player: int - 选择超量素材的玩家。
+  scard: Card - 正在选择素材的超量怪兽。
+  f: function|nil - 可选的单张素材筛选函数。
+  lv: int - 要求的素材超量等级。
+  minc: int - 素材数量下限。
+  maxc: int - 素材数量上限。
+  materials: Group|nil optional - 可选的候选素材Group。
 Returns:
-  Group
+  Group - 被选择的超量素材Group。
 Source: D:\Programs\GitHub\ygopro-core\libduel.cpp:5013
 
 ●bool Duel.SelectYesNo(int player, int desc)
@@ -4957,12 +4963,14 @@ Source: D:\Programs\GitHub\ygopro-core\libduel.cpp:4899
 
 ●void Duel.XyzSummon(int player, Card c, [Group|nil materials], [int minc], [int maxc])
 为player和c执行规则超量召唤，可使用可选素材组和min/max限制。
+通常在效果operation中先检查Card.IsXyzSummonable，再调用此函数。被选择超量怪兽已登记的手续仍负责最终素材合法性和叠放处理。
+核心在伤害步骤中会拒绝调用；处理召唤时会让脚本等待，且没有Lua返回值。
 Parameters:
-  player: int
-  c: Card
-  materials: Group|nil optional
-  minc: int optional
-  maxc: int optional
+  player: int - 进行超量召唤的玩家。
+  c: Card - 要召唤的超量怪兽。
+  materials: Group|nil optional - 效果提供的可选素材Group。
+  minc: int optional - 可选的素材数量下限覆盖值。默认为0。
+  maxc: int optional - 可选的素材数量上限覆盖值。默认为0。
 Source: D:\Programs\GitHub\ygopro-core\libduel.cpp:4868
 
 ========== Effect ==========
@@ -8376,31 +8384,35 @@ Parameters:
   f2: function|nil optional
 Source: Utilities/procedure.lua:123
 
-●void Auxiliary.AddXyzProcedure(Card c, [function|nil f], int lv, int ct, [function alterf], [string alterdesc], [int maxct], [function alterop])
-Xyz monster, lv k*n
+●void Auxiliary.AddXyzProcedure(Card c, function|nil f, int lv, int ct, [function|nil alterf], [int alterdesc], [int maxct], [function|nil alterop])
+给c登记标准超量召唤手续。
+f筛选素材，lv是要求的素材超量等级，ct是素材下限，maxct可限制素材上限。
+该辅助函数会建立额外卡组中的EFFECT_SPSUMMON_PROC并设为SUMMON_TYPE_XYZ，使用核心超量素材辅助函数检查和选择素材，用Card.SetMaterial记录素材，并用Duel.Overlay叠放为超量素材。
+alterf、alterdesc和alterop用于定义可选的单卡替代超量召唤路线。
 Parameters:
-  c: Card
-  f: function|nil optional
-  lv: int
-  ct: int
-  alterf: function optional
-  alterdesc: string optional
-  maxct: int optional
-  alterop: function optional
+  c: Card - 要登记手续的超量怪兽。
+  f: function|nil - 可选的单张素材筛选函数。nil表示除通常超量检查外没有额外素材限制。
+  lv: int - 要求的素材超量等级。
+  ct: int - 素材数量下限。
+  alterf: function|nil optional - 可选的单卡替代超量召唤路线筛选函数。
+  alterdesc: int optional - 可以选择替代路线时显示的提示文本id。
+  maxct: int optional - 素材数量上限。省略时默认为ct。
+  alterop: function|nil optional - 可选的替代路线检查/应用回调。本地辅助函数在合法性检查时以chk==0调用，选择后以chk==1调用。
 Source: Utilities/procedure.lua:485
 
 ●void Auxiliary.AddXyzProcedureLevelFree(Card c, function|nil f, function|nil gf, int minc, int maxc, [function|nil alterf], [int alterdesc], [function|nil alterop])
 给c登记不检查等级的超量召唤手续。
-该辅助函数使用f、gf、minc、maxc以及可选的替代召唤设置，且没有显式返回值。
+f筛选每张候选素材，gf可以检查被选择的整组素材，例如要求所有素材具有相同阶级。
+本地辅助函数仍会检查Card.IsCanBeXyzMaterial、区域可用性和EFFECT_XYZ_MIN_COUNT，但procedure.lua注明此路线不支持EFFECT_DOUBLE_XMATERIAL。
 Parameters:
-  c: Card
-  f: function|nil
-  gf: function|nil
-  minc: int
-  maxc: int
-  alterf: function|nil optional
-  alterdesc: int optional
-  alterop: function|nil optional
+  c: Card - 要登记不检查等级手续的超量怪兽。
+  f: function|nil - 可选的单张素材筛选函数。
+  gf: function|nil - 可选的整组素材检查函数，会对选择后的素材Group调用。
+  minc: int - 素材数量下限。
+  maxc: int - 素材数量上限。
+  alterf: function|nil optional - 可选的单卡替代超量召唤路线筛选函数。
+  alterdesc: int optional - 可以选择替代路线时显示的提示文本id。
+  alterop: function|nil optional - 可选的替代路线检查/应用回调。
 Source: Utilities/procedure.lua:700
 
 ●bool Auxiliary.AssaultModeLimit(Effect e, Effect se, int sp, int st)

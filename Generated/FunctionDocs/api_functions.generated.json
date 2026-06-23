@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-06-23T19:36:00+00:00",
+    "generated_at": "2026-06-23T19:52:15+00:00",
     "workspace": "D:\\Programs\\GitHub\\MDPro3_Sacred_Book",
     "dataeditorx_data": "D:\\Programs\\GitHub\\DataEditorX\\DataEditorX\\data",
     "mdpro3_locales": "D:\\Programs\\GitHub\\MDPro3_Data\\Data\\locales",
@@ -13028,25 +13028,29 @@
           "name": "c",
           "type": "Card",
           "optional": false,
-          "description": ""
+          "description": "Xyz Monster being tested.",
+          "description_zh": "要检查的超量怪兽。"
         },
         {
           "name": "materials",
           "type": "Group|nil",
           "optional": true,
-          "description": ""
+          "description": "Optional material pool or exact material group supplied by the effect.",
+          "description_zh": "效果提供的可选素材范围或指定素材Group。"
         },
         {
           "name": "minc",
           "type": "int",
           "optional": true,
-          "description": ""
+          "description": "Optional minimum material count override. Defaults to 0.",
+          "description_zh": "可选的素材数量下限覆盖值。默认为0。"
         },
         {
           "name": "maxc",
           "type": "int",
           "optional": true,
-          "description": ""
+          "description": "Optional maximum material count override. Defaults to 0.",
+          "description_zh": "可选的素材数量上限覆盖值。默认为0。"
         }
       ],
       "returns": [
@@ -13056,10 +13060,14 @@
         }
       ],
       "description_zh": [
-        "检查超量怪兽c能否由当前原因玩家用可选素材组和min/max限制进行超量召唤。"
+        "检查超量怪兽c能否由当前原因玩家用可选素材组和min/max限制进行超量召唤。",
+        "通常在效果的target和operation分支中，于调用Duel.XyzSummon前使用。minc和maxc省略时默认为0，由已登记手续自身的数量规则决定。",
+        "核心在伤害步骤中会拒绝这个检查。"
       ],
       "description_en": [
-        "Checks whether Xyz Monster c can be Xyz Summoned by the current reason player with an optional material group and min/max constraints."
+        "Checks whether Xyz Monster c can be Xyz Summoned by the current reason player with an optional material group and min/max constraints.",
+        "Use this in effect target and operation branches before calling Duel.XyzSummon. minc and maxc default to 0 when omitted, leaving the registered procedure's own count rules in control.",
+        "The core rejects this check during the Damage Step."
       ],
       "english_status": "translated_exact",
       "source_files": [
@@ -17008,53 +17016,62 @@
       "short_name": "CheckXyzMaterial",
       "params": [
         {
-          "name": "c",
+          "name": "scard",
           "type": "Card",
           "optional": false,
-          "description": ""
+          "description": "Xyz Monster whose material procedure is checked.",
+          "description_zh": "要检查素材手续的超量怪兽。"
         },
         {
           "name": "f",
           "type": "function|nil",
-          "optional": true,
-          "description": ""
+          "optional": false,
+          "description": "Optional per-material filter.",
+          "description_zh": "可选的单张素材筛选函数。"
         },
         {
           "name": "lv",
           "type": "int",
           "optional": false,
-          "description": ""
+          "description": "Required material Xyz Level.",
+          "description_zh": "要求的素材超量等级。"
         },
         {
-          "name": "min",
+          "name": "minc",
           "type": "int",
           "optional": false,
-          "description": ""
+          "description": "Minimum material count.",
+          "description_zh": "素材数量下限。"
         },
         {
-          "name": "max",
+          "name": "maxc",
           "type": "int",
           "optional": false,
-          "description": ""
+          "description": "Maximum material count.",
+          "description_zh": "素材数量上限。"
         },
         {
-          "name": "mg",
+          "name": "materials",
           "type": "Group|nil",
           "optional": true,
-          "description": ""
+          "description": "Optional candidate material group. When omitted, procedure code usually supplies the player's Monster Zone group.",
+          "description_zh": "可选的候选素材Group。省略时，手续代码通常提供玩家怪兽区域的Group。"
         }
       ],
       "returns": [
         {
           "type": "bool",
-          "description": ""
+          "description": "true if a legal Xyz Material selection exists.",
+          "description_zh": "存在合法超量素材选择时为true。"
         }
       ],
       "description_zh": [
-        "检查scard是否存在合法的超量素材选择，使用等级lv、素材数量范围、可选筛选函数和可选素材Group。"
+        "检查scard是否存在合法的超量素材选择，使用素材超量等级lv、素材数量范围、可选筛选函数和可选素材Group。",
+        "这是超量手续target使用的布尔检查；不会选择或移动卡。"
       ],
       "description_en": [
-        "Checks whether scard has a legal Xyz Material selection for Level lv, material count range, optional filter, and optional material group."
+        "Checks whether scard has a legal Xyz Material selection for material Xyz Level lv, material count range, optional filter, and optional material group.",
+        "This is the boolean check used by Xyz procedure targets. It does not select or move cards."
       ],
       "english_status": "translated_exact",
       "source_files": [
@@ -17072,6 +17089,7 @@
       "aliases": [],
       "tags": [
         "core-binding",
+        "core-doc-override",
         "manual-zh-doc"
       ],
       "core_binding": true,
@@ -23634,32 +23652,33 @@
           "name": "c",
           "type": "Card",
           "optional": false,
-          "description": ""
+          "description": "Card that will receive the Xyz Materials.",
+          "description_zh": "接收超量素材的卡。"
         },
         {
           "name": "ocard",
           "type": "Card|Group",
           "optional": false,
-          "description": ""
+          "description": "Card or Group to overlay under c.",
+          "description_zh": "要叠放到c下方的卡或Group。"
         },
         {
           "name": "adjust",
           "type": "bool",
           "optional": true,
-          "description": "default: true"
+          "description": "Whether to adjust the field after overlaying. Defaults to true.",
+          "description_zh": "叠放后是否调整场地。默认为true。"
         }
       ],
-      "returns": [
-        {
-          "type": "nil",
-          "description": ""
-        }
-      ],
+      "returns": [],
       "description_zh": [
-        "把ocard作为c的叠放卡叠放"
+        "把ocard叠放在c下方作为超量素材。",
+        "这会把一张卡或一个Group移动到c下方；它本身不会执行正规超量召唤，也不会把怪兽标记为已完成正规手续。",
+        "默认会在叠放后调整场地。只有在更大的手续稍后会统一调整时，才传入adjust=false。"
       ],
       "description_en": [
         "Overlays ocard under c as Xyz Material.",
+        "This moves a Card or Group under c; it does not by itself perform a proper Xyz Summon or mark the monster's procedure complete.",
         "By default the field is adjusted after the overlay. Pass adjust=false only when a larger procedure will adjust afterward."
       ],
       "english_status": "translated_exact",
@@ -23677,7 +23696,9 @@
       ],
       "aliases": [],
       "tags": [
-        "core-binding"
+        "core-binding",
+        "core-doc-override",
+        "manual-zh-doc"
       ],
       "core_binding": true,
       "core_handler": "duel_overlay"
@@ -25748,56 +25769,66 @@
           "name": "player",
           "type": "int",
           "optional": false,
-          "description": ""
+          "description": "Player choosing the Xyz Materials.",
+          "description_zh": "选择超量素材的玩家。"
         },
         {
-          "name": "c",
+          "name": "scard",
           "type": "Card",
           "optional": false,
-          "description": ""
+          "description": "Xyz Monster whose materials are being selected.",
+          "description_zh": "正在选择素材的超量怪兽。"
         },
         {
           "name": "f",
           "type": "function|nil",
-          "optional": true,
-          "description": ""
+          "optional": false,
+          "description": "Optional per-material filter.",
+          "description_zh": "可选的单张素材筛选函数。"
         },
         {
           "name": "lv",
           "type": "int",
           "optional": false,
-          "description": ""
+          "description": "Required material Xyz Level.",
+          "description_zh": "要求的素材超量等级。"
         },
         {
-          "name": "min",
+          "name": "minc",
           "type": "int",
           "optional": false,
-          "description": ""
+          "description": "Minimum material count.",
+          "description_zh": "素材数量下限。"
         },
         {
-          "name": "max",
+          "name": "maxc",
           "type": "int",
           "optional": false,
-          "description": ""
+          "description": "Maximum material count.",
+          "description_zh": "素材数量上限。"
         },
         {
-          "name": "mg",
+          "name": "materials",
           "type": "Group|nil",
           "optional": true,
-          "description": ""
+          "description": "Optional candidate material group.",
+          "description_zh": "可选的候选素材Group。"
         }
       ],
       "returns": [
         {
           "type": "Group",
-          "description": ""
+          "description": "The selected Xyz Materials.",
+          "description_zh": "被选择的超量素材Group。"
         }
       ],
       "description_zh": [
-        "让player为scard选择等级lv和素材数量范围对应的超量素材，可带可选筛选函数和素材Group。"
+        "让player为scard选择素材超量等级lv和素材数量范围对应的超量素材，可带可选筛选函数和素材Group。",
+        "只应在对应的Duel.CheckXyzMaterial检查成功后使用。它会让脚本等待选择并返回选择的Group。"
       ],
       "description_en": [
-        "Lets player select Xyz Materials for scard for Level lv and material count range, with optional filter and material group."
+        "Lets player select Xyz Materials for scard for material Xyz Level lv and material count range, with optional filter and material group.",
+        "Use this only after a matching Duel.CheckXyzMaterial check has succeeded. It yields and returns the selected Group."
       ],
       "english_status": "translated_exact",
       "source_files": [
@@ -25815,6 +25846,7 @@
       "aliases": [],
       "tags": [
         "core-binding",
+        "core-doc-override",
         "manual-zh-doc"
       ],
       "core_binding": true,
@@ -27896,39 +27928,48 @@
           "name": "player",
           "type": "int",
           "optional": false,
-          "description": ""
+          "description": "Player performing the Xyz Summon.",
+          "description_zh": "进行超量召唤的玩家。"
         },
         {
           "name": "c",
           "type": "Card",
           "optional": false,
-          "description": ""
+          "description": "Xyz Monster to Summon.",
+          "description_zh": "要召唤的超量怪兽。"
         },
         {
           "name": "materials",
           "type": "Group|nil",
           "optional": true,
-          "description": ""
+          "description": "Optional material group supplied by the effect.",
+          "description_zh": "效果提供的可选素材Group。"
         },
         {
           "name": "minc",
           "type": "int",
           "optional": true,
-          "description": ""
+          "description": "Optional minimum material count override. Defaults to 0.",
+          "description_zh": "可选的素材数量下限覆盖值。默认为0。"
         },
         {
           "name": "maxc",
           "type": "int",
           "optional": true,
-          "description": ""
+          "description": "Optional maximum material count override. Defaults to 0.",
+          "description_zh": "可选的素材数量上限覆盖值。默认为0。"
         }
       ],
       "returns": [],
       "description_zh": [
-        "为player和c执行规则超量召唤，可使用可选素材组和min/max限制。"
+        "为player和c执行规则超量召唤，可使用可选素材组和min/max限制。",
+        "通常在效果operation中先检查Card.IsXyzSummonable，再调用此函数。被选择超量怪兽已登记的手续仍负责最终素材合法性和叠放处理。",
+        "核心在伤害步骤中会拒绝调用；处理召唤时会让脚本等待，且没有Lua返回值。"
       ],
       "description_en": [
-        "Performs a rule Xyz Summon for player and c using an optional material group and min/max constraints."
+        "Performs a rule Xyz Summon for player and c using an optional material group and min/max constraints.",
+        "Use this in effect operations after checking Card.IsXyzSummonable. The selected Xyz Monster's registered procedure still controls final material legality and overlaying.",
+        "The core rejects this during the Damage Step, yields while the summon is processed, and returns no Lua value."
       ],
       "english_status": "translated_exact",
       "source_files": [
@@ -47666,63 +47707,71 @@
           "name": "c",
           "type": "Card",
           "optional": false,
-          "description": ""
+          "description": "Xyz Monster receiving the procedure.",
+          "description_zh": "要登记手续的超量怪兽。"
         },
         {
           "name": "f",
           "type": "function|nil",
-          "optional": true,
-          "description": ""
+          "optional": false,
+          "description": "Optional per-material filter. nil means no extra material restriction beyond the normal Xyz checks.",
+          "description_zh": "可选的单张素材筛选函数。nil表示除通常超量检查外没有额外素材限制。"
         },
         {
           "name": "lv",
           "type": "int",
           "optional": false,
-          "description": ""
+          "description": "Required material Xyz Level.",
+          "description_zh": "要求的素材超量等级。"
         },
         {
           "name": "ct",
           "type": "int",
           "optional": false,
-          "description": ""
+          "description": "Minimum material count.",
+          "description_zh": "素材数量下限。"
         },
         {
           "name": "alterf",
-          "type": "function",
+          "type": "function|nil",
           "optional": true,
-          "description": ""
+          "description": "Optional filter for a one-card alternate Xyz Summon route.",
+          "description_zh": "可选的单卡替代超量召唤路线筛选函数。"
         },
         {
           "name": "alterdesc",
-          "type": "string",
+          "type": "int",
           "optional": true,
-          "description": ""
+          "description": "Prompt text id used when the alternate route can be chosen.",
+          "description_zh": "可以选择替代路线时显示的提示文本id。"
         },
         {
           "name": "maxct",
           "type": "int",
           "optional": true,
-          "description": ""
+          "description": "Maximum material count. Defaults to ct when omitted.",
+          "description_zh": "素材数量上限。省略时默认为ct。"
         },
         {
           "name": "alterop",
-          "type": "function",
+          "type": "function|nil",
           "optional": true,
-          "description": ""
+          "description": "Optional check/apply callback for the alternate route. The local helper calls it with chk==0 for legality and chk==1 after selection.",
+          "description_zh": "可选的替代路线检查/应用回调。本地辅助函数在合法性检查时以chk==0调用，选择后以chk==1调用。"
         }
       ],
-      "returns": [
-        {
-          "type": "nil",
-          "description": ""
-        }
-      ],
+      "returns": [],
       "description_zh": [
-        "Xyz monster, lv k*n"
+        "给c登记标准超量召唤手续。",
+        "f筛选素材，lv是要求的素材超量等级，ct是素材下限，maxct可限制素材上限。",
+        "该辅助函数会建立额外卡组中的EFFECT_SPSUMMON_PROC并设为SUMMON_TYPE_XYZ，使用核心超量素材辅助函数检查和选择素材，用Card.SetMaterial记录素材，并用Duel.Overlay叠放为超量素材。",
+        "alterf、alterdesc和alterop用于定义可选的单卡替代超量召唤路线。"
       ],
       "description_en": [
         "Registers the standard Xyz Summon procedure for c.",
-        "f filters materials, lv is the required Level, ct is the minimum material count, and maxct optionally caps the maximum. alterf/alterdesc/alterop define an alternate one-card Xyz Summon route."
+        "f filters materials, lv is the required material Xyz Level, ct is the minimum material count, and maxct optionally caps the maximum.",
+        "The helper creates an Extra Deck EFFECT_SPSUMMON_PROC with SUMMON_TYPE_XYZ, checks and selects materials with the core Xyz helpers, records them with Card.SetMaterial, and overlays them with Duel.Overlay.",
+        "alterf, alterdesc, and alterop define an optional one-card alternate Xyz Summon route."
       ],
       "english_status": "translated_exact",
       "source_files": [
@@ -47735,7 +47784,10 @@
       "aliases": [
         "aux.AddXyzProcedure"
       ],
-      "tags": [],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
       "core_binding": false,
       "core_handler": ""
     },
@@ -47748,59 +47800,69 @@
           "name": "c",
           "type": "Card",
           "optional": false,
-          "description": ""
+          "description": "Xyz Monster receiving the Level-free procedure.",
+          "description_zh": "要登记不检查等级手续的超量怪兽。"
         },
         {
           "name": "f",
           "type": "function|nil",
           "optional": false,
-          "description": ""
+          "description": "Optional per-material filter.",
+          "description_zh": "可选的单张素材筛选函数。"
         },
         {
           "name": "gf",
           "type": "function|nil",
           "optional": false,
-          "description": ""
+          "description": "Optional whole-group validator called on the selected material group.",
+          "description_zh": "可选的整组素材检查函数，会对选择后的素材Group调用。"
         },
         {
           "name": "minc",
           "type": "int",
           "optional": false,
-          "description": ""
+          "description": "Minimum material count.",
+          "description_zh": "素材数量下限。"
         },
         {
           "name": "maxc",
           "type": "int",
           "optional": false,
-          "description": ""
+          "description": "Maximum material count.",
+          "description_zh": "素材数量上限。"
         },
         {
           "name": "alterf",
           "type": "function|nil",
           "optional": true,
-          "description": ""
+          "description": "Optional filter for a one-card alternate Xyz Summon route.",
+          "description_zh": "可选的单卡替代超量召唤路线筛选函数。"
         },
         {
           "name": "alterdesc",
           "type": "int",
           "optional": true,
-          "description": ""
+          "description": "Prompt text id used when the alternate route can be chosen.",
+          "description_zh": "可以选择替代路线时显示的提示文本id。"
         },
         {
           "name": "alterop",
           "type": "function|nil",
           "optional": true,
-          "description": ""
+          "description": "Optional check/apply callback for the alternate route.",
+          "description_zh": "可选的替代路线检查/应用回调。"
         }
       ],
       "returns": [],
       "description_zh": [
         "给c登记不检查等级的超量召唤手续。",
-        "该辅助函数使用f、gf、minc、maxc以及可选的替代召唤设置，且没有显式返回值。"
+        "f筛选每张候选素材，gf可以检查被选择的整组素材，例如要求所有素材具有相同阶级。",
+        "本地辅助函数仍会检查Card.IsCanBeXyzMaterial、区域可用性和EFFECT_XYZ_MIN_COUNT，但procedure.lua注明此路线不支持EFFECT_DOUBLE_XMATERIAL。"
       ],
       "description_en": [
         "Registers a Level-free Xyz Summon procedure on c.",
-        "This helper uses f, gf, minc, maxc, and optional alternate-summon settings, and returns no explicit value."
+        "f filters each candidate material, while gf can validate the selected group as a whole, such as requiring all materials to have the same Rank.",
+        "The local helper still checks Card.IsCanBeXyzMaterial, zone availability, and EFFECT_XYZ_MIN_COUNT, but procedure.lua notes that EFFECT_DOUBLE_XMATERIAL is not supported in this path."
       ],
       "english_status": "translated_exact",
       "source_files": [

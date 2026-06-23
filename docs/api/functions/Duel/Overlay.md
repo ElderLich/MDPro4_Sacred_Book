@@ -9,6 +9,7 @@ Duel.Overlay(Card c, Card|Group ocard, [bool adjust]) -> void
 ## Description
 
 Overlays ocard under c as Xyz Material.
+This moves a Card or Group under c; it does not by itself perform a proper Xyz Summon or mark the monster's procedure complete.
 By default the field is adjusted after the overlay. Pass adjust=false only when a larger procedure will adjust afterward.
 
 ## How To Use It
@@ -31,9 +32,9 @@ Leave `adjust` omitted for normal scripts. Pass `false` only inside a larger pro
 
 ## Parameters
 
-- `c` `Card`
-- `ocard` `Card|Group`
-- `adjust` `bool` optional - default: true
+- `c` `Card` - Card that will receive the Xyz Materials.
+- `ocard` `Card|Group` - Card or Group to overlay under c.
+- `adjust` `bool` optional - Whether to adjust the field after overlaying. Defaults to true.
 
 ## Source
 
