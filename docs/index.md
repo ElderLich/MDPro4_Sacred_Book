@@ -3,49 +3,55 @@
 <div class="sacred-home-hero">
   <div class="home-copy">
     <p class="home-kicker">MDPro3 / YGOPro Lua scripting</p>
-    <h2>Learn card scripting one working effect at a time.</h2>
-    <p>Start with a card file, build real effects, then use local script examples and generated API pages when you need exact behavior.</p>
+    <h2>Learn card scripting by building real effects.</h2>
+    <p>Start with a working card file, follow a few small local scripts, then use the lessons and generated API pages when you need exact behavior.</p>
     <div class="home-actions">
       <a class="home-primary" href="learn/">Start Learning</a>
-      <a class="home-secondary" href="learn/common-script-errors-and-debugging">Debug a Script</a>
+      <a class="home-secondary" href="learn/first-scripts">Study First Scripts</a>
+      <a class="home-secondary" href="tools/script-explorer">Find Local Examples</a>
     </div>
   </div>
   <div class="home-code-panel" aria-label="Example Lua effect block">
     <div class="home-code-top">
-      <span>c12345678.lua</span>
-      <span>activated effect</span>
+      <span>c55144522.lua</span>
+      <span>first activated effect</span>
     </div>
     <pre><code>local e1=Effect.CreateEffect(c)
-e1:SetDescription(aux.Stringid(id,0))
-e1:SetCategory(CATEGORY_TOHAND)
-e1:SetType(EFFECT_TYPE_IGNITION)
-e1:SetRange(LOCATION_MZONE)
-e1:SetTarget(s.thtg)
-e1:SetOperation(s.thop)
+e1:SetCategory(CATEGORY_DRAW)
+e1:SetType(EFFECT_TYPE_ACTIVATE)
+e1:SetProperty(EFFECT_FLAG_PLAYER_TARGET)
+e1:SetCode(EVENT_FREE_CHAIN)
+e1:SetTarget(s.target)
+e1:SetOperation(s.activate)
 c:RegisterEffect(e1)</code></pre>
   </div>
 </div>
 
 <div class="home-start-path" aria-label="Beginner learning path">
   <a href="learn/script-structure">
-    <strong>Start</strong>
-    <span>Read a card file</span>
-    <small><code>GetID</code>, <code>initial_effect</code>, and callback names</small>
+    <strong>1</strong>
+    <span>Read a script</span>
+    <small>Understand <code>GetID</code>, <code>initial_effect</code>, effects, filters, and callbacks.</small>
   </a>
-  <a href="learn/effect-object">
-    <strong>Build</strong>
-    <span>Create an effect</span>
-    <small>Set type, code, range, target, and operation</small>
+  <a href="learn/first-scripts">
+    <strong>2</strong>
+    <span>Study five real patterns</span>
+    <small>Draw, target, prompt, continuous, and stat-based local examples.</small>
   </a>
-  <a href="learn/activated-effects">
-    <strong>Resolve</strong>
-    <span>Follow a Chain Link</span>
-    <small>Legality, cost, target, and operation flow</small>
+  <a href="learn/effect-callbacks">
+    <strong>3</strong>
+    <span>Follow activation flow</span>
+    <small>Condition, cost, target, operation, and <code>chk==0</code> legality.</small>
   </a>
-  <a href="learn/selection-and-group-handling">
-    <strong>Select</strong>
-    <span>Handle cards safely</span>
-    <small>Targets, Groups, relation checks, and stored state</small>
+  <a href="learn/targeting-flow">
+    <strong>4</strong>
+    <span>Choose cards safely</span>
+    <small>Targets, Groups, relation checks, and resolution choices.</small>
+  </a>
+  <a href="learn/common-script-errors-and-debugging">
+    <strong>5</strong>
+    <span>Debug with structure</span>
+    <small>Trace invisible prompts, nil values, stale targets, and reset mistakes.</small>
   </a>
 </div>
 
@@ -53,50 +59,54 @@ c:RegisterEffect(e1)</code></pre>
 
 <div class="home-portal-grid">
   <a class="home-portal-card" href="learn/">
-    <small>Beginner path</small>
+    <small>Guided curriculum</small>
     <strong>Learn</strong>
-    <span>Follow a progression from script anatomy through effects, Chains, Groups, movement, card types, and common mistakes.</span>
+    <span>Follow the beginner curve first, then branch into card types, summon procedures, outcomes, and debugging.</span>
+  </a>
+  <a class="home-portal-card" href="learn/first-scripts">
+    <small>Concrete practice</small>
+    <strong>First Scripts</strong>
+    <span>Study five small local scripts before jumping into the full lesson library.</span>
   </a>
   <a class="home-portal-card" href="api/">
     <small>Exact signatures</small>
     <strong>API</strong>
-    <span>Use generated function and constant pages sourced from this repository's local MDPro3/YGOPro data.</span>
+    <span>Generated function and constant pages from local MDPro3/YGOPro data.</span>
   </a>
   <a class="home-portal-card" href="examples/">
     <small>Local scripts</small>
     <strong>Examples</strong>
-    <span>Read featured card pages and focused case studies that point back to local <code>Scripts/</code> files.</span>
+    <span>Featured card pages and case studies that point back to local script files.</span>
   </a>
   <a class="home-portal-card" href="tools/script-explorer">
     <small>Search by use</small>
     <strong>Script Explorer</strong>
-    <span>Find real cards by ID, name, script path, or API call when you need another pattern to compare against.</span>
+    <span>Find cards by ID, name, script path, or API call when you need another pattern.</span>
   </a>
   <a class="home-portal-card" href="roadmap">
     <small>Project status</small>
     <strong>Roadmap</strong>
-    <span>See what has been covered, what is still planned, and how the source-checking work is being tracked.</span>
+    <span>Track what has been covered, what is planned, and which source checks were used.</span>
   </a>
 </div>
 
-## Beginner Progression
+## Beginner Curve
 
 1. [Structure of a card script](learn/script-structure)
-2. [Creation, building, and registration of an effect object](learn/effect-object)
-3. [EFFECT_TYPE constants and templates](learn/effect-types)
-4. [Categories, properties, and hint timing](learn/categories-properties-and-hints)
-5. [Client UI and prompt behavior](learn/client-ui-and-prompt-behavior)
-6. [Conditions, costs, activation procedures, and resolution](learn/effect-callbacks)
-7. [Activated effects](learn/activated-effects)
-8. [Activation legality](learn/activation-legality)
-9. [Chain timing and activation windows](learn/chain-timing-and-activation-windows)
-10. [Spell Card patterns](learn/spell-card-patterns)
-11. [Quick-Play Spells](learn/quick-play-spells)
-12. [Trap Card patterns](learn/trap-card-patterns)
-13. [Normal and Continuous Traps](learn/normal-and-continuous-traps)
-14. [Counter Traps](learn/counter-traps)
-15. [Selection and Group handling](learn/selection-and-group-handling)
-16. [Common script errors and debugging](learn/common-script-errors-and-debugging)
+2. [First Scripts To Study](learn/first-scripts)
+3. [Creation, building, and registration of an effect object](learn/effect-object)
+4. [EFFECT_TYPE constants and templates](learn/effect-types)
+5. [Conditions, costs, activation procedures, and resolution](learn/effect-callbacks)
+6. [Activated effects](learn/activated-effects)
+7. [Activation legality](learn/activation-legality)
+8. [Targeting flow](learn/targeting-flow)
+9. [Selection and Group handling](learn/selection-and-group-handling)
+10. [Client UI and prompt behavior](learn/client-ui-and-prompt-behavior)
+11. [Common script errors and debugging](learn/common-script-errors-and-debugging)
+
+After that, choose the branch that matches the card you are scripting: Spells,
+Traps, summon procedures, card movement, continuous effects, player effects,
+or special card families.
 
 ## Reference While Scripting
 

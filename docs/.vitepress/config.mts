@@ -32,6 +32,7 @@ export default defineConfig({
           items: [
             { text: 'Overview', link: '/learn/' },
             { text: 'Script Structure', link: '/learn/script-structure' },
+            { text: 'First Scripts', link: '/learn/first-scripts' },
             { text: 'Effect Object', link: '/learn/effect-object' },
             { text: 'Effect Types', link: '/learn/effect-types' },
             { text: 'Categories and Properties', link: '/learn/categories-properties-and-hints' },

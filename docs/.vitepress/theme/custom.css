@@ -332,6 +332,10 @@
   border-top-color: #8a5a2b;
 }
 
+.home-portal-card:nth-child(6) {
+  border-top-color: #7b4d8f;
+}
+
 .home-portal-card:hover {
   border-color: var(--vp-c-brand-1);
   border-top-color: var(--vp-c-brand-1);
@@ -356,6 +360,106 @@
   overflow-wrap: anywhere;
 }
 
+.learn-priority-grid,
+.learn-stage-grid {
+  display: grid;
+  gap: 12px;
+  margin: 20px 0 30px;
+}
+
+.learn-priority-grid {
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+}
+
+.learn-priority {
+  display: grid;
+  min-height: 156px;
+  align-content: start;
+  gap: 8px;
+  border: 1px solid var(--vp-c-divider);
+  border-left: 4px solid #2f8f83;
+  border-radius: 8px;
+  padding: 15px;
+  color: var(--vp-c-text-1);
+  background: var(--vp-c-bg-soft);
+  text-decoration: none !important;
+}
+
+.learn-priority:nth-child(2) {
+  border-left-color: #b66f2a;
+}
+
+.learn-priority:nth-child(3) {
+  border-left-color: #2f6f8f;
+}
+
+.learn-priority:nth-child(4) {
+  border-left-color: #6f7f2a;
+}
+
+.learn-priority:nth-child(5) {
+  border-left-color: #7b4d8f;
+}
+
+.learn-priority:hover,
+.learn-stage:hover {
+  border-color: var(--vp-c-brand-1);
+  background: var(--vp-c-bg-alt);
+}
+
+.learn-priority small {
+  color: var(--vp-c-text-2);
+  font-size: 12px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.learn-priority strong {
+  color: var(--vp-c-text-1);
+  font-size: 18px;
+}
+
+.learn-priority span {
+  color: var(--vp-c-text-2);
+  line-height: 1.55;
+}
+
+.learn-stage-grid {
+  grid-template-columns: repeat(auto-fit, minmax(245px, 1fr));
+}
+
+.learn-stage {
+  display: grid;
+  align-content: start;
+  gap: 8px;
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 8px;
+  padding: 14px;
+  background: var(--vp-c-bg-soft);
+}
+
+.learn-stage h3 {
+  margin: 0 0 4px;
+  color: var(--vp-c-text-1);
+  font-size: 16px;
+}
+
+.learn-stage a {
+  display: flex;
+  min-height: 30px;
+  align-items: center;
+  border-top: 1px solid var(--vp-c-divider);
+  padding-top: 8px;
+  color: var(--vp-c-text-1);
+  font-weight: 650;
+  line-height: 1.35;
+  text-decoration: none !important;
+}
+
+.learn-stage a:hover {
+  color: var(--vp-c-brand-1);
+}
+
 @media (max-width: 760px) {
   .VPDoc .content-container,
   .VPDoc.has-aside .content-container {
@@ -374,7 +478,9 @@
   .sacred-home-hero,
   .home-route,
   .home-start-path,
-  .home-portal-grid {
+  .home-portal-grid,
+  .learn-priority-grid,
+  .learn-stage-grid {
     grid-template-columns: 1fr;
   }
 

@@ -65,6 +65,39 @@ of pouring every detail into one page. The broad navigation shape should be:
 | Reset flags, temporary effects, and duration | [Reset Flags And Effect Duration](/learn/reset-flags-and-duration) now centralizes `Effect.SetReset`, phase resets, event resets, `RESETS_STANDARD`, reset counts, player restrictions, card-bound temporary effects, flag lifetimes, and manual reset APIs. |
 | Debugging and common mistakes | [Common Script Errors And Debugging](/learn/common-script-errors-and-debugging) now gives a focused troubleshooting pass that links existing lessons together without turning them into one large appendix. |
 
+## 2026-06-24 Archive Re-Audit
+
+The archive was re-read as a curriculum and teaching-quality pass, not only a
+topic checklist. The main lesson from the downloaded pages is that beginners
+need a visible curve before the full reference library: read a script, study a
+few complete effects, then branch into targeting, Groups, card types, and
+outcomes.
+
+Sacred Book now routes that curve through [Home](/), [Learning Path](/learn/),
+and [First Scripts To Study](/learn/first-scripts). The first-scripts page uses
+local scripts for Pot of Greed (`c55144522.lua`), Mystical Space Typhoon
+(`c5318639.lua`), Book of Moon (`c14087893.lua`), Banner of Courage
+(`c10012614.lua`), and Fissure (`c97169186.lua`).
+
+| Downloaded page signal | Sacred Book action |
+| --- | --- |
+| Main page emphasizes a start route before topic browsing. | Home and Learn now expose a shorter beginner curve before the full lesson library. |
+| Single-filter targeting spends time on `chkc`, target counts, operation info, and resolution wording. | [Targeting flow](/learn/targeting-flow) now expands `chkc`, local target-redirection examples, `min,max`, and relation/current-state rechecks. |
+| Single-filter selection separates matching-card selection from official targets. | [First Scripts To Study](/learn/first-scripts) and [Selection And Group Handling](/learn/selection-and-group-handling) reinforce targeting versus resolution selection with local scripts. |
+| Min/Max-stat card selection uses tied min/max groups. | [Selection And Group Handling](/learn/selection-and-group-handling) now documents `Group.GetMinGroup` and `Group.GetMaxGroup` with local scripts. |
+| Equip Spell page includes EDO/Koishi helper names. | Existing [Equip Spells and Equip Cards](/learn/equip-spells) continues to prefer local `Auxiliary.AddEquipSpellEffect`, `Duel.Equip`, and equip-limit APIs. |
+| Movement page includes non-local movement names. | Existing [Functions that move cards across locations](/learn/moving-cards) uses local `Duel.GetControl`, `Duel.Remove`, `Duel.SendtoExtraP`, and related local APIs. |
+
+Downloaded function names that were intentionally not copied as local facts:
+
+| Downloaded name | Local Sacred Book handling |
+| --- | --- |
+| `Duel.GetTargetCards` | Use `Duel.GetTargetsRelateToChain()` or `Duel.GetChainInfo(0,CHAININFO_TARGET_CARDS):Filter(Card.IsRelateToEffect,nil,e)`. |
+| `Duel.Control` | Use local [`Duel.GetControl`](/api/functions/Duel/GetControl). |
+| `Duel.Exile`, `Duel.RemoveCards` | Use local [`Duel.Remove`](/api/functions/Duel/Remove). |
+| `aux.AddEquipProcedure` and related `aux.Equip*` helpers | Use local [`Auxiliary.AddEquipSpellEffect`](/api/functions/Auxiliary/AddEquipSpellEffect), [`Duel.Equip`](/api/functions/Duel/Equip), and `EFFECT_EQUIP_LIMIT` patterns. |
+| Shorthand selection names such as `Duel.Select` | Use local `Duel.SelectMatchingCard`, `Duel.SelectTarget`, `Group.Select`, or `Group.FilterSelect` depending on the state being created. |
+
 ## Forever Pass Rule
 
 Do not mark a downloaded tutorial page as fully covered until its headings,
@@ -361,6 +394,7 @@ Several details were verified directly against local MDPro3/YGOPro sources:
 
 | Date | Downloaded page cluster | Sacred Book updates |
 | --- | --- | --- |
+| 2026-06-24 | Archive curriculum re-audit and first scripts | Reworked [Home](/) and [Learning Path](/learn/) around a shorter beginner curve, added [First Scripts To Study](/learn/first-scripts) with local walkthroughs for draw, targeting, prompt timing, continuous field effects, and min/max stat selection, expanded [Targeting Flow](/learn/targeting-flow) with `chkc`, `min,max`, local `Duel.GetTargetsRelateToChain` handling, and resolution wording rechecks, and expanded [Selection And Group Handling](/learn/selection-and-group-handling) with `Group.GetMinGroup` / `Group.GetMaxGroup`. |
 | 2026-06-24 | Client UI and prompt behavior | Added [Client UI And Prompt Behavior](/learn/client-ui-and-prompt-behavior) as a focused guide for `Duel.Hint`, `HINT_SELECTMSG`, `SetHintTiming`, `SetOperationInfo`, target prompts, resolution choices, opponent-side prompts, `HINT_OPSELECTED`, `HINT_ZONE`, and troubleshooting legal effects that feel invisible or awkward in the client. |
 | 2026-06-24 | Spell and Trap focused follow-ups | Added [Quick-Play Spells](/learn/quick-play-spells), [Counter Traps](/learn/counter-traps), and [Normal And Continuous Traps](/learn/normal-and-continuous-traps) as focused guides for Spell Speed 2 activation flow, Spell Speed 3 Counter Trap negation families, Normal Trap exceptions, Continuous Trap `LOCATION_SZONE` effects, reset behavior, and leave-field cleanup. |
 | 2026-06-24 | Home and debugging entry point | Improved [Home](/) as a compact learning portal with a clearer Start Learning path and stronger Learn/API/Examples/Script Explorer/Roadmap cards. Added [Common Script Errors And Debugging](/learn/common-script-errors-and-debugging) as a focused troubleshooting guide backed by local scripts and generated API links. |

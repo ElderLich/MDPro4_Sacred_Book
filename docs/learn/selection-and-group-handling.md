@@ -162,6 +162,55 @@ Duel.SpecialSummonComplete()
 
 Use this shape whenever the chosen cards must satisfy a group-level rule.
 
+## Min/Max Stat Selection
+
+Some effects do not ask the player to choose freely. They select the card with
+the lowest or highest value among the current candidates. Local scripts use
+`Group.GetMinGroup` and `Group.GetMaxGroup` for this.
+
+Queen of Roses (`c96470883.lua`) destroys the face-up monster with the lowest
+ATK during the controller's Standby Phase:
+
+```lua
+local g=Duel.GetMatchingGroup(s.filter,tp,LOCATION_MZONE,LOCATION_MZONE,nil)
+if #g>0 then
+    local tg=g:GetMinGroup(Card.GetAttack)
+    if #tg>1 then
+        Duel.Hint(HINT_SELECTMSG,tp,HINTMSG_DESTROY)
+        local sg=tg:Select(tp,1,1,nil)
+        Duel.Destroy(sg,REASON_EFFECT)
+    else
+        Duel.Destroy(tg,REASON_EFFECT)
+    end
+end
+```
+
+Fissure (`c97169186.lua`) uses the same shape with the highest DEF among the
+opponent's face-up monsters:
+
+```lua
+local g=Duel.GetMatchingGroup(s.filter,tp,0,LOCATION_MZONE,nil)
+local tg=g:GetMaxGroup(Card.GetDefense)
+```
+
+`GetMinGroup` and `GetMaxGroup` return the tied group, not necessarily one
+card. If more than one card shares the same value, choose from that tied group
+with `Group.Select`. If the effect should simply affect all tied cards, act on
+the returned Group directly.
+
+A continuous modifier can use the returned value without selecting any cards.
+`c10796448.lua` reads the opponent's highest base ATK and returns it as this
+card's ATK boost:
+
+```lua
+local tg,val=g:GetMaxGroup(Card.GetBaseAttack)
+return val
+```
+
+Use this pattern for "highest ATK", "lowest DEF", "highest Level", and similar
+effects. Build the candidate Group from the current game state at resolution
+when the effect does not target.
+
 ## SelectUnselect
 
 `Group.SelectUnselect` is a lower-level interactive helper. It lets the player
@@ -291,6 +340,8 @@ Useful API pages:
 - [`Group.Select`](/api/functions/Group/Select)
 - [`Group.Filter`](/api/functions/Group/Filter)
 - [`Group.FilterSelect`](/api/functions/Group/FilterSelect)
+- [`Group.GetMinGroup`](/api/functions/Group/GetMinGroup)
+- [`Group.GetMaxGroup`](/api/functions/Group/GetMaxGroup)
 - [`Group.CheckSubGroup`](/api/functions/Group/CheckSubGroup)
 - [`Group.SelectSubGroup`](/api/functions/Group/SelectSubGroup)
 - [`Group.SelectUnselect`](/api/functions/Group/SelectUnselect)
