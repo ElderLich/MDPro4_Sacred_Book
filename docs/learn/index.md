@@ -77,6 +77,7 @@ card you are scripting.
     <a href="filters-and-groups">Filters and Groups</a>
     <a href="targeting-flow">Targeting flow</a>
     <a href="selection-and-group-handling">Selection and Group handling</a>
+    <a href="min-max-stat-selection">Min/Max stat selection</a>
     <a href="moving-cards">Moving cards</a>
     <a href="reset-flags-and-duration">Reset flags and duration</a>
   </section>

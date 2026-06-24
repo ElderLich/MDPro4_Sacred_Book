@@ -279,6 +279,9 @@ Related API:
 [`Group.Select`](/api/functions/Group/Select),
 [`Duel.HintSelection`](/api/functions/Duel/HintSelection).
 
+For the full tied-group pattern, custom scores, returned values, and targeting
+variants, read [Min/Max Stat Card Selection](min-max-stat-selection).
+
 ## What To Read Next
 
 After these five scripts, the core loop should feel familiar:

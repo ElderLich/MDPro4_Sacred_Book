@@ -61,6 +61,7 @@ export default defineConfig({
             { text: 'Counters', link: '/learn/counters' },
             { text: 'Filters and Groups', link: '/learn/filters-and-groups' },
             { text: 'Selection and Group Handling', link: '/learn/selection-and-group-handling' },
+            { text: 'Min/Max Stat Selection', link: '/learn/min-max-stat-selection' },
             { text: 'Reset Flags and Duration', link: '/learn/reset-flags-and-duration' },
             { text: 'Moving Cards', link: '/learn/moving-cards' },
             { text: 'Negation and Immunity', link: '/learn/negation-and-immunity' },

@@ -211,6 +211,10 @@ Use this pattern for "highest ATK", "lowest DEF", "highest Level", and similar
 effects. Build the candidate Group from the current game state at resolution
 when the effect does not target.
 
+For the full pattern, including tie choices, returned numeric values, custom
+scoring functions, and targeting variants, see
+[Min/Max Stat Card Selection](min-max-stat-selection).
+
 ## SelectUnselect
 
 `Group.SelectUnselect` is a lower-level interactive helper. It lets the player

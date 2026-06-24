@@ -22,13 +22,14 @@ simulator-specific helper names and examples with local MDPro3/YGOPro behavior.
 | Main scripting-wiki landing page | [Home](/), [Learning Path](/learn/), and this coverage map organize the beginner route. |
 | Structure of a card script | [Structure of a card script](/learn/script-structure) covers file naming, `GetID`, `initial_effect`, callback naming, and reading real scripts. |
 | Creation, building, and registration of an effect object | [Creation, building, and registration of an effect object](/learn/effect-object) covers `Effect.CreateEffect`, setters, registration, cloning, labels, label objects, and resets. |
-| EFFECT_TYPE constants and templates | [EFFECT_TYPE constants and templates](/learn/effect-types) covers common type flags, no-op Spell/Trap activation, activated types, Flip Effects, quick-effect hints, combinations, material effects, and grant effects. |
+| EFFECT_TYPE constants and templates | [EFFECT_TYPE constants and templates](/learn/effect-types) covers common type flags, type-shape selection, no-op Spell/Trap activation, activated types, trigger source combinations, quick-effect hints, material effects, grant effects, and special target-range modes. |
 | Functions for conditions, costs, activation procedures, and resolution | [Conditions, costs, activation procedures, and resolution](/learn/effect-callbacks) plus [Cost, target, and operation lifecycle](/learn/cost-target-operation-lifecycle) cover logical operators, `not` grouping, cost sections, target variants, non-activated targets, values, and resolution rechecks. |
 | Activation legality | [Activation legality](/learn/activation-legality) covers `chk==0`, implicit action requirements, optional effects, mandatory effects, `chkc`, and resolution rechecks. |
 | Common script errors and debugging | [Common Script Errors And Debugging](/learn/common-script-errors-and-debugging) collects frequent local-script mistakes: nil values, `chk==0`, cost/target/operation desync, targeting versus selecting, relation checks, location masks, `IsFaceupEx`, count limits, resets, continuous ranges, negation types, Group lifetime, and code identity checks. |
 | Chain timing and activation windows | [Chain Timing And Activation Windows](/learn/chain-timing-and-activation-windows) covers prompt masks, `EVENT_FREE_CHAIN`, `EVENT_CHAINING`, Spell Speed, Damage Step flags, `Duel.CheckTiming`, and Chain-solving watcher effects. |
 | Activated effects | [Activated effects](/learn/activated-effects) covers Chain Link flow, common activated types, optional and mandatory triggers, Spell/Trap activation, and the activation/resolution split. |
 | Filters, Card objects, and Group objects | [Filters, Card Objects, and Group Objects](/learn/filters-and-groups) covers filter arguments, matching vs targeting, Groups, filtering, selecting, iterating, membership, and counts. |
+| Min/Max-stat card selection | [Min/Max Stat Card Selection](/learn/min-max-stat-selection) covers `Group.GetMinGroup`, `Group.GetMaxGroup`, tied groups, returned numeric values, custom scoring functions, and activation-vs-resolution selection. |
 | List of functions that move cards across locations | [Functions that move cards across locations](/learn/moving-cards) covers movement APIs, effect-vs-cost able-to checks, destroy checks, release/discard/control helpers, targeting/non-targeting patterns, Special Summons, equip, `MoveToField`, `SendtoExtraP`, returns, and reason flags. |
 | Effects that apply continuously | [Effects That Apply Continuously](/learn/continuous-effects) covers single, field, equip, Xyz Material, player-affecting, event-watching, and temporary continuous effects. |
 | Tutorial for scripting a simple continuous effect | [Continuous stat modifiers](/learn/continuous-stat-modifiers) gives the focused ATK/DEF tutorial for self, field, equip, material, temporary, and cloned modifiers. |
@@ -36,7 +37,7 @@ simulator-specific helper names and examples with local MDPro3/YGOPro behavior.
 | Field Spell | [Field Spells](/learn/field-spells) covers Field Spell activation shape, `LOCATION_FZONE`, Field Zone replacement, activating/placing Field Spells from the Deck, environment checks, counters, and common pitfalls. |
 | Recovering LP and inflicting effect damage | [LP Recovery and Effect Damage](/learn/lp-recovery-and-damage) covers fixed amounts, resolution-calculated amounts, target-player data, target-based recovery, stepped LP changes, event-value amounts, conjuncted effects, event-count vs resolution-count amounts, categories, and return values. |
 | Methods for affecting cards | [Methods for Affecting Cards](/learn/affecting-cards) acts as the outcome router for immediate actions, continuous changes, negation, stat/property changes, control, equip, and review checks. |
-| Subarchetype | [Archetypes and Set Codes](/learn/archetypes-and-setcodes) covers IDs, `IsSetCard`, multiple set-code checks, subarchetype bit structure, listed cards, and alternate codes. |
+| Subarchetype | [Archetypes and Set Codes](/learn/archetypes-and-setcodes) covers IDs, `IsSetCard`, multiple set-code checks, subarchetype bit structure, listed-card and listed-set helpers, original-code checks, and common filter patterns. |
 
 ## Conversion Answer
 
@@ -84,7 +85,7 @@ local scripts for Pot of Greed (`c55144522.lua`), Mystical Space Typhoon
 | Main page emphasizes a start route before topic browsing. | Home and Learn now expose a shorter beginner curve before the full lesson library. |
 | Single-filter targeting spends time on `chkc`, target counts, operation info, and resolution wording. | [Targeting flow](/learn/targeting-flow) now expands `chkc`, local target-redirection examples, `min,max`, and relation/current-state rechecks. |
 | Single-filter selection separates matching-card selection from official targets. | [First Scripts To Study](/learn/first-scripts) and [Selection And Group Handling](/learn/selection-and-group-handling) reinforce targeting versus resolution selection with local scripts. |
-| Min/Max-stat card selection uses tied min/max groups. | [Selection And Group Handling](/learn/selection-and-group-handling) now documents `Group.GetMinGroup` and `Group.GetMaxGroup` with local scripts. |
+| Min/Max-stat card selection uses tied min/max groups. | [Min/Max Stat Card Selection](/learn/min-max-stat-selection) now documents `Group.GetMinGroup`, `Group.GetMaxGroup`, tie handling, returned values, custom scoring functions, and targeting variants with local scripts. |
 | Equip Spell page includes EDO/Koishi helper names. | Existing [Equip Spells and Equip Cards](/learn/equip-spells) continues to prefer local `Auxiliary.AddEquipSpellEffect`, `Duel.Equip`, and equip-limit APIs. |
 | Movement page includes non-local movement names. | Existing [Functions that move cards across locations](/learn/moving-cards) uses local `Duel.GetControl`, `Duel.Remove`, `Duel.SendtoExtraP`, and related local APIs. |
 
@@ -361,6 +362,15 @@ Several details were verified directly against local MDPro3/YGOPro sources:
   include Book of Moon (`c14087893.lua`), Rescue Hedgehog (`c99742859.lua`),
   Neo-Daedalus (`c10485110.lua`), Lava Golem (`c102380.lua`), and local
   procedure helpers in `procedure.lua`.
+- Min/Max selection, archetype/set-code, and effect-type template refinements
+  were checked against generated API pages and local scripts. `c96470883.lua`
+  and `c97169186.lua` cover tied min/max Groups and resolution choices;
+  `c10796448.lua` and `c99075257.lua` cover returned numeric values;
+  `c45950291.lua` covers a target-filter alternative for an extreme Rank
+  check; `c10186633.lua`, `c12908094.lua`, and `c10000040.lua` cover listed
+  metadata, multi-set checks, `aux.gfcheck`, and `IsOriginalCodeRule`; and
+  `c99229085.lua` plus `c10604644.lua` cover Xyz Material activated effects and
+  `EFFECT_TYPE_FIELD+EFFECT_TYPE_GRANT`.
 - Reset behavior was checked against local `effect.h`, `constant.lua`,
   `libeffect.cpp`, `libcard.cpp`, `libduel.cpp`, and
   `ygopro-scripts-define\def.lua`. `Effect.SetReset`,
@@ -441,6 +451,7 @@ Several details were verified directly against local MDPro3/YGOPro sources:
 
 | Date | Downloaded page cluster | Sacred Book updates |
 | --- | --- | --- |
+| 2026-06-24 | Min/Max selection, subarchetypes, and effect-type templates | Added [Min/Max Stat Card Selection](/learn/min-max-stat-selection) as a focused guide for tied min/max Groups, returned values, custom scoring functions, activation-vs-resolution selection, and targeting variants. Refined [Archetypes and Set Codes](/learn/archetypes-and-setcodes) with identity-check choices, listed-card metadata, listed-set helpers, original-code checks, and practical filter patterns. Refined [EFFECT_TYPE Constants and Templates](/learn/effect-types) with type-shape selection, trigger source combinations, Xyz Material activated effects, grant effects, and special `SetTargetRange` modes. |
 | 2026-06-24 | Equip and Field Spell follow-up | Refined [Equip Spells and Equip Cards](/learn/equip-spells) with activation target-vs-equip-limit guidance, nonstandard equip prechecks, and stepped equip examples. Refined [Field Spells](/learn/field-spells) with handler-range guidance and the activate-vs-place distinction for Field Spells moved through other effects. |
 | 2026-06-24 | Continuous effects and stat modifiers follow-up | Refined [Effects That Apply Continuously](/learn/continuous-effects) with a setter build order, `SetTargetRange` card-vs-player modes, and a quick diagnosis table. Refined [Continuous Stat Modifiers](/learn/continuous-stat-modifiers) with `UPDATE`/`SET`/`SET_FINAL` stat-code guidance and value-callback player-reference notes. |
 | 2026-06-24 | Movement functions and LP recovery/damage follow-up | Refined [Functions That Move Cards Across Locations](/learn/moving-cards) with destination-vs-field movement families, zone/field-placement legality checks, and temporary banish return handling. Refined [LP Recovery and Effect Damage](/learn/lp-recovery-and-damage) with a local mixed damage/recovery stepped batch example and clearer sequential-vs-stepped guidance. |

@@ -1,12 +1,30 @@
 # Archetypes and Set Codes
 
 Scripts should identify card families by code and set code, not by displayed
-card name. Names change across languages; IDs and set codes are stable scripting
-data.
+card name. Names change across languages; IDs, set codes, and local helper
+metadata are the stable scripting layer.
 
-## Card ID
+## Which Check To Use
 
-Use exact card IDs when a script names a specific card.
+Most archetype bugs come from using an exact-ID check where a family check was
+needed, or using a family check where the text really names one card.
+
+| Card text or procedure needs | Use |
+| --- | --- |
+| This exact card ID, including current code changes. | `Card.IsCode` |
+| One archetype, theme, or subfamily. | `Card.IsSetCard` |
+| A card's printed/original identity for material or release rules. | `Card.IsOriginalCodeRule` |
+| A card that lists another card by ID. | `aux.IsCodeListed` |
+| The named card itself or a card that lists it. | `aux.IsCodeOrListed` |
+| A card that lists a monster set name registered in script metadata. | `aux.IsSetNameMonsterListed` |
+
+When unsure, search local scripts for known card IDs from the same theme and
+copy the identity check shape they use. The set code number is data, not a name
+you should invent from memory.
+
+## Exact Card IDs
+
+Use `IsCode` when a script names a specific card.
 
 ```lua
 function s.filter(c)
@@ -23,9 +41,10 @@ end
 ```
 
 Use this when the card text references one exact card, or a short list of exact
-cards.
+cards. Because the engine exposes current code and alternate-code behavior
+through this API, it is safer than comparing a raw database field.
 
-## Set Code
+## Set Codes
 
 Use `IsSetCard` when a script cares about an archetype or family.
 
@@ -45,6 +64,16 @@ match.
 ```lua
 function s.filter(c)
     return c:IsSetCard(0x9f,0x99)
+end
+```
+
+Local `c12908094.lua` uses this style for an Extra Deck filter that accepts
+several related Xyz themes in one check:
+
+```lua
+function s.xyzfiltr(c,g)
+    return c:IsSetCard(0x8f,0x54,0x59,0x82,0x206f,0x6d,0x48,0x107e,0x207e)
+        and c:IsXyzSummonable(nil,g,2,99)
 end
 ```
 
@@ -72,6 +101,9 @@ A broad check can match cards in the base family. A subtype check requires the
 matching subtype bits too. This is why local scripts sometimes use a value such
 as `0x1034` when the card text is narrower than the displayed family name.
 
+Do not hand-roll bit math in filters. Use `IsSetCard` and the set-code values
+already present in local scripts or data.
+
 Safer process:
 
 1. Search local scripts for the card family or known card IDs.
@@ -79,7 +111,7 @@ Safer process:
 3. Check card data when a script must match newly added cards.
 4. Use the narrowest set code that matches the card text.
 
-## Listed Cards
+## Listed Cards And Listed Sets
 
 Some effects care whether a card lists another card by ID. Use helper/API
 functions for that instead of searching text manually.
@@ -93,23 +125,67 @@ end
 `aux.IsCodeOrListed` is useful when a card can be the exact named card or a card
 that lists it.
 
-## Name Changes and Alternate Codes
-
-Some effects change a card's code. `Card.IsCode` checks the current code and
-alternate code behavior exposed by the engine, so it is safer than comparing a
-manual field.
+Local scripts register listed-card metadata in `initial_effect` with
+`aux.AddCodeList`. Local `c10186633.lua` registers a listed card and a listed
+monster set name before its filters use those facts:
 
 ```lua
-if c:IsCode(id) then
-    -- this card is currently treated as that ID
-end
+aux.AddCodeList(c,89943723)
+aux.AddSetNameMonsterList(c,0x3008)
 ```
 
-For families, prefer `IsSetCard` unless the card text demands exact IDs.
+Later in that script, the group check accepts either the exact listed card or a
+group whose cards belong to one of the named sets:
+
+```lua
+return #g==1 and g:GetFirst():IsCode(89943723)
+    or aux.gfcheck(g,Card.IsSetCard,0x3008,0x1f)
+```
+
+Treat listed-card helpers as metadata checks, not text searches. A card must
+have the appropriate listed metadata registered or generated for these helpers
+to see it.
+
+## Original-Code Checks
+
+Some procedures care about the original printed identity, not what a card is
+currently treated as. Use `Card.IsOriginalCodeRule` for those rules.
+
+Local `c10000040.lua` uses it to require three exact original cards in a release
+group:
+
+```lua
+c10000040.spchecks=aux.CreateChecks(Card.IsOriginalCodeRule,{10000020,10000000,10000010})
+```
+
+This is different from `IsCode`. A name-copying effect can make a card currently
+treated as an ID, but it should not satisfy every original-name material or
+release procedure.
+
+## Common Filter Patterns
+
+| Pattern | Example |
+| --- | --- |
+| Exact named card. | `c:IsCode(89943723)` |
+| Any member of one family. | `c:IsSetCard(0x3008)` |
+| Any member of several accepted families. | `c:IsSetCard(0x8f,0x54,0x59)` |
+| Face-up archetype monster. | `c:IsFaceup() and c:IsSetCard(0x123) and c:IsType(TYPE_MONSTER)` |
+| A card that lists a named card. | `aux.IsCodeListed(c,89943723)` |
+| The named card or a card that lists it. | `aux.IsCodeOrListed(c,89943723)` |
+| A group containing required kinds. | `aux.gfcheck(g,Card.IsSetCard,0x3008,0x1f)` |
+
+Keep filters narrow enough for the card text, but broad enough for legitimate
+subarchetype members. The right answer is usually visible in nearby local
+scripts.
 
 Useful API pages:
 
 - [`Card.IsCode`](/api/functions/Card/IsCode)
 - [`Card.IsSetCard`](/api/functions/Card/IsSetCard)
+- [`Card.IsOriginalCodeRule`](/api/functions/Card/IsOriginalCodeRule)
+- [`Auxiliary.AddCodeList`](/api/functions/Auxiliary/AddCodeList)
+- [`Auxiliary.AddSetNameMonsterList`](/api/functions/Auxiliary/AddSetNameMonsterList)
 - [`Auxiliary.IsCodeListed`](/api/functions/Auxiliary/IsCodeListed)
 - [`Auxiliary.IsCodeOrListed`](/api/functions/Auxiliary/IsCodeOrListed)
+- [`Auxiliary.IsSetNameMonsterListed`](/api/functions/Auxiliary/IsSetNameMonsterListed)
+- [`Auxiliary.gfcheck`](/api/functions/Auxiliary/gfcheck)

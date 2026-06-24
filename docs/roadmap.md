@@ -44,6 +44,7 @@ This is the working todo for turning Sacred Book into a complete MDPro3 scriptin
 - [x] Add focused Quick-Play Spell, Counter Trap, and Normal/Continuous Trap guides for timing, negation families, face-up Trap effects, and leave-field cleanup.
 - [x] Rework the home and learning entry path around a concrete beginner curve and first local script walkthroughs.
 - [x] Re-audit the downloaded wiki archive for curriculum shape and local/non-local function rewrites.
+- [x] Add a focused Min/Max stat selection guide and refine archetype/set-code and effect-type template lessons with local-verified tied Groups, identity checks, Xyz Material effects, grant effects, and special target-range modes.
 - [x] Refine the effect setup and activation-flow lessons from the downloaded archive with local-verified setter meaning, callback signatures, and legality notes.
 - [x] Refine the filters and all-Group action lessons with local-verified pure-filter and rebuild-at-resolution patterns.
 - [x] Refine the movement and LP/damage lessons with destination-vs-field movement families, temporary banish return handling, and stepped mixed LP batches.

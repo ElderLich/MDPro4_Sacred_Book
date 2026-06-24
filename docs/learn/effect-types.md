@@ -1,8 +1,13 @@
 # EFFECT_TYPE Constants and Templates
 
-`SetType` decides the broad shape of an effect. Some scripts combine values with
-`+` because a field trigger, for example, is both `EFFECT_TYPE_FIELD` and
-`EFFECT_TYPE_TRIGGER_O`.
+`SetType` decides the broad shape of an effect. These constants are engine
+shape flags, not official card-text labels. There is no single universal
+"Trigger Effect" type to copy for every trigger. A trigger on the handler, a
+trigger watched from the field, and a trigger granted while the card is Xyz
+Material all use different combinations.
+
+Some scripts combine values with `+` because a field trigger, for example, is
+both `EFFECT_TYPE_FIELD` and `EFFECT_TYPE_TRIGGER_O`.
 
 ## Common Types
 
@@ -19,6 +24,27 @@
 | `EFFECT_TYPE_EQUIP` | Equip Card effect applied to the equipped monster. | `SetCode`, `SetValue` |
 | `EFFECT_TYPE_XMATERIAL` | Effect applied while the card is Xyz Material. | `SetCode`, `SetValue` |
 | `EFFECT_TYPE_GRANT` | A field-style effect that grants another effect to matching cards. | `SetTargetRange`, `SetTarget`, `SetLabelObject` |
+
+## Choosing A Type Shape
+
+Pick the shape from what the effect object does, then fill in `SetCode`, range,
+properties, and callbacks.
+
+| Need | Common type shape |
+| --- | --- |
+| Spell/Trap Card activation. | `EFFECT_TYPE_ACTIVATE` |
+| Player chooses an effect in an open game state. | `EFFECT_TYPE_IGNITION` |
+| Fast optional response. | `EFFECT_TYPE_QUICK_O` |
+| Handler itself has an optional event trigger. | `EFFECT_TYPE_SINGLE+EFFECT_TYPE_TRIGGER_O` |
+| Handler itself has a mandatory event trigger. | `EFFECT_TYPE_SINGLE+EFFECT_TYPE_TRIGGER_F` |
+| A card in range watches a field, player, or phase event and may activate. | `EFFECT_TYPE_FIELD+EFFECT_TYPE_TRIGGER_O` |
+| A card in range watches a mandatory field, player, or phase event. | `EFFECT_TYPE_FIELD+EFFECT_TYPE_TRIGGER_F` |
+| A non-chain watcher, replacement, or rule callback. | `EFFECT_TYPE_CONTINUOUS+EFFECT_TYPE_SINGLE` or `EFFECT_TYPE_CONTINUOUS+EFFECT_TYPE_FIELD` |
+| A continuous rule on the handler. | `EFFECT_TYPE_SINGLE` |
+| A continuous rule applied outward to cards or players. | `EFFECT_TYPE_FIELD` |
+| An Equip Card's applying modifier. | `EFFECT_TYPE_EQUIP` |
+| A rule or activated effect gained by the monster using this card as Xyz Material. | `EFFECT_TYPE_XMATERIAL` plus the rule or activated type |
+| A field effect that grants an effect object to matching cards. | `EFFECT_TYPE_FIELD+EFFECT_TYPE_GRANT` |
 
 ## Activate, Ignition, Trigger, Quick
 
@@ -78,12 +104,35 @@ source shape and an activation/timing shape.
 | `EFFECT_TYPE_SINGLE+EFFECT_TYPE_TRIGGER_O` | The handler has an optional trigger. |
 | `EFFECT_TYPE_SINGLE+EFFECT_TYPE_TRIGGER_F` | The handler has a mandatory trigger. |
 | `EFFECT_TYPE_FIELD+EFFECT_TYPE_TRIGGER_O` | A card in a range watches a field event and may activate. |
+| `EFFECT_TYPE_FIELD+EFFECT_TYPE_TRIGGER_F` | A card in a range watches a field event and must activate when legal. |
 | `EFFECT_TYPE_SINGLE+EFFECT_TYPE_FLIP` | A Flip Effect on the handler. |
 | `EFFECT_TYPE_CONTINUOUS+EFFECT_TYPE_SINGLE` | A continuous watcher or replacement effect tied to the handler. |
 | `EFFECT_TYPE_CONTINUOUS+EFFECT_TYPE_FIELD` | A continuous watcher applied from a field range. |
+| `EFFECT_TYPE_XMATERIAL+EFFECT_TYPE_IGNITION` | The Xyz Monster gets an Ignition Effect while this card is material. |
+| `EFFECT_TYPE_XMATERIAL+EFFECT_TYPE_QUICK_O` | The Xyz Monster gets a Quick Effect while this card is material. |
+| `EFFECT_TYPE_XMATERIAL+EFFECT_TYPE_TRIGGER_O` | The Xyz Monster gets an optional trigger while this card is material. |
+| `EFFECT_TYPE_FIELD+EFFECT_TYPE_GRANT` | A live field effect grants another effect object to matching cards. |
 
 Local scripts use both `+` and bitwise-style constants for these combinations.
 Read either form as "this effect has all of these type flags."
+
+## Trigger Source Shapes
+
+Trigger type flags only tell the engine that an effect can activate from an
+event. The source flag tells the engine where the trigger lives.
+
+| Shape | Read it as |
+| --- | --- |
+| `EFFECT_TYPE_SINGLE+EFFECT_TYPE_TRIGGER_O` | This card itself saw the event and may activate. |
+| `EFFECT_TYPE_SINGLE+EFFECT_TYPE_TRIGGER_F` | This card itself saw the event and must activate when legal. |
+| `EFFECT_TYPE_FIELD+EFFECT_TYPE_TRIGGER_O` | This card is in range and watches an event that can involve other cards or players. |
+| `EFFECT_TYPE_FIELD+EFFECT_TYPE_TRIGGER_F` | This card is in range and watches a mandatory event. |
+
+`EVENT_*` goes in `SetCode`; optional versus mandatory comes from
+`EFFECT_TYPE_TRIGGER_O` versus `EFFECT_TYPE_TRIGGER_F`. Damage Step behavior is
+not automatic. Copy the local script pattern for the exact event and add the
+same Damage Step properties or conditions only when the local pattern needs
+them.
 
 ## Flip Effects
 
@@ -135,6 +184,12 @@ With normal range handling, `SetTargetRange(a,b)` means the handler controller's
 side first and the opponent's side second. With `EFFECT_FLAG_ABSOLUTE_RANGE`,
 those fields mean player 0 and player 1 instead.
 
+Some effects use the same setter in a special mode. With
+`EFFECT_FLAG_SPSUM_PARAM`, `SetTargetRange` stores Special Summon position and
+destination player data instead of affected card locations. See
+[Creation, Building, and Registration of an Effect Object](effect-object) for
+the target-range mode table.
+
 ## Continuous Event Watchers
 
 `EFFECT_TYPE_CONTINUOUS` often appears with `EFFECT_TYPE_SINGLE` or
@@ -171,8 +226,9 @@ client knows which monster the card may remain equipped to.
 
 ## Material And Granted Effects
 
-Some effects apply only while the card is used as material. Xyz Material effects
-commonly use `EFFECT_TYPE_XMATERIAL` with a normal effect code and value.
+Some effects apply only while the card is used as material. Xyz Material
+effects commonly use `EFFECT_TYPE_XMATERIAL` with a normal effect code and
+value.
 
 ```lua
 local e1=Effect.CreateEffect(c)
@@ -181,6 +237,25 @@ e1:SetCode(EFFECT_UPDATE_ATTACK)
 e1:SetValue(500)
 c:RegisterEffect(e1)
 ```
+
+`EFFECT_TYPE_XMATERIAL` can also combine with an activated type. Local
+`c99229085.lua` grants the Xyz Monster an Ignition Effect while the card is
+material:
+
+```lua
+local e2=Effect.CreateEffect(c)
+e2:SetDescription(aux.Stringid(id,1))
+e2:SetType(EFFECT_TYPE_XMATERIAL+EFFECT_TYPE_IGNITION)
+e2:SetCondition(s.effcon)
+e2:SetCost(aux.dxmcostgen(1,1,nil))
+e2:SetTarget(s.destg)
+e2:SetOperation(s.desop)
+c:RegisterEffect(e2)
+```
+
+Do not add `SetRange` to that material effect just because ordinary Ignition
+Effects usually have one. The material type changes where the effect is gained
+from.
 
 Granted effects use a separate effect object stored with `SetLabelObject`. The
 granting effect decides which cards receive that object.
@@ -193,14 +268,36 @@ ge:SetValue(500)
 
 local e1=Effect.CreateEffect(c)
 e1:SetType(EFFECT_TYPE_FIELD+EFFECT_TYPE_GRANT)
+e1:SetRange(LOCATION_SZONE)
 e1:SetTargetRange(LOCATION_MZONE,0)
 e1:SetTarget(s.gtarget)
 e1:SetLabelObject(ge)
 c:RegisterEffect(e1)
 ```
 
+The grant target callback receives the granting effect and the possible
+recipient card:
+
+```lua
+function s.gtarget(e,c)
+    return c:IsFaceup() and c:IsSetCard(0x123)
+end
+```
+
+Local `c10604644.lua` uses this shape with `SetRange(LOCATION_SZONE)`,
+`SetTargetRange(LOCATION_MZONE,LOCATION_MZONE)`, a two-argument recipient
+filter, and `SetLabelObject` to provide the granted effect object while the
+granting card remains live.
+
 When you copy a procedure, material, or grant template, verify the exact local
 script pattern for that mechanic. These effects are more sensitive to the
 effect type than a normal Ignition Effect.
 
-See all values in [constants](/api/constants).
+Useful API pages:
+
+- [`Effect.SetType`](/api/functions/Effect/SetType)
+- [`Effect.SetCode`](/api/functions/Effect/SetCode)
+- [`Effect.SetRange`](/api/functions/Effect/SetRange)
+- [`Effect.SetTargetRange`](/api/functions/Effect/SetTargetRange)
+- [`Effect.SetLabelObject`](/api/functions/Effect/SetLabelObject)
+- [Constants](/api/constants)
