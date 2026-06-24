@@ -89,6 +89,18 @@ back into the generated API reference and live card examples.
     <strong>Moving cards</strong>
     <span>Which Duel functions send, destroy, banish, summon, equip, or set cards.</span>
   </a>
+  <a class="sacred-card" href="negation-and-immunity">
+    <strong>Negation and immunity</strong>
+    <span>Separate Chain negation, lingering disable, unaffected text, and protection rules.</span>
+  </a>
+  <a class="sacred-card" href="control-change">
+    <strong>Control change</strong>
+    <span>Take, swap, and continuously set control while preserving controller and owner logic.</span>
+  </a>
+  <a class="sacred-card" href="battle-position-effects">
+    <strong>Battle position effects</strong>
+    <span>Change, Set, force, and prevent battle positions with the right local helpers.</span>
+  </a>
   <a class="sacred-card" href="field-zones-and-sequences">
     <strong>Field zones</strong>
     <span>How location counts, sequence numbers, zone masks, and columns fit together.</span>
@@ -168,21 +180,24 @@ back into the generated API reference and live card examples.
 21. Add and spend visible card counters with [Counters](counters).
 22. Work with cards and groups through [Filters, Card objects, and Group objects](filters-and-groups).
 23. Move cards correctly with [Functions that move cards across locations](moving-cards).
-24. Place cards and read zones with [Field zones and sequences](field-zones-and-sequences).
-25. Script Field Spell patterns with [Field Spells](field-spells).
-26. Target cards correctly with [Targeting flow](targeting-flow).
-27. Resolve activated effects with [Cost, target, and operation lifecycle](cost-target-operation-lifecycle).
-28. Read always-on behavior through [Continuous effects](continuous-effects).
-29. Build visible modifiers with [Continuous stat modifiers](continuous-stat-modifiers).
-30. Script Equip Cards with [Equip Spells and Equip Cards](equip-spells).
-31. Script LP changes with [LP Recovery and Effect Damage](lp-recovery-and-damage).
-32. Store player Chain data with [Player-Targeted Effects](player-targeted-effects).
-33. Apply player locks with [Player Restrictions](player-restrictions).
-34. Script draw, hand, and Deck movement with [Draw, Hand, And Deck Effects](draw-hand-and-deck-effects).
-35. Track temporary script memory with [Flag effects](flag-effects).
-36. Limit effect usage with [Count limits and once per turn](count-limits).
-37. Apply outcomes through [Methods for affecting cards](affecting-cards).
-38. Use card families through [Archetypes and set codes](archetypes-and-setcodes).
+24. Negate effects and protect cards with [Negation and Immunity](negation-and-immunity).
+25. Take or swap control with [Control Change](control-change).
+26. Change or lock battle positions with [Battle Position Effects](battle-position-effects).
+27. Place cards and read zones with [Field zones and sequences](field-zones-and-sequences).
+28. Script Field Spell patterns with [Field Spells](field-spells).
+29. Target cards correctly with [Targeting flow](targeting-flow).
+30. Resolve activated effects with [Cost, target, and operation lifecycle](cost-target-operation-lifecycle).
+31. Read always-on behavior through [Continuous effects](continuous-effects).
+32. Build visible modifiers with [Continuous stat modifiers](continuous-stat-modifiers).
+33. Script Equip Cards with [Equip Spells and Equip Cards](equip-spells).
+34. Script LP changes with [LP Recovery and Effect Damage](lp-recovery-and-damage).
+35. Store player Chain data with [Player-Targeted Effects](player-targeted-effects).
+36. Apply player locks with [Player Restrictions](player-restrictions).
+37. Script draw, hand, and Deck movement with [Draw, Hand, And Deck Effects](draw-hand-and-deck-effects).
+38. Track temporary script memory with [Flag effects](flag-effects).
+39. Limit effect usage with [Count limits and once per turn](count-limits).
+40. Apply outcomes through [Methods for affecting cards](affecting-cards).
+41. Use card families through [Archetypes and set codes](archetypes-and-setcodes).
 
 ## Tutorial Equivalents
 

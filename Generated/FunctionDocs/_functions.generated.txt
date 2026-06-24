@@ -4210,11 +4210,12 @@ Parameters:
 Source: D:\Programs\GitHub\ygopro-core\libduel.cpp:4870
 
 ●bool Duel.NegateActivation(int chainc)
-尝试把chainc的发动无效，并返回是否成功。
+尝试无效一个连锁的发动；只有发动确实被无效时才返回true。
+通常在无效效果的操作处理中使用，并先用Duel.IsChainNegatable等方式确认发动可以被无效。破坏、除外、送去墓地等后续处理应放在返回值为true之后。
 Parameters:
-  chainc: int
+  chainc: int - 要无效的连锁编号，通常是在EVENT_CHAINING操作中的ev。
 Returns:
-  bool
+  bool - 发动被无效时返回true；该连锁不能被无效或无效失败时返回false。
 Source: D:\Programs\GitHub\ygopro-core\libduel.cpp:4929
 
 ●bool Duel.NegateAttack()
@@ -4225,12 +4226,13 @@ Returns:
 Source: D:\Programs\GitHub\ygopro-core\libduel.cpp:4960
 
 ●bool Duel.NegateEffect(int chainc, [bool forced])
-尝试把chainc的效果无效，并返回是否成功。forced表示请求强制无效。
+尝试无效一个连锁的效果，不一定无效其发动；效果确实被无效时返回true。
+用于“把那个效果无效”等文本。可选的forced参数表示请求强制无效。
 Parameters:
-  chainc: int
-  forced: bool optional
+  chainc: int - 要无效其效果的连锁编号。
+  forced: bool optional - 可选的强制无效请求。
 Returns:
-  bool
+  bool - 该连锁的效果被无效时返回true；不能被无效或无效失败时返回false。
 Source: D:\Programs\GitHub\ygopro-core\libduel.cpp:4930
 
 ●void Duel.NegateRelatedChain(Card c, int reset_flag)

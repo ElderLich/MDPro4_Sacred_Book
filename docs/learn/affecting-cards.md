@@ -18,6 +18,9 @@ as if it were a plain Lua table.
 | "Target 1 card..." | [Targeting flow](targeting-flow) |
 | "Destroy/send/banish/add..." | [Functions that move cards across locations](moving-cards) |
 | "Gain/lose ATK/DEF..." | [Continuous stat modifiers](continuous-stat-modifiers) |
+| "Negate/unaffected/cannot be targeted..." | [Negation and immunity](negation-and-immunity) |
+| "Take control/swap control..." | [Control change](control-change) |
+| "Change battle position/Set..." | [Battle position effects](battle-position-effects) |
 | "Equip this card..." | [Equip Spells and Equip Cards](equip-spells) |
 | "Inflict damage/recover LP..." | [LP Recovery and Effect Damage](lp-recovery-and-damage) |
 | "Cards in this Set/archetype..." | [Archetypes and set codes](archetypes-and-setcodes) |
@@ -105,6 +108,10 @@ Duel.RegisterEffect(e1,tp)
 Use `Duel.Negate*` when resolving a negation effect. Use registered effects when
 the card creates a rule that lasts for a duration.
 
+See [Negation and immunity](negation-and-immunity) for the full split between
+activation negation, effect negation, lingering monster disable, immunity,
+targeting protection, and effect-destruction protection.
+
 ## Changing Stats and Properties
 
 Temporary stat changes should include a reset.
@@ -144,8 +151,29 @@ Duel.Equip(tp,c,tc)
 
 After equipping, register equip effects and equip limits on the Equip Card.
 
+See [Control change](control-change) for `Duel.GetControl`,
+`Duel.SwapControl`, Monster Zone checks, owner/controller differences, and
+equip-based control rules.
+
 See [Equip Spells and Equip Cards](equip-spells) for the target, operation,
 equip limit, and `EFFECT_TYPE_EQUIP` pieces together.
+
+## Change Battle Position
+
+One-time battle position changes use `Duel.ChangePosition`:
+
+```lua
+local tc=Duel.GetFirstTarget()
+if tc:IsRelateToEffect(e) and tc:IsFaceup() then
+    Duel.ChangePosition(tc,POS_FACEDOWN_DEFENSE)
+end
+```
+
+Lasting position rules use registered effects such as `EFFECT_SET_POSITION`,
+`EFFECT_CANNOT_CHANGE_POSITION`, or `EFFECT_CANNOT_TURN_SET`.
+
+See [Battle position effects](battle-position-effects) for Set effects,
+face-up Attack/Defense changes, forced positions, and common legality checks.
 
 ## A Review Checklist
 
@@ -164,4 +192,7 @@ Useful API pages:
 - [`Duel.Remove`](/api/functions/Duel/Remove)
 - [`Duel.SpecialSummon`](/api/functions/Duel/SpecialSummon)
 - [`Duel.Equip`](/api/functions/Duel/Equip)
+- [`Duel.NegateActivation`](/api/functions/Duel/NegateActivation)
+- [`Duel.GetControl`](/api/functions/Duel/GetControl)
+- [`Duel.ChangePosition`](/api/functions/Duel/ChangePosition)
 - [`Card.RegisterEffect`](/api/functions/Card/RegisterEffect)

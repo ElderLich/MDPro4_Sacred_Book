@@ -54,7 +54,7 @@ of pouring every detail into one page. The broad navigation shape should be:
 | Monster subtypes: Gemini, Toon, Union, Spirit | [Gemini Monsters](/learn/gemini-monsters), [Toon Monsters](/learn/toon-monsters), [Union Monsters](/learn/union-monsters), and [Spirit Monsters](/learn/spirit-monsters) now split these subtype topics into focused guides with local constants, helper patterns, reset behavior, and local examples. |
 | Spell Cards: Normal, Continuous, Equip, Field, Quick-Play, Ritual | [Spell Card Patterns](/learn/spell-card-patterns) now covers Normal, Continuous, Quick-Play, and Ritual Spell activation shapes; [Equip Spells and Equip Cards](/learn/equip-spells), [Field Spells](/learn/field-spells), and [Ritual Procedure Guide](/learn/ritual-procedure) are focused child pages. |
 | Trap Cards: Normal, Continuous, Counter | [Trap Card Patterns](/learn/trap-card-patterns) now separates Normal Trap activation, Continuous Trap face-up effects, hand/set-turn exceptions, and Counter Trap/Spell Speed 3 patterns. |
-| Effects that affect cards | Expand [Methods for Affecting Cards](/learn/affecting-cards) into focused child pages for stat changes, immunity/negation, control changes, position changes, equip relationships, counters, and location movement. [Counters](/learn/counters) now covers visible card counters as one focused child page. |
+| Effects that affect cards | [Methods for Affecting Cards](/learn/affecting-cards) now routes to focused child pages: [Functions that move cards across locations](/learn/moving-cards), [Continuous stat modifiers](/learn/continuous-stat-modifiers), [Equip Spells and Equip Cards](/learn/equip-spells), [Counters](/learn/counters), [Negation and Immunity](/learn/negation-and-immunity), [Control Change](/learn/control-change), and [Battle Position Effects](/learn/battle-position-effects). |
 | Effects that affect players | [LP Recovery and Effect Damage](/learn/lp-recovery-and-damage), [Player-Targeted Effects](/learn/player-targeted-effects), [Player Restrictions](/learn/player-restrictions), and [Draw, Hand, And Deck Effects](/learn/draw-hand-and-deck-effects) now split player-target data, LP changes, player locks, and draw/hand/Deck patterns into focused pages. |
 
 ## Forever Pass Rule
@@ -258,11 +258,25 @@ Several details were verified directly against local MDPro3/YGOPro sources:
   Doomed (`c19230407.lua`), That Grass Looks Greener (`c11110587.lua`),
   Sunlight Unicorn (`c10321588.lua`), Sylvan Sprout (`c10753491.lua`), and
   Junoldo the Shadespirit Power Patron (`c10266279.lua`).
+- Card-affecting negation, immunity, control, and position behavior was
+  checked against local `constant.lua`, `utility.lua`,
+  `ygopro-scripts-define\def.lua`, generated API pages, and local scripts.
+  Chain negation examples include Cyber Dragon Infinity (`c10443957.lua`),
+  Infinite Impermanence (`c10045474.lua`), and Effect Veiler
+  (`c97268402.lua`). Immunity and protection examples include The Winged
+  Dragon of Ra - Immortal Phoenix (`c10000090.lua`) and Toon Kingdom
+  (`c43175858.lua`). Control examples include Change of Heart (`c4031928.lua`),
+  Mind Control (`c37520316.lua`), Mind Castlin (`c12172567.lua`), Enemy
+  Controller (`c98045062.lua`), and Comic Hand (`c33453260.lua`). Position
+  examples include Book of Moon (`c14087893.lua`), Enemy Controller
+  (`c98045062.lua`), Cosmic Slicer Zer'oll (`c1487805.lua`), Wattsquirrel
+  (`c12296376.lua`), and Knight Dragolich (`c88724332.lua`).
 
 ## Quality Pass Log
 
 | Date | Downloaded page cluster | Sacred Book updates |
 | --- | --- | --- |
+| 2026-06-24 | Effects that affect cards expansion | Added [Negation and Immunity](/learn/negation-and-immunity), [Control Change](/learn/control-change), and [Battle Position Effects](/learn/battle-position-effects) as focused card-affecting guides. These split Chain negation, lingering disable, immunity, targeting/destruction protection, take-control, swap-control, equip-based control, position changes, forced positions, and position locks with local examples and API links. |
 | 2026-06-24 | Effects that affect players expansion | Added [Player-Targeted Effects](/learn/player-targeted-effects), [Player Restrictions](/learn/player-restrictions), and [Draw, Hand, And Deck Effects](/learn/draw-hand-and-deck-effects) as focused player-effect guides. These split target-player Chain data, player/action locks, draw legality, hand discard, Deck-top reveal/sort, and Deck-to-GY patterns with local examples and API links. |
 | 2026-06-23 | Monster subtype expansion | Added focused [Gemini Monsters](/learn/gemini-monsters), [Toon Monsters](/learn/toon-monsters), [Union Monsters](/learn/union-monsters), and [Spirit Monsters](/learn/spirit-monsters) guides instead of folding subtype rules into a broad monster page. Each guide uses local constants, helper behavior, API links, and examples from local scripts. |
 | 2026-06-23 | Activation lifecycle: activated effects, activation legality, and condition/cost/target/operation callbacks | Expanded [Conditions, Costs, Activation Procedures, and Resolution](/learn/effect-callbacks), [Activation Legality](/learn/activation-legality), [Activated Effects](/learn/activated-effects), and [Cost, Target, And Operation Lifecycle](/learn/cost-target-operation-lifecycle) with event-condition signatures, Damage Step legality, Quick Effect negation checks, activation restrictions, Red-Eyes Fusion and Cyber Dragon Infinity examples, and API links for the referenced functions. |

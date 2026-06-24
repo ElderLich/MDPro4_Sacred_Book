@@ -21159,10 +21159,33 @@
     },
     "Duel.NegateActivation": {
       "summary_en": [
-        "Attempts to negate the activation of chainc and returns true if it succeeds."
+        "Attempts to negate the activation of a Chain Link and returns true only if the activation was successfully negated.",
+        "Use it in a resolving negation operation after checking activation legality, commonly with Duel.IsChainNegatable. Gate follow-up actions such as destroy, banish, or send to the GY behind the boolean return."
       ],
       "summary_zh": [
-        "尝试把chainc的发动无效，并返回是否成功。"
+        "尝试无效一个连锁的发动；只有发动确实被无效时才返回true。",
+        "通常在无效效果的操作处理中使用，并先用Duel.IsChainNegatable等方式确认发动可以被无效。破坏、除外、送去墓地等后续处理应放在返回值为true之后。"
+      ],
+      "core_summary_en": [
+        "Attempts to negate a Chain Link activation."
+      ],
+      "core_summary_zh": [
+        "尝试无效一个连锁的发动。"
+      ],
+      "params": [
+        {
+          "name": "chainc",
+          "type": "int",
+          "description": "Chain Link number to negate, commonly ev in an EVENT_CHAINING operation.",
+          "description_zh": "要无效的连锁编号，通常是在EVENT_CHAINING操作中的ev。"
+        }
+      ],
+      "returns": [
+        {
+          "type": "bool",
+          "description": "true if the activation was negated; false if the Chain Link cannot be negated or the negation fails.",
+          "description_zh": "发动被无效时返回true；该连锁不能被无效或无效失败时返回false。"
+        }
       ]
     },
     "Duel.NegateAttack": {
@@ -21189,10 +21212,40 @@
     },
     "Duel.NegateEffect": {
       "summary_en": [
-        "Attempts to negate the effect of chainc and returns true if it succeeds. forced requests a forced disable."
+        "Attempts to negate the effect of a Chain Link without necessarily negating its activation, and returns true if the effect was successfully negated.",
+        "Use this for text such as \"negate that effect\". The optional forced argument requests a forced disable."
       ],
       "summary_zh": [
-        "尝试把chainc的效果无效，并返回是否成功。forced表示请求强制无效。"
+        "尝试无效一个连锁的效果，不一定无效其发动；效果确实被无效时返回true。",
+        "用于“把那个效果无效”等文本。可选的forced参数表示请求强制无效。"
+      ],
+      "core_summary_en": [
+        "Attempts to negate a Chain Link's effect."
+      ],
+      "core_summary_zh": [
+        "尝试无效一个连锁的效果。"
+      ],
+      "params": [
+        {
+          "name": "chainc",
+          "type": "int",
+          "description": "Chain Link number whose effect should be negated.",
+          "description_zh": "要无效其效果的连锁编号。"
+        },
+        {
+          "name": "forced",
+          "type": "bool",
+          "optional": true,
+          "description": "Optional forced-disable request.",
+          "description_zh": "可选的强制无效请求。"
+        }
+      ],
+      "returns": [
+        {
+          "type": "bool",
+          "description": "true if the Chain Link's effect was negated; false if it cannot be negated or the negation fails.",
+          "description_zh": "该连锁的效果被无效时返回true；不能被无效或无效失败时返回false。"
+        }
       ]
     },
     "Duel.NegateRelatedChain": {

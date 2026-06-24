@@ -4186,11 +4186,12 @@ Parameters:
 Source: D:\Programs\GitHub\ygopro-core\libduel.cpp:4870
 
 ●bool Duel.NegateActivation(int chainc)
-Attempts to negate the activation of chainc and returns true if it succeeds.
+Attempts to negate the activation of a Chain Link and returns true only if the activation was successfully negated.
+Use it in a resolving negation operation after checking activation legality, commonly with Duel.IsChainNegatable. Gate follow-up actions such as destroy, banish, or send to the GY behind the boolean return.
 Parameters:
-  chainc: int
+  chainc: int - Chain Link number to negate, commonly ev in an EVENT_CHAINING operation.
 Returns:
-  bool
+  bool - true if the activation was negated; false if the Chain Link cannot be negated or the negation fails.
 Source: D:\Programs\GitHub\ygopro-core\libduel.cpp:4929
 
 ●bool Duel.NegateAttack()
@@ -4201,12 +4202,13 @@ Returns:
 Source: D:\Programs\GitHub\ygopro-core\libduel.cpp:4960
 
 ●bool Duel.NegateEffect(int chainc, [bool forced])
-Attempts to negate the effect of chainc and returns true if it succeeds. forced requests a forced disable.
+Attempts to negate the effect of a Chain Link without necessarily negating its activation, and returns true if the effect was successfully negated.
+Use this for text such as "negate that effect". The optional forced argument requests a forced disable.
 Parameters:
-  chainc: int
-  forced: bool optional
+  chainc: int - Chain Link number whose effect should be negated.
+  forced: bool optional - Optional forced-disable request.
 Returns:
-  bool
+  bool - true if the Chain Link's effect was negated; false if it cannot be negated or the negation fails.
 Source: D:\Programs\GitHub\ygopro-core\libduel.cpp:4930
 
 ●void Duel.NegateRelatedChain(Card c, int reset_flag)

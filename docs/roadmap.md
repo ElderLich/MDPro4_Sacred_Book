@@ -34,7 +34,8 @@ This is the working todo for turning Sacred Book into a complete MDPro3 scriptin
 - [x] Review all `imported_from_dataeditorx` function English and replace awkward machine-style wording with natural MDPro3 terminology.
 - [ ] Check for any raw Chinese text that leaked into English fields after each generation.
 - [ ] Mark uncertain or inferred behavior clearly, with source confidence.
-- [ ] Add focused pages for common scripting patterns: counters and summon procedures.
+- [x] Add focused pages for common scripting patterns: counters and summon procedures.
+- [x] Add focused card-affecting guides for negation/immunity, control changes, and battle position changes.
 - [ ] Expand the beginner path with small complete card scripts that build up one concept at a time.
 - [x] Analyze every downloaded tutorial page and create an original Sacred Book equivalent for each topic.
 - [x] Add focused player-effect guides for player-targeted Chain data, player restrictions, and draw/hand/Deck effects.
