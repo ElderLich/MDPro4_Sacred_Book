@@ -58,6 +58,7 @@ of pouring every detail into one page. The broad navigation shape should be:
 | Effects that affect players | [LP Recovery and Effect Damage](/learn/lp-recovery-and-damage), [Player-Targeted Effects](/learn/player-targeted-effects), [Player Restrictions](/learn/player-restrictions), and [Draw, Hand, And Deck Effects](/learn/draw-hand-and-deck-effects) now split player-target data, LP changes, player locks, and draw/hand/Deck patterns into focused pages. |
 | Effect metadata, categories, properties, hint timing, and client prompts | [Categories, Properties, And Hint Timing](/learn/categories-properties-and-hints) now splits category labels, operation info, targeting flags, Damage Step flags, single-range flags, oath/cannot-disable flags, prompt timing, and `HINTMSG_*` selection hints into a focused learner page. |
 | Selection helpers and Group/Card handling | [Filters, Card Objects, and Group Objects](/learn/filters-and-groups) covers the basic filter and Group model; [Selection And Group Handling](/learn/selection-and-group-handling) now covers official targets, resolution choices, selecting from existing Groups, subgroup checks, `SelectUnselect`, Group lifetime, iteration, and rechecks before acting. |
+| Reset flags, temporary effects, and duration | [Reset Flags And Effect Duration](/learn/reset-flags-and-duration) now centralizes `Effect.SetReset`, phase resets, event resets, `RESETS_STANDARD`, reset counts, player restrictions, card-bound temporary effects, flag lifetimes, and manual reset APIs. |
 
 ## Forever Pass Rule
 
@@ -297,11 +298,22 @@ Several details were verified directly against local MDPro3/YGOPro sources:
   include Book of Moon (`c14087893.lua`), Rescue Hedgehog (`c99742859.lua`),
   Neo-Daedalus (`c10485110.lua`), Lava Golem (`c102380.lua`), and local
   procedure helpers in `procedure.lua`.
+- Reset behavior was checked against local `effect.h`, `constant.lua`,
+  `libeffect.cpp`, `libcard.cpp`, `libduel.cpp`, and
+  `ygopro-scripts-define\def.lua`. `Effect.SetReset`,
+  `Card.RegisterFlagEffect`, and `Duel.RegisterFlagEffect` all treat reset
+  count `0` as `1`; phase resets without `RESET_SELF_TURN` or
+  `RESET_OPPO_TURN` receive both turn-side flags. Local examples checked
+  include Infinite Impermanence (`c10045474.lua`), Effect Veiler
+  (`c97268402.lua`), Lava Golem (`c102380.lua`), Truth Reinforce
+  (`c10118318.lua`), Dragon Master Magia (`c12381100.lua`), and the draw-skip
+  option in `c967928.lua`.
 
 ## Quality Pass Log
 
 | Date | Downloaded page cluster | Sacred Book updates |
 | --- | --- | --- |
+| 2026-06-24 | Reset flags, temporary effects, and duration | Added [Reset Flags And Effect Duration](/learn/reset-flags-and-duration) as a central lifetime guide. It explains card-bound temporary resets, `RESETS_STANDARD`, player/Duel restrictions, phase turn-side flags, reset counts, current-phase pitfalls, flag-effect lifetimes, manual resets, local examples, and API links. |
 | 2026-06-24 | Selection helpers and Group/Card handling | Added [Selection And Group Handling](/learn/selection-and-group-handling) as a practical follow-up to filters and Groups. It explains target selection versus resolution selection, selecting from existing Groups, subgroup legality/selection, `SelectUnselect`, `KeepAlive`/`DeleteGroup`, iteration patterns, and resolution rechecks with local examples and API links. |
 | 2026-06-24 | Categories, properties, hint timing, and client UI behavior | Added [Categories, Properties, And Hint Timing](/learn/categories-properties-and-hints) as a focused effect-metadata guide. It explains category labels versus real actions, operation info for known and unresolved actions, official card/player target flags, Damage Step properties, `EFFECT_FLAG_SINGLE_RANGE`, continuous target flags, oath/cannot-disable flags, `SetHintTiming`, and selection prompts with local examples and API links. |
 | 2026-06-24 | Effects that affect cards expansion | Added [Negation and Immunity](/learn/negation-and-immunity), [Control Change](/learn/control-change), and [Battle Position Effects](/learn/battle-position-effects) as focused card-affecting guides. These split Chain negation, lingering disable, immunity, targeting/destruction protection, take-control, swap-control, equip-based control, position changes, forced positions, and position locks with local examples and API links. |

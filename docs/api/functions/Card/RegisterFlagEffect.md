@@ -10,12 +10,13 @@ Card.RegisterFlagEffect(Card c, int code, int reset_flag, int property, int rese
 
 Registers a special single-card flag effect on c and returns the created Effect.
 Flag effects are script markers: their code is kept separate from regular effect codes, they cannot be disabled, and count=0 is treated as 1.
+When reset_flag contains RESET_PHASE without RESET_SELF_TURN or RESET_OPPO_TURN, the core applies both turn sides. See the Reset Flags And Effect Duration learning guide for full patterns.
 
 ## Parameters
 
 - `c` `Card` - Card that receives the marker.
 - `code` `int` - Flag-effect code; the core masks it with MAX_CARD_ID and adds EFFECT_FLAG_EFFECT.
-- `reset_flag` `int` - RESET_* mask controlling when the marker expires.
+- `reset_flag` `int` - RESET_* mask controlling when the marker expires; phase resets without an explicit turn side apply to both players' turns.
 - `property` `int` - Effect property flags stored on the created marker; EFFECT_FLAG_CANNOT_DISABLE is always added.
 - `reset_count` `int` - Reset counter for the created marker; 0 is treated as 1.
 - `label` `int` optional - Optional integer payload stored on the marker.

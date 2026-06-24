@@ -106,7 +106,8 @@ Magia spends a player option, so it uses `Duel.GetFlagEffect(tp, code)`, not
 Do not forget the reset. A missing or too-broad reset can leave the marker
 longer than the card text intends. For "until the end of this turn", use
 `RESET_PHASE+PHASE_END`. For a card-attached marker, include the event reset when
-the marker should disappear if the card leaves or changes state.
+the marker should disappear if the card leaves or changes state. For the wider
+reset rules, see [Reset Flags And Effect Duration](reset-flags-and-duration).
 
 Do not confuse flag effects with `Effect.SetCountLimit`. Count limits are the
 normal way to limit an effect's activation/use count. Flag effects are for

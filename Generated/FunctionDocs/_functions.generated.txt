@@ -2453,10 +2453,11 @@ Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3548
 ●Effect Card.RegisterFlagEffect(Card c, int code, int reset_flag, int property, int reset_count, [int label], [int desc])
 在c上登记单卡标记效果，并返回创建的Effect。
 标记效果是脚本用的标记：其code与普通效果code分开保存，不能被无效，且count=0会按1处理。
+当reset_flag包含RESET_PHASE且没有指定RESET_SELF_TURN或RESET_OPPO_TURN时，核心会补上双方回合。完整模式参见Reset Flags And Effect Duration学习指南。
 Parameters:
   c: Card - Card that receives the marker.
   code: int - Flag-effect code; the core masks it with MAX_CARD_ID and adds EFFECT_FLAG_EFFECT.
-  reset_flag: int - RESET_* mask controlling when the marker expires.
+  reset_flag: int - RESET_* mask controlling when the marker expires; phase resets without an explicit turn side apply to both players' turns.
   property: int - Effect property flags stored on the created marker; EFFECT_FLAG_CANNOT_DISABLE is always added.
   reset_count: int - Reset counter for the created marker; 0 is treated as 1.
   label: int optional - Optional integer payload stored on the marker.
@@ -4325,10 +4326,11 @@ Source: D:\Programs\GitHub\ygopro-core\libduel.cpp:4852
 ●Effect|nil Duel.RegisterFlagEffect(int player, int code, int reset_flag, int property, int reset_count, [int label])
 为player登记玩家/全局标记效果，并返回创建的Effect。
 该标记效果以玩家为对象、只作为场地效果存在、不能被无效，且count=0会按1处理。
+当reset_flag包含RESET_PHASE且没有指定RESET_SELF_TURN或RESET_OPPO_TURN时，核心会补上双方回合。完整模式参见Reset Flags And Effect Duration学习指南。
 Parameters:
   player: int - Player that receives the marker; invalid players make the core return no values.
   code: int - Flag-effect code; the core masks it with MAX_CARD_ID and adds EFFECT_FLAG_EFFECT.
-  reset_flag: int - RESET_* mask controlling when the marker expires.
+  reset_flag: int - RESET_* mask controlling when the marker expires; phase resets without an explicit turn side apply to both players' turns.
   property: int - Effect property flags stored on the created marker; player-target, field-only, and cannot-disable flags are always added.
   reset_count: int - Reset counter for the created marker; 0 is treated as 1.
   label: int optional - Optional integer payload stored on the marker.
@@ -5399,11 +5401,13 @@ Parameters:
 Source: D:\Programs\GitHub\ygopro-core\libeffect.cpp:614
 
 ●void Effect.SetReset(Effect e, int reset_flag, [int reset_count])
-设置效果e的reset参数和可选的reset次数。
+设置e何时重置，以及它能经过多少次对应的重置检查。
+如果reset_count为0或省略，核心会按1保存。使用阶段重置但没有显式指定自己/对方回合时，核心会同时应用RESET_SELF_TURN和RESET_OPPO_TURN。
+对于绑定在卡上的临时效果，通常要把卡片身份重置（如RESET_EVENT+RESETS_STANDARD）与卡片文本要求的阶段或持续时间重置组合起来。完整模式参见Reset Flags And Effect Duration学习指南。
 Parameters:
-  e: Effect
-  reset_flag: int
-  reset_count: int optional
+  e: Effect - Effect whose reset mask is replaced.
+  reset_flag: int - RESET_* mask describing the events or phases that can reset e.
+  reset_count: int optional - Number of matching reset checks before e resets; omitted or 0 is treated as 1.
 Source: D:\Programs\GitHub\ygopro-core\libeffect.cpp:618
 
 ●void Effect.SetTarget(Effect e, function targ_func)

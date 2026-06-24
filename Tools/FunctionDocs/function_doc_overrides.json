@@ -16881,11 +16881,13 @@
     "Card.RegisterFlagEffect": {
       "summary_en": [
         "Registers a special single-card flag effect on c and returns the created Effect.",
-        "Flag effects are script markers: their code is kept separate from regular effect codes, they cannot be disabled, and count=0 is treated as 1."
+        "Flag effects are script markers: their code is kept separate from regular effect codes, they cannot be disabled, and count=0 is treated as 1.",
+        "When reset_flag contains RESET_PHASE without RESET_SELF_TURN or RESET_OPPO_TURN, the core applies both turn sides. See the Reset Flags And Effect Duration learning guide for full patterns."
       ],
       "summary_zh": [
         "在c上登记单卡标记效果，并返回创建的Effect。",
-        "标记效果是脚本用的标记：其code与普通效果code分开保存，不能被无效，且count=0会按1处理。"
+        "标记效果是脚本用的标记：其code与普通效果code分开保存，不能被无效，且count=0会按1处理。",
+        "当reset_flag包含RESET_PHASE且没有指定RESET_SELF_TURN或RESET_OPPO_TURN时，核心会补上双方回合。完整模式参见Reset Flags And Effect Duration学习指南。"
       ],
       "core_summary_en": [
         "Registers a single-card flag effect."
@@ -16907,7 +16909,7 @@
         {
           "name": "reset_flag",
           "type": "int",
-          "description": "RESET_* mask controlling when the marker expires."
+          "description": "RESET_* mask controlling when the marker expires; phase resets without an explicit turn side apply to both players' turns."
         },
         {
           "name": "property",
@@ -21575,11 +21577,13 @@
     "Duel.RegisterFlagEffect": {
       "summary_en": [
         "Registers a player/global flag effect on player and returns the created Effect.",
-        "The flag effect is player-targeted, field-only, cannot be disabled, and count=0 is treated as 1."
+        "The flag effect is player-targeted, field-only, cannot be disabled, and count=0 is treated as 1.",
+        "When reset_flag contains RESET_PHASE without RESET_SELF_TURN or RESET_OPPO_TURN, the core applies both turn sides. See the Reset Flags And Effect Duration learning guide for full patterns."
       ],
       "summary_zh": [
         "为player登记玩家/全局标记效果，并返回创建的Effect。",
-        "该标记效果以玩家为对象、只作为场地效果存在、不能被无效，且count=0会按1处理。"
+        "该标记效果以玩家为对象、只作为场地效果存在、不能被无效，且count=0会按1处理。",
+        "当reset_flag包含RESET_PHASE且没有指定RESET_SELF_TURN或RESET_OPPO_TURN时，核心会补上双方回合。完整模式参见Reset Flags And Effect Duration学习指南。"
       ],
       "core_summary_en": [
         "Registers a player/global flag effect."
@@ -21601,7 +21605,7 @@
         {
           "name": "reset_flag",
           "type": "int",
-          "description": "RESET_* mask controlling when the marker expires."
+          "description": "RESET_* mask controlling when the marker expires; phase resets without an explicit turn side apply to both players' turns."
         },
         {
           "name": "property",
@@ -24294,7 +24298,13 @@
     "Effect.SetReset": {
       "summary_en": [
         "Sets when e resets and how many reset checks it can survive.",
-        "If reset_count is 0 or omitted, the core stores 1. When a phase reset is used without an explicit turn side, the core applies both RESET_SELF_TURN and RESET_OPPO_TURN."
+        "If reset_count is 0 or omitted, the core stores 1. When a phase reset is used without an explicit turn side, the core applies both RESET_SELF_TURN and RESET_OPPO_TURN.",
+        "For card-bound temporary effects, combine the card-identity reset, such as RESET_EVENT+RESETS_STANDARD, with the phase or lifetime reset from the card text. See the Reset Flags And Effect Duration learning guide for full patterns."
+      ],
+      "summary_zh": [
+        "设置e何时重置，以及它能经过多少次对应的重置检查。",
+        "如果reset_count为0或省略，核心会按1保存。使用阶段重置但没有显式指定自己/对方回合时，核心会同时应用RESET_SELF_TURN和RESET_OPPO_TURN。",
+        "对于绑定在卡上的临时效果，通常要把卡片身份重置（如RESET_EVENT+RESETS_STANDARD）与卡片文本要求的阶段或持续时间重置组合起来。完整模式参见Reset Flags And Effect Duration学习指南。"
       ],
       "core_summary_en": [
         "Sets e's reset flags and optional reset count."
@@ -24305,16 +24315,19 @@
       "params": [
         {
           "name": "e",
-          "type": "Effect"
+          "type": "Effect",
+          "description": "Effect whose reset mask is replaced."
         },
         {
           "name": "reset_flag",
-          "type": "int"
+          "type": "int",
+          "description": "RESET_* mask describing the events or phases that can reset e."
         },
         {
           "name": "reset_count",
           "type": "int",
-          "optional": true
+          "optional": true,
+          "description": "Number of matching reset checks before e resets; omitted or 0 is treated as 1."
         }
       ],
       "returns": []

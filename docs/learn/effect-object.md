@@ -308,7 +308,8 @@ e1:SetReset(RESET_EVENT+RESETS_STANDARD+RESET_PHASE+PHASE_END)
 
 The exact reset depends on the card text. A stat boost until the End Phase, a
 lingering summon restriction, and a copied effect do not necessarily share the
-same reset flags.
+same reset flags. For the full lifetime pattern, see
+[Reset Flags And Effect Duration](reset-flags-and-duration).
 
 ## Building Order
 

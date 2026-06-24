@@ -2438,10 +2438,11 @@ Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3548
 ●Effect Card.RegisterFlagEffect(Card c, int code, int reset_flag, int property, int reset_count, [int label], [int desc])
 Registers a special single-card flag effect on c and returns the created Effect.
 Flag effects are script markers: their code is kept separate from regular effect codes, they cannot be disabled, and count=0 is treated as 1.
+When reset_flag contains RESET_PHASE without RESET_SELF_TURN or RESET_OPPO_TURN, the core applies both turn sides. See the Reset Flags And Effect Duration learning guide for full patterns.
 Parameters:
   c: Card - Card that receives the marker.
   code: int - Flag-effect code; the core masks it with MAX_CARD_ID and adds EFFECT_FLAG_EFFECT.
-  reset_flag: int - RESET_* mask controlling when the marker expires.
+  reset_flag: int - RESET_* mask controlling when the marker expires; phase resets without an explicit turn side apply to both players' turns.
   property: int - Effect property flags stored on the created marker; EFFECT_FLAG_CANNOT_DISABLE is always added.
   reset_count: int - Reset counter for the created marker; 0 is treated as 1.
   label: int optional - Optional integer payload stored on the marker.
@@ -4302,10 +4303,11 @@ Source: D:\Programs\GitHub\ygopro-core\libduel.cpp:4852
 ●Effect|nil Duel.RegisterFlagEffect(int player, int code, int reset_flag, int property, int reset_count, [int label])
 Registers a player/global flag effect on player and returns the created Effect.
 The flag effect is player-targeted, field-only, cannot be disabled, and count=0 is treated as 1.
+When reset_flag contains RESET_PHASE without RESET_SELF_TURN or RESET_OPPO_TURN, the core applies both turn sides. See the Reset Flags And Effect Duration learning guide for full patterns.
 Parameters:
   player: int - Player that receives the marker; invalid players make the core return no values.
   code: int - Flag-effect code; the core masks it with MAX_CARD_ID and adds EFFECT_FLAG_EFFECT.
-  reset_flag: int - RESET_* mask controlling when the marker expires.
+  reset_flag: int - RESET_* mask controlling when the marker expires; phase resets without an explicit turn side apply to both players' turns.
   property: int - Effect property flags stored on the created marker; player-target, field-only, and cannot-disable flags are always added.
   reset_count: int - Reset counter for the created marker; 0 is treated as 1.
   label: int optional - Optional integer payload stored on the marker.
@@ -5364,10 +5366,11 @@ Source: D:\Programs\GitHub\ygopro-core\libeffect.cpp:614
 ●void Effect.SetReset(Effect e, int reset_flag, [int reset_count])
 Sets when e resets and how many reset checks it can survive.
 If reset_count is 0 or omitted, the core stores 1. When a phase reset is used without an explicit turn side, the core applies both RESET_SELF_TURN and RESET_OPPO_TURN.
+For card-bound temporary effects, combine the card-identity reset, such as RESET_EVENT+RESETS_STANDARD, with the phase or lifetime reset from the card text. See the Reset Flags And Effect Duration learning guide for full patterns.
 Parameters:
-  e: Effect
-  reset_flag: int
-  reset_count: int optional
+  e: Effect - Effect whose reset mask is replaced.
+  reset_flag: int - RESET_* mask describing the events or phases that can reset e.
+  reset_count: int optional - Number of matching reset checks before e resets; omitted or 0 is treated as 1.
 Source: D:\Programs\GitHub\ygopro-core\libeffect.cpp:618
 
 ●void Effect.SetTarget(Effect e, function targ_func)
