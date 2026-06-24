@@ -18462,10 +18462,35 @@
     },
     "Duel.CheckTiming": {
       "summary_en": [
-        "Checks whether timing is present in either player's current hint timing mask."
+        "Returns whether the current core hint-timing masks contain timing for either player.",
+        "This is a prompt-window helper, not a full activation legality check; no indexed local card script currently calls it directly.",
+        "Use ordinary type/code/range, condition, cost, and target checks for real legality. See the Chain Timing And Activation Windows learning guide for full patterns."
       ],
       "summary_zh": [
-        "检查timing是否存在于任一玩家当前的hint timing掩码中。"
+        "检查当前核心提示时机掩码中，任一玩家侧是否包含timing。",
+        "这是提示窗口辅助检查，不是完整的发动合法性检查；当前索引的本地卡片脚本没有直接调用它。",
+        "真正的发动合法性仍应由Type/Code/Range、Condition、Cost与Target检查决定。完整模式参见Chain Timing And Activation Windows学习指南。"
+      ],
+      "core_summary_en": [
+        "Checks current hint timing masks."
+      ],
+      "core_summary_zh": [
+        "检查当前提示时机掩码。"
+      ],
+      "params": [
+        {
+          "name": "timing",
+          "type": "int",
+          "description": "TIMING_* mask to test against the current core hint timing.",
+          "description_zh": "要与当前核心提示时机比较的TIMING_*掩码。"
+        }
+      ],
+      "returns": [
+        {
+          "type": "bool",
+          "description": "True if timing is present in either player's current hint timing mask.",
+          "description_zh": "若任一玩家当前提示时机掩码包含timing，则返回true。"
+        }
       ]
     },
     "Duel.CheckTribute": {
@@ -23967,10 +23992,12 @@
     "Effect.SetHintTiming": {
       "summary_en": [
         "Sets when the client should offer or highlight e for the handler's controller and, optionally, the opponent.",
+        "If o_time is omitted, the local core copies s_time to the opponent-side mask; masks are interpreted relative to the handler's controller when prompts are checked.",
         "This controls prompting and display timing only; it does not replace activation legality checks in the effect's condition, cost, or target callbacks."
       ],
       "summary_zh": [
         "设置客户端应在何时向处理者的控制者提示或高亮e，也可以单独设置对手侧提示。",
+        "若省略o_time，本地核心会把s_time复制到对手侧掩码；检查提示时，这两个掩码会按处理者控制者的相对方向解释。",
         "该函数只控制提示与显示时机；不能替代Condition、Cost或Target回调中的发动合法性检查。"
       ],
       "core_summary_en": [

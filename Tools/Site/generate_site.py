@@ -653,6 +653,7 @@ def write_vitepress_config(featured: list[dict[str, object]]) -> None:
         "            { text: 'Callbacks', link: '/learn/effect-callbacks' },",
         "            { text: 'Activated Effects', link: '/learn/activated-effects' },",
         "            { text: 'Activation Legality', link: '/learn/activation-legality' },",
+        "            { text: 'Chain Timing', link: '/learn/chain-timing-and-activation-windows' },",
         "            { text: 'Spell Cards', link: '/learn/spell-card-patterns' },",
         "            { text: 'Trap Cards', link: '/learn/trap-card-patterns' },",
         "            { text: 'Ritual Procedure', link: '/learn/ritual-procedure' },",

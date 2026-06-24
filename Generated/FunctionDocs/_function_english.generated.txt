@@ -3026,11 +3026,13 @@ Returns:
 Source: D:\Programs\GitHub\ygopro-core\libduel.cpp:4994
 
 ●bool Duel.CheckTiming(int timing)
-Checks whether timing is present in either player's current hint timing mask.
+Returns whether the current core hint-timing masks contain timing for either player.
+This is a prompt-window helper, not a full activation legality check; no indexed local card script currently calls it directly.
+Use ordinary type/code/range, condition, cost, and target checks for real legality. See the Chain Timing And Activation Windows learning guide for full patterns.
 Parameters:
-  timing: int
+  timing: int - TIMING_* mask to test against the current core hint timing.
 Returns:
-  bool
+  bool - True if timing is present in either player's current hint timing mask.
 Source: D:\Programs\GitHub\ygopro-core\libduel.cpp:4897
 
 ●bool Duel.CheckTribute(Card c, int min, [int max], [Group|nil mg], [int toplayer], [int zone])
@@ -5309,6 +5311,7 @@ Source: D:\Programs\GitHub\ygopro-core\libeffect.cpp:612
 
 ●void Effect.SetHintTiming(Effect e, int s_time, [int o_time])
 Sets when the client should offer or highlight e for the handler's controller and, optionally, the opponent.
+If o_time is omitted, the local core copies s_time to the opponent-side mask; masks are interpreted relative to the handler's controller when prompts are checked.
 This controls prompting and display timing only; it does not replace activation legality checks in the effect's condition, cost, or target callbacks.
 Parameters:
   e: Effect

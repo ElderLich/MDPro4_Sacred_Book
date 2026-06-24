@@ -131,6 +131,9 @@ The condition is not doing the whole timing job by itself. `SetType`,
 timing; the condition rejects the current Chain Link when this particular card
 should not respond.
 
+For the prompt side of this problem, continue into
+[Chain Timing And Activation Windows](chain-timing-and-activation-windows).
+
 ## Optional Trigger Effects
 
 Optional triggers should only activate when their effect can make a legal
@@ -204,6 +207,7 @@ Before an activated effect is finished, check:
 
 Related lessons:
 
+- [Chain Timing And Activation Windows](chain-timing-and-activation-windows)
 - [Activation legality](activation-legality)
 - [Spell Card Patterns](spell-card-patterns)
 - [Trap Card Patterns](trap-card-patterns)

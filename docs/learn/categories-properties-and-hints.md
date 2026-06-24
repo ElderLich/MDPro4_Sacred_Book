@@ -264,6 +264,9 @@ Use hint timing to make legal effects visible at sensible times. Keep the real
 legality in `SetCode`, `SetRange`, `SetCondition`, `SetCost`, and the
 `chk==0` branch of the target callback.
 
+For Chain response windows, Spell Speed, and Damage Step prompt details, see
+[Chain Timing And Activation Windows](chain-timing-and-activation-windows).
+
 ## Selection Hints
 
 `Duel.Hint(HINT_SELECTMSG,tp,HINTMSG_*)` controls the prompt shown before a

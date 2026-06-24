@@ -3042,11 +3042,13 @@ Returns:
 Source: D:\Programs\GitHub\ygopro-core\libduel.cpp:4994
 
 ●bool Duel.CheckTiming(int timing)
-检查timing是否存在于任一玩家当前的hint timing掩码中。
+检查当前核心提示时机掩码中，任一玩家侧是否包含timing。
+这是提示窗口辅助检查，不是完整的发动合法性检查；当前索引的本地卡片脚本没有直接调用它。
+真正的发动合法性仍应由Type/Code/Range、Condition、Cost与Target检查决定。完整模式参见Chain Timing And Activation Windows学习指南。
 Parameters:
-  timing: int
+  timing: int - 要与当前核心提示时机比较的TIMING_*掩码。
 Returns:
-  bool
+  bool - 若任一玩家当前提示时机掩码包含timing，则返回true。
 Source: D:\Programs\GitHub\ygopro-core\libduel.cpp:4897
 
 ●bool Duel.CheckTribute(Card c, int min, [int max], [Group|nil mg], [int toplayer], [int zone])
@@ -5346,6 +5348,7 @@ Source: D:\Programs\GitHub\ygopro-core\libeffect.cpp:612
 
 ●void Effect.SetHintTiming(Effect e, int s_time, [int o_time])
 设置客户端应在何时向处理者的控制者提示或高亮e，也可以单独设置对手侧提示。
+若省略o_time，本地核心会把s_time复制到对手侧掩码；检查提示时，这两个掩码会按处理者控制者的相对方向解释。
 该函数只控制提示与显示时机；不能替代Condition、Cost或Target回调中的发动合法性检查。
 Parameters:
   e: Effect

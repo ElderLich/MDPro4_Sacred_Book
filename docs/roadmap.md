@@ -37,6 +37,7 @@ This is the working todo for turning Sacred Book into a complete MDPro3 scriptin
 - [x] Add focused pages for common scripting patterns: counters and summon procedures.
 - [x] Add focused card-affecting guides for negation/immunity, control changes, and battle position changes.
 - [x] Add a focused categories/properties/hint timing guide for effect metadata, operation info, and client prompts.
+- [x] Add a focused chain timing and activation windows guide for prompt masks, Chain responses, Spell Speed, and Damage Step legality.
 - [x] Add a focused selection and Group-handling guide for target selection, resolution choice, subgroup selection, and stored Groups.
 - [x] Add a focused reset flags and duration guide for temporary effects, phase resets, and flag lifetimes.
 - [ ] Expand the beginner path with small complete card scripts that build up one concept at a time.

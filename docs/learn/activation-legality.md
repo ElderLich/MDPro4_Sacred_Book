@@ -8,6 +8,9 @@ habit is to separate legality checks from resolution. A legal activation can
 still resolve without doing anything if its target disappears or a required
 zone closes.
 
+For the prompt and response-window side of the same topic, see
+[Chain Timing And Activation Windows](chain-timing-and-activation-windows).
+
 ## The Legality Flow
 
 For an activated effect, the engine checks roughly this shape:
