@@ -63,7 +63,7 @@ This is the working todo for turning Sacred Book into a complete MDPro3 scriptin
 
 - [x] Add generated "used by" sections to function pages from `/data/function-usage.json`.
 - [x] Add source script snippets around detected function calls.
-- [ ] Add card text search and category filtering to the Script Explorer.
+- [x] Add card text search and category filtering to the Script Explorer.
 - [x] Sync reviewed `_functions` and `_function_english` exports into DataEditorX and commit that repo separately.
 - [x] Review `DataEditorX/data/lua/constant*` against the generated constant docs and export updated editor-facing files.
 - [x] Review `effect_creator_settings.txt` against current `EFFECT_*` constants; the audit now separates effect codes, properties, and reserved/internal constants.

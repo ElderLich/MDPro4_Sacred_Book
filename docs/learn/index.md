@@ -42,15 +42,16 @@ into the card pattern you are actually trying to build.
 1. [Structure of a card script](script-structure)
 2. [First Scripts To Study](first-scripts)
 3. [Beginner Script Ladder](beginner-script-ladder)
-4. [Creation, building, and registration of an effect object](effect-object)
-5. [EFFECT_TYPE constants and templates](effect-types)
-6. [Conditions, costs, activation procedures, and resolution](effect-callbacks)
-7. [Activated effects](activated-effects)
-8. [Activation legality](activation-legality)
-9. [Targeting flow](targeting-flow)
-10. [Selection and Group handling](selection-and-group-handling)
-11. [Client UI and prompt behavior](client-ui-and-prompt-behavior)
-12. [Common script errors and debugging](common-script-errors-and-debugging)
+4. [Write Your First Custom Card](first-custom-card)
+5. [Creation, building, and registration of an effect object](effect-object)
+6. [EFFECT_TYPE constants and templates](effect-types)
+7. [Conditions, costs, activation procedures, and resolution](effect-callbacks)
+8. [Activated effects](activated-effects)
+9. [Activation legality](activation-legality)
+10. [Targeting flow](targeting-flow)
+11. [Selection and Group handling](selection-and-group-handling)
+12. [Client UI and prompt behavior](client-ui-and-prompt-behavior)
+13. [Common script errors and debugging](common-script-errors-and-debugging)
 
 That first route is deliberately short. It gives you enough structure to read a
 local script without drowning in every summon type, card family, and helper.
@@ -69,6 +70,7 @@ card you are scripting.
     <a href="categories-properties-and-hints">Categories and properties</a>
     <a href="first-scripts">First scripts</a>
     <a href="beginner-script-ladder">Beginner script ladder</a>
+    <a href="first-custom-card">First custom card</a>
   </section>
   <section class="learn-stage">
     <h3>Activation Flow</h3>

@@ -27,6 +27,72 @@ DOT_CALL_RE = re.compile(r"\b(aux|Auxiliary|Duel|Card|Effect|Group|Debug|bit)\.(
 COLON_CALL_RE = re.compile(r"\b[A-Za-z_]\w*:([A-Za-z_]\w*)")
 SCRIPT_RE = re.compile(r"^c(\d+)\.lua$", re.IGNORECASE)
 
+TYPE_LABELS = [
+    (0x1, "Monster"),
+    (0x2, "Spell"),
+    (0x4, "Trap"),
+    (0x10, "Normal"),
+    (0x20, "Effect"),
+    (0x40, "Fusion"),
+    (0x80, "Ritual"),
+    (0x100, "Trap Monster"),
+    (0x200, "Spirit"),
+    (0x400, "Union"),
+    (0x800, "Gemini"),
+    (0x1000, "Tuner"),
+    (0x2000, "Synchro"),
+    (0x4000, "Token"),
+    (0x10000, "Quick-Play"),
+    (0x20000, "Continuous"),
+    (0x40000, "Equip"),
+    (0x80000, "Field"),
+    (0x100000, "Counter"),
+    (0x200000, "Flip"),
+    (0x400000, "Toon"),
+    (0x800000, "Xyz"),
+    (0x1000000, "Pendulum"),
+    (0x2000000, "Special Summon"),
+    (0x4000000, "Link"),
+]
+
+CATEGORY_LABELS = [
+    (0x1, "Destroy"),
+    (0x2, "Release"),
+    (0x4, "Banish"),
+    (0x8, "To hand"),
+    (0x10, "To Deck"),
+    (0x20, "To GY"),
+    (0x40, "Deck send"),
+    (0x80, "Discard self"),
+    (0x100, "Normal Summon"),
+    (0x200, "Special Summon"),
+    (0x400, "Token"),
+    (0x800, "GY action"),
+    (0x1000, "Position"),
+    (0x2000, "Control"),
+    (0x4000, "Effect negation"),
+    (0x8000, "Summon negation"),
+    (0x10000, "Draw"),
+    (0x20000, "Search"),
+    (0x40000, "Equip"),
+    (0x80000, "Damage"),
+    (0x100000, "Recover"),
+    (0x200000, "ATK change"),
+    (0x400000, "DEF change"),
+    (0x800000, "Counter"),
+    (0x1000000, "Coin"),
+    (0x2000000, "Dice"),
+    (0x4000000, "Leave GY"),
+    (0x8000000, "GY Special Summon"),
+    (0x10000000, "Activation negation"),
+    (0x20000000, "Declare name"),
+    (0x40000000, "Fusion Summon"),
+    (0x80000000, "To Extra Deck"),
+    (0x100000000, "Set monster"),
+    (0x200000000, "Set Spell/Trap"),
+    (0x400000000, "Discard opponent"),
+]
+
 
 @dataclass(frozen=True)
 class CardRecord:
@@ -117,6 +183,16 @@ def format_stat(value: int) -> str:
     if value < 0:
         return "-"
     return str(value)
+
+
+def labels_from_mask(value: int, labels: list[tuple[int, str]]) -> list[str]:
+    return [label for bit, label in labels if value & bit]
+
+
+def category_labels_from_mask(value: int) -> list[str]:
+    # Some legacy category values are stored as signed 32-bit integers.
+    mask = value & 0xFFFFFFFF if value < 0 else value
+    return labels_from_mask(mask, CATEGORY_LABELS)
 
 
 def extract_api_calls(script: str, api_names: set[str], method_names: dict[str, list[str]]) -> list[str]:
@@ -465,6 +541,9 @@ def scan_examples() -> tuple[list[dict[str, object]], list[dict[str, object]]]:
                 "race": card.race,
                 "attribute": card.attribute,
                 "category": card.category,
+                "desc": card.desc,
+                "card_type_labels": labels_from_mask(card.type, TYPE_LABELS),
+                "category_labels": category_labels_from_mask(card.category),
                 "api_calls": calls,
                 "script_length": len(script),
                 "desc_length": len(card.desc),
@@ -655,6 +734,7 @@ def write_vitepress_config(featured: list[dict[str, object]]) -> None:
         "            { text: 'Script Structure', link: '/learn/script-structure' },",
         "            { text: 'First Scripts', link: '/learn/first-scripts' },",
         "            { text: 'Beginner Script Ladder', link: '/learn/beginner-script-ladder' },",
+        "            { text: 'First Custom Card', link: '/learn/first-custom-card' },",
         "            { text: 'Effect Object', link: '/learn/effect-object' },",
         "            { text: 'Effect Types', link: '/learn/effect-types' },",
         "            { text: 'Categories and Properties', link: '/learn/categories-properties-and-hints' },",

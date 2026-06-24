@@ -407,6 +407,15 @@ Several details were verified directly against local MDPro3/YGOPro sources:
   Black Hole (`c53129443.lua`), Fissure (`c97169186.lua`), Banner of Courage
   (`c10012614.lua`), Marron (`c11548522.lua`), Book of Moon (`c14087893.lua`),
   and Mirror Force (`c44095762.lua`).
+- The first custom-card walkthrough combines local Pot of Greed
+  (`c55144522.lua`) target-player draw storage with Book of Moon
+  (`c14087893.lua`) targeting and position-change rechecks. `Duel.ChangePosition`
+  return behavior was checked against the generated API page before documenting
+  the draw-after-success pattern.
+- Script Explorer card text search and filters are generated from local
+  `cards.cdb`, local scripts, generated API calls, and local `TYPE_*` /
+  `CATEGORY_*` constants. The generated public records now include card text,
+  card-type labels, and operation category labels for the Vue explorer.
 - The second archive audit pass for effect setup and activation flow was
   checked against local `libeffect.cpp`, generated Effect/Duel API pages, and
   local scripts. Cyber Dragon Infinity (`c10443957.lua`) covers `SetCode` as
@@ -459,6 +468,7 @@ Several details were verified directly against local MDPro3/YGOPro sources:
 
 | Date | Downloaded page cluster | Sacred Book updates |
 | --- | --- | --- |
+| 2026-06-24 | Script Explorer and first custom script practice | Expanded [Script Explorer](/tools/script-explorer) with card text search, a dedicated text mode, card-type and category filters, featured-only filtering, type/category result chips, and card-text snippets. Added [Write Your First Custom Card](/learn/first-custom-card) and practice exercises under [Beginner Script Ladder](/learn/beginner-script-ladder). |
 | 2026-06-24 | Beginner route and navigation audit | Added [Beginner Script Ladder](/learn/beginner-script-ladder) as a concrete sequence of complete small scripts for draw, targeting, non-targeting Groups, Min/Max stat selection, continuous modifiers, mandatory triggers, Quick-Play prompts, and Trap responses. Updated Home, Learn, the VitePress sidebar, and the site generator sidebar source. Confirmed every `docs/learn` page is linked from both the Learn index and sidebar. |
 | 2026-06-24 | Min/Max selection, subarchetypes, and effect-type templates | Added [Min/Max Stat Card Selection](/learn/min-max-stat-selection) as a focused guide for tied min/max Groups, returned values, custom scoring functions, activation-vs-resolution selection, and targeting variants. Refined [Archetypes and Set Codes](/learn/archetypes-and-setcodes) with identity-check choices, listed-card metadata, listed-set helpers, original-code checks, and practical filter patterns. Refined [EFFECT_TYPE Constants and Templates](/learn/effect-types) with type-shape selection, trigger source combinations, Xyz Material activated effects, grant effects, and special `SetTargetRange` modes. |
 | 2026-06-24 | Equip and Field Spell follow-up | Refined [Equip Spells and Equip Cards](/learn/equip-spells) with activation target-vs-equip-limit guidance, nonstandard equip prechecks, and stepped equip examples. Refined [Field Spells](/learn/field-spells) with handler-range guidance and the activate-vs-place distinction for Field Spells moved through other effects. |

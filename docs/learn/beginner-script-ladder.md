@@ -389,6 +389,30 @@ What this teaches:
 | `tp~=Duel.GetTurnPlayer()` | The local script only lets the defending player activate it. |
 | Rebuilt Group | The operation destroys the current matching monsters at resolution. |
 
+## Practice Exercises
+
+Do these after reading the rungs. The goal is not to invent a complicated card;
+it is to change one moving part at a time and keep the activation flow correct.
+
+| Exercise | Start from | Change |
+| --- | --- | --- |
+| Draw 1 instead of 2. | Rung 1 | Change the draw amount in `chk==0`, `SetTargetParam`, `SetOperationInfo`, and resolution. |
+| Destroy only face-up Spells/Traps. | Rung 2 | Add `c:IsFaceup()` to the target filter and keep the `chkc` branch consistent. |
+| Destroy all opponent monsters only. | Rung 3 | Change the matching locations to your opponent's Monster Zone. |
+| Lowest ATK instead of highest DEF. | Rung 4 | Use `Card.GetAttack`, `GetMinGroup`, and an ATK-valid filter. |
+| Continuous DEF boost. | Rung 5 | Change `EFFECT_UPDATE_ATTACK` to `EFFECT_UPDATE_DEFENSE`. |
+| Optional trigger. | Rung 6 | Change the type to `EFFECT_TYPE_SINGLE+EFFECT_TYPE_TRIGGER_O` and add a useful description. |
+| Different Quick-Play target. | Rung 7 | Replace the position filter with a Spell/Trap target filter from Rung 2. |
+| Trap that responds to a Summon. | Rung 8 | Compare with local `c4206964.lua` and use a summon-success event. |
+
+Check each exercise with the same rhythm:
+
+1. Does `chk==0` prove that the required action can happen?
+2. If the effect targets, does the `chkc` branch match the target selection?
+3. Does `Duel.SetOperationInfo` announce the action honestly?
+4. Does the operation rebuild or recheck the current game state before acting?
+5. Are prompts and hints visible enough for the client?
+
 ## Move Forward
 
 After the ladder, the main pieces are in your hands:
@@ -402,6 +426,7 @@ After the ladder, the main pieces are in your hands:
 | Continuous rules | [Effects That Apply Continuously](continuous-effects) |
 | Spell/Trap variants | [Spell Card Patterns](spell-card-patterns) and [Trap Card Patterns](trap-card-patterns) |
 | Debugging mistakes | [Common Script Errors And Debugging](common-script-errors-and-debugging) |
+| Your first original script | [Write Your First Custom Card](first-custom-card) |
 
 Useful API pages:
 

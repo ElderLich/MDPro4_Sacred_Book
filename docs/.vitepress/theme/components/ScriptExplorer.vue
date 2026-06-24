@@ -2,12 +2,15 @@
 import { computed, onMounted, ref } from 'vue';
 import { withBase } from 'vitepress';
 
-type SearchMode = 'all' | 'cards' | 'functions';
+type SearchMode = 'all' | 'cards' | 'text' | 'functions';
 
 type ScriptRecord = {
   id: number;
   name: string;
   script: string;
+  desc?: string;
+  card_type_labels?: string[];
+  category_labels?: string[];
   api_calls: string[];
   script_length: number;
   desc_length: number;
@@ -16,6 +19,9 @@ type ScriptRecord = {
 const resultLimit = 200;
 const query = ref('');
 const mode = ref<SearchMode>('all');
+const typeFilter = ref('all');
+const categoryFilter = ref('all');
+const featuredOnly = ref(false);
 const loading = ref(true);
 const error = ref('');
 const records = ref<ScriptRecord[]>([]);
@@ -72,16 +78,28 @@ const totalApiCalls = computed(() =>
   records.value.reduce((sum, record) => sum + (record.api_calls?.length || 0), 0),
 );
 
-const filteredRecords = computed(() => {
-  if (!tokens.value.length) {
-    return mode.value === 'functions'
-      ? records.value.filter((record) => (record.api_calls?.length || 0) > 0)
-      : records.value;
-  }
+const typeOptions = computed(() => buildOptionCounts((record) => record.card_type_labels || []));
+const categoryOptions = computed(() => buildOptionCounts((record) => record.category_labels || []));
+const hasActiveFilters = computed(
+  () => typeFilter.value !== 'all' || categoryFilter.value !== 'all' || featuredOnly.value,
+);
 
-  return records.value.filter((record) =>
-    tokens.value.every((token) => recordMatchesToken(record, token)),
-  );
+const filteredRecords = computed(() => {
+  return records.value.filter((record) => {
+    if (featuredOnly.value && !isFeatured(record)) {
+      return false;
+    }
+    if (typeFilter.value !== 'all' && !(record.card_type_labels || []).includes(typeFilter.value)) {
+      return false;
+    }
+    if (categoryFilter.value !== 'all' && !(record.category_labels || []).includes(categoryFilter.value)) {
+      return false;
+    }
+    if (mode.value === 'functions' && !tokens.value.length && !(record.api_calls?.length || 0)) {
+      return false;
+    }
+    return !tokens.value.length || tokens.value.every((token) => recordMatchesToken(record, token));
+  });
 });
 
 const results = computed(() => {
@@ -100,17 +118,43 @@ function searchFunction(name: string) {
   mode.value = 'functions';
 }
 
+function setTypeFilter(label: string) {
+  typeFilter.value = label;
+}
+
+function setCategoryFilter(label: string) {
+  categoryFilter.value = label;
+}
+
+function clearFilters() {
+  typeFilter.value = 'all';
+  categoryFilter.value = 'all';
+  featuredOnly.value = false;
+}
+
 function recordMatchesToken(record: ScriptRecord, token: string) {
-  const cardHaystack = `${record.id} ${record.name} ${record.script}`.toLowerCase();
+  const cardHaystack = [
+    record.id,
+    record.name,
+    record.script,
+    ...(record.card_type_labels || []),
+    ...(record.category_labels || []),
+  ]
+    .join(' ')
+    .toLowerCase();
+  const textHaystack = (record.desc || '').toLowerCase();
   const functionHaystack = (record.api_calls || []).join(' ').toLowerCase();
 
   if (mode.value === 'cards') {
     return cardHaystack.includes(token);
   }
+  if (mode.value === 'text') {
+    return textHaystack.includes(token);
+  }
   if (mode.value === 'functions') {
     return functionHaystack.includes(token);
   }
-  return cardHaystack.includes(token) || functionHaystack.includes(token);
+  return cardHaystack.includes(token) || textHaystack.includes(token) || functionHaystack.includes(token);
 }
 
 function recordScore(record: ScriptRecord, q: string) {
@@ -122,12 +166,18 @@ function recordScore(record: ScriptRecord, q: string) {
   const exactId = String(record.id) === q;
   const exactName = record.name.toLowerCase() === q;
   const nameStarts = record.name.toLowerCase().startsWith(q);
+  const textMatch = q && (record.desc || '').toLowerCase().includes(q);
+  const typeMatch = (record.card_type_labels || []).some((label) => label.toLowerCase() === q);
+  const categoryMatch = (record.category_labels || []).some((label) => label.toLowerCase() === q);
 
   return (
     (exactId ? 8000 : 0) +
     (exactName ? 6000 : 0) +
     (nameStarts ? 3000 : 0) +
     (exactFunction ? 5000 : 0) +
+    (categoryMatch ? 1800 : 0) +
+    (typeMatch ? 1200 : 0) +
+    (textMatch ? 500 : 0) +
     (isFeatured(record) ? 80 : 0) +
     (record.api_calls?.length || 0)
   );
@@ -142,6 +192,49 @@ function visibleCalls(record: ScriptRecord) {
 
 function hiddenCallCount(record: ScriptRecord) {
   return Math.max(0, (record.api_calls?.length || 0) - visibleCalls(record).length);
+}
+
+function visibleTags(values: string[] | undefined, limit = 6) {
+  return (values || []).slice(0, limit);
+}
+
+function textSnippet(record: ScriptRecord) {
+  const text = (record.desc || '').replace(/\s+/g, ' ').trim();
+  if (!text) {
+    return '';
+  }
+  const q = normalizedQuery.value;
+  if (!q) {
+    return truncateText(text, 220);
+  }
+  const index = text.toLowerCase().indexOf(q);
+  if (index === -1) {
+    return truncateText(text, 220);
+  }
+  const start = Math.max(0, index - 80);
+  const end = Math.min(text.length, index + q.length + 140);
+  const prefix = start > 0 ? '...' : '';
+  const suffix = end < text.length ? '...' : '';
+  return `${prefix}${text.slice(start, end)}${suffix}`;
+}
+
+function truncateText(text: string, limit: number) {
+  if (text.length <= limit) {
+    return text;
+  }
+  return `${text.slice(0, limit).trim()}...`;
+}
+
+function buildOptionCounts(getLabels: (record: ScriptRecord) => string[]) {
+  const counts = new Map<string, number>();
+  for (const record of records.value) {
+    for (const label of getLabels(record)) {
+      counts.set(label, (counts.get(label) || 0) + 1);
+    }
+  }
+  return Array.from(counts, ([label, count]) => ({ label, count })).sort(
+    (a, b) => b.count - a.count || a.label.localeCompare(b.label),
+  );
 }
 
 function apiHref(name: string) {
@@ -179,15 +272,47 @@ function safeSegment(value: string) {
         <input
           v-model="query"
           type="search"
-          placeholder="Card name, 62091148, Duel.SpecialSummon, IsSetCard"
+          placeholder="Card name, text, 62091148, Duel.SpecialSummon, IsSetCard"
         />
       </label>
 
       <div class="explorer-modes" aria-label="Search mode">
         <button type="button" :class="{ active: mode === 'all' }" @click="setMode('all')">All</button>
         <button type="button" :class="{ active: mode === 'cards' }" @click="setMode('cards')">Cards</button>
+        <button type="button" :class="{ active: mode === 'text' }" @click="setMode('text')">Text</button>
         <button type="button" :class="{ active: mode === 'functions' }" @click="setMode('functions')">Functions</button>
       </div>
+    </div>
+
+    <div class="explorer-filters" aria-label="Script filters">
+      <label>
+        <span>Card type</span>
+        <select v-model="typeFilter">
+          <option value="all">All card types</option>
+          <option v-for="option in typeOptions" :key="option.label" :value="option.label">
+            {{ option.label }} ({{ option.count.toLocaleString() }})
+          </option>
+        </select>
+      </label>
+
+      <label>
+        <span>Category</span>
+        <select v-model="categoryFilter">
+          <option value="all">All categories</option>
+          <option v-for="option in categoryOptions" :key="option.label" :value="option.label">
+            {{ option.label }} ({{ option.count.toLocaleString() }})
+          </option>
+        </select>
+      </label>
+
+      <label class="explorer-check">
+        <input v-model="featuredOnly" type="checkbox" />
+        <span>Featured pages only</span>
+      </label>
+
+      <button v-if="hasActiveFilters" class="filter-clear" type="button" @click="clearFilters">
+        Clear filters
+      </button>
     </div>
 
     <p v-if="loading" class="explorer-state">Loading script index...</p>
@@ -253,7 +378,33 @@ function safeSegment(value: string) {
               <span>{{ record.script }}</span>
               <span>{{ (record.api_calls?.length || 0).toLocaleString() }} detected calls</span>
               <span>{{ record.script_length.toLocaleString() }} script chars</span>
+              <span v-if="record.desc_length">{{ record.desc_length.toLocaleString() }} text chars</span>
             </div>
+
+            <div class="result-tags" v-if="record.card_type_labels?.length || record.category_labels?.length">
+              <button
+                v-for="label in visibleTags(record.card_type_labels, 5)"
+                :key="`type-${record.id}-${label}`"
+                class="tag-chip type-tag"
+                type="button"
+                @click="setTypeFilter(label)"
+              >
+                {{ label }}
+              </button>
+              <button
+                v-for="label in visibleTags(record.category_labels, 7)"
+                :key="`category-${record.id}-${label}`"
+                class="tag-chip category-tag"
+                type="button"
+                @click="setCategoryFilter(label)"
+              >
+                {{ label }}
+              </button>
+            </div>
+
+            <p v-if="textSnippet(record)" class="result-text">
+              {{ textSnippet(record) }}
+            </p>
 
             <div class="result-links">
               <a :href="scriptHref(record)" target="_blank" rel="noreferrer">Script</a>

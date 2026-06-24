@@ -531,7 +531,7 @@
 
 .explorer-modes {
   display: inline-grid;
-  grid-template-columns: repeat(3, minmax(80px, 1fr));
+  grid-template-columns: repeat(4, minmax(76px, 1fr));
   border: 1px solid var(--vp-c-divider);
   border-radius: 8px;
   overflow: hidden;
@@ -556,6 +556,64 @@
 .explorer-modes button.active {
   color: var(--vp-c-brand-1);
   background: var(--vp-c-bg);
+}
+
+.explorer-filters {
+  display: grid;
+  grid-template-columns: minmax(180px, 1fr) minmax(220px, 1.2fr) auto auto;
+  gap: 10px;
+  align-items: end;
+  margin: -4px 0 18px;
+}
+
+.explorer-filters label {
+  display: grid;
+  gap: 6px;
+  color: var(--vp-c-text-2);
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.explorer-filters select {
+  width: 100%;
+  min-height: 40px;
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 8px;
+  padding: 8px 10px;
+  color: var(--vp-c-text-1);
+  background: var(--vp-c-bg);
+  font-size: 14px;
+}
+
+.explorer-check {
+  min-height: 40px;
+  grid-template-columns: auto 1fr !important;
+  align-items: center;
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 8px;
+  padding: 8px 10px;
+  background: var(--vp-c-bg-soft);
+}
+
+.explorer-check input {
+  width: 16px;
+  height: 16px;
+}
+
+.filter-clear {
+  min-height: 40px;
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 8px;
+  padding: 0 12px;
+  color: var(--vp-c-brand-1);
+  background: var(--vp-c-bg);
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.filter-clear:hover {
+  border-color: var(--vp-c-brand-1);
+  background: var(--vp-c-bg-soft);
 }
 
 .explorer-state {
@@ -694,6 +752,45 @@
   font-weight: 700;
 }
 
+.result-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 10px;
+}
+
+.tag-chip {
+  min-height: 26px;
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 6px;
+  padding: 3px 8px;
+  color: var(--vp-c-text-1);
+  background: var(--vp-c-bg);
+  font-size: 12px;
+  font-weight: 650;
+  cursor: pointer;
+}
+
+.type-tag {
+  border-color: color-mix(in srgb, var(--vp-c-brand-1) 35%, var(--vp-c-divider));
+}
+
+.category-tag {
+  border-color: color-mix(in srgb, var(--vp-c-green-2) 35%, var(--vp-c-divider));
+}
+
+.tag-chip:hover {
+  color: var(--vp-c-brand-1);
+  border-color: var(--vp-c-brand-1);
+}
+
+.result-text {
+  margin: 10px 0 0;
+  color: var(--vp-c-text-2);
+  font-size: 13px;
+  line-height: 1.55;
+}
+
 .matched-call-list {
   margin-top: 12px;
 }
@@ -710,6 +807,7 @@
 
 @media (max-width: 760px) {
   .explorer-toolbar,
+  .explorer-filters,
   .explorer-stats {
     grid-template-columns: 1fr;
   }
