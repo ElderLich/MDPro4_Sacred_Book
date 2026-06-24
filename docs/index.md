@@ -7,7 +7,7 @@
     <p>Start with a working card file, follow a few small local scripts, then use the lessons and generated API pages when you need exact behavior.</p>
     <div class="home-actions">
       <a class="home-primary" href="learn/">Start Learning</a>
-      <a class="home-secondary" href="learn/first-scripts">Study First Scripts</a>
+      <a class="home-secondary" href="learn/beginner-script-ladder">Build The Ladder</a>
       <a class="home-secondary" href="tools/script-explorer">Find Local Examples</a>
     </div>
   </div>
@@ -38,18 +38,23 @@ c:RegisterEffect(e1)</code></pre>
     <span>Study five real patterns</span>
     <small>Draw, target, prompt, continuous, and stat-based local examples.</small>
   </a>
-  <a href="learn/effect-callbacks">
+  <a href="learn/beginner-script-ladder">
     <strong>3</strong>
+    <span>Build small effects</span>
+    <small>Walk through complete draw, target, Group, trigger, Quick-Play, and Trap scripts.</small>
+  </a>
+  <a href="learn/effect-callbacks">
+    <strong>4</strong>
     <span>Follow activation flow</span>
     <small>Condition, cost, target, operation, and <code>chk==0</code> legality.</small>
   </a>
   <a href="learn/targeting-flow">
-    <strong>4</strong>
+    <strong>5</strong>
     <span>Choose cards safely</span>
     <small>Targets, Groups, relation checks, and resolution choices.</small>
   </a>
   <a href="learn/common-script-errors-and-debugging">
-    <strong>5</strong>
+    <strong>6</strong>
     <span>Debug with structure</span>
     <small>Trace invisible prompts, nil values, stale targets, and reset mistakes.</small>
   </a>
@@ -63,10 +68,10 @@ c:RegisterEffect(e1)</code></pre>
     <strong>Learn</strong>
     <span>Follow the beginner curve first, then branch into card types, summon procedures, outcomes, and debugging.</span>
   </a>
-  <a class="home-portal-card" href="learn/first-scripts">
+  <a class="home-portal-card" href="learn/beginner-script-ladder">
     <small>Concrete practice</small>
-    <strong>First Scripts</strong>
-    <span>Study five small local scripts before jumping into the full lesson library.</span>
+    <strong>Script Ladder</strong>
+    <span>Build up from tiny complete scripts before jumping into the full lesson library.</span>
   </a>
   <a class="home-portal-card" href="api/">
     <small>Exact signatures</small>
@@ -94,15 +99,16 @@ c:RegisterEffect(e1)</code></pre>
 
 1. [Structure of a card script](learn/script-structure)
 2. [First Scripts To Study](learn/first-scripts)
-3. [Creation, building, and registration of an effect object](learn/effect-object)
-4. [EFFECT_TYPE constants and templates](learn/effect-types)
-5. [Conditions, costs, activation procedures, and resolution](learn/effect-callbacks)
-6. [Activated effects](learn/activated-effects)
-7. [Activation legality](learn/activation-legality)
-8. [Targeting flow](learn/targeting-flow)
-9. [Selection and Group handling](learn/selection-and-group-handling)
-10. [Client UI and prompt behavior](learn/client-ui-and-prompt-behavior)
-11. [Common script errors and debugging](learn/common-script-errors-and-debugging)
+3. [Beginner Script Ladder](learn/beginner-script-ladder)
+4. [Creation, building, and registration of an effect object](learn/effect-object)
+5. [EFFECT_TYPE constants and templates](learn/effect-types)
+6. [Conditions, costs, activation procedures, and resolution](learn/effect-callbacks)
+7. [Activated effects](learn/activated-effects)
+8. [Activation legality](learn/activation-legality)
+9. [Targeting flow](learn/targeting-flow)
+10. [Selection and Group handling](learn/selection-and-group-handling)
+11. [Client UI and prompt behavior](learn/client-ui-and-prompt-behavior)
+12. [Common script errors and debugging](learn/common-script-errors-and-debugging)
 
 After that, choose the branch that matches the card you are scripting: Spells,
 Traps, summon procedures, card movement, continuous effects, player effects,

@@ -19,7 +19,7 @@ simulator-specific helper names and examples with local MDPro3/YGOPro behavior.
 
 | Downloaded tutorial topic | Sacred Book equivalent |
 | --- | --- |
-| Main scripting-wiki landing page | [Home](/), [Learning Path](/learn/), and this coverage map organize the beginner route. |
+| Main scripting-wiki landing page | [Home](/), [Learning Path](/learn/), [First Scripts To Study](/learn/first-scripts), [Beginner Script Ladder](/learn/beginner-script-ladder), and this coverage map organize the beginner route. |
 | Structure of a card script | [Structure of a card script](/learn/script-structure) covers file naming, `GetID`, `initial_effect`, callback naming, and reading real scripts. |
 | Creation, building, and registration of an effect object | [Creation, building, and registration of an effect object](/learn/effect-object) covers `Effect.CreateEffect`, setters, registration, cloning, labels, label objects, and resets. |
 | EFFECT_TYPE constants and templates | [EFFECT_TYPE constants and templates](/learn/effect-types) covers common type flags, type-shape selection, no-op Spell/Trap activation, activated types, trigger source combinations, quick-effect hints, material effects, grant effects, and special target-range modes. |
@@ -75,14 +75,16 @@ few complete effects, then branch into targeting, Groups, card types, and
 outcomes.
 
 Sacred Book now routes that curve through [Home](/), [Learning Path](/learn/),
-and [First Scripts To Study](/learn/first-scripts). The first-scripts page uses
-local scripts for Pot of Greed (`c55144522.lua`), Mystical Space Typhoon
+[First Scripts To Study](/learn/first-scripts), and
+[Beginner Script Ladder](/learn/beginner-script-ladder). The first-scripts page
+uses local scripts for Pot of Greed (`c55144522.lua`), Mystical Space Typhoon
 (`c5318639.lua`), Book of Moon (`c14087893.lua`), Banner of Courage
-(`c10012614.lua`), and Fissure (`c97169186.lua`).
+(`c10012614.lua`), and Fissure (`c97169186.lua`). The ladder page extends that
+into complete small script shapes.
 
 | Downloaded page signal | Sacred Book action |
 | --- | --- |
-| Main page emphasizes a start route before topic browsing. | Home and Learn now expose a shorter beginner curve before the full lesson library. |
+| Main page emphasizes a start route before topic browsing. | Home and Learn now expose a shorter beginner curve and route into [Beginner Script Ladder](/learn/beginner-script-ladder) before the full lesson library. |
 | Single-filter targeting spends time on `chkc`, target counts, operation info, and resolution wording. | [Targeting flow](/learn/targeting-flow) now expands `chkc`, local target-redirection examples, `min,max`, and relation/current-state rechecks. |
 | Single-filter selection separates matching-card selection from official targets. | [First Scripts To Study](/learn/first-scripts) and [Selection And Group Handling](/learn/selection-and-group-handling) reinforce targeting versus resolution selection with local scripts. |
 | Min/Max-stat card selection uses tied min/max groups. | [Min/Max Stat Card Selection](/learn/min-max-stat-selection) now documents `Group.GetMinGroup`, `Group.GetMaxGroup`, tie handling, returned values, custom scoring functions, and targeting variants with local scripts. |
@@ -399,6 +401,12 @@ Several details were verified directly against local MDPro3/YGOPro sources:
   Cyberdark Invasion (`c1157683.lua`) covers opponent option notices and
   target-vs-resolution choices; Trap Trick (`c80101899.lua`) covers sequential
   prompts; Pot of Greed (`c55144522.lua`) covers player target data.
+- Beginner Script Ladder examples were checked against local scripts and then
+  rewritten in modern `local s,id=GetID()` style for teaching. The ladder uses
+  Pot of Greed (`c55144522.lua`), Mystical Space Typhoon (`c5318639.lua`),
+  Black Hole (`c53129443.lua`), Fissure (`c97169186.lua`), Banner of Courage
+  (`c10012614.lua`), Marron (`c11548522.lua`), Book of Moon (`c14087893.lua`),
+  and Mirror Force (`c44095762.lua`).
 - The second archive audit pass for effect setup and activation flow was
   checked against local `libeffect.cpp`, generated Effect/Duel API pages, and
   local scripts. Cyber Dragon Infinity (`c10443957.lua`) covers `SetCode` as
@@ -451,6 +459,7 @@ Several details were verified directly against local MDPro3/YGOPro sources:
 
 | Date | Downloaded page cluster | Sacred Book updates |
 | --- | --- | --- |
+| 2026-06-24 | Beginner route and navigation audit | Added [Beginner Script Ladder](/learn/beginner-script-ladder) as a concrete sequence of complete small scripts for draw, targeting, non-targeting Groups, Min/Max stat selection, continuous modifiers, mandatory triggers, Quick-Play prompts, and Trap responses. Updated Home, Learn, the VitePress sidebar, and the site generator sidebar source. Confirmed every `docs/learn` page is linked from both the Learn index and sidebar. |
 | 2026-06-24 | Min/Max selection, subarchetypes, and effect-type templates | Added [Min/Max Stat Card Selection](/learn/min-max-stat-selection) as a focused guide for tied min/max Groups, returned values, custom scoring functions, activation-vs-resolution selection, and targeting variants. Refined [Archetypes and Set Codes](/learn/archetypes-and-setcodes) with identity-check choices, listed-card metadata, listed-set helpers, original-code checks, and practical filter patterns. Refined [EFFECT_TYPE Constants and Templates](/learn/effect-types) with type-shape selection, trigger source combinations, Xyz Material activated effects, grant effects, and special `SetTargetRange` modes. |
 | 2026-06-24 | Equip and Field Spell follow-up | Refined [Equip Spells and Equip Cards](/learn/equip-spells) with activation target-vs-equip-limit guidance, nonstandard equip prechecks, and stepped equip examples. Refined [Field Spells](/learn/field-spells) with handler-range guidance and the activate-vs-place distinction for Field Spells moved through other effects. |
 | 2026-06-24 | Continuous effects and stat modifiers follow-up | Refined [Effects That Apply Continuously](/learn/continuous-effects) with a setter build order, `SetTargetRange` card-vs-player modes, and a quick diagnosis table. Refined [Continuous Stat Modifiers](/learn/continuous-stat-modifiers) with `UPDATE`/`SET`/`SET_FINAL` stat-code guidance and value-callback player-reference notes. |

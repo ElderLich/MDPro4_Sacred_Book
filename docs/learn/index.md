@@ -15,18 +15,23 @@ into the card pattern you are actually trying to build.
     <strong>Study first scripts</strong>
     <span>Walk through five local scripts that draw, target, prompt, modify, and choose by stats.</span>
   </a>
-  <a class="learn-priority" href="effect-callbacks">
+  <a class="learn-priority" href="beginner-script-ladder">
     <small>Step 3</small>
+    <strong>Build small effects</strong>
+    <span>Follow complete draw, target, Group, trigger, Quick-Play, and Trap scripts in order.</span>
+  </a>
+  <a class="learn-priority" href="effect-callbacks">
+    <small>Step 4</small>
     <strong>Trace activation flow</strong>
     <span>Separate condition, cost, target, operation, and <code>chk==0</code> legality.</span>
   </a>
   <a class="learn-priority" href="targeting-flow">
-    <small>Step 4</small>
+    <small>Step 5</small>
     <strong>Choose cards safely</strong>
     <span>Use targeting, matching, Groups, relation checks, and resolution selections correctly.</span>
   </a>
   <a class="learn-priority" href="common-script-errors-and-debugging">
-    <small>Step 5</small>
+    <small>Step 6</small>
     <strong>Debug the script</strong>
     <span>Fix nil values, invisible prompts, stale targets, count limits, reset flags, and stored Groups.</span>
   </a>
@@ -36,15 +41,16 @@ into the card pattern you are actually trying to build.
 
 1. [Structure of a card script](script-structure)
 2. [First Scripts To Study](first-scripts)
-3. [Creation, building, and registration of an effect object](effect-object)
-4. [EFFECT_TYPE constants and templates](effect-types)
-5. [Conditions, costs, activation procedures, and resolution](effect-callbacks)
-6. [Activated effects](activated-effects)
-7. [Activation legality](activation-legality)
-8. [Targeting flow](targeting-flow)
-9. [Selection and Group handling](selection-and-group-handling)
-10. [Client UI and prompt behavior](client-ui-and-prompt-behavior)
-11. [Common script errors and debugging](common-script-errors-and-debugging)
+3. [Beginner Script Ladder](beginner-script-ladder)
+4. [Creation, building, and registration of an effect object](effect-object)
+5. [EFFECT_TYPE constants and templates](effect-types)
+6. [Conditions, costs, activation procedures, and resolution](effect-callbacks)
+7. [Activated effects](activated-effects)
+8. [Activation legality](activation-legality)
+9. [Targeting flow](targeting-flow)
+10. [Selection and Group handling](selection-and-group-handling)
+11. [Client UI and prompt behavior](client-ui-and-prompt-behavior)
+12. [Common script errors and debugging](common-script-errors-and-debugging)
 
 That first route is deliberately short. It gives you enough structure to read a
 local script without drowning in every summon type, card family, and helper.
@@ -62,6 +68,7 @@ card you are scripting.
     <a href="effect-types">Effect types</a>
     <a href="categories-properties-and-hints">Categories and properties</a>
     <a href="first-scripts">First scripts</a>
+    <a href="beginner-script-ladder">Beginner script ladder</a>
   </section>
   <section class="learn-stage">
     <h3>Activation Flow</h3>
