@@ -87,8 +87,14 @@ c:RegisterEffect(e1)</code></pre>
 4. [Conditions, costs, activation procedures, and resolution](learn/effect-callbacks)
 5. [Activated effects](learn/activated-effects)
 6. [Activation legality](learn/activation-legality)
-7. [Selection and Group handling](learn/selection-and-group-handling)
-8. [Common script errors and debugging](learn/common-script-errors-and-debugging)
+7. [Chain timing and activation windows](learn/chain-timing-and-activation-windows)
+8. [Spell Card patterns](learn/spell-card-patterns)
+9. [Quick-Play Spells](learn/quick-play-spells)
+10. [Trap Card patterns](learn/trap-card-patterns)
+11. [Normal and Continuous Traps](learn/normal-and-continuous-traps)
+12. [Counter Traps](learn/counter-traps)
+13. [Selection and Group handling](learn/selection-and-group-handling)
+14. [Common script errors and debugging](learn/common-script-errors-and-debugging)
 
 ## Reference While Scripting
 

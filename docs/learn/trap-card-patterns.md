@@ -7,6 +7,11 @@ Speed 2. Counter Traps activate at Spell Speed 3.
 In script terms, all of those card activations still use
 `EFFECT_TYPE_ACTIVATE`; the Trap's card type decides the activation speed.
 
+Focused follow-up lessons:
+
+- [Normal And Continuous Traps](normal-and-continuous-traps)
+- [Counter Traps](counter-traps)
+
 ## The Shared Trap Activation Shape
 
 ```lua
@@ -99,6 +104,9 @@ This is a good example of separating the movement action from the later
 activation exception. `Duel.SSet` places the card; the single effect changes
 when the newly Set Trap may be activated.
 
+Use [Normal And Continuous Traps](normal-and-continuous-traps) for the focused
+one-shot activation, hand exception, and set-turn exception guide.
+
 ## Continuous Traps
 
 A Continuous Trap usually has a small activation effect, then separate effects
@@ -135,6 +143,10 @@ separate once-per-turn Quick Effect. See the
 For Continuous Traps, `EFFECT_TYPE_ACTIVATE` is not the same thing as the
 card's later face-up effects. The activation effect gets the card onto the
 field. The later effects describe what the face-up Trap can do.
+
+The focused [Normal And Continuous Traps](normal-and-continuous-traps) page
+also covers `SetRange`, `SetTargetRange`, reset behavior, and leave-field
+cleanup.
 
 ## Counter Traps
 
@@ -179,6 +191,9 @@ call `Duel.NegateActivation(ev)` during resolution.
 
 Do not use `Duel.NegateSummon` for Chain Link negation. Summon negation and
 activation negation are different timing families.
+
+Use [Counter Traps](counter-traps) for the focused summon-negation,
+activation-negation, and effect-negation distinction.
 
 ## Trap Cards Leaving Or Staying
 

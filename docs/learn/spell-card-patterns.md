@@ -9,6 +9,7 @@ Equip and Field Spells have their own focused lessons:
 
 - [Equip Spells and Equip Cards](equip-spells)
 - [Field Spells](field-spells)
+- [Quick-Play Spells](quick-play-spells)
 - [Ritual Procedure Guide](ritual-procedure)
 
 This page covers the remaining Spell Card shapes: Normal Spells, Continuous
@@ -155,6 +156,9 @@ Spells:
 
 Most beginner Quick-Play Spell scripts do not create those exceptions. They
 write the normal activation effect and let the core enforce the card-type rule.
+
+Use [Quick-Play Spells](quick-play-spells) for the focused timing, prompt,
+targeting, and relation-check guide.
 
 ## Ritual Spells
 

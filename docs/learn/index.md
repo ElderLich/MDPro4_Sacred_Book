@@ -45,9 +45,21 @@ back into the generated API reference and live card examples.
     <strong>Spell Cards</strong>
     <span>Normal, Continuous, Quick-Play, and Ritual Spell activation shapes.</span>
   </a>
+  <a class="sacred-card" href="quick-play-spells">
+    <strong>Quick-Play Spells</strong>
+    <span>Script Spell Speed 2 activations, prompt timing, targets, and relation checks.</span>
+  </a>
   <a class="sacred-card" href="trap-card-patterns">
     <strong>Trap Cards</strong>
     <span>Normal, Continuous, and Counter Trap timing patterns.</span>
+  </a>
+  <a class="sacred-card" href="normal-and-continuous-traps">
+    <strong>Normal and Continuous Traps</strong>
+    <span>Separate one-shot Trap activation from face-up S/T Zone effects and cleanup.</span>
+  </a>
+  <a class="sacred-card" href="counter-traps">
+    <strong>Counter Traps</strong>
+    <span>Choose summon negation, activation negation, or effect negation patterns clearly.</span>
   </a>
   <a class="sacred-card" href="ritual-procedure">
     <strong>Ritual procedures</strong>
@@ -190,43 +202,46 @@ back into the generated API reference and live card examples.
 7. Check legality with [Activation legality](activation-legality).
 8. Separate prompts and response windows with [Chain Timing And Activation Windows](chain-timing-and-activation-windows).
 9. Split Spell activations with [Spell Card Patterns](spell-card-patterns).
-10. Split Trap timing with [Trap Card Patterns](trap-card-patterns).
-11. Learn Ritual Summon flow with [Ritual Procedure Guide](ritual-procedure).
-12. Learn Fusion Material and Summon flow with [Fusion Procedure Guide](fusion-procedure).
-13. Learn Synchro procedures and effect-driven Synchro Summons with [Synchro Procedure Guide](synchro-procedure).
-14. Learn overlaying and detaching with [Xyz Procedure Guide](xyz-procedure).
-15. Learn Link Rating, materials, and linked zones with [Link Procedure Guide](link-procedure).
-16. Learn Pendulum Zones, scales, and Pendulum Summon flow with [Pendulum Procedure Guide](pendulum-procedure).
-17. Handle revive limits and self-Summon procedures with [Special Summon-only Monster Guide](special-summon-only-monsters).
-18. Learn local Gemini/Dual state with [Gemini Monsters](gemini-monsters).
-19. Script Toon type and Toon World patterns with [Toon Monsters](toon-monsters).
-20. Equip and unequip monsters with [Union Monsters](union-monsters).
-21. Register End Phase return behavior with [Spirit Monsters](spirit-monsters).
-22. Handle Tribute Summon material value with [Tribute Summon Materials](tribute-summon-materials).
-23. Add and spend visible card counters with [Counters](counters).
-24. Work with cards and groups through [Filters, Card objects, and Group objects](filters-and-groups).
-25. Choose cards safely with [Selection And Group Handling](selection-and-group-handling).
-26. Control temporary effect lifetimes with [Reset Flags And Effect Duration](reset-flags-and-duration).
-27. Move cards correctly with [Functions that move cards across locations](moving-cards).
-28. Negate effects and protect cards with [Negation and Immunity](negation-and-immunity).
-29. Take or swap control with [Control Change](control-change).
-30. Change or lock battle positions with [Battle Position Effects](battle-position-effects).
-31. Place cards and read zones with [Field zones and sequences](field-zones-and-sequences).
-32. Script Field Spell patterns with [Field Spells](field-spells).
-33. Target cards correctly with [Targeting flow](targeting-flow).
-34. Resolve activated effects with [Cost, target, and operation lifecycle](cost-target-operation-lifecycle).
-35. Read always-on behavior through [Continuous effects](continuous-effects).
-36. Build visible modifiers with [Continuous stat modifiers](continuous-stat-modifiers).
-37. Script Equip Cards with [Equip Spells and Equip Cards](equip-spells).
-38. Script LP changes with [LP Recovery and Effect Damage](lp-recovery-and-damage).
-39. Store player Chain data with [Player-Targeted Effects](player-targeted-effects).
-40. Apply player locks with [Player Restrictions](player-restrictions).
-41. Script draw, hand, and Deck movement with [Draw, Hand, And Deck Effects](draw-hand-and-deck-effects).
-42. Track temporary script memory with [Flag effects](flag-effects).
-43. Limit effect usage with [Count limits and once per turn](count-limits).
-44. Debug common failure modes with [Common Script Errors And Debugging](common-script-errors-and-debugging).
-45. Apply outcomes through [Methods for affecting cards](affecting-cards).
-46. Use card families through [Archetypes and set codes](archetypes-and-setcodes).
+10. Learn fast Spell activation flow with [Quick-Play Spells](quick-play-spells).
+11. Split Trap timing with [Trap Card Patterns](trap-card-patterns).
+12. Separate one-shot and face-up Trap behavior with [Normal And Continuous Traps](normal-and-continuous-traps).
+13. Choose the right negation family with [Counter Traps](counter-traps).
+14. Learn Ritual Summon flow with [Ritual Procedure Guide](ritual-procedure).
+15. Learn Fusion Material and Summon flow with [Fusion Procedure Guide](fusion-procedure).
+16. Learn Synchro procedures and effect-driven Synchro Summons with [Synchro Procedure Guide](synchro-procedure).
+17. Learn overlaying and detaching with [Xyz Procedure Guide](xyz-procedure).
+18. Learn Link Rating, materials, and linked zones with [Link Procedure Guide](link-procedure).
+19. Learn Pendulum Zones, scales, and Pendulum Summon flow with [Pendulum Procedure Guide](pendulum-procedure).
+20. Handle revive limits and self-Summon procedures with [Special Summon-only Monster Guide](special-summon-only-monsters).
+21. Learn local Gemini/Dual state with [Gemini Monsters](gemini-monsters).
+22. Script Toon type and Toon World patterns with [Toon Monsters](toon-monsters).
+23. Equip and unequip monsters with [Union Monsters](union-monsters).
+24. Register End Phase return behavior with [Spirit Monsters](spirit-monsters).
+25. Handle Tribute Summon material value with [Tribute Summon Materials](tribute-summon-materials).
+26. Add and spend visible card counters with [Counters](counters).
+27. Work with cards and groups through [Filters, Card objects, and Group objects](filters-and-groups).
+28. Choose cards safely with [Selection And Group Handling](selection-and-group-handling).
+29. Control temporary effect lifetimes with [Reset Flags And Effect Duration](reset-flags-and-duration).
+30. Move cards correctly with [Functions that move cards across locations](moving-cards).
+31. Negate effects and protect cards with [Negation and Immunity](negation-and-immunity).
+32. Take or swap control with [Control Change](control-change).
+33. Change or lock battle positions with [Battle Position Effects](battle-position-effects).
+34. Place cards and read zones with [Field zones and sequences](field-zones-and-sequences).
+35. Script Field Spell patterns with [Field Spells](field-spells).
+36. Target cards correctly with [Targeting flow](targeting-flow).
+37. Resolve activated effects with [Cost, target, and operation lifecycle](cost-target-operation-lifecycle).
+38. Read always-on behavior through [Continuous effects](continuous-effects).
+39. Build visible modifiers with [Continuous stat modifiers](continuous-stat-modifiers).
+40. Script Equip Cards with [Equip Spells and Equip Cards](equip-spells).
+41. Script LP changes with [LP Recovery and Effect Damage](lp-recovery-and-damage).
+42. Store player Chain data with [Player-Targeted Effects](player-targeted-effects).
+43. Apply player locks with [Player Restrictions](player-restrictions).
+44. Script draw, hand, and Deck movement with [Draw, Hand, And Deck Effects](draw-hand-and-deck-effects).
+45. Track temporary script memory with [Flag effects](flag-effects).
+46. Limit effect usage with [Count limits and once per turn](count-limits).
+47. Debug common failure modes with [Common Script Errors And Debugging](common-script-errors-and-debugging).
+48. Apply outcomes through [Methods for affecting cards](affecting-cards).
+49. Use card families through [Archetypes and set codes](archetypes-and-setcodes).
 
 ## Tutorial Equivalents
 
