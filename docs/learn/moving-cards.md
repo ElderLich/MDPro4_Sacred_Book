@@ -20,6 +20,7 @@ resolution.
 | [`Duel.MSet`](/api/functions/Duel/MSet) | Set a monster. |
 | [`Duel.Equip`](/api/functions/Duel/Equip) | Equip one card to another. |
 | [`Duel.MoveToField`](/api/functions/Duel/MoveToField) | Move a card to a field location. |
+| [`Duel.ReturnToField`](/api/functions/Duel/ReturnToField) | Return a temporarily banished card to the field. |
 | [`Duel.Overlay`](/api/functions/Duel/Overlay) | Attach cards as Xyz Materials. |
 | [`Duel.SendtoExtraP`](/api/functions/Duel/SendtoExtraP) | Put a Pendulum Card face-up in the Extra Deck. |
 | [`Duel.GetControl`](/api/functions/Duel/GetControl) | Change control of cards. |
@@ -42,6 +43,21 @@ Before choosing a function, identify what the card text is really doing.
 This keeps "move this card somewhere" from becoming one oversized habit. The
 destination, reason, and whether the action places a card onto the field decide
 the function.
+
+## Two Movement Families
+
+Most movement mistakes come from treating every destination as the same kind of
+action. Split them into two families before writing the filter.
+
+| Family | Examples | What the activation branch usually proves |
+| --- | --- | --- |
+| Destination or removal action | `Duel.SendtoHand`, `Duel.SendtoGrave`, `Duel.SendtoDeck`, `Duel.Remove`, `Duel.Release`, `Duel.DiscardHand`, `Duel.Destroy` | The card can legally leave its current place for that action, usually with a matching `Card.IsAbleTo*`, `Card.IsReleasable*`, or `Card.IsDiscardable` check. |
+| Field placement or field control action | `Duel.SpecialSummon`, `Duel.SSet`, `Duel.MSet`, `Duel.Equip`, `Duel.MoveToField`, `Duel.ReturnToField`, `Duel.GetControl` | There is a usable zone and the card can legally exist there, using checks such as `Duel.GetLocationCount`, `Duel.GetLocationCountFromEx`, `Card.IsCanBeSpecialSummoned`, `Card.IsSSetable`, `Card.IsMSetable`, `not c:IsForbidden()`, `Card.CheckUniqueOnField`, or `Card.IsControlerCanBeChanged`. |
+
+The second family changes the field layout, so it is more sensitive to Chain
+changes. A free Monster Zone, Spell & Trap Zone, Field Zone replacement, or
+equip target can disappear before resolution. Local scripts commonly check the
+zone in `chk==0`, then check again in the operation before moving the card.
 
 ## Check The Card Can Move
 
@@ -137,6 +153,7 @@ the script still needs to choose the right timing and legality checks.
 | A Spell/Trap should be Set. | `Duel.SSet(tp,tc)` |
 | A card should become an Equip Card. | `Duel.Equip(tp,eqc,tc)` |
 | A card should become a Continuous Spell/Trap. | `Duel.MoveToField(...)` plus `EFFECT_CHANGE_TYPE` when needed |
+| A temporarily banished card should return. | `Duel.ReturnToField(tc)` after an earlier temporary `Duel.Remove` flow |
 | A Pendulum Card should go face-up to the Extra Deck. | `Duel.SendtoExtraP(tc,tp,REASON_EFFECT)` |
 | A card should change controller. | `Duel.GetControl(tc,tp,reset_phase,reset_count)` |
 
@@ -192,6 +209,33 @@ end
 in a Field Zone, or otherwise moves to a specific field location.
 
 For the full equip flow, see [Equip Spells and Equip Cards](equip-spells).
+
+## Temporary Banish and ReturnToField
+
+`Duel.ReturnToField` is for cards that were temporarily banished, not a generic
+"put this card back" helper. The earlier banish should include
+`REASON_TEMPORARY`, then a later registered effect returns the same stored card.
+
+Local `c10960419.lua` uses that shape:
+
+```lua
+if Duel.Remove(tc,0,REASON_EFFECT+REASON_TEMPORARY)~=0 then
+    -- register the delayed return watcher and store tc on it
+end
+```
+
+The delayed operation then returns the stored card:
+
+```lua
+function s.retop(e,tp,eg,ep,ev,re,r,rp)
+    local tc=e:GetLabelObject()
+    Duel.ReturnToField(tc)
+end
+```
+
+Do not replace a normal Special Summon, Set, or `MoveToField` action with
+`ReturnToField`. Use it when the script has a real temporary-banish lifecycle
+to close.
 
 ## Change Control
 
@@ -261,6 +305,7 @@ Useful API pages:
 - [`Duel.MSet`](/api/functions/Duel/MSet)
 - [`Duel.Equip`](/api/functions/Duel/Equip)
 - [`Duel.MoveToField`](/api/functions/Duel/MoveToField)
+- [`Duel.ReturnToField`](/api/functions/Duel/ReturnToField)
 - [`Duel.Overlay`](/api/functions/Duel/Overlay)
 - [`Duel.SendtoExtraP`](/api/functions/Duel/SendtoExtraP)
 - [`Duel.GetControl`](/api/functions/Duel/GetControl)

@@ -157,6 +157,23 @@ Duel.RDComplete()
 
 Without `Duel.RDComplete()`, a stepped damage/recovery sequence is incomplete.
 
+The stepped batch can also mix damage and recovery. Local `c37169670.lua`
+announces both categories, reads the stored operation info, then finishes the
+combined batch:
+
+```lua
+local ex1,a1,b1,p1,d1=Duel.GetOperationInfo(0,CATEGORY_DAMAGE)
+local ex2,a2,b2,p2,d2=Duel.GetOperationInfo(0,CATEGORY_RECOVER)
+Duel.Damage(1-tp,d1,REASON_EFFECT,true)
+Duel.Recover(tp,d2,REASON_EFFECT,true)
+Duel.RDComplete()
+```
+
+Use ordinary sequential calls when the card text and local script pattern want
+one LP change to fully happen before the next action. Use stepped calls when the
+LP changes belong to one combined damage/recovery process and the script
+finishes that process with `Duel.RDComplete()`.
+
 ## Event Value Amounts
 
 Some trigger effects use the event value `ev`. Local scripts use this when the

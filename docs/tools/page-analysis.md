@@ -404,11 +404,22 @@ Several details were verified directly against local MDPro3/YGOPro sources:
   Black Hole (`c53129443.lua`) covers the non-targeting "all monsters" Group
   action shape where the target branch announces the current Group and the
   operation rebuilds the Group at resolution.
+- The movement and LP/damage follow-up pass was checked against local
+  `ygopro-scripts-define\def.lua`, generated API pages, and local scripts.
+  Movement-family notes use local `Duel.GetLocationCount`,
+  `Duel.GetLocationCountFromEx`, `Card.IsForbidden`, `Card.CheckUniqueOnField`,
+  `Duel.MoveToField`, `Duel.ReturnToField`, and `Duel.GetControl` behavior.
+  Local examples include Time Magic Hammer (`c10960419.lua`) for temporary
+  banish plus `Duel.ReturnToField`, Dark Dream Mirror (`c1050355.lua`) for Field
+  Zone `Duel.MoveToField`, and Hyper Psychic Blaster/Assault Mode
+  (`c37169670.lua`) for a stepped damage/recovery batch finished by
+  `Duel.RDComplete()`.
 
 ## Quality Pass Log
 
 | Date | Downloaded page cluster | Sacred Book updates |
 | --- | --- | --- |
+| 2026-06-24 | Movement functions and LP recovery/damage follow-up | Refined [Functions That Move Cards Across Locations](/learn/moving-cards) with destination-vs-field movement families, zone/field-placement legality checks, and temporary banish return handling. Refined [LP Recovery and Effect Damage](/learn/lp-recovery-and-damage) with a local mixed damage/recovery stepped batch example and clearer sequential-vs-stepped guidance. |
 | 2026-06-24 | Filters, single-filter selection/targeting, and all-Group actions | Refined [Filters, Card Objects, and Group Objects](/learn/filters-and-groups) with a pure-filter rule, and expanded [Methods for Affecting Cards](/learn/affecting-cards) with local Black Hole and Mirror Force templates for non-targeting all-cards-in-a-Group operations. |
 | 2026-06-24 | Effect setup and activation-flow refinement | Refined [Creation, Building, and Registration of an Effect Object](/learn/effect-object), [Cost, Target, And Operation Lifecycle](/learn/cost-target-operation-lifecycle), [Activation Legality](/learn/activation-legality), and [Effects That Apply Continuously](/learn/continuous-effects) with a local-verified `SetType`/`SetCode` meaning map, callback signature cheat sheet, mandatory-part versus optional-follow-up legality notes, and continuous `SetTarget`/`SetValue` callback roles. |
 | 2026-06-24 | Archive curriculum re-audit and first scripts | Reworked [Home](/) and [Learning Path](/learn/) around a shorter beginner curve, added [First Scripts To Study](/learn/first-scripts) with local walkthroughs for draw, targeting, prompt timing, continuous field effects, and min/max stat selection, expanded [Targeting Flow](/learn/targeting-flow) with `chkc`, `min,max`, local `Duel.GetTargetsRelateToChain` handling, and resolution wording rechecks, and expanded [Selection And Group Handling](/learn/selection-and-group-handling) with `Group.GetMinGroup` / `Group.GetMaxGroup`. |
