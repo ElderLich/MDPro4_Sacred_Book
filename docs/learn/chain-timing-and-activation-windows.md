@@ -283,5 +283,6 @@ Related lessons:
 - [Activated Effects](activated-effects)
 - [Activation Legality](activation-legality)
 - [Categories, Properties, And Hint Timing](categories-properties-and-hints)
+- [Client UI And Prompt Behavior](client-ui-and-prompt-behavior)
 - [Cost, Target, And Operation Lifecycle](cost-target-operation-lifecycle)
 - [Negation and Immunity](negation-and-immunity)

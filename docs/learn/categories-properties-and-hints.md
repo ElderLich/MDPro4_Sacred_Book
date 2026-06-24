@@ -266,6 +266,9 @@ legality in `SetCode`, `SetRange`, `SetCondition`, `SetCost`, and the
 
 For Chain response windows, Spell Speed, and Damage Step prompt details, see
 [Chain Timing And Activation Windows](chain-timing-and-activation-windows).
+For a practical guide to UI-facing prompts, opponent notices, target prompts,
+resolution choices, and awkward/invisible effects, see
+[Client UI And Prompt Behavior](client-ui-and-prompt-behavior).
 
 ## Selection Hints
 

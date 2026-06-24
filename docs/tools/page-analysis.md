@@ -58,7 +58,7 @@ of pouring every detail into one page. The broad navigation shape should be:
 | Trap Cards: Normal, Continuous, Counter | [Trap Card Patterns](/learn/trap-card-patterns) now separates Normal Trap activation, Continuous Trap face-up effects, hand/set-turn exceptions, and Counter Trap/Spell Speed 3 patterns. [Normal And Continuous Traps](/learn/normal-and-continuous-traps) and [Counter Traps](/learn/counter-traps) provide the focused follow-up guides. |
 | Effects that affect cards | [Methods for Affecting Cards](/learn/affecting-cards) now routes to focused child pages: [Functions that move cards across locations](/learn/moving-cards), [Continuous stat modifiers](/learn/continuous-stat-modifiers), [Equip Spells and Equip Cards](/learn/equip-spells), [Counters](/learn/counters), [Negation and Immunity](/learn/negation-and-immunity), [Control Change](/learn/control-change), and [Battle Position Effects](/learn/battle-position-effects). |
 | Effects that affect players | [LP Recovery and Effect Damage](/learn/lp-recovery-and-damage), [Player-Targeted Effects](/learn/player-targeted-effects), [Player Restrictions](/learn/player-restrictions), and [Draw, Hand, And Deck Effects](/learn/draw-hand-and-deck-effects) now split player-target data, LP changes, player locks, and draw/hand/Deck patterns into focused pages. |
-| Effect metadata, categories, properties, hint timing, and client prompts | [Categories, Properties, And Hint Timing](/learn/categories-properties-and-hints) now splits category labels, operation info, targeting flags, Damage Step flags, single-range flags, oath/cannot-disable flags, prompt timing, and `HINTMSG_*` selection hints into a focused learner page. |
+| Effect metadata, categories, properties, hint timing, and client prompts | [Categories, Properties, And Hint Timing](/learn/categories-properties-and-hints) now splits category labels, operation info, targeting flags, Damage Step flags, single-range flags, oath/cannot-disable flags, prompt timing, and `HINTMSG_*` selection hints into a focused learner page. [Client UI And Prompt Behavior](/learn/client-ui-and-prompt-behavior) expands the prompt layer with `Duel.Hint`, `SetHintTiming`, `SetOperationInfo`, opponent notices, target prompts, resolution choices, and invisible/awkward effect troubleshooting. |
 | Chain timing, prompt windows, and response legality | [Chain Timing And Activation Windows](/learn/chain-timing-and-activation-windows) now separates hint timing from legality, explains `EVENT_FREE_CHAIN` versus `EVENT_CHAINING`, records local Spell Speed behavior, and shows Damage Step response patterns. |
 | Spell and Trap timing specializations | [Quick-Play Spells](/learn/quick-play-spells), [Normal And Continuous Traps](/learn/normal-and-continuous-traps), and [Counter Traps](/learn/counter-traps) now split the broad Spell/Trap classification into practical timing, targeting, exception, negation, reset, and leave-field workflows. |
 | Selection helpers and Group/Card handling | [Filters, Card Objects, and Group Objects](/learn/filters-and-groups) covers the basic filter and Group model; [Selection And Group Handling](/learn/selection-and-group-handling) now covers official targets, resolution choices, selecting from existing Groups, subgroup checks, `SelectUnselect`, Group lifetime, iteration, and rechecks before acting. |
@@ -348,11 +348,20 @@ Several details were verified directly against local MDPro3/YGOPro sources:
   resolving-effect negation, and lingering disable effects; Banner of Courage
   (`c10012614.lua`) covers `SetRange` plus `SetTargetRange`; Sphere Mode
   (`c10000080.lua`) covers reset counts and guarded `GetFirst()` results.
+- Client UI and prompt behavior was checked against local `libduel.cpp`,
+  `libeffect.cpp`, `constant.lua`, generated API pages, and local scripts.
+  Book of Moon (`c14087893.lua`) and Mystical Space Typhoon (`c5318639.lua`)
+  cover selection prompts and operation info; Infinite Impermanence
+  (`c10045474.lua`) covers opponent-side hint timing and zone highlights;
+  Cyberdark Invasion (`c1157683.lua`) covers opponent option notices and
+  target-vs-resolution choices; Trap Trick (`c80101899.lua`) covers sequential
+  prompts; Pot of Greed (`c55144522.lua`) covers player target data.
 
 ## Quality Pass Log
 
 | Date | Downloaded page cluster | Sacred Book updates |
 | --- | --- | --- |
+| 2026-06-24 | Client UI and prompt behavior | Added [Client UI And Prompt Behavior](/learn/client-ui-and-prompt-behavior) as a focused guide for `Duel.Hint`, `HINT_SELECTMSG`, `SetHintTiming`, `SetOperationInfo`, target prompts, resolution choices, opponent-side prompts, `HINT_OPSELECTED`, `HINT_ZONE`, and troubleshooting legal effects that feel invisible or awkward in the client. |
 | 2026-06-24 | Spell and Trap focused follow-ups | Added [Quick-Play Spells](/learn/quick-play-spells), [Counter Traps](/learn/counter-traps), and [Normal And Continuous Traps](/learn/normal-and-continuous-traps) as focused guides for Spell Speed 2 activation flow, Spell Speed 3 Counter Trap negation families, Normal Trap exceptions, Continuous Trap `LOCATION_SZONE` effects, reset behavior, and leave-field cleanup. |
 | 2026-06-24 | Home and debugging entry point | Improved [Home](/) as a compact learning portal with a clearer Start Learning path and stronger Learn/API/Examples/Script Explorer/Roadmap cards. Added [Common Script Errors And Debugging](/learn/common-script-errors-and-debugging) as a focused troubleshooting guide backed by local scripts and generated API links. |
 | 2026-06-24 | Chain timing and activation windows | Added [Chain Timing And Activation Windows](/learn/chain-timing-and-activation-windows) as a focused guide for prompt masks, free-chain windows, Chain responses, Spell Speed, Damage Step and damage calculation flags, opponent-side prompts, `Duel.CheckTiming`, `Duel.IsChainNegatable`, and Chain-solving watchers. |
