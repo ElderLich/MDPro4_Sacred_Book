@@ -398,11 +398,18 @@ Several details were verified directly against local MDPro3/YGOPro sources:
   plus destroy-replacement watcher callbacks, Red-Eyes Fusion (`c6172122.lua`)
   covers activation restrictions in cost callbacks, and `c10000030.lua` covers
   legal-mode checks with `SetLabel`/`GetLabel`.
+- The filters and all-Group action refinement was checked against generated
+  Duel/Group API pages and local scripts. Mirror Force (`c44095762.lua`) covers
+  pure one-card filters and all matching opponent Attack Position monsters;
+  Black Hole (`c53129443.lua`) covers the non-targeting "all monsters" Group
+  action shape where the target branch announces the current Group and the
+  operation rebuilds the Group at resolution.
 
 ## Quality Pass Log
 
 | Date | Downloaded page cluster | Sacred Book updates |
 | --- | --- | --- |
+| 2026-06-24 | Filters, single-filter selection/targeting, and all-Group actions | Refined [Filters, Card Objects, and Group Objects](/learn/filters-and-groups) with a pure-filter rule, and expanded [Methods for Affecting Cards](/learn/affecting-cards) with local Black Hole and Mirror Force templates for non-targeting all-cards-in-a-Group operations. |
 | 2026-06-24 | Effect setup and activation-flow refinement | Refined [Creation, Building, and Registration of an Effect Object](/learn/effect-object), [Cost, Target, And Operation Lifecycle](/learn/cost-target-operation-lifecycle), [Activation Legality](/learn/activation-legality), and [Effects That Apply Continuously](/learn/continuous-effects) with a local-verified `SetType`/`SetCode` meaning map, callback signature cheat sheet, mandatory-part versus optional-follow-up legality notes, and continuous `SetTarget`/`SetValue` callback roles. |
 | 2026-06-24 | Archive curriculum re-audit and first scripts | Reworked [Home](/) and [Learning Path](/learn/) around a shorter beginner curve, added [First Scripts To Study](/learn/first-scripts) with local walkthroughs for draw, targeting, prompt timing, continuous field effects, and min/max stat selection, expanded [Targeting Flow](/learn/targeting-flow) with `chkc`, `min,max`, local `Duel.GetTargetsRelateToChain` handling, and resolution wording rechecks, and expanded [Selection And Group Handling](/learn/selection-and-group-handling) with `Group.GetMinGroup` / `Group.GetMaxGroup`. |
 | 2026-06-24 | Client UI and prompt behavior | Added [Client UI And Prompt Behavior](/learn/client-ui-and-prompt-behavior) as a focused guide for `Duel.Hint`, `HINT_SELECTMSG`, `SetHintTiming`, `SetOperationInfo`, target prompts, resolution choices, opponent-side prompts, `HINT_OPSELECTED`, `HINT_ZONE`, and troubleshooting legal effects that feel invisible or awkward in the client. |

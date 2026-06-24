@@ -19,6 +19,23 @@ Keep a filter focused. It should describe one rule clearly: face-up monsters,
 cards that can be sent to the GY, cards in a Set, monsters that can be Special
 Summoned, and so on.
 
+Filters should be safe to call more than once. Do not select cards, move cards,
+show prompts, set labels, or change the Duel from inside an ordinary card
+filter. The engine may call the filter repeatedly while it checks legality,
+builds a Group, displays a prompt, or compares candidates.
+
+Mirror Force (`c44095762.lua`) keeps the filter small and pure:
+
+```lua
+function c44095762.filter(c)
+    return c:IsAttackPos()
+end
+```
+
+The target and operation callbacks decide when to build Groups and when to
+destroy cards. The filter only answers whether a candidate card is in Attack
+Position.
+
 ## Predefined Functions As Filters
 
 Many `Card.*` functions can be passed directly when they already answer the
@@ -417,3 +434,4 @@ Useful API pages:
 - [`Group.GetFirst`](/api/functions/Group/GetFirst)
 - [`Group.GetNext`](/api/functions/Group/GetNext)
 - [Selection And Group Handling](selection-and-group-handling)
+- [Methods for Affecting Cards](affecting-cards)

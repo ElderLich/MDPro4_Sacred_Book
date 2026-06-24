@@ -45,6 +45,7 @@ This is the working todo for turning Sacred Book into a complete MDPro3 scriptin
 - [x] Rework the home and learning entry path around a concrete beginner curve and first local script walkthroughs.
 - [x] Re-audit the downloaded wiki archive for curriculum shape and local/non-local function rewrites.
 - [x] Refine the effect setup and activation-flow lessons from the downloaded archive with local-verified setter meaning, callback signatures, and legality notes.
+- [x] Refine the filters and all-Group action lessons with local-verified pure-filter and rebuild-at-resolution patterns.
 - [x] Add a focused selection and Group-handling guide for target selection, resolution choice, subgroup selection, and stored Groups.
 - [x] Add a focused reset flags and duration guide for temporary effects, phase resets, and flag lifetimes.
 - [x] Add a focused common script errors and debugging guide for nil values, legality branches, relation checks, location masks, resets, count limits, negation types, Group lifetime, and code identity checks.

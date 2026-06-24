@@ -56,6 +56,61 @@ end
 
 The operation uses a `Duel` function because the action changes the game state.
 
+## Affecting Every Card In A Group
+
+Some effects do not ask the player to choose individual cards. They affect all
+cards that match a filter at the relevant moment.
+
+Black Hole (`c53129443.lua`) is the clean local template:
+
+```lua
+function c53129443.target(e,tp,eg,ep,ev,re,r,rp,chk)
+    if chk==0 then
+        return Duel.IsExistingMatchingCard(aux.TRUE,tp,LOCATION_MZONE,LOCATION_MZONE,1,nil)
+    end
+    local sg=Duel.GetMatchingGroup(aux.TRUE,tp,LOCATION_MZONE,LOCATION_MZONE,nil)
+    Duel.SetOperationInfo(0,CATEGORY_DESTROY,sg,sg:GetCount(),0,0)
+end
+
+function c53129443.activate(e,tp,eg,ep,ev,re,r,rp)
+    local sg=Duel.GetMatchingGroup(aux.TRUE,tp,LOCATION_MZONE,LOCATION_MZONE,nil)
+    Duel.Destroy(sg,REASON_EFFECT)
+end
+```
+
+The check branch proves there is at least one monster. The real target branch
+builds the current Group only to announce the expected destroy operation. The
+operation builds the Group again because the field may have changed while the
+Chain was resolving.
+
+Mirror Force (`c44095762.lua`) uses the same shape with a real filter:
+
+```lua
+function c44095762.filter(c)
+    return c:IsAttackPos()
+end
+
+function c44095762.target(e,tp,eg,ep,ev,re,r,rp,chk)
+    if chk==0 then
+        return Duel.IsExistingMatchingCard(c44095762.filter,tp,0,LOCATION_MZONE,1,nil)
+    end
+    local g=Duel.GetMatchingGroup(c44095762.filter,tp,0,LOCATION_MZONE,nil)
+    Duel.SetOperationInfo(0,CATEGORY_DESTROY,g,g:GetCount(),0,0)
+end
+
+function c44095762.activate(e,tp,eg,ep,ev,re,r,rp)
+    local g=Duel.GetMatchingGroup(c44095762.filter,tp,0,LOCATION_MZONE,nil)
+    if g:GetCount()>0 then
+        Duel.Destroy(g,REASON_EFFECT)
+    end
+end
+```
+
+Use this pattern when the text means "all matching cards," not "target those
+cards." Do not store the target-branch Group and assume it is still current at
+resolution. Rebuild it, or filter the stored target Group when the effect
+actually targets.
+
 ## Continuous Changes
 
 Continuous changes are registered as effects.
@@ -188,6 +243,9 @@ Before finishing an operation that affects cards, check:
 Useful API pages:
 
 - [`Duel.Destroy`](/api/functions/Duel/Destroy)
+- [`Duel.GetMatchingGroup`](/api/functions/Duel/GetMatchingGroup)
+- [`Duel.IsExistingMatchingCard`](/api/functions/Duel/IsExistingMatchingCard)
+- [`Duel.SetOperationInfo`](/api/functions/Duel/SetOperationInfo)
 - [`Duel.SendtoGrave`](/api/functions/Duel/SendtoGrave)
 - [`Duel.Remove`](/api/functions/Duel/Remove)
 - [`Duel.SpecialSummon`](/api/functions/Duel/SpecialSummon)
