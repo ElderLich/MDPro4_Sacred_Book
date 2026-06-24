@@ -24,6 +24,28 @@ rules that the engine checks while their range, target, and reset conditions
 are true. Event-watching continuous effects are the exception: those use a
 continuous type with an event code and callback functions.
 
+## Target And Value Are Not Chain Target And Operation
+
+Activated effects use `SetTarget` for activation legality, Chain target
+selection, and operation info. Continuous effects often use the same setter for
+a different job: deciding which card or player the continuous rule applies to.
+
+Read these callbacks through the effect shape:
+
+| Continuous shape | Common callback role |
+| --- | --- |
+| Field stat modifier | `SetTarget` filters affected cards; `SetValue` supplies the amount. |
+| Player restriction | `SetTargetRange` chooses affected players; `SetTarget` filters the restricted action. |
+| Equip limit | `SetValue` answers whether the equipped card is still legal. |
+| Replacement or event watcher | `SetTarget` asks whether to replace or respond; `SetOperation` performs the replacement/action. |
+
+`c10002346.lua` shows both sides on one card. Its ATK/DEF field effects use
+`SetValue(c10002346.val)` as a live continuous amount. Its destroy replacement
+effect uses `EFFECT_TYPE_CONTINUOUS+EFFECT_TYPE_SINGLE`,
+`SetTarget(c10002346.reptg)`, and `SetOperation(c10002346.repop)` because that
+continuous effect watches a destruction event instead of constantly applying a
+stat value.
+
 ## Handler-Only Effects
 
 Use `EFFECT_TYPE_SINGLE` when the card itself gains or loses a property.

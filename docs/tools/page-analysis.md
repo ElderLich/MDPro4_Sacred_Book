@@ -389,11 +389,21 @@ Several details were verified directly against local MDPro3/YGOPro sources:
   Cyberdark Invasion (`c1157683.lua`) covers opponent option notices and
   target-vs-resolution choices; Trap Trick (`c80101899.lua`) covers sequential
   prompts; Pot of Greed (`c55144522.lua`) covers player target data.
+- The second archive audit pass for effect setup and activation flow was
+  checked against local `libeffect.cpp`, generated Effect/Duel API pages, and
+  local scripts. Cyber Dragon Infinity (`c10443957.lua`) covers `SetCode` as
+  both an `EFFECT_*` rule and an `EVENT_*` Quick Effect timing, Lava Golem
+  (`c102380.lua`) covers Special Summon procedure target-range/callback shapes
+  and mandatory phase triggers, `c10002346.lua` covers continuous field values
+  plus destroy-replacement watcher callbacks, Red-Eyes Fusion (`c6172122.lua`)
+  covers activation restrictions in cost callbacks, and `c10000030.lua` covers
+  legal-mode checks with `SetLabel`/`GetLabel`.
 
 ## Quality Pass Log
 
 | Date | Downloaded page cluster | Sacred Book updates |
 | --- | --- | --- |
+| 2026-06-24 | Effect setup and activation-flow refinement | Refined [Creation, Building, and Registration of an Effect Object](/learn/effect-object), [Cost, Target, And Operation Lifecycle](/learn/cost-target-operation-lifecycle), [Activation Legality](/learn/activation-legality), and [Effects That Apply Continuously](/learn/continuous-effects) with a local-verified `SetType`/`SetCode` meaning map, callback signature cheat sheet, mandatory-part versus optional-follow-up legality notes, and continuous `SetTarget`/`SetValue` callback roles. |
 | 2026-06-24 | Archive curriculum re-audit and first scripts | Reworked [Home](/) and [Learning Path](/learn/) around a shorter beginner curve, added [First Scripts To Study](/learn/first-scripts) with local walkthroughs for draw, targeting, prompt timing, continuous field effects, and min/max stat selection, expanded [Targeting Flow](/learn/targeting-flow) with `chkc`, `min,max`, local `Duel.GetTargetsRelateToChain` handling, and resolution wording rechecks, and expanded [Selection And Group Handling](/learn/selection-and-group-handling) with `Group.GetMinGroup` / `Group.GetMaxGroup`. |
 | 2026-06-24 | Client UI and prompt behavior | Added [Client UI And Prompt Behavior](/learn/client-ui-and-prompt-behavior) as a focused guide for `Duel.Hint`, `HINT_SELECTMSG`, `SetHintTiming`, `SetOperationInfo`, target prompts, resolution choices, opponent-side prompts, `HINT_OPSELECTED`, `HINT_ZONE`, and troubleshooting legal effects that feel invisible or awkward in the client. |
 | 2026-06-24 | Spell and Trap focused follow-ups | Added [Quick-Play Spells](/learn/quick-play-spells), [Counter Traps](/learn/counter-traps), and [Normal And Continuous Traps](/learn/normal-and-continuous-traps) as focused guides for Spell Speed 2 activation flow, Spell Speed 3 Counter Trap negation families, Normal Trap exceptions, Continuous Trap `LOCATION_SZONE` effects, reset behavior, and leave-field cleanup. |

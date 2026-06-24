@@ -63,6 +63,30 @@ for an activated effect, a target function for a continuous field effect, and a
 target function for an inherent Special Summon procedure all receive different
 arguments.
 
+## Type Decides Setter Meaning
+
+Start by reading `SetType`, then interpret the other setters through that
+shape. The same setter can answer a different question on a different kind of
+effect.
+
+| Effect shape | What `SetCode` usually means | What to inspect next |
+| --- | --- | --- |
+| `EFFECT_TYPE_SINGLE`, `EFFECT_TYPE_FIELD`, `EFFECT_TYPE_EQUIP`, or `EFFECT_TYPE_XMATERIAL` by itself | The continuous rule, usually an `EFFECT_*` constant. | `SetRange`, `SetTargetRange`, `SetTarget`, and `SetValue`. |
+| Trigger, Quick, or event-watching Continuous effects | The event or phase that wakes the effect, usually `EVENT_*` or `EVENT_PHASE+PHASE_*`. | `SetCondition`, `SetCost`, `SetTarget`, and `SetOperation`. |
+| Spell/Trap card activation with `EFFECT_TYPE_ACTIVATE` | The activation event, such as `EVENT_FREE_CHAIN`, when the card needs one. | Activation legality in `SetCost` and `SetTarget`. |
+| Special Summon procedure effects | A procedure code such as `EFFECT_SPSUMMON_PROC`. | Procedure flags, `SetTargetRange`, and the procedure callback signatures. |
+
+Local examples show the split. Cyber Dragon Infinity (`c10443957.lua`) uses
+`EFFECT_UPDATE_ATTACK` as the code for a continuous single ATK update, but
+`EVENT_CHAINING` as the code for its Quick Effect negation. Lava Golem
+(`c102380.lua`) uses `EVENT_PHASE+PHASE_STANDBY` for a mandatory Standby Phase
+trigger, and `EFFECT_SPSUMMON_PROC` for its hand procedure.
+
+This is why copying a block by shape is safer than copying one setter at a
+time. If `SetCode` names an event, you are probably building an activated or
+event-watching effect. If it names an `EFFECT_*` rule, you are probably building
+a continuous rule that needs value, range, or target-range review.
+
 ## User-Facing Text And Categories
 
 `SetDescription` usually receives `aux.Stringid(id,n)`, where `n` selects the
@@ -331,8 +355,14 @@ Relevant API pages:
 - [`Card.RegisterEffect`](/api/functions/Card/RegisterEffect)
 - [`Duel.RegisterEffect`](/api/functions/Duel/RegisterEffect)
 - [`Effect.Clone`](/api/functions/Effect/Clone)
+- [`Effect.SetType`](/api/functions/Effect/SetType)
+- [`Effect.SetCode`](/api/functions/Effect/SetCode)
 - [`Effect.SetProperty`](/api/functions/Effect/SetProperty)
+- [`Effect.SetRange`](/api/functions/Effect/SetRange)
 - [`Effect.SetTargetRange`](/api/functions/Effect/SetTargetRange)
+- [`Effect.SetTarget`](/api/functions/Effect/SetTarget)
+- [`Effect.SetOperation`](/api/functions/Effect/SetOperation)
+- [`Effect.SetValue`](/api/functions/Effect/SetValue)
 - [`Effect.SetCountLimit`](/api/functions/Effect/SetCountLimit)
 - [`Effect.SetLabel`](/api/functions/Effect/SetLabel)
 - [`Effect.SetLabelObject`](/api/functions/Effect/SetLabelObject)

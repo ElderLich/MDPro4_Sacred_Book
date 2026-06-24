@@ -40,6 +40,29 @@ Do not move cards, pay LP, remove Xyz Materials, or choose hidden information in
 the `chk==0` branch. The engine may call that branch while only testing whether
 the effect is available.
 
+## Callback Signature Cheat Sheet
+
+The callback name does not fully describe the signature. The effect's type and
+code decide what the engine passes. These are the common learner-facing shapes
+seen in local scripts:
+
+| Callback role | Common shape | Local example |
+| --- | --- | --- |
+| Activated or event condition | `function s.con(e,tp,eg,ep,ev,re,r,rp)` | Cyber Dragon Infinity's Chain negation condition. |
+| Activated cost | `function s.cost(e,tp,eg,ep,ev,re,r,rp,chk)` | Red-Eyes Fusion's activation restriction cost. |
+| Activated target without manual retargeting | `function s.tg(e,tp,eg,ep,ev,re,r,rp,chk)` | Pot of Greed's draw target function. |
+| Activated card-target function | `function s.tg(e,tp,eg,ep,ev,re,r,rp,chk,chkc)` | Cyber Dragon Infinity's attach-material target function. |
+| Activated operation | `function s.op(e,tp,eg,ep,ev,re,r,rp)` | Most resolving Chain effects. |
+| Continuous value callback | `function s.val(e,c)` | `c10002346.lua` recalculates ATK/DEF from overlay count. |
+| Special Summon procedure callbacks | Procedure-specific shapes such as `spcon(e,c)`, `sptg(...,chk,c)`, and `spop(...,c)` | Lava Golem's hand procedure. |
+
+Treat the table as a starting map, not a universal signature list. A continuous
+replacement target, an equip limit, a material procedure, and an activated
+target function can all be installed through `SetTarget`, but they do not ask
+the same question. When a local script with the same mechanic uses an extra
+argument, copy the mechanic's shape and then simplify only after you understand
+what the argument represents.
+
 ## Activation Restrictions Belong With The Activation
 
 If an effect says the player cannot do something for the rest of the turn after

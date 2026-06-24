@@ -188,6 +188,27 @@ leave the Monster Zone are already known. A plain
 too strict for effects that Tribute, release, or move their own monster before
 placing another card.
 
+## Mandatory Parts And Optional Follow-Ups
+
+For optional activated effects, the `chk==0` branch should prove that the
+effect has a legal mandatory outcome. It should not demand every optional
+follow-up choice that the player may decline later.
+
+Use the card text as a script outline:
+
+| Text shape | Legality habit |
+| --- | --- |
+| "Do A, then do B." | Check that A and B can be legally attempted if both are mandatory. |
+| "Do A, and if you do, you can do B." | Check A for activation; check B later only if the player chooses to try it. |
+| "Choose 1 of these effects" | Check that at least one mode is legal, then offer only legal modes. |
+| "Do A, then apply B if possible" | Check A; let B resolve as much as the current state allows. |
+
+Local modal effects show this pattern clearly. `c10000030.lua` computes two
+possible modes, returns `b1 or b2` in the `chk==0` branch, then only offers
+modes that are actually legal. The target branch stores the chosen mode with
+`e:SetLabel(op)`, and the operation reads that label while still rechecking the
+target and zone state.
+
 ## Mandatory Effects Still Resolve Carefully
 
 Mandatory trigger effects normally activate when their event happens, even if
@@ -202,6 +223,11 @@ end
 
 The operation still checks the current state before applying an action. A
 mandatory trigger is not permission to skip resolution checks.
+
+Costs are different. Even mandatory effects cannot activate if their cost
+cannot be paid. The broad `if chk==0 then return true end` habit belongs to the
+target branch of many mandatory effects, not to a cost branch that actually has
+LP, material, discard, release, or activity requirements.
 
 ## Target Rechecks With `chkc`
 
@@ -258,4 +284,6 @@ Relevant API pages:
 - [`Duel.IsChainNegatable`](/api/functions/Duel/IsChainNegatable)
 - [`Card.IsStatus`](/api/functions/Card/IsStatus)
 - [`Duel.GetActivityCount`](/api/functions/Duel/GetActivityCount)
+- [`Effect.SetLabel`](/api/functions/Effect/SetLabel)
+- [`Effect.GetLabel`](/api/functions/Effect/GetLabel)
 - [`Duel.RegisterEffect`](/api/functions/Duel/RegisterEffect)
