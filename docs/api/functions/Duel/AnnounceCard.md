@@ -28,12 +28,13 @@ Lets player declare a card code matching the optional opcode/filter expression a
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **31** indexed script(s).
+- Detected in **32** indexed script(s).
 - Search this function in the [Script Explorer](/tools/script-explorer) with `Duel.AnnounceCard`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
 | Ma'at | `18631392` | [Scripts/c18631392.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c18631392.lua) | 51 |
+| Mind Scan | `34298391` | [Scripts/c34298391.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c34298391.lua) | 51 |
 | Gravekeeper's Trap | `98715423` | [Scripts/c98715423.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c98715423.lua) | 49 |
 | Primite Roar | `92501449` | [Scripts/c92501449.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c92501449.lua) | 49 |
 | Primite Howl | `41488249` | [Scripts/c41488249.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c41488249.lua) | 49 |
@@ -56,8 +57,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Question | `38723936` | [Scripts/c38723936.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c38723936.lua) | 30 |
 | The Black Goat Laughs | `49299410` | [Scripts/c49299410.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c49299410.lua) | 29 |
 | Cloak and Dagger | `8323633` | [Scripts/c8323633.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c8323633.lua) | 29 |
-| Gishki Diviner | `72403299` | [Scripts/c72403299.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c72403299.lua) | 26 |
-| ...and 7 more |  |  |  |
+| ...and 8 more |  |  |  |
 
 ## Script Examples
 
@@ -73,6 +73,18 @@ Source: [Scripts/c18631392.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/
 	local ac2=Duel.AnnounceCard(tp,table.unpack(getmetatable(e:GetHandler()).announce_filter))
 ```
 
+### Mind Scan (`34298391`)
+
+Source: [Scripts/c34298391.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c34298391.lua)
+
+```lua
+		table.insert(afilter,OPCODE_NOT)
+		ag:Clear()
+		local ac=Duel.AnnounceCard(tp,table.unpack(afilter))
+		Duel.SetTargetParam(ac)
+		Duel.SetOperationInfo(0,CATEGORY_ANNOUNCE,nil,0,tp,0)
+```
+
 ### Gravekeeper's Trap (`98715423`)
 
 Source: [Scripts/c98715423.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c98715423.lua)
@@ -80,18 +92,6 @@ Source: [Scripts/c98715423.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/
 ```lua
 	Duel.Hint(HINT_SELECTMSG,tp,HINTMSG_CODE)
 	getmetatable(e:GetHandler()).announce_filter={TYPE_FUSION+TYPE_SYNCHRO+TYPE_XYZ+TYPE_LINK,OPCODE_ISTYPE,OPCODE_NOT}
-	local ac=Duel.AnnounceCard(tp,table.unpack(getmetatable(e:GetHandler()).announce_filter))
-	Duel.SetTargetParam(ac)
-	Duel.SetOperationInfo(0,CATEGORY_ANNOUNCE,nil,0,tp,0)
-```
-
-### Primite Roar (`92501449`)
-
-Source: [Scripts/c92501449.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c92501449.lua)
-
-```lua
-	Duel.Hint(HINT_SELECTMSG,tp,HINTMSG_CODE)
-	getmetatable(e:GetHandler()).announce_filter={TYPE_MONSTER,OPCODE_ISTYPE,TYPE_NORMAL,OPCODE_ISTYPE,5405694,OPCODE_ISCODE,OPCODE_OR,OPCODE_AND}
 	local ac=Duel.AnnounceCard(tp,table.unpack(getmetatable(e:GetHandler()).announce_filter))
 	Duel.SetTargetParam(ac)
 	Duel.SetOperationInfo(0,CATEGORY_ANNOUNCE,nil,0,tp,0)

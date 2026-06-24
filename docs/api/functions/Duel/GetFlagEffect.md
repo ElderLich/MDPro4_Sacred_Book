@@ -27,7 +27,7 @@ Returns how many player flag effects with code are registered on player.
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **331** indexed script(s).
+- Detected in **334** indexed script(s).
 - Search this function in the [Script Explorer](/tools/script-explorer) with `Duel.GetFlagEffect`.
 
 | Card | ID | Script | Detected Calls |
@@ -56,7 +56,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Double Interlock | `38129297` | [Scripts/c38129297.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c38129297.lua) | 59 |
 | Mementotlan Shleepy | `50042011` | [Scripts/c50042011.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c50042011.lua) | 58 |
 | K9-X Forced Release | `53792930` | [Scripts/c53792930.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c53792930.lua) | 58 |
-| ...and 307 more |  |  |  |
+| ...and 310 more |  |  |  |
 
 ## Script Examples
 

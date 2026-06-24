@@ -25,7 +25,7 @@ If skip_panel is true, the client skips the extra confirmation panel when possib
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **2581** indexed script(s).
+- Detected in **2594** indexed script(s).
 - Search this function in the [Script Explorer](/tools/script-explorer) with `Duel.ConfirmCards`.
 
 | Card | ID | Script | Detected Calls |
@@ -54,7 +54,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | [D/D Count Surveyor](/examples/cards/5997110) | `5997110` | [Scripts/c5997110.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c5997110.lua) | 63 |
 | [Nekroz Kaleidoscope](/examples/cards/51124303) | `51124303` | [Scripts/c51124303.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c51124303.lua) | 63 |
 | [Enneacraft - Atil.SPIA](/examples/cards/71801447) | `71801447` | [Scripts/c71801447.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c71801447.lua) | 62 |
-| ...and 2557 more |  |  |  |
+| ...and 2570 more |  |  |  |
 
 ## Script Examples
 

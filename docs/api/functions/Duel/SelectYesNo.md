@@ -27,7 +27,7 @@ Asks player a yes/no prompt using description id desc and returns true for Yes.
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **1293** indexed script(s).
+- Detected in **1300** indexed script(s).
 - Search this function in the [Script Explorer](/tools/script-explorer) with `Duel.SelectYesNo`.
 
 | Card | ID | Script | Detected Calls |
@@ -56,7 +56,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | [Hecahands Tartaros](/examples/cards/57809669) | `57809669` | [Scripts/c57809669.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c57809669.lua) | 65 |
 | [Enneacraft - Asta.PIXEA](/examples/cards/28454232) | `28454232` | [Scripts/c28454232.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c28454232.lua) | 64 |
 | [Aiwass the Spirit of the Law](/examples/cards/84288367) | `84288367` | [Scripts/c84288367.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c84288367.lua) | 64 |
-| ...and 1269 more |  |  |  |
+| ...and 1276 more |  |  |  |
 
 ## Script Examples
 

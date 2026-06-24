@@ -29,7 +29,7 @@ The core rejects this during the Damage Step, yields while the Summon is process
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **20** indexed script(s).
+- Detected in **21** indexed script(s).
 - Search this function in the [Script Explorer](/tools/script-explorer) with `Duel.LinkSummon`.
 
 | Card | ID | Script | Detected Calls |
@@ -45,6 +45,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Tri-Brigade Revolt | `40975243` | [Scripts/c40975243.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c40975243.lua) | 44 |
 | Sky Striker Special Maneuver - Lemnisgate! | `34433770` | [Scripts/c34433770.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c34433770.lua) | 43 |
 | Power Patron Envoy of Pure Prayers | `31822037` | [Scripts/c31822037.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c31822037.lua) | 43 |
+| Unchained Syncretism | `93898740` | [Scripts/c93898740.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c93898740.lua) | 41 |
 | Unchained Soul of Anguish | `93084621` | [Scripts/c93084621.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c93084621.lua) | 40 |
 | Unchained Soul of Disaster | `89019964` | [Scripts/c89019964.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c89019964.lua) | 40 |
 | Outburst Dragon | `87263576` | [Scripts/c87263576.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c87263576.lua) | 40 |

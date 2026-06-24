@@ -30,7 +30,7 @@ Nil setcode arguments are skipped. This uses the previous state recorded before 
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **75** indexed script(s).
+- Detected in **76** indexed script(s).
 - Search this function in the [Script Explorer](/tools/script-explorer) with `Card.IsPreviousSetCard`.
 
 | Card | ID | Script | Detected Calls |
@@ -59,7 +59,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Centur-Ion Primera Primus | `8841431` | [Scripts/c8841431.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c8841431.lua) | 45 |
 | Mythical Institution | `94599451` | [Scripts/c94599451.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c94599451.lua) | 45 |
 | Kuribah | `44632120` | [Scripts/c44632120.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c44632120.lua) | 45 |
-| ...and 51 more |  |  |  |
+| ...and 52 more |  |  |  |
 
 ## Script Examples
 

@@ -41,7 +41,7 @@ Extra arguments after `ex` are passed to the filter after the card. The original
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **823** indexed script(s).
+- Detected in **819** indexed script(s).
 - Search this function in the [Script Explorer](/tools/script-explorer) with `Group.Filter`.
 
 | Card | ID | Script | Detected Calls |
@@ -70,7 +70,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | [D/D/D/D Super-Dimensional Sovereign Emperor Zero Paradox](/examples/cards/97417863) | `97417863` | [Scripts/c97417863.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c97417863.lua) | 62 |
 | [Flower Cardian Peony with Butterfly](/examples/cards/57261568) | `57261568` | [Scripts/c57261568.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c57261568.lua) | 62 |
 | [Ultimate Crystal Rainbow Dragon Overdrive](/examples/cards/84544192) | `84544192` | [Scripts/c84544192.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c84544192.lua) | 62 |
-| ...and 799 more |  |  |  |
+| ...and 795 more |  |  |  |
 
 ## Script Examples
 

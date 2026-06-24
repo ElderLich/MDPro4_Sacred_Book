@@ -27,7 +27,7 @@ With no player argument, this returns the duel-wide turn number; with player 0 o
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **231** indexed script(s).
+- Detected in **232** indexed script(s).
 - Search this function in the [Script Explorer](/tools/script-explorer) with `Duel.GetTurnCount`.
 
 | Card | ID | Script | Detected Calls |
@@ -55,8 +55,8 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Metaphys Executor | `45148985` | [Scripts/c45148985.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c45148985.lua) | 52 |
 | Cynet Backdoor | `43839002` | [Scripts/c43839002.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c43839002.lua) | 52 |
 | Sauravis, Dragon Sage of the Voiceless Voice | `88284599` | [Scripts/c88284599.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c88284599.lua) | 51 |
-| The Winged Dragon of Ra - Sphere Mode | `10000080` | [Scripts/c10000080.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c10000080.lua) | 51 |
-| ...and 207 more |  |  |  |
+| Unchained Enma Lord Yama | `94014327` | [Scripts/c94014327.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c94014327.lua) | 51 |
+| ...and 208 more |  |  |  |
 
 ## Script Examples
 

@@ -50,7 +50,7 @@ The return value is the number of cards actually released.
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **1067** indexed script(s).
+- Detected in **1070** indexed script(s).
 - Search this function in the [Script Explorer](/tools/script-explorer) with `Duel.Release`.
 
 | Card | ID | Script | Detected Calls |
@@ -79,7 +79,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | [Prank-Kids Rocket Ride](/examples/cards/18514525) | `18514525` | [Scripts/c18514525.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c18514525.lua) | 61 |
 | Vaylantz Genesis Grand Duke | `76075139` | [Scripts/c76075139.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c76075139.lua) | 60 |
 | Frightfur Meister | `77522571` | [Scripts/c77522571.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c77522571.lua) | 59 |
-| ...and 1043 more |  |  |  |
+| ...and 1046 more |  |  |  |
 
 ## Script Examples
 

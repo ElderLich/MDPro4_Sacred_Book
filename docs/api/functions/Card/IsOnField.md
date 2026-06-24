@@ -26,7 +26,7 @@ Checks whether c is currently on the field and is not being treated as off the f
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **1094** indexed script(s).
+- Detected in **1095** indexed script(s).
 - Search this function in the [Script Explorer](/tools/script-explorer) with `Card.IsOnField`.
 
 | Card | ID | Script | Detected Calls |
@@ -55,7 +55,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Performapal Trump Girl | `42002073` | [Scripts/c42002073.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c42002073.lua) | 60 |
 | Starving Venom Fusion Dragon of the Four Heavenly Dragons | `27118421` | [Scripts/c27118421.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c27118421.lua) | 59 |
 | Invocation | `74063034` | [Scripts/c74063034.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c74063034.lua) | 59 |
-| ...and 1070 more |  |  |  |
+| ...and 1071 more |  |  |  |
 
 ## Script Examples
 

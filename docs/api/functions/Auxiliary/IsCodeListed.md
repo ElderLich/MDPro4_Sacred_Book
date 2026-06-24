@@ -28,7 +28,7 @@ The Lua helper returns true for a listed code and nil otherwise, so it is normal
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **170** indexed script(s).
+- Detected in **175** indexed script(s).
 - Search this function in the [Script Explorer](/tools/script-explorer) with `Auxiliary.IsCodeListed`.
 
 | Card | ID | Script | Detected Calls |
@@ -39,8 +39,8 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Chaos Hats | `2372506` | [Scripts/c2372506.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c2372506.lua) | 59 |
 | Ancient Gear Duel | `53541822` | [Scripts/c53541822.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c53541822.lua) | 58 |
 | Defense of the Temple | `96687733` | [Scripts/c96687733.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c96687733.lua) | 58 |
-| Divine Serpent Apophis | `97800311` | [Scripts/c97800311.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c97800311.lua) | 58 |
 | Purrely | `25550531` | [Scripts/c25550531.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c25550531.lua) | 56 |
+| Divine Serpent Apophis | `97800311` | [Scripts/c97800311.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c97800311.lua) | 56 |
 | Masterflare Hyperion | `63101468` | [Scripts/c63101468.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c63101468.lua) | 53 |
 | Max Metalmorph | `89812483` | [Scripts/c89812483.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c89812483.lua) | 53 |
 | Gunkan Suship Shari Red | `63748694` | [Scripts/c63748694.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c63748694.lua) | 52 |
@@ -50,14 +50,14 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Ancient Gear Advance | `4064925` | [Scripts/c4064925.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c4064925.lua) | 51 |
 | Synchro Fellowship | `43834302` | [Scripts/c43834302.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c43834302.lua) | 51 |
 | Eclipse, Dragon Ruler of Catastrophes | `30350202` | [Scripts/c30350202.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c30350202.lua) | 50 |
+| Blue-Eyes Toon Ultimate Dragon | `71808988` | [Scripts/c71808988.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c71808988.lua) | 50 |
 | Timaeus the United Dragon | `3078380` | [Scripts/c3078380.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c3078380.lua) | 50 |
 | Exosister Vadis | `77891946` | [Scripts/c77891946.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c77891946.lua) | 50 |
 | Mystic Box of Chaos | `75983808` | [Scripts/c75983808.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c75983808.lua) | 49 |
 | Skull Archfiend of Chaos | `24088928` | [Scripts/c24088928.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c24088928.lua) | 49 |
 | Mystical Celtic Sage | `50073633` | [Scripts/c50073633.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c50073633.lua) | 49 |
 | Gold Pride - It's Neck and Neck! | `90164606` | [Scripts/c90164606.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c90164606.lua) | 49 |
-| Evil HERO Inferno Wing - Backfire | `59893882` | [Scripts/c59893882.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c59893882.lua) | 49 |
-| ...and 146 more |  |  |  |
+| ...and 151 more |  |  |  |
 
 ## Script Examples
 

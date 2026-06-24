@@ -29,7 +29,7 @@ The selected description id is also announced to the client.
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **471** indexed script(s).
+- Detected in **473** indexed script(s).
 - Search this function in the [Script Explorer](/tools/script-explorer) with `Duel.SelectOption`.
 
 | Card | ID | Script | Detected Calls |
@@ -58,7 +58,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Hi-Speedroid Cork Shooter | `23361526` | [Scripts/c23361526.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c23361526.lua) | 56 |
 | X-Saber Pellina | `9978697` | [Scripts/c9978697.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c9978697.lua) | 56 |
 | Thunder Dragonduo | `55591586` | [Scripts/c55591586.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c55591586.lua) | 55 |
-| ...and 447 more |  |  |  |
+| ...and 449 more |  |  |  |
 
 ## Script Examples
 

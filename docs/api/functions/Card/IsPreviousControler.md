@@ -27,7 +27,7 @@ Checks whether c's previous controller was player.
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **761** indexed script(s).
+- Detected in **762** indexed script(s).
 - Search this function in the [Script Explorer](/tools/script-explorer) with `Card.IsPreviousControler`.
 
 | Card | ID | Script | Detected Calls |
@@ -56,7 +56,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Performage Trapeze Magician | `17016362` | [Scripts/c17016362.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c17016362.lua) | 56 |
 | Number 38: Hope Harbinger Dragon Titanic Galaxy | `63767246` | [Scripts/c63767246.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c63767246.lua) | 56 |
 | Abyss-steam | `63941169` | [Scripts/c63941169.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c63941169.lua) | 56 |
-| ...and 737 more |  |  |  |
+| ...and 738 more |  |  |  |
 
 ## Script Examples
 

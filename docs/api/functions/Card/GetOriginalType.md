@@ -26,7 +26,7 @@ Returns c's original card-data type bitmask, not its current modified type.
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **162** indexed script(s).
+- Detected in **163** indexed script(s).
 - Search this function in the [Script Explorer](/tools/script-explorer) with `Card.GetOriginalType`.
 
 | Card | ID | Script | Detected Calls |
@@ -52,10 +52,10 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Zebufera, Vaalmonican Hallow Heathen | `2815176` | [Scripts/c2815176.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c2815176.lua) | 52 |
 | Emblema Salvation | `61950680` | [Scripts/c61950680.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c61950680.lua) | 52 |
 | Cynet Backdoor | `43839002` | [Scripts/c43839002.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c43839002.lua) | 52 |
+| Card 24056179 | `24056179` | [Scripts/c24056179.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c24056179.lua) | 52 |
 | Performage Ball Balancer | `92530005` | [Scripts/c92530005.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c92530005.lua) | 51 |
 | Shade the Obscure | `77157846` | [Scripts/c77157846.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c77157846.lua) | 51 |
-| Antihuman Intelligence ME-PSY-YA | `58844135` | [Scripts/c58844135.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c58844135.lua) | 51 |
-| ...and 138 more |  |  |  |
+| ...and 139 more |  |  |  |
 
 ## Script Examples
 

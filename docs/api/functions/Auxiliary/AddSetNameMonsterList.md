@@ -23,13 +23,14 @@ Registers set codes of monsters listed by c, so Auxiliary.IsSetNameMonsterListed
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **38** indexed script(s).
+- Detected in **39** indexed script(s).
 - Search this function in the [Script Explorer](/tools/script-explorer) with `Auxiliary.AddSetNameMonsterList`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
 | [Eternal Favorite](/examples/cards/87532344) | `87532344` | [Scripts/c87532344.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c87532344.lua) | 73 |
 | Contact Gate | `41933425` | [Scripts/c41933425.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c41933425.lua) | 52 |
+| Blue-Eyes Toon Ultimate Dragon | `71808988` | [Scripts/c71808988.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c71808988.lua) | 50 |
 | Neos Fusion | `14088859` | [Scripts/c14088859.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c14088859.lua) | 49 |
 | EN - Engage Neo Space | `80170678` | [Scripts/c80170678.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c80170678.lua) | 46 |
 | Geistgrinder Golem | `26913989` | [Scripts/c26913989.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c26913989.lua) | 45 |
@@ -51,8 +52,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | EN Wave | `89058026` | [Scripts/c89058026.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c89058026.lua) | 33 |
 | Reverse of Neos | `18302224` | [Scripts/c18302224.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c18302224.lua) | 33 |
 | Cyclone Boomerang | `29612557` | [Scripts/c29612557.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c29612557.lua) | 31 |
-| Miracle Contact | `35255456` | [Scripts/c35255456.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c35255456.lua) | 31 |
-| ...and 14 more |  |  |  |
+| ...and 15 more |  |  |  |
 
 ## Script Examples
 
@@ -80,14 +80,14 @@ function c41933425.initial_effect(c)
 	local e1=Effect.CreateEffect(c)
 ```
 
-### Neos Fusion (`14088859`)
+### Blue-Eyes Toon Ultimate Dragon (`71808988`)
 
-Source: [Scripts/c14088859.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c14088859.lua)
+Source: [Scripts/c71808988.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c71808988.lua)
 
 ```lua
-function c14088859.initial_effect(c)
-	aux.AddCodeList(c,89943723)
-	aux.AddSetNameMonsterList(c,0x3008)
-	--Activate
-	local e1=Effect.CreateEffect(c)
+	c:EnableReviveLimit()
+	aux.AddMaterialCodeList(c,53183600)
+	aux.AddSetNameMonsterList(c,0x62)
+	aux.AddFusionProcFunFun(c,aux.FilterBoolFunction(Card.IsFusionCode,53183600),s.ffilter,2,true)
+	aux.AddContactFusionProcedure(c,s.cfilter,LOCATION_HAND+LOCATION_MZONE+LOCATION_GRAVE,0,aux.ContactFusionSendToDeck(c))
 ```

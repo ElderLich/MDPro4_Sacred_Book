@@ -27,7 +27,7 @@ Checks whether c is unaffected by effect e.
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **604** indexed script(s).
+- Detected in **608** indexed script(s).
 - Search this function in the [Script Explorer](/tools/script-explorer) with `Card.IsImmuneToEffect`.
 
 | Card | ID | Script | Detected Calls |
@@ -56,7 +56,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | [Magnet Bonding](/examples/cards/65514302) | `65514302` | [Scripts/c65514302.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c65514302.lua) | 65 |
 | [Hecahands Tartaros](/examples/cards/57809669) | `57809669` | [Scripts/c57809669.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c57809669.lua) | 65 |
 | [Aiwass the Spirit of the Law](/examples/cards/84288367) | `84288367` | [Scripts/c84288367.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c84288367.lua) | 64 |
-| ...and 580 more |  |  |  |
+| ...and 584 more |  |  |  |
 
 ## Script Examples
 

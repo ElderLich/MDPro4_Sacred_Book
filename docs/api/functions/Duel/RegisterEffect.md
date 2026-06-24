@@ -23,7 +23,7 @@ Registers e as a player/global effect for player.
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **2115** indexed script(s).
+- Detected in **2123** indexed script(s).
 - Search this function in the [Script Explorer](/tools/script-explorer) with `Duel.RegisterEffect`.
 
 | Card | ID | Script | Detected Calls |
@@ -52,7 +52,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | [Dark End Evaporation Dragon](/examples/cards/62002838) | `62002838` | [Scripts/c62002838.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c62002838.lua) | 63 |
 | [Future Fusion Nova](/examples/cards/92058902) | `92058902` | [Scripts/c92058902.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c92058902.lua) | 63 |
 | [Enneacraft - Atil.SPIA](/examples/cards/71801447) | `71801447` | [Scripts/c71801447.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c71801447.lua) | 62 |
-| ...and 2091 more |  |  |  |
+| ...and 2099 more |  |  |  |
 
 ## Script Examples
 

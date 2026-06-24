@@ -53,10 +53,10 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Exosister Returnia | `197042` | [Scripts/c197042.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c197042.lua) | 46 |
 | Strength in Unity | `96239878` | [Scripts/c96239878.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c96239878.lua) | 46 |
 | Dragonmaid Tidying | `57416183` | [Scripts/c57416183.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c57416183.lua) | 46 |
-| Regenesis Overlord | `47082621` | [Scripts/c47082621.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c47082621.lua) | 44 |
 | Vernusylph in Full Bloom | `7206349` | [Scripts/c7206349.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c7206349.lua) | 43 |
 | Blitzclique - Return Stroke | `23526128` | [Scripts/c23526128.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c23526128.lua) | 43 |
 | Exosister Mikailis | `42741437` | [Scripts/c42741437.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c42741437.lua) | 43 |
+| Regenesis Overlord | `47082621` | [Scripts/c47082621.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c47082621.lua) | 43 |
 | S-Force Sorted World | `11642993` | [Scripts/c11642993.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c11642993.lua) | 40 |
 | Expurrely Noir | `83827392` | [Scripts/c83827392.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c83827392.lua) | 40 |
 | Virgil, Rock Star of the Burning Abyss | `601193` | [Scripts/c601193.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c601193.lua) | 40 |

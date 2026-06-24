@@ -1,6 +1,6 @@
 # Auxiliary
 
-363 functions in the `Auxiliary` namespace.
+365 functions in the `Auxiliary` namespace.
 
 - [Auxiliary.AddBanishRedirect](AddBanishRedirect.md)
 - [Auxiliary.AddCodeList](AddCodeList.md)
@@ -109,6 +109,7 @@
 - [Auxiliary.EnableChangeCode](EnableChangeCode.md)
 - [Auxiliary.EnableDualAttribute](EnableDualAttribute.md)
 - [Auxiliary.EnableExtraDeckSummonCountLimit](EnableExtraDeckSummonCountLimit.md)
+- [Auxiliary.EnableMulcharmyGlobalCheck](EnableMulcharmyGlobalCheck.md)
 - [Auxiliary.EnableNeosReturn](EnableNeosReturn.md)
 - [Auxiliary.EnablePendulumAttribute](EnablePendulumAttribute.md)
 - [Auxiliary.EnableReviveLimitPendulumSummonable](EnableReviveLimitPendulumSummonable.md)
@@ -227,6 +228,7 @@
 - [Auxiliary.MergedDelayEventCheck2_ToSingleCard](MergedDelayEventCheck2_ToSingleCard.md)
 - [Auxiliary.MimighoulFlipCondition](MimighoulFlipCondition.md)
 - [Auxiliary.MonsterEffectPropertyFilter](MonsterEffectPropertyFilter.md)
+- [Auxiliary.MulcharmyGlobalCheck](MulcharmyGlobalCheck.md)
 - [Auxiliary.MustMaterialCheck](MustMaterialCheck.md)
 - [Auxiliary.MustMaterialCounterFilter](MustMaterialCounterFilter.md)
 - [Auxiliary.mzctcheck](mzctcheck.md)

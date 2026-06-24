@@ -28,7 +28,7 @@ The helper builds cc copies of f and forwards them to Auxiliary.AddFusionProcMix
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **80** indexed script(s).
+- Detected in **81** indexed script(s).
 - Search this function in the [Script Explorer](/tools/script-explorer) with `Auxiliary.AddFusionProcCodeFun`.
 
 | Card | ID | Script | Detected Calls |
@@ -44,11 +44,11 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Gladiator Beast Gyzarus | `48156348` | [Scripts/c48156348.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c48156348.lua) | 51 |
 | Red-Eyes Dark Dragoon | `37818794` | [Scripts/c37818794.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c37818794.lua) | 50 |
 | Mirrorjade the Iceblade Dragon | `44146295` | [Scripts/c44146295.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c44146295.lua) | 49 |
-| Invoked Magistus Omega | `38423248` | [Scripts/c38423248.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c38423248.lua) | 49 |
 | Evil HERO Inferno Wing - Backfire | `59893882` | [Scripts/c59893882.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c59893882.lua) | 49 |
 | Blue-Eyes Tyrant Dragon | `11443677` | [Scripts/c11443677.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c11443677.lua) | 49 |
 | Dark Magician of Destruction | `59400890` | [Scripts/c59400890.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c59400890.lua) | 48 |
 | Sprind the Irondash Dragon | `1906812` | [Scripts/c1906812.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c1906812.lua) | 48 |
+| Invoked Magistus Omega | `38423248` | [Scripts/c38423248.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c38423248.lua) | 48 |
 | Master of Chaos | `85059922` | [Scripts/c85059922.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c85059922.lua) | 48 |
 | Titaniklad the Ash Dragon | `41373230` | [Scripts/c41373230.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c41373230.lua) | 47 |
 | Fallen Angel of the Golden Land | `43143567` | [Scripts/c43143567.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c43143567.lua) | 47 |
@@ -57,7 +57,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Fiendsmith's Desirae | `82135803` | [Scripts/c82135803.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c82135803.lua) | 47 |
 | Albion the Sanctifire Dragon | `38811586` | [Scripts/c38811586.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c38811586.lua) | 46 |
 | Artmage Diactorus | `27184601` | [Scripts/c27184601.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c27184601.lua) | 46 |
-| ...and 56 more |  |  |  |
+| ...and 57 more |  |  |  |
 
 ## Script Examples
 

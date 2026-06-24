@@ -30,7 +30,7 @@ When player is supplied, only effects whose count limit can still be used by tha
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **223** indexed script(s).
+- Detected in **224** indexed script(s).
 - Search this function in the [Script Explorer](/tools/script-explorer) with `Card.IsHasEffect`.
 
 | Card | ID | Script | Detected Calls |
@@ -59,7 +59,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Lunalight Masquerade | `2344618` | [Scripts/c2344618.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c2344618.lua) | 57 |
 | Amazoness Secret Arts | `86758746` | [Scripts/c86758746.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c86758746.lua) | 57 |
 | Nervedo the Shadebeast Power Patron | `17473466` | [Scripts/c17473466.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c17473466.lua) | 56 |
-| ...and 199 more |  |  |  |
+| ...and 200 more |  |  |  |
 
 ## Script Examples
 

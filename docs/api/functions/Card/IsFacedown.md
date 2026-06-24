@@ -26,7 +26,7 @@ Checks whether c is in face-down position.
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **963** indexed script(s).
+- Detected in **964** indexed script(s).
 - Search this function in the [Script Explorer](/tools/script-explorer) with `Card.IsFacedown`.
 
 | Card | ID | Script | Detected Calls |
@@ -55,7 +55,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | [Particle Fusion](/examples/cards/39261576) | `39261576` | [Scripts/c39261576.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c39261576.lua) | 61 |
 | [Prank-Kids Rocket Ride](/examples/cards/18514525) | `18514525` | [Scripts/c18514525.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c18514525.lua) | 61 |
 | Vaylantz Genesis Grand Duke | `76075139` | [Scripts/c76075139.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c76075139.lua) | 60 |
-| ...and 939 more |  |  |  |
+| ...and 940 more |  |  |  |
 
 ## Script Examples
 

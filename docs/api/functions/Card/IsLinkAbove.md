@@ -27,12 +27,13 @@ Checks whether c has a nonzero Link Rating greater than or equal to link.
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **27** indexed script(s).
+- Detected in **28** indexed script(s).
 - Search this function in the [Script Explorer](/tools/script-explorer) with `Card.IsLinkAbove`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
 | [Yummy★Snatchy](/examples/cards/30581601) | `30581601` | [Scripts/c30581601.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c30581601.lua) | 61 |
+| Unchained Soul Rage Abominator | `21419436` | [Scripts/c21419436.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c21419436.lua) | 53 |
 | Marincess Cascade | `27012990` | [Scripts/c27012990.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c27012990.lua) | 53 |
 | Code of Soul | `74652966` | [Scripts/c74652966.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c74652966.lua) | 50 |
 | Scareclaw Twinsaw | `95245571` | [Scripts/c95245571.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c95245571.lua) | 48 |
@@ -55,8 +56,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | S-Force Edge Razor | `91864689` | [Scripts/c91864689.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c91864689.lua) | 33 |
 | Link Devotee | `48068378` | [Scripts/c48068378.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c48068378.lua) | 33 |
 | Sunavalon Bloom | `54340229` | [Scripts/c54340229.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c54340229.lua) | 32 |
-| Detonate Deleter | `24487411` | [Scripts/c24487411.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c24487411.lua) | 32 |
-| ...and 3 more |  |  |  |
+| ...and 4 more |  |  |  |
 
 ## Script Examples
 
@@ -72,6 +72,18 @@ end
 function s.sccon(e,tp,eg,ep,ev,re,r,rp)
 ```
 
+### Unchained Soul Rage Abominator (`21419436`)
+
+Source: [Scripts/c21419436.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c21419436.lua)
+
+```lua
+end
+function s.cfilter(c)
+	return c:IsFaceup() and c:IsLinkAbove(4) and c:IsSetCard(0x130)
+end
+function s.descon(e,tp,eg,ep,ev,re,r,rp)
+```
+
 ### Marincess Cascade (`27012990`)
 
 Source: [Scripts/c27012990.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c27012990.lua)
@@ -82,16 +94,4 @@ function c27012990.costfilter(c)
 	return c:IsFaceup() and c:IsSetCard(0x12b) and c:IsType(TYPE_LINK) and c:IsLinkAbove(1) and c:IsAbleToRemoveAsCost()
 end
 function c27012990.fselect(g,tp)
-```
-
-### Code of Soul (`74652966`)
-
-Source: [Scripts/c74652966.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c74652966.lua)
-
-```lua
-end
-function c74652966.lkfilter(c)
-	return c:IsLinkSummonable(nil) and c:IsRace(RACE_CYBERSE) and c:IsLinkAbove(3)
-end
-function c74652966.lktg(e,tp,eg,ep,ev,re,r,rp,chk)
 ```

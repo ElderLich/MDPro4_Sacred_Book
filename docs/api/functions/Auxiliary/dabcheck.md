@@ -22,7 +22,7 @@ Returns true if every card in g has a different Attribute.
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **12** indexed script(s).
+- Detected in **13** indexed script(s).
 - Search this function in the [Script Explorer](/tools/script-explorer) with `Auxiliary.dabcheck`.
 
 | Card | ID | Script | Detected Calls |
@@ -34,6 +34,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Vanquish Soul Caesar Valius | `91073013` | [Scripts/c91073013.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c91073013.lua) | 54 |
 | Duality | `39973386` | [Scripts/c39973386.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c39973386.lua) | 50 |
 | Here There Be Dragons | `4575541` | [Scripts/c4575541.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c4575541.lua) | 44 |
+| Witchcrafter Madame Rilliona | `33475154` | [Scripts/c33475154.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c33475154.lua) | 43 |
 | Spiritual Power Recovery Potion | `61082944` | [Scripts/c61082944.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c61082944.lua) | 43 |
 | Vanquish Soul Snow Devil | `60883493` | [Scripts/c60883493.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c60883493.lua) | 42 |
 | Mental Tuner | `30291086` | [Scripts/c30291086.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c30291086.lua) | 39 |

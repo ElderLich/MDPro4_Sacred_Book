@@ -31,7 +31,7 @@ chkf is forwarded to the Fusion Material condition check, and not_material is us
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **244** indexed script(s).
+- Detected in **246** indexed script(s).
 - Search this function in the [Script Explorer](/tools/script-explorer) with `Card.CheckFusionMaterial`.
 
 | Card | ID | Script | Detected Calls |
@@ -60,7 +60,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | [Tohushaddoll Grysta](/examples/cards/95072744) | `95072744` | [Scripts/c95072744.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c95072744.lua) | 64 |
 | [GMX 55th Experiment Report](/examples/cards/38984832) | `38984832` | [Scripts/c38984832.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c38984832.lua) | 64 |
 | [Predaplant Bal Teah](/examples/cards/66787942) | `66787942` | [Scripts/c66787942.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c66787942.lua) | 64 |
-| ...and 220 more |  |  |  |
+| ...and 222 more |  |  |  |
 
 ## Script Examples
 

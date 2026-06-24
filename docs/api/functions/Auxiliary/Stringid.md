@@ -27,7 +27,7 @@ Returns the card-string id for card code and string index id. The index starts a
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **9526** indexed script(s).
+- Detected in **9551** indexed script(s).
 - Search this function in the [Script Explorer](/tools/script-explorer) with `Auxiliary.Stringid`.
 
 | Card | ID | Script | Detected Calls |
@@ -56,7 +56,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | [Performage Cup Tricker](/examples/cards/6812770) | `6812770` | [Scripts/c6812770.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c6812770.lua) | 65 |
 | [Ehther the Heavenly Monarch](/examples/cards/96570609) | `96570609` | [Scripts/c96570609.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c96570609.lua) | 65 |
 | [Spirit Illusion](/examples/cards/71939275) | `71939275` | [Scripts/c71939275.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c71939275.lua) | 65 |
-| ...and 9502 more |  |  |  |
+| ...and 9527 more |  |  |  |
 
 ## Script Examples
 

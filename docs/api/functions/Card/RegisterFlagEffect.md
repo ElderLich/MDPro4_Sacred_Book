@@ -34,7 +34,7 @@ When reset_flag contains RESET_PHASE without RESET_SELF_TURN or RESET_OPPO_TURN,
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **853** indexed script(s).
+- Detected in **857** indexed script(s).
 - Search this function in the [Script Explorer](/tools/script-explorer) with `Card.RegisterFlagEffect`.
 
 | Card | ID | Script | Detected Calls |
@@ -60,10 +60,10 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | [Shooting Majestic Star Dragon](/examples/cards/40939228) | `40939228` | [Scripts/c40939228.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c40939228.lua) | 62 |
 | [Ursarctic Polar Star](/examples/cards/62714453) | `62714453` | [Scripts/c62714453.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c62714453.lua) | 62 |
 | [Albion the Branded Dragon](/examples/cards/87746184) | `87746184` | [Scripts/c87746184.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c87746184.lua) | 62 |
-| [Ecclesia and the Dark Dragon](/examples/cards/78397661) | `78397661` | [Scripts/c78397661.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c78397661.lua) | 62 |
 | [PSY-Framelord Zeta](/examples/cards/37192109) | `37192109` | [Scripts/c37192109.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c37192109.lua) | 62 |
 | [The Gaze of Timaeus](/examples/cards/22283204) | `22283204` | [Scripts/c22283204.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c22283204.lua) | 62 |
-| ...and 829 more |  |  |  |
+| [Penetration Fusion](/examples/cards/8778267) | `8778267` | [Scripts/c8778267.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c8778267.lua) | 62 |
+| ...and 833 more |  |  |  |
 
 ## Script Examples
 

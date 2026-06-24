@@ -27,7 +27,7 @@ Checks whether c currently has at least one Race flag from race.
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **2789** indexed script(s).
+- Detected in **2800** indexed script(s).
 - Search this function in the [Script Explorer](/tools/script-explorer) with `Card.IsRace`.
 
 | Card | ID | Script | Detected Calls |
@@ -56,7 +56,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | [Plunder Patroll Shipshape Ships Shipping](/examples/cards/44227727) | `44227727` | [Scripts/c44227727.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c44227727.lua) | 63 |
 | [Odd-Eyes Arcray Dragon](/examples/cards/6218704) | `6218704` | [Scripts/c6218704.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c6218704.lua) | 62 |
 | [Chimera Fusion](/examples/cards/63136489) | `63136489` | [Scripts/c63136489.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c63136489.lua) | 62 |
-| ...and 2765 more |  |  |  |
+| ...and 2776 more |  |  |  |
 
 ## Script Examples
 

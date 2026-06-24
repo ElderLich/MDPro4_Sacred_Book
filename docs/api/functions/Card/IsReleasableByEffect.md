@@ -26,7 +26,7 @@ Checks whether c can be Released by the current resolving effect, using the curr
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **41** indexed script(s).
+- Detected in **43** indexed script(s).
 - Search this function in the [Script Explorer](/tools/script-explorer) with `Card.IsReleasableByEffect`.
 
 | Card | ID | Script | Detected Calls |
@@ -53,9 +53,9 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Starry Knight Orbitael | `44818` | [Scripts/c44818.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c44818.lua) | 43 |
 | Foie Glasya de Nouvelles | `15001940` | [Scripts/c15001940.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c15001940.lua) | 42 |
 | Confiras de Nouvelles | `53618197` | [Scripts/c53618197.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c53618197.lua) | 42 |
+| Witchcrafter Marka | `6071005` | [Scripts/c6071005.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c6071005.lua) | 42 |
 | Prima Light | `2507443` | [Scripts/c2507443.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c2507443.lua) | 42 |
-| Mitsurugi Great Purification | `17954937` | [Scripts/c17954937.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c17954937.lua) | 42 |
-| ...and 17 more |  |  |  |
+| ...and 19 more |  |  |  |
 
 ## Script Examples
 

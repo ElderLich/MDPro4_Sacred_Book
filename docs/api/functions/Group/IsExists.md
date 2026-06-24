@@ -43,7 +43,7 @@ The `count` parameter is useful for requirements such as "2 or more monsters wit
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **2212** indexed script(s).
+- Detected in **2220** indexed script(s).
 - Search this function in the [Script Explorer](/tools/script-explorer) with `Group.IsExists`.
 
 | Card | ID | Script | Detected Calls |
@@ -72,7 +72,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | [Ursarctic Polari](/examples/cards/27693363) | `27693363` | [Scripts/c27693363.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c27693363.lua) | 65 |
 | [Prank-Kids Weather Washer](/examples/cards/44509529) | `44509529` | [Scripts/c44509529.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c44509529.lua) | 65 |
 | [Enneacraft - Asta.PIXEA](/examples/cards/28454232) | `28454232` | [Scripts/c28454232.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c28454232.lua) | 64 |
-| ...and 2188 more |  |  |  |
+| ...and 2196 more |  |  |  |
 
 ## Script Examples
 

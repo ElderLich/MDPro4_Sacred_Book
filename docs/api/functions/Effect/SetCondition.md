@@ -45,7 +45,7 @@ For activated effects, costs and targets still get their own legality checks. Th
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **8970** indexed script(s).
+- Detected in **8992** indexed script(s).
 - Search this function in the [Script Explorer](/tools/script-explorer) with `Effect.SetCondition`.
 
 | Card | ID | Script | Detected Calls |
@@ -74,7 +74,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | [Lubellion the Searing Dragon](/examples/cards/70534340) | `70534340` | [Scripts/c70534340.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c70534340.lua) | 65 |
 | [Magnet Bonding](/examples/cards/65514302) | `65514302` | [Scripts/c65514302.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c65514302.lua) | 65 |
 | [Ursarctic Polari](/examples/cards/27693363) | `27693363` | [Scripts/c27693363.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c27693363.lua) | 65 |
-| ...and 8946 more |  |  |  |
+| ...and 8968 more |  |  |  |
 
 ## Script Examples
 

@@ -26,7 +26,7 @@ Returns e's operation callback, or nil if no operation callback is set.
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **253** indexed script(s).
+- Detected in **256** indexed script(s).
 - Search this function in the [Script Explorer](/tools/script-explorer) with `Effect.GetOperation`.
 
 | Card | ID | Script | Detected Calls |
@@ -55,7 +55,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | [GMX 55th Experiment Report](/examples/cards/38984832) | `38984832` | [Scripts/c38984832.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c38984832.lua) | 64 |
 | [Predaplant Bal Teah](/examples/cards/66787942) | `66787942` | [Scripts/c66787942.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c66787942.lua) | 64 |
 | [Teleport Fusion](/examples/cards/36494597) | `36494597` | [Scripts/c36494597.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c36494597.lua) | 64 |
-| ...and 229 more |  |  |  |
+| ...and 232 more |  |  |  |
 
 ## Script Examples
 

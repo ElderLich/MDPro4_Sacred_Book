@@ -33,11 +33,11 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Odd-Eyes Pendulumgraph Dragon | `66425726` | [Scripts/c66425726.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c66425726.lua) | 49 |
 | Guilt-Gripping Morganite | `61822419` | [Scripts/c61822419.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c61822419.lua) | 44 |
 | Crystal Tree | `47408488` | [Scripts/c47408488.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c47408488.lua) | 40 |
-| Mulcharmy Purulia | `84192580` | [Scripts/c84192580.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c84192580.lua) | 39 |
 | Ghost Sister &amp; Spooky Dogwood | `60643553` | [Scripts/c60643553.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c60643553.lua) | 39 |
-| Mulcharmy Fuwalos | `42141493` | [Scripts/c42141493.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c42141493.lua) | 38 |
-| Mulcharmy Meowls | `87126721` | [Scripts/c87126721.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c87126721.lua) | 38 |
 | Trickstar Lycoris | `35199656` | [Scripts/c35199656.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c35199656.lua) | 37 |
+| Mulcharmy Purulia | `84192580` | [Scripts/c84192580.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c84192580.lua) | 34 |
+| Mulcharmy Fuwalos | `42141493` | [Scripts/c42141493.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c42141493.lua) | 33 |
+| Mulcharmy Meowls | `87126721` | [Scripts/c87126721.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c87126721.lua) | 33 |
 | Maxx "C" | `23434538` | [Scripts/c23434538.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c23434538.lua) | 25 |
 | Shared Ride | `1372887` | [Scripts/c1372887.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c1372887.lua) | 22 |
 

@@ -26,7 +26,7 @@ Creates and returns a new Group containing the same cards as g.
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **2491** indexed script(s).
+- Detected in **2497** indexed script(s).
 - Search this function in the [Script Explorer](/tools/script-explorer) with `Group.Clone`.
 
 | Card | ID | Script | Detected Calls |
@@ -55,7 +55,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | [Odd-Eyes Revolution Dragon](/examples/cards/16306932) | `16306932` | [Scripts/c16306932.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c16306932.lua) | 64 |
 | [Aiwass the Spirit of the Law](/examples/cards/84288367) | `84288367` | [Scripts/c84288367.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c84288367.lua) | 64 |
 | [Tohushaddoll Grysta](/examples/cards/95072744) | `95072744` | [Scripts/c95072744.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c95072744.lua) | 64 |
-| ...and 2467 more |  |  |  |
+| ...and 2473 more |  |  |  |
 
 ## Script Examples
 

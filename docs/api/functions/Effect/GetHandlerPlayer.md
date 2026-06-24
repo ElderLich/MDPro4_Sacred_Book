@@ -26,7 +26,7 @@ Returns the current controller of e's handler.
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **952** indexed script(s).
+- Detected in **954** indexed script(s).
 - Search this function in the [Script Explorer](/tools/script-explorer) with `Effect.GetHandlerPlayer`.
 
 | Card | ID | Script | Detected Calls |
@@ -55,7 +55,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Beyond the Pendulum | `22125101` | [Scripts/c22125101.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c22125101.lua) | 56 |
 | Fallen Paradise of the Sacred Beasts | `65861210` | [Scripts/c65861210.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c65861210.lua) | 56 |
 | Edge Imp Scythe | `29280589` | [Scripts/c29280589.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c29280589.lua) | 56 |
-| ...and 928 more |  |  |  |
+| ...and 930 more |  |  |  |
 
 ## Script Examples
 

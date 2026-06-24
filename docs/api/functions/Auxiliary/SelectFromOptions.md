@@ -28,7 +28,7 @@ Each option is {condition, option\[, value\]}. If no condition is true, the help
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **135** indexed script(s).
+- Detected in **139** indexed script(s).
 - Search this function in the [Script Explorer](/tools/script-explorer) with `Auxiliary.SelectFromOptions`.
 
 | Card | ID | Script | Detected Calls |
@@ -41,6 +41,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | [A Bao A Qu, the Lightless Shadow](/examples/cards/4731783) | `4731783` | [Scripts/c4731783.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c4731783.lua) | 61 |
 | [Camelot, Realm of Noble Knights and Noble Arms](/examples/cards/15635751) | `15635751` | [Scripts/c15635751.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c15635751.lua) | 61 |
 | [Earthbound Servant Geo Gremlin](/examples/cards/8690387) | `8690387` | [Scripts/c8690387.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c8690387.lua) | 61 |
+| [Witchcrafter Celebration](/examples/cards/6958567) | `6958567` | [Scripts/c6958567.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c6958567.lua) | 61 |
 | Super Duper Polymerization | `44886582` | [Scripts/c44886582.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c44886582.lua) | 59 |
 | Double Interlock | `38129297` | [Scripts/c38129297.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c38129297.lua) | 59 |
 | Dark Contact | `77124096` | [Scripts/c77124096.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c77124096.lua) | 58 |
@@ -55,9 +56,8 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Clown Crew Biancaviso | `82159583` | [Scripts/c82159583.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c82159583.lua) | 52 |
 | Shadow Severing Strike | `57232301` | [Scripts/c57232301.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c57232301.lua) | 52 |
 | Kewl Tune B2B | `65961304` | [Scripts/c65961304.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c65961304.lua) | 52 |
-| Clown Crew Meteor | `93172951` | [Scripts/c93172951.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c93172951.lua) | 52 |
-| Stellarnova Binding | `69678646` | [Scripts/c69678646.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c69678646.lua) | 50 |
-| ...and 111 more |  |  |  |
+| Witchcrafter Pupils | `69964858` | [Scripts/c69964858.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c69964858.lua) | 52 |
+| ...and 115 more |  |  |  |
 
 ## Script Examples
 

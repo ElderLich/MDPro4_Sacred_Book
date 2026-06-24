@@ -28,7 +28,7 @@ Without e, the core only rejects Xyz Materials and cards already in the GY or ba
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **86** indexed script(s).
+- Detected in **87** indexed script(s).
 - Search this function in the [Script Explorer](/tools/script-explorer) with `Card.IsDestructable`.
 
 | Card | ID | Script | Detected Calls |
@@ -43,6 +43,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Lost World | `17228908` | [Scripts/c17228908.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c17228908.lua) | 51 |
 | Fire King Sanctuary | `65305978` | [Scripts/c65305978.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c65305978.lua) | 51 |
 | Salamandra Fusion | `9102835` | [Scripts/c9102835.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c9102835.lua) | 51 |
+| Unchained Enma Lord Yama | `94014327` | [Scripts/c94014327.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c94014327.lua) | 51 |
 | Odd-Eyes Lancer Dragon | `83347294` | [Scripts/c83347294.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c83347294.lua) | 51 |
 | Harpie Conductor | `85696777` | [Scripts/c85696777.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c85696777.lua) | 50 |
 | Mythical Beast Master Cerberus | `53842431` | [Scripts/c53842431.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c53842431.lua) | 49 |
@@ -56,8 +57,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | ReSolfachord Dreamia | `92610868` | [Scripts/c92610868.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c92610868.lua) | 45 |
 | Gwenhwyfar, Queen of Noble Arms | `19748583` | [Scripts/c19748583.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c19748583.lua) | 45 |
 | Dragunity Senatus | `92868896` | [Scripts/c92868896.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c92868896.lua) | 45 |
-| Mythical Beast Bashilisk | `80959027` | [Scripts/c80959027.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c80959027.lua) | 44 |
-| ...and 62 more |  |  |  |
+| ...and 63 more |  |  |  |
 
 ## Script Examples
 

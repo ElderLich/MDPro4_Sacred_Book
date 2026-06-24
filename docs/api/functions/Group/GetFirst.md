@@ -40,7 +40,7 @@ end
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **3524** indexed script(s).
+- Detected in **3537** indexed script(s).
 - Search this function in the [Script Explorer](/tools/script-explorer) with `Group.GetFirst`.
 
 | Card | ID | Script | Detected Calls |
@@ -69,7 +69,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | [Invoked Sorath](/examples/cards/43989315) | `43989315` | [Scripts/c43989315.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c43989315.lua) | 66 |
 | [Performage Cup Tricker](/examples/cards/6812770) | `6812770` | [Scripts/c6812770.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c6812770.lua) | 65 |
 | [Ehther the Heavenly Monarch](/examples/cards/96570609) | `96570609` | [Scripts/c96570609.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c96570609.lua) | 65 |
-| ...and 3500 more |  |  |  |
+| ...and 3513 more |  |  |  |
 
 ## Script Examples
 

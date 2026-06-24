@@ -26,7 +26,7 @@ Checks whether c is still related to the current battle, usually during the Dama
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **565** indexed script(s).
+- Detected in **566** indexed script(s).
 - Search this function in the [Script Explorer](/tools/script-explorer) with `Card.IsRelateToBattle`.
 
 | Card | ID | Script | Detected Calls |
@@ -53,9 +53,9 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Mechanical Mechanic | `22106558` | [Scripts/c22106558.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c22106558.lua) | 50 |
 | Geira Guile the Cubic King | `40392714` | [Scripts/c40392714.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c40392714.lua) | 50 |
 | Courageous Crimson Chevalier Bradamante | `91479482` | [Scripts/c91479482.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c91479482.lua) | 50 |
+| Blue-Eyes Toon Ultimate Dragon | `71808988` | [Scripts/c71808988.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c71808988.lua) | 50 |
 | ZW - Dragonic Halberd | `2896663` | [Scripts/c2896663.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c2896663.lua) | 50 |
-| Speedroid Colonel Clackers | `65155517` | [Scripts/c65155517.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c65155517.lua) | 49 |
-| ...and 541 more |  |  |  |
+| ...and 542 more |  |  |  |
 
 ## Script Examples
 

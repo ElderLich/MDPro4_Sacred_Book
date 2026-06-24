@@ -41,8 +41,8 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Portable Battery Pack | `61840587` | [Scripts/c61840587.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c61840587.lua) | 41 |
 | Corrupted Keys | `67949763` | [Scripts/c67949763.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c67949763.lua) | 38 |
 | Future Visions | `87902575` | [Scripts/c87902575.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c87902575.lua) | 38 |
+| Elder Entity Norden | `17412721` | [Scripts/c17412721.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c17412721.lua) | 37 |
 | Morphtronic Repair Unit | `90239723` | [Scripts/c90239723.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c90239723.lua) | 35 |
-| Elder Entity Norden | `17412721` | [Scripts/c17412721.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c17412721.lua) | 35 |
 | Kinka-byo | `45452224` | [Scripts/c45452224.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c45452224.lua) | 34 |
 | Escape from the Dark Dimension | `31550470` | [Scripts/c31550470.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c31550470.lua) | 32 |
 

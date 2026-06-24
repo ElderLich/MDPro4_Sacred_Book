@@ -48,7 +48,7 @@ When a function is supplied, the core marks the effect as using a function value
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **6375** indexed script(s).
+- Detected in **6382** indexed script(s).
 - Search this function in the [Script Explorer](/tools/script-explorer) with `Effect.SetValue`.
 
 | Card | ID | Script | Detected Calls |
@@ -77,7 +77,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | [Converging Wishes](/examples/cards/20007374) | `20007374` | [Scripts/c20007374.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c20007374.lua) | 64 |
 | [Graydle Split](/examples/cards/75361204) | `75361204` | [Scripts/c75361204.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c75361204.lua) | 64 |
 | [Enneacraft - Archa.TAIL](/examples/cards/81237046) | `81237046` | [Scripts/c81237046.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c81237046.lua) | 63 |
-| ...and 6351 more |  |  |  |
+| ...and 6358 more |  |  |  |
 
 ## Script Examples
 

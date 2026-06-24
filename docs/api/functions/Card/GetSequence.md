@@ -28,7 +28,7 @@ For other locations, sequence is the card's position in that location, starting 
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **335** indexed script(s).
+- Detected in **334** indexed script(s).
 - Search this function in the [Script Explorer](/tools/script-explorer) with `Card.GetSequence`.
 
 | Card | ID | Script | Detected Calls |
@@ -57,7 +57,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Shadowreaver Knight 21 | `95506252` | [Scripts/c95506252.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c95506252.lua) | 50 |
 | Paleozoic Cambroraster | `36346532` | [Scripts/c36346532.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c36346532.lua) | 50 |
 | Vision Fusion | `57425061` | [Scripts/c57425061.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c57425061.lua) | 50 |
-| ...and 311 more |  |  |  |
+| ...and 310 more |  |  |  |
 
 ## Script Examples
 

@@ -26,7 +26,7 @@ Returns c's current ATK, with unknown or negative ATK reported as 0.
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **658** indexed script(s).
+- Detected in **659** indexed script(s).
 - Search this function in the [Script Explorer](/tools/script-explorer) with `Card.GetAttack`.
 
 | Card | ID | Script | Detected Calls |
@@ -55,7 +55,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Amaze Attraction Wonder Wheel | `93473606` | [Scripts/c93473606.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c93473606.lua) | 55 |
 | Heroic Champion - Magnum Excalibur | `14301396` | [Scripts/c14301396.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c14301396.lua) | 55 |
 | Nemleria Louve | `57296396` | [Scripts/c57296396.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c57296396.lua) | 55 |
-| ...and 634 more |  |  |  |
+| ...and 635 more |  |  |  |
 
 ## Script Examples
 

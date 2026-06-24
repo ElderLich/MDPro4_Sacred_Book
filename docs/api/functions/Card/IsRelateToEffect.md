@@ -28,7 +28,7 @@ When an effect enters the Chain, its handler and cards selected with Duel.SetTar
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **6854** indexed script(s).
+- Detected in **6852** indexed script(s).
 - Search this function in the [Script Explorer](/tools/script-explorer) with `Card.IsRelateToEffect`.
 
 | Card | ID | Script | Detected Calls |
@@ -57,7 +57,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | [D/D Count Surveyor](/examples/cards/5997110) | `5997110` | [Scripts/c5997110.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c5997110.lua) | 63 |
 | [Shining Draw](/examples/cards/35906693) | `35906693` | [Scripts/c35906693.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c35906693.lua) | 63 |
 | [Dark End Evaporation Dragon](/examples/cards/62002838) | `62002838` | [Scripts/c62002838.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c62002838.lua) | 63 |
-| ...and 6830 more |  |  |  |
+| ...and 6828 more |  |  |  |
 
 ## Script Examples
 

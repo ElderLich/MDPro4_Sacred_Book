@@ -33,7 +33,7 @@ The count can be negative, so scripts that free a zone as a cost sometimes check
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **5270** indexed script(s).
+- Detected in **5284** indexed script(s).
 - Search this function in the [Script Explorer](/tools/script-explorer) with `Duel.GetLocationCount`.
 
 | Card | ID | Script | Detected Calls |
@@ -62,7 +62,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | [Aiwass the Spirit of the Law](/examples/cards/84288367) | `84288367` | [Scripts/c84288367.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c84288367.lua) | 64 |
 | [Predaplant Bal Teah](/examples/cards/66787942) | `66787942` | [Scripts/c66787942.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c66787942.lua) | 64 |
 | [Teleport Fusion](/examples/cards/36494597) | `36494597` | [Scripts/c36494597.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c36494597.lua) | 64 |
-| ...and 5246 more |  |  |  |
+| ...and 5260 more |  |  |  |
 
 ## Script Examples
 

@@ -26,13 +26,14 @@ Returns a Contact Fusion material operation that reveals face-down materials whe
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **22** indexed script(s).
+- Detected in **23** indexed script(s).
 - Search this function in the [Script Explorer](/tools/script-explorer) with `Auxiliary.ContactFusionSendToDeck`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
 | Gladiator Beast Gaiodiaz | `90957527` | [Scripts/c90957527.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c90957527.lua) | 54 |
 | Gladiator Beast Gyzarus | `48156348` | [Scripts/c48156348.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c48156348.lua) | 51 |
+| Blue-Eyes Toon Ultimate Dragon | `71808988` | [Scripts/c71808988.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c71808988.lua) | 50 |
 | Gladiator Beast Claudius | `48958757` | [Scripts/c48958757.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c48958757.lua) | 47 |
 | Gladiator Beast Andabata | `3779662` | [Scripts/c3779662.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c3779662.lua) | 46 |
 | Gladiator Beast Domitianus | `33652635` | [Scripts/c33652635.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c33652635.lua) | 44 |
@@ -80,14 +81,14 @@ Source: [Scripts/c48156348.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/
 	local e1=Effect.CreateEffect(c)
 ```
 
-### Gladiator Beast Claudius (`48958757`)
+### Blue-Eyes Toon Ultimate Dragon (`71808988`)
 
-Source: [Scripts/c48958757.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c48958757.lua)
+Source: [Scripts/c71808988.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c71808988.lua)
 
 ```lua
-	aux.AddFusionProcFunRep(c,s.matfilter,5,true)
-	c:EnableReviveLimit()
-	aux.AddContactFusionProcedure(c,s.cfilter,LOCATION_MZONE+LOCATION_GRAVE,0,aux.ContactFusionSendToDeck(c)):SetValue(SUMMON_VALUE_SELF)
-	--spsummon condition
-	local e0=Effect.CreateEffect(c)
+	aux.AddSetNameMonsterList(c,0x62)
+	aux.AddFusionProcFunFun(c,aux.FilterBoolFunction(Card.IsFusionCode,53183600),s.ffilter,2,true)
+	aux.AddContactFusionProcedure(c,s.cfilter,LOCATION_HAND+LOCATION_MZONE+LOCATION_GRAVE,0,aux.ContactFusionSendToDeck(c))
+	--cannot special summon
+	local e1=Effect.CreateEffect(c)
 ```

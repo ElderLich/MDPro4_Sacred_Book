@@ -27,7 +27,7 @@ Returns e's two property flag fields, flag1 and flag2.
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **28** indexed script(s).
+- Detected in **29** indexed script(s).
 - Search this function in the [Script Explorer](/tools/script-explorer) with `Effect.GetProperty`.
 
 | Card | ID | Script | Detected Calls |
@@ -35,9 +35,10 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | [Barian's Chaos Draw](/examples/cards/97769122) | `97769122` | [Scripts/c97769122.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c97769122.lua) | 63 |
 | [Transonic Bird](/examples/cards/34072799) | `34072799` | [Scripts/c34072799.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c34072799.lua) | 61 |
 | [Chef de Nouvelles](/examples/cards/29251488) | `29251488` | [Scripts/c29251488.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c29251488.lua) | 60 |
+| Witchcrafter Genni | `64756282` | [Scripts/c64756282.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c64756282.lua) | 56 |
 | Angello Vaalmonica | `3048768` | [Scripts/c3048768.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c3048768.lua) | 54 |
 | Dimonno Vaalmonica | `30432463` | [Scripts/c30432463.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c30432463.lua) | 53 |
-| Witchcrafter Genni | `64756282` | [Scripts/c64756282.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c64756282.lua) | 52 |
+| Witchcrafter Pupils | `69964858` | [Scripts/c69964858.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c69964858.lua) | 52 |
 | Dinomorphia Kentregina | `48832775` | [Scripts/c48832775.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c48832775.lua) | 49 |
 | Predaplant Verte Anaconda | `70369116` | [Scripts/c70369116.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c70369116.lua) | 49 |
 | Chasma, Dragon Ruler of Auroras | `4965193` | [Scripts/c4965193.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c4965193.lua) | 47 |
@@ -55,8 +56,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Fusion Duplication | `43331750` | [Scripts/c43331750.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c43331750.lua) | 34 |
 | Trap of Darkness | `79766336` | [Scripts/c79766336.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c79766336.lua) | 33 |
 | Transaction Rollback | `6351147` | [Scripts/c6351147.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c6351147.lua) | 32 |
-| Fake Feather | `22628574` | [Scripts/c22628574.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c22628574.lua) | 31 |
-| ...and 4 more |  |  |  |
+| ...and 5 more |  |  |  |
 
 ## Script Examples
 

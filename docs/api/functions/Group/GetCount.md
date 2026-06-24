@@ -26,7 +26,7 @@ Returns the number of cards in g.
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **5682** indexed script(s).
+- Detected in **5697** indexed script(s).
 - Search this function in the [Script Explorer](/tools/script-explorer) with `Group.GetCount`.
 
 | Card | ID | Script | Detected Calls |
@@ -55,7 +55,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | [Invoked Sorath](/examples/cards/43989315) | `43989315` | [Scripts/c43989315.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c43989315.lua) | 66 |
 | [Performage Cup Tricker](/examples/cards/6812770) | `6812770` | [Scripts/c6812770.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c6812770.lua) | 65 |
 | [Spirit Illusion](/examples/cards/71939275) | `71939275` | [Scripts/c71939275.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c71939275.lua) | 65 |
-| ...and 5658 more |  |  |  |
+| ...and 5673 more |  |  |  |
 
 ## Script Examples
 

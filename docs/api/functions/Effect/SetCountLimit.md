@@ -43,7 +43,7 @@ Effects with the same nonzero code share the same count. Special flags such as `
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **7849** indexed script(s).
+- Detected in **7875** indexed script(s).
 - Search this function in the [Script Explorer](/tools/script-explorer) with `Effect.SetCountLimit`.
 
 | Card | ID | Script | Detected Calls |
@@ -72,7 +72,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | [Spirit Illusion](/examples/cards/71939275) | `71939275` | [Scripts/c71939275.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c71939275.lua) | 65 |
 | [Lubellion the Searing Dragon](/examples/cards/70534340) | `70534340` | [Scripts/c70534340.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c70534340.lua) | 65 |
 | [Ghostrick Renovation](/examples/cards/61818176) | `61818176` | [Scripts/c61818176.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c61818176.lua) | 65 |
-| ...and 7825 more |  |  |  |
+| ...and 7851 more |  |  |  |
 
 ## Script Examples
 

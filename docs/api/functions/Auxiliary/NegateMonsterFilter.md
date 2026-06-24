@@ -41,13 +41,13 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Dragunity Arma Gram | `53184342` | [Scripts/c53184342.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c53184342.lua) | 54 |
 | D/D/D Super Doom King Bright Armageddon | `72402069` | [Scripts/c72402069.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c72402069.lua) | 52 |
 | Dual Avatar Feet - Armored Un-Gyo | `7631534` | [Scripts/c7631534.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c7631534.lua) | 52 |
+| Witchcrafter Madame Verre | `21522601` | [Scripts/c21522601.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c21522601.lua) | 52 |
 | Primite Imperial Dragon | `81418467` | [Scripts/c81418467.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c81418467.lua) | 50 |
 | Stellarnova Binding | `69678646` | [Scripts/c69678646.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c69678646.lua) | 50 |
 | Ghost Mourner &amp; Moonlit Chill | `52038441` | [Scripts/c52038441.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c52038441.lua) | 50 |
 | The Chaotic Sacred Beasts | `7894706` | [Scripts/c7894706.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c7894706.lua) | 49 |
 | Majestic Star Dragon | `7841112` | [Scripts/c7841112.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c7841112.lua) | 49 |
 | Seventh Eternity | `60158866` | [Scripts/c60158866.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c60158866.lua) | 49 |
-| Witchcrafter Madame Verre | `21522601` | [Scripts/c21522601.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c21522601.lua) | 49 |
 | Magikey Mechmusket - Batosbuster | `19489718` | [Scripts/c19489718.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c19489718.lua) | 48 |
 | Angel of Blue Tears | `91706817` | [Scripts/c91706817.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c91706817.lua) | 48 |
 | Officiator of Doom Samuel | `76213610` | [Scripts/c76213610.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c76213610.lua) | 48 |

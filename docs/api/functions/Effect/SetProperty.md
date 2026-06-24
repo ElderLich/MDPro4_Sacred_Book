@@ -44,7 +44,7 @@ Other common flags include `EFFECT_FLAG_DELAY` for missed-timing-sensitive trigg
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **10315** indexed script(s).
+- Detected in **10338** indexed script(s).
 - Search this function in the [Script Explorer](/tools/script-explorer) with `Effect.SetProperty`.
 
 | Card | ID | Script | Detected Calls |
@@ -73,7 +73,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | [Lubellion the Searing Dragon](/examples/cards/70534340) | `70534340` | [Scripts/c70534340.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c70534340.lua) | 65 |
 | [Ghostrick Renovation](/examples/cards/61818176) | `61818176` | [Scripts/c61818176.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c61818176.lua) | 65 |
 | [Magnet Bonding](/examples/cards/65514302) | `65514302` | [Scripts/c65514302.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c65514302.lua) | 65 |
-| ...and 10291 more |  |  |  |
+| ...and 10314 more |  |  |  |
 
 ## Script Examples
 

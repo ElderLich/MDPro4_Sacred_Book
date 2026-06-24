@@ -43,7 +43,6 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | P.U.N.K. JAM Dragon Drive | `28403802` | [Scripts/c28403802.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c28403802.lua) | 39 |
 | Chef's Special Recipe | `87955518` | [Scripts/c87955518.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c87955518.lua) | 39 |
 | Morpheus, the Dream Mirror Black Knight | `38267552` | [Scripts/c38267552.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c38267552.lua) | 38 |
-| K9-X "Ripper/M" | `31286915` | [Scripts/c31286915.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c31286915.lua) | 37 |
 | Brotherhood of the Fire Fist - Ram | `62694833` | [Scripts/c62694833.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c62694833.lua) | 37 |
 | Morpheus, the Dream Mirror White Knight | `1872843` | [Scripts/c1872843.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c1872843.lua) | 37 |
 | Raidraptor - Rudder Strix | `6552938` | [Scripts/c6552938.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c6552938.lua) | 37 |
@@ -51,6 +50,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Fortune Lady Fire | `71870152` | [Scripts/c71870152.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c71870152.lua) | 36 |
 | Phantasos, the Dream Mirror Foe | `99792080` | [Scripts/c99792080.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c99792080.lua) | 36 |
 | Brotherhood of the Fire Fist - Rooster | `30929786` | [Scripts/c30929786.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c30929786.lua) | 36 |
+| K9-X "Ripper/M" | `31286915` | [Scripts/c31286915.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c31286915.lua) | 35 |
 | Metaphys Nephthys | `72355272` | [Scripts/c72355272.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c72355272.lua) | 35 |
 | Ikelos, the Dream Mirror Mara | `75888208` | [Scripts/c75888208.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c75888208.lua) | 33 |
 | Metaphys Daedalus | `45960523` | [Scripts/c45960523.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c45960523.lua) | 32 |

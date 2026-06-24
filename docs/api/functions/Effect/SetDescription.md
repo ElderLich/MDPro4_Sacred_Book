@@ -40,7 +40,7 @@ Descriptions are commonly shown for optional triggers, selectable effects, and e
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **9024** indexed script(s).
+- Detected in **9049** indexed script(s).
 - Search this function in the [Script Explorer](/tools/script-explorer) with `Effect.SetDescription`.
 
 | Card | ID | Script | Detected Calls |
@@ -69,7 +69,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | [Ehther the Heavenly Monarch](/examples/cards/96570609) | `96570609` | [Scripts/c96570609.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c96570609.lua) | 65 |
 | [Spirit Illusion](/examples/cards/71939275) | `71939275` | [Scripts/c71939275.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c71939275.lua) | 65 |
 | [Lubellion the Searing Dragon](/examples/cards/70534340) | `70534340` | [Scripts/c70534340.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c70534340.lua) | 65 |
-| ...and 9000 more |  |  |  |
+| ...and 9025 more |  |  |  |
 
 ## Script Examples
 

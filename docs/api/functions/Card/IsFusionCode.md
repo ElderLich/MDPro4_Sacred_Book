@@ -30,7 +30,7 @@ The core includes c's current code, second code, and EFFECT_ADD_FUSION_CODE valu
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **46** indexed script(s).
+- Detected in **47** indexed script(s).
 - Search this function in the [Script Explorer](/tools/script-explorer) with `Card.IsFusionCode`.
 
 | Card | ID | Script | Detected Calls |
@@ -50,6 +50,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Branded Fusion | `44362883` | [Scripts/c44362883.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c44362883.lua) | 52 |
 | Gladiator Beast Gyzarus | `48156348` | [Scripts/c48156348.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c48156348.lua) | 51 |
 | Red-Eyes Dark Dragoon | `37818794` | [Scripts/c37818794.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c37818794.lua) | 50 |
+| Blue-Eyes Toon Ultimate Dragon | `71808988` | [Scripts/c71808988.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c71808988.lua) | 50 |
 | Guardian Chimera | `11321089` | [Scripts/c11321089.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c11321089.lua) | 49 |
 | Mirrorjade the Iceblade Dragon | `44146295` | [Scripts/c44146295.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c44146295.lua) | 49 |
 | Arcana Force EX - The Chaos Ruler | `12686296` | [Scripts/c12686296.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c12686296.lua) | 49 |
@@ -58,8 +59,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Destruction Swordsman Fusion | `41940225` | [Scripts/c41940225.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c41940225.lua) | 49 |
 | Sprind the Irondash Dragon | `1906812` | [Scripts/c1906812.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c1906812.lua) | 48 |
 | Titaniklad the Ash Dragon | `41373230` | [Scripts/c41373230.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c41373230.lua) | 47 |
-| Albion the Sanctifire Dragon | `38811586` | [Scripts/c38811586.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c38811586.lua) | 46 |
-| ...and 22 more |  |  |  |
+| ...and 23 more |  |  |  |
 
 ## Script Examples
 

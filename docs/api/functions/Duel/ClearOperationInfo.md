@@ -22,7 +22,7 @@ Clears operation info for chain ct; it is a no-op if that Chain Link does not ex
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **37** indexed script(s).
+- Detected in **38** indexed script(s).
 - Search this function in the [Script Explorer](/tools/script-explorer) with `Duel.ClearOperationInfo`.
 
 | Card | ID | Script | Detected Calls |
@@ -31,10 +31,11 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | [Barian's Chaos Draw](/examples/cards/97769122) | `97769122` | [Scripts/c97769122.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c97769122.lua) | 63 |
 | [Transonic Bird](/examples/cards/34072799) | `34072799` | [Scripts/c34072799.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c34072799.lua) | 61 |
 | [Chef de Nouvelles](/examples/cards/29251488) | `29251488` | [Scripts/c29251488.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c29251488.lua) | 60 |
+| Witchcrafter Genni | `64756282` | [Scripts/c64756282.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c64756282.lua) | 56 |
 | Angello Vaalmonica | `3048768` | [Scripts/c3048768.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c3048768.lua) | 54 |
 | Dimonno Vaalmonica | `30432463` | [Scripts/c30432463.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c30432463.lua) | 53 |
 | Zebufera, Vaalmonican Hallow Heathen | `2815176` | [Scripts/c2815176.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c2815176.lua) | 52 |
-| Witchcrafter Genni | `64756282` | [Scripts/c64756282.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c64756282.lua) | 52 |
+| Witchcrafter Pupils | `69964858` | [Scripts/c69964858.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c69964858.lua) | 52 |
 | Darklord Eveningstar | `10136446` | [Scripts/c10136446.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c10136446.lua) | 50 |
 | Dinomorphia Kentregina | `48832775` | [Scripts/c48832775.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c48832775.lua) | 49 |
 | Predaplant Verte Anaconda | `70369116` | [Scripts/c70369116.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c70369116.lua) | 49 |
@@ -50,8 +51,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Darklord Ixchel | `52840267` | [Scripts/c52840267.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c52840267.lua) | 44 |
 | Traptrix Rafflesia | `6511113` | [Scripts/c6511113.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c6511113.lua) | 42 |
 | Kewl Tune Playlist | `40847034` | [Scripts/c40847034.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c40847034.lua) | 41 |
-| Darklord Nasten | `25339070` | [Scripts/c25339070.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c25339070.lua) | 40 |
-| ...and 13 more |  |  |  |
+| ...and 14 more |  |  |  |
 
 ## Script Examples
 

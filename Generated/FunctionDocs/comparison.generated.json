@@ -1,5 +1,8 @@
 {
-  "added_vs_dataeditorx_functions": [],
+  "added_vs_dataeditorx_functions": [
+    "Auxiliary.EnableMulcharmyGlobalCheck",
+    "Auxiliary.MulcharmyGlobalCheck"
+  ],
   "dropped_vs_dataeditorx_functions": [],
   "core_bound_functions": [
     "Card.AddCounter",
@@ -705,6 +708,7 @@
     "Auxiliary.EnableChangeCode",
     "Auxiliary.EnableDualAttribute",
     "Auxiliary.EnableExtraDeckSummonCountLimit",
+    "Auxiliary.EnableMulcharmyGlobalCheck",
     "Auxiliary.EnableNeosReturn",
     "Auxiliary.EnablePendulumAttribute",
     "Auxiliary.EnableReviveLimitPendulumSummonable",
@@ -813,6 +817,7 @@
     "Auxiliary.MergedDelayEventCheck2_ToSingleCard",
     "Auxiliary.MimighoulFlipCondition",
     "Auxiliary.MonsterEffectPropertyFilter",
+    "Auxiliary.MulcharmyGlobalCheck",
     "Auxiliary.MustMaterialCheck",
     "Auxiliary.MustMaterialCounterFilter",
     "Auxiliary.NOT",
@@ -1011,19 +1016,25 @@
   "core_bound_missing_stub_docs": [],
   "constants": {
     "dataeditorx_constant_count": 858,
-    "local_constant_count": 858,
-    "missing_in_dataeditorx": [],
+    "local_constant_count": 859,
+    "missing_in_dataeditorx": [
+      "EFFECT_REVEAL_ONFIELD"
+    ],
     "removed_from_local": [],
     "changed_values": [],
     "effect_creator_effect_count": 289,
     "effect_creator_commented_count": 6,
     "effect_creator_effect_code_count": 256,
     "effect_creator_property_count": 33,
-    "local_effect_constant_count": 320,
-    "local_effect_code_constant_count": 261,
+    "local_effect_constant_count": 321,
+    "local_effect_code_constant_count": 262,
     "local_effect_property_constant_count": 40,
-    "effect_creator_missing_effects": [],
-    "effect_creator_missing_effect_codes": [],
+    "effect_creator_missing_effects": [
+      "EFFECT_REVEAL_ONFIELD"
+    ],
+    "effect_creator_missing_effect_codes": [
+      "EFFECT_REVEAL_ONFIELD"
+    ],
     "effect_creator_missing_properties": [],
     "effect_creator_ignored_effect_codes": [
       "EFFECT_ACTIVATION_COUNT_LIMIT",
@@ -1044,11 +1055,11 @@
     "effect_creator_unknown_effects": [],
     "effect_creator_unknown_effect_codes": [],
     "effect_creator_unknown_properties": [],
-    "generated_constant_count": 858,
+    "generated_constant_count": 859,
     "english_status_counts": {
       "existing_english": 4,
       "from_project_cache": 792,
-      "reviewed_english": 7,
+      "reviewed_english": 8,
       "translated_exact": 28,
       "translated_name": 27
     }

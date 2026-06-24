@@ -18,7 +18,7 @@ Immediately refreshes field information.
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **57** indexed script(s).
+- Detected in **58** indexed script(s).
 - Search this function in the [Script Explorer](/tools/script-explorer) with `Duel.AdjustAll`.
 
 | Card | ID | Script | Detected Calls |
@@ -47,7 +47,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Numbers Last Hope | `4606229` | [Scripts/c4606229.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c4606229.lua) | 50 |
 | Mathmech Superfactorial | `87804365` | [Scripts/c87804365.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c87804365.lua) | 49 |
 | Vesper Girsu | `97345699` | [Scripts/c97345699.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c97345699.lua) | 49 |
-| ...and 33 more |  |  |  |
+| ...and 34 more |  |  |  |
 
 ## Script Examples
 

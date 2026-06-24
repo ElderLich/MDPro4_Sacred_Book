@@ -31,7 +31,7 @@ Registers a Contact Fusion Special Summon procedure on c, using material filter 
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **63** indexed script(s).
+- Detected in **64** indexed script(s).
 - Search this function in the [Script Explorer](/tools/script-explorer) with `Auxiliary.AddContactFusionProcedure`.
 
 | Card | ID | Script | Detected Calls |
@@ -43,6 +43,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Gladiator Beast Gaiodiaz | `90957527` | [Scripts/c90957527.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c90957527.lua) | 54 |
 | Gladiator Beast Gyzarus | `48156348` | [Scripts/c48156348.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c48156348.lua) | 51 |
 | Ritual Beast Ulti-Cannahawk | `48063985` | [Scripts/c48063985.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c48063985.lua) | 50 |
+| Blue-Eyes Toon Ultimate Dragon | `71808988` | [Scripts/c71808988.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c71808988.lua) | 50 |
 | The Chaotic Sacred Beasts | `7894706` | [Scripts/c7894706.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c7894706.lua) | 49 |
 | Arcana Force EX - The Chaos Ruler | `12686296` | [Scripts/c12686296.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c12686296.lua) | 49 |
 | Gladiator Beast Claudius | `48958757` | [Scripts/c48958757.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c48958757.lua) | 47 |
@@ -59,8 +60,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Gladiator Beast Nerokius | `29357956` | [Scripts/c29357956.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c29357956.lua) | 43 |
 | Timaeus the Knight of Destiny | `53315891` | [Scripts/c53315891.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c53315891.lua) | 42 |
 | Meizen the Battle Ninja | `11825276` | [Scripts/c11825276.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c11825276.lua) | 41 |
-| World Chalice Guardragon Almarduke | `95793022` | [Scripts/c95793022.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c95793022.lua) | 41 |
-| ...and 39 more |  |  |  |
+| ...and 40 more |  |  |  |
 
 ## Script Examples
 

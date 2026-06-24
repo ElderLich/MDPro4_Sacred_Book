@@ -39,7 +39,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Exodius the Ultimate Forbidden Lord | `13893596` | [Scripts/c13893596.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c13893596.lua) | 42 |
 | Portable Battery Pack | `61840587` | [Scripts/c61840587.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c61840587.lua) | 41 |
 | Future Visions | `87902575` | [Scripts/c87902575.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c87902575.lua) | 38 |
-| Elder Entity Norden | `17412721` | [Scripts/c17412721.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c17412721.lua) | 35 |
+| Elder Entity Norden | `17412721` | [Scripts/c17412721.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c17412721.lua) | 37 |
 | Kinka-byo | `45452224` | [Scripts/c45452224.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c45452224.lua) | 34 |
 
 ## Script Examples

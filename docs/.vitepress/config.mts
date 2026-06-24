@@ -139,6 +139,7 @@ export default defineConfig({
           text: 'Examples',
           items: [
             { text: 'Overview', link: '/examples/' },
+            { text: 'Mind Scan', link: '/examples/mind-scan' },
             { text: "Salamandra with Chain", link: '/examples/cards/62091148' },
             { text: "Astrograph Sorcerer, the Star Magician", link: '/examples/cards/48171151' },
             { text: "Artmage Non-Finito", link: '/examples/cards/74631897' },

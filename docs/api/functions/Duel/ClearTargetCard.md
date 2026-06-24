@@ -18,13 +18,14 @@ Clears the target-card group recorded on the current Chain Link, if one exists.
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **20** indexed script(s).
+- Detected in **21** indexed script(s).
 - Search this function in the [Script Explorer](/tools/script-explorer) with `Duel.ClearTargetCard`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
 | [Tohushaddoll Grysta](/examples/cards/95072744) | `95072744` | [Scripts/c95072744.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c95072744.lua) | 64 |
 | Zebufera, Vaalmonican Hallow Heathen | `2815176` | [Scripts/c2815176.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c2815176.lua) | 52 |
+| Witchcrafter Pupils | `69964858` | [Scripts/c69964858.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c69964858.lua) | 52 |
 | Thunder Dragon Thunderstormech | `12081875` | [Scripts/c12081875.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c12081875.lua) | 50 |
 | Darklord Eveningstar | `10136446` | [Scripts/c10136446.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c10136446.lua) | 50 |
 | Chasma, Dragon Ruler of Auroras | `4965193` | [Scripts/c4965193.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c4965193.lua) | 47 |
@@ -70,14 +71,14 @@ Source: [Scripts/c2815176.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/b
 	local tg=te:GetTarget()
 ```
 
-### Thunder Dragon Thunderstormech (`12081875`)
+### Witchcrafter Pupils (`69964858`)
 
-Source: [Scripts/c12081875.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c12081875.lua)
+Source: [Scripts/c69964858.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c69964858.lua)
 
 ```lua
-	Duel.SetOperationInfo(0,CATEGORY_TODECK,g,1,0,0)
-	local tc=g:GetFirst()
-	Duel.ClearTargetCard()
-	tc:CreateEffectRelation(e)
-	e:SetLabelObject(tc)
+	elseif op==2 then
+		local te,ceg,cep,cev,cre,cr,crp=e:GetLabelObject():CheckActivateEffect(true,true,false)
+		Duel.ClearTargetCard()
+		local tg=te:GetTarget()
+		if tg then tg(e,tp,ceg,cep,cev,cre,cr,crp,1) end
 ```

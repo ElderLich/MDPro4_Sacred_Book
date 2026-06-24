@@ -44,12 +44,13 @@ The core stores the ranges with `EFFECT_FLAG_ABSOLUTE_TARGET` set. If `playerid`
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **41** indexed script(s).
+- Detected in **42** indexed script(s).
 - Search this function in the [Script Explorer](/tools/script-explorer) with `Effect.SetAbsoluteRange`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
 | Gouki Sheik Ogre | `7382007` | [Scripts/c7382007.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c7382007.lua) | 59 |
+| Unchained Enma Lord Yama | `94014327` | [Scripts/c94014327.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c94014327.lua) | 51 |
 | Performage Wind Drainer | `70417076` | [Scripts/c70417076.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c70417076.lua) | 46 |
 | Readying of Rites | `71771004` | [Scripts/c71771004.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c71771004.lua) | 43 |
 | Swordsoul Assessment | `78836195` | [Scripts/c78836195.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c78836195.lua) | 42 |
@@ -72,8 +73,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Swordsoul Blackout | `14821890` | [Scripts/c14821890.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c14821890.lua) | 36 |
 | Nordic Relic Hlidskjalf | `7320132` | [Scripts/c7320132.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c7320132.lua) | 36 |
 | Guard Mantis | `53754104` | [Scripts/c53754104.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c53754104.lua) | 36 |
-| Icejade Ran Aegirine | `18494511` | [Scripts/c18494511.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c18494511.lua) | 35 |
-| ...and 17 more |  |  |  |
+| ...and 18 more |  |  |  |
 
 ## Script Examples
 
@@ -83,6 +83,18 @@ Source: [Scripts/c7382007.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/b
 
 ```lua
 			e1:SetProperty(EFFECT_FLAG_PLAYER_TARGET+EFFECT_FLAG_CANNOT_DISABLE+EFFECT_FLAG_CLIENT_HINT)
+			e1:SetRange(LOCATION_MZONE)
+			e1:SetAbsoluteRange(tp,1,0)
+			e1:SetTarget(s.splimit)
+			e1:SetReset(RESET_EVENT+RESETS_STANDARD+RESET_CONTROL)
+```
+
+### Unchained Enma Lord Yama (`94014327`)
+
+Source: [Scripts/c94014327.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c94014327.lua)
+
+```lua
+			e1:SetProperty(EFFECT_FLAG_PLAYER_TARGET+EFFECT_FLAG_CANNOT_DISABLE)
 			e1:SetRange(LOCATION_MZONE)
 			e1:SetAbsoluteRange(tp,1,0)
 			e1:SetTarget(s.splimit)
@@ -99,16 +111,4 @@ Source: [Scripts/c70417076.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/
 		e1:SetAbsoluteRange(tp,1,0)
 		e1:SetTarget(s.splimit)
 		e1:SetReset(RESET_EVENT+RESETS_STANDARD)
-```
-
-### Readying of Rites (`71771004`)
-
-Source: [Scripts/c71771004.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c71771004.lua)
-
-```lua
-			e1:SetProperty(EFFECT_FLAG_PLAYER_TARGET)
-			e1:SetRange(LOCATION_MZONE)
-			e1:SetAbsoluteRange(tp,1,0)
-			e1:SetTarget(s.splimit)
-			e1:SetReset(RESET_EVENT+RESETS_STANDARD+RESET_CONTROL)
 ```

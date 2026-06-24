@@ -6540,6 +6540,12 @@ Source: Utilities/utility.lua:433
 初始化共通的额外卡组召唤次数表，双方各为1次，并登记每个抽卡阶段开始时重置的全局效果。此辅助函数只管理计数，具体卡片脚本仍需自行检查并扣除次数。
 Source: Utilities/utility.lua:482
 
+●void Auxiliary.EnableMulcharmyGlobalCheck()
+为「Mulcharmy」共通发动次数检查安装一次全局监听。
+该监听检查EVENT_CHAINING；玩家发动0x1b2字段的怪兽效果时，给该玩家登记到结束阶段为止的84192580标记。
+Mulcharmy怪兽脚本在initial_effect中调用此函数，然后用Duel.GetFlagEffect(tp,84192580)<=1作为手牌发动条件的一部分。
+Source: Utilities/utility.lua:2041
+
 ●void Auxiliary.EnableNeosReturn(Card c, function operation, any set_category)
 为c登记「元素英雄 新宇侠」融合怪兽共通的结束阶段返回效果；会创建强制返回效果，以及受编号42015635效果影响时使用的可选版本，并返回这两个效果。
 Parameters:
@@ -7089,6 +7095,21 @@ Parameters:
 Returns:
   function
 Source: Utilities/utility.lua:2028
+
+●void Auxiliary.MulcharmyGlobalCheck(Effect e, int tp, Group eg, int ep, int ev, Effect re, int r, int rp)
+Auxiliary.EnableMulcharmyGlobalCheck安装的EVENT_CHAINING内部处理。
+触发效果是0x1b2字段怪兽的怪兽效果时，给发动该效果的玩家登记到结束阶段为止的84192580标记。
+卡片脚本应调用Auxiliary.EnableMulcharmyGlobalCheck，而不是直接登记这个处理函数。
+Parameters:
+  e: Effect - 接收EVENT_CHAINING的全局永续效果。
+  tp: int - 全局效果的控制者；此辅助函数使用rp表示发动玩家。
+  eg: Group - EVENT_CHAINING提供的事件Group。
+  ep: int - EVENT_CHAINING提供的事件玩家。
+  ev: int - EVENT_CHAINING提供的事件值。
+  re: Effect - 正在连锁中发动的效果。
+  r: int - EVENT_CHAINING提供的原因标志。
+  rp: int - 发动re的玩家；Mulcharmy检查匹配时，此玩家获得84192580标记。
+Source: Utilities/utility.lua:2050
 
 ●bool Auxiliary.mzctcheck(Group g, int tp)
 判断tp在解放g之后是否会有可用怪兽区域。

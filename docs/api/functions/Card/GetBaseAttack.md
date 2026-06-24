@@ -26,7 +26,7 @@ Returns c's current base ATK, with unknown or negative ATK reported as 0.
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **321** indexed script(s).
+- Detected in **322** indexed script(s).
 - Search this function in the [Script Explorer](/tools/script-explorer) with `Card.GetBaseAttack`.
 
 | Card | ID | Script | Detected Calls |
@@ -55,7 +55,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Mythical Beast Master Cerberus | `53842431` | [Scripts/c53842431.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c53842431.lua) | 49 |
 | Junk Speeder | `77075360` | [Scripts/c77075360.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c77075360.lua) | 49 |
 | Salamangreat Pyro Phoenix | `31313405` | [Scripts/c31313405.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c31313405.lua) | 49 |
-| ...and 297 more |  |  |  |
+| ...and 298 more |  |  |  |
 
 ## Script Examples
 

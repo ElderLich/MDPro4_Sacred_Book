@@ -26,7 +26,7 @@ Returns c's original Race from card data, or 0 while c is marked with STATUS_NO_
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **82** indexed script(s).
+- Detected in **83** indexed script(s).
 - Search this function in the [Script Explorer](/tools/script-explorer) with `Card.GetOriginalRace`.
 
 | Card | ID | Script | Detected Calls |
@@ -39,6 +39,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Sudden Thunder Swamp | `23611122` | [Scripts/c23611122.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c23611122.lua) | 53 |
 | Laevateinn the Burning Blade | `6260560` | [Scripts/c6260560.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c6260560.lua) | 53 |
 | Zebufera, Vaalmonican Hallow Heathen | `2815176` | [Scripts/c2815176.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c2815176.lua) | 52 |
+| Card 24056179 | `24056179` | [Scripts/c24056179.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c24056179.lua) | 52 |
 | Pendulum Witch | `43502497` | [Scripts/c43502497.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c43502497.lua) | 51 |
 | Argostars - Giantslaying | `30964246` | [Scripts/c30964246.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c30964246.lua) | 51 |
 | Endymion, the Crescent Magistus | `20714553` | [Scripts/c20714553.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c20714553.lua) | 50 |
@@ -54,8 +55,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | The League of Uniform Nomenclature Strikes | `29265962` | [Scripts/c29265962.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c29265962.lua) | 46 |
 | Ryu-Ge Realm - Wyrm Winds | `55154344` | [Scripts/c55154344.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c55154344.lua) | 46 |
 | Mysterion the Dragon Crown | `13735899` | [Scripts/c13735899.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c13735899.lua) | 45 |
-| Nightmell the Dark Bonder | `66569334` | [Scripts/c66569334.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c66569334.lua) | 45 |
-| ...and 58 more |  |  |  |
+| ...and 59 more |  |  |  |
 
 ## Script Examples
 

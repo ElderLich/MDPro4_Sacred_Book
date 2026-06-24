@@ -35,7 +35,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
 | Clock Lizard | `51476410` | [Scripts/c51476410.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c51476410.lua) | 58 |
-| Witchcrafter Pittore | `95245544` | [Scripts/c95245544.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c95245544.lua) | 52 |
+| Witchcrafter Pittore | `95245544` | [Scripts/c95245544.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c95245544.lua) | 56 |
 | Silk Bomb Moth | `18300894` | [Scripts/c18300894.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c18300894.lua) | 50 |
 | Super Koi Koi | `66171432` | [Scripts/c66171432.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c66171432.lua) | 48 |
 | Gandora-G the Dragon of Destruction | `2333466` | [Scripts/c2333466.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c2333466.lua) | 46 |

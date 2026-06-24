@@ -26,7 +26,7 @@ Checks whether c currently has STATUS_FORBIDDEN.
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **265** indexed script(s).
+- Detected in **268** indexed script(s).
 - Search this function in the [Script Explorer](/tools/script-explorer) with `Card.IsForbidden`.
 
 | Card | ID | Script | Detected Calls |
@@ -55,7 +55,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Dreaming Nemleria | `70155677` | [Scripts/c70155677.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c70155677.lua) | 55 |
 | Yummy☆Surprise | `29369059` | [Scripts/c29369059.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c29369059.lua) | 55 |
 | Angello Vaalmonica | `3048768` | [Scripts/c3048768.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c3048768.lua) | 54 |
-| ...and 241 more |  |  |  |
+| ...and 244 more |  |  |  |
 
 ## Script Examples
 

@@ -22,7 +22,7 @@ Returns a composed predicate that calls each function with the same arguments an
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **83** indexed script(s).
+- Detected in **79** indexed script(s).
 - Search this function in the [Script Explorer](/tools/script-explorer) with `Auxiliary.AND`.
 
 | Card | ID | Script | Detected Calls |
@@ -39,10 +39,8 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Phara, the Goddess of the Beginning | `82344137` | [Scripts/c82344137.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c82344137.lua) | 52 |
 | Possessed Resonance - Wynn | `60516416` | [Scripts/c60516416.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c60516416.lua) | 52 |
 | Dream Tower of Princess Nemleria | `18458255` | [Scripts/c18458255.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c18458255.lua) | 51 |
-| Queen of the Blazing Domain | `72162751` | [Scripts/c72162751.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c72162751.lua) | 50 |
 | Sweet Dreams, Nemleria | `44843954` | [Scripts/c44843954.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c44843954.lua) | 50 |
 | Amazement Abomination Arlekino | `31600845` | [Scripts/c31600845.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c31600845.lua) | 49 |
-| Invoked Magistus Omega | `38423248` | [Scripts/c38423248.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c38423248.lua) | 49 |
 | Eidos the Underworld Monarch | `31596518` | [Scripts/c31596518.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c31596518.lua) | 49 |
 | Wind Unicorn Parallel, the Dracoslayer | `39016067` | [Scripts/c39016067.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c39016067.lua) | 48 |
 | Jurrac Stego | `20568404` | [Scripts/c20568404.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c20568404.lua) | 48 |
@@ -51,7 +49,9 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | ASHLAN U1000 | `44376395` | [Scripts/c44376395.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c44376395.lua) | 47 |
 | Twilight Rose Black Knight | `92595825` | [Scripts/c92595825.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c92595825.lua) | 47 |
 | Cursed Copycat Noble Arms | `23249029` | [Scripts/c23249029.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c23249029.lua) | 46 |
-| ...and 59 more |  |  |  |
+| R.B. Last Stand | `43450363` | [Scripts/c43450363.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c43450363.lua) | 46 |
+| Arcana Force V - The Hierophant | `3376703` | [Scripts/c3376703.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c3376703.lua) | 46 |
+| ...and 55 more |  |  |  |
 
 ## Script Examples
 

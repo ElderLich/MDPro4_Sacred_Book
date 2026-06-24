@@ -10,6 +10,7 @@ This is the working todo for turning Sacred Book into a complete MDPro3 scriptin
 - [x] Generate featured card example pages from `cards.cdb` and `Scripts/`.
 - [x] Add the Script Explorer for searching cards and function usage.
 - [x] Add function usage and script examples directly to API pages.
+- [x] Refresh the local script corpus through `ygopro-scripts` commit `06ccc5a99`, including Mind Scan and the new Mulcharmy helper.
 - [x] Add a generated translation review queue for awkward/imported function English.
 - [x] Record the source-plan boundary for Miraheze/scrapi-book/scrapiyard inspiration without importing their API content.
 - [x] Translate and review the first usage-ranked batch of highest-use imported function descriptions.
@@ -40,6 +41,7 @@ This is the working todo for turning Sacred Book into a complete MDPro3 scriptin
 - [x] Add a focused chain timing and activation windows guide for prompt masks, Chain responses, Spell Speed, and Damage Step legality.
 - [x] Add a focused selection and Group-handling guide for target selection, resolution choice, subgroup selection, and stored Groups.
 - [x] Add a focused reset flags and duration guide for temporary effects, phase resets, and flag lifetimes.
+- [x] Add a hand-written case study for Mind Scan because the script exists locally before the card is present in `cards.cdb`.
 - [ ] Expand the beginner path with small complete card scripts that build up one concept at a time.
 - [x] Analyze every downloaded tutorial page and create an original Sacred Book equivalent for each topic.
 - [x] Add focused player-effect guides for player-targeted Chain data, player restrictions, and draw/hand/Deck effects.

@@ -30,7 +30,7 @@ The optional third parameter indicates whether this is a monster effect.
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **103** indexed script(s).
+- Detected in **104** indexed script(s).
 - Search this function in the [Script Explorer](/tools/script-explorer) with `Card.IsCanBeDisabledByEffect`.
 
 | Card | ID | Script | Detected Calls |
@@ -43,6 +43,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Power Tool Braver Dragon | `63265554` | [Scripts/c63265554.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c63265554.lua) | 58 |
 | Revolution Cyber Dragon | `66664203` | [Scripts/c66664203.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c66664203.lua) | 58 |
 | Radiant Typhoon Mandate | `53813120` | [Scripts/c53813120.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c53813120.lua) | 54 |
+| Unchained Soul Rage Abominator | `21419436` | [Scripts/c21419436.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c21419436.lua) | 53 |
 | Weaver of Fairy Tails | `78021082` | [Scripts/c78021082.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c78021082.lua) | 53 |
 | Borrelshroud Dragon | `66452432` | [Scripts/c66452432.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c66452432.lua) | 53 |
 | S-Force Justify | `35334193` | [Scripts/c35334193.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c35334193.lua) | 51 |
@@ -58,8 +59,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | The Three Champions of Swordsoul | `74405783` | [Scripts/c74405783.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c74405783.lua) | 48 |
 | Kewl Tune RS | `15665977` | [Scripts/c15665977.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c15665977.lua) | 48 |
 | Runick Freezing Curses | `30430448` | [Scripts/c30430448.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c30430448.lua) | 48 |
-| Aluber the Jester of Despia | `62962630` | [Scripts/c62962630.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c62962630.lua) | 47 |
-| ...and 79 more |  |  |  |
+| ...and 80 more |  |  |  |
 
 ## Script Examples
 

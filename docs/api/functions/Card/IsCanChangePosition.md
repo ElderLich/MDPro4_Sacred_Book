@@ -27,7 +27,7 @@ In this MDPro3/YGOPro core, that helper returns false for Link Monsters and true
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **153** indexed script(s).
+- Detected in **154** indexed script(s).
 - Search this function in the [Script Explorer](/tools/script-explorer) with `Card.IsCanChangePosition`.
 
 | Card | ID | Script | Detected Calls |
@@ -45,6 +45,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Lancea, Ancestral Dragon of the Ice Mountain | `96402918` | [Scripts/c96402918.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c96402918.lua) | 47 |
 | Cyberse Enchanter | `60279710` | [Scripts/c60279710.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c60279710.lua) | 47 |
 | Borrelguard Dragon | `68987122` | [Scripts/c68987122.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c68987122.lua) | 47 |
+| Unchained Malevolent Magistrate Kamura | `68625623` | [Scripts/c68625623.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c68625623.lua) | 46 |
 | Artmage Diactorus | `27184601` | [Scripts/c27184601.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c27184601.lua) | 46 |
 | Vanquish Soul Jiaolong | `9091064` | [Scripts/c9091064.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c9091064.lua) | 45 |
 | Amaze Attraction Rapid Racing | `55262310` | [Scripts/c55262310.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c55262310.lua) | 45 |
@@ -55,8 +56,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Riot's Reason | `51612489` | [Scripts/c51612489.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c51612489.lua) | 44 |
 | Magikey Beast - Ansyalabolas | `45655875` | [Scripts/c45655875.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c45655875.lua) | 43 |
 | Crossroad Sonic Chick | `80054655` | [Scripts/c80054655.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c80054655.lua) | 42 |
-| Protecting Spirit Loagaeth | `84339249` | [Scripts/c84339249.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c84339249.lua) | 42 |
-| ...and 129 more |  |  |  |
+| ...and 130 more |  |  |  |
 
 ## Script Examples
 

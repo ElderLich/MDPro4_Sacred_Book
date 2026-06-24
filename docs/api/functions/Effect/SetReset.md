@@ -49,7 +49,7 @@ If the count is omitted or 0, MDPro3 stores 1. If a phase reset does not specify
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **5295** indexed script(s).
+- Detected in **5309** indexed script(s).
 - Search this function in the [Script Explorer](/tools/script-explorer) with `Effect.SetReset`.
 
 | Card | ID | Script | Detected Calls |
@@ -78,7 +78,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | [Tohushaddoll Grysta](/examples/cards/95072744) | `95072744` | [Scripts/c95072744.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c95072744.lua) | 64 |
 | [PSY-Framelord Omega](/examples/cards/74586817) | `74586817` | [Scripts/c74586817.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c74586817.lua) | 64 |
 | [Graydle Split](/examples/cards/75361204) | `75361204` | [Scripts/c75361204.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c75361204.lua) | 64 |
-| ...and 5271 more |  |  |  |
+| ...and 5285 more |  |  |  |
 
 ## Script Examples
 

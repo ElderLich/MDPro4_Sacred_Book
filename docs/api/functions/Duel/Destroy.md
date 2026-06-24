@@ -51,7 +51,7 @@ Use `Duel.SetOperationInfo(0,CATEGORY_DESTROY,...)` in the Target callback when 
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **2699** indexed script(s).
+- Detected in **2709** indexed script(s).
 - Search this function in the [Script Explorer](/tools/script-explorer) with `Duel.Destroy`.
 
 | Card | ID | Script | Detected Calls |
@@ -79,8 +79,8 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | [A Bao A Qu, the Lightless Shadow](/examples/cards/4731783) | `4731783` | [Scripts/c4731783.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c4731783.lua) | 61 |
 | [Camelot, Realm of Noble Knights and Noble Arms](/examples/cards/15635751) | `15635751` | [Scripts/c15635751.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c15635751.lua) | 61 |
 | [Earthbound Servant Geo Gremlin](/examples/cards/8690387) | `8690387` | [Scripts/c8690387.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c8690387.lua) | 61 |
-| [Jupredo the Shademachine Power Patron](/examples/cards/43871165) | `43871165` | [Scripts/c43871165.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c43871165.lua) | 60 |
-| ...and 2675 more |  |  |  |
+| [Witchcrafter Celebration](/examples/cards/6958567) | `6958567` | [Scripts/c6958567.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c6958567.lua) | 61 |
+| ...and 2685 more |  |  |  |
 
 ## Script Examples
 

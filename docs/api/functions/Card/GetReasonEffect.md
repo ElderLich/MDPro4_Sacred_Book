@@ -26,7 +26,7 @@ Returns c's current reason effect, or nil when no reason effect is recorded.
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **50** indexed script(s).
+- Detected in **51** indexed script(s).
 - Search this function in the [Script Explorer](/tools/script-explorer) with `Card.GetReasonEffect`.
 
 | Card | ID | Script | Detected Calls |
@@ -46,6 +46,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Sacred Fire King Garunix | `66431519` | [Scripts/c66431519.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c66431519.lua) | 47 |
 | Redox, Dragon Ruler of Boulders | `90411554` | [Scripts/c90411554.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c90411554.lua) | 47 |
 | Predaprimitive | `89176044` | [Scripts/c89176044.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c89176044.lua) | 47 |
+| Unchained Ogre Shara | `95136979` | [Scripts/c95136979.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c95136979.lua) | 47 |
 | Dream Mirror Recap | `81038234` | [Scripts/c81038234.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c81038234.lua) | 46 |
 | The Abyss Dragon Swordsoul | `5141117` | [Scripts/c5141117.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c5141117.lua) | 45 |
 | Geistgrinder Golem | `26913989` | [Scripts/c26913989.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c26913989.lua) | 45 |
@@ -54,8 +55,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Dillingerous Dragon | `23732205` | [Scripts/c23732205.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c23732205.lua) | 44 |
 | Galaxy War Drake | `19316241` | [Scripts/c19316241.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c19316241.lua) | 43 |
 | Promethean Princess, Bestower of Flames | `2772337` | [Scripts/c2772337.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c2772337.lua) | 42 |
-| Assault Synchron | `77202120` | [Scripts/c77202120.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c77202120.lua) | 42 |
-| ...and 26 more |  |  |  |
+| ...and 27 more |  |  |  |
 
 ## Script Examples
 

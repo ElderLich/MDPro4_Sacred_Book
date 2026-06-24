@@ -42,7 +42,7 @@ For a Graveyard trigger or ignition effect, use `LOCATION_GRAVE`. For a continuo
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **9017** indexed script(s).
+- Detected in **9039** indexed script(s).
 - Search this function in the [Script Explorer](/tools/script-explorer) with `Effect.SetRange`.
 
 | Card | ID | Script | Detected Calls |
@@ -71,7 +71,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | [Performage Cup Tricker](/examples/cards/6812770) | `6812770` | [Scripts/c6812770.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c6812770.lua) | 65 |
 | [Ehther the Heavenly Monarch](/examples/cards/96570609) | `96570609` | [Scripts/c96570609.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c96570609.lua) | 65 |
 | [Spirit Illusion](/examples/cards/71939275) | `71939275` | [Scripts/c71939275.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c71939275.lua) | 65 |
-| ...and 8993 more |  |  |  |
+| ...and 9015 more |  |  |  |
 
 ## Script Examples
 

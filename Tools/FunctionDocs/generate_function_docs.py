@@ -1926,6 +1926,7 @@ REVIEWED_CONSTANT_TRANSLATIONS = {
     "SUMMON_TYPE_ADVANCE": "Tribute Summon",
     "EFFECT_UNRELEASABLE_SUM": "Cannot be Tributed for a Tribute Summon",
     "EFFECT_UNRELEASABLE_NONSUM": "Cannot be Tributed except for a Tribute Summon",
+    "EFFECT_REVEAL_ONFIELD": "Affected face-down cards on the field can be inspected by the effect controller",
     "EVENT_BE_MATERIAL": "When used as Synchro/Xyz/Link Material, used as Ritual/Fusion Material, or Tributed for a Tribute Summon",
     "EVENT_BE_PRE_MATERIAL": "When about to be used as Synchro/Xyz/Link Material or Tributed for a Tribute Summon",
     "HINTMSG_TRIBUTE": "Select a monster to Tribute for a Tribute Summon",

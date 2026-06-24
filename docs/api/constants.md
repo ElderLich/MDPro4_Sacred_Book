@@ -718,6 +718,7 @@ Generated from `Utilities/constant.lua`, with English comments carried forward f
 | `EFFECT_SYNCHRO_LEVEL_EX` | `373` | Allows monsters without Levels to be used as Synchro Material | 支持使用没有等级的怪兽作为同调素材 |
 | `EFFECT_RITUAL_LEVEL_EX` | `374` | Allows monsters without Levels to be used as Ritual Material | 支持使用没有等级的怪兽作为仪式素材 |
 | `EFFECT_DOUBLE_XMATERIAL` | `375` | Counts as 2 materials when Xyz Summoning a monster that requires 3 or more materials | 召唤需3只以上作素材的超量怪兽时可以作为2只数量的素材 |
+| `EFFECT_REVEAL_ONFIELD` | `376` | Affected face-down cards on the field can be inspected by the effect controller | 场上里侧表示卡片处于可以确认信息状态（看透心灵之眼） |
 | `EFFECT_FLAG_EFFECT` | `0x20000000` | Flag effect created by RegisterFlagEffect() | 标记类效果，即RegisterFlagEffect()创建的效果 |
 
 ## Events

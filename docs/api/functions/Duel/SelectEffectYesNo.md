@@ -28,7 +28,7 @@ Asks player whether to use c's effect with description id desc, defaulting to 95
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **263** indexed script(s).
+- Detected in **265** indexed script(s).
 - Search this function in the [Script Explorer](/tools/script-explorer) with `Duel.SelectEffectYesNo`.
 
 | Card | ID | Script | Detected Calls |
@@ -50,14 +50,14 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Dream Tower of Princess Nemleria | `18458255` | [Scripts/c18458255.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c18458255.lua) | 51 |
 | Fire King Sanctuary | `65305978` | [Scripts/c65305978.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c65305978.lua) | 51 |
 | Salamandra Fusion | `9102835` | [Scripts/c9102835.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c9102835.lua) | 51 |
+| Unchained Enma Lord Yama | `94014327` | [Scripts/c94014327.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c94014327.lua) | 51 |
 | Commander Souza, Swordmaster | `72867001` | [Scripts/c72867001.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c72867001.lua) | 51 |
 | Stealth Kragen Spawn | `94942656` | [Scripts/c94942656.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c94942656.lua) | 51 |
 | Odd-Eyes Lancer Dragon | `83347294` | [Scripts/c83347294.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c83347294.lua) | 51 |
 | Solfachord Solfegia | `84693918` | [Scripts/c84693918.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c84693918.lua) | 50 |
 | Magician of Hope | `67865534` | [Scripts/c67865534.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c67865534.lua) | 50 |
 | Hidden Village of Ninjitsu Arts | `26232916` | [Scripts/c26232916.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c26232916.lua) | 50 |
-| Goblin's Crazy Beast | `71100270` | [Scripts/c71100270.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c71100270.lua) | 50 |
-| ...and 239 more |  |  |  |
+| ...and 241 more |  |  |  |
 
 ## Script Examples
 

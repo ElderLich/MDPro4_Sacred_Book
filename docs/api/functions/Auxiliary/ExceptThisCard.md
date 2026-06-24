@@ -26,7 +26,7 @@ Returns e's handler while that card is still related to the current Chain; other
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **160** indexed script(s).
+- Detected in **162** indexed script(s).
 - Search this function in the [Script Explorer](/tools/script-explorer) with `Auxiliary.ExceptThisCard`.
 
 | Card | ID | Script | Detected Calls |
@@ -55,7 +55,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Sky Striker Ace - Azalea Temperance | `56741506` | [Scripts/c56741506.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c56741506.lua) | 47 |
 | Elemental HERO Thunder Giant - Voltic Thunder | `19222426` | [Scripts/c19222426.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c19222426.lua) | 47 |
 | DoomZ Raiders | `32442017` | [Scripts/c32442017.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c32442017.lua) | 47 |
-| ...and 136 more |  |  |  |
+| ...and 138 more |  |  |  |
 
 ## Script Examples
 

@@ -26,13 +26,14 @@ Checks whether c can be returned to the Deck or Extra Deck as a cost.
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **31** indexed script(s).
+- Detected in **32** indexed script(s).
 - Search this function in the [Script Explorer](/tools/script-explorer) with `Card.IsAbleToDeckOrExtraAsCost`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
 | Gladiator Beast Gaiodiaz | `90957527` | [Scripts/c90957527.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c90957527.lua) | 54 |
 | Gladiator Beast Gyzarus | `48156348` | [Scripts/c48156348.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c48156348.lua) | 51 |
+| Blue-Eyes Toon Ultimate Dragon | `71808988` | [Scripts/c71808988.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c71808988.lua) | 50 |
 | Fiendsmith's Lacrima | `46640168` | [Scripts/c46640168.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c46640168.lua) | 49 |
 | Gladiator Beast Claudius | `48958757` | [Scripts/c48958757.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c48958757.lua) | 47 |
 | Fiendsmith's Desirae | `82135803` | [Scripts/c82135803.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c82135803.lua) | 47 |
@@ -54,8 +55,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Elemental HERO Cosmo Neos | `90050480` | [Scripts/c90050480.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c90050480.lua) | 35 |
 | Elemental HERO Dark Neos | `28677304` | [Scripts/c28677304.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c28677304.lua) | 35 |
 | Gladiator Beast Heraklinos | `27346636` | [Scripts/c27346636.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c27346636.lua) | 34 |
-| Elemental HERO Storm Neos | `49352945` | [Scripts/c49352945.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c49352945.lua) | 33 |
-| ...and 7 more |  |  |  |
+| ...and 8 more |  |  |  |
 
 ## Script Examples
 
@@ -83,14 +83,14 @@ end
 function c48156348.destg(e,tp,eg,ep,ev,re,r,rp,chk,chkc)
 ```
 
-### Fiendsmith's Lacrima (`46640168`)
+### Blue-Eyes Toon Ultimate Dragon (`71808988`)
 
-Source: [Scripts/c46640168.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c46640168.lua)
+Source: [Scripts/c71808988.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c71808988.lua)
 
 ```lua
+function s.cfilter(c)
+	return (c:IsFusionCode(53183600) or c:IsType(TYPE_MONSTER))
+		and c:IsAbleToDeckOrExtraAsCost()
 end
-function s.costfilter(c)
-	return c:IsRace(RACE_FIEND) and c:IsAttribute(ATTRIBUTE_LIGHT) and c:IsAbleToDeckOrExtraAsCost()
-end
-function s.damcost(e,tp,eg,ep,ev,re,r,rp,chk)
+function s.ffilter(c)
 ```

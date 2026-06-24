@@ -25,7 +25,7 @@ For Summon and attack counters, f is called with a Card and the counter increase
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **173** indexed script(s).
+- Detected in **170** indexed script(s).
 - Search this function in the [Script Explorer](/tools/script-explorer) with `Duel.AddCustomActivityCounter`.
 
 | Card | ID | Script | Detected Calls |
@@ -54,7 +54,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Dream Tower of Princess Nemleria | `18458255` | [Scripts/c18458255.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c18458255.lua) | 51 |
 | Dawn Angel Kambi | `12500059` | [Scripts/c12500059.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c12500059.lua) | 51 |
 | Absorb Fusion | `71422989` | [Scripts/c71422989.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c71422989.lua) | 51 |
-| ...and 149 more |  |  |  |
+| ...and 146 more |  |  |  |
 
 ## Script Examples
 

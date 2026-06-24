@@ -26,7 +26,7 @@ Returns e's effect code.
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **358** indexed script(s).
+- Detected in **365** indexed script(s).
 - Search this function in the [Script Explorer](/tools/script-explorer) with `Effect.GetCode`.
 
 | Card | ID | Script | Detected Calls |
@@ -54,8 +54,8 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Purrely | `25550531` | [Scripts/c25550531.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c25550531.lua) | 56 |
 | Xtra HERO Cross Crusader | `58004362` | [Scripts/c58004362.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c58004362.lua) | 56 |
 | Ojamatch | `38395123` | [Scripts/c38395123.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c38395123.lua) | 56 |
-| Purrely Sharely!? | `10780049` | [Scripts/c10780049.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c10780049.lua) | 55 |
-| ...and 334 more |  |  |  |
+| Witchcrafter Pittore | `95245544` | [Scripts/c95245544.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c95245544.lua) | 56 |
+| ...and 341 more |  |  |  |
 
 ## Script Examples
 

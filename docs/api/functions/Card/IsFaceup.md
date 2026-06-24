@@ -26,7 +26,7 @@ Checks whether c is in face-up position.
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **6473** indexed script(s).
+- Detected in **6487** indexed script(s).
 - Search this function in the [Script Explorer](/tools/script-explorer) with `Card.IsFaceup`.
 
 | Card | ID | Script | Detected Calls |
@@ -55,7 +55,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | [Prank-Kids Weather Washer](/examples/cards/44509529) | `44509529` | [Scripts/c44509529.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c44509529.lua) | 65 |
 | [Enneacraft - Asta.PIXEA](/examples/cards/28454232) | `28454232` | [Scripts/c28454232.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c28454232.lua) | 64 |
 | [Resurgam Xyz](/examples/cards/49082032) | `49082032` | [Scripts/c49082032.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c49082032.lua) | 64 |
-| ...and 6449 more |  |  |  |
+| ...and 6463 more |  |  |  |
 
 ## Script Examples
 

@@ -6502,6 +6502,12 @@ Source: Utilities/utility.lua:433
 Initializes the shared Extra Deck Summon count table with one count for each player and registers a global Draw Phase Start reset. The helper only manages the counter; individual card scripts still check and decrement it.
 Source: Utilities/utility.lua:482
 
+●void Auxiliary.EnableMulcharmyGlobalCheck()
+Installs the shared Mulcharmy activation-count watcher once per Duel process.
+The watcher listens to EVENT_CHAINING and registers player flag 84192580 through the End Phase whenever that player activates a monster effect from set 0x1b2.
+Mulcharmy monster scripts call this from initial_effect, then check Duel.GetFlagEffect(tp,84192580)<=1 as part of their hand-activation condition.
+Source: Utilities/utility.lua:2041
+
 ●void Auxiliary.EnableNeosReturn(Card c, function operation, any set_category)
 Registers the shared Elemental HERO Neos Fusion End Phase return effects on c. It creates a mandatory return effect and an optional version used while c is affected by effect code 42015635, then returns both effects.
 Parameters:
@@ -7052,6 +7058,21 @@ Parameters:
 Returns:
   function
 Source: Utilities/utility.lua:2028
+
+●void Auxiliary.MulcharmyGlobalCheck(Effect e, int tp, Group eg, int ep, int ev, Effect re, int r, int rp)
+Internal EVENT_CHAINING operation installed by Auxiliary.EnableMulcharmyGlobalCheck.
+When the triggering effect is a monster effect whose handler is in set 0x1b2, it registers player flag 84192580 on the activating player until the End Phase.
+Card scripts should call Auxiliary.EnableMulcharmyGlobalCheck instead of registering this operation directly.
+Parameters:
+  e: Effect - The global continuous effect that received EVENT_CHAINING.
+  tp: int - Controller of the global effect. This helper uses rp for the activating player.
+  eg: Group - Event group supplied by EVENT_CHAINING.
+  ep: int - Event player supplied by EVENT_CHAINING.
+  ev: int - Event value supplied by EVENT_CHAINING.
+  re: Effect - The effect being activated in the Chain.
+  r: int - Reason flags supplied by EVENT_CHAINING.
+  rp: int - Player who activated re; this player receives flag 84192580 when the Mulcharmy check matches.
+Source: Utilities/utility.lua:2050
 
 ●bool Auxiliary.mzctcheck(Group g, int tp)
 Returns true if tp would have an open Monster Zone after releasing g.

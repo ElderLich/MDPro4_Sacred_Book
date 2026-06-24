@@ -28,7 +28,7 @@ Local scripts still call it in negation conditions so the script expresses the i
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **379** indexed script(s).
+- Detected in **381** indexed script(s).
 - Search this function in the [Script Explorer](/tools/script-explorer) with `Duel.IsChainNegatable`.
 
 | Card | ID | Script | Detected Calls |
@@ -57,7 +57,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Whisker Blitzclique | `85523502` | [Scripts/c85523502.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c85523502.lua) | 50 |
 | Eclipse, Dragon Ruler of Catastrophes | `30350202` | [Scripts/c30350202.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c30350202.lua) | 50 |
 | Machina Ruinforce | `46033517` | [Scripts/c46033517.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c46033517.lua) | 50 |
-| ...and 355 more |  |  |  |
+| ...and 357 more |  |  |  |
 
 ## Script Examples
 

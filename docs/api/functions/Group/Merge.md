@@ -23,7 +23,7 @@ Adds every card from g2 into g1. g2 itself is not changed.
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **622** indexed script(s).
+- Detected in **624** indexed script(s).
 - Search this function in the [Script Explorer](/tools/script-explorer) with `Group.Merge`.
 
 | Card | ID | Script | Detected Calls |
@@ -52,7 +52,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | [Lubellion the Searing Dragon](/examples/cards/70534340) | `70534340` | [Scripts/c70534340.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c70534340.lua) | 65 |
 | [Magnet Bonding](/examples/cards/65514302) | `65514302` | [Scripts/c65514302.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c65514302.lua) | 65 |
 | [Hecahands Tartaros](/examples/cards/57809669) | `57809669` | [Scripts/c57809669.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c57809669.lua) | 65 |
-| ...and 598 more |  |  |  |
+| ...and 600 more |  |  |  |
 
 ## Script Examples
 

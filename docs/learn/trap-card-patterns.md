@@ -126,6 +126,12 @@ Cyberdark Invasion (`c1157683.lua`) uses this structure: one activation effect
 places the Continuous Trap face-up, then two Quick Effects are registered with
 `SetRange(LOCATION_SZONE)`.
 
+Mind Scan (`c34298391.lua`) is a newer Continuous Trap example with a different
+shape: it has a small activation effect, a continuous hand-reveal effect, a
+continuous Set-card inspection effect using `EFFECT_REVEAL_ONFIELD`, and a
+separate once-per-turn Quick Effect. See the
+[Mind Scan case study](/examples/mind-scan) for the full pattern.
+
 For Continuous Traps, `EFFECT_TYPE_ACTIVATE` is not the same thing as the
 card's later face-up effects. The activation effect gets the card onto the
 field. The later effects describe what the face-up Trap can do.

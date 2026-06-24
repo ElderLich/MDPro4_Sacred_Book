@@ -27,7 +27,7 @@ Returns the bitwise AND of a and b.
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **970** indexed script(s).
+- Detected in **972** indexed script(s).
 - Search this function in the [Script Explorer](/tools/script-explorer) with `bit.band`.
 
 | Card | ID | Script | Detected Calls |
@@ -56,7 +56,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Dinomorphia Frenzy | `78420796` | [Scripts/c78420796.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c78420796.lua) | 57 |
 | Zoroa, the Magistus Verethragna | `37260677` | [Scripts/c37260677.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c37260677.lua) | 57 |
 | Beyond the Pendulum | `22125101` | [Scripts/c22125101.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c22125101.lua) | 56 |
-| ...and 946 more |  |  |  |
+| ...and 948 more |  |  |  |
 
 ## Script Examples
 

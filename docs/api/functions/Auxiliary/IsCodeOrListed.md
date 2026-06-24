@@ -32,7 +32,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| [Ecclesia and the Dark Dragon](/examples/cards/78397661) | `78397661` | [Scripts/c78397661.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c78397661.lua) | 62 |
+| Ecclesia and the Dark Dragon | `78397661` | [Scripts/c78397661.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c78397661.lua) | 59 |
 | Assault Reboot | `74431740` | [Scripts/c74431740.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c74431740.lua) | 51 |
 | Protector of The Agents - Moon | `90290572` | [Scripts/c90290572.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c90290572.lua) | 50 |
 | Arrow of Regulus | `60439482` | [Scripts/c60439482.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c60439482.lua) | 49 |

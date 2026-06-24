@@ -27,7 +27,7 @@ Checks whether player was the player who Summoned c.
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **253** indexed script(s).
+- Detected in **254** indexed script(s).
 - Search this function in the [Script Explorer](/tools/script-explorer) with `Card.IsSummonPlayer`.
 
 | Card | ID | Script | Detected Calls |
@@ -56,7 +56,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Fabled Realm's Revival | `57775790` | [Scripts/c57775790.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c57775790.lua) | 54 |
 | Gagaga Girl - Cell Phone Subtraction | `48393693` | [Scripts/c48393693.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c48393693.lua) | 53 |
 | Jurrac Volcano | `89948817` | [Scripts/c89948817.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c89948817.lua) | 53 |
-| ...and 229 more |  |  |  |
+| ...and 230 more |  |  |  |
 
 ## Script Examples
 

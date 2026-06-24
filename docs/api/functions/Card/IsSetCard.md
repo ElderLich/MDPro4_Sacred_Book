@@ -27,7 +27,7 @@ Checks whether c belongs to any of the supplied set codes.
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **5411** indexed script(s).
+- Detected in **5431** indexed script(s).
 - Search this function in the [Script Explorer](/tools/script-explorer) with `Card.IsSetCard`.
 
 | Card | ID | Script | Detected Calls |
@@ -56,7 +56,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | [Enneacraft - Asta.PIXEA](/examples/cards/28454232) | `28454232` | [Scripts/c28454232.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c28454232.lua) | 64 |
 | [Aiwass the Spirit of the Law](/examples/cards/84288367) | `84288367` | [Scripts/c84288367.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c84288367.lua) | 64 |
 | [Resurgam Xyz](/examples/cards/49082032) | `49082032` | [Scripts/c49082032.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c49082032.lua) | 64 |
-| ...and 5387 more |  |  |  |
+| ...and 5407 more |  |  |  |
 
 ## Script Examples
 

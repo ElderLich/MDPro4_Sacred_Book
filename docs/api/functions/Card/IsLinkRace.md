@@ -28,7 +28,7 @@ Checks whether c's Race while used as Link Material for player contains race. pl
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **136** indexed script(s).
+- Detected in **137** indexed script(s).
 - Search this function in the [Script Explorer](/tools/script-explorer) with `Card.IsLinkRace`.
 
 | Card | ID | Script | Detected Calls |
@@ -43,6 +43,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Inzektor Picofalena | `97273514` | [Scripts/c97273514.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c97273514.lua) | 56 |
 | Sylvan Dancepione | `21903613` | [Scripts/c21903613.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c21903613.lua) | 54 |
 | Traptrix Atypus | `48183890` | [Scripts/c48183890.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c48183890.lua) | 54 |
+| Unchained Soul Rage Abominator | `21419436` | [Scripts/c21419436.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c21419436.lua) | 53 |
 | Masterking Archfiend | `35606858` | [Scripts/c35606858.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c35606858.lua) | 53 |
 | Cyberse Witch | `11674673` | [Scripts/c11674673.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c11674673.lua) | 53 |
 | Condemned Darklord | `35306215` | [Scripts/c35306215.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c35306215.lua) | 52 |
@@ -56,8 +57,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Fiendsmith's Requiem | `2463794` | [Scripts/c2463794.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c2463794.lua) | 50 |
 | Clockwork Knight | `41739381` | [Scripts/c41739381.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c41739381.lua) | 49 |
 | Aromalilith Rosemary | `30989084` | [Scripts/c30989084.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c30989084.lua) | 49 |
-| Qliphort Genius | `22423493` | [Scripts/c22423493.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c22423493.lua) | 49 |
-| ...and 112 more |  |  |  |
+| ...and 113 more |  |  |  |
 
 ## Script Examples
 

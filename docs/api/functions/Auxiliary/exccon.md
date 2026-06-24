@@ -26,7 +26,7 @@ Condition helper for effects that cannot be activated during the same turn their
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **116** indexed script(s).
+- Detected in **117** indexed script(s).
 - Search this function in the [Script Explorer](/tools/script-explorer) with `Auxiliary.exccon`.
 
 | Card | ID | Script | Detected Calls |
@@ -55,7 +55,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Magician Navigation | `7922915` | [Scripts/c7922915.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c7922915.lua) | 47 |
 | Ragnaraika Hunting Dance | `89824842` | [Scripts/c89824842.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c89824842.lua) | 46 |
 | Burnout | `25669282` | [Scripts/c25669282.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c25669282.lua) | 46 |
-| ...and 92 more |  |  |  |
+| ...and 93 more |  |  |  |
 
 ## Script Examples
 

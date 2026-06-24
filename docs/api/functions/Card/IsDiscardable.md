@@ -28,7 +28,7 @@ This is only a check: sending a card from the hand to the Graveyard with REASON_
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **653** indexed script(s).
+- Detected in **655** indexed script(s).
 - Search this function in the [Script Explorer](/tools/script-explorer) with `Card.IsDiscardable`.
 
 | Card | ID | Script | Detected Calls |
@@ -50,14 +50,14 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Erebus the Underworld Monarch | `23064604` | [Scripts/c23064604.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c23064604.lua) | 56 |
 | Nebulus, Dragon Ruler of Mishaps | `94655777` | [Scripts/c94655777.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c94655777.lua) | 56 |
 | Inzektor Picofalena | `97273514` | [Scripts/c97273514.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c97273514.lua) | 56 |
+| Witchcrafter Pittore | `95245544` | [Scripts/c95245544.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c95245544.lua) | 56 |
+| Witchcrafter Genni | `64756282` | [Scripts/c64756282.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c64756282.lua) | 56 |
 | Darktellarknight Batlamyus | `64414267` | [Scripts/c64414267.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c64414267.lua) | 55 |
 | Dual Avatar Invitation | `87669904` | [Scripts/c87669904.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c87669904.lua) | 55 |
 | Darkuriboh | `1035143` | [Scripts/c1035143.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c1035143.lua) | 55 |
 | ABC-Dragon Buster | `1561110` | [Scripts/c1561110.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c1561110.lua) | 55 |
 | Dark World Accession | `65956182` | [Scripts/c65956182.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c65956182.lua) | 55 |
-| Vernusylph of the Thawing Mountains | `9238125` | [Scripts/c9238125.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c9238125.lua) | 55 |
-| Genex Ally Triarm | `17760003` | [Scripts/c17760003.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c17760003.lua) | 55 |
-| ...and 629 more |  |  |  |
+| ...and 631 more |  |  |  |
 
 ## Script Examples
 

@@ -45,7 +45,7 @@ Every batch must end with `Duel.SpecialSummonComplete`. For ordinary effects tha
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **779** indexed script(s).
+- Detected in **780** indexed script(s).
 - Search this function in the [Script Explorer](/tools/script-explorer) with `Duel.SpecialSummonStep`.
 
 | Card | ID | Script | Detected Calls |
@@ -74,7 +74,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Soul of the Supreme King | `92428405` | [Scripts/c92428405.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c92428405.lua) | 59 |
 | Black Dragon Ninja | `56562619` | [Scripts/c56562619.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c56562619.lua) | 59 |
 | Echelon of the Fire Kings | `38798785` | [Scripts/c38798785.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c38798785.lua) | 59 |
-| ...and 755 more |  |  |  |
+| ...and 756 more |  |  |  |
 
 ## Script Examples
 

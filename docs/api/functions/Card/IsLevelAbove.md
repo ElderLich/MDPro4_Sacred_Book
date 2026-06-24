@@ -27,7 +27,7 @@ Checks whether c has a Level greater than 0 and greater than or equal to level.
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **754** indexed script(s).
+- Detected in **755** indexed script(s).
 - Search this function in the [Script Explorer](/tools/script-explorer) with `Card.IsLevelAbove`.
 
 | Card | ID | Script | Detected Calls |
@@ -55,8 +55,8 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Heavy Interlock | `20071842` | [Scripts/c20071842.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c20071842.lua) | 56 |
 | Primite Fusion | `99161253` | [Scripts/c99161253.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c99161253.lua) | 56 |
 | Favorite Hero | `11881272` | [Scripts/c11881272.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c11881272.lua) | 55 |
-| R.B. Shepherd's Crook | `80071619` | [Scripts/c80071619.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c80071619.lua) | 55 |
-| ...and 730 more |  |  |  |
+| Kaiki the Unity Star | `60822251` | [Scripts/c60822251.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c60822251.lua) | 55 |
+| ...and 731 more |  |  |  |
 
 ## Script Examples
 

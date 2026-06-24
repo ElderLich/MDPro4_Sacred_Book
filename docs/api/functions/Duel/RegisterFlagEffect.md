@@ -33,7 +33,7 @@ When reset_flag contains RESET_PHASE without RESET_SELF_TURN or RESET_OPPO_TURN,
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **329** indexed script(s).
+- Detected in **338** indexed script(s).
 - Search this function in the [Script Explorer](/tools/script-explorer) with `Duel.RegisterFlagEffect`.
 
 | Card | ID | Script | Detected Calls |
@@ -62,7 +62,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Mementotlan Shleepy | `50042011` | [Scripts/c50042011.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c50042011.lua) | 58 |
 | K9-X Forced Release | `53792930` | [Scripts/c53792930.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c53792930.lua) | 58 |
 | Dark Contact | `77124096` | [Scripts/c77124096.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c77124096.lua) | 58 |
-| ...and 305 more |  |  |  |
+| ...and 314 more |  |  |  |
 
 ## Script Examples
 

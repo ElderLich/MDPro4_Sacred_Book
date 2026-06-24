@@ -24,7 +24,7 @@ Fusion Monsters normally do not need this helper.
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **47** indexed script(s).
+- Detected in **48** indexed script(s).
 - Search this function in the [Script Explorer](/tools/script-explorer) with `Auxiliary.AddMaterialCodeList`.
 
 | Card | ID | Script | Detected Calls |
@@ -37,6 +37,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Genex Ally Triarm | `17760003` | [Scripts/c17760003.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c17760003.lua) | 55 |
 | Kewl Tune Remix | `88170262` | [Scripts/c88170262.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c88170262.lua) | 54 |
 | Junk Warrior Extreme | `16327715` | [Scripts/c16327715.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c16327715.lua) | 52 |
+| Blue-Eyes Toon Ultimate Dragon | `71808988` | [Scripts/c71808988.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c71808988.lua) | 50 |
 | Majestic Star Dragon | `7841112` | [Scripts/c7841112.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c7841112.lua) | 49 |
 | Evil HERO Inferno Wing - Backfire | `59893882` | [Scripts/c59893882.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c59893882.lua) | 49 |
 | Kewl Tune RS | `15665977` | [Scripts/c15665977.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c15665977.lua) | 48 |
@@ -52,8 +53,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | The Dragon that Devours the Dogma | `76666602` | [Scripts/c76666602.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c76666602.lua) | 40 |
 | Union Controller | `2133971` | [Scripts/c2133971.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c2133971.lua) | 39 |
 | Cyber Dragon Sieger | `46724542` | [Scripts/c46724542.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c46724542.lua) | 39 |
-| Sun Dragon Inti | `39823987` | [Scripts/c39823987.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c39823987.lua) | 39 |
-| ...and 23 more |  |  |  |
+| ...and 24 more |  |  |  |
 
 ## Script Examples
 

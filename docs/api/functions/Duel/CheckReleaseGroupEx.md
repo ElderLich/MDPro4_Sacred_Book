@@ -33,7 +33,7 @@ Extra arguments after ex are passed to f after the Card argument.
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **115** indexed script(s).
+- Detected in **116** indexed script(s).
 - Search this function in the [Script Explorer](/tools/script-explorer) with `Duel.CheckReleaseGroupEx`.
 
 | Card | ID | Script | Detected Calls |
@@ -45,9 +45,9 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Vaylantz Genesis Grand Duke | `76075139` | [Scripts/c76075139.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c76075139.lua) | 60 |
 | Kuribeh | `34419588` | [Scripts/c34419588.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c34419588.lua) | 57 |
 | Clown Crew Malabarisme | `83232904` | [Scripts/c83232904.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c83232904.lua) | 56 |
-| Abyssrhine, the Atlantean Spirit | `17080584` | [Scripts/c17080584.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c17080584.lua) | 53 |
 | Cyberdark End Dragon | `37542782` | [Scripts/c37542782.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c37542782.lua) | 53 |
 | Tensei Ryu-Ge Anva | `56322832` | [Scripts/c56322832.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c56322832.lua) | 52 |
+| Abyssrhine, the Atlantean Spirit | `17080584` | [Scripts/c17080584.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c17080584.lua) | 52 |
 | Rainbow Overdragon | `37440988` | [Scripts/c37440988.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c37440988.lua) | 52 |
 | Egyptian God Slime | `42166000` | [Scripts/c42166000.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c42166000.lua) | 52 |
 | LaSolfachord Angelia | `27993919` | [Scripts/c27993919.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c27993919.lua) | 51 |
@@ -62,7 +62,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Gizmek Yata, the Gleaming Vanguard | `13224603` | [Scripts/c13224603.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c13224603.lua) | 47 |
 | Fallen Angel of the Golden Land | `43143567` | [Scripts/c43143567.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c43143567.lua) | 47 |
 | Silent Swordsman | `15180041` | [Scripts/c15180041.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c15180041.lua) | 47 |
-| ...and 91 more |  |  |  |
+| ...and 92 more |  |  |  |
 
 ## Script Examples
 

@@ -26,7 +26,7 @@ Checks whether c can be sent to the Graveyard as a cost.
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **694** indexed script(s).
+- Detected in **695** indexed script(s).
 - Search this function in the [Script Explorer](/tools/script-explorer) with `Card.IsAbleToGraveAsCost`.
 
 | Card | ID | Script | Detected Calls |
@@ -50,12 +50,12 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Emperor Charles the Great | `97864322` | [Scripts/c97864322.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c97864322.lua) | 56 |
 | Toadally Awesome | `90809975` | [Scripts/c90809975.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c90809975.lua) | 56 |
 | Ojamatch | `38395123` | [Scripts/c38395123.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c38395123.lua) | 56 |
+| Witchcrafter Pittore | `95245544` | [Scripts/c95245544.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c95245544.lua) | 56 |
+| Witchcrafter Genni | `64756282` | [Scripts/c64756282.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c64756282.lua) | 56 |
 | All-Eyes Phantom Dragon | `70335319` | [Scripts/c70335319.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c70335319.lua) | 55 |
 | Malefic Paradigm Dragon | `16958382` | [Scripts/c16958382.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c16958382.lua) | 55 |
 | Arcana Force EX - The Light Ruler | `5861892` | [Scripts/c5861892.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c5861892.lua) | 55 |
-| Cyberse Contract Witch | `37458564` | [Scripts/c37458564.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c37458564.lua) | 55 |
-| Todoroki the Earthbolt Star | `30118701` | [Scripts/c30118701.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c30118701.lua) | 55 |
-| ...and 670 more |  |  |  |
+| ...and 671 more |  |  |  |
 
 ## Script Examples
 

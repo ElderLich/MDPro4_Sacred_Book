@@ -22,7 +22,7 @@ Returns the group of cards actually processed by the most recent card operation.
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **285** indexed script(s).
+- Detected in **287** indexed script(s).
 - Search this function in the [Script Explorer](/tools/script-explorer) with `Duel.GetOperatedGroup`.
 
 | Card | ID | Script | Detected Calls |
@@ -50,8 +50,8 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Inzektor Picofalena | `97273514` | [Scripts/c97273514.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c97273514.lua) | 56 |
 | Dreaming Nemleria | `70155677` | [Scripts/c70155677.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c70155677.lua) | 55 |
 | Number 4: Stealth Kragen | `67557908` | [Scripts/c67557908.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c67557908.lua) | 55 |
-| R.B. Shepherd's Crook | `80071619` | [Scripts/c80071619.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c80071619.lua) | 55 |
-| ...and 261 more |  |  |  |
+| Timebreaker Magician | `80335817` | [Scripts/c80335817.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c80335817.lua) | 54 |
+| ...and 263 more |  |  |  |
 
 ## Script Examples
 

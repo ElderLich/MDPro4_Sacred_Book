@@ -30,7 +30,7 @@ Nil atk arguments are skipped. Non-monsters that are not treated as monsters ret
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **161** indexed script(s).
+- Detected in **163** indexed script(s).
 - Search this function in the [Script Explorer](/tools/script-explorer) with `Card.IsAttack`.
 
 | Card | ID | Script | Detected Calls |
@@ -59,7 +59,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Box of Friends | `81587028` | [Scripts/c81587028.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c81587028.lua) | 50 |
 | Horoscope Sorcerer, the Stargazer Magician | `1186447` | [Scripts/c1186447.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c1186447.lua) | 49 |
 | The Chaotic Sacred Beasts | `7894706` | [Scripts/c7894706.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c7894706.lua) | 49 |
-| ...and 137 more |  |  |  |
+| ...and 139 more |  |  |  |
 
 ## Script Examples
 

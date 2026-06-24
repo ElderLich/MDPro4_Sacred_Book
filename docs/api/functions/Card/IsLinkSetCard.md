@@ -29,7 +29,7 @@ Checks whether c can be treated as any supplied setcode while used as Link Mater
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **131** indexed script(s).
+- Detected in **132** indexed script(s).
 - Search this function in the [Script Explorer](/tools/script-explorer) with `Card.IsLinkSetCard`.
 
 | Card | ID | Script | Detected Calls |
@@ -40,14 +40,15 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Gem-Knight Phantom Quartz | `24484270` | [Scripts/c24484270.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c24484270.lua) | 58 |
 | The Weather Painter Moonbow | `95515518` | [Scripts/c95515518.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c95515518.lua) | 57 |
 | Enlilgirsu, the Orcust Mekk-Knight | `74820316` | [Scripts/c74820316.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c74820316.lua) | 56 |
-| R.B. Shepherd's Crook | `80071619` | [Scripts/c80071619.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c80071619.lua) | 55 |
 | Prank-Kids Dodo-Doodle-Doo | `17382973` | [Scripts/c17382973.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c17382973.lua) | 55 |
+| R.B. Shepherd's Crook | `80071619` | [Scripts/c80071619.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c80071619.lua) | 54 |
 | Neo Super Quantal Mech King Blaster Magna | `95493471` | [Scripts/c95493471.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c95493471.lua) | 53 |
 | Overburst Dragon | `15627227` | [Scripts/c15627227.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c15627227.lua) | 53 |
 | Altergeist Memorygant | `23790299` | [Scripts/c23790299.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c23790299.lua) | 52 |
 | Ritual Beast Ulti-Kimunfalcos | `58811192` | [Scripts/c58811192.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c58811192.lua) | 51 |
 | X-Krawler Qualiark | `92781606` | [Scripts/c92781606.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c92781606.lua) | 51 |
 | S-Force Justify | `35334193` | [Scripts/c35334193.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c35334193.lua) | 51 |
+| Unchained Enma Lord Yama | `94014327` | [Scripts/c94014327.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c94014327.lua) | 51 |
 | Wind-Up Zenmaintenance | `1735088` | [Scripts/c1735088.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c1735088.lua) | 51 |
 | Gouki The Master Ogre | `30286474` | [Scripts/c30286474.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c30286474.lua) | 51 |
 | D/D/D Abyss King Gilgamesh | `9024198` | [Scripts/c9024198.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c9024198.lua) | 50 |
@@ -57,8 +58,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Marincess Coral Triangle | `84546257` | [Scripts/c84546257.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c84546257.lua) | 49 |
 | Zerrziel, Ruler of the Evil Eyed | `17739335` | [Scripts/c17739335.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c17739335.lua) | 48 |
 | Battle Shogun of the Six Samurai | `74752631` | [Scripts/c74752631.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c74752631.lua) | 48 |
-| Quadborrel Dragon | `29296344` | [Scripts/c29296344.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c29296344.lua) | 48 |
-| ...and 107 more |  |  |  |
+| ...and 108 more |  |  |  |
 
 ## Script Examples
 

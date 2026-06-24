@@ -22,7 +22,7 @@ Returns whether the current phase is the Battle Phase.
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **21** indexed script(s).
+- Detected in **22** indexed script(s).
 - Search this function in the [Script Explorer](/tools/script-explorer) with `Duel.IsBattlePhase`.
 
 | Card | ID | Script | Detected Calls |
@@ -30,15 +30,16 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | [Yummy★Snatchy](/examples/cards/30581601) | `30581601` | [Scripts/c30581601.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c30581601.lua) | 61 |
 | Hunting Horn | `55421040` | [Scripts/c55421040.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c55421040.lua) | 59 |
 | Crystron Halqifibrax Prism | `65400671` | [Scripts/c65400671.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c65400671.lua) | 53 |
+| Witchcrafter Pupils | `69964858` | [Scripts/c69964858.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c69964858.lua) | 52 |
 | Snake-Eyes Vengeance Dragon | `79415624` | [Scripts/c79415624.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c79415624.lua) | 52 |
 | Hyper-Rank-Up-Magic Ultimate Force | `87818869` | [Scripts/c87818869.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c87818869.lua) | 51 |
 | Crossmind Archfiend | `52644170` | [Scripts/c52644170.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c52644170.lua) | 50 |
 | X-Saber Bruno | `45462306` | [Scripts/c45462306.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c45462306.lua) | 47 |
 | Master Peace, the True Dracoverlord | `12800564` | [Scripts/c12800564.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c12800564.lua) | 45 |
 | Borreload Liberator Dragon | `27096833` | [Scripts/c27096833.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c27096833.lua) | 44 |
-| Regenesis Overlord | `47082621` | [Scripts/c47082621.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c47082621.lua) | 44 |
 | Legendary Lord Six Samurai - Kizan | `42209438` | [Scripts/c42209438.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c42209438.lua) | 44 |
 | Volcanic Doomfire | `32543380` | [Scripts/c32543380.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c32543380.lua) | 43 |
+| Regenesis Overlord | `47082621` | [Scripts/c47082621.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c47082621.lua) | 43 |
 | Faisan, Hunting Scout of the Deep Forest | `86038337` | [Scripts/c86038337.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c86038337.lua) | 42 |
 | Champion's Pulse | `46001505` | [Scripts/c46001505.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c46001505.lua) | 42 |
 | Assist★Yummy! | `86762958` | [Scripts/c86762958.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c86762958.lua) | 39 |

@@ -50,7 +50,7 @@ Use `Duel.SelectTarget` in a Target callback when later resolution must re-check
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **5321** indexed script(s).
+- Detected in **5342** indexed script(s).
 - Search this function in the [Script Explorer](/tools/script-explorer) with `Duel.SelectMatchingCard`.
 
 | Card | ID | Script | Detected Calls |
@@ -79,7 +79,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | [Aiwass the Spirit of the Law](/examples/cards/84288367) | `84288367` | [Scripts/c84288367.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c84288367.lua) | 64 |
 | [Resurgam Xyz](/examples/cards/49082032) | `49082032` | [Scripts/c49082032.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c49082032.lua) | 64 |
 | [Converging Wishes](/examples/cards/20007374) | `20007374` | [Scripts/c20007374.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c20007374.lua) | 64 |
-| ...and 5297 more |  |  |  |
+| ...and 5318 more |  |  |  |
 
 ## Script Examples
 

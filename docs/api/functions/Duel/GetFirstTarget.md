@@ -38,7 +38,7 @@ For multiple targets, use `Duel.GetTargetsRelateToChain()` when you need the gro
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **4696** indexed script(s).
+- Detected in **4701** indexed script(s).
 - Search this function in the [Script Explorer](/tools/script-explorer) with `Duel.GetFirstTarget`.
 
 | Card | ID | Script | Detected Calls |
@@ -67,7 +67,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | [Dark End Evaporation Dragon](/examples/cards/62002838) | `62002838` | [Scripts/c62002838.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c62002838.lua) | 63 |
 | [Plunder Patroll Shipshape Ships Shipping](/examples/cards/44227727) | `44227727` | [Scripts/c44227727.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c44227727.lua) | 63 |
 | [Enneacraft - Atil.SPIA](/examples/cards/71801447) | `71801447` | [Scripts/c71801447.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c71801447.lua) | 62 |
-| ...and 4672 more |  |  |  |
+| ...and 4677 more |  |  |  |
 
 ## Script Examples
 

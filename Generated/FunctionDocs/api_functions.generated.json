@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-06-24T16:29:23+00:00",
+    "generated_at": "2026-06-24T17:16:30+00:00",
     "workspace": "D:\\Programs\\GitHub\\MDPro3_Sacred_Book",
     "dataeditorx_data": "D:\\Programs\\GitHub\\DataEditorX\\DataEditorX\\data",
     "mdpro3_locales": "D:\\Programs\\GitHub\\MDPro3_Data\\Data\\locales",
@@ -37253,6 +37253,40 @@
       "core_handler": ""
     },
     {
+      "name": "Auxiliary.EnableMulcharmyGlobalCheck",
+      "namespace": "Auxiliary",
+      "short_name": "EnableMulcharmyGlobalCheck",
+      "params": [],
+      "returns": [],
+      "description_zh": [
+        "为「Mulcharmy」共通发动次数检查安装一次全局监听。",
+        "该监听检查EVENT_CHAINING；玩家发动0x1b2字段的怪兽效果时，给该玩家登记到结束阶段为止的84192580标记。",
+        "Mulcharmy怪兽脚本在initial_effect中调用此函数，然后用Duel.GetFlagEffect(tp,84192580)<=1作为手牌发动条件的一部分。"
+      ],
+      "description_en": [
+        "Installs the shared Mulcharmy activation-count watcher once per Duel process.",
+        "The watcher listens to EVENT_CHAINING and registers player flag 84192580 through the End Phase whenever that player activates a monster effect from set 0x1b2.",
+        "Mulcharmy monster scripts call this from initial_effect, then check Duel.GetFlagEffect(tp,84192580)<=1 as part of their hand-activation condition."
+      ],
+      "english_status": "translated_exact",
+      "source_files": [
+        {
+          "path": "Utilities/utility.lua",
+          "line": 2041,
+          "origin": "utility"
+        }
+      ],
+      "aliases": [
+        "aux.EnableMulcharmyGlobalCheck"
+      ],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
+      "core_binding": false,
+      "core_handler": ""
+    },
+    {
       "name": "Auxiliary.EnableNeosReturn",
       "namespace": "Auxiliary",
       "short_name": "EnableNeosReturn",
@@ -40393,6 +40427,97 @@
         "aux.MonsterEffectPropertyFilter"
       ],
       "tags": [
+        "manual-zh-doc"
+      ],
+      "core_binding": false,
+      "core_handler": ""
+    },
+    {
+      "name": "Auxiliary.MulcharmyGlobalCheck",
+      "namespace": "Auxiliary",
+      "short_name": "MulcharmyGlobalCheck",
+      "params": [
+        {
+          "name": "e",
+          "type": "Effect",
+          "optional": false,
+          "description": "The global continuous effect that received EVENT_CHAINING.",
+          "description_zh": "接收EVENT_CHAINING的全局永续效果。"
+        },
+        {
+          "name": "tp",
+          "type": "int",
+          "optional": false,
+          "description": "Controller of the global effect. This helper uses rp for the activating player.",
+          "description_zh": "全局效果的控制者；此辅助函数使用rp表示发动玩家。"
+        },
+        {
+          "name": "eg",
+          "type": "Group",
+          "optional": false,
+          "description": "Event group supplied by EVENT_CHAINING.",
+          "description_zh": "EVENT_CHAINING提供的事件Group。"
+        },
+        {
+          "name": "ep",
+          "type": "int",
+          "optional": false,
+          "description": "Event player supplied by EVENT_CHAINING.",
+          "description_zh": "EVENT_CHAINING提供的事件玩家。"
+        },
+        {
+          "name": "ev",
+          "type": "int",
+          "optional": false,
+          "description": "Event value supplied by EVENT_CHAINING.",
+          "description_zh": "EVENT_CHAINING提供的事件值。"
+        },
+        {
+          "name": "re",
+          "type": "Effect",
+          "optional": false,
+          "description": "The effect being activated in the Chain.",
+          "description_zh": "正在连锁中发动的效果。"
+        },
+        {
+          "name": "r",
+          "type": "int",
+          "optional": false,
+          "description": "Reason flags supplied by EVENT_CHAINING.",
+          "description_zh": "EVENT_CHAINING提供的原因标志。"
+        },
+        {
+          "name": "rp",
+          "type": "int",
+          "optional": false,
+          "description": "Player who activated re; this player receives flag 84192580 when the Mulcharmy check matches.",
+          "description_zh": "发动re的玩家；Mulcharmy检查匹配时，此玩家获得84192580标记。"
+        }
+      ],
+      "returns": [],
+      "description_zh": [
+        "Auxiliary.EnableMulcharmyGlobalCheck安装的EVENT_CHAINING内部处理。",
+        "触发效果是0x1b2字段怪兽的怪兽效果时，给发动该效果的玩家登记到结束阶段为止的84192580标记。",
+        "卡片脚本应调用Auxiliary.EnableMulcharmyGlobalCheck，而不是直接登记这个处理函数。"
+      ],
+      "description_en": [
+        "Internal EVENT_CHAINING operation installed by Auxiliary.EnableMulcharmyGlobalCheck.",
+        "When the triggering effect is a monster effect whose handler is in set 0x1b2, it registers player flag 84192580 on the activating player until the End Phase.",
+        "Card scripts should call Auxiliary.EnableMulcharmyGlobalCheck instead of registering this operation directly."
+      ],
+      "english_status": "translated_exact",
+      "source_files": [
+        {
+          "path": "Utilities/utility.lua",
+          "line": 2050,
+          "origin": "utility"
+        }
+      ],
+      "aliases": [
+        "aux.MulcharmyGlobalCheck"
+      ],
+      "tags": [
+        "core-doc-override",
         "manual-zh-doc"
       ],
       "core_binding": false,

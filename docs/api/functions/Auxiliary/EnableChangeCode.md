@@ -26,7 +26,7 @@ If location is omitted, monsters use the Monster Zone and non-monsters use the S
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **102** indexed script(s).
+- Detected in **103** indexed script(s).
 - Search this function in the [Script Explorer](/tools/script-explorer) with `Auxiliary.EnableChangeCode`.
 
 | Card | ID | Script | Detected Calls |
@@ -41,6 +41,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Armed Dragon Thunder LV5 | `21546416` | [Scripts/c21546416.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c21546416.lua) | 45 |
 | Avendread Savior | `91420202` | [Scripts/c91420202.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c91420202.lua) | 45 |
 | Shiranui Style Samsara | `78765160` | [Scripts/c78765160.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c78765160.lua) | 45 |
+| Toon World the Perfect World | `7293697` | [Scripts/c7293697.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c7293697.lua) | 44 |
 | Ruler of the End of the World | `3739500` | [Scripts/c3739500.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c3739500.lua) | 44 |
 | Shiranui Style Solemnity | `40364916` | [Scripts/c40364916.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c40364916.lua) | 44 |
 | Armed Dragon Thunder LV10 | `58153103` | [Scripts/c58153103.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c58153103.lua) | 42 |
@@ -54,8 +55,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | The Bystial Aluber | `45005708` | [Scripts/c45005708.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c45005708.lua) | 39 |
 | Cyber Dragon Sieger | `46724542` | [Scripts/c46724542.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c46724542.lua) | 39 |
 | Blue-Eyes Alternative White Dragon | `38517737` | [Scripts/c38517737.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c38517737.lua) | 39 |
-| Dark Magician, the Pharaoh's Servant | `88570003` | [Scripts/c88570003.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c88570003.lua) | 39 |
-| ...and 78 more |  |  |  |
+| ...and 79 more |  |  |  |
 
 ## Script Examples
 

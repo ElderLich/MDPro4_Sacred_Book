@@ -4,7 +4,7 @@ Generated from ygopro-core bindings, `Define/def.lua`, `Utilities/utility.lua`, 
 
 ## Namespaces
 
-- [Auxiliary](Auxiliary/) (363)
+- [Auxiliary](Auxiliary/) (365)
 - [Card](Card/) (286)
 - [Debug](Debug/) (11)
 - [Duel](Duel/) (229)
@@ -124,6 +124,7 @@ Generated from ygopro-core bindings, `Define/def.lua`, `Utilities/utility.lua`, 
 - [Auxiliary.EnableChangeCode](Auxiliary/EnableChangeCode.md)
 - [Auxiliary.EnableDualAttribute](Auxiliary/EnableDualAttribute.md)
 - [Auxiliary.EnableExtraDeckSummonCountLimit](Auxiliary/EnableExtraDeckSummonCountLimit.md)
+- [Auxiliary.EnableMulcharmyGlobalCheck](Auxiliary/EnableMulcharmyGlobalCheck.md)
 - [Auxiliary.EnableNeosReturn](Auxiliary/EnableNeosReturn.md)
 - [Auxiliary.EnablePendulumAttribute](Auxiliary/EnablePendulumAttribute.md)
 - [Auxiliary.EnableReviveLimitPendulumSummonable](Auxiliary/EnableReviveLimitPendulumSummonable.md)
@@ -242,6 +243,7 @@ Generated from ygopro-core bindings, `Define/def.lua`, `Utilities/utility.lua`, 
 - [Auxiliary.MergedDelayEventCheck2_ToSingleCard](Auxiliary/MergedDelayEventCheck2_ToSingleCard.md)
 - [Auxiliary.MimighoulFlipCondition](Auxiliary/MimighoulFlipCondition.md)
 - [Auxiliary.MonsterEffectPropertyFilter](Auxiliary/MonsterEffectPropertyFilter.md)
+- [Auxiliary.MulcharmyGlobalCheck](Auxiliary/MulcharmyGlobalCheck.md)
 - [Auxiliary.MustMaterialCheck](Auxiliary/MustMaterialCheck.md)
 - [Auxiliary.MustMaterialCounterFilter](Auxiliary/MustMaterialCounterFilter.md)
 - [Auxiliary.mzctcheck](Auxiliary/mzctcheck.md)

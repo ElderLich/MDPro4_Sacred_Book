@@ -49,7 +49,7 @@ When the card came from a hidden location and must be shown, reveal the result w
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **2963** indexed script(s).
+- Detected in **2977** indexed script(s).
 - Search this function in the [Script Explorer](/tools/script-explorer) with `Duel.SendtoHand`.
 
 | Card | ID | Script | Detected Calls |
@@ -78,7 +78,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | [Enneacraft - Aiza.LEON](/examples/cards/82359538) | `82359538` | [Scripts/c82359538.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c82359538.lua) | 62 |
 | [Junoldo the Shadespirit Power Patron](/examples/cards/10266279) | `10266279` | [Scripts/c10266279.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c10266279.lua) | 62 |
 | [Enlightenment Dragon](/examples/cards/46186135) | `46186135` | [Scripts/c46186135.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c46186135.lua) | 62 |
-| ...and 2939 more |  |  |  |
+| ...and 2953 more |  |  |  |
 
 ## Script Examples
 

@@ -26,12 +26,13 @@ Filter for effects that negate an Effect Monster, such as Effect Veiler: c must 
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **60** indexed script(s).
+- Detected in **61** indexed script(s).
 - Search this function in the [Script Explorer](/tools/script-explorer) with `Auxiliary.NegateEffectMonsterFilter`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
 | [Shooting Majestic Star Dragon](/examples/cards/40939228) | `40939228` | [Scripts/c40939228.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c40939228.lua) | 62 |
+| Unchained Soul Rage Abominator | `21419436` | [Scripts/c21419436.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c21419436.lua) | 53 |
 | Weaver of Fairy Tails | `78021082` | [Scripts/c78021082.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c78021082.lua) | 53 |
 | Ekto Enneacraft - "tromarIA" | `29570824` | [Scripts/c29570824.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c29570824.lua) | 52 |
 | Groza, Tyrant of Thunder | `45420955` | [Scripts/c45420955.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c45420955.lua) | 51 |
@@ -54,8 +55,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Fairy Tail Ball | `56725612` | [Scripts/c56725612.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c56725612.lua) | 44 |
 | Myutant Clash | `5466615` | [Scripts/c5466615.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c5466615.lua) | 44 |
 | Majestic Red Dragon | `67030233` | [Scripts/c67030233.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c67030233.lua) | 43 |
-| Swordsoul Grandmaster - Chixiao | `69248256` | [Scripts/c69248256.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c69248256.lua) | 43 |
-| ...and 36 more |  |  |  |
+| ...and 37 more |  |  |  |
 
 ## Script Examples
 
@@ -71,6 +71,18 @@ function c40939228.distg(e,tp,eg,ep,ev,re,r,rp,chk)
 end
 ```
 
+### Unchained Soul Rage Abominator (`21419436`)
+
+Source: [Scripts/c21419436.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c21419436.lua)
+
+```lua
+end
+function s.disfilter(c,tp,e)
+	return c:IsFaceupEx() and c:IsLocation(LOCATION_MZONE) and c:IsSummonPlayer(1-tp) and c:IsCanBeEffectTarget(e) and aux.NegateEffectMonsterFilter(c)
+end
+function s.discon(e,tp,eg,ep,ev,re,r,rp)
+```
+
 ### Weaver of Fairy Tails (`78021082`)
 
 Source: [Scripts/c78021082.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c78021082.lua)
@@ -81,16 +93,4 @@ function s.disfilter(c)
 	return c:IsFaceup() and c:IsType(TYPE_EFFECT) and (aux.NegateEffectMonsterFilter(c) or not c:IsCode(19144623))
 end
 function s.distg(e,tp,eg,ep,ev,re,r,rp,chk,chkc)
-```
-
-### Ekto Enneacraft - "tromarIA" (`29570824`)
-
-Source: [Scripts/c29570824.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c29570824.lua)
-
-```lua
-function s.distg(e,tp,eg,ep,ev,re,r,rp,chk)
-	if chk==0 then return true end
-	local g=Duel.GetMatchingGroup(aux.NegateEffectMonsterFilter,tp,0,LOCATION_MZONE,nil)
-	if g:GetCount()>0 then
-		Duel.SetOperationInfo(0,CATEGORY_DISABLE,g,1,0,0)
 ```

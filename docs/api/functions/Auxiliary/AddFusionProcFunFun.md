@@ -26,12 +26,13 @@ Registers a Fusion procedure requiring one material satisfying f1 and cc materia
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **6** indexed script(s).
+- Detected in **7** indexed script(s).
 - Search this function in the [Script Explorer](/tools/script-explorer) with `Auxiliary.AddFusionProcFunFun`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
 | [Ultimate Crystal Rainbow Dragon Overdrive](/examples/cards/84544192) | `84544192` | [Scripts/c84544192.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c84544192.lua) | 62 |
+| Blue-Eyes Toon Ultimate Dragon | `71808988` | [Scripts/c71808988.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c71808988.lua) | 50 |
 | Necroquip Princess | `93860227` | [Scripts/c93860227.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c93860227.lua) | 44 |
 | Cyber Eternity Dragon | `82315403` | [Scripts/c82315403.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c82315403.lua) | 43 |
 | Phantom of Yubel | `80453041` | [Scripts/c80453041.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c80453041.lua) | 40 |
@@ -52,6 +53,18 @@ Source: [Scripts/c84544192.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/
 	local e0=Effect.CreateEffect(c)
 ```
 
+### Blue-Eyes Toon Ultimate Dragon (`71808988`)
+
+Source: [Scripts/c71808988.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c71808988.lua)
+
+```lua
+	aux.AddMaterialCodeList(c,53183600)
+	aux.AddSetNameMonsterList(c,0x62)
+	aux.AddFusionProcFunFun(c,aux.FilterBoolFunction(Card.IsFusionCode,53183600),s.ffilter,2,true)
+	aux.AddContactFusionProcedure(c,s.cfilter,LOCATION_HAND+LOCATION_MZONE+LOCATION_GRAVE,0,aux.ContactFusionSendToDeck(c))
+	--cannot special summon
+```
+
 ### Necroquip Princess (`93860227`)
 
 Source: [Scripts/c93860227.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c93860227.lua)
@@ -62,16 +75,4 @@ Source: [Scripts/c93860227.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/
 	aux.AddFusionProcFunFun(c,s.ffilter1,s.ffilter2,1,true)
 	aux.AddContactFusionProcedure(c,Card.IsAbleToGraveAsCost,LOCATION_ONFIELD+LOCATION_HAND,0,Duel.SendtoGrave,REASON_COST)
 	--special summon condition
-```
-
-### Cyber Eternity Dragon (`82315403`)
-
-Source: [Scripts/c82315403.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c82315403.lua)
-
-```lua
-	--fusion material
-	c:EnableReviveLimit()
-	aux.AddFusionProcFunFun(c,aux.FilterBoolFunction(Card.IsFusionSetCard,0x1093),aux.FilterBoolFunction(Card.IsRace,RACE_MACHINE),2,true)
-	--cannot target
-	local e1=Effect.CreateEffect(c)
 ```

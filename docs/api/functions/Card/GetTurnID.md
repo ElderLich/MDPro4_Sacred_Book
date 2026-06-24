@@ -27,11 +27,12 @@ The core updates this value when the card is added to a location, so scripts com
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **50** indexed script(s).
+- Detected in **51** indexed script(s).
 - Search this function in the [Script Explorer](/tools/script-explorer) with `Card.GetTurnID`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
+| Unchained Enma Lord Yama | `94014327` | [Scripts/c94014327.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c94014327.lua) | 51 |
 | Cubic Mandala | `8837932` | [Scripts/c8837932.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c8837932.lua) | 49 |
 | Xyz Double Back | `57836546` | [Scripts/c57836546.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c57836546.lua) | 49 |
 | Diabrocken the Ominous Specter | `6083904` | [Scripts/c6083904.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c6083904.lua) | 48 |
@@ -55,10 +56,21 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Fusion Recycling Plant | `22829942` | [Scripts/c22829942.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c22829942.lua) | 35 |
 | D.D. Telepon | `51701885` | [Scripts/c51701885.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c51701885.lua) | 34 |
 | High Tide on Fire Island | `32542011` | [Scripts/c32542011.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c32542011.lua) | 33 |
-| Serene Psychic Witch | `98358303` | [Scripts/c98358303.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c98358303.lua) | 33 |
-| ...and 26 more |  |  |  |
+| ...and 27 more |  |  |  |
 
 ## Script Examples
+
+### Unchained Enma Lord Yama (`94014327`)
+
+Source: [Scripts/c94014327.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c94014327.lua)
+
+```lua
+end
+function s.spfilter(c,e,tp,cid)
+	return c:IsReason(REASON_DESTROY) and c:GetTurnID()==cid and c:IsRace(RACE_FIEND) and c:IsCanBeSpecialSummoned(e,0,tp,false,false)
+end
+function s.sptg(e,tp,eg,ep,ev,re,r,rp,chk,chkc)
+```
 
 ### Cubic Mandala (`8837932`)
 
@@ -81,17 +93,5 @@ function c57836546.filter1(c,e,tp,turn)
 	return c:IsType(TYPE_XYZ) and c:IsReason(REASON_DESTROY) and c:IsPreviousControler(tp) and c:IsPreviousLocation(LOCATION_MZONE)
 		and c:IsPreviousPosition(POS_FACEUP) and c:GetTurnID()==turn and c:IsCanBeSpecialSummoned(e,0,tp,false,false)
 		and Duel.IsExistingTarget(c57836546.filter2,tp,LOCATION_GRAVE,0,1,c,e,tp,c:GetAttack())
-end
-```
-
-### Diabrocken the Ominous Specter (`6083904`)
-
-Source: [Scripts/c6083904.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c6083904.lua)
-
-```lua
-end
-function s.setfilter(c)
-	return c:GetTurnID()==Duel.GetTurnCount() and (c:IsType(TYPE_QUICKPLAY) or c:GetType()==TYPE_TRAP) and c:IsSSetable()
-		and not c:IsReason(REASON_RETURN)
 end
 ```

@@ -23,7 +23,7 @@ Sets g as c's material group for a Summon, or clears c's materials when g is nil
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **475** indexed script(s).
+- Detected in **477** indexed script(s).
 - Search this function in the [Script Explorer](/tools/script-explorer) with `Card.SetMaterial`.
 
 | Card | ID | Script | Detected Calls |
@@ -52,7 +52,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | [Ghostrick Renovation](/examples/cards/61818176) | `61818176` | [Scripts/c61818176.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c61818176.lua) | 65 |
 | [Magnet Bonding](/examples/cards/65514302) | `65514302` | [Scripts/c65514302.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c65514302.lua) | 65 |
 | [Hecahands Tartaros](/examples/cards/57809669) | `57809669` | [Scripts/c57809669.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c57809669.lua) | 65 |
-| ...and 451 more |  |  |  |
+| ...and 453 more |  |  |  |
 
 ## Script Examples
 

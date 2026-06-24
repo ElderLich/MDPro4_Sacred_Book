@@ -53,10 +53,10 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Borreload Fatalflare Dragon | `84464389` | [Scripts/c84464389.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c84464389.lua) | 50 |
 | Oracle of Zefra | `32354768` | [Scripts/c32354768.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c32354768.lua) | 49 |
 | Mirrorjade the Iceblade Dragon | `44146295` | [Scripts/c44146295.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c44146295.lua) | 49 |
-| Invoked Magistus Omega | `38423248` | [Scripts/c38423248.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c38423248.lua) | 49 |
 | Cyberse Clock Dragon | `42717221` | [Scripts/c42717221.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c42717221.lua) | 48 |
 | Dinomorphia Rexterm | `92798873` | [Scripts/c92798873.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c92798873.lua) | 48 |
 | Sprind the Irondash Dragon | `1906812` | [Scripts/c1906812.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c1906812.lua) | 48 |
+| Invoked Magistus Omega | `38423248` | [Scripts/c38423248.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c38423248.lua) | 48 |
 | ...and 63 more |  |  |  |
 
 ## Script Examples

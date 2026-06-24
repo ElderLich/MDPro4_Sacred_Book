@@ -2,7 +2,7 @@
 
 Generated from `cards.cdb` and `Scripts/`.
 
-- Script files scanned: **13389**
+- Script files scanned: **13414**
 - Featured pages generated: **96**
 - Full machine-readable index: `/data/card-examples.json`
 - Featured card IDs: `/data/featured-card-ids.json`
@@ -10,6 +10,12 @@ Generated from `cards.cdb` and `Scripts/`.
 - Interactive search: [Script Explorer](/tools/script-explorer)
 
 The featured pages are selected from scripts with many detected API calls and card text available. The Script Explorer can search the full local script set by card ID, card name, script path, or detected API function.
+
+## Case Studies
+
+| Card | ID | Focus | Script |
+| --- | ---: | --- | --- |
+| [Mind Scan](mind-scan) | `34298391` | Continuous Trap information effects, `EFFECT_REVEAL_ONFIELD`, and declared-name negation | `Scripts/c34298391.lua` |
 
 ## Featured Examples
 
@@ -65,8 +71,6 @@ The featured pages are selected from scripts with many detected API calls and ca
 | [Dark End Evaporation Dragon](cards/62002838) | `62002838` | 63 | `Scripts/c62002838.lua` |
 | [Nekroz Kaleidoscope](cards/51124303) | `51124303` | 63 | `Scripts/c51124303.lua` |
 | [Future Fusion Nova](cards/92058902) | `92058902` | 63 | `Scripts/c92058902.lua` |
-| [Dracotail Shaulas](cards/42125140) | `42125140` | 63 | `Scripts/c42125140.lua` |
-| [Artmage Masterwork -Succession-](cards/37517035) | `37517035` | 63 | `Scripts/c37517035.lua` |
 | [Plunder Patroll Shipshape Ships Shipping](cards/44227727) | `44227727` | 63 | `Scripts/c44227727.lua` |
 | [Enneacraft - Atil.SPIA](cards/71801447) | `71801447` | 62 | `Scripts/c71801447.lua` |
 | [Enneacraft - Aiza.LEON](cards/82359538) | `82359538` | 62 | `Scripts/c82359538.lua` |
@@ -83,8 +87,9 @@ The featured pages are selected from scripts with many detected API calls and ca
 | [Shooting Majestic Star Dragon](cards/40939228) | `40939228` | 62 | `Scripts/c40939228.lua` |
 | [Ursarctic Polar Star](cards/62714453) | `62714453` | 62 | `Scripts/c62714453.lua` |
 | [Albion the Branded Dragon](cards/87746184) | `87746184` | 62 | `Scripts/c87746184.lua` |
-| [Ecclesia and the Dark Dragon](cards/78397661) | `78397661` | 62 | `Scripts/c78397661.lua` |
+| [Dracotail Shaulas](cards/42125140) | `42125140` | 62 | `Scripts/c42125140.lua` |
 | [Ashened to Endlessness](cards/34813443) | `34813443` | 62 | `Scripts/c34813443.lua` |
+| [Artmage Masterwork -Succession-](cards/37517035) | `37517035` | 62 | `Scripts/c37517035.lua` |
 | [PSY-Framelord Zeta](cards/37192109) | `37192109` | 62 | `Scripts/c37192109.lua` |
 | [The Gaze of Timaeus](cards/22283204) | `22283204` | 62 | `Scripts/c22283204.lua` |
 | [Penetration Fusion](cards/8778267) | `8778267` | 62 | `Scripts/c8778267.lua` |
@@ -103,6 +108,7 @@ The featured pages are selected from scripts with many detected API calls and ca
 | [Earthbound Servant Geo Gremlin](cards/8690387) | `8690387` | 61 | `Scripts/c8690387.lua` |
 | [Trickstar Diffusion](cards/63181559) | `63181559` | 61 | `Scripts/c63181559.lua` |
 | [Flower Cardian Willow with Calligrapher](cards/89818984) | `89818984` | 61 | `Scripts/c89818984.lua` |
+| [Witchcrafter Celebration](cards/6958567) | `6958567` | 61 | `Scripts/c6958567.lua` |
 | [El Shaddoll Meshachrer](cards/32467459) | `32467459` | 61 | `Scripts/c32467459.lua` |
 | [Cyber Pharos](cards/29719112) | `29719112` | 61 | `Scripts/c29719112.lua` |
 | [Particle Fusion](cards/39261576) | `39261576` | 61 | `Scripts/c39261576.lua` |

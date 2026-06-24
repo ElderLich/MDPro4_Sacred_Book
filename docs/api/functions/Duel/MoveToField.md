@@ -52,7 +52,7 @@ end
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **254** indexed script(s).
+- Detected in **257** indexed script(s).
 - Search this function in the [Script Explorer](/tools/script-explorer) with `Duel.MoveToField`.
 
 | Card | ID | Script | Detected Calls |
@@ -81,7 +81,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Dreaming Nemleria | `70155677` | [Scripts/c70155677.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c70155677.lua) | 55 |
 | Favorite Hero | `11881272` | [Scripts/c11881272.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c11881272.lua) | 55 |
 | Yummy☆Surprise | `29369059` | [Scripts/c29369059.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c29369059.lua) | 55 |
-| ...and 230 more |  |  |  |
+| ...and 233 more |  |  |  |
 
 ## Script Examples
 

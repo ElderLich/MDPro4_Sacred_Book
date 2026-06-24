@@ -22,7 +22,7 @@ Returns the monster that is currently attacking, or nil if there is no current a
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **857** indexed script(s).
+- Detected in **858** indexed script(s).
 - Search this function in the [Script Explorer](/tools/script-explorer) with `Duel.GetAttacker`.
 
 | Card | ID | Script | Detected Calls |
@@ -47,11 +47,11 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | D/D/D Super Doom King Bright Armageddon | `72402069` | [Scripts/c72402069.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c72402069.lua) | 52 |
 | Shura the Combat Star | `32615065` | [Scripts/c32615065.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c32615065.lua) | 52 |
 | Cubic Rebirth | `71442223` | [Scripts/c71442223.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c71442223.lua) | 52 |
+| Witchcrafter Madame Verre | `21522601` | [Scripts/c21522601.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c21522601.lua) | 52 |
 | X-Saber Gottoms | `8252010` | [Scripts/c8252010.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c8252010.lua) | 52 |
 | Armed Dragon LV10 White | `84425220` | [Scripts/c84425220.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c84425220.lua) | 52 |
 | Mementomictlan | `43338320` | [Scripts/c43338320.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c43338320.lua) | 52 |
-| K9-LC Release Restraint | `27308231` | [Scripts/c27308231.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c27308231.lua) | 52 |
-| ...and 833 more |  |  |  |
+| ...and 834 more |  |  |  |
 
 ## Script Examples
 

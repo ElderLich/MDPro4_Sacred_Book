@@ -28,7 +28,7 @@ Common legality checks use this for temporary engine states such as STATUS_BATTL
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **455** indexed script(s).
+- Detected in **456** indexed script(s).
 - Search this function in the [Script Explorer](/tools/script-explorer) with `Card.IsStatus`.
 
 | Card | ID | Script | Detected Calls |
@@ -57,7 +57,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Sea Lancer | `22842214` | [Scripts/c22842214.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c22842214.lua) | 53 |
 | Dual Avatar Feet - Armored Un-Gyo | `7631534` | [Scripts/c7631534.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c7631534.lua) | 52 |
 | Amaze Attraction Thrill Train | `36591747` | [Scripts/c36591747.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c36591747.lua) | 52 |
-| ...and 431 more |  |  |  |
+| ...and 432 more |  |  |  |
 
 ## Script Examples
 

@@ -23,7 +23,7 @@ This lets later Graveyard-condition checks distinguish a card that was already i
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **37** indexed script(s).
+- Detected in **38** indexed script(s).
 - Search this function in the [Script Explorer](/tools/script-explorer) with `Auxiliary.AddThisCardInGraveAlreadyCheck`.
 
 | Card | ID | Script | Detected Calls |
@@ -41,6 +41,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Amphibious Swarmship Amblowhale | `20665527` | [Scripts/c20665527.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c20665527.lua) | 48 |
 | Sacred Fire King Garunix | `66431519` | [Scripts/c66431519.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c66431519.lua) | 47 |
 | Predaprimitive | `89176044` | [Scripts/c89176044.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c89176044.lua) | 47 |
+| Unchained Ogre Shara | `95136979` | [Scripts/c95136979.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c95136979.lua) | 47 |
 | The Abyss Dragon Swordsoul | `5141117` | [Scripts/c5141117.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c5141117.lua) | 45 |
 | Geistgrinder Golem | `26913989` | [Scripts/c26913989.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c26913989.lua) | 45 |
 | Blackwing - Shamal the Sandstorm | `8571567` | [Scripts/c8571567.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c8571567.lua) | 45 |
@@ -51,8 +52,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Assault Synchron | `77202120` | [Scripts/c77202120.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c77202120.lua) | 42 |
 | Virtual World Hime - Nyannyan | `8736823` | [Scripts/c8736823.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c8736823.lua) | 41 |
 | Centur-Ion Bonds | `4160316` | [Scripts/c4160316.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c4160316.lua) | 41 |
-| EM:P Meowmine | `48017189` | [Scripts/c48017189.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c48017189.lua) | 39 |
-| ...and 13 more |  |  |  |
+| ...and 14 more |  |  |  |
 
 ## Script Examples
 

@@ -26,7 +26,7 @@ Returns the card currently handling e, usually the card that registered it with 
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **10235** indexed script(s).
+- Detected in **10257** indexed script(s).
 - Search this function in the [Script Explorer](/tools/script-explorer) with `Effect.GetHandler`.
 
 | Card | ID | Script | Detected Calls |
@@ -55,7 +55,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | [Spirit Illusion](/examples/cards/71939275) | `71939275` | [Scripts/c71939275.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c71939275.lua) | 65 |
 | [Lubellion the Searing Dragon](/examples/cards/70534340) | `70534340` | [Scripts/c70534340.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c70534340.lua) | 65 |
 | [Hecahands Tartaros](/examples/cards/57809669) | `57809669` | [Scripts/c57809669.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c57809669.lua) | 65 |
-| ...and 10211 more |  |  |  |
+| ...and 10233 more |  |  |  |
 
 ## Script Examples
 

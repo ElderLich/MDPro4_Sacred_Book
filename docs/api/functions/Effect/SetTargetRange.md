@@ -46,7 +46,7 @@ For Special Summon procedure effects using `EFFECT_FLAG_SPSUM_PARAM`, these fiel
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **2987** indexed script(s).
+- Detected in **2994** indexed script(s).
 - Search this function in the [Script Explorer](/tools/script-explorer) with `Effect.SetTargetRange`.
 
 | Card | ID | Script | Detected Calls |
@@ -75,7 +75,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | [Light End Sublimation Dragon](/examples/cards/35614780) | `35614780` | [Scripts/c35614780.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c35614780.lua) | 61 |
 | [Yummy★Snatchy](/examples/cards/30581601) | `30581601` | [Scripts/c30581601.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c30581601.lua) | 61 |
 | [Trickstar Diffusion](/examples/cards/63181559) | `63181559` | [Scripts/c63181559.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c63181559.lua) | 61 |
-| ...and 2963 more |  |  |  |
+| ...and 2970 more |  |  |  |
 
 ## Script Examples
 

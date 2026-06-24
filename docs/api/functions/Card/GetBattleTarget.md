@@ -26,7 +26,7 @@ Returns the monster currently battling c, or nil if c is not the current attacke
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **353** indexed script(s).
+- Detected in **355** indexed script(s).
 - Search this function in the [Script Explorer](/tools/script-explorer) with `Card.GetBattleTarget`.
 
 | Card | ID | Script | Detected Calls |
@@ -45,6 +45,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | TiSolfachord Beautia | `54387923` | [Scripts/c54387923.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c54387923.lua) | 50 |
 | Supreme King Dragon Odd-Eyes | `96733134` | [Scripts/c96733134.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c96733134.lua) | 50 |
 | Courageous Crimson Chevalier Bradamante | `91479482` | [Scripts/c91479482.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c91479482.lua) | 50 |
+| Blue-Eyes Toon Ultimate Dragon | `71808988` | [Scripts/c71808988.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c71808988.lua) | 50 |
 | Alien Mother | `24104865` | [Scripts/c24104865.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c24104865.lua) | 50 |
 | Predaplant Chimerafflesia | `25586143` | [Scripts/c25586143.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c25586143.lua) | 49 |
 | Magikey Deity - Ashtartu | `26988374` | [Scripts/c26988374.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c26988374.lua) | 49 |
@@ -54,8 +55,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Gussari @Ignister | `55762976` | [Scripts/c55762976.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c55762976.lua) | 49 |
 | Infinitrack Earth Slicer | `97584719` | [Scripts/c97584719.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c97584719.lua) | 49 |
 | Magikey Mechmusket - Batosbuster | `19489718` | [Scripts/c19489718.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c19489718.lua) | 48 |
-| Mirage Swordsman | `73936388` | [Scripts/c73936388.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c73936388.lua) | 48 |
-| ...and 329 more |  |  |  |
+| ...and 331 more |  |  |  |
 
 ## Script Examples
 

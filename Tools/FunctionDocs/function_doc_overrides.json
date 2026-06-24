@@ -2294,6 +2294,26 @@
         "初始化共通的额外卡组召唤次数表，双方各为1次，并登记每个抽卡阶段开始时重置的全局效果。此辅助函数只管理计数，具体卡片脚本仍需自行检查并扣除次数。"
       ]
     },
+    "Auxiliary.EnableMulcharmyGlobalCheck": {
+      "summary_en": [
+        "Installs the shared Mulcharmy activation-count watcher once per Duel process.",
+        "The watcher listens to EVENT_CHAINING and registers player flag 84192580 through the End Phase whenever that player activates a monster effect from set 0x1b2.",
+        "Mulcharmy monster scripts call this from initial_effect, then check Duel.GetFlagEffect(tp,84192580)<=1 as part of their hand-activation condition."
+      ],
+      "summary_zh": [
+        "为「Mulcharmy」共通发动次数检查安装一次全局监听。",
+        "该监听检查EVENT_CHAINING；玩家发动0x1b2字段的怪兽效果时，给该玩家登记到结束阶段为止的84192580标记。",
+        "Mulcharmy怪兽脚本在initial_effect中调用此函数，然后用Duel.GetFlagEffect(tp,84192580)<=1作为手牌发动条件的一部分。"
+      ],
+      "core_summary_en": [
+        "Installs the shared Mulcharmy activation-count watcher."
+      ],
+      "core_summary_zh": [
+        "安装Mulcharmy共通发动次数监听。"
+      ],
+      "params": [],
+      "returns": []
+    },
     "Auxiliary.EnableNeosReturn": {
       "summary_en": [
         "Registers the shared Elemental HERO Neos Fusion End Phase return effects on c. It creates a mandatory return effect and an optional version used while c is affected by effect code 42015635, then returns both effects."
@@ -5331,6 +5351,75 @@
           "description": "true during either Main Phase."
         }
       ]
+    },
+    "Auxiliary.MulcharmyGlobalCheck": {
+      "summary_en": [
+        "Internal EVENT_CHAINING operation installed by Auxiliary.EnableMulcharmyGlobalCheck.",
+        "When the triggering effect is a monster effect whose handler is in set 0x1b2, it registers player flag 84192580 on the activating player until the End Phase.",
+        "Card scripts should call Auxiliary.EnableMulcharmyGlobalCheck instead of registering this operation directly."
+      ],
+      "summary_zh": [
+        "Auxiliary.EnableMulcharmyGlobalCheck安装的EVENT_CHAINING内部处理。",
+        "触发效果是0x1b2字段怪兽的怪兽效果时，给发动该效果的玩家登记到结束阶段为止的84192580标记。",
+        "卡片脚本应调用Auxiliary.EnableMulcharmyGlobalCheck，而不是直接登记这个处理函数。"
+      ],
+      "core_summary_en": [
+        "Internal Mulcharmy EVENT_CHAINING operation."
+      ],
+      "core_summary_zh": [
+        "Mulcharmy内部EVENT_CHAINING处理。"
+      ],
+      "params": [
+        {
+          "name": "e",
+          "type": "Effect",
+          "description": "The global continuous effect that received EVENT_CHAINING.",
+          "description_zh": "接收EVENT_CHAINING的全局永续效果。"
+        },
+        {
+          "name": "tp",
+          "type": "int",
+          "description": "Controller of the global effect. This helper uses rp for the activating player.",
+          "description_zh": "全局效果的控制者；此辅助函数使用rp表示发动玩家。"
+        },
+        {
+          "name": "eg",
+          "type": "Group",
+          "description": "Event group supplied by EVENT_CHAINING.",
+          "description_zh": "EVENT_CHAINING提供的事件Group。"
+        },
+        {
+          "name": "ep",
+          "type": "int",
+          "description": "Event player supplied by EVENT_CHAINING.",
+          "description_zh": "EVENT_CHAINING提供的事件玩家。"
+        },
+        {
+          "name": "ev",
+          "type": "int",
+          "description": "Event value supplied by EVENT_CHAINING.",
+          "description_zh": "EVENT_CHAINING提供的事件值。"
+        },
+        {
+          "name": "re",
+          "type": "Effect",
+          "description": "The effect being activated in the Chain.",
+          "description_zh": "正在连锁中发动的效果。"
+        },
+        {
+          "name": "r",
+          "type": "int",
+          "description": "Reason flags supplied by EVENT_CHAINING.",
+          "description_zh": "EVENT_CHAINING提供的原因标志。"
+        },
+        {
+          "name": "rp",
+          "type": "int",
+          "description": "Player who activated re; this player receives flag 84192580 when the Mulcharmy check matches.",
+          "description_zh": "发动re的玩家；Mulcharmy检查匹配时，此玩家获得84192580标记。"
+        }
+      ],
+      "returns": []
     },
     "Auxiliary.MonsterEffectPropertyFilter": {
       "summary_en": [

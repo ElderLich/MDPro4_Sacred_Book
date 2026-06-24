@@ -27,7 +27,7 @@ Checks whether c's previous position included pos.
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **438** indexed script(s).
+- Detected in **440** indexed script(s).
 - Search this function in the [Script Explorer](/tools/script-explorer) with `Card.IsPreviousPosition`.
 
 | Card | ID | Script | Detected Calls |
@@ -56,7 +56,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Unification of the Cubic Lords | `34325937` | [Scripts/c34325937.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c34325937.lua) | 53 |
 | Contact Gate | `41933425` | [Scripts/c41933425.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c41933425.lua) | 52 |
 | Scrap-Iron Sacred Statue | `85520170` | [Scripts/c85520170.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c85520170.lua) | 52 |
-| ...and 414 more |  |  |  |
+| ...and 416 more |  |  |  |
 
 ## Script Examples
 

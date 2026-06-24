@@ -26,7 +26,7 @@ Checks whether c can be sent to the Graveyard.
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **592** indexed script(s).
+- Detected in **593** indexed script(s).
 - Search this function in the [Script Explorer](/tools/script-explorer) with `Card.IsAbleToGrave`.
 
 | Card | ID | Script | Detected Calls |
@@ -55,7 +55,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Fallen Paradise of the Sacred Beasts | `65861210` | [Scripts/c65861210.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c65861210.lua) | 56 |
 | Extinguishing the Ashened | `98828338` | [Scripts/c98828338.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c98828338.lua) | 56 |
 | R.B. Lambda Blade | `17188206` | [Scripts/c17188206.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c17188206.lua) | 56 |
-| ...and 568 more |  |  |  |
+| ...and 569 more |  |  |  |
 
 ## Script Examples
 

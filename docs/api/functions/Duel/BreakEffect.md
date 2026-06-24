@@ -19,7 +19,7 @@ Use this when card text says to do one action, then do another action afterward,
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **1927** indexed script(s).
+- Detected in **1939** indexed script(s).
 - Search this function in the [Script Explorer](/tools/script-explorer) with `Duel.BreakEffect`.
 
 | Card | ID | Script | Detected Calls |
@@ -48,7 +48,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | [Lubellion the Searing Dragon](/examples/cards/70534340) | `70534340` | [Scripts/c70534340.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c70534340.lua) | 65 |
 | [Ghostrick Renovation](/examples/cards/61818176) | `61818176` | [Scripts/c61818176.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c61818176.lua) | 65 |
 | [Magnet Bonding](/examples/cards/65514302) | `65514302` | [Scripts/c65514302.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c65514302.lua) | 65 |
-| ...and 1903 more |  |  |  |
+| ...and 1915 more |  |  |  |
 
 ## Script Examples
 

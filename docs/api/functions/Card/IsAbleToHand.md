@@ -28,7 +28,7 @@ An optional player argument can be passed when a specific player is performing t
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **2720** indexed script(s).
+- Detected in **2733** indexed script(s).
 - Search this function in the [Script Explorer](/tools/script-explorer) with `Card.IsAbleToHand`.
 
 | Card | ID | Script | Detected Calls |
@@ -57,7 +57,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | [Enlightenment Dragon](/examples/cards/46186135) | `46186135` | [Scripts/c46186135.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c46186135.lua) | 62 |
 | [Chimera Fusion](/examples/cards/63136489) | `63136489` | [Scripts/c63136489.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c63136489.lua) | 62 |
 | [Albion the Branded Dragon](/examples/cards/87746184) | `87746184` | [Scripts/c87746184.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c87746184.lua) | 62 |
-| ...and 2696 more |  |  |  |
+| ...and 2709 more |  |  |  |
 
 ## Script Examples
 

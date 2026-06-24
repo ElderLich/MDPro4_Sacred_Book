@@ -35,8 +35,8 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
 | [El Shaddoll Meshachrer](/examples/cards/32467459) | `32467459` | [Scripts/c32467459.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c32467459.lua) | 61 |
-| Divine Serpent Apophis | `97800311` | [Scripts/c97800311.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c97800311.lua) | 58 |
 | Dragon Master Magia | `12381100` | [Scripts/c12381100.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c12381100.lua) | 57 |
+| Divine Serpent Apophis | `97800311` | [Scripts/c97800311.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c97800311.lua) | 56 |
 | Cyberdark End Dragon | `37542782` | [Scripts/c37542782.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c37542782.lua) | 53 |
 | Thunder Dragon Titan | `41685633` | [Scripts/c41685633.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c41685633.lua) | 52 |
 | Predaplant Dheadevil | `82370493` | [Scripts/c82370493.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c82370493.lua) | 52 |
@@ -74,18 +74,6 @@ Source: [Scripts/c32467459.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/
 	--immune
 ```
 
-### Divine Serpent Apophis (`97800311`)
-
-Source: [Scripts/c97800311.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c97800311.lua)
-
-```lua
-	e1:SetProperty(EFFECT_FLAG_CANNOT_DISABLE+EFFECT_FLAG_UNCOPYABLE)
-	e1:SetCode(EFFECT_SPSUMMON_CONDITION)
-	e1:SetValue(aux.fuslimit)
-	c:RegisterEffect(e1)
-	--spsummon
-```
-
 ### Dragon Master Magia (`12381100`)
 
 Source: [Scripts/c12381100.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c12381100.lua)
@@ -96,4 +84,16 @@ Source: [Scripts/c12381100.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/
 	e0:SetValue(aux.fuslimit)
 	c:RegisterEffect(e0)
 	local e1=Effect.CreateEffect(c)
+```
+
+### Divine Serpent Apophis (`97800311`)
+
+Source: [Scripts/c97800311.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c97800311.lua)
+
+```lua
+	e1:SetProperty(EFFECT_FLAG_CANNOT_DISABLE+EFFECT_FLAG_UNCOPYABLE)
+	e1:SetCode(EFFECT_SPSUMMON_CONDITION)
+	e1:SetValue(aux.fuslimit)
+	c:RegisterEffect(e1)
+	--spsummon
 ```

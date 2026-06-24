@@ -26,7 +26,7 @@ Checks whether v, a Card or Group, contains a card affected by Necrovalley. If t
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **46** indexed script(s).
+- Detected in **47** indexed script(s).
 - Search this function in the [Script Explorer](/tools/script-explorer) with `Auxiliary.NecroValleyNegateCheck`.
 
 | Card | ID | Script | Detected Calls |
@@ -39,6 +39,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Clown Crew Flair | `42759961` | [Scripts/c42759961.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c42759961.lua) | 48 |
 | R.B. Operation Test | `16066654` | [Scripts/c16066654.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c16066654.lua) | 48 |
 | Deskbot Base | `12215894` | [Scripts/c12215894.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c12215894.lua) | 48 |
+| Unchained Ogre Shara | `95136979` | [Scripts/c95136979.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c95136979.lua) | 47 |
 | Clown Crew Diabolo | `31533473` | [Scripts/c31533473.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c31533473.lua) | 47 |
 | Clown Crew Drish | `30109445` | [Scripts/c30109445.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c30109445.lua) | 46 |
 | Chaos End Ruler - Ruler of the Beginning and the End | `41424250` | [Scripts/c41424250.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c41424250.lua) | 45 |
@@ -54,8 +55,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Tierra, Source of Destruction | `91588074` | [Scripts/c91588074.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c91588074.lua) | 41 |
 | Labrynth Cooclock | `2511` | [Scripts/c2511.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c2511.lua) | 40 |
 | Magnet Warrior Sigma Plus | `51826619` | [Scripts/c51826619.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c51826619.lua) | 40 |
-| New World Stars | `85407683` | [Scripts/c85407683.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c85407683.lua) | 40 |
-| ...and 22 more |  |  |  |
+| ...and 23 more |  |  |  |
 
 ## Script Examples
 

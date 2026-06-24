@@ -1,6 +1,6 @@
 # Function Docs Refresh Report
 
-Generated: 2026-06-24T16:29:24+00:00
+Generated: 2026-06-24T17:16:30+00:00
 
 ## Outputs
 
@@ -22,19 +22,19 @@ Generated: 2026-06-24T16:29:24+00:00
 
 ## Function Sources
 
-- Generated functions: 998
+- Generated functions: 1000
 - Core-bound functions: 611
-- Lua helper functions: 376
+- Lua helper functions: 378
 - Stub-only functions: 11
 - Core-bound functions without stub docs: 0
 - Existing DataEditorX `_functions.txt`: 998
 - Existing DataEditorX `_function_english.txt`: 998
-- Added versus DataEditorX `_functions.txt`: 0
+- Added versus DataEditorX `_functions.txt`: 2
 - Dropped versus DataEditorX `_functions.txt`: 0
 
 ## Namespaces
 
-- `Auxiliary`: 363
+- `Auxiliary`: 365
 - `Card`: 286
 - `Debug`: 11
 - `Duel`: 229
@@ -45,7 +45,7 @@ Generated: 2026-06-24T16:29:24+00:00
 
 ## English Coverage
 
-- `translated_exact`: 998
+- `translated_exact`: 1000
 
 ## Core Binding Gaps
 
@@ -86,34 +86,35 @@ Lua helper docs that still render as `void` while their source body contains a `
 ## Constant Findings
 
 - DataEditorX constants: 858
-- Local utility constants: 858
-- Missing in DataEditorX: 0
+- Local utility constants: 859
+- Missing in DataEditorX: 1
 - Changed values: 0
 - Removed from local: 0
 - Effect creator active `EFFECT_*` names: 289
 - Effect creator commented `EFFECT_*` names: 6
 - Effect creator effect-code names: 256
 - Effect creator property names: 33
-- Local `EFFECT_*` constants: 320
-- Local effect-code constants: 261
+- Local `EFFECT_*` constants: 321
+- Local effect-code constants: 262
 - Local effect-property constants: 40
-- `effect_creator_settings.txt` missing effect-code constants: 0
+- `effect_creator_settings.txt` missing effect-code constants: 1
 - `effect_creator_settings.txt` missing effect-property constants: 0
 - Reserved/internal effect-code constants intentionally ignored: 5
 - Internal property constants intentionally ignored: 7
 - Unknown active effect creator names: 0
-- Generated constant docs: 858
+- Generated constant docs: 859
 
 Constant English status:
 
 - `existing_english`: 4
 - `from_project_cache`: 792
-- `reviewed_english`: 7
+- `reviewed_english`: 8
 - `translated_exact`: 28
 - `translated_name`: 27
 
 Examples missing in DataEditorX constants:
 
+- `EFFECT_REVEAL_ONFIELD`
 
 Examples changed constant values:
 
@@ -126,6 +127,8 @@ Examples changed constant values:
 
 ## Added Function Examples
 
+- `Auxiliary.EnableMulcharmyGlobalCheck`
+- `Auxiliary.MulcharmyGlobalCheck`
 
 ## Dropped DataEditorX Function Examples
 

@@ -26,7 +26,7 @@ Returns e's description id.
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **470** indexed script(s).
+- Detected in **472** indexed script(s).
 - Search this function in the [Script Explorer](/tools/script-explorer) with `Effect.GetDescription`.
 
 | Card | ID | Script | Detected Calls |
@@ -55,7 +55,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | [Tohushaddoll Grysta](/examples/cards/95072744) | `95072744` | [Scripts/c95072744.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c95072744.lua) | 64 |
 | [GMX 55th Experiment Report](/examples/cards/38984832) | `38984832` | [Scripts/c38984832.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c38984832.lua) | 64 |
 | [Predaplant Bal Teah](/examples/cards/66787942) | `66787942` | [Scripts/c66787942.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c66787942.lua) | 64 |
-| ...and 446 more |  |  |  |
+| ...and 448 more |  |  |  |
 
 ## Script Examples
 

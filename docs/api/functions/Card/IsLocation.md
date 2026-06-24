@@ -28,7 +28,7 @@ Cards treated as not being on the field return false for field locations, includ
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **5741** indexed script(s).
+- Detected in **5752** indexed script(s).
 - Search this function in the [Script Explorer](/tools/script-explorer) with `Card.IsLocation`.
 
 | Card | ID | Script | Detected Calls |
@@ -57,7 +57,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | [Magnet Bonding](/examples/cards/65514302) | `65514302` | [Scripts/c65514302.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c65514302.lua) | 65 |
 | [Prank-Kids Weather Washer](/examples/cards/44509529) | `44509529` | [Scripts/c44509529.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c44509529.lua) | 65 |
 | [Enneacraft - Asta.PIXEA](/examples/cards/28454232) | `28454232` | [Scripts/c28454232.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c28454232.lua) | 64 |
-| ...and 5717 more |  |  |  |
+| ...and 5728 more |  |  |  |
 
 ## Script Examples
 

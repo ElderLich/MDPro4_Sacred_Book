@@ -30,7 +30,7 @@ check_location defaults to LOCATION_ONFIELD and is masked to on-field locations.
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **186** indexed script(s).
+- Detected in **189** indexed script(s).
 - Search this function in the [Script Explorer](/tools/script-explorer) with `Card.CheckUniqueOnField`.
 
 | Card | ID | Script | Detected Calls |
@@ -59,7 +59,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Cyberdark End Dragon | `37542782` | [Scripts/c37542782.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c37542782.lua) | 53 |
 | Tensei Ryu-Ge Anva | `56322832` | [Scripts/c56322832.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c56322832.lua) | 52 |
 | Elfnote Tinia | `59581480` | [Scripts/c59581480.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c59581480.lua) | 52 |
-| ...and 162 more |  |  |  |
+| ...and 165 more |  |  |  |
 
 ## Script Examples
 

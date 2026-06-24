@@ -26,7 +26,7 @@ Returns c's original Level from card data, or 0 for Xyz Monsters, Link Monsters,
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **115** indexed script(s).
+- Detected in **116** indexed script(s).
 - Search this function in the [Script Explorer](/tools/script-explorer) with `Card.GetOriginalLevel`.
 
 | Card | ID | Script | Detected Calls |
@@ -40,6 +40,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Crystron Halqifibrax Prism | `65400671` | [Scripts/c65400671.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c65400671.lua) | 53 |
 | Sudden Thunder Swamp | `23611122` | [Scripts/c23611122.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c23611122.lua) | 53 |
 | Laevateinn the Burning Blade | `6260560` | [Scripts/c6260560.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c6260560.lua) | 53 |
+| Card 24056179 | `24056179` | [Scripts/c24056179.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c24056179.lua) | 52 |
 | Argostars - Giantslaying | `30964246` | [Scripts/c30964246.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c30964246.lua) | 51 |
 | Subterror Nemesis Warrior | `16719140` | [Scripts/c16719140.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c16719140.lua) | 51 |
 | Pendulum Dimension | `84274024` | [Scripts/c84274024.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c84274024.lua) | 50 |
@@ -54,8 +55,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Silhouhatte Rabbit | `1528054` | [Scripts/c1528054.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c1528054.lua) | 47 |
 | Jade Dragon Mech | `69191257` | [Scripts/c69191257.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c69191257.lua) | 47 |
 | Greedy Venom Fusion Dragon | `51570882` | [Scripts/c51570882.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c51570882.lua) | 47 |
-| Crystal Aegis | `58371671` | [Scripts/c58371671.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c58371671.lua) | 47 |
-| ...and 91 more |  |  |  |
+| ...and 92 more |  |  |  |
 
 ## Script Examples
 

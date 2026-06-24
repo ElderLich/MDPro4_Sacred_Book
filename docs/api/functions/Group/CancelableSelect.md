@@ -44,8 +44,8 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Chaos Dragon Levianeer | `55878038` | [Scripts/c55878038.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c55878038.lua) | 46 |
 | Chaotic Elements | `92221402` | [Scripts/c92221402.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c92221402.lua) | 46 |
 | Ultimate Conductor Tyranno | `18940556` | [Scripts/c18940556.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c18940556.lua) | 45 |
-| Regenesis Overlord | `47082621` | [Scripts/c47082621.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c47082621.lua) | 44 |
 | Overtex Qoatlus | `41782653` | [Scripts/c41782653.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c41782653.lua) | 43 |
+| Regenesis Overlord | `47082621` | [Scripts/c47082621.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c47082621.lua) | 43 |
 | Degrade Buster | `50426119` | [Scripts/c50426119.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c50426119.lua) | 43 |
 | Dark Necrofear | `31829185` | [Scripts/c31829185.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c31829185.lua) | 42 |
 | Batteryman Industrial Strength | `19441018` | [Scripts/c19441018.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c19441018.lua) | 42 |

@@ -51,7 +51,7 @@ For mixed current positions, pass the destination for face-up Attack, face-down 
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **511** indexed script(s).
+- Detected in **512** indexed script(s).
 - Search this function in the [Script Explorer](/tools/script-explorer) with `Duel.ChangePosition`.
 
 | Card | ID | Script | Detected Calls |
@@ -80,7 +80,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | First Penguin | `12975671` | [Scripts/c12975671.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c12975671.lua) | 50 |
 | VARefar, the Judge of Ball | `19743887` | [Scripts/c19743887.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c19743887.lua) | 50 |
 | Poissonniere de Nouvelles | `46485778` | [Scripts/c46485778.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c46485778.lua) | 49 |
-| ...and 487 more |  |  |  |
+| ...and 488 more |  |  |  |
 
 ## Script Examples
 

@@ -26,7 +26,7 @@ Returns c's original Attribute from card data, or 0 while c is marked with STATU
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **71** indexed script(s).
+- Detected in **72** indexed script(s).
 - Search this function in the [Script Explorer](/tools/script-explorer) with `Card.GetOriginalAttribute`.
 
 | Card | ID | Script | Detected Calls |
@@ -39,6 +39,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Sudden Thunder Swamp | `23611122` | [Scripts/c23611122.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c23611122.lua) | 53 |
 | Chaos Allure Queen | `29925614` | [Scripts/c29925614.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c29925614.lua) | 53 |
 | Fairy Tail - Wiccat | `27632520` | [Scripts/c27632520.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c27632520.lua) | 52 |
+| Card 24056179 | `24056179` | [Scripts/c24056179.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c24056179.lua) | 52 |
 | Chaofeng, Phantom of the Yang Zing | `19048328` | [Scripts/c19048328.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c19048328.lua) | 51 |
 | Hyper-Rank-Up-Magic Ultimate Force | `87818869` | [Scripts/c87818869.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c87818869.lua) | 51 |
 | Argostars - Giantslaying | `30964246` | [Scripts/c30964246.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c30964246.lua) | 51 |
@@ -54,8 +55,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Chaos Angel | `22850702` | [Scripts/c22850702.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c22850702.lua) | 47 |
 | Crystal Aegis | `58371671` | [Scripts/c58371671.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c58371671.lua) | 47 |
 | Simorgh Sky Battle | `57823578` | [Scripts/c57823578.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c57823578.lua) | 46 |
-| Elemental Training | `11167052` | [Scripts/c11167052.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c11167052.lua) | 46 |
-| ...and 47 more |  |  |  |
+| ...and 48 more |  |  |  |
 
 ## Script Examples
 

@@ -28,7 +28,7 @@ Registers single-card merged delayed event listeners for one event or a table of
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **33** indexed script(s).
+- Detected in **34** indexed script(s).
 - Search this function in the [Script Explorer](/tools/script-explorer) with `Auxiliary.RegisterMergedDelayedEvent_ToSingleCard`.
 
 | Card | ID | Script | Detected Calls |
@@ -36,6 +36,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | [Astrograph Sorcerer, the Star Magician](/examples/cards/48171151) | `48171151` | [Scripts/c48171151.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c48171151.lua) | 80 |
 | Starving Venom Wing Dragon | `5148778` | [Scripts/c5148778.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c5148778.lua) | 60 |
 | Number 38: Hope Harbinger Dragon Titanic Galaxy | `63767246` | [Scripts/c63767246.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c63767246.lua) | 56 |
+| Unchained Soul Rage Abominator | `21419436` | [Scripts/c21419436.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c21419436.lua) | 53 |
 | Weaver of Fairy Tails | `78021082` | [Scripts/c78021082.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c78021082.lua) | 53 |
 | Sudden Thunder Swamp | `23611122` | [Scripts/c23611122.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c23611122.lua) | 53 |
 | Shadow Severing Strike | `57232301` | [Scripts/c57232301.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c57232301.lua) | 52 |
@@ -56,8 +57,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | T.G. Glaive Blaster | `95973569` | [Scripts/c95973569.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c95973569.lua) | 46 |
 | Lycoris Lilyreaper | `81916745` | [Scripts/c81916745.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c81916745.lua) | 44 |
 | Lunalight Gold Leo | `8379983` | [Scripts/c8379983.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c8379983.lua) | 44 |
-| Ebisu Shinsen Matsuri | `94384774` | [Scripts/c94384774.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c94384774.lua) | 43 |
-| ...and 9 more |  |  |  |
+| ...and 10 more |  |  |  |
 
 ## Script Examples
 

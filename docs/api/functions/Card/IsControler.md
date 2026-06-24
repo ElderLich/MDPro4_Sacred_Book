@@ -27,7 +27,7 @@ Checks whether c's current controller is controler.
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **4889** indexed script(s).
+- Detected in **4898** indexed script(s).
 - Search this function in the [Script Explorer](/tools/script-explorer) with `Card.IsControler`.
 
 | Card | ID | Script | Detected Calls |
@@ -56,7 +56,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | [Predaplant Bal Teah](/examples/cards/66787942) | `66787942` | [Scripts/c66787942.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c66787942.lua) | 64 |
 | [Teleport Fusion](/examples/cards/36494597) | `36494597` | [Scripts/c36494597.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c36494597.lua) | 64 |
 | [Graydle Split](/examples/cards/75361204) | `75361204` | [Scripts/c75361204.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c75361204.lua) | 64 |
-| ...and 4865 more |  |  |  |
+| ...and 4874 more |  |  |  |
 
 ## Script Examples
 

@@ -27,7 +27,7 @@ Checks whether c's previous location included location.
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **1031** indexed script(s).
+- Detected in **1036** indexed script(s).
 - Search this function in the [Script Explorer](/tools/script-explorer) with `Card.IsPreviousLocation`.
 
 | Card | ID | Script | Detected Calls |
@@ -56,7 +56,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Magikey Dragon - Andrabime | `71159974` | [Scripts/c71159974.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c71159974.lua) | 59 |
 | Performapal Celestial Magician | `58092907` | [Scripts/c58092907.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c58092907.lua) | 58 |
 | Cyberse Reminder | `56337500` | [Scripts/c56337500.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c56337500.lua) | 58 |
-| ...and 1007 more |  |  |  |
+| ...and 1012 more |  |  |  |
 
 ## Script Examples
 

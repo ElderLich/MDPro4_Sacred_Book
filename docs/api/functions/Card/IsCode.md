@@ -41,7 +41,7 @@ This checks the card's current code and alternate code, so copied or changed-cod
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **2963** indexed script(s).
+- Detected in **2973** indexed script(s).
 - Search this function in the [Script Explorer](/tools/script-explorer) with `Card.IsCode`.
 
 | Card | ID | Script | Detected Calls |
@@ -70,7 +70,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | [Chimera Fusion](/examples/cards/63136489) | `63136489` | [Scripts/c63136489.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c63136489.lua) | 62 |
 | [Tellusion the Magna Warrior](/examples/cards/24431911) | `24431911` | [Scripts/c24431911.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c24431911.lua) | 62 |
 | [Shooting Majestic Star Dragon](/examples/cards/40939228) | `40939228` | [Scripts/c40939228.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c40939228.lua) | 62 |
-| ...and 2939 more |  |  |  |
+| ...and 2949 more |  |  |  |
 
 ## Script Examples
 

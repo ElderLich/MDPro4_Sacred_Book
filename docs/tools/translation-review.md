@@ -4,8 +4,8 @@ This queue tracks function pages whose English should be reviewed by hand. It is
 
 ## Summary
 
-- Total functions: **998**
-- Functions used by current scripts: **753**
+- Total functions: **1000**
+- Functions used by current scripts: **754**
 - Functions with raw Chinese text in English fields: **0**
 - Functions queued for natural-English review: **0**
 
@@ -13,7 +13,7 @@ This queue tracks function pages whose English should be reviewed by hand. It is
 
 | Status | Count |
 | --- | ---: |
-| `translated_exact` | 998 |
+| `translated_exact` | 1000 |
 
 ## Priority Review Queue
 

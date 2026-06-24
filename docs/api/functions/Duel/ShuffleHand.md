@@ -22,7 +22,7 @@ Shuffles player's hand and resets shuffle-check state.
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **502** indexed script(s).
+- Detected in **507** indexed script(s).
 - Search this function in the [Script Explorer](/tools/script-explorer) with `Duel.ShuffleHand`.
 
 | Card | ID | Script | Detected Calls |
@@ -51,7 +51,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Magellanica, the Deep Sea City | `26534688` | [Scripts/c26534688.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c26534688.lua) | 56 |
 | Flower Cardian Moonflowerviewing | `33541430` | [Scripts/c33541430.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c33541430.lua) | 56 |
 | R.B. Lambda Cannon | `81794107` | [Scripts/c81794107.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c81794107.lua) | 56 |
-| ...and 478 more |  |  |  |
+| ...and 483 more |  |  |  |
 
 ## Script Examples
 

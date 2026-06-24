@@ -27,7 +27,7 @@ Returns c's current card code and, when present, its secondary code.
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **569** indexed script(s).
+- Detected in **576** indexed script(s).
 - Search this function in the [Script Explorer](/tools/script-explorer) with `Card.GetCode`.
 
 | Card | ID | Script | Detected Calls |
@@ -56,7 +56,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Ojamassimilation | `2390019` | [Scripts/c2390019.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c2390019.lua) | 59 |
 | Relinquished Fusion | `78063197` | [Scripts/c78063197.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c78063197.lua) | 59 |
 | Magical Hats | `81210420` | [Scripts/c81210420.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c81210420.lua) | 59 |
-| ...and 545 more |  |  |  |
+| ...and 552 more |  |  |  |
 
 ## Script Examples
 
