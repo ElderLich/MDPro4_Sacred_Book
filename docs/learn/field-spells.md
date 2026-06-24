@@ -80,6 +80,18 @@ Local `c1003840.lua` is a compact example: its activation effect is plain, then
 it registers an Ignition Effect and a field Trigger Effect with
 `SetRange(LOCATION_FZONE)`.
 
+## The Card Providing The Effect Decides The Range
+
+`LOCATION_FZONE` belongs on effects whose handler is the Field Spell. If an
+Equip Spell, monster, or Trap has an effect that cares about a Field Spell, that
+effect still uses the handler's own location.
+
+Local `c11881272.lua` is a good crossing example. The Equip Spell has
+`EFFECT_TYPE_EQUIP` bonuses and also a Battle Phase trigger that can activate a
+Field Spell from the hand or Deck. That trigger uses `SetRange(LOCATION_SZONE)`
+because the handler is still the Equip Spell, not the Field Spell it will move
+later.
+
 ## Activating Or Placing A Field Spell From The Deck
 
 Some card effects place or activate a Field Spell from the Deck. Local scripts
@@ -120,6 +132,21 @@ activatable, the existing Field Spell is handled by rule, and
 `Duel.MoveToField` uses `LOCATION_FZONE`. The numeric event in this pattern is
 part of existing local card-script handling for activating a Spell/Trap through
 another effect; do not invent a new number for beginner scripts.
+
+## Activate vs Place
+
+Not every script that moves a Field Spell to the Field Zone activates that Field
+Spell's own activation effect.
+
+| Shape | Local pattern | What to copy |
+| --- | --- | --- |
+| Activate a Field Spell through another effect | `GetActivateEffect`, `IsActivatable`, `MoveToField`, `UseCountLimit`, optional activation cost, then `Duel.RaiseEvent` | Copy from a matching local script such as `c1050355.lua`, `c11881272.lua`, or `c97970833.lua`. |
+| Place a Field Spell face-up without activating it | Choose a Field Spell that can legally be placed, `MoveToField`, then add any temporary suppression or counter handling required by the card text | Copy from a matching local script such as `c97254001.lua`. |
+
+The second shape should not invent an activation event just because
+`Duel.MoveToField` was used. Local `c97254001.lua` places a Field Spell, adds a
+temporary `EFFECT_CANNOT_TRIGGER`, and transfers counters; it does not call the
+new card's activation cost or `Duel.RaiseEvent`.
 
 ## Replacing The Existing Field Spell
 
@@ -177,7 +204,9 @@ keep the two concerns separate when reading it.
 | Mistake | Safer pattern |
 | --- | --- |
 | Registering later Field Spell effects with `SetRange(LOCATION_SZONE)`. | Use `LOCATION_FZONE` unless you are deliberately writing raw Spell & Trap Zone sequence logic. |
+| Giving an Equip Spell or monster effect `SetRange(LOCATION_FZONE)` because it places a Field Spell. | Use the handler's real location; only the Field Spell's own effects use `LOCATION_FZONE`. |
 | Placing a Field Spell from the Deck without checking its activation effect. | Use `c:GetActivateEffect()` and `te:IsActivatable(...)` before moving it. |
+| Calling `UseCountLimit` and `Duel.RaiseEvent` on a card that was only placed face-up. | Reserve that advanced sequence for effects that actually activate the Field Spell's own activation effect. |
 | Forgetting the existing Field Spell. | Read it with `Duel.GetFieldCard(tp,LOCATION_FZONE,0)` and send it by rule when the local pattern requires explicit replacement. |
 | Treating a Field Spell like an Equip Card. | Field Spells do not use `Duel.Equip` or `EFFECT_EQUIP_LIMIT`; they are Field Zone cards with effects in `LOCATION_FZONE`. |
 | Using raw sequence `5` everywhere. | Prefer `LOCATION_FZONE`; reserve sequence `5` for zone/sequence lessons. |

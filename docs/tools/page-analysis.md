@@ -414,11 +414,35 @@ Several details were verified directly against local MDPro3/YGOPro sources:
   Zone `Duel.MoveToField`, and Hyper Psychic Blaster/Assault Mode
   (`c37169670.lua`) for a stepped damage/recovery batch finished by
   `Duel.RDComplete()`.
+- The continuous-effect refinement was checked against local scripts,
+  generated Effect API pages, and `constant.lua`. Banner of Courage
+  (`c10012614.lua`) covers a simple face-up Spell field stat effect; Gachi
+  Gachi Gantetsu (`c10002346.lua`) covers dynamic `SetValue` plus a continuous
+  destroy-replacement watcher; Prankscale (`c10282757.lua`) covers temporary
+  field stat and attack restrictions registered during resolution; Salamangreat
+  Burst Gryphon (`c10140443.lua`) covers a temporary player-target Special
+  Summon restriction; and Slifer the Sky Dragon (`c10000020.lua`) covers
+  affected-card/controller-derived stat values and `EFFECT_SET_*` style
+  temporary stat changes.
+- The Equip and Field Spell follow-up was checked against local
+  `utility.lua`, `constant.lua`, and scripts. Crystal Release (`c10004783.lua`)
+  covers the inline Equip Spell pattern and Continuous Spell placement;
+  Favorite Hero (`c11881272.lua`) covers an Equip Spell that activates a Field
+  Spell while its own trigger remains in the Spell & Trap Zone; Fleur de
+  Fleuret (`c10204849.lua`) covers Summon-then-equip flow and temporary equip
+  limits; Sacred Noble Knight of King Artorigus (`c10613952.lua`) covers
+  stepped `Duel.Equip(..., true)` plus `Duel.EquipComplete()`; Charles'
+  Saga (`c11802691.lua`) covers `CheckEquipTarget`, `CheckUniqueOnField`, and
+  `IsForbidden` prechecks; Last Resort (`c97970833.lua`) covers activating a
+  Field Spell from the Deck; and Summer (`c97254001.lua`) covers placing a
+  Field Spell without activating it.
 
 ## Quality Pass Log
 
 | Date | Downloaded page cluster | Sacred Book updates |
 | --- | --- | --- |
+| 2026-06-24 | Equip and Field Spell follow-up | Refined [Equip Spells and Equip Cards](/learn/equip-spells) with activation target-vs-equip-limit guidance, nonstandard equip prechecks, and stepped equip examples. Refined [Field Spells](/learn/field-spells) with handler-range guidance and the activate-vs-place distinction for Field Spells moved through other effects. |
+| 2026-06-24 | Continuous effects and stat modifiers follow-up | Refined [Effects That Apply Continuously](/learn/continuous-effects) with a setter build order, `SetTargetRange` card-vs-player modes, and a quick diagnosis table. Refined [Continuous Stat Modifiers](/learn/continuous-stat-modifiers) with `UPDATE`/`SET`/`SET_FINAL` stat-code guidance and value-callback player-reference notes. |
 | 2026-06-24 | Movement functions and LP recovery/damage follow-up | Refined [Functions That Move Cards Across Locations](/learn/moving-cards) with destination-vs-field movement families, zone/field-placement legality checks, and temporary banish return handling. Refined [LP Recovery and Effect Damage](/learn/lp-recovery-and-damage) with a local mixed damage/recovery stepped batch example and clearer sequential-vs-stepped guidance. |
 | 2026-06-24 | Filters, single-filter selection/targeting, and all-Group actions | Refined [Filters, Card Objects, and Group Objects](/learn/filters-and-groups) with a pure-filter rule, and expanded [Methods for Affecting Cards](/learn/affecting-cards) with local Black Hole and Mirror Force templates for non-targeting all-cards-in-a-Group operations. |
 | 2026-06-24 | Effect setup and activation-flow refinement | Refined [Creation, Building, and Registration of an Effect Object](/learn/effect-object), [Cost, Target, And Operation Lifecycle](/learn/cost-target-operation-lifecycle), [Activation Legality](/learn/activation-legality), and [Effects That Apply Continuously](/learn/continuous-effects) with a local-verified `SetType`/`SetCode` meaning map, callback signature cheat sheet, mandatory-part versus optional-follow-up legality notes, and continuous `SetTarget`/`SetValue` callback roles. |

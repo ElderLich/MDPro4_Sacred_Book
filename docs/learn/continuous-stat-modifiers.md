@@ -25,6 +25,21 @@ The value can be a fixed number or a callback. Use a callback when the amount
 depends on current cards, Levels, counters, materials, or another changing
 state.
 
+## Pick The Stat Code
+
+The effect code tells the engine what the value means.
+
+| Text shape | Common code family | What the value means |
+| --- | --- | --- |
+| "gains/loses 500 ATK" | `EFFECT_UPDATE_ATTACK` or `EFFECT_UPDATE_DEFENSE` | Add or subtract from the current stat. |
+| "ATK becomes 0" as an always-on rule | `EFFECT_SET_ATTACK` or `EFFECT_SET_DEFENSE` | Set the stat while the continuous rule applies. |
+| "ATK becomes 0 until..." from a resolving effect | `EFFECT_SET_ATTACK_FINAL` or `EFFECT_SET_DEFENSE_FINAL` | Set a final temporary value with the reset used by the resolving effect. |
+
+Do not use `EFFECT_UPDATE_ATTACK` for every ATK-related text. If the card says a
+stat "becomes" a value, look for a matching local script and copy the set-style
+code family and reset pattern. If the card says it gains or loses an amount,
+`EFFECT_UPDATE_ATTACK` or `EFFECT_UPDATE_DEFENSE` is usually the right family.
+
 ## Handler-Only Modifier
 
 Use `EFFECT_TYPE_SINGLE` when the card modifies itself.
@@ -88,6 +103,24 @@ end
 Use the affected card `c` when the value depends on the card receiving the
 modifier. Use `e:GetHandler()` when the value depends on the card providing the
 modifier.
+
+## Value Functions Do Not Receive `tp`
+
+Continuous value callbacks usually receive `(e,c)`, not the activated-effect
+callback list. If the value needs a player as a reference, derive it from the
+effect or the affected card.
+
+```lua
+function s.val(e,c)
+    local tp=e:GetHandlerPlayer()
+    return Duel.GetMatchingGroupCount(s.filter,tp,0,LOCATION_MZONE,nil)*500
+end
+```
+
+Use `e:GetHandlerPlayer()` when the card providing the effect defines the
+reference player. Use `c:GetControler()` when each affected card should use its
+own controller. Local `c10000020.lua` uses `c:GetControler()` in its stat value
+because the amount is based on the affected card's controller's hand.
 
 ## Field Modifier
 
@@ -265,3 +298,5 @@ Useful API pages:
 - [`Effect.SetTarget`](/api/functions/Effect/SetTarget)
 - [`Effect.Clone`](/api/functions/Effect/Clone)
 - [`Card.RegisterEffect`](/api/functions/Card/RegisterEffect)
+- [`Duel.GetMatchingGroupCount`](/api/functions/Duel/GetMatchingGroupCount)
+- [`Effect.GetHandlerPlayer`](/api/functions/Effect/GetHandlerPlayer)

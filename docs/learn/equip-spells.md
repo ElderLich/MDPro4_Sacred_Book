@@ -172,6 +172,27 @@ end
 Use `CheckEquipTarget` when a script is moving an existing Equip Card to a new
 monster or choosing a target for a card that already has equip-limit logic.
 
+## Target Filter vs Equip Limit
+
+The activation target filter and the equip-limit function answer different
+questions.
+
+| Function | When it is checked | Question |
+| --- | --- | --- |
+| Target filter | Activation or selection time | "Can this monster be chosen for this effect right now?" |
+| Equip limit | While the card is equipped | "May this Equip Card remain equipped to this monster?" |
+
+The local `Auxiliary.AddEquipSpellEffect` helper can keep those aligned for a
+normal Equip Spell. It builds the activation target from the filter, registers
+`EFFECT_EQUIP_LIMIT`, and rechecks the limit before `Duel.Equip`.
+
+When the equip flow is unusual, write the checks by hand. Local `c11802691.lua`
+checks the candidate Equip Card with `CheckEquipTarget`, `CheckUniqueOnField`,
+and `IsForbidden` before offering the player a choice between equipping it and
+sending it to the GY. Local `c10204849.lua` registers a temporary equip limit
+only after the target monster is Special Summoned and `Duel.Equip` has been
+called during resolution.
+
 ## `Auxiliary.AddEquipSpellEffect`
 
 The local `utility.lua` helper `Auxiliary.AddEquipSpellEffect` creates a common
@@ -318,14 +339,21 @@ Duel.EquipComplete()
 
 When `is_step` is true, the equip process is split and must be completed with
 `Duel.EquipComplete()`. This is for scripts that need several equip operations
-to finish as one process. Most ordinary Equip Spells call `Duel.Equip` without
-the stepped argument.
+to finish as one process.
+
+Local `c10613952.lua` uses this shape after selecting several cards from the
+GY: it checks the available Spell & Trap Zones, equips each selected card with
+`Duel.Equip(tp,tc,c,true,true)`, then calls `Duel.EquipComplete()` once after
+the loop. Most ordinary Equip Spells call `Duel.Equip` without the stepped
+argument.
 
 ## Common Pitfalls
 
 | Mistake | Safer pattern |
 | --- | --- |
 | Equipping without checking the Spell & Trap Zone or target relation. | Check activation legality, then recheck `IsRelateToEffect` in operation. |
+| Letting the target filter and equip limit drift apart accidentally. | Keep them aligned through `Auxiliary.AddEquipSpellEffect`, or document the reason and recheck the limit before `Duel.Equip`. |
+| Choosing a card to become an Equip Card without zone and field-state checks. | Check `Duel.GetLocationCount`, `CheckUniqueOnField`, `IsForbidden`, and `CheckEquipTarget` when the local pattern does. |
 | Registering only the ATK/DEF bonus. | Also register `EFFECT_EQUIP_LIMIT` when the card needs a legal equipped monster. |
 | Treating an Equip effect as `EFFECT_TYPE_SINGLE`. | Use `EFFECT_TYPE_EQUIP` for effects applied to the equipped monster. |
 | Moving a monster to the Spell & Trap Zone when the card should be equipped. | Use `Duel.Equip` for equip state; use `Duel.MoveToField` for Continuous Spell/Trap state. |
