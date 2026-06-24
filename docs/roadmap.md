@@ -6,6 +6,7 @@ This is the working todo for turning Sacred Book into a complete MDPro3 scriptin
 
 - [x] Publish the VitePress site through GitHub Pages.
 - [x] Add a beginner learning path with MDPro3-focused examples.
+- [x] Improve the home screen as a practical learning portal with a clear Start Learning path.
 - [x] Generate API and constant pages from the Sacred Book data.
 - [x] Generate featured card example pages from `cards.cdb` and `Scripts/`.
 - [x] Add the Script Explorer for searching cards and function usage.
@@ -41,6 +42,7 @@ This is the working todo for turning Sacred Book into a complete MDPro3 scriptin
 - [x] Add a focused chain timing and activation windows guide for prompt masks, Chain responses, Spell Speed, and Damage Step legality.
 - [x] Add a focused selection and Group-handling guide for target selection, resolution choice, subgroup selection, and stored Groups.
 - [x] Add a focused reset flags and duration guide for temporary effects, phase resets, and flag lifetimes.
+- [x] Add a focused common script errors and debugging guide for nil values, legality branches, relation checks, location masks, resets, count limits, negation types, Group lifetime, and code identity checks.
 - [x] Add a hand-written case study for Mind Scan because the script exists locally before the card is present in `cards.cdb`.
 - [ ] Expand the beginner path with small complete card scripts that build up one concept at a time.
 - [x] Analyze every downloaded tutorial page and create an original Sacred Book equivalent for each topic.

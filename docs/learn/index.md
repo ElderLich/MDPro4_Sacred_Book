@@ -173,6 +173,10 @@ back into the generated API reference and live card examples.
     <strong>Count limits</strong>
     <span>How once-per-turn limits, shared count codes, and activity counters work.</span>
   </a>
+  <a class="sacred-card" href="common-script-errors-and-debugging">
+    <strong>Common script errors</strong>
+    <span>Debug nil values, legality branches, target flow, relation checks, resets, count limits, and stored Groups.</span>
+  </a>
 </div>
 
 ## Suggested Order
@@ -220,8 +224,9 @@ back into the generated API reference and live card examples.
 41. Script draw, hand, and Deck movement with [Draw, Hand, And Deck Effects](draw-hand-and-deck-effects).
 42. Track temporary script memory with [Flag effects](flag-effects).
 43. Limit effect usage with [Count limits and once per turn](count-limits).
-44. Apply outcomes through [Methods for affecting cards](affecting-cards).
-45. Use card families through [Archetypes and set codes](archetypes-and-setcodes).
+44. Debug common failure modes with [Common Script Errors And Debugging](common-script-errors-and-debugging).
+45. Apply outcomes through [Methods for affecting cards](affecting-cards).
+46. Use card families through [Archetypes and set codes](archetypes-and-setcodes).
 
 ## Tutorial Equivalents
 

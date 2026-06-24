@@ -25,6 +25,7 @@ simulator-specific helper names and examples with local MDPro3/YGOPro behavior.
 | EFFECT_TYPE constants and templates | [EFFECT_TYPE constants and templates](/learn/effect-types) covers common type flags, no-op Spell/Trap activation, activated types, Flip Effects, quick-effect hints, combinations, material effects, and grant effects. |
 | Functions for conditions, costs, activation procedures, and resolution | [Conditions, costs, activation procedures, and resolution](/learn/effect-callbacks) plus [Cost, target, and operation lifecycle](/learn/cost-target-operation-lifecycle) cover logical operators, `not` grouping, cost sections, target variants, non-activated targets, values, and resolution rechecks. |
 | Activation legality | [Activation legality](/learn/activation-legality) covers `chk==0`, implicit action requirements, optional effects, mandatory effects, `chkc`, and resolution rechecks. |
+| Common script errors and debugging | [Common Script Errors And Debugging](/learn/common-script-errors-and-debugging) collects frequent local-script mistakes: nil values, `chk==0`, cost/target/operation desync, targeting versus selecting, relation checks, location masks, `IsFaceupEx`, count limits, resets, continuous ranges, negation types, Group lifetime, and code identity checks. |
 | Chain timing and activation windows | [Chain Timing And Activation Windows](/learn/chain-timing-and-activation-windows) covers prompt masks, `EVENT_FREE_CHAIN`, `EVENT_CHAINING`, Spell Speed, Damage Step flags, `Duel.CheckTiming`, and Chain-solving watcher effects. |
 | Activated effects | [Activated effects](/learn/activated-effects) covers Chain Link flow, common activated types, optional and mandatory triggers, Spell/Trap activation, and the activation/resolution split. |
 | Filters, Card objects, and Group objects | [Filters, Card Objects, and Group Objects](/learn/filters-and-groups) covers filter arguments, matching vs targeting, Groups, filtering, selecting, iterating, membership, and counts. |
@@ -61,6 +62,7 @@ of pouring every detail into one page. The broad navigation shape should be:
 | Chain timing, prompt windows, and response legality | [Chain Timing And Activation Windows](/learn/chain-timing-and-activation-windows) now separates hint timing from legality, explains `EVENT_FREE_CHAIN` versus `EVENT_CHAINING`, records local Spell Speed behavior, and shows Damage Step response patterns. |
 | Selection helpers and Group/Card handling | [Filters, Card Objects, and Group Objects](/learn/filters-and-groups) covers the basic filter and Group model; [Selection And Group Handling](/learn/selection-and-group-handling) now covers official targets, resolution choices, selecting from existing Groups, subgroup checks, `SelectUnselect`, Group lifetime, iteration, and rechecks before acting. |
 | Reset flags, temporary effects, and duration | [Reset Flags And Effect Duration](/learn/reset-flags-and-duration) now centralizes `Effect.SetReset`, phase resets, event resets, `RESETS_STANDARD`, reset counts, player restrictions, card-bound temporary effects, flag lifetimes, and manual reset APIs. |
+| Debugging and common mistakes | [Common Script Errors And Debugging](/learn/common-script-errors-and-debugging) now gives a focused troubleshooting pass that links existing lessons together without turning them into one large appendix. |
 
 ## Forever Pass Rule
 
@@ -327,11 +329,22 @@ Several details were verified directly against local MDPro3/YGOPro sources:
   (`c97268402.lua`), Lava Golem (`c102380.lua`), Truth Reinforce
   (`c10118318.lua`), Dragon Master Magia (`c12381100.lua`), and the draw-skip
   option in `c967928.lua`.
+- Common debugging patterns were checked against local scripts and generated API
+  pages. Book of Moon (`c14087893.lua`) is used as the target/relation baseline;
+  Rescue Hedgehog (`c99742859.lua`) and X-Saber Perina (`c9978697.lua`) cover
+  stored Groups, End Phase cleanup, and `IsRelateToChain`; Holactie
+  (`c10000040.lua`) covers `IsOriginalCodeRule` and procedure Group lifetime;
+  Cyber Dragon Infinity (`c10443957.lua`), Chow Chow Chan (`c99902789.lua`),
+  and Dark-Imprisoning Mirror (`c99735427.lua`) cover activation negation,
+  resolving-effect negation, and lingering disable effects; Banner of Courage
+  (`c10012614.lua`) covers `SetRange` plus `SetTargetRange`; Sphere Mode
+  (`c10000080.lua`) covers reset counts and guarded `GetFirst()` results.
 
 ## Quality Pass Log
 
 | Date | Downloaded page cluster | Sacred Book updates |
 | --- | --- | --- |
+| 2026-06-24 | Home and debugging entry point | Improved [Home](/) as a compact learning portal with a clearer Start Learning path and stronger Learn/API/Examples/Script Explorer/Roadmap cards. Added [Common Script Errors And Debugging](/learn/common-script-errors-and-debugging) as a focused troubleshooting guide backed by local scripts and generated API links. |
 | 2026-06-24 | Chain timing and activation windows | Added [Chain Timing And Activation Windows](/learn/chain-timing-and-activation-windows) as a focused guide for prompt masks, free-chain windows, Chain responses, Spell Speed, Damage Step and damage calculation flags, opponent-side prompts, `Duel.CheckTiming`, `Duel.IsChainNegatable`, and Chain-solving watchers. |
 | 2026-06-24 | Local script-source refresh and new utility/card behavior | Imported the local `ygopro-scripts` changes from `d25c0eed5^..06ccc5a99` into `Scripts/` and `Utilities/`. Added function documentation for `Auxiliary.EnableMulcharmyGlobalCheck` and its internal watcher, added reviewed English for `EFFECT_REVEAL_ONFIELD`, and added the [Mind Scan case study](/examples/mind-scan) for the new Continuous Trap reveal/declared-name negation pattern. `EFFECT_REVEAL_ONFIELD` behavior was checked against local `ygopro-core\effect.h`, `card.cpp`, and `effect.cpp`; Mind Scan card facts were supplied from the Yugipedia entry because the card is not yet in local `cards.cdb`. |
 | 2026-06-24 | Reset flags, temporary effects, and duration | Added [Reset Flags And Effect Duration](/learn/reset-flags-and-duration) as a central lifetime guide. It explains card-bound temporary resets, `RESETS_STANDARD`, player/Duel restrictions, phase turn-side flags, reset counts, current-phase pitfalls, flag-effect lifetimes, manual resets, local examples, and API links. |

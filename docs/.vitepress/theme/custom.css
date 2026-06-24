@@ -249,6 +249,113 @@
   font-weight: 700;
 }
 
+.home-start-path {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+  gap: 10px;
+  margin: 18px 0 30px;
+}
+
+.home-start-path a {
+  display: grid;
+  min-height: 116px;
+  align-content: start;
+  gap: 7px;
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 8px;
+  padding: 14px;
+  color: var(--vp-c-text-1);
+  background: var(--vp-c-bg-soft);
+  text-decoration: none !important;
+}
+
+.home-start-path a:hover {
+  border-color: #2f8f83;
+  background: var(--vp-c-bg-alt);
+}
+
+.home-start-path strong {
+  width: max-content;
+  border-radius: 6px;
+  padding: 3px 7px;
+  color: #ffffff;
+  background: #2f8f83;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.home-start-path span {
+  color: var(--vp-c-text-1);
+  font-size: 16px;
+  font-weight: 800;
+}
+
+.home-start-path small {
+  color: var(--vp-c-text-2);
+  line-height: 1.5;
+}
+
+.home-portal-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 12px;
+  margin: 20px 0 30px;
+}
+
+.home-portal-card {
+  display: flex;
+  min-height: 172px;
+  flex-direction: column;
+  gap: 9px;
+  border: 1px solid var(--vp-c-divider);
+  border-top: 4px solid #2f8f83;
+  border-radius: 8px;
+  padding: 15px;
+  color: var(--vp-c-text-1);
+  background: var(--vp-c-bg-soft);
+  text-decoration: none !important;
+}
+
+.home-portal-card:nth-child(2) {
+  border-top-color: #b66f2a;
+}
+
+.home-portal-card:nth-child(3) {
+  border-top-color: #6f7f2a;
+}
+
+.home-portal-card:nth-child(4) {
+  border-top-color: #2f6f8f;
+}
+
+.home-portal-card:nth-child(5) {
+  border-top-color: #8a5a2b;
+}
+
+.home-portal-card:hover {
+  border-color: var(--vp-c-brand-1);
+  border-top-color: var(--vp-c-brand-1);
+  background: var(--vp-c-bg-alt);
+}
+
+.home-portal-card small {
+  color: var(--vp-c-text-2);
+  font-size: 12px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.home-portal-card strong {
+  color: var(--vp-c-text-1);
+  font-size: 20px;
+}
+
+.home-portal-card span {
+  color: var(--vp-c-text-2);
+  line-height: 1.55;
+  overflow-wrap: anywhere;
+}
+
 @media (max-width: 760px) {
   .VPDoc .content-container,
   .VPDoc.has-aside .content-container {
@@ -265,7 +372,9 @@
   }
 
   .sacred-home-hero,
-  .home-route {
+  .home-route,
+  .home-start-path,
+  .home-portal-grid {
     grid-template-columns: 1fr;
   }
 

@@ -74,6 +74,7 @@ export default defineConfig({
             { text: 'Draw, Hand, and Deck Effects', link: '/learn/draw-hand-and-deck-effects' },
             { text: 'Flag Effects', link: '/learn/flag-effects' },
             { text: 'Count Limits', link: '/learn/count-limits' },
+            { text: 'Common Script Errors', link: '/learn/common-script-errors-and-debugging' },
             { text: 'Affecting Cards', link: '/learn/affecting-cards' },
             { text: 'Archetypes and Set Codes', link: '/learn/archetypes-and-setcodes' },
           ],
