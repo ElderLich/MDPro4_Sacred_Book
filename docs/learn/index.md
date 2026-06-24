@@ -121,6 +121,18 @@ back into the generated API reference and live card examples.
     <strong>LP and damage</strong>
     <span>Script effect damage, recovery, target player data, and stepped LP changes.</span>
   </a>
+  <a class="sacred-card" href="player-targeted-effects">
+    <strong>Player-targeted effects</strong>
+    <span>Store target players and parameters, then read Chain data at resolution.</span>
+  </a>
+  <a class="sacred-card" href="player-restrictions">
+    <strong>Player restrictions</strong>
+    <span>Script player locks, oath restrictions, action limits, and phase skips.</span>
+  </a>
+  <a class="sacred-card" href="draw-hand-and-deck-effects">
+    <strong>Draw, hand, and Deck effects</strong>
+    <span>Draw, discard, reveal, sort, shuffle, and send cards from the top of the Deck safely.</span>
+  </a>
   <a class="sacred-card" href="flag-effects">
     <strong>Flag effects</strong>
     <span>How scripts remember player or card state with RegisterFlagEffect and GetFlagEffect.</span>
@@ -164,10 +176,13 @@ back into the generated API reference and live card examples.
 29. Build visible modifiers with [Continuous stat modifiers](continuous-stat-modifiers).
 30. Script Equip Cards with [Equip Spells and Equip Cards](equip-spells).
 31. Script LP changes with [LP Recovery and Effect Damage](lp-recovery-and-damage).
-32. Track temporary script memory with [Flag effects](flag-effects).
-33. Limit effect usage with [Count limits and once per turn](count-limits).
-34. Apply outcomes through [Methods for affecting cards](affecting-cards).
-35. Use card families through [Archetypes and set codes](archetypes-and-setcodes).
+32. Store player Chain data with [Player-Targeted Effects](player-targeted-effects).
+33. Apply player locks with [Player Restrictions](player-restrictions).
+34. Script draw, hand, and Deck movement with [Draw, Hand, And Deck Effects](draw-hand-and-deck-effects).
+35. Track temporary script memory with [Flag effects](flag-effects).
+36. Limit effect usage with [Count limits and once per turn](count-limits).
+37. Apply outcomes through [Methods for affecting cards](affecting-cards).
+38. Use card families through [Archetypes and set codes](archetypes-and-setcodes).
 
 ## Tutorial Equivalents
 

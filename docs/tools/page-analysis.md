@@ -55,7 +55,7 @@ of pouring every detail into one page. The broad navigation shape should be:
 | Spell Cards: Normal, Continuous, Equip, Field, Quick-Play, Ritual | [Spell Card Patterns](/learn/spell-card-patterns) now covers Normal, Continuous, Quick-Play, and Ritual Spell activation shapes; [Equip Spells and Equip Cards](/learn/equip-spells), [Field Spells](/learn/field-spells), and [Ritual Procedure Guide](/learn/ritual-procedure) are focused child pages. |
 | Trap Cards: Normal, Continuous, Counter | [Trap Card Patterns](/learn/trap-card-patterns) now separates Normal Trap activation, Continuous Trap face-up effects, hand/set-turn exceptions, and Counter Trap/Spell Speed 3 patterns. |
 | Effects that affect cards | Expand [Methods for Affecting Cards](/learn/affecting-cards) into focused child pages for stat changes, immunity/negation, control changes, position changes, equip relationships, counters, and location movement. [Counters](/learn/counters) now covers visible card counters as one focused child page. |
-| Effects that affect players | Keep LP changes in [LP Recovery and Effect Damage](/learn/lp-recovery-and-damage), then add player restrictions, draw/hand/deck access restrictions, and player-targeted effects as separate pages. |
+| Effects that affect players | [LP Recovery and Effect Damage](/learn/lp-recovery-and-damage), [Player-Targeted Effects](/learn/player-targeted-effects), [Player Restrictions](/learn/player-restrictions), and [Draw, Hand, And Deck Effects](/learn/draw-hand-and-deck-effects) now split player-target data, LP changes, player locks, and draw/hand/Deck patterns into focused pages. |
 
 ## Forever Pass Rule
 
@@ -239,11 +239,31 @@ Several details were verified directly against local MDPro3/YGOPro sources:
   local examples include Yata Mirror (`c1200843.lua`), Kusanagi Sword
   (`c48716139.lua`), Shinobaroness Peacock (`c25415052.lua`), and Shinobird
   Power Spot (`c9553721.lua`).
+- Player-affecting behavior was checked against local `libduel.cpp`,
+  `libeffect.cpp`, `effect.h`, `constant.lua`,
+  `ygopro-scripts-define\def.lua`, and local scripts. `Duel.SetTargetPlayer`,
+  `Duel.SetTargetParam`, `Duel.GetChainInfo`, `Duel.Draw`,
+  `Duel.DiscardHand`, `Duel.DiscardDeck`, `Duel.ConfirmDecktop`,
+  `Duel.GetDecktopGroup`, `Duel.SortDecktop`, `Duel.ShuffleDeck`, and
+  `Duel.ShuffleHand` are local bindings. Player restrictions were checked
+  through `EFFECT_FLAG_PLAYER_TARGET`, `Effect.SetTargetRange`,
+  `Duel.RegisterEffect`, `EFFECT_CANNOT_DRAW`, `EFFECT_CANNOT_SUMMON`,
+  `EFFECT_CANNOT_SPECIAL_SUMMON`, `EFFECT_CANNOT_ACTIVATE`,
+  `EFFECT_CANNOT_BP`, `EFFECT_SKIP_DP`, `EFFECT_CANNOT_TO_HAND`, and
+  `EFFECT_CANNOT_DISCARD_HAND`. Local examples checked include Pot of Greed
+  (`c55144522.lua`), Masked Sorcerer (`c10189126.lua`), Lava Golem
+  (`c102380.lua`), Truth Reinforce (`c10118318.lua`), Ancient Gear Beast
+  (`c10509340.lua`), Protector of the Sanctuary (`c24221739.lua`), Greed
+  Goblin (`c425934.lua`), Deck Lockdown (`c1149109.lua`), Offerings to the
+  Doomed (`c19230407.lua`), That Grass Looks Greener (`c11110587.lua`),
+  Sunlight Unicorn (`c10321588.lua`), Sylvan Sprout (`c10753491.lua`), and
+  Junoldo the Shadespirit Power Patron (`c10266279.lua`).
 
 ## Quality Pass Log
 
 | Date | Downloaded page cluster | Sacred Book updates |
 | --- | --- | --- |
+| 2026-06-24 | Effects that affect players expansion | Added [Player-Targeted Effects](/learn/player-targeted-effects), [Player Restrictions](/learn/player-restrictions), and [Draw, Hand, And Deck Effects](/learn/draw-hand-and-deck-effects) as focused player-effect guides. These split target-player Chain data, player/action locks, draw legality, hand discard, Deck-top reveal/sort, and Deck-to-GY patterns with local examples and API links. |
 | 2026-06-23 | Monster subtype expansion | Added focused [Gemini Monsters](/learn/gemini-monsters), [Toon Monsters](/learn/toon-monsters), [Union Monsters](/learn/union-monsters), and [Spirit Monsters](/learn/spirit-monsters) guides instead of folding subtype rules into a broad monster page. Each guide uses local constants, helper behavior, API links, and examples from local scripts. |
 | 2026-06-23 | Activation lifecycle: activated effects, activation legality, and condition/cost/target/operation callbacks | Expanded [Conditions, Costs, Activation Procedures, and Resolution](/learn/effect-callbacks), [Activation Legality](/learn/activation-legality), [Activated Effects](/learn/activated-effects), and [Cost, Target, And Operation Lifecycle](/learn/cost-target-operation-lifecycle) with event-condition signatures, Damage Step legality, Quick Effect negation checks, activation restrictions, Red-Eyes Fusion and Cyber Dragon Infinity examples, and API links for the referenced functions. |
 | 2026-06-23 | Foundation forever pass: effect objects, filters/groups, movement, continuous effects, stat modifiers, and LP effects | Expanded [Creation, building, and registration of an effect object](/learn/effect-object), [Filters, Card Objects, and Group Objects](/learn/filters-and-groups), [Functions that move cards across locations](/learn/moving-cards), [Effects That Apply Continuously](/learn/continuous-effects), [Continuous stat modifiers](/learn/continuous-stat-modifiers), and [LP Recovery and Effect Damage](/learn/lp-recovery-and-damage) with setter-shape maps, target-range modes, property flags, subgroup selection, movement routing, local dynamic value examples, pure LP activation checks, stepped LP examples, and API links. |
