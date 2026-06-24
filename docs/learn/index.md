@@ -13,6 +13,14 @@ back into the generated API reference and live card examples.
     <strong>Effect objects</strong>
     <span>The practical order for CreateEffect, setters, and RegisterEffect.</span>
   </a>
+  <a class="sacred-card" href="effect-types">
+    <strong>Effect types</strong>
+    <span>Choose activate, ignition, trigger, quick, single, field, equip, and material shapes.</span>
+  </a>
+  <a class="sacred-card" href="categories-properties-and-hints">
+    <strong>Categories and properties</strong>
+    <span>Set categories, operation info, target flags, Damage Step flags, and prompt timing.</span>
+  </a>
   <a class="sacred-card" href="effect-callbacks">
     <strong>Callbacks</strong>
     <span>How condition, cost, target, and operation functions divide work.</span>
@@ -160,44 +168,45 @@ back into the generated API reference and live card examples.
 1. Start with [Structure of a card script](script-structure).
 2. Build an effect in [Creation, building, and registration of an effect object](effect-object).
 3. Choose timing and shape in [EFFECT_TYPE constants and templates](effect-types).
-4. Write callbacks with [Conditions, costs, activation procedures, and resolution](effect-callbacks).
-5. Understand Chain Links with [Activated effects](activated-effects).
-6. Check legality with [Activation legality](activation-legality).
-7. Split Spell activations with [Spell Card Patterns](spell-card-patterns).
-8. Split Trap timing with [Trap Card Patterns](trap-card-patterns).
-9. Learn Ritual Summon flow with [Ritual Procedure Guide](ritual-procedure).
-10. Learn Fusion Material and Summon flow with [Fusion Procedure Guide](fusion-procedure).
-11. Learn Synchro procedures and effect-driven Synchro Summons with [Synchro Procedure Guide](synchro-procedure).
-12. Learn overlaying and detaching with [Xyz Procedure Guide](xyz-procedure).
-13. Learn Link Rating, materials, and linked zones with [Link Procedure Guide](link-procedure).
-14. Learn Pendulum Zones, scales, and Pendulum Summon flow with [Pendulum Procedure Guide](pendulum-procedure).
-15. Handle revive limits and self-Summon procedures with [Special Summon-only Monster Guide](special-summon-only-monsters).
-16. Learn local Gemini/Dual state with [Gemini Monsters](gemini-monsters).
-17. Script Toon type and Toon World patterns with [Toon Monsters](toon-monsters).
-18. Equip and unequip monsters with [Union Monsters](union-monsters).
-19. Register End Phase return behavior with [Spirit Monsters](spirit-monsters).
-20. Handle Tribute Summon material value with [Tribute Summon Materials](tribute-summon-materials).
-21. Add and spend visible card counters with [Counters](counters).
-22. Work with cards and groups through [Filters, Card objects, and Group objects](filters-and-groups).
-23. Move cards correctly with [Functions that move cards across locations](moving-cards).
-24. Negate effects and protect cards with [Negation and Immunity](negation-and-immunity).
-25. Take or swap control with [Control Change](control-change).
-26. Change or lock battle positions with [Battle Position Effects](battle-position-effects).
-27. Place cards and read zones with [Field zones and sequences](field-zones-and-sequences).
-28. Script Field Spell patterns with [Field Spells](field-spells).
-29. Target cards correctly with [Targeting flow](targeting-flow).
-30. Resolve activated effects with [Cost, target, and operation lifecycle](cost-target-operation-lifecycle).
-31. Read always-on behavior through [Continuous effects](continuous-effects).
-32. Build visible modifiers with [Continuous stat modifiers](continuous-stat-modifiers).
-33. Script Equip Cards with [Equip Spells and Equip Cards](equip-spells).
-34. Script LP changes with [LP Recovery and Effect Damage](lp-recovery-and-damage).
-35. Store player Chain data with [Player-Targeted Effects](player-targeted-effects).
-36. Apply player locks with [Player Restrictions](player-restrictions).
-37. Script draw, hand, and Deck movement with [Draw, Hand, And Deck Effects](draw-hand-and-deck-effects).
-38. Track temporary script memory with [Flag effects](flag-effects).
-39. Limit effect usage with [Count limits and once per turn](count-limits).
-40. Apply outcomes through [Methods for affecting cards](affecting-cards).
-41. Use card families through [Archetypes and set codes](archetypes-and-setcodes).
+4. Add metadata with [Categories, Properties, And Hint Timing](categories-properties-and-hints).
+5. Write callbacks with [Conditions, costs, activation procedures, and resolution](effect-callbacks).
+6. Understand Chain Links with [Activated effects](activated-effects).
+7. Check legality with [Activation legality](activation-legality).
+8. Split Spell activations with [Spell Card Patterns](spell-card-patterns).
+9. Split Trap timing with [Trap Card Patterns](trap-card-patterns).
+10. Learn Ritual Summon flow with [Ritual Procedure Guide](ritual-procedure).
+11. Learn Fusion Material and Summon flow with [Fusion Procedure Guide](fusion-procedure).
+12. Learn Synchro procedures and effect-driven Synchro Summons with [Synchro Procedure Guide](synchro-procedure).
+13. Learn overlaying and detaching with [Xyz Procedure Guide](xyz-procedure).
+14. Learn Link Rating, materials, and linked zones with [Link Procedure Guide](link-procedure).
+15. Learn Pendulum Zones, scales, and Pendulum Summon flow with [Pendulum Procedure Guide](pendulum-procedure).
+16. Handle revive limits and self-Summon procedures with [Special Summon-only Monster Guide](special-summon-only-monsters).
+17. Learn local Gemini/Dual state with [Gemini Monsters](gemini-monsters).
+18. Script Toon type and Toon World patterns with [Toon Monsters](toon-monsters).
+19. Equip and unequip monsters with [Union Monsters](union-monsters).
+20. Register End Phase return behavior with [Spirit Monsters](spirit-monsters).
+21. Handle Tribute Summon material value with [Tribute Summon Materials](tribute-summon-materials).
+22. Add and spend visible card counters with [Counters](counters).
+23. Work with cards and groups through [Filters, Card objects, and Group objects](filters-and-groups).
+24. Move cards correctly with [Functions that move cards across locations](moving-cards).
+25. Negate effects and protect cards with [Negation and Immunity](negation-and-immunity).
+26. Take or swap control with [Control Change](control-change).
+27. Change or lock battle positions with [Battle Position Effects](battle-position-effects).
+28. Place cards and read zones with [Field zones and sequences](field-zones-and-sequences).
+29. Script Field Spell patterns with [Field Spells](field-spells).
+30. Target cards correctly with [Targeting flow](targeting-flow).
+31. Resolve activated effects with [Cost, target, and operation lifecycle](cost-target-operation-lifecycle).
+32. Read always-on behavior through [Continuous effects](continuous-effects).
+33. Build visible modifiers with [Continuous stat modifiers](continuous-stat-modifiers).
+34. Script Equip Cards with [Equip Spells and Equip Cards](equip-spells).
+35. Script LP changes with [LP Recovery and Effect Damage](lp-recovery-and-damage).
+36. Store player Chain data with [Player-Targeted Effects](player-targeted-effects).
+37. Apply player locks with [Player Restrictions](player-restrictions).
+38. Script draw, hand, and Deck movement with [Draw, Hand, And Deck Effects](draw-hand-and-deck-effects).
+39. Track temporary script memory with [Flag effects](flag-effects).
+40. Limit effect usage with [Count limits and once per turn](count-limits).
+41. Apply outcomes through [Methods for affecting cards](affecting-cards).
+42. Use card families through [Archetypes and set codes](archetypes-and-setcodes).
 
 ## Tutorial Equivalents
 

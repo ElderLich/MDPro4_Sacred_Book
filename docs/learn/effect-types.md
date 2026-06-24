@@ -64,6 +64,10 @@ e1:SetCode(EVENT_FREE_CHAIN)
 e1:SetHintTiming(0,TIMINGS_CHECK_MONSTER+TIMING_MAIN_END)
 ```
 
+See [Categories, Properties, And Hint Timing](categories-properties-and-hints)
+for the deeper metadata layer: category flags, operation info, target flags,
+Damage Step properties, and client prompts.
+
 ## Common Combinations
 
 Effect types are bit flags. Scripts combine them when one effect needs both a

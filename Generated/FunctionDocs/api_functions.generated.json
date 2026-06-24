@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-06-24T05:05:12+00:00",
+    "generated_at": "2026-06-24T05:26:04+00:00",
     "workspace": "D:\\Programs\\GitHub\\MDPro3_Sacred_Book",
     "dataeditorx_data": "D:\\Programs\\GitHub\\DataEditorX\\DataEditorX\\data",
     "mdpro3_locales": "D:\\Programs\\GitHub\\MDPro3_Data\\Data\\locales",
@@ -20236,45 +20236,53 @@
           "name": "chainc",
           "type": "int",
           "optional": false,
-          "description": ""
+          "description": "Chain Link number to inspect. Use 0 for the current Chain Link.",
+          "description_zh": "要检查的连锁编号。0表示当前连锁。"
         },
         {
           "name": "category",
           "type": "int",
           "optional": false,
-          "description": ""
+          "description": "CATEGORY_* flag whose operation info should be read.",
+          "description_zh": "要读取其操作信息的CATEGORY_*分类。"
         }
       ],
       "returns": [
         {
           "type": "bool",
-          "description": ""
+          "description": "true if operation info for category exists; false if not.",
+          "description_zh": "存在该category的操作信息时返回true；否则返回false。"
         },
         {
-          "type": "Group",
-          "description": "may be nil"
+          "type": "Group|nil",
+          "description": "Recorded target cards, or nil when only count/player/param were recorded.",
+          "description_zh": "记录的目标卡组；如果只记录了数量、玩家和参数则为nil。"
         },
         {
-          "type": "int",
-          "description": "may be nil"
+          "type": "int|nil",
+          "description": "Recorded expected count.",
+          "description_zh": "记录的预计数量。"
         },
         {
-          "type": "int",
-          "description": "may be nil"
+          "type": "int|nil",
+          "description": "Recorded target player.",
+          "description_zh": "记录的目标玩家。"
         },
         {
-          "type": "int",
-          "description": "may be nil"
+          "type": "int|nil",
+          "description": "Recorded category-specific parameter, often a location or amount.",
+          "description_zh": "记录的分类专用参数，常见为位置或数值。"
         }
       ],
       "description_zh": [
-        "返回连锁chainc的category分类的操作信息，存在的话，则返回值为5个， chainc=0 则是表示当前连锁",
-        "第一个返回值是false的话表示不存在该分类",
-        "后4个返回值对应Duel.SetOperationInfo的后4个参数：Card|Group targets, int count, int target_player, int target_param"
+        "返回chainc上为category记录的操作信息。",
+        "如果该分类没有记录，第一个返回值为false。否则后续返回值对应Duel.SetOperationInfo记录的targets、count、target_player和target_param。",
+        "常用于响应类检查，用来判断某个连锁宣告了什么操作，例如预计破坏卡片或从某个位置移动卡片。"
       ],
       "description_en": [
         "Returns operation information recorded for category on chainc.",
-        "The first return value is false when that category is not recorded. Otherwise, the remaining values correspond to Duel.SetOperationInfo: targets, count, target_player, and target_param."
+        "The first return value is false when that category is not recorded. Otherwise, the remaining values correspond to Duel.SetOperationInfo: targets, count, target_player, and target_param.",
+        "Use this in response checks that need to inspect what a Chain Link announced, such as whether it is expected to destroy cards or move cards from a location."
       ],
       "english_status": "translated_exact",
       "source_files": [
@@ -20291,7 +20299,9 @@
       ],
       "aliases": [],
       "tags": [
-        "core-binding"
+        "core-binding",
+        "core-doc-override",
+        "manual-zh-doc"
       ],
       "core_binding": true,
       "core_handler": "duel_get_operation_info"

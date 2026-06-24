@@ -56,6 +56,7 @@ of pouring every detail into one page. The broad navigation shape should be:
 | Trap Cards: Normal, Continuous, Counter | [Trap Card Patterns](/learn/trap-card-patterns) now separates Normal Trap activation, Continuous Trap face-up effects, hand/set-turn exceptions, and Counter Trap/Spell Speed 3 patterns. |
 | Effects that affect cards | [Methods for Affecting Cards](/learn/affecting-cards) now routes to focused child pages: [Functions that move cards across locations](/learn/moving-cards), [Continuous stat modifiers](/learn/continuous-stat-modifiers), [Equip Spells and Equip Cards](/learn/equip-spells), [Counters](/learn/counters), [Negation and Immunity](/learn/negation-and-immunity), [Control Change](/learn/control-change), and [Battle Position Effects](/learn/battle-position-effects). |
 | Effects that affect players | [LP Recovery and Effect Damage](/learn/lp-recovery-and-damage), [Player-Targeted Effects](/learn/player-targeted-effects), [Player Restrictions](/learn/player-restrictions), and [Draw, Hand, And Deck Effects](/learn/draw-hand-and-deck-effects) now split player-target data, LP changes, player locks, and draw/hand/Deck patterns into focused pages. |
+| Effect metadata, categories, properties, hint timing, and client prompts | [Categories, Properties, And Hint Timing](/learn/categories-properties-and-hints) now splits category labels, operation info, targeting flags, Damage Step flags, single-range flags, oath/cannot-disable flags, prompt timing, and `HINTMSG_*` selection hints into a focused learner page. |
 
 ## Forever Pass Rule
 
@@ -271,11 +272,24 @@ Several details were verified directly against local MDPro3/YGOPro sources:
   examples include Book of Moon (`c14087893.lua`), Enemy Controller
   (`c98045062.lua`), Cosmic Slicer Zer'oll (`c1487805.lua`), Wattsquirrel
   (`c12296376.lua`), and Knight Dragolich (`c88724332.lua`).
+- Effect metadata behavior was checked against local `effect.h`,
+  `constant.lua`, `libeffect.cpp`, `libduel.cpp`,
+  `ygopro-scripts-define\def.lua`, generated API pages, and local scripts.
+  `Effect.SetProperty` preserves internal property flags and stores the
+  optional second property word, `Effect.SetHintTiming` copies the first
+  timing mask to the opponent timing when the second argument is omitted, and
+  `Duel.SetOperationInfo` stores category-specific operation data for Chain
+  response checks. Local examples checked include Book of Moon
+  (`c14087893.lua`), Infinite Impermanence (`c10045474.lua`), Cyber Dragon
+  Infinity (`c10443957.lua`), Snipe Hunter (`c84290642.lua`), Time Magic
+  Hammer (`c10960419.lua`), Salamandra with Chain (`c62091148.lua`), Pot of
+  Greed (`c55144522.lua`), and Lava Golem (`c102380.lua`).
 
 ## Quality Pass Log
 
 | Date | Downloaded page cluster | Sacred Book updates |
 | --- | --- | --- |
+| 2026-06-24 | Categories, properties, hint timing, and client UI behavior | Added [Categories, Properties, And Hint Timing](/learn/categories-properties-and-hints) as a focused effect-metadata guide. It explains category labels versus real actions, operation info for known and unresolved actions, official card/player target flags, Damage Step properties, `EFFECT_FLAG_SINGLE_RANGE`, continuous target flags, oath/cannot-disable flags, `SetHintTiming`, and selection prompts with local examples and API links. |
 | 2026-06-24 | Effects that affect cards expansion | Added [Negation and Immunity](/learn/negation-and-immunity), [Control Change](/learn/control-change), and [Battle Position Effects](/learn/battle-position-effects) as focused card-affecting guides. These split Chain negation, lingering disable, immunity, targeting/destruction protection, take-control, swap-control, equip-based control, position changes, forced positions, and position locks with local examples and API links. |
 | 2026-06-24 | Effects that affect players expansion | Added [Player-Targeted Effects](/learn/player-targeted-effects), [Player Restrictions](/learn/player-restrictions), and [Draw, Hand, And Deck Effects](/learn/draw-hand-and-deck-effects) as focused player-effect guides. These split target-player Chain data, player/action locks, draw legality, hand discard, Deck-top reveal/sort, and Deck-to-GY patterns with local examples and API links. |
 | 2026-06-23 | Monster subtype expansion | Added focused [Gemini Monsters](/learn/gemini-monsters), [Toon Monsters](/learn/toon-monsters), [Union Monsters](/learn/union-monsters), and [Spirit Monsters](/learn/spirit-monsters) guides instead of folding subtype rules into a broad monster page. Each guide uses local constants, helper behavior, API links, and examples from local scripts. |
