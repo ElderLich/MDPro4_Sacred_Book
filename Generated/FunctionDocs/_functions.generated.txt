@@ -5730,8 +5730,9 @@ Source: D:\Programs\GitHub\ygopro-core\libgroup.cpp:919
 
 ●void Group.KeepAlive(Group g)
 阻止g被Lua自动释放，直到调用Group.DeleteGroup。
+当选中的Group要通过SetLabelObject存到Effect上，或需要在之后的回调中继续使用时使用。延迟效果结束时应配合Group.DeleteGroup释放。
 Parameters:
-  g: Group
+  g: Group - 要保留到调用DeleteGroup为止的Group。
 Source: D:\Programs\GitHub\ygopro-core\libgroup.cpp:901
 
 ●void Group.Merge(Group g1, Group g2)
@@ -5794,6 +5795,7 @@ Source: D:\Programs\GitHub\ygopro-core\libgroup.cpp:915
 ●Card|nil Group.SelectUnselect(Group cg, [Group|nil sg], int player, [bool finishable], [bool cancelable], [int min], [int max])
 让player从cg中选择1张卡加入当前选择，或从sg中选择1张卡移出当前选择，并返回被选择的那张卡。
 sg可以为nil。finishable控制当前数量下能否结束选择，cancelable允许取消；取消时返回nil。min和max默认均为1。
+这是逐步构建素材或手续选择的底层组件。普通的一次性选择通常使用Group.Select、Group.FilterSelect或Duel.SelectMatchingCard更清晰。
 Parameters:
   cg: Group
   sg: Group|nil optional
@@ -7886,6 +7888,7 @@ Source: Utilities/utility.lua:1338
 
 ●Group|nil Group.SelectSubGroup(Group g, int tp, function f, bool cancelable, [int min], [int max], ... any)
 让tp从g中选择数量在min到max之间且满足f的子组。会考虑已有选择；若不能完成有效选择则返回nil。
+先用Group.CheckSubGroup进行合法性检查，再在实际让玩家选择时调用SelectSubGroup。如果选中的Group要保存到之后的回调中使用，应调用KeepAlive并在之后DeleteGroup。
 Parameters:
   g: Group
   tp: int

@@ -37,6 +37,7 @@ This is the working todo for turning Sacred Book into a complete MDPro3 scriptin
 - [x] Add focused pages for common scripting patterns: counters and summon procedures.
 - [x] Add focused card-affecting guides for negation/immunity, control changes, and battle position changes.
 - [x] Add a focused categories/properties/hint timing guide for effect metadata, operation info, and client prompts.
+- [x] Add a focused selection and Group-handling guide for target selection, resolution choice, subgroup selection, and stored Groups.
 - [ ] Expand the beginner path with small complete card scripts that build up one concept at a time.
 - [x] Analyze every downloaded tutorial page and create an original Sacred Book equivalent for each topic.
 - [x] Add focused player-effect guides for player-targeted Chain data, player restrictions, and draw/hand/Deck effects.

@@ -21,6 +21,10 @@ back into the generated API reference and live card examples.
     <strong>Categories and properties</strong>
     <span>Set categories, operation info, target flags, Damage Step flags, and prompt timing.</span>
   </a>
+  <a class="sacred-card" href="selection-and-group-handling">
+    <strong>Selection and groups</strong>
+    <span>Choose targets, resolution cards, subgroups, and stored Groups without losing state.</span>
+  </a>
   <a class="sacred-card" href="effect-callbacks">
     <strong>Callbacks</strong>
     <span>How condition, cost, target, and operation functions divide work.</span>
@@ -188,25 +192,26 @@ back into the generated API reference and live card examples.
 21. Handle Tribute Summon material value with [Tribute Summon Materials](tribute-summon-materials).
 22. Add and spend visible card counters with [Counters](counters).
 23. Work with cards and groups through [Filters, Card objects, and Group objects](filters-and-groups).
-24. Move cards correctly with [Functions that move cards across locations](moving-cards).
-25. Negate effects and protect cards with [Negation and Immunity](negation-and-immunity).
-26. Take or swap control with [Control Change](control-change).
-27. Change or lock battle positions with [Battle Position Effects](battle-position-effects).
-28. Place cards and read zones with [Field zones and sequences](field-zones-and-sequences).
-29. Script Field Spell patterns with [Field Spells](field-spells).
-30. Target cards correctly with [Targeting flow](targeting-flow).
-31. Resolve activated effects with [Cost, target, and operation lifecycle](cost-target-operation-lifecycle).
-32. Read always-on behavior through [Continuous effects](continuous-effects).
-33. Build visible modifiers with [Continuous stat modifiers](continuous-stat-modifiers).
-34. Script Equip Cards with [Equip Spells and Equip Cards](equip-spells).
-35. Script LP changes with [LP Recovery and Effect Damage](lp-recovery-and-damage).
-36. Store player Chain data with [Player-Targeted Effects](player-targeted-effects).
-37. Apply player locks with [Player Restrictions](player-restrictions).
-38. Script draw, hand, and Deck movement with [Draw, Hand, And Deck Effects](draw-hand-and-deck-effects).
-39. Track temporary script memory with [Flag effects](flag-effects).
-40. Limit effect usage with [Count limits and once per turn](count-limits).
-41. Apply outcomes through [Methods for affecting cards](affecting-cards).
-42. Use card families through [Archetypes and set codes](archetypes-and-setcodes).
+24. Choose cards safely with [Selection And Group Handling](selection-and-group-handling).
+25. Move cards correctly with [Functions that move cards across locations](moving-cards).
+26. Negate effects and protect cards with [Negation and Immunity](negation-and-immunity).
+27. Take or swap control with [Control Change](control-change).
+28. Change or lock battle positions with [Battle Position Effects](battle-position-effects).
+29. Place cards and read zones with [Field zones and sequences](field-zones-and-sequences).
+30. Script Field Spell patterns with [Field Spells](field-spells).
+31. Target cards correctly with [Targeting flow](targeting-flow).
+32. Resolve activated effects with [Cost, target, and operation lifecycle](cost-target-operation-lifecycle).
+33. Read always-on behavior through [Continuous effects](continuous-effects).
+34. Build visible modifiers with [Continuous stat modifiers](continuous-stat-modifiers).
+35. Script Equip Cards with [Equip Spells and Equip Cards](equip-spells).
+36. Script LP changes with [LP Recovery and Effect Damage](lp-recovery-and-damage).
+37. Store player Chain data with [Player-Targeted Effects](player-targeted-effects).
+38. Apply player locks with [Player Restrictions](player-restrictions).
+39. Script draw, hand, and Deck movement with [Draw, Hand, And Deck Effects](draw-hand-and-deck-effects).
+40. Track temporary script memory with [Flag effects](flag-effects).
+41. Limit effect usage with [Count limits and once per turn](count-limits).
+42. Apply outcomes through [Methods for affecting cards](affecting-cards).
+43. Use card families through [Archetypes and set codes](archetypes-and-setcodes).
 
 ## Tutorial Equivalents
 

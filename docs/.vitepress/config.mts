@@ -54,6 +54,7 @@ export default defineConfig({
             { text: 'Tribute Summon Materials', link: '/learn/tribute-summon-materials' },
             { text: 'Counters', link: '/learn/counters' },
             { text: 'Filters and Groups', link: '/learn/filters-and-groups' },
+            { text: 'Selection and Group Handling', link: '/learn/selection-and-group-handling' },
             { text: 'Moving Cards', link: '/learn/moving-cards' },
             { text: 'Negation and Immunity', link: '/learn/negation-and-immunity' },
             { text: 'Control Change', link: '/learn/control-change' },

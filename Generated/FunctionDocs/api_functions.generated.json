@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-06-24T05:26:04+00:00",
+    "generated_at": "2026-06-24T05:39:34+00:00",
     "workspace": "D:\\Programs\\GitHub\\MDPro3_Sacred_Book",
     "dataeditorx_data": "D:\\Programs\\GitHub\\DataEditorX\\DataEditorX\\data",
     "mdpro3_locales": "D:\\Programs\\GitHub\\MDPro3_Data\\Data\\locales",
@@ -32388,20 +32388,18 @@
           "name": "g",
           "type": "Group",
           "optional": false,
-          "description": ""
+          "description": "Group to preserve until DeleteGroup is called.",
+          "description_zh": "要保留到调用DeleteGroup为止的Group。"
         }
       ],
-      "returns": [
-        {
-          "type": "nil",
-          "description": ""
-        }
-      ],
+      "returns": [],
       "description_zh": [
-        "阻止g被Lua自动释放，直到调用Group.DeleteGroup。"
+        "阻止g被Lua自动释放，直到调用Group.DeleteGroup。",
+        "当选中的Group要通过SetLabelObject存到Effect上，或需要在之后的回调中继续使用时使用。延迟效果结束时应配合Group.DeleteGroup释放。"
       ],
       "description_en": [
-        "Prevents g from being automatically released by Lua until Group.DeleteGroup is called."
+        "Prevents g from being automatically released by Lua until Group.DeleteGroup is called.",
+        "Use this when a selected Group is stored on an Effect with SetLabelObject or otherwise needs to survive into a later callback. Pair it with Group.DeleteGroup when the delayed effect is done."
       ],
       "english_status": "translated_exact",
       "source_files": [
@@ -32419,6 +32417,7 @@
       "aliases": [],
       "tags": [
         "core-binding",
+        "core-doc-override",
         "manual-zh-doc"
       ],
       "core_binding": true,
@@ -32824,11 +32823,13 @@
       ],
       "description_zh": [
         "让player从cg中选择1张卡加入当前选择，或从sg中选择1张卡移出当前选择，并返回被选择的那张卡。",
-        "sg可以为nil。finishable控制当前数量下能否结束选择，cancelable允许取消；取消时返回nil。min和max默认均为1。"
+        "sg可以为nil。finishable控制当前数量下能否结束选择，cancelable允许取消；取消时返回nil。min和max默认均为1。",
+        "这是逐步构建素材或手续选择的底层组件。普通的一次性选择通常使用Group.Select、Group.FilterSelect或Duel.SelectMatchingCard更清晰。"
       ],
       "description_en": [
         "Lets player choose one card from cg to add to the current selection or one card from sg to remove from it, then returns the card that was chosen.",
-        "sg may be nil. finishable controls whether the selection can finish at its current size, cancelable allows cancellation, and cancellation returns nil. min and max default to 1."
+        "sg may be nil. finishable controls whether the selection can finish at its current size, cancelable allows cancellation, and cancellation returns nil. min and max default to 1.",
+        "This is a building block for step-by-step material or procedure selections. For ordinary one-shot choices, Group.Select, Group.FilterSelect, or Duel.SelectMatchingCard is usually clearer."
       ],
       "english_status": "translated_exact",
       "source_files": [
@@ -44902,10 +44903,12 @@
         }
       ],
       "description_zh": [
-        "让tp从g中选择数量在min到max之间且满足f的子组。会考虑已有选择；若不能完成有效选择则返回nil。"
+        "让tp从g中选择数量在min到max之间且满足f的子组。会考虑已有选择；若不能完成有效选择则返回nil。",
+        "先用Group.CheckSubGroup进行合法性检查，再在实际让玩家选择时调用SelectSubGroup。如果选中的Group要保存到之后的回调中使用，应调用KeepAlive并在之后DeleteGroup。"
       ],
       "description_en": [
-        "Lets tp select a subgroup from g with size between min and max that satisfies f. It respects already selected cards and returns nil if no valid selection is completed."
+        "Lets tp select a subgroup from g with size between min and max that satisfies f. It respects already selected cards and returns nil if no valid selection is completed.",
+        "Use Group.CheckSubGroup for the legality check, then SelectSubGroup where the player actually chooses the cards. If the chosen Group is stored for a later callback, call KeepAlive and later DeleteGroup."
       ],
       "english_status": "translated_exact",
       "source_files": [

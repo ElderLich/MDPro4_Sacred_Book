@@ -57,6 +57,7 @@ of pouring every detail into one page. The broad navigation shape should be:
 | Effects that affect cards | [Methods for Affecting Cards](/learn/affecting-cards) now routes to focused child pages: [Functions that move cards across locations](/learn/moving-cards), [Continuous stat modifiers](/learn/continuous-stat-modifiers), [Equip Spells and Equip Cards](/learn/equip-spells), [Counters](/learn/counters), [Negation and Immunity](/learn/negation-and-immunity), [Control Change](/learn/control-change), and [Battle Position Effects](/learn/battle-position-effects). |
 | Effects that affect players | [LP Recovery and Effect Damage](/learn/lp-recovery-and-damage), [Player-Targeted Effects](/learn/player-targeted-effects), [Player Restrictions](/learn/player-restrictions), and [Draw, Hand, And Deck Effects](/learn/draw-hand-and-deck-effects) now split player-target data, LP changes, player locks, and draw/hand/Deck patterns into focused pages. |
 | Effect metadata, categories, properties, hint timing, and client prompts | [Categories, Properties, And Hint Timing](/learn/categories-properties-and-hints) now splits category labels, operation info, targeting flags, Damage Step flags, single-range flags, oath/cannot-disable flags, prompt timing, and `HINTMSG_*` selection hints into a focused learner page. |
+| Selection helpers and Group/Card handling | [Filters, Card Objects, and Group Objects](/learn/filters-and-groups) covers the basic filter and Group model; [Selection And Group Handling](/learn/selection-and-group-handling) now covers official targets, resolution choices, selecting from existing Groups, subgroup checks, `SelectUnselect`, Group lifetime, iteration, and rechecks before acting. |
 
 ## Forever Pass Rule
 
@@ -284,11 +285,24 @@ Several details were verified directly against local MDPro3/YGOPro sources:
   Infinity (`c10443957.lua`), Snipe Hunter (`c84290642.lua`), Time Magic
   Hammer (`c10960419.lua`), Salamandra with Chain (`c62091148.lua`), Pot of
   Greed (`c55144522.lua`), and Lava Golem (`c102380.lua`).
+- Selection and Group-handling behavior was checked against local
+  `libduel.cpp`, `libgroup.cpp`, `utility.lua`, generated API pages, and local
+  scripts. `Duel.SelectMatchingCard` returns a selected Group without creating
+  Chain target relations; `Duel.SelectTarget` requires a current Chain, records
+  target cards, and creates relations for non-continuous effects; local
+  `Group.SelectSubGroup` is implemented in `utility.lua` and uses
+  `Duel.GrabSelectedCard` plus subgroup checks; `Group.SelectUnselect` exposes
+  add/remove/cancel selection flow; and `Group.KeepAlive`/`Group.DeleteGroup`
+  manage Groups stored beyond the current callback. Local examples checked
+  include Book of Moon (`c14087893.lua`), Rescue Hedgehog (`c99742859.lua`),
+  Neo-Daedalus (`c10485110.lua`), Lava Golem (`c102380.lua`), and local
+  procedure helpers in `procedure.lua`.
 
 ## Quality Pass Log
 
 | Date | Downloaded page cluster | Sacred Book updates |
 | --- | --- | --- |
+| 2026-06-24 | Selection helpers and Group/Card handling | Added [Selection And Group Handling](/learn/selection-and-group-handling) as a practical follow-up to filters and Groups. It explains target selection versus resolution selection, selecting from existing Groups, subgroup legality/selection, `SelectUnselect`, `KeepAlive`/`DeleteGroup`, iteration patterns, and resolution rechecks with local examples and API links. |
 | 2026-06-24 | Categories, properties, hint timing, and client UI behavior | Added [Categories, Properties, And Hint Timing](/learn/categories-properties-and-hints) as a focused effect-metadata guide. It explains category labels versus real actions, operation info for known and unresolved actions, official card/player target flags, Damage Step properties, `EFFECT_FLAG_SINGLE_RANGE`, continuous target flags, oath/cannot-disable flags, `SetHintTiming`, and selection prompts with local examples and API links. |
 | 2026-06-24 | Effects that affect cards expansion | Added [Negation and Immunity](/learn/negation-and-immunity), [Control Change](/learn/control-change), and [Battle Position Effects](/learn/battle-position-effects) as focused card-affecting guides. These split Chain negation, lingering disable, immunity, targeting/destruction protection, take-control, swap-control, equip-based control, position changes, forced positions, and position locks with local examples and API links. |
 | 2026-06-24 | Effects that affect players expansion | Added [Player-Targeted Effects](/learn/player-targeted-effects), [Player Restrictions](/learn/player-restrictions), and [Draw, Hand, And Deck Effects](/learn/draw-hand-and-deck-effects) as focused player-effect guides. These split target-player Chain data, player/action locks, draw legality, hand discard, Deck-top reveal/sort, and Deck-to-GY patterns with local examples and API links. |

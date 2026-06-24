@@ -113,6 +113,10 @@ The difference matters. If the card text targets, use target functions. If it
 does not target, selection often happens during resolution with matching-card
 functions.
 
+For deeper selection workflows, including subgroup choices, `SelectUnselect`,
+and keeping Groups alive for delayed effects, see
+[Selection And Group Handling](selection-and-group-handling).
+
 ## Which Selector Should I Reach For?
 
 Use this quick rule before writing the callback:
@@ -412,3 +416,4 @@ Useful API pages:
 - [`Group.IsContains`](/api/functions/Group/IsContains)
 - [`Group.GetFirst`](/api/functions/Group/GetFirst)
 - [`Group.GetNext`](/api/functions/Group/GetNext)
+- [Selection And Group Handling](selection-and-group-handling)

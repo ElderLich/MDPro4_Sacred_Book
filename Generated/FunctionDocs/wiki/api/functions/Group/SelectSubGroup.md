@@ -9,6 +9,7 @@ Group.SelectSubGroup(Group g, int tp, function f, bool cancelable, [int min], [i
 ## Description
 
 Lets tp select a subgroup from g with size between min and max that satisfies f. It respects already selected cards and returns nil if no valid selection is completed.
+Use Group.CheckSubGroup for the legality check, then SelectSubGroup where the player actually chooses the cards. If the chosen Group is stored for a later callback, call KeepAlive and later DeleteGroup.
 
 ## Parameters
 
