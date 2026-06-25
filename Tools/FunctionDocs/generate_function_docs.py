@@ -1626,7 +1626,7 @@ def write_wiki_pages(base: Path, docs: Iterable[FunctionDoc], constant_docs: lis
     api_lines = [
         "# API",
         "",
-        "This API reference is generated for this project's core and helper scripts. It is intentionally kept separate from Project Ignis scrapi-book because the available bindings and helper procedures differ.",
+        "This API reference is generated for this project's core and helper scripts. It is grounded in local MDPro3/YGOPro bindings because helper procedures and available functions can differ between simulators.",
         "",
         "## Sections",
         "",
@@ -2712,7 +2712,7 @@ def write_report(
             "1. Review the generated compatibility text files and copy them into DataEditorX only after spot-checking tooltips.",
             "2. Finish DataEditorX autocomplete/highlighting cleanup by removing the startup fallback lists once generated Lua data is loaded before the first highlight pass.",
             "3. Translate missing English entries from the JSON source instead of editing `_function_english.txt` by hand.",
-            "4. Use the generated markdown tree as the seed for a VitePress wiki like scrapi-book, but keep this project's core-specific API separate.",
+            "4. Use the generated markdown tree as the seed for the VitePress API reference while keeping this project's core-specific API separate.",
         ]
     )
 

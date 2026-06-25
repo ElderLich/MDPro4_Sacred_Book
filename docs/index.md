@@ -116,10 +116,30 @@ After that, choose the branch that matches the card you are scripting: Spells,
 Traps, summon procedures, card movement, continuous effects, player effects,
 or special card families.
 
+## Common Effect Patterns
+
+<div class="home-portal-grid">
+  <a class="home-portal-card" href="learn/moving-cards">
+    <small>Actions and destinations</small>
+    <strong>Move Cards</strong>
+    <span>Pick the right movement API, legality check, reason flag, and operation-info category.</span>
+  </a>
+  <a class="home-portal-card" href="learn/equip-spells">
+    <small>Equip relationships</small>
+    <strong>Equip Cards</strong>
+    <span>Target, equip, limit, recheck, and read local scripts for normal and nonstandard equip flows.</span>
+  </a>
+  <a class="home-portal-card" href="learn/lp-recovery-and-damage">
+    <small>Player LP changes</small>
+    <strong>LP And Damage</strong>
+    <span>Choose fixed, event, target-based, resolution-calculated, sequential, or simultaneous LP patterns.</span>
+  </a>
+</div>
+
 ## Reference While Scripting
 
 - [Function reference](api/functions/)
 - [Constant reference](api/constants)
 - [Featured card examples](examples/)
 - [Script Explorer](tools/script-explorer)
-- [Downloaded tutorial coverage map](tools/page-analysis)
+- [Source coverage notes](tools/page-analysis)

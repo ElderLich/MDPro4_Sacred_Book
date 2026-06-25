@@ -13,7 +13,7 @@ This is the working todo for turning Sacred Book into a complete MDPro3 scriptin
 - [x] Add function usage and script examples directly to API pages.
 - [x] Refresh the local script corpus through `ygopro-scripts` commit `06ccc5a99`, including Mind Scan and the new Mulcharmy helper.
 - [x] Add a generated translation review queue for awkward/imported function English.
-- [x] Record the source-plan boundary for Miraheze/scrapi-book/scrapiyard inspiration without importing their API content.
+- [x] Record the source-plan boundary for outside structural inspiration without importing API content.
 - [x] Translate and review the first usage-ranked batch of highest-use imported function descriptions.
 - [x] Add tutorial-style `How To Use It` sections for targeting and Group basics.
 - [x] Add tutorial-style `How To Use It` sections for core movement/action functions.
@@ -21,7 +21,7 @@ This is the working todo for turning Sacred Book into a complete MDPro3 scriptin
 
 ## Documentation Coverage
 
-- [x] Add first original tutorial pass for the downloaded page coverage map.
+- [x] Add the first original tutorial pass for the source coverage map.
 - [ ] Give every function a clear summary, parameter notes, return notes, and at least one script-backed example where possible.
 - [x] Add a first parameter/return detail pass for high-use flag-effect, material, counter, unique-field, Deck-top, field-ID, and related-chain functions.
 - [x] Add a second parameter/return detail pass for high-use selection, movement, relation, count-limit, and Group filtering functions.
@@ -43,11 +43,12 @@ This is the working todo for turning Sacred Book into a complete MDPro3 scriptin
 - [x] Add a focused chain timing and activation windows guide for prompt masks, Chain responses, Spell Speed, and Damage Step legality.
 - [x] Add focused Quick-Play Spell, Counter Trap, and Normal/Continuous Trap guides for timing, negation families, face-up Trap effects, and leave-field cleanup.
 - [x] Rework the home and learning entry path around a concrete beginner curve and first local script walkthroughs.
-- [x] Re-audit the downloaded wiki archive for curriculum shape and local/non-local function rewrites.
+- [x] Re-audit the local topic archive for curriculum shape and local/non-local function rewrites.
 - [x] Add a focused Min/Max stat selection guide and refine archetype/set-code and effect-type template lessons with local-verified tied Groups, identity checks, Xyz Material effects, grant effects, and special target-range modes.
-- [x] Refine the effect setup and activation-flow lessons from the downloaded archive with local-verified setter meaning, callback signatures, and legality notes.
+- [x] Refine the effect setup and activation-flow lessons from the local topic archive with local-verified setter meaning, callback signatures, and legality notes.
 - [x] Refine the filters and all-Group action lessons with local-verified pure-filter and rebuild-at-resolution patterns.
 - [x] Refine the movement and LP/damage lessons with destination-vs-field movement families, temporary banish return handling, and stepped mixed LP batches.
+- [x] Deepen the Equip, movement, and LP common-effect pattern guides with local helper-name replacements, operation-info categories, script-reading examples, and amount-source routing.
 - [x] Refine the continuous-effect and stat-modifier lessons with setter build order, target-range modes, stat-code families, and value-callback player-reference guidance.
 - [x] Refine the Equip and Field Spell lessons with activation target-vs-equip-limit guidance, nonstandard equip prechecks, stepped equip examples, handler-range guidance, and activate-vs-place Field Spell distinctions.
 - [x] Add a focused selection and Group-handling guide for target selection, resolution choice, subgroup selection, and stored Groups.
@@ -56,7 +57,7 @@ This is the working todo for turning Sacred Book into a complete MDPro3 scriptin
 - [x] Add a hand-written case study for Mind Scan because the script exists locally before the card is present in `cards.cdb`.
 - [x] Expand the beginner path with small complete card scripts that build up one concept at a time.
 - [x] Add a DataEditorX/card-data bridge for matching `cards.cdb` fields, prompt strings, type bits, set codes, alias, and script files.
-- [x] Analyze every downloaded tutorial page and create an original Sacred Book equivalent for each topic.
+- [x] Analyze every archived tutorial topic and create an original Sacred Book equivalent for each topic.
 - [x] Add focused player-effect guides for player-targeted Chain data, player restrictions, and draw/hand/Deck effects.
 - [x] Move reviewed function docs into a multilingual machine-readable override file instead of keeping long manual batches in the generator.
 

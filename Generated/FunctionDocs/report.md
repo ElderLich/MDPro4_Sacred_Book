@@ -1,6 +1,6 @@
 # Function Docs Refresh Report
 
-Generated: 2026-06-25T04:36:13+00:00
+Generated: 2026-06-25T05:00:28+00:00
 
 ## Outputs
 
@@ -135,4 +135,4 @@ Examples changed constant values:
 1. Review the generated compatibility text files and copy them into DataEditorX only after spot-checking tooltips.
 2. Finish DataEditorX autocomplete/highlighting cleanup by removing the startup fallback lists once generated Lua data is loaded before the first highlight pass.
 3. Translate missing English entries from the JSON source instead of editing `_function_english.txt` by hand.
-4. Use the generated markdown tree as the seed for a VitePress wiki like scrapi-book, but keep this project's core-specific API separate.
+4. Use the generated markdown tree as the seed for the VitePress API reference while keeping this project's core-specific API separate.

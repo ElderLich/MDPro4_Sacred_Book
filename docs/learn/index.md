@@ -57,6 +57,18 @@ into the card pattern you are actually trying to build.
 That first route is deliberately short. It gives you enough structure to read a
 local script without drowning in every summon type, card family, and helper.
 
+## Common Effect Pattern Route
+
+Once you can follow target and operation callbacks, these three pages answer a
+lot of real custom-card questions:
+
+1. [Functions that move cards across locations](moving-cards)
+2. [Equip Spells and Equip Cards](equip-spells)
+3. [LP Recovery and Effect Damage](lp-recovery-and-damage)
+
+Read them when the card text says "send", "banish", "equip", "recover LP", or
+"inflict damage" and you need to choose the right local API shape.
+
 ## Lesson Library
 
 Use this library after the first route, or jump to the branch that matches the
@@ -143,16 +155,16 @@ card you are scripting.
   </section>
 </div>
 
-## How To Use The Wiki Archive Pass
+## How To Use The Source Coverage Notes
 
-The downloaded wiki pages are a teaching checklist, not factual authority for
-this project. Sacred Book rewrites that material in its own words and verifies
+Source topics are a teaching checklist, not factual authority for this
+project. Sacred Book rewrites that material in its own words and verifies
 behavior against local MDPro3/YGOPro core, local scripts, local define files,
 and generated API data.
 
-When an external page uses another simulator's helper name, Sacred Book should
+When outside material uses a helper name that is not local, Sacred Book should
 replace it with a local equivalent or document that it is not local. See
-[Downloaded Tutorial Coverage](/tools/page-analysis) for the audit trail.
+[Source Coverage Notes](/tools/page-analysis) for the audit trail.
 
 ## How To Read A Real Script
 

@@ -25,6 +25,10 @@ resolution.
 | [`Duel.SendtoExtraP`](/api/functions/Duel/SendtoExtraP) | Put a Pendulum Card face-up in the Extra Deck. |
 | [`Duel.GetControl`](/api/functions/Duel/GetControl) | Change control of cards. |
 
+Some outside examples use `Duel.RemoveCards` for banishing cards. That function
+is not present in the local MDPro3/YGOPro sources checked for Sacred Book. Use
+local `Duel.Remove` instead.
+
 ## Movement Router
 
 Before choosing a function, identify what the card text is really doing.
@@ -43,6 +47,30 @@ Before choosing a function, identify what the card text is really doing.
 This keeps "move this card somewhere" from becoming one oversized habit. The
 destination, reason, and whether the action places a card onto the field decide
 the function.
+
+## Announce The Movement
+
+`Duel.SetOperationInfo` tells the engine and client what the Chain Link is
+expected to do. Local define comments explicitly call out movement categories
+such as `CATEGORY_SPECIAL_SUMMON`, `CATEGORY_TOHAND`, and `CATEGORY_TODECK`,
+and local scripts use the same pattern for the common movement families.
+
+| Action being announced | Common category | Typical operation info shape |
+| --- | --- | --- |
+| Add to hand | `CATEGORY_TOHAND` | `Duel.SetOperationInfo(0,CATEGORY_TOHAND,nil,1,tp,LOCATION_DECK)` |
+| Send to the GY | `CATEGORY_TOGRAVE` | `Duel.SetOperationInfo(0,CATEGORY_TOGRAVE,nil,1,tp,LOCATION_DECK)` |
+| Return to Deck/Extra Deck | `CATEGORY_TODECK` or `CATEGORY_TOEXTRA` | `Duel.SetOperationInfo(0,CATEGORY_TODECK,g,#g,0,0)` |
+| Banish | `CATEGORY_REMOVE` | `Duel.SetOperationInfo(0,CATEGORY_REMOVE,g,#g,0,0)` |
+| Tribute/release by effect | `CATEGORY_RELEASE` | `Duel.SetOperationInfo(0,CATEGORY_RELEASE,g,#g,0,0)` |
+| Special Summon | `CATEGORY_SPECIAL_SUMMON` | `Duel.SetOperationInfo(0,CATEGORY_SPECIAL_SUMMON,nil,1,tp,LOCATION_GRAVE)` |
+| Change control | `CATEGORY_CONTROL` | `Duel.SetOperationInfo(0,CATEGORY_CONTROL,g,1,0,0)` |
+| Equip this card | `CATEGORY_EQUIP` | `Duel.SetOperationInfo(0,CATEGORY_EQUIP,e:GetHandler(),1,0,0)` |
+
+Be careful with `CATEGORY_EQUIP`: the local `constant.lua` comment describes
+it as the category for equipping the effect's own card. When an effect equips
+other cards from another location, local scripts often announce the source
+movement, such as `CATEGORY_LEAVE_GRAVE`, and perform the actual equip in the
+operation after all zone and legality checks pass.
 
 ## Two Movement Families
 
@@ -237,6 +265,18 @@ Do not replace a normal Special Summon, Set, or `MoveToField` action with
 `ReturnToField`. Use it when the script has a real temporary-banish lifecycle
 to close.
 
+## Local Scripts To Read
+
+These local scripts are compact examples of different movement families:
+
+| Script | Movement pattern |
+| --- | --- |
+| `c1003840.lua` | Releases cards as cost, Special Summons from the Deck, then returns a card to the Deck. |
+| `c1050355.lua` | Replaces a Field Spell, sends the old card to the GY by rule, then moves the new card into the Field Zone. |
+| `c10960419.lua` | Temporarily banishes a card with `REASON_TEMPORARY` and later returns it with `Duel.ReturnToField`. |
+| `c99742859.lua` | Uses `Duel.SpecialSummonStep`/`Duel.SpecialSummonComplete` for grouped Summons, then destroys a target group. |
+| `c10204849.lua` | Combines Special Summon and equip movement in one resolving effect. |
+
 ## Change Control
 
 Changing control uses `Duel.GetControl` in this local API, despite the name
@@ -309,3 +349,4 @@ Useful API pages:
 - [`Duel.Overlay`](/api/functions/Duel/Overlay)
 - [`Duel.SendtoExtraP`](/api/functions/Duel/SendtoExtraP)
 - [`Duel.GetControl`](/api/functions/Duel/GetControl)
+- [`Duel.SetOperationInfo`](/api/functions/Duel/SetOperationInfo)

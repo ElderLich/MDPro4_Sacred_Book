@@ -1,26 +1,26 @@
-# Downloaded Tutorial Coverage
+# Source Coverage Notes
 
-This page records how the downloaded YGOPRO Scripting Wiki tutorial pages in
-`C:\Users\Shanalotte\Desktop\New folder (2)` were analyzed for Sacred Book.
-They are used as a topic checklist and teaching-quality benchmark only.
+This page records how outside topic outlines were converted into original
+Sacred Book lessons. They are used as a topic checklist and teaching-quality
+benchmark only.
 
-Sacred Book does not copy their wording and does not use EDO/Project Ignis
+Sacred Book does not copy outside wording and does not use outside simulator
 documentation as factual source of truth. Final behavior is checked against
 local MDPro3/YGOPro sources, local scripts, local define files, and generated
 Sacred Book data.
 
-The downloaded editor-tool page is tracked separately as the bridge between
-card database setup and Lua scripting.
+Editor-tool material is tracked separately as the bridge between card database
+setup and Lua scripting.
 
-This audit is section-level. It covers each downloaded scripting page's
-headings, code-pattern topics, and recurring warnings, while replacing
-simulator-specific helper names and examples with local MDPro3/YGOPro behavior.
+This audit is section-level. It covers each source topic's headings,
+code-pattern topics, and recurring warnings, while replacing non-local helper
+names and examples with local MDPro3/YGOPro behavior.
 
 ## Coverage Map
 
-| Downloaded tutorial topic | Sacred Book equivalent |
+| Source topic | Sacred Book equivalent |
 | --- | --- |
-| Main scripting-wiki landing page | [Home](/), [Learning Path](/learn/), [First Scripts To Study](/learn/first-scripts), [Beginner Script Ladder](/learn/beginner-script-ladder), and this coverage map organize the beginner route. |
+| Main scripting reference landing page | [Home](/), [Learning Path](/learn/), [First Scripts To Study](/learn/first-scripts), [Beginner Script Ladder](/learn/beginner-script-ladder), and this coverage map organize the beginner route. |
 | Structure of a card script | [Structure of a card script](/learn/script-structure) covers file naming, `GetID`, `initial_effect`, callback naming, and reading real scripts. |
 | Creation, building, and registration of an effect object | [Creation, building, and registration of an effect object](/learn/effect-object) covers `Effect.CreateEffect`, setters, registration, cloning, labels, label objects, and resets. |
 | EFFECT_TYPE constants and templates | [EFFECT_TYPE constants and templates](/learn/effect-types) covers common type flags, type-shape selection, no-op Spell/Trap activation, activated types, trigger source combinations, quick-effect hints, material effects, grant effects, and special target-range modes. |
@@ -31,22 +31,22 @@ simulator-specific helper names and examples with local MDPro3/YGOPro behavior.
 | Activated effects | [Activated effects](/learn/activated-effects) covers Chain Link flow, common activated types, optional and mandatory triggers, Spell/Trap activation, and the activation/resolution split. |
 | Filters, Card objects, and Group objects | [Filters, Card Objects, and Group Objects](/learn/filters-and-groups) covers filter arguments, matching vs targeting, Groups, filtering, selecting, iterating, membership, and counts. |
 | Min/Max-stat card selection | [Min/Max Stat Card Selection](/learn/min-max-stat-selection) covers `Group.GetMinGroup`, `Group.GetMaxGroup`, tied groups, returned numeric values, custom scoring functions, and activation-vs-resolution selection. |
-| List of functions that move cards across locations | [Functions that move cards across locations](/learn/moving-cards) covers movement APIs, effect-vs-cost able-to checks, destroy checks, release/discard/control helpers, targeting/non-targeting patterns, Special Summons, equip, `MoveToField`, `SendtoExtraP`, returns, and reason flags. |
+| List of functions that move cards across locations | [Functions that move cards across locations](/learn/moving-cards) covers movement APIs, effect-vs-cost able-to checks, operation-info categories, destroy checks, release/discard/control helpers, targeting/non-targeting patterns, Special Summons, equip, `MoveToField`, `SendtoExtraP`, returns, reason flags, and the local replacement for non-local `Duel.RemoveCards`. |
 | Effects that apply continuously | [Effects That Apply Continuously](/learn/continuous-effects) covers single, field, equip, Xyz Material, player-affecting, event-watching, and temporary continuous effects. |
 | Tutorial for scripting a simple continuous effect | [Continuous stat modifiers](/learn/continuous-stat-modifiers) gives the focused ATK/DEF tutorial for self, field, equip, material, temporary, and cloned modifiers. |
-| Equip Spell | [Equip Spells and Equip Cards](/learn/equip-spells) covers manual Equip Spell activation, `Auxiliary.AddEquipSpellEffect`, equip rules, equip limits, `EFFECT_TYPE_EQUIP`, monsters equipped by effects, activated effects on Equip Cards, previous equip targets, card targets, summon-then-equip patterns, and stepped equip. |
+| Equip Spell | [Equip Spells and Equip Cards](/learn/equip-spells) covers manual Equip Spell activation, the local `Auxiliary.AddEquipSpellEffect` helper, equip rules, equip limits, `EFFECT_TYPE_EQUIP`, monsters equipped by effects, activated effects on Equip Cards, previous equip targets, card targets, summon-then-equip patterns, existing-card equip prechecks, and stepped equip. |
 | Field Spell | [Field Spells](/learn/field-spells) covers Field Spell activation shape, `LOCATION_FZONE`, Field Zone replacement, activating/placing Field Spells from the Deck, environment checks, counters, and common pitfalls. |
-| Recovering LP and inflicting effect damage | [LP Recovery and Effect Damage](/learn/lp-recovery-and-damage) covers fixed amounts, resolution-calculated amounts, target-player data, target-based recovery, stepped LP changes, event-value amounts, conjuncted effects, event-count vs resolution-count amounts, categories, and return values. |
+| Recovering LP and inflicting effect damage | [LP Recovery and Effect Damage](/learn/lp-recovery-and-damage) covers fixed amounts, resolution-calculated amounts, target-player data, target-based recovery, stepped LP changes, event-value amounts, event-count vs resolution-count amounts, `BreakEffect` sequencing, categories, operation info, and return values. |
 | Methods for affecting cards | [Methods for Affecting Cards](/learn/affecting-cards) acts as the outcome router for immediate actions, continuous changes, negation, stat/property changes, control, equip, and review checks. |
 | Subarchetype | [Archetypes and Set Codes](/learn/archetypes-and-setcodes) covers IDs, `IsSetCard`, multiple set-code checks, subarchetype bit structure, listed-card and listed-set helpers, original-code checks, and common filter patterns. |
 | DataEditorX | [Card Data and Script Wiring](/learn/card-data-and-script-wiring) covers `cards.cdb` `datas`/`texts` fields, ID-to-script matching, card text versus script strings, type bits, category labels, set codes, alias, and prompt-string API links. |
 
 ## Conversion Answer
 
-The downloaded wiki/tutorial pages listed above have Sacred Book equivalents.
+The source topics listed above have Sacred Book equivalents.
 That does not mean they are finished forever. They are converted as original
-MDPro3/YGOPro lessons, with the external page used as a coverage checklist.
-Where a downloaded page used EDO-style examples or helper names, Sacred Book
+MDPro3/YGOPro lessons, with outside material used only as a coverage checklist.
+Where outside material uses non-local examples or helper names, Sacred Book
 should replace them with local YGOPro examples from `ygopro-scripts`, local
 define files, generated API pages, and core behavior.
 
@@ -68,10 +68,10 @@ of pouring every detail into one page. The broad navigation shape should be:
 | Reset flags, temporary effects, and duration | [Reset Flags And Effect Duration](/learn/reset-flags-and-duration) now centralizes `Effect.SetReset`, phase resets, event resets, `RESETS_STANDARD`, reset counts, player restrictions, card-bound temporary effects, flag lifetimes, and manual reset APIs. |
 | Debugging and common mistakes | [Common Script Errors And Debugging](/learn/common-script-errors-and-debugging) now gives a focused troubleshooting pass that links existing lessons together without turning them into one large appendix. |
 
-## 2026-06-24 Archive Re-Audit
+## 2026-06-24 Source Re-Audit
 
 The archive was re-read as a curriculum and teaching-quality pass, not only a
-topic checklist. The main lesson from the downloaded pages is that beginners
+topic checklist. The main lesson from the source topics is that beginners
 need a visible curve before the full reference library: read a script, study a
 few complete effects, then branch into targeting, Groups, card types, and
 outcomes.
@@ -84,18 +84,18 @@ uses local scripts for Pot of Greed (`c55144522.lua`), Mystical Space Typhoon
 (`c10012614.lua`), and Fissure (`c97169186.lua`). The ladder page extends that
 into complete small script shapes.
 
-| Downloaded page signal | Sacred Book action |
+| Source signal | Sacred Book action |
 | --- | --- |
 | Main page emphasizes a start route before topic browsing. | Home and Learn now expose a shorter beginner curve and route into [Beginner Script Ladder](/learn/beginner-script-ladder) before the full lesson library. |
 | Single-filter targeting spends time on `chkc`, target counts, operation info, and resolution wording. | [Targeting flow](/learn/targeting-flow) now expands `chkc`, local target-redirection examples, `min,max`, and relation/current-state rechecks. |
 | Single-filter selection separates matching-card selection from official targets. | [First Scripts To Study](/learn/first-scripts) and [Selection And Group Handling](/learn/selection-and-group-handling) reinforce targeting versus resolution selection with local scripts. |
 | Min/Max-stat card selection uses tied min/max groups. | [Min/Max Stat Card Selection](/learn/min-max-stat-selection) now documents `Group.GetMinGroup`, `Group.GetMaxGroup`, tie handling, returned values, custom scoring functions, and targeting variants with local scripts. |
-| Equip Spell page includes EDO/Koishi helper names. | Existing [Equip Spells and Equip Cards](/learn/equip-spells) continues to prefer local `Auxiliary.AddEquipSpellEffect`, `Duel.Equip`, and equip-limit APIs. |
-| Movement page includes non-local movement names. | Existing [Functions that move cards across locations](/learn/moving-cards) uses local `Duel.GetControl`, `Duel.Remove`, `Duel.SendtoExtraP`, and related local APIs. |
+| Equip Spell material includes non-local helper names. | [Equip Spells and Equip Cards](/learn/equip-spells) now names the local `Auxiliary.AddEquipSpellEffect` route and points to local scripts for normal, summon-then-equip, existing-card equip, previous-target, and stepped equip flows. |
+| Movement page includes non-local movement names. | [Functions that move cards across locations](/learn/moving-cards) uses local `Duel.GetControl`, `Duel.Remove`, `Duel.SendtoExtraP`, and related local APIs, and explicitly excludes non-local `Duel.RemoveCards`. |
 
-Downloaded function names that were intentionally not copied as local facts:
+Non-local function names that were intentionally not copied as local facts:
 
-| Downloaded name | Local Sacred Book handling |
+| Non-local name | Local Sacred Book handling |
 | --- | --- |
 | `Duel.GetTargetCards` | Use `Duel.GetTargetsRelateToChain()` or `Duel.GetChainInfo(0,CHAININFO_TARGET_CARDS):Filter(Card.IsRelateToEffect,nil,e)`. |
 | `Duel.Control` | Use local [`Duel.GetControl`](/api/functions/Duel/GetControl). |
@@ -105,17 +105,17 @@ Downloaded function names that were intentionally not copied as local facts:
 
 ## Forever Pass Rule
 
-Do not mark a downloaded tutorial page as fully covered until its headings,
+Do not mark a source topic as fully covered until its headings,
 examples, tables, warnings, edge notes, and special cases have either:
 
 - an original Sacred Book equivalent,
 - a stronger local MDPro3/YGOPro replacement example, or
 - a documented reason for exclusion.
 
-External examples that mention another simulator should be treated as lesson
-prompts only. Replace them with local examples from `ygopro-scripts`, local
-define files, generated API data, or verified core behavior. When a downloaded
-page is too broad, split the coverage across focused Sacred Book pages rather
+Outside examples should be treated as lesson prompts only. Replace them with
+local examples from `ygopro-scripts`, local define files, generated API data,
+or verified core behavior. When a source topic is too broad, split the coverage
+across focused Sacred Book pages rather
 than hiding every detail in one long guide.
 
 ## Verification Notes
@@ -200,7 +200,7 @@ Several details were verified directly against local MDPro3/YGOPro sources:
   for material event handling.
 - `Card.IsSetCard` is bound in `ygopro-core\libcard.cpp`; set-code matching is
   implemented through the local core set-code comparison in `card_data.h`.
-- Activation lifecycle quality pass checked the downloaded activation,
+- Activation lifecycle quality pass checked the source activation,
   activation-legality, and callback pages against local scripts:
   `c6172122.lua` for Red-Eyes Fusion activation restrictions,
   `c10443957.lua` for Damage Step negation legality, `c102380.lua` for
@@ -448,6 +448,13 @@ Several details were verified directly against local MDPro3/YGOPro sources:
   Zone `Duel.MoveToField`, and Hyper Psychic Blaster/Assault Mode
   (`c37169670.lua`) for a stepped damage/recovery batch finished by
   `Duel.RDComplete()`.
+- The 2026-06-25 common-effect-pattern follow-up rechecked the source Equip,
+  movement, and LP pages against local `utility.lua`, `constant.lua`,
+  `ygopro-scripts-define\def.lua`, generated API pages, and local scripts. This
+  pass verified `Auxiliary.AddEquipSpellEffect`, `Duel.EquipComplete`,
+  `Duel.RDComplete`, `Duel.BreakEffect`, the absence of local
+  `Duel.RemoveCards`, and the local `CATEGORY_EQUIP` comment that limits it to
+  effects equipping their own card.
 - The continuous-effect refinement was checked against local scripts,
   generated Effect API pages, and `constant.lua`. Banner of Courage
   (`c10012614.lua`) covers a simple face-up Spell field stat effect; Gachi
@@ -473,8 +480,9 @@ Several details were verified directly against local MDPro3/YGOPro sources:
 
 ## Quality Pass Log
 
-| Date | Downloaded page cluster | Sacred Book updates |
+| Date | Source topic cluster | Sacred Book updates |
 | --- | --- | --- |
+| 2026-06-25 | Equip, movement, and LP common-effect pattern pass | Refined [Equip Spells and Equip Cards](/learn/equip-spells) with local helper naming, equip-shape routing, and script-reading examples. Refined [Functions That Move Cards Across Locations](/learn/moving-cards) with local `Duel.Remove` replacement guidance, operation-info categories, `CATEGORY_EQUIP` caution, and movement example scripts. Refined [LP Recovery and Effect Damage](/learn/lp-recovery-and-damage) with amount-source routing, `Duel.BreakEffect` sequencing, and local LP example scripts. Added a common-effect pattern entry point to Home and Learn. |
 | 2026-06-25 | DataEditorX and custom-card data wiring | Added [Card Data and Script Wiring](/learn/card-data-and-script-wiring) as the beginner bridge from a Lua file to `cards.cdb`: `datas`/`texts`, ID/file matching, `aux.Stringid`, type bits, database category labels, set codes, alias, and first-card database checklist. Updated Home, Learn, the sidebar generator, roadmap, and source notes. |
 | 2026-06-24 | Script Explorer and first custom script practice | Expanded [Script Explorer](/tools/script-explorer) with card text search, a dedicated text mode, card-type and category filters, featured-only filtering, type/category result chips, and card-text snippets. Added [Write Your First Custom Card](/learn/first-custom-card) and practice exercises under [Beginner Script Ladder](/learn/beginner-script-ladder). |
 | 2026-06-24 | Beginner route and navigation audit | Added [Beginner Script Ladder](/learn/beginner-script-ladder) as a concrete sequence of complete small scripts for draw, targeting, non-targeting Groups, Min/Max stat selection, continuous modifiers, mandatory triggers, Quick-Play prompts, and Trap responses. Updated Home, Learn, the VitePress sidebar, and the site generator sidebar source. Confirmed every `docs/learn` page is linked from both the Learn index and sidebar. |
@@ -498,7 +506,7 @@ Several details were verified directly against local MDPro3/YGOPro sources:
 | 2026-06-23 | Monster subtype expansion | Added focused [Gemini Monsters](/learn/gemini-monsters), [Toon Monsters](/learn/toon-monsters), [Union Monsters](/learn/union-monsters), and [Spirit Monsters](/learn/spirit-monsters) guides instead of folding subtype rules into a broad monster page. Each guide uses local constants, helper behavior, API links, and examples from local scripts. |
 | 2026-06-23 | Activation lifecycle: activated effects, activation legality, and condition/cost/target/operation callbacks | Expanded [Conditions, Costs, Activation Procedures, and Resolution](/learn/effect-callbacks), [Activation Legality](/learn/activation-legality), [Activated Effects](/learn/activated-effects), and [Cost, Target, And Operation Lifecycle](/learn/cost-target-operation-lifecycle) with event-condition signatures, Damage Step legality, Quick Effect negation checks, activation restrictions, Red-Eyes Fusion and Cyber Dragon Infinity examples, and API links for the referenced functions. |
 | 2026-06-23 | Foundation forever pass: effect objects, filters/groups, movement, continuous effects, stat modifiers, and LP effects | Expanded [Creation, building, and registration of an effect object](/learn/effect-object), [Filters, Card Objects, and Group Objects](/learn/filters-and-groups), [Functions that move cards across locations](/learn/moving-cards), [Effects That Apply Continuously](/learn/continuous-effects), [Continuous stat modifiers](/learn/continuous-stat-modifiers), and [LP Recovery and Effect Damage](/learn/lp-recovery-and-damage) with setter-shape maps, target-range modes, property flags, subgroup selection, movement routing, local dynamic value examples, pure LP activation checks, stepped LP examples, and API links. |
-| 2026-06-23 | Equip and Field Spell strict pass | Expanded [Equip Spells and Equip Cards](/learn/equip-spells) with activation-shape differences, core equip housekeeping, non-applying equip modifiers, lost-target triggers, and summon-then-equip notes. Added [Field Spells](/learn/field-spells) as a focused local-source guide because the Field Spell downloaded page is not present in the current archive folder. |
+| 2026-06-23 | Equip and Field Spell strict pass | Expanded [Equip Spells and Equip Cards](/learn/equip-spells) with activation-shape differences, core equip housekeeping, non-applying equip modifiers, lost-target triggers, and summon-then-equip notes. Added [Field Spells](/learn/field-spells) as a focused local-source guide because no Field Spell source topic was present in the archive folder. |
 | 2026-06-23 | Spell and Trap classification expansion | Added [Spell Card Patterns](/learn/spell-card-patterns) for Normal, Continuous, Quick-Play, and Ritual Spell activation shapes, and [Trap Card Patterns](/learn/trap-card-patterns) for Normal, Continuous, and Counter Trap scripting. Local examples include Pot of Greed, Monster Reborn, Mystical Space Typhoon, Transonic Bird, Infinite Impermanence, Trap Trick, Cyberdark Invasion, and Chaos Trap Hole. |
 | 2026-06-23 | Ritual procedure expansion | Added [Ritual Procedure Guide](/learn/ritual-procedure) with helper selection, `AddRitualProcUltimate` internals, target/operation flow, material subgroup checks, `SetMaterial`, `ReleaseRitualMaterial`, `SUMMON_TYPE_RITUAL`, `CompleteProcedure`, manual Sonic Tracker-style flow, Nekroz Kaleidoscope nonstandard material movement, and API links. |
 | 2026-06-23 | Fusion procedure expansion | Added [Fusion Procedure Guide](/learn/fusion-procedure) with Fusion Monster material procedures, Fusion-specific material identity checks, Polymerization flow, Deck Fusion examples, Chain Material fallback, material movement operations, Contact Fusion distinction, and API links. |
@@ -512,16 +520,15 @@ Several details were verified directly against local MDPro3/YGOPro sources:
 
 ## Intentional Rewrites
 
-Some downloaded sections referenced helper APIs or simulator behavior that are
+Some source sections referenced helper APIs or simulator behavior that are
 not the local MDPro3/YGOPro source of truth. Those sections were rewritten as
 local equivalents instead of imported directly:
 
 - Equip procedure material is documented through local
   `Auxiliary.AddEquipSpellEffect`, `Duel.Equip`, `EFFECT_EQUIP_LIMIT`, and equip
-  target APIs instead of EDO-only helper names.
+  target APIs instead of non-local helper names.
 - Field Spell material was reconstructed from local scripts and core behavior
-  because no downloaded `Field Spell - YGOPRO Scripting Wiki.html` file exists
-  in the current archive folder.
+  because no Field Spell source topic was present in the archive folder.
 - Movement-table entries that used non-local function names were translated to
   local APIs such as `Duel.GetControl` and `Duel.SendtoExtraP`.
 - Examples sourced from external repositories were replaced with local-script
@@ -531,7 +538,7 @@ local equivalents instead of imported directly:
 
 Future learning pages should continue this style:
 
-- Use downloaded pages only to notice topics and teaching gaps.
+- Use source topics only to notice topics and teaching gaps.
 - Rewrite explanations in Sacred Book's own words.
 - Prefer local script-backed examples over invented snippets.
 - Mark inferred behavior clearly when the local core does not prove it.

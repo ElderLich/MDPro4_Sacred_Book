@@ -27,6 +27,23 @@ LP changes affect players, not cards. That is why LP scripts often store:
 - the announced category with `Duel.SetOperationInfo`
 - event-provided damage/recovery values through callback arguments such as `ev`
 
+`Duel.SetTargetPlayer` and `Duel.SetTargetParam` store Chain data that the
+operation can read later. `Duel.SetOperationInfo` announces what the Chain Link
+intends to do. They are related, but they are not substitutes for each other.
+
+## Pick The Amount Source
+
+Most LP bugs come from using the wrong source for the number.
+
+| Amount source | When to use it | Operation pattern |
+| --- | --- | --- |
+| Fixed value | The card text names a number such as 500 or 1000. | Store the player/amount, then call `Duel.Damage` or `Duel.Recover`. |
+| Current field or hand state | The text cares about what exists at resolution. | Announce the best visible estimate, then recalculate in the operation. |
+| Targeted card value | The amount depends on a monster's ATK/DEF/Level. | Target the card, recheck relation and face-up state, then read the current value. |
+| Event value | The trigger passes the amount in `ev`. | Use `ev` unless the card text says to recalculate. |
+| Event group count | The text counts cards from the triggering event. | Capture/count the event group instead of counting the field later. |
+| Actual LP changed | The next action depends on damage/recovery really happening. | Use the return value from `Duel.Damage` or `Duel.Recover`. |
+
 ## Pure LP Effects And Activation Checks
 
 A pure fixed LP effect often has a simple legality branch:
@@ -133,6 +150,10 @@ Sequential calls are simple:
 Duel.Damage(1-tp,500,REASON_EFFECT)
 Duel.Recover(tp,500,REASON_EFFECT)
 ```
+
+When the text separates actions into visible steps, local scripts often insert
+`Duel.BreakEffect()` between them. Do not use stepped LP changes for a "then"
+sequence that should resolve one action first and the next action afterward.
 
 For a split recovery/damage process, the local API exposes `is_step=true` and
 `Duel.RDComplete()`.
@@ -258,6 +279,20 @@ Duel.Recover(tp,ct*500,REASON_EFFECT)
 The first pattern remembers what triggered the effect. The second pattern asks
 what is true now.
 
+## Local Scripts To Read
+
+These scripts show the common LP branches in the local script set:
+
+| Script | LP pattern |
+| --- | --- |
+| `c99518961.lua` | Stores a player at activation, then calculates hand-based damage again during resolution. |
+| `c99427357.lua` | Recovers LP from a targeted monster's current ATK after relation and face-up checks. |
+| `c13313278.lua` | Uses the event value `ev` as the recovery amount. |
+| `c12694768.lua` | Applies simultaneous damage to both players with stepped `Duel.Damage` and `Duel.RDComplete()`. |
+| `c37169670.lua` | Reads announced damage/recovery operation info and resolves a mixed stepped batch. |
+| `c49407319.lua` | Uses sequential damage and return values to decide whether the follow-up damage happens. |
+| `c12950294.lua` | Uses `Duel.BreakEffect()`, then damage return value, then recovery from actual damage dealt. |
+
 ## Categories and Operation Info
 
 Match the effect category to the action:
@@ -299,4 +334,7 @@ Useful API pages:
 - [`Duel.RDComplete`](/api/functions/Duel/RDComplete)
 - [`Duel.SetTargetPlayer`](/api/functions/Duel/SetTargetPlayer)
 - [`Duel.SetTargetParam`](/api/functions/Duel/SetTargetParam)
+- [`Duel.SetOperationInfo`](/api/functions/Duel/SetOperationInfo)
+- [`Duel.GetOperationInfo`](/api/functions/Duel/GetOperationInfo)
 - [`Duel.GetChainInfo`](/api/functions/Duel/GetChainInfo)
+- [`Duel.BreakEffect`](/api/functions/Duel/BreakEffect)

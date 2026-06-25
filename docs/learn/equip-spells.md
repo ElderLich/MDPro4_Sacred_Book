@@ -9,6 +9,28 @@ MDPro3/YGOPro exposes the equip action through `Duel.Equip`. Local utility
 scripts also provide `Auxiliary.AddEquipSpellEffect`, which builds the common
 Equip Spell activation effect and `EFFECT_EQUIP_LIMIT` for you.
 
+Some outside examples use helper names that do not exist in this local script
+set. In MDPro3, the standard Equip Spell helper is
+`Auxiliary.AddEquipSpellEffect`, and many cards still write the activation,
+equip limit, and operation by hand when the card has extra state to manage.
+
+## Pick The Equip Shape First
+
+Before writing the filter, decide what kind of equip flow the card actually
+uses.
+
+| Card text shape | Local pattern to start from |
+| --- | --- |
+| "Activate this card by targeting 1 face-up monster..." | Use `Auxiliary.AddEquipSpellEffect` or the manual activation pattern below. |
+| "Special Summon that target, then equip this card to it" | Target the monster in its source location, Special Summon it, then call `Duel.Equip` and register a limit during resolution. |
+| "Equip 1 appropriate card from your GY/Deck/banished cards" | Select or target the card to become equipped, check zone availability, `CheckEquipTarget`, uniqueness, and forbidden state before `Duel.Equip`. |
+| "Equip several cards at once" | Use stepped `Duel.Equip(..., true, true)` calls, then finish with `Duel.EquipComplete()`. |
+| "Place this monster in the Spell & Trap Zone as a Continuous Spell" | Use `Duel.MoveToField` and type-changing effects instead of equip APIs. |
+
+This first choice prevents a common beginner mistake: writing every "put in
+the Spell & Trap Zone" effect as an Equip Spell. Equip state is a relationship
+between two cards; `MoveToField` is just a field-placement action.
+
 ## Manual Equip Spell Pattern
 
 The local script style for a basic Equip Spell is:
@@ -346,6 +368,23 @@ GY: it checks the available Spell & Trap Zones, equips each selected card with
 `Duel.Equip(tp,tc,c,true,true)`, then calls `Duel.EquipComplete()` once after
 the loop. Most ordinary Equip Spells call `Duel.Equip` without the stepped
 argument.
+
+## Local Scripts To Read
+
+These scripts are useful when you need a concrete local pattern instead of a
+generic template.
+
+| Script | Why it is useful |
+| --- | --- |
+| `c1435851.lua` | Small ordinary Equip Spell using the local `aux.AddEquipSpellEffect` helper. |
+| `c10204849.lua` | Targets a monster, Special Summons it, equips the Spell to it, then registers `EFFECT_EQUIP_LIMIT` during resolution. |
+| `c10613952.lua` | Equips several cards with stepped `Duel.Equip` calls and finishes with `Duel.EquipComplete()`. |
+| `c11802691.lua` | Checks `CheckEquipTarget`, `CheckUniqueOnField`, and `IsForbidden` before equipping cards chosen from another location. |
+| `c11913700.lua` | Uses `GetPreviousEquipTarget` for a lost-target trigger after the Equip Card leaves the field. |
+
+When you see an equip helper name that is not in the local API, use this table
+as the starting point. The MDPro3 scripts above show the behavior that exists
+in this repository.
 
 ## Common Pitfalls
 
