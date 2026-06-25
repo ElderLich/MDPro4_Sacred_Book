@@ -27,5 +27,6 @@ Sacred Book can learn from the shape of other scripting docs without importing t
 
 - Continue usage-ranked API polish by function cluster, starting with pages that learners reach from the focused guides.
 - Add multilingual parameter and return notes so generated editor exports and public API pages can share reviewed data without sharing one description field.
+- Keep tightening generated `How To Use It` entries around high-confusion function families before adding new broad lesson pages.
 - Add deeper Script Explorer filters when local data exposes useful constants beyond card type and operation category.
 - Continue local topic-archive integration one page cluster at a time, expanding only gaps that are not already covered by focused Sacred Book guides.

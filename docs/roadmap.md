@@ -19,6 +19,7 @@ This is the working todo for turning Sacred Book into a complete MDPro3 scriptin
 - [x] Add tutorial-style `How To Use It` sections for core movement/action functions.
 - [x] Add tutorial-style `How To Use It` sections for effect setter functions.
 - [x] Polish movement, Equip, and LP API pages with local-source summaries, cross-links, and focused `How To Use It` examples.
+- [x] Polish selection/targeting, chain/negation, and reset/count/flag API pages with local-source summaries, cross-links, and focused `How To Use It` examples.
 
 ## Documentation Coverage
 
@@ -51,6 +52,7 @@ This is the working todo for turning Sacred Book into a complete MDPro3 scriptin
 - [x] Refine the movement and LP/damage lessons with destination-vs-field movement families, temporary banish return handling, and stepped mixed LP batches.
 - [x] Deepen the Equip, movement, and LP common-effect pattern guides with local helper-name replacements, operation-info categories, script-reading examples, and amount-source routing.
 - [x] Deepen the related generated API pages for movement, Equip, and LP behavior, including `Duel.ReturnToField`, `Duel.SetOperationInfo`, `Duel.GetOperationInfo`, `Duel.Damage`, `Duel.Recover`, `Duel.RDComplete`, and Equip target helpers.
+- [x] Deepen the related generated API pages for targeting and lifecycle behavior, including `Duel.SelectTarget`, `Duel.SelectMatchingCard`, relation-aware target retrieval, Chain negation helpers, `Effect.SetCountLimit`, `Effect.SetReset`, `Effect.SetRange`, `Effect.SetTargetRange`, and card/player flag markers.
 - [x] Refine the continuous-effect and stat-modifier lessons with setter build order, target-range modes, stat-code families, and value-callback player-reference guidance.
 - [x] Refine the Equip and Field Spell lessons with activation target-vs-equip-limit guidance, nonstandard equip prechecks, stepped equip examples, handler-range guidance, and activate-vs-place Field Spell distinctions.
 - [x] Add a focused selection and Group-handling guide for target selection, resolution choice, subgroup selection, and stored Groups.

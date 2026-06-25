@@ -9,25 +9,26 @@ Effect.SetRange(Effect e, int range) -> void
 ## Description
 
 Sets the location range where e applies or can be activated.
+This is the handler's active location, not the affected-card range. Continuous field effects usually pair it with Effect.SetTargetRange.
 
 ## How To Use It
 
-`SetRange` tells the engine where the handler must be for this effect to apply or be activated.
-
-For an ignition effect that can be activated while the monster is face-up on the field:
+Use this to say where the effect itself is active or can be activated from.
 
 ```lua
-e1:SetType(EFFECT_TYPE_IGNITION)
-e1:SetRange(LOCATION_MZONE)
+e1:SetType(EFFECT_TYPE_FIELD)
+e1:SetCode(EFFECT_UPDATE_ATTACK)
+e1:SetRange(LOCATION_SZONE)
+e1:SetTargetRange(LOCATION_MZONE,0)
 ```
 
-For a Graveyard trigger or ignition effect, use `LOCATION_GRAVE`. For a continuous field effect, `SetRange` is the handler's location, while `SetTargetRange` describes which cards or players are affected.
+`SetRange` is the handler's location. `SetTargetRange` is the affected side or destination range. Continuous effects commonly need both.
 
 ## Related Functions
 
 - [Card.RegisterEffect](/api/functions/Card/RegisterEffect)
 - [Effect.SetTargetRange](/api/functions/Effect/SetTargetRange)
-- [Duel.GetLocationCount](/api/functions/Duel/GetLocationCount)
+- [Effect.SetCode](/api/functions/Effect/SetCode)
 
 ## Parameters
 

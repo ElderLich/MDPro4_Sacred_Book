@@ -10,12 +10,14 @@ Duel.SelectTarget(int sel_player, [function|nil f], int player, int s, int o, in
 
 Lets sel_player choose min to max cards that satisfy filter f, are not excluded by ex, and can be targeted by the currently handled effect.
 The selected cards are registered as the current Chain's target cards. For non-continuous effects, the core also creates Chain relations used by IsRelateToEffect and related helpers.
+This requires a current Chain; use Duel.SelectMatchingCard or Group.Select for ordinary resolution choices.
 
 ## How To Use It
 
 Use this in the Target callback of an activated effect that targets cards.
 
-The selected cards are saved as the Chain's targets. For one target, read it with `Duel.GetFirstTarget` and check `tc:IsRelateToEffect(e)` before applying the effect.
+The selected cards are saved as the Chain's targets. This function needs a current Chain; use `Duel.SelectMatchingCard` or `Group.Select` for ordinary resolution choices.
+For one target, read it with `Duel.GetFirstTarget` and check `tc:IsRelateToEffect(e)` before applying the effect.
 For several targets, use `Duel.GetTargetsRelateToChain` to get the target group that is still related to the resolving Chain.
 
 ```lua
@@ -33,6 +35,12 @@ function s.operation(e,tp,eg,ep,ev,re,r,rp)
     end
 end
 ```
+
+## Related Functions
+
+- [Duel.IsExistingTarget](/api/functions/Duel/IsExistingTarget)
+- [Duel.GetFirstTarget](/api/functions/Duel/GetFirstTarget)
+- [Duel.GetTargetsRelateToChain](/api/functions/Duel/GetTargetsRelateToChain)
 
 ## Parameters
 

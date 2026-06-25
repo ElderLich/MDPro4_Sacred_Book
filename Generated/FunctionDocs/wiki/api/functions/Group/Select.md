@@ -9,6 +9,7 @@ Group.Select(Group g, int player, int min, int max, [Card|Group|nil ex]) -> Grou
 ## Description
 
 Lets player choose min to max cards from g, optionally excluding ex, and returns the selected Group.
+This is a plain Group choice; it does not register Chain targets or create IsRelateToEffect relations.
 
 ## How To Use It
 
@@ -22,6 +23,12 @@ Duel.SendtoHand(sg,nil,REASON_EFFECT)
 ```
 
 If you still need to filter while selecting, use `Group.FilterSelect` or `Duel.SelectMatchingCard` instead.
+
+## Related Functions
+
+- [Group.FilterSelect](/api/functions/Group/FilterSelect)
+- [Duel.SelectMatchingCard](/api/functions/Duel/SelectMatchingCard)
+- [Duel.SelectTarget](/api/functions/Duel/SelectTarget)
 
 ## Parameters
 

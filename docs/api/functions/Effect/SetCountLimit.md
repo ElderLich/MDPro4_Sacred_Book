@@ -11,6 +11,7 @@ Effect.SetCountLimit(Effect e, int count, [int code]) -> void
 Sets how many times e can be used before its count limit is spent.
 If count is 0, the core treats it as 1. Effects that share a nonzero code share the same usage count for the checked player.
 EFFECT_COUNT_CODE_OATH uses oath-style rollback on negated activations and failed procedure attempts; EFFECT_COUNT_CODE_DUEL uses the duel-long count map; EFFECT_COUNT_CODE_SINGLE shares usage by handler instance; EFFECT_COUNT_CODE_CHAIN uses the chain count map.
+Use flag effects for custom reminders or activity markers; use SetCountLimit for engine-managed use counts.
 
 ## How To Use It
 
@@ -28,6 +29,7 @@ Effects with the same nonzero code share the same count. Special flags such as `
 
 - [Effect.CheckCountLimit](/api/functions/Effect/CheckCountLimit)
 - [Effect.UseCountLimit](/api/functions/Effect/UseCountLimit)
+- [Card.RegisterFlagEffect](/api/functions/Card/RegisterFlagEffect)
 
 ## Parameters
 

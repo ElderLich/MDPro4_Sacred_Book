@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-06-25T05:28:24+00:00",
+    "generated_at": "2026-06-25T17:11:16+00:00",
     "workspace": "D:\\Programs\\GitHub\\MDPro3_Sacred_Book",
     "dataeditorx_data": "D:\\Programs\\GitHub\\DataEditorX\\DataEditorX\\data",
     "mdpro3_locales": "D:\\Programs\\GitHub\\MDPro3_Data\\Data\\locales",
@@ -2749,7 +2749,8 @@
         "返回c上编号为code的标记效果数量。"
       ],
       "description_en": [
-        "Returns how many flag effects with code are registered on c."
+        "Returns how many flag effects with code are registered on c.",
+        "The return value is a count, not a boolean; compare it with 0 when testing whether a card marker exists."
       ],
       "english_status": "translated_exact",
       "source_files": [
@@ -2807,7 +2808,8 @@
       ],
       "description_en": [
         "Returns the first label value from each flag effect with the given code on c.",
-        "If c has no matching flag effect, the core returns nil. Matching flag effects with no label return 0 for that slot."
+        "If c has no matching flag effect, the core returns nil. Matching flag effects with no label return 0 for that slot.",
+        "If several matching markers exist, the binding returns several Lua values."
       ],
       "english_status": "translated_exact",
       "source_files": [
@@ -13319,7 +13321,8 @@
       "description_en": [
         "Registers a special single-card flag effect on c and returns the created Effect.",
         "Flag effects are script markers: their code is kept separate from regular effect codes, they cannot be disabled, and count=0 is treated as 1.",
-        "When reset_flag contains RESET_PHASE without RESET_SELF_TURN or RESET_OPPO_TURN, the core applies both turn sides. See the Reset Flags And Effect Duration learning guide for full patterns."
+        "When reset_flag contains RESET_PHASE without RESET_SELF_TURN or RESET_OPPO_TURN, the core applies both turn sides. See the Reset Flags And Effect Duration learning guide for full patterns.",
+        "Use card flags for markers tied to one card's lifecycle; use Duel.RegisterFlagEffect for player markers."
       ],
       "english_status": "translated_exact",
       "source_files": [
@@ -13727,7 +13730,8 @@
         "重置c上code对应的全部标志效果。"
       ],
       "description_en": [
-        "Resets all flag effects on c with code."
+        "Resets all flag effects on c with code.",
+        "This clears matching card markers manually; it does not affect player markers registered with Duel.RegisterFlagEffect."
       ],
       "english_status": "translated_exact",
       "source_files": [
@@ -16898,7 +16902,8 @@
       "description_en": [
         "Returns whether the current core hint-timing masks contain timing for either player.",
         "This is a prompt-window helper, not a full activation legality check; no indexed local card script currently calls it directly.",
-        "Use ordinary type/code/range, condition, cost, and target checks for real legality. See the Chain Timing And Activation Windows learning guide for full patterns."
+        "Use ordinary type/code/range, condition, cost, and target checks for real legality. See the Chain Timing And Activation Windows learning guide for full patterns.",
+        "Pair this with Effect.SetHintTiming when an optional effect needs to be visible only during specific timing windows."
       ],
       "english_status": "translated_exact",
       "source_files": [
@@ -18668,7 +18673,8 @@
         "返回当前连锁中已记录的连锁环数量。"
       ],
       "description_en": [
-        "Returns the number of Chain Links currently stored in the active Chain."
+        "Returns the number of Chain Links currently stored in the active Chain.",
+        "Use Duel.GetChainInfo to inspect a specific Chain Link; this function only returns the current Chain size."
       ],
       "english_status": "translated_exact",
       "source_files": [
@@ -19263,7 +19269,8 @@
       ],
       "description_en": [
         "Returns the first target card currently recorded for the resolving Chain.",
-        "If multiple target cards were recorded, the remaining target cards are returned as additional values in recorded order."
+        "If multiple target cards were recorded, the remaining target cards are returned as additional values in recorded order.",
+        "For effects that target several cards and affect only the remaining valid targets, Duel.GetTargetsRelateToChain is usually clearer."
       ],
       "english_status": "translated_exact",
       "source_files": [
@@ -19315,7 +19322,8 @@
         "返回player上编号为code的玩家标记效果数量。"
       ],
       "description_en": [
-        "Returns how many player flag effects with code are registered on player."
+        "Returns how many player flag effects with code are registered on player.",
+        "The return value is a count, not a boolean; compare it with 0 when testing whether a player marker exists."
       ],
       "english_status": "translated_exact",
       "source_files": [
@@ -20916,7 +20924,8 @@
       ],
       "description_en": [
         "Returns all target cards currently related to the resolving Chain.",
-        "This is the relation-aware helper for multi-target operations; targets that left their expected place are omitted from the returned Group."
+        "This is the relation-aware helper for multi-target operations; targets that left their expected place are omitted from the returned Group.",
+        "The returned Group can be empty, so check its count before applying a follow-up action."
       ],
       "english_status": "translated_exact",
       "source_files": [
@@ -21701,7 +21710,8 @@
       "description_en": [
         "Compatibility check for whether chainc's activation can be negated.",
         "In this MDPro3 core binding, the function currently returns true for any chain count.",
-        "Local scripts still call it in negation conditions so the script expresses the intended activation-legality check."
+        "Local scripts still call it in negation conditions so the script expresses the intended activation-legality check.",
+        "Use it with Duel.NegateActivation, not as a substitute for effect-negation checks such as Duel.IsChainDisablable."
       ],
       "english_status": "translated_exact",
       "source_files": [
@@ -23556,7 +23566,8 @@
       ],
       "description_en": [
         "Attempts to negate the activation of a Chain Link and returns true only if the activation was successfully negated.",
-        "Use it in a resolving negation operation after checking activation legality, commonly with Duel.IsChainNegatable. Gate follow-up actions such as destroy, banish, or send to the GY behind the boolean return."
+        "Use it in a resolving negation operation after checking activation legality, commonly with Duel.IsChainNegatable. Gate follow-up actions such as destroy, banish, or send to the GY behind the boolean return.",
+        "Use Duel.NegateEffect for \"negate that effect\" text where the activation itself is not negated."
       ],
       "english_status": "translated_exact",
       "source_files": [
@@ -23654,7 +23665,8 @@
       ],
       "description_en": [
         "Attempts to negate the effect of a Chain Link without necessarily negating its activation, and returns true if the effect was successfully negated.",
-        "Use this for text such as \"negate that effect\". The optional forced argument requests a forced disable."
+        "Use this for text such as \"negate that effect\". The optional forced argument requests a forced disable.",
+        "Use Duel.NegateActivation for activation negation and Duel.NegateSummon for Summon negation; those are different game events."
       ],
       "english_status": "translated_exact",
       "source_files": [
@@ -23746,7 +23758,8 @@
       ],
       "description_en": [
         "Negates a current Normal Summon, Flip Summon, or Special Summon for targets.",
-        "targets may be a Card or Group. Normal and Flip Summon negation require a single card; Special Summon negation can process a group and only negates cards whose Summon is negatable by the current reason effect. The core raises the matching *_SUMMON_NEGATED event and returns no Lua value."
+        "targets may be a Card or Group. Normal and Flip Summon negation require a single card; Special Summon negation can process a group and only negates cards whose Summon is negatable by the current reason effect. The core raises the matching *_SUMMON_NEGATED event and returns no Lua value.",
+        "This is Summon negation, not Chain activation negation; pass the Summoned card or Group, not a Chain Link number."
       ],
       "english_status": "translated_exact",
       "source_files": [
@@ -24287,7 +24300,8 @@
       "description_en": [
         "Registers a player/global flag effect on player and returns the created Effect.",
         "The flag effect is player-targeted, field-only, cannot be disabled, and count=0 is treated as 1.",
-        "When reset_flag contains RESET_PHASE without RESET_SELF_TURN or RESET_OPPO_TURN, the core applies both turn sides. See the Reset Flags And Effect Duration learning guide for full patterns."
+        "When reset_flag contains RESET_PHASE without RESET_SELF_TURN or RESET_OPPO_TURN, the core applies both turn sides. See the Reset Flags And Effect Duration learning guide for full patterns.",
+        "Use player flags for player-wide markers; use Card.RegisterFlagEffect for markers tied to one card."
       ],
       "english_status": "translated_exact",
       "source_files": [
@@ -24665,7 +24679,8 @@
         "重置player持有的code对应全部玩家标志效果。"
       ],
       "description_en": [
-        "Resets all player flag effects with code for player."
+        "Resets all player flag effects with code for player.",
+        "This clears matching player markers manually; card markers use Card.ResetFlagEffect."
       ],
       "english_status": "translated_exact",
       "source_files": [
@@ -25205,7 +25220,8 @@
       ],
       "description_en": [
         "Lets sel_player choose min to max cards from the specified locations that satisfy filter f and are not excluded by ex.",
-        "s is player's own location mask and o is the opponent's location mask from that player's viewpoint. Extra arguments after ex are passed to f."
+        "s is player's own location mask and o is the opponent's location mask from that player's viewpoint. Extra arguments after ex are passed to f.",
+        "This does not register official Chain targets; use Duel.SelectTarget for card text that targets."
       ],
       "english_status": "translated_exact",
       "source_files": [
@@ -25705,7 +25721,8 @@
       ],
       "description_en": [
         "Lets sel_player choose min to max cards that satisfy filter f, are not excluded by ex, and can be targeted by the currently handled effect.",
-        "The selected cards are registered as the current Chain's target cards. For non-continuous effects, the core also creates Chain relations used by IsRelateToEffect and related helpers."
+        "The selected cards are registered as the current Chain's target cards. For non-continuous effects, the core also creates Chain relations used by IsRelateToEffect and related helpers.",
+        "This requires a current Chain; use Duel.SelectMatchingCard or Group.Select for ordinary resolution choices."
       ],
       "english_status": "translated_exact",
       "source_files": [
@@ -28175,7 +28192,8 @@
       ],
       "description_en": [
         "Checks whether e's count limit is still available for player p.",
-        "Normal activation checks already use the core count-limit check; this helper is mainly for scripts that manually inspect another Effect object."
+        "Normal activation checks already use the core count-limit check; this helper is mainly for scripts that manually inspect another Effect object.",
+        "If a custom helper spends the count manually, pair this with Effect.UseCountLimit."
       ],
       "english_status": "translated_exact",
       "source_files": [
@@ -30079,7 +30097,8 @@
       "description_en": [
         "Sets how many times e can be used before its count limit is spent.",
         "If count is 0, the core treats it as 1. Effects that share a nonzero code share the same usage count for the checked player.",
-        "EFFECT_COUNT_CODE_OATH uses oath-style rollback on negated activations and failed procedure attempts; EFFECT_COUNT_CODE_DUEL uses the duel-long count map; EFFECT_COUNT_CODE_SINGLE shares usage by handler instance; EFFECT_COUNT_CODE_CHAIN uses the chain count map."
+        "EFFECT_COUNT_CODE_OATH uses oath-style rollback on negated activations and failed procedure attempts; EFFECT_COUNT_CODE_DUEL uses the duel-long count map; EFFECT_COUNT_CODE_SINGLE shares usage by handler instance; EFFECT_COUNT_CODE_CHAIN uses the chain count map.",
+        "Use flag effects for custom reminders or activity markers; use SetCountLimit for engine-managed use counts."
       ],
       "english_status": "translated_exact",
       "source_files": [
@@ -30491,7 +30510,8 @@
         "设置效果e的生效或可发动位置。"
       ],
       "description_en": [
-        "Sets the location range where e applies or can be activated."
+        "Sets the location range where e applies or can be activated.",
+        "This is the handler's active location, not the affected-card range. Continuous field effects usually pair it with Effect.SetTargetRange."
       ],
       "english_status": "translated_exact",
       "source_files": [
@@ -30547,7 +30567,8 @@
       "description_en": [
         "Sets when e resets and how many reset checks it can survive.",
         "If reset_count is 0 or omitted, the core stores 1. When a phase reset is used without an explicit turn side, the core applies both RESET_SELF_TURN and RESET_OPPO_TURN.",
-        "For card-bound temporary effects, combine the card-identity reset, such as RESET_EVENT+RESETS_STANDARD, with the phase or lifetime reset from the card text. See the Reset Flags And Effect Duration learning guide for full patterns."
+        "For card-bound temporary effects, combine the card-identity reset, such as RESET_EVENT+RESETS_STANDARD, with the phase or lifetime reset from the card text. See the Reset Flags And Effect Duration learning guide for full patterns.",
+        "RegisterFlagEffect uses the same phase-turn default behavior for card and player markers."
       ],
       "english_status": "translated_exact",
       "source_files": [
@@ -30654,7 +30675,8 @@
       ],
       "description_en": [
         "Sets e's target range fields and clears EFFECT_FLAG_ABSOLUTE_TARGET.",
-        "For most field effects, s_range is the affected locations on the handler's controller's side and o_range is the affected locations on the opponent's side. With EFFECT_FLAG_SPSUM_PARAM, they store Special Summon destination player and position."
+        "For most field effects, s_range is the affected locations on the handler's controller's side and o_range is the affected locations on the opponent's side. With EFFECT_FLAG_SPSUM_PARAM, they store Special Summon destination player and position.",
+        "Use Effect.SetAbsoluteRange when the affected sides must be fixed to a specific player instead of relative to the handler."
       ],
       "english_status": "translated_exact",
       "source_files": [
@@ -31644,7 +31666,8 @@
       ],
       "description_en": [
         "Returns a new Group containing cards from g that satisfy filter f and are not excluded by ex.",
-        "Extra arguments after ex are passed to f after the card argument."
+        "Extra arguments after ex are passed to f after the card argument.",
+        "The source Group is not modified."
       ],
       "english_status": "translated_exact",
       "source_files": [
@@ -31793,7 +31816,8 @@
       ],
       "description_en": [
         "Lets player choose min to max cards from g that satisfy filter f, excluding ex, and returns the selected Group.",
-        "Extra arguments after ex are passed to f after the Card argument."
+        "Extra arguments after ex are passed to f after the Card argument.",
+        "This is a selection from an existing Group, not an official Chain target selection."
       ],
       "english_status": "translated_exact",
       "source_files": [
@@ -32106,7 +32130,8 @@
       ],
       "description_en": [
         "Calls f for each card in g, forwards any extra arguments, and returns a Group containing every card tied for the maximum value.",
-        "The second return is the maximum integer value. If g is empty, this binding returns no Lua values."
+        "The second return is the maximum integer value. If g is empty, this binding returns no Lua values.",
+        "Keep all ties when the card text affects every highest-scoring card; call Group.Select when a player must choose one tied card."
       ],
       "english_status": "translated_exact",
       "source_files": [
@@ -32170,7 +32195,8 @@
       ],
       "description_en": [
         "Calls f for each card in g, forwards any extra arguments, and returns a Group containing every card tied for the minimum value.",
-        "The second return is the minimum integer value. If g is empty, this binding returns no Lua values."
+        "The second return is the minimum integer value. If g is empty, this binding returns no Lua values.",
+        "Keep all ties when the card text affects every lowest-scoring card; call Group.Select when a player must choose one tied card."
       ],
       "english_status": "translated_exact",
       "source_files": [
@@ -32781,7 +32807,8 @@
         "让player从g中选择min到max张卡，可选排除ex，并返回选中的Group。"
       ],
       "description_en": [
-        "Lets player choose min to max cards from g, optionally excluding ex, and returns the selected Group."
+        "Lets player choose min to max cards from g, optionally excluding ex, and returns the selected Group.",
+        "This is a plain Group choice; it does not register Chain targets or create IsRelateToEffect relations."
       ],
       "english_status": "translated_exact",
       "source_files": [
@@ -45074,7 +45101,8 @@
       ],
       "description_en": [
         "Lets tp select a subgroup from g with size between min and max that satisfies f. It respects already selected cards and returns nil if no valid selection is completed.",
-        "Use Group.CheckSubGroup for the legality check, then SelectSubGroup where the player actually chooses the cards. If the chosen Group is stored for a later callback, call KeepAlive and later DeleteGroup."
+        "Use Group.CheckSubGroup for the legality check, then SelectSubGroup where the player actually chooses the cards. If the chosen Group is stored for a later callback, call KeepAlive and later DeleteGroup.",
+        "Use this for group-level requirements; use Group.FilterSelect for ordinary one-card filters."
       ],
       "english_status": "translated_exact",
       "source_files": [

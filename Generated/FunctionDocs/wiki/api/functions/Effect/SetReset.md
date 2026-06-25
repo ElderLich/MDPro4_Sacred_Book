@@ -11,6 +11,7 @@ Effect.SetReset(Effect e, int reset_flag, [int reset_count]) -> void
 Sets when e resets and how many reset checks it can survive.
 If reset_count is 0 or omitted, the core stores 1. When a phase reset is used without an explicit turn side, the core applies both RESET_SELF_TURN and RESET_OPPO_TURN.
 For card-bound temporary effects, combine the card-identity reset, such as RESET_EVENT+RESETS_STANDARD, with the phase or lifetime reset from the card text. See the Reset Flags And Effect Duration learning guide for full patterns.
+RegisterFlagEffect uses the same phase-turn default behavior for card and player markers.
 
 ## How To Use It
 
@@ -34,6 +35,8 @@ If the count is omitted or 0, MDPro3 stores 1. If a phase reset does not specify
 
 - [Card.RegisterEffect](/api/functions/Card/RegisterEffect)
 - [Effect.Reset](/api/functions/Effect/Reset)
+- [Card.RegisterFlagEffect](/api/functions/Card/RegisterFlagEffect)
+- [Duel.RegisterFlagEffect](/api/functions/Duel/RegisterFlagEffect)
 
 ## Parameters
 

@@ -12,6 +12,18 @@ Lets player choose one card from cg to add to the current selection or one card 
 sg may be nil. finishable controls whether the selection can finish at its current size, cancelable allows cancellation, and cancellation returns nil. min and max default to 1.
 This is a building block for step-by-step material or procedure selections. For ordinary one-shot choices, Group.Select, Group.FilterSelect, or Duel.SelectMatchingCard is usually clearer.
 
+## How To Use It
+
+Use this for custom selection loops that need to add and remove candidates while tracking whether the current choice can finish.
+
+It is lower-level than `Group.Select` and is mostly useful inside helper procedures. For ordinary card choices, prefer `Group.Select`, `Group.FilterSelect`, or `Duel.SelectMatchingCard`.
+
+## Related Functions
+
+- [Group.SelectSubGroup](/api/functions/Group/SelectSubGroup)
+- [Group.Select](/api/functions/Group/Select)
+- [Group.CheckSubGroup](/api/functions/Group/CheckSubGroup)
+
 ## Parameters
 
 - `cg` `Group`

@@ -10,6 +10,7 @@ Group.Filter(Group g, function f, [Card|Group|nil ex], ... any) -> Group
 
 Returns a new Group containing cards from g that satisfy filter f and are not excluded by ex.
 Extra arguments after ex are passed to f after the card argument.
+The source Group is not modified.
 
 ## How To Use It
 
@@ -21,6 +22,12 @@ local fg=g:Filter(Card.IsFaceup,nil)
 ```
 
 Extra arguments after `ex` are passed to the filter after the card. The original Group is not destroyed; the function returns a new Group.
+
+## Related Functions
+
+- [Group.FilterCount](/api/functions/Group/FilterCount)
+- [Group.Select](/api/functions/Group/Select)
+- [Group.FilterSelect](/api/functions/Group/FilterSelect)
 
 ## Parameters
 

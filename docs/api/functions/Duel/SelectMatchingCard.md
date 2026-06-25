@@ -10,6 +10,7 @@ Duel.SelectMatchingCard(int sel_player, [function|nil f], int player, int s, int
 
 Lets sel_player choose min to max cards from the specified locations that satisfy filter f and are not excluded by ex.
 s is player's own location mask and o is the opponent's location mask from that player's viewpoint. Extra arguments after ex are passed to f.
+This does not register official Chain targets; use Duel.SelectTarget for card text that targets.
 
 ## How To Use It
 
@@ -24,7 +25,13 @@ if #g>0 then
 end
 ```
 
-Use `Duel.SelectTarget` in a Target callback when later resolution must re-check `tc:IsRelateToEffect(e)`.
+Use `Duel.SelectTarget` in a Target callback when later resolution must re-check `tc:IsRelateToEffect(e)` or when the card text says the effect targets. Use `Group.Select` when you already built a Group and only need the player to choose from it.
+
+## Related Functions
+
+- [Duel.IsExistingMatchingCard](/api/functions/Duel/IsExistingMatchingCard)
+- [Group.Select](/api/functions/Group/Select)
+- [Duel.SelectTarget](/api/functions/Duel/SelectTarget)
 
 ## Parameters
 
