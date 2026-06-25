@@ -10,6 +10,7 @@ Duel.Equip(int player, Card c1, Card c2, [bool up], [bool is_step]) -> bool
 
 Equips c1 to c2 for player and returns true if the equip succeeds.
 up defaults to true and makes the Equip Card face-up. When is_step is true, call Duel.EquipComplete after all step equips have been created.
+Register or rely on an EFFECT_EQUIP_LIMIT so the card can legally remain equipped to that monster.
 
 ## How To Use It
 

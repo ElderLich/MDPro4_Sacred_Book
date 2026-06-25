@@ -10,6 +10,7 @@ Duel.Release(Card|Group targets, int reason, [int reason_player]) -> int
 
 Tributes/Releases targets for reason and returns the number of cards actually released.
 Use REASON_COST when paying a cost and REASON_EFFECT or REASON_SPSUMMON when the release is part of an effect or Summon procedure.
+Match the reason to the filter that selected the cards, such as cost-specific releasable checks for costs.
 
 ## How To Use It
 

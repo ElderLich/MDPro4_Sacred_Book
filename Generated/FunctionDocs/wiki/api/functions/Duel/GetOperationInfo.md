@@ -10,7 +10,26 @@ Duel.GetOperationInfo(int chainc, int category) -> bool,Group|nil,int|nil,int|ni
 
 Returns operation information recorded for category on chainc.
 The first return value is false when that category is not recorded. Otherwise, the remaining values correspond to Duel.SetOperationInfo: targets, count, target_player, and target_param.
-Use this in response checks that need to inspect what a Chain Link announced, such as whether it is expected to destroy cards or move cards from a location.
+Use this in response checks that need to inspect what a Chain Link announced, such as whether it is expected to destroy cards, move cards from a location, or change LP.
+
+## How To Use It
+
+Use this in response checks or follow-up operations that need to read what a Chain Link announced with `Duel.SetOperationInfo`.
+
+```lua
+local ex,g,ct,p,loc=Duel.GetOperationInfo(ev,CATEGORY_TOHAND)
+if ex and bit.band(loc or 0,LOCATION_DECK)~=0 then
+    -- the Chain Link announced adding from the Deck
+end
+```
+
+The first return value is false when that category was not recorded. The remaining values mirror the `targets`, `count`, `target_player`, and `target_param` arguments.
+
+## Related Functions
+
+- [Duel.SetOperationInfo](/api/functions/Duel/SetOperationInfo)
+- [Effect.SetCategory](/api/functions/Effect/SetCategory)
+- [Duel.GetChainInfo](/api/functions/Duel/GetChainInfo)
 
 ## Parameters
 

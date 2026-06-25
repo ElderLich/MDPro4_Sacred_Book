@@ -10,6 +10,7 @@ Duel.Remove(Card|Group targets, int pos, int reason, [int reason_player]) -> int
 
 Banishes targets in position pos for reason and returns the number of cards actually banished.
 If reason includes REASON_TEMPORARY, the banish is treated as temporary and the card can later be returned with Duel.ReturnToField.
+Use POS_FACEDOWN only when the effect requires a face-down banish; ordinary banish effects usually use POS_FACEUP.
 
 ## How To Use It
 

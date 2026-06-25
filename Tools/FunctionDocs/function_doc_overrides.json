@@ -112,7 +112,8 @@
     "Auxiliary.AddEquipSpellEffect": {
       "summary_en": [
         "Creates an Equip Spell activation effect for c and registers the matching EFFECT_EQUIP_LIMIT.",
-        "The activation effect is returned; when pause is true it is created but not registered on c."
+        "The activation effect is returned; when pause is true it is created but not registered on c.",
+        "Use this for ordinary Equip Spells. Write the target and operation manually when the card equips after another action or needs extra state."
       ],
       "summary_zh": [
         "为c创建装备魔法发动效果，并登记对应的EFFECT_EQUIP_LIMIT。",
@@ -2449,7 +2450,8 @@
     },
     "Auxiliary.EquipSpellOperation": {
       "summary_en": [
-        "Returns the shared Equip Spell operation. It equips the handler to the first target if both cards are still related to the effect, the target is face-up, and eqlimit allows it."
+        "Returns the shared Equip Spell operation. It equips the handler to the first target if both cards are still related to the effect, the target is face-up, and eqlimit allows it.",
+        "This is the operation used by Auxiliary.AddEquipSpellEffect; unusual equip flows should usually write their own operation."
       ],
       "summary_zh": [
         "返回共通装备魔法操作函数；若处理对象与第一个目标仍与效果关联、目标表侧表示且eqlimit允许，则把处理对象装备给该目标。"
@@ -2457,7 +2459,8 @@
     },
     "Auxiliary.EquipSpellTarget": {
       "summary_en": [
-        "Returns the shared Equip Spell target function. is_self and is_opponent choose which Monster Zones can be targeted, filter selects a valid target, and eqlimit is rechecked for chained target changes and resolution."
+        "Returns the shared Equip Spell target function. is_self and is_opponent choose which Monster Zones can be targeted, filter selects a valid target, and eqlimit is rechecked for chained target changes and resolution.",
+        "The callback selects an official target and announces CATEGORY_EQUIP for the Equip Card."
       ],
       "summary_zh": [
         "返回共通装备魔法目标函数；is_self和is_opponent决定可选择哪一方怪兽区域，filter选择有效目标，eqlimit会在连锁中改选目标和处理时再次检查。"
@@ -11296,7 +11299,8 @@
     "Card.CheckEquipTarget": {
       "summary_en": [
         "Checks whether c2 is a valid Equip target for c1.",
-        "The core requires c1 to be affected by an EFFECT_EQUIP_LIMIT that accepts c2, and it also enforces old and modern Union count limits."
+        "The core requires c1 to be affected by an EFFECT_EQUIP_LIMIT that accepts c2, and it also enforces old and modern Union count limits.",
+        "This is only a legality check for the equip relationship; it does not reserve a Spell & Trap Zone or perform Duel.Equip."
       ],
       "summary_zh": [
         "检查c2是否是c1的合法装备对象。",
@@ -12350,7 +12354,8 @@
     },
     "Card.GetEquipTarget": {
       "summary_en": [
-        "Returns the card that c is currently equipped to, or nil if c has no equip target."
+        "Returns the card that c is currently equipped to, or nil if c has no equip target.",
+        "Use this while the Equip Card is still equipped. After it leaves the relationship, use Card.GetPreviousEquipTarget for leave-field triggers."
       ],
       "summary_zh": [
         "返回c当前装备到的卡；如果c没有装备对象则返回nil。"
@@ -13457,7 +13462,8 @@
     },
     "Card.GetPreviousEquipTarget": {
       "summary_en": [
-        "Returns c's previous Equip target, or nil."
+        "Returns c's previous Equip target, or nil.",
+        "Use this for lost-target and sent-from-field Equip Card triggers after the live equip relationship is gone."
       ],
       "summary_zh": [
         "返回c之前的装备对象；没有时返回nil。"
@@ -18030,7 +18036,8 @@
     "Duel.BreakEffect": {
       "summary_en": [
         "Separates the current resolving effect into a later timing window, then raises EVENT_BREAK_EFFECT.",
-        "Use this when card text says to do one action, then do another action afterward, so later triggers do not see both actions as simultaneous."
+        "Use this when card text says to do one action, then do another action afterward, so later triggers do not see both actions as simultaneous.",
+        "Do not use this for simultaneous damage/recovery batches; those use stepped Duel.Damage or Duel.Recover calls followed by Duel.RDComplete."
       ]
     },
     "Duel.CalculateDamage": {
@@ -18812,13 +18819,15 @@
     "Duel.Damage": {
       "summary_en": [
         "Deals value effect damage to player for reason and returns the damage actually applied.",
-        "If damage is changed into LP recovery or prevented, the return value reflects the final applied damage. With is_step=true, finish the damage/recovery batch with Duel.RDComplete."
+        "If damage is changed into LP recovery or prevented, the return value reflects the final applied damage. Negative input amounts are clamped to 0 by the local binding.",
+        "With is_step=true, finish the damage/recovery batch with Duel.RDComplete."
       ]
     },
     "Duel.Destroy": {
       "summary_en": [
         "Destroys targets for reason and returns the number of cards actually destroyed.",
-        "dest defaults to LOCATION_GRAVE. reason_player defaults to the current Chain's reason player. Use REASON_EFFECT for normal card effects and reserve REASON_RULE for rule/procedure cleanup."
+        "dest defaults to LOCATION_GRAVE. reason_player defaults to the current Chain's reason player. Use REASON_EFFECT for normal card effects and reserve REASON_RULE for rule/procedure cleanup.",
+        "Use Duel.SetOperationInfo with CATEGORY_DESTROY in the target callback when the cards or source location are known before resolution."
       ]
     },
     "Duel.DisableSelfDestroyCheck": {
@@ -18891,7 +18900,8 @@
     "Duel.Equip": {
       "summary_en": [
         "Equips c1 to c2 for player and returns true if the equip succeeds.",
-        "up defaults to true and makes the Equip Card face-up. When is_step is true, call Duel.EquipComplete after all step equips have been created."
+        "up defaults to true and makes the Equip Card face-up. When is_step is true, call Duel.EquipComplete after all step equips have been created.",
+        "Register or rely on an EFFECT_EQUIP_LIMIT so the card can legally remain equipped to that monster."
       ]
     },
     "Duel.EquipComplete": {
@@ -19069,7 +19079,8 @@
     "Duel.GetChainInfo": {
       "summary_en": [
         "Returns information fields from chainc in the same order as the requested CHAININFO_* constants.",
-        "Use chainc=0 for the currently resolving Chain. Unknown requested fields return nil, and no values are returned if the Chain does not exist."
+        "Use chainc=0 for the currently resolving Chain. Unknown requested fields return nil, and no values are returned if the Chain does not exist.",
+        "For stored LP/player data, read CHAININFO_TARGET_PLAYER and CHAININFO_TARGET_PARAM. For official targets you are about to affect, prefer relation-aware target helpers."
       ],
       "summary_zh": [
         "按请求的CHAININFO_*常量顺序，返回chainc对应连锁的信息字段。",
@@ -19153,7 +19164,8 @@
     "Duel.GetControl": {
       "summary_en": [
         "Moves control of targets to player and returns the number of cards whose control actually changed.",
-        "Use reset_phase and reset_count for temporary control, such as PHASE_END, 1. To pass only a zone mask, use 0, 0, zone."
+        "Use reset_phase and reset_count for temporary control, such as PHASE_END, 1. To pass only a zone mask, use 0, 0, zone.",
+        "Use Card.IsControlerCanBeChanged in target filters and recheck relation before changing control at resolution."
       ],
       "core_summary_en": [
         "Moves control of targets to player and returns the number of cards whose control actually changed."
@@ -19989,7 +20001,7 @@
       "summary_en": [
         "Returns operation information recorded for category on chainc.",
         "The first return value is false when that category is not recorded. Otherwise, the remaining values correspond to Duel.SetOperationInfo: targets, count, target_player, and target_param.",
-        "Use this in response checks that need to inspect what a Chain Link announced, such as whether it is expected to destroy cards or move cards from a location."
+        "Use this in response checks that need to inspect what a Chain Link announced, such as whether it is expected to destroy cards, move cards from a location, or change LP."
       ],
       "summary_zh": [
         "返回chainc上为category记录的操作信息。",
@@ -21260,7 +21272,8 @@
       "summary_en": [
         "Moves c onto target_player's field and returns true if the move succeeds.",
         "dest is normally LOCATION_MZONE or LOCATION_SZONE. LOCATION_FZONE and LOCATION_PZONE are accepted and converted to the matching Spell & Trap Zone handling by the core.",
-        "For LOCATION_PZONE, the core requires a Pendulum Card, lets the player choose an open Pendulum Zone, and sends the card to the GY by rule if no matching Pendulum Zone is usable."
+        "For LOCATION_PZONE, the core requires a Pendulum Card, lets the player choose an open Pendulum Zone, and sends the card to the GY by rule if no matching Pendulum Zone is usable.",
+        "Use this for field placement, not for Equip relationships; Equip Cards should use Duel.Equip."
       ],
       "summary_zh": [
         "把c移动到target_player的场上，并返回移动是否成功。",
@@ -21549,7 +21562,8 @@
     },
     "Duel.RDComplete": {
       "summary_en": [
-        "Completes reserved step damage/recover processing after Duel.Damage or Duel.Recover is called with is_step=true."
+        "Completes reserved step damage/recover processing after Duel.Damage or Duel.Recover is called with is_step=true.",
+        "Call this once after all stepped LP changes in the batch have been queued."
       ],
       "summary_zh": [
         "在Duel.Damage或Duel.Recover以is_step=true调用后，完成保留的分步伤害/恢复处理。"
@@ -21676,7 +21690,8 @@
     "Duel.Recover": {
       "summary_en": [
         "Gives player LP for reason and returns the amount processed.",
-        "Effects can reverse recovery into damage. With is_step=true, finish the damage/recovery batch with Duel.RDComplete."
+        "Effects can reverse recovery into damage; when recovery is reversed, this function returns 0 for recovery. Negative input amounts are clamped to 0 by the local binding.",
+        "With is_step=true, finish the damage/recovery batch with Duel.RDComplete."
       ],
       "summary_zh": [
         "为player恢复LP并返回处理的数值。",
@@ -21748,7 +21763,8 @@
     "Duel.Release": {
       "summary_en": [
         "Tributes/Releases targets for reason and returns the number of cards actually released.",
-        "Use REASON_COST when paying a cost and REASON_EFFECT or REASON_SPSUMMON when the release is part of an effect or Summon procedure."
+        "Use REASON_COST when paying a cost and REASON_EFFECT or REASON_SPSUMMON when the release is part of an effect or Summon procedure.",
+        "Match the reason to the filter that selected the cards, such as cost-specific releasable checks for costs."
       ]
     },
     "Duel.ReleaseRitualMaterial": {
@@ -21766,7 +21782,8 @@
     "Duel.Remove": {
       "summary_en": [
         "Banishes targets in position pos for reason and returns the number of cards actually banished.",
-        "If reason includes REASON_TEMPORARY, the banish is treated as temporary and the card can later be returned with Duel.ReturnToField."
+        "If reason includes REASON_TEMPORARY, the banish is treated as temporary and the card can later be returned with Duel.ReturnToField.",
+        "Use POS_FACEDOWN only when the effect requires a face-down banish; ordinary banish effects usually use POS_FACEUP."
       ]
     },
     "Duel.RemoveCounter": {
@@ -21893,7 +21910,8 @@
     "Duel.ReturnToField": {
       "summary_en": [
         "Returns a card temporarily removed from the field to its previous controller and previous location.",
-        "pos defaults to the previous position and zone defaults to 0xff. If c was not removed for REASON_TEMPORARY, the binding returns no Lua value; otherwise it yields and returns whether the move succeeded."
+        "pos defaults to the previous position and zone defaults to 0xff. If c was not removed for REASON_TEMPORARY, the binding returns no Lua value; otherwise it yields and returns whether the move succeeded.",
+        "Use this only for temporary removal lifecycles, not as a generic way to place cards on the field."
       ],
       "summary_zh": [
         "把临时离场的卡返回到其之前的控制者和之前的位置。",
@@ -22488,7 +22506,8 @@
     "Duel.SendtoDeck": {
       "summary_en": [
         "Returns targets to the Deck or Extra Deck for reason and returns the number of cards moved.",
-        "If player is nil, each card returns to its owner. seq=0 places cards on top of the Deck, seq=1 places them on the bottom, and other values use the default shuffle/return handling."
+        "If player is nil, each card returns to its owner. Use sequence constants such as SEQ_DECKTOP, SEQ_DECKBOTTOM, or SEQ_DECKSHUFFLE to control placement.",
+        "Check the return value when a later action depends on the cards actually reaching the Deck or Extra Deck."
       ]
     },
     "Duel.SendtoExtraP": {
@@ -22526,7 +22545,8 @@
     },
     "Duel.SendtoGrave": {
       "summary_en": [
-        "Sends targets to the Graveyard for reason, optionally treating reason_player as the player that moved them, and returns the number actually moved."
+        "Sends targets to the GY for reason, optionally treating reason_player as the player that moved them, and returns the number actually moved.",
+        "This is not destruction by itself. Use Duel.Destroy for destroy effects, or include the correct discard/material/release reason flags when the card text or mechanic requires them."
       ],
       "summary_zh": [
         "因reason将targets送去墓地，可选指定reason_player作为执行该移动的玩家，并返回实际移动的数量。"
@@ -22565,7 +22585,8 @@
     "Duel.SendtoHand": {
       "summary_en": [
         "Sends targets to a hand for reason and returns the number of cards actually moved.",
-        "Pass nil for player to use the normal return destination. Pass a specific player only when the effect says the cards go to that player's hand."
+        "Pass nil for player to use the normal return destination. Pass a specific player only when the effect says the cards go to that player's hand.",
+        "When a hidden card is added and must be shown, confirm the moved card after this call succeeds."
       ]
     },
     "Duel.SetChainLimit": {
@@ -22754,7 +22775,7 @@
       "summary_en": [
         "Records operation information for category on chainc.",
         "Use concrete targets and count when the affected cards are known. For unresolved non-targeting movement effects, pass nil targets with the expected count, target player, and target location.",
-        "This information is used by response checks such as Stardust Dragon-style effects."
+        "For LP effects, target_player is the affected player and target_param is the amount. This information announces intent; it does not perform the operation or create official card targets."
       ],
       "summary_zh": [
         "为chainc对应的连锁记录category的操作信息。",
@@ -22877,7 +22898,8 @@
     "Duel.SetTargetParam": {
       "summary_en": [
         "Stores param as the target parameter for the currently handled Chain.",
-        "Operations commonly read it with Duel.GetChainInfo(0, CHAININFO_TARGET_PARAM), often together with CHAININFO_TARGET_PLAYER."
+        "Operations commonly read it with Duel.GetChainInfo(0, CHAININFO_TARGET_PARAM), often together with CHAININFO_TARGET_PLAYER.",
+        "Use it for data that should be frozen at activation time; recalculate in the operation when the card text depends on the current state."
       ],
       "summary_zh": [
         "把param保存为当前处理连锁的对象参数。",
@@ -22902,7 +22924,8 @@
     "Duel.SetTargetPlayer": {
       "summary_en": [
         "Stores player as the target player for the currently handled Chain.",
-        "Operations commonly read it with Duel.GetChainInfo(0, CHAININFO_TARGET_PLAYER), often together with CHAININFO_TARGET_PARAM."
+        "Operations commonly read it with Duel.GetChainInfo(0, CHAININFO_TARGET_PLAYER), often together with CHAININFO_TARGET_PARAM.",
+        "This stores Chain data for a player-facing effect; it does not select a card target."
       ],
       "summary_zh": [
         "把player保存为当前处理连锁的对象玩家。",
@@ -23036,6 +23059,7 @@
       "summary_en": [
         "Special Summons targets to target_player's field in position pos and returns the number of cards successfully Summoned.",
         "sumplayer is the player performing the Summon and sumtype records the Summon type. nocheck skips Summoning-condition checks; nolimit skips revive-limit checks.",
+        "Check zone availability and Card.IsCanBeSpecialSummoned before activation, then recheck needed zones during resolution if the Chain can change them.",
         "For revive-limit monsters, a successful Duel.SpecialSummon does not automatically mark the card as properly Summoned. Call Card.CompleteProcedure only when this resolving effect is intended to be that card's proper Summon method."
       ],
       "summary_zh": [

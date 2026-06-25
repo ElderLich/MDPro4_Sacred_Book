@@ -8,7 +8,8 @@ Duel.SendtoGrave(Card|Group targets, int reason, [int reason_player]) -> int
 
 ## Description
 
-Sends targets to the Graveyard for reason, optionally treating reason_player as the player that moved them, and returns the number actually moved.
+Sends targets to the GY for reason, optionally treating reason_player as the player that moved them, and returns the number actually moved.
+This is not destruction by itself. Use Duel.Destroy for destroy effects, or include the correct discard/material/release reason flags when the card text or mechanic requires them.
 
 ## How To Use It
 

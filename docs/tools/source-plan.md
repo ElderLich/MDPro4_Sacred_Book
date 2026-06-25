@@ -25,7 +25,7 @@ Sacred Book can learn from the shape of other scripting docs without importing t
 
 ## Next Implementation Work
 
-- Continue translating the highest-use `imported_from_dataeditorx` function descriptions.
-- Add multilingual parameter and return notes so `_functions` and `_function_english` can both be polished without sharing one description field.
+- Continue usage-ranked API polish by function cluster, starting with pages that learners reach from the focused guides.
+- Add multilingual parameter and return notes so generated editor exports and public API pages can share reviewed data without sharing one description field.
 - Add deeper Script Explorer filters when local data exposes useful constants beyond card type and operation category.
-- Continue source-backed wiki integration one page cluster at a time, expanding only gaps that are not already covered by focused Sacred Book guides.
+- Continue local topic-archive integration one page cluster at a time, expanding only gaps that are not already covered by focused Sacred Book guides.

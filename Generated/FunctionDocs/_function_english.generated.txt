@@ -140,6 +140,7 @@ Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3545
 ●bool Card.CheckEquipTarget(Card c1, Card c2)
 Checks whether c2 is a valid Equip target for c1.
 The core requires c1 to be affected by an EFFECT_EQUIP_LIMIT that accepts c2, and it also enforces old and modern Union count limits.
+This is only a legality check for the equip relationship; it does not reserve a Spell & Trap Zone or perform Duel.Equip.
 Parameters:
   c1: Card
   c2: Card
@@ -519,6 +520,7 @@ Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3517
 
 ●Card|nil Card.GetEquipTarget(Card c)
 Returns the card that c is currently equipped to, or nil if c has no equip target.
+Use this while the Equip Card is still equipped. After it leaves the relationship, use Card.GetPreviousEquipTarget for leave-field triggers.
 Parameters:
   c: Card
 Returns:
@@ -920,6 +922,7 @@ Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3453
 
 ●Card|nil Card.GetPreviousEquipTarget(Card c)
 Returns c's previous Equip target, or nil.
+Use this for lost-target and sent-from-field Equip Card triggers after the live equip relationship is gone.
 Parameters:
   c: Card
 Returns:
@@ -2807,6 +2810,7 @@ Source: D:\Programs\GitHub\ygopro-core\libduel.cpp:5033
 ●void Duel.BreakEffect()
 Separates the current resolving effect into a later timing window, then raises EVENT_BREAK_EFFECT.
 Use this when card text says to do one action, then do another action afterward, so later triggers do not see both actions as simultaneous.
+Do not use this for simultaneous damage/recovery batches; those use stepped Duel.Damage or Duel.Recover calls followed by Duel.RDComplete.
 Source: D:\Programs\GitHub\ygopro-core\libduel.cpp:4927
 
 ●void Duel.CalculateDamage(Card attacker, Card|nil attack_target, [bool new_attack])
@@ -3123,7 +3127,8 @@ Source: D:\Programs\GitHub\ygopro-core\libduel.cpp:4872
 
 ●int Duel.Damage(int player, int value, int reason, [bool is_step])
 Deals value effect damage to player for reason and returns the damage actually applied.
-If damage is changed into LP recovery or prevented, the return value reflects the final applied damage. With is_step=true, finish the damage/recovery batch with Duel.RDComplete.
+If damage is changed into LP recovery or prevented, the return value reflects the final applied damage. Negative input amounts are clamped to 0 by the local binding.
+With is_step=true, finish the damage/recovery batch with Duel.RDComplete.
 Parameters:
   player: int
   value: int
@@ -3136,6 +3141,7 @@ Source: D:\Programs\GitHub\ygopro-core\libduel.cpp:4901
 ●int Duel.Destroy(Card|Group targets, int reason, [int dest], [int reason_player])
 Destroys targets for reason and returns the number of cards actually destroyed.
 dest defaults to LOCATION_GRAVE. reason_player defaults to the current Chain's reason player. Use REASON_EFFECT for normal card effects and reserve REASON_RULE for rule/procedure cleanup.
+Use Duel.SetOperationInfo with CATEGORY_DESTROY in the target callback when the cards or source location are known before resolution.
 Parameters:
   targets: Card|Group
   reason: int
@@ -3203,6 +3209,7 @@ Source: D:\Programs\GitHub\ygopro-core\libduel.cpp:4845
 ●bool Duel.Equip(int player, Card c1, Card c2, [bool up], [bool is_step])
 Equips c1 to c2 for player and returns true if the equip succeeds.
 up defaults to true and makes the Equip Card face-up. When is_step is true, call Duel.EquipComplete after all step equips have been created.
+Register or rely on an EFFECT_EQUIP_LIMIT so the card can legally remain equipped to that monster.
 Parameters:
   player: int
   c1: Card
@@ -3284,6 +3291,7 @@ Source: D:\Programs\GitHub\ygopro-core\libduel.cpp:4948
 ●... Duel.GetChainInfo(int chainc, ... any)
 Returns information fields from chainc in the same order as the requested CHAININFO_* constants.
 Use chainc=0 for the currently resolving Chain. Unknown requested fields return nil, and no values are returned if the Chain does not exist.
+For stored LP/player data, read CHAININFO_TARGET_PLAYER and CHAININFO_TARGET_PARAM. For official targets you are about to affect, prefer relation-aware target helpers.
 Parameters:
   chainc: int - Chain index/count to inspect; scripts commonly use 0 for the current Chain Link.
   ...: any - One or more CHAININFO_* constants. Each requested field produces one return value.
@@ -3309,6 +3317,7 @@ Source: D:\Programs\GitHub\ygopro-core\libduel.cpp:5039
 ●int Duel.GetControl(Card|Group targets, int player, [int reset_phase], [int reset_count], [int zone])
 Moves control of targets to player and returns the number of cards whose control actually changed.
 Use reset_phase and reset_count for temporary control, such as PHASE_END, 1. To pass only a zone mask, use 0, 0, zone.
+Use Card.IsControlerCanBeChanged in target filters and recheck relation before changing control at resolution.
 Parameters:
   targets: Card|Group
   player: int
@@ -3616,7 +3625,7 @@ Source: D:\Programs\GitHub\ygopro-core\libduel.cpp:5010
 ●bool,Group|nil,int|nil,int|nil,int|nil Duel.GetOperationInfo(int chainc, int category)
 Returns operation information recorded for category on chainc.
 The first return value is false when that category is not recorded. Otherwise, the remaining values correspond to Duel.SetOperationInfo: targets, count, target_player, and target_param.
-Use this in response checks that need to inspect what a Chain Link announced, such as whether it is expected to destroy cards or move cards from a location.
+Use this in response checks that need to inspect what a Chain Link announced, such as whether it is expected to destroy cards, move cards from a location, or change LP.
 Parameters:
   chainc: int - Chain Link number to inspect. Use 0 for the current Chain Link.
   category: int - CATEGORY_* flag whose operation info should be read.
@@ -4165,6 +4174,7 @@ Source: D:\Programs\GitHub\ygopro-core\libduel.cpp:4884
 Moves c onto target_player's field and returns true if the move succeeds.
 dest is normally LOCATION_MZONE or LOCATION_SZONE. LOCATION_FZONE and LOCATION_PZONE are accepted and converted to the matching Spell & Trap Zone handling by the core.
 For LOCATION_PZONE, the core requires a Pendulum Card, lets the player choose an open Pendulum Zone, and sends the card to the GY by rule if no matching Pendulum Zone is usable.
+Use this for field placement, not for Equip relationships; Equip Cards should use Duel.Equip.
 Parameters:
   c: Card - Card to move.
   move_player: int - Player making the placement selection.
@@ -4276,6 +4286,7 @@ Source: D:\Programs\GitHub\ygopro-core\libduel.cpp:4896
 
 ●void Duel.RDComplete()
 Completes reserved step damage/recover processing after Duel.Damage or Duel.Recover is called with is_step=true.
+Call this once after all stepped LP changes in the batch have been queued.
 Source: D:\Programs\GitHub\ygopro-core\libduel.cpp:4903
 
 ●void Duel.Readjust()
@@ -4285,7 +4296,8 @@ Source: D:\Programs\GitHub\ygopro-core\libduel.cpp:4962
 
 ●int Duel.Recover(int player, int value, int reason, [bool is_step])
 Gives player LP for reason and returns the amount processed.
-Effects can reverse recovery into damage. With is_step=true, finish the damage/recovery batch with Duel.RDComplete.
+Effects can reverse recovery into damage; when recovery is reversed, this function returns 0 for recovery. Negative input amounts are clamped to 0 by the local binding.
+With is_step=true, finish the damage/recovery batch with Duel.RDComplete.
 Parameters:
   player: int
   value: int
@@ -4320,6 +4332,7 @@ Source: D:\Programs\GitHub\ygopro-core\libduel.cpp:4853
 ●int Duel.Release(Card|Group targets, int reason, [int reason_player])
 Tributes/Releases targets for reason and returns the number of cards actually released.
 Use REASON_COST when paying a cost and REASON_EFFECT or REASON_SPSUMMON when the release is part of an effect or Summon procedure.
+Match the reason to the filter that selected the cards, such as cost-specific releasable checks for costs.
 Parameters:
   targets: Card|Group
   reason: int
@@ -4339,6 +4352,7 @@ Source: D:\Programs\GitHub\ygopro-core\libduel.cpp:4999
 ●int Duel.Remove(Card|Group targets, int pos, int reason, [int reason_player])
 Banishes targets in position pos for reason and returns the number of cards actually banished.
 If reason includes REASON_TEMPORARY, the banish is treated as temporary and the card can later be returned with Duel.ReturnToField.
+Use POS_FACEDOWN only when the effect requires a face-down banish; ordinary banish effects usually use POS_FACEUP.
 Parameters:
   targets: Card|Group
   pos: int
@@ -4386,6 +4400,7 @@ Source: D:\Programs\GitHub\ygopro-core\libduel.cpp:4855
 ●bool|nil Duel.ReturnToField(Card c, [int pos], [int zone])
 Returns a card temporarily removed from the field to its previous controller and previous location.
 pos defaults to the previous position and zone defaults to 0xff. If c was not removed for REASON_TEMPORARY, the binding returns no Lua value; otherwise it yields and returns whether the move succeeded.
+Use this only for temporary removal lifecycles, not as a generic way to place cards on the field.
 Parameters:
   c: Card
   pos: int optional - default: previous position
@@ -4619,7 +4634,8 @@ Source: D:\Programs\GitHub\ygopro-core\libduel.cpp:5023
 
 ●int Duel.SendtoDeck(Card|Group targets, [int|nil player], int seq, int reason, [int reason_player], [bool send_activating])
 Returns targets to the Deck or Extra Deck for reason and returns the number of cards moved.
-If player is nil, each card returns to its owner. seq=0 places cards on top of the Deck, seq=1 places them on the bottom, and other values use the default shuffle/return handling.
+If player is nil, each card returns to its owner. Use sequence constants such as SEQ_DECKTOP, SEQ_DECKBOTTOM, or SEQ_DECKSHUFFLE to control placement.
+Check the return value when a later action depends on the cards actually reaching the Deck or Extra Deck.
 Parameters:
   targets: Card|Group
   player: int|nil optional
@@ -4642,7 +4658,8 @@ Returns:
 Source: D:\Programs\GitHub\ygopro-core\libduel.cpp:4863
 
 ●int Duel.SendtoGrave(Card|Group targets, int reason, [int reason_player])
-Sends targets to the Graveyard for reason, optionally treating reason_player as the player that moved them, and returns the number actually moved.
+Sends targets to the GY for reason, optionally treating reason_player as the player that moved them, and returns the number actually moved.
+This is not destruction by itself. Use Duel.Destroy for destroy effects, or include the correct discard/material/release reason flags when the card text or mechanic requires them.
 Parameters:
   targets: Card|Group - Card or Group to send to the Graveyard.
   reason: int - REASON_* flags recorded for the move.
@@ -4654,6 +4671,7 @@ Source: D:\Programs\GitHub\ygopro-core\libduel.cpp:4860
 ●int Duel.SendtoHand(Card|Group targets, [int|nil player], int reason, [int reason_player])
 Sends targets to a hand for reason and returns the number of cards actually moved.
 Pass nil for player to use the normal return destination. Pass a specific player only when the effect says the cards go to that player's hand.
+When a hidden card is added and must be shown, confirm the moved card after this call succeeds.
 Parameters:
   targets: Card|Group
   player: int|nil optional
@@ -4721,7 +4739,7 @@ Source: D:\Programs\GitHub\ygopro-core\libduel.cpp:4847
 ●void Duel.SetOperationInfo(int chainc, int category, Card|Group|nil targets, int count, int player, int param)
 Records operation information for category on chainc.
 Use concrete targets and count when the affected cards are known. For unresolved non-targeting movement effects, pass nil targets with the expected count, target player, and target location.
-This information is used by response checks such as Stardust Dragon-style effects.
+For LP effects, target_player is the affected player and target_param is the amount. This information announces intent; it does not perform the operation or create official card targets.
 Parameters:
   chainc: int - Chain index/count passed to the core chain lookup; scripts commonly use 0 for the current Chain Link.
   category: int - CATEGORY_* operation category to record.
@@ -4756,6 +4774,7 @@ Source: D:\Programs\GitHub\ygopro-core\libduel.cpp:5004
 ●void Duel.SetTargetParam(int param)
 Stores param as the target parameter for the currently handled Chain.
 Operations commonly read it with Duel.GetChainInfo(0, CHAININFO_TARGET_PARAM), often together with CHAININFO_TARGET_PLAYER.
+Use it for data that should be frozen at activation time; recalculate in the operation when the card text depends on the current state.
 Parameters:
   param: int - Integer target parameter stored on the current Chain.
 Source: D:\Programs\GitHub\ygopro-core\libduel.cpp:5007
@@ -4763,6 +4782,7 @@ Source: D:\Programs\GitHub\ygopro-core\libduel.cpp:5007
 ●void Duel.SetTargetPlayer(int player)
 Stores player as the target player for the currently handled Chain.
 Operations commonly read it with Duel.GetChainInfo(0, CHAININFO_TARGET_PLAYER), often together with CHAININFO_TARGET_PARAM.
+This stores Chain data for a player-facing effect; it does not select a card target.
 Parameters:
   player: int - Player value stored on the current Chain.
 Source: D:\Programs\GitHub\ygopro-core\libduel.cpp:5006
@@ -4814,6 +4834,7 @@ Source: D:\Programs\GitHub\ygopro-core\libduel.cpp:4893
 ●int Duel.SpecialSummon(Card|Group targets, int sumtype, int sumplayer, int target_player, bool nocheck, bool nolimit, int pos, [int zone])
 Special Summons targets to target_player's field in position pos and returns the number of cards successfully Summoned.
 sumplayer is the player performing the Summon and sumtype records the Summon type. nocheck skips Summoning-condition checks; nolimit skips revive-limit checks.
+Check zone availability and Card.IsCanBeSpecialSummoned before activation, then recheck needed zones during resolution if the Chain can change them.
 For revive-limit monsters, a successful Duel.SpecialSummon does not automatically mark the card as properly Summoned. Call Card.CompleteProcedure only when this resolving effect is intended to be that card's proper Summon method.
 Parameters:
   targets: Card|Group - Card or Group to Special Summon.
@@ -5930,6 +5951,7 @@ Source: Utilities/utility.lua:999
 ●Effect Auxiliary.AddEquipSpellEffect(Card c, bool is_self, bool is_opponent, function filter, function|nil eqlimit, [bool pause], [bool skip_target])
 Creates an Equip Spell activation effect for c and registers the matching EFFECT_EQUIP_LIMIT.
 The activation effect is returned; when pause is true it is created but not registered on c.
+Use this for ordinary Equip Spells. Write the target and operation manually when the card equips after another action or needs extra state.
 Parameters:
   c: Card
   is_self: bool
@@ -6548,12 +6570,14 @@ Source: Utilities/utility.lua:1824
 
 ●void Auxiliary.EquipSpellOperation(any eqlimit)
 Returns the shared Equip Spell operation. It equips the handler to the first target if both cards are still related to the effect, the target is face-up, and eqlimit allows it.
+This is the operation used by Auxiliary.AddEquipSpellEffect; unusual equip flows should usually write their own operation.
 Parameters:
   eqlimit: any
 Source: Utilities/utility.lua:1920
 
 ●void Auxiliary.EquipSpellTarget(bool is_self, bool is_opponent, function filter, any eqlimit)
 Returns the shared Equip Spell target function. is_self and is_opponent choose which Monster Zones can be targeted, filter selects a valid target, and eqlimit is rechecked for chained target changes and resolution.
+The callback selects an official target and announces CATEGORY_EQUIP for the Equip Card.
 Parameters:
   is_self: bool
   is_opponent: bool

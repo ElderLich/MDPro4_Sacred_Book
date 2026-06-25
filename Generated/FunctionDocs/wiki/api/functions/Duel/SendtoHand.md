@@ -10,6 +10,7 @@ Duel.SendtoHand(Card|Group targets, [int|nil player], int reason, [int reason_pl
 
 Sends targets to a hand for reason and returns the number of cards actually moved.
 Pass nil for player to use the normal return destination. Pass a specific player only when the effect says the cards go to that player's hand.
+When a hidden card is added and must be shown, confirm the moved card after this call succeeds.
 
 ## How To Use It
 

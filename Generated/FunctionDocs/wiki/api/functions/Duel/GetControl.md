@@ -10,6 +10,7 @@ Duel.GetControl(Card|Group targets, int player, [int reset_phase], [int reset_co
 
 Moves control of targets to player and returns the number of cards whose control actually changed.
 Use reset_phase and reset_count for temporary control, such as PHASE_END, 1. To pass only a zone mask, use 0, 0, zone.
+Use Card.IsControlerCanBeChanged in target filters and recheck relation before changing control at resolution.
 
 ## How To Use It
 

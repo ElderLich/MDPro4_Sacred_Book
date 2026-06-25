@@ -11,6 +11,7 @@ Duel.MoveToField(Card c, int move_player, int target_player, int dest, int posit
 Moves c onto target_player's field and returns true if the move succeeds.
 dest is normally LOCATION_MZONE or LOCATION_SZONE. LOCATION_FZONE and LOCATION_PZONE are accepted and converted to the matching Spell & Trap Zone handling by the core.
 For LOCATION_PZONE, the core requires a Pendulum Card, lets the player choose an open Pendulum Zone, and sends the card to the GY by rule if no matching Pendulum Zone is usable.
+Use this for field placement, not for Equip relationships; Equip Cards should use Duel.Equip.
 
 ## How To Use It
 

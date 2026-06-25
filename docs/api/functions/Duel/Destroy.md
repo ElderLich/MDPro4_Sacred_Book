@@ -10,6 +10,7 @@ Duel.Destroy(Card|Group targets, int reason, [int dest], [int reason_player]) ->
 
 Destroys targets for reason and returns the number of cards actually destroyed.
 dest defaults to LOCATION_GRAVE. reason_player defaults to the current Chain's reason player. Use REASON_EFFECT for normal card effects and reserve REASON_RULE for rule/procedure cleanup.
+Use Duel.SetOperationInfo with CATEGORY_DESTROY in the target callback when the cards or source location are known before resolution.
 
 ## How To Use It
 
