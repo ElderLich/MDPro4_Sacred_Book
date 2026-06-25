@@ -51,7 +51,7 @@ After spot-checking the generated text files:
 
 - Copy `_functions.generated.txt` to `D:\Programs\GitHub\DataEditorX\DataEditorX\data\lua\_functions.txt`.
 - Copy `_function_english.generated.txt` to `D:\Programs\GitHub\DataEditorX\DataEditorX\data\lua\_function_english.txt`.
-- Prefer syncing after `docs/tools/translation-review.md` has been reviewed for the most-used imported English entries.
+- Prefer syncing after spot-checking the most-used generated function entries.
 - Copy `constant_english.generated.lua` to `D:\Programs\GitHub\DataEditorX\DataEditorX\data\lua\constant.lua` only if you want English constant tooltips in DataEditorX. Keep a backup if you still need the Chinese comments there.
 
 DataEditorX currently reads `_functions.txt` with `CodeConfig.AddFunction()`, so the generated compatibility files keep the old bullet format. The JSON file is better for a future wiki or a richer DataEditorX integration.

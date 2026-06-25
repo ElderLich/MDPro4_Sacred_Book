@@ -22,8 +22,7 @@ export default defineConfig({
       { text: 'Learn', link: '/learn/' },
       { text: 'API', link: '/api/' },
       { text: 'Examples', link: '/examples/' },
-      { text: 'Tools', link: '/tools/script-explorer' },
-      { text: 'Roadmap', link: '/roadmap' },
+      { text: 'Script Explorer', link: '/tools/script-explorer' },
     ],
     sidebar: {
       '/learn/': [
@@ -116,9 +115,6 @@ export default defineConfig({
           text: 'Tools',
           items: [
             { text: 'Script Explorer', link: '/tools/script-explorer' },
-            { text: 'Translation Review', link: '/tools/translation-review' },
-            { text: 'Source Plan', link: '/tools/source-plan' },
-            { text: 'Page Analysis', link: '/tools/page-analysis' },
           ],
         },
       ],

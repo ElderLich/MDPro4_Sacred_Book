@@ -1,20 +1,20 @@
 # MDPro3 Sacred Book
 
-<div class="sacred-home-hero">
-  <div class="home-copy">
+<div class="home-console">
+  <section class="home-console-main">
     <p class="home-kicker">MDPro3 / YGOPro Lua scripting</p>
-    <h2>Learn card scripting by building real effects.</h2>
-    <p>Start with a working card file, follow a few small local scripts, then use the lessons and generated API pages when you need exact behavior.</p>
+    <h2>Start with one card. Learn the engine around it.</h2>
+    <p>Use the beginner path when you are learning, the API when you need exact calls, and the Script Explorer when you want a real local pattern fast.</p>
     <div class="home-actions">
       <a class="home-primary" href="learn/">Start Learning</a>
-      <a class="home-secondary" href="learn/beginner-script-ladder">Build The Ladder</a>
-      <a class="home-secondary" href="tools/script-explorer">Find Local Examples</a>
+      <a class="home-secondary" href="learn/first-custom-card">Write A Card</a>
+      <a class="home-secondary" href="tools/script-explorer">Search Scripts</a>
     </div>
-  </div>
-  <div class="home-code-panel" aria-label="Example Lua effect block">
+  </section>
+  <section class="home-console-code" aria-label="Example Lua effect block">
     <div class="home-code-top">
-      <span>c55144522.lua</span>
       <span>first activated effect</span>
+      <span>c55144522.lua</span>
     </div>
     <pre><code>local e1=Effect.CreateEffect(c)
 e1:SetCategory(CATEGORY_DRAW)
@@ -24,122 +24,59 @@ e1:SetCode(EVENT_FREE_CHAIN)
 e1:SetTarget(s.target)
 e1:SetOperation(s.activate)
 c:RegisterEffect(e1)</code></pre>
-  </div>
+  </section>
 </div>
 
-<div class="home-start-path" aria-label="Beginner learning path">
-  <a href="learn/script-structure">
-    <strong>1</strong>
-    <span>Read a script</span>
-    <small>Understand <code>GetID</code>, <code>initial_effect</code>, effects, filters, and callbacks.</small>
-  </a>
-  <a href="learn/first-scripts">
-    <strong>2</strong>
-    <span>Study five real patterns</span>
-    <small>Draw, target, prompt, continuous, and stat-based local examples.</small>
-  </a>
-  <a href="learn/beginner-script-ladder">
-    <strong>3</strong>
-    <span>Build small effects</span>
-    <small>Walk through complete draw, target, Group, trigger, Quick-Play, and Trap scripts.</small>
-  </a>
-  <a href="learn/effect-callbacks">
-    <strong>4</strong>
-    <span>Follow activation flow</span>
-    <small>Condition, cost, target, operation, and <code>chk==0</code> legality.</small>
-  </a>
-  <a href="learn/targeting-flow">
-    <strong>5</strong>
-    <span>Choose cards safely</span>
-    <small>Targets, Groups, relation checks, and resolution choices.</small>
-  </a>
-  <a href="learn/common-script-errors-and-debugging">
-    <strong>6</strong>
-    <span>Debug with structure</span>
-    <small>Trace invisible prompts, nil values, stale targets, and reset mistakes.</small>
-  </a>
-</div>
-
-## Start Here
-
-<div class="home-portal-grid">
-  <a class="home-portal-card" href="learn/">
-    <small>Guided curriculum</small>
+<div class="home-choice-grid" aria-label="Primary documentation entry points">
+  <a class="home-choice home-choice-primary" href="learn/">
+    <small>Guided path</small>
     <strong>Learn</strong>
-    <span>Follow the beginner curve first, then branch into card types, summon procedures, outcomes, and debugging.</span>
+    <span>Read scripts, build small effects, wire card data, then debug with structure.</span>
   </a>
-  <a class="home-portal-card" href="learn/beginner-script-ladder">
-    <small>Concrete practice</small>
-    <strong>Script Ladder</strong>
-    <span>Build up from tiny complete scripts before jumping into the full lesson library.</span>
-  </a>
-  <a class="home-portal-card" href="api/">
-    <small>Exact signatures</small>
+  <a class="home-choice" href="api/">
+    <small>Exact calls</small>
     <strong>API</strong>
-    <span>Generated function and constant pages from local MDPro3/YGOPro data.</span>
+    <span>Generated functions and constants from the local MDPro3/YGOPro data.</span>
   </a>
-  <a class="home-portal-card" href="examples/">
-    <small>Local scripts</small>
+  <a class="home-choice" href="examples/">
+    <small>Real cards</small>
     <strong>Examples</strong>
-    <span>Featured card pages and case studies that point back to local script files.</span>
+    <span>Featured local scripts with detected API calls and source links.</span>
   </a>
-  <a class="home-portal-card" href="tools/script-explorer">
-    <small>Search by use</small>
+  <a class="home-choice" href="tools/script-explorer">
+    <small>Find patterns</small>
     <strong>Script Explorer</strong>
-    <span>Find cards by ID, name, script path, or API call when you need another pattern.</span>
-  </a>
-  <a class="home-portal-card" href="roadmap">
-    <small>Project status</small>
-    <strong>Roadmap</strong>
-    <span>Track what has been covered, what is planned, and which source checks were used.</span>
+    <span>Search by card text, type, category, ID, script path, or function use.</span>
   </a>
 </div>
 
 ## Beginner Curve
 
-1. [Structure of a card script](learn/script-structure)
-2. [First Scripts To Study](learn/first-scripts)
-3. [Beginner Script Ladder](learn/beginner-script-ladder)
-4. [Write Your First Custom Card](learn/first-custom-card)
-5. [Card Data and Script Wiring](learn/card-data-and-script-wiring)
-6. [Creation, building, and registration of an effect object](learn/effect-object)
-7. [EFFECT_TYPE constants and templates](learn/effect-types)
-8. [Conditions, costs, activation procedures, and resolution](learn/effect-callbacks)
-9. [Activated effects](learn/activated-effects)
-10. [Activation legality](learn/activation-legality)
-11. [Targeting flow](learn/targeting-flow)
-12. [Selection and Group handling](learn/selection-and-group-handling)
-13. [Client UI and prompt behavior](learn/client-ui-and-prompt-behavior)
-14. [Common script errors and debugging](learn/common-script-errors-and-debugging)
-
-After that, choose the branch that matches the card you are scripting: Spells,
-Traps, summon procedures, card movement, continuous effects, player effects,
-or special card families.
-
-## Common Effect Patterns
-
-<div class="home-portal-grid">
-  <a class="home-portal-card" href="learn/moving-cards">
-    <small>Actions and destinations</small>
-    <strong>Move Cards</strong>
-    <span>Pick the right movement API, legality check, reason flag, and operation-info category.</span>
-  </a>
-  <a class="home-portal-card" href="learn/equip-spells">
-    <small>Equip relationships</small>
-    <strong>Equip Cards</strong>
-    <span>Target, equip, limit, recheck, and read local scripts for normal and nonstandard equip flows.</span>
-  </a>
-  <a class="home-portal-card" href="learn/lp-recovery-and-damage">
-    <small>Player LP changes</small>
-    <strong>LP And Damage</strong>
-    <span>Choose fixed, event, target-based, resolution-calculated, sequential, or simultaneous LP patterns.</span>
-  </a>
+<div class="home-stepper">
+  <a href="learn/script-structure"><b>01</b><span>Read a card file</span></a>
+  <a href="learn/first-scripts"><b>02</b><span>Study local patterns</span></a>
+  <a href="learn/beginner-script-ladder"><b>03</b><span>Build small effects</span></a>
+  <a href="learn/first-custom-card"><b>04</b><span>Write your first card</span></a>
+  <a href="learn/effect-callbacks"><b>05</b><span>Trace activation flow</span></a>
+  <a href="learn/common-script-errors-and-debugging"><b>06</b><span>Debug safely</span></a>
 </div>
 
-## Reference While Scripting
+## Choose Your Branch
+
+<div class="home-branch-grid">
+  <a href="learn/targeting-flow">Target or select cards</a>
+  <a href="learn/moving-cards">Move cards</a>
+  <a href="learn/spell-card-patterns">Script Spells</a>
+  <a href="learn/trap-card-patterns">Script Traps</a>
+  <a href="learn/continuous-effects">Continuous effects</a>
+  <a href="learn/ritual-procedure">Summon procedures</a>
+  <a href="learn/archetypes-and-setcodes">Archetypes</a>
+  <a href="learn/client-ui-and-prompt-behavior">Client prompts</a>
+</div>
+
+## Reference
 
 - [Function reference](api/functions/)
 - [Constant reference](api/constants)
 - [Featured card examples](examples/)
 - [Script Explorer](tools/script-explorer)
-- [Source coverage notes](tools/page-analysis)

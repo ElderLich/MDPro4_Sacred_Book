@@ -1,3 +1,8 @@
+---
+prev: false
+next: false
+---
+
 # Script Explorer
 
 Search the local MDPro3 script set by card ID, card name, card text, script
@@ -11,3 +16,7 @@ local pattern. Featured cards link to local example pages; every result links
 back to the source script in the repository.
 
 <ScriptExplorer />
+
+<noscript>
+  <p class="explorer-state">Script Explorer needs JavaScript to load the local script index.</p>
+</noscript>

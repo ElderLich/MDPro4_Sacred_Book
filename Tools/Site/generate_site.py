@@ -7,7 +7,6 @@ import json
 import re
 import shutil
 import sqlite3
-from collections import Counter
 from dataclasses import dataclass
 from pathlib import Path
 
@@ -21,7 +20,6 @@ EXAMPLE_LIMIT = 96
 USAGE_TABLE_LIMIT = 24
 USAGE_SNIPPET_LIMIT = 3
 USAGE_SNIPPET_CONTEXT = 2
-TRANSLATION_REVIEW_LIMIT = 160
 
 DOT_CALL_RE = re.compile(r"\b(aux|Auxiliary|Duel|Card|Effect|Group|Debug|bit)\.([A-Za-z_]\w*)")
 COLON_CALL_RE = re.compile(r"\b[A-Za-z_]\w*:([A-Za-z_]\w*)")
@@ -239,10 +237,6 @@ def github_script_url(script_path: str) -> str:
     return f"https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/{script_path}"
 
 
-def has_cjk(text: str) -> bool:
-    return bool(re.search(r"[\u3400-\u9fff]", text))
-
-
 def call_patterns(name: str) -> list[re.Pattern[str]]:
     namespace, short = split_api_name(name)
     escaped_short = re.escape(short)
@@ -396,109 +390,6 @@ def append_api_usage_sections(examples: list[dict[str, object]], featured_ids: s
         if marker in page_text:
             page_text = page_text.split(marker, 1)[0].rstrip()
         write_text(page, page_text + "\n" + "\n".join(lines).rstrip())
-
-
-def first_sentence(lines: list[str], limit: int = 170) -> str:
-    text = " ".join(line.strip() for line in lines if line.strip())
-    if len(text) <= limit:
-        return text
-    return text[: limit - 3].rstrip() + "..."
-
-
-def write_translation_review(examples: list[dict[str, object]]) -> None:
-    api_payload = json.loads(read_text(GENERATED_DIR / "api_functions.generated.json"))
-    docs = list(api_payload["functions"])
-    usage_counts = {name: len(items) for name, items in usage_by_function(examples).items()}
-    status_counts = Counter(str(doc.get("english_status", "missing")) for doc in docs)
-
-    cjk_docs = []
-    for doc in docs:
-        english_parts = list(doc.get("description_en", []))
-        english_parts.extend(str(param.get("description", "")) for param in doc.get("params", []))
-        english_parts.extend(str(ret.get("description", "")) for ret in doc.get("returns", []))
-        if has_cjk("\n".join(english_parts)):
-            cjk_docs.append(doc)
-
-    review_statuses = {
-        "imported_from_dataeditorx",
-        "existing_english",
-        "missing_translation",
-        "missing_documentation",
-    }
-    review_docs = [
-        doc
-        for doc in docs
-        if str(doc.get("english_status", "missing")) in review_statuses
-        or has_cjk("\n".join(doc.get("description_en", [])))
-    ]
-    review_docs.sort(
-        key=lambda doc: (
-            -usage_counts.get(str(doc["name"]), 0),
-            str(doc.get("english_status", "")),
-            str(doc["name"]).casefold(),
-        )
-    )
-
-    lines = [
-        "# Function Translation Review",
-        "",
-        "This queue tracks function pages whose English should be reviewed by hand. It is stricter than the generator backlog: imported English can be technically present but still read like a rough machine translation.",
-        "",
-        "## Summary",
-        "",
-        f"- Total functions: **{len(docs)}**",
-        f"- Functions used by current scripts: **{sum(1 for doc in docs if usage_counts.get(str(doc['name']), 0))}**",
-        f"- Functions with raw Chinese text in English fields: **{len(cjk_docs)}**",
-        f"- Functions queued for natural-English review: **{len(review_docs)}**",
-        "",
-        "## English Status Counts",
-        "",
-        "| Status | Count |",
-        "| --- | ---: |",
-    ]
-    for status, count in sorted(status_counts.items()):
-        lines.append(f"| `{status}` | {count} |")
-
-    lines.extend(
-        [
-            "",
-            "## Priority Review Queue",
-            "",
-            "Sorted by current script usage count so the most visible function pages are reviewed first.",
-            "",
-            "| Function | Status | Script Uses | Current English Preview |",
-            "| --- | --- | ---: | --- |",
-        ]
-    )
-    for doc in review_docs[:TRANSLATION_REVIEW_LIMIT]:
-        name = str(doc["name"])
-        lines.append(
-            f"| [`{name}`]({api_link(name)}) | `{doc.get('english_status', 'missing')}` | {usage_counts.get(name, 0)} | {markdown_table_escape(first_sentence(doc.get('description_en', [])))} |"
-        )
-    if len(review_docs) > TRANSLATION_REVIEW_LIMIT:
-        lines.append(f"| ...and {len(review_docs) - TRANSLATION_REVIEW_LIMIT} more |  |  |  |")
-
-    lines.extend(["", "## Raw Chinese In English Fields", ""])
-    if not cjk_docs:
-        lines.append("No raw Chinese text was detected in English fields during this generation.")
-    else:
-        lines.extend(["| Function | Status | Script Uses |", "| --- | --- | ---: |"])
-        for doc in cjk_docs:
-            name = str(doc["name"])
-            lines.append(
-                f"| [`{name}`]({api_link(name)}) | `{doc.get('english_status', 'missing')}` | {usage_counts.get(name, 0)} |"
-            )
-
-    lines.extend(
-        [
-            "",
-            "## DataEditorX Sync Rule",
-            "",
-            "Sync generated `_functions` and `_function_english` files to DataEditorX only after the reviewed text has been regenerated here. Sacred Book is the source of truth for the next pass.",
-        ]
-    )
-
-    write_text(DOCS_DIR / "tools" / "translation-review.md", "\n".join(lines))
 
 
 def sync_api_reference() -> None:
@@ -722,8 +613,7 @@ def write_vitepress_config(featured: list[dict[str, object]]) -> None:
         "      { text: 'Learn', link: '/learn/' },",
         "      { text: 'API', link: '/api/' },",
         "      { text: 'Examples', link: '/examples/' },",
-        "      { text: 'Tools', link: '/tools/script-explorer' },",
-        "      { text: 'Roadmap', link: '/roadmap' },",
+        "      { text: 'Script Explorer', link: '/tools/script-explorer' },",
         "    ],",
         "    sidebar: {",
         "      '/learn/': [",
@@ -816,9 +706,6 @@ def write_vitepress_config(featured: list[dict[str, object]]) -> None:
         "          text: 'Tools',",
         "          items: [",
         "            { text: 'Script Explorer', link: '/tools/script-explorer' },",
-        "            { text: 'Translation Review', link: '/tools/translation-review' },",
-        "            { text: 'Source Plan', link: '/tools/source-plan' },",
-        "            { text: 'Page Analysis', link: '/tools/page-analysis' },",
         "          ],",
         "        },",
         "      ],",
@@ -882,11 +769,10 @@ def main() -> int:
     examples, featured = write_examples()
     featured_ids = {int(item["id"]) for item in featured}
     append_api_usage_sections(examples, featured_ids)
-    write_translation_review(examples)
     write_vitepress_config(featured)
     print(f"Synced API reference into {DOCS_DIR / 'api'}")
     print(f"Generated {len(featured)} featured card example pages")
-    print("Added API usage sections and translation review queue")
+    print("Added API usage sections")
     return 0
 
 

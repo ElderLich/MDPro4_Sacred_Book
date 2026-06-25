@@ -155,17 +155,6 @@ card you are scripting.
   </section>
 </div>
 
-## How To Use The Source Coverage Notes
-
-Source topics are a teaching checklist, not factual authority for this
-project. Sacred Book rewrites that material in its own words and verifies
-behavior against local MDPro3/YGOPro core, local scripts, local define files,
-and generated API data.
-
-When outside material uses a helper name that is not local, Sacred Book should
-replace it with a local equivalent or document that it is not local. See
-[Source Coverage Notes](/tools/page-analysis) for the audit trail.
-
 ## How To Read A Real Script
 
 When a local card script looks confusing, read it in this order:
