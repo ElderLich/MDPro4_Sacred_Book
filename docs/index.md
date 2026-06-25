@@ -80,3 +80,20 @@ c:RegisterEffect(e1)</code></pre>
 - [Constant reference](api/constants)
 - [Featured card examples](examples/)
 - [Script Explorer](tools/script-explorer)
+
+## Credits & Support
+
+<div class="home-credit-panel">
+  <div>
+    <strong>Created and documented by Senator John.</strong>
+    <p>If Sacred Book helped you learn scripting, build a card, or find the right local pattern faster, consider supporting the work on <a href="https://ko-fi.com/senatorjohn1">Ko-fi</a>.</p>
+  </div>
+  <div>
+    <strong>Documentation inspiration</strong>
+    <p>Credit to the <a href="https://ygoproscripting.miraheze.org/wiki/Main_Page">YGOPro Scripting Wiki</a> and <a href="https://ygoproscripting.miraheze.org/wiki/User:XGlitchy30">Glitchy</a> for wiki notes and scripting explanations that helped inspire this learning reference.</p>
+  </div>
+  <div>
+    <strong>Upstream YGOPro projects</strong>
+    <p>MDPro3 builds on the YGOPro ecosystem, including <a href="https://github.com/Fluorohydride/ygopro">Fluorohydride/ygopro</a>, <a href="https://github.com/Fluorohydride/ygopro-core">Fluorohydride/ygopro-core</a>, and <a href="https://github.com/Fluorohydride/ygopro-scripts">Fluorohydride/ygopro-scripts</a>.</p>
+  </div>
+</div>

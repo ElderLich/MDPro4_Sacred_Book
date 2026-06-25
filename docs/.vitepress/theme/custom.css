@@ -317,6 +317,33 @@
   text-decoration: none !important;
 }
 
+.home-credit-panel {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  margin: 16px 0 28px;
+}
+
+.home-credit-panel div {
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 8px;
+  padding: 14px;
+  background: var(--vp-c-bg-soft);
+}
+
+.home-credit-panel strong {
+  display: block;
+  color: var(--vp-c-text-1);
+  font-size: 15px;
+}
+
+.home-credit-panel p {
+  margin: 8px 0 0;
+  color: var(--vp-c-text-2);
+  font-size: 14px;
+  line-height: 1.58;
+}
+
 .learn-priority-grid,
 .learn-stage-grid {
   display: grid;
@@ -436,6 +463,7 @@
   .home-choice-grid,
   .home-stepper,
   .home-branch-grid,
+  .home-credit-panel,
   .learn-priority-grid,
   .learn-stage-grid {
     grid-template-columns: 1fr;
