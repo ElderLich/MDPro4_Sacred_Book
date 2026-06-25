@@ -55,6 +55,7 @@ This is the working todo for turning Sacred Book into a complete MDPro3 scriptin
 - [x] Add a focused common script errors and debugging guide for nil values, legality branches, relation checks, location masks, resets, count limits, negation types, Group lifetime, and code identity checks.
 - [x] Add a hand-written case study for Mind Scan because the script exists locally before the card is present in `cards.cdb`.
 - [x] Expand the beginner path with small complete card scripts that build up one concept at a time.
+- [x] Add a DataEditorX/card-data bridge for matching `cards.cdb` fields, prompt strings, type bits, set codes, alias, and script files.
 - [x] Analyze every downloaded tutorial page and create an original Sacred Book equivalent for each topic.
 - [x] Add focused player-effect guides for player-targeted Chain data, player restrictions, and draw/hand/Deck effects.
 - [x] Move reviewed function docs into a multilingual machine-readable override file instead of keeping long manual batches in the generator.

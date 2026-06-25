@@ -9,7 +9,8 @@ documentation as factual source of truth. Final behavior is checked against
 local MDPro3/YGOPro sources, local scripts, local define files, and generated
 Sacred Book data.
 
-The downloaded editor-tool page is excluded from this tutorial-equivalent pass.
+The downloaded editor-tool page is tracked separately as the bridge between
+card database setup and Lua scripting.
 
 This audit is section-level. It covers each downloaded scripting page's
 headings, code-pattern topics, and recurring warnings, while replacing
@@ -38,6 +39,7 @@ simulator-specific helper names and examples with local MDPro3/YGOPro behavior.
 | Recovering LP and inflicting effect damage | [LP Recovery and Effect Damage](/learn/lp-recovery-and-damage) covers fixed amounts, resolution-calculated amounts, target-player data, target-based recovery, stepped LP changes, event-value amounts, conjuncted effects, event-count vs resolution-count amounts, categories, and return values. |
 | Methods for affecting cards | [Methods for Affecting Cards](/learn/affecting-cards) acts as the outcome router for immediate actions, continuous changes, negation, stat/property changes, control, equip, and review checks. |
 | Subarchetype | [Archetypes and Set Codes](/learn/archetypes-and-setcodes) covers IDs, `IsSetCard`, multiple set-code checks, subarchetype bit structure, listed-card and listed-set helpers, original-code checks, and common filter patterns. |
+| DataEditorX | [Card Data and Script Wiring](/learn/card-data-and-script-wiring) covers `cards.cdb` `datas`/`texts` fields, ID-to-script matching, card text versus script strings, type bits, category labels, set codes, alias, and prompt-string API links. |
 
 ## Conversion Answer
 
@@ -412,6 +414,11 @@ Several details were verified directly against local MDPro3/YGOPro sources:
   (`c14087893.lua`) targeting and position-change rechecks. `Duel.ChangePosition`
   return behavior was checked against the generated API page before documenting
   the draw-after-success pattern.
+- The DataEditorX follow-up guide was checked against local `cards.cdb` schema,
+  `DataEditorX\Core\Card.cs`, `DataEditorX\Core\DataBase.cs`,
+  `DataEditForm.cs`, `cardinfo_english.txt`, local `utility.lua`
+  `Auxiliary.Stringid`, local `ygopro-core\card.cpp` set-code behavior, and
+  generated API pages for identity and prompt functions.
 - Script Explorer card text search and filters are generated from local
   `cards.cdb`, local scripts, generated API calls, and local `TYPE_*` /
   `CATEGORY_*` constants. The generated public records now include card text,
@@ -468,6 +475,7 @@ Several details were verified directly against local MDPro3/YGOPro sources:
 
 | Date | Downloaded page cluster | Sacred Book updates |
 | --- | --- | --- |
+| 2026-06-25 | DataEditorX and custom-card data wiring | Added [Card Data and Script Wiring](/learn/card-data-and-script-wiring) as the beginner bridge from a Lua file to `cards.cdb`: `datas`/`texts`, ID/file matching, `aux.Stringid`, type bits, database category labels, set codes, alias, and first-card database checklist. Updated Home, Learn, the sidebar generator, roadmap, and source notes. |
 | 2026-06-24 | Script Explorer and first custom script practice | Expanded [Script Explorer](/tools/script-explorer) with card text search, a dedicated text mode, card-type and category filters, featured-only filtering, type/category result chips, and card-text snippets. Added [Write Your First Custom Card](/learn/first-custom-card) and practice exercises under [Beginner Script Ladder](/learn/beginner-script-ladder). |
 | 2026-06-24 | Beginner route and navigation audit | Added [Beginner Script Ladder](/learn/beginner-script-ladder) as a concrete sequence of complete small scripts for draw, targeting, non-targeting Groups, Min/Max stat selection, continuous modifiers, mandatory triggers, Quick-Play prompts, and Trap responses. Updated Home, Learn, the VitePress sidebar, and the site generator sidebar source. Confirmed every `docs/learn` page is linked from both the Learn index and sidebar. |
 | 2026-06-24 | Min/Max selection, subarchetypes, and effect-type templates | Added [Min/Max Stat Card Selection](/learn/min-max-stat-selection) as a focused guide for tied min/max Groups, returned values, custom scoring functions, activation-vs-resolution selection, and targeting variants. Refined [Archetypes and Set Codes](/learn/archetypes-and-setcodes) with identity-check choices, listed-card metadata, listed-set helpers, original-code checks, and practical filter patterns. Refined [EFFECT_TYPE Constants and Templates](/learn/effect-types) with type-shape selection, trigger source combinations, Xyz Material activated effects, grant effects, and special `SetTargetRange` modes. |

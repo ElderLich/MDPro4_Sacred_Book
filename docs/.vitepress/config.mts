@@ -35,6 +35,7 @@ export default defineConfig({
             { text: 'First Scripts', link: '/learn/first-scripts' },
             { text: 'Beginner Script Ladder', link: '/learn/beginner-script-ladder' },
             { text: 'First Custom Card', link: '/learn/first-custom-card' },
+            { text: 'Card Data and Script Wiring', link: '/learn/card-data-and-script-wiring' },
             { text: 'Effect Object', link: '/learn/effect-object' },
             { text: 'Effect Types', link: '/learn/effect-types' },
             { text: 'Categories and Properties', link: '/learn/categories-properties-and-hints' },

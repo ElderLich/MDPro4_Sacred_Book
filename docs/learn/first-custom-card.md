@@ -170,6 +170,8 @@ Before testing a custom script, check:
 7. Resolution rechecks relation and current state.
 8. Categories and operation info match the action.
 
+Next, wire the script to real card data: [Card Data and Script Wiring](card-data-and-script-wiring).
+
 Useful API pages:
 
 - [`Effect.CreateEffect`](/api/functions/Effect/CreateEffect)
