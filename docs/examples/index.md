@@ -7,9 +7,10 @@ Generated from `cards.cdb` and `Scripts/`.
 - Full machine-readable index: `/data/card-examples.json`
 - Featured card IDs: `/data/featured-card-ids.json`
 - Function usage index: `/data/function-usage.json`
+- Constant usage index: `/data/constant-usage.json`
 - Interactive search: [Script Explorer](/tools/script-explorer)
 
-The featured pages are selected from scripts with many detected API calls and card text available. The Script Explorer can search the full local script set by card ID, card name, script path, or detected API function.
+The featured pages are selected from scripts with many detected API calls and card text available. The Script Explorer can search the full local script set by card ID, card name, script path, detected API function, or named Lua constant.
 
 ## Case Studies
 

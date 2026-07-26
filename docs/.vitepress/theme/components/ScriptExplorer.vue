@@ -2,7 +2,7 @@
 import { computed, onMounted, ref } from 'vue';
 import { withBase } from 'vitepress';
 
-type SearchMode = 'all' | 'cards' | 'text' | 'functions';
+type SearchMode = 'all' | 'cards' | 'text' | 'code';
 
 type ScriptRecord = {
   id: number;
@@ -12,6 +12,7 @@ type ScriptRecord = {
   card_type_labels?: string[];
   category_labels?: string[];
   api_calls: string[];
+  script_constants?: string[];
   script_length: number;
   desc_length: number;
 };
@@ -29,9 +30,10 @@ const featuredIds = ref(new Set<number>());
 
 onMounted(async () => {
   try {
-    const [cardsResponse, featuredResponse] = await Promise.all([
+    const [cardsResponse, featuredResponse, constantsResponse] = await Promise.all([
       fetch(withBase('/data/card-examples.json')),
       fetch(withBase('/data/featured-card-ids.json')),
+      fetch(withBase('/data/constant-usage.json')),
     ]);
     if (!cardsResponse.ok) {
       throw new Error(`${cardsResponse.status} ${cardsResponse.statusText}`);
@@ -39,8 +41,22 @@ onMounted(async () => {
     if (!featuredResponse.ok) {
       throw new Error(`${featuredResponse.status} ${featuredResponse.statusText}`);
     }
+    if (!constantsResponse.ok) {
+      throw new Error(`${constantsResponse.status} ${constantsResponse.statusText}`);
+    }
 
-    records.value = await cardsResponse.json();
+    const loadedRecords: ScriptRecord[] = await cardsResponse.json();
+    const recordsById = new Map(loadedRecords.map((record) => [Number(record.id), record]));
+    const constantUsage: Record<string, number[]> = await constantsResponse.json();
+    for (const [name, ids] of Object.entries(constantUsage)) {
+      for (const id of ids) {
+        const record = recordsById.get(Number(id));
+        if (record) {
+          (record.script_constants ||= []).push(name);
+        }
+      }
+    }
+    records.value = loadedRecords;
     const ids: number[] = await featuredResponse.json();
     featuredIds.value = new Set(ids.map(Number));
   } catch (err) {
@@ -65,12 +81,34 @@ const functionCounts = computed(() => {
   );
 });
 
+const constantCounts = computed(() => {
+  const counts = new Map<string, number>();
+  for (const record of records.value) {
+    for (const name of record.script_constants || []) {
+      counts.set(name, (counts.get(name) || 0) + 1);
+    }
+  }
+  return Array.from(counts, ([name, count]) => ({ name, count })).sort(
+    (a, b) => b.count - a.count || a.name.localeCompare(b.name),
+  );
+});
+
 const matchedFunctions = computed(() => {
   const q = normalizedQuery.value;
   const list = q
     ? functionCounts.value.filter((entry) => entry.name.toLowerCase().includes(q))
     : functionCounts.value;
   return list.slice(0, q ? 60 : 30);
+});
+
+const matchedConstants = computed(() => {
+  const q = normalizedQuery.value;
+  if (!q) {
+    return [];
+  }
+  return constantCounts.value
+    .filter((entry) => entry.name.toLowerCase().includes(q))
+    .slice(0, 60);
 });
 
 const featuredCount = computed(() => featuredIds.value.size);
@@ -95,7 +133,11 @@ const filteredRecords = computed(() => {
     if (categoryFilter.value !== 'all' && !(record.category_labels || []).includes(categoryFilter.value)) {
       return false;
     }
-    if (mode.value === 'functions' && !tokens.value.length && !(record.api_calls?.length || 0)) {
+    if (
+      mode.value === 'code'
+      && !tokens.value.length
+      && !(record.api_calls?.length || record.script_constants?.length || 0)
+    ) {
       return false;
     }
     return !tokens.value.length || tokens.value.every((token) => recordMatchesToken(record, token));
@@ -115,7 +157,12 @@ function setMode(nextMode: SearchMode) {
 
 function searchFunction(name: string) {
   query.value = name;
-  mode.value = 'functions';
+  mode.value = 'code';
+}
+
+function searchConstant(name: string) {
+  query.value = name;
+  mode.value = 'code';
 }
 
 function setTypeFilter(label: string) {
@@ -144,6 +191,7 @@ function recordMatchesToken(record: ScriptRecord, token: string) {
     .toLowerCase();
   const textHaystack = (record.desc || '').toLowerCase();
   const functionHaystack = (record.api_calls || []).join(' ').toLowerCase();
+  const constantHaystack = (record.script_constants || []).join(' ').toLowerCase();
 
   if (mode.value === 'cards') {
     return cardHaystack.includes(token);
@@ -151,10 +199,15 @@ function recordMatchesToken(record: ScriptRecord, token: string) {
   if (mode.value === 'text') {
     return textHaystack.includes(token);
   }
-  if (mode.value === 'functions') {
-    return functionHaystack.includes(token);
+  if (mode.value === 'code') {
+    return functionHaystack.includes(token) || constantHaystack.includes(token);
   }
-  return cardHaystack.includes(token) || textHaystack.includes(token) || functionHaystack.includes(token);
+  return (
+    cardHaystack.includes(token)
+    || textHaystack.includes(token)
+    || functionHaystack.includes(token)
+    || constantHaystack.includes(token)
+  );
 }
 
 function recordScore(record: ScriptRecord, q: string) {
@@ -163,6 +216,7 @@ function recordScore(record: ScriptRecord, q: string) {
   }
 
   const exactFunction = (record.api_calls || []).some((name) => name.toLowerCase() === q);
+  const exactConstant = (record.script_constants || []).some((name) => name.toLowerCase() === q);
   const exactId = String(record.id) === q;
   const exactName = record.name.toLowerCase() === q;
   const nameStarts = record.name.toLowerCase().startsWith(q);
@@ -175,12 +229,29 @@ function recordScore(record: ScriptRecord, q: string) {
     (exactName ? 6000 : 0) +
     (nameStarts ? 3000 : 0) +
     (exactFunction ? 5000 : 0) +
+    (exactConstant ? 4500 : 0) +
     (categoryMatch ? 1800 : 0) +
     (typeMatch ? 1200 : 0) +
     (textMatch ? 500 : 0) +
     (isFeatured(record) ? 80 : 0) +
     (record.api_calls?.length || 0)
   );
+}
+
+function matchingConstants(record: ScriptRecord) {
+  const q = normalizedQuery.value;
+  if (!q) {
+    return [];
+  }
+  return (record.script_constants || []).filter((name) => name.toLowerCase().includes(q));
+}
+
+function visibleConstants(record: ScriptRecord) {
+  return matchingConstants(record).slice(0, 10);
+}
+
+function hiddenConstantCount(record: ScriptRecord) {
+  return Math.max(0, matchingConstants(record).length - visibleConstants(record).length);
 }
 
 function visibleCalls(record: ScriptRecord) {
@@ -272,7 +343,7 @@ function safeSegment(value: string) {
         <input
           v-model="query"
           type="search"
-          placeholder="Card name, text, 62091148, Duel.SpecialSummon, IsSetCard"
+          placeholder="Card name, text, 62091148, Duel.SpecialSummon, EVENT_ADJUST"
         />
       </label>
 
@@ -280,7 +351,7 @@ function safeSegment(value: string) {
         <button type="button" :class="{ active: mode === 'all' }" @click="setMode('all')">All</button>
         <button type="button" :class="{ active: mode === 'cards' }" @click="setMode('cards')">Cards</button>
         <button type="button" :class="{ active: mode === 'text' }" @click="setMode('text')">Text</button>
-        <button type="button" :class="{ active: mode === 'functions' }" @click="setMode('functions')">Functions</button>
+        <button type="button" :class="{ active: mode === 'code' }" @click="setMode('code')">Code</button>
       </div>
     </div>
 
@@ -329,6 +400,10 @@ function safeSegment(value: string) {
           <span>functions detected</span>
         </div>
         <div>
+          <strong>{{ constantCounts.length.toLocaleString() }}</strong>
+          <span>constants detected</span>
+        </div>
+        <div>
           <strong>{{ totalApiCalls.toLocaleString() }}</strong>
           <span>script/function links</span>
         </div>
@@ -338,7 +413,11 @@ function safeSegment(value: string) {
         </div>
       </div>
 
-      <section class="explorer-section" aria-labelledby="function-matches-heading">
+      <section
+        v-if="matchedFunctions.length"
+        class="explorer-section"
+        aria-labelledby="function-matches-heading"
+      >
         <div class="explorer-section-head">
           <h2 id="function-matches-heading">Function Matches</h2>
           <span>{{ matchedFunctions.length.toLocaleString() }} shown</span>
@@ -350,6 +429,29 @@ function safeSegment(value: string) {
             class="api-chip button-chip"
             type="button"
             @click="searchFunction(entry.name)"
+          >
+            <span>{{ entry.name }}</span>
+            <small>{{ entry.count.toLocaleString() }}</small>
+          </button>
+        </div>
+      </section>
+
+      <section
+        v-if="matchedConstants.length"
+        class="explorer-section"
+        aria-labelledby="constant-matches-heading"
+      >
+        <div class="explorer-section-head">
+          <h2 id="constant-matches-heading">Constant Matches</h2>
+          <span>{{ matchedConstants.length.toLocaleString() }} shown</span>
+        </div>
+        <div class="function-chip-list">
+          <button
+            v-for="entry in matchedConstants"
+            :key="entry.name"
+            class="api-chip button-chip"
+            type="button"
+            @click="searchConstant(entry.name)"
           >
             <span>{{ entry.name }}</span>
             <small>{{ entry.count.toLocaleString() }}</small>
@@ -417,6 +519,21 @@ function safeSegment(value: string) {
               </a>
               <span v-if="hiddenCallCount(record)" class="more-chip">
                 +{{ hiddenCallCount(record).toLocaleString() }} more
+              </span>
+            </div>
+
+            <div class="matched-call-list" v-if="visibleConstants(record).length">
+              <button
+                v-for="name in visibleConstants(record)"
+                :key="name"
+                class="api-chip button-chip"
+                type="button"
+                @click="searchConstant(name)"
+              >
+                {{ name }}
+              </button>
+              <span v-if="hiddenConstantCount(record)" class="more-chip">
+                +{{ hiddenConstantCount(record).toLocaleString() }} more matching constants
               </span>
             </div>
           </article>

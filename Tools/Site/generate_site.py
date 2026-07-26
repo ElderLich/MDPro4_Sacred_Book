@@ -23,6 +23,7 @@ USAGE_SNIPPET_CONTEXT = 2
 
 DOT_CALL_RE = re.compile(r"\b(aux|Auxiliary|Duel|Card|Effect|Group|Debug|bit)\.([A-Za-z_]\w*)")
 COLON_CALL_RE = re.compile(r"\b[A-Za-z_]\w*:([A-Za-z_]\w*)")
+SCRIPT_CONSTANT_RE = re.compile(r"\b[A-Z][A-Z0-9_]*_[A-Z0-9_]+\b")
 SCRIPT_RE = re.compile(r"^c(\d+)\.lua$", re.IGNORECASE)
 
 TYPE_LABELS = [
@@ -204,6 +205,11 @@ def extract_api_calls(script: str, api_names: set[str], method_names: dict[str, 
         for name in method_names.get(short, []):
             calls.add(name)
     return sorted(calls)
+
+
+def extract_script_constants(script: str) -> list[str]:
+    code = "\n".join(line.split("--", 1)[0] for line in script.splitlines())
+    return sorted(set(SCRIPT_CONSTANT_RE.findall(code)))
 
 
 def split_api_name(name: str) -> tuple[str, str]:
@@ -425,6 +431,7 @@ def scan_examples() -> tuple[list[dict[str, object]], list[dict[str, object]]]:
             CardRecord(card_id, f"Card {card_id}", "", 0, 0, 0, 0, 0, 0, 0),
         )
         calls = extract_api_calls(script, api_names, method_names)
+        constants = extract_script_constants(script)
         examples.append(
             {
                 "id": card.id,
@@ -441,6 +448,7 @@ def scan_examples() -> tuple[list[dict[str, object]], list[dict[str, object]]]:
                 "card_type_labels": labels_from_mask(card.type, TYPE_LABELS),
                 "category_labels": category_labels_from_mask(card.category),
                 "api_calls": calls,
+                "script_constants": constants,
                 "script_length": len(script),
                 "desc_length": len(card.desc),
                 "_desc": card.desc,
@@ -460,6 +468,20 @@ def scan_examples() -> tuple[list[dict[str, object]], list[dict[str, object]]]:
     return examples, featured
 
 
+def write_id_usage_index(path: Path, usage: dict[str, list[int]]) -> None:
+    for card_ids in usage.values():
+        card_ids.sort()
+    usage = dict(sorted(usage.items(), key=lambda pair: pair[0].casefold()))
+    lines = ["{"]
+    for index, (name, card_ids) in enumerate(usage.items()):
+        comma = "," if index + 1 < len(usage) else ""
+        encoded_name = json.dumps(name, ensure_ascii=False)
+        encoded_ids = json.dumps(card_ids, ensure_ascii=False, separators=(",", ":"))
+        lines.append(f"  {encoded_name}: {encoded_ids}{comma}")
+    lines.append("}")
+    write_text(path, "\n".join(lines))
+
+
 def write_examples() -> tuple[list[dict[str, object]], list[dict[str, object]]]:
     examples, featured = scan_examples()
     examples_dir = DOCS_DIR / "examples"
@@ -470,7 +492,11 @@ def write_examples() -> tuple[list[dict[str, object]], list[dict[str, object]]]:
     public_dir.mkdir(parents=True, exist_ok=True)
     featured_ids = {int(item["id"]) for item in featured}
     public_examples = [
-        {key: value for key, value in item.items() if not key.startswith("_")}
+        {
+            key: value
+            for key, value in item.items()
+            if not key.startswith("_") and key != "script_constants"
+        }
         for item in examples
     ]
     write_text(public_dir / "card-examples.json", json.dumps(public_examples, ensure_ascii=False, indent=2))
@@ -480,17 +506,13 @@ def write_examples() -> tuple[list[dict[str, object]], list[dict[str, object]]]:
     for item in public_examples:
         for name in item["api_calls"]:
             function_usage.setdefault(str(name), []).append(int(item["id"]))
-    for card_ids in function_usage.values():
-        card_ids.sort()
-    function_usage = dict(sorted(function_usage.items(), key=lambda pair: pair[0].casefold()))
-    usage_lines = ["{"]
-    for index, (name, card_ids) in enumerate(function_usage.items()):
-        comma = "," if index + 1 < len(function_usage) else ""
-        encoded_name = json.dumps(name, ensure_ascii=False)
-        encoded_ids = json.dumps(card_ids, ensure_ascii=False, separators=(",", ":"))
-        usage_lines.append(f"  {encoded_name}: {encoded_ids}{comma}")
-    usage_lines.append("}")
-    write_text(public_dir / "function-usage.json", "\n".join(usage_lines))
+    write_id_usage_index(public_dir / "function-usage.json", function_usage)
+
+    constant_usage: dict[str, list[int]] = {}
+    for item in examples:
+        for name in item["script_constants"]:
+            constant_usage.setdefault(str(name), []).append(int(item["id"]))
+    write_id_usage_index(public_dir / "constant-usage.json", constant_usage)
 
     for item in featured:
         card_id = int(item["id"])
@@ -549,9 +571,10 @@ def write_examples() -> tuple[list[dict[str, object]], list[dict[str, object]]]:
         "- Full machine-readable index: `/data/card-examples.json`",
         "- Featured card IDs: `/data/featured-card-ids.json`",
         "- Function usage index: `/data/function-usage.json`",
+        "- Constant usage index: `/data/constant-usage.json`",
         "- Interactive search: [Script Explorer](/tools/script-explorer)",
         "",
-        "The featured pages are selected from scripts with many detected API calls and card text available. The Script Explorer can search the full local script set by card ID, card name, script path, or detected API function.",
+        "The featured pages are selected from scripts with many detected API calls and card text available. The Script Explorer can search the full local script set by card ID, card name, script path, detected API function, or named Lua constant.",
         "",
         "## Case Studies",
         "",
