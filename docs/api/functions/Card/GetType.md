@@ -20,7 +20,7 @@ Returns c's current type mask, including temporary type changes applied to the c
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3399`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3402`
 
 ## Used By
 

@@ -18,7 +18,7 @@ Adds an EFFECT_COUNTER_LIMIT for countertype to c with value limit.
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3632`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3635`
 
 ## Used By
 

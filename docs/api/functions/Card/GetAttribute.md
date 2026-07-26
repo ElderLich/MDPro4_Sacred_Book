@@ -21,7 +21,7 @@ Cards treated as having multiple Attributes can return a bitwise combination of 
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3431`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3434`
 
 ## Used By
 

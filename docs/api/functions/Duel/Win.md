@@ -56,7 +56,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 Source: [Scripts/c77751766.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c77751766.lua)
 
 ```lua
-				if Duel.SSet(tp,g:GetFirst()) and Duel.GetMatchingGroupCount(aux.TRUE,tp,LOCATION_DECK,0,nil)<=1 then
+				if Duel.SSet(tp,g:GetFirst())>0 and Duel.GetMatchingGroupCount(aux.TRUE,tp,LOCATION_DECK,0,nil)<=1 then
 					Duel.BreakEffect()
 					Duel.Win(tp,0x23)
 				end

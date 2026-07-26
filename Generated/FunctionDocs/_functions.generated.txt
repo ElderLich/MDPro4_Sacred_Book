@@ -77,7 +77,7 @@ Parameters:
   singly: bool optional - default: false
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3628
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3631
 
 ●void Card.AddMonsterAttribute(Card c, int type, [int attribute], [int race], [int level], [int atk], [int def])
 通过效果给c追加临时怪兽属性。
@@ -90,7 +90,7 @@ Parameters:
   level: int optional - default: 0
   atk: int optional - default: 0
   def: int optional - default: 0
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3650
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3653
 
 ●void Card.AssumeProperty(Card c, int assume_type, int assume_value)
 临时假定c的一个属性供核心检查使用。
@@ -99,14 +99,14 @@ Parameters:
   c: Card
   assume_type: int
   assume_value: int
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3660
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3663
 
 ●void Card.CancelCardTarget(Card c, Card target)
 把target从c的持续卡片对象关系中移除。
 Parameters:
   c: Card
   target: Card
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3541
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3544
 
 ●void Card.CancelToGrave(Card c, [bool cancel])
 取消送墓确定状态，cancel=false则重新设置送墓确定状态
@@ -116,7 +116,7 @@ Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3541
 Parameters:
   c: Card
   cancel: bool optional - default: true
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3651
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3654
 
 ●Effect|nil,Group|nil,int|nil,int|nil,Effect|nil,int|nil,int|nil Card.CheckActivateEffect(Card c, bool neglect_con, bool neglect_cost, bool copy_info)
 检查c是否有当前可以发动的卡片发动效果。
@@ -136,7 +136,7 @@ Returns:
   Effect|nil - copy_info返回事件信息时的re。
   int|nil - copy_info返回事件信息时的r。
   int|nil - copy_info返回事件信息时的rp。
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3545
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3548
 
 ●bool Card.CheckEquipTarget(Card c1, Card c2)
 检查c2是否是c1的合法装备对象。
@@ -146,7 +146,7 @@ Parameters:
   c2: Card
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3521
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3524
 
 ●bool Card.CheckFusionMaterial(Card c, [Group|nil g], [Card|nil gc], [int chkf], [bool not_material])
 检查c的融合素材要求是否可以由g满足，并可要求必须包含gc。
@@ -159,7 +159,7 @@ Parameters:
   not_material: bool optional - default: false
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3644
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3647
 
 ●bool Card.CheckFusionSubstitute(Card c, Card fcard)
 检查c能否代替融合怪兽fcard所列名的指定融合素材。
@@ -168,7 +168,7 @@ Parameters:
   fcard: Card
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3645
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3648
 
 ●bool Card.CheckRemoveOverlayCard(Card c, int player, int count, int reason)
 检查player能否为了reason从c上取除至少count个超量素材。
@@ -180,7 +180,7 @@ Parameters:
   reason: int
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3527
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3530
 
 ●bool Card.CheckUnionTarget(Card c, Card target)
 检查target是否是在EFFECT_UNION_LIMIT下c的合法同盟装备对象。
@@ -190,7 +190,7 @@ Parameters:
   target: Card
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3522
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3525
 
 ●bool Card.CheckUniqueOnField(Card c, int check_player, [int check_location], [Card|nil icard])
 检查c在check_player场上是否满足当前唯一性规则，可以与已存在的卡共存。
@@ -202,13 +202,13 @@ Parameters:
   icard: Card|nil optional - Optional card ignored during the check, useful when testing a pending replacement or move.
 Returns:
   bool - True if c can coexist under the unique-on-field rules for the requested player and location.
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3658
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3661
 
 ●void Card.ClearEffectRelation(Card c)
 清除c当前保存的全部效果关系。
 Parameters:
   c: Card
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3561
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3564
 
 ●void Card.CompleteProcedure(Card c)
 把c标记为已经完成正规召唤手续。
@@ -216,7 +216,7 @@ Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3561
 不要把普通苏生效果标记为正规召唤。由EFFECT_SPSUMMON_PROC登记的规则召唤手续成功后会由核心完成该状态。
 Parameters:
   c: Card - 要标记正规召唤手续已完成的卡。
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3569
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3572
 
 ●int Card.CopyEffect(Card c, int code, int reset, [int count])
 把卡号code的initial_effect复制到c上，并返回生成的复制id；code对应通常怪兽时返回-1。
@@ -228,7 +228,7 @@ Parameters:
   count: int optional - default: 1
 Returns:
   int
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3566
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3569
 
 ●void Card.CreateEffectRelation(Card c, Effect e)
 在c与效果e之间建立关联。
@@ -236,7 +236,7 @@ Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3566
 Parameters:
   c: Card
   e: Effect
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3559
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3562
 
 ●void Card.CreateRelation(Card c1, Card c2, int reset)
 建立从c1到c2的关系，并按reset清除。
@@ -244,7 +244,7 @@ Parameters:
   c1: Card
   c2: Card
   reset: int
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3557
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3560
 
 ●void Card.EnableCounterPermit(Card c, int countertype, [int location], [function condition])
 给c登记单卡的指示物许可效果，使其可以在指定范围放置countertype类型的指示物。
@@ -254,7 +254,7 @@ Parameters:
   countertype: int - Counter type that c is allowed to hold.
   location: int optional - Single-effect range for the permit. Omitted defaults to LOCATION_MZONE for monsters, otherwise LOCATION_SZONE + LOCATION_FZONE.
   condition: function optional - Optional condition callback stored on the permit effect; ignored unless this argument is a function.
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3631
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3634
 
 ●void Card.EnableDualState(Card c)
 给c登记EFFECT_DUAL_STATUS，使本地二重/Gemini检查将其视为已获得效果。
@@ -262,7 +262,7 @@ Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3631
 登记的状态效果带有本地客户端提示，并按通常卡片事件重置。
 Parameters:
   c: Card - 要立即获得二重状态的二重怪兽。
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3511
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3514
 
 ●void Card.EnableReviveLimit(Card c)
 给c设置苏生限制，使普通特殊召唤效果在其未正规召唤前不能从公开区域把它特殊召唤回来。
@@ -270,7 +270,7 @@ Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3511
 本地核心在该卡移动到手牌或卡组时会清除正规召唤手续已完成状态。
 Parameters:
   c: Card - 需要先正规召唤，之后普通苏生效果才能特殊召唤的卡。
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3568
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3571
 
 ●Effect|nil Card.GetActivateEffect(Card c)
 返回c的发动效果，即类型包含EFFECT_TYPE_ACTIVATE的效果；主要用于魔法/陷阱卡。
@@ -280,7 +280,7 @@ Parameters:
   c: Card
 Returns:
   Effect|nil - c上登记的发动效果；没有登记时返回nil。
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3544
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3547
 
 ●int Card.GetAttack(Card c)
 返回c当前的攻击力；未知或负数攻击力按0返回。
@@ -288,7 +288,7 @@ Parameters:
   c: Card
 Returns:
   int
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3440
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3443
 
 ●Group,bool Card.GetAttackableTarget(Card c)
 返回c可攻击的卡的Group，以及c能否直接攻击的布尔值。
@@ -297,7 +297,7 @@ Parameters:
 Returns:
   Group - Attackable monsters.
   bool - Whether c can attack directly.
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3654
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3657
 
 ●int Card.GetAttackAnnouncedCount(Card c)
 返回c的攻击宣言次数。
@@ -305,7 +305,7 @@ Parameters:
   c: Card
 Returns:
   int
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3534
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3537
 
 ●int Card.GetAttackedCount(Card c)
 返回c在当前回合的攻击次数。
@@ -313,7 +313,7 @@ Parameters:
   c: Card
 Returns:
   int
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3531
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3534
 
 ●Group Card.GetAttackedGroup(Card c)
 返回c攻击过的卡组成的Group。
@@ -321,7 +321,7 @@ Parameters:
   c: Card
 Returns:
   Group
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3529
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3532
 
 ●int Card.GetAttackedGroupCount(Card c)
 返回c保存的攻击记录数量。
@@ -329,7 +329,7 @@ Parameters:
   c: Card
 Returns:
   int
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3530
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3533
 
 ●int Card.GetAttribute(Card c)
 返回c当前的属性位掩码。
@@ -338,7 +338,7 @@ Parameters:
   c: Card
 Returns:
   int
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3431
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3434
 
 ●int Card.GetAttributeInGrave(Card c, [int player])
 返回c在墓地中对player视为具有的属性；player省略时使用当前原因玩家。
@@ -347,7 +347,7 @@ Parameters:
   player: int optional - default: current reason player
 Returns:
   int
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3435
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3438
 
 ●int Card.GetBaseAttack(Card c)
 返回c当前的基础攻击力；未知或负数攻击力按0返回。
@@ -355,7 +355,7 @@ Parameters:
   c: Card
 Returns:
   int
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3441
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3444
 
 ●int Card.GetBaseDefense(Card c)
 返回c当前的基础守备力。未知或负数基础守备力会被该绑定限制为0。
@@ -363,7 +363,7 @@ Parameters:
   c: Card
 Returns:
   int
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3444
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3447
 
 ●Group Card.GetBattledGroup(Card c)
 返回c已经战斗过的卡组成的Group。
@@ -371,7 +371,7 @@ Parameters:
   c: Card
 Returns:
   Group
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3532
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3535
 
 ●int Card.GetBattledGroupCount(Card c)
 返回c当前记录的已战斗卡集合数量。
@@ -379,7 +379,7 @@ Parameters:
   c: Card
 Returns:
   int
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3533
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3536
 
 ●int Card.GetBattlePosition(Card c)
 返回c的临时战斗表示形式快照。
@@ -387,7 +387,7 @@ Parameters:
   c: Card
 Returns:
   int
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3465
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3468
 
 ●Card|nil Card.GetBattleTarget(Card c)
 返回当前正在与c战斗的怪兽；若c不是当前攻击怪兽或攻击对象则返回nil。
@@ -395,7 +395,7 @@ Parameters:
   c: Card
 Returns:
   Card|nil - The monster battling c, or nil.
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3653
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3656
 
 ●Group Card.GetCardTarget(Card c)
 返回包含c当前记录的全部持续取对象卡的Group。
@@ -403,7 +403,7 @@ Parameters:
   c: Card
 Returns:
   Group
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3537
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3540
 
 ●int Card.GetCardTargetCount(Card c)
 返回c当前记录的持续取对象卡数量。
@@ -411,7 +411,7 @@ Parameters:
   c: Card
 Returns:
   int
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3539
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3542
 
 ●int,int|nil Card.GetCode(Card c)
 返回c的当前卡号（可能因为效果改变）
@@ -420,7 +420,7 @@ Parameters:
 Returns:
   int
   int|nil
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3386
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3389
 
 ●Group Card.GetColumnGroup(Card c)
 返回与c位于同一纵列的卡组成的Group。
@@ -429,7 +429,7 @@ Parameters:
   c: Card
 Returns:
   Group
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3427
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3430
 
 ●int Card.GetColumnGroupCount(Card c)
 返回与c所在纵列重叠的卡数量。
@@ -437,7 +437,7 @@ Parameters:
   c: Card
 Returns:
   int
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3428
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3431
 
 ●int Card.GetColumnZone(Card c, int loc, [int player])
 返回loc范围内与c所在纵列重叠的区域位掩码。
@@ -448,7 +448,7 @@ Parameters:
   player: int optional
 Returns:
   int
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3429
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3432
 
 ●int Card.GetControler(Card c)
 返回c的当前控制者
@@ -456,7 +456,7 @@ Parameters:
   c: Card
 Returns:
   int
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3456
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3459
 
 ●int Card.GetCounter(Card c, int countertype)
 返回c上的countertype类型指示物信息。
@@ -466,7 +466,7 @@ Parameters:
   countertype: int
 Returns:
   int
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3630
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3633
 
 ●int Card.GetCurrentScale(Card c)
 返回c当前使用的灵摆刻度。
@@ -475,7 +475,7 @@ Parameters:
   c: Card
 Returns:
   int
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3417
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3420
 
 ●int Card.GetDefense(Card c)
 返回c当前的守备力。未知或负数守备力会被该绑定限制为0。
@@ -483,7 +483,7 @@ Parameters:
   c: Card
 Returns:
   int
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3443
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3446
 
 ●int Card.GetDestination(Card c)
 返回c当前送去参数中保存的目标位置。
@@ -491,7 +491,7 @@ Parameters:
   c: Card
 Returns:
   int
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3474
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3477
 
 ●int Card.GetEffectCount(Card c, int code)
 返回c的效果筛选中当前找到的code效果数量。
@@ -500,7 +500,7 @@ Parameters:
   code: int
 Returns:
   int
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3551
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3554
 
 ●int Card.GetEquipCount(Card c)
 返回当前装备给c的装备卡数量。
@@ -508,7 +508,7 @@ Parameters:
   c: Card
 Returns:
   int
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3518
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3521
 
 ●Group Card.GetEquipGroup(Card c)
 以Group返回当前装备给c的装备卡。
@@ -516,7 +516,7 @@ Parameters:
   c: Card
 Returns:
   Group
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3517
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3520
 
 ●Card|nil Card.GetEquipTarget(Card c)
 返回c当前装备到的卡；如果c没有装备对象则返回nil。
@@ -524,7 +524,7 @@ Parameters:
   c: Card
 Returns:
   Card|nil
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3519
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3522
 
 ●int Card.GetFieldID(Card c)
 返回c当前的field ID，即核心在c移动到当前位置时分配的时间标识。
@@ -533,7 +533,7 @@ Parameters:
   c: Card - Card whose current field ID is returned.
 Returns:
   int - Current field ID assigned by the core for c's current field identity.
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3477
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3480
 
 ●Card|nil Card.GetFirstCardTarget(Card c)
 返回c的第1个持续取对象卡；没有时返回nil。
@@ -541,7 +541,7 @@ Parameters:
   c: Card
 Returns:
   Card|nil
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3538
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3541
 
 ●int Card.GetFlagEffect(Card c, int code)
 返回c上编号为code的标记效果数量。
@@ -550,7 +550,7 @@ Parameters:
   code: int - Flag-effect code; the core masks it with MAX_CARD_ID and adds EFFECT_FLAG_EFFECT.
 Returns:
   int - Number of matching flag effects on c.
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3553
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3556
 
 ●int|nil,...? Card.GetFlagEffectLabel(Card c, int code)
 返回c上编号为code的每个标记效果的第1个Label值。
@@ -561,7 +561,7 @@ Parameters:
 Returns:
   int|nil - First label value, or nil if no matching flag effect exists.
   ...? - Additional integer label values from additional matching flag effects.
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3556
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3559
 
 ●int Card.GetFusionAttribute(Card c, [int player])
 返回c作为融合素材使用时对player使用的属性；player省略时使用当前原因玩家。
@@ -570,7 +570,7 @@ Parameters:
   player: int optional - default: current reason player
 Returns:
   int
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3433
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3436
 
 ●int,...? Card.GetFusionCode(Card c)
 返回c作为融合素材使用时的卡号：当前卡号、存在时的第二卡号，以及EFFECT_ADD_FUSION_CODE的追加值。
@@ -580,7 +580,7 @@ Parameters:
 Returns:
   int - Current code.
   ...? - Additional Fusion Material code values, if any.
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3389
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3392
 
 ●int Card.GetFusionType(Card c)
 返回c用于融合素材检查的融合素材种类位掩码。
@@ -588,7 +588,7 @@ Parameters:
   c: Card
 Returns:
   int
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3401
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3404
 
 ●Effect|nil,function|nil,int|nil,int|nil Card.GetHandSynchro(Card c)
 返回c上的手牌同调启用效果、其Target函数，以及手牌素材数量min/max。
@@ -600,7 +600,7 @@ Returns:
   function|nil - Effect target function.
   int|nil - Minimum hand-material count.
   int|nil - Maximum hand-material count.
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3547
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3550
 
 ●int Card.GetLeaveFieldDest(Card c)
 返回c因REASON_EFFECT适用离场改去效果时会前往的位置。
@@ -608,7 +608,7 @@ Parameters:
   c: Card
 Returns:
   int
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3475
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3478
 
 ●int Card.GetLeftScale(Card c)
 返回c当前的左灵摆刻度数值。
@@ -617,7 +617,7 @@ Parameters:
   c: Card
 Returns:
   int - 当前左灵摆刻度数值。
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3413
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3416
 
 ●int Card.GetLevel(Card c)
 返回c的当前等级
@@ -625,7 +625,7 @@ Parameters:
   c: Card
 Returns:
   int
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3405
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3408
 
 ●int Card.GetLink(Card c)
 返回c的连接值；c不是连接怪兽时返回0。
@@ -633,7 +633,7 @@ Parameters:
   c: Card
 Returns:
   int
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3407
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3410
 
 ●int Card.GetLinkAttribute(Card c, [int player])
 返回c作为连接素材使用时对player使用的属性；player省略时使用当前原因玩家。
@@ -642,7 +642,7 @@ Parameters:
   player: int optional - default: current reason player
 Returns:
   int
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3434
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3437
 
 ●int,...? Card.GetLinkCode(Card c)
 返回c作为连接素材使用时的卡号：当前卡号、存在时的第二卡号，以及EFFECT_ADD_LINK_CODE的追加值。
@@ -651,7 +651,7 @@ Parameters:
 Returns:
   int - Current code.
   ...? - Additional Link Material code values, if any.
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3390
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3393
 
 ●Group Card.GetLinkedGroup(Card c)
 返回当前位于c连接区域中的卡。
@@ -660,7 +660,7 @@ Parameters:
   c: Card
 Returns:
   Group - 当前位于c连接区域中的卡。
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3419
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3422
 
 ●int Card.GetLinkedGroupCount(Card c)
 返回位于c所连接区域中的卡数量。
@@ -668,7 +668,7 @@ Parameters:
   c: Card
 Returns:
   int
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3420
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3423
 
 ●int Card.GetLinkedZone(Card c, [int player])
 返回c产生的连接区域位掩码。
@@ -679,7 +679,7 @@ Parameters:
   player: int optional - 返回区域掩码时使用的视角玩家。默认值：c的控制者。
 Returns:
   int - 指定视角下的连接区域位掩码。
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3421
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3424
 
 ●int Card.GetLinkRace(Card c, [int player])
 返回c作为连接素材使用时对player使用的种族；player省略时使用当前原因玩家。
@@ -688,7 +688,7 @@ Parameters:
   player: int optional - default: current reason player
 Returns:
   int
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3438
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3441
 
 ●int Card.GetLinkType(Card c)
 返回c用于连接素材检查的连接素材种类位掩码。
@@ -696,7 +696,7 @@ Parameters:
   c: Card
 Returns:
   int
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3404
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3407
 
 ●int Card.GetLocation(Card c)
 返回c当前所在位置；c当前被当作不在场上时返回0。
@@ -704,7 +704,7 @@ Parameters:
   c: Card
 Returns:
   int
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3466
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3469
 
 ●Group Card.GetMaterial(Card c)
 返回c当前记录的素材卡Group。
@@ -712,7 +712,7 @@ Parameters:
   c: Card - Card whose stored material list is being read.
 Returns:
   Group - New Group containing c's stored material cards; the Group is empty if no material cards are stored.
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3515
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3518
 
 ●int Card.GetMaterialCount(Card c)
 返回当前记录为c素材的卡数量。
@@ -720,7 +720,7 @@ Parameters:
   c: Card
 Returns:
   int
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3516
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3519
 
 ●Group Card.GetMutualLinkedGroup(Card c)
 返回与c互相连接的卡的Group。
@@ -728,7 +728,7 @@ Parameters:
   c: Card
 Returns:
   Group
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3422
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3425
 
 ●int Card.GetMutualLinkedGroupCount(Card c)
 返回与c互相连接的卡数量。
@@ -736,7 +736,7 @@ Parameters:
   c: Card
 Returns:
   int
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3423
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3426
 
 ●int Card.GetMutualLinkedZone(Card c, [int player])
 返回c互相连接的区域位掩码；提供与c控制者相对的player参数时，会交换为该玩家视角。
@@ -745,7 +745,7 @@ Parameters:
   player: int optional - default: c:GetControler()
 Returns:
   int
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3424
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3427
 
 ●int Card.GetOriginalAttribute(Card c)
 返回c卡片数据中的原本属性；c带STATUS_NO_LEVEL时返回0。
@@ -753,7 +753,7 @@ Parameters:
   c: Card
 Returns:
   int
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3432
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3435
 
 ●int Card.GetOriginalCode(Card c)
 返回c卡片数据中的原本卡号。
@@ -761,7 +761,7 @@ Parameters:
   c: Card
 Returns:
   int
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3387
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3390
 
 ●int,int|nil Card.GetOriginalCodeRule(Card c)
 返回c按规则使用的原本卡号。
@@ -771,7 +771,7 @@ Parameters:
 Returns:
   int - Primary rule-original code.
   int|nil - Second rule code, when present.
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3388
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3391
 
 ●int Card.GetOriginalLeftScale(Card c)
 返回c记载的左灵摆刻度。
@@ -779,7 +779,7 @@ Parameters:
   c: Card
 Returns:
   int
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3414
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3417
 
 ●int Card.GetOriginalLevel(Card c)
 返回c卡片数据中的原本等级；超量怪兽、连接怪兽以及带STATUS_NO_LEVEL的卡返回0。
@@ -787,7 +787,7 @@ Parameters:
   c: Card
 Returns:
   int
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3410
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3413
 
 ●int Card.GetOriginalRace(Card c)
 返回c卡片数据中的原本种族；c带STATUS_NO_LEVEL时返回0。
@@ -795,7 +795,7 @@ Parameters:
   c: Card
 Returns:
   int
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3437
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3440
 
 ●int Card.GetOriginalRank(Card c)
 返回c卡片数据中的原本阶级；c不是超量怪兽时返回0。
@@ -803,7 +803,7 @@ Parameters:
   c: Card
 Returns:
   int
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3411
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3414
 
 ●int Card.GetOriginalRightScale(Card c)
 返回c记载的右灵摆刻度。
@@ -811,7 +811,7 @@ Parameters:
   c: Card
 Returns:
   int
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3416
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3419
 
 ●int Card.GetOriginalType(Card c)
 返回c原本卡片数据中的种类位掩码，而不是当前被修改后的种类。
@@ -819,7 +819,7 @@ Parameters:
   c: Card
 Returns:
   int
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3400
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3403
 
 ●int Card.GetOverlayCount(Card c)
 返回c当前叠放的超量素材数量。
@@ -827,7 +827,7 @@ Parameters:
   c: Card
 Returns:
   int
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3525
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3528
 
 ●Group Card.GetOverlayGroup(Card c)
 返回当前叠放在c下面作为超量素材的卡组成的Group。
@@ -835,7 +835,7 @@ Parameters:
   c: Card
 Returns:
   Group
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3524
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3527
 
 ●Card Card.GetOverlayTarget(Card c)
 返回c作为超量素材叠放到的卡；c未作为素材叠放时返回nil。
@@ -843,7 +843,7 @@ Parameters:
   c: Card
 Returns:
   Card
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3526
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3529
 
 ●int Card.GetOwner(Card c)
 返回c的原本持有者玩家。
@@ -851,7 +851,7 @@ Parameters:
   c: Card
 Returns:
   int
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3455
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3458
 
 ●Group Card.GetOwnerTarget(Card c)
 返回把c作为持续卡片对象拥有者的卡组成的Group。
@@ -859,7 +859,7 @@ Parameters:
   c: Card
 Returns:
   Group
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3542
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3545
 
 ●int Card.GetOwnerTargetCount(Card c)
 返回把c作为持续卡片对象拥有者的卡数量。
@@ -867,7 +867,7 @@ Parameters:
   c: Card
 Returns:
   int
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3543
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3546
 
 ●int Card.GetPosition(Card c)
 返回c当前的表示形式数值。
@@ -875,7 +875,7 @@ Parameters:
   c: Card
 Returns:
   int
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3463
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3466
 
 ●int Card.GetPreviousAttackOnField(Card c)
 返回c之前场上状态记录的攻击力数值。
@@ -883,7 +883,7 @@ Parameters:
   c: Card
 Returns:
   int
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3452
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3455
 
 ●int Card.GetPreviousAttributeOnField(Card c)
 返回c之前场上状态记录的属性数值。
@@ -891,7 +891,7 @@ Parameters:
   c: Card
 Returns:
   int
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3450
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3453
 
 ●int,int|nil Card.GetPreviousCodeOnField(Card c)
 返回c之前场上状态记录的卡号。
@@ -901,7 +901,7 @@ Parameters:
 Returns:
   int
   int|nil - Second previous code, when present.
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3446
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3449
 
 ●int Card.GetPreviousControler(Card c)
 返回c之前记录的控制者。
@@ -909,7 +909,7 @@ Parameters:
   c: Card
 Returns:
   int
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3457
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3460
 
 ●int Card.GetPreviousDefenseOnField(Card c)
 返回c先前在场上时的DEF值。
@@ -917,7 +917,7 @@ Parameters:
   c: Card
 Returns:
   int
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3453
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3456
 
 ●Card|nil Card.GetPreviousEquipTarget(Card c)
 返回c之前的装备对象；没有时返回nil。
@@ -925,7 +925,7 @@ Parameters:
   c: Card
 Returns:
   Card|nil
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3520
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3523
 
 ●int Card.GetPreviousLevelOnField(Card c)
 返回c先前在场上时的等级值。
@@ -933,7 +933,7 @@ Parameters:
   c: Card
 Returns:
   int
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3448
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3451
 
 ●int Card.GetPreviousLocation(Card c)
 返回c在上一次位置变化前的原位置位掩码。
@@ -941,7 +941,7 @@ Parameters:
   c: Card
 Returns:
   int
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3467
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3470
 
 ●int Card.GetPreviousOverlayCountOnField(Card c)
 返回c位置变化之前在场上叠放的卡片数量
@@ -949,7 +949,7 @@ Parameters:
   c: Card
 Returns:
   int
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3454
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3457
 
 ●int Card.GetPreviousPosition(Card c)
 返回c之前记录的表示形式数值。
@@ -957,7 +957,7 @@ Parameters:
   c: Card
 Returns:
   int
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3464
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3467
 
 ●int Card.GetPreviousRaceOnField(Card c)
 返回c之前场上状态记录的种族数值。
@@ -965,7 +965,7 @@ Parameters:
   c: Card
 Returns:
   int
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3451
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3454
 
 ●int Card.GetPreviousRankOnField(Card c)
 返回c先前在场上时的阶级值。
@@ -973,7 +973,7 @@ Parameters:
   c: Card
 Returns:
   int
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3449
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3452
 
 ●int Card.GetPreviousSequence(Card c)
 返回c之前记录的位置序号。
@@ -981,7 +981,7 @@ Parameters:
   c: Card
 Returns:
   int
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3469
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3472
 
 ●int Card.GetPreviousTypeOnField(Card c)
 返回c之前场上状态记录的种类数值。
@@ -989,7 +989,7 @@ Parameters:
   c: Card
 Returns:
   int
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3447
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3450
 
 ●int Card.GetRace(Card c)
 返回c的当前种族
@@ -998,7 +998,7 @@ Parameters:
   c: Card
 Returns:
   int
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3436
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3439
 
 ●int Card.GetRaceInGrave(Card c, [int reasonPlayer])
 返回c在墓地中对player视为具有的种族；player省略时使用当前原因玩家。
@@ -1007,7 +1007,7 @@ Parameters:
   reasonPlayer: int optional
 Returns:
   int
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3439
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3442
 
 ●int Card.GetRank(Card c)
 返回c当前的阶级。
@@ -1016,7 +1016,7 @@ Parameters:
   c: Card
 Returns:
   int
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3406
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3409
 
 ●int Card.GetRealFieldID(Card c)
 返回c的真实field ID，即核心用于关系追踪的场上识别值。
@@ -1024,7 +1024,7 @@ Parameters:
   c: Card
 Returns:
   int
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3478
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3481
 
 ●int Card.GetReason(Card c)
 返回c当前记录的原因位掩码/数值。
@@ -1033,7 +1033,7 @@ Parameters:
   c: Card
 Returns:
   int
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3459
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3462
 
 ●Card|nil Card.GetReasonCard(Card c)
 返回c当前记录的原因卡；没有记录原因卡时返回nil。
@@ -1041,7 +1041,7 @@ Parameters:
   c: Card
 Returns:
   Card|nil
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3460
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3463
 
 ●Effect|nil Card.GetReasonEffect(Card c)
 返回c当前记录的原因效果；没有记录原因效果时返回nil。
@@ -1049,7 +1049,7 @@ Parameters:
   c: Card
 Returns:
   Effect|nil
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3462
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3465
 
 ●int Card.GetReasonPlayer(Card c)
 返回c当前记录的原因玩家，即c当前原因状态中的玩家。
@@ -1057,7 +1057,7 @@ Parameters:
   c: Card
 Returns:
   int
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3461
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3464
 
 ●int Card.GetRightScale(Card c)
 返回c当前的右灵摆刻度数值。
@@ -1066,7 +1066,7 @@ Parameters:
   c: Card
 Returns:
   int - 当前右灵摆刻度数值。
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3415
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3418
 
 ●int Card.GetRitualLevel(Card c, Card rc)
 返回c为仪式怪兽rc提供的仪式等级数值。
@@ -1075,7 +1075,7 @@ Parameters:
   rc: Card
 Returns:
   int
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3409
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3412
 
 ●int Card.GetSequence(Card c)
 返回c在当前位置中的序号。
@@ -1085,7 +1085,7 @@ Parameters:
   c: Card - 要读取当前序号的卡。
 Returns:
   int - c在当前位置中的序号。
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3468
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3471
 
 ●... Card.GetSpecialSummonInfo(Card c, ... int)
 返回c的特殊召唤的信息
@@ -1104,7 +1104,7 @@ Parameters:
   ...: int
 Returns:
   ...
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3473
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3476
 
 ●int Card.GetSummonLocation(Card c)
 返回c是从哪个位置被召唤的，该值从召唤信息中解析。
@@ -1112,7 +1112,7 @@ Parameters:
   c: Card
 Returns:
   int
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3471
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3474
 
 ●int Card.GetSummonPlayer(Card c)
 返回记录为召唤c的玩家。
@@ -1120,7 +1120,7 @@ Parameters:
   c: Card
 Returns:
   int
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3472
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3475
 
 ●int Card.GetSummonType(Card c)
 返回c记录的召唤类型位，并按默认召唤类型字段进行掩码。
@@ -1128,7 +1128,7 @@ Parameters:
   c: Card
 Returns:
   int
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3470
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3473
 
 ●int Card.GetSynchroLevel(Card c, Card scard)
 返回c为同调怪兽scard提供的同调等级数值。
@@ -1137,7 +1137,7 @@ Parameters:
   scard: Card
 Returns:
   int
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3408
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3411
 
 ●int Card.GetSynchroType(Card c)
 返回c用于同调素材检查的同调素材种类位掩码。
@@ -1145,7 +1145,7 @@ Parameters:
   c: Card
 Returns:
   int
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3402
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3405
 
 ●int Card.GetTextAttack(Card c)
 返回c卡片数据中记录的攻击力。
@@ -1154,7 +1154,7 @@ Parameters:
   c: Card
 Returns:
   int
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3442
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3445
 
 ●int Card.GetTextDefense(Card c)
 返回c卡片数据中记载/保存的守备力数值；c处于无等级状态时返回0。
@@ -1162,7 +1162,7 @@ Parameters:
   c: Card
 Returns:
   int
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3445
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3448
 
 ●int,int Card.GetTributeRequirement(Card c)
 返回通常召唤c所需的最小和最大解放数量。
@@ -1171,7 +1171,7 @@ Parameters:
 Returns:
   int - Minimum Tribute count.
   int - Maximum Tribute count.
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3652
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3655
 
 ●Effect,function|nil,int|nil,int,int Card.GetTunerLimit(Card c)
 返回影响c的调整素材限制效果、该效果的Target函数或nil、Value或nil，以及允许的最小和最大数量；没有该效果时不返回值。
@@ -1183,7 +1183,7 @@ Returns:
   int|nil - The effect value, if any.
   int - Minimum allowed material count.
   int - Maximum allowed material count.
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3546
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3549
 
 ●int Card.GetTurnCounter(Card c)
 返回c的回合计数器。
@@ -1191,7 +1191,7 @@ Parameters:
   c: Card
 Returns:
   int
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3513
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3516
 
 ●int Card.GetTurnID(Card c)
 返回c保存的回合ID。
@@ -1200,7 +1200,7 @@ Parameters:
   c: Card
 Returns:
   int
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3476
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3479
 
 ●int Card.GetType(Card c)
 返回c当前的类型掩码，包含卡片当前受到的临时类型变更。
@@ -1208,7 +1208,7 @@ Parameters:
   c: Card
 Returns:
   int
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3399
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3402
 
 ●int,int Card.GetUnionCount(Card c)
 返回c的两个值：装备在其上的新式同盟数量，以及装备在其上的旧式同盟数量。
@@ -1218,7 +1218,7 @@ Parameters:
 Returns:
   int - 装备的新式同盟卡数量。
   int - 装备的旧式同盟卡数量。
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3523
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3526
 
 ●int Card.GetXyzType(Card c)
 返回c用于超量素材检查的超量素材种类位掩码。
@@ -1226,7 +1226,7 @@ Parameters:
   c: Card
 Returns:
   int
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3403
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3406
 
 ●bool Card.IsAbleToChangeControler(Card c)
 只检查c是否不受EFFECT_CANNOT_CHANGE_CONTROL影响。
@@ -1234,7 +1234,7 @@ Parameters:
   c: Card
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3626
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3629
 
 ●bool Card.IsAbleToDeck(Card c)
 检查c是否可以送去卡组
@@ -1242,7 +1242,7 @@ Parameters:
   c: Card
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3585
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3588
 
 ●bool Card.IsAbleToDeckAsCost(Card c)
 检查c是否可以作为cost送去卡组
@@ -1250,7 +1250,7 @@ Parameters:
   c: Card
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3590
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3593
 
 ●bool Card.IsAbleToDeckOrExtraAsCost(Card c)
 检查c是否可以作为cost送去卡组或额外卡组（用于新宇侠、剑斗兽融合怪兽的召唤手续检测）等价于 (c:IsAbleToDeckAsCost() or c:IsAbleToExtraAsCost())
@@ -1258,7 +1258,7 @@ Parameters:
   c: Card
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3592
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3595
 
 ●bool Card.IsAbleToExtra(Card c)
 判断c能否由当前原因玩家返回额外卡组。
@@ -1266,7 +1266,7 @@ Parameters:
   c: Card
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3586
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3589
 
 ●bool Card.IsAbleToExtraAsCost(Card c)
 检查c是否可以作为cost送去额外卡组，主卡组的灵摆卡会返回false
@@ -1274,7 +1274,7 @@ Parameters:
   c: Card
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3591
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3594
 
 ●bool Card.IsAbleToGrave(Card c)
 检查c是否可以送去墓地
@@ -1282,7 +1282,7 @@ Parameters:
   c: Card
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3587
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3590
 
 ●bool Card.IsAbleToGraveAsCost(Card c)
 检查c是否可以作为cost送去墓地
@@ -1290,7 +1290,7 @@ Parameters:
   c: Card
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3593
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3596
 
 ●bool Card.IsAbleToHand(Card c, [int player])
 判断c能否由player送去或返回手牌。
@@ -1300,7 +1300,7 @@ Parameters:
   player: int optional - default: reason player
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3584
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3587
 
 ●bool Card.IsAbleToHandAsCost(Card c)
 检查c是否可以作为cost送去手卡
@@ -1311,7 +1311,7 @@ Parameters:
   c: Card
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3589
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3592
 
 ●bool Card.IsAbleToRemove(Card c, [int player], [int pos], [int reason])
 检查c是否可以被玩家player除外
@@ -1322,7 +1322,7 @@ Parameters:
   reason: int optional
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3588
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3591
 
 ●bool Card.IsAbleToRemoveAsCost(Card c, [int pos])
 判断c能否由当前原因玩家作为cost除外。
@@ -1332,7 +1332,7 @@ Parameters:
   pos: int optional - default: POS_FACEUP
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3594
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3597
 
 ●bool Card.IsAllColumn(Card c)
 检查c是否被视为占用或适用于全部纵列。
@@ -1340,7 +1340,7 @@ Parameters:
   c: Card
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3430
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3433
 
 ●bool Card.IsAllReasons(Card c, int reason)
 检查c是否包含reason之中全部原因
@@ -1349,7 +1349,7 @@ Parameters:
   reason: int
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3500
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3503
 
 ●bool Card.IsAllTypes(Card c, int type)
 检查c是否包含type之中全部类型
@@ -1358,7 +1358,7 @@ Parameters:
   type: int
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3482
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3485
 
 ●bool Card.IsAttack(Card c, int atk1, [int atk2], [... int])
 检查c是否为怪兽或当前被当作怪兽，并且当前攻击力是否等于任意给定的atk值。
@@ -1370,7 +1370,7 @@ Parameters:
   ...: int optional
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3490
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3493
 
 ●bool Card.IsAttackable(Card c)
 检查c当前是否满足核心的基础可攻击条件。
@@ -1379,7 +1379,7 @@ Parameters:
   c: Card
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3598
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3601
 
 ●bool Card.IsAttackAbove(Card c, int atk)
 检查c是否为怪兽或当前被当作怪兽，并且当前攻击力是否大于等于atk。
@@ -1389,7 +1389,7 @@ Parameters:
   atk: int - Minimum ATK value accepted by the check.
 Returns:
   bool - True if c is a monster or treated as one and its current ATK is at least atk.
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3619
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3622
 
 ●bool Card.IsAttackBelow(Card c, int atk)
 检查c是否为怪兽或被当作怪兽，并且当前攻击力已确定且小于等于atk。
@@ -1399,7 +1399,7 @@ Parameters:
   atk: int - Maximum ATK value accepted by the check.
 Returns:
   bool - True if c is a monster or treated as one, has known ATK, and that ATK is at most atk.
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3618
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3621
 
 ●bool Card.IsAttackPos(Card c)
 检查c当前表示形式是否包含POS_ATTACK。
@@ -1407,7 +1407,7 @@ Parameters:
   c: Card
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3602
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3605
 
 ●bool Card.IsAttribute(Card c, int attribute)
 检查c是否属于属性attribute
@@ -1416,7 +1416,7 @@ Parameters:
   attribute: int
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3494
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3497
 
 ●bool Card.IsCanAddCounter(Card c, int countertype, int count, [bool singly], [int loc])
 检查当前原因玩家能否在c上放置count个countertype类型的指示物。
@@ -1429,7 +1429,7 @@ Parameters:
   loc: int optional - default: 0
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3635
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3638
 
 ●bool Card.IsCanBeBattleTarget(Card c1, Card c2)
 检查c1能否被c2选择为攻击对象。
@@ -1438,7 +1438,7 @@ Parameters:
   c2: Card
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3649
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3652
 
 ●bool Card.IsCanBeDisabledByEffect(Card c, Effect e, [bool isMonsterEffect])
 检查c的效果是否能被e无效。
@@ -1450,7 +1450,7 @@ Parameters:
   isMonsterEffect: bool optional
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3647
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3650
 
 ●bool Card.IsCanBeEffectTarget(Card c, [Effect e])
 判断c能否成为e的效果对象；省略e时使用当前原因效果。
@@ -1459,7 +1459,7 @@ Parameters:
   e: Effect optional
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3648
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3651
 
 ●bool Card.IsCanBeFusionMaterial(Card c, [Card|nil fc], [int summon_type])
 检查c能否作为fc和summon_type的融合素材使用。
@@ -1470,7 +1470,7 @@ Parameters:
   summon_type: int optional - default: SUMMON_TYPE_FUSION
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3639
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3642
 
 ●bool Card.IsCanBeLinkMaterial(Card c, [Card scard])
 检查c能否作为连接素材；可选地指定连接怪兽scard。
@@ -1480,7 +1480,7 @@ Parameters:
   scard: Card optional - 要把c作为素材使用的连接怪兽。
 Returns:
   bool - 若c当前可以作为scard的连接素材，或通过通用连接素材检查，则返回true。
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3643
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3646
 
 ●bool Card.IsCanBePlacedOnField(Card c, [int toplayer], [int tolocation])
 Checks whether c can be placed onto the target player's field.
@@ -1491,7 +1491,7 @@ Parameters:
   tolocation: int optional - Target location. Defaults to LOCATION_SZONE.
 Returns:
   bool - true if c can be placed on that player's field.
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3583
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3586
 
 ●bool Card.IsCanBeRitualMaterial(Card c, [Card|nil sc])
 检查c能否作为sc的仪式素材。
@@ -1502,7 +1502,7 @@ Parameters:
   sc: Card|nil optional
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3641
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3644
 
 ●bool Card.IsCanBeSpecialSummoned(Card c, Effect e, int sumtype, int sumplayer, bool nocheck, bool nolimit, [int sumpos], [int toplayer], [int zone])
 检查c能否通过效果e，以给定的召唤类型、召唤玩家、表示形式、目标玩家和可选区域进行特殊召唤。
@@ -1520,7 +1520,7 @@ Parameters:
   zone: int optional - Allowed Monster Zone bitmask; default: 0xff.
 Returns:
   bool - True if c can be Special Summoned with the supplied parameters.
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3582
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3585
 
 ●bool Card.IsCanBeSynchroMaterial(Card c, [Card scard], [Card tuner])
 检查c能否作为scard的同调素材；核心需要配对调整时可提供tuner。
@@ -1530,7 +1530,7 @@ Parameters:
   tuner: Card optional
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3640
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3643
 
 ●bool Card.IsCanBeXyzMaterial(Card c, [Card|nil sc])
 检查c能否作为超量素材使用，可选指定要召唤的sc。
@@ -1540,7 +1540,7 @@ Parameters:
   sc: Card|nil optional
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3642
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3645
 
 ●bool Card.IsCanChangePosition(Card c)
 检查核心中供效果改变表示形式使用的能力判断。
@@ -1549,7 +1549,7 @@ Parameters:
   c: Card
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3633
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3636
 
 ●bool Card.IsCanHaveCounter(Card c, int countertype)
 检查c能否持有countertype类型的指示物。
@@ -1558,7 +1558,7 @@ Parameters:
   countertype: int
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3637
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3640
 
 ●bool Card.IsCanOverlay(Card c, [int player])
 检查c能否由player作为超量素材使用。
@@ -1568,7 +1568,7 @@ Parameters:
   player: int optional - default: current reason player
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3638
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3641
 
 ●bool|nil Card.IsCanRemoveCounter(Card c, int player, int countertype, int count, int reason)
 检查player能否因reason从c上取除count个countertype类型的指示物。
@@ -1580,7 +1580,7 @@ Parameters:
   reason: int
 Returns:
   bool|nil - nil if player is invalid.
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3636
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3639
 
 ●bool Card.IsCanTurnSet(Card c)
 检查c能否被当前原因玩家变成里侧表示。
@@ -1589,7 +1589,7 @@ Parameters:
   c: Card - Card checked for whether it can be turned face-down.
 Returns:
   bool - True if c can be turned face-down by the current reason player.
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3634
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3637
 
 ●bool Card.IsChainAttackable(Card c, [int ac], [bool monsteronly])
 检查当前攻击怪兽能否按连续攻击规则再次攻击。
@@ -1600,7 +1600,7 @@ Parameters:
   monsteronly: bool optional - default: false
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3599
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3602
 
 ●bool Card.IsCode(Card c, int code1, [int code2], [... int])
 检查c的卡号是否匹配任意给定的卡号。
@@ -1611,7 +1611,7 @@ Parameters:
   ...: int optional
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3480
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3483
 
 ●bool Card.IsControler(Card c, int controler)
 检查c的当前控制着是否是controler
@@ -1620,7 +1620,7 @@ Parameters:
   controler: int
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3607
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3610
 
 ●bool Card.IsControlerCanBeChanged(Card c, [bool ignore_mzone], [int zone])
 检查c的控制权当前能否转移给另一名玩家。
@@ -1631,7 +1631,7 @@ Parameters:
   zone: int optional - default: 0xff
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3627
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3630
 
 ●bool Card.IsDefense(Card c, int def1, [int def2], [... int])
 检查c不是连接怪兽、是怪兽或当前被当作怪兽，并且当前守备力是否等于任意给定def值。
@@ -1643,7 +1643,7 @@ Parameters:
   ...: int optional
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3491
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3494
 
 ●bool Card.IsDefenseAbove(Card c, int def)
 检查c当前守备力是否大于等于def。
@@ -1653,7 +1653,7 @@ Parameters:
   def: int
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3621
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3624
 
 ●bool Card.IsDefenseBelow(Card c, int def)
 检查c已知的当前守备力是否小于等于def。
@@ -1663,7 +1663,7 @@ Parameters:
   def: int
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3620
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3623
 
 ●bool Card.IsDefensePos(Card c)
 检查c当前表示形式是否包含POS_DEFENSE。
@@ -1671,7 +1671,7 @@ Parameters:
   c: Card
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3604
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3607
 
 ●bool Card.IsDestructable(Card c, [Effect e])
 检查c能否被破坏。
@@ -1681,7 +1681,7 @@ Parameters:
   e: Effect optional
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3571
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3574
 
 ●bool Card.IsDirectAttacked(Card c)
 检查c是否保存有直接攻击记录。
@@ -1689,7 +1689,7 @@ Parameters:
   c: Card
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3535
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3538
 
 ●bool Card.IsDisabled(Card c)
 检查c当前是否带STATUS_DISABLED。
@@ -1697,7 +1697,7 @@ Parameters:
   c: Card
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3570
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3573
 
 ●bool Card.IsDiscardable(Card c, [int reason])
 检查c是否可以以reason原因丢弃
@@ -1708,7 +1708,7 @@ Parameters:
   reason: int optional - default: REASON_COST
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3597
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3600
 
 ●bool Card.IsDualState(Card c)
 检查c当前是否受EFFECT_DUAL_STATUS影响。
@@ -1716,7 +1716,7 @@ Parameters:
   c: Card
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3510
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3513
 
 ●bool Card.IsEffectProperty(Card c, function filter)
 检查c是否为持有满足过滤条件filter效果的卡
@@ -1725,7 +1725,7 @@ Parameters:
   filter: function - filter(Effect)
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3508
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3511
 
 ●bool Card.IsExtraDeckMonster(Card c)
 检查c是否属于核心视为额外卡组怪兽的卡种。
@@ -1733,7 +1733,7 @@ Parameters:
   c: Card
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3498
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3501
 
 ●bool Card.IsExtraLinkState(Card c)
 检查c是否处于额外连接状态。
@@ -1741,7 +1741,7 @@ Parameters:
   c: Card
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3426
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3429
 
 ●bool Card.IsFacedown(Card c)
 检查c是否是里侧表示
@@ -1749,7 +1749,7 @@ Parameters:
   c: Card
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3603
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3606
 
 ●bool Card.IsFaceup(Card c)
 检查c是否为表侧表示。
@@ -1757,7 +1757,7 @@ Parameters:
   c: Card
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3600
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3603
 
 ●bool Card.IsFaceupEx(Card c)
 检查c是否是表侧表示，在手卡墓地主卡组等处始终返回true
@@ -1765,7 +1765,7 @@ Parameters:
   c: Card
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3601
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3604
 
 ●bool Card.IsForbidden(Card c)
 判断c当前是否具有STATUS_FORBIDDEN状态。
@@ -1773,7 +1773,7 @@ Parameters:
   c: Card
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3625
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3628
 
 ●bool Card.IsFusionAttribute(Card c, int attribute, [int player])
 检查c作为融合素材使用时的属性是否包含attribute。
@@ -1784,7 +1784,7 @@ Parameters:
   player: int optional - default: current reason player
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3495
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3498
 
 ●bool Card.IsFusionCode(Card c, int code1, [int code2], [... int])
 检查c作为融合素材使用时，是否能当作任意给定code。
@@ -1796,7 +1796,7 @@ Parameters:
   ...: int optional
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3391
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3394
 
 ●bool Card.IsFusionSetCard(Card c, ... int)
 判断c作为融合素材时是否可以视为属于任一传入的系列编号。
@@ -1806,7 +1806,7 @@ Parameters:
   ...: int
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3396
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3399
 
 ●bool Card.IsFusionSummonableCard(Card c, [int sum_type])
 检查c能否作为融合怪兽用召唤类型sum_type进行融合召唤；sum_type默认0。
@@ -1815,7 +1815,7 @@ Parameters:
   sum_type: int optional
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3574
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3577
 
 ●bool Card.IsFusionType(Card c, int type)
 检查c作为融合素材使用时的种类是否包含type。
@@ -1825,7 +1825,7 @@ Parameters:
   type: int
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3483
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3486
 
 ●bool Card.IsHasCardTarget(Card c1, Card c2)
 检查c1当前是否把c2作为持续取对象卡。
@@ -1834,7 +1834,7 @@ Parameters:
   c2: Card
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3540
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3543
 
 ●bool Card.IsHasDefense(Card c)
 检查c是否持有守备力
@@ -1842,7 +1842,7 @@ Parameters:
   c: Card
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3623
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3626
 
 ●Effect|nil,... Effect Card.IsHasEffect(Card c, int code, [int player])
 返回当前影响c且效果编号为code的效果；没有匹配效果时返回nil。
@@ -1854,7 +1854,7 @@ Parameters:
 Returns:
   Effect|nil
   ... Effect - Additional matching effects, if any.
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3549
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3552
 
 ●bool Card.IsHasLevel(Card c)
 检查c是否持有等级
@@ -1862,7 +1862,7 @@ Parameters:
   c: Card
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3622
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3625
 
 ●bool Card.IsImmuneToEffect(Card c, Effect e)
 检查c是否免疫效果e（即不受效果e的影响）
@@ -1871,7 +1871,7 @@ Parameters:
   e: Effect
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3646
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3649
 
 ●bool Card.IsLevel(Card c, int level1, [int level2], [... int])
 判断c当前等级是否等于任一传入的等级值。
@@ -1883,7 +1883,7 @@ Parameters:
   ...: int optional
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3487
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3490
 
 ●bool Card.IsLevelAbove(Card c, int level)
 检查c是否是等级level以上
@@ -1892,7 +1892,7 @@ Parameters:
   level: int
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3613
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3616
 
 ●bool Card.IsLevelBelow(Card c, int level)
 检查c是否是等级level以下（至少为1）
@@ -1901,7 +1901,7 @@ Parameters:
   level: int
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3612
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3615
 
 ●bool Card.IsLink(Card c, int link1, [int link2], [... int])
 检查c:GetLink()是否等于任意给定link值。nil的link参数会被跳过；非连接怪兽按0比较。
@@ -1912,7 +1912,7 @@ Parameters:
   ...: int optional
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3489
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3492
 
 ●bool Card.IsLinkAbove(Card c, int link)
 检查c是否具有非0连接值，且连接值大于等于link。
@@ -1921,7 +1921,7 @@ Parameters:
   link: int
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3617
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3620
 
 ●bool Card.IsLinkAttribute(Card c, int attribute, [int player])
 检查c作为连接素材使用时的属性是否包含attribute。
@@ -1932,7 +1932,7 @@ Parameters:
   player: int optional - default: current reason player
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3496
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3499
 
 ●bool Card.IsLinkBelow(Card c, int link)
 检查c是否具有非0连接值，且连接值小于等于link。
@@ -1941,7 +1941,7 @@ Parameters:
   link: int
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3616
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3619
 
 ●bool Card.IsLinkCode(Card c, int code1, [int code2], [... int])
 检查c作为连接素材使用时是否匹配任意给定卡号。
@@ -1953,7 +1953,7 @@ Parameters:
   ...: int optional
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3392
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3395
 
 ●bool Card.IsLinkMarker(Card c, int dir)
 检查c是否具有方向dir的连接标记。
@@ -1962,7 +1962,7 @@ Parameters:
   dir: int
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3418
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3421
 
 ●bool Card.IsLinkRace(Card c, int race, [int player])
 检查c作为player的连接素材使用时的种族是否包含race。player省略时使用当前原因玩家。
@@ -1972,7 +1972,7 @@ Parameters:
   player: int optional - default: current reason player
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3493
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3496
 
 ●bool Card.IsLinkSetCard(Card c, int setcode1, [int setcode2], [... int])
 检查c作为连接素材使用时能否视为任意给定setcode的系列卡。nil的setcode参数会被跳过。
@@ -1983,7 +1983,7 @@ Parameters:
   ...: int optional
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3397
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3400
 
 ●bool Card.IsLinkState(Card c)
 检查c当前是否处于连接状态。
@@ -1991,7 +1991,7 @@ Parameters:
   c: Card
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3425
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3428
 
 ●bool Card.IsLinkSummonable(Card c, Group|nil materials, [Card|nil lcard], [int minc], [int maxc])
 检查连接怪兽c能否由当前原因玩家进行连接召唤。
@@ -2006,7 +2006,7 @@ Parameters:
   maxc: int optional - 运行时素材卡数量上限。默认值：0
 Returns:
   bool - 若c在给定临时限制下存在合法连接召唤，则返回true。
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3578
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3581
 
 ●bool Card.IsLinkType(Card c, int type)
 检查c作为连接素材使用时的种类是否包含type。
@@ -2015,7 +2015,7 @@ Parameters:
   type: int
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3486
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3489
 
 ●bool Card.IsLocation(Card c, int location)
 检查c当前是否在location位置。
@@ -2024,7 +2024,7 @@ Parameters:
   location: int
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3610
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3613
 
 ●bool Card.IsMSetable(Card c, bool ignore_count, [Effect|nil e], [int min], [int zone])
 判断c能否由当前原因玩家在怪兽区域通常盖放。
@@ -2037,7 +2037,7 @@ Parameters:
   zone: int optional - default: 0x1f
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3580
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3583
 
 ●bool Card.IsNonAttribute(Card c, int attribute)
 检查c是否有attribute以外的属性
@@ -2047,7 +2047,7 @@ Parameters:
   attribute: int
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3497
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3500
 
 ●bool Card.IsNotTuner(Card c, Card scard)
 检查c对同调怪兽scard而言是否被视为非调整。
@@ -2056,7 +2056,7 @@ Parameters:
   scard: Card
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3505
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3508
 
 ●bool Card.IsOnField(Card c)
 检查c是否在场
@@ -2065,7 +2065,7 @@ Parameters:
   c: Card
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3609
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3612
 
 ●bool Card.IsOriginalCodeRule(Card c, int code1, [int code2], [... int])
 检查c按规则使用的原本卡号是否匹配任意给定code。
@@ -2077,7 +2077,7 @@ Parameters:
   ...: int optional
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3479
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3482
 
 ●bool Card.IsOriginalEffectProperty(Card c, function filter)
 检查c是否为记载满足过滤条件filter效果的卡
@@ -2086,7 +2086,7 @@ Parameters:
   filter: function - filter(Effect)
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3507
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3510
 
 ●bool Card.IsOriginalSetCard(Card c, int setcode1, [int setcode2], [... int])
 检查c的原本系列数据是否匹配任意给定系列代码。
@@ -2097,7 +2097,7 @@ Parameters:
   ...: int optional
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3394
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3397
 
 ●bool Card.IsPosition(Card c, int pos)
 判断c当前表示形式是否包含pos。
@@ -2106,7 +2106,7 @@ Parameters:
   pos: int
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3605
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3608
 
 ●bool Card.IsPreviousControler(Card c, int player)
 检查c的上一个控制者是否为player
@@ -2115,7 +2115,7 @@ Parameters:
   player: int
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3608
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3611
 
 ●bool Card.IsPreviousLocation(Card c, int location)
 检查c之前的位置是否是location
@@ -2124,7 +2124,7 @@ Parameters:
   location: int
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3611
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3614
 
 ●bool Card.IsPreviousPosition(Card c, int pos)
 判断c之前的表示形式是否包含pos。
@@ -2133,7 +2133,7 @@ Parameters:
   pos: int
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3606
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3609
 
 ●bool Card.IsPreviousSetCard(Card c, int setcode1, [int setcode2], [... int])
 检查c之前记录的卡号或附加系列数据是否匹配任意给定setcode。
@@ -2145,7 +2145,7 @@ Parameters:
   ...: int optional
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3395
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3398
 
 ●bool Card.IsPublic(Card c)
 判断c当前是否为双方公开状态；在当前核心中表现为表侧表示。
@@ -2153,7 +2153,7 @@ Parameters:
   c: Card
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3624
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3627
 
 ●bool Card.IsRace(Card c, int race)
 检查c是否属于种族race
@@ -2162,7 +2162,7 @@ Parameters:
   race: int
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3492
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3495
 
 ●bool Card.IsRank(Card c, int rank1, [int rank2], [... int])
 检查c:GetRank()是否等于任意给定rank值。
@@ -2174,7 +2174,7 @@ Parameters:
   ...: int optional
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3488
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3491
 
 ●bool Card.IsRankAbove(Card c, int rank)
 检查c是否具有非0阶级，且阶级大于等于rank。
@@ -2183,7 +2183,7 @@ Parameters:
   rank: int
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3615
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3618
 
 ●bool Card.IsRankBelow(Card c, int rank)
 检查c是否具有非0阶级，且阶级小于等于rank。
@@ -2192,7 +2192,7 @@ Parameters:
   rank: int
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3614
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3617
 
 ●bool Card.IsReason(Card c, int reason)
 检查c是否包含reason之中任何原因
@@ -2201,7 +2201,7 @@ Parameters:
   reason: int
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3499
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3502
 
 ●bool Card.IsRelateToBattle(Card c)
 检查c是否和本次战斗关联
@@ -2210,7 +2210,7 @@ Parameters:
   c: Card
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3565
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3568
 
 ●bool Card.IsRelateToCard(Card c1, Card c2)
 检查c1当前是否与c2保持关系。
@@ -2219,7 +2219,7 @@ Parameters:
   c2: Card
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3564
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3567
 
 ●bool Card.IsRelateToChain(Card c, [int chainc])
 检查c是否和连锁chainc有联系
@@ -2231,7 +2231,7 @@ Parameters:
   chainc: int optional - default: 0
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3563
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3566
 
 ●bool Card.IsRelateToEffect(Card c, Effect e)
 检查c是否仍与效果e保持联系。
@@ -2241,7 +2241,7 @@ Parameters:
   e: Effect - Effect relation to test against.
 Returns:
   bool - True if c still has relation to e.
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3562
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3565
 
 ●bool Card.IsReleasable(Card c, [int reason])
 检查c能否由当前原因玩家作为非召唤用途被解放。
@@ -2251,7 +2251,7 @@ Parameters:
   reason: int optional - default: REASON_COST
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3595
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3598
 
 ●bool Card.IsReleasableByEffect(Card c)
 使用当前原因玩家和原因效果，检查c是否能被当前处理中的效果解放。
@@ -2259,7 +2259,7 @@ Parameters:
   c: Card
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3596
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3599
 
 ●bool Card.IsSetCard(Card c, ... int)
 检查c是否属于任意给定的系列代码。
@@ -2268,7 +2268,7 @@ Parameters:
   ...: int
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3393
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3396
 
 ●bool Card.IsSpecialSummonable(Card c, [int sum_type])
 检查c当前能否由当前原因玩家以sum_type特殊召唤；sum_type默认0。
@@ -2278,7 +2278,7 @@ Parameters:
   sum_type: int optional - 要检查的召唤类型值；默认值：0。
 Returns:
   bool - 若核心当前认为c在该召唤类型下可以特殊召唤则为true。
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3575
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3578
 
 ●bool Card.IsSpecialSummonableCard(Card c)
 检查c能否通过正规手续特殊召唤。
@@ -2287,7 +2287,7 @@ Parameters:
   c: Card - 要检查的卡。
 Returns:
   bool - 若c在当前局面有可用的正规特殊召唤手续则为true。
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3573
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3576
 
 ●bool Card.IsSpecialSummonSetCard(Card c, ... int)
 检查c是否被卡名含有setname的卡特殊召唤
@@ -2296,7 +2296,7 @@ Parameters:
   ...: int
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3398
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3401
 
 ●bool Card.IsSSetable(Card c, [bool ignore_field])
 检查c是否可以set到魔法陷阱区，ignore_field=true则无视魔陷区格子是否能使用的限制
@@ -2305,7 +2305,7 @@ Parameters:
   ignore_field: bool optional - default: false
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3581
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3584
 
 ●bool Card.IsStatus(Card c, int status)
 判断c当前状态是否包含status中的至少一个标志。
@@ -2315,7 +2315,7 @@ Parameters:
   status: int - 状态标志或组合状态掩码，例如STATUS_BATTLE_DESTROYED。
 Returns:
   bool - 若c具有status中的任意标志则为true。
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3504
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3507
 
 ●bool Card.IsSummonable(Card c, bool ignore_count, [Effect|nil e], [int min], [int zone])
 检查c是否可以进行通常召唤（不包含通常召唤的set)，ignore_count=true则不检查召唤次数限制
@@ -2328,7 +2328,7 @@ Parameters:
   zone: int optional - default: 0x1f
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3579
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3582
 
 ●bool Card.IsSummonableCard(Card c)
 检查c的卡片数据是否属于按卡种可以通常召唤或盖放的怪兽。
@@ -2337,7 +2337,7 @@ Parameters:
   c: Card
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3572
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3575
 
 ●bool Card.IsSummonLocation(Card c, int loc)
 检查c记录的召唤位置是否包含loc。该函数读取召唤信息，不检查c的当前位置。
@@ -2346,7 +2346,7 @@ Parameters:
   loc: int - Location mask to test against the stored Summon location, such as LOCATION_EXTRA or LOCATION_GRAVE.
 Returns:
   bool - True if any bit in loc is present in c's recorded Summon location.
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3502
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3505
 
 ●bool Card.IsSummonPlayer(Card c, int player)
 判断player是否为召唤c的玩家。
@@ -2355,7 +2355,7 @@ Parameters:
   player: int
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3503
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3506
 
 ●bool Card.IsSummonType(Card c, int sumtype)
 判断c记录的召唤类型是否包含sumtype中的全部标志。
@@ -2364,7 +2364,7 @@ Parameters:
   sumtype: int
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3501
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3504
 
 ●bool Card.IsSynchroSummonable(Card c, [Card|nil tuner], [Group mg], [int min], [int max])
 判断c能否使用tuner以及可用素材组mg进行同调召唤。
@@ -2378,7 +2378,7 @@ Parameters:
   max: int optional - default: 0
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3576
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3579
 
 ●bool Card.IsSynchroType(Card c, int type)
 检查c作为同调素材使用时的类型是否包含type。
@@ -2387,7 +2387,7 @@ Parameters:
   type: int
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3484
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3487
 
 ●bool Card.IsTuner(Card c, Card scard)
 检查c是否为scard的调整怪兽。
@@ -2397,7 +2397,7 @@ Parameters:
   scard: Card
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3506
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3509
 
 ●bool Card.IsType(Card c, int type)
 检查c是否包含type中的任意类型。
@@ -2406,7 +2406,7 @@ Parameters:
   type: int
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3481
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3484
 
 ●bool Card.IsXyzLevel(Card c, Card xyzc, int lv)
 检查c能否为超量怪兽xyzc提供超量用等级lv。
@@ -2416,7 +2416,7 @@ Parameters:
   lv: int
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3412
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3415
 
 ●bool Card.IsXyzSummonable(Card c, [Group|nil materials], [int minc], [int maxc])
 检查超量怪兽c能否由当前原因玩家用可选素材组和min/max限制进行超量召唤。
@@ -2429,7 +2429,7 @@ Parameters:
   maxc: int optional - 可选的素材数量上限覆盖值。默认为0。
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3577
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3580
 
 ●bool Card.IsXyzType(Card c, int type)
 检查c作为超量素材使用时的类型是否包含type。
@@ -2438,7 +2438,7 @@ Parameters:
   type: int
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3485
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3488
 
 ●int|nil Card.RegisterEffect(Card c, Effect e, [bool forced])
 把效果e注册给c，成功时返回效果的场上编号，并设置e的Handler为c。
@@ -2448,7 +2448,7 @@ Parameters:
   forced: bool optional
 Returns:
   int|nil
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3548
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3551
 
 ●Effect Card.RegisterFlagEffect(Card c, int code, int reset_flag, int property, int reset_count, [int label], [int desc])
 在c上登记单卡标记效果，并返回创建的Effect。
@@ -2464,21 +2464,21 @@ Parameters:
   desc: int optional - Optional client description id for marker hints.
 Returns:
   Effect - The created flag effect.
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3552
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3555
 
 ●void Card.ReleaseEffectRelation(Card c, Effect e)
 解除c与效果e之间的关系。
 Parameters:
   c: Card
   e: Effect
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3560
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3563
 
 ●void Card.ReleaseRelation(Card c1, Card c2)
 解除c1与卡c2之间的关系。
 Parameters:
   c1: Card
   c2: Card
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3558
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3561
 
 ●bool|nil Card.RemoveCounter(Card c, int player, int countertype, int count, int reason)
 由player因reason从c上取除count个countertype类型的指示物。
@@ -2491,7 +2491,7 @@ Parameters:
   reason: int
 Returns:
   bool|nil
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3629
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3632
 
 ●int Card.RemoveOverlayCard(Card c, int player, int min, int max, int reason)
 让player为了reason从c上取除min到max个超量素材，并返回实际取除数量。
@@ -2504,7 +2504,7 @@ Parameters:
   reason: int
 Returns:
   int - Number of Xyz Materials actually removed.
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3528
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3531
 
 ●int Card.ReplaceEffect(Card c, int code, int reset, [int count])
 用卡号code的效果替换c的效果，使用给定reset标志，并返回替换效果id。
@@ -2516,7 +2516,7 @@ Parameters:
   count: int optional - default: 1
 Returns:
   int
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3567
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3570
 
 ●void Card.ResetEffect(Card c, int code, int reset_type)
 手动重置c上匹配code和reset_type的效果。
@@ -2524,14 +2524,14 @@ Parameters:
   c: Card
   code: int
   reset_type: int
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3550
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3553
 
 ●void Card.ResetFlagEffect(Card c, int code)
 重置c上code对应的全部标志效果。
 Parameters:
   c: Card - Card whose matching flag effects are reset.
   code: int - Flag-effect code to clear.
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3554
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3557
 
 ●void Card.ResetNegateEffect(Card c, [int code1], [... any])
 按每个给定的重置代码重置c上相关的无效效果。
@@ -2539,14 +2539,14 @@ Parameters:
   c: Card
   code1: int optional
   ...: any optional
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3659
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3662
 
 ●void Card.ReverseInDeck(Card c)
 把位于Deck中的c标记为表侧。
 如果c是当前主Deck最上方的卡，核心还会向客户端发送Deck顶更新。
 Parameters:
   c: Card
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3656
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3659
 
 ●void Card.SetCardTarget(Card c1, Card c2)
 把c2登记为c1的持续卡片对象。
@@ -2554,7 +2554,7 @@ Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3656
 Parameters:
   c1: Card
   c2: Card
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3536
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3539
 
 ●void Card.SetCounterLimit(Card c, int countertype, int limit)
 为c添加countertype对应的EFFECT_COUNTER_LIMIT，数值为limit。
@@ -2562,7 +2562,7 @@ Parameters:
   c: Card
   countertype: int
   limit: int
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3632
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3635
 
 ●bool Card.SetFlagEffectLabel(Card c, int code, int label)
 把c上code对应的第一个标志效果Label设置为label，并返回是否找到标志效果。
@@ -2572,7 +2572,7 @@ Parameters:
   label: int - New integer label stored on the first matching flag effect.
 Returns:
   bool - True if a matching flag effect was updated; false if none exists.
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3555
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3558
 
 ●void Card.SetHint(Card c, int type, int value)
 向客户端发送c的卡片提示消息，内容为提示type和值value；type大于等于CHINT_DESC_ADD时会被忽略。
@@ -2580,23 +2580,21 @@ Parameters:
   c: Card
   type: int
   value: int
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3655
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3658
 
 ●void Card.SetMaterial(Card c, [Group|nil g])
 把g设置为c本次召唤使用的素材组；g为nil时清除素材记录。
 Parameters:
   c: Card
   g: Group|nil optional
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3514
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3517
 
-●bool Card.SetReason(Card c, int reason)
+●void Card.SetReason(Card c, int reason)
 把c当前的原因位掩码设为reason。
 Parameters:
   c: Card
   reason: int
-Returns:
-  bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3458
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3461
 
 ●void Card.SetSPSummonOnce(Card c, int spsummon_code)
 将c标记为按spsummon_code共享每回合1次的特殊召唤限制。
@@ -2604,7 +2602,7 @@ Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3458
 Parameters:
   c: Card
   spsummon_code: int
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3661
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3664
 
 ●void Card.SetStatus(Card c, int status, bool enable)
 设置或清除c上的status状态位。
@@ -2613,14 +2611,14 @@ Parameters:
   c: Card
   status: int
   enable: bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3509
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3512
 
 ●void Card.SetTurnCounter(Card c, int ct)
 设置c的回合计数器。
 Parameters:
   c: Card
   ct: int
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3512
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3515
 
 ●void Card.SetUniqueOnField(Card c, int s, int o, function|int unique_code, [int unique_location])
 设置c以unique_code只能在场上[或怪兽区域或魔陷区域，由unique_location决定]只能存在1张,function 的返回值类型必须是int
@@ -2631,7 +2629,7 @@ Parameters:
   o: int
   unique_code: function|int
   unique_location: int optional - default: LOCATIOIN_ONFIELD
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3657
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3660
 
 ========== Debug ==========
 ●Card|nil Debug.AddCard(int code, int owner, int player, int location, int seq, int pos, [bool proc])
@@ -4557,7 +4555,7 @@ Source: D:\Programs\GitHub\ygopro-core\libduel.cpp:4979
 此核心中的空操作存根；只检查动作权限，不返回值。
 Source: D:\Programs\GitHub\ygopro-core\libduel.cpp:5025
 
-●Group Duel.SelectSynchroMaterial(int player, Card c, [function|nil f1], [function|nil f2], int min, int max, [Card|nil smat], [Group|nil mg])
+●Group|nil Duel.SelectSynchroMaterial(int player, Card c, [function|nil f1], [function|nil f2], int min, int max, [Card|nil smat], [Group|nil mg])
 让player为c选择同调素材，并返回选中的Group。
 f1筛选调整素材，f2筛选非调整素材，min和max限制非调整数量，smat指定必须包含的素材，mg提供可选的素材范围。
 Parameters:
@@ -4570,7 +4568,7 @@ Parameters:
   smat: Card|nil optional
   mg: Group|nil optional
 Returns:
-  Group
+  Group|nil
 Source: D:\Programs\GitHub\ygopro-core\libduel.cpp:4993
 
 ●Group Duel.SelectTarget(int sel_player, [function|nil f], int player, int s, int o, int min, int max, [Card|Group|nil ex], ... any)
@@ -4604,7 +4602,7 @@ Returns:
   Group
 Source: D:\Programs\GitHub\ygopro-core\libduel.cpp:4983
 
-●Group Duel.SelectTunerMaterial(int player, Card c, Card tuner, [function|nil f1], [function|nil f2], int min, int max, [Group|nil mg])
+●Group|nil Duel.SelectTunerMaterial(int player, Card c, Card tuner, [function|nil f1], [function|nil f2], int min, int max, [Group|nil mg])
 让player以固定tuner、可选筛选、数量限制和可选素材Group为scard选择同调素材。
 Parameters:
   player: int
@@ -4616,7 +4614,7 @@ Parameters:
   max: int
   mg: Group|nil optional
 Returns:
-  Group
+  Group|nil
 Source: D:\Programs\GitHub\ygopro-core\libduel.cpp:4995
 
 ●Group Duel.SelectXyzMaterial(int player, Card scard, function|nil f, int lv, int minc, int maxc, [Group|nil materials])
@@ -5515,7 +5513,7 @@ Parameters:
   c: Card
 Source: D:\Programs\GitHub\ygopro-core\libgroup.cpp:906
 
-●Group Group.CancelableSelect(Group g, int player, int min, int max, [Card|Group|nil ex])
+●Group|nil Group.CancelableSelect(Group g, int player, int min, int max, [Card|Group|nil ex])
 让玩家player从g中选择min-max张不等于ex的卡，可以取消并返回nil
 Parameters:
   g: Group
@@ -5524,7 +5522,7 @@ Parameters:
   max: int
   ex: Card|Group|nil optional
 Returns:
-  Group
+  Group|nil
 Source: D:\Programs\GitHub\ygopro-core\libgroup.cpp:918
 
 ●bool Group.CheckWithSumEqual(Group g, function f, int acc, int min, int max, [... any])
@@ -5777,14 +5775,14 @@ Parameters:
   c: Card
 Source: D:\Programs\GitHub\ygopro-core\libgroup.cpp:907
 
-●Card Group.SearchCard(Group g, function f, ... any)
+●Card|nil Group.SearchCard(Group g, function f, ... any)
 返回g中第一张满足f和额外参数的卡；没有则返回nil。
 Parameters:
   g: Group
   f: function
   ...: any
 Returns:
-  Card
+  Card|nil
 Source: D:\Programs\GitHub\ygopro-core\libgroup.cpp:933
 
 ●Group|nil Group.Select(Group g, int player, int min, int max, [Card|Group|nil ex])
@@ -5901,6 +5899,18 @@ Returns:
   bool
 Source: Define/def.lua:35
 
+●bool Card.Metallization_material(int ft, int lv, int race, int att)
+「金属化」特殊召唤手续使用的卡片脚本回调，用于检查被解放怪兽的性质。
+符合条件的怪兽脚本会在自己的卡片表上登记这个回调；`Scripts/c89812483.lua`会传入素材可用标记以及被解放怪兽的等级、种族和属性。
+Parameters:
+  ft: int - 素材可用标记：检查已解放怪兽时为1，否则为0。
+  lv: int - 被解放怪兽的等级。
+  race: int - 被解放怪兽的种族掩码。
+  att: int - 被解放怪兽的属性掩码。
+Returns:
+  bool - 这只怪兽接受这些素材性质作为手续条件时返回true。
+Source: Define/def.lua:90
+
 ●void Card.red_eyes_fusion_check(int tp, Group sg, Card fc)
 素材检查（真红眼融合）
 Parameters:
@@ -5940,7 +5950,7 @@ Parameters:
   g: Group
   f: function
   ...: any
-Source: Define/def.lua:3883
+Source: Define/def.lua:3891
 
 ========== Auxiliary ==========
 ●void Auxiliary.AddBanishRedirect(Card c, [function condition])

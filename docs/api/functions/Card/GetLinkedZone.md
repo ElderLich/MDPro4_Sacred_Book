@@ -23,7 +23,7 @@ Use bit helpers such as bit.extract or bit.band when checking whether a specific
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3421`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3424`
 
 ## Used By
 

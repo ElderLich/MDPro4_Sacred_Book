@@ -21,7 +21,7 @@ Returns c's Link Material codes: current code, second code when present, then EF
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3390`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3393`
 
 ## Used By
 

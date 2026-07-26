@@ -20,4 +20,4 @@ Returns the number of current Xyz Materials attached to c.
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3525`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3528`

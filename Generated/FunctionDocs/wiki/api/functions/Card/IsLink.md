@@ -23,4 +23,4 @@ Checks whether c:GetLink() equals any supplied link value. Nil link arguments ar
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3489`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3492`

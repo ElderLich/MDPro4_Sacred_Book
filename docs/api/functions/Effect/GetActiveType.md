@@ -50,7 +50,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Vylon Alpha | `56768355` | [Scripts/c56768355.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c56768355.lua) | 32 |
 | Invoked Mechaba | `75286621` | [Scripts/c75286621.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c75286621.lua) | 31 |
 | Dark Eradicator Warlock | `29436665` | [Scripts/c29436665.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c29436665.lua) | 31 |
-| Vortex of Time | `42138622` | [Scripts/c42138622.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c42138622.lua) | 29 |
+| Vortex of Time | `42138622` | [Scripts/c42138622.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c42138622.lua) | 30 |
 | Arcana Knight Joker | `6150044` | [Scripts/c6150044.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c6150044.lua) | 29 |
 | Des Volstgalph | `81059524` | [Scripts/c81059524.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c81059524.lua) | 26 |
 | Dark Balter the Terrible | `80071763` | [Scripts/c80071763.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c80071763.lua) | 25 |

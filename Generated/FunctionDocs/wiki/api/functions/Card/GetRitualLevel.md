@@ -21,4 +21,4 @@ Returns the Ritual Level value c contributes for Ritual Monster rc.
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3409`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3412`

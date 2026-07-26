@@ -20,7 +20,7 @@ Returns the number of persistent card targets currently recorded on c.
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3539`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3542`
 
 ## Used By
 

@@ -28,7 +28,7 @@ The core checks EFFECT_LEFT_SPSUMMON_COUNT effects and the player's Special Summ
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **49** indexed script(s).
+- Detected in **50** indexed script(s).
 - Search this function in the [Script Explorer](/tools/script-explorer) with `Duel.IsPlayerCanSpecialSummonCount`.
 
 | Card | ID | Script | Detected Calls |
@@ -57,7 +57,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Magician Navigation | `7922915` | [Scripts/c7922915.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c7922915.lua) | 47 |
 | Crystron Tristaros | `99471856` | [Scripts/c99471856.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c99471856.lua) | 46 |
 | Performapal Miss Director | `92932860` | [Scripts/c92932860.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c92932860.lua) | 46 |
-| ...and 25 more |  |  |  |
+| ...and 26 more |  |  |  |
 
 ## Script Examples
 

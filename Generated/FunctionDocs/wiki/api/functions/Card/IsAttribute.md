@@ -21,4 +21,4 @@ Checks whether c currently has at least one Attribute flag from attribute.
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3494`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3497`

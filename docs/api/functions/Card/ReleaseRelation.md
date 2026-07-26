@@ -17,7 +17,7 @@ Releases c1's relation to card c2.
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3558`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3561`
 
 ## Used By
 

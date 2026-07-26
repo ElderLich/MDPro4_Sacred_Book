@@ -20,7 +20,7 @@ Returns c's current controller.
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3456`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3459`
 
 ## Used By
 

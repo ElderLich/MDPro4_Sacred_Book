@@ -20,7 +20,7 @@ Returns a Group containing the cards currently attached to c as Xyz Materials.
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3524`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3527`
 
 ## Used By
 

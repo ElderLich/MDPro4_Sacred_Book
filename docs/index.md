@@ -4,7 +4,7 @@
   <section class="home-console-main">
     <p class="home-kicker">MDPro3 / YGOPro Lua scripting</p>
     <h2>Start with one card. Learn the engine around it.</h2>
-    <p>Use the beginner path when you are learning, the API when you need exact calls, and the Script Explorer when you want a real local pattern fast.</p>
+    <p>Follow the guided curve for a first card. When you already know the engine, jump straight to an exact API call or search every local script for a proven pattern.</p>
     <div class="home-actions">
       <a class="home-primary" href="learn/">Start Learning</a>
       <a class="home-secondary" href="learn/first-custom-card">Write A Card</a>
@@ -31,7 +31,7 @@ c:RegisterEffect(e1)</code></pre>
   <a class="home-choice home-choice-primary" href="learn/">
     <small>Guided path</small>
     <strong>Learn</strong>
-    <span>Read scripts, build small effects, wire card data, then debug with structure.</span>
+    <span>Read one effect, build in small steps, wire a real card, then debug with structure.</span>
   </a>
   <a class="home-choice" href="api/">
     <small>Exact calls</small>
@@ -61,17 +61,25 @@ c:RegisterEffect(e1)</code></pre>
   <a href="learn/common-script-errors-and-debugging"><b>06</b><span>Debug safely</span></a>
 </div>
 
+Follow the curve from left to right. The first-card lesson hands off to
+[card data and script wiring](learn/card-data-and-script-wiring) before the
+activation-flow and debugging stages.
+
 ## Choose Your Branch
 
 <div class="home-branch-grid">
+  <a href="learn/effect-callbacks">Activation flow</a>
+  <a href="learn/chain-timing-and-activation-windows">Chains and timing</a>
+  <a href="learn/filters-and-groups">Filters and Groups</a>
   <a href="learn/targeting-flow">Target or select cards</a>
   <a href="learn/moving-cards">Move cards</a>
   <a href="learn/spell-card-patterns">Script Spells</a>
   <a href="learn/trap-card-patterns">Script Traps</a>
   <a href="learn/continuous-effects">Continuous effects</a>
-  <a href="learn/ritual-procedure">Summon procedures</a>
+  <a href="learn/#lesson-library">Summon procedures</a>
   <a href="learn/archetypes-and-setcodes">Archetypes</a>
   <a href="learn/client-ui-and-prompt-behavior">Client prompts</a>
+  <a href="learn/count-limits">Count limits</a>
 </div>
 
 ## Reference

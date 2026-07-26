@@ -21,7 +21,7 @@ Returns the Attribute c uses as Fusion Material for player, defaulting to the cu
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3433`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3436`
 
 ## Used By
 

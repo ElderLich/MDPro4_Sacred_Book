@@ -22,4 +22,4 @@ When countertype is 0, this core returns the number of different counter types c
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3630`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3633`

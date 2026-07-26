@@ -20,4 +20,4 @@ Returns c's original owner player.
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3455`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3458`

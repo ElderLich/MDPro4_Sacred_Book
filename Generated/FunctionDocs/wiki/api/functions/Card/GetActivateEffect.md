@@ -22,4 +22,4 @@ Use the returned Effect to check whether a Field Spell or other Spell/Trap can b
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3544`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3547`

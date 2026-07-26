@@ -20,7 +20,7 @@ Returns c's original Race from card data, or 0 while c is marked with STATUS_NO_
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3437`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3440`
 
 ## Used By
 
@@ -38,8 +38,8 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Dimonno Vaalmonica | `30432463` | [Scripts/c30432463.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c30432463.lua) | 53 |
 | Sudden Thunder Swamp | `23611122` | [Scripts/c23611122.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c23611122.lua) | 53 |
 | Laevateinn the Burning Blade | `6260560` | [Scripts/c6260560.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c6260560.lua) | 53 |
+| Card 24056179 | `24056179` | [Scripts/c24056179.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c24056179.lua) | 53 |
 | Zebufera, Vaalmonican Hallow Heathen | `2815176` | [Scripts/c2815176.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c2815176.lua) | 52 |
-| Card 24056179 | `24056179` | [Scripts/c24056179.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c24056179.lua) | 52 |
 | Pendulum Witch | `43502497` | [Scripts/c43502497.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c43502497.lua) | 51 |
 | Argostars - Giantslaying | `30964246` | [Scripts/c30964246.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c30964246.lua) | 51 |
 | Endymion, the Crescent Magistus | `20714553` | [Scripts/c20714553.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c20714553.lua) | 50 |

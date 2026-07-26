@@ -20,7 +20,7 @@ Returns c's current reason player, the player recorded in c's current reason sta
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3461`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3464`
 
 ## Used By
 

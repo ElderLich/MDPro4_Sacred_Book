@@ -20,7 +20,7 @@ If location is omitted, monsters default to LOCATION_MZONE and non-monsters defa
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3631`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3634`
 
 ## Used By
 

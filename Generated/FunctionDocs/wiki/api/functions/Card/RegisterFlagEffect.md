@@ -46,4 +46,4 @@ The local binding masks the code as a flag-effect code, adds `EFFECT_FLAG_CANNOT
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3552`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3555`

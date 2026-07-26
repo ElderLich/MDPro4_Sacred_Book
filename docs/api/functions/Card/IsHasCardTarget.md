@@ -21,7 +21,7 @@ Checks whether c1 currently has c2 as a persistent card target.
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3540`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3543`
 
 ## Used By
 

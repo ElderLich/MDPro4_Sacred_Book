@@ -22,7 +22,7 @@ This is a broad core check. For effect resolution and activation filters, prefer
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3575`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3578`
 
 ## Used By
 

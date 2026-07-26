@@ -21,4 +21,4 @@ Checks whether c can be Set in a Spell & Trap Zone. If ignore_field is true, ava
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3581`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3584`

@@ -20,7 +20,7 @@ Checks whether c can be returned to the Deck as a cost.
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3590`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3593`
 
 ## Used By
 

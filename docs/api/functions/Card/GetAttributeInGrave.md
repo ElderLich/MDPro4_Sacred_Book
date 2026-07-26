@@ -21,7 +21,7 @@ Returns the Attribute c is treated as having in the GY for player, defaulting to
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3435`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3438`
 
 ## Used By
 

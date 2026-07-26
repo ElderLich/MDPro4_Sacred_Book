@@ -20,4 +20,4 @@ Returns c's Link Rating, or 0 if c is not a Link Monster.
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3407`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3410`

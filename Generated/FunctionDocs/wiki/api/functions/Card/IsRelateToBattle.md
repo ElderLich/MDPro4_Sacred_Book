@@ -20,4 +20,4 @@ Checks whether c is still related to the current battle, usually during the Dama
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3565`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3568`

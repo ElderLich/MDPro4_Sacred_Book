@@ -3,7 +3,7 @@
 ## Signature
 
 ```lua
-Group.CancelableSelect(Group g, int player, int min, int max, [Card|Group|nil ex]) -> Group
+Group.CancelableSelect(Group g, int player, int min, int max, [Card|Group|nil ex]) -> Group|nil
 ```
 
 ## Description
@@ -20,7 +20,7 @@ Lets player select min to max cards from g, excluding ex; the selection can be c
 
 ## Returns
 
-- `Group`
+- `Group|nil`
 
 ## Source
 

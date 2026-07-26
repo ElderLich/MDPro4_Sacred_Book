@@ -24,7 +24,7 @@ The core includes c's current code, second code, and EFFECT_ADD_FUSION_CODE valu
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3391`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3394`
 
 ## Used By
 

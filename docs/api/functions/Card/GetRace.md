@@ -20,7 +20,7 @@ Returns c's current Race value. Cards with multiple Races can return a bitmask c
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3436`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3439`
 
 ## Used By
 

@@ -25,4 +25,4 @@ chkf is forwarded to the Fusion Material condition check, and not_material is us
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3644`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3647`

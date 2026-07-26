@@ -20,7 +20,7 @@ Returns c's turn counter.
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3513`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3516`
 
 ## Used By
 

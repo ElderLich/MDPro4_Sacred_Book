@@ -1,8 +1,20 @@
 # Learning Path
 
-Sacred Book teaches MDPro3/YGOPro Lua scripting as a curve, not a catalogue.
-Start with a few concrete scripts, learn the activation lifecycle, then branch
-into the card pattern you are actually trying to build.
+Sacred Book has two useful modes: a guided curve for learning the engine and a
+task library for finding one exact pattern. New scripters should follow the
+first curve in order. Experienced scripters can jump to a branch, confirm the
+call in the API, then search real local use in the Script Explorer.
+
+## Pick Your Starting Point
+
+| Your experience or task | Start here |
+| --- | --- |
+| New to Lua card scripts. | Follow the seven-step curve below. |
+| Comfortable with Lua, but new to YGOPro effects. | Read [Effect Objects](effect-object), [Effect Types](effect-types), and [Callbacks](effect-callbacks). |
+| You know the engine and need one implementation pattern. | Jump to the [Lesson Library](#lesson-library), then use the [Script Explorer](/tools/script-explorer). |
+| A script almost works, but fails in one game state. | Trace [Activation Legality](activation-legality), [Effect Lifecycle](cost-target-operation-lifecycle), and [Common Script Errors](common-script-errors-and-debugging). |
+
+## First Complete Card Curve
 
 <div class="learn-priority-grid">
   <a class="learn-priority" href="script-structure">
@@ -12,50 +24,51 @@ into the card pattern you are actually trying to build.
   </a>
   <a class="learn-priority" href="first-scripts">
     <small>Step 2</small>
-    <strong>Study first scripts</strong>
-    <span>Walk through five local scripts that draw, target, prompt, modify, and choose by stats.</span>
+    <strong>Trace real effects</strong>
+    <span>Follow small local scripts that draw, target, prompt, modify, and choose by stats.</span>
   </a>
   <a class="learn-priority" href="beginner-script-ladder">
     <small>Step 3</small>
     <strong>Build small effects</strong>
     <span>Follow complete draw, target, Group, trigger, Quick-Play, and Trap scripts in order.</span>
   </a>
-  <a class="learn-priority" href="card-data-and-script-wiring">
+  <a class="learn-priority" href="first-custom-card">
     <small>Step 4</small>
+    <strong>Write one card</strong>
+    <span>Combine two proven patterns into a small, complete, testable custom Spell.</span>
+  </a>
+  <a class="learn-priority" href="card-data-and-script-wiring">
+    <small>Step 5</small>
     <strong>Wire card data</strong>
     <span>Match the card ID, type bits, prompt strings, set codes, and Lua file.</span>
   </a>
   <a class="learn-priority" href="effect-callbacks">
-    <small>Step 5</small>
+    <small>Step 6</small>
     <strong>Trace activation flow</strong>
     <span>Separate condition, cost, target, operation, and <code>chk==0</code> legality.</span>
   </a>
   <a class="learn-priority" href="common-script-errors-and-debugging">
-    <small>Step 6</small>
+    <small>Step 7</small>
     <strong>Debug the script</strong>
     <span>Fix nil values, invisible prompts, stale targets, count limits, reset flags, and stored Groups.</span>
   </a>
 </div>
 
-## What To Learn First
+## Learn, Verify, Search
 
-1. [Structure of a card script](script-structure)
-2. [First Scripts To Study](first-scripts)
-3. [Beginner Script Ladder](beginner-script-ladder)
-4. [Write Your First Custom Card](first-custom-card)
-5. [Card Data and Script Wiring](card-data-and-script-wiring)
-6. [Creation, building, and registration of an effect object](effect-object)
-7. [EFFECT_TYPE constants and templates](effect-types)
-8. [Conditions, costs, activation procedures, and resolution](effect-callbacks)
-9. [Activated effects](activated-effects)
-10. [Activation legality](activation-legality)
-11. [Targeting flow](targeting-flow)
-12. [Selection and Group handling](selection-and-group-handling)
-13. [Client UI and prompt behavior](client-ui-and-prompt-behavior)
-14. [Common script errors and debugging](common-script-errors-and-debugging)
+Use the site layers together instead of expecting one page to answer every
+question:
 
-That first route is deliberately short. It gives you enough structure to read a
-local script without drowning in every summon type, card family, and helper.
+| Layer | Best use |
+| --- | --- |
+| Learning pages | Understand why a pattern is shaped a certain way and see a complete example. |
+| [Function reference](/api/functions/) | Confirm the exact signature, parameters, return value, and local source. |
+| [Script Explorer](/tools/script-explorer) | Find every local card that uses a function or a similar text pattern. |
+| [Featured examples](/examples/) | Read larger real cards with their detected calls and source. |
+
+For a new effect, read one relevant lesson, find two local scripts with the same
+shape, and verify unfamiliar calls in the API. That workflow scales from a
+first card to veteran-level edge cases.
 
 ## Common Effect Pattern Route
 

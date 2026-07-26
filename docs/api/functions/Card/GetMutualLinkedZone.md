@@ -21,7 +21,7 @@ Returns the zone mask of c's mutually linked zones, swapped to player viewpoint 
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3424`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3427`
 
 ## Used By
 

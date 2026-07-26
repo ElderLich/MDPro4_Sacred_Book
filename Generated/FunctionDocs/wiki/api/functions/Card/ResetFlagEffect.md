@@ -33,4 +33,4 @@ This is a manual clear for flag effects, not a replacement for choosing the righ
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3554`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3557`

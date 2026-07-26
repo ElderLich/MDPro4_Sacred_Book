@@ -20,7 +20,7 @@ Checks whether c is part of an Extra Link state.
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3426`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3429`
 
 ## Used By
 

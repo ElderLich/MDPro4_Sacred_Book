@@ -20,7 +20,7 @@ Returns c's printed Rank from card data, or 0 if c is not an Xyz Monster.
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3411`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3414`
 
 ## Used By
 

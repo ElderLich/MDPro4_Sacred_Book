@@ -33,8 +33,8 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Invoked Transcendence Aeon | `33166263` | [Scripts/c33166263.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c33166263.lua) | 55 |
 | Vanquish Soul Caesar Valius | `91073013` | [Scripts/c91073013.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c91073013.lua) | 54 |
 | Duality | `39973386` | [Scripts/c39973386.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c39973386.lua) | 50 |
+| Witchcrafter Madame Rilliona | `33475154` | [Scripts/c33475154.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c33475154.lua) | 44 |
 | Here There Be Dragons | `4575541` | [Scripts/c4575541.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c4575541.lua) | 44 |
-| Witchcrafter Madame Rilliona | `33475154` | [Scripts/c33475154.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c33475154.lua) | 43 |
 | Spiritual Power Recovery Potion | `61082944` | [Scripts/c61082944.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c61082944.lua) | 43 |
 | Vanquish Soul Snow Devil | `60883493` | [Scripts/c60883493.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c60883493.lua) | 42 |
 | Mental Tuner | `30291086` | [Scripts/c30291086.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c30291086.lua) | 39 |

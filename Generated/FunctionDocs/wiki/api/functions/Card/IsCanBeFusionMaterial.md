@@ -23,4 +23,4 @@ fc is optional and summon_type defaults to SUMMON_TYPE_FUSION. The binding has n
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3639`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3642`

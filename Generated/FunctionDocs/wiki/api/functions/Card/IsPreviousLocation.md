@@ -21,4 +21,4 @@ Checks whether c's previous location included location.
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3611`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3614`

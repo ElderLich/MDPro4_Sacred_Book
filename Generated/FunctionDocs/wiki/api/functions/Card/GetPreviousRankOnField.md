@@ -20,4 +20,4 @@ Returns the Rank value c had while it was previously on the field.
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3449`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3452`

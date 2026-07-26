@@ -24,4 +24,4 @@ Nil setcode arguments are skipped. This uses the previous state recorded before 
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3395`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3398`

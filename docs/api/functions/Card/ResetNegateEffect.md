@@ -18,7 +18,7 @@ Resets negate-related card effects on c for each supplied reset code.
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3659`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3662`
 
 ## Used By
 

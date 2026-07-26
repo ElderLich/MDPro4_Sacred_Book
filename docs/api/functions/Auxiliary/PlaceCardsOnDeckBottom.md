@@ -48,9 +48,9 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Volcanic Inferno | `84138874` | [Scripts/c84138874.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c84138874.lua) | 48 |
 | Yummyusment☆Mignon | `66975205` | [Scripts/c66975205.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c66975205.lua) | 46 |
 | The Chaos Creator | `90488465` | [Scripts/c90488465.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c90488465.lua) | 46 |
+| Ryzeal Cross | `6798031` | [Scripts/c6798031.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c6798031.lua) | 45 |
 | Dark Spirit's Mastery | `14386013` | [Scripts/c14386013.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c14386013.lua) | 45 |
 | Favorite Contact | `75047173` | [Scripts/c75047173.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c75047173.lua) | 44 |
-| Ryzeal Cross | `6798031` | [Scripts/c6798031.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c6798031.lua) | 44 |
 | Nouvelles Restaurant "At Table" | `15388353` | [Scripts/c15388353.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c15388353.lua) | 44 |
 | Floowandereeze and the Unexplored Winds | `55521751` | [Scripts/c55521751.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c55521751.lua) | 40 |
 | Raidraptor - Roost | `64049553` | [Scripts/c64049553.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c64049553.lua) | 38 |

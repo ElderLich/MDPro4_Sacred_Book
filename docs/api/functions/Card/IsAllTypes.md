@@ -21,7 +21,7 @@ Checks whether c includes all types in type.
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3482`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3485`
 
 ## Used By
 

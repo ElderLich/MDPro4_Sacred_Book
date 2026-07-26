@@ -20,7 +20,7 @@ Returns c's current base ATK, with unknown or negative ATK reported as 0.
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3441`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3444`
 
 ## Used By
 

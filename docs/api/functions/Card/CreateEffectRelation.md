@@ -18,7 +18,7 @@ If e is the triggering effect of a current Chain Link, the relation is tied to t
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3559`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3562`
 
 ## Used By
 

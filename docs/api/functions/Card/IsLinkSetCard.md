@@ -23,7 +23,7 @@ Checks whether c can be treated as any supplied setcode while used as Link Mater
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3397`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3400`
 
 ## Used By
 
@@ -44,11 +44,11 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | R.B. Shepherd's Crook | `80071619` | [Scripts/c80071619.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c80071619.lua) | 54 |
 | Neo Super Quantal Mech King Blaster Magna | `95493471` | [Scripts/c95493471.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c95493471.lua) | 53 |
 | Overburst Dragon | `15627227` | [Scripts/c15627227.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c15627227.lua) | 53 |
+| Unchained Enma Lord Yama | `94014327` | [Scripts/c94014327.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c94014327.lua) | 52 |
 | Altergeist Memorygant | `23790299` | [Scripts/c23790299.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c23790299.lua) | 52 |
 | Ritual Beast Ulti-Kimunfalcos | `58811192` | [Scripts/c58811192.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c58811192.lua) | 51 |
 | X-Krawler Qualiark | `92781606` | [Scripts/c92781606.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c92781606.lua) | 51 |
 | S-Force Justify | `35334193` | [Scripts/c35334193.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c35334193.lua) | 51 |
-| Unchained Enma Lord Yama | `94014327` | [Scripts/c94014327.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c94014327.lua) | 51 |
 | Wind-Up Zenmaintenance | `1735088` | [Scripts/c1735088.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c1735088.lua) | 51 |
 | Gouki The Master Ogre | `30286474` | [Scripts/c30286474.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c30286474.lua) | 51 |
 | D/D/D Abyss King Gilgamesh | `9024198` | [Scripts/c9024198.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c9024198.lua) | 50 |

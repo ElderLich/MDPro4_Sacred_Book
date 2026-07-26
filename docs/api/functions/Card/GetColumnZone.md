@@ -23,7 +23,7 @@ When player is supplied as the opposing perspective, the core swaps the player/o
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3429`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3432`
 
 ## Used By
 

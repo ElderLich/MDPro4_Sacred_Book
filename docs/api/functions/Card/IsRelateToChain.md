@@ -22,13 +22,13 @@ The activating card and cards selected as targets with Duel.SetTargetCard or Due
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3563`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3566`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **529** indexed script(s).
+- Detected in **532** indexed script(s).
 - Search this function in the [Script Explorer](/tools/script-explorer) with `Card.IsRelateToChain`.
 
 | Card | ID | Script | Detected Calls |
@@ -57,7 +57,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | [Chef de Nouvelles](/examples/cards/29251488) | `29251488` | [Scripts/c29251488.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c29251488.lua) | 60 |
 | [Jupredo the Shademachine Power Patron](/examples/cards/43871165) | `43871165` | [Scripts/c43871165.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c43871165.lua) | 60 |
 | Starving Venom Wing Dragon | `5148778` | [Scripts/c5148778.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c5148778.lua) | 60 |
-| ...and 505 more |  |  |  |
+| ...and 508 more |  |  |  |
 
 ## Script Examples
 

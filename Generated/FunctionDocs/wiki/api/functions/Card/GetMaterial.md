@@ -20,4 +20,4 @@ Returns a Group containing the cards currently stored as c's material cards.
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3515`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3518`

@@ -20,4 +20,4 @@ Checks whether c can be sent to the Graveyard.
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3587`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3590`

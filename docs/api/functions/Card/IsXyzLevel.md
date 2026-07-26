@@ -22,7 +22,7 @@ Checks whether c can provide Xyz Level lv for Xyz Monster xyzc.
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3412`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3415`
 
 ## Used By
 

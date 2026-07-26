@@ -24,7 +24,7 @@ When player is supplied, only effects whose count limit can still be used by tha
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3549`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3552`
 
 ## Used By
 

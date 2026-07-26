@@ -20,4 +20,4 @@ Returns the card that c is attached to as an Xyz Material, or nil when c is not 
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3526`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3529`

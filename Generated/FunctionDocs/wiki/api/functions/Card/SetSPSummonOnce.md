@@ -18,4 +18,4 @@ Cards with the same nonzero spsummon_code share the limit for each player. The b
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3661`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3664`

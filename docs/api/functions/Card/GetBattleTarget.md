@@ -20,7 +20,7 @@ Returns the monster currently battling c, or nil if c is not the current attacke
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3653`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3656`
 
 ## Used By
 

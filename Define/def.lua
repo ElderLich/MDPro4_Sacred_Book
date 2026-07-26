@@ -82,6 +82,12 @@ function Card.ultimate_fusion_check(tp,sg,fc) end
 ---@param tc Card
 function Card.zw_equip_monster(c,tp,tc) end
 
+---解放检查（金属化·强化反射装甲）
+---@param ft integer
+---@param lv integer
+---@param race integer
+---@param att integer
+function Card.Metallization_material(ft,lv,race,att) end
 
 ---返回c的当前卡号（可能因为效果改变）
 ---@return integer
@@ -483,7 +489,6 @@ function Card.GetControler(c) end
 function Card.GetPreviousControler(c) end
 
 ---设置c来到当前位置的原因为reason
----@return boolean
 ---@param c Card
 ---@param reason integer
 function Card.SetReason(c,reason) end
@@ -879,7 +884,7 @@ function Card.GetPreviousEquipTarget(c) end
 function Card.CheckEquipTarget(c1,c2) end
 
 ---检查ec是否为c的有效同盟装备对象。会检查EFFECT_UNION_LIMIT影响和新旧同盟影响。
----@return Card
+---@return boolean
 ---@param c Card
 ---@param ec Card
 function Card.CheckUnionTarget(c,ec) end
@@ -1576,6 +1581,7 @@ function Card.IsControlerCanBeChanged(c,ignore_mzone,zone) end
 function Card.AddCounter(c,countertype,count,singly) end
 
 ---让玩家player以原因reason移除c上的count个countertype类型的指示物， countertype=0 则清除c的所有指示物
+---@return boolean
 ---@param c Card
 ---@param player integer
 ---@param countertype integer
@@ -2297,8 +2303,8 @@ function Duel.Equip(player,c1,c2,up,is_step) end
 function Duel.EquipComplete() end
 
 ---让玩家 player [直到 reset_count 次 reset_phase 时][在区域 zone]
----得到 targets 的控制权，返回值表示是否成功
----@return boolean
+---得到 targets 的控制权，返回值表示成功的数量
+---@return integer
 ---@param targets Card|Group
 ---@param player integer
 ---@param reset_phase? integer default: 0
@@ -2470,6 +2476,7 @@ function Duel.CheckSummonedCount(c) end
 ---reason为LOCATION_REASON_TOFIELD或LOCATION_REASON_CONTROL
 ---##第三个第四个额外参数与凯撒斗技场等限制格子的效果有关
 ---@return integer
+---@return integer zone
 ---@param player integer
 ---@param location integer
 ---@param use_player? integer
@@ -2501,6 +2508,7 @@ function Duel.GetSZoneCount(player,targets,use_player,reason,zone) end
 
 ---返回玩家player场上[假如因玩家 reason_player 的原因让 targets 离场后，把卡片 sc 在 zone 区域特殊召唤]可用的 能让额外卡组的怪兽 出场的空格数
 ---@return integer
+---@return integer zone
 ---@param player integer
 ---@param reason_player? integer default: player
 ---@param targets? Group|Card|nil
@@ -2535,7 +2543,7 @@ function Duel.GetLinkedZone(player) end
 
 ---返回玩家player的场上位于location序号为seq的卡，常用于获得场地区域·灵摆区域的卡
 ---注：召唤·反转召唤·特殊召唤 之际 的卡无法获取
----@return Card
+---@return Card|nil
 ---@param player integer
 ---@param location integer
 ---@param seq integer
@@ -2718,7 +2726,7 @@ function Duel.GetMatchingGroupCount(f,player,s,o,ex,...) end
 ---过滤函数，返回以player来看的指定位置满足过滤条件f并且不等于ex的第一张卡,没有则返回nil
 ---s代表以player来看的自己的位置，o代表以player来看的对方的位置
 ---第6个参数开始为额外参数
----@return Card
+---@return Card|nil
 ---@param f function|nil
 ---@param player integer
 ---@param s integer
@@ -2830,7 +2838,7 @@ function Duel.GetTributeGroup(c) end
 function Duel.GetTributeCount(c,mg,ex) end
 
 ---判断场上[或mg中]是否存在用于通常召唤c[到toplayer场上的区域 zone]的min[到max]个祭品
----@return Group
+---@return boolean
 ---@param c Card
 ---@param min integer
 ---@param max? integer|nil default: min
@@ -2924,7 +2932,7 @@ function Duel.GetSynchroMaterial(player,facedown) end
 ---让玩家player从场上[或mg中]选择用于同调c需要的[必须包含smat在内（如果有mg~=nil则忽略此参数）]满足条件的一组素材
 ---f1是 1 只需要满足的过滤条件，f2是 min-max 只需要满足的过滤条件
 ---f1,f2 之中，至少有一种为调整的条件
----@return Group
+---@return Group|nil
 ---@param player integer
 ---@param c Card
 ---@param f1 function|nil
@@ -2950,7 +2958,7 @@ function Duel.CheckSynchroMaterial(c,f1,f2,min,max,smat,mg) end
 
 ---让玩家从场上[或mg中]选择用于同调c需要的满足条件的以tuner作为调整的min-max张卡的一组素材
 ---f1是 1 只需要满足的过滤条件，f2是 min-max 只需要满足的过滤条件
----@return Group
+---@return Group|nil
 ---@param player integer
 ---@param c Card
 ---@param tuner Card
@@ -3078,7 +3086,7 @@ function Duel.ClearOperationInfo(chainc) end
 function Duel.CheckXyzMaterial(c,f,lv,min,max,mg) end
 
 ---让玩家player为XYZ怪兽c从场上[或mg中]选择XYZ用等级为lv的min-max个满足条件f的叠放素材
----@return Group
+---@return Group|nil
 ---@param player integer
 ---@param c Card
 ---@param f function|nil
@@ -3220,7 +3228,8 @@ function Duel.AnnounceRace(player,count,available) end
 function Duel.AnnounceAttribute(player,count,available) end
 
 ---让玩家宣言一个[min-max]等级并返回
----@return integer
+---@return integer 宣言的等级
+---@return integer 宣言的等级在所有选项中的位置(0开始)
 ---@param player integer
 ---@param min? integer|nil default: 1
 ---@param max? integer|nil default: 12
@@ -3242,9 +3251,8 @@ function Duel.AnnounceType(player) end
 
 ---让玩家player宣言一个数字
 ---从第二个参数开始，每一个参数代表一个可宣言的数字
----第一个返回值是宣言的数字，第二个返回值是宣言数字在所有选项中的位置
----@return integer
----@return integer
+---@return integer 宣言的数字
+---@return integer 宣言数字在所有选项中的位置(0开始)
 ---@param player integer
 ---@param number integer
 ---@param ... any
@@ -3942,7 +3950,7 @@ function Group.SelectUnselect(cg,sg,player,btok,cancelable,minc,maxc) end
 function Group.RandomSelect(g,player,count) end
 
 ---让玩家player从g中选择min-max张不等于ex的卡，可以取消并返回nil
----@return Group
+---@return Group|nil
 ---@param g Group
 ---@param player integer
 ---@param min integer
@@ -4073,7 +4081,7 @@ function Group.Equal(g1,g2) end
 function Group.IsContains(g,c) end
 
 ---过滤函数，返回g中满足筛选条件f的第一张卡，若没有则返回nil，从第3个参数开始为额外参数
----@return Card
+---@return Card|nil
 ---@param g Group
 ---@param f function
 ---@param ... any

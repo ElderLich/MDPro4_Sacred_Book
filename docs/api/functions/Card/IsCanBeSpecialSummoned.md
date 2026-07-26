@@ -44,7 +44,7 @@ This is only a legality check. It does not reserve a zone or Summon the card.
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3582`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3585`
 
 ## Used By
 

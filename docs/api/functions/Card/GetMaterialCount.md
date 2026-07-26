@@ -20,7 +20,7 @@ Returns the number of cards currently recorded as c's materials.
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3516`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3519`
 
 ## Used By
 

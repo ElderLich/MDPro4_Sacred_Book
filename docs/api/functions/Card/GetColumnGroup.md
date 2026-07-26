@@ -21,7 +21,7 @@ This MDPro3/YGOPro binding only takes c. It uses c's current on-field column, in
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3427`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3430`
 
 ## Used By
 

@@ -21,7 +21,7 @@ Checks whether c currently has at least one Race flag from race.
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3492`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3495`
 
 ## Used By
 

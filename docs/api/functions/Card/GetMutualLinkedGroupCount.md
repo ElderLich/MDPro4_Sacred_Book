@@ -20,7 +20,7 @@ Returns the number of cards mutually linked with c.
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3423`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3426`
 
 ## Used By
 

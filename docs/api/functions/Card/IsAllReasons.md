@@ -21,7 +21,7 @@ Checks whether c includes all reasons in reason.
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3500`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3503`
 
 ## Used By
 

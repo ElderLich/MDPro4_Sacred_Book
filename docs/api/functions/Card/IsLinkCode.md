@@ -24,7 +24,7 @@ This includes c's current code, second code, and EFFECT_ADD_LINK_CODE values. If
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3392`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3395`
 
 ## Used By
 

@@ -30,8 +30,8 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Miracle Raven | `18988396` | [Scripts/c18988396.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c18988396.lua) | 47 |
 | Gurifoh | `97462632` | [Scripts/c97462632.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c97462632.lua) | 44 |
 | Lo, the Prayers of the Voiceless Voice | `25801745` | [Scripts/c25801745.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c25801745.lua) | 38 |
+| Avance, Swordsman of the Nekroz | `51618973` | [Scripts/c51618973.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c51618973.lua) | 36 |
 | Emilia, Dance Priestess of the Nekroz | `87003671` | [Scripts/c87003671.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c87003671.lua) | 35 |
-| Avance, Swordsman of the Nekroz | `51618973` | [Scripts/c51618973.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c51618973.lua) | 34 |
 | Gishki Grimness | `38356857` | [Scripts/c38356857.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c38356857.lua) | 30 |
 | Gishki Vision | `47106439` | [Scripts/c47106439.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c47106439.lua) | 30 |
 | Gishki Shadow | `29888389` | [Scripts/c29888389.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c29888389.lua) | 29 |

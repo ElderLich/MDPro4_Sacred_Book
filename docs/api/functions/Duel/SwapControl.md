@@ -76,7 +76,7 @@ Source: [Scripts/c60619435.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/
 ```lua
 	local tc2=g:Filter(Card.IsControler,nil,1-tp):GetFirst()
 	if tc and tc2 then
-		if Duel.SwapControl(tc,tc2)~=0 then
+		if Duel.SwapControl(tc,tc2) then
 			local e1=Effect.CreateEffect(e:GetHandler())
 			e1:SetType(EFFECT_TYPE_SINGLE)
 ```

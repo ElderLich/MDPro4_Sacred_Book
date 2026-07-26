@@ -21,7 +21,7 @@ Checks whether c can hold counters of countertype.
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3637`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3640`
 
 ## Used By
 

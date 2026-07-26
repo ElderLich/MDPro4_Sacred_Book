@@ -22,7 +22,7 @@ player defaults to the current reason player. The core rejects Tokens, forbidden
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3638`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3641`
 
 ## Used By
 

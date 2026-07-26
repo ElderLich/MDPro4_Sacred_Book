@@ -2349,7 +2349,7 @@
       "Effect.SetValue",
       "Group.Clone"
     ],
-    "script_length": 2928,
+    "script_length": 2930,
     "desc_length": 519
   },
   {
@@ -13434,6 +13434,7 @@
       "Card.IsRelateToEffect",
       "Card.IsSetCard",
       "Card.IsSummonableCard",
+      "Card.IsType",
       "Card.RegisterEffect",
       "Duel.GetFirstTarget",
       "Duel.Hint",
@@ -13461,7 +13462,7 @@
       "Effect.SetValue",
       "Group.GetCount"
     ],
-    "script_length": 3581,
+    "script_length": 3611,
     "desc_length": 494
   },
   {
@@ -14560,7 +14561,7 @@
       "Group.Select",
       "Group.SelectUnselect"
     ],
-    "script_length": 3449,
+    "script_length": 3451,
     "desc_length": 531
   },
   {
@@ -19641,6 +19642,7 @@
       "To GY"
     ],
     "api_calls": [
+      "Auxiliary.NecroValleyFilter",
       "Auxiliary.Stringid",
       "Card.IsAbleToDeck",
       "Card.IsCode",
@@ -19681,7 +19683,7 @@
       "Group.GetCount",
       "Group.IsExists"
     ],
-    "script_length": 2190,
+    "script_length": 2226,
     "desc_length": 429
   },
   {
@@ -20595,7 +20597,7 @@
       "Group.GetFirst",
       "Group.IsExists"
     ],
-    "script_length": 2197,
+    "script_length": 2199,
     "desc_length": 324
   },
   {
@@ -37458,7 +37460,7 @@
       "Effect.SetType",
       "Effect.SetValue"
     ],
-    "script_length": 4709,
+    "script_length": 4701,
     "desc_length": 844
   },
   {
@@ -48771,6 +48773,7 @@
       "Token"
     ],
     "api_calls": [
+      "Auxiliary.NecroValleyFilter",
       "Auxiliary.Stringid",
       "Auxiliary.bfgcost",
       "Card.GetAttack",
@@ -48815,7 +48818,7 @@
       "Effect.SetType",
       "Effect.SetValue"
     ],
-    "script_length": 2745,
+    "script_length": 2777,
     "desc_length": 446
   },
   {
@@ -59733,7 +59736,7 @@
       "Effect.SetType",
       "Group.GetFirst"
     ],
-    "script_length": 3563,
+    "script_length": 3565,
     "desc_length": 485
   },
   {
@@ -72581,7 +72584,7 @@
       "Group.IsContains",
       "Group.IsExists"
     ],
-    "script_length": 3474,
+    "script_length": 3476,
     "desc_length": 496
   },
   {
@@ -76349,7 +76352,7 @@
       "Group.GetFirst",
       "Group.GetNext"
     ],
-    "script_length": 1679,
+    "script_length": 1681,
     "desc_length": 495
   },
   {
@@ -86114,7 +86117,7 @@
       "Group.IsContains",
       "Group.IsExists"
     ],
-    "script_length": 2778,
+    "script_length": 2776,
     "desc_length": 499
   },
   {
@@ -92854,7 +92857,7 @@
       "Group.GetFirst",
       "Group.SelectSubGroup"
     ],
-    "script_length": 3487,
+    "script_length": 3489,
     "desc_length": 505
   },
   {
@@ -93903,6 +93906,7 @@
       "Card.IsCanBeSpecialSummoned",
       "Card.IsFaceup",
       "Card.IsLocation",
+      "Card.IsRelateToChain",
       "Card.IsSSetable",
       "Card.IsSetCard",
       "Card.RegisterEffect",
@@ -93938,7 +93942,7 @@
       "Group.GetCount",
       "Group.GetFirst"
     ],
-    "script_length": 3341,
+    "script_length": 3365,
     "desc_length": 465
   },
   {
@@ -96010,7 +96014,7 @@
       "Group.GetCount",
       "Group.Select"
     ],
-    "script_length": 3535,
+    "script_length": 3534,
     "desc_length": 478
   },
   {
@@ -108466,7 +108470,7 @@
       "Effect.SetType",
       "Group.GetFirst"
     ],
-    "script_length": 4354,
+    "script_length": 4356,
     "desc_length": 557
   },
   {
@@ -117533,7 +117537,7 @@
       "Group.IsExists",
       "bit.band"
     ],
-    "script_length": 3086,
+    "script_length": 3088,
     "desc_length": 470
   },
   {
@@ -121333,6 +121337,7 @@
     "card_type_labels": [],
     "category_labels": [],
     "api_calls": [
+      "Auxiliary.NecroValleyFilter",
       "Auxiliary.Stringid",
       "Card.CheckUniqueOnField",
       "Card.GetOriginalAttribute",
@@ -121386,7 +121391,7 @@
       "Group.GetFirst",
       "bit.band"
     ],
-    "script_length": 3602,
+    "script_length": 3636,
     "desc_length": 0
   },
   {
@@ -122070,7 +122075,7 @@
       "Group.IsExists",
       "Group.SelectSubGroup"
     ],
-    "script_length": 3182,
+    "script_length": 3218,
     "desc_length": 499
   },
   {
@@ -129783,7 +129788,7 @@
       "Group.IsExists",
       "Group.SelectSubGroup"
     ],
-    "script_length": 2901,
+    "script_length": 2828,
     "desc_length": 431
   },
   {
@@ -135457,6 +135462,7 @@
       "Token"
     ],
     "api_calls": [
+      "Auxiliary.NecroValleyFilter",
       "Auxiliary.Stringid",
       "Auxiliary.bfgcost",
       "Auxiliary.dncheck",
@@ -135503,7 +135509,7 @@
       "Group.SelectSubGroup",
       "Group.Sub"
     ],
-    "script_length": 3707,
+    "script_length": 3743,
     "desc_length": 479
   },
   {
@@ -136004,7 +136010,7 @@
       "Group.GetFirst",
       "Group.Merge"
     ],
-    "script_length": 3133,
+    "script_length": 3126,
     "desc_length": 325
   },
   {
@@ -160558,7 +160564,7 @@
       "Group.GetCount",
       "Group.GetFirst"
     ],
-    "script_length": 3544,
+    "script_length": 3541,
     "desc_length": 381
   },
   {
@@ -175732,9 +175738,10 @@
       "Effect.SetTargetRange",
       "Effect.SetType",
       "Group.GetCount",
+      "Group.IsContains",
       "Group.IsExists"
     ],
-    "script_length": 3851,
+    "script_length": 3897,
     "desc_length": 603
   },
   {
@@ -183620,6 +183627,7 @@
     ],
     "api_calls": [
       "Auxiliary.AddXyzProcedure",
+      "Auxiliary.NecroValleyFilter",
       "Auxiliary.Stringid",
       "Auxiliary.TRUE",
       "Card.EnableReviveLimit",
@@ -183655,7 +183663,7 @@
       "Effect.SetType",
       "Group.GetCount"
     ],
-    "script_length": 2706,
+    "script_length": 2742,
     "desc_length": 529
   },
   {
@@ -188968,7 +188976,7 @@
       "Effect.SetType",
       "Effect.SetValue"
     ],
-    "script_length": 2486,
+    "script_length": 2488,
     "desc_length": 324
   },
   {
@@ -190826,17 +190834,19 @@
       "Card.IsLocation",
       "Card.IsRace",
       "Card.IsRank",
+      "Card.IsRelateToChain",
       "Card.IsRelateToEffect",
       "Card.IsType",
       "Card.RegisterEffect",
       "Card.SetMaterial",
+      "Duel.BreakEffect",
       "Duel.GetFirstTarget",
       "Duel.GetLocationCount",
       "Duel.GetLocationCountFromEx",
       "Duel.Hint",
       "Duel.IsExistingMatchingCard",
       "Duel.IsExistingTarget",
-      "Duel.IsPlayerAffectedByEffect",
+      "Duel.IsPlayerCanSpecialSummonCount",
       "Duel.Overlay",
       "Duel.SelectMatchingCard",
       "Duel.SelectTarget",
@@ -190858,7 +190868,7 @@
       "Group.FromCards",
       "Group.GetFirst"
     ],
-    "script_length": 2910,
+    "script_length": 2901,
     "desc_length": 353
   },
   {
@@ -200642,7 +200652,7 @@
       "Group.SelectSubGroup",
       "Group.Sub"
     ],
-    "script_length": 3755,
+    "script_length": 3754,
     "desc_length": 463
   },
   {
@@ -203548,6 +203558,7 @@
     "api_calls": [
       "Auxiliary.AddFusionProcCodeFun",
       "Auxiliary.FilterBoolFunction",
+      "Auxiliary.NecroValleyFilter",
       "Auxiliary.Stringid",
       "Auxiliary.dabcheck",
       "Card.EnableReviveLimit",
@@ -203590,7 +203601,7 @@
       "Group.GetCount",
       "Group.SelectSubGroup"
     ],
-    "script_length": 3277,
+    "script_length": 3308,
     "desc_length": 547
   },
   {
@@ -205909,7 +205920,7 @@
       "Group.KeepAlive",
       "Group.Merge"
     ],
-    "script_length": 6172,
+    "script_length": 6174,
     "desc_length": 486
   },
   {
@@ -207244,7 +207255,7 @@
       "Effect.SetValue",
       "Group.GetFirst"
     ],
-    "script_length": 2993,
+    "script_length": 2989,
     "desc_length": 473
   },
   {
@@ -208313,7 +208324,7 @@
       "Effect.SetType",
       "Group.GetCount"
     ],
-    "script_length": 2340,
+    "script_length": 2376,
     "desc_length": 323
   },
   {
@@ -213519,7 +213530,7 @@
       "Group.GetClassCount",
       "Group.GetCount"
     ],
-    "script_length": 3281,
+    "script_length": 3400,
     "desc_length": 535
   },
   {
@@ -239520,6 +239531,7 @@
     ],
     "api_calls": [
       "Auxiliary.NOT",
+      "Auxiliary.NecroValleyFilter",
       "Auxiliary.Stringid",
       "Auxiliary.TRUE",
       "Auxiliary.bfgcost",
@@ -239582,7 +239594,7 @@
       "Group.Select",
       "Group.SelectSubGroup"
     ],
-    "script_length": 4184,
+    "script_length": 4220,
     "desc_length": 451
   },
   {
@@ -240323,7 +240335,7 @@
       "Group.GetFirst",
       "bit.band"
     ],
-    "script_length": 2933,
+    "script_length": 2935,
     "desc_length": 462
   },
   {
@@ -244682,7 +244694,7 @@
       "Effect.SetTarget",
       "Effect.SetType"
     ],
-    "script_length": 1999,
+    "script_length": 2001,
     "desc_length": 336
   },
   {
@@ -246748,6 +246760,7 @@
     "api_calls": [
       "Auxiliary.AddCodeList",
       "Auxiliary.AddXyzProcedure",
+      "Auxiliary.NecroValleyFilter",
       "Auxiliary.Stringid",
       "Auxiliary.TargetBoolFunction",
       "Card.CheckRemoveOverlayCard",
@@ -246789,7 +246802,7 @@
       "Effect.SetType",
       "Group.GetCount"
     ],
-    "script_length": 2867,
+    "script_length": 2903,
     "desc_length": 523
   },
   {
@@ -247627,7 +247640,7 @@
       "Group.Merge",
       "bit.band"
     ],
-    "script_length": 3670,
+    "script_length": 3693,
     "desc_length": 497
   },
   {
@@ -248389,7 +248402,7 @@
       "Effect.SetValue",
       "Group.GetCount"
     ],
-    "script_length": 3241,
+    "script_length": 3243,
     "desc_length": 581
   },
   {
@@ -249657,7 +249670,7 @@
       "Group.FilterCount",
       "Group.GetCount"
     ],
-    "script_length": 2047,
+    "script_length": 2043,
     "desc_length": 289
   },
   {
@@ -261295,7 +261308,7 @@
       "Group.Clone",
       "bit.band"
     ],
-    "script_length": 3149,
+    "script_length": 3148,
     "desc_length": 541
   },
   {
@@ -277316,7 +277329,7 @@
       "Group.Select",
       "bit.band"
     ],
-    "script_length": 5428,
+    "script_length": 5430,
     "desc_length": 1021
   },
   {
@@ -278871,7 +278884,7 @@
       "Group.GetCount",
       "Group.Select"
     ],
-    "script_length": 2952,
+    "script_length": 2954,
     "desc_length": 487
   },
   {
@@ -278998,7 +279011,7 @@
       "Effect.SetTarget",
       "Effect.SetType"
     ],
-    "script_length": 1858,
+    "script_length": 1860,
     "desc_length": 217
   },
   {
@@ -279185,7 +279198,7 @@
       "Group.Merge",
       "Group.SelectSubGroup"
     ],
-    "script_length": 5930,
+    "script_length": 5953,
     "desc_length": 490
   },
   {
@@ -279215,6 +279228,7 @@
       "Card.IsCode",
       "Card.IsFaceup",
       "Card.IsRace",
+      "Card.IsType",
       "Card.RegisterEffect",
       "Duel.ChangeChainOperation",
       "Duel.ChangeTargetCard",
@@ -279239,7 +279253,7 @@
       "Group.CreateGroup",
       "Group.IsExists"
     ],
-    "script_length": 1738,
+    "script_length": 1814,
     "desc_length": 442
   },
   {
@@ -280206,7 +280220,7 @@
       "Group.GetFirst",
       "Group.SelectSubGroup"
     ],
-    "script_length": 3561,
+    "script_length": 3563,
     "desc_length": 483
   },
   {
@@ -303427,7 +303441,7 @@
       "Group.IsExists",
       "Group.Select"
     ],
-    "script_length": 3669,
+    "script_length": 3666,
     "desc_length": 530
   },
   {
@@ -308965,7 +308979,7 @@
       "Effect.SetType",
       "Group.GetCount"
     ],
-    "script_length": 3041,
+    "script_length": 3043,
     "desc_length": 443
   },
   {
@@ -315522,6 +315536,7 @@
       "Card.IsAbleToHand",
       "Card.IsCode",
       "Card.IsSetCard",
+      "Card.IsType",
       "Card.RegisterEffect",
       "Duel.ConfirmCards",
       "Duel.Hint",
@@ -315544,7 +315559,7 @@
       "Effect.SetValue",
       "Group.GetCount"
     ],
-    "script_length": 1583,
+    "script_length": 1610,
     "desc_length": 277
   },
   {
@@ -321844,6 +321859,7 @@
       "Control"
     ],
     "api_calls": [
+      "Auxiliary.NecroValleyFilter",
       "Auxiliary.SelectTargetFromFieldFirst",
       "Auxiliary.Stringid",
       "Card.EnableReviveLimit",
@@ -321888,7 +321904,7 @@
       "Group.GetCount",
       "Group.KeepAlive"
     ],
-    "script_length": 2890,
+    "script_length": 2926,
     "desc_length": 467
   },
   {
@@ -323999,7 +324015,7 @@
       "Group.IsContains",
       "Group.IsExists"
     ],
-    "script_length": 2752,
+    "script_length": 2744,
     "desc_length": 512
   },
   {
@@ -330626,7 +330642,7 @@
       "Group.Merge",
       "Group.Select"
     ],
-    "script_length": 6608,
+    "script_length": 6605,
     "desc_length": 997
   },
   {
@@ -335051,7 +335067,7 @@
       "Effect.SetTarget",
       "Effect.SetType"
     ],
-    "script_length": 2415,
+    "script_length": 2417,
     "desc_length": 358
   },
   {
@@ -340754,7 +340770,7 @@
       "Effect.SetValue",
       "Group.IsExists"
     ],
-    "script_length": 3071,
+    "script_length": 3073,
     "desc_length": 509
   },
   {
@@ -343837,7 +343853,7 @@
       "Group.GetFirst",
       "Group.SelectSubGroup"
     ],
-    "script_length": 3448,
+    "script_length": 3450,
     "desc_length": 358
   },
   {
@@ -358797,8 +358813,10 @@
       "Equip"
     ],
     "api_calls": [
+      "Auxiliary.GCheckAdditional",
       "Auxiliary.GetCappedLevel",
       "Auxiliary.Stringid",
+      "Auxiliary.TRUE",
       "Auxiliary.dncheck",
       "Card.GetLevel",
       "Card.IsAbleToHand",
@@ -358832,7 +358850,7 @@
       "Group.GetCount",
       "Group.SelectSubGroup"
     ],
-    "script_length": 2564,
+    "script_length": 2621,
     "desc_length": 514
   },
   {
@@ -366815,6 +366833,7 @@
       "Card.IsCanBeSpecialSummoned",
       "Card.IsCode",
       "Card.IsControler",
+      "Card.IsFaceup",
       "Card.IsLevelBelow",
       "Card.IsLocation",
       "Card.IsRace",
@@ -366846,7 +366865,7 @@
       "Effect.SetType",
       "Effect.SetValue"
     ],
-    "script_length": 2366,
+    "script_length": 2435,
     "desc_length": 351
   },
   {
@@ -366976,7 +366995,7 @@
       "Group.IsExists",
       "bit.band"
     ],
-    "script_length": 2812,
+    "script_length": 2814,
     "desc_length": 469
   },
   {
@@ -367588,7 +367607,7 @@
       "Effect.SetTarget",
       "Effect.SetType"
     ],
-    "script_length": 2499,
+    "script_length": 2501,
     "desc_length": 553
   },
   {
@@ -377343,7 +377362,7 @@
       "Group.GetFirst",
       "Group.IsExists"
     ],
-    "script_length": 4234,
+    "script_length": 4236,
     "desc_length": 463
   },
   {
@@ -385687,7 +385706,7 @@
       "Effect.SetValue",
       "Group.GetFirst"
     ],
-    "script_length": 3155,
+    "script_length": 3157,
     "desc_length": 451
   },
   {
@@ -388991,7 +389010,7 @@
       "Effect.SetValue",
       "Group.GetCount"
     ],
-    "script_length": 2126,
+    "script_length": 2128,
     "desc_length": 427
   },
   {
@@ -392301,7 +392320,7 @@
       "Group.GetCount",
       "Group.GetFirst"
     ],
-    "script_length": 3308,
+    "script_length": 3310,
     "desc_length": 401
   },
   {
@@ -393716,17 +393735,18 @@
     ],
     "api_calls": [
       "Auxiliary.Stringid",
-      "Card.GetSequence",
       "Card.IsAbleToRemoveAsCost",
       "Card.IsCanTurnSet",
       "Card.IsControler",
       "Card.IsFaceup",
       "Card.IsLocation",
+      "Card.IsRelateToChain",
       "Card.IsRelateToEffect",
       "Card.RegisterEffect",
       "Duel.ChangePosition",
       "Duel.GetFirstTarget",
       "Duel.GetLocationCount",
+      "Duel.GetMZoneCount",
       "Duel.GetMatchingGroup",
       "Duel.Hint",
       "Duel.IsExistingTarget",
@@ -393754,7 +393774,7 @@
       "Group.Select",
       "Group.Sub"
     ],
-    "script_length": 2769,
+    "script_length": 2701,
     "desc_length": 275
   },
   {
@@ -396034,7 +396054,7 @@
       "Group.GetNext",
       "bit.band"
     ],
-    "script_length": 1676,
+    "script_length": 1627,
     "desc_length": 319
   },
   {
@@ -396963,7 +396983,7 @@
       "Group.GetCount",
       "Group.IsExists"
     ],
-    "script_length": 3092,
+    "script_length": 3128,
     "desc_length": 483
   },
   {
@@ -398234,7 +398254,7 @@
       "Effect.SetValue",
       "Group.GetFirst"
     ],
-    "script_length": 3116,
+    "script_length": 3113,
     "desc_length": 543
   },
   {
@@ -402797,7 +402817,7 @@
       "Effect.SetType",
       "Group.GetFirst"
     ],
-    "script_length": 3660,
+    "script_length": 3662,
     "desc_length": 710
   },
   {
@@ -415270,7 +415290,7 @@
       "Effect.SetTarget",
       "Effect.SetType"
     ],
-    "script_length": 3366,
+    "script_length": 3368,
     "desc_length": 454
   },
   {
@@ -418826,7 +418846,7 @@
       "Effect.SetType",
       "Effect.SetValue"
     ],
-    "script_length": 3505,
+    "script_length": 3502,
     "desc_length": 459
   },
   {
@@ -436868,7 +436888,7 @@
       "Group.GetFirst",
       "Group.Merge"
     ],
-    "script_length": 3960,
+    "script_length": 3957,
     "desc_length": 496
   },
   {
@@ -437709,6 +437729,7 @@
       "Equip"
     ],
     "api_calls": [
+      "Auxiliary.NecroValleyFilter",
       "Auxiliary.Stringid",
       "Card.IsAbleToHand",
       "Card.IsPreviousControler",
@@ -437752,7 +437773,7 @@
       "Group.IsContains",
       "Group.IsExists"
     ],
-    "script_length": 2995,
+    "script_length": 3026,
     "desc_length": 491
   },
   {
@@ -442281,7 +442302,7 @@
       "Effect.SetType",
       "Group.GetFirst"
     ],
-    "script_length": 1786,
+    "script_length": 1783,
     "desc_length": 324
   },
   {
@@ -469466,7 +469487,7 @@
       "Group.IsContains",
       "Group.IsExists"
     ],
-    "script_length": 3399,
+    "script_length": 3401,
     "desc_length": 387
   },
   {
@@ -469760,16 +469781,17 @@
       "Auxiliary.TRUE",
       "Card.IsAbleToHand",
       "Card.IsCode",
+      "Card.IsDiscardable",
       "Card.IsSetCard",
       "Card.RegisterEffect",
       "Duel.BreakEffect",
       "Duel.ConfirmCards",
-      "Duel.DiscardHand",
       "Duel.GetAttacker",
       "Duel.Hint",
       "Duel.IsExistingMatchingCard",
       "Duel.RegisterEffect",
       "Duel.SelectMatchingCard",
+      "Duel.SendtoGrave",
       "Duel.SendtoHand",
       "Duel.SetOperationInfo",
       "Duel.ShuffleHand",
@@ -469794,7 +469816,7 @@
       "Group.GetCount",
       "bit.band"
     ],
-    "script_length": 2434,
+    "script_length": 2572,
     "desc_length": 508
   },
   {
@@ -474805,7 +474827,7 @@
       "Group.GetCount",
       "Group.GetFirst"
     ],
-    "script_length": 1294,
+    "script_length": 1296,
     "desc_length": 272
   },
   {
@@ -484411,7 +484433,7 @@
       "Group.GetCount",
       "Group.SelectWithSumEqual"
     ],
-    "script_length": 2241,
+    "script_length": 2243,
     "desc_length": 287
   },
   {
@@ -488681,7 +488703,7 @@
       "Effect.SetType",
       "Effect.SetValue"
     ],
-    "script_length": 3376,
+    "script_length": 3378,
     "desc_length": 540
   },
   {
@@ -489535,7 +489557,7 @@
       "Group.GetCount",
       "Group.Select"
     ],
-    "script_length": 2380,
+    "script_length": 2382,
     "desc_length": 547
   },
   {
@@ -492471,7 +492493,7 @@
       "Effect.SetTarget",
       "Effect.SetType"
     ],
-    "script_length": 2248,
+    "script_length": 2242,
     "desc_length": 325
   },
   {
@@ -497582,6 +497604,7 @@
     "api_calls": [
       "Auxiliary.AddCodeList",
       "Auxiliary.ExceptThisCard",
+      "Auxiliary.NecroValleyFilter",
       "Auxiliary.Stringid",
       "Auxiliary.TRUE",
       "Card.IsAbleToDeck",
@@ -497622,7 +497645,7 @@
       "Group.GetCount",
       "Group.Select"
     ],
-    "script_length": 2417,
+    "script_length": 2453,
     "desc_length": 439
   },
   {
@@ -499099,6 +499122,7 @@
       "To Extra Deck"
     ],
     "api_calls": [
+      "Auxiliary.NecroValleyFilter",
       "Auxiliary.PlaceCardsOnDeckBottom",
       "Auxiliary.Stringid",
       "Card.CheckRemoveOverlayCard",
@@ -499144,7 +499168,7 @@
       "Effect.SetType",
       "Group.IsExists"
     ],
-    "script_length": 3203,
+    "script_length": 3239,
     "desc_length": 452
   },
   {
@@ -504073,6 +504097,7 @@
       "Equip"
     ],
     "api_calls": [
+      "Auxiliary.NecroValleyFilter",
       "Auxiliary.Stringid",
       "Auxiliary.TRUE",
       "Card.IsCanBeEffectTarget",
@@ -504120,7 +504145,7 @@
       "Group.SelectSubGroup",
       "bit.band"
     ],
-    "script_length": 3655,
+    "script_length": 3691,
     "desc_length": 548
   },
   {
@@ -512205,7 +512230,7 @@
       "Group.Select",
       "Group.SelectSubGroup"
     ],
-    "script_length": 5196,
+    "script_length": 5227,
     "desc_length": 485
   },
   {
@@ -514953,7 +514978,7 @@
       "Effect.SetType",
       "Group.GetFirst"
     ],
-    "script_length": 1977,
+    "script_length": 1979,
     "desc_length": 268
   },
   {
@@ -521524,6 +521549,7 @@
       "Activation negation"
     ],
     "api_calls": [
+      "Auxiliary.NecroValleyFilter",
       "Auxiliary.Stringid",
       "Card.CheckFusionMaterial",
       "Card.CompleteProcedure",
@@ -521580,7 +521606,7 @@
       "Group.Merge",
       "Group.Select"
     ],
-    "script_length": 4243,
+    "script_length": 4275,
     "desc_length": 503
   },
   {
@@ -529616,7 +529642,7 @@
       "Effect.SetValue",
       "Group.GetCount"
     ],
-    "script_length": 3113,
+    "script_length": 3115,
     "desc_length": 518
   },
   {
@@ -534109,6 +534135,7 @@
       "Equip"
     ],
     "api_calls": [
+      "Auxiliary.NecroValleyFilter",
       "Auxiliary.Stringid",
       "Card.GetFlagEffect",
       "Card.GetOwner",
@@ -534158,7 +534185,7 @@
       "Group.IsExists",
       "Group.SelectSubGroup"
     ],
-    "script_length": 3201,
+    "script_length": 3237,
     "desc_length": 509
   },
   {
@@ -539334,7 +539361,7 @@
       "Group.GetCount",
       "Group.GetFirst"
     ],
-    "script_length": 2435,
+    "script_length": 2437,
     "desc_length": 377
   },
   {
@@ -543960,7 +543987,7 @@
       "Group.GetFirst",
       "Group.SelectWithSumEqual"
     ],
-    "script_length": 3053,
+    "script_length": 3055,
     "desc_length": 479
   },
   {
@@ -560883,7 +560910,7 @@
       "Group.GetNext",
       "Group.Select"
     ],
-    "script_length": 4543,
+    "script_length": 4545,
     "desc_length": 439
   },
   {
@@ -562683,7 +562710,7 @@
       "Group.GetCount",
       "Group.Select"
     ],
-    "script_length": 2346,
+    "script_length": 2348,
     "desc_length": 416
   },
   {
@@ -578930,7 +578957,7 @@
       "Group.GetCount",
       "Group.Select"
     ],
-    "script_length": 3093,
+    "script_length": 3095,
     "desc_length": 480
   },
   {
@@ -579095,7 +579122,7 @@
       "Group.Clone",
       "Group.Select"
     ],
-    "script_length": 3168,
+    "script_length": 3170,
     "desc_length": 474
   },
   {
@@ -580218,7 +580245,7 @@
       "Group.GetFirst",
       "Group.IsExists"
     ],
-    "script_length": 2606,
+    "script_length": 2608,
     "desc_length": 460
   },
   {
@@ -582887,7 +582914,7 @@
       "Group.IsExists",
       "Group.Select"
     ],
-    "script_length": 3057,
+    "script_length": 3059,
     "desc_length": 627
   },
   {
@@ -585038,7 +585065,7 @@
       "Group.GetCount",
       "Group.Merge"
     ],
-    "script_length": 3805,
+    "script_length": 3828,
     "desc_length": 487
   },
   {
@@ -589193,7 +589220,7 @@
       "Effect.SetValue",
       "Group.GetCount"
     ],
-    "script_length": 3655,
+    "script_length": 3652,
     "desc_length": 454
   },
   {
@@ -598415,7 +598442,7 @@
       "Group.SelectSubGroup",
       "Group.Sub"
     ],
-    "script_length": 4248,
+    "script_length": 4284,
     "desc_length": 493
   },
   {
@@ -599691,6 +599718,7 @@
       "To Extra Deck"
     ],
     "api_calls": [
+      "Auxiliary.NecroValleyFilter",
       "Auxiliary.Stringid",
       "Card.IsAbleToDeck",
       "Card.IsAbleToRemove",
@@ -599730,7 +599758,7 @@
       "Group.Select",
       "Group.SelectSubGroup"
     ],
-    "script_length": 2007,
+    "script_length": 2043,
     "desc_length": 263
   },
   {
@@ -609953,7 +609981,7 @@
       "Effect.SetType",
       "Effect.SetValue"
     ],
-    "script_length": 3207,
+    "script_length": 3204,
     "desc_length": 612
   },
   {
@@ -619694,7 +619722,7 @@
       "Group.GetCount",
       "Group.IsExists"
     ],
-    "script_length": 2857,
+    "script_length": 2859,
     "desc_length": 538
   },
   {
@@ -621428,7 +621456,7 @@
       "Group.Clone",
       "Group.IsExists"
     ],
-    "script_length": 3327,
+    "script_length": 3287,
     "desc_length": 554
   },
   {
@@ -623881,7 +623909,7 @@
       "Effect.SetValue",
       "Group.Select"
     ],
-    "script_length": 1578,
+    "script_length": 1580,
     "desc_length": 212
   },
   {
@@ -626259,7 +626287,7 @@
       "Group.IsExists",
       "Group.Select"
     ],
-    "script_length": 2548,
+    "script_length": 2550,
     "desc_length": 514
   },
   {
@@ -628063,7 +628091,7 @@
       "Group.Merge",
       "Group.Select"
     ],
-    "script_length": 5122,
+    "script_length": 5158,
     "desc_length": 539
   },
   {
@@ -628198,7 +628226,7 @@
       "Group.GetFirst",
       "Group.GetNext"
     ],
-    "script_length": 3603,
+    "script_length": 3605,
     "desc_length": 499
   },
   {
@@ -669154,7 +669182,7 @@
       "Group.Select",
       "bit.band"
     ],
-    "script_length": 3005,
+    "script_length": 3007,
     "desc_length": 533
   },
   {
@@ -673402,6 +673430,7 @@
     ],
     "api_calls": [
       "Auxiliary.AddCodeList",
+      "Auxiliary.NecroValleyFilter",
       "Auxiliary.Stringid",
       "Card.IsAbleToDeck",
       "Card.IsAbleToHand",
@@ -673446,7 +673475,7 @@
       "Effect.SetValue",
       "Group.GetFirst"
     ],
-    "script_length": 3175,
+    "script_length": 3207,
     "desc_length": 385
   },
   {
@@ -678609,7 +678638,7 @@
       "Group.Clone",
       "Group.GetFirst"
     ],
-    "script_length": 3703,
+    "script_length": 3700,
     "desc_length": 439
   },
   {
@@ -682147,7 +682176,7 @@
       "Group.IsExists",
       "bit.band"
     ],
-    "script_length": 4215,
+    "script_length": 4209,
     "desc_length": 878
   },
   {
@@ -683181,7 +683210,7 @@
       "Effect.SetValue",
       "Group.Clone"
     ],
-    "script_length": 2275,
+    "script_length": 2269,
     "desc_length": 355
   },
   {
@@ -689845,7 +689874,7 @@
       "Effect.SetType",
       "Effect.SetValue"
     ],
-    "script_length": 2783,
+    "script_length": 2780,
     "desc_length": 437
   },
   {
@@ -714382,6 +714411,7 @@
     ],
     "api_calls": [
       "Auxiliary.AddLinkProcedure",
+      "Auxiliary.NecroValleyFilter",
       "Auxiliary.Next",
       "Auxiliary.Stringid",
       "Card.EnableReviveLimit",
@@ -714433,7 +714463,7 @@
       "Group.IsExists",
       "Group.Select"
     ],
-    "script_length": 3783,
+    "script_length": 3819,
     "desc_length": 502
   },
   {
@@ -721772,7 +721802,7 @@
       "Group.GetFirst",
       "Group.SelectSubGroup"
     ],
-    "script_length": 3499,
+    "script_length": 3501,
     "desc_length": 505
   },
   {
@@ -726609,7 +726639,7 @@
       "Group.GetCount",
       "Group.IsExists"
     ],
-    "script_length": 3003,
+    "script_length": 3039,
     "desc_length": 377
   },
   {
@@ -740888,7 +740918,7 @@
       "Effect.SetType",
       "Effect.SetValue"
     ],
-    "script_length": 4542,
+    "script_length": 4539,
     "desc_length": 469
   },
   {
@@ -744822,6 +744852,7 @@
       "Equip"
     ],
     "api_calls": [
+      "Auxiliary.NecroValleyFilter",
       "Auxiliary.Stringid",
       "Auxiliary.bfgcost",
       "Card.GetCode",
@@ -744874,7 +744905,7 @@
       "Group.SelectSubGroup",
       "bit.band"
     ],
-    "script_length": 4152,
+    "script_length": 4188,
     "desc_length": 550
   },
   {
@@ -745879,6 +745910,7 @@
       "Auxiliary.AddCodeList",
       "Auxiliary.AddFusionProcFunRep",
       "Auxiliary.IsCodeListed",
+      "Auxiliary.NecroValleyFilter",
       "Auxiliary.Stringid",
       "Auxiliary.dncheck",
       "Auxiliary.fuslimit",
@@ -745933,7 +745965,7 @@
       "Group.Select",
       "Group.SelectSubGroup"
     ],
-    "script_length": 4009,
+    "script_length": 4045,
     "desc_length": 369
   },
   {

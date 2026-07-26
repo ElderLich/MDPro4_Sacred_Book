@@ -20,7 +20,7 @@ Returns c's current base DEF. Unknown or negative base DEF values are clamped to
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3444`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3447`
 
 ## Used By
 

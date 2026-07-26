@@ -21,4 +21,4 @@ Checks whether c has a nonzero Link Rating that is less than or equal to link.
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3616`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3619`

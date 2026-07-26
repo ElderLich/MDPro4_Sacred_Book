@@ -22,4 +22,4 @@ For other locations, sequence is the card's position in that location, starting 
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3468`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3471`

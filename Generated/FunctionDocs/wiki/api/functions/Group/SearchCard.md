@@ -3,7 +3,7 @@
 ## Signature
 
 ```lua
-Group.SearchCard(Group g, function f, ... any) -> Card
+Group.SearchCard(Group g, function f, ... any) -> Card|nil
 ```
 
 ## Description
@@ -18,7 +18,7 @@ Returns the first card in g that satisfies f with any extra arguments, or nil if
 
 ## Returns
 
-- `Card`
+- `Card|nil`
 
 ## Source
 

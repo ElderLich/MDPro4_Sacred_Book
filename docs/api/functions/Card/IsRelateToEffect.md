@@ -22,7 +22,7 @@ When an effect enters the Chain, its handler and cards selected with Duel.SetTar
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3562`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3565`
 
 ## Used By
 

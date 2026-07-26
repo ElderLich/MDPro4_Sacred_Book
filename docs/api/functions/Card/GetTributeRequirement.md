@@ -21,7 +21,7 @@ Returns the minimum and maximum Tribute counts for Normal Summoning c.
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3652`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3655`
 
 ## Used By
 

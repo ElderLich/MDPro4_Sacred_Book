@@ -21,7 +21,7 @@ Checks whether c is unaffected by effect e.
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3646`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3649`
 
 ## Used By
 

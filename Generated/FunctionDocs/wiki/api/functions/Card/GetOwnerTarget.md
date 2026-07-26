@@ -20,4 +20,4 @@ Returns the Group of cards that are targeting c as their persistent card-target 
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3542`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3545`

@@ -20,7 +20,7 @@ Returns c's current reason card, or nil when no reason card is recorded.
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3460`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3463`
 
 ## Used By
 

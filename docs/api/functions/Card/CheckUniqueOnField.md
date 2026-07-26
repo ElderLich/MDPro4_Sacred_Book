@@ -24,7 +24,7 @@ check_location defaults to LOCATION_ONFIELD and is masked to on-field locations.
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3658`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3661`
 
 ## Used By
 
@@ -57,8 +57,8 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Dragunity Arma Gram | `53184342` | [Scripts/c53184342.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c53184342.lua) | 54 |
 | Chaos Allure Queen | `29925614` | [Scripts/c29925614.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c29925614.lua) | 53 |
 | Cyberdark End Dragon | `37542782` | [Scripts/c37542782.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c37542782.lua) | 53 |
+| Card 24056179 | `24056179` | [Scripts/c24056179.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c24056179.lua) | 53 |
 | Tensei Ryu-Ge Anva | `56322832` | [Scripts/c56322832.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c56322832.lua) | 52 |
-| Elfnote Tinia | `59581480` | [Scripts/c59581480.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c59581480.lua) | 52 |
 | ...and 165 more |  |  |  |
 
 ## Script Examples

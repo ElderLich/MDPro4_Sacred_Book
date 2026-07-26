@@ -21,4 +21,4 @@ Checks whether c has at least one of the type flags in type.
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3481`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3484`

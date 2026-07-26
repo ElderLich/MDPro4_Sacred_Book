@@ -21,7 +21,7 @@ While c is in a Pendulum Zone, the core applies EFFECT_UPDATE_LSCALE and EFFECT_
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3413`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3416`
 
 ## Used By
 

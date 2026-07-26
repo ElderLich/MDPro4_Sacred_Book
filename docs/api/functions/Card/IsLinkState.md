@@ -20,7 +20,7 @@ Checks whether c is currently in linked state.
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3425`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3428`
 
 ## Used By
 

@@ -20,7 +20,7 @@ Returns the DEF value c had while it was previously on the field.
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3453`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3456`
 
 ## Used By
 

@@ -20,7 +20,7 @@ Returns c's current location, or 0 if c is currently treated as not being on the
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3466`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3469`
 
 ## Used By
 

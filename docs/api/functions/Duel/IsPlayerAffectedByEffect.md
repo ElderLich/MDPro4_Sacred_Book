@@ -28,7 +28,7 @@ Returns an effect affecting player with code, or nil if no matching effect exist
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **725** indexed script(s).
+- Detected in **724** indexed script(s).
 - Search this function in the [Script Explorer](/tools/script-explorer) with `Duel.IsPlayerAffectedByEffect`.
 
 | Card | ID | Script | Detected Calls |
@@ -57,7 +57,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Red-Eyes Slash Dragon | `21140872` | [Scripts/c21140872.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c21140872.lua) | 60 |
 | Gravity Balance | `37930737` | [Scripts/c37930737.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c37930737.lua) | 60 |
 | Regenesis Birth | `27781371` | [Scripts/c27781371.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c27781371.lua) | 60 |
-| ...and 701 more |  |  |  |
+| ...and 700 more |  |  |  |
 
 ## Script Examples
 

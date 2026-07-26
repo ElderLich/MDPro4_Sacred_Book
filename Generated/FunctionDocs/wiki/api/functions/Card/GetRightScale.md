@@ -21,4 +21,4 @@ While c is in a Pendulum Zone, the core applies EFFECT_UPDATE_RSCALE and EFFECT_
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3415`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3418`

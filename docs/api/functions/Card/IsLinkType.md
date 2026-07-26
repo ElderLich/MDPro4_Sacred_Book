@@ -21,7 +21,7 @@ Checks whether c's type while used as Link Material contains type.
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3486`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3489`
 
 ## Used By
 

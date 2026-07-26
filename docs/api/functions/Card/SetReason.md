@@ -3,7 +3,7 @@
 ## Signature
 
 ```lua
-Card.SetReason(Card c, int reason) -> bool
+Card.SetReason(Card c, int reason) -> void
 ```
 
 ## Description
@@ -15,13 +15,9 @@ Sets c's current reason bitmask to reason.
 - `c` `Card`
 - `reason` `int`
 
-## Returns
-
-- `bool`
-
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3458`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3461`
 
 ## Used By
 

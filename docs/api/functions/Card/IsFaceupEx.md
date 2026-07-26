@@ -20,7 +20,7 @@ Checks whether c is face-up; returns true for cards in the hand, Graveyard, Main
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3601`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3604`
 
 ## Used By
 

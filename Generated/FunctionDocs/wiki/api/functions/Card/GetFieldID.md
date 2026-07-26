@@ -21,4 +21,4 @@ Smaller values are older. The core refreshes this value when the card gains a ne
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3477`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3480`

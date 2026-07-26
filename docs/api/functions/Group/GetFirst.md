@@ -93,7 +93,7 @@ Source: [Scripts/c48171151.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/
 	Duel.Hint(HINT_SELECTMSG,tp,HINTMSG_TOFIELD)
 	local g=Duel.SelectMatchingCard(tp,s.pfilter,tp,LOCATION_HAND+LOCATION_DECK,0,1,1,nil,tp)
 	local tc=g:GetFirst()
-	if tc and Duel.MoveToField(tc,tp,tp,LOCATION_PZONE,POS_FACEUP,true)~=0 then
+	if tc and Duel.MoveToField(tc,tp,tp,LOCATION_PZONE,POS_FACEUP,true) then
 		local e1=Effect.CreateEffect(c)
 ```
 

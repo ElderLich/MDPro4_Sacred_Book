@@ -23,7 +23,7 @@ player defaults to the current reason player. The core uses c:GetFusionAttribute
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3495`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3498`
 
 ## Used By
 

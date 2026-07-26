@@ -25,7 +25,7 @@ The core also offers applicable EFFECT_OVERLAY_REMOVE_REPLACE effects before sel
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3528`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3531`
 
 ## Used By
 

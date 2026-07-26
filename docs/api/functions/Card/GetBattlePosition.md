@@ -20,7 +20,7 @@ Returns c's temporary battle-position snapshot.
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3465`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3468`
 
 ## Used By
 

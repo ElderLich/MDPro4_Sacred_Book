@@ -20,7 +20,7 @@ Checks whether c is treated as occupying or applying to all columns.
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3430`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3433`
 
 ## Used By
 

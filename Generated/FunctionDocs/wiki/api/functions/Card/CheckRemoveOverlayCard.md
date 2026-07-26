@@ -24,4 +24,4 @@ Replacement effects with EFFECT_OVERLAY_REMOVE_REPLACE can make this return true
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3527`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3530`

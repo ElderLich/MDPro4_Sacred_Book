@@ -25,4 +25,4 @@ ignore_count skips the Normal Summon/Set count check. e checks Set legality for 
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3580`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3583`

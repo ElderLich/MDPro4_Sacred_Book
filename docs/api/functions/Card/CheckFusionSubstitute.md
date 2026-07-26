@@ -21,7 +21,7 @@ Checks whether c can substitute for a specifically named Fusion Material listed 
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3645`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3648`
 
 ## Used By
 

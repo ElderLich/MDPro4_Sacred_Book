@@ -20,7 +20,7 @@ Returns c's Synchro Material Type mask used by Synchro Material checks.
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3402`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3405`
 
 ## Used By
 

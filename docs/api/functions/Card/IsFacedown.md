@@ -20,7 +20,7 @@ Checks whether c is in face-down position.
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3603`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3606`
 
 ## Used By
 

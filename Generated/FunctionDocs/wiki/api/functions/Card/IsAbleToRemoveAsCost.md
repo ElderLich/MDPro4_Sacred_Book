@@ -22,4 +22,4 @@ pos controls the banished position and defaults to POS_FACEUP.
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3594`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3597`

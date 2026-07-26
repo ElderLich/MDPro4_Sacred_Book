@@ -22,7 +22,7 @@ The core also enforces new/old Union count compatibility between c and target.
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3522`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3525`
 
 ## Used By
 

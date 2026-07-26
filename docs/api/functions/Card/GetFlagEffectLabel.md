@@ -43,7 +43,7 @@ If no marker exists, this returns nil. If several matching markers exist, the lo
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3556`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3559`
 
 ## Used By
 

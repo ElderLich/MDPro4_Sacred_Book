@@ -23,7 +23,7 @@ This core binding validates c but tests the duel's current attacker. ac defaults
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3599`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3602`
 
 ## Used By
 

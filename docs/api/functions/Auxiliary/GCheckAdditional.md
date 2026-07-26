@@ -29,7 +29,7 @@ The default implementation returns true. Summon and selection procedures tempora
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **106** indexed script(s).
+- Detected in **107** indexed script(s).
 - Search this function in the [Script Explorer](/tools/script-explorer) with `Auxiliary.GCheckAdditional`.
 
 | Card | ID | Script | Detected Calls |
@@ -58,7 +58,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Astrolasma Urania | `18738846` | [Scripts/c18738846.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c18738846.lua) | 55 |
 | Invoked Transcendence Aeon | `33166263` | [Scripts/c33166263.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c33166263.lua) | 55 |
 | Magikey Maftea | `99426088` | [Scripts/c99426088.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c99426088.lua) | 55 |
-| ...and 82 more |  |  |  |
+| ...and 83 more |  |  |  |
 
 ## Script Examples
 

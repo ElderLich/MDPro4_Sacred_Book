@@ -21,7 +21,7 @@ Checks whether c's previous position included pos.
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3606`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3609`
 
 ## Used By
 

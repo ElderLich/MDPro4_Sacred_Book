@@ -21,4 +21,4 @@ The card must be face-up Attack Position, or face-up Defense Position with EFFEC
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3598`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3601`

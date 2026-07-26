@@ -20,4 +20,4 @@ Sets a uniqueness rule for c so only one card with unique_code can exist on the 
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3657`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3660`

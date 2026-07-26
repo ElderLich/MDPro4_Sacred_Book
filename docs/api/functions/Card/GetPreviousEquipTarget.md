@@ -38,7 +38,7 @@ This is the usual read for lost-target or sent-from-field Equip Card triggers. I
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3520`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3523`
 
 ## Used By
 

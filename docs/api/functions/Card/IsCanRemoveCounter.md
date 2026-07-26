@@ -24,7 +24,7 @@ Checks whether player can remove count counters of countertype from c for reason
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3636`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3639`
 
 ## Used By
 

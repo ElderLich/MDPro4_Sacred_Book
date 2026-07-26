@@ -20,7 +20,7 @@ Returns c's previous location bitmask from before its last location change.
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3467`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3470`
 
 ## Used By
 

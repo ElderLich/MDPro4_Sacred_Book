@@ -17,4 +17,4 @@ If c is the current top card of the Main Deck, the core also sends the top-of-De
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3656`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3659`

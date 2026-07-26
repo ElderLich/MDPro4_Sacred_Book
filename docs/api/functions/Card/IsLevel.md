@@ -24,7 +24,7 @@ nil level arguments are ignored.
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3487`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3490`
 
 ## Used By
 

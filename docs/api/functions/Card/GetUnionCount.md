@@ -22,7 +22,7 @@ The local core counts equipped cards with TYPE_UNION plus EFFECT_UNION_STATUS or
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3523`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3526`
 
 ## Used By
 

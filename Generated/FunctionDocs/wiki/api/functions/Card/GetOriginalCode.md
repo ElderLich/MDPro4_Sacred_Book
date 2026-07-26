@@ -20,4 +20,4 @@ Returns c's original card code from card data.
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3387`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3390`

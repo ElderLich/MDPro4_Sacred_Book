@@ -21,4 +21,4 @@ The core updates this value when the card is added to a location, so scripts com
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3476`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3479`

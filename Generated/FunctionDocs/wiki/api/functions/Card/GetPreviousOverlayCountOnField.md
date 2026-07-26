@@ -20,4 +20,4 @@ Returns the number of cards that were overlaid on c while it was previously on t
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3454`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3457`

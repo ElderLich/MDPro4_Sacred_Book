@@ -3,7 +3,7 @@
 ## Signature
 
 ```lua
-Duel.SelectTunerMaterial(int player, Card c, Card tuner, [function|nil f1], [function|nil f2], int min, int max, [Group|nil mg]) -> Group
+Duel.SelectTunerMaterial(int player, Card c, Card tuner, [function|nil f1], [function|nil f2], int min, int max, [Group|nil mg]) -> Group|nil
 ```
 
 ## Description
@@ -23,7 +23,7 @@ Lets player select Synchro Materials for scard using the fixed tuner, optional f
 
 ## Returns
 
-- `Group`
+- `Group|nil`
 
 ## Source
 

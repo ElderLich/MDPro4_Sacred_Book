@@ -21,4 +21,4 @@ Returns c's current card code and, when present, its secondary code.
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3386`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3389`

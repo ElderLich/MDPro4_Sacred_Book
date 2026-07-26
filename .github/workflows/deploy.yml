@@ -51,6 +51,7 @@ jobs:
       - name: Build site
         env:
           NODE_OPTIONS: --max-old-space-size=6144
+          CLOUDFLARE_WEB_ANALYTICS_TOKEN: ${{ secrets.CLOUDFLARE_WEB_ANALYTICS_TOKEN }}
         run: npm run site:build
 
       - name: Upload artifact

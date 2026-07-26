@@ -22,4 +22,4 @@ This is only a check: sending a card from the hand to the Graveyard with REASON_
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3597`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3600`

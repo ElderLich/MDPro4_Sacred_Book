@@ -21,7 +21,7 @@ The core updates this value when the card is added to a location, so scripts com
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3476`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3479`
 
 ## Used By
 
@@ -32,7 +32,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Unchained Enma Lord Yama | `94014327` | [Scripts/c94014327.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c94014327.lua) | 51 |
+| Unchained Enma Lord Yama | `94014327` | [Scripts/c94014327.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c94014327.lua) | 52 |
 | Cubic Mandala | `8837932` | [Scripts/c8837932.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c8837932.lua) | 49 |
 | Xyz Double Back | `57836546` | [Scripts/c57836546.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c57836546.lua) | 49 |
 | Diabrocken the Ominous Specter | `6083904` | [Scripts/c6083904.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c6083904.lua) | 48 |

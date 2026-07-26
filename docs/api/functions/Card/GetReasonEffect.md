@@ -20,7 +20,7 @@ Returns c's current reason effect, or nil when no reason effect is recorded.
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3462`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3465`
 
 ## Used By
 

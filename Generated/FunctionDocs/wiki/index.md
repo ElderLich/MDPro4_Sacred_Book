@@ -10,7 +10,7 @@ Core-specific Lua scripting reference for MDPro3/YGOPro card scripts.
 
 ## Current Snapshot
 
-- Functions: 1000
+- Functions: 1001
 - Core-bound functions: 611
 - Lua helper/procedure functions: 378
 - Constants: 859

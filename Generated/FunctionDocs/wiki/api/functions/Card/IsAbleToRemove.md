@@ -24,4 +24,4 @@ player defaults to the current reason player, pos defaults to POS_FACEUP, and re
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3588`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3591`

@@ -20,4 +20,4 @@ Returns the location c was Summoned from, decoded from its summon information.
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3471`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3474`

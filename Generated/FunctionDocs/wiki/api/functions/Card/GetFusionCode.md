@@ -22,4 +22,4 @@ When the core is checking with not_material set, only the current and second cod
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3389`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3392`

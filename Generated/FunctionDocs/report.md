@@ -1,6 +1,6 @@
 # Function Docs Refresh Report
 
-Generated: 2026-06-25T17:11:16+00:00
+Generated: 2026-07-26T16:02:56+00:00
 
 ## Outputs
 
@@ -22,20 +22,20 @@ Generated: 2026-06-25T17:11:16+00:00
 
 ## Function Sources
 
-- Generated functions: 1000
+- Generated functions: 1001
 - Core-bound functions: 611
 - Lua helper functions: 378
-- Stub-only functions: 11
+- Stub-only functions: 12
 - Core-bound functions without stub docs: 0
 - Existing DataEditorX `_functions.txt`: 1000
 - Existing DataEditorX `_function_english.txt`: 1000
-- Added versus DataEditorX `_functions.txt`: 0
+- Added versus DataEditorX `_functions.txt`: 1
 - Dropped versus DataEditorX `_functions.txt`: 0
 
 ## Namespaces
 
 - `Auxiliary`: 365
-- `Card`: 286
+- `Card`: 287
 - `Debug`: 11
 - `Duel`: 229
 - `Effect`: 55
@@ -45,7 +45,7 @@ Generated: 2026-06-25T17:11:16+00:00
 
 ## English Coverage
 
-- `translated_exact`: 1000
+- `translated_exact`: 1001
 
 ## Core Binding Gaps
 
@@ -55,6 +55,7 @@ Core-bound functions that were not documented by `Define/def.lua`:
 
 Documented stubs that do not appear in this core binding scan:
 
+- `Card.Metallization_material`
 - `Card.branded_fusion_check`
 - `Card.cyber_fusion_check`
 - `Card.destruction_swordsman_fusion_check`
@@ -126,6 +127,7 @@ Examples changed constant values:
 
 ## Added Function Examples
 
+- `Card.Metallization_material`
 
 ## Dropped DataEditorX Function Examples
 

@@ -35,7 +35,7 @@ This checks the card's current code and alternate code, so copied or changed-cod
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3480`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3483`
 
 ## Used By
 

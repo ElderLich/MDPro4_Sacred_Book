@@ -40,7 +40,7 @@ The return value is a count, not a boolean. Compare it with 0 when checking whet
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3553`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3556`
 
 ## Used By
 

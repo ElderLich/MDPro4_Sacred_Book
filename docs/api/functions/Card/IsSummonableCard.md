@@ -21,7 +21,7 @@ This rejects non-monsters, Extra Deck monsters, Ritual Monsters, Special Summon-
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3572`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3575`
 
 ## Used By
 
@@ -42,8 +42,8 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Golden-Eyes Idol | `78642798` | [Scripts/c78642798.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c78642798.lua) | 44 |
 | Chaos Space | `99266988` | [Scripts/c99266988.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c99266988.lua) | 43 |
 | Crimson Blade Dragon | `3294539` | [Scripts/c3294539.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c3294539.lua) | 41 |
+| Principug | `11496832` | [Scripts/c11496832.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c11496832.lua) | 40 |
 | Cyber Emergency | `60600126` | [Scripts/c60600126.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c60600126.lua) | 40 |
-| Principug | `11496832` | [Scripts/c11496832.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c11496832.lua) | 39 |
 | Zoodiac Broadbull | `85115440` | [Scripts/c85115440.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c85115440.lua) | 38 |
 | Drytron Nova | `94187078` | [Scripts/c94187078.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c94187078.lua) | 37 |
 | Unleashing the Sacred Beasts | `38776201` | [Scripts/c38776201.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c38776201.lua) | 36 |

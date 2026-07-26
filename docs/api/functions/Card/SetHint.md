@@ -18,7 +18,7 @@ Sends a client card-hint message for c with hint type and value; types at or abo
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3655`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3658`
 
 ## Used By
 

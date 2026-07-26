@@ -1,6 +1,6 @@
 # Card
 
-286 functions in the `Card` namespace.
+287 functions in the `Card` namespace.
 
 - [Card.AddCounter](AddCounter.md)
 - [Card.AddMonsterAttribute](AddMonsterAttribute.md)
@@ -263,6 +263,7 @@
 - [Card.IsXyzType](IsXyzType.md)
 - [Card.mat_filter](mat_filter.md)
 - [Card.mat_group_check](mat_group_check.md)
+- [Card.Metallization_material](Metallization_material.md)
 - [Card.red_eyes_fusion_check](red_eyes_fusion_check.md)
 - [Card.RegisterEffect](RegisterEffect.md)
 - [Card.RegisterFlagEffect](RegisterFlagEffect.md)

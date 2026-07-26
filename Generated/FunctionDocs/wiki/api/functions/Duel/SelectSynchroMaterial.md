@@ -3,7 +3,7 @@
 ## Signature
 
 ```lua
-Duel.SelectSynchroMaterial(int player, Card c, [function|nil f1], [function|nil f2], int min, int max, [Card|nil smat], [Group|nil mg]) -> Group
+Duel.SelectSynchroMaterial(int player, Card c, [function|nil f1], [function|nil f2], int min, int max, [Card|nil smat], [Group|nil mg]) -> Group|nil
 ```
 
 ## Description
@@ -24,7 +24,7 @@ f1 filters the Tuner material, f2 filters non-Tuner materials, min and max restr
 
 ## Returns
 
-- `Group`
+- `Group|nil`
 
 ## Source
 

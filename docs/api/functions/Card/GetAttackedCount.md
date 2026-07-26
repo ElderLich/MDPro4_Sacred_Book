@@ -20,7 +20,7 @@ Returns c's attack count for the current turn.
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3531`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3534`
 
 ## Used By
 

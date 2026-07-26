@@ -25,4 +25,4 @@ When countertype is 0, the core clears every counter on c and returns no Lua val
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3629`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3632`

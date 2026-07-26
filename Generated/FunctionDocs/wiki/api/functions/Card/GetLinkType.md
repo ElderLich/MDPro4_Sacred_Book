@@ -20,4 +20,4 @@ Returns c's Link Material Type mask used by Link Material checks.
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3404`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3407`

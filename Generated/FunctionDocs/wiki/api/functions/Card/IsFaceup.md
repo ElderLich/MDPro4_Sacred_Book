@@ -20,4 +20,4 @@ Checks whether c is in face-up position.
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3600`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3603`

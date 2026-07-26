@@ -21,4 +21,4 @@ In a Pendulum Zone, this returns the left or right current scale according to c'
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3417`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3420`

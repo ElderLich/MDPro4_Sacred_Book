@@ -21,4 +21,4 @@ Checks whether c has a nonzero Rank greater than or equal to rank.
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3615`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3618`

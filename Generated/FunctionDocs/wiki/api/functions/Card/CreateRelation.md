@@ -18,4 +18,4 @@ Creates a relation from c1 to c2 that is cleared by reset.
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3557`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3560`

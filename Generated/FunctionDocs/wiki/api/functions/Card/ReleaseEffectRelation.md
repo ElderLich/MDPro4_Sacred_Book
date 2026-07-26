@@ -17,4 +17,4 @@ Releases c's relation to effect e.
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3560`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3563`

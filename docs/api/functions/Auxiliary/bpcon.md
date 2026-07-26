@@ -54,7 +54,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Tri-Brigade Stand-Off | `25908748` | [Scripts/c25908748.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c25908748.lua) | 41 |
 | Galaxy-Eyes Antimatter Dragon | `92517928` | [Scripts/c92517928.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c92517928.lua) | 41 |
 | Mathmech Nabla | `53577438` | [Scripts/c53577438.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c53577438.lua) | 41 |
-| Principug | `11496832` | [Scripts/c11496832.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c11496832.lua) | 39 |
+| Principug | `11496832` | [Scripts/c11496832.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c11496832.lua) | 40 |
 | Primal Dragon, the Primordial | `64025981` | [Scripts/c64025981.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c64025981.lua) | 39 |
 | Performapal Uni | `7714344` | [Scripts/c7714344.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c7714344.lua) | 39 |
 | Superheavy Samurai Stealth Ninja | `50065971` | [Scripts/c50065971.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c50065971.lua) | 38 |

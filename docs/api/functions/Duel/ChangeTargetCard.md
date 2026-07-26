@@ -49,8 +49,8 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Cairngorgon, Antiluminescent Knight | `21501505` | [Scripts/c21501505.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c21501505.lua) | 36 |
 | Dark World Brainwashing | `10131855` | [Scripts/c10131855.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c10131855.lua) | 34 |
 | Shift | `59560625` | [Scripts/c59560625.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c59560625.lua) | 34 |
+| Vortex of Time | `42138622` | [Scripts/c42138622.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c42138622.lua) | 30 |
 | Fabled Dianaira | `53199020` | [Scripts/c53199020.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c53199020.lua) | 30 |
-| Vortex of Time | `42138622` | [Scripts/c42138622.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c42138622.lua) | 29 |
 | Generaider Boss Room | `64325438` | [Scripts/c64325438.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c64325438.lua) | 24 |
 | ...and 5 more |  |  |  |
 

@@ -23,7 +23,7 @@ Checks whether c's original set data matches any supplied set code.
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3394`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3397`
 
 ## Used By
 
@@ -34,7 +34,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Heraldic Beast Stad Whale | `97662494` | [Scripts/c97662494.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c97662494.lua) | 51 |
+| Heraldic Beast Stad Whale | `97662494` | [Scripts/c97662494.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c97662494.lua) | 52 |
 | Obliterate!!! Blaze | `402416` | [Scripts/c402416.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c402416.lua) | 48 |
 | Final Cross | `35756798` | [Scripts/c35756798.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c35756798.lua) | 42 |
 | Riryoku Guardian | `96661780` | [Scripts/c96661780.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c96661780.lua) | 39 |

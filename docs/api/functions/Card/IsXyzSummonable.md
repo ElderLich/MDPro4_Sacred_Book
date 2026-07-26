@@ -25,7 +25,7 @@ The core rejects this check during the Damage Step.
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3577`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3580`
 
 ## Used By
 

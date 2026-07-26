@@ -19,7 +19,7 @@ Use this helper to keep such cards on the field, as with Swords of Revealing Lig
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3651`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3654`
 
 ## Used By
 

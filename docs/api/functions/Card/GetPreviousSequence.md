@@ -20,7 +20,7 @@ Returns c's previous sequence value.
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3469`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3472`
 
 ## Used By
 

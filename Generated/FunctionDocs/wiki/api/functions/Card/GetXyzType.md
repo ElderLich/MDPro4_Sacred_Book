@@ -20,4 +20,4 @@ Returns c's Xyz Material Type mask used by Xyz Material checks.
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3403`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3406`

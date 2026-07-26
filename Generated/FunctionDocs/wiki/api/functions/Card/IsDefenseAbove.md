@@ -22,4 +22,4 @@ Link Monsters and cards that are not monsters or currently treated as monsters r
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3621`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3624`

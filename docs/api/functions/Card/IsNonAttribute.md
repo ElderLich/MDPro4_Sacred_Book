@@ -22,7 +22,7 @@ For example, if a monster is both DARK and WIND, IsAttribute(DARK) is true, but 
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3497`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3500`
 
 ## Used By
 

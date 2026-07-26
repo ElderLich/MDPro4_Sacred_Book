@@ -22,4 +22,4 @@ Link Monsters and non-monsters return false, and unknown or negative DEF also re
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3620`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3623`

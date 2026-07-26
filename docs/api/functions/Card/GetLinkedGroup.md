@@ -21,7 +21,7 @@ Use this when an effect cares about the actual cards in zones pointed to by c's 
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3419`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3422`
 
 ## Used By
 

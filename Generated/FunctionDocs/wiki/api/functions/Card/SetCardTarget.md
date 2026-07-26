@@ -18,4 +18,4 @@ This stores a card-target relation used by functions such as Card.GetCardTarget 
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3536`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3539`

@@ -21,4 +21,4 @@ Returns the Attribute c uses as Link Material for player, defaulting to the curr
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3434`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3437`

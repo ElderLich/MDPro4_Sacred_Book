@@ -22,4 +22,4 @@ If the previous state had a second code, that code is returned as a second value
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3446`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3449`

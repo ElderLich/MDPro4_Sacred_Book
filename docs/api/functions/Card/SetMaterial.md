@@ -17,7 +17,7 @@ Sets g as c's material group for a Summon, or clears c's materials when g is nil
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3514`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3517`
 
 ## Used By
 

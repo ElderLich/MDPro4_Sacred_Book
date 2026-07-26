@@ -20,4 +20,4 @@ Checks whether c can be returned to the Deck.
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3585`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3588`

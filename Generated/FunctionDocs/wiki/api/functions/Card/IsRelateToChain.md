@@ -22,4 +22,4 @@ The activating card and cards selected as targets with Duel.SetTargetCard or Due
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3563`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3566`

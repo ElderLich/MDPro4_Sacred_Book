@@ -21,7 +21,7 @@ This uses c's actual return destination and returns false when the card would go
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3589`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3592`
 
 ## Used By
 

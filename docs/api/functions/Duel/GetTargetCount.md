@@ -51,7 +51,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Barrage Blast | `51369889` | [Scripts/c51369889.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c51369889.lua) | 47 |
 | Gungnir, Dragon of the Ice Barrier | `65749035` | [Scripts/c65749035.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c65749035.lua) | 45 |
 | Brionac, Dragon of the Ice Barrier | `50321796` | [Scripts/c50321796.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c50321796.lua) | 44 |
-| Superdreadnought Rail Cannon Flying Launcher | `38354018` | [Scripts/c38354018.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c38354018.lua) | 42 |
+| Superdreadnought Rail Cannon Flying Launcher | `38354018` | [Scripts/c38354018.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c38354018.lua) | 43 |
 | Superheavy Samurai Steam Train King | `17775525` | [Scripts/c17775525.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c17775525.lua) | 41 |
 | XYZ Hyper Cannon | `21723081` | [Scripts/c21723081.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c21723081.lua) | 40 |
 | Predaplast | `72129804` | [Scripts/c72129804.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c72129804.lua) | 38 |

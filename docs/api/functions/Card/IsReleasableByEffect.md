@@ -20,7 +20,7 @@ Checks whether c can be Released by the current resolving effect, using the curr
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3596`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3599`
 
 ## Used By
 
@@ -50,10 +50,10 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Predaplant Ambulomelides | `66309175` | [Scripts/c66309175.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c66309175.lua) | 44 |
 | Megalith Notrah Plura | `44293356` | [Scripts/c44293356.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c44293356.lua) | 43 |
 | Starving Venom Predapower Fusion Dragon | `39915560` | [Scripts/c39915560.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c39915560.lua) | 43 |
+| Witchcrafter Marka | `6071005` | [Scripts/c6071005.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c6071005.lua) | 43 |
 | Starry Knight Orbitael | `44818` | [Scripts/c44818.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c44818.lua) | 43 |
 | Foie Glasya de Nouvelles | `15001940` | [Scripts/c15001940.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c15001940.lua) | 42 |
 | Confiras de Nouvelles | `53618197` | [Scripts/c53618197.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c53618197.lua) | 42 |
-| Witchcrafter Marka | `6071005` | [Scripts/c6071005.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c6071005.lua) | 42 |
 | Prima Light | `2507443` | [Scripts/c2507443.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c2507443.lua) | 42 |
 | ...and 19 more |  |  |  |
 

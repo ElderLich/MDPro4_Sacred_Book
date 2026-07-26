@@ -22,7 +22,7 @@ The core rejects Tokens, cards whose Xyz-material type is not a monster, cards w
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3642`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3645`
 
 ## Used By
 

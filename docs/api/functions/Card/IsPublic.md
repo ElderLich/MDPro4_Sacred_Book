@@ -20,7 +20,7 @@ Checks whether c is currently public to both players, represented by face-up pos
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3624`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3627`
 
 ## Used By
 

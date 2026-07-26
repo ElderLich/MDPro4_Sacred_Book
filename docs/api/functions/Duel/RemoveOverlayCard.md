@@ -84,7 +84,7 @@ Source: [Scripts/c33113958.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/
 ```lua
 end
 function s.thop2(e,tp,eg,ep,ev,re,r,rp)
-	if not Duel.CheckRemoveOverlayCard(tp,1,0,1,REASON_EFFECT) or not Duel.RemoveOverlayCard(tp,1,0,1,1,REASON_EFFECT) then return end
+	if not Duel.CheckRemoveOverlayCard(tp,1,0,1,REASON_EFFECT) or Duel.RemoveOverlayCard(tp,1,0,1,1,REASON_EFFECT)==0 then return end
 	Duel.Hint(HINT_SELECTMSG,tp,HINTMSG_ATOHAND)
 	local g=Duel.SelectMatchingCard(tp,aux.NecroValleyFilter(s.thfilter2),tp,LOCATION_GRAVE,0,1,1,nil)
 ```
@@ -96,7 +96,7 @@ Source: [Scripts/c23672629.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/
 ```lua
 function c23672629.desop(e,tp,eg,ep,ev,re,r,rp)
 	local tc=Duel.GetFirstTarget()
-	if Duel.RemoveOverlayCard(tp,1,0,1,1,REASON_EFFECT) and tc:IsRelateToEffect(e) then
+	if Duel.RemoveOverlayCard(tp,1,0,1,1,REASON_EFFECT)>0 and tc:IsRelateToEffect(e) then
 		Duel.Destroy(tc,REASON_EFFECT)
 	end
 ```

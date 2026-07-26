@@ -22,7 +22,7 @@ Sets the first matching flag effect label for code on c to label and returns whe
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3555`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3558`
 
 ## Used By
 

@@ -23,4 +23,4 @@ Checks whether c can be treated as any supplied setcode while used as Link Mater
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3397`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3400`

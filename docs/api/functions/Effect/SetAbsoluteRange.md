@@ -50,7 +50,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
 | Gouki Sheik Ogre | `7382007` | [Scripts/c7382007.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c7382007.lua) | 59 |
-| Unchained Enma Lord Yama | `94014327` | [Scripts/c94014327.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c94014327.lua) | 51 |
+| Unchained Enma Lord Yama | `94014327` | [Scripts/c94014327.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c94014327.lua) | 52 |
 | Performage Wind Drainer | `70417076` | [Scripts/c70417076.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c70417076.lua) | 46 |
 | Readying of Rites | `71771004` | [Scripts/c71771004.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c71771004.lua) | 43 |
 | Swordsoul Assessment | `78836195` | [Scripts/c78836195.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c78836195.lua) | 42 |

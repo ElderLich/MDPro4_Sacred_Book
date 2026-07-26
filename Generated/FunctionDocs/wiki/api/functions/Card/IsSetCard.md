@@ -21,4 +21,4 @@ Checks whether c belongs to any of the supplied set codes.
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3393`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3396`

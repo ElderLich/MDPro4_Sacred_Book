@@ -20,7 +20,7 @@ Checks whether c is currently on the field and is not being treated as off the f
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3609`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3612`
 
 ## Used By
 

@@ -18,7 +18,7 @@ Local core handling clears the completed-procedure status when the card moves to
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3568`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3571`
 
 ## Used By
 

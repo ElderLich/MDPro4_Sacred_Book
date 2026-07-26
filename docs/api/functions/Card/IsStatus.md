@@ -22,7 +22,7 @@ Common legality checks use this for temporary engine states such as STATUS_BATTL
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3504`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3507`
 
 ## Used By
 
@@ -56,7 +56,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Laevateinn the Burning Blade | `6260560` | [Scripts/c6260560.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c6260560.lua) | 53 |
 | Sea Lancer | `22842214` | [Scripts/c22842214.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c22842214.lua) | 53 |
 | Dual Avatar Feet - Armored Un-Gyo | `7631534` | [Scripts/c7631534.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c7631534.lua) | 52 |
-| Amaze Attraction Thrill Train | `36591747` | [Scripts/c36591747.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c36591747.lua) | 52 |
+| Unchained Enma Lord Yama | `94014327` | [Scripts/c94014327.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c94014327.lua) | 52 |
 | ...and 432 more |  |  |  |
 
 ## Script Examples

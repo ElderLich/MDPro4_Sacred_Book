@@ -20,7 +20,7 @@ Returns c's original card-data type bitmask, not its current modified type.
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3400`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3403`
 
 ## Used By
 
@@ -48,11 +48,11 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Dimonno Vaalmonica | `30432463` | [Scripts/c30432463.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c30432463.lua) | 53 |
 | Crystron Halqifibrax Prism | `65400671` | [Scripts/c65400671.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c65400671.lua) | 53 |
 | Millennium-Eyes Restrict | `41578483` | [Scripts/c41578483.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c41578483.lua) | 53 |
+| Card 24056179 | `24056179` | [Scripts/c24056179.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c24056179.lua) | 53 |
 | Enneacraft Reverth | `80015408` | [Scripts/c80015408.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c80015408.lua) | 52 |
 | Zebufera, Vaalmonican Hallow Heathen | `2815176` | [Scripts/c2815176.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c2815176.lua) | 52 |
 | Emblema Salvation | `61950680` | [Scripts/c61950680.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c61950680.lua) | 52 |
 | Cynet Backdoor | `43839002` | [Scripts/c43839002.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c43839002.lua) | 52 |
-| Card 24056179 | `24056179` | [Scripts/c24056179.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c24056179.lua) | 52 |
 | Performage Ball Balancer | `92530005` | [Scripts/c92530005.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c92530005.lua) | 51 |
 | Shade the Obscure | `77157846` | [Scripts/c77157846.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c77157846.lua) | 51 |
 | ...and 139 more |  |  |  |

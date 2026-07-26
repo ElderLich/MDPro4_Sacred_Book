@@ -23,4 +23,4 @@ Registration also makes c the effect handler. If the card is unaffected by the c
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3548`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3551`

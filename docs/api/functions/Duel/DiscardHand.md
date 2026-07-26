@@ -33,7 +33,7 @@ Cards in ex are excluded. Extra arguments after ex are passed to filter f.
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **625** indexed script(s).
+- Detected in **624** indexed script(s).
 - Search this function in the [Script Explorer](/tools/script-explorer) with `Duel.DiscardHand`.
 
 | Card | ID | Script | Detected Calls |
@@ -62,7 +62,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Dimonno Vaalmonica | `30432463` | [Scripts/c30432463.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c30432463.lua) | 53 |
 | Sudden Thunder Swamp | `23611122` | [Scripts/c23611122.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c23611122.lua) | 53 |
 | Abyssrhine, the Atlantean Spirit | `17080584` | [Scripts/c17080584.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c17080584.lua) | 52 |
-| ...and 601 more |  |  |  |
+| ...and 600 more |  |  |  |
 
 ## Script Examples
 

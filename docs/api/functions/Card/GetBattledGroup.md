@@ -20,7 +20,7 @@ Returns the Group of cards that c has battled.
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3532`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3535`
 
 ## Used By
 

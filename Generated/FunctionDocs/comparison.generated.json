@@ -1,5 +1,7 @@
 {
-  "added_vs_dataeditorx_functions": [],
+  "added_vs_dataeditorx_functions": [
+    "Card.Metallization_material"
+  ],
   "dropped_vs_dataeditorx_functions": [],
   "core_bound_functions": [
     "Card.AddCounter",
@@ -998,6 +1000,7 @@
     "Auxiliary.AddFusionProcMix"
   ],
   "stub_only_functions": [
+    "Card.Metallization_material",
     "Card.branded_fusion_check",
     "Card.cyber_fusion_check",
     "Card.destruction_swordsman_fusion_check",

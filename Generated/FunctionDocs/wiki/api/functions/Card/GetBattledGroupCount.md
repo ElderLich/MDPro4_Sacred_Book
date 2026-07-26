@@ -20,4 +20,4 @@ Returns the number of cards currently recorded in c's battled-cards set.
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3533`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3536`

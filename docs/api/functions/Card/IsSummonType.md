@@ -21,7 +21,7 @@ Checks whether c's recorded Summon type includes every flag in sumtype.
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3501`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3504`
 
 ## Used By
 

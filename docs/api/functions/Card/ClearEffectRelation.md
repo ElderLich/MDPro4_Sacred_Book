@@ -16,7 +16,7 @@ Clears all effect relations currently stored on c.
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3561`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3564`
 
 ## Used By
 

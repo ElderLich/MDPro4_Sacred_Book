@@ -21,7 +21,7 @@ Checks whether c1 currently has a relation to c2.
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3564`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3567`
 
 ## Used By
 

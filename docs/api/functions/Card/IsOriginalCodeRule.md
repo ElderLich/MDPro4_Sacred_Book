@@ -24,7 +24,7 @@ Nil code arguments are skipped. For double-code cards, the core checks both rule
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3479`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3482`
 
 ## Used By
 

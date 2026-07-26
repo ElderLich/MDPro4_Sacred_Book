@@ -21,7 +21,7 @@ Checks whether c has a nonzero Link Rating greater than or equal to link.
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3617`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3620`
 
 ## Used By
 

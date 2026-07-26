@@ -21,7 +21,7 @@ Checks whether c's type while used as Synchro Material contains type.
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3484`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3487`
 
 ## Used By
 

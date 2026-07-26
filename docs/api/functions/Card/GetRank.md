@@ -21,7 +21,7 @@ Non-Xyz cards return 0. Xyz Monsters outside the Monster Zone return their origi
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3406`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3409`
 
 ## Used By
 

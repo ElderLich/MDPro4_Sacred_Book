@@ -20,7 +20,7 @@ Returns the Type value recorded for c's previous on-field state.
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3447`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3450`
 
 ## Used By
 

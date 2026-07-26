@@ -20,7 +20,7 @@ Returns c's first persistent card target, or nil.
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3538`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3541`
 
 ## Used By
 

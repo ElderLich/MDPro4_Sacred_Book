@@ -5,7 +5,7 @@ Generated from ygopro-core bindings, `Define/def.lua`, `Utilities/utility.lua`, 
 ## Namespaces
 
 - [Auxiliary](Auxiliary/) (365)
-- [Card](Card/) (286)
+- [Card](Card/) (287)
 - [Debug](Debug/) (11)
 - [Duel](Duel/) (229)
 - [Effect](Effect/) (55)
@@ -646,6 +646,7 @@ Generated from ygopro-core bindings, `Define/def.lua`, `Utilities/utility.lua`, 
 - [Card.IsXyzType](Card/IsXyzType.md)
 - [Card.mat_filter](Card/mat_filter.md)
 - [Card.mat_group_check](Card/mat_group_check.md)
+- [Card.Metallization_material](Card/Metallization_material.md)
 - [Card.red_eyes_fusion_check](Card/red_eyes_fusion_check.md)
 - [Card.RegisterEffect](Card/RegisterEffect.md)
 - [Card.RegisterFlagEffect](Card/RegisterFlagEffect.md)

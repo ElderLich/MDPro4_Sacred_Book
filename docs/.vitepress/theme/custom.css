@@ -1,6 +1,14 @@
 :root {
-  --vp-layout-max-width: 1680px;
+  --vp-layout-max-width: 1920px;
   --vp-sidebar-width: 300px;
+}
+
+.VPDoc:not(.has-sidebar) .container {
+  max-width: min(1440px, calc(100vw - 64px)) !important;
+}
+
+.VPDoc:not(.has-sidebar) .content {
+  max-width: none !important;
 }
 
 .VPDoc .content-container {
@@ -444,7 +452,25 @@
   color: var(--vp-c-brand-1);
 }
 
+@media (max-width: 1000px) {
+  .home-choice-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .home-stepper {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .home-branch-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
 @media (max-width: 760px) {
+  .VPDoc:not(.has-sidebar) .container {
+    max-width: 100% !important;
+  }
+
   .VPDoc .content-container,
   .VPDoc.has-aside .content-container {
     max-width: 100% !important;

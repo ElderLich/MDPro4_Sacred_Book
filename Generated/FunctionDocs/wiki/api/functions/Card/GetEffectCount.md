@@ -21,4 +21,4 @@ Returns the number of effects with code currently found by c's effect filter.
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3551`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3554`

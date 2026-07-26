@@ -22,7 +22,7 @@ Checks whether c can be used as Synchro Material for scard, with tuner supplied 
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3640`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3643`
 
 ## Used By
 

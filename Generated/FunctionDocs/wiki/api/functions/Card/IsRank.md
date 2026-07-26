@@ -24,4 +24,4 @@ Nil rank arguments are skipped. The binding compares the numeric Rank directly; 
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3488`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3491`

@@ -77,7 +77,7 @@ Parameters:
   singly: bool optional - default: false
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3628
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3631
 
 ●void Card.AddMonsterAttribute(Card c, int type, [int attribute], [int race], [int level], [int atk], [int def])
 Adds temporary monster properties to c through effects.
@@ -90,7 +90,7 @@ Parameters:
   level: int optional - default: 0
   atk: int optional - default: 0
   def: int optional - default: 0
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3650
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3653
 
 ●void Card.AssumeProperty(Card c, int assume_type, int assume_value)
 Temporarily assumes one property of c for core checks.
@@ -99,14 +99,14 @@ Parameters:
   c: Card
   assume_type: int
   assume_value: int
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3660
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3663
 
 ●void Card.CancelCardTarget(Card c, Card target)
 Removes target from c's persistent card-target relation list.
 Parameters:
   c: Card
   target: Card
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3541
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3544
 
 ●void Card.CancelToGrave(Card c, [bool cancel])
 Cancels the confirmed-to-Graveyard state for c. If cancel is false, sets that state again.
@@ -115,7 +115,7 @@ Use this helper to keep such cards on the field, as with Swords of Revealing Lig
 Parameters:
   c: Card
   cancel: bool optional - default: true
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3651
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3654
 
 ●Effect|nil,Group|nil,int|nil,int|nil,Effect|nil,int|nil,int|nil Card.CheckActivateEffect(Card c, bool neglect_con, bool neglect_cost, bool copy_info)
 Checks whether c has an activation effect that can currently be activated.
@@ -135,7 +135,7 @@ Returns:
   Effect|nil - re when copy_info returns event data.
   int|nil - r when copy_info returns event data.
   int|nil - rp when copy_info returns event data.
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3545
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3548
 
 ●bool Card.CheckEquipTarget(Card c1, Card c2)
 Checks whether c2 is a valid Equip target for c1.
@@ -146,7 +146,7 @@ Parameters:
   c2: Card
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3521
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3524
 
 ●bool Card.CheckFusionMaterial(Card c, [Group|nil g], [Card|nil gc], [int chkf], [bool not_material])
 Checks whether c's Fusion Material requirements can be satisfied by g, optionally requiring gc to be included.
@@ -159,7 +159,7 @@ Parameters:
   not_material: bool optional - default: false
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3644
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3647
 
 ●bool Card.CheckFusionSubstitute(Card c, Card fcard)
 Checks whether c can substitute for a specifically named Fusion Material listed by Fusion Monster fcard.
@@ -168,7 +168,7 @@ Parameters:
   fcard: Card
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3645
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3648
 
 ●bool Card.CheckRemoveOverlayCard(Card c, int player, int count, int reason)
 Checks whether player can remove at least count Xyz Materials from c for reason.
@@ -180,7 +180,7 @@ Parameters:
   reason: int
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3527
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3530
 
 ●bool Card.CheckUnionTarget(Card c, Card target)
 Checks whether target is a valid Union equip target for c under EFFECT_UNION_LIMIT.
@@ -190,7 +190,7 @@ Parameters:
   target: Card
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3522
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3525
 
 ●bool Card.CheckUniqueOnField(Card c, int check_player, [int check_location], [Card|nil icard])
 Checks whether c can coexist on check_player's field under the current unique-on-field rules.
@@ -202,13 +202,13 @@ Parameters:
   icard: Card|nil optional - Optional card ignored during the check, useful when testing a pending replacement or move.
 Returns:
   bool - True if c can coexist under the unique-on-field rules for the requested player and location.
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3658
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3661
 
 ●void Card.ClearEffectRelation(Card c)
 Clears all effect relations currently stored on c.
 Parameters:
   c: Card
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3561
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3564
 
 ●void Card.CompleteProcedure(Card c)
 Marks c as having completed its proper Summon procedure.
@@ -216,7 +216,7 @@ Use this after a resolving effect successfully performs a proper Summon for a re
 Do not call this for ordinary revive effects. Normal rule procedures registered with EFFECT_SPSUMMON_PROC are completed by the core after the procedure succeeds.
 Parameters:
   c: Card - Card whose proper Summon status is being completed.
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3569
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3572
 
 ●int Card.CopyEffect(Card c, int code, int reset, [int count])
 Copies the initial_effect of card code onto c and returns the generated copy id, or -1 if code belongs to a Normal Monster.
@@ -228,7 +228,7 @@ Parameters:
   count: int optional - default: 1
 Returns:
   int
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3566
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3569
 
 ●void Card.CreateEffectRelation(Card c, Effect e)
 Creates a relation between c and effect e.
@@ -236,7 +236,7 @@ If e is the triggering effect of a current Chain Link, the relation is tied to t
 Parameters:
   c: Card
   e: Effect
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3559
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3562
 
 ●void Card.CreateRelation(Card c1, Card c2, int reset)
 Creates a relation from c1 to c2 that is cleared by reset.
@@ -244,7 +244,7 @@ Parameters:
   c1: Card
   c2: Card
   reset: int
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3557
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3560
 
 ●void Card.EnableCounterPermit(Card c, int countertype, [int location], [function condition])
 Registers a single-card counter permit effect allowing c to receive counters of countertype in the chosen range.
@@ -254,7 +254,7 @@ Parameters:
   countertype: int - Counter type that c is allowed to hold.
   location: int optional - Single-effect range for the permit. Omitted defaults to LOCATION_MZONE for monsters, otherwise LOCATION_SZONE + LOCATION_FZONE.
   condition: function optional - Optional condition callback stored on the permit effect; ignored unless this argument is a function.
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3631
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3634
 
 ●void Card.EnableDualState(Card c)
 Registers EFFECT_DUAL_STATUS on c so local Gemini/Dual checks treat it as having gained its effects.
@@ -262,7 +262,7 @@ This does not perform a Normal Summon or spend a Normal Summon. Use it only for 
 The registered status effect includes the local client hint and resets with the normal card event reset.
 Parameters:
   c: Card - Gemini Monster that should immediately gain Dual State.
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3511
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3514
 
 ●void Card.EnableReviveLimit(Card c)
 Marks c as needing to be properly Summoned before ordinary Special Summon effects can bring it back from public locations.
@@ -270,7 +270,7 @@ The core registers an EFFECT_REVIVE_LIMIT effect on c. Pair this with the card's
 Local core handling clears the completed-procedure status when the card moves to the hand or Deck.
 Parameters:
   c: Card - Card that should require a proper Summon before ordinary revive effects can Special Summon it.
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3568
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3571
 
 ●Effect|nil Card.GetActivateEffect(Card c)
 Returns c's activation effect, the effect with type EFFECT_TYPE_ACTIVATE. This is mainly used for Spell/Trap Cards.
@@ -280,7 +280,7 @@ Parameters:
   c: Card
 Returns:
   Effect|nil - The activation effect registered on c, or nil if none is registered.
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3544
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3547
 
 ●int Card.GetAttack(Card c)
 Returns c's current ATK, with unknown or negative ATK reported as 0.
@@ -288,7 +288,7 @@ Parameters:
   c: Card
 Returns:
   int
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3440
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3443
 
 ●Group,bool Card.GetAttackableTarget(Card c)
 Returns the Group of cards c can attack and a boolean indicating whether c can attack directly.
@@ -297,7 +297,7 @@ Parameters:
 Returns:
   Group - Attackable monsters.
   bool - Whether c can attack directly.
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3654
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3657
 
 ●int Card.GetAttackAnnouncedCount(Card c)
 Returns c's attack declaration count.
@@ -305,7 +305,7 @@ Parameters:
   c: Card
 Returns:
   int
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3534
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3537
 
 ●int Card.GetAttackedCount(Card c)
 Returns c's attack count for the current turn.
@@ -313,7 +313,7 @@ Parameters:
   c: Card
 Returns:
   int
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3531
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3534
 
 ●Group Card.GetAttackedGroup(Card c)
 Returns the Group of cards that c has attacked.
@@ -321,7 +321,7 @@ Parameters:
   c: Card
 Returns:
   Group
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3529
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3532
 
 ●int Card.GetAttackedGroupCount(Card c)
 Returns the number of attack records stored for c.
@@ -329,7 +329,7 @@ Parameters:
   c: Card
 Returns:
   int
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3530
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3533
 
 ●int Card.GetAttribute(Card c)
 Returns c's current Attribute bitmask.
@@ -338,7 +338,7 @@ Parameters:
   c: Card
 Returns:
   int
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3431
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3434
 
 ●int Card.GetAttributeInGrave(Card c, [int player])
 Returns the Attribute c is treated as having in the GY for player, defaulting to the current reason player.
@@ -347,7 +347,7 @@ Parameters:
   player: int optional - default: current reason player
 Returns:
   int
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3435
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3438
 
 ●int Card.GetBaseAttack(Card c)
 Returns c's current base ATK, with unknown or negative ATK reported as 0.
@@ -355,7 +355,7 @@ Parameters:
   c: Card
 Returns:
   int
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3441
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3444
 
 ●int Card.GetBaseDefense(Card c)
 Returns c's current base DEF. Unknown or negative base DEF values are clamped to 0 by this binding.
@@ -363,7 +363,7 @@ Parameters:
   c: Card
 Returns:
   int
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3444
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3447
 
 ●Group Card.GetBattledGroup(Card c)
 Returns the Group of cards that c has battled.
@@ -371,7 +371,7 @@ Parameters:
   c: Card
 Returns:
   Group
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3532
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3535
 
 ●int Card.GetBattledGroupCount(Card c)
 Returns the number of cards currently recorded in c's battled-cards set.
@@ -379,7 +379,7 @@ Parameters:
   c: Card
 Returns:
   int
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3533
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3536
 
 ●int Card.GetBattlePosition(Card c)
 Returns c's temporary battle-position snapshot.
@@ -387,7 +387,7 @@ Parameters:
   c: Card
 Returns:
   int
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3465
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3468
 
 ●Card|nil Card.GetBattleTarget(Card c)
 Returns the monster currently battling c, or nil if c is not the current attacker or attack target.
@@ -395,7 +395,7 @@ Parameters:
   c: Card
 Returns:
   Card|nil - The monster battling c, or nil.
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3653
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3656
 
 ●Group Card.GetCardTarget(Card c)
 Returns a Group containing all persistent card targets currently recorded on c.
@@ -403,7 +403,7 @@ Parameters:
   c: Card
 Returns:
   Group
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3537
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3540
 
 ●int Card.GetCardTargetCount(Card c)
 Returns the number of persistent card targets currently recorded on c.
@@ -411,7 +411,7 @@ Parameters:
   c: Card
 Returns:
   int
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3539
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3542
 
 ●int,int|nil Card.GetCode(Card c)
 Returns c's current card code and, when present, its secondary code.
@@ -420,7 +420,7 @@ Parameters:
 Returns:
   int
   int|nil
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3386
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3389
 
 ●Group Card.GetColumnGroup(Card c)
 Returns a Group containing cards in the same column as c.
@@ -429,7 +429,7 @@ Parameters:
   c: Card
 Returns:
   Group
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3427
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3430
 
 ●int Card.GetColumnGroupCount(Card c)
 Returns the number of cards in columns overlapping c.
@@ -437,7 +437,7 @@ Parameters:
   c: Card
 Returns:
   int
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3428
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3431
 
 ●int Card.GetColumnZone(Card c, int loc, [int player])
 Returns the zone bitmask for columns overlapping c within loc.
@@ -448,7 +448,7 @@ Parameters:
   player: int optional
 Returns:
   int
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3429
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3432
 
 ●int Card.GetControler(Card c)
 Returns c's current controller.
@@ -456,7 +456,7 @@ Parameters:
   c: Card
 Returns:
   int
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3456
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3459
 
 ●int Card.GetCounter(Card c, int countertype)
 Returns counters on c for countertype.
@@ -466,7 +466,7 @@ Parameters:
   countertype: int
 Returns:
   int
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3630
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3633
 
 ●int Card.GetCurrentScale(Card c)
 Returns the Pendulum Scale c currently uses.
@@ -475,7 +475,7 @@ Parameters:
   c: Card
 Returns:
   int
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3417
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3420
 
 ●int Card.GetDefense(Card c)
 Returns c's current DEF. Unknown or negative DEF values are clamped to 0 by this binding.
@@ -483,7 +483,7 @@ Parameters:
   c: Card
 Returns:
   int
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3443
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3446
 
 ●int Card.GetDestination(Card c)
 Returns the destination location currently stored in c's send-to parameters.
@@ -491,7 +491,7 @@ Parameters:
   c: Card
 Returns:
   int
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3474
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3477
 
 ●int Card.GetEffectCount(Card c, int code)
 Returns the number of effects with code currently found by c's effect filter.
@@ -500,7 +500,7 @@ Parameters:
   code: int
 Returns:
   int
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3551
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3554
 
 ●int Card.GetEquipCount(Card c)
 Returns the number of Equip Cards currently equipped to c.
@@ -508,7 +508,7 @@ Parameters:
   c: Card
 Returns:
   int
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3518
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3521
 
 ●Group Card.GetEquipGroup(Card c)
 Returns the Equip Cards currently equipped to c as a Group.
@@ -516,7 +516,7 @@ Parameters:
   c: Card
 Returns:
   Group
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3517
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3520
 
 ●Card|nil Card.GetEquipTarget(Card c)
 Returns the card that c is currently equipped to, or nil if c has no equip target.
@@ -525,7 +525,7 @@ Parameters:
   c: Card
 Returns:
   Card|nil
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3519
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3522
 
 ●int Card.GetFieldID(Card c)
 Returns c's current field ID, the core timestamp assigned when c moved to its current place.
@@ -534,7 +534,7 @@ Parameters:
   c: Card - Card whose current field ID is returned.
 Returns:
   int - Current field ID assigned by the core for c's current field identity.
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3477
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3480
 
 ●Card|nil Card.GetFirstCardTarget(Card c)
 Returns c's first persistent card target, or nil.
@@ -542,7 +542,7 @@ Parameters:
   c: Card
 Returns:
   Card|nil
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3538
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3541
 
 ●int Card.GetFlagEffect(Card c, int code)
 Returns how many flag effects with code are registered on c.
@@ -552,7 +552,7 @@ Parameters:
   code: int - Flag-effect code; the core masks it with MAX_CARD_ID and adds EFFECT_FLAG_EFFECT.
 Returns:
   int - Number of matching flag effects on c.
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3553
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3556
 
 ●int|nil,...? Card.GetFlagEffectLabel(Card c, int code)
 Returns the first label value from each flag effect with the given code on c.
@@ -564,7 +564,7 @@ Parameters:
 Returns:
   int|nil - First label value, or nil if no matching flag effect exists.
   ...? - Additional integer label values from additional matching flag effects.
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3556
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3559
 
 ●int Card.GetFusionAttribute(Card c, [int player])
 Returns the Attribute c uses as Fusion Material for player, defaulting to the current reason player.
@@ -573,7 +573,7 @@ Parameters:
   player: int optional - default: current reason player
 Returns:
   int
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3433
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3436
 
 ●int,...? Card.GetFusionCode(Card c)
 Returns c's Fusion Material codes: current code, second code when present, then EFFECT_ADD_FUSION_CODE values.
@@ -583,7 +583,7 @@ Parameters:
 Returns:
   int - Current code.
   ...? - Additional Fusion Material code values, if any.
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3389
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3392
 
 ●int Card.GetFusionType(Card c)
 Returns c's Fusion Material Type mask used by Fusion Material checks.
@@ -591,7 +591,7 @@ Parameters:
   c: Card
 Returns:
   int
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3401
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3404
 
 ●Effect|nil,function|nil,int|nil,int|nil Card.GetHandSynchro(Card c)
 Returns the hand-Synchro enabling effect on c, its target function, and the min/max hand-material counts.
@@ -603,7 +603,7 @@ Returns:
   function|nil - Effect target function.
   int|nil - Minimum hand-material count.
   int|nil - Maximum hand-material count.
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3547
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3550
 
 ●int Card.GetLeaveFieldDest(Card c)
 Returns the location c would be redirected to by leave-field effects for REASON_EFFECT.
@@ -611,7 +611,7 @@ Parameters:
   c: Card
 Returns:
   int
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3475
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3478
 
 ●int Card.GetLeftScale(Card c)
 Returns c's current left Pendulum Scale value.
@@ -620,7 +620,7 @@ Parameters:
   c: Card
 Returns:
   int - Current left Pendulum Scale value.
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3413
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3416
 
 ●int Card.GetLevel(Card c)
 Returns c's current Level.
@@ -628,7 +628,7 @@ Parameters:
   c: Card
 Returns:
   int
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3405
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3408
 
 ●int Card.GetLink(Card c)
 Returns c's Link Rating, or 0 if c is not a Link Monster.
@@ -636,7 +636,7 @@ Parameters:
   c: Card
 Returns:
   int
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3407
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3410
 
 ●int Card.GetLinkAttribute(Card c, [int player])
 Returns the Attribute c uses as Link Material for player, defaulting to the current reason player.
@@ -645,7 +645,7 @@ Parameters:
   player: int optional - default: current reason player
 Returns:
   int
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3434
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3437
 
 ●int,...? Card.GetLinkCode(Card c)
 Returns c's Link Material codes: current code, second code when present, then EFFECT_ADD_LINK_CODE values.
@@ -654,7 +654,7 @@ Parameters:
 Returns:
   int - Current code.
   ...? - Additional Link Material code values, if any.
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3390
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3393
 
 ●Group Card.GetLinkedGroup(Card c)
 Returns the cards currently occupying zones linked by c.
@@ -663,7 +663,7 @@ Parameters:
   c: Card
 Returns:
   Group - Cards currently in c's linked zones.
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3419
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3422
 
 ●int Card.GetLinkedGroupCount(Card c)
 Returns the number of cards in zones linked by c.
@@ -671,7 +671,7 @@ Parameters:
   c: Card
 Returns:
   int
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3420
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3423
 
 ●int Card.GetLinkedZone(Card c, [int player])
 Returns the linked-zone bitmask generated by c.
@@ -682,7 +682,7 @@ Parameters:
   player: int optional - Perspective player for the returned zone mask. Default: c's controller.
 Returns:
   int - Linked-zone bitmask from the requested perspective.
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3421
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3424
 
 ●int Card.GetLinkRace(Card c, [int player])
 Returns the Race c uses as Link Material for player, defaulting to the current reason player.
@@ -691,7 +691,7 @@ Parameters:
   player: int optional - default: current reason player
 Returns:
   int
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3438
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3441
 
 ●int Card.GetLinkType(Card c)
 Returns c's Link Material Type mask used by Link Material checks.
@@ -699,7 +699,7 @@ Parameters:
   c: Card
 Returns:
   int
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3404
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3407
 
 ●int Card.GetLocation(Card c)
 Returns c's current location, or 0 if c is currently treated as not being on the field.
@@ -707,7 +707,7 @@ Parameters:
   c: Card
 Returns:
   int
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3466
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3469
 
 ●Group Card.GetMaterial(Card c)
 Returns a Group containing the cards currently stored as c's material cards.
@@ -715,7 +715,7 @@ Parameters:
   c: Card - Card whose stored material list is being read.
 Returns:
   Group - New Group containing c's stored material cards; the Group is empty if no material cards are stored.
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3515
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3518
 
 ●int Card.GetMaterialCount(Card c)
 Returns the number of cards currently recorded as c's materials.
@@ -723,7 +723,7 @@ Parameters:
   c: Card
 Returns:
   int
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3516
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3519
 
 ●Group Card.GetMutualLinkedGroup(Card c)
 Returns the Group of cards mutually linked with c.
@@ -731,7 +731,7 @@ Parameters:
   c: Card
 Returns:
   Group
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3422
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3425
 
 ●int Card.GetMutualLinkedGroupCount(Card c)
 Returns the number of cards mutually linked with c.
@@ -739,7 +739,7 @@ Parameters:
   c: Card
 Returns:
   int
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3423
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3426
 
 ●int Card.GetMutualLinkedZone(Card c, [int player])
 Returns the zone mask of c's mutually linked zones, swapped to player viewpoint when a player argument opposite c's controller is supplied.
@@ -748,7 +748,7 @@ Parameters:
   player: int optional - default: c:GetControler()
 Returns:
   int
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3424
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3427
 
 ●int Card.GetOriginalAttribute(Card c)
 Returns c's original Attribute from card data, or 0 while c is marked with STATUS_NO_LEVEL.
@@ -756,7 +756,7 @@ Parameters:
   c: Card
 Returns:
   int
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3432
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3435
 
 ●int Card.GetOriginalCode(Card c)
 Returns c's original card code from card data.
@@ -764,7 +764,7 @@ Parameters:
   c: Card
 Returns:
   int
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3387
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3390
 
 ●int,int|nil Card.GetOriginalCodeRule(Card c)
 Returns c's rule-original card code.
@@ -774,7 +774,7 @@ Parameters:
 Returns:
   int - Primary rule-original code.
   int|nil - Second rule code, when present.
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3388
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3391
 
 ●int Card.GetOriginalLeftScale(Card c)
 Returns c's printed left Pendulum Scale.
@@ -782,7 +782,7 @@ Parameters:
   c: Card
 Returns:
   int
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3414
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3417
 
 ●int Card.GetOriginalLevel(Card c)
 Returns c's original Level from card data, or 0 for Xyz Monsters, Link Monsters, and cards marked with STATUS_NO_LEVEL.
@@ -790,7 +790,7 @@ Parameters:
   c: Card
 Returns:
   int
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3410
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3413
 
 ●int Card.GetOriginalRace(Card c)
 Returns c's original Race from card data, or 0 while c is marked with STATUS_NO_LEVEL.
@@ -798,7 +798,7 @@ Parameters:
   c: Card
 Returns:
   int
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3437
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3440
 
 ●int Card.GetOriginalRank(Card c)
 Returns c's printed Rank from card data, or 0 if c is not an Xyz Monster.
@@ -806,7 +806,7 @@ Parameters:
   c: Card
 Returns:
   int
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3411
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3414
 
 ●int Card.GetOriginalRightScale(Card c)
 Returns c's printed right Pendulum Scale.
@@ -814,7 +814,7 @@ Parameters:
   c: Card
 Returns:
   int
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3416
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3419
 
 ●int Card.GetOriginalType(Card c)
 Returns c's original card-data type bitmask, not its current modified type.
@@ -822,7 +822,7 @@ Parameters:
   c: Card
 Returns:
   int
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3400
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3403
 
 ●int Card.GetOverlayCount(Card c)
 Returns the number of current Xyz Materials attached to c.
@@ -830,7 +830,7 @@ Parameters:
   c: Card
 Returns:
   int
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3525
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3528
 
 ●Group Card.GetOverlayGroup(Card c)
 Returns a Group containing the cards currently attached to c as Xyz Materials.
@@ -838,7 +838,7 @@ Parameters:
   c: Card
 Returns:
   Group
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3524
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3527
 
 ●Card Card.GetOverlayTarget(Card c)
 Returns the card that c is attached to as an Xyz Material, or nil when c is not attached.
@@ -846,7 +846,7 @@ Parameters:
   c: Card
 Returns:
   Card
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3526
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3529
 
 ●int Card.GetOwner(Card c)
 Returns c's original owner player.
@@ -854,7 +854,7 @@ Parameters:
   c: Card
 Returns:
   int
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3455
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3458
 
 ●Group Card.GetOwnerTarget(Card c)
 Returns the Group of cards that are targeting c as their persistent card-target owner.
@@ -862,7 +862,7 @@ Parameters:
   c: Card
 Returns:
   Group
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3542
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3545
 
 ●int Card.GetOwnerTargetCount(Card c)
 Returns the number of cards targeting c as their persistent card-target owner.
@@ -870,7 +870,7 @@ Parameters:
   c: Card
 Returns:
   int
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3543
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3546
 
 ●int Card.GetPosition(Card c)
 Returns c's current position value.
@@ -878,7 +878,7 @@ Parameters:
   c: Card
 Returns:
   int
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3463
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3466
 
 ●int Card.GetPreviousAttackOnField(Card c)
 Returns the ATK value recorded for c's previous on-field state.
@@ -886,7 +886,7 @@ Parameters:
   c: Card
 Returns:
   int
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3452
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3455
 
 ●int Card.GetPreviousAttributeOnField(Card c)
 Returns the Attribute value recorded for c's previous on-field state.
@@ -894,7 +894,7 @@ Parameters:
   c: Card
 Returns:
   int
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3450
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3453
 
 ●int,int|nil Card.GetPreviousCodeOnField(Card c)
 Returns the card code recorded for c's previous on-field state.
@@ -904,7 +904,7 @@ Parameters:
 Returns:
   int
   int|nil - Second previous code, when present.
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3446
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3449
 
 ●int Card.GetPreviousControler(Card c)
 Returns c's previous controller value.
@@ -912,7 +912,7 @@ Parameters:
   c: Card
 Returns:
   int
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3457
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3460
 
 ●int Card.GetPreviousDefenseOnField(Card c)
 Returns the DEF value c had while it was previously on the field.
@@ -920,7 +920,7 @@ Parameters:
   c: Card
 Returns:
   int
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3453
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3456
 
 ●Card|nil Card.GetPreviousEquipTarget(Card c)
 Returns c's previous Equip target, or nil.
@@ -929,7 +929,7 @@ Parameters:
   c: Card
 Returns:
   Card|nil
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3520
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3523
 
 ●int Card.GetPreviousLevelOnField(Card c)
 Returns the Level value c had while it was previously on the field.
@@ -937,7 +937,7 @@ Parameters:
   c: Card
 Returns:
   int
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3448
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3451
 
 ●int Card.GetPreviousLocation(Card c)
 Returns c's previous location bitmask from before its last location change.
@@ -945,7 +945,7 @@ Parameters:
   c: Card
 Returns:
   int
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3467
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3470
 
 ●int Card.GetPreviousOverlayCountOnField(Card c)
 Returns the number of cards that were overlaid on c while it was previously on the field.
@@ -953,7 +953,7 @@ Parameters:
   c: Card
 Returns:
   int
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3454
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3457
 
 ●int Card.GetPreviousPosition(Card c)
 Returns c's previously recorded position value.
@@ -961,7 +961,7 @@ Parameters:
   c: Card
 Returns:
   int
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3464
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3467
 
 ●int Card.GetPreviousRaceOnField(Card c)
 Returns the Race value recorded for c's previous on-field state.
@@ -969,7 +969,7 @@ Parameters:
   c: Card
 Returns:
   int
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3451
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3454
 
 ●int Card.GetPreviousRankOnField(Card c)
 Returns the Rank value c had while it was previously on the field.
@@ -977,7 +977,7 @@ Parameters:
   c: Card
 Returns:
   int
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3449
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3452
 
 ●int Card.GetPreviousSequence(Card c)
 Returns c's previous sequence value.
@@ -985,7 +985,7 @@ Parameters:
   c: Card
 Returns:
   int
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3469
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3472
 
 ●int Card.GetPreviousTypeOnField(Card c)
 Returns the Type value recorded for c's previous on-field state.
@@ -993,7 +993,7 @@ Parameters:
   c: Card
 Returns:
   int
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3447
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3450
 
 ●int Card.GetRace(Card c)
 Returns c's current Race value. Cards with multiple Races can return a bitmask containing more than one Race.
@@ -1001,7 +1001,7 @@ Parameters:
   c: Card
 Returns:
   int
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3436
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3439
 
 ●int Card.GetRaceInGrave(Card c, [int reasonPlayer])
 Returns the Race c is treated as having in the GY for player, defaulting to the current reason player.
@@ -1010,7 +1010,7 @@ Parameters:
   reasonPlayer: int optional
 Returns:
   int
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3439
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3442
 
 ●int Card.GetRank(Card c)
 Returns c's current Rank.
@@ -1019,7 +1019,7 @@ Parameters:
   c: Card
 Returns:
   int
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3406
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3409
 
 ●int Card.GetRealFieldID(Card c)
 Returns c's real field ID, the core field identifier used for relation tracking.
@@ -1027,7 +1027,7 @@ Parameters:
   c: Card
 Returns:
   int
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3478
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3481
 
 ●int Card.GetReason(Card c)
 Returns c's current reason bitmask/value.
@@ -1036,7 +1036,7 @@ Parameters:
   c: Card
 Returns:
   int
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3459
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3462
 
 ●Card|nil Card.GetReasonCard(Card c)
 Returns c's current reason card, or nil when no reason card is recorded.
@@ -1044,7 +1044,7 @@ Parameters:
   c: Card
 Returns:
   Card|nil
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3460
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3463
 
 ●Effect|nil Card.GetReasonEffect(Card c)
 Returns c's current reason effect, or nil when no reason effect is recorded.
@@ -1052,7 +1052,7 @@ Parameters:
   c: Card
 Returns:
   Effect|nil
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3462
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3465
 
 ●int Card.GetReasonPlayer(Card c)
 Returns c's current reason player, the player recorded in c's current reason state.
@@ -1060,7 +1060,7 @@ Parameters:
   c: Card
 Returns:
   int
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3461
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3464
 
 ●int Card.GetRightScale(Card c)
 Returns c's current right Pendulum Scale value.
@@ -1069,7 +1069,7 @@ Parameters:
   c: Card
 Returns:
   int - Current right Pendulum Scale value.
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3415
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3418
 
 ●int Card.GetRitualLevel(Card c, Card rc)
 Returns the Ritual Level value c contributes for Ritual Monster rc.
@@ -1078,7 +1078,7 @@ Parameters:
   rc: Card
 Returns:
   int
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3409
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3412
 
 ●int Card.GetSequence(Card c)
 Returns c's sequence within its current location.
@@ -1088,7 +1088,7 @@ Parameters:
   c: Card - Card whose current sequence is returned.
 Returns:
   int - Sequence in c's current location.
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3468
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3471
 
 ●... Card.GetSpecialSummonInfo(Card c, ... int)
 Returns Special Summon information for c.
@@ -1098,7 +1098,7 @@ Parameters:
   ...: int
 Returns:
   ...
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3473
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3476
 
 ●int Card.GetSummonLocation(Card c)
 Returns the location c was Summoned from, decoded from its summon information.
@@ -1106,7 +1106,7 @@ Parameters:
   c: Card
 Returns:
   int
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3471
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3474
 
 ●int Card.GetSummonPlayer(Card c)
 Returns the player recorded as having Summoned c.
@@ -1114,7 +1114,7 @@ Parameters:
   c: Card
 Returns:
   int
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3472
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3475
 
 ●int Card.GetSummonType(Card c)
 Returns c's recorded Summon Type bits masked to the default Summon Type field.
@@ -1122,7 +1122,7 @@ Parameters:
   c: Card
 Returns:
   int
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3470
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3473
 
 ●int Card.GetSynchroLevel(Card c, Card scard)
 Returns the Synchro Level value c contributes for Synchro Monster scard.
@@ -1131,7 +1131,7 @@ Parameters:
   scard: Card
 Returns:
   int
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3408
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3411
 
 ●int Card.GetSynchroType(Card c)
 Returns c's Synchro Material Type mask used by Synchro Material checks.
@@ -1139,7 +1139,7 @@ Parameters:
   c: Card
 Returns:
   int
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3402
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3405
 
 ●int Card.GetTextAttack(Card c)
 Returns the ATK value recorded in c's card data.
@@ -1148,7 +1148,7 @@ Parameters:
   c: Card
 Returns:
   int
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3442
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3445
 
 ●int Card.GetTextDefense(Card c)
 Returns c's printed/stored DEF value, or 0 while c has no-Level status.
@@ -1156,7 +1156,7 @@ Parameters:
   c: Card
 Returns:
   int
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3445
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3448
 
 ●int,int Card.GetTributeRequirement(Card c)
 Returns the minimum and maximum Tribute counts for Normal Summoning c.
@@ -1165,7 +1165,7 @@ Parameters:
 Returns:
   int - Minimum Tribute count.
   int - Maximum Tribute count.
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3652
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3655
 
 ●Effect,function|nil,int|nil,int,int Card.GetTunerLimit(Card c)
 Returns the tuner-material-limit effect affecting c, that effect's target function or nil, its value or nil, and the allowed minimum and maximum counts; if no such effect applies, no values are returned.
@@ -1177,7 +1177,7 @@ Returns:
   int|nil - The effect value, if any.
   int - Minimum allowed material count.
   int - Maximum allowed material count.
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3546
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3549
 
 ●int Card.GetTurnCounter(Card c)
 Returns c's turn counter.
@@ -1185,7 +1185,7 @@ Parameters:
   c: Card
 Returns:
   int
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3513
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3516
 
 ●int Card.GetTurnID(Card c)
 Returns c's stored turn ID.
@@ -1194,7 +1194,7 @@ Parameters:
   c: Card
 Returns:
   int
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3476
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3479
 
 ●int Card.GetType(Card c)
 Returns c's current type mask, including temporary type changes applied to the card.
@@ -1202,7 +1202,7 @@ Parameters:
   c: Card
 Returns:
   int
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3399
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3402
 
 ●int,int Card.GetUnionCount(Card c)
 Returns two values for c: the number of modern Union cards equipped to it, then the number of old Union cards equipped to it.
@@ -1212,7 +1212,7 @@ Parameters:
 Returns:
   int - Number of equipped modern Union cards.
   int - Number of equipped old Union cards.
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3523
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3526
 
 ●int Card.GetXyzType(Card c)
 Returns c's Xyz Material Type mask used by Xyz Material checks.
@@ -1220,7 +1220,7 @@ Parameters:
   c: Card
 Returns:
   int
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3403
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3406
 
 ●bool Card.IsAbleToChangeControler(Card c)
 Checks only whether c is free of EFFECT_CANNOT_CHANGE_CONTROL.
@@ -1228,7 +1228,7 @@ Parameters:
   c: Card
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3626
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3629
 
 ●bool Card.IsAbleToDeck(Card c)
 Checks whether c can be returned to the Deck.
@@ -1236,7 +1236,7 @@ Parameters:
   c: Card
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3585
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3588
 
 ●bool Card.IsAbleToDeckAsCost(Card c)
 Checks whether c can be returned to the Deck as a cost.
@@ -1244,7 +1244,7 @@ Parameters:
   c: Card
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3590
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3593
 
 ●bool Card.IsAbleToDeckOrExtraAsCost(Card c)
 Checks whether c can be returned to the Deck or Extra Deck as a cost.
@@ -1252,7 +1252,7 @@ Parameters:
   c: Card
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3592
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3595
 
 ●bool Card.IsAbleToExtra(Card c)
 Checks whether c can be returned to the Extra Deck by the current reason player.
@@ -1260,7 +1260,7 @@ Parameters:
   c: Card
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3586
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3589
 
 ●bool Card.IsAbleToExtraAsCost(Card c)
 Checks whether c can be returned to the Extra Deck as a cost.
@@ -1268,7 +1268,7 @@ Parameters:
   c: Card
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3591
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3594
 
 ●bool Card.IsAbleToGrave(Card c)
 Checks whether c can be sent to the Graveyard.
@@ -1276,7 +1276,7 @@ Parameters:
   c: Card
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3587
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3590
 
 ●bool Card.IsAbleToGraveAsCost(Card c)
 Checks whether c can be sent to the Graveyard as a cost.
@@ -1284,7 +1284,7 @@ Parameters:
   c: Card
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3593
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3596
 
 ●bool Card.IsAbleToHand(Card c, [int player])
 Checks whether c can be returned or added to the hand by the current reason player.
@@ -1294,7 +1294,7 @@ Parameters:
   player: int optional - default: reason player
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3584
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3587
 
 ●bool Card.IsAbleToHandAsCost(Card c)
 Checks whether c can be returned to the hand as a cost.
@@ -1303,7 +1303,7 @@ Parameters:
   c: Card
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3589
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3592
 
 ●bool Card.IsAbleToRemove(Card c, [int player], [int pos], [int reason])
 Checks whether c can be banished by player in position pos for reason.
@@ -1315,7 +1315,7 @@ Parameters:
   reason: int optional
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3588
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3591
 
 ●bool Card.IsAbleToRemoveAsCost(Card c, [int pos])
 Checks whether c can be banished as a cost by the current reason player.
@@ -1325,7 +1325,7 @@ Parameters:
   pos: int optional - default: POS_FACEUP
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3594
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3597
 
 ●bool Card.IsAllColumn(Card c)
 Checks whether c is treated as occupying or applying to all columns.
@@ -1333,7 +1333,7 @@ Parameters:
   c: Card
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3430
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3433
 
 ●bool Card.IsAllReasons(Card c, int reason)
 Checks whether c includes all reasons in reason.
@@ -1342,7 +1342,7 @@ Parameters:
   reason: int
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3500
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3503
 
 ●bool Card.IsAllTypes(Card c, int type)
 Checks whether c includes all types in type.
@@ -1351,7 +1351,7 @@ Parameters:
   type: int
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3482
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3485
 
 ●bool Card.IsAttack(Card c, int atk1, [int atk2], [... int])
 Checks whether c is a monster or currently treated as one, and whether its current ATK equals any supplied atk value.
@@ -1363,7 +1363,7 @@ Parameters:
   ...: int optional
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3490
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3493
 
 ●bool Card.IsAttackable(Card c)
 Checks whether c currently satisfies the core's basic attack-capable conditions.
@@ -1372,7 +1372,7 @@ Parameters:
   c: Card
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3598
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3601
 
 ●bool Card.IsAttackAbove(Card c, int atk)
 Checks whether c is a monster or currently treated as one, and whether its current ATK is at least atk.
@@ -1382,7 +1382,7 @@ Parameters:
   atk: int - Minimum ATK value accepted by the check.
 Returns:
   bool - True if c is a monster or treated as one and its current ATK is at least atk.
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3619
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3622
 
 ●bool Card.IsAttackBelow(Card c, int atk)
 Checks whether c is a monster, or treated as one, whose current ATK is known and less than or equal to atk.
@@ -1392,7 +1392,7 @@ Parameters:
   atk: int - Maximum ATK value accepted by the check.
 Returns:
   bool - True if c is a monster or treated as one, has known ATK, and that ATK is at most atk.
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3618
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3621
 
 ●bool Card.IsAttackPos(Card c)
 Checks whether c's current position contains POS_ATTACK.
@@ -1400,7 +1400,7 @@ Parameters:
   c: Card
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3602
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3605
 
 ●bool Card.IsAttribute(Card c, int attribute)
 Checks whether c currently has at least one Attribute flag from attribute.
@@ -1409,7 +1409,7 @@ Parameters:
   attribute: int
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3494
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3497
 
 ●bool Card.IsCanAddCounter(Card c, int countertype, int count, [bool singly], [int loc])
 Checks whether the current reason player can place count counters of countertype on c.
@@ -1422,7 +1422,7 @@ Parameters:
   loc: int optional - default: 0
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3635
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3638
 
 ●bool Card.IsCanBeBattleTarget(Card c1, Card c2)
 Checks whether c1 can be chosen as a battle target by c2.
@@ -1431,7 +1431,7 @@ Parameters:
   c2: Card
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3649
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3652
 
 ●bool Card.IsCanBeDisabledByEffect(Card c, Effect e, [bool isMonsterEffect])
 Checks whether c's effects can be negated by e.
@@ -1443,7 +1443,7 @@ Parameters:
   isMonsterEffect: bool optional
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3647
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3650
 
 ●bool Card.IsCanBeEffectTarget(Card c, [Effect e])
 Checks whether c can be targeted by e, or by the current reason effect when e is omitted.
@@ -1452,7 +1452,7 @@ Parameters:
   e: Effect optional
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3648
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3651
 
 ●bool Card.IsCanBeFusionMaterial(Card c, [Card|nil fc], [int summon_type])
 Checks whether c can be used as Fusion Material for fc and summon_type.
@@ -1463,7 +1463,7 @@ Parameters:
   summon_type: int optional - default: SUMMON_TYPE_FUSION
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3639
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3642
 
 ●bool Card.IsCanBeLinkMaterial(Card c, [Card scard])
 Checks whether c can be used as Link Material, optionally for Link Monster scard.
@@ -1473,7 +1473,7 @@ Parameters:
   scard: Card optional - Link Monster that would use c as material.
 Returns:
   bool - true if c may currently be used as Link Material for scard or for a generic Link Material check.
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3643
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3646
 
 ●bool Card.IsCanBePlacedOnField(Card c, [int toplayer], [int tolocation])
 Checks whether c can be placed onto the target player's field.
@@ -1484,7 +1484,7 @@ Parameters:
   tolocation: int optional - Target location. Defaults to LOCATION_SZONE.
 Returns:
   bool - true if c can be placed on that player's field.
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3583
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3586
 
 ●bool Card.IsCanBeRitualMaterial(Card c, [Card|nil sc])
 Checks whether c can be used as Ritual Material for sc.
@@ -1495,7 +1495,7 @@ Parameters:
   sc: Card|nil optional
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3641
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3644
 
 ●bool Card.IsCanBeSpecialSummoned(Card c, Effect e, int sumtype, int sumplayer, bool nocheck, bool nolimit, [int sumpos], [int toplayer], [int zone])
 Checks whether c can be Special Summoned by effect e using sumtype, sumplayer, sumpos, target player, and optional zone.
@@ -1513,7 +1513,7 @@ Parameters:
   zone: int optional - Allowed Monster Zone bitmask; default: 0xff.
 Returns:
   bool - True if c can be Special Summoned with the supplied parameters.
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3582
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3585
 
 ●bool Card.IsCanBeSynchroMaterial(Card c, [Card scard], [Card tuner])
 Checks whether c can be used as Synchro Material for scard, with tuner supplied when the core needs the paired Tuner.
@@ -1523,7 +1523,7 @@ Parameters:
   tuner: Card optional
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3640
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3643
 
 ●bool Card.IsCanBeXyzMaterial(Card c, [Card|nil sc])
 Checks whether c can be used as Xyz Material, optionally for sc.
@@ -1533,7 +1533,7 @@ Parameters:
   sc: Card|nil optional
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3642
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3645
 
 ●bool Card.IsCanChangePosition(Card c)
 Checks the core's effect-specific position-change capability for c.
@@ -1542,7 +1542,7 @@ Parameters:
   c: Card
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3633
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3636
 
 ●bool Card.IsCanHaveCounter(Card c, int countertype)
 Checks whether c can hold counters of countertype.
@@ -1551,7 +1551,7 @@ Parameters:
   countertype: int
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3637
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3640
 
 ●bool Card.IsCanOverlay(Card c, [int player])
 Checks whether c can be used as Xyz Material by player.
@@ -1561,7 +1561,7 @@ Parameters:
   player: int optional - default: current reason player
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3638
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3641
 
 ●bool|nil Card.IsCanRemoveCounter(Card c, int player, int countertype, int count, int reason)
 Checks whether player can remove count counters of countertype from c for reason.
@@ -1573,7 +1573,7 @@ Parameters:
   reason: int
 Returns:
   bool|nil - nil if player is invalid.
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3636
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3639
 
 ●bool Card.IsCanTurnSet(Card c)
 Checks whether c can be turned face-down by the current reason player.
@@ -1582,7 +1582,7 @@ Parameters:
   c: Card - Card checked for whether it can be turned face-down.
 Returns:
   bool - True if c can be turned face-down by the current reason player.
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3634
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3637
 
 ●bool Card.IsChainAttackable(Card c, [int ac], [bool monsteronly])
 Checks whether the current attacker can make another attack under chain-attack rules.
@@ -1593,7 +1593,7 @@ Parameters:
   monsteronly: bool optional - default: false
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3599
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3602
 
 ●bool Card.IsCode(Card c, int code1, [int code2], [... int])
 Checks whether c's current card code, or alternate code if it has one, matches any supplied code.
@@ -1604,7 +1604,7 @@ Parameters:
   ...: int optional
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3480
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3483
 
 ●bool Card.IsControler(Card c, int controler)
 Checks whether c's current controller is controler.
@@ -1613,7 +1613,7 @@ Parameters:
   controler: int
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3607
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3610
 
 ●bool Card.IsControlerCanBeChanged(Card c, [bool ignore_mzone], [int zone])
 Checks whether control of c can currently move to the other player.
@@ -1624,7 +1624,7 @@ Parameters:
   zone: int optional - default: 0xff
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3627
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3630
 
 ●bool Card.IsDefense(Card c, int def1, [int def2], [... int])
 Checks whether c is not a Link Monster, is a monster or currently treated as one, and has current DEF equal to any supplied def value.
@@ -1636,7 +1636,7 @@ Parameters:
   ...: int optional
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3491
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3494
 
 ●bool Card.IsDefenseAbove(Card c, int def)
 Checks whether c has current DEF greater than or equal to def.
@@ -1646,7 +1646,7 @@ Parameters:
   def: int
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3621
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3624
 
 ●bool Card.IsDefenseBelow(Card c, int def)
 Checks whether c has known current DEF less than or equal to def.
@@ -1656,7 +1656,7 @@ Parameters:
   def: int
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3620
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3623
 
 ●bool Card.IsDefensePos(Card c)
 Checks whether c's current position contains POS_DEFENSE.
@@ -1664,7 +1664,7 @@ Parameters:
   c: Card
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3604
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3607
 
 ●bool Card.IsDestructable(Card c, [Effect e])
 Checks whether c can be destroyed.
@@ -1674,7 +1674,7 @@ Parameters:
   e: Effect optional
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3571
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3574
 
 ●bool Card.IsDirectAttacked(Card c)
 Checks whether c has a direct-attack record.
@@ -1682,7 +1682,7 @@ Parameters:
   c: Card
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3535
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3538
 
 ●bool Card.IsDisabled(Card c)
 Checks whether c currently has STATUS_DISABLED.
@@ -1690,7 +1690,7 @@ Parameters:
   c: Card
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3570
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3573
 
 ●bool Card.IsDiscardable(Card c, [int reason])
 Checks whether c can be discarded for reason.
@@ -1700,7 +1700,7 @@ Parameters:
   reason: int optional - default: REASON_COST
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3597
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3600
 
 ●bool Card.IsDualState(Card c)
 Checks whether c is currently affected by EFFECT_DUAL_STATUS.
@@ -1708,7 +1708,7 @@ Parameters:
   c: Card
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3510
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3513
 
 ●bool Card.IsEffectProperty(Card c, function filter)
 Checks whether c has an effect matching filter.
@@ -1717,7 +1717,7 @@ Parameters:
   filter: function - filter(Effect)
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3508
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3511
 
 ●bool Card.IsExtraDeckMonster(Card c)
 Checks whether c is a card kind treated by the core as an Extra Deck monster.
@@ -1725,7 +1725,7 @@ Parameters:
   c: Card
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3498
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3501
 
 ●bool Card.IsExtraLinkState(Card c)
 Checks whether c is part of an Extra Link state.
@@ -1733,7 +1733,7 @@ Parameters:
   c: Card
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3426
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3429
 
 ●bool Card.IsFacedown(Card c)
 Checks whether c is in face-down position.
@@ -1741,7 +1741,7 @@ Parameters:
   c: Card
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3603
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3606
 
 ●bool Card.IsFaceup(Card c)
 Checks whether c is in face-up position.
@@ -1749,7 +1749,7 @@ Parameters:
   c: Card
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3600
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3603
 
 ●bool Card.IsFaceupEx(Card c)
 Checks whether c is face-up; returns true for cards in the hand, Graveyard, Main Deck, and similar hidden/non-field locations.
@@ -1757,7 +1757,7 @@ Parameters:
   c: Card
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3601
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3604
 
 ●bool Card.IsForbidden(Card c)
 Checks whether c currently has STATUS_FORBIDDEN.
@@ -1765,7 +1765,7 @@ Parameters:
   c: Card
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3625
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3628
 
 ●bool Card.IsFusionAttribute(Card c, int attribute, [int player])
 Checks whether c's Attribute while used as Fusion Material contains attribute.
@@ -1776,7 +1776,7 @@ Parameters:
   player: int optional - default: current reason player
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3495
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3498
 
 ●bool Card.IsFusionCode(Card c, int code1, [int code2], [... int])
 Checks whether c can be treated as any supplied code while used as Fusion Material.
@@ -1788,7 +1788,7 @@ Parameters:
   ...: int optional
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3391
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3394
 
 ●bool Card.IsFusionSetCard(Card c, ... int)
 Checks whether c can be treated as belonging to any supplied set code while used as Fusion Material.
@@ -1798,7 +1798,7 @@ Parameters:
   ...: int
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3396
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3399
 
 ●bool Card.IsFusionSummonableCard(Card c, [int sum_type])
 Checks whether c can be Fusion Summoned as a Fusion Monster for summon type sum_type, defaulting to 0.
@@ -1807,7 +1807,7 @@ Parameters:
   sum_type: int optional
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3574
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3577
 
 ●bool Card.IsFusionType(Card c, int type)
 Checks whether c's type while used as Fusion Material contains type.
@@ -1817,7 +1817,7 @@ Parameters:
   type: int
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3483
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3486
 
 ●bool Card.IsHasCardTarget(Card c1, Card c2)
 Checks whether c1 currently has c2 as a persistent card target.
@@ -1826,7 +1826,7 @@ Parameters:
   c2: Card
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3540
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3543
 
 ●bool Card.IsHasDefense(Card c)
 Checks whether c has DEF.
@@ -1834,7 +1834,7 @@ Parameters:
   c: Card
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3623
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3626
 
 ●Effect|nil,... Effect Card.IsHasEffect(Card c, int code, [int player])
 Returns the effects currently affecting c with effect code code, or nil if none match.
@@ -1846,7 +1846,7 @@ Parameters:
 Returns:
   Effect|nil
   ... Effect - Additional matching effects, if any.
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3549
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3552
 
 ●bool Card.IsHasLevel(Card c)
 Checks whether c has a Level.
@@ -1854,7 +1854,7 @@ Parameters:
   c: Card
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3622
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3625
 
 ●bool Card.IsImmuneToEffect(Card c, Effect e)
 Checks whether c is unaffected by effect e.
@@ -1863,7 +1863,7 @@ Parameters:
   e: Effect
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3646
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3649
 
 ●bool Card.IsLevel(Card c, int level1, [int level2], [... int])
 Checks whether c's current Level equals any supplied level value.
@@ -1875,7 +1875,7 @@ Parameters:
   ...: int optional
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3487
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3490
 
 ●bool Card.IsLevelAbove(Card c, int level)
 Checks whether c has a Level greater than 0 and greater than or equal to level.
@@ -1884,7 +1884,7 @@ Parameters:
   level: int
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3613
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3616
 
 ●bool Card.IsLevelBelow(Card c, int level)
 Checks whether c has a Level greater than 0 and less than or equal to level.
@@ -1893,7 +1893,7 @@ Parameters:
   level: int
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3612
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3615
 
 ●bool Card.IsLink(Card c, int link1, [int link2], [... int])
 Checks whether c:GetLink() equals any supplied link value. Nil link arguments are skipped; non-Link cards compare as 0.
@@ -1904,7 +1904,7 @@ Parameters:
   ...: int optional
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3489
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3492
 
 ●bool Card.IsLinkAbove(Card c, int link)
 Checks whether c has a nonzero Link Rating greater than or equal to link.
@@ -1913,7 +1913,7 @@ Parameters:
   link: int
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3617
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3620
 
 ●bool Card.IsLinkAttribute(Card c, int attribute, [int player])
 Checks whether c's Attribute while used as Link Material contains attribute.
@@ -1924,7 +1924,7 @@ Parameters:
   player: int optional - default: current reason player
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3496
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3499
 
 ●bool Card.IsLinkBelow(Card c, int link)
 Checks whether c has a nonzero Link Rating that is less than or equal to link.
@@ -1933,7 +1933,7 @@ Parameters:
   link: int
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3616
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3619
 
 ●bool Card.IsLinkCode(Card c, int code1, [int code2], [... int])
 Checks whether c matches any supplied code while used as Link Material.
@@ -1945,7 +1945,7 @@ Parameters:
   ...: int optional
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3392
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3395
 
 ●bool Card.IsLinkMarker(Card c, int dir)
 Checks whether c has Link Marker direction dir.
@@ -1954,7 +1954,7 @@ Parameters:
   dir: int
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3418
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3421
 
 ●bool Card.IsLinkRace(Card c, int race, [int player])
 Checks whether c's Race while used as Link Material for player contains race. player defaults to the current reason player.
@@ -1964,7 +1964,7 @@ Parameters:
   player: int optional - default: current reason player
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3493
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3496
 
 ●bool Card.IsLinkSetCard(Card c, int setcode1, [int setcode2], [... int])
 Checks whether c can be treated as any supplied setcode while used as Link Material. Nil setcode arguments are skipped.
@@ -1975,7 +1975,7 @@ Parameters:
   ...: int optional
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3397
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3400
 
 ●bool Card.IsLinkState(Card c)
 Checks whether c is currently in linked state.
@@ -1983,7 +1983,7 @@ Parameters:
   c: Card
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3425
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3428
 
 ●bool Card.IsLinkSummonable(Card c, Group|nil materials, [Card|nil lcard], [int minc], [int maxc])
 Checks whether Link Monster c can be Link Summoned by the current reason player.
@@ -1998,7 +1998,7 @@ Parameters:
   maxc: int optional - Runtime maximum material-card count. default: 0
 Returns:
   bool - true if c has a legal Link Summon under the supplied temporary limits.
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3578
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3581
 
 ●bool Card.IsLinkType(Card c, int type)
 Checks whether c's type while used as Link Material contains type.
@@ -2007,7 +2007,7 @@ Parameters:
   type: int
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3486
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3489
 
 ●bool Card.IsLocation(Card c, int location)
 Checks whether c is currently in location.
@@ -2017,7 +2017,7 @@ Parameters:
   location: int
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3610
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3613
 
 ●bool Card.IsMSetable(Card c, bool ignore_count, [Effect|nil e], [int min], [int zone])
 Checks whether c can be Normal Set in a Monster Zone for the current reason player.
@@ -2030,7 +2030,7 @@ Parameters:
   zone: int optional - default: 0x1f
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3580
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3583
 
 ●bool Card.IsNonAttribute(Card c, int attribute)
 Checks whether c has any Attribute other than attribute.
@@ -2040,7 +2040,7 @@ Parameters:
   attribute: int
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3497
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3500
 
 ●bool Card.IsNotTuner(Card c, Card scard)
 Checks whether c is treated as a non-Tuner for Synchro Monster scard.
@@ -2049,7 +2049,7 @@ Parameters:
   scard: Card
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3505
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3508
 
 ●bool Card.IsOnField(Card c)
 Checks whether c is currently on the field and is not being treated as off the field.
@@ -2057,7 +2057,7 @@ Parameters:
   c: Card
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3609
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3612
 
 ●bool Card.IsOriginalCodeRule(Card c, int code1, [int code2], [... int])
 Checks whether c's rule-original card code matches any supplied code.
@@ -2069,7 +2069,7 @@ Parameters:
   ...: int optional
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3479
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3482
 
 ●bool Card.IsOriginalEffectProperty(Card c, function filter)
 Checks whether c is originally a card with an effect matching filter.
@@ -2078,7 +2078,7 @@ Parameters:
   filter: function - filter(Effect)
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3507
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3510
 
 ●bool Card.IsOriginalSetCard(Card c, int setcode1, [int setcode2], [... int])
 Checks whether c's original set data matches any supplied set code.
@@ -2089,7 +2089,7 @@ Parameters:
   ...: int optional
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3394
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3397
 
 ●bool Card.IsPosition(Card c, int pos)
 Checks whether c's current battle position includes pos.
@@ -2098,7 +2098,7 @@ Parameters:
   pos: int
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3605
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3608
 
 ●bool Card.IsPreviousControler(Card c, int player)
 Checks whether c's previous controller was player.
@@ -2107,7 +2107,7 @@ Parameters:
   player: int
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3608
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3611
 
 ●bool Card.IsPreviousLocation(Card c, int location)
 Checks whether c's previous location included location.
@@ -2116,7 +2116,7 @@ Parameters:
   location: int
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3611
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3614
 
 ●bool Card.IsPreviousPosition(Card c, int pos)
 Checks whether c's previous position included pos.
@@ -2125,7 +2125,7 @@ Parameters:
   pos: int
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3606
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3609
 
 ●bool Card.IsPreviousSetCard(Card c, int setcode1, [int setcode2], [... int])
 Checks whether c's previous card-code or added previous set-code data matches any supplied setcode value.
@@ -2137,7 +2137,7 @@ Parameters:
   ...: int optional
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3395
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3398
 
 ●bool Card.IsPublic(Card c)
 Checks whether c is currently public to both players, represented by face-up position in this core.
@@ -2145,7 +2145,7 @@ Parameters:
   c: Card
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3624
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3627
 
 ●bool Card.IsRace(Card c, int race)
 Checks whether c currently has at least one Race flag from race.
@@ -2154,7 +2154,7 @@ Parameters:
   race: int
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3492
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3495
 
 ●bool Card.IsRank(Card c, int rank1, [int rank2], [... int])
 Checks whether c:GetRank() equals any supplied rank value.
@@ -2166,7 +2166,7 @@ Parameters:
   ...: int optional
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3488
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3491
 
 ●bool Card.IsRankAbove(Card c, int rank)
 Checks whether c has a nonzero Rank greater than or equal to rank.
@@ -2175,7 +2175,7 @@ Parameters:
   rank: int
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3615
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3618
 
 ●bool Card.IsRankBelow(Card c, int rank)
 Checks whether c has a nonzero Rank that is less than or equal to rank.
@@ -2184,7 +2184,7 @@ Parameters:
   rank: int
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3614
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3617
 
 ●bool Card.IsReason(Card c, int reason)
 Checks whether c's current reason flags include reason.
@@ -2193,7 +2193,7 @@ Parameters:
   reason: int
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3499
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3502
 
 ●bool Card.IsRelateToBattle(Card c)
 Checks whether c is still related to the current battle, usually during the Damage Step or shortly after damage calculation.
@@ -2201,7 +2201,7 @@ Parameters:
   c: Card
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3565
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3568
 
 ●bool Card.IsRelateToCard(Card c1, Card c2)
 Checks whether c1 currently has a relation to c2.
@@ -2210,7 +2210,7 @@ Parameters:
   c2: Card
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3564
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3567
 
 ●bool Card.IsRelateToChain(Card c, [int chainc])
 Checks whether c is still related to chainc.
@@ -2220,7 +2220,7 @@ Parameters:
   chainc: int optional - default: 0
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3563
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3566
 
 ●bool Card.IsRelateToEffect(Card c, Effect e)
 Checks whether c is still related to effect e.
@@ -2230,7 +2230,7 @@ Parameters:
   e: Effect - Effect relation to test against.
 Returns:
   bool - True if c still has relation to e.
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3562
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3565
 
 ●bool Card.IsReleasable(Card c, [int reason])
 Checks whether c can be Released for a non-Summon reason by the current reason player.
@@ -2240,7 +2240,7 @@ Parameters:
   reason: int optional - default: REASON_COST
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3595
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3598
 
 ●bool Card.IsReleasableByEffect(Card c)
 Checks whether c can be Released by the current resolving effect, using the current reason player and reason effect.
@@ -2248,7 +2248,7 @@ Parameters:
   c: Card
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3596
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3599
 
 ●bool Card.IsSetCard(Card c, ... int)
 Checks whether c belongs to any of the supplied set codes.
@@ -2257,7 +2257,7 @@ Parameters:
   ...: int
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3393
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3396
 
 ●bool Card.IsSpecialSummonable(Card c, [int sum_type])
 Checks whether c can currently be Special Summoned by the current reason player under sum_type, defaulting to 0.
@@ -2267,7 +2267,7 @@ Parameters:
   sum_type: int optional - Summon type value to test; default: 0.
 Returns:
   bool - True if the core currently considers c Special Summonable under that summon type.
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3575
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3578
 
 ●bool Card.IsSpecialSummonableCard(Card c)
 Checks whether c can be Special Summoned by a proper procedure.
@@ -2276,7 +2276,7 @@ Parameters:
   c: Card - Card being checked.
 Returns:
   bool - True if c has an available proper Special Summon procedure in the current game state.
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3573
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3576
 
 ●bool Card.IsSpecialSummonSetCard(Card c, ... int)
 Checks whether c was Special Summoned by a card whose name includes setname.
@@ -2285,7 +2285,7 @@ Parameters:
   ...: int
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3398
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3401
 
 ●bool Card.IsSSetable(Card c, [bool ignore_field])
 Checks whether c can be Set in a Spell & Trap Zone. If ignore_field is true, available zone checks are ignored.
@@ -2294,7 +2294,7 @@ Parameters:
   ignore_field: bool optional - default: false
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3581
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3584
 
 ●bool Card.IsStatus(Card c, int status)
 Checks whether c currently has at least one status flag from status.
@@ -2304,7 +2304,7 @@ Parameters:
   status: int - Status flag or combined status mask, such as STATUS_BATTLE_DESTROYED.
 Returns:
   bool - true if c has any flag included in status.
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3504
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3507
 
 ●bool Card.IsSummonable(Card c, bool ignore_count, [Effect|nil e], [int min], [int zone])
 Checks whether c can be Normal Summoned, excluding Normal Summon/Set.
@@ -2317,7 +2317,7 @@ Parameters:
   zone: int optional - default: 0x1f
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3579
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3582
 
 ●bool Card.IsSummonableCard(Card c)
 Checks whether c's card data represents a monster that is allowed to be Normal Summoned or Set by card kind.
@@ -2326,7 +2326,7 @@ Parameters:
   c: Card
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3572
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3575
 
 ●bool Card.IsSummonLocation(Card c, int loc)
 Checks whether c's recorded Summon location contains loc. This reads the Summon information, not c's current location.
@@ -2335,7 +2335,7 @@ Parameters:
   loc: int - Location mask to test against the stored Summon location, such as LOCATION_EXTRA or LOCATION_GRAVE.
 Returns:
   bool - True if any bit in loc is present in c's recorded Summon location.
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3502
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3505
 
 ●bool Card.IsSummonPlayer(Card c, int player)
 Checks whether player was the player who Summoned c.
@@ -2344,7 +2344,7 @@ Parameters:
   player: int
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3503
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3506
 
 ●bool Card.IsSummonType(Card c, int sumtype)
 Checks whether c's recorded Summon type includes every flag in sumtype.
@@ -2353,7 +2353,7 @@ Parameters:
   sumtype: int
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3501
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3504
 
 ●bool Card.IsSynchroSummonable(Card c, [Card|nil tuner], [Group mg], [int min], [int max])
 Checks whether c can be Synchro Summoned with tuner and the available material group mg.
@@ -2367,7 +2367,7 @@ Parameters:
   max: int optional - default: 0
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3576
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3579
 
 ●bool Card.IsSynchroType(Card c, int type)
 Checks whether c's type while used as Synchro Material contains type.
@@ -2376,7 +2376,7 @@ Parameters:
   type: int
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3484
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3487
 
 ●bool Card.IsTuner(Card c, Card scard)
 Checks whether c is a Tuner monster for scard.
@@ -2386,7 +2386,7 @@ Parameters:
   scard: Card
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3506
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3509
 
 ●bool Card.IsType(Card c, int type)
 Checks whether c has at least one of the type flags in type.
@@ -2395,7 +2395,7 @@ Parameters:
   type: int
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3481
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3484
 
 ●bool Card.IsXyzLevel(Card c, Card xyzc, int lv)
 Checks whether c can provide Xyz Level lv for Xyz Monster xyzc.
@@ -2405,7 +2405,7 @@ Parameters:
   lv: int
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3412
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3415
 
 ●bool Card.IsXyzSummonable(Card c, [Group|nil materials], [int minc], [int maxc])
 Checks whether Xyz Monster c can be Xyz Summoned by the current reason player with an optional material group and min/max constraints.
@@ -2418,7 +2418,7 @@ Parameters:
   maxc: int optional - Optional maximum material count override. Defaults to 0.
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3577
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3580
 
 ●bool Card.IsXyzType(Card c, int type)
 Checks whether c's type while used as Xyz Material contains type.
@@ -2427,7 +2427,7 @@ Parameters:
   type: int
 Returns:
   bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3485
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3488
 
 ●int|nil Card.RegisterEffect(Card c, Effect e, [bool forced])
 Registers effect e to card c and returns the generated effect field ID.
@@ -2438,7 +2438,7 @@ Parameters:
   forced: bool optional
 Returns:
   int|nil
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3548
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3551
 
 ●Effect Card.RegisterFlagEffect(Card c, int code, int reset_flag, int property, int reset_count, [int label], [int desc])
 Registers a special single-card flag effect on c and returns the created Effect.
@@ -2455,21 +2455,21 @@ Parameters:
   desc: int optional - Optional client description id for marker hints.
 Returns:
   Effect - The created flag effect.
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3552
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3555
 
 ●void Card.ReleaseEffectRelation(Card c, Effect e)
 Releases c's relation to effect e.
 Parameters:
   c: Card
   e: Effect
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3560
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3563
 
 ●void Card.ReleaseRelation(Card c1, Card c2)
 Releases c1's relation to card c2.
 Parameters:
   c1: Card
   c2: Card
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3558
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3561
 
 ●bool|nil Card.RemoveCounter(Card c, int player, int countertype, int count, int reason)
 Removes count counters of countertype from c for reason, using player as the removing player.
@@ -2482,7 +2482,7 @@ Parameters:
   reason: int
 Returns:
   bool|nil
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3629
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3632
 
 ●int Card.RemoveOverlayCard(Card c, int player, int min, int max, int reason)
 Lets player remove between min and max Xyz Materials from c for reason and returns the number actually removed.
@@ -2495,7 +2495,7 @@ Parameters:
   reason: int
 Returns:
   int - Number of Xyz Materials actually removed.
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3528
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3531
 
 ●int Card.ReplaceEffect(Card c, int code, int reset, [int count])
 Replaces c's effects with the effects of card code under the given reset flags and returns the replacement id.
@@ -2507,7 +2507,7 @@ Parameters:
   count: int optional - default: 1
 Returns:
   int
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3567
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3570
 
 ●void Card.ResetEffect(Card c, int code, int reset_type)
 Manually resets effects on c that match code and reset_type.
@@ -2515,7 +2515,7 @@ Parameters:
   c: Card
   code: int
   reset_type: int
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3550
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3553
 
 ●void Card.ResetFlagEffect(Card c, int code)
 Resets all flag effects on c with code.
@@ -2523,7 +2523,7 @@ This clears matching card markers manually; it does not affect player markers re
 Parameters:
   c: Card - Card whose matching flag effects are reset.
   code: int - Flag-effect code to clear.
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3554
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3557
 
 ●void Card.ResetNegateEffect(Card c, [int code1], [... any])
 Resets negate-related card effects on c for each supplied reset code.
@@ -2531,14 +2531,14 @@ Parameters:
   c: Card
   code1: int optional
   ...: any optional
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3659
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3662
 
 ●void Card.ReverseInDeck(Card c)
 Marks c face-up while it is in the Deck.
 If c is the current top card of the Main Deck, the core also sends the top-of-Deck update to the client.
 Parameters:
   c: Card
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3656
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3659
 
 ●void Card.SetCardTarget(Card c1, Card c2)
 Registers c2 as a persistent card target of c1.
@@ -2546,7 +2546,7 @@ This stores a card-target relation used by functions such as Card.GetCardTarget 
 Parameters:
   c1: Card
   c2: Card
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3536
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3539
 
 ●void Card.SetCounterLimit(Card c, int countertype, int limit)
 Adds an EFFECT_COUNTER_LIMIT for countertype to c with value limit.
@@ -2554,7 +2554,7 @@ Parameters:
   c: Card
   countertype: int
   limit: int
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3632
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3635
 
 ●bool Card.SetFlagEffectLabel(Card c, int code, int label)
 Sets the first matching flag effect label for code on c to label and returns whether a flag effect was found.
@@ -2564,7 +2564,7 @@ Parameters:
   label: int - New integer label stored on the first matching flag effect.
 Returns:
   bool - True if a matching flag effect was updated; false if none exists.
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3555
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3558
 
 ●void Card.SetHint(Card c, int type, int value)
 Sends a client card-hint message for c with hint type and value; types at or above CHINT_DESC_ADD are ignored.
@@ -2572,23 +2572,21 @@ Parameters:
   c: Card
   type: int
   value: int
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3655
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3658
 
 ●void Card.SetMaterial(Card c, [Group|nil g])
 Sets g as c's material group for a Summon, or clears c's materials when g is nil.
 Parameters:
   c: Card
   g: Group|nil optional
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3514
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3517
 
-●bool Card.SetReason(Card c, int reason)
+●void Card.SetReason(Card c, int reason)
 Sets c's current reason bitmask to reason.
 Parameters:
   c: Card
   reason: int
-Returns:
-  bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3458
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3461
 
 ●void Card.SetSPSummonOnce(Card c, int spsummon_code)
 Marks c as sharing a once-per-turn Special Summon limit under spsummon_code.
@@ -2596,7 +2594,7 @@ Cards with the same nonzero spsummon_code share the limit for each player. The b
 Parameters:
   c: Card
   spsummon_code: int
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3661
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3664
 
 ●void Card.SetStatus(Card c, int status, bool enable)
 Sets or clears status on c.
@@ -2605,14 +2603,14 @@ Parameters:
   c: Card
   status: int
   enable: bool
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3509
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3512
 
 ●void Card.SetTurnCounter(Card c, int ct)
 Sets c's turn counter.
 Parameters:
   c: Card
   ct: int
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3512
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3515
 
 ●void Card.SetUniqueOnField(Card c, int s, int o, function|int unique_code, [int unique_location])
 Sets a uniqueness rule for c so only one card with unique_code can exist on the checked field, Monster Zone, or Spell & Trap Zone range.
@@ -2622,7 +2620,7 @@ Parameters:
   o: int
   unique_code: function|int
   unique_location: int optional - default: LOCATIOIN_ONFIELD
-Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3657
+Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3660
 
 ========== Debug ==========
 ●Card|nil Debug.AddCard(int code, int owner, int player, int location, int seq, int pos, [bool proc])
@@ -4562,7 +4560,7 @@ Source: D:\Programs\GitHub\ygopro-core\libduel.cpp:4979
 No-op stub in this core; it only checks action permission and returns no values.
 Source: D:\Programs\GitHub\ygopro-core\libduel.cpp:5025
 
-●Group Duel.SelectSynchroMaterial(int player, Card c, [function|nil f1], [function|nil f2], int min, int max, [Card|nil smat], [Group|nil mg])
+●Group|nil Duel.SelectSynchroMaterial(int player, Card c, [function|nil f1], [function|nil f2], int min, int max, [Card|nil smat], [Group|nil mg])
 Lets player select Synchro Materials for c and returns the selected Group.
 f1 filters the Tuner material, f2 filters non-Tuner materials, min and max restrict the non-Tuner count, smat forces a required material, and mg supplies an optional material pool.
 Parameters:
@@ -4575,7 +4573,7 @@ Parameters:
   smat: Card|nil optional
   mg: Group|nil optional
 Returns:
-  Group
+  Group|nil
 Source: D:\Programs\GitHub\ygopro-core\libduel.cpp:4993
 
 ●Group Duel.SelectTarget(int sel_player, [function|nil f], int player, int s, int o, int min, int max, [Card|Group|nil ex], ... any)
@@ -4610,7 +4608,7 @@ Returns:
   Group
 Source: D:\Programs\GitHub\ygopro-core\libduel.cpp:4983
 
-●Group Duel.SelectTunerMaterial(int player, Card c, Card tuner, [function|nil f1], [function|nil f2], int min, int max, [Group|nil mg])
+●Group|nil Duel.SelectTunerMaterial(int player, Card c, Card tuner, [function|nil f1], [function|nil f2], int min, int max, [Group|nil mg])
 Lets player select Synchro Materials for scard using the fixed tuner, optional filters, count limits, and optional material group.
 Parameters:
   player: int
@@ -4622,7 +4620,7 @@ Parameters:
   max: int
   mg: Group|nil optional
 Returns:
-  Group
+  Group|nil
 Source: D:\Programs\GitHub\ygopro-core\libduel.cpp:4995
 
 ●Group Duel.SelectXyzMaterial(int player, Card scard, function|nil f, int lv, int minc, int maxc, [Group|nil materials])
@@ -5522,7 +5520,7 @@ Parameters:
   c: Card
 Source: D:\Programs\GitHub\ygopro-core\libgroup.cpp:906
 
-●Group Group.CancelableSelect(Group g, int player, int min, int max, [Card|Group|nil ex])
+●Group|nil Group.CancelableSelect(Group g, int player, int min, int max, [Card|Group|nil ex])
 Lets player select min to max cards from g, excluding ex; the selection can be canceled and return nil.
 Parameters:
   g: Group
@@ -5531,7 +5529,7 @@ Parameters:
   max: int
   ex: Card|Group|nil optional
 Returns:
-  Group
+  Group|nil
 Source: D:\Programs\GitHub\ygopro-core\libgroup.cpp:918
 
 ●bool Group.CheckWithSumEqual(Group g, function f, int acc, int min, int max, [... any])
@@ -5787,14 +5785,14 @@ Parameters:
   c: Card
 Source: D:\Programs\GitHub\ygopro-core\libgroup.cpp:907
 
-●Card Group.SearchCard(Group g, function f, ... any)
+●Card|nil Group.SearchCard(Group g, function f, ... any)
 Returns the first card in g that satisfies f with any extra arguments, or nil if none does.
 Parameters:
   g: Group
   f: function
   ...: any
 Returns:
-  Card
+  Card|nil
 Source: D:\Programs\GitHub\ygopro-core\libgroup.cpp:933
 
 ●Group|nil Group.Select(Group g, int player, int min, int max, [Card|Group|nil ex])
@@ -5911,6 +5909,18 @@ Returns:
   bool
 Source: Define/def.lua:35
 
+●bool Card.Metallization_material(int ft, int lv, int race, int att)
+Card-script callback used by the Metalmorph Summon procedure to test the released monster's properties.
+Eligible monster scripts assign this callback on their card table. The procedure in `Scripts/c89812483.lua` passes the material-availability flag plus the released monster's Level, Race, and Attribute.
+Parameters:
+  ft: int - Material-availability flag: 1 when a released monster is being checked, otherwise 0.
+  lv: int - Level of the released monster.
+  race: int - Race mask of the released monster.
+  att: int - Attribute mask of the released monster.
+Returns:
+  bool - True if this monster accepts those material properties for the procedure.
+Source: Define/def.lua:90
+
 ●void Card.red_eyes_fusion_check(int tp, Group sg, Card fc)
 Material check for Red-Eyes Fusion.
 Parameters:
@@ -5950,7 +5960,7 @@ Parameters:
   g: Group
   f: function
   ...: any
-Source: Define/def.lua:3883
+Source: Define/def.lua:3891
 
 ========== Auxiliary ==========
 ●void Auxiliary.AddBanishRedirect(Card c, [function condition])

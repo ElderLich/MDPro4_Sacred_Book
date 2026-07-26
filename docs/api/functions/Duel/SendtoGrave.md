@@ -47,7 +47,7 @@ This is not the same as destroying. A card sent to the Graveyard by `Duel.Sendto
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **2341** indexed script(s).
+- Detected in **2342** indexed script(s).
 - Search this function in the [Script Explorer](/tools/script-explorer) with `Duel.SendtoGrave`.
 
 | Card | ID | Script | Detected Calls |
@@ -76,7 +76,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | [Graydle Split](/examples/cards/75361204) | `75361204` | [Scripts/c75361204.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c75361204.lua) | 64 |
 | [Barian's Chaos Draw](/examples/cards/97769122) | `97769122` | [Scripts/c97769122.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c97769122.lua) | 63 |
 | [Dark End Evaporation Dragon](/examples/cards/62002838) | `62002838` | [Scripts/c62002838.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c62002838.lua) | 63 |
-| ...and 2317 more |  |  |  |
+| ...and 2318 more |  |  |  |
 
 ## Script Examples
 

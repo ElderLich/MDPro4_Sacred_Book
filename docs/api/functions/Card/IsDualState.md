@@ -20,7 +20,7 @@ Checks whether c is currently affected by EFFECT_DUAL_STATUS.
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3510`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3513`
 
 ## Used By
 

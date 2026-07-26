@@ -20,7 +20,7 @@ Checks whether c has a direct-attack record.
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3535`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3538`
 
 ## Used By
 

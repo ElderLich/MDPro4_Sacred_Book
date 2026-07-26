@@ -21,4 +21,4 @@ Checks whether c has a Level greater than 0 and less than or equal to level.
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3612`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3615`

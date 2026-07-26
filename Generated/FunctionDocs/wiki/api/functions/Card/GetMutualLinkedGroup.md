@@ -20,4 +20,4 @@ Returns the Group of cards mutually linked with c.
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3422`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3425`

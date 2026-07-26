@@ -23,7 +23,7 @@ Returns false if the target player is invalid, c is forbidden, or placing c ther
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3583`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3586`
 
 ## Used By
 

@@ -20,4 +20,4 @@ Returns the number of Equip Cards currently equipped to c.
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3518`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3521`

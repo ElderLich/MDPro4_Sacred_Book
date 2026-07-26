@@ -44,8 +44,8 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Shipping Error | `58761791` | [Scripts/c58761791.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c58761791.lua) | 36 |
 | Dark World Brainwashing | `10131855` | [Scripts/c10131855.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c10131855.lua) | 34 |
 | Graydle Combat | `84442536` | [Scripts/c84442536.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c84442536.lua) | 33 |
+| Vortex of Time | `42138622` | [Scripts/c42138622.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c42138622.lua) | 30 |
 | Fabled Dianaira | `53199020` | [Scripts/c53199020.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c53199020.lua) | 30 |
-| Vortex of Time | `42138622` | [Scripts/c42138622.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c42138622.lua) | 29 |
 | Generaider Boss Room | `64325438` | [Scripts/c64325438.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c64325438.lua) | 24 |
 | Dark Deal | `65824822` | [Scripts/c65824822.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c65824822.lua) | 21 |
 | Muko | `80863132` | [Scripts/c80863132.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c80863132.lua) | 11 |

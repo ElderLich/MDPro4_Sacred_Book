@@ -20,7 +20,7 @@ Returns c's printed/stored DEF value, or 0 while c has no-Level status.
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3445`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3448`
 
 ## Used By
 

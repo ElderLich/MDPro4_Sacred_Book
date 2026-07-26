@@ -20,7 +20,7 @@ Returns the number of cards in columns overlapping c.
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3428`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3431`
 
 ## Used By
 

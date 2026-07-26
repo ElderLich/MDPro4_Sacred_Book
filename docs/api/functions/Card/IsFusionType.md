@@ -22,7 +22,7 @@ For an original Monster Card in the Spell & Trap Zone, the core uses the card-da
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3483`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3486`
 
 ## Used By
 

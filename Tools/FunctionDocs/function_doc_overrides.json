@@ -17514,6 +17514,49 @@
         "Sets a uniqueness rule for c so only one card with unique_code can exist on the checked field, Monster Zone, or Spell & Trap Zone range."
       ]
     },
+    "Card.Metallization_material": {
+      "summary_en": [
+        "Card-script callback used by the Metalmorph Summon procedure to test the released monster's properties.",
+        "Eligible monster scripts assign this callback on their card table. The procedure in `Scripts/c89812483.lua` passes the material-availability flag plus the released monster's Level, Race, and Attribute."
+      ],
+      "summary_zh": [
+        "「金属化」特殊召唤手续使用的卡片脚本回调，用于检查被解放怪兽的性质。",
+        "符合条件的怪兽脚本会在自己的卡片表上登记这个回调；`Scripts/c89812483.lua`会传入素材可用标记以及被解放怪兽的等级、种族和属性。"
+      ],
+      "params": [
+        {
+          "name": "ft",
+          "type": "int",
+          "description": "Material-availability flag: 1 when a released monster is being checked, otherwise 0.",
+          "description_zh": "素材可用标记：检查已解放怪兽时为1，否则为0。"
+        },
+        {
+          "name": "lv",
+          "type": "int",
+          "description": "Level of the released monster.",
+          "description_zh": "被解放怪兽的等级。"
+        },
+        {
+          "name": "race",
+          "type": "int",
+          "description": "Race mask of the released monster.",
+          "description_zh": "被解放怪兽的种族掩码。"
+        },
+        {
+          "name": "att",
+          "type": "int",
+          "description": "Attribute mask of the released monster.",
+          "description_zh": "被解放怪兽的属性掩码。"
+        }
+      ],
+      "returns": [
+        {
+          "type": "bool",
+          "description": "True if this monster accepts those material properties for the procedure.",
+          "description_zh": "这只怪兽接受这些素材性质作为手续条件时返回true。"
+        }
+      ]
+    },
     "Card.branded_fusion_check": {
       "summary_en": [
         "Material check for Branded Fusion."

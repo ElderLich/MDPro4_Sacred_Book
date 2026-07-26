@@ -53,8 +53,8 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Scarred Dragon Archfiend | `87451661` | [Scripts/c87451661.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c87451661.lua) | 40 |
 | Red-Eyes Soul | `6556909` | [Scripts/c6556909.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c6556909.lua) | 39 |
 | The Bystial Aluber | `45005708` | [Scripts/c45005708.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c45005708.lua) | 39 |
+| Ancient Gear Dark Golem | `64603182` | [Scripts/c64603182.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c64603182.lua) | 39 |
 | Cyber Dragon Sieger | `46724542` | [Scripts/c46724542.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c46724542.lua) | 39 |
-| Blue-Eyes Alternative White Dragon | `38517737` | [Scripts/c38517737.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c38517737.lua) | 39 |
 | ...and 79 more |  |  |  |
 
 ## Script Examples

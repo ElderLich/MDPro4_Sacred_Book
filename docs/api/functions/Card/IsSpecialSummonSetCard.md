@@ -21,7 +21,7 @@ Checks whether c was Special Summoned by a card whose name includes setname.
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3398`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3401`
 
 ## Used By
 
@@ -46,11 +46,11 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Brotherhood of the Fire Fist - Ram | `62694833` | [Scripts/c62694833.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c62694833.lua) | 37 |
 | Morpheus, the Dream Mirror White Knight | `1872843` | [Scripts/c1872843.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c1872843.lua) | 37 |
 | Raidraptor - Rudder Strix | `6552938` | [Scripts/c6552938.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c6552938.lua) | 37 |
+| K9-X "Ripper/M" | `31286915` | [Scripts/c31286915.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c31286915.lua) | 36 |
 | Ikelos, the Dream Mirror Sprite | `49389190` | [Scripts/c49389190.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c49389190.lua) | 36 |
 | Fortune Lady Fire | `71870152` | [Scripts/c71870152.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c71870152.lua) | 36 |
 | Phantasos, the Dream Mirror Foe | `99792080` | [Scripts/c99792080.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c99792080.lua) | 36 |
 | Brotherhood of the Fire Fist - Rooster | `30929786` | [Scripts/c30929786.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c30929786.lua) | 36 |
-| K9-X "Ripper/M" | `31286915` | [Scripts/c31286915.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c31286915.lua) | 35 |
 | Metaphys Nephthys | `72355272` | [Scripts/c72355272.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c72355272.lua) | 35 |
 | Ikelos, the Dream Mirror Mara | `75888208` | [Scripts/c75888208.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c75888208.lua) | 33 |
 | Metaphys Daedalus | `45960523` | [Scripts/c45960523.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c45960523.lua) | 32 |

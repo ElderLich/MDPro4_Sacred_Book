@@ -20,7 +20,7 @@ Checks whether c's current position contains POS_ATTACK.
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3602`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3605`
 
 ## Used By
 

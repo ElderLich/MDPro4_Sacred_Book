@@ -37,7 +37,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Doll House | `67331360` | [Scripts/c67331360.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c67331360.lua) | 51 |
 | Numeron Wall | `42352091` | [Scripts/c42352091.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c42352091.lua) | 50 |
 | Red Nova Dragon/Assault Mode | `82323997` | [Scripts/c82323997.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c82323997.lua) | 47 |
-| Melffy Statues Game | `25687946` | [Scripts/c25687946.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c25687946.lua) | 45 |
+| Melffy Statues Game | `25687946` | [Scripts/c25687946.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c25687946.lua) | 46 |
 | Cosmic Blazar Dragon | `21123811` | [Scripts/c21123811.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c21123811.lua) | 43 |
 | Sangen Kaiho | `25388971` | [Scripts/c25388971.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c25388971.lua) | 43 |
 | Champion's Pulse | `46001505` | [Scripts/c46001505.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c46001505.lua) | 42 |

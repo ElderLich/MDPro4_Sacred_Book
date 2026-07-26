@@ -20,4 +20,4 @@ Returns c's current position value.
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3463`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3466`

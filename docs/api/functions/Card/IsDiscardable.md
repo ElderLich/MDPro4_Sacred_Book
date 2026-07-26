@@ -22,13 +22,13 @@ This is only a check: sending a card from the hand to the Graveyard with REASON_
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3597`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3600`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **655** indexed script(s).
+- Detected in **656** indexed script(s).
 - Search this function in the [Script Explorer](/tools/script-explorer) with `Card.IsDiscardable`.
 
 | Card | ID | Script | Detected Calls |
@@ -57,7 +57,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Darkuriboh | `1035143` | [Scripts/c1035143.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c1035143.lua) | 55 |
 | ABC-Dragon Buster | `1561110` | [Scripts/c1561110.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c1561110.lua) | 55 |
 | Dark World Accession | `65956182` | [Scripts/c65956182.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c65956182.lua) | 55 |
-| ...and 631 more |  |  |  |
+| ...and 632 more |  |  |  |
 
 ## Script Examples
 

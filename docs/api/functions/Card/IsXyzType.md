@@ -21,7 +21,7 @@ Checks whether c's type while used as Xyz Material contains type.
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3485`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3488`
 
 ## Used By
 

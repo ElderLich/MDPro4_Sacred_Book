@@ -22,7 +22,7 @@ An optional player argument can be passed when a specific player is performing t
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3584`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3587`
 
 ## Used By
 

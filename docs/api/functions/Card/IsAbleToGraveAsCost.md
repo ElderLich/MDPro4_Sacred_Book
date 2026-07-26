@@ -20,7 +20,7 @@ Checks whether c can be sent to the Graveyard as a cost.
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3593`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3596`
 
 ## Used By
 

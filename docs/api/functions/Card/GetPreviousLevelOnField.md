@@ -20,7 +20,7 @@ Returns the Level value c had while it was previously on the field.
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3448`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3451`
 
 ## Used By
 

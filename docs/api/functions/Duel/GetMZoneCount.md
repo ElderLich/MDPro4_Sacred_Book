@@ -32,7 +32,7 @@ use_player, reason, and zone are used by effects that restrict where monsters ca
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **707** indexed script(s).
+- Detected in **708** indexed script(s).
 - Search this function in the [Script Explorer](/tools/script-explorer) with `Duel.GetMZoneCount`.
 
 | Card | ID | Script | Detected Calls |
@@ -61,7 +61,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Meteonis Drytron | `22398665` | [Scripts/c22398665.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c22398665.lua) | 58 |
 | Clown Crew Soiree Operations | `70058649` | [Scripts/c70058649.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c70058649.lua) | 57 |
 | DoomZ XII Zero - Drastea | `92472273` | [Scripts/c92472273.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c92472273.lua) | 57 |
-| ...and 683 more |  |  |  |
+| ...and 684 more |  |  |  |
 
 ## Script Examples
 

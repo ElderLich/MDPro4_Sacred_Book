@@ -24,7 +24,7 @@ Nil atk arguments are skipped. Non-monsters that are not treated as monsters ret
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3490`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3493`
 
 ## Used By
 

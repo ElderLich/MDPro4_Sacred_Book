@@ -27,7 +27,7 @@ Checks whether g contains card c.
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **806** indexed script(s).
+- Detected in **807** indexed script(s).
 - Search this function in the [Script Explorer](/tools/script-explorer) with `Group.IsContains`.
 
 | Card | ID | Script | Detected Calls |
@@ -56,7 +56,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | [Converging Wishes](/examples/cards/20007374) | `20007374` | [Scripts/c20007374.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c20007374.lua) | 64 |
 | [Tohushaddoll Grysta](/examples/cards/95072744) | `95072744` | [Scripts/c95072744.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c95072744.lua) | 64 |
 | [GMX 55th Experiment Report](/examples/cards/38984832) | `38984832` | [Scripts/c38984832.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c38984832.lua) | 64 |
-| ...and 782 more |  |  |  |
+| ...and 783 more |  |  |  |
 
 ## Script Examples
 

@@ -18,7 +18,7 @@ Do not call this for ordinary revive effects. Normal rule procedures registered 
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3569`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3572`
 
 ## Used By
 

@@ -18,7 +18,7 @@ The registered status effect includes the local client hint and resets with the 
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3511`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3514`
 
 ## Used By
 

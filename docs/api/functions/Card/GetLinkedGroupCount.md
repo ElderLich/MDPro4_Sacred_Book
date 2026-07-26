@@ -20,7 +20,7 @@ Returns the number of cards in zones linked by c.
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3420`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3423`
 
 ## Used By
 

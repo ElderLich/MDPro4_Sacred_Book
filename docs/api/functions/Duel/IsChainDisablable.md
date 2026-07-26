@@ -60,8 +60,8 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Master Peace, the True Dracoverlord | `12800564` | [Scripts/c12800564.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c12800564.lua) | 45 |
 | Mystical Elf - White Lightning | `15613529` | [Scripts/c15613529.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c15613529.lua) | 45 |
 | Springans Interluder | `25415161` | [Scripts/c25415161.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c25415161.lua) | 45 |
+| Ryzeal Cross | `6798031` | [Scripts/c6798031.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c6798031.lua) | 45 |
 | Evil★Twin GG EZ | `34365442` | [Scripts/c34365442.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c34365442.lua) | 45 |
-| Inzektor Orb | `38643567` | [Scripts/c38643567.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c38643567.lua) | 45 |
 | ...and 132 more |  |  |  |
 
 ## Script Examples

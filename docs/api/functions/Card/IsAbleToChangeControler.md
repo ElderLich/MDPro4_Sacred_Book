@@ -20,7 +20,7 @@ Checks only whether c is free of EFFECT_CANNOT_CHANGE_CONTROL.
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3626`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3629`
 
 ## Used By
 

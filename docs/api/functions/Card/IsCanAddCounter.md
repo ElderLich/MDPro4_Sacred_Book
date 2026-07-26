@@ -25,7 +25,7 @@ When loc is 0, c must currently be face-up on the field. When loc is nonzero, th
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3635`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3638`
 
 ## Used By
 

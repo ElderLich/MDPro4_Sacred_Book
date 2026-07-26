@@ -40,7 +40,7 @@ After the Equip Card leaves the field, this relationship is gone. Use `Card.GetP
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3519`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3522`
 
 ## Used By
 

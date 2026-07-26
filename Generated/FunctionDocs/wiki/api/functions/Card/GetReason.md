@@ -21,4 +21,4 @@ This is the reason recorded in c's current state, such as REASON_EFFECT, REASON_
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3459`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3462`

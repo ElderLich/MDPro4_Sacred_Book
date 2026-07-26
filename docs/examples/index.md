@@ -71,6 +71,7 @@ The featured pages are selected from scripts with many detected API calls and ca
 | [Dark End Evaporation Dragon](cards/62002838) | `62002838` | 63 | `Scripts/c62002838.lua` |
 | [Nekroz Kaleidoscope](cards/51124303) | `51124303` | 63 | `Scripts/c51124303.lua` |
 | [Future Fusion Nova](cards/92058902) | `92058902` | 63 | `Scripts/c92058902.lua` |
+| [Artmage Masterwork -Succession-](cards/37517035) | `37517035` | 63 | `Scripts/c37517035.lua` |
 | [Plunder Patroll Shipshape Ships Shipping](cards/44227727) | `44227727` | 63 | `Scripts/c44227727.lua` |
 | [Enneacraft - Atil.SPIA](cards/71801447) | `71801447` | 62 | `Scripts/c71801447.lua` |
 | [Enneacraft - Aiza.LEON](cards/82359538) | `82359538` | 62 | `Scripts/c82359538.lua` |
@@ -89,7 +90,6 @@ The featured pages are selected from scripts with many detected API calls and ca
 | [Albion the Branded Dragon](cards/87746184) | `87746184` | 62 | `Scripts/c87746184.lua` |
 | [Dracotail Shaulas](cards/42125140) | `42125140` | 62 | `Scripts/c42125140.lua` |
 | [Ashened to Endlessness](cards/34813443) | `34813443` | 62 | `Scripts/c34813443.lua` |
-| [Artmage Masterwork -Succession-](cards/37517035) | `37517035` | 62 | `Scripts/c37517035.lua` |
 | [PSY-Framelord Zeta](cards/37192109) | `37192109` | 62 | `Scripts/c37192109.lua` |
 | [The Gaze of Timaeus](cards/22283204) | `22283204` | 62 | `Scripts/c22283204.lua` |
 | [Penetration Fusion](cards/8778267) | `8778267` | 62 | `Scripts/c8778267.lua` |

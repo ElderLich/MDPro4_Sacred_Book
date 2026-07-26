@@ -53,7 +53,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Prepare to Strike Back | `4483989` | [Scripts/c4483989.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c4483989.lua) | 31 |
 | Toon Barrel Dragon | `28112535` | [Scripts/c28112535.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c28112535.lua) | 31 |
 | Origami Goddess | `7930346` | [Scripts/c7930346.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c7930346.lua) | 31 |
-| Vortex of Time | `42138622` | [Scripts/c42138622.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c42138622.lua) | 29 |
+| Vortex of Time | `42138622` | [Scripts/c42138622.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c42138622.lua) | 30 |
 | Head Judging | `38143903` | [Scripts/c38143903.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c38143903.lua) | 28 |
 | Fairy Box | `21598948` | [Scripts/c21598948.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c21598948.lua) | 28 |
 | Tempura of Fortune - EBI | `86304179` | [Scripts/c86304179.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c86304179.lua) | 26 |

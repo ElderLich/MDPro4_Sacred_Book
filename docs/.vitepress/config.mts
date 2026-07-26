@@ -1,5 +1,7 @@
 import { defineConfig } from 'vitepress';
 
+const analyticsToken = process.env.CLOUDFLARE_WEB_ANALYTICS_TOKEN?.trim();
+
 function renderSearchMarkdown(src: string, env: any, md: any) {
   const relativePath = String(env.relativePath || '').replace(/\\/g, '/');
   if (relativePath.startsWith('examples/cards/')) {
@@ -16,6 +18,18 @@ export default defineConfig({
   description: 'MDPro3/YGOPro Lua card scripting lessons, examples, and API reference.',
   base: '/MDPro3_Sacred_Book/',
   cleanUrls: true,
+  head: analyticsToken
+    ? [
+        [
+          'script',
+          {
+            type: 'module',
+            src: 'https://static.cloudflareinsights.com/beacon.min.js',
+            'data-cf-beacon': JSON.stringify({ token: analyticsToken, spa: true }),
+          },
+        ],
+      ]
+    : [],
   themeConfig: {
     nav: [
       { text: 'Home', link: '/' },
@@ -196,5 +210,8 @@ export default defineConfig({
     socialLinks: [
       { icon: 'github', link: 'https://github.com/ElderLich/MDPro3_Sacred_Book' },
     ],
+    footer: {
+      message: '<a href="/MDPro3_Sacred_Book/privacy">Privacy & analytics</a>',
+    },
   },
 });

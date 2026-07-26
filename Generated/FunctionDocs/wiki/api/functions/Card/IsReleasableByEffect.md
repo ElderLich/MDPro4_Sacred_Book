@@ -20,4 +20,4 @@ Checks whether c can be Released by the current resolving effect, using the curr
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3596`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3599`

@@ -22,7 +22,7 @@ Double-code cards return two codes: the printed original code and the second rul
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3388`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3391`
 
 ## Used By
 

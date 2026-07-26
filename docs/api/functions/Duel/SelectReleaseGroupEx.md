@@ -56,9 +56,9 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | D/D/D Dragon King Pendragon | `56619314` | [Scripts/c56619314.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c56619314.lua) | 42 |
 | Evoltile Pholis | `89776023` | [Scripts/c89776023.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c89776023.lua) | 41 |
 | Mitsurugi Prayers | `45171524` | [Scripts/c45171524.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c45171524.lua) | 41 |
+| Mitsurugi Sacred Boundary | `12210097` | [Scripts/c12210097.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c12210097.lua) | 40 |
 | Nekroz of Valkyrus | `25857246` | [Scripts/c25857246.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c25857246.lua) | 39 |
 | Deception of the Sinful Spoils | `66328392` | [Scripts/c66328392.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c66328392.lua) | 39 |
-| Mitsurugi Sacred Boundary | `12210097` | [Scripts/c12210097.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c12210097.lua) | 39 |
 | Jinzo - Layered | `99666430` | [Scripts/c99666430.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c99666430.lua) | 39 |
 | Magical Dimension | `28553439` | [Scripts/c28553439.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c28553439.lua) | 39 |
 | Nekroz of Areadbhair | `39468724` | [Scripts/c39468724.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c39468724.lua) | 38 |

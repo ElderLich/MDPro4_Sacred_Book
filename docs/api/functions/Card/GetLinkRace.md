@@ -21,7 +21,7 @@ Returns the Race c uses as Link Material for player, defaulting to the current r
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3438`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3441`
 
 ## Used By
 

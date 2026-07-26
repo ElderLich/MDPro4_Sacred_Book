@@ -20,4 +20,4 @@ Returns the ATK value recorded for c's previous on-field state.
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3452`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3455`
