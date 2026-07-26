@@ -34,8 +34,8 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Mayosenju Hitot | `21364070` | [Scripts/c21364070.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c21364070.lua) | 46 |
-| Mayosenju Daibak | `93368494` | [Scripts/c93368494.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c93368494.lua) | 38 |
+| Mayosenju Hitot | `21364070` | [Scripts/c21364070.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c21364070.lua) | 1 |
+| Mayosenju Daibak | `93368494` | [Scripts/c93368494.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c93368494.lua) | 1 |
 
 ## Script Examples
 

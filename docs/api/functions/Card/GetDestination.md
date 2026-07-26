@@ -31,13 +31,13 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Neos Fusion | `14088859` | [Scripts/c14088859.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c14088859.lua) | 49 |
-| Madolche Chateau | `14001430` | [Scripts/c14001430.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c14001430.lua) | 45 |
-| Tiki Soul | `49514333` | [Scripts/c49514333.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c49514333.lua) | 43 |
-| Archlord Kristya | `59509952` | [Scripts/c59509952.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c59509952.lua) | 32 |
-| Storm Caller | `15935204` | [Scripts/c15935204.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c15935204.lua) | 32 |
-| Evigishki Merrowgeist | `76372778` | [Scripts/c76372778.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c76372778.lua) | 21 |
-| Spirit Elimination | `69832741` | [Scripts/c69832741.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c69832741.lua) | 20 |
+| Neos Fusion | `14088859` | [Scripts/c14088859.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c14088859.lua) | 1 |
+| Madolche Chateau | `14001430` | [Scripts/c14001430.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c14001430.lua) | 1 |
+| Tiki Soul | `49514333` | [Scripts/c49514333.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c49514333.lua) | 1 |
+| Archlord Kristya | `59509952` | [Scripts/c59509952.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c59509952.lua) | 1 |
+| Storm Caller | `15935204` | [Scripts/c15935204.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c15935204.lua) | 2 |
+| Evigishki Merrowgeist | `76372778` | [Scripts/c76372778.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c76372778.lua) | 2 |
+| Spirit Elimination | `69832741` | [Scripts/c69832741.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c69832741.lua) | 1 |
 
 ## Script Examples
 

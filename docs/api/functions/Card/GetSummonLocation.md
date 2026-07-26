@@ -31,8 +31,8 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Ursarctic Septentrion | `53087962` | [Scripts/c53087962.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c53087962.lua) | 44 |
-| Psychic Eraser Laser | `9322133` | [Scripts/c9322133.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c9322133.lua) | 23 |
+| Ursarctic Septentrion | `53087962` | [Scripts/c53087962.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c53087962.lua) | 1 |
+| Psychic Eraser Laser | `9322133` | [Scripts/c9322133.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c9322133.lua) | 1 |
 
 ## Script Examples
 

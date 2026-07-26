@@ -4,6 +4,12 @@ A set code is the engine's stable identifier for an archetype, series, or
 subfamily. Use it when card text names a family. Do not compare translated card
 names or search a card's text at runtime.
 
+::: warning Different from Effect.SetCode
+This page is only about archetype membership stored on cards. It does not
+document calls such as `e:SetCode(EVENT_ADJUST)`. Those engine event and rule
+codes belong to [Effect.SetCode](/api/functions/Effect/SetCode).
+:::
+
 This page covers every general set-code check exposed by the local core, the
 listed-set and material-list helpers in `utility.lua`, dynamic membership, and
 the less common places where a set code appears.

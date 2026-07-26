@@ -31,10 +31,10 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Lunalight Masquerade | `2344618` | [Scripts/c2344618.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c2344618.lua) | 57 |
-| Amazoness Secret Arts | `86758746` | [Scripts/c86758746.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c86758746.lua) | 57 |
-| Cyberdark Chimera | `5370235` | [Scripts/c5370235.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c5370235.lua) | 49 |
-| Curse of Dragon, the Magical Knight Dragon | `72064891` | [Scripts/c72064891.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c72064891.lua) | 46 |
+| Lunalight Masquerade | `2344618` | [Scripts/c2344618.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c2344618.lua) | 1 |
+| Amazoness Secret Arts | `86758746` | [Scripts/c86758746.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c86758746.lua) | 1 |
+| Cyberdark Chimera | `5370235` | [Scripts/c5370235.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c5370235.lua) | 1 |
+| Curse of Dragon, the Magical Knight Dragon | `72064891` | [Scripts/c72064891.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c72064891.lua) | 1 |
 
 ## Script Examples
 

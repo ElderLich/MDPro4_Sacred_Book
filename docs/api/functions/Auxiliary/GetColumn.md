@@ -33,10 +33,10 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Infinite Impermanence | `10045474` | [Scripts/c10045474.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c10045474.lua) | 41 |
-| Red Hared Hasty Horse | `19636995` | [Scripts/c19636995.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c19636995.lua) | 31 |
-| Broken Line | `88086137` | [Scripts/c88086137.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c88086137.lua) | 19 |
-| Blasting Fuse | `99788587` | [Scripts/c99788587.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c99788587.lua) | 19 |
+| Infinite Impermanence | `10045474` | [Scripts/c10045474.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c10045474.lua) | 1 |
+| Red Hared Hasty Horse | `19636995` | [Scripts/c19636995.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c19636995.lua) | 2 |
+| Broken Line | `88086137` | [Scripts/c88086137.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c88086137.lua) | 1 |
+| Blasting Fuse | `99788587` | [Scripts/c99788587.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c99788587.lua) | 2 |
 
 ## Script Examples
 

@@ -31,18 +31,18 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| [Shooting Majestic Star Dragon](/examples/cards/40939228) | `40939228` | [Scripts/c40939228.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c40939228.lua) | 62 |
-| [W:P Fancy Ball](/examples/cards/4993187) | `4993187` | [Scripts/c4993187.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c4993187.lua) | 61 |
-| Darklord Uprising | `54527349` | [Scripts/c54527349.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c54527349.lua) | 54 |
-| Tally-ho! Springans | `9175957` | [Scripts/c9175957.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c9175957.lua) | 46 |
-| Gunkan Suship Shirauo-class Carrier | `21293424` | [Scripts/c21293424.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c21293424.lua) | 44 |
-| Evigishki Neremanas | `88926295` | [Scripts/c88926295.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c88926295.lua) | 43 |
-| Virakam the Artificial Spirit | `10673071` | [Scripts/c10673071.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c10673071.lua) | 41 |
-| Double Spell | `24096228` | [Scripts/c24096228.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c24096228.lua) | 40 |
-| Awakening of the Crystal Ultimates | `12877076` | [Scripts/c12877076.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c12877076.lua) | 37 |
-| Tri-Edge Master | `52445243` | [Scripts/c52445243.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c52445243.lua) | 37 |
-| Linguriboh | `24842059` | [Scripts/c24842059.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c24842059.lua) | 35 |
-| Recette de Poisson (Fish Recipe) | `87778106` | [Scripts/c87778106.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c87778106.lua) | 19 |
+| [Shooting Majestic Star Dragon](/examples/cards/40939228) | `40939228` | [Scripts/c40939228.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c40939228.lua) | 2 |
+| [W:P Fancy Ball](/examples/cards/4993187) | `4993187` | [Scripts/c4993187.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c4993187.lua) | 2 |
+| Darklord Uprising | `54527349` | [Scripts/c54527349.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c54527349.lua) | 1 |
+| Tally-ho! Springans | `9175957` | [Scripts/c9175957.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c9175957.lua) | 2 |
+| Gunkan Suship Shirauo-class Carrier | `21293424` | [Scripts/c21293424.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c21293424.lua) | 1 |
+| Evigishki Neremanas | `88926295` | [Scripts/c88926295.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c88926295.lua) | 2 |
+| Virakam the Artificial Spirit | `10673071` | [Scripts/c10673071.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c10673071.lua) | 2 |
+| Double Spell | `24096228` | [Scripts/c24096228.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c24096228.lua) | 1 |
+| Awakening of the Crystal Ultimates | `12877076` | [Scripts/c12877076.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c12877076.lua) | 1 |
+| Tri-Edge Master | `52445243` | [Scripts/c52445243.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c52445243.lua) | 1 |
+| Linguriboh | `24842059` | [Scripts/c24842059.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c24842059.lua) | 2 |
+| Recette de Poisson (Fish Recipe) | `87778106` | [Scripts/c87778106.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c87778106.lua) | 1 |
 
 ## Script Examples
 

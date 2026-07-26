@@ -27,7 +27,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Satellarknight Capella | `86466163` | [Scripts/c86466163.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c86466163.lua) | 21 |
+| Satellarknight Capella | `86466163` | [Scripts/c86466163.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c86466163.lua) | 1 |
 
 ## Script Examples
 

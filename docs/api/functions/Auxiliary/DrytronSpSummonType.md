@@ -31,9 +31,9 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Drytron Meteonis Quadrantids | `95209656` | [Scripts/c95209656.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c95209656.lua) | 49 |
-| Drytron Nova | `94187078` | [Scripts/c94187078.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c94187078.lua) | 37 |
-| Drytron Gamma Eltanin | `60037599` | [Scripts/c60037599.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c60037599.lua) | 29 |
+| Drytron Meteonis Quadrantids | `95209656` | [Scripts/c95209656.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c95209656.lua) | 3 |
+| Drytron Nova | `94187078` | [Scripts/c94187078.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c94187078.lua) | 3 |
+| Drytron Gamma Eltanin | `60037599` | [Scripts/c60037599.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c60037599.lua) | 3 |
 
 ## Script Examples
 

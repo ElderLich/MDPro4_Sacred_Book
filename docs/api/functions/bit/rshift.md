@@ -32,14 +32,14 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| [Nekroz Kaleidoscope](/examples/cards/51124303) | `51124303` | [Scripts/c51124303.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c51124303.lua) | 63 |
-| S-Force Mystify | `4611341` | [Scripts/c4611341.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c4611341.lua) | 38 |
-| Cairngorgon, Antiluminescent Knight | `21501505` | [Scripts/c21501505.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c21501505.lua) | 36 |
-| Dueltaining | `19162134` | [Scripts/c19162134.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c19162134.lua) | 29 |
-| Remote Rebirth | `54658815` | [Scripts/c54658815.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c54658815.lua) | 25 |
-| Wattkinetic Puppeteer | `88392300` | [Scripts/c88392300.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c88392300.lua) | 24 |
-| Dai Dance | `50696588` | [Scripts/c50696588.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c50696588.lua) | 22 |
-| Dice Re-Roll | `83241722` | [Scripts/c83241722.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c83241722.lua) | 17 |
+| [Nekroz Kaleidoscope](/examples/cards/51124303) | `51124303` | [Scripts/c51124303.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c51124303.lua) | 1 |
+| S-Force Mystify | `4611341` | [Scripts/c4611341.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c4611341.lua) | 1 |
+| Cairngorgon, Antiluminescent Knight | `21501505` | [Scripts/c21501505.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c21501505.lua) | 1 |
+| Dueltaining | `19162134` | [Scripts/c19162134.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c19162134.lua) | 1 |
+| Remote Rebirth | `54658815` | [Scripts/c54658815.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c54658815.lua) | 2 |
+| Wattkinetic Puppeteer | `88392300` | [Scripts/c88392300.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c88392300.lua) | 1 |
+| Dai Dance | `50696588` | [Scripts/c50696588.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c50696588.lua) | 1 |
+| Dice Re-Roll | `83241722` | [Scripts/c83241722.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c83241722.lua) | 1 |
 
 ## Script Examples
 

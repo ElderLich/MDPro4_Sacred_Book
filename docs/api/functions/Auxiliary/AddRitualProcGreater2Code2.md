@@ -39,9 +39,9 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Cycle of the World | `32828635` | [Scripts/c32828635.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c32828635.lua) | 31 |
-| Turning of the World | `95612049` | [Scripts/c95612049.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c95612049.lua) | 5 |
-| Shinobird's Calling | `73055622` | [Scripts/c73055622.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c73055622.lua) | 2 |
+| Cycle of the World | `32828635` | [Scripts/c32828635.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c32828635.lua) | 1 |
+| Turning of the World | `95612049` | [Scripts/c95612049.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c95612049.lua) | 1 |
+| Shinobird's Calling | `73055622` | [Scripts/c73055622.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c73055622.lua) | 1 |
 
 ## Script Examples
 

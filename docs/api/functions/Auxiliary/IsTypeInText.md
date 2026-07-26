@@ -32,9 +32,9 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Union Controller | `2133971` | [Scripts/c2133971.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c2133971.lua) | 39 |
-| Shinobaroness Shade Peacock | `33325951` | [Scripts/c33325951.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c33325951.lua) | 32 |
-| Geminize Lord Golknight | `72305034` | [Scripts/c72305034.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c72305034.lua) | 28 |
+| Union Controller | `2133971` | [Scripts/c2133971.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c2133971.lua) | 1 |
+| Shinobaroness Shade Peacock | `33325951` | [Scripts/c33325951.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c33325951.lua) | 1 |
+| Geminize Lord Golknight | `72305034` | [Scripts/c72305034.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c72305034.lua) | 1 |
 
 ## Script Examples
 

@@ -30,9 +30,9 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| [Starving Venemy Dragon](/examples/cards/93729065) | `93729065` | [Scripts/c93729065.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c93729065.lua) | 61 |
-| Ancient City - Rainbow Ruins | `34487429` | [Scripts/c34487429.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c34487429.lua) | 44 |
-| Odd-Eyes Pendulum Dragon | `16178681` | [Scripts/c16178681.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c16178681.lua) | 36 |
+| [Starving Venemy Dragon](/examples/cards/93729065) | `93729065` | [Scripts/c93729065.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c93729065.lua) | 1 |
+| Ancient City - Rainbow Ruins | `34487429` | [Scripts/c34487429.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c34487429.lua) | 1 |
+| Odd-Eyes Pendulum Dragon | `16178681` | [Scripts/c16178681.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c16178681.lua) | 1 |
 
 ## Script Examples
 

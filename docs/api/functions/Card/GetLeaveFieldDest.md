@@ -31,10 +31,10 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Tiki Soul | `49514333` | [Scripts/c49514333.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c49514333.lua) | 43 |
-| Old Mind | `54239282` | [Scripts/c54239282.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c54239282.lua) | 36 |
-| Storm Caller | `15935204` | [Scripts/c15935204.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c15935204.lua) | 32 |
-| Evigishki Merrowgeist | `76372778` | [Scripts/c76372778.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c76372778.lua) | 21 |
+| Tiki Soul | `49514333` | [Scripts/c49514333.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c49514333.lua) | 1 |
+| Old Mind | `54239282` | [Scripts/c54239282.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c54239282.lua) | 1 |
+| Storm Caller | `15935204` | [Scripts/c15935204.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c15935204.lua) | 1 |
+| Evigishki Merrowgeist | `76372778` | [Scripts/c76372778.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c76372778.lua) | 1 |
 
 ## Script Examples
 

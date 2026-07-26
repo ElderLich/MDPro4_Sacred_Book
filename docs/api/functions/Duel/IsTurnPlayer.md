@@ -31,14 +31,14 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| D/D Extra Surveyor | `74387963` | [Scripts/c74387963.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c74387963.lua) | 60 |
-| Volcanic Doomfire | `32543380` | [Scripts/c32543380.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c32543380.lua) | 43 |
-| Thunderforce Attack | `42469671` | [Scripts/c42469671.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c42469671.lua) | 42 |
-| Hieratic Seal From the Ashes | `53670497` | [Scripts/c53670497.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c53670497.lua) | 37 |
-| Mask of Dispel | `20765952` | [Scripts/c20765952.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c20765952.lua) | 34 |
-| White Aura Bihamut | `89907227` | [Scripts/c89907227.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c89907227.lua) | 33 |
-| Evil HERO Malicious Fiend | `86676862` | [Scripts/c86676862.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c86676862.lua) | 21 |
-| Ultimate Tyranno | `15894048` | [Scripts/c15894048.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c15894048.lua) | 17 |
+| D/D Extra Surveyor | `74387963` | [Scripts/c74387963.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c74387963.lua) | 1 |
+| Volcanic Doomfire | `32543380` | [Scripts/c32543380.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c32543380.lua) | 1 |
+| Thunderforce Attack | `42469671` | [Scripts/c42469671.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c42469671.lua) | 1 |
+| Hieratic Seal From the Ashes | `53670497` | [Scripts/c53670497.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c53670497.lua) | 2 |
+| Mask of Dispel | `20765952` | [Scripts/c20765952.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c20765952.lua) | 1 |
+| White Aura Bihamut | `89907227` | [Scripts/c89907227.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c89907227.lua) | 1 |
+| Evil HERO Malicious Fiend | `86676862` | [Scripts/c86676862.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c86676862.lua) | 1 |
+| Ultimate Tyranno | `15894048` | [Scripts/c15894048.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c15894048.lua) | 1 |
 
 ## Script Examples
 

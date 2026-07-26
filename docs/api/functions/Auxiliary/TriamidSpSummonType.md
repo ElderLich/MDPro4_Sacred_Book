@@ -31,9 +31,9 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Triamid Pulse | `96100333` | [Scripts/c96100333.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c96100333.lua) | 58 |
-| Triamid Loading | `64576557` | [Scripts/c64576557.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c64576557.lua) | 45 |
-| Triamid Kingolem | `72772445` | [Scripts/c72772445.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c72772445.lua) | 36 |
+| Triamid Pulse | `96100333` | [Scripts/c96100333.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c96100333.lua) | 3 |
+| Triamid Loading | `64576557` | [Scripts/c64576557.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c64576557.lua) | 3 |
+| Triamid Kingolem | `72772445` | [Scripts/c72772445.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c72772445.lua) | 3 |
 
 ## Script Examples
 

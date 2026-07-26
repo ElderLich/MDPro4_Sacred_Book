@@ -32,15 +32,15 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| [Pendulum Evolution](/examples/cards/55795155) | `55795155` | [Scripts/c55795155.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c55795155.lua) | 77 |
-| Zefraath | `29432356` | [Scripts/c29432356.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c29432356.lua) | 49 |
-| PenduLuMoon | `66150724` | [Scripts/c66150724.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c66150724.lua) | 48 |
-| Harmonic Oscillation | `31531170` | [Scripts/c31531170.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c31531170.lua) | 44 |
-| Performapal Popperup | `11481610` | [Scripts/c11481610.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c11481610.lua) | 43 |
-| Dharma-Eye Magician | `88757791` | [Scripts/c88757791.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c88757791.lua) | 41 |
-| Metrognome | `26638543` | [Scripts/c26638543.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c26638543.lua) | 34 |
-| Pendulum Scale | `17885118` | [Scripts/c17885118.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c17885118.lua) | 34 |
-| Zefra Path | `5255013` | [Scripts/c5255013.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c5255013.lua) | 27 |
+| [Pendulum Evolution](/examples/cards/55795155) | `55795155` | [Scripts/c55795155.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c55795155.lua) | 2 |
+| Zefraath | `29432356` | [Scripts/c29432356.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c29432356.lua) | 1 |
+| PenduLuMoon | `66150724` | [Scripts/c66150724.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c66150724.lua) | 2 |
+| Harmonic Oscillation | `31531170` | [Scripts/c31531170.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c31531170.lua) | 2 |
+| Performapal Popperup | `11481610` | [Scripts/c11481610.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c11481610.lua) | 1 |
+| Dharma-Eye Magician | `88757791` | [Scripts/c88757791.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c88757791.lua) | 1 |
+| Metrognome | `26638543` | [Scripts/c26638543.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c26638543.lua) | 2 |
+| Pendulum Scale | `17885118` | [Scripts/c17885118.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c17885118.lua) | 2 |
+| Zefra Path | `5255013` | [Scripts/c5255013.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c5255013.lua) | 1 |
 
 ## Script Examples
 

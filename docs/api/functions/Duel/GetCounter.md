@@ -34,18 +34,18 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| [Starving Venemy Dragon](/examples/cards/93729065) | `93729065` | [Scripts/c93729065.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c93729065.lua) | 61 |
-| Dimonno Vaalmonica | `30432463` | [Scripts/c30432463.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c30432463.lua) | 53 |
-| Mythical Beast Master Cerberus | `53842431` | [Scripts/c53842431.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c53842431.lua) | 49 |
-| Enneapolis | `17621695` | [Scripts/c17621695.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c17621695.lua) | 48 |
-| Battle Shogun of the Six Samurai | `74752631` | [Scripts/c74752631.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c74752631.lua) | 48 |
-| Predaplant Moray Nepenthes | `22011689` | [Scripts/c22011689.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c22011689.lua) | 44 |
-| Starving Venemy Lethal Dose Dragon | `22070401` | [Scripts/c22070401.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c22070401.lua) | 43 |
-| Tempest Magician | `63101919` | [Scripts/c63101919.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c63101919.lua) | 40 |
-| Six Strike - Sextuple Barrage | `90939874` | [Scripts/c90939874.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c90939874.lua) | 39 |
-| Snowdust Giant | `73659078` | [Scripts/c73659078.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c73659078.lua) | 31 |
-| Cloudian - Nimbusman | `20003527` | [Scripts/c20003527.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c20003527.lua) | 29 |
-| Cold Enchanter | `24661486` | [Scripts/c24661486.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c24661486.lua) | 26 |
+| [Starving Venemy Dragon](/examples/cards/93729065) | `93729065` | [Scripts/c93729065.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c93729065.lua) | 1 |
+| Dimonno Vaalmonica | `30432463` | [Scripts/c30432463.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c30432463.lua) | 1 |
+| Mythical Beast Master Cerberus | `53842431` | [Scripts/c53842431.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c53842431.lua) | 1 |
+| Enneapolis | `17621695` | [Scripts/c17621695.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c17621695.lua) | 2 |
+| Battle Shogun of the Six Samurai | `74752631` | [Scripts/c74752631.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c74752631.lua) | 1 |
+| Predaplant Moray Nepenthes | `22011689` | [Scripts/c22011689.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c22011689.lua) | 1 |
+| Starving Venemy Lethal Dose Dragon | `22070401` | [Scripts/c22070401.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c22070401.lua) | 1 |
+| Tempest Magician | `63101919` | [Scripts/c63101919.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c63101919.lua) | 1 |
+| Six Strike - Sextuple Barrage | `90939874` | [Scripts/c90939874.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c90939874.lua) | 1 |
+| Snowdust Giant | `73659078` | [Scripts/c73659078.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c73659078.lua) | 1 |
+| Cloudian - Nimbusman | `20003527` | [Scripts/c20003527.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c20003527.lua) | 1 |
+| Cold Enchanter | `24661486` | [Scripts/c24661486.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c24661486.lua) | 1 |
 
 ## Script Examples
 

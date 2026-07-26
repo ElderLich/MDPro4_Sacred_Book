@@ -32,11 +32,11 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Dragon Master Magia | `12381100` | [Scripts/c12381100.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c12381100.lua) | 57 |
-| Windwitch - Crystal Bell | `25793414` | [Scripts/c25793414.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c25793414.lua) | 57 |
-| Mirrorjade the Iceblade Dragon | `44146295` | [Scripts/c44146295.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c44146295.lua) | 49 |
-| Rune-Eyes Pendulum Dragon | `1516510` | [Scripts/c1516510.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c1516510.lua) | 33 |
-| Elemental HERO Neos Knight | `72926163` | [Scripts/c72926163.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c72926163.lua) | 24 |
+| Dragon Master Magia | `12381100` | [Scripts/c12381100.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c12381100.lua) | 1 |
+| Windwitch - Crystal Bell | `25793414` | [Scripts/c25793414.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c25793414.lua) | 1 |
+| Mirrorjade the Iceblade Dragon | `44146295` | [Scripts/c44146295.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c44146295.lua) | 1 |
+| Rune-Eyes Pendulum Dragon | `1516510` | [Scripts/c1516510.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c1516510.lua) | 1 |
+| Elemental HERO Neos Knight | `72926163` | [Scripts/c72926163.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c72926163.lua) | 1 |
 
 ## Script Examples
 

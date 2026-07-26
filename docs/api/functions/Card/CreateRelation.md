@@ -29,22 +29,22 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Smile Action | `47870325` | [Scripts/c47870325.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c47870325.lua) | 51 |
-| Alien Mother | `24104865` | [Scripts/c24104865.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c24104865.lua) | 50 |
-| Victory Viper XX03 | `93130021` | [Scripts/c93130021.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c93130021.lua) | 46 |
-| Overmind Archfiend | `24221808` | [Scripts/c24221808.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c24221808.lua) | 46 |
-| Power Capsule | `54289683` | [Scripts/c54289683.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c54289683.lua) | 45 |
-| Gladiator Beast Darius | `25924653` | [Scripts/c25924653.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c25924653.lua) | 44 |
-| Exodius the Ultimate Forbidden Lord | `13893596` | [Scripts/c13893596.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c13893596.lua) | 42 |
-| Light Law Medium | `52253888` | [Scripts/c52253888.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c52253888.lua) | 42 |
-| Morphtronic Vacuumen | `48868994` | [Scripts/c48868994.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c48868994.lua) | 41 |
-| Portable Battery Pack | `61840587` | [Scripts/c61840587.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c61840587.lua) | 41 |
-| Corrupted Keys | `67949763` | [Scripts/c67949763.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c67949763.lua) | 38 |
-| Future Visions | `87902575` | [Scripts/c87902575.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c87902575.lua) | 38 |
-| Elder Entity Norden | `17412721` | [Scripts/c17412721.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c17412721.lua) | 37 |
-| Morphtronic Repair Unit | `90239723` | [Scripts/c90239723.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c90239723.lua) | 35 |
-| Kinka-byo | `45452224` | [Scripts/c45452224.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c45452224.lua) | 34 |
-| Escape from the Dark Dimension | `31550470` | [Scripts/c31550470.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c31550470.lua) | 32 |
+| Smile Action | `47870325` | [Scripts/c47870325.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c47870325.lua) | 1 |
+| Alien Mother | `24104865` | [Scripts/c24104865.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c24104865.lua) | 1 |
+| Victory Viper XX03 | `93130021` | [Scripts/c93130021.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c93130021.lua) | 1 |
+| Overmind Archfiend | `24221808` | [Scripts/c24221808.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c24221808.lua) | 1 |
+| Power Capsule | `54289683` | [Scripts/c54289683.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c54289683.lua) | 1 |
+| Gladiator Beast Darius | `25924653` | [Scripts/c25924653.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c25924653.lua) | 2 |
+| Exodius the Ultimate Forbidden Lord | `13893596` | [Scripts/c13893596.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c13893596.lua) | 1 |
+| Light Law Medium | `52253888` | [Scripts/c52253888.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c52253888.lua) | 1 |
+| Morphtronic Vacuumen | `48868994` | [Scripts/c48868994.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c48868994.lua) | 1 |
+| Portable Battery Pack | `61840587` | [Scripts/c61840587.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c61840587.lua) | 1 |
+| Corrupted Keys | `67949763` | [Scripts/c67949763.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c67949763.lua) | 1 |
+| Future Visions | `87902575` | [Scripts/c87902575.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c87902575.lua) | 1 |
+| Elder Entity Norden | `17412721` | [Scripts/c17412721.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c17412721.lua) | 2 |
+| Morphtronic Repair Unit | `90239723` | [Scripts/c90239723.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c90239723.lua) | 1 |
+| Kinka-byo | `45452224` | [Scripts/c45452224.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c45452224.lua) | 2 |
+| Escape from the Dark Dimension | `31550470` | [Scripts/c31550470.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c31550470.lua) | 2 |
 
 ## Script Examples
 

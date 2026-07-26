@@ -39,27 +39,27 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Destiny HERO - Decider | `64184058` | [Scripts/c64184058.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c64184058.lua) | 40 |
-| D/D Savant Newton | `19302550` | [Scripts/c19302550.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c19302550.lua) | 39 |
-| Gouki Octostretch | `85008676` | [Scripts/c85008676.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c85008676.lua) | 38 |
-| Performage Damage Juggler | `68819554` | [Scripts/c68819554.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c68819554.lua) | 37 |
-| D/D Savant Copernicus | `46796664` | [Scripts/c46796664.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c46796664.lua) | 36 |
-| Performapal Rain Goat | `16617334` | [Scripts/c16617334.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c16617334.lua) | 36 |
-| Clear Kuriboh | `46613515` | [Scripts/c46613515.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c46613515.lua) | 35 |
-| Dream Shark | `6180710` | [Scripts/c6180710.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c6180710.lua) | 32 |
-| Performage Flame Eater | `4807253` | [Scripts/c4807253.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c4807253.lua) | 32 |
-| Donyoribo @Ignister | `14146794` | [Scripts/c14146794.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c14146794.lua) | 31 |
-| Performage Stilts Launcher | `4081665` | [Scripts/c4081665.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c4081665.lua) | 31 |
-| Sargasso Lighthouse | `37511832` | [Scripts/c37511832.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c37511832.lua) | 31 |
-| Performage Hat Tricker | `31292357` | [Scripts/c31292357.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c31292357.lua) | 30 |
-| Curse Reflection Doll | `33391067` | [Scripts/c33391067.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c33391067.lua) | 26 |
-| Link Restart | `27664101` | [Scripts/c27664101.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c27664101.lua) | 24 |
-| Crimson Fire | `24566654` | [Scripts/c24566654.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c24566654.lua) | 23 |
-| Junkuriboh | `38491199` | [Scripts/c38491199.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c38491199.lua) | 20 |
-| Ring of Defense | `58641905` | [Scripts/c58641905.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c58641905.lua) | 19 |
-| Achacha Chanbara | `62476197` | [Scripts/c62476197.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c62476197.lua) | 18 |
-| Energy-Absorbing Monolith | `57006589` | [Scripts/c57006589.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c57006589.lua) | 18 |
-| Spell of Pain | `76714458` | [Scripts/c76714458.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c76714458.lua) | 18 |
+| Destiny HERO - Decider | `64184058` | [Scripts/c64184058.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c64184058.lua) | 1 |
+| D/D Savant Newton | `19302550` | [Scripts/c19302550.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c19302550.lua) | 1 |
+| Gouki Octostretch | `85008676` | [Scripts/c85008676.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c85008676.lua) | 1 |
+| Performage Damage Juggler | `68819554` | [Scripts/c68819554.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c68819554.lua) | 1 |
+| D/D Savant Copernicus | `46796664` | [Scripts/c46796664.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c46796664.lua) | 1 |
+| Performapal Rain Goat | `16617334` | [Scripts/c16617334.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c16617334.lua) | 1 |
+| Clear Kuriboh | `46613515` | [Scripts/c46613515.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c46613515.lua) | 2 |
+| Dream Shark | `6180710` | [Scripts/c6180710.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c6180710.lua) | 1 |
+| Performage Flame Eater | `4807253` | [Scripts/c4807253.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c4807253.lua) | 1 |
+| Donyoribo @Ignister | `14146794` | [Scripts/c14146794.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c14146794.lua) | 1 |
+| Performage Stilts Launcher | `4081665` | [Scripts/c4081665.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c4081665.lua) | 1 |
+| Sargasso Lighthouse | `37511832` | [Scripts/c37511832.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c37511832.lua) | 1 |
+| Performage Hat Tricker | `31292357` | [Scripts/c31292357.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c31292357.lua) | 1 |
+| Curse Reflection Doll | `33391067` | [Scripts/c33391067.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c33391067.lua) | 1 |
+| Link Restart | `27664101` | [Scripts/c27664101.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c27664101.lua) | 1 |
+| Crimson Fire | `24566654` | [Scripts/c24566654.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c24566654.lua) | 1 |
+| Junkuriboh | `38491199` | [Scripts/c38491199.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c38491199.lua) | 1 |
+| Ring of Defense | `58641905` | [Scripts/c58641905.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c58641905.lua) | 1 |
+| Achacha Chanbara | `62476197` | [Scripts/c62476197.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c62476197.lua) | 2 |
+| Energy-Absorbing Monolith | `57006589` | [Scripts/c57006589.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c57006589.lua) | 1 |
+| Spell of Pain | `76714458` | [Scripts/c76714458.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c76714458.lua) | 1 |
 
 ## Script Examples
 

@@ -28,10 +28,10 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Kewl Tune Playlist | `40847034` | [Scripts/c40847034.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c40847034.lua) | 41 |
-| Kewl Tune Loudness War | `41069676` | [Scripts/c41069676.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c41069676.lua) | 38 |
-| Destiny HERO - Diamond Dude | `13093792` | [Scripts/c13093792.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c13093792.lua) | 32 |
-| Serial Spell | `49398568` | [Scripts/c49398568.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c49398568.lua) | 24 |
+| Kewl Tune Playlist | `40847034` | [Scripts/c40847034.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c40847034.lua) | 2 |
+| Kewl Tune Loudness War | `41069676` | [Scripts/c41069676.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c41069676.lua) | 2 |
+| Destiny HERO - Diamond Dude | `13093792` | [Scripts/c13093792.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c13093792.lua) | 2 |
+| Serial Spell | `49398568` | [Scripts/c49398568.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c49398568.lua) | 2 |
 
 ## Script Examples
 

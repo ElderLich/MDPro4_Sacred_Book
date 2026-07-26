@@ -34,19 +34,19 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Heraldic Beast Stad Whale | `97662494` | [Scripts/c97662494.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c97662494.lua) | 52 |
-| Obliterate!!! Blaze | `402416` | [Scripts/c402416.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c402416.lua) | 48 |
-| Final Cross | `35756798` | [Scripts/c35756798.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c35756798.lua) | 42 |
-| Riryoku Guardian | `96661780` | [Scripts/c96661780.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c96661780.lua) | 39 |
-| Scrap Warrior | `42711820` | [Scripts/c42711820.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c42711820.lua) | 38 |
-| Lyrilusc - Independent Nightingale | `76815942` | [Scripts/c76815942.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c76815942.lua) | 36 |
-| Heraldic Beast Gryphon | `60268386` | [Scripts/c60268386.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c60268386.lua) | 35 |
-| Synchro Chase | `23442438` | [Scripts/c23442438.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c23442438.lua) | 35 |
-| Junk Armor | `91215724` | [Scripts/c91215724.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c91215724.lua) | 33 |
-| Full-Speed Warrior | `17201951` | [Scripts/c17201951.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c17201951.lua) | 32 |
-| Scrap Synchron | `16449363` | [Scripts/c16449363.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c16449363.lua) | 31 |
-| Satellite Synchron | `57458399` | [Scripts/c57458399.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c57458399.lua) | 31 |
-| Junk Mail | `39520293` | [Scripts/c39520293.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c39520293.lua) | 26 |
+| Heraldic Beast Stad Whale | `97662494` | [Scripts/c97662494.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c97662494.lua) | 1 |
+| Obliterate!!! Blaze | `402416` | [Scripts/c402416.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c402416.lua) | 1 |
+| Final Cross | `35756798` | [Scripts/c35756798.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c35756798.lua) | 1 |
+| Riryoku Guardian | `96661780` | [Scripts/c96661780.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c96661780.lua) | 1 |
+| Scrap Warrior | `42711820` | [Scripts/c42711820.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c42711820.lua) | 1 |
+| Lyrilusc - Independent Nightingale | `76815942` | [Scripts/c76815942.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c76815942.lua) | 1 |
+| Heraldic Beast Gryphon | `60268386` | [Scripts/c60268386.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c60268386.lua) | 1 |
+| Synchro Chase | `23442438` | [Scripts/c23442438.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c23442438.lua) | 1 |
+| Junk Armor | `91215724` | [Scripts/c91215724.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c91215724.lua) | 1 |
+| Full-Speed Warrior | `17201951` | [Scripts/c17201951.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c17201951.lua) | 1 |
+| Scrap Synchron | `16449363` | [Scripts/c16449363.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c16449363.lua) | 1 |
+| Satellite Synchron | `57458399` | [Scripts/c57458399.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c57458399.lua) | 1 |
+| Junk Mail | `39520293` | [Scripts/c39520293.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c39520293.lua) | 1 |
 
 ## Script Examples
 

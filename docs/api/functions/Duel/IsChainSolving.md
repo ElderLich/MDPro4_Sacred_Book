@@ -27,19 +27,19 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| [Enneacraft - Archa.TAIL](/examples/cards/81237046) | `81237046` | [Scripts/c81237046.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c81237046.lua) | 63 |
-| [Enneacraft - Aiza.LEON](/examples/cards/82359538) | `82359538` | [Scripts/c82359538.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c82359538.lua) | 62 |
-| Awakening of the Sacred Beasts | `53701259` | [Scripts/c53701259.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c53701259.lua) | 57 |
-| Odd-Eyes Pendulumgraph Dragon | `66425726` | [Scripts/c66425726.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c66425726.lua) | 49 |
-| Guilt-Gripping Morganite | `61822419` | [Scripts/c61822419.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c61822419.lua) | 44 |
-| Crystal Tree | `47408488` | [Scripts/c47408488.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c47408488.lua) | 40 |
-| Ghost Sister &amp; Spooky Dogwood | `60643553` | [Scripts/c60643553.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c60643553.lua) | 39 |
-| Trickstar Lycoris | `35199656` | [Scripts/c35199656.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c35199656.lua) | 37 |
-| Mulcharmy Purulia | `84192580` | [Scripts/c84192580.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c84192580.lua) | 34 |
-| Mulcharmy Fuwalos | `42141493` | [Scripts/c42141493.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c42141493.lua) | 33 |
-| Mulcharmy Meowls | `87126721` | [Scripts/c87126721.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c87126721.lua) | 33 |
-| Maxx "C" | `23434538` | [Scripts/c23434538.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c23434538.lua) | 25 |
-| Shared Ride | `1372887` | [Scripts/c1372887.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c1372887.lua) | 22 |
+| [Enneacraft - Archa.TAIL](/examples/cards/81237046) | `81237046` | [Scripts/c81237046.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c81237046.lua) | 2 |
+| [Enneacraft - Aiza.LEON](/examples/cards/82359538) | `82359538` | [Scripts/c82359538.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c82359538.lua) | 2 |
+| Awakening of the Sacred Beasts | `53701259` | [Scripts/c53701259.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c53701259.lua) | 2 |
+| Odd-Eyes Pendulumgraph Dragon | `66425726` | [Scripts/c66425726.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c66425726.lua) | 2 |
+| Guilt-Gripping Morganite | `61822419` | [Scripts/c61822419.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c61822419.lua) | 1 |
+| Crystal Tree | `47408488` | [Scripts/c47408488.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c47408488.lua) | 2 |
+| Ghost Sister &amp; Spooky Dogwood | `60643553` | [Scripts/c60643553.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c60643553.lua) | 2 |
+| Trickstar Lycoris | `35199656` | [Scripts/c35199656.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c35199656.lua) | 2 |
+| Mulcharmy Purulia | `84192580` | [Scripts/c84192580.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c84192580.lua) | 2 |
+| Mulcharmy Fuwalos | `42141493` | [Scripts/c42141493.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c42141493.lua) | 2 |
+| Mulcharmy Meowls | `87126721` | [Scripts/c87126721.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c87126721.lua) | 2 |
+| Maxx "C" | `23434538` | [Scripts/c23434538.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c23434538.lua) | 2 |
+| Shared Ride | `1372887` | [Scripts/c1372887.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c1372887.lua) | 2 |
 
 ## Script Examples
 

@@ -32,7 +32,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Transmodify | `5288597` | [Scripts/c5288597.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c5288597.lua) | 37 |
+| Transmodify | `5288597` | [Scripts/c5288597.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c5288597.lua) | 1 |
 
 ## Script Examples
 

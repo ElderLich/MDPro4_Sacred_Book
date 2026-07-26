@@ -31,17 +31,17 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Nervedo the Shadebeast Power Patron | `17473466` | [Scripts/c17473466.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c17473466.lua) | 56 |
-| Tensei Ryu-Ge Anva | `56322832` | [Scripts/c56322832.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c56322832.lua) | 52 |
-| Solfachord Solfegia | `84693918` | [Scripts/c84693918.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c84693918.lua) | 50 |
-| Horoscope Sorcerer, the Stargazer Magician | `1186447` | [Scripts/c1186447.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c1186447.lua) | 49 |
-| Cerulean Skyfire | `54828837` | [Scripts/c54828837.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c54828837.lua) | 40 |
-| D/D Savant Newton | `19302550` | [Scripts/c19302550.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c19302550.lua) | 39 |
-| D/D Savant Copernicus | `46796664` | [Scripts/c46796664.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c46796664.lua) | 36 |
-| Dinomist Brachion | `368382` | [Scripts/c368382.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c368382.lua) | 32 |
-| Dinomist Plesios | `38988538` | [Scripts/c38988538.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c38988538.lua) | 29 |
-| Dinomist Ankylos | `32134638` | [Scripts/c32134638.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c32134638.lua) | 29 |
-| White Wing Magician | `11067666` | [Scripts/c11067666.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c11067666.lua) | 28 |
+| Nervedo the Shadebeast Power Patron | `17473466` | [Scripts/c17473466.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c17473466.lua) | 1 |
+| Tensei Ryu-Ge Anva | `56322832` | [Scripts/c56322832.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c56322832.lua) | 1 |
+| Solfachord Solfegia | `84693918` | [Scripts/c84693918.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c84693918.lua) | 1 |
+| Horoscope Sorcerer, the Stargazer Magician | `1186447` | [Scripts/c1186447.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c1186447.lua) | 1 |
+| Cerulean Skyfire | `54828837` | [Scripts/c54828837.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c54828837.lua) | 1 |
+| D/D Savant Newton | `19302550` | [Scripts/c19302550.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c19302550.lua) | 1 |
+| D/D Savant Copernicus | `46796664` | [Scripts/c46796664.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c46796664.lua) | 1 |
+| Dinomist Brachion | `368382` | [Scripts/c368382.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c368382.lua) | 1 |
+| Dinomist Plesios | `38988538` | [Scripts/c38988538.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c38988538.lua) | 1 |
+| Dinomist Ankylos | `32134638` | [Scripts/c32134638.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c32134638.lua) | 1 |
+| White Wing Magician | `11067666` | [Scripts/c11067666.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c11067666.lua) | 1 |
 
 ## Script Examples
 

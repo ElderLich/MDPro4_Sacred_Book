@@ -34,16 +34,16 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Masked HERO Koga | `50608164` | [Scripts/c50608164.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c50608164.lua) | 38 |
-| Masked HERO Atomic | `85672957` | [Scripts/c85672957.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c85672957.lua) | 36 |
-| Masked HERO Blast | `89870349` | [Scripts/c89870349.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c89870349.lua) | 34 |
-| Masked HERO Anki | `59642500` | [Scripts/c59642500.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c59642500.lua) | 32 |
-| Masked HERO Dark Law | `58481572` | [Scripts/c58481572.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c58481572.lua) | 31 |
-| Masked HERO Divine Wind | `22093873` | [Scripts/c22093873.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c22093873.lua) | 30 |
-| Masked HERO Dian | `62624486` | [Scripts/c62624486.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c62624486.lua) | 30 |
-| Masked HERO Acid | `29095552` | [Scripts/c29095552.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c29095552.lua) | 23 |
-| Masked HERO Goka | `58147549` | [Scripts/c58147549.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c58147549.lua) | 13 |
-| Masked HERO Vapor | `10920352` | [Scripts/c10920352.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c10920352.lua) | 9 |
+| Masked HERO Koga | `50608164` | [Scripts/c50608164.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c50608164.lua) | 1 |
+| Masked HERO Atomic | `85672957` | [Scripts/c85672957.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c85672957.lua) | 1 |
+| Masked HERO Blast | `89870349` | [Scripts/c89870349.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c89870349.lua) | 1 |
+| Masked HERO Anki | `59642500` | [Scripts/c59642500.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c59642500.lua) | 1 |
+| Masked HERO Dark Law | `58481572` | [Scripts/c58481572.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c58481572.lua) | 1 |
+| Masked HERO Divine Wind | `22093873` | [Scripts/c22093873.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c22093873.lua) | 1 |
+| Masked HERO Dian | `62624486` | [Scripts/c62624486.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c62624486.lua) | 1 |
+| Masked HERO Acid | `29095552` | [Scripts/c29095552.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c29095552.lua) | 1 |
+| Masked HERO Goka | `58147549` | [Scripts/c58147549.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c58147549.lua) | 1 |
+| Masked HERO Vapor | `10920352` | [Scripts/c10920352.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c10920352.lua) | 1 |
 
 ## Script Examples
 

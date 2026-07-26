@@ -32,8 +32,8 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| The Deep Grave | `17688543` | [Scripts/c17688543.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c17688543.lua) | 37 |
-| Reanimation Wave | `60312997` | [Scripts/c60312997.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c60312997.lua) | 30 |
+| The Deep Grave | `17688543` | [Scripts/c17688543.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c17688543.lua) | 3 |
+| Reanimation Wave | `60312997` | [Scripts/c60312997.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c60312997.lua) | 1 |
 
 ## Script Examples
 

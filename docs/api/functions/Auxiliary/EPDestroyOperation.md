@@ -34,11 +34,11 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| [Salamandra with Chain](/examples/cards/62091148) | `62091148` | [Scripts/c62091148.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c62091148.lua) | 81 |
-| R.B. Lambda Blade | `17188206` | [Scripts/c17188206.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c17188206.lua) | 56 |
-| Instant Fusion | `1845204` | [Scripts/c1845204.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c1845204.lua) | 36 |
-| Ritual Foregone | `65450690` | [Scripts/c65450690.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c65450690.lua) | 33 |
-| Onslaught of the Fire Kings | `22993208` | [Scripts/c22993208.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c22993208.lua) | 32 |
+| [Salamandra with Chain](/examples/cards/62091148) | `62091148` | [Scripts/c62091148.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c62091148.lua) | 1 |
+| R.B. Lambda Blade | `17188206` | [Scripts/c17188206.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c17188206.lua) | 1 |
+| Instant Fusion | `1845204` | [Scripts/c1845204.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c1845204.lua) | 1 |
+| Ritual Foregone | `65450690` | [Scripts/c65450690.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c65450690.lua) | 1 |
+| Onslaught of the Fire Kings | `22993208` | [Scripts/c22993208.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c22993208.lua) | 1 |
 
 ## Script Examples
 

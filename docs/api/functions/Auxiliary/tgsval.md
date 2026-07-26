@@ -33,8 +33,8 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Magical Mid-Breaker Field | `71650854` | [Scripts/c71650854.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c71650854.lua) | 23 |
-| Defense Zone | `59687381` | [Scripts/c59687381.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c59687381.lua) | 20 |
+| Magical Mid-Breaker Field | `71650854` | [Scripts/c71650854.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c71650854.lua) | 1 |
+| Defense Zone | `59687381` | [Scripts/c59687381.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c59687381.lua) | 1 |
 
 ## Script Examples
 

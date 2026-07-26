@@ -32,28 +32,28 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Rescue Ferret | `56343672` | [Scripts/c56343672.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c56343672.lua) | 49 |
-| Topologic Blaster Dragon | `30064423` | [Scripts/c30064423.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c30064423.lua) | 47 |
-| Sunvine Thrasher | `91557476` | [Scripts/c91557476.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c91557476.lua) | 47 |
-| Topologic Zeroboros | `66403530` | [Scripts/c66403530.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c66403530.lua) | 43 |
-| Topologic Bomber Dragon | `5821478` | [Scripts/c5821478.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c5821478.lua) | 43 |
-| Salamangreat Mole | `89484053` | [Scripts/c89484053.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c89484053.lua) | 43 |
-| Codebreaker Virus Berserker | `48736598` | [Scripts/c48736598.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c48736598.lua) | 42 |
-| Pasto-Ral Theorealize | `36709484` | [Scripts/c36709484.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c36709484.lua) | 41 |
-| Codebreaker Virus Swordsman | `84121193` | [Scripts/c84121193.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c84121193.lua) | 38 |
-| Crusadia Maximus | `81524756` | [Scripts/c81524756.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c81524756.lua) | 38 |
-| World Legacy - "World Crown" | `27918365` | [Scripts/c27918365.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c27918365.lua) | 36 |
-| World Chalice Guardragon | `84899094` | [Scripts/c84899094.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c84899094.lua) | 36 |
-| Crusadia Draco | `54525057` | [Scripts/c54525057.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c54525057.lua) | 36 |
-| Crusadia Reclusia | `55241609` | [Scripts/c55241609.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c55241609.lua) | 34 |
-| Sea Archiver | `53309998` | [Scripts/c53309998.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c53309998.lua) | 34 |
-| Topologic Gumblar Dragon | `22593417` | [Scripts/c22593417.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c22593417.lua) | 33 |
-| Crusadia Leonis | `28031913` | [Scripts/c28031913.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c28031913.lua) | 31 |
-| Crusadia Arboria | `91646304` | [Scripts/c91646304.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c91646304.lua) | 27 |
-| Lane Restriction | `47914440` | [Scripts/c47914440.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c47914440.lua) | 25 |
-| Packet Link | `78859567` | [Scripts/c78859567.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c78859567.lua) | 24 |
-| World Legacy Succession | `99674361` | [Scripts/c99674361.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c99674361.lua) | 21 |
-| Link Infra-Flier | `65100616` | [Scripts/c65100616.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c65100616.lua) | 12 |
+| Rescue Ferret | `56343672` | [Scripts/c56343672.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c56343672.lua) | 2 |
+| Topologic Blaster Dragon | `30064423` | [Scripts/c30064423.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c30064423.lua) | 2 |
+| Sunvine Thrasher | `91557476` | [Scripts/c91557476.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c91557476.lua) | 2 |
+| Topologic Zeroboros | `66403530` | [Scripts/c66403530.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c66403530.lua) | 2 |
+| Topologic Bomber Dragon | `5821478` | [Scripts/c5821478.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c5821478.lua) | 2 |
+| Salamangreat Mole | `89484053` | [Scripts/c89484053.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c89484053.lua) | 2 |
+| Codebreaker Virus Berserker | `48736598` | [Scripts/c48736598.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c48736598.lua) | 2 |
+| Pasto-Ral Theorealize | `36709484` | [Scripts/c36709484.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c36709484.lua) | 2 |
+| Codebreaker Virus Swordsman | `84121193` | [Scripts/c84121193.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c84121193.lua) | 2 |
+| Crusadia Maximus | `81524756` | [Scripts/c81524756.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c81524756.lua) | 2 |
+| World Legacy - "World Crown" | `27918365` | [Scripts/c27918365.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c27918365.lua) | 2 |
+| World Chalice Guardragon | `84899094` | [Scripts/c84899094.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c84899094.lua) | 2 |
+| Crusadia Draco | `54525057` | [Scripts/c54525057.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c54525057.lua) | 2 |
+| Crusadia Reclusia | `55241609` | [Scripts/c55241609.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c55241609.lua) | 2 |
+| Sea Archiver | `53309998` | [Scripts/c53309998.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c53309998.lua) | 2 |
+| Topologic Gumblar Dragon | `22593417` | [Scripts/c22593417.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c22593417.lua) | 2 |
+| Crusadia Leonis | `28031913` | [Scripts/c28031913.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c28031913.lua) | 2 |
+| Crusadia Arboria | `91646304` | [Scripts/c91646304.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c91646304.lua) | 2 |
+| Lane Restriction | `47914440` | [Scripts/c47914440.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c47914440.lua) | 1 |
+| Packet Link | `78859567` | [Scripts/c78859567.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c78859567.lua) | 2 |
+| World Legacy Succession | `99674361` | [Scripts/c99674361.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c99674361.lua) | 2 |
+| Link Infra-Flier | `65100616` | [Scripts/c65100616.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c65100616.lua) | 2 |
 
 ## Script Examples
 

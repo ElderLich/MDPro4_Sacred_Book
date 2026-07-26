@@ -32,8 +32,8 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Battle Shogun of the Six Samurai | `74752631` | [Scripts/c74752631.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c74752631.lua) | 48 |
-| Cosmic Slicer Zer'oll | `1487805` | [Scripts/c1487805.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c1487805.lua) | 40 |
+| Battle Shogun of the Six Samurai | `74752631` | [Scripts/c74752631.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c74752631.lua) | 1 |
+| Cosmic Slicer Zer'oll | `1487805` | [Scripts/c1487805.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c1487805.lua) | 1 |
 
 ## Script Examples
 

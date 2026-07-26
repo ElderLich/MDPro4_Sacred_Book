@@ -34,11 +34,11 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Nibiru, the Primal Being | `27204311` | [Scripts/c27204311.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c27204311.lua) | 47 |
-| Vendread Reunion | `2266498` | [Scripts/c2266498.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c2266498.lua) | 41 |
-| Ame no Habakiri no Mitsurugi | `13332685` | [Scripts/c13332685.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c13332685.lua) | 40 |
-| Mitsurugi Sacred Boundary | `12210097` | [Scripts/c12210097.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c12210097.lua) | 40 |
-| EMERGENCY! | `61292243` | [Scripts/c61292243.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c61292243.lua) | 36 |
+| Nibiru, the Primal Being | `27204311` | [Scripts/c27204311.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c27204311.lua) | 1 |
+| Vendread Reunion | `2266498` | [Scripts/c2266498.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c2266498.lua) | 1 |
+| Ame no Habakiri no Mitsurugi | `13332685` | [Scripts/c13332685.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c13332685.lua) | 1 |
+| Mitsurugi Sacred Boundary | `12210097` | [Scripts/c12210097.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c12210097.lua) | 1 |
+| EMERGENCY! | `61292243` | [Scripts/c61292243.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c61292243.lua) | 1 |
 
 ## Script Examples
 

@@ -28,9 +28,9 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Pharaoh's Treasure | `63571750` | [Scripts/c63571750.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c63571750.lua) | 27 |
-| Parasite Paracide | `27911549` | [Scripts/c27911549.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c27911549.lua) | 24 |
-| Grave Lure | `57270476` | [Scripts/c57270476.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c57270476.lua) | 18 |
+| Pharaoh's Treasure | `63571750` | [Scripts/c63571750.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c63571750.lua) | 1 |
+| Parasite Paracide | `27911549` | [Scripts/c27911549.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c27911549.lua) | 1 |
+| Grave Lure | `57270476` | [Scripts/c57270476.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c57270476.lua) | 1 |
 
 ## Script Examples
 

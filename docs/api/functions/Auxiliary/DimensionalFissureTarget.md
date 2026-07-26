@@ -28,10 +28,10 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Awakening of the Sacred Beasts | `53701259` | [Scripts/c53701259.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c53701259.lua) | 57 |
-| Invoked Okeanos | `6772168` | [Scripts/c6772168.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c6772168.lua) | 38 |
-| Different Dimension Ground | `31849106` | [Scripts/c31849106.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c31849106.lua) | 13 |
-| Dimensional Fissure | `81674782` | [Scripts/c81674782.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c81674782.lua) | 11 |
+| Awakening of the Sacred Beasts | `53701259` | [Scripts/c53701259.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c53701259.lua) | 1 |
+| Invoked Okeanos | `6772168` | [Scripts/c6772168.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c6772168.lua) | 1 |
+| Different Dimension Ground | `31849106` | [Scripts/c31849106.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c31849106.lua) | 1 |
+| Dimensional Fissure | `81674782` | [Scripts/c81674782.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c81674782.lua) | 1 |
 
 ## Script Examples
 

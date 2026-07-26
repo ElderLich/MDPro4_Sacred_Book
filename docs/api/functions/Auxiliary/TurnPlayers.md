@@ -27,15 +27,15 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| [Radiant Typhoon Varuroon, the Marine Eidolon](/examples/cards/39341885) | `39341885` | [Scripts/c39341885.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c39341885.lua) | 61 |
-| Plunder Patrollship Jord | `85969517` | [Scripts/c85969517.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c85969517.lua) | 58 |
-| S:P Little Knight | `29301450` | [Scripts/c29301450.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c29301450.lua) | 58 |
-| Cynet Refresh | `36368606` | [Scripts/c36368606.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c36368606.lua) | 49 |
-| Bone Temple Block | `47778083` | [Scripts/c47778083.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c47778083.lua) | 46 |
-| The Revived Sky God | `59094601` | [Scripts/c59094601.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c59094601.lua) | 39 |
-| Dark Magical Curtain | `41350417` | [Scripts/c41350417.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c41350417.lua) | 38 |
-| Dice Dungeon | `11808215` | [Scripts/c11808215.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c11808215.lua) | 31 |
-| Destructive Daruma Karma Cannon | `30748475` | [Scripts/c30748475.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c30748475.lua) | 20 |
+| [Radiant Typhoon Varuroon, the Marine Eidolon](/examples/cards/39341885) | `39341885` | [Scripts/c39341885.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c39341885.lua) | 1 |
+| Plunder Patrollship Jord | `85969517` | [Scripts/c85969517.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c85969517.lua) | 1 |
+| S:P Little Knight | `29301450` | [Scripts/c29301450.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c29301450.lua) | 1 |
+| Cynet Refresh | `36368606` | [Scripts/c36368606.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c36368606.lua) | 1 |
+| Bone Temple Block | `47778083` | [Scripts/c47778083.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c47778083.lua) | 2 |
+| The Revived Sky God | `59094601` | [Scripts/c59094601.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c59094601.lua) | 1 |
+| Dark Magical Curtain | `41350417` | [Scripts/c41350417.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c41350417.lua) | 1 |
+| Dice Dungeon | `11808215` | [Scripts/c11808215.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c11808215.lua) | 1 |
+| Destructive Daruma Karma Cannon | `30748475` | [Scripts/c30748475.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c30748475.lua) | 1 |
 
 ## Script Examples
 

@@ -31,13 +31,13 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| [D/D Count Surveyor](/examples/cards/5997110) | `5997110` | [Scripts/c5997110.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c5997110.lua) | 63 |
-| Performapal Smile Sorcerer | `7799906` | [Scripts/c7799906.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c7799906.lua) | 45 |
-| Solving for Pendulum | `5208118` | [Scripts/c5208118.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c5208118.lua) | 44 |
-| Performapal Laugh Maker | `44944304` | [Scripts/c44944304.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c44944304.lua) | 42 |
-| Ecole de Zone | `60514625` | [Scripts/c60514625.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c60514625.lua) | 34 |
-| Jigen Bakudan | `90020065` | [Scripts/c90020065.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c90020065.lua) | 26 |
-| Reptilianne Scylla | `16909657` | [Scripts/c16909657.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c16909657.lua) | 23 |
+| [D/D Count Surveyor](/examples/cards/5997110) | `5997110` | [Scripts/c5997110.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c5997110.lua) | 1 |
+| Performapal Smile Sorcerer | `7799906` | [Scripts/c7799906.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c7799906.lua) | 1 |
+| Solving for Pendulum | `5208118` | [Scripts/c5208118.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c5208118.lua) | 1 |
+| Performapal Laugh Maker | `44944304` | [Scripts/c44944304.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c44944304.lua) | 1 |
+| Ecole de Zone | `60514625` | [Scripts/c60514625.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c60514625.lua) | 1 |
+| Jigen Bakudan | `90020065` | [Scripts/c90020065.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c90020065.lua) | 1 |
+| Reptilianne Scylla | `16909657` | [Scripts/c16909657.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c16909657.lua) | 1 |
 
 ## Script Examples
 

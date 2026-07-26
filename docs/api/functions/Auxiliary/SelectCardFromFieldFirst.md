@@ -39,10 +39,10 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Majestic Mirage | `98020526` | [Scripts/c98020526.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c98020526.lua) | 46 |
-| Dark Contract with the Entities | `60168186` | [Scripts/c60168186.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c60168186.lua) | 45 |
-| Doomking Balerdroch | `39185163` | [Scripts/c39185163.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c39185163.lua) | 31 |
-| Kozmojo | `90452877` | [Scripts/c90452877.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c90452877.lua) | 25 |
+| Majestic Mirage | `98020526` | [Scripts/c98020526.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c98020526.lua) | 1 |
+| Dark Contract with the Entities | `60168186` | [Scripts/c60168186.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c60168186.lua) | 1 |
+| Doomking Balerdroch | `39185163` | [Scripts/c39185163.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c39185163.lua) | 1 |
+| Kozmojo | `90452877` | [Scripts/c90452877.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c90452877.lua) | 1 |
 
 ## Script Examples
 

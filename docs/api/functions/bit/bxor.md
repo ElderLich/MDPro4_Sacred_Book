@@ -32,14 +32,14 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| S-Force Justify | `35334193` | [Scripts/c35334193.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c35334193.lua) | 51 |
-| Parallel Panzer | `93394164` | [Scripts/c93394164.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c93394164.lua) | 46 |
-| Dark Infant @Ignister | `74567889` | [Scripts/c74567889.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c74567889.lua) | 45 |
-| Procession of the Tea Jar | `12612470` | [Scripts/c12612470.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c12612470.lua) | 36 |
-| Gouki The Solid Ogre | `22510667` | [Scripts/c22510667.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c22510667.lua) | 35 |
-| Link Back | `3567660` | [Scripts/c3567660.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c3567660.lua) | 31 |
-| Yajiro Invader | `10852583` | [Scripts/c10852583.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c10852583.lua) | 30 |
-| Staring Contest | `97729135` | [Scripts/c97729135.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c97729135.lua) | 29 |
+| S-Force Justify | `35334193` | [Scripts/c35334193.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c35334193.lua) | 1 |
+| Parallel Panzer | `93394164` | [Scripts/c93394164.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c93394164.lua) | 2 |
+| Dark Infant @Ignister | `74567889` | [Scripts/c74567889.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c74567889.lua) | 1 |
+| Procession of the Tea Jar | `12612470` | [Scripts/c12612470.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c12612470.lua) | 1 |
+| Gouki The Solid Ogre | `22510667` | [Scripts/c22510667.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c22510667.lua) | 1 |
+| Link Back | `3567660` | [Scripts/c3567660.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c3567660.lua) | 1 |
+| Yajiro Invader | `10852583` | [Scripts/c10852583.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c10852583.lua) | 1 |
+| Staring Contest | `97729135` | [Scripts/c97729135.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c97729135.lua) | 2 |
 
 ## Script Examples
 

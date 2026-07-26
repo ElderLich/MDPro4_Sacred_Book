@@ -29,13 +29,13 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Arktos XII - Chronochasm Vaylantz | `50687050` | [Scripts/c50687050.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c50687050.lua) | 56 |
-| Elfnote Tinia | `59581480` | [Scripts/c59581480.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c59581480.lua) | 52 |
-| Elfnote Lucina | `13597785` | [Scripts/c13597785.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c13597785.lua) | 41 |
-| Elfnote Fortuna | `85976588` | [Scripts/c85976588.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c85976588.lua) | 40 |
-| Appliancer Dryer Drake | `3507053` | [Scripts/c3507053.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c3507053.lua) | 40 |
-| World Legacy's Nightmare | `25163979` | [Scripts/c25163979.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c25163979.lua) | 30 |
-| Castle Link | `22198672` | [Scripts/c22198672.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c22198672.lua) | 29 |
+| Arktos XII - Chronochasm Vaylantz | `50687050` | [Scripts/c50687050.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c50687050.lua) | 1 |
+| Elfnote Tinia | `59581480` | [Scripts/c59581480.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c59581480.lua) | 1 |
+| Elfnote Lucina | `13597785` | [Scripts/c13597785.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c13597785.lua) | 1 |
+| Elfnote Fortuna | `85976588` | [Scripts/c85976588.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c85976588.lua) | 1 |
+| Appliancer Dryer Drake | `3507053` | [Scripts/c3507053.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c3507053.lua) | 1 |
+| World Legacy's Nightmare | `25163979` | [Scripts/c25163979.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c25163979.lua) | 1 |
+| Castle Link | `22198672` | [Scripts/c22198672.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c22198672.lua) | 1 |
 
 ## Script Examples
 

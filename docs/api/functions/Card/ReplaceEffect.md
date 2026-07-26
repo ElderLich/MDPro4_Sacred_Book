@@ -35,8 +35,8 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Arcana Call | `99189322` | [Scripts/c99189322.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c99189322.lua) | 34 |
-| Red Supremacy | `50584941` | [Scripts/c50584941.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c50584941.lua) | 33 |
+| Arcana Call | `99189322` | [Scripts/c99189322.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c99189322.lua) | 1 |
+| Red Supremacy | `50584941` | [Scripts/c50584941.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c50584941.lua) | 1 |
 
 ## Script Examples
 

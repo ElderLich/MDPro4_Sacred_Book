@@ -31,7 +31,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Muko | `80863132` | [Scripts/c80863132.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c80863132.lua) | 11 |
+| Muko | `80863132` | [Scripts/c80863132.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c80863132.lua) | 1 |
 
 ## Script Examples
 

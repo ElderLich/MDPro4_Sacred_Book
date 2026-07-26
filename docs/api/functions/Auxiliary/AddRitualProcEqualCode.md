@@ -39,9 +39,9 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Dawn of the Herald | `27383110` | [Scripts/c27383110.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c27383110.lua) | 39 |
-| Luminous Dragon Ritual | `34834619` | [Scripts/c34834619.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c34834619.lua) | 33 |
-| Amorphous Persona | `23160024` | [Scripts/c23160024.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c23160024.lua) | 28 |
+| Dawn of the Herald | `27383110` | [Scripts/c27383110.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c27383110.lua) | 1 |
+| Luminous Dragon Ritual | `34834619` | [Scripts/c34834619.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c34834619.lua) | 1 |
+| Amorphous Persona | `23160024` | [Scripts/c23160024.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c23160024.lua) | 1 |
 
 ## Script Examples
 

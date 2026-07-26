@@ -34,7 +34,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Sacred Spirit of the Ice Barrier | `44877690` | [Scripts/c44877690.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c44877690.lua) | 35 |
+| Sacred Spirit of the Ice Barrier | `44877690` | [Scripts/c44877690.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c44877690.lua) | 1 |
 
 ## Script Examples
 

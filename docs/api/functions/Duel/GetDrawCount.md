@@ -31,9 +31,9 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Gravekeeper's Trap | `98715423` | [Scripts/c98715423.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c98715423.lua) | 49 |
-| Zexal Field | `95856586` | [Scripts/c95856586.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c95856586.lua) | 42 |
-| Skull Flame | `99899504` | [Scripts/c99899504.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c99899504.lua) | 42 |
+| Gravekeeper's Trap | `98715423` | [Scripts/c98715423.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c98715423.lua) | 1 |
+| Zexal Field | `95856586` | [Scripts/c95856586.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c95856586.lua) | 1 |
+| Skull Flame | `99899504` | [Scripts/c99899504.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c99899504.lua) | 1 |
 
 ## Script Examples
 

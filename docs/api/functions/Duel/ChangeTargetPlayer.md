@@ -28,7 +28,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Mystical Refpanel | `35563539` | [Scripts/c35563539.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c35563539.lua) | 13 |
+| Mystical Refpanel | `35563539` | [Scripts/c35563539.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c35563539.lua) | 1 |
 
 ## Script Examples
 

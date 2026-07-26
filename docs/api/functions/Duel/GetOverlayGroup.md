@@ -33,11 +33,11 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Rank-Up-Magic Barian's Force | `47660516` | [Scripts/c47660516.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c47660516.lua) | 49 |
-| Heroic Call | `32175429` | [Scripts/c32175429.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c32175429.lua) | 39 |
-| Neo Galaxy-Eyes Photon Dragon | `39272762` | [Scripts/c39272762.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c39272762.lua) | 38 |
-| Xyz Revenge | `10275411` | [Scripts/c10275411.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c10275411.lua) | 35 |
-| Overlay Eater | `81816475` | [Scripts/c81816475.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c81816475.lua) | 23 |
+| Rank-Up-Magic Barian's Force | `47660516` | [Scripts/c47660516.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c47660516.lua) | 1 |
+| Heroic Call | `32175429` | [Scripts/c32175429.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c32175429.lua) | 2 |
+| Neo Galaxy-Eyes Photon Dragon | `39272762` | [Scripts/c39272762.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c39272762.lua) | 1 |
+| Xyz Revenge | `10275411` | [Scripts/c10275411.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c10275411.lua) | 1 |
+| Overlay Eater | `81816475` | [Scripts/c81816475.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c81816475.lua) | 1 |
 
 ## Script Examples
 

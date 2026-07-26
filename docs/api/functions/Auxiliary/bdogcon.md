@@ -38,30 +38,30 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Sunvine Thrasher | `91557476` | [Scripts/c91557476.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c91557476.lua) | 47 |
-| Ancient Warriors - Ambitious Cao De | `33545259` | [Scripts/c33545259.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c33545259.lua) | 45 |
-| Beginning Knight | `6628343` | [Scripts/c6628343.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c6628343.lua) | 42 |
-| Blackwing - Boreastorm the Wicked Wind | `10602628` | [Scripts/c10602628.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c10602628.lua) | 42 |
-| Goyo King | `84305651` | [Scripts/c84305651.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c84305651.lua) | 40 |
-| Dragon Knight of Creation | `87835759` | [Scripts/c87835759.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c87835759.lua) | 39 |
-| Vector Scare Archfiend | `13452889` | [Scripts/c13452889.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c13452889.lua) | 36 |
-| Black Luster Soldier - Super Soldier | `54484652` | [Scripts/c54484652.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c54484652.lua) | 34 |
-| Gladiator Beast Samnite | `2619149` | [Scripts/c2619149.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c2619149.lua) | 33 |
-| Goyo Chaser | `63364266` | [Scripts/c63364266.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c63364266.lua) | 33 |
-| BOXer | `61156777` | [Scripts/c61156777.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c61156777.lua) | 32 |
-| Masked HERO Divine Wind | `22093873` | [Scripts/c22093873.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c22093873.lua) | 30 |
-| Goyo Predator | `98637386` | [Scripts/c98637386.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c98637386.lua) | 27 |
-| Number 14: Greedy Sarameya | `21313376` | [Scripts/c21313376.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c21313376.lua) | 26 |
-| Sylvan Bladefender | `11682713` | [Scripts/c11682713.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c11682713.lua) | 26 |
-| Mermail Abyssnose | `282886` | [Scripts/c282886.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c282886.lua) | 26 |
-| Heroic Challenger - War Hammer | `26885836` | [Scripts/c26885836.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c26885836.lua) | 26 |
-| Crimson Blader | `80321197` | [Scripts/c80321197.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c80321197.lua) | 26 |
-| Inferno Hammer | `17185260` | [Scripts/c17185260.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c17185260.lua) | 24 |
-| Blackwing - Shura the Blue Flame | `58820853` | [Scripts/c58820853.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c58820853.lua) | 24 |
-| Goyo Guardian | `7391448` | [Scripts/c7391448.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c7391448.lua) | 24 |
-| The Fabled Kokkator | `26704411` | [Scripts/c26704411.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c26704411.lua) | 24 |
-| Performapal Handsamuraiger | `55997110` | [Scripts/c55997110.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c55997110.lua) | 22 |
-| Flamvell Firedog | `23297235` | [Scripts/c23297235.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c23297235.lua) | 22 |
+| Sunvine Thrasher | `91557476` | [Scripts/c91557476.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c91557476.lua) | 1 |
+| Ancient Warriors - Ambitious Cao De | `33545259` | [Scripts/c33545259.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c33545259.lua) | 1 |
+| Beginning Knight | `6628343` | [Scripts/c6628343.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c6628343.lua) | 1 |
+| Blackwing - Boreastorm the Wicked Wind | `10602628` | [Scripts/c10602628.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c10602628.lua) | 1 |
+| Goyo King | `84305651` | [Scripts/c84305651.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c84305651.lua) | 1 |
+| Dragon Knight of Creation | `87835759` | [Scripts/c87835759.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c87835759.lua) | 1 |
+| Vector Scare Archfiend | `13452889` | [Scripts/c13452889.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c13452889.lua) | 1 |
+| Black Luster Soldier - Super Soldier | `54484652` | [Scripts/c54484652.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c54484652.lua) | 1 |
+| Gladiator Beast Samnite | `2619149` | [Scripts/c2619149.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c2619149.lua) | 1 |
+| Goyo Chaser | `63364266` | [Scripts/c63364266.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c63364266.lua) | 1 |
+| BOXer | `61156777` | [Scripts/c61156777.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c61156777.lua) | 1 |
+| Masked HERO Divine Wind | `22093873` | [Scripts/c22093873.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c22093873.lua) | 1 |
+| Goyo Predator | `98637386` | [Scripts/c98637386.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c98637386.lua) | 1 |
+| Number 14: Greedy Sarameya | `21313376` | [Scripts/c21313376.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c21313376.lua) | 1 |
+| Sylvan Bladefender | `11682713` | [Scripts/c11682713.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c11682713.lua) | 1 |
+| Mermail Abyssnose | `282886` | [Scripts/c282886.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c282886.lua) | 1 |
+| Heroic Challenger - War Hammer | `26885836` | [Scripts/c26885836.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c26885836.lua) | 1 |
+| Crimson Blader | `80321197` | [Scripts/c80321197.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c80321197.lua) | 1 |
+| Inferno Hammer | `17185260` | [Scripts/c17185260.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c17185260.lua) | 1 |
+| Blackwing - Shura the Blue Flame | `58820853` | [Scripts/c58820853.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c58820853.lua) | 1 |
+| Goyo Guardian | `7391448` | [Scripts/c7391448.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c7391448.lua) | 1 |
+| The Fabled Kokkator | `26704411` | [Scripts/c26704411.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c26704411.lua) | 1 |
+| Performapal Handsamuraiger | `55997110` | [Scripts/c55997110.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c55997110.lua) | 1 |
+| Flamvell Firedog | `23297235` | [Scripts/c23297235.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c23297235.lua) | 1 |
 | ...and 5 more |  |  |  |
 
 ## Script Examples

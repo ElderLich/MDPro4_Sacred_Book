@@ -31,10 +31,10 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| ZW - Leo Arms | `60992364` | [Scripts/c60992364.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c60992364.lua) | 48 |
-| Crystal Beast Emerald Tortoise | `68215963` | [Scripts/c68215963.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c68215963.lua) | 30 |
-| Ancient Forest | `87624166` | [Scripts/c87624166.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c87624166.lua) | 20 |
-| Ape Fighter | `41098335` | [Scripts/c41098335.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c41098335.lua) | 18 |
+| ZW - Leo Arms | `60992364` | [Scripts/c60992364.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c60992364.lua) | 1 |
+| Crystal Beast Emerald Tortoise | `68215963` | [Scripts/c68215963.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c68215963.lua) | 1 |
+| Ancient Forest | `87624166` | [Scripts/c87624166.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c87624166.lua) | 1 |
+| Ape Fighter | `41098335` | [Scripts/c41098335.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c41098335.lua) | 1 |
 
 ## Script Examples
 

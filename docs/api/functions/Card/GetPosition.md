@@ -31,18 +31,18 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Digital Bug Corebage | `58600555` | [Scripts/c58600555.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c58600555.lua) | 44 |
-| Morphtronic Converter | `90659259` | [Scripts/c90659259.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c90659259.lua) | 42 |
-| Karakuri Super Shogun mdl 00N "Bureibu" | `25904894` | [Scripts/c25904894.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c25904894.lua) | 42 |
-| Karakuri Gama Oil | `11699941` | [Scripts/c11699941.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c11699941.lua) | 37 |
-| Karakuri Steel Shogun mdl 00X "Bureido" | `66976526` | [Scripts/c66976526.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c66976526.lua) | 36 |
-| Morphtronic Map | `56074358` | [Scripts/c56074358.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c56074358.lua) | 35 |
-| Madolche Chickolates | `26570480` | [Scripts/c26570480.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c26570480.lua) | 31 |
-| Karakuri Anatomy | `85541675` | [Scripts/c85541675.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c85541675.lua) | 29 |
-| Morpho Butterspy | `43573231` | [Scripts/c43573231.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c43573231.lua) | 29 |
-| Attack the Moon! | `83715234` | [Scripts/c83715234.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c83715234.lua) | 29 |
-| Karakuri Trick House | `33184236` | [Scripts/c33184236.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c33184236.lua) | 24 |
-| Earthquake Giant | `61864793` | [Scripts/c61864793.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c61864793.lua) | 23 |
+| Digital Bug Corebage | `58600555` | [Scripts/c58600555.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c58600555.lua) | 1 |
+| Morphtronic Converter | `90659259` | [Scripts/c90659259.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c90659259.lua) | 1 |
+| Karakuri Super Shogun mdl 00N "Bureibu" | `25904894` | [Scripts/c25904894.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c25904894.lua) | 1 |
+| Karakuri Gama Oil | `11699941` | [Scripts/c11699941.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c11699941.lua) | 1 |
+| Karakuri Steel Shogun mdl 00X "Bureido" | `66976526` | [Scripts/c66976526.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c66976526.lua) | 1 |
+| Morphtronic Map | `56074358` | [Scripts/c56074358.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c56074358.lua) | 1 |
+| Madolche Chickolates | `26570480` | [Scripts/c26570480.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c26570480.lua) | 1 |
+| Karakuri Anatomy | `85541675` | [Scripts/c85541675.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c85541675.lua) | 1 |
+| Morpho Butterspy | `43573231` | [Scripts/c43573231.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c43573231.lua) | 1 |
+| Attack the Moon! | `83715234` | [Scripts/c83715234.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c83715234.lua) | 1 |
+| Karakuri Trick House | `33184236` | [Scripts/c33184236.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c33184236.lua) | 1 |
+| Earthquake Giant | `61864793` | [Scripts/c61864793.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c61864793.lua) | 1 |
 
 ## Script Examples
 

@@ -32,11 +32,11 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Blue-Eyes Toon Ultimate Dragon | `71808988` | [Scripts/c71808988.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c71808988.lua) | 50 |
-| Break the Destiny | `4008212` | [Scripts/c4008212.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c4008212.lua) | 48 |
-| Toon World the Perfect World | `7293697` | [Scripts/c7293697.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c7293697.lua) | 44 |
-| Miracle Ejector | `30875635` | [Scripts/c30875635.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c30875635.lua) | 40 |
-| Elemental HERO Spirit of Neos | `13256226` | [Scripts/c13256226.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c13256226.lua) | 39 |
+| Blue-Eyes Toon Ultimate Dragon | `71808988` | [Scripts/c71808988.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c71808988.lua) | 1 |
+| Break the Destiny | `4008212` | [Scripts/c4008212.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c4008212.lua) | 1 |
+| Toon World the Perfect World | `7293697` | [Scripts/c7293697.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c7293697.lua) | 1 |
+| Miracle Ejector | `30875635` | [Scripts/c30875635.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c30875635.lua) | 1 |
+| Elemental HERO Spirit of Neos | `13256226` | [Scripts/c13256226.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c13256226.lua) | 1 |
 
 ## Script Examples
 

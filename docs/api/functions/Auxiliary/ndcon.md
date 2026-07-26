@@ -32,10 +32,10 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Rebirth of Parshath | `42444868` | [Scripts/c42444868.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c42444868.lua) | 43 |
-| Nine Pillars of Yang Zing | `57831349` | [Scripts/c57831349.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c57831349.lua) | 29 |
-| Stall Turn | `86060749` | [Scripts/c86060749.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c86060749.lua) | 26 |
-| Cash Back | `59957503` | [Scripts/c59957503.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c59957503.lua) | 20 |
+| Rebirth of Parshath | `42444868` | [Scripts/c42444868.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c42444868.lua) | 1 |
+| Nine Pillars of Yang Zing | `57831349` | [Scripts/c57831349.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c57831349.lua) | 1 |
+| Stall Turn | `86060749` | [Scripts/c86060749.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c86060749.lua) | 1 |
+| Cash Back | `59957503` | [Scripts/c59957503.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c59957503.lua) | 1 |
 
 ## Script Examples
 

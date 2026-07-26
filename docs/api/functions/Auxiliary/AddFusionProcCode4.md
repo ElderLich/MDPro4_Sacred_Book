@@ -33,8 +33,8 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Super Vehicroid - Stealth Union | `3897065` | [Scripts/c3897065.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c3897065.lua) | 33 |
-| Elemental HERO Electrum | `29343734` | [Scripts/c29343734.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c29343734.lua) | 27 |
+| Super Vehicroid - Stealth Union | `3897065` | [Scripts/c3897065.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c3897065.lua) | 1 |
+| Elemental HERO Electrum | `29343734` | [Scripts/c29343734.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c29343734.lua) | 1 |
 
 ## Script Examples
 

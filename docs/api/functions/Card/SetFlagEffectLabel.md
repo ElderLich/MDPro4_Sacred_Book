@@ -33,19 +33,19 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Groza, Tyrant of Thunder | `45420955` | [Scripts/c45420955.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c45420955.lua) | 51 |
-| Sky Striker Mecha Modules - Multirole | `24010609` | [Scripts/c24010609.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c24010609.lua) | 49 |
-| Ultimate Divine-Beast | `32247099` | [Scripts/c32247099.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c32247099.lua) | 45 |
-| Van'Dalgyon the Dark Dragon Lord | `24857466` | [Scripts/c24857466.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c24857466.lua) | 42 |
-| Evilswarm Ouroboros | `38273745` | [Scripts/c38273745.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c38273745.lua) | 38 |
-| Gaia Blaze, the Force of the Sun | `9709452` | [Scripts/c9709452.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c9709452.lua) | 36 |
-| Shootingcode Talker | `33897356` | [Scripts/c33897356.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c33897356.lua) | 35 |
-| Lair of Darkness | `59160188` | [Scripts/c59160188.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c59160188.lua) | 34 |
-| Super Rush Headlong | `48422921` | [Scripts/c48422921.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c48422921.lua) | 31 |
-| Blockman | `48115277` | [Scripts/c48115277.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c48115277.lua) | 28 |
-| Greed | `89405199` | [Scripts/c89405199.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c89405199.lua) | 21 |
-| Dark Snake Syndrome | `47233801` | [Scripts/c47233801.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c47233801.lua) | 20 |
-| Reversal of Fate | `36690018` | [Scripts/c36690018.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c36690018.lua) | 19 |
+| Groza, Tyrant of Thunder | `45420955` | [Scripts/c45420955.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c45420955.lua) | 3 |
+| Sky Striker Mecha Modules - Multirole | `24010609` | [Scripts/c24010609.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c24010609.lua) | 2 |
+| Ultimate Divine-Beast | `32247099` | [Scripts/c32247099.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c32247099.lua) | 2 |
+| Van'Dalgyon the Dark Dragon Lord | `24857466` | [Scripts/c24857466.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c24857466.lua) | 3 |
+| Evilswarm Ouroboros | `38273745` | [Scripts/c38273745.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c38273745.lua) | 1 |
+| Gaia Blaze, the Force of the Sun | `9709452` | [Scripts/c9709452.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c9709452.lua) | 1 |
+| Shootingcode Talker | `33897356` | [Scripts/c33897356.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c33897356.lua) | 1 |
+| Lair of Darkness | `59160188` | [Scripts/c59160188.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c59160188.lua) | 1 |
+| Super Rush Headlong | `48422921` | [Scripts/c48422921.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c48422921.lua) | 1 |
+| Blockman | `48115277` | [Scripts/c48115277.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c48115277.lua) | 1 |
+| Greed | `89405199` | [Scripts/c89405199.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c89405199.lua) | 1 |
+| Dark Snake Syndrome | `47233801` | [Scripts/c47233801.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c47233801.lua) | 1 |
+| Reversal of Fate | `36690018` | [Scripts/c36690018.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c36690018.lua) | 1 |
 
 ## Script Examples
 

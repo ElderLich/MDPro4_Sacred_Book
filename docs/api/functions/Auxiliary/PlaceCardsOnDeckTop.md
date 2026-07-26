@@ -33,8 +33,8 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Dimension Conjurer | `77683371` | [Scripts/c77683371.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c77683371.lua) | 39 |
-| Sylvan Charity | `82016179` | [Scripts/c82016179.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c82016179.lua) | 30 |
+| Dimension Conjurer | `77683371` | [Scripts/c77683371.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c77683371.lua) | 1 |
+| Sylvan Charity | `82016179` | [Scripts/c82016179.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c82016179.lua) | 2 |
 
 ## Script Examples
 

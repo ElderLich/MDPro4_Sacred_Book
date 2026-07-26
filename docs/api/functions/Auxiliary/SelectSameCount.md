@@ -37,11 +37,11 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Excited Melffys | `79561872` | [Scripts/c79561872.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c79561872.lua) | 51 |
-| Dark Rebellion Xyz Dragon of the Four Heavenly Dragons | `90091224` | [Scripts/c90091224.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c90091224.lua) | 50 |
-| Mementomictlan Tecuhtlica - Creation King | `14529511` | [Scripts/c14529511.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c14529511.lua) | 44 |
-| Sky Striker Special Maneuver - Lemnisgate! | `34433770` | [Scripts/c34433770.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c34433770.lua) | 43 |
-| Fire King Sky Burn | `91703676` | [Scripts/c91703676.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c91703676.lua) | 32 |
+| Excited Melffys | `79561872` | [Scripts/c79561872.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c79561872.lua) | 1 |
+| Dark Rebellion Xyz Dragon of the Four Heavenly Dragons | `90091224` | [Scripts/c90091224.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c90091224.lua) | 1 |
+| Mementomictlan Tecuhtlica - Creation King | `14529511` | [Scripts/c14529511.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c14529511.lua) | 1 |
+| Sky Striker Special Maneuver - Lemnisgate! | `34433770` | [Scripts/c34433770.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c34433770.lua) | 1 |
+| Fire King Sky Burn | `91703676` | [Scripts/c91703676.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c91703676.lua) | 1 |
 
 ## Script Examples
 

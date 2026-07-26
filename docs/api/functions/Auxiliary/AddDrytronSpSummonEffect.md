@@ -29,11 +29,11 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Drytron Gamma Eltanin | `60037599` | [Scripts/c60037599.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c60037599.lua) | 29 |
-| Drytron Delta Altais | `22420202` | [Scripts/c22420202.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c22420202.lua) | 25 |
-| Drytron Beta Rastaban | `33543890` | [Scripts/c33543890.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c33543890.lua) | 23 |
-| Drytron Alpha Thuban | `97148796` | [Scripts/c97148796.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c97148796.lua) | 23 |
-| Drytron Zeta Aldhibah | `96026108` | [Scripts/c96026108.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c96026108.lua) | 23 |
+| Drytron Gamma Eltanin | `60037599` | [Scripts/c60037599.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c60037599.lua) | 1 |
+| Drytron Delta Altais | `22420202` | [Scripts/c22420202.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c22420202.lua) | 1 |
+| Drytron Beta Rastaban | `33543890` | [Scripts/c33543890.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c33543890.lua) | 1 |
+| Drytron Alpha Thuban | `97148796` | [Scripts/c97148796.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c97148796.lua) | 1 |
+| Drytron Zeta Aldhibah | `96026108` | [Scripts/c96026108.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c96026108.lua) | 1 |
 
 ## Script Examples
 

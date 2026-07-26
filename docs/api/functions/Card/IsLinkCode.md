@@ -35,27 +35,27 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Emperor Charles the Great | `97864322` | [Scripts/c97864322.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c97864322.lua) | 56 |
-| Salamangreat Raging Phoenix | `57134592` | [Scripts/c57134592.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c57134592.lua) | 53 |
-| Salamangreat Sanctuary | `1295111` | [Scripts/c1295111.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c1295111.lua) | 53 |
-| Salamangreat Sunlight Wolf | `87871125` | [Scripts/c87871125.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c87871125.lua) | 52 |
-| Code of Soul | `74652966` | [Scripts/c74652966.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c74652966.lua) | 50 |
-| Salamangreat Pyro Phoenix | `31313405` | [Scripts/c31313405.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c31313405.lua) | 49 |
-| Salamangreat Rage | `14934922` | [Scripts/c14934922.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c14934922.lua) | 48 |
-| Cyberse Enchanter | `60279710` | [Scripts/c60279710.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c60279710.lua) | 47 |
-| Salamangreat Circle | `52155219` | [Scripts/c52155219.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c52155219.lua) | 46 |
-| Salamangreat Heatleo | `41463181` | [Scripts/c41463181.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c41463181.lua) | 45 |
-| Salamangreat Gift | `20788863` | [Scripts/c20788863.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c20788863.lua) | 45 |
-| Will of the Salamangreat | `64178424` | [Scripts/c64178424.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c64178424.lua) | 44 |
-| Marincess Crystal Heart | `67712104` | [Scripts/c67712104.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c67712104.lua) | 42 |
-| Sunavalon Dryas | `93896655` | [Scripts/c93896655.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c93896655.lua) | 41 |
-| Knightmare Mermaid | `3679218` | [Scripts/c3679218.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c3679218.lua) | 41 |
-| Backup Supervisor | `97677329` | [Scripts/c97677329.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c97677329.lua) | 40 |
-| Cyber Dragon Sieger | `46724542` | [Scripts/c46724542.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c46724542.lua) | 39 |
-| Salamangreat Roar | `51339637` | [Scripts/c51339637.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c51339637.lua) | 38 |
-| Salamangreat Claw | `88540324` | [Scripts/c88540324.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c88540324.lua) | 36 |
-| Crusadia Magius | `72228247` | [Scripts/c72228247.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c72228247.lua) | 35 |
-| Scareclaw Light-Heart | `53776969` | [Scripts/c53776969.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c53776969.lua) | 33 |
+| Emperor Charles the Great | `97864322` | [Scripts/c97864322.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c97864322.lua) | 1 |
+| Salamangreat Raging Phoenix | `57134592` | [Scripts/c57134592.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c57134592.lua) | 1 |
+| Salamangreat Sanctuary | `1295111` | [Scripts/c1295111.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c1295111.lua) | 1 |
+| Salamangreat Sunlight Wolf | `87871125` | [Scripts/c87871125.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c87871125.lua) | 1 |
+| Code of Soul | `74652966` | [Scripts/c74652966.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c74652966.lua) | 1 |
+| Salamangreat Pyro Phoenix | `31313405` | [Scripts/c31313405.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c31313405.lua) | 1 |
+| Salamangreat Rage | `14934922` | [Scripts/c14934922.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c14934922.lua) | 1 |
+| Cyberse Enchanter | `60279710` | [Scripts/c60279710.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c60279710.lua) | 1 |
+| Salamangreat Circle | `52155219` | [Scripts/c52155219.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c52155219.lua) | 1 |
+| Salamangreat Heatleo | `41463181` | [Scripts/c41463181.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c41463181.lua) | 1 |
+| Salamangreat Gift | `20788863` | [Scripts/c20788863.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c20788863.lua) | 1 |
+| Will of the Salamangreat | `64178424` | [Scripts/c64178424.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c64178424.lua) | 1 |
+| Marincess Crystal Heart | `67712104` | [Scripts/c67712104.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c67712104.lua) | 1 |
+| Sunavalon Dryas | `93896655` | [Scripts/c93896655.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c93896655.lua) | 1 |
+| Knightmare Mermaid | `3679218` | [Scripts/c3679218.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c3679218.lua) | 1 |
+| Backup Supervisor | `97677329` | [Scripts/c97677329.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c97677329.lua) | 1 |
+| Cyber Dragon Sieger | `46724542` | [Scripts/c46724542.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c46724542.lua) | 1 |
+| Salamangreat Roar | `51339637` | [Scripts/c51339637.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c51339637.lua) | 1 |
+| Salamangreat Claw | `88540324` | [Scripts/c88540324.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c88540324.lua) | 1 |
+| Crusadia Magius | `72228247` | [Scripts/c72228247.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c72228247.lua) | 1 |
+| Scareclaw Light-Heart | `53776969` | [Scripts/c53776969.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c53776969.lua) | 1 |
 
 ## Script Examples
 

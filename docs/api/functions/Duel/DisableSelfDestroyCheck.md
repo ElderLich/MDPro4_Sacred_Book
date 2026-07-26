@@ -27,10 +27,10 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Cursed Copycat Noble Arms | `23249029` | [Scripts/c23249029.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c23249029.lua) | 46 |
-| Advanced Crystal Beast Ruby Carbuncle | `83575471` | [Scripts/c83575471.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c83575471.lua) | 37 |
-| Mikanko Water Arabesque | `43527730` | [Scripts/c43527730.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c43527730.lua) | 36 |
-| Decoy Dragon | `2732323` | [Scripts/c2732323.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c2732323.lua) | 27 |
+| Cursed Copycat Noble Arms | `23249029` | [Scripts/c23249029.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c23249029.lua) | 2 |
+| Advanced Crystal Beast Ruby Carbuncle | `83575471` | [Scripts/c83575471.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c83575471.lua) | 2 |
+| Mikanko Water Arabesque | `43527730` | [Scripts/c43527730.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c43527730.lua) | 2 |
+| Decoy Dragon | `2732323` | [Scripts/c2732323.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c2732323.lua) | 2 |
 
 ## Script Examples
 

@@ -34,12 +34,12 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Cynet Circuit | `82886276` | [Scripts/c82886276.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c82886276.lua) | 52 |
-| Firewall eXceed Dragon | `21065189` | [Scripts/c21065189.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c21065189.lua) | 42 |
-| Centerfrog | `47346782` | [Scripts/c47346782.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c47346782.lua) | 39 |
-| Procession of the Tea Jar | `12612470` | [Scripts/c12612470.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c12612470.lua) | 36 |
-| Knightmare Corruptor Iblee | `10158145` | [Scripts/c10158145.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c10158145.lua) | 35 |
-| Yajiro Invader | `10852583` | [Scripts/c10852583.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c10852583.lua) | 30 |
+| Cynet Circuit | `82886276` | [Scripts/c82886276.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c82886276.lua) | 8 |
+| Firewall eXceed Dragon | `21065189` | [Scripts/c21065189.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c21065189.lua) | 8 |
+| Centerfrog | `47346782` | [Scripts/c47346782.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c47346782.lua) | 2 |
+| Procession of the Tea Jar | `12612470` | [Scripts/c12612470.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c12612470.lua) | 2 |
+| Knightmare Corruptor Iblee | `10158145` | [Scripts/c10158145.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c10158145.lua) | 2 |
+| Yajiro Invader | `10852583` | [Scripts/c10852583.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c10852583.lua) | 2 |
 
 ## Script Examples
 

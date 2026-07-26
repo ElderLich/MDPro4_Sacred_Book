@@ -31,9 +31,9 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Guardragon Pisty | `13143275` | [Scripts/c13143275.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c13143275.lua) | 33 |
-| Guardragon Agarpain | `59537380` | [Scripts/c59537380.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c59537380.lua) | 30 |
-| Guardragon Elpy | `86148577` | [Scripts/c86148577.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c86148577.lua) | 30 |
+| Guardragon Pisty | `13143275` | [Scripts/c13143275.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c13143275.lua) | 2 |
+| Guardragon Agarpain | `59537380` | [Scripts/c59537380.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c59537380.lua) | 2 |
+| Guardragon Elpy | `86148577` | [Scripts/c86148577.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c86148577.lua) | 2 |
 
 ## Script Examples
 

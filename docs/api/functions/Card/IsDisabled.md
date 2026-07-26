@@ -31,30 +31,30 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Trickstar Light Stage | `35371948` | [Scripts/c35371948.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c35371948.lua) | 60 |
-| Trickstar Light Arena | `63492244` | [Scripts/c63492244.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c63492244.lua) | 59 |
-| Relinquished Fusion | `78063197` | [Scripts/c78063197.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c78063197.lua) | 59 |
-| Meklord Astro Mekanikle | `63468625` | [Scripts/c63468625.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c63468625.lua) | 57 |
-| Union Activation | `38527680` | [Scripts/c38527680.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c38527680.lua) | 57 |
-| Dragunity Arma Leyvaten | `63487632` | [Scripts/c63487632.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c63487632.lua) | 54 |
-| Groza, Tyrant of Thunder | `45420955` | [Scripts/c45420955.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c45420955.lua) | 51 |
-| S-Force Justify | `35334193` | [Scripts/c35334193.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c35334193.lua) | 51 |
-| Meklord Emperor Granel | `4545683` | [Scripts/c4545683.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c4545683.lua) | 50 |
-| DoomZ Command "D.O.O.M.D.U.R.G." | `68831625` | [Scripts/c68831625.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c68831625.lua) | 49 |
-| Goblin Freefall Squad | `85123771` | [Scripts/c85123771.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c85123771.lua) | 48 |
-| Spell Chronicle | `74402414` | [Scripts/c74402414.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c74402414.lua) | 48 |
-| The Iris Swordsoul | `62849088` | [Scripts/c62849088.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c62849088.lua) | 47 |
-| Gold Pride - Pin Baller | `28497830` | [Scripts/c28497830.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c28497830.lua) | 45 |
-| Reincarnation Unveiling Mail | `68663427` | [Scripts/c68663427.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c68663427.lua) | 45 |
-| Ghostrick or Treat | `27170599` | [Scripts/c27170599.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c27170599.lua) | 45 |
-| Inzektor Hopper | `52601736` | [Scripts/c52601736.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c52601736.lua) | 45 |
-| Number 3: Cicada King | `4997565` | [Scripts/c4997565.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c4997565.lua) | 44 |
-| Vampire Vamp | `82962242` | [Scripts/c82962242.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c82962242.lua) | 44 |
-| Deus X-Krawler | `62587693` | [Scripts/c62587693.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c62587693.lua) | 43 |
-| Dragunity Arma Mystletainn | `876330` | [Scripts/c876330.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c876330.lua) | 43 |
-| Interdimensional Matter Forwarder | `60238002` | [Scripts/c60238002.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c60238002.lua) | 42 |
-| Raging Storm Dragon - Beaufort IX | `8836329` | [Scripts/c8836329.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c8836329.lua) | 42 |
-| Morphtronic Vacuumen | `48868994` | [Scripts/c48868994.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c48868994.lua) | 41 |
+| Trickstar Light Stage | `35371948` | [Scripts/c35371948.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c35371948.lua) | 2 |
+| Trickstar Light Arena | `63492244` | [Scripts/c63492244.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c63492244.lua) | 2 |
+| Relinquished Fusion | `78063197` | [Scripts/c78063197.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c78063197.lua) | 1 |
+| Meklord Astro Mekanikle | `63468625` | [Scripts/c63468625.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c63468625.lua) | 1 |
+| Union Activation | `38527680` | [Scripts/c38527680.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c38527680.lua) | 1 |
+| Dragunity Arma Leyvaten | `63487632` | [Scripts/c63487632.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c63487632.lua) | 1 |
+| Groza, Tyrant of Thunder | `45420955` | [Scripts/c45420955.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c45420955.lua) | 1 |
+| S-Force Justify | `35334193` | [Scripts/c35334193.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c35334193.lua) | 1 |
+| Meklord Emperor Granel | `4545683` | [Scripts/c4545683.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c4545683.lua) | 1 |
+| DoomZ Command "D.O.O.M.D.U.R.G." | `68831625` | [Scripts/c68831625.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c68831625.lua) | 1 |
+| Goblin Freefall Squad | `85123771` | [Scripts/c85123771.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c85123771.lua) | 1 |
+| Spell Chronicle | `74402414` | [Scripts/c74402414.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c74402414.lua) | 1 |
+| The Iris Swordsoul | `62849088` | [Scripts/c62849088.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c62849088.lua) | 1 |
+| Gold Pride - Pin Baller | `28497830` | [Scripts/c28497830.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c28497830.lua) | 1 |
+| Reincarnation Unveiling Mail | `68663427` | [Scripts/c68663427.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c68663427.lua) | 1 |
+| Ghostrick or Treat | `27170599` | [Scripts/c27170599.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c27170599.lua) | 1 |
+| Inzektor Hopper | `52601736` | [Scripts/c52601736.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c52601736.lua) | 1 |
+| Number 3: Cicada King | `4997565` | [Scripts/c4997565.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c4997565.lua) | 1 |
+| Vampire Vamp | `82962242` | [Scripts/c82962242.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c82962242.lua) | 1 |
+| Deus X-Krawler | `62587693` | [Scripts/c62587693.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c62587693.lua) | 1 |
+| Dragunity Arma Mystletainn | `876330` | [Scripts/c876330.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c876330.lua) | 1 |
+| Interdimensional Matter Forwarder | `60238002` | [Scripts/c60238002.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c60238002.lua) | 1 |
+| Raging Storm Dragon - Beaufort IX | `8836329` | [Scripts/c8836329.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c8836329.lua) | 1 |
+| Morphtronic Vacuumen | `48868994` | [Scripts/c48868994.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c48868994.lua) | 3 |
 | ...and 26 more |  |  |  |
 
 ## Script Examples

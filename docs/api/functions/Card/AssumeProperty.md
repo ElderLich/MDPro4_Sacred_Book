@@ -30,8 +30,8 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Genomix Fighter | `42155488` | [Scripts/c42155488.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c42155488.lua) | 31 |
-| Mono Synchron | `56897896` | [Scripts/c56897896.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c56897896.lua) | 11 |
+| Genomix Fighter | `42155488` | [Scripts/c42155488.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c42155488.lua) | 1 |
+| Mono Synchron | `56897896` | [Scripts/c56897896.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c56897896.lua) | 1 |
 
 ## Script Examples
 

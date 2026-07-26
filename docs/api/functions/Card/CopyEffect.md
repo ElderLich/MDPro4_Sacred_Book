@@ -35,30 +35,30 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| [Starving Venemy Dragon](/examples/cards/93729065) | `93729065` | [Scripts/c93729065.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c93729065.lua) | 61 |
-| Windwitch - Crystal Bell | `25793414` | [Scripts/c25793414.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c25793414.lua) | 57 |
-| Emperor Charles the Great | `97864322` | [Scripts/c97864322.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c97864322.lua) | 56 |
-| Odd-Eyes Venom Dragon | `45014450` | [Scripts/c45014450.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c45014450.lua) | 54 |
-| Masterflare Hyperion | `63101468` | [Scripts/c63101468.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c63101468.lua) | 53 |
-| Raidraptor - Rising Rebellion Falcon | `71222868` | [Scripts/c71222868.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c71222868.lua) | 52 |
-| Starving Venom Fusion Dragon | `41209827` | [Scripts/c41209827.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c41209827.lua) | 52 |
-| Blackwing - Aurora the Northern Lights | `4068622` | [Scripts/c4068622.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c4068622.lua) | 50 |
-| Hundred Eyes Dragon | `95453143` | [Scripts/c95453143.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c95453143.lua) | 49 |
-| Supreme King Dragon Starving Venom | `43387895` | [Scripts/c43387895.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c43387895.lua) | 45 |
-| Dragon Knight Draco-Equiste | `14017402` | [Scripts/c14017402.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c14017402.lua) | 44 |
-| Number 8: Heraldic King Genom-Heritage | `47387961` | [Scripts/c47387961.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c47387961.lua) | 44 |
-| CXyz Barian Hope | `67926903` | [Scripts/c67926903.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c67926903.lua) | 41 |
-| Symphonic Warrior Synthess | `49919798` | [Scripts/c49919798.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c49919798.lua) | 41 |
-| Elemental HERO Divine Neos | `31111109` | [Scripts/c31111109.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c31111109.lua) | 41 |
-| The Tyrant Neptune | `88071625` | [Scripts/c88071625.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c88071625.lua) | 41 |
-| Phantom of Chaos | `30312361` | [Scripts/c30312361.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c30312361.lua) | 41 |
-| Number C69: Heraldry Crest of Horror | `11522979` | [Scripts/c11522979.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c11522979.lua) | 39 |
-| Gem-Knight Master Diamond | `39512984` | [Scripts/c39512984.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c39512984.lua) | 35 |
-| Neo-Spacian Dark Panther | `43237273` | [Scripts/c43237273.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c43237273.lua) | 34 |
-| Legendary Knight Hermos | `84565800` | [Scripts/c84565800.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c84565800.lua) | 31 |
-| Number 69: Heraldry Crest | `2407234` | [Scripts/c2407234.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c2407234.lua) | 31 |
-| Pseudo Space | `77584012` | [Scripts/c77584012.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c77584012.lua) | 31 |
-| Infernoid Decatron | `58446973` | [Scripts/c58446973.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c58446973.lua) | 30 |
+| [Starving Venemy Dragon](/examples/cards/93729065) | `93729065` | [Scripts/c93729065.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c93729065.lua) | 1 |
+| Windwitch - Crystal Bell | `25793414` | [Scripts/c25793414.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c25793414.lua) | 1 |
+| Emperor Charles the Great | `97864322` | [Scripts/c97864322.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c97864322.lua) | 1 |
+| Odd-Eyes Venom Dragon | `45014450` | [Scripts/c45014450.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c45014450.lua) | 1 |
+| Masterflare Hyperion | `63101468` | [Scripts/c63101468.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c63101468.lua) | 1 |
+| Raidraptor - Rising Rebellion Falcon | `71222868` | [Scripts/c71222868.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c71222868.lua) | 1 |
+| Starving Venom Fusion Dragon | `41209827` | [Scripts/c41209827.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c41209827.lua) | 1 |
+| Blackwing - Aurora the Northern Lights | `4068622` | [Scripts/c4068622.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c4068622.lua) | 1 |
+| Hundred Eyes Dragon | `95453143` | [Scripts/c95453143.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c95453143.lua) | 1 |
+| Supreme King Dragon Starving Venom | `43387895` | [Scripts/c43387895.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c43387895.lua) | 1 |
+| Dragon Knight Draco-Equiste | `14017402` | [Scripts/c14017402.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c14017402.lua) | 1 |
+| Number 8: Heraldic King Genom-Heritage | `47387961` | [Scripts/c47387961.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c47387961.lua) | 1 |
+| CXyz Barian Hope | `67926903` | [Scripts/c67926903.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c67926903.lua) | 1 |
+| Symphonic Warrior Synthess | `49919798` | [Scripts/c49919798.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c49919798.lua) | 1 |
+| Elemental HERO Divine Neos | `31111109` | [Scripts/c31111109.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c31111109.lua) | 1 |
+| The Tyrant Neptune | `88071625` | [Scripts/c88071625.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c88071625.lua) | 1 |
+| Phantom of Chaos | `30312361` | [Scripts/c30312361.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c30312361.lua) | 1 |
+| Number C69: Heraldry Crest of Horror | `11522979` | [Scripts/c11522979.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c11522979.lua) | 1 |
+| Gem-Knight Master Diamond | `39512984` | [Scripts/c39512984.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c39512984.lua) | 1 |
+| Neo-Spacian Dark Panther | `43237273` | [Scripts/c43237273.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c43237273.lua) | 1 |
+| Legendary Knight Hermos | `84565800` | [Scripts/c84565800.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c84565800.lua) | 1 |
+| Number 69: Heraldry Crest | `2407234` | [Scripts/c2407234.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c2407234.lua) | 1 |
+| Pseudo Space | `77584012` | [Scripts/c77584012.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c77584012.lua) | 1 |
+| Infernoid Decatron | `58446973` | [Scripts/c58446973.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c58446973.lua) | 1 |
 | ...and 1 more |  |  |  |
 
 ## Script Examples

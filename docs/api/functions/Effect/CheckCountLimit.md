@@ -51,7 +51,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Xyz Block | `44487250` | [Scripts/c44487250.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c44487250.lua) | 23 |
+| Xyz Block | `44487250` | [Scripts/c44487250.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c44487250.lua) | 1 |
 
 ## Script Examples
 

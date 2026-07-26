@@ -36,30 +36,30 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| [Barian's Chaos Draw](/examples/cards/97769122) | `97769122` | [Scripts/c97769122.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c97769122.lua) | 63 |
-| [Bujinki Ahashima](/examples/cards/71095768) | `71095768` | [Scripts/c71095768.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c71095768.lua) | 62 |
-| Supreme King Dragon Lightwurm | `41908872` | [Scripts/c41908872.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c41908872.lua) | 59 |
-| Gagaga Girl - Cell Phone Subtraction | `48393693` | [Scripts/c48393693.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c48393693.lua) | 53 |
-| Salamangreat Zebroid X | `44161893` | [Scripts/c44161893.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c44161893.lua) | 51 |
-| Fire King Sanctuary | `65305978` | [Scripts/c65305978.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c65305978.lua) | 51 |
-| Chronomaly Esperanza Glyph | `50797682` | [Scripts/c50797682.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c50797682.lua) | 51 |
-| Numbers Last Hope | `4606229` | [Scripts/c4606229.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c4606229.lua) | 50 |
-| Mathmech Superfactorial | `87804365` | [Scripts/c87804365.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c87804365.lua) | 49 |
-| Gazer Shark | `23536866` | [Scripts/c23536866.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c23536866.lua) | 49 |
-| Shining Hope Road | `62829077` | [Scripts/c62829077.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c62829077.lua) | 48 |
-| Magicolloidal Sol | `67694706` | [Scripts/c67694706.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c67694706.lua) | 47 |
-| Magikey Locking | `40493210` | [Scripts/c40493210.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c40493210.lua) | 46 |
-| Ryzeal Plasma Hole | `33787730` | [Scripts/c33787730.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c33787730.lua) | 46 |
-| Exosister Returnia | `197042` | [Scripts/c197042.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c197042.lua) | 46 |
-| Reincarnation Unveiling Mail | `68663427` | [Scripts/c68663427.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c68663427.lua) | 45 |
-| Artifacts Unleashed | `56611470` | [Scripts/c56611470.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c56611470.lua) | 45 |
-| The Phantom Knights of Umbrage Veil | `85257384` | [Scripts/c85257384.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c85257384.lua) | 44 |
-| Full-Armored Xyz | `39733924` | [Scripts/c39733924.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c39733924.lua) | 44 |
-| Here There Be Dragons | `4575541` | [Scripts/c4575541.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c4575541.lua) | 44 |
-| Pendulum Xyz | `46005939` | [Scripts/c46005939.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c46005939.lua) | 44 |
-| Gagaga Magician - Gagaga Magic | `12908094` | [Scripts/c12908094.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c12908094.lua) | 42 |
-| K9-ØØ Lupis | `91025875` | [Scripts/c91025875.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c91025875.lua) | 42 |
-| Halfway to Forever | `20285786` | [Scripts/c20285786.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c20285786.lua) | 42 |
+| [Barian's Chaos Draw](/examples/cards/97769122) | `97769122` | [Scripts/c97769122.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c97769122.lua) | 2 |
+| [Bujinki Ahashima](/examples/cards/71095768) | `71095768` | [Scripts/c71095768.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c71095768.lua) | 2 |
+| Supreme King Dragon Lightwurm | `41908872` | [Scripts/c41908872.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c41908872.lua) | 1 |
+| Gagaga Girl - Cell Phone Subtraction | `48393693` | [Scripts/c48393693.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c48393693.lua) | 2 |
+| Salamangreat Zebroid X | `44161893` | [Scripts/c44161893.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c44161893.lua) | 1 |
+| Fire King Sanctuary | `65305978` | [Scripts/c65305978.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c65305978.lua) | 1 |
+| Chronomaly Esperanza Glyph | `50797682` | [Scripts/c50797682.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c50797682.lua) | 2 |
+| Numbers Last Hope | `4606229` | [Scripts/c4606229.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c4606229.lua) | 2 |
+| Mathmech Superfactorial | `87804365` | [Scripts/c87804365.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c87804365.lua) | 1 |
+| Gazer Shark | `23536866` | [Scripts/c23536866.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c23536866.lua) | 2 |
+| Shining Hope Road | `62829077` | [Scripts/c62829077.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c62829077.lua) | 2 |
+| Magicolloidal Sol | `67694706` | [Scripts/c67694706.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c67694706.lua) | 1 |
+| Magikey Locking | `40493210` | [Scripts/c40493210.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c40493210.lua) | 1 |
+| Ryzeal Plasma Hole | `33787730` | [Scripts/c33787730.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c33787730.lua) | 1 |
+| Exosister Returnia | `197042` | [Scripts/c197042.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c197042.lua) | 1 |
+| Reincarnation Unveiling Mail | `68663427` | [Scripts/c68663427.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c68663427.lua) | 1 |
+| Artifacts Unleashed | `56611470` | [Scripts/c56611470.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c56611470.lua) | 2 |
+| The Phantom Knights of Umbrage Veil | `85257384` | [Scripts/c85257384.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c85257384.lua) | 1 |
+| Full-Armored Xyz | `39733924` | [Scripts/c39733924.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c39733924.lua) | 1 |
+| Here There Be Dragons | `4575541` | [Scripts/c4575541.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c4575541.lua) | 1 |
+| Pendulum Xyz | `46005939` | [Scripts/c46005939.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c46005939.lua) | 2 |
+| Gagaga Magician - Gagaga Magic | `12908094` | [Scripts/c12908094.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c12908094.lua) | 1 |
+| K9-ØØ Lupis | `91025875` | [Scripts/c91025875.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c91025875.lua) | 1 |
+| Halfway to Forever | `20285786` | [Scripts/c20285786.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c20285786.lua) | 2 |
 | ...and 6 more |  |  |  |
 
 ## Script Examples

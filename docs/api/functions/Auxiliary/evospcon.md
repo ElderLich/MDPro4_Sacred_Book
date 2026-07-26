@@ -38,13 +38,13 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Evolsaur Cerato | `80651316` | [Scripts/c80651316.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c80651316.lua) | 26 |
-| Evolsaur Pelta | `16480084` | [Scripts/c16480084.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c16480084.lua) | 25 |
-| Evolsaur Vulcano | `54266211` | [Scripts/c54266211.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c54266211.lua) | 24 |
-| Evolsaur Darwino | `39672388` | [Scripts/c39672388.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c39672388.lua) | 23 |
-| Evolsaur Elias | `23234094` | [Scripts/c23234094.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c23234094.lua) | 23 |
-| Evolsaur Diplo | `17045014` | [Scripts/c17045014.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c17045014.lua) | 22 |
-| Evolsaur Terias | `69633792` | [Scripts/c69633792.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c69633792.lua) | 15 |
+| Evolsaur Cerato | `80651316` | [Scripts/c80651316.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c80651316.lua) | 1 |
+| Evolsaur Pelta | `16480084` | [Scripts/c16480084.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c16480084.lua) | 1 |
+| Evolsaur Vulcano | `54266211` | [Scripts/c54266211.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c54266211.lua) | 1 |
+| Evolsaur Darwino | `39672388` | [Scripts/c39672388.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c39672388.lua) | 1 |
+| Evolsaur Elias | `23234094` | [Scripts/c23234094.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c23234094.lua) | 1 |
+| Evolsaur Diplo | `17045014` | [Scripts/c17045014.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c17045014.lua) | 1 |
+| Evolsaur Terias | `69633792` | [Scripts/c69633792.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c69633792.lua) | 1 |
 
 ## Script Examples
 

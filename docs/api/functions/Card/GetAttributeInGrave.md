@@ -32,8 +32,8 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Aerial Eater | `28143384` | [Scripts/c28143384.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c28143384.lua) | 43 |
-| Transmodify | `5288597` | [Scripts/c5288597.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c5288597.lua) | 37 |
+| Aerial Eater | `28143384` | [Scripts/c28143384.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c28143384.lua) | 1 |
+| Transmodify | `5288597` | [Scripts/c5288597.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c5288597.lua) | 1 |
 
 ## Script Examples
 

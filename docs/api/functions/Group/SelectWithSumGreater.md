@@ -35,7 +35,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Ferret Flames | `31044787` | [Scripts/c31044787.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c31044787.lua) | 19 |
+| Ferret Flames | `31044787` | [Scripts/c31044787.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c31044787.lua) | 1 |
 
 ## Script Examples
 

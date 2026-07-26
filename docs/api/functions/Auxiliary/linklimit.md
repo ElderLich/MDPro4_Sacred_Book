@@ -34,14 +34,14 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Sky Striker Ace - Camellia | `63013339` | [Scripts/c63013339.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c63013339.lua) | 48 |
-| Scareclaw Tri-Heart | `59120809` | [Scripts/c59120809.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c59120809.lua) | 48 |
-| Sky Striker Ace - Azalea Temperance | `56741506` | [Scripts/c56741506.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c56741506.lua) | 47 |
-| Prank-Kids Rip-Roarin-Roaster | `70875686` | [Scripts/c70875686.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c70875686.lua) | 47 |
-| Sky Striker Ace - Zeke | `75147529` | [Scripts/c75147529.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c75147529.lua) | 46 |
-| Five-Headed Link Dragon | `10669138` | [Scripts/c10669138.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c10669138.lua) | 45 |
-| Sky Striker Ace - Azalea | `98462037` | [Scripts/c98462037.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c98462037.lua) | 39 |
-| Surgical Striker - S.P.E.C.T.R.A. | `23530726` | [Scripts/c23530726.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c23530726.lua) | 37 |
+| Sky Striker Ace - Camellia | `63013339` | [Scripts/c63013339.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c63013339.lua) | 1 |
+| Scareclaw Tri-Heart | `59120809` | [Scripts/c59120809.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c59120809.lua) | 1 |
+| Sky Striker Ace - Azalea Temperance | `56741506` | [Scripts/c56741506.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c56741506.lua) | 1 |
+| Prank-Kids Rip-Roarin-Roaster | `70875686` | [Scripts/c70875686.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c70875686.lua) | 1 |
+| Sky Striker Ace - Zeke | `75147529` | [Scripts/c75147529.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c75147529.lua) | 1 |
+| Five-Headed Link Dragon | `10669138` | [Scripts/c10669138.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c10669138.lua) | 1 |
+| Sky Striker Ace - Azalea | `98462037` | [Scripts/c98462037.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c98462037.lua) | 1 |
+| Surgical Striker - S.P.E.C.T.R.A. | `23530726` | [Scripts/c23530726.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c23530726.lua) | 1 |
 
 ## Script Examples
 

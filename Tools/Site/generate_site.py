@@ -276,6 +276,10 @@ def extract_call_snippet(script: str, name: str) -> str:
     return ""
 
 
+def count_api_calls(script: str, name: str) -> int:
+    return sum(len(pattern.findall(script)) for pattern in call_patterns(name))
+
+
 def usage_by_function(examples: list[dict[str, object]]) -> dict[str, list[dict[str, object]]]:
     usage: dict[str, list[dict[str, object]]] = {}
     for item in examples:
@@ -351,8 +355,9 @@ def append_api_usage_sections(examples: list[dict[str, object]], featured_ids: s
                     else card_name
                 )
                 script_path = str(item["script"])
+                detected_calls = count_api_calls(str(item["_script_text"]), name)
                 lines.append(
-                    f"| {card_label} | `{card_id}` | [{markdown_table_escape(script_path)}]({github_script_url(script_path)}) | {len(item['api_calls'])} |"
+                    f"| {card_label} | `{card_id}` | [{markdown_table_escape(script_path)}]({github_script_url(script_path)}) | {detected_calls} |"
                 )
             if len(items) > USAGE_TABLE_LIMIT:
                 lines.append(f"| ...and {len(items) - USAGE_TABLE_LIMIT} more |  |  |  |")

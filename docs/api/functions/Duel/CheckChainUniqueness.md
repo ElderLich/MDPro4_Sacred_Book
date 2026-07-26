@@ -27,14 +27,14 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Lightning Punisher | `45023678` | [Scripts/c45023678.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c45023678.lua) | 28 |
-| Iris, the Earth Mother | `9628664` | [Scripts/c9628664.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c9628664.lua) | 23 |
-| Surprise Chain | `70491413` | [Scripts/c70491413.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c70491413.lua) | 22 |
-| Mystical Wind Typhoon | `63516460` | [Scripts/c63516460.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c63516460.lua) | 22 |
-| Miraculous Rebirth | `37011715` | [Scripts/c37011715.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c37011715.lua) | 21 |
-| Chain Summoning | `9952083` | [Scripts/c9952083.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c9952083.lua) | 18 |
-| Accumulated Fortune | `98444741` | [Scripts/c98444741.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c98444741.lua) | 17 |
-| Chain Strike | `91623717` | [Scripts/c91623717.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c91623717.lua) | 15 |
+| Lightning Punisher | `45023678` | [Scripts/c45023678.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c45023678.lua) | 1 |
+| Iris, the Earth Mother | `9628664` | [Scripts/c9628664.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c9628664.lua) | 1 |
+| Surprise Chain | `70491413` | [Scripts/c70491413.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c70491413.lua) | 1 |
+| Mystical Wind Typhoon | `63516460` | [Scripts/c63516460.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c63516460.lua) | 1 |
+| Miraculous Rebirth | `37011715` | [Scripts/c37011715.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c37011715.lua) | 1 |
+| Chain Summoning | `9952083` | [Scripts/c9952083.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c9952083.lua) | 1 |
+| Accumulated Fortune | `98444741` | [Scripts/c98444741.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c98444741.lua) | 1 |
+| Chain Strike | `91623717` | [Scripts/c91623717.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c91623717.lua) | 1 |
 
 ## Script Examples
 

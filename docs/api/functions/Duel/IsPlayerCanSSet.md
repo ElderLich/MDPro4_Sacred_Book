@@ -32,8 +32,8 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Silent Wolf Calupo | `15947754` | [Scripts/c15947754.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c15947754.lua) | 41 |
-| Absolute King Back Jack | `60990740` | [Scripts/c60990740.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c60990740.lua) | 31 |
+| Silent Wolf Calupo | `15947754` | [Scripts/c15947754.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c15947754.lua) | 1 |
+| Absolute King Back Jack | `60990740` | [Scripts/c60990740.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c60990740.lua) | 1 |
 
 ## Script Examples
 

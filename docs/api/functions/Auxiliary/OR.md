@@ -31,7 +31,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Dominus Spiral | `42091632` | [Scripts/c42091632.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c42091632.lua) | 46 |
+| Dominus Spiral | `42091632` | [Scripts/c42091632.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c42091632.lua) | 2 |
 
 ## Script Examples
 

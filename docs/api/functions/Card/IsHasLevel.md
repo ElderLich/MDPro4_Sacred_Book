@@ -31,8 +31,8 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Returned of the Tistina | `24892828` | [Scripts/c24892828.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c24892828.lua) | 38 |
-| Void Expansion | `34822850` | [Scripts/c34822850.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c34822850.lua) | 27 |
+| Returned of the Tistina | `24892828` | [Scripts/c24892828.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c24892828.lua) | 1 |
+| Void Expansion | `34822850` | [Scripts/c34822850.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c34822850.lua) | 1 |
 
 ## Script Examples
 

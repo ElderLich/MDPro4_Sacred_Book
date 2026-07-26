@@ -31,7 +31,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Transmission Gear | `58297729` | [Scripts/c58297729.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c58297729.lua) | 14 |
+| Transmission Gear | `58297729` | [Scripts/c58297729.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c58297729.lua) | 1 |
 
 ## Script Examples
 

@@ -31,9 +31,9 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Destruction Chant of the Sacred Beast | `50147815` | [Scripts/c50147815.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c50147815.lua) | 59 |
-| Fallen Paradise of the Sacred Beasts | `65861210` | [Scripts/c65861210.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c65861210.lua) | 56 |
-| The Orchestrator of the Sacred Beasts | `22734799` | [Scripts/c22734799.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c22734799.lua) | 32 |
+| Destruction Chant of the Sacred Beast | `50147815` | [Scripts/c50147815.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c50147815.lua) | 2 |
+| Fallen Paradise of the Sacred Beasts | `65861210` | [Scripts/c65861210.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c65861210.lua) | 2 |
+| The Orchestrator of the Sacred Beasts | `22734799` | [Scripts/c22734799.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c22734799.lua) | 2 |
 
 ## Script Examples
 

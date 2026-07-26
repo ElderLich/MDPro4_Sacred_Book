@@ -27,11 +27,11 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Chaos Hats | `2372506` | [Scripts/c2372506.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c2372506.lua) | 59 |
-| Magical Hats | `81210420` | [Scripts/c81210420.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c81210420.lua) | 59 |
-| Morphing Jar #2 | `79106360` | [Scripts/c79106360.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c79106360.lua) | 35 |
-| Wandering Mummy | `42994702` | [Scripts/c42994702.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c42994702.lua) | 21 |
-| Shifting Shadows | `59237154` | [Scripts/c59237154.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c59237154.lua) | 18 |
+| Chaos Hats | `2372506` | [Scripts/c2372506.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c2372506.lua) | 1 |
+| Magical Hats | `81210420` | [Scripts/c81210420.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c81210420.lua) | 1 |
+| Morphing Jar #2 | `79106360` | [Scripts/c79106360.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c79106360.lua) | 2 |
+| Wandering Mummy | `42994702` | [Scripts/c42994702.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c42994702.lua) | 1 |
+| Shifting Shadows | `59237154` | [Scripts/c59237154.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c59237154.lua) | 1 |
 
 ## Script Examples
 

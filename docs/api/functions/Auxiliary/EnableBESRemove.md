@@ -27,12 +27,12 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| B.E.S. Big Core MK-3 | `82821760` | [Scripts/c82821760.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c82821760.lua) | 32 |
-| B.E.S. Crystal Core | `22790789` | [Scripts/c22790789.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c22790789.lua) | 27 |
-| B.E.S. Tetran | `44954628` | [Scripts/c44954628.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c44954628.lua) | 26 |
-| B.E.S. Blaster Cannon Core | `84257883` | [Scripts/c84257883.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c84257883.lua) | 23 |
-| B.E.S. Big Core MK-2 | `75937826` | [Scripts/c75937826.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c75937826.lua) | 20 |
-| B.E.S. Big Core | `14148099` | [Scripts/c14148099.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c14148099.lua) | 14 |
+| B.E.S. Big Core MK-3 | `82821760` | [Scripts/c82821760.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c82821760.lua) | 1 |
+| B.E.S. Crystal Core | `22790789` | [Scripts/c22790789.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c22790789.lua) | 1 |
+| B.E.S. Tetran | `44954628` | [Scripts/c44954628.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c44954628.lua) | 1 |
+| B.E.S. Blaster Cannon Core | `84257883` | [Scripts/c84257883.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c84257883.lua) | 1 |
+| B.E.S. Big Core MK-2 | `75937826` | [Scripts/c75937826.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c75937826.lua) | 1 |
+| B.E.S. Big Core | `14148099` | [Scripts/c14148099.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c14148099.lua) | 1 |
 
 ## Script Examples
 

@@ -29,14 +29,14 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Nephe Shaddoll Fusion | `60226558` | [Scripts/c60226558.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c60226558.lua) | 55 |
-| Tualatin | `27769400` | [Scripts/c27769400.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c27769400.lua) | 37 |
-| Maple Maiden | `73104892` | [Scripts/c73104892.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c73104892.lua) | 36 |
-| Mirror Resonator | `40159926` | [Scripts/c40159926.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c40159926.lua) | 31 |
-| Genomix Fighter | `42155488` | [Scripts/c42155488.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c42155488.lua) | 31 |
-| Cloak and Dagger | `8323633` | [Scripts/c8323633.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c8323633.lua) | 29 |
-| Prohibition | `43711255` | [Scripts/c43711255.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c43711255.lua) | 25 |
-| Final Countdown | `95308449` | [Scripts/c95308449.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c95308449.lua) | 19 |
+| Nephe Shaddoll Fusion | `60226558` | [Scripts/c60226558.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c60226558.lua) | 1 |
+| Tualatin | `27769400` | [Scripts/c27769400.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c27769400.lua) | 1 |
+| Maple Maiden | `73104892` | [Scripts/c73104892.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c73104892.lua) | 1 |
+| Mirror Resonator | `40159926` | [Scripts/c40159926.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c40159926.lua) | 1 |
+| Genomix Fighter | `42155488` | [Scripts/c42155488.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c42155488.lua) | 1 |
+| Cloak and Dagger | `8323633` | [Scripts/c8323633.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c8323633.lua) | 1 |
+| Prohibition | `43711255` | [Scripts/c43711255.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c43711255.lua) | 1 |
+| Final Countdown | `95308449` | [Scripts/c95308449.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c95308449.lua) | 1 |
 
 ## Script Examples
 

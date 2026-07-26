@@ -32,8 +32,8 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Miracle Synchro Fusion | `36484016` | [Scripts/c36484016.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c36484016.lua) | 54 |
-| Scrap-Iron Signal | `50947142` | [Scripts/c50947142.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c50947142.lua) | 24 |
+| Miracle Synchro Fusion | `36484016` | [Scripts/c36484016.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c36484016.lua) | 1 |
+| Scrap-Iron Signal | `50947142` | [Scripts/c50947142.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c50947142.lua) | 1 |
 
 ## Script Examples
 

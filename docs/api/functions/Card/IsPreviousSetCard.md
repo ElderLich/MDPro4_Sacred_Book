@@ -35,30 +35,30 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| [D/D/D/D Super-Dimensional Sovereign Emperor Zero Paradox](/examples/cards/97417863) | `97417863` | [Scripts/c97417863.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c97417863.lua) | 62 |
-| Fossil Fusion | `59419719` | [Scripts/c59419719.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c59419719.lua) | 60 |
-| Ursarctic Quint Charge | `15758127` | [Scripts/c15758127.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c15758127.lua) | 56 |
-| Gem-Knight Master Diamond Dispersion | `25342956` | [Scripts/c25342956.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c25342956.lua) | 55 |
-| Gunkan Sushipyard Seaside Supper Spot | `62200831` | [Scripts/c62200831.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c62200831.lua) | 54 |
-| Unification of the Cubic Lords | `34325937` | [Scripts/c34325937.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c34325937.lua) | 53 |
-| Salamangreat Zebroid X | `44161893` | [Scripts/c44161893.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c44161893.lua) | 51 |
-| Ultimate Crystal Magic | `36328300` | [Scripts/c36328300.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c36328300.lua) | 51 |
-| PSY-Frame Accelerator | `51053997` | [Scripts/c51053997.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c51053997.lua) | 51 |
-| Evil HERO Inferno Wing - Backfire | `59893882` | [Scripts/c59893882.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c59893882.lua) | 49 |
-| Nerva the Power Patron of Creation | `53589300` | [Scripts/c53589300.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c53589300.lua) | 48 |
-| Battle Shogun of the Six Samurai | `74752631` | [Scripts/c74752631.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c74752631.lua) | 48 |
-| Fandora, the Flying Fighting Furtress | `26162470` | [Scripts/c26162470.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c26162470.lua) | 47 |
-| Mementotlan Akihiron | `54207171` | [Scripts/c54207171.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c54207171.lua) | 47 |
-| Xtra HERO Wonder Driver | `1948619` | [Scripts/c1948619.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c1948619.lua) | 47 |
-| Draco Awakening | `66092596` | [Scripts/c66092596.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c66092596.lua) | 47 |
-| Sunvine Thrasher | `91557476` | [Scripts/c91557476.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c91557476.lua) | 47 |
-| D/D/D Zero Doom Queen Machinex | `20715411` | [Scripts/c20715411.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c20715411.lua) | 46 |
-| Parametalfoes Azortless | `37491810` | [Scripts/c37491810.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c37491810.lua) | 46 |
-| Icejade Manifestation | `72776252` | [Scripts/c72776252.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c72776252.lua) | 46 |
-| Alviss of the Nordic Alfar | `27024795` | [Scripts/c27024795.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c27024795.lua) | 45 |
-| Centur-Ion Primera Primus | `8841431` | [Scripts/c8841431.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c8841431.lua) | 45 |
-| Mythical Institution | `94599451` | [Scripts/c94599451.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c94599451.lua) | 45 |
-| Kuribah | `44632120` | [Scripts/c44632120.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c44632120.lua) | 45 |
+| [D/D/D/D Super-Dimensional Sovereign Emperor Zero Paradox](/examples/cards/97417863) | `97417863` | [Scripts/c97417863.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c97417863.lua) | 1 |
+| Fossil Fusion | `59419719` | [Scripts/c59419719.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c59419719.lua) | 1 |
+| Ursarctic Quint Charge | `15758127` | [Scripts/c15758127.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c15758127.lua) | 1 |
+| Gem-Knight Master Diamond Dispersion | `25342956` | [Scripts/c25342956.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c25342956.lua) | 1 |
+| Gunkan Sushipyard Seaside Supper Spot | `62200831` | [Scripts/c62200831.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c62200831.lua) | 1 |
+| Unification of the Cubic Lords | `34325937` | [Scripts/c34325937.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c34325937.lua) | 1 |
+| Salamangreat Zebroid X | `44161893` | [Scripts/c44161893.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c44161893.lua) | 1 |
+| Ultimate Crystal Magic | `36328300` | [Scripts/c36328300.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c36328300.lua) | 2 |
+| PSY-Frame Accelerator | `51053997` | [Scripts/c51053997.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c51053997.lua) | 1 |
+| Evil HERO Inferno Wing - Backfire | `59893882` | [Scripts/c59893882.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c59893882.lua) | 1 |
+| Nerva the Power Patron of Creation | `53589300` | [Scripts/c53589300.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c53589300.lua) | 1 |
+| Battle Shogun of the Six Samurai | `74752631` | [Scripts/c74752631.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c74752631.lua) | 1 |
+| Fandora, the Flying Fighting Furtress | `26162470` | [Scripts/c26162470.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c26162470.lua) | 1 |
+| Mementotlan Akihiron | `54207171` | [Scripts/c54207171.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c54207171.lua) | 1 |
+| Xtra HERO Wonder Driver | `1948619` | [Scripts/c1948619.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c1948619.lua) | 1 |
+| Draco Awakening | `66092596` | [Scripts/c66092596.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c66092596.lua) | 1 |
+| Sunvine Thrasher | `91557476` | [Scripts/c91557476.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c91557476.lua) | 1 |
+| D/D/D Zero Doom Queen Machinex | `20715411` | [Scripts/c20715411.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c20715411.lua) | 1 |
+| Parametalfoes Azortless | `37491810` | [Scripts/c37491810.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c37491810.lua) | 1 |
+| Icejade Manifestation | `72776252` | [Scripts/c72776252.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c72776252.lua) | 1 |
+| Alviss of the Nordic Alfar | `27024795` | [Scripts/c27024795.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c27024795.lua) | 1 |
+| Centur-Ion Primera Primus | `8841431` | [Scripts/c8841431.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c8841431.lua) | 1 |
+| Mythical Institution | `94599451` | [Scripts/c94599451.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c94599451.lua) | 1 |
+| Kuribah | `44632120` | [Scripts/c44632120.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c44632120.lua) | 1 |
 | ...and 52 more |  |  |  |
 
 ## Script Examples

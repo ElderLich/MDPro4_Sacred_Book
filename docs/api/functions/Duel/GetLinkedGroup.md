@@ -34,12 +34,12 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Borrelcode Dragon | `67288539` | [Scripts/c67288539.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c67288539.lua) | 53 |
-| Pitknight Filly | `25919316` | [Scripts/c25919316.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c25919316.lua) | 43 |
-| Crusadia Draco | `54525057` | [Scripts/c54525057.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c54525057.lua) | 36 |
-| Crusadia Reclusia | `55241609` | [Scripts/c55241609.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c55241609.lua) | 34 |
-| Voltester | `18585765` | [Scripts/c18585765.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c18585765.lua) | 33 |
-| Crusadia Krawler | `55838342` | [Scripts/c55838342.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c55838342.lua) | 30 |
+| Borrelcode Dragon | `67288539` | [Scripts/c67288539.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c67288539.lua) | 2 |
+| Pitknight Filly | `25919316` | [Scripts/c25919316.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c25919316.lua) | 2 |
+| Crusadia Draco | `54525057` | [Scripts/c54525057.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c54525057.lua) | 2 |
+| Crusadia Reclusia | `55241609` | [Scripts/c55241609.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c55241609.lua) | 2 |
+| Voltester | `18585765` | [Scripts/c18585765.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c18585765.lua) | 2 |
+| Crusadia Krawler | `55838342` | [Scripts/c55838342.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c55838342.lua) | 2 |
 
 ## Script Examples
 

@@ -29,9 +29,9 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Welcome Labrynth | `5380979` | [Scripts/c5380979.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c5380979.lua) | 39 |
-| Big Welcome Labrynth | `92714517` | [Scripts/c92714517.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c92714517.lua) | 37 |
-| Farewelcome Labrynth | `32785578` | [Scripts/c32785578.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c32785578.lua) | 35 |
+| Welcome Labrynth | `5380979` | [Scripts/c5380979.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c5380979.lua) | 1 |
+| Big Welcome Labrynth | `92714517` | [Scripts/c92714517.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c92714517.lua) | 1 |
+| Farewelcome Labrynth | `32785578` | [Scripts/c32785578.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c32785578.lua) | 1 |
 
 ## Script Examples
 

@@ -34,12 +34,12 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Ninjitsu Art of Shadow Sealing | `13629812` | [Scripts/c13629812.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c13629812.lua) | 42 |
-| Ghostrick Socuteboss | `32224143` | [Scripts/c32224143.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c32224143.lua) | 40 |
-| Rage of Kairyu-Shin | `82685480` | [Scripts/c82685480.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c82685480.lua) | 37 |
-| Dimensionhole | `22959079` | [Scripts/c22959079.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c22959079.lua) | 32 |
-| Magical Musket - Crooked Crown | `47810543` | [Scripts/c47810543.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c47810543.lua) | 30 |
-| Prometeor, the Burning Star | `75713017` | [Scripts/c75713017.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c75713017.lua) | 25 |
+| Ninjitsu Art of Shadow Sealing | `13629812` | [Scripts/c13629812.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c13629812.lua) | 1 |
+| Ghostrick Socuteboss | `32224143` | [Scripts/c32224143.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c32224143.lua) | 1 |
+| Rage of Kairyu-Shin | `82685480` | [Scripts/c82685480.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c82685480.lua) | 1 |
+| Dimensionhole | `22959079` | [Scripts/c22959079.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c22959079.lua) | 1 |
+| Magical Musket - Crooked Crown | `47810543` | [Scripts/c47810543.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c47810543.lua) | 1 |
+| Prometeor, the Burning Star | `75713017` | [Scripts/c75713017.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c75713017.lua) | 1 |
 
 ## Script Examples
 

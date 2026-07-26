@@ -31,10 +31,10 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Worm Zero | `74506079` | [Scripts/c74506079.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c74506079.lua) | 43 |
-| Charmers of the Grand Circle | `48016074` | [Scripts/c48016074.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c48016074.lua) | 42 |
-| Chimeratech Rampage Dragon | `84058253` | [Scripts/c84058253.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c84058253.lua) | 36 |
-| Extox Hydra | `26050548` | [Scripts/c26050548.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c26050548.lua) | 34 |
+| Worm Zero | `74506079` | [Scripts/c74506079.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c74506079.lua) | 1 |
+| Charmers of the Grand Circle | `48016074` | [Scripts/c48016074.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c48016074.lua) | 1 |
+| Chimeratech Rampage Dragon | `84058253` | [Scripts/c84058253.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c84058253.lua) | 1 |
+| Extox Hydra | `26050548` | [Scripts/c26050548.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c26050548.lua) | 1 |
 
 ## Script Examples
 

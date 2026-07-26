@@ -33,9 +33,9 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Salamangreat Sanctuary | `1295111` | [Scripts/c1295111.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c1295111.lua) | 53 |
-| Code of Soul | `74652966` | [Scripts/c74652966.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c74652966.lua) | 50 |
-| Salamangreat Transcendence | `54529134` | [Scripts/c54529134.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c54529134.lua) | 40 |
+| Salamangreat Sanctuary | `1295111` | [Scripts/c1295111.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c1295111.lua) | 1 |
+| Code of Soul | `74652966` | [Scripts/c74652966.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c74652966.lua) | 1 |
+| Salamangreat Transcendence | `54529134` | [Scripts/c54529134.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c54529134.lua) | 1 |
 
 ## Script Examples
 

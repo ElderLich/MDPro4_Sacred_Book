@@ -31,7 +31,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Wisdom-Eye Magician | `72714461` | [Scripts/c72714461.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c72714461.lua) | 40 |
+| Wisdom-Eye Magician | `72714461` | [Scripts/c72714461.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c72714461.lua) | 1 |
 
 ## Script Examples
 

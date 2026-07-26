@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-07-26T16:02:56+00:00",
+    "generated_at": "2026-07-26T16:41:30+00:00",
     "workspace": "D:\\Programs\\GitHub\\MDPro3_Sacred_Book",
     "dataeditorx_data": "D:\\Programs\\GitHub\\DataEditorX\\DataEditorX\\data",
     "mdpro3_locales": "D:\\Programs\\GitHub\\MDPro3_Data\\Data\\locales",
@@ -29891,7 +29891,7 @@
         "设置效果e的Code属性。"
       ],
       "description_en": [
-        "Sets e's code. For triggered effects this is usually an event code; for continuous effects it is the effect code being applied."
+        "Stores the engine code for e. Depending on the effect type, this is an EVENT_* timing, an EFFECT_* rule or procedure, or a composed/custom code. It is unrelated to a card's archetype setcode."
       ],
       "english_status": "translated_exact",
       "source_files": [

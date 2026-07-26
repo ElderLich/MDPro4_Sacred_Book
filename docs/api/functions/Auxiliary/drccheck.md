@@ -27,11 +27,11 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Bujin Torifune | `29981935` | [Scripts/c29981935.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c29981935.lua) | 47 |
-| Carpiponica, Mystical Beast of the Forest | `85055821` | [Scripts/c85055821.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c85055821.lua) | 41 |
-| Pot of Dichotomy | `98672567` | [Scripts/c98672567.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c98672567.lua) | 38 |
-| Tribe Drive | `90969892` | [Scripts/c90969892.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c90969892.lua) | 34 |
-| Sky Scourge Cidhels | `15792576` | [Scripts/c15792576.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c15792576.lua) | 34 |
+| Bujin Torifune | `29981935` | [Scripts/c29981935.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c29981935.lua) | 1 |
+| Carpiponica, Mystical Beast of the Forest | `85055821` | [Scripts/c85055821.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c85055821.lua) | 2 |
+| Pot of Dichotomy | `98672567` | [Scripts/c98672567.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c98672567.lua) | 1 |
+| Tribe Drive | `90969892` | [Scripts/c90969892.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c90969892.lua) | 2 |
+| Sky Scourge Cidhels | `15792576` | [Scripts/c15792576.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c15792576.lua) | 1 |
 
 ## Script Examples
 

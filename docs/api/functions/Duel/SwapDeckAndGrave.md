@@ -27,7 +27,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Exchange of the Spirit | `17484499` | [Scripts/c17484499.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c17484499.lua) | 15 |
+| Exchange of the Spirit | `17484499` | [Scripts/c17484499.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c17484499.lua) | 2 |
 
 ## Script Examples
 

@@ -33,8 +33,8 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Starry Dragon's Cycle | `6278008` | [Scripts/c6278008.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c6278008.lua) | 41 |
-| Sextet Summon | `99162753` | [Scripts/c99162753.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c99162753.lua) | 32 |
+| Starry Dragon's Cycle | `6278008` | [Scripts/c6278008.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c6278008.lua) | 2 |
+| Sextet Summon | `99162753` | [Scripts/c99162753.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c99162753.lua) | 1 |
 
 ## Script Examples
 

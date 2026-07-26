@@ -27,11 +27,11 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Hollowrokket Dragon | `51548207` | [Scripts/c51548207.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c51548207.lua) | 45 |
-| Kewl Tune Cue | `16387555` | [Scripts/c16387555.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c16387555.lua) | 43 |
-| Kashtira Ogre | `94392192` | [Scripts/c94392192.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c94392192.lua) | 36 |
-| Puppet Shark | `53323475` | [Scripts/c53323475.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c53323475.lua) | 30 |
-| Hatsugai | `43618262` | [Scripts/c43618262.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c43618262.lua) | 26 |
+| Hollowrokket Dragon | `51548207` | [Scripts/c51548207.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c51548207.lua) | 2 |
+| Kewl Tune Cue | `16387555` | [Scripts/c16387555.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c16387555.lua) | 2 |
+| Kashtira Ogre | `94392192` | [Scripts/c94392192.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c94392192.lua) | 2 |
+| Puppet Shark | `53323475` | [Scripts/c53323475.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c53323475.lua) | 2 |
+| Hatsugai | `43618262` | [Scripts/c43618262.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c43618262.lua) | 2 |
 
 ## Script Examples
 

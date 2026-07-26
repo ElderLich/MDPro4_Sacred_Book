@@ -32,12 +32,12 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Salamangreat Sunlight Wolf | `87871125` | [Scripts/c87871125.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c87871125.lua) | 52 |
-| Flash Charge Dragon | `95372220` | [Scripts/c95372220.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c95372220.lua) | 47 |
-| Knightmare Goblin | `39064822` | [Scripts/c39064822.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c39064822.lua) | 42 |
-| Cairngorgon, Antiluminescent Knight | `21501505` | [Scripts/c21501505.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c21501505.lua) | 36 |
-| Vampire Duke | `58947797` | [Scripts/c58947797.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c58947797.lua) | 34 |
-| Gouki Thunder Ogre | `30010480` | [Scripts/c30010480.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c30010480.lua) | 30 |
+| Salamangreat Sunlight Wolf | `87871125` | [Scripts/c87871125.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c87871125.lua) | 1 |
+| Flash Charge Dragon | `95372220` | [Scripts/c95372220.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c95372220.lua) | 1 |
+| Knightmare Goblin | `39064822` | [Scripts/c39064822.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c39064822.lua) | 1 |
+| Cairngorgon, Antiluminescent Knight | `21501505` | [Scripts/c21501505.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c21501505.lua) | 1 |
+| Vampire Duke | `58947797` | [Scripts/c58947797.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c58947797.lua) | 1 |
+| Gouki Thunder Ogre | `30010480` | [Scripts/c30010480.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c30010480.lua) | 2 |
 
 ## Script Examples
 

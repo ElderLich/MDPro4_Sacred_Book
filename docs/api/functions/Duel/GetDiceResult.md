@@ -31,8 +31,8 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Number 67: Pair-a-Dice Smasher | `35772782` | [Scripts/c35772782.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c35772782.lua) | 34 |
-| That Six | `39454112` | [Scripts/c39454112.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c39454112.lua) | 14 |
+| Number 67: Pair-a-Dice Smasher | `35772782` | [Scripts/c35772782.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c35772782.lua) | 1 |
+| That Six | `39454112` | [Scripts/c39454112.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c39454112.lua) | 1 |
 
 ## Script Examples
 

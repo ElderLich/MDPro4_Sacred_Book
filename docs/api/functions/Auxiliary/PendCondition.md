@@ -34,7 +34,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Pendulum Encore | `6992184` | [Scripts/c6992184.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c6992184.lua) | 39 |
+| Pendulum Encore | `6992184` | [Scripts/c6992184.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c6992184.lua) | 1 |
 
 ## Script Examples
 

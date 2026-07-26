@@ -31,7 +31,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Dimension Dice | `47292920` | [Scripts/c47292920.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c47292920.lua) | 28 |
+| Dimension Dice | `47292920` | [Scripts/c47292920.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c47292920.lua) | 1 |
 
 ## Script Examples
 

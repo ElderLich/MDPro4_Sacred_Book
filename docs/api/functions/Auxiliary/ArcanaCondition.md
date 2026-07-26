@@ -31,9 +31,9 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Arcana Force 0 - The Fool | `62892347` | [Scripts/c62892347.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c62892347.lua) | 23 |
-| Arcana Force I - The Magician | `8396952` | [Scripts/c8396952.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c8396952.lua) | 17 |
-| Arcana Force IV - The Emperor | `61175706` | [Scripts/c61175706.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c61175706.lua) | 13 |
+| Arcana Force 0 - The Fool | `62892347` | [Scripts/c62892347.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c62892347.lua) | 3 |
+| Arcana Force I - The Magician | `8396952` | [Scripts/c8396952.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c8396952.lua) | 1 |
+| Arcana Force IV - The Emperor | `61175706` | [Scripts/c61175706.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c61175706.lua) | 1 |
 
 ## Script Examples
 

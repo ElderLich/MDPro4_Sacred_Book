@@ -3,6 +3,28 @@
   --vp-sidebar-width: 300px;
 }
 
+@media (min-width: 960px) {
+  .VPSidebar {
+    scrollbar-gutter: stable;
+  }
+
+  .VPSidebar .nav,
+  .VPSidebar .group {
+    width: 100%;
+    min-width: 0;
+  }
+}
+
+.VPSidebar .item,
+.VPSidebar .link,
+.VPSidebar .text {
+  min-width: 0;
+}
+
+.VPSidebar .text {
+  overflow-wrap: anywhere;
+}
+
 .VPDoc:not(.has-sidebar) .container {
   max-width: min(1440px, calc(100vw - 64px)) !important;
 }
@@ -40,6 +62,26 @@
 .vp-doc th:first-child,
 .vp-doc td:first-child {
   width: 22%;
+}
+
+.effect-setcode-page .vp-doc table th:first-child:nth-last-child(4),
+.effect-setcode-page .vp-doc table td:first-child:nth-last-child(4) {
+  width: 27%;
+}
+
+.effect-setcode-page .vp-doc table th:nth-child(2):nth-last-child(3),
+.effect-setcode-page .vp-doc table td:nth-child(2):nth-last-child(3) {
+  width: 13%;
+}
+
+.effect-setcode-page .vp-doc table th:nth-child(3):nth-last-child(2),
+.effect-setcode-page .vp-doc table td:nth-child(3):nth-last-child(2) {
+  width: 50%;
+}
+
+.effect-setcode-page .vp-doc table th:nth-child(4):last-child,
+.effect-setcode-page .vp-doc table td:nth-child(4):last-child {
+  width: 10%;
 }
 
 .vp-doc td code,

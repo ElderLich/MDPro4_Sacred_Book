@@ -28,6 +28,11 @@ LUA_FUNCTION_START_RE = re.compile(
     r"|^\s*[A-Za-z_]\w*(?:[.:][A-Za-z_]\w*)?\s*=\s*function\s*\("
 )
 BULLET_RE = re.compile(r"^.(?:[^\s]+\s+)*([A-Za-z_]\w*(?:\.[A-Za-z_]\w*)?)\s*\(")
+SETCODE_METHOD_RE = re.compile(r":\s*SetCode\s*\(\s*([^\r\n)]*)")
+SETCODE_STATIC_RE = re.compile(
+    r"\bEffect\s*\.\s*SetCode\s*\(\s*[^,\r\n]+,\s*([^\r\n)]*)"
+)
+SETCODE_CONSTANT_RE = re.compile(r"\b(?:EFFECT|EVENT)_[A-Z0-9_]+\b")
 
 
 TYPE_MAP = {
@@ -1416,16 +1421,36 @@ FUNCTION_DETAIL_GUIDES = {
         "MDPro3 normalizes some type combinations. Spell/Trap activation effects become field activation effects and receive the usual hand/Spell & Trap/Field Zone activation range. Flip Effects are converted to `EVENT_FLIP` handling. Ignition and Quick effects gain field behavior internally.",
     ],
     "Effect.SetCode": [
-        "`SetCode` means different things depending on the effect type.",
+        "`Effect.SetCode` is **not** related to a card's archetype setcode. "
+        "The separate **Archetypes and Setcodes** Learn page documents card membership. "
+        "This function stores the engine code that identifies what an `Effect` listens for or what rule it applies.",
         "",
-        "For trigger effects, it is usually the event that makes the effect eligible to activate:",
+        "The core stores the supplied integer directly. Its meaning comes from the effect's `SetType`:",
+        "",
+        "| Effect shape | `SetCode` family | Purpose |",
+        "| --- | --- | --- |",
+        "| Spell/Trap activation (`EFFECT_TYPE_ACTIVATE`) | Usually `EVENT_FREE_CHAIN`, or a specific `EVENT_*` | Chooses the activation window. |",
+        "| Trigger or Quick effect | `EVENT_*`, a composed phase/counter event, or a custom event | Chooses the event that can wake the effect. |",
+        "| Event-watching Continuous effect | A continuous-only `EVENT_*` | Runs an operation immediately when that engine event is processed. |",
+        "| Single, Field, Equip, Xyz-material, or Grant rule | `EFFECT_*` | Chooses the rule, modifier, restriction, procedure, or replacement being applied. |",
+        "| Ignition effect | Usually no code | Ignition effects are selected by the player during an open Main Phase; `SetRange` and callbacks normally define them. |",
+        "| Flip Effect | `EVENT_FLIP` is assigned by `SetType` | The core normalizes `EFFECT_TYPE_FLIP` and overwrites the code with `EVENT_FLIP`. |",
+        "",
+        "Call `SetType` before `SetCode`, especially for Flip Effects, and finish setting the code before `RegisterEffect`. "
+        "Registration indexes the effect under its current code; changing the code afterward does not reindex it.",
+        "",
+        "`EFFECT_TYPE_CONTINUOUS` means an event-processing action with an `Operation` callback. "
+        "An ordinary persistent ATK modifier, summon restriction, material rule, or player rule normally uses "
+        "`EFFECT_TYPE_SINGLE`, `EFFECT_TYPE_FIELD`, `EFFECT_TYPE_EQUIP`, or another non-action type instead.",
+        "",
+        "A normal optional trigger listens for an event:",
         "",
         "```lua",
         "e1:SetType(EFFECT_TYPE_SINGLE+EFFECT_TYPE_TRIGGER_O)",
         "e1:SetCode(EVENT_SUMMON_SUCCESS)",
         "```",
         "",
-        "For continuous or single effects, it is usually the effect code being applied:",
+        "A rule effect uses an `EFFECT_*` code instead:",
         "",
         "```lua",
         "e1:SetType(EFFECT_TYPE_SINGLE)",
@@ -1433,7 +1458,53 @@ FUNCTION_DETAIL_GUIDES = {
         "e1:SetValue(500)",
         "```",
         "",
-        "Choose the code to match the type. A valid callback with the wrong event or effect code will still feel like it never works.",
+        "`EVENT_ADJUST` is a special continuous-only event. It is used when a script must reconcile state after the core finishes an adjustment pass, such as maintaining a card group, repairing a derived rule, or checking an unusual win condition:",
+        "",
+        "```lua",
+        "local e1=Effect.CreateEffect(c)",
+        "e1:SetType(EFFECT_TYPE_FIELD+EFFECT_TYPE_CONTINUOUS)",
+        "e1:SetCode(EVENT_ADJUST)",
+        "e1:SetRange(LOCATION_MZONE)",
+        "e1:SetOperation(s.adjustop)",
+        "c:RegisterEffect(e1)",
+        "```",
+        "",
+        "An adjust operation can run many times. Make it idempotent: inspect current state and change only what is actually wrong. "
+        "Do not use `EVENT_ADJUST` as a substitute for a known summon, movement, chain, or phase event.",
+        "",
+        "The core reserves these event codes for `EFFECT_TYPE_CONTINUOUS`: `EVENT_ADJUST`, "
+        "`EVENT_BREAK_EFFECT`, `EVENT_TURN_END`, `EVENT_PRE_BATTLE_DAMAGE`, "
+        "`EVENT_SPSUMMON_SUCCESS_G_P`, and every `EVENT_PHASE_START+PHASE_*` code. "
+        "The core rejects a Trigger or Quick effect registered with one of those codes.",
+        "",
+        "Phase-end triggers compose the event base and phase:",
+        "",
+        "```lua",
+        "e2:SetType(EFFECT_TYPE_FIELD+EFFECT_TYPE_TRIGGER_O)",
+        "e2:SetCode(EVENT_PHASE+PHASE_END)",
+        "e2:SetRange(LOCATION_GRAVE)",
+        "e2:SetCondition(s.epcon)",
+        "e2:SetOperation(s.epop)",
+        "c:RegisterEffect(e2)",
+        "```",
+        "",
+        "Custom events require a listener and a matching raise call. Use the same stable code on both sides:",
+        "",
+        "```lua",
+        "local custom_code=EVENT_CUSTOM+id",
+        "",
+        "e3:SetType(EFFECT_TYPE_FIELD+EFFECT_TYPE_TRIGGER_O)",
+        "e3:SetCode(custom_code)",
+        "e3:SetRange(LOCATION_MZONE)",
+        "e3:SetOperation(s.customop)",
+        "c:RegisterEffect(e3)",
+        "",
+        "-- In the operation that creates the custom event:",
+        "Duel.RaiseSingleEvent(c,custom_code,e,REASON_EFFECT,tp,tp,0)",
+        "```",
+        "",
+        "Choose the code family first, then add the callbacks required by that specific code. "
+        "`SetCode` alone does not supply a target range, value, condition, cost, target, or operation.",
     ],
     "Effect.SetProperty": [
         "Use `SetProperty` for flags that change targeting, timing, visibility, and activation rules.",
@@ -1999,6 +2070,252 @@ def markdown_inline_text(value: str) -> str:
     return (value or "").replace("[", "\\[").replace("]", "\\]").replace("<", "&lt;").replace(">", "&gt;")
 
 
+SETCODE_EVENT_NOTES = {
+    "EVENT_STARTUP": "Legacy/reserved local constant that is absent from the current core snapshot. No indexed card script registers it directly.",
+    "EVENT_FREE_CHAIN": "Open activation timing rather than a past occurrence. Common for Spell/Trap activations and optional Quick Effects.",
+    "EVENT_CHAIN_ACTIVATED": "Legacy/reserved local constant that is absent from the current core snapshot. No indexed card script registers it directly.",
+    "EVENT_ADJUST": "Continuous-only. Runs after the core completes an adjustment pass; use for idempotent state reconciliation or unusual win checks.",
+    "EVENT_BREAK_EFFECT": "Continuous-only. Runs when `Duel.BreakEffect()` creates a visible resolution break.",
+    "EVENT_SPSUMMON_SUCCESS_G_P": "Continuous-only. Runs before a group-procedure Special Summon such as a Pendulum Summon succeeds.",
+    "EVENT_DAMAGE_CALCULATING": "Legacy/reserved local constant that is absent from the current core snapshot. No indexed card script registers it directly.",
+    "EVENT_PRE_BATTLE_DAMAGE": "Continuous-only. Runs immediately before battle damage is applied.",
+    "EVENT_BATTLE_END": "Legacy/reserved local constant that is absent from the current core snapshot. No indexed card script registers it directly.",
+    "EVENT_RETURN_TO_GRAVE": "Legacy/reserved local constant that is absent from the current core snapshot. No indexed card script registers it directly.",
+    "EVENT_TURN_END": "Continuous-only turn-end processing event. For an ordinary End Phase trigger, use `EVENT_PHASE+PHASE_END`.",
+    "EVENT_PHASE": "Composed base. Add a `PHASE_*` value, for example `EVENT_PHASE+PHASE_END`, for a phase-end Trigger or Quick effect.",
+    "EVENT_PHASE_START": "Continuous-only composed base. Add a `PHASE_*` value, for example `EVENT_PHASE_START+PHASE_DRAW`.",
+    "EVENT_ADD_COUNTER": "Composed base. Add the 16-bit counter type, for example `EVENT_ADD_COUNTER+0x1`. The core raises it after counters are successfully added.",
+    "EVENT_REMOVE_COUNTER": "Composed base. Add the 16-bit counter type. `Duel.RemoveCounter` raises it automatically; `Card.RemoveCounter` does not.",
+    "EVENT_CUSTOM": "Composed base for script-defined events. Add a stable unique ID and raise that exact code with `Duel.RaiseEvent` or `Duel.RaiseSingleEvent`.",
+}
+
+SETCODE_EFFECT_NOTES = {
+    "EFFECT_COUNTER_PERMIT": "Encoded base. Add the counter type to allow that kind of counter on the affected card.",
+    "EFFECT_COUNTER_LIMIT": "Encoded base. Add the counter type; `SetValue` supplies the permitted limit.",
+    "EFFECT_RCOUNTER_REPLACE": "Encoded base. Add the counter type to replace removal of that kind of counter.",
+    "EFFECT_FLAG_EFFECT": "Card-ID flag-effect base. Add a card ID for a manually registered flag-style code; `RegisterFlagEffect` normally creates these codes for you.",
+    "EFFECT_ADD_FUSION_ATTRIBUTE": "Reserved/unsupported in the current core snapshot; no indexed script uses it directly.",
+    "EFFECT_REMOVE_FUSION_ATTRIBUTE": "Reserved/unsupported in the current core snapshot; no indexed script uses it directly.",
+    "EFFECT_ADD_LINK_SETCODE": "Reserved/unsupported in the current core snapshot; no indexed script uses it directly.",
+    "EFFECT_TRIPLE_TRIBUTE": "Reserved/unsupported in the current snapshot; no indexed script uses it directly.",
+    "EFFECT_MUST_BE_ATTACKED": "Reserved/unsupported in the current snapshot; no indexed script uses it directly.",
+    "EFFECT_CHANGE_RANK_FINAL": "Reserved/unsupported in the current snapshot; no indexed script uses it directly.",
+    "EFFECT_UNSUMMONABLE_CARD": "Reserved/unsupported in the current snapshot; no indexed script uses it directly.",
+    "EFFECT_DISABLE_CHAIN_FIELD": "Reserved/unsupported in the current snapshot; no indexed script uses it directly.",
+    "EFFECT_RISE_TO_FULL_HEIGHT": "Reserved/unsupported in the current snapshot; no indexed script uses it directly.",
+    "EFFECT_ACTIVATION_COUNT_LIMIT": "Reserved/unsupported in the current snapshot; no indexed script uses it directly.",
+    "EFFECT_TUNE_MAGICIAN_F": "Lua procedure convention used by the local Synchro helpers even though the current core has no native consumer for this name.",
+}
+
+SETCODE_EVENT_GROUPS = [
+    ("Engine, movement, and Chain events", 1000, 1050),
+    ("Summon, material, damage, and control events", 1100, 1121),
+    ("Battle and random-result events", 1130, 1153),
+    ("Level, cost, material, and turn-end events", 1200, 1210),
+]
+
+SETCODE_EFFECT_GROUPS = [
+    ("Core rules and action restrictions", 1, 31),
+    ("Summon and Set procedures", 32, 39),
+    ("Movement, targeting, combat permissions, and costs", 40, 99),
+    ("Stats, identity, position, Tributes, and counters", 100, 169),
+    ("LP, phases, attacking, damage, and randomness", 170, 229),
+    ("Fusion, Synchro, Xyz, Link materials, and zones", 230, 269),
+    ("Player rules, Deck state, and material requirements", 270, 319),
+    ("Advanced procedures, materials, and modern rules", 320, 376),
+]
+
+
+def markdown_table_text(value: str) -> str:
+    return markdown_inline_text(value).replace("|", "\\|").replace("\r", " ").replace("\n", " ")
+
+
+def constant_int_value(doc: ConstantDoc) -> int | None:
+    try:
+        return int(doc.value, 0)
+    except (TypeError, ValueError):
+        return None
+
+
+def scan_setcode_usage(workspace: Path) -> tuple[int, Counter[str], Counter[str]]:
+    expressions: Counter[str] = Counter()
+    constants: Counter[str] = Counter()
+    for directory in ("Scripts", "Utilities"):
+        root = workspace / directory
+        if not root.exists():
+            continue
+        for path in sorted(root.rglob("*.lua")):
+            for raw_line in read_text(path).splitlines():
+                line = raw_line.split("--", 1)[0]
+                matches = [
+                    *(match.group(1) for match in SETCODE_METHOD_RE.finditer(line)),
+                    *(match.group(1) for match in SETCODE_STATIC_RE.finditer(line)),
+                ]
+                for raw_expression in matches:
+                    expression = re.sub(r"\s+", "", raw_expression)
+                    if not expression:
+                        continue
+                    expressions[expression] += 1
+                    for name in SETCODE_CONSTANT_RE.findall(expression):
+                        constants[name] += 1
+    return sum(expressions.values()), expressions, constants
+
+
+def setcode_description(doc: ConstantDoc, notes: dict[str, str]) -> str:
+    if doc.name in notes:
+        return notes[doc.name]
+    description = (doc.comment_en or "").strip()
+    if not description or description.casefold() in {"n/a", "reserve", "reserved"}:
+        return "Reserved/unsupported in the current snapshot; no documented direct card-script use."
+    return description
+
+
+def setcode_table_lines(
+    docs: list[ConstantDoc],
+    usage: Counter[str],
+    notes: dict[str, str],
+) -> list[str]:
+    lines = [
+        "| Code | Value | What it is for | Direct uses |",
+        "| --- | ---: | --- | ---: |",
+    ]
+    for doc in docs:
+        description = markdown_table_text(setcode_description(doc, notes))
+        lines.append(
+            f"| `{doc.name}` | `{doc.value}` | {description} | {usage[doc.name]} |"
+        )
+    return lines
+
+
+def setcode_reference_lines(
+    constant_docs: list[ConstantDoc],
+    workspace: Path,
+) -> list[str]:
+    effect_codes = [
+        doc
+        for doc in constant_docs
+        if doc.name.startswith("EFFECT_") and doc.section == "Codes"
+    ]
+    event_codes = [doc for doc in constant_docs if doc.name.startswith("EVENT_")]
+    total_calls, expressions, usage = scan_setcode_usage(workspace)
+    named_total = len(effect_codes) + len(event_codes)
+    encoded_flag_count = sum(doc.name == "EFFECT_FLAG_EFFECT" for doc in effect_codes)
+    ordinary_effect_count = len(effect_codes) - encoded_flag_count
+
+    lines = [
+        "## Complete Code Reference",
+        "",
+        "`SetCode` accepts a 32-bit integer, so there is no finite list of every possible "
+        "custom number. The current engine snapshot defines "
+        f"**{named_total} named code bases** for this parameter: "
+        f"**{len(event_codes)} `EVENT_*` bases**, **{ordinary_effect_count} ordinary "
+        f"`EFFECT_*` codes**, and **{encoded_flag_count} card-ID flag base**.",
+        "",
+        f"The local script snapshot contains **{total_calls:,} direct `SetCode` calls** "
+        f"using **{len(expressions):,} distinct written expressions**. "
+        "The tables below list every named engine code. **Direct uses** counts only expressions "
+        "that spell that constant explicitly; a variable such as `custom_code` cannot be assigned "
+        "to a base constant reliably by static text scanning.",
+        "",
+        "### Codes that are built from a base",
+        "",
+        "| Need | Correct shape | Effect type |",
+        "| --- | --- | --- |",
+        "| End of a phase | `EVENT_PHASE+PHASE_*` | Trigger/Quick, or an activation effect when appropriate |",
+        "| Start of a phase | `EVENT_PHASE_START+PHASE_*` | `EFFECT_TYPE_CONTINUOUS` |",
+        "| A counter is added/removed | `EVENT_ADD_COUNTER+counter_type` / `EVENT_REMOVE_COUNTER+counter_type` | Trigger/Quick |",
+        "| A script-defined event | `EVENT_CUSTOM+stable_unique_id` | Trigger/Quick; another operation must raise the exact same code |",
+        "| Counter permission/limit/replacement | `EFFECT_COUNTER_PERMIT+counter_type`, `EFFECT_COUNTER_LIMIT+counter_type`, or `EFFECT_RCOUNTER_REPLACE+counter_type` | Rule effect |",
+        "| A card-ID flag-style code | `EFFECT_FLAG_EFFECT+card_id` | Rule/flag effect; usually created through flag-effect helpers |",
+        "| A private marker on a non-action rule effect | A raw card ID | Only when other scripts deliberately query that same ID with `IsHasEffect`/`IsAffectedByEffect` |",
+        "",
+        "Do not combine unrelated ordinary `EVENT_*` values or unrelated `EFFECT_*` values. "
+        "The `+` forms above work because the high bits identify a code family and the low bits "
+        "carry a phase, counter type, or custom ID.",
+        "",
+        "Valid phase-end forms are `EVENT_PHASE+PHASE_DRAW`, `+PHASE_STANDBY`, "
+        "`+PHASE_BATTLE_START`, `+PHASE_BATTLE`, and `+PHASE_END`. Valid continuous phase-start "
+        "forms use `EVENT_PHASE_START` with `PHASE_DRAW`, `PHASE_STANDBY`, `PHASE_MAIN1`, "
+        "`PHASE_BATTLE_START`, `PHASE_MAIN2`, or `PHASE_END`.",
+        "",
+        "### Values that are not general `SetCode` arguments",
+        "",
+        "- `EFFECT_TYPE_*`, `EFFECT_FLAG_*`, `CATEGORY_*`, `RESET_*`, `SUMMON_TYPE_*`, and a bare "
+        "`PHASE_*` belong to other APIs. They are not interchangeable with event/effect codes.",
+        "- An Ignition effect normally omits `SetCode`; writing `SetCode(0)` adds no useful meaning.",
+        "- Do not copy the legacy `SetCode(RESET_CHAIN)` pattern. `RESET_CHAIN` is a reset mask, not an effect code.",
+        "- A raw card ID is only an intentional private marker for a non-action rule effect. "
+        "For a script-raised action event, use `EVENT_CUSTOM+id` on both the listener and raise call.",
+        "- `SetCode(0x182)` does not give a card archetype membership. For that rule, use "
+        "`SetCode(EFFECT_ADD_SETCODE)` with `SetValue(0x182)`.",
+        "",
+        "### Every event code",
+        "",
+        "For `EFFECT_TYPE_SINGLE`, an ordinary event generally concerns the handler itself. "
+        "For `EFFECT_TYPE_FIELD`, it can observe matching events elsewhere, subject to range, "
+        "condition, and property rules. Continuous-only events are called out explicitly.",
+        "",
+    ]
+
+    assigned_event_names: set[str] = set()
+    for title, low, high in SETCODE_EVENT_GROUPS:
+        group = [
+            doc
+            for doc in event_codes
+            if (value := constant_int_value(doc)) is not None and low <= value <= high
+        ]
+        assigned_event_names.update(doc.name for doc in group)
+        lines.extend([f"#### {title}", "", *setcode_table_lines(group, usage, SETCODE_EVENT_NOTES), ""])
+
+    composed_events = [doc for doc in event_codes if doc.name not in assigned_event_names]
+    lines.extend(
+        [
+            "#### Phase, counter, and custom event bases",
+            "",
+            *setcode_table_lines(composed_events, usage, SETCODE_EVENT_NOTES),
+            "",
+            "### Every engine effect code",
+            "",
+            "These codes identify continuous rules, modifiers, restrictions, procedures, and "
+            "replacements. The description states the role of the code; the exact callback contract "
+            "can additionally require `SetRange`, `SetTargetRange`, `SetTarget`, `SetValue`, "
+            "`SetCondition`, or `SetOperation`. Search the local scripts for a proven pattern before "
+            "using an unfamiliar low-level or reserved code.",
+            "",
+        ]
+    )
+
+    assigned_effect_names: set[str] = set()
+    for title, low, high in SETCODE_EFFECT_GROUPS:
+        group = [
+            doc
+            for doc in effect_codes
+            if (value := constant_int_value(doc)) is not None and low <= value <= high
+        ]
+        assigned_effect_names.update(doc.name for doc in group)
+        lines.extend([f"#### {title}", "", *setcode_table_lines(group, usage, SETCODE_EFFECT_NOTES), ""])
+
+    encoded_effects = [doc for doc in effect_codes if doc.name not in assigned_effect_names]
+    lines.extend(
+        [
+            "#### Encoded and engine-managed effect codes",
+            "",
+            *setcode_table_lines(encoded_effects, usage, SETCODE_EFFECT_NOTES),
+            "",
+            "### Engine sources",
+            "",
+            "- [Current `SetCode` binding](https://github.com/Fluorohydride/ygopro-core/blob/8b020270e752c56a5df52a8f827f094837be5b64/libeffect.cpp#L120-L128)",
+            "- [Event-code classification and continuous-only rules](https://github.com/Fluorohydride/ygopro-core/blob/8b020270e752c56a5df52a8f827f094837be5b64/effect.cpp#L21-L32)",
+            "- [Code-family layout and continuous-event set](https://github.com/Fluorohydride/ygopro-core/blob/8b020270e752c56a5df52a8f827f094837be5b64/effect.h#L626-L641)",
+            "- [Registration check that rejects Trigger/Quick effects on continuous-only events](https://github.com/Fluorohydride/ygopro-core/blob/8b020270e752c56a5df52a8f827f094837be5b64/card.cpp#L1752-L1760)",
+            "- [Effect registration indexes the current code](https://github.com/Fluorohydride/ygopro-core/blob/8b020270e752c56a5df52a8f827f094837be5b64/field.cpp#L1166-L1176)",
+            "- [Named script constants](https://github.com/Fluorohydride/ygopro-scripts/blob/b605741f9bcf114bdc9087e264de2130736e27e0/constant.lua#L351-L692)",
+            "- [Generated constants reference](/api/constants)",
+        ]
+    )
+    return lines
+
+
 def write_vitepress_config(base: Path, namespaces: Iterable[str]) -> None:
     namespace_items = [
         f"              {{ text: '{namespace}', link: '/api/functions/{safe_filename(namespace)}/' }},"
@@ -2041,14 +2358,30 @@ def write_vitepress_config(base: Path, namespaces: Iterable[str]) -> None:
     write_text(base / ".vitepress" / "config.mts", "\n".join(lines))
 
 
-def write_wiki_pages(base: Path, docs: Iterable[FunctionDoc], constant_docs: list[ConstantDoc]) -> None:
+def write_wiki_pages(
+    base: Path,
+    docs: Iterable[FunctionDoc],
+    constant_docs: list[ConstantDoc],
+    workspace: Path,
+) -> None:
     index_by_namespace: dict[str, list[FunctionDoc]] = {}
     docs = list(docs)
     for doc in docs:
         index_by_namespace.setdefault(doc.namespace, []).append(doc)
         page = base / "api" / "functions" / safe_filename(doc.namespace) / f"{safe_filename(doc.short_name)}.md"
         description = doc.description_en or doc.description_zh or ["TODO document."]
-        lines = [
+        lines = []
+        if doc.name == "Effect.SetCode":
+            lines.extend(
+                [
+                    "---",
+                    "pageClass: effect-setcode-page",
+                    "outline: [2, 4]",
+                    "---",
+                    "",
+                ]
+            )
+        lines.extend([
             f"# {doc.name}",
             "",
             "## Signature",
@@ -2059,13 +2392,16 @@ def write_wiki_pages(base: Path, docs: Iterable[FunctionDoc], constant_docs: lis
             "",
             "## Description",
             "",
-        ]
+        ])
         lines.extend(markdown_inline_text(line) for line in description)
         lines.append("")
         guide = FUNCTION_DETAIL_GUIDES.get(doc.name, [])
         if guide:
             lines.extend(["## How To Use It", ""])
             lines.extend(guide)
+            lines.append("")
+        if doc.name == "Effect.SetCode":
+            lines.extend(setcode_reference_lines(constant_docs, workspace))
             lines.append("")
         related = FUNCTION_RELATED_GUIDES.get(doc.name, [])
         if related:
@@ -3303,7 +3639,7 @@ def main() -> int:
     write_json(json_path, docs, metadata)
     write_compat_file(zh_path, docs, "zh")
     write_compat_file(en_path, docs, "en")
-    write_wiki_pages(wiki_path, docs, constant_docs)
+    write_wiki_pages(wiki_path, docs, constant_docs, workspace)
     write_constant_json(constant_json_path, constant_docs, metadata)
     write_constant_english_lua(constant_lua_path, constant_docs)
     write_constant_markdown(constant_md_path, constant_docs)
