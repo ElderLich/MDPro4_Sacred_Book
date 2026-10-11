@@ -9,6 +9,10 @@ Use this page after [Write Your First Custom Card](first-custom-card). It is a
 small checklist for making one card exist cleanly in `cards.cdb` and matching it
 to `Scripts/c<ID>.lua`.
 
+For Rush cards, also check [Rush database and runtime wiring](../guides/card-database#rush-card-data-and-runtime-rules).
+The card's pool label, special type bits, and the duel's Rush mode have separate
+roles.
+
 ## The Two Local Tables
 
 Local `cards.cdb` stores ordinary card data in two SQLite tables:
