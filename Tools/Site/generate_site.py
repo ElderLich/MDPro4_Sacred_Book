@@ -430,6 +430,38 @@ def append_api_usage_sections(examples: list[dict[str, object]], featured_ids: s
         write_text(page, page_text + "\n" + "\n".join(lines).rstrip())
 
 
+def write_api_overview() -> None:
+    # Cross-reference the site routes here; the standalone generated wiki
+    # contains only the standard reference and has no Rush or learning pages.
+    write_text(DOCS_DIR / "api" / "index.md", """# API
+
+Choose the reference for the scripting layer you need. These pages follow this project's MDPro3/YGOPro core and helper sources; available functions can differ between simulators.
+
+## Choose a Reference
+
+| Reference | What you will find |
+| --- | --- |
+| [Core and standard helper functions](functions/) | `Card`, `Effect`, `Group`, `Duel`, and standard Lua helpers. |
+| [Standard constants](constants) | Locations, events, effect codes, and standard-format flags. |
+| [Rush Duel helpers](/rush/api/functions/) | The `RushDuel` namespace and its `RD` alias. |
+| [Rush Duel constants](/rush/api/constants) | Constants defined by the Rush rules and helper library. |
+
+## Using the Rush API
+
+Rush scripts use `Card`, `Effect`, `Group`, and `Duel` alongside the Rush helpers, so you will use both references. The matching Rush bootstrap must load the helper library and rules before your card script runs; the database's Rush label alone does not enable them.
+
+Start with the [Rush API overview](/rush/api/), or follow the [Rush Duel learning path](/learn/rush-duel) for complete examples. Keep Rush-specific constants separate from the standard definitions.
+
+## Sources
+
+- `ygopro-core/lib*.cpp`
+- `Define/def.lua`
+- `Utilities/utility.lua`
+- `Utilities/procedure.lua`
+- `Rush/Utilities/RD*.lua` and `Rush/Utilities/special.lua`
+""")
+
+
 def sync_api_reference(format: str = "standard") -> None:
     generated = GENERATED_DIR / "rush" if format == "rush" else GENERATED_DIR
     source = generated / "wiki" / "api"
@@ -440,6 +472,8 @@ def sync_api_reference(format: str = "standard") -> None:
     target = DOCS_DIR / "rush" / "api" if format == "rush" else DOCS_DIR / "api"
     clean_generated_dir(target)
     shutil.copytree(source, target, dirs_exist_ok=True)
+    if format == "standard":
+        write_api_overview()
 
 
 def scan_examples(format: str = "standard") -> tuple[list[dict[str, object]], list[dict[str, object]]]:

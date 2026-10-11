@@ -195,14 +195,19 @@ export default defineConfig({
             { text: 'Learning Path', link: '/learn/rush-duel' },
             { text: 'Requirements and Effects', link: '/learn/rush-duel-scripting' },
             { text: 'Maximum, Fusion, and Ritual', link: '/learn/rush-summon-procedures' },
+            { text: 'Rush API Overview', link: '/rush/api/' },
             { text: 'Helper Reference', link: '/rush/api/functions/' },
             { text: 'RushDuel / RD Namespace', link: '/rush/api/functions/RushDuel/' },
+            { text: 'Rush Constants', link: '/rush/api/constants' },
+            { text: 'Shared Core API', link: '/api/' },
             { text: 'Card Examples', link: '/examples/rush' },
           ],
         },
       ],
       '/api/functions/': [
+        { text: 'API Overview', link: '/api/' },
         { text: 'Function Index', link: '/api/functions/' },
+        { text: 'Rush Duel API', link: '/rush/api/' },
         {
           text: 'Namespaces',
           collapsed: false,
@@ -213,6 +218,9 @@ export default defineConfig({
         { text: 'API Overview', link: '/api/' },
         { text: 'Functions', link: '/api/functions/' },
         { text: 'Constants', link: '/api/constants' },
+        { text: 'Rush Duel API', link: '/rush/api/' },
+        { text: 'Rush Helpers', link: '/rush/api/functions/' },
+        { text: 'Rush Constants', link: '/rush/api/constants' },
       ],
       '/examples/': [
         {
