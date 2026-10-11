@@ -5,6 +5,10 @@ engine checked it, or the cards you remembered at activation are no longer valid
 when the Chain resolves. Debugging is easier when you first decide which
 callback is failing.
 
+For the recently corrected zero-result, `not` precedence, and subgroup `nil`
+patterns, see [Applying Engine and Script Changes](engine-updates). If those
+Lua rules are unfamiliar, begin with [Lua Essentials](lua-essentials).
+
 Use this loop before changing code:
 
 1. Find the `Effect.CreateEffect(c)` block that owns the behavior.

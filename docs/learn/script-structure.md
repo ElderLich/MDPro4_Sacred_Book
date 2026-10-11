@@ -1,5 +1,8 @@
 # Structure of a Card Script
 
+New to Lua? Read [Lua Essentials](lua-essentials) first for functions, masks,
+`nil`, and the difference between passing a callback and calling it.
+
 A card script is a Lua file named after the card ID. A card with ID `12345678`
 is usually loaded from:
 
