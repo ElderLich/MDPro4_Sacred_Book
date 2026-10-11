@@ -1,4 +1,4 @@
---R.B. Shepherd's Crook
+--R.B.シェパード・クルーク
 local s,id,o=GetID()
 function s.initial_effect(c)
 	--link summon
@@ -98,7 +98,7 @@ function s.spop(e,tp,eg,ep,ev,re,r,rp)
 	elseif tg:GetCount()>2 and Duel.GetLocationCount(tp,LOCATION_MZONE)>0 then
 		Duel.Hint(HINT_SELECTMSG,tp,HINTMSG_TODECK)
 		local sg=tg:SelectSubGroup(tp,s.fselect2,false,2,2,e,tp,tg)
-		if sg:GetCount()>0 then
+		if sg then
 			tg:Sub(sg)
 			Duel.HintSelection(sg)
 			aux.PlaceCardsOnDeckBottom(tp,sg)
