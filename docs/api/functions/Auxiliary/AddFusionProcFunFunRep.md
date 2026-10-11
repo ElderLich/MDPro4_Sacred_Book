@@ -28,7 +28,7 @@ Registers a Fusion procedure requiring f1 plus between minc and maxc materials t
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **10** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Auxiliary.AddFusionProcFunFunRep`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Auxiliary.AddFusionProcFunFunRep) with `Auxiliary.AddFusionProcFunFunRep`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

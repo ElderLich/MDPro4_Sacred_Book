@@ -34,7 +34,7 @@ Registers an exact-Level Ritual Summon procedure using Card.GetLevel and returns
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **12** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Auxiliary.AddRitualProcEqual2`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Auxiliary.AddRitualProcEqual2) with `Auxiliary.AddRitualProcEqual2`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

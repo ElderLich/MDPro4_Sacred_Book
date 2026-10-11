@@ -27,7 +27,7 @@ Condition helper that is true when e's handler is not disabled and is in Dual St
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **43** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Auxiliary.IsDualState`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Auxiliary.IsDualState) with `Auxiliary.IsDualState`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

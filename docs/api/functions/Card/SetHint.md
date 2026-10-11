@@ -18,14 +18,14 @@ Sends a client card-hint message for c with hint type and value; types at or abo
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3658`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3710`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **8** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Card.SetHint`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Card.SetHint) with `Card.SetHint`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

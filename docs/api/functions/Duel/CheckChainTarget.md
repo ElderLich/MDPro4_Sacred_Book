@@ -28,7 +28,7 @@ Checks whether c is a valid card related to chainc.
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **10** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Duel.CheckChainTarget`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Duel.CheckChainTarget) with `Duel.CheckChainTarget`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

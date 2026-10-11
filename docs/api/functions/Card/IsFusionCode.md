@@ -24,14 +24,14 @@ The core includes c's current code, second code, and EFFECT_ADD_FUSION_CODE valu
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3394`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3441`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **47** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Card.IsFusionCode`.
+- Detected in **49** indexed script(s).
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Card.IsFusionCode) with `Card.IsFusionCode`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
@@ -46,10 +46,12 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Windwitch - Crystal Bell | `25793414` | [Scripts/c25793414.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c25793414.lua) | 1 |
 | Ultimate Fusion | `71143015` | [Scripts/c71143015.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c71143015.lua) | 3 |
 | Gladiator Beast Gaiodiaz | `90957527` | [Scripts/c90957527.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c90957527.lua) | 1 |
+| Red-Eyes Black Dragon Exceed | `17242022` | [Scripts/c17242022.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c17242022.lua) | 1 |
 | Thunder Dragon Titan | `41685633` | [Scripts/c41685633.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c41685633.lua) | 1 |
 | Branded Fusion | `44362883` | [Scripts/c44362883.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c44362883.lua) | 1 |
 | Gladiator Beast Gyzarus | `48156348` | [Scripts/c48156348.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c48156348.lua) | 1 |
 | Red-Eyes Dark Dragoon | `37818794` | [Scripts/c37818794.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c37818794.lua) | 1 |
+| Destiny HERO - Dreadnought Master | `54641720` | [Scripts/c54641720.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c54641720.lua) | 1 |
 | Blue-Eyes Toon Ultimate Dragon | `71808988` | [Scripts/c71808988.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c71808988.lua) | 2 |
 | Guardian Chimera | `11321089` | [Scripts/c11321089.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c11321089.lua) | 1 |
 | Mirrorjade the Iceblade Dragon | `44146295` | [Scripts/c44146295.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c44146295.lua) | 2 |
@@ -57,9 +59,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Dinomorphia Kentregina | `48832775` | [Scripts/c48832775.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c48832775.lua) | 1 |
 | Blue-Eyes Tyrant Dragon | `11443677` | [Scripts/c11443677.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c11443677.lua) | 2 |
 | Destruction Swordsman Fusion | `41940225` | [Scripts/c41940225.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c41940225.lua) | 1 |
-| Sprind the Irondash Dragon | `1906812` | [Scripts/c1906812.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c1906812.lua) | 1 |
-| Titaniklad the Ash Dragon | `41373230` | [Scripts/c41373230.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c41373230.lua) | 1 |
-| ...and 23 more |  |  |  |
+| ...and 25 more |  |  |  |
 
 ## Script Examples
 

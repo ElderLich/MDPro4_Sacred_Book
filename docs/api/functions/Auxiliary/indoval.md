@@ -22,14 +22,14 @@ Value helper for indestructibility against opponent's effects; it returns true w
 
 ## Source
 
-- `Utilities/utility.lua:828`
+- `Utilities/utility.lua:831`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **111** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Auxiliary.indoval`.
+- Detected in **113** indexed script(s).
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Auxiliary.indoval) with `Auxiliary.indoval`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
@@ -45,10 +45,11 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Icejade Gymir Aegirine | `86682165` | [Scripts/c86682165.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c86682165.lua) | 1 |
 | Stand Up Centur-Ion! | `41371602` | [Scripts/c41371602.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c41371602.lua) | 1 |
 | Tailwind of Gusto | `1187243` | [Scripts/c1187243.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c1187243.lua) | 1 |
+| Angelechy Bastion | `28904860` | [Scripts/c28904860.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c28904860.lua) | 1 |
 | Wind Unicorn Parallel, the Dracoslayer | `39016067` | [Scripts/c39016067.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c39016067.lua) | 1 |
 | Red Supernova Dragon | `99585850` | [Scripts/c99585850.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c99585850.lua) | 1 |
 | Sunavalon Dryatrentiay | `92770064` | [Scripts/c92770064.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c92770064.lua) | 1 |
-| Rayrage, the Twilight Fiend | `71222649` | [Scripts/c71222649.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c71222649.lua) | 1 |
+| Twilight Specter Rayrage | `71222649` | [Scripts/c71222649.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c71222649.lua) | 1 |
 | Cyberdark Inferno | `44352516` | [Scripts/c44352516.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c44352516.lua) | 1 |
 | Giant Beetrooper Invincible Atlas | `38229962` | [Scripts/c38229962.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c38229962.lua) | 1 |
 | Evil Eye of Selene | `44133040` | [Scripts/c44133040.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c44133040.lua) | 1 |
@@ -56,8 +57,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | War Rock Meteoragon | `10497636` | [Scripts/c10497636.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c10497636.lua) | 1 |
 | Signal Warrior | `9634146` | [Scripts/c9634146.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c9634146.lua) | 1 |
 | B.E.F. Zelos | `975299` | [Scripts/c975299.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c975299.lua) | 1 |
-| Krishnerd Witch | `37006702` | [Scripts/c37006702.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c37006702.lua) | 1 |
-| ...and 87 more |  |  |  |
+| ...and 89 more |  |  |  |
 
 ## Script Examples
 

@@ -25,7 +25,7 @@ Unless ignore_count is true, the new attacker gains an attack announcement count
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **1** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Duel.ChangeAttacker`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Duel.ChangeAttacker) with `Duel.ChangeAttacker`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

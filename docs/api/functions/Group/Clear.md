@@ -23,7 +23,7 @@ Clears g unless it is a read-only group.
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **22** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Group.Clear`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Group.Clear) with `Group.Clear`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

@@ -20,17 +20,19 @@ Returns c's Link Rating, or 0 if c is not a Link Monster.
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3410`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3458`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **54** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Card.GetLink`.
+- Detected in **56** indexed script(s).
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Card.GetLink) with `Card.GetLink`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
+| [Levia-Dragoon - Daedalus](/examples/cards/78579058) | `78579058` | [Scripts/c78579058.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c78579058.lua) | 3 |
+| [Azure Ocean Dragon Lord - Neo-Daedalus Rage](/examples/cards/41570943) | `41570943` | [Scripts/c41570943.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c41570943.lua) | 3 |
 | Marincess Cascade | `27012990` | [Scripts/c27012990.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c27012990.lua) | 1 |
 | Gergonne's End | `59490397` | [Scripts/c59490397.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c59490397.lua) | 1 |
 | Accesscode Talker | `86066372` | [Scripts/c86066372.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c86066372.lua) | 1 |
@@ -53,11 +55,33 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Sunvine Thrasher | `91557476` | [Scripts/c91557476.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c91557476.lua) | 2 |
 | Marincess Circulation | `83723605` | [Scripts/c83723605.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c83723605.lua) | 1 |
 | Marincess Bubble Ring | `19712214` | [Scripts/c19712214.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c19712214.lua) | 1 |
-| Marincess Snow | `80627281` | [Scripts/c80627281.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c80627281.lua) | 3 |
-| Gouki The Powerload Ogre | `11516241` | [Scripts/c11516241.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c11516241.lua) | 2 |
-| ...and 30 more |  |  |  |
+| ...and 32 more |  |  |  |
 
 ## Script Examples
+
+### Levia-Dragoon - Daedalus (`78579058`)
+
+Source: [Scripts/c78579058.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c78579058.lua)
+
+```lua
+end
+function s.GetLinkCount(c)
+	if c:IsLinkType(TYPE_LINK) and c:GetLink()>1 then
+		return 1+0x10000*c:GetLink()
+	else return 1 end
+```
+
+### Azure Ocean Dragon Lord - Neo-Daedalus Rage (`41570943`)
+
+Source: [Scripts/c41570943.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c41570943.lua)
+
+```lua
+end
+function s.GetLinkCount(c)
+	if c:IsLinkType(TYPE_LINK) and c:GetLink()>1 then
+		return 1+0x10000*c:GetLink()
+	else return 1 end
+```
 
 ### Marincess Cascade (`27012990`)
 
@@ -69,28 +93,4 @@ Source: [Scripts/c27012990.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/
 	local ct=rg:GetSum(Card.GetLink)
 	e:SetLabel(ct)
 	local tct=1
-```
-
-### Gergonne's End (`59490397`)
-
-Source: [Scripts/c59490397.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c59490397.lua)
-
-```lua
-function c59490397.descon(e,tp,eg,ep,ev,re,r,rp)
-	local tc=e:GetHandler():GetEquipTarget()
-	return tc and tc:GetLinkedGroupCount()==tc:GetLink()
-end
-function c59490397.destg(e,tp,eg,ep,ev,re,r,rp,chk)
-```
-
-### Accesscode Talker (`86066372`)
-
-Source: [Scripts/c86066372.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c86066372.lua)
-
-```lua
-		e1:SetType(EFFECT_TYPE_SINGLE)
-		e1:SetCode(EFFECT_UPDATE_ATTACK)
-		e1:SetValue(tc:GetLink()*1000)
-		e1:SetReset(RESET_EVENT+RESETS_STANDARD+RESET_DISABLE)
-		c:RegisterEffect(e1)
 ```

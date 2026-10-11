@@ -26,7 +26,7 @@ When check is true or omitted, existing 0 battle damage is left unchanged.
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **3** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Duel.ChangeBattleDamage`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Duel.ChangeBattleDamage) with `Duel.ChangeBattleDamage`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

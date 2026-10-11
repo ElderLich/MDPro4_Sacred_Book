@@ -21,14 +21,14 @@ Checks whether c has Link Marker direction dir.
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3421`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3469`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **3** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Card.IsLinkMarker`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Card.IsLinkMarker) with `Card.IsLinkMarker`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

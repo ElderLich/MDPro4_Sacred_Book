@@ -26,17 +26,19 @@ Returns e's effect type mask, such as EFFECT_TYPE_SINGLE, EFFECT_TYPE_FIELD, or 
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **247** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Effect.GetType`.
+- Detected in **253** indexed script(s).
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Effect.GetType) with `Effect.GetType`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
 | [Meteoroa Drytron](/examples/cards/24166324) | `24166324` | [Scripts/c24166324.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c24166324.lua) | 1 |
+| [Pere-Zenet Em Heru](/examples/cards/46273941) | `46273941` | [Scripts/c46273941.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c46273941.lua) | 1 |
+| [Am Duazenet](/examples/cards/45151304) | `45151304` | [Scripts/c45151304.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c45151304.lua) | 1 |
 | [Barian's Chaos Draw](/examples/cards/97769122) | `97769122` | [Scripts/c97769122.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c97769122.lua) | 1 |
 | [Nekroz Kaleidoscope](/examples/cards/51124303) | `51124303` | [Scripts/c51124303.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c51124303.lua) | 1 |
 | [Dracotail Shaulas](/examples/cards/42125140) | `42125140` | [Scripts/c42125140.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c42125140.lua) | 2 |
 | [Transonic Bird](/examples/cards/34072799) | `34072799` | [Scripts/c34072799.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c34072799.lua) | 3 |
-| Chaos Hats | `2372506` | [Scripts/c2372506.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c2372506.lua) | 2 |
+| Chaos Magical Hats | `2372506` | [Scripts/c2372506.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c2372506.lua) | 2 |
 | Gishki Nekromirror | `36982581` | [Scripts/c36982581.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c36982581.lua) | 1 |
 | Cyberse Sage | `65037172` | [Scripts/c65037172.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c65037172.lua) | 1 |
 | Sonic Tracker | `17888577` | [Scripts/c17888577.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c17888577.lua) | 2 |
@@ -53,9 +55,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Ryu-Ge Rivalry | `81549048` | [Scripts/c81549048.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c81549048.lua) | 1 |
 | Dimonno Vaalmonica | `30432463` | [Scripts/c30432463.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c30432463.lua) | 1 |
 | Zebufera, Vaalmonican Hallow Heathen | `2815176` | [Scripts/c2815176.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c2815176.lua) | 1 |
-| Witchcrafter Pupils | `69964858` | [Scripts/c69964858.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c69964858.lua) | 1 |
-| Virtual World Roshi - Laolao | `86483512` | [Scripts/c86483512.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c86483512.lua) | 2 |
-| ...and 223 more |  |  |  |
+| ...and 229 more |  |  |  |
 
 ## Script Examples
 
@@ -71,26 +71,26 @@ function s.RitualUltimateFilter(c,filter,e,tp,m1,m2,attack_function,greater_or_e
 	if m2 then
 ```
 
-### Barian's Chaos Draw (`97769122`)
+### Pere-Zenet Em Heru (`46273941`)
 
-Source: [Scripts/c97769122.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c97769122.lua)
+Source: [Scripts/c46273941.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c46273941.lua)
 
 ```lua
 end
-function c97769122.cpfilter(c)
-	return c:GetType()==TYPE_SPELL and c:IsSetCard(0x175) and c:IsAbleToGraveAsCost()
-		and c:CheckActivateEffect(true,true,false)~=nil
-end
+function s.spfilter(c,e,tp,m)
+	if bit.band(c:GetType(),0x81)~=0x81 or not c:IsSetCard(0x1eb)
+		or not c:IsCanBeSpecialSummoned(e,SUMMON_TYPE_RITUAL,tp,false,true) then return false end
+	if c.mat_filter then
 ```
 
-### Nekroz Kaleidoscope (`51124303`)
+### Am Duazenet (`45151304`)
 
-Source: [Scripts/c51124303.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c51124303.lua)
+Source: [Scripts/c45151304.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c45151304.lua)
 
 ```lua
-function c51124303.spfilter(c,e,tp,mc)
-	local mg=Group.FromCards(mc)
-	return c:IsSetCard(0xb4) and bit.band(c:GetType(),0x81)==0x81 and (not c.mat_filter or c.mat_filter(mc,tp)) and (not c.mat_group_check or c.mat_group_check(mg,tp))
-		and c:IsCanBeSpecialSummoned(e,SUMMON_TYPE_RITUAL,tp,false,true)
-		and mc:IsCanBeRitualMaterial(c)
+end
+function s.spfilter(c,e,tp,m)
+	if bit.band(c:GetType(),0x81)~=0x81 or not c:IsSetCard(0x1eb)
+		or not c:IsCanBeSpecialSummoned(e,SUMMON_TYPE_RITUAL,tp,false,true) then return false end
+	if c.mat_filter then
 ```

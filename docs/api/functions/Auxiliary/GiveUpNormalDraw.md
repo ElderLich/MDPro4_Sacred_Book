@@ -18,14 +18,14 @@ Makes tp give up the normal draw for the current Draw Phase by setting EFFECT_DR
 
 ## Source
 
-- `Utilities/utility.lua:1862`
+- `Utilities/utility.lua:1867`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **17** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Auxiliary.GiveUpNormalDraw`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Auxiliary.GiveUpNormalDraw) with `Auxiliary.GiveUpNormalDraw`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

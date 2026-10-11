@@ -20,7 +20,7 @@ Checks whether c has DEF.
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3626`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3678`
 
 ## Used By
 

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { computed, onMounted, ref } from 'vue';
+import { computed, onMounted, onUnmounted, ref, watch } from 'vue';
 import { withBase } from 'vitepress';
 
 type SearchMode = 'all' | 'cards' | 'text' | 'code';
@@ -12,12 +12,14 @@ type ScriptRecord = {
   card_type_labels?: string[];
   category_labels?: string[];
   api_calls: string[];
+  api_links?: Record<string, string>;
   script_constants?: string[];
   script_length: number;
   desc_length: number;
 };
 
-const resultLimit = 200;
+const resultLimit = ref(200);
+const format = ref('standard');
 const query = ref('');
 const mode = ref<SearchMode>('all');
 const typeFilter = ref('all');
@@ -28,12 +30,21 @@ const error = ref('');
 const records = ref<ScriptRecord[]>([]);
 const featuredIds = ref(new Set<number>());
 
-onMounted(async () => {
+let activeRequest: AbortController | undefined;
+let mounted = false;
+
+async function loadIndex() {
+  activeRequest?.abort();
+  const controller = new AbortController();
+  activeRequest = controller;
+  loading.value = true;
+  error.value = '';
+  const prefix = format.value === 'rush' ? '/data/rush' : '/data';
   try {
     const [cardsResponse, featuredResponse, constantsResponse] = await Promise.all([
-      fetch(withBase('/data/card-examples.json')),
-      fetch(withBase('/data/featured-card-ids.json')),
-      fetch(withBase('/data/constant-usage.json')),
+      fetch(withBase(`${prefix}/card-examples.json`), { signal: controller.signal }),
+      fetch(withBase(`${prefix}/featured-card-ids.json`), { signal: controller.signal }),
+      fetch(withBase(`${prefix}/constant-usage.json`), { signal: controller.signal }),
     ]);
     if (!cardsResponse.ok) {
       throw new Error(`${cardsResponse.status} ${cardsResponse.statusText}`);
@@ -56,14 +67,47 @@ onMounted(async () => {
         }
       }
     }
-    records.value = loadedRecords;
     const ids: number[] = await featuredResponse.json();
+    if (controller.signal.aborted) return;
+    records.value = loadedRecords;
     featuredIds.value = new Set(ids.map(Number));
   } catch (err) {
-    error.value = err instanceof Error ? err.message : String(err);
+    if (!controller.signal.aborted) {
+      error.value = err instanceof Error ? err.message : String(err);
+    }
   } finally {
-    loading.value = false;
+    if (!controller.signal.aborted) loading.value = false;
   }
+}
+
+onMounted(() => {
+  const params = new URLSearchParams(window.location.search);
+  format.value = params.get('format') === 'rush' ? 'rush' : 'standard';
+  query.value = params.get('q') || '';
+  const requestedMode = params.get('mode');
+  if (['all', 'cards', 'text', 'code'].includes(requestedMode || '')) {
+    mode.value = requestedMode as SearchMode;
+  }
+  mounted = true;
+  loadIndex();
+});
+onUnmounted(() => activeRequest?.abort());
+
+watch(format, () => {
+  if (!mounted) return;
+  clearFilters();
+  loadIndex();
+}, { flush: 'sync' });
+
+watch([query, mode, format, typeFilter, categoryFilter, featuredOnly], () => {
+  resultLimit.value = 200;
+  if (!mounted) return;
+  const url = new URL(window.location.href);
+  for (const [key, value] of [['q', query.value], ['mode', mode.value === 'all' ? '' : mode.value], ['format', format.value === 'rush' ? 'rush' : '']]) {
+    if (value) url.searchParams.set(key, value);
+    else url.searchParams.delete(key);
+  }
+  window.history.replaceState(window.history.state, '', url);
 });
 
 const normalizedQuery = computed(() => query.value.trim().toLowerCase());
@@ -96,7 +140,7 @@ const constantCounts = computed(() => {
 const matchedFunctions = computed(() => {
   const q = normalizedQuery.value;
   const list = q
-    ? functionCounts.value.filter((entry) => entry.name.toLowerCase().includes(q))
+    ? functionCounts.value.filter((entry) => functionSearchText(entry.name).includes(q))
     : functionCounts.value;
   return list.slice(0, q ? 60 : 30);
 });
@@ -148,7 +192,7 @@ const results = computed(() => {
   const q = normalizedQuery.value;
   return [...filteredRecords.value]
     .sort((a, b) => recordScore(b, q) - recordScore(a, q) || a.name.localeCompare(b.name))
-    .slice(0, resultLimit);
+    .slice(0, resultLimit.value);
 });
 
 function setMode(nextMode: SearchMode) {
@@ -190,7 +234,7 @@ function recordMatchesToken(record: ScriptRecord, token: string) {
     .join(' ')
     .toLowerCase();
   const textHaystack = (record.desc || '').toLowerCase();
-  const functionHaystack = (record.api_calls || []).join(' ').toLowerCase();
+  const functionHaystack = (record.api_calls || []).map(functionSearchText).join(' ');
   const constantHaystack = (record.script_constants || []).join(' ').toLowerCase();
 
   if (mode.value === 'cards') {
@@ -210,12 +254,16 @@ function recordMatchesToken(record: ScriptRecord, token: string) {
   );
 }
 
+function functionSearchText(name: string) {
+  return `${name} ${name.replace(/^RushDuel\./, 'RD.').replace(/^Auxiliary\./, 'aux.')}`.toLowerCase();
+}
+
 function recordScore(record: ScriptRecord, q: string) {
   if (!q) {
     return record.api_calls?.length || 0;
   }
 
-  const exactFunction = (record.api_calls || []).some((name) => name.toLowerCase() === q);
+  const exactFunction = (record.api_calls || []).some((name) => functionSearchText(name).split(' ').includes(q));
   const exactConstant = (record.script_constants || []).some((name) => name.toLowerCase() === q);
   const exactId = String(record.id) === q;
   const exactName = record.name.toLowerCase() === q;
@@ -257,7 +305,7 @@ function hiddenConstantCount(record: ScriptRecord) {
 function visibleCalls(record: ScriptRecord) {
   const calls = record.api_calls || [];
   const q = normalizedQuery.value;
-  const directMatches = q ? calls.filter((name) => name.toLowerCase().includes(q)) : calls;
+  const directMatches = q ? calls.filter((name) => functionSearchText(name).includes(q)) : calls;
   return (directMatches.length ? directMatches : calls).slice(0, 10);
 }
 
@@ -308,7 +356,8 @@ function buildOptionCounts(getLabels: (record: ScriptRecord) => string[]) {
   );
 }
 
-function apiHref(name: string) {
+function apiHref(name: string, record?: ScriptRecord) {
+  if (record?.api_links?.[name]) return withBase(record.api_links[name]);
   const index = name.lastIndexOf('.');
   if (index === -1) {
     return withBase('/api/functions/');
@@ -323,7 +372,7 @@ function isFeatured(record: ScriptRecord) {
 }
 
 function cardHref(record: ScriptRecord) {
-  return withBase(`/examples/cards/${record.id}`);
+  return withBase(`/examples/${format.value === 'rush' ? 'rush-cards' : 'cards'}/${record.id}`);
 }
 
 function scriptHref(record: ScriptRecord) {
@@ -348,14 +397,21 @@ function safeSegment(value: string) {
       </label>
 
       <div class="explorer-modes" aria-label="Search mode">
-        <button type="button" :class="{ active: mode === 'all' }" @click="setMode('all')">All</button>
-        <button type="button" :class="{ active: mode === 'cards' }" @click="setMode('cards')">Cards</button>
-        <button type="button" :class="{ active: mode === 'text' }" @click="setMode('text')">Text</button>
-        <button type="button" :class="{ active: mode === 'code' }" @click="setMode('code')">Code</button>
+        <button type="button" :aria-pressed="mode === 'all'" :class="{ active: mode === 'all' }" @click="setMode('all')">All</button>
+        <button type="button" :aria-pressed="mode === 'cards'" :class="{ active: mode === 'cards' }" @click="setMode('cards')">Cards</button>
+        <button type="button" :aria-pressed="mode === 'text'" :class="{ active: mode === 'text' }" @click="setMode('text')">Text</button>
+        <button type="button" :aria-pressed="mode === 'code'" :class="{ active: mode === 'code' }" @click="setMode('code')">Code</button>
       </div>
     </div>
 
     <div class="explorer-filters" aria-label="Script filters">
+      <label>
+        <span>Format</span>
+        <select v-model="format">
+          <option value="standard">Standard</option>
+          <option value="rush">Rush Duel</option>
+        </select>
+      </label>
       <label>
         <span>Card type</span>
         <select v-model="typeFilter">
@@ -386,8 +442,11 @@ function safeSegment(value: string) {
       </button>
     </div>
 
-    <p v-if="loading" class="explorer-state">Loading script index...</p>
-    <p v-else-if="error" class="explorer-state">Could not load the script index: {{ error }}</p>
+    <p v-if="loading" class="explorer-state" role="status">Loading script index...</p>
+    <p v-else-if="error" class="explorer-state" role="alert">
+      Could not load the script index: {{ error }}
+      <button type="button" class="filter-clear" @click="loadIndex">Retry</button>
+    </p>
 
     <template v-else>
       <div class="explorer-stats" aria-label="Script index statistics">
@@ -462,13 +521,16 @@ function safeSegment(value: string) {
       <section class="explorer-section" aria-labelledby="cards-heading">
         <div class="explorer-section-head">
           <h2 id="cards-heading">Cards</h2>
-          <span>
+          <span role="status" aria-live="polite">
             Showing {{ results.length.toLocaleString() }} of
             {{ filteredRecords.length.toLocaleString() }} matches
           </span>
         </div>
 
         <div class="explorer-results">
+          <p v-if="!results.length" class="explorer-state">
+            No scripts match. Try fewer search words or clear the filters.
+          </p>
           <article v-for="record in results" :key="record.id" class="explorer-result">
             <div class="result-main">
               <a v-if="isFeatured(record)" :href="cardHref(record)">{{ record.name }}</a>
@@ -514,7 +576,7 @@ function safeSegment(value: string) {
             </div>
 
             <div class="matched-call-list" v-if="record.api_calls?.length">
-              <a v-for="name in visibleCalls(record)" :key="name" class="api-chip" :href="apiHref(name)">
+              <a v-for="name in visibleCalls(record)" :key="name" class="api-chip" :href="apiHref(name, record)">
                 {{ name }}
               </a>
               <span v-if="hiddenCallCount(record)" class="more-chip">
@@ -538,6 +600,9 @@ function safeSegment(value: string) {
             </div>
           </article>
         </div>
+        <button v-if="results.length < filteredRecords.length" type="button" class="filter-clear" @click="resultLimit += 200">
+          Show 200 more results
+        </button>
       </section>
     </template>
   </div>

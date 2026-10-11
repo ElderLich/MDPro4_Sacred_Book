@@ -32,7 +32,7 @@ Supported built-in activity types are ACTIVITY_SUMMON, ACTIVITY_NORMALSUMMON, AC
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **83** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Duel.GetActivityCount`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Duel.GetActivityCount) with `Duel.GetActivityCount`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
@@ -54,9 +54,9 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Floowandereeze &amp; Toccan | `17827173` | [Scripts/c17827173.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c17827173.lua) | 1 |
 | Skull Flame | `99899504` | [Scripts/c99899504.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c99899504.lua) | 1 |
 | Floowandereeze &amp; Stri | `80433039` | [Scripts/c80433039.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c80433039.lua) | 1 |
+| Time Maiden | `27107590` | [Scripts/c27107590.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c27107590.lua) | 1 |
 | Blackwing - Silverwind the Ascendant | `33236860` | [Scripts/c33236860.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c33236860.lua) | 1 |
 | Nekroz of Sophia | `21105106` | [Scripts/c21105106.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c21105106.lua) | 2 |
-| Time Maiden | `27107590` | [Scripts/c27107590.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c27107590.lua) | 1 |
 | Born from Draconis | `96699830` | [Scripts/c96699830.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c96699830.lua) | 1 |
 | Lava Golem | `102380` | [Scripts/c102380.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c102380.lua) | 1 |
 | Hi-Speedroid Kendama | `97007933` | [Scripts/c97007933.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c97007933.lua) | 1 |

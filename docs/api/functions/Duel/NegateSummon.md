@@ -42,14 +42,15 @@ This is separate from Chain negation. It expects the Card or Group being Summone
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **50** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Duel.NegateSummon`.
+- Detected in **51** indexed script(s).
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Duel.NegateSummon) with `Duel.NegateSummon`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
 | Stardust Warrior | `74892653` | [Scripts/c74892653.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c74892653.lua) | 1 |
 | Jurrac Astero | `52553102` | [Scripts/c52553102.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c52553102.lua) | 1 |
 | Number C79: Battlin' Boxer General Kaiser | `10300821` | [Scripts/c10300821.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c10300821.lua) | 1 |
+| Daedalus Maelstrom | `64233143` | [Scripts/c64233143.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c64233143.lua) | 1 |
 | The Weather Painter Rainbow | `54178659` | [Scripts/c54178659.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c54178659.lua) | 1 |
 | Cosmic Blazar Dragon | `21123811` | [Scripts/c21123811.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c21123811.lua) | 1 |
 | Axon Kicker Oracle | `33171768` | [Scripts/c33171768.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c33171768.lua) | 1 |
@@ -70,8 +71,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Seed-Spitting Saplings | `35263180` | [Scripts/c35263180.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c35263180.lua) | 1 |
 | Bending Destiny | `94662235` | [Scripts/c94662235.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c94662235.lua) | 1 |
 | Sauravis, the Ancient and Ascended | `4810828` | [Scripts/c4810828.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c4810828.lua) | 1 |
-| Gravity Collapse | `7811875` | [Scripts/c7811875.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c7811875.lua) | 1 |
-| ...and 26 more |  |  |  |
+| ...and 27 more |  |  |  |
 
 ## Script Examples
 

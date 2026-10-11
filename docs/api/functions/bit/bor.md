@@ -27,15 +27,15 @@ Returns the bitwise OR of a and b.
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **52** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `bit.bor`.
+- Detected in **54** indexed script(s).
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=bit.bor) with `bit.bor`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
 | Mecha Phantom Beast Auroradon | `44097050` | [Scripts/c44097050.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c44097050.lua) | 3 |
 | Link into the VRAINS! | `28827503` | [Scripts/c28827503.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c28827503.lua) | 1 |
-| Invoked Transcendence Aeon | `33166263` | [Scripts/c33166263.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c33166263.lua) | 1 |
 | Genex Ally Triforce | `52709508` | [Scripts/c52709508.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c52709508.lua) | 1 |
+| Hyperinvoked Aeon | `33166263` | [Scripts/c33166263.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c33166263.lua) | 1 |
 | Genex Ally Triarm | `17760003` | [Scripts/c17760003.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c17760003.lua) | 1 |
 | Metaltron XII, the True Dracombatant | `57761191` | [Scripts/c57761191.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c57761191.lua) | 1 |
 | Darklord Uprising | `54527349` | [Scripts/c54527349.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c54527349.lua) | 1 |
@@ -45,8 +45,10 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Folgo, Justice Fur Hire | `66023650` | [Scripts/c66023650.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c66023650.lua) | 1 |
 | Clown Crew Matinee Operatics | `57847269` | [Scripts/c57847269.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c57847269.lua) | 1 |
 | Chaos Angel | `22850702` | [Scripts/c22850702.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c22850702.lua) | 1 |
+| Distrust Paranoia | `81965543` | [Scripts/c81965543.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c81965543.lua) | 1 |
 | Tindangle Base Gardna | `94365540` | [Scripts/c94365540.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c94365540.lua) | 1 |
 | Master Peace, the True Dracoslaying King | `21377582` | [Scripts/c21377582.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c21377582.lua) | 1 |
+| Angelechy Enlisted | `81797573` | [Scripts/c81797573.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c81797573.lua) | 4 |
 | Metaphys Horus | `36898537` | [Scripts/c36898537.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c36898537.lua) | 1 |
 | Elementsaber Lapauila Mana | `71797713` | [Scripts/c71797713.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c71797713.lua) | 3 |
 | Mekk-Knight Red Moon | `56809158` | [Scripts/c56809158.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c56809158.lua) | 2 |
@@ -54,9 +56,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Ancient Gear Reactor Dragon | `44874522` | [Scripts/c44874522.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c44874522.lua) | 2 |
 | Mekk-Knight Green Horizon | `66022706` | [Scripts/c66022706.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c66022706.lua) | 2 |
 | Rokket Caliber | `67127799` | [Scripts/c67127799.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c67127799.lua) | 1 |
-| Mekk-Knight Yellow Star | `29415459` | [Scripts/c29415459.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c29415459.lua) | 2 |
-| Ancient Warriors Saga - Sun-Liu Alliance | `58116537` | [Scripts/c58116537.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c58116537.lua) | 1 |
-| ...and 28 more |  |  |  |
+| ...and 30 more |  |  |  |
 
 ## Script Examples
 
@@ -84,14 +84,14 @@ Source: [Scripts/c28827503.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/
 		end
 ```
 
-### Invoked Transcendence Aeon (`33166263`)
+### Genex Ally Triforce (`52709508`)
 
-Source: [Scripts/c33166263.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c33166263.lua)
+Source: [Scripts/c52709508.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c52709508.lua)
 
 ```lua
-	local att=0
-	for tc in aux.Next(g) do
-		att=bit.bor(att,(0x7f-tc:GetAttribute()))
-	end
-	Duel.Hint(HINT_SELECTMSG,tp,HINTMSG_ATTRIBUTE)
+	while tc do
+		if not tc:IsType(TYPE_TUNER) then
+			att=bit.bor(att,tc:GetAttribute())
+		end
+		tc=g:GetNext()
 ```

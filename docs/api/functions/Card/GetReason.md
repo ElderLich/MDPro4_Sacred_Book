@@ -21,21 +21,21 @@ This is the reason recorded in c's current state, such as REASON_EFFECT, REASON_
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3462`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3511`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **46** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Card.GetReason`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Card.GetReason) with `Card.GetReason`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
 | [Ultra Polymerization](/examples/cards/76647978) | `76647978` | [Scripts/c76647978.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c76647978.lua) | 1 |
 | Ostinato | `9113513` | [Scripts/c9113513.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c9113513.lua) | 1 |
 | Hi-Speedroid Cork Shooter | `23361526` | [Scripts/c23361526.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c23361526.lua) | 1 |
-| Astrolasma Urania | `18738846` | [Scripts/c18738846.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c18738846.lua) | 1 |
+| Astrazma Urania | `18738846` | [Scripts/c18738846.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c18738846.lua) | 1 |
 | Loris, Lady of Lament | `50699850` | [Scripts/c50699850.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c50699850.lua) | 1 |
 | Meklord Emperor Granel | `4545683` | [Scripts/c4545683.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c4545683.lua) | 1 |
 | Meklord Emperor Skiel | `31930787` | [Scripts/c31930787.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c31930787.lua) | 1 |

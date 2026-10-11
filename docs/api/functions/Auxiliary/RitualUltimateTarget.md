@@ -33,7 +33,7 @@ Returns the target function for configurable Ritual Summon effects. It checks Ri
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **2** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Auxiliary.RitualUltimateTarget`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Auxiliary.RitualUltimateTarget) with `Auxiliary.RitualUltimateTarget`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

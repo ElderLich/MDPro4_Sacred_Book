@@ -20,14 +20,14 @@ Returns c's current reason effect, or nil when no reason effect is recorded.
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3465`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3514`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **51** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Card.GetReasonEffect`.
+- Detected in **53** indexed script(s).
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Card.GetReasonEffect) with `Card.GetReasonEffect`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
@@ -41,6 +41,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Tachyon Cloudragon | `72705654` | [Scripts/c72705654.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c72705654.lua) | 1 |
 | Mirage Swordsman | `73936388` | [Scripts/c73936388.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c73936388.lua) | 1 |
 | Naturia Mole Cricket | `93454062` | [Scripts/c93454062.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c93454062.lua) | 1 |
+| Thousand Umbral Horror | `2932235` | [Scripts/c2932235.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c2932235.lua) | 1 |
 | Cross Keeper | `40740224` | [Scripts/c40740224.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c40740224.lua) | 1 |
 | Amphibious Swarmship Amblowhale | `20665527` | [Scripts/c20665527.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c20665527.lua) | 1 |
 | Sacred Fire King Garunix | `66431519` | [Scripts/c66431519.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c66431519.lua) | 1 |
@@ -53,9 +54,8 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Blackwing - Shamal the Sandstorm | `8571567` | [Scripts/c8571567.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c8571567.lua) | 1 |
 | Maiden of White | `17947697` | [Scripts/c17947697.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c17947697.lua) | 1 |
 | Dillingerous Dragon | `23732205` | [Scripts/c23732205.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c23732205.lua) | 1 |
-| Galaxy War Drake | `19316241` | [Scripts/c19316241.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c19316241.lua) | 1 |
-| Promethean Princess, Bestower of Flames | `2772337` | [Scripts/c2772337.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c2772337.lua) | 1 |
-| ...and 27 more |  |  |  |
+| Assault Lion | `67676619` | [Scripts/c67676619.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c67676619.lua) | 1 |
+| ...and 29 more |  |  |  |
 
 ## Script Examples
 

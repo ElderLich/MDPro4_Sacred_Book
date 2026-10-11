@@ -20,14 +20,14 @@ Returns the Type value recorded for c's previous on-field state.
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3450`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3499`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **72** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Card.GetPreviousTypeOnField`.
+- Detected in **73** indexed script(s).
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Card.GetPreviousTypeOnField) with `Card.GetPreviousTypeOnField`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
@@ -52,10 +52,10 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Aluber the Jester of Despia | `62962630` | [Scripts/c62962630.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c62962630.lua) | 1 |
 | Sunvine Thrasher | `91557476` | [Scripts/c91557476.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c91557476.lua) | 1 |
 | Tenyi Spirit - Shthana | `24557335` | [Scripts/c24557335.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c24557335.lua) | 1 |
+| World Legacy - "World Ark" | `42388271` | [Scripts/c42388271.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c42388271.lua) | 1 |
 | Princess Cologne | `75574498` | [Scripts/c75574498.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c75574498.lua) | 1 |
 | Voloferniges, the Darkest Dragon Doomrider | `38694052` | [Scripts/c38694052.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c38694052.lua) | 1 |
-| Majestic Mirage | `98020526` | [Scripts/c98020526.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c98020526.lua) | 1 |
-| ...and 48 more |  |  |  |
+| ...and 49 more |  |  |  |
 
 ## Script Examples
 

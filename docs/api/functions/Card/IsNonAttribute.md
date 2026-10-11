@@ -22,14 +22,14 @@ For example, if a monster is both DARK and WIND, IsAttribute(DARK) is true, but 
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3500`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3552`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **27** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Card.IsNonAttribute`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Card.IsNonAttribute) with `Card.IsNonAttribute`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

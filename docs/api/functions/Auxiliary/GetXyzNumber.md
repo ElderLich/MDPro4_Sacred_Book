@@ -26,8 +26,8 @@ Returns the stored Xyz Number value for v, where v can be a Card or a numeric ca
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **16** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Auxiliary.GetXyzNumber`.
+- Detected in **18** indexed script(s).
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Auxiliary.GetXyzNumber) with `Auxiliary.GetXyzNumber`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
@@ -40,6 +40,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Rebirth of the Seventh Emperors | `83888009` | [Scripts/c83888009.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c83888009.lua) | 1 |
 | Barian Untopia | `30761649` | [Scripts/c30761649.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c30761649.lua) | 1 |
 | Seventh Force | `83293635` | [Scripts/c83293635.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c83293635.lua) | 1 |
+| Barian's Seal | `38001022` | [Scripts/c38001022.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c38001022.lua) | 1 |
 | CXyz Barian Hope | `67926903` | [Scripts/c67926903.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c67926903.lua) | 1 |
 | Rank-Up-Magic - The Seventh One | `57734012` | [Scripts/c57734012.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c57734012.lua) | 3 |
 | Seventh Tachyon | `7477101` | [Scripts/c7477101.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c7477101.lua) | 1 |
@@ -47,6 +48,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Numbers Eveil | `20994205` | [Scripts/c20994205.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c20994205.lua) | 7 |
 | Reincarnation of the Seventh Emperors | `57499304` | [Scripts/c57499304.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c57499304.lua) | 1 |
 | Rank-Up-Magic Quick Chaos | `33252803` | [Scripts/c33252803.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c33252803.lua) | 3 |
+| CXyz Chaos Barian Hope Dragon | `79791695` | [Scripts/c79791695.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c79791695.lua) | 1 |
 
 ## Script Examples
 

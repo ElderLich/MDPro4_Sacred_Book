@@ -16,19 +16,19 @@ Returns c's current Level, capped at MAX_PARAMETER.
 
 ## Source
 
-- `Utilities/utility.lua:1519`
+- `Utilities/utility.lua:1522`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **13** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Auxiliary.GetCappedLevel`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Auxiliary.GetCappedLevel) with `Auxiliary.GetCappedLevel`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
 | Miracle Raven | `18988396` | [Scripts/c18988396.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c18988396.lua) | 1 |
-| Gurifoh | `97462632` | [Scripts/c97462632.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c97462632.lua) | 1 |
+| Griffoh | `97462632` | [Scripts/c97462632.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c97462632.lua) | 1 |
 | Lo, the Prayers of the Voiceless Voice | `25801745` | [Scripts/c25801745.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c25801745.lua) | 1 |
 | Avance, Swordsman of the Nekroz | `51618973` | [Scripts/c51618973.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c51618973.lua) | 1 |
 | Emilia, Dance Priestess of the Nekroz | `87003671` | [Scripts/c87003671.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c87003671.lua) | 1 |
@@ -55,7 +55,7 @@ function s.rlevel(e,c)
 	local clv=c:GetLevel()
 ```
 
-### Gurifoh (`97462632`)
+### Griffoh (`97462632`)
 
 Source: [Scripts/c97462632.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c97462632.lua)
 

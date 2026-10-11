@@ -20,14 +20,14 @@ Returns c's current position value.
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3466`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3515`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **12** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Card.GetPosition`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Card.GetPosition) with `Card.GetPosition`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

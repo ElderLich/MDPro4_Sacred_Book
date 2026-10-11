@@ -20,14 +20,14 @@ Returns c's original Attribute from card data, or 0 while c is marked with STATU
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3435`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3483`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **72** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Card.GetOriginalAttribute`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Card.GetOriginalAttribute) with `Card.GetOriginalAttribute`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
@@ -38,7 +38,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Neo Super Quantal Mech King Blaster Magna | `95493471` | [Scripts/c95493471.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c95493471.lua) | 2 |
 | Sudden Thunder Swamp | `23611122` | [Scripts/c23611122.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c23611122.lua) | 1 |
 | Chaos Allure Queen | `29925614` | [Scripts/c29925614.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c29925614.lua) | 2 |
-| Card 24056179 | `24056179` | [Scripts/c24056179.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c24056179.lua) | 2 |
+| Capsule Monster Chess | `24056179` | [Scripts/c24056179.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c24056179.lua) | 2 |
 | Fairy Tail - Wiccat | `27632520` | [Scripts/c27632520.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c27632520.lua) | 2 |
 | Chaofeng, Phantom of the Yang Zing | `19048328` | [Scripts/c19048328.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c19048328.lua) | 5 |
 | Hyper-Rank-Up-Magic Ultimate Force | `87818869` | [Scripts/c87818869.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c87818869.lua) | 1 |

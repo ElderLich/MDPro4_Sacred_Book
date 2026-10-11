@@ -24,14 +24,14 @@ Target helper for effects that negate an activation and banish the activating ca
 
 ## Source
 
-- `Utilities/utility.lua:1469`
+- `Utilities/utility.lua:1472`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **18** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Auxiliary.nbtg`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Auxiliary.nbtg) with `Auxiliary.nbtg`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

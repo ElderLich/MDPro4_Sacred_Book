@@ -28,7 +28,7 @@ Checks whether player can send cards to the Deck at all, or whether player can s
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **1** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Duel.IsPlayerCanSendtoDeck`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Duel.IsPlayerCanSendtoDeck) with `Duel.IsPlayerCanSendtoDeck`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

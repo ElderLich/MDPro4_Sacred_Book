@@ -16,7 +16,7 @@ Activity-counter filter for the shared Drytron Special Summon effect. It returns
 
 ## Source
 
-- `Utilities/utility.lua:1010`
+- `Utilities/utility.lua:1013`
 
 ## Used By
 

@@ -20,14 +20,14 @@ Returns c's attack count for the current turn.
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3534`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3586`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **4** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Card.GetAttackedCount`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Card.GetAttackedCount) with `Card.GetAttackedCount`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

@@ -20,14 +20,14 @@ Checks whether c is a card kind treated by the core as an Extra Deck monster.
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3501`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3553`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **16** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Card.IsExtraDeckMonster`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Card.IsExtraDeckMonster) with `Card.IsExtraDeckMonster`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

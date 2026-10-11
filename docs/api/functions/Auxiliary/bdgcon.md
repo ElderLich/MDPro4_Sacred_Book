@@ -27,20 +27,20 @@ Battle-destroying condition helper for a handler whose battle target is a monste
 
 ## Source
 
-- `Utilities/utility.lua:774`
+- `Utilities/utility.lua:777`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **12** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Auxiliary.bdgcon`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Auxiliary.bdgcon) with `Auxiliary.bdgcon`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
 | Alien Mother | `24104865` | [Scripts/c24104865.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c24104865.lua) | 1 |
 | Toy Parade | `92607427` | [Scripts/c92607427.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c92607427.lua) | 1 |
-| Number 39: Utopia the Envoy of Light | `76504386` | [Scripts/c76504386.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c76504386.lua) | 1 |
+| Number 39: Utopia, Emissary of Light | `76504386` | [Scripts/c76504386.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c76504386.lua) | 1 |
 | Odd-Eyes Saber Dragon | `19221310` | [Scripts/c19221310.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c19221310.lua) | 1 |
 | Draco Berserker of the Tenyi | `5041348` | [Scripts/c5041348.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c5041348.lua) | 1 |
 | Stygian Street Patrol | `13521194` | [Scripts/c13521194.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c13521194.lua) | 1 |
@@ -77,7 +77,7 @@ end
 function c92607427.atkop(e,tp,eg,ep,ev,re,r,rp)
 ```
 
-### Number 39: Utopia the Envoy of Light (`76504386`)
+### Number 39: Utopia, Emissary of Light (`76504386`)
 
 Source: [Scripts/c76504386.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c76504386.lua)
 

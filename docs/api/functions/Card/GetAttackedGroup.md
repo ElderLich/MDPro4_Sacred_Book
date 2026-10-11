@@ -20,7 +20,7 @@ Returns the Group of cards that c has attacked.
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3532`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3584`
 
 ## Used By
 

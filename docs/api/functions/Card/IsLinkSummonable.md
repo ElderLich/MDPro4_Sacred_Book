@@ -27,19 +27,19 @@ The core rejects this check during the Damage Step.
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3581`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3633`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **21** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Card.IsLinkSummonable`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Card.IsLinkSummonable) with `Card.IsLinkSummonable`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
 | [W:P Fancy Ball](/examples/cards/4993187) | `4993187` | [Scripts/c4993187.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c4993187.lua) | 1 |
-| [Trickstar Diffusion](/examples/cards/63181559) | `63181559` | [Scripts/c63181559.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c63181559.lua) | 1 |
+| Trickstar Diffusion | `63181559` | [Scripts/c63181559.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c63181559.lua) | 1 |
 | Link into the VRAINS! | `28827503` | [Scripts/c28827503.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c28827503.lua) | 1 |
 | Angello Vaalmonica | `3048768` | [Scripts/c3048768.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c3048768.lua) | 1 |
 | Code of Soul | `74652966` | [Scripts/c74652966.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c74652966.lua) | 1 |
@@ -48,7 +48,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Unchained Soul of Rage | `67680512` | [Scripts/c67680512.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c67680512.lua) | 1 |
 | Tri-Brigade Revolt | `40975243` | [Scripts/c40975243.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c40975243.lua) | 1 |
 | Sky Striker Special Maneuver - Lemnisgate! | `34433770` | [Scripts/c34433770.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c34433770.lua) | 1 |
-| Power Patron Envoy of Pure Prayers | `31822037` | [Scripts/c31822037.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c31822037.lua) | 2 |
+| Purification Power Patron | `31822037` | [Scripts/c31822037.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c31822037.lua) | 2 |
 | Unchained Syncretism | `93898740` | [Scripts/c93898740.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c93898740.lua) | 1 |
 | Unchained Soul of Anguish | `93084621` | [Scripts/c93084621.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c93084621.lua) | 1 |
 | Unchained Soul of Disaster | `89019964` | [Scripts/c89019964.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c89019964.lua) | 1 |

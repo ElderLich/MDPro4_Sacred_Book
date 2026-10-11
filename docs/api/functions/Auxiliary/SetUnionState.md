@@ -24,7 +24,7 @@ If c has an EFFECT_UNION_LIMIT effect, this registers the matching EFFECT_EQUIP_
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **27** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Auxiliary.SetUnionState`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Auxiliary.SetUnionState) with `Auxiliary.SetUnionState`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

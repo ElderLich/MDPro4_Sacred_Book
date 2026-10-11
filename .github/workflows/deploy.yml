@@ -42,6 +42,7 @@ jobs:
       - name: Validate generators
         run: |
           python -m py_compile Tools/FunctionDocs/generate_function_docs.py Tools/Site/generate_site.py
+          npm run reference:test
           npm run site:test
 
       - name: Generate site data

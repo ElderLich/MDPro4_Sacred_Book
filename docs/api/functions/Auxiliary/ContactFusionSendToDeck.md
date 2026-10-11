@@ -27,7 +27,7 @@ Returns a Contact Fusion material operation that reveals face-down materials whe
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **23** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Auxiliary.ContactFusionSendToDeck`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Auxiliary.ContactFusionSendToDeck) with `Auxiliary.ContactFusionSendToDeck`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

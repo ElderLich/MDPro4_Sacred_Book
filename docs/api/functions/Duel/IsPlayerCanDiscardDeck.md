@@ -27,8 +27,8 @@ Checks whether player can send count cards from the top of the Deck to the Grave
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **106** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Duel.IsPlayerCanDiscardDeck`.
+- Detected in **107** indexed script(s).
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Duel.IsPlayerCanDiscardDeck) with `Duel.IsPlayerCanDiscardDeck`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
@@ -56,7 +56,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Sylvan Princessprite | `33909817` | [Scripts/c33909817.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c33909817.lua) | 2 |
 | Virtual World City - Kauwloon | `14886190` | [Scripts/c14886190.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c14886190.lua) | 1 |
 | Sylvan Lotuswain | `73136204` | [Scripts/c73136204.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c73136204.lua) | 2 |
-| ...and 82 more |  |  |  |
+| ...and 83 more |  |  |  |
 
 ## Script Examples
 

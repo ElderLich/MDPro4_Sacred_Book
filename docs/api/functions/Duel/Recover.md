@@ -50,8 +50,8 @@ The return value is the actual recovery applied. If recovery is reversed into da
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **267** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Duel.Recover`.
+- Detected in **268** indexed script(s).
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Duel.Recover) with `Duel.Recover`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
@@ -67,8 +67,8 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Raidraptor - Last Strix | `97219708` | [Scripts/c97219708.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c97219708.lua) | 1 |
 | Crossmind Archfiend | `52644170` | [Scripts/c52644170.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c52644170.lua) | 1 |
 | Yum☆Yum☆Yummys | `56870908` | [Scripts/c56870908.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c56870908.lua) | 1 |
+| The Chaotic Phantasmal Sacred Beasts | `7894706` | [Scripts/c7894706.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c7894706.lua) | 1 |
 | Don Thousand's Throne | `93238626` | [Scripts/c93238626.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c93238626.lua) | 1 |
-| The Chaotic Sacred Beasts | `7894706` | [Scripts/c7894706.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c7894706.lua) | 1 |
 | Vesper Girsu | `97345699` | [Scripts/c97345699.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c97345699.lua) | 1 |
 | Exosister Irene | `79858629` | [Scripts/c79858629.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c79858629.lua) | 1 |
 | Aromalilith Rosemary | `30989084` | [Scripts/c30989084.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c30989084.lua) | 1 |
@@ -79,7 +79,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | R.B. Operation Test | `16066654` | [Scripts/c16066654.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c16066654.lua) | 1 |
 | Performapal Odd-Eyes Butler | `56677752` | [Scripts/c56677752.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c56677752.lua) | 1 |
 | Gizmek Yata, the Gleaming Vanguard | `13224603` | [Scripts/c13224603.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c13224603.lua) | 1 |
-| ...and 243 more |  |  |  |
+| ...and 244 more |  |  |  |
 
 ## Script Examples
 

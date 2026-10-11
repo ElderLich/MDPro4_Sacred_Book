@@ -17,19 +17,19 @@ Target filter for Dimensional Fissure-style replacement effects. It matches card
 
 ## Source
 
-- `Utilities/utility.lua:1986`
+- `Utilities/utility.lua:1998`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **4** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Auxiliary.DimensionalFissureTarget`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Auxiliary.DimensionalFissureTarget) with `Auxiliary.DimensionalFissureTarget`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
 | Awakening of the Sacred Beasts | `53701259` | [Scripts/c53701259.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c53701259.lua) | 1 |
-| Invoked Okeanos | `6772168` | [Scripts/c6772168.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c6772168.lua) | 1 |
+| Invoked Oceanus | `6772168` | [Scripts/c6772168.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c6772168.lua) | 1 |
 | Different Dimension Ground | `31849106` | [Scripts/c31849106.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c31849106.lua) | 1 |
 | Dimensional Fissure | `81674782` | [Scripts/c81674782.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c81674782.lua) | 1 |
 
@@ -47,7 +47,7 @@ end
 function c53701259.rmcon(e)
 ```
 
-### Invoked Okeanos (`6772168`)
+### Invoked Oceanus (`6772168`)
 
 Source: [Scripts/c6772168.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c6772168.lua)
 

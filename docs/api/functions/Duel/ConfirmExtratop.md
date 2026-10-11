@@ -24,7 +24,7 @@ Reveals count cards from the top of player's Extra Deck to the client, skipping 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **1** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Duel.ConfirmExtratop`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Duel.ConfirmExtratop) with `Duel.ConfirmExtratop`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

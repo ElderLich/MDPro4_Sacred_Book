@@ -39,14 +39,14 @@ This checks the Equip Card's local equip-limit rules. It does not by itself rese
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3524`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3576`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **48** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Card.CheckEquipTarget`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Card.CheckEquipTarget) with `Card.CheckEquipTarget`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

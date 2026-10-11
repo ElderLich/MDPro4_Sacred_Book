@@ -28,7 +28,7 @@ The Lua expression returns a truthy Card on success, false when the status effec
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **21** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Auxiliary.IsUnionState`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Auxiliary.IsUnionState) with `Auxiliary.IsUnionState`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

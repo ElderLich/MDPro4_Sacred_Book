@@ -21,14 +21,14 @@ Checks whether c has an equipped card carrying flag effect id, which marks equip
 
 ## Source
 
-- `Utilities/utility.lua:1953`
+- `Utilities/utility.lua:1958`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **4** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Auxiliary.IsSelfEquip`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Auxiliary.IsSelfEquip) with `Auxiliary.IsSelfEquip`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

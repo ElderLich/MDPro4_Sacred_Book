@@ -23,12 +23,12 @@ Replaces the operation function of Chain Link chainc with f.
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **21** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Duel.ChangeChainOperation`.
+- Detected in **22** indexed script(s).
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Duel.ChangeChainOperation) with `Duel.ChangeChainOperation`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Chaos Hats | `2372506` | [Scripts/c2372506.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c2372506.lua) | 1 |
+| Chaos Magical Hats | `2372506` | [Scripts/c2372506.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c2372506.lua) | 1 |
 | Nerva the Power Patron of Creation | `53589300` | [Scripts/c53589300.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c53589300.lua) | 1 |
 | Artifact Durendal | `69840739` | [Scripts/c69840739.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c69840739.lua) | 1 |
 | Samsara D Lotus | `62318994` | [Scripts/c62318994.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c62318994.lua) | 1 |
@@ -40,6 +40,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Abyss Playhouse - Fantastic Theater | `77297908` | [Scripts/c77297908.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c77297908.lua) | 1 |
 | Phantom of Yubel | `80453041` | [Scripts/c80453041.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c80453041.lua) | 1 |
 | Number 75: Bamboozling Gossip Shadow | `71166481` | [Scripts/c71166481.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c71166481.lua) | 1 |
+| Cielo, the Night Sky of Raise Moon - No More Bets! | `73090586` | [Scripts/c73090586.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c73090586.lua) | 1 |
 | Fairy Tail - Sleeper | `42921475` | [Scripts/c42921475.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c42921475.lua) | 1 |
 | Shipping Error | `58761791` | [Scripts/c58761791.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c58761791.lua) | 1 |
 | Dark World Brainwashing | `10131855` | [Scripts/c10131855.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c10131855.lua) | 1 |
@@ -52,7 +53,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 ## Script Examples
 
-### Chaos Hats (`2372506`)
+### Chaos Magical Hats (`2372506`)
 
 Source: [Scripts/c2372506.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c2372506.lua)
 

@@ -23,7 +23,7 @@ Returns the stored coin toss results for the current coin-toss event, one result
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **3** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Duel.GetCoinResult`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Duel.GetCoinResult) with `Duel.GetCoinResult`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

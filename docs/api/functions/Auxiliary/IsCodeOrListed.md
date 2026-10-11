@@ -27,8 +27,8 @@ Returns true if c's current code matches code or code is registered in c's liste
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **38** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Auxiliary.IsCodeOrListed`.
+- Detected in **39** indexed script(s).
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Auxiliary.IsCodeOrListed) with `Auxiliary.IsCodeOrListed`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
@@ -47,6 +47,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Keldo the Sacred Protector | `63542003` | [Scripts/c63542003.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c63542003.lua) | 1 |
 | Wightbaking | `6128460` | [Scripts/c6128460.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c6128460.lua) | 1 |
 | Soul Servant | `23020408` | [Scripts/c23020408.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c23020408.lua) | 2 |
+| Fisherman of Legend | `76660178` | [Scripts/c76660178.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c76660178.lua) | 1 |
 | Fallen Sanctuary | `90312154` | [Scripts/c90312154.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c90312154.lua) | 1 |
 | Celestial Apparatus Tesea | `54092240` | [Scripts/c54092240.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c54092240.lua) | 1 |
 | Crimson Blader/Assault Mode | `50604072` | [Scripts/c50604072.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c50604072.lua) | 1 |
@@ -55,8 +56,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Wight Reanimator | `39848658` | [Scripts/c39848658.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c39848658.lua) | 1 |
 | Curse of Aramatir | `34690953` | [Scripts/c34690953.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c34690953.lua) | 1 |
 | Fiend Piece Golem | `56838842` | [Scripts/c56838842.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c56838842.lua) | 1 |
-| Assault Sonic Warrior | `18711696` | [Scripts/c18711696.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c18711696.lua) | 2 |
-| ...and 14 more |  |  |  |
+| ...and 15 more |  |  |  |
 
 ## Script Examples
 

@@ -28,7 +28,7 @@ The return value is the selected option index, not a TYPE_* bitmask.
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **23** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Duel.AnnounceType`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Duel.AnnounceType) with `Duel.AnnounceType`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

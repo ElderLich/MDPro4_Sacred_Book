@@ -18,14 +18,14 @@ The effect uses the common Drytron release cost, target, operation wrapper, and 
 
 ## Source
 
-- `Utilities/utility.lua:999`
+- `Utilities/utility.lua:1002`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **5** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Auxiliary.AddDrytronSpSummonEffect`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Auxiliary.AddDrytronSpSummonEffect) with `Auxiliary.AddDrytronSpSummonEffect`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

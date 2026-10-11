@@ -20,14 +20,14 @@ Returns c's current reason player, the player recorded in c's current reason sta
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3464`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3513`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **167** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Card.GetReasonPlayer`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Card.GetReasonPlayer) with `Card.GetReasonPlayer`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
@@ -53,7 +53,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Mirrorjade the Iceblade Dragon | `44146295` | [Scripts/c44146295.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c44146295.lua) | 1 |
 | Galactikuriboh | `46261704` | [Scripts/c46261704.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c46261704.lua) | 1 |
 | Chronomaly Acambaro Figures | `24506253` | [Scripts/c24506253.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c24506253.lua) | 1 |
-| Rayrage, the Twilight Fiend | `71222649` | [Scripts/c71222649.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c71222649.lua) | 1 |
+| Twilight Specter Rayrage | `71222649` | [Scripts/c71222649.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c71222649.lua) | 1 |
 | Lancea, Ancestral Dragon of the Ice Mountain | `96402918` | [Scripts/c96402918.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c96402918.lua) | 1 |
 | ...and 143 more |  |  |  |
 

@@ -29,8 +29,8 @@ Counts are reset each turn. In this core, most card-based custom counters only r
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **169** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Duel.GetCustomActivityCount`.
+- Detected in **173** indexed script(s).
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Duel.GetCustomActivityCount) with `Duel.GetCustomActivityCount`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
@@ -48,6 +48,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Dreaming Nemleria | `70155677` | [Scripts/c70155677.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c70155677.lua) | 1 |
 | Thunder Dragonlord | `5206415` | [Scripts/c5206415.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c5206415.lua) | 2 |
 | Megaroid City | `44139064` | [Scripts/c44139064.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c44139064.lua) | 2 |
+| Helping Robo for Underwater Combat | `77856460` | [Scripts/c77856460.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c77856460.lua) | 1 |
 | Chaos Emperor Dragon - Envoy of the End | `82301904` | [Scripts/c82301904.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c82301904.lua) | 1 |
 | Ekto Enneacraft - "tromarIA" | `29570824` | [Scripts/c29570824.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c29570824.lua) | 1 |
 | Enato Enneacraft - "oknirIA" | `55965529` | [Scripts/c55965529.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c55965529.lua) | 1 |
@@ -57,8 +58,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Proto Enneacraft - "orgIA" | `56187077` | [Scripts/c56187077.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c56187077.lua) | 1 |
 | Dream Tower of Princess Nemleria | `18458255` | [Scripts/c18458255.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c18458255.lua) | 1 |
 | Dawn Angel Kambi | `12500059` | [Scripts/c12500059.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c12500059.lua) | 1 |
-| Absorb Fusion | `71422989` | [Scripts/c71422989.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c71422989.lua) | 1 |
-| ...and 145 more |  |  |  |
+| ...and 149 more |  |  |  |
 
 ## Script Examples
 

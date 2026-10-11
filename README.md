@@ -4,7 +4,10 @@ Documentation and data-generation tools for MDPro3/YGOPro Lua card scripting.
 
 This repository builds a VitePress site with beginner lessons, scripting guides,
 generated API/reference pages, and card-script examples generated from
-`cards.cdb` plus `Scripts/`.
+`cards.cdb` plus `Scripts/`. The Rush collection uses `rush_cards.cdb`,
+`Rush/Scripts/`, and `Rush/Utilities/` separately, with its own helper reference
+and a format selector in Script Explorer. Source commits are recorded in
+`UPSTREAM_SOURCES.md`.
 
 ## Generate Everything
 
@@ -17,6 +20,10 @@ This runs:
 
 1. `Tools/FunctionDocs/generate_function_docs.py`
 2. `Tools/Site/generate_site.py`
+
+Tutorial navigation and analytics settings live in `docs/.vitepress/config.mts`.
+The generator updates only `navigation.generated.json` for the API namespaces
+and featured examples, so authored navigation survives every refresh.
 
 ## Preview Locally
 

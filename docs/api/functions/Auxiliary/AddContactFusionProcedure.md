@@ -32,7 +32,7 @@ Registers a Contact Fusion Special Summon procedure on c, using material filter 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **64** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Auxiliary.AddContactFusionProcedure`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Auxiliary.AddContactFusionProcedure) with `Auxiliary.AddContactFusionProcedure`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
@@ -44,7 +44,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Gladiator Beast Gyzarus | `48156348` | [Scripts/c48156348.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c48156348.lua) | 1 |
 | Ritual Beast Ulti-Cannahawk | `48063985` | [Scripts/c48063985.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c48063985.lua) | 1 |
 | Blue-Eyes Toon Ultimate Dragon | `71808988` | [Scripts/c71808988.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c71808988.lua) | 1 |
-| The Chaotic Sacred Beasts | `7894706` | [Scripts/c7894706.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c7894706.lua) | 1 |
+| The Chaotic Phantasmal Sacred Beasts | `7894706` | [Scripts/c7894706.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c7894706.lua) | 1 |
 | Arcana Force EX - The Chaos Ruler | `12686296` | [Scripts/c12686296.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c12686296.lua) | 1 |
 | Gladiator Beast Claudius | `48958757` | [Scripts/c48958757.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c48958757.lua) | 1 |
 | Gate Guardian of Water and Thunder | `97783338` | [Scripts/c97783338.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c97783338.lua) | 1 |

@@ -29,7 +29,7 @@ Checks whether selected hand Synchro Materials are allowed by a material that gr
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **8** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Auxiliary.SynMixHandCheck`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Auxiliary.SynMixHandCheck) with `Auxiliary.SynMixHandCheck`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

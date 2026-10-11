@@ -24,8 +24,8 @@ The core raises EVENT_MOVE for the moved card and returns no Lua values.
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **140** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Duel.MoveSequence`.
+- Detected in **144** indexed script(s).
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Duel.MoveSequence) with `Duel.MoveSequence`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
@@ -53,7 +53,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Seventh Ascension | `23153227` | [Scripts/c23153227.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c23153227.lua) | 1 |
 | Destiny HERO - Dark Angel | `26964762` | [Scripts/c26964762.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c26964762.lua) | 2 |
 | R.B. VALCan Booster | `6821579` | [Scripts/c6821579.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c6821579.lua) | 1 |
-| ...and 116 more |  |  |  |
+| ...and 120 more |  |  |  |
 
 ## Script Examples
 

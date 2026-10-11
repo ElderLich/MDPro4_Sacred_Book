@@ -22,19 +22,20 @@ Registers single-card merged delayed event listeners for one event or a table of
 
 ## Source
 
-- `Utilities/utility.lua:1684`
+- `Utilities/utility.lua:1687`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **34** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Auxiliary.RegisterMergedDelayedEvent_ToSingleCard`.
+- Detected in **39** indexed script(s).
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Auxiliary.RegisterMergedDelayedEvent_ToSingleCard) with `Auxiliary.RegisterMergedDelayedEvent_ToSingleCard`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| [Astrograph Sorcerer, the Star Magician](/examples/cards/48171151) | `48171151` | [Scripts/c48171151.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c48171151.lua) | 1 |
+| [Astrograph Sorcerer, the Starfrost Magician](/examples/cards/48171151) | `48171151` | [Scripts/c48171151.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c48171151.lua) | 1 |
 | Starving Venom Wing Dragon | `5148778` | [Scripts/c5148778.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c5148778.lua) | 1 |
+| Trirealm Rift Judgment | `65195679` | [Scripts/c65195679.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c65195679.lua) | 1 |
 | Number 38: Hope Harbinger Dragon Titanic Galaxy | `63767246` | [Scripts/c63767246.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c63767246.lua) | 1 |
 | Unchained Soul Rage Abominator | `21419436` | [Scripts/c21419436.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c21419436.lua) | 1 |
 | Weaver of Fairy Tails | `78021082` | [Scripts/c78021082.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c78021082.lua) | 1 |
@@ -52,16 +53,15 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Clown Crew New Face | `6547248` | [Scripts/c6547248.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c6547248.lua) | 1 |
 | Traptrix Pinguicula | `1688285` | [Scripts/c1688285.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c1688285.lua) | 1 |
 | The Iris Swordsoul | `62849088` | [Scripts/c62849088.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c62849088.lua) | 1 |
+| Zenet Per Akh | `72278590` | [Scripts/c72278590.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c72278590.lua) | 1 |
 | Draco Awakening | `66092596` | [Scripts/c66092596.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c66092596.lua) | 1 |
 | Bystial Baldrake | `72656408` | [Scripts/c72656408.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c72656408.lua) | 1 |
-| T.G. Glaive Blaster | `95973569` | [Scripts/c95973569.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c95973569.lua) | 1 |
-| Lycoris Lilyreaper | `81916745` | [Scripts/c81916745.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c81916745.lua) | 1 |
-| Lunalight Gold Leo | `8379983` | [Scripts/c8379983.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c8379983.lua) | 1 |
-| ...and 10 more |  |  |  |
+| Thundercrash Snarecrow | `53754391` | [Scripts/c53754391.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c53754391.lua) | 1 |
+| ...and 15 more |  |  |  |
 
 ## Script Examples
 
-### Astrograph Sorcerer, the Star Magician (`48171151`)
+### Astrograph Sorcerer, the Starfrost Magician (`48171151`)
 
 Source: [Scripts/c48171151.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c48171151.lua)
 
@@ -85,14 +85,14 @@ Source: [Scripts/c5148778.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/b
 	e2:SetDescription(aux.Stringid(id,1))
 ```
 
-### Number 38: Hope Harbinger Dragon Titanic Galaxy (`63767246`)
+### Trirealm Rift Judgment (`65195679`)
 
-Source: [Scripts/c63767246.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c63767246.lua)
+Source: [Scripts/c65195679.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c65195679.lua)
 
 ```lua
-	c:RegisterEffect(e2)
-	--atk up
-	local custom_code=aux.RegisterMergedDelayedEvent_ToSingleCard(c,63767246,EVENT_DESTROYED)
-	local e3=Effect.CreateEffect(c)
-	e3:SetDescription(aux.Stringid(63767246,2))
+	c:RegisterEffect(e1)
+	--recycle
+	local custom_code=aux.RegisterMergedDelayedEvent_ToSingleCard(c,id,{EVENT_SUMMON_SUCCESS,EVENT_SPSUMMON_SUCCESS})
+	local e2=Effect.CreateEffect(c)
+	e2:SetDescription(aux.Stringid(id,0))
 ```

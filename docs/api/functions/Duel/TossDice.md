@@ -30,18 +30,21 @@ Valid dice results are integers from 1 to 6. Normal script use should keep count
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **58** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Duel.TossDice`.
+- Detected in **61** indexed script(s).
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Duel.TossDice) with `Duel.TossDice`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
 | Masterking Archfiend | `35606858` | [Scripts/c35606858.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c35606858.lua) | 1 |
+| Reversal Box | `2606417` | [Scripts/c2606417.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c2606417.lua) | 1 |
 | Hi-Speedroid Clear Wing Rider | `86154370` | [Scripts/c86154370.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c86154370.lua) | 1 |
 | Re-dyce-cle | `85704698` | [Scripts/c85704698.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c85704698.lua) | 1 |
 | Time Magic Hammer | `10960419` | [Scripts/c10960419.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c10960419.lua) | 1 |
 | Astra Ghouls | `69170403` | [Scripts/c69170403.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c69170403.lua) | 1 |
+| Evil Lord - Zorc | `73320394` | [Scripts/c73320394.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c73320394.lua) | 1 |
 | Shateki | `5574510` | [Scripts/c5574510.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c5574510.lua) | 1 |
 | Vaylantz Mad Marquess | `87897777` | [Scripts/c87897777.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c87897777.lua) | 2 |
+| Graceful &amp; Skull Dice | `76630812` | [Scripts/c76630812.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c76630812.lua) | 2 |
 | Morphtronic Smartfon | `15521027` | [Scripts/c15521027.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c15521027.lua) | 2 |
 | Desrook Archfiend | `72192100` | [Scripts/c72192100.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c72192100.lua) | 1 |
 | Thunder Ball | `84813516` | [Scripts/c84813516.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c84813516.lua) | 1 |
@@ -56,10 +59,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Number 85: Crazy Box | `42421606` | [Scripts/c42421606.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c42421606.lua) | 1 |
 | Roulette Spider | `36708764` | [Scripts/c36708764.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c36708764.lua) | 1 |
 | Dice Dungeon | `11808215` | [Scripts/c11808215.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c11808215.lua) | 1 |
-| F.A. Dead Heat | `5641251` | [Scripts/c5641251.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c5641251.lua) | 1 |
-| Hinezumi Hanabi | `71459017` | [Scripts/c71459017.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c71459017.lua) | 1 |
-| Vilepawn Archfiend | `73219648` | [Scripts/c73219648.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c73219648.lua) | 1 |
-| ...and 34 more |  |  |  |
+| ...and 37 more |  |  |  |
 
 ## Script Examples
 
@@ -75,6 +75,18 @@ function c35606858.dcop(e,tp,eg,ep,ev,re,r,rp)
 	if g:GetCount()==0 then return end
 ```
 
+### Reversal Box (`2606417`)
+
+Source: [Scripts/c2606417.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c2606417.lua)
+
+```lua
+function s.ctop(e,tp,eg,ep,ev,re,r,rp)
+	local c=e:GetHandler()
+	local ct=Duel.TossDice(tp,1)
+	if c:GetCounter(0x76)+ct>6 then ct=6-c:GetCounter(0x76) end
+	if ct>0 then
+```
+
 ### Hi-Speedroid Clear Wing Rider (`86154370`)
 
 Source: [Scripts/c86154370.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c86154370.lua)
@@ -85,16 +97,4 @@ function c86154370.desop(e,tp,eg,ep,ev,re,r,rp)
 	local dc=Duel.TossDice(tp,1)
 	Duel.Hint(HINT_SELECTMSG,tp,HINTMSG_TODECK)
 	local gy=Duel.SelectMatchingCard(tp,c86154370.gyfilter,tp,LOCATION_GRAVE,0,1,dc,nil)
-```
-
-### Re-dyce-cle (`85704698`)
-
-Source: [Scripts/c85704698.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c85704698.lua)
-
-```lua
-		tc:RegisterEffect(e2,true)
-		Duel.SpecialSummonComplete()
-		local lv=Duel.TossDice(tp,1)
-		local e3=Effect.CreateEffect(e:GetHandler())
-		e3:SetType(EFFECT_TYPE_SINGLE)
 ```

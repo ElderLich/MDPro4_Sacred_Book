@@ -23,17 +23,18 @@ Use bit helpers such as bit.extract or bit.band when checking whether a specific
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3424`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3472`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **60** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Card.GetLinkedZone`.
+- Detected in **61** indexed script(s).
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Card.GetLinkedZone) with `Card.GetLinkedZone`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
+| [Azure Ocean Dragon Lord - Neo-Daedalus Rage](/examples/cards/41570943) | `41570943` | [Scripts/c41570943.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c41570943.lua) | 2 |
 | [Bujinki Ahashima](/examples/cards/71095768) | `71095768` | [Scripts/c71095768.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c71095768.lua) | 2 |
 | Duel Link Dragon, the Duel Dragon | `60025883` | [Scripts/c60025883.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c60025883.lua) | 2 |
 | Cyberse Contract Witch | `37458564` | [Scripts/c37458564.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c37458564.lua) | 1 |
@@ -57,10 +58,21 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Borreload Liberator Dragon | `27096833` | [Scripts/c27096833.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c27096833.lua) | 2 |
 | Dark Templar @Ignister | `97383507` | [Scripts/c97383507.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c97383507.lua) | 2 |
 | Summon Sorceress | `61665245` | [Scripts/c61665245.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c61665245.lua) | 2 |
-| Brotherhood of the Fire Fist - Peacock | `20265095` | [Scripts/c20265095.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c20265095.lua) | 2 |
-| ...and 36 more |  |  |  |
+| ...and 37 more |  |  |  |
 
 ## Script Examples
+
+### Azure Ocean Dragon Lord - Neo-Daedalus Rage (`41570943`)
+
+Source: [Scripts/c41570943.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c41570943.lua)
+
+```lua
+end
+function s.sptg(e,tp,eg,ep,ev,re,r,rp,chk)
+	local zone=bit.band(e:GetHandler():GetLinkedZone(tp),0x1f)
+	if chk==0 then return Duel.GetLocationCount(tp,LOCATION_MZONE)>0
+		and Duel.IsExistingMatchingCard(s.spfilter1,tp,LOCATION_GRAVE,0,1,nil,e,tp,zone) end
+```
 
 ### Bujinki Ahashima (`71095768`)
 
@@ -84,16 +96,4 @@ function c60025883.sptg(e,tp,eg,ep,ev,re,r,rp,chk)
 	local zone=bit.band(e:GetHandler():GetLinkedZone(tp),0x1f)
 	if chk==0 then return Duel.GetLocationCount(tp,LOCATION_MZONE,tp,LOCATION_REASON_TOFIELD,zone)>0 and zone~=0 end
 	Duel.SetOperationInfo(0,CATEGORY_SPECIAL_SUMMON,nil,1,0,0)
-```
-
-### Cyberse Contract Witch (`37458564`)
-
-Source: [Scripts/c37458564.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c37458564.lua)
-
-```lua
-		return ec:GetLinkedGroup():IsContains(c)
-	else
-		return bit.extract(ec:GetLinkedZone(c:GetPreviousControler()),c:GetPreviousSequence())~=0
-	end
-end
 ```

@@ -30,7 +30,7 @@ Special Summon restriction value for Masked HERO/Mask Change effects; allows the
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **10** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Auxiliary.MaskChangeLimit`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Auxiliary.MaskChangeLimit) with `Auxiliary.MaskChangeLimit`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

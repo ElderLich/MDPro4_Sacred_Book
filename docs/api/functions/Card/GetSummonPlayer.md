@@ -20,18 +20,19 @@ Returns the player recorded as having Summoned c.
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3475`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3524`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **17** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Card.GetSummonPlayer`.
+- Detected in **18** indexed script(s).
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Card.GetSummonPlayer) with `Card.GetSummonPlayer`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
 | [Pendulum Evolution](/examples/cards/55795155) | `55795155` | [Scripts/c55795155.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c55795155.lua) | 1 |
+| [Pere-Zenet Em Heru](/examples/cards/46273941) | `46273941` | [Scripts/c46273941.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c46273941.lua) | 1 |
 | [Ultimate Crystal Rainbow Dragon Overdrive](/examples/cards/84544192) | `84544192` | [Scripts/c84544192.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c84544192.lua) | 1 |
 | Red Nova Dragon - Burning Soul | `65541655` | [Scripts/c65541655.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c65541655.lua) | 1 |
 | King's Resonance | `17269895` | [Scripts/c17269895.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c17269895.lua) | 1 |
@@ -44,7 +45,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Jester Confit | `8487449` | [Scripts/c8487449.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c8487449.lua) | 1 |
 | Trifortressops | `12275533` | [Scripts/c12275533.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c12275533.lua) | 1 |
 | Qliphort Monolith | `51194046` | [Scripts/c51194046.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c51194046.lua) | 1 |
-| Oh my Trap Hole! | `10529441` | [Scripts/c10529441.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c10529441.lua) | 1 |
+| Foolish Trap Hole | `10529441` | [Scripts/c10529441.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c10529441.lua) | 1 |
 | Undaunted Bumpkin Beast | `8700633` | [Scripts/c8700633.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c8700633.lua) | 1 |
 | Crystolic Potential | `3576031` | [Scripts/c3576031.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c3576031.lua) | 1 |
 | Summon Gate | `29724053` | [Scripts/c29724053.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c29724053.lua) | 1 |
@@ -63,6 +64,18 @@ Source: [Scripts/c55795155.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/
 	end
 ```
 
+### Pere-Zenet Em Heru (`46273941`)
+
+Source: [Scripts/c46273941.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c46273941.lua)
+
+```lua
+end
+function s.cfilter(c,tp)
+	return c:IsFaceup() and c:IsType(TYPE_NORMAL) and not c:IsType(TYPE_TOKEN) and c:GetSummonPlayer()==tp
+end
+function s.drcon(e,tp,eg,ep,ev,re,r,rp)
+```
+
 ### Ultimate Crystal Rainbow Dragon Overdrive (`84544192`)
 
 Source: [Scripts/c84544192.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c84544192.lua)
@@ -70,18 +83,6 @@ Source: [Scripts/c84544192.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/
 ```lua
 	for tc in aux.Next(eg) do
 		if tc:IsSetCard(0x2034) then
-			Duel.RegisterFlagEffect(tc:GetSummonPlayer(),id,0,0,0)
-		end
-	end
-```
-
-### Red Nova Dragon - Burning Soul (`65541655`)
-
-Source: [Scripts/c65541655.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c65541655.lua)
-
-```lua
-	for tc in aux.Next(eg) do
-		if tc:IsCode(70902743) and tc:IsSummonType(SUMMON_TYPE_SYNCHRO) then
 			Duel.RegisterFlagEffect(tc:GetSummonPlayer(),id,0,0,0)
 		end
 	end

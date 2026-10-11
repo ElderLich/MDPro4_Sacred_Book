@@ -23,8 +23,8 @@ The core fails if there is no valid current attacker, if the attacker moved or c
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **124** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Duel.NegateAttack`.
+- Detected in **125** indexed script(s).
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Duel.NegateAttack) with `Duel.NegateAttack`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
@@ -38,6 +38,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Parasite Paranoid | `14457896` | [Scripts/c14457896.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c14457896.lua) | 1 |
 | Summon Reactor ・SK | `89493368` | [Scripts/c89493368.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c89493368.lua) | 1 |
 | Performapal Odd-Eyes Butler | `56677752` | [Scripts/c56677752.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c56677752.lua) | 1 |
+| Destined Duel | `48128081` | [Scripts/c48128081.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c48128081.lua) | 1 |
 | Red Nova Dragon/Assault Mode | `82323997` | [Scripts/c82323997.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c82323997.lua) | 1 |
 | Amaze Attraction Viking Vortex | `97182396` | [Scripts/c97182396.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c97182396.lua) | 1 |
 | Beetrooper Light Flapper | `88962829` | [Scripts/c88962829.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c88962829.lua) | 1 |
@@ -51,8 +52,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Light Law Medium | `52253888` | [Scripts/c52253888.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c52253888.lua) | 1 |
 | Turn Silence | `5786513` | [Scripts/c5786513.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c5786513.lua) | 1 |
 | Raging Storm Dragon - Beaufort IX | `8836329` | [Scripts/c8836329.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c8836329.lua) | 1 |
-| Battlin' Boxer Chief Second | `47921178` | [Scripts/c47921178.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c47921178.lua) | 1 |
-| ...and 100 more |  |  |  |
+| ...and 101 more |  |  |  |
 
 ## Script Examples
 

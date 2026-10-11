@@ -20,14 +20,14 @@ Checks only whether c is free of EFFECT_CANNOT_CHANGE_CONTROL.
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3629`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3681`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **88** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Card.IsAbleToChangeControler`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Card.IsAbleToChangeControler) with `Card.IsAbleToChangeControler`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

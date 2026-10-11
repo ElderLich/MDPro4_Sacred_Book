@@ -21,14 +21,14 @@ Returns c's Link Material codes: current code, second code when present, then EF
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3393`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3440`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **19** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Card.GetLinkCode`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Card.GetLinkCode) with `Card.GetLinkCode`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

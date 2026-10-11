@@ -24,14 +24,14 @@ Nil setcode arguments are skipped. This uses the previous state recorded before 
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3398`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3445`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **76** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Card.IsPreviousSetCard`.
+- Detected in **77** indexed script(s).
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Card.IsPreviousSetCard) with `Card.IsPreviousSetCard`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
@@ -40,6 +40,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Ursarctic Quint Charge | `15758127` | [Scripts/c15758127.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c15758127.lua) | 1 |
 | Gem-Knight Master Diamond Dispersion | `25342956` | [Scripts/c25342956.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c25342956.lua) | 1 |
 | Gunkan Sushipyard Seaside Supper Spot | `62200831` | [Scripts/c62200831.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c62200831.lua) | 1 |
+| Angelechy Problem | `17782288` | [Scripts/c17782288.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c17782288.lua) | 1 |
 | Unification of the Cubic Lords | `34325937` | [Scripts/c34325937.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c34325937.lua) | 1 |
 | Salamangreat Zebroid X | `44161893` | [Scripts/c44161893.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c44161893.lua) | 1 |
 | Ultimate Crystal Magic | `36328300` | [Scripts/c36328300.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c36328300.lua) | 2 |
@@ -58,8 +59,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Alviss of the Nordic Alfar | `27024795` | [Scripts/c27024795.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c27024795.lua) | 1 |
 | Centur-Ion Primera Primus | `8841431` | [Scripts/c8841431.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c8841431.lua) | 1 |
 | Mythical Institution | `94599451` | [Scripts/c94599451.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c94599451.lua) | 1 |
-| Kuribah | `44632120` | [Scripts/c44632120.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c44632120.lua) | 1 |
-| ...and 52 more |  |  |  |
+| ...and 53 more |  |  |  |
 
 ## Script Examples
 

@@ -20,14 +20,14 @@ Returns the number of cards currently recorded in c's battled-cards set.
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3536`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3588`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **10** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Card.GetBattledGroupCount`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Card.GetBattledGroupCount) with `Card.GetBattledGroupCount`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

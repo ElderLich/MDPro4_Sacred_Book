@@ -27,14 +27,14 @@ Battle-destroying condition helper that returns true while the handler is still 
 
 ## Source
 
-- `Utilities/utility.lua:764`
+- `Utilities/utility.lua:767`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **18** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Auxiliary.bdcon`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Auxiliary.bdcon) with `Auxiliary.bdcon`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

@@ -31,7 +31,7 @@ With countertype, count, and c, checks player-wide counter placement restriction
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **24** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Duel.IsCanAddCounter`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Duel.IsCanAddCounter) with `Duel.IsCanAddCounter`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

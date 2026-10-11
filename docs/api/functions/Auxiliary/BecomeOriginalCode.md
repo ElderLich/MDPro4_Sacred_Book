@@ -22,14 +22,14 @@ Registers an EFFECT_CHANGE_CODE effect on c so its code becomes tc's original ru
 
 ## Source
 
-- `Utilities/utility.lua:1998`
+- `Utilities/utility.lua:2010`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **1** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Auxiliary.BecomeOriginalCode`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Auxiliary.BecomeOriginalCode) with `Auxiliary.BecomeOriginalCode`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

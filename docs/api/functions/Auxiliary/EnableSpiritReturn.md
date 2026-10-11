@@ -26,7 +26,7 @@ When any listed event happens, it creates End Phase return-to-hand effects in th
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **39** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Auxiliary.EnableSpiritReturn`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Auxiliary.EnableSpiritReturn) with `Auxiliary.EnableSpiritReturn`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

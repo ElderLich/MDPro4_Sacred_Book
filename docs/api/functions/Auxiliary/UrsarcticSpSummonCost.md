@@ -28,7 +28,7 @@ Checks and pays the shared Ursarctic Special Summon cost. The player releases a 
 
 ## Source
 
-- `Utilities/utility.lua:961`
+- `Utilities/utility.lua:964`
 
 ## Used By
 

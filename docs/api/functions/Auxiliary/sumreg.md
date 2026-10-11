@@ -23,14 +23,14 @@ For each card in eg whose original code equals e's label, registers a same-code 
 
 ## Source
 
-- `Utilities/utility.lua:848`
+- `Utilities/utility.lua:851`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **20** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Auxiliary.sumreg`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Auxiliary.sumreg) with `Auxiliary.sumreg`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

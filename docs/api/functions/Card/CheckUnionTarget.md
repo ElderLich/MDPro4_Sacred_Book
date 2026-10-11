@@ -22,14 +22,14 @@ The core also enforces new/old Union count compatibility between c and target.
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3525`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3577`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **8** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Card.CheckUnionTarget`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Card.CheckUnionTarget) with `Card.CheckUnionTarget`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

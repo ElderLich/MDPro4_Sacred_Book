@@ -16,7 +16,7 @@ Returns the shared Drytron operation wrapper. It Special Summons the handler in 
 
 ## Source
 
-- `Utilities/utility.lua:1066`
+- `Utilities/utility.lua:1069`
 
 ## Used By
 

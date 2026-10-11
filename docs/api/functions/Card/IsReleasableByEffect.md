@@ -20,14 +20,14 @@ Checks whether c can be Released by the current resolving effect, using the curr
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3599`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3651`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **43** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Card.IsReleasableByEffect`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Card.IsReleasableByEffect) with `Card.IsReleasableByEffect`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

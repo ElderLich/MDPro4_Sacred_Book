@@ -21,18 +21,18 @@ The core updates this value when the card is added to a location, so scripts com
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3479`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3528`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **51** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Card.GetTurnID`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Card.GetTurnID) with `Card.GetTurnID`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Unchained Enma Lord Yama | `94014327` | [Scripts/c94014327.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c94014327.lua) | 1 |
+| Unchained Firelord of Yama | `94014327` | [Scripts/c94014327.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c94014327.lua) | 1 |
 | Cubic Mandala | `8837932` | [Scripts/c8837932.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c8837932.lua) | 1 |
 | Xyz Double Back | `57836546` | [Scripts/c57836546.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c57836546.lua) | 1 |
 | Diabrocken the Ominous Specter | `6083904` | [Scripts/c6083904.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c6083904.lua) | 1 |
@@ -60,7 +60,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 ## Script Examples
 
-### Unchained Enma Lord Yama (`94014327`)
+### Unchained Firelord of Yama (`94014327`)
 
 Source: [Scripts/c94014327.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c94014327.lua)
 

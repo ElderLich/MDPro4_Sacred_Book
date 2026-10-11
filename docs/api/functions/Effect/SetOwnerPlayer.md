@@ -25,7 +25,7 @@ Only player values 0 and 1 are accepted; any other value leaves the effect uncha
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **52** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Effect.SetOwnerPlayer`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Effect.SetOwnerPlayer) with `Effect.SetOwnerPlayer`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

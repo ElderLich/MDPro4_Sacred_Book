@@ -20,22 +20,26 @@ Returns the number of Equip Cards currently equipped to c.
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3521`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3573`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **29** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Card.GetEquipCount`.
+- Detected in **33** indexed script(s).
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Card.GetEquipCount) with `Card.GetEquipCount`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
 | Emperor Charles the Great | `97864322` | [Scripts/c97864322.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c97864322.lua) | 1 |
+| Tauzenet Wadjet | `73490148` | [Scripts/c73490148.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c73490148.lua) | 1 |
+| D - Burst | `47471667` | [Scripts/c47471667.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c47471667.lua) | 1 |
+| Zenet-Nakhte Sphinx | `47095439` | [Scripts/c47095439.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c47095439.lua) | 1 |
 | Full Armored Dark Knight Lancer | `67630394` | [Scripts/c67630394.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c67630394.lua) | 1 |
 | Cyberdark Inferno | `44352516` | [Scripts/c44352516.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c44352516.lua) | 1 |
 | Zaralaam the Dark Palace | `64230128` | [Scripts/c64230128.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c64230128.lua) | 1 |
 | Jupiter the Power Patron of Destruction | `68231287` | [Scripts/c68231287.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c68231287.lua) | 1 |
+| Zenetmes Nekhbet | `10884847` | [Scripts/c10884847.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c10884847.lua) | 1 |
 | Forest of Lost Flowers | `91228233` | [Scripts/c91228233.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c91228233.lua) | 1 |
 | Thunder Discharge | `27623932` | [Scripts/c27623932.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c27623932.lua) | 1 |
 | Yellow Dragon Ninja | `90247311` | [Scripts/c90247311.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c90247311.lua) | 2 |
@@ -51,11 +55,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Dark Highlander | `75326861` | [Scripts/c75326861.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c75326861.lua) | 1 |
 | Soul Devouring Bamboo Sword | `51670553` | [Scripts/c51670553.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c51670553.lua) | 1 |
 | Trismagistus | `61159609` | [Scripts/c61159609.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c61159609.lua) | 1 |
-| Heritage of the Chalice | `51412776` | [Scripts/c51412776.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c51412776.lua) | 1 |
-| Flint Missile | `16437822` | [Scripts/c16437822.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c16437822.lua) | 1 |
-| Vylon Vanguard | `87836938` | [Scripts/c87836938.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c87836938.lua) | 1 |
-| Really Eternal Rest | `28121403` | [Scripts/c28121403.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c28121403.lua) | 1 |
-| ...and 5 more |  |  |  |
+| ...and 9 more |  |  |  |
 
 ## Script Examples
 
@@ -71,26 +71,26 @@ end
 function s.copycon(e)
 ```
 
-### Full Armored Dark Knight Lancer (`67630394`)
+### Tauzenet Wadjet (`73490148`)
 
-Source: [Scripts/c67630394.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c67630394.lua)
+Source: [Scripts/c73490148.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c73490148.lua)
 
 ```lua
+function s.eqcon(e)
+	local c=e:GetHandler()
+	return c:GetEquipCount()>0
 end
-function s.atkval(e,c)
-	return (c:GetOverlayCount()+c:GetEquipCount())*300
-end
-function s.thfilter(c)
+function s.cfilter(c)
 ```
 
-### Cyberdark Inferno (`44352516`)
+### D - Burst (`47471667`)
 
-Source: [Scripts/c44352516.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c44352516.lua)
+Source: [Scripts/c47471667.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c47471667.lua)
 
 ```lua
+function s.atkcon(e,tp,eg,ep,ev,re,r,rp)
+	local at=Duel.GetAttacker()
+	return (at:GetEquipCount()>0 or at:IsCode(17132130)) and at:IsChainAttackable()
 end
-function c44352516.indestg(e,c)
-	return c:IsSetCard(0x4093) and c:IsType(TYPE_EFFECT) and c:GetEquipCount()>0
-end
-function c44352516.filter(c)
+function s.atktg(e,tp,eg,ep,ev,re,r,rp,chk)
 ```

@@ -23,7 +23,7 @@ Internal Chain End callback for single-card merged delayed events. It clears sta
 
 ## Source
 
-- `Utilities/utility.lua:1766`
+- `Utilities/utility.lua:1771`
 
 ## Used By
 

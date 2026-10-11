@@ -23,7 +23,7 @@ Internal callback for single-card merged delayed events. It collects event cards
 
 ## Source
 
-- `Utilities/utility.lua:1751`
+- `Utilities/utility.lua:1756`
 
 ## Used By
 

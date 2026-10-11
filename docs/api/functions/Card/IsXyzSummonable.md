@@ -25,14 +25,14 @@ The core rejects this check during the Damage Step.
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3580`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3632`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **30** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Card.IsXyzSummonable`.
+- Detected in **32** indexed script(s).
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Card.IsXyzSummonable) with `Card.IsXyzSummonable`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
@@ -43,6 +43,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Salamangreat Zebroid X | `44161893` | [Scripts/c44161893.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c44161893.lua) | 1 |
 | Fire King Sanctuary | `65305978` | [Scripts/c65305978.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c65305978.lua) | 1 |
 | Chronomaly Esperanza Glyph | `50797682` | [Scripts/c50797682.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c50797682.lua) | 2 |
+| Raise Moon Wings Rapi | `47828069` | [Scripts/c47828069.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c47828069.lua) | 1 |
 | Numbers Last Hope | `4606229` | [Scripts/c4606229.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c4606229.lua) | 2 |
 | Mathmech Superfactorial | `87804365` | [Scripts/c87804365.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c87804365.lua) | 1 |
 | Gazer Shark | `23536866` | [Scripts/c23536866.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c23536866.lua) | 2 |
@@ -53,14 +54,13 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Exosister Returnia | `197042` | [Scripts/c197042.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c197042.lua) | 1 |
 | Reincarnation Unveiling Mail | `68663427` | [Scripts/c68663427.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c68663427.lua) | 1 |
 | Artifacts Unleashed | `56611470` | [Scripts/c56611470.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c56611470.lua) | 2 |
+| Hublot the Dark Directory of Death | `29081251` | [Scripts/c29081251.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c29081251.lua) | 1 |
 | The Phantom Knights of Umbrage Veil | `85257384` | [Scripts/c85257384.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c85257384.lua) | 1 |
 | Full-Armored Xyz | `39733924` | [Scripts/c39733924.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c39733924.lua) | 1 |
 | Here There Be Dragons | `4575541` | [Scripts/c4575541.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c4575541.lua) | 1 |
 | Pendulum Xyz | `46005939` | [Scripts/c46005939.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c46005939.lua) | 2 |
-| Gagaga Magician - Gagaga Magic | `12908094` | [Scripts/c12908094.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c12908094.lua) | 1 |
 | K9-ØØ Lupis | `91025875` | [Scripts/c91025875.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c91025875.lua) | 1 |
-| Halfway to Forever | `20285786` | [Scripts/c20285786.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c20285786.lua) | 2 |
-| ...and 6 more |  |  |  |
+| ...and 8 more |  |  |  |
 
 ## Script Examples
 

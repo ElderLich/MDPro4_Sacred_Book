@@ -22,14 +22,14 @@ When countertype is 0, this core returns the number of different counter types c
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3633`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3685`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **121** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Card.GetCounter`.
+- Detected in **123** indexed script(s).
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Card.GetCounter) with `Card.GetCounter`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
@@ -42,7 +42,8 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Dimonno Vaalmonica | `30432463` | [Scripts/c30432463.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c30432463.lua) | 1 |
 | Black-Winged Assault Dragon | `73218989` | [Scripts/c73218989.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c73218989.lua) | 1 |
 | Zebufera, Vaalmonican Hallow Heathen | `2815176` | [Scripts/c2815176.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c2815176.lua) | 1 |
-| Predaplant Dheadevil | `82370493` | [Scripts/c82370493.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c82370493.lua) | 3 |
+| Predaplant Daredevil | `82370493` | [Scripts/c82370493.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c82370493.lua) | 3 |
+| Reversal Box | `2606417` | [Scripts/c2606417.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c2606417.lua) | 2 |
 | Predaplant Chlamydosundew | `89181134` | [Scripts/c89181134.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c89181134.lua) | 3 |
 | Alien Mother | `24104865` | [Scripts/c24104865.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c24104865.lua) | 1 |
 | Enneapolis | `17621695` | [Scripts/c17621695.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c17621695.lua) | 2 |
@@ -56,8 +57,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Summer Schoolwork Successful! | `77751766` | [Scripts/c77751766.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c77751766.lua) | 1 |
 | Endymion, the Master Magician | `40732515` | [Scripts/c40732515.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c40732515.lua) | 1 |
 | Aiza the Dragoness of Deranged Devotion | `63378869` | [Scripts/c63378869.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c63378869.lua) | 2 |
-| Solving for Pendulum | `5208118` | [Scripts/c5208118.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c5208118.lua) | 3 |
-| ...and 97 more |  |  |  |
+| ...and 99 more |  |  |  |
 
 ## Script Examples
 
@@ -90,7 +90,7 @@ function c40785230.spcost(e,tp,eg,ep,ev,re,r,rp,chk)
 Source: [Scripts/c51858200.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c51858200.lua)
 
 ```lua
-end
+}
 function c51858200.cfilter(c)
 	return c:IsLocation(LOCATION_MZONE) and c:GetCounter(0x1041)>0
 end

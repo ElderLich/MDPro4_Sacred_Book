@@ -20,14 +20,14 @@ Returns a Group containing all persistent card targets currently recorded on c.
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3540`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3592`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **15** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Card.GetCardTarget`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Card.GetCardTarget) with `Card.GetCardTarget`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

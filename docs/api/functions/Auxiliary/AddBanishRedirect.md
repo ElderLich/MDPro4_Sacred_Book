@@ -17,14 +17,14 @@ Registers an EFFECT_LEAVE_FIELD_REDIRECT effect that banishes c when condition i
 
 ## Source
 
-- `Utilities/utility.lua:1932`
+- `Utilities/utility.lua:1937`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **10** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Auxiliary.AddBanishRedirect`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Auxiliary.AddBanishRedirect) with `Auxiliary.AddBanishRedirect`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

@@ -23,17 +23,18 @@ player defaults to the current reason player. The core uses c:GetLinkAttribute(p
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3499`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3551`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **56** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Card.IsLinkAttribute`.
+- Detected in **57** indexed script(s).
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Card.IsLinkAttribute) with `Card.IsLinkAttribute`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
+| [Levia-Dragoon - Daedalus](/examples/cards/78579058) | `78579058` | [Scripts/c78579058.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c78579058.lua) | 1 |
 | [Fiendsmith's Sequence](/examples/cards/49867899) | `49867899` | [Scripts/c49867899.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c49867899.lua) | 1 |
 | [Yummy★Snatchy](/examples/cards/30581601) | `30581601` | [Scripts/c30581601.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c30581601.lua) | 1 |
 | Salamangreat Raging Phoenix | `57134592` | [Scripts/c57134592.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c57134592.lua) | 1 |
@@ -57,10 +58,21 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Dillingerous Dragon | `23732205` | [Scripts/c23732205.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c23732205.lua) | 1 |
 | Ukanomitsune-no-Onari | `49451215` | [Scripts/c49451215.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c49451215.lua) | 1 |
 | Fiendsmith's Agnumday | `32991300` | [Scripts/c32991300.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c32991300.lua) | 1 |
-| Trisborrel Dragon | `3957130` | [Scripts/c3957130.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c3957130.lua) | 1 |
-| ...and 32 more |  |  |  |
+| ...and 33 more |  |  |  |
 
 ## Script Examples
+
+### Levia-Dragoon - Daedalus (`78579058`)
+
+Source: [Scripts/c78579058.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c78579058.lua)
+
+```lua
+end
+function s.mfilter(c)
+	return c:IsLinkAttribute(ATTRIBUTE_WATER)
+end
+function s.glcheck(g,c,tp)
+```
 
 ### Fiendsmith's Sequence (`49867899`)
 
@@ -84,16 +96,4 @@ function s.matfilter(c)
 	return c:IsLinkAttribute(ATTRIBUTE_LIGHT) and c:IsLinkRace(RACE_BEAST) and c:IsLevelBelow(4)
 end
 function s.stfilter(c,tp)
-```
-
-### Salamangreat Raging Phoenix (`57134592`)
-
-Source: [Scripts/c57134592.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c57134592.lua)
-
-```lua
-end
-function s.matfilter(c)
-	return c:IsLinkType(TYPE_EFFECT) and c:IsLinkAttribute(ATTRIBUTE_FIRE)
-end
-function s.valcheck(e,c)
 ```

@@ -31,7 +31,7 @@ Adds code1 and code2 to c's listed codes, then creates an equal-Level Ritual Sum
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **1** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Auxiliary.AddRitualProcEqual2Code2`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Auxiliary.AddRitualProcEqual2Code2) with `Auxiliary.AddRitualProcEqual2Code2`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

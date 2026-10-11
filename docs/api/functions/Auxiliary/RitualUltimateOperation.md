@@ -33,7 +33,7 @@ Returns the operation function for configurable Ritual Summon effects. It select
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **2** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Auxiliary.RitualUltimateOperation`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Auxiliary.RitualUltimateOperation) with `Auxiliary.RitualUltimateOperation`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

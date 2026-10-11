@@ -22,14 +22,14 @@ Value helper for self-protection from effect destruction; it returns true when t
 
 ## Source
 
-- `Utilities/utility.lua:824`
+- `Utilities/utility.lua:827`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **3** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Auxiliary.indsval`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Auxiliary.indsval) with `Auxiliary.indsval`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

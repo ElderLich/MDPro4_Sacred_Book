@@ -21,14 +21,14 @@ Checks whether c can hold counters of countertype.
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3640`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3692`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **9** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Card.IsCanHaveCounter`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Card.IsCanHaveCounter) with `Card.IsCanHaveCounter`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

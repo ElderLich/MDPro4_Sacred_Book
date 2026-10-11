@@ -20,19 +20,20 @@ Condition helper for effects that cannot be activated during the same turn their
 
 ## Source
 
-- `Utilities/utility.lua:802`
+- `Utilities/utility.lua:805`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **117** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Auxiliary.exccon`.
+- Detected in **118** indexed script(s).
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Auxiliary.exccon) with `Auxiliary.exccon`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
 | Vernusylph and the Changing Season | `37313338` | [Scripts/c37313338.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c37313338.lua) | 1 |
 | Clown Crew Malabarisme | `83232904` | [Scripts/c83232904.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c83232904.lua) | 1 |
+| Quick Summon | `10086952` | [Scripts/c10086952.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c10086952.lua) | 1 |
 | Psychic Arsenal | `16238373` | [Scripts/c16238373.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c16238373.lua) | 1 |
 | Thunder Dragon Fusion | `95238394` | [Scripts/c95238394.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c95238394.lua) | 1 |
 | Witchcrafter Masterpiece | `55072170` | [Scripts/c55072170.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c55072170.lua) | 1 |
@@ -54,8 +55,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Gagaga Illusion | `73496100` | [Scripts/c73496100.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c73496100.lua) | 1 |
 | Magician Navigation | `7922915` | [Scripts/c7922915.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c7922915.lua) | 1 |
 | Ragnaraika Hunting Dance | `89824842` | [Scripts/c89824842.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c89824842.lua) | 1 |
-| Burnout | `25669282` | [Scripts/c25669282.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c25669282.lua) | 1 |
-| ...and 93 more |  |  |  |
+| ...and 94 more |  |  |  |
 
 ## Script Examples
 
@@ -83,14 +83,14 @@ Source: [Scripts/c83232904.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/
 	e2:SetTarget(s.thtg)
 ```
 
-### Psychic Arsenal (`16238373`)
+### Quick Summon (`10086952`)
 
-Source: [Scripts/c16238373.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c16238373.lua)
+Source: [Scripts/c10086952.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c10086952.lua)
 
 ```lua
-	e2:SetProperty(EFFECT_FLAG_CARD_TARGET)
-	e2:SetCountLimit(1,id+o)
-	e2:SetCondition(aux.exccon)
-	e2:SetCost(aux.bfgcost)
-	e2:SetTarget(s.tdtg)
+	e3:SetRange(LOCATION_GRAVE)
+	e3:SetCountLimit(1,id)
+	e3:SetCondition(aux.exccon)
+	e3:SetCost(aux.bfgcost)
+	e3:SetTarget(s.thtg)
 ```

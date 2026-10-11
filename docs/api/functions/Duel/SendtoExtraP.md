@@ -28,11 +28,12 @@ Sends cards to player-side Extra Deck face-up for reason and returns the number 
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **24** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Duel.SendtoExtraP`.
+- Detected in **25** indexed script(s).
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Duel.SendtoExtraP) with `Duel.SendtoExtraP`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
+| [Kewl Tune Crackle](/examples/cards/39576656) | `39576656` | [Scripts/c39576656.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c39576656.lua) | 1 |
 | Dreaming Nemleria | `70155677` | [Scripts/c70155677.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c70155677.lua) | 1 |
 | Performage Ball Balancer | `92530005` | [Scripts/c92530005.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c92530005.lua) | 1 |
 | Pendulum Witch | `43502497` | [Scripts/c43502497.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c43502497.lua) | 1 |
@@ -56,9 +57,21 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Draco Face-Off | `14733538` | [Scripts/c14733538.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c14733538.lua) | 1 |
 | Archfiend Strategy | `90764871` | [Scripts/c90764871.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c90764871.lua) | 1 |
 | Abyss Actors Back Stage | `59057953` | [Scripts/c59057953.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c59057953.lua) | 1 |
-| Pendulum Treasure | `26237713` | [Scripts/c26237713.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c26237713.lua) | 1 |
+| ...and 1 more |  |  |  |
 
 ## Script Examples
+
+### Kewl Tune Crackle (`39576656`)
+
+Source: [Scripts/c39576656.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c39576656.lua)
+
+```lua
+	local dg=g:Filter(aux.NOT(s.retexfilter),nil)
+	if #pg>0 then
+		Duel.SendtoExtraP(pg,nil,REASON_EFFECT)
+	end
+	if #dg>0 then
+```
 
 ### Dreaming Nemleria (`70155677`)
 
@@ -82,16 +95,4 @@ Source: [Scripts/c92530005.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/
 			Duel.SendtoExtraP(g,nil,REASON_EFFECT)
 		end
 	elseif sel==2 then
-```
-
-### Pendulum Witch (`43502497`)
-
-Source: [Scripts/c43502497.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c43502497.lua)
-
-```lua
-	local tg=Duel.SelectMatchingCard(tp,s.filter,tp,LOCATION_DECK,0,1,1,nil,race)
-	if #tg>0 then
-		Duel.SendtoExtraP(tg,nil,REASON_EFFECT)
-	end
-end
 ```

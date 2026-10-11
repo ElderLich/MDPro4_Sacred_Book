@@ -20,14 +20,14 @@ Returns the Equip Cards currently equipped to c as a Group.
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3520`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3572`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **63** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Card.GetEquipGroup`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Card.GetEquipGroup) with `Card.GetEquipGroup`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

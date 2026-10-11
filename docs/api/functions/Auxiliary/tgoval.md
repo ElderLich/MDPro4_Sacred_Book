@@ -19,14 +19,14 @@ It returns true when the reason player rp is the opponent of e's handler player.
 
 ## Source
 
-- `Utilities/utility.lua:836`
+- `Utilities/utility.lua:839`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **234** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Auxiliary.tgoval`.
+- Detected in **237** indexed script(s).
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Auxiliary.tgoval) with `Auxiliary.tgoval`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
@@ -50,11 +50,11 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Supreme King Z-ARC | `13331639` | [Scripts/c13331639.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c13331639.lua) | 1 |
 | Noble Arms - Excaliburn | `46008667` | [Scripts/c46008667.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c46008667.lua) | 1 |
 | Drytron Meteonis Draconids | `69815951` | [Scripts/c69815951.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c69815951.lua) | 1 |
-| Darklord Eveningstar | `10136446` | [Scripts/c10136446.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c10136446.lua) | 1 |
 | DoomZ Command "D.O.O.M.D.U.R.G." | `68831625` | [Scripts/c68831625.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c68831625.lua) | 1 |
 | Guardian Chimera | `11321089` | [Scripts/c11321089.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c11321089.lua) | 1 |
 | Drytron Meteonis Quadrantids | `95209656` | [Scripts/c95209656.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c95209656.lua) | 1 |
-| ...and 210 more |  |  |  |
+| Darklord Eveningstar | `10136446` | [Scripts/c10136446.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c10136446.lua) | 1 |
+| ...and 213 more |  |  |  |
 
 ## Script Examples
 

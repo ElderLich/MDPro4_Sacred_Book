@@ -20,14 +20,14 @@ Returns the location c would be redirected to by leave-field effects for REASON_
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3478`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3527`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **4** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Card.GetLeaveFieldDest`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Card.GetLeaveFieldDest) with `Card.GetLeaveFieldDest`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

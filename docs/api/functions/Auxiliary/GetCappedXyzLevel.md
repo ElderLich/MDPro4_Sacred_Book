@@ -16,14 +16,14 @@ Returns c's current Level, capped at MAX_XYZ_LEVEL.
 
 ## Source
 
-- `Utilities/utility.lua:1528`
+- `Utilities/utility.lua:1531`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **1** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Auxiliary.GetCappedXyzLevel`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Auxiliary.GetCappedXyzLevel) with `Auxiliary.GetCappedXyzLevel`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

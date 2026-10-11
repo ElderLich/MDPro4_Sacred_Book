@@ -21,14 +21,14 @@ Checks whether c has a Level greater than 0 and less than or equal to level.
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3615`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3667`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **797** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Card.IsLevelBelow`.
+- Detected in **803** indexed script(s).
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Card.IsLevelBelow) with `Card.IsLevelBelow`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
@@ -56,7 +56,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Abyss Actor - Mellow Madonna | `78310590` | [Scripts/c78310590.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c78310590.lua) | 1 |
 | Clear Wing Fast Dragon | `90036274` | [Scripts/c90036274.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c90036274.lua) | 1 |
 | Spirit Poacher | `85150300` | [Scripts/c85150300.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c85150300.lua) | 1 |
-| ...and 773 more |  |  |  |
+| ...and 779 more |  |  |  |
 
 ## Script Examples
 

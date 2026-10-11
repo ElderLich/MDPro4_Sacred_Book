@@ -23,8 +23,8 @@ Sets player's LP to lp, clamping negative lp values to 0, and sends the LP updat
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **82** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Duel.SetLP`.
+- Detected in **84** indexed script(s).
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Duel.SetLP) with `Duel.SetLP`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
@@ -47,12 +47,12 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Evil Eyes Unleashed | `8775395` | [Scripts/c8775395.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c8775395.lua) | 1 |
 | Victorica, Angel of Bravery | `79928401` | [Scripts/c79928401.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c79928401.lua) | 1 |
 | Evil Eye of Selene | `44133040` | [Scripts/c44133040.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c44133040.lua) | 1 |
+| Number C104: Umbral Horror Masquerade Victory | `42396591` | [Scripts/c42396591.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c42396591.lua) | 1 |
 | Kozmotown | `67237709` | [Scripts/c67237709.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c67237709.lua) | 1 |
 | Number C6: Chronomaly Chaos Atlandis | `6387204` | [Scripts/c6387204.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c6387204.lua) | 1 |
 | Performapal Popperup | `11481610` | [Scripts/c11481610.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c11481610.lua) | 1 |
 | Message in a Bottle | `97433739` | [Scripts/c97433739.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c97433739.lua) | 1 |
-| Earthbound Prison | `71089030` | [Scripts/c71089030.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c71089030.lua) | 1 |
-| ...and 58 more |  |  |  |
+| ...and 60 more |  |  |  |
 
 ## Script Examples
 

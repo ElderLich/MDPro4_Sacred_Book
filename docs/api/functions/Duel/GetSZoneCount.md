@@ -32,14 +32,15 @@ The additional use_player and reason parameters are used by effects that restric
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **17** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Duel.GetSZoneCount`.
+- Detected in **18** indexed script(s).
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Duel.GetSZoneCount) with `Duel.GetSZoneCount`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
 | Hrimnir the Divine Follower | `49904658` | [Scripts/c49904658.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c49904658.lua) | 1 |
 | Paleozoic Cambroraster | `36346532` | [Scripts/c36346532.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c36346532.lua) | 1 |
 | Parametalfoes Melcaster | `10024317` | [Scripts/c10024317.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c10024317.lua) | 1 |
+| Zenetmes Nekhbet | `10884847` | [Scripts/c10884847.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c10884847.lua) | 1 |
 | Amazement Precious Park | `33773528` | [Scripts/c33773528.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c33773528.lua) | 1 |
 | The Weather Painter Sun | `54895237` | [Scripts/c54895237.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c54895237.lua) | 1 |
 | Sunvine Shrine | `27946124` | [Scripts/c27946124.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c27946124.lua) | 1 |

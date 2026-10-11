@@ -22,14 +22,14 @@ Link Monsters and non-monsters return false, and unknown or negative DEF also re
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3623`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3675`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **46** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Card.IsDefenseBelow`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Card.IsDefenseBelow) with `Card.IsDefenseBelow`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

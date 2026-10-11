@@ -18,17 +18,18 @@ Adds an EFFECT_COUNTER_LIMIT for countertype to c with value limit.
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3635`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3687`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **35** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Card.SetCounterLimit`.
+- Detected in **36** indexed script(s).
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Card.SetCounterLimit) with `Card.SetCounterLimit`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
+| Reversal Box | `2606417` | [Scripts/c2606417.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c2606417.lua) | 1 |
 | Performapal Turn Trooper | `220414` | [Scripts/c220414.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c220414.lua) | 1 |
 | The Deal of Destiny | `32245230` | [Scripts/c32245230.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c32245230.lua) | 1 |
 | Forge a New Future | `27104921` | [Scripts/c27104921.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c27104921.lua) | 1 |
@@ -52,10 +53,21 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Seed Cannon | `81524977` | [Scripts/c81524977.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c81524977.lua) | 1 |
 | Six Samurai United | `72345736` | [Scripts/c72345736.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c72345736.lua) | 1 |
 | Summon Over | `48015771` | [Scripts/c48015771.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c48015771.lua) | 1 |
-| Shien's Daredevil | `98162021` | [Scripts/c98162021.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c98162021.lua) | 1 |
-| ...and 11 more |  |  |  |
+| ...and 12 more |  |  |  |
 
 ## Script Examples
+
+### Reversal Box (`2606417`)
+
+Source: [Scripts/c2606417.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c2606417.lua)
+
+```lua
+	aux.AddCodeList(c,40235813)
+	c:EnableCounterPermit(0x76)
+	c:SetCounterLimit(0x76,6)
+	--Activate
+	local e1=Effect.CreateEffect(c)
+```
 
 ### Performapal Turn Trooper (`220414`)
 
@@ -79,16 +91,4 @@ function c32245230.initial_effect(c)
 	c:SetCounterLimit(0x5e,1)
 	--Activate
 	local e0=Effect.CreateEffect(c)
-```
-
-### Forge a New Future (`27104921`)
-
-Source: [Scripts/c27104921.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c27104921.lua)
-
-```lua
-function c27104921.initial_effect(c)
-	c:EnableCounterPermit(0x61)
-	c:SetCounterLimit(0x61,3)
-	--activate
-	local e1=Effect.CreateEffect(c)
 ```

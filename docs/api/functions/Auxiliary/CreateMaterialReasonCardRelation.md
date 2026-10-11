@@ -17,14 +17,14 @@ Registers an EVENT_BE_MATERIAL continuous effect on c so that, when c is used as
 
 ## Source
 
-- `Utilities/utility.lua:859`
+- `Utilities/utility.lua:862`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **12** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Auxiliary.CreateMaterialReasonCardRelation`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Auxiliary.CreateMaterialReasonCardRelation) with `Auxiliary.CreateMaterialReasonCardRelation`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

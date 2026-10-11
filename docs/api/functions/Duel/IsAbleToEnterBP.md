@@ -24,7 +24,7 @@ The core requires the duel to allow first-turn attacks or not be turn 1, the cur
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **75** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Duel.IsAbleToEnterBP`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Duel.IsAbleToEnterBP) with `Duel.IsAbleToEnterBP`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

@@ -20,18 +20,20 @@ Returns the local column index for Monster Zone sequence seq from that controlle
 
 ## Source
 
-- `Utilities/utility.lua:718`
+- `Utilities/utility.lua:721`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **11** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Auxiliary.MZoneSequence`.
+- Detected in **13** indexed script(s).
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Auxiliary.MZoneSequence) with `Auxiliary.MZoneSequence`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| S-Force Signus | `19951423` | [Scripts/c19951423.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c19951423.lua) | 1 |
+| Distrust Paranoia | `81965543` | [Scripts/c81965543.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c81965543.lua) | 2 |
+| S-Force Signify | `19951423` | [Scripts/c19951423.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c19951423.lua) | 1 |
+| Angelechy Enlisted | `81797573` | [Scripts/c81797573.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c81797573.lua) | 3 |
 | World Legacy's Secret | `98935722` | [Scripts/c98935722.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c98935722.lua) | 2 |
 | Vaylantz World - Konig Wissen | `75952542` | [Scripts/c75952542.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c75952542.lua) | 1 |
 | Scareclaw Reichheart | `82361809` | [Scripts/c82361809.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c82361809.lua) | 1 |
@@ -45,7 +47,19 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 ## Script Examples
 
-### S-Force Signus (`19951423`)
+### Distrust Paranoia (`81965543`)
+
+Source: [Scripts/c81965543.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c81965543.lua)
+
+```lua
+end
+function s.efilter(e,te)
+	local seq1=aux.MZoneSequence(e:GetHandler():GetSequence())
+	local seq=Duel.GetChainInfo(0,CHAININFO_TRIGGERING_SEQUENCE)
+	if (te:GetActivateLocation()&LOCATION_ONFIELD)==0 then return false end
+```
+
+### S-Force Signify (`19951423`)
 
 Source: [Scripts/c19951423.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c19951423.lua)
 
@@ -57,26 +71,14 @@ function s.cfilter(c,seq2)
 end
 ```
 
-### World Legacy's Secret (`98935722`)
+### Angelechy Enlisted (`81797573`)
 
-Source: [Scripts/c98935722.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c98935722.lua)
+Source: [Scripts/c81797573.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c81797573.lua)
 
 ```lua
 end
-function c98935722.cfilter(c,seq2)
+function s.rmfilter(c,ec,tp)
 	local seq1=aux.MZoneSequence(c:GetSequence())
-	return c:IsFaceup() and c:IsSetCard(0x10c) and seq1==4-seq2
-end
-```
-
-### Vaylantz World - Konig Wissen (`75952542`)
-
-Source: [Scripts/c75952542.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c75952542.lua)
-
-```lua
-end
-function c75952542.cfilter(c,seq)
-	return aux.MZoneSequence(c:GetSequence())==4-seq
-end
-function c75952542.sttg(e,tp,eg,ep,ev,re,r,rp,chk,chkc)
+	local seq2=aux.MZoneSequence(ec:GetSequence())
+	local seq3=4-seq2
 ```

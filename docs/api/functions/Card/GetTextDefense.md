@@ -20,14 +20,14 @@ Returns c's printed/stored DEF value, or 0 while c has no-Level status.
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3448`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3496`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **18** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Card.GetTextDefense`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Card.GetTextDefense) with `Card.GetTextDefense`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

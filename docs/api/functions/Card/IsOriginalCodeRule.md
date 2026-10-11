@@ -24,14 +24,14 @@ Nil code arguments are skipped. For double-code cards, the core checks both rule
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3482`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3531`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **56** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Card.IsOriginalCodeRule`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Card.IsOriginalCodeRule) with `Card.IsOriginalCodeRule`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

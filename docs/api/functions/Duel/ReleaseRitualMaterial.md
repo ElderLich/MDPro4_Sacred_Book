@@ -25,7 +25,7 @@ Call Card.SetMaterial before this function, then Special Summon with SUMMON_TYPE
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **36** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Duel.ReleaseRitualMaterial`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Duel.ReleaseRitualMaterial) with `Duel.ReleaseRitualMaterial`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

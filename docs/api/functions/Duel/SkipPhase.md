@@ -28,7 +28,7 @@ The phase must be one of PHASE_DRAW, PHASE_STANDBY, PHASE_MAIN1, PHASE_BATTLE, P
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **56** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Duel.SkipPhase`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Duel.SkipPhase) with `Duel.SkipPhase`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
@@ -37,7 +37,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Doll House | `67331360` | [Scripts/c67331360.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c67331360.lua) | 1 |
 | Numeron Wall | `42352091` | [Scripts/c42352091.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c42352091.lua) | 1 |
 | Red Nova Dragon/Assault Mode | `82323997` | [Scripts/c82323997.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c82323997.lua) | 1 |
-| Melffy Statues Game | `25687946` | [Scripts/c25687946.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c25687946.lua) | 3 |
+| Melffy Footsteps | `25687946` | [Scripts/c25687946.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c25687946.lua) | 3 |
 | Cosmic Blazar Dragon | `21123811` | [Scripts/c21123811.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c21123811.lua) | 1 |
 | Sangen Kaiho | `25388971` | [Scripts/c25388971.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c25388971.lua) | 1 |
 | Champion's Pulse | `46001505` | [Scripts/c46001505.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c46001505.lua) | 1 |

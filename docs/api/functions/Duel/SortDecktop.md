@@ -25,8 +25,8 @@ Both players must be valid and count must be at least 1. If count is larger than
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **59** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Duel.SortDecktop`.
+- Detected in **62** indexed script(s).
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Duel.SortDecktop) with `Duel.SortDecktop`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
@@ -47,14 +47,14 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Morphtronic Smartfon | `15521027` | [Scripts/c15521027.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c15521027.lua) | 1 |
 | Pot of Prosperity | `84211599` | [Scripts/c84211599.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c84211599.lua) | 1 |
 | Way Where There's a Will | `91880660` | [Scripts/c91880660.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c91880660.lua) | 1 |
+| Invincible Demise Lord | `71108540` | [Scripts/c71108540.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c71108540.lua) | 1 |
 | Sylvan Lotuswain | `73136204` | [Scripts/c73136204.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c73136204.lua) | 2 |
 | Recardination | `73271204` | [Scripts/c73271204.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c73271204.lua) | 1 |
 | Dark Magical Circle | `47222536` | [Scripts/c47222536.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c47222536.lua) | 2 |
 | SPYRAL GEAR - Drone | `4474060` | [Scripts/c4474060.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c4474060.lua) | 1 |
 | Orea, the Sylvan High Arbiter | `95239444` | [Scripts/c95239444.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c95239444.lua) | 2 |
 | Adamancipator Risen - Dragite | `9464441` | [Scripts/c9464441.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c9464441.lua) | 1 |
-| Votis | `75311421` | [Scripts/c75311421.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c75311421.lua) | 1 |
-| ...and 35 more |  |  |  |
+| ...and 38 more |  |  |  |
 
 ## Script Examples
 

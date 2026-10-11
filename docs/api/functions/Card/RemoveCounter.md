@@ -25,19 +25,19 @@ When countertype is 0, the core clears every counter on c and returns no Lua val
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3632`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3684`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **28** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Card.RemoveCounter`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Card.RemoveCounter) with `Card.RemoveCounter`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
 | [El Shaddoll Apkallone](/examples/cards/50907446) | `50907446` | [Scripts/c50907446.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c50907446.lua) | 1 |
-| [El Shaddoll Meshachrer](/examples/cards/32467459) | `32467459` | [Scripts/c32467459.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c32467459.lua) | 1 |
+| El Shaddoll Meshachrer | `32467459` | [Scripts/c32467459.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c32467459.lua) | 1 |
 | Zebufera, Vaalmonican Hallow Heathen | `2815176` | [Scripts/c2815176.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c2815176.lua) | 1 |
 | Limit Code | `86607583` | [Scripts/c86607583.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c86607583.lua) | 1 |
 | Enneapolis | `17621695` | [Scripts/c17621695.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c17621695.lua) | 1 |

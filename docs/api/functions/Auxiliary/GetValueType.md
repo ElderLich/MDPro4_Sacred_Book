@@ -27,7 +27,7 @@ Returns Lua's type string for ordinary values, or Card, Group, or Effect for tho
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **4** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Auxiliary.GetValueType`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Auxiliary.GetValueType) with `Auxiliary.GetValueType`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

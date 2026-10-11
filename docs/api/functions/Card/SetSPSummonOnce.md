@@ -18,14 +18,14 @@ Cards with the same nonzero spsummon_code share the limit for each player. The b
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3664`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3716`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **76** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Card.SetSPSummonOnce`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Card.SetSPSummonOnce) with `Card.SetSPSummonOnce`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

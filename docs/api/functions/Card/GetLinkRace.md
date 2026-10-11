@@ -21,14 +21,14 @@ Returns the Race c uses as Link Material for player, defaulting to the current r
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3441`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3489`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **15** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Card.GetLinkRace`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Card.GetLinkRace) with `Card.GetLinkRace`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

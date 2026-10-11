@@ -21,14 +21,14 @@ Non-Xyz cards return 0. Xyz Monsters outside the Monster Zone return their origi
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3409`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3457`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **99** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Card.GetRank`.
+- Detected in **101** indexed script(s).
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Card.GetRank) with `Card.GetRank`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
@@ -45,6 +45,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Number 93: Utopia Kaiser | `23187256` | [Scripts/c23187256.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c23187256.lua) | 1 |
 | The Phantom Knights' Rank-Up-Magic Launch | `3298689` | [Scripts/c3298689.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c3298689.lua) | 3 |
 | Infernoid Piaty | `25811989` | [Scripts/c25811989.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c25811989.lua) | 1 |
+| V Umbral Horror | `39053882` | [Scripts/c39053882.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c39053882.lua) | 3 |
 | Chronomaly Esperanza Glyph | `50797682` | [Scripts/c50797682.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c50797682.lua) | 2 |
 | Rank-Up-Magic Argent Chaos Force | `94220427` | [Scripts/c94220427.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c94220427.lua) | 2 |
 | DoomZ Command "D.O.O.M.D.U.R.G." | `68831625` | [Scripts/c68831625.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c68831625.lua) | 1 |
@@ -55,8 +56,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Infernoid Seitsemas | `51316684` | [Scripts/c51316684.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c51316684.lua) | 1 |
 | Rank-Up-Magic Barian's Force | `47660516` | [Scripts/c47660516.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c47660516.lua) | 2 |
 | Rank-Down-Magic Numeron Fall | `71345905` | [Scripts/c71345905.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c71345905.lua) | 2 |
-| Outrigger Extension | `96462121` | [Scripts/c96462121.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c96462121.lua) | 2 |
-| ...and 75 more |  |  |  |
+| ...and 77 more |  |  |  |
 
 ## Script Examples
 

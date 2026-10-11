@@ -25,7 +25,7 @@ The helper adds equipped-card destruction substitution, an EFFECT_UNION_LIMIT us
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **21** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Auxiliary.EnableUnionAttribute`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Auxiliary.EnableUnionAttribute) with `Auxiliary.EnableUnionAttribute`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

@@ -23,7 +23,7 @@ Enables the supplied core global_flag bit for the Duel and returns no Lua value.
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **47** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Duel.EnableGlobalFlag`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Duel.EnableGlobalFlag) with `Duel.EnableGlobalFlag`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

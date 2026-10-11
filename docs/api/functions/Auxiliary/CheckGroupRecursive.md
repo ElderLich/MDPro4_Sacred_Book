@@ -22,7 +22,7 @@ Internal recursive helper for Group.CheckSubGroup. It tries adding c to sg, resp
 
 ## Source
 
-- `Utilities/utility.lua:1196`
+- `Utilities/utility.lua:1199`
 
 ## Used By
 

@@ -21,14 +21,14 @@ Checks whether c can be Fusion Summoned as a Fusion Monster for summon type sum_
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3577`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3629`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **1** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Card.IsFusionSummonableCard`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Card.IsFusionSummonableCard) with `Card.IsFusionSummonableCard`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

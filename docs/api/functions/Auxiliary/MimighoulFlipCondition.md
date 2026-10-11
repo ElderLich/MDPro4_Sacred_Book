@@ -27,14 +27,14 @@ Returns true during either Main Phase.
 
 ## Source
 
-- `Utilities/utility.lua:1990`
+- `Utilities/utility.lua:2002`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **7** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Auxiliary.MimighoulFlipCondition`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Auxiliary.MimighoulFlipCondition) with `Auxiliary.MimighoulFlipCondition`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

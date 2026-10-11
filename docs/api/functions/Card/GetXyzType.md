@@ -20,7 +20,7 @@ Returns c's Xyz Material Type mask used by Xyz Material checks.
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3406`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3454`
 
 ## Used By
 

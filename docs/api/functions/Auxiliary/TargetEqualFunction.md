@@ -29,7 +29,7 @@ Returns an effect target-value function that calls f on the target card and extr
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **2** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Auxiliary.TargetEqualFunction`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Auxiliary.TargetEqualFunction) with `Auxiliary.TargetEqualFunction`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

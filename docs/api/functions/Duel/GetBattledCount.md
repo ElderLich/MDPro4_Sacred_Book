@@ -27,7 +27,7 @@ Returns how many battles player has conducted in the current Battle Phase tracki
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **1** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Duel.GetBattledCount`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Duel.GetBattledCount) with `Duel.GetBattledCount`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

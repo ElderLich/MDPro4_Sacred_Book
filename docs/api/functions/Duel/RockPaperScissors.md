@@ -27,7 +27,7 @@ Runs the Rock-Paper-Scissors selector and returns the winning player; repeat def
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **1** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Duel.RockPaperScissors`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Duel.RockPaperScissors) with `Duel.RockPaperScissors`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

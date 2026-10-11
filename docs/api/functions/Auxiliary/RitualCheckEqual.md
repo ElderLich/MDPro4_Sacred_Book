@@ -29,7 +29,7 @@ Checks whether g's Ritual Levels exactly equal lv for c.
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **2** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Auxiliary.RitualCheckEqual`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Auxiliary.RitualCheckEqual) with `Auxiliary.RitualCheckEqual`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

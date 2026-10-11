@@ -28,12 +28,13 @@ Lets player declare count Races from available and returns the selected RACE_* b
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **27** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Duel.AnnounceRace`.
+- Detected in **28** indexed script(s).
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Duel.AnnounceRace) with `Duel.AnnounceRace`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
 | [Surprise Fusion](/examples/cards/35167375) | `35167375` | [Scripts/c35167375.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c35167375.lua) | 2 |
+| [Yomagna the Fire Phantom](/examples/cards/17350692) | `17350692` | [Scripts/c17350692.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c17350692.lua) | 1 |
 | Theorealize | `48739627` | [Scripts/c48739627.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c48739627.lua) | 2 |
 | Spiritual Art Familiars | `45538320` | [Scripts/c45538320.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c45538320.lua) | 2 |
 | Archnemeses Eschatos | `33212663` | [Scripts/c33212663.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c33212663.lua) | 1 |
@@ -56,8 +57,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Shien's Advisor | `98126725` | [Scripts/c98126725.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c98126725.lua) | 1 |
 | Quantum Cat | `87772572` | [Scripts/c87772572.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c87772572.lua) | 1 |
 | Swamp Mirrorer | `50277973` | [Scripts/c50277973.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c50277973.lua) | 1 |
-| Dimensional Allotrope Varis | `52254878` | [Scripts/c52254878.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c52254878.lua) | 1 |
-| ...and 3 more |  |  |  |
+| ...and 4 more |  |  |  |
 
 ## Script Examples
 
@@ -73,6 +73,18 @@ Source: [Scripts/c35167375.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/
 		race=Duel.AnnounceRace(tp,1,RACE_ALL)
 ```
 
+### Yomagna the Fire Phantom (`17350692`)
+
+Source: [Scripts/c17350692.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c17350692.lua)
+
+```lua
+	if chk==0 then return true end
+	Duel.Hint(HINT_SELECTMSG,tp,HINTMSG_RACE)
+	local race=Duel.AnnounceRace(tp,1,RACE_ALL&~e:GetHandler():GetRace())
+	e:SetLabel(race)
+end
+```
+
 ### Theorealize (`48739627`)
 
 Source: [Scripts/c48739627.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c48739627.lua)
@@ -81,18 +93,6 @@ Source: [Scripts/c48739627.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/
 	Duel.Hint(HINT_SELECTMSG,tp,HINTMSG_RACE)
 	if ATTRIBUTE_ALL&~tc:GetAttribute()==0 then
 		race=Duel.AnnounceRace(tp,1,RACE_ALL&~tc:GetRace())
-	else
-		race=Duel.AnnounceRace(tp,1,RACE_ALL)
-```
-
-### Spiritual Art Familiars (`45538320`)
-
-Source: [Scripts/c45538320.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c45538320.lua)
-
-```lua
-	Duel.Hint(HINT_SELECTMSG,tp,HINTMSG_RACE)
-	if ATTRIBUTE_ALL&~c:GetAttribute()==0 then
-		race=Duel.AnnounceRace(tp,1,RACE_ALL&~c:GetRace())
 	else
 		race=Duel.AnnounceRace(tp,1,RACE_ALL)
 ```

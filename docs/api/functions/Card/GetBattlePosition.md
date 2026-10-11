@@ -20,14 +20,14 @@ Returns c's temporary battle-position snapshot.
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3468`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3517`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **24** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Card.GetBattlePosition`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Card.GetBattlePosition) with `Card.GetBattlePosition`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

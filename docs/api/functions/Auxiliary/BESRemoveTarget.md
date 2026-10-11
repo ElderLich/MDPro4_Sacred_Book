@@ -24,7 +24,7 @@ Sets destruction operation info for the shared B.E.S. maintenance effect when th
 
 ## Source
 
-- `Utilities/utility.lua:1807`
+- `Utilities/utility.lua:1812`
 
 ## Used By
 

@@ -32,13 +32,14 @@ When desc is supplied, the core shows it as a selection hint. The return value i
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **8** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Duel.SelectField`.
+- Detected in **9** indexed script(s).
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Duel.SelectField) with `Duel.SelectField`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
 | Cynet Circuit | `82886276` | [Scripts/c82886276.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c82886276.lua) | 1 |
 | Solving for Pendulum | `5208118` | [Scripts/c5208118.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c5208118.lua) | 1 |
+| Zenet Cataract | `12555008` | [Scripts/c12555008.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c12555008.lua) | 1 |
 | Springans Ship - Exblowrer | `62941499` | [Scripts/c62941499.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c62941499.lua) | 1 |
 | Codebreaker Virus Berserker | `48736598` | [Scripts/c48736598.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c48736598.lua) | 1 |
 | Vaylantz Buster Baron | `14418464` | [Scripts/c14418464.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c14418464.lua) | 1 |
@@ -72,14 +73,14 @@ Source: [Scripts/c5208118.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/b
 		Duel.MoveSequence(tc,nseq)
 ```
 
-### Springans Ship - Exblowrer (`62941499`)
+### Zenet Cataract (`12555008`)
 
-Source: [Scripts/c62941499.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c62941499.lua)
+Source: [Scripts/c12555008.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c12555008.lua)
 
 ```lua
-	end
-	Duel.Hint(HINT_SELECTMSG,tp,HINTMSG_TARGET)
-	local flag=Duel.SelectField(tp,1,0,LOCATION_ONFIELD,filter)
-	Duel.Hint(HINT_ZONE,tp,flag)
-	local seq=math.log(flag>>16,2)
+	if chk==0 then return ct>0 end
+	local diss={}
+	local dis=Duel.SelectField(tp,math.min(ct,5),0,LOCATION_MZONE,0x60<<16)
+	for i=0,4 do
+		if dis&(1<<(i+16))~=0 then
 ```

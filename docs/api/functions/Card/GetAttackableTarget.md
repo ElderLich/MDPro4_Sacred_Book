@@ -21,14 +21,14 @@ Returns the Group of cards c can attack and a boolean indicating whether c can a
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3657`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3709`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **4** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Card.GetAttackableTarget`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Card.GetAttackableTarget) with `Card.GetAttackableTarget`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

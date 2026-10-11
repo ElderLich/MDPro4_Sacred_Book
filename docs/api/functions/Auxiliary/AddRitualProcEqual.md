@@ -30,7 +30,7 @@ Creates a Ritual Summon activation effect whose selected materials' Ritual Level
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **1** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Auxiliary.AddRitualProcEqual`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Auxiliary.AddRitualProcEqual) with `Auxiliary.AddRitualProcEqual`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

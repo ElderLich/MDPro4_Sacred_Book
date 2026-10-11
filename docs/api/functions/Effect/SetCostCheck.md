@@ -24,7 +24,7 @@ Sets e's cost-check flag to b.
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **4** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Effect.SetCostCheck`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Effect.SetCostCheck) with `Effect.SetCostCheck`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

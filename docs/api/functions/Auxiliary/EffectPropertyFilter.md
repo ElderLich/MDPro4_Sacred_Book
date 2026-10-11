@@ -20,21 +20,23 @@ Returns a predicate that checks whether an Effect has property flag.
 
 ## Source
 
-- `Utilities/utility.lua:2020`
+- `Utilities/utility.lua:2032`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **9** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Auxiliary.EffectPropertyFilter`.
+- Detected in **11** indexed script(s).
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Auxiliary.EffectPropertyFilter) with `Auxiliary.EffectPropertyFilter`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
 | Arcana Force EX - The Chaos Ruler | `12686296` | [Scripts/c12686296.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c12686296.lua) | 1 |
 | Desperado Barrel Dragon | `76728962` | [Scripts/c76728962.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c76728962.lua) | 1 |
+| Armor Wizard Pazoo | `56779694` | [Scripts/c56779694.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c56779694.lua) | 1 |
 | Heosvarog the Mechanical Dawn | `8963089` | [Scripts/c8963089.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c8963089.lua) | 1 |
 | Goddess of the Two Sides | `50915474` | [Scripts/c50915474.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c50915474.lua) | 1 |
+| Candelato, the Beast of Light | `8315896` | [Scripts/c8315896.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c8315896.lua) | 1 |
 | Arcana Force XIX - The Sun | `39761418` | [Scripts/c39761418.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c39761418.lua) | 2 |
 | Arcana Spread | `76302448` | [Scripts/c76302448.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c76302448.lua) | 2 |
 | Arcana Reading | `11819473` | [Scripts/c11819473.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c11819473.lua) | 1 |
@@ -67,14 +69,14 @@ end
 function c76728962.thtg(e,tp,eg,ep,ev,re,r,rp,chk)
 ```
 
-### Heosvarog the Mechanical Dawn (`8963089`)
+### Armor Wizard Pazoo (`56779694`)
 
-Source: [Scripts/c8963089.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c8963089.lua)
+Source: [Scripts/c56779694.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c56779694.lua)
 
 ```lua
 end
-function s.thfilter(c)
-	return c:IsEffectProperty(aux.EffectPropertyFilter(EFFECT_FLAG_FUSION_SUMMON)) and c:IsAbleToHand()
+function s.disfilter(c)
+	return c:IsFaceup() and c:IsEffectProperty(aux.EffectPropertyFilter(EFFECT_FLAG_DICE))
 end
-function s.thop2(e,tp,eg,ep,ev,re,r,rp)
+function s.discon(e,tp,eg,ep,ev,re,r,rp)
 ```

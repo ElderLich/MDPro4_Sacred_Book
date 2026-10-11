@@ -40,14 +40,14 @@ The return value is a count, not a boolean. Compare it with 0 when checking whet
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3556`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3608`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **466** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Card.GetFlagEffect`.
+- Detected in **474** indexed script(s).
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Card.GetFlagEffect) with `Card.GetFlagEffect`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
@@ -75,7 +75,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | All-Eyes Phantom Dragon | `70335319` | [Scripts/c70335319.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c70335319.lua) | 1 |
 | Darkuriboh | `1035143` | [Scripts/c1035143.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c1035143.lua) | 1 |
 | Arcana Force EX - The Light Ruler | `5861892` | [Scripts/c5861892.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c5861892.lua) | 1 |
-| ...and 442 more |  |  |  |
+| ...and 450 more |  |  |  |
 
 ## Script Examples
 

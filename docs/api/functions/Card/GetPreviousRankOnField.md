@@ -20,14 +20,14 @@ Returns the Rank value c had while it was previously on the field.
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3452`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3501`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **1** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Card.GetPreviousRankOnField`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Card.GetPreviousRankOnField) with `Card.GetPreviousRankOnField`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

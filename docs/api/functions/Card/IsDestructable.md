@@ -22,25 +22,26 @@ Without e, the core only rejects Xyz Materials and cards already in the GY or ba
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3574`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3626`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **87** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Card.IsDestructable`.
+- Detected in **89** indexed script(s).
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Card.IsDestructable) with `Card.IsDestructable`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| [Astrograph Sorcerer, the Star Magician](/examples/cards/48171151) | `48171151` | [Scripts/c48171151.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c48171151.lua) | 1 |
+| [Astrograph Sorcerer, the Starfrost Magician](/examples/cards/48171151) | `48171151` | [Scripts/c48171151.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c48171151.lua) | 1 |
 | [Camelot, Realm of Noble Knights and Noble Arms](/examples/cards/15635751) | `15635751` | [Scripts/c15635751.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c15635751.lua) | 1 |
 | Heavy Interlock | `20071842` | [Scripts/c20071842.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c20071842.lua) | 1 |
+| Sleepy Scapegoats | `3129527` | [Scripts/c3129527.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c3129527.lua) | 1 |
 | Sea Lancer | `22842214` | [Scripts/c22842214.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c22842214.lua) | 1 |
 | Dual Avatar Feet - Armored Un-Gyo | `7631534` | [Scripts/c7631534.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c7631534.lua) | 1 |
-| Unchained Enma Lord Yama | `94014327` | [Scripts/c94014327.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c94014327.lua) | 1 |
+| Unchained Firelord of Yama | `94014327` | [Scripts/c94014327.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c94014327.lua) | 1 |
 | Rapid Trigger | `67526112` | [Scripts/c67526112.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c67526112.lua) | 1 |
-| Odd-Eyes Pendulum Dragon of the Four Heavenly Dragons | `75787708` | [Scripts/c75787708.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c75787708.lua) | 1 |
+| Odd-Eyes Pendulum Dragon, Four Heavenly Dragons | `75787708` | [Scripts/c75787708.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c75787708.lua) | 1 |
 | Lost World | `17228908` | [Scripts/c17228908.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c17228908.lua) | 1 |
 | Fire King Sanctuary | `65305978` | [Scripts/c65305978.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c65305978.lua) | 1 |
 | Salamandra Fusion | `9102835` | [Scripts/c9102835.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c9102835.lua) | 1 |
@@ -52,16 +53,15 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Rokket Barrage | `53481938` | [Scripts/c53481938.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c53481938.lua) | 1 |
 | Underground Arachnid | `63465535` | [Scripts/c63465535.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c63465535.lua) | 1 |
 | Empire of Endymion | `34041788` | [Scripts/c34041788.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c34041788.lua) | 1 |
+| Garbage Golem | `28968609` | [Scripts/c28968609.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c28968609.lua) | 1 |
 | Abyss Actor - Sassy Rookie | `51028231` | [Scripts/c51028231.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c51028231.lua) | 1 |
 | Hollowrokket Dragon | `51548207` | [Scripts/c51548207.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c51548207.lua) | 1 |
 | ReSolfachord Dreamia | `92610868` | [Scripts/c92610868.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c92610868.lua) | 1 |
-| Gwenhwyfar, Queen of Noble Arms | `19748583` | [Scripts/c19748583.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c19748583.lua) | 1 |
-| Dragunity Senatus | `92868896` | [Scripts/c92868896.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c92868896.lua) | 1 |
-| ...and 63 more |  |  |  |
+| ...and 65 more |  |  |  |
 
 ## Script Examples
 
-### Astrograph Sorcerer, the Star Magician (`48171151`)
+### Astrograph Sorcerer, the Starfrost Magician (`48171151`)
 
 Source: [Scripts/c48171151.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c48171151.lua)
 

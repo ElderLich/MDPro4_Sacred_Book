@@ -36,7 +36,7 @@ end
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **19** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Duel.EquipComplete`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Duel.EquipComplete) with `Duel.EquipComplete`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

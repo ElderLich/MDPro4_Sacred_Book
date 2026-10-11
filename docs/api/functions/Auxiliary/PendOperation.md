@@ -34,7 +34,7 @@ It chooses the regular or extra Pendulum Summon option, computes hand, Extra Dec
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **1** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Auxiliary.PendOperation`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Auxiliary.PendOperation) with `Auxiliary.PendOperation`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

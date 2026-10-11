@@ -33,7 +33,7 @@ Extra arguments after ex are passed to f after the Card argument.
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **430** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Duel.SelectReleaseGroup`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Duel.SelectReleaseGroup) with `Duel.SelectReleaseGroup`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

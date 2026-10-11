@@ -20,14 +20,14 @@ Returns c's current reason card, or nil when no reason card is recorded.
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3463`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3512`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **157** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Card.GetReasonCard`.
+- Detected in **158** indexed script(s).
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Card.GetReasonCard) with `Card.GetReasonCard`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
@@ -43,6 +43,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Evil HERO Inferno Wing - Backfire | `59893882` | [Scripts/c59893882.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c59893882.lua) | 1 |
 | Grenosaurus Giga-Cannon | `34481518` | [Scripts/c34481518.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c34481518.lua) | 1 |
 | Shining Star Dragon | `75874514` | [Scripts/c75874514.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c75874514.lua) | 2 |
+| Number 104: Masquerade Vain | `16908882` | [Scripts/c16908882.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c16908882.lua) | 1 |
 | Deep Sea Prima Donna | `50793215` | [Scripts/c50793215.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c50793215.lua) | 1 |
 | Centaur Mina | `33129626` | [Scripts/c33129626.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c33129626.lua) | 2 |
 | Vampire Scarlet Scourge | `79523365` | [Scripts/c79523365.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c79523365.lua) | 1 |
@@ -54,8 +55,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | SPYRAL MISSION - Assault | `27642961` | [Scripts/c27642961.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c27642961.lua) | 1 |
 | Salamangreat Fennec | `49094491` | [Scripts/c49094491.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c49094491.lua) | 1 |
 | Gagaga Head | `67120578` | [Scripts/c67120578.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c67120578.lua) | 1 |
-| Guoglim, Spear of the Ghoti | `2405631` | [Scripts/c2405631.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c2405631.lua) | 1 |
-| ...and 133 more |  |  |  |
+| ...and 134 more |  |  |  |
 
 ## Script Examples
 

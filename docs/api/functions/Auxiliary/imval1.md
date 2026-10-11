@@ -21,14 +21,14 @@ Default value helper for EFFECT_CANNOT_BE_BATTLE_TARGET; it returns true when c 
 
 ## Source
 
-- `Utilities/utility.lua:820`
+- `Utilities/utility.lua:823`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **51** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Auxiliary.imval1`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Auxiliary.imval1) with `Auxiliary.imval1`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

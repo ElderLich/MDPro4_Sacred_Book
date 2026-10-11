@@ -24,14 +24,14 @@ reset defaults to RESETS_STANDARD when 0. count defaults to 1; phase resets with
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3569`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3621`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **25** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Card.CopyEffect`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Card.CopyEffect) with `Card.CopyEffect`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

@@ -22,14 +22,14 @@ For an original Monster Card in the Spell & Trap Zone, the core uses the card-da
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3486`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3538`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **87** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Card.IsFusionType`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Card.IsFusionType) with `Card.IsFusionType`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

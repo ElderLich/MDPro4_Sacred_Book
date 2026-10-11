@@ -29,8 +29,8 @@ minc and maxc can restrict the number of non-Tuner materials used by the procedu
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **74** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Duel.SynchroSummon`.
+- Detected in **77** indexed script(s).
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Duel.SynchroSummon) with `Duel.SynchroSummon`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
@@ -55,10 +55,10 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Magicolloidal Sol | `67694706` | [Scripts/c67694706.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c67694706.lua) | 1 |
 | Garden Rose Flora | `76524506` | [Scripts/c76524506.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c76524506.lua) | 1 |
 | X-Saber Bruno | `45462306` | [Scripts/c45462306.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c45462306.lua) | 1 |
+| Crystron Rion | `66938505` | [Scripts/c66938505.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c66938505.lua) | 1 |
 | Crystron Tristaros | `99471856` | [Scripts/c99471856.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c99471856.lua) | 1 |
 | Speedroid Gum Prize | `70939418` | [Scripts/c70939418.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c70939418.lua) | 1 |
-| Shooting Riser Dragon | `68431965` | [Scripts/c68431965.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c68431965.lua) | 1 |
-| ...and 50 more |  |  |  |
+| ...and 53 more |  |  |  |
 
 ## Script Examples
 

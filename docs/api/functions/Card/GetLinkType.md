@@ -20,7 +20,7 @@ Returns c's Link Material Type mask used by Link Material checks.
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3407`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3455`
 
 ## Used By
 

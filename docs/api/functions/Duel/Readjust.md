@@ -20,7 +20,7 @@ If the same handler requests readjustment more than three times in the current t
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **10** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Duel.Readjust`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Duel.Readjust) with `Duel.Readjust`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

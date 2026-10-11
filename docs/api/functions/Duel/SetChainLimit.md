@@ -23,17 +23,18 @@ The callback is stored with the current reason player and is later called as f(e
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **87** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Duel.SetChainLimit`.
+- Detected in **89** indexed script(s).
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Duel.SetChainLimit) with `Duel.SetChainLimit`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
+| [Levia-Dragoon - Daedalus](/examples/cards/78579058) | `78579058` | [Scripts/c78579058.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c78579058.lua) | 1 |
 | [Ultra Polymerization](/examples/cards/76647978) | `76647978` | [Scripts/c76647978.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c76647978.lua) | 1 |
 | [Enneacraft - Atil.SPIA](/examples/cards/71801447) | `71801447` | [Scripts/c71801447.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c71801447.lua) | 1 |
 | [W:P Fancy Ball](/examples/cards/4993187) | `4993187` | [Scripts/c4993187.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c4993187.lua) | 1 |
 | Super Duper Polymerization | `44886582` | [Scripts/c44886582.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c44886582.lua) | 1 |
+| Phara the Primordial Goddess | `82344137` | [Scripts/c82344137.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c82344137.lua) | 1 |
 | Borrelshroud Dragon | `66452432` | [Scripts/c66452432.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c66452432.lua) | 1 |
-| Phara, the Goddess of the Beginning | `82344137` | [Scripts/c82344137.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c82344137.lua) | 1 |
 | Accesscode Talker | `86066372` | [Scripts/c86066372.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c86066372.lua) | 2 |
 | Borreload Dragon | `31833038` | [Scripts/c31833038.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c31833038.lua) | 1 |
 | Sky Striker Mecha Modules - Multirole | `24010609` | [Scripts/c24010609.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c24010609.lua) | 1 |
@@ -51,10 +52,21 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Borreload Liberator Dragon | `27096833` | [Scripts/c27096833.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c27096833.lua) | 1 |
 | Megalith Notrah Plura | `44293356` | [Scripts/c44293356.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c44293356.lua) | 1 |
 | Hot Red Dragon Archfiend King Calamity | `62242678` | [Scripts/c62242678.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c62242678.lua) | 1 |
-| Gouki The Tyrant Ogre | `7782069` | [Scripts/c7782069.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c7782069.lua) | 1 |
-| ...and 63 more |  |  |  |
+| ...and 65 more |  |  |  |
 
 ## Script Examples
+
+### Levia-Dragoon - Daedalus (`78579058`)
+
+Source: [Scripts/c78579058.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c78579058.lua)
+
+```lua
+	Duel.SetOperationInfo(0,CATEGORY_HANDES_OPPO,nil,0,1-tp,1)
+	Duel.SetOperationInfo(0,CATEGORY_DRAW,nil,0,1-tp,1)
+	Duel.SetChainLimit(aux.FALSE)
+end
+function s.drop(e,tp,eg,ep,ev,re,r,rp)
+```
 
 ### Ultra Polymerization (`76647978`)
 
@@ -78,16 +90,4 @@ Source: [Scripts/c71801447.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/
 		Duel.SetChainLimit(s.chainlm)
 	end
 end
-```
-
-### W:P Fancy Ball (`4993187`)
-
-Source: [Scripts/c4993187.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c4993187.lua)
-
-```lua
-	if chk==0 then return res end
-	Duel.SetOperationInfo(0,CATEGORY_SPECIAL_SUMMON,nil,1,0,0)
-	Duel.SetChainLimit(s.chainlm)
-end
-function s.chainlm(e,rp,tp)
 ```

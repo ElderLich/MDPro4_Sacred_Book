@@ -21,22 +21,24 @@ Checks whether c has an effect matching filter.
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3511`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3563`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **10** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Card.IsEffectProperty`.
+- Detected in **12** indexed script(s).
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Card.IsEffectProperty) with `Card.IsEffectProperty`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
 | Argostars - Giantslaying | `30964246` | [Scripts/c30964246.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c30964246.lua) | 1 |
 | Arcana Force EX - The Chaos Ruler | `12686296` | [Scripts/c12686296.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c12686296.lua) | 1 |
 | Desperado Barrel Dragon | `76728962` | [Scripts/c76728962.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c76728962.lua) | 1 |
+| Armor Wizard Pazoo | `56779694` | [Scripts/c56779694.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c56779694.lua) | 1 |
 | Heosvarog the Mechanical Dawn | `8963089` | [Scripts/c8963089.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c8963089.lua) | 1 |
 | Goddess of the Two Sides | `50915474` | [Scripts/c50915474.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c50915474.lua) | 1 |
+| Candelato, the Beast of Light | `8315896` | [Scripts/c8315896.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c8315896.lua) | 1 |
 | Arcana Force XIX - The Sun | `39761418` | [Scripts/c39761418.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c39761418.lua) | 2 |
 | Arcana Spread | `76302448` | [Scripts/c76302448.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c76302448.lua) | 2 |
 | Arcana Reading | `11819473` | [Scripts/c11819473.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c11819473.lua) | 1 |

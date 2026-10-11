@@ -23,14 +23,14 @@ Condition for Quick Effects that change ATK/DEF; true outside the Damage Phase, 
 
 ## Source
 
-- `Utilities/utility.lua:810`
+- `Utilities/utility.lua:813`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **266** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Auxiliary.dscon`.
+- Detected in **268** indexed script(s).
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Auxiliary.dscon) with `Auxiliary.dscon`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
@@ -54,11 +54,11 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Combat Wheel | `12501230` | [Scripts/c12501230.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c12501230.lua) | 1 |
 | Dinomorphia Rexterm | `92798873` | [Scripts/c92798873.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c92798873.lua) | 1 |
 | Envoy of Chaos | `38695361` | [Scripts/c38695361.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c38695361.lua) | 1 |
-| Blitzclique - Alternator | `59921227` | [Scripts/c59921227.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c59921227.lua) | 1 |
+| Blitzclique Alternator | `59921227` | [Scripts/c59921227.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c59921227.lua) | 1 |
+| Spell Shattering Sword | `77456448` | [Scripts/c77456448.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c77456448.lua) | 1 |
 | Materiactor Exareptor | `37426272` | [Scripts/c37426272.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c37426272.lua) | 1 |
 | Tyrant Wing | `57470761` | [Scripts/c57470761.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c57470761.lua) | 1 |
-| Bujin Regalia - The Jewel | `63049052` | [Scripts/c63049052.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c63049052.lua) | 1 |
-| ...and 242 more |  |  |  |
+| ...and 244 more |  |  |  |
 
 ## Script Examples
 

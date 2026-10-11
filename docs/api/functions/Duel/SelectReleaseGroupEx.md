@@ -33,8 +33,8 @@ Lets player select min to max cards that can be Tributed/Released for effect pur
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **53** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Duel.SelectReleaseGroupEx`.
+- Detected in **54** indexed script(s).
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Duel.SelectReleaseGroupEx) with `Duel.SelectReleaseGroupEx`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
@@ -48,6 +48,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Muckraker From the Underworld | `71607202` | [Scripts/c71607202.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c71607202.lua) | 1 |
 | Magnificent Machine Angel | `27331568` | [Scripts/c27331568.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c27331568.lua) | 1 |
 | Gemini Ablation | `80758812` | [Scripts/c80758812.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c80758812.lua) | 1 |
+| Swiftwind Panther Warrior | `77482666` | [Scripts/c77482666.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c77482666.lua) | 1 |
 | Volcanic Queen | `63014935` | [Scripts/c63014935.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c63014935.lua) | 1 |
 | Kanzashi the Rikka Queen | `6284176` | [Scripts/c6284176.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c6284176.lua) | 1 |
 | Archfiend's Origin | `79621896` | [Scripts/c79621896.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c79621896.lua) | 1 |
@@ -61,8 +62,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Deception of the Sinful Spoils | `66328392` | [Scripts/c66328392.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c66328392.lua) | 1 |
 | Jinzo - Layered | `99666430` | [Scripts/c99666430.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c99666430.lua) | 2 |
 | Magical Dimension | `28553439` | [Scripts/c28553439.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c28553439.lua) | 1 |
-| Nekroz of Areadbhair | `39468724` | [Scripts/c39468724.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c39468724.lua) | 2 |
-| ...and 29 more |  |  |  |
+| ...and 30 more |  |  |  |
 
 ## Script Examples
 

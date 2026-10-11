@@ -26,12 +26,13 @@ Returns e's condition callback, or nil when no condition is set.
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **4** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Effect.GetCondition`.
+- Detected in **5** indexed script(s).
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Effect.GetCondition) with `Effect.GetCondition`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
 | Union Activation | `38527680` | [Scripts/c38527680.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c38527680.lua) | 2 |
+| Quick Summon | `10086952` | [Scripts/c10086952.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c10086952.lua) | 2 |
 | Dinomorphia Rexterm | `92798873` | [Scripts/c92798873.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c92798873.lua) | 1 |
 | Bait Doll | `7165085` | [Scripts/c7165085.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c7165085.lua) | 1 |
 | Hope for Escape | `80036543` | [Scripts/c80036543.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c80036543.lua) | 1 |
@@ -50,6 +51,18 @@ Source: [Scripts/c38527680.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/
 	end
 ```
 
+### Quick Summon (`10086952`)
+
+Source: [Scripts/c10086952.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c10086952.lua)
+
+```lua
+	if c:IsHasEffect(EFFECT_LIMIT_SUMMON_PROC,c:GetControler()) then
+		local tte=c:IsHasEffect(EFFECT_LIMIT_SUMMON_PROC,c:GetControler())
+		local ec=tte:GetCondition()
+		if not ec(e,c,0) then
+			if e1 then e1:Reset() end
+```
+
 ### Dinomorphia Rexterm (`92798873`)
 
 Source: [Scripts/c92798873.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c92798873.lua)
@@ -60,16 +73,4 @@ Source: [Scripts/c92798873.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/
 			local con=te:GetCondition()
 			local val=te:GetValue()
 			if (not con or con(te)) then
-```
-
-### Bait Doll (`7165085`)
-
-Source: [Scripts/c7165085.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c7165085.lua)
-
-```lua
-			end
-		else
-			local condition=te:GetCondition()
-			local cost=te:GetCost()
-			local target=te:GetTarget()
 ```

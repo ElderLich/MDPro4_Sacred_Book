@@ -45,11 +45,12 @@ If no marker exists, this returns nil. If several matching markers exist, the lo
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **5** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Duel.GetFlagEffectLabel`.
+- Detected in **6** indexed script(s).
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Duel.GetFlagEffectLabel) with `Duel.GetFlagEffectLabel`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
+| Trirealm Rift Judgment | `65195679` | [Scripts/c65195679.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c65195679.lua) | 2 |
 | Mayakashi Mayhem | `41867019` | [Scripts/c41867019.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c41867019.lua) | 2 |
 | You and A.I. | `32056070` | [Scripts/c32056070.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c32056070.lua) | 1 |
 | Cairngorgon, Antiluminescent Knight | `21501505` | [Scripts/c21501505.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c21501505.lua) | 1 |
@@ -57,6 +58,18 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Dimensional Barrier | `83326048` | [Scripts/c83326048.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c83326048.lua) | 2 |
 
 ## Script Examples
+
+### Trirealm Rift Judgment (`65195679`)
+
+Source: [Scripts/c65195679.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c65195679.lua)
+
+```lua
+end
+function s.spfilter(c,e,tp,ec,ft)
+	return c:IsFacedown() and c:IsSetCard(0x1ed) and c:IsAttribute(ec:GetAttribute()) and not c:IsAttribute(Duel.GetFlagEffectLabel(tp,id))
+		and (c:IsAbleToHand() or (ft>0 and c:IsCanBeSpecialSummoned(e,0,tp,false,false)))
+end
+```
 
 ### Mayakashi Mayhem (`41867019`)
 
@@ -80,16 +93,4 @@ Source: [Scripts/c32056070.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/
 	local used=Duel.GetFlagEffectLabel(tp,32056070)
 	if used==nil then
 		used=0
-```
-
-### Cairngorgon, Antiluminescent Knight (`21501505`)
-
-Source: [Scripts/c21501505.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c21501505.lua)
-
-```lua
-function c21501505.target(e,tp,eg,ep,ev,re,r,rp,chk,chkc)
-	local ct=ev
-	local label=Duel.GetFlagEffectLabel(0,21501505)
-	if label then
-		if ev==bit.rshift(label,16) then ct=bit.band(label,0xffff) end
 ```

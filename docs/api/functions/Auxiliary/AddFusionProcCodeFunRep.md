@@ -29,7 +29,7 @@ Registers a Fusion procedure requiring code1 plus between minc and maxc material
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **10** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Auxiliary.AddFusionProcCodeFunRep`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Auxiliary.AddFusionProcCodeFunRep) with `Auxiliary.AddFusionProcCodeFunRep`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

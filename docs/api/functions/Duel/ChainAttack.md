@@ -23,8 +23,8 @@ The binding only sets chain-attack state. It returns no Lua value and does nothi
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **59** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Duel.ChainAttack`.
+- Detected in **60** indexed script(s).
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Duel.ChainAttack) with `Duel.ChainAttack`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
@@ -34,6 +34,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Altergeist Memorygant | `23790299` | [Scripts/c23790299.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c23790299.lua) | 1 |
 | Dinomist Rex | `63251695` | [Scripts/c63251695.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c63251695.lua) | 1 |
 | Infernoid Attondel | `88301393` | [Scripts/c88301393.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c88301393.lua) | 1 |
+| D - Burst | `47471667` | [Scripts/c47471667.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c47471667.lua) | 1 |
 | Super Strident Blaze | `81193865` | [Scripts/c81193865.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c81193865.lua) | 1 |
 | Toy Parade | `92607427` | [Scripts/c92607427.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c92607427.lua) | 1 |
 | Number C5: Chaos Chimera Dragon | `69757518` | [Scripts/c69757518.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c69757518.lua) | 1 |
@@ -51,8 +52,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Dimension Mirage | `80560728` | [Scripts/c80560728.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c80560728.lua) | 1 |
 | DZW - Chimera Clad | `6330307` | [Scripts/c6330307.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c6330307.lua) | 1 |
 | Endless Bond | `35989913` | [Scripts/c35989913.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c35989913.lua) | 1 |
-| Vendread Nights | `76871889` | [Scripts/c76871889.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c76871889.lua) | 1 |
-| ...and 35 more |  |  |  |
+| ...and 36 more |  |  |  |
 
 ## Script Examples
 

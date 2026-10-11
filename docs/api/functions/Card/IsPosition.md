@@ -21,14 +21,14 @@ Checks whether c's current battle position includes pos.
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3608`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3660`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **222** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Card.IsPosition`.
+- Detected in **225** indexed script(s).
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Card.IsPosition) with `Card.IsPosition`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
@@ -56,7 +56,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Riot's Reason | `51612489` | [Scripts/c51612489.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c51612489.lua) | 1 |
 | Mermail Abyssleed | `37781520` | [Scripts/c37781520.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c37781520.lua) | 1 |
 | Heart of Gaia | `73129314` | [Scripts/c73129314.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c73129314.lua) | 1 |
-| ...and 198 more |  |  |  |
+| ...and 201 more |  |  |  |
 
 ## Script Examples
 

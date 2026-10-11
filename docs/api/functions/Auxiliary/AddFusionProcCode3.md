@@ -28,7 +28,7 @@ Registers a Fusion Material procedure requiring monsters with code1, code2, and 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **19** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Auxiliary.AddFusionProcCode3`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Auxiliary.AddFusionProcCode3) with `Auxiliary.AddFusionProcCode3`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

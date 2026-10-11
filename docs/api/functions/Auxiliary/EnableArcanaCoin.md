@@ -26,7 +26,7 @@ The shared operation records the coin result as FLAG_ID_ARCANA_COIN; Reversal of
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **11** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Auxiliary.EnableArcanaCoin`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Auxiliary.EnableArcanaCoin) with `Auxiliary.EnableArcanaCoin`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
@@ -38,8 +38,8 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Arcana Force III - The Empress | `35781051` | [Scripts/c35781051.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c35781051.lua) | 1 |
 | Arcana Force 0 - The Fool | `62892347` | [Scripts/c62892347.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c62892347.lua) | 1 |
 | Arcana Force XIV - Temperance | `60953118` | [Scripts/c60953118.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c60953118.lua) | 1 |
-| Arcana Force I - The Magician | `8396952` | [Scripts/c8396952.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c8396952.lua) | 1 |
 | Arcana Force VI - The Lovers | `97574404` | [Scripts/c97574404.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c97574404.lua) | 1 |
+| Arcana Force I - The Magician | `8396952` | [Scripts/c8396952.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c8396952.lua) | 1 |
 | Arcana Force IV - The Emperor | `61175706` | [Scripts/c61175706.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c61175706.lua) | 1 |
 
 ## Script Examples

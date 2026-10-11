@@ -31,7 +31,7 @@ Lets player select a subset of g whose f-value sum reaches or exceeds sum accord
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **1** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Group.SelectWithSumGreater`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Group.SelectWithSumGreater) with `Group.SelectWithSumGreater`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

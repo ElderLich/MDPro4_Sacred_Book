@@ -19,12 +19,12 @@ Initializes the shared Extra Deck Summon count table with one count for each pla
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **5** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Auxiliary.EnableExtraDeckSummonCountLimit`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Auxiliary.EnableExtraDeckSummonCountLimit) with `Auxiliary.EnableExtraDeckSummonCountLimit`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
 | Numbers Last Hope | `4606229` | [Scripts/c4606229.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c4606229.lua) | 1 |
-| Mystical Celtic Sage | `50073633` | [Scripts/c50073633.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c50073633.lua) | 1 |
+| Celtic Mystic | `50073633` | [Scripts/c50073633.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c50073633.lua) | 1 |
 | Additional Mirror Level 7 | `23812568` | [Scripts/c23812568.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c23812568.lua) | 1 |
 | Fury of Fire | `92345028` | [Scripts/c92345028.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c92345028.lua) | 1 |
 | Squeaknight | `38783169` | [Scripts/c38783169.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c38783169.lua) | 1 |
@@ -43,7 +43,7 @@ function s.initial_effect(c)
 	local e1=Effect.CreateEffect(c)
 ```
 
-### Mystical Celtic Sage (`50073633`)
+### Celtic Mystic (`50073633`)
 
 Source: [Scripts/c50073633.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c50073633.lua)
 

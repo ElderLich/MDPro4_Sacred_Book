@@ -25,7 +25,7 @@ The core raises move events for the swapped cards when the swap occurs.
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **7** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Duel.SwapSequence`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Duel.SwapSequence) with `Duel.SwapSequence`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

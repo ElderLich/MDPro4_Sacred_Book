@@ -23,7 +23,7 @@ Sets whether the core's self-destruction check is disabled; omitting disable dis
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **4** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Duel.DisableSelfDestroyCheck`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Duel.DisableSelfDestroyCheck) with `Duel.DisableSelfDestroyCheck`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

@@ -20,14 +20,14 @@ Returns the location c was Summoned from, decoded from its summon information.
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3474`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3523`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **2** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Card.GetSummonLocation`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Card.GetSummonLocation) with `Card.GetSummonLocation`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

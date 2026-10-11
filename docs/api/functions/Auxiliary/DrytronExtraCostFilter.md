@@ -17,7 +17,7 @@ Checks whether c can be banished by tp as a replacement cost through effect code
 
 ## Source
 
-- `Utilities/utility.lua:1017`
+- `Utilities/utility.lua:1020`
 
 ## Used By
 

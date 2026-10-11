@@ -30,7 +30,7 @@ Use exclude_modern_count when a replacement-style effect will remove an already 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **8** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Auxiliary.CheckUnionEquip`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Auxiliary.CheckUnionEquip) with `Auxiliary.CheckUnionEquip`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

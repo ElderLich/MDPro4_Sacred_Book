@@ -22,14 +22,14 @@ If the previous state had a second code, that code is returned as a second value
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3449`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3497`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **22** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Card.GetPreviousCodeOnField`.
+- Detected in **23** indexed script(s).
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Card.GetPreviousCodeOnField) with `Card.GetPreviousCodeOnField`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
@@ -39,6 +39,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Horus the Black Flame Deity | `99307040` | [Scripts/c99307040.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c99307040.lua) | 2 |
 | Dual Avatar Feet - Kokoku | `11759079` | [Scripts/c11759079.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c11759079.lua) | 1 |
 | Malefic Truth Dragon | `37115575` | [Scripts/c37115575.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c37115575.lua) | 1 |
+| Invincible Demise Lord | `71108540` | [Scripts/c71108540.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c71108540.lua) | 1 |
 | Cerulean Skyfire | `54828837` | [Scripts/c54828837.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c54828837.lua) | 3 |
 | Manga Ryu-Ran | `38369349` | [Scripts/c38369349.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c38369349.lua) | 1 |
 | Blue-Eyes Toon Dragon | `53183600` | [Scripts/c53183600.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c53183600.lua) | 1 |

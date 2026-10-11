@@ -20,7 +20,7 @@ Cost filter for the shared Ursarctic Special Summon effect. It accepts Level 7 o
 
 ## Source
 
-- `Utilities/utility.lua:955`
+- `Utilities/utility.lua:958`
 
 ## Used By
 

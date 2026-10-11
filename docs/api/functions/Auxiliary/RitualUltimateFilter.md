@@ -35,7 +35,7 @@ Checks whether c is a valid Ritual Monster that can be Ritual Summoned with the 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **26** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Auxiliary.RitualUltimateFilter`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Auxiliary.RitualUltimateFilter) with `Auxiliary.RitualUltimateFilter`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

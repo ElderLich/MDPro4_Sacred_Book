@@ -20,14 +20,14 @@ Returns c's previously recorded position value.
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3467`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3516`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **20** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Card.GetPreviousPosition`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Card.GetPreviousPosition) with `Card.GetPreviousPosition`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

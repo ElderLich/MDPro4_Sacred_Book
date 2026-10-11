@@ -30,7 +30,7 @@ Special Summon restriction value for Fossil Fusion effects; allows Fossil Fusion
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **8** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Auxiliary.FossilFusionLimit`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Auxiliary.FossilFusionLimit) with `Auxiliary.FossilFusionLimit`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

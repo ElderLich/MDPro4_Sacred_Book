@@ -1,0 +1,134 @@
+{
+  "namespaces": [
+    {
+      "text": "Auxiliary",
+      "link": "/api/functions/Auxiliary/"
+    },
+    {
+      "text": "bit",
+      "link": "/api/functions/bit/"
+    },
+    {
+      "text": "Card",
+      "link": "/api/functions/Card/"
+    },
+    {
+      "text": "Debug",
+      "link": "/api/functions/Debug/"
+    },
+    {
+      "text": "Duel",
+      "link": "/api/functions/Duel/"
+    },
+    {
+      "text": "Effect",
+      "link": "/api/functions/Effect/"
+    },
+    {
+      "text": "Global",
+      "link": "/api/functions/Global/"
+    },
+    {
+      "text": "Group",
+      "link": "/api/functions/Group/"
+    }
+  ],
+  "examples": [
+    {
+      "text": "Salamandra with Chain",
+      "link": "/examples/cards/62091148"
+    },
+    {
+      "text": "Astrograph Sorcerer, the Starfrost Magicia",
+      "link": "/examples/cards/48171151"
+    },
+    {
+      "text": "Artmage Non-Finito",
+      "link": "/examples/cards/74631897"
+    },
+    {
+      "text": "Pendulum Evolution",
+      "link": "/examples/cards/55795155"
+    },
+    {
+      "text": "Levia-Dragoon - Daedalus",
+      "link": "/examples/cards/78579058"
+    },
+    {
+      "text": "Lady's Dragonmaid",
+      "link": "/examples/cards/48658295"
+    },
+    {
+      "text": "Azure Ocean Dragon Lord - Neo-Daedalus Rag",
+      "link": "/examples/cards/41570943"
+    },
+    {
+      "text": "Eternal Favorite",
+      "link": "/examples/cards/87532344"
+    },
+    {
+      "text": "Surprise Fusion",
+      "link": "/examples/cards/35167375"
+    },
+    {
+      "text": "Astrograph Sorcerer",
+      "link": "/examples/cards/76794549"
+    },
+    {
+      "text": "Spellbook of the Grand Circle",
+      "link": "/examples/cards/11911336"
+    },
+    {
+      "text": "Ultra Polymerization",
+      "link": "/examples/cards/76647978"
+    },
+    {
+      "text": "Goyo Emperor",
+      "link": "/examples/cards/59255742"
+    },
+    {
+      "text": "Accel Synchro Stardust Dragon",
+      "link": "/examples/cards/30983281"
+    },
+    {
+      "text": "Melffy Playtime Surprise",
+      "link": "/examples/cards/58036097"
+    },
+    {
+      "text": "Ashtraja Susanoo",
+      "link": "/examples/cards/17020474"
+    },
+    {
+      "text": "Deftero Enneacraft - \"alazoneIA\"",
+      "link": "/examples/cards/92171126"
+    },
+    {
+      "text": "Destiny HERO - Destro-Dogma",
+      "link": "/examples/cards/25158975"
+    },
+    {
+      "text": "Yomagna the Fire Phantom",
+      "link": "/examples/cards/17350692"
+    },
+    {
+      "text": "Fiendsmith's Sequence",
+      "link": "/examples/cards/49867899"
+    },
+    {
+      "text": "D/D/D Alfred the Divine Sage King",
+      "link": "/examples/cards/11852093"
+    },
+    {
+      "text": "El Shaddoll Apkallone",
+      "link": "/examples/cards/50907446"
+    },
+    {
+      "text": "Mementotlan Fusion",
+      "link": "/examples/cards/66518509"
+    },
+    {
+      "text": "Meteoroa Drytron",
+      "link": "/examples/cards/24166324"
+    }
+  ]
+}

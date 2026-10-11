@@ -20,14 +20,14 @@ Returns c's original owner player.
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3458`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3507`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **440** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Card.GetOwner`.
+- Detected in **444** indexed script(s).
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Card.GetOwner) with `Card.GetOwner`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
@@ -54,8 +54,8 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Spirit Poacher | `85150300` | [Scripts/c85150300.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c85150300.lua) | 2 |
 | Metaltron XII, the True Dracombatant | `57761191` | [Scripts/c57761191.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c57761191.lua) | 2 |
 | Dragunity Arma Leyvaten | `63487632` | [Scripts/c63487632.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c63487632.lua) | 1 |
-| Dracotail Gulamel | `79755671` | [Scripts/c79755671.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c79755671.lua) | 3 |
-| ...and 416 more |  |  |  |
+| Angelechy Problem | `17782288` | [Scripts/c17782288.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c17782288.lua) | 1 |
+| ...and 420 more |  |  |  |
 
 ## Script Examples
 

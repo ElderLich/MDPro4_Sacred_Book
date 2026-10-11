@@ -25,7 +25,7 @@ Registers the shared Elemental HERO Neos Fusion End Phase return effects on c. I
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **11** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Auxiliary.EnableNeosReturn`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Auxiliary.EnableNeosReturn) with `Auxiliary.EnableNeosReturn`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

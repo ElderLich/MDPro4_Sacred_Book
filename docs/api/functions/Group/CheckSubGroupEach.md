@@ -23,14 +23,14 @@ Checks whether g can supply one card for each filter in checks. If f is omitted,
 
 ## Source
 
-- `Utilities/utility.lua:1338`
+- `Utilities/utility.lua:1341`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **33** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Group.CheckSubGroupEach`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Group.CheckSubGroupEach) with `Group.CheckSubGroupEach`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

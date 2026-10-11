@@ -27,7 +27,7 @@ Condition for the shared Ursarctic hand Quick Effect; returns true during either
 
 ## Source
 
-- `Utilities/utility.lua:952`
+- `Utilities/utility.lua:955`
 
 ## Used By
 

@@ -22,14 +22,14 @@ Sends g to the top of the Deck by reason, lets p order cards that reached either
 
 ## Source
 
-- `Utilities/utility.lua:1601`
+- `Utilities/utility.lua:1604`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **2** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Auxiliary.PlaceCardsOnDeckTop`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Auxiliary.PlaceCardsOnDeckTop) with `Auxiliary.PlaceCardsOnDeckTop`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

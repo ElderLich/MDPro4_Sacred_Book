@@ -28,7 +28,7 @@ Returns true if c's stored material type mask contains type.
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **2** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Auxiliary.IsMaterialListType`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Auxiliary.IsMaterialListType) with `Auxiliary.IsMaterialListType`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

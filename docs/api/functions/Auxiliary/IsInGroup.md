@@ -21,19 +21,19 @@ Returns true if g contains c.
 
 ## Source
 
-- `Utilities/utility.lua:597`
+- `Utilities/utility.lua:600`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **30** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Auxiliary.IsInGroup`.
+- Detected in **31** indexed script(s).
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Auxiliary.IsInGroup) with `Auxiliary.IsInGroup`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
 | [Barian's Chaos Draw](/examples/cards/97769122) | `97769122` | [Scripts/c97769122.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c97769122.lua) | 2 |
-| [El Shaddoll Meshachrer](/examples/cards/32467459) | `32467459` | [Scripts/c32467459.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c32467459.lua) | 2 |
+| El Shaddoll Meshachrer | `32467459` | [Scripts/c32467459.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c32467459.lua) | 2 |
 | Starving Venom Wing Dragon | `5148778` | [Scripts/c5148778.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c5148778.lua) | 1 |
 | Frightfur Meister | `77522571` | [Scripts/c77522571.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c77522571.lua) | 1 |
 | Kuribeh | `34419588` | [Scripts/c34419588.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c34419588.lua) | 1 |
@@ -52,11 +52,11 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Generaider Boss Bite | `720147` | [Scripts/c720147.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c720147.lua) | 1 |
 | Mysterion the Dragon Crown | `13735899` | [Scripts/c13735899.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c13735899.lua) | 2 |
 | Kuribah | `44632120` | [Scripts/c44632120.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c44632120.lua) | 1 |
+| Graceful &amp; Skull Dice | `76630812` | [Scripts/c76630812.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c76630812.lua) | 1 |
 | Bonding - D2O | `79402185` | [Scripts/c79402185.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c79402185.lua) | 1 |
 | Valkyrion the Magna Warrior | `75347539` | [Scripts/c75347539.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c75347539.lua) | 1 |
 | Lyrilusc - Ensemblue Robin | `72971064` | [Scripts/c72971064.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c72971064.lua) | 3 |
-| Dovelgus, Generaider Boss of Iron | `76382116` | [Scripts/c76382116.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c76382116.lua) | 1 |
-| ...and 6 more |  |  |  |
+| ...and 7 more |  |  |  |
 
 ## Script Examples
 

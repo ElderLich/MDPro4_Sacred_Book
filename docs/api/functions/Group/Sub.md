@@ -23,19 +23,20 @@ Removes every card in g2 from g1. g1 is mutated unless it is read-only; g2 is no
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **88** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Group.Sub`.
+- Detected in **89** indexed script(s).
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Group.Sub) with `Group.Sub`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
 | [Artmage Non-Finito](/examples/cards/74631897) | `74631897` | [Scripts/c74631897.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c74631897.lua) | 1 |
+| [Ashtraja Susanoo](/examples/cards/17020474) | `17020474` | [Scripts/c17020474.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c17020474.lua) | 1 |
 | [D/D/D Alfred the Divine Sage King](/examples/cards/11852093) | `11852093` | [Scripts/c11852093.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c11852093.lua) | 1 |
 | [El Shaddoll Apkallone](/examples/cards/50907446) | `50907446` | [Scripts/c50907446.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c50907446.lua) | 1 |
 | [Mementotlan Fusion](/examples/cards/66518509) | `66518509` | [Scripts/c66518509.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c66518509.lua) | 1 |
 | [Performage Cup Tricker](/examples/cards/6812770) | `6812770` | [Scripts/c6812770.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c6812770.lua) | 1 |
 | [D/D Count Surveyor](/examples/cards/5997110) | `5997110` | [Scripts/c5997110.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c5997110.lua) | 2 |
-| [Aroma Blend](/examples/cards/25861589) | `25861589` | [Scripts/c25861589.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c25861589.lua) | 1 |
-| Invocation "Sword" | `37432075` | [Scripts/c37432075.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c37432075.lua) | 1 |
+| Aroma Blend | `25861589` | [Scripts/c25861589.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c25861589.lua) | 1 |
+| Invocation - "Sword" | `37432075` | [Scripts/c37432075.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c37432075.lua) | 1 |
 | Invocation | `74063034` | [Scripts/c74063034.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c74063034.lua) | 1 |
 | A-to-Z-Dragon Buster Cannon | `65172015` | [Scripts/c65172015.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c65172015.lua) | 1 |
 | Branded in White | `34995106` | [Scripts/c34995106.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c34995106.lua) | 1 |
@@ -51,8 +52,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | ABC-Dragon Buster | `1561110` | [Scripts/c1561110.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c1561110.lua) | 1 |
 | Magikey Maftea | `99426088` | [Scripts/c99426088.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c99426088.lua) | 1 |
 | Metaltron XII, the True Dracombatant | `57761191` | [Scripts/c57761191.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c57761191.lua) | 1 |
-| Psychic Arsenal | `16238373` | [Scripts/c16238373.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c16238373.lua) | 1 |
-| ...and 64 more |  |  |  |
+| ...and 65 more |  |  |  |
 
 ## Script Examples
 
@@ -68,6 +68,18 @@ Source: [Scripts/c74631897.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/
 	Duel.Release(g,REASON_SPSUMMON)
 ```
 
+### Ashtraja Susanoo (`17020474`)
+
+Source: [Scripts/c17020474.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c17020474.lua)
+
+```lua
+				end
+				local tmg=tg:Clone()
+				tmg:Sub(selg)
+				local tc=tmg:SelectUnselect(selg,tp,finish,false,1,tg:GetCount())
+				if not tc then
+```
+
 ### D/D/D Alfred the Divine Sage King (`11852093`)
 
 Source: [Scripts/c11852093.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c11852093.lua)
@@ -78,16 +90,4 @@ Source: [Scripts/c11852093.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/
 		g:Sub(pg)
 	else
 		g=Group.CreateGroup()
-```
-
-### El Shaddoll Apkallone (`50907446`)
-
-Source: [Scripts/c50907446.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c50907446.lua)
-
-```lua
-		Duel.Hint(HINT_SELECTMSG,tp,HINTMSG_FMATERIAL)
-		g=mg:FilterSelect(tp,c50907446.FShaddollSpFilter1,1,1,nil,c,tp,mg,exg,chkf)
-		mg:Sub(g)
-	end
-	if exg and exg:IsExists(c50907446.FShaddollSpFilter2,1,nil,c,tp,g:GetFirst(),chkf)
 ```

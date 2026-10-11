@@ -28,8 +28,8 @@ Use this when SetTarget or similar APIs expect a function with parameters (effec
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **417** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Auxiliary.TargetBoolFunction`.
+- Detected in **427** indexed script(s).
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Auxiliary.TargetBoolFunction) with `Auxiliary.TargetBoolFunction`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
@@ -45,19 +45,19 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Joyous Melffys | `53054164` | [Scripts/c53054164.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c53054164.lua) | 1 |
 | Mind Scan | `34298391` | [Scripts/c34298391.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c34298391.lua) | 1 |
 | Synchro Fellowship | `43834302` | [Scripts/c43834302.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c43834302.lua) | 1 |
+| The Glitter of Raise Moon | `9362643` | [Scripts/c9362643.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c9362643.lua) | 1 |
 | Qliphort Disk | `64496451` | [Scripts/c64496451.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c64496451.lua) | 1 |
 | Red-Eyes Retro Dragon | `53485634` | [Scripts/c53485634.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c53485634.lua) | 1 |
 | Salamangreat Burst Gryphon | `10140443` | [Scripts/c10140443.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c10140443.lua) | 1 |
 | Legendary Lord Six Samurai - Enishi | `70634245` | [Scripts/c70634245.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c70634245.lua) | 1 |
+| Raise Moon Wings Rapi | `47828069` | [Scripts/c47828069.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c47828069.lua) | 1 |
 | The Bystial Alba Los | `69120785` | [Scripts/c69120785.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c69120785.lua) | 1 |
 | Blue-Eyes Toon Ultimate Dragon | `71808988` | [Scripts/c71808988.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c71808988.lua) | 1 |
 | DoomZ Destruction | `80320877` | [Scripts/c80320877.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c80320877.lua) | 1 |
 | D/D/D Super Doom King Dark Armageddon | `18897163` | [Scripts/c18897163.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c18897163.lua) | 1 |
 | Concours de Cuisine (Culinary Confrontation) | `14283055` | [Scripts/c14283055.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c14283055.lua) | 1 |
 | Tri-Brigade Nervall | `14816857` | [Scripts/c14816857.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c14816857.lua) | 1 |
-| King's Resonance | `17269895` | [Scripts/c17269895.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c17269895.lua) | 1 |
-| Tri-Brigade Fraktall | `87209160` | [Scripts/c87209160.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c87209160.lua) | 1 |
-| ...and 393 more |  |  |  |
+| ...and 403 more |  |  |  |
 
 ## Script Examples
 

@@ -22,15 +22,17 @@ Checks whether the game is currently resolving a Chain or resolving an effect th
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **13** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Duel.IsChainSolving`.
+- Detected in **15** indexed script(s).
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Duel.IsChainSolving) with `Duel.IsChainSolving`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
 | [Enneacraft - Archa.TAIL](/examples/cards/81237046) | `81237046` | [Scripts/c81237046.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c81237046.lua) | 2 |
 | [Enneacraft - Aiza.LEON](/examples/cards/82359538) | `82359538` | [Scripts/c82359538.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c82359538.lua) | 2 |
 | Awakening of the Sacred Beasts | `53701259` | [Scripts/c53701259.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c53701259.lua) | 2 |
+| Squeeze, the Full Moon of Raise Moon - JACKPOT! | `9484285` | [Scripts/c9484285.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c9484285.lua) | 2 |
 | Odd-Eyes Pendulumgraph Dragon | `66425726` | [Scripts/c66425726.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c66425726.lua) | 2 |
+| Raise Moon Starter Squeeze | `47605577` | [Scripts/c47605577.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c47605577.lua) | 3 |
 | Guilt-Gripping Morganite | `61822419` | [Scripts/c61822419.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c61822419.lua) | 1 |
 | Crystal Tree | `47408488` | [Scripts/c47408488.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c47408488.lua) | 2 |
 | Ghost Sister &amp; Spooky Dogwood | `60643553` | [Scripts/c60643553.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c60643553.lua) | 2 |

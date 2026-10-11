@@ -21,14 +21,14 @@ Returns a table of one-card check functions where each function calls f(c, list\
 
 ## Source
 
-- `Utilities/utility.lua:1307`
+- `Utilities/utility.lua:1310`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **30** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Auxiliary.CreateChecks`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Auxiliary.CreateChecks) with `Auxiliary.CreateChecks`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

@@ -27,14 +27,14 @@ Special Summon condition helper for Gladiator Beast-style returns and set 0x1019
 
 ## Source
 
-- `Utilities/utility.lua:908`
+- `Utilities/utility.lua:911`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **16** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Auxiliary.gbspcon`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Auxiliary.gbspcon) with `Auxiliary.gbspcon`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

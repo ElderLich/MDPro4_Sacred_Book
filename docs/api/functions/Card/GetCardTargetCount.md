@@ -20,14 +20,14 @@ Returns the number of persistent card targets currently recorded on c.
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3542`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3594`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **17** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Card.GetCardTargetCount`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Card.GetCardTargetCount) with `Card.GetCardTargetCount`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

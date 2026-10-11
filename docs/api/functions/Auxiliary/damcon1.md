@@ -28,14 +28,14 @@ It checks the operation info for damage to tp, or recovery to tp that is reverse
 
 ## Source
 
-- `Utilities/utility.lua:879`
+- `Utilities/utility.lua:882`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **21** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Auxiliary.damcon1`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Auxiliary.damcon1) with `Auxiliary.damcon1`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

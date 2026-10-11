@@ -17,14 +17,14 @@ If c is the current top card of the Main Deck, the core also sends the top-of-De
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3659`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3711`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **3** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Card.ReverseInDeck`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Card.ReverseInDeck) with `Card.ReverseInDeck`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

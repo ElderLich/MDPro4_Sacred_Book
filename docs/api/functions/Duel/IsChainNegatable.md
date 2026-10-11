@@ -45,8 +45,8 @@ In the current MDPro3 core binding this function returns true for any chain coun
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **381** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Duel.IsChainNegatable`.
+- Detected in **385** indexed script(s).
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Duel.IsChainNegatable) with `Duel.IsChainNegatable`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
@@ -64,6 +64,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Toadally Awesome | `90809975` | [Scripts/c90809975.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c90809975.lua) | 1 |
 | All-Eyes Phantom Dragon | `70335319` | [Scripts/c70335319.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c70335319.lua) | 1 |
 | Drytron Meteonis DA Draconids | `56863746` | [Scripts/c56863746.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c56863746.lua) | 1 |
+| Machina Ruinforce | `46033517` | [Scripts/c46033517.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c46033517.lua) | 1 |
 | Loki, Lord of the Aesir | `67098114` | [Scripts/c67098114.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c67098114.lua) | 1 |
 | Fire King Avatar Arvata | `18621798` | [Scripts/c18621798.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c18621798.lua) | 1 |
 | Immortal Phoenix Gearfried | `22091647` | [Scripts/c22091647.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c22091647.lua) | 1 |
@@ -73,8 +74,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Red-Eyes Dark Dragoon | `37818794` | [Scripts/c37818794.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c37818794.lua) | 1 |
 | Whisker Blitzclique | `85523502` | [Scripts/c85523502.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c85523502.lua) | 1 |
 | Eclipse, Dragon Ruler of Catastrophes | `30350202` | [Scripts/c30350202.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c30350202.lua) | 1 |
-| Machina Ruinforce | `46033517` | [Scripts/c46033517.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c46033517.lua) | 1 |
-| ...and 357 more |  |  |  |
+| ...and 361 more |  |  |  |
 
 ## Script Examples
 

@@ -24,7 +24,7 @@ Use it with Duel.GetCurrentPhase in Damage Step conditions, especially for ATK/D
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **42** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Duel.IsDamageCalculated`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Duel.IsDamageCalculated) with `Duel.IsDamageCalculated`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

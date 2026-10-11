@@ -24,14 +24,14 @@ Only Monster Zone cards are checked. EFFECT_HAND_SYNCHRO has priority, then EFFE
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3550`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3602`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **8** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Card.GetHandSynchro`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Card.GetHandSynchro) with `Card.GetHandSynchro`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

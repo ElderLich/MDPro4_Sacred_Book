@@ -20,7 +20,7 @@ Returns true for cards whose original set code is 0x3, used by Golden Allure Que
 
 ## Source
 
-- `Utilities/utility.lua:1969`
+- `Utilities/utility.lua:1974`
 
 ## Used By
 

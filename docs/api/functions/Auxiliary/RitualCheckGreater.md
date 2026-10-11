@@ -29,7 +29,7 @@ Checks whether g's Ritual Levels are greater than or equal to lv for c.
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **1** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Auxiliary.RitualCheckGreater`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Auxiliary.RitualCheckGreater) with `Auxiliary.RitualCheckGreater`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

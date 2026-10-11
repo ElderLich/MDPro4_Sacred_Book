@@ -23,14 +23,14 @@ Checks a 2-card group against one filter in either order: one card must satisfy 
 
 ## Source
 
-- `Utilities/utility.lua:1150`
+- `Utilities/utility.lua:1153`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **41** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Auxiliary.gfcheck`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Auxiliary.gfcheck) with `Auxiliary.gfcheck`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

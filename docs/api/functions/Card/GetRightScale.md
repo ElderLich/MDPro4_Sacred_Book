@@ -21,14 +21,14 @@ While c is in a Pendulum Zone, the core applies EFFECT_UPDATE_RSCALE and EFFECT_
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3418`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3466`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **9** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Card.GetRightScale`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Card.GetRightScale) with `Card.GetRightScale`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

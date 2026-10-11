@@ -29,14 +29,15 @@ available should be a bitwise combination of ATTRIBUTE_* constants.
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **53** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Duel.AnnounceAttribute`.
+- Detected in **54** indexed script(s).
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Duel.AnnounceAttribute) with `Duel.AnnounceAttribute`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
 | [Surprise Fusion](/examples/cards/35167375) | `35167375` | [Scripts/c35167375.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c35167375.lua) | 2 |
+| [Mixousia the Confounder](/examples/cards/80843006) | `80843006` | [Scripts/c80843006.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c80843006.lua) | 2 |
 | Plunder Patrollship Jord | `85969517` | [Scripts/c85969517.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c85969517.lua) | 1 |
-| Invoked Transcendence Aeon | `33166263` | [Scripts/c33166263.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c33166263.lua) | 1 |
+| Hyperinvoked Aeon | `33166263` | [Scripts/c33166263.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c33166263.lua) | 1 |
 | Nephe Shaddoll Fusion | `60226558` | [Scripts/c60226558.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c60226558.lua) | 1 |
 | Eidos the Underworld Monarch | `31596518` | [Scripts/c31596518.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c31596518.lua) | 1 |
 | Plunder Patroll Booty | `20426176` | [Scripts/c20426176.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c20426176.lua) | 1 |
@@ -57,8 +58,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | You and A.I. | `32056070` | [Scripts/c32056070.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c32056070.lua) | 1 |
 | Tualatin | `27769400` | [Scripts/c27769400.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c27769400.lua) | 1 |
 | Maple Maiden | `73104892` | [Scripts/c73104892.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c73104892.lua) | 1 |
-| Herald of the Abyss | `94016752` | [Scripts/c94016752.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c94016752.lua) | 1 |
-| ...and 29 more |  |  |  |
+| ...and 30 more |  |  |  |
 
 ## Script Examples
 
@@ -74,6 +74,18 @@ Source: [Scripts/c35167375.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/
 		att=Duel.AnnounceAttribute(tp,1,ATTRIBUTE_ALL)
 ```
 
+### Mixousia the Confounder (`80843006`)
+
+Source: [Scripts/c80843006.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c80843006.lua)
+
+```lua
+	local g=Duel.SelectTarget(tp,s.cosfilter,tp,LOCATION_MZONE,LOCATION_MZONE,1,1,nil)
+	Duel.Hint(HINT_SELECTMSG,tp,HINTMSG_ATTRIBUTE)
+	local att=Duel.AnnounceAttribute(tp,1,ATTRIBUTE_ALL&~g:GetFirst():GetAttribute())
+	e:SetLabel(att)
+end
+```
+
 ### Plunder Patrollship Jord (`85969517`)
 
 Source: [Scripts/c85969517.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c85969517.lua)
@@ -84,16 +96,4 @@ Source: [Scripts/c85969517.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/
 	local attr=Duel.AnnounceAttribute(tp,1,s.GetLegalAttributesOnly(tp))
 	Duel.SetTargetParam(attr)
 	Duel.SetOperationInfo(0,CATEGORY_TODECK,c,1,0,0)
-```
-
-### Invoked Transcendence Aeon (`33166263`)
-
-Source: [Scripts/c33166263.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c33166263.lua)
-
-```lua
-	end
-	Duel.Hint(HINT_SELECTMSG,tp,HINTMSG_ATTRIBUTE)
-	local ratt=Duel.AnnounceAttribute(tp,1,att)
-	e:SetLabel(ratt)
-end
 ```

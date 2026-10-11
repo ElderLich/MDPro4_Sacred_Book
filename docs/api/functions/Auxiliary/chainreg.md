@@ -24,14 +24,14 @@ The flag resets by the standard event reset, except turn Set reset, and also at 
 
 ## Source
 
-- `Utilities/utility.lua:814`
+- `Utilities/utility.lua:817`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **47** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Auxiliary.chainreg`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Auxiliary.chainreg) with `Auxiliary.chainreg`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

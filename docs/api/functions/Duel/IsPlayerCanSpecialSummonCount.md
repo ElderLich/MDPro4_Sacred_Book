@@ -29,7 +29,7 @@ The core checks EFFECT_LEFT_SPSUMMON_COUNT effects and the player's Special Summ
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **50** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Duel.IsPlayerCanSpecialSummonCount`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Duel.IsPlayerCanSpecialSummonCount) with `Duel.IsPlayerCanSpecialSummonCount`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
@@ -54,9 +54,9 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Salamangreat Burning Shell | `28534130` | [Scripts/c28534130.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c28534130.lua) | 1 |
 | Shining Hope Road | `62829077` | [Scripts/c62829077.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c62829077.lua) | 1 |
 | Nibiru, the Primal Being | `27204311` | [Scripts/c27204311.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c27204311.lua) | 1 |
+| Crystron Rion | `66938505` | [Scripts/c66938505.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c66938505.lua) | 1 |
 | Magician Navigation | `7922915` | [Scripts/c7922915.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c7922915.lua) | 1 |
 | Crystron Tristaros | `99471856` | [Scripts/c99471856.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c99471856.lua) | 1 |
-| Performapal Miss Director | `92932860` | [Scripts/c92932860.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c92932860.lua) | 1 |
 | ...and 26 more |  |  |  |
 
 ## Script Examples

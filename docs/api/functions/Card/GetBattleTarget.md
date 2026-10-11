@@ -20,14 +20,14 @@ Returns the monster currently battling c, or nil if c is not the current attacke
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3656`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3708`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **355** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Card.GetBattleTarget`.
+- Detected in **356** indexed script(s).
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Card.GetBattleTarget) with `Card.GetBattleTarget`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
@@ -55,7 +55,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Gussari @Ignister | `55762976` | [Scripts/c55762976.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c55762976.lua) | 1 |
 | Infinitrack Earth Slicer | `97584719` | [Scripts/c97584719.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c97584719.lua) | 1 |
 | Magikey Mechmusket - Batosbuster | `19489718` | [Scripts/c19489718.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c19489718.lua) | 1 |
-| ...and 331 more |  |  |  |
+| ...and 332 more |  |  |  |
 
 ## Script Examples
 

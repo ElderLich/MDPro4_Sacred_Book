@@ -33,14 +33,14 @@ This is a manual clear for flag effects, not a replacement for choosing the righ
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3557`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3609`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **39** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Card.ResetFlagEffect`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Card.ResetFlagEffect) with `Card.ResetFlagEffect`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

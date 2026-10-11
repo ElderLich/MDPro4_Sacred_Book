@@ -22,8 +22,8 @@ Returns whether the current phase is the Battle Phase.
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **22** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Duel.IsBattlePhase`.
+- Detected in **23** indexed script(s).
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Duel.IsBattlePhase) with `Duel.IsBattlePhase`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
@@ -42,6 +42,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Volcanic Doomfire | `32543380` | [Scripts/c32543380.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c32543380.lua) | 1 |
 | Faisan, Hunting Scout of the Deep Forest | `86038337` | [Scripts/c86038337.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c86038337.lua) | 1 |
 | Champion's Pulse | `46001505` | [Scripts/c46001505.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c46001505.lua) | 1 |
+| The Great Gallant Bandit | `24203749` | [Scripts/c24203749.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c24203749.lua) | 1 |
 | Assist★Yummy! | `86762958` | [Scripts/c86762958.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c86762958.lua) | 1 |
 | Sky Striker Mecha - Adil Saber | `61151074` | [Scripts/c61151074.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c61151074.lua) | 1 |
 | Regenesis Lord | `22812963` | [Scripts/c22812963.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c22812963.lua) | 1 |

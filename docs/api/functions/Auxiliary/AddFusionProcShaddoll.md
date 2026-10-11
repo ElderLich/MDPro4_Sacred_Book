@@ -24,7 +24,7 @@ Registers the Shaddoll Fusion Material procedure requiring one Shaddoll material
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **7** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Auxiliary.AddFusionProcShaddoll`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Auxiliary.AddFusionProcShaddoll) with `Auxiliary.AddFusionProcShaddoll`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

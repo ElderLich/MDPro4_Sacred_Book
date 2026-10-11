@@ -21,14 +21,14 @@ Checks whether c has a Level greater than 0 and greater than or equal to level.
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3616`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3668`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **755** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Card.IsLevelAbove`.
+- Detected in **773** indexed script(s).
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Card.IsLevelAbove) with `Card.IsLevelAbove`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
@@ -55,8 +55,8 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Heavy Interlock | `20071842` | [Scripts/c20071842.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c20071842.lua) | 1 |
 | Primite Fusion | `99161253` | [Scripts/c99161253.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c99161253.lua) | 1 |
 | Favorite Hero | `11881272` | [Scripts/c11881272.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c11881272.lua) | 2 |
-| Kaiki the Unity Star | `60822251` | [Scripts/c60822251.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c60822251.lua) | 1 |
-| ...and 731 more |  |  |  |
+| Quick Summon | `10086952` | [Scripts/c10086952.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c10086952.lua) | 3 |
+| ...and 749 more |  |  |  |
 
 ## Script Examples
 

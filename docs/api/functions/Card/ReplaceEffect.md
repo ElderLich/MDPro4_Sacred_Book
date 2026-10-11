@@ -24,14 +24,14 @@ count defaults to 1; phase resets automatically include both players' turns when
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3570`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3622`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **2** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Card.ReplaceEffect`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Card.ReplaceEffect) with `Card.ReplaceEffect`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

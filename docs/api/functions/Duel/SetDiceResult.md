@@ -27,7 +27,7 @@ Sets the five stored dice-result slots; missing or out-of-range values are store
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **2** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Duel.SetDiceResult`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Duel.SetDiceResult) with `Duel.SetDiceResult`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

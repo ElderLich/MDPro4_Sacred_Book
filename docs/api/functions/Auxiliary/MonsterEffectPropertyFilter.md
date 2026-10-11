@@ -20,14 +20,14 @@ Returns a predicate that checks whether an Effect has property flag and is not r
 
 ## Source
 
-- `Utilities/utility.lua:2028`
+- `Utilities/utility.lua:2040`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **1** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Auxiliary.MonsterEffectPropertyFilter`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Auxiliary.MonsterEffectPropertyFilter) with `Auxiliary.MonsterEffectPropertyFilter`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

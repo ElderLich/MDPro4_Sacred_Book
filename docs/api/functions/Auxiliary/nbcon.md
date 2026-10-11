@@ -21,20 +21,20 @@ Condition helper for effects that negate an activation and banish the activating
 
 ## Source
 
-- `Utilities/utility.lua:1464`
+- `Utilities/utility.lua:1467`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **4** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Auxiliary.nbcon`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Auxiliary.nbcon) with `Auxiliary.nbcon`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
 | [Shooting Majestic Star Dragon](/examples/cards/40939228) | `40939228` | [Scripts/c40939228.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c40939228.lua) | 1 |
 | [W:P Fancy Ball](/examples/cards/4993187) | `4993187` | [Scripts/c4993187.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c4993187.lua) | 1 |
-| Virakam the Artificial Spirit | `10673071` | [Scripts/c10673071.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c10673071.lua) | 1 |
+| Virakam, the Divine Spirit of Artifice | `10673071` | [Scripts/c10673071.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c10673071.lua) | 1 |
 | Linguriboh | `24842059` | [Scripts/c24842059.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c24842059.lua) | 1 |
 
 ## Script Examples
@@ -63,7 +63,7 @@ function s.distg(e,tp,eg,ep,ev,re,r,rp,chk)
 	if re:GetHandler():IsRelateToEffect(re) then
 ```
 
-### Virakam the Artificial Spirit (`10673071`)
+### Virakam, the Divine Spirit of Artifice (`10673071`)
 
 Source: [Scripts/c10673071.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c10673071.lua)
 

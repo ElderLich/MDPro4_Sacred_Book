@@ -20,14 +20,14 @@ Checks whether c can be returned to the Deck or Extra Deck as a cost.
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3595`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3647`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **32** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Card.IsAbleToDeckOrExtraAsCost`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Card.IsAbleToDeckOrExtraAsCost) with `Card.IsAbleToDeckOrExtraAsCost`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

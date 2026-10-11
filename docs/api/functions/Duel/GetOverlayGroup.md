@@ -29,7 +29,7 @@ Returns the Xyz Materials attached to cards in player-relative locations s and o
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **5** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Duel.GetOverlayGroup`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Duel.GetOverlayGroup) with `Duel.GetOverlayGroup`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

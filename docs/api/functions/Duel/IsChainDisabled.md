@@ -27,7 +27,7 @@ Checks whether chainc has already been negated.
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **11** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Duel.IsChainDisabled`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Duel.IsChainDisabled) with `Duel.IsChainDisabled`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

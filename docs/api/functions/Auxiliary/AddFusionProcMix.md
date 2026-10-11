@@ -27,7 +27,7 @@ Each extra argument is a required material slot and may be a card code, filter f
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **8** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Auxiliary.AddFusionProcMix`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Auxiliary.AddFusionProcMix) with `Auxiliary.AddFusionProcMix`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

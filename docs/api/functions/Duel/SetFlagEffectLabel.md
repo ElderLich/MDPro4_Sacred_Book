@@ -28,11 +28,12 @@ Sets the first matching player flag effect's label to label and returns whether 
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **5** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Duel.SetFlagEffectLabel`.
+- Detected in **6** indexed script(s).
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Duel.SetFlagEffectLabel) with `Duel.SetFlagEffectLabel`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
+| Trirealm Rift Judgment | `65195679` | [Scripts/c65195679.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c65195679.lua) | 1 |
 | Mayakashi Mayhem | `41867019` | [Scripts/c41867019.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c41867019.lua) | 4 |
 | You and A.I. | `32056070` | [Scripts/c32056070.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c32056070.lua) | 1 |
 | Cairngorgon, Antiluminescent Knight | `21501505` | [Scripts/c21501505.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c21501505.lua) | 1 |
@@ -40,6 +41,18 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Dimensional Barrier | `83326048` | [Scripts/c83326048.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c83326048.lua) | 1 |
 
 ## Script Examples
+
+### Trirealm Rift Judgment (`65195679`)
+
+Source: [Scripts/c65195679.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c65195679.lua)
+
+```lua
+				local label=Duel.GetFlagEffectLabel(tp,id)
+				if label then
+					Duel.SetFlagEffectLabel(tp,id,label|att)
+				else
+					Duel.RegisterFlagEffect(tp,id,RESET_PHASE+PHASE_END,0,1,att)
+```
 
 ### Mayakashi Mayhem (`41867019`)
 
@@ -63,16 +76,4 @@ Source: [Scripts/c32056070.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/
 	Duel.SetFlagEffectLabel(tp,32056070,used)
 	if att&(ATTRIBUTE_EARTH+ATTRIBUTE_WATER)>0 then
 		e:SetCategory(CATEGORY_ATKCHANGE)
-```
-
-### Cairngorgon, Antiluminescent Knight (`21501505`)
-
-Source: [Scripts/c21501505.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c21501505.lua)
-
-```lua
-	local val=ct+bit.lshift(ev+1,16)
-	if label then
-		Duel.SetFlagEffectLabel(0,21501505,val)
-	else
-		Duel.RegisterFlagEffect(0,21501505,RESET_CHAIN,0,1,val)
 ```

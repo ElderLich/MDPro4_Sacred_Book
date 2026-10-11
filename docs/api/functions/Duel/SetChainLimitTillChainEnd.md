@@ -23,7 +23,7 @@ Registers a chain-limit callback that persists until the current chain ends.
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **43** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Duel.SetChainLimitTillChainEnd`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Duel.SetChainLimitTillChainEnd) with `Duel.SetChainLimitTillChainEnd`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
@@ -48,7 +48,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Slifer the Sky Dragon | `10000020` | [Scripts/c10000020.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c10000020.lua) | 1 |
 | GMX Lab #5 | `74378580` | [Scripts/c74378580.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c74378580.lua) | 2 |
 | Stellarknight Delteros | `56638325` | [Scripts/c56638325.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c56638325.lua) | 2 |
-| Pasto-Ral Theorealize | `36709484` | [Scripts/c36709484.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c36709484.lua) | 1 |
+| Theorealize Past Lull | `36709484` | [Scripts/c36709484.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c36709484.lua) | 1 |
 | Tri-Brigade Arms Bucephalus II | `10019086` | [Scripts/c10019086.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c10019086.lua) | 2 |
 | The Winged Dragon of Ra | `10000010` | [Scripts/c10000010.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c10000010.lua) | 1 |
 | ...and 19 more |  |  |  |

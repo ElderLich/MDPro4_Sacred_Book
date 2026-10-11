@@ -34,7 +34,7 @@ Adds a Ritual Summon effect for c that uses the Ritual Monster's current Level a
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **22** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Auxiliary.AddRitualProcGreater2`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Auxiliary.AddRitualProcGreater2) with `Auxiliary.AddRitualProcGreater2`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
@@ -42,9 +42,9 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Megalith Phul | `78990927` | [Scripts/c78990927.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c78990927.lua) | 1 |
 | Megalith Bethor | `99628747` | [Scripts/c99628747.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c99628747.lua) | 1 |
 | Prayers of the Voiceless Voice | `52472775` | [Scripts/c52472775.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c52472775.lua) | 1 |
-| Clown Crew Rehearsal | `20448151` | [Scripts/c20448151.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c20448151.lua) | 1 |
 | Impcantation Inception | `86758915` | [Scripts/c86758915.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c86758915.lua) | 1 |
 | Saffira, Dragon Queen of the Voiceless Voice | `51296484` | [Scripts/c51296484.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c51296484.lua) | 1 |
+| Clown Crew Rehearsal | `20448151` | [Scripts/c20448151.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c20448151.lua) | 1 |
 | Code Igniter | `5088741` | [Scripts/c5088741.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c5088741.lua) | 1 |
 | Cynet Ritual | `34767865` | [Scripts/c34767865.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c34767865.lua) | 1 |
 | Light and Darkness Ritual | `33599853` | [Scripts/c33599853.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c33599853.lua) | 1 |

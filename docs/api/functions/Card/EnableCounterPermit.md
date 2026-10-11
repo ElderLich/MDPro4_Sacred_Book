@@ -20,14 +20,14 @@ If location is omitted, monsters default to LOCATION_MZONE and non-monsters defa
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3634`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3686`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **178** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Card.EnableCounterPermit`.
+- Detected in **181** indexed script(s).
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Card.EnableCounterPermit) with `Card.EnableCounterPermit`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
@@ -50,12 +50,12 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Proto Enneacraft - "orgIA" | `56187077` | [Scripts/c56187077.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c56187077.lua) | 1 |
 | Limit Code | `86607583` | [Scripts/c86607583.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c86607583.lua) | 1 |
 | Servant of Endymion | `92559258` | [Scripts/c92559258.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c92559258.lua) | 1 |
+| Reversal Box | `2606417` | [Scripts/c2606417.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c2606417.lua) | 1 |
 | Lightsworn Sanctuary | `52665542` | [Scripts/c52665542.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c52665542.lua) | 1 |
 | Performapal Turn Trooper | `220414` | [Scripts/c220414.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c220414.lua) | 1 |
 | Mythical Beast Master Cerberus | `53842431` | [Scripts/c53842431.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c53842431.lua) | 1 |
 | Mythical Beast Medusa | `54965929` | [Scripts/c54965929.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c54965929.lua) | 1 |
-| Mythical Beast Garuda | `28570310` | [Scripts/c28570310.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c28570310.lua) | 1 |
-| ...and 154 more |  |  |  |
+| ...and 157 more |  |  |  |
 
 ## Script Examples
 

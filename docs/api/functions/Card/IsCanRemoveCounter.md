@@ -24,19 +24,19 @@ Checks whether player can remove count counters of countertype from c for reason
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3639`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3691`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **20** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Card.IsCanRemoveCounter`.
+- Detected in **21** indexed script(s).
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Card.IsCanRemoveCounter) with `Card.IsCanRemoveCounter`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
 | [El Shaddoll Apkallone](/examples/cards/50907446) | `50907446` | [Scripts/c50907446.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c50907446.lua) | 2 |
-| [El Shaddoll Meshachrer](/examples/cards/32467459) | `32467459` | [Scripts/c32467459.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c32467459.lua) | 2 |
+| El Shaddoll Meshachrer | `32467459` | [Scripts/c32467459.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c32467459.lua) | 2 |
 | Zebufera, Vaalmonican Hallow Heathen | `2815176` | [Scripts/c2815176.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c2815176.lua) | 2 |
 | Limit Code | `86607583` | [Scripts/c86607583.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c86607583.lua) | 1 |
 | Chaos Core | `54040484` | [Scripts/c54040484.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c54040484.lua) | 1 |
@@ -54,6 +54,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Pitch-Black Power Stone | `34029630` | [Scripts/c34029630.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c34029630.lua) | 3 |
 | Hinezumi Hanabi | `71459017` | [Scripts/c71459017.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c71459017.lua) | 1 |
 | Blast Magician | `21051146` | [Scripts/c21051146.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c21051146.lua) | 1 |
+| Myriaday Dragon | `81758313` | [Scripts/c81758313.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c81758313.lua) | 1 |
 | Magical Citadel of Endymion | `39910367` | [Scripts/c39910367.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c39910367.lua) | 1 |
 
 ## Script Examples

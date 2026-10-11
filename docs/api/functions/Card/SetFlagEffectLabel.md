@@ -22,14 +22,14 @@ Sets the first matching flag effect label for code on c to label and returns whe
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3558`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3610`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **13** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Card.SetFlagEffectLabel`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Card.SetFlagEffectLabel) with `Card.SetFlagEffectLabel`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

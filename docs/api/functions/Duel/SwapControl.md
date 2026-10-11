@@ -31,7 +31,7 @@ reset_phase and reset_count are optional temporary-control reset settings.
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **19** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Duel.SwapControl`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Duel.SwapControl) with `Duel.SwapControl`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

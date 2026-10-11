@@ -30,7 +30,7 @@ Returns the total number of countertype counters in player-relative locations s 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **12** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Duel.GetCounter`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Duel.GetCounter) with `Duel.GetCounter`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

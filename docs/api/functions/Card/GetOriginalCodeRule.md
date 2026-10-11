@@ -22,14 +22,14 @@ Double-code cards return two codes: the printed original code and the second rul
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3391`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3438`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **48** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Card.GetOriginalCodeRule`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Card.GetOriginalCodeRule) with `Card.GetOriginalCodeRule`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

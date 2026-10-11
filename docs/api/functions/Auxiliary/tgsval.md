@@ -22,14 +22,14 @@ Value helper for self-targeting protection; it returns true when the reason play
 
 ## Source
 
-- `Utilities/utility.lua:832`
+- `Utilities/utility.lua:835`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **2** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Auxiliary.tgsval`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Auxiliary.tgsval) with `Auxiliary.tgsval`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

@@ -22,7 +22,7 @@ Returns the row index for location and sequence from player 0's viewpoint. For p
 
 ## Source
 
-- `Utilities/utility.lua:621`
+- `Utilities/utility.lua:624`
 
 ## Used By
 

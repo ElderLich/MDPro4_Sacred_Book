@@ -21,14 +21,14 @@ Checks whether c can substitute for a specifically named Fusion Material listed 
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3648`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3700`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **5** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Card.CheckFusionSubstitute`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Card.CheckFusionSubstitute) with `Card.CheckFusionSubstitute`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

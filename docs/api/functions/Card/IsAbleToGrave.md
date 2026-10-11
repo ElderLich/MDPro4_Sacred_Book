@@ -20,19 +20,21 @@ Checks whether c can be sent to the Graveyard.
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3590`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3642`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **593** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Card.IsAbleToGrave`.
+- Detected in **609** indexed script(s).
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Card.IsAbleToGrave) with `Card.IsAbleToGrave`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
 | [Gem-Knight Dispersion](/examples/cards/24220368) | `24220368` | [Scripts/c24220368.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c24220368.lua) | 1 |
 | [Ehther the Heavenly Monarch](/examples/cards/96570609) | `96570609` | [Scripts/c96570609.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c96570609.lua) | 1 |
+| [Pere-Zenet Em Heru](/examples/cards/46273941) | `46273941` | [Scripts/c46273941.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c46273941.lua) | 1 |
+| [Am Duazenet](/examples/cards/45151304) | `45151304` | [Scripts/c45151304.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c45151304.lua) | 1 |
 | [GMX 55th Experiment Report](/examples/cards/38984832) | `38984832` | [Scripts/c38984832.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c38984832.lua) | 1 |
 | [Nekroz Kaleidoscope](/examples/cards/51124303) | `51124303` | [Scripts/c51124303.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c51124303.lua) | 1 |
 | [Future Fusion Nova](/examples/cards/92058902) | `92058902` | [Scripts/c92058902.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c92058902.lua) | 1 |
@@ -52,10 +54,8 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Amazoness Secret Arts | `86758746` | [Scripts/c86758746.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c86758746.lua) | 1 |
 | Enlilgirsu, the Orcust Mekk-Knight | `74820316` | [Scripts/c74820316.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c74820316.lua) | 2 |
 | Erebus the Underworld Monarch | `23064604` | [Scripts/c23064604.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c23064604.lua) | 1 |
-| Fallen Paradise of the Sacred Beasts | `65861210` | [Scripts/c65861210.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c65861210.lua) | 1 |
 | Extinguishing the Ashened | `98828338` | [Scripts/c98828338.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c98828338.lua) | 1 |
-| R.B. Lambda Blade | `17188206` | [Scripts/c17188206.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c17188206.lua) | 1 |
-| ...and 569 more |  |  |  |
+| ...and 585 more |  |  |  |
 
 ## Script Examples
 
@@ -83,14 +83,14 @@ end
 function c96570609.spfilter(c,e,tp)
 ```
 
-### GMX 55th Experiment Report (`38984832`)
+### Pere-Zenet Em Heru (`46273941`)
 
-Source: [Scripts/c38984832.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c38984832.lua)
+Source: [Scripts/c46273941.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c46273941.lua)
 
 ```lua
+function s.matfilter(c)
+	return c:IsAllCardTypes(TYPE_NORMAL+TYPE_MONSTER)
+		and c:IsFaceupEx() and c:IsAbleToGrave()
 end
-function s.matdeckfilter(c)
-	return c:IsSetCard(0x1dd) and c:IsType(TYPE_MONSTER) and c:IsCanBeFusionMaterial() and c:IsAbleToGrave()
-end
-function s.matfilter1(c,e)
+function s.sptg(e,tp,eg,ep,ev,re,r,rp,chk)
 ```

@@ -27,14 +27,14 @@ Condition helper for EVENT_BATTLE_DESTROYING effects; it returns true when the h
 
 ## Source
 
-- `Utilities/utility.lua:769`
+- `Utilities/utility.lua:772`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **70** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Auxiliary.bdocon`.
+- Detected in **71** indexed script(s).
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Auxiliary.bdocon) with `Auxiliary.bdocon`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
@@ -47,22 +47,22 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Flower Cardian Zebra Grass with Moon | `43413875` | [Scripts/c43413875.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c43413875.lua) | 1 |
 | Black Luster Soldier - Envoy of the Beginning | `72989439` | [Scripts/c72989439.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c72989439.lua) | 1 |
 | Dark Templar @Ignister | `97383507` | [Scripts/c97383507.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c97383507.lua) | 1 |
-| Phantasm Spiral Assault | `97795930` | [Scripts/c97795930.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c97795930.lua) | 1 |
 | Gizmek Kaku, the Supreme Shining Sky Stag | `63633694` | [Scripts/c63633694.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c63633694.lua) | 1 |
+| Phantasm Spiral Assault | `97795930` | [Scripts/c97795930.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c97795930.lua) | 1 |
 | Abyss Actor - Evil Heel | `52240819` | [Scripts/c52240819.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c52240819.lua) | 1 |
 | Deskbot 004 | `22227683` | [Scripts/c22227683.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c22227683.lua) | 1 |
 | Malefic Truth Dragon | `37115575` | [Scripts/c37115575.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c37115575.lua) | 1 |
 | Dangerous Frightfur Nightmary | `58468105` | [Scripts/c58468105.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c58468105.lua) | 1 |
 | Noh-P.U.N.K. Foxy Tune | `55920742` | [Scripts/c55920742.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c55920742.lua) | 1 |
 | Black Luster Soldier - Soldier of Chaos | `49202162` | [Scripts/c49202162.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c49202162.lua) | 1 |
+| Thoroughbred Elf | `68798161` | [Scripts/c68798161.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c68798161.lua) | 1 |
 | Fossil Machine Skull Buggy | `10040267` | [Scripts/c10040267.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c10040267.lua) | 1 |
 | Fossil Machine Skull Wagon | `83656563` | [Scripts/c83656563.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c83656563.lua) | 1 |
 | Delta Tri | `12079734` | [Scripts/c12079734.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c12079734.lua) | 1 |
 | Full Armored Utopic Ray Lancer | `1269512` | [Scripts/c1269512.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c1269512.lua) | 1 |
 | Gaia the Magical Knight of Dragons | `15989522` | [Scripts/c15989522.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c15989522.lua) | 1 |
 | Fire Fighting Daruma Doll | `64514892` | [Scripts/c64514892.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c64514892.lua) | 1 |
-| Black Luster Soldier - Soldier of Light and Darkness | `70405001` | [Scripts/c70405001.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c70405001.lua) | 1 |
-| ...and 46 more |  |  |  |
+| ...and 47 more |  |  |  |
 
 ## Script Examples
 

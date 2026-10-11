@@ -29,8 +29,8 @@ player defaults to PLAYER_ALL and loc defaults to LOCATION_ONFIELD. The core che
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **114** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Duel.IsEnvironment`.
+- Detected in **121** indexed script(s).
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Duel.IsEnvironment) with `Duel.IsEnvironment`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
@@ -47,6 +47,8 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Yorishiro of the Aqua | `57511992` | [Scripts/c57511992.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c57511992.lua) | 2 |
 | The Executor of the Underworld - Pluto | `37706769` | [Scripts/c37706769.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c37706769.lua) | 1 |
 | Light Force | `30913809` | [Scripts/c30913809.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c30913809.lua) | 1 |
+| Atlantis Call | `65785782` | [Scripts/c65785782.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c65785782.lua) | 1 |
+| Coralianektes the Shimmering Shining Dragon | `82692552` | [Scripts/c82692552.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c82692552.lua) | 1 |
 | Vaylantz Mad Marquess | `87897777` | [Scripts/c87897777.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c87897777.lua) | 1 |
 | Necrovalley Temple | `56773577` | [Scripts/c56773577.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c56773577.lua) | 1 |
 | Phantasm Spiral Power | `61397885` | [Scripts/c61397885.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c61397885.lua) | 1 |
@@ -56,9 +58,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Symphonic Warrior Rockks | `24070330` | [Scripts/c24070330.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c24070330.lua) | 1 |
 | Ojama Emperor | `34031284` | [Scripts/c34031284.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c34031284.lua) | 1 |
 | Prinzessin | `78527720` | [Scripts/c78527720.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c78527720.lua) | 1 |
-| Number C1: Numeron Chaos Gate Sunya | `79747096` | [Scripts/c79747096.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c79747096.lua) | 1 |
-| Symphonic Warrior DJJ | `70204022` | [Scripts/c70204022.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c70204022.lua) | 2 |
-| ...and 90 more |  |  |  |
+| ...and 97 more |  |  |  |
 
 ## Script Examples
 

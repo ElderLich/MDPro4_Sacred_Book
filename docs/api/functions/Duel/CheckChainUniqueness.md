@@ -23,7 +23,7 @@ Checks whether all current Chain Links have different handler card codes.
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **8** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Duel.CheckChainUniqueness`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Duel.CheckChainUniqueness) with `Duel.CheckChainUniqueness`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

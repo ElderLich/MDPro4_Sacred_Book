@@ -25,14 +25,14 @@ Lets tp select one card for each filter in checks, optionally cancelable. If f i
 
 ## Source
 
-- `Utilities/utility.lua:1353`
+- `Utilities/utility.lua:1356`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **31** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Group.SelectSubGroupEach`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Group.SelectSubGroupEach) with `Group.SelectSubGroupEach`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

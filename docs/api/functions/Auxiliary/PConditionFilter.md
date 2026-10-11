@@ -32,7 +32,7 @@ Pendulum Summon candidate filter. It checks location, Level or pendulum_level, s
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **2** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Auxiliary.PConditionFilter`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Auxiliary.PConditionFilter) with `Auxiliary.PConditionFilter`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

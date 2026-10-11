@@ -31,7 +31,7 @@ Ritual material group predicate that checks zone availability, the requested Gre
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **30** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Auxiliary.RitualCheck`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Auxiliary.RitualCheck) with `Auxiliary.RitualCheck`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

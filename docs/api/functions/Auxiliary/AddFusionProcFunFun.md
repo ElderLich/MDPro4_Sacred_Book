@@ -27,7 +27,7 @@ Registers a Fusion procedure requiring one material satisfying f1 and cc materia
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **7** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Auxiliary.AddFusionProcFunFun`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Auxiliary.AddFusionProcFunFun) with `Auxiliary.AddFusionProcFunFun`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

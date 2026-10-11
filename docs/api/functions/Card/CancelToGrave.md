@@ -19,14 +19,14 @@ Use this helper to keep such cards on the field, as with Swords of Revealing Lig
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3654`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3706`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **114** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Card.CancelToGrave`.
+- Detected in **115** indexed script(s).
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Card.CancelToGrave) with `Card.CancelToGrave`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
@@ -45,6 +45,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Shichi-Go-San | `11035075` | [Scripts/c11035075.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c11035075.lua) | 2 |
 | Gergonne's End | `59490397` | [Scripts/c59490397.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c59490397.lua) | 2 |
 | Malefic Force | `68721020` | [Scripts/c68721020.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c68721020.lua) | 2 |
+| The Glitter of Raise Moon | `9362643` | [Scripts/c9362643.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c9362643.lua) | 1 |
 | Limit Code | `86607583` | [Scripts/c86607583.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c86607583.lua) | 2 |
 | Goblin's Crazy Beast | `71100270` | [Scripts/c71100270.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c71100270.lua) | 1 |
 | Amaze Attraction Cyclo-Coaster | `66984907` | [Scripts/c66984907.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c66984907.lua) | 2 |
@@ -53,8 +54,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Laevatein, Generaider Boss of Shadows | `74615388` | [Scripts/c74615388.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c74615388.lua) | 1 |
 | Assault Spirits | `87043568` | [Scripts/c87043568.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c87043568.lua) | 2 |
 | Goblin Biker Grand Pileup | `90946420` | [Scripts/c90946420.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c90946420.lua) | 1 |
-| Epurrely Plump | `24434049` | [Scripts/c24434049.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c24434049.lua) | 1 |
-| ...and 90 more |  |  |  |
+| ...and 91 more |  |  |  |
 
 ## Script Examples
 

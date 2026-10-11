@@ -50,8 +50,8 @@ The score function receives each candidate card first, then any extra arguments.
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **53** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Group.GetMaxGroup`.
+- Detected in **54** indexed script(s).
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Group.GetMaxGroup) with `Group.GetMaxGroup`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
@@ -74,12 +74,12 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Tri-Brigade Revolt | `40975243` | [Scripts/c40975243.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c40975243.lua) | 2 |
 | Ancient Warriors - Rebellious Lu Feng | `82791472` | [Scripts/c82791472.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c82791472.lua) | 4 |
 | Divine Serpent Geh | `82103466` | [Scripts/c82103466.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c82103466.lua) | 2 |
+| Mind Mirror Force | `66247039` | [Scripts/c66247039.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c66247039.lua) | 1 |
 | Rock of the Vanquisher | `28168628` | [Scripts/c28168628.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c28168628.lua) | 1 |
 | Timaeus the Knight of Destiny | `53315891` | [Scripts/c53315891.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c53315891.lua) | 2 |
 | Ace★Spades Speculation | `10796448` | [Scripts/c10796448.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c10796448.lua) | 1 |
 | Pandemic Dragon | `68299524` | [Scripts/c68299524.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c68299524.lua) | 1 |
-| Red Reign | `5376159` | [Scripts/c5376159.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c5376159.lua) | 2 |
-| ...and 29 more |  |  |  |
+| ...and 30 more |  |  |  |
 
 ## Script Examples
 

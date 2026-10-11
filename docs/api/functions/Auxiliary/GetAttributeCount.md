@@ -16,14 +16,14 @@ Returns how many different Attributes are represented among the cards in g; an e
 
 ## Source
 
-- `Utilities/utility.lua:584`
+- `Utilities/utility.lua:587`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **9** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Auxiliary.GetAttributeCount`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Auxiliary.GetAttributeCount) with `Auxiliary.GetAttributeCount`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

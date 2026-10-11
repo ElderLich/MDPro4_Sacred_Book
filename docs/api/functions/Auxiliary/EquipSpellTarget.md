@@ -34,7 +34,7 @@ The generated target callback calls `Duel.SelectTarget` and announces `CATEGORY_
 
 ## Source
 
-- `Utilities/utility.lua:1909`
+- `Utilities/utility.lua:1914`
 
 ## Used By
 

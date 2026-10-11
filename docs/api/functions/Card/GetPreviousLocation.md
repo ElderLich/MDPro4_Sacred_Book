@@ -20,14 +20,14 @@ Returns c's previous location bitmask from before its last location change.
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3470`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3519`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **5** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Card.GetPreviousLocation`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Card.GetPreviousLocation) with `Card.GetPreviousLocation`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

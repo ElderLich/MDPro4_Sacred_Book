@@ -20,14 +20,14 @@ Returns true for face-up cards with current DEF greater than 0.
 
 ## Source
 
-- `Utilities/utility.lua:844`
+- `Utilities/utility.lua:847`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **6** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Auxiliary.nzdef`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Auxiliary.nzdef) with `Auxiliary.nzdef`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

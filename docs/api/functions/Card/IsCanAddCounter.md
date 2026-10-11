@@ -25,14 +25,14 @@ When loc is 0, c must currently be face-up on the field. When loc is nonzero, th
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3638`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3690`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **82** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Card.IsCanAddCounter`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Card.IsCanAddCounter) with `Card.IsCanAddCounter`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

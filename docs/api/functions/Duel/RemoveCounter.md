@@ -32,8 +32,8 @@ s marks locations on player's own field and o marks locations on the opponent's 
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **58** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Duel.RemoveCounter`.
+- Detected in **59** indexed script(s).
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Duel.RemoveCounter) with `Duel.RemoveCounter`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
@@ -50,6 +50,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Synchro World | `36742774` | [Scripts/c36742774.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c36742774.lua) | 1 |
 | Signal Warrior | `9634146` | [Scripts/c9634146.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c9634146.lua) | 1 |
 | Mythical Institution | `94599451` | [Scripts/c94599451.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c94599451.lua) | 1 |
+| Spell Power Attainment | `39123673` | [Scripts/c39123673.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c39123673.lua) | 1 |
 | Cosmic Fortress Gol'gar | `68319538` | [Scripts/c68319538.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c68319538.lua) | 1 |
 | Mythical Beast Bashilisk | `80959027` | [Scripts/c80959027.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c80959027.lua) | 1 |
 | Symphonic Warrior Miccs | `5399521` | [Scripts/c5399521.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c5399521.lua) | 1 |
@@ -60,8 +61,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Mature Chronicle | `92650749` | [Scripts/c92650749.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c92650749.lua) | 5 |
 | Gadarla, the Mystery Dust Kaiju | `36956512` | [Scripts/c36956512.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c36956512.lua) | 1 |
 | Super Anti-Kaiju War Machine Mecha-Dogoran | `84769941` | [Scripts/c84769941.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c84769941.lua) | 1 |
-| Supreme Arcanite Magician | `21113684` | [Scripts/c21113684.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c21113684.lua) | 1 |
-| ...and 34 more |  |  |  |
+| ...and 35 more |  |  |  |
 
 ## Script Examples
 

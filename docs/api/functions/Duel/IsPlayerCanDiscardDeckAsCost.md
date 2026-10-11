@@ -28,7 +28,7 @@ Checks whether player can send count cards from the top of the Deck to the Grave
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **26** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Duel.IsPlayerCanDiscardDeckAsCost`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Duel.IsPlayerCanDiscardDeckAsCost) with `Duel.IsPlayerCanDiscardDeckAsCost`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

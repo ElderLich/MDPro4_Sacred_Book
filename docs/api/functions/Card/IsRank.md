@@ -24,14 +24,14 @@ Nil rank arguments are skipped. The binding compares the numeric Rank directly; 
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3491`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3543`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **106** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Card.IsRank`.
+- Detected in **109** indexed script(s).
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Card.IsRank) with `Card.IsRank`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
@@ -52,14 +52,14 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | K9-LC Release Restraint | `27308231` | [Scripts/c27308231.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c27308231.lua) | 1 |
 | Disaster, Dragon Ruler of All Apocalypses | `67359907` | [Scripts/c67359907.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c67359907.lua) | 1 |
 | Shichi-Go-San | `11035075` | [Scripts/c11035075.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c11035075.lua) | 1 |
+| V Umbral Horror | `39053882` | [Scripts/c39053882.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c39053882.lua) | 1 |
 | Eclipse, Dragon Ruler of Catastrophes | `30350202` | [Scripts/c30350202.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c30350202.lua) | 1 |
 | Dark Rebellion Xyz Dragon of the Four Heavenly Dragons | `90091224` | [Scripts/c90091224.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c90091224.lua) | 1 |
 | Rank-Up-Magic Argent Chaos Force | `94220427` | [Scripts/c94220427.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c94220427.lua) | 1 |
+| Raise Moon Wings Rapi | `47828069` | [Scripts/c47828069.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c47828069.lua) | 1 |
 | Tellarknight Ptolemaeus | `18326736` | [Scripts/c18326736.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c18326736.lua) | 1 |
 | Xyz Revive Splash | `32764863` | [Scripts/c32764863.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c32764863.lua) | 1 |
-| Materiactor Meltdown | `38669664` | [Scripts/c38669664.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c38669664.lua) | 1 |
-| Rank-Up-Magic Barian's Force | `47660516` | [Scripts/c47660516.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c47660516.lua) | 1 |
-| ...and 82 more |  |  |  |
+| ...and 85 more |  |  |  |
 
 ## Script Examples
 

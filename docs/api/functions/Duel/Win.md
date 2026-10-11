@@ -24,7 +24,7 @@ Sets player as the duel winner with reason, but only if no winner has already be
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **20** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Duel.Win`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Duel.Win) with `Duel.Win`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

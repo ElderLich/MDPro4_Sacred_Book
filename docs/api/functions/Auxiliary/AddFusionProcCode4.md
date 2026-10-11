@@ -29,7 +29,7 @@ Registers a fixed four-name Fusion procedure requiring code1, code2, code3, and 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **2** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Auxiliary.AddFusionProcCode4`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Auxiliary.AddFusionProcCode4) with `Auxiliary.AddFusionProcCode4`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

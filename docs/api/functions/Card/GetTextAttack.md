@@ -21,17 +21,18 @@ This is the printed/database value, not the current ATK. Unlike Card.GetAttack, 
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3445`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3493`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **105** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Card.GetTextAttack`.
+- Detected in **109** indexed script(s).
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Card.GetTextAttack) with `Card.GetTextAttack`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
+| [Destratification Dino Stratiae](/examples/cards/3841104) | `3841104` | [Scripts/c3841104.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c3841104.lua) | 1 |
 | Duel Link Dragon, the Duel Dragon | `60025883` | [Scripts/c60025883.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c60025883.lua) | 1 |
 | Meklord Astro Mekanikle | `63468625` | [Scripts/c63468625.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c63468625.lua) | 2 |
 | Spirit Poacher | `85150300` | [Scripts/c85150300.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c85150300.lua) | 1 |
@@ -52,13 +53,24 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Crystal Clear Wing Synchro Dragon | `59765225` | [Scripts/c59765225.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c59765225.lua) | 1 |
 | Meklord Emperor Wisel | `68140974` | [Scripts/c68140974.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c68140974.lua) | 1 |
 | Gizmek Okami, the Dreaded Deluge Dragon | `43218406` | [Scripts/c43218406.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c43218406.lua) | 1 |
+| Zenet Per Akh | `72278590` | [Scripts/c72278590.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c72278590.lua) | 1 |
 | Nibiru, the Primal Being | `27204311` | [Scripts/c27204311.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c27204311.lua) | 2 |
 | Loud Cloud the Storm Serpent | `61465001` | [Scripts/c61465001.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c61465001.lua) | 1 |
-| R.B. Last Stand | `43450363` | [Scripts/c43450363.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c43450363.lua) | 2 |
-| The Atmosphere | `14466224` | [Scripts/c14466224.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c14466224.lua) | 1 |
-| ...and 81 more |  |  |  |
+| ...and 85 more |  |  |  |
 
 ## Script Examples
+
+### Destratification Dino Stratiae (`3841104`)
+
+Source: [Scripts/c3841104.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c3841104.lua)
+
+```lua
+	for tc in aux.Next(g) do
+		if tc:IsLinkRace(RACE_DINOSAUR) and aux.covcheck(tc) then
+			local tatk=tc:GetTextAttack()
+			if tatk>0 then atk=atk+tatk end
+		end
+```
 
 ### Duel Link Dragon, the Duel Dragon (`60025883`)
 
@@ -82,16 +94,4 @@ Source: [Scripts/c63468625.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/
 		local atk=tc:GetTextAttack()
 		if atk<0 then atk=0 end
 		if not Duel.Equip(tp,tc,c,false) then return end
-```
-
-### Spirit Poacher (`85150300`)
-
-Source: [Scripts/c85150300.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c85150300.lua)
-
-```lua
-function s.sfilter(c,e,tp)
-	return c:GetOriginalType()&TYPE_MONSTER>0 and c:IsFaceup() and c:IsCanBeSpecialSummoned(e,0,1-tp,false,false,POS_FACEUP,1-tp)
-		and Duel.GetLP(1-tp)>=c:GetBaseAttack() and c:GetTextAttack()>=0
-end
-function s.settg(e,tp,eg,ep,ev,re,r,rp,chk)
 ```

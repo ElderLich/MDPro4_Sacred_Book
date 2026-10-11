@@ -30,7 +30,7 @@ Special Summon restriction value for Evil HERO/Dark Fusion effects; allows Dark 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **10** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Auxiliary.DarkFusionLimit`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Auxiliary.DarkFusionLimit) with `Auxiliary.DarkFusionLimit`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

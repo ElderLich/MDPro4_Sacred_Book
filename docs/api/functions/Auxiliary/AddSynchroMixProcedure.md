@@ -32,13 +32,13 @@ The maximum count is capped by c's Level after subtracting any required fixed ma
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **35** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Auxiliary.AddSynchroMixProcedure`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Auxiliary.AddSynchroMixProcedure) with `Auxiliary.AddSynchroMixProcedure`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
 | [Shooting Majestic Star Dragon](/examples/cards/40939228) | `40939228` | [Scripts/c40939228.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c40939228.lua) | 1 |
+| [Kewl Tune Crackle](/examples/cards/39576656) | `39576656` | [Scripts/c39576656.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c39576656.lua) | 1 |
 | Red Nova Dragon - Burning Soul | `65541655` | [Scripts/c65541655.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c65541655.lua) | 1 |
-| Kewl Tune Crackle | `39576656` | [Scripts/c39576656.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c39576656.lua) | 1 |
 | Nirvana High Paladin | `80896940` | [Scripts/c80896940.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c80896940.lua) | 1 |
 | Kewl Tune Remix | `88170262` | [Scripts/c88170262.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c88170262.lua) | 1 |
 | Red Hypernova Dragon | `30698243` | [Scripts/c30698243.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c30698243.lua) | 1 |
@@ -76,18 +76,6 @@ Source: [Scripts/c40939228.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/
 	--special summon condition
 ```
 
-### Red Nova Dragon - Burning Soul (`65541655`)
-
-Source: [Scripts/c65541655.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c65541655.lua)
-
-```lua
-	aux.AddCodeList(c,70902743)
-	--synchro summon
-	aux.AddSynchroMixProcedure(c,aux.Tuner(nil),aux.Tuner(nil),nil,aux.NonTuner(nil),1,1)
-	c:EnableReviveLimit()
-	--cannot special summon
-```
-
 ### Kewl Tune Crackle (`39576656`)
 
 Source: [Scripts/c39576656.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c39576656.lua)
@@ -98,4 +86,16 @@ Source: [Scripts/c39576656.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/
 	aux.AddSynchroMixProcedure(c,aux.FilterBoolFunction(Card.IsCode,43904702),nil,nil,aux.Tuner(nil),1,99)
 	c:EnableReviveLimit()
 	--remove extra
+```
+
+### Red Nova Dragon - Burning Soul (`65541655`)
+
+Source: [Scripts/c65541655.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c65541655.lua)
+
+```lua
+	aux.AddCodeList(c,70902743)
+	--synchro summon
+	aux.AddSynchroMixProcedure(c,aux.Tuner(nil),aux.Tuner(nil),nil,aux.NonTuner(nil),1,1)
+	c:EnableReviveLimit()
+	--cannot special summon
 ```

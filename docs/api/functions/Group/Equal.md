@@ -28,7 +28,7 @@ Checks whether g1 and g2 contain exactly the same cards in the same internal ord
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **1** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Group.Equal`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Group.Equal) with `Group.Equal`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

@@ -26,14 +26,14 @@ min and max restrict the number of non-Tuner Synchro Materials used by the proce
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3579`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3631`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **75** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Card.IsSynchroSummonable`.
+- Detected in **78** indexed script(s).
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Card.IsSynchroSummonable) with `Card.IsSynchroSummonable`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
@@ -58,10 +58,10 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Magicolloidal Sol | `67694706` | [Scripts/c67694706.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c67694706.lua) | 2 |
 | Garden Rose Flora | `76524506` | [Scripts/c76524506.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c76524506.lua) | 2 |
 | X-Saber Bruno | `45462306` | [Scripts/c45462306.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c45462306.lua) | 2 |
+| Crystron Rion | `66938505` | [Scripts/c66938505.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c66938505.lua) | 1 |
 | Crystron Tristaros | `99471856` | [Scripts/c99471856.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c99471856.lua) | 1 |
 | Speedroid Gum Prize | `70939418` | [Scripts/c70939418.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c70939418.lua) | 2 |
-| Shooting Riser Dragon | `68431965` | [Scripts/c68431965.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c68431965.lua) | 2 |
-| ...and 51 more |  |  |  |
+| ...and 54 more |  |  |  |
 
 ## Script Examples
 

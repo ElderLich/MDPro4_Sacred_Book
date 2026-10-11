@@ -20,22 +20,22 @@ Filter for effects that negate a face-up card. Trap Monsters only need to be fac
 
 ## Source
 
-- `Utilities/utility.lua:752`
+- `Utilities/utility.lua:755`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **81** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Auxiliary.NegateAnyFilter`.
+- Detected in **86** indexed script(s).
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Auxiliary.NegateAnyFilter) with `Auxiliary.NegateAnyFilter`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
 | [El Shaddoll Apkallone](/examples/cards/50907446) | `50907446` | [Scripts/c50907446.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c50907446.lua) | 3 |
 | [DoSolfachord Coolia](/examples/cards/80776622) | `80776622` | [Scripts/c80776622.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c80776622.lua) | 3 |
 | [Transonic Bird](/examples/cards/34072799) | `34072799` | [Scripts/c34072799.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c34072799.lua) | 3 |
-| Destruction Chant of the Sacred Beast | `50147815` | [Scripts/c50147815.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c50147815.lua) | 2 |
-| Astrolasma Urania | `18738846` | [Scripts/c18738846.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c18738846.lua) | 4 |
+| Sacred Beasts Combined Assault | `50147815` | [Scripts/c50147815.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c50147815.lua) | 2 |
+| Astrazma Urania | `18738846` | [Scripts/c18738846.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c18738846.lua) | 4 |
 | Elfnotes: Rhapsodia of Madness | `24092792` | [Scripts/c24092792.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c24092792.lua) | 2 |
 | Traptrix Atypus | `48183890` | [Scripts/c48183890.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c48183890.lua) | 3 |
 | Radiant Typhoon Mandate | `53813120` | [Scripts/c53813120.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c53813120.lua) | 3 |
@@ -48,14 +48,14 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Scourge of the White Forest | `93723936` | [Scripts/c93723936.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c93723936.lua) | 1 |
 | Dragunity Knight - Areus | `34528176` | [Scripts/c34528176.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c34528176.lua) | 3 |
 | Qliphort Genius | `22423493` | [Scripts/c22423493.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c22423493.lua) | 5 |
+| Ars Magna - "Philosophirum" | `90728287` | [Scripts/c90728287.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c90728287.lua) | 2 |
 | Gunkan Suship Uni-class Super-Dreadnought | `94798725` | [Scripts/c94798725.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c94798725.lua) | 3 |
 | Despian Luluwalilith | `53971455` | [Scripts/c53971455.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c53971455.lua) | 1 |
 | Goblin Freefall Squad | `85123771` | [Scripts/c85123771.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c85123771.lua) | 1 |
 | Diabrocken the Ominous Specter | `6083904` | [Scripts/c6083904.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c6083904.lua) | 3 |
 | The Three Champions of Swordsoul | `74405783` | [Scripts/c74405783.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c74405783.lua) | 3 |
 | Kewl Tune RS | `15665977` | [Scripts/c15665977.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c15665977.lua) | 3 |
-| Baelgrill de Nouvelles | `88890658` | [Scripts/c88890658.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c88890658.lua) | 3 |
-| ...and 57 more |  |  |  |
+| ...and 62 more |  |  |  |
 
 ## Script Examples
 

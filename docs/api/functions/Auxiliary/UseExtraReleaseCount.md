@@ -17,14 +17,14 @@ Consumes count limits for opponent's cards in g that were released through EFFEC
 
 ## Source
 
-- `Utilities/utility.lua:1508`
+- `Utilities/utility.lua:1511`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **53** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Auxiliary.UseExtraReleaseCount`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Auxiliary.UseExtraReleaseCount) with `Auxiliary.UseExtraReleaseCount`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
@@ -39,9 +39,9 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Dawn Angel Kambi | `12500059` | [Scripts/c12500059.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c12500059.lua) | 1 |
 | Hrimnir the Divine Follower | `49904658` | [Scripts/c49904658.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c49904658.lua) | 1 |
 | Supreme King Dragon Odd-Eyes | `96733134` | [Scripts/c96733134.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c96733134.lua) | 1 |
+| Vampire Voivode | `4918855` | [Scripts/c4918855.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c4918855.lua) | 1 |
 | Blaze Cannon | `4059313` | [Scripts/c4059313.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c4059313.lua) | 1 |
 | Shooting Star Dragon T.G. EX | `63180841` | [Scripts/c63180841.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c63180841.lua) | 1 |
-| Vampire Voivode | `4918855` | [Scripts/c4918855.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c4918855.lua) | 1 |
 | Winds Over the Ice Barrier | `17197110` | [Scripts/c17197110.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c17197110.lua) | 1 |
 | Rasterliger | `88000953` | [Scripts/c88000953.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c88000953.lua) | 1 |
 | Duke Shade, the Sinister Shadow Lord | `12766474` | [Scripts/c12766474.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c12766474.lua) | 1 |

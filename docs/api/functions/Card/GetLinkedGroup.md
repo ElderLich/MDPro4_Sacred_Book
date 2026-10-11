@@ -21,14 +21,14 @@ Use this when an effect cares about the actual cards in zones pointed to by c's 
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3422`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3470`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **61** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Card.GetLinkedGroup`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Card.GetLinkedGroup) with `Card.GetLinkedGroup`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

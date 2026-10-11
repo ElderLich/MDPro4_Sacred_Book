@@ -1,6 +1,6 @@
 # Auxiliary
 
-365 functions in the `Auxiliary` namespace.
+368 functions in the `Auxiliary` namespace.
 
 - [Auxiliary.AddBanishRedirect](AddBanishRedirect.md)
 - [Auxiliary.AddCodeList](AddCodeList.md)
@@ -51,6 +51,7 @@
 - [Auxiliary.ArcanaCoinOperation](ArcanaCoinOperation.md)
 - [Auxiliary.ArcanaCoinTarget](ArcanaCoinTarget.md)
 - [Auxiliary.ArcanaCondition](ArcanaCondition.md)
+- [Auxiliary.ArsMagnaFilter](ArsMagnaFilter.md)
 - [Auxiliary.AssaultModeLimit](AssaultModeLimit.md)
 - [Auxiliary.AtkEqualsDef](AtkEqualsDef.md)
 - [Auxiliary.BanishRedirectCondition](BanishRedirectCondition.md)
@@ -77,6 +78,7 @@
 - [Auxiliary.ContactFusionOperation](ContactFusionOperation.md)
 - [Auxiliary.ContactFusionSendToDeck](ContactFusionSendToDeck.md)
 - [Auxiliary.ContactFusionTarget](ContactFusionTarget.md)
+- [Auxiliary.covcheck](covcheck.md)
 - [Auxiliary.CreateChecks](CreateChecks.md)
 - [Auxiliary.CreateMaterialReasonCardRelation](CreateMaterialReasonCardRelation.md)
 - [Auxiliary.dabcheck](dabcheck.md)
@@ -191,6 +193,7 @@
 - [Auxiliary.gffcheck](gffcheck.md)
 - [Auxiliary.GiveUpNormalDraw](GiveUpNormalDraw.md)
 - [Auxiliary.GoldenAllureQueenFilter](GoldenAllureQueenFilter.md)
+- [Auxiliary.HasMentionedCounter](HasMentionedCounter.md)
 - [Auxiliary.imval1](imval1.md)
 - [Auxiliary.indoval](indoval.md)
 - [Auxiliary.indsval](indsval.md)

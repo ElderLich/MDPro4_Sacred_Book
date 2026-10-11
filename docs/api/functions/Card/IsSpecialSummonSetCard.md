@@ -21,14 +21,14 @@ Checks whether c was Special Summoned by a card whose name includes setname.
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3401`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3448`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **28** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Card.IsSpecialSummonSetCard`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Card.IsSpecialSummonSetCard) with `Card.IsSpecialSummonSetCard`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

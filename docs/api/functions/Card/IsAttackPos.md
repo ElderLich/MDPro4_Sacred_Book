@@ -20,14 +20,14 @@ Checks whether c's current position contains POS_ATTACK.
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3605`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3657`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **154** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Card.IsAttackPos`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Card.IsAttackPos) with `Card.IsAttackPos`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
@@ -50,8 +50,8 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Foie Glasya de Nouvelles | `15001940` | [Scripts/c15001940.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c15001940.lua) | 1 |
 | Ace★Spades Speculation | `10796448` | [Scripts/c10796448.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c10796448.lua) | 2 |
 | Confiras de Nouvelles | `53618197` | [Scripts/c53618197.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c53618197.lua) | 1 |
-| Phantasm Spiral Crash | `48308134` | [Scripts/c48308134.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c48308134.lua) | 1 |
 | Morphtronic Converter | `90659259` | [Scripts/c90659259.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c90659259.lua) | 3 |
+| Phantasm Spiral Crash | `48308134` | [Scripts/c48308134.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c48308134.lua) | 1 |
 | Layer 19 "Sudden Incursion! Super Quantum Black!!" | `98349765` | [Scripts/c98349765.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c98349765.lua) | 2 |
 | Puppet Rook | `77590412` | [Scripts/c77590412.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c77590412.lua) | 2 |
 | Dual Avatar Fists - Armored Ah-Gyo | `60237530` | [Scripts/c60237530.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c60237530.lua) | 3 |

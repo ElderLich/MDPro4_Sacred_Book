@@ -22,14 +22,14 @@ The local helper maps ordinary Monster Zones and Spell & Trap Zones to columns 0
 
 ## Source
 
-- `Utilities/utility.lua:702`
+- `Utilities/utility.lua:705`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **4** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Auxiliary.GetColumn`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Auxiliary.GetColumn) with `Auxiliary.GetColumn`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

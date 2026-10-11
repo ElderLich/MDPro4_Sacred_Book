@@ -22,14 +22,14 @@ Checks whether c can provide Xyz Level lv for Xyz Monster xyzc.
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3415`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3463`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **4** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Card.IsXyzLevel`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Card.IsXyzLevel) with `Card.IsXyzLevel`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

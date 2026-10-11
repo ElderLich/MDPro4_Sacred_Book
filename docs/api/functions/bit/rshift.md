@@ -28,7 +28,7 @@ Returns a shifted right by b bits.
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **8** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `bit.rshift`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=bit.rshift) with `bit.rshift`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

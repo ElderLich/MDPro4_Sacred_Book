@@ -28,7 +28,7 @@ Returns a Group containing up to count cards from the top of player's Extra Deck
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **1** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Duel.GetExtraTopGroup`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Duel.GetExtraTopGroup) with `Duel.GetExtraTopGroup`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

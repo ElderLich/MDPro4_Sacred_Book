@@ -26,8 +26,8 @@ Returns the location from which effect e was activated.
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **73** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Effect.GetActivateLocation`.
+- Detected in **76** indexed script(s).
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Effect.GetActivateLocation) with `Effect.GetActivateLocation`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
@@ -38,7 +38,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Heavy Interlock | `20071842` | [Scripts/c20071842.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c20071842.lua) | 1 |
 | Fydraulis Harmonia | `70088809` | [Scripts/c70088809.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c70088809.lua) | 1 |
 | Rapid Trigger | `67526112` | [Scripts/c67526112.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c67526112.lua) | 1 |
-| Multiplying Kuriboh! | `14965712` | [Scripts/c14965712.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c14965712.lua) | 1 |
+| Kuriboh - Multiply! | `14965712` | [Scripts/c14965712.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c14965712.lua) | 1 |
 | Gravekeeper's Trap | `98715423` | [Scripts/c98715423.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c98715423.lua) | 1 |
 | Arcana Force EX - The Chaos Ruler | `12686296` | [Scripts/c12686296.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c12686296.lua) | 1 |
 | Nerva the Power Patron of Creation | `53589300` | [Scripts/c53589300.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c53589300.lua) | 1 |
@@ -47,6 +47,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Plundered Power Patron Plane - Vidolia | `51669847` | [Scripts/c51669847.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c51669847.lua) | 1 |
 | Titaniklad the Ash Dragon | `41373230` | [Scripts/c41373230.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c41373230.lua) | 1 |
 | Dragunity Lord - Georgius | `70522875` | [Scripts/c70522875.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c70522875.lua) | 1 |
+| Distrust Paranoia | `81965543` | [Scripts/c81965543.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c81965543.lua) | 1 |
 | Blue-Eyes Spirit Dragon | `59822133` | [Scripts/c59822133.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c59822133.lua) | 1 |
 | Transcendosaurus Meteorus | `31241087` | [Scripts/c31241087.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c31241087.lua) | 1 |
 | Transcendosaurus Gigantozowler | `67745632` | [Scripts/c67745632.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c67745632.lua) | 1 |
@@ -54,8 +55,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Dragonic Pendulum | `71817640` | [Scripts/c71817640.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c71817640.lua) | 1 |
 | Krishnerd Witch | `37006702` | [Scripts/c37006702.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c37006702.lua) | 1 |
 | The Zombie Vampire | `73082255` | [Scripts/c73082255.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c73082255.lua) | 1 |
-| Exosister Carpedivem | `30802207` | [Scripts/c30802207.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c30802207.lua) | 1 |
-| ...and 49 more |  |  |  |
+| ...and 52 more |  |  |  |
 
 ## Script Examples
 

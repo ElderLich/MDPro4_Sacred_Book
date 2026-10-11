@@ -21,14 +21,14 @@ Returns c's global row and column indexes from player 0's field viewpoint.
 
 ## Source
 
-- `Utilities/utility.lua:670`
+- `Utilities/utility.lua:673`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **1** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Auxiliary.GetFieldIndex`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Auxiliary.GetFieldIndex) with `Auxiliary.GetFieldIndex`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

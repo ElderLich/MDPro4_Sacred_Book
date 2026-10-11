@@ -28,12 +28,14 @@ Calls f for each card in g, forwards any extra arguments, and returns the sum of
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **142** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Group.GetSum`.
+- Detected in **147** indexed script(s).
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Group.GetSum) with `Group.GetSum`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
 | [Meteoroa Drytron](/examples/cards/24166324) | `24166324` | [Scripts/c24166324.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c24166324.lua) | 2 |
+| [Pere-Zenet Em Heru](/examples/cards/46273941) | `46273941` | [Scripts/c46273941.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c46273941.lua) | 1 |
+| [Am Duazenet](/examples/cards/45151304) | `45151304` | [Scripts/c45151304.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c45151304.lua) | 1 |
 | [Converging Wishes](/examples/cards/20007374) | `20007374` | [Scripts/c20007374.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c20007374.lua) | 1 |
 | [D/D Count Surveyor](/examples/cards/5997110) | `5997110` | [Scripts/c5997110.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c5997110.lua) | 2 |
 | [Nekroz Kaleidoscope](/examples/cards/51124303) | `51124303` | [Scripts/c51124303.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c51124303.lua) | 2 |
@@ -55,9 +57,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Melffy Staring Contest | `76981308` | [Scripts/c76981308.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c76981308.lua) | 1 |
 | Raidraptor - Rising Rebellion Falcon | `71222868` | [Scripts/c71222868.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c71222868.lua) | 2 |
 | Armed Dragon LV10 White | `84425220` | [Scripts/c84425220.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c84425220.lua) | 2 |
-| Heavy Polymerization | `58570206` | [Scripts/c58570206.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c58570206.lua) | 1 |
-| Dawn Angel Kambi | `12500059` | [Scripts/c12500059.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c12500059.lua) | 1 |
-| ...and 118 more |  |  |  |
+| ...and 123 more |  |  |  |
 
 ## Script Examples
 
@@ -73,26 +73,26 @@ Source: [Scripts/c24166324.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/
 	else
 ```
 
-### Converging Wishes (`20007374`)
+### Pere-Zenet Em Heru (`46273941`)
 
-Source: [Scripts/c20007374.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c20007374.lua)
+Source: [Scripts/c46273941.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c46273941.lua)
 
 ```lua
-function c20007374.atkval(e,c)
-	local g=Duel.GetMatchingGroup(c20007374.atkfilter,e:GetHandlerPlayer(),LOCATION_GRAVE,0,nil)
-	return g:GetSum(Card.GetAttack)
-end
-function c20007374.cacon(e,tp,eg,ep,ev,re,r,rp)
+		if not aux.dncheck(sg) then return false end
+		if ec then
+			return sg:GetSum(s.getrlv,tc)-s.getrlv(ec,tc)<=lv
+		else
+			return true
 ```
 
-### D/D Count Surveyor (`5997110`)
+### Am Duazenet (`45151304`)
 
-Source: [Scripts/c5997110.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c5997110.lua)
+Source: [Scripts/c45151304.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c45151304.lua)
 
 ```lua
-		if rc>0 then
-			local rg=Duel.GetOperatedGroup()
-			local atk=rg:GetSum(Card.GetPreviousAttackOnField)
-			local def=rg:GetSum(Card.GetPreviousDefenseOnField)
-			local tc=sg:GetFirst()
+		if not aux.dncheck(sg) then return false end
+		if ec then
+			return sg:GetSum(s.getrlv,tc)-s.getrlv(ec,tc)<=lv
+		else
+			return true
 ```

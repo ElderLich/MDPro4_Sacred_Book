@@ -22,12 +22,13 @@ Returns the current phase constant.
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **824** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Duel.GetCurrentPhase`.
+- Detected in **829** indexed script(s).
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Duel.GetCurrentPhase) with `Duel.GetCurrentPhase`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
 | [Accel Synchro Stardust Dragon](/examples/cards/30983281) | `30983281` | [Scripts/c30983281.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c30983281.lua) | 1 |
+| [Yomagna the Fire Phantom](/examples/cards/17350692) | `17350692` | [Scripts/c17350692.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c17350692.lua) | 1 |
 | [Mementotlan Fusion](/examples/cards/66518509) | `66518509` | [Scripts/c66518509.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c66518509.lua) | 1 |
 | [Gem-Knight Dispersion](/examples/cards/24220368) | `24220368` | [Scripts/c24220368.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c24220368.lua) | 1 |
 | [Ehther the Heavenly Monarch](/examples/cards/96570609) | `96570609` | [Scripts/c96570609.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c96570609.lua) | 1 |
@@ -50,8 +51,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Tearlaments Havnis | `37961969` | [Scripts/c37961969.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c37961969.lua) | 1 |
 | Frightfur March | `74416026` | [Scripts/c74416026.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c74416026.lua) | 1 |
 | Power Tool Braver Dragon | `63265554` | [Scripts/c63265554.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c63265554.lua) | 2 |
-| Phantom Knights' Rank-Up-Magic Force | `88504133` | [Scripts/c88504133.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c88504133.lua) | 2 |
-| ...and 800 more |  |  |  |
+| ...and 805 more |  |  |  |
 
 ## Script Examples
 
@@ -67,6 +67,18 @@ function c30983281.sccon(e,tp,eg,ep,ev,re,r,rp)
 end
 ```
 
+### Yomagna the Fire Phantom (`17350692`)
+
+Source: [Scripts/c17350692.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c17350692.lua)
+
+```lua
+	local c=e:GetHandler()
+	local chkf=tp
+	if Duel.GetCurrentPhase()&(PHASE_DAMAGE+PHASE_DAMAGE_CAL)~=0 then return end
+	if not c:IsRelateToChain() or c:IsImmuneToEffect(e) then return end
+	local mg1=Duel.GetFusionMaterial(tp):Filter(s.filter1,nil,e)
+```
+
 ### Mementotlan Fusion (`66518509`)
 
 Source: [Scripts/c66518509.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c66518509.lua)
@@ -76,17 +88,5 @@ end
 function s.condition(e,tp,eg,ep,ev,re,r,rp)
 	local ph=Duel.GetCurrentPhase()
 	return (ph==PHASE_MAIN1 or ph==PHASE_MAIN2)
-end
-```
-
-### Gem-Knight Dispersion (`24220368`)
-
-Source: [Scripts/c24220368.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c24220368.lua)
-
-```lua
-end
-function s.damcon(e,tp,eg,ep,ev,re,r,rp)
-	local ph=Duel.GetCurrentPhase()
-	return ph==PHASE_MAIN1 or ph==PHASE_MAIN2
 end
 ```

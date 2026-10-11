@@ -26,7 +26,7 @@ Removes cards from mutable group g that satisfy f and are not ex, passing any ex
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **8** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Group.Remove`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Group.Remove) with `Group.Remove`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

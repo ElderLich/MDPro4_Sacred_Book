@@ -1,0 +1,133 @@
+# RushDuel.SendToHandAndExists
+
+Alias: `RD.SendToHandAndExists`. Requires the matching Rush Duel Lua bootstrap.
+
+## Signature
+
+```lua
+RushDuel.SendToHandAndExists(any target, any effect, any player, any reason, any filter, any count, any expect) -> any
+```
+
+## Description
+
+Rush Duel helper declared in `RDAction.lua`. Its argument names are extracted from the pinned source; parameter and return types have not yet been reviewed.
+
+### Upstream source comment
+
+```text
+操作: 加入/返回手卡, 并给对方确认加入自己手卡的卡
+```
+
+## Parameters
+
+- `target` `any`: Type and behavior are not yet reviewed; see the source.
+- `effect` `any`: Type and behavior are not yet reviewed; see the source.
+- `player` `any`: Type and behavior are not yet reviewed; see the source.
+- `reason` `any`: Type and behavior are not yet reviewed; see the source.
+- `filter` `any`: Type and behavior are not yet reviewed; see the source.
+- `count` `any`: Type and behavior are not yet reviewed; see the source.
+- `expect` `any`: Type and behavior are not yet reviewed; see the source.
+
+## Returns
+
+- `any`: Return contract has not been reviewed; inspect the source below.
+
+## Source
+
+`Rush/Utilities/RDAction.lua:277`
+
+```lua
+function RushDuel.SendToHandAndExists(target, effect, player, reason, filter, count, expect)
+    local hints = Group.CreateGroup()
+    local group = RushDuel.ToGroup(target):Filter(RushDuel.FilterToHandTarget, nil, effect, player, reason, hints)
+    local g = RushDuel.ToMaximunGroup(group)
+    local tc = hints:GetFirst()
+    if tc then
+        Duel.Hint(HINT_CARD, 0, tc:GetOriginalCode())
+    end
+    if #g == 0 then
+        return false
+    end
+    if Duel.SendtoHand(g, nil, REASON_EFFECT) == 0 then
+        return false
+    end
+    local cg = g:Filter(RushDuel.FilterToHandConfirm, nil, player)
+    if #cg > 0 then
+        Duel.ConfirmCards(1 - player, cg)
+    end
+    return RushDuel.IsOperatedGroupExists(filter, count, expect)
+end
+```
+
+## Used By
+
+Generated from the local `Rush/Scripts/` folder and `rush_cards.cdb`.
+
+- Detected in **496** indexed script(s).
+- Search this function in the [Script Explorer](/tools/script-explorer?format=rush&mode=code&q=RushDuel.SendToHandAndExists) with `RushDuel.SendToHandAndExists`.
+
+| Card | ID | Script | Detected Calls |
+| --- | ---: | --- | ---: |
+| [Lufer the Symbol of the Devils](/examples/rush-cards/120309059) | `120309059` | [Rush/Scripts/c120309059.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120309059.lua) | 1 |
+| [Skysavior Watch](/examples/rush-cards/120235053) | `120235053` | [Rush/Scripts/c120235053.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120235053.lua) | 1 |
+| [Voidalfr Star Mayfly](/examples/rush-cards/120300034) | `120300034` | [Rush/Scripts/c120300034.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120300034.lua) | 1 |
+| [Brassdes of the Wicked Wheels](/examples/rush-cards/120304033) | `120304033` | [Rush/Scripts/c120304033.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120304033.lua) | 1 |
+| [Miracle Pick](/examples/rush-cards/120253052) | `120253052` | [Rush/Scripts/c120253052.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120253052.lua) | 1 |
+| [Pot of Duality](/examples/rush-cards/120271002) | `120271002` | [Rush/Scripts/c120271002.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120271002.lua) | 1 |
+| [Vapor Lancer the Super Graphagas](/examples/rush-cards/120260063) | `120260063` | [Rush/Scripts/c120260063.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120260063.lua) | 1 |
+| [Ember the Ultra Assistant](/examples/rush-cards/120283035) | `120283035` | [Rush/Scripts/c120283035.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120283035.lua) | 1 |
+| [Sparkhearts Makma](/examples/rush-cards/120298023) | `120298023` | [Rush/Scripts/c120298023.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120298023.lua) | 1 |
+| [Fairy of the Stars](/examples/rush-cards/120305016) | `120305016` | [Rush/Scripts/c120305016.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120305016.lua) | 1 |
+| [Rising Protect](/examples/rush-cards/120304055) | `120304055` | [Rush/Scripts/c120304055.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120304055.lua) | 1 |
+| [Tubardiche the Music Princess](/examples/rush-cards/120247025) | `120247025` | [Rush/Scripts/c120247025.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120247025.lua) | 1 |
+| [Moonforce Sheila](/examples/rush-cards/120300013) | `120300013` | [Rush/Scripts/c120300013.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120300013.lua) | 1 |
+| [Spiritualization Training](/examples/rush-cards/120301020) | `120301020` | [Rush/Scripts/c120301020.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120301020.lua) | 1 |
+| [Dimension Oper](/examples/rush-cards/120309025) | `120309025` | [Rush/Scripts/c120309025.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120309025.lua) | 1 |
+| [Lovely Wolf](/examples/rush-cards/120260046) | `120260046` | [Rush/Scripts/c120260046.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120260046.lua) | 1 |
+| [False Sun](/examples/rush-cards/120264033) | `120264033` | [Rush/Scripts/c120264033.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120264033.lua) | 1 |
+| [Void Veil](/examples/rush-cards/120227029) | `120227029` | [Rush/Scripts/c120227029.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120227029.lua) | 1 |
+| [Voidvelg Gehennamagia](/examples/rush-cards/120109048) | `120109048` | [Rush/Scripts/c120109048.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120109048.lua) | 1 |
+| [Preferlyre](/examples/rush-cards/120283046) | `120283046` | [Rush/Scripts/c120283046.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120283046.lua) | 1 |
+| [Handy Girl](/examples/rush-cards/120290012) | `120290012` | [Rush/Scripts/c120290012.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120290012.lua) | 1 |
+| [Botonaginata the Music Princess](/examples/rush-cards/120290009) | `120290009` | [Rush/Scripts/c120290009.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120290009.lua) | 1 |
+| [Soleil, the Fairy of Skysavior](/examples/rush-cards/120235020) | `120235020` | [Rush/Scripts/c120235020.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120235020.lua) | 1 |
+| [Crystal Seer](/examples/rush-cards/120109067) | `120109067` | [Rush/Scripts/c120109067.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120109067.lua) | 1 |
+| ...and 472 more |  |  |  |
+
+## Script Examples
+
+### Lufer the Symbol of the Devils (`120309059`)
+
+Source: [Rush/Scripts/c120309059.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120309059.lua)
+
+```lua
+		if Duel.IsExistingMatchingCard(cm.exfilter,tp,LOCATION_GRAVE,0,1,nil) then
+			RD.CanSelectAndDoAction(aux.Stringid(m,5),HINTMSG_RTOHAND,cm.thfilter,tp,0,LOCATION_MZONE,1,1,nil,function(sg)
+				RD.SendToHandAndExists(sg,e,tp,REASON_EFFECT)
+			end)
+		end
+```
+
+### Skysavior Watch (`120235053`)
+
+Source: [Rush/Scripts/c120235053.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120235053.lua)
+
+```lua
+		Duel.DisableShuffleCheck()
+		if tc:IsAbleToHand() then
+			RD.SendToHandAndExists(sg,e,p,REASON_EFFECT)
+			Duel.ShuffleHand(p)
+		else
+```
+
+### Voidalfr Star Mayfly (`120300034`)
+
+Source: [Rush/Scripts/c120300034.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120300034.lua)
+
+```lua
+function cm.operation(e,tp,eg,ep,ev,re,r,rp)
+	RD.SelectAndDoAction(HINTMSG_RTOHAND,cm.filter,tp,0,LOCATION_MZONE,1,3,nil,function(g)
+		RD.SendToHandAndExists(g,e,tp,REASON_EFFECT)
+	end)
+	if Duel.GetFlagEffect(tp,m)~=0 then return end
+```

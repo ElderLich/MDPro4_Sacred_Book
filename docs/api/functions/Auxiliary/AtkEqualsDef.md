@@ -16,17 +16,18 @@ Returns true for a non-Link Monster whose ATK equals DEF, using current values o
 
 ## Source
 
-- `Utilities/utility.lua:1115`
+- `Utilities/utility.lua:1118`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **11** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Auxiliary.AtkEqualsDef`.
+- Detected in **12** indexed script(s).
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Auxiliary.AtkEqualsDef) with `Auxiliary.AtkEqualsDef`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
+| Helping Robo for Underwater Combat | `77856460` | [Scripts/c77856460.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c77856460.lua) | 1 |
 | Despian Luluwalilith | `53971455` | [Scripts/c53971455.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c53971455.lua) | 1 |
 | The Three Champions of Swordsoul | `74405783` | [Scripts/c74405783.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c74405783.lua) | 1 |
 | Gizmek Inaba, the Hopping Hare of Hakuto | `50901852` | [Scripts/c50901852.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c50901852.lua) | 2 |
@@ -40,6 +41,18 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Gizmek Makami, the Ferocious Fanged Fortress | `46809548` | [Scripts/c46809548.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c46809548.lua) | 1 |
 
 ## Script Examples
+
+### Helping Robo for Underwater Combat (`77856460`)
+
+Source: [Scripts/c77856460.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c77856460.lua)
+
+```lua
+end
+function s.thfilter(c)
+	return aux.AtkEqualsDef(c) and c:IsRace(RACE_MACHINE) and c:IsAbleToHand()
+end
+function s.thtg(e,tp,eg,ep,ev,re,r,rp,chk)
+```
 
 ### Despian Luluwalilith (`53971455`)
 
@@ -62,17 +75,5 @@ end
 function s.thfilter(c)
 	return aux.AtkEqualsDef(c) and c:IsRace(RACE_SPELLCASTER)
 		and c:IsLevel(4,8) and c:IsAbleToHand()
-end
-```
-
-### Gizmek Inaba, the Hopping Hare of Hakuto (`50901852`)
-
-Source: [Scripts/c50901852.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c50901852.lua)
-
-```lua
-end
-function c50901852.spfilter(c,e,tp)
-	return aux.AtkEqualsDef(c) and c:IsRace(RACE_MACHINE)
-		and c:IsCanBeSpecialSummoned(e,0,tp,false,false,POS_FACEUP_DEFENSE)
 end
 ```

@@ -31,7 +31,7 @@ Declares that the shared Arcana Force effect will perform one coin toss for tp.
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **1** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Auxiliary.ArcanaCoinTarget`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Auxiliary.ArcanaCoinTarget) with `Auxiliary.ArcanaCoinTarget`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

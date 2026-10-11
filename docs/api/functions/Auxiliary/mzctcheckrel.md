@@ -22,14 +22,14 @@ Checks whether releasing group g by reason leaves a Monster Zone and g is a vali
 
 ## Source
 
-- `Utilities/utility.lua:1171`
+- `Utilities/utility.lua:1174`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **43** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Auxiliary.mzctcheckrel`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Auxiliary.mzctcheckrel) with `Auxiliary.mzctcheckrel`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
@@ -40,9 +40,9 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Raviel, Lord of Phantasms - Shimmering Scraper | `28651380` | [Scripts/c28651380.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c28651380.lua) | 2 |
 | Dark Creator | `52768390` | [Scripts/c52768390.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c52768390.lua) | 2 |
 | Supreme King Dragon Odd-Eyes | `96733134` | [Scripts/c96733134.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c96733134.lua) | 2 |
+| Vampire Voivode | `4918855` | [Scripts/c4918855.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c4918855.lua) | 2 |
 | The Bystial Alba Los | `69120785` | [Scripts/c69120785.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c69120785.lua) | 2 |
 | Shooting Star Dragon T.G. EX | `63180841` | [Scripts/c63180841.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c63180841.lua) | 2 |
-| Vampire Voivode | `4918855` | [Scripts/c4918855.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c4918855.lua) | 2 |
 | Duke Shade, the Sinister Shadow Lord | `12766474` | [Scripts/c12766474.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c12766474.lua) | 2 |
 | Destiny HERO - Plasma | `83965310` | [Scripts/c83965310.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c83965310.lua) | 2 |
 | Aron, the Ogdoadic King | `34172284` | [Scripts/c34172284.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c34172284.lua) | 2 |

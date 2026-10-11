@@ -21,14 +21,14 @@ Returns true if tp controls a Token on the field. If tp is omitted and e is prov
 
 ## Source
 
-- `Utilities/utility.lua:874`
+- `Utilities/utility.lua:877`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **20** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Auxiliary.tkfcon`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Auxiliary.tkfcon) with `Auxiliary.tkfcon`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

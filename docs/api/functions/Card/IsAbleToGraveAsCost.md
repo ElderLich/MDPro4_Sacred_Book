@@ -20,17 +20,19 @@ Checks whether c can be sent to the Graveyard as a cost.
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3596`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3648`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **695** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Card.IsAbleToGraveAsCost`.
+- Detected in **705** indexed script(s).
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Card.IsAbleToGraveAsCost) with `Card.IsAbleToGraveAsCost`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
+| [Levia-Dragoon - Daedalus](/examples/cards/78579058) | `78579058` | [Scripts/c78579058.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c78579058.lua) | 1 |
+| [Azure Ocean Dragon Lord - Neo-Daedalus Rage](/examples/cards/41570943) | `41570943` | [Scripts/c41570943.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c41570943.lua) | 1 |
 | [Eternal Favorite](/examples/cards/87532344) | `87532344` | [Scripts/c87532344.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c87532344.lua) | 1 |
 | [Ursarctic Polari](/examples/cards/27693363) | `27693363` | [Scripts/c27693363.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c27693363.lua) | 1 |
 | [Barian's Chaos Draw](/examples/cards/97769122) | `97769122` | [Scripts/c97769122.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c97769122.lua) | 1 |
@@ -53,11 +55,33 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Witchcrafter Pittore | `95245544` | [Scripts/c95245544.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c95245544.lua) | 2 |
 | Witchcrafter Genni | `64756282` | [Scripts/c64756282.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c64756282.lua) | 2 |
 | All-Eyes Phantom Dragon | `70335319` | [Scripts/c70335319.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c70335319.lua) | 1 |
-| Malefic Paradigm Dragon | `16958382` | [Scripts/c16958382.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c16958382.lua) | 1 |
-| Arcana Force EX - The Light Ruler | `5861892` | [Scripts/c5861892.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c5861892.lua) | 1 |
-| ...and 671 more |  |  |  |
+| ...and 681 more |  |  |  |
 
 ## Script Examples
+
+### Levia-Dragoon - Daedalus (`78579058`)
+
+Source: [Scripts/c78579058.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c78579058.lua)
+
+```lua
+end
+function s.costfilter(c)
+	return c:IsFaceup() and c:IsCode(22702055) and c:IsAbleToGraveAsCost()
+end
+function s.drcon(e,tp,eg,ep,ev,re,r,rp)
+```
+
+### Azure Ocean Dragon Lord - Neo-Daedalus Rage (`41570943`)
+
+Source: [Scripts/c41570943.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c41570943.lua)
+
+```lua
+end
+function s.costfilter(c)
+	return c:IsFaceup() and c:IsCode(22702055) and c:IsAbleToGraveAsCost()
+end
+function s.tgcost(e,tp,eg,ep,ev,re,r,rp,chk)
+```
 
 ### Eternal Favorite (`87532344`)
 
@@ -69,28 +93,4 @@ Source: [Scripts/c87532344.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/
 		and c:IsAbleToGraveAsCost() and c:IsStatus(STATUS_EFFECT_ENABLED) end
 	Duel.DiscardHand(tp,Card.IsDiscardable,1,1,REASON_COST+REASON_DISCARD)
 	Duel.SendtoGrave(c,REASON_COST)
-```
-
-### Ursarctic Polari (`27693363`)
-
-Source: [Scripts/c27693363.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c27693363.lua)
-
-```lua
-end
-function c27693363.tgrfilter(c)
-	return c:IsFaceup() and c:IsLevelAbove(1) and c:IsAbleToGraveAsCost()
-end
-function c27693363.mnfilter(c,g)
-```
-
-### Barian's Chaos Draw (`97769122`)
-
-Source: [Scripts/c97769122.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c97769122.lua)
-
-```lua
-end
-function c97769122.cpfilter(c)
-	return c:GetType()==TYPE_SPELL and c:IsSetCard(0x175) and c:IsAbleToGraveAsCost()
-		and c:CheckActivateEffect(true,true,false)~=nil
-end
 ```

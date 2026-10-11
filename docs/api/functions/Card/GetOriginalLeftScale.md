@@ -20,14 +20,14 @@ Returns c's printed left Pendulum Scale.
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3417`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3465`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **1** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Card.GetOriginalLeftScale`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Card.GetOriginalLeftScale) with `Card.GetOriginalLeftScale`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

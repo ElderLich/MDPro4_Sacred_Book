@@ -21,14 +21,14 @@ Returns true if tp would have an open Monster Zone after releasing g.
 
 ## Source
 
-- `Utilities/utility.lua:1163`
+- `Utilities/utility.lua:1166`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **54** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Auxiliary.mzctcheck`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Auxiliary.mzctcheck) with `Auxiliary.mzctcheck`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

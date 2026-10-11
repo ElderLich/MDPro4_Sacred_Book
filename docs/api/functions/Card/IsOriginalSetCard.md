@@ -23,14 +23,14 @@ Checks whether c's original set data matches any supplied set code.
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3397`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3444`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **13** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Card.IsOriginalSetCard`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Card.IsOriginalSetCard) with `Card.IsOriginalSetCard`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
@@ -43,9 +43,9 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Heraldic Beast Gryphon | `60268386` | [Scripts/c60268386.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c60268386.lua) | 1 |
 | Synchro Chase | `23442438` | [Scripts/c23442438.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c23442438.lua) | 1 |
 | Junk Armor | `91215724` | [Scripts/c91215724.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c91215724.lua) | 1 |
+| Satellite Synchron | `57458399` | [Scripts/c57458399.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c57458399.lua) | 1 |
 | Full-Speed Warrior | `17201951` | [Scripts/c17201951.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c17201951.lua) | 1 |
 | Scrap Synchron | `16449363` | [Scripts/c16449363.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c16449363.lua) | 1 |
-| Satellite Synchron | `57458399` | [Scripts/c57458399.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c57458399.lua) | 1 |
 | Junk Mail | `39520293` | [Scripts/c39520293.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c39520293.lua) | 1 |
 
 ## Script Examples

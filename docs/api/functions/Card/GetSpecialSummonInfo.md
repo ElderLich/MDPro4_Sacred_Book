@@ -22,14 +22,14 @@ Supported fields include SUMMON_INFO_CODE, SUMMON_INFO_CODE2, SUMMON_INFO_TYPE, 
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3476`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3525`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **47** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Card.GetSpecialSummonInfo`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Card.GetSpecialSummonInfo) with `Card.GetSpecialSummonInfo`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

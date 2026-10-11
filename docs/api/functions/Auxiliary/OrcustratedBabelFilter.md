@@ -20,7 +20,7 @@ Returns true for original Orcust cards that are Link Monsters on the field or mo
 
 ## Source
 
-- `Utilities/utility.lua:1962`
+- `Utilities/utility.lua:1967`
 
 ## Used By
 

@@ -20,14 +20,14 @@ Filter for effects that negate an Effect Monster, such as Effect Veiler: c must 
 
 ## Source
 
-- `Utilities/utility.lua:748`
+- `Utilities/utility.lua:751`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **61** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Auxiliary.NegateEffectMonsterFilter`.
+- Detected in **62** indexed script(s).
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Auxiliary.NegateEffectMonsterFilter) with `Auxiliary.NegateEffectMonsterFilter`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
@@ -49,13 +49,13 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Super Quantal Mech Beast Lusterrex | `57450198` | [Scripts/c57450198.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c57450198.lua) | 3 |
 | Trivikarma | `7436169` | [Scripts/c7436169.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c7436169.lua) | 1 |
 | Amaze Attraction Horror House | `92650018` | [Scripts/c92650018.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c92650018.lua) | 3 |
+| Atlantis Call | `65785782` | [Scripts/c65785782.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c65785782.lua) | 2 |
 | Time Thief Double Barrel | `91135480` | [Scripts/c91135480.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c91135480.lua) | 2 |
 | Nemleria Repeter | `33499794` | [Scripts/c33499794.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c33499794.lua) | 2 |
 | Rilliona, the Wondrous Magistus Witch Wardrobe | `74689476` | [Scripts/c74689476.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c74689476.lua) | 3 |
 | Fairy Tail Ball | `56725612` | [Scripts/c56725612.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c56725612.lua) | 1 |
 | Myutant Clash | `5466615` | [Scripts/c5466615.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c5466615.lua) | 3 |
-| Majestic Red Dragon | `67030233` | [Scripts/c67030233.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c67030233.lua) | 3 |
-| ...and 37 more |  |  |  |
+| ...and 38 more |  |  |  |
 
 ## Script Examples
 

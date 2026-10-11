@@ -20,14 +20,14 @@ Returns the ATK value recorded for c's previous on-field state.
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3455`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3504`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **7** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Card.GetPreviousAttackOnField`.
+- Detected in **8** indexed script(s).
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Card.GetPreviousAttackOnField) with `Card.GetPreviousAttackOnField`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
@@ -37,6 +37,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Performapal Laugh Maker | `44944304` | [Scripts/c44944304.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c44944304.lua) | 1 |
 | Ecole de Zone | `60514625` | [Scripts/c60514625.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c60514625.lua) | 1 |
 | Jigen Bakudan | `90020065` | [Scripts/c90020065.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c90020065.lua) | 1 |
+| Time Wizard | `71625222` | [Scripts/c71625222.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c71625222.lua) | 1 |
 | Reptilianne Scylla | `16909657` | [Scripts/c16909657.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c16909657.lua) | 1 |
 
 ## Script Examples

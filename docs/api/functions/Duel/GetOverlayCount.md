@@ -29,7 +29,7 @@ Returns the number of Xyz Materials attached to cards in player-relative locatio
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **10** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Duel.GetOverlayCount`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Duel.GetOverlayCount) with `Duel.GetOverlayCount`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

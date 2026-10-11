@@ -23,14 +23,14 @@ Operation for delayed End Phase destruction effects. It destroys the Card or Gro
 
 ## Source
 
-- `Utilities/utility.lua:1824`
+- `Utilities/utility.lua:1829`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **5** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Auxiliary.EPDestroyOperation`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Auxiliary.EPDestroyOperation) with `Auxiliary.EPDestroyOperation`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

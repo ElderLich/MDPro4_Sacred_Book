@@ -51,7 +51,7 @@ The return values are the tied Group and the minimum score. If the source Group 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **23** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Group.GetMinGroup`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Group.GetMinGroup) with `Group.GetMinGroup`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

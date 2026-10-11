@@ -47,7 +47,7 @@ Ordinary activated effects usually let the engine manage the count limit. Reach 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **1** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Effect.CheckCountLimit`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Effect.CheckCountLimit) with `Effect.CheckCountLimit`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

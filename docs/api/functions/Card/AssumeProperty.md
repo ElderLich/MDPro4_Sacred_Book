@@ -19,14 +19,14 @@ assume_type is one of ASSUME_CODE, ASSUME_TYPE, ASSUME_LEVEL, ASSUME_RANK, ASSUM
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3663`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3715`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **2** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Card.AssumeProperty`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Card.AssumeProperty) with `Card.AssumeProperty`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

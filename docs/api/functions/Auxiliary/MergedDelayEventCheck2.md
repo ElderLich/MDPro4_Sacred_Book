@@ -23,7 +23,7 @@ Internal callback for Auxiliary.RegisterMergedDelayedEvent. At Chain End, it rai
 
 ## Source
 
-- `Utilities/utility.lua:1674`
+- `Utilities/utility.lua:1677`
 
 ## Used By
 

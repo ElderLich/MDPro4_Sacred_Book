@@ -33,8 +33,8 @@ While a Chain is resolving, this asks the core whether that Chain link can curre
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **156** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Duel.IsChainDisablable`.
+- Detected in **166** indexed script(s).
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Duel.IsChainDisablable) with `Duel.IsChainDisablable`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
@@ -42,6 +42,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | [W:P Fancy Ball](/examples/cards/4993187) | `4993187` | [Scripts/c4993187.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c4993187.lua) | 1 |
 | Nervedo the Shadebeast Power Patron | `17473466` | [Scripts/c17473466.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c17473466.lua) | 1 |
 | Number 38: Hope Harbinger Dragon Titanic Galaxy | `63767246` | [Scripts/c63767246.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c63767246.lua) | 1 |
+| Shimmering Shatterer of the Sacred Beasts | `3441553` | [Scripts/c3441553.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c3441553.lua) | 2 |
 | Tensei Ryu-Ge Anva | `56322832` | [Scripts/c56322832.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c56322832.lua) | 1 |
 | Gilti-Gearfried the Magical Steel Knight | `49161188` | [Scripts/c49161188.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c49161188.lua) | 1 |
 | Solfachord Solfegia | `84693918` | [Scripts/c84693918.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c84693918.lua) | 1 |
@@ -53,16 +54,15 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Volcanic Inferno | `84138874` | [Scripts/c84138874.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c84138874.lua) | 1 |
 | Dragunity Lord - Georgius | `70522875` | [Scripts/c70522875.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c70522875.lua) | 1 |
 | Rindbrumm the Striking Dragon | `51409648` | [Scripts/c51409648.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c51409648.lua) | 1 |
+| Imposter Shift | `89027418` | [Scripts/c89027418.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c89027418.lua) | 1 |
 | Stardust Sifr Divine Dragon | `26268488` | [Scripts/c26268488.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c26268488.lua) | 1 |
 | Marincess Aqua Argonaut | `20934852` | [Scripts/c20934852.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c20934852.lua) | 1 |
 | Rubysapphirus, the Adamant Jewel | `6906306` | [Scripts/c6906306.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c6906306.lua) | 1 |
 | Dragon's Light and Darkness | `63295720` | [Scripts/c63295720.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c63295720.lua) | 1 |
 | Master Peace, the True Dracoverlord | `12800564` | [Scripts/c12800564.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c12800564.lua) | 1 |
+| Odd-Eyes Override Dragon | `58083496` | [Scripts/c58083496.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c58083496.lua) | 1 |
 | Mystical Elf - White Lightning | `15613529` | [Scripts/c15613529.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c15613529.lua) | 1 |
-| Springans Interluder | `25415161` | [Scripts/c25415161.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c25415161.lua) | 3 |
-| Ryzeal Cross | `6798031` | [Scripts/c6798031.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c6798031.lua) | 1 |
-| Evil★Twin GG EZ | `34365442` | [Scripts/c34365442.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c34365442.lua) | 1 |
-| ...and 132 more |  |  |  |
+| ...and 142 more |  |  |  |
 
 ## Script Examples
 

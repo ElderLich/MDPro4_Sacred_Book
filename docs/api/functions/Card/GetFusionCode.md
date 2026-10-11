@@ -22,14 +22,14 @@ When the core is checking with not_material set, only the current and second cod
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3392`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3439`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **13** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Card.GetFusionCode`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Card.GetFusionCode) with `Card.GetFusionCode`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

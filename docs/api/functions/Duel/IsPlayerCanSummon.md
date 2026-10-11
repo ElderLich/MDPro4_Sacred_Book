@@ -29,12 +29,13 @@ With sumtype and c, checks player EFFECT_CANNOT_SUMMON restrictions for Normal S
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **26** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Duel.IsPlayerCanSummon`.
+- Detected in **27** indexed script(s).
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Duel.IsPlayerCanSummon) with `Duel.IsPlayerCanSummon`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
 | Union Activation | `38527680` | [Scripts/c38527680.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c38527680.lua) | 1 |
+| Quick Summon | `10086952` | [Scripts/c10086952.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c10086952.lua) | 1 |
 | Rahamu, Envoy of the Sacred Tome | `53904087` | [Scripts/c53904087.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c53904087.lua) | 1 |
 | Synchro Fellowship | `43834302` | [Scripts/c43834302.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c43834302.lua) | 2 |
 | Red-Eyes Retro Dragon | `53485634` | [Scripts/c53485634.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c53485634.lua) | 1 |
@@ -57,8 +58,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Noble Knight Custennin | `42472002` | [Scripts/c42472002.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c42472002.lua) | 1 |
 | World Legacy - "World Key" | `40441990` | [Scripts/c40441990.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c40441990.lua) | 1 |
 | Simorgh, Bird of Beginning | `50820852` | [Scripts/c50820852.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c50820852.lua) | 1 |
-| Vampire's Domain | `5795882` | [Scripts/c5795882.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c5795882.lua) | 1 |
-| ...and 2 more |  |  |  |
+| ...and 3 more |  |  |  |
 
 ## Script Examples
 
@@ -74,6 +74,18 @@ end
 function s.sunthfilter(c,e,tp,minc,maxc)
 ```
 
+### Quick Summon (`10086952`)
+
+Source: [Scripts/c10086952.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c10086952.lua)
+
+```lua
+	return c:IsLevelAbove(5) and (c:IsSummonable(true,nil) or c:IsMSetable(true,nil))
+		and c:IsSummonableCard() and c:IsAbleToHand() and s.sunthfilter(c,e,tp,minc,maxc)
+		and Duel.IsPlayerCanSummon(tp,SUMMON_TYPE_ADVANCE,c)
+end
+function s.sunthfilter(c,e,tp,minc,maxc)
+```
+
 ### Rahamu, Envoy of the Sacred Tome (`53904087`)
 
 Source: [Scripts/c53904087.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c53904087.lua)
@@ -84,16 +96,4 @@ function s.sumtg(e,tp,eg,ep,ev,re,r,rp,chk)
 	if chk==0 then return Duel.IsPlayerCanSummon(tp) and Duel.IsExistingMatchingCard(s.sumfilter,tp,LOCATION_HAND+LOCATION_MZONE,0,1,nil) end
 	Duel.SetOperationInfo(0,CATEGORY_SUMMON,nil,1,0,0)
 end
-```
-
-### Synchro Fellowship (`43834302`)
-
-Source: [Scripts/c43834302.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c43834302.lua)
-
-```lua
-	if chkc then return chkc:IsLocation(LOCATION_MZONE) and s.lvfilter(chkc) end
-	if chk==0 then return Duel.IsExistingTarget(s.lvfilter,tp,LOCATION_MZONE,0,1,nil) and Duel.GetFlagEffect(tp,id)==0
-		and Duel.IsPlayerCanSummon(tp) and Duel.IsPlayerCanAdditionalSummon(tp)
-	end
-	Duel.Hint(HINT_SELECTMSG,tp,HINTMSG_TARGET)
 ```

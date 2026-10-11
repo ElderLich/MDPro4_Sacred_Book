@@ -20,14 +20,14 @@ Returns the zone mask of tp's Monster Zones that are linked by at least two face
 
 ## Source
 
-- `Utilities/utility.lua:1181`
+- `Utilities/utility.lua:1184`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **3** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Auxiliary.GetMultiLinkedZone`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Auxiliary.GetMultiLinkedZone) with `Auxiliary.GetMultiLinkedZone`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

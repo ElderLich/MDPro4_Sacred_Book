@@ -29,7 +29,7 @@ Each return can be nil if there is no attacker or attack target for that control
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **56** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Duel.GetBattleMonster`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Duel.GetBattleMonster) with `Duel.GetBattleMonster`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

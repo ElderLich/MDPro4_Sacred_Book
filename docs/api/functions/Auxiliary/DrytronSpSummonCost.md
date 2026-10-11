@@ -25,7 +25,7 @@ The player must not have Special Summoned a monster that can be Normal Summoned/
 
 ## Source
 
-- `Utilities/utility.lua:1020`
+- `Utilities/utility.lua:1023`
 
 ## Used By
 

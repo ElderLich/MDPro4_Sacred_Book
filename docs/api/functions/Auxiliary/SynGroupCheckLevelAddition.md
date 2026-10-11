@@ -27,7 +27,7 @@ Returns a group check for Synchro material selection that keeps the sum of the s
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **8** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Auxiliary.SynGroupCheckLevelAddition`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Auxiliary.SynGroupCheckLevelAddition) with `Auxiliary.SynGroupCheckLevelAddition`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

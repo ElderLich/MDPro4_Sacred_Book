@@ -27,7 +27,7 @@ Returns the number of operation categories recorded for chainc.
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **1** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Duel.GetOperationCount`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Duel.GetOperationCount) with `Duel.GetOperationCount`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

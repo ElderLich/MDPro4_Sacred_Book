@@ -22,14 +22,14 @@ Use the returned Effect to check whether a Field Spell or other Spell/Trap can b
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3547`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3599`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **30** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Card.GetActivateEffect`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Card.GetActivateEffect) with `Card.GetActivateEffect`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

@@ -20,14 +20,14 @@ Checks whether c's current position contains POS_DEFENSE.
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3607`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3659`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **121** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Card.IsDefensePos`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Card.IsDefensePos) with `Card.IsDefensePos`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

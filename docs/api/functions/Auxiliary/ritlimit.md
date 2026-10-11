@@ -30,7 +30,7 @@ Special Summon condition helper that returns true only when the Summon Type cont
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **23** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Auxiliary.ritlimit`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Auxiliary.ritlimit) with `Auxiliary.ritlimit`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

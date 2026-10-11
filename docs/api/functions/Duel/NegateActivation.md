@@ -46,8 +46,8 @@ Gate follow-up actions behind the boolean return. Use `Duel.NegateEffect` when t
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **387** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Duel.NegateActivation`.
+- Detected in **391** indexed script(s).
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Duel.NegateActivation) with `Duel.NegateActivation`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
@@ -66,6 +66,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | All-Eyes Phantom Dragon | `70335319` | [Scripts/c70335319.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c70335319.lua) | 1 |
 | Arcana Force EX - The Light Ruler | `5861892` | [Scripts/c5861892.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c5861892.lua) | 1 |
 | Drytron Meteonis DA Draconids | `56863746` | [Scripts/c56863746.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c56863746.lua) | 1 |
+| Machina Ruinforce | `46033517` | [Scripts/c46033517.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c46033517.lua) | 1 |
 | Loki, Lord of the Aesir | `67098114` | [Scripts/c67098114.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c67098114.lua) | 1 |
 | Fire King Avatar Arvata | `18621798` | [Scripts/c18621798.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c18621798.lua) | 1 |
 | Immortal Phoenix Gearfried | `22091647` | [Scripts/c22091647.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c22091647.lua) | 1 |
@@ -74,8 +75,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | PSY-Framegear Epsilon | `1697104` | [Scripts/c1697104.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c1697104.lua) | 1 |
 | Red-Eyes Dark Dragoon | `37818794` | [Scripts/c37818794.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c37818794.lua) | 1 |
 | Whisker Blitzclique | `85523502` | [Scripts/c85523502.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c85523502.lua) | 1 |
-| Eclipse, Dragon Ruler of Catastrophes | `30350202` | [Scripts/c30350202.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c30350202.lua) | 1 |
-| ...and 363 more |  |  |  |
+| ...and 367 more |  |  |  |
 
 ## Script Examples
 

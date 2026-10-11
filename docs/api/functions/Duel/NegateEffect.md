@@ -47,8 +47,8 @@ The optional `forced` argument is passed to the core disable-chain check. Activa
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **261** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Duel.NegateEffect`.
+- Detected in **272** indexed script(s).
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Duel.NegateEffect) with `Duel.NegateEffect`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
@@ -59,6 +59,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Nervedo the Shadebeast Power Patron | `17473466` | [Scripts/c17473466.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c17473466.lua) | 1 |
 | Beyond the Pendulum | `22125101` | [Scripts/c22125101.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c22125101.lua) | 1 |
 | Number 38: Hope Harbinger Dragon Titanic Galaxy | `63767246` | [Scripts/c63767246.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c63767246.lua) | 1 |
+| Shimmering Shatterer of the Sacred Beasts | `3441553` | [Scripts/c3441553.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c3441553.lua) | 1 |
 | Supply Soldier of the Indestructible Insects | `23738096` | [Scripts/c23738096.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c23738096.lua) | 1 |
 | Millennium-Eyes Restrict | `41578483` | [Scripts/c41578483.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c41578483.lua) | 1 |
 | Tensei Ryu-Ge Anva | `56322832` | [Scripts/c56322832.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c56322832.lua) | 1 |
@@ -75,8 +76,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Penguin Sword | `69792699` | [Scripts/c69792699.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c69792699.lua) | 1 |
 | Parasite Paranoid | `14457896` | [Scripts/c14457896.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c14457896.lua) | 1 |
 | Volcanic Inferno | `84138874` | [Scripts/c84138874.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c84138874.lua) | 1 |
-| Update Jammer | `88093706` | [Scripts/c88093706.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c88093706.lua) | 1 |
-| ...and 237 more |  |  |  |
+| ...and 248 more |  |  |  |
 
 ## Script Examples
 

@@ -30,7 +30,7 @@ Returns r with width bits starting at field replaced by the low width bits of v.
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **6** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `bit.replace`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=bit.replace) with `bit.replace`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

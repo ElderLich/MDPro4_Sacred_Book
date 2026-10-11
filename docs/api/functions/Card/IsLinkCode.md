@@ -24,14 +24,14 @@ This includes c's current code, second code, and EFFECT_ADD_LINK_CODE values. If
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3395`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3442`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **21** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Card.IsLinkCode`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Card.IsLinkCode) with `Card.IsLinkCode`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

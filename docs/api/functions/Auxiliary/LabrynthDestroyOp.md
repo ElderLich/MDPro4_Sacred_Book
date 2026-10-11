@@ -18,14 +18,14 @@ Shared extra destroy operation for the Labrynth field effect. After a non-hand-a
 
 ## Source
 
-- `Utilities/utility.lua:1096`
+- `Utilities/utility.lua:1099`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **3** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Auxiliary.LabrynthDestroyOp`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Auxiliary.LabrynthDestroyOp) with `Auxiliary.LabrynthDestroyOp`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

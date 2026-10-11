@@ -31,8 +31,8 @@ With the optional card-specific arguments, checks whether player can Special Sum
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **27** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Duel.IsPlayerCanSpecialSummon`.
+- Detected in **28** indexed script(s).
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Duel.IsPlayerCanSpecialSummon) with `Duel.IsPlayerCanSpecialSummon`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
@@ -43,6 +43,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Stand Up Centur-Ion! | `41371602` | [Scripts/c41371602.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c41371602.lua) | 1 |
 | Super Koi Koi | `66171432` | [Scripts/c66171432.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c66171432.lua) | 1 |
 | Re-dyce-cle | `85704698` | [Scripts/c85704698.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c85704698.lua) | 1 |
+| Destined Duel | `48128081` | [Scripts/c48128081.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c48128081.lua) | 1 |
 | The Kaiju Files | `11163040` | [Scripts/c11163040.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c11163040.lua) | 1 |
 | Interrupted Kaiju Slumber | `99330325` | [Scripts/c99330325.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c99330325.lua) | 2 |
 | Super Quantal Alphan Spike | `72332074` | [Scripts/c72332074.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c72332074.lua) | 1 |
@@ -59,8 +60,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Cynet Storm | `42461852` | [Scripts/c42461852.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c42461852.lua) | 2 |
 | Illusion Balloons | `62161698` | [Scripts/c62161698.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c62161698.lua) | 1 |
 | One or Eight | `74202664` | [Scripts/c74202664.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c74202664.lua) | 1 |
-| Reasoning | `58577036` | [Scripts/c58577036.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c58577036.lua) | 2 |
-| ...and 3 more |  |  |  |
+| ...and 4 more |  |  |  |
 
 ## Script Examples
 

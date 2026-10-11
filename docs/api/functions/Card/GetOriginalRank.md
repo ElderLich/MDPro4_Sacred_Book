@@ -20,14 +20,14 @@ Returns c's printed Rank from card data, or 0 if c is not an Xyz Monster.
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3414`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3462`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **9** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Card.GetOriginalRank`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Card.GetOriginalRank) with `Card.GetOriginalRank`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

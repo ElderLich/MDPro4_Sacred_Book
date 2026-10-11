@@ -17,7 +17,7 @@ Returns true for an opponent's card that has EFFECT_EXTRA_RELEASE_NONSUM availab
 
 ## Source
 
-- `Utilities/utility.lua:1515`
+- `Utilities/utility.lua:1518`
 
 ## Used By
 

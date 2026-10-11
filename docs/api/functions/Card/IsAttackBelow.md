@@ -22,14 +22,14 @@ Cards with unknown ATK return false because the core requires the current ATK to
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3621`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3673`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **172** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Card.IsAttackBelow`.
+- Detected in **174** indexed script(s).
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Card.IsAttackBelow) with `Card.IsAttackBelow`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
@@ -41,9 +41,10 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Enneacraft - Atori.MAR | `54842941` | [Scripts/c54842941.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c54842941.lua) | 1 |
 | Drytron Meteonis DA Draconids | `56863746` | [Scripts/c56863746.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c56863746.lua) | 1 |
 | Madolche Dessert | `51650038` | [Scripts/c51650038.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c51650038.lua) | 1 |
+| Helping Robo for Underwater Combat | `77856460` | [Scripts/c77856460.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c77856460.lua) | 1 |
 | Proxy F Magician | `12450071` | [Scripts/c12450071.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c12450071.lua) | 1 |
 | Number 93: Utopia Kaiser | `23187256` | [Scripts/c23187256.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c23187256.lua) | 1 |
-| Odd-Eyes Pendulum Dragon of the Four Heavenly Dragons | `75787708` | [Scripts/c75787708.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c75787708.lua) | 1 |
+| Odd-Eyes Pendulum Dragon, Four Heavenly Dragons | `75787708` | [Scripts/c75787708.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c75787708.lua) | 1 |
 | Shade the Obscure | `77157846` | [Scripts/c77157846.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c77157846.lua) | 1 |
 | Performapal Corn | `33103459` | [Scripts/c33103459.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c33103459.lua) | 1 |
 | Supreme King Dragon Odd-Eyes | `96733134` | [Scripts/c96733134.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c96733134.lua) | 1 |
@@ -56,8 +57,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Officiator of Doom Samuel | `76213610` | [Scripts/c76213610.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c76213610.lua) | 1 |
 | Sky Striker Ace - Azalea Temperance | `56741506` | [Scripts/c56741506.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c56741506.lua) | 1 |
 | Steel Star Regulator | `32986898` | [Scripts/c32986898.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c32986898.lua) | 1 |
-| Battlewasp Wind | `67441879` | [Scripts/c67441879.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c67441879.lua) | 1 |
-| ...and 148 more |  |  |  |
+| ...and 150 more |  |  |  |
 
 ## Script Examples
 

@@ -28,7 +28,7 @@ The helper forwards sub and insf unchanged to Auxiliary.AddFusionProcMix.
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **114** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Auxiliary.AddFusionProcCode2`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Auxiliary.AddFusionProcCode2) with `Auxiliary.AddFusionProcCode2`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

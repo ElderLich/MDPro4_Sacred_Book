@@ -23,14 +23,14 @@ Monster Zone bits are shifted by 16*p+seq; Spell & Trap Zone bits are shifted by
 
 ## Source
 
-- `Utilities/utility.lua:1487`
+- `Utilities/utility.lua:1490`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **6** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Auxiliary.SequenceToGlobal`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Auxiliary.SequenceToGlobal) with `Auxiliary.SequenceToGlobal`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

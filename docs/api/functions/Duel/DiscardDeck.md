@@ -28,8 +28,8 @@ Sends count cards from the top of player's Deck to the Graveyard for reason, and
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **136** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Duel.DiscardDeck`.
+- Detected in **137** indexed script(s).
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Duel.DiscardDeck) with `Duel.DiscardDeck`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
@@ -57,7 +57,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Jain, Twilightsworn General | `84673417` | [Scripts/c84673417.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c84673417.lua) | 1 |
 | Naturia Ladybug | `19605133` | [Scripts/c19605133.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c19605133.lua) | 1 |
 | Slash Draw | `71344451` | [Scripts/c71344451.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c71344451.lua) | 1 |
-| ...and 112 more |  |  |  |
+| ...and 113 more |  |  |  |
 
 ## Script Examples
 

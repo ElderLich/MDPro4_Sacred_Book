@@ -50,11 +50,12 @@ The return value is the actual damage applied. If damage is reversed, prevented,
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **817** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Duel.Damage`.
+- Detected in **824** indexed script(s).
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Duel.Damage) with `Duel.Damage`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
+| [Destiny HERO - Destro-Dogma](/examples/cards/25158975) | `25158975` | [Scripts/c25158975.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c25158975.lua) | 1 |
 | [Enneacraft - Archa.TAIL](/examples/cards/81237046) | `81237046` | [Scripts/c81237046.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c81237046.lua) | 2 |
 | [Enneacraft - Aiza.LEON](/examples/cards/82359538) | `82359538` | [Scripts/c82359538.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c82359538.lua) | 2 |
 | [Starving Venemy Dragon](/examples/cards/93729065) | `93729065` | [Scripts/c93729065.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c93729065.lua) | 1 |
@@ -78,10 +79,21 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Black-Winged Assault Dragon | `73218989` | [Scripts/c73218989.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c73218989.lua) | 1 |
 | Earthbound Servant Geo Gremlina | `33202303` | [Scripts/c33202303.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c33202303.lua) | 1 |
 | Raidraptor - Rising Rebellion Falcon | `71222868` | [Scripts/c71222868.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c71222868.lua) | 1 |
-| Vanquish Soul Heavy Borger | `92895501` | [Scripts/c92895501.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c92895501.lua) | 1 |
-| ...and 793 more |  |  |  |
+| ...and 800 more |  |  |  |
 
 ## Script Examples
+
+### Destiny HERO - Destro-Dogma (`25158975`)
+
+Source: [Scripts/c25158975.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c25158975.lua)
+
+```lua
+function s.damop2(e,tp,eg,ep,ev,re,r,rp)
+	Duel.Hint(HINT_CARD,0,id)
+	Duel.Damage(1-tp,2000,REASON_EFFECT)
+end
+function s.fspcon(e,tp,eg,ep,ev,re,r,rp)
+```
 
 ### Enneacraft - Archa.TAIL (`81237046`)
 
@@ -105,16 +117,4 @@ Source: [Scripts/c82359538.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/
 	Duel.Damage(1-tp,ct*900,REASON_EFFECT)
 end
 function s.regcon(e,tp,eg,ep,ev,re,r,rp)
-```
-
-### Starving Venemy Dragon (`93729065`)
-
-Source: [Scripts/c93729065.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c93729065.lua)
-
-```lua
-			tc:RegisterEffect(e6)
-		end
-		Duel.Damage(1-tp,500,REASON_EFFECT)
-	end
-end
 ```

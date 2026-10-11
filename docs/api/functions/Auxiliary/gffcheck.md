@@ -24,14 +24,14 @@ Checks a 2-card group against two filters in either order: one card must satisfy
 
 ## Source
 
-- `Utilities/utility.lua:1157`
+- `Utilities/utility.lua:1160`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **36** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Auxiliary.gffcheck`.
+- Detected in **37** indexed script(s).
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Auxiliary.gffcheck) with `Auxiliary.gffcheck`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
@@ -40,6 +40,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Red-Eyes Slash Dragon | `21140872` | [Scripts/c21140872.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c21140872.lua) | 1 |
 | Dragon Master Magia | `12381100` | [Scripts/c12381100.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c12381100.lua) | 2 |
 | Windwitch - Crystal Bell | `25793414` | [Scripts/c25793414.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c25793414.lua) | 1 |
+| Red-Eyes Black Dragon Exceed | `17242022` | [Scripts/c17242022.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c17242022.lua) | 1 |
 | Black-Winged Assault Dragon | `73218989` | [Scripts/c73218989.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c73218989.lua) | 1 |
 | Thunder Dragon Titan | `41685633` | [Scripts/c41685633.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c41685633.lua) | 1 |
 | Synchro Fellowship | `43834302` | [Scripts/c43834302.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c43834302.lua) | 3 |
@@ -58,8 +59,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Awakening of the Possessed - Greater Inari Fire | `92652813` | [Scripts/c92652813.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c92652813.lua) | 1 |
 | Blackwing - Twin Shadow | `69973414` | [Scripts/c69973414.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c69973414.lua) | 1 |
 | Awakening of the Possessed - Rasenryu | `410904` | [Scripts/c410904.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c410904.lua) | 1 |
-| Alba-Lenatus the Abyss Dragon | `3410461` | [Scripts/c3410461.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c3410461.lua) | 1 |
-| ...and 12 more |  |  |  |
+| ...and 13 more |  |  |  |
 
 ## Script Examples
 

@@ -21,7 +21,7 @@ Special Summon restriction target applied after the shared Ursarctic effect reso
 
 ## Source
 
-- `Utilities/utility.lua:995`
+- `Utilities/utility.lua:998`
 
 ## Used By
 

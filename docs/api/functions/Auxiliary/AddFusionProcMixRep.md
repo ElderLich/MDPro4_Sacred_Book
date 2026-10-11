@@ -30,7 +30,7 @@ fun1 is the repeated material requirement used minc to maxc times; additional ar
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **1** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Auxiliary.AddFusionProcMixRep`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Auxiliary.AddFusionProcMixRep) with `Auxiliary.AddFusionProcMixRep`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

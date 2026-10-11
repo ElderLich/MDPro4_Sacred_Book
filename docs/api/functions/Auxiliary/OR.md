@@ -27,7 +27,7 @@ Returns a composed predicate that calls each function with the same arguments an
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **1** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Auxiliary.OR`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Auxiliary.OR) with `Auxiliary.OR`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

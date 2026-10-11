@@ -28,7 +28,7 @@ Returns true if counter is registered in c.counter_add_list.
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **2** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Auxiliary.IsCounterAdded`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Auxiliary.IsCounterAdded) with `Auxiliary.IsCounterAdded`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

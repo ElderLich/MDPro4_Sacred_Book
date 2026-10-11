@@ -23,12 +23,12 @@ Replaces the target card group recorded for Chain Link chainc with g.
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **29** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Duel.ChangeTargetCard`.
+- Detected in **30** indexed script(s).
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Duel.ChangeTargetCard) with `Duel.ChangeTargetCard`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Chaos Hats | `2372506` | [Scripts/c2372506.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c2372506.lua) | 1 |
+| Chaos Magical Hats | `2372506` | [Scripts/c2372506.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c2372506.lua) | 1 |
 | Nerva the Power Patron of Creation | `53589300` | [Scripts/c53589300.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c53589300.lua) | 1 |
 | Dyna Tank | `75780818` | [Scripts/c75780818.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c75780818.lua) | 1 |
 | Artifact Durendal | `69840739` | [Scripts/c69840739.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c69840739.lua) | 1 |
@@ -44,6 +44,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Abyss Playhouse - Fantastic Theater | `77297908` | [Scripts/c77297908.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c77297908.lua) | 1 |
 | Phantom of Yubel | `80453041` | [Scripts/c80453041.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c80453041.lua) | 1 |
 | Number 75: Bamboozling Gossip Shadow | `71166481` | [Scripts/c71166481.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c71166481.lua) | 1 |
+| Cielo, the Night Sky of Raise Moon - No More Bets! | `73090586` | [Scripts/c73090586.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c73090586.lua) | 1 |
 | Fairy Tail - Sleeper | `42921475` | [Scripts/c42921475.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c42921475.lua) | 1 |
 | Shipping Error | `58761791` | [Scripts/c58761791.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c58761791.lua) | 1 |
 | Cairngorgon, Antiluminescent Knight | `21501505` | [Scripts/c21501505.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c21501505.lua) | 1 |
@@ -51,12 +52,11 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Shift | `59560625` | [Scripts/c59560625.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c59560625.lua) | 1 |
 | Vortex of Time | `42138622` | [Scripts/c42138622.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c42138622.lua) | 1 |
 | Fabled Dianaira | `53199020` | [Scripts/c53199020.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c53199020.lua) | 1 |
-| Generaider Boss Room | `64325438` | [Scripts/c64325438.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c64325438.lua) | 1 |
-| ...and 5 more |  |  |  |
+| ...and 6 more |  |  |  |
 
 ## Script Examples
 
-### Chaos Hats (`2372506`)
+### Chaos Magical Hats (`2372506`)
 
 Source: [Scripts/c2372506.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c2372506.lua)
 

@@ -28,7 +28,7 @@ Checks whether the effect includes range.
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **1** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Effect.IsHasRange`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Effect.IsHasRange) with `Effect.IsHasRange`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

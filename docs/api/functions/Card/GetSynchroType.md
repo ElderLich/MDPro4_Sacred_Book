@@ -20,14 +20,14 @@ Returns c's Synchro Material Type mask used by Synchro Material checks.
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3405`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3453`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **1** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Card.GetSynchroType`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Card.GetSynchroType) with `Card.GetSynchroType`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

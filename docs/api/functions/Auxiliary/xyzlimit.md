@@ -26,7 +26,7 @@ Special Summon condition helper that returns true only when st contains SUMMON_T
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **1** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Auxiliary.xyzlimit`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Auxiliary.xyzlimit) with `Auxiliary.xyzlimit`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

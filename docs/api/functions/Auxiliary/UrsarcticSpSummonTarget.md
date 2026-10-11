@@ -28,7 +28,7 @@ Target function for the shared Ursarctic Special Summon effect. It requires an o
 
 ## Source
 
-- `Utilities/utility.lua:976`
+- `Utilities/utility.lua:979`
 
 ## Used By
 

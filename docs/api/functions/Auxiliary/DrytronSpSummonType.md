@@ -20,14 +20,14 @@ Returns whether c is a Special Summon procedure monster, used by Drytron Special
 
 ## Source
 
-- `Utilities/utility.lua:1079`
+- `Utilities/utility.lua:1082`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **3** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Auxiliary.DrytronSpSummonType`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Auxiliary.DrytronSpSummonType) with `Auxiliary.DrytronSpSummonType`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

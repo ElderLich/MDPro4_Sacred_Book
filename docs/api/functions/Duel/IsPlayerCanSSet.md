@@ -28,7 +28,7 @@ Checks whether player can Set Spell/Trap Cards at all, or whether player can Set
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **2** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Duel.IsPlayerCanSSet`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Duel.IsPlayerCanSSet) with `Duel.IsPlayerCanSSet`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

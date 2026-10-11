@@ -21,14 +21,14 @@ Checks whether c has a nonzero Link Rating greater than or equal to link.
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3620`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3672`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **28** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Card.IsLinkAbove`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Card.IsLinkAbove) with `Card.IsLinkAbove`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

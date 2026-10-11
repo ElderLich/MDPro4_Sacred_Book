@@ -18,19 +18,20 @@ Returns false.
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **122** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Auxiliary.FALSE`.
+- Detected in **126** indexed script(s).
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Auxiliary.FALSE) with `Auxiliary.FALSE`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
+| [Levia-Dragoon - Daedalus](/examples/cards/78579058) | `78579058` | [Scripts/c78579058.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c78579058.lua) | 1 |
 | [Eternal Favorite](/examples/cards/87532344) | `87532344` | [Scripts/c87532344.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c87532344.lua) | 2 |
 | [Ultra Polymerization](/examples/cards/76647978) | `76647978` | [Scripts/c76647978.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c76647978.lua) | 1 |
 | [Odd-Eyes Revolution Dragon](/examples/cards/16306932) | `16306932` | [Scripts/c16306932.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c16306932.lua) | 1 |
 | [Enlightenment Dragon](/examples/cards/46186135) | `46186135` | [Scripts/c46186135.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c46186135.lua) | 1 |
 | Super Duper Polymerization | `44886582` | [Scripts/c44886582.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c44886582.lua) | 1 |
 | Exosisters Magnifica | `59242457` | [Scripts/c59242457.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c59242457.lua) | 1 |
+| Phara the Primordial Goddess | `82344137` | [Scripts/c82344137.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c82344137.lua) | 1 |
 | Chaos Emperor Dragon - Envoy of the End | `82301904` | [Scripts/c82301904.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c82301904.lua) | 1 |
-| Phara, the Goddess of the Beginning | `82344137` | [Scripts/c82344137.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c82344137.lua) | 1 |
 | Ma'at | `18631392` | [Scripts/c18631392.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c18631392.lua) | 1 |
 | Blackwing - Aurora the Northern Lights | `4068622` | [Scripts/c4068622.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c4068622.lua) | 1 |
 | King's Resonance | `17269895` | [Scripts/c17269895.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c17269895.lua) | 1 |
@@ -43,13 +44,24 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Uria, Lord of Searing Flames | `6007213` | [Scripts/c6007213.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c6007213.lua) | 1 |
 | The Winged Dragon of Ra - Immortal Phoenix | `10000090` | [Scripts/c10000090.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c10000090.lua) | 1 |
 | Raviel, Lord of Phantasms | `69890967` | [Scripts/c69890967.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c69890967.lua) | 1 |
+| Lunalight Scarlet Tiger | `11876803` | [Scripts/c11876803.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c11876803.lua) | 1 |
 | Slifer the Sky Dragon | `10000020` | [Scripts/c10000020.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c10000020.lua) | 1 |
 | Malefic Truth Dragon | `37115575` | [Scripts/c37115575.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c37115575.lua) | 1 |
-| Uria, Lord of Searing Flames - Sacred Beast of Cataclysmic Fire | `23856331` | [Scripts/c23856331.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c23856331.lua) | 1 |
-| Xyz Encore | `78610936` | [Scripts/c78610936.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c78610936.lua) | 1 |
-| ...and 98 more |  |  |  |
+| ...and 102 more |  |  |  |
 
 ## Script Examples
+
+### Levia-Dragoon - Daedalus (`78579058`)
+
+Source: [Scripts/c78579058.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c78579058.lua)
+
+```lua
+	Duel.SetOperationInfo(0,CATEGORY_HANDES_OPPO,nil,0,1-tp,1)
+	Duel.SetOperationInfo(0,CATEGORY_DRAW,nil,0,1-tp,1)
+	Duel.SetChainLimit(aux.FALSE)
+end
+function s.drop(e,tp,eg,ep,ev,re,r,rp)
+```
 
 ### Eternal Favorite (`87532344`)
 
@@ -73,16 +85,4 @@ Source: [Scripts/c76647978.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/
 		Duel.SetChainLimit(aux.FALSE)
 	end
 end
-```
-
-### Odd-Eyes Revolution Dragon (`16306932`)
-
-Source: [Scripts/c16306932.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c16306932.lua)
-
-```lua
-	e3:SetProperty(EFFECT_FLAG_CANNOT_DISABLE+EFFECT_FLAG_UNCOPYABLE)
-	e3:SetCode(EFFECT_SPSUMMON_CONDITION)
-	e3:SetValue(aux.FALSE)
-	c:RegisterEffect(e3)
-	--special summon rule
 ```

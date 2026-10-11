@@ -21,14 +21,14 @@ Returns the Race c is treated as having in the GY for player, defaulting to the 
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3442`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3490`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **1** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Card.GetRaceInGrave`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Card.GetRaceInGrave) with `Card.GetRaceInGrave`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

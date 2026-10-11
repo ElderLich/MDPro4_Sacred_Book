@@ -23,14 +23,14 @@ This core binding validates c but tests the duel's current attacker. ac defaults
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3602`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3654`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **44** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Card.IsChainAttackable`.
+- Detected in **45** indexed script(s).
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Card.IsChainAttackable) with `Card.IsChainAttackable`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
@@ -39,6 +39,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Favorite Hero | `11881272` | [Scripts/c11881272.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c11881272.lua) | 1 |
 | Altergeist Memorygant | `23790299` | [Scripts/c23790299.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c23790299.lua) | 1 |
 | Infernoid Attondel | `88301393` | [Scripts/c88301393.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c88301393.lua) | 1 |
+| D - Burst | `47471667` | [Scripts/c47471667.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c47471667.lua) | 1 |
 | Number C5: Chaos Chimera Dragon | `69757518` | [Scripts/c69757518.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c69757518.lua) | 1 |
 | Survival of the Fittest | `58272005` | [Scripts/c58272005.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c58272005.lua) | 1 |
 | Black Luster Soldier - Envoy of the Beginning | `72989439` | [Scripts/c72989439.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c72989439.lua) | 1 |
@@ -57,8 +58,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Neo Blue-Eyes Ultimate Dragon | `56532353` | [Scripts/c56532353.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c56532353.lua) | 1 |
 | Firewall Dragon Darkfluid | `68934651` | [Scripts/c68934651.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c68934651.lua) | 1 |
 | White Reincarnation | `91434208` | [Scripts/c91434208.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c91434208.lua) | 1 |
-| Fossil Warrior Skull Knight | `59531356` | [Scripts/c59531356.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c59531356.lua) | 1 |
-| ...and 20 more |  |  |  |
+| ...and 21 more |  |  |  |
 
 ## Script Examples
 

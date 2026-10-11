@@ -27,7 +27,7 @@ Returns the five stored dice-result slots for the current dice event.
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **2** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Duel.GetDiceResult`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Duel.GetDiceResult) with `Duel.GetDiceResult`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

@@ -23,7 +23,7 @@ Operation for the shared Ursarctic Special Summon effect. It Special Summons the
 
 ## Source
 
-- `Utilities/utility.lua:981`
+- `Utilities/utility.lua:984`
 
 ## Used By
 

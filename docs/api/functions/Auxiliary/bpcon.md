@@ -23,18 +23,18 @@ Returns true if the player can enter the Battle Phase, or if the current phase i
 
 ## Source
 
-- `Utilities/utility.lua:806`
+- `Utilities/utility.lua:809`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **43** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Auxiliary.bpcon`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Auxiliary.bpcon) with `Auxiliary.bpcon`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| [Fiendsmith Kyrie](/examples/cards/26434972) | `26434972` | [Scripts/c26434972.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c26434972.lua) | 1 |
+| Fiendsmith Kyrie | `26434972` | [Scripts/c26434972.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c26434972.lua) | 1 |
 | D/D Extra Surveyor | `74387963` | [Scripts/c74387963.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c74387963.lua) | 1 |
 | Earthbound Servant Geo Gremlina | `33202303` | [Scripts/c33202303.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c33202303.lua) | 1 |
 | Majestic Absorption | `63144961` | [Scripts/c63144961.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c63144961.lua) | 3 |

@@ -32,8 +32,8 @@ mg can restrict the candidate pool. toplayer defaults to player; when toplayer d
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **71** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Duel.SelectTribute`.
+- Detected in **72** indexed script(s).
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Duel.SelectTribute) with `Duel.SelectTribute`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
@@ -53,6 +53,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Raiza the Mega Monarch | `69327790` | [Scripts/c69327790.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c69327790.lua) | 1 |
 | Master Peace, the True Dracoverlord | `12800564` | [Scripts/c12800564.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c12800564.lua) | 1 |
 | Gravekeeper's Oracle | `25524823` | [Scripts/c25524823.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c25524823.lua) | 2 |
+| Assault Lion | `67676619` | [Scripts/c67676619.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c67676619.lua) | 1 |
 | Slifer the Sky Dragon | `10000020` | [Scripts/c10000020.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c10000020.lua) | 1 |
 | Twilight Ninja Getsuga, the Shogun | `76930964` | [Scripts/c76930964.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c76930964.lua) | 1 |
 | Behemoth the King of a Hundred Battles | `13836592` | [Scripts/c13836592.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c13836592.lua) | 1 |
@@ -60,8 +61,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Leo Wizard the Dark Fiend | `55423549` | [Scripts/c55423549.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c55423549.lua) | 1 |
 | Thestalos the Mega Monarch | `69230391` | [Scripts/c69230391.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c69230391.lua) | 1 |
 | The Tyrant Neptune | `88071625` | [Scripts/c88071625.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c88071625.lua) | 1 |
-| Mobius the Mega Monarch | `23689697` | [Scripts/c23689697.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c23689697.lua) | 1 |
-| ...and 47 more |  |  |  |
+| ...and 48 more |  |  |  |
 
 ## Script Examples
 

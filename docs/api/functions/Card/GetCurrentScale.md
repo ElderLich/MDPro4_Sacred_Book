@@ -21,19 +21,19 @@ In a Pendulum Zone, this returns the left or right current scale according to c'
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3420`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3468`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **23** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Card.GetCurrentScale`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Card.GetCurrentScale) with `Card.GetCurrentScale`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
 | [DoSolfachord Coolia](/examples/cards/80776622) | `80776622` | [Scripts/c80776622.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c80776622.lua) | 2 |
-| Odd-Eyes Pendulum Dragon of the Four Heavenly Dragons | `75787708` | [Scripts/c75787708.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c75787708.lua) | 2 |
+| Odd-Eyes Pendulum Dragon, Four Heavenly Dragons | `75787708` | [Scripts/c75787708.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c75787708.lua) | 2 |
 | LaSolfachord Angelia | `27993919` | [Scripts/c27993919.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c27993919.lua) | 4 |
 | TiSolfachord Beautia | `54387923` | [Scripts/c54387923.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c54387923.lua) | 2 |
 | Solfachord Happiness | `93481594` | [Scripts/c93481594.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c93481594.lua) | 1 |
@@ -70,7 +70,7 @@ end
 function c80776622.distg(e,tp,eg,ep,ev,re,r,rp,chk,chkc)
 ```
 
-### Odd-Eyes Pendulum Dragon of the Four Heavenly Dragons (`75787708`)
+### Odd-Eyes Pendulum Dragon, Four Heavenly Dragons (`75787708`)
 
 Source: [Scripts/c75787708.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c75787708.lua)
 

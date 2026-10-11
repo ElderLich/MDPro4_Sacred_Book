@@ -19,14 +19,14 @@ Registers global listeners that merge multiple occurrences of event into one EVE
 
 ## Source
 
-- `Utilities/utility.lua:1647`
+- `Utilities/utility.lua:1650`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **11** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Auxiliary.RegisterMergedDelayedEvent`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Auxiliary.RegisterMergedDelayedEvent) with `Auxiliary.RegisterMergedDelayedEvent`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

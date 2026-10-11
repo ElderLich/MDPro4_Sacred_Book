@@ -21,14 +21,14 @@ Checks whether c's type while used as Xyz Material contains type.
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3488`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3540`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **24** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Card.IsXyzType`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Card.IsXyzType) with `Card.IsXyzType`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

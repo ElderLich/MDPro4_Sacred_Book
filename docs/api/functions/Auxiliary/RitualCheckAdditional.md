@@ -29,7 +29,7 @@ Returns an additional subgroup check used while selecting Ritual Materials for E
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **31** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Auxiliary.RitualCheckAdditional`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Auxiliary.RitualCheckAdditional) with `Auxiliary.RitualCheckAdditional`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

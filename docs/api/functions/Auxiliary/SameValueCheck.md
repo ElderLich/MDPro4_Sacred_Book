@@ -21,14 +21,14 @@ Checks whether every card in g shares at least one bit returned by f; groups of 
 
 ## Source
 
-- `Utilities/utility.lua:1838`
+- `Utilities/utility.lua:1843`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **19** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Auxiliary.SameValueCheck`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Auxiliary.SameValueCheck) with `Auxiliary.SameValueCheck`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

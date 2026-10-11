@@ -27,7 +27,7 @@ Registers a Fusion procedure requiring between minc and maxc materials that sati
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **4** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Auxiliary.AddFusionProcFunRep2`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Auxiliary.AddFusionProcFunRep2) with `Auxiliary.AddFusionProcFunRep2`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

@@ -22,14 +22,14 @@ Oath target for the shared Drytron cost; it prevents Special Summoning monsters 
 
 ## Source
 
-- `Utilities/utility.lua:1054`
+- `Utilities/utility.lua:1057`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **1** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Auxiliary.DrytronSpSummonLimit`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Auxiliary.DrytronSpSummonLimit) with `Auxiliary.DrytronSpSummonLimit`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

@@ -20,14 +20,14 @@ Returns c's current location, or 0 if c is currently treated as not being on the
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3469`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3518`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **23** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Card.GetLocation`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Card.GetLocation) with `Card.GetLocation`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
@@ -53,7 +53,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Theinen the Great Sphinx | `87997872` | [Scripts/c87997872.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c87997872.lua) | 1 |
 | Mikazukinoyaiba, the Moon Fang Dragon | `85753549` | [Scripts/c85753549.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c85753549.lua) | 1 |
 | Dances with Beasts | `33298291` | [Scripts/c33298291.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c33298291.lua) | 1 |
-| Oh my Trap Hole! | `10529441` | [Scripts/c10529441.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c10529441.lua) | 1 |
+| Foolish Trap Hole | `10529441` | [Scripts/c10529441.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c10529441.lua) | 1 |
 
 ## Script Examples
 

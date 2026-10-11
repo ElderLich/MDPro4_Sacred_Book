@@ -27,7 +27,7 @@ Registers a fixed-count Fusion Material procedure requiring cc monsters with car
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **11** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Auxiliary.AddFusionProcCodeRep`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Auxiliary.AddFusionProcCodeRep) with `Auxiliary.AddFusionProcCodeRep`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

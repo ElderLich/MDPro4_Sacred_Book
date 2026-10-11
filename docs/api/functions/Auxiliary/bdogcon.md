@@ -27,14 +27,14 @@ Condition helper for a battle-destroying monster: the handler is still related t
 
 ## Source
 
-- `Utilities/utility.lua:780`
+- `Utilities/utility.lua:783`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **29** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Auxiliary.bdogcon`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Auxiliary.bdogcon) with `Auxiliary.bdogcon`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

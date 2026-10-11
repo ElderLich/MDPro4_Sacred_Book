@@ -52,15 +52,15 @@ The first return value is false when that category was not recorded. The remaini
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **71** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Duel.GetOperationInfo`.
+- Detected in **72** indexed script(s).
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Duel.GetOperationInfo) with `Duel.GetOperationInfo`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
 | [Enneacraft - Archa.TAIL](/examples/cards/81237046) | `81237046` | [Scripts/c81237046.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c81237046.lua) | 1 |
 | Ruddy Rose Dragon | `40139997` | [Scripts/c40139997.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c40139997.lua) | 1 |
-| Raiza the Mega Monarch | `69327790` | [Scripts/c69327790.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c69327790.lua) | 2 |
 | Keaf, Murk of the Ghoti | `99529628` | [Scripts/c99529628.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c99529628.lua) | 2 |
+| Raiza the Mega Monarch | `69327790` | [Scripts/c69327790.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c69327790.lua) | 2 |
 | Meklord Emperor Wisel - Synchro Absorption | `30221870` | [Scripts/c30221870.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c30221870.lua) | 1 |
 | Underworld Goddess of the Closed World | `98127546` | [Scripts/c98127546.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c98127546.lua) | 1 |
 | Shield Handler | `93655221` | [Scripts/c93655221.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c93655221.lua) | 1 |
@@ -68,6 +68,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Evil★Twin GG EZ | `34365442` | [Scripts/c34365442.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c34365442.lua) | 1 |
 | Stardust Dragon | `44508094` | [Scripts/c44508094.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c44508094.lua) | 1 |
 | Baxia, Brightness of the Yang Zing | `83755611` | [Scripts/c83755611.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c83755611.lua) | 2 |
+| Mind Mirror Force | `66247039` | [Scripts/c66247039.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c66247039.lua) | 1 |
 | Salamangreat Charge | `83533296` | [Scripts/c83533296.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c83533296.lua) | 2 |
 | Cyber Angel Vrash | `78316184` | [Scripts/c78316184.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c78316184.lua) | 1 |
 | Van'Dalgyon the Dark Dragon Lord | `24857466` | [Scripts/c24857466.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c24857466.lua) | 2 |
@@ -80,8 +81,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Engraver of the Mark | `50078320` | [Scripts/c50078320.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c50078320.lua) | 1 |
 | Number 39: Utopia Beyond | `21521304` | [Scripts/c21521304.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c21521304.lua) | 2 |
 | Hyper Psychic Blaster/Assault Mode | `37169670` | [Scripts/c37169670.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c37169670.lua) | 2 |
-| Dark Magic Mirror Force | `59016454` | [Scripts/c59016454.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c59016454.lua) | 1 |
-| ...and 47 more |  |  |  |
+| ...and 48 more |  |  |  |
 
 ## Script Examples
 
@@ -109,14 +109,14 @@ function c40139997.discon(e,tp,eg,ep,ev,re,r,rp)
 end
 ```
 
-### Raiza the Mega Monarch (`69327790`)
+### Keaf, Murk of the Ghoti (`99529628`)
 
-Source: [Scripts/c69327790.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c69327790.lua)
+Source: [Scripts/c99529628.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c99529628.lua)
 
 ```lua
 end
-function c69327790.tdop(e,tp,eg,ep,ev,re,r,rp)
-	local ex,g1=Duel.GetOperationInfo(0,CATEGORY_TODECK)
-	local ex2,g2=Duel.GetOperationInfo(0,CATEGORY_TOHAND)
-	if g1 then
+function s.rmop(e,tp,eg,ep,ev,re,r,rp)
+	local res1,tg1=Duel.GetOperationInfo(0,CATEGORY_REMOVE)
+	local res2,tg2=Duel.GetOperationInfo(0,CATEGORY_SPECIAL_SUMMON)
+	local c=e:GetHandler()
 ```

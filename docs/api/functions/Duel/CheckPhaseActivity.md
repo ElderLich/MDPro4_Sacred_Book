@@ -23,7 +23,7 @@ Returns whether an action has been recorded for the current phase.
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **25** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Duel.CheckPhaseActivity`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Duel.CheckPhaseActivity) with `Duel.CheckPhaseActivity`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

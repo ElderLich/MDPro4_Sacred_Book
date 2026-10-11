@@ -23,12 +23,12 @@ Shuffles player's Extra Deck.
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **37** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Duel.ShuffleExtra`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Duel.ShuffleExtra) with `Duel.ShuffleExtra`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Kewl Tune Crackle | `39576656` | [Scripts/c39576656.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c39576656.lua) | 2 |
-| Invoked Transcendence Aeon | `33166263` | [Scripts/c33166263.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c33166263.lua) | 1 |
+| [Kewl Tune Crackle](/examples/cards/39576656) | `39576656` | [Scripts/c39576656.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c39576656.lua) | 2 |
+| Hyperinvoked Aeon | `33166263` | [Scripts/c33166263.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c33166263.lua) | 1 |
 | Future Fusion | `77565204` | [Scripts/c77565204.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c77565204.lua) | 1 |
 | Number 78: Number Archive | `29085954` | [Scripts/c29085954.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c29085954.lua) | 1 |
 | Fydraulis Harmonia | `70088809` | [Scripts/c70088809.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c70088809.lua) | 1 |
@@ -38,7 +38,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | True King Lithosagym, the Disaster | `30539496` | [Scripts/c30539496.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c30539496.lua) | 1 |
 | Aegaion the Sea Castrum | `10678778` | [Scripts/c10678778.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c10678778.lua) | 1 |
 | Number 1: Infection Buzzking | `10666000` | [Scripts/c10666000.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c10666000.lua) | 1 |
-| Spirit Sword Aiwass | `63926180` | [Scripts/c63926180.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c63926180.lua) | 1 |
+| Sacred Spirit Sword Aiwass | `63926180` | [Scripts/c63926180.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c63926180.lua) | 1 |
 | Abyss Script - Fire Dragon's Lair | `50179591` | [Scripts/c50179591.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c50179591.lua) | 1 |
 | Trishula, the Dragon of Icy Imprisonment | `15661378` | [Scripts/c15661378.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c15661378.lua) | 1 |
 | White Relic of Dogmatika | `48654323` | [Scripts/c48654323.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c48654323.lua) | 1 |
@@ -67,7 +67,7 @@ Source: [Scripts/c39576656.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/
 end
 ```
 
-### Invoked Transcendence Aeon (`33166263`)
+### Hyperinvoked Aeon (`33166263`)
 
 Source: [Scripts/c33166263.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c33166263.lua)
 

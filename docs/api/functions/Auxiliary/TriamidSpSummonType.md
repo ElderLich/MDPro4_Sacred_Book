@@ -20,14 +20,14 @@ Returns whether c is a Special Summon procedure monster, used by Triamid Special
 
 ## Source
 
-- `Utilities/utility.lua:1092`
+- `Utilities/utility.lua:1095`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **3** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Auxiliary.TriamidSpSummonType`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Auxiliary.TriamidSpSummonType) with `Auxiliary.TriamidSpSummonType`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

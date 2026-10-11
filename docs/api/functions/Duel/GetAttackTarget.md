@@ -22,11 +22,12 @@ Returns the monster currently being attacked, or nil for a direct attack.
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **658** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Duel.GetAttackTarget`.
+- Detected in **659** indexed script(s).
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Duel.GetAttackTarget) with `Duel.GetAttackTarget`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
+| Trirealm Rift Judgment | `65195679` | [Scripts/c65195679.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c65195679.lua) | 1 |
 | K9-X Forced Release | `53792930` | [Scripts/c53792930.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c53792930.lua) | 1 |
 | Number 99: Utopia Dragonar | `95134948` | [Scripts/c95134948.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c95134948.lua) | 1 |
 | Number 38: Hope Harbinger Dragon Titanic Galaxy | `63767246` | [Scripts/c63767246.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c63767246.lua) | 1 |
@@ -49,11 +50,22 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Infernoid Piaty | `25811989` | [Scripts/c25811989.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c25811989.lua) | 1 |
 | Raidraptor - Last Strix | `97219708` | [Scripts/c97219708.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c97219708.lua) | 1 |
 | Mechanical Mechanic | `22106558` | [Scripts/c22106558.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c22106558.lua) | 2 |
-| VARefar, the Judge of Ball | `19743887` | [Scripts/c19743887.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c19743887.lua) | 1 |
-| Charming Resort Staff | `64753157` | [Scripts/c64753157.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c64753157.lua) | 1 |
-| ...and 634 more |  |  |  |
+| White Knight Lord | `14732294` | [Scripts/c14732294.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c14732294.lua) | 1 |
+| ...and 635 more |  |  |  |
 
 ## Script Examples
+
+### Trirealm Rift Judgment (`65195679`)
+
+Source: [Scripts/c65195679.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c65195679.lua)
+
+```lua
+	if Duel.GetMatchingGroupCount(aux.TRUE,e:GetHandlerPlayer(),LOCATION_DECK,0,nil)>0 then return end
+	local a=Duel.GetAttacker()
+	local d=Duel.GetAttackTarget()
+	if not d then return false end
+	if not a:IsControler(tp) then a,d=d,a end
+```
 
 ### K9-X Forced Release (`53792930`)
 
@@ -77,16 +89,4 @@ Source: [Scripts/c95134948.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/
 	if Duel.GetAttackTarget()~=nil then return end
 	if tc:GetFlagEffect(95134948)==0 then
 		tc:RegisterFlagEffect(95134948,RESET_EVENT+RESETS_STANDARD+RESET_PHASE+PHASE_END,0,1)
-```
-
-### Number 38: Hope Harbinger Dragon Titanic Galaxy (`63767246`)
-
-Source: [Scripts/c63767246.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c63767246.lua)
-
-```lua
-end
-function c63767246.cbcon(e,tp,eg,ep,ev,re,r,rp)
-	return Duel.GetTurnPlayer()~=tp and Duel.GetAttackTarget()~=e:GetHandler()
-end
-function c63767246.cbcost(e,tp,eg,ep,ev,re,r,rp,chk)
 ```

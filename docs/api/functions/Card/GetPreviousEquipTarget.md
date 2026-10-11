@@ -38,14 +38,14 @@ This is the usual read for lost-target or sent-from-field Equip Card triggers. I
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3523`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3575`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **45** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Card.GetPreviousEquipTarget`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Card.GetPreviousEquipTarget) with `Card.GetPreviousEquipTarget`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

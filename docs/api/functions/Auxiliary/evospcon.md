@@ -27,14 +27,14 @@ Special Summon condition helper for Evolsaur-style effects and set 0x304e monste
 
 ## Source
 
-- `Utilities/utility.lua:914`
+- `Utilities/utility.lua:917`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **7** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Auxiliary.evospcon`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Auxiliary.evospcon) with `Auxiliary.evospcon`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

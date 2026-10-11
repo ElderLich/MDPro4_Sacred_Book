@@ -20,14 +20,14 @@ Checks whether c currently has STATUS_DISABLED.
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3573`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3625`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **50** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Card.IsDisabled`.
+- Detected in **52** indexed script(s).
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Card.IsDisabled) with `Card.IsDisabled`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
@@ -36,9 +36,11 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Relinquished Fusion | `78063197` | [Scripts/c78063197.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c78063197.lua) | 1 |
 | Meklord Astro Mekanikle | `63468625` | [Scripts/c63468625.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c63468625.lua) | 1 |
 | Union Activation | `38527680` | [Scripts/c38527680.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c38527680.lua) | 1 |
+| Quick Summon | `10086952` | [Scripts/c10086952.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c10086952.lua) | 1 |
 | Dragunity Arma Leyvaten | `63487632` | [Scripts/c63487632.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c63487632.lua) | 1 |
 | Groza, Tyrant of Thunder | `45420955` | [Scripts/c45420955.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c45420955.lua) | 1 |
 | S-Force Justify | `35334193` | [Scripts/c35334193.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c35334193.lua) | 1 |
+| Reversal Box | `2606417` | [Scripts/c2606417.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c2606417.lua) | 1 |
 | Meklord Emperor Granel | `4545683` | [Scripts/c4545683.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c4545683.lua) | 1 |
 | DoomZ Command "D.O.O.M.D.U.R.G." | `68831625` | [Scripts/c68831625.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c68831625.lua) | 1 |
 | Goblin Freefall Squad | `85123771` | [Scripts/c85123771.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c85123771.lua) | 1 |
@@ -53,9 +55,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Deus X-Krawler | `62587693` | [Scripts/c62587693.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c62587693.lua) | 1 |
 | Dragunity Arma Mystletainn | `876330` | [Scripts/c876330.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c876330.lua) | 1 |
 | Interdimensional Matter Forwarder | `60238002` | [Scripts/c60238002.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c60238002.lua) | 1 |
-| Raging Storm Dragon - Beaufort IX | `8836329` | [Scripts/c8836329.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c8836329.lua) | 1 |
-| Morphtronic Vacuumen | `48868994` | [Scripts/c48868994.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c48868994.lua) | 3 |
-| ...and 26 more |  |  |  |
+| ...and 28 more |  |  |  |
 
 ## Script Examples
 

@@ -16,14 +16,14 @@ Registers the shared B.E.S. maintenance trigger on c. After c battles, it remove
 
 ## Source
 
-- `Utilities/utility.lua:1791`
+- `Utilities/utility.lua:1796`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **6** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Auxiliary.EnableBESRemove`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Auxiliary.EnableBESRemove) with `Auxiliary.EnableBESRemove`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

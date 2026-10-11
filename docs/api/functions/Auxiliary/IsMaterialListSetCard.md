@@ -28,7 +28,7 @@ Checks whether c lists setcode in its material_setcode metadata, including packe
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **9** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Auxiliary.IsMaterialListSetCard`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Auxiliary.IsMaterialListSetCard) with `Auxiliary.IsMaterialListSetCard`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

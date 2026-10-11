@@ -28,7 +28,7 @@ Checks whether player can send c to the Graveyard.
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **3** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Duel.IsPlayerCanSendtoGrave`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Duel.IsPlayerCanSendtoGrave) with `Duel.IsPlayerCanSendtoGrave`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

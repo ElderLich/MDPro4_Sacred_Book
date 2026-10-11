@@ -20,14 +20,14 @@ Returns e's handler while that card is still related to the current Chain; other
 
 ## Source
 
-- `Utilities/utility.lua:1176`
+- `Utilities/utility.lua:1179`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **162** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Auxiliary.ExceptThisCard`.
+- Detected in **164** indexed script(s).
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Auxiliary.ExceptThisCard) with `Auxiliary.ExceptThisCard`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
@@ -35,18 +35,19 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | [Enlightenment Dragon](/examples/cards/46186135) | `46186135` | [Scripts/c46186135.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c46186135.lua) | 1 |
 | Performapal Celestial Magician | `58092907` | [Scripts/c58092907.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c58092907.lua) | 2 |
 | Fallen Paradise of the Sacred Beasts | `65861210` | [Scripts/c65861210.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c65861210.lua) | 1 |
-| Invoked Transcendence Aeon | `33166263` | [Scripts/c33166263.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c33166263.lua) | 1 |
+| Hyperinvoked Aeon | `33166263` | [Scripts/c33166263.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c33166263.lua) | 1 |
 | Sosei Ryu-Ge Mistva | `92487128` | [Scripts/c92487128.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c92487128.lua) | 1 |
 | Shadow Severing Strike | `57232301` | [Scripts/c57232301.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c57232301.lua) | 1 |
 | Triangle O | `11489642` | [Scripts/c11489642.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c11489642.lua) | 1 |
 | Immortal Phoenix Gearfried | `22091647` | [Scripts/c22091647.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c22091647.lua) | 1 |
 | Ruddy Rose Dragon | `40139997` | [Scripts/c40139997.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c40139997.lua) | 1 |
 | DoomZ Command "D.O.O.M.D.U.R.G." | `68831625` | [Scripts/c68831625.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c68831625.lua) | 1 |
-| Mystic Box of Chaos | `75983808` | [Scripts/c75983808.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c75983808.lua) | 1 |
+| Chaos Mystic Box | `75983808` | [Scripts/c75983808.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c75983808.lua) | 1 |
 | Clockwork Knight | `41739381` | [Scripts/c41739381.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c41739381.lua) | 1 |
 | Stellarknight Triverr | `42589641` | [Scripts/c42589641.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c42589641.lua) | 1 |
+| Ars Magna - "Philosophirum" | `90728287` | [Scripts/c90728287.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c90728287.lua) | 2 |
 | Super Quantum Black Layer | `92034192` | [Scripts/c92034192.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c92034192.lua) | 1 |
-| Crimson Dragon Quetzacoatl | `29053656` | [Scripts/c29053656.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c29053656.lua) | 1 |
+| Crimson Dragon Quetzalcoatl | `29053656` | [Scripts/c29053656.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c29053656.lua) | 1 |
 | Maliss ＜P＞ March Hare | `20938824` | [Scripts/c20938824.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c20938824.lua) | 1 |
 | Infernoid Onuncu | `14799437` | [Scripts/c14799437.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c14799437.lua) | 1 |
 | Possessed Partnerships | `65046521` | [Scripts/c65046521.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c65046521.lua) | 2 |
@@ -54,8 +55,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Topologic Blaster Dragon | `30064423` | [Scripts/c30064423.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c30064423.lua) | 2 |
 | Sky Striker Ace - Azalea Temperance | `56741506` | [Scripts/c56741506.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c56741506.lua) | 1 |
 | Elemental HERO Thunder Giant - Voltic Thunder | `19222426` | [Scripts/c19222426.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c19222426.lua) | 1 |
-| DoomZ Raiders | `32442017` | [Scripts/c32442017.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c32442017.lua) | 2 |
-| ...and 138 more |  |  |  |
+| ...and 140 more |  |  |  |
 
 ## Script Examples
 

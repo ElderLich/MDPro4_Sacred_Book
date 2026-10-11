@@ -25,7 +25,7 @@ The helper calls Card.EnableReviveLimit, stores loc on c's metatable as psummona
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **2** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Auxiliary.EnableReviveLimitPendulumSummonable`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Auxiliary.EnableReviveLimitPendulumSummonable) with `Auxiliary.EnableReviveLimitPendulumSummonable`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

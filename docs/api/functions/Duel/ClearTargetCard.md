@@ -19,7 +19,7 @@ Clears the target-card group recorded on the current Chain Link, if one exists.
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **21** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Duel.ClearTargetCard`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Duel.ClearTargetCard) with `Duel.ClearTargetCard`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

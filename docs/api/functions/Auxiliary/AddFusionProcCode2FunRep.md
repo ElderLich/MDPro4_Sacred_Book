@@ -30,7 +30,7 @@ Registers a Fusion Material procedure requiring code1, code2, and between minc a
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **1** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Auxiliary.AddFusionProcCode2FunRep`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Auxiliary.AddFusionProcCode2FunRep) with `Auxiliary.AddFusionProcCode2FunRep`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

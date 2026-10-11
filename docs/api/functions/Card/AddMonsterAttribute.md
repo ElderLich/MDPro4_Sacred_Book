@@ -23,14 +23,14 @@ The binding clears STATUS_NO_LEVEL, applies EFFECT_PRE_MONSTER with type, and ap
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3653`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3705`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **72** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Card.AddMonsterAttribute`.
+- Detected in **76** indexed script(s).
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Card.AddMonsterAttribute) with `Card.AddMonsterAttribute`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
@@ -38,6 +38,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Dimension Reflector | `54297661` | [Scripts/c54297661.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c54297661.lua) | 1 |
 | Diamond Duston | `96857854` | [Scripts/c96857854.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c96857854.lua) | 1 |
 | Argostars - Lightning Tydeu | `65889305` | [Scripts/c65889305.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c65889305.lua) | 1 |
+| Distrust Paranoia | `81965543` | [Scripts/c81965543.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c81965543.lua) | 1 |
 | Metalhold the Moving Blockade | `42237854` | [Scripts/c42237854.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c42237854.lua) | 1 |
 | The Phantom Knights of Umbrage Veil | `85257384` | [Scripts/c85257384.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c85257384.lua) | 1 |
 | The Door of Destiny | `27062594` | [Scripts/c27062594.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c27062594.lua) | 1 |
@@ -46,19 +47,18 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | The Phantom Knights of Mist Claws | `9336190` | [Scripts/c9336190.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c9336190.lua) | 1 |
 | Metamorphortress | `43959432` | [Scripts/c43959432.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c43959432.lua) | 1 |
 | Tiki Soul | `49514333` | [Scripts/c49514333.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c49514333.lua) | 1 |
+| Ashtra Divine Domain | `37839434` | [Scripts/c37839434.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c37839434.lua) | 1 |
 | The Prime Monarch | `54241725` | [Scripts/c54241725.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c54241725.lua) | 1 |
+| Ashtra Cursed Roar | `91444835` | [Scripts/c91444835.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c91444835.lua) | 1 |
 | Prey of the Jirai Gumo | `33055499` | [Scripts/c33055499.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c33055499.lua) | 1 |
 | Destiny Board | `94212438` | [Scripts/c94212438.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c94212438.lua) | 1 |
 | Eldlixir of the Glorious Golden Land | `22669793` | [Scripts/c22669793.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c22669793.lua) | 1 |
 | Argostars - Slayer Eteo | `38379052` | [Scripts/c38379052.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c38379052.lua) | 1 |
 | Kuebiko | `20087414` | [Scripts/c20087414.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c20087414.lua) | 1 |
 | Statue of Anguish Pattern | `23626223` | [Scripts/c23626223.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c23626223.lua) | 1 |
+| Ashtra Insect Poison | `64455720` | [Scripts/c64455720.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c64455720.lua) | 1 |
 | Silhouhatte Trick | `24440742` | [Scripts/c24440742.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c24440742.lua) | 1 |
-| Guardian of the Golden Land | `67007102` | [Scripts/c67007102.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c67007102.lua) | 1 |
-| Time Thief Power Reserve | `42620460` | [Scripts/c42620460.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c42620460.lua) | 1 |
-| Qlife's End | `20447641` | [Scripts/c20447641.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c20447641.lua) | 1 |
-| Powerhold the Moving Battery | `35100834` | [Scripts/c35100834.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c35100834.lua) | 1 |
-| ...and 48 more |  |  |  |
+| ...and 52 more |  |  |  |
 
 ## Script Examples
 

@@ -21,14 +21,14 @@ Returns the Attribute c uses as Fusion Material for player, defaulting to the cu
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3436`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3484`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **17** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Card.GetFusionAttribute`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Card.GetFusionAttribute) with `Card.GetFusionAttribute`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

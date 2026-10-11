@@ -24,7 +24,7 @@ Sets the stored coin results in the core result slots; only 0 and 1 are preserve
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **1** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Duel.SetCoinResult`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Duel.SetCoinResult) with `Duel.SetCoinResult`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

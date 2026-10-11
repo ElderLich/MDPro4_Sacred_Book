@@ -21,14 +21,14 @@ Checks whether c1 currently has a relation to c2.
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3567`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3619`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **9** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Card.IsRelateToCard`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Card.IsRelateToCard) with `Card.IsRelateToCard`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

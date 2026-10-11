@@ -17,14 +17,14 @@ Sets c's turn counter.
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3515`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3567`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **36** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Card.SetTurnCounter`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Card.SetTurnCounter) with `Card.SetTurnCounter`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

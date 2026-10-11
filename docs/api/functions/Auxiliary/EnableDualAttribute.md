@@ -24,7 +24,7 @@ The card can be Normal Summoned again, and while face-up in the Monster Zone or 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **45** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Auxiliary.EnableDualAttribute`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Auxiliary.EnableDualAttribute) with `Auxiliary.EnableDualAttribute`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

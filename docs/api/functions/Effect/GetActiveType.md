@@ -27,7 +27,7 @@ Returns the active effect type, such as monster, Spell, or Trap. This can differ
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **36** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Effect.GetActiveType`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Effect.GetActiveType) with `Effect.GetActiveType`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

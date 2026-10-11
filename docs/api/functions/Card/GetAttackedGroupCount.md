@@ -20,7 +20,7 @@ Returns the number of attack records stored for c.
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3533`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3585`
 
 ## Used By
 

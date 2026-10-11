@@ -31,14 +31,15 @@ s marks locations on player's own field and o marks locations on the opponent's 
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **45** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Duel.CheckRemoveOverlayCard`.
+- Detected in **46** indexed script(s).
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Duel.CheckRemoveOverlayCard) with `Duel.CheckRemoveOverlayCard`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
 | Goblin's Crazy Beast | `71100270` | [Scripts/c71100270.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c71100270.lua) | 1 |
 | LeVirtue Dragon | `33113958` | [Scripts/c33113958.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c33113958.lua) | 2 |
 | Valiant Shark Lancer | `23672629` | [Scripts/c23672629.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c23672629.lua) | 1 |
+| Garbage Golem | `28968609` | [Scripts/c28968609.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c28968609.lua) | 1 |
 | Unbreakable Xyz Barrier | `96004535` | [Scripts/c96004535.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c96004535.lua) | 1 |
 | Tally-ho! Springans | `9175957` | [Scripts/c9175957.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c9175957.lua) | 1 |
 | Mansion of the Dreadful Dolls | `36890111` | [Scripts/c36890111.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c36890111.lua) | 1 |
@@ -59,8 +60,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Goblin Biker Troika Griare | `44241999` | [Scripts/c44241999.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c44241999.lua) | 2 |
 | Goblin Biker Grand Stampede | `50311058` | [Scripts/c50311058.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c50311058.lua) | 2 |
 | Daruma Dropper | `35394356` | [Scripts/c35394356.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c35394356.lua) | 1 |
-| Xyz Remora | `43138260` | [Scripts/c43138260.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c43138260.lua) | 1 |
-| ...and 21 more |  |  |  |
+| ...and 22 more |  |  |  |
 
 ## Script Examples
 

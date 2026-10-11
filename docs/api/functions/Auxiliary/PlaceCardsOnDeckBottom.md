@@ -22,14 +22,14 @@ Sends g to the top of the Deck by reason, lets p order cards that reached either
 
 ## Source
 
-- `Utilities/utility.lua:1617`
+- `Utilities/utility.lua:1620`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **28** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Auxiliary.PlaceCardsOnDeckBottom`.
+- Detected in **30** indexed script(s).
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Auxiliary.PlaceCardsOnDeckBottom) with `Auxiliary.PlaceCardsOnDeckBottom`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
@@ -40,7 +40,8 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Psychic Arsenal | `16238373` | [Scripts/c16238373.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c16238373.lua) | 1 |
 | R.B. Shepherd's Crook | `80071619` | [Scripts/c80071619.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c80071619.lua) | 2 |
 | Tearlaments Merrli | `74078255` | [Scripts/c74078255.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c74078255.lua) | 1 |
-| Possessed Resonance - Wynn | `60516416` | [Scripts/c60516416.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c60516416.lua) | 1 |
+| Squeeze, the Full Moon of Raise Moon - JACKPOT! | `9484285` | [Scripts/c9484285.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c9484285.lua) | 1 |
+| Possessed Destiny - Wynn | `60516416` | [Scripts/c60516416.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c60516416.lua) | 1 |
 | Rahamu, Envoy of the Sacred Tome | `53904087` | [Scripts/c53904087.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c53904087.lua) | 1 |
 | Yummyusment★Acroquey | `93360904` | [Scripts/c93360904.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c93360904.lua) | 1 |
 | Saryuja Skull Dread | `74997493` | [Scripts/c74997493.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c74997493.lua) | 1 |
@@ -56,8 +57,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Raidraptor - Roost | `64049553` | [Scripts/c64049553.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c64049553.lua) | 1 |
 | Flowerdino | `10851853` | [Scripts/c10851853.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c10851853.lua) | 1 |
 | Link Bound | `51335426` | [Scripts/c51335426.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c51335426.lua) | 1 |
-| Saryuja's Shackles | `11434258` | [Scripts/c11434258.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c11434258.lua) | 1 |
-| ...and 4 more |  |  |  |
+| ...and 6 more |  |  |  |
 
 ## Script Examples
 

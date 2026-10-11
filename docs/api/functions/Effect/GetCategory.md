@@ -27,7 +27,7 @@ Returns e's category bitmask.
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **12** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Effect.GetCategory`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Effect.GetCategory) with `Effect.GetCategory`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
@@ -37,7 +37,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Tally-ho! Springans | `9175957` | [Scripts/c9175957.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c9175957.lua) | 2 |
 | Gunkan Suship Shirauo-class Carrier | `21293424` | [Scripts/c21293424.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c21293424.lua) | 1 |
 | Evigishki Neremanas | `88926295` | [Scripts/c88926295.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c88926295.lua) | 2 |
-| Virakam the Artificial Spirit | `10673071` | [Scripts/c10673071.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c10673071.lua) | 2 |
+| Virakam, the Divine Spirit of Artifice | `10673071` | [Scripts/c10673071.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c10673071.lua) | 2 |
 | Double Spell | `24096228` | [Scripts/c24096228.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c24096228.lua) | 1 |
 | Awakening of the Crystal Ultimates | `12877076` | [Scripts/c12877076.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c12877076.lua) | 1 |
 | Tri-Edge Master | `52445243` | [Scripts/c52445243.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c52445243.lua) | 1 |

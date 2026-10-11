@@ -29,12 +29,13 @@ Makes player Set targets to target_player's Spell & Trap Zone. If targets is a G
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **350** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Duel.SSet`.
+- Detected in **364** indexed script(s).
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Duel.SSet) with `Duel.SSet`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
 | [Artmage Non-Finito](/examples/cards/74631897) | `74631897` | [Scripts/c74631897.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c74631897.lua) | 1 |
+| [Ashtraja Susanoo](/examples/cards/17020474) | `17020474` | [Scripts/c17020474.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c17020474.lua) | 2 |
 | [Albion the Branded Dragon](/examples/cards/87746184) | `87746184` | [Scripts/c87746184.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c87746184.lua) | 1 |
 | K9-EW Special Release Experiment | `26585784` | [Scripts/c26585784.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c26585784.lua) | 1 |
 | Dracotail Mululu | `7375867` | [Scripts/c7375867.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c7375867.lua) | 1 |
@@ -49,6 +50,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Fabled Realm's Revival | `57775790` | [Scripts/c57775790.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c57775790.lua) | 1 |
 | Sudden Thunder Swamp | `23611122` | [Scripts/c23611122.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c23611122.lua) | 1 |
 | Azamina Determination | `42201897` | [Scripts/c42201897.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c42201897.lua) | 1 |
+| Zenet Revelator Nefertari | `84512726` | [Scripts/c84512726.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c84512726.lua) | 1 |
 | Amaze Attraction Thrill Train | `36591747` | [Scripts/c36591747.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c36591747.lua) | 1 |
 | Mementomictlan | `43338320` | [Scripts/c43338320.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c43338320.lua) | 1 |
 | Abyss Actor - Superstar | `25629622` | [Scripts/c25629622.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c25629622.lua) | 1 |
@@ -56,9 +58,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | K9-LC Release Restraint | `27308231` | [Scripts/c27308231.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c27308231.lua) | 1 |
 | Loris, Lady of Lament | `50699850` | [Scripts/c50699850.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c50699850.lua) | 1 |
 | D/D/D Duo-Dawn King Kali Yuga | `15939229` | [Scripts/c15939229.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c15939229.lua) | 1 |
-| Scourge of the White Forest | `93723936` | [Scripts/c93723936.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c93723936.lua) | 1 |
-| Hrimnir the Divine Follower | `49904658` | [Scripts/c49904658.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c49904658.lua) | 1 |
-| ...and 326 more |  |  |  |
+| ...and 340 more |  |  |  |
 
 ## Script Examples
 
@@ -74,6 +74,18 @@ Source: [Scripts/c74631897.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/
 end
 ```
 
+### Ashtraja Susanoo (`17020474`)
+
+Source: [Scripts/c17020474.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c17020474.lua)
+
+```lua
+				Duel.ConfirmCards(1-tp,tc)
+			else
+				Duel.SSet(tp,tc)
+			end
+		end
+```
+
 ### Albion the Branded Dragon (`87746184`)
 
 Source: [Scripts/c87746184.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c87746184.lua)
@@ -84,16 +96,4 @@ Source: [Scripts/c87746184.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/
 			Duel.SSet(tp,tc)
 		end
 	end
-```
-
-### K9-EW Special Release Experiment (`26585784`)
-
-Source: [Scripts/c26585784.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c26585784.lua)
-
-```lua
-	local tc=Duel.GetFirstTarget()
-	if tc:IsRelateToEffect(e) and aux.NecroValleyFilter()(tc) then
-		Duel.SSet(tp,tc)
-	end
-end
 ```

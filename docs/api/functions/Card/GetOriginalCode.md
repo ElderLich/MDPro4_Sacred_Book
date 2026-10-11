@@ -20,14 +20,14 @@ Returns c's original card code from card data.
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3390`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3437`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **98** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Card.GetOriginalCode`.
+- Detected in **99** indexed script(s).
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Card.GetOriginalCode) with `Card.GetOriginalCode`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
@@ -52,10 +52,10 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Raidraptor - Rising Rebellion Falcon | `71222868` | [Scripts/c71222868.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c71222868.lua) | 1 |
 | Time Thief Redoer | `55285840` | [Scripts/c55285840.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c55285840.lua) | 1 |
 | Gladiator Beast Gyzarus | `48156348` | [Scripts/c48156348.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c48156348.lua) | 2 |
+| V Umbral Horror | `39053882` | [Scripts/c39053882.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c39053882.lua) | 1 |
 | Rank-Up-Magic Argent Chaos Force | `94220427` | [Scripts/c94220427.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c94220427.lua) | 1 |
 | Blackwing - Aurora the Northern Lights | `4068622` | [Scripts/c4068622.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c4068622.lua) | 1 |
-| Rank-Up-Magic Barian's Force | `47660516` | [Scripts/c47660516.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c47660516.lua) | 1 |
-| ...and 74 more |  |  |  |
+| ...and 75 more |  |  |  |
 
 ## Script Examples
 

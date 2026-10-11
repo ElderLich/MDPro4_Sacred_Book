@@ -27,7 +27,7 @@ Arcana Force condition helper that checks whether the handler has a stored Arcan
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **3** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Auxiliary.ArcanaCondition`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Auxiliary.ArcanaCondition) with `Auxiliary.ArcanaCondition`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

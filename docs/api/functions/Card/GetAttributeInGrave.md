@@ -21,14 +21,14 @@ Returns the Attribute c is treated as having in the GY for player, defaulting to
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3438`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3486`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **2** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Card.GetAttributeInGrave`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Card.GetAttributeInGrave) with `Card.GetAttributeInGrave`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

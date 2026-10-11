@@ -20,14 +20,14 @@ Returns c's current DEF. Unknown or negative DEF values are clamped to 0 by this
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3446`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3494`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **121** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Card.GetDefense`.
+- Detected in **122** indexed script(s).
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Card.GetDefense) with `Card.GetDefense`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
@@ -49,13 +49,13 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Replicard LAD | `1665819` | [Scripts/c1665819.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c1665819.lua) | 1 |
 | Power Capsule | `54289683` | [Scripts/c54289683.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c54289683.lua) | 3 |
 | Malacoda, Netherlord of the Burning Abyss | `35330871` | [Scripts/c35330871.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c35330871.lua) | 1 |
+| Number C104: Umbral Horror Masquerade Victory | `42396591` | [Scripts/c42396591.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c42396591.lua) | 1 |
 | Galaxy Brave | `55168550` | [Scripts/c55168550.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c55168550.lua) | 1 |
 | Psychic Commander | `21454943` | [Scripts/c21454943.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c21454943.lua) | 1 |
 | Yosenju Oyam | `69838592` | [Scripts/c69838592.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c69838592.lua) | 1 |
 | Superheavy Samurai Helper | `44891812` | [Scripts/c44891812.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c44891812.lua) | 1 |
 | Legendary Secret of the Six Samurai | `15327215` | [Scripts/c15327215.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c15327215.lua) | 2 |
-| Red-Eyes Fang with Chain | `57135971` | [Scripts/c57135971.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c57135971.lua) | 1 |
-| ...and 97 more |  |  |  |
+| ...and 98 more |  |  |  |
 
 ## Script Examples
 

@@ -23,14 +23,14 @@ Checks whether c:GetLink() equals any supplied link value. Nil link arguments ar
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3492`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3544`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **37** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Card.IsLink`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Card.IsLink) with `Card.IsLink`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

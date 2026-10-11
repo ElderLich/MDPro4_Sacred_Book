@@ -20,14 +20,14 @@ Returns the Race value recorded for c's previous on-field state.
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3454`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3503`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **55** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Card.GetPreviousRaceOnField`.
+- Detected in **56** indexed script(s).
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Card.GetPreviousRaceOnField) with `Card.GetPreviousRaceOnField`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
@@ -45,17 +45,17 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Celestial Knightlord Parshath | `48589580` | [Scripts/c48589580.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c48589580.lua) | 1 |
 | Ragnaraika Hunting Dance | `89824842` | [Scripts/c89824842.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c89824842.lua) | 1 |
 | Machina Citadel | `87074380` | [Scripts/c87074380.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c87074380.lua) | 1 |
+| Evil Lord - Zorc | `73320394` | [Scripts/c73320394.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c73320394.lua) | 1 |
 | Triamid Loading | `64576557` | [Scripts/c64576557.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c64576557.lua) | 1 |
 | House Dragonmaid | `41232647` | [Scripts/c41232647.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c41232647.lua) | 1 |
 | Salamangreat Fennec | `49094491` | [Scripts/c49094491.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c49094491.lua) | 1 |
 | Magikuriboh | `31699677` | [Scripts/c31699677.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c31699677.lua) | 1 |
 | Beetrooper Cruel Saturnas | `91300233` | [Scripts/c91300233.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c91300233.lua) | 1 |
+| Keeper of the Shrine | `66752837` | [Scripts/c66752837.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c66752837.lua) | 1 |
 | The World Tree | `5973663` | [Scripts/c5973663.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c5973663.lua) | 1 |
 | Two-for-One Repair Job | `44459942` | [Scripts/c44459942.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c44459942.lua) | 1 |
 | Machina Defense Perimeter | `13247801` | [Scripts/c13247801.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c13247801.lua) | 1 |
-| Salvagent Driver | `62306203` | [Scripts/c62306203.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c62306203.lua) | 1 |
-| Keeper of the Shrine | `66752837` | [Scripts/c66752837.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c66752837.lua) | 1 |
-| ...and 31 more |  |  |  |
+| ...and 32 more |  |  |  |
 
 ## Script Examples
 

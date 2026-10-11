@@ -34,7 +34,7 @@ Cards previously set with Duel.SetSelectedCard are forced into the sum, removed 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **19** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Group.SelectWithSumEqual`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Group.SelectWithSumEqual) with `Group.SelectWithSumEqual`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

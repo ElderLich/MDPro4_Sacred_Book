@@ -24,7 +24,7 @@ Changes the target player recorded for Chain Link count.
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **1** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Duel.ChangeTargetPlayer`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Duel.ChangeTargetPlayer) with `Duel.ChangeTargetPlayer`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

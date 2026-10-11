@@ -23,7 +23,7 @@ Enables showing the real sequence when selecting cards from the Deck.
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **5** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Duel.RevealSelectDeckSequence`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Duel.RevealSelectDeckSequence) with `Duel.RevealSelectDeckSequence`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

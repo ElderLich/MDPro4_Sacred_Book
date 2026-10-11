@@ -30,7 +30,7 @@ Checks whether e can currently be activated by player, with optional booleans to
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **3** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Effect.IsActivatable`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Effect.IsActivatable) with `Effect.IsActivatable`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

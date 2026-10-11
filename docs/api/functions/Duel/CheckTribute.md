@@ -32,8 +32,8 @@ max defaults to min, mg can restrict the candidate pool, toplayer defaults to c'
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **74** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Duel.CheckTribute`.
+- Detected in **76** indexed script(s).
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Duel.CheckTribute) with `Duel.CheckTribute`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
@@ -41,6 +41,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Union Activation | `38527680` | [Scripts/c38527680.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c38527680.lua) | 1 |
 | Koa'ki Meiru Rooklord | `10060427` | [Scripts/c10060427.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c10060427.lua) | 1 |
 | Erebus the Underworld Monarch | `23064604` | [Scripts/c23064604.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c23064604.lua) | 1 |
+| Quick Summon | `10086952` | [Scripts/c10086952.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c10086952.lua) | 2 |
 | Metaltron XII, the True Dracombatant | `57761191` | [Scripts/c57761191.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c57761191.lua) | 6 |
 | Clown Crew Biancaviso | `82159583` | [Scripts/c82159583.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c82159583.lua) | 1 |
 | Egyptian God Slime | `42166000` | [Scripts/c42166000.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c42166000.lua) | 1 |
@@ -55,13 +56,12 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Master Peace, the True Dracoverlord | `12800564` | [Scripts/c12800564.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c12800564.lua) | 1 |
 | Blackwing - Simoon the Poison Wind | `81470373` | [Scripts/c81470373.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c81470373.lua) | 1 |
 | Gravekeeper's Oracle | `25524823` | [Scripts/c25524823.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c25524823.lua) | 2 |
+| Assault Lion | `67676619` | [Scripts/c67676619.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c67676619.lua) | 1 |
 | Slifer the Sky Dragon | `10000020` | [Scripts/c10000020.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c10000020.lua) | 1 |
 | Twilight Ninja Getsuga, the Shogun | `76930964` | [Scripts/c76930964.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c76930964.lua) | 1 |
 | Behemoth the King of a Hundred Battles | `13836592` | [Scripts/c13836592.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c13836592.lua) | 1 |
 | Cosmic Horror Gangi'el | `51192573` | [Scripts/c51192573.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c51192573.lua) | 1 |
-| Leo Wizard the Dark Fiend | `55423549` | [Scripts/c55423549.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c55423549.lua) | 1 |
-| Thestalos the Mega Monarch | `69230391` | [Scripts/c69230391.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c69230391.lua) | 1 |
-| ...and 50 more |  |  |  |
+| ...and 52 more |  |  |  |
 
 ## Script Examples
 

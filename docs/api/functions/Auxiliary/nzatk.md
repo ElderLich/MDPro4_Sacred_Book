@@ -20,14 +20,14 @@ Filter helper that is true for face-up cards with current ATK greater than 0.
 
 ## Source
 
-- `Utilities/utility.lua:840`
+- `Utilities/utility.lua:843`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **35** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Auxiliary.nzatk`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Auxiliary.nzatk) with `Auxiliary.nzatk`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

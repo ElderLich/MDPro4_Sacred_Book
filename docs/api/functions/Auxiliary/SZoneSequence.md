@@ -20,14 +20,14 @@ Returns the local column for a Spell & Trap Zone sequence from the controller's 
 
 ## Source
 
-- `Utilities/utility.lua:722`
+- `Utilities/utility.lua:725`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **1** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Auxiliary.SZoneSequence`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Auxiliary.SZoneSequence) with `Auxiliary.SZoneSequence`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

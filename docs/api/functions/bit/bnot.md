@@ -27,7 +27,7 @@ Returns the bitwise NOT of a.
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **3** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `bit.bnot`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=bit.bnot) with `bit.bnot`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

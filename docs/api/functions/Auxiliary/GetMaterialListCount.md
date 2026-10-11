@@ -28,7 +28,7 @@ Returns c's stored minimum and maximum material counts. If c has no material_cou
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **1** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Auxiliary.GetMaterialListCount`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Auxiliary.GetMaterialListCount) with `Auxiliary.GetMaterialListCount`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

@@ -29,7 +29,7 @@ This is only the starting pool. After a Ritual Monster is chosen, filter the gro
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **30** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Duel.GetRitualMaterial`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Duel.GetRitualMaterial) with `Duel.GetRitualMaterial`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

@@ -16,12 +16,15 @@ DOCS_DIR = WORKSPACE / "docs"
 GENERATED_DIR = WORKSPACE / "Generated" / "FunctionDocs"
 SCRIPTS_DIR = WORKSPACE / "Scripts"
 CARDS_DB = WORKSPACE / "cards.cdb"
+RUSH_SCRIPTS_DIR = WORKSPACE / "Rush" / "Scripts"
+RUSH_CARDS_DB = WORKSPACE / "rush_cards.cdb"
+RUSH_TUTORIAL_IDS = {120105006, 120150002, 120150001, 120102001, 120280030, 120280031}
 EXAMPLE_LIMIT = 96
 USAGE_TABLE_LIMIT = 24
 USAGE_SNIPPET_LIMIT = 3
 USAGE_SNIPPET_CONTEXT = 2
 
-DOT_CALL_RE = re.compile(r"\b(aux|Auxiliary|Duel|Card|Effect|Group|Debug|bit)\.([A-Za-z_]\w*)")
+DOT_CALL_RE = re.compile(r"\b([A-Za-z_]\w*)\.([A-Za-z_]\w*)")
 COLON_CALL_RE = re.compile(r"\b[A-Za-z_]\w*:([A-Za-z_]\w*)")
 SCRIPT_CONSTANT_RE = re.compile(r"\b[A-Z][A-Z0-9_]*_[A-Z0-9_]+\b")
 SCRIPT_RE = re.compile(r"^c(\d+)\.lua$", re.IGNORECASE)
@@ -53,6 +56,7 @@ TYPE_LABELS = [
     (0x2000000, "Special Summon"),
     (0x4000000, "Link"),
 ]
+RUSH_TYPE_LABELS = TYPE_LABELS + [(0x8, "Legend"), (0x8000, "Maximum")]
 
 CATEGORY_LABELS = [
     (0x1, "Destroy"),
@@ -121,12 +125,14 @@ def safe_filename(name: str) -> str:
 
 
 def clean_generated_dir(path: Path) -> None:
+    if not path.resolve().is_relative_to(DOCS_DIR.resolve()):
+        raise ValueError(f"Refusing to clean generated directory outside docs: {path}")
     if path.exists():
         shutil.rmtree(path)
     path.mkdir(parents=True, exist_ok=True)
 
 
-def load_api_names() -> tuple[set[str], dict[str, list[str]]]:
+def load_api_names(format: str = "standard") -> tuple[set[str], dict[str, list[str]]]:
     api_json = GENERATED_DIR / "api_functions.generated.json"
     if not api_json.exists():
         raise FileNotFoundError(
@@ -134,6 +140,9 @@ def load_api_names() -> tuple[set[str], dict[str, list[str]]]:
         )
     payload = json.loads(read_text(api_json))
     names = {entry["name"] for entry in payload["functions"]}
+    if format == "rush":
+        rush_payload = json.loads(read_text(GENERATED_DIR / "rush" / "api_functions.generated.json"))
+        names.update(entry["name"] for entry in rush_payload["functions"])
     by_short: dict[str, list[str]] = {}
     for name in names:
         if "." not in name:
@@ -144,10 +153,10 @@ def load_api_names() -> tuple[set[str], dict[str, list[str]]]:
     return names, by_short
 
 
-def load_cards() -> dict[int, CardRecord]:
-    if not CARDS_DB.exists():
-        return {}
-    con = sqlite3.connect(CARDS_DB)
+def load_cards(database: Path = CARDS_DB) -> dict[int, CardRecord]:
+    if not database.exists():
+        raise FileNotFoundError(f"Missing card database: {database}")
+    con = sqlite3.connect(database.resolve().as_uri() + "?mode=ro", uri=True)
     try:
         rows = con.execute(
             """
@@ -197,7 +206,7 @@ def category_labels_from_mask(value: int) -> list[str]:
 def extract_api_calls(script: str, api_names: set[str], method_names: dict[str, list[str]]) -> list[str]:
     calls: set[str] = set()
     for namespace, short in DOT_CALL_RE.findall(script):
-        namespace = "Auxiliary" if namespace == "aux" else namespace
+        namespace = {"aux": "Auxiliary", "RD": "RushDuel"}.get(namespace, namespace)
         name = f"{namespace}.{short}"
         if name in api_names:
             calls.add(name)
@@ -218,9 +227,15 @@ def split_api_name(name: str) -> tuple[str, str]:
     return "Global", name
 
 
-def api_link(name: str) -> str:
+def api_link(name: str, rush_names: set[str] | None = None) -> str:
     namespace, short = split_api_name(name)
-    return f"/api/functions/{safe_filename(namespace)}/{safe_filename(short)}"
+    prefix = "/rush" if rush_names and name in rush_names else ""
+    return f"{prefix}/api/functions/{safe_filename(namespace)}/{safe_filename(short)}"
+
+
+def example_link(item: dict[str, object]) -> str:
+    folder = "rush-cards" if item["format"] == "rush" else "cards"
+    return f"/examples/{folder}/{item['id']}"
 
 
 def markdown_table_escape(value: str) -> str:
@@ -253,6 +268,11 @@ def call_patterns(name: str) -> list[re.Pattern[str]]:
         patterns.extend([
             rf"\baux\s*\.\s*{escaped_short}\b",
             rf"\bAuxiliary\s*\.\s*{escaped_short}\b",
+        ])
+    elif namespace == "RushDuel":
+        patterns.extend([
+            rf"\bRD\s*\.\s*{escaped_short}\b",
+            rf"\bRushDuel\s*\.\s*{escaped_short}\b",
         ])
     elif namespace in {"Card", "Effect", "Group"}:
         patterns.extend([
@@ -310,18 +330,20 @@ def sort_usage_items(
     )
 
 
-def api_page_path(name: str) -> Path:
+def api_page_path(name: str, format: str = "standard") -> Path:
     namespace, short = split_api_name(name)
-    return DOCS_DIR / "api" / "functions" / safe_filename(namespace) / f"{safe_filename(short)}.md"
+    root = DOCS_DIR / "rush" if format == "rush" else DOCS_DIR
+    return root / "api" / "functions" / safe_filename(namespace) / f"{safe_filename(short)}.md"
 
 
-def append_api_usage_sections(examples: list[dict[str, object]], featured_ids: set[int]) -> None:
-    api_payload = json.loads(read_text(GENERATED_DIR / "api_functions.generated.json"))
+def append_api_usage_sections(examples: list[dict[str, object]], featured_ids: set[int], format: str = "standard") -> None:
+    generated = GENERATED_DIR / "rush" if format == "rush" else GENERATED_DIR
+    api_payload = json.loads(read_text(generated / "api_functions.generated.json"))
     usage = usage_by_function(examples)
 
     for doc in api_payload["functions"]:
         name = str(doc["name"])
-        page = api_page_path(name)
+        page = api_page_path(name, format)
         if not page.exists():
             continue
 
@@ -330,7 +352,7 @@ def append_api_usage_sections(examples: list[dict[str, object]], featured_ids: s
             "",
             "## Used By",
             "",
-            "Generated from the local `Scripts/` folder and `cards.cdb`.",
+            "Generated from the local `Rush/Scripts/` folder and `rush_cards.cdb`." if format == "rush" else "Generated from the local `Scripts/` folder and `cards.cdb`.",
             "",
         ]
 
@@ -346,7 +368,7 @@ def append_api_usage_sections(examples: list[dict[str, object]], featured_ids: s
             lines.extend(
                 [
                     f"- Detected in **{len(items)}** indexed script(s).",
-                    f"- Search this function in the [Script Explorer](/tools/script-explorer) with `{name}`.",
+                    f"- Search this function in the [Script Explorer](/tools/script-explorer?format={format}&mode=code&q={name}) with `{name}`.",
                     "",
                     "| Card | ID | Script | Detected Calls |",
                     "| --- | ---: | --- | ---: |",
@@ -356,7 +378,7 @@ def append_api_usage_sections(examples: list[dict[str, object]], featured_ids: s
                 card_id = int(item["id"])
                 card_name = markdown_table_escape(str(item["name"]))
                 card_label = (
-                    f"[{card_name}](/examples/cards/{card_id})"
+                    f"[{card_name}]({example_link(item)})"
                     if card_id in featured_ids
                     else card_name
                 )
@@ -403,24 +425,29 @@ def append_api_usage_sections(examples: list[dict[str, object]], featured_ids: s
         write_text(page, page_text + "\n" + "\n".join(lines).rstrip())
 
 
-def sync_api_reference() -> None:
-    source = GENERATED_DIR / "wiki" / "api"
+def sync_api_reference(format: str = "standard") -> None:
+    generated = GENERATED_DIR / "rush" if format == "rush" else GENERATED_DIR
+    source = generated / "wiki" / "api"
     if not source.exists():
         raise FileNotFoundError(
             f"Missing {source}. Run Tools/FunctionDocs/generate_function_docs.py first."
         )
-    target = DOCS_DIR / "api"
-    if target.exists():
-        shutil.rmtree(target)
-    shutil.copytree(source, target)
+    target = DOCS_DIR / "rush" / "api" if format == "rush" else DOCS_DIR / "api"
+    clean_generated_dir(target)
+    shutil.copytree(source, target, dirs_exist_ok=True)
 
 
-def scan_examples() -> tuple[list[dict[str, object]], list[dict[str, object]]]:
-    api_names, method_names = load_api_names()
-    cards = load_cards()
+def scan_examples(format: str = "standard") -> tuple[list[dict[str, object]], list[dict[str, object]]]:
+    api_names, method_names = load_api_names(format)
+    scripts_dir = RUSH_SCRIPTS_DIR if format == "rush" else SCRIPTS_DIR
+    cards = load_cards(RUSH_CARDS_DB if format == "rush" else CARDS_DB)
+    rush_names = set()
+    if format == "rush":
+        rush_payload = json.loads(read_text(GENERATED_DIR / "rush" / "api_functions.generated.json"))
+        rush_names = {entry["name"] for entry in rush_payload["functions"]}
     examples: list[dict[str, object]] = []
 
-    for script_path in sorted(SCRIPTS_DIR.glob("c*.lua")):
+    for script_path in sorted(scripts_dir.glob("c*.lua")):
         match = SCRIPT_RE.match(script_path.name)
         if not match:
             continue
@@ -435,8 +462,9 @@ def scan_examples() -> tuple[list[dict[str, object]], list[dict[str, object]]]:
         examples.append(
             {
                 "id": card.id,
+                "format": format,
                 "name": card.name,
-                "script": f"Scripts/{script_path.name}",
+                "script": script_path.relative_to(WORKSPACE).as_posix(),
                 "type": card.type,
                 "atk": card.atk,
                 "def": card.defense,
@@ -445,9 +473,10 @@ def scan_examples() -> tuple[list[dict[str, object]], list[dict[str, object]]]:
                 "attribute": card.attribute,
                 "category": card.category,
                 "desc": card.desc,
-                "card_type_labels": labels_from_mask(card.type, TYPE_LABELS),
+                "card_type_labels": labels_from_mask(card.type, RUSH_TYPE_LABELS if format == "rush" else TYPE_LABELS),
                 "category_labels": category_labels_from_mask(card.category),
                 "api_calls": calls,
+                "api_links": {name: api_link(name, rush_names) for name in calls} if format == "rush" else {},
                 "script_constants": constants,
                 "script_length": len(script),
                 "desc_length": len(card.desc),
@@ -459,6 +488,7 @@ def scan_examples() -> tuple[list[dict[str, object]], list[dict[str, object]]]:
     featured = sorted(
         examples,
         key=lambda item: (
+            format == "rush" and int(item["id"]) not in RUSH_TUTORIAL_IDS,
             -len(item["api_calls"]),
             -int(item["desc_length"]),
             str(item["name"]).casefold(),
@@ -482,13 +512,15 @@ def write_id_usage_index(path: Path, usage: dict[str, list[int]]) -> None:
     write_text(path, "\n".join(lines))
 
 
-def write_examples() -> tuple[list[dict[str, object]], list[dict[str, object]]]:
-    examples, featured = scan_examples()
+def write_examples(format: str = "standard") -> tuple[list[dict[str, object]], list[dict[str, object]]]:
+    examples, featured = scan_examples(format)
     examples_dir = DOCS_DIR / "examples"
-    cards_dir = examples_dir / "cards"
+    cards_dir = examples_dir / ("rush-cards" if format == "rush" else "cards")
     clean_generated_dir(cards_dir)
 
     public_dir = DOCS_DIR / "public" / "data"
+    if format == "rush":
+        public_dir /= "rush"
     public_dir.mkdir(parents=True, exist_ok=True)
     featured_ids = {int(item["id"]) for item in featured}
     public_examples = [
@@ -518,7 +550,7 @@ def write_examples() -> tuple[list[dict[str, object]], list[dict[str, object]]]:
         card_id = int(item["id"])
         page = cards_dir / f"{card_id}.md"
         calls = list(item["api_calls"])
-        api_lines = [f"- [`{name}`]({api_link(name)})" for name in calls[:40]]
+        api_lines = [f"- [`{name}`]({item['api_links'].get(name, api_link(name))})" for name in calls[:40]]
         if len(calls) > 40:
             api_lines.append(f"- ...and {len(calls) - 40} more")
         if not api_lines:
@@ -528,6 +560,7 @@ def write_examples() -> tuple[list[dict[str, object]], list[dict[str, object]]]:
             f"# {item['name']}",
             "",
             f"- **Card ID:** `{card_id}`",
+            f"- **Format:** {'Rush Duel' if format == 'rush' else 'Standard'}",
             f"- **Script:** `{item['script']}`",
             "",
             "## Stats",
@@ -545,7 +578,7 @@ def write_examples() -> tuple[list[dict[str, object]], list[dict[str, object]]]:
             "## Card Text",
             "",
             "```text",
-            code_block(str(item["_desc"]).strip() or "(no text in cards.cdb)"),
+            code_block(str(item["_desc"]).strip() or "(no text in this format's database)"),
             "```",
             "",
             "## Detected API Calls",
@@ -564,7 +597,7 @@ def write_examples() -> tuple[list[dict[str, object]], list[dict[str, object]]]:
     index_lines = [
         "# Card Script Examples",
         "",
-        f"Generated from `{CARDS_DB.name}` and `{SCRIPTS_DIR.name}/`.",
+        "Generated from `rush_cards.cdb` and `Rush/Scripts/`." if format == "rush" else "Generated from `cards.cdb` and `Scripts/`.",
         "",
         f"- Script files scanned: **{len(examples)}**",
         f"- Featured pages generated: **{len(featured)}**",
@@ -572,7 +605,7 @@ def write_examples() -> tuple[list[dict[str, object]], list[dict[str, object]]]:
         "- Featured card IDs: `/data/featured-card-ids.json`",
         "- Function usage index: `/data/function-usage.json`",
         "- Constant usage index: `/data/constant-usage.json`",
-        "- Interactive search: [Script Explorer](/tools/script-explorer)",
+        f"- Interactive search: [Script Explorer](/tools/script-explorer?format={format})",
         "",
         "The featured pages are selected from scripts with many detected API calls and card text available. The Script Explorer can search the full local script set by card ID, card name, script path, detected API function, or named Lua constant.",
         "",
@@ -591,222 +624,35 @@ def write_examples() -> tuple[list[dict[str, object]], list[dict[str, object]]]:
         card_id = int(item["id"])
         index_lines.append(
             "| "
-            f"[{markdown_table_escape(str(item['name']))}](cards/{card_id})"
+            f"[{markdown_table_escape(str(item['name']))}]({example_link(item)})"
             f" | `{card_id}` | {len(item['api_calls'])} | `{item['script']}` |"
         )
-    write_text(examples_dir / "index.md", "\n".join(index_lines))
+    if format == "rush":
+        index_lines[0] = "# Rush Duel Script Examples"
+        start = index_lines.index("## Case Studies")
+        end = index_lines.index("## Featured Examples")
+        index_lines[start:end] = ["Study the [Rush Duel learning track](/learn/rush-duel) before adapting these scripts.", ""]
+        index_lines = [line.replace("`/data/", "`/data/rush/") for line in index_lines]
+    else:
+        index_lines[4:4] = ["See also [Rush Duel examples](/examples/rush) and the [Rush Duel learning track](/learn/rush-duel).", ""]
+    write_text(examples_dir / ("rush.md" if format == "rush" else "index.md"), "\n".join(index_lines))
     return examples, featured
 
 
-def ts_string(value: object, limit: int | None = None) -> str:
-    text = str(value)
-    if limit is not None:
-        text = text[:limit]
-    return json.dumps(text, ensure_ascii=False)
-
-
-def write_vitepress_config(featured: list[dict[str, object]]) -> None:
-    namespace_dirs = sorted((DOCS_DIR / "api" / "functions").glob("*"))
-    namespace_items = [
-        f"              {{ text: {ts_string(path.name)}, link: '/api/functions/{path.name}/' }},"
-        for path in namespace_dirs
-        if path.is_dir()
-    ]
-    example_items = [
-        f"            {{ text: {ts_string(item['name'], 42)}, link: '/examples/cards/{int(item['id'])}' }},"
-        for item in featured[:24]
-    ]
-    lines = [
-        "import { defineConfig } from 'vitepress';",
-        "",
-        "const analyticsToken = process.env.CLOUDFLARE_WEB_ANALYTICS_TOKEN?.trim();",
-        "",
-        "function renderSearchMarkdown(src: string, env: any, md: any) {",
-        "  const relativePath = String(env.relativePath || '').replace(/\\\\/g, '/');",
-        "  if (relativePath.startsWith('examples/cards/')) {",
-        "    return '';",
-        "  }",
-        "  if (relativePath.startsWith('api/functions/')) {",
-        "    src = src.split(/\\n## Used By\\n/)[0];",
-        "  }",
-        "  return md.render(src, env);",
-        "}",
-        "",
-        "export default defineConfig({",
-        "  title: 'MDPro3 Sacred Book',",
-        "  description: 'MDPro3/YGOPro Lua card scripting lessons, examples, and API reference.',",
-        "  base: '/MDPro3_Sacred_Book/',",
-        "  cleanUrls: true,",
-        "  head: analyticsToken",
-        "    ? [",
-        "        [",
-        "          'script',",
-        "          {",
-        "            type: 'module',",
-        "            src: 'https://static.cloudflareinsights.com/beacon.min.js',",
-        "            'data-cf-beacon': JSON.stringify({ token: analyticsToken, spa: true }),",
-        "          },",
-        "        ],",
-        "      ]",
-        "    : [],",
-        "  themeConfig: {",
-        "    nav: [",
-        "      { text: 'Home', link: '/' },",
-        "      { text: 'Learn', link: '/learn/' },",
-        "      { text: 'API', link: '/api/' },",
-        "      { text: 'Examples', link: '/examples/' },",
-        "      { text: 'Script Explorer', link: '/tools/script-explorer' },",
-        "    ],",
-        "    sidebar: {",
-        "      '/learn/': [",
-        "        {",
-        "          text: 'Learning Path',",
-        "          items: [",
-        "            { text: 'Overview', link: '/learn/' },",
-        "            { text: 'Script Structure', link: '/learn/script-structure' },",
-        "            { text: 'First Scripts', link: '/learn/first-scripts' },",
-        "            { text: 'Beginner Script Ladder', link: '/learn/beginner-script-ladder' },",
-        "            { text: 'First Custom Card', link: '/learn/first-custom-card' },",
-        "            { text: 'Card Data and Script Wiring', link: '/learn/card-data-and-script-wiring' },",
-        "            { text: 'Effect Object', link: '/learn/effect-object' },",
-        "            { text: 'Effect Types', link: '/learn/effect-types' },",
-        "            { text: 'Categories and Properties', link: '/learn/categories-properties-and-hints' },",
-        "            { text: 'Client UI and Prompts', link: '/learn/client-ui-and-prompt-behavior' },",
-        "            { text: 'Callbacks', link: '/learn/effect-callbacks' },",
-        "            { text: 'Activated Effects', link: '/learn/activated-effects' },",
-        "            { text: 'Activation Legality', link: '/learn/activation-legality' },",
-        "            { text: 'Chain Timing', link: '/learn/chain-timing-and-activation-windows' },",
-        "            { text: 'Spell Cards', link: '/learn/spell-card-patterns' },",
-        "            { text: 'Quick-Play Spells', link: '/learn/quick-play-spells' },",
-        "            { text: 'Trap Cards', link: '/learn/trap-card-patterns' },",
-        "            { text: 'Normal and Continuous Traps', link: '/learn/normal-and-continuous-traps' },",
-        "            { text: 'Counter Traps', link: '/learn/counter-traps' },",
-        "            { text: 'Ritual Procedure', link: '/learn/ritual-procedure' },",
-        "            { text: 'Fusion Procedure', link: '/learn/fusion-procedure' },",
-        "            { text: 'Synchro Procedure', link: '/learn/synchro-procedure' },",
-        "            { text: 'Xyz Procedure', link: '/learn/xyz-procedure' },",
-        "            { text: 'Link Procedure', link: '/learn/link-procedure' },",
-        "            { text: 'Pendulum Procedure', link: '/learn/pendulum-procedure' },",
-        "            { text: 'Special Summon-only Monsters', link: '/learn/special-summon-only-monsters' },",
-        "            { text: 'Gemini Monsters', link: '/learn/gemini-monsters' },",
-        "            { text: 'Toon Monsters', link: '/learn/toon-monsters' },",
-        "            { text: 'Union Monsters', link: '/learn/union-monsters' },",
-        "            { text: 'Spirit Monsters', link: '/learn/spirit-monsters' },",
-        "            { text: 'Tribute Summon Materials', link: '/learn/tribute-summon-materials' },",
-        "            { text: 'Counters', link: '/learn/counters' },",
-        "            { text: 'Filters and Groups', link: '/learn/filters-and-groups' },",
-        "            { text: 'Selection and Group Handling', link: '/learn/selection-and-group-handling' },",
-        "            { text: 'Min/Max Stat Selection', link: '/learn/min-max-stat-selection' },",
-        "            { text: 'Reset Flags and Duration', link: '/learn/reset-flags-and-duration' },",
-        "            { text: 'Moving Cards', link: '/learn/moving-cards' },",
-        "            { text: 'Negation and Immunity', link: '/learn/negation-and-immunity' },",
-        "            { text: 'Control Change', link: '/learn/control-change' },",
-        "            { text: 'Battle Position Effects', link: '/learn/battle-position-effects' },",
-        "            { text: 'Field Zones', link: '/learn/field-zones-and-sequences' },",
-        "            { text: 'Field Spells', link: '/learn/field-spells' },",
-        "            { text: 'Targeting Flow', link: '/learn/targeting-flow' },",
-        "            { text: 'Effect Lifecycle', link: '/learn/cost-target-operation-lifecycle' },",
-        "            { text: 'Continuous Effects', link: '/learn/continuous-effects' },",
-        "            { text: 'Stat Modifiers', link: '/learn/continuous-stat-modifiers' },",
-        "            { text: 'Equip Spells', link: '/learn/equip-spells' },",
-        "            { text: 'LP and Damage', link: '/learn/lp-recovery-and-damage' },",
-        "            { text: 'Player-Targeted Effects', link: '/learn/player-targeted-effects' },",
-        "            { text: 'Player Restrictions', link: '/learn/player-restrictions' },",
-        "            { text: 'Draw, Hand, and Deck Effects', link: '/learn/draw-hand-and-deck-effects' },",
-        "            { text: 'Flag Effects', link: '/learn/flag-effects' },",
-        "            { text: 'Count Limits', link: '/learn/count-limits' },",
-        "            { text: 'Common Script Errors', link: '/learn/common-script-errors-and-debugging' },",
-        "            { text: 'Affecting Cards', link: '/learn/affecting-cards' },",
-        "            { text: 'Archetypes and Set Codes', link: '/learn/archetypes-and-setcodes' },",
-        "          ],",
-        "        },",
-        "      ],",
-        "      '/getting-started/': [",
-        "        {",
-        "          text: 'Getting Started',",
-        "          items: [",
-        "            { text: 'Overview', link: '/getting-started/' },",
-        "            { text: 'Setup', link: '/getting-started/setup' },",
-        "            { text: 'Your First Card', link: '/getting-started/first-card' },",
-        "            { text: 'Reading Card Scripts', link: '/getting-started/reading-scripts' },",
-        "          ],",
-        "        },",
-        "      ],",
-        "      '/guides/': [",
-        "        {",
-        "          text: 'Guides',",
-        "          items: [",
-        "            { text: 'Overview', link: '/guides/' },",
-        "            { text: 'Effect Anatomy', link: '/guides/effect-anatomy' },",
-        "            { text: 'Card Database', link: '/guides/card-database' },",
-        "            { text: 'Common Patterns', link: '/guides/common-patterns' },",
-        "          ],",
-        "        },",
-        "      ],",
-        "      '/tools/': [",
-        "        {",
-        "          text: 'Tools',",
-        "          items: [",
-        "            { text: 'Script Explorer', link: '/tools/script-explorer' },",
-        "          ],",
-        "        },",
-        "      ],",
-        "      '/api/functions/': [",
-        "        { text: 'Function Index', link: '/api/functions/' },",
-        "        {",
-        "          text: 'Namespaces',",
-        "          collapsed: false,",
-        "          items: [",
-        *namespace_items,
-        "          ],",
-        "        },",
-        "      ],",
-        "      '/api/': [",
-        "        { text: 'API Overview', link: '/api/' },",
-        "        { text: 'Functions', link: '/api/functions/' },",
-        "        { text: 'Constants', link: '/api/constants' },",
-        "      ],",
-        "      '/examples/': [",
-        "        {",
-        "          text: 'Examples',",
-        "          items: [",
-        "            { text: 'Overview', link: '/examples/' },",
-        "            { text: 'Mind Scan', link: '/examples/mind-scan' },",
-        *example_items,
-        "          ],",
-        "        },",
-        "      ],",
-        "    },",
-        "    outline: {",
-        "      label: 'Contents',",
-        "      level: [2, 4],",
-        "    },",
-        "    search: {",
-        "      provider: 'local',",
-        "      options: {",
-        "        detailedView: true,",
-        "        disableQueryPersistence: true,",
-        "        miniSearch: {",
-        "          searchOptions: {",
-        "            prefix: true,",
-        "            fuzzy: 0.2,",
-        "            boost: { title: 4, titles: 2, text: 1 },",
-        "          },",
-        "        },",
-        "        _render: renderSearchMarkdown,",
-        "      },",
-        "    },",
-        "    socialLinks: [",
-        "      { icon: 'github', link: 'https://github.com/ElderLich/MDPro3_Sacred_Book' },",
-        "    ],",
-        "    footer: {",
-        "      message: '<a href=\"/MDPro3_Sacred_Book/privacy\">Privacy & analytics</a>',",
-        "    },",
-        "  },",
-        "});",
-        "",
-    ]
-    write_text(DOCS_DIR / ".vitepress" / "config.mts", "\n".join(lines))
+def write_navigation(featured: list[dict[str, object]]) -> None:
+    """Only generated navigation belongs here; keep authored site config intact."""
+    namespaces = sorted((DOCS_DIR / "api" / "functions").glob("*"))
+    payload = {
+        "namespaces": [
+            {"text": path.name, "link": f"/api/functions/{path.name}/"}
+            for path in namespaces if path.is_dir()
+        ],
+        "examples": [
+            {"text": str(item["name"])[:42], "link": example_link(item)}
+            for item in featured if item["format"] == "standard"
+        ][:24],
+    }
+    write_text(DOCS_DIR / ".vitepress" / "navigation.generated.json", json.dumps(payload, ensure_ascii=False, indent=2))
 
 
 def main() -> int:
@@ -814,9 +660,13 @@ def main() -> int:
     examples, featured = write_examples()
     featured_ids = {int(item["id"]) for item in featured}
     append_api_usage_sections(examples, featured_ids)
-    write_vitepress_config(featured)
+    sync_api_reference("rush")
+    rush_examples, rush_featured = write_examples("rush")
+    append_api_usage_sections(rush_examples, {int(item["id"]) for item in rush_featured}, "rush")
+    write_navigation(featured)
     print(f"Synced API reference into {DOCS_DIR / 'api'}")
     print(f"Generated {len(featured)} featured card example pages")
+    print(f"Indexed {len(rush_examples)} Rush scripts with {len(rush_featured)} featured pages")
     print("Added API usage sections")
     return 0
 

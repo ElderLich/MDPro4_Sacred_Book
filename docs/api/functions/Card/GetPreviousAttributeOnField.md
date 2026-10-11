@@ -20,14 +20,14 @@ Returns the Attribute value recorded for c's previous on-field state.
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3453`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3502`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **26** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Card.GetPreviousAttributeOnField`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Card.GetPreviousAttributeOnField) with `Card.GetPreviousAttributeOnField`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

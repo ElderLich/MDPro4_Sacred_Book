@@ -22,14 +22,14 @@ When an effect enters the Chain, its handler and cards selected with Duel.SetTar
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3565`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3617`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **6852** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Card.IsRelateToEffect`.
+- Detected in **6854** indexed script(s).
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Card.IsRelateToEffect) with `Card.IsRelateToEffect`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
@@ -57,7 +57,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | [D/D Count Surveyor](/examples/cards/5997110) | `5997110` | [Scripts/c5997110.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c5997110.lua) | 2 |
 | [Shining Draw](/examples/cards/35906693) | `35906693` | [Scripts/c35906693.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c35906693.lua) | 2 |
 | [Dark End Evaporation Dragon](/examples/cards/62002838) | `62002838` | [Scripts/c62002838.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c62002838.lua) | 3 |
-| ...and 6828 more |  |  |  |
+| ...and 6830 more |  |  |  |
 
 ## Script Examples
 

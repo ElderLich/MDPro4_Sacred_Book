@@ -20,14 +20,14 @@ Returns the Group of cards mutually linked with c.
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3425`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3473`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **3** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Card.GetMutualLinkedGroup`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Card.GetMutualLinkedGroup) with `Card.GetMutualLinkedGroup`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

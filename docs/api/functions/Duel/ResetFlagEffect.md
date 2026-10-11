@@ -39,8 +39,8 @@ This only removes player flag effects for the requested player and code. Card ma
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **27** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Duel.ResetFlagEffect`.
+- Detected in **28** indexed script(s).
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Duel.ResetFlagEffect) with `Duel.ResetFlagEffect`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
@@ -51,12 +51,13 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Favorite Hero | `11881272` | [Scripts/c11881272.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c11881272.lua) | 2 |
 | Jurrac Volcano | `89948817` | [Scripts/c89948817.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c89948817.lua) | 1 |
 | Clown Crew Meteor | `93172951` | [Scripts/c93172951.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c93172951.lua) | 2 |
-| Odd-Eyes Pendulum Dragon of the Four Heavenly Dragons | `75787708` | [Scripts/c75787708.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c75787708.lua) | 1 |
+| Odd-Eyes Pendulum Dragon, Four Heavenly Dragons | `75787708` | [Scripts/c75787708.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c75787708.lua) | 1 |
 | Heart of the Blue-Eyes | `54475145` | [Scripts/c54475145.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c54475145.lua) | 1 |
 | Sweet Dreams, Nemleria | `44843954` | [Scripts/c44843954.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c44843954.lua) | 2 |
 | Numeron Wall | `42352091` | [Scripts/c42352091.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c42352091.lua) | 2 |
 | PenduLuMoon | `66150724` | [Scripts/c66150724.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c66150724.lua) | 1 |
 | Dragonroid | `9069157` | [Scripts/c9069157.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c9069157.lua) | 1 |
+| Raise Moon Starter Squeeze | `47605577` | [Scripts/c47605577.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c47605577.lua) | 2 |
 | Arcana Force V - The Hierophant | `3376703` | [Scripts/c3376703.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c3376703.lua) | 2 |
 | The Legendary Fisherman III | `44968687` | [Scripts/c44968687.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c44968687.lua) | 1 |
 | Trap Tracks | `70825459` | [Scripts/c70825459.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c70825459.lua) | 1 |
@@ -67,8 +68,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Mulcharmy Fuwalos | `42141493` | [Scripts/c42141493.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c42141493.lua) | 1 |
 | Mulcharmy Meowls | `87126721` | [Scripts/c87126721.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c87126721.lua) | 1 |
 | Metaverse | `89208725` | [Scripts/c89208725.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c89208725.lua) | 2 |
-| Tribute Burial | `80230510` | [Scripts/c80230510.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c80230510.lua) | 1 |
-| ...and 3 more |  |  |  |
+| ...and 4 more |  |  |  |
 
 ## Script Examples
 

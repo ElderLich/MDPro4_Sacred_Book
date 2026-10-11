@@ -22,8 +22,8 @@ Shuffles player's Deck and resets shuffle-check state.
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **244** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Duel.ShuffleDeck`.
+- Detected in **246** indexed script(s).
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Duel.ShuffleDeck) with `Duel.ShuffleDeck`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
@@ -51,7 +51,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Knightmare Unicorn | `38342335` | [Scripts/c38342335.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c38342335.lua) | 1 |
 | Duality | `39973386` | [Scripts/c39973386.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c39973386.lua) | 1 |
 | Galaxy Cleric | `28770951` | [Scripts/c28770951.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c28770951.lua) | 1 |
-| ...and 220 more |  |  |  |
+| ...and 222 more |  |  |  |
 
 ## Script Examples
 

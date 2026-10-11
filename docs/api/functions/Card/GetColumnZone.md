@@ -23,18 +23,19 @@ When player is supplied as the opposing perspective, the core swaps the player/o
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3432`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3480`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **13** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Card.GetColumnZone`.
+- Detected in **14** indexed script(s).
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Card.GetColumnZone) with `Card.GetColumnZone`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
 | Mekk-Knight Purple Nightfall | `28692962` | [Scripts/c28692962.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c28692962.lua) | 2 |
+| Distrust Paranoia | `81965543` | [Scripts/c81965543.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c81965543.lua) | 1 |
 | Mekk-Knight Red Moon | `56809158` | [Scripts/c56809158.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c56809158.lua) | 2 |
 | Mekk-Knight Blue Sky | `20537097` | [Scripts/c20537097.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c20537097.lua) | 2 |
 | Mekk-Knight Green Horizon | `66022706` | [Scripts/c66022706.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c66022706.lua) | 2 |
@@ -62,24 +63,24 @@ Source: [Scripts/c28692962.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/
 	return Duel.GetLocationCount(tp,LOCATION_MZONE,tp,LOCATION_REASON_TOFIELD,zone)>0
 ```
 
+### Distrust Paranoia (`81965543`)
+
+Source: [Scripts/c81965543.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c81965543.lua)
+
+```lua
+	local lg=Duel.GetMatchingGroup(s.cfilter,tp,0,LOCATION_MZONE,nil,tp)
+	for tc in aux.Next(lg) do
+		zone=bit.bor(zone,tc:GetColumnZone(LOCATION_ONFIELD,tp))
+	end
+	return zone
+```
+
 ### Mekk-Knight Red Moon (`56809158`)
 
 Source: [Scripts/c56809158.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c56809158.lua)
 
 ```lua
 	local lg=Duel.GetMatchingGroup(c56809158.cfilter,tp,LOCATION_ONFIELD,LOCATION_ONFIELD,nil)
-	for tc in aux.Next(lg) do
-		zone=bit.bor(zone,tc:GetColumnZone(LOCATION_MZONE,tp))
-	end
-	return Duel.GetLocationCount(tp,LOCATION_MZONE,tp,LOCATION_REASON_TOFIELD,zone)>0
-```
-
-### Mekk-Knight Blue Sky (`20537097`)
-
-Source: [Scripts/c20537097.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c20537097.lua)
-
-```lua
-	local lg=Duel.GetMatchingGroup(c20537097.cfilter,tp,LOCATION_ONFIELD,LOCATION_ONFIELD,nil)
 	for tc in aux.Next(lg) do
 		zone=bit.bor(zone,tc:GetColumnZone(LOCATION_MZONE,tp))
 	end

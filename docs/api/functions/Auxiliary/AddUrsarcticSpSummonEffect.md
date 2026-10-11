@@ -17,14 +17,14 @@ The cost releases a Level 7 or higher monster from the hand, or banishes a valid
 
 ## Source
 
-- `Utilities/utility.lua:938`
+- `Utilities/utility.lua:941`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **6** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Auxiliary.AddUrsarcticSpSummonEffect`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Auxiliary.AddUrsarcticSpSummonEffect) with `Auxiliary.AddUrsarcticSpSummonEffect`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

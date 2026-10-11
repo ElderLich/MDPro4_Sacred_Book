@@ -35,7 +35,7 @@ The helper also adds code1 to c's code/material list and returns the created pro
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **36** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Auxiliary.AddRitualProcGreaterCode`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Auxiliary.AddRitualProcGreaterCode) with `Auxiliary.AddRitualProcGreaterCode`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

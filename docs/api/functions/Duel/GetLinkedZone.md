@@ -28,7 +28,7 @@ Use bit operations to test individual zones. For one Link Monster's markers, use
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **22** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Duel.GetLinkedZone`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Duel.GetLinkedZone) with `Duel.GetLinkedZone`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
@@ -39,7 +39,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Topologic Bomber Dragon | `5821478` | [Scripts/c5821478.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c5821478.lua) | 2 |
 | Salamangreat Mole | `89484053` | [Scripts/c89484053.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c89484053.lua) | 2 |
 | Codebreaker Virus Berserker | `48736598` | [Scripts/c48736598.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c48736598.lua) | 2 |
-| Pasto-Ral Theorealize | `36709484` | [Scripts/c36709484.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c36709484.lua) | 2 |
+| Theorealize Past Lull | `36709484` | [Scripts/c36709484.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c36709484.lua) | 2 |
 | Codebreaker Virus Swordsman | `84121193` | [Scripts/c84121193.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c84121193.lua) | 2 |
 | Crusadia Maximus | `81524756` | [Scripts/c81524756.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c81524756.lua) | 2 |
 | World Legacy - "World Crown" | `27918365` | [Scripts/c27918365.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c27918365.lua) | 2 |

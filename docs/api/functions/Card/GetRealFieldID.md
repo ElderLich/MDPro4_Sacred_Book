@@ -20,14 +20,14 @@ Returns c's real field ID, the core field identifier used for relation tracking.
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3481`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3530`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **12** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Card.GetRealFieldID`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Card.GetRealFieldID) with `Card.GetRealFieldID`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

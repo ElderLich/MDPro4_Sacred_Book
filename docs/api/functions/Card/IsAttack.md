@@ -24,21 +24,21 @@ Nil atk arguments are skipped. Non-monsters that are not treated as monsters ret
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3493`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3545`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **163** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Card.IsAttack`.
+- Detected in **166** indexed script(s).
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Card.IsAttack) with `Card.IsAttack`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
 | [Pendulum Evolution](/examples/cards/55795155) | `55795155` | [Scripts/c55795155.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c55795155.lua) | 1 |
 | [Spirit Illusion](/examples/cards/71939275) | `71939275` | [Scripts/c71939275.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c71939275.lua) | 1 |
 | [D/D Count Surveyor](/examples/cards/5997110) | `5997110` | [Scripts/c5997110.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c5997110.lua) | 1 |
-| Starving Venom Fusion Dragon of the Four Heavenly Dragons | `27118421` | [Scripts/c27118421.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c27118421.lua) | 1 |
+| Starving Venom Fusion Dragon, Four Heavenly Dragons | `27118421` | [Scripts/c27118421.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c27118421.lua) | 1 |
 | Grandpa Demetto | `44190146` | [Scripts/c44190146.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c44190146.lua) | 1 |
 | Tails of the Fairy Tails | `82119326` | [Scripts/c82119326.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c82119326.lua) | 1 |
 | Union Activation | `38527680` | [Scripts/c38527680.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c38527680.lua) | 1 |
@@ -49,17 +49,17 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Salamangreat Sanctuary | `1295111` | [Scripts/c1295111.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c1295111.lua) | 1 |
 | Jiaotu, Darkness of the Yang Zing | `25935625` | [Scripts/c25935625.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c25935625.lua) | 1 |
 | Egyptian God Slime | `42166000` | [Scripts/c42166000.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c42166000.lua) | 1 |
-| Multiplying Kuriboh! | `14965712` | [Scripts/c14965712.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c14965712.lua) | 1 |
+| Kuriboh - Multiply! | `14965712` | [Scripts/c14965712.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c14965712.lua) | 1 |
 | Loka Samsara | `2116237` | [Scripts/c2116237.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c2116237.lua) | 1 |
 | Token Support | `53545926` | [Scripts/c53545926.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c53545926.lua) | 1 |
 | Doll House | `67331360` | [Scripts/c67331360.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c67331360.lua) | 1 |
 | Mechanical Mechanic | `22106558` | [Scripts/c22106558.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c22106558.lua) | 1 |
 | Allied Code Talker @Ignister | `39138610` | [Scripts/c39138610.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c39138610.lua) | 1 |
-| Invoked Babalon | `70383419` | [Scripts/c70383419.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c70383419.lua) | 1 |
+| Invoked Baybarron | `70383419` | [Scripts/c70383419.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c70383419.lua) | 1 |
 | Box of Friends | `81587028` | [Scripts/c81587028.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c81587028.lua) | 1 |
 | Horoscope Sorcerer, the Stargazer Magician | `1186447` | [Scripts/c1186447.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c1186447.lua) | 1 |
-| The Chaotic Sacred Beasts | `7894706` | [Scripts/c7894706.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c7894706.lua) | 1 |
-| ...and 139 more |  |  |  |
+| The Chaotic Phantasmal Sacred Beasts | `7894706` | [Scripts/c7894706.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c7894706.lua) | 1 |
+| ...and 142 more |  |  |  |
 
 ## Script Examples
 

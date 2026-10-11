@@ -27,7 +27,7 @@ Returns true when player has no pending extra Normal Summon marker in core.extra
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **23** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Duel.IsPlayerCanAdditionalSummon`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Duel.IsPlayerCanAdditionalSummon) with `Duel.IsPlayerCanAdditionalSummon`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

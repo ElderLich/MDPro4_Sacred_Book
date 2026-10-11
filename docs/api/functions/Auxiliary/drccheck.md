@@ -16,14 +16,14 @@ Returns true if every card in g has a different Race.
 
 ## Source
 
-- `Utilities/utility.lua:1146`
+- `Utilities/utility.lua:1149`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **5** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Auxiliary.drccheck`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Auxiliary.drccheck) with `Auxiliary.drccheck`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

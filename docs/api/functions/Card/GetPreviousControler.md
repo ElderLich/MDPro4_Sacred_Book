@@ -20,14 +20,14 @@ Returns c's previous controller value.
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3460`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3509`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **68** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Card.GetPreviousControler`.
+- Detected in **69** indexed script(s).
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Card.GetPreviousControler) with `Card.GetPreviousControler`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
@@ -54,8 +54,8 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Majestic Absorption | `63144961` | [Scripts/c63144961.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c63144961.lua) | 1 |
 | Flash Charge Dragon | `95372220` | [Scripts/c95372220.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c95372220.lua) | 1 |
 | Subterror Behemoth Fiendess | `74937659` | [Scripts/c74937659.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c74937659.lua) | 1 |
-| Vaylantz Mad Marquess | `87897777` | [Scripts/c87897777.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c87897777.lua) | 1 |
-| ...and 44 more |  |  |  |
+| Doll Hammer | `44088353` | [Scripts/c44088353.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c44088353.lua) | 1 |
+| ...and 45 more |  |  |  |
 
 ## Script Examples
 

@@ -35,7 +35,7 @@ With get_info true, returns true plus event cards, event player, event value, re
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **19** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Duel.CheckEvent`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Duel.CheckEvent) with `Duel.CheckEvent`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

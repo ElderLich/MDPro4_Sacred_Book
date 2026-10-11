@@ -5,18 +5,23 @@ next: false
 
 # Script Explorer
 
-Search the local MDPro3 script set by card ID, card name, card text, script
-path, detected API function, named Lua constant such as `EVENT_ADJUST`, card
-type, or effect category. This index is generated from `cards.cdb`, `Scripts/`,
-and the current Sacred Book API data.
+Find a script by card name, ID, text, function, or constant. Choose **Standard**
+or **Rush Duel**, then narrow the results with card types and effect categories.
 
-Use the function and constant chips to jump to every indexed card script that
-uses that code. Use the card-type and category chips to narrow the result list
-when you need a draw effect, a Quick-Play Spell, a Counter Trap, or another
-local pattern. Featured cards link to local example pages; every result links
-back to the source script in the repository.
+::: details Search tips
+- Every search word must match. **Code** searches functions and constants;
+  **Text** searches the card's printed text.
+- Click a function, constant, or card-type chip to search that pattern.
+  Rush aliases such as `RD.Draw` work alongside `RushDuel.Draw`.
+- Featured cards have local example pages; every result links to its source.
+  Use **Show 200 more results** to continue beyond the first page.
+- Share the URL to preserve your search, mode, and format.
+:::
 
 <ScriptExplorer />
+
+New to Rush? Start with the [Rush Duel lesson](/learn/rush-duel) and
+[worked script examples](/examples/rush).
 
 <noscript>
   <p class="explorer-state">Script Explorer needs JavaScript to load the local script index.</p>

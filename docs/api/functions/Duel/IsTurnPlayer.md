@@ -26,12 +26,13 @@ Returns whether playerid is the current turn player.
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **8** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Duel.IsTurnPlayer`.
+- Detected in **9** indexed script(s).
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Duel.IsTurnPlayer) with `Duel.IsTurnPlayer`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
 | D/D Extra Surveyor | `74387963` | [Scripts/c74387963.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c74387963.lua) | 1 |
+| Trirealm Rift Territory - Valvols | `33700664` | [Scripts/c33700664.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c33700664.lua) | 1 |
 | Volcanic Doomfire | `32543380` | [Scripts/c32543380.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c32543380.lua) | 1 |
 | Thunderforce Attack | `42469671` | [Scripts/c42469671.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c42469671.lua) | 1 |
 | Hieratic Seal From the Ashes | `53670497` | [Scripts/c53670497.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c53670497.lua) | 2 |
@@ -54,6 +55,17 @@ end
 function s.dafilter(c)
 ```
 
+### Trirealm Rift Territory - Valvols (`33700664`)
+
+Source: [Scripts/c33700664.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c33700664.lua)
+
+```lua
+	return Duel.IsExistingMatchingCard(s.cfilter,e:GetHandlerPlayer(),LOCATION_MZONE,0,1,nil)
+		and Duel.GetMatchingGroupCount(aux.TRUE,e:GetHandlerPlayer(),LOCATION_DECK,0,nil)==0
+		and Duel.IsTurnPlayer(e:GetHandlerPlayer())
+end
+```
+
 ### Volcanic Doomfire (`32543380`)
 
 Source: [Scripts/c32543380.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c32543380.lua)
@@ -64,16 +76,4 @@ function c32543380.bpcon(e)
 	return Duel.IsTurnPlayer(1-e:GetHandlerPlayer()) and Duel.IsBattlePhase()
 end
 function c32543380.atklimit(e,c)
-```
-
-### Thunderforce Attack (`42469671`)
-
-Source: [Scripts/c42469671.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c42469671.lua)
-
-```lua
-	Duel.Destroy(g,REASON_EFFECT)
-	local dc=Duel.GetOperatedGroup():FilterCount(c42469671.sgfilter,nil,1-tp)
-	if dc~=0 and Duel.IsTurnPlayer(tp) and Duel.IsMainPhase() and Duel.IsPlayerCanDraw(tp,dc)
-		and Duel.SelectYesNo(tp,aux.Stringid(42469671,0)) then
-		Duel.BreakEffect()
 ```

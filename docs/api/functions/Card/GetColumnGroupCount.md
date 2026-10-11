@@ -20,20 +20,21 @@ Returns the number of cards in columns overlapping c.
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3431`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3479`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **8** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Card.GetColumnGroupCount`.
+- Detected in **9** indexed script(s).
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Card.GetColumnGroupCount) with `Card.GetColumnGroupCount`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
 | Mekk-Knight Purple Nightfall | `28692962` | [Scripts/c28692962.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c28692962.lua) | 1 |
 | Mekk-Knight Red Moon | `56809158` | [Scripts/c56809158.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c56809158.lua) | 1 |
 | Mekk-Knight Blue Sky | `20537097` | [Scripts/c20537097.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c20537097.lua) | 1 |
+| Bingo Card | `99505609` | [Scripts/c99505609.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c99505609.lua) | 1 |
 | Mekk-Knight Green Horizon | `66022706` | [Scripts/c66022706.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c66022706.lua) | 1 |
 | Mekk-Knight Yellow Star | `29415459` | [Scripts/c29415459.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c29415459.lua) | 1 |
 | Mekk-Knight Orange Sunset | `93020401` | [Scripts/c93020401.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c93020401.lua) | 1 |

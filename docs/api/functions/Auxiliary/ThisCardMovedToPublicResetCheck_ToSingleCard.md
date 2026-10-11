@@ -23,7 +23,7 @@ Reset check used by single-card merged delayed events. If the owner card is now 
 
 ## Source
 
-- `Utilities/utility.lua:1744`
+- `Utilities/utility.lua:1749`
 
 ## Used By
 

@@ -28,12 +28,13 @@ Lets player choose one of the allowed positions for c and returns the selected P
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **27** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Duel.SelectPosition`.
+- Detected in **28** indexed script(s).
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Duel.SelectPosition) with `Duel.SelectPosition`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
 | [Ehther the Heavenly Monarch](/examples/cards/96570609) | `96570609` | [Scripts/c96570609.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c96570609.lua) | 1 |
+| Quick Summon | `10086952` | [Scripts/c10086952.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c10086952.lua) | 2 |
 | Mimighoul Maker | `13204145` | [Scripts/c13204145.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c13204145.lua) | 1 |
 | Clown Crew Biancaviso | `82159583` | [Scripts/c82159583.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c82159583.lua) | 1 |
 | Doodle Beast - Tyranno | `67725394` | [Scripts/c67725394.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c67725394.lua) | 1 |
@@ -47,17 +48,16 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Mimighoul Fork | `19338434` | [Scripts/c19338434.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c19338434.lua) | 1 |
 | Bettan Bat | `84079032` | [Scripts/c84079032.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c84079032.lua) | 1 |
 | Mimighoul Master | `55537983` | [Scripts/c55537983.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c55537983.lua) | 1 |
+| Samsara Dragon | `33750025` | [Scripts/c33750025.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c33750025.lua) | 1 |
 | Green Ninja | `15198996` | [Scripts/c15198996.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c15198996.lua) | 1 |
 | Mausoleum of the Emperor | `80921533` | [Scripts/c80921533.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c80921533.lua) | 1 |
-| Samsara Dragon | `33750025` | [Scripts/c33750025.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c33750025.lua) | 1 |
 | Eda the Sun Magician | `96352326` | [Scripts/c96352326.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c96352326.lua) | 1 |
 | Proof of Pruflas | `85847157` | [Scripts/c85847157.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c85847157.lua) | 1 |
 | The Hidden City | `5697558` | [Scripts/c5697558.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c5697558.lua) | 2 |
 | Spell Card "Soul Exchange" | `15735108` | [Scripts/c15735108.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c15735108.lua) | 1 |
 | Gemini Summoner | `19041767` | [Scripts/c19041767.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c19041767.lua) | 1 |
 | Cry Havoc! | `39712330` | [Scripts/c39712330.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c39712330.lua) | 1 |
-| Ultimate Offering | `80604091` | [Scripts/c80604091.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c80604091.lua) | 1 |
-| ...and 3 more |  |  |  |
+| ...and 4 more |  |  |  |
 
 ## Script Examples
 
@@ -73,6 +73,18 @@ Source: [Scripts/c96570609.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/
 	else
 ```
 
+### Quick Summon (`10086952`)
+
+Source: [Scripts/c10086952.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c10086952.lua)
+
+```lua
+			(ne==se
+				or not tc:IsMSetable(true,ne)
+				or Duel.SelectPosition(tp,tc,POS_FACEUP_ATTACK+POS_FACEDOWN_DEFENSE)==POS_FACEUP_ATTACK) then
+			Duel.Summon(tp,tc,true,ne)
+		else Duel.MSet(tp,tc,true,ne) end
+```
+
 ### Mimighoul Maker (`13204145`)
 
 Source: [Scripts/c13204145.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c13204145.lua)
@@ -83,16 +95,4 @@ Source: [Scripts/c13204145.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/
 			local pos=Duel.SelectPosition(tp,tc,POS_FACEUP)
 			Duel.ChangePosition(tc,pos)
 		end
-```
-
-### Clown Crew Biancaviso (`82159583`)
-
-Source: [Scripts/c82159583.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c82159583.lua)
-
-```lua
-		local s1=tc:IsSummonable(true,nil,1)
-		local s2=tc:IsMSetable(true,nil,1)
-		if (s1 and s2 and Duel.SelectPosition(tp,tc,POS_FACEUP_ATTACK+POS_FACEDOWN_DEFENSE)==POS_FACEUP_ATTACK) or not s2 then
-			Duel.Summon(tp,tc,true,nil,1)
-		else
 ```

@@ -17,14 +17,14 @@ Sets c's current reason bitmask to reason.
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3461`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3510`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **1** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Card.SetReason`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Card.SetReason) with `Card.SetReason`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

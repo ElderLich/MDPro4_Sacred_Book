@@ -22,7 +22,7 @@ Internal recursive helper for Group.SelectSubGroup. It searches like Auxiliary.C
 
 ## Source
 
-- `Utilities/utility.lua:1207`
+- `Utilities/utility.lua:1210`
 
 ## Used By
 

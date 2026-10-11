@@ -30,7 +30,7 @@ When c is supplied and reason is omitted, the core uses REASON_COST.
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **5** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Duel.IsPlayerCanRelease`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Duel.IsPlayerCanRelease) with `Duel.IsPlayerCanRelease`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

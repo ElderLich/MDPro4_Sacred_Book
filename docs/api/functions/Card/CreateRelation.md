@@ -18,14 +18,14 @@ Creates a relation from c1 to c2 that is cleared by reset.
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3560`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3612`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **16** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Card.CreateRelation`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Card.CreateRelation) with `Card.CreateRelation`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

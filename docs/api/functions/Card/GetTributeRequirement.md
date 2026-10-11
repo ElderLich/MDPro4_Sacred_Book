@@ -21,18 +21,19 @@ Returns the minimum and maximum Tribute counts for Normal Summoning c.
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3655`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3707`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **8** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Card.GetTributeRequirement`.
+- Detected in **9** indexed script(s).
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Card.GetTributeRequirement) with `Card.GetTributeRequirement`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
 | Union Activation | `38527680` | [Scripts/c38527680.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c38527680.lua) | 2 |
+| Quick Summon | `10086952` | [Scripts/c10086952.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c10086952.lua) | 2 |
 | Condemned Darklord | `35306215` | [Scripts/c35306215.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c35306215.lua) | 1 |
 | Leo Wizard the Dark Fiend | `55423549` | [Scripts/c55423549.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c55423549.lua) | 1 |
 | Floowandereeze and the Unexplored Winds | `55521751` | [Scripts/c55521751.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c55521751.lua) | 1 |
@@ -55,6 +56,18 @@ function s.thfilter2(c,e,tp)
 end
 ```
 
+### Quick Summon (`10086952`)
+
+Source: [Scripts/c10086952.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c10086952.lua)
+
+```lua
+end
+function s.thfilter2(c,e,tp)
+	local minc,maxc=c:GetTributeRequirement()
+	return c:IsLevelAbove(5) and (c:IsSummonable(true,nil) or c:IsMSetable(true,nil))
+		and c:IsSummonableCard() and c:IsAbleToHand() and s.sunthfilter(c,e,tp,minc,maxc)
+```
+
 ### Condemned Darklord (`35306215`)
 
 Source: [Scripts/c35306215.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c35306215.lua)
@@ -64,17 +77,5 @@ end
 function c35306215.ottg(e,c)
 	local mi,ma=c:GetTributeRequirement()
 	return mi<=2 and ma>=2 and c:IsRace(RACE_FAIRY)
-end
-```
-
-### Leo Wizard the Dark Fiend (`55423549`)
-
-Source: [Scripts/c55423549.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c55423549.lua)
-
-```lua
-function s.ttcon(e,c,minc)
-	if c==nil then return true end
-	local min,max=c:GetTributeRequirement()
-	return min<=1 and Duel.CheckTribute(c,1)
 end
 ```

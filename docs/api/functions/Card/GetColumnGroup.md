@@ -21,27 +21,31 @@ This MDPro3/YGOPro binding only takes c. It uses c's current on-field column, in
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3430`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3478`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **46** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Card.GetColumnGroup`.
+- Detected in **51** indexed script(s).
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Card.GetColumnGroup) with `Card.GetColumnGroup`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
 | Vanquish Soul Trinity Burst | `53330789` | [Scripts/c53330789.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c53330789.lua) | 2 |
+| Angelechy Bastion | `28904860` | [Scripts/c28904860.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c28904860.lua) | 1 |
 | Sprind the Irondash Dragon | `1906812` | [Scripts/c1906812.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c1906812.lua) | 1 |
+| Imposter Shift | `89027418` | [Scripts/c89027418.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c89027418.lua) | 1 |
+| Distrust Paranoia | `81965543` | [Scripts/c81965543.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c81965543.lua) | 3 |
 | Wattkingdom | `41790641` | [Scripts/c41790641.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c41790641.lua) | 1 |
-| S-Force Signus | `19951423` | [Scripts/c19951423.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c19951423.lua) | 1 |
+| S-Force Signify | `19951423` | [Scripts/c19951423.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c19951423.lua) | 1 |
 | Parallel Panzer | `93394164` | [Scripts/c93394164.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c93394164.lua) | 3 |
 | S-Force Nightchaser | `20515672` | [Scripts/c20515672.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c20515672.lua) | 2 |
 | Solving for Pendulum | `5208118` | [Scripts/c5208118.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c5208118.lua) | 1 |
 | S-Force Rappa Chiyomaru | `22180094` | [Scripts/c22180094.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c22180094.lua) | 2 |
 | Shelrokket Dragon | `5087128` | [Scripts/c5087128.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c5087128.lua) | 2 |
 | Vanquish Soul Razen | `29302858` | [Scripts/c29302858.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c29302858.lua) | 2 |
+| Angelechy Destrier | `55393975` | [Scripts/c55393975.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c55393975.lua) | 1 |
 | Vanquish Soul Pantera | `66401502` | [Scripts/c66401502.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c66401502.lua) | 2 |
 | Junora the Power Patron of Tuning | `5914858` | [Scripts/c5914858.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c5914858.lua) | 2 |
 | Thunder Ball | `84813516` | [Scripts/c84813516.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c84813516.lua) | 2 |
@@ -52,11 +56,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Mekk-Knight Spectrum Supreme | `38502358` | [Scripts/c38502358.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c38502358.lua) | 1 |
 | Girsu, the Orcust Mekk-Knight | `69811710` | [Scripts/c69811710.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c69811710.lua) | 1 |
 | S-Force Orrafist | `95974848` | [Scripts/c95974848.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c95974848.lua) | 1 |
-| Mekk-Knight Blue Sky | `20537097` | [Scripts/c20537097.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c20537097.lua) | 2 |
-| Metalrokket Dragon | `32472237` | [Scripts/c32472237.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c32472237.lua) | 2 |
-| Mekk-Knight Green Horizon | `66022706` | [Scripts/c66022706.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c66022706.lua) | 1 |
-| Han-Shi Kyudo Spirit | `53270092` | [Scripts/c53270092.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c53270092.lua) | 2 |
-| ...and 22 more |  |  |  |
+| ...and 27 more |  |  |  |
 
 ## Script Examples
 
@@ -72,6 +72,18 @@ Source: [Scripts/c53330789.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/
 		local sg=Group.CreateGroup()
 ```
 
+### Angelechy Bastion (`28904860`)
+
+Source: [Scripts/c28904860.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c28904860.lua)
+
+```lua
+function s.rmtg(e,tp,eg,ep,ev,re,r,rp,chk,chkc)
+	local c=e:GetHandler()
+	local g=c:GetColumnGroup()
+	if chkc then return chkc:IsLocation(LOCATION_ONFIELD) and s.rmfilter(chkc,g) and chkc~=c end
+	if chk==0 then return Duel.IsExistingTarget(s.rmfilter,tp,LOCATION_ONFIELD,LOCATION_ONFIELD,1,c,g) end
+```
+
 ### Sprind the Irondash Dragon (`1906812`)
 
 Source: [Scripts/c1906812.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c1906812.lua)
@@ -82,16 +94,4 @@ Source: [Scripts/c1906812.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/b
 		local g=c:GetColumnGroup():Filter(Card.IsFaceup,nil)
 		if g:GetCount()>0 and Duel.SelectYesNo(tp,aux.Stringid(1906812,2)) then
 			Duel.BreakEffect()
-```
-
-### Wattkingdom (`41790641`)
-
-Source: [Scripts/c41790641.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c41790641.lua)
-
-```lua
-		and re:GetCode()~=EVENT_SPSUMMON_SUCCESS then return end
-	local rc=re:GetHandler()
-	local rg=rc:GetColumnGroup()
-	local p=e:GetHandlerPlayer()
-	return rc:IsControler(1-p) and rg:IsContains(e:GetHandler()) or rg:IsExists(s.lfilter,1,nil,p)
 ```

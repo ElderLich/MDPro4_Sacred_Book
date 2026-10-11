@@ -16,14 +16,14 @@ Returns c's current ATK, capped at MAX_PARAMETER.
 
 ## Source
 
-- `Utilities/utility.lua:1537`
+- `Utilities/utility.lua:1540`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **2** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Auxiliary.GetCappedAttack`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Auxiliary.GetCappedAttack) with `Auxiliary.GetCappedAttack`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

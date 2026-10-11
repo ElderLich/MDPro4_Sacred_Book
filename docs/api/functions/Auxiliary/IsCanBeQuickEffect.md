@@ -22,21 +22,24 @@ Checks whether player tp is affected by code, code has a registered quick-effect
 
 ## Source
 
-- `Utilities/utility.lua:1981`
+- `Utilities/utility.lua:1993`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **13** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Auxiliary.IsCanBeQuickEffect`.
+- Detected in **16** indexed script(s).
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Auxiliary.IsCanBeQuickEffect) with `Auxiliary.IsCanBeQuickEffect`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
 | Enlilgirsu, the Orcust Mekk-Knight | `74820316` | [Scripts/c74820316.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c74820316.lua) | 4 |
 | Chaos Allure Queen | `29925614` | [Scripts/c29925614.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c29925614.lua) | 2 |
 | Allure Queen LV5 | `23756165` | [Scripts/c23756165.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c23756165.lua) | 2 |
+| Ars Magna of Purification and Corruption | `62368221` | [Scripts/c62368221.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c62368221.lua) | 2 |
+| Ars Magna of Infinity and Finity | `36270527` | [Scripts/c36270527.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c36270527.lua) | 2 |
 | Allure Queen LV3 | `87257460` | [Scripts/c87257460.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c87257460.lua) | 2 |
+| Ars Magna of Unification and Separation | `99753860` | [Scripts/c99753860.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c99753860.lua) | 2 |
 | Galatea-I, the Orcust Automaton | `48835607` | [Scripts/c48835607.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c48835607.lua) | 2 |
 | Longirsu, the Orcust Orchestrator | `76145142` | [Scripts/c76145142.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c76145142.lua) | 2 |
 | Galatea, the Orcust Automaton | `30741503` | [Scripts/c30741503.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c30741503.lua) | 2 |

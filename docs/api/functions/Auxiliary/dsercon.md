@@ -23,14 +23,14 @@ Condition for EVENT_DAMAGE_STEP_END effects; true if the handler is still relate
 
 ## Source
 
-- `Utilities/utility.lua:786`
+- `Utilities/utility.lua:789`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **34** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Auxiliary.dsercon`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Auxiliary.dsercon) with `Auxiliary.dsercon`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

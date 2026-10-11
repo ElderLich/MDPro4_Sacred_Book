@@ -21,14 +21,14 @@ Checks whether c1 currently has c2 as a persistent card target.
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3543`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3595`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **22** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Card.IsHasCardTarget`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Card.IsHasCardTarget) with `Card.IsHasCardTarget`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

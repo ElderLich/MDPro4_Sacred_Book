@@ -22,8 +22,8 @@ Returns an iterator that yields the current turn player first, then the other pl
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **9** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Auxiliary.TurnPlayers`.
+- Detected in **11** indexed script(s).
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Auxiliary.TurnPlayers) with `Auxiliary.TurnPlayers`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
@@ -31,10 +31,12 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Plunder Patrollship Jord | `85969517` | [Scripts/c85969517.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c85969517.lua) | 1 |
 | S:P Little Knight | `29301450` | [Scripts/c29301450.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c29301450.lua) | 1 |
 | Cynet Refresh | `36368606` | [Scripts/c36368606.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c36368606.lua) | 1 |
+| Destined Duel | `48128081` | [Scripts/c48128081.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c48128081.lua) | 1 |
 | Bone Temple Block | `47778083` | [Scripts/c47778083.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c47778083.lua) | 2 |
 | The Revived Sky God | `59094601` | [Scripts/c59094601.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c59094601.lua) | 1 |
 | Dark Magical Curtain | `41350417` | [Scripts/c41350417.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c41350417.lua) | 1 |
 | Dice Dungeon | `11808215` | [Scripts/c11808215.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c11808215.lua) | 1 |
+| Spatial Trunade | `2729965` | [Scripts/c2729965.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c2729965.lua) | 2 |
 | Destructive Daruma Karma Cannon | `30748475` | [Scripts/c30748475.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c30748475.lua) | 1 |
 
 ## Script Examples

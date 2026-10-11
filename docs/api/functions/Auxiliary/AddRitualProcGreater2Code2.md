@@ -35,7 +35,7 @@ Registers code1 and code2 as listed by c, then adds the Greater2 Ritual procedur
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **3** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Auxiliary.AddRitualProcGreater2Code2`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Auxiliary.AddRitualProcGreater2Code2) with `Auxiliary.AddRitualProcGreater2Code2`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

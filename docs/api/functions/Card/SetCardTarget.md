@@ -18,14 +18,14 @@ This stores a card-target relation used by functions such as Card.GetCardTarget 
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3539`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3591`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **121** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Card.SetCardTarget`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Card.SetCardTarget) with `Card.SetCardTarget`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
@@ -33,7 +33,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Trickstar Light Stage | `35371948` | [Scripts/c35371948.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c35371948.lua) | 1 |
 | Trickstar Light Arena | `63492244` | [Scripts/c63492244.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c63492244.lua) | 1 |
 | Future Fusion | `77565204` | [Scripts/c77565204.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c77565204.lua) | 1 |
-| Red Dragon Archfiend's Chain | `92936364` | [Scripts/c92936364.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c92936364.lua) | 1 |
+| Red Dragon Archfiend's Chains | `92936364` | [Scripts/c92936364.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c92936364.lua) | 1 |
 | Cubic Mandala | `8837932` | [Scripts/c8837932.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c8837932.lua) | 1 |
 | Goblin Freefall Squad | `85123771` | [Scripts/c85123771.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c85123771.lua) | 1 |
 | Zero Extra Link | `60162470` | [Scripts/c60162470.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c60162470.lua) | 1 |

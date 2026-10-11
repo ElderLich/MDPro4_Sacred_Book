@@ -20,14 +20,14 @@ Checks whether tp can perform a normal draw: draw count is positive, the Deck is
 
 ## Source
 
-- `Utilities/utility.lua:1854`
+- `Utilities/utility.lua:1859`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **17** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Auxiliary.IsPlayerCanNormalDraw`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Auxiliary.IsPlayerCanNormalDraw) with `Auxiliary.IsPlayerCanNormalDraw`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

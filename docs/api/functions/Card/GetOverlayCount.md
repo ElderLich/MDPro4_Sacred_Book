@@ -20,14 +20,14 @@ Returns the number of current Xyz Materials attached to c.
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3528`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3580`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **82** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Card.GetOverlayCount`.
+- Detected in **83** indexed script(s).
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Card.GetOverlayCount) with `Card.GetOverlayCount`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
@@ -55,7 +55,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Rank-Up-Magic Revolution Force | `43476205` | [Scripts/c43476205.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c43476205.lua) | 1 |
 | Springans Merrymaker | `48285768` | [Scripts/c48285768.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c48285768.lua) | 1 |
 | Cyber Dragon Infinity | `10443957` | [Scripts/c10443957.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c10443957.lua) | 1 |
-| ...and 58 more |  |  |  |
+| ...and 59 more |  |  |  |
 
 ## Script Examples
 

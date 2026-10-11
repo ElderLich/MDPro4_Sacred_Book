@@ -29,8 +29,8 @@ count is clamped to g's size. The player argument is written to the random-selec
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **139** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Group.RandomSelect`.
+- Detected in **142** indexed script(s).
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Group.RandomSelect) with `Group.RandomSelect`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
@@ -56,9 +56,9 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Evening Twilight Knight | `32013448` | [Scripts/c32013448.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c32013448.lua) | 1 |
 | Grapha, Dragon Lord of Dark World | `34230233` | [Scripts/c34230233.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c34230233.lua) | 1 |
 | Stellarknight Triverr | `42589641` | [Scripts/c42589641.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c42589641.lua) | 1 |
+| Spell Shattering Sword | `77456448` | [Scripts/c77456448.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c77456448.lua) | 1 |
 | Awakening of the Possessed - Gagigobyte | `74426895` | [Scripts/c74426895.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c74426895.lua) | 1 |
-| Hecahands Xeno | `94410955` | [Scripts/c94410955.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c94410955.lua) | 1 |
-| ...and 115 more |  |  |  |
+| ...and 118 more |  |  |  |
 
 ## Script Examples
 

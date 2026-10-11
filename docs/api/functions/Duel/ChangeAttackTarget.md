@@ -28,7 +28,7 @@ The current attacker must exist, be able to attack, and not have its attack canc
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **27** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Duel.ChangeAttackTarget`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Duel.ChangeAttackTarget) with `Duel.ChangeAttackTarget`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
@@ -50,8 +50,8 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Card Blocker | `42256406` | [Scripts/c42256406.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c42256406.lua) | 1 |
 | Dark Angel | `28593329` | [Scripts/c28593329.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c28593329.lua) | 1 |
 | Neo-Spacian Twinkle Moss | `13857930` | [Scripts/c13857930.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c13857930.lua) | 1 |
-| Staunch Defender | `92854392` | [Scripts/c92854392.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c92854392.lua) | 1 |
 | Neo-Spacian Glow Moss | `17732278` | [Scripts/c17732278.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c17732278.lua) | 1 |
+| Staunch Defender | `92854392` | [Scripts/c92854392.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c92854392.lua) | 1 |
 | Ghost Gardna | `59965151` | [Scripts/c59965151.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c59965151.lua) | 1 |
 | Jam Defender | `21558682` | [Scripts/c21558682.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c21558682.lua) | 1 |
 | Crystal Beast Amber Mammoth | `69937550` | [Scripts/c69937550.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c69937550.lua) | 1 |

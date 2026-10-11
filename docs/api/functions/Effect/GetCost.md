@@ -27,7 +27,7 @@ Returns e's cost function, or nil when no cost function is set.
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **27** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Effect.GetCost`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Effect.GetCost) with `Effect.GetCost`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

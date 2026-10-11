@@ -14,14 +14,14 @@ Mulcharmy monster scripts call this from initial_effect, then check Duel.GetFlag
 
 ## Source
 
-- `Utilities/utility.lua:2041`
+- `Utilities/utility.lua:2053`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **3** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Auxiliary.EnableMulcharmyGlobalCheck`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Auxiliary.EnableMulcharmyGlobalCheck) with `Auxiliary.EnableMulcharmyGlobalCheck`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

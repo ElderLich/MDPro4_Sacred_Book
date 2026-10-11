@@ -21,18 +21,19 @@ Checks whether c can be Set in a Spell & Trap Zone. If ignore_field is true, ava
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3584`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3636`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **300** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Card.IsSSetable`.
+- Detected in **314** indexed script(s).
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Card.IsSSetable) with `Card.IsSSetable`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
 | [Artmage Non-Finito](/examples/cards/74631897) | `74631897` | [Scripts/c74631897.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c74631897.lua) | 1 |
+| [Ashtraja Susanoo](/examples/cards/17020474) | `17020474` | [Scripts/c17020474.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c17020474.lua) | 1 |
 | [Albion the Branded Dragon](/examples/cards/87746184) | `87746184` | [Scripts/c87746184.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c87746184.lua) | 2 |
 | K9-EW Special Release Experiment | `26585784` | [Scripts/c26585784.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c26585784.lua) | 1 |
 | Dracotail Mululu | `7375867` | [Scripts/c7375867.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c7375867.lua) | 1 |
@@ -44,6 +45,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Fabled Realm's Revival | `57775790` | [Scripts/c57775790.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c57775790.lua) | 1 |
 | Sudden Thunder Swamp | `23611122` | [Scripts/c23611122.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c23611122.lua) | 1 |
 | Azamina Determination | `42201897` | [Scripts/c42201897.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c42201897.lua) | 1 |
+| Zenet Revelator Nefertari | `84512726` | [Scripts/c84512726.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c84512726.lua) | 1 |
 | Amaze Attraction Thrill Train | `36591747` | [Scripts/c36591747.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c36591747.lua) | 1 |
 | Mementomictlan | `43338320` | [Scripts/c43338320.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c43338320.lua) | 1 |
 | Abyss Actor - Superstar | `25629622` | [Scripts/c25629622.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c25629622.lua) | 1 |
@@ -54,9 +56,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Hrimnir the Divine Follower | `49904658` | [Scripts/c49904658.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c49904658.lua) | 1 |
 | Sloppy Stasher Squirrel | `42081767` | [Scripts/c42081767.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c42081767.lua) | 1 |
 | Keel, Shipwright Fur Hire | `66736884` | [Scripts/c66736884.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c66736884.lua) | 1 |
-| Darklord Eveningstar | `10136446` | [Scripts/c10136446.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c10136446.lua) | 3 |
-| Paleozoic Cambroraster | `36346532` | [Scripts/c36346532.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c36346532.lua) | 2 |
-| ...and 276 more |  |  |  |
+| ...and 290 more |  |  |  |
 
 ## Script Examples
 
@@ -72,6 +72,18 @@ end
 function s.settg(e,tp,eg,ep,ev,re,r,rp,chk)
 ```
 
+### Ashtraja Susanoo (`17020474`)
+
+Source: [Scripts/c17020474.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c17020474.lua)
+
+```lua
+function s.setfilter(c,e,tp)
+	return c:IsType(TYPE_MONSTER) and c:IsCanBeSpecialSummoned(e,0,tp,false,false,POS_FACEDOWN) and Duel.GetLocationCount(tp,LOCATION_MZONE)>0
+		or c:IsType(TYPE_TRAP) and c:IsSSetable()
+end
+function s.cspfilter(c)
+```
+
 ### Albion the Branded Dragon (`87746184`)
 
 Source: [Scripts/c87746184.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c87746184.lua)
@@ -82,16 +94,4 @@ function c87746184.thfilter(c)
 	return c:IsAbleToHand() or c:IsSSetable()
 end
 function c87746184.thtg(e,tp,eg,ep,ev,re,r,rp,chk)
-```
-
-### K9-EW Special Release Experiment (`26585784`)
-
-Source: [Scripts/c26585784.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c26585784.lua)
-
-```lua
-end
-function s.setfilter(c)
-	return c:IsSetCard(0x1cb) and c:IsType(TYPE_QUICKPLAY) and c:IsSSetable()
-end
-function s.setcon(e,tp,eg,ep,ev,re,r,rp)
 ```

@@ -32,7 +32,7 @@ Extra arguments after ex are passed to f after the Card argument. This helper us
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **443** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Duel.CheckReleaseGroup`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Duel.CheckReleaseGroup) with `Duel.CheckReleaseGroup`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

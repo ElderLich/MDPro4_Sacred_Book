@@ -24,14 +24,14 @@ Returns cards from location1/location2 that are orthogonally adjacent to the glo
 
 ## Source
 
-- `Utilities/utility.lua:695`
+- `Utilities/utility.lua:698`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **1** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Auxiliary.GetAdjacentGroup`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Auxiliary.GetAdjacentGroup) with `Auxiliary.GetAdjacentGroup`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

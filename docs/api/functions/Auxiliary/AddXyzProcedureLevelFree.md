@@ -32,7 +32,7 @@ The local helper still checks Card.IsCanBeXyzMaterial, zone availability, and EF
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **13** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Auxiliary.AddXyzProcedureLevelFree`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Auxiliary.AddXyzProcedureLevelFree) with `Auxiliary.AddXyzProcedureLevelFree`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

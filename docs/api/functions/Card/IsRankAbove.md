@@ -21,14 +21,14 @@ Checks whether c has a nonzero Rank greater than or equal to rank.
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3618`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3670`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **25** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Card.IsRankAbove`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Card.IsRankAbove) with `Card.IsRankAbove`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

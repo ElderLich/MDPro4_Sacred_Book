@@ -16,19 +16,19 @@ Returns true if every card in g has a different Level.
 
 ## Source
 
-- `Utilities/utility.lua:1130`
+- `Utilities/utility.lua:1133`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **11** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Auxiliary.dlvcheck`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Auxiliary.dlvcheck) with `Auxiliary.dlvcheck`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
 | Gouki Sheik Ogre | `7382007` | [Scripts/c7382007.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c7382007.lua) | 1 |
-| Astrolasma Urania | `18738846` | [Scripts/c18738846.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c18738846.lua) | 1 |
+| Astrazma Urania | `18738846` | [Scripts/c18738846.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c18738846.lua) | 1 |
 | Dogmatikaturgy | `42158279` | [Scripts/c42158279.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c42158279.lua) | 1 |
 | Junk Speeder | `77075360` | [Scripts/c77075360.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c77075360.lua) | 1 |
 | Bloom Harmonist the Melodious Composer | `34974462` | [Scripts/c34974462.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c34974462.lua) | 1 |
@@ -53,7 +53,7 @@ Source: [Scripts/c7382007.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/b
 		for tc in aux.Next(sg) do
 ```
 
-### Astrolasma Urania (`18738846`)
+### Astrazma Urania (`18738846`)
 
 Source: [Scripts/c18738846.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c18738846.lua)
 

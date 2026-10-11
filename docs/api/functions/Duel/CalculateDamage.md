@@ -26,7 +26,7 @@ new_attack is optional and is passed to the damage-step processor. If attacker a
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **28** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Duel.CalculateDamage`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Duel.CalculateDamage) with `Duel.CalculateDamage`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

@@ -27,8 +27,8 @@ With no player argument, this returns the duel-wide turn number; with player 0 o
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **232** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Duel.GetTurnCount`.
+- Detected in **234** indexed script(s).
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Duel.GetTurnCount) with `Duel.GetTurnCount`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
@@ -48,15 +48,15 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | CXyz N.As.Ch. Knight | `61374414` | [Scripts/c61374414.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c61374414.lua) | 2 |
 | Mekk-Knight Purple Nightfall | `28692962` | [Scripts/c28692962.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c28692962.lua) | 2 |
 | Dangers of the Divine | `22082432` | [Scripts/c22082432.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c22082432.lua) | 2 |
+| Destiny HERO - Doom Overlord | `62542673` | [Scripts/c62542673.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c62542673.lua) | 2 |
 | Marincess Cascade | `27012990` | [Scripts/c27012990.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c27012990.lua) | 2 |
-| Unchained Enma Lord Yama | `94014327` | [Scripts/c94014327.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c94014327.lua) | 1 |
+| Unchained Firelord of Yama | `94014327` | [Scripts/c94014327.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c94014327.lua) | 1 |
 | Snake-Eyes Vengeance Dragon | `79415624` | [Scripts/c79415624.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c79415624.lua) | 2 |
 | Bujincident | `11221418` | [Scripts/c11221418.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c11221418.lua) | 3 |
 | Revendread Evolution | `7986397` | [Scripts/c7986397.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c7986397.lua) | 2 |
 | Metaphys Executor | `45148985` | [Scripts/c45148985.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c45148985.lua) | 2 |
 | Cynet Backdoor | `43839002` | [Scripts/c43839002.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c43839002.lua) | 2 |
-| Sauravis, Dragon Sage of the Voiceless Voice | `88284599` | [Scripts/c88284599.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c88284599.lua) | 2 |
-| ...and 208 more |  |  |  |
+| ...and 210 more |  |  |  |
 
 ## Script Examples
 

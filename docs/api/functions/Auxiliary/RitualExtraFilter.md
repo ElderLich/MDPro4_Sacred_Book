@@ -28,7 +28,7 @@ Graveyard Ritual Material filter; c must be a Level monster accepted by f and ab
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **1** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Auxiliary.RitualExtraFilter`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Auxiliary.RitualExtraFilter) with `Auxiliary.RitualExtraFilter`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

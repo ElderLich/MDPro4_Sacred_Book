@@ -21,14 +21,14 @@ In this MDPro3/YGOPro core, that helper returns false for Link Monsters and true
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3636`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3688`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **154** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Card.IsCanChangePosition`.
+- Detected in **156** indexed script(s).
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Card.IsCanChangePosition) with `Card.IsCanChangePosition`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
@@ -50,13 +50,13 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Vanquish Soul Jiaolong | `9091064` | [Scripts/c9091064.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c9091064.lua) | 2 |
 | Amaze Attraction Rapid Racing | `55262310` | [Scripts/c55262310.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c55262310.lua) | 2 |
 | Gagaga Escape | `9591819` | [Scripts/c9591819.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c9591819.lua) | 1 |
+| Doll Hammer | `44088353` | [Scripts/c44088353.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c44088353.lua) | 2 |
 | The Phantom Knights of Umbrage Veil | `85257384` | [Scripts/c85257384.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c85257384.lua) | 1 |
 | Number 3: Cicada King | `4997565` | [Scripts/c4997565.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c4997565.lua) | 1 |
 | Digital Bug Scaradiator | `12615446` | [Scripts/c12615446.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c12615446.lua) | 3 |
 | Riot's Reason | `51612489` | [Scripts/c51612489.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c51612489.lua) | 2 |
 | Magikey Beast - Ansyalabolas | `45655875` | [Scripts/c45655875.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c45655875.lua) | 1 |
-| Crossroad Sonic Chick | `80054655` | [Scripts/c80054655.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c80054655.lua) | 1 |
-| ...and 130 more |  |  |  |
+| ...and 132 more |  |  |  |
 
 ## Script Examples
 

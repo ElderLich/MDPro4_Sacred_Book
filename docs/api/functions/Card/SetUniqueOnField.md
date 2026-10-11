@@ -20,14 +20,14 @@ Sets a uniqueness rule for c so only one card with unique_code can exist on the 
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3660`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3712`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **164** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Card.SetUniqueOnField`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Card.SetUniqueOnField) with `Card.SetUniqueOnField`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

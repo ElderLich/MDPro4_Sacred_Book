@@ -20,14 +20,14 @@ Returns the Level value c had while it was previously on the field.
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3451`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3500`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **4** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Card.GetPreviousLevelOnField`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Card.GetPreviousLevelOnField) with `Card.GetPreviousLevelOnField`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

@@ -16,14 +16,14 @@ Returns true when no Chain is ready, for effects that negate a Summon.
 
 ## Source
 
-- `Utilities/utility.lua:1831`
+- `Utilities/utility.lua:1836`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **26** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Auxiliary.NegateSummonCondition`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Auxiliary.NegateSummonCondition) with `Auxiliary.NegateSummonCondition`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

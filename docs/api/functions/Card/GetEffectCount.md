@@ -21,14 +21,14 @@ Returns the number of effects with code currently found by c's effect filter.
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3554`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3606`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **20** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Card.GetEffectCount`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Card.GetEffectCount) with `Card.GetEffectCount`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

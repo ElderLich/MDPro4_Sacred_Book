@@ -36,8 +36,8 @@ Without this call, the reserved damage/recovery batch is not completed. Use ordi
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **42** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Duel.RDComplete`.
+- Detected in **43** indexed script(s).
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Duel.RDComplete) with `Duel.RDComplete`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
@@ -51,6 +51,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Pyrorex the Elemental Lord | `35842855` | [Scripts/c35842855.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c35842855.lua) | 1 |
 | TA.I. Strike | `86449372` | [Scripts/c86449372.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c86449372.lua) | 1 |
 | Exploderokket Dragon | `31353051` | [Scripts/c31353051.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c31353051.lua) | 1 |
+| Seventh Barian's | `39513225` | [Scripts/c39513225.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c39513225.lua) | 1 |
 | Hyper Psychic Blaster/Assault Mode | `37169670` | [Scripts/c37169670.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c37169670.lua) | 1 |
 | Fusion Fright Waltz | `34449261` | [Scripts/c34449261.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c34449261.lua) | 1 |
 | Pair Bear Scare!! | `21501961` | [Scripts/c21501961.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c21501961.lua) | 1 |
@@ -64,8 +65,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Chthonian Blast | `18271561` | [Scripts/c18271561.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c18271561.lua) | 1 |
 | Photon Alexandra Queen | `75797046` | [Scripts/c75797046.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c75797046.lua) | 1 |
 | Koa'ki Ring | `46089249` | [Scripts/c46089249.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c46089249.lua) | 1 |
-| Cracking | `32835363` | [Scripts/c32835363.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c32835363.lua) | 1 |
-| ...and 18 more |  |  |  |
+| ...and 19 more |  |  |  |
 
 ## Script Examples
 

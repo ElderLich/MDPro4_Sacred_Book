@@ -26,11 +26,13 @@ Lets player choose one of the built-in coin-side options and returns the zero-ba
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **16** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Duel.AnnounceCoin`.
+- Detected in **18** indexed script(s).
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Duel.AnnounceCoin) with `Duel.AnnounceCoin`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
+| Reversal Box | `2606417` | [Scripts/c2606417.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c2606417.lua) | 1 |
+| Dark Time Wizard | `40235813` | [Scripts/c40235813.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c40235813.lua) | 1 |
 | Goddess of the Two Sides | `50915474` | [Scripts/c50915474.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c50915474.lua) | 1 |
 | VIP Whale | `14556954` | [Scripts/c14556954.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c14556954.lua) | 1 |
 | Time Wizard of Tomorrow | `26273196` | [Scripts/c26273196.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c26273196.lua) | 1 |
@@ -50,6 +52,30 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 ## Script Examples
 
+### Reversal Box (`2606417`)
+
+Source: [Scripts/c2606417.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c2606417.lua)
+
+```lua
+	local tc=Duel.GetFirstTarget()
+	Duel.Hint(HINT_SELECTMSG,tp,HINTMSG_COIN)
+	local coin=Duel.AnnounceCoin(tp)
+	local res=Duel.TossCoin(tp,1)
+	if coin~=res and Duel.GetLocationCount(tp,LOCATION_MZONE)>0 then
+```
+
+### Dark Time Wizard (`40235813`)
+
+Source: [Scripts/c40235813.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c40235813.lua)
+
+```lua
+		local p=1-tp
+		Duel.Hint(HINT_SELECTMSG,tp,HINTMSG_COIN)
+		local coin=Duel.AnnounceCoin(tp)
+		local res=Duel.TossCoin(tp,1)
+		if coin==res then
+```
+
 ### Goddess of the Two Sides (`50915474`)
 
 Source: [Scripts/c50915474.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c50915474.lua)
@@ -60,28 +86,4 @@ function s.atkop(e,tp,eg,ep,ev,re,r,rp)
 	local coin=Duel.AnnounceCoin(tp)
 	local res=Duel.TossCoin(tp,1)
 	if coin~=res then
-```
-
-### VIP Whale (`14556954`)
-
-Source: [Scripts/c14556954.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c14556954.lua)
-
-```lua
-	local c=e:GetHandler()
-	Duel.Hint(HINT_SELECTMSG,tp,HINTMSG_COIN)
-	local coin=Duel.AnnounceCoin(tp)
-	local res=Duel.TossCoin(tp,1)
-	if coin~=res then
-```
-
-### Time Wizard of Tomorrow (`26273196`)
-
-Source: [Scripts/c26273196.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c26273196.lua)
-
-```lua
-	if g:GetCount()>0 then
-		Duel.Hint(HINT_SELECTMSG,tp,HINTMSG_COIN)
-		local coin=Duel.AnnounceCoin(tp)
-		local res=Duel.TossCoin(tp,1)
-		local damp=0
 ```

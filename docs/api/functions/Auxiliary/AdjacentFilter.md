@@ -22,7 +22,7 @@ Returns whether c's global field coordinate is directly adjacent to (i, j), shar
 
 ## Source
 
-- `Utilities/utility.lua:681`
+- `Utilities/utility.lua:684`
 
 ## Used By
 

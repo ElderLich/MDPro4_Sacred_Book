@@ -20,14 +20,14 @@ Returns c's attack declaration count.
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3537`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3589`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **18** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Card.GetAttackAnnouncedCount`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Card.GetAttackAnnouncedCount) with `Card.GetAttackAnnouncedCount`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

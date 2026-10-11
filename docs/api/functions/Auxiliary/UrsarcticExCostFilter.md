@@ -21,7 +21,7 @@ Replacement-cost filter for the shared Ursarctic Special Summon effect. It accep
 
 ## Source
 
-- `Utilities/utility.lua:958`
+- `Utilities/utility.lua:961`
 
 ## Used By
 

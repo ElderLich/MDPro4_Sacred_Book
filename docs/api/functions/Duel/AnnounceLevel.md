@@ -33,7 +33,7 @@ min and max default to 1 and 12 and are swapped if min is greater than max. Extr
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **24** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Duel.AnnounceLevel`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Duel.AnnounceLevel) with `Duel.AnnounceLevel`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
@@ -94,7 +94,7 @@ Source: [Scripts/c20579538.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/
 
 ```lua
 		and e:GetHandler():IsCanBeSpecialSummoned(e,0,tp,false,false) end
-	Duel.Hint(HINT_SELECTMSG,tp,HINGMSG_LVRANK)
+	Duel.Hint(HINT_SELECTMSG,tp,HINTMSG_LVRANK)
 	local lv=Duel.AnnounceLevel(tp,1,8)
 	e:SetLabel(lv)
 	Duel.SetOperationInfo(0,CATEGORY_SPECIAL_SUMMON,e:GetHandler(),1,0,0)

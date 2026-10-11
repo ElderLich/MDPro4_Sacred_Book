@@ -33,7 +33,7 @@ The returned mask uses player-relative bits: own Monster Zone seq, own Spell & T
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **50** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Duel.SelectDisableField`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Duel.SelectDisableField) with `Duel.SelectDisableField`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
@@ -46,7 +46,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | R.B. VALCan Booster | `6821579` | [Scripts/c6821579.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c6821579.lua) | 1 |
 | Dark Infant @Ignister | `74567889` | [Scripts/c74567889.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c74567889.lua) | 1 |
 | Seismic Shockwave | `79569173` | [Scripts/c79569173.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c79569173.lua) | 1 |
-| S-Force Sorted World | `11642993` | [Scripts/c11642993.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c11642993.lua) | 1 |
+| S-Force World Sorting | `11642993` | [Scripts/c11642993.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c11642993.lua) | 1 |
 | Kashtira Shangri-Ira | `73542331` | [Scripts/c73542331.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c73542331.lua) | 1 |
 | Elfnotes: Aristeia of Trust | `50590801` | [Scripts/c50590801.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c50590801.lua) | 1 |
 | Crusadia Spatha | `39528955` | [Scripts/c39528955.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c39528955.lua) | 1 |

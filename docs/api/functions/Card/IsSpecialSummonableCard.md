@@ -21,14 +21,14 @@ c must have an available Special Summon procedure. This is useful for cards that
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3576`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3628`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **2** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Card.IsSpecialSummonableCard`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Card.IsSpecialSummonableCard) with `Card.IsSpecialSummonableCard`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

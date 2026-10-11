@@ -22,18 +22,18 @@ It accepts activated monster effects from monsters whose original Level or Rank 
 
 ## Source
 
-- `Utilities/utility.lua:892`
+- `Utilities/utility.lua:895`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **9** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Auxiliary.qlifilter`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Auxiliary.qlifilter) with `Auxiliary.qlifilter`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| [El Shaddoll Meshachrer](/examples/cards/32467459) | `32467459` | [Scripts/c32467459.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c32467459.lua) | 1 |
+| El Shaddoll Meshachrer | `32467459` | [Scripts/c32467459.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c32467459.lua) | 1 |
 | Qliphort Disk | `64496451` | [Scripts/c64496451.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c64496451.lua) | 1 |
 | Qliphort Stealth | `13073850` | [Scripts/c13073850.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c13073850.lua) | 1 |
 | Apoqliphort Towers | `27279764` | [Scripts/c27279764.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c27279764.lua) | 1 |

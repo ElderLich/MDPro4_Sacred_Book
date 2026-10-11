@@ -29,7 +29,7 @@ use_player defaults to the current reason player and is used for zone-limit chec
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **12** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Duel.GetUsableMZoneCount`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Duel.GetUsableMZoneCount) with `Duel.GetUsableMZoneCount`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

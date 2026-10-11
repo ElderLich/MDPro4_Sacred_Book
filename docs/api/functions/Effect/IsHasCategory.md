@@ -27,8 +27,8 @@ Checks whether e's category bitmask contains cate.
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **38** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Effect.IsHasCategory`.
+- Detected in **40** indexed script(s).
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Effect.IsHasCategory) with `Effect.IsHasCategory`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
@@ -49,14 +49,14 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Tearlaments Rulkallos | `84330567` | [Scripts/c84330567.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c84330567.lua) | 1 |
 | Derk, Longing for the Blue Skies | `46708514` | [Scripts/c46708514.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c46708514.lua) | 1 |
 | Armament Reincarnation | `53770666` | [Scripts/c53770666.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c53770666.lua) | 1 |
+| Candelato, the Beast of Light | `8315896` | [Scripts/c8315896.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c8315896.lua) | 2 |
 | Branded Lost | `18973184` | [Scripts/c18973184.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c18973184.lua) | 2 |
 | Vendread Chimera | `13482075` | [Scripts/c13482075.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c13482075.lua) | 1 |
+| Cielo, the Night Sky of Raise Moon - No More Bets! | `73090586` | [Scripts/c73090586.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c73090586.lua) | 2 |
 | Shipping Error | `58761791` | [Scripts/c58761791.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c58761791.lua) | 2 |
 | Magical Meltdown | `47679935` | [Scripts/c47679935.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c47679935.lua) | 2 |
 | Retaliating "C" | `46502744` | [Scripts/c46502744.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c46502744.lua) | 1 |
-| Rebound | `983995` | [Scripts/c983995.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c983995.lua) | 1 |
-| Learning Elf | `32126000` | [Scripts/c32126000.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c32126000.lua) | 1 |
-| ...and 14 more |  |  |  |
+| ...and 16 more |  |  |  |
 
 ## Script Examples
 

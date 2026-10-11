@@ -30,7 +30,7 @@ Destroy-substitute value function for modern Union monsters; returns true for de
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **6** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Auxiliary.UnionReplaceFilter`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Auxiliary.UnionReplaceFilter) with `Auxiliary.UnionReplaceFilter`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

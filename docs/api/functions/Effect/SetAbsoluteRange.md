@@ -45,12 +45,12 @@ The core stores the ranges with `EFFECT_FLAG_ABSOLUTE_TARGET` set. If `playerid`
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **42** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Effect.SetAbsoluteRange`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Effect.SetAbsoluteRange) with `Effect.SetAbsoluteRange`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
 | Gouki Sheik Ogre | `7382007` | [Scripts/c7382007.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c7382007.lua) | 1 |
-| Unchained Enma Lord Yama | `94014327` | [Scripts/c94014327.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c94014327.lua) | 1 |
+| Unchained Firelord of Yama | `94014327` | [Scripts/c94014327.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c94014327.lua) | 1 |
 | Performage Wind Drainer | `70417076` | [Scripts/c70417076.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c70417076.lua) | 1 |
 | Readying of Rites | `71771004` | [Scripts/c71771004.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c71771004.lua) | 1 |
 | Swordsoul Assessment | `78836195` | [Scripts/c78836195.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c78836195.lua) | 1 |
@@ -89,7 +89,7 @@ Source: [Scripts/c7382007.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/b
 			e1:SetReset(RESET_EVENT+RESETS_STANDARD+RESET_CONTROL)
 ```
 
-### Unchained Enma Lord Yama (`94014327`)
+### Unchained Firelord of Yama (`94014327`)
 
 Source: [Scripts/c94014327.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c94014327.lua)
 

@@ -21,14 +21,14 @@ Returns true if c's text-registered type mask contains type.
 
 ## Source
 
-- `Utilities/utility.lua:581`
+- `Utilities/utility.lua:584`
 
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **3** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Auxiliary.IsTypeInText`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Auxiliary.IsTypeInText) with `Auxiliary.IsTypeInText`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

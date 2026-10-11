@@ -33,7 +33,7 @@ f may be nil. ex may be a Card, a Group, or nil, and extra arguments after ex ar
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **85** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Duel.GetFirstMatchingCard`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Duel.GetFirstMatchingCard) with `Duel.GetFirstMatchingCard`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

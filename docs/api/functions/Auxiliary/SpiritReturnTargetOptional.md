@@ -35,7 +35,7 @@ Target function for the optional Spirit Monster End Phase return effect. During 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **1** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Auxiliary.SpiritReturnTargetOptional`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Auxiliary.SpiritReturnTargetOptional) with `Auxiliary.SpiritReturnTargetOptional`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |

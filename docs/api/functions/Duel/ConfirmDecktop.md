@@ -24,8 +24,8 @@ count is clamped to the remaining Deck size. The function yields for the reveal 
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
-- Detected in **151** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Duel.ConfirmDecktop`.
+- Detected in **154** indexed script(s).
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Duel.ConfirmDecktop) with `Duel.ConfirmDecktop`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
@@ -53,7 +53,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Rafale, Champion Fur Hire | `38916526` | [Scripts/c38916526.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c38916526.lua) | 1 |
 | Shooting Star Dragon | `24696097` | [Scripts/c24696097.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c24696097.lua) | 1 |
 | Hollowrokket Dragon | `51548207` | [Scripts/c51548207.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c51548207.lua) | 1 |
-| ...and 127 more |  |  |  |
+| ...and 130 more |  |  |  |
 
 ## Script Examples
 

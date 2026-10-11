@@ -30,7 +30,7 @@ Use the Card.GetLinkedGroup method when checking one Link Monster; use this Duel
 Generated from the local `Scripts/` folder and `cards.cdb`.
 
 - Detected in **6** indexed script(s).
-- Search this function in the [Script Explorer](/tools/script-explorer) with `Duel.GetLinkedGroup`.
+- Search this function in the [Script Explorer](/tools/script-explorer?format=standard&mode=code&q=Duel.GetLinkedGroup) with `Duel.GetLinkedGroup`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
