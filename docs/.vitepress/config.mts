@@ -77,6 +77,7 @@ export default defineConfig({
           items: [
             { text: 'Rush Learning Path', link: '/learn/rush-duel' },
             { text: 'Rush Requirements and Effects', link: '/learn/rush-duel-scripting' },
+            { text: 'Selection and Temporary Stats', link: '/learn/rush-selection-and-actions' },
             { text: 'Maximum, Fusion, and Ritual', link: '/learn/rush-summon-procedures' },
           ],
         },
@@ -194,6 +195,7 @@ export default defineConfig({
           items: [
             { text: 'Learning Path', link: '/learn/rush-duel' },
             { text: 'Requirements and Effects', link: '/learn/rush-duel-scripting' },
+            { text: 'Selection and Temporary Stats', link: '/learn/rush-selection-and-actions' },
             { text: 'Maximum, Fusion, and Ritual', link: '/learn/rush-summon-procedures' },
             { text: 'Rush API Overview', link: '/rush/api/' },
             { text: 'Helper Reference', link: '/rush/api/functions/' },

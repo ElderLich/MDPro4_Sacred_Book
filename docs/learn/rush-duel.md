@@ -9,13 +9,18 @@ then add the Rush library's requirements, rules, and summon procedures.
     <strong>Requirement to resolution</strong>
     <span>Walk through Mystic Dealer, callback factories, drawing, and the Rush rules layer.</span>
   </a>
+  <a class="learn-priority" href="rush-selection-and-actions">
+    <small>2 · Resolve an action</small>
+    <strong>Choose cards and change stats</strong>
+    <span>Separate optional actions from legality checks and give temporary effects a lifetime.</span>
+  </a>
   <a class="learn-priority" href="rush-summon-procedures">
-    <small>2 · Advanced mechanics</small>
+    <small>3 · Advanced mechanics</small>
     <strong>Maximum, Fusion, Ritual</strong>
     <span>Connect the database, monster procedure, and effect that performs the summon.</span>
   </a>
   <a class="learn-priority" href="../examples/rush">
-    <small>3 · Read real cards</small>
+    <small>4 · Read real cards</small>
     <strong>Rush examples</strong>
     <span>Compare full imported scripts with their card text and helper calls.</span>
   </a>
@@ -28,6 +33,7 @@ then add the Rush library's requirements, rules, and summon procedures.
 | New to Lua | [Lua Essentials](lua-essentials), then [Script Structure](script-structure). |
 | Know normal YGOPro scripts | [Rush Duel Scripting](rush-duel-scripting); focus on helper shapes and shared rules. |
 | Need a particular helper | [Rush function reference](/rush/api/functions/) and the Rush format in [Script Explorer](/tools/script-explorer). |
+| Choosing monsters or giving temporary ATK/DEF | Follow [Rush selection and actions](rush-selection-and-actions). |
 | Card loads but Rush behavior is missing | Check [database and runtime wiring](../guides/card-database#rush-card-data-and-runtime-rules). |
 | Implementing a Maximum or Ritual card | Follow [Rush summon procedures](rush-summon-procedures) and its source examples. |
 
@@ -45,6 +51,8 @@ which layer is responsible and give observable checks for each example.
 
 After the first lesson, explain why `RD.CostSendHandToGrave(...)` is called while
 building the script but `RD.Draw()` is called during resolution. After the
+selection lesson, explain why `RD.CanSelectAndDoAction` belongs in the operation
+and why an action callback with no return does not produce a success count. After the
 summon lesson, explain why a Maximum side piece uses `EFFECT_TYPE_XMATERIAL`
 and why that does not make it an Xyz Monster.
 

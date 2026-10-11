@@ -182,6 +182,7 @@ card you are scripting.
     <h3>Rush Duel</h3>
     <a href="rush-duel">Choose your Rush starting point</a>
     <a href="rush-duel-scripting">Requirements and resolution</a>
+    <a href="rush-selection-and-actions">Selection, actions, and temporary stats</a>
     <a href="rush-summon-procedures">Maximum, Fusion, and Ritual</a>
     <a href="../examples/rush">Real Rush scripts</a>
     <a href="../rush/api/functions/">Rush helper reference</a>
