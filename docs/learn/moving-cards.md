@@ -315,6 +315,10 @@ end
 Do not assume the intended card moved. Relation checks, immunity, replacement
 effects, and zone changes can all affect the final result.
 
+For a complete example that inspects `Duel.GetOperatedGroup`, checks the
+actual destination, and offers a conditional draw, continue to
+[operation results and follow-up effects](/learn/operation-results-and-follow-up-effects).
+
 ## Reason Matters
 
 The reason flag tells the engine why the move happened: `REASON_EFFECT`,
