@@ -2,13 +2,14 @@
 
 <div class="home-console">
   <section class="home-console-main">
-    <p class="home-kicker">MDPro3 / YGOPro Lua scripting</p>
+    <p class="home-kicker">MDPro3 / YGOPro / Rush Duel scripting</p>
     <h2>Start with one card. Learn the engine around it.</h2>
     <p>Follow the guided curve for a first card. When you already know the engine, jump straight to an exact API call or search every local script for a proven pattern.</p>
     <div class="home-actions">
       <a class="home-primary" href="learn/">Start Learning</a>
       <a class="home-secondary" href="learn/first-custom-card">Write A Card</a>
       <a class="home-secondary" href="tools/script-explorer">Search Scripts</a>
+      <a class="home-secondary" href="learn/rush-duel">Learn Rush Duel</a>
     </div>
   </section>
   <section class="home-console-code" aria-label="Example Lua effect block">
@@ -52,6 +53,8 @@ c:RegisterEffect(e1)</code></pre>
 
 ## Beginner Curve
 
+New to Lua? Take the short [Lua Essentials lesson](learn/lua-essentials) first.
+
 <div class="home-stepper">
   <a href="learn/script-structure"><b>01</b><span>Read a card file</span></a>
   <a href="learn/first-scripts"><b>02</b><span>Study local patterns</span></a>
@@ -80,6 +83,10 @@ activation-flow and debugging stages.
   <a href="learn/archetypes-and-setcodes">Archetypes</a>
   <a href="learn/client-ui-and-prompt-behavior">Client prompts</a>
   <a href="learn/count-limits">Count limits</a>
+  <a href="learn/rush-duel">Rush Duel scripting</a>
+  <a href="learn/rush-summon-procedures">Maximum and Rush summons</a>
+  <a href="learn/engine-updates">New engine and script patterns</a>
+  <a href="learn/#checkpoints-for-your-first-card">Check your progress</a>
 </div>
 
 ## Reference
@@ -88,6 +95,8 @@ activation-flow and debugging stages.
 - [Constant reference](api/constants)
 - [Featured card examples](examples/)
 - [Script Explorer](tools/script-explorer)
+- [Rush helper reference](rush/api/functions/)
+- [Rush card examples](examples/rush)
 
 ## Credits & Support
 

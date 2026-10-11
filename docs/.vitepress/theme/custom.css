@@ -98,7 +98,7 @@
 
 .sacred-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(240px, 100%), 1fr));
   gap: 12px;
   margin: 20px 0 28px;
 }
@@ -174,7 +174,7 @@
 
 .home-kicker {
   margin: 0 0 10px;
-  color: #2f8f83;
+  color: var(--vp-c-brand-1);
   font-size: 12px;
   font-weight: 850;
   text-transform: uppercase;
@@ -216,9 +216,9 @@
 }
 
 .home-primary {
-  border-color: #2f8f83;
+  border-color: #24786e;
   color: #ffffff !important;
-  background: #2f8f83;
+  background: #24786e;
 }
 
 .home-secondary {
@@ -492,6 +492,39 @@
 
 .learn-stage a:hover {
   color: var(--vp-c-brand-1);
+}
+
+/* Keep the learning cards usable with a keyboard and at narrow zoom widths. */
+.sacred-card,
+.learn-priority,
+.learn-stage,
+.home-choice,
+.home-stepper a,
+.home-branch-grid a {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.sacred-card:focus-visible,
+.home-primary:focus-visible,
+.home-secondary:focus-visible,
+.home-choice:focus-visible,
+.home-stepper a:focus-visible,
+.home-branch-grid a:focus-visible,
+.learn-priority:focus-visible,
+.learn-stage a:focus-visible {
+  outline: 3px solid var(--vp-c-brand-1);
+  outline-offset: 3px;
+}
+
+.vp-doc .custom-block.details summary {
+  min-height: 32px;
+  cursor: pointer;
+}
+
+.vp-doc .custom-block.details summary:focus-visible {
+  outline: 2px solid var(--vp-c-brand-1);
+  outline-offset: 4px;
 }
 
 @media (max-width: 1000px) {

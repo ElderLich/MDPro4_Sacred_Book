@@ -9,10 +9,13 @@ call in the API, then search real local use in the Script Explorer.
 
 | Your experience or task | Start here |
 | --- | --- |
-| New to Lua card scripts. | Follow the seven-step curve below. |
+| New to programming or Lua. | Start with [Lua Essentials](lua-essentials), then follow the seven-step curve below. |
+| Familiar with Lua; new to card scripts. | Follow the seven-step curve below. |
 | Comfortable with Lua, but new to YGOPro effects. | Read [Effect Objects](effect-object), [Effect Types](effect-types), and [Callbacks](effect-callbacks). |
 | You know the engine and need one implementation pattern. | Jump to the [Lesson Library](#lesson-library), then use the [Script Explorer](/tools/script-explorer). |
 | A script almost works, but fails in one game state. | Trace [Activation Legality](activation-legality), [Effect Lifecycle](cost-target-operation-lifecycle), and [Common Script Errors](common-script-errors-and-debugging). |
+| Building a Rush Duel card. | Follow the [Rush Duel track](rush-duel). |
+| Returning after an engine update. | Read [Applying Engine and Script Changes](engine-updates) for the new card-type API and corrected patterns. |
 
 ## First Complete Card Curve
 
@@ -54,6 +57,23 @@ call in the API, then search real local use in the Script Explorer.
   </a>
 </div>
 
+## Checkpoints For Your First Card
+
+You do not need to memorize every function before moving on. Use these
+observable checkpoints to choose your next lesson:
+
+| After | You should be able to |
+| --- | --- |
+| Reading a file | Point to the effect registration, the callbacks, and the filters. |
+| Building small effects | Explain what `chk==0` checks without selecting or moving cards. |
+| Writing and wiring a card | Load your card with the correct name, type, script, and prompt text. |
+| Tracing activation | Explain which values are chosen now and which must be checked again at resolution. |
+| Debugging | Reproduce one legal activation, one illegal activation, and one changed-state resolution. |
+
+If a checkpoint fails, return to that stage with one small card. For a Rush
+card, complete the shared Lua/callback foundations, then follow the
+[Rush track](rush-duel) before copying a standard-format effect.
+
 ## Learn, Verify, Search
 
 Use the site layers together instead of expecting one page to answer every
@@ -90,6 +110,7 @@ card you are scripting.
 <div class="learn-stage-grid">
   <section class="learn-stage">
     <h3>Foundations</h3>
+    <a href="lua-essentials">Lua essentials</a>
     <a href="script-structure">Script structure</a>
     <a href="effect-object">Effect objects</a>
     <a href="effect-types">Effect types</a>
@@ -156,6 +177,20 @@ card you are scripting.
     <a href="control-change">Control change</a>
     <a href="battle-position-effects">Battle position effects</a>
     <a href="field-zones-and-sequences">Field zones and sequences</a>
+  </section>
+  <section class="learn-stage">
+    <h3>Rush Duel</h3>
+    <a href="rush-duel">Choose your Rush starting point</a>
+    <a href="rush-duel-scripting">Requirements and resolution</a>
+    <a href="rush-summon-procedures">Maximum, Fusion, and Ritual</a>
+    <a href="../examples/rush">Real Rush scripts</a>
+    <a href="../rush/api/functions/">Rush helper reference</a>
+  </section>
+  <section class="learn-stage">
+    <h3>Maintenance And Debugging</h3>
+    <a href="engine-updates">Apply engine and script changes</a>
+    <a href="common-script-errors-and-debugging">Common script errors</a>
+    <a href="card-data-and-script-wiring">Verify card data and scripts</a>
   </section>
   <section class="learn-stage">
     <h3>Player Data And Memory</h3>
