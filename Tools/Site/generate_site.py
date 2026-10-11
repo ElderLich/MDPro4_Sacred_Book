@@ -159,7 +159,9 @@ def load_api_names(format: str = "standard") -> tuple[set[str], dict[str, list[s
 def load_cards(database: Path = CARDS_DB) -> dict[int, CardRecord]:
     if not database.exists():
         raise FileNotFoundError(f"Missing card database: {database}")
-    con = sqlite3.connect(database.resolve().as_uri() + "?mode=ro", uri=True)
+    # These are vendored, immutable snapshots. A read-only WAL-mode database
+    # otherwise still creates -wal/-shm sidecars in a fresh checkout.
+    con = sqlite3.connect(database.resolve().as_uri() + "?mode=ro&immutable=1", uri=True)
     try:
         rows = con.execute(
             """

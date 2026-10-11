@@ -82,6 +82,20 @@ class ScriptExplorerIndexTests(unittest.TestCase):
             with self.assertRaises(FileNotFoundError):
                 site.load_cards(Path(directory) / 'missing.cdb')
 
+    def test_reading_vendored_wal_snapshot_does_not_create_sidecars(self) -> None:
+        with TemporaryDirectory() as directory:
+            path = Path(directory) / 'cards.cdb'
+            database = sqlite3.connect(path)
+            database.execute('PRAGMA journal_mode=WAL')
+            database.execute('CREATE TABLE datas (id INTEGER, type INTEGER, atk INTEGER, def INTEGER, level INTEGER, race INTEGER, attribute INTEGER, category INTEGER)')
+            database.execute('CREATE TABLE texts (id INTEGER, name TEXT, desc TEXT)')
+            database.commit()
+            database.close()
+            before = path.read_bytes()
+            self.assertEqual(site.load_cards(path), {})
+            self.assertEqual(path.read_bytes(), before)
+            self.assertEqual(sorted(p.name for p in path.parent.iterdir()), ['cards.cdb'])
+
     def test_generation_preserves_authored_navigation(self) -> None:
         with TemporaryDirectory() as directory:
             docs = Path(directory)
