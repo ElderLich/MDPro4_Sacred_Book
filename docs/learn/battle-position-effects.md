@@ -4,6 +4,10 @@ Battle position effects either change a card once during resolution or apply a
 rule that forces or prevents a position change. Keep those two shapes separate:
 one calls a `Duel` action, the other registers an effect.
 
+For attack targets, direct attacks, Damage Step events, and checking whether
+a monster still belongs to the same battle, see
+[battle participants and timing](/learn/battle-participants-and-timing).
+
 ## One-Time Position Changes
 
 Book of Moon (`c14087893.lua`) targets a face-up monster that can be Set, then
