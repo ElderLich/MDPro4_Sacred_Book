@@ -11,6 +11,10 @@ Those halves meet at `Card.CheckFusionMaterial` and
 core what combinations are legal; the effect that Summons it decides where the
 materials may come from and how those materials move.
 
+For a guided walkthrough of the actual player prompts, optional summons,
+Chain Material routes, and changing material availability, continue with
+[Fusion Summon Choices](fusion-summon-choices).
+
 ## The Two Layers
 
 | Layer | Where it usually lives | What it does |
@@ -185,8 +189,8 @@ Keep that order:
    on the Fusion Monster.
 3. The material movement function sends, banishes, or returns the materials
    with `REASON_EFFECT+REASON_MATERIAL+REASON_FUSION`.
-4. [`Duel.BreakEffect`](/api/functions/Duel/BreakEffect) creates the visible
-   Summon pause.
+4. [`Duel.BreakEffect`](/api/functions/Duel/BreakEffect) separates the material
+   movement and summon in effect timing; it is not merely a visual pause.
 5. [`Duel.SpecialSummon`](/api/functions/Duel/SpecialSummon) uses
    `SUMMON_TYPE_FUSION`.
 6. [`Card.CompleteProcedure`](/api/functions/Card/CompleteProcedure) marks the
