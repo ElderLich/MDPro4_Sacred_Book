@@ -5,36 +5,31 @@ Alias: `RD.SelectAndSpecialSummon`. Requires the matching Rush Duel Lua bootstra
 ## Signature
 
 ```lua
-RushDuel.SelectAndSpecialSummon(any filter, any tp, any s_range, any o_range, any min, any max, any expect, any e, any pos, any break_effect, any target_player) -> any
+RushDuel.SelectAndSpecialSummon(function filter, int tp, int s_range, int o_range, int min, int max, Card|Group|nil expect, Effect e, int pos, [bool break_effect], [int target_player]) -> int
 ```
 
 ## Description
 
-Rush Duel helper declared in `RDAction.lua`. Its argument names are extracted from the pinned source; parameter and return types have not yet been reviewed.
-
-### Upstream source comment
-
-```text
-操作: 选择怪兽特殊召唤
-```
+Checks destination Monster Zone capacity, selects a nonempty Group and performs an ordinary Special Summon with summon type 0, nocheck=false and nolimit=false. The filter must supply per-card summon legality; zone capacity alone does not make every monster summonable.
+Unlike the general SelectAndDoAction wrapper, this helper passes e,tp,pos,break_effect,target_player as extra filter arguments. The return value is the actual Duel.SpecialSummon count, or 0 when no selection/summon occurs. Face-down summon confirmation is handled by the Rush private wrapper.
 
 ## Parameters
 
-- `filter` `any`: Type and behavior are not yet reviewed; see the source.
-- `tp` `any`: Type and behavior are not yet reviewed; see the source.
-- `s_range` `any`: Type and behavior are not yet reviewed; see the source.
-- `o_range` `any`: Type and behavior are not yet reviewed; see the source.
-- `min` `any`: Type and behavior are not yet reviewed; see the source.
-- `max` `any`: Type and behavior are not yet reviewed; see the source.
-- `expect` `any`: Type and behavior are not yet reviewed; see the source.
-- `e` `any`: Type and behavior are not yet reviewed; see the source.
-- `pos` `any`: Type and behavior are not yet reviewed; see the source.
-- `break_effect` `any`: Type and behavior are not yet reviewed; see the source.
-- `target_player` `any`: Type and behavior are not yet reviewed; see the source.
+- `filter` `function`: Candidate predicate; receives card,e,tp,pos,break_effect,target_player. Include per-card summon legality.
+- `tp` `int`: Selecting and summoning player.
+- `s_range` `int`: Source locations on tp side.
+- `o_range` `int`: Source locations on the opponent side.
+- `min` `int`: Minimum selected count.
+- `max` `int`: Maximum count, capped by the destination zone count.
+- `expect` `Card|Group|nil`: Excluded Card(s), or nil.
+- `e` `Effect`: Source effect passed to the filter.
+- `pos` `int`: Required summon position mask.
+- `break_effect` `bool` (optional): Call Duel.BreakEffect immediately before summoning; default false.
+- `target_player` `int` (optional): Destination player; defaults to tp. Does not change which player makes the choice.
 
 ## Returns
 
-- `any`: Return contract has not been reviewed; inspect the source below.
+- `int`: Actual summon count, or 0 if capacity/candidates/selection do not permit the operation.
 
 ## Source
 

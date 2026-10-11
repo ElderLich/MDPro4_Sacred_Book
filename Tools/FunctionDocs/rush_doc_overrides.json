@@ -124,8 +124,101 @@
       "params": [{"name":"card","type":"Card","description":"Rush Ritual monster."}], "returns": []
     },
     "CreateRitualEffect": {
-      "summary_en": ["Creates an Effect with Rush Ritual target and operation callbacks. Configure the returned Effect's activation type, code, category and other requirements, then register it. The comparison mode is one of RITUAL_*; material locations default to zero and material movement defaults to RD.RitualToGrave.", "Original/current selects which value of the Ritual monster sets the requirement. Material Level sums use Card.GetRitualLevel and ATK sums use Card.GetAttack in this snapshot; ORIGINAL does not universally mean reading every material's printed stat."],
-      "returns": [{"type":"Effect","description":"Configured but unregistered effect."}]
+      "summary_en": [
+        "Creates an Effect with Rush Ritual target and operation callbacks. Configure the returned Effect's activation type, code, category and other requirements, then register it. The comparison mode is one of RITUAL_*; material locations default to zero and material movement defaults to RD.RitualToGrave.",
+        "Original/current selects which value of the Ritual monster sets the requirement. Material Level sums use Card.GetRitualLevel and ATK sums use Card.GetAttack in this snapshot; ORIGINAL does not universally mean reading every material's printed stat.",
+        "Use this factory for the pinned Ritual scripts. Resolution chooses an Extra Deck monster, then a material route and a legal material Group. Canceling material selection returns to monster selection. The operation callback receives the selected materials and Ritual monster, not a numeric summon result."
+      ],
+      "returns": [
+        {
+          "type": "Effect",
+          "description": "Configured but unregistered effect."
+        }
+      ],
+      "params": [
+        {
+          "name": "card",
+          "type": "Card",
+          "description": "Card receiving the unregistered summoning Effect."
+        },
+        {
+          "name": "type",
+          "type": "int",
+          "description": "RITUAL_* comparison mode; required."
+        },
+        {
+          "name": "matfilter",
+          "type": "function|nil",
+          "description": "Filter for the ordinary material pool, called with a Card.",
+          "optional": true
+        },
+        {
+          "name": "spfilter",
+          "type": "function|nil",
+          "description": "Summon-candidate filter receiving card, effect, player, material Group, optional route filter and check flags.",
+          "optional": true
+        },
+        {
+          "name": "exfilter",
+          "type": "function|nil",
+          "description": "Filter for extra material locations; separate from matfilter.",
+          "optional": true
+        },
+        {
+          "name": "s_range",
+          "type": "int",
+          "description": "Extra material locations on the player side; default 0. These add to the ordinary pool.",
+          "optional": true
+        },
+        {
+          "name": "o_range",
+          "type": "int",
+          "description": "Extra material locations on the opponent side; default 0.",
+          "optional": true
+        },
+        {
+          "name": "mat_check",
+          "type": "function|nil",
+          "description": "Whole-material-Group restriction evaluated with player, selected Group and summon candidate (plus Fusion check flags for Fusion).",
+          "optional": true
+        },
+        {
+          "name": "mat_move",
+          "type": "function",
+          "description": "Material-movement callback (player, selected Group, effect); defaults to the matching FusionToGrave or RitualToGrave helper.",
+          "optional": true
+        },
+        {
+          "name": "target_action",
+          "type": "function|nil",
+          "description": "Additional target-stage action; not called for chk==0.",
+          "optional": true
+        },
+        {
+          "name": "operation_action",
+          "type": "function|nil",
+          "description": "Additional resolution callback (e,tp,eg,ep,ev,re,r,rp,materials,summon_card) after the executor returns; not proof of a positive summon count.",
+          "optional": true
+        },
+        {
+          "name": "limit_action",
+          "type": "function|nil",
+          "description": "Runs after resolution cleanup even when no candidate remains.",
+          "optional": true
+        },
+        {
+          "name": "including_self",
+          "type": "bool",
+          "description": "Require the handler among selected materials; default false.",
+          "optional": true
+        },
+        {
+          "name": "self_leave",
+          "type": "bool",
+          "description": "Exclude the handler from materials and account for its departure when checking zones; default false.",
+          "optional": true
+        }
+      ]
     },
     "RegisterEquipEffect": {
       "summary_en": ["Registers a Rush Equip Spell activation and its equip limit. The target argument is a card predicate; this implementation chooses the monster during resolution. Returns the activation Effect for further configuration."],
@@ -150,8 +243,101 @@
       "returns": [{"type":"function","description":"Wrapped cost callback."}]
     },
     "CreateFusionEffect": {
-      "summary_en": ["Creates an Effect with Rush Fusion target and operation callbacks. It does not register an activation: set type, code, category, description and any costs on the returned Effect, then register it. Locations default to zero, material movement to RD.FusionToGrave, and summon position to POS_FACEUP."],
-      "returns": [{"type":"Effect","description":"Configured but unregistered effect."}]
+      "summary_en": [
+        "Creates an Effect with Rush Fusion target and operation callbacks. It does not register an activation: set type, code, category, description and any costs on the returned Effect, then register it. Locations default to zero, material movement to RD.FusionToGrave, and summon position to POS_FACEUP.",
+        "Legality checks do not choose the monster or materials. Resolution rebuilds both pools, chooses the monster and any alternative material route, then selects materials. The operation callback receives materials then the chosen monster; the internal executor does not forward the core summon count."
+      ],
+      "returns": [
+        {
+          "type": "Effect",
+          "description": "Configured but unregistered effect."
+        }
+      ],
+      "params": [
+        {
+          "name": "card",
+          "type": "Card",
+          "description": "Card receiving the unregistered summoning Effect."
+        },
+        {
+          "name": "matfilter",
+          "type": "function|nil",
+          "description": "Filter for the ordinary material pool, called with a Card.",
+          "optional": true
+        },
+        {
+          "name": "spfilter",
+          "type": "function|nil",
+          "description": "Summon-candidate filter receiving card, effect, player, material Group, optional route filter and check flags.",
+          "optional": true
+        },
+        {
+          "name": "exfilter",
+          "type": "function|nil",
+          "description": "Filter for extra material locations; separate from matfilter.",
+          "optional": true
+        },
+        {
+          "name": "s_range",
+          "type": "int",
+          "description": "Extra material locations on the player side; default 0. These add to the ordinary pool.",
+          "optional": true
+        },
+        {
+          "name": "o_range",
+          "type": "int",
+          "description": "Extra material locations on the opponent side; default 0.",
+          "optional": true
+        },
+        {
+          "name": "mat_check",
+          "type": "function|nil",
+          "description": "Whole-material-Group restriction evaluated with player, selected Group and summon candidate (plus Fusion check flags for Fusion).",
+          "optional": true
+        },
+        {
+          "name": "mat_move",
+          "type": "function",
+          "description": "Material-movement callback (player, selected Group, effect); defaults to the matching FusionToGrave or RitualToGrave helper.",
+          "optional": true
+        },
+        {
+          "name": "target_action",
+          "type": "function|nil",
+          "description": "Additional target-stage action; not called for chk==0.",
+          "optional": true
+        },
+        {
+          "name": "operation_action",
+          "type": "function|nil",
+          "description": "Additional resolution callback (e,tp,eg,ep,ev,re,r,rp,materials,summon_card) after the executor returns; not proof of a positive summon count.",
+          "optional": true
+        },
+        {
+          "name": "limit_action",
+          "type": "function|nil",
+          "description": "Runs after resolution cleanup even when no candidate remains.",
+          "optional": true
+        },
+        {
+          "name": "sum_pos",
+          "type": "int",
+          "description": "Allowed summon positions; defaults to POS_FACEUP.",
+          "optional": true
+        },
+        {
+          "name": "including_self",
+          "type": "bool",
+          "description": "Require the handler among selected materials; default false.",
+          "optional": true
+        },
+        {
+          "name": "self_leave",
+          "type": "bool",
+          "description": "Exclude the handler from materials and account for its departure when checking zones; default false.",
+          "optional": true
+        }
+      ]
     },
     "CostSendDeckTopToGrave": {
       "summary_en": ["Returns a cost callback that checks whether the player can send count cards from the Deck as cost, then calls Duel.DiscardDeck with REASON_COST. Optional callbacks store information from the operated Group on the Effect."],
@@ -171,6 +357,454 @@
       "summary_en": ["Draws with REASON_EFFECT using the supplied player/count, or the current chain's target player/parameter when arguments are omitted. Pair RD.TargetDraw(tp, count) in targeting with RD.Draw() in resolution."],
       "params": [{"name":"player","type":"int","optional":true,"description":"Player; defaults to CHAININFO_TARGET_PLAYER."},{"name":"count","type":"int","optional":true,"description":"Count; defaults to CHAININFO_TARGET_PARAM."}],
       "returns": [{"type":"int","description":"Result returned by Duel.Draw."}]
+    },
+    "IsCanFusionSummon": {
+      "summary_en": [
+        "Checks whether a Fusion candidate and legal material selection exist, including the material-group and zone restriction. This predicate does not open the monster/material selection prompts.",
+        "Advanced helper used by CreateFusionEffect: pass explicit location masks and the remaining builder arguments. The factory normalizes optional inputs for ordinary card scripts; calling this lower-level function with omitted location arguments is not equivalent."
+      ],
+      "returns": [
+        {
+          "type": "bool",
+          "description": "Whether at least one supported summon route exists."
+        }
+      ]
+    },
+    "IsCanRitualSummon": {
+      "summary_en": [
+        "Checks whether a Ritual candidate and legal material selection exist, including the material-group and zone restriction. This predicate does not open the monster/material selection prompts.",
+        "Advanced helper used by CreateRitualEffect: pass explicit location masks and the remaining builder arguments. The factory normalizes optional inputs for ordinary card scripts; calling this lower-level function with omitted location arguments is not equivalent."
+      ],
+      "returns": [
+        {
+          "type": "bool",
+          "description": "Whether at least one supported summon route exists."
+        }
+      ]
+    },
+    "ExecuteFusionSummon": {
+      "summary_en": [
+        "Executes a prepared Fusion route list: chooses a summon candidate, optionally chooses among compatible material-source routes, selects materials, moves them, then calls Duel.SpecialSummon and CompleteProcedure.",
+        "Returns the chosen Card and selected material Group. The pinned implementation ignores the numeric return from Duel.SpecialSummon; receiving a Card is not proof that the summon succeeded. Treat material Groups as borrowed unless explicitly retained for later use.",
+        "With cancelable=true, canceling monster selection returns nil. Canceling material selection goes back to monster selection; it does not immediately leave this helper. Pass a validated route list produced by the matching Get*SummonData helper."
+      ],
+      "returns": [
+        {
+          "type": "Card|nil",
+          "description": "Chosen summon candidate, or nil on permitted monster-selection cancellation; not a success count."
+        },
+        {
+          "type": "Group|nil",
+          "description": "Selected materials when execution reaches the return statement."
+        }
+      ],
+      "params": [
+        {
+          "name": "e",
+          "type": "Effect",
+          "description": "Source effect."
+        },
+        {
+          "name": "tp",
+          "type": "int",
+          "description": "Selecting and summoning player."
+        },
+        {
+          "name": "pos",
+          "type": "int",
+          "description": "Summon position mask; normally POS_FACEUP."
+        },
+        {
+          "name": "list",
+          "type": "table",
+          "description": "Prepared material-route entries from the matching Get*SummonData helper."
+        },
+        {
+          "name": "chkf",
+          "type": "int",
+          "description": "Check flags from the route builder."
+        },
+        {
+          "name": "gc",
+          "type": "Card|nil",
+          "description": "Required material, if any."
+        },
+        {
+          "name": "mat_move",
+          "type": "function",
+          "description": "Movement callback (player, materials, effect) for the ordinary route; alternative routes use their own operation."
+        },
+        {
+          "name": "cancelable",
+          "type": "bool",
+          "description": "Allow cancellation at the monster-choice step; default false.",
+          "optional": true
+        }
+      ]
+    },
+    "ExecuteRitualSummon": {
+      "summary_en": [
+        "Executes a prepared Ritual route list: chooses a summon candidate, optionally chooses among compatible material-source routes, selects materials, moves them, then calls Duel.SpecialSummon and CompleteProcedure.",
+        "Returns the chosen Card and selected material Group. The pinned implementation ignores the numeric return from Duel.SpecialSummon; receiving a Card is not proof that the summon succeeded. Treat material Groups as borrowed unless explicitly retained for later use.",
+        "With cancelable=true, canceling monster selection returns nil. Canceling material selection goes back to monster selection; it does not immediately leave this helper. Pass a validated route list produced by the matching Get*SummonData helper."
+      ],
+      "returns": [
+        {
+          "type": "Card|nil",
+          "description": "Chosen summon candidate, or nil on permitted monster-selection cancellation; not a success count."
+        },
+        {
+          "type": "Group|nil",
+          "description": "Selected materials when execution reaches the return statement."
+        }
+      ],
+      "params": [
+        {
+          "name": "e",
+          "type": "Effect",
+          "description": "Source effect."
+        },
+        {
+          "name": "tp",
+          "type": "int",
+          "description": "Selecting and summoning player."
+        },
+        {
+          "name": "type",
+          "type": "int",
+          "description": "RITUAL_* material comparison mode matching the prepared route list."
+        },
+        {
+          "name": "list",
+          "type": "table",
+          "description": "Prepared material-route entries from the matching Get*SummonData helper."
+        },
+        {
+          "name": "chkf",
+          "type": "int",
+          "description": "Check flags from the route builder."
+        },
+        {
+          "name": "gc",
+          "type": "Card|nil",
+          "description": "Required material, if any."
+        },
+        {
+          "name": "mat_move",
+          "type": "function",
+          "description": "Movement callback (player, materials, effect) for the ordinary route; alternative routes use their own operation."
+        },
+        {
+          "name": "cancelable",
+          "type": "bool",
+          "description": "Allow cancellation at the monster-choice step; default false.",
+          "optional": true
+        }
+      ]
+    },
+    "RitualSummon": {
+      "summary_en": [
+        "Known limitation in the pinned RDRitual.lua: this direct action wrapper reads card.ritual_mat_filter, but card is neither a parameter nor a local variable. Without an unrelated global card value it errors before selecting or summoning.",
+        "No imported card script directly calls this wrapper. Use CreateRitualEffect and its generated operation for ordinary Ritual effects; do not create a global card variable to work around the missing reference. The vendored source is preserved for provenance."
+      ],
+      "returns": [
+        {
+          "type": "any",
+          "description": "No reliable completion contract in the stock environment because of the unresolved card reference."
+        }
+      ]
+    },
+    "CanRitualSummon": {
+      "summary_en": [
+        "Known limitation in the pinned RDRitual.lua: this direct action wrapper reads card.ritual_mat_filter, but card is neither a parameter nor a local variable. Without an unrelated global card value it errors before selecting or summoning.",
+        "No imported card script directly calls this wrapper. Use CreateRitualEffect and its generated operation for ordinary Ritual effects; do not create a global card variable to work around the missing reference. The vendored source is preserved for provenance."
+      ],
+      "returns": [
+        {
+          "type": "any",
+          "description": "No reliable completion contract in the stock environment because of the unresolved card reference."
+        }
+      ]
+    },
+    "IsCanBeSpecialSummoned": {
+      "summary_en": [
+        "Calls card:IsCanBeSpecialSummoned(effect,0,player,false,false,position). This is a legality predicate for an ordinary effect Special Summon to that player, with neither summoning conditions nor revive limits bypassed.",
+        "It does not check or reserve a free zone. If the destination player differs from the summoning player, use the native Card.IsCanBeSpecialSummoned arguments that match the later operation."
+      ],
+      "returns": [
+        {
+          "type": "bool",
+          "description": "Whether the native per-card summon check passes."
+        }
+      ],
+      "params": [
+        {
+          "name": "card",
+          "type": "Card",
+          "description": "Monster to check."
+        },
+        {
+          "name": "effect",
+          "type": "Effect",
+          "description": "Summoning effect."
+        },
+        {
+          "name": "player",
+          "type": "int",
+          "description": "Summoning player and default destination player."
+        },
+        {
+          "name": "position",
+          "type": "int",
+          "description": "Position mask to match the later summon."
+        }
+      ]
+    },
+    "SelectAndSpecialSummon": {
+      "summary_en": [
+        "Checks destination Monster Zone capacity, selects a nonempty Group and performs an ordinary Special Summon with summon type 0, nocheck=false and nolimit=false. The filter must supply per-card summon legality; zone capacity alone does not make every monster summonable.",
+        "Unlike the general SelectAndDoAction wrapper, this helper passes e,tp,pos,break_effect,target_player as extra filter arguments. The return value is the actual Duel.SpecialSummon count, or 0 when no selection/summon occurs. Face-down summon confirmation is handled by the Rush private wrapper."
+      ],
+      "returns": [
+        {
+          "type": "int",
+          "description": "Actual summon count, or 0 if capacity/candidates/selection do not permit the operation."
+        }
+      ],
+      "params": [
+        {
+          "name": "filter",
+          "type": "function",
+          "description": "Candidate predicate; receives card,e,tp,pos,break_effect,target_player. Include per-card summon legality."
+        },
+        {
+          "name": "tp",
+          "type": "int",
+          "description": "Selecting and summoning player."
+        },
+        {
+          "name": "s_range",
+          "type": "int",
+          "description": "Source locations on tp side."
+        },
+        {
+          "name": "o_range",
+          "type": "int",
+          "description": "Source locations on the opponent side."
+        },
+        {
+          "name": "min",
+          "type": "int",
+          "description": "Minimum selected count."
+        },
+        {
+          "name": "max",
+          "type": "int",
+          "description": "Maximum count, capped by the destination zone count."
+        },
+        {
+          "name": "expect",
+          "type": "Card|Group|nil",
+          "description": "Excluded Card(s), or nil."
+        },
+        {
+          "name": "e",
+          "type": "Effect",
+          "description": "Source effect passed to the filter."
+        },
+        {
+          "name": "pos",
+          "type": "int",
+          "description": "Required summon position mask."
+        },
+        {
+          "name": "break_effect",
+          "type": "bool",
+          "description": "Call Duel.BreakEffect immediately before summoning; default false.",
+          "optional": true
+        },
+        {
+          "name": "target_player",
+          "type": "int",
+          "description": "Destination player; defaults to tp. Does not change which player makes the choice.",
+          "optional": true
+        }
+      ]
+    },
+    "CanSelectAndSpecialSummon": {
+      "summary_en": [
+        "Optional action version of SelectAndSpecialSummon. If capacity and candidates exist, asks yes/no before selecting and summoning. Declining returns 0; canceling card selection returns to the yes/no question.",
+        "This performs work and belongs in resolution, not chk==0. It uses the same filter arguments, destination rules and actual numeric summon count as SelectAndSpecialSummon."
+      ],
+      "returns": [
+        {
+          "type": "int",
+          "description": "Actual summon count, or 0 when declined/unavailable."
+        }
+      ],
+      "params": [
+        {
+          "name": "desc",
+          "type": "int",
+          "description": "Yes/no prompt description identifier."
+        },
+        {
+          "name": "filter",
+          "type": "function",
+          "description": "Candidate predicate; receives card,e,tp,pos,break_effect,target_player. Include per-card summon legality."
+        },
+        {
+          "name": "tp",
+          "type": "int",
+          "description": "Selecting and summoning player."
+        },
+        {
+          "name": "s_range",
+          "type": "int",
+          "description": "Source locations on tp side."
+        },
+        {
+          "name": "o_range",
+          "type": "int",
+          "description": "Source locations on the opponent side."
+        },
+        {
+          "name": "min",
+          "type": "int",
+          "description": "Minimum selected count."
+        },
+        {
+          "name": "max",
+          "type": "int",
+          "description": "Maximum count, capped by the destination zone count."
+        },
+        {
+          "name": "expect",
+          "type": "Card|Group|nil",
+          "description": "Excluded Card(s), or nil."
+        },
+        {
+          "name": "e",
+          "type": "Effect",
+          "description": "Source effect passed to the filter."
+        },
+        {
+          "name": "pos",
+          "type": "int",
+          "description": "Required summon position mask."
+        },
+        {
+          "name": "break_effect",
+          "type": "bool",
+          "description": "Call Duel.BreakEffect immediately before summoning; default false.",
+          "optional": true
+        },
+        {
+          "name": "target_player",
+          "type": "int",
+          "description": "Destination player; defaults to tp. Does not change which player makes the choice.",
+          "optional": true
+        }
+      ]
+    },
+    "SendToHandAndExists": {
+      "summary_en": [
+        "Moves the supplied Card/Group/Effect handler toward its owner hand after applying the Rush EFFECT_CANNOT_TO_HAND_EFFECT protection filter and expanding Maximum components. After movement, confirms relevant cards from Deck/GY/banishment to the opponent.",
+        "The reason argument is forwarded to the Rush protection checks, but this pinned implementation calls Duel.SendtoHand with REASON_EFFECT unconditionally. It is not a generic cost-payment helper. player controls protection/confirmation context, not a forced hand destination: the native destination argument is nil.",
+        "Returns false if the eligible Group is empty or the core movement count is zero. Otherwise returns true when filter is nil, or checks at least count matching cards in Duel.GetOperatedGroup while excluding expect. This is a boolean, not a count, and the default does not prove every selected card reached the hand."
+      ],
+      "returns": [
+        {
+          "type": "bool",
+          "description": "Whether movement was nonzero and the optional operated-Group check passed."
+        }
+      ],
+      "params": [
+        {
+          "name": "target",
+          "type": "Card|Group|Effect",
+          "description": "Cards to move; Effect input means its handler."
+        },
+        {
+          "name": "effect",
+          "type": "Effect",
+          "description": "Source effect used by Rush protection checks; required."
+        },
+        {
+          "name": "player",
+          "type": "int",
+          "description": "Player used for protection and confirmation context."
+        },
+        {
+          "name": "reason",
+          "type": "int",
+          "description": "Reason passed to protection checks; actual movement is always REASON_EFFECT in this snapshot."
+        },
+        {
+          "name": "filter",
+          "type": "function|nil",
+          "description": "Optional predicate checked against the operated Group.",
+          "optional": true
+        },
+        {
+          "name": "count",
+          "type": "int",
+          "description": "Required match count when filter is supplied.",
+          "optional": true
+        },
+        {
+          "name": "expect",
+          "type": "Card|Group|nil",
+          "description": "Exclusion for the operated-Group check.",
+          "optional": true
+        }
+      ]
+    },
+    "AddHandToGraveSpecialSummonProcedure": {
+      "summary_en": [
+        "Registers a hand Special Summon procedure requiring count matching other cards from hand. The condition checks capacity and candidates; the target step uses cancelable exact-count selection and retains the Group; the operation sends that Group with REASON_SPSUMMON and deletes the retained Group.",
+        "The filter must include the intended payment legality. This registers a procedure and returns its Effect; it does not perform an effect Special Summon immediately."
+      ],
+      "returns": [
+        {
+          "type": "Effect",
+          "description": "Registered hand Special Summon procedure."
+        }
+      ],
+      "params": [
+        {
+          "name": "card",
+          "type": "Card",
+          "description": "Monster receiving the procedure."
+        },
+        {
+          "name": "desc",
+          "type": "int",
+          "description": "Summon option description identifier."
+        },
+        {
+          "name": "filter",
+          "type": "function",
+          "description": "Hand-card predicate; receives candidate, effect, player. The summoning card is excluded."
+        },
+        {
+          "name": "count",
+          "type": "int",
+          "description": "Exact number of other hand cards to send."
+        },
+        {
+          "name": "value",
+          "type": "int|function",
+          "description": "Optional summon-procedure value.",
+          "optional": true
+        },
+        {
+          "name": "position",
+          "type": "int",
+          "description": "Optional summon position; supplied through EFFECT_FLAG_SPSUM_PARAM.",
+          "optional": true
+        }
+      ]
     }
   },
   "constants": {

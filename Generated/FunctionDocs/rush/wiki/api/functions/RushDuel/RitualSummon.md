@@ -10,13 +10,8 @@ RushDuel.RitualSummon(any type, any matfilter, any spfilter, any exfilter, any s
 
 ## Description
 
-Rush Duel helper declared in `RDRitual.lua`. Its argument names are extracted from the pinned source; parameter and return types have not yet been reviewed.
-
-### Upstream source comment
-
-```text
-强制进行仪式召唤
-```
+Known limitation in the pinned RDRitual.lua: this direct action wrapper reads card.ritual_mat_filter, but card is neither a parameter nor a local variable. Without an unrelated global card value it errors before selecting or summoning.
+No imported card script directly calls this wrapper. Use CreateRitualEffect and its generated operation for ordinary Ritual effects; do not create a global card variable to work around the missing reference. The vendored source is preserved for provenance.
 
 ## Parameters
 
@@ -36,7 +31,7 @@ Rush Duel helper declared in `RDRitual.lua`. Its argument names are extracted fr
 
 ## Returns
 
-- `any`: Return contract has not been reviewed; inspect the source below.
+- `any`: No reliable completion contract in the stock environment because of the unresolved card reference.
 
 ## Source
 

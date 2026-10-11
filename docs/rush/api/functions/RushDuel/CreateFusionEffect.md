@@ -5,29 +5,30 @@ Alias: `RD.CreateFusionEffect`. Requires the matching Rush Duel Lua bootstrap.
 ## Signature
 
 ```lua
-RushDuel.CreateFusionEffect(any card, any matfilter, any spfilter, any exfilter, any s_range, any o_range, any mat_check, any mat_move, any target_action, any operation_action, any limit_action, any sum_pos, any including_self, any self_leave) -> Effect
+RushDuel.CreateFusionEffect(Card card, [function|nil matfilter], [function|nil spfilter], [function|nil exfilter], [int s_range], [int o_range], [function|nil mat_check], [function mat_move], [function|nil target_action], [function|nil operation_action], [function|nil limit_action], [int sum_pos], [bool including_self], [bool self_leave]) -> Effect
 ```
 
 ## Description
 
 Creates an Effect with Rush Fusion target and operation callbacks. It does not register an activation: set type, code, category, description and any costs on the returned Effect, then register it. Locations default to zero, material movement to RD.FusionToGrave, and summon position to POS_FACEUP.
+Legality checks do not choose the monster or materials. Resolution rebuilds both pools, chooses the monster and any alternative material route, then selects materials. The operation callback receives materials then the chosen monster; the internal executor does not forward the core summon count.
 
 ## Parameters
 
-- `card` `any`: Type and behavior are not yet reviewed; see the source.
-- `matfilter` `any`: Type and behavior are not yet reviewed; see the source.
-- `spfilter` `any`: Type and behavior are not yet reviewed; see the source.
-- `exfilter` `any`: Type and behavior are not yet reviewed; see the source.
-- `s_range` `any`: Type and behavior are not yet reviewed; see the source.
-- `o_range` `any`: Type and behavior are not yet reviewed; see the source.
-- `mat_check` `any`: Type and behavior are not yet reviewed; see the source.
-- `mat_move` `any`: Type and behavior are not yet reviewed; see the source.
-- `target_action` `any`: Type and behavior are not yet reviewed; see the source.
-- `operation_action` `any`: Type and behavior are not yet reviewed; see the source.
-- `limit_action` `any`: Type and behavior are not yet reviewed; see the source.
-- `sum_pos` `any`: Type and behavior are not yet reviewed; see the source.
-- `including_self` `any`: Type and behavior are not yet reviewed; see the source.
-- `self_leave` `any`: Type and behavior are not yet reviewed; see the source.
+- `card` `Card`: Card receiving the unregistered summoning Effect.
+- `matfilter` `function|nil` (optional): Filter for the ordinary material pool, called with a Card.
+- `spfilter` `function|nil` (optional): Summon-candidate filter receiving card, effect, player, material Group, optional route filter and check flags.
+- `exfilter` `function|nil` (optional): Filter for extra material locations; separate from matfilter.
+- `s_range` `int` (optional): Extra material locations on the player side; default 0. These add to the ordinary pool.
+- `o_range` `int` (optional): Extra material locations on the opponent side; default 0.
+- `mat_check` `function|nil` (optional): Whole-material-Group restriction evaluated with player, selected Group and summon candidate (plus Fusion check flags for Fusion).
+- `mat_move` `function` (optional): Material-movement callback (player, selected Group, effect); defaults to the matching FusionToGrave or RitualToGrave helper.
+- `target_action` `function|nil` (optional): Additional target-stage action; not called for chk==0.
+- `operation_action` `function|nil` (optional): Additional resolution callback (e,tp,eg,ep,ev,re,r,rp,materials,summon_card) after the executor returns; not proof of a positive summon count.
+- `limit_action` `function|nil` (optional): Runs after resolution cleanup even when no candidate remains.
+- `sum_pos` `int` (optional): Allowed summon positions; defaults to POS_FACEUP.
+- `including_self` `bool` (optional): Require the handler among selected materials; default false.
+- `self_leave` `bool` (optional): Exclude the handler from materials and account for its departure when checking zones; default false.
 
 ## Returns
 

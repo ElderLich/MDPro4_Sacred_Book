@@ -5,32 +5,28 @@ Alias: `RD.SendToHandAndExists`. Requires the matching Rush Duel Lua bootstrap.
 ## Signature
 
 ```lua
-RushDuel.SendToHandAndExists(any target, any effect, any player, any reason, any filter, any count, any expect) -> any
+RushDuel.SendToHandAndExists(Card|Group|Effect target, Effect effect, int player, int reason, [function|nil filter], [int count], [Card|Group|nil expect]) -> bool
 ```
 
 ## Description
 
-Rush Duel helper declared in `RDAction.lua`. Its argument names are extracted from the pinned source; parameter and return types have not yet been reviewed.
-
-### Upstream source comment
-
-```text
-操作: 加入/返回手卡, 并给对方确认加入自己手卡的卡
-```
+Moves the supplied Card/Group/Effect handler toward its owner hand after applying the Rush EFFECT_CANNOT_TO_HAND_EFFECT protection filter and expanding Maximum components. After movement, confirms relevant cards from Deck/GY/banishment to the opponent.
+The reason argument is forwarded to the Rush protection checks, but this pinned implementation calls Duel.SendtoHand with REASON_EFFECT unconditionally. It is not a generic cost-payment helper. player controls protection/confirmation context, not a forced hand destination: the native destination argument is nil.
+Returns false if the eligible Group is empty or the core movement count is zero. Otherwise returns true when filter is nil, or checks at least count matching cards in Duel.GetOperatedGroup while excluding expect. This is a boolean, not a count, and the default does not prove every selected card reached the hand.
 
 ## Parameters
 
-- `target` `any`: Type and behavior are not yet reviewed; see the source.
-- `effect` `any`: Type and behavior are not yet reviewed; see the source.
-- `player` `any`: Type and behavior are not yet reviewed; see the source.
-- `reason` `any`: Type and behavior are not yet reviewed; see the source.
-- `filter` `any`: Type and behavior are not yet reviewed; see the source.
-- `count` `any`: Type and behavior are not yet reviewed; see the source.
-- `expect` `any`: Type and behavior are not yet reviewed; see the source.
+- `target` `Card|Group|Effect`: Cards to move; Effect input means its handler.
+- `effect` `Effect`: Source effect used by Rush protection checks; required.
+- `player` `int`: Player used for protection and confirmation context.
+- `reason` `int`: Reason passed to protection checks; actual movement is always REASON_EFFECT in this snapshot.
+- `filter` `function|nil` (optional): Optional predicate checked against the operated Group.
+- `count` `int` (optional): Required match count when filter is supplied.
+- `expect` `Card|Group|nil` (optional): Exclusion for the operated-Group check.
 
 ## Returns
 
-- `any`: Return contract has not been reviewed; inspect the source below.
+- `bool`: Whether movement was nonzero and the optional operated-Group check passed.
 
 ## Source
 

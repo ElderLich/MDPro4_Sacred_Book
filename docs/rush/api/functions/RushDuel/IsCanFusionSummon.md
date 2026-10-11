@@ -5,18 +5,13 @@ Alias: `RD.IsCanFusionSummon`. Requires the matching Rush Duel Lua bootstrap.
 ## Signature
 
 ```lua
-RushDuel.IsCanFusionSummon(any e, any tp, any pos, any matfilter, any spfilter, any exfilter, any s_range, any o_range, any mat_check, any including_self, any self_leave, any except) -> any
+RushDuel.IsCanFusionSummon(any e, any tp, any pos, any matfilter, any spfilter, any exfilter, any s_range, any o_range, any mat_check, any including_self, any self_leave, any except) -> bool
 ```
 
 ## Description
 
-Rush Duel helper declared in `RDFusion.lua`. Its argument names are extracted from the pinned source; parameter and return types have not yet been reviewed.
-
-### Upstream source comment
-
-```text
-判断条件: 是否可以进行融合召唤
-```
+Checks whether a Fusion candidate and legal material selection exist, including the material-group and zone restriction. This predicate does not open the monster/material selection prompts.
+Advanced helper used by CreateFusionEffect: pass explicit location masks and the remaining builder arguments. The factory normalizes optional inputs for ordinary card scripts; calling this lower-level function with omitted location arguments is not equivalent.
 
 ## Parameters
 
@@ -35,7 +30,7 @@ Rush Duel helper declared in `RDFusion.lua`. Its argument names are extracted fr
 
 ## Returns
 
-- `any`: Return contract has not been reviewed; inspect the source below.
+- `bool`: Whether at least one supported summon route exists.
 
 ## Source
 

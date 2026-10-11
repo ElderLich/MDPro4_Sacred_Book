@@ -5,30 +5,31 @@ Alias: `RD.CreateRitualEffect`. Requires the matching Rush Duel Lua bootstrap.
 ## Signature
 
 ```lua
-RushDuel.CreateRitualEffect(any card, any type, any matfilter, any spfilter, any exfilter, any s_range, any o_range, any mat_check, any mat_move, any target_action, any operation_action, any limit_action, any including_self, any self_leave) -> Effect
+RushDuel.CreateRitualEffect(Card card, int type, [function|nil matfilter], [function|nil spfilter], [function|nil exfilter], [int s_range], [int o_range], [function|nil mat_check], [function mat_move], [function|nil target_action], [function|nil operation_action], [function|nil limit_action], [bool including_self], [bool self_leave]) -> Effect
 ```
 
 ## Description
 
 Creates an Effect with Rush Ritual target and operation callbacks. Configure the returned Effect's activation type, code, category and other requirements, then register it. The comparison mode is one of RITUAL_*; material locations default to zero and material movement defaults to RD.RitualToGrave.
 Original/current selects which value of the Ritual monster sets the requirement. Material Level sums use Card.GetRitualLevel and ATK sums use Card.GetAttack in this snapshot; ORIGINAL does not universally mean reading every material's printed stat.
+Use this factory for the pinned Ritual scripts. Resolution chooses an Extra Deck monster, then a material route and a legal material Group. Canceling material selection returns to monster selection. The operation callback receives the selected materials and Ritual monster, not a numeric summon result.
 
 ## Parameters
 
-- `card` `any`: Type and behavior are not yet reviewed; see the source.
-- `type` `any`: Type and behavior are not yet reviewed; see the source.
-- `matfilter` `any`: Type and behavior are not yet reviewed; see the source.
-- `spfilter` `any`: Type and behavior are not yet reviewed; see the source.
-- `exfilter` `any`: Type and behavior are not yet reviewed; see the source.
-- `s_range` `any`: Type and behavior are not yet reviewed; see the source.
-- `o_range` `any`: Type and behavior are not yet reviewed; see the source.
-- `mat_check` `any`: Type and behavior are not yet reviewed; see the source.
-- `mat_move` `any`: Type and behavior are not yet reviewed; see the source.
-- `target_action` `any`: Type and behavior are not yet reviewed; see the source.
-- `operation_action` `any`: Type and behavior are not yet reviewed; see the source.
-- `limit_action` `any`: Type and behavior are not yet reviewed; see the source.
-- `including_self` `any`: Type and behavior are not yet reviewed; see the source.
-- `self_leave` `any`: Type and behavior are not yet reviewed; see the source.
+- `card` `Card`: Card receiving the unregistered summoning Effect.
+- `type` `int`: RITUAL_* comparison mode; required.
+- `matfilter` `function|nil` (optional): Filter for the ordinary material pool, called with a Card.
+- `spfilter` `function|nil` (optional): Summon-candidate filter receiving card, effect, player, material Group, optional route filter and check flags.
+- `exfilter` `function|nil` (optional): Filter for extra material locations; separate from matfilter.
+- `s_range` `int` (optional): Extra material locations on the player side; default 0. These add to the ordinary pool.
+- `o_range` `int` (optional): Extra material locations on the opponent side; default 0.
+- `mat_check` `function|nil` (optional): Whole-material-Group restriction evaluated with player, selected Group and summon candidate (plus Fusion check flags for Fusion).
+- `mat_move` `function` (optional): Material-movement callback (player, selected Group, effect); defaults to the matching FusionToGrave or RitualToGrave helper.
+- `target_action` `function|nil` (optional): Additional target-stage action; not called for chk==0.
+- `operation_action` `function|nil` (optional): Additional resolution callback (e,tp,eg,ep,ev,re,r,rp,materials,summon_card) after the executor returns; not proof of a positive summon count.
+- `limit_action` `function|nil` (optional): Runs after resolution cleanup even when no candidate remains.
+- `including_self` `bool` (optional): Require the handler among selected materials; default false.
+- `self_leave` `bool` (optional): Exclude the handler from materials and account for its departure when checking zones; default false.
 
 ## Returns
 

@@ -5,33 +5,30 @@ Alias: `RD.ExecuteFusionSummon`. Requires the matching Rush Duel Lua bootstrap.
 ## Signature
 
 ```lua
-RushDuel.ExecuteFusionSummon(any e, any tp, any pos, any list, any chkf, any gc, any mat_move, any cancelable) -> any
+RushDuel.ExecuteFusionSummon(Effect e, int tp, int pos, table list, int chkf, Card|nil gc, function mat_move, [bool cancelable]) -> Card|nil,Group|nil
 ```
 
 ## Description
 
-Rush Duel helper declared in `RDFusion.lua`. Its argument names are extracted from the pinned source; parameter and return types have not yet been reviewed.
-
-### Upstream source comment
-
-```text
-融合召唤 - 进行融合召唤
-```
+Executes a prepared Fusion route list: chooses a summon candidate, optionally chooses among compatible material-source routes, selects materials, moves them, then calls Duel.SpecialSummon and CompleteProcedure.
+Returns the chosen Card and selected material Group. The pinned implementation ignores the numeric return from Duel.SpecialSummon; receiving a Card is not proof that the summon succeeded. Treat material Groups as borrowed unless explicitly retained for later use.
+With cancelable=true, canceling monster selection returns nil. Canceling material selection goes back to monster selection; it does not immediately leave this helper. Pass a validated route list produced by the matching Get*SummonData helper.
 
 ## Parameters
 
-- `e` `any`: Type and behavior are not yet reviewed; see the source.
-- `tp` `any`: Type and behavior are not yet reviewed; see the source.
-- `pos` `any`: Type and behavior are not yet reviewed; see the source.
-- `list` `any`: Type and behavior are not yet reviewed; see the source.
-- `chkf` `any`: Type and behavior are not yet reviewed; see the source.
-- `gc` `any`: Type and behavior are not yet reviewed; see the source.
-- `mat_move` `any`: Type and behavior are not yet reviewed; see the source.
-- `cancelable` `any`: Type and behavior are not yet reviewed; see the source.
+- `e` `Effect`: Source effect.
+- `tp` `int`: Selecting and summoning player.
+- `pos` `int`: Summon position mask; normally POS_FACEUP.
+- `list` `table`: Prepared material-route entries from the matching Get*SummonData helper.
+- `chkf` `int`: Check flags from the route builder.
+- `gc` `Card|nil`: Required material, if any.
+- `mat_move` `function`: Movement callback (player, materials, effect) for the ordinary route; alternative routes use their own operation.
+- `cancelable` `bool` (optional): Allow cancellation at the monster-choice step; default false.
 
 ## Returns
 
-- `any`: Return contract has not been reviewed; inspect the source below.
+- `Card|nil`: Chosen summon candidate, or nil on permitted monster-selection cancellation; not a success count.
+- `Group|nil`: Selected materials when execution reaches the return statement.
 
 ## Source
 

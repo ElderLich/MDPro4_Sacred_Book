@@ -5,29 +5,24 @@ Alias: `RD.IsCanBeSpecialSummoned`. Requires the matching Rush Duel Lua bootstra
 ## Signature
 
 ```lua
-RushDuel.IsCanBeSpecialSummoned(any card, any effect, any player, any position) -> any
+RushDuel.IsCanBeSpecialSummoned(Card card, Effect effect, int player, int position) -> bool
 ```
 
 ## Description
 
-Rush Duel helper declared in `RDCondition.lua`. Its argument names are extracted from the pinned source; parameter and return types have not yet been reviewed.
-
-### Upstream source comment
-
-```text
-条件: 可否特殊召唤
-```
+Calls card:IsCanBeSpecialSummoned(effect,0,player,false,false,position). This is a legality predicate for an ordinary effect Special Summon to that player, with neither summoning conditions nor revive limits bypassed.
+It does not check or reserve a free zone. If the destination player differs from the summoning player, use the native Card.IsCanBeSpecialSummoned arguments that match the later operation.
 
 ## Parameters
 
-- `card` `any`: Type and behavior are not yet reviewed; see the source.
-- `effect` `any`: Type and behavior are not yet reviewed; see the source.
-- `player` `any`: Type and behavior are not yet reviewed; see the source.
-- `position` `any`: Type and behavior are not yet reviewed; see the source.
+- `card` `Card`: Monster to check.
+- `effect` `Effect`: Summoning effect.
+- `player` `int`: Summoning player and default destination player.
+- `position` `int`: Position mask to match the later summon.
 
 ## Returns
 
-- `any`: Return contract has not been reviewed; inspect the source below.
+- `bool`: Whether the native per-card summon check passes.
 
 ## Source
 
