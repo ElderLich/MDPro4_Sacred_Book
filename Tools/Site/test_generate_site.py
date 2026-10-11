@@ -10,6 +10,14 @@ from Tools.Site.generate_site import extract_script_constants
 
 
 class ScriptExplorerIndexTests(unittest.TestCase):
+    def test_database_categories_are_not_lua_effect_categories(self) -> None:
+        # Pot of Greed's DB category is 0x100; Lua CATEGORY_DRAW is 0x10000.
+        self.assertEqual(site.category_labels_from_mask(0x100), ['Draw'])
+        # Mystic Dealer carries Draw and Type-Related database search flags.
+        self.assertEqual(site.category_labels_from_mask(1048832), ['Draw', 'Type-Related'])
+        self.assertEqual(site.category_labels_from_mask(-2147483648), ['Negate Effect'])
+        self.assertEqual(site.category_labels_from_mask(0x800000000), ['Hand Trap'])
+
     def test_extracts_named_constants_without_comment_only_matches(self) -> None:
         script = """
         e1:SetType(EFFECT_TYPE_FIELD+EFFECT_TYPE_CONTINUOUS)
