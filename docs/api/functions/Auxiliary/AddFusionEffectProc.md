@@ -28,6 +28,12 @@ It builds a params table from the common Fusion Summon arguments: Extra Deck fil
 
 - `Utilities/procedure.lua:1677`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Fusion Procedure Guide](/learn/fusion-procedure)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

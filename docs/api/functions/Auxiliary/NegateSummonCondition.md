@@ -18,6 +18,12 @@ Returns true when no Chain is ready, for effects that negate a Summon.
 
 - `Utilities/utility.lua:1836`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Common Script Errors And Debugging](/learn/common-script-errors-and-debugging)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

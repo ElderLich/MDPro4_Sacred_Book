@@ -28,6 +28,12 @@ The additional use_player and reason parameters are used by effects that restric
 
 - `D:\Programs\GitHub\ygopro-core\libduel.cpp:4937`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Field Zones And Sequences](/learn/field-zones-and-sequences)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

@@ -46,6 +46,13 @@ The return value is the actual recovery applied. If recovery is reversed into da
 
 - `D:\Programs\GitHub\ygopro-core\libduel.cpp:4902`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [LP Recovery and Effect Damage](/learn/lp-recovery-and-damage)
+- [Player-Targeted Effects](/learn/player-targeted-effects)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

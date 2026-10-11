@@ -22,6 +22,12 @@ Returns the card-type bitmask saved in the previous on-field state, before the c
 
 - `D:\Programs\GitHub\ygopro-core\libcard.cpp:3498`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Applying The Latest Engine And Script Changes](/learn/engine-updates)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

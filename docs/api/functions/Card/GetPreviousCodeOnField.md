@@ -33,6 +33,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
+| [Mitsurugi Mirror](/examples/cards/49721684) | `49721684` | [Scripts/c49721684.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c49721684.lua) | 3 |
 | Numeron Chaos Ritual | `41850466` | [Scripts/c41850466.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c41850466.lua) | 1 |
 | Black Rose Garden | `69053263` | [Scripts/c69053263.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c69053263.lua) | 1 |
 | D/D/D Zero Doom Queen Machinex | `20715411` | [Scripts/c20715411.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c20715411.lua) | 1 |
@@ -54,10 +55,21 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Toon Mermaid | `65458948` | [Scripts/c65458948.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c65458948.lua) | 1 |
 | Generation Shift | `34460239` | [Scripts/c34460239.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c34460239.lua) | 1 |
 | Toon Goblin Attack Force | `15270885` | [Scripts/c15270885.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c15270885.lua) | 1 |
-| Mitsurugi Mirror | `49721684` | [Scripts/c49721684.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c49721684.lua) | 3 |
 | Rebirth of Nephthys | `23459650` | [Scripts/c23459650.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c23459650.lua) | 1 |
 
 ## Script Examples
+
+### Mitsurugi Mirror (`49721684`)
+
+Source: [Scripts/c49721684.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c49721684.lua)
+
+```lua
+function s.cfilter(c,tp)
+	return c:IsPreviousLocation(LOCATION_ONFIELD) and c:IsPreviousControler(tp)
+		and (c:GetPreviousCodeOnField()==13332685 or c:GetPreviousCodeOnField()==19899073 or c:GetPreviousCodeOnField()==55397172)
+end
+function s.tdcon(e,tp,eg,ep,ev,re,r,rp)
+```
 
 ### Numeron Chaos Ritual (`41850466`)
 
@@ -81,16 +93,4 @@ Source: [Scripts/c69053263.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/
 		and (eg:IsContains(re:GetHandler()) and rc:GetPreviousCodeOnField()==73580471
 		or not eg:IsContains(re:GetHandler()) and rc:IsCode(73580471)) then
 		e:SetLabel(1)
-```
-
-### D/D/D Zero Doom Queen Machinex (`20715411`)
-
-Source: [Scripts/c20715411.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c20715411.lua)
-
-```lua
-end
-function s.cfilter(c,tp)
-	return c:IsPreviousSetCard(0x10af,0xae) and c:GetPreviousCodeOnField()~=id
-		and c:IsPreviousLocation(LOCATION_ONFIELD) and c:IsPreviousPosition(POS_FACEUP) and c:IsPreviousControler(tp)
-end
 ```

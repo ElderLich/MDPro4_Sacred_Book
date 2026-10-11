@@ -39,6 +39,14 @@ Do not perform irreversible actions during the `chk==0` check. The engine may ca
 
 - `D:\Programs\GitHub\ygopro-core\libeffect.cpp:627`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Cost, Target, And Operation Lifecycle](/learn/cost-target-operation-lifecycle)
+- [Counter Traps](/learn/counter-traps)
+- [Conditions, Costs, Activation Procedures, and Resolution](/learn/effect-callbacks)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

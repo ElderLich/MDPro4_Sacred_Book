@@ -22,6 +22,12 @@ Returns c's original owner player.
 
 - `D:\Programs\GitHub\ygopro-core\libcard.cpp:3507`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Control Change](/learn/control-change)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

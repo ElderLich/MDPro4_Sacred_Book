@@ -24,6 +24,13 @@ nil set-code arguments are ignored.
 
 - `D:\Programs\GitHub\ygopro-core\libcard.cpp:3446`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Archetypes and Set Codes](/learn/archetypes-and-setcodes)
+- [Fusion Procedure Guide](/learn/fusion-procedure)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

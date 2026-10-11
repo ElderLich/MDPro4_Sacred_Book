@@ -69,6 +69,12 @@ function RushDuel.AddMaximumProcedure(card, max_atk, left_code, right_code)
 end
 ```
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Rush Maximum, Fusion, And Ritual](/learn/rush-summon-procedures)
+
 ## Used By
 
 Generated from the local `Rush/Scripts/` folder and `rush_cards.cdb`.

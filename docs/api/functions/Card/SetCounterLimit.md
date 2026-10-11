@@ -20,6 +20,12 @@ Adds an EFFECT_COUNTER_LIMIT for countertype to c with value limit.
 
 - `D:\Programs\GitHub\ygopro-core\libcard.cpp:3687`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Counters](/learn/counters)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

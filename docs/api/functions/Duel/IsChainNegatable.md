@@ -41,6 +41,17 @@ In the current MDPro3 core binding this function returns true for any chain coun
 
 - `D:\Programs\GitHub\ygopro-core\libduel.cpp:5061`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Activated Effects](/learn/activated-effects)
+- [Activation Legality](/learn/activation-legality)
+- [Chain Timing And Activation Windows](/learn/chain-timing-and-activation-windows)
+- [Counter Traps](/learn/counter-traps)
+- [Negation And Immunity](/learn/negation-and-immunity)
+- [Trap Card Patterns](/learn/trap-card-patterns)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

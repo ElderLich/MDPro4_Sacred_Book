@@ -23,6 +23,12 @@ Checks whether c was Special Summoned by a card whose name includes setname.
 
 - `D:\Programs\GitHub\ygopro-core\libcard.cpp:3448`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Archetypes and Set Codes](/learn/archetypes-and-setcodes)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

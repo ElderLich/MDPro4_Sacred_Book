@@ -28,6 +28,12 @@ s marks locations on player's own field and o marks locations on the opponent's 
 
 - `D:\Programs\GitHub\ygopro-core\libduel.cpp:4877`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Counters](/learn/counters)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

@@ -24,6 +24,12 @@ The created procedure lives in the Extra Deck, checks materials through the core
 
 - `Utilities/procedure.lua:60`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Synchro Procedure Guide](/learn/synchro-procedure)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

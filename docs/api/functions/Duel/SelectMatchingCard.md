@@ -53,6 +53,16 @@ Use `Duel.SelectTarget` in a Target callback when later resolution must re-check
 
 - `D:\Programs\GitHub\ygopro-core\libduel.cpp:4973`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Beginner Script Ladder](/learn/beginner-script-ladder)
+- [Client UI And Prompt Behavior](/learn/client-ui-and-prompt-behavior)
+- [Common Script Errors And Debugging](/learn/common-script-errors-and-debugging)
+- [Filters, Card Objects, and Group Objects](/learn/filters-and-groups)
+- [Selection And Group Handling](/learn/selection-and-group-handling)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

@@ -29,6 +29,13 @@ Cards in ex are excluded. Extra arguments after ex are passed to filter f.
 
 - `D:\Programs\GitHub\ygopro-core\libduel.cpp:4911`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Draw, Hand, And Deck Effects](/learn/draw-hand-and-deck-effects)
+- [Functions That Move Cards Across Locations](/learn/moving-cards)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

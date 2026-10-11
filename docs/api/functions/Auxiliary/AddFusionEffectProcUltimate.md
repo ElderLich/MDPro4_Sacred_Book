@@ -25,6 +25,13 @@ The generated effect checks Fusion Monsters in the Extra Deck, gathers and filte
 
 - `Utilities/procedure.lua:1453`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Fusion Procedure Guide](/learn/fusion-procedure)
+- [Fusion Summon Choices](/learn/fusion-summon-choices)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

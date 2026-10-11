@@ -20,6 +20,16 @@ Do not call this for ordinary revive effects. Normal rule procedures registered 
 
 - `D:\Programs\GitHub\ygopro-core\libcard.cpp:3624`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Fusion Procedure Guide](/learn/fusion-procedure)
+- [Pendulum Procedure Guide](/learn/pendulum-procedure)
+- [Ritual Procedure Guide](/learn/ritual-procedure)
+- [Special Summon-Only Monster Guide](/learn/special-summon-only-monsters)
+- [Synchro Procedure Guide](/learn/synchro-procedure)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

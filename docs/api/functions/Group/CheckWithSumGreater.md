@@ -26,6 +26,12 @@ Cards previously set with Duel.SetSelectedCard are forced into the sum and the m
 
 - `D:\Programs\GitHub\ygopro-core\libgroup.cpp:922`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Ritual Procedure Guide](/learn/ritual-procedure)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

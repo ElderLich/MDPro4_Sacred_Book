@@ -25,6 +25,12 @@ location defaults to LOCATION_HAND + LOCATION_MZONE. Extra Fusion Material effec
 
 - `D:\Programs\GitHub\ygopro-core\libduel.cpp:5000`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Fusion Procedure Guide](/learn/fusion-procedure)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

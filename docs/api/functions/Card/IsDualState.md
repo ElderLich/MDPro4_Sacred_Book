@@ -22,6 +22,12 @@ Checks whether c is currently affected by EFFECT_DUAL_STATUS.
 
 - `D:\Programs\GitHub\ygopro-core\libcard.cpp:3565`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Gemini Monsters](/learn/gemini-monsters)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

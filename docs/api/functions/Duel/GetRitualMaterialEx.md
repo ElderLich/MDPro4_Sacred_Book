@@ -24,6 +24,12 @@ After collecting the group, still apply the script's own race, card text, and Ri
 
 - `D:\Programs\GitHub\ygopro-core\libduel.cpp:4998`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Ritual Procedure Guide](/learn/ritual-procedure)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

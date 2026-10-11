@@ -18,6 +18,12 @@ Returns the current turn player.
 
 - `D:\Programs\GitHub\ygopro-core\libduel.cpp:4849`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Reset Flags And Effect Duration](/learn/reset-flags-and-duration)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

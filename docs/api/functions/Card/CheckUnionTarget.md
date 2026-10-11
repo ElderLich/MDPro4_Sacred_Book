@@ -24,6 +24,12 @@ The core also enforces new/old Union count compatibility between c and target.
 
 - `D:\Programs\GitHub\ygopro-core\libcard.cpp:3577`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Union Monsters](/learn/union-monsters)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

@@ -35,6 +35,13 @@ The category is not the actual operation. If the affected cards, player, or coun
 
 - `D:\Programs\GitHub\ygopro-core\libeffect.cpp:623`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Categories, Properties, And Hint Timing](/learn/categories-properties-and-hints)
+- [Write Your First Custom Card](/learn/first-custom-card)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

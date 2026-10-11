@@ -30,6 +30,12 @@ The helper also adds code1 to c's code/material list and returns the created pro
 
 - `Utilities/procedure.lua:1909`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Ritual Procedure Guide](/learn/ritual-procedure)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

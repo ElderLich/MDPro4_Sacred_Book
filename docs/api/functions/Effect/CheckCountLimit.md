@@ -42,6 +42,12 @@ Ordinary activated effects usually let the engine manage the count limit. Reach 
 
 - `D:\Programs\GitHub\ygopro-core\libeffect.cpp:660`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Count Limits And Once Per Turn](/learn/count-limits)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

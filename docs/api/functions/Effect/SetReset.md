@@ -48,6 +48,15 @@ If the count is omitted or 0, MDPro3 stores 1. If a phase reset does not specify
 
 - `D:\Programs\GitHub\ygopro-core\libeffect.cpp:618`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Common Script Errors And Debugging](/learn/common-script-errors-and-debugging)
+- [Effects That Apply Continuously](/learn/continuous-effects)
+- [Normal And Continuous Traps](/learn/normal-and-continuous-traps)
+- [Reset Flags And Effect Duration](/learn/reset-flags-and-duration)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

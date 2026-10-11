@@ -24,6 +24,12 @@ Returns the number of available Tribute candidates for target, optionally restri
 
 - `D:\Programs\GitHub\ygopro-core\libduel.cpp:4981`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Tribute Summon Materials](/learn/tribute-summon-materials)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

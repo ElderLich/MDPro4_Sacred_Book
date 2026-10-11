@@ -23,6 +23,12 @@ Returns the card-string id for card code and string index id. The index starts a
 
 - `Utilities/utility.lua:79`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Card Data And Script Wiring](/learn/card-data-and-script-wiring)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

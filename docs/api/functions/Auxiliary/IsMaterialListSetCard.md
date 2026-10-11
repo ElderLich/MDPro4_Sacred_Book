@@ -23,6 +23,12 @@ Checks whether c lists setcode in its material_setcode metadata, including packe
 
 - `Utilities/utility.lua:515`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Archetypes and Set Codes](/learn/archetypes-and-setcodes)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

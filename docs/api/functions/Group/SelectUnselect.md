@@ -42,6 +42,12 @@ It is lower-level than `Group.Select` and is mostly useful inside helper procedu
 
 - `D:\Programs\GitHub\ygopro-core\libgroup.cpp:916`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Selection And Group Handling](/learn/selection-and-group-handling)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

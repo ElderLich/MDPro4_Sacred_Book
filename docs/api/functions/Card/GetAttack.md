@@ -22,6 +22,12 @@ Returns c's current ATK, with unknown or negative ATK reported as 0.
 
 - `D:\Programs\GitHub\ygopro-core\libcard.cpp:3491`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Min/Max Stat Card Selection](/learn/min-max-stat-selection)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

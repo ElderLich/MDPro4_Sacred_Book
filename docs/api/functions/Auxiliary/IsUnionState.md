@@ -23,6 +23,12 @@ The Lua expression returns a truthy Card on success, false when the status effec
 
 - `Utilities/utility.lua:307`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Union Monsters](/learn/union-monsters)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

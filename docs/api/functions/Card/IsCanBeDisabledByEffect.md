@@ -26,6 +26,12 @@ The optional third parameter indicates whether this is a monster effect.
 
 - `D:\Programs\GitHub\ygopro-core\libcard.cpp:3702`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Negation And Immunity](/learn/negation-and-immunity)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

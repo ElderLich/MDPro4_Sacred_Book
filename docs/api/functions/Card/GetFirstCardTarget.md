@@ -22,6 +22,13 @@ Returns c's first persistent card target, or nil.
 
 - `D:\Programs\GitHub\ygopro-core\libcard.cpp:3593`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Equip Spells and Equip Cards](/learn/equip-spells)
+- [Normal And Continuous Traps](/learn/normal-and-continuous-traps)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

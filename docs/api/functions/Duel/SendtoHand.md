@@ -46,6 +46,13 @@ When the card came from a hidden location and must be shown, reveal the result w
 
 - `D:\Programs\GitHub\ygopro-core\libduel.cpp:4861`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Functions That Move Cards Across Locations](/learn/moving-cards)
+- [Spirit Monsters](/learn/spirit-monsters)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

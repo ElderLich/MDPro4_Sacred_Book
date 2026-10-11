@@ -24,6 +24,12 @@ This is only the starting pool. After a Ritual Monster is chosen, filter the gro
 
 - `D:\Programs\GitHub\ygopro-core\libduel.cpp:4997`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Ritual Procedure Guide](/learn/ritual-procedure)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
@@ -34,9 +40,9 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
 | [Nekroz Kaleidoscope](/examples/cards/51124303) | `51124303` | [Scripts/c51124303.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c51124303.lua) | 2 |
+| [Sonic Tracker](/examples/cards/17888577) | `17888577` | [Scripts/c17888577.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c17888577.lua) | 2 |
 | Gishki Nekromirror | `36982581` | [Scripts/c36982581.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c36982581.lua) | 2 |
 | Secrets of Dark Magic | `59514116` | [Scripts/c59514116.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c59514116.lua) | 2 |
-| Sonic Tracker | `17888577` | [Scripts/c17888577.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c17888577.lua) | 2 |
 | Magikey Duo | `51510279` | [Scripts/c51510279.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c51510279.lua) | 1 |
 | Blessing of the Voiceless Voice | `39114494` | [Scripts/c39114494.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c39114494.lua) | 2 |
 | Heavy Interlock | `20071842` | [Scripts/c20071842.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c20071842.lua) | 2 |
@@ -73,6 +79,18 @@ Source: [Scripts/c51124303.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/
 			local mg2=Duel.GetMatchingGroup(c51124303.mfilter,tp,LOCATION_EXTRA,0,nil)
 ```
 
+### Sonic Tracker (`17888577`)
+
+Source: [Scripts/c17888577.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c17888577.lua)
+
+```lua
+function c17888577.target(e,tp,eg,ep,ev,re,r,rp,chk)
+	if chk==0 then
+		local mg=Duel.GetRitualMaterial(tp)
+		return Duel.IsExistingMatchingCard(aux.RitualUltimateFilter,tp,LOCATION_HAND,0,1,nil,c17888577.filter,e,tp,mg,nil,Card.GetLevel,"Greater")
+	end
+```
+
 ### Gishki Nekromirror (`36982581`)
 
 Source: [Scripts/c36982581.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c36982581.lua)
@@ -83,16 +101,4 @@ function c36982581.target(e,tp,eg,ep,ev,re,r,rp,chk)
 		local mg1=Duel.GetRitualMaterial(tp)
 		local mg2=Duel.GetReleaseGroup(1-tp,false,REASON_EFFECT):Filter(c36982581.cfilter,nil,e,1-tp)
 		return Duel.IsExistingMatchingCard(aux.RitualUltimateFilter,tp,LOCATION_HAND,0,1,nil,c36982581.rfilter1,e,tp,mg1,nil,Card.GetLevel,"Equal")
-```
-
-### Secrets of Dark Magic (`59514116`)
-
-Source: [Scripts/c59514116.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c59514116.lua)
-
-```lua
-	end
-	aux.FCheckAdditional=nil
-	local mg3=Duel.GetRitualMaterial(tp)
-	aux.RCheckAdditional=c59514116.rcheck
-	local res2=mg3:IsExists(Card.IsCode,1,nil,46986414,38033121)
 ```

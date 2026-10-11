@@ -37,6 +37,23 @@ If the amount should be recalculated at resolution, do not freeze it here; annou
 
 - `D:\Programs\GitHub\ygopro-core\libduel.cpp:5007`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Categories, Properties, And Hint Timing](/learn/categories-properties-and-hints)
+- [Client UI And Prompt Behavior](/learn/client-ui-and-prompt-behavior)
+- [Cost, Target, And Operation Lifecycle](/learn/cost-target-operation-lifecycle)
+- [Write Your First Custom Card](/learn/first-custom-card)
+- [First Scripts To Study](/learn/first-scripts)
+- [LP Recovery and Effect Damage](/learn/lp-recovery-and-damage)
+
+::: details More guided lessons (1)
+
+- [Player-Targeted Effects](/learn/player-targeted-effects)
+
+:::
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

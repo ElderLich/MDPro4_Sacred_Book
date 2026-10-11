@@ -22,6 +22,13 @@ Returns a Group containing the cards currently stored as c's material cards.
 
 - `D:\Programs\GitHub\ygopro-core\libcard.cpp:3570`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Link Procedure Guide](/learn/link-procedure)
+- [Tribute Summon Materials](/learn/tribute-summon-materials)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

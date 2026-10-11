@@ -28,6 +28,12 @@ The returned mask uses player-relative bits: own Monster Zone seq, own Spell & T
 
 - `D:\Programs\GitHub\ygopro-core\libduel.cpp:5028`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Field Zones And Sequences](/learn/field-zones-and-sequences)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

@@ -28,6 +28,13 @@ Extra arguments after ex are passed to f after the card argument.
 
 - `D:\Programs\GitHub\ygopro-core\libduel.cpp:4970`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Continuous Stat Modifiers](/learn/continuous-stat-modifiers)
+- [Special Summon-Only Monster Guide](/learn/special-summon-only-monsters)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

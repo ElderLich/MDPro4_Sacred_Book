@@ -46,6 +46,31 @@ MDPro3 normalizes some type combinations. Spell/Trap activation effects become f
 
 - `D:\Programs\GitHub\ygopro-core\libeffect.cpp:619`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Activated Effects](/learn/activated-effects)
+- [Activation Legality](/learn/activation-legality)
+- [Beginner Script Ladder](/learn/beginner-script-ladder)
+- [Chain Timing And Activation Windows](/learn/chain-timing-and-activation-windows)
+- [Effects That Apply Continuously](/learn/continuous-effects)
+- [Counter Traps](/learn/counter-traps)
+
+::: details More guided lessons (9)
+
+- [Creation, Building, and Registration of an Effect Object](/learn/effect-object)
+- [EFFECT_TYPE Constants and Templates](/learn/effect-types)
+- [Equip Spells and Equip Cards](/learn/equip-spells)
+- [Write Your First Custom Card](/learn/first-custom-card)
+- [First Scripts To Study](/learn/first-scripts)
+- [Normal And Continuous Traps](/learn/normal-and-continuous-traps)
+- [Quick-Play Spells](/learn/quick-play-spells)
+- [Spell Card Patterns](/learn/spell-card-patterns)
+- [Trap Card Patterns](/learn/trap-card-patterns)
+
+:::
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

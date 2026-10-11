@@ -24,6 +24,12 @@ use_player defaults to the current reason player and is used for zone-limit chec
 
 - `D:\Programs\GitHub\ygopro-core\libduel.cpp:4939`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Pendulum Procedure Guide](/learn/pendulum-procedure)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

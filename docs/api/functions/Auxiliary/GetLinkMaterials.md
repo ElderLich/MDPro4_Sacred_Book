@@ -25,6 +25,12 @@ Returns the available Link Materials for tp, including regular Monster Zone mate
 
 - `Utilities/procedure.lua:2163`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Link Procedure Guide](/learn/link-procedure)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

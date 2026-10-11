@@ -21,6 +21,13 @@ Use this helper to keep such cards on the field, as with Swords of Revealing Lig
 
 - `D:\Programs\GitHub\ygopro-core\libcard.cpp:3706`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Spell Card Patterns](/learn/spell-card-patterns)
+- [Trap Card Patterns](/learn/trap-card-patterns)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

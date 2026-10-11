@@ -21,6 +21,12 @@ Both players must be valid and count must be at least 1. If count is larger than
 
 - `D:\Programs\GitHub\ygopro-core\libduel.cpp:4893`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Draw, Hand, And Deck Effects](/learn/draw-hand-and-deck-effects)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

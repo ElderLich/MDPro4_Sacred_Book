@@ -24,6 +24,12 @@ If count is larger than the remaining Deck size, only the available cards are in
 
 - `D:\Programs\GitHub\ygopro-core\libduel.cpp:4967`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Draw, Hand, And Deck Effects](/learn/draw-hand-and-deck-effects)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

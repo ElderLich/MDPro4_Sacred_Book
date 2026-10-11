@@ -56,6 +56,15 @@ When several cards are equipped as one procedure with `is_step=true`, call `Duel
 
 - `D:\Programs\GitHub\ygopro-core\libduel.cpp:4904`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Methods for Affecting Cards](/learn/affecting-cards)
+- [Equip Spells and Equip Cards](/learn/equip-spells)
+- [Functions That Move Cards Across Locations](/learn/moving-cards)
+- [Union Monsters](/learn/union-monsters)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

@@ -22,6 +22,12 @@ Returns e's cost function, or nil when no cost function is set.
 
 - `D:\Programs\GitHub\ygopro-core\libeffect.cpp:643`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Field Spells](/learn/field-spells)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

@@ -42,6 +42,27 @@ For official card targets, prefer relation-aware helpers such as `Duel.GetFirstT
 
 - `D:\Programs\GitHub\ygopro-core\libduel.cpp:4947`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Categories, Properties, And Hint Timing](/learn/categories-properties-and-hints)
+- [Chain Timing And Activation Windows](/learn/chain-timing-and-activation-windows)
+- [Client UI And Prompt Behavior](/learn/client-ui-and-prompt-behavior)
+- [Common Script Errors And Debugging](/learn/common-script-errors-and-debugging)
+- [Cost, Target, And Operation Lifecycle](/learn/cost-target-operation-lifecycle)
+- [Write Your First Custom Card](/learn/first-custom-card)
+
+::: details More guided lessons (5)
+
+- [First Scripts To Study](/learn/first-scripts)
+- [LP Recovery and Effect Damage](/learn/lp-recovery-and-damage)
+- [Player-Targeted Effects](/learn/player-targeted-effects)
+- [Spell Card Patterns](/learn/spell-card-patterns)
+- [Targeting Flow](/learn/targeting-flow)
+
+:::
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

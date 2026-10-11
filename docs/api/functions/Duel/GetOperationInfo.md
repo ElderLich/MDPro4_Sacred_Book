@@ -48,6 +48,14 @@ The first return value is false when that category was not recorded. The remaini
 
 - `D:\Programs\GitHub\ygopro-core\libduel.cpp:5009`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Categories, Properties, And Hint Timing](/learn/categories-properties-and-hints)
+- [Client UI And Prompt Behavior](/learn/client-ui-and-prompt-behavior)
+- [LP Recovery and Effect Damage](/learn/lp-recovery-and-damage)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

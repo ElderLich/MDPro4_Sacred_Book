@@ -21,6 +21,12 @@ Registers a Fusion Summon procedure on c that requires cc materials satisfying t
 
 - `Utilities/procedure.lua:1283`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Fusion Procedure Guide](/learn/fusion-procedure)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

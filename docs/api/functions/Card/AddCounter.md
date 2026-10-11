@@ -26,6 +26,12 @@ The card must be affected by the resolving reason effect. The current reason pla
 
 - `D:\Programs\GitHub\ygopro-core\libcard.cpp:3683`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Counters](/learn/counters)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

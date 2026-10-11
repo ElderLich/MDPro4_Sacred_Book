@@ -35,6 +35,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | --- | ---: | --- | ---: |
 | [Am Duazenet](/examples/cards/45151304) | `45151304` | [Scripts/c45151304.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c45151304.lua) | 1 |
 | [Camelot, Realm of Noble Knights and Noble Arms](/examples/cards/15635751) | `15635751` | [Scripts/c15635751.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c15635751.lua) | 1 |
+| [Revendread Origin](/examples/cards/94666032) | `94666032` | [Scripts/c94666032.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c94666032.lua) | 1 |
 | Gravity Balance | `37930737` | [Scripts/c37930737.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c37930737.lua) | 1 |
 | Number 101: Silent Honor ARK - Soul Asylum | `2419596` | [Scripts/c2419596.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c2419596.lua) | 1 |
 | Edge Imp Scythe | `29280589` | [Scripts/c29280589.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c29280589.lua) | 1 |
@@ -56,7 +57,6 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Salamandra Fusion | `9102835` | [Scripts/c9102835.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c9102835.lua) | 1 |
 | Commander Souza, Swordmaster | `72867001` | [Scripts/c72867001.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c72867001.lua) | 1 |
 | Stealth Kragen Spawn | `94942656` | [Scripts/c94942656.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c94942656.lua) | 1 |
-| Odd-Eyes Lancer Dragon | `83347294` | [Scripts/c83347294.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c83347294.lua) | 1 |
 | ...and 246 more |  |  |  |
 
 ## Script Examples
@@ -85,14 +85,14 @@ Source: [Scripts/c15635751.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/
 		local tc=g:Select(tp,1,1,nil):GetFirst()
 ```
 
-### Gravity Balance (`37930737`)
+### Revendread Origin (`94666032`)
 
-Source: [Scripts/c37930737.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c37930737.lua)
+Source: [Scripts/c94666032.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c94666032.lua)
 
 ```lua
-function c37930737.reptg(e,tp,eg,ep,ev,re,r,rp,chk)
-	if chk==0 then return e:GetHandler():IsAbleToRemove() and eg:IsExists(c37930737.repfilter,1,nil,tp) end
+function c94666032.reptg(e,tp,eg,ep,ev,re,r,rp,chk)
+	if chk==0 then return e:GetHandler():IsAbleToRemove() and eg:IsExists(c94666032.repfilter,1,nil,tp) end
 	return Duel.SelectEffectYesNo(tp,e:GetHandler(),96)
 end
-function c37930737.repval(e,c)
+function c94666032.repval(e,c)
 ```

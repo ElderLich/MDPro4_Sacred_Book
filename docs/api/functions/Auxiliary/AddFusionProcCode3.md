@@ -23,6 +23,12 @@ Registers a Fusion Material procedure requiring monsters with code1, code2, and 
 
 - `Utilities/procedure.lua:1219`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Fusion Procedure Guide](/learn/fusion-procedure)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

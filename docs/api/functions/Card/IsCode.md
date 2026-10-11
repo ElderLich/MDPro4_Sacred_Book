@@ -37,6 +37,14 @@ This checks the card's current code and alternate code, so copied or changed-cod
 
 - `D:\Programs\GitHub\ygopro-core\libcard.cpp:3532`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Archetypes and Set Codes](/learn/archetypes-and-setcodes)
+- [Card Data And Script Wiring](/learn/card-data-and-script-wiring)
+- [Common Script Errors And Debugging](/learn/common-script-errors-and-debugging)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

@@ -45,6 +45,12 @@ function RushDuel.SelectAndSpecialSummon(filter, tp, s_range, o_range, min, max,
 end
 ```
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Rush Special Summons And Result Types](/learn/rush-special-summon-results)
+
 ## Used By
 
 Generated from the local `Rush/Scripts/` folder and `rush_cards.cdb`.

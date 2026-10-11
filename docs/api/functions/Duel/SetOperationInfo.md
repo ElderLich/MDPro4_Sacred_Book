@@ -52,6 +52,33 @@ This announces intent; the operation still has to recheck legality and perform t
 
 - `D:\Programs\GitHub\ygopro-core\libduel.cpp:5008`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Methods for Affecting Cards](/learn/affecting-cards)
+- [Beginner Script Ladder](/learn/beginner-script-ladder)
+- [Categories, Properties, And Hint Timing](/learn/categories-properties-and-hints)
+- [Chain Timing And Activation Windows](/learn/chain-timing-and-activation-windows)
+- [Client UI And Prompt Behavior](/learn/client-ui-and-prompt-behavior)
+- [Common Script Errors And Debugging](/learn/common-script-errors-and-debugging)
+
+::: details More guided lessons (11)
+
+- [Counter Traps](/learn/counter-traps)
+- [Counters](/learn/counters)
+- [Conditions, Costs, Activation Procedures, and Resolution](/learn/effect-callbacks)
+- [Write Your First Custom Card](/learn/first-custom-card)
+- [LP Recovery and Effect Damage](/learn/lp-recovery-and-damage)
+- [Min/Max Stat Card Selection](/learn/min-max-stat-selection)
+- [Functions That Move Cards Across Locations](/learn/moving-cards)
+- [Player-Targeted Effects](/learn/player-targeted-effects)
+- [Quick-Play Spells](/learn/quick-play-spells)
+- [Spell Card Patterns](/learn/spell-card-patterns)
+- [Targeting Flow](/learn/targeting-flow)
+
+:::
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

@@ -49,6 +49,13 @@ Check the return value when a later part of the effect depends on a card actuall
 
 - `D:\Programs\GitHub\ygopro-core\libduel.cpp:4862`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Fusion Procedure Guide](/learn/fusion-procedure)
+- [Functions That Move Cards Across Locations](/learn/moving-cards)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

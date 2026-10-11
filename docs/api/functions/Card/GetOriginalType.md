@@ -22,6 +22,12 @@ Returns c's original card-data type bitmask, not its current modified type.
 
 - `D:\Programs\GitHub\ygopro-core\libcard.cpp:3451`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Applying The Latest Engine And Script Changes](/learn/engine-updates)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

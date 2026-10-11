@@ -39,6 +39,27 @@ The local binding writes `s_range` and `o_range` and clears `EFFECT_FLAG_ABSOLUT
 
 - `D:\Programs\GitHub\ygopro-core\libeffect.cpp:615`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Battle Position Effects](/learn/battle-position-effects)
+- [Common Script Errors And Debugging](/learn/common-script-errors-and-debugging)
+- [Effects That Apply Continuously](/learn/continuous-effects)
+- [Continuous Stat Modifiers](/learn/continuous-stat-modifiers)
+- [Creation, Building, and Registration of an Effect Object](/learn/effect-object)
+- [EFFECT_TYPE Constants and Templates](/learn/effect-types)
+
+::: details More guided lessons (5)
+
+- [Field Spells](/learn/field-spells)
+- [First Scripts To Study](/learn/first-scripts)
+- [Normal And Continuous Traps](/learn/normal-and-continuous-traps)
+- [Special Summon-Only Monster Guide](/learn/special-summon-only-monsters)
+- [Tribute Summon Materials](/learn/tribute-summon-materials)
+
+:::
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

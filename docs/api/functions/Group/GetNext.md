@@ -34,6 +34,13 @@ When you only need the number of cards, use `#g` or `g:GetCount()` instead of it
 
 - `D:\Programs\GitHub\ygopro-core\libgroup.cpp:908`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Filters, Card Objects, and Group Objects](/learn/filters-and-groups)
+- [Selection And Group Handling](/learn/selection-and-group-handling)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

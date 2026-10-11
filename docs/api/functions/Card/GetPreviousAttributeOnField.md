@@ -31,6 +31,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
+| [Stars Align Above the Shrine](/examples/cards/15306543) | `15306543` | [Scripts/c15306543.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c15306543.lua) | 1 |
 | Abyss-steam | `63941169` | [Scripts/c63941169.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c63941169.lua) | 1 |
 | Chevreuil, Hunting Scout of the Deep Forest | `13023431` | [Scripts/c13023431.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c13023431.lua) | 1 |
 | Salamangreat Raging Phoenix | `57134592` | [Scripts/c57134592.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c57134592.lua) | 1 |
@@ -41,7 +42,6 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Aussa the Earth Channeler | `62803464` | [Scripts/c62803464.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c62803464.lua) | 1 |
 | Machina Citadel | `87074380` | [Scripts/c87074380.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c87074380.lua) | 1 |
 | Wynn the Wind Channeler | `86395581` | [Scripts/c86395581.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c86395581.lua) | 1 |
-| Stars Align Above the Shrine | `15306543` | [Scripts/c15306543.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c15306543.lua) | 1 |
 | Two-for-One Repair Job | `44459942` | [Scripts/c44459942.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c44459942.lua) | 1 |
 | Darkest Diabolos, Lord of the Lair | `50383626` | [Scripts/c50383626.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c50383626.lua) | 1 |
 | Magmacho Dragon | `50951254` | [Scripts/c50951254.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c50951254.lua) | 1 |
@@ -58,6 +58,18 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | ...and 2 more |  |  |  |
 
 ## Script Examples
+
+### Stars Align Above the Shrine (`15306543`)
+
+Source: [Scripts/c15306543.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c15306543.lua)
+
+```lua
+end
+function s.cfilter(c,tp)
+	return c:IsPreviousPosition(POS_FACEUP) and bit.band(c:GetPreviousAttributeOnField(),ATTRIBUTE_WIND)~=0 and c:IsPreviousControler(tp)
+		and c:IsPreviousLocation(LOCATION_MZONE) and c:IsControler(tp)
+end
+```
 
 ### Abyss-steam (`63941169`)
 
@@ -80,17 +92,5 @@ Source: [Scripts/c13023431.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/
 			and bc:GetPreviousTypeOnField()&TYPE_MONSTER==TYPE_MONSTER and c:GetPreviousRaceOnField()&RACE_WARRIOR==RACE_WARRIOR
 			and bc:GetPreviousAttributeOnField()&ATTRIBUTE_EARTH==ATTRIBUTE_EARTH
 	end
-end
-```
-
-### Salamangreat Raging Phoenix (`57134592`)
-
-Source: [Scripts/c57134592.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c57134592.lua)
-
-```lua
-function s.cfilter(c,tp)
-	return not c:IsType(TYPE_TOKEN) and c:IsPreviousPosition(POS_FACEUP) and c:IsPreviousControler(tp)
-		and c:IsPreviousLocation(LOCATION_MZONE) and c:GetPreviousAttributeOnField()&ATTRIBUTE_FIRE~=0
-		and c:IsReason(REASON_BATTLE+REASON_EFFECT) and c:IsAttackAbove(1)
 end
 ```

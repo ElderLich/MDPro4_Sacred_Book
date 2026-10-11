@@ -40,6 +40,23 @@ Other common flags include `EFFECT_FLAG_DELAY` for missed-timing-sensitive trigg
 
 - `D:\Programs\GitHub\ygopro-core\libeffect.cpp:620`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Activated Effects](/learn/activated-effects)
+- [Activation Legality](/learn/activation-legality)
+- [Categories, Properties, And Hint Timing](/learn/categories-properties-and-hints)
+- [Chain Timing And Activation Windows](/learn/chain-timing-and-activation-windows)
+- [Creation, Building, and Registration of an Effect Object](/learn/effect-object)
+- [Write Your First Custom Card](/learn/first-custom-card)
+
+::: details More guided lessons (1)
+
+- [Quick-Play Spells](/learn/quick-play-spells)
+
+:::
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

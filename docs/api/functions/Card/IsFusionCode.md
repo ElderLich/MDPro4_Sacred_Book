@@ -26,6 +26,12 @@ The core includes c's current code, second code, and EFFECT_ADD_FUSION_CODE valu
 
 - `D:\Programs\GitHub\ygopro-core\libcard.cpp:3441`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Fusion Procedure Guide](/learn/fusion-procedure)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

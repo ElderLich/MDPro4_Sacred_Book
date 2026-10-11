@@ -22,6 +22,12 @@ Returns e's stored integer labels. If no label was set, returns 0.
 
 - `D:\Programs\GitHub\ygopro-core\libeffect.cpp:635`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Activation Legality](/learn/activation-legality)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

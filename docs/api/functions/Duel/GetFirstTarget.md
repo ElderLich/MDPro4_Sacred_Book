@@ -42,6 +42,17 @@ For multiple targets, use `Duel.GetTargetsRelateToChain()` when you need the gro
 
 - `D:\Programs\GitHub\ygopro-core\libduel.cpp:4949`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Client UI And Prompt Behavior](/learn/client-ui-and-prompt-behavior)
+- [Common Script Errors And Debugging](/learn/common-script-errors-and-debugging)
+- [First Scripts To Study](/learn/first-scripts)
+- [Quick-Play Spells](/learn/quick-play-spells)
+- [Selection And Group Handling](/learn/selection-and-group-handling)
+- [Targeting Flow](/learn/targeting-flow)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

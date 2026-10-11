@@ -23,6 +23,12 @@ While c is in a Pendulum Zone, the core applies EFFECT_UPDATE_RSCALE and EFFECT_
 
 - `D:\Programs\GitHub\ygopro-core\libcard.cpp:3466`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Pendulum Procedure Guide](/learn/pendulum-procedure)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

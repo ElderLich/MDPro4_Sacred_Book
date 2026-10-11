@@ -23,6 +23,16 @@ Checks whether c's recorded Summon type includes every flag in sumtype.
 
 - `D:\Programs\GitHub\ygopro-core\libcard.cpp:3556`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Gemini Monsters](/learn/gemini-monsters)
+- [Pendulum Procedure Guide](/learn/pendulum-procedure)
+- [Ritual Procedure Guide](/learn/ritual-procedure)
+- [Special Summon-Only Monster Guide](/learn/special-summon-only-monsters)
+- [Tribute Summon Materials](/learn/tribute-summon-materials)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

@@ -26,6 +26,12 @@ Extra arguments after ex are passed to f after the Card argument.
 
 - `D:\Programs\GitHub\ygopro-core\libgroup.cpp:913`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Filters, Card Objects, and Group Objects](/learn/filters-and-groups)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

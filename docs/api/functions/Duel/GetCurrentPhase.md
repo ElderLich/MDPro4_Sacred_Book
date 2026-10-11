@@ -18,6 +18,15 @@ Returns the current phase constant.
 
 - `D:\Programs\GitHub\ygopro-core\libduel.cpp:4954`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Chain Timing And Activation Windows](/learn/chain-timing-and-activation-windows)
+- [Conditions, Costs, Activation Procedures, and Resolution](/learn/effect-callbacks)
+- [First Scripts To Study](/learn/first-scripts)
+- [Reset Flags And Effect Duration](/learn/reset-flags-and-duration)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

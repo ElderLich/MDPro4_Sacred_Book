@@ -25,6 +25,14 @@ When reason includes REASON_RULE, effects that prevent drawing are ignored.
 
 - `D:\Programs\GitHub\ygopro-core\libduel.cpp:4900`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Draw, Hand, And Deck Effects](/learn/draw-hand-and-deck-effects)
+- [Write Your First Custom Card](/learn/first-custom-card)
+- [First Scripts To Study](/learn/first-scripts)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

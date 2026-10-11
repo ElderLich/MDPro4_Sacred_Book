@@ -41,6 +41,17 @@ end
 
 - `D:\Programs\GitHub\ygopro-core\libduel.cpp:4969`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Methods for Affecting Cards](/learn/affecting-cards)
+- [Beginner Script Ladder](/learn/beginner-script-ladder)
+- [Filters, Card Objects, and Group Objects](/learn/filters-and-groups)
+- [First Scripts To Study](/learn/first-scripts)
+- [Min/Max Stat Card Selection](/learn/min-max-stat-selection)
+- [Special Summon-Only Monster Guide](/learn/special-summon-only-monsters)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

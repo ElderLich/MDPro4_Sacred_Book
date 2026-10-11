@@ -47,6 +47,13 @@ The local binding creates a field-only player-target flag effect. Like card flag
 
 - `D:\Programs\GitHub\ygopro-core\libduel.cpp:4853`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Flag Effects](/learn/flag-effects)
+- [Reset Flags And Effect Duration](/learn/reset-flags-and-duration)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

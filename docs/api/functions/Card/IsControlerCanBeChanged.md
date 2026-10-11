@@ -25,6 +25,12 @@ The card must be in the Monster Zone and must not be affected by EFFECT_CANNOT_C
 
 - `D:\Programs\GitHub\ygopro-core\libcard.cpp:3682`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Control Change](/learn/control-change)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

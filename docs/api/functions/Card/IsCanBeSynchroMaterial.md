@@ -24,6 +24,12 @@ Checks whether c can be used as Synchro Material for scard, with tuner supplied 
 
 - `D:\Programs\GitHub\ygopro-core\libcard.cpp:3695`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Synchro Procedure Guide](/learn/synchro-procedure)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

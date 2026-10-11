@@ -36,6 +36,15 @@ end
 
 - `D:\Programs\GitHub\ygopro-core\libgroup.cpp:909`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Common Script Errors And Debugging](/learn/common-script-errors-and-debugging)
+- [Conditions, Costs, Activation Procedures, and Resolution](/learn/effect-callbacks)
+- [Filters, Card Objects, and Group Objects](/learn/filters-and-groups)
+- [Selection And Group Handling](/learn/selection-and-group-handling)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

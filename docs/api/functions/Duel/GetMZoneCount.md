@@ -28,6 +28,17 @@ use_player, reason, and zone are used by effects that restrict where monsters ca
 
 - `D:\Programs\GitHub\ygopro-core\libduel.cpp:4936`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Activation Legality](/learn/activation-legality)
+- [Common Script Errors And Debugging](/learn/common-script-errors-and-debugging)
+- [Control Change](/learn/control-change)
+- [Field Zones And Sequences](/learn/field-zones-and-sequences)
+- [Special Summon-Only Monster Guide](/learn/special-summon-only-monsters)
+- [Tribute Summon Materials](/learn/tribute-summon-materials)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

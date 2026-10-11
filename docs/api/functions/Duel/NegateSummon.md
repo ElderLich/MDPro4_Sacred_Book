@@ -38,6 +38,14 @@ This is separate from Chain negation. It expects the Card or Group being Summone
 
 - `D:\Programs\GitHub\ygopro-core\libduel.cpp:4932`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Common Script Errors And Debugging](/learn/common-script-errors-and-debugging)
+- [Counter Traps](/learn/counter-traps)
+- [Trap Card Patterns](/learn/trap-card-patterns)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

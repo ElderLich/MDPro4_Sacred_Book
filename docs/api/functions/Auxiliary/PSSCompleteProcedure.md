@@ -26,6 +26,12 @@ The operation checks Card.IsSummonType(SUMMON_TYPE_PENDULUM) before calling Card
 
 - `Utilities/procedure.lua:2114`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Pendulum Procedure Guide](/learn/pendulum-procedure)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

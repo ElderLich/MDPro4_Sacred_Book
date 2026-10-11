@@ -21,6 +21,12 @@ When any listed event happens, it creates End Phase return-to-hand effects in th
 
 - `Utilities/utility.lua:167`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Spirit Monsters](/learn/spirit-monsters)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

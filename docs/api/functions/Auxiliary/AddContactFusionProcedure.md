@@ -27,6 +27,12 @@ Registers a Contact Fusion Special Summon procedure on c, using material filter 
 
 - `Utilities/procedure.lua:1687`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Fusion Procedure Guide](/learn/fusion-procedure)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

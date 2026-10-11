@@ -22,6 +22,12 @@ Returns c's printed left Pendulum Scale.
 
 - `D:\Programs\GitHub\ygopro-core\libcard.cpp:3465`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Pendulum Procedure Guide](/learn/pendulum-procedure)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

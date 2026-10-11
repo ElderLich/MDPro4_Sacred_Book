@@ -26,6 +26,12 @@ With countertype, count, and c, checks player-wide counter placement restriction
 
 - `D:\Programs\GitHub\ygopro-core\libduel.cpp:4876`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Counters](/learn/counters)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

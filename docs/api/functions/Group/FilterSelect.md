@@ -49,6 +49,13 @@ This is still an ordinary selection, not an official Chain target selection. Use
 
 - `D:\Programs\GitHub\ygopro-core\libgroup.cpp:914`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Filters, Card Objects, and Group Objects](/learn/filters-and-groups)
+- [Selection And Group Handling](/learn/selection-and-group-handling)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

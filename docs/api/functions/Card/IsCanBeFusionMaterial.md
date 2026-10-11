@@ -25,6 +25,12 @@ fc is optional and summon_type defaults to SUMMON_TYPE_FUSION. The binding has n
 
 - `D:\Programs\GitHub\ygopro-core\libcard.cpp:3694`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Fusion Procedure Guide](/learn/fusion-procedure)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

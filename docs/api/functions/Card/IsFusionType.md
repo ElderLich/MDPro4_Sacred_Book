@@ -24,6 +24,12 @@ For an original Monster Card in the Spell & Trap Zone, the core uses the card-da
 
 - `D:\Programs\GitHub\ygopro-core\libcard.cpp:3538`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Fusion Procedure Guide](/learn/fusion-procedure)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

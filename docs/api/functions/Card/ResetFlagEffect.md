@@ -35,6 +35,12 @@ This is a manual clear for flag effects, not a replacement for choosing the righ
 
 - `D:\Programs\GitHub\ygopro-core\libcard.cpp:3609`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Reset Flags And Effect Duration](/learn/reset-flags-and-duration)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

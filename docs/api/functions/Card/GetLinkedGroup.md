@@ -23,6 +23,12 @@ Use this when an effect cares about the actual cards in zones pointed to by c's 
 
 - `D:\Programs\GitHub\ygopro-core\libcard.cpp:3470`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Link Procedure Guide](/learn/link-procedure)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

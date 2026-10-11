@@ -22,6 +22,12 @@ Returns the active effect type, such as monster, Spell, or Trap. This can differ
 
 - `D:\Programs\GitHub\ygopro-core\libeffect.cpp:646`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Trap Card Patterns](/learn/trap-card-patterns)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

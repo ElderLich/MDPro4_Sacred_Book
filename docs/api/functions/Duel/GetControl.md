@@ -49,6 +49,14 @@ The return value is the number of cards that actually changed control, so use `>
 
 - `D:\Programs\GitHub\ygopro-core\libduel.cpp:4906`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Methods for Affecting Cards](/learn/affecting-cards)
+- [Control Change](/learn/control-change)
+- [Functions That Move Cards Across Locations](/learn/moving-cards)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

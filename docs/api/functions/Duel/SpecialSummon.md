@@ -54,6 +54,23 @@ Use `nocheck=true` only when the effect intentionally ignores the monster's usua
 
 - `D:\Programs\GitHub\ygopro-core\libduel.cpp:4873`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Methods for Affecting Cards](/learn/affecting-cards)
+- [Fusion Procedure Guide](/learn/fusion-procedure)
+- [Functions That Move Cards Across Locations](/learn/moving-cards)
+- [Pendulum Procedure Guide](/learn/pendulum-procedure)
+- [Ritual Procedure Guide](/learn/ritual-procedure)
+- [Special Summon-Only Monster Guide](/learn/special-summon-only-monsters)
+
+::: details More guided lessons (1)
+
+- [Spell Card Patterns](/learn/spell-card-patterns)
+
+:::
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

@@ -27,6 +27,14 @@ Checks whether a subset of g, including any must-select cards, can make the f-su
 
 - `D:\Programs\GitHub\ygopro-core\libgroup.cpp:920`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Link Procedure Guide](/learn/link-procedure)
+- [Ritual Procedure Guide](/learn/ritual-procedure)
+- [Synchro Procedure Guide](/learn/synchro-procedure)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

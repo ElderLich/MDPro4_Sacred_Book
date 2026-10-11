@@ -27,6 +27,12 @@ chkf is forwarded to the Fusion Material condition check, and not_material is us
 
 - `D:\Programs\GitHub\ygopro-core\libcard.cpp:3699`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Fusion Procedure Guide](/learn/fusion-procedure)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

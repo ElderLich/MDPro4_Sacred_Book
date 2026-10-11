@@ -23,6 +23,12 @@ Returns the minimum and maximum Tribute counts for Normal Summoning c.
 
 - `D:\Programs\GitHub\ygopro-core\libcard.cpp:3707`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Tribute Summon Materials](/learn/tribute-summon-materials)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

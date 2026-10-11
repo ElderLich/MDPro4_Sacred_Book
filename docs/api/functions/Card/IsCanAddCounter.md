@@ -27,6 +27,12 @@ When loc is 0, c must currently be face-up on the field. When loc is nonzero, th
 
 - `D:\Programs\GitHub\ygopro-core\libcard.cpp:3690`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Counters](/learn/counters)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

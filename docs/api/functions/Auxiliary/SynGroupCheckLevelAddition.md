@@ -22,6 +22,12 @@ Returns a group check for Synchro material selection that keeps the sum of the s
 
 - `Utilities/procedure.lua:463`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Synchro Procedure Guide](/learn/synchro-procedure)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

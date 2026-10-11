@@ -28,6 +28,13 @@ gc, when supplied, must be included. The returned Group also contains gc, matchi
 
 - `D:\Programs\GitHub\ygopro-core\libduel.cpp:4989`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Fusion Procedure Guide](/learn/fusion-procedure)
+- [Fusion Summon Choices](/learn/fusion-summon-choices)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

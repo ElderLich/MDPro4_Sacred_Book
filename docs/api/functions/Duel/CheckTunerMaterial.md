@@ -28,6 +28,12 @@ Checks whether tuner can be used with scard under the supplied tuner/non-tuner f
 
 - `D:\Programs\GitHub\ygopro-core\libduel.cpp:4996`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Synchro Procedure Guide](/learn/synchro-procedure)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

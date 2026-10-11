@@ -34,6 +34,12 @@ Returns no Lua values when no activation effect is currently usable, so local sc
 
 - `D:\Programs\GitHub\ygopro-core\libcard.cpp:3600`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Spell Card Patterns](/learn/spell-card-patterns)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

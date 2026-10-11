@@ -27,6 +27,12 @@ The core rejects this check during the Damage Step.
 
 - `D:\Programs\GitHub\ygopro-core\libcard.cpp:3632`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Xyz Procedure Guide](/learn/xyz-procedure)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

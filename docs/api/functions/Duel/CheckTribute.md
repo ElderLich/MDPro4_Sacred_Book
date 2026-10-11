@@ -28,6 +28,12 @@ max defaults to min, mg can restrict the candidate pool, toplayer defaults to c'
 
 - `D:\Programs\GitHub\ygopro-core\libduel.cpp:4982`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Tribute Summon Materials](/learn/tribute-summon-materials)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

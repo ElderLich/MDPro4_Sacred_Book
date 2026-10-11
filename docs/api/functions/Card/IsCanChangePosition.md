@@ -23,6 +23,12 @@ In this MDPro3/YGOPro core, that helper returns false for Link Monsters and true
 
 - `D:\Programs\GitHub\ygopro-core\libcard.cpp:3688`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Battle Position Effects](/learn/battle-position-effects)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

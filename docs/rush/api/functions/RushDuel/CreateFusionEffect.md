@@ -53,6 +53,12 @@ function RushDuel.CreateFusionEffect(card, matfilter, spfilter, exfilter, s_rang
 end
 ```
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Rush Fusion And Ritual: Let The Player Choose](/learn/rush-fusion-ritual-choices)
+
 ## Used By
 
 Generated from the local `Rush/Scripts/` folder and `rush_cards.cdb`.

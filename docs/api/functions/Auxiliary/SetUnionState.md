@@ -19,6 +19,12 @@ If c has an EFFECT_UNION_LIMIT effect, this registers the matching EFFECT_EQUIP_
 
 - `Utilities/utility.lua:312`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Union Monsters](/learn/union-monsters)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

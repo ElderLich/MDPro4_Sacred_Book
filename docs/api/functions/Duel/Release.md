@@ -47,6 +47,14 @@ The return value is the number of cards actually released.
 
 - `D:\Programs\GitHub\ygopro-core\libduel.cpp:4881`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Functions That Move Cards Across Locations](/learn/moving-cards)
+- [Special Summon-Only Monster Guide](/learn/special-summon-only-monsters)
+- [Tribute Summon Materials](/learn/tribute-summon-materials)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
@@ -75,11 +83,11 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | [Penetration Fusion](/examples/cards/8778267) | `8778267` | [Scripts/c8778267.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c8778267.lua) | 1 |
 | [DoSolfachord Coolia](/examples/cards/80776622) | `80776622` | [Scripts/c80776622.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c80776622.lua) | 1 |
 | [Rescue Hamster](/examples/cards/50485594) | `50485594` | [Scripts/c50485594.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c50485594.lua) | 1 |
+| [Mitsurugi Magatama](/examples/cards/76725398) | `76725398` | [Scripts/c76725398.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c76725398.lua) | 1 |
 | Flower Cardian Willow with Calligrapher | `89818984` | [Scripts/c89818984.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c89818984.lua) | 1 |
 | Cyber Pharos | `29719112` | [Scripts/c29719112.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c29719112.lua) | 1 |
 | Prank-Kids Rocket Ride | `18514525` | [Scripts/c18514525.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c18514525.lua) | 1 |
 | Vaylantz Genesis Grand Duke | `76075139` | [Scripts/c76075139.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c76075139.lua) | 1 |
-| Frightfur Meister | `77522571` | [Scripts/c77522571.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c77522571.lua) | 2 |
 | ...and 1051 more |  |  |  |
 
 ## Script Examples

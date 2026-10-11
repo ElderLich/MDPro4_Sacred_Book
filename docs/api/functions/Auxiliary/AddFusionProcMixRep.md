@@ -25,6 +25,12 @@ fun1 is the repeated material requirement used minc to maxc times; additional ar
 
 - `Utilities/procedure.lua:991`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Fusion Procedure Guide](/learn/fusion-procedure)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

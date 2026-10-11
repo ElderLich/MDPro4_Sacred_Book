@@ -35,6 +35,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | [Am Duazenet](/examples/cards/45151304) | `45151304` | [Scripts/c45151304.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c45151304.lua) | 1 |
 | [Vidolium the Unstable Power Patron of Unity](/examples/cards/70488851) | `70488851` | [Scripts/c70488851.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c70488851.lua) | 1 |
 | [Cerynemesia, Mystical Beast of the Forest](/examples/cards/43632709) | `43632709` | [Scripts/c43632709.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c43632709.lua) | 3 |
+| [Stars Align Above the Shrine](/examples/cards/15306543) | `15306543` | [Scripts/c15306543.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c15306543.lua) | 1 |
 | Duel Link Dragon, the Duel Dragon | `60025883` | [Scripts/c60025883.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c60025883.lua) | 1 |
 | Sacred Beasts Combined Assault | `50147815` | [Scripts/c50147815.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c50147815.lua) | 1 |
 | Sea Stealth Attack | `19089195` | [Scripts/c19089195.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c19089195.lua) | 1 |
@@ -54,7 +55,6 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Duality | `39973386` | [Scripts/c39973386.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c39973386.lua) | 3 |
 | Void Imagination | `31444249` | [Scripts/c31444249.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c31444249.lua) | 2 |
 | Speedroid Wing Synchron | `2254222` | [Scripts/c2254222.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c2254222.lua) | 1 |
-| Titaniklad the Ash Dragon | `41373230` | [Scripts/c41373230.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c41373230.lua) | 2 |
 | ...and 97 more |  |  |  |
 
 ## Script Examples

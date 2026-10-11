@@ -25,6 +25,12 @@ Resets the shared Pendulum Summon checklist at the start of the Draw Phase.
 
 - `Utilities/procedure.lua:1977`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Pendulum Procedure Guide](/learn/pendulum-procedure)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

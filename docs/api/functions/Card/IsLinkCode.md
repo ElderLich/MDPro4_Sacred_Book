@@ -26,6 +26,12 @@ This includes c's current code, second code, and EFFECT_ADD_LINK_CODE values. If
 
 - `D:\Programs\GitHub\ygopro-core\libcard.cpp:3442`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Link Procedure Guide](/learn/link-procedure)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

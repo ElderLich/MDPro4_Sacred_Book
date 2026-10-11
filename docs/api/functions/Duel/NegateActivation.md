@@ -42,6 +42,17 @@ Gate follow-up actions behind the boolean return. Use `Duel.NegateEffect` when t
 
 - `D:\Programs\GitHub\ygopro-core\libduel.cpp:4929`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Methods for Affecting Cards](/learn/affecting-cards)
+- [Chain Timing And Activation Windows](/learn/chain-timing-and-activation-windows)
+- [Common Script Errors And Debugging](/learn/common-script-errors-and-debugging)
+- [Counter Traps](/learn/counter-traps)
+- [Negation And Immunity](/learn/negation-and-immunity)
+- [Trap Card Patterns](/learn/trap-card-patterns)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

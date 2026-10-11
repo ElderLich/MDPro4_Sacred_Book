@@ -25,6 +25,12 @@ Use this in a Cost callback's chk==0 branch. The core returns false for nonposit
 
 - `D:\Programs\GitHub\ygopro-core\libduel.cpp:4908`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Cost, Target, And Operation Lifecycle](/learn/cost-target-operation-lifecycle)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

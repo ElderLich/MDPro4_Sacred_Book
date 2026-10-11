@@ -24,6 +24,12 @@ Registers a fixed four-name Fusion procedure requiring code1, code2, code3, and 
 
 - `Utilities/procedure.lua:1230`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Fusion Procedure Guide](/learn/fusion-procedure)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

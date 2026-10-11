@@ -18,6 +18,12 @@ Shuffles player's Deck and resets shuffle-check state.
 
 - `D:\Programs\GitHub\ygopro-core\libduel.cpp:4915`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Operation Results And Follow-Up Effects](/learn/operation-results-and-follow-up-effects)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

@@ -24,6 +24,12 @@ The returned Token is not placed on the field automatically; scripts normally pa
 
 - `D:\Programs\GitHub\ygopro-core\libduel.cpp:4872`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Tokens And Summon Choices](/learn/tokens-and-summon-choices)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

@@ -24,6 +24,15 @@ Counts distinct classes among cards in g according to f. Cards with the same ret
 
 - `D:\Programs\GitHub\ygopro-core\libgroup.cpp:927`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Filters, Card Objects, and Group Objects](/learn/filters-and-groups)
+- [Link Procedure Guide](/learn/link-procedure)
+- [Special Summon-Only Monster Guide](/learn/special-summon-only-monsters)
+- [Xyz Procedure Guide](/learn/xyz-procedure)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

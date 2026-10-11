@@ -22,6 +22,12 @@ Returns the Equip Cards currently equipped to c as a Group.
 
 - `D:\Programs\GitHub\ygopro-core\libcard.cpp:3572`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Equip Spells and Equip Cards](/learn/equip-spells)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

@@ -23,6 +23,12 @@ Returns a material filter that accepts cards that are Tuners for syncard and als
 
 - `Utilities/procedure.lua:42`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Synchro Procedure Guide](/learn/synchro-procedure)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

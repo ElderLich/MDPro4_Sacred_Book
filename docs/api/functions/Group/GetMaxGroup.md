@@ -46,6 +46,15 @@ The score function receives each candidate card first, then any extra arguments.
 
 - `D:\Programs\GitHub\ygopro-core\libgroup.cpp:925`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Beginner Script Ladder](/learn/beginner-script-ladder)
+- [First Scripts To Study](/learn/first-scripts)
+- [Min/Max Stat Card Selection](/learn/min-max-stat-selection)
+- [Selection And Group Handling](/learn/selection-and-group-handling)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

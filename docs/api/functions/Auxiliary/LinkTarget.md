@@ -26,6 +26,12 @@ The returned function selects a Link Material subgroup with Group.SelectSubGroup
 
 - `Utilities/procedure.lua:2232`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Link Procedure Guide](/learn/link-procedure)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

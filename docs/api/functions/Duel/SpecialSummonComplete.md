@@ -35,6 +35,15 @@ Without the complete call, the step Summons do not finish their event handling c
 
 - `D:\Programs\GitHub\ygopro-core\libduel.cpp:4875`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Functions That Move Cards Across Locations](/learn/moving-cards)
+- [Normal And Continuous Traps](/learn/normal-and-continuous-traps)
+- [Ritual Procedure Guide](/learn/ritual-procedure)
+- [Tokens And Summon Choices](/learn/tokens-and-summon-choices)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
@@ -57,6 +66,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | [Enlightenment Dragon](/examples/cards/46186135) | `46186135` | [Scripts/c46186135.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c46186135.lua) | 1 |
 | [Bujinki Ahashima](/examples/cards/71095768) | `71095768` | [Scripts/c71095768.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c71095768.lua) | 1 |
 | [Rescue Hamster](/examples/cards/50485594) | `50485594` | [Scripts/c50485594.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c50485594.lua) | 1 |
+| [Sonic Tracker](/examples/cards/17888577) | `17888577` | [Scripts/c17888577.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c17888577.lua) | 1 |
 | Prank-Kids Rocket Ride | `18514525` | [Scripts/c18514525.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c18514525.lua) | 1 |
 | Gravity Balance | `37930737` | [Scripts/c37930737.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c37930737.lua) | 1 |
 | Regenesis Birth | `27781371` | [Scripts/c27781371.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c27781371.lua) | 1 |
@@ -67,7 +77,6 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Trickstar Light Arena | `63492244` | [Scripts/c63492244.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c63492244.lua) | 1 |
 | Soul of the Supreme King | `92428405` | [Scripts/c92428405.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c92428405.lua) | 1 |
 | Black Dragon Ninja | `56562619` | [Scripts/c56562619.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c56562619.lua) | 1 |
-| Echelon of the Fire Kings | `38798785` | [Scripts/c38798785.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c38798785.lua) | 1 |
 | ...and 762 more |  |  |  |
 
 ## Script Examples

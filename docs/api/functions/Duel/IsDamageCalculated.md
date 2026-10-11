@@ -19,6 +19,13 @@ Use it with Duel.GetCurrentPhase in Damage Step conditions, especially for ATK/D
 
 - `D:\Programs\GitHub\ygopro-core\libduel.cpp:4956`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Activation Legality](/learn/activation-legality)
+- [Chain Timing And Activation Windows](/learn/chain-timing-and-activation-windows)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

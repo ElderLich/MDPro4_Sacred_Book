@@ -43,6 +43,24 @@ Passing nil to `SetOperation` clears the operation. That is occasionally useful 
 
 - `D:\Programs\GitHub\ygopro-core\libeffect.cpp:629`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Beginner Script Ladder](/learn/beginner-script-ladder)
+- [Effects That Apply Continuously](/learn/continuous-effects)
+- [Cost, Target, And Operation Lifecycle](/learn/cost-target-operation-lifecycle)
+- [Counter Traps](/learn/counter-traps)
+- [Conditions, Costs, Activation Procedures, and Resolution](/learn/effect-callbacks)
+- [Creation, Building, and Registration of an Effect Object](/learn/effect-object)
+
+::: details More guided lessons (2)
+
+- [Write Your First Custom Card](/learn/first-custom-card)
+- [Quick-Play Spells](/learn/quick-play-spells)
+
+:::
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

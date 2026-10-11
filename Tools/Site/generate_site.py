@@ -341,10 +341,29 @@ def api_page_path(name: str, format: str = "standard") -> Path:
     return root / "api" / "functions" / safe_filename(namespace) / f"{safe_filename(short)}.md"
 
 
+def tutorial_links_by_function(format: str = "standard") -> dict[str, list[tuple[str, str]]]:
+    """Connect explicitly linked APIs back to their authored learning pages."""
+    prefix = "/rush/api/functions/" if format == "rush" else "/api/functions/"
+    pattern = re.compile(r"\]\(" + re.escape(prefix) + r"([^/\s]+)/([^/#?)\s]+)(?:#[^)\s]*)?\)")
+    lessons: dict[str, list[tuple[str, str]]] = {}
+    for page in sorted((DOCS_DIR / "learn").glob("*.md")):
+        text = read_text(page)
+        heading = re.search(r"^# (.+)$", text, re.MULTILINE)
+        if not heading:
+            continue
+        # Examples can contain Markdown as data; only prose links are routes.
+        prose = re.sub(r"^(```|~~~).*?^\1[^\n]*$", "", text, flags=re.MULTILINE | re.DOTALL)
+        names = {f"{namespace}.{short.removesuffix('.md')}" for namespace, short in pattern.findall(prose)}
+        for name in names:
+            lessons.setdefault(name, []).append((heading.group(1).strip(), f"/learn/{page.stem}"))
+    return lessons
+
+
 def append_api_usage_sections(examples: list[dict[str, object]], featured_ids: set[int], format: str = "standard") -> None:
     generated = GENERATED_DIR / "rush" if format == "rush" else GENERATED_DIR
     api_payload = json.loads(read_text(generated / "api_functions.generated.json"))
     usage = usage_by_function(examples)
+    tutorials = tutorial_links_by_function(format)
 
     for doc in api_payload["functions"]:
         name = str(doc["name"])
@@ -353,13 +372,22 @@ def append_api_usage_sections(examples: list[dict[str, object]], featured_ids: s
             continue
 
         items = sort_usage_items(usage.get(name, []), featured_ids)
-        lines = [
-            "",
+        lines = [""]
+        if name in tutorials:
+            lines.extend(["## Guided Examples", "", "Learn how to use this function in context:", ""])
+            lessons = tutorials[name]
+            lines.extend(f"- [{title}]({url})" for title, url in lessons[:6])
+            if len(lessons) > 6:
+                lines.extend(["", f"::: details More guided lessons ({len(lessons) - 6})", ""])
+                lines.extend(f"- [{title}]({url})" for title, url in lessons[6:])
+                lines.extend(["", ":::"])
+            lines.append("")
+        lines.extend([
             "## Used By",
             "",
             "Generated from the local `Rush/Scripts/` folder and `rush_cards.cdb`." if format == "rush" else "Generated from the local `Scripts/` folder and `cards.cdb`.",
             "",
-        ]
+        ])
 
         if not items:
             lines.extend(
@@ -424,9 +452,9 @@ def append_api_usage_sections(examples: list[dict[str, object]], featured_ids: s
                     )
 
         page_text = read_text(page).rstrip()
-        marker = "\n## Used By\n"
-        if marker in page_text:
-            page_text = page_text.split(marker, 1)[0].rstrip()
+        for marker in ("\n## Guided Examples\n", "\n## Used By\n"):
+            if marker in page_text:
+                page_text = page_text.split(marker, 1)[0].rstrip()
         write_text(page, page_text + "\n" + "\n".join(lines).rstrip())
 
 
@@ -474,6 +502,15 @@ def sync_api_reference(format: str = "standard") -> None:
     shutil.copytree(source, target, dirs_exist_ok=True)
     if format == "standard":
         write_api_overview()
+
+
+def tutorial_card_ids(format: str = "standard") -> set[int]:
+    folder = "rush-cards" if format == "rush" else "cards"
+    pattern = re.compile(r"/examples/" + folder + r"/(\d+)")
+    return {int(card_id)
+            for section in (DOCS_DIR / "learn", DOCS_DIR / "guides")
+            for page in section.glob("*.md")
+            for card_id in pattern.findall(read_text(page))}
 
 
 def scan_examples(format: str = "standard") -> tuple[list[dict[str, object]], list[dict[str, object]]]:
@@ -534,6 +571,10 @@ def scan_examples(format: str = "standard") -> tuple[list[dict[str, object]], li
             int(item["id"]),
         ),
     )[:EXAMPLE_LIMIT]
+    # A lesson's full-card link must survive changes in featured-page ranking.
+    featured_ids = {int(item["id"]) for item in featured}
+    required_ids = tutorial_card_ids(format) - featured_ids
+    featured.extend(item for item in examples if int(item["id"]) in required_ids)
     return examples, featured
 
 

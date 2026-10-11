@@ -27,6 +27,13 @@ Supported built-in activity types are ACTIVITY_SUMMON, ACTIVITY_NORMALSUMMON, AC
 
 - `D:\Programs\GitHub\ygopro-core\libduel.cpp:5066`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Activation Legality](/learn/activation-legality)
+- [Cost, Target, And Operation Lifecycle](/learn/cost-target-operation-lifecycle)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

@@ -46,6 +46,16 @@ If you still need to filter while selecting, use `Group.FilterSelect` or `Duel.S
 
 - `D:\Programs\GitHub\ygopro-core\libgroup.cpp:915`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Filters, Card Objects, and Group Objects](/learn/filters-and-groups)
+- [First Scripts To Study](/learn/first-scripts)
+- [Fusion Summon Choices](/learn/fusion-summon-choices)
+- [Min/Max Stat Card Selection](/learn/min-max-stat-selection)
+- [Selection And Group Handling](/learn/selection-and-group-handling)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

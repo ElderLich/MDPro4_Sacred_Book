@@ -19,6 +19,12 @@ Changes the target player recorded for Chain Link count.
 
 - `D:\Programs\GitHub\ygopro-core\libduel.cpp:4925`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Player-Targeted Effects](/learn/player-targeted-effects)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

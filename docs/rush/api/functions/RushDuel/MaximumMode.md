@@ -31,6 +31,12 @@ function RushDuel.MaximumMode(e)
 end
 ```
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Rush Duel Scripting](/learn/rush-duel-scripting)
+
 ## Used By
 
 Generated from the local `Rush/Scripts/` folder and `rush_cards.cdb`.

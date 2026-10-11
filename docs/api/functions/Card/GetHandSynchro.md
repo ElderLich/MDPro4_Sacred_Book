@@ -26,6 +26,12 @@ Only Monster Zone cards are checked. EFFECT_HAND_SYNCHRO has priority, then EFFE
 
 - `D:\Programs\GitHub\ygopro-core\libcard.cpp:3602`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Synchro Procedure Guide](/learn/synchro-procedure)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

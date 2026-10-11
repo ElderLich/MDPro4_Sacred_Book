@@ -23,6 +23,12 @@ Returns true if at least one bit in type is present in c:GetCardType(). Use IsAl
 
 - `D:\Programs\GitHub\ygopro-core\libcard.cpp:3533`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Applying The Latest Engine And Script Changes](/learn/engine-updates)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

@@ -45,6 +45,24 @@ end
 
 - `D:\Programs\GitHub\ygopro-core\libduel.cpp:4985`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Common Script Errors And Debugging](/learn/common-script-errors-and-debugging)
+- [Filters, Card Objects, and Group Objects](/learn/filters-and-groups)
+- [Write Your First Custom Card](/learn/first-custom-card)
+- [First Scripts To Study](/learn/first-scripts)
+- [Normal And Continuous Traps](/learn/normal-and-continuous-traps)
+- [Quick-Play Spells](/learn/quick-play-spells)
+
+::: details More guided lessons (2)
+
+- [Selection And Group Handling](/learn/selection-and-group-handling)
+- [Targeting Flow](/learn/targeting-flow)
+
+:::
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

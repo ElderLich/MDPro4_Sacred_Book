@@ -26,6 +26,12 @@ reset_phase and reset_count are optional temporary-control reset settings.
 
 - `D:\Programs\GitHub\ygopro-core\libduel.cpp:4907`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Control Change](/learn/control-change)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

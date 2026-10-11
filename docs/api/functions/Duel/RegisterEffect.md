@@ -19,6 +19,16 @@ Registers e as a player/global effect for player.
 
 - `D:\Programs\GitHub\ygopro-core\libduel.cpp:4852`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Activation Legality](/learn/activation-legality)
+- [Cost, Target, And Operation Lifecycle](/learn/cost-target-operation-lifecycle)
+- [Creation, Building, and Registration of an Effect Object](/learn/effect-object)
+- [Normal And Continuous Traps](/learn/normal-and-continuous-traps)
+- [Reset Flags And Effect Duration](/learn/reset-flags-and-duration)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

@@ -22,6 +22,12 @@ Checks whether c is still related to the current battle, usually during the Dama
 
 - `D:\Programs\GitHub\ygopro-core\libcard.cpp:3620`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Battle Participants And Timing](/learn/battle-participants-and-timing)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

@@ -23,6 +23,12 @@ c must have an available Special Summon procedure. This is useful for cards that
 
 - `D:\Programs\GitHub\ygopro-core\libcard.cpp:3628`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Special Summon-Only Monster Guide](/learn/special-summon-only-monsters)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

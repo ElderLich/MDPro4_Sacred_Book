@@ -22,6 +22,24 @@ This controls prompting and display timing only; it does not replace activation 
 
 - `D:\Programs\GitHub\ygopro-core\libeffect.cpp:624`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Categories, Properties, And Hint Timing](/learn/categories-properties-and-hints)
+- [Chain Timing And Activation Windows](/learn/chain-timing-and-activation-windows)
+- [Client UI And Prompt Behavior](/learn/client-ui-and-prompt-behavior)
+- [First Scripts To Study](/learn/first-scripts)
+- [Normal And Continuous Traps](/learn/normal-and-continuous-traps)
+- [Quick-Play Spells](/learn/quick-play-spells)
+
+::: details More guided lessons (2)
+
+- [Spell Card Patterns](/learn/spell-card-patterns)
+- [Trap Card Patterns](/learn/trap-card-patterns)
+
+:::
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

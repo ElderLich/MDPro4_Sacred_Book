@@ -23,6 +23,13 @@ Checks whether c belongs to any of the supplied set codes.
 
 - `D:\Programs\GitHub\ygopro-core\libcard.cpp:3443`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Archetypes and Set Codes](/learn/archetypes-and-setcodes)
+- [Card Data And Script Wiring](/learn/card-data-and-script-wiring)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

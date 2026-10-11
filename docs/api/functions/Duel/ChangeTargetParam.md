@@ -19,6 +19,12 @@ Changes target parameter data for Chain Link count to param.
 
 - `D:\Programs\GitHub\ygopro-core\libduel.cpp:4926`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Player-Targeted Effects](/learn/player-targeted-effects)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

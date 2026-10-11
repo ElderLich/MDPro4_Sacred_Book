@@ -23,6 +23,12 @@ In a Pendulum Zone, this returns the left or right current scale according to c'
 
 - `D:\Programs\GitHub\ygopro-core\libcard.cpp:3468`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Pendulum Procedure Guide](/learn/pendulum-procedure)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

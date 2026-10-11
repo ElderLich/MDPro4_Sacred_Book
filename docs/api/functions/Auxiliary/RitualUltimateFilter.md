@@ -30,6 +30,12 @@ Checks whether c is a valid Ritual Monster that can be Ritual Summoned with the 
 
 - `Utilities/procedure.lua:1825`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Ritual Procedure Guide](/learn/ritual-procedure)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
@@ -39,10 +45,10 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
+| [Sonic Tracker](/examples/cards/17888577) | `17888577` | [Scripts/c17888577.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c17888577.lua) | 2 |
 | Gishki Nekromirror | `36982581` | [Scripts/c36982581.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c36982581.lua) | 2 |
 | Secrets of Dark Magic | `59514116` | [Scripts/c59514116.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c59514116.lua) | 2 |
 | Double Interlock | `38129297` | [Scripts/c38129297.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c38129297.lua) | 2 |
-| Sonic Tracker | `17888577` | [Scripts/c17888577.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c17888577.lua) | 2 |
 | Magikey Duo | `51510279` | [Scripts/c51510279.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c51510279.lua) | 1 |
 | Blessing of the Voiceless Voice | `39114494` | [Scripts/c39114494.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c39114494.lua) | 2 |
 | Heavy Interlock | `20071842` | [Scripts/c20071842.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c20071842.lua) | 2 |
@@ -67,6 +73,18 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 ## Script Examples
 
+### Sonic Tracker (`17888577`)
+
+Source: [Scripts/c17888577.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c17888577.lua)
+
+```lua
+	if chk==0 then
+		local mg=Duel.GetRitualMaterial(tp)
+		return Duel.IsExistingMatchingCard(aux.RitualUltimateFilter,tp,LOCATION_HAND,0,1,nil,c17888577.filter,e,tp,mg,nil,Card.GetLevel,"Greater")
+	end
+	Duel.SetOperationInfo(0,CATEGORY_SPECIAL_SUMMON,nil,1,tp,LOCATION_HAND)
+```
+
 ### Gishki Nekromirror (`36982581`)
 
 Source: [Scripts/c36982581.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c36982581.lua)
@@ -89,16 +107,4 @@ Source: [Scripts/c59514116.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/
 		and Duel.IsExistingMatchingCard(aux.RitualUltimateFilter,tp,LOCATION_HAND,0,1,nil,aux.TRUE,e,tp,mg3,nil,Card.GetLevel,"Greater")
 	aux.RCheckAdditional=nil
 	if chk==0 then return res1 or res2 end
-```
-
-### Double Interlock (`38129297`)
-
-Source: [Scripts/c38129297.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c38129297.lua)
-
-```lua
-	aux.RCheckAdditional=s.rcheck
-	local rg=Duel.GetMatchingGroup(s.filter2,tp,LOCATION_GRAVE,0,nil,tp)
-	local b2=Duel.IsExistingMatchingCard(aux.RitualUltimateFilter,tp,LOCATION_HAND,0,1,nil,aux.TRUE,e,tp,Group.CreateGroup(),rg,Card.GetLevel,"Greater")
-		and (not e:IsCostChecked() or Duel.GetFlagEffect(tp,id+o)==0)
-	aux.RCheckAdditional=nil
 ```

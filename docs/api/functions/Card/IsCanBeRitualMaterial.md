@@ -25,6 +25,12 @@ Pass nil for sc only when checking the generic material pool before a specific R
 
 - `D:\Programs\GitHub\ygopro-core\libcard.cpp:3696`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Ritual Procedure Guide](/learn/ritual-procedure)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
@@ -36,9 +42,9 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | --- | ---: | --- | ---: |
 | [Meteoroa Drytron](/examples/cards/24166324) | `24166324` | [Scripts/c24166324.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c24166324.lua) | 2 |
 | [Nekroz Kaleidoscope](/examples/cards/51124303) | `51124303` | [Scripts/c51124303.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c51124303.lua) | 1 |
+| [Sonic Tracker](/examples/cards/17888577) | `17888577` | [Scripts/c17888577.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c17888577.lua) | 1 |
 | Gishki Nekromirror | `36982581` | [Scripts/c36982581.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c36982581.lua) | 1 |
 | Secrets of Dark Magic | `59514116` | [Scripts/c59514116.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c59514116.lua) | 1 |
-| Sonic Tracker | `17888577` | [Scripts/c17888577.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c17888577.lua) | 1 |
 | Meteonis Drytron | `22398665` | [Scripts/c22398665.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c22398665.lua) | 2 |
 | Magikey Duo | `51510279` | [Scripts/c51510279.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c51510279.lua) | 1 |
 | Blessing of the Voiceless Voice | `39114494` | [Scripts/c39114494.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c39114494.lua) | 1 |
@@ -86,14 +92,14 @@ end
 function c51124303.rfilter(c,mc)
 ```
 
-### Gishki Nekromirror (`36982581`)
+### Sonic Tracker (`17888577`)
 
-Source: [Scripts/c36982581.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c36982581.lua)
+Source: [Scripts/c17888577.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c17888577.lua)
 
 ```lua
-	local tc=g:Select(tp,1,1,nil):GetFirst()
+	local tc=tg:GetFirst()
 	if tc then
-		local mg=mg1:Filter(Card.IsCanBeRitualMaterial,tc,tc)
+		mg=mg:Filter(Card.IsCanBeRitualMaterial,tc,tc)
 		if tc.mat_filter then
 			mg=mg:Filter(tc.mat_filter,tc,tp)
 ```

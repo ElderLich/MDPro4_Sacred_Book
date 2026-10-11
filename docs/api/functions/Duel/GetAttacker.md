@@ -18,6 +18,12 @@ Returns the monster that is currently attacking, or nil if there is no current a
 
 - `D:\Programs\GitHub\ygopro-core\libduel.cpp:4957`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Battle Participants And Timing](/learn/battle-participants-and-timing)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

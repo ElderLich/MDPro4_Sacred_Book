@@ -35,6 +35,13 @@ This only removes player flag effects for the requested player and code. Card ma
 
 - `D:\Programs\GitHub\ygopro-core\libduel.cpp:4855`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Flag Effects](/learn/flag-effects)
+- [Reset Flags And Effect Duration](/learn/reset-flags-and-duration)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

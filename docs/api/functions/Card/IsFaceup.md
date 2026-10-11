@@ -22,6 +22,12 @@ Checks whether c is in face-up position.
 
 - `D:\Programs\GitHub\ygopro-core\libcard.cpp:3655`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Common Script Errors And Debugging](/learn/common-script-errors-and-debugging)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

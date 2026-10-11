@@ -21,6 +21,12 @@ For Summon and attack counters, f is called with a Card and the counter increase
 
 - `D:\Programs\GitHub\ygopro-core\libduel.cpp:5068`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Count Limits And Once Per Turn](/learn/count-limits)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

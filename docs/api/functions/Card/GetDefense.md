@@ -22,6 +22,12 @@ Returns c's current DEF. Unknown or negative DEF values are clamped to 0 by this
 
 - `D:\Programs\GitHub\ygopro-core\libcard.cpp:3494`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Min/Max Stat Card Selection](/learn/min-max-stat-selection)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

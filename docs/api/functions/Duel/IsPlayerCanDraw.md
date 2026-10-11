@@ -23,6 +23,12 @@ Checks whether player can draw count cards.
 
 - `D:\Programs\GitHub\ygopro-core\libduel.cpp:5044`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Draw, Hand, And Deck Effects](/learn/draw-hand-and-deck-effects)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

@@ -48,6 +48,16 @@ Use `Duel.SetOperationInfo(0,CATEGORY_DESTROY,...)` in the Target callback when 
 
 - `D:\Programs\GitHub\ygopro-core\libduel.cpp:4858`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Methods for Affecting Cards](/learn/affecting-cards)
+- [Categories, Properties, And Hint Timing](/learn/categories-properties-and-hints)
+- [First Scripts To Study](/learn/first-scripts)
+- [Functions That Move Cards Across Locations](/learn/moving-cards)
+- [Quick-Play Spells](/learn/quick-play-spells)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
@@ -80,7 +90,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | [A Bao A Qu, the Lightless Shadow](/examples/cards/4731783) | `4731783` | [Scripts/c4731783.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c4731783.lua) | 1 |
 | [Camelot, Realm of Noble Knights and Noble Arms](/examples/cards/15635751) | `15635751` | [Scripts/c15635751.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c15635751.lua) | 1 |
 | [Earthbound Servant Geo Gremlin](/examples/cards/8690387) | `8690387` | [Scripts/c8690387.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c8690387.lua) | 1 |
-| Witchcrafter Celebration | `6958567` | [Scripts/c6958567.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c6958567.lua) | 1 |
+| [Mitsurugi Magatama](/examples/cards/76725398) | `76725398` | [Scripts/c76725398.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c76725398.lua) | 1 |
 | ...and 2720 more |  |  |  |
 
 ## Script Examples

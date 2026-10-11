@@ -23,6 +23,12 @@ Checks whether player can send count cards from the top of the Deck to the Grave
 
 - `D:\Programs\GitHub\ygopro-core\libduel.cpp:5046`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Draw, Hand, And Deck Effects](/learn/draw-hand-and-deck-effects)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

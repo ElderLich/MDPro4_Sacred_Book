@@ -27,6 +27,12 @@ When countertype is 0, the core clears every counter on c and returns no Lua val
 
 - `D:\Programs\GitHub\ygopro-core\libcard.cpp:3684`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Counters](/learn/counters)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

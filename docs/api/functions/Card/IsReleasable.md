@@ -24,6 +24,12 @@ reason defaults to REASON_COST. The core rejects cards being Summoned, Xyz Mater
 
 - `D:\Programs\GitHub\ygopro-core\libcard.cpp:3650`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Tribute Summon Materials](/learn/tribute-summon-materials)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

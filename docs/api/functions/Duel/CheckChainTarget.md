@@ -23,6 +23,12 @@ Checks whether c is a valid card related to chainc.
 
 - `D:\Programs\GitHub\ygopro-core\libduel.cpp:5064`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Targeting Flow](/learn/targeting-flow)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

@@ -29,6 +29,12 @@ It chooses the regular or extra Pendulum Summon option, computes hand, Extra Dec
 
 - `Utilities/procedure.lua:2033`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Pendulum Procedure Guide](/learn/pendulum-procedure)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

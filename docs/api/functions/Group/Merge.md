@@ -19,6 +19,12 @@ Adds every card from g2 into g1. g2 itself is not changed.
 
 - `D:\Programs\GitHub\ygopro-core\libgroup.cpp:929`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Tribute Summon Materials](/learn/tribute-summon-materials)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

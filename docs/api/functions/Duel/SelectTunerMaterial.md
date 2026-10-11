@@ -29,6 +29,12 @@ Lets player select Synchro Materials for scard using the fixed tuner, optional f
 
 - `D:\Programs\GitHub\ygopro-core\libduel.cpp:4995`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Synchro Procedure Guide](/learn/synchro-procedure)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

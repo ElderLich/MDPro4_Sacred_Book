@@ -47,6 +47,16 @@ Use `Duel.IsExistingTarget` instead when the card must become an official target
 
 - `D:\Programs\GitHub\ygopro-core\libduel.cpp:4972`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Methods for Affecting Cards](/learn/affecting-cards)
+- [Filters, Card Objects, and Group Objects](/learn/filters-and-groups)
+- [First Scripts To Study](/learn/first-scripts)
+- [Min/Max Stat Card Selection](/learn/min-max-stat-selection)
+- [Selection And Group Handling](/learn/selection-and-group-handling)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

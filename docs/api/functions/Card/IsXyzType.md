@@ -23,6 +23,12 @@ Checks whether c's type while used as Xyz Material contains type.
 
 - `D:\Programs\GitHub\ygopro-core\libcard.cpp:3540`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Xyz Procedure Guide](/learn/xyz-procedure)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

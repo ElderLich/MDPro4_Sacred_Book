@@ -22,6 +22,12 @@ Returns the card-type bitmask after EFFECT_ADD_CARD_TYPE, EFFECT_REMOVE_CARD_TYP
 
 - `D:\Programs\GitHub\ygopro-core\libcard.cpp:3449`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Applying The Latest Engine And Script Changes](/learn/engine-updates)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

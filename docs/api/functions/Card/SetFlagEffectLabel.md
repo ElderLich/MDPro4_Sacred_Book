@@ -24,6 +24,12 @@ Sets the first matching flag effect label for code on c to label and returns whe
 
 - `D:\Programs\GitHub\ygopro-core\libcard.cpp:3610`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Flag Effects](/learn/flag-effects)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

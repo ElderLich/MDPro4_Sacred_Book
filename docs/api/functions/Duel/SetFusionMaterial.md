@@ -20,6 +20,12 @@ This function records the selection only; it does not move the materials or retu
 
 - `D:\Programs\GitHub\ygopro-core\libduel.cpp:4990`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Fusion Procedure Guide](/learn/fusion-procedure)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

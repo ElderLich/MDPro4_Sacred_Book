@@ -26,6 +26,14 @@ Nil code arguments are skipped. For double-code cards, the core checks both rule
 
 - `D:\Programs\GitHub\ygopro-core\libcard.cpp:3531`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Archetypes and Set Codes](/learn/archetypes-and-setcodes)
+- [Card Data And Script Wiring](/learn/card-data-and-script-wiring)
+- [Common Script Errors And Debugging](/learn/common-script-errors-and-debugging)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

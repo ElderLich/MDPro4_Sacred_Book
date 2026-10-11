@@ -24,6 +24,14 @@ If e is nil, regular Normal Summon/Set rules are used. If ignore_count is true, 
 
 - `D:\Programs\GitHub\ygopro-core\libduel.cpp:4870`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Battle Position Effects](/learn/battle-position-effects)
+- [Functions That Move Cards Across Locations](/learn/moving-cards)
+- [Tribute Summon Materials](/learn/tribute-summon-materials)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

@@ -22,6 +22,14 @@ Creates and returns a new Effect object copied from e.
 
 - `D:\Programs\GitHub\ygopro-core\libeffect.cpp:609`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Continuous Stat Modifiers](/learn/continuous-stat-modifiers)
+- [Counter Traps](/learn/counter-traps)
+- [Creation, Building, and Registration of an Effect Object](/learn/effect-object)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

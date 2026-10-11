@@ -39,6 +39,25 @@ e1:SetTargetRange(LOCATION_MZONE,0)
 
 - `D:\Programs\GitHub\ygopro-core\libeffect.cpp:614`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Chain Timing And Activation Windows](/learn/chain-timing-and-activation-windows)
+- [Common Script Errors And Debugging](/learn/common-script-errors-and-debugging)
+- [Effects That Apply Continuously](/learn/continuous-effects)
+- [Counters](/learn/counters)
+- [Creation, Building, and Registration of an Effect Object](/learn/effect-object)
+- [EFFECT_TYPE Constants and Templates](/learn/effect-types)
+
+::: details More guided lessons (3)
+
+- [Field Spells](/learn/field-spells)
+- [First Scripts To Study](/learn/first-scripts)
+- [Normal And Continuous Traps](/learn/normal-and-continuous-traps)
+
+:::
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

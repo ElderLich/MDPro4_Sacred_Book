@@ -20,6 +20,12 @@ This stores a card-target relation used by functions such as Card.GetCardTarget 
 
 - `D:\Programs\GitHub\ygopro-core\libcard.cpp:3591`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Normal And Continuous Traps](/learn/normal-and-continuous-traps)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

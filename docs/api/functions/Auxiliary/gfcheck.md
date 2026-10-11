@@ -25,6 +25,12 @@ Checks a 2-card group against one filter in either order: one card must satisfy 
 
 - `Utilities/utility.lua:1153`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Archetypes and Set Codes](/learn/archetypes-and-setcodes)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

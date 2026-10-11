@@ -22,6 +22,12 @@ Each extra argument is a required material slot and may be a card code, filter f
 
 - `Utilities/procedure.lua:862`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Fusion Procedure Guide](/learn/fusion-procedure)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

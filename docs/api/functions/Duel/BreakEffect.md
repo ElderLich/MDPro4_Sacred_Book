@@ -35,6 +35,16 @@ Do not use it for simultaneous damage/recovery. Simultaneous LP batches use step
 
 - `D:\Programs\GitHub\ygopro-core\libduel.cpp:4927`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Field Spells](/learn/field-spells)
+- [Fusion Procedure Guide](/learn/fusion-procedure)
+- [LP Recovery and Effect Damage](/learn/lp-recovery-and-damage)
+- [Operation Results And Follow-Up Effects](/learn/operation-results-and-follow-up-effects)
+- [Ritual Procedure Guide](/learn/ritual-procedure)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

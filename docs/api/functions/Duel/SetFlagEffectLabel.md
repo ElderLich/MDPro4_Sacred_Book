@@ -24,6 +24,12 @@ Sets the first matching player flag effect's label to label and returns whether 
 
 - `D:\Programs\GitHub\ygopro-core\libduel.cpp:4856`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Flag Effects](/learn/flag-effects)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

@@ -23,6 +23,12 @@ Checks whether c can hold counters of countertype.
 
 - `D:\Programs\GitHub\ygopro-core\libcard.cpp:3692`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Counters](/learn/counters)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

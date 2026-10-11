@@ -19,6 +19,15 @@ Use this when a selected Group is stored on an Effect with SetLabelObject or oth
 
 - `D:\Programs\GitHub\ygopro-core\libgroup.cpp:901`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Common Script Errors And Debugging](/learn/common-script-errors-and-debugging)
+- [Creation, Building, and Registration of an Effect Object](/learn/effect-object)
+- [Selection And Group Handling](/learn/selection-and-group-handling)
+- [Special Summon-Only Monster Guide](/learn/special-summon-only-monsters)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

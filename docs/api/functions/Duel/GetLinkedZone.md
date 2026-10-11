@@ -23,6 +23,13 @@ Use bit operations to test individual zones. For one Link Monster's markers, use
 
 - `D:\Programs\GitHub\ygopro-core\libduel.cpp:4942`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Field Zones And Sequences](/learn/field-zones-and-sequences)
+- [Link Procedure Guide](/learn/link-procedure)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

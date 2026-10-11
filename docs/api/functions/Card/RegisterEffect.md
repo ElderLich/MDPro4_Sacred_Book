@@ -25,6 +25,16 @@ Registration also makes c the effect handler. If the card is unaffected by the c
 
 - `D:\Programs\GitHub\ygopro-core\libcard.cpp:3603`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Methods for Affecting Cards](/learn/affecting-cards)
+- [Continuous Stat Modifiers](/learn/continuous-stat-modifiers)
+- [Creation, Building, and Registration of an Effect Object](/learn/effect-object)
+- [Negation And Immunity](/learn/negation-and-immunity)
+- [Reset Flags And Effect Duration](/learn/reset-flags-and-duration)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

@@ -34,6 +34,13 @@ Optional arguments override the loaded card data, then pos, target_player, and s
 
 - `D:\Programs\GitHub\ygopro-core\libduel.cpp:5052`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Archetypes and Set Codes](/learn/archetypes-and-setcodes)
+- [Tokens And Summon Choices](/learn/tokens-and-summon-choices)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

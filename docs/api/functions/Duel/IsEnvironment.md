@@ -25,6 +25,12 @@ player defaults to PLAYER_ALL and loc defaults to LOCATION_ONFIELD. The core che
 
 - `D:\Programs\GitHub\ygopro-core\libduel.cpp:4898`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Field Spells](/learn/field-spells)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

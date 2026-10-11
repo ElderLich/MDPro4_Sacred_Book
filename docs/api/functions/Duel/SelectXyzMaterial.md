@@ -29,6 +29,12 @@ Use this only after a matching Duel.CheckXyzMaterial check has succeeded. It yie
 
 - `D:\Programs\GitHub\ygopro-core\libduel.cpp:5013`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Xyz Procedure Guide](/learn/xyz-procedure)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

@@ -30,6 +30,12 @@ f1 filters the Tuner material, f2 filters non-Tuner materials, min and max restr
 
 - `D:\Programs\GitHub\ygopro-core\libduel.cpp:4993`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Synchro Procedure Guide](/learn/synchro-procedure)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

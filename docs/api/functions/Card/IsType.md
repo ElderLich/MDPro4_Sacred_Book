@@ -23,6 +23,13 @@ Checks whether c has at least one of the type flags in type.
 
 - `D:\Programs\GitHub\ygopro-core\libcard.cpp:3536`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Applying The Latest Engine And Script Changes](/learn/engine-updates)
+- [Toon Monsters](/learn/toon-monsters)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

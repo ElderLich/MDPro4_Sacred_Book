@@ -37,6 +37,12 @@ For data about a specific Chain Link, use `Duel.GetChainInfo` instead of treatin
 
 - `D:\Programs\GitHub\ygopro-core\libduel.cpp:4945`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Field Spells](/learn/field-spells)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

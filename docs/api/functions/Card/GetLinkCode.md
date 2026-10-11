@@ -23,6 +23,12 @@ Returns c's Link Material codes: current code, second code when present, then EF
 
 - `D:\Programs\GitHub\ygopro-core\libcard.cpp:3440`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Link Procedure Guide](/learn/link-procedure)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

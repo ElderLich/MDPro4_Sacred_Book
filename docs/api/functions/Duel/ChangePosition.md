@@ -47,6 +47,16 @@ For mixed current positions, pass the destination for face-up Attack, face-down 
 
 - `D:\Programs\GitHub\ygopro-core\libduel.cpp:4880`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Methods for Affecting Cards](/learn/affecting-cards)
+- [Battle Position Effects](/learn/battle-position-effects)
+- [Write Your First Custom Card](/learn/first-custom-card)
+- [First Scripts To Study](/learn/first-scripts)
+- [Quick-Play Spells](/learn/quick-play-spells)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
@@ -62,6 +72,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | [Enneacraft - Archa.TAIL](/examples/cards/81237046) | `81237046` | [Scripts/c81237046.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c81237046.lua) | 1 |
 | [Enneacraft - Atil.SPIA](/examples/cards/71801447) | `71801447` | [Scripts/c71801447.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c71801447.lua) | 1 |
 | [Enneacraft - Aiza.LEON](/examples/cards/82359538) | `82359538` | [Scripts/c82359538.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c82359538.lua) | 1 |
+| [Recette de Viande (Meat Recipe)](/examples/cards/14166715) | `14166715` | [Scripts/c14166715.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c14166715.lua) | 1 |
 | Regenesis Birth | `27781371` | [Scripts/c27781371.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c27781371.lua) | 1 |
 | Chaos Magical Hats | `2372506` | [Scripts/c2372506.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c2372506.lua) | 1 |
 | Magical Hats | `81210420` | [Scripts/c81210420.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c81210420.lua) | 1 |
@@ -79,7 +90,6 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Arbitration of White | `57964143` | [Scripts/c57964143.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c57964143.lua) | 1 |
 | First Penguin | `12975671` | [Scripts/c12975671.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c12975671.lua) | 1 |
 | VARefar, the Judge of Ball | `19743887` | [Scripts/c19743887.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c19743887.lua) | 1 |
-| Poissonniere de Nouvelles | `46485778` | [Scripts/c46485778.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c46485778.lua) | 1 |
 | ...and 493 more |  |  |  |
 
 ## Script Examples

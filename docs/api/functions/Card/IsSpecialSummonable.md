@@ -24,6 +24,12 @@ This is a broad core check. For effect resolution and activation filters, prefer
 
 - `D:\Programs\GitHub\ygopro-core\libcard.cpp:3630`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Special Summon-Only Monster Guide](/learn/special-summon-only-monsters)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

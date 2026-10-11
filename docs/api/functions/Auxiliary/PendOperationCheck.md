@@ -25,6 +25,12 @@ The returned function counts selected Extra Deck cards separately from non-Extra
 
 - `Utilities/procedure.lua:2026`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Pendulum Procedure Guide](/learn/pendulum-procedure)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

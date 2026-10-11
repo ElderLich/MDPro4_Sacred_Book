@@ -24,6 +24,12 @@ The local core counts equipped cards with TYPE_UNION plus EFFECT_UNION_STATUS or
 
 - `D:\Programs\GitHub\ygopro-core\libcard.cpp:3578`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Union Monsters](/learn/union-monsters)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

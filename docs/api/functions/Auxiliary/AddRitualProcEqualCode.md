@@ -30,6 +30,12 @@ The selected materials' Ritual Levels must exactly equal the Ritual Monster's or
 
 - `Utilities/procedure.lua:1917`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Ritual Procedure Guide](/learn/ritual-procedure)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

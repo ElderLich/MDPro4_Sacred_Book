@@ -41,6 +41,14 @@ For activated effects, costs and targets still get their own legality checks. Th
 
 - `D:\Programs\GitHub\ygopro-core\libeffect.cpp:625`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Counter Traps](/learn/counter-traps)
+- [Conditions, Costs, Activation Procedures, and Resolution](/learn/effect-callbacks)
+- [First Scripts To Study](/learn/first-scripts)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

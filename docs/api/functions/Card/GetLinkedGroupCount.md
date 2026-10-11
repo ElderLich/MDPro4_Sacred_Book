@@ -22,6 +22,12 @@ Returns the number of cards in zones linked by c.
 
 - `D:\Programs\GitHub\ygopro-core\libcard.cpp:3471`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Link Procedure Guide](/learn/link-procedure)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

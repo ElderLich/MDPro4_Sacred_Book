@@ -20,6 +20,13 @@ Local core handling clears the completed-procedure status when the card moves to
 
 - `D:\Programs\GitHub\ygopro-core\libcard.cpp:3623`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Pendulum Procedure Guide](/learn/pendulum-procedure)
+- [Special Summon-Only Monster Guide](/learn/special-summon-only-monsters)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

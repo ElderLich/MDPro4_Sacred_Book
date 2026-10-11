@@ -23,6 +23,14 @@ Returns true if c's text-registered type mask contains type.
 
 - `Utilities/utility.lua:584`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Gemini Monsters](/learn/gemini-monsters)
+- [Spirit Monsters](/learn/spirit-monsters)
+- [Union Monsters](/learn/union-monsters)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

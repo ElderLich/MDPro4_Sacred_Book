@@ -24,6 +24,12 @@ The Lua helper returns true for a listed code and nil otherwise, so it is normal
 
 - `Utilities/utility.lua:547`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Archetypes and Set Codes](/learn/archetypes-and-setcodes)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

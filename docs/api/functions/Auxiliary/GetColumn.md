@@ -24,6 +24,12 @@ The local helper maps ordinary Monster Zones and Spell & Trap Zones to columns 0
 
 - `Utilities/utility.lua:705`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Field Zones And Sequences](/learn/field-zones-and-sequences)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

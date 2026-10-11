@@ -23,6 +23,12 @@ Checks whether c's current controller is controler.
 
 - `D:\Programs\GitHub\ygopro-core\libcard.cpp:3662`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Control Change](/learn/control-change)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

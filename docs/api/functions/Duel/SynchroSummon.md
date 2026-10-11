@@ -25,6 +25,12 @@ minc and maxc can restrict the number of non-Tuner materials used by the procedu
 
 - `D:\Programs\GitHub\ygopro-core\libduel.cpp:4867`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Synchro Procedure Guide](/learn/synchro-procedure)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

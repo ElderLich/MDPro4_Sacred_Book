@@ -38,6 +38,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | --- | ---: | --- | ---: |
 | [Goyo Emperor](/examples/cards/59255742) | `59255742` | [Scripts/c59255742.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c59255742.lua) | 1 |
 | [Meteoroa Drytron](/examples/cards/24166324) | `24166324` | [Scripts/c24166324.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c24166324.lua) | 1 |
+| [Mitsurugi Magatama](/examples/cards/76725398) | `76725398` | [Scripts/c76725398.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c76725398.lua) | 1 |
 | Frightfur Meister | `77522571` | [Scripts/c77522571.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c77522571.lua) | 2 |
 | Mixeroid | `71340250` | [Scripts/c71340250.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c71340250.lua) | 1 |
 | Mecha Phantom Beast Auroradon | `44097050` | [Scripts/c44097050.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c44097050.lua) | 2 |
@@ -59,7 +60,6 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Token Support | `53545926` | [Scripts/c53545926.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c53545926.lua) | 2 |
 | Ancient Gear Advance | `4064925` | [Scripts/c4064925.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c4064925.lua) | 1 |
 | Infernoid Piaty | `25811989` | [Scripts/c25811989.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c25811989.lua) | 1 |
-| Assault Reboot | `74431740` | [Scripts/c74431740.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c74431740.lua) | 1 |
 | ...and 419 more |  |  |  |
 
 ## Script Examples
@@ -88,14 +88,14 @@ function s.thcost(e,tp,eg,ep,ev,re,r,rp,chk)
 	Duel.Release(g,REASON_COST)
 ```
 
-### Frightfur Meister (`77522571`)
+### Mitsurugi Magatama (`76725398`)
 
-Source: [Scripts/c77522571.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c77522571.lua)
+Source: [Scripts/c76725398.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c76725398.lua)
 
 ```lua
 end
-function c77522571.spcost1(e,tp,eg,ep,ev,re,r,rp,chk)
-	if chk==0 then return Duel.CheckReleaseGroup(tp,c77522571.costfilter1,1,nil,e,tp) end
-	local rg=Duel.SelectReleaseGroup(tp,c77522571.costfilter1,1,1,nil,e,tp)
-	e:SetLabel(rg:GetFirst():GetLevel())
+function s.target(e,tp,eg,ep,ev,re,r,rp,chk,chkc)
+	local c1=not e:IsCostChecked() or Duel.CheckReleaseGroup(tp,s.cfilter,1,nil,tp)
+	local b1=c1 and Duel.IsExistingTarget(Card.IsFaceup,tp,0,LOCATION_ONFIELD,1,nil)
+	local b2=aux.RitualUltimateTarget(s.ritual_filter,Card.GetLevel,"Greater",LOCATION_HAND,nil,s.mfilter)(e,tp,eg,ep,ev,re,r,rp,0)
 ```

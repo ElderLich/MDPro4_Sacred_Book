@@ -23,6 +23,12 @@ Checks whether g contains card c.
 
 - `D:\Programs\GitHub\ygopro-core\libgroup.cpp:932`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Filters, Card Objects, and Group Objects](/learn/filters-and-groups)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

@@ -28,6 +28,12 @@ alterf, alterdesc, and alterop define an optional one-card alternate Xyz Summon 
 
 - `Utilities/procedure.lua:485`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Xyz Procedure Guide](/learn/xyz-procedure)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

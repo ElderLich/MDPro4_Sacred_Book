@@ -24,6 +24,13 @@ When countertype is 0, this core returns the number of different counter types c
 
 - `D:\Programs\GitHub\ygopro-core\libcard.cpp:3685`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Counters](/learn/counters)
+- [Applying The Latest Engine And Script Changes](/learn/engine-updates)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

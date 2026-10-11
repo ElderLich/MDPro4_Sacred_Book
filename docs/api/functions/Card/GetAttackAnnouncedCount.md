@@ -22,6 +22,12 @@ Returns c's attack declaration count.
 
 - `D:\Programs\GitHub\ygopro-core\libcard.cpp:3589`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Toon Monsters](/learn/toon-monsters)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

@@ -29,6 +29,12 @@ Registers an exact-Level Ritual Summon procedure using Card.GetLevel and returns
 
 - `Utilities/procedure.lua:1922`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Ritual Procedure Guide](/learn/ritual-procedure)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

@@ -25,6 +25,12 @@ Use the Card.GetLinkedGroup method when checking one Link Monster; use this Duel
 
 - `D:\Programs\GitHub\ygopro-core\libduel.cpp:4940`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Link Procedure Guide](/learn/link-procedure)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

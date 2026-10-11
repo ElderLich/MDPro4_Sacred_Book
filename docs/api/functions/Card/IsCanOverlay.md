@@ -24,6 +24,12 @@ player defaults to the current reason player. The core rejects Tokens, forbidden
 
 - `D:\Programs\GitHub\ygopro-core\libcard.cpp:3693`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Xyz Procedure Guide](/learn/xyz-procedure)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

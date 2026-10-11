@@ -31,6 +31,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
+| [Recette de Viande (Meat Recipe)](/examples/cards/14166715) | `14166715` | [Scripts/c14166715.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c14166715.lua) | 1 |
 | Mimighoul Maker | `13204145` | [Scripts/c13204145.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c13204145.lua) | 1 |
 | Enneacraft Reverth | `80015408` | [Scripts/c80015408.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c80015408.lua) | 1 |
 | Goblin Freefall Squad | `85123771` | [Scripts/c85123771.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c85123771.lua) | 2 |
@@ -54,10 +55,21 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Number 22: Zombiestein | `73445448` | [Scripts/c73445448.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c73445448.lua) | 1 |
 | Scareclaw Reichheart | `82361809` | [Scripts/c82361809.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c82361809.lua) | 1 |
 | Superheavy Samurai Soulbuster Gauntlet | `35800511` | [Scripts/c35800511.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c35800511.lua) | 1 |
-| Gouki Jet Ogre | `59644128` | [Scripts/c59644128.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c59644128.lua) | 1 |
 | ...and 97 more |  |  |  |
 
 ## Script Examples
+
+### Recette de Viande (Meat Recipe) (`14166715`)
+
+Source: [Scripts/c14166715.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c14166715.lua)
+
+```lua
+function s.extraop(e,tp,eg,ep,ev,re,r,rp,tc,mat)
+	if not tc or not tc:IsCode(53618197) then return end
+	local g=Duel.GetMatchingGroup(Card.IsDefensePos,tp,0,LOCATION_MZONE,nil)
+	if #g>0 and Duel.SelectYesNo(tp,aux.Stringid(id,0)) then
+		Duel.BreakEffect()
+```
 
 ### Mimighoul Maker (`13204145`)
 
@@ -81,16 +93,4 @@ function s.posfilter(c)
 	return c:IsSetCard(0x1d4) and c:IsFacedown() and c:IsDefensePos()
 end
 function s.sptg(e,tp,eg,ep,ev,re,r,rp,chk)
-```
-
-### Goblin Freefall Squad (`85123771`)
-
-Source: [Scripts/c85123771.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c85123771.lua)
-
-```lua
-function s.disop(e,tp,eg,ep,ev,re,r,rp)
-	local c=e:GetHandler()
-	if not c:IsRelateToEffect(e) or c:IsDefensePos() or not c:IsCanChangePosition() then return end
-	Duel.ChangePosition(c,POS_FACEUP_DEFENSE,POS_FACEDOWN_DEFENSE,0,0)
-	local tc=Duel.GetFirstTarget()
 ```

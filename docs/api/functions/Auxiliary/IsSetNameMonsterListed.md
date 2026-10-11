@@ -23,6 +23,12 @@ Returns true if setcode matches one of the monster set codes registered for c, u
 
 - `Utilities/utility.lua:567`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Archetypes and Set Codes](/learn/archetypes-and-setcodes)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

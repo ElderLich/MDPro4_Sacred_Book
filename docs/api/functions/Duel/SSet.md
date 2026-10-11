@@ -25,6 +25,14 @@ Makes player Set targets to target_player's Spell & Trap Zone. If targets is a G
 
 - `D:\Programs\GitHub\ygopro-core\libduel.cpp:4871`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Functions That Move Cards Across Locations](/learn/moving-cards)
+- [Normal And Continuous Traps](/learn/normal-and-continuous-traps)
+- [Trap Card Patterns](/learn/trap-card-patterns)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
@@ -37,6 +45,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | [Artmage Non-Finito](/examples/cards/74631897) | `74631897` | [Scripts/c74631897.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c74631897.lua) | 1 |
 | [Ashtraja Susanoo](/examples/cards/17020474) | `17020474` | [Scripts/c17020474.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c17020474.lua) | 2 |
 | [Albion the Branded Dragon](/examples/cards/87746184) | `87746184` | [Scripts/c87746184.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c87746184.lua) | 1 |
+| [Stars Align Above the Shrine](/examples/cards/15306543) | `15306543` | [Scripts/c15306543.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c15306543.lua) | 1 |
 | K9-EW Special Release Experiment | `26585784` | [Scripts/c26585784.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c26585784.lua) | 1 |
 | Dracotail Mululu | `7375867` | [Scripts/c7375867.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c7375867.lua) | 1 |
 | Branded in White | `34995106` | [Scripts/c34995106.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c34995106.lua) | 1 |
@@ -57,7 +66,6 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Dark Spell Regeneration | `12930501` | [Scripts/c12930501.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c12930501.lua) | 1 |
 | K9-LC Release Restraint | `27308231` | [Scripts/c27308231.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c27308231.lua) | 1 |
 | Loris, Lady of Lament | `50699850` | [Scripts/c50699850.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c50699850.lua) | 1 |
-| D/D/D Duo-Dawn King Kali Yuga | `15939229` | [Scripts/c15939229.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c15939229.lua) | 1 |
 | ...and 340 more |  |  |  |
 
 ## Script Examples

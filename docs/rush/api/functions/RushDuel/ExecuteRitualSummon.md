@@ -94,6 +94,12 @@ function RushDuel.ExecuteRitualSummon(e, tp, type, list, chkf, gc, mat_move, can
 end
 ```
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Rush Fusion And Ritual: Let The Player Choose](/learn/rush-fusion-ritual-choices)
+
 ## Used By
 
 Generated from the local `Rush/Scripts/` folder and `rush_cards.cdb`.

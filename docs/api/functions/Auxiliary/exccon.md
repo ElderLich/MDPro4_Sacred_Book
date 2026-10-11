@@ -31,6 +31,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
+| [Super Soldier Ritual](/examples/cards/14094090) | `14094090` | [Scripts/c14094090.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c14094090.lua) | 1 |
 | Vernusylph and the Changing Season | `37313338` | [Scripts/c37313338.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c37313338.lua) | 1 |
 | Clown Crew Malabarisme | `83232904` | [Scripts/c83232904.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c83232904.lua) | 1 |
 | Quick Summon | `10086952` | [Scripts/c10086952.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c10086952.lua) | 1 |
@@ -54,10 +55,21 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Interrupted Kaiju Slumber | `99330325` | [Scripts/c99330325.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c99330325.lua) | 1 |
 | Gagaga Illusion | `73496100` | [Scripts/c73496100.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c73496100.lua) | 1 |
 | Magician Navigation | `7922915` | [Scripts/c7922915.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c7922915.lua) | 1 |
-| Ragnaraika Hunting Dance | `89824842` | [Scripts/c89824842.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c89824842.lua) | 1 |
 | ...and 94 more |  |  |  |
 
 ## Script Examples
+
+### Super Soldier Ritual (`14094090`)
+
+Source: [Scripts/c14094090.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c14094090.lua)
+
+```lua
+	e1:SetRange(LOCATION_GRAVE)
+	e1:SetCountLimit(1,14094090)
+	e1:SetCondition(aux.exccon)
+	e1:SetCost(c14094090.spcost)
+	e1:SetTarget(c14094090.sptg)
+```
 
 ### Vernusylph and the Changing Season (`37313338`)
 
@@ -81,16 +93,4 @@ Source: [Scripts/c83232904.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/
 	e2:SetCondition(aux.exccon)
 	e2:SetCost(s.thcost)
 	e2:SetTarget(s.thtg)
-```
-
-### Quick Summon (`10086952`)
-
-Source: [Scripts/c10086952.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c10086952.lua)
-
-```lua
-	e3:SetRange(LOCATION_GRAVE)
-	e3:SetCountLimit(1,id)
-	e3:SetCondition(aux.exccon)
-	e3:SetCost(aux.bfgcost)
-	e3:SetTarget(s.thtg)
 ```

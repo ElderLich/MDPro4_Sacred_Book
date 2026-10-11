@@ -22,6 +22,12 @@ If location is omitted, monsters use the Monster Zone and non-monsters use the S
 
 - `Utilities/utility.lua:433`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Toon Monsters](/learn/toon-monsters)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

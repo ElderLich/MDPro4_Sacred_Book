@@ -29,6 +29,17 @@ The count can be negative, so scripts that free a zone as a cost sometimes check
 
 - `D:\Programs\GitHub\ygopro-core\libduel.cpp:4935`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Activation Legality](/learn/activation-legality)
+- [Common Script Errors And Debugging](/learn/common-script-errors-and-debugging)
+- [Field Zones And Sequences](/learn/field-zones-and-sequences)
+- [Pendulum Procedure Guide](/learn/pendulum-procedure)
+- [Special Summon-Only Monster Guide](/learn/special-summon-only-monsters)
+- [Tribute Summon Materials](/learn/tribute-summon-materials)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

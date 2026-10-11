@@ -24,6 +24,12 @@ Returns the number of cards linked to player-relative locations s and o.
 
 - `D:\Programs\GitHub\ygopro-core\libduel.cpp:4941`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Link Procedure Guide](/learn/link-procedure)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

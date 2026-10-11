@@ -20,6 +20,12 @@ Extra arguments are captured now and passed to f after the Card argument.
 
 - `Utilities/procedure.lua:48`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Synchro Procedure Guide](/learn/synchro-procedure)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

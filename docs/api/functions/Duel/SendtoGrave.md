@@ -43,6 +43,16 @@ This is not the same as destroying. A card sent to the Graveyard by `Duel.Sendto
 
 - `D:\Programs\GitHub\ygopro-core\libduel.cpp:4860`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Methods for Affecting Cards](/learn/affecting-cards)
+- [Field Spells](/learn/field-spells)
+- [Fusion Procedure Guide](/learn/fusion-procedure)
+- [Link Procedure Guide](/learn/link-procedure)
+- [Functions That Move Cards Across Locations](/learn/moving-cards)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

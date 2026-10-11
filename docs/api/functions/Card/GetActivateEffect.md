@@ -24,6 +24,13 @@ Use the returned Effect to check whether a Field Spell or other Spell/Trap can b
 
 - `D:\Programs\GitHub\ygopro-core\libcard.cpp:3599`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Field Spells](/learn/field-spells)
+- [Spell Card Patterns](/learn/spell-card-patterns)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

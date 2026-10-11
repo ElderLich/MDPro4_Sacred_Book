@@ -23,6 +23,12 @@ Checks whether c's current battle position includes pos.
 
 - `D:\Programs\GitHub\ygopro-core\libcard.cpp:3660`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Battle Position Effects](/learn/battle-position-effects)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

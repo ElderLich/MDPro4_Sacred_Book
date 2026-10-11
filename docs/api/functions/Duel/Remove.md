@@ -45,6 +45,15 @@ For temporary banish effects, scripts commonly include `REASON_TEMPORARY`; those
 
 - `D:\Programs\GitHub\ygopro-core\libduel.cpp:4859`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Methods for Affecting Cards](/learn/affecting-cards)
+- [Fusion Procedure Guide](/learn/fusion-procedure)
+- [Functions That Move Cards Across Locations](/learn/moving-cards)
+- [Special Summon-Only Monster Guide](/learn/special-summon-only-monsters)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

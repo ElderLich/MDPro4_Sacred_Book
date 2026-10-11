@@ -24,6 +24,12 @@ Lets player declare a card code matching the optional opcode/filter expression a
 
 - `D:\Programs\GitHub\ygopro-core\libduel.cpp:5032`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Archetypes and Set Codes](/learn/archetypes-and-setcodes)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

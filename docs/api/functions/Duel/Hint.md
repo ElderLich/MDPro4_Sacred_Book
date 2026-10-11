@@ -21,6 +21,13 @@ For HINT_SELECTMSG, desc is also stored as that player's last selection hint. HI
 
 - `D:\Programs\GitHub\ygopro-core\libduel.cpp:5019`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Categories, Properties, And Hint Timing](/learn/categories-properties-and-hints)
+- [Client UI And Prompt Behavior](/learn/client-ui-and-prompt-behavior)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

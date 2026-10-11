@@ -24,6 +24,12 @@ Lets player choose one of the allowed positions for c and returns the selected P
 
 - `D:\Programs\GitHub\ygopro-core\libduel.cpp:5026`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Tokens And Summon Choices](/learn/tokens-and-summon-choices)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

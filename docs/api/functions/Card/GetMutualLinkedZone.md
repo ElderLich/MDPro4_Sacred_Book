@@ -23,6 +23,12 @@ Returns the zone mask of c's mutually linked zones, swapped to player viewpoint 
 
 - `D:\Programs\GitHub\ygopro-core\libcard.cpp:3475`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Link Procedure Guide](/learn/link-procedure)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

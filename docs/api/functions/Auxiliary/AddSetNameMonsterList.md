@@ -19,6 +19,12 @@ Registers set codes of monsters listed by c, so Auxiliary.IsSetNameMonsterListed
 
 - `Utilities/utility.lua:553`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Archetypes and Set Codes](/learn/archetypes-and-setcodes)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

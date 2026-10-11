@@ -40,6 +40,13 @@ Leave `adjust` omitted for normal scripts. Pass `false` only inside a larger pro
 
 - `D:\Programs\GitHub\ygopro-core\libduel.cpp:5014`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Functions That Move Cards Across Locations](/learn/moving-cards)
+- [Xyz Procedure Guide](/learn/xyz-procedure)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

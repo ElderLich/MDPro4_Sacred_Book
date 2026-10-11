@@ -25,6 +25,12 @@ Monster Zone bits are shifted by 16*p+seq; Spell & Trap Zone bits are shifted by
 
 - `Utilities/utility.lua:1490`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Field Zones And Sequences](/learn/field-zones-and-sequences)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

@@ -24,6 +24,12 @@ Double-code cards return two codes: the printed original code and the second rul
 
 - `D:\Programs\GitHub\ygopro-core\libcard.cpp:3438`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Card Data And Script Wiring](/learn/card-data-and-script-wiring)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

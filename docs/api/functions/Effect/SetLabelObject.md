@@ -19,6 +19,16 @@ Stores a Card, Group, Effect, or nil as e's label object.
 
 - `D:\Programs\GitHub\ygopro-core\libeffect.cpp:622`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Common Script Errors And Debugging](/learn/common-script-errors-and-debugging)
+- [Creation, Building, and Registration of an Effect Object](/learn/effect-object)
+- [EFFECT_TYPE Constants and Templates](/learn/effect-types)
+- [Special Summon-Only Monster Guide](/learn/special-summon-only-monsters)
+- [Tribute Summon Materials](/learn/tribute-summon-materials)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

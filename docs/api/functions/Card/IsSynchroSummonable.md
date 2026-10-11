@@ -28,6 +28,12 @@ min and max restrict the number of non-Tuner Synchro Materials used by the proce
 
 - `D:\Programs\GitHub\ygopro-core\libcard.cpp:3631`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Synchro Procedure Guide](/learn/synchro-procedure)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

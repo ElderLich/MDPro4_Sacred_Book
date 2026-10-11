@@ -28,6 +28,13 @@ reason_player defaults to the current reason player. targets are treated as leav
 
 - `D:\Programs\GitHub\ygopro-core\libduel.cpp:4938`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Link Procedure Guide](/learn/link-procedure)
+- [Pendulum Procedure Guide](/learn/pendulum-procedure)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

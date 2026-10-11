@@ -46,6 +46,14 @@ This is only a legality check. It does not reserve a zone or Summon the card.
 
 - `D:\Programs\GitHub\ygopro-core\libcard.cpp:3637`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Pendulum Procedure Guide](/learn/pendulum-procedure)
+- [Ritual Procedure Guide](/learn/ritual-procedure)
+- [Special Summon-Only Monster Guide](/learn/special-summon-only-monsters)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

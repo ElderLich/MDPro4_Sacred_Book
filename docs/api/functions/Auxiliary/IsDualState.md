@@ -22,6 +22,12 @@ Condition helper that is true when e's handler is not disabled and is in Dual St
 
 - `Utilities/procedure.lua:10`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Gemini Monsters](/learn/gemini-monsters)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

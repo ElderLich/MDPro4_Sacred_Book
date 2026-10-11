@@ -24,6 +24,12 @@ The core rejects Tokens, cards whose Xyz-material type is not a monster, cards w
 
 - `D:\Programs\GitHub\ygopro-core\libcard.cpp:3697`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Xyz Procedure Guide](/learn/xyz-procedure)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

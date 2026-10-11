@@ -24,6 +24,26 @@ When an effect enters the Chain, its handler and cards selected with Duel.SetTar
 
 - `D:\Programs\GitHub\ygopro-core\libcard.cpp:3617`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Beginner Script Ladder](/learn/beginner-script-ladder)
+- [Client UI And Prompt Behavior](/learn/client-ui-and-prompt-behavior)
+- [Common Script Errors And Debugging](/learn/common-script-errors-and-debugging)
+- [Counter Traps](/learn/counter-traps)
+- [Write Your First Custom Card](/learn/first-custom-card)
+- [First Scripts To Study](/learn/first-scripts)
+
+::: details More guided lessons (4)
+
+- [Normal And Continuous Traps](/learn/normal-and-continuous-traps)
+- [Quick-Play Spells](/learn/quick-play-spells)
+- [Selection And Group Handling](/learn/selection-and-group-handling)
+- [Targeting Flow](/learn/targeting-flow)
+
+:::
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

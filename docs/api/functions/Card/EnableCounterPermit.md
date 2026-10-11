@@ -22,6 +22,12 @@ If location is omitted, monsters default to LOCATION_MZONE and non-monsters defa
 
 - `D:\Programs\GitHub\ygopro-core\libcard.cpp:3686`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Counters](/learn/counters)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

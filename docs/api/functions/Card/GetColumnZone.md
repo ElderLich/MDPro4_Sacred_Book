@@ -25,6 +25,12 @@ When player is supplied as the opposing perspective, the core swaps the player/o
 
 - `D:\Programs\GitHub\ygopro-core\libcard.cpp:3480`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Field Zones And Sequences](/learn/field-zones-and-sequences)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

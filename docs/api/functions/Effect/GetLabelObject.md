@@ -22,6 +22,13 @@ Returns e's stored label object, or nil if none is stored or the object is no lo
 
 - `D:\Programs\GitHub\ygopro-core\libeffect.cpp:636`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Special Summon-Only Monster Guide](/learn/special-summon-only-monsters)
+- [Tribute Summon Materials](/learn/tribute-summon-materials)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

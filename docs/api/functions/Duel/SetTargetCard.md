@@ -20,6 +20,14 @@ This records broad operation targets; it does not by itself check whether the ca
 
 - `D:\Programs\GitHub\ygopro-core\libduel.cpp:5004`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Common Script Errors And Debugging](/learn/common-script-errors-and-debugging)
+- [Min/Max Stat Card Selection](/learn/min-max-stat-selection)
+- [Targeting Flow](/learn/targeting-flow)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

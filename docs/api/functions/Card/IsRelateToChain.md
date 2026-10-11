@@ -24,6 +24,13 @@ The activating card and cards selected as targets with Duel.SetTargetCard or Due
 
 - `D:\Programs\GitHub\ygopro-core\libcard.cpp:3618`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Common Script Errors And Debugging](/learn/common-script-errors-and-debugging)
+- [Targeting Flow](/learn/targeting-flow)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

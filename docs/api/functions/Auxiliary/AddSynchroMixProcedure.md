@@ -27,6 +27,12 @@ The maximum count is capped by c's Level after subtracting any required fixed ma
 
 - `Utilities/procedure.lua:135`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Synchro Procedure Guide](/learn/synchro-procedure)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

@@ -39,6 +39,15 @@ The optional count defaults to 1. With `oath_only=true`, the local binding spend
 
 - `D:\Programs\GitHub\ygopro-core\libeffect.cpp:661`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Common Script Errors And Debugging](/learn/common-script-errors-and-debugging)
+- [Count Limits And Once Per Turn](/learn/count-limits)
+- [Field Spells](/learn/field-spells)
+- [Pendulum Procedure Guide](/learn/pendulum-procedure)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

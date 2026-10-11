@@ -19,6 +19,12 @@ Registers the Shaddoll Fusion Material procedure requiring one Shaddoll material
 
 - `Utilities/procedure.lua:1342`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Fusion Procedure Guide](/learn/fusion-procedure)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

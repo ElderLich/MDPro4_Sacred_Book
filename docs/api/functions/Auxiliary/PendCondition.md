@@ -25,6 +25,12 @@ It checks the two Pendulum Zones, current scales, hand and face-up Extra Deck ca
 
 - `Utilities/procedure.lua:2004`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Pendulum Procedure Guide](/learn/pendulum-procedure)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

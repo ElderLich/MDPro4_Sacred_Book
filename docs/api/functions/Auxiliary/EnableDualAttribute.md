@@ -19,6 +19,12 @@ The card can be Normal Summoned again, and while face-up in the Monster Zone or 
 
 - `Utilities/procedure.lua:22`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Gemini Monsters](/learn/gemini-monsters)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

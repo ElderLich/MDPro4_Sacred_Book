@@ -36,6 +36,12 @@ Descriptions are commonly shown for optional triggers, selectable effects, and e
 
 - `D:\Programs\GitHub\ygopro-core\libeffect.cpp:612`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Card Data And Script Wiring](/learn/card-data-and-script-wiring)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

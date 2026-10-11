@@ -20,6 +20,12 @@ The helper adds equipped-card destruction substitution, an EFFECT_UNION_LIMIT us
 
 - `Utilities/utility.lua:348`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Union Monsters](/learn/union-monsters)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

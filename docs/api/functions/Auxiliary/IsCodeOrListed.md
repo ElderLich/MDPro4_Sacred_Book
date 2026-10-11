@@ -23,6 +23,12 @@ Returns true if c's current code matches code or code is registered in c's liste
 
 - `Utilities/utility.lua:550`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Archetypes and Set Codes](/learn/archetypes-and-setcodes)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

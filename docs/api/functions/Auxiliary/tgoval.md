@@ -21,6 +21,12 @@ It returns true when the reason player rp is the opponent of e's handler player.
 
 - `Utilities/utility.lua:839`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Negation And Immunity](/learn/negation-and-immunity)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

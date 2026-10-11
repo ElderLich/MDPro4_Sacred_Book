@@ -49,6 +49,17 @@ Use the matching `Group.CheckSubGroup` shape in `chk==0` legality checks so the 
 
 - `Utilities/utility.lua:1258`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Filters, Card Objects, and Group Objects](/learn/filters-and-groups)
+- [Link Procedure Guide](/learn/link-procedure)
+- [Pendulum Procedure Guide](/learn/pendulum-procedure)
+- [Ritual Procedure Guide](/learn/ritual-procedure)
+- [Selection And Group Handling](/learn/selection-and-group-handling)
+- [Special Summon-Only Monster Guide](/learn/special-summon-only-monsters)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

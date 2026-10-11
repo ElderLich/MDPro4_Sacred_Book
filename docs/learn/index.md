@@ -136,6 +136,8 @@ card you are scripting.
     <a href="selection-and-group-handling">Selection and Group handling</a>
     <a href="min-max-stat-selection">Min/Max stat selection</a>
     <a href="moving-cards">Moving cards</a>
+    <a href="operation-results-and-follow-up-effects">Operation results and follow-up effects</a>
+    <a href="tokens-and-summon-choices">Tokens and summon choices</a>
     <a href="reset-flags-and-duration">Reset flags and duration</a>
   </section>
   <section class="learn-stage">
@@ -151,7 +153,9 @@ card you are scripting.
   <section class="learn-stage">
     <h3>Summon Procedures</h3>
     <a href="ritual-procedure">Ritual procedure</a>
+    <a href="ritual-summon-choices">Ritual choices and backtracking</a>
     <a href="fusion-procedure">Fusion procedure</a>
+    <a href="fusion-summon-choices">Fusion monster and material choices</a>
     <a href="synchro-procedure">Synchro procedure</a>
     <a href="xyz-procedure">Xyz procedure</a>
     <a href="link-procedure">Link procedure</a>
@@ -176,6 +180,7 @@ card you are scripting.
     <a href="negation-and-immunity">Negation and immunity</a>
     <a href="control-change">Control change</a>
     <a href="battle-position-effects">Battle position effects</a>
+    <a href="battle-participants-and-timing">Battle participants and timing</a>
     <a href="field-zones-and-sequences">Field zones and sequences</a>
   </section>
   <section class="learn-stage">
@@ -184,6 +189,8 @@ card you are scripting.
     <a href="rush-duel-scripting">Requirements and resolution</a>
     <a href="rush-selection-and-actions">Selection, actions, and temporary stats</a>
     <a href="rush-summon-procedures">Maximum, Fusion, and Ritual</a>
+    <a href="rush-fusion-ritual-choices">Fusion and Ritual choices</a>
+    <a href="rush-special-summon-results">Special Summons and result checks</a>
     <a href="../examples/rush">Real Rush scripts</a>
     <a href="../rush/api/functions/">Rush helper reference</a>
   </section>

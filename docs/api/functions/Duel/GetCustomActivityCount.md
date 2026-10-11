@@ -25,6 +25,12 @@ Counts are reset each turn. In this core, most card-based custom counters only r
 
 - `D:\Programs\GitHub\ygopro-core\libduel.cpp:5069`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Count Limits And Once Per Turn](/learn/count-limits)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

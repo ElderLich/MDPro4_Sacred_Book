@@ -21,6 +21,12 @@ Unless reg is false, the helper also registers the simple Pendulum Card activati
 
 - `Utilities/procedure.lua:1948`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Pendulum Procedure Guide](/learn/pendulum-procedure)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

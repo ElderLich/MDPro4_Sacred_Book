@@ -42,6 +42,12 @@ The return value is a count. Use `Duel.GetFlagEffectLabel` when the marker's lab
 
 - `D:\Programs\GitHub\ygopro-core\libduel.cpp:4854`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Flag Effects](/learn/flag-effects)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

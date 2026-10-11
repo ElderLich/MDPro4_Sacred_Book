@@ -25,6 +25,12 @@ Use exclude_modern_count when a replacement-style effect will remove an already 
 
 - `Utilities/utility.lua:335`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Union Monsters](/learn/union-monsters)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

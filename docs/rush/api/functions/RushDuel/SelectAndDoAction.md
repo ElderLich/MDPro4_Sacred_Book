@@ -52,6 +52,12 @@ function RushDuel.SelectAndDoAction(hint, filter, tp, s_range, o_range, min, max
 end
 ```
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Rush Selection, Actions, And Temporary Stats](/learn/rush-selection-and-actions)
+
 ## Used By
 
 Generated from the local `Rush/Scripts/` folder and `rush_cards.cdb`.

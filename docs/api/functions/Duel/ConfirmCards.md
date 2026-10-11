@@ -21,6 +21,13 @@ If skip_panel is true, the client skips the extra confirmation panel when possib
 
 - `D:\Programs\GitHub\ygopro-core\libduel.cpp:4892`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Draw, Hand, And Deck Effects](/learn/draw-hand-and-deck-effects)
+- [Special Summon-Only Monster Guide](/learn/special-summon-only-monsters)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

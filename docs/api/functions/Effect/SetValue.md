@@ -44,6 +44,25 @@ When a function is supplied, the core marks the effect as using a function value
 
 - `D:\Programs\GitHub\ygopro-core\libeffect.cpp:628`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Battle Position Effects](/learn/battle-position-effects)
+- [Effects That Apply Continuously](/learn/continuous-effects)
+- [Continuous Stat Modifiers](/learn/continuous-stat-modifiers)
+- [Creation, Building, and Registration of an Effect Object](/learn/effect-object)
+- [Equip Spells and Equip Cards](/learn/equip-spells)
+- [Field Spells](/learn/field-spells)
+
+::: details More guided lessons (3)
+
+- [First Scripts To Study](/learn/first-scripts)
+- [Negation And Immunity](/learn/negation-and-immunity)
+- [Tribute Summon Materials](/learn/tribute-summon-materials)
+
+:::
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

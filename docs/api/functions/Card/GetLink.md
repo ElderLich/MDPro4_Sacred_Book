@@ -22,6 +22,12 @@ Returns c's Link Rating, or 0 if c is not a Link Monster.
 
 - `D:\Programs\GitHub\ygopro-core\libcard.cpp:3458`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Link Procedure Guide](/learn/link-procedure)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

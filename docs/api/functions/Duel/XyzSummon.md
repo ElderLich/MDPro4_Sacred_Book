@@ -24,6 +24,12 @@ The core rejects this during the Damage Step, yields while the summon is process
 
 - `D:\Programs\GitHub\ygopro-core\libduel.cpp:4868`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Xyz Procedure Guide](/learn/xyz-procedure)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

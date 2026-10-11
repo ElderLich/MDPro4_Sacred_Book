@@ -18,6 +18,12 @@ Removes e from its registered card or field effect list when e is still attached
 
 - `D:\Programs\GitHub\ygopro-core\libeffect.cpp:610`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Reset Flags And Effect Duration](/learn/reset-flags-and-duration)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

@@ -39,6 +39,13 @@ The returned Group can be empty. It is built from the current Chain's target car
 
 - `D:\Programs\GitHub\ygopro-core\libduel.cpp:4950`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Selection And Group Handling](/learn/selection-and-group-handling)
+- [Targeting Flow](/learn/targeting-flow)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

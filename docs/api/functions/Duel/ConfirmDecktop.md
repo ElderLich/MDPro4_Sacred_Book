@@ -20,6 +20,12 @@ count is clamped to the remaining Deck size. The function yields for the reveal 
 
 - `D:\Programs\GitHub\ygopro-core\libduel.cpp:4890`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Draw, Hand, And Deck Effects](/learn/draw-hand-and-deck-effects)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

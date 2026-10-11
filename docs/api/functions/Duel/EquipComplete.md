@@ -31,6 +31,12 @@ end
 
 - `D:\Programs\GitHub\ygopro-core\libduel.cpp:4905`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Equip Spells and Equip Cards](/learn/equip-spells)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

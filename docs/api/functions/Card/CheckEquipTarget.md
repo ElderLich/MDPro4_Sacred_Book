@@ -41,6 +41,12 @@ This checks the Equip Card's local equip-limit rules. It does not by itself rese
 
 - `D:\Programs\GitHub\ygopro-core\libcard.cpp:3576`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Equip Spells and Equip Cards](/learn/equip-spells)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

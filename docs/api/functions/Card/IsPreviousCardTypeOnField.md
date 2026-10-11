@@ -23,6 +23,12 @@ Returns true if at least one requested TYPE_* bit is present in the previous on-
 
 - `D:\Programs\GitHub\ygopro-core\libcard.cpp:3535`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Applying The Latest Engine And Script Changes](/learn/engine-updates)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

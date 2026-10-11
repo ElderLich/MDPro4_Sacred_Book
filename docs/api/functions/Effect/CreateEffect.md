@@ -22,6 +22,15 @@ Creates a new empty Effect object owned by card c.
 
 - `D:\Programs\GitHub\ygopro-core\libeffect.cpp:607`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Beginner Script Ladder](/learn/beginner-script-ladder)
+- [Creation, Building, and Registration of an Effect Object](/learn/effect-object)
+- [Write Your First Custom Card](/learn/first-custom-card)
+- [First Scripts To Study](/learn/first-scripts)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

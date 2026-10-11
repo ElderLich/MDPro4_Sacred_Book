@@ -46,6 +46,14 @@ The return values are the tied Group and the minimum score. If the source Group 
 
 - `D:\Programs\GitHub\ygopro-core\libgroup.cpp:924`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [First Scripts To Study](/learn/first-scripts)
+- [Min/Max Stat Card Selection](/learn/min-max-stat-selection)
+- [Selection And Group Handling](/learn/selection-and-group-handling)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

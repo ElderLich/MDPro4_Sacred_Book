@@ -23,6 +23,12 @@ Non-Xyz cards return 0. Xyz Monsters outside the Monster Zone return their origi
 
 - `D:\Programs\GitHub\ygopro-core\libcard.cpp:3457`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Min/Max Stat Card Selection](/learn/min-max-stat-selection)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

@@ -26,6 +26,16 @@ Checks whether g has a subgroup with size between min and max that satisfies f, 
 
 - `Utilities/utility.lua:1233`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Filters, Card Objects, and Group Objects](/learn/filters-and-groups)
+- [Selection And Group Handling](/learn/selection-and-group-handling)
+- [Special Summon-Only Monster Guide](/learn/special-summon-only-monsters)
+- [Synchro Procedure Guide](/learn/synchro-procedure)
+- [Tribute Summon Materials](/learn/tribute-summon-materials)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

@@ -23,6 +23,12 @@ Checks whether e's effect type contains at least one flag from type.
 
 - `D:\Programs\GitHub\ygopro-core\libeffect.cpp:652`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Counter Traps](/learn/counter-traps)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

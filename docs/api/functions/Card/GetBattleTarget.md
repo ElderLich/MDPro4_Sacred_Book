@@ -22,6 +22,12 @@ Returns the monster currently battling c, or nil if c is not the current attacke
 
 - `D:\Programs\GitHub\ygopro-core\libcard.cpp:3708`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Battle Participants And Timing](/learn/battle-participants-and-timing)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

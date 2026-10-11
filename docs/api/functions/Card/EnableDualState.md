@@ -20,6 +20,12 @@ The registered status effect includes the local client hint and resets with the 
 
 - `D:\Programs\GitHub\ygopro-core\libcard.cpp:3566`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Gemini Monsters](/learn/gemini-monsters)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

@@ -19,6 +19,13 @@ Registers one or more card codes as codes listed by c, so later checks such as A
 
 - `Utilities/utility.lua:533`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Archetypes and Set Codes](/learn/archetypes-and-setcodes)
+- [Toon Monsters](/learn/toon-monsters)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

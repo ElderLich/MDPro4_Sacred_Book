@@ -20,6 +20,13 @@ The generated disable effect resets with RESET_CHAIN, RESET_EVENT, and the suppl
 
 - `D:\Programs\GitHub\ygopro-core\libduel.cpp:4931`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Negation And Immunity](/learn/negation-and-immunity)
+- [Reset Flags And Effect Duration](/learn/reset-flags-and-duration)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

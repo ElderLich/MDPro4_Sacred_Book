@@ -24,6 +24,12 @@ Value helper for self-targeting protection; it returns true when the reason play
 
 - `Utilities/utility.lua:835`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Negation And Immunity](/learn/negation-and-immunity)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

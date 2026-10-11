@@ -24,6 +24,12 @@ Checks whether selected hand Synchro Materials are allowed by a material that gr
 
 - `Utilities/procedure.lua:396`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Synchro Procedure Guide](/learn/synchro-procedure)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

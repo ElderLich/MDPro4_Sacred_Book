@@ -22,6 +22,12 @@ Returns a Group containing the cards currently attached to c as Xyz Materials.
 
 - `D:\Programs\GitHub\ygopro-core\libcard.cpp:3579`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Xyz Procedure Guide](/learn/xyz-procedure)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

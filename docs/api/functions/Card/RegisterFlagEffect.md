@@ -48,6 +48,14 @@ The local binding masks the code as a flag-effect code, adds `EFFECT_FLAG_CANNOT
 
 - `D:\Programs\GitHub\ygopro-core\libcard.cpp:3607`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Common Script Errors And Debugging](/learn/common-script-errors-and-debugging)
+- [Flag Effects](/learn/flag-effects)
+- [Reset Flags And Effect Duration](/learn/reset-flags-and-duration)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

@@ -5,7 +5,7 @@ Generated from `cards.cdb` and `Scripts/`.
 See also [Rush Duel examples](/examples/rush) and the [Rush Duel learning track](/learn/rush-duel).
 
 - Script files scanned: **13572**
-- Featured pages generated: **96**
+- Featured pages generated: **104**
 - Full machine-readable index: `/data/card-examples.json`
 - Featured card IDs: `/data/featured-card-ids.json`
 - Function usage index: `/data/function-usage.json`
@@ -120,3 +120,11 @@ The featured pages are selected from scripts with many detected API calls and ca
 | [Light End Sublimation Dragon](/examples/cards/35614780) | `35614780` | 61 | `Scripts/c35614780.lua` |
 | [Yummy★Snatchy](/examples/cards/30581601) | `30581601` | 61 | `Scripts/c30581601.lua` |
 | [Earthbound Servant Geo Gremlin](/examples/cards/8690387) | `8690387` | 61 | `Scripts/c8690387.lua` |
+| [Super Soldier Ritual](/examples/cards/14094090) | `14094090` | 28 | `Scripts/c14094090.lua` |
+| [Recette de Viande (Meat Recipe)](/examples/cards/14166715) | `14166715` | 10 | `Scripts/c14166715.lua` |
+| [Stars Align Above the Shrine](/examples/cards/15306543) | `15306543` | 42 | `Scripts/c15306543.lua` |
+| [Sonic Tracker](/examples/cards/17888577) | `17888577` | 58 | `Scripts/c17888577.lua` |
+| [Polymerization](/examples/cards/24094653) | `24094653` | 35 | `Scripts/c24094653.lua` |
+| [Mitsurugi Mirror](/examples/cards/49721684) | `49721684` | 26 | `Scripts/c49721684.lua` |
+| [Mitsurugi Magatama](/examples/cards/76725398) | `76725398` | 38 | `Scripts/c76725398.lua` |
+| [Revendread Origin](/examples/cards/94666032) | `94666032` | 22 | `Scripts/c94666032.lua` |

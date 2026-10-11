@@ -55,6 +55,12 @@ function RushDuel.SendToHandAndExists(target, effect, player, reason, filter, co
 end
 ```
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Rush Special Summons And Result Types](/learn/rush-special-summon-results)
+
 ## Used By
 
 Generated from the local `Rush/Scripts/` folder and `rush_cards.cdb`.

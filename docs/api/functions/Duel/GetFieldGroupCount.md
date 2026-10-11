@@ -24,6 +24,13 @@ Returns the number of cards in the specified locations from player's viewpoint.
 
 - `D:\Programs\GitHub\ygopro-core\libduel.cpp:4966`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Draw, Hand, And Deck Effects](/learn/draw-hand-and-deck-effects)
+- [Pendulum Procedure Guide](/learn/pendulum-procedure)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

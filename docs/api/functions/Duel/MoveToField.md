@@ -49,6 +49,16 @@ end
 
 - `D:\Programs\GitHub\ygopro-core\libduel.cpp:4882`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Counters](/learn/counters)
+- [Equip Spells and Equip Cards](/learn/equip-spells)
+- [Field Spells](/learn/field-spells)
+- [Functions That Move Cards Across Locations](/learn/moving-cards)
+- [Pendulum Procedure Guide](/learn/pendulum-procedure)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

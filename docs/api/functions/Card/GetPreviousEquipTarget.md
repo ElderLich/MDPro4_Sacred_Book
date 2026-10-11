@@ -40,6 +40,12 @@ This is the usual read for lost-target or sent-from-field Equip Card triggers. I
 
 - `D:\Programs\GitHub\ygopro-core\libcard.cpp:3575`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Equip Spells and Equip Cards](/learn/equip-spells)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

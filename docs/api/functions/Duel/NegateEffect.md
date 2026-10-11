@@ -43,6 +43,15 @@ The optional `forced` argument is passed to the core disable-chain check. Activa
 
 - `D:\Programs\GitHub\ygopro-core\libduel.cpp:4930`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Chain Timing And Activation Windows](/learn/chain-timing-and-activation-windows)
+- [Common Script Errors And Debugging](/learn/common-script-errors-and-debugging)
+- [Counter Traps](/learn/counter-traps)
+- [Negation And Immunity](/learn/negation-and-immunity)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

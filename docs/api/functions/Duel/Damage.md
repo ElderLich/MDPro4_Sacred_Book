@@ -46,6 +46,12 @@ The return value is the actual damage applied. If damage is reversed, prevented,
 
 - `D:\Programs\GitHub\ygopro-core\libduel.cpp:4901`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [LP Recovery and Effect Damage](/learn/lp-recovery-and-damage)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

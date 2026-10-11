@@ -25,6 +25,12 @@ For Pendulum Zone checks, use LOCATION_PZONE with sequence 0 for the left Pendul
 
 - `D:\Programs\GitHub\ygopro-core\libduel.cpp:4944`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Pendulum Procedure Guide](/learn/pendulum-procedure)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

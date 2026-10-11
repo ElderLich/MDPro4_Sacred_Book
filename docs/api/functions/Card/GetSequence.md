@@ -24,6 +24,12 @@ For other locations, sequence is the card's position in that location, starting 
 
 - `D:\Programs\GitHub\ygopro-core\libcard.cpp:3520`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Field Zones And Sequences](/learn/field-zones-and-sequences)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

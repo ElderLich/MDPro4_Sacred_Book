@@ -32,6 +32,12 @@ Without this call, the reserved damage/recovery batch is not completed. Use ordi
 
 - `D:\Programs\GitHub\ygopro-core\libduel.cpp:4903`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [LP Recovery and Effect Damage](/learn/lp-recovery-and-damage)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

@@ -26,6 +26,12 @@ The returned function reads the selected group from the effect label object, rec
 
 - `Utilities/procedure.lua:2263`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Link Procedure Guide](/learn/link-procedure)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

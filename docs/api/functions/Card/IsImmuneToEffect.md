@@ -23,6 +23,12 @@ Checks whether c is unaffected by effect e.
 
 - `D:\Programs\GitHub\ygopro-core\libcard.cpp:3701`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Negation And Immunity](/learn/negation-and-immunity)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

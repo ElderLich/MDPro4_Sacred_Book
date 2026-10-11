@@ -25,6 +25,13 @@ The binding also returns nil while the card at that slot is in Summoning or Spec
 
 - `D:\Programs\GitHub\ygopro-core\libduel.cpp:4943`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Field Spells](/learn/field-spells)
+- [Pendulum Procedure Guide](/learn/pendulum-procedure)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

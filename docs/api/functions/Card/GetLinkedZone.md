@@ -25,6 +25,13 @@ Use bit helpers such as bit.extract or bit.band when checking whether a specific
 
 - `D:\Programs\GitHub\ygopro-core\libcard.cpp:3472`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Field Zones And Sequences](/learn/field-zones-and-sequences)
+- [Link Procedure Guide](/learn/link-procedure)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

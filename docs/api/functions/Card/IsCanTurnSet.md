@@ -23,6 +23,13 @@ The core returns false for Link Monsters, Tokens, already face-down cards, and c
 
 - `D:\Programs\GitHub\ygopro-core\libcard.cpp:3689`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Battle Position Effects](/learn/battle-position-effects)
+- [First Scripts To Study](/learn/first-scripts)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

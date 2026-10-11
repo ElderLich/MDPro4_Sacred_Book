@@ -30,6 +30,7 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | --- | ---: | --- | ---: |
 | [Ursarctic Polari](/examples/cards/27693363) | `27693363` | [Scripts/c27693363.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c27693363.lua) | 1 |
 | [Ursarctic Polar Star](/examples/cards/62714453) | `62714453` | [Scripts/c62714453.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c62714453.lua) | 1 |
+| [Mitsurugi Magatama](/examples/cards/76725398) | `76725398` | [Scripts/c76725398.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c76725398.lua) | 1 |
 | Frightfur Meister | `77522571` | [Scripts/c77522571.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c77522571.lua) | 1 |
 | Mecha Phantom Beast Auroradon | `44097050` | [Scripts/c44097050.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c44097050.lua) | 1 |
 | Ursarctic Grand Chariot | `80086070` | [Scripts/c80086070.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c80086070.lua) | 1 |
@@ -51,7 +52,6 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 | Kuribah | `44632120` | [Scripts/c44632120.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c44632120.lua) | 1 |
 | Amunessia, the Ogdoadic Queen | `61160289` | [Scripts/c61160289.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c61160289.lua) | 1 |
 | Citadel Whale | `46290741` | [Scripts/c46290741.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c46290741.lua) | 1 |
-| Trias Hierarchia | `26866984` | [Scripts/c26866984.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c26866984.lua) | 1 |
 | ...and 29 more |  |  |  |
 
 ## Script Examples
@@ -80,14 +80,14 @@ Source: [Scripts/c62714453.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/
 	end
 ```
 
-### Frightfur Meister (`77522571`)
+### Mitsurugi Magatama (`76725398`)
 
-Source: [Scripts/c77522571.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c77522571.lua)
+Source: [Scripts/c76725398.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c76725398.lua)
 
 ```lua
-	local lv=g:GetSum(Card.GetLevel)
-	e:SetLabel(lv)
-	aux.UseExtraReleaseCount(g,tp)
-	Duel.Release(g,REASON_COST)
-end
+			e:SetProperty(EFFECT_FLAG_CARD_TARGET)
+			local g=Duel.SelectReleaseGroup(tp,s.cfilter,1,1,nil,tp)
+			aux.UseExtraReleaseCount(g,tp)
+			Duel.Release(g,REASON_COST)
+		end
 ```

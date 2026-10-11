@@ -28,6 +28,12 @@ The helper creates an Extra Deck EFFECT_SPSUMMON_PROC with SUMMON_TYPE_LINK, use
 
 - `Utilities/procedure.lua:2128`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Link Procedure Guide](/learn/link-procedure)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

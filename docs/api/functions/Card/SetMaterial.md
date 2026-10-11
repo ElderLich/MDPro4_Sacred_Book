@@ -19,6 +19,17 @@ Sets g as c's material group for a Summon, or clears c's materials when g is nil
 
 - `D:\Programs\GitHub\ygopro-core\libcard.cpp:3569`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Fusion Procedure Guide](/learn/fusion-procedure)
+- [Link Procedure Guide](/learn/link-procedure)
+- [Ritual Procedure Guide](/learn/ritual-procedure)
+- [Synchro Procedure Guide](/learn/synchro-procedure)
+- [Tribute Summon Materials](/learn/tribute-summon-materials)
+- [Xyz Procedure Guide](/learn/xyz-procedure)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

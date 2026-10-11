@@ -23,6 +23,12 @@ Ordinary materials and Link-1 monsters count as 1. A Link Monster with Link Rati
 
 - `Utilities/procedure.lua:2158`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Link Procedure Guide](/learn/link-procedure)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

@@ -21,6 +21,12 @@ Most ordinary card scripts register an EFFECT_SPSUMMON_PROC instead of calling t
 
 - `D:\Programs\GitHub\ygopro-core\libduel.cpp:4866`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Special Summon-Only Monster Guide](/learn/special-summon-only-monsters)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

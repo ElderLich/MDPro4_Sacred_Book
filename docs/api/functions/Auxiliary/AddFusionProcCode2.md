@@ -23,6 +23,12 @@ The helper forwards sub and insf unchanged to Auxiliary.AddFusionProcMix.
 
 - `Utilities/procedure.lua:1209`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Fusion Procedure Guide](/learn/fusion-procedure)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

@@ -41,6 +41,16 @@ Effects with the same nonzero code share the same count. Special flags such as `
 
 - `D:\Programs\GitHub\ygopro-core\libeffect.cpp:617`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Activation Legality](/learn/activation-legality)
+- [Common Script Errors And Debugging](/learn/common-script-errors-and-debugging)
+- [Count Limits And Once Per Turn](/learn/count-limits)
+- [Creation, Building, and Registration of an Effect Object](/learn/effect-object)
+- [Normal And Continuous Traps](/learn/normal-and-continuous-traps)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

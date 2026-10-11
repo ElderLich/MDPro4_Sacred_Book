@@ -44,6 +44,27 @@ Use `Duel.SelectTarget` for cards that are official targets. Use `Duel.SetOperat
 
 - `D:\Programs\GitHub\ygopro-core\libeffect.cpp:626`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Beginner Script Ladder](/learn/beginner-script-ladder)
+- [Effects That Apply Continuously](/learn/continuous-effects)
+- [Continuous Stat Modifiers](/learn/continuous-stat-modifiers)
+- [Cost, Target, And Operation Lifecycle](/learn/cost-target-operation-lifecycle)
+- [Counter Traps](/learn/counter-traps)
+- [Conditions, Costs, Activation Procedures, and Resolution](/learn/effect-callbacks)
+
+::: details More guided lessons (5)
+
+- [Creation, Building, and Registration of an Effect Object](/learn/effect-object)
+- [Write Your First Custom Card](/learn/first-custom-card)
+- [First Scripts To Study](/learn/first-scripts)
+- [Quick-Play Spells](/learn/quick-play-spells)
+- [Targeting Flow](/learn/targeting-flow)
+
+:::
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

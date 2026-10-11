@@ -21,6 +21,12 @@ Call this only in the real Cost branch after the chk==0 branch has used Duel.Che
 
 - `D:\Programs\GitHub\ygopro-core\libduel.cpp:4909`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Cost, Target, And Operation Lifecycle](/learn/cost-target-operation-lifecycle)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

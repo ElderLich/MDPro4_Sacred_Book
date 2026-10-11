@@ -19,6 +19,14 @@ Stores one or more integer label values on e, replacing any previous labels.
 
 - `D:\Programs\GitHub\ygopro-core\libeffect.cpp:621`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Activation Legality](/learn/activation-legality)
+- [Common Script Errors And Debugging](/learn/common-script-errors-and-debugging)
+- [Creation, Building, and Registration of an Effect Object](/learn/effect-object)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

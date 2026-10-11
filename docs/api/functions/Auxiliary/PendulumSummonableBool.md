@@ -23,6 +23,12 @@ The shared Pendulum candidate filter passes this result as the nocheck and nolim
 
 - `Utilities/procedure.lua:2111`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Pendulum Procedure Guide](/learn/pendulum-procedure)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.

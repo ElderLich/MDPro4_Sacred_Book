@@ -24,6 +24,12 @@ Sends count cards from the top of player's Deck to the Graveyard for reason, and
 
 - `D:\Programs\GitHub\ygopro-core\libduel.cpp:4910`
 
+## Guided Examples
+
+Learn how to use this function in context:
+
+- [Draw, Hand, And Deck Effects](/learn/draw-hand-and-deck-effects)
+
 ## Used By
 
 Generated from the local `Scripts/` folder and `cards.cdb`.
