@@ -20,4 +20,4 @@ Checks whether v, a Card or Group, contains a card affected by Necrovalley. If t
 
 ## Source
 
-- `Utilities/utility.lua:926`
+- `Utilities/utility.lua:929`

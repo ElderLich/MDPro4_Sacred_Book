@@ -20,4 +20,4 @@ Checks whether tp can perform a normal draw: draw count is positive, the Deck is
 
 ## Source
 
-- `Utilities/utility.lua:1854`
+- `Utilities/utility.lua:1859`

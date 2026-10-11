@@ -17,4 +17,4 @@ The cost releases a Level 7 or higher monster from the hand, or banishes a valid
 
 ## Source
 
-- `Utilities/utility.lua:938`
+- `Utilities/utility.lua:941`

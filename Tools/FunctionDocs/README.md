@@ -9,6 +9,7 @@ Generates YGOPro Lua API documentation from the local card scripting workspace a
 - `Utilities/utility.lua` and `Utilities/procedure.lua`: Lua helper/procedure functions.
 - `D:\Programs\GitHub\DataEditorX\DataEditorX\data\lua\_function_english.txt`: existing English descriptions, imported as a legacy baseline where names still match.
 - `Utilities/constant.lua`: current constant values and source comments.
+- `Rush/Utilities/special.lua` and its `RD*.lua` modules: separately pinned Rush helper signatures, source comments, constants and load order. `RushDuel.Name` has the runtime alias `RD.Name`.
 - `D:\Programs\GitHub\DataEditorX\DataEditorX\data\lua\constant.lua`: stale constant comparison.
 - `D:\Programs\GitHub\MDPro3_Data\Data\locales\en-US\strings.conf`: category label comparison.
 
@@ -44,6 +45,29 @@ Generated files are written to `Generated/FunctionDocs/`.
 - `function_translation_backlog.md`: function docs still needing translation or first documentation.
 - `comparison.generated.json`: machine-readable stale/missing lists.
 - `report.md`: human-readable summary.
+- `rush/`: separate Rush JSON, constants-only editor Lua, bilingual bullet tooltip files and `wiki/api/` pages. Rush bullet files include both `RushDuel.*` and `RD.*` spellings. Keep Rush constants separate from the standard environment.
+
+Rush signatures support multiline declarations and follow bootstrap load order.
+Private underscore helpers are omitted. Reviewed contracts live in
+`rush_doc_overrides.json`; other helpers show their source and label unreviewed
+types explicitly. Later declarations replace earlier ones, with the shadowed
+source recorded in JSON metadata. Plain prose is HTML-escaped and upstream
+comments are fenced to prevent examples such as `c<code>.lua` becoming Vue tags.
+
+If the external core is unavailable, native bindings are retained from the
+committed JSON snapshot. `Define/def.lua` is not assumed to contain every new API.
+
+## Refresh and verify sources
+
+`python Tools/FunctionDocs/refresh_sources.py` copies exact blobs from the local
+standard, define and Rush repository HEADs, without Git's Windows newline
+filters. `--check` verifies without writing. Update `UPSTREAM_SOURCES.md` from
+its reported counts and hashes. Extra local card scripts cause an error instead
+of being removed automatically.
+
+Run `python -m unittest Tools.FunctionDocs.test_rush_function_docs` to check
+multiline signatures, alias exports, bootstrap shadowing, constants separation,
+factory returns, safe Markdown prose and the native-cache fallback.
 
 ## Promote To DataEditorX
 

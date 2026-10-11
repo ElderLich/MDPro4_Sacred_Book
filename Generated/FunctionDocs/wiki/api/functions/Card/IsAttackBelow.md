@@ -22,4 +22,4 @@ Cards with unknown ATK return false because the core requires the current ATK to
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3621`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3673`

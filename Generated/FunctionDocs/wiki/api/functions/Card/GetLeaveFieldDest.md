@@ -20,4 +20,4 @@ Returns the location c would be redirected to by leave-field effects for REASON_
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3478`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3527`

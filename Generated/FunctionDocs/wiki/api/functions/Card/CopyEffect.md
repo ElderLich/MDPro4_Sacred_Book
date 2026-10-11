@@ -24,4 +24,4 @@ reset defaults to RESETS_STANDARD when 0. count defaults to 1; phase resets with
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3569`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3621`

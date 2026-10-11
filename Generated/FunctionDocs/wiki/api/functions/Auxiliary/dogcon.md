@@ -27,4 +27,4 @@ EVENT_TO_GRAVE condition helper that checks whether the handler was previously c
 
 ## Source
 
-- `Utilities/utility.lua:791`
+- `Utilities/utility.lua:794`

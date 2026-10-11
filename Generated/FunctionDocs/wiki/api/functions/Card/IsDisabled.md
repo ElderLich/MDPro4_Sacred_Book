@@ -20,4 +20,4 @@ Checks whether c currently has STATUS_DISABLED.
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3573`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3625`

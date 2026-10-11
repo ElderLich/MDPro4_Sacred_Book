@@ -24,4 +24,4 @@ Returns cards from location1/location2 that are orthogonally adjacent to the glo
 
 ## Source
 
-- `Utilities/utility.lua:695`
+- `Utilities/utility.lua:698`

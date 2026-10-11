@@ -27,4 +27,4 @@ Returns true during either Main Phase.
 
 ## Source
 
-- `Utilities/utility.lua:1990`
+- `Utilities/utility.lua:2002`

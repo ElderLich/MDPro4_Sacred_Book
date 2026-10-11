@@ -20,4 +20,4 @@ Returns c's recorded Summon Type bits masked to the default Summon Type field.
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3473`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3522`

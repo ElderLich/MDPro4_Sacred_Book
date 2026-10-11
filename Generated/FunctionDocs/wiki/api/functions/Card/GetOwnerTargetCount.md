@@ -20,4 +20,4 @@ Returns the number of cards targeting c as their persistent card-target owner.
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3546`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3598`

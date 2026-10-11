@@ -20,4 +20,4 @@ Condition helper for effects that cannot be activated during the same turn their
 
 ## Source
 
-- `Utilities/utility.lua:802`
+- `Utilities/utility.lua:805`

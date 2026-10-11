@@ -24,4 +24,4 @@ Target helper for effects that negate an activation and banish the activating ca
 
 ## Source
 
-- `Utilities/utility.lua:1469`
+- `Utilities/utility.lua:1472`

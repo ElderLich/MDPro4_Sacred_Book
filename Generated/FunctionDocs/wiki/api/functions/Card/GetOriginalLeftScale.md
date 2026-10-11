@@ -20,4 +20,4 @@ Returns c's printed left Pendulum Scale.
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3417`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3465`

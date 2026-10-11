@@ -21,4 +21,4 @@ Checks whether c has Link Marker direction dir.
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3421`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3469`

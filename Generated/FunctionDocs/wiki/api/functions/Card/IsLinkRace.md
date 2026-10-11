@@ -22,4 +22,4 @@ Checks whether c's Race while used as Link Material for player contains race. pl
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3496`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3548`

@@ -21,4 +21,4 @@ Checks whether c can be Fusion Summoned as a Fusion Monster for summon type sum_
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3577`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3629`

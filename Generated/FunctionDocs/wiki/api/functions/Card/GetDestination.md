@@ -20,4 +20,4 @@ Returns the destination location currently stored in c's send-to parameters.
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3477`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3526`

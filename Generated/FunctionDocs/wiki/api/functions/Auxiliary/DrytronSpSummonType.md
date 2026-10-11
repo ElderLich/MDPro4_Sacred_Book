@@ -20,4 +20,4 @@ Returns whether c is a Special Summon procedure monster, used by Drytron Special
 
 ## Source
 
-- `Utilities/utility.lua:1079`
+- `Utilities/utility.lua:1082`

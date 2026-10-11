@@ -21,4 +21,4 @@ Checks whether c is originally a card with an effect matching filter.
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3510`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3562`

@@ -18,4 +18,4 @@ Manually resets effects on c that match code and reset_type.
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3553`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3605`

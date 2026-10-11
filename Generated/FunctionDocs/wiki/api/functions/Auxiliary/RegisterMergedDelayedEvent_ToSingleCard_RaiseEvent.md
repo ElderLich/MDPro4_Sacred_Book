@@ -23,4 +23,4 @@ Global Chain End helper for single-card merged delayed events. It raises each pe
 
 ## Source
 
-- `Utilities/utility.lua:1781`
+- `Utilities/utility.lua:1786`

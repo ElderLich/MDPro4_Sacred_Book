@@ -47,4 +47,4 @@ Use the matching `Group.CheckSubGroup` shape in `chk==0` legality checks so the 
 
 ## Source
 
-- `Utilities/utility.lua:1255`
+- `Utilities/utility.lua:1258`

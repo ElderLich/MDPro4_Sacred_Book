@@ -17,4 +17,4 @@ This lets later Graveyard-condition checks distinguish a card that was already i
 
 ## Source
 
-- `Utilities/utility.lua:1548`
+- `Utilities/utility.lua:1551`

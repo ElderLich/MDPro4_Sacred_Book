@@ -19,4 +19,4 @@ This is an internal-status helper. The binding does nothing while c is copying a
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3512`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3564`

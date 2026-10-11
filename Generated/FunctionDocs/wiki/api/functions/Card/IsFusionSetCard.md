@@ -22,4 +22,4 @@ nil set-code arguments are ignored.
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3399`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3446`

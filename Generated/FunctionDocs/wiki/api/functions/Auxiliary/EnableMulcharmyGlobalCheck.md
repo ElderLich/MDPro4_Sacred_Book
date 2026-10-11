@@ -14,4 +14,4 @@ Mulcharmy monster scripts call this from initial_effect, then check Duel.GetFlag
 
 ## Source
 
-- `Utilities/utility.lua:2041`
+- `Utilities/utility.lua:2053`

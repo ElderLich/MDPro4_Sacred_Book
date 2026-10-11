@@ -20,4 +20,4 @@ Returns e's handler while that card is still related to the current Chain; other
 
 ## Source
 
-- `Utilities/utility.lua:1176`
+- `Utilities/utility.lua:1179`

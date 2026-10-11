@@ -24,4 +24,4 @@ Checks whether g has a subgroup with size between min and max that satisfies f, 
 
 ## Source
 
-- `Utilities/utility.lua:1230`
+- `Utilities/utility.lua:1233`

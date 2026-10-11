@@ -20,4 +20,4 @@ Filter helper that is true for face-up cards with current ATK greater than 0.
 
 ## Source
 
-- `Utilities/utility.lua:840`
+- `Utilities/utility.lua:843`

@@ -27,4 +27,4 @@ Battle-destroying condition helper for a handler whose battle target is a monste
 
 ## Source
 
-- `Utilities/utility.lua:774`
+- `Utilities/utility.lua:777`

@@ -20,4 +20,4 @@ Returns c's current DEF. Unknown or negative DEF values are clamped to 0 by this
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3446`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3494`

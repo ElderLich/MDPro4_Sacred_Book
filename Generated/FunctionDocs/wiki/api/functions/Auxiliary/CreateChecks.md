@@ -21,4 +21,4 @@ Returns a table of one-card check functions where each function calls f(c, list\
 
 ## Source
 
-- `Utilities/utility.lua:1307`
+- `Utilities/utility.lua:1310`

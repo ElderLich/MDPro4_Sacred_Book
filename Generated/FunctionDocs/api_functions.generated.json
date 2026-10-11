@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-07-26T16:41:30+00:00",
+    "generated_at": "2026-10-11T18:32:48+00:00",
     "workspace": "D:\\Programs\\GitHub\\MDPro3_Sacred_Book",
     "dataeditorx_data": "D:\\Programs\\GitHub\\DataEditorX\\DataEditorX\\data",
     "mdpro3_locales": "D:\\Programs\\GitHub\\MDPro3_Data\\Data\\locales",
@@ -68,7 +68,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3631,
+          "line": 3683,
           "origin": "core"
         },
         {
@@ -147,7 +147,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3653,
+          "line": 3705,
           "origin": "core"
         },
         {
@@ -202,7 +202,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3663,
+          "line": 3715,
           "origin": "core"
         },
         {
@@ -249,7 +249,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3544,
+          "line": 3596,
           "origin": "core"
         },
         {
@@ -306,7 +306,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3654,
+          "line": 3706,
           "origin": "core"
         },
         {
@@ -408,7 +408,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3548,
+          "line": 3600,
           "origin": "core"
         },
         {
@@ -463,7 +463,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3524,
+          "line": 3576,
           "origin": "core"
         },
         {
@@ -535,7 +535,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3647,
+          "line": 3699,
           "origin": "core"
         },
         {
@@ -586,7 +586,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3648,
+          "line": 3700,
           "origin": "core"
         },
         {
@@ -652,7 +652,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3530,
+          "line": 3582,
           "origin": "core"
         },
         {
@@ -706,7 +706,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3525,
+          "line": 3577,
           "origin": "core"
         },
         {
@@ -772,7 +772,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3661,
+          "line": 3713,
           "origin": "core"
         },
         {
@@ -818,7 +818,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3564,
+          "line": 3616,
           "origin": "core"
         },
         {
@@ -863,7 +863,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3572,
+          "line": 3624,
           "origin": "core"
         },
         {
@@ -929,7 +929,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3569,
+          "line": 3621,
           "origin": "core"
         },
         {
@@ -978,7 +978,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3562,
+          "line": 3614,
           "origin": "core"
         },
         {
@@ -1031,7 +1031,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3560,
+          "line": 3612,
           "origin": "core"
         },
         {
@@ -1092,7 +1092,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3634,
+          "line": 3686,
           "origin": "core"
         },
         {
@@ -1138,7 +1138,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3514,
+          "line": 3566,
           "origin": "core"
         },
         {
@@ -1184,7 +1184,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3571,
+          "line": 3623,
           "origin": "core"
         },
         {
@@ -1235,7 +1235,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3547,
+          "line": 3599,
           "origin": "core"
         },
         {
@@ -1281,7 +1281,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3443,
+          "line": 3491,
           "origin": "core"
         },
         {
@@ -1330,7 +1330,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3657,
+          "line": 3709,
           "origin": "core"
         },
         {
@@ -1376,7 +1376,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3537,
+          "line": 3589,
           "origin": "core"
         },
         {
@@ -1422,7 +1422,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3534,
+          "line": 3586,
           "origin": "core"
         },
         {
@@ -1468,7 +1468,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3532,
+          "line": 3584,
           "origin": "core"
         },
         {
@@ -1513,7 +1513,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3533,
+          "line": 3585,
           "origin": "core"
         },
         {
@@ -1560,7 +1560,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3434,
+          "line": 3482,
           "origin": "core"
         },
         {
@@ -1612,7 +1612,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3438,
+          "line": 3486,
           "origin": "core"
         },
         {
@@ -1658,7 +1658,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3444,
+          "line": 3492,
           "origin": "core"
         },
         {
@@ -1703,7 +1703,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3447,
+          "line": 3495,
           "origin": "core"
         },
         {
@@ -1749,7 +1749,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3535,
+          "line": 3587,
           "origin": "core"
         },
         {
@@ -1794,7 +1794,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3536,
+          "line": 3588,
           "origin": "core"
         },
         {
@@ -1840,7 +1840,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3468,
+          "line": 3517,
           "origin": "core"
         },
         {
@@ -1886,7 +1886,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3656,
+          "line": 3708,
           "origin": "core"
         },
         {
@@ -1932,7 +1932,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3540,
+          "line": 3592,
           "origin": "core"
         },
         {
@@ -1978,7 +1978,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3542,
+          "line": 3594,
           "origin": "core"
         },
         {
@@ -1995,6 +1995,47 @@
       ],
       "core_binding": true,
       "core_handler": "card_get_card_target_count"
+    },
+    {
+      "name": "Card.GetCardType",
+      "namespace": "Card",
+      "short_name": "GetCardType",
+      "params": [
+        {
+          "name": "c",
+          "type": "Card",
+          "optional": false,
+          "description": ""
+        }
+      ],
+      "returns": [
+        {
+          "type": "int",
+          "description": "Card-type bitmask; test with TYPE_* constants."
+        }
+      ],
+      "description_zh": [
+        "返回印刷种类经过EFFECT_ADD_CARD_TYPE、EFFECT_REMOVE_CARD_TYPE和EFFECT_CHANGE_CARD_TYPE处理后的卡片种类；与GetType不同，不应用普通种类变更或灵摆区域的种类转换。"
+      ],
+      "description_en": [
+        "Returns the card-type bitmask after EFFECT_ADD_CARD_TYPE, EFFECT_REMOVE_CARD_TYPE and EFFECT_CHANGE_CARD_TYPE are applied to the printed type. Unlike GetType, it does not apply ordinary EFFECT_*_TYPE modifiers or the Pendulum Zone conversion."
+      ],
+      "english_status": "translated_exact",
+      "source_files": [
+        {
+          "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
+          "line": 3449,
+          "origin": "core"
+        }
+      ],
+      "aliases": [],
+      "tags": [
+        "core-binding",
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
+      "core_binding": true,
+      "core_handler": "card_get_card_type"
     },
     {
       "name": "Card.GetCode",
@@ -2028,7 +2069,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3389,
+          "line": 3436,
           "origin": "core"
         },
         {
@@ -2074,7 +2115,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3430,
+          "line": 3478,
           "origin": "core"
         },
         {
@@ -2120,7 +2161,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3431,
+          "line": 3479,
           "origin": "core"
         },
         {
@@ -2180,7 +2221,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3432,
+          "line": 3480,
           "origin": "core"
         },
         {
@@ -2226,7 +2267,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3459,
+          "line": 3508,
           "origin": "core"
         },
         {
@@ -2278,7 +2319,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3633,
+          "line": 3685,
           "origin": "core"
         },
         {
@@ -2326,7 +2367,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3420,
+          "line": 3468,
           "origin": "core"
         },
         {
@@ -2372,7 +2413,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3446,
+          "line": 3494,
           "origin": "core"
         },
         {
@@ -2418,7 +2459,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3477,
+          "line": 3526,
           "origin": "core"
         },
         {
@@ -2470,7 +2511,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3554,
+          "line": 3606,
           "origin": "core"
         },
         {
@@ -2516,7 +2557,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3521,
+          "line": 3573,
           "origin": "core"
         },
         {
@@ -2562,7 +2603,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3520,
+          "line": 3572,
           "origin": "core"
         },
         {
@@ -2609,7 +2650,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3522,
+          "line": 3574,
           "origin": "core"
         },
         {
@@ -2657,7 +2698,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3480,
+          "line": 3529,
           "origin": "core"
         },
         {
@@ -2703,7 +2744,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3541,
+          "line": 3593,
           "origin": "core"
         },
         {
@@ -2756,7 +2797,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3556,
+          "line": 3608,
           "origin": "core"
         },
         {
@@ -2815,7 +2856,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3559,
+          "line": 3611,
           "origin": "core"
         },
         {
@@ -2867,7 +2908,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3436,
+          "line": 3484,
           "origin": "core"
         },
         {
@@ -2919,7 +2960,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3392,
+          "line": 3439,
           "origin": "core"
         },
         {
@@ -2965,7 +3006,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3404,
+          "line": 3452,
           "origin": "core"
         },
         {
@@ -3024,7 +3065,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3550,
+          "line": 3602,
           "origin": "core"
         },
         {
@@ -3070,7 +3111,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3478,
+          "line": 3527,
           "origin": "core"
         },
         {
@@ -3119,7 +3160,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3416,
+          "line": 3464,
           "origin": "core"
         },
         {
@@ -3165,7 +3206,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3408,
+          "line": 3456,
           "origin": "core"
         },
         {
@@ -3209,7 +3250,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3410,
+          "line": 3458,
           "origin": "core"
         },
         {
@@ -3261,7 +3302,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3437,
+          "line": 3485,
           "origin": "core"
         },
         {
@@ -3311,7 +3352,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3393,
+          "line": 3440,
           "origin": "core"
         },
         {
@@ -3360,7 +3401,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3422,
+          "line": 3470,
           "origin": "core"
         },
         {
@@ -3406,7 +3447,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3423,
+          "line": 3471,
           "origin": "core"
         },
         {
@@ -3464,7 +3505,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3424,
+          "line": 3472,
           "origin": "core"
         },
         {
@@ -3516,7 +3557,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3441,
+          "line": 3489,
           "origin": "core"
         },
         {
@@ -3562,7 +3603,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3407,
+          "line": 3455,
           "origin": "core"
         },
         {
@@ -3607,7 +3648,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3469,
+          "line": 3518,
           "origin": "core"
         },
         {
@@ -3653,7 +3694,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3518,
+          "line": 3570,
           "origin": "core"
         },
         {
@@ -3699,7 +3740,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3519,
+          "line": 3571,
           "origin": "core"
         },
         {
@@ -3745,7 +3786,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3425,
+          "line": 3473,
           "origin": "core"
         },
         {
@@ -3791,7 +3832,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3426,
+          "line": 3474,
           "origin": "core"
         },
         {
@@ -3843,7 +3884,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3427,
+          "line": 3475,
           "origin": "core"
         },
         {
@@ -3888,7 +3929,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3435,
+          "line": 3483,
           "origin": "core"
         },
         {
@@ -3934,7 +3975,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3390,
+          "line": 3437,
           "origin": "core"
         },
         {
@@ -3986,7 +4027,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3391,
+          "line": 3438,
           "origin": "core"
         },
         {
@@ -4032,7 +4073,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3417,
+          "line": 3465,
           "origin": "core"
         },
         {
@@ -4077,7 +4118,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3413,
+          "line": 3461,
           "origin": "core"
         },
         {
@@ -4123,7 +4164,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3440,
+          "line": 3488,
           "origin": "core"
         },
         {
@@ -4169,7 +4210,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3414,
+          "line": 3462,
           "origin": "core"
         },
         {
@@ -4215,7 +4256,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3419,
+          "line": 3467,
           "origin": "core"
         },
         {
@@ -4260,7 +4301,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3403,
+          "line": 3451,
           "origin": "core"
         },
         {
@@ -4306,7 +4347,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3528,
+          "line": 3580,
           "origin": "core"
         },
         {
@@ -4352,7 +4393,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3527,
+          "line": 3579,
           "origin": "core"
         },
         {
@@ -4398,7 +4439,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3529,
+          "line": 3581,
           "origin": "core"
         },
         {
@@ -4443,7 +4484,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3458,
+          "line": 3507,
           "origin": "core"
         },
         {
@@ -4488,7 +4529,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3545,
+          "line": 3597,
           "origin": "core"
         },
         {
@@ -4533,7 +4574,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3546,
+          "line": 3598,
           "origin": "core"
         },
         {
@@ -4578,7 +4619,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3466,
+          "line": 3515,
           "origin": "core"
         },
         {
@@ -4624,7 +4665,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3455,
+          "line": 3504,
           "origin": "core"
         },
         {
@@ -4670,7 +4711,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3453,
+          "line": 3502,
           "origin": "core"
         },
         {
@@ -4687,6 +4728,47 @@
       ],
       "core_binding": true,
       "core_handler": "card_get_previous_attribute_onfield"
+    },
+    {
+      "name": "Card.GetPreviousCardTypeOnField",
+      "namespace": "Card",
+      "short_name": "GetPreviousCardTypeOnField",
+      "params": [
+        {
+          "name": "c",
+          "type": "Card",
+          "optional": false,
+          "description": ""
+        }
+      ],
+      "returns": [
+        {
+          "type": "int",
+          "description": ""
+        }
+      ],
+      "description_zh": [
+        "返回卡片移动前保存在前一场上状态中的卡片种类，对应GetCardType而不是普通GetType。"
+      ],
+      "description_en": [
+        "Returns the card-type bitmask saved in the previous on-field state, before the card moved. This is the previous GetCardType value, not the previous ordinary GetType value."
+      ],
+      "english_status": "translated_exact",
+      "source_files": [
+        {
+          "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
+          "line": 3498,
+          "origin": "core"
+        }
+      ],
+      "aliases": [],
+      "tags": [
+        "core-binding",
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
+      "core_binding": true,
+      "core_handler": "card_get_previous_card_type_onfield"
     },
     {
       "name": "Card.GetPreviousCodeOnField",
@@ -4722,7 +4804,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3449,
+          "line": 3497,
           "origin": "core"
         },
         {
@@ -4768,7 +4850,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3460,
+          "line": 3509,
           "origin": "core"
         },
         {
@@ -4814,7 +4896,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3456,
+          "line": 3505,
           "origin": "core"
         },
         {
@@ -4861,7 +4943,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3523,
+          "line": 3575,
           "origin": "core"
         },
         {
@@ -4907,7 +4989,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3451,
+          "line": 3500,
           "origin": "core"
         },
         {
@@ -4953,7 +5035,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3470,
+          "line": 3519,
           "origin": "core"
         },
         {
@@ -4999,7 +5081,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3457,
+          "line": 3506,
           "origin": "core"
         },
         {
@@ -5043,7 +5125,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3467,
+          "line": 3516,
           "origin": "core"
         },
         {
@@ -5089,7 +5171,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3454,
+          "line": 3503,
           "origin": "core"
         },
         {
@@ -5135,7 +5217,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3452,
+          "line": 3501,
           "origin": "core"
         },
         {
@@ -5180,7 +5262,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3472,
+          "line": 3521,
           "origin": "core"
         },
         {
@@ -5226,7 +5308,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3450,
+          "line": 3499,
           "origin": "core"
         },
         {
@@ -5273,7 +5355,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3439,
+          "line": 3487,
           "origin": "core"
         },
         {
@@ -5323,7 +5405,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3442,
+          "line": 3490,
           "origin": "core"
         },
         {
@@ -5370,7 +5452,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3409,
+          "line": 3457,
           "origin": "core"
         },
         {
@@ -5416,7 +5498,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3481,
+          "line": 3530,
           "origin": "core"
         },
         {
@@ -5464,7 +5546,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3462,
+          "line": 3511,
           "origin": "core"
         },
         {
@@ -5510,7 +5592,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3463,
+          "line": 3512,
           "origin": "core"
         },
         {
@@ -5556,7 +5638,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3465,
+          "line": 3514,
           "origin": "core"
         },
         {
@@ -5602,7 +5684,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3464,
+          "line": 3513,
           "origin": "core"
         },
         {
@@ -5651,7 +5733,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3418,
+          "line": 3466,
           "origin": "core"
         },
         {
@@ -5703,7 +5785,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3412,
+          "line": 3460,
           "origin": "core"
         },
         {
@@ -5755,7 +5837,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3471,
+          "line": 3520,
           "origin": "core"
         },
         {
@@ -5818,7 +5900,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3476,
+          "line": 3525,
           "origin": "core"
         },
         {
@@ -5862,7 +5944,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3474,
+          "line": 3523,
           "origin": "core"
         },
         {
@@ -5908,7 +5990,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3475,
+          "line": 3524,
           "origin": "core"
         },
         {
@@ -5954,7 +6036,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3473,
+          "line": 3522,
           "origin": "core"
         },
         {
@@ -6006,7 +6088,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3411,
+          "line": 3459,
           "origin": "core"
         },
         {
@@ -6052,7 +6134,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3405,
+          "line": 3453,
           "origin": "core"
         },
         {
@@ -6099,7 +6181,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3445,
+          "line": 3493,
           "origin": "core"
         },
         {
@@ -6145,7 +6227,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3448,
+          "line": 3496,
           "origin": "core"
         },
         {
@@ -6195,7 +6277,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3655,
+          "line": 3707,
           "origin": "core"
         },
         {
@@ -6257,7 +6339,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3549,
+          "line": 3601,
           "origin": "core"
         },
         {
@@ -6303,7 +6385,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3516,
+          "line": 3568,
           "origin": "core"
         },
         {
@@ -6351,7 +6433,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3479,
+          "line": 3528,
           "origin": "core"
         },
         {
@@ -6397,7 +6479,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3402,
+          "line": 3450,
           "origin": "core"
         },
         {
@@ -6451,7 +6533,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3526,
+          "line": 3578,
           "origin": "core"
         },
         {
@@ -6497,7 +6579,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3406,
+          "line": 3454,
           "origin": "core"
         },
         {
@@ -6542,7 +6624,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3629,
+          "line": 3681,
           "origin": "core"
         },
         {
@@ -6588,7 +6670,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3588,
+          "line": 3640,
           "origin": "core"
         },
         {
@@ -6632,7 +6714,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3593,
+          "line": 3645,
           "origin": "core"
         },
         {
@@ -6676,7 +6758,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3595,
+          "line": 3647,
           "origin": "core"
         },
         {
@@ -6720,7 +6802,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3589,
+          "line": 3641,
           "origin": "core"
         },
         {
@@ -6765,7 +6847,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3594,
+          "line": 3646,
           "origin": "core"
         },
         {
@@ -6809,7 +6891,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3590,
+          "line": 3642,
           "origin": "core"
         },
         {
@@ -6853,7 +6935,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3596,
+          "line": 3648,
           "origin": "core"
         },
         {
@@ -6905,7 +6987,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3587,
+          "line": 3639,
           "origin": "core"
         },
         {
@@ -6954,7 +7036,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3592,
+          "line": 3644,
           "origin": "core"
         },
         {
@@ -7017,7 +7099,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3591,
+          "line": 3643,
           "origin": "core"
         },
         {
@@ -7069,7 +7151,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3597,
+          "line": 3649,
           "origin": "core"
         },
         {
@@ -7085,6 +7167,53 @@
       ],
       "core_binding": true,
       "core_handler": "card_is_able_to_remove_as_cost"
+    },
+    {
+      "name": "Card.IsAllCardTypes",
+      "namespace": "Card",
+      "short_name": "IsAllCardTypes",
+      "params": [
+        {
+          "name": "c",
+          "type": "Card",
+          "optional": false,
+          "description": ""
+        },
+        {
+          "name": "type",
+          "type": "int",
+          "optional": false,
+          "description": "TYPE_* bitmask."
+        }
+      ],
+      "returns": [
+        {
+          "type": "bool",
+          "description": ""
+        }
+      ],
+      "description_zh": [
+        "检查GetCardType结果是否包含type指定的全部卡片种类；0掩码始终匹配。"
+      ],
+      "description_en": [
+        "Returns true if every bit in type is present in c:GetCardType(). A zero mask matches."
+      ],
+      "english_status": "translated_exact",
+      "source_files": [
+        {
+          "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
+          "line": 3534,
+          "origin": "core"
+        }
+      ],
+      "aliases": [],
+      "tags": [
+        "core-binding",
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
+      "core_binding": true,
+      "core_handler": "card_is_all_card_types"
     },
     {
       "name": "Card.IsAllColumn",
@@ -7114,7 +7243,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3433,
+          "line": 3481,
           "origin": "core"
         },
         {
@@ -7165,7 +7294,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3503,
+          "line": 3555,
           "origin": "core"
         },
         {
@@ -7215,7 +7344,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3485,
+          "line": 3537,
           "origin": "core"
         },
         {
@@ -7279,7 +7408,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3493,
+          "line": 3545,
           "origin": "core"
         },
         {
@@ -7327,7 +7456,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3601,
+          "line": 3653,
           "origin": "core"
         },
         {
@@ -7381,7 +7510,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3622,
+          "line": 3674,
           "origin": "core"
         },
         {
@@ -7435,7 +7564,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3621,
+          "line": 3673,
           "origin": "core"
         },
         {
@@ -7481,7 +7610,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3605,
+          "line": 3657,
           "origin": "core"
         },
         {
@@ -7533,7 +7662,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3497,
+          "line": 3549,
           "origin": "core"
         },
         {
@@ -7603,7 +7732,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3638,
+          "line": 3690,
           "origin": "core"
         },
         {
@@ -7655,7 +7784,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3652,
+          "line": 3704,
           "origin": "core"
         },
         {
@@ -7716,7 +7845,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3650,
+          "line": 3702,
           "origin": "core"
         },
         {
@@ -7766,7 +7895,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3651,
+          "line": 3703,
           "origin": "core"
         },
         {
@@ -7825,7 +7954,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3642,
+          "line": 3694,
           "origin": "core"
         },
         {
@@ -7881,7 +8010,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3646,
+          "line": 3698,
           "origin": "core"
         },
         {
@@ -7941,7 +8070,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3586,
+          "line": 3638,
           "origin": "core"
         },
         {
@@ -7996,7 +8125,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3644,
+          "line": 3696,
           "origin": "core"
         },
         {
@@ -8095,7 +8224,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3585,
+          "line": 3637,
           "origin": "core"
         },
         {
@@ -8153,7 +8282,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3643,
+          "line": 3695,
           "origin": "core"
         },
         {
@@ -8207,7 +8336,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3645,
+          "line": 3697,
           "origin": "core"
         },
         {
@@ -8255,7 +8384,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3636,
+          "line": 3688,
           "origin": "core"
         },
         {
@@ -8307,7 +8436,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3640,
+          "line": 3692,
           "origin": "core"
         },
         {
@@ -8361,7 +8490,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3641,
+          "line": 3693,
           "origin": "core"
         },
         {
@@ -8431,7 +8560,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3639,
+          "line": 3691,
           "origin": "core"
         },
         {
@@ -8479,7 +8608,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3637,
+          "line": 3689,
           "origin": "core"
         },
         {
@@ -8496,6 +8625,53 @@
       ],
       "core_binding": true,
       "core_handler": "card_is_can_turn_set"
+    },
+    {
+      "name": "Card.IsCardType",
+      "namespace": "Card",
+      "short_name": "IsCardType",
+      "params": [
+        {
+          "name": "c",
+          "type": "Card",
+          "optional": false,
+          "description": ""
+        },
+        {
+          "name": "type",
+          "type": "int",
+          "optional": false,
+          "description": "TYPE_* bitmask."
+        }
+      ],
+      "returns": [
+        {
+          "type": "bool",
+          "description": ""
+        }
+      ],
+      "description_zh": [
+        "检查GetCardType结果是否包含type指定的任意一种卡片种类；要求全部种类时使用IsAllCardTypes。"
+      ],
+      "description_en": [
+        "Returns true if at least one bit in type is present in c:GetCardType(). Use IsAllCardTypes when every requested bit must match."
+      ],
+      "english_status": "translated_exact",
+      "source_files": [
+        {
+          "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
+          "line": 3533,
+          "origin": "core"
+        }
+      ],
+      "aliases": [],
+      "tags": [
+        "core-binding",
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
+      "core_binding": true,
+      "core_handler": "card_is_card_type"
     },
     {
       "name": "Card.IsChainAttackable",
@@ -8539,7 +8715,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3602,
+          "line": 3654,
           "origin": "core"
         },
         {
@@ -8603,7 +8779,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3483,
+          "line": 3532,
           "origin": "core"
         },
         {
@@ -8654,7 +8830,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3610,
+          "line": 3662,
           "origin": "core"
         },
         {
@@ -8712,7 +8888,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3630,
+          "line": 3682,
           "origin": "core"
         },
         {
@@ -8778,7 +8954,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3494,
+          "line": 3546,
           "origin": "core"
         },
         {
@@ -8832,7 +9008,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3624,
+          "line": 3676,
           "origin": "core"
         },
         {
@@ -8886,7 +9062,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3623,
+          "line": 3675,
           "origin": "core"
         },
         {
@@ -8932,7 +9108,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3607,
+          "line": 3659,
           "origin": "core"
         },
         {
@@ -8986,7 +9162,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3574,
+          "line": 3626,
           "origin": "core"
         },
         {
@@ -9032,7 +9208,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3538,
+          "line": 3590,
           "origin": "core"
         },
         {
@@ -9077,7 +9253,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3573,
+          "line": 3625,
           "origin": "core"
         },
         {
@@ -9132,7 +9308,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3600,
+          "line": 3652,
           "origin": "core"
         },
         {
@@ -9176,7 +9352,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3513,
+          "line": 3565,
           "origin": "core"
         },
         {
@@ -9228,7 +9404,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3511,
+          "line": 3563,
           "origin": "core"
         },
         {
@@ -9272,7 +9448,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3501,
+          "line": 3553,
           "origin": "core"
         },
         {
@@ -9318,7 +9494,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3429,
+          "line": 3477,
           "origin": "core"
         },
         {
@@ -9363,7 +9539,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3606,
+          "line": 3658,
           "origin": "core"
         },
         {
@@ -9407,7 +9583,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3603,
+          "line": 3655,
           "origin": "core"
         },
         {
@@ -9452,7 +9628,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3604,
+          "line": 3656,
           "origin": "core"
         },
         {
@@ -9496,7 +9672,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3628,
+          "line": 3680,
           "origin": "core"
         },
         {
@@ -9555,7 +9731,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3498,
+          "line": 3550,
           "origin": "core"
         },
         {
@@ -9621,7 +9797,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3394,
+          "line": 3441,
           "origin": "core"
         },
         {
@@ -9675,7 +9851,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3399,
+          "line": 3446,
           "origin": "core"
         },
         {
@@ -9726,7 +9902,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3577,
+          "line": 3629,
           "origin": "core"
         },
         {
@@ -9779,7 +9955,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3486,
+          "line": 3538,
           "origin": "core"
         },
         {
@@ -9831,7 +10007,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3543,
+          "line": 3595,
           "origin": "core"
         },
         {
@@ -9877,7 +10053,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3626,
+          "line": 3678,
           "origin": "core"
         },
         {
@@ -9939,7 +10115,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3552,
+          "line": 3604,
           "origin": "core"
         },
         {
@@ -9985,7 +10161,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3625,
+          "line": 3677,
           "origin": "core"
         },
         {
@@ -10035,7 +10211,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3649,
+          "line": 3701,
           "origin": "core"
         },
         {
@@ -10099,7 +10275,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3490,
+          "line": 3542,
           "origin": "core"
         },
         {
@@ -10150,7 +10326,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3616,
+          "line": 3668,
           "origin": "core"
         },
         {
@@ -10200,7 +10376,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3615,
+          "line": 3667,
           "origin": "core"
         },
         {
@@ -10262,7 +10438,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3492,
+          "line": 3544,
           "origin": "core"
         },
         {
@@ -10314,7 +10490,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3620,
+          "line": 3672,
           "origin": "core"
         },
         {
@@ -10374,7 +10550,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3499,
+          "line": 3551,
           "origin": "core"
         },
         {
@@ -10426,7 +10602,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3619,
+          "line": 3671,
           "origin": "core"
         },
         {
@@ -10492,7 +10668,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3395,
+          "line": 3442,
           "origin": "core"
         },
         {
@@ -10544,7 +10720,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3421,
+          "line": 3469,
           "origin": "core"
         },
         {
@@ -10602,7 +10778,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3496,
+          "line": 3548,
           "origin": "core"
         },
         {
@@ -10666,7 +10842,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3400,
+          "line": 3447,
           "origin": "core"
         },
         {
@@ -10712,7 +10888,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3428,
+          "line": 3476,
           "origin": "core"
         },
         {
@@ -10794,7 +10970,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3581,
+          "line": 3633,
           "origin": "core"
         },
         {
@@ -10846,7 +11022,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3489,
+          "line": 3541,
           "origin": "core"
         },
         {
@@ -10899,7 +11075,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3613,
+          "line": 3665,
           "origin": "core"
         },
         {
@@ -10970,7 +11146,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3583,
+          "line": 3635,
           "origin": "core"
         },
         {
@@ -11023,7 +11199,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3500,
+          "line": 3552,
           "origin": "core"
         },
         {
@@ -11073,7 +11249,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3508,
+          "line": 3560,
           "origin": "core"
         },
         {
@@ -11120,7 +11296,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3612,
+          "line": 3664,
           "origin": "core"
         },
         {
@@ -11184,7 +11360,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3482,
+          "line": 3531,
           "origin": "core"
         },
         {
@@ -11236,7 +11412,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3510,
+          "line": 3562,
           "origin": "core"
         },
         {
@@ -11298,7 +11474,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3397,
+          "line": 3444,
           "origin": "core"
         },
         {
@@ -11350,7 +11526,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3608,
+          "line": 3660,
           "origin": "core"
         },
         {
@@ -11366,6 +11542,53 @@
       ],
       "core_binding": true,
       "core_handler": "card_is_position"
+    },
+    {
+      "name": "Card.IsPreviousCardTypeOnField",
+      "namespace": "Card",
+      "short_name": "IsPreviousCardTypeOnField",
+      "params": [
+        {
+          "name": "c",
+          "type": "Card",
+          "optional": false,
+          "description": ""
+        },
+        {
+          "name": "type",
+          "type": "int",
+          "optional": false,
+          "description": "TYPE_* bitmask."
+        }
+      ],
+      "returns": [
+        {
+          "type": "bool",
+          "description": ""
+        }
+      ],
+      "description_zh": [
+        "检查前一场上卡片种类快照是否包含type指定的任意一种种类。"
+      ],
+      "description_en": [
+        "Returns true if at least one requested TYPE_* bit is present in the previous on-field card-type snapshot."
+      ],
+      "english_status": "translated_exact",
+      "source_files": [
+        {
+          "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
+          "line": 3535,
+          "origin": "core"
+        }
+      ],
+      "aliases": [],
+      "tags": [
+        "core-binding",
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
+      "core_binding": true,
+      "core_handler": "card_is_previous_card_type_onfield"
     },
     {
       "name": "Card.IsPreviousControler",
@@ -11401,7 +11624,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3611,
+          "line": 3663,
           "origin": "core"
         },
         {
@@ -11451,7 +11674,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3614,
+          "line": 3666,
           "origin": "core"
         },
         {
@@ -11501,7 +11724,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3609,
+          "line": 3661,
           "origin": "core"
         },
         {
@@ -11566,7 +11789,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3398,
+          "line": 3445,
           "origin": "core"
         },
         {
@@ -11612,7 +11835,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3627,
+          "line": 3679,
           "origin": "core"
         },
         {
@@ -11663,7 +11886,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3495,
+          "line": 3547,
           "origin": "core"
         },
         {
@@ -11727,7 +11950,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3491,
+          "line": 3543,
           "origin": "core"
         },
         {
@@ -11779,7 +12002,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3618,
+          "line": 3670,
           "origin": "core"
         },
         {
@@ -11831,7 +12054,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3617,
+          "line": 3669,
           "origin": "core"
         },
         {
@@ -11883,7 +12106,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3502,
+          "line": 3554,
           "origin": "core"
         },
         {
@@ -11928,7 +12151,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3568,
+          "line": 3620,
           "origin": "core"
         },
         {
@@ -11978,7 +12201,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3567,
+          "line": 3619,
           "origin": "core"
         },
         {
@@ -12034,7 +12257,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3566,
+          "line": 3618,
           "origin": "core"
         },
         {
@@ -12086,7 +12309,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3565,
+          "line": 3617,
           "origin": "core"
         },
         {
@@ -12140,7 +12363,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3598,
+          "line": 3650,
           "origin": "core"
         },
         {
@@ -12186,7 +12409,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3599,
+          "line": 3651,
           "origin": "core"
         },
         {
@@ -12238,7 +12461,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3396,
+          "line": 3443,
           "origin": "core"
         },
         {
@@ -12294,7 +12517,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3578,
+          "line": 3630,
           "origin": "core"
         },
         {
@@ -12344,7 +12567,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3576,
+          "line": 3628,
           "origin": "core"
         },
         {
@@ -12396,7 +12619,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3401,
+          "line": 3448,
           "origin": "core"
         },
         {
@@ -12446,7 +12669,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3584,
+          "line": 3636,
           "origin": "core"
         },
         {
@@ -12501,7 +12724,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3507,
+          "line": 3559,
           "origin": "core"
         },
         {
@@ -12573,7 +12796,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3582,
+          "line": 3634,
           "origin": "core"
         },
         {
@@ -12619,7 +12842,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3575,
+          "line": 3627,
           "origin": "core"
         },
         {
@@ -12671,7 +12894,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3505,
+          "line": 3557,
           "origin": "core"
         },
         {
@@ -12723,7 +12946,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3506,
+          "line": 3558,
           "origin": "core"
         },
         {
@@ -12774,7 +12997,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3504,
+          "line": 3556,
           "origin": "core"
         },
         {
@@ -12847,7 +13070,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3579,
+          "line": 3631,
           "origin": "core"
         },
         {
@@ -12898,7 +13121,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3487,
+          "line": 3539,
           "origin": "core"
         },
         {
@@ -12952,7 +13175,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3509,
+          "line": 3561,
           "origin": "core"
         },
         {
@@ -13002,7 +13225,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3484,
+          "line": 3536,
           "origin": "core"
         },
         {
@@ -13059,7 +13282,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3415,
+          "line": 3463,
           "origin": "core"
         },
         {
@@ -13131,7 +13354,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3580,
+          "line": 3632,
           "origin": "core"
         },
         {
@@ -13183,7 +13406,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3488,
+          "line": 3540,
           "origin": "core"
         },
         {
@@ -13242,7 +13465,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3551,
+          "line": 3603,
           "origin": "core"
         },
         {
@@ -13328,7 +13551,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3555,
+          "line": 3607,
           "origin": "core"
         },
         {
@@ -13375,7 +13598,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3563,
+          "line": 3615,
           "origin": "core"
         },
         {
@@ -13427,7 +13650,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3561,
+          "line": 3613,
           "origin": "core"
         },
         {
@@ -13498,7 +13721,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3632,
+          "line": 3684,
           "origin": "core"
         },
         {
@@ -13570,7 +13793,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3531,
+          "line": 3583,
           "origin": "core"
         },
         {
@@ -13636,7 +13859,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3570,
+          "line": 3622,
           "origin": "core"
         },
         {
@@ -13689,7 +13912,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3553,
+          "line": 3605,
           "origin": "core"
         },
         {
@@ -13737,7 +13960,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3557,
+          "line": 3609,
           "origin": "core"
         },
         {
@@ -13795,7 +14018,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3662,
+          "line": 3714,
           "origin": "core"
         },
         {
@@ -13837,7 +14060,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3659,
+          "line": 3711,
           "origin": "core"
         },
         {
@@ -13886,7 +14109,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3539,
+          "line": 3591,
           "origin": "core"
         },
         {
@@ -13939,7 +14162,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3635,
+          "line": 3687,
           "origin": "core"
         },
         {
@@ -13997,7 +14220,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3558,
+          "line": 3610,
           "origin": "core"
         },
         {
@@ -14050,7 +14273,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3658,
+          "line": 3710,
           "origin": "core"
         },
         {
@@ -14102,7 +14325,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3517,
+          "line": 3569,
           "origin": "core"
         },
         {
@@ -14153,7 +14376,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3461,
+          "line": 3510,
           "origin": "core"
         },
         {
@@ -14201,7 +14424,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3664,
+          "line": 3716,
           "origin": "core"
         },
         {
@@ -14256,7 +14479,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3512,
+          "line": 3564,
           "origin": "core"
         },
         {
@@ -14303,7 +14526,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3515,
+          "line": 3567,
           "origin": "core"
         },
         {
@@ -14374,7 +14597,7 @@
       "source_files": [
         {
           "path": "D:\\Programs\\GitHub\\ygopro-core\\libcard.cpp",
-          "line": 3660,
+          "line": 3712,
           "origin": "core"
         },
         {
@@ -33742,7 +33965,7 @@
       "source_files": [
         {
           "path": "Utilities/utility.lua",
-          "line": 1932,
+          "line": 1937,
           "origin": "utility"
         }
       ],
@@ -33839,7 +34062,7 @@
       "source_files": [
         {
           "path": "Utilities/utility.lua",
-          "line": 999,
+          "line": 1002,
           "origin": "utility"
         }
       ],
@@ -33919,7 +34142,7 @@
       "source_files": [
         {
           "path": "Utilities/utility.lua",
-          "line": 1883,
+          "line": 1888,
           "origin": "utility"
         }
       ],
@@ -34059,7 +34282,7 @@
       "source_files": [
         {
           "path": "Utilities/utility.lua",
-          "line": 1548,
+          "line": 1551,
           "origin": "utility"
         }
       ],
@@ -34102,7 +34325,7 @@
       "source_files": [
         {
           "path": "Utilities/utility.lua",
-          "line": 938,
+          "line": 941,
           "origin": "utility"
         }
       ],
@@ -34155,7 +34378,7 @@
       "source_files": [
         {
           "path": "Utilities/utility.lua",
-          "line": 681,
+          "line": 684,
           "origin": "utility"
         }
       ],
@@ -34426,6 +34649,48 @@
       "core_handler": ""
     },
     {
+      "name": "Auxiliary.ArsMagnaFilter",
+      "namespace": "Auxiliary",
+      "short_name": "ArsMagnaFilter",
+      "params": [
+        {
+          "name": "c",
+          "type": "Card",
+          "optional": false,
+          "description": ""
+        }
+      ],
+      "returns": [
+        {
+          "type": "bool",
+          "description": ""
+        }
+      ],
+      "description_zh": [
+        "检查c原本是否属于0x1e6系列；用于Ars Magna的效果变为快速效果的筛选。"
+      ],
+      "description_en": [
+        "Checks whether c originally belongs to set 0x1e6. Used by the Ars Magna field effect in Auxiliary.quick_effect_filter to determine which effects become Quick Effects."
+      ],
+      "english_status": "translated_exact",
+      "source_files": [
+        {
+          "path": "Utilities/utility.lua",
+          "line": 1980,
+          "origin": "utility"
+        }
+      ],
+      "aliases": [
+        "aux.ArsMagnaFilter"
+      ],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
+      "core_binding": false,
+      "core_handler": ""
+    },
+    {
       "name": "Auxiliary.AtkEqualsDef",
       "namespace": "Auxiliary",
       "short_name": "AtkEqualsDef",
@@ -34453,7 +34718,7 @@
       "source_files": [
         {
           "path": "Utilities/utility.lua",
-          "line": 1115,
+          "line": 1118,
           "origin": "utility"
         }
       ],
@@ -34494,7 +34759,7 @@
       "source_files": [
         {
           "path": "Utilities/utility.lua",
-          "line": 1946,
+          "line": 1951,
           "origin": "utility"
         }
       ],
@@ -34577,7 +34842,7 @@
       "source_files": [
         {
           "path": "Utilities/utility.lua",
-          "line": 764,
+          "line": 767,
           "origin": "utility"
         }
       ],
@@ -34661,7 +34926,7 @@
       "source_files": [
         {
           "path": "Utilities/utility.lua",
-          "line": 774,
+          "line": 777,
           "origin": "utility"
         }
       ],
@@ -34745,7 +35010,7 @@
       "source_files": [
         {
           "path": "Utilities/utility.lua",
-          "line": 769,
+          "line": 772,
           "origin": "utility"
         }
       ],
@@ -34829,7 +35094,7 @@
       "source_files": [
         {
           "path": "Utilities/utility.lua",
-          "line": 780,
+          "line": 783,
           "origin": "utility"
         }
       ],
@@ -34883,7 +35148,7 @@
       "source_files": [
         {
           "path": "Utilities/utility.lua",
-          "line": 1998,
+          "line": 2010,
           "origin": "utility"
         }
       ],
@@ -35007,7 +35272,7 @@
       "source_files": [
         {
           "path": "Utilities/utility.lua",
-          "line": 1803,
+          "line": 1808,
           "origin": "utility"
         }
       ],
@@ -35090,7 +35355,7 @@
       "source_files": [
         {
           "path": "Utilities/utility.lua",
-          "line": 1813,
+          "line": 1818,
           "origin": "utility"
         }
       ],
@@ -35179,7 +35444,7 @@
       "source_files": [
         {
           "path": "Utilities/utility.lua",
-          "line": 1807,
+          "line": 1812,
           "origin": "utility"
         }
       ],
@@ -35266,7 +35531,7 @@
       "source_files": [
         {
           "path": "Utilities/utility.lua",
-          "line": 1121,
+          "line": 1124,
           "origin": "utility"
         }
       ],
@@ -35347,7 +35612,7 @@
       "source_files": [
         {
           "path": "Utilities/utility.lua",
-          "line": 806,
+          "line": 809,
           "origin": "utility"
         }
       ],
@@ -35427,7 +35692,7 @@
       "source_files": [
         {
           "path": "Utilities/utility.lua",
-          "line": 814,
+          "line": 817,
           "origin": "utility"
         }
       ],
@@ -35475,7 +35740,7 @@
       "source_files": [
         {
           "path": "Utilities/utility.lua",
-          "line": 726,
+          "line": 729,
           "origin": "utility"
         }
       ],
@@ -35552,7 +35817,7 @@
       "source_files": [
         {
           "path": "Utilities/utility.lua",
-          "line": 1196,
+          "line": 1199,
           "origin": "utility"
         }
       ],
@@ -35629,7 +35894,7 @@
       "source_files": [
         {
           "path": "Utilities/utility.lua",
-          "line": 1207,
+          "line": 1210,
           "origin": "utility"
         }
       ],
@@ -35700,7 +35965,7 @@
       "source_files": [
         {
           "path": "Utilities/utility.lua",
-          "line": 1314,
+          "line": 1317,
           "origin": "utility"
         }
       ],
@@ -35774,6 +36039,48 @@
       "core_handler": ""
     },
     {
+      "name": "Auxiliary.covcheck",
+      "namespace": "Auxiliary",
+      "short_name": "covcheck",
+      "params": [
+        {
+          "name": "c",
+          "type": "Card",
+          "optional": false,
+          "description": ""
+        }
+      ],
+      "returns": [
+        {
+          "type": "bool|nil",
+          "description": "May return nil when there is no recorded Special Summon reason effect; use as a predicate."
+        }
+      ],
+      "description_zh": [
+        "原本是怪兽卡时返回true；否则检查特殊召唤原因效果的持有者是否为自身，用于陷阱怪兽离场后原本数值的处理。"
+      ],
+      "description_en": [
+        "Returns true for a printed Monster Card, or for a non-monster whose recorded Special Summon reason effect belongs to itself. Used when deciding whether an original-value calculation remains meaningful after a self-summoned Trap leaves the field."
+      ],
+      "english_status": "translated_exact",
+      "source_files": [
+        {
+          "path": "Utilities/utility.lua",
+          "line": 2070,
+          "origin": "utility"
+        }
+      ],
+      "aliases": [
+        "aux.covcheck"
+      ],
+      "tags": [
+        "core-doc-override",
+        "manual-zh-doc"
+      ],
+      "core_binding": false,
+      "core_handler": ""
+    },
+    {
       "name": "Auxiliary.CreateChecks",
       "namespace": "Auxiliary",
       "short_name": "CreateChecks",
@@ -35807,7 +36114,7 @@
       "source_files": [
         {
           "path": "Utilities/utility.lua",
-          "line": 1307,
+          "line": 1310,
           "origin": "utility"
         }
       ],
@@ -35855,7 +36162,7 @@
       "source_files": [
         {
           "path": "Utilities/utility.lua",
-          "line": 859,
+          "line": 862,
           "origin": "utility"
         }
       ],
@@ -35896,7 +36203,7 @@
       "source_files": [
         {
           "path": "Utilities/utility.lua",
-          "line": 1142,
+          "line": 1145,
           "origin": "utility"
         }
       ],
@@ -35981,7 +36288,7 @@
       "source_files": [
         {
           "path": "Utilities/utility.lua",
-          "line": 879,
+          "line": 882,
           "origin": "utility"
         }
       ],
@@ -36029,7 +36336,7 @@
       "source_files": [
         {
           "path": "Utilities/utility.lua",
-          "line": 1986,
+          "line": 1998,
           "origin": "utility"
         }
       ],
@@ -36070,7 +36377,7 @@
       "source_files": [
         {
           "path": "Utilities/utility.lua",
-          "line": 1138,
+          "line": 1141,
           "origin": "utility"
         }
       ],
@@ -36111,7 +36418,7 @@
       "source_files": [
         {
           "path": "Utilities/utility.lua",
-          "line": 1130,
+          "line": 1133,
           "origin": "utility"
         }
       ],
@@ -36152,7 +36459,7 @@
       "source_files": [
         {
           "path": "Utilities/utility.lua",
-          "line": 1126,
+          "line": 1129,
           "origin": "utility"
         }
       ],
@@ -36235,7 +36542,7 @@
       "source_files": [
         {
           "path": "Utilities/utility.lua",
-          "line": 791,
+          "line": 794,
           "origin": "utility"
         }
       ],
@@ -36319,7 +36626,7 @@
       "source_files": [
         {
           "path": "Utilities/utility.lua",
-          "line": 796,
+          "line": 799,
           "origin": "utility"
         }
       ],
@@ -36360,7 +36667,7 @@
       "source_files": [
         {
           "path": "Utilities/utility.lua",
-          "line": 1086,
+          "line": 1089,
           "origin": "utility"
         }
       ],
@@ -36402,7 +36709,7 @@
       "source_files": [
         {
           "path": "Utilities/utility.lua",
-          "line": 1146,
+          "line": 1149,
           "origin": "utility"
         }
       ],
@@ -36443,7 +36750,7 @@
       "source_files": [
         {
           "path": "Utilities/utility.lua",
-          "line": 1134,
+          "line": 1137,
           "origin": "utility"
         }
       ],
@@ -36490,7 +36797,7 @@
       "source_files": [
         {
           "path": "Utilities/utility.lua",
-          "line": 1013,
+          "line": 1016,
           "origin": "utility"
         }
       ],
@@ -36531,7 +36838,7 @@
       "source_files": [
         {
           "path": "Utilities/utility.lua",
-          "line": 1010,
+          "line": 1013,
           "origin": "utility"
         }
       ],
@@ -36578,7 +36885,7 @@
       "source_files": [
         {
           "path": "Utilities/utility.lua",
-          "line": 1017,
+          "line": 1020,
           "origin": "utility"
         }
       ],
@@ -36669,7 +36976,7 @@
       "source_files": [
         {
           "path": "Utilities/utility.lua",
-          "line": 1020,
+          "line": 1023,
           "origin": "utility"
         }
       ],
@@ -36746,7 +37053,7 @@
       "source_files": [
         {
           "path": "Utilities/utility.lua",
-          "line": 1054,
+          "line": 1057,
           "origin": "utility"
         }
       ],
@@ -36787,7 +37094,7 @@
       "source_files": [
         {
           "path": "Utilities/utility.lua",
-          "line": 1066,
+          "line": 1069,
           "origin": "utility"
         }
       ],
@@ -36876,7 +37183,7 @@
       "source_files": [
         {
           "path": "Utilities/utility.lua",
-          "line": 1057,
+          "line": 1060,
           "origin": "utility"
         }
       ],
@@ -36917,7 +37224,7 @@
       "source_files": [
         {
           "path": "Utilities/utility.lua",
-          "line": 1079,
+          "line": 1082,
           "origin": "utility"
         }
       ],
@@ -37001,7 +37308,7 @@
       "source_files": [
         {
           "path": "Utilities/utility.lua",
-          "line": 810,
+          "line": 813,
           "origin": "utility"
         }
       ],
@@ -37084,7 +37391,7 @@
       "source_files": [
         {
           "path": "Utilities/utility.lua",
-          "line": 786,
+          "line": 789,
           "origin": "utility"
         }
       ],
@@ -37125,7 +37432,7 @@
       "source_files": [
         {
           "path": "Utilities/utility.lua",
-          "line": 2012,
+          "line": 2024,
           "origin": "utility"
         }
       ],
@@ -37166,7 +37473,7 @@
       "source_files": [
         {
           "path": "Utilities/utility.lua",
-          "line": 2020,
+          "line": 2032,
           "origin": "utility"
         }
       ],
@@ -37258,7 +37565,7 @@
       "source_files": [
         {
           "path": "Utilities/utility.lua",
-          "line": 1791,
+          "line": 1796,
           "origin": "utility"
         }
       ],
@@ -37386,7 +37693,7 @@
       "source_files": [
         {
           "path": "Utilities/utility.lua",
-          "line": 2041,
+          "line": 2053,
           "origin": "utility"
         }
       ],
@@ -37619,7 +37926,7 @@
       "source_files": [
         {
           "path": "Utilities/utility.lua",
-          "line": 1824,
+          "line": 1829,
           "origin": "utility"
         }
       ],
@@ -37661,7 +37968,7 @@
       "source_files": [
         {
           "path": "Utilities/utility.lua",
-          "line": 1920,
+          "line": 1925,
           "origin": "utility"
         }
       ],
@@ -37721,7 +38028,7 @@
       "source_files": [
         {
           "path": "Utilities/utility.lua",
-          "line": 1909,
+          "line": 1914,
           "origin": "utility"
         }
       ],
@@ -37804,7 +38111,7 @@
       "source_files": [
         {
           "path": "Utilities/utility.lua",
-          "line": 914,
+          "line": 917,
           "origin": "utility"
         }
       ],
@@ -37846,7 +38153,7 @@
       "source_files": [
         {
           "path": "Utilities/utility.lua",
-          "line": 802,
+          "line": 805,
           "origin": "utility"
         }
       ],
@@ -37888,7 +38195,7 @@
       "source_files": [
         {
           "path": "Utilities/utility.lua",
-          "line": 1176,
+          "line": 1179,
           "origin": "utility"
         }
       ],
@@ -37970,7 +38277,7 @@
       "source_files": [
         {
           "path": "Utilities/utility.lua",
-          "line": 1515,
+          "line": 1518,
           "origin": "utility"
         }
       ],
@@ -38185,7 +38492,7 @@
       "source_files": [
         {
           "path": "Utilities/utility.lua",
-          "line": 908,
+          "line": 911,
           "origin": "utility"
         }
       ],
@@ -38307,7 +38614,7 @@
       "source_files": [
         {
           "path": "Utilities/utility.lua",
-          "line": 695,
+          "line": 698,
           "origin": "utility"
         }
       ],
@@ -38348,7 +38655,7 @@
       "source_files": [
         {
           "path": "Utilities/utility.lua",
-          "line": 584,
+          "line": 587,
           "origin": "utility"
         }
       ],
@@ -38389,7 +38696,7 @@
       "source_files": [
         {
           "path": "Utilities/utility.lua",
-          "line": 1537,
+          "line": 1540,
           "origin": "utility"
         }
       ],
@@ -38430,7 +38737,7 @@
       "source_files": [
         {
           "path": "Utilities/utility.lua",
-          "line": 1519,
+          "line": 1522,
           "origin": "utility"
         }
       ],
@@ -38471,7 +38778,7 @@
       "source_files": [
         {
           "path": "Utilities/utility.lua",
-          "line": 1528,
+          "line": 1531,
           "origin": "utility"
         }
       ],
@@ -38523,7 +38830,7 @@
       "source_files": [
         {
           "path": "Utilities/utility.lua",
-          "line": 702,
+          "line": 705,
           "origin": "utility"
         }
       ],
@@ -38569,7 +38876,7 @@
       "source_files": [
         {
           "path": "Utilities/utility.lua",
-          "line": 670,
+          "line": 673,
           "origin": "utility"
         }
       ],
@@ -38622,7 +38929,7 @@
       "source_files": [
         {
           "path": "Utilities/utility.lua",
-          "line": 655,
+          "line": 658,
           "origin": "utility"
         }
       ],
@@ -38676,7 +38983,7 @@
       "source_files": [
         {
           "path": "Utilities/utility.lua",
-          "line": 621,
+          "line": 624,
           "origin": "utility"
         }
       ],
@@ -38724,7 +39031,7 @@
       "source_files": [
         {
           "path": "Utilities/utility.lua",
-          "line": 633,
+          "line": 636,
           "origin": "utility"
         }
       ],
@@ -38772,7 +39079,7 @@
       "source_files": [
         {
           "path": "Utilities/utility.lua",
-          "line": 601,
+          "line": 604,
           "origin": "utility"
         }
       ],
@@ -38860,7 +39167,7 @@
       "source_files": [
         {
           "path": "Utilities/utility.lua",
-          "line": 1181,
+          "line": 1184,
           "origin": "utility"
         }
       ],
@@ -39004,7 +39311,7 @@
       "source_files": [
         {
           "path": "Utilities/utility.lua",
-          "line": 1150,
+          "line": 1153,
           "origin": "utility"
         }
       ],
@@ -39070,7 +39377,7 @@
       "source_files": [
         {
           "path": "Utilities/utility.lua",
-          "line": 1157,
+          "line": 1160,
           "origin": "utility"
         }
       ],
@@ -39124,7 +39431,7 @@
       "source_files": [
         {
           "path": "Utilities/utility.lua",
-          "line": 1862,
+          "line": 1867,
           "origin": "utility"
         }
       ],
@@ -39165,7 +39472,7 @@
       "source_files": [
         {
           "path": "Utilities/utility.lua",
-          "line": 1969,
+          "line": 1974,
           "origin": "utility"
         }
       ],
@@ -39173,6 +39480,54 @@
         "aux.GoldenAllureQueenFilter"
       ],
       "tags": [
+        "manual-zh-doc"
+      ],
+      "core_binding": false,
+      "core_handler": ""
+    },
+    {
+      "name": "Auxiliary.HasMentionedCounter",
+      "namespace": "Auxiliary",
+      "short_name": "HasMentionedCounter",
+      "params": [
+        {
+          "name": "c",
+          "type": "Card",
+          "optional": false,
+          "description": ""
+        },
+        {
+          "name": "counter",
+          "type": "int",
+          "optional": false,
+          "description": "Counter identifier."
+        }
+      ],
+      "returns": [
+        {
+          "type": "bool",
+          "description": "Scripts use true entries for mentioned counter identifiers."
+        }
+      ],
+      "description_zh": [
+        "检查脚本的mentioned_counter表中是否列出counter；不存在时返回false，不检查卡上现有指示物。"
+      ],
+      "description_en": [
+        "Checks c.mentioned_counter[counter], returning that entry when present and false otherwise. The card script must declare its mentioned_counter table; this checks mention metadata, not counters currently on the card."
+      ],
+      "english_status": "translated_exact",
+      "source_files": [
+        {
+          "path": "Utilities/utility.lua",
+          "line": 581,
+          "origin": "utility"
+        }
+      ],
+      "aliases": [
+        "aux.HasMentionedCounter"
+      ],
+      "tags": [
+        "core-doc-override",
         "manual-zh-doc"
       ],
       "core_binding": false,
@@ -39212,7 +39567,7 @@
       "source_files": [
         {
           "path": "Utilities/utility.lua",
-          "line": 820,
+          "line": 823,
           "origin": "utility"
         }
       ],
@@ -39266,7 +39621,7 @@
       "source_files": [
         {
           "path": "Utilities/utility.lua",
-          "line": 828,
+          "line": 831,
           "origin": "utility"
         }
       ],
@@ -39320,7 +39675,7 @@
       "source_files": [
         {
           "path": "Utilities/utility.lua",
-          "line": 824,
+          "line": 827,
           "origin": "utility"
         }
       ],
@@ -39374,7 +39729,7 @@
       "source_files": [
         {
           "path": "Utilities/utility.lua",
-          "line": 1981,
+          "line": 1993,
           "origin": "utility"
         }
       ],
@@ -39568,7 +39923,7 @@
       "source_files": [
         {
           "path": "Utilities/utility.lua",
-          "line": 597,
+          "line": 600,
           "origin": "utility"
         }
       ],
@@ -39754,7 +40109,7 @@
       "source_files": [
         {
           "path": "Utilities/utility.lua",
-          "line": 1854,
+          "line": 1859,
           "origin": "utility"
         }
       ],
@@ -39801,7 +40156,7 @@
       "source_files": [
         {
           "path": "Utilities/utility.lua",
-          "line": 1953,
+          "line": 1958,
           "origin": "utility"
         }
       ],
@@ -39897,7 +40252,7 @@
       "source_files": [
         {
           "path": "Utilities/utility.lua",
-          "line": 581,
+          "line": 584,
           "origin": "utility"
         }
       ],
@@ -39995,7 +40350,7 @@
       "source_files": [
         {
           "path": "Utilities/utility.lua",
-          "line": 1096,
+          "line": 1099,
           "origin": "utility"
         }
       ],
@@ -40078,7 +40433,7 @@
       "source_files": [
         {
           "path": "Utilities/utility.lua",
-          "line": 868,
+          "line": 871,
           "origin": "utility"
         }
       ],
@@ -40161,7 +40516,7 @@
       "source_files": [
         {
           "path": "Utilities/utility.lua",
-          "line": 1665,
+          "line": 1668,
           "origin": "utility"
         }
       ],
@@ -40244,7 +40599,7 @@
       "source_files": [
         {
           "path": "Utilities/utility.lua",
-          "line": 1751,
+          "line": 1756,
           "origin": "utility"
         }
       ],
@@ -40327,7 +40682,7 @@
       "source_files": [
         {
           "path": "Utilities/utility.lua",
-          "line": 1674,
+          "line": 1677,
           "origin": "utility"
         }
       ],
@@ -40410,7 +40765,7 @@
       "source_files": [
         {
           "path": "Utilities/utility.lua",
-          "line": 1766,
+          "line": 1771,
           "origin": "utility"
         }
       ],
@@ -40493,7 +40848,7 @@
       "source_files": [
         {
           "path": "Utilities/utility.lua",
-          "line": 1990,
+          "line": 2002,
           "origin": "utility"
         }
       ],
@@ -40535,7 +40890,7 @@
       "source_files": [
         {
           "path": "Utilities/utility.lua",
-          "line": 2028,
+          "line": 2040,
           "origin": "utility"
         }
       ],
@@ -40625,7 +40980,7 @@
       "source_files": [
         {
           "path": "Utilities/utility.lua",
-          "line": 2050,
+          "line": 2062,
           "origin": "utility"
         }
       ],
@@ -40673,7 +41028,7 @@
       "source_files": [
         {
           "path": "Utilities/utility.lua",
-          "line": 1163,
+          "line": 1166,
           "origin": "utility"
         }
       ],
@@ -40727,7 +41082,7 @@
       "source_files": [
         {
           "path": "Utilities/utility.lua",
-          "line": 1171,
+          "line": 1174,
           "origin": "utility"
         }
       ],
@@ -40769,7 +41124,7 @@
       "source_files": [
         {
           "path": "Utilities/utility.lua",
-          "line": 718,
+          "line": 721,
           "origin": "utility"
         }
       ],
@@ -40817,7 +41172,7 @@
       "source_files": [
         {
           "path": "Utilities/utility.lua",
-          "line": 1464,
+          "line": 1467,
           "origin": "utility"
         }
       ],
@@ -40907,7 +41262,7 @@
       "source_files": [
         {
           "path": "Utilities/utility.lua",
-          "line": 1469,
+          "line": 1472,
           "origin": "utility"
         }
       ],
@@ -40954,7 +41309,7 @@
       "source_files": [
         {
           "path": "Utilities/utility.lua",
-          "line": 1482,
+          "line": 1485,
           "origin": "utility"
         }
       ],
@@ -40994,7 +41349,7 @@
       "source_files": [
         {
           "path": "Utilities/utility.lua",
-          "line": 920,
+          "line": 923,
           "origin": "utility"
         }
       ],
@@ -41033,7 +41388,7 @@
       "source_files": [
         {
           "path": "Utilities/utility.lua",
-          "line": 926,
+          "line": 929,
           "origin": "utility"
         }
       ],
@@ -41075,7 +41430,7 @@
       "source_files": [
         {
           "path": "Utilities/utility.lua",
-          "line": 752,
+          "line": 755,
           "origin": "utility"
         }
       ],
@@ -41117,7 +41472,7 @@
       "source_files": [
         {
           "path": "Utilities/utility.lua",
-          "line": 748,
+          "line": 751,
           "origin": "utility"
         }
       ],
@@ -41159,7 +41514,7 @@
       "source_files": [
         {
           "path": "Utilities/utility.lua",
-          "line": 744,
+          "line": 747,
           "origin": "utility"
         }
       ],
@@ -41194,7 +41549,7 @@
       "source_files": [
         {
           "path": "Utilities/utility.lua",
-          "line": 1831,
+          "line": 1836,
           "origin": "utility"
         }
       ],
@@ -41606,7 +41961,7 @@
       "source_files": [
         {
           "path": "Utilities/utility.lua",
-          "line": 840,
+          "line": 843,
           "origin": "utility"
         }
       ],
@@ -41648,7 +42003,7 @@
       "source_files": [
         {
           "path": "Utilities/utility.lua",
-          "line": 844,
+          "line": 847,
           "origin": "utility"
         }
       ],
@@ -41732,7 +42087,7 @@
       "source_files": [
         {
           "path": "Utilities/utility.lua",
-          "line": 1962,
+          "line": 1967,
           "origin": "utility"
         }
       ],
@@ -41773,7 +42128,7 @@
       "source_files": [
         {
           "path": "Utilities/utility.lua",
-          "line": 2037,
+          "line": 2049,
           "origin": "utility"
         }
       ],
@@ -41827,7 +42182,7 @@
       "source_files": [
         {
           "path": "Utilities/utility.lua",
-          "line": 1617,
+          "line": 1620,
           "origin": "utility"
         }
       ],
@@ -41881,7 +42236,7 @@
       "source_files": [
         {
           "path": "Utilities/utility.lua",
-          "line": 1601,
+          "line": 1604,
           "origin": "utility"
         }
       ],
@@ -41978,7 +42333,7 @@
       "source_files": [
         {
           "path": "Utilities/utility.lua",
-          "line": 892,
+          "line": 895,
           "origin": "utility"
         }
       ],
@@ -42033,7 +42388,7 @@
       "source_files": [
         {
           "path": "Utilities/utility.lua",
-          "line": 1647,
+          "line": 1650,
           "origin": "utility"
         }
       ],
@@ -42087,7 +42442,7 @@
       "source_files": [
         {
           "path": "Utilities/utility.lua",
-          "line": 1684,
+          "line": 1687,
           "origin": "utility"
         }
       ],
@@ -42142,7 +42497,7 @@
       "source_files": [
         {
           "path": "Utilities/utility.lua",
-          "line": 1729,
+          "line": 1732,
           "origin": "utility"
         }
       ],
@@ -42226,7 +42581,7 @@
       "source_files": [
         {
           "path": "Utilities/utility.lua",
-          "line": 1781,
+          "line": 1786,
           "origin": "utility"
         }
       ],
@@ -42273,7 +42628,7 @@
       "source_files": [
         {
           "path": "Utilities/utility.lua",
-          "line": 1838,
+          "line": 1843,
           "origin": "utility"
         }
       ],
@@ -42363,7 +42718,7 @@
       "source_files": [
         {
           "path": "Utilities/utility.lua",
-          "line": 1379,
+          "line": 1382,
           "origin": "utility"
         }
       ],
@@ -42487,7 +42842,7 @@
       "source_files": [
         {
           "path": "Utilities/utility.lua",
-          "line": 1421,
+          "line": 1424,
           "origin": "utility"
         }
       ],
@@ -42577,7 +42932,7 @@
       "source_files": [
         {
           "path": "Utilities/utility.lua",
-          "line": 1395,
+          "line": 1398,
           "origin": "utility"
         }
       ],
@@ -42625,7 +42980,7 @@
       "source_files": [
         {
           "path": "Utilities/utility.lua",
-          "line": 1956,
+          "line": 1961,
           "origin": "utility"
         }
       ],
@@ -42685,7 +43040,7 @@
       "source_files": [
         {
           "path": "Utilities/utility.lua",
-          "line": 1487,
+          "line": 1490,
           "origin": "utility"
         }
       ],
@@ -43356,7 +43711,7 @@
       "source_files": [
         {
           "path": "Utilities/utility.lua",
-          "line": 848,
+          "line": 851,
           "origin": "utility"
         }
       ],
@@ -43398,7 +43753,7 @@
       "source_files": [
         {
           "path": "Utilities/utility.lua",
-          "line": 722,
+          "line": 725,
           "origin": "utility"
         }
       ],
@@ -43558,7 +43913,7 @@
       "source_files": [
         {
           "path": "Utilities/utility.lua",
-          "line": 836,
+          "line": 839,
           "origin": "utility"
         }
       ],
@@ -43611,7 +43966,7 @@
       "source_files": [
         {
           "path": "Utilities/utility.lua",
-          "line": 832,
+          "line": 835,
           "origin": "utility"
         }
       ],
@@ -43695,7 +44050,7 @@
       "source_files": [
         {
           "path": "Utilities/utility.lua",
-          "line": 1556,
+          "line": 1559,
           "origin": "utility"
         }
       ],
@@ -43732,7 +44087,7 @@
       "source_files": [
         {
           "path": "Utilities/utility.lua",
-          "line": 1589,
+          "line": 1592,
           "origin": "utility"
         }
       ],
@@ -43769,7 +44124,7 @@
       "source_files": [
         {
           "path": "Utilities/utility.lua",
-          "line": 1594,
+          "line": 1597,
           "origin": "utility"
         }
       ],
@@ -43848,7 +44203,7 @@
       "source_files": [
         {
           "path": "Utilities/utility.lua",
-          "line": 1744,
+          "line": 1749,
           "origin": "utility"
         }
       ],
@@ -43896,7 +44251,7 @@
       "source_files": [
         {
           "path": "Utilities/utility.lua",
-          "line": 874,
+          "line": 877,
           "origin": "utility"
         }
       ],
@@ -43938,7 +44293,7 @@
       "source_files": [
         {
           "path": "Utilities/utility.lua",
-          "line": 1092,
+          "line": 1095,
           "origin": "utility"
         }
       ],
@@ -44453,7 +44808,7 @@
       "source_files": [
         {
           "path": "Utilities/utility.lua",
-          "line": 958,
+          "line": 961,
           "origin": "utility"
         }
       ],
@@ -44495,7 +44850,7 @@
       "source_files": [
         {
           "path": "Utilities/utility.lua",
-          "line": 955,
+          "line": 958,
           "origin": "utility"
         }
       ],
@@ -44579,7 +44934,7 @@
       "source_files": [
         {
           "path": "Utilities/utility.lua",
-          "line": 952,
+          "line": 955,
           "origin": "utility"
         }
       ],
@@ -44669,7 +45024,7 @@
       "source_files": [
         {
           "path": "Utilities/utility.lua",
-          "line": 961,
+          "line": 964,
           "origin": "utility"
         }
       ],
@@ -44717,7 +45072,7 @@
       "source_files": [
         {
           "path": "Utilities/utility.lua",
-          "line": 995,
+          "line": 998,
           "origin": "utility"
         }
       ],
@@ -44796,7 +45151,7 @@
       "source_files": [
         {
           "path": "Utilities/utility.lua",
-          "line": 981,
+          "line": 984,
           "origin": "utility"
         }
       ],
@@ -44886,7 +45241,7 @@
       "source_files": [
         {
           "path": "Utilities/utility.lua",
-          "line": 976,
+          "line": 979,
           "origin": "utility"
         }
       ],
@@ -44929,7 +45284,7 @@
       "source_files": [
         {
           "path": "Utilities/utility.lua",
-          "line": 1508,
+          "line": 1511,
           "origin": "utility"
         }
       ],
@@ -45036,7 +45391,7 @@
       "source_files": [
         {
           "path": "Utilities/utility.lua",
-          "line": 1230,
+          "line": 1233,
           "origin": "utility"
         }
       ],
@@ -45094,7 +45449,7 @@
       "source_files": [
         {
           "path": "Utilities/utility.lua",
-          "line": 1338,
+          "line": 1341,
           "origin": "utility"
         }
       ],
@@ -45173,7 +45528,7 @@
       "source_files": [
         {
           "path": "Utilities/utility.lua",
-          "line": 1255,
+          "line": 1258,
           "origin": "utility"
         }
       ],
@@ -45243,7 +45598,7 @@
       "source_files": [
         {
           "path": "Utilities/utility.lua",
-          "line": 1353,
+          "line": 1356,
           "origin": "utility"
         }
       ],

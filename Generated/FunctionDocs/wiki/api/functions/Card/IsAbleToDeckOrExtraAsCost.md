@@ -20,4 +20,4 @@ Checks whether c can be returned to the Deck or Extra Deck as a cost.
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3595`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3647`

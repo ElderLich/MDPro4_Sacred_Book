@@ -22,4 +22,4 @@ Supported fields include SUMMON_INFO_CODE, SUMMON_INFO_CODE2, SUMMON_INFO_TYPE, 
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3476`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3525`

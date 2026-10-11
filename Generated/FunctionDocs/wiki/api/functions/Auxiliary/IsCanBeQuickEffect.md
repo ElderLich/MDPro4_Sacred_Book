@@ -22,4 +22,4 @@ Checks whether player tp is affected by code, code has a registered quick-effect
 
 ## Source
 
-- `Utilities/utility.lua:1981`
+- `Utilities/utility.lua:1993`

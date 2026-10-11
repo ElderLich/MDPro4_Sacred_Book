@@ -16,4 +16,4 @@ Returns true if every card in g has a different Rank.
 
 ## Source
 
-- `Utilities/utility.lua:1134`
+- `Utilities/utility.lua:1137`

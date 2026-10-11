@@ -24,4 +24,4 @@ count defaults to 1; phase resets automatically include both players' turns when
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3570`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3622`

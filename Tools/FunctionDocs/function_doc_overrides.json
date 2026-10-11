@@ -1638,6 +1638,25 @@
         }
       ]
     },
+    "Auxiliary.ArsMagnaFilter": {
+      "summary_en": [
+        "Checks whether c originally belongs to set 0x1e6. Used by the Ars Magna field effect in Auxiliary.quick_effect_filter to determine which effects become Quick Effects."
+      ],
+      "summary_zh": [
+        "检查c原本是否属于0x1e6系列；用于Ars Magna的效果变为快速效果的筛选。"
+      ],
+      "params": [
+        {
+          "name": "c",
+          "type": "Card"
+        }
+      ],
+      "returns": [
+        {
+          "type": "bool"
+        }
+      ]
+    },
     "Auxiliary.AssaultModeLimit": {
       "summary_en": [
         "Special Summon restriction value for /Assault Mode monsters; allows the Assault Mode summon value or effects activated by Assault Mode Activate."
@@ -4497,6 +4516,31 @@
         "检查c的原本系列代码是否为0x3，供Golden Allure Queen快速效果处理使用。"
       ]
     },
+    "Auxiliary.HasMentionedCounter": {
+      "summary_en": [
+        "Checks c.mentioned_counter[counter], returning that entry when present and false otherwise. The card script must declare its mentioned_counter table; this checks mention metadata, not counters currently on the card."
+      ],
+      "summary_zh": [
+        "检查脚本的mentioned_counter表中是否列出counter；不存在时返回false，不检查卡上现有指示物。"
+      ],
+      "params": [
+        {
+          "name": "c",
+          "type": "Card"
+        },
+        {
+          "name": "counter",
+          "type": "int",
+          "description": "Counter identifier."
+        }
+      ],
+      "returns": [
+        {
+          "type": "bool",
+          "description": "Scripts use true entries for mentioned counter identifiers."
+        }
+      ]
+    },
     "Auxiliary.IsCanBeQuickEffect": {
       "summary_en": [
         "Checks whether player tp is affected by code, code has a registered quick-effect filter, and that filter accepts c."
@@ -5355,6 +5399,14 @@
         }
       ]
     },
+    "Auxiliary.MonsterEffectPropertyFilter": {
+      "summary_en": [
+        "Returns a predicate that checks whether an Effect has property flag and is not ranged to the Pendulum Zone."
+      ],
+      "summary_zh": [
+        "返回谓词函数，用于判断Effect是否包含flag属性，且效果范围不在灵摆区域。"
+      ]
+    },
     "Auxiliary.MulcharmyGlobalCheck": {
       "summary_en": [
         "Internal EVENT_CHAINING operation installed by Auxiliary.EnableMulcharmyGlobalCheck.",
@@ -5423,14 +5475,6 @@
         }
       ],
       "returns": []
-    },
-    "Auxiliary.MonsterEffectPropertyFilter": {
-      "summary_en": [
-        "Returns a predicate that checks whether an Effect has property flag and is not ranged to the Pendulum Zone."
-      ],
-      "summary_zh": [
-        "返回谓词函数，用于判断Effect是否包含flag属性，且效果范围不在灵摆区域。"
-      ]
     },
     "Auxiliary.MustMaterialCheck": {
       "summary_en": [
@@ -10055,6 +10099,26 @@
       ],
       "returns": []
     },
+    "Auxiliary.covcheck": {
+      "summary_en": [
+        "Returns true for a printed Monster Card, or for a non-monster whose recorded Special Summon reason effect belongs to itself. Used when deciding whether an original-value calculation remains meaningful after a self-summoned Trap leaves the field."
+      ],
+      "summary_zh": [
+        "原本是怪兽卡时返回true；否则检查特殊召唤原因效果的持有者是否为自身，用于陷阱怪兽离场后原本数值的处理。"
+      ],
+      "params": [
+        {
+          "name": "c",
+          "type": "Card"
+        }
+      ],
+      "returns": [
+        {
+          "type": "bool|nil",
+          "description": "May return nil when there is no recorded Special Summon reason effect; use as a predicate."
+        }
+      ]
+    },
     "Auxiliary.dabcheck": {
       "summary_en": [
         "Returns true if every card in g has a different Attribute."
@@ -12067,6 +12131,26 @@
         }
       ]
     },
+    "Card.GetCardType": {
+      "summary_en": [
+        "Returns the card-type bitmask after EFFECT_ADD_CARD_TYPE, EFFECT_REMOVE_CARD_TYPE and EFFECT_CHANGE_CARD_TYPE are applied to the printed type. Unlike GetType, it does not apply ordinary EFFECT_*_TYPE modifiers or the Pendulum Zone conversion."
+      ],
+      "summary_zh": [
+        "返回印刷种类经过EFFECT_ADD_CARD_TYPE、EFFECT_REMOVE_CARD_TYPE和EFFECT_CHANGE_CARD_TYPE处理后的卡片种类；与GetType不同，不应用普通种类变更或灵摆区域的种类转换。"
+      ],
+      "params": [
+        {
+          "name": "c",
+          "type": "Card"
+        }
+      ],
+      "returns": [
+        {
+          "type": "int",
+          "description": "Card-type bitmask; test with TYPE_* constants."
+        }
+      ]
+    },
     "Card.GetCode": {
       "summary_en": [
         "Returns c's current card code and, when present, its secondary code."
@@ -13381,6 +13465,25 @@
         }
       ]
     },
+    "Card.GetPreviousCardTypeOnField": {
+      "summary_en": [
+        "Returns the card-type bitmask saved in the previous on-field state, before the card moved. This is the previous GetCardType value, not the previous ordinary GetType value."
+      ],
+      "summary_zh": [
+        "返回卡片移动前保存在前一场上状态中的卡片种类，对应GetCardType而不是普通GetType。"
+      ],
+      "params": [
+        {
+          "name": "c",
+          "type": "Card"
+        }
+      ],
+      "returns": [
+        {
+          "type": "int"
+        }
+      ]
+    },
     "Card.GetPreviousCodeOnField": {
       "summary_en": [
         "Returns the card code recorded for c's previous on-field state.",
@@ -14350,6 +14453,30 @@
         "pos指定除外时的表示形式，省略时为POS_FACEUP。"
       ]
     },
+    "Card.IsAllCardTypes": {
+      "summary_en": [
+        "Returns true if every bit in type is present in c:GetCardType(). A zero mask matches."
+      ],
+      "summary_zh": [
+        "检查GetCardType结果是否包含type指定的全部卡片种类；0掩码始终匹配。"
+      ],
+      "params": [
+        {
+          "name": "c",
+          "type": "Card"
+        },
+        {
+          "name": "type",
+          "type": "int",
+          "description": "TYPE_* bitmask."
+        }
+      ],
+      "returns": [
+        {
+          "type": "bool"
+        }
+      ]
+    },
     "Card.IsAllColumn": {
       "summary_en": [
         "Checks whether c is treated as occupying or applying to all columns."
@@ -15024,6 +15151,30 @@
         {
           "type": "bool",
           "description": "True if c can be turned face-down by the current reason player."
+        }
+      ]
+    },
+    "Card.IsCardType": {
+      "summary_en": [
+        "Returns true if at least one bit in type is present in c:GetCardType(). Use IsAllCardTypes when every requested bit must match."
+      ],
+      "summary_zh": [
+        "检查GetCardType结果是否包含type指定的任意一种卡片种类；要求全部种类时使用IsAllCardTypes。"
+      ],
+      "params": [
+        {
+          "name": "c",
+          "type": "Card"
+        },
+        {
+          "name": "type",
+          "type": "int",
+          "description": "TYPE_* bitmask."
+        }
+      ],
+      "returns": [
+        {
+          "type": "bool"
         }
       ]
     },
@@ -16243,6 +16394,30 @@
         "判断c当前表示形式是否包含pos。"
       ]
     },
+    "Card.IsPreviousCardTypeOnField": {
+      "summary_en": [
+        "Returns true if at least one requested TYPE_* bit is present in the previous on-field card-type snapshot."
+      ],
+      "summary_zh": [
+        "检查前一场上卡片种类快照是否包含type指定的任意一种种类。"
+      ],
+      "params": [
+        {
+          "name": "c",
+          "type": "Card"
+        },
+        {
+          "name": "type",
+          "type": "int",
+          "description": "TYPE_* bitmask."
+        }
+      ],
+      "returns": [
+        {
+          "type": "bool"
+        }
+      ]
+    },
     "Card.IsPreviousControler": {
       "summary_en": [
         "Checks whether c's previous controller was player."
@@ -16943,6 +17118,49 @@
         }
       ]
     },
+    "Card.Metallization_material": {
+      "summary_en": [
+        "Card-script callback used by the Metalmorph Summon procedure to test the released monster's properties.",
+        "Eligible monster scripts assign this callback on their card table. The procedure in `Scripts/c89812483.lua` passes the material-availability flag plus the released monster's Level, Race, and Attribute."
+      ],
+      "summary_zh": [
+        "「金属化」特殊召唤手续使用的卡片脚本回调，用于检查被解放怪兽的性质。",
+        "符合条件的怪兽脚本会在自己的卡片表上登记这个回调；`Scripts/c89812483.lua`会传入素材可用标记以及被解放怪兽的等级、种族和属性。"
+      ],
+      "params": [
+        {
+          "name": "ft",
+          "type": "int",
+          "description": "Material-availability flag: 1 when a released monster is being checked, otherwise 0.",
+          "description_zh": "素材可用标记：检查已解放怪兽时为1，否则为0。"
+        },
+        {
+          "name": "lv",
+          "type": "int",
+          "description": "Level of the released monster.",
+          "description_zh": "被解放怪兽的等级。"
+        },
+        {
+          "name": "race",
+          "type": "int",
+          "description": "Race mask of the released monster.",
+          "description_zh": "被解放怪兽的种族掩码。"
+        },
+        {
+          "name": "att",
+          "type": "int",
+          "description": "Attribute mask of the released monster.",
+          "description_zh": "被解放怪兽的属性掩码。"
+        }
+      ],
+      "returns": [
+        {
+          "type": "bool",
+          "description": "True if this monster accepts those material properties for the procedure.",
+          "description_zh": "这只怪兽接受这些素材性质作为手续条件时返回true。"
+        }
+      ]
+    },
     "Card.RegisterEffect": {
       "summary_en": [
         "Registers effect e to card c and returns the generated effect field ID.",
@@ -17512,49 +17730,6 @@
     "Card.SetUniqueOnField": {
       "summary_en": [
         "Sets a uniqueness rule for c so only one card with unique_code can exist on the checked field, Monster Zone, or Spell & Trap Zone range."
-      ]
-    },
-    "Card.Metallization_material": {
-      "summary_en": [
-        "Card-script callback used by the Metalmorph Summon procedure to test the released monster's properties.",
-        "Eligible monster scripts assign this callback on their card table. The procedure in `Scripts/c89812483.lua` passes the material-availability flag plus the released monster's Level, Race, and Attribute."
-      ],
-      "summary_zh": [
-        "「金属化」特殊召唤手续使用的卡片脚本回调，用于检查被解放怪兽的性质。",
-        "符合条件的怪兽脚本会在自己的卡片表上登记这个回调；`Scripts/c89812483.lua`会传入素材可用标记以及被解放怪兽的等级、种族和属性。"
-      ],
-      "params": [
-        {
-          "name": "ft",
-          "type": "int",
-          "description": "Material-availability flag: 1 when a released monster is being checked, otherwise 0.",
-          "description_zh": "素材可用标记：检查已解放怪兽时为1，否则为0。"
-        },
-        {
-          "name": "lv",
-          "type": "int",
-          "description": "Level of the released monster.",
-          "description_zh": "被解放怪兽的等级。"
-        },
-        {
-          "name": "race",
-          "type": "int",
-          "description": "Race mask of the released monster.",
-          "description_zh": "被解放怪兽的种族掩码。"
-        },
-        {
-          "name": "att",
-          "type": "int",
-          "description": "Attribute mask of the released monster.",
-          "description_zh": "被解放怪兽的属性掩码。"
-        }
-      ],
-      "returns": [
-        {
-          "type": "bool",
-          "description": "True if this monster accepts those material properties for the procedure.",
-          "description_zh": "这只怪兽接受这些素材性质作为手续条件时返回true。"
-        }
       ]
     },
     "Card.branded_fusion_check": {
@@ -24163,44 +24338,6 @@
       ],
       "returns": []
     },
-    "Effect.SetHintTiming": {
-      "summary_en": [
-        "Sets when the client should offer or highlight e for the handler's controller and, optionally, the opponent.",
-        "If o_time is omitted, the local core copies s_time to the opponent-side mask; masks are interpreted relative to the handler's controller when prompts are checked.",
-        "This controls prompting and display timing only; it does not replace activation legality checks in the effect's condition, cost, or target callbacks."
-      ],
-      "summary_zh": [
-        "设置客户端应在何时向处理者的控制者提示或高亮e，也可以单独设置对手侧提示。",
-        "若省略o_time，本地核心会把s_time复制到对手侧掩码；检查提示时，这两个掩码会按处理者控制者的相对方向解释。",
-        "该函数只控制提示与显示时机；不能替代Condition、Cost或Target回调中的发动合法性检查。"
-      ],
-      "core_summary_en": [
-        "Sets hint timing for e."
-      ],
-      "core_summary_zh": [
-        "设置e的提示时机。"
-      ],
-      "params": [
-        {
-          "name": "e",
-          "type": "Effect"
-        },
-        {
-          "name": "s_time",
-          "type": "int",
-          "description": "Hint timing mask for the handler's controller.",
-          "description_zh": "处理者控制者侧的提示时机掩码。"
-        },
-        {
-          "name": "o_time",
-          "type": "int",
-          "optional": true,
-          "description": "Hint timing mask for the opponent. Defaults to s_time.",
-          "description_zh": "对手侧的提示时机掩码；默认等于s_time。"
-        }
-      ],
-      "returns": []
-    },
     "Effect.SetCategory": {
       "summary_en": [
         "Sets e's operation category flags, such as CATEGORY_DESTROY, CATEGORY_TOHAND, or CATEGORY_SPECIAL_SUMMON.",
@@ -24363,6 +24500,44 @@
         {
           "name": "desc",
           "type": "int"
+        }
+      ],
+      "returns": []
+    },
+    "Effect.SetHintTiming": {
+      "summary_en": [
+        "Sets when the client should offer or highlight e for the handler's controller and, optionally, the opponent.",
+        "If o_time is omitted, the local core copies s_time to the opponent-side mask; masks are interpreted relative to the handler's controller when prompts are checked.",
+        "This controls prompting and display timing only; it does not replace activation legality checks in the effect's condition, cost, or target callbacks."
+      ],
+      "summary_zh": [
+        "设置客户端应在何时向处理者的控制者提示或高亮e，也可以单独设置对手侧提示。",
+        "若省略o_time，本地核心会把s_time复制到对手侧掩码；检查提示时，这两个掩码会按处理者控制者的相对方向解释。",
+        "该函数只控制提示与显示时机；不能替代Condition、Cost或Target回调中的发动合法性检查。"
+      ],
+      "core_summary_en": [
+        "Sets hint timing for e."
+      ],
+      "core_summary_zh": [
+        "设置e的提示时机。"
+      ],
+      "params": [
+        {
+          "name": "e",
+          "type": "Effect"
+        },
+        {
+          "name": "s_time",
+          "type": "int",
+          "description": "Hint timing mask for the handler's controller.",
+          "description_zh": "处理者控制者侧的提示时机掩码。"
+        },
+        {
+          "name": "o_time",
+          "type": "int",
+          "optional": true,
+          "description": "Hint timing mask for the opponent. Defaults to s_time.",
+          "description_zh": "对手侧的提示时机掩码；默认等于s_time。"
         }
       ],
       "returns": []

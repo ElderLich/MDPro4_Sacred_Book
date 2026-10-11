@@ -94,9 +94,9 @@ Choose the code family first, then add the callbacks required by that specific c
 
 ## Complete Code Reference
 
-`SetCode` accepts a 32-bit integer, so there is no finite list of every possible custom number. The current engine snapshot defines **339 named code bases** for this parameter: **76 `EVENT_*` bases**, **262 ordinary `EFFECT_*` codes**, and **1 card-ID flag base**.
+`SetCode` accepts a 32-bit integer, so there is no finite list of every possible custom number. The current engine snapshot defines **342 named code bases** for this parameter: **76 `EVENT_*` bases**, **265 ordinary `EFFECT_*` codes**, and **1 card-ID flag base**.
 
-The local script snapshot contains **34,180 direct `SetCode` calls** using **446 distinct written expressions**. The tables below list every named engine code. **Direct uses** counts only expressions that spell that constant explicitly; a variable such as `custom_code` cannot be assigned to a base constant reliably by static text scanning.
+The local script snapshot contains **34,714 direct `SetCode` calls** using **447 distinct written expressions**. The tables below list every named engine code. **Direct uses** counts only expressions that spell that constant explicitly; a variable such as `custom_code` cannot be assigned to a base constant reliably by static text scanning.
 
 ### Codes that are built from a base
 
@@ -132,74 +132,74 @@ For `EFFECT_TYPE_SINGLE`, an ordinary event generally concerns the handler itsel
 | --- | ---: | --- | ---: |
 | `EVENT_STARTUP` | `1000` | Legacy/reserved local constant that is absent from the current core snapshot. No indexed card script registers it directly. | 0 |
 | `EVENT_FLIP` | `1001` | When flipped | 111 |
-| `EVENT_FREE_CHAIN` | `1002` | Open activation timing rather than a past occurrence. Common for Spell/Trap activations and optional Quick Effects. | 5697 |
+| `EVENT_FREE_CHAIN` | `1002` | Open activation timing rather than a past occurrence. Common for Spell/Trap activations and optional Quick Effects. | 5786 |
 | `EVENT_DESTROY` | `1010` | Before a confirmed destroyed card moves | 8 |
-| `EVENT_REMOVE` | `1011` | When banished | 188 |
-| `EVENT_TO_HAND` | `1012` | When added to hand | 91 |
+| `EVENT_REMOVE` | `1011` | When banished | 192 |
+| `EVENT_TO_HAND` | `1012` | When added to hand | 101 |
 | `EVENT_TO_DECK` | `1013` | When returned to Deck | 25 |
-| `EVENT_TO_GRAVE` | `1014` | When sent to Graveyard (excluding REASON_RETURN) | 1269 |
+| `EVENT_TO_GRAVE` | `1014` | When sent to Graveyard (excluding REASON_RETURN) | 1278 |
 | `EVENT_LEAVE_FIELD` | `1015` | When leaving the field | 323 |
-| `EVENT_CHANGE_POS` | `1016` | When position changes | 57 |
-| `EVENT_RELEASE` | `1017` | When Tributed | 88 |
+| `EVENT_CHANGE_POS` | `1016` | When position changes | 58 |
+| `EVENT_RELEASE` | `1017` | When Tributed | 91 |
 | `EVENT_DISCARD` | `1018` | When discarding from hand | 14 |
 | `EVENT_LEAVE_FIELD_P` | `1019` | Before a card leaving the field moves | 66 |
-| `EVENT_CHAIN_SOLVING` | `1020` | When chain resolution starts (after EVENT_CHAIN_ACTIVATING) | 144 |
+| `EVENT_CHAIN_SOLVING` | `1020` | When chain resolution starts (after EVENT_CHAIN_ACTIVATING) | 148 |
 | `EVENT_CHAIN_ACTIVATING` | `1021` | When chain activation is preparing | 0 |
-| `EVENT_CHAIN_SOLVED` | `1022` | When chain resolution ends | 101 |
+| `EVENT_CHAIN_SOLVED` | `1022` | When chain resolution ends | 107 |
 | `EVENT_CHAIN_ACTIVATED` | `1023` | Legacy/reserved local constant that is absent from the current core snapshot. No indexed card script registers it directly. | 0 |
-| `EVENT_CHAIN_NEGATED` | `1024` | When chain activation is negated (after EVENT_CHAIN_ACTIVATING) | 26 |
+| `EVENT_CHAIN_NEGATED` | `1024` | When chain activation is negated (after EVENT_CHAIN_ACTIVATING) | 27 |
 | `EVENT_CHAIN_DISABLED` | `1025` | When chain effect is negated | 54 |
 | `EVENT_CHAIN_END` | `1026` | When chain ends | 45 |
-| `EVENT_CHAINING` | `1027` | When an effect is activated | 1007 |
+| `EVENT_CHAINING` | `1027` | When an effect is activated | 1028 |
 | `EVENT_BECOME_TARGET` | `1028` | When becoming an effect target | 26 |
-| `EVENT_DESTROYED` | `1029` | When destroyed | 640 |
-| `EVENT_MOVE` | `1030` | When moving a card (e.g., Urgent Rabbit Horse) | 32 |
+| `EVENT_DESTROYED` | `1029` | When destroyed | 647 |
+| `EVENT_MOVE` | `1030` | When moving a card (e.g., Urgent Rabbit Horse) | 37 |
 | `EVENT_LEAVE_GRAVE` | `1031` | When leaving the Graveyard | 6 |
-| `EVENT_LEAVE_DECK` | `1032` | When leaving the Deck or Extra Deck | 2 |
+| `EVENT_LEAVE_DECK` | `1032` | When leaving the Deck or Extra Deck | 3 |
 | `EVENT_ADJUST` | `1040` | Continuous-only. Runs after the core completes an adjustment pass; use for idempotent state reconciliation or unusual win checks. | 23 |
-| `EVENT_BREAK_EFFECT` | `1050` | Continuous-only. Runs when `Duel.BreakEffect()` creates a visible resolution break. | 24 |
+| `EVENT_BREAK_EFFECT` | `1050` | Continuous-only. Runs when `Duel.BreakEffect()` creates a visible resolution break. | 25 |
 
 #### Summon, material, damage, and control events
 
 | Code | Value | What it is for | Direct uses |
 | --- | ---: | --- | ---: |
-| `EVENT_SUMMON_SUCCESS` | `1100` | When Normal Summon succeeds | 1355 |
-| `EVENT_FLIP_SUMMON_SUCCESS` | `1101` | When Flip Summon succeeds | 164 |
-| `EVENT_SPSUMMON_SUCCESS` | `1102` | When Special Summon succeeds | 2384 |
-| `EVENT_SUMMON` | `1103` | During Normal Summon (before monster appears, e.g., Solemn Warning timing) | 24 |
+| `EVENT_SUMMON_SUCCESS` | `1100` | When Normal Summon succeeds | 1382 |
+| `EVENT_FLIP_SUMMON_SUCCESS` | `1101` | When Flip Summon succeeds | 165 |
+| `EVENT_SPSUMMON_SUCCESS` | `1102` | When Special Summon succeeds | 2451 |
+| `EVENT_SUMMON` | `1103` | During Normal Summon (before monster appears, e.g., Solemn Warning timing) | 25 |
 | `EVENT_FLIP_SUMMON` | `1104` | During Flip Summon | 16 |
-| `EVENT_SPSUMMON` | `1105` | During Special Summon | 50 |
-| `EVENT_MSET` | `1106` | When Setting a monster | 16 |
-| `EVENT_SSET` | `1107` | When Setting a Spell/Trap | 15 |
-| `EVENT_BE_MATERIAL` | `1108` | When used as Synchro/Xyz/Link Material, used as Ritual/Fusion Material, or Tributed for a Tribute Summon | 239 |
+| `EVENT_SPSUMMON` | `1105` | During Special Summon | 51 |
+| `EVENT_MSET` | `1106` | When Setting a monster | 17 |
+| `EVENT_SSET` | `1107` | When Setting a Spell/Trap | 16 |
+| `EVENT_BE_MATERIAL` | `1108` | When used as Synchro/Xyz/Link Material, used as Ritual/Fusion Material, or Tributed for a Tribute Summon | 241 |
 | `EVENT_BE_PRE_MATERIAL` | `1109` | When about to be used as Synchro/Xyz/Link Material or Tributed for a Tribute Summon | 6 |
-| `EVENT_DRAW` | `1110` | When drawing | 54 |
-| `EVENT_DAMAGE` | `1111` | When dealing battle/effect damage | 73 |
+| `EVENT_DRAW` | `1110` | When drawing | 59 |
+| `EVENT_DAMAGE` | `1111` | When dealing battle/effect damage | 74 |
 | `EVENT_RECOVER` | `1112` | When recovering LP | 20 |
 | `EVENT_PREDRAW` | `1113` | Before normal draw in Draw Phase | 25 |
 | `EVENT_SUMMON_NEGATED` | `1114` | When Normal Summon is negated | 3 |
 | `EVENT_FLIP_SUMMON_NEGATED` | `1115` | When Flip Summon is negated | 0 |
 | `EVENT_SPSUMMON_NEGATED` | `1116` | When Special Summon is negated | 1 |
 | `EVENT_SPSUMMON_SUCCESS_G_P` | `1117` | Continuous-only. Runs before a group-procedure Special Summon such as a Pendulum Summon succeeds. | 3 |
-| `EVENT_CONTROL_CHANGED` | `1120` | When control changes | 8 |
+| `EVENT_CONTROL_CHANGED` | `1120` | When control changes | 9 |
 | `EVENT_EQUIP` | `1121` | When an Equip Card is equipped | 17 |
 
 #### Battle and random-result events
 
 | Code | Value | What it is for | Direct uses |
 | --- | ---: | --- | ---: |
-| `EVENT_ATTACK_ANNOUNCE` | `1130` | When attack is declared | 478 |
+| `EVENT_ATTACK_ANNOUNCE` | `1130` | When attack is declared | 482 |
 | `EVENT_BE_BATTLE_TARGET` | `1131` | When selected as attack target | 150 |
 | `EVENT_BATTLE_START` | `1132` | When Damage Step starts (before flipping) | 125 |
 | `EVENT_BATTLE_CONFIRM` | `1133` | Before damage calculation (after flipping) | 35 |
-| `EVENT_PRE_DAMAGE_CALCULATE` | `1134` | During damage calculation (e.g., Wing Slash) | 129 |
+| `EVENT_PRE_DAMAGE_CALCULATE` | `1134` | During damage calculation (e.g., Wing Slash) | 132 |
 | `EVENT_DAMAGE_CALCULATING` | `1135` | Legacy/reserved local constant that is absent from the current core snapshot. No indexed card script registers it directly. | 0 |
 | `EVENT_PRE_BATTLE_DAMAGE` | `1136` | Continuous-only. Runs immediately before battle damage is applied. | 4 |
 | `EVENT_BATTLE_END` | `1137` | Legacy/reserved local constant that is absent from the current core snapshot. No indexed card script registers it directly. | 0 |
 | `EVENT_BATTLED` | `1138` | After damage calculation (e.g., Alien Girl, same timing as Flip Effects) | 158 |
-| `EVENT_BATTLE_DESTROYING` | `1139` | When destroying a monster by battle and sending it to Graveyard (e.g., Blackwing - Shura the Blue Flame) | 329 |
-| `EVENT_BATTLE_DESTROYED` | `1140` | When destroyed by battle and sent to Graveyard (e.g., Mystic Tomato) | 339 |
-| `EVENT_DAMAGE_STEP_END` | `1141` | When Damage Step ends | 138 |
+| `EVENT_BATTLE_DESTROYING` | `1139` | When destroying a monster by battle and sending it to Graveyard (e.g., Blackwing - Shura the Blue Flame) | 332 |
+| `EVENT_BATTLE_DESTROYED` | `1140` | When destroyed by battle and sent to Graveyard (e.g., Mystic Tomato) | 341 |
+| `EVENT_DAMAGE_STEP_END` | `1141` | When Damage Step ends | 139 |
 | `EVENT_ATTACK_DISABLED` | `1142` | When attack is negated (e.g., Double Chance) | 6 |
 | `EVENT_BATTLE_DAMAGE` | `1143` | When dealing battle damage | 210 |
 | `EVENT_TOSS_DICE` | `1150` | After dice roll result | 1 |
@@ -221,11 +221,11 @@ For `EFFECT_TYPE_SINGLE`, an ordinary event generally concerns the handler itsel
 
 | Code | Value | What it is for | Direct uses |
 | --- | ---: | --- | ---: |
-| `EVENT_PHASE` | `0x1000` | Composed base. Add a `PHASE_*` value, for example `EVENT_PHASE+PHASE_END`, for a phase-end Trigger or Quick effect. | 1507 |
+| `EVENT_PHASE` | `0x1000` | Composed base. Add a `PHASE_*` value, for example `EVENT_PHASE+PHASE_END`, for a phase-end Trigger or Quick effect. | 1526 |
 | `EVENT_PHASE_START` | `0x2000` | Continuous-only composed base. Add a `PHASE_*` value, for example `EVENT_PHASE_START+PHASE_DRAW`. | 42 |
 | `EVENT_ADD_COUNTER` | `0x10000` | Composed base. Add the 16-bit counter type, for example `EVENT_ADD_COUNTER+0x1`. The core raises it after counters are successfully added. | 2 |
 | `EVENT_REMOVE_COUNTER` | `0x20000` | Composed base. Add the 16-bit counter type. `Duel.RemoveCounter` raises it automatically; `Card.RemoveCounter` does not. | 1 |
-| `EVENT_CUSTOM` | `0x10000000` | Composed base for script-defined events. Add a stable unique ID and raise that exact code with `Duel.RaiseEvent` or `Duel.RaiseSingleEvent`. | 72 |
+| `EVENT_CUSTOM` | `0x10000000` | Composed base for script-defined events. Add a stable unique ID and raise that exact code with `Duel.RaiseEvent` or `Duel.RaiseSingleEvent`. | 76 |
 
 ### Every engine effect code
 
@@ -235,43 +235,43 @@ These codes identify continuous rules, modifiers, restrictions, procedures, and 
 
 | Code | Value | What it is for | Direct uses |
 | --- | ---: | --- | ---: |
-| `EFFECT_IMMUNE_EFFECT` | `1` | Immune to effects | 243 |
-| `EFFECT_DISABLE` | `2` | Negates effects (e.g., Skill Drain) | 714 |
-| `EFFECT_CANNOT_DISABLE` | `3` | Effect cannot be negated | 3 |
+| `EFFECT_IMMUNE_EFFECT` | `1` | Immune to effects | 248 |
+| `EFFECT_DISABLE` | `2` | Negates effects (e.g., Skill Drain) | 725 |
+| `EFFECT_CANNOT_DISABLE` | `3` | Effect cannot be negated | 12 |
 | `EFFECT_SET_CONTROL` | `4` | Sets control | 26 |
 | `EFFECT_CANNOT_CHANGE_CONTROL` | `5` | Cannot change control | 11 |
-| `EFFECT_CANNOT_ACTIVATE` | `6` | Player cannot activate effects | 317 |
-| `EFFECT_CANNOT_TRIGGER` | `7` | Card cannot trigger effects | 113 |
-| `EFFECT_DISABLE_EFFECT` | `8` | Negates effects (e.g., Forbidden Chalice) | 590 |
+| `EFFECT_CANNOT_ACTIVATE` | `6` | Player cannot activate effects | 326 |
+| `EFFECT_CANNOT_TRIGGER` | `7` | Card cannot trigger effects | 115 |
+| `EFFECT_DISABLE_EFFECT` | `8` | Negates effects (e.g., Forbidden Chalice) | 601 |
 | `EFFECT_DISABLE_CHAIN` | `9` | Negates in chain (processor.cpp) | 1 |
-| `EFFECT_DISABLE_TRAPMONSTER` | `10` | Negates Trap Monsters | 100 |
-| `EFFECT_CANNOT_INACTIVATE` | `12` | Activation cannot be negated | 17 |
-| `EFFECT_CANNOT_DISEFFECT` | `13` | Cannot be negated during effect processing | 15 |
+| `EFFECT_DISABLE_TRAPMONSTER` | `10` | Negates Trap Monsters | 107 |
+| `EFFECT_CANNOT_INACTIVATE` | `12` | Activation cannot be negated | 18 |
+| `EFFECT_CANNOT_DISEFFECT` | `13` | Cannot be negated during effect processing | 16 |
 | `EFFECT_CANNOT_CHANGE_POSITION` | `14` | Cannot change position | 75 |
-| `EFFECT_TRAP_ACT_IN_HAND` | `15` | Trap can activate from hand | 44 |
-| `EFFECT_TRAP_ACT_IN_SET_TURN` | `16` | Trap can activate in the turn it was Set | 53 |
+| `EFFECT_TRAP_ACT_IN_HAND` | `15` | Trap can activate from hand | 45 |
+| `EFFECT_TRAP_ACT_IN_SET_TURN` | `16` | Trap can activate in the turn it was Set | 56 |
 | `EFFECT_REMAIN_FIELD` | `17` | Remains on field for X turns (e.g., Swords of Revealing Light) | 57 |
 | `EFFECT_MONSTER_SSET` | `18` | Monster can be Set in Spell/Trap Zone | 20 |
-| `EFFECT_CANNOT_SUMMON` | `20` | Cannot Normal Summon monsters | 135 |
+| `EFFECT_CANNOT_SUMMON` | `20` | Cannot Normal Summon monsters | 136 |
 | `EFFECT_CANNOT_FLIP_SUMMON` | `21` | Cannot Flip Summon monsters | 34 |
-| `EFFECT_CANNOT_SPECIAL_SUMMON` | `22` | Cannot Special Summon monsters | 901 |
+| `EFFECT_CANNOT_SPECIAL_SUMMON` | `22` | Cannot Special Summon monsters | 920 |
 | `EFFECT_CANNOT_MSET` | `23` | Cannot Set monsters | 46 |
 | `EFFECT_CANNOT_SSET` | `24` | Cannot Set Spells/Traps | 27 |
 | `EFFECT_CANNOT_DRAW` | `25` | Cannot draw cards | 9 |
 | `EFFECT_CANNOT_DISABLE_SUMMON` | `26` | Summon cannot be negated | 9 |
 | `EFFECT_CANNOT_DISABLE_SPSUMMON` | `27` | Special Summon cannot be negated | 21 |
 | `EFFECT_SET_SUMMON_COUNT_LIMIT` | `28` | Limits Normal Summon count per turn | 6 |
-| `EFFECT_EXTRA_SUMMON_COUNT` | `29` | Increases Normal Summon count | 73 |
-| `EFFECT_SPSUMMON_CONDITION` | `30` | Special Summon condition | 661 |
+| `EFFECT_EXTRA_SUMMON_COUNT` | `29` | Increases Normal Summon count | 74 |
+| `EFFECT_SPSUMMON_CONDITION` | `30` | Special Summon condition | 668 |
 | `EFFECT_REVIVE_LIMIT` | `31` | Monsters with revival restrictions (Card.EnableReviveLimit()) | 0 |
 
 #### Summon and Set procedures
 
 | Code | Value | What it is for | Direct uses |
 | --- | ---: | --- | ---: |
-| `EFFECT_SUMMON_PROC` | `32` | Summon rule effect | 161 |
+| `EFFECT_SUMMON_PROC` | `32` | Summon rule effect | 166 |
 | `EFFECT_LIMIT_SUMMON_PROC` | `33` | Summon rule restriction | 23 |
-| `EFFECT_SPSUMMON_PROC` | `34` | Special Summon rule | 680 |
+| `EFFECT_SPSUMMON_PROC` | `34` | Special Summon rule | 693 |
 | `EFFECT_EXTRA_SET_COUNT` | `35` | Increases Set (Normal Summon) count | 7 |
 | `EFFECT_SET_PROC` | `36` | Set (Normal Summon) rule | 30 |
 | `EFFECT_LIMIT_SET_PROC` | `37` | Set (Normal Summon) rule restriction | 16 |
@@ -283,15 +283,15 @@ These codes identify continuous rules, modifiers, restrictions, procedures, and 
 | Code | Value | What it is for | Direct uses |
 | --- | ---: | --- | ---: |
 | `EFFECT_INDESTRUCTABLE` | `40` | Cannot be destroyed | 2 |
-| `EFFECT_INDESTRUCTABLE_EFFECT` | `41` | Cannot be destroyed by effects | 442 |
-| `EFFECT_INDESTRUCTABLE_BATTLE` | `42` | Cannot be destroyed by battle | 519 |
-| `EFFECT_UNRELEASABLE_SUM` | `43` | Cannot be Tributed for a Tribute Summon | 66 |
+| `EFFECT_INDESTRUCTABLE_EFFECT` | `41` | Cannot be destroyed by effects | 449 |
+| `EFFECT_INDESTRUCTABLE_BATTLE` | `42` | Cannot be destroyed by battle | 523 |
+| `EFFECT_UNRELEASABLE_SUM` | `43` | Cannot be Tributed for a Tribute Summon | 67 |
 | `EFFECT_UNRELEASABLE_NONSUM` | `44` | Cannot be Tributed except for a Tribute Summon | 48 |
 | `EFFECT_DESTROY_SUBSTITUTE` | `45` | Mandatory destruction substitute (replace this card's destruction with another card) | 41 |
 | `EFFECT_CANNOT_RELEASE` | `46` | Cannot perform Tribute actions | 7 |
-| `EFFECT_INDESTRUCTABLE_COUNT` | `47` | Cannot be destroyed X times per turn | 107 |
+| `EFFECT_INDESTRUCTABLE_COUNT` | `47` | Cannot be destroyed X times per turn | 109 |
 | `EFFECT_UNRELEASABLE_EFFECT` | `48` | Cannot be Tributed | 1 |
-| `EFFECT_DESTROY_REPLACE` | `50` | Optional destruction substitute (replace destruction with another action) | 242 |
+| `EFFECT_DESTROY_REPLACE` | `50` | Optional destruction substitute (replace destruction with another action) | 246 |
 | `EFFECT_RELEASE_REPLACE` | `51` | Tribute substitute | 0 |
 | `EFFECT_SEND_REPLACE` | `52` | Can send to another location instead of the intended one (e.g., Dessert Castle) | 5 |
 | `EFFECT_CANNOT_DISCARD_HAND` | `55` | Cannot discard from hand | 2 |
@@ -299,30 +299,30 @@ These codes identify continuous rules, modifiers, restrictions, procedures, and 
 | `EFFECT_CANNOT_USE_AS_COST` | `57` | Cannot be used as cost | 0 |
 | `EFFECT_CANNOT_PLACE_COUNTER` | `58` | Cannot place counters | 1 |
 | `EFFECT_CANNOT_TO_GRAVE_AS_COST` | `59` | Cannot be sent to Graveyard as cost | 1 |
-| `EFFECT_LEAVE_FIELD_REDIRECT` | `60` | Redirect destination when leaving field | 273 |
+| `EFFECT_LEAVE_FIELD_REDIRECT` | `60` | Redirect destination when leaving field | 275 |
 | `EFFECT_TO_HAND_REDIRECT` | `61` | Redirect destination when returning to hand | 4 |
 | `EFFECT_TO_DECK_REDIRECT` | `62` | Redirect destination when returning to Deck | 2 |
 | `EFFECT_TO_GRAVE_REDIRECT` | `63` | Redirect destination when sent to Graveyard | 35 |
 | `EFFECT_REMOVE_REDIRECT` | `64` | Redirect destination when banished | 0 |
-| `EFFECT_CANNOT_TO_HAND` | `65` | Cannot be added to hand | 12 |
+| `EFFECT_CANNOT_TO_HAND` | `65` | Cannot be added to hand | 21 |
 | `EFFECT_CANNOT_TO_DECK` | `66` | Cannot be returned to Deck | 4 |
 | `EFFECT_CANNOT_REMOVE` | `67` | Cannot be banished | 22 |
 | `EFFECT_CANNOT_TO_GRAVE` | `68` | Cannot be sent to Graveyard | 3 |
 | `EFFECT_CANNOT_TURN_SET` | `69` | Cannot be Set face-down | 9 |
 | `EFFECT_CANNOT_BE_BATTLE_TARGET` | `70` | Cannot be targeted for attacks | 57 |
-| `EFFECT_CANNOT_BE_EFFECT_TARGET` | `71` | Cannot be targeted by effects | 317 |
+| `EFFECT_CANNOT_BE_EFFECT_TARGET` | `71` | Cannot be targeted by effects | 320 |
 | `EFFECT_IGNORE_BATTLE_TARGET` | `72` | Cannot be targeted for attacks - weak type (e.g., Legendary Fisherman) | 15 |
-| `EFFECT_CANNOT_DIRECT_ATTACK` | `73` | Cannot attack directly | 106 |
-| `EFFECT_DIRECT_ATTACK` | `74` | Can attack directly | 192 |
+| `EFFECT_CANNOT_DIRECT_ATTACK` | `73` | Cannot attack directly | 108 |
+| `EFFECT_DIRECT_ATTACK` | `74` | Can attack directly | 195 |
 | `EFFECT_DUAL_STATUS` | `75` | Gemini status | 2 |
-| `EFFECT_EQUIP_LIMIT` | `76` | Equip target restriction | 603 |
+| `EFFECT_EQUIP_LIMIT` | `76` | Equip target restriction | 608 |
 | `EFFECT_DUAL_SUMMONABLE` | `77` | Can be re-summoned (Gemini) | 1 |
 | `EFFECT_UNION_LIMIT` | `78` | Union restriction | 20 |
 | `EFFECT_REVERSE_DAMAGE` | `80` | Converts damage to recovery | 9 |
 | `EFFECT_REVERSE_RECOVER` | `81` | Converts recovery to damage | 2 |
-| `EFFECT_CHANGE_DAMAGE` | `82` | Changes damage value | 89 |
+| `EFFECT_CHANGE_DAMAGE` | `82` | Changes damage value | 90 |
 | `EFFECT_REFLECT_DAMAGE` | `83` | Reflects damage | 12 |
-| `EFFECT_CANNOT_ATTACK` | `85` | Cannot attack | 327 |
+| `EFFECT_CANNOT_ATTACK` | `85` | Cannot attack | 329 |
 | `EFFECT_CANNOT_ATTACK_ANNOUNCE` | `86` | Cannot declare an attack | 104 |
 | `EFFECT_CANNOT_CHANGE_POS_E` | `87` | Cannot be changed to Defense Position by effects (e.g., Aggro Cloud) | 1 |
 | `EFFECT_ACTIVATE_COST` | `90` | Activation cost (e.g., Magical Shackles) | 7 |
@@ -337,13 +337,13 @@ These codes identify continuous rules, modifiers, restrictions, procedures, and 
 
 | Code | Value | What it is for | Direct uses |
 | --- | ---: | --- | ---: |
-| `EFFECT_UPDATE_ATTACK` | `100` | Increase/decrease ATK | 2105 |
-| `EFFECT_SET_ATTACK` | `101` | Set ATK, ATK becomes X for Special Summon, or continuously change ATK | 105 |
-| `EFFECT_SET_ATTACK_FINAL` | `102` | Temporarily change ATK (all chain-entering effects) | 368 |
-| `EFFECT_SET_BASE_ATTACK` | `103` | Set original ATK or continuously change original ATK | 71 |
-| `EFFECT_UPDATE_DEFENSE` | `104` | Increase/decrease DEF | 499 |
+| `EFFECT_UPDATE_ATTACK` | `100` | Increase/decrease ATK | 2120 |
+| `EFFECT_SET_ATTACK` | `101` | Set ATK, ATK becomes X for Special Summon, or continuously change ATK | 106 |
+| `EFFECT_SET_ATTACK_FINAL` | `102` | Temporarily change ATK (all chain-entering effects) | 374 |
+| `EFFECT_SET_BASE_ATTACK` | `103` | Set original ATK or continuously change original ATK | 75 |
+| `EFFECT_UPDATE_DEFENSE` | `104` | Increase/decrease DEF | 506 |
 | `EFFECT_SET_DEFENSE` | `105` | Set DEF, DEF becomes X for Special Summon, or continuously change DEF | 58 |
-| `EFFECT_SET_DEFENSE_FINAL` | `106` | Temporarily change DEF (all chain-entering effects) | 105 |
+| `EFFECT_SET_DEFENSE_FINAL` | `106` | Temporarily change DEF (all chain-entering effects) | 106 |
 | `EFFECT_SET_BASE_DEFENSE` | `107` | Set original DEF or continuously change original DEF | 28 |
 | `EFFECT_REVERSE_UPDATE` | `108` | Invert ATK/DEF increase/decrease (e.g., Tengu) | 1 |
 | `EFFECT_SWAP_AD` | `109` | Swap ATK and DEF (e.g., Super Crashbug) | 1 |
@@ -351,18 +351,18 @@ These codes identify continuous rules, modifiers, restrictions, procedures, and 
 | `EFFECT_SET_BASE_ATTACK_FINAL` | `111` | Temporarily change original ATK | 27 |
 | `EFFECT_SET_BASE_DEFENSE_FINAL` | `112` | Temporarily change original DEF | 10 |
 | `EFFECT_ADD_CODE` | `113` | Add card code | 5 |
-| `EFFECT_CHANGE_CODE` | `114` | Change card code | 65 |
-| `EFFECT_ADD_TYPE` | `115` | Add card type (Types) | 132 |
+| `EFFECT_CHANGE_CODE` | `114` | Change card code | 66 |
+| `EFFECT_ADD_TYPE` | `115` | Add card type (Types) | 133 |
 | `EFFECT_REMOVE_TYPE` | `116` | Remove card type | 12 |
-| `EFFECT_CHANGE_TYPE` | `117` | Change card type | 85 |
+| `EFFECT_CHANGE_TYPE` | `117` | Change card type | 89 |
 | `EFFECT_ADD_RACE` | `120` | Add race | 0 |
 | `EFFECT_REMOVE_RACE` | `121` | Remove race | 1 |
-| `EFFECT_CHANGE_RACE` | `122` | Change race | 68 |
+| `EFFECT_CHANGE_RACE` | `122` | Change race | 69 |
 | `EFFECT_ADD_ATTRIBUTE` | `125` | Add attribute | 20 |
 | `EFFECT_REMOVE_ATTRIBUTE` | `126` | Remove attribute | 1 |
-| `EFFECT_CHANGE_ATTRIBUTE` | `127` | Change attribute | 84 |
-| `EFFECT_UPDATE_LEVEL` | `130` | Change Level | 262 |
-| `EFFECT_CHANGE_LEVEL` | `131` | Set Level | 235 |
+| `EFFECT_CHANGE_ATTRIBUTE` | `127` | Change attribute | 86 |
+| `EFFECT_UPDATE_LEVEL` | `130` | Change Level | 264 |
+| `EFFECT_CHANGE_LEVEL` | `131` | Set Level | 239 |
 | `EFFECT_UPDATE_RANK` | `132` | Change Rank | 6 |
 | `EFFECT_CHANGE_RANK` | `133` | Set Rank | 3 |
 | `EFFECT_UPDATE_LSCALE` | `134` | Change Left Scale | 15 |
@@ -379,7 +379,7 @@ These codes identify continuous rules, modifiers, restrictions, procedures, and 
 | `EFFECT_TRIBUTE_LIMIT` | `154` | Tribute restriction | 9 |
 | `EFFECT_EXTRA_RELEASE_SUM` | `155` | Tribute substitute for summon (e.g., Kaiser Cyclone) | 1 |
 | `EFFECT_TRIPLE_TRIBUTE` | `156` | Reserved/unsupported in the current snapshot; no indexed script uses it directly. | 0 |
-| `EFFECT_ADD_EXTRA_TRIBUTE` | `157` | Add usable Tributes (e.g., True Draco) | 13 |
+| `EFFECT_ADD_EXTRA_TRIBUTE` | `157` | Add usable Tributes (e.g., True Draco) | 14 |
 | `EFFECT_EXTRA_RELEASE_NONSUM` | `158` | Tribute substitute for effect cost (e.g., Dark World) | 2 |
 | `EFFECT_PUBLIC` | `160` | Make hand public | 22 |
 
@@ -389,7 +389,7 @@ These codes identify continuous rules, modifiers, restrictions, procedures, and 
 | --- | ---: | --- | ---: |
 | `EFFECT_LPCOST_CHANGE` | `170` | Change LP cost value | 6 |
 | `EFFECT_LPCOST_REPLACE` | `171` | Replace LP cost with another action | 1 |
-| `EFFECT_SKIP_DP` | `180` | Skip Draw Phase | 13 |
+| `EFFECT_SKIP_DP` | `180` | Skip Draw Phase | 14 |
 | `EFFECT_SKIP_SP` | `181` | Skip Standby Phase | 2 |
 | `EFFECT_SKIP_M1` | `182` | Skip Main Phase 1 | 6 |
 | `EFFECT_SKIP_BP` | `183` | Skip Battle Phase | 21 |
@@ -399,7 +399,7 @@ These codes identify continuous rules, modifiers, restrictions, procedures, and 
 | `EFFECT_CANNOT_EP` | `187` | Cannot enter End Phase | 1 |
 | `EFFECT_SKIP_TURN` | `188` | Skip entire turn | 5 |
 | `EFFECT_DEFENSE_ATTACK` | `190` | Can attack in Defense Position | 19 |
-| `EFFECT_MUST_ATTACK` | `191` | Must attack | 53 |
+| `EFFECT_MUST_ATTACK` | `191` | Must attack | 54 |
 | `EFFECT_FIRST_ATTACK` | `192` | Must attack first | 1 |
 | `EFFECT_ATTACK_ALL` | `193` | Can attack all monsters | 43 |
 | `EFFECT_EXTRA_ATTACK` | `194` | Increase attack count | 162 |
@@ -414,7 +414,7 @@ These codes identify continuous rules, modifiers, restrictions, procedures, and 
 | `EFFECT_BATTLE_DAMAGE_TO_EFFECT` | `205` | Treat battle damage as effect damage | 1 |
 | `EFFECT_BOTH_BATTLE_DAMAGE` | `206` | Both players take battle damage | 3 |
 | `EFFECT_ALSO_BATTLE_DAMAGE` | `207` | Opponent also takes battle damage dealt to you | 5 |
-| `EFFECT_CHANGE_BATTLE_DAMAGE` | `208` | Change battle damage dealt by this card or received by player | 73 |
+| `EFFECT_CHANGE_BATTLE_DAMAGE` | `208` | Change battle damage dealt by this card or received by player | 74 |
 | `EFFECT_TOSS_COIN_REPLACE` | `220` | Replace coin toss | 0 |
 | `EFFECT_TOSS_DICE_REPLACE` | `221` | Replace dice roll | 0 |
 
@@ -427,11 +427,11 @@ These codes identify continuous rules, modifiers, restrictions, procedures, and 
 | `EFFECT_EXTRA_SYNCHRO_MATERIAL` | `232` | Can be treated as your Synchro Material from the hand or opponent's field | 3 |
 | `EFFECT_XYZ_MATERIAL` | `233` | Can be used as Xyz Material | 0 |
 | `EFFECT_FUSION_SUBSTITUTE` | `234` | Fusion Material substitute | 12 |
-| `EFFECT_CANNOT_BE_FUSION_MATERIAL` | `235` | Cannot be used as Fusion Material | 50 |
+| `EFFECT_CANNOT_BE_FUSION_MATERIAL` | `235` | Cannot be used as Fusion Material | 51 |
 | `EFFECT_CANNOT_BE_SYNCHRO_MATERIAL` | `236` | Cannot be used as Synchro Material | 101 |
 | `EFFECT_SYNCHRO_MATERIAL_CUSTOM` | `237` | Custom Tuner Synchro process | 7 |
-| `EFFECT_CANNOT_BE_XYZ_MATERIAL` | `238` | Cannot be used as Xyz Material | 74 |
-| `EFFECT_CANNOT_BE_LINK_MATERIAL` | `239` | Cannot be used as Link Material | 68 |
+| `EFFECT_CANNOT_BE_XYZ_MATERIAL` | `238` | Cannot be used as Xyz Material | 76 |
+| `EFFECT_CANNOT_BE_LINK_MATERIAL` | `239` | Cannot be used as Link Material | 69 |
 | `EFFECT_SYNCHRO_LEVEL` | `240` | Level when used as Synchro Material | 5 |
 | `EFFECT_RITUAL_LEVEL` | `241` | Level when used as Ritual Tribute | 10 |
 | `EFFECT_XYZ_LEVEL` | `242` | Level when used as Xyz Material | 18 |
@@ -442,7 +442,7 @@ These codes identify continuous rules, modifiers, restrictions, procedures, and 
 | `EFFECT_TUNE_MAGICIAN_X` | `247` | Tuning Magician Xyz Material restriction | 1 |
 | `EFFECT_TUNE_MAGICIAN_F` | `248` | Lua procedure convention used by the local Synchro helpers even though the current core has no native consumer for this name. | 1 |
 | `EFFECT_PRE_MONSTER` | `250` | Access various monster values (used with Card.AddMonsterAttribute()) | 0 |
-| `EFFECT_MATERIAL_CHECK` | `251` | Check materials | 194 |
+| `EFFECT_MATERIAL_CHECK` | `251` | Check materials | 195 |
 | `EFFECT_DISABLE_FIELD` | `260` | Disable zones (e.g., Ojama King) | 23 |
 | `EFFECT_USE_EXTRA_MZONE` | `261` | Lock Monster Zones | 1 |
 | `EFFECT_USE_EXTRA_SZONE` | `262` | Lock Spell/Trap Zones | 0 |
@@ -484,10 +484,10 @@ These codes identify continuous rules, modifiers, restrictions, procedures, and 
 | `EFFECT_SPSUMMON_PROC_G` | `320` | Pendulum Summon rule | 2 |
 | `EFFECT_SPSUMMON_COUNT_LIMIT` | `330` | Special Summon count limit | 5 |
 | `EFFECT_LEFT_SPSUMMON_COUNT` | `331` | Remaining summon count (e.g., Summon Limit) | 5 |
-| `EFFECT_CANNOT_SELECT_BATTLE_TARGET` | `332` | Opponent cannot select as attack target | 134 |
+| `EFFECT_CANNOT_SELECT_BATTLE_TARGET` | `332` | Opponent cannot select as attack target | 135 |
 | `EFFECT_CANNOT_SELECT_EFFECT_TARGET` | `333` | Opponent cannot select as effect target | 1 |
 | `EFFECT_ADD_SETCODE` | `334` | Treated as specific archetype effect | 12 |
-| `EFFECT_NO_EFFECT_DAMAGE` | `335` | Player affected by "effect damage becomes 0" | 55 |
+| `EFFECT_NO_EFFECT_DAMAGE` | `335` | Player affected by "effect damage becomes 0" | 56 |
 | `EFFECT_UNSUMMONABLE_CARD` | `336` | Reserved/unsupported in the current snapshot; no indexed script uses it directly. | 0 |
 | `EFFECT_DISABLE_CHAIN_FIELD` | `337` | Reserved/unsupported in the current snapshot; no indexed script uses it directly. | 0 |
 | `EFFECT_DISCARD_COST_CHANGE` | `338` | Change discard cost for Counter Traps (e.g., Ariadne the Absolver) | 1 |
@@ -496,9 +496,9 @@ These codes identify continuous rules, modifiers, restrictions, procedures, and 
 | `EFFECT_ADD_FUSION_SETCODE` | `341` | Treated as specific archetype for Fusion Material (e.g., Toy Parade) | 4 |
 | `EFFECT_RISE_TO_FULL_HEIGHT` | `342` | Reserved/unsupported in the current snapshot; no indexed script uses it directly. | 0 |
 | `EFFECT_ONLY_ATTACK_MONSTER` | `343` | Can only attack specific monster | 1 |
-| `EFFECT_MUST_ATTACK_MONSTER` | `344` | Must attack specific monster if attacking | 24 |
+| `EFFECT_MUST_ATTACK_MONSTER` | `344` | Must attack specific monster if attacking | 25 |
 | `EFFECT_PATRICIAN_OF_DARKNESS` | `345` | Opponent chooses attack target (e.g., Patrician of Darkness) | 5 |
-| `EFFECT_EXTRA_ATTACK_MONSTER` | `346` | Attack a monster X times | 54 |
+| `EFFECT_EXTRA_ATTACK_MONSTER` | `346` | Attack a monster X times | 55 |
 | `EFFECT_UNION_STATUS` | `347` | Union status | 1 |
 | `EFFECT_OLDUNION_STATUS` | `348` | Old Union status | 1 |
 | `EFFECT_ADD_FUSION_ATTRIBUTE` | `349` | Reserved/unsupported in the current core snapshot; no indexed script uses it directly. | 0 |
@@ -511,8 +511,8 @@ These codes identify continuous rules, modifiers, restrictions, procedures, and 
 | `EFFECT_ADD_LINK_ATTRIBUTE` | `356` | Attribute when used as Link Material | 1 |
 | `EFFECT_ADD_LINK_RACE` | `357` | Race when used as Link Material | 1 |
 | `EFFECT_EXTRA_LINK_MATERIAL` | `358` | Hand as Link Material | 18 |
-| `EFFECT_QP_ACT_IN_SET_TURN` | `359` | Quick-Play Spell can activate in the turn it was Set | 7 |
-| `EFFECT_EXTRA_PENDULUM_SUMMON` | `360` | Additional Pendulum Summon | 8 |
+| `EFFECT_QP_ACT_IN_SET_TURN` | `359` | Quick-Play Spell can activate in the turn it was Set | 8 |
+| `EFFECT_EXTRA_PENDULUM_SUMMON` | `360` | Additional Pendulum Summon | 9 |
 | `EFFECT_MATERIAL_LIMIT` | `361` | Material restriction | 2 |
 | `EFFECT_SET_BATTLE_ATTACK` | `362` | Use set ATK for battle damage calculation | 6 |
 | `EFFECT_SET_BATTLE_DEFENSE` | `363` | Use set DEF for battle damage calculation | 4 |
@@ -527,8 +527,11 @@ These codes identify continuous rules, modifiers, restrictions, procedures, and 
 | `EFFECT_XYZ_MIN_COUNT` | `372` | Can only be used for an Xyz Summon with at least X materials | 1 |
 | `EFFECT_SYNCHRO_LEVEL_EX` | `373` | Allows monsters without Levels to be used as Synchro Material | 3 |
 | `EFFECT_RITUAL_LEVEL_EX` | `374` | Allows monsters without Levels to be used as Ritual Material | 0 |
-| `EFFECT_DOUBLE_XMATERIAL` | `375` | Counts as 2 materials when Xyz Summoning a monster that requires 3 or more materials | 3 |
+| `EFFECT_DOUBLE_XMATERIAL` | `375` | Counts as 2 materials when Xyz Summoning a monster that requires 3 or more materials | 5 |
 | `EFFECT_REVEAL_ONFIELD` | `376` | Affected face-down cards on the field can be inspected by the effect controller | 1 |
+| `EFFECT_ADD_CARD_TYPE` | `377` | Adds TYPE_* bits to the card type used by Card.GetCardType (distinct from ordinary EFFECT_ADD_TYPE) | 2 |
+| `EFFECT_REMOVE_CARD_TYPE` | `378` | Removes TYPE_* bits from the card type used by Card.GetCardType | 0 |
+| `EFFECT_CHANGE_CARD_TYPE` | `379` | Replaces the card type used by Card.GetCardType with the supplied TYPE_* bitmask | 0 |
 
 #### Encoded and engine-managed effect codes
 

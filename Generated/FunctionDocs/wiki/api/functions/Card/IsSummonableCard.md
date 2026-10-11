@@ -21,4 +21,4 @@ This rejects non-monsters, Extra Deck monsters, Ritual Monsters, Special Summon-
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3575`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3627`

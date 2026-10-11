@@ -23,4 +23,4 @@ EVENT_BE_MATERIAL callback used by Auxiliary.CreateMaterialReasonCardRelation. I
 
 ## Source
 
-- `Utilities/utility.lua:868`
+- `Utilities/utility.lua:871`

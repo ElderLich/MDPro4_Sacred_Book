@@ -24,4 +24,4 @@ Nil def arguments are skipped. Unlike the old imported text, the binding does no
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3494`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3546`

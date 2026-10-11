@@ -19,4 +19,4 @@ assume_type is one of ASSUME_CODE, ASSUME_TYPE, ASSUME_LEVEL, ASSUME_RANK, ASSUM
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3663`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3715`

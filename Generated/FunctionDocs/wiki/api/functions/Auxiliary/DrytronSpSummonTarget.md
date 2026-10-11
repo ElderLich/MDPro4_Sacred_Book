@@ -24,4 +24,4 @@ Target function for the shared Drytron self-Summon effect. It checks the Monster
 
 ## Source
 
-- `Utilities/utility.lua:1057`
+- `Utilities/utility.lua:1060`

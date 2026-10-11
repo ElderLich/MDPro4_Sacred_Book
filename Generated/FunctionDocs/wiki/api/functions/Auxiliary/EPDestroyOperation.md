@@ -23,4 +23,4 @@ Operation for delayed End Phase destruction effects. It destroys the Card or Gro
 
 ## Source
 
-- `Utilities/utility.lua:1824`
+- `Utilities/utility.lua:1829`

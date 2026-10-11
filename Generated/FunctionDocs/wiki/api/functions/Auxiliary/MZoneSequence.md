@@ -20,4 +20,4 @@ Returns the local column index for Monster Zone sequence seq from that controlle
 
 ## Source
 
-- `Utilities/utility.lua:718`
+- `Utilities/utility.lua:721`

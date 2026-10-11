@@ -21,4 +21,4 @@ Returns true if g contains c.
 
 ## Source
 
-- `Utilities/utility.lua:597`
+- `Utilities/utility.lua:600`

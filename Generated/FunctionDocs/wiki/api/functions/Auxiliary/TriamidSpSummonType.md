@@ -20,4 +20,4 @@ Returns whether c is a Special Summon procedure monster, used by Triamid Special
 
 ## Source
 
-- `Utilities/utility.lua:1092`
+- `Utilities/utility.lua:1095`

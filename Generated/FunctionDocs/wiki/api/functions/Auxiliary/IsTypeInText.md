@@ -21,4 +21,4 @@ Returns true if c's text-registered type mask contains type.
 
 ## Source
 
-- `Utilities/utility.lua:581`
+- `Utilities/utility.lua:584`

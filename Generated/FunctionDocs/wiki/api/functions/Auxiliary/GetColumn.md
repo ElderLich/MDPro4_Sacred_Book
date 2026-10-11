@@ -22,4 +22,4 @@ The local helper maps ordinary Monster Zones and Spell & Trap Zones to columns 0
 
 ## Source
 
-- `Utilities/utility.lua:702`
+- `Utilities/utility.lua:705`

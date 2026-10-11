@@ -23,4 +23,4 @@ Pass nil for sc only when checking the generic material pool before a specific R
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3644`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3696`

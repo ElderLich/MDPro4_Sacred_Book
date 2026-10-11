@@ -23,4 +23,4 @@ Condition for Quick Effects that change ATK/DEF; true outside the Damage Phase, 
 
 ## Source
 
-- `Utilities/utility.lua:810`
+- `Utilities/utility.lua:813`

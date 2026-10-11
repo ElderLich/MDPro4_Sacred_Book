@@ -24,4 +24,4 @@ Returns the tuner-material-limit effect affecting c, that effect's target functi
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3549`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3601`

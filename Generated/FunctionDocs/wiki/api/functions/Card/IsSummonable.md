@@ -25,4 +25,4 @@ If e is not nil, checks whether c can be Normal Summoned by that effect. min is 
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3582`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3634`

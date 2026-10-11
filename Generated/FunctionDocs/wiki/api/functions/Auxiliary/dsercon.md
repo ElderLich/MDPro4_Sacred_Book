@@ -23,4 +23,4 @@ Condition for EVENT_DAMAGE_STEP_END effects; true if the handler is still relate
 
 ## Source
 
-- `Utilities/utility.lua:786`
+- `Utilities/utility.lua:789`

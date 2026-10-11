@@ -1,0 +1,1281 @@
+{
+  "metadata": {
+    "ruleset": "rush",
+    "namespace": "RushDuel",
+    "alias": "RD",
+    "source_files": [
+      "Rush/Utilities/RDBase.lua",
+      "Rush/Utilities/RDLegend.lua",
+      "Rush/Utilities/RDRule.lua",
+      "Rush/Utilities/RDMaximum.lua",
+      "Rush/Utilities/RDFunction.lua",
+      "Rush/Utilities/RDCondition.lua",
+      "Rush/Utilities/RDCost.lua",
+      "Rush/Utilities/RDTarget.lua",
+      "Rush/Utilities/RDValue.lua",
+      "Rush/Utilities/RDContinuous.lua",
+      "Rush/Utilities/RDAttach.lua",
+      "Rush/Utilities/RDLimit.lua",
+      "Rush/Utilities/RDAction.lua",
+      "Rush/Utilities/RDFusion.lua",
+      "Rush/Utilities/RDRitual.lua",
+      "Rush/Utilities/RDEquip.lua",
+      "Rush/Utilities/RDSummon.lua",
+      "Rush/Utilities/RDUnion.lua"
+    ],
+    "shadowed_declarations": [
+      {
+        "name": "RushDuel.ConfirmCardFilter",
+        "replaced": {
+          "path": "Rush/Utilities/RDFusion.lua",
+          "line": 408,
+          "origin": "rush-utility"
+        },
+        "active": {
+          "path": "Rush/Utilities/RDRitual.lua",
+          "line": 219,
+          "origin": "rush-utility"
+        }
+      }
+    ],
+    "bootstrap": "Rush/Utilities/special.lua",
+    "note": "Requires the matching Rush Duel bootstrap; these are Lua helpers, not native core bindings. Keep Rush constants separate from standard constants."
+  },
+  "constants": [
+    {
+      "name": "CARD_CODE_OTS",
+      "value": "120000010",
+      "section": "Rush Duel",
+      "comment_zh": "外宇宙",
+      "comment_en": "Rush-specific constant; see the upstream source comment.",
+      "english_status": "source_only",
+      "dataeditorx_value": "",
+      "dataeditorx_comment": "",
+      "old_value": "",
+      "old_comment": "",
+      "source_files": [
+        {
+          "path": "Rush/Utilities/RDBase.lua",
+          "line": 5,
+          "origin": "rush-utility"
+        }
+      ]
+    },
+    {
+      "name": "RACE_MAGICALKNIGHT",
+      "value": "0x4000000",
+      "section": "Rush Duel",
+      "comment_zh": "魔导骑士",
+      "comment_en": "Magical Knight race.",
+      "english_status": "reviewed_english",
+      "dataeditorx_value": "",
+      "dataeditorx_comment": "",
+      "old_value": "",
+      "old_comment": "",
+      "source_files": [
+        {
+          "path": "Rush/Utilities/RDBase.lua",
+          "line": 9,
+          "origin": "rush-utility"
+        }
+      ]
+    },
+    {
+      "name": "RACE_HYDRAGON",
+      "value": "0x8000000",
+      "section": "Rush Duel",
+      "comment_zh": "多头龙",
+      "comment_en": "High Dragon race.",
+      "english_status": "reviewed_english",
+      "dataeditorx_value": "",
+      "dataeditorx_comment": "",
+      "old_value": "",
+      "old_comment": "",
+      "source_files": [
+        {
+          "path": "Rush/Utilities/RDBase.lua",
+          "line": 10,
+          "origin": "rush-utility"
+        }
+      ]
+    },
+    {
+      "name": "RACE_OMEGAPSYCHO",
+      "value": "0x10000000",
+      "section": "Rush Duel",
+      "comment_zh": "欧米茄念动力",
+      "comment_en": "Omega Psychic race.",
+      "english_status": "reviewed_english",
+      "dataeditorx_value": "",
+      "dataeditorx_comment": "",
+      "old_value": "",
+      "old_comment": "",
+      "source_files": [
+        {
+          "path": "Rush/Utilities/RDBase.lua",
+          "line": 11,
+          "origin": "rush-utility"
+        }
+      ]
+    },
+    {
+      "name": "RACE_CELESTIALWARRIOR",
+      "value": "0x20000000",
+      "section": "Rush Duel",
+      "comment_zh": "天界战士",
+      "comment_en": "Celestial Warrior race.",
+      "english_status": "reviewed_english",
+      "dataeditorx_value": "",
+      "dataeditorx_comment": "",
+      "old_value": "",
+      "old_comment": "",
+      "source_files": [
+        {
+          "path": "Rush/Utilities/RDBase.lua",
+          "line": 12,
+          "origin": "rush-utility"
+        }
+      ]
+    },
+    {
+      "name": "RACE_GALAXY",
+      "value": "0x40000000",
+      "section": "Rush Duel",
+      "comment_zh": "银河",
+      "comment_en": "Galaxy race.",
+      "english_status": "reviewed_english",
+      "dataeditorx_value": "",
+      "dataeditorx_comment": "",
+      "old_value": "",
+      "old_comment": "",
+      "source_files": [
+        {
+          "path": "Rush/Utilities/RDBase.lua",
+          "line": 13,
+          "origin": "rush-utility"
+        }
+      ]
+    },
+    {
+      "name": "RACE_CYBORG",
+      "value": "0x80000000",
+      "section": "Rush Duel",
+      "comment_zh": "电子人",
+      "comment_en": "Cyborg race.",
+      "english_status": "reviewed_english",
+      "dataeditorx_value": "",
+      "dataeditorx_comment": "",
+      "old_value": "",
+      "old_comment": "",
+      "source_files": [
+        {
+          "path": "Rush/Utilities/RDBase.lua",
+          "line": 14,
+          "origin": "rush-utility"
+        }
+      ]
+    },
+    {
+      "name": "RACE_ALL",
+      "value": "0xffffffff",
+      "section": "Rush Duel",
+      "comment_zh": "",
+      "comment_en": "All 32 race bits used by this Rush helper snapshot.",
+      "english_status": "reviewed_english",
+      "dataeditorx_value": "",
+      "dataeditorx_comment": "",
+      "old_value": "",
+      "old_comment": "",
+      "source_files": [
+        {
+          "path": "Rush/Utilities/RDBase.lua",
+          "line": 16,
+          "origin": "rush-utility"
+        }
+      ]
+    },
+    {
+      "name": "EFFECT_LEGEND_CARD",
+      "value": "120000000",
+      "section": "Rush Duel",
+      "comment_zh": "传说卡标识 (改变卡名不影响)",
+      "comment_en": "Custom Rush Legend marker, separate from the printed Legend type bit.",
+      "english_status": "reviewed_english",
+      "dataeditorx_value": "",
+      "dataeditorx_comment": "",
+      "old_value": "",
+      "old_comment": "",
+      "source_files": [
+        {
+          "path": "Rush/Utilities/RDBase.lua",
+          "line": 19,
+          "origin": "rush-utility"
+        }
+      ]
+    },
+    {
+      "name": "EFFECT_CANNOT_SINGLE_TRIBUTE",
+      "value": "120170045",
+      "section": "Rush Duel",
+      "comment_zh": "监狱岛 大姐头巨岩 (与下面的效果结合变成不能上级召唤)",
+      "comment_en": "Rush-specific constant; see the upstream source comment.",
+      "english_status": "source_only",
+      "dataeditorx_value": "",
+      "dataeditorx_comment": "",
+      "old_value": "",
+      "old_comment": "",
+      "source_files": [
+        {
+          "path": "Rush/Utilities/RDBase.lua",
+          "line": 20,
+          "origin": "rush-utility"
+        }
+      ]
+    },
+    {
+      "name": "EFFECT_CANNOT_DOUBLE_TRIBUTE",
+      "value": "120120029",
+      "section": "Rush Duel",
+      "comment_zh": "魔将 雅灭鲁拉 (不能使用：双重解放)",
+      "comment_en": "Rush-specific constant; see the upstream source comment.",
+      "english_status": "source_only",
+      "dataeditorx_value": "",
+      "dataeditorx_comment": "",
+      "old_value": "",
+      "old_comment": "",
+      "source_files": [
+        {
+          "path": "Rush/Utilities/RDBase.lua",
+          "line": 21,
+          "origin": "rush-utility"
+        }
+      ]
+    },
+    {
+      "name": "EFFECT_PLAYER_CANNOT_ATTACK",
+      "value": "120155054",
+      "section": "Rush Duel",
+      "comment_zh": "幻刃封锁 (对方不能攻击时不能发动)",
+      "comment_en": "Rush-specific constant; see the upstream source comment.",
+      "english_status": "source_only",
+      "dataeditorx_value": "",
+      "dataeditorx_comment": "",
+      "old_value": "",
+      "old_comment": "",
+      "source_files": [
+        {
+          "path": "Rush/Utilities/RDBase.lua",
+          "line": 22,
+          "origin": "rush-utility"
+        }
+      ]
+    },
+    {
+      "name": "EFFECT_PLAYER_RACE_CANNOT_ATTACK",
+      "value": "120155055",
+      "section": "Rush Duel",
+      "comment_zh": "幻刃封锁 (不能选择不能攻击的种族)",
+      "comment_en": "Rush-specific constant; see the upstream source comment.",
+      "english_status": "source_only",
+      "dataeditorx_value": "",
+      "dataeditorx_comment": "",
+      "old_value": "",
+      "old_comment": "",
+      "source_files": [
+        {
+          "path": "Rush/Utilities/RDBase.lua",
+          "line": 23,
+          "origin": "rush-utility"
+        }
+      ]
+    },
+    {
+      "name": "EFFECT_PLAYER_CANNOT_ACTIVATE_TRAP",
+      "value": "120247013",
+      "section": "Rush Duel",
+      "comment_zh": "三角神迷火花 (整个回合不能发动陷阱)",
+      "comment_en": "Rush-specific constant; see the upstream source comment.",
+      "english_status": "source_only",
+      "dataeditorx_value": "",
+      "dataeditorx_comment": "",
+      "old_value": "",
+      "old_comment": "",
+      "source_files": [
+        {
+          "path": "Rush/Utilities/RDBase.lua",
+          "line": 24,
+          "origin": "rush-utility"
+        }
+      ]
+    },
+    {
+      "name": "EFFECT_PLAYER_CANNOT_ACTIVATE_TRAP_BATTLE",
+      "value": "120261022",
+      "section": "Rush Duel",
+      "comment_zh": "暗物质人偶·水母 (战斗阶段不能发动陷阱)",
+      "comment_en": "Rush-specific constant; see the upstream source comment.",
+      "english_status": "source_only",
+      "dataeditorx_value": "",
+      "dataeditorx_comment": "",
+      "old_value": "",
+      "old_comment": "",
+      "source_files": [
+        {
+          "path": "Rush/Utilities/RDBase.lua",
+          "line": 25,
+          "origin": "rush-utility"
+        }
+      ]
+    },
+    {
+      "name": "EFFECT_ATTACK_NOT_CHAIN_TRAP",
+      "value": "120140004",
+      "section": "Rush Duel",
+      "comment_zh": "不许始末战士 (攻击宣言时, 对方不能把陷阱卡发动)",
+      "comment_en": "Rush-specific constant; see the upstream source comment.",
+      "english_status": "source_only",
+      "dataeditorx_value": "",
+      "dataeditorx_comment": "",
+      "old_value": "",
+      "old_comment": "",
+      "source_files": [
+        {
+          "path": "Rush/Utilities/RDBase.lua",
+          "line": 26,
+          "origin": "rush-utility"
+        }
+      ]
+    },
+    {
+      "name": "EFFECT_DOUBLE_FUSION_MATERIAL",
+      "value": "120252004",
+      "section": "Rush Duel",
+      "comment_zh": "青眼幻像龙 (作为2只数量的融合术素材)",
+      "comment_en": "Rush-specific constant; see the upstream source comment.",
+      "english_status": "source_only",
+      "dataeditorx_value": "",
+      "dataeditorx_comment": "",
+      "old_value": "",
+      "old_comment": "",
+      "source_files": [
+        {
+          "path": "Rush/Utilities/RDBase.lua",
+          "line": 27,
+          "origin": "rush-utility"
+        }
+      ]
+    },
+    {
+      "name": "EFFECT_ONLY_FUSION_SUMMON",
+      "value": "120263031",
+      "section": "Rush Duel",
+      "comment_zh": "只能融合召唤 (奇迹融合)",
+      "comment_en": "Rush-specific constant; see the upstream source comment.",
+      "english_status": "source_only",
+      "dataeditorx_value": "",
+      "dataeditorx_comment": "",
+      "old_value": "",
+      "old_comment": "",
+      "source_files": [
+        {
+          "path": "Rush/Utilities/RDBase.lua",
+          "line": 28,
+          "origin": "rush-utility"
+        }
+      ]
+    },
+    {
+      "name": "EFFECT_MAXIMUM_MODE",
+      "value": "120272058",
+      "section": "Rush Duel",
+      "comment_zh": "通过效果变成极大模式 (时间机器)",
+      "comment_en": "Custom Rush marker for Maximum-mode behavior; interpreted by the Rush helper layer.",
+      "english_status": "reviewed_english",
+      "dataeditorx_value": "",
+      "dataeditorx_comment": "",
+      "old_value": "",
+      "old_comment": "",
+      "source_files": [
+        {
+          "path": "Rush/Utilities/RDBase.lua",
+          "line": 29,
+          "origin": "rush-utility"
+        }
+      ]
+    },
+    {
+      "name": "EFFECT_CANNOT_TO_HAND_EFFECT",
+      "value": "120274001",
+      "section": "Rush Duel",
+      "comment_zh": "不会因效果回到手卡",
+      "comment_en": "Rush-specific constant; see the upstream source comment.",
+      "english_status": "source_only",
+      "dataeditorx_value": "",
+      "dataeditorx_comment": "",
+      "old_value": "",
+      "old_comment": "",
+      "source_files": [
+        {
+          "path": "Rush/Utilities/RDBase.lua",
+          "line": 30,
+          "origin": "rush-utility"
+        }
+      ]
+    },
+    {
+      "name": "EFFECT_CANNOT_TO_DECK_EFFECT",
+      "value": "120274002",
+      "section": "Rush Duel",
+      "comment_zh": "不会因效果回到卡组·额外卡组",
+      "comment_en": "Rush-specific constant; see the upstream source comment.",
+      "english_status": "source_only",
+      "dataeditorx_value": "",
+      "dataeditorx_comment": "",
+      "old_value": "",
+      "old_comment": "",
+      "source_files": [
+        {
+          "path": "Rush/Utilities/RDBase.lua",
+          "line": 31,
+          "origin": "rush-utility"
+        }
+      ]
+    },
+    {
+      "name": "EFFECT_CANNOT_CHANGE_POSITION_EFFECT",
+      "value": "120277011",
+      "section": "Rush Duel",
+      "comment_zh": "不会因效果改变表示形式",
+      "comment_en": "Rush-specific constant; see the upstream source comment.",
+      "english_status": "source_only",
+      "dataeditorx_value": "",
+      "dataeditorx_comment": "",
+      "old_value": "",
+      "old_comment": "",
+      "source_files": [
+        {
+          "path": "Rush/Utilities/RDBase.lua",
+          "line": 32,
+          "origin": "rush-utility"
+        }
+      ]
+    },
+    {
+      "name": "EFFECT_NO_COST_SEND_HAND_TO_GRAVE",
+      "value": "120294004",
+      "section": "Rush Duel",
+      "comment_zh": "不需要支付\"把手卡送去墓地\"的代价",
+      "comment_en": "Rush-specific constant; see the upstream source comment.",
+      "english_status": "source_only",
+      "dataeditorx_value": "",
+      "dataeditorx_comment": "",
+      "old_value": "",
+      "old_comment": "",
+      "source_files": [
+        {
+          "path": "Rush/Utilities/RDBase.lua",
+          "line": 33,
+          "origin": "rush-utility"
+        }
+      ]
+    },
+    {
+      "name": "EFFECT_CANNOT_BE_RITUAL_MATERIAL",
+      "value": "120294063",
+      "section": "Rush Duel",
+      "comment_zh": "不能作为仪式术召唤的素材",
+      "comment_en": "Rush-specific constant; see the upstream source comment.",
+      "english_status": "source_only",
+      "dataeditorx_value": "",
+      "dataeditorx_comment": "",
+      "old_value": "",
+      "old_comment": "",
+      "source_files": [
+        {
+          "path": "Rush/Utilities/RDBase.lua",
+          "line": 34,
+          "origin": "rush-utility"
+        }
+      ]
+    },
+    {
+      "name": "EFFECT_RITUAL_MATERIAL",
+      "value": "120300052",
+      "section": "Rush Duel",
+      "comment_zh": "额外的仪式素材",
+      "comment_en": "Rush-specific constant; see the upstream source comment.",
+      "english_status": "source_only",
+      "dataeditorx_value": "",
+      "dataeditorx_comment": "",
+      "old_value": "",
+      "old_comment": "",
+      "source_files": [
+        {
+          "path": "Rush/Utilities/RDBase.lua",
+          "line": 35,
+          "origin": "rush-utility"
+        }
+      ]
+    },
+    {
+      "name": "EFFECT_UNION_FUSION_MATERIAL",
+      "value": "120305005",
+      "section": "Rush Duel",
+      "comment_zh": "XY-神龙炮 (作为2只不同卡名的融合术素材)",
+      "comment_en": "Rush-specific constant; see the upstream source comment.",
+      "english_status": "source_only",
+      "dataeditorx_value": "",
+      "dataeditorx_comment": "",
+      "old_value": "",
+      "old_comment": "",
+      "source_files": [
+        {
+          "path": "Rush/Utilities/RDBase.lua",
+          "line": 36,
+          "origin": "rush-utility"
+        }
+      ]
+    },
+    {
+      "name": "EFFECT_UNION_TARGET",
+      "value": "120306017",
+      "section": "Rush Duel",
+      "comment_zh": "同盟怪兽的装备要求",
+      "comment_en": "Rush-specific constant; see the upstream source comment.",
+      "english_status": "source_only",
+      "dataeditorx_value": "",
+      "dataeditorx_comment": "",
+      "old_value": "",
+      "old_comment": "",
+      "source_files": [
+        {
+          "path": "Rush/Utilities/RDBase.lua",
+          "line": 37,
+          "origin": "rush-utility"
+        }
+      ]
+    },
+    {
+      "name": "FLAG_SUMMON_TURN",
+      "value": "120000011",
+      "section": "Rush Duel",
+      "comment_zh": "召唤·特殊召唤的回合",
+      "comment_en": "Rush-specific constant; see the upstream source comment.",
+      "english_status": "source_only",
+      "dataeditorx_value": "",
+      "dataeditorx_comment": "",
+      "old_value": "",
+      "old_comment": "",
+      "source_files": [
+        {
+          "path": "Rush/Utilities/RDBase.lua",
+          "line": 40,
+          "origin": "rush-utility"
+        }
+      ]
+    },
+    {
+      "name": "FLAG_FLIP_TURN",
+      "value": "120000012",
+      "section": "Rush Duel",
+      "comment_zh": "反转的回合",
+      "comment_en": "Rush-specific constant; see the upstream source comment.",
+      "english_status": "source_only",
+      "dataeditorx_value": "",
+      "dataeditorx_comment": "",
+      "old_value": "",
+      "old_comment": "",
+      "source_files": [
+        {
+          "path": "Rush/Utilities/RDBase.lua",
+          "line": 41,
+          "origin": "rush-utility"
+        }
+      ]
+    },
+    {
+      "name": "FLAG_SUMMON_MAIN_PHASE",
+      "value": "120000013",
+      "section": "Rush Duel",
+      "comment_zh": "召唤·特殊召唤的主要阶段",
+      "comment_en": "Rush-specific constant; see the upstream source comment.",
+      "english_status": "source_only",
+      "dataeditorx_value": "",
+      "dataeditorx_comment": "",
+      "old_value": "",
+      "old_comment": "",
+      "source_files": [
+        {
+          "path": "Rush/Utilities/RDBase.lua",
+          "line": 42,
+          "origin": "rush-utility"
+        }
+      ]
+    },
+    {
+      "name": "FLAG_FLIP_MAIN_PHASE",
+      "value": "120000014",
+      "section": "Rush Duel",
+      "comment_zh": "反转的主要阶段",
+      "comment_en": "Rush-specific constant; see the upstream source comment.",
+      "english_status": "source_only",
+      "dataeditorx_value": "",
+      "dataeditorx_comment": "",
+      "old_value": "",
+      "old_comment": "",
+      "source_files": [
+        {
+          "path": "Rush/Utilities/RDBase.lua",
+          "line": 43,
+          "origin": "rush-utility"
+        }
+      ]
+    },
+    {
+      "name": "FLAG_ATTACK_ANNOUNCED",
+      "value": "120000021",
+      "section": "Rush Duel",
+      "comment_zh": "已经进行了攻击宣言, 不能向怪兽攻击的效果失效",
+      "comment_en": "Rush-specific constant; see the upstream source comment.",
+      "english_status": "source_only",
+      "dataeditorx_value": "",
+      "dataeditorx_comment": "",
+      "old_value": "",
+      "old_comment": "",
+      "source_files": [
+        {
+          "path": "Rush/Utilities/RDBase.lua",
+          "line": 44,
+          "origin": "rush-utility"
+        }
+      ]
+    },
+    {
+      "name": "FLAG_ATTACH_EFFECT",
+      "value": "120000022",
+      "section": "Rush Duel",
+      "comment_zh": "通过效果赋予的效果, 不能重复叠加",
+      "comment_en": "Rush-specific constant; see the upstream source comment.",
+      "english_status": "source_only",
+      "dataeditorx_value": "",
+      "dataeditorx_comment": "",
+      "old_value": "",
+      "old_comment": "",
+      "source_files": [
+        {
+          "path": "Rush/Utilities/RDBase.lua",
+          "line": 45,
+          "origin": "rush-utility"
+        }
+      ]
+    },
+    {
+      "name": "FLAG_CANNOT_ATTACK_NEXT_TURN",
+      "value": "120231059",
+      "section": "Rush Duel",
+      "comment_zh": "下个回合不能攻击",
+      "comment_en": "Rush-specific constant; see the upstream source comment.",
+      "english_status": "source_only",
+      "dataeditorx_value": "",
+      "dataeditorx_comment": "",
+      "old_value": "",
+      "old_comment": "",
+      "source_files": [
+        {
+          "path": "Rush/Utilities/RDBase.lua",
+          "line": 46,
+          "origin": "rush-utility"
+        }
+      ]
+    },
+    {
+      "name": "FLAG_CANNOT_ATTACK_UNTIL_NEXT_TURN",
+      "value": "120247006",
+      "section": "Rush Duel",
+      "comment_zh": "直到下个回合, 不能攻击",
+      "comment_en": "Rush-specific constant; see the upstream source comment.",
+      "english_status": "source_only",
+      "dataeditorx_value": "",
+      "dataeditorx_comment": "",
+      "old_value": "",
+      "old_comment": "",
+      "source_files": [
+        {
+          "path": "Rush/Utilities/RDBase.lua",
+          "line": 47,
+          "origin": "rush-utility"
+        }
+      ]
+    },
+    {
+      "name": "FLAG_HAS_DRAW_IN_MAIN_PHASE",
+      "value": "120261037",
+      "section": "Rush Duel",
+      "comment_zh": "已在主要阶段抽卡",
+      "comment_en": "Rush-specific constant; see the upstream source comment.",
+      "english_status": "source_only",
+      "dataeditorx_value": "",
+      "dataeditorx_comment": "",
+      "old_value": "",
+      "old_comment": "",
+      "source_files": [
+        {
+          "path": "Rush/Utilities/RDBase.lua",
+          "line": 48,
+          "origin": "rush-utility"
+        }
+      ]
+    },
+    {
+      "name": "FLAG_HAS_DRAW_IN_TURN",
+      "value": "120294034",
+      "section": "Rush Duel",
+      "comment_zh": "已在这个回合抽卡",
+      "comment_en": "Rush-specific constant; see the upstream source comment.",
+      "english_status": "source_only",
+      "dataeditorx_value": "",
+      "dataeditorx_comment": "",
+      "old_value": "",
+      "old_comment": "",
+      "source_files": [
+        {
+          "path": "Rush/Utilities/RDBase.lua",
+          "line": 49,
+          "origin": "rush-utility"
+        }
+      ]
+    },
+    {
+      "name": "FLAG_SKIP_MAIN_PHASE",
+      "value": "120306067",
+      "section": "Rush Duel",
+      "comment_zh": "跳过主要阶段, 部分陷阱卡不能发动",
+      "comment_en": "Rush-specific constant; see the upstream source comment.",
+      "english_status": "source_only",
+      "dataeditorx_value": "",
+      "dataeditorx_comment": "",
+      "old_value": "",
+      "old_comment": "",
+      "source_files": [
+        {
+          "path": "Rush/Utilities/RDBase.lua",
+          "line": 50,
+          "origin": "rush-utility"
+        }
+      ]
+    },
+    {
+      "name": "FLAG_MAX_ATTACK_TWICE_NEXT_TURN",
+      "value": "120285044",
+      "section": "Rush Duel",
+      "comment_zh": "下个回合, 对方最多攻击2次",
+      "comment_en": "Rush-specific constant; see the upstream source comment.",
+      "english_status": "source_only",
+      "dataeditorx_value": "",
+      "dataeditorx_comment": "",
+      "old_value": "",
+      "old_comment": "",
+      "source_files": [
+        {
+          "path": "Rush/Utilities/RDBase.lua",
+          "line": 51,
+          "origin": "rush-utility"
+        }
+      ]
+    },
+    {
+      "name": "HINTMSG_MAXSUMMON",
+      "value": "Auxiliary.Stringid(120000000, 0)",
+      "section": "Rush Duel",
+      "comment_zh": "极大召唤",
+      "comment_en": "Rush-specific constant; see the upstream source comment.",
+      "english_status": "source_only",
+      "dataeditorx_value": "",
+      "dataeditorx_comment": "",
+      "old_value": "",
+      "old_comment": "",
+      "source_files": [
+        {
+          "path": "Rush/Utilities/RDBase.lua",
+          "line": 54,
+          "origin": "rush-utility"
+        }
+      ]
+    },
+    {
+      "name": "HINTMSG_MAXMATERIAL",
+      "value": "Auxiliary.Stringid(120000000, 1)",
+      "section": "Rush Duel",
+      "comment_zh": "请选择要极大召唤的怪兽(3只)",
+      "comment_en": "Rush-specific constant; see the upstream source comment.",
+      "english_status": "source_only",
+      "dataeditorx_value": "",
+      "dataeditorx_comment": "",
+      "old_value": "",
+      "old_comment": "",
+      "source_files": [
+        {
+          "path": "Rush/Utilities/RDBase.lua",
+          "line": 55,
+          "origin": "rush-utility"
+        }
+      ]
+    },
+    {
+      "name": "HINTMSG_FUSION_MATERIAL",
+      "value": "Auxiliary.Stringid(120000000, 2)",
+      "section": "Rush Duel",
+      "comment_zh": "请选择要作为融合术召唤的素材的卡",
+      "comment_en": "Rush-specific constant; see the upstream source comment.",
+      "english_status": "source_only",
+      "dataeditorx_value": "",
+      "dataeditorx_comment": "",
+      "old_value": "",
+      "old_comment": "",
+      "source_files": [
+        {
+          "path": "Rush/Utilities/RDBase.lua",
+          "line": 56,
+          "origin": "rush-utility"
+        }
+      ]
+    },
+    {
+      "name": "HINTMSG_RITUAL_MATERIAL",
+      "value": "Auxiliary.Stringid(120000000, 3)",
+      "section": "Rush Duel",
+      "comment_zh": "请选择要作为仪式术召唤的素材的卡",
+      "comment_en": "Rush-specific constant; see the upstream source comment.",
+      "english_status": "source_only",
+      "dataeditorx_value": "",
+      "dataeditorx_comment": "",
+      "old_value": "",
+      "old_comment": "",
+      "source_files": [
+        {
+          "path": "Rush/Utilities/RDBase.lua",
+          "line": 57,
+          "origin": "rush-utility"
+        }
+      ]
+    },
+    {
+      "name": "HINTMSG_OPERATE_COUNT",
+      "value": "Auxiliary.Stringid(120000000, 4)",
+      "section": "Rush Duel",
+      "comment_zh": "请选择要操作的数量",
+      "comment_en": "Rush-specific constant; see the upstream source comment.",
+      "english_status": "source_only",
+      "dataeditorx_value": "",
+      "dataeditorx_comment": "",
+      "old_value": "",
+      "old_comment": "",
+      "source_files": [
+        {
+          "path": "Rush/Utilities/RDBase.lua",
+          "line": 58,
+          "origin": "rush-utility"
+        }
+      ]
+    },
+    {
+      "name": "HINTMSG_ANNOUNCE_MONSTER",
+      "value": "Auxiliary.Stringid(120000001, 0)",
+      "section": "Rush Duel",
+      "comment_zh": "宣言常规怪兽",
+      "comment_en": "Rush-specific constant; see the upstream source comment.",
+      "english_status": "source_only",
+      "dataeditorx_value": "",
+      "dataeditorx_comment": "",
+      "old_value": "",
+      "old_comment": "",
+      "source_files": [
+        {
+          "path": "Rush/Utilities/RDBase.lua",
+          "line": 59,
+          "origin": "rush-utility"
+        }
+      ]
+    },
+    {
+      "name": "HINTMSG_ANNOUNCE_LEGEND",
+      "value": "Auxiliary.Stringid(120000001, 1)",
+      "section": "Rush Duel",
+      "comment_zh": "宣言传说怪兽",
+      "comment_en": "Rush-specific constant; see the upstream source comment.",
+      "english_status": "source_only",
+      "dataeditorx_value": "",
+      "dataeditorx_comment": "",
+      "old_value": "",
+      "old_comment": "",
+      "source_files": [
+        {
+          "path": "Rush/Utilities/RDBase.lua",
+          "line": 60,
+          "origin": "rush-utility"
+        }
+      ]
+    },
+    {
+      "name": "HINTMSG_SUMMON_TURN",
+      "value": "Auxiliary.Stringid(120000002, 0)",
+      "section": "Rush Duel",
+      "comment_zh": "在这个回合召唤",
+      "comment_en": "Rush-specific constant; see the upstream source comment.",
+      "english_status": "source_only",
+      "dataeditorx_value": "",
+      "dataeditorx_comment": "",
+      "old_value": "",
+      "old_comment": "",
+      "source_files": [
+        {
+          "path": "Rush/Utilities/RDBase.lua",
+          "line": 61,
+          "origin": "rush-utility"
+        }
+      ]
+    },
+    {
+      "name": "HINTMSG_SPSUMMON_TURN",
+      "value": "Auxiliary.Stringid(120000002, 1)",
+      "section": "Rush Duel",
+      "comment_zh": "在这个回合特殊召唤",
+      "comment_en": "Rush-specific constant; see the upstream source comment.",
+      "english_status": "source_only",
+      "dataeditorx_value": "",
+      "dataeditorx_comment": "",
+      "old_value": "",
+      "old_comment": "",
+      "source_files": [
+        {
+          "path": "Rush/Utilities/RDBase.lua",
+          "line": 62,
+          "origin": "rush-utility"
+        }
+      ]
+    },
+    {
+      "name": "HINTMSG_FILP_TURN",
+      "value": "1071",
+      "section": "Rush Duel",
+      "comment_zh": "在这个回合反转",
+      "comment_en": "Rush-specific constant; see the upstream source comment.",
+      "english_status": "source_only",
+      "dataeditorx_value": "",
+      "dataeditorx_comment": "",
+      "old_value": "",
+      "old_comment": "",
+      "source_files": [
+        {
+          "path": "Rush/Utilities/RDBase.lua",
+          "line": 64,
+          "origin": "rush-utility"
+        }
+      ]
+    },
+    {
+      "name": "HINTMSG_EFFECT_USED",
+      "value": "Auxiliary.Stringid(120000002, 2)",
+      "section": "Rush Duel",
+      "comment_zh": "已使用过效果",
+      "comment_en": "Rush-specific constant; see the upstream source comment.",
+      "english_status": "source_only",
+      "dataeditorx_value": "",
+      "dataeditorx_comment": "",
+      "old_value": "",
+      "old_comment": "",
+      "source_files": [
+        {
+          "path": "Rush/Utilities/RDBase.lua",
+          "line": 65,
+          "origin": "rush-utility"
+        }
+      ]
+    },
+    {
+      "name": "TYPE_LEGEND",
+      "value": "0x8",
+      "section": "Rush Duel",
+      "comment_zh": "传说卡",
+      "comment_en": "Rush Legend type bit. The value 0x8 has a different meaning in standard formats; use only with Rush data and helpers.",
+      "english_status": "reviewed_english",
+      "dataeditorx_value": "",
+      "dataeditorx_comment": "",
+      "old_value": "",
+      "old_comment": "",
+      "source_files": [
+        {
+          "path": "Rush/Utilities/RDLegend.lua",
+          "line": 4,
+          "origin": "rush-utility"
+        }
+      ]
+    },
+    {
+      "name": "TYPE_MAXIMUM",
+      "value": "0x8000",
+      "section": "Rush Duel",
+      "comment_zh": "极大怪兽",
+      "comment_en": "Rush Maximum monster type bit. The value 0x8000 overlaps the standard Token bit; use only with Rush data and helpers.",
+      "english_status": "reviewed_english",
+      "dataeditorx_value": "",
+      "dataeditorx_comment": "",
+      "old_value": "",
+      "old_comment": "",
+      "source_files": [
+        {
+          "path": "Rush/Utilities/RDMaximum.lua",
+          "line": 4,
+          "origin": "rush-utility"
+        }
+      ]
+    },
+    {
+      "name": "SUMMON_TYPE_MAXIMUM",
+      "value": "0x4a000000",
+      "section": "Rush Duel",
+      "comment_zh": "极大召唤",
+      "comment_en": "Summon-type identifier used by the pinned Rush Maximum procedure.",
+      "english_status": "reviewed_english",
+      "dataeditorx_value": "",
+      "dataeditorx_comment": "",
+      "old_value": "",
+      "old_comment": "",
+      "source_files": [
+        {
+          "path": "Rush/Utilities/RDMaximum.lua",
+          "line": 5,
+          "origin": "rush-utility"
+        }
+      ]
+    },
+    {
+      "name": "RITUAL_ORIGINAL_LEVEL_EQUAL",
+      "value": "1",
+      "section": "Rush Duel",
+      "comment_zh": "",
+      "comment_en": "Ritual material comparison mode: original Level, exact requirement.",
+      "english_status": "reviewed_english",
+      "dataeditorx_value": "",
+      "dataeditorx_comment": "",
+      "old_value": "",
+      "old_comment": "",
+      "source_files": [
+        {
+          "path": "Rush/Utilities/RDRitual.lua",
+          "line": 15,
+          "origin": "rush-utility"
+        }
+      ]
+    },
+    {
+      "name": "RITUAL_ORIGINAL_LEVEL_GREATER",
+      "value": "2",
+      "section": "Rush Duel",
+      "comment_zh": "",
+      "comment_en": "Ritual material comparison mode: original Level, at least the requirement.",
+      "english_status": "reviewed_english",
+      "dataeditorx_value": "",
+      "dataeditorx_comment": "",
+      "old_value": "",
+      "old_comment": "",
+      "source_files": [
+        {
+          "path": "Rush/Utilities/RDRitual.lua",
+          "line": 17,
+          "origin": "rush-utility"
+        }
+      ]
+    },
+    {
+      "name": "RITUAL_CURRENT_LEVEL_EQUAL",
+      "value": "3",
+      "section": "Rush Duel",
+      "comment_zh": "",
+      "comment_en": "Ritual material comparison mode: current Level, exact requirement.",
+      "english_status": "reviewed_english",
+      "dataeditorx_value": "",
+      "dataeditorx_comment": "",
+      "old_value": "",
+      "old_comment": "",
+      "source_files": [
+        {
+          "path": "Rush/Utilities/RDRitual.lua",
+          "line": 19,
+          "origin": "rush-utility"
+        }
+      ]
+    },
+    {
+      "name": "RITUAL_CURRENT_LEVEL_GREATER",
+      "value": "4",
+      "section": "Rush Duel",
+      "comment_zh": "",
+      "comment_en": "Ritual material comparison mode: current Level, at least the requirement.",
+      "english_status": "reviewed_english",
+      "dataeditorx_value": "",
+      "dataeditorx_comment": "",
+      "old_value": "",
+      "old_comment": "",
+      "source_files": [
+        {
+          "path": "Rush/Utilities/RDRitual.lua",
+          "line": 21,
+          "origin": "rush-utility"
+        }
+      ]
+    },
+    {
+      "name": "RITUAL_ORIGINAL_ATTACK_EQUAL",
+      "value": "5",
+      "section": "Rush Duel",
+      "comment_zh": "",
+      "comment_en": "Ritual material comparison mode: original/base ATK, exact requirement.",
+      "english_status": "reviewed_english",
+      "dataeditorx_value": "",
+      "dataeditorx_comment": "",
+      "old_value": "",
+      "old_comment": "",
+      "source_files": [
+        {
+          "path": "Rush/Utilities/RDRitual.lua",
+          "line": 23,
+          "origin": "rush-utility"
+        }
+      ]
+    },
+    {
+      "name": "RITUAL_ORIGINAL_ATTACK_GREATER",
+      "value": "6",
+      "section": "Rush Duel",
+      "comment_zh": "",
+      "comment_en": "Ritual material comparison mode: original/base ATK, at least the requirement.",
+      "english_status": "reviewed_english",
+      "dataeditorx_value": "",
+      "dataeditorx_comment": "",
+      "old_value": "",
+      "old_comment": "",
+      "source_files": [
+        {
+          "path": "Rush/Utilities/RDRitual.lua",
+          "line": 25,
+          "origin": "rush-utility"
+        }
+      ]
+    },
+    {
+      "name": "RITUAL_CURRENT_ATTACK_EQUAL",
+      "value": "7",
+      "section": "Rush Duel",
+      "comment_zh": "",
+      "comment_en": "Ritual material comparison mode: current ATK, exact requirement.",
+      "english_status": "reviewed_english",
+      "dataeditorx_value": "",
+      "dataeditorx_comment": "",
+      "old_value": "",
+      "old_comment": "",
+      "source_files": [
+        {
+          "path": "Rush/Utilities/RDRitual.lua",
+          "line": 27,
+          "origin": "rush-utility"
+        }
+      ]
+    },
+    {
+      "name": "RITUAL_CURRENT_ATTACK_GREATER",
+      "value": "8",
+      "section": "Rush Duel",
+      "comment_zh": "",
+      "comment_en": "Ritual material comparison mode: current ATK, at least the requirement.",
+      "english_status": "reviewed_english",
+      "dataeditorx_value": "",
+      "dataeditorx_comment": "",
+      "old_value": "",
+      "old_comment": "",
+      "source_files": [
+        {
+          "path": "Rush/Utilities/RDRitual.lua",
+          "line": 29,
+          "origin": "rush-utility"
+        }
+      ]
+    },
+    {
+      "name": "SUMMON_VALUE_ZERO",
+      "value": "0x20",
+      "section": "Rush Duel",
+      "comment_zh": "不用解放的妥协召唤",
+      "comment_en": "Rush-specific constant; see the upstream source comment.",
+      "english_status": "source_only",
+      "dataeditorx_value": "",
+      "dataeditorx_comment": "",
+      "old_value": "",
+      "old_comment": "",
+      "source_files": [
+        {
+          "path": "Rush/Utilities/RDSummon.lua",
+          "line": 4,
+          "origin": "rush-utility"
+        }
+      ]
+    },
+    {
+      "name": "SUMMON_VALUE_ONE",
+      "value": "0x40",
+      "section": "Rush Duel",
+      "comment_zh": "解放1只的妥协召唤",
+      "comment_en": "Rush-specific constant; see the upstream source comment.",
+      "english_status": "source_only",
+      "dataeditorx_value": "",
+      "dataeditorx_comment": "",
+      "old_value": "",
+      "old_comment": "",
+      "source_files": [
+        {
+          "path": "Rush/Utilities/RDSummon.lua",
+          "line": 5,
+          "origin": "rush-utility"
+        }
+      ]
+    },
+    {
+      "name": "SUMMON_VALUE_TWO",
+      "value": "0x80",
+      "section": "Rush Duel",
+      "comment_zh": "解放2只的妥协召唤",
+      "comment_en": "Rush-specific constant; see the upstream source comment.",
+      "english_status": "source_only",
+      "dataeditorx_value": "",
+      "dataeditorx_comment": "",
+      "old_value": "",
+      "old_comment": "",
+      "source_files": [
+        {
+          "path": "Rush/Utilities/RDSummon.lua",
+          "line": 6,
+          "origin": "rush-utility"
+        }
+      ]
+    },
+    {
+      "name": "SUMMON_VALUE_THREE",
+      "value": "0x100",
+      "section": "Rush Duel",
+      "comment_zh": "解放3只的妥协召唤",
+      "comment_en": "Rush-specific constant; see the upstream source comment.",
+      "english_status": "source_only",
+      "dataeditorx_value": "",
+      "dataeditorx_comment": "",
+      "old_value": "",
+      "old_comment": "",
+      "source_files": [
+        {
+          "path": "Rush/Utilities/RDSummon.lua",
+          "line": 7,
+          "origin": "rush-utility"
+        }
+      ]
+    }
+  ]
+}

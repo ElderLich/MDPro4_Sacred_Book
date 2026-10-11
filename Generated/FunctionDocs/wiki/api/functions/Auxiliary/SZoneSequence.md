@@ -20,4 +20,4 @@ Returns the local column for a Spell & Trap Zone sequence from the controller's 
 
 ## Source
 
-- `Utilities/utility.lua:722`
+- `Utilities/utility.lua:725`

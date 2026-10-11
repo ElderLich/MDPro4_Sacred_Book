@@ -17,4 +17,4 @@ Registers an EVENT_BE_MATERIAL continuous effect on c so that, when c is used as
 
 ## Source
 
-- `Utilities/utility.lua:859`
+- `Utilities/utility.lua:862`

@@ -21,4 +21,4 @@ c must have an available Special Summon procedure. This is useful for cards that
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3576`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3628`

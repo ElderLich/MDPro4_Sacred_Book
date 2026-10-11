@@ -719,6 +719,9 @@ Generated from `Utilities/constant.lua`, with English comments carried forward f
 | `EFFECT_RITUAL_LEVEL_EX` | `374` | Allows monsters without Levels to be used as Ritual Material | 支持使用没有等级的怪兽作为仪式素材 |
 | `EFFECT_DOUBLE_XMATERIAL` | `375` | Counts as 2 materials when Xyz Summoning a monster that requires 3 or more materials | 召唤需3只以上作素材的超量怪兽时可以作为2只数量的素材 |
 | `EFFECT_REVEAL_ONFIELD` | `376` | Affected face-down cards on the field can be inspected by the effect controller | 场上里侧表示卡片处于可以确认信息状态（看透心灵之眼） |
+| `EFFECT_ADD_CARD_TYPE` | `377` | Adds TYPE_* bits to the card type used by Card.GetCardType (distinct from ordinary EFFECT_ADD_TYPE) | 增加卡片种类（当作通常怪兽与当作通常怪兽卡是不同的，CARD_TYPE系列EFFECT为后者） |
+| `EFFECT_REMOVE_CARD_TYPE` | `378` | Removes TYPE_* bits from the card type used by Card.GetCardType | 删除卡片种类 |
+| `EFFECT_CHANGE_CARD_TYPE` | `379` | Replaces the card type used by Card.GetCardType with the supplied TYPE_* bitmask | 改变卡片种类 |
 | `EFFECT_FLAG_EFFECT` | `0x20000000` | Flag effect created by RegisterFlagEffect() | 标记类效果，即RegisterFlagEffect()创建的效果 |
 
 ## Events
@@ -941,8 +944,10 @@ Generated from `Utilities/constant.lua`, with English comments carried forward f
 | `HINTMSG_ATTRIBUTE` | `562` | Select an attribute to declare | 请选择要宣言的属性 |
 | `HINTMSG_RACE` | `563` | Select a race to declare | 请选择要宣言的种族 |
 | `HINTMSG_CODE` | `564` | Declare a card name | 请宣言一个卡名 |
-| `HINGMSG_NUMBER` | `565` | Select a number | 请选择一个数字 |
-| `HINGMSG_LVRANK` | `567` | Declare a Level | 请宣言一个等级 |
+| `HINTMSG_NUMBER` | `565` | Select a number | 请选择一个数字 |
+| `HINTMSG_LVRANK` | `567` | Declare a Level | 请宣言一个等级 |
+| `HINGMSG_NUMBER` | `565` | Deprecated spelling retained for compatibility; use HINTMSG_NUMBER | for compat, deprecated |
+| `HINGMSG_LVRANK` | `567` | Deprecated spelling retained for compatibility; use HINTMSG_LVRANK | for compat, deprecated |
 | `HINTMSG_RESOLVECARD` | `568` | Select a card to resolve its effect | 请选择要处理效果的卡 |
 | `HINTMSG_ZONE` | `569` | Select the position for \[%ls\] | 请选择\[%ls\]的位置 |
 | `HINTMSG_DISABLEZONE` | `570` | Select a zone to make unusable | 请选择要变成不能使用的卡片区域 |

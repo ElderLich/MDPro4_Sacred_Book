@@ -20,4 +20,4 @@ Returns the Equip Cards currently equipped to c as a Group.
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3520`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3572`

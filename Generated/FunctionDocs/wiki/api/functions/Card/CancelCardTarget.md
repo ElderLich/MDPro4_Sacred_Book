@@ -17,4 +17,4 @@ Removes target from c's persistent card-target relation list.
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3544`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3596`

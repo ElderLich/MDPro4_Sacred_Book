@@ -16,4 +16,4 @@ Returns how many different Attributes are represented among the cards in g; an e
 
 ## Source
 
-- `Utilities/utility.lua:584`
+- `Utilities/utility.lua:587`

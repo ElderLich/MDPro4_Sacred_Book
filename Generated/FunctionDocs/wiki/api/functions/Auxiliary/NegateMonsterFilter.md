@@ -20,4 +20,4 @@ Filter for effects that negate a face-up monster, such as Infinite Impermanence:
 
 ## Source
 
-- `Utilities/utility.lua:744`
+- `Utilities/utility.lua:747`

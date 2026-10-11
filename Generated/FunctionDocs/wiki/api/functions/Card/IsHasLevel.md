@@ -20,4 +20,4 @@ Checks whether c has a Level.
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3625`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3677`

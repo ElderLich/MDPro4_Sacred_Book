@@ -16,4 +16,4 @@ Returns a wrapper filter that requires f(target, ...) and also rejects cards cur
 
 ## Source
 
-- `Utilities/utility.lua:920`
+- `Utilities/utility.lua:923`

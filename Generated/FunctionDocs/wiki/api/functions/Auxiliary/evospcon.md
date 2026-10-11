@@ -27,4 +27,4 @@ Special Summon condition helper for Evolsaur-style effects and set 0x304e monste
 
 ## Source
 
-- `Utilities/utility.lua:914`
+- `Utilities/utility.lua:917`

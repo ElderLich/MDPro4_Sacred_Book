@@ -21,4 +21,4 @@ Returns true if tp would have an open Monster Zone after releasing g.
 
 ## Source
 
-- `Utilities/utility.lua:1163`
+- `Utilities/utility.lua:1166`

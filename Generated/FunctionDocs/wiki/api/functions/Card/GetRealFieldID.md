@@ -20,4 +20,4 @@ Returns c's real field ID, the core field identifier used for relation tracking.
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3481`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3530`

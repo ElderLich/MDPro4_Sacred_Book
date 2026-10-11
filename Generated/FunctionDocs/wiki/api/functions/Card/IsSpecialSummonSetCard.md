@@ -21,4 +21,4 @@ Checks whether c was Special Summoned by a card whose name includes setname.
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3401`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3448`

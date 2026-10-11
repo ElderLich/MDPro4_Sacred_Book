@@ -27,4 +27,4 @@ Battle-destroying condition helper that returns true while the handler is still 
 
 ## Source
 
-- `Utilities/utility.lua:764`
+- `Utilities/utility.lua:767`

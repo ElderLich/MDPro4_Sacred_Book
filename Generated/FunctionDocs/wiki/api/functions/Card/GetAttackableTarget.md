@@ -21,4 +21,4 @@ Returns the Group of cards c can attack and a boolean indicating whether c can a
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3657`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3709`

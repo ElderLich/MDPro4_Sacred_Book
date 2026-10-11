@@ -20,4 +20,4 @@ Returns c's original card-data type bitmask, not its current modified type.
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3403`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3451`

@@ -6,6 +6,7 @@ from __future__ import annotations
 import argparse
 import json
 import re
+import sys
 from collections import Counter, OrderedDict
 from dataclasses import asdict, dataclass, field
 from datetime import datetime, timezone
@@ -411,6 +412,19 @@ def load_all_function_docs(workspace: Path, core_root: Path) -> OrderedDict[str,
         ("procedure", workspace / "Utilities" / "procedure.lua"),
     ]
     all_docs: OrderedDict[str, FunctionDoc] = parse_core_bindings(core_root, workspace)
+    if not all_docs:
+        # CI does not check out the external core. Keep its versioned bindings,
+        # including new APIs not yet present in the upstream EmmyLua stubs.
+        cache = workspace / "Generated" / "FunctionDocs" / "api_functions.generated.json"
+        if cache.exists():
+            for entry in json.loads(read_text(cache)).get("functions", []):
+                if not entry.get("core_binding"):
+                    continue
+                raw = dict(entry)
+                raw["params"] = [ParamDoc(**param) for param in raw["params"]]
+                raw["returns"] = [ReturnDoc(**ret) for ret in raw["returns"]]
+                raw["source_files"] = [SourceRef(**source) for source in raw["source_files"] if source["origin"] == "core"]
+                all_docs[raw["name"]] = FunctionDoc(**raw)
     for origin, path in sources:
         parsed = parse_lua_functions(path, workspace, origin)
         for name, doc in parsed.items():
@@ -2122,7 +2136,7 @@ SETCODE_EFFECT_GROUPS = [
     ("LP, phases, attacking, damage, and randomness", 170, 229),
     ("Fusion, Synchro, Xyz, Link materials, and zones", 230, 269),
     ("Player rules, Deck state, and material requirements", 270, 319),
-    ("Advanced procedures, materials, and modern rules", 320, 376),
+    ("Advanced procedures, materials, and modern rules", 320, 379),
 ]
 
 
@@ -2762,6 +2776,13 @@ REVIEWED_CONSTANT_TRANSLATIONS = {
     "EFFECT_UNRELEASABLE_SUM": "Cannot be Tributed for a Tribute Summon",
     "EFFECT_UNRELEASABLE_NONSUM": "Cannot be Tributed except for a Tribute Summon",
     "EFFECT_REVEAL_ONFIELD": "Affected face-down cards on the field can be inspected by the effect controller",
+    "EFFECT_ADD_CARD_TYPE": "Adds TYPE_* bits to the card type used by Card.GetCardType (distinct from ordinary EFFECT_ADD_TYPE)",
+    "EFFECT_REMOVE_CARD_TYPE": "Removes TYPE_* bits from the card type used by Card.GetCardType",
+    "EFFECT_CHANGE_CARD_TYPE": "Replaces the card type used by Card.GetCardType with the supplied TYPE_* bitmask",
+    "HINTMSG_NUMBER": "Select a number",
+    "HINTMSG_LVRANK": "Declare a Level",
+    "HINGMSG_NUMBER": "Deprecated spelling retained for compatibility; use HINTMSG_NUMBER",
+    "HINGMSG_LVRANK": "Deprecated spelling retained for compatibility; use HINTMSG_LVRANK",
     "EVENT_BE_MATERIAL": "When used as Synchro/Xyz/Link Material, used as Ritual/Fusion Material, or Tributed for a Tribute Summon",
     "EVENT_BE_PRE_MATERIAL": "When about to be used as Synchro/Xyz/Link Material or Tributed for a Tribute Summon",
     "HINTMSG_TRIBUTE": "Select a monster to Tribute for a Tribute Summon",
@@ -3707,6 +3728,12 @@ def main() -> int:
     )
 
     print(f"Generated {len(docs)} functions into {out}")
+    if __package__:
+        from .rush_function_docs import generate_rush_docs
+    else:
+        from rush_function_docs import generate_rush_docs
+    rush_functions, rush_constants = generate_rush_docs(workspace, out / "rush", sys.modules[__name__])
+    print(f"Generated {rush_functions} Rush helpers and {rush_constants} Rush constants")
     print(f"Report: {report_path}")
     return 0
 

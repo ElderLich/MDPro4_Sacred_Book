@@ -20,4 +20,4 @@ Filter for effects that negate an Effect Monster, such as Effect Veiler: c must 
 
 ## Source
 
-- `Utilities/utility.lua:748`
+- `Utilities/utility.lua:751`

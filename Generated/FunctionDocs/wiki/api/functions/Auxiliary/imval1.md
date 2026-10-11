@@ -21,4 +21,4 @@ Default value helper for EFFECT_CANNOT_BE_BATTLE_TARGET; it returns true when c 
 
 ## Source
 
-- `Utilities/utility.lua:820`
+- `Utilities/utility.lua:823`

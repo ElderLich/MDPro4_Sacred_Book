@@ -20,4 +20,4 @@ Returns c's current Level.
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3408`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3456`

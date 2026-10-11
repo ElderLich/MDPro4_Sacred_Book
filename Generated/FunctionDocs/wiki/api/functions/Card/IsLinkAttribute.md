@@ -23,4 +23,4 @@ player defaults to the current reason player. The core uses c:GetLinkAttribute(p
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3499`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3551`

@@ -23,4 +23,4 @@ The binding clears STATUS_NO_LEVEL, applies EFFECT_PRE_MONSTER with type, and ap
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3653`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3705`

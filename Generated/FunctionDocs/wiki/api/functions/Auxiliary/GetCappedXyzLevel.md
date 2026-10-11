@@ -16,4 +16,4 @@ Returns c's current Level, capped at MAX_XYZ_LEVEL.
 
 ## Source
 
-- `Utilities/utility.lua:1528`
+- `Utilities/utility.lua:1531`

@@ -20,4 +20,4 @@ Returns a predicate that checks whether an Effect has property flag.
 
 ## Source
 
-- `Utilities/utility.lua:2020`
+- `Utilities/utility.lua:2032`

@@ -21,4 +21,4 @@ Returns the Race c is treated as having in the GY for player, defaulting to the 
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3442`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3490`

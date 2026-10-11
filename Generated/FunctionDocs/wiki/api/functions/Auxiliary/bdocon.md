@@ -27,4 +27,4 @@ Condition helper for EVENT_BATTLE_DESTROYING effects; it returns true when the h
 
 ## Source
 
-- `Utilities/utility.lua:769`
+- `Utilities/utility.lua:772`

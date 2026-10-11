@@ -25,4 +25,4 @@ Card scripts should call Auxiliary.EnableMulcharmyGlobalCheck instead of registe
 
 ## Source
 
-- `Utilities/utility.lua:2050`
+- `Utilities/utility.lua:2062`

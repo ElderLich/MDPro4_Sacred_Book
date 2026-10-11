@@ -22,4 +22,4 @@ Cards treated as not being on the field return false for field locations, includ
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3613`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3665`

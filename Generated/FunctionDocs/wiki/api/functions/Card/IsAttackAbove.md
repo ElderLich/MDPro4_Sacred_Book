@@ -22,4 +22,4 @@ Unlike Card.IsAttackBelow, this core does not add a separate guard for unknown A
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3622`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3674`

@@ -21,4 +21,4 @@ Checks whether c's current reason flags include reason.
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3502`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3554`

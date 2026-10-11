@@ -22,4 +22,4 @@ Common legality checks use this for temporary engine states such as STATUS_BATTL
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3507`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3559`

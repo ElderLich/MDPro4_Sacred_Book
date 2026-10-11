@@ -1,0 +1,48 @@
+# RushDuel.FlatTable
+
+Alias: `RD.FlatTable`. Requires the matching Rush Duel Lua bootstrap.
+
+## Signature
+
+```lua
+RushDuel.FlatTable(... any) -> any
+```
+
+## Description
+
+Rush Duel helper declared in `RDBase.lua`. Its argument names are extracted from the pinned source; parameter and return types have not yet been reviewed.
+
+### Upstream source comment
+
+```text
+抹平表
+```
+
+## Parameters
+
+- `...` `any`: Type and behavior are not yet reviewed; see the source.
+
+## Returns
+
+- `any`: Return contract has not been reviewed; inspect the source below.
+
+## Source
+
+`Rush/Utilities/RDBase.lua:278`
+
+```lua
+function RushDuel.FlatTable(...)
+    local result = {}
+    for _, item in ipairs({...}) do
+        if type(item) == "table" then
+            local datas = RushDuel.FlatTable(table.unpack(item))
+            for _, data in ipairs(datas) do
+                table.insert(result, data)
+            end
+        else
+            table.insert(result, item)
+        end
+    end
+    return result
+end
+```

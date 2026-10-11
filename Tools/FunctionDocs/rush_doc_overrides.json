@@ -1,0 +1,181 @@
+{
+  "functions": {
+    "Init": {
+      "summary_en": ["Initializes Rush rules, tracking flags and function overrides, and schedules the opening-turn setup. The pinned special.lua calls this through Auxiliary.PreloadUds; an MDPro3 integration may install its own bootstrap. This function is not guarded against repeated calls: do not call it from every card script."],
+      "returns": []
+    },
+    "AlternateCard": {
+      "summary_en": ["Loads c<code>.lua for an alternate-art card that shares its implementation."],
+      "params": [{"name":"code","type":"int","description":"Source card passcode."}], "returns": []
+    },
+    "Filter": {
+      "summary_en": ["Returns a one-card predicate that invokes filter(c, ...) with the captured extra arguments."],
+      "params": [{"name":"filter","type":"function","description":"Predicate called with a Card followed by the captured arguments."}],
+      "returns": [{"type":"function","description":"Single-card predicate."}],
+      "example": ["local machine = RD.Filter(Card.IsRace, RACE_MACHINE)","local g = Duel.GetMatchingGroup(machine, tp, LOCATION_MZONE, 0, nil)"]
+    },
+    "Check": {
+      "summary_en": ["Returns a group predicate that invokes check(g, ...) with captured extra arguments. Use for subgroup constraints."],
+      "params": [{"name":"check","type":"function","description":"Predicate receiving the selected Group and captured arguments."}],
+      "returns": [{"type":"function","description":"Group predicate."}]
+    },
+    "Select": {
+      "summary_en": ["Displays the supplied selection hint, then selects cards from group. Without check it uses Select or CancelableSelect; with check it uses SelectSubGroup. Always guard a cancelable result before dereferencing it."],
+      "params": [{"name":"hint","type":"int","description":"Selection hint identifier."},{"name":"player","type":"int","description":"Selecting player, 0 or 1."},{"name":"group","type":"Group","description":"Candidate cards."},{"name":"check","type":"function|nil","description":"Optional whole-group predicate; pass nil for an ordinary selection."},{"name":"cancelable","type":"bool","description":"Whether cancellation is permitted."},{"name":"min","type":"int","description":"Minimum selected count."},{"name":"max","type":"int","description":"Maximum selected count."}],
+      "returns": [{"type":"Group|nil","description":"Selected cards; nil on cancellation."}],
+      "example": ["local sg = RD.Select(HINTMSG_TOGRAVE, tp, g, nil, true, 1, 1)","if not sg then return end","Duel.SendtoGrave(sg, REASON_EFFECT)"]
+    },
+    "CanSelect": {
+      "summary_en": ["Asks the player whether to select. Declining returns nil; canceling the card selection returns to the yes/no prompt. A completed selection returns its Group."],
+      "returns": [{"type":"Group|nil","description":"Selected Group, or nil when the player declines."}]
+    },
+    "SelectOption": {
+      "summary_en": ["Accepts option tables {available, description, value}. Unavailable options are omitted; a sole option is announced automatically. Returns the chosen value (or its original one-based option index), not Duel.SelectOption's zero-based menu index."],
+      "params": [{"name":"player","type":"int","description":"Selecting player, 0 or 1."},{"name":"...","type":"table","description":"Each option is {available, description, value}; value may be omitted."}],
+      "returns": [{"type":"any|nil","description":"Chosen option value; nil when no options are available."}]
+    },
+    "ToGroup": {
+      "summary_en": ["Creates a new Group from a Group, Card or Effect (using the Effect handler). Unsupported input produces an empty Group."],
+      "params": [{"name":"target","type":"Group|Card|Effect","description":"Object to convert."}],
+      "returns": [{"type":"Group","description":"New Group containing the supplied cards or handler."}]
+    },
+    "ToMaximunGroup": {
+      "summary_en": ["Converts the input to a Group and includes overlay components of cards satisfying RD.IsMaximumMode. The upstream name is spelled ToMaximunGroup; preserve that spelling."],
+      "params": [{"name":"target","type":"Group|Card|Effect","description":"Object to convert and expand."}],
+      "returns": [{"type":"Group","description":"Group including Maximum components."}]
+    },
+    "GetMZoneCount": {
+      "summary_en": ["Returns the available Monster Zone count capped by max, with the helper's special one-zone restriction applied when effect 59822133 affects the player."],
+      "params": [{"name":"player","type":"int","description":"Player, 0 or 1."},{"name":"max","type":"int","description":"Upper bound; required by math.min."}],
+      "returns": [{"type":"int","description":"Capped available zone count."}]
+    },
+    "GetSZoneCount": {
+      "summary_en": ["Returns the available Spell & Trap Zone count capped by max."],
+      "params": [{"name":"player","type":"int","description":"Player, 0 or 1."},{"name":"max","type":"int","description":"Upper bound; required by math.min."}],
+      "returns": [{"type":"int","description":"Capped available zone count."}]
+    },
+    "IsLegendCard": {
+      "summary_en": ["Checks TYPE_LEGEND or an EFFECT_LEGEND_CARD marker. This supports both the printed Rush Legend bit and effect-based Legend treatment."],
+      "params": [{"name":"card","type":"Card","description":"Card to inspect."}],
+      "returns": [{"type":"bool","description":"Whether the card is treated as Legend."}]
+    },
+    "IsMaximumMode": {
+      "summary_en": ["Checks that the card is in a Monster Zone, has the Maximum Summon type and still has overlay components. This Card predicate differs from RD.MaximumMode, an Effect condition that checks the Maximum marker."],
+      "params": [{"name":"card","type":"Card","description":"Card to inspect."}],
+      "returns": [{"type":"bool","description":"Whether the helper's Maximum-mode test passes."}]
+    },
+    "IsPreviousMaximumMode": {
+      "summary_en": ["Checks the Maximum type bit, Maximum Summon type and previous on-field overlay count. Use when an effect needs to know that components were attached before the card left the field."],
+      "params": [{"name":"card","type":"Card","description":"Card to inspect."}],
+      "returns": [{"type":"bool","description":"Whether the previous-Maximum check passes."}]
+    },
+    "IsSummonTurn": {
+      "summary_en": ["Checks REASON_SUMMON, STATUS_SUMMON_TURN and the Rush FLAG_SUMMON_TURN marker. The Rush bootstrap installs the tracking effects required by this predicate."],
+      "params": [{"name":"card","type":"Card","description":"Card to inspect."}],
+      "returns": [{"type":"bool","description":"Whether the card satisfies the current-turn Normal Summon checks."}]
+    },
+    "IsSpecialSummonTurn": {
+      "summary_en": ["Checks REASON_SPSUMMON, STATUS_SPSUMMON_TURN and the Rush FLAG_SUMMON_TURN marker. The Rush bootstrap installs the tracking effects required by this predicate."],
+      "params": [{"name":"card","type":"Card","description":"Card to inspect."}],
+      "returns": [{"type":"bool","description":"Whether the card satisfies the current-turn Special Summon checks."}]
+    },
+    "AddCodeList": {
+      "summary_en": ["Accepts passcodes or flat tables of passcodes, registering each through Auxiliary.AddCodeList. This is mention metadata for other scripts; it does not create a Summon procedure or change the card's name."],
+      "params": [{"name":"card","type":"Card","description":"Card whose script mentions these passcodes."},{"name":"...","type":"int|table","description":"Passcodes or flat tables of passcodes."}], "returns": []
+    },
+    "MaximumMode": {
+      "summary_en": ["Effect-condition callback: checks that the handler has EFFECT_MAXIMUM_MODE and at least one overlay component. Use RD.IsMaximumMode for a predicate receiving a Card."],
+      "params": [{"name":"e","type":"Effect","description":"Effect whose handler is checked."}],
+      "returns": [{"type":"bool|nil","description":"Truthy when the Maximum marker and components are present."}]
+    },
+    "AddMaximumProcedure": {
+      "summary_en": ["Registers the center monster's Maximum Summon procedure, Maximum ATK and zone-limit effect. left_code and right_code identify the two components selected from hand. The pinned implementation stores components as overlays; use the matching Rush helpers when moving a Maximum monster."],
+      "params": [{"name":"card","type":"Card","description":"Center Maximum monster."},{"name":"max_atk","type":"int","description":"ATK while in Maximum mode."},{"name":"left_code","type":"int","description":"Left component passcode."},{"name":"right_code","type":"int","description":"Right component passcode."}],
+      "returns": [], "example": ["-- Inside the center card's initial_effect:","RD.AddMaximumProcedure(c, 4000, 120150001, 120150003)"]
+    },
+    "EnableMaximumMode": {
+      "summary_en": ["Registers an EFFECT_MAXIMUM_MODE marker with the supplied reset. It does not create components or perform a Maximum Summon by itself."],
+      "params": [{"name":"card","type":"Card","description":"Card receiving the marker."},{"name":"reset","type":"int","description":"Reset flags for the marker effect."}], "returns": []
+    },
+    "AddFusionProcedure": {
+      "summary_en": ["Registers a Rush Fusion material procedure using fixed material slots. Each slot may be a card code, a predicate, or a table of alternatives. sub controls substitutes and insf permits non-Fusion special-summon handling; use explicit booleans to make the call unambiguous."],
+      "params": [{"name":"card","type":"Card","description":"Fusion monster."},{"name":"sub","type":"bool|any","description":"Substitute permission; non-booleans are interpreted as the first material slot."},{"name":"insf","type":"bool|any","description":"Non-Fusion summon allowance; non-booleans are interpreted as a material slot."},{"name":"...","type":"int|function|table","description":"Material slots."}],
+      "returns": [{"type":"Effect|nil","description":"Fusion procedure effect; nil while copying effects."}]
+    },
+    "AddRitualProcedure": {
+      "summary_en": ["Registers the Rush Ritual monster's type-adjustment effect, removing the TYPE_FUSION compatibility bit. This helper does not create a Ritual Spell activation or summon anything; the spell uses CreateRitualEffect."],
+      "params": [{"name":"card","type":"Card","description":"Rush Ritual monster."}], "returns": []
+    },
+    "CreateRitualEffect": {
+      "summary_en": ["Creates an Effect with Rush Ritual target and operation callbacks. Configure the returned Effect's activation type, code, category and other requirements, then register it. The comparison mode is one of RITUAL_*; material locations default to zero and material movement defaults to RD.RitualToGrave.", "Original/current selects which value of the Ritual monster sets the requirement. Material Level sums use Card.GetRitualLevel and ATK sums use Card.GetAttack in this snapshot; ORIGINAL does not universally mean reading every material's printed stat."],
+      "returns": [{"type":"Effect","description":"Configured but unregistered effect."}]
+    },
+    "RegisterEquipEffect": {
+      "summary_en": ["Registers a Rush Equip Spell activation and its equip limit. The target argument is a card predicate; this implementation chooses the monster during resolution. Returns the activation Effect for further configuration."],
+      "params": [{"name":"card","type":"Card","description":"Equip Spell."},{"name":"condition","type":"function|nil","description":"Activation condition, or nil."},{"name":"cost","type":"function|nil","description":"Cost callback, or nil."},{"name":"target","type":"function","description":"Predicate receiving card, effect, player and a legality-check flag."},{"name":"property","type":"int|nil","description":"Optional activation property flags."}],
+      "returns": [{"type":"Effect","description":"Registered activation Effect."}]
+    },
+    "CostPayLP": {
+      "summary_en": ["Returns a cost callback that checks Duel.CheckLPCost during chk==0, then pays the specified LP when the cost is performed."],
+      "params": [{"name":"lp","type":"int","description":"LP to pay."}],
+      "returns": [{"type":"function","description":"Cost callback for Effect.SetCost."}],
+      "example": ["e1:SetCost(RD.CostPayLP(1000))"]
+    },
+    "CostSendHandToGrave": {
+      "summary_en": ["Returns a cost callback that selects min to max matching cards from the controller's hand and sends them to the Graveyard with REASON_COST, excluding the effect handler. The filter must include any required cost-legality check such as Card.IsAbleToGraveAsCost; this wrapper does not add that predicate.", "The callback honors EFFECT_NO_COST_SEND_HAND_TO_GRAVE through RD.NoCostCheck. min and max can be numbers or callbacks evaluated with the cost arguments. Optional label callbacks receive the selected Group before sending or the operated Group after a successful send."],
+      "params": [{"name":"filter","type":"function","description":"Card filter receiving card, effect, player and remaining cost callback arguments."},{"name":"min","type":"int|function","description":"Minimum count or callback computing it."},{"name":"max","type":"int|function","description":"Maximum count or callback computing it."},{"name":"set_label_before","type":"function|nil","optional":true,"description":"Computes the effect label from the selected Group before sending."},{"name":"set_object_before","type":"function|nil","optional":true,"description":"Computes the label object from the selected Group before sending."},{"name":"set_label_after","type":"function|nil","optional":true,"description":"Computes the effect label from the operated Group after a successful send."},{"name":"set_object_after","type":"function|nil","optional":true,"description":"Computes the label object from the operated Group after a successful send."}],
+      "returns": [{"type":"function","description":"Cost callback for Effect.SetCost; tests availability for chk==0, then performs payment."}],
+      "example": ["e1:SetCost(RD.CostSendHandToGrave(Card.IsAbleToGraveAsCost, 1, 1))"]
+    },
+    "NoCostCheck": {
+      "summary_en": ["Wraps a cost callback with a Rush cost-waiver check. An applicable player effect with the specified code waives the cost when its value is 1 or its value callback returns true; otherwise the original cost callback receives all arguments."],
+      "params": [{"name":"cost","type":"function","description":"Cost callback to invoke when no waiver applies."},{"name":"flag_effect","type":"int","description":"Player-effect code that can waive this cost."}],
+      "returns": [{"type":"function","description":"Wrapped cost callback."}]
+    },
+    "CreateFusionEffect": {
+      "summary_en": ["Creates an Effect with Rush Fusion target and operation callbacks. It does not register an activation: set type, code, category, description and any costs on the returned Effect, then register it. Locations default to zero, material movement to RD.FusionToGrave, and summon position to POS_FACEUP."],
+      "returns": [{"type":"Effect","description":"Configured but unregistered effect."}]
+    },
+    "CostSendDeckTopToGrave": {
+      "summary_en": ["Returns a cost callback that checks whether the player can send count cards from the Deck as cost, then calls Duel.DiscardDeck with REASON_COST. Optional callbacks store information from the operated Group on the Effect."],
+      "params": [{"name":"count","type":"int","description":"Cards to send from the Deck top."},{"name":"set_label","type":"function|nil","optional":true,"description":"Computes a numeric label from the operated Group."},{"name":"set_object","type":"function|nil","optional":true,"description":"Computes a label object from the operated Group."}],
+      "returns": [{"type":"function","description":"Cost callback."}]
+    },
+    "CostMerge": {
+      "summary_en": ["Returns a cost callback that checks both costs with short-circuit 'and' when chk==0. During payment it calls both costs in order, ignoring their return values. Each cost must remain payable after the first payment; independently successful checks alone do not prove shared resources are sufficient."],
+      "params": [{"name":"cost1","type":"function","description":"First cost callback."},{"name":"cost2","type":"function","description":"Second cost callback."}],
+      "returns": [{"type":"function","description":"Combined cost callback."}]
+    },
+    "TargetDraw": {
+      "summary_en": ["Stores the target player and draw count on the current chain link and declares CATEGORY_DRAW operation information. This helper does not draw cards or check deck availability."],
+      "params": [{"name":"player","type":"int","description":"Drawing player."},{"name":"count","type":"int","description":"Number to draw."}], "returns": []
+    },
+    "Draw": {
+      "summary_en": ["Draws with REASON_EFFECT using the supplied player/count, or the current chain's target player/parameter when arguments are omitted. Pair RD.TargetDraw(tp, count) in targeting with RD.Draw() in resolution."],
+      "params": [{"name":"player","type":"int","optional":true,"description":"Player; defaults to CHAININFO_TARGET_PLAYER."},{"name":"count","type":"int","optional":true,"description":"Count; defaults to CHAININFO_TARGET_PARAM."}],
+      "returns": [{"type":"int","description":"Result returned by Duel.Draw."}]
+    }
+  },
+  "constants": {
+    "TYPE_LEGEND": "Rush Legend type bit. The value 0x8 has a different meaning in standard formats; use only with Rush data and helpers.",
+    "TYPE_MAXIMUM": "Rush Maximum monster type bit. The value 0x8000 overlaps the standard Token bit; use only with Rush data and helpers.",
+    "SUMMON_TYPE_MAXIMUM": "Summon-type identifier used by the pinned Rush Maximum procedure.",
+    "EFFECT_MAXIMUM_MODE": "Custom Rush marker for Maximum-mode behavior; interpreted by the Rush helper layer.",
+    "EFFECT_LEGEND_CARD": "Custom Rush Legend marker, separate from the printed Legend type bit.",
+    "RACE_MAGICALKNIGHT": "Magical Knight race.",
+    "RACE_HYDRAGON": "High Dragon race.",
+    "RACE_OMEGAPSYCHO": "Omega Psychic race.",
+    "RACE_CELESTIALWARRIOR": "Celestial Warrior race.",
+    "RACE_GALAXY": "Galaxy race.",
+    "RACE_CYBORG": "Cyborg race.",
+    "RACE_ALL": "All 32 race bits used by this Rush helper snapshot.",
+    "RITUAL_ORIGINAL_LEVEL_EQUAL": "Ritual material comparison mode: original Level, exact requirement.",
+    "RITUAL_ORIGINAL_LEVEL_GREATER": "Ritual material comparison mode: original Level, at least the requirement.",
+    "RITUAL_CURRENT_LEVEL_EQUAL": "Ritual material comparison mode: current Level, exact requirement.",
+    "RITUAL_CURRENT_LEVEL_GREATER": "Ritual material comparison mode: current Level, at least the requirement.",
+    "RITUAL_ORIGINAL_ATTACK_EQUAL": "Ritual material comparison mode: original/base ATK, exact requirement.",
+    "RITUAL_ORIGINAL_ATTACK_GREATER": "Ritual material comparison mode: original/base ATK, at least the requirement.",
+    "RITUAL_CURRENT_ATTACK_EQUAL": "Ritual material comparison mode: current ATK, exact requirement.",
+    "RITUAL_CURRENT_ATTACK_GREATER": "Ritual material comparison mode: current ATK, at least the requirement."
+  }
+}

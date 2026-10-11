@@ -22,4 +22,4 @@ Registers an EFFECT_CHANGE_CODE effect on c so its code becomes tc's original ru
 
 ## Source
 
-- `Utilities/utility.lua:1998`
+- `Utilities/utility.lua:2010`

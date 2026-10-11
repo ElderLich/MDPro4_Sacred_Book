@@ -39,4 +39,4 @@ This checks the Equip Card's local equip-limit rules. It does not by itself rese
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3524`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3576`

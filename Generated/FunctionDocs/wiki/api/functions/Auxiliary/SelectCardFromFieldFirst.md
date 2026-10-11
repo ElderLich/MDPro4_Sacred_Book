@@ -28,4 +28,4 @@ Selection helper that first offers matching on-field cards with HINTMSG_FIELD_FI
 
 ## Source
 
-- `Utilities/utility.lua:1379`
+- `Utilities/utility.lua:1382`

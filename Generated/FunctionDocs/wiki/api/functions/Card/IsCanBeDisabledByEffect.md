@@ -24,4 +24,4 @@ The optional third parameter indicates whether this is a monster effect.
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3650`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3702`

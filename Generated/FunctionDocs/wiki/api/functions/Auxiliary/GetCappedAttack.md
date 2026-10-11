@@ -16,4 +16,4 @@ Returns c's current ATK, capped at MAX_PARAMETER.
 
 ## Source
 
-- `Utilities/utility.lua:1537`
+- `Utilities/utility.lua:1540`

@@ -22,4 +22,4 @@ Returns the column index for location and sequence from player 0's viewpoint. Fo
 
 ## Source
 
-- `Utilities/utility.lua:655`
+- `Utilities/utility.lua:658`

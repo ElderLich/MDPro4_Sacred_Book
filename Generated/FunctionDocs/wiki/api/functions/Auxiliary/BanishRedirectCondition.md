@@ -16,4 +16,4 @@ Default condition for banish-redirect effects; returns true while the handler is
 
 ## Source
 
-- `Utilities/utility.lua:1946`
+- `Utilities/utility.lua:1951`

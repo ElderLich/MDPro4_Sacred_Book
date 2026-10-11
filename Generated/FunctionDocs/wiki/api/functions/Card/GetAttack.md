@@ -20,4 +20,4 @@ Returns c's current ATK, with unknown or negative ATK reported as 0.
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3443`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3491`

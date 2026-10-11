@@ -16,4 +16,4 @@ Clears the stored responsible effect through the paired reset effect, then reset
 
 ## Source
 
-- `Utilities/utility.lua:1594`
+- `Utilities/utility.lua:1597`

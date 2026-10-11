@@ -16,4 +16,4 @@ Returns true if every card in g has a different Link Rating.
 
 ## Source
 
-- `Utilities/utility.lua:1138`
+- `Utilities/utility.lua:1141`

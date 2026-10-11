@@ -31,4 +31,4 @@ Use the manual pattern when the equip target is created during resolution or whe
 
 ## Source
 
-- `Utilities/utility.lua:1920`
+- `Utilities/utility.lua:1925`

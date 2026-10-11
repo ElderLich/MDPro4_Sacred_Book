@@ -21,4 +21,4 @@ Returns the local row index for a Spell & Trap Zone or Monster Zone sequence. Ma
 
 ## Source
 
-- `Utilities/utility.lua:601`
+- `Utilities/utility.lua:604`

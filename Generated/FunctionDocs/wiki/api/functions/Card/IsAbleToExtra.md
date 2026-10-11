@@ -20,4 +20,4 @@ Checks whether c can be returned to the Extra Deck by the current reason player.
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3589`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3641`

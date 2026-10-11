@@ -20,4 +20,4 @@ Returns c's previous controller value.
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3460`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3509`

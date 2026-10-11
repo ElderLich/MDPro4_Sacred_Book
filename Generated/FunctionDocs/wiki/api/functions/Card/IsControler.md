@@ -21,4 +21,4 @@ Checks whether c's current controller is controler.
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3610`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3662`

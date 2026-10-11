@@ -26,4 +26,4 @@ min and max restrict the number of non-Tuner Synchro Materials used by the proce
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3579`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3631`

@@ -17,4 +17,4 @@ Returns a value function for EFFECT_CHANGE_BATTLE_DAMAGE. player=0 changes damag
 
 ## Source
 
-- `Utilities/utility.lua:726`
+- `Utilities/utility.lua:729`

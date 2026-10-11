@@ -21,4 +21,4 @@ Checks whether c1 can be chosen as a battle target by c2.
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3652`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3704`

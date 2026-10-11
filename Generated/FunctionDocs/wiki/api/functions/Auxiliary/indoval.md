@@ -22,4 +22,4 @@ Value helper for indestructibility against opponent's effects; it returns true w
 
 ## Source
 
-- `Utilities/utility.lua:828`
+- `Utilities/utility.lua:831`

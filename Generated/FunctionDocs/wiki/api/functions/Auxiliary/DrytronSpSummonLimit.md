@@ -22,4 +22,4 @@ Oath target for the shared Drytron cost; it prevents Special Summoning monsters 
 
 ## Source
 
-- `Utilities/utility.lua:1054`
+- `Utilities/utility.lua:1057`

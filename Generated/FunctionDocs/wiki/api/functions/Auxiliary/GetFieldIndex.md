@@ -21,4 +21,4 @@ Returns c's global row and column indexes from player 0's field viewpoint.
 
 ## Source
 
-- `Utilities/utility.lua:670`
+- `Utilities/utility.lua:673`

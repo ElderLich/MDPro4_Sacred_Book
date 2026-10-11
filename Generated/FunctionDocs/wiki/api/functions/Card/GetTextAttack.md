@@ -21,4 +21,4 @@ This is the printed/database value, not the current ATK. Unlike Card.GetAttack, 
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3445`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3493`

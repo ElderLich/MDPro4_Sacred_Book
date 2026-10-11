@@ -20,4 +20,4 @@ Returns true for face-up cards with current DEF greater than 0.
 
 ## Source
 
-- `Utilities/utility.lua:844`
+- `Utilities/utility.lua:847`

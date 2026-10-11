@@ -21,4 +21,4 @@ Checks whether c has an equipped card carrying flag effect id, which marks equip
 
 ## Source
 
-- `Utilities/utility.lua:1953`
+- `Utilities/utility.lua:1958`

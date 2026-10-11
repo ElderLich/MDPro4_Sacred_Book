@@ -22,4 +22,4 @@ Registers single-card merged delayed event listeners for one event or a table of
 
 ## Source
 
-- `Utilities/utility.lua:1684`
+- `Utilities/utility.lua:1687`

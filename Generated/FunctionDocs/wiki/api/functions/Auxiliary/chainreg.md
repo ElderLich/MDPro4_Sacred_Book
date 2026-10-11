@@ -24,4 +24,4 @@ The flag resets by the standard event reset, except turn Set reset, and also at 
 
 ## Source
 
-- `Utilities/utility.lua:814`
+- `Utilities/utility.lua:817`

@@ -16,4 +16,4 @@ Returns true for a non-Link Monster whose ATK equals DEF, using current values o
 
 ## Source
 
-- `Utilities/utility.lua:1115`
+- `Utilities/utility.lua:1118`

@@ -24,4 +24,4 @@ Shared cost function that checks whether the handler can be banished as cost, th
 
 ## Source
 
-- `Utilities/utility.lua:1121`
+- `Utilities/utility.lua:1124`

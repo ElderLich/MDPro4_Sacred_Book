@@ -19,4 +19,4 @@ Internal helper that registers one event listener and its Chain End companion fo
 
 ## Source
 
-- `Utilities/utility.lua:1729`
+- `Utilities/utility.lua:1732`

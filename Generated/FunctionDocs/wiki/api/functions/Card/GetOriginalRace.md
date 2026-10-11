@@ -20,4 +20,4 @@ Returns c's original Race from card data, or 0 while c is marked with STATUS_NO_
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3440`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3488`

@@ -21,4 +21,4 @@ Checks whether c has an effect matching filter.
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3511`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3563`

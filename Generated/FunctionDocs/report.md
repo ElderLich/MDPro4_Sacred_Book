@@ -1,6 +1,6 @@
 # Function Docs Refresh Report
 
-Generated: 2026-07-26T16:41:33+00:00
+Generated: 2026-10-11T18:32:52+00:00
 
 ## Outputs
 
@@ -22,20 +22,20 @@ Generated: 2026-07-26T16:41:33+00:00
 
 ## Function Sources
 
-- Generated functions: 1001
-- Core-bound functions: 611
-- Lua helper functions: 378
+- Generated functions: 1009
+- Core-bound functions: 616
+- Lua helper functions: 381
 - Stub-only functions: 12
 - Core-bound functions without stub docs: 0
-- Existing DataEditorX `_functions.txt`: 1000
-- Existing DataEditorX `_function_english.txt`: 1000
-- Added versus DataEditorX `_functions.txt`: 1
+- Existing DataEditorX `_functions.txt`: 1009
+- Existing DataEditorX `_function_english.txt`: 1009
+- Added versus DataEditorX `_functions.txt`: 0
 - Dropped versus DataEditorX `_functions.txt`: 0
 
 ## Namespaces
 
-- `Auxiliary`: 365
-- `Card`: 287
+- `Auxiliary`: 368
+- `Card`: 292
 - `Debug`: 11
 - `Duel`: 229
 - `Effect`: 55
@@ -45,7 +45,7 @@ Generated: 2026-07-26T16:41:33+00:00
 
 ## English Coverage
 
-- `translated_exact`: 1001
+- `translated_exact`: 1009
 
 ## Core Binding Gaps
 
@@ -86,8 +86,8 @@ Lua helper docs that still render as `void` while their source body contains a `
 
 ## Constant Findings
 
-- DataEditorX constants: 859
-- Local utility constants: 859
+- DataEditorX constants: 864
+- Local utility constants: 864
 - Missing in DataEditorX: 0
 - Changed values: 0
 - Removed from local: 0
@@ -95,21 +95,21 @@ Lua helper docs that still render as `void` while their source body contains a `
 - Effect creator commented `EFFECT_*` names: 6
 - Effect creator effect-code names: 257
 - Effect creator property names: 33
-- Local `EFFECT_*` constants: 321
-- Local effect-code constants: 262
+- Local `EFFECT_*` constants: 324
+- Local effect-code constants: 265
 - Local effect-property constants: 40
-- `effect_creator_settings.txt` missing effect-code constants: 0
+- `effect_creator_settings.txt` missing effect-code constants: 3
 - `effect_creator_settings.txt` missing effect-property constants: 0
 - Reserved/internal effect-code constants intentionally ignored: 5
 - Internal property constants intentionally ignored: 7
 - Unknown active effect creator names: 0
-- Generated constant docs: 859
+- Generated constant docs: 864
 
 Constant English status:
 
 - `existing_english`: 4
-- `from_project_cache`: 792
-- `reviewed_english`: 8
+- `from_project_cache`: 790
+- `reviewed_english`: 15
 - `translated_exact`: 28
 - `translated_name`: 27
 
@@ -127,7 +127,6 @@ Examples changed constant values:
 
 ## Added Function Examples
 
-- `Card.Metallization_material`
 
 ## Dropped DataEditorX Function Examples
 

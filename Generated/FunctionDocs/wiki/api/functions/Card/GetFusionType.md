@@ -20,4 +20,4 @@ Returns c's Fusion Material Type mask used by Fusion Material checks.
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3404`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3452`

@@ -23,4 +23,4 @@ Internal callback for Auxiliary.RegisterMergedDelayedEvent. It collects event ca
 
 ## Source
 
-- `Utilities/utility.lua:1665`
+- `Utilities/utility.lua:1668`

@@ -45,4 +45,4 @@ Use a manual activation instead when the card Special Summons first, equips card
 
 ## Source
 
-- `Utilities/utility.lua:1883`
+- `Utilities/utility.lua:1888`

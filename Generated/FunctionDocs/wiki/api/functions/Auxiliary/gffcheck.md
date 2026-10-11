@@ -24,4 +24,4 @@ Checks a 2-card group against two filters in either order: one card must satisfy
 
 ## Source
 
-- `Utilities/utility.lua:1157`
+- `Utilities/utility.lua:1160`

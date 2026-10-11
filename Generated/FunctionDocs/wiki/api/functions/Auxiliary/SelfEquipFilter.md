@@ -21,4 +21,4 @@ Returns true if c has a flag with id, used by Auxiliary.IsSelfEquip to identify 
 
 ## Source
 
-- `Utilities/utility.lua:1956`
+- `Utilities/utility.lua:1961`

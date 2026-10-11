@@ -27,4 +27,4 @@ Condition helper for a battle-destroying monster: the handler is still related t
 
 ## Source
 
-- `Utilities/utility.lua:780`
+- `Utilities/utility.lua:783`

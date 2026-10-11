@@ -21,4 +21,4 @@ Checks whether c's recorded Summon location contains loc. This reads the Summon 
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3505`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3557`

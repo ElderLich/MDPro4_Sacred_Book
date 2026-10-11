@@ -20,4 +20,4 @@ Returns c's original Level from card data, or 0 for Xyz Monsters, Link Monsters,
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3413`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3461`

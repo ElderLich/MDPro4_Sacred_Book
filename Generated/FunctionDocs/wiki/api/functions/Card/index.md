@@ -1,6 +1,6 @@
 # Card
 
-287 functions in the `Card` namespace.
+292 functions in the `Card` namespace.
 
 - [Card.AddCounter](AddCounter.md)
 - [Card.AddMonsterAttribute](AddMonsterAttribute.md)
@@ -42,6 +42,7 @@
 - [Card.GetBattleTarget](GetBattleTarget.md)
 - [Card.GetCardTarget](GetCardTarget.md)
 - [Card.GetCardTargetCount](GetCardTargetCount.md)
+- [Card.GetCardType](GetCardType.md)
 - [Card.GetCode](GetCode.md)
 - [Card.GetColumnGroup](GetColumnGroup.md)
 - [Card.GetColumnGroupCount](GetColumnGroupCount.md)
@@ -98,6 +99,7 @@
 - [Card.GetPosition](GetPosition.md)
 - [Card.GetPreviousAttackOnField](GetPreviousAttackOnField.md)
 - [Card.GetPreviousAttributeOnField](GetPreviousAttributeOnField.md)
+- [Card.GetPreviousCardTypeOnField](GetPreviousCardTypeOnField.md)
 - [Card.GetPreviousCodeOnField](GetPreviousCodeOnField.md)
 - [Card.GetPreviousControler](GetPreviousControler.md)
 - [Card.GetPreviousDefenseOnField](GetPreviousDefenseOnField.md)
@@ -149,6 +151,7 @@
 - [Card.IsAbleToHandAsCost](IsAbleToHandAsCost.md)
 - [Card.IsAbleToRemove](IsAbleToRemove.md)
 - [Card.IsAbleToRemoveAsCost](IsAbleToRemoveAsCost.md)
+- [Card.IsAllCardTypes](IsAllCardTypes.md)
 - [Card.IsAllColumn](IsAllColumn.md)
 - [Card.IsAllReasons](IsAllReasons.md)
 - [Card.IsAllTypes](IsAllTypes.md)
@@ -174,6 +177,7 @@
 - [Card.IsCanOverlay](IsCanOverlay.md)
 - [Card.IsCanRemoveCounter](IsCanRemoveCounter.md)
 - [Card.IsCanTurnSet](IsCanTurnSet.md)
+- [Card.IsCardType](IsCardType.md)
 - [Card.IsChainAttackable](IsChainAttackable.md)
 - [Card.IsCode](IsCode.md)
 - [Card.IsControler](IsControler.md)
@@ -227,6 +231,7 @@
 - [Card.IsOriginalEffectProperty](IsOriginalEffectProperty.md)
 - [Card.IsOriginalSetCard](IsOriginalSetCard.md)
 - [Card.IsPosition](IsPosition.md)
+- [Card.IsPreviousCardTypeOnField](IsPreviousCardTypeOnField.md)
 - [Card.IsPreviousControler](IsPreviousControler.md)
 - [Card.IsPreviousLocation](IsPreviousLocation.md)
 - [Card.IsPreviousPosition](IsPreviousPosition.md)

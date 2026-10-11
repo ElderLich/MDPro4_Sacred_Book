@@ -21,4 +21,4 @@ Checks whether player was the player who Summoned c.
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3506`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3558`

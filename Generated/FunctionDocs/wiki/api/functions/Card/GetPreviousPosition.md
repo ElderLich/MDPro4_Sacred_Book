@@ -20,4 +20,4 @@ Returns c's previously recorded position value.
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3467`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3516`

@@ -21,4 +21,4 @@ In this MDPro3/YGOPro core, that helper returns false for Link Monsters and true
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3636`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3688`

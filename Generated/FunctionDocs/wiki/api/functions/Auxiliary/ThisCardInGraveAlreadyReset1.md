@@ -16,4 +16,4 @@ Clears the stored responsible effect from the tracking effect and resets this te
 
 ## Source
 
-- `Utilities/utility.lua:1589`
+- `Utilities/utility.lua:1592`

@@ -22,4 +22,4 @@ Standard Link procedures call this before applying their own material filters.
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3646`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3698`

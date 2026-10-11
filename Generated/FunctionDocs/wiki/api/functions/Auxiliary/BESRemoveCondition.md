@@ -23,4 +23,4 @@ Condition for the shared B.E.S. maintenance effect after battle; returns true if
 
 ## Source
 
-- `Utilities/utility.lua:1803`
+- `Utilities/utility.lua:1808`

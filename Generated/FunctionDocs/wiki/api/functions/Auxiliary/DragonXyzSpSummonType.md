@@ -20,4 +20,4 @@ Returns true only for Soul Drain Dragon, used as a Special Summon procedure-type
 
 ## Source
 
-- `Utilities/utility.lua:1086`
+- `Utilities/utility.lua:1089`

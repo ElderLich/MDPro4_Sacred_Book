@@ -20,4 +20,4 @@ Returns c's original Attribute from card data, or 0 while c is marked with STATU
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3435`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3483`

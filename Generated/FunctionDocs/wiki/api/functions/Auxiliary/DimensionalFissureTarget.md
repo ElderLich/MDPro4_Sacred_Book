@@ -17,4 +17,4 @@ Target filter for Dimensional Fissure-style replacement effects. It matches card
 
 ## Source
 
-- `Utilities/utility.lua:1986`
+- `Utilities/utility.lua:1998`

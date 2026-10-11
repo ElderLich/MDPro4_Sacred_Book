@@ -17,4 +17,4 @@ Sets c's turn counter.
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3515`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3567`

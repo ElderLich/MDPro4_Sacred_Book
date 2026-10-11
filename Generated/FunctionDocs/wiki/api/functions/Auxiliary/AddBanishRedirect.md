@@ -17,4 +17,4 @@ Registers an EFFECT_LEAVE_FIELD_REDIRECT effect that banishes c when condition i
 
 ## Source
 
-- `Utilities/utility.lua:1932`
+- `Utilities/utility.lua:1937`

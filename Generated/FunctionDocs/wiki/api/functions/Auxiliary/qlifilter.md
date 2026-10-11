@@ -22,4 +22,4 @@ It accepts activated monster effects from monsters whose original Level or Rank 
 
 ## Source
 
-- `Utilities/utility.lua:892`
+- `Utilities/utility.lua:895`

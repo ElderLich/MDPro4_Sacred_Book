@@ -24,4 +24,4 @@ The card must be affected by the resolving reason effect. The current reason pla
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3631`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3683`

@@ -17,4 +17,4 @@ Cost filter for the shared Drytron Special Summon effect. It accepts Drytron mon
 
 ## Source
 
-- `Utilities/utility.lua:1013`
+- `Utilities/utility.lua:1016`

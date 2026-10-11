@@ -21,4 +21,4 @@ Condition helper for effects that negate an activation and banish the activating
 
 ## Source
 
-- `Utilities/utility.lua:1464`
+- `Utilities/utility.lua:1467`

@@ -16,4 +16,4 @@ Registers the shared B.E.S. maintenance trigger on c. After c battles, it remove
 
 ## Source
 
-- `Utilities/utility.lua:1791`
+- `Utilities/utility.lua:1796`

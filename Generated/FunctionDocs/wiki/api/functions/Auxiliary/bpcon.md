@@ -23,4 +23,4 @@ Returns true if the player can enter the Battle Phase, or if the current phase i
 
 ## Source
 
-- `Utilities/utility.lua:806`
+- `Utilities/utility.lua:809`

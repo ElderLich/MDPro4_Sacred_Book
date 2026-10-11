@@ -20,4 +20,4 @@ Returns a Group containing all persistent card targets currently recorded on c.
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3540`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3592`

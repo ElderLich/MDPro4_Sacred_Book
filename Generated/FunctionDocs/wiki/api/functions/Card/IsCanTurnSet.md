@@ -21,4 +21,4 @@ The core returns false for Link Monsters, Tokens, already face-down cards, and c
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3637`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3689`

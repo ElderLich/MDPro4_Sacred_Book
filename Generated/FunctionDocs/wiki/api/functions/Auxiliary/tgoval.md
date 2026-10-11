@@ -19,4 +19,4 @@ It returns true when the reason player rp is the opponent of e's handler player.
 
 ## Source
 
-- `Utilities/utility.lua:836`
+- `Utilities/utility.lua:839`

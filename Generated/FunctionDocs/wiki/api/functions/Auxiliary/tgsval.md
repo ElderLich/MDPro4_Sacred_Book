@@ -22,4 +22,4 @@ Value helper for self-targeting protection; it returns true when the reason play
 
 ## Source
 
-- `Utilities/utility.lua:832`
+- `Utilities/utility.lua:835`

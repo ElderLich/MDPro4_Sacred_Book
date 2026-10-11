@@ -22,4 +22,4 @@ reason defaults to REASON_COST. The core rejects cards being Summoned, Xyz Mater
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3598`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3650`

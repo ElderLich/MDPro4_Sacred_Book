@@ -17,4 +17,4 @@ Consumes count limits for opponent's cards in g that were released through EFFEC
 
 ## Source
 
-- `Utilities/utility.lua:1508`
+- `Utilities/utility.lua:1511`

@@ -20,4 +20,4 @@ Returns a predicate that checks whether an Effect has category.
 
 ## Source
 
-- `Utilities/utility.lua:2012`
+- `Utilities/utility.lua:2024`

@@ -16,4 +16,4 @@ Returns true when no Chain is ready, for effects that negate a Summon.
 
 ## Source
 
-- `Utilities/utility.lua:1831`
+- `Utilities/utility.lua:1836`

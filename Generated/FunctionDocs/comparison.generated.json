@@ -1,7 +1,5 @@
 {
-  "added_vs_dataeditorx_functions": [
-    "Card.Metallization_material"
-  ],
+  "added_vs_dataeditorx_functions": [],
   "dropped_vs_dataeditorx_functions": [],
   "core_bound_functions": [
     "Card.AddCounter",
@@ -41,6 +39,7 @@
     "Card.GetBattledGroupCount",
     "Card.GetCardTarget",
     "Card.GetCardTargetCount",
+    "Card.GetCardType",
     "Card.GetCode",
     "Card.GetColumnGroup",
     "Card.GetColumnGroupCount",
@@ -97,6 +96,7 @@
     "Card.GetPosition",
     "Card.GetPreviousAttackOnField",
     "Card.GetPreviousAttributeOnField",
+    "Card.GetPreviousCardTypeOnField",
     "Card.GetPreviousCodeOnField",
     "Card.GetPreviousControler",
     "Card.GetPreviousDefenseOnField",
@@ -147,6 +147,7 @@
     "Card.IsAbleToHandAsCost",
     "Card.IsAbleToRemove",
     "Card.IsAbleToRemoveAsCost",
+    "Card.IsAllCardTypes",
     "Card.IsAllColumn",
     "Card.IsAllReasons",
     "Card.IsAllTypes",
@@ -172,6 +173,7 @@
     "Card.IsCanOverlay",
     "Card.IsCanRemoveCounter",
     "Card.IsCanTurnSet",
+    "Card.IsCardType",
     "Card.IsChainAttackable",
     "Card.IsCode",
     "Card.IsControler",
@@ -225,6 +227,7 @@
     "Card.IsOriginalEffectProperty",
     "Card.IsOriginalSetCard",
     "Card.IsPosition",
+    "Card.IsPreviousCardTypeOnField",
     "Card.IsPreviousControler",
     "Card.IsPreviousLocation",
     "Card.IsPreviousPosition",
@@ -666,6 +669,7 @@
     "Auxiliary.ArcanaCoinOperation",
     "Auxiliary.ArcanaCoinTarget",
     "Auxiliary.ArcanaCondition",
+    "Auxiliary.ArsMagnaFilter",
     "Auxiliary.AssaultModeLimit",
     "Auxiliary.AtkEqualsDef",
     "Auxiliary.BESRemoveCondition",
@@ -782,6 +786,7 @@
     "Auxiliary.GetXyzNumber",
     "Auxiliary.GiveUpNormalDraw",
     "Auxiliary.GoldenAllureQueenFilter",
+    "Auxiliary.HasMentionedCounter",
     "Auxiliary.IsCanBeQuickEffect",
     "Auxiliary.IsCodeListed",
     "Auxiliary.IsCodeOrListed",
@@ -945,6 +950,7 @@
     "Auxiliary.bfgcost",
     "Auxiliary.bpcon",
     "Auxiliary.chainreg",
+    "Auxiliary.covcheck",
     "Auxiliary.dabcheck",
     "Auxiliary.damcon1",
     "Auxiliary.dlkcheck",
@@ -1015,8 +1021,8 @@
   ],
   "core_bound_missing_stub_docs": [],
   "constants": {
-    "dataeditorx_constant_count": 859,
-    "local_constant_count": 859,
+    "dataeditorx_constant_count": 864,
+    "local_constant_count": 864,
     "missing_in_dataeditorx": [],
     "removed_from_local": [],
     "changed_values": [],
@@ -1024,11 +1030,19 @@
     "effect_creator_commented_count": 6,
     "effect_creator_effect_code_count": 257,
     "effect_creator_property_count": 33,
-    "local_effect_constant_count": 321,
-    "local_effect_code_constant_count": 262,
+    "local_effect_constant_count": 324,
+    "local_effect_code_constant_count": 265,
     "local_effect_property_constant_count": 40,
-    "effect_creator_missing_effects": [],
-    "effect_creator_missing_effect_codes": [],
+    "effect_creator_missing_effects": [
+      "EFFECT_ADD_CARD_TYPE",
+      "EFFECT_CHANGE_CARD_TYPE",
+      "EFFECT_REMOVE_CARD_TYPE"
+    ],
+    "effect_creator_missing_effect_codes": [
+      "EFFECT_ADD_CARD_TYPE",
+      "EFFECT_CHANGE_CARD_TYPE",
+      "EFFECT_REMOVE_CARD_TYPE"
+    ],
     "effect_creator_missing_properties": [],
     "effect_creator_ignored_effect_codes": [
       "EFFECT_ACTIVATION_COUNT_LIMIT",
@@ -1049,11 +1063,11 @@
     "effect_creator_unknown_effects": [],
     "effect_creator_unknown_effect_codes": [],
     "effect_creator_unknown_properties": [],
-    "generated_constant_count": 859,
+    "generated_constant_count": 864,
     "english_status_counts": {
       "existing_english": 4,
-      "from_project_cache": 792,
-      "reviewed_english": 8,
+      "from_project_cache": 790,
+      "reviewed_english": 15,
       "translated_exact": 28,
       "translated_name": 27
     }

@@ -20,4 +20,4 @@ Filter for effects that negate a face-up card. Trap Monsters only need to be fac
 
 ## Source
 
-- `Utilities/utility.lua:752`
+- `Utilities/utility.lua:755`

@@ -27,4 +27,4 @@ Condition callback used by Auxiliary.AddThisCardInGraveAlreadyCheck. When this c
 
 ## Source
 
-- `Utilities/utility.lua:1556`
+- `Utilities/utility.lua:1559`

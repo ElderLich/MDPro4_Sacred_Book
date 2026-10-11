@@ -32,4 +32,4 @@ Returns no Lua values when no activation effect is currently usable, so local sc
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3548`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3600`

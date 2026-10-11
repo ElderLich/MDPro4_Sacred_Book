@@ -22,4 +22,4 @@ Besides TYPE_TUNER, this also checks effects that can make c be treated as a Tun
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3509`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3561`

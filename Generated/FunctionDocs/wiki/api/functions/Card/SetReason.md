@@ -17,4 +17,4 @@ Sets c's current reason bitmask to reason.
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3461`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3510`

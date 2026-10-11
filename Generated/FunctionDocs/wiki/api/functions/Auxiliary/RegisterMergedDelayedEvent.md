@@ -19,4 +19,4 @@ Registers global listeners that merge multiple occurrences of event into one EVE
 
 ## Source
 
-- `Utilities/utility.lua:1647`
+- `Utilities/utility.lua:1650`

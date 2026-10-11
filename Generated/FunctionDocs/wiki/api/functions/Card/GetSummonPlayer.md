@@ -20,4 +20,4 @@ Returns the player recorded as having Summoned c.
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3475`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3524`

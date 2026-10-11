@@ -21,4 +21,4 @@ Checks whether c's current battle position includes pos.
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3608`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3660`

@@ -20,4 +20,4 @@ Returns whether c is a Special Summon procedure monster, used by Phantasm Specia
 
 ## Source
 
-- `Utilities/utility.lua:2037`
+- `Utilities/utility.lua:2049`

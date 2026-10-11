@@ -21,4 +21,4 @@ Returns the Synchro Level value c contributes for Synchro Monster scard.
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3411`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3459`

@@ -21,4 +21,4 @@ Checks whether c's previous controller was player.
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3611`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3663`

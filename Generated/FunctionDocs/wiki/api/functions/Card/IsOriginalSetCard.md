@@ -23,4 +23,4 @@ Checks whether c's original set data matches any supplied set code.
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3397`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3444`

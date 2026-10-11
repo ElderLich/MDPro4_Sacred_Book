@@ -22,4 +22,4 @@ Without e, the core only rejects Xyz Materials and cards already in the GY or ba
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3574`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3626`

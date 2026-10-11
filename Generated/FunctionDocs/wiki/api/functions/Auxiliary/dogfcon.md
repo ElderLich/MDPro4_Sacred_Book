@@ -23,4 +23,4 @@ Condition for EVENT_TO_GRAVE triggers: true when the handler was previously on t
 
 ## Source
 
-- `Utilities/utility.lua:796`
+- `Utilities/utility.lua:799`

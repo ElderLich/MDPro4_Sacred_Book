@@ -24,4 +24,4 @@ check_location defaults to LOCATION_ONFIELD and is masked to on-field locations.
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3661`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3713`

@@ -21,4 +21,4 @@ Checks whether c can be targeted by e, or by the current reason effect when e is
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3651`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3703`

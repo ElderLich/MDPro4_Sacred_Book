@@ -20,4 +20,4 @@ Checks whether c is a card kind treated by the core as an Extra Deck monster.
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3501`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3553`

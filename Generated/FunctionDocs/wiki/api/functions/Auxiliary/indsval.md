@@ -22,4 +22,4 @@ Value helper for self-protection from effect destruction; it returns true when t
 
 ## Source
 
-- `Utilities/utility.lua:824`
+- `Utilities/utility.lua:827`

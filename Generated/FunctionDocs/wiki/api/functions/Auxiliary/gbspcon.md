@@ -27,4 +27,4 @@ Special Summon condition helper for Gladiator Beast-style returns and set 0x1019
 
 ## Source
 
-- `Utilities/utility.lua:908`
+- `Utilities/utility.lua:911`

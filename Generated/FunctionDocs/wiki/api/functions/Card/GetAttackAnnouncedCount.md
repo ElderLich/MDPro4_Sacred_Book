@@ -20,4 +20,4 @@ Returns c's attack declaration count.
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3537`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3589`

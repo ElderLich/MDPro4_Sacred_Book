@@ -16,4 +16,4 @@ Returns true if every card in g has a different Attribute.
 
 ## Source
 
-- `Utilities/utility.lua:1142`
+- `Utilities/utility.lua:1145`

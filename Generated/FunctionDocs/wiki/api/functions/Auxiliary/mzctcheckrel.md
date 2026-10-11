@@ -22,4 +22,4 @@ Checks whether releasing group g by reason leaves a Monster Zone and g is a vali
 
 ## Source
 
-- `Utilities/utility.lua:1171`
+- `Utilities/utility.lua:1174`

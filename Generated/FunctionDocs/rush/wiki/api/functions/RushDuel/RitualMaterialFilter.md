@@ -1,0 +1,40 @@
+# RushDuel.RitualMaterialFilter
+
+Alias: `RD.RitualMaterialFilter`. Requires the matching Rush Duel Lua bootstrap.
+
+## Signature
+
+```lua
+RushDuel.RitualMaterialFilter(any c, any type, any filter, any e) -> any
+```
+
+## Description
+
+Rush Duel helper declared in `RDRitual.lua`. Its argument names are extracted from the pinned source; parameter and return types have not yet been reviewed.
+
+### Upstream source comment
+
+```text
+仪式召唤 - 素材过滤
+```
+
+## Parameters
+
+- `c` `any`: Type and behavior are not yet reviewed; see the source.
+- `type` `any`: Type and behavior are not yet reviewed; see the source.
+- `filter` `any`: Type and behavior are not yet reviewed; see the source.
+- `e` `any`: Type and behavior are not yet reviewed; see the source.
+
+## Returns
+
+- `any`: Return contract has not been reviewed; inspect the source below.
+
+## Source
+
+`Rush/Utilities/RDRitual.lua:128`
+
+```lua
+function RushDuel.RitualMaterialFilter(c, type, filter, e)
+    return RushDuel.RitualTypeFilter(c, type) and (not filter or filter(c)) and (not e or not c:IsImmuneToEffect(e))
+end
+```

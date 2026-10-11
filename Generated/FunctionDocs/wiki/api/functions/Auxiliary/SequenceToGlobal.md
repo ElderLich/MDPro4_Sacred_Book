@@ -23,4 +23,4 @@ Monster Zone bits are shifted by 16*p+seq; Spell & Trap Zone bits are shifted by
 
 ## Source
 
-- `Utilities/utility.lua:1487`
+- `Utilities/utility.lua:1490`

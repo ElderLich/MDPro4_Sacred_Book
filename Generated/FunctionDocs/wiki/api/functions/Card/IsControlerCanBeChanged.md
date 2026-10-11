@@ -23,4 +23,4 @@ The card must be in the Monster Zone and must not be affected by EFFECT_CANNOT_C
 
 ## Source
 
-- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3630`
+- `D:\Programs\GitHub\ygopro-core\libcard.cpp:3682`
