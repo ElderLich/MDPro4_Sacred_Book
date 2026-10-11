@@ -5,6 +5,11 @@
 effect actually performs a summon. These examples describe the imported Rush
 library; use its [function reference](/rush/api/functions/) alongside them.
 
+After this overview, follow [Fusion and Ritual player choices](rush-fusion-ritual-choices)
+for complete summoning effects, candidate/material selection and cancellation.
+[Special Summons and result types](rush-special-summon-results) covers revival
+effects, hand procedures and safe follow-up checks.
+
 ## Maximum: Center And Side Pieces
 
 The [center card `120150002`](/examples/rush-cards/120150002) registers its two named partners and 3500
