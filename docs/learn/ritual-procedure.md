@@ -12,6 +12,10 @@ card text that changes the material source, Summons more than one monster, sends
 materials instead of releasing them, or applies extra behavior that does not fit
 the helper.
 
+For a guided walkthrough of monster choice, material-selection cancellation,
+alternate locations, and optional follow-ups, read
+[Ritual Summon Choices](ritual-summon-choices).
+
 ## Helper Or Manual Script
 
 | Need | Local pattern |
@@ -43,7 +47,7 @@ That one call creates the activation effect, checks hand material, checks field
 material, asks the player to choose a matching Ritual Monster, releases the
 selected materials, and Special Summons the monster as a Ritual Summon.
 
-Cycle of the World (`c14094090.lua`) uses a filter instead of a single listed
+Super Soldier Ritual (`c14094090.lua`) uses a filter instead of a single listed
 code, and requires exact Levels:
 
 ```lua
@@ -64,8 +68,10 @@ current Level, and passes an `extra_operation` callback:
 aux.AddRitualProcGreater2(c,s.filter,LOCATION_HAND,nil,nil,false,s.extraop)
 ```
 
-Use that last style when the Ritual Summon itself is standard but the card must
-do something after a successful Summon.
+Use that last style when the Ritual Summon itself is standard and the card has
+follow-up work. The callback can receive a missing `tc` or `mat` when no monster
+was selected, so keep the source callback's guards. Callback invocation alone
+does not report whether `Duel.SpecialSummon` succeeded.
 
 ## What The Main Helper Builds
 
@@ -96,8 +102,8 @@ The important arguments are:
 | `grave_filter` | Optional extra GY material group. The helper merges it into the material pool and later uses Ritual-material movement rules. |
 | `mat_filter` | Optional filter applied to the material pool before selection. |
 | `pause` | If true, the helper returns the effect without registering it. Scripts can adjust or clone it first. |
-| `extra_target` | Optional callback run during the target branch for extra categories or checks. |
-| `extra_operation` | Optional callback run after the Ritual Summon operation. |
+| `extra_target` | Optional callback for activation-time announcements/bookkeeping, after `chk==0` has returned; it cannot add a legality test to that branch. |
+| `extra_operation` | Optional callback after the main operation block; guard `tc`/`mat` because a selection may be missing. |
 
 ## Target Branch
 
@@ -185,8 +191,8 @@ The order matters:
    were used as material.
 2. [`Duel.ReleaseRitualMaterial`](/api/functions/Duel/ReleaseRitualMaterial)
    moves standard Ritual Materials with Ritual-specific handling.
-3. [`Duel.BreakEffect`](/api/functions/Duel/BreakEffect) creates the visible
-   "then" pause used by many Summon procedures.
+3. [`Duel.BreakEffect`](/api/functions/Duel/BreakEffect) separates the material
+   movement and summon in effect timing, rather than creating a cosmetic pause.
 4. [`Duel.SpecialSummon`](/api/functions/Duel/SpecialSummon) uses
    `SUMMON_TYPE_RITUAL`.
 5. [`Card.CompleteProcedure`](/api/functions/Card/CompleteProcedure) marks the
@@ -213,6 +219,7 @@ function s.target(e,tp,eg,ep,ev,re,r,rp,chk)
 end
 
 function s.activate(e,tp,eg,ep,ev,re,r,rp)
+    ::choose_again::
     local mg=Duel.GetRitualMaterial(tp)
     local tg=Duel.SelectMatchingCard(tp,aux.RitualUltimateFilter,tp,
         LOCATION_HAND,0,1,1,nil,s.ritual_filter,e,tp,mg,nil,
@@ -229,7 +236,7 @@ function s.activate(e,tp,eg,ep,ev,re,r,rp)
     aux.GCheckAdditional=aux.RitualCheckAdditional(tc,lv,"Greater")
     local mat=mg:SelectSubGroup(tp,aux.RitualCheck,true,1,lv,tp,tc,lv,"Greater")
     aux.GCheckAdditional=nil
-    if not mat then return end
+    if not mat then goto choose_again end
 
     tc:SetMaterial(mat)
     Duel.ReleaseRitualMaterial(mat)
@@ -241,7 +248,10 @@ function s.activate(e,tp,eg,ep,ev,re,r,rp)
 end
 ```
 
-This is close to the local Sonic Tracker pattern. It is useful when a card
+This is a bounded callback template using the local Sonic Tracker pattern;
+the surrounding script must define `s.ritual_filter`. Cancelling the material
+selection returns to monster choice instead of cancelling the resolving
+effect. It is useful when a card
 needs to change the Ritual Monster after selection, store material values, or
 apply a lasting effect to the Summoned monster.
 
