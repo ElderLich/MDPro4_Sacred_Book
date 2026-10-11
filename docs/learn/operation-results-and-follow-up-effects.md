@@ -70,7 +70,9 @@ function s.activate(e,tp,eg,ep,ev,re,r,rp)
     if Duel.SendtoDeck(g,nil,SEQ_DECKSHUFFLE,REASON_EFFECT)==0 then return end
     local returned=Duel.GetOperatedGroup()
     local entered_main_deck=returned:IsExists(Card.IsLocation,1,nil,LOCATION_DECK)
-    if not entered_main_deck or not Duel.IsPlayerCanDraw(tp,1) then return end
+    if not entered_main_deck then return end
+    Duel.ShuffleDeck(tp)
+    if not Duel.IsPlayerCanDraw(tp,1) then return end
     if Duel.SelectYesNo(tp,aux.Stringid(id,0)) then
         Duel.BreakEffect()
         Duel.Draw(tp,1,REASON_EFFECT)
@@ -125,6 +127,13 @@ selected card(s), it asks whether **at least one** operated card is in
 `LOCATION_DECK+LOCATION_EXTRA` before its later draw. The Extra Deck is
 accepted there because that script's condition differs from our teaching
 Spell's explicit Main Deck condition.
+
+The complete example calls [`Duel.ShuffleDeck(tp)`](/api/functions/Duel/ShuffleDeck)
+before offering the draw.
+In this core, `SEQ_DECKSHUFFLE` can leave the shuffle pending until the
+operation finishes; a draw inside that same operation must not use the old
+Deck order. `BreakEffect` does not flush that pending shuffle. EN Shuffle
+also explicitly shuffles before its follow-up draw.
 
 ## Capture The Result Before Another Action
 
