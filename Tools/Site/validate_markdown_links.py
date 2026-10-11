@@ -15,7 +15,7 @@ DEFAULT_ROOTS = [
     Path("Generated") / "FunctionDocs" / "wiki",
 ]
 
-INLINE_LINK_RE = re.compile(r"(?<!!)\[[^\]\n]*(?:\][^\[\]\n]*)*]\(([^)\s]+)(?:\s+\"[^\"]*\")?\)")
+INLINE_LINK_RE = re.compile(r"(?<!!)\[[^\]]*(?:\][^\[\]]*)*]\(([^)\s]+)(?:\s+\"[^\"]*\")?\)")
 REFERENCE_LINK_RE = re.compile(r"^\s{0,3}\[[^\]]+]:\s*(\S+)")
 HTML_LINK_RE = re.compile(r"""<a\s+[^>]*href=["']([^"']+)["']""", re.IGNORECASE)
 HEADING_RE = re.compile(r"^\s{0,3}(#{1,6})\s+(.+?)\s*#*\s*$")
@@ -60,15 +60,15 @@ def clean_target(target: str) -> str:
 def markdown_links(path: Path) -> list[tuple[int, str]]:
     text = strip_code_blocks(path.read_text(encoding="utf-8", errors="replace"))
     links: list[tuple[int, str]] = []
+    # Link labels and HTML anchors can span lines; report their opening line.
+    for pattern in (INLINE_LINK_RE, HTML_LINK_RE):
+        for match in pattern.finditer(text):
+            links.append((text.count("\n", 0, match.start()) + 1, clean_target(match.group(1))))
     for line_number, line in enumerate(text.splitlines(), 1):
-        for match in INLINE_LINK_RE.finditer(line):
-            links.append((line_number, clean_target(match.group(1))))
         ref_match = REFERENCE_LINK_RE.match(line)
         if ref_match:
             links.append((line_number, clean_target(ref_match.group(1))))
-        for match in HTML_LINK_RE.finditer(line):
-            links.append((line_number, clean_target(match.group(1))))
-    return links
+    return sorted(links)
 
 
 def slugify_heading(text: str) -> str:

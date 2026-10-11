@@ -7,6 +7,22 @@ from unittest.mock import patch
 
 from Tools.Site import generate_site as site
 from Tools.Site.generate_site import extract_script_constants
+from Tools.Site.validate_markdown_links import markdown_links, validate_root
+
+
+class MarkdownLinkTests(unittest.TestCase):
+    def test_multiline_links_are_checked_with_their_opening_line(self) -> None:
+        with TemporaryDirectory() as directory:
+            root = Path(directory)
+            page = root / "index.md"
+            page.write_text("# Links\n\n[Missing card\nexample](missing)\n\n"
+                            "<a\n href=\"valid\">Valid</a>\n\n"
+                            "```md\n[Ignored\nexample](code-only)\n```\n", encoding="utf-8")
+            (root / "valid.md").write_text("# Valid\n", encoding="utf-8")
+            self.assertEqual(markdown_links(page), [(3, "missing"), (6, "valid")])
+            problems = validate_root(root)
+            self.assertEqual(len(problems), 1)
+            self.assertIn("index.md:3: missing target missing", problems[0])
 
 
 class ScriptExplorerIndexTests(unittest.TestCase):
