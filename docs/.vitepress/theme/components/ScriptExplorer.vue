@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { computed, onMounted, onUnmounted, ref, watch } from 'vue';
+import { computed, onMounted, onUnmounted, ref, shallowRef, watch } from 'vue';
 import { withBase } from 'vitepress';
 
 type SearchMode = 'all' | 'cards' | 'text' | 'code';
@@ -27,7 +27,9 @@ const categoryFilter = ref('all');
 const featuredOnly = ref(false);
 const loading = ref(true);
 const error = ref('');
-const records = ref<ScriptRecord[]>([]);
+// Index entries are immutable after loading; avoid proxies for tens of
+// thousands of nested records, function lists and card-text fields.
+const records = shallowRef<ScriptRecord[]>([]);
 const featuredIds = ref(new Set<number>());
 
 let activeRequest: AbortController | undefined;
