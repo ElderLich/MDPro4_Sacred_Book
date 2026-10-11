@@ -47,7 +47,7 @@ Both databases were refreshed from `D:\Programs\GitHub\MDPro3_Data\Data\locales\
 
 The reference now includes five new Card APIs (`GetCardType`, `IsCardType`, `IsAllCardTypes`, `GetPreviousCardTypeOnField`, `IsPreviousCardTypeOnField`), card-type effects 377–379, three new `Auxiliary` helpers, and corrected `HINTMSG_NUMBER`/`HINTMSG_LVRANK` spellings. Deprecated `HINGMSG_*` aliases remain available. The SetCode catalog includes the new effects.
 
-Rush has its own 441 public helper references and 65 constants; 32 common entrypoints have reviewed English descriptions and returns. Other entries expose their source and explicitly mark unreviewed types. The generator follows bootstrap load order and records the later Ritual `ConfirmCardFilter` definition superseding the identical Fusion definition. Rush type bits are kept separate: Legend `0x8` and Maximum `0x8000` overlap standard type bits.
+Rush has its own 441 public helper references and 65 constants; 35 common entrypoints have reviewed English descriptions and returns. Other entries expose their source and explicitly mark unreviewed types. The generator follows bootstrap load order and records the later Ritual `ConfirmCardFilter` definition superseding the identical Fusion definition. Rush type bits are kept separate: Legend `0x8` and Maximum `0x8000` overlap standard type bits.
 
 ## Historical verification (2026-07-26)
 

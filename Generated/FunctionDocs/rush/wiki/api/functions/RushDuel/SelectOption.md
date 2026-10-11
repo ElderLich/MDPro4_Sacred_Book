@@ -11,6 +11,7 @@ RushDuel.SelectOption(int player, ... table) -> any|nil
 ## Description
 
 Accepts option tables {available, description, value}. Unavailable options are omitted; a sole option is announced automatically. Returns the chosen value (or its original one-based option index), not Duel.SelectOption's zero-based menu index.
+The default is implemented as value or index: both nil and false use the original one-based index, while numeric 0 is preserved because it is truthy in Lua. With no available options this helper returns nil.
 
 ## Parameters
 

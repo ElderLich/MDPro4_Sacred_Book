@@ -5,35 +5,31 @@ Alias: `RD.CanSelectAndDoAction`. Requires the matching Rush Duel Lua bootstrap.
 ## Signature
 
 ```lua
-RushDuel.CanSelectAndDoAction(any desc, any hint, any filter, any tp, any s_range, any o_range, any min, any max, any expect, any action) -> any
+RushDuel.CanSelectAndDoAction(int desc, int hint, function filter, int tp, int s_range, int o_range, int min, int max, Card|Group|nil expect, function action) -> any
 ```
 
 ## Description
 
-Rush Duel helper declared in `RDAction.lua`. Its argument names are extracted from the pinned source; parameter and return types have not yet been reviewed.
-
-### Upstream source comment
-
-```text
-可选操作: 选择匹配卡片
-```
+Optional resolution action: finds candidates, asks a yes/no question, then selects a Group and calls action(selected_group). Despite its name, this helper performs selection and the action; do not use it as a legality predicate or inside chk==0.
+Declining the yes/no question, having too few candidates, or selecting an empty Group returns numeric 0 without running action. Canceling card selection returns to the yes/no question through RD.CanSelect. Once the player completes a nonempty selection, every callback return value is forwarded unchanged, including no values.
+Like RD.SelectAndDoAction, it creates no activation target relation, passes no extra arguments to the filter/action, and emits a selection hint for public-location searches.
 
 ## Parameters
 
-- `desc` `any`: Type and behavior are not yet reviewed; see the source.
-- `hint` `any`: Type and behavior are not yet reviewed; see the source.
-- `filter` `any`: Type and behavior are not yet reviewed; see the source.
-- `tp` `any`: Type and behavior are not yet reviewed; see the source.
-- `s_range` `any`: Type and behavior are not yet reviewed; see the source.
-- `o_range` `any`: Type and behavior are not yet reviewed; see the source.
-- `min` `any`: Type and behavior are not yet reviewed; see the source.
-- `max` `any`: Type and behavior are not yet reviewed; see the source.
-- `expect` `any`: Type and behavior are not yet reviewed; see the source.
-- `action` `any`: Type and behavior are not yet reviewed; see the source.
+- `desc` `int`: Yes/no question description identifier.
+- `hint` `int`: Card-selection prompt identifier.
+- `filter` `function`: Card predicate including required action-legality checks.
+- `tp` `int`: Selecting player; 0 or 1.
+- `s_range` `int`: Locations on tp's side.
+- `o_range` `int`: Locations on the opponent's side.
+- `min` `int`: Minimum selected count.
+- `max` `int`: Maximum selected count.
+- `expect` `Card|Group|nil`: Card(s) excluded from matching; pass nil for none.
+- `action` `function`: Called as action(selected_group) after the player accepts and completes selection.
 
 ## Returns
 
-- `any`: Return contract has not been reviewed; inspect the source below.
+- `any`: Exactly the callback's return values when invoked; otherwise numeric 0. A callback may return no values.
 
 ## Source
 

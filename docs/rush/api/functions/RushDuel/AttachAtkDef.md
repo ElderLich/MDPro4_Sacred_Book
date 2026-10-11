@@ -5,31 +5,34 @@ Alias: `RD.AttachAtkDef`. Requires the matching Rush Duel Lua bootstrap.
 ## Signature
 
 ```lua
-RushDuel.AttachAtkDef(any e, any card, any atk, any def, any reset, any forced) -> any
+RushDuel.AttachAtkDef(Effect e, Card card, int|function|nil atk, int|function|nil def, [int reset], [bool forced]) -> void
 ```
 
 ## Description
 
-Rush Duel helper declared in `RDAttach.lua`. Its argument names are extracted from the pinned source; parameter and return types have not yet been reviewed.
-
-### Upstream source comment
-
-```text
-赋予: 攻守升降
-```
+Registers a single-card EFFECT_UPDATE_ATTACK effect for nonzero, non-nil atk, and an EFFECT_UPDATE_DEFENSE effect for nonzero, non-nil def only when RD.IsCanChangeDef(card) passes. That predicate is card:IsDefenseAbove(0) and not RD.IsMaximumMode(card): it requires the core's valid, nonnegative DEF check and excludes Maximum-mode monsters. It does not block the ATK branch.
+Both modifiers are created through RD.CreateSingleEffect with e:GetHandler() as owner, FLAG_ATTACH_EFFECT as label, and the supplied reset/forced values. No automatic duration is added when reset is omitted. Pass RESET_EVENT+RESETS_STANDARD+RESET_PHASE+PHASE_END for the usual until-End-Phase card modifier.
+This helper returns no values and does not report whether the card's final stats changed. forced is passed to Card.RegisterEffect; leave it nil/false for normal effect-immunity handling.
 
 ## Parameters
 
-- `e` `any`: Type and behavior are not yet reviewed; see the source.
-- `card` `any`: Type and behavior are not yet reviewed; see the source.
-- `atk` `any`: Type and behavior are not yet reviewed; see the source.
-- `def` `any`: Type and behavior are not yet reviewed; see the source.
-- `reset` `any`: Type and behavior are not yet reviewed; see the source.
-- `forced` `any`: Type and behavior are not yet reviewed; see the source.
+- `e` `Effect`: Resolving source effect; its handler owns the modifiers.
+- `card` `Card`: Card receiving the modifiers.
+- `atk` `int|function|nil`: ATK delta or value callback; nil and numeric 0 skip this branch.
+- `def` `int|function|nil`: DEF delta or value callback; nil and numeric 0 skip this branch, and RD.IsCanChangeDef must pass.
+- `reset` `int` (optional): Explicit reset mask shared by both modifiers. Omitting it adds no reset policy.
+- `forced` `bool` (optional): Passed to Card.RegisterEffect. Normally omit it rather than bypassing immunity.
 
 ## Returns
 
-- `any`: Return contract has not been reviewed; inspect the source below.
+No return values.
+
+## Example
+
+```lua
+RD.AttachAtkDef(e, tc, 1000, 0,
+    RESET_EVENT+RESETS_STANDARD+RESET_PHASE+PHASE_END)
+```
 
 ## Source
 

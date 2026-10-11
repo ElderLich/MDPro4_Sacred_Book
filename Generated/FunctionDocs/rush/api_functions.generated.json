@@ -1807,54 +1807,51 @@
       "params": [
         {
           "name": "e",
-          "type": "any",
+          "type": "Effect",
           "optional": false,
-          "description": ""
+          "description": "Resolving source effect; its handler owns the modifiers."
         },
         {
           "name": "card",
-          "type": "any",
+          "type": "Card",
           "optional": false,
-          "description": ""
+          "description": "Card receiving the modifiers."
         },
         {
           "name": "atk",
-          "type": "any",
+          "type": "int|function|nil",
           "optional": false,
-          "description": ""
+          "description": "ATK delta or value callback; nil and numeric 0 skip this branch."
         },
         {
           "name": "def",
-          "type": "any",
+          "type": "int|function|nil",
           "optional": false,
-          "description": ""
+          "description": "DEF delta or value callback; nil and numeric 0 skip this branch, and RD.IsCanChangeDef must pass."
         },
         {
           "name": "reset",
-          "type": "any",
-          "optional": false,
-          "description": ""
+          "type": "int",
+          "optional": true,
+          "description": "Explicit reset mask shared by both modifiers. Omitting it adds no reset policy."
         },
         {
           "name": "forced",
-          "type": "any",
-          "optional": false,
-          "description": ""
+          "type": "bool",
+          "optional": true,
+          "description": "Passed to Card.RegisterEffect. Normally omit it rather than bypassing immunity."
         }
       ],
-      "returns": [
-        {
-          "type": "any",
-          "description": "Return contract has not been reviewed; inspect the source below."
-        }
-      ],
+      "returns": [],
       "description_zh": [
         "赋予: 攻守升降"
       ],
       "description_en": [
-        "Rush Duel helper declared in `RDAttach.lua`. Its argument names are extracted from the pinned source; parameter and return types have not yet been reviewed."
+        "Registers a single-card EFFECT_UPDATE_ATTACK effect for nonzero, non-nil atk, and an EFFECT_UPDATE_DEFENSE effect for nonzero, non-nil def only when RD.IsCanChangeDef(card) passes. That predicate is card:IsDefenseAbove(0) and not RD.IsMaximumMode(card): it requires the core's valid, nonnegative DEF check and excludes Maximum-mode monsters. It does not block the ATK branch.",
+        "Both modifiers are created through RD.CreateSingleEffect with e:GetHandler() as owner, FLAG_ATTACH_EFFECT as label, and the supplied reset/forced values. No automatic duration is added when reset is omitted. Pass RESET_EVENT+RESETS_STANDARD+RESET_PHASE+PHASE_END for the usual until-End-Phase card modifier.",
+        "This helper returns no values and does not report whether the card's final stats changed. forced is passed to Card.RegisterEffect; leave it nil/false for normal effect-immunity handling."
       ],
-      "english_status": "source_only",
+      "english_status": "reviewed_english",
       "source_files": [
         {
           "path": "Rush/Utilities/RDAttach.lua",
@@ -4749,78 +4746,80 @@
       "params": [
         {
           "name": "desc",
-          "type": "any",
+          "type": "int",
           "optional": false,
-          "description": ""
+          "description": "Yes/no question description identifier."
         },
         {
           "name": "hint",
-          "type": "any",
+          "type": "int",
           "optional": false,
-          "description": ""
+          "description": "Card-selection prompt identifier."
         },
         {
           "name": "filter",
-          "type": "any",
+          "type": "function",
           "optional": false,
-          "description": ""
+          "description": "Card predicate including required action-legality checks."
         },
         {
           "name": "tp",
-          "type": "any",
+          "type": "int",
           "optional": false,
-          "description": ""
+          "description": "Selecting player; 0 or 1."
         },
         {
           "name": "s_range",
-          "type": "any",
+          "type": "int",
           "optional": false,
-          "description": ""
+          "description": "Locations on tp's side."
         },
         {
           "name": "o_range",
-          "type": "any",
+          "type": "int",
           "optional": false,
-          "description": ""
+          "description": "Locations on the opponent's side."
         },
         {
           "name": "min",
-          "type": "any",
+          "type": "int",
           "optional": false,
-          "description": ""
+          "description": "Minimum selected count."
         },
         {
           "name": "max",
-          "type": "any",
+          "type": "int",
           "optional": false,
-          "description": ""
+          "description": "Maximum selected count."
         },
         {
           "name": "expect",
-          "type": "any",
+          "type": "Card|Group|nil",
           "optional": false,
-          "description": ""
+          "description": "Card(s) excluded from matching; pass nil for none."
         },
         {
           "name": "action",
-          "type": "any",
+          "type": "function",
           "optional": false,
-          "description": ""
+          "description": "Called as action(selected_group) after the player accepts and completes selection."
         }
       ],
       "returns": [
         {
           "type": "any",
-          "description": "Return contract has not been reviewed; inspect the source below."
+          "description": "Exactly the callback's return values when invoked; otherwise numeric 0. A callback may return no values."
         }
       ],
       "description_zh": [
         "可选操作: 选择匹配卡片"
       ],
       "description_en": [
-        "Rush Duel helper declared in `RDAction.lua`. Its argument names are extracted from the pinned source; parameter and return types have not yet been reviewed."
+        "Optional resolution action: finds candidates, asks a yes/no question, then selects a Group and calls action(selected_group). Despite its name, this helper performs selection and the action; do not use it as a legality predicate or inside chk==0.",
+        "Declining the yes/no question, having too few candidates, or selecting an empty Group returns numeric 0 without running action. Canceling card selection returns to the yes/no question through RD.CanSelect. Once the player completes a nonempty selection, every callback return value is forwarded unchanged, including no values.",
+        "Like RD.SelectAndDoAction, it creates no activation target relation, passes no extra arguments to the filter/action, and emits a selection hint for public-location searches."
       ],
-      "english_status": "source_only",
+      "english_status": "reviewed_english",
       "source_files": [
         {
           "path": "Rush/Utilities/RDAction.lua",
@@ -23462,72 +23461,74 @@
       "params": [
         {
           "name": "hint",
-          "type": "any",
+          "type": "int",
           "optional": false,
-          "description": ""
+          "description": "Selection prompt identifier, such as HINTMSG_TOGRAVE or aux.Stringid(id, n)."
         },
         {
           "name": "filter",
-          "type": "any",
+          "type": "function",
           "optional": false,
-          "description": ""
+          "description": "Card predicate. Include the needed operation-legality checks."
         },
         {
           "name": "tp",
-          "type": "any",
+          "type": "int",
           "optional": false,
-          "description": ""
+          "description": "Selecting player; 0 or 1."
         },
         {
           "name": "s_range",
-          "type": "any",
+          "type": "int",
           "optional": false,
-          "description": ""
+          "description": "Locations on tp's side."
         },
         {
           "name": "o_range",
-          "type": "any",
+          "type": "int",
           "optional": false,
-          "description": ""
+          "description": "Locations on the opponent's side."
         },
         {
           "name": "min",
-          "type": "any",
+          "type": "int",
           "optional": false,
-          "description": ""
+          "description": "Minimum selected count."
         },
         {
           "name": "max",
-          "type": "any",
+          "type": "int",
           "optional": false,
-          "description": ""
+          "description": "Maximum selected count."
         },
         {
           "name": "expect",
-          "type": "any",
+          "type": "Card|Group|nil",
           "optional": false,
-          "description": ""
+          "description": "Card(s) excluded from matching; pass nil for no exclusion. The upstream parameter is spelled expect."
         },
         {
           "name": "action",
-          "type": "any",
+          "type": "function",
           "optional": false,
-          "description": ""
+          "description": "Called as action(selected_group) immediately after a nonempty selection."
         }
       ],
       "returns": [
         {
           "type": "any",
-          "description": "Return contract has not been reviewed; inspect the source below."
+          "description": "Exactly the callback's return values when invoked; otherwise numeric 0. A callback may return no values."
         }
       ],
       "description_zh": [
         "操作: 选择匹配卡片"
       ],
       "description_en": [
-        "Rush Duel helper declared in `RDAction.lua`. Its argument names are extracted from the pinned source; parameter and return types have not yet been reviewed."
+        "Finds matching cards in the specified locations, asks tp to select a non-cancelable Group of min to max cards, and immediately calls action(selected_group). Use during resolution, not during a chk==0 legality test. This helper does not select activation targets or store a target relation.",
+        "The public wrapper passes only a Card to filter and only the selected Group to action; capture other values in closures or compose a filter with RD.Filter. It emits a selection hint for public-location searches. If there are too few candidates or the selected Group is empty, it returns numeric 0 without calling action.",
+        "On a nonempty selection it forwards every return value from action unchanged. A callback with no return makes this helper return no values (nil in a single-value assignment); it does not automatically return the selected count or success."
       ],
-      "english_status": "source_only",
+      "english_status": "reviewed_english",
       "source_files": [
         {
           "path": "Rush/Utilities/RDAction.lua",
@@ -24161,7 +24162,8 @@
         "选择选项 (自动选择)"
       ],
       "description_en": [
-        "Accepts option tables {available, description, value}. Unavailable options are omitted; a sole option is announced automatically. Returns the chosen value (or its original one-based option index), not Duel.SelectOption's zero-based menu index."
+        "Accepts option tables {available, description, value}. Unavailable options are omitted; a sole option is announced automatically. Returns the chosen value (or its original one-based option index), not Duel.SelectOption's zero-based menu index.",
+        "The default is implemented as value or index: both nil and false use the original one-based index, while numeric 0 is preserved because it is truthy in Lua. With no available options this helper returns nil."
       ],
       "english_status": "reviewed_english",
       "source_files": [
