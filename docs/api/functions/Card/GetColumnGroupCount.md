@@ -31,21 +31,21 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Mekk-Knight Purple Nightfall | `28692962` | [Scripts/c28692962.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c28692962.lua) | 1 |
-| Mekk-Knight Red Moon | `56809158` | [Scripts/c56809158.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c56809158.lua) | 1 |
-| Mekk-Knight Blue Sky | `20537097` | [Scripts/c20537097.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c20537097.lua) | 1 |
-| Bingo Card | `99505609` | [Scripts/c99505609.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c99505609.lua) | 1 |
-| Mekk-Knight Green Horizon | `66022706` | [Scripts/c66022706.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c66022706.lua) | 1 |
-| Mekk-Knight Yellow Star | `29415459` | [Scripts/c29415459.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c29415459.lua) | 1 |
-| Mekk-Knight Orange Sunset | `93020401` | [Scripts/c93020401.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c93020401.lua) | 1 |
-| Mekk-Knight Indigo Eclipse | `92204263` | [Scripts/c92204263.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c92204263.lua) | 1 |
-| Iron Dragon Tiamaton | `46247282` | [Scripts/c46247282.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c46247282.lua) | 1 |
+| Mekk-Knight Purple Nightfall | `28692962` | [Scripts/c28692962.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c28692962.lua) | 1 |
+| Mekk-Knight Red Moon | `56809158` | [Scripts/c56809158.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c56809158.lua) | 1 |
+| Mekk-Knight Blue Sky | `20537097` | [Scripts/c20537097.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c20537097.lua) | 1 |
+| Bingo Card | `99505609` | [Scripts/c99505609.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c99505609.lua) | 1 |
+| Mekk-Knight Green Horizon | `66022706` | [Scripts/c66022706.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c66022706.lua) | 1 |
+| Mekk-Knight Yellow Star | `29415459` | [Scripts/c29415459.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c29415459.lua) | 1 |
+| Mekk-Knight Orange Sunset | `93020401` | [Scripts/c93020401.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c93020401.lua) | 1 |
+| Mekk-Knight Indigo Eclipse | `92204263` | [Scripts/c92204263.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c92204263.lua) | 1 |
+| Iron Dragon Tiamaton | `46247282` | [Scripts/c46247282.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c46247282.lua) | 1 |
 
 ## Script Examples
 
 ### Mekk-Knight Purple Nightfall (`28692962`)
 
-Source: [Scripts/c28692962.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c28692962.lua)
+Source: [Scripts/c28692962.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c28692962.lua)
 
 ```lua
 end
@@ -57,7 +57,7 @@ function c28692962.hspcon(e,c)
 
 ### Mekk-Knight Red Moon (`56809158`)
 
-Source: [Scripts/c56809158.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c56809158.lua)
+Source: [Scripts/c56809158.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c56809158.lua)
 
 ```lua
 end
@@ -69,7 +69,7 @@ function c56809158.hspcon(e,c)
 
 ### Mekk-Knight Blue Sky (`20537097`)
 
-Source: [Scripts/c20537097.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c20537097.lua)
+Source: [Scripts/c20537097.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c20537097.lua)
 
 ```lua
 end

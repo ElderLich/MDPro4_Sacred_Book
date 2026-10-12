@@ -54,17 +54,17 @@ Generated from the local `Rush/Scripts/` folder and `rush_cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Princess Cosmos the Cosmic Trickster | `120293043` | [Rush/Scripts/c120293043.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120293043.lua) | 1 |
-| Ancient Gear Megaton Golem | `120283030` | [Rush/Scripts/c120283030.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120283030.lua) | 1 |
-| Dark Matter Enigmata | `120261048` | [Rush/Scripts/c120261048.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120261048.lua) | 1 |
-| Chimeratech Crush Dragon | `120283031` | [Rush/Scripts/c120283031.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120283031.lua) | 1 |
-| Chimeratech Overdragon | `120278001` | [Rush/Scripts/c120278001.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120278001.lua) | 1 |
+| Princess Cosmos the Cosmic Trickster | `120293043` | [Rush/Scripts/c120293043.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120293043.lua) | 1 |
+| Ancient Gear Megaton Golem | `120283030` | [Rush/Scripts/c120283030.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120283030.lua) | 1 |
+| Dark Matter Enigmata | `120261048` | [Rush/Scripts/c120261048.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120261048.lua) | 1 |
+| Chimeratech Crush Dragon | `120283031` | [Rush/Scripts/c120283031.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120283031.lua) | 1 |
+| Chimeratech Overdragon | `120278001` | [Rush/Scripts/c120278001.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120278001.lua) | 1 |
 
 ## Script Examples
 
 ### Princess Cosmos the Cosmic Trickster (`120293043`)
 
-Source: [Rush/Scripts/c120293043.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120293043.lua)
+Source: [Rush/Scripts/c120293043.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120293043.lua)
 
 ```lua
 	RD.AddFusionProcedureRep(c,true,true,cm.matfilter,2,63,list[1])
@@ -76,7 +76,7 @@ Source: [Rush/Scripts/c120293043.lua](https://github.com/ElderLich/MDPro3_Sacred
 
 ### Ancient Gear Megaton Golem (`120283030`)
 
-Source: [Rush/Scripts/c120283030.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120283030.lua)
+Source: [Rush/Scripts/c120283030.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120283030.lua)
 
 ```lua
 	RD.AddFusionProcedure(c,cm.matfilter,cm.matfilter,cm.matfilter)
@@ -88,7 +88,7 @@ Source: [Rush/Scripts/c120283030.lua](https://github.com/ElderLich/MDPro3_Sacred
 
 ### Dark Matter Enigmata (`120261048`)
 
-Source: [Rush/Scripts/c120261048.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120261048.lua)
+Source: [Rush/Scripts/c120261048.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120261048.lua)
 
 ```lua
 	RD.AddFusionProcedure(c,list[1],list[1])

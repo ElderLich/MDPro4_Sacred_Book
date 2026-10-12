@@ -49,15 +49,15 @@ Generated from the local `Rush/Scripts/` folder and `rush_cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Extra! Extra! Hot Off the Press | `120304049` | [Rush/Scripts/c120304049.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120304049.lua) | 1 |
-| Hot Off the Press | `120199048` | [Rush/Scripts/c120199048.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120199048.lua) | 1 |
-| Searching Union | `120305012` | [Rush/Scripts/c120305012.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120305012.lua) | 1 |
+| Extra! Extra! Hot Off the Press | `120304049` | [Rush/Scripts/c120304049.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120304049.lua) | 1 |
+| Hot Off the Press | `120199048` | [Rush/Scripts/c120199048.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120199048.lua) | 1 |
+| Searching Union | `120305012` | [Rush/Scripts/c120305012.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120305012.lua) | 1 |
 
 ## Script Examples
 
 ### Extra! Extra! Hot Off the Press (`120304049`)
 
-Source: [Rush/Scripts/c120304049.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120304049.lua)
+Source: [Rush/Scripts/c120304049.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120304049.lua)
 
 ```lua
 function cm.activate(e,tp,eg,ep,ev,re,r,rp)
@@ -69,7 +69,7 @@ function cm.activate(e,tp,eg,ep,ev,re,r,rp)
 
 ### Hot Off the Press (`120199048`)
 
-Source: [Rush/Scripts/c120199048.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120199048.lua)
+Source: [Rush/Scripts/c120199048.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120199048.lua)
 
 ```lua
 function cm.activate(e,tp,eg,ep,ev,re,r,rp)
@@ -81,7 +81,7 @@ function cm.activate(e,tp,eg,ep,ev,re,r,rp)
 
 ### Searching Union (`120305012`)
 
-Source: [Rush/Scripts/c120305012.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120305012.lua)
+Source: [Rush/Scripts/c120305012.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120305012.lua)
 
 ```lua
 function cm.activate(e,tp,eg,ep,ev,re,r,rp)

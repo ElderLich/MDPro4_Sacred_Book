@@ -46,16 +46,16 @@ Generated from the local `Rush/Scripts/` folder and `rush_cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Cosmo Predictor | `120236001` | [Rush/Scripts/c120236001.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120236001.lua) | 1 |
-| OuTerverSe Sylphy Seyfert | `120290007` | [Rush/Scripts/c120290007.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120290007.lua) | 1 |
-| Chaos Coolstars | `120277004` | [Rush/Scripts/c120277004.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120277004.lua) | 2 |
-| OuTerverSe Needle Maker | `120290005` | [Rush/Scripts/c120290005.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120290005.lua) | 1 |
+| Cosmo Predictor | `120236001` | [Rush/Scripts/c120236001.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120236001.lua) | 1 |
+| OuTerverSe Sylphy Seyfert | `120290007` | [Rush/Scripts/c120290007.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120290007.lua) | 1 |
+| Chaos Coolstars | `120277004` | [Rush/Scripts/c120277004.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120277004.lua) | 2 |
+| OuTerverSe Needle Maker | `120290005` | [Rush/Scripts/c120290005.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120290005.lua) | 1 |
 
 ## Script Examples
 
 ### Cosmo Predictor (`120236001`)
 
-Source: [Rush/Scripts/c120236001.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120236001.lua)
+Source: [Rush/Scripts/c120236001.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120236001.lua)
 
 ```lua
 end
@@ -67,7 +67,7 @@ function cm.thfilter(c)
 
 ### OuTerverSe Sylphy Seyfert (`120290007`)
 
-Source: [Rush/Scripts/c120290007.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120290007.lua)
+Source: [Rush/Scripts/c120290007.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120290007.lua)
 
 ```lua
 end
@@ -79,7 +79,7 @@ function cm.condition(e,tp,eg,ep,ev,re,r,rp)
 
 ### Chaos Coolstars (`120277004`)
 
-Source: [Rush/Scripts/c120277004.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120277004.lua)
+Source: [Rush/Scripts/c120277004.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120277004.lua)
 
 ```lua
 end

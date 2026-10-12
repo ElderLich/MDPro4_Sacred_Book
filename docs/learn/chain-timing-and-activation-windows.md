@@ -97,7 +97,7 @@ end
 This is a response effect, so `EVENT_CHAINING` is the event. The condition also
 checks that the handler is not already marked as battle-destroyed.
 
-MDPro3/YGOPro source note: the current local binding for
+MDPro4/YGOPro source note: the current local binding for
 `Duel.IsChainNegatable` returns true for any chain count. Local scripts still
 call it because it documents the intended pattern and keeps compatibility with
 scripts that expect a chain-negatable check. Do not treat that one call as a
@@ -258,7 +258,7 @@ the card text is supposed to activate as a response.
 | Using `EVENT_FREE_CHAIN` for an effect that should answer a Chain Link. | Use `EVENT_CHAINING` and inspect `ev`, `re`, `rp`, and related Chain data. |
 | Adding Damage Step flags and no Damage Step condition. | Add flags only when needed, then keep the exact timing check in the condition. |
 | Forgetting `EFFECT_FLAG_DAMAGE_CAL` for damage calculation text. | Use `EFFECT_FLAG_DAMAGE_STEP+EFFECT_FLAG_DAMAGE_CAL` only when the card is legal there. |
-| Treating `Duel.IsChainNegatable` as the whole condition in MDPro3. | Add real checks for handler state, card text, player, type, cost, and target rules. |
+| Treating `Duel.IsChainNegatable` as the whole condition in MDPro4. | Add real checks for handler state, card text, player, type, cost, and target rules. |
 | Making a hand-activation exception with hint timing only. | Register the proper exception effect, such as `EFFECT_TRAP_ACT_IN_HAND`, with its own condition. |
 | Using `Duel.CheckTiming` instead of a legality check. | Use it only for current hint-mask tests; still check phase, event, action availability, and targets. |
 

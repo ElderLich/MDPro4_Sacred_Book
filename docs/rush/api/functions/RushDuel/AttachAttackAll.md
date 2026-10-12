@@ -50,16 +50,16 @@ Generated from the local `Rush/Scripts/` folder and `rush_cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Beast Gear King Convoy Liogon | `120145031` | [Rush/Scripts/c120145031.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120145031.lua) | 1 |
-| Supreme Skystream Magnum Overlord \[R\] | `120151003` | [Rush/Scripts/c120151003.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120151003.lua) | 1 |
-| OuTerverSe Endless Doom Oblivion | `120290029` | [Rush/Scripts/c120290029.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120290029.lua) | 1 |
-| The Perfect Dragiastar | `120283026` | [Rush/Scripts/c120283026.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120283026.lua) | 1 |
+| Beast Gear King Convoy Liogon | `120145031` | [Rush/Scripts/c120145031.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120145031.lua) | 1 |
+| Supreme Skystream Magnum Overlord \[R\] | `120151003` | [Rush/Scripts/c120151003.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120151003.lua) | 1 |
+| OuTerverSe Endless Doom Oblivion | `120290029` | [Rush/Scripts/c120290029.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120290029.lua) | 1 |
+| The Perfect Dragiastar | `120283026` | [Rush/Scripts/c120283026.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120283026.lua) | 1 |
 
 ## Script Examples
 
 ### Beast Gear King Convoy Liogon (`120145031`)
 
-Source: [Rush/Scripts/c120145031.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120145031.lua)
+Source: [Rush/Scripts/c120145031.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120145031.lua)
 
 ```lua
 		RD.AttachCannotSelectBattleTarget(e,c,cm.atlimit,aux.Stringid(m,2),reset2)
@@ -71,7 +71,7 @@ Source: [Rush/Scripts/c120145031.lua](https://github.com/ElderLich/MDPro3_Sacred
 
 ### Supreme Skystream Magnum Overlord [R] (`120151003`)
 
-Source: [Rush/Scripts/c120151003.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120151003.lua)
+Source: [Rush/Scripts/c120151003.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120151003.lua)
 
 ```lua
 		RD.AttachAtkDef(e,c,-1000,0,reset)
@@ -83,7 +83,7 @@ Source: [Rush/Scripts/c120151003.lua](https://github.com/ElderLich/MDPro3_Sacred
 
 ### OuTerverSe Endless Doom Oblivion (`120290029`)
 
-Source: [Rush/Scripts/c120290029.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120290029.lua)
+Source: [Rush/Scripts/c120290029.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120290029.lua)
 
 ```lua
 	if c:IsFaceup() and c:IsRelateToEffect(e) then

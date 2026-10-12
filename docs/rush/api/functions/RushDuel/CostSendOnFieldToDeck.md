@@ -54,13 +54,13 @@ Generated from the local `Rush/Scripts/` folder and `rush_cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Coil Dragon of Desolation | `120192011` | [Rush/Scripts/c120192011.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120192011.lua) | 1 |
+| Coil Dragon of Desolation | `120192011` | [Rush/Scripts/c120192011.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120192011.lua) | 1 |
 
 ## Script Examples
 
 ### Coil Dragon of Desolation (`120192011`)
 
-Source: [Rush/Scripts/c120192011.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120192011.lua)
+Source: [Rush/Scripts/c120192011.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120192011.lua)
 
 ```lua
 	return c:IsFaceup() and c:IsLocation(LOCATION_FZONE) and c:IsAbleToDeckAsCost()

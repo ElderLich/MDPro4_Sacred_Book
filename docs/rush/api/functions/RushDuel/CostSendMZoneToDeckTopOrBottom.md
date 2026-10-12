@@ -56,13 +56,13 @@ Generated from the local `Rush/Scripts/` folder and `rush_cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Executie Break! | `120231042` | [Rush/Scripts/c120231042.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120231042.lua) | 1 |
+| Executie Break! | `120231042` | [Rush/Scripts/c120231042.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120231042.lua) | 1 |
 
 ## Script Examples
 
 ### Executie Break! (`120231042`)
 
-Source: [Rush/Scripts/c120231042.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120231042.lua)
+Source: [Rush/Scripts/c120231042.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120231042.lua)
 
 ```lua
 	return Duel.GetAttacker():IsControler(1-tp)

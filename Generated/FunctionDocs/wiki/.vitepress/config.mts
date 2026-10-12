@@ -1,8 +1,8 @@
 import { defineConfig } from 'vitepress';
 
 export default defineConfig({
-  title: 'MDPro3 Sacred Book',
-  description: 'MDPro3/YGOPro Lua card scripting reference.',
+  title: 'MDPro4 Sacred Book',
+  description: 'MDPro4/YGOPro Lua card scripting reference.',
   cleanUrls: true,
   themeConfig: {
     nav: [

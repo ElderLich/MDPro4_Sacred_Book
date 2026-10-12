@@ -32,13 +32,13 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Liberator Eto | `24643913` | [Scripts/c24643913.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c24643913.lua) | 1 |
+| Liberator Eto | `24643913` | [Scripts/c24643913.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c24643913.lua) | 1 |
 
 ## Script Examples
 
 ### Liberator Eto (`24643913`)
 
-Source: [Scripts/c24643913.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c24643913.lua)
+Source: [Scripts/c24643913.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c24643913.lua)
 
 ```lua
 end

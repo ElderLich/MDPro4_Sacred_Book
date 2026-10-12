@@ -31,37 +31,37 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| [Teleport Fusion](/examples/cards/36494597) | `36494597` | [Scripts/c36494597.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c36494597.lua) | 1 |
-| Despia, Theater of the Branded | `99543666` | [Scripts/c99543666.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c99543666.lua) | 1 |
-| Chevreuil, Hunting Scout of the Deep Forest | `13023431` | [Scripts/c13023431.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c13023431.lua) | 1 |
-| Melffy Pinny | `34800281` | [Scripts/c34800281.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c34800281.lua) | 1 |
-| Arbitration of White | `57964143` | [Scripts/c57964143.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c57964143.lua) | 2 |
-| Scrap Garage | `91019775` | [Scripts/c91019775.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c91019775.lua) | 1 |
-| Armed Rebeellion | `21056275` | [Scripts/c21056275.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c21056275.lua) | 1 |
-| Grenosaurus Giga-Cannon | `34481518` | [Scripts/c34481518.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c34481518.lua) | 1 |
-| Sangen Furo | `55484152` | [Scripts/c55484152.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c55484152.lua) | 1 |
-| Desperado Barrel Dragon | `76728962` | [Scripts/c76728962.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c76728962.lua) | 1 |
-| Transcendosaurus Exaraptor | `56818742` | [Scripts/c56818742.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c56818742.lua) | 1 |
-| Celestial Knightlord Parshath | `48589580` | [Scripts/c48589580.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c48589580.lua) | 1 |
-| Ragnaraika Hunting Dance | `89824842` | [Scripts/c89824842.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c89824842.lua) | 1 |
-| Machina Citadel | `87074380` | [Scripts/c87074380.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c87074380.lua) | 1 |
-| Evil Lord - Zorc | `73320394` | [Scripts/c73320394.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c73320394.lua) | 1 |
-| Triamid Loading | `64576557` | [Scripts/c64576557.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c64576557.lua) | 1 |
-| House Dragonmaid | `41232647` | [Scripts/c41232647.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c41232647.lua) | 1 |
-| Salamangreat Fennec | `49094491` | [Scripts/c49094491.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c49094491.lua) | 1 |
-| Magikuriboh | `31699677` | [Scripts/c31699677.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c31699677.lua) | 1 |
-| Beetrooper Cruel Saturnas | `91300233` | [Scripts/c91300233.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c91300233.lua) | 1 |
-| Keeper of the Shrine | `66752837` | [Scripts/c66752837.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c66752837.lua) | 1 |
-| The World Tree | `5973663` | [Scripts/c5973663.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c5973663.lua) | 1 |
-| Two-for-One Repair Job | `44459942` | [Scripts/c44459942.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c44459942.lua) | 1 |
-| Machina Defense Perimeter | `13247801` | [Scripts/c13247801.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c13247801.lua) | 1 |
+| [Teleport Fusion](/examples/cards/36494597) | `36494597` | [Scripts/c36494597.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c36494597.lua) | 1 |
+| Despia, Theater of the Branded | `99543666` | [Scripts/c99543666.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c99543666.lua) | 1 |
+| Chevreuil, Hunting Scout of the Deep Forest | `13023431` | [Scripts/c13023431.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c13023431.lua) | 1 |
+| Melffy Pinny | `34800281` | [Scripts/c34800281.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c34800281.lua) | 1 |
+| Arbitration of White | `57964143` | [Scripts/c57964143.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c57964143.lua) | 2 |
+| Scrap Garage | `91019775` | [Scripts/c91019775.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c91019775.lua) | 1 |
+| Armed Rebeellion | `21056275` | [Scripts/c21056275.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c21056275.lua) | 1 |
+| Grenosaurus Giga-Cannon | `34481518` | [Scripts/c34481518.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c34481518.lua) | 1 |
+| Sangen Furo | `55484152` | [Scripts/c55484152.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c55484152.lua) | 1 |
+| Desperado Barrel Dragon | `76728962` | [Scripts/c76728962.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c76728962.lua) | 1 |
+| Transcendosaurus Exaraptor | `56818742` | [Scripts/c56818742.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c56818742.lua) | 1 |
+| Celestial Knightlord Parshath | `48589580` | [Scripts/c48589580.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c48589580.lua) | 1 |
+| Ragnaraika Hunting Dance | `89824842` | [Scripts/c89824842.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c89824842.lua) | 1 |
+| Machina Citadel | `87074380` | [Scripts/c87074380.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c87074380.lua) | 1 |
+| Evil Lord - Zorc | `73320394` | [Scripts/c73320394.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c73320394.lua) | 1 |
+| Triamid Loading | `64576557` | [Scripts/c64576557.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c64576557.lua) | 1 |
+| House Dragonmaid | `41232647` | [Scripts/c41232647.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c41232647.lua) | 1 |
+| Salamangreat Fennec | `49094491` | [Scripts/c49094491.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c49094491.lua) | 1 |
+| Magikuriboh | `31699677` | [Scripts/c31699677.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c31699677.lua) | 1 |
+| Beetrooper Cruel Saturnas | `91300233` | [Scripts/c91300233.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c91300233.lua) | 1 |
+| Keeper of the Shrine | `66752837` | [Scripts/c66752837.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c66752837.lua) | 1 |
+| The World Tree | `5973663` | [Scripts/c5973663.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c5973663.lua) | 1 |
+| Two-for-One Repair Job | `44459942` | [Scripts/c44459942.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c44459942.lua) | 1 |
+| Machina Defense Perimeter | `13247801` | [Scripts/c13247801.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c13247801.lua) | 1 |
 | ...and 32 more |  |  |  |
 
 ## Script Examples
 
 ### Teleport Fusion (`36494597`)
 
-Source: [Scripts/c36494597.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c36494597.lua)
+Source: [Scripts/c36494597.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c36494597.lua)
 
 ```lua
 end
@@ -73,7 +73,7 @@ end
 
 ### Despia, Theater of the Branded (`99543666`)
 
-Source: [Scripts/c99543666.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c99543666.lua)
+Source: [Scripts/c99543666.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c99543666.lua)
 
 ```lua
 function c99543666.cfilter(c,tp,rp)
@@ -85,7 +85,7 @@ end
 
 ### Chevreuil, Hunting Scout of the Deep Forest (`13023431`)
 
-Source: [Scripts/c13023431.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c13023431.lua)
+Source: [Scripts/c13023431.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c13023431.lua)
 
 ```lua
 	else

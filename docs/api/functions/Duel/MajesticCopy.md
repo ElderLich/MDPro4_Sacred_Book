@@ -29,13 +29,13 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Majestic Star Dragon | `7841112` | [Scripts/c7841112.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c7841112.lua) | 1 |
+| Majestic Star Dragon | `7841112` | [Scripts/c7841112.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c7841112.lua) | 1 |
 
 ## Script Examples
 
 ### Majestic Star Dragon (`7841112`)
 
-Source: [Scripts/c7841112.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c7841112.lua)
+Source: [Scripts/c7841112.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c7841112.lua)
 
 ```lua
 		e2:SetReset(RESET_EVENT+RESETS_STANDARD+RESET_PHASE+PHASE_END)

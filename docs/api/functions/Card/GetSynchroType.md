@@ -31,13 +31,13 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Metaphys Horus | `36898537` | [Scripts/c36898537.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c36898537.lua) | 1 |
+| Metaphys Horus | `36898537` | [Scripts/c36898537.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c36898537.lua) | 1 |
 
 ## Script Examples
 
 ### Metaphys Horus (`36898537`)
 
-Source: [Scripts/c36898537.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c36898537.lua)
+Source: [Scripts/c36898537.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c36898537.lua)
 
 ```lua
 	while tc do

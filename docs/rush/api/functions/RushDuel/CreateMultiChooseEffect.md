@@ -71,37 +71,37 @@ Generated from the local `Rush/Scripts/` folder and `rush_cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Yamiterasu the Divine Ruler | `120199036` | [Rush/Scripts/c120199036.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120199036.lua) | 1 |
-| The Trinity Dragiastar | `120109031` | [Rush/Scripts/c120109031.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120109031.lua) | 1 |
-| The Dragiastar | `120235035` | [Rush/Scripts/c120235035.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120235035.lua) | 1 |
-| Metarion King Cobrastar | `120205039` | [Rush/Scripts/c120205039.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120205039.lua) | 1 |
-| Roadstar Gladimagia | `120272042` | [Rush/Scripts/c120272042.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120272042.lua) | 1 |
-| CAN:D LIVE | `120199035` | [Rush/Scripts/c120199035.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120199035.lua) | 1 |
-| Chartres the Skysavior Shining Light | `120301037` | [Rush/Scripts/c120301037.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120301037.lua) | 1 |
-| Gulflare, the Skysavior | `120253049` | [Rush/Scripts/c120253049.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120253049.lua) | 1 |
-| Sevens Paladin | `120196015` | [Rush/Scripts/c120196015.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120196015.lua) | 1 |
-| Void Strike Dragon Zerogaigias | `120211001` | [Rush/Scripts/c120211001.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120211001.lua) | 1 |
-| Fullmetarion Ashurastar | `120271016` | [Rush/Scripts/c120271016.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120271016.lua) | 1 |
-| Princess Omega the Shining Megastar | `120217025` | [Rush/Scripts/c120217025.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120217025.lua) | 1 |
-| Gaia, Conqueror of Champions | `120249046` | [Rush/Scripts/c120249046.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120249046.lua) | 1 |
-| Metarion Vritrastar | `120196002` | [Rush/Scripts/c120196002.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120196002.lua) | 1 |
-| Metarion Armarostar | `120272046` | [Rush/Scripts/c120272046.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120272046.lua) | 1 |
-| Sevensgias the Magical Dragon Knight | `120208037` | [Rush/Scripts/c120208037.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120208037.lua) | 1 |
-| Solciere, the Radiant Skysavior | `120235038` | [Rush/Scripts/c120235038.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120235038.lua) | 1 |
-| Semeterasu the Divine Ruler | `120205036` | [Rush/Scripts/c120205036.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120205036.lua) | 1 |
-| Raidacross Ash, Hero of Chaos | `120199034` | [Rush/Scripts/c120199034.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120199034.lua) | 1 |
-| Endless Romance Blitz | `120205034` | [Rush/Scripts/c120205034.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120205034.lua) | 1 |
-| Solid Strike Dragon Metagiastar F | `120217004` | [Rush/Scripts/c120217004.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120217004.lua) | 1 |
-| Omega Guitarna the Shining Megastar | `120217024` | [Rush/Scripts/c120217024.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120217024.lua) | 1 |
-| Hyperstrike Dragon Dragiastar IF | `120294040` | [Rush/Scripts/c120294040.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120294040.lua) | 1 |
-| Metarion Medustar | `120271018` | [Rush/Scripts/c120271018.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120271018.lua) | 1 |
+| Yamiterasu the Divine Ruler | `120199036` | [Rush/Scripts/c120199036.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120199036.lua) | 1 |
+| The Trinity Dragiastar | `120109031` | [Rush/Scripts/c120109031.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120109031.lua) | 1 |
+| The Dragiastar | `120235035` | [Rush/Scripts/c120235035.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120235035.lua) | 1 |
+| Metarion King Cobrastar | `120205039` | [Rush/Scripts/c120205039.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120205039.lua) | 1 |
+| Roadstar Gladimagia | `120272042` | [Rush/Scripts/c120272042.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120272042.lua) | 1 |
+| CAN:D LIVE | `120199035` | [Rush/Scripts/c120199035.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120199035.lua) | 1 |
+| Chartres the Skysavior Shining Light | `120301037` | [Rush/Scripts/c120301037.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120301037.lua) | 1 |
+| Gulflare, the Skysavior | `120253049` | [Rush/Scripts/c120253049.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120253049.lua) | 1 |
+| Sevens Paladin | `120196015` | [Rush/Scripts/c120196015.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120196015.lua) | 1 |
+| Void Strike Dragon Zerogaigias | `120211001` | [Rush/Scripts/c120211001.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120211001.lua) | 1 |
+| Fullmetarion Ashurastar | `120271016` | [Rush/Scripts/c120271016.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120271016.lua) | 1 |
+| Princess Omega the Shining Megastar | `120217025` | [Rush/Scripts/c120217025.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120217025.lua) | 1 |
+| Gaia, Conqueror of Champions | `120249046` | [Rush/Scripts/c120249046.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120249046.lua) | 1 |
+| Metarion Vritrastar | `120196002` | [Rush/Scripts/c120196002.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120196002.lua) | 1 |
+| Metarion Armarostar | `120272046` | [Rush/Scripts/c120272046.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120272046.lua) | 1 |
+| Sevensgias the Magical Dragon Knight | `120208037` | [Rush/Scripts/c120208037.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120208037.lua) | 1 |
+| Solciere, the Radiant Skysavior | `120235038` | [Rush/Scripts/c120235038.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120235038.lua) | 1 |
+| Semeterasu the Divine Ruler | `120205036` | [Rush/Scripts/c120205036.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120205036.lua) | 1 |
+| Raidacross Ash, Hero of Chaos | `120199034` | [Rush/Scripts/c120199034.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120199034.lua) | 1 |
+| Endless Romance Blitz | `120205034` | [Rush/Scripts/c120205034.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120205034.lua) | 1 |
+| Solid Strike Dragon Metagiastar F | `120217004` | [Rush/Scripts/c120217004.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120217004.lua) | 1 |
+| Omega Guitarna the Shining Megastar | `120217024` | [Rush/Scripts/c120217024.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120217024.lua) | 1 |
+| Hyperstrike Dragon Dragiastar IF | `120294040` | [Rush/Scripts/c120294040.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120294040.lua) | 1 |
+| Metarion Medustar | `120271018` | [Rush/Scripts/c120271018.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120271018.lua) | 1 |
 | ...and 17 more |  |  |  |
 
 ## Script Examples
 
 ### Yamiterasu the Divine Ruler (`120199036`)
 
-Source: [Rush/Scripts/c120199036.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120199036.lua)
+Source: [Rush/Scripts/c120199036.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120199036.lua)
 
 ```lua
 	RD.AddFusionProcedure(c,list[1],list[2])
@@ -113,7 +113,7 @@ Source: [Rush/Scripts/c120199036.lua](https://github.com/ElderLich/MDPro3_Sacred
 
 ### The Trinity Dragiastar (`120109031`)
 
-Source: [Rush/Scripts/c120109031.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120109031.lua)
+Source: [Rush/Scripts/c120109031.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120109031.lua)
 
 ```lua
 	RD.AddFusionProcedure(c,list[1],list[1],list[1])
@@ -125,7 +125,7 @@ end
 
 ### The Dragiastar (`120235035`)
 
-Source: [Rush/Scripts/c120235035.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120235035.lua)
+Source: [Rush/Scripts/c120235035.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120235035.lua)
 
 ```lua
 	RD.AddFusionProcedure(c,list[1],list[1])

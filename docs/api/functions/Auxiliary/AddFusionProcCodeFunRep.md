@@ -33,22 +33,22 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Cyberse Clock Dragon | `42717221` | [Scripts/c42717221.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c42717221.lua) | 1 |
-| Gold Pride - Pin Baller | `28497830` | [Scripts/c28497830.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c28497830.lua) | 1 |
-| Alba-Lenatus the Abyss Dragon | `3410461` | [Scripts/c3410461.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c3410461.lua) | 1 |
-| Clorless, Chaos King of Dark World | `22723778` | [Scripts/c22723778.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c22723778.lua) | 1 |
-| Veidos the Dragon of Endless Darkness | `8540986` | [Scripts/c8540986.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c8540986.lua) | 1 |
-| Frightfur Tiger | `464362` | [Scripts/c464362.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c464362.lua) | 1 |
-| Chimera the Illusion Beast | `38264974` | [Scripts/c38264974.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c38264974.lua) | 1 |
-| Chimeratech Overdragon | `64599569` | [Scripts/c64599569.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c64599569.lua) | 1 |
-| Chimeratech Fortress Dragon | `79229522` | [Scripts/c79229522.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c79229522.lua) | 1 |
-| Frightfur Wolf | `11039171` | [Scripts/c11039171.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c11039171.lua) | 1 |
+| Cyberse Clock Dragon | `42717221` | [Scripts/c42717221.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c42717221.lua) | 1 |
+| Gold Pride - Pin Baller | `28497830` | [Scripts/c28497830.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c28497830.lua) | 1 |
+| Alba-Lenatus the Abyss Dragon | `3410461` | [Scripts/c3410461.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c3410461.lua) | 1 |
+| Clorless, Chaos King of Dark World | `22723778` | [Scripts/c22723778.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c22723778.lua) | 1 |
+| Veidos the Dragon of Endless Darkness | `8540986` | [Scripts/c8540986.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c8540986.lua) | 1 |
+| Frightfur Tiger | `464362` | [Scripts/c464362.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c464362.lua) | 1 |
+| Chimera the Illusion Beast | `38264974` | [Scripts/c38264974.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c38264974.lua) | 1 |
+| Chimeratech Overdragon | `64599569` | [Scripts/c64599569.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c64599569.lua) | 1 |
+| Chimeratech Fortress Dragon | `79229522` | [Scripts/c79229522.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c79229522.lua) | 1 |
+| Frightfur Wolf | `11039171` | [Scripts/c11039171.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c11039171.lua) | 1 |
 
 ## Script Examples
 
 ### Cyberse Clock Dragon (`42717221`)
 
-Source: [Scripts/c42717221.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c42717221.lua)
+Source: [Scripts/c42717221.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c42717221.lua)
 
 ```lua
 	--fusion material
@@ -60,7 +60,7 @@ Source: [Scripts/c42717221.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/
 
 ### Gold Pride - Pin Baller (`28497830`)
 
-Source: [Scripts/c28497830.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c28497830.lua)
+Source: [Scripts/c28497830.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c28497830.lua)
 
 ```lua
 	c:EnableReviveLimit()
@@ -72,7 +72,7 @@ Source: [Scripts/c28497830.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/
 
 ### Alba-Lenatus the Abyss Dragon (`3410461`)
 
-Source: [Scripts/c3410461.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c3410461.lua)
+Source: [Scripts/c3410461.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c3410461.lua)
 
 ```lua
 	--fusion material

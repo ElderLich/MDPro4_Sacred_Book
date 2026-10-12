@@ -57,37 +57,37 @@ Generated from the local `Rush/Scripts/` folder and `rush_cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| [The Black Witch Facing the Temple](/examples/rush-cards/120309048) | `120309048` | [Rush/Scripts/c120309048.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120309048.lua) | 1 |
-| [Magician's Sense](/examples/rush-cards/120246088) | `120246088` | [Rush/Scripts/c120246088.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120246088.lua) | 1 |
-| Fusionic Defense | `120257064` | [Rush/Scripts/c120257064.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120257064.lua) | 1 |
-| Celeb Rose Rich Magicians | `120287040` | [Rush/Scripts/c120287040.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120287040.lua) | 1 |
-| Iris the Rare Shadow Flower | `120228018` | [Rush/Scripts/c120228018.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120228018.lua) | 1 |
-| Looter Force | `120228064` | [Rush/Scripts/c120228064.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120228064.lua) | 1 |
-| Voidvelg Logisticos | `120244007` | [Rush/Scripts/c120244007.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120244007.lua) | 1 |
-| Zuse the Wisdom Vassal | `120244014` | [Rush/Scripts/c120244014.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120244014.lua) | 1 |
-| Light-Calling Griffore | `120280008` | [Rush/Scripts/c120280008.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120280008.lua) | 1 |
-| Shariel, the Novice Sushi Fairy | `120228028` | [Rush/Scripts/c120228028.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120228028.lua) | 1 |
-| Purple-Eyes Star Cat | `120235014` | [Rush/Scripts/c120235014.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120235014.lua) | 1 |
-| Shield in the Right Hand | `120246048` | [Rush/Scripts/c120246048.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120246048.lua) | 1 |
-| Yabume the Frost-Purifying Purebreed | `120298045` | [Rush/Scripts/c120298045.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120298045.lua) | 1 |
-| Necromaid Doctor | `120294015` | [Rush/Scripts/c120294015.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120294015.lua) | 1 |
-| Astrobio Drake | `120235026` | [Rush/Scripts/c120235026.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120235026.lua) | 1 |
-| Wooly Wonderland Planewe | `120208020` | [Rush/Scripts/c120208020.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120208020.lua) | 1 |
-| Matsugumi the Ruler's Squad | `120188006` | [Rush/Scripts/c120188006.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120188006.lua) | 1 |
-| Double Chill Dragons | `120235034` | [Rush/Scripts/c120235034.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120235034.lua) | 1 |
-| DBF Rebuildra | `120244005` | [Rush/Scripts/c120244005.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120244005.lua) | 1 |
-| Nehime the Dimensional Sworn Ally | `120309029` | [Rush/Scripts/c120309029.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120309029.lua) | 1 |
-| Winged Dragon of Chaos | `120280006` | [Rush/Scripts/c120280006.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120280006.lua) | 1 |
-| Trap Mole | `120238039` | [Rush/Scripts/c120238039.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120238039.lua) | 1 |
-| Charging Remora | `120253018` | [Rush/Scripts/c120253018.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120253018.lua) | 1 |
-| Swordfish Vanguard Gaju | `120208022` | [Rush/Scripts/c120208022.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120208022.lua) | 1 |
+| [The Black Witch Facing the Temple](/examples/rush-cards/120309048) | `120309048` | [Rush/Scripts/c120309048.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120309048.lua) | 1 |
+| [Magician's Sense](/examples/rush-cards/120246088) | `120246088` | [Rush/Scripts/c120246088.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120246088.lua) | 1 |
+| Fusionic Defense | `120257064` | [Rush/Scripts/c120257064.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120257064.lua) | 1 |
+| Celeb Rose Rich Magicians | `120287040` | [Rush/Scripts/c120287040.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120287040.lua) | 1 |
+| Iris the Rare Shadow Flower | `120228018` | [Rush/Scripts/c120228018.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120228018.lua) | 1 |
+| Looter Force | `120228064` | [Rush/Scripts/c120228064.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120228064.lua) | 1 |
+| Voidvelg Logisticos | `120244007` | [Rush/Scripts/c120244007.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120244007.lua) | 1 |
+| Zuse the Wisdom Vassal | `120244014` | [Rush/Scripts/c120244014.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120244014.lua) | 1 |
+| Light-Calling Griffore | `120280008` | [Rush/Scripts/c120280008.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120280008.lua) | 1 |
+| Shariel, the Novice Sushi Fairy | `120228028` | [Rush/Scripts/c120228028.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120228028.lua) | 1 |
+| Purple-Eyes Star Cat | `120235014` | [Rush/Scripts/c120235014.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120235014.lua) | 1 |
+| Shield in the Right Hand | `120246048` | [Rush/Scripts/c120246048.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120246048.lua) | 1 |
+| Yabume the Frost-Purifying Purebreed | `120298045` | [Rush/Scripts/c120298045.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120298045.lua) | 1 |
+| Necromaid Doctor | `120294015` | [Rush/Scripts/c120294015.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120294015.lua) | 1 |
+| Astrobio Drake | `120235026` | [Rush/Scripts/c120235026.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120235026.lua) | 1 |
+| Wooly Wonderland Planewe | `120208020` | [Rush/Scripts/c120208020.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120208020.lua) | 1 |
+| Matsugumi the Ruler's Squad | `120188006` | [Rush/Scripts/c120188006.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120188006.lua) | 1 |
+| Double Chill Dragons | `120235034` | [Rush/Scripts/c120235034.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120235034.lua) | 1 |
+| DBF Rebuildra | `120244005` | [Rush/Scripts/c120244005.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120244005.lua) | 1 |
+| Nehime the Dimensional Sworn Ally | `120309029` | [Rush/Scripts/c120309029.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120309029.lua) | 1 |
+| Winged Dragon of Chaos | `120280006` | [Rush/Scripts/c120280006.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120280006.lua) | 1 |
+| Trap Mole | `120238039` | [Rush/Scripts/c120238039.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120238039.lua) | 1 |
+| Charging Remora | `120253018` | [Rush/Scripts/c120253018.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120253018.lua) | 1 |
+| Swordfish Vanguard Gaju | `120208022` | [Rush/Scripts/c120208022.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120208022.lua) | 1 |
 | ...and 6 more |  |  |  |
 
 ## Script Examples
 
 ### The Black Witch Facing the Temple (`120309048`)
 
-Source: [Rush/Scripts/c120309048.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120309048.lua)
+Source: [Rush/Scripts/c120309048.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120309048.lua)
 
 ```lua
 end
@@ -98,7 +98,7 @@ end
 
 ### Magician's Sense (`120246088`)
 
-Source: [Rush/Scripts/c120246088.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120246088.lua)
+Source: [Rush/Scripts/c120246088.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120246088.lua)
 
 ```lua
 end
@@ -110,7 +110,7 @@ function cm.activate(e,tp,eg,ep,ev,re,r,rp)
 
 ### Fusionic Defense (`120257064`)
 
-Source: [Rush/Scripts/c120257064.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120257064.lua)
+Source: [Rush/Scripts/c120257064.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120257064.lua)
 
 ```lua
 end

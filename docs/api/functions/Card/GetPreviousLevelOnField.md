@@ -31,16 +31,16 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Seven Stars Slash - Army Annihilator Hagun | `65114115` | [Scripts/c65114115.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c65114115.lua) | 1 |
-| Imperial Princess Quinquery | `29510428` | [Scripts/c29510428.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c29510428.lua) | 1 |
-| The World Legacy | `92562411` | [Scripts/c92562411.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c92562411.lua) | 1 |
-| Revival Rose | `12469386` | [Scripts/c12469386.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c12469386.lua) | 1 |
+| Seven Stars Slash - Army Annihilator Hagun | `65114115` | [Scripts/c65114115.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c65114115.lua) | 1 |
+| Imperial Princess Quinquery | `29510428` | [Scripts/c29510428.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c29510428.lua) | 1 |
+| The World Legacy | `92562411` | [Scripts/c92562411.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c92562411.lua) | 1 |
+| Revival Rose | `12469386` | [Scripts/c12469386.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c12469386.lua) | 1 |
 
 ## Script Examples
 
 ### Seven Stars Slash - Army Annihilator Hagun (`65114115`)
 
-Source: [Scripts/c65114115.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c65114115.lua)
+Source: [Scripts/c65114115.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c65114115.lua)
 
 ```lua
 end
@@ -52,7 +52,7 @@ function s.thcon2(e,tp,eg,ep,ev,re,r,rp)
 
 ### Imperial Princess Quinquery (`29510428`)
 
-Source: [Scripts/c29510428.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c29510428.lua)
+Source: [Scripts/c29510428.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c29510428.lua)
 
 ```lua
 function s.cfilter(c,tp)
@@ -64,7 +64,7 @@ function s.spcon(e,tp,eg,ep,ev,re,r,rp)
 
 ### The World Legacy (`92562411`)
 
-Source: [Scripts/c92562411.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c92562411.lua)
+Source: [Scripts/c92562411.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c92562411.lua)
 
 ```lua
 end

@@ -32,21 +32,21 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Smile Action | `47870325` | [Scripts/c47870325.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c47870325.lua) | 1 |
-| Alien Mother | `24104865` | [Scripts/c24104865.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c24104865.lua) | 1 |
-| Overmind Archfiend | `24221808` | [Scripts/c24221808.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c24221808.lua) | 1 |
-| Gladiator Beast Darius | `25924653` | [Scripts/c25924653.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c25924653.lua) | 2 |
-| Exodius the Ultimate Forbidden Lord | `13893596` | [Scripts/c13893596.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c13893596.lua) | 1 |
-| Portable Battery Pack | `61840587` | [Scripts/c61840587.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c61840587.lua) | 2 |
-| Future Visions | `87902575` | [Scripts/c87902575.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c87902575.lua) | 2 |
-| Elder Entity Norden | `17412721` | [Scripts/c17412721.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c17412721.lua) | 2 |
-| Kinka-byo | `45452224` | [Scripts/c45452224.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c45452224.lua) | 2 |
+| Smile Action | `47870325` | [Scripts/c47870325.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c47870325.lua) | 1 |
+| Alien Mother | `24104865` | [Scripts/c24104865.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c24104865.lua) | 1 |
+| Overmind Archfiend | `24221808` | [Scripts/c24221808.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c24221808.lua) | 1 |
+| Gladiator Beast Darius | `25924653` | [Scripts/c25924653.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c25924653.lua) | 2 |
+| Exodius the Ultimate Forbidden Lord | `13893596` | [Scripts/c13893596.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c13893596.lua) | 1 |
+| Portable Battery Pack | `61840587` | [Scripts/c61840587.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c61840587.lua) | 2 |
+| Future Visions | `87902575` | [Scripts/c87902575.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c87902575.lua) | 2 |
+| Elder Entity Norden | `17412721` | [Scripts/c17412721.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c17412721.lua) | 2 |
+| Kinka-byo | `45452224` | [Scripts/c45452224.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c45452224.lua) | 2 |
 
 ## Script Examples
 
 ### Smile Action (`47870325`)
 
-Source: [Scripts/c47870325.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c47870325.lua)
+Source: [Scripts/c47870325.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c47870325.lua)
 
 ```lua
 end
@@ -58,7 +58,7 @@ function c47870325.atkop(e,tp,eg,ep,ev,re,r,rp)
 
 ### Alien Mother (`24104865`)
 
-Source: [Scripts/c24104865.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c24104865.lua)
+Source: [Scripts/c24104865.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c24104865.lua)
 
 ```lua
 end
@@ -70,7 +70,7 @@ function c24104865.desop(e,tp,eg,ep,ev,re,r,rp)
 
 ### Overmind Archfiend (`24221808`)
 
-Source: [Scripts/c24221808.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c24221808.lua)
+Source: [Scripts/c24221808.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c24221808.lua)
 
 ```lua
 end

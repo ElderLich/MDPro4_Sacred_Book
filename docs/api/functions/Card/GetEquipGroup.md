@@ -37,37 +37,37 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Power Tool Braver Dragon | `63265554` | [Scripts/c63265554.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c63265554.lua) | 1 |
-| DoomZ XII Zero - Drastea | `92472273` | [Scripts/c92472273.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c92472273.lua) | 2 |
-| Dragunity Arma Leyvaten | `63487632` | [Scripts/c63487632.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c63487632.lua) | 2 |
-| Cyberdark End Dragon | `37542782` | [Scripts/c37542782.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c37542782.lua) | 1 |
-| Millennium-Eyes Restrict | `41578483` | [Scripts/c41578483.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c41578483.lua) | 5 |
-| Shadowreaver Knight 21 | `95506252` | [Scripts/c95506252.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c95506252.lua) | 2 |
-| ZW - Dragonic Halberd | `2896663` | [Scripts/c2896663.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c2896663.lua) | 2 |
-| DoomZ Command "D.O.O.M.D.U.R.G." | `68831625` | [Scripts/c68831625.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c68831625.lua) | 1 |
-| Allure Dance | `68316358` | [Scripts/c68316358.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c68316358.lua) | 1 |
-| Number 6: Chronomaly Atlandis | `9161357` | [Scripts/c9161357.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c9161357.lua) | 1 |
-| Blue-Eyes Tyrant Dragon | `11443677` | [Scripts/c11443677.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c11443677.lua) | 1 |
-| Nightmare-Eyes Restrict | `30138615` | [Scripts/c30138615.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c30138615.lua) | 1 |
-| DoomZ V Five - Amalthe | `28877382` | [Scripts/c28877382.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c28877382.lua) | 2 |
-| Therion "Reaper" Fum | `21727231` | [Scripts/c21727231.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c21727231.lua) | 1 |
-| Fiendsmith's Desirae | `82135803` | [Scripts/c82135803.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c82135803.lua) | 2 |
-| Vylon Disigma | `39987164` | [Scripts/c39987164.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c39987164.lua) | 1 |
-| Metalhold the Moving Blockade | `42237854` | [Scripts/c42237854.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c42237854.lua) | 1 |
-| Zaralaam the Dark Palace | `64230128` | [Scripts/c64230128.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c64230128.lua) | 1 |
-| Therion "Lily" Borea | `83610035` | [Scripts/c83610035.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c83610035.lua) | 1 |
-| Ultimate Leo Utopia Ray | `68679595` | [Scripts/c68679595.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c68679595.lua) | 1 |
-| DoomZ VII Seven - Elara | `54265980` | [Scripts/c54265980.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c54265980.lua) | 2 |
-| Destiny HERO - Plasma | `83965310` | [Scripts/c83965310.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c83965310.lua) | 1 |
-| Reincarnation Unveiling Mail | `68663427` | [Scripts/c68663427.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c68663427.lua) | 2 |
-| Therion "King" Regulus | `10604644` | [Scripts/c10604644.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c10604644.lua) | 1 |
+| Power Tool Braver Dragon | `63265554` | [Scripts/c63265554.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c63265554.lua) | 1 |
+| DoomZ XII Zero - Drastea | `92472273` | [Scripts/c92472273.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c92472273.lua) | 2 |
+| Dragunity Arma Leyvaten | `63487632` | [Scripts/c63487632.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c63487632.lua) | 2 |
+| Cyberdark End Dragon | `37542782` | [Scripts/c37542782.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c37542782.lua) | 1 |
+| Millennium-Eyes Restrict | `41578483` | [Scripts/c41578483.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c41578483.lua) | 5 |
+| Shadowreaver Knight 21 | `95506252` | [Scripts/c95506252.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c95506252.lua) | 2 |
+| ZW - Dragonic Halberd | `2896663` | [Scripts/c2896663.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c2896663.lua) | 2 |
+| DoomZ Command "D.O.O.M.D.U.R.G." | `68831625` | [Scripts/c68831625.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c68831625.lua) | 1 |
+| Allure Dance | `68316358` | [Scripts/c68316358.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c68316358.lua) | 1 |
+| Number 6: Chronomaly Atlandis | `9161357` | [Scripts/c9161357.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c9161357.lua) | 1 |
+| Blue-Eyes Tyrant Dragon | `11443677` | [Scripts/c11443677.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c11443677.lua) | 1 |
+| Nightmare-Eyes Restrict | `30138615` | [Scripts/c30138615.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c30138615.lua) | 1 |
+| DoomZ V Five - Amalthe | `28877382` | [Scripts/c28877382.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c28877382.lua) | 2 |
+| Therion "Reaper" Fum | `21727231` | [Scripts/c21727231.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c21727231.lua) | 1 |
+| Fiendsmith's Desirae | `82135803` | [Scripts/c82135803.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c82135803.lua) | 2 |
+| Vylon Disigma | `39987164` | [Scripts/c39987164.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c39987164.lua) | 1 |
+| Metalhold the Moving Blockade | `42237854` | [Scripts/c42237854.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c42237854.lua) | 1 |
+| Zaralaam the Dark Palace | `64230128` | [Scripts/c64230128.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c64230128.lua) | 1 |
+| Therion "Lily" Borea | `83610035` | [Scripts/c83610035.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c83610035.lua) | 1 |
+| Ultimate Leo Utopia Ray | `68679595` | [Scripts/c68679595.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c68679595.lua) | 1 |
+| DoomZ VII Seven - Elara | `54265980` | [Scripts/c54265980.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c54265980.lua) | 2 |
+| Destiny HERO - Plasma | `83965310` | [Scripts/c83965310.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c83965310.lua) | 1 |
+| Reincarnation Unveiling Mail | `68663427` | [Scripts/c68663427.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c68663427.lua) | 2 |
+| Therion "King" Regulus | `10604644` | [Scripts/c10604644.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c10604644.lua) | 1 |
 | ...and 39 more |  |  |  |
 
 ## Script Examples
 
 ### Power Tool Braver Dragon (`63265554`)
 
-Source: [Scripts/c63265554.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c63265554.lua)
+Source: [Scripts/c63265554.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c63265554.lua)
 
 ```lua
 function c63265554.pncost(e,tp,eg,ep,ev,re,r,rp,chk)
@@ -79,7 +79,7 @@ function c63265554.pncost(e,tp,eg,ep,ev,re,r,rp,chk)
 
 ### DoomZ XII Zero - Drastea (`92472273`)
 
-Source: [Scripts/c92472273.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c92472273.lua)
+Source: [Scripts/c92472273.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c92472273.lua)
 
 ```lua
 end
@@ -91,7 +91,7 @@ end
 
 ### Dragunity Arma Leyvaten (`63487632`)
 
-Source: [Scripts/c63487632.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c63487632.lua)
+Source: [Scripts/c63487632.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c63487632.lua)
 
 ```lua
 end

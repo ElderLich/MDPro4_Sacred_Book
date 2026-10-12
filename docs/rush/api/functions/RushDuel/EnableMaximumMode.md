@@ -46,13 +46,13 @@ Generated from the local `Rush/Scripts/` folder and `rush_cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Time Machine | `120272058` | [Rush/Scripts/c120272058.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120272058.lua) | 1 |
+| Time Machine | `120272058` | [Rush/Scripts/c120272058.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120272058.lua) | 1 |
 
 ## Script Examples
 
 ### Time Machine (`120272058`)
 
-Source: [Rush/Scripts/c120272058.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120272058.lua)
+Source: [Rush/Scripts/c120272058.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120272058.lua)
 
 ```lua
 				tc:SetMaterial(og)

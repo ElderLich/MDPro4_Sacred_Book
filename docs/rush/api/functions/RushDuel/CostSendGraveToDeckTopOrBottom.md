@@ -55,19 +55,19 @@ Generated from the local `Rush/Scripts/` folder and `rush_cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| [Volcalizing Salamandeus](/examples/rush-cards/120272039) | `120272039` | [Rush/Scripts/c120272039.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120272039.lua) | 1 |
-| Splendid Slash | `120254070` | [Rush/Scripts/c120254070.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120254070.lua) | 1 |
-| Destructor Soldier Canteen | `120264013` | [Rush/Scripts/c120264013.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120264013.lua) | 1 |
-| Hyper Ritzy King Rex | `120196037` | [Rush/Scripts/c120196037.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120196037.lua) | 1 |
-| Galactiara FUSE Eve | `120244034` | [Rush/Scripts/c120244034.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120244034.lua) | 1 |
-| Ether F Striker | `120205044` | [Rush/Scripts/c120205044.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120205044.lua) | 1 |
-| Axtion Melody the Music Princess | `120247020` | [Rush/Scripts/c120247020.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120247020.lua) | 1 |
+| [Volcalizing Salamandeus](/examples/rush-cards/120272039) | `120272039` | [Rush/Scripts/c120272039.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120272039.lua) | 1 |
+| Splendid Slash | `120254070` | [Rush/Scripts/c120254070.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120254070.lua) | 1 |
+| Destructor Soldier Canteen | `120264013` | [Rush/Scripts/c120264013.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120264013.lua) | 1 |
+| Hyper Ritzy King Rex | `120196037` | [Rush/Scripts/c120196037.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120196037.lua) | 1 |
+| Galactiara FUSE Eve | `120244034` | [Rush/Scripts/c120244034.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120244034.lua) | 1 |
+| Ether F Striker | `120205044` | [Rush/Scripts/c120205044.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120205044.lua) | 1 |
+| Axtion Melody the Music Princess | `120247020` | [Rush/Scripts/c120247020.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120247020.lua) | 1 |
 
 ## Script Examples
 
 ### Volcalizing Salamandeus (`120272039`)
 
-Source: [Rush/Scripts/c120272039.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120272039.lua)
+Source: [Rush/Scripts/c120272039.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120272039.lua)
 
 ```lua
 	return c:IsType(TYPE_MAXIMUM) and c:IsAbleToDeckOrExtraAsCost()
@@ -79,7 +79,7 @@ function cm.target(e,tp,eg,ep,ev,re,r,rp,chk)
 
 ### Splendid Slash (`120254070`)
 
-Source: [Rush/Scripts/c120254070.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120254070.lua)
+Source: [Rush/Scripts/c120254070.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120254070.lua)
 
 ```lua
 	return eg:IsExists(cm.confilter,1,nil,tp,rp)
@@ -91,7 +91,7 @@ function cm.target(e,tp,eg,ep,ev,re,r,rp,chk)
 
 ### Destructor Soldier Canteen (`120264013`)
 
-Source: [Rush/Scripts/c120264013.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120264013.lua)
+Source: [Rush/Scripts/c120264013.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120264013.lua)
 
 ```lua
 	return (c:IsCode(list[1]) or (c:IsType(TYPE_NORMAL) and c:IsRace(RACE_WYRM))) and c:IsAbleToHand()

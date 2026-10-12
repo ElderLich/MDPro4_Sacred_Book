@@ -32,22 +32,22 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Flowering Etoile the Melodious Magnificat | `83793721` | [Scripts/c83793721.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c83793721.lua) | 1 |
-| Dracotail Arthalion | `33760966` | [Scripts/c33760966.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c33760966.lua) | 1 |
-| Dangerous Frightfur Nightmary | `58468105` | [Scripts/c58468105.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c58468105.lua) | 1 |
-| GMX - COMPREX | `75191028` | [Scripts/c75191028.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c75191028.lua) | 1 |
-| Wake Up Your Elemental HERO | `32828466` | [Scripts/c32828466.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c32828466.lua) | 1 |
-| Primite Dragon Nether Berzelius | `26462013` | [Scripts/c26462013.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c26462013.lua) | 1 |
-| Yubel - The Loving Defender Forever | `47172959` | [Scripts/c47172959.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c47172959.lua) | 1 |
-| Frightfur Sabre-Tooth | `80889750` | [Scripts/c80889750.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c80889750.lua) | 1 |
-| Bloom Prima the Melodious Choir | `24672164` | [Scripts/c24672164.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c24672164.lua) | 1 |
-| Chimeratech Megafleet Dragon | `87116928` | [Scripts/c87116928.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c87116928.lua) | 1 |
+| Flowering Etoile the Melodious Magnificat | `83793721` | [Scripts/c83793721.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c83793721.lua) | 1 |
+| Dracotail Arthalion | `33760966` | [Scripts/c33760966.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c33760966.lua) | 1 |
+| Dangerous Frightfur Nightmary | `58468105` | [Scripts/c58468105.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c58468105.lua) | 1 |
+| GMX - COMPREX | `75191028` | [Scripts/c75191028.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c75191028.lua) | 1 |
+| Wake Up Your Elemental HERO | `32828466` | [Scripts/c32828466.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c32828466.lua) | 1 |
+| Primite Dragon Nether Berzelius | `26462013` | [Scripts/c26462013.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c26462013.lua) | 1 |
+| Yubel - The Loving Defender Forever | `47172959` | [Scripts/c47172959.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c47172959.lua) | 1 |
+| Frightfur Sabre-Tooth | `80889750` | [Scripts/c80889750.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c80889750.lua) | 1 |
+| Bloom Prima the Melodious Choir | `24672164` | [Scripts/c24672164.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c24672164.lua) | 1 |
+| Chimeratech Megafleet Dragon | `87116928` | [Scripts/c87116928.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c87116928.lua) | 1 |
 
 ## Script Examples
 
 ### Flowering Etoile the Melodious Magnificat (`83793721`)
 
-Source: [Scripts/c83793721.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c83793721.lua)
+Source: [Scripts/c83793721.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c83793721.lua)
 
 ```lua
 	--fusion material
@@ -59,7 +59,7 @@ Source: [Scripts/c83793721.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/
 
 ### Dracotail Arthalion (`33760966`)
 
-Source: [Scripts/c33760966.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c33760966.lua)
+Source: [Scripts/c33760966.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c33760966.lua)
 
 ```lua
 function s.initial_effect(c)
@@ -71,7 +71,7 @@ function s.initial_effect(c)
 
 ### Dangerous Frightfur Nightmary (`58468105`)
 
-Source: [Scripts/c58468105.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c58468105.lua)
+Source: [Scripts/c58468105.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c58468105.lua)
 
 ```lua
 	--fusion material

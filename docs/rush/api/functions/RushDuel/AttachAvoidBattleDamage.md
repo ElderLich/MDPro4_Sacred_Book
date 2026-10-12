@@ -50,13 +50,13 @@ Generated from the local `Rush/Scripts/` folder and `rush_cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Rocket Warrior | `120307023` | [Rush/Scripts/c120307023.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120307023.lua) | 1 |
+| Rocket Warrior | `120307023` | [Rush/Scripts/c120307023.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120307023.lua) | 1 |
 
 ## Script Examples
 
 ### Rocket Warrior (`120307023`)
 
-Source: [Rush/Scripts/c120307023.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120307023.lua)
+Source: [Rush/Scripts/c120307023.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120307023.lua)
 
 ```lua
 		if c:IsFaceup() and c:IsRelateToEffect(e) then

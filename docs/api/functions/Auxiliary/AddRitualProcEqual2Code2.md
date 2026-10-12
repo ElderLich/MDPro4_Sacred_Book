@@ -35,13 +35,13 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| End of the World | `8198712` | [Scripts/c8198712.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c8198712.lua) | 1 |
+| End of the World | `8198712` | [Scripts/c8198712.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c8198712.lua) | 1 |
 
 ## Script Examples
 
 ### End of the World (`8198712`)
 
-Source: [Scripts/c8198712.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c8198712.lua)
+Source: [Scripts/c8198712.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c8198712.lua)
 
 ```lua
 --エンド・オブ・ザ・ワールド

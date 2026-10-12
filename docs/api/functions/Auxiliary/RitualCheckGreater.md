@@ -33,13 +33,13 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Emperor Tanuki's Critter Count | `20560620` | [Scripts/c20560620.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c20560620.lua) | 1 |
+| Emperor Tanuki's Critter Count | `20560620` | [Scripts/c20560620.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c20560620.lua) | 1 |
 
 ## Script Examples
 
 ### Emperor Tanuki's Critter Count (`20560620`)
 
-Source: [Scripts/c20560620.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c20560620.lua)
+Source: [Scripts/c20560620.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c20560620.lua)
 
 ```lua
 			return tc:IsHasEffect(EFFECT_EXTRA_RITUAL_MATERIAL,tc:GetControler()) and tc:IsLocation(LOCATION_EXTRA)

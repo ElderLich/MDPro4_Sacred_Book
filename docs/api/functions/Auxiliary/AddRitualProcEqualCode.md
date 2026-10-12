@@ -45,15 +45,15 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Dawn of the Herald | `27383110` | [Scripts/c27383110.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c27383110.lua) | 1 |
-| Luminous Dragon Ritual | `34834619` | [Scripts/c34834619.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c34834619.lua) | 1 |
-| Amorphous Persona | `23160024` | [Scripts/c23160024.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c23160024.lua) | 1 |
+| Dawn of the Herald | `27383110` | [Scripts/c27383110.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c27383110.lua) | 1 |
+| Luminous Dragon Ritual | `34834619` | [Scripts/c34834619.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c34834619.lua) | 1 |
+| Amorphous Persona | `23160024` | [Scripts/c23160024.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c23160024.lua) | 1 |
 
 ## Script Examples
 
 ### Dawn of the Herald (`27383110`)
 
-Source: [Scripts/c27383110.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c27383110.lua)
+Source: [Scripts/c27383110.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c27383110.lua)
 
 ```lua
 function c27383110.initial_effect(c)
@@ -65,7 +65,7 @@ function c27383110.initial_effect(c)
 
 ### Luminous Dragon Ritual (`34834619`)
 
-Source: [Scripts/c34834619.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c34834619.lua)
+Source: [Scripts/c34834619.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c34834619.lua)
 
 ```lua
 --光子竜降臨
@@ -77,7 +77,7 @@ function c34834619.initial_effect(c)
 
 ### Amorphous Persona (`23160024`)
 
-Source: [Scripts/c23160024.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c23160024.lua)
+Source: [Scripts/c23160024.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c23160024.lua)
 
 ```lua
 	c:RegisterEffect(e4)

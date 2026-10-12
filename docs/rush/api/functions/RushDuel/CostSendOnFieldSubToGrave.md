@@ -55,14 +55,14 @@ Generated from the local `Rush/Scripts/` folder and `rush_cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Rising HERO Reglam | `120304024` | [Rush/Scripts/c120304024.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120304024.lua) | 1 |
-| Ultimate Flag Beast Aim Eagle | `120193003` | [Rush/Scripts/c120193003.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120193003.lua) | 1 |
+| Rising HERO Reglam | `120304024` | [Rush/Scripts/c120304024.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120304024.lua) | 1 |
+| Ultimate Flag Beast Aim Eagle | `120193003` | [Rush/Scripts/c120193003.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120193003.lua) | 1 |
 
 ## Script Examples
 
 ### Rising HERO Reglam (`120304024`)
 
-Source: [Rush/Scripts/c120304024.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120304024.lua)
+Source: [Rush/Scripts/c120304024.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120304024.lua)
 
 ```lua
 		and RD.IsCanBeSpecialSummoned(c,e,tp,POS_FACEUP)
@@ -74,7 +74,7 @@ function cm.target(e,tp,eg,ep,ev,re,r,rp,chk)
 
 ### Ultimate Flag Beast Aim Eagle (`120193003`)
 
-Source: [Rush/Scripts/c120193003.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120193003.lua)
+Source: [Rush/Scripts/c120193003.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120193003.lua)
 
 ```lua
 	return Duel.IsExistingMatchingCard(cm.confilter,tp,0,LOCATION_MZONE,1,nil)

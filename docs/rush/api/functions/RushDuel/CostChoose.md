@@ -80,24 +80,24 @@ Generated from the local `Rush/Scripts/` folder and `rush_cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Super Soldier Radiance | `120293042` | [Rush/Scripts/c120293042.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120293042.lua) | 1 |
-| Quick Attack Knight | `120293037` | [Rush/Scripts/c120293037.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120293037.lua) | 1 |
-| Familiar of the Earth Spiritualist | `120301013` | [Rush/Scripts/c120301013.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120301013.lua) | 1 |
-| Familiar of the Water Spiritualist | `120301014` | [Rush/Scripts/c120301014.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120301014.lua) | 1 |
-| Familiar of the Fire Spiritualist | `120301015` | [Rush/Scripts/c120301015.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120301015.lua) | 1 |
-| Familiar of the Wind Spiritualist | `120301016` | [Rush/Scripts/c120301016.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120301016.lua) | 1 |
-| King's Greed | `120254083` | [Rush/Scripts/c120254083.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120254083.lua) | 1 |
-| Ace Sword Slash | `120294052` | [Rush/Scripts/c120294052.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120294052.lua) | 1 |
-| Strange Attractor | `120260017` | [Rush/Scripts/c120260017.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120260017.lua) | 1 |
-| Voidalfr Voyastrider | `120300002` | [Rush/Scripts/c120300002.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120300002.lua) | 1 |
-| Stratohammer Mjolnir | `120287071` | [Rush/Scripts/c120287071.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120287071.lua) | 1 |
-| Voidvelg Stork | `120300001` | [Rush/Scripts/c120300001.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120300001.lua) | 1 |
+| Super Soldier Radiance | `120293042` | [Rush/Scripts/c120293042.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120293042.lua) | 1 |
+| Quick Attack Knight | `120293037` | [Rush/Scripts/c120293037.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120293037.lua) | 1 |
+| Familiar of the Earth Spiritualist | `120301013` | [Rush/Scripts/c120301013.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120301013.lua) | 1 |
+| Familiar of the Water Spiritualist | `120301014` | [Rush/Scripts/c120301014.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120301014.lua) | 1 |
+| Familiar of the Fire Spiritualist | `120301015` | [Rush/Scripts/c120301015.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120301015.lua) | 1 |
+| Familiar of the Wind Spiritualist | `120301016` | [Rush/Scripts/c120301016.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120301016.lua) | 1 |
+| King's Greed | `120254083` | [Rush/Scripts/c120254083.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120254083.lua) | 1 |
+| Ace Sword Slash | `120294052` | [Rush/Scripts/c120294052.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120294052.lua) | 1 |
+| Strange Attractor | `120260017` | [Rush/Scripts/c120260017.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120260017.lua) | 1 |
+| Voidalfr Voyastrider | `120300002` | [Rush/Scripts/c120300002.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120300002.lua) | 1 |
+| Stratohammer Mjolnir | `120287071` | [Rush/Scripts/c120287071.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120287071.lua) | 1 |
+| Voidvelg Stork | `120300001` | [Rush/Scripts/c120300001.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120300001.lua) | 1 |
 
 ## Script Examples
 
 ### Super Soldier Radiance (`120293042`)
 
-Source: [Rush/Scripts/c120293042.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120293042.lua)
+Source: [Rush/Scripts/c120293042.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120293042.lua)
 
 ```lua
 cm.cost1=RD.CostSendHandToDeckBottom(cm.costfilter1,1,1,false)
@@ -109,7 +109,7 @@ function cm.target(e,tp,eg,ep,ev,re,r,rp,chk)
 
 ### Quick Attack Knight (`120293037`)
 
-Source: [Rush/Scripts/c120293037.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120293037.lua)
+Source: [Rush/Scripts/c120293037.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120293037.lua)
 
 ```lua
 cm.cost1=RD.CostSendHandToGrave(cm.costfilter1,1,1)
@@ -121,7 +121,7 @@ function cm.target(e,tp,eg,ep,ev,re,r,rp,chk)
 
 ### Familiar of the Earth Spiritualist (`120301013`)
 
-Source: [Rush/Scripts/c120301013.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120301013.lua)
+Source: [Rush/Scripts/c120301013.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120301013.lua)
 
 ```lua
 cm.cost1=RD.CostSendSelfToGrave()

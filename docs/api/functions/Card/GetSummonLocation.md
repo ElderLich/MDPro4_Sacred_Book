@@ -31,14 +31,14 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Ursarctic Septentrion | `53087962` | [Scripts/c53087962.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c53087962.lua) | 1 |
-| Psychic Eraser Laser | `9322133` | [Scripts/c9322133.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c9322133.lua) | 1 |
+| Ursarctic Septentrion | `53087962` | [Scripts/c53087962.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c53087962.lua) | 1 |
+| Psychic Eraser Laser | `9322133` | [Scripts/c9322133.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c9322133.lua) | 1 |
 
 ## Script Examples
 
 ### Ursarctic Septentrion (`53087962`)
 
-Source: [Scripts/c53087962.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c53087962.lua)
+Source: [Scripts/c53087962.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c53087962.lua)
 
 ```lua
 end
@@ -50,7 +50,7 @@ function c53087962.thcon(e,tp,eg,ep,ev,re,r,rp)
 
 ### Psychic Eraser Laser (`9322133`)
 
-Source: [Scripts/c9322133.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c9322133.lua)
+Source: [Scripts/c9322133.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c9322133.lua)
 
 ```lua
 end

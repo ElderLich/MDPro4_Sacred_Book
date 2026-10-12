@@ -72,15 +72,15 @@ Generated from the local `Rush/Scripts/` folder and `rush_cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Makiu, the Magical Mist | `120205058` | [Rush/Scripts/c120205058.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120205058.lua) | 1 |
-| Thunderbeetle Gift | `120150033` | [Rush/Scripts/c120150033.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120150033.lua) | 1 |
-| Nightmare Knock | `120217079` | [Rush/Scripts/c120217079.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120217079.lua) | 1 |
+| Makiu, the Magical Mist | `120205058` | [Rush/Scripts/c120205058.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120205058.lua) | 1 |
+| Thunderbeetle Gift | `120150033` | [Rush/Scripts/c120150033.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120150033.lua) | 1 |
+| Nightmare Knock | `120217079` | [Rush/Scripts/c120217079.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120217079.lua) | 1 |
 
 ## Script Examples
 
 ### Makiu, the Magical Mist (`120205058`)
 
-Source: [Rush/Scripts/c120205058.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120205058.lua)
+Source: [Rush/Scripts/c120205058.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120205058.lua)
 
 ```lua
 	end)
@@ -92,7 +92,7 @@ end
 
 ### Thunderbeetle Gift (`120150033`)
 
-Source: [Rush/Scripts/c120150033.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120150033.lua)
+Source: [Rush/Scripts/c120150033.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120150033.lua)
 
 ```lua
 	RD.Damage(nil,Duel.GetMatchingGroupCount(cm.filter,tp,LOCATION_MZONE,0,nil)*500)
@@ -104,7 +104,7 @@ end
 
 ### Nightmare Knock (`120217079`)
 
-Source: [Rush/Scripts/c120217079.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120217079.lua)
+Source: [Rush/Scripts/c120217079.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120217079.lua)
 
 ```lua
 	end)

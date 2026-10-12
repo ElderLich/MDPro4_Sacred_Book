@@ -52,20 +52,20 @@ Generated from the local `Rush/Scripts/` folder and `rush_cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Fusionic Defense | `120257064` | [Rush/Scripts/c120257064.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120257064.lua) | 1 |
-| Skysavior Defense | `120301054` | [Rush/Scripts/c120301054.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120301054.lua) | 1 |
-| Supreme Dog Ropero | `120239022` | [Rush/Scripts/c120239022.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120239022.lua) | 1 |
-| Destined Doom of the Defiant Souls | `120298016` | [Rush/Scripts/c120298016.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120298016.lua) | 1 |
-| Magic Fire Guard | `120217023` | [Rush/Scripts/c120217023.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120217023.lua) | 1 |
-| Rolled Sticky Save | `120151046` | [Rush/Scripts/c120151046.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120151046.lua) | 1 |
-| Transam Lightning | `120235056` | [Rush/Scripts/c120235056.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120235056.lua) | 1 |
-| Spectral Swords of the Everloyal Guard | `120196047` | [Rush/Scripts/c120196047.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120196047.lua) | 1 |
+| Fusionic Defense | `120257064` | [Rush/Scripts/c120257064.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120257064.lua) | 1 |
+| Skysavior Defense | `120301054` | [Rush/Scripts/c120301054.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120301054.lua) | 1 |
+| Supreme Dog Ropero | `120239022` | [Rush/Scripts/c120239022.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120239022.lua) | 1 |
+| Destined Doom of the Defiant Souls | `120298016` | [Rush/Scripts/c120298016.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120298016.lua) | 1 |
+| Magic Fire Guard | `120217023` | [Rush/Scripts/c120217023.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120217023.lua) | 1 |
+| Rolled Sticky Save | `120151046` | [Rush/Scripts/c120151046.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120151046.lua) | 1 |
+| Transam Lightning | `120235056` | [Rush/Scripts/c120235056.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120235056.lua) | 1 |
+| Spectral Swords of the Everloyal Guard | `120196047` | [Rush/Scripts/c120196047.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120196047.lua) | 1 |
 
 ## Script Examples
 
 ### Fusionic Defense (`120257064`)
 
-Source: [Rush/Scripts/c120257064.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120257064.lua)
+Source: [Rush/Scripts/c120257064.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120257064.lua)
 
 ```lua
 end
@@ -77,7 +77,7 @@ function cm.condition(e,tp,eg,ep,ev,re,r,rp)
 
 ### Skysavior Defense (`120301054`)
 
-Source: [Rush/Scripts/c120301054.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120301054.lua)
+Source: [Rush/Scripts/c120301054.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120301054.lua)
 
 ```lua
 function cm.filter(c)
@@ -89,7 +89,7 @@ function cm.setfilter(c)
 
 ### Supreme Dog Ropero (`120239022`)
 
-Source: [Rush/Scripts/c120239022.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120239022.lua)
+Source: [Rush/Scripts/c120239022.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120239022.lua)
 
 ```lua
 end

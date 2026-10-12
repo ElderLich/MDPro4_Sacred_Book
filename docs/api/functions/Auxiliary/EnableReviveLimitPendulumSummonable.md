@@ -35,14 +35,14 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| [Odd-Eyes Revolution Dragon](/examples/cards/16306932) | `16306932` | [Scripts/c16306932.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c16306932.lua) | 1 |
-| Odd-Eyes Pendulumgraph Dragon | `66425726` | [Scripts/c66425726.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c66425726.lua) | 1 |
+| [Odd-Eyes Revolution Dragon](/examples/cards/16306932) | `16306932` | [Scripts/c16306932.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c16306932.lua) | 1 |
+| Odd-Eyes Pendulumgraph Dragon | `66425726` | [Scripts/c66425726.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c66425726.lua) | 1 |
 
 ## Script Examples
 
 ### Odd-Eyes Revolution Dragon (`16306932`)
 
-Source: [Scripts/c16306932.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c16306932.lua)
+Source: [Scripts/c16306932.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c16306932.lua)
 
 ```lua
 	aux.EnablePendulumAttribute(c)
@@ -54,7 +54,7 @@ Source: [Scripts/c16306932.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/
 
 ### Odd-Eyes Pendulumgraph Dragon (`66425726`)
 
-Source: [Scripts/c66425726.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c66425726.lua)
+Source: [Scripts/c66425726.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c66425726.lua)
 
 ```lua
 	aux.EnablePendulumAttribute(c)

@@ -1,7 +1,7 @@
 # Gemini Monsters
 
 Gemini Monsters are written with the official word "Gemini", but the local
-MDPro3/YGOPro constants and helpers still use the older "Dual" names. That is
+MDPro4/YGOPro constants and helpers still use the older "Dual" names. That is
 why scripts check `TYPE_DUAL`, register `EFFECT_DUAL_SUMMONABLE`, and test
 `SUMMON_TYPE_DUAL`.
 

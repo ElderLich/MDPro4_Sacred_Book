@@ -53,25 +53,25 @@ Generated from the local `Rush/Scripts/` folder and `rush_cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Voidalfr Antromeda | `120300005` | [Rush/Scripts/c120300005.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120300005.lua) | 1 |
-| Spark Voltegg | `120246006` | [Rush/Scripts/c120246006.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120246006.lua) | 1 |
-| Civil Twirider | `120304004` | [Rush/Scripts/c120304004.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120304004.lua) | 1 |
-| Bluegrass Stealer | `120228022` | [Rush/Scripts/c120228022.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120228022.lua) | 1 |
-| Excutie Power Up! | `120208052` | [Rush/Scripts/c120208052.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120208052.lua) | 1 |
-| Double Twin Dragon | `120231051` | [Rush/Scripts/c120231051.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120231051.lua) | 1 |
-| Royal Rebel's Guardian | `120254078` | [Rush/Scripts/c120254078.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120254078.lua) | 1 |
-| Delirium Teega | `120300025` | [Rush/Scripts/c120300025.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120300025.lua) | 1 |
-| Voidvelg Globule | `120227015` | [Rush/Scripts/c120227015.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120227015.lua) | 1 |
-| Dododo Second | `120199025` | [Rush/Scripts/c120199025.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120199025.lua) | 1 |
-| Ultimate Flag Beast Surge Bicorn | `120181011` | [Rush/Scripts/c120181011.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120181011.lua) | 1 |
-| Blasting Bird | `120170033` | [Rush/Scripts/c120170033.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120170033.lua) | 1 |
-| Card 120135002 | `120135002` | [Rush/Scripts/c120135002.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120135002.lua) | 1 |
+| Voidalfr Antromeda | `120300005` | [Rush/Scripts/c120300005.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120300005.lua) | 1 |
+| Spark Voltegg | `120246006` | [Rush/Scripts/c120246006.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120246006.lua) | 1 |
+| Civil Twirider | `120304004` | [Rush/Scripts/c120304004.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120304004.lua) | 1 |
+| Bluegrass Stealer | `120228022` | [Rush/Scripts/c120228022.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120228022.lua) | 1 |
+| Excutie Power Up! | `120208052` | [Rush/Scripts/c120208052.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120208052.lua) | 1 |
+| Double Twin Dragon | `120231051` | [Rush/Scripts/c120231051.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120231051.lua) | 1 |
+| Royal Rebel's Guardian | `120254078` | [Rush/Scripts/c120254078.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120254078.lua) | 1 |
+| Delirium Teega | `120300025` | [Rush/Scripts/c120300025.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120300025.lua) | 1 |
+| Voidvelg Globule | `120227015` | [Rush/Scripts/c120227015.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120227015.lua) | 1 |
+| Dododo Second | `120199025` | [Rush/Scripts/c120199025.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120199025.lua) | 1 |
+| Ultimate Flag Beast Surge Bicorn | `120181011` | [Rush/Scripts/c120181011.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120181011.lua) | 1 |
+| Blasting Bird | `120170033` | [Rush/Scripts/c120170033.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120170033.lua) | 1 |
+| Card 120135002 | `120135002` | [Rush/Scripts/c120135002.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120135002.lua) | 1 |
 
 ## Script Examples
 
 ### Voidalfr Antromeda (`120300005`)
 
-Source: [Rush/Scripts/c120300005.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120300005.lua)
+Source: [Rush/Scripts/c120300005.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120300005.lua)
 
 ```lua
 end
@@ -83,7 +83,7 @@ cm.cost=RD.CostSendDeckTopToGrave(1)
 
 ### Spark Voltegg (`120246006`)
 
-Source: [Rush/Scripts/c120246006.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120246006.lua)
+Source: [Rush/Scripts/c120246006.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120246006.lua)
 
 ```lua
 end
@@ -95,7 +95,7 @@ cm.cost=RD.CostSendGraveToDeck(cm.costfilter,1,1)
 
 ### Civil Twirider (`120304004`)
 
-Source: [Rush/Scripts/c120304004.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120304004.lua)
+Source: [Rush/Scripts/c120304004.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120304004.lua)
 
 ```lua
 end

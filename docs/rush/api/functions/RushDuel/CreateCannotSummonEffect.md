@@ -62,22 +62,22 @@ Generated from the local `Rush/Scripts/` folder and `rush_cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| [Devil Foolish](/examples/rush-cards/120244026) | `120244026` | [Rush/Scripts/c120244026.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120244026.lua) | 1 |
-| Eria the Water Spiritualist | `120301010` | [Rush/Scripts/c120301010.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120301010.lua) | 1 |
-| Super Electromagnetic Maximum | `120239024` | [Rush/Scripts/c120239024.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120239024.lua) | 1 |
-| Maginical Fantastick | `120283044` | [Rush/Scripts/c120283044.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120283044.lua) | 1 |
-| Destructor Soldier Haken | `120264012` | [Rush/Scripts/c120264012.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120264012.lua) | 1 |
-| Koi of Winter Wonder | `120246047` | [Rush/Scripts/c120246047.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120246047.lua) | 1 |
-| Hybridrive Screwdriver | `120261006` | [Rush/Scripts/c120261006.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120261006.lua) | 1 |
-| Thunderbeetle Storm | `120150034` | [Rush/Scripts/c120150034.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120150034.lua) | 1 |
-| Engine Reviver | `120235027` | [Rush/Scripts/c120235027.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120235027.lua) | 1 |
-| Tiger Roll the Sushi Fairy | `120151041` | [Rush/Scripts/c120151041.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120151041.lua) | 1 |
+| [Devil Foolish](/examples/rush-cards/120244026) | `120244026` | [Rush/Scripts/c120244026.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120244026.lua) | 1 |
+| Eria the Water Spiritualist | `120301010` | [Rush/Scripts/c120301010.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120301010.lua) | 1 |
+| Super Electromagnetic Maximum | `120239024` | [Rush/Scripts/c120239024.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120239024.lua) | 1 |
+| Maginical Fantastick | `120283044` | [Rush/Scripts/c120283044.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120283044.lua) | 1 |
+| Destructor Soldier Haken | `120264012` | [Rush/Scripts/c120264012.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120264012.lua) | 1 |
+| Koi of Winter Wonder | `120246047` | [Rush/Scripts/c120246047.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120246047.lua) | 1 |
+| Hybridrive Screwdriver | `120261006` | [Rush/Scripts/c120261006.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120261006.lua) | 1 |
+| Thunderbeetle Storm | `120150034` | [Rush/Scripts/c120150034.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120150034.lua) | 1 |
+| Engine Reviver | `120235027` | [Rush/Scripts/c120235027.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120235027.lua) | 1 |
+| Tiger Roll the Sushi Fairy | `120151041` | [Rush/Scripts/c120151041.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120151041.lua) | 1 |
 
 ## Script Examples
 
 ### Devil Foolish (`120244026`)
 
-Source: [Rush/Scripts/c120244026.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120244026.lua)
+Source: [Rush/Scripts/c120244026.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120244026.lua)
 
 ```lua
 	RD.SelectAndSpecialSummon(aux.NecroValleyFilter(cm.spfilter),tp,LOCATION_GRAVE,0,ct,ct,nil,e,POS_FACEDOWN_DEFENSE)
@@ -89,7 +89,7 @@ Source: [Rush/Scripts/c120244026.lua](https://github.com/ElderLich/MDPro3_Sacred
 
 ### Eria the Water Spiritualist (`120301010`)
 
-Source: [Rush/Scripts/c120301010.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120301010.lua)
+Source: [Rush/Scripts/c120301010.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120301010.lua)
 
 ```lua
 			return RD.IsSameOriginalCode(c,tc)
@@ -101,7 +101,7 @@ Source: [Rush/Scripts/c120301010.lua](https://github.com/ElderLich/MDPro3_Sacred
 
 ### Super Electromagnetic Maximum (`120239024`)
 
-Source: [Rush/Scripts/c120239024.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120239024.lua)
+Source: [Rush/Scripts/c120239024.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120239024.lua)
 
 ```lua
 	RD.SelectAndDoAction(HINTMSG_ATOHAND,aux.NecroValleyFilter(cm.thfilter),tp,LOCATION_GRAVE,0,1,2,nil,function(g)

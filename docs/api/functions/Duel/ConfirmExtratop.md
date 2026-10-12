@@ -28,13 +28,13 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Cynet Storm | `42461852` | [Scripts/c42461852.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c42461852.lua) | 1 |
+| Cynet Storm | `42461852` | [Scripts/c42461852.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c42461852.lua) | 1 |
 
 ## Script Examples
 
 ### Cynet Storm (`42461852`)
 
-Source: [Scripts/c42461852.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c42461852.lua)
+Source: [Scripts/c42461852.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c42461852.lua)
 
 ```lua
 		or Duel.GetMatchingGroupCount(Card.IsFacedown,tp,LOCATION_EXTRA,0,nil)==0 then return end

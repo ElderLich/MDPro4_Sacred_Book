@@ -66,14 +66,14 @@ Generated from the local `Rush/Scripts/` folder and `rush_cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Card Trooper | `120109044` | [Rush/Scripts/c120109044.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120109044.lua) | 1 |
-| Vi-FRND | `120246059` | [Rush/Scripts/c120246059.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120246059.lua) | 1 |
+| Card Trooper | `120109044` | [Rush/Scripts/c120109044.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120109044.lua) | 1 |
+| Vi-FRND | `120246059` | [Rush/Scripts/c120246059.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120246059.lua) | 1 |
 
 ## Script Examples
 
 ### Card Trooper (`120109044`)
 
-Source: [Rush/Scripts/c120109044.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120109044.lua)
+Source: [Rush/Scripts/c120109044.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120109044.lua)
 
 ```lua
 	return Duel.GetFieldGroupCount(tp,LOCATION_DECK,0)>9
@@ -85,7 +85,7 @@ function cm.operation(e,tp,eg,ep,ev,re,r,rp)
 
 ### Vi-FRND (`120246059`)
 
-Source: [Rush/Scripts/c120246059.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120246059.lua)
+Source: [Rush/Scripts/c120246059.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120246059.lua)
 
 ```lua
 	return c:IsCode(list[1],list[2],list[3],list[4],list[5])

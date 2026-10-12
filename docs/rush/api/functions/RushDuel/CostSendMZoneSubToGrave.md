@@ -55,20 +55,20 @@ Generated from the local `Rush/Scripts/` folder and `rush_cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| [Necromaid Timer](/examples/rush-cards/120294014) | `120294014` | [Rush/Scripts/c120294014.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120294014.lua) | 1 |
-| Soul Drake | `120252007` | [Rush/Scripts/c120252007.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120252007.lua) | 1 |
-| Celeb Rose Warlock | `120254046` | [Rush/Scripts/c120254046.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120254046.lua) | 1 |
-| Dragonic Geist | `120261029` | [Rush/Scripts/c120261029.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120261029.lua) | 1 |
-| Darkness Ri-chair-al | `120151027` | [Rush/Scripts/c120151027.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120151027.lua) | 1 |
-| Black Luster Jersitual | `120228046` | [Rush/Scripts/c120228046.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120228046.lua) | 1 |
-| Medea's Secret Remedy | `120285061` | [Rush/Scripts/c120285061.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120285061.lua) | 1 |
-| Shadow Flower Wish | `120205048` | [Rush/Scripts/c120205048.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120205048.lua) | 1 |
+| [Necromaid Timer](/examples/rush-cards/120294014) | `120294014` | [Rush/Scripts/c120294014.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120294014.lua) | 1 |
+| Soul Drake | `120252007` | [Rush/Scripts/c120252007.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120252007.lua) | 1 |
+| Celeb Rose Warlock | `120254046` | [Rush/Scripts/c120254046.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120254046.lua) | 1 |
+| Dragonic Geist | `120261029` | [Rush/Scripts/c120261029.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120261029.lua) | 1 |
+| Darkness Ri-chair-al | `120151027` | [Rush/Scripts/c120151027.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120151027.lua) | 1 |
+| Black Luster Jersitual | `120228046` | [Rush/Scripts/c120228046.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120228046.lua) | 1 |
+| Medea's Secret Remedy | `120285061` | [Rush/Scripts/c120285061.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120285061.lua) | 1 |
+| Shadow Flower Wish | `120205048` | [Rush/Scripts/c120205048.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120205048.lua) | 1 |
 
 ## Script Examples
 
 ### Necromaid Timer (`120294014`)
 
-Source: [Rush/Scripts/c120294014.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120294014.lua)
+Source: [Rush/Scripts/c120294014.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120294014.lua)
 
 ```lua
 	return Duel.GetMZoneCount(tp,g)>0
@@ -80,7 +80,7 @@ function cm.target(e,tp,eg,ep,ev,re,r,rp,chk)
 
 ### Soul Drake (`120252007`)
 
-Source: [Rush/Scripts/c120252007.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120252007.lua)
+Source: [Rush/Scripts/c120252007.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120252007.lua)
 
 ```lua
 		and RD.IsCanBeSpecialSummoned(c,e,tp,POS_FACEUP)
@@ -92,7 +92,7 @@ function cm.target(e,tp,eg,ep,ev,re,r,rp,chk)
 
 ### Celeb Rose Warlock (`120254046`)
 
-Source: [Rush/Scripts/c120254046.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120254046.lua)
+Source: [Rush/Scripts/c120254046.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120254046.lua)
 
 ```lua
 	return c:IsCode(list[2]) and RD.IsCanBeSpecialSummoned(c,e,tp,POS_FACEUP)

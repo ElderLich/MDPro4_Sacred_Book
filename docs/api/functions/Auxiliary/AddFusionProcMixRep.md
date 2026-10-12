@@ -40,13 +40,13 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Elemental HERO Divine Neos | `31111109` | [Scripts/c31111109.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c31111109.lua) | 1 |
+| Elemental HERO Divine Neos | `31111109` | [Scripts/c31111109.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c31111109.lua) | 1 |
 
 ## Script Examples
 
 ### Elemental HERO Divine Neos (`31111109`)
 
-Source: [Scripts/c31111109.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c31111109.lua)
+Source: [Scripts/c31111109.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c31111109.lua)
 
 ```lua
 	--fusion material

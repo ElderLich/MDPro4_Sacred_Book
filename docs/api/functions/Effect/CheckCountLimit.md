@@ -57,13 +57,13 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Xyz Block | `44487250` | [Scripts/c44487250.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c44487250.lua) | 1 |
+| Xyz Block | `44487250` | [Scripts/c44487250.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c44487250.lua) | 1 |
 
 ## Script Examples
 
 ### Xyz Block (`44487250`)
 
-Source: [Scripts/c44487250.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c44487250.lua)
+Source: [Scripts/c44487250.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c44487250.lua)
 
 ```lua
 			for _,te in ipairs(fromhand_effects) do

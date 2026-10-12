@@ -54,35 +54,35 @@ Generated from the local `Rush/Scripts/` folder and `rush_cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Advance Form | `120261032` | [Rush/Scripts/c120261032.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120261032.lua) | 1 |
-| Sitarloot | `120283047` | [Rush/Scripts/c120283047.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120283047.lua) | 1 |
-| Spell Extraction | `120246085` | [Rush/Scripts/c120246085.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120246085.lua) | 1 |
-| Guardian Eatos | `120290065` | [Rush/Scripts/c120290065.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120290065.lua) | 1 |
-| Abysskite Ultimail | `120239048` | [Rush/Scripts/c120239048.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120239048.lua) | 1 |
-| Cyber Processor | `120244021` | [Rush/Scripts/c120244021.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120244021.lua) | 1 |
-| Ancient Gear Supplier | `120271010` | [Rush/Scripts/c120271010.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120271010.lua) | 1 |
-| Barrel-Up-Magic Liner's Force | `120305039` | [Rush/Scripts/c120305039.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120305039.lua) | 1 |
-| Coredrasil the Spirit Tree Bunrei | `120306018` | [Rush/Scripts/c120306018.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120306018.lua) | 1 |
-| Ancient Gear Medic | `120271009` | [Rush/Scripts/c120271009.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120271009.lua) | 1 |
-| Sacred War of Arthenée | `120306058` | [Rush/Scripts/c120306058.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120306058.lua) | 1 |
-| Benevolent Dragon | `120294011` | [Rush/Scripts/c120294011.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120294011.lua) | 1 |
-| Lostream Gift | `120309042` | [Rush/Scripts/c120309042.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120309042.lua) | 1 |
-| Star Cat Straynya | `120235036` | [Rush/Scripts/c120235036.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120235036.lua) | 1 |
-| Celeb Rose Magician | `120244012` | [Rush/Scripts/c120244012.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120244012.lua) | 1 |
-| Levia-Dragon - Daedalus | `120199000` | [Rush/Scripts/c120199000.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120199000.lua) | 1 |
-| Bendorbreak the Conqueror | `120145018` | [Rush/Scripts/c120145018.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120145018.lua) | 1 |
-| Stratohammer Mjolnir | `120287071` | [Rush/Scripts/c120287071.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120287071.lua) | 1 |
-| Dynamic Dino Dynatyranno | `120274038` | [Rush/Scripts/c120274038.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120274038.lua) | 1 |
-| Gray Storm Reverie | `120229001` | [Rush/Scripts/c120229001.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120229001.lua) | 1 |
-| Space Yggdrago | `120260009` | [Rush/Scripts/c120260009.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120260009.lua) | 1 |
-| Don A. Corn of the Verdant Vast | `120244023` | [Rush/Scripts/c120244023.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120244023.lua) | 1 |
-| Rampaging Machine Headhorn | `120304013` | [Rush/Scripts/c120304013.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120304013.lua) | 1 |
+| Advance Form | `120261032` | [Rush/Scripts/c120261032.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120261032.lua) | 1 |
+| Sitarloot | `120283047` | [Rush/Scripts/c120283047.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120283047.lua) | 1 |
+| Spell Extraction | `120246085` | [Rush/Scripts/c120246085.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120246085.lua) | 1 |
+| Guardian Eatos | `120290065` | [Rush/Scripts/c120290065.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120290065.lua) | 1 |
+| Abysskite Ultimail | `120239048` | [Rush/Scripts/c120239048.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120239048.lua) | 1 |
+| Cyber Processor | `120244021` | [Rush/Scripts/c120244021.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120244021.lua) | 1 |
+| Ancient Gear Supplier | `120271010` | [Rush/Scripts/c120271010.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120271010.lua) | 1 |
+| Barrel-Up-Magic Liner's Force | `120305039` | [Rush/Scripts/c120305039.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120305039.lua) | 1 |
+| Coredrasil the Spirit Tree Bunrei | `120306018` | [Rush/Scripts/c120306018.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120306018.lua) | 1 |
+| Ancient Gear Medic | `120271009` | [Rush/Scripts/c120271009.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120271009.lua) | 1 |
+| Sacred War of Arthenée | `120306058` | [Rush/Scripts/c120306058.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120306058.lua) | 1 |
+| Benevolent Dragon | `120294011` | [Rush/Scripts/c120294011.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120294011.lua) | 1 |
+| Lostream Gift | `120309042` | [Rush/Scripts/c120309042.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120309042.lua) | 1 |
+| Star Cat Straynya | `120235036` | [Rush/Scripts/c120235036.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120235036.lua) | 1 |
+| Celeb Rose Magician | `120244012` | [Rush/Scripts/c120244012.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120244012.lua) | 1 |
+| Levia-Dragon - Daedalus | `120199000` | [Rush/Scripts/c120199000.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120199000.lua) | 1 |
+| Bendorbreak the Conqueror | `120145018` | [Rush/Scripts/c120145018.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120145018.lua) | 1 |
+| Stratohammer Mjolnir | `120287071` | [Rush/Scripts/c120287071.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120287071.lua) | 1 |
+| Dynamic Dino Dynatyranno | `120274038` | [Rush/Scripts/c120274038.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120274038.lua) | 1 |
+| Gray Storm Reverie | `120229001` | [Rush/Scripts/c120229001.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120229001.lua) | 1 |
+| Space Yggdrago | `120260009` | [Rush/Scripts/c120260009.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120260009.lua) | 1 |
+| Don A. Corn of the Verdant Vast | `120244023` | [Rush/Scripts/c120244023.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120244023.lua) | 1 |
+| Rampaging Machine Headhorn | `120304013` | [Rush/Scripts/c120304013.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120304013.lua) | 1 |
 
 ## Script Examples
 
 ### Advance Form (`120261032`)
 
-Source: [Rush/Scripts/c120261032.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120261032.lua)
+Source: [Rush/Scripts/c120261032.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120261032.lua)
 
 ```lua
 	return math.min(ct,2)
@@ -94,7 +94,7 @@ function cm.target(e,tp,eg,ep,ev,re,r,rp,chk)
 
 ### Sitarloot (`120283047`)
 
-Source: [Rush/Scripts/c120283047.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120283047.lua)
+Source: [Rush/Scripts/c120283047.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120283047.lua)
 
 ```lua
 	return RD.IsSummonTurn(c) and Duel.IsExistingMatchingCard(cm.confilter,tp,LOCATION_MZONE,0,1,nil)
@@ -106,7 +106,7 @@ function cm.target(e,tp,eg,ep,ev,re,r,rp,chk)
 
 ### Spell Extraction (`120246085`)
 
-Source: [Rush/Scripts/c120246085.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120246085.lua)
+Source: [Rush/Scripts/c120246085.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120246085.lua)
 
 ```lua
 	return c:IsAttribute(ATTRIBUTE_DARK) and c:IsRace(RACE_SPELLCASTER) and c:IsAttack(2000,2500) and not c:IsPublic()

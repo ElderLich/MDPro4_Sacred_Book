@@ -38,14 +38,14 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| The Deep Grave | `17688543` | [Scripts/c17688543.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c17688543.lua) | 3 |
-| Reanimation Wave | `60312997` | [Scripts/c60312997.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c60312997.lua) | 1 |
+| The Deep Grave | `17688543` | [Scripts/c17688543.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c17688543.lua) | 3 |
+| Reanimation Wave | `60312997` | [Scripts/c60312997.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c60312997.lua) | 1 |
 
 ## Script Examples
 
 ### The Deep Grave (`17688543`)
 
-Source: [Scripts/c17688543.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c17688543.lua)
+Source: [Scripts/c17688543.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c17688543.lua)
 
 ```lua
 end
@@ -57,7 +57,7 @@ function c17688543.target(e,tp,eg,ep,ev,re,r,rp,chk,chkc)
 
 ### Reanimation Wave (`60312997`)
 
-Source: [Scripts/c60312997.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c60312997.lua)
+Source: [Scripts/c60312997.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c60312997.lua)
 
 ```lua
 end

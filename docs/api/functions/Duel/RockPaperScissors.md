@@ -31,13 +31,13 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Transmission Gear | `58297729` | [Scripts/c58297729.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c58297729.lua) | 1 |
+| Transmission Gear | `58297729` | [Scripts/c58297729.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c58297729.lua) | 1 |
 
 ## Script Examples
 
 ### Transmission Gear (`58297729`)
 
-Source: [Scripts/c58297729.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c58297729.lua)
+Source: [Scripts/c58297729.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c58297729.lua)
 
 ```lua
 	if not a:IsRelateToBattle() or not d:IsRelateToBattle() then return end

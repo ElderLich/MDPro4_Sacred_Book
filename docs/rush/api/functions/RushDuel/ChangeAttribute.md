@@ -49,21 +49,21 @@ Generated from the local `Rush/Scripts/` folder and `rush_cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| [Light of Bewitchment](/examples/rush-cards/120301074) | `120301074` | [Rush/Scripts/c120301074.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120301074.lua) | 1 |
-| Familiar of the Earth Spiritualist | `120301013` | [Rush/Scripts/c120301013.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120301013.lua) | 1 |
-| Familiar of the Water Spiritualist | `120301014` | [Rush/Scripts/c120301014.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120301014.lua) | 1 |
-| Familiar of the Fire Spiritualist | `120301015` | [Rush/Scripts/c120301015.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120301015.lua) | 1 |
-| Familiar of the Wind Spiritualist | `120301016` | [Rush/Scripts/c120301016.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120301016.lua) | 1 |
-| Thunderbold, the Echoing Thunder | `120246002` | [Rush/Scripts/c120246002.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120246002.lua) | 1 |
-| Burst Ray Blaster | `120222022` | [Rush/Scripts/c120222022.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120222022.lua) | 1 |
-| Attribute Shift Bomb | `120130043` | [Rush/Scripts/c120130043.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120130043.lua) | 1 |
-| Luminous Parrot | `120145036` | [Rush/Scripts/c120145036.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120145036.lua) | 1 |
+| [Light of Bewitchment](/examples/rush-cards/120301074) | `120301074` | [Rush/Scripts/c120301074.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120301074.lua) | 1 |
+| Familiar of the Earth Spiritualist | `120301013` | [Rush/Scripts/c120301013.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120301013.lua) | 1 |
+| Familiar of the Water Spiritualist | `120301014` | [Rush/Scripts/c120301014.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120301014.lua) | 1 |
+| Familiar of the Fire Spiritualist | `120301015` | [Rush/Scripts/c120301015.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120301015.lua) | 1 |
+| Familiar of the Wind Spiritualist | `120301016` | [Rush/Scripts/c120301016.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120301016.lua) | 1 |
+| Thunderbold, the Echoing Thunder | `120246002` | [Rush/Scripts/c120246002.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120246002.lua) | 1 |
+| Burst Ray Blaster | `120222022` | [Rush/Scripts/c120222022.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120222022.lua) | 1 |
+| Attribute Shift Bomb | `120130043` | [Rush/Scripts/c120130043.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120130043.lua) | 1 |
+| Luminous Parrot | `120145036` | [Rush/Scripts/c120145036.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120145036.lua) | 1 |
 
 ## Script Examples
 
 ### Light of Bewitchment (`120301074`)
 
-Source: [Rush/Scripts/c120301074.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120301074.lua)
+Source: [Rush/Scripts/c120301074.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120301074.lua)
 
 ```lua
 	local filter=RD.Filter(cm.filter,attr)
@@ -75,7 +75,7 @@ Source: [Rush/Scripts/c120301074.lua](https://github.com/ElderLich/MDPro3_Sacred
 
 ### Familiar of the Earth Spiritualist (`120301013`)
 
-Source: [Rush/Scripts/c120301013.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120301013.lua)
+Source: [Rush/Scripts/c120301013.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120301013.lua)
 
 ```lua
 function cm.operation(e,tp,eg,ep,ev,re,r,rp)
@@ -87,7 +87,7 @@ function cm.operation(e,tp,eg,ep,ev,re,r,rp)
 
 ### Familiar of the Water Spiritualist (`120301014`)
 
-Source: [Rush/Scripts/c120301014.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120301014.lua)
+Source: [Rush/Scripts/c120301014.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120301014.lua)
 
 ```lua
 function cm.operation(e,tp,eg,ep,ev,re,r,rp)

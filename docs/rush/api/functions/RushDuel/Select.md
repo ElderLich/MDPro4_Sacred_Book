@@ -63,14 +63,14 @@ Generated from the local `Rush/Scripts/` folder and `rush_cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| [Elemental Circulation](/examples/rush-cards/120263030) | `120263030` | [Rush/Scripts/c120263030.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120263030.lua) | 1 |
-| I Hear Footsteps | `120217085` | [Rush/Scripts/c120217085.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120217085.lua) | 1 |
+| [Elemental Circulation](/examples/rush-cards/120263030) | `120263030` | [Rush/Scripts/c120263030.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120263030.lua) | 1 |
+| I Hear Footsteps | `120217085` | [Rush/Scripts/c120217085.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120217085.lua) | 1 |
 
 ## Script Examples
 
 ### Elemental Circulation (`120263030`)
 
-Source: [Rush/Scripts/c120263030.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120263030.lua)
+Source: [Rush/Scripts/c120263030.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120263030.lua)
 
 ```lua
 	local g=Duel.GetMatchingGroup(cm.costfilter,tp,LOCATION_EXTRA+LOCATION_HAND,0,nil)
@@ -82,7 +82,7 @@ Source: [Rush/Scripts/c120263030.lua](https://github.com/ElderLich/MDPro3_Sacred
 
 ### I Hear Footsteps (`120217085`)
 
-Source: [Rush/Scripts/c120217085.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120217085.lua)
+Source: [Rush/Scripts/c120217085.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120217085.lua)
 
 ```lua
 		local og=g:Filter(cm.setfilter,nil)

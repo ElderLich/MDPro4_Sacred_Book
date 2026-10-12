@@ -31,13 +31,13 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Reptilianne Naga | `79491903` | [Scripts/c79491903.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c79491903.lua) | 1 |
+| Reptilianne Naga | `79491903` | [Scripts/c79491903.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c79491903.lua) | 1 |
 
 ## Script Examples
 
 ### Reptilianne Naga (`79491903`)
 
-Source: [Scripts/c79491903.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c79491903.lua)
+Source: [Scripts/c79491903.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c79491903.lua)
 
 ```lua
 end

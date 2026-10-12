@@ -64,14 +64,14 @@ Generated from the local `Rush/Scripts/` folder and `rush_cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| One for One | `120307015` | [Rush/Scripts/c120307015.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120307015.lua) | 1 |
-| Chaos Ceremonial Object | `120293040` | [Rush/Scripts/c120293040.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120293040.lua) | 1 |
+| One for One | `120307015` | [Rush/Scripts/c120307015.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120307015.lua) | 1 |
+| Chaos Ceremonial Object | `120293040` | [Rush/Scripts/c120293040.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120293040.lua) | 1 |
 
 ## Script Examples
 
 ### One for One (`120307015`)
 
-Source: [Rush/Scripts/c120307015.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120307015.lua)
+Source: [Rush/Scripts/c120307015.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120307015.lua)
 
 ```lua
 	if Duel.GetFieldGroupCount(tp,LOCATION_DECK,0)<4 then return end
@@ -83,7 +83,7 @@ Source: [Rush/Scripts/c120307015.lua](https://github.com/ElderLich/MDPro3_Sacred
 
 ### Chaos Ceremonial Object (`120293040`)
 
-Source: [Rush/Scripts/c120293040.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120293040.lua)
+Source: [Rush/Scripts/c120293040.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120293040.lua)
 
 ```lua
 	if Duel.GetFieldGroupCount(tp,LOCATION_DECK,0)<3 then return end

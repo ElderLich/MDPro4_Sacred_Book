@@ -192,8 +192,8 @@ The participant getters are implemented in `libduel.cpp` and `libcard.cpp`;
 battle processor establishes and updates those identities around the Damage
 Step events described above.
 
-- [Performapal Odd-Eyes Minotaur source](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c10731333.lua): damage-calculation ATK change and duration.
-- [War Rock Meteoragon source](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c10497636.lua): remember and recheck the battling opponent.
-- [Salamangreat of Fire source](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c11962031.lua): find the player's combatant from either side of an attack.
-- [Digital Bug Scaradiator source](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c12615446.lua): a battle-destroyed monster after it reaches the GY.
+- [Performapal Odd-Eyes Minotaur source](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c10731333.lua): damage-calculation ATK change and duration.
+- [War Rock Meteoragon source](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c10497636.lua): remember and recheck the battling opponent.
+- [Salamangreat of Fire source](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c11962031.lua): find the player's combatant from either side of an attack.
+- [Digital Bug Scaradiator source](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c12615446.lua): a battle-destroyed monster after it reaches the GY.
 - [Continuous stat modifiers](/learn/continuous-stat-modifiers): other ways of applying ATK and DEF changes.

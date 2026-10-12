@@ -23,7 +23,7 @@ if tc:IsRelateToEffect(e) then
 end
 ```
 
-For mixed current positions, pass the destination for face-up Attack, face-down Attack, face-up Defense, and face-down Defense in that order. MDPro3's core does not read the old seventh `setavailable` argument.
+For mixed current positions, pass the destination for face-up Attack, face-down Attack, face-up Defense, and face-down Defense in that order. MDPro4's core does not read the old seventh `setavailable` argument.
 
 ## Related Functions
 

@@ -68,15 +68,15 @@ Generated from the local `Rush/Scripts/` folder and `rush_cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Joining Chairs | `120151028` | [Rush/Scripts/c120151028.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120151028.lua) | 1 |
-| Terrorphone Number | `120217087` | [Rush/Scripts/c120217087.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120217087.lua) | 1 |
-| Elegant Egotist | `120247014` | [Rush/Scripts/c120247014.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120247014.lua) | 1 |
+| Joining Chairs | `120151028` | [Rush/Scripts/c120151028.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120151028.lua) | 1 |
+| Terrorphone Number | `120217087` | [Rush/Scripts/c120217087.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120217087.lua) | 1 |
+| Elegant Egotist | `120247014` | [Rush/Scripts/c120247014.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120247014.lua) | 1 |
 
 ## Script Examples
 
 ### Joining Chairs (`120151028`)
 
-Source: [Rush/Scripts/c120151028.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120151028.lua)
+Source: [Rush/Scripts/c120151028.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120151028.lua)
 
 ```lua
 			RD.CreateHintEffect(e,aux.Stringid(m,1),tp,0,1,RESET_PHASE+PHASE_END)
@@ -88,7 +88,7 @@ Source: [Rush/Scripts/c120151028.lua](https://github.com/ElderLich/MDPro3_Sacred
 
 ### Terrorphone Number (`120217087`)
 
-Source: [Rush/Scripts/c120217087.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120217087.lua)
+Source: [Rush/Scripts/c120217087.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120217087.lua)
 
 ```lua
 	if Duel.GetFlagEffect(tp,m)~=0 then return end
@@ -100,7 +100,7 @@ end
 
 ### Elegant Egotist (`120247014`)
 
-Source: [Rush/Scripts/c120247014.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120247014.lua)
+Source: [Rush/Scripts/c120247014.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120247014.lua)
 
 ```lua
 	if Duel.GetFlagEffect(tp,m)~=0 then return end

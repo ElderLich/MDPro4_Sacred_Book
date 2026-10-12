@@ -55,16 +55,16 @@ Generated from the local `Rush/Scripts/` folder and `rush_cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| [Spiritualization Training](/examples/rush-cards/120301020) | `120301020` | [Rush/Scripts/c120301020.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120301020.lua) | 1 |
-| Animagica Witch | `120257031` | [Rush/Scripts/c120257031.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120257031.lua) | 1 |
-| Data Eater | `120261038` | [Rush/Scripts/c120261038.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120261038.lua) | 1 |
-| Deep Sea Dragon Bat Eel | `120239041` | [Rush/Scripts/c120239041.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120239041.lua) | 1 |
+| [Spiritualization Training](/examples/rush-cards/120301020) | `120301020` | [Rush/Scripts/c120301020.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120301020.lua) | 1 |
+| Animagica Witch | `120257031` | [Rush/Scripts/c120257031.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120257031.lua) | 1 |
+| Data Eater | `120261038` | [Rush/Scripts/c120261038.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120261038.lua) | 1 |
+| Deep Sea Dragon Bat Eel | `120239041` | [Rush/Scripts/c120239041.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120239041.lua) | 1 |
 
 ## Script Examples
 
 ### Spiritualization Training (`120301020`)
 
-Source: [Rush/Scripts/c120301020.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120301020.lua)
+Source: [Rush/Scripts/c120301020.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120301020.lua)
 
 ```lua
 	return RD.IsPlayerNoActivateInThisTurn(tp,list[1])
@@ -76,7 +76,7 @@ end)
 
 ### Animagica Witch (`120257031`)
 
-Source: [Rush/Scripts/c120257031.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120257031.lua)
+Source: [Rush/Scripts/c120257031.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120257031.lua)
 
 ```lua
 	return Duel.IsPlayerCanDraw(tp,g:GetCount())
@@ -88,7 +88,7 @@ function cm.target(e,tp,eg,ep,ev,re,r,rp,chk)
 
 ### Data Eater (`120261038`)
 
-Source: [Rush/Scripts/c120261038.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120261038.lua)
+Source: [Rush/Scripts/c120261038.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120261038.lua)
 
 ```lua
 	return c:IsAbleToDeck()

@@ -56,18 +56,18 @@ Generated from the local `Rush/Scripts/` folder and `rush_cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Executie Prouty Frontiere | `120283033` | [Rush/Scripts/c120283033.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120283033.lua) | 1 |
-| Elemental HERO Shining Flare Wingman | `120264000` | [Rush/Scripts/c120264000.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120264000.lua) | 1 |
-| Red-Eyes Maxi-Flare Dragon \[L\] | `120274001` | [Rush/Scripts/c120274001.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120274001.lua) | 1 |
-| Elemental HERO Flame Wingman | `120263001` | [Rush/Scripts/c120263001.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120263001.lua) | 1 |
-| Goblin Attack Force | `120307025` | [Rush/Scripts/c120307025.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120307025.lua) | 1 |
-| Chainsaw Insect | `120300029` | [Rush/Scripts/c120300029.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120300029.lua) | 1 |
+| Executie Prouty Frontiere | `120283033` | [Rush/Scripts/c120283033.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120283033.lua) | 1 |
+| Elemental HERO Shining Flare Wingman | `120264000` | [Rush/Scripts/c120264000.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120264000.lua) | 1 |
+| Red-Eyes Maxi-Flare Dragon \[L\] | `120274001` | [Rush/Scripts/c120274001.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120274001.lua) | 1 |
+| Elemental HERO Flame Wingman | `120263001` | [Rush/Scripts/c120263001.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120263001.lua) | 1 |
+| Goblin Attack Force | `120307025` | [Rush/Scripts/c120307025.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120307025.lua) | 1 |
+| Chainsaw Insect | `120300029` | [Rush/Scripts/c120300029.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120300029.lua) | 1 |
 
 ## Script Examples
 
 ### Executie Prouty Frontiere (`120283033`)
 
-Source: [Rush/Scripts/c120283033.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120283033.lua)
+Source: [Rush/Scripts/c120283033.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120283033.lua)
 
 ```lua
 	c:RegisterEffect(e2)
@@ -79,7 +79,7 @@ Source: [Rush/Scripts/c120283033.lua](https://github.com/ElderLich/MDPro3_Sacred
 
 ### Elemental HERO Shining Flare Wingman (`120264000`)
 
-Source: [Rush/Scripts/c120264000.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120264000.lua)
+Source: [Rush/Scripts/c120264000.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120264000.lua)
 
 ```lua
 	c:RegisterEffect(e1)
@@ -91,7 +91,7 @@ Source: [Rush/Scripts/c120264000.lua](https://github.com/ElderLich/MDPro3_Sacred
 
 ### Red-Eyes Maxi-Flare Dragon [L] (`120274001`)
 
-Source: [Rush/Scripts/c120274001.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120274001.lua)
+Source: [Rush/Scripts/c120274001.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120274001.lua)
 
 ```lua
 	c:RegisterEffect(e2)

@@ -36,37 +36,37 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Tsumuha-Kutsunagi the Lord of Swords | `78098950` | [Scripts/c78098950.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c78098950.lua) | 1 |
-| Rasetsu | `43378076` | [Scripts/c43378076.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c43378076.lua) | 1 |
-| Shinobird Crow | `39817919` | [Scripts/c39817919.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c39817919.lua) | 1 |
-| Han-Shi Kyudo Spirit | `53270092` | [Scripts/c53270092.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c53270092.lua) | 1 |
-| Shinobaron Shade Peacock | `60823690` | [Scripts/c60823690.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c60823690.lua) | 1 |
-| Hebo, Lord of the River | `90365482` | [Scripts/c90365482.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c90365482.lua) | 1 |
-| Yamato-no-Kami | `82841979` | [Scripts/c82841979.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c82841979.lua) | 1 |
-| Ichiki Sayori-Hime | `9627299` | [Scripts/c9627299.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c9627299.lua) | 1 |
-| Kinka-byo | `45452224` | [Scripts/c45452224.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c45452224.lua) | 1 |
-| Shinobaroness Shade Peacock | `33325951` | [Scripts/c33325951.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c33325951.lua) | 1 |
-| Izanami | `43543777` | [Scripts/c43543777.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c43543777.lua) | 1 |
-| Konohanasakuya | `57722593` | [Scripts/c57722593.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c57722593.lua) | 1 |
-| Sakitama | `67972302` | [Scripts/c67972302.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c67972302.lua) | 1 |
-| Nikitama | `24701235` | [Scripts/c24701235.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c24701235.lua) | 1 |
-| Amaterasu | `20073910` | [Scripts/c20073910.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c20073910.lua) | 1 |
-| Shinobird Crane | `66815913` | [Scripts/c66815913.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c66815913.lua) | 1 |
-| Kuro-Obi Karate Spirit | `77511331` | [Scripts/c77511331.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c77511331.lua) | 1 |
-| Gishki Emilia | `73551138` | [Scripts/c73551138.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c73551138.lua) | 1 |
-| Gundari | `38975369` | [Scripts/c38975369.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c38975369.lua) | 1 |
-| Gishki Natalia | `17241370` | [Scripts/c17241370.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c17241370.lua) | 1 |
-| Yoko-Zuna Sumo Spirit | `40516623` | [Scripts/c40516623.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c40516623.lua) | 1 |
-| Maharaghi | `40695128` | [Scripts/c40695128.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c40695128.lua) | 1 |
-| Otohime | `39751093` | [Scripts/c39751093.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c39751093.lua) | 1 |
-| Yaksha | `94215860` | [Scripts/c94215860.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c94215860.lua) | 1 |
+| Tsumuha-Kutsunagi the Lord of Swords | `78098950` | [Scripts/c78098950.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c78098950.lua) | 1 |
+| Rasetsu | `43378076` | [Scripts/c43378076.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c43378076.lua) | 1 |
+| Shinobird Crow | `39817919` | [Scripts/c39817919.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c39817919.lua) | 1 |
+| Han-Shi Kyudo Spirit | `53270092` | [Scripts/c53270092.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c53270092.lua) | 1 |
+| Shinobaron Shade Peacock | `60823690` | [Scripts/c60823690.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c60823690.lua) | 1 |
+| Hebo, Lord of the River | `90365482` | [Scripts/c90365482.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c90365482.lua) | 1 |
+| Yamato-no-Kami | `82841979` | [Scripts/c82841979.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c82841979.lua) | 1 |
+| Ichiki Sayori-Hime | `9627299` | [Scripts/c9627299.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c9627299.lua) | 1 |
+| Kinka-byo | `45452224` | [Scripts/c45452224.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c45452224.lua) | 1 |
+| Shinobaroness Shade Peacock | `33325951` | [Scripts/c33325951.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c33325951.lua) | 1 |
+| Izanami | `43543777` | [Scripts/c43543777.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c43543777.lua) | 1 |
+| Konohanasakuya | `57722593` | [Scripts/c57722593.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c57722593.lua) | 1 |
+| Sakitama | `67972302` | [Scripts/c67972302.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c67972302.lua) | 1 |
+| Nikitama | `24701235` | [Scripts/c24701235.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c24701235.lua) | 1 |
+| Amaterasu | `20073910` | [Scripts/c20073910.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c20073910.lua) | 1 |
+| Shinobird Crane | `66815913` | [Scripts/c66815913.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c66815913.lua) | 1 |
+| Kuro-Obi Karate Spirit | `77511331` | [Scripts/c77511331.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c77511331.lua) | 1 |
+| Gishki Emilia | `73551138` | [Scripts/c73551138.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c73551138.lua) | 1 |
+| Gundari | `38975369` | [Scripts/c38975369.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c38975369.lua) | 1 |
+| Gishki Natalia | `17241370` | [Scripts/c17241370.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c17241370.lua) | 1 |
+| Yoko-Zuna Sumo Spirit | `40516623` | [Scripts/c40516623.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c40516623.lua) | 1 |
+| Maharaghi | `40695128` | [Scripts/c40695128.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c40695128.lua) | 1 |
+| Otohime | `39751093` | [Scripts/c39751093.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c39751093.lua) | 1 |
+| Yaksha | `94215860` | [Scripts/c94215860.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c94215860.lua) | 1 |
 | ...and 15 more |  |  |  |
 
 ## Script Examples
 
 ### Tsumuha-Kutsunagi the Lord of Swords (`78098950`)
 
-Source: [Scripts/c78098950.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c78098950.lua)
+Source: [Scripts/c78098950.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c78098950.lua)
 
 ```lua
 	c:RegisterEffect(e0)
@@ -78,7 +78,7 @@ Source: [Scripts/c78098950.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/
 
 ### Rasetsu (`43378076`)
 
-Source: [Scripts/c43378076.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c43378076.lua)
+Source: [Scripts/c43378076.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c43378076.lua)
 
 ```lua
 function c43378076.initial_effect(c)
@@ -90,7 +90,7 @@ function c43378076.initial_effect(c)
 
 ### Shinobird Crow (`39817919`)
 
-Source: [Scripts/c39817919.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c39817919.lua)
+Source: [Scripts/c39817919.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c39817919.lua)
 
 ```lua
 function c39817919.initial_effect(c)

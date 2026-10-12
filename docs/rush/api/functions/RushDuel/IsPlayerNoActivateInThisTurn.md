@@ -47,37 +47,37 @@ Generated from the local `Rush/Scripts/` folder and `rush_cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| [The Eye of Timaeus](/examples/rush-cards/120285065) | `120285065` | [Rush/Scripts/c120285065.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120285065.lua) | 1 |
-| [Light of Bewitchment](/examples/rush-cards/120301074) | `120301074` | [Rush/Scripts/c120301074.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120301074.lua) | 1 |
-| [Spiritualization Training](/examples/rush-cards/120301020) | `120301020` | [Rush/Scripts/c120301020.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120301020.lua) | 1 |
-| [The Noodle Art of Flavor Shift](/examples/rush-cards/120300053) | `120300053` | [Rush/Scripts/c120300053.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120300053.lua) | 1 |
-| Instant Fusion | `120305053` | [Rush/Scripts/c120305053.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120305053.lua) | 1 |
-| The Player Returning Alive | `120305036` | [Rush/Scripts/c120305036.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120305036.lua) | 1 |
-| Despair and Desire | `120301034` | [Rush/Scripts/c120301034.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120301034.lua) | 1 |
-| Lostream Reading | `120309043` | [Rush/Scripts/c120309043.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120309043.lua) | 1 |
-| Memory of Sunlit | `120300051` | [Rush/Scripts/c120300051.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120300051.lua) | 1 |
-| Shadowforce Explosion | `120300042` | [Rush/Scripts/c120300042.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120300042.lua) | 1 |
-| Micha the Symbol of the Angels | `120309058` | [Rush/Scripts/c120309058.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120309058.lua) | 1 |
-| Encounter of the Stars | `120305025` | [Rush/Scripts/c120305025.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120305025.lua) | 1 |
-| Handbook to the Spiritual Arts | `120301019` | [Rush/Scripts/c120301019.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120301019.lua) | 1 |
-| Book of Life | `120109058` | [Rush/Scripts/c120109058.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120109058.lua) | 1 |
-| Beginning Skullrise | `120298014` | [Rush/Scripts/c120298014.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120298014.lua) | 1 |
-| The Journeying Three Magi | `120304058` | [Rush/Scripts/c120304058.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120304058.lua) | 1 |
-| Midnight Reading | `120306061` | [Rush/Scripts/c120306061.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120306061.lua) | 1 |
-| Speed Roll | `120301063` | [Rush/Scripts/c120301063.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120301063.lua) | 1 |
-| Post-Stellar Shower Princess Cosmos | `120300056` | [Rush/Scripts/c120300056.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120300056.lua) | 1 |
-| The Allied Dark Magicians | `120309015` | [Rush/Scripts/c120309015.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120309015.lua) | 1 |
-| Happy Journal | `120304048` | [Rush/Scripts/c120304048.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120304048.lua) | 1 |
-| Beacon of Dragon Destroyer | `120301066` | [Rush/Scripts/c120301066.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120301066.lua) | 1 |
-| The United Front with Timaeus | `120309016` | [Rush/Scripts/c120309016.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120309016.lua) | 1 |
-| Princess Cosmos' Astronomical Observation | `120293055` | [Rush/Scripts/c120293055.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120293055.lua) | 1 |
+| [The Eye of Timaeus](/examples/rush-cards/120285065) | `120285065` | [Rush/Scripts/c120285065.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120285065.lua) | 1 |
+| [Light of Bewitchment](/examples/rush-cards/120301074) | `120301074` | [Rush/Scripts/c120301074.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120301074.lua) | 1 |
+| [Spiritualization Training](/examples/rush-cards/120301020) | `120301020` | [Rush/Scripts/c120301020.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120301020.lua) | 1 |
+| [The Noodle Art of Flavor Shift](/examples/rush-cards/120300053) | `120300053` | [Rush/Scripts/c120300053.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120300053.lua) | 1 |
+| Instant Fusion | `120305053` | [Rush/Scripts/c120305053.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120305053.lua) | 1 |
+| The Player Returning Alive | `120305036` | [Rush/Scripts/c120305036.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120305036.lua) | 1 |
+| Despair and Desire | `120301034` | [Rush/Scripts/c120301034.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120301034.lua) | 1 |
+| Lostream Reading | `120309043` | [Rush/Scripts/c120309043.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120309043.lua) | 1 |
+| Memory of Sunlit | `120300051` | [Rush/Scripts/c120300051.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120300051.lua) | 1 |
+| Shadowforce Explosion | `120300042` | [Rush/Scripts/c120300042.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120300042.lua) | 1 |
+| Micha the Symbol of the Angels | `120309058` | [Rush/Scripts/c120309058.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120309058.lua) | 1 |
+| Encounter of the Stars | `120305025` | [Rush/Scripts/c120305025.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120305025.lua) | 1 |
+| Handbook to the Spiritual Arts | `120301019` | [Rush/Scripts/c120301019.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120301019.lua) | 1 |
+| Book of Life | `120109058` | [Rush/Scripts/c120109058.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120109058.lua) | 1 |
+| Beginning Skullrise | `120298014` | [Rush/Scripts/c120298014.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120298014.lua) | 1 |
+| The Journeying Three Magi | `120304058` | [Rush/Scripts/c120304058.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120304058.lua) | 1 |
+| Midnight Reading | `120306061` | [Rush/Scripts/c120306061.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120306061.lua) | 1 |
+| Speed Roll | `120301063` | [Rush/Scripts/c120301063.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120301063.lua) | 1 |
+| Post-Stellar Shower Princess Cosmos | `120300056` | [Rush/Scripts/c120300056.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120300056.lua) | 1 |
+| The Allied Dark Magicians | `120309015` | [Rush/Scripts/c120309015.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120309015.lua) | 1 |
+| Happy Journal | `120304048` | [Rush/Scripts/c120304048.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120304048.lua) | 1 |
+| Beacon of Dragon Destroyer | `120301066` | [Rush/Scripts/c120301066.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120301066.lua) | 1 |
+| The United Front with Timaeus | `120309016` | [Rush/Scripts/c120309016.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120309016.lua) | 1 |
+| Princess Cosmos' Astronomical Observation | `120293055` | [Rush/Scripts/c120293055.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120293055.lua) | 1 |
 | ...and 5 more |  |  |  |
 
 ## Script Examples
 
 ### The Eye of Timaeus (`120285065`)
 
-Source: [Rush/Scripts/c120285065.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120285065.lua)
+Source: [Rush/Scripts/c120285065.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120285065.lua)
 
 ```lua
 end
@@ -89,7 +89,7 @@ function cm.target(e,tp,eg,ep,ev,re,r,rp,chk)
 
 ### Light of Bewitchment (`120301074`)
 
-Source: [Rush/Scripts/c120301074.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120301074.lua)
+Source: [Rush/Scripts/c120301074.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120301074.lua)
 
 ```lua
 end
@@ -101,7 +101,7 @@ function cm.cost(e,tp,eg,ep,ev,re,r,rp,chk)
 
 ### Spiritualization Training (`120301020`)
 
-Source: [Rush/Scripts/c120301020.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120301020.lua)
+Source: [Rush/Scripts/c120301020.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120301020.lua)
 
 ```lua
 end

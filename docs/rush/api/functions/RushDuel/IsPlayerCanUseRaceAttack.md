@@ -55,14 +55,14 @@ Generated from the local `Rush/Scripts/` folder and `rush_cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Ensembullfighter the Music Fiend | `120155028` | [Rush/Scripts/c120155028.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120155028.lua) | 1 |
-| Constructor Blockade | `120155054` | [Rush/Scripts/c120155054.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120155054.lua) | 1 |
+| Ensembullfighter the Music Fiend | `120155028` | [Rush/Scripts/c120155028.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120155028.lua) | 1 |
+| Constructor Blockade | `120155054` | [Rush/Scripts/c120155054.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120155054.lua) | 1 |
 
 ## Script Examples
 
 ### Ensembullfighter the Music Fiend (`120155028`)
 
-Source: [Rush/Scripts/c120155028.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120155028.lua)
+Source: [Rush/Scripts/c120155028.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120155028.lua)
 
 ```lua
 --Cannot Activate
@@ -74,7 +74,7 @@ end
 
 ### Constructor Blockade (`120155054`)
 
-Source: [Rush/Scripts/c120155054.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120155054.lua)
+Source: [Rush/Scripts/c120155054.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120155054.lua)
 
 ```lua
 end

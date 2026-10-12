@@ -54,25 +54,25 @@ Generated from the local `Rush/Scripts/` folder and `rush_cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| [Madrhea Amelo](/examples/rush-cards/120300028) | `120300028` | [Rush/Scripts/c120300028.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120300028.lua) | 1 |
-| Voidvelg Divine Requiem | `120109037` | [Rush/Scripts/c120109037.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120109037.lua) | 1 |
-| Necromaid Lurker | `120294044` | [Rush/Scripts/c120294044.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120294044.lua) | 1 |
-| Mythical Chimera Snake | `120286006` | [Rush/Scripts/c120286006.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120286006.lua) | 1 |
-| Galactica Oblivion Ark | `120277008` | [Rush/Scripts/c120277008.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120277008.lua) | 1 |
-| Wicked Fire Blast of Zera | `120287013` | [Rush/Scripts/c120287013.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120287013.lua) | 1 |
-| Requiem Strike Back | `120277060` | [Rush/Scripts/c120277060.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120277060.lua) | 1 |
-| Micronova | `120300044` | [Rush/Scripts/c120300044.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120300044.lua) | 1 |
-| Attract Golem | `120271026` | [Rush/Scripts/c120271026.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120271026.lua) | 1 |
-| Giant Dynamix Impact | `120274049` | [Rush/Scripts/c120274049.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120274049.lua) | 1 |
-| Tamabot Boost Dragon | `120285038` | [Rush/Scripts/c120285038.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120285038.lua) | 1 |
-| Dentacle the Parasitic Extraterrestrial | `120264035` | [Rush/Scripts/c120264035.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120264035.lua) | 1 |
-| Summoning Sorcerer Doretheo | `120244032` | [Rush/Scripts/c120244032.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120244032.lua) | 1 |
+| [Madrhea Amelo](/examples/rush-cards/120300028) | `120300028` | [Rush/Scripts/c120300028.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120300028.lua) | 1 |
+| Voidvelg Divine Requiem | `120109037` | [Rush/Scripts/c120109037.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120109037.lua) | 1 |
+| Necromaid Lurker | `120294044` | [Rush/Scripts/c120294044.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120294044.lua) | 1 |
+| Mythical Chimera Snake | `120286006` | [Rush/Scripts/c120286006.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120286006.lua) | 1 |
+| Galactica Oblivion Ark | `120277008` | [Rush/Scripts/c120277008.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120277008.lua) | 1 |
+| Wicked Fire Blast of Zera | `120287013` | [Rush/Scripts/c120287013.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120287013.lua) | 1 |
+| Requiem Strike Back | `120277060` | [Rush/Scripts/c120277060.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120277060.lua) | 1 |
+| Micronova | `120300044` | [Rush/Scripts/c120300044.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120300044.lua) | 1 |
+| Attract Golem | `120271026` | [Rush/Scripts/c120271026.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120271026.lua) | 1 |
+| Giant Dynamix Impact | `120274049` | [Rush/Scripts/c120274049.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120274049.lua) | 1 |
+| Tamabot Boost Dragon | `120285038` | [Rush/Scripts/c120285038.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120285038.lua) | 1 |
+| Dentacle the Parasitic Extraterrestrial | `120264035` | [Rush/Scripts/c120264035.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120264035.lua) | 1 |
+| Summoning Sorcerer Doretheo | `120244032` | [Rush/Scripts/c120244032.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120244032.lua) | 1 |
 
 ## Script Examples
 
 ### Madrhea Amelo (`120300028`)
 
-Source: [Rush/Scripts/c120300028.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120300028.lua)
+Source: [Rush/Scripts/c120300028.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120300028.lua)
 
 ```lua
 	RD.SelectAndDoAction(HINTMSG_DESTROY,cm.desfilter,tp,0,LOCATION_MZONE,1,1,nil,function(g)
@@ -84,7 +84,7 @@ Source: [Rush/Scripts/c120300028.lua](https://github.com/ElderLich/MDPro3_Sacred
 
 ### Voidvelg Divine Requiem (`120109037`)
 
-Source: [Rush/Scripts/c120109037.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120109037.lua)
+Source: [Rush/Scripts/c120109037.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120109037.lua)
 
 ```lua
 		local g=Duel.GetMatchingGroup(Card.IsFaceup,tp,0,LOCATION_MZONE,nil)
@@ -96,7 +96,7 @@ end
 
 ### Necromaid Lurker (`120294044`)
 
-Source: [Rush/Scripts/c120294044.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120294044.lua)
+Source: [Rush/Scripts/c120294044.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120294044.lua)
 
 ```lua
 	RD.SelectAndDoAction(HINTMSG_DESTROY,nil,tp,0,LOCATION_ONFIELD,1,1,nil,function(g)

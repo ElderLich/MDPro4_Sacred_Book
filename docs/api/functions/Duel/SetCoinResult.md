@@ -28,13 +28,13 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Proton Blast | `49511705` | [Scripts/c49511705.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c49511705.lua) | 1 |
+| Proton Blast | `49511705` | [Scripts/c49511705.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c49511705.lua) | 1 |
 
 ## Script Examples
 
 ### Proton Blast (`49511705`)
 
-Source: [Scripts/c49511705.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c49511705.lua)
+Source: [Scripts/c49511705.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c49511705.lua)
 
 ```lua
 		res[i]=1

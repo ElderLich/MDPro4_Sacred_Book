@@ -45,13 +45,13 @@ Generated from the local `Rush/Scripts/` folder and `rush_cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Darkness Galactica Oblivion | `120253036` | [Rush/Scripts/c120253036.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120253036.lua) | 1 |
+| Darkness Galactica Oblivion | `120253036` | [Rush/Scripts/c120253036.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120253036.lua) | 1 |
 
 ## Script Examples
 
 ### Darkness Galactica Oblivion (`120253036`)
 
-Source: [Rush/Scripts/c120253036.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120253036.lua)
+Source: [Rush/Scripts/c120253036.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120253036.lua)
 
 ```lua
 		local atk=tc:GetBaseAttack()

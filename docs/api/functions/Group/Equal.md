@@ -32,13 +32,13 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Pole Position | `73578229` | [Scripts/c73578229.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c73578229.lua) | 1 |
+| Pole Position | `73578229` | [Scripts/c73578229.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c73578229.lua) | 1 |
 
 ## Script Examples
 
 ### Pole Position (`73578229`)
 
-Source: [Scripts/c73578229.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c73578229.lua)
+Source: [Scripts/c73578229.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c73578229.lua)
 
 ```lua
 	if g:GetCount()>0 then

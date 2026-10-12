@@ -27,15 +27,15 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Proton Blast | `49511705` | [Scripts/c49511705.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c49511705.lua) | 2 |
-| Origami Goddess | `7930346` | [Scripts/c7930346.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c7930346.lua) | 1 |
-| Lucky Chance | `96012004` | [Scripts/c96012004.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c96012004.lua) | 1 |
+| Proton Blast | `49511705` | [Scripts/c49511705.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c49511705.lua) | 2 |
+| Origami Goddess | `7930346` | [Scripts/c7930346.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c7930346.lua) | 1 |
+| Lucky Chance | `96012004` | [Scripts/c96012004.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c96012004.lua) | 1 |
 
 ## Script Examples
 
 ### Proton Blast (`49511705`)
 
-Source: [Scripts/c49511705.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c49511705.lua)
+Source: [Scripts/c49511705.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c49511705.lua)
 
 ```lua
 	Duel.Hint(HINT_CARD,0,49511705)
@@ -47,7 +47,7 @@ Source: [Scripts/c49511705.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/
 
 ### Origami Goddess (`7930346`)
 
-Source: [Scripts/c7930346.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c7930346.lua)
+Source: [Scripts/c7930346.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c7930346.lua)
 
 ```lua
 function s.coinop(e,tp,eg,ep,ev,re,r,rp)
@@ -59,7 +59,7 @@ function s.coinop(e,tp,eg,ep,ev,re,r,rp)
 
 ### Lucky Chance (`96012004`)
 
-Source: [Scripts/c96012004.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c96012004.lua)
+Source: [Scripts/c96012004.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c96012004.lua)
 
 ```lua
 end

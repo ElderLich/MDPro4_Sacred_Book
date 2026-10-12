@@ -51,17 +51,17 @@ Generated from the local `Rush/Scripts/` folder and `rush_cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Ancient Gear Medic | `120271009` | [Rush/Scripts/c120271009.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120271009.lua) | 1 |
-| Evasive Chaos Ninjutsu Art of I Want You | `120277053` | [Rush/Scripts/c120277053.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120277053.lua) | 1 |
-| Mulliness Power Beetle | `120277038` | [Rush/Scripts/c120277038.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120277038.lua) | 1 |
-| Evasive Chaos Ninsect Rosary Cicada | `120277012` | [Rush/Scripts/c120277012.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120277012.lua) | 1 |
-| Ancient Gear Tyranno | `120271005` | [Rush/Scripts/c120271005.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120271005.lua) | 1 |
+| Ancient Gear Medic | `120271009` | [Rush/Scripts/c120271009.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120271009.lua) | 1 |
+| Evasive Chaos Ninjutsu Art of I Want You | `120277053` | [Rush/Scripts/c120277053.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120277053.lua) | 1 |
+| Mulliness Power Beetle | `120277038` | [Rush/Scripts/c120277038.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120277038.lua) | 1 |
+| Evasive Chaos Ninsect Rosary Cicada | `120277012` | [Rush/Scripts/c120277012.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120277012.lua) | 1 |
+| Ancient Gear Tyranno | `120271005` | [Rush/Scripts/c120271005.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120271005.lua) | 1 |
 
 ## Script Examples
 
 ### Ancient Gear Medic (`120271009`)
 
-Source: [Rush/Scripts/c120271009.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120271009.lua)
+Source: [Rush/Scripts/c120271009.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120271009.lua)
 
 ```lua
 end
@@ -73,7 +73,7 @@ end
 
 ### Evasive Chaos Ninjutsu Art of I Want You (`120277053`)
 
-Source: [Rush/Scripts/c120277053.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120277053.lua)
+Source: [Rush/Scripts/c120277053.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120277053.lua)
 
 ```lua
 end
@@ -85,7 +85,7 @@ function cm.spfilter(c,e,tp)
 
 ### Mulliness Power Beetle (`120277038`)
 
-Source: [Rush/Scripts/c120277038.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120277038.lua)
+Source: [Rush/Scripts/c120277038.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120277038.lua)
 
 ```lua
 end

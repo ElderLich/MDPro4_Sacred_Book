@@ -43,14 +43,14 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| [Stars Align Above the Shrine](/examples/cards/15306543) | `15306543` | [Scripts/c15306543.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c15306543.lua) | 1 |
-| [Mitsurugi Magatama](/examples/cards/76725398) | `76725398` | [Scripts/c76725398.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c76725398.lua) | 2 |
+| [Stars Align Above the Shrine](/examples/cards/15306543) | `15306543` | [Scripts/c15306543.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c15306543.lua) | 1 |
+| [Mitsurugi Magatama](/examples/cards/76725398) | `76725398` | [Scripts/c76725398.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c76725398.lua) | 2 |
 
 ## Script Examples
 
 ### Stars Align Above the Shrine (`15306543`)
 
-Source: [Scripts/c15306543.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c15306543.lua)
+Source: [Scripts/c15306543.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c15306543.lua)
 
 ```lua
 	e2:SetRange(LOCATION_FZONE)
@@ -62,7 +62,7 @@ Source: [Scripts/c15306543.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/
 
 ### Mitsurugi Magatama (`76725398`)
 
-Source: [Scripts/c76725398.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c76725398.lua)
+Source: [Scripts/c76725398.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c76725398.lua)
 
 ```lua
 	local c1=not e:IsCostChecked() or Duel.CheckReleaseGroup(tp,s.cfilter,1,nil,tp)

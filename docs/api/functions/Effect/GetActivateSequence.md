@@ -31,13 +31,13 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Storm Cipher | `89571015` | [Scripts/c89571015.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c89571015.lua) | 1 |
+| Storm Cipher | `89571015` | [Scripts/c89571015.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c89571015.lua) | 1 |
 
 ## Script Examples
 
 ### Storm Cipher (`89571015`)
 
-Source: [Scripts/c89571015.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c89571015.lua)
+Source: [Scripts/c89571015.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c89571015.lua)
 
 ```lua
 end

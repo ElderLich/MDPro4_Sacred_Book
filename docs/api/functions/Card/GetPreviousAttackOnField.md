@@ -31,20 +31,20 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| [D/D Count Surveyor](/examples/cards/5997110) | `5997110` | [Scripts/c5997110.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c5997110.lua) | 1 |
-| Performapal Smile Sorcerer | `7799906` | [Scripts/c7799906.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c7799906.lua) | 1 |
-| Solving for Pendulum | `5208118` | [Scripts/c5208118.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c5208118.lua) | 1 |
-| Performapal Laugh Maker | `44944304` | [Scripts/c44944304.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c44944304.lua) | 1 |
-| Ecole de Zone | `60514625` | [Scripts/c60514625.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c60514625.lua) | 1 |
-| Jigen Bakudan | `90020065` | [Scripts/c90020065.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c90020065.lua) | 1 |
-| Time Wizard | `71625222` | [Scripts/c71625222.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c71625222.lua) | 1 |
-| Reptilianne Scylla | `16909657` | [Scripts/c16909657.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c16909657.lua) | 1 |
+| [D/D Count Surveyor](/examples/cards/5997110) | `5997110` | [Scripts/c5997110.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c5997110.lua) | 1 |
+| Performapal Smile Sorcerer | `7799906` | [Scripts/c7799906.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c7799906.lua) | 1 |
+| Solving for Pendulum | `5208118` | [Scripts/c5208118.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c5208118.lua) | 1 |
+| Performapal Laugh Maker | `44944304` | [Scripts/c44944304.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c44944304.lua) | 1 |
+| Ecole de Zone | `60514625` | [Scripts/c60514625.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c60514625.lua) | 1 |
+| Jigen Bakudan | `90020065` | [Scripts/c90020065.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c90020065.lua) | 1 |
+| Time Wizard | `71625222` | [Scripts/c71625222.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c71625222.lua) | 1 |
+| Reptilianne Scylla | `16909657` | [Scripts/c16909657.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c16909657.lua) | 1 |
 
 ## Script Examples
 
 ### D/D Count Surveyor (`5997110`)
 
-Source: [Scripts/c5997110.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c5997110.lua)
+Source: [Scripts/c5997110.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c5997110.lua)
 
 ```lua
 		if rc>0 then
@@ -56,7 +56,7 @@ Source: [Scripts/c5997110.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/b
 
 ### Performapal Smile Sorcerer (`7799906`)
 
-Source: [Scripts/c7799906.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c7799906.lua)
+Source: [Scripts/c7799906.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c7799906.lua)
 
 ```lua
 function c7799906.cfilter(c,tp)
@@ -68,7 +68,7 @@ function c7799906.spcon(e,tp,eg,ep,ev,re,r,rp)
 
 ### Solving for Pendulum (`5208118`)
 
-Source: [Scripts/c5208118.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c5208118.lua)
+Source: [Scripts/c5208118.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c5208118.lua)
 
 ```lua
 			Duel.Destroy(g,REASON_EFFECT)

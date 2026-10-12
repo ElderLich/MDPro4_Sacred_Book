@@ -56,21 +56,21 @@ Generated from the local `Rush/Scripts/` folder and `rush_cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| [Valkyrian Guard](/examples/rush-cards/120231066) | `120231066` | [Rush/Scripts/c120231066.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120231066.lua) | 1 |
-| Imaginary Leading Actor | `120271029` | [Rush/Scripts/c120271029.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120271029.lua) | 1 |
-| Destructor Soldier Bokka | `120285015` | [Rush/Scripts/c120285015.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120285015.lua) | 1 |
-| Prime Dwarf | `120257001` | [Rush/Scripts/c120257001.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120257001.lua) | 1 |
-| Extra Plorer | `120244031` | [Rush/Scripts/c120244031.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120244031.lua) | 1 |
-| Ancient Arise Dragon | `120145024` | [Rush/Scripts/c120145024.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120145024.lua) | 1 |
-| Session Together! | `120253059` | [Rush/Scripts/c120253059.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120253059.lua) | 1 |
-| Legacyrex Legarex | `120239032` | [Rush/Scripts/c120239032.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120239032.lua) | 1 |
-| Bladesaurus | `120183037` | [Rush/Scripts/c120183037.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120183037.lua) | 1 |
+| [Valkyrian Guard](/examples/rush-cards/120231066) | `120231066` | [Rush/Scripts/c120231066.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120231066.lua) | 1 |
+| Imaginary Leading Actor | `120271029` | [Rush/Scripts/c120271029.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120271029.lua) | 1 |
+| Destructor Soldier Bokka | `120285015` | [Rush/Scripts/c120285015.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120285015.lua) | 1 |
+| Prime Dwarf | `120257001` | [Rush/Scripts/c120257001.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120257001.lua) | 1 |
+| Extra Plorer | `120244031` | [Rush/Scripts/c120244031.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120244031.lua) | 1 |
+| Ancient Arise Dragon | `120145024` | [Rush/Scripts/c120145024.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120145024.lua) | 1 |
+| Session Together! | `120253059` | [Rush/Scripts/c120253059.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120253059.lua) | 1 |
+| Legacyrex Legarex | `120239032` | [Rush/Scripts/c120239032.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120239032.lua) | 1 |
+| Bladesaurus | `120183037` | [Rush/Scripts/c120183037.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120183037.lua) | 1 |
 
 ## Script Examples
 
 ### Valkyrian Guard (`120231066`)
 
-Source: [Rush/Scripts/c120231066.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120231066.lua)
+Source: [Rush/Scripts/c120231066.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120231066.lua)
 
 ```lua
 	if RD.SelectAndSpecialSummon(aux.NecroValleyFilter(cm.spfilter),tp,LOCATION_GRAVE,0,1,1,nil,e,POS_FACEUP_ATTACK)~=0 then
@@ -82,7 +82,7 @@ Source: [Rush/Scripts/c120231066.lua](https://github.com/ElderLich/MDPro3_Sacred
 
 ### Imaginary Leading Actor (`120271029`)
 
-Source: [Rush/Scripts/c120271029.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120271029.lua)
+Source: [Rush/Scripts/c120271029.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120271029.lua)
 
 ```lua
 	if c:IsFaceup() and c:IsRelateToEffect(e) then
@@ -94,7 +94,7 @@ Source: [Rush/Scripts/c120271029.lua](https://github.com/ElderLich/MDPro3_Sacred
 
 ### Destructor Soldier Bokka (`120285015`)
 
-Source: [Rush/Scripts/c120285015.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120285015.lua)
+Source: [Rush/Scripts/c120285015.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120285015.lua)
 
 ```lua
 function cm.operation(e,tp,eg,ep,ev,re,r,rp)

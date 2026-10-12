@@ -1,6 +1,6 @@
 # API
 
-This API reference is generated for this project's core and helper scripts. It is grounded in local MDPro3/YGOPro bindings because helper procedures and available functions can differ between simulators.
+This API reference is generated for this project's core and helper scripts. It is grounded in local MDPro4/YGOPro bindings because helper procedures and available functions can differ between simulators.
 
 ## Sections
 

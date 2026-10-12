@@ -432,7 +432,7 @@ Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3436
 
 ●Group Card.GetColumnGroup(Card c)
 返回与c位于同一纵列的卡组成的Group。
-此MDPro3/YGOPro绑定只接收c。它使用c当前场上的纵列，包含相关怪兽区域、魔法与陷阱区域以及额外怪兽区域的纵列关系；若c不在场上，返回的Group为空。
+此MDPro4/YGOPro绑定只接收c。它使用c当前场上的纵列，包含相关怪兽区域、魔法与陷阱区域以及额外怪兽区域的纵列关系；若c不在场上，返回的Group为空。
 Parameters:
   c: Card
 Returns:
@@ -1569,7 +1569,7 @@ Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3697
 
 ●bool Card.IsCanChangePosition(Card c)
 检查核心中供效果改变表示形式使用的能力判断。
-在此MDPro3/YGOPro核心中，该底层辅助函数对连接怪兽返回false，对其他卡返回true；它不会执行更完整的手动改变战斗表示形式检查。
+在此MDPro4/YGOPro核心中，该底层辅助函数对连接怪兽返回false，对其他卡返回true；它不会执行更完整的手动改变战斗表示形式检查。
 Parameters:
   c: Card
 Returns:
@@ -2917,7 +2917,7 @@ Source: D:\Programs\GitHub\ygopro-core\libduel.cpp:4928
 
 ●int Duel.ChangePosition(Card|Group targets, int au, [int ad], [int du], [int dd], [bool noflip])
 变更targets的表示形式，并返回实际变更表示形式的卡的数量。
-au、ad、du、dd分别对应当前表侧攻击、里侧攻击、表侧守备、里侧守备的目标表示形式；省略时使用au。MDPro3核心不读取旧文档中的第7个setavailable参数。
+au、ad、du、dd分别对应当前表侧攻击、里侧攻击、表侧守备、里侧守备的目标表示形式；省略时使用au。MDPro4核心不读取旧文档中的第7个setavailable参数。
 Parameters:
   targets: Card|Group
   au: int
@@ -3930,7 +3930,7 @@ Source: D:\Programs\GitHub\ygopro-core\libduel.cpp:5063
 
 ●bool Duel.IsChainNegatable(int chainc)
 用于兼容的连锁发动可否被无效检查。
-在当前MDPro3核心绑定中，此函数对任意连锁序号都会返回true。
+在当前MDPro4核心绑定中，此函数对任意连锁序号都会返回true。
 本地脚本仍会在无效发动的条件中调用它，用来表达预期的发动合法性检查。
 Parameters:
   chainc: int - 要检查的连锁序号，通常是EVENT_CHAINING条件中的ev参数。
@@ -4143,7 +4143,7 @@ Source: D:\Programs\GitHub\ygopro-core\libduel.cpp:5053
 
 ●bool Duel.IsPlayerCanSpecialSummonMonster(int player, int code, [int|nil setcode], [int|nil type], [int|nil atk], [int|nil def], [int|nil level], [int|nil race], [int|nil attribute], [int pos], [int target_player], [int sumtype])
 检查player能否特殊召唤一只由传入卡片数据构造的虚拟怪兽。
-可选参数会覆盖读取到的卡片数据，之后用pos、target_player和sumtype描述召唤方式与位置。当前MDPro3绑定不会读取zone参数。
+可选参数会覆盖读取到的卡片数据，之后用pos、target_player和sumtype描述召唤方式与位置。当前MDPro4绑定不会读取zone参数。
 Parameters:
   player: int
   code: int
@@ -8125,7 +8125,7 @@ Source: Utilities/procedure.lua:1677
 
 ●Effect Auxiliary.AddFusionEffectProcUltimate(Card c, table params)
 创建由params描述的可配置融合召唤发动效果。
-缺省的素材位置、素材筛选、素材操作、特殊召唤nocheck和Category字段会填入MDPro3默认值。除非params.reg为false，否则该效果会作为发动效果登记给c。
+缺省的素材位置、素材筛选、素材操作、特殊召唤nocheck和Category字段会填入MDPro4默认值。除非params.reg为false，否则该效果会作为发动效果登记给c。
 生成的效果会检查额外卡组中的融合怪兽、取得并过滤融合素材、支持Chain Material后备流程、选择素材、按配置操作移动素材、以SUMMON_TYPE_FUSION特殊召唤，并完成正规手续。
 Parameters:
   c: Card

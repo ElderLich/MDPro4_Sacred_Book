@@ -32,13 +32,13 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| A.I.'s Ritual | `85327820` | [Scripts/c85327820.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c85327820.lua) | 2 |
+| A.I.'s Ritual | `85327820` | [Scripts/c85327820.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c85327820.lua) | 2 |
 
 ## Script Examples
 
 ### A.I.'s Ritual (`85327820`)
 
-Source: [Scripts/c85327820.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c85327820.lua)
+Source: [Scripts/c85327820.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c85327820.lua)
 
 ```lua
 		local mg2=nil

@@ -27,17 +27,17 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Hollowrokket Dragon | `51548207` | [Scripts/c51548207.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c51548207.lua) | 2 |
-| Kewl Tune Cue | `16387555` | [Scripts/c16387555.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c16387555.lua) | 2 |
-| Kashtira Ogre | `94392192` | [Scripts/c94392192.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c94392192.lua) | 2 |
-| Puppet Shark | `53323475` | [Scripts/c53323475.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c53323475.lua) | 2 |
-| Hatsugai | `43618262` | [Scripts/c43618262.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c43618262.lua) | 2 |
+| Hollowrokket Dragon | `51548207` | [Scripts/c51548207.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c51548207.lua) | 2 |
+| Kewl Tune Cue | `16387555` | [Scripts/c16387555.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c16387555.lua) | 2 |
+| Kashtira Ogre | `94392192` | [Scripts/c94392192.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c94392192.lua) | 2 |
+| Puppet Shark | `53323475` | [Scripts/c53323475.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c53323475.lua) | 2 |
+| Hatsugai | `43618262` | [Scripts/c43618262.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c43618262.lua) | 2 |
 
 ## Script Examples
 
 ### Hollowrokket Dragon (`51548207`)
 
-Source: [Scripts/c51548207.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c51548207.lua)
+Source: [Scripts/c51548207.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c51548207.lua)
 
 ```lua
 		local g=Duel.GetDecktopGroup(1-tp,ct)
@@ -49,7 +49,7 @@ Source: [Scripts/c51548207.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/
 
 ### Kewl Tune Cue (`16387555`)
 
-Source: [Scripts/c16387555.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c16387555.lua)
+Source: [Scripts/c16387555.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c16387555.lua)
 
 ```lua
 	local g=Duel.GetDecktopGroup(1-tp,2)
@@ -61,7 +61,7 @@ Source: [Scripts/c16387555.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/
 
 ### Kashtira Ogre (`94392192`)
 
-Source: [Scripts/c94392192.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c94392192.lua)
+Source: [Scripts/c94392192.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c94392192.lua)
 
 ```lua
 	local g=Duel.GetDecktopGroup(1-tp,ct)

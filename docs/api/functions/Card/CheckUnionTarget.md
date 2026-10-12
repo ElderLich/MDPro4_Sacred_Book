@@ -39,20 +39,20 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Union Hangar | `66399653` | [Scripts/c66399653.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c66399653.lua) | 1 |
-| Delta Tri | `12079734` | [Scripts/c12079734.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c12079734.lua) | 1 |
-| Union Driver | `99249638` | [Scripts/c99249638.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c99249638.lua) | 1 |
-| X-Cross Cannon | `70860415` | [Scripts/c70860415.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c70860415.lua) | 1 |
-| Union Pilot | `89357740` | [Scripts/c89357740.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c89357740.lua) | 1 |
-| Formation Union | `26931058` | [Scripts/c26931058.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c26931058.lua) | 1 |
-| Unauthorized Reactivation | `12524259` | [Scripts/c12524259.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c12524259.lua) | 1 |
-| Roll Out! | `91597389` | [Scripts/c91597389.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c91597389.lua) | 1 |
+| Union Hangar | `66399653` | [Scripts/c66399653.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c66399653.lua) | 1 |
+| Delta Tri | `12079734` | [Scripts/c12079734.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c12079734.lua) | 1 |
+| Union Driver | `99249638` | [Scripts/c99249638.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c99249638.lua) | 1 |
+| X-Cross Cannon | `70860415` | [Scripts/c70860415.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c70860415.lua) | 1 |
+| Union Pilot | `89357740` | [Scripts/c89357740.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c89357740.lua) | 1 |
+| Formation Union | `26931058` | [Scripts/c26931058.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c26931058.lua) | 1 |
+| Unauthorized Reactivation | `12524259` | [Scripts/c12524259.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c12524259.lua) | 1 |
+| Roll Out! | `91597389` | [Scripts/c91597389.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c91597389.lua) | 1 |
 
 ## Script Examples
 
 ### Union Hangar (`66399653`)
 
-Source: [Scripts/c66399653.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c66399653.lua)
+Source: [Scripts/c66399653.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c66399653.lua)
 
 ```lua
 function c66399653.cfilter(c,ec,tp)
@@ -64,7 +64,7 @@ function c66399653.eqtg(e,tp,eg,ep,ev,re,r,rp,chk,chkc)
 
 ### Delta Tri (`12079734`)
 
-Source: [Scripts/c12079734.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c12079734.lua)
+Source: [Scripts/c12079734.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c12079734.lua)
 
 ```lua
 c12079734.has_text_type=TYPE_UNION
@@ -76,7 +76,7 @@ function c12079734.filter2(c)
 
 ### Union Driver (`99249638`)
 
-Source: [Scripts/c99249638.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c99249638.lua)
+Source: [Scripts/c99249638.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c99249638.lua)
 
 ```lua
 end

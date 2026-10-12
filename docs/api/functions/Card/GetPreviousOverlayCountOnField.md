@@ -31,21 +31,21 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Number 4: Stealth Kragen | `67557908` | [Scripts/c67557908.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c67557908.lua) | 1 |
-| Stealth Kragen Spawn | `94942656` | [Scripts/c94942656.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c94942656.lua) | 1 |
-| Rikka Queen Strenna | `3828844` | [Scripts/c3828844.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c3828844.lua) | 1 |
-| Number C101: Silent Honor DARK | `12744567` | [Scripts/c12744567.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c12744567.lua) | 1 |
-| Number 79: Battlin' Boxer Nova Kaiser | `71921856` | [Scripts/c71921856.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c71921856.lua) | 1 |
-| Number C1000: Numerounius | `89477759` | [Scripts/c89477759.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c89477759.lua) | 1 |
-| Number 53: Heart-eartH | `23998625` | [Scripts/c23998625.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c23998625.lua) | 1 |
-| Number C103: Ragnafinity | `20785975` | [Scripts/c20785975.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c20785975.lua) | 1 |
-| Cipher Spectrum | `98905` | [Scripts/c98905.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c98905.lua) | 1 |
+| Number 4: Stealth Kragen | `67557908` | [Scripts/c67557908.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c67557908.lua) | 1 |
+| Stealth Kragen Spawn | `94942656` | [Scripts/c94942656.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c94942656.lua) | 1 |
+| Rikka Queen Strenna | `3828844` | [Scripts/c3828844.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c3828844.lua) | 1 |
+| Number C101: Silent Honor DARK | `12744567` | [Scripts/c12744567.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c12744567.lua) | 1 |
+| Number 79: Battlin' Boxer Nova Kaiser | `71921856` | [Scripts/c71921856.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c71921856.lua) | 1 |
+| Number C1000: Numerounius | `89477759` | [Scripts/c89477759.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c89477759.lua) | 1 |
+| Number 53: Heart-eartH | `23998625` | [Scripts/c23998625.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c23998625.lua) | 1 |
+| Number C103: Ragnafinity | `20785975` | [Scripts/c20785975.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c20785975.lua) | 1 |
+| Cipher Spectrum | `98905` | [Scripts/c98905.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c98905.lua) | 1 |
 
 ## Script Examples
 
 ### Number 4: Stealth Kragen (`67557908`)
 
-Source: [Scripts/c67557908.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c67557908.lua)
+Source: [Scripts/c67557908.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c67557908.lua)
 
 ```lua
 function c67557908.spcon(e,tp,eg,ep,ev,re,r,rp)
@@ -57,7 +57,7 @@ function c67557908.spcon(e,tp,eg,ep,ev,re,r,rp)
 
 ### Stealth Kragen Spawn (`94942656`)
 
-Source: [Scripts/c94942656.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c94942656.lua)
+Source: [Scripts/c94942656.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c94942656.lua)
 
 ```lua
 function c94942656.spcon(e,tp,eg,ep,ev,re,r,rp)
@@ -69,7 +69,7 @@ function c94942656.spcon(e,tp,eg,ep,ev,re,r,rp)
 
 ### Rikka Queen Strenna (`3828844`)
 
-Source: [Scripts/c3828844.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c3828844.lua)
+Source: [Scripts/c3828844.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c3828844.lua)
 
 ```lua
 function c3828844.spcon(e,tp,eg,ep,ev,re,r,rp)

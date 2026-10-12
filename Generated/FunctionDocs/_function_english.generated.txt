@@ -432,7 +432,7 @@ Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3436
 
 ●Group Card.GetColumnGroup(Card c)
 Returns a Group containing cards in the same column as c.
-This MDPro3/YGOPro binding only takes c. It uses c's current on-field column, including related Monster Zones, Spell & Trap Zones, and Extra Monster Zone column relationships; if c is not on the field, the returned Group is empty.
+This MDPro4/YGOPro binding only takes c. It uses c's current on-field column, including related Monster Zones, Spell & Trap Zones, and Extra Monster Zone column relationships; if c is not on the field, the returned Group is empty.
 Parameters:
   c: Card
 Returns:
@@ -1562,7 +1562,7 @@ Source: D:\Programs\GitHub\ygopro-core\libcard.cpp:3697
 
 ●bool Card.IsCanChangePosition(Card c)
 Checks the core's effect-specific position-change capability for c.
-In this MDPro3/YGOPro core, that helper returns false for Link Monsters and true for other cards; it does not perform the broader manual battle-position-change checks.
+In this MDPro4/YGOPro core, that helper returns false for Link Monsters and true for other cards; it does not perform the broader manual battle-position-change checks.
 Parameters:
   c: Card
 Returns:
@@ -3925,7 +3925,7 @@ Source: D:\Programs\GitHub\ygopro-core\libduel.cpp:5063
 
 ●bool Duel.IsChainNegatable(int chainc)
 Compatibility check for whether chainc's activation can be negated.
-In this MDPro3 core binding, the function currently returns true for any chain count.
+In this MDPro4 core binding, the function currently returns true for any chain count.
 Local scripts still call it in negation conditions so the script expresses the intended activation-legality check.
 Use it with Duel.NegateActivation, not as a substitute for effect-negation checks such as Duel.IsChainDisablable.
 Parameters:
@@ -4140,7 +4140,7 @@ Source: D:\Programs\GitHub\ygopro-core\libduel.cpp:5053
 
 ●bool Duel.IsPlayerCanSpecialSummonMonster(int player, int code, [int|nil setcode], [int|nil type], [int|nil atk], [int|nil def], [int|nil level], [int|nil race], [int|nil attribute], [int pos], [int target_player], [int sumtype])
 Checks whether player can Special Summon a virtual monster with the supplied card data.
-Optional arguments override the loaded card data, then pos, target_player, and sumtype describe how and where the monster would be Summoned. This MDPro3 binding does not read a zone argument.
+Optional arguments override the loaded card data, then pos, target_player, and sumtype describe how and where the monster would be Summoned. This MDPro4 binding does not read a zone argument.
 Parameters:
   player: int
   code: int
@@ -8140,7 +8140,7 @@ Source: Utilities/procedure.lua:1677
 
 ●Effect Auxiliary.AddFusionEffectProcUltimate(Card c, table params)
 Creates the configurable Fusion Summon activation effect described by params.
-Missing material locations, material filters, material operations, Special Summon nocheck, and category fields are filled with the MDPro3 defaults. Unless params.reg is false, the effect is registered to c as an activation effect.
+Missing material locations, material filters, material operations, Special Summon nocheck, and category fields are filled with the MDPro4 defaults. Unless params.reg is false, the effect is registered to c as an activation effect.
 The generated effect checks Fusion Monsters in the Extra Deck, gathers and filters Fusion Materials, supports Chain Material fallback, selects materials, moves them with the configured operations, Special Summons with SUMMON_TYPE_FUSION, and completes the procedure.
 Parameters:
   c: Card

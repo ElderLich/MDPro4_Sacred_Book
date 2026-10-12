@@ -50,14 +50,14 @@ Generated from the local `Rush/Scripts/` folder and `rush_cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Beast Gear King Convoy Liogon | `120145031` | [Rush/Scripts/c120145031.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120145031.lua) | 1 |
-| Shock Dragon | `120130021` | [Rush/Scripts/c120130021.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120130021.lua) | 1 |
+| Beast Gear King Convoy Liogon | `120145031` | [Rush/Scripts/c120145031.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120145031.lua) | 1 |
+| Shock Dragon | `120130021` | [Rush/Scripts/c120130021.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120130021.lua) | 1 |
 
 ## Script Examples
 
 ### Beast Gear King Convoy Liogon (`120145031`)
 
-Source: [Rush/Scripts/c120145031.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120145031.lua)
+Source: [Rush/Scripts/c120145031.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120145031.lua)
 
 ```lua
 		local reset2=RESET_EVENT+RESETS_STANDARD-RESET_TURN_SET+RESET_PHASE+PHASE_END
@@ -69,7 +69,7 @@ Source: [Rush/Scripts/c120145031.lua](https://github.com/ElderLich/MDPro3_Sacred
 
 ### Shock Dragon (`120130021`)
 
-Source: [Rush/Scripts/c120130021.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120130021.lua)
+Source: [Rush/Scripts/c120130021.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120130021.lua)
 
 ```lua
 	if c:IsFaceup() and c:IsRelateToEffect(e) then

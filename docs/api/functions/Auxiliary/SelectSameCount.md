@@ -37,17 +37,17 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Melffys' Joyful Surprise | `79561872` | [Scripts/c79561872.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c79561872.lua) | 1 |
-| Dark Rebellion Xyz Dragon of the Four Heavenly Dragons | `90091224` | [Scripts/c90091224.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c90091224.lua) | 1 |
-| Mementomictlan Tecuhtlica - Creation King | `14529511` | [Scripts/c14529511.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c14529511.lua) | 1 |
-| Sky Striker Special Maneuver - Lemnisgate! | `34433770` | [Scripts/c34433770.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c34433770.lua) | 1 |
-| Fire King Sky Burn | `91703676` | [Scripts/c91703676.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c91703676.lua) | 1 |
+| Melffys' Joyful Surprise | `79561872` | [Scripts/c79561872.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c79561872.lua) | 1 |
+| Dark Rebellion Xyz Dragon of the Four Heavenly Dragons | `90091224` | [Scripts/c90091224.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c90091224.lua) | 1 |
+| Mementomictlan Tecuhtlica - Creation King | `14529511` | [Scripts/c14529511.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c14529511.lua) | 1 |
+| Sky Striker Special Maneuver - Lemnisgate! | `34433770` | [Scripts/c34433770.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c34433770.lua) | 1 |
+| Fire King Sky Burn | `91703676` | [Scripts/c91703676.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c91703676.lua) | 1 |
 
 ## Script Examples
 
 ### Melffys' Joyful Surprise (`79561872`)
 
-Source: [Scripts/c79561872.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c79561872.lua)
+Source: [Scripts/c79561872.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c79561872.lua)
 
 ```lua
 	if chk==0 then return #g1>0 and #g2>0 end
@@ -59,7 +59,7 @@ Source: [Scripts/c79561872.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/
 
 ### Dark Rebellion Xyz Dragon of the Four Heavenly Dragons (`90091224`)
 
-Source: [Scripts/c90091224.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c90091224.lua)
+Source: [Scripts/c90091224.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c90091224.lua)
 
 ```lua
 	local g2=g:Filter(Card.IsControler,nil,1-tp)
@@ -71,7 +71,7 @@ Source: [Scripts/c90091224.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/
 
 ### Mementomictlan Tecuhtlica - Creation King (`14529511`)
 
-Source: [Scripts/c14529511.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c14529511.lua)
+Source: [Scripts/c14529511.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c14529511.lua)
 
 ```lua
 		and #g1>0 and #g2>0 end

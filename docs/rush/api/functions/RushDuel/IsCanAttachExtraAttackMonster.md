@@ -55,18 +55,18 @@ Generated from the local `Rush/Scripts/` folder and `rush_cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Meet and Greed | `120208044` | [Rush/Scripts/c120208044.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120208044.lua) | 1 |
-| Mega Multistrike Dragon Dragias Burst \[L\] | `120210001` | [Rush/Scripts/c120210001.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120210001.lua) | 1 |
-| Elemental HERO Sky Neos | `120272066` | [Rush/Scripts/c120272066.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120272066.lua) | 1 |
-| Gilford the Rising | `120235028` | [Rush/Scripts/c120235028.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120235028.lua) | 1 |
-| Neutron Blast | `120283038` | [Rush/Scripts/c120283038.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120283038.lua) | 1 |
-| Degrace, the Flash Skysavior | `120235040` | [Rush/Scripts/c120235040.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120235040.lua) | 1 |
+| Meet and Greed | `120208044` | [Rush/Scripts/c120208044.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120208044.lua) | 1 |
+| Mega Multistrike Dragon Dragias Burst \[L\] | `120210001` | [Rush/Scripts/c120210001.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120210001.lua) | 1 |
+| Elemental HERO Sky Neos | `120272066` | [Rush/Scripts/c120272066.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120272066.lua) | 1 |
+| Gilford the Rising | `120235028` | [Rush/Scripts/c120235028.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120235028.lua) | 1 |
+| Neutron Blast | `120283038` | [Rush/Scripts/c120283038.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120283038.lua) | 1 |
+| Degrace, the Flash Skysavior | `120235040` | [Rush/Scripts/c120235040.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120235040.lua) | 1 |
 
 ## Script Examples
 
 ### Meet and Greed (`120208044`)
 
-Source: [Rush/Scripts/c120208044.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120208044.lua)
+Source: [Rush/Scripts/c120208044.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120208044.lua)
 
 ```lua
 --Activate
@@ -78,7 +78,7 @@ function cm.exfilter(c)
 
 ### Mega Multistrike Dragon Dragias Burst [L] (`120210001`)
 
-Source: [Rush/Scripts/c120210001.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120210001.lua)
+Source: [Rush/Scripts/c120210001.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120210001.lua)
 
 ```lua
 --Multiple Attack
@@ -90,7 +90,7 @@ cm.cost=RD.CostSendDeckTopToGrave(1)
 
 ### Elemental HERO Sky Neos (`120272066`)
 
-Source: [Rush/Scripts/c120272066.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120272066.lua)
+Source: [Rush/Scripts/c120272066.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120272066.lua)
 
 ```lua
 	local c=e:GetHandler()

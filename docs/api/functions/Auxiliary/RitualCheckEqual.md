@@ -33,14 +33,14 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Advanced Ritual Art | `46052429` | [Scripts/c46052429.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c46052429.lua) | 1 |
-| Emperor Tanuki's Critter Count | `20560620` | [Scripts/c20560620.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c20560620.lua) | 1 |
+| Advanced Ritual Art | `46052429` | [Scripts/c46052429.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c46052429.lua) | 1 |
+| Emperor Tanuki's Critter Count | `20560620` | [Scripts/c20560620.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c20560620.lua) | 1 |
 
 ## Script Examples
 
 ### Advanced Ritual Art (`46052429`)
 
-Source: [Scripts/c46052429.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c46052429.lua)
+Source: [Scripts/c46052429.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c46052429.lua)
 
 ```lua
 		Duel.Hint(HINT_SELECTMSG,tp,HINTMSG_TOGRAVE)
@@ -52,7 +52,7 @@ Source: [Scripts/c46052429.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/
 
 ### Emperor Tanuki's Critter Count (`20560620`)
 
-Source: [Scripts/c20560620.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c20560620.lua)
+Source: [Scripts/c20560620.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c20560620.lua)
 
 ```lua
 			return g:CheckWithSumGreater(Card.GetRitualLevel,lv,rc)

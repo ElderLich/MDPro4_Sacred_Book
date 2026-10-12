@@ -51,15 +51,15 @@ Generated from the local `Rush/Scripts/` folder and `rush_cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Dragon Double-Doom | `120235060` | [Rush/Scripts/c120235060.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120235060.lua) | 1 |
-| Burning Wind | `120264061` | [Rush/Scripts/c120264061.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120264061.lua) | 1 |
-| Call of the Earthbound | `120120047` | [Rush/Scripts/c120120047.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120120047.lua) | 1 |
+| Dragon Double-Doom | `120235060` | [Rush/Scripts/c120235060.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120235060.lua) | 1 |
+| Burning Wind | `120264061` | [Rush/Scripts/c120264061.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120264061.lua) | 1 |
+| Call of the Earthbound | `120120047` | [Rush/Scripts/c120120047.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120120047.lua) | 1 |
 
 ## Script Examples
 
 ### Dragon Double-Doom (`120235060`)
 
-Source: [Rush/Scripts/c120235060.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120235060.lua)
+Source: [Rush/Scripts/c120235060.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120235060.lua)
 
 ```lua
 end
@@ -71,7 +71,7 @@ function cm.activate(e,tp,eg,ep,ev,re,r,rp)
 
 ### Burning Wind (`120264061`)
 
-Source: [Rush/Scripts/c120264061.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120264061.lua)
+Source: [Rush/Scripts/c120264061.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120264061.lua)
 
 ```lua
 		RD.AttachAtkDef(e,g:GetFirst(),1000,0,RESET_EVENT+RESETS_STANDARD+RESET_PHASE+PHASE_END)
@@ -83,7 +83,7 @@ Source: [Rush/Scripts/c120264061.lua](https://github.com/ElderLich/MDPro3_Sacred
 
 ### Call of the Earthbound (`120120047`)
 
-Source: [Rush/Scripts/c120120047.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120120047.lua)
+Source: [Rush/Scripts/c120120047.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120120047.lua)
 
 ```lua
 end

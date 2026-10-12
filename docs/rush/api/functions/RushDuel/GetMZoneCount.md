@@ -44,15 +44,15 @@ Generated from the local `Rush/Scripts/` folder and `rush_cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| [Devil Foolish](/examples/rush-cards/120244026) | `120244026` | [Rush/Scripts/c120244026.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120244026.lua) | 1 |
-| Plectclive the Dynamauve Deadly Dirge | `120253043` | [Rush/Scripts/c120253043.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120253043.lua) | 1 |
-| Night Before the Big March | `120238023` | [Rush/Scripts/c120238023.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120238023.lua) | 1 |
+| [Devil Foolish](/examples/rush-cards/120244026) | `120244026` | [Rush/Scripts/c120244026.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120244026.lua) | 1 |
+| Plectclive the Dynamauve Deadly Dirge | `120253043` | [Rush/Scripts/c120253043.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120253043.lua) | 1 |
+| Night Before the Big March | `120238023` | [Rush/Scripts/c120238023.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120238023.lua) | 1 |
 
 ## Script Examples
 
 ### Devil Foolish (`120244026`)
 
-Source: [Rush/Scripts/c120244026.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120244026.lua)
+Source: [Rush/Scripts/c120244026.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120244026.lua)
 
 ```lua
 end
@@ -64,7 +64,7 @@ function cm.max(e,tp,eg,ep,ev,re,r,rp)
 
 ### Plectclive the Dynamauve Deadly Dirge (`120253043`)
 
-Source: [Rush/Scripts/c120253043.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120253043.lua)
+Source: [Rush/Scripts/c120253043.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120253043.lua)
 
 ```lua
 end
@@ -76,7 +76,7 @@ function cm.max(e,tp,eg,ep,ev,re,r,rp)
 
 ### Night Before the Big March (`120238023`)
 
-Source: [Rush/Scripts/c120238023.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120238023.lua)
+Source: [Rush/Scripts/c120238023.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120238023.lua)
 
 ```lua
 function cm.activate(e,tp,eg,ep,ev,re,r,rp)

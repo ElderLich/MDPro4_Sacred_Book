@@ -46,13 +46,13 @@ Generated from the local `Rush/Scripts/` folder and `rush_cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Neo-Spacian Grand Mole | `120306067` | [Rush/Scripts/c120306067.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120306067.lua) | 1 |
+| Neo-Spacian Grand Mole | `120306067` | [Rush/Scripts/c120306067.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120306067.lua) | 1 |
 
 ## Script Examples
 
 ### Neo-Spacian Grand Mole (`120306067`)
 
-Source: [Rush/Scripts/c120306067.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120306067.lua)
+Source: [Rush/Scripts/c120306067.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120306067.lua)
 
 ```lua
 				Duel.BreakEffect()

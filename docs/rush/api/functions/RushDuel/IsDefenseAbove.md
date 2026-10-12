@@ -46,22 +46,22 @@ Generated from the local `Rush/Scripts/` folder and `rush_cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Sword Skill - Ruler's Slash | `120208046` | [Rush/Scripts/c120208046.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120208046.lua) | 1 |
-| Animagica Coin | `120277056` | [Rush/Scripts/c120277056.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120277056.lua) | 1 |
-| Animagica Gardna | `120277027` | [Rush/Scripts/c120277027.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120277027.lua) | 1 |
-| Light-Calling Griffore | `120280008` | [Rush/Scripts/c120280008.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120280008.lua) | 1 |
-| Void Dust Fusion | `120277052` | [Rush/Scripts/c120277052.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120277052.lua) | 1 |
-| Defense Destroying Sword | `120208047` | [Rush/Scripts/c120208047.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120208047.lua) | 1 |
-| Scarechair Code | `120260072` | [Rush/Scripts/c120260072.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120260072.lua) | 1 |
-| Long Shield Gardna | `120145037` | [Rush/Scripts/c120145037.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120145037.lua) | 1 |
-| All-Seeing Harvey | `120249040` | [Rush/Scripts/c120249040.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120249040.lua) | 1 |
-| Dark Ruler Tempest | `120183042` | [Rush/Scripts/c120183042.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120183042.lua) | 1 |
+| Sword Skill - Ruler's Slash | `120208046` | [Rush/Scripts/c120208046.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120208046.lua) | 1 |
+| Animagica Coin | `120277056` | [Rush/Scripts/c120277056.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120277056.lua) | 1 |
+| Animagica Gardna | `120277027` | [Rush/Scripts/c120277027.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120277027.lua) | 1 |
+| Light-Calling Griffore | `120280008` | [Rush/Scripts/c120280008.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120280008.lua) | 1 |
+| Void Dust Fusion | `120277052` | [Rush/Scripts/c120277052.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120277052.lua) | 1 |
+| Defense Destroying Sword | `120208047` | [Rush/Scripts/c120208047.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120208047.lua) | 1 |
+| Scarechair Code | `120260072` | [Rush/Scripts/c120260072.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120260072.lua) | 1 |
+| Long Shield Gardna | `120145037` | [Rush/Scripts/c120145037.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120145037.lua) | 1 |
+| All-Seeing Harvey | `120249040` | [Rush/Scripts/c120249040.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120249040.lua) | 1 |
+| Dark Ruler Tempest | `120183042` | [Rush/Scripts/c120183042.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120183042.lua) | 1 |
 
 ## Script Examples
 
 ### Sword Skill - Ruler's Slash (`120208046`)
 
-Source: [Rush/Scripts/c120208046.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120208046.lua)
+Source: [Rush/Scripts/c120208046.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120208046.lua)
 
 ```lua
 end
@@ -73,7 +73,7 @@ function cm.desfilter(c)
 
 ### Animagica Coin (`120277056`)
 
-Source: [Rush/Scripts/c120277056.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120277056.lua)
+Source: [Rush/Scripts/c120277056.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120277056.lua)
 
 ```lua
 function cm.thfilter(c)
@@ -85,7 +85,7 @@ function cm.target(e,tp,eg,ep,ev,re,r,rp,chk)
 
 ### Animagica Gardna (`120277027`)
 
-Source: [Rush/Scripts/c120277027.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120277027.lua)
+Source: [Rush/Scripts/c120277027.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120277027.lua)
 
 ```lua
 function cm.thfilter(c)

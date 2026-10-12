@@ -47,18 +47,18 @@ Generated from the local `Rush/Scripts/` folder and `rush_cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Healthie Shanlong | `120306020` | [Rush/Scripts/c120306020.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120306020.lua) | 1 |
-| Healthie Sati | `120306024` | [Rush/Scripts/c120306024.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120306024.lua) | 1 |
-| Beast King Barbaros | `120300000` | [Rush/Scripts/c120300000.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120300000.lua) | 1 |
-| Healthie Rem | `120306022` | [Rush/Scripts/c120306022.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120306022.lua) | 1 |
-| Healthie Cafferin | `120306019` | [Rush/Scripts/c120306019.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120306019.lua) | 1 |
-| Healthie Lamilla | `120306021` | [Rush/Scripts/c120306021.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120306021.lua) | 1 |
+| Healthie Shanlong | `120306020` | [Rush/Scripts/c120306020.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120306020.lua) | 1 |
+| Healthie Sati | `120306024` | [Rush/Scripts/c120306024.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120306024.lua) | 1 |
+| Beast King Barbaros | `120300000` | [Rush/Scripts/c120300000.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120300000.lua) | 1 |
+| Healthie Rem | `120306022` | [Rush/Scripts/c120306022.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120306022.lua) | 1 |
+| Healthie Cafferin | `120306019` | [Rush/Scripts/c120306019.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120306019.lua) | 1 |
+| Healthie Lamilla | `120306021` | [Rush/Scripts/c120306021.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120306021.lua) | 1 |
 
 ## Script Examples
 
 ### Healthie Shanlong (`120306020`)
 
-Source: [Rush/Scripts/c120306020.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120306020.lua)
+Source: [Rush/Scripts/c120306020.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120306020.lua)
 
 ```lua
 	RD.AddCodeList(c,list)
@@ -70,7 +70,7 @@ Source: [Rush/Scripts/c120306020.lua](https://github.com/ElderLich/MDPro3_Sacred
 
 ### Healthie Sati (`120306024`)
 
-Source: [Rush/Scripts/c120306024.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120306024.lua)
+Source: [Rush/Scripts/c120306024.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120306024.lua)
 
 ```lua
 function cm.initial_effect(c)
@@ -82,7 +82,7 @@ function cm.initial_effect(c)
 
 ### Beast King Barbaros (`120300000`)
 
-Source: [Rush/Scripts/c120300000.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120300000.lua)
+Source: [Rush/Scripts/c120300000.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120300000.lua)
 
 ```lua
 function cm.initial_effect(c)

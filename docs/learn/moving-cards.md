@@ -26,7 +26,7 @@ resolution.
 | [`Duel.GetControl`](/api/functions/Duel/GetControl) | Change control of cards. |
 
 Some outside examples use `Duel.RemoveCards` for banishing cards. That function
-is not present in the local MDPro3/YGOPro sources checked for Sacred Book. Use
+is not present in the local MDPro4/YGOPro sources checked for Sacred Book. Use
 local `Duel.Remove` instead.
 
 ## Movement Router

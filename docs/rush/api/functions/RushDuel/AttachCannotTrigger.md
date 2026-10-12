@@ -49,27 +49,27 @@ Generated from the local `Rush/Scripts/` folder and `rush_cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| [Invitation to a Delirious Dream](/examples/rush-cards/120261066) | `120261066` | [Rush/Scripts/c120261066.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120261066.lua) | 1 |
-| Reshef the Dark Being | `120306069` | [Rush/Scripts/c120306069.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120306069.lua) | 1 |
-| Healthie Tigasati | `120306042` | [Rush/Scripts/c120306042.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120306042.lua) | 1 |
-| Lovely Sanctuary | `120260052` | [Rush/Scripts/c120260052.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120260052.lua) | 1 |
-| King's Authority | `120254088` | [Rush/Scripts/c120254088.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120254088.lua) | 1 |
-| Raging Rock | `120246072` | [Rush/Scripts/c120246072.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120246072.lua) | 1 |
-| Spirit of Isyria | `120300061` | [Rush/Scripts/c120300061.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120300061.lua) | 1 |
-| Yabume the Frost-Purifying Purebreed | `120298045` | [Rush/Scripts/c120298045.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120298045.lua) | 1 |
-| Magma Dragon | `120109064` | [Rush/Scripts/c120109064.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120109064.lua) | 1 |
-| Metarion Medustar | `120271018` | [Rush/Scripts/c120271018.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120271018.lua) | 1 |
-| Brain Control | `120307003` | [Rush/Scripts/c120307003.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120307003.lua) | 1 |
-| Thunderbeetle Crash | `120306007` | [Rush/Scripts/c120306007.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120306007.lua) | 1 |
-| The Chop | `120294061` | [Rush/Scripts/c120294061.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120294061.lua) | 1 |
-| Criatura Brazo | `120291005` | [Rush/Scripts/c120291005.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120291005.lua) | 1 |
-| Ultimate Flag Beast Boltricorn | `120246013` | [Rush/Scripts/c120246013.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120246013.lua) | 1 |
+| [Invitation to a Delirious Dream](/examples/rush-cards/120261066) | `120261066` | [Rush/Scripts/c120261066.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120261066.lua) | 1 |
+| Reshef the Dark Being | `120306069` | [Rush/Scripts/c120306069.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120306069.lua) | 1 |
+| Healthie Tigasati | `120306042` | [Rush/Scripts/c120306042.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120306042.lua) | 1 |
+| Lovely Sanctuary | `120260052` | [Rush/Scripts/c120260052.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120260052.lua) | 1 |
+| King's Authority | `120254088` | [Rush/Scripts/c120254088.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120254088.lua) | 1 |
+| Raging Rock | `120246072` | [Rush/Scripts/c120246072.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120246072.lua) | 1 |
+| Spirit of Isyria | `120300061` | [Rush/Scripts/c120300061.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120300061.lua) | 1 |
+| Yabume the Frost-Purifying Purebreed | `120298045` | [Rush/Scripts/c120298045.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120298045.lua) | 1 |
+| Magma Dragon | `120109064` | [Rush/Scripts/c120109064.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120109064.lua) | 1 |
+| Metarion Medustar | `120271018` | [Rush/Scripts/c120271018.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120271018.lua) | 1 |
+| Brain Control | `120307003` | [Rush/Scripts/c120307003.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120307003.lua) | 1 |
+| Thunderbeetle Crash | `120306007` | [Rush/Scripts/c120306007.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120306007.lua) | 1 |
+| The Chop | `120294061` | [Rush/Scripts/c120294061.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120294061.lua) | 1 |
+| Criatura Brazo | `120291005` | [Rush/Scripts/c120291005.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120291005.lua) | 1 |
+| Ultimate Flag Beast Boltricorn | `120246013` | [Rush/Scripts/c120246013.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120246013.lua) | 1 |
 
 ## Script Examples
 
 ### Invitation to a Delirious Dream (`120261066`)
 
-Source: [Rush/Scripts/c120261066.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120261066.lua)
+Source: [Rush/Scripts/c120261066.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120261066.lua)
 
 ```lua
 		if Duel.GetControl(tc,tp)~=0 then
@@ -81,7 +81,7 @@ Source: [Rush/Scripts/c120261066.lua](https://github.com/ElderLich/MDPro3_Sacred
 
 ### Reshef the Dark Being (`120306069`)
 
-Source: [Rush/Scripts/c120306069.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120306069.lua)
+Source: [Rush/Scripts/c120306069.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120306069.lua)
 
 ```lua
 		local tc=g:GetFirst()
@@ -93,7 +93,7 @@ Source: [Rush/Scripts/c120306069.lua](https://github.com/ElderLich/MDPro3_Sacred
 
 ### Healthie Tigasati (`120306042`)
 
-Source: [Rush/Scripts/c120306042.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120306042.lua)
+Source: [Rush/Scripts/c120306042.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120306042.lua)
 
 ```lua
 				g:ForEach(function(tc)

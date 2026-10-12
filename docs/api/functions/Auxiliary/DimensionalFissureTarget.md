@@ -28,16 +28,16 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Awakening of the Sacred Beasts | `53701259` | [Scripts/c53701259.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c53701259.lua) | 1 |
-| Invoked Oceanus | `6772168` | [Scripts/c6772168.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c6772168.lua) | 1 |
-| Different Dimension Ground | `31849106` | [Scripts/c31849106.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c31849106.lua) | 1 |
-| Dimensional Fissure | `81674782` | [Scripts/c81674782.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c81674782.lua) | 1 |
+| Awakening of the Sacred Beasts | `53701259` | [Scripts/c53701259.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c53701259.lua) | 1 |
+| Invoked Oceanus | `6772168` | [Scripts/c6772168.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c6772168.lua) | 1 |
+| Different Dimension Ground | `31849106` | [Scripts/c31849106.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c31849106.lua) | 1 |
+| Dimensional Fissure | `81674782` | [Scripts/c81674782.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c81674782.lua) | 1 |
 
 ## Script Examples
 
 ### Awakening of the Sacred Beasts (`53701259`)
 
-Source: [Scripts/c53701259.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c53701259.lua)
+Source: [Scripts/c53701259.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c53701259.lua)
 
 ```lua
 end
@@ -49,7 +49,7 @@ function c53701259.rmcon(e)
 
 ### Invoked Oceanus (`6772168`)
 
-Source: [Scripts/c6772168.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c6772168.lua)
+Source: [Scripts/c6772168.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c6772168.lua)
 
 ```lua
 end
@@ -61,7 +61,7 @@ function s.filter(c)
 
 ### Different Dimension Ground (`31849106`)
 
-Source: [Scripts/c31849106.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c31849106.lua)
+Source: [Scripts/c31849106.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c31849106.lua)
 
 ```lua
 	e1:SetProperty(EFFECT_FLAG_SET_AVAILABLE+EFFECT_FLAG_IGNORE_RANGE+EFFECT_FLAG_IGNORE_IMMUNE)

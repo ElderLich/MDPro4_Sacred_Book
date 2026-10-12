@@ -55,19 +55,19 @@ Generated from the local `Rush/Scripts/` folder and `rush_cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Sevens Road Wiz | `120183014` | [Rush/Scripts/c120183014.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120183014.lua) | 1 |
-| Drilling Mandrill | `120155031` | [Rush/Scripts/c120155031.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120155031.lua) | 1 |
-| Nullstrike Dragon Zerogias | `120180001` | [Rush/Scripts/c120180001.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120180001.lua) | 1 |
-| Void Strike Dragon Zerogaigias | `120211001` | [Rush/Scripts/c120211001.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120211001.lua) | 1 |
-| Gajumaru the Shadow Flower Lion | `120170030` | [Rush/Scripts/c120170030.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120170030.lua) | 1 |
-| Mask of Volos | `120120034` | [Rush/Scripts/c120120034.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120120034.lua) | 1 |
-| Triple Threat Thunder | `120145047` | [Rush/Scripts/c120145047.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120145047.lua) | 1 |
+| Sevens Road Wiz | `120183014` | [Rush/Scripts/c120183014.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120183014.lua) | 1 |
+| Drilling Mandrill | `120155031` | [Rush/Scripts/c120155031.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120155031.lua) | 1 |
+| Nullstrike Dragon Zerogias | `120180001` | [Rush/Scripts/c120180001.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120180001.lua) | 1 |
+| Void Strike Dragon Zerogaigias | `120211001` | [Rush/Scripts/c120211001.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120211001.lua) | 1 |
+| Gajumaru the Shadow Flower Lion | `120170030` | [Rush/Scripts/c120170030.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120170030.lua) | 1 |
+| Mask of Volos | `120120034` | [Rush/Scripts/c120120034.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120120034.lua) | 1 |
+| Triple Threat Thunder | `120145047` | [Rush/Scripts/c120145047.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120145047.lua) | 1 |
 
 ## Script Examples
 
 ### Sevens Road Wiz (`120183014`)
 
-Source: [Rush/Scripts/c120183014.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120183014.lua)
+Source: [Rush/Scripts/c120183014.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120183014.lua)
 
 ```lua
 	local filter=RD.Filter(cm.filter,c:GetAttack())
@@ -79,7 +79,7 @@ Source: [Rush/Scripts/c120183014.lua](https://github.com/ElderLich/MDPro3_Sacred
 
 ### Drilling Mandrill (`120155031`)
 
-Source: [Rush/Scripts/c120155031.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120155031.lua)
+Source: [Rush/Scripts/c120155031.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120155031.lua)
 
 ```lua
 			local og=Duel.GetOperatedGroup()
@@ -91,7 +91,7 @@ Source: [Rush/Scripts/c120155031.lua](https://github.com/ElderLich/MDPro3_Sacred
 
 ### Nullstrike Dragon Zerogias (`120180001`)
 
-Source: [Rush/Scripts/c120180001.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120180001.lua)
+Source: [Rush/Scripts/c120180001.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120180001.lua)
 
 ```lua
 function cm.operation(e,tp,eg,ep,ev,re,r,rp)

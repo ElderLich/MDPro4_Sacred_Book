@@ -11,7 +11,7 @@ Generates YGOPro Lua API documentation from the local card scripting workspace a
 - `Utilities/constant.lua`: current constant values and source comments.
 - `Rush/Utilities/special.lua` and its `RD*.lua` modules: separately pinned Rush helper signatures, source comments, constants and load order. `RushDuel.Name` has the runtime alias `RD.Name`.
 - `D:\Programs\GitHub\DataEditorX\DataEditorX\data\lua\constant.lua`: stale constant comparison.
-- `D:\Programs\GitHub\MDPro3_Data\Data\locales\en-US\strings.conf`: category label comparison.
+- `D:\Programs\GitHub\MDPro4_Data\Data\locales\en-US\strings.conf`: category label comparison.
 
 The old `OLD/Utilities` folder is no longer a documentation source. New wording should be reviewed in Sacred Book and regenerated from the structured JSON/tooling here.
 
@@ -27,7 +27,7 @@ Useful options:
 python Tools\FunctionDocs\generate_function_docs.py `
   --ygopro-core "D:\Programs\GitHub\ygopro-core" `
   --dataeditorx-data "D:\Programs\GitHub\DataEditorX\DataEditorX\data" `
-  --mdpro3-locales "D:\Programs\GitHub\MDPro3_Data\Data\locales"
+  --mdpro4-locales "D:\Programs\GitHub\MDPro4_Data\Data\locales"
 ```
 
 ## Outputs

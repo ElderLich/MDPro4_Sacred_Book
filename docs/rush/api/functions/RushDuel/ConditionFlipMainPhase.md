@@ -45,15 +45,15 @@ Generated from the local `Rush/Scripts/` folder and `rush_cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Magician of Faith | `120307006` | [Rush/Scripts/c120307006.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120307006.lua) | 1 |
-| Mask of Darkness | `120307007` | [Rush/Scripts/c120307007.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120307007.lua) | 1 |
-| Penguin Soldier | `120307022` | [Rush/Scripts/c120307022.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120307022.lua) | 1 |
+| Magician of Faith | `120307006` | [Rush/Scripts/c120307006.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120307006.lua) | 1 |
+| Mask of Darkness | `120307007` | [Rush/Scripts/c120307007.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120307007.lua) | 1 |
+| Penguin Soldier | `120307022` | [Rush/Scripts/c120307022.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120307022.lua) | 1 |
 
 ## Script Examples
 
 ### Magician of Faith (`120307006`)
 
-Source: [Rush/Scripts/c120307006.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120307006.lua)
+Source: [Rush/Scripts/c120307006.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120307006.lua)
 
 ```lua
 	e1:SetType(EFFECT_TYPE_IGNITION)
@@ -65,7 +65,7 @@ Source: [Rush/Scripts/c120307006.lua](https://github.com/ElderLich/MDPro3_Sacred
 
 ### Mask of Darkness (`120307007`)
 
-Source: [Rush/Scripts/c120307007.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120307007.lua)
+Source: [Rush/Scripts/c120307007.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120307007.lua)
 
 ```lua
 	e1:SetType(EFFECT_TYPE_IGNITION)
@@ -77,7 +77,7 @@ Source: [Rush/Scripts/c120307007.lua](https://github.com/ElderLich/MDPro3_Sacred
 
 ### Penguin Soldier (`120307022`)
 
-Source: [Rush/Scripts/c120307022.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120307022.lua)
+Source: [Rush/Scripts/c120307022.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120307022.lua)
 
 ```lua
 	e1:SetType(EFFECT_TYPE_IGNITION)

@@ -46,30 +46,30 @@ Generated from the local `Rush/Scripts/` folder and `rush_cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Jeweled Tusk Ritual | `120290056` | [Rush/Scripts/c120290056.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120290056.lua) | 1 |
-| Skullrise Squall | `120298011` | [Rush/Scripts/c120298011.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120298011.lua) | 1 |
-| Dimension Pair Link L | `120309030` | [Rush/Scripts/c120309030.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120309030.lua) | 1 |
-| Dimension Pair Link R | `120309031` | [Rush/Scripts/c120309031.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120309031.lua) | 1 |
-| Healthy's High! | `120306051` | [Rush/Scripts/c120306051.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120306051.lua) | 1 |
-| I'm Having Trouble with My Fields Being Destroyed! | `120298028` | [Rush/Scripts/c120298028.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120298028.lua) | 1 |
-| I Need Holy Water to Ward Off Evil Spirits! | `120298029` | [Rush/Scripts/c120298029.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120298029.lua) | 1 |
-| Ninjitsu Art of Ultimate Transformation | `120306056` | [Rush/Scripts/c120306056.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120306056.lua) | 1 |
-| Plasmatic Model Another Play | `120301070` | [Rush/Scripts/c120301070.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120301070.lua) | 1 |
-| Skullrise Violent | `120298012` | [Rush/Scripts/c120298012.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120298012.lua) | 1 |
-| Plasmatic Model Another Docking | `120290051` | [Rush/Scripts/c120290051.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120290051.lua) | 1 |
-| Beastly Mirror Calling | `120304057` | [Rush/Scripts/c120304057.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120304057.lua) | 1 |
-| Altar of the Twin Blaze Fiends | `120287036` | [Rush/Scripts/c120287036.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120287036.lua) | 1 |
-| Plasmatic Model Play | `120285058` | [Rush/Scripts/c120285058.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120285058.lua) | 1 |
-| Necromaid Resize | `120294050` | [Rush/Scripts/c120294050.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120294050.lua) | 1 |
-| Plasmatic Model Docking | `120285057` | [Rush/Scripts/c120285057.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120285057.lua) | 1 |
-| War-Lion Assault | `120294058` | [Rush/Scripts/c120294058.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120294058.lua) | 1 |
-| Root of Despair | `120301033` | [Rush/Scripts/c120301033.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120301033.lua) | 1 |
+| Jeweled Tusk Ritual | `120290056` | [Rush/Scripts/c120290056.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120290056.lua) | 1 |
+| Skullrise Squall | `120298011` | [Rush/Scripts/c120298011.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120298011.lua) | 1 |
+| Dimension Pair Link L | `120309030` | [Rush/Scripts/c120309030.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120309030.lua) | 1 |
+| Dimension Pair Link R | `120309031` | [Rush/Scripts/c120309031.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120309031.lua) | 1 |
+| Healthy's High! | `120306051` | [Rush/Scripts/c120306051.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120306051.lua) | 1 |
+| I'm Having Trouble with My Fields Being Destroyed! | `120298028` | [Rush/Scripts/c120298028.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120298028.lua) | 1 |
+| I Need Holy Water to Ward Off Evil Spirits! | `120298029` | [Rush/Scripts/c120298029.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120298029.lua) | 1 |
+| Ninjitsu Art of Ultimate Transformation | `120306056` | [Rush/Scripts/c120306056.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120306056.lua) | 1 |
+| Plasmatic Model Another Play | `120301070` | [Rush/Scripts/c120301070.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120301070.lua) | 1 |
+| Skullrise Violent | `120298012` | [Rush/Scripts/c120298012.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120298012.lua) | 1 |
+| Plasmatic Model Another Docking | `120290051` | [Rush/Scripts/c120290051.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120290051.lua) | 1 |
+| Beastly Mirror Calling | `120304057` | [Rush/Scripts/c120304057.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120304057.lua) | 1 |
+| Altar of the Twin Blaze Fiends | `120287036` | [Rush/Scripts/c120287036.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120287036.lua) | 1 |
+| Plasmatic Model Play | `120285058` | [Rush/Scripts/c120285058.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120285058.lua) | 1 |
+| Necromaid Resize | `120294050` | [Rush/Scripts/c120294050.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120294050.lua) | 1 |
+| Plasmatic Model Docking | `120285057` | [Rush/Scripts/c120285057.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120285057.lua) | 1 |
+| War-Lion Assault | `120294058` | [Rush/Scripts/c120294058.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120294058.lua) | 1 |
+| Root of Despair | `120301033` | [Rush/Scripts/c120301033.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120301033.lua) | 1 |
 
 ## Script Examples
 
 ### Jeweled Tusk Ritual (`120290056`)
 
-Source: [Rush/Scripts/c120290056.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120290056.lua)
+Source: [Rush/Scripts/c120290056.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120290056.lua)
 
 ```lua
 	Duel.AddCustomActivityCounter(m,ACTIVITY_SPSUMMON,cm.ctfilter)
@@ -81,7 +81,7 @@ Source: [Rush/Scripts/c120290056.lua](https://github.com/ElderLich/MDPro3_Sacred
 
 ### Skullrise Squall (`120298011`)
 
-Source: [Rush/Scripts/c120298011.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120298011.lua)
+Source: [Rush/Scripts/c120298011.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120298011.lua)
 
 ```lua
 	RD.AddCodeList(c,list)
@@ -93,7 +93,7 @@ Source: [Rush/Scripts/c120298011.lua](https://github.com/ElderLich/MDPro3_Sacred
 
 ### Dimension Pair Link L (`120309030`)
 
-Source: [Rush/Scripts/c120309030.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120309030.lua)
+Source: [Rush/Scripts/c120309030.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120309030.lua)
 
 ```lua
 	RD.AddCodeList(c,list)

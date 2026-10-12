@@ -33,13 +33,13 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Drytron Nova | `94187078` | [Scripts/c94187078.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c94187078.lua) | 1 |
+| Drytron Nova | `94187078` | [Scripts/c94187078.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c94187078.lua) | 1 |
 
 ## Script Examples
 
 ### Drytron Nova (`94187078`)
 
-Source: [Scripts/c94187078.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c94187078.lua)
+Source: [Scripts/c94187078.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c94187078.lua)
 
 ```lua
 	e1:SetProperty(EFFECT_FLAG_PLAYER_TARGET+EFFECT_FLAG_OATH)

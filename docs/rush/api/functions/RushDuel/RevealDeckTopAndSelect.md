@@ -62,18 +62,18 @@ Generated from the local `Rush/Scripts/` folder and `rush_cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| [Skysavior Watch](/examples/rush-cards/120235053) | `120235053` | [Rush/Scripts/c120235053.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120235053.lua) | 1 |
-| [Miracle Pick](/examples/rush-cards/120253052) | `120253052` | [Rush/Scripts/c120253052.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120253052.lua) | 1 |
-| [Pot of Duality](/examples/rush-cards/120271002) | `120271002` | [Rush/Scripts/c120271002.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120271002.lua) | 1 |
-| [Crystal Seer](/examples/rush-cards/120109067) | `120109067` | [Rush/Scripts/c120109067.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120109067.lua) | 1 |
-| Jointech Digup | `120249047` | [Rush/Scripts/c120249047.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120249047.lua) | 1 |
-| Specter of Heaven's End | `120217092` | [Rush/Scripts/c120217092.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120217092.lua) | 1 |
+| [Skysavior Watch](/examples/rush-cards/120235053) | `120235053` | [Rush/Scripts/c120235053.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120235053.lua) | 1 |
+| [Miracle Pick](/examples/rush-cards/120253052) | `120253052` | [Rush/Scripts/c120253052.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120253052.lua) | 1 |
+| [Pot of Duality](/examples/rush-cards/120271002) | `120271002` | [Rush/Scripts/c120271002.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120271002.lua) | 1 |
+| [Crystal Seer](/examples/rush-cards/120109067) | `120109067` | [Rush/Scripts/c120109067.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120109067.lua) | 1 |
+| Jointech Digup | `120249047` | [Rush/Scripts/c120249047.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120249047.lua) | 1 |
+| Specter of Heaven's End | `120217092` | [Rush/Scripts/c120217092.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120217092.lua) | 1 |
 
 ## Script Examples
 
 ### Skysavior Watch (`120235053`)
 
-Source: [Rush/Scripts/c120235053.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120235053.lua)
+Source: [Rush/Scripts/c120235053.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120235053.lua)
 
 ```lua
 	local p=Duel.GetChainInfo(0,CHAININFO_TARGET_PLAYER)
@@ -85,7 +85,7 @@ Source: [Rush/Scripts/c120235053.lua](https://github.com/ElderLich/MDPro3_Sacred
 
 ### Miracle Pick (`120253052`)
 
-Source: [Rush/Scripts/c120253052.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120253052.lua)
+Source: [Rush/Scripts/c120253052.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120253052.lua)
 
 ```lua
 	local p=Duel.GetChainInfo(0,CHAININFO_TARGET_PLAYER)
@@ -97,7 +97,7 @@ Source: [Rush/Scripts/c120253052.lua](https://github.com/ElderLich/MDPro3_Sacred
 
 ### Pot of Duality (`120271002`)
 
-Source: [Rush/Scripts/c120271002.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120271002.lua)
+Source: [Rush/Scripts/c120271002.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120271002.lua)
 
 ```lua
 	local p=Duel.GetChainInfo(0,CHAININFO_TARGET_PLAYER)

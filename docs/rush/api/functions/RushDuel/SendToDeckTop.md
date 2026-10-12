@@ -59,37 +59,37 @@ Generated from the local `Rush/Scripts/` folder and `rush_cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| [Major Breaking News!](/examples/rush-cards/120304060) | `120304060` | [Rush/Scripts/c120304060.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120304060.lua) | 1 |
-| Ether Escape | `120235062` | [Rush/Scripts/c120235062.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120235062.lua) | 1 |
-| Eria the Water Spiritualist | `120301010` | [Rush/Scripts/c120301010.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120301010.lua) | 1 |
-| Spice Cross Black Pepper | `120261061` | [Rush/Scripts/c120261061.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120261061.lua) | 1 |
-| JAM:P Set! | `120183041` | [Rush/Scripts/c120183041.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120183041.lua) | 1 |
-| Twilight Companion - Dralia | `120304068` | [Rush/Scripts/c120304068.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120304068.lua) | 1 |
-| Reporter Recorder | `120304010` | [Rush/Scripts/c120304010.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120304010.lua) | 1 |
-| Master Craftsman Kotetsu | `120238036` | [Rush/Scripts/c120238036.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120238036.lua) | 1 |
-| The Nomnom Liliputian | `120309054` | [Rush/Scripts/c120309054.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120309054.lua) | 1 |
-| Reporter Wars Scoopies \[R\] | `120304009` | [Rush/Scripts/c120304009.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120304009.lua) | 1 |
-| Unfulfilled Goblin | `120203039` | [Rush/Scripts/c120203039.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120203039.lua) | 1 |
-| Alchemicalize Orb | `120272037` | [Rush/Scripts/c120272037.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120272037.lua) | 1 |
-| Black Dragon's Roar | `120203053` | [Rush/Scripts/c120203053.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120203053.lua) | 1 |
-| Dice Key Kuu | `120261011` | [Rush/Scripts/c120261011.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120261011.lua) | 1 |
-| The Imprisoned Dragon Princess | `120306009` | [Rush/Scripts/c120306009.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120306009.lua) | 1 |
-| Deep Space Impact | `120260023` | [Rush/Scripts/c120260023.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120260023.lua) | 1 |
-| Sparkle the Super Assistant | `120254065` | [Rush/Scripts/c120254065.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120254065.lua) | 2 |
-| Worker Warrior - Multitasking Manager | `120304028` | [Rush/Scripts/c120304028.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120304028.lua) | 1 |
-| Ether F Striker | `120205044` | [Rush/Scripts/c120205044.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120205044.lua) | 1 |
-| Avian Spell Tactics | `120170053` | [Rush/Scripts/c120170053.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120170053.lua) | 1 |
-| The Connected Liliputians | `120309053` | [Rush/Scripts/c120309053.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120309053.lua) | 1 |
-| Clean Beret - Colonel Mop | `120150021` | [Rush/Scripts/c120150021.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120150021.lua) | 1 |
-| Chemipet Purr | `120249009` | [Rush/Scripts/c120249009.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120249009.lua) | 1 |
-| Psychic Divergence | `120140037` | [Rush/Scripts/c120140037.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120140037.lua) | 1 |
+| [Major Breaking News!](/examples/rush-cards/120304060) | `120304060` | [Rush/Scripts/c120304060.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120304060.lua) | 1 |
+| Ether Escape | `120235062` | [Rush/Scripts/c120235062.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120235062.lua) | 1 |
+| Eria the Water Spiritualist | `120301010` | [Rush/Scripts/c120301010.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120301010.lua) | 1 |
+| Spice Cross Black Pepper | `120261061` | [Rush/Scripts/c120261061.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120261061.lua) | 1 |
+| JAM:P Set! | `120183041` | [Rush/Scripts/c120183041.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120183041.lua) | 1 |
+| Twilight Companion - Dralia | `120304068` | [Rush/Scripts/c120304068.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120304068.lua) | 1 |
+| Reporter Recorder | `120304010` | [Rush/Scripts/c120304010.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120304010.lua) | 1 |
+| Master Craftsman Kotetsu | `120238036` | [Rush/Scripts/c120238036.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120238036.lua) | 1 |
+| The Nomnom Liliputian | `120309054` | [Rush/Scripts/c120309054.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120309054.lua) | 1 |
+| Reporter Wars Scoopies \[R\] | `120304009` | [Rush/Scripts/c120304009.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120304009.lua) | 1 |
+| Unfulfilled Goblin | `120203039` | [Rush/Scripts/c120203039.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120203039.lua) | 1 |
+| Alchemicalize Orb | `120272037` | [Rush/Scripts/c120272037.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120272037.lua) | 1 |
+| Black Dragon's Roar | `120203053` | [Rush/Scripts/c120203053.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120203053.lua) | 1 |
+| Dice Key Kuu | `120261011` | [Rush/Scripts/c120261011.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120261011.lua) | 1 |
+| The Imprisoned Dragon Princess | `120306009` | [Rush/Scripts/c120306009.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120306009.lua) | 1 |
+| Deep Space Impact | `120260023` | [Rush/Scripts/c120260023.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120260023.lua) | 1 |
+| Sparkle the Super Assistant | `120254065` | [Rush/Scripts/c120254065.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120254065.lua) | 2 |
+| Worker Warrior - Multitasking Manager | `120304028` | [Rush/Scripts/c120304028.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120304028.lua) | 1 |
+| Ether F Striker | `120205044` | [Rush/Scripts/c120205044.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120205044.lua) | 1 |
+| Avian Spell Tactics | `120170053` | [Rush/Scripts/c120170053.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120170053.lua) | 1 |
+| The Connected Liliputians | `120309053` | [Rush/Scripts/c120309053.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120309053.lua) | 1 |
+| Clean Beret - Colonel Mop | `120150021` | [Rush/Scripts/c120150021.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120150021.lua) | 1 |
+| Chemipet Purr | `120249009` | [Rush/Scripts/c120249009.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120249009.lua) | 1 |
+| Psychic Divergence | `120140037` | [Rush/Scripts/c120140037.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120140037.lua) | 1 |
 | ...and 3 more |  |  |  |
 
 ## Script Examples
 
 ### Major Breaking News! (`120304060`)
 
-Source: [Rush/Scripts/c120304060.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120304060.lua)
+Source: [Rush/Scripts/c120304060.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120304060.lua)
 
 ```lua
 function cm.activate(e,tp,eg,ep,ev,re,r,rp)
@@ -101,7 +101,7 @@ function cm.activate(e,tp,eg,ep,ev,re,r,rp)
 
 ### Ether Escape (`120235062`)
 
-Source: [Rush/Scripts/c120235062.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120235062.lua)
+Source: [Rush/Scripts/c120235062.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120235062.lua)
 
 ```lua
 		and Duel.IsExistingMatchingCard(cm.exfilter,tp,LOCATION_MZONE,0,1,nil) then
@@ -113,7 +113,7 @@ Source: [Rush/Scripts/c120235062.lua](https://github.com/ElderLich/MDPro3_Sacred
 
 ### Eria the Water Spiritualist (`120301010`)
 
-Source: [Rush/Scripts/c120301010.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120301010.lua)
+Source: [Rush/Scripts/c120301010.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120301010.lua)
 
 ```lua
 function cm.operation(e,tp,eg,ep,ev,re,r,rp)

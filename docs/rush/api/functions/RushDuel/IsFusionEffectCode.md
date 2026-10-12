@@ -48,14 +48,14 @@ Generated from the local `Rush/Scripts/` folder and `rush_cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Variable Stellariser | `120277007` | [Rush/Scripts/c120277007.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120277007.lua) | 1 |
-| Tama Bond | `120285053` | [Rush/Scripts/c120285053.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120285053.lua) | 1 |
+| Variable Stellariser | `120277007` | [Rush/Scripts/c120277007.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120277007.lua) | 1 |
+| Tama Bond | `120285053` | [Rush/Scripts/c120285053.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120285053.lua) | 1 |
 
 ## Script Examples
 
 ### Variable Stellariser (`120277007`)
 
-Source: [Rush/Scripts/c120277007.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120277007.lua)
+Source: [Rush/Scripts/c120277007.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120277007.lua)
 
 ```lua
 end
@@ -66,7 +66,7 @@ end
 
 ### Tama Bond (`120285053`)
 
-Source: [Rush/Scripts/c120285053.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120285053.lua)
+Source: [Rush/Scripts/c120285053.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120285053.lua)
 
 ```lua
 function cm.codetg(e,c)

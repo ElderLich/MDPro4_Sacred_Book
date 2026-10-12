@@ -49,33 +49,33 @@ Generated from the local `Rush/Scripts/` folder and `rush_cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| OuTerverSe Direct Driver | `120109056` | [Rush/Scripts/c120109056.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120109056.lua) | 1 |
-| UMP Sky Forbia | `120306017` | [Rush/Scripts/c120306017.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120306017.lua) | 1 |
-| Beginning Hiyashi the Sonic Noodle Ninja | `120300035` | [Rush/Scripts/c120300035.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120300035.lua) | 1 |
-| Doushin Kaika the Shadow Flower Full Moon | `120228037` | [Rush/Scripts/c120228037.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120228037.lua) | 1 |
-| Jinzo #7.7 | `120257026` | [Rush/Scripts/c120257026.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120257026.lua) | 1 |
-| Shining Shamaness | `120254082` | [Rush/Scripts/c120254082.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120254082.lua) | 1 |
-| Gaia, Conqueror of Champions | `120249046` | [Rush/Scripts/c120249046.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120249046.lua) | 1 |
-| Cat's Eye | `120150028` | [Rush/Scripts/c120150028.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120150028.lua) | 1 |
-| Kimeruler the Dark Raider | `120140001` | [Rush/Scripts/c120140001.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120140001.lua) | 1 |
-| Lovely Shoot | `120260048` | [Rush/Scripts/c120260048.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120260048.lua) | 1 |
-| Elemental HERO Mariner | `120272047` | [Rush/Scripts/c120272047.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120272047.lua) | 1 |
-| Shining Shaman | `120105009` | [Rush/Scripts/c120105009.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120105009.lua) | 1 |
-| Hydro Cannon Big Bluefin | `120130032` | [Rush/Scripts/c120130032.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120130032.lua) | 1 |
-| Hazy Strike Dragon Miragiastar F | `120205033` | [Rush/Scripts/c120205033.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120205033.lua) | 1 |
-| Digracheon the Skysavior Radiaknight | `120301036` | [Rush/Scripts/c120301036.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120301036.lua) | 1 |
-| Burst Bunny | `120264037` | [Rush/Scripts/c120264037.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120264037.lua) | 1 |
-| Telepathic Agent | `120140030` | [Rush/Scripts/c120140030.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120140030.lua) | 1 |
-| Alligator's Sword Dragon | `120206001` | [Rush/Scripts/c120206001.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120206001.lua) | 1 |
-| Cyber Tutu | `120102004` | [Rush/Scripts/c120102004.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120102004.lua) | 1 |
-| Kimeterasu the Divine Ruler | `120246040` | [Rush/Scripts/c120246040.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120246040.lua) | 1 |
-| Direct Dive Dragon | `120109015` | [Rush/Scripts/c120109015.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120109015.lua) | 1 |
+| OuTerverSe Direct Driver | `120109056` | [Rush/Scripts/c120109056.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120109056.lua) | 1 |
+| UMP Sky Forbia | `120306017` | [Rush/Scripts/c120306017.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120306017.lua) | 1 |
+| Beginning Hiyashi the Sonic Noodle Ninja | `120300035` | [Rush/Scripts/c120300035.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120300035.lua) | 1 |
+| Doushin Kaika the Shadow Flower Full Moon | `120228037` | [Rush/Scripts/c120228037.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120228037.lua) | 1 |
+| Jinzo #7.7 | `120257026` | [Rush/Scripts/c120257026.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120257026.lua) | 1 |
+| Shining Shamaness | `120254082` | [Rush/Scripts/c120254082.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120254082.lua) | 1 |
+| Gaia, Conqueror of Champions | `120249046` | [Rush/Scripts/c120249046.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120249046.lua) | 1 |
+| Cat's Eye | `120150028` | [Rush/Scripts/c120150028.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120150028.lua) | 1 |
+| Kimeruler the Dark Raider | `120140001` | [Rush/Scripts/c120140001.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120140001.lua) | 1 |
+| Lovely Shoot | `120260048` | [Rush/Scripts/c120260048.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120260048.lua) | 1 |
+| Elemental HERO Mariner | `120272047` | [Rush/Scripts/c120272047.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120272047.lua) | 1 |
+| Shining Shaman | `120105009` | [Rush/Scripts/c120105009.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120105009.lua) | 1 |
+| Hydro Cannon Big Bluefin | `120130032` | [Rush/Scripts/c120130032.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120130032.lua) | 1 |
+| Hazy Strike Dragon Miragiastar F | `120205033` | [Rush/Scripts/c120205033.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120205033.lua) | 1 |
+| Digracheon the Skysavior Radiaknight | `120301036` | [Rush/Scripts/c120301036.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120301036.lua) | 1 |
+| Burst Bunny | `120264037` | [Rush/Scripts/c120264037.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120264037.lua) | 1 |
+| Telepathic Agent | `120140030` | [Rush/Scripts/c120140030.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120140030.lua) | 1 |
+| Alligator's Sword Dragon | `120206001` | [Rush/Scripts/c120206001.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120206001.lua) | 1 |
+| Cyber Tutu | `120102004` | [Rush/Scripts/c120102004.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120102004.lua) | 1 |
+| Kimeterasu the Divine Ruler | `120246040` | [Rush/Scripts/c120246040.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120246040.lua) | 1 |
+| Direct Dive Dragon | `120109015` | [Rush/Scripts/c120109015.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120109015.lua) | 1 |
 
 ## Script Examples
 
 ### OuTerverSe Direct Driver (`120109056`)
 
-Source: [Rush/Scripts/c120109056.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120109056.lua)
+Source: [Rush/Scripts/c120109056.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120109056.lua)
 
 ```lua
 				Duel.BreakEffect()
@@ -87,7 +87,7 @@ Source: [Rush/Scripts/c120109056.lua](https://github.com/ElderLich/MDPro3_Sacred
 
 ### UMP Sky Forbia (`120306017`)
 
-Source: [Rush/Scripts/c120306017.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120306017.lua)
+Source: [Rush/Scripts/c120306017.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120306017.lua)
 
 ```lua
 	local c=e:GetHandler()
@@ -99,7 +99,7 @@ Source: [Rush/Scripts/c120306017.lua](https://github.com/ElderLich/MDPro3_Sacred
 
 ### Beginning Hiyashi the Sonic Noodle Ninja (`120300035`)
 
-Source: [Rush/Scripts/c120300035.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120300035.lua)
+Source: [Rush/Scripts/c120300035.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120300035.lua)
 
 ```lua
 	local c=e:GetHandler()

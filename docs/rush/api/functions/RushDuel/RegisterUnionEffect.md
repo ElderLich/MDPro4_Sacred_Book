@@ -81,31 +81,31 @@ Generated from the local `Rush/Scripts/` folder and `rush_cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Lostream Polka | `120309040` | [Rush/Scripts/c120309040.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120309040.lua) | 1 |
-| Arthenée the Defender of Sacred Silence | `120306033` | [Rush/Scripts/c120306033.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120306033.lua) | 1 |
-| Lostream Nepia | `120309038` | [Rush/Scripts/c120309038.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120309038.lua) | 1 |
-| Lauan Mapper Ivy | `120306013` | [Rush/Scripts/c120306013.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120306013.lua) | 1 |
-| Lostream Nemora | `120309037` | [Rush/Scripts/c120309037.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120309037.lua) | 1 |
-| Lostream Nereides | `120109068` | [Rush/Scripts/c120109068.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120109068.lua) | 1 |
-| Attrac Charm Sowaru | `120309055` | [Rush/Scripts/c120309055.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120309055.lua) | 1 |
-| Lostream Myura | `120309041` | [Rush/Scripts/c120309041.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120309041.lua) | 1 |
-| Powerful Machine Clockwork Walker | `120306030` | [Rush/Scripts/c120306030.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120306030.lua) | 1 |
-| The Sacred Shield of Arthenée | `120306032` | [Rush/Scripts/c120306032.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120306032.lua) | 1 |
-| SW - Asura Bat | `120305032` | [Rush/Scripts/c120305032.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120305032.lua) | 1 |
-| Lauan Macho Dex | `120306014` | [Rush/Scripts/c120306014.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120306014.lua) | 1 |
-| Z-Metal Tank | `120305058` | [Rush/Scripts/c120305058.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120305058.lua) | 1 |
-| Y-Dragon Head | `120305057` | [Rush/Scripts/c120305057.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120305057.lua) | 1 |
-| Koitsu | `120305043` | [Rush/Scripts/c120305043.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120305043.lua) | 1 |
-| Doitsu | `120305044` | [Rush/Scripts/c120305044.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120305044.lua) | 1 |
-| Attrac Charm Midi | `120309056` | [Rush/Scripts/c120309056.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120309056.lua) | 1 |
-| The Sacred Spear of Arthenée | `120306031` | [Rush/Scripts/c120306031.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120306031.lua) | 1 |
-| Leng Ling | `120308005` | [Rush/Scripts/c120308005.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120308005.lua) | 1 |
+| Lostream Polka | `120309040` | [Rush/Scripts/c120309040.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120309040.lua) | 1 |
+| Arthenée the Defender of Sacred Silence | `120306033` | [Rush/Scripts/c120306033.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120306033.lua) | 1 |
+| Lostream Nepia | `120309038` | [Rush/Scripts/c120309038.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120309038.lua) | 1 |
+| Lauan Mapper Ivy | `120306013` | [Rush/Scripts/c120306013.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120306013.lua) | 1 |
+| Lostream Nemora | `120309037` | [Rush/Scripts/c120309037.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120309037.lua) | 1 |
+| Lostream Nereides | `120109068` | [Rush/Scripts/c120109068.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120109068.lua) | 1 |
+| Attrac Charm Sowaru | `120309055` | [Rush/Scripts/c120309055.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120309055.lua) | 1 |
+| Lostream Myura | `120309041` | [Rush/Scripts/c120309041.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120309041.lua) | 1 |
+| Powerful Machine Clockwork Walker | `120306030` | [Rush/Scripts/c120306030.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120306030.lua) | 1 |
+| The Sacred Shield of Arthenée | `120306032` | [Rush/Scripts/c120306032.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120306032.lua) | 1 |
+| SW - Asura Bat | `120305032` | [Rush/Scripts/c120305032.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120305032.lua) | 1 |
+| Lauan Macho Dex | `120306014` | [Rush/Scripts/c120306014.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120306014.lua) | 1 |
+| Z-Metal Tank | `120305058` | [Rush/Scripts/c120305058.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120305058.lua) | 1 |
+| Y-Dragon Head | `120305057` | [Rush/Scripts/c120305057.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120305057.lua) | 1 |
+| Koitsu | `120305043` | [Rush/Scripts/c120305043.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120305043.lua) | 1 |
+| Doitsu | `120305044` | [Rush/Scripts/c120305044.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120305044.lua) | 1 |
+| Attrac Charm Midi | `120309056` | [Rush/Scripts/c120309056.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120309056.lua) | 1 |
+| The Sacred Spear of Arthenée | `120306031` | [Rush/Scripts/c120306031.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120306031.lua) | 1 |
+| Leng Ling | `120308005` | [Rush/Scripts/c120308005.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120308005.lua) | 1 |
 
 ## Script Examples
 
 ### Lostream Polka (`120309040`)
 
-Source: [Rush/Scripts/c120309040.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120309040.lua)
+Source: [Rush/Scripts/c120309040.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120309040.lua)
 
 ```lua
 function cm.initial_effect(c)
@@ -117,7 +117,7 @@ function cm.initial_effect(c)
 
 ### Arthenée the Defender of Sacred Silence (`120306033`)
 
-Source: [Rush/Scripts/c120306033.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120306033.lua)
+Source: [Rush/Scripts/c120306033.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120306033.lua)
 
 ```lua
 	RD.AddHandConfirmSpecialSummonProcedure(c,aux.Stringid(m,0),cm.spconfilter)
@@ -129,7 +129,7 @@ Source: [Rush/Scripts/c120306033.lua](https://github.com/ElderLich/MDPro3_Sacred
 
 ### Lostream Nepia (`120309038`)
 
-Source: [Rush/Scripts/c120309038.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120309038.lua)
+Source: [Rush/Scripts/c120309038.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120309038.lua)
 
 ```lua
 	Duel.AddCustomActivityCounter(m,ACTIVITY_SPSUMMON,cm.ctfilter)

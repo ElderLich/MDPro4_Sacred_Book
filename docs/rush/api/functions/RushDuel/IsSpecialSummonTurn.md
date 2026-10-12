@@ -39,13 +39,13 @@ Generated from the local `Rush/Scripts/` folder and `rush_cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Jointech Tridynabase | `120257041` | [Rush/Scripts/c120257041.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120257041.lua) | 1 |
+| Jointech Tridynabase | `120257041` | [Rush/Scripts/c120257041.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120257041.lua) | 1 |
 
 ## Script Examples
 
 ### Jointech Tridynabase (`120257041`)
 
-Source: [Rush/Scripts/c120257041.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120257041.lua)
+Source: [Rush/Scripts/c120257041.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120257041.lua)
 
 ```lua
 function cm.atkcon(e)

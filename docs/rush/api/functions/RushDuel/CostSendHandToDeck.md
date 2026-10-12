@@ -54,16 +54,16 @@ Generated from the local `Rush/Scripts/` folder and `rush_cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Jointech Nesstrydar Tank | `120257017` | [Rush/Scripts/c120257017.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120257017.lua) | 1 |
-| Supreme Dog Ropero | `120239022` | [Rush/Scripts/c120239022.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120239022.lua) | 1 |
-| Celeb Rose Enchanter | `120254050` | [Rush/Scripts/c120254050.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120254050.lua) | 1 |
-| Clashing Twin Tides | `120264051` | [Rush/Scripts/c120264051.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120264051.lua) | 1 |
+| Jointech Nesstrydar Tank | `120257017` | [Rush/Scripts/c120257017.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120257017.lua) | 1 |
+| Supreme Dog Ropero | `120239022` | [Rush/Scripts/c120239022.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120239022.lua) | 1 |
+| Celeb Rose Enchanter | `120254050` | [Rush/Scripts/c120254050.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120254050.lua) | 1 |
+| Clashing Twin Tides | `120264051` | [Rush/Scripts/c120264051.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120264051.lua) | 1 |
 
 ## Script Examples
 
 ### Jointech Nesstrydar Tank (`120257017`)
 
-Source: [Rush/Scripts/c120257017.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120257017.lua)
+Source: [Rush/Scripts/c120257017.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120257017.lua)
 
 ```lua
 	return c:IsLevel(7,8) and c:IsAttribute(ATTRIBUTE_DARK) and RD.IsCanBeSpecialSummoned(c,e,tp,POS_FACEUP)
@@ -75,7 +75,7 @@ function cm.target(e,tp,eg,ep,ev,re,r,rp,chk)
 
 ### Supreme Dog Ropero (`120239022`)
 
-Source: [Rush/Scripts/c120239022.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120239022.lua)
+Source: [Rush/Scripts/c120239022.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120239022.lua)
 
 ```lua
 end
@@ -87,7 +87,7 @@ function cm.operation(e,tp,eg,ep,ev,re,r,rp)
 
 ### Celeb Rose Enchanter (`120254050`)
 
-Source: [Rush/Scripts/c120254050.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120254050.lua)
+Source: [Rush/Scripts/c120254050.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120254050.lua)
 
 ```lua
 	return c:IsCode(list[1]) and c:IsAbleToHand()

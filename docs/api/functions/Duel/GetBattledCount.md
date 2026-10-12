@@ -31,13 +31,13 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Zap Mustung | `29951323` | [Scripts/c29951323.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c29951323.lua) | 2 |
+| Zap Mustung | `29951323` | [Scripts/c29951323.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c29951323.lua) | 2 |
 
 ## Script Examples
 
 ### Zap Mustung (`29951323`)
 
-Source: [Scripts/c29951323.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c29951323.lua)
+Source: [Scripts/c29951323.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c29951323.lua)
 
 ```lua
 end

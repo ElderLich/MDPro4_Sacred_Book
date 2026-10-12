@@ -50,14 +50,14 @@ Generated from the local `Rush/Scripts/` folder and `rush_cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| The Eternal Land -Spectrika- | `120300052` | [Rush/Scripts/c120300052.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120300052.lua) | 1 |
-| Endless Partner | `120300050` | [Rush/Scripts/c120300050.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120300050.lua) | 1 |
+| The Eternal Land -Spectrika- | `120300052` | [Rush/Scripts/c120300052.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120300052.lua) | 1 |
+| Endless Partner | `120300050` | [Rush/Scripts/c120300050.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120300050.lua) | 1 |
 
 ## Script Examples
 
 ### The Eternal Land -Spectrika- (`120300052`)
 
-Source: [Rush/Scripts/c120300052.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120300052.lua)
+Source: [Rush/Scripts/c120300052.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120300052.lua)
 
 ```lua
 end
@@ -68,7 +68,7 @@ end
 
 ### Endless Partner (`120300050`)
 
-Source: [Rush/Scripts/c120300050.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120300050.lua)
+Source: [Rush/Scripts/c120300050.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120300050.lua)
 
 ```lua
 function cm.initial_effect(c)

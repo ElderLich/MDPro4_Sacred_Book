@@ -62,15 +62,15 @@ Generated from the local `Rush/Scripts/` folder and `rush_cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Tama Tama Gachance | `120109053` | [Rush/Scripts/c120109053.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120109053.lua) | 1 |
-| Fusion Cancel | `120253066` | [Rush/Scripts/c120253066.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120253066.lua) | 1 |
-| Ancient Arrive Dragon | `120203009` | [Rush/Scripts/c120203009.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120203009.lua) | 1 |
+| Tama Tama Gachance | `120109053` | [Rush/Scripts/c120109053.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120109053.lua) | 1 |
+| Fusion Cancel | `120253066` | [Rush/Scripts/c120253066.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120253066.lua) | 1 |
+| Ancient Arrive Dragon | `120203009` | [Rush/Scripts/c120203009.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120203009.lua) | 1 |
 
 ## Script Examples
 
 ### Tama Tama Gachance (`120109053`)
 
-Source: [Rush/Scripts/c120109053.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120109053.lua)
+Source: [Rush/Scripts/c120109053.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120109053.lua)
 
 ```lua
 function cm.activate(e,tp,eg,ep,ev,re,r,rp)
@@ -82,7 +82,7 @@ end
 
 ### Fusion Cancel (`120253066`)
 
-Source: [Rush/Scripts/c120253066.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120253066.lua)
+Source: [Rush/Scripts/c120253066.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120253066.lua)
 
 ```lua
 			local filter=RD.Filter(cm.spfilter,e,sump,tc)
@@ -94,7 +94,7 @@ Source: [Rush/Scripts/c120253066.lua](https://github.com/ElderLich/MDPro3_Sacred
 
 ### Ancient Arrive Dragon (`120203009`)
 
-Source: [Rush/Scripts/c120203009.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120203009.lua)
+Source: [Rush/Scripts/c120203009.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120203009.lua)
 
 ```lua
 			RD.AttachAtkDef(e,tc,-400,0,RESET_EVENT+RESETS_STANDARD+RESET_PHASE+PHASE_END)

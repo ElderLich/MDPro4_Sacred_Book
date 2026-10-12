@@ -39,13 +39,13 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Sacred Spirit of the Ice Barrier | `44877690` | [Scripts/c44877690.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c44877690.lua) | 1 |
+| Sacred Spirit of the Ice Barrier | `44877690` | [Scripts/c44877690.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c44877690.lua) | 1 |
 
 ## Script Examples
 
 ### Sacred Spirit of the Ice Barrier (`44877690`)
 
-Source: [Scripts/c44877690.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c44877690.lua)
+Source: [Scripts/c44877690.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c44877690.lua)
 
 ```lua
 	e1:SetReset(RESET_EVENT+0x1ee0000+RESET_PHASE+PHASE_END)

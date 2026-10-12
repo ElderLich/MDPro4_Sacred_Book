@@ -79,13 +79,13 @@ Generated from the local `Rush/Scripts/` folder and `rush_cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Digracheon the Skysavior Radiaknight | `120301036` | [Rush/Scripts/c120301036.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120301036.lua) | 1 |
+| Digracheon the Skysavior Radiaknight | `120301036` | [Rush/Scripts/c120301036.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120301036.lua) | 1 |
 
 ## Script Examples
 
 ### Digracheon the Skysavior Radiaknight (`120301036`)
 
-Source: [Rush/Scripts/c120301036.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120301036.lua)
+Source: [Rush/Scripts/c120301036.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120301036.lua)
 
 ```lua
 	RD.AddFusionProcedure(c,cm.matfilter,list[1],list[2])

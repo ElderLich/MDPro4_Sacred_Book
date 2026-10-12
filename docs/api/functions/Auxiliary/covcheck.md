@@ -31,16 +31,16 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| [Destratification Dino Stratiae](/examples/cards/3841104) | `3841104` | [Scripts/c3841104.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c3841104.lua) | 1 |
-| [Cerynemesia, Mystical Beast of the Forest](/examples/cards/43632709) | `43632709` | [Scripts/c43632709.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c43632709.lua) | 1 |
-| Dark Time Wizard | `40235813` | [Scripts/c40235813.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c40235813.lua) | 1 |
-| Arcana Force XII - The Hangman | `72321198` | [Scripts/c72321198.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c72321198.lua) | 2 |
+| [Destratification Dino Stratiae](/examples/cards/3841104) | `3841104` | [Scripts/c3841104.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c3841104.lua) | 1 |
+| [Cerynemesia, Mystical Beast of the Forest](/examples/cards/43632709) | `43632709` | [Scripts/c43632709.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c43632709.lua) | 1 |
+| Dark Time Wizard | `40235813` | [Scripts/c40235813.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c40235813.lua) | 1 |
+| Arcana Force XII - The Hangman | `72321198` | [Scripts/c72321198.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c72321198.lua) | 2 |
 
 ## Script Examples
 
 ### Destratification Dino Stratiae (`3841104`)
 
-Source: [Scripts/c3841104.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c3841104.lua)
+Source: [Scripts/c3841104.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c3841104.lua)
 
 ```lua
 	local atk=0
@@ -52,7 +52,7 @@ Source: [Scripts/c3841104.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/b
 
 ### Cerynemesia, Mystical Beast of the Forest (`43632709`)
 
-Source: [Scripts/c43632709.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c43632709.lua)
+Source: [Scripts/c43632709.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c43632709.lua)
 
 ```lua
 function s.rmfilter(c,e,tp)
@@ -64,7 +64,7 @@ end
 
 ### Dark Time Wizard (`40235813`)
 
-Source: [Scripts/c40235813.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c40235813.lua)
+Source: [Scripts/c40235813.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c40235813.lua)
 
 ```lua
 function s.calfilter(c)

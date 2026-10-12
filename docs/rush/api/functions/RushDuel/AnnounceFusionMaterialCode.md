@@ -52,18 +52,18 @@ Generated from the local `Rush/Scripts/` folder and `rush_cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| [The Noodle Art of Flavor Shift](/examples/rush-cards/120300053) | `120300053` | [Rush/Scripts/c120300053.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120300053.lua) | 1 |
-| Variable Stellariser | `120277007` | [Rush/Scripts/c120277007.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120277007.lua) | 1 |
-| Accel Wonder Dark | `120285005` | [Rush/Scripts/c120285005.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120285005.lua) | 1 |
-| Rare Dragorite | `120294008` | [Rush/Scripts/c120294008.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120294008.lua) | 1 |
-| Phantasm Maskmaster | `120271028` | [Rush/Scripts/c120271028.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120271028.lua) | 1 |
-| Elemental HERO Prisma | `120272065` | [Rush/Scripts/c120272065.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120272065.lua) | 1 |
+| [The Noodle Art of Flavor Shift](/examples/rush-cards/120300053) | `120300053` | [Rush/Scripts/c120300053.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120300053.lua) | 1 |
+| Variable Stellariser | `120277007` | [Rush/Scripts/c120277007.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120277007.lua) | 1 |
+| Accel Wonder Dark | `120285005` | [Rush/Scripts/c120285005.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120285005.lua) | 1 |
+| Rare Dragorite | `120294008` | [Rush/Scripts/c120294008.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120294008.lua) | 1 |
+| Phantasm Maskmaster | `120271028` | [Rush/Scripts/c120271028.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120271028.lua) | 1 |
+| Elemental HERO Prisma | `120272065` | [Rush/Scripts/c120272065.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120272065.lua) | 1 |
 
 ## Script Examples
 
 ### The Noodle Art of Flavor Shift (`120300053`)
 
-Source: [Rush/Scripts/c120300053.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120300053.lua)
+Source: [Rush/Scripts/c120300053.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120300053.lua)
 
 ```lua
 		ec=mg:GetFirst()
@@ -75,7 +75,7 @@ Source: [Rush/Scripts/c120300053.lua](https://github.com/ElderLich/MDPro3_Sacred
 
 ### Variable Stellariser (`120277007`)
 
-Source: [Rush/Scripts/c120277007.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120277007.lua)
+Source: [Rush/Scripts/c120277007.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120277007.lua)
 
 ```lua
 	if chk==0 then return true end
@@ -87,7 +87,7 @@ Source: [Rush/Scripts/c120277007.lua](https://github.com/ElderLich/MDPro3_Sacred
 
 ### Accel Wonder Dark (`120285005`)
 
-Source: [Rush/Scripts/c120285005.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120285005.lua)
+Source: [Rush/Scripts/c120285005.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120285005.lua)
 
 ```lua
 	if chk==0 then return true end

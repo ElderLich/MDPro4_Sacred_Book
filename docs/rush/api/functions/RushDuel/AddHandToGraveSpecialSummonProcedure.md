@@ -55,16 +55,16 @@ Generated from the local `Rush/Scripts/` folder and `rush_cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Blaze Fiend Overlord Zebulth | `120287033` | [Rush/Scripts/c120287033.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120287033.lua) | 1 |
-| Lana the Holy Wind of Healing | `120298044` | [Rush/Scripts/c120298044.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120298044.lua) | 1 |
-| Dimension Riletta | `120309024` | [Rush/Scripts/c120309024.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120309024.lua) | 1 |
-| The Tricky | `120272033` | [Rush/Scripts/c120272033.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120272033.lua) | 1 |
+| Blaze Fiend Overlord Zebulth | `120287033` | [Rush/Scripts/c120287033.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120287033.lua) | 1 |
+| Lana the Holy Wind of Healing | `120298044` | [Rush/Scripts/c120298044.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120298044.lua) | 1 |
+| Dimension Riletta | `120309024` | [Rush/Scripts/c120309024.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120309024.lua) | 1 |
+| The Tricky | `120272033` | [Rush/Scripts/c120272033.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120272033.lua) | 1 |
 
 ## Script Examples
 
 ### Blaze Fiend Overlord Zebulth (`120287033`)
 
-Source: [Rush/Scripts/c120287033.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120287033.lua)
+Source: [Rush/Scripts/c120287033.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120287033.lua)
 
 ```lua
 function cm.initial_effect(c)
@@ -76,7 +76,7 @@ function cm.initial_effect(c)
 
 ### Lana the Holy Wind of Healing (`120298044`)
 
-Source: [Rush/Scripts/c120298044.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120298044.lua)
+Source: [Rush/Scripts/c120298044.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120298044.lua)
 
 ```lua
 function cm.initial_effect(c)
@@ -88,7 +88,7 @@ function cm.initial_effect(c)
 
 ### Dimension Riletta (`120309024`)
 
-Source: [Rush/Scripts/c120309024.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120309024.lua)
+Source: [Rush/Scripts/c120309024.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120309024.lua)
 
 ```lua
 function cm.initial_effect(c)

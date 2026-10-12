@@ -15,7 +15,7 @@ from typing import Iterable
 
 
 DEFAULT_DATAEDITORX_DATA = Path(r"D:\Programs\GitHub\DataEditorX\DataEditorX\data")
-DEFAULT_MDPRO3_LOCALES = Path(r"D:\Programs\GitHub\MDPro3_Data\Data\locales")
+DEFAULT_MDPRO4_LOCALES = Path(r"D:\Programs\GitHub\MDPro4_Data\Data\locales")
 DEFAULT_YGOPRO_CORE = Path(r"D:\Programs\GitHub\ygopro-core")
 
 FUNCTION_RE = re.compile(
@@ -1000,7 +1000,7 @@ FUNCTION_DETAIL_GUIDES = {
         "return Duel.IsChainNegatable(ev)",
         "```",
         "",
-        "In the current MDPro3 core binding this function returns true for any chain count, but local scripts still use it as the activation-negation legality marker. Use `Duel.IsChainDisablable` when the operation is effect negation rather than activation negation.",
+        "In the current MDPro4 core binding this function returns true for any chain count, but local scripts still use it as the activation-negation legality marker. Use `Duel.IsChainDisablable` when the operation is effect negation rather than activation negation.",
     ],
     "Duel.NegateActivation": [
         "Use this during resolution for effects that negate the activation of a Chain Link.",
@@ -1060,7 +1060,7 @@ FUNCTION_DETAIL_GUIDES = {
         "end",
         "```",
         "",
-        "For mixed current positions, pass the destination for face-up Attack, face-down Attack, face-up Defense, and face-down Defense in that order. MDPro3's core does not read the old seventh `setavailable` argument.",
+        "For mixed current positions, pass the destination for face-up Attack, face-down Attack, face-up Defense, and face-down Defense in that order. MDPro4's core does not read the old seventh `setavailable` argument.",
     ],
     "Duel.Destroy": [
         "Use this during resolution after checking that the target is still related to the effect.",
@@ -1432,7 +1432,7 @@ FUNCTION_DETAIL_GUIDES = {
         "c:RegisterEffect(e1)",
         "```",
         "",
-        "MDPro3 normalizes some type combinations. Spell/Trap activation effects become field activation effects and receive the usual hand/Spell & Trap/Field Zone activation range. Flip Effects are converted to `EVENT_FLIP` handling. Ignition and Quick effects gain field behavior internally.",
+        "MDPro4 normalizes some type combinations. Spell/Trap activation effects become field activation effects and receive the usual hand/Spell & Trap/Field Zone activation range. Flip Effects are converted to `EVENT_FLIP` handling. Ignition and Quick effects gain field behavior internally.",
     ],
     "Effect.SetCode": [
         "`Effect.SetCode` is **not** related to a card's archetype setcode. "
@@ -1604,7 +1604,7 @@ FUNCTION_DETAIL_GUIDES = {
         "e1:SetReset(RESET_PHASE+PHASE_END,2)",
         "```",
         "",
-        "If the count is omitted or 0, MDPro3 stores 1. If a phase reset does not specify `RESET_SELF_TURN` or `RESET_OPPO_TURN`, the core adds both turn flags.",
+        "If the count is omitted or 0, MDPro4 stores 1. If a phase reset does not specify `RESET_SELF_TURN` or `RESET_OPPO_TURN`, the core adds both turn flags.",
     ],
     "Effect.SetCountLimit": [
         "Use `SetCountLimit` for once-per-turn and shared-count restrictions.",
@@ -1615,7 +1615,7 @@ FUNCTION_DETAIL_GUIDES = {
         "e1:SetCountLimit(1,id)",
         "```",
         "",
-        "Effects with the same nonzero code share the same count. Special flags such as `EFFECT_COUNT_CODE_OATH`, `EFFECT_COUNT_CODE_DUEL`, `EFFECT_COUNT_CODE_SINGLE`, and `EFFECT_COUNT_CODE_CHAIN` change how that count is scoped. If `count` is 0, MDPro3 stores it as 1.",
+        "Effects with the same nonzero code share the same count. Special flags such as `EFFECT_COUNT_CODE_OATH`, `EFFECT_COUNT_CODE_DUEL`, `EFFECT_COUNT_CODE_SINGLE`, and `EFFECT_COUNT_CODE_CHAIN` change how that count is scoped. If `count` is 0, MDPro4 stores it as 1.",
     ],
     "Effect.CheckCountLimit": [
         "Use this when a script helper needs to test whether an Effect still has count available for a player before manually spending it.",
@@ -2339,8 +2339,8 @@ def write_vitepress_config(base: Path, namespaces: Iterable[str]) -> None:
         "import { defineConfig } from 'vitepress';",
         "",
         "export default defineConfig({",
-        "  title: 'MDPro3 Sacred Book',",
-        "  description: 'MDPro3/YGOPro Lua card scripting reference.',",
+        "  title: 'MDPro4 Sacred Book',",
+        "  description: 'MDPro4/YGOPro Lua card scripting reference.',",
         "  cleanUrls: true,",
         "  themeConfig: {",
         "    nav: [",
@@ -2450,9 +2450,9 @@ def write_wiki_pages(
         if not doc.core_binding and any(src.origin in {"utility", "procedure"} for src in doc.source_files)
     )
     root_lines = [
-        "# MDPro3 Sacred Book",
+        "# MDPro4 Sacred Book",
         "",
-        "Core-specific Lua scripting reference for MDPro3/YGOPro card scripts.",
+        "Core-specific Lua scripting reference for MDPro4/YGOPro card scripts.",
         "",
         "## Reference",
         "",
@@ -2475,7 +2475,7 @@ def write_wiki_pages(
     api_lines = [
         "# API",
         "",
-        "This API reference is generated for this project's core and helper scripts. It is grounded in local MDPro3/YGOPro bindings because helper procedures and available functions can differ between simulators.",
+        "This API reference is generated for this project's core and helper scripts. It is grounded in local MDPro4/YGOPro bindings because helper procedures and available functions can differ between simulators.",
         "",
         "## Sections",
         "",
@@ -3237,7 +3237,7 @@ def is_effect_creator_property(name: str) -> bool:
     return name.startswith("EFFECT_FLAG")
 
 
-def parse_mdpro3_systems(path: Path) -> dict[int, str]:
+def parse_mdpro4_systems(path: Path) -> dict[int, str]:
     systems: dict[int, str] = {}
     if not path.exists():
         return systems
@@ -3314,18 +3314,18 @@ def analyze_constants(workspace: Path, dataeditorx_data: Path) -> dict[str, obje
     }
 
 
-def analyze_categories(dataeditorx_data: Path, mdpro3_locales: Path) -> dict[str, object]:
+def analyze_categories(dataeditorx_data: Path, mdpro4_locales: Path) -> dict[str, object]:
     cardinfo = parse_cardinfo_category(dataeditorx_data / "languages" / "cardinfo_english.txt")
-    systems = parse_mdpro3_systems(mdpro3_locales / "en-US" / "strings.conf")
+    systems = parse_mdpro4_systems(mdpro4_locales / "en-US" / "strings.conf")
     expected = {1 << index: systems.get(1100 + index, "") for index in range(32)}
     mismatches = {
-        hex(key): {"dataeditorx": cardinfo.get(key, ""), "mdpro3": expected_value}
+        hex(key): {"dataeditorx": cardinfo.get(key, ""), "mdpro4": expected_value}
         for key, expected_value in expected.items()
         if expected_value and cardinfo.get(key, "") != expected_value
     }
     return {
         "dataeditorx_category_count": len(cardinfo),
-        "mdpro3_category_count": len([value for value in expected.values() if value]),
+        "mdpro4_category_count": len([value for value in expected.values() if value]),
         "mismatches": mismatches,
     }
 
@@ -3546,7 +3546,7 @@ def write_report(
             "## Category Findings",
             "",
             f"- DataEditorX English categories: {categories['dataeditorx_category_count']}",
-            f"- MDPro3 English category labels: {categories['mdpro3_category_count']}",
+            f"- MDPro4 English category labels: {categories['mdpro4_category_count']}",
             f"- Category mismatches: {len(categories['mismatches'])}",
             "",
             "## Added Function Examples",
@@ -3597,7 +3597,7 @@ def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--workspace", type=Path, default=Path.cwd())
     parser.add_argument("--dataeditorx-data", type=Path, default=DEFAULT_DATAEDITORX_DATA)
-    parser.add_argument("--mdpro3-locales", type=Path, default=DEFAULT_MDPRO3_LOCALES)
+    parser.add_argument("--mdpro4-locales", type=Path, default=DEFAULT_MDPRO4_LOCALES)
     parser.add_argument("--ygopro-core", type=Path, default=DEFAULT_YGOPRO_CORE)
     parser.add_argument("--out", type=Path, default=Path("Generated") / "FunctionDocs")
     args = parser.parse_args()
@@ -3605,7 +3605,7 @@ def main() -> int:
     workspace = args.workspace.resolve()
     out = (workspace / args.out).resolve() if not args.out.is_absolute() else args.out.resolve()
     dataeditorx_data = args.dataeditorx_data
-    mdpro3_locales = args.mdpro3_locales
+    mdpro4_locales = args.mdpro4_locales
     ygopro_core = args.ygopro_core
 
     docs_by_name = load_all_function_docs(workspace, ygopro_core)
@@ -3621,7 +3621,7 @@ def main() -> int:
     translate_function_annotations(docs)
 
     constants = analyze_constants(workspace, dataeditorx_data)
-    categories = analyze_categories(dataeditorx_data, mdpro3_locales)
+    categories = analyze_categories(dataeditorx_data, mdpro4_locales)
     constant_docs = build_constant_docs(workspace, dataeditorx_data)
     constants.update(constant_summary(constant_docs))
 
@@ -3641,7 +3641,7 @@ def main() -> int:
         "generated_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
         "workspace": str(workspace),
         "dataeditorx_data": str(dataeditorx_data),
-        "mdpro3_locales": str(mdpro3_locales),
+        "mdpro4_locales": str(mdpro4_locales),
         "ygopro_core": str(ygopro_core),
         "source_files": [
             str(ygopro_core / "libcard.cpp"),

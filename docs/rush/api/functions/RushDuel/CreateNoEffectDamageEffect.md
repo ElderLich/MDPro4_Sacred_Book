@@ -63,16 +63,16 @@ Generated from the local `Rush/Scripts/` folder and `rush_cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| [Skysavior Watch](/examples/rush-cards/120235053) | `120235053` | [Rush/Scripts/c120235053.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120235053.lua) | 1 |
-| [Moonforce Timo](/examples/rush-cards/120300015) | `120300015` | [Rush/Scripts/c120300015.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120300015.lua) | 1 |
-| Peace &amp; Rock n' Roll | `120253061` | [Rush/Scripts/c120253061.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120253061.lua) | 1 |
-| Cyber Kirin | `120278008` | [Rush/Scripts/c120278008.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120278008.lua) | 1 |
+| [Skysavior Watch](/examples/rush-cards/120235053) | `120235053` | [Rush/Scripts/c120235053.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120235053.lua) | 1 |
+| [Moonforce Timo](/examples/rush-cards/120300015) | `120300015` | [Rush/Scripts/c120300015.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120300015.lua) | 1 |
+| Peace &amp; Rock n' Roll | `120253061` | [Rush/Scripts/c120253061.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120253061.lua) | 1 |
+| Cyber Kirin | `120278008` | [Rush/Scripts/c120278008.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120278008.lua) | 1 |
 
 ## Script Examples
 
 ### Skysavior Watch (`120235053`)
 
-Source: [Rush/Scripts/c120235053.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120235053.lua)
+Source: [Rush/Scripts/c120235053.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120235053.lua)
 
 ```lua
 	RD.CreateHintEffect(e,aux.Stringid(m,1),tp,1,0,RESET_PHASE+PHASE_END)
@@ -84,7 +84,7 @@ end
 
 ### Moonforce Timo (`120300015`)
 
-Source: [Rush/Scripts/c120300015.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120300015.lua)
+Source: [Rush/Scripts/c120300015.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120300015.lua)
 
 ```lua
 	RD.CreateRaceCannotAttackEffect(e,aux.Stringid(m,1),RACE_ALL-RACE_GALAXY,tp,1,0,RESET_PHASE+PHASE_END)
@@ -96,7 +96,7 @@ end
 
 ### Peace & Rock n' Roll (`120253061`)
 
-Source: [Rush/Scripts/c120253061.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120253061.lua)
+Source: [Rush/Scripts/c120253061.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120253061.lua)
 
 ```lua
 		if Duel.Destroy(g,REASON_EFFECT)~=0 and Duel.GetLP(tp)<=2000 then

@@ -32,14 +32,14 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Aerial Eater | `28143384` | [Scripts/c28143384.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c28143384.lua) | 1 |
-| Transmodify | `5288597` | [Scripts/c5288597.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c5288597.lua) | 1 |
+| Aerial Eater | `28143384` | [Scripts/c28143384.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c28143384.lua) | 1 |
+| Transmodify | `5288597` | [Scripts/c5288597.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c5288597.lua) | 1 |
 
 ## Script Examples
 
 ### Aerial Eater (`28143384`)
 
-Source: [Scripts/c28143384.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c28143384.lua)
+Source: [Scripts/c28143384.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c28143384.lua)
 
 ```lua
 end
@@ -51,7 +51,7 @@ function s.spcost(e,tp,eg,ep,ev,re,r,rp,chk)
 
 ### Transmodify (`5288597`)
 
-Source: [Scripts/c5288597.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c5288597.lua)
+Source: [Scripts/c5288597.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c5288597.lua)
 
 ```lua
 	local lv=c:GetOriginalLevel()

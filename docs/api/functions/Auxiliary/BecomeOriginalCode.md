@@ -33,13 +33,13 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Phantom of Chaos | `30312361` | [Scripts/c30312361.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c30312361.lua) | 1 |
+| Phantom of Chaos | `30312361` | [Scripts/c30312361.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c30312361.lua) | 1 |
 
 ## Script Examples
 
 ### Phantom of Chaos (`30312361`)
 
-Source: [Scripts/c30312361.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c30312361.lua)
+Source: [Scripts/c30312361.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c30312361.lua)
 
 ```lua
 		local code=tc:GetOriginalCode()

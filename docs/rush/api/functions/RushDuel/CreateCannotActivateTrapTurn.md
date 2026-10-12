@@ -60,13 +60,13 @@ Generated from the local `Rush/Scripts/` folder and `rush_cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Triangle Ecstasy Spark | `120247013` | [Rush/Scripts/c120247013.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120247013.lua) | 1 |
+| Triangle Ecstasy Spark | `120247013` | [Rush/Scripts/c120247013.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120247013.lua) | 1 |
 
 ## Script Examples
 
 ### Triangle Ecstasy Spark (`120247013`)
 
-Source: [Rush/Scripts/c120247013.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120247013.lua)
+Source: [Rush/Scripts/c120247013.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120247013.lua)
 
 ```lua
 		end)

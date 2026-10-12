@@ -74,37 +74,37 @@ Generated from the local `Rush/Scripts/` folder and `rush_cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| [Hybridrive Back Fusion](/examples/rush-cards/120261052) | `120261052` | [Rush/Scripts/c120261052.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120261052.lua) | 1 |
-| [Handy Girl](/examples/rush-cards/120290012) | `120290012` | [Rush/Scripts/c120290012.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120290012.lua) | 1 |
-| Rising HERO Argent O | `120304042` | [Rush/Scripts/c120304042.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120304042.lua) | 1 |
-| Jointech Joint | `120257058` | [Rush/Scripts/c120257058.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120257058.lua) | 1 |
-| Battletested Curse of Dragon | `120249031` | [Rush/Scripts/c120249031.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120249031.lua) | 1 |
-| Ultra Evolution Miracle | `120274051` | [Rush/Scripts/c120274051.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120274051.lua) | 1 |
-| OuTerverSe Detonation Fusion | `120290058` | [Rush/Scripts/c120290058.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120290058.lua) | 1 |
-| Battletested Gaia The Fierce Knight | `120249032` | [Rush/Scripts/c120249032.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120249032.lua) | 1 |
-| Princess Cosmos the Trickster | `120293046` | [Rush/Scripts/c120293046.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120293046.lua) | 1 |
-| Prime Dwarf | `120257001` | [Rush/Scripts/c120257001.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120257001.lua) | 1 |
-| The Draco | `120294002` | [Rush/Scripts/c120294002.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120294002.lua) | 1 |
-| Power Meter | `120294054` | [Rush/Scripts/c120294054.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120294054.lua) | 1 |
-| Slay the Star Protector's Gunslinger | `120306010` | [Rush/Scripts/c120306010.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120306010.lua) | 1 |
-| Ancient Gear Hunting Hound | `120283048` | [Rush/Scripts/c120283048.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120283048.lua) | 1 |
-| OuTerverSe Rainpale | `120290004` | [Rush/Scripts/c120290004.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120290004.lua) | 1 |
-| Fist the Star Protector's Roaring Gauntlet | `120306011` | [Rush/Scripts/c120306011.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120306011.lua) | 1 |
-| Pupating Larvae Moth | `120298033` | [Rush/Scripts/c120298033.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120298033.lua) | 1 |
-| Y-Trial Dragon | `120305009` | [Rush/Scripts/c120305009.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120305009.lua) | 1 |
-| Z-Trial Tank | `120305010` | [Rush/Scripts/c120305010.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120305010.lua) | 1 |
-| Pulsating Cocoon of Evolution | `120298036` | [Rush/Scripts/c120298036.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120298036.lua) | 1 |
-| Magnet Speeder | `120285024` | [Rush/Scripts/c120285024.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120285024.lua) | 1 |
-| Transam Nebula Fusion | `120272048` | [Rush/Scripts/c120272048.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120272048.lua) | 1 |
-| Skullcrag Incursion | `120298015` | [Rush/Scripts/c120298015.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120298015.lua) | 1 |
-| Towline Cattle Healer | `120290026` | [Rush/Scripts/c120290026.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120290026.lua) | 1 |
+| [Hybridrive Back Fusion](/examples/rush-cards/120261052) | `120261052` | [Rush/Scripts/c120261052.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120261052.lua) | 1 |
+| [Handy Girl](/examples/rush-cards/120290012) | `120290012` | [Rush/Scripts/c120290012.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120290012.lua) | 1 |
+| Rising HERO Argent O | `120304042` | [Rush/Scripts/c120304042.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120304042.lua) | 1 |
+| Jointech Joint | `120257058` | [Rush/Scripts/c120257058.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120257058.lua) | 1 |
+| Battletested Curse of Dragon | `120249031` | [Rush/Scripts/c120249031.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120249031.lua) | 1 |
+| Ultra Evolution Miracle | `120274051` | [Rush/Scripts/c120274051.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120274051.lua) | 1 |
+| OuTerverSe Detonation Fusion | `120290058` | [Rush/Scripts/c120290058.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120290058.lua) | 1 |
+| Battletested Gaia The Fierce Knight | `120249032` | [Rush/Scripts/c120249032.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120249032.lua) | 1 |
+| Princess Cosmos the Trickster | `120293046` | [Rush/Scripts/c120293046.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120293046.lua) | 1 |
+| Prime Dwarf | `120257001` | [Rush/Scripts/c120257001.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120257001.lua) | 1 |
+| The Draco | `120294002` | [Rush/Scripts/c120294002.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120294002.lua) | 1 |
+| Power Meter | `120294054` | [Rush/Scripts/c120294054.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120294054.lua) | 1 |
+| Slay the Star Protector's Gunslinger | `120306010` | [Rush/Scripts/c120306010.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120306010.lua) | 1 |
+| Ancient Gear Hunting Hound | `120283048` | [Rush/Scripts/c120283048.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120283048.lua) | 1 |
+| OuTerverSe Rainpale | `120290004` | [Rush/Scripts/c120290004.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120290004.lua) | 1 |
+| Fist the Star Protector's Roaring Gauntlet | `120306011` | [Rush/Scripts/c120306011.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120306011.lua) | 1 |
+| Pupating Larvae Moth | `120298033` | [Rush/Scripts/c120298033.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120298033.lua) | 1 |
+| Y-Trial Dragon | `120305009` | [Rush/Scripts/c120305009.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120305009.lua) | 1 |
+| Z-Trial Tank | `120305010` | [Rush/Scripts/c120305010.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120305010.lua) | 1 |
+| Pulsating Cocoon of Evolution | `120298036` | [Rush/Scripts/c120298036.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120298036.lua) | 1 |
+| Magnet Speeder | `120285024` | [Rush/Scripts/c120285024.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120285024.lua) | 1 |
+| Transam Nebula Fusion | `120272048` | [Rush/Scripts/c120272048.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120272048.lua) | 1 |
+| Skullcrag Incursion | `120298015` | [Rush/Scripts/c120298015.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120298015.lua) | 1 |
+| Towline Cattle Healer | `120290026` | [Rush/Scripts/c120290026.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120290026.lua) | 1 |
 | ...and 8 more |  |  |  |
 
 ## Script Examples
 
 ### Hybridrive Back Fusion (`120261052`)
 
-Source: [Rush/Scripts/c120261052.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120261052.lua)
+Source: [Rush/Scripts/c120261052.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120261052.lua)
 
 ```lua
 	if RD.SelectAndSpecialSummon(cm.filter,1-tp,LOCATION_GRAVE,0,1,1,nil,e,POS_FACEDOWN_DEFENSE)~=0 then
@@ -116,7 +116,7 @@ Source: [Rush/Scripts/c120261052.lua](https://github.com/ElderLich/MDPro3_Sacred
 
 ### Handy Girl (`120290012`)
 
-Source: [Rush/Scripts/c120290012.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120290012.lua)
+Source: [Rush/Scripts/c120290012.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120290012.lua)
 
 ```lua
 		if not Duel.IsExistingMatchingCard(cm.exfilter,tp,LOCATION_MZONE,0,1,nil) then
@@ -128,7 +128,7 @@ Source: [Rush/Scripts/c120290012.lua](https://github.com/ElderLich/MDPro3_Sacred
 
 ### Rising HERO Argent O (`120304042`)
 
-Source: [Rush/Scripts/c120304042.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120304042.lua)
+Source: [Rush/Scripts/c120304042.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120304042.lua)
 
 ```lua
 	RD.SelectAndDoAction(HINTMSG_DESTROY,nil,tp,0,LOCATION_ONFIELD,1,1,nil,function(g)

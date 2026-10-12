@@ -68,37 +68,37 @@ Generated from the local `Rush/Scripts/` folder and `rush_cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Void Dust Fusion | `120277052` | [Rush/Scripts/c120277052.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120277052.lua) | 1 |
-| Flash Memory Fusion | `120285062` | [Rush/Scripts/c120285062.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120285062.lua) | 1 |
-| Tama Bond | `120285053` | [Rush/Scripts/c120285053.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120285053.lua) | 1 |
-| Rising Equip | `120304062` | [Rush/Scripts/c120304062.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120304062.lua) | 1 |
-| Dragon Tribe Fusion | `120238024` | [Rush/Scripts/c120238024.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120238024.lua) | 1 |
-| Speed Sniper | `120301060` | [Rush/Scripts/c120301060.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120301060.lua) | 2 |
-| Galaxy Chaos Fusion | `120277051` | [Rush/Scripts/c120277051.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120277051.lua) | 1 |
-| Road Apostle Slinger | `120285032` | [Rush/Scripts/c120285032.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120285032.lua) | 1 |
-| Imaginary Arc Surge | `120271040` | [Rush/Scripts/c120271040.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120271040.lua) | 1 |
-| Delirium Rebirth | `120274067` | [Rush/Scripts/c120274067.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120274067.lua) | 1 |
-| Princess Cosmos Stirs | `120293054` | [Rush/Scripts/c120293054.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120293054.lua) | 1 |
-| Cyber Rush Fusion | `120278029` | [Rush/Scripts/c120278029.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120278029.lua) | 1 |
-| Power Bond | `120231070` | [Rush/Scripts/c120231070.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120231070.lua) | 1 |
-| Delirium Embrace | `120274065` | [Rush/Scripts/c120274065.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120274065.lua) | 1 |
-| Deep Warning Fusion | `120260020` | [Rush/Scripts/c120260020.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120260020.lua) | 1 |
-| Super Polymerization | `120307014` | [Rush/Scripts/c120307014.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120307014.lua) | 1 |
-| Elemental HERO Voltic Wingman | `120277065` | [Rush/Scripts/c120277065.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120277065.lua) | 1 |
-| The United Front with Timaeus | `120309016` | [Rush/Scripts/c120309016.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120309016.lua) | 1 |
-| Dragons Boost Fusion | `120244049` | [Rush/Scripts/c120244049.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120244049.lua) | 1 |
-| Cyber Surveillance Dragon | `120285043` | [Rush/Scripts/c120285043.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120285043.lua) | 1 |
-| The Versus Fusion | `120283051` | [Rush/Scripts/c120283051.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120283051.lua) | 1 |
-| Metarion Fusion | `120271036` | [Rush/Scripts/c120271036.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120271036.lua) | 1 |
-| Miracle Secret Arts | `120290054` | [Rush/Scripts/c120290054.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120290054.lua) | 1 |
-| Psyquip Fusion | `120253051` | [Rush/Scripts/c120253051.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120253051.lua) | 1 |
+| Void Dust Fusion | `120277052` | [Rush/Scripts/c120277052.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120277052.lua) | 1 |
+| Flash Memory Fusion | `120285062` | [Rush/Scripts/c120285062.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120285062.lua) | 1 |
+| Tama Bond | `120285053` | [Rush/Scripts/c120285053.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120285053.lua) | 1 |
+| Rising Equip | `120304062` | [Rush/Scripts/c120304062.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120304062.lua) | 1 |
+| Dragon Tribe Fusion | `120238024` | [Rush/Scripts/c120238024.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120238024.lua) | 1 |
+| Speed Sniper | `120301060` | [Rush/Scripts/c120301060.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120301060.lua) | 2 |
+| Galaxy Chaos Fusion | `120277051` | [Rush/Scripts/c120277051.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120277051.lua) | 1 |
+| Road Apostle Slinger | `120285032` | [Rush/Scripts/c120285032.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120285032.lua) | 1 |
+| Imaginary Arc Surge | `120271040` | [Rush/Scripts/c120271040.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120271040.lua) | 1 |
+| Delirium Rebirth | `120274067` | [Rush/Scripts/c120274067.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120274067.lua) | 1 |
+| Princess Cosmos Stirs | `120293054` | [Rush/Scripts/c120293054.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120293054.lua) | 1 |
+| Cyber Rush Fusion | `120278029` | [Rush/Scripts/c120278029.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120278029.lua) | 1 |
+| Power Bond | `120231070` | [Rush/Scripts/c120231070.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120231070.lua) | 1 |
+| Delirium Embrace | `120274065` | [Rush/Scripts/c120274065.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120274065.lua) | 1 |
+| Deep Warning Fusion | `120260020` | [Rush/Scripts/c120260020.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120260020.lua) | 1 |
+| Super Polymerization | `120307014` | [Rush/Scripts/c120307014.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120307014.lua) | 1 |
+| Elemental HERO Voltic Wingman | `120277065` | [Rush/Scripts/c120277065.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120277065.lua) | 1 |
+| The United Front with Timaeus | `120309016` | [Rush/Scripts/c120309016.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120309016.lua) | 1 |
+| Dragons Boost Fusion | `120244049` | [Rush/Scripts/c120244049.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120244049.lua) | 1 |
+| Cyber Surveillance Dragon | `120285043` | [Rush/Scripts/c120285043.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120285043.lua) | 1 |
+| The Versus Fusion | `120283051` | [Rush/Scripts/c120283051.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120283051.lua) | 1 |
+| Metarion Fusion | `120271036` | [Rush/Scripts/c120271036.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120271036.lua) | 1 |
+| Miracle Secret Arts | `120290054` | [Rush/Scripts/c120290054.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120290054.lua) | 1 |
+| Psyquip Fusion | `120253051` | [Rush/Scripts/c120253051.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120253051.lua) | 1 |
 | ...and 32 more |  |  |  |
 
 ## Script Examples
 
 ### Void Dust Fusion (`120277052`)
 
-Source: [Rush/Scripts/c120277052.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120277052.lua)
+Source: [Rush/Scripts/c120277052.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120277052.lua)
 
 ```lua
 function cm.initial_effect(c)
@@ -110,7 +110,7 @@ function cm.initial_effect(c)
 
 ### Flash Memory Fusion (`120285062`)
 
-Source: [Rush/Scripts/c120285062.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120285062.lua)
+Source: [Rush/Scripts/c120285062.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120285062.lua)
 
 ```lua
 	RD.AddCodeList(c,list)
@@ -122,7 +122,7 @@ Source: [Rush/Scripts/c120285062.lua](https://github.com/ElderLich/MDPro3_Sacred
 
 ### Tama Bond (`120285053`)
 
-Source: [Rush/Scripts/c120285053.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120285053.lua)
+Source: [Rush/Scripts/c120285053.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120285053.lua)
 
 ```lua
 	RD.AddCodeList(c,list)

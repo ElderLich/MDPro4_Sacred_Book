@@ -9,7 +9,7 @@ Duel.IsChainNegatable(int chainc) -> bool
 ## Description
 
 Compatibility check for whether chainc's activation can be negated.
-In this MDPro3 core binding, the function currently returns true for any chain count.
+In this MDPro4 core binding, the function currently returns true for any chain count.
 Local scripts still call it in negation conditions so the script expresses the intended activation-legality check.
 Use it with Duel.NegateActivation, not as a substitute for effect-negation checks such as Duel.IsChainDisablable.
 
@@ -21,7 +21,7 @@ Use this in activation-negation conditions to express that the responding effect
 return Duel.IsChainNegatable(ev)
 ```
 
-In the current MDPro3 core binding this function returns true for any chain count, but local scripts still use it as the activation-negation legality marker. Use `Duel.IsChainDisablable` when the operation is effect negation rather than activation negation.
+In the current MDPro4 core binding this function returns true for any chain count, but local scripts still use it as the activation-negation legality marker. Use `Duel.IsChainDisablable` when the operation is effect negation rather than activation negation.
 
 ## Related Functions
 

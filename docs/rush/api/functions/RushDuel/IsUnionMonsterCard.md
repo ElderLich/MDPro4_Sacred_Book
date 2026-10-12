@@ -45,16 +45,16 @@ Generated from the local `Rush/Scripts/` folder and `rush_cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Lostream Reading | `120309043` | [Rush/Scripts/c120309043.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120309043.lua) | 1 |
-| Lostream Stream | `120309046` | [Rush/Scripts/c120309046.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120309046.lua) | 1 |
-| Cross Lostream Melutine | `120309036` | [Rush/Scripts/c120309036.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120309036.lua) | 1 |
-| Cross Lostream Verdias | `120309035` | [Rush/Scripts/c120309035.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120309035.lua) | 1 |
+| Lostream Reading | `120309043` | [Rush/Scripts/c120309043.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120309043.lua) | 1 |
+| Lostream Stream | `120309046` | [Rush/Scripts/c120309046.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120309046.lua) | 1 |
+| Cross Lostream Melutine | `120309036` | [Rush/Scripts/c120309036.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120309036.lua) | 1 |
+| Cross Lostream Verdias | `120309035` | [Rush/Scripts/c120309035.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120309035.lua) | 1 |
 
 ## Script Examples
 
 ### Lostream Reading (`120309043`)
 
-Source: [Rush/Scripts/c120309043.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120309043.lua)
+Source: [Rush/Scripts/c120309043.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120309043.lua)
 
 ```lua
 end
@@ -66,7 +66,7 @@ function cm.condition(e,tp,eg,ep,ev,re,r,rp)
 
 ### Lostream Stream (`120309046`)
 
-Source: [Rush/Scripts/c120309046.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120309046.lua)
+Source: [Rush/Scripts/c120309046.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120309046.lua)
 
 ```lua
 end
@@ -78,7 +78,7 @@ function cm.exfilter(c)
 
 ### Cross Lostream Melutine (`120309036`)
 
-Source: [Rush/Scripts/c120309036.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120309036.lua)
+Source: [Rush/Scripts/c120309036.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120309036.lua)
 
 ```lua
 --Multiple Attack

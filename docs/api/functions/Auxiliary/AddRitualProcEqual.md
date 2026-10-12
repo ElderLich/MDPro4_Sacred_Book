@@ -41,13 +41,13 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| [Super Soldier Ritual](/examples/cards/14094090) | `14094090` | [Scripts/c14094090.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c14094090.lua) | 1 |
+| [Super Soldier Ritual](/examples/cards/14094090) | `14094090` | [Scripts/c14094090.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c14094090.lua) | 1 |
 
 ## Script Examples
 
 ### Super Soldier Ritual (`14094090`)
 
-Source: [Scripts/c14094090.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c14094090.lua)
+Source: [Scripts/c14094090.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c14094090.lua)
 
 ```lua
 --超戦士の儀式

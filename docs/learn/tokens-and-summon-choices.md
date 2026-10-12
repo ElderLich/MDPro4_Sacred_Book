@@ -174,8 +174,8 @@ The contracts above follow the local core's `duel_create_token`,
 `duel_is_player_can_spsummon_monster`, `duel_select_position`, and the three
 Special Summon bindings in `libduel.cpp`.
 
-- [Number 48: Shadow Lich source](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c1426714.lua): one Token, checked at both stages.
-- [Phantom Skyblaster source](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c12958919.lua): bounded continuation choices and a single completion.
-- [Scapegoat source](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c73915051.lua): exact-count batch and per-Token restrictions.
+- [Number 48: Shadow Lich source](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c1426714.lua): one Token, checked at both stages.
+- [Phantom Skyblaster source](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c12958919.lua): bounded continuation choices and a single completion.
+- [Scapegoat source](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c73915051.lua): exact-count batch and per-Token restrictions.
 - [Client UI and prompt behavior](/learn/client-ui-and-prompt-behavior): descriptions, hints, and choices.
 - [Player restrictions](/learn/player-restrictions): restrictions beyond available zones.

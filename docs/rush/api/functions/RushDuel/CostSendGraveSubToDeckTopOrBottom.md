@@ -56,13 +56,13 @@ Generated from the local `Rush/Scripts/` folder and `rush_cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Bizarrmor | `120199044` | [Rush/Scripts/c120199044.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120199044.lua) | 1 |
+| Bizarrmor | `120199044` | [Rush/Scripts/c120199044.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120199044.lua) | 1 |
 
 ## Script Examples
 
 ### Bizarrmor (`120199044`)
 
-Source: [Rush/Scripts/c120199044.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120199044.lua)
+Source: [Rush/Scripts/c120199044.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120199044.lua)
 
 ```lua
 		and Duel.IsExistingMatchingCard(cm.filter,tp,LOCATION_GRAVE,0,1,g)

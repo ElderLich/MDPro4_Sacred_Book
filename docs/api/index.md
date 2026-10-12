@@ -1,6 +1,6 @@
 # API
 
-Choose the reference for the scripting layer you need. These pages follow this project's MDPro3/YGOPro core and helper sources; available functions can differ between simulators.
+Choose the reference for the scripting layer you need. These pages follow this project's MDPro4/YGOPro core and helper sources; available functions can differ between simulators.
 
 ## Choose a Reference
 

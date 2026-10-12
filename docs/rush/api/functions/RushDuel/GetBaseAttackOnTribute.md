@@ -51,16 +51,16 @@ Generated from the local `Rush/Scripts/` folder and `rush_cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| God Maju Garzett | `120261043` | [Rush/Scripts/c120261043.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120261043.lua) | 1 |
-| Dark Matter Enigmata | `120261048` | [Rush/Scripts/c120261048.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120261048.lua) | 1 |
-| Maju Garzett | `120238004` | [Rush/Scripts/c120238004.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120238004.lua) | 1 |
-| Great Maju Garzett | `120238019` | [Rush/Scripts/c120238019.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120238019.lua) | 1 |
+| God Maju Garzett | `120261043` | [Rush/Scripts/c120261043.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120261043.lua) | 1 |
+| Dark Matter Enigmata | `120261048` | [Rush/Scripts/c120261048.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120261048.lua) | 1 |
+| Maju Garzett | `120238004` | [Rush/Scripts/c120238004.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120238004.lua) | 1 |
+| Great Maju Garzett | `120238019` | [Rush/Scripts/c120238019.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120238019.lua) | 1 |
 
 ## Script Examples
 
 ### God Maju Garzett (`120261043`)
 
-Source: [Rush/Scripts/c120261043.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120261043.lua)
+Source: [Rush/Scripts/c120261043.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120261043.lua)
 
 ```lua
 function cm.getter(c)
@@ -72,7 +72,7 @@ function cm.getter(c)
 
 ### Dark Matter Enigmata (`120261048`)
 
-Source: [Rush/Scripts/c120261048.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120261048.lua)
+Source: [Rush/Scripts/c120261048.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120261048.lua)
 
 ```lua
 	local g=c:GetMaterial()
@@ -84,7 +84,7 @@ Source: [Rush/Scripts/c120261048.lua](https://github.com/ElderLich/MDPro3_Sacred
 
 ### Maju Garzett (`120238004`)
 
-Source: [Rush/Scripts/c120238004.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120238004.lua)
+Source: [Rush/Scripts/c120238004.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120238004.lua)
 
 ```lua
 --Material Check

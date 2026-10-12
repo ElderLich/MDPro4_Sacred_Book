@@ -34,13 +34,13 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Mystical Refpanel | `35563539` | [Scripts/c35563539.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c35563539.lua) | 1 |
+| Mystical Refpanel | `35563539` | [Scripts/c35563539.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c35563539.lua) | 1 |
 
 ## Script Examples
 
 ### Mystical Refpanel (`35563539`)
 
-Source: [Scripts/c35563539.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c35563539.lua)
+Source: [Scripts/c35563539.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c35563539.lua)
 
 ```lua
 function c35563539.activate(e,tp,eg,ep,ev,re,r,rp)

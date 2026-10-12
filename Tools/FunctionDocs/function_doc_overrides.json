@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "description": "Reviewed MDPro3/YGOPro Lua function documentation overrides used by generate_function_docs.py.",
+    "description": "Reviewed MDPro4/YGOPro Lua function documentation overrides used by generate_function_docs.py.",
     "schema": {
       "summary_en": "English summary lines for editor/wiki output.",
       "summary_zh": "Chinese summary lines for editor/wiki output.",
@@ -222,12 +222,12 @@
     "Auxiliary.AddFusionEffectProcUltimate": {
       "summary_en": [
         "Creates the configurable Fusion Summon activation effect described by params.",
-        "Missing material locations, material filters, material operations, Special Summon nocheck, and category fields are filled with the MDPro3 defaults. Unless params.reg is false, the effect is registered to c as an activation effect.",
+        "Missing material locations, material filters, material operations, Special Summon nocheck, and category fields are filled with the MDPro4 defaults. Unless params.reg is false, the effect is registered to c as an activation effect.",
         "The generated effect checks Fusion Monsters in the Extra Deck, gathers and filters Fusion Materials, supports Chain Material fallback, selects materials, moves them with the configured operations, Special Summons with SUMMON_TYPE_FUSION, and completes the procedure."
       ],
       "summary_zh": [
         "创建由params描述的可配置融合召唤发动效果。",
-        "缺省的素材位置、素材筛选、素材操作、特殊召唤nocheck和Category字段会填入MDPro3默认值。除非params.reg为false，否则该效果会作为发动效果登记给c。",
+        "缺省的素材位置、素材筛选、素材操作、特殊召唤nocheck和Category字段会填入MDPro4默认值。除非params.reg为false，否则该效果会作为发动效果登记给c。",
         "生成的效果会检查额外卡组中的融合怪兽、取得并过滤融合素材、支持Chain Material后备流程、选择素材、按配置操作移动素材、以SUMMON_TYPE_FUSION特殊召唤，并完成正规手续。"
       ]
     },
@@ -12159,11 +12159,11 @@
     "Card.GetColumnGroup": {
       "summary_en": [
         "Returns a Group containing cards in the same column as c.",
-        "This MDPro3/YGOPro binding only takes c. It uses c's current on-field column, including related Monster Zones, Spell & Trap Zones, and Extra Monster Zone column relationships; if c is not on the field, the returned Group is empty."
+        "This MDPro4/YGOPro binding only takes c. It uses c's current on-field column, including related Monster Zones, Spell & Trap Zones, and Extra Monster Zone column relationships; if c is not on the field, the returned Group is empty."
       ],
       "summary_zh": [
         "返回与c位于同一纵列的卡组成的Group。",
-        "此MDPro3/YGOPro绑定只接收c。它使用c当前场上的纵列，包含相关怪兽区域、魔法与陷阱区域以及额外怪兽区域的纵列关系；若c不在场上，返回的Group为空。"
+        "此MDPro4/YGOPro绑定只接收c。它使用c当前场上的纵列，包含相关怪兽区域、魔法与陷阱区域以及额外怪兽区域的纵列关系；若c不在场上，返回的Group为空。"
       ],
       "core_summary_en": [
         "Returns cards in c's column."
@@ -14997,11 +14997,11 @@
     "Card.IsCanChangePosition": {
       "summary_en": [
         "Checks the core's effect-specific position-change capability for c.",
-        "In this MDPro3/YGOPro core, that helper returns false for Link Monsters and true for other cards; it does not perform the broader manual battle-position-change checks."
+        "In this MDPro4/YGOPro core, that helper returns false for Link Monsters and true for other cards; it does not perform the broader manual battle-position-change checks."
       ],
       "summary_zh": [
         "检查核心中供效果改变表示形式使用的能力判断。",
-        "在此MDPro3/YGOPro核心中，该底层辅助函数对连接怪兽返回false，对其他卡返回true；它不会执行更完整的手动改变战斗表示形式检查。"
+        "在此MDPro4/YGOPro核心中，该底层辅助函数对连接怪兽返回false，对其他卡返回true；它不会执行更完整的手动改变战斗表示形式检查。"
       ],
       "core_summary_en": [
         "Checks the effect-specific position-change helper for c."
@@ -18424,7 +18424,7 @@
       ],
       "core_summary_zh": [
         "变更targets的表示形式，并返回实际变更表示形式的卡的数量。",
-        "au、ad、du、dd分别对应当前表侧攻击、里侧攻击、表侧守备、里侧守备的目标表示形式；省略时使用au。MDPro3核心不读取旧文档中的第7个setavailable参数。"
+        "au、ad、du、dd分别对应当前表侧攻击、里侧攻击、表侧守备、里侧守备的目标表示形式；省略时使用au。MDPro4核心不读取旧文档中的第7个setavailable参数。"
       ],
       "params": [
         {
@@ -20785,13 +20785,13 @@
     "Duel.IsChainNegatable": {
       "summary_en": [
         "Compatibility check for whether chainc's activation can be negated.",
-        "In this MDPro3 core binding, the function currently returns true for any chain count.",
+        "In this MDPro4 core binding, the function currently returns true for any chain count.",
         "Local scripts still call it in negation conditions so the script expresses the intended activation-legality check.",
         "Use it with Duel.NegateActivation, not as a substitute for effect-negation checks such as Duel.IsChainDisablable."
       ],
       "summary_zh": [
         "用于兼容的连锁发动可否被无效检查。",
-        "在当前MDPro3核心绑定中，此函数对任意连锁序号都会返回true。",
+        "在当前MDPro4核心绑定中，此函数对任意连锁序号都会返回true。",
         "本地脚本仍会在无效发动的条件中调用它，用来表达预期的发动合法性检查。"
       ],
       "params": [
@@ -21267,11 +21267,11 @@
     "Duel.IsPlayerCanSpecialSummonMonster": {
       "summary_en": [
         "Checks whether player can Special Summon a virtual monster with the supplied card data.",
-        "Optional arguments override the loaded card data, then pos, target_player, and sumtype describe how and where the monster would be Summoned. This MDPro3 binding does not read a zone argument."
+        "Optional arguments override the loaded card data, then pos, target_player, and sumtype describe how and where the monster would be Summoned. This MDPro4 binding does not read a zone argument."
       ],
       "summary_zh": [
         "检查player能否特殊召唤一只由传入卡片数据构造的虚拟怪兽。",
-        "可选参数会覆盖读取到的卡片数据，之后用pos、target_player和sumtype描述召唤方式与位置。当前MDPro3绑定不会读取zone参数。"
+        "可选参数会覆盖读取到的卡片数据，之后用pos、target_player和sumtype描述召唤方式与位置。当前MDPro4绑定不会读取zone参数。"
       ],
       "core_summary_en": [
         "Checks whether a virtual monster can be Special Summoned with the supplied data."

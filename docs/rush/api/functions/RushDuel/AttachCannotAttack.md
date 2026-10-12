@@ -49,21 +49,21 @@ Generated from the local `Rush/Scripts/` folder and `rush_cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| [Invitation to a Delirious Dream](/examples/rush-cards/120261066) | `120261066` | [Rush/Scripts/c120261066.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120261066.lua) | 1 |
-| Instant Fusion | `120305053` | [Rush/Scripts/c120305053.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120305053.lua) | 1 |
-| The Swordsman Who Doles Out Victory | `120290023` | [Rush/Scripts/c120290023.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120290023.lua) | 1 |
-| Summoner Monk | `120307009` | [Rush/Scripts/c120307009.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120307009.lua) | 1 |
-| Harpie Lady 3 | `120247006` | [Rush/Scripts/c120247006.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120247006.lua) | 1 |
-| Tribute Doll | `120214009` | [Rush/Scripts/c120214009.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120214009.lua) | 1 |
-| Super Conductor Tyranno | `120274078` | [Rush/Scripts/c120274078.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120274078.lua) | 1 |
-| Mind Control | `120280029` | [Rush/Scripts/c120280029.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120280029.lua) | 1 |
-| Silent Doom | `120234004` | [Rush/Scripts/c120234004.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120234004.lua) | 1 |
+| [Invitation to a Delirious Dream](/examples/rush-cards/120261066) | `120261066` | [Rush/Scripts/c120261066.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120261066.lua) | 1 |
+| Instant Fusion | `120305053` | [Rush/Scripts/c120305053.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120305053.lua) | 1 |
+| The Swordsman Who Doles Out Victory | `120290023` | [Rush/Scripts/c120290023.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120290023.lua) | 1 |
+| Summoner Monk | `120307009` | [Rush/Scripts/c120307009.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120307009.lua) | 1 |
+| Harpie Lady 3 | `120247006` | [Rush/Scripts/c120247006.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120247006.lua) | 1 |
+| Tribute Doll | `120214009` | [Rush/Scripts/c120214009.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120214009.lua) | 1 |
+| Super Conductor Tyranno | `120274078` | [Rush/Scripts/c120274078.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120274078.lua) | 1 |
+| Mind Control | `120280029` | [Rush/Scripts/c120280029.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120280029.lua) | 1 |
+| Silent Doom | `120234004` | [Rush/Scripts/c120234004.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120234004.lua) | 1 |
 
 ## Script Examples
 
 ### Invitation to a Delirious Dream (`120261066`)
 
-Source: [Rush/Scripts/c120261066.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120261066.lua)
+Source: [Rush/Scripts/c120261066.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120261066.lua)
 
 ```lua
 		local tc=g:GetFirst()
@@ -75,7 +75,7 @@ Source: [Rush/Scripts/c120261066.lua](https://github.com/ElderLich/MDPro3_Sacred
 
 ### Instant Fusion (`120305053`)
 
-Source: [Rush/Scripts/c120305053.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120305053.lua)
+Source: [Rush/Scripts/c120305053.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120305053.lua)
 
 ```lua
 		tc:SetMaterial(nil)
@@ -87,7 +87,7 @@ Source: [Rush/Scripts/c120305053.lua](https://github.com/ElderLich/MDPro3_Sacred
 
 ### The Swordsman Who Doles Out Victory (`120290023`)
 
-Source: [Rush/Scripts/c120290023.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120290023.lua)
+Source: [Rush/Scripts/c120290023.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120290023.lua)
 
 ```lua
 			RD.SendToHandAndExists(g,e,tp,REASON_EFFECT)

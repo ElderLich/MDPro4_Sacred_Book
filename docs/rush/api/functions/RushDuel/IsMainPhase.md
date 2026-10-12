@@ -46,16 +46,16 @@ Generated from the local `Rush/Scripts/` folder and `rush_cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| [Major Breaking News!](/examples/rush-cards/120304060) | `120304060` | [Rush/Scripts/c120304060.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120304060.lua) | 1 |
-| Amusi Annoyance | `120249063` | [Rush/Scripts/c120249063.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120249063.lua) | 1 |
-| It's Right Behind You! | `120217084` | [Rush/Scripts/c120217084.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120217084.lua) | 1 |
-| Traditional Tax | `120235063` | [Rush/Scripts/c120235063.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120235063.lua) | 1 |
+| [Major Breaking News!](/examples/rush-cards/120304060) | `120304060` | [Rush/Scripts/c120304060.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120304060.lua) | 1 |
+| Amusi Annoyance | `120249063` | [Rush/Scripts/c120249063.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120249063.lua) | 1 |
+| It's Right Behind You! | `120217084` | [Rush/Scripts/c120217084.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120217084.lua) | 1 |
+| Traditional Tax | `120235063` | [Rush/Scripts/c120235063.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120235063.lua) | 1 |
 
 ## Script Examples
 
 ### Major Breaking News! (`120304060`)
 
-Source: [Rush/Scripts/c120304060.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120304060.lua)
+Source: [Rush/Scripts/c120304060.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120304060.lua)
 
 ```lua
 function cm.event(e,tp,eg,ep,ev,re,r,rp)
@@ -67,7 +67,7 @@ function cm.event(e,tp,eg,ep,ev,re,r,rp)
 
 ### Amusi Annoyance (`120249063`)
 
-Source: [Rush/Scripts/c120249063.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120249063.lua)
+Source: [Rush/Scripts/c120249063.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120249063.lua)
 
 ```lua
 function cm.event(e,tp,eg,ep,ev,re,r,rp)
@@ -79,7 +79,7 @@ function cm.event(e,tp,eg,ep,ev,re,r,rp)
 
 ### It's Right Behind You! (`120217084`)
 
-Source: [Rush/Scripts/c120217084.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120217084.lua)
+Source: [Rush/Scripts/c120217084.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120217084.lua)
 
 ```lua
 function cm.condition(e,tp,eg,ep,ev,re,r,rp)

@@ -31,14 +31,14 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Number 67: Pair-a-Dice Smasher | `35772782` | [Scripts/c35772782.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c35772782.lua) | 1 |
-| That Six | `39454112` | [Scripts/c39454112.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c39454112.lua) | 1 |
+| Number 67: Pair-a-Dice Smasher | `35772782` | [Scripts/c35772782.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c35772782.lua) | 1 |
+| That Six | `39454112` | [Scripts/c39454112.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c39454112.lua) | 1 |
 
 ## Script Examples
 
 ### Number 67: Pair-a-Dice Smasher (`35772782`)
 
-Source: [Scripts/c35772782.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c35772782.lua)
+Source: [Scripts/c35772782.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c35772782.lua)
 
 ```lua
 		Duel.Hint(HINT_CARD,0,35772782)
@@ -50,7 +50,7 @@ Source: [Scripts/c35772782.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/
 
 ### That Six (`39454112`)
 
-Source: [Scripts/c39454112.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c39454112.lua)
+Source: [Scripts/c39454112.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c39454112.lua)
 
 ```lua
 	if Duel.SelectYesNo(tp,aux.Stringid(39454112,0)) then

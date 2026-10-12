@@ -53,19 +53,19 @@ Generated from the local `Rush/Scripts/` folder and `rush_cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Tamabot King Golem | `120285039` | [Rush/Scripts/c120285039.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120285039.lua) | 1 |
-| Prime Roast Beef Horseman | `120205042` | [Rush/Scripts/c120205042.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120205042.lua) | 1 |
-| JAM:P Set! | `120183041` | [Rush/Scripts/c120183041.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120183041.lua) | 1 |
-| Flame Archer the Super Graphagas | `120257042` | [Rush/Scripts/c120257042.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120257042.lua) | 1 |
-| Cyber Assault Dragon | `120231022` | [Rush/Scripts/c120231022.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120231022.lua) | 1 |
-| Flapun | `120238041` | [Rush/Scripts/c120238041.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120238041.lua) | 1 |
-| Autumn Leaves of Blisstopia | `120253053` | [Rush/Scripts/c120253053.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120253053.lua) | 1 |
+| Tamabot King Golem | `120285039` | [Rush/Scripts/c120285039.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120285039.lua) | 1 |
+| Prime Roast Beef Horseman | `120205042` | [Rush/Scripts/c120205042.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120205042.lua) | 1 |
+| JAM:P Set! | `120183041` | [Rush/Scripts/c120183041.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120183041.lua) | 1 |
+| Flame Archer the Super Graphagas | `120257042` | [Rush/Scripts/c120257042.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120257042.lua) | 1 |
+| Cyber Assault Dragon | `120231022` | [Rush/Scripts/c120231022.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120231022.lua) | 1 |
+| Flapun | `120238041` | [Rush/Scripts/c120238041.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120238041.lua) | 1 |
+| Autumn Leaves of Blisstopia | `120253053` | [Rush/Scripts/c120253053.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120253053.lua) | 1 |
 
 ## Script Examples
 
 ### Tamabot King Golem (`120285039`)
 
-Source: [Rush/Scripts/c120285039.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120285039.lua)
+Source: [Rush/Scripts/c120285039.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120285039.lua)
 
 ```lua
 	return c:IsCode(list[1]) and c:IsAbleToDeckOrExtraAsCost()
@@ -77,7 +77,7 @@ function cm.target(e,tp,eg,ep,ev,re,r,rp,chk)
 
 ### Prime Roast Beef Horseman (`120205042`)
 
-Source: [Rush/Scripts/c120205042.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120205042.lua)
+Source: [Rush/Scripts/c120205042.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120205042.lua)
 
 ```lua
 	return RD.IsSpecialSummonMainPhase(e:GetHandler())
@@ -89,7 +89,7 @@ function cm.target(e,tp,eg,ep,ev,re,r,rp,chk)
 
 ### JAM:P Set! (`120183041`)
 
-Source: [Rush/Scripts/c120183041.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120183041.lua)
+Source: [Rush/Scripts/c120183041.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120183041.lua)
 
 ```lua
 	return c:IsType(TYPE_MONSTER) and c:IsAbleToDeck()

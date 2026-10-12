@@ -56,13 +56,13 @@ Generated from the local `Rush/Scripts/` folder and `rush_cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Machine Inspector | `120257057` | [Rush/Scripts/c120257057.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120257057.lua) | 1 |
+| Machine Inspector | `120257057` | [Rush/Scripts/c120257057.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120257057.lua) | 1 |
 
 ## Script Examples
 
 ### Machine Inspector (`120257057`)
 
-Source: [Rush/Scripts/c120257057.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120257057.lua)
+Source: [Rush/Scripts/c120257057.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120257057.lua)
 
 ```lua
 	local draw=false

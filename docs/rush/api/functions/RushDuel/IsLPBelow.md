@@ -46,22 +46,22 @@ Generated from the local `Rush/Scripts/` folder and `rush_cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Strong Boy Sevens Road | `120212001` | [Rush/Scripts/c120212001.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120212001.lua) | 1 |
-| Dian Keto the Cooking Master | `120217052` | [Rush/Scripts/c120217052.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120217052.lua) | 1 |
-| Player #C39: Home Run Smasher | `120205016` | [Rush/Scripts/c120205016.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120205016.lua) | 1 |
-| Stealthagic | `120235042` | [Rush/Scripts/c120235042.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120235042.lua) | 2 |
-| Dark Matter Elysium | `120272043` | [Rush/Scripts/c120272043.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120272043.lua) | 1 |
-| Predator Ganleon | `120205021` | [Rush/Scripts/c120205021.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120205021.lua) | 1 |
-| Romic n' Roller | `120130024` | [Rush/Scripts/c120130024.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120130024.lua) | 1 |
-| Esperade the Smashing Superstar | `120130025` | [Rush/Scripts/c120130025.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120130025.lua) | 1 |
-| Esperade the Smashing Superstar | `120253000` | [Rush/Scripts/c120253000.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120253000.lua) | 1 |
-| Neo-Spacian Air Hummingbird | `120272021` | [Rush/Scripts/c120272021.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120272021.lua) | 1 |
+| Strong Boy Sevens Road | `120212001` | [Rush/Scripts/c120212001.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120212001.lua) | 1 |
+| Dian Keto the Cooking Master | `120217052` | [Rush/Scripts/c120217052.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120217052.lua) | 1 |
+| Player #C39: Home Run Smasher | `120205016` | [Rush/Scripts/c120205016.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120205016.lua) | 1 |
+| Stealthagic | `120235042` | [Rush/Scripts/c120235042.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120235042.lua) | 2 |
+| Dark Matter Elysium | `120272043` | [Rush/Scripts/c120272043.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120272043.lua) | 1 |
+| Predator Ganleon | `120205021` | [Rush/Scripts/c120205021.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120205021.lua) | 1 |
+| Romic n' Roller | `120130024` | [Rush/Scripts/c120130024.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120130024.lua) | 1 |
+| Esperade the Smashing Superstar | `120130025` | [Rush/Scripts/c120130025.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120130025.lua) | 1 |
+| Esperade the Smashing Superstar | `120253000` | [Rush/Scripts/c120253000.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120253000.lua) | 1 |
+| Neo-Spacian Air Hummingbird | `120272021` | [Rush/Scripts/c120272021.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120272021.lua) | 1 |
 
 ## Script Examples
 
 ### Strong Boy Sevens Road (`120212001`)
 
-Source: [Rush/Scripts/c120212001.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120212001.lua)
+Source: [Rush/Scripts/c120212001.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120212001.lua)
 
 ```lua
 		local atk=g:GetClassCount(Card.GetAttribute)*200
@@ -73,7 +73,7 @@ Source: [Rush/Scripts/c120212001.lua](https://github.com/ElderLich/MDPro3_Sacred
 
 ### Dian Keto the Cooking Master (`120217052`)
 
-Source: [Rush/Scripts/c120217052.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120217052.lua)
+Source: [Rush/Scripts/c120217052.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120217052.lua)
 
 ```lua
 	if RD.SendDeckTopToGraveAndExists(tp,3) then
@@ -85,7 +85,7 @@ Source: [Rush/Scripts/c120217052.lua](https://github.com/ElderLich/MDPro3_Sacred
 
 ### Player #C39: Home Run Smasher (`120205016`)
 
-Source: [Rush/Scripts/c120205016.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120205016.lua)
+Source: [Rush/Scripts/c120205016.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120205016.lua)
 
 ```lua
 	if c:IsFaceup() and c:IsRelateToEffect(e) then

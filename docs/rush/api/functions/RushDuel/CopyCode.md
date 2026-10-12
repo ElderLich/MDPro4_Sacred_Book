@@ -50,18 +50,18 @@ Generated from the local `Rush/Scripts/` folder and `rush_cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| [Fairy of the Stars](/examples/rush-cards/120305016) | `120305016` | [Rush/Scripts/c120305016.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120305016.lua) | 1 |
-| Etraynze the Shadow Flower Restricter | `120254041` | [Rush/Scripts/c120254041.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120254041.lua) | 1 |
-| CAN - Eb:D | `120283034` | [Rush/Scripts/c120283034.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120283034.lua) | 1 |
-| Magical Warrior of Heritage | `120285030` | [Rush/Scripts/c120285030.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120285030.lua) | 1 |
-| Splame | `120244027` | [Rush/Scripts/c120244027.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120244027.lua) | 1 |
-| Mirroring Wyvern | `120235013` | [Rush/Scripts/c120235013.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120235013.lua) | 1 |
+| [Fairy of the Stars](/examples/rush-cards/120305016) | `120305016` | [Rush/Scripts/c120305016.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120305016.lua) | 1 |
+| Etraynze the Shadow Flower Restricter | `120254041` | [Rush/Scripts/c120254041.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120254041.lua) | 1 |
+| CAN - Eb:D | `120283034` | [Rush/Scripts/c120283034.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120283034.lua) | 1 |
+| Magical Warrior of Heritage | `120285030` | [Rush/Scripts/c120285030.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120285030.lua) | 1 |
+| Splame | `120244027` | [Rush/Scripts/c120244027.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120244027.lua) | 1 |
+| Mirroring Wyvern | `120235013` | [Rush/Scripts/c120235013.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120235013.lua) | 1 |
 
 ## Script Examples
 
 ### Fairy of the Stars (`120305016`)
 
-Source: [Rush/Scripts/c120305016.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120305016.lua)
+Source: [Rush/Scripts/c120305016.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120305016.lua)
 
 ```lua
 		local filter=RD.Filter(cm.filter,c:GetCode())
@@ -73,7 +73,7 @@ Source: [Rush/Scripts/c120305016.lua](https://github.com/ElderLich/MDPro3_Sacred
 
 ### Etraynze the Shadow Flower Restricter (`120254041`)
 
-Source: [Rush/Scripts/c120254041.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120254041.lua)
+Source: [Rush/Scripts/c120254041.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120254041.lua)
 
 ```lua
 		local filter=RD.Filter(cm.filter,c:GetCode())
@@ -85,7 +85,7 @@ Source: [Rush/Scripts/c120254041.lua](https://github.com/ElderLich/MDPro3_Sacred
 
 ### CAN - Eb:D (`120283034`)
 
-Source: [Rush/Scripts/c120283034.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120283034.lua)
+Source: [Rush/Scripts/c120283034.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120283034.lua)
 
 ```lua
 		local filter=RD.Filter(cm.filter,c:GetCode())

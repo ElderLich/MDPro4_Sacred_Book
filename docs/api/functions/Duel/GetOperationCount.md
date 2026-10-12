@@ -31,13 +31,13 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Muko | `80863132` | [Scripts/c80863132.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c80863132.lua) | 1 |
+| Muko | `80863132` | [Scripts/c80863132.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c80863132.lua) | 1 |
 
 ## Script Examples
 
 ### Muko (`80863132`)
 
-Source: [Scripts/c80863132.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c80863132.lua)
+Source: [Scripts/c80863132.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c80863132.lua)
 
 ```lua
 function c80863132.condition(e,tp,eg,ep,ev,re,r,rp)

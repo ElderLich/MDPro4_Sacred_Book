@@ -86,14 +86,14 @@ Generated from the local `Rush/Scripts/` folder and `rush_cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Handbook to the Spiritual Arts | `120301019` | [Rush/Scripts/c120301019.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120301019.lua) | 1 |
-| Lovely Shoot | `120260048` | [Rush/Scripts/c120260048.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120260048.lua) | 1 |
+| Handbook to the Spiritual Arts | `120301019` | [Rush/Scripts/c120301019.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120301019.lua) | 1 |
+| Lovely Shoot | `120260048` | [Rush/Scripts/c120260048.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120260048.lua) | 1 |
 
 ## Script Examples
 
 ### Handbook to the Spiritual Arts (`120301019`)
 
-Source: [Rush/Scripts/c120301019.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120301019.lua)
+Source: [Rush/Scripts/c120301019.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120301019.lua)
 
 ```lua
 			if Duel.Destroy(g,REASON_EFFECT)==2 then
@@ -105,7 +105,7 @@ Source: [Rush/Scripts/c120301019.lua](https://github.com/ElderLich/MDPro3_Sacred
 
 ### Lovely Shoot (`120260048`)
 
-Source: [Rush/Scripts/c120260048.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120260048.lua)
+Source: [Rush/Scripts/c120260048.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120260048.lua)
 
 ```lua
 	if Duel.GetFlagEffect(tp,m)~=0 then return end

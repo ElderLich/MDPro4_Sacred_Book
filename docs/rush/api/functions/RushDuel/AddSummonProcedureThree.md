@@ -62,20 +62,20 @@ Generated from the local `Rush/Scripts/` folder and `rush_cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Galactica Supreme Oblivion | `120245003` | [Rush/Scripts/c120245003.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120245003.lua) | 1 |
-| Voidvelg Divine Requiem | `120109037` | [Rush/Scripts/c120109037.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120109037.lua) | 1 |
-| Darkness Transam Crisis | `120253004` | [Rush/Scripts/c120253004.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120253004.lua) | 7 |
-| Transam Prime Armor Nova | `120257008` | [Rush/Scripts/c120257008.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120257008.lua) | 1 |
-| God Maju Garzett | `120261043` | [Rush/Scripts/c120261043.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120261043.lua) | 1 |
-| Magnet Citadel Jar | `120260027` | [Rush/Scripts/c120260027.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120260027.lua) | 1 |
-| Beast King Barbaros | `120300000` | [Rush/Scripts/c120300000.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120300000.lua) | 1 |
-| Gilford the Lightning | `120235000` | [Rush/Scripts/c120235000.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120235000.lua) | 1 |
+| Galactica Supreme Oblivion | `120245003` | [Rush/Scripts/c120245003.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120245003.lua) | 1 |
+| Voidvelg Divine Requiem | `120109037` | [Rush/Scripts/c120109037.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120109037.lua) | 1 |
+| Darkness Transam Crisis | `120253004` | [Rush/Scripts/c120253004.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120253004.lua) | 7 |
+| Transam Prime Armor Nova | `120257008` | [Rush/Scripts/c120257008.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120257008.lua) | 1 |
+| God Maju Garzett | `120261043` | [Rush/Scripts/c120261043.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120261043.lua) | 1 |
+| Magnet Citadel Jar | `120260027` | [Rush/Scripts/c120260027.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120260027.lua) | 1 |
+| Beast King Barbaros | `120300000` | [Rush/Scripts/c120300000.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120300000.lua) | 1 |
+| Gilford the Lightning | `120235000` | [Rush/Scripts/c120235000.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120235000.lua) | 1 |
 
 ## Script Examples
 
 ### Galactica Supreme Oblivion (`120245003`)
 
-Source: [Rush/Scripts/c120245003.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120245003.lua)
+Source: [Rush/Scripts/c120245003.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120245003.lua)
 
 ```lua
 function cm.initial_effect(c)
@@ -87,7 +87,7 @@ function cm.initial_effect(c)
 
 ### Voidvelg Divine Requiem (`120109037`)
 
-Source: [Rush/Scripts/c120109037.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120109037.lua)
+Source: [Rush/Scripts/c120109037.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120109037.lua)
 
 ```lua
 function cm.initial_effect(c)
@@ -99,7 +99,7 @@ function cm.initial_effect(c)
 
 ### Darkness Transam Crisis (`120253004`)
 
-Source: [Rush/Scripts/c120253004.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120253004.lua)
+Source: [Rush/Scripts/c120253004.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120253004.lua)
 
 ```lua
 function cm.initial_effect(c)

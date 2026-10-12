@@ -28,18 +28,18 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Ursarctic Megatanus | `54700519` | [Scripts/c54700519.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c54700519.lua) | 1 |
-| Ursarctic Megapolar | `28715905` | [Scripts/c28715905.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c28715905.lua) | 1 |
-| Ursarctic Megabilis | `81108658` | [Scripts/c81108658.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c81108658.lua) | 1 |
-| Ursarctic Miktanus | `55936191` | [Scripts/c55936191.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c55936191.lua) | 1 |
-| Ursarctic Mikpolar | `29537493` | [Scripts/c29537493.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c29537493.lua) | 1 |
-| Ursarctic Mikbilis | `81321206` | [Scripts/c81321206.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c81321206.lua) | 1 |
+| Ursarctic Megatanus | `54700519` | [Scripts/c54700519.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c54700519.lua) | 1 |
+| Ursarctic Megapolar | `28715905` | [Scripts/c28715905.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c28715905.lua) | 1 |
+| Ursarctic Megabilis | `81108658` | [Scripts/c81108658.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c81108658.lua) | 1 |
+| Ursarctic Miktanus | `55936191` | [Scripts/c55936191.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c55936191.lua) | 1 |
+| Ursarctic Mikpolar | `29537493` | [Scripts/c29537493.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c29537493.lua) | 1 |
+| Ursarctic Mikbilis | `81321206` | [Scripts/c81321206.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c81321206.lua) | 1 |
 
 ## Script Examples
 
 ### Ursarctic Megatanus (`54700519`)
 
-Source: [Scripts/c54700519.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c54700519.lua)
+Source: [Scripts/c54700519.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c54700519.lua)
 
 ```lua
 function c54700519.initial_effect(c)
@@ -51,7 +51,7 @@ function c54700519.initial_effect(c)
 
 ### Ursarctic Megapolar (`28715905`)
 
-Source: [Scripts/c28715905.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c28715905.lua)
+Source: [Scripts/c28715905.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c28715905.lua)
 
 ```lua
 function c28715905.initial_effect(c)
@@ -63,7 +63,7 @@ function c28715905.initial_effect(c)
 
 ### Ursarctic Megabilis (`81108658`)
 
-Source: [Scripts/c81108658.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c81108658.lua)
+Source: [Scripts/c81108658.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c81108658.lua)
 
 ```lua
 function c81108658.initial_effect(c)

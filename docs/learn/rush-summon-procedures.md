@@ -54,7 +54,7 @@ checks differ, which matters for effects that put a monster into Maximum mode
 without following the ordinary summon procedure.
 
 ::: warning Data and procedure must agree
-`TYPE_MAXIMUM` is `0x8000` in the imported library and MDPro3. That bit alone
+`TYPE_MAXIMUM` is `0x8000` in the imported library and MDPro4. That bit alone
 does not create the three-piece procedure. Register the center's procedure,
 use the actual left/right IDs, and test the three scripts together.
 :::

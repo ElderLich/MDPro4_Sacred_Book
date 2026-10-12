@@ -39,31 +39,31 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| [Eternal Favorite](/examples/cards/87532344) | `87532344` | [Scripts/c87532344.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c87532344.lua) | 1 |
-| [Spellbook of the Grand Circle](/examples/cards/11911336) | `11911336` | [Scripts/c11911336.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c11911336.lua) | 1 |
-| [Dracotail Shaulas](/examples/cards/42125140) | `42125140` | [Scripts/c42125140.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c42125140.lua) | 4 |
-| Dracotail Arthalion | `33760966` | [Scripts/c33760966.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c33760966.lua) | 4 |
-| Dracotail Gulamel | `79755671` | [Scripts/c79755671.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c79755671.lua) | 4 |
-| U.A. Penalty Box | `70043345` | [Scripts/c70043345.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c70043345.lua) | 1 |
-| Kunai with Chain | `37390589` | [Scripts/c37390589.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c37390589.lua) | 1 |
-| Eye of Illusion | `23446369` | [Scripts/c23446369.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c23446369.lua) | 1 |
-| Crusadia Testament | `87497553` | [Scripts/c87497553.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c87497553.lua) | 1 |
-| Beast King Unleashed | `50675040` | [Scripts/c50675040.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c50675040.lua) | 1 |
-| Depth Amulet | `8279188` | [Scripts/c8279188.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c8279188.lua) | 1 |
-| Prepare to Strike Back | `4483989` | [Scripts/c4483989.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c4483989.lua) | 1 |
-| Lose 1 Turn | `24348804` | [Scripts/c24348804.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c24348804.lua) | 1 |
-| Dice-nied | `31863912` | [Scripts/c31863912.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c31863912.lua) | 1 |
-| Dimension Slice | `73632127` | [Scripts/c73632127.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c73632127.lua) | 1 |
-| Gishki Vanity | `93506862` | [Scripts/c93506862.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c93506862.lua) | 1 |
-| Chow Chow Chan | `99902789` | [Scripts/c99902789.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c99902789.lua) | 1 |
-| Zolga | `16268841` | [Scripts/c16268841.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c16268841.lua) | 2 |
-| Dust Storm of Gusto | `8414337` | [Scripts/c8414337.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c8414337.lua) | 1 |
+| [Eternal Favorite](/examples/cards/87532344) | `87532344` | [Scripts/c87532344.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c87532344.lua) | 1 |
+| [Spellbook of the Grand Circle](/examples/cards/11911336) | `11911336` | [Scripts/c11911336.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c11911336.lua) | 1 |
+| [Dracotail Shaulas](/examples/cards/42125140) | `42125140` | [Scripts/c42125140.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c42125140.lua) | 4 |
+| Dracotail Arthalion | `33760966` | [Scripts/c33760966.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c33760966.lua) | 4 |
+| Dracotail Gulamel | `79755671` | [Scripts/c79755671.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c79755671.lua) | 4 |
+| U.A. Penalty Box | `70043345` | [Scripts/c70043345.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c70043345.lua) | 1 |
+| Kunai with Chain | `37390589` | [Scripts/c37390589.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c37390589.lua) | 1 |
+| Eye of Illusion | `23446369` | [Scripts/c23446369.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c23446369.lua) | 1 |
+| Crusadia Testament | `87497553` | [Scripts/c87497553.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c87497553.lua) | 1 |
+| Beast King Unleashed | `50675040` | [Scripts/c50675040.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c50675040.lua) | 1 |
+| Depth Amulet | `8279188` | [Scripts/c8279188.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c8279188.lua) | 1 |
+| Prepare to Strike Back | `4483989` | [Scripts/c4483989.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c4483989.lua) | 1 |
+| Lose 1 Turn | `24348804` | [Scripts/c24348804.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c24348804.lua) | 1 |
+| Dice-nied | `31863912` | [Scripts/c31863912.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c31863912.lua) | 1 |
+| Dimension Slice | `73632127` | [Scripts/c73632127.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c73632127.lua) | 1 |
+| Gishki Vanity | `93506862` | [Scripts/c93506862.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c93506862.lua) | 1 |
+| Chow Chow Chan | `99902789` | [Scripts/c99902789.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c99902789.lua) | 1 |
+| Zolga | `16268841` | [Scripts/c16268841.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c16268841.lua) | 2 |
+| Dust Storm of Gusto | `8414337` | [Scripts/c8414337.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c8414337.lua) | 1 |
 
 ## Script Examples
 
 ### Eternal Favorite (`87532344`)
 
-Source: [Scripts/c87532344.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c87532344.lua)
+Source: [Scripts/c87532344.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c87532344.lua)
 
 ```lua
 end
@@ -75,7 +75,7 @@ function s.cedop(e,tp,eg,ep,ev,re,r,rp)
 
 ### Spellbook of the Grand Circle (`11911336`)
 
-Source: [Scripts/c11911336.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c11911336.lua)
+Source: [Scripts/c11911336.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c11911336.lua)
 
 ```lua
 end
@@ -87,7 +87,7 @@ function s.cedop(e,tp,eg,ep,ev,re,r,rp)
 
 ### Dracotail Shaulas (`42125140`)
 
-Source: [Scripts/c42125140.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c42125140.lua)
+Source: [Scripts/c42125140.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c42125140.lua)
 
 ```lua
 	local c=e:GetOwner()

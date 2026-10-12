@@ -58,14 +58,14 @@ Generated from the local `Rush/Scripts/` folder and `rush_cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| [Instant Gift](/examples/rush-cards/120306059) | `120306059` | [Rush/Scripts/c120306059.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120306059.lua) | 1 |
-| Union Supporter | `120305011` | [Rush/Scripts/c120305011.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120305011.lua) | 1 |
+| [Instant Gift](/examples/rush-cards/120306059) | `120306059` | [Rush/Scripts/c120306059.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120306059.lua) | 1 |
+| Union Supporter | `120305011` | [Rush/Scripts/c120305011.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120305011.lua) | 1 |
 
 ## Script Examples
 
 ### Instant Gift (`120306059`)
 
-Source: [Rush/Scripts/c120306059.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120306059.lua)
+Source: [Rush/Scripts/c120306059.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120306059.lua)
 
 ```lua
 		end
@@ -77,7 +77,7 @@ Source: [Rush/Scripts/c120306059.lua](https://github.com/ElderLich/MDPro3_Sacred
 
 ### Union Supporter (`120305011`)
 
-Source: [Rush/Scripts/c120305011.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120305011.lua)
+Source: [Rush/Scripts/c120305011.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120305011.lua)
 
 ```lua
 function cm.target(e,tp,eg,ep,ev,re,r,rp,chk)

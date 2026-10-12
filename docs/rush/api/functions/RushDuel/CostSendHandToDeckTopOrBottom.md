@@ -56,13 +56,13 @@ Generated from the local `Rush/Scripts/` folder and `rush_cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Shadowforce Explosion | `120300042` | [Rush/Scripts/c120300042.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120300042.lua) | 1 |
+| Shadowforce Explosion | `120300042` | [Rush/Scripts/c120300042.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120300042.lua) | 1 |
 
 ## Script Examples
 
 ### Shadowforce Explosion (`120300042`)
 
-Source: [Rush/Scripts/c120300042.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120300042.lua)
+Source: [Rush/Scripts/c120300042.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120300042.lua)
 
 ```lua
 	return RD.IsPlayerNoActivateInThisTurn(tp,list[1])

@@ -32,13 +32,13 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Transmodify | `5288597` | [Scripts/c5288597.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c5288597.lua) | 1 |
+| Transmodify | `5288597` | [Scripts/c5288597.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c5288597.lua) | 1 |
 
 ## Script Examples
 
 ### Transmodify (`5288597`)
 
-Source: [Scripts/c5288597.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c5288597.lua)
+Source: [Scripts/c5288597.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c5288597.lua)
 
 ```lua
 function c5288597.cfilter(c,e,tp)

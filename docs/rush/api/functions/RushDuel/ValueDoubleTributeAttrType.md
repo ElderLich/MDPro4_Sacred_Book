@@ -47,14 +47,14 @@ Generated from the local `Rush/Scripts/` folder and `rush_cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Light Effigy | `120252014` | [Rush/Scripts/c120252014.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120252014.lua) | 1 |
-| Dark Effigy | `120253032` | [Rush/Scripts/c120253032.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120253032.lua) | 1 |
+| Light Effigy | `120252014` | [Rush/Scripts/c120252014.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120252014.lua) | 1 |
+| Dark Effigy | `120253032` | [Rush/Scripts/c120253032.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120253032.lua) | 1 |
 
 ## Script Examples
 
 ### Light Effigy (`120252014`)
 
-Source: [Rush/Scripts/c120252014.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120252014.lua)
+Source: [Rush/Scripts/c120252014.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120252014.lua)
 
 ```lua
 end
@@ -64,7 +64,7 @@ cm.trival=RD.ValueDoubleTributeAttrType(ATTRIBUTE_LIGHT,TYPE_NORMAL,true)
 
 ### Dark Effigy (`120253032`)
 
-Source: [Rush/Scripts/c120253032.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120253032.lua)
+Source: [Rush/Scripts/c120253032.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120253032.lua)
 
 ```lua
 end

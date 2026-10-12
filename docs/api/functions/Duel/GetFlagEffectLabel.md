@@ -50,18 +50,18 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Trirealm Rift Judgment | `65195679` | [Scripts/c65195679.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c65195679.lua) | 2 |
-| Mayakashi Mayhem | `41867019` | [Scripts/c41867019.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c41867019.lua) | 2 |
-| You and A.I. | `32056070` | [Scripts/c32056070.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c32056070.lua) | 1 |
-| Cairngorgon, Antiluminescent Knight | `21501505` | [Scripts/c21501505.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c21501505.lua) | 1 |
-| New Frontier | `56787189` | [Scripts/c56787189.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c56787189.lua) | 1 |
-| Dimensional Barrier | `83326048` | [Scripts/c83326048.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c83326048.lua) | 2 |
+| Trirealm Rift Judgment | `65195679` | [Scripts/c65195679.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c65195679.lua) | 2 |
+| Mayakashi Mayhem | `41867019` | [Scripts/c41867019.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c41867019.lua) | 2 |
+| You and A.I. | `32056070` | [Scripts/c32056070.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c32056070.lua) | 1 |
+| Cairngorgon, Antiluminescent Knight | `21501505` | [Scripts/c21501505.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c21501505.lua) | 1 |
+| New Frontier | `56787189` | [Scripts/c56787189.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c56787189.lua) | 1 |
+| Dimensional Barrier | `83326048` | [Scripts/c83326048.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c83326048.lua) | 2 |
 
 ## Script Examples
 
 ### Trirealm Rift Judgment (`65195679`)
 
-Source: [Scripts/c65195679.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c65195679.lua)
+Source: [Scripts/c65195679.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c65195679.lua)
 
 ```lua
 end
@@ -73,7 +73,7 @@ end
 
 ### Mayakashi Mayhem (`41867019`)
 
-Source: [Scripts/c41867019.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c41867019.lua)
+Source: [Scripts/c41867019.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c41867019.lua)
 
 ```lua
 			Duel.RegisterFlagEffect(tp,41867019,RESET_PHASE+PHASE_END,0,1)
@@ -85,7 +85,7 @@ Source: [Scripts/c41867019.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/
 
 ### You and A.I. (`32056070`)
 
-Source: [Scripts/c32056070.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c32056070.lua)
+Source: [Scripts/c32056070.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c32056070.lua)
 
 ```lua
 	local b3=Duel.GetLocationCount(tp,LOCATION_MZONE)>0

@@ -27,17 +27,17 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Bujin Torifune | `29981935` | [Scripts/c29981935.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c29981935.lua) | 1 |
-| Carpiponica, Mystical Beast of the Forest | `85055821` | [Scripts/c85055821.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c85055821.lua) | 2 |
-| Pot of Dichotomy | `98672567` | [Scripts/c98672567.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c98672567.lua) | 1 |
-| Tribe Drive | `90969892` | [Scripts/c90969892.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c90969892.lua) | 2 |
-| Sky Scourge Cidhels | `15792576` | [Scripts/c15792576.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c15792576.lua) | 1 |
+| Bujin Torifune | `29981935` | [Scripts/c29981935.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c29981935.lua) | 1 |
+| Carpiponica, Mystical Beast of the Forest | `85055821` | [Scripts/c85055821.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c85055821.lua) | 2 |
+| Pot of Dichotomy | `98672567` | [Scripts/c98672567.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c98672567.lua) | 1 |
+| Tribe Drive | `90969892` | [Scripts/c90969892.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c90969892.lua) | 2 |
+| Sky Scourge Cidhels | `15792576` | [Scripts/c15792576.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c15792576.lua) | 1 |
 
 ## Script Examples
 
 ### Bujin Torifune (`29981935`)
 
-Source: [Scripts/c29981935.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c29981935.lua)
+Source: [Scripts/c29981935.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c29981935.lua)
 
 ```lua
 	local g=Duel.GetMatchingGroup(c29981935.spfilter,tp,LOCATION_DECK,0,nil,e,tp)
@@ -49,7 +49,7 @@ Source: [Scripts/c29981935.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/
 
 ### Carpiponica, Mystical Beast of the Forest (`85055821`)
 
-Source: [Scripts/c85055821.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c85055821.lua)
+Source: [Scripts/c85055821.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c85055821.lua)
 
 ```lua
 	local g=Duel.GetMatchingGroup(c85055821.tdfilter,tp,LOCATION_GRAVE,0,e:GetHandler(),e)
@@ -61,7 +61,7 @@ Source: [Scripts/c85055821.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/
 
 ### Pot of Dichotomy (`98672567`)
 
-Source: [Scripts/c98672567.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c98672567.lua)
+Source: [Scripts/c98672567.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c98672567.lua)
 
 ```lua
 	local g=Duel.GetMatchingGroup(c98672567.filter,tp,LOCATION_GRAVE,0,nil,e)

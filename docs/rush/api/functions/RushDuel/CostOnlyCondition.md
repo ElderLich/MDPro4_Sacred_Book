@@ -47,13 +47,13 @@ Generated from the local `Rush/Scripts/` folder and `rush_cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Ace Sword Slash | `120294052` | [Rush/Scripts/c120294052.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120294052.lua) | 1 |
+| Ace Sword Slash | `120294052` | [Rush/Scripts/c120294052.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120294052.lua) | 1 |
 
 ## Script Examples
 
 ### Ace Sword Slash (`120294052`)
 
-Source: [Rush/Scripts/c120294052.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120294052.lua)
+Source: [Rush/Scripts/c120294052.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120294052.lua)
 
 ```lua
 end

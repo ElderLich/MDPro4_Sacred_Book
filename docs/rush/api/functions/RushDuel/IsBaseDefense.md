@@ -46,32 +46,32 @@ Generated from the local `Rush/Scripts/` folder and `rush_cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| [Handy Girl](/examples/rush-cards/120290012) | `120290012` | [Rush/Scripts/c120290012.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120290012.lua) | 1 |
-| Vic Viper Spread Bomb | `120294025` | [Rush/Scripts/c120294025.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120294025.lua) | 1 |
-| Lovely Connect | `120300054` | [Rush/Scripts/c120300054.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120300054.lua) | 1 |
-| Super-Dimensional Lord British Space Fighter | `120294065` | [Rush/Scripts/c120294065.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120294065.lua) | 1 |
-| Lovely Blessing | `120260051` | [Rush/Scripts/c120260051.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120260051.lua) | 1 |
-| First Cat Search | `120290046` | [Rush/Scripts/c120290046.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120290046.lua) | 1 |
-| Piping Hot Delivery | `120290045` | [Rush/Scripts/c120290045.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120290045.lua) | 1 |
-| Gradius' Option | `120294023` | [Rush/Scripts/c120294023.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120294023.lua) | 1 |
-| Power Capsule Red | `120294056` | [Rush/Scripts/c120294056.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120294056.lua) | 1 |
-| Power Capsule Blue | `120294055` | [Rush/Scripts/c120294055.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120294055.lua) | 1 |
-| Plus Skull | `120261040` | [Rush/Scripts/c120261040.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120261040.lua) | 1 |
-| Legendary Party | `120309061` | [Rush/Scripts/c120309061.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120309061.lua) | 1 |
-| Lovely Return | `120260055` | [Rush/Scripts/c120260055.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120260055.lua) | 1 |
-| Home of the Charmers | `120301021` | [Rush/Scripts/c120301021.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120301021.lua) | 2 |
-| Healthie Lamilla | `120306021` | [Rush/Scripts/c120306021.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120306021.lua) | 1 |
-| The Sounds of a Piano Heard After School | `120306008` | [Rush/Scripts/c120306008.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120306008.lua) | 1 |
-| Dark Battle Grounds | `120249053` | [Rush/Scripts/c120249053.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120249053.lua) | 1 |
-| The Emperor Realm | `120244056` | [Rush/Scripts/c120244056.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120244056.lua) | 1 |
-| Cheerful Waitress | `120290016` | [Rush/Scripts/c120290016.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120290016.lua) | 1 |
-| Freshberry Garden | `120264057` | [Rush/Scripts/c120264057.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120264057.lua) | 1 |
+| [Handy Girl](/examples/rush-cards/120290012) | `120290012` | [Rush/Scripts/c120290012.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120290012.lua) | 1 |
+| Vic Viper Spread Bomb | `120294025` | [Rush/Scripts/c120294025.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120294025.lua) | 1 |
+| Lovely Connect | `120300054` | [Rush/Scripts/c120300054.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120300054.lua) | 1 |
+| Super-Dimensional Lord British Space Fighter | `120294065` | [Rush/Scripts/c120294065.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120294065.lua) | 1 |
+| Lovely Blessing | `120260051` | [Rush/Scripts/c120260051.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120260051.lua) | 1 |
+| First Cat Search | `120290046` | [Rush/Scripts/c120290046.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120290046.lua) | 1 |
+| Piping Hot Delivery | `120290045` | [Rush/Scripts/c120290045.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120290045.lua) | 1 |
+| Gradius' Option | `120294023` | [Rush/Scripts/c120294023.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120294023.lua) | 1 |
+| Power Capsule Red | `120294056` | [Rush/Scripts/c120294056.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120294056.lua) | 1 |
+| Power Capsule Blue | `120294055` | [Rush/Scripts/c120294055.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120294055.lua) | 1 |
+| Plus Skull | `120261040` | [Rush/Scripts/c120261040.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120261040.lua) | 1 |
+| Legendary Party | `120309061` | [Rush/Scripts/c120309061.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120309061.lua) | 1 |
+| Lovely Return | `120260055` | [Rush/Scripts/c120260055.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120260055.lua) | 1 |
+| Home of the Charmers | `120301021` | [Rush/Scripts/c120301021.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120301021.lua) | 2 |
+| Healthie Lamilla | `120306021` | [Rush/Scripts/c120306021.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120306021.lua) | 1 |
+| The Sounds of a Piano Heard After School | `120306008` | [Rush/Scripts/c120306008.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120306008.lua) | 1 |
+| Dark Battle Grounds | `120249053` | [Rush/Scripts/c120249053.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120249053.lua) | 1 |
+| The Emperor Realm | `120244056` | [Rush/Scripts/c120244056.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120244056.lua) | 1 |
+| Cheerful Waitress | `120290016` | [Rush/Scripts/c120290016.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120290016.lua) | 1 |
+| Freshberry Garden | `120264057` | [Rush/Scripts/c120264057.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120264057.lua) | 1 |
 
 ## Script Examples
 
 ### Handy Girl (`120290012`)
 
-Source: [Rush/Scripts/c120290012.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120290012.lua)
+Source: [Rush/Scripts/c120290012.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120290012.lua)
 
 ```lua
 end
@@ -83,7 +83,7 @@ cm.cost=RD.CostSendHandToDeckBottom(Card.IsAbleToDeckAsCost,1,1,false)
 
 ### Vic Viper Spread Bomb (`120294025`)
 
-Source: [Rush/Scripts/c120294025.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120294025.lua)
+Source: [Rush/Scripts/c120294025.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120294025.lua)
 
 ```lua
 end
@@ -94,7 +94,7 @@ end
 
 ### Lovely Connect (`120300054`)
 
-Source: [Rush/Scripts/c120300054.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120300054.lua)
+Source: [Rush/Scripts/c120300054.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120300054.lua)
 
 ```lua
 function cm.exfilter(c)

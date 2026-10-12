@@ -56,19 +56,19 @@ Generated from the local `Rush/Scripts/` folder and `rush_cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Gilford the Legend | `120235029` | [Rush/Scripts/c120235029.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120235029.lua) | 1 |
-| Infernal Flame Emperor | `120109045` | [Rush/Scripts/c120109045.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120109045.lua) | 1 |
-| The Creator | `120205000` | [Rush/Scripts/c120205000.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120205000.lua) | 1 |
-| Gilford the Rising | `120235028` | [Rush/Scripts/c120235028.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120235028.lua) | 1 |
-| Vanity's Fiend | `120238008` | [Rush/Scripts/c120238008.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120238008.lua) | 1 |
-| Ancient Gear Golem | `120271004` | [Rush/Scripts/c120271004.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120271004.lua) | 1 |
-| Ancient Gear Beast | `120271007` | [Rush/Scripts/c120271007.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120271007.lua) | 1 |
+| Gilford the Legend | `120235029` | [Rush/Scripts/c120235029.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120235029.lua) | 1 |
+| Infernal Flame Emperor | `120109045` | [Rush/Scripts/c120109045.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120109045.lua) | 1 |
+| The Creator | `120205000` | [Rush/Scripts/c120205000.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120205000.lua) | 1 |
+| Gilford the Rising | `120235028` | [Rush/Scripts/c120235028.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120235028.lua) | 1 |
+| Vanity's Fiend | `120238008` | [Rush/Scripts/c120238008.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120238008.lua) | 1 |
+| Ancient Gear Golem | `120271004` | [Rush/Scripts/c120271004.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120271004.lua) | 1 |
+| Ancient Gear Beast | `120271007` | [Rush/Scripts/c120271007.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120271007.lua) | 1 |
 
 ## Script Examples
 
 ### Gilford the Legend (`120235029`)
 
-Source: [Rush/Scripts/c120235029.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120235029.lua)
+Source: [Rush/Scripts/c120235029.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120235029.lua)
 
 ```lua
 function cm.initial_effect(c)
@@ -80,7 +80,7 @@ function cm.initial_effect(c)
 
 ### Infernal Flame Emperor (`120109045`)
 
-Source: [Rush/Scripts/c120109045.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120109045.lua)
+Source: [Rush/Scripts/c120109045.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120109045.lua)
 
 ```lua
 function cm.initial_effect(c)
@@ -92,7 +92,7 @@ function cm.initial_effect(c)
 
 ### The Creator (`120205000`)
 
-Source: [Rush/Scripts/c120205000.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120205000.lua)
+Source: [Rush/Scripts/c120205000.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120205000.lua)
 
 ```lua
 function cm.initial_effect(c)

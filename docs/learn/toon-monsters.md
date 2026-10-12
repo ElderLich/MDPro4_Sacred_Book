@@ -1,7 +1,7 @@
 # Toon Monsters
 
 Toon Monsters are more script-pattern driven than Gemini, Union, or Spirit
-Monsters. Local MDPro3/YGOPro sources define `TYPE_TOON`, but local helper files
+Monsters. Local MDPro4/YGOPro sources define `TYPE_TOON`, but local helper files
 do not provide a shared `aux.EnableToonAttribute` package. Each Toon card
 scripts the pieces its own text needs.
 

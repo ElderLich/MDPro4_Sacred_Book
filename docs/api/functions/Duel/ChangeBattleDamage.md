@@ -30,15 +30,15 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| [Starving Venemy Dragon](/examples/cards/93729065) | `93729065` | [Scripts/c93729065.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c93729065.lua) | 1 |
-| Ancient City - Rainbow Ruins | `34487429` | [Scripts/c34487429.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c34487429.lua) | 1 |
-| Odd-Eyes Pendulum Dragon | `16178681` | [Scripts/c16178681.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c16178681.lua) | 1 |
+| [Starving Venemy Dragon](/examples/cards/93729065) | `93729065` | [Scripts/c93729065.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c93729065.lua) | 1 |
+| Ancient City - Rainbow Ruins | `34487429` | [Scripts/c34487429.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c34487429.lua) | 1 |
+| Odd-Eyes Pendulum Dragon | `16178681` | [Scripts/c16178681.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c16178681.lua) | 1 |
 
 ## Script Examples
 
 ### Starving Venemy Dragon (`93729065`)
 
-Source: [Scripts/c93729065.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c93729065.lua)
+Source: [Scripts/c93729065.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c93729065.lua)
 
 ```lua
 	if Duel.SelectYesNo(tp,aux.Stringid(93729065,3)) then
@@ -50,7 +50,7 @@ Source: [Scripts/c93729065.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/
 
 ### Ancient City - Rainbow Ruins (`34487429`)
 
-Source: [Scripts/c34487429.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c34487429.lua)
+Source: [Scripts/c34487429.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c34487429.lua)
 
 ```lua
 function c34487429.rdop(e,tp,eg,ep,ev,re,r,rp)
@@ -62,7 +62,7 @@ function c34487429.rdop(e,tp,eg,ep,ev,re,r,rp)
 
 ### Odd-Eyes Pendulum Dragon (`16178681`)
 
-Source: [Scripts/c16178681.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c16178681.lua)
+Source: [Scripts/c16178681.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c16178681.lua)
 
 ```lua
 	if Duel.SelectYesNo(tp,aux.Stringid(16178681,2)) then

@@ -38,21 +38,21 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Endymion, the Mighty Master of Magic | `3611830` | [Scripts/c3611830.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c3611830.lua) | 1 |
-| Reflection of Endymion | `39000945` | [Scripts/c39000945.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c39000945.lua) | 1 |
-| Magister of Endymion | `66104644` | [Scripts/c66104644.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c66104644.lua) | 2 |
-| Servant of Endymion | `92559258` | [Scripts/c92559258.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c92559258.lua) | 1 |
-| Mythical Beast Medusa | `54965929` | [Scripts/c54965929.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c54965929.lua) | 1 |
-| Mythical Institution | `94599451` | [Scripts/c94599451.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c94599451.lua) | 2 |
-| Summer | `97254001` | [Scripts/c97254001.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c97254001.lua) | 1 |
-| Spring | `60600821` | [Scripts/c60600821.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c60600821.lua) | 1 |
-| Mythical Bestiary | `38325384` | [Scripts/c38325384.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c38325384.lua) | 1 |
+| Endymion, the Mighty Master of Magic | `3611830` | [Scripts/c3611830.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c3611830.lua) | 1 |
+| Reflection of Endymion | `39000945` | [Scripts/c39000945.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c39000945.lua) | 1 |
+| Magister of Endymion | `66104644` | [Scripts/c66104644.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c66104644.lua) | 2 |
+| Servant of Endymion | `92559258` | [Scripts/c92559258.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c92559258.lua) | 1 |
+| Mythical Beast Medusa | `54965929` | [Scripts/c54965929.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c54965929.lua) | 1 |
+| Mythical Institution | `94599451` | [Scripts/c94599451.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c94599451.lua) | 2 |
+| Summer | `97254001` | [Scripts/c97254001.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c97254001.lua) | 1 |
+| Spring | `60600821` | [Scripts/c60600821.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c60600821.lua) | 1 |
+| Mythical Bestiary | `38325384` | [Scripts/c38325384.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c38325384.lua) | 1 |
 
 ## Script Examples
 
 ### Endymion, the Mighty Master of Magic (`3611830`)
 
-Source: [Scripts/c3611830.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c3611830.lua)
+Source: [Scripts/c3611830.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c3611830.lua)
 
 ```lua
 end
@@ -64,7 +64,7 @@ function c3611830.destg(e,tp,eg,ep,ev,re,r,rp,chk)
 
 ### Reflection of Endymion (`39000945`)
 
-Source: [Scripts/c39000945.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c39000945.lua)
+Source: [Scripts/c39000945.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c39000945.lua)
 
 ```lua
 end
@@ -76,7 +76,7 @@ function c39000945.sptg(e,tp,eg,ep,ev,re,r,rp,chk)
 
 ### Magister of Endymion (`66104644`)
 
-Source: [Scripts/c66104644.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c66104644.lua)
+Source: [Scripts/c66104644.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c66104644.lua)
 
 ```lua
 end

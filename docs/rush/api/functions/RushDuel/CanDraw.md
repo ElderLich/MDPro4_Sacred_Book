@@ -54,37 +54,37 @@ Generated from the local `Rush/Scripts/` folder and `rush_cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| [Instant Gift](/examples/rush-cards/120306059) | `120306059` | [Rush/Scripts/c120306059.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120306059.lua) | 1 |
-| [Red-Eyes Mars Dragon](/examples/rush-cards/120306034) | `120306034` | [Rush/Scripts/c120306034.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120306034.lua) | 1 |
-| Sparkhearts Familiar | `120298027` | [Rush/Scripts/c120298027.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120298027.lua) | 1 |
-| Worker Warrior - Sinister Chairman | `120196038` | [Rush/Scripts/c120196038.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120196038.lua) | 1 |
-| Surtr the Brilliant Magical Sword | `120306100` | [Rush/Scripts/c120306100.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120306100.lua) | 1 |
-| Ancient Gear Supplier | `120271010` | [Rush/Scripts/c120271010.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120271010.lua) | 1 |
-| Sevens Road Wiz | `120183014` | [Rush/Scripts/c120183014.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120183014.lua) | 1 |
-| Mr. Alchemy | `120196020` | [Rush/Scripts/c120196020.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120196020.lua) | 1 |
-| Wyrm Excavator the Heavy Cavalry Draco \[R\] | `120155023` | [Rush/Scripts/c120155023.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120155023.lua) | 1 |
-| King's Greed | `120254083` | [Rush/Scripts/c120254083.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120254083.lua) | 1 |
-| Space Call | `120260018` | [Rush/Scripts/c120260018.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120260018.lua) | 1 |
-| Ancient Gear Medic | `120271009` | [Rush/Scripts/c120271009.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120271009.lua) | 1 |
-| Master Craftsman Kotetsu | `120238036` | [Rush/Scripts/c120238036.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120238036.lua) | 1 |
-| Voidalfr Heavenstar | `120300006` | [Rush/Scripts/c120300006.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120300006.lua) | 1 |
-| Darkness Ri-chair-al | `120151027` | [Rush/Scripts/c120151027.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120151027.lua) | 1 |
-| Imaginary Reactor | `120271025` | [Rush/Scripts/c120271025.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120271025.lua) | 1 |
-| Freshberry Rich | `120264027` | [Rush/Scripts/c120264027.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120264027.lua) | 1 |
-| Progress Potter | `120217035` | [Rush/Scripts/c120217035.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120217035.lua) | 1 |
-| Spirit of Isyria | `120300061` | [Rush/Scripts/c120300061.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120300061.lua) | 1 |
-| Yewearth the Planetairy | `120293051` | [Rush/Scripts/c120293051.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120293051.lua) | 1 |
-| Back Beat | `120199053` | [Rush/Scripts/c120199053.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120199053.lua) | 1 |
-| Moonforce Rifet | `120300012` | [Rush/Scripts/c120300012.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120300012.lua) | 1 |
-| Sevens Paladin | `120196015` | [Rush/Scripts/c120196015.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120196015.lua) | 1 |
-| Imaginary Arc Actor | `120271037` | [Rush/Scripts/c120271037.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120271037.lua) | 1 |
+| [Instant Gift](/examples/rush-cards/120306059) | `120306059` | [Rush/Scripts/c120306059.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120306059.lua) | 1 |
+| [Red-Eyes Mars Dragon](/examples/rush-cards/120306034) | `120306034` | [Rush/Scripts/c120306034.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120306034.lua) | 1 |
+| Sparkhearts Familiar | `120298027` | [Rush/Scripts/c120298027.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120298027.lua) | 1 |
+| Worker Warrior - Sinister Chairman | `120196038` | [Rush/Scripts/c120196038.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120196038.lua) | 1 |
+| Surtr the Brilliant Magical Sword | `120306100` | [Rush/Scripts/c120306100.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120306100.lua) | 1 |
+| Ancient Gear Supplier | `120271010` | [Rush/Scripts/c120271010.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120271010.lua) | 1 |
+| Sevens Road Wiz | `120183014` | [Rush/Scripts/c120183014.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120183014.lua) | 1 |
+| Mr. Alchemy | `120196020` | [Rush/Scripts/c120196020.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120196020.lua) | 1 |
+| Wyrm Excavator the Heavy Cavalry Draco \[R\] | `120155023` | [Rush/Scripts/c120155023.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120155023.lua) | 1 |
+| King's Greed | `120254083` | [Rush/Scripts/c120254083.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120254083.lua) | 1 |
+| Space Call | `120260018` | [Rush/Scripts/c120260018.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120260018.lua) | 1 |
+| Ancient Gear Medic | `120271009` | [Rush/Scripts/c120271009.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120271009.lua) | 1 |
+| Master Craftsman Kotetsu | `120238036` | [Rush/Scripts/c120238036.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120238036.lua) | 1 |
+| Voidalfr Heavenstar | `120300006` | [Rush/Scripts/c120300006.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120300006.lua) | 1 |
+| Darkness Ri-chair-al | `120151027` | [Rush/Scripts/c120151027.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120151027.lua) | 1 |
+| Imaginary Reactor | `120271025` | [Rush/Scripts/c120271025.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120271025.lua) | 1 |
+| Freshberry Rich | `120264027` | [Rush/Scripts/c120264027.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120264027.lua) | 1 |
+| Progress Potter | `120217035` | [Rush/Scripts/c120217035.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120217035.lua) | 1 |
+| Spirit of Isyria | `120300061` | [Rush/Scripts/c120300061.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120300061.lua) | 1 |
+| Yewearth the Planetairy | `120293051` | [Rush/Scripts/c120293051.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120293051.lua) | 1 |
+| Back Beat | `120199053` | [Rush/Scripts/c120199053.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120199053.lua) | 1 |
+| Moonforce Rifet | `120300012` | [Rush/Scripts/c120300012.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120300012.lua) | 1 |
+| Sevens Paladin | `120196015` | [Rush/Scripts/c120196015.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120196015.lua) | 1 |
+| Imaginary Arc Actor | `120271037` | [Rush/Scripts/c120271037.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120271037.lua) | 1 |
 | ...and 63 more |  |  |  |
 
 ## Script Examples
 
 ### Instant Gift (`120306059`)
 
-Source: [Rush/Scripts/c120306059.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120306059.lua)
+Source: [Rush/Scripts/c120306059.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120306059.lua)
 
 ```lua
 	local filter=RD.Filter(cm.spfilter,e,tp,code)
@@ -96,7 +96,7 @@ Source: [Rush/Scripts/c120306059.lua](https://github.com/ElderLich/MDPro3_Sacred
 
 ### Red-Eyes Mars Dragon (`120306034`)
 
-Source: [Rush/Scripts/c120306034.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120306034.lua)
+Source: [Rush/Scripts/c120306034.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120306034.lua)
 
 ```lua
 		RD.ChangeCode(e,c,list[1],RESET_EVENT+RESETS_STANDARD+RESET_PHASE+PHASE_END)
@@ -108,7 +108,7 @@ Source: [Rush/Scripts/c120306034.lua](https://github.com/ElderLich/MDPro3_Sacred
 
 ### Sparkhearts Familiar (`120298027`)
 
-Source: [Rush/Scripts/c120298027.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120298027.lua)
+Source: [Rush/Scripts/c120298027.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120298027.lua)
 
 ```lua
 		if Duel.SendtoGrave(g,REASON_EFFECT)~=0

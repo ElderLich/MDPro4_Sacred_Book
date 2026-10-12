@@ -62,15 +62,15 @@ Generated from the local `Rush/Scripts/` folder and `rush_cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Eria the Water Spiritualist | `120301010` | [Rush/Scripts/c120301010.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120301010.lua) | 1 |
-| Destructor Soldier Haken | `120264012` | [Rush/Scripts/c120264012.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120264012.lua) | 1 |
-| Hybridrive Screwdriver | `120261006` | [Rush/Scripts/c120261006.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120261006.lua) | 1 |
+| Eria the Water Spiritualist | `120301010` | [Rush/Scripts/c120301010.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120301010.lua) | 1 |
+| Destructor Soldier Haken | `120264012` | [Rush/Scripts/c120264012.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120264012.lua) | 1 |
+| Hybridrive Screwdriver | `120261006` | [Rush/Scripts/c120261006.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120261006.lua) | 1 |
 
 ## Script Examples
 
 ### Eria the Water Spiritualist (`120301010`)
 
-Source: [Rush/Scripts/c120301010.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120301010.lua)
+Source: [Rush/Scripts/c120301010.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120301010.lua)
 
 ```lua
 		end
@@ -82,7 +82,7 @@ Source: [Rush/Scripts/c120301010.lua](https://github.com/ElderLich/MDPro3_Sacred
 
 ### Destructor Soldier Haken (`120264012`)
 
-Source: [Rush/Scripts/c120264012.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120264012.lua)
+Source: [Rush/Scripts/c120264012.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120264012.lua)
 
 ```lua
 	if Duel.GetFlagEffect(tp,m)~=0 then return end
@@ -94,7 +94,7 @@ Source: [Rush/Scripts/c120264012.lua](https://github.com/ElderLich/MDPro3_Sacred
 
 ### Hybridrive Screwdriver (`120261006`)
 
-Source: [Rush/Scripts/c120261006.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120261006.lua)
+Source: [Rush/Scripts/c120261006.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120261006.lua)
 
 ```lua
 			end

@@ -32,16 +32,16 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Rebirth of Parshath | `42444868` | [Scripts/c42444868.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c42444868.lua) | 1 |
-| Nine Pillars of Yang Zing | `57831349` | [Scripts/c57831349.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c57831349.lua) | 1 |
-| Stall Turn | `86060749` | [Scripts/c86060749.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c86060749.lua) | 1 |
-| Cash Back | `59957503` | [Scripts/c59957503.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c59957503.lua) | 1 |
+| Rebirth of Parshath | `42444868` | [Scripts/c42444868.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c42444868.lua) | 1 |
+| Nine Pillars of Yang Zing | `57831349` | [Scripts/c57831349.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c57831349.lua) | 1 |
+| Stall Turn | `86060749` | [Scripts/c86060749.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c86060749.lua) | 1 |
+| Cash Back | `59957503` | [Scripts/c59957503.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c59957503.lua) | 1 |
 
 ## Script Examples
 
 ### Rebirth of Parshath (`42444868`)
 
-Source: [Scripts/c42444868.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c42444868.lua)
+Source: [Scripts/c42444868.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c42444868.lua)
 
 ```lua
 end
@@ -53,7 +53,7 @@ function c42444868.target(e,tp,eg,ep,ev,re,r,rp,chk)
 
 ### Nine Pillars of Yang Zing (`57831349`)
 
-Source: [Scripts/c57831349.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c57831349.lua)
+Source: [Scripts/c57831349.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c57831349.lua)
 
 ```lua
 end
@@ -65,7 +65,7 @@ function c57831349.target(e,tp,eg,ep,ev,re,r,rp,chk)
 
 ### Stall Turn (`86060749`)
 
-Source: [Scripts/c86060749.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c86060749.lua)
+Source: [Scripts/c86060749.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c86060749.lua)
 
 ```lua
 function c86060749.target(e,tp,eg,ep,ev,re,r,rp,chk)

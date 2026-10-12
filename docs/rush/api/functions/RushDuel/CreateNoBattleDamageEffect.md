@@ -59,16 +59,16 @@ Generated from the local `Rush/Scripts/` folder and `rush_cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Peace &amp; Rock n' Roll | `120253061` | [Rush/Scripts/c120253061.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120253061.lua) | 1 |
-| Reporting from the Scene! | `120199062` | [Rush/Scripts/c120199062.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120199062.lua) | 1 |
-| Buffered Slime | `120235064` | [Rush/Scripts/c120235064.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120235064.lua) | 1 |
-| Cheater's Hidden Ball Trick | `120259005` | [Rush/Scripts/c120259005.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120259005.lua) | 1 |
+| Peace &amp; Rock n' Roll | `120253061` | [Rush/Scripts/c120253061.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120253061.lua) | 1 |
+| Reporting from the Scene! | `120199062` | [Rush/Scripts/c120199062.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120199062.lua) | 1 |
+| Buffered Slime | `120235064` | [Rush/Scripts/c120235064.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120235064.lua) | 1 |
+| Cheater's Hidden Ball Trick | `120259005` | [Rush/Scripts/c120259005.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120259005.lua) | 1 |
 
 ## Script Examples
 
 ### Peace & Rock n' Roll (`120253061`)
 
-Source: [Rush/Scripts/c120253061.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120253061.lua)
+Source: [Rush/Scripts/c120253061.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120253061.lua)
 
 ```lua
 	RD.SelectAndDoAction(HINTMSG_DESTROY,nil,tp,0,LOCATION_MZONE,1,1,nil,function(g)
@@ -80,7 +80,7 @@ Source: [Rush/Scripts/c120253061.lua](https://github.com/ElderLich/MDPro3_Sacred
 
 ### Reporting from the Scene! (`120199062`)
 
-Source: [Rush/Scripts/c120199062.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120199062.lua)
+Source: [Rush/Scripts/c120199062.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120199062.lua)
 
 ```lua
 	local p=Duel.GetChainInfo(0,CHAININFO_TARGET_PLAYER)
@@ -92,7 +92,7 @@ end
 
 ### Buffered Slime (`120235064`)
 
-Source: [Rush/Scripts/c120235064.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120235064.lua)
+Source: [Rush/Scripts/c120235064.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120235064.lua)
 
 ```lua
 function cm.activate(e,tp,eg,ep,ev,re,r,rp)

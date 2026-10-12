@@ -64,30 +64,30 @@ Generated from the local `Rush/Scripts/` folder and `rush_cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| [Ember the Ultra Assistant](/examples/rush-cards/120283035) | `120283035` | [Rush/Scripts/c120283035.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120283035.lua) | 1 |
-| Lua, the Fairy of Skysavior | `120235021` | [Rush/Scripts/c120235021.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120235021.lua) | 1 |
-| Sparkhearts Anesh | `120298022` | [Rush/Scripts/c120298022.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120298022.lua) | 1 |
-| Ritche of Hope | `120287072` | [Rush/Scripts/c120287072.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120287072.lua) | 1 |
-| Chemipet Chirp | `120261009` | [Rush/Scripts/c120261009.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120261009.lua) | 1 |
-| Celeb Rose Wiz | `120253008` | [Rush/Scripts/c120253008.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120253008.lua) | 1 |
-| Space Call | `120260018` | [Rush/Scripts/c120260018.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120260018.lua) | 1 |
-| Future Aeromancer | `120231054` | [Rush/Scripts/c120231054.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120231054.lua) | 1 |
-| Nimble Lemming | `120238020` | [Rush/Scripts/c120238020.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120238020.lua) | 1 |
-| Dead Heat the Mad Fiend of Despair | `120301029` | [Rush/Scripts/c120301029.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120301029.lua) | 1 |
-| Police Hound of the Blaze Fiends | `120287035` | [Rush/Scripts/c120287035.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120287035.lua) | 1 |
-| The Journeying Three Magi | `120304058` | [Rush/Scripts/c120304058.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120304058.lua) | 1 |
-| Dimension Jump | `120309032` | [Rush/Scripts/c120309032.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120309032.lua) | 1 |
-| Balloon Butier | `120277037` | [Rush/Scripts/c120277037.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120277037.lua) | 1 |
-| Chaos Femtron | `120260012` | [Rush/Scripts/c120260012.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120260012.lua) | 1 |
-| Carrier Manta Ray | `120253019` | [Rush/Scripts/c120253019.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120253019.lua) | 1 |
-| Resolve | `120246054` | [Rush/Scripts/c120246054.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120246054.lua) | 1 |
-| Delirium Honeyed Words | `120274064` | [Rush/Scripts/c120274064.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120274064.lua) | 1 |
+| [Ember the Ultra Assistant](/examples/rush-cards/120283035) | `120283035` | [Rush/Scripts/c120283035.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120283035.lua) | 1 |
+| Lua, the Fairy of Skysavior | `120235021` | [Rush/Scripts/c120235021.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120235021.lua) | 1 |
+| Sparkhearts Anesh | `120298022` | [Rush/Scripts/c120298022.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120298022.lua) | 1 |
+| Ritche of Hope | `120287072` | [Rush/Scripts/c120287072.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120287072.lua) | 1 |
+| Chemipet Chirp | `120261009` | [Rush/Scripts/c120261009.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120261009.lua) | 1 |
+| Celeb Rose Wiz | `120253008` | [Rush/Scripts/c120253008.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120253008.lua) | 1 |
+| Space Call | `120260018` | [Rush/Scripts/c120260018.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120260018.lua) | 1 |
+| Future Aeromancer | `120231054` | [Rush/Scripts/c120231054.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120231054.lua) | 1 |
+| Nimble Lemming | `120238020` | [Rush/Scripts/c120238020.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120238020.lua) | 1 |
+| Dead Heat the Mad Fiend of Despair | `120301029` | [Rush/Scripts/c120301029.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120301029.lua) | 1 |
+| Police Hound of the Blaze Fiends | `120287035` | [Rush/Scripts/c120287035.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120287035.lua) | 1 |
+| The Journeying Three Magi | `120304058` | [Rush/Scripts/c120304058.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120304058.lua) | 1 |
+| Dimension Jump | `120309032` | [Rush/Scripts/c120309032.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120309032.lua) | 1 |
+| Balloon Butier | `120277037` | [Rush/Scripts/c120277037.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120277037.lua) | 1 |
+| Chaos Femtron | `120260012` | [Rush/Scripts/c120260012.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120260012.lua) | 1 |
+| Carrier Manta Ray | `120253019` | [Rush/Scripts/c120253019.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120253019.lua) | 1 |
+| Resolve | `120246054` | [Rush/Scripts/c120246054.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120246054.lua) | 1 |
+| Delirium Honeyed Words | `120274064` | [Rush/Scripts/c120274064.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120274064.lua) | 1 |
 
 ## Script Examples
 
 ### Ember the Ultra Assistant (`120283035`)
 
-Source: [Rush/Scripts/c120283035.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120283035.lua)
+Source: [Rush/Scripts/c120283035.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120283035.lua)
 
 ```lua
 function cm.operation(e,tp,eg,ep,ev,re,r,rp)
@@ -99,7 +99,7 @@ function cm.operation(e,tp,eg,ep,ev,re,r,rp)
 
 ### Lua, the Fairy of Skysavior (`120235021`)
 
-Source: [Rush/Scripts/c120235021.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120235021.lua)
+Source: [Rush/Scripts/c120235021.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120235021.lua)
 
 ```lua
 		if not Duel.IsPlayerCanDiscardDeck(tp,1) then return end
@@ -111,7 +111,7 @@ Source: [Rush/Scripts/c120235021.lua](https://github.com/ElderLich/MDPro3_Sacred
 
 ### Sparkhearts Anesh (`120298022`)
 
-Source: [Rush/Scripts/c120298022.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120298022.lua)
+Source: [Rush/Scripts/c120298022.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120298022.lua)
 
 ```lua
 end

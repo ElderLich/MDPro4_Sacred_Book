@@ -59,13 +59,13 @@ Generated from the local `Rush/Scripts/` folder and `rush_cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Behemoth the King of All Animals | `120238002` | [Rush/Scripts/c120238002.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120238002.lua) | 1 |
+| Behemoth the King of All Animals | `120238002` | [Rush/Scripts/c120238002.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120238002.lua) | 1 |
 
 ## Script Examples
 
 ### Behemoth the King of All Animals (`120238002`)
 
-Source: [Rush/Scripts/c120238002.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120238002.lua)
+Source: [Rush/Scripts/c120238002.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120238002.lua)
 
 ```lua
 end

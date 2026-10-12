@@ -55,37 +55,37 @@ Generated from the local `Rush/Scripts/` folder and `rush_cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| [Lufer the Symbol of the Devils](/examples/rush-cards/120309059) | `120309059` | [Rush/Scripts/c120309059.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120309059.lua) | 1 |
-| [Analyze Phlogiston](/examples/rush-cards/120226001) | `120226001` | [Rush/Scripts/c120226001.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120226001.lua) | 1 |
-| [Planet Aegis](/examples/rush-cards/120297006) | `120297006` | [Rush/Scripts/c120297006.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120297006.lua) | 1 |
-| [Rising Protect](/examples/rush-cards/120304055) | `120304055` | [Rush/Scripts/c120304055.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120304055.lua) | 1 |
-| [Tubardiche the Music Princess](/examples/rush-cards/120247025) | `120247025` | [Rush/Scripts/c120247025.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120247025.lua) | 1 |
-| [Spiritualization Training](/examples/rush-cards/120301020) | `120301020` | [Rush/Scripts/c120301020.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120301020.lua) | 1 |
-| [Animagica Majesty](/examples/rush-cards/120277063) | `120277063` | [Rush/Scripts/c120277063.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120277063.lua) | 1 |
-| Darkness Jointech Tyrant | `120257018` | [Rush/Scripts/c120257018.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120257018.lua) | 1 |
-| The Dragiastar | `120235035` | [Rush/Scripts/c120235035.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120235035.lua) | 1 |
-| Excutie Lumière | `120231031` | [Rush/Scripts/c120231031.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120231031.lua) | 1 |
-| Sportsdragon Defender | `120130019` | [Rush/Scripts/c120130019.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120130019.lua) | 1 |
-| Cyber Tactical Dragon | `120244044` | [Rush/Scripts/c120244044.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120244044.lua) | 1 |
-| Spice Cross Black Pepper | `120261061` | [Rush/Scripts/c120261061.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120261061.lua) | 1 |
-| Ring of Storms | `120235055` | [Rush/Scripts/c120235055.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120235055.lua) | 1 |
-| The Ultimate Flag | `120294019` | [Rush/Scripts/c120294019.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120294019.lua) | 1 |
-| Prime Roast Beef Horseman | `120205042` | [Rush/Scripts/c120205042.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120205042.lua) | 1 |
-| Shadowforce Explosion | `120300042` | [Rush/Scripts/c120300042.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120300042.lua) | 1 |
-| Vortex Chaos Shooter | `120277006` | [Rush/Scripts/c120277006.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120277006.lua) | 1 |
-| Dark Matter Requiem Omega | `120264040` | [Rush/Scripts/c120264040.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120264040.lua) | 1 |
-| Triangle Reborn | `120155051` | [Rush/Scripts/c120155051.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120155051.lua) | 1 |
-| Explosive Destructor Wyrm Dangerous Bakhamut | `120247038` | [Rush/Scripts/c120247038.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120247038.lua) | 1 |
-| Animagica Trader | `120277026` | [Rush/Scripts/c120277026.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120277026.lua) | 1 |
-| Destructor Detonator Heavy Contractor | `120247039` | [Rush/Scripts/c120247039.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120247039.lua) | 1 |
-| Tail Swipe | `120277059` | [Rush/Scripts/c120277059.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120277059.lua) | 1 |
+| [Lufer the Symbol of the Devils](/examples/rush-cards/120309059) | `120309059` | [Rush/Scripts/c120309059.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120309059.lua) | 1 |
+| [Analyze Phlogiston](/examples/rush-cards/120226001) | `120226001` | [Rush/Scripts/c120226001.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120226001.lua) | 1 |
+| [Planet Aegis](/examples/rush-cards/120297006) | `120297006` | [Rush/Scripts/c120297006.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120297006.lua) | 1 |
+| [Rising Protect](/examples/rush-cards/120304055) | `120304055` | [Rush/Scripts/c120304055.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120304055.lua) | 1 |
+| [Tubardiche the Music Princess](/examples/rush-cards/120247025) | `120247025` | [Rush/Scripts/c120247025.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120247025.lua) | 1 |
+| [Spiritualization Training](/examples/rush-cards/120301020) | `120301020` | [Rush/Scripts/c120301020.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120301020.lua) | 1 |
+| [Animagica Majesty](/examples/rush-cards/120277063) | `120277063` | [Rush/Scripts/c120277063.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120277063.lua) | 1 |
+| Darkness Jointech Tyrant | `120257018` | [Rush/Scripts/c120257018.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120257018.lua) | 1 |
+| The Dragiastar | `120235035` | [Rush/Scripts/c120235035.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120235035.lua) | 1 |
+| Excutie Lumière | `120231031` | [Rush/Scripts/c120231031.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120231031.lua) | 1 |
+| Sportsdragon Defender | `120130019` | [Rush/Scripts/c120130019.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120130019.lua) | 1 |
+| Cyber Tactical Dragon | `120244044` | [Rush/Scripts/c120244044.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120244044.lua) | 1 |
+| Spice Cross Black Pepper | `120261061` | [Rush/Scripts/c120261061.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120261061.lua) | 1 |
+| Ring of Storms | `120235055` | [Rush/Scripts/c120235055.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120235055.lua) | 1 |
+| The Ultimate Flag | `120294019` | [Rush/Scripts/c120294019.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120294019.lua) | 1 |
+| Prime Roast Beef Horseman | `120205042` | [Rush/Scripts/c120205042.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120205042.lua) | 1 |
+| Shadowforce Explosion | `120300042` | [Rush/Scripts/c120300042.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120300042.lua) | 1 |
+| Vortex Chaos Shooter | `120277006` | [Rush/Scripts/c120277006.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120277006.lua) | 1 |
+| Dark Matter Requiem Omega | `120264040` | [Rush/Scripts/c120264040.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120264040.lua) | 1 |
+| Triangle Reborn | `120155051` | [Rush/Scripts/c120155051.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120155051.lua) | 1 |
+| Explosive Destructor Wyrm Dangerous Bakhamut | `120247038` | [Rush/Scripts/c120247038.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120247038.lua) | 1 |
+| Animagica Trader | `120277026` | [Rush/Scripts/c120277026.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120277026.lua) | 1 |
+| Destructor Detonator Heavy Contractor | `120247039` | [Rush/Scripts/c120247039.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120247039.lua) | 1 |
+| Tail Swipe | `120277059` | [Rush/Scripts/c120277059.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120277059.lua) | 1 |
 | ...and 16 more |  |  |  |
 
 ## Script Examples
 
 ### Lufer the Symbol of the Devils (`120309059`)
 
-Source: [Rush/Scripts/c120309059.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120309059.lua)
+Source: [Rush/Scripts/c120309059.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120309059.lua)
 
 ```lua
 end
@@ -97,7 +97,7 @@ function cm.activate(e,tp,eg,ep,ev,re,r,rp)
 
 ### Analyze Phlogiston (`120226001`)
 
-Source: [Rush/Scripts/c120226001.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120226001.lua)
+Source: [Rush/Scripts/c120226001.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120226001.lua)
 
 ```lua
 	local lv=g:GetSum(Card.GetLevel,nil)
@@ -109,7 +109,7 @@ Source: [Rush/Scripts/c120226001.lua](https://github.com/ElderLich/MDPro3_Sacred
 
 ### Planet Aegis (`120297006`)
 
-Source: [Rush/Scripts/c120297006.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120297006.lua)
+Source: [Rush/Scripts/c120297006.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120297006.lua)
 
 ```lua
 end

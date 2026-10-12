@@ -48,14 +48,14 @@ Generated from the local `Rush/Scripts/` folder and `rush_cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Darkness Doom Giant | `120253035` | [Rush/Scripts/c120253035.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120253035.lua) | 1 |
-| Double Twin Dragon | `120231051` | [Rush/Scripts/c120231051.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120231051.lua) | 1 |
+| Darkness Doom Giant | `120253035` | [Rush/Scripts/c120253035.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120253035.lua) | 1 |
+| Double Twin Dragon | `120231051` | [Rush/Scripts/c120231051.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120231051.lua) | 1 |
 
 ## Script Examples
 
 ### Darkness Doom Giant (`120253035`)
 
-Source: [Rush/Scripts/c120253035.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120253035.lua)
+Source: [Rush/Scripts/c120253035.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120253035.lua)
 
 ```lua
 end
@@ -67,7 +67,7 @@ function cm.thfilter(c)
 
 ### Double Twin Dragon (`120231051`)
 
-Source: [Rush/Scripts/c120231051.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120231051.lua)
+Source: [Rush/Scripts/c120231051.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120231051.lua)
 
 ```lua
 end

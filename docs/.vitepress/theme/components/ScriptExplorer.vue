@@ -378,7 +378,7 @@ function cardHref(record: ScriptRecord) {
 }
 
 function scriptHref(record: ScriptRecord) {
-  return `https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/${record.script}`;
+  return `https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/${record.script}`;
 }
 
 function safeSegment(value: string) {

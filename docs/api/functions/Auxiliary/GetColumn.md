@@ -39,16 +39,16 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Infinite Impermanence | `10045474` | [Scripts/c10045474.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c10045474.lua) | 1 |
-| Red Hared Hasty Horse | `19636995` | [Scripts/c19636995.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c19636995.lua) | 2 |
-| Broken Line | `88086137` | [Scripts/c88086137.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c88086137.lua) | 1 |
-| Blasting Fuse | `99788587` | [Scripts/c99788587.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c99788587.lua) | 2 |
+| Infinite Impermanence | `10045474` | [Scripts/c10045474.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c10045474.lua) | 1 |
+| Red Hared Hasty Horse | `19636995` | [Scripts/c19636995.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c19636995.lua) | 2 |
+| Broken Line | `88086137` | [Scripts/c88086137.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c88086137.lua) | 1 |
+| Blasting Fuse | `99788587` | [Scripts/c99788587.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c99788587.lua) | 2 |
 
 ## Script Examples
 
 ### Infinite Impermanence (`10045474`)
 
-Source: [Scripts/c10045474.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c10045474.lua)
+Source: [Scripts/c10045474.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c10045474.lua)
 
 ```lua
 	local seq,fid=e:GetLabel()
@@ -60,7 +60,7 @@ function c10045474.disop(e,tp,eg,ep,ev,re,r,rp)
 
 ### Red Hared Hasty Horse (`19636995`)
 
-Source: [Scripts/c19636995.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c19636995.lua)
+Source: [Scripts/c19636995.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c19636995.lua)
 
 ```lua
 end
@@ -72,7 +72,7 @@ function c19636995.descon(e,tp,eg,ep,ev,re,r,rp)
 
 ### Broken Line (`88086137`)
 
-Source: [Scripts/c88086137.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c88086137.lua)
+Source: [Scripts/c88086137.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c88086137.lua)
 
 ```lua
 	end

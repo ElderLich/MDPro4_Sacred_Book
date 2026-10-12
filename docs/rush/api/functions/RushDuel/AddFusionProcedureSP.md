@@ -57,17 +57,17 @@ Generated from the local `Rush/Scripts/` folder and `rush_cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| [YXZ-Cannon Dragon](/examples/rush-cards/120305004) | `120305004` | [Rush/Scripts/c120305004.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120305004.lua) | 1 |
-| Tamabot King Golem | `120285039` | [Rush/Scripts/c120285039.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120285039.lua) | 1 |
-| XYZ-Dragon Cannon | `120305003` | [Rush/Scripts/c120305003.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120305003.lua) | 1 |
-| Deep Space Yggdrago | `120260007` | [Rush/Scripts/c120260007.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120260007.lua) | 1 |
-| Blue-Eyes Ultimate Dragon | `120252001` | [Rush/Scripts/c120252001.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120252001.lua) | 1 |
+| [YXZ-Cannon Dragon](/examples/rush-cards/120305004) | `120305004` | [Rush/Scripts/c120305004.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120305004.lua) | 1 |
+| Tamabot King Golem | `120285039` | [Rush/Scripts/c120285039.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120285039.lua) | 1 |
+| XYZ-Dragon Cannon | `120305003` | [Rush/Scripts/c120305003.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120305003.lua) | 1 |
+| Deep Space Yggdrago | `120260007` | [Rush/Scripts/c120260007.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120260007.lua) | 1 |
+| Blue-Eyes Ultimate Dragon | `120252001` | [Rush/Scripts/c120252001.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120252001.lua) | 1 |
 
 ## Script Examples
 
 ### YXZ-Cannon Dragon (`120305004`)
 
-Source: [Rush/Scripts/c120305004.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120305004.lua)
+Source: [Rush/Scripts/c120305004.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120305004.lua)
 
 ```lua
 	RD.AddCodeList(c,list)
@@ -79,7 +79,7 @@ Source: [Rush/Scripts/c120305004.lua](https://github.com/ElderLich/MDPro3_Sacred
 
 ### Tamabot King Golem (`120285039`)
 
-Source: [Rush/Scripts/c120285039.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120285039.lua)
+Source: [Rush/Scripts/c120285039.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120285039.lua)
 
 ```lua
 	RD.AddCodeList(c,list)
@@ -91,7 +91,7 @@ Source: [Rush/Scripts/c120285039.lua](https://github.com/ElderLich/MDPro3_Sacred
 
 ### XYZ-Dragon Cannon (`120305003`)
 
-Source: [Rush/Scripts/c120305003.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120305003.lua)
+Source: [Rush/Scripts/c120305003.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120305003.lua)
 
 ```lua
 	RD.AddCodeList(c,list)

@@ -38,15 +38,15 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Noble Knight Joan | `18426196` | [Scripts/c18426196.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c18426196.lua) | 1 |
-| Ice Hand | `95929069` | [Scripts/c95929069.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c95929069.lua) | 1 |
-| Fire Hand | `68535320` | [Scripts/c68535320.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c68535320.lua) | 1 |
+| Noble Knight Joan | `18426196` | [Scripts/c18426196.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c18426196.lua) | 1 |
+| Ice Hand | `95929069` | [Scripts/c95929069.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c95929069.lua) | 1 |
+| Fire Hand | `68535320` | [Scripts/c68535320.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c68535320.lua) | 1 |
 
 ## Script Examples
 
 ### Noble Knight Joan (`18426196`)
 
-Source: [Scripts/c18426196.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c18426196.lua)
+Source: [Scripts/c18426196.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c18426196.lua)
 
 ```lua
 	e1:SetType(EFFECT_TYPE_SINGLE+EFFECT_TYPE_TRIGGER_O)
@@ -58,7 +58,7 @@ Source: [Scripts/c18426196.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/
 
 ### Ice Hand (`95929069`)
 
-Source: [Scripts/c95929069.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c95929069.lua)
+Source: [Scripts/c95929069.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c95929069.lua)
 
 ```lua
 	e1:SetProperty(EFFECT_FLAG_CARD_TARGET+EFFECT_FLAG_DAMAGE_STEP)
@@ -70,7 +70,7 @@ Source: [Scripts/c95929069.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/
 
 ### Fire Hand (`68535320`)
 
-Source: [Scripts/c68535320.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c68535320.lua)
+Source: [Scripts/c68535320.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c68535320.lua)
 
 ```lua
 	e1:SetProperty(EFFECT_FLAG_CARD_TARGET+EFFECT_FLAG_DAMAGE_STEP)

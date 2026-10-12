@@ -30,23 +30,23 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Arcana Force EX - The Light Ruler | `5861892` | [Scripts/c5861892.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c5861892.lua) | 1 |
-| Arcana Force XV - The Fiend | `59712426` | [Scripts/c59712426.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c59712426.lua) | 1 |
-| Arcana Force EX - The Dark Ruler | `69831560` | [Scripts/c69831560.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c69831560.lua) | 1 |
-| Arcana Force XXI - The World | `23846921` | [Scripts/c23846921.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c23846921.lua) | 1 |
-| Arcana Force XVIII - The Moon | `97452817` | [Scripts/c97452817.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c97452817.lua) | 1 |
-| Arcana Force III - The Empress | `35781051` | [Scripts/c35781051.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c35781051.lua) | 1 |
-| Arcana Force 0 - The Fool | `62892347` | [Scripts/c62892347.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c62892347.lua) | 1 |
-| Arcana Force XIV - Temperance | `60953118` | [Scripts/c60953118.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c60953118.lua) | 1 |
-| Arcana Force VI - The Lovers | `97574404` | [Scripts/c97574404.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c97574404.lua) | 1 |
-| Arcana Force I - The Magician | `8396952` | [Scripts/c8396952.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c8396952.lua) | 1 |
-| Arcana Force IV - The Emperor | `61175706` | [Scripts/c61175706.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c61175706.lua) | 1 |
+| Arcana Force EX - The Light Ruler | `5861892` | [Scripts/c5861892.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c5861892.lua) | 1 |
+| Arcana Force XV - The Fiend | `59712426` | [Scripts/c59712426.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c59712426.lua) | 1 |
+| Arcana Force EX - The Dark Ruler | `69831560` | [Scripts/c69831560.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c69831560.lua) | 1 |
+| Arcana Force XXI - The World | `23846921` | [Scripts/c23846921.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c23846921.lua) | 1 |
+| Arcana Force XVIII - The Moon | `97452817` | [Scripts/c97452817.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c97452817.lua) | 1 |
+| Arcana Force III - The Empress | `35781051` | [Scripts/c35781051.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c35781051.lua) | 1 |
+| Arcana Force 0 - The Fool | `62892347` | [Scripts/c62892347.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c62892347.lua) | 1 |
+| Arcana Force XIV - Temperance | `60953118` | [Scripts/c60953118.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c60953118.lua) | 1 |
+| Arcana Force VI - The Lovers | `97574404` | [Scripts/c97574404.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c97574404.lua) | 1 |
+| Arcana Force I - The Magician | `8396952` | [Scripts/c8396952.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c8396952.lua) | 1 |
+| Arcana Force IV - The Emperor | `61175706` | [Scripts/c61175706.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c61175706.lua) | 1 |
 
 ## Script Examples
 
 ### Arcana Force EX - The Light Ruler (`5861892`)
 
-Source: [Scripts/c5861892.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c5861892.lua)
+Source: [Scripts/c5861892.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c5861892.lua)
 
 ```lua
 	c:RegisterEffect(e2)
@@ -58,7 +58,7 @@ Source: [Scripts/c5861892.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/b
 
 ### Arcana Force XV - The Fiend (`59712426`)
 
-Source: [Scripts/c59712426.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c59712426.lua)
+Source: [Scripts/c59712426.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c59712426.lua)
 
 ```lua
 	c:RegisterEffect(e1)
@@ -70,7 +70,7 @@ Source: [Scripts/c59712426.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/
 
 ### Arcana Force EX - The Dark Ruler (`69831560`)
 
-Source: [Scripts/c69831560.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c69831560.lua)
+Source: [Scripts/c69831560.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c69831560.lua)
 
 ```lua
 	c:RegisterEffect(e2)

@@ -46,21 +46,21 @@ Generated from the local `Rush/Scripts/` folder and `rush_cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Eria the Water Spiritualist | `120301010` | [Rush/Scripts/c120301010.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120301010.lua) | 1 |
-| UMP Sky Forbia | `120306017` | [Rush/Scripts/c120306017.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120306017.lua) | 1 |
-| Etraynze the Sprinting Shadow Flower Ninja | `120285012` | [Rush/Scripts/c120285012.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120285012.lua) | 1 |
-| Aussa the Earth Spiritualist | `120301009` | [Rush/Scripts/c120301009.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120301009.lua) | 1 |
-| Wynn the Wind Spiritualist | `120301012` | [Rush/Scripts/c120301012.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120301012.lua) | 1 |
-| Voidvelg Transi | `120109018` | [Rush/Scripts/c120109018.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120109018.lua) | 1 |
-| Galactica Oblivion Ark | `120277008` | [Rush/Scripts/c120277008.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120277008.lua) | 1 |
-| Hiita the Fire Spiritualist | `120301011` | [Rush/Scripts/c120301011.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120301011.lua) | 1 |
-| Mean Mutt Duke Doberguardian | `120222031` | [Rush/Scripts/c120222031.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120222031.lua) | 1 |
+| Eria the Water Spiritualist | `120301010` | [Rush/Scripts/c120301010.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120301010.lua) | 1 |
+| UMP Sky Forbia | `120306017` | [Rush/Scripts/c120306017.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120306017.lua) | 1 |
+| Etraynze the Sprinting Shadow Flower Ninja | `120285012` | [Rush/Scripts/c120285012.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120285012.lua) | 1 |
+| Aussa the Earth Spiritualist | `120301009` | [Rush/Scripts/c120301009.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120301009.lua) | 1 |
+| Wynn the Wind Spiritualist | `120301012` | [Rush/Scripts/c120301012.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120301012.lua) | 1 |
+| Voidvelg Transi | `120109018` | [Rush/Scripts/c120109018.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120109018.lua) | 1 |
+| Galactica Oblivion Ark | `120277008` | [Rush/Scripts/c120277008.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120277008.lua) | 1 |
+| Hiita the Fire Spiritualist | `120301011` | [Rush/Scripts/c120301011.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120301011.lua) | 1 |
+| Mean Mutt Duke Doberguardian | `120222031` | [Rush/Scripts/c120222031.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120222031.lua) | 1 |
 
 ## Script Examples
 
 ### Eria the Water Spiritualist (`120301010`)
 
-Source: [Rush/Scripts/c120301010.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120301010.lua)
+Source: [Rush/Scripts/c120301010.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120301010.lua)
 
 ```lua
 end
@@ -72,7 +72,7 @@ cm.cost=RD.CostSendHandOrFieldToGrave(cm.costfilter,1,1,false)
 
 ### UMP Sky Forbia (`120306017`)
 
-Source: [Rush/Scripts/c120306017.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120306017.lua)
+Source: [Rush/Scripts/c120306017.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120306017.lua)
 
 ```lua
 	return Duel.IsAbleToEnterBP()
@@ -84,7 +84,7 @@ cm.cost=RD.CostSendDeckTopToGrave(1)
 
 ### Etraynze the Sprinting Shadow Flower Ninja (`120285012`)
 
-Source: [Rush/Scripts/c120285012.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120285012.lua)
+Source: [Rush/Scripts/c120285012.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120285012.lua)
 
 ```lua
 	if c:IsFaceup() and c:IsRelateToEffect(e) then

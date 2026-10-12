@@ -75,18 +75,18 @@ Generated from the local `Rush/Scripts/` folder and `rush_cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| [Voidalfr Star Mayfly](/examples/rush-cards/120300034) | `120300034` | [Rush/Scripts/c120300034.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120300034.lua) | 1 |
-| [Analyze Phlogiston](/examples/rush-cards/120226001) | `120226001` | [Rush/Scripts/c120226001.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120226001.lua) | 1 |
-| Sword Skill - Ruler's Slash | `120208046` | [Rush/Scripts/c120208046.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120208046.lua) | 1 |
-| Gatling the Shadow Flower Shinobi | `120170032` | [Rush/Scripts/c120170032.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120170032.lua) | 1 |
-| Destructor Soldier Haken | `120264012` | [Rush/Scripts/c120264012.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120264012.lua) | 1 |
-| Level Blast | `120237010` | [Rush/Scripts/c120237010.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120237010.lua) | 1 |
+| [Voidalfr Star Mayfly](/examples/rush-cards/120300034) | `120300034` | [Rush/Scripts/c120300034.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120300034.lua) | 1 |
+| [Analyze Phlogiston](/examples/rush-cards/120226001) | `120226001` | [Rush/Scripts/c120226001.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120226001.lua) | 1 |
+| Sword Skill - Ruler's Slash | `120208046` | [Rush/Scripts/c120208046.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120208046.lua) | 1 |
+| Gatling the Shadow Flower Shinobi | `120170032` | [Rush/Scripts/c120170032.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120170032.lua) | 1 |
+| Destructor Soldier Haken | `120264012` | [Rush/Scripts/c120264012.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120264012.lua) | 1 |
+| Level Blast | `120237010` | [Rush/Scripts/c120237010.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120237010.lua) | 1 |
 
 ## Script Examples
 
 ### Voidalfr Star Mayfly (`120300034`)
 
-Source: [Rush/Scripts/c120300034.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120300034.lua)
+Source: [Rush/Scripts/c120300034.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120300034.lua)
 
 ```lua
 	if Duel.GetFlagEffect(tp,m)~=0 then return end
@@ -98,7 +98,7 @@ end
 
 ### Analyze Phlogiston (`120226001`)
 
-Source: [Rush/Scripts/c120226001.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120226001.lua)
+Source: [Rush/Scripts/c120226001.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120226001.lua)
 
 ```lua
 	if Duel.GetFlagEffect(tp,m)~=0 then return end
@@ -110,7 +110,7 @@ end
 
 ### Sword Skill - Ruler's Slash (`120208046`)
 
-Source: [Rush/Scripts/c120208046.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120208046.lua)
+Source: [Rush/Scripts/c120208046.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120208046.lua)
 
 ```lua
 	if Duel.GetFlagEffect(tp,m)~=0 then return end

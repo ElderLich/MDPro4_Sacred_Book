@@ -35,13 +35,13 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Arcana Force VII - The Chariot | `34568403` | [Scripts/c34568403.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c34568403.lua) | 1 |
+| Arcana Force VII - The Chariot | `34568403` | [Scripts/c34568403.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c34568403.lua) | 1 |
 
 ## Script Examples
 
 ### Arcana Force VII - The Chariot (`34568403`)
 
-Source: [Scripts/c34568403.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c34568403.lua)
+Source: [Scripts/c34568403.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c34568403.lua)
 
 ```lua
 	e1:SetType(EFFECT_TYPE_SINGLE+EFFECT_TYPE_TRIGGER_F)

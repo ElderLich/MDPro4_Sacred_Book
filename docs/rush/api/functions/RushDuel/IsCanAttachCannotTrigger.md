@@ -45,18 +45,18 @@ Generated from the local `Rush/Scripts/` folder and `rush_cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Raging Rock | `120246072` | [Rush/Scripts/c120246072.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120246072.lua) | 1 |
-| Spirit of Isyria | `120300061` | [Rush/Scripts/c120300061.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120300061.lua) | 1 |
-| Metarion Medustar | `120271018` | [Rush/Scripts/c120271018.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120271018.lua) | 1 |
-| Thunderbeetle Crash | `120306007` | [Rush/Scripts/c120306007.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120306007.lua) | 1 |
-| Criatura Brazo | `120291005` | [Rush/Scripts/c120291005.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120291005.lua) | 1 |
-| Ultimate Flag Beast Boltricorn | `120246013` | [Rush/Scripts/c120246013.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120246013.lua) | 1 |
+| Raging Rock | `120246072` | [Rush/Scripts/c120246072.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120246072.lua) | 1 |
+| Spirit of Isyria | `120300061` | [Rush/Scripts/c120300061.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120300061.lua) | 1 |
+| Metarion Medustar | `120271018` | [Rush/Scripts/c120271018.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120271018.lua) | 1 |
+| Thunderbeetle Crash | `120306007` | [Rush/Scripts/c120306007.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120306007.lua) | 1 |
+| Criatura Brazo | `120291005` | [Rush/Scripts/c120291005.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120291005.lua) | 1 |
+| Ultimate Flag Beast Boltricorn | `120246013` | [Rush/Scripts/c120246013.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120246013.lua) | 1 |
 
 ## Script Examples
 
 ### Raging Rock (`120246072`)
 
-Source: [Rush/Scripts/c120246072.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120246072.lua)
+Source: [Rush/Scripts/c120246072.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120246072.lua)
 
 ```lua
 end
@@ -68,7 +68,7 @@ function cm.condition(e,tp,eg,ep,ev,re,r,rp)
 
 ### Spirit of Isyria (`120300061`)
 
-Source: [Rush/Scripts/c120300061.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120300061.lua)
+Source: [Rush/Scripts/c120300061.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120300061.lua)
 
 ```lua
 function cm.filter(c)
@@ -80,7 +80,7 @@ function cm.condition(e,tp,eg,ep,ev,re,r,rp)
 
 ### Metarion Medustar (`120271018`)
 
-Source: [Rush/Scripts/c120271018.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120271018.lua)
+Source: [Rush/Scripts/c120271018.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120271018.lua)
 
 ```lua
 --Cannot Trigger

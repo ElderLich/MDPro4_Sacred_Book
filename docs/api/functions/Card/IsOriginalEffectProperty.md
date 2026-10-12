@@ -32,15 +32,15 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Armament Reincarnation | `53770666` | [Scripts/c53770666.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c53770666.lua) | 1 |
-| Liberator Eto | `24643913` | [Scripts/c24643913.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c24643913.lua) | 1 |
-| Learning Elf | `32126000` | [Scripts/c32126000.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c32126000.lua) | 1 |
+| Armament Reincarnation | `53770666` | [Scripts/c53770666.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c53770666.lua) | 1 |
+| Liberator Eto | `24643913` | [Scripts/c24643913.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c24643913.lua) | 1 |
+| Learning Elf | `32126000` | [Scripts/c32126000.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c32126000.lua) | 1 |
 
 ## Script Examples
 
 ### Armament Reincarnation (`53770666`)
 
-Source: [Scripts/c53770666.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c53770666.lua)
+Source: [Scripts/c53770666.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c53770666.lua)
 
 ```lua
 end
@@ -52,7 +52,7 @@ function s.target(e,tp,eg,ep,ev,re,r,rp,chk)
 
 ### Liberator Eto (`24643913`)
 
-Source: [Scripts/c24643913.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c24643913.lua)
+Source: [Scripts/c24643913.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c24643913.lua)
 
 ```lua
 end
@@ -64,7 +64,7 @@ function s.spcon(e,c)
 
 ### Learning Elf (`32126000`)
 
-Source: [Scripts/c32126000.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c32126000.lua)
+Source: [Scripts/c32126000.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c32126000.lua)
 
 ```lua
 end

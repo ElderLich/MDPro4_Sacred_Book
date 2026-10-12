@@ -56,15 +56,15 @@ Generated from the local `Rush/Scripts/` folder and `rush_cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Lostream Shell | `120309039` | [Rush/Scripts/c120309039.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120309039.lua) | 1 |
-| UMP Sky Forbia | `120306017` | [Rush/Scripts/c120306017.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120306017.lua) | 1 |
-| The Lauan Adventurers Are Go!! | `120306050` | [Rush/Scripts/c120306050.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120306050.lua) | 2 |
+| Lostream Shell | `120309039` | [Rush/Scripts/c120309039.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120309039.lua) | 1 |
+| UMP Sky Forbia | `120306017` | [Rush/Scripts/c120306017.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120306017.lua) | 1 |
+| The Lauan Adventurers Are Go!! | `120306050` | [Rush/Scripts/c120306050.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120306050.lua) | 2 |
 
 ## Script Examples
 
 ### Lostream Shell (`120309039`)
 
-Source: [Rush/Scripts/c120309039.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120309039.lua)
+Source: [Rush/Scripts/c120309039.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120309039.lua)
 
 ```lua
 			RD.SelectAndDoAction(HINTMSG_EQUIP,aux.NecroValleyFilter(filter2),tp,LOCATION_GRAVE,0,1,1,nil,function(sg)
@@ -76,7 +76,7 @@ Source: [Rush/Scripts/c120309039.lua](https://github.com/ElderLich/MDPro3_Sacred
 
 ### UMP Sky Forbia (`120306017`)
 
-Source: [Rush/Scripts/c120306017.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120306017.lua)
+Source: [Rush/Scripts/c120306017.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120306017.lua)
 
 ```lua
 			local filter=RD.Filter(cm.filter,e,c)
@@ -88,7 +88,7 @@ Source: [Rush/Scripts/c120306017.lua](https://github.com/ElderLich/MDPro3_Sacred
 
 ### The Lauan Adventurers Are Go!! (`120306050`)
 
-Source: [Rush/Scripts/c120306050.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120306050.lua)
+Source: [Rush/Scripts/c120306050.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120306050.lua)
 
 ```lua
 		RD.SelectAndDoAction(HINTMSG_EQUIP,aux.NecroValleyFilter(filter2),tp,LOCATION_GRAVE,0,1,max,nil,function(sg)

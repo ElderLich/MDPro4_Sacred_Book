@@ -62,14 +62,14 @@ Generated from the local `Rush/Scripts/` folder and `rush_cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Dark Matter Jelly | `120261022` | [Rush/Scripts/c120261022.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120261022.lua) | 1 |
-| Headhunters' Lemurcunning | `120308006` | [Rush/Scripts/c120308006.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120308006.lua) | 1 |
+| Dark Matter Jelly | `120261022` | [Rush/Scripts/c120261022.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120261022.lua) | 1 |
+| Headhunters' Lemurcunning | `120308006` | [Rush/Scripts/c120308006.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120308006.lua) | 1 |
 
 ## Script Examples
 
 ### Dark Matter Jelly (`120261022`)
 
-Source: [Rush/Scripts/c120261022.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120261022.lua)
+Source: [Rush/Scripts/c120261022.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120261022.lua)
 
 ```lua
 end
@@ -81,7 +81,7 @@ function cm.operation(e,tp,eg,ep,ev,re,r,rp)
 
 ### Headhunters' Lemurcunning (`120308006`)
 
-Source: [Rush/Scripts/c120308006.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120308006.lua)
+Source: [Rush/Scripts/c120308006.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120308006.lua)
 
 ```lua
 		RD.SendToDeckAndExists(g,e,tp,REASON_EFFECT)

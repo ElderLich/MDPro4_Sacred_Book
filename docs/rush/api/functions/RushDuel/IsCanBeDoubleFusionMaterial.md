@@ -53,15 +53,15 @@ Generated from the local `Rush/Scripts/` folder and `rush_cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Tamabot King Golem | `120285039` | [Rush/Scripts/c120285039.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120285039.lua) | 1 |
-| Deep Space Yggdrago | `120260007` | [Rush/Scripts/c120260007.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120260007.lua) | 1 |
-| Blue-Eyes Ultimate Dragon | `120252001` | [Rush/Scripts/c120252001.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120252001.lua) | 1 |
+| Tamabot King Golem | `120285039` | [Rush/Scripts/c120285039.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120285039.lua) | 1 |
+| Deep Space Yggdrago | `120260007` | [Rush/Scripts/c120260007.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120260007.lua) | 1 |
+| Blue-Eyes Ultimate Dragon | `120252001` | [Rush/Scripts/c120252001.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120252001.lua) | 1 |
 
 ## Script Examples
 
 ### Tamabot King Golem (`120285039`)
 
-Source: [Rush/Scripts/c120285039.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120285039.lua)
+Source: [Rush/Scripts/c120285039.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120285039.lua)
 
 ```lua
 end
@@ -73,7 +73,7 @@ function cm.check(g,tp,fc,chkf)
 
 ### Deep Space Yggdrago (`120260007`)
 
-Source: [Rush/Scripts/c120260007.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120260007.lua)
+Source: [Rush/Scripts/c120260007.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120260007.lua)
 
 ```lua
 end
@@ -85,7 +85,7 @@ function cm.check(g,tp,fc,chkf)
 
 ### Blue-Eyes Ultimate Dragon (`120252001`)
 
-Source: [Rush/Scripts/c120252001.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120252001.lua)
+Source: [Rush/Scripts/c120252001.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120252001.lua)
 
 ```lua
 end

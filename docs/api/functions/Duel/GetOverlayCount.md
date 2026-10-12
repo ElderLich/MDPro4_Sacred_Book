@@ -39,22 +39,22 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Rank-Up-Magic Barian's Force | `47660516` | [Scripts/c47660516.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c47660516.lua) | 1 |
-| Xyz Lay | `43150717` | [Scripts/c43150717.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c43150717.lua) | 1 |
-| Neo Galaxy-Eyes Photon Dragon | `39272762` | [Scripts/c39272762.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c39272762.lua) | 1 |
-| Goblin Biker Troika Griare | `44241999` | [Scripts/c44241999.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c44241999.lua) | 1 |
-| Prima Materiactor | `57448410` | [Scripts/c57448410.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c57448410.lua) | 1 |
-| Empress of Prophecy | `770365` | [Scripts/c770365.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c770365.lua) | 1 |
-| Stoic Challenge | `37364101` | [Scripts/c37364101.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c37364101.lua) | 1 |
-| Overlay Sentinel | `39229392` | [Scripts/c39229392.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c39229392.lua) | 1 |
-| Overlay Eater | `81816475` | [Scripts/c81816475.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c81816475.lua) | 1 |
-| Night Papilloperative | `2191144` | [Scripts/c2191144.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c2191144.lua) | 2 |
+| Rank-Up-Magic Barian's Force | `47660516` | [Scripts/c47660516.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c47660516.lua) | 1 |
+| Xyz Lay | `43150717` | [Scripts/c43150717.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c43150717.lua) | 1 |
+| Neo Galaxy-Eyes Photon Dragon | `39272762` | [Scripts/c39272762.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c39272762.lua) | 1 |
+| Goblin Biker Troika Griare | `44241999` | [Scripts/c44241999.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c44241999.lua) | 1 |
+| Prima Materiactor | `57448410` | [Scripts/c57448410.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c57448410.lua) | 1 |
+| Empress of Prophecy | `770365` | [Scripts/c770365.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c770365.lua) | 1 |
+| Stoic Challenge | `37364101` | [Scripts/c37364101.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c37364101.lua) | 1 |
+| Overlay Sentinel | `39229392` | [Scripts/c39229392.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c39229392.lua) | 1 |
+| Overlay Eater | `81816475` | [Scripts/c81816475.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c81816475.lua) | 1 |
+| Night Papilloperative | `2191144` | [Scripts/c2191144.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c2191144.lua) | 2 |
 
 ## Script Examples
 
 ### Rank-Up-Magic Barian's Force (`47660516`)
 
-Source: [Scripts/c47660516.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c47660516.lua)
+Source: [Scripts/c47660516.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c47660516.lua)
 
 ```lua
 		Duel.SpecialSummon(sc,SUMMON_TYPE_XYZ,tp,tp,false,false,POS_FACEUP)
@@ -66,7 +66,7 @@ Source: [Scripts/c47660516.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/
 
 ### Xyz Lay (`43150717`)
 
-Source: [Scripts/c43150717.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c43150717.lua)
+Source: [Scripts/c43150717.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c43150717.lua)
 
 ```lua
 end
@@ -77,7 +77,7 @@ end
 
 ### Neo Galaxy-Eyes Photon Dragon (`39272762`)
 
-Source: [Scripts/c39272762.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c39272762.lua)
+Source: [Scripts/c39272762.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c39272762.lua)
 
 ```lua
 end

@@ -27,14 +27,14 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Number 93: Utopia Kaiser | `23187256` | [Scripts/c23187256.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c23187256.lua) | 1 |
-| Garbage Golem | `28968609` | [Scripts/c28968609.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c28968609.lua) | 1 |
+| Number 93: Utopia Kaiser | `23187256` | [Scripts/c23187256.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c23187256.lua) | 1 |
+| Garbage Golem | `28968609` | [Scripts/c28968609.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c28968609.lua) | 1 |
 
 ## Script Examples
 
 ### Number 93: Utopia Kaiser (`23187256`)
 
-Source: [Scripts/c23187256.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c23187256.lua)
+Source: [Scripts/c23187256.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c23187256.lua)
 
 ```lua
 	if g1:GetCount()>0 and ct>0 then
@@ -46,7 +46,7 @@ Source: [Scripts/c23187256.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/
 
 ### Garbage Golem (`28968609`)
 
-Source: [Scripts/c28968609.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c28968609.lua)
+Source: [Scripts/c28968609.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c28968609.lua)
 
 ```lua
 	if chk==0 then return g:GetClassCount(Card.GetRank)>2 end

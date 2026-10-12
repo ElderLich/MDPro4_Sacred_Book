@@ -58,16 +58,16 @@ Generated from the local `Rush/Scripts/` folder and `rush_cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Confronting the Black Dragon | `120274030` | [Rush/Scripts/c120274030.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120274030.lua) | 1 |
-| Mazera, Devil of the Den | `120290036` | [Rush/Scripts/c120290036.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120290036.lua) | 1 |
-| Hack for the Intel | `120290059` | [Rush/Scripts/c120290059.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120290059.lua) | 1 |
-| Auspicious Arrival of Divine Doubt | `120261065` | [Rush/Scripts/c120261065.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120261065.lua) | 1 |
+| Confronting the Black Dragon | `120274030` | [Rush/Scripts/c120274030.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120274030.lua) | 1 |
+| Mazera, Devil of the Den | `120290036` | [Rush/Scripts/c120290036.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120290036.lua) | 1 |
+| Hack for the Intel | `120290059` | [Rush/Scripts/c120290059.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120290059.lua) | 1 |
+| Auspicious Arrival of Divine Doubt | `120261065` | [Rush/Scripts/c120261065.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120261065.lua) | 1 |
 
 ## Script Examples
 
 ### Confronting the Black Dragon (`120274030`)
 
-Source: [Rush/Scripts/c120274030.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120274030.lua)
+Source: [Rush/Scripts/c120274030.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120274030.lua)
 
 ```lua
 	end
@@ -79,7 +79,7 @@ end
 
 ### Mazera, Devil of the Den (`120290036`)
 
-Source: [Rush/Scripts/c120290036.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120290036.lua)
+Source: [Rush/Scripts/c120290036.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120290036.lua)
 
 ```lua
 	if c:IsFaceup() and c:IsRelateToEffect(e) then
@@ -91,7 +91,7 @@ end
 
 ### Hack for the Intel (`120290059`)
 
-Source: [Rush/Scripts/c120290059.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120290059.lua)
+Source: [Rush/Scripts/c120290059.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120290059.lua)
 
 ```lua
 	if RD.SelectAndToHandOrSpecialSummon(aux.Stringid(m,1),aux.NecroValleyFilter(cm.filter),tp,LOCATION_GRAVE,0,nil,e,POS_FACEUP)

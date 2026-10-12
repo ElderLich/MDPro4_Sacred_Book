@@ -46,17 +46,17 @@ Generated from the local `Rush/Scripts/` folder and `rush_cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Collapsing Chairs | `120150041` | [Rush/Scripts/c120150041.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120150041.lua) | 1 |
-| Dark Nebula | `120235059` | [Rush/Scripts/c120235059.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120235059.lua) | 1 |
-| Resurrection of the Blaze Fiends | `120231017` | [Rush/Scripts/c120231017.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120231017.lua) | 1 |
-| Climax Clash | `120208060` | [Rush/Scripts/c120208060.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120208060.lua) | 1 |
-| Imaginary Arc Turnback | `120196014` | [Rush/Scripts/c120196014.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120196014.lua) | 1 |
+| Collapsing Chairs | `120150041` | [Rush/Scripts/c120150041.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120150041.lua) | 1 |
+| Dark Nebula | `120235059` | [Rush/Scripts/c120235059.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120235059.lua) | 1 |
+| Resurrection of the Blaze Fiends | `120231017` | [Rush/Scripts/c120231017.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120231017.lua) | 1 |
+| Climax Clash | `120208060` | [Rush/Scripts/c120208060.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120208060.lua) | 1 |
+| Imaginary Arc Turnback | `120196014` | [Rush/Scripts/c120196014.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120196014.lua) | 1 |
 
 ## Script Examples
 
 ### Collapsing Chairs (`120150041`)
 
-Source: [Rush/Scripts/c120150041.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120150041.lua)
+Source: [Rush/Scripts/c120150041.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120150041.lua)
 
 ```lua
 	return RD.IsPreviousControler(c,tp) and c==Duel.GetAttackTarget()
@@ -68,7 +68,7 @@ end
 
 ### Dark Nebula (`120235059`)
 
-Source: [Rush/Scripts/c120235059.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120235059.lua)
+Source: [Rush/Scripts/c120235059.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120235059.lua)
 
 ```lua
 function cm.confilter(c,tp)
@@ -80,7 +80,7 @@ function cm.confilter(c,tp)
 
 ### Resurrection of the Blaze Fiends (`120231017`)
 
-Source: [Rush/Scripts/c120231017.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120231017.lua)
+Source: [Rush/Scripts/c120231017.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120231017.lua)
 
 ```lua
 	return RD.IsPreviousControler(c,tp) and c==Duel.GetAttackTarget()

@@ -27,13 +27,13 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Exchange of the Spirit | `17484499` | [Scripts/c17484499.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c17484499.lua) | 2 |
+| Exchange of the Spirit | `17484499` | [Scripts/c17484499.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c17484499.lua) | 2 |
 
 ## Script Examples
 
 ### Exchange of the Spirit (`17484499`)
 
-Source: [Scripts/c17484499.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c17484499.lua)
+Source: [Scripts/c17484499.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c17484499.lua)
 
 ```lua
 	local g=Duel.GetFieldGroup(tp,LOCATION_GRAVE,LOCATION_GRAVE)

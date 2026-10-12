@@ -59,26 +59,26 @@ Generated from the local `Rush/Scripts/` folder and `rush_cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| [Preferlyre](/examples/rush-cards/120283046) | `120283046` | [Rush/Scripts/c120283046.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120283046.lua) | 1 |
-| OuTerverSe Byugyuwazzo | `120290006` | [Rush/Scripts/c120290006.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120290006.lua) | 1 |
-| Twilight Companion - Dralia | `120304068` | [Rush/Scripts/c120304068.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120304068.lua) | 1 |
-| Scissor Hercules | `120298038` | [Rush/Scripts/c120298038.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120298038.lua) | 1 |
-| Voidalfr Antromeda | `120300005` | [Rush/Scripts/c120300005.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120300005.lua) | 1 |
-| Special Operative Flavor Inspector | `120300017` | [Rush/Scripts/c120300017.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120300017.lua) | 1 |
-| Supreme Machine Burning Overlord | `120260069` | [Rush/Scripts/c120260069.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120260069.lua) | 1 |
-| Stratohammer Mjolnir | `120287071` | [Rush/Scripts/c120287071.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120287071.lua) | 1 |
-| Leogun the Golden-Haired Magical Beast | `120294029` | [Rush/Scripts/c120294029.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120294029.lua) | 1 |
-| Hybridrive Barriertail | `120264008` | [Rush/Scripts/c120264008.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120264008.lua) | 1 |
-| Double Cannon Armor | `120298037` | [Rush/Scripts/c120298037.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120298037.lua) | 1 |
-| All Lovely Goddess | `120260039` | [Rush/Scripts/c120260039.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120260039.lua) | 1 |
-| Cyber Shark | `120253021` | [Rush/Scripts/c120253021.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120253021.lua) | 1 |
-| Swift Gaia the Fierce Knight | `120102005` | [Rush/Scripts/c120102005.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120102005.lua) | 1 |
+| [Preferlyre](/examples/rush-cards/120283046) | `120283046` | [Rush/Scripts/c120283046.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120283046.lua) | 1 |
+| OuTerverSe Byugyuwazzo | `120290006` | [Rush/Scripts/c120290006.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120290006.lua) | 1 |
+| Twilight Companion - Dralia | `120304068` | [Rush/Scripts/c120304068.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120304068.lua) | 1 |
+| Scissor Hercules | `120298038` | [Rush/Scripts/c120298038.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120298038.lua) | 1 |
+| Voidalfr Antromeda | `120300005` | [Rush/Scripts/c120300005.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120300005.lua) | 1 |
+| Special Operative Flavor Inspector | `120300017` | [Rush/Scripts/c120300017.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120300017.lua) | 1 |
+| Supreme Machine Burning Overlord | `120260069` | [Rush/Scripts/c120260069.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120260069.lua) | 1 |
+| Stratohammer Mjolnir | `120287071` | [Rush/Scripts/c120287071.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120287071.lua) | 1 |
+| Leogun the Golden-Haired Magical Beast | `120294029` | [Rush/Scripts/c120294029.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120294029.lua) | 1 |
+| Hybridrive Barriertail | `120264008` | [Rush/Scripts/c120264008.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120264008.lua) | 1 |
+| Double Cannon Armor | `120298037` | [Rush/Scripts/c120298037.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120298037.lua) | 1 |
+| All Lovely Goddess | `120260039` | [Rush/Scripts/c120260039.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120260039.lua) | 1 |
+| Cyber Shark | `120253021` | [Rush/Scripts/c120253021.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120253021.lua) | 1 |
+| Swift Gaia the Fierce Knight | `120102005` | [Rush/Scripts/c120102005.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120102005.lua) | 1 |
 
 ## Script Examples
 
 ### Preferlyre (`120283046`)
 
-Source: [Rush/Scripts/c120283046.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120283046.lua)
+Source: [Rush/Scripts/c120283046.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120283046.lua)
 
 ```lua
 	RD.AddCodeList(c,list)
@@ -90,7 +90,7 @@ Source: [Rush/Scripts/c120283046.lua](https://github.com/ElderLich/MDPro3_Sacred
 
 ### OuTerverSe Byugyuwazzo (`120290006`)
 
-Source: [Rush/Scripts/c120290006.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120290006.lua)
+Source: [Rush/Scripts/c120290006.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120290006.lua)
 
 ```lua
 	RD.AddCodeList(c,list)
@@ -102,7 +102,7 @@ Source: [Rush/Scripts/c120290006.lua](https://github.com/ElderLich/MDPro3_Sacred
 
 ### Twilight Companion - Dralia (`120304068`)
 
-Source: [Rush/Scripts/c120304068.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120304068.lua)
+Source: [Rush/Scripts/c120304068.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120304068.lua)
 
 ```lua
 function cm.initial_effect(c)

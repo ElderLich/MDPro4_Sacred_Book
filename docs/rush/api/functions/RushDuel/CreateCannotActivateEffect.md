@@ -51,37 +51,37 @@ Generated from the local `Rush/Scripts/` folder and `rush_cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| [Elemental Circulation](/examples/rush-cards/120263030) | `120263030` | [Rush/Scripts/c120263030.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120263030.lua) | 1 |
-| [Pot of Duality](/examples/rush-cards/120271002) | `120271002` | [Rush/Scripts/c120271002.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120271002.lua) | 1 |
-| [Ember the Ultra Assistant](/examples/rush-cards/120283035) | `120283035` | [Rush/Scripts/c120283035.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120283035.lua) | 1 |
-| [Tubardiche the Music Princess](/examples/rush-cards/120247025) | `120247025` | [Rush/Scripts/c120247025.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120247025.lua) | 1 |
-| [Voidvelg Gehennamagia](/examples/rush-cards/120109048) | `120109048` | [Rush/Scripts/c120109048.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120109048.lua) | 1 |
-| [Red-Eyes Mars Dragon](/examples/rush-cards/120306034) | `120306034` | [Rush/Scripts/c120306034.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120306034.lua) | 1 |
-| Hysteric Eyes | `120304063` | [Rush/Scripts/c120304063.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120304063.lua) | 1 |
-| Celeb Rose Rich Magicians | `120287040` | [Rush/Scripts/c120287040.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120287040.lua) | 1 |
-| Jointech Nesstrydar Tank | `120257017` | [Rush/Scripts/c120257017.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120257017.lua) | 1 |
-| Voidalfr Buprestruve | `120300003` | [Rush/Scripts/c120300003.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120300003.lua) | 1 |
-| Moonforce Piyopi | `120300011` | [Rush/Scripts/c120300011.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120300011.lua) | 1 |
-| The Secret of Manifestation | `120257051` | [Rush/Scripts/c120257051.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120257051.lua) | 1 |
-| Animagica Coin | `120277056` | [Rush/Scripts/c120277056.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120277056.lua) | 1 |
-| Marsphlox the Planetairy | `120293050` | [Rush/Scripts/c120293050.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120293050.lua) | 1 |
-| Healthie Olivia | `120306023` | [Rush/Scripts/c120306023.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120306023.lua) | 1 |
-| Strange Attractor | `120260017` | [Rush/Scripts/c120260017.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120260017.lua) | 1 |
-| Jointech Spike Centipede | `120249007` | [Rush/Scripts/c120249007.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120249007.lua) | 1 |
-| Prime Call | `120257048` | [Rush/Scripts/c120257048.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120257048.lua) | 1 |
-| Jointech Cobra | `120249002` | [Rush/Scripts/c120249002.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120249002.lua) | 1 |
-| Yewearth the Planetairy | `120293051` | [Rush/Scripts/c120293051.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120293051.lua) | 1 |
-| Moonforce Rifet | `120300012` | [Rush/Scripts/c120300012.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120300012.lua) | 1 |
-| Lore Leimey | `120294037` | [Rush/Scripts/c120294037.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120294037.lua) | 1 |
-| Animagica Leader | `120260074` | [Rush/Scripts/c120260074.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120260074.lua) | 1 |
-| Phantasmal Triangular Scale | `120264054` | [Rush/Scripts/c120264054.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120264054.lua) | 1 |
+| [Elemental Circulation](/examples/rush-cards/120263030) | `120263030` | [Rush/Scripts/c120263030.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120263030.lua) | 1 |
+| [Pot of Duality](/examples/rush-cards/120271002) | `120271002` | [Rush/Scripts/c120271002.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120271002.lua) | 1 |
+| [Ember the Ultra Assistant](/examples/rush-cards/120283035) | `120283035` | [Rush/Scripts/c120283035.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120283035.lua) | 1 |
+| [Tubardiche the Music Princess](/examples/rush-cards/120247025) | `120247025` | [Rush/Scripts/c120247025.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120247025.lua) | 1 |
+| [Voidvelg Gehennamagia](/examples/rush-cards/120109048) | `120109048` | [Rush/Scripts/c120109048.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120109048.lua) | 1 |
+| [Red-Eyes Mars Dragon](/examples/rush-cards/120306034) | `120306034` | [Rush/Scripts/c120306034.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120306034.lua) | 1 |
+| Hysteric Eyes | `120304063` | [Rush/Scripts/c120304063.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120304063.lua) | 1 |
+| Celeb Rose Rich Magicians | `120287040` | [Rush/Scripts/c120287040.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120287040.lua) | 1 |
+| Jointech Nesstrydar Tank | `120257017` | [Rush/Scripts/c120257017.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120257017.lua) | 1 |
+| Voidalfr Buprestruve | `120300003` | [Rush/Scripts/c120300003.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120300003.lua) | 1 |
+| Moonforce Piyopi | `120300011` | [Rush/Scripts/c120300011.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120300011.lua) | 1 |
+| The Secret of Manifestation | `120257051` | [Rush/Scripts/c120257051.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120257051.lua) | 1 |
+| Animagica Coin | `120277056` | [Rush/Scripts/c120277056.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120277056.lua) | 1 |
+| Marsphlox the Planetairy | `120293050` | [Rush/Scripts/c120293050.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120293050.lua) | 1 |
+| Healthie Olivia | `120306023` | [Rush/Scripts/c120306023.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120306023.lua) | 1 |
+| Strange Attractor | `120260017` | [Rush/Scripts/c120260017.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120260017.lua) | 1 |
+| Jointech Spike Centipede | `120249007` | [Rush/Scripts/c120249007.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120249007.lua) | 1 |
+| Prime Call | `120257048` | [Rush/Scripts/c120257048.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120257048.lua) | 1 |
+| Jointech Cobra | `120249002` | [Rush/Scripts/c120249002.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120249002.lua) | 1 |
+| Yewearth the Planetairy | `120293051` | [Rush/Scripts/c120293051.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120293051.lua) | 1 |
+| Moonforce Rifet | `120300012` | [Rush/Scripts/c120300012.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120300012.lua) | 1 |
+| Lore Leimey | `120294037` | [Rush/Scripts/c120294037.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120294037.lua) | 1 |
+| Animagica Leader | `120260074` | [Rush/Scripts/c120260074.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120260074.lua) | 1 |
+| Phantasmal Triangular Scale | `120264054` | [Rush/Scripts/c120264054.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120264054.lua) | 1 |
 | ...and 1 more |  |  |  |
 
 ## Script Examples
 
 ### Elemental Circulation (`120263030`)
 
-Source: [Rush/Scripts/c120263030.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120263030.lua)
+Source: [Rush/Scripts/c120263030.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120263030.lua)
 
 ```lua
 	end
@@ -93,7 +93,7 @@ end
 
 ### Pot of Duality (`120271002`)
 
-Source: [Rush/Scripts/c120271002.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120271002.lua)
+Source: [Rush/Scripts/c120271002.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120271002.lua)
 
 ```lua
 	if Duel.GetFlagEffect(tp,m)~=0 then return end
@@ -105,7 +105,7 @@ end
 
 ### Ember the Ultra Assistant (`120283035`)
 
-Source: [Rush/Scripts/c120283035.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120283035.lua)
+Source: [Rush/Scripts/c120283035.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120283035.lua)
 
 ```lua
 	end

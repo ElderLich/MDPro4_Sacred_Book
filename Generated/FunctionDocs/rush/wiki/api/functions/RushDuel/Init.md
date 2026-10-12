@@ -10,7 +10,7 @@ RushDuel.Init() -> void
 
 ## Description
 
-Initializes Rush rules, tracking flags and function overrides, and schedules the opening-turn setup. The pinned special.lua calls this through Auxiliary.PreloadUds; an MDPro3 integration may install its own bootstrap. This function is not guarded against repeated calls: do not call it from every card script.
+Initializes Rush rules, tracking flags and function overrides, and schedules the opening-turn setup. The pinned special.lua calls this through Auxiliary.PreloadUds; an MDPro4 integration may install its own bootstrap. This function is not guarded against repeated calls: do not call it from every card script.
 
 ## Returns
 

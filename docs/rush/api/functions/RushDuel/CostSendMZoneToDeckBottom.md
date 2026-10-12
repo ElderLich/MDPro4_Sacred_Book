@@ -54,16 +54,16 @@ Generated from the local `Rush/Scripts/` folder and `rush_cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Kaien the Molten Martial Machine | `120294032` | [Rush/Scripts/c120294032.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120294032.lua) | 1 |
-| Power Meter | `120294054` | [Rush/Scripts/c120294054.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120294054.lua) | 1 |
-| Cyber Variation | `120278028` | [Rush/Scripts/c120278028.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120278028.lua) | 1 |
-| Class-Change Mirror | `120238034` | [Rush/Scripts/c120238034.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120238034.lua) | 1 |
+| Kaien the Molten Martial Machine | `120294032` | [Rush/Scripts/c120294032.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120294032.lua) | 1 |
+| Power Meter | `120294054` | [Rush/Scripts/c120294054.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120294054.lua) | 1 |
+| Cyber Variation | `120278028` | [Rush/Scripts/c120278028.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120278028.lua) | 1 |
+| Class-Change Mirror | `120238034` | [Rush/Scripts/c120238034.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120238034.lua) | 1 |
 
 ## Script Examples
 
 ### Kaien the Molten Martial Machine (`120294032`)
 
-Source: [Rush/Scripts/c120294032.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120294032.lua)
+Source: [Rush/Scripts/c120294032.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120294032.lua)
 
 ```lua
 		and c:IsType(TYPE_EFFECT) and RD.IsCanBeSpecialSummoned(c,e,tp,POS_FACEUP)
@@ -75,7 +75,7 @@ function cm.condition(e,tp,eg,ep,ev,re,r,rp)
 
 ### Power Meter (`120294054`)
 
-Source: [Rush/Scripts/c120294054.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120294054.lua)
+Source: [Rush/Scripts/c120294054.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120294054.lua)
 
 ```lua
 	return c:IsLevel(4) and c:IsRace(RACE_MACHINE) and RD.IsDefense(c,800)
@@ -87,7 +87,7 @@ function cm.target(e,tp,eg,ep,ev,re,r,rp,chk)
 
 ### Cyber Variation (`120278028`)
 
-Source: [Rush/Scripts/c120278028.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120278028.lua)
+Source: [Rush/Scripts/c120278028.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120278028.lua)
 
 ```lua
 	return Duel.GetFieldGroupCount(tp,LOCATION_DECK,0)>9

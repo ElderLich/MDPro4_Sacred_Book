@@ -34,14 +34,14 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Mayosenju Hitot | `21364070` | [Scripts/c21364070.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c21364070.lua) | 1 |
-| Mayosenju Daibak | `93368494` | [Scripts/c93368494.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c93368494.lua) | 1 |
+| Mayosenju Hitot | `21364070` | [Scripts/c21364070.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c21364070.lua) | 1 |
+| Mayosenju Daibak | `93368494` | [Scripts/c93368494.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c93368494.lua) | 1 |
 
 ## Script Examples
 
 ### Mayosenju Hitot (`21364070`)
 
-Source: [Scripts/c21364070.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c21364070.lua)
+Source: [Scripts/c21364070.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c21364070.lua)
 
 ```lua
 	e3:SetProperty(EFFECT_FLAG_CANNOT_DISABLE+EFFECT_FLAG_UNCOPYABLE)
@@ -53,7 +53,7 @@ Source: [Scripts/c21364070.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/
 
 ### Mayosenju Daibak (`93368494`)
 
-Source: [Scripts/c93368494.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c93368494.lua)
+Source: [Scripts/c93368494.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c93368494.lua)
 
 ```lua
 	e3:SetProperty(EFFECT_FLAG_CANNOT_DISABLE+EFFECT_FLAG_UNCOPYABLE)

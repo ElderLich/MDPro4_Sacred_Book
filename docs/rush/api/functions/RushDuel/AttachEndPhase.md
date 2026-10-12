@@ -77,22 +77,22 @@ Generated from the local `Rush/Scripts/` folder and `rush_cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| [Rescue Rabbit](/examples/rush-cards/120109057) | `120109057` | [Rush/Scripts/c120109057.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120109057.lua) | 1 |
-| Instant Fusion | `120305053` | [Rush/Scripts/c120305053.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120305053.lua) | 1 |
-| Magical Weapoknight Xeno One | `120306038` | [Rush/Scripts/c120306038.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120306038.lua) | 1 |
-| Etraynze the Shadow Flower Ninja | `120170029` | [Rush/Scripts/c120170029.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120170029.lua) | 1 |
-| Rescue Cat | `120307008` | [Rush/Scripts/c120307008.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120307008.lua) | 1 |
-| Darklord Zerato | `120228000` | [Rush/Scripts/c120228000.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120228000.lua) | 1 |
-| Shadow Flower Spore | `120170048` | [Rush/Scripts/c120170048.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120170048.lua) | 1 |
-| Power Shockborg | `120294022` | [Rush/Scripts/c120294022.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120294022.lua) | 1 |
-| Garland the True Shadow Flower Ninja | `120170031` | [Rush/Scripts/c120170031.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120170031.lua) | 1 |
-| Mega Multistrike Dragon Dragias Burst \[L\] | `120210001` | [Rush/Scripts/c120210001.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120210001.lua) | 1 |
+| [Rescue Rabbit](/examples/rush-cards/120109057) | `120109057` | [Rush/Scripts/c120109057.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120109057.lua) | 1 |
+| Instant Fusion | `120305053` | [Rush/Scripts/c120305053.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120305053.lua) | 1 |
+| Magical Weapoknight Xeno One | `120306038` | [Rush/Scripts/c120306038.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120306038.lua) | 1 |
+| Etraynze the Shadow Flower Ninja | `120170029` | [Rush/Scripts/c120170029.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120170029.lua) | 1 |
+| Rescue Cat | `120307008` | [Rush/Scripts/c120307008.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120307008.lua) | 1 |
+| Darklord Zerato | `120228000` | [Rush/Scripts/c120228000.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120228000.lua) | 1 |
+| Shadow Flower Spore | `120170048` | [Rush/Scripts/c120170048.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120170048.lua) | 1 |
+| Power Shockborg | `120294022` | [Rush/Scripts/c120294022.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120294022.lua) | 1 |
+| Garland the True Shadow Flower Ninja | `120170031` | [Rush/Scripts/c120170031.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120170031.lua) | 1 |
+| Mega Multistrike Dragon Dragias Burst \[L\] | `120210001` | [Rush/Scripts/c120210001.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120210001.lua) | 1 |
 
 ## Script Examples
 
 ### Rescue Rabbit (`120109057`)
 
-Source: [Rush/Scripts/c120109057.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120109057.lua)
+Source: [Rush/Scripts/c120109057.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120109057.lua)
 
 ```lua
 		local g=Duel.GetOperatedGroup()
@@ -104,7 +104,7 @@ Source: [Rush/Scripts/c120109057.lua](https://github.com/ElderLich/MDPro3_Sacred
 
 ### Instant Fusion (`120305053`)
 
-Source: [Rush/Scripts/c120305053.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120305053.lua)
+Source: [Rush/Scripts/c120305053.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120305053.lua)
 
 ```lua
 		if Duel.SpecialSummon(tc,SUMMON_TYPE_FUSION,tp,tp,false,false,POS_FACEUP)~=0 then
@@ -116,7 +116,7 @@ Source: [Rush/Scripts/c120305053.lua](https://github.com/ElderLich/MDPro3_Sacred
 
 ### Magical Weapoknight Xeno One (`120306038`)
 
-Source: [Rush/Scripts/c120306038.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120306038.lua)
+Source: [Rush/Scripts/c120306038.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120306038.lua)
 
 ```lua
 	local c=e:GetHandler()

@@ -45,25 +45,25 @@ Generated from the local `Rush/Scripts/` folder and `rush_cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Infernal Flame Emperor | `120109045` | [Rush/Scripts/c120109045.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120109045.lua) | 1 |
-| Lindorm the Dragon Monarch | `120291003` | [Rush/Scripts/c120291003.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120291003.lua) | 1 |
-| Caius the Shadow Monarch | `120291001` | [Rush/Scripts/c120291001.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120291001.lua) | 1 |
-| Lindorm the Mega Monarch | `120291002` | [Rush/Scripts/c120291002.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120291002.lua) | 1 |
-| Star Monarch Estrome | `120244017` | [Rush/Scripts/c120244017.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120244017.lua) | 1 |
-| Thestalos the Firestorm Monarch | `120248001` | [Rush/Scripts/c120248001.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120248001.lua) | 1 |
-| Wilhel the Wisdom Monarch | `120244016` | [Rush/Scripts/c120244016.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120244016.lua) | 1 |
-| Mega Star Monarch Estrome | `120244019` | [Rush/Scripts/c120244019.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120244019.lua) | 1 |
-| Wilhel the Mega Monarch | `120244018` | [Rush/Scripts/c120244018.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120244018.lua) | 1 |
-| Raiza the Storm Monarch | `120247064` | [Rush/Scripts/c120247064.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120247064.lua) | 1 |
-| Mobius the Frost Monarch | `120271003` | [Rush/Scripts/c120271003.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120271003.lua) | 1 |
-| Granmarg the Rock Monarch | `120261033` | [Rush/Scripts/c120261033.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120261033.lua) | 1 |
-| Zaborg the Thunder Monarch | `120244020` | [Rush/Scripts/c120244020.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120244020.lua) | 1 |
+| Infernal Flame Emperor | `120109045` | [Rush/Scripts/c120109045.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120109045.lua) | 1 |
+| Lindorm the Dragon Monarch | `120291003` | [Rush/Scripts/c120291003.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120291003.lua) | 1 |
+| Caius the Shadow Monarch | `120291001` | [Rush/Scripts/c120291001.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120291001.lua) | 1 |
+| Lindorm the Mega Monarch | `120291002` | [Rush/Scripts/c120291002.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120291002.lua) | 1 |
+| Star Monarch Estrome | `120244017` | [Rush/Scripts/c120244017.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120244017.lua) | 1 |
+| Thestalos the Firestorm Monarch | `120248001` | [Rush/Scripts/c120248001.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120248001.lua) | 1 |
+| Wilhel the Wisdom Monarch | `120244016` | [Rush/Scripts/c120244016.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120244016.lua) | 1 |
+| Mega Star Monarch Estrome | `120244019` | [Rush/Scripts/c120244019.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120244019.lua) | 1 |
+| Wilhel the Mega Monarch | `120244018` | [Rush/Scripts/c120244018.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120244018.lua) | 1 |
+| Raiza the Storm Monarch | `120247064` | [Rush/Scripts/c120247064.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120247064.lua) | 1 |
+| Mobius the Frost Monarch | `120271003` | [Rush/Scripts/c120271003.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120271003.lua) | 1 |
+| Granmarg the Rock Monarch | `120261033` | [Rush/Scripts/c120261033.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120261033.lua) | 1 |
+| Zaborg the Thunder Monarch | `120244020` | [Rush/Scripts/c120244020.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120244020.lua) | 1 |
 
 ## Script Examples
 
 ### Infernal Flame Emperor (`120109045`)
 
-Source: [Rush/Scripts/c120109045.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120109045.lua)
+Source: [Rush/Scripts/c120109045.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120109045.lua)
 
 ```lua
 end
@@ -75,7 +75,7 @@ cm.cost=RD.CostSendGraveToDeckBottom(cm.costfilter,1,cm.max,nil,nil,Group.GetCou
 
 ### Lindorm the Dragon Monarch (`120291003`)
 
-Source: [Rush/Scripts/c120291003.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120291003.lua)
+Source: [Rush/Scripts/c120291003.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120291003.lua)
 
 ```lua
 end
@@ -87,7 +87,7 @@ function cm.target(e,tp,eg,ep,ev,re,r,rp,chk)
 
 ### Caius the Shadow Monarch (`120291001`)
 
-Source: [Rush/Scripts/c120291001.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120291001.lua)
+Source: [Rush/Scripts/c120291001.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120291001.lua)
 
 ```lua
 --To Deck

@@ -58,16 +58,16 @@ Generated from the local `Rush/Scripts/` folder and `rush_cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Princess Cosmos the Cosmic Trickster | `120293043` | [Rush/Scripts/c120293043.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120293043.lua) | 1 |
-| Eternum Voidvelg Requiem | `120300032` | [Rush/Scripts/c120300032.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120300032.lua) | 1 |
-| Chimeratech Crush Dragon | `120283031` | [Rush/Scripts/c120283031.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120283031.lua) | 1 |
-| Chimeratech Overdragon | `120278001` | [Rush/Scripts/c120278001.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120278001.lua) | 1 |
+| Princess Cosmos the Cosmic Trickster | `120293043` | [Rush/Scripts/c120293043.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120293043.lua) | 1 |
+| Eternum Voidvelg Requiem | `120300032` | [Rush/Scripts/c120300032.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120300032.lua) | 1 |
+| Chimeratech Crush Dragon | `120283031` | [Rush/Scripts/c120283031.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120283031.lua) | 1 |
+| Chimeratech Overdragon | `120278001` | [Rush/Scripts/c120278001.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120278001.lua) | 1 |
 
 ## Script Examples
 
 ### Princess Cosmos the Cosmic Trickster (`120293043`)
 
-Source: [Rush/Scripts/c120293043.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120293043.lua)
+Source: [Rush/Scripts/c120293043.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120293043.lua)
 
 ```lua
 	RD.AddCodeList(c,list)
@@ -79,7 +79,7 @@ Source: [Rush/Scripts/c120293043.lua](https://github.com/ElderLich/MDPro3_Sacred
 
 ### Eternum Voidvelg Requiem (`120300032`)
 
-Source: [Rush/Scripts/c120300032.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120300032.lua)
+Source: [Rush/Scripts/c120300032.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120300032.lua)
 
 ```lua
 	RD.AddCodeList(c,list)
@@ -91,7 +91,7 @@ Source: [Rush/Scripts/c120300032.lua](https://github.com/ElderLich/MDPro3_Sacred
 
 ### Chimeratech Crush Dragon (`120283031`)
 
-Source: [Rush/Scripts/c120283031.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120283031.lua)
+Source: [Rush/Scripts/c120283031.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120283031.lua)
 
 ```lua
 	RD.AddCodeList(c,list)

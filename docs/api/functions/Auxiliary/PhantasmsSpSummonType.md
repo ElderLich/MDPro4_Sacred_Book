@@ -31,15 +31,15 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Sacred Beasts Combined Assault | `50147815` | [Scripts/c50147815.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c50147815.lua) | 2 |
-| Fallen Paradise of the Sacred Beasts | `65861210` | [Scripts/c65861210.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c65861210.lua) | 2 |
-| Summoner of the Sacred Beasts | `22734799` | [Scripts/c22734799.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c22734799.lua) | 2 |
+| Sacred Beasts Combined Assault | `50147815` | [Scripts/c50147815.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c50147815.lua) | 2 |
+| Fallen Paradise of the Sacred Beasts | `65861210` | [Scripts/c65861210.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c65861210.lua) | 2 |
+| Summoner of the Sacred Beasts | `22734799` | [Scripts/c22734799.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c22734799.lua) | 2 |
 
 ## Script Examples
 
 ### Sacred Beasts Combined Assault (`50147815`)
 
-Source: [Scripts/c50147815.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c50147815.lua)
+Source: [Scripts/c50147815.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c50147815.lua)
 
 ```lua
 function s.spfilter(c,e,tp)
@@ -51,7 +51,7 @@ function s.target(e,tp,eg,ep,ev,re,r,rp,chk)
 
 ### Fallen Paradise of the Sacred Beasts (`65861210`)
 
-Source: [Scripts/c65861210.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c65861210.lua)
+Source: [Scripts/c65861210.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c65861210.lua)
 
 ```lua
 function s.spfilter(c,e,tp)
@@ -63,7 +63,7 @@ function s.spop(e,tp,eg,ep,ev,re,r,rp)
 
 ### Summoner of the Sacred Beasts (`22734799`)
 
-Source: [Scripts/c22734799.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c22734799.lua)
+Source: [Scripts/c22734799.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c22734799.lua)
 
 ```lua
 function s.spfilter(c,e,tp)

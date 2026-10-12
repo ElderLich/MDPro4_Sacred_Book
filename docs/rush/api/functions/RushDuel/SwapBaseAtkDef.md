@@ -50,15 +50,15 @@ Generated from the local `Rush/Scripts/` folder and `rush_cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Sword &amp; Shield | `120155052` | [Rush/Scripts/c120155052.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120155052.lua) | 2 |
-| It's Right Behind You! | `120217084` | [Rush/Scripts/c120217084.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120217084.lua) | 1 |
-| Shield &amp; Sword | `120140009` | [Rush/Scripts/c120140009.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120140009.lua) | 1 |
+| Sword &amp; Shield | `120155052` | [Rush/Scripts/c120155052.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120155052.lua) | 2 |
+| It's Right Behind You! | `120217084` | [Rush/Scripts/c120217084.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120217084.lua) | 1 |
+| Shield &amp; Sword | `120140009` | [Rush/Scripts/c120140009.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120140009.lua) | 1 |
 
 ## Script Examples
 
 ### Sword & Shield (`120155052`)
 
-Source: [Rush/Scripts/c120155052.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120155052.lua)
+Source: [Rush/Scripts/c120155052.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120155052.lua)
 
 ```lua
 	if tc:IsRelateToBattle() and tc:IsFaceup() and RD.IsCanChangeDef(tc)
@@ -70,7 +70,7 @@ Source: [Rush/Scripts/c120155052.lua](https://github.com/ElderLich/MDPro3_Sacred
 
 ### It's Right Behind You! (`120217084`)
 
-Source: [Rush/Scripts/c120217084.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120217084.lua)
+Source: [Rush/Scripts/c120217084.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120217084.lua)
 
 ```lua
 	if RD.SelectAndSpecialSummon(aux.NecroValleyFilter(cm.spfilter),tp,LOCATION_HAND+LOCATION_GRAVE,0,1,1,nil,e,POS_FACEUP)~=0 then
@@ -82,7 +82,7 @@ end
 
 ### Shield & Sword (`120140009`)
 
-Source: [Rush/Scripts/c120140009.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120140009.lua)
+Source: [Rush/Scripts/c120140009.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120140009.lua)
 
 ```lua
 	local g=Duel.GetMatchingGroup(cm.filter,tp,LOCATION_MZONE,LOCATION_MZONE,nil)

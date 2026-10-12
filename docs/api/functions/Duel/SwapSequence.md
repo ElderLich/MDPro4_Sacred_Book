@@ -29,19 +29,19 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Arktos XII - Chronochasm Vaylantz | `50687050` | [Scripts/c50687050.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c50687050.lua) | 1 |
-| Elfnote Tinia | `59581480` | [Scripts/c59581480.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c59581480.lua) | 1 |
-| Elfnote Lucina | `13597785` | [Scripts/c13597785.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c13597785.lua) | 1 |
-| Elfnote Fortuna | `85976588` | [Scripts/c85976588.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c85976588.lua) | 1 |
-| Appliancer Dryer Drake | `3507053` | [Scripts/c3507053.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c3507053.lua) | 1 |
-| World Legacy's Nightmare | `25163979` | [Scripts/c25163979.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c25163979.lua) | 1 |
-| Castle Link | `22198672` | [Scripts/c22198672.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c22198672.lua) | 1 |
+| Arktos XII - Chronochasm Vaylantz | `50687050` | [Scripts/c50687050.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c50687050.lua) | 1 |
+| Elfnote Tinia | `59581480` | [Scripts/c59581480.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c59581480.lua) | 1 |
+| Elfnote Lucina | `13597785` | [Scripts/c13597785.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c13597785.lua) | 1 |
+| Elfnote Fortuna | `85976588` | [Scripts/c85976588.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c85976588.lua) | 1 |
+| Appliancer Dryer Drake | `3507053` | [Scripts/c3507053.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c3507053.lua) | 1 |
+| World Legacy's Nightmare | `25163979` | [Scripts/c25163979.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c25163979.lua) | 1 |
+| Castle Link | `22198672` | [Scripts/c22198672.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c22198672.lua) | 1 |
 
 ## Script Examples
 
 ### Arktos XII - Chronochasm Vaylantz (`50687050`)
 
-Source: [Scripts/c50687050.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c50687050.lua)
+Source: [Scripts/c50687050.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c50687050.lua)
 
 ```lua
 		local tc1=sg:GetFirst()
@@ -53,7 +53,7 @@ end
 
 ### Elfnote Tinia (`59581480`)
 
-Source: [Scripts/c59581480.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c59581480.lua)
+Source: [Scripts/c59581480.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c59581480.lua)
 
 ```lua
 	if g:GetCount()==1 then
@@ -65,7 +65,7 @@ Source: [Scripts/c59581480.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/
 
 ### Elfnote Lucina (`13597785`)
 
-Source: [Scripts/c13597785.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c13597785.lua)
+Source: [Scripts/c13597785.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c13597785.lua)
 
 ```lua
 	if g:GetCount()==1 then

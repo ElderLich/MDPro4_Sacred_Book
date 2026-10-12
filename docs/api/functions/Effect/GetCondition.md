@@ -31,17 +31,17 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Union Activation | `38527680` | [Scripts/c38527680.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c38527680.lua) | 2 |
-| Quick Summon | `10086952` | [Scripts/c10086952.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c10086952.lua) | 2 |
-| Dinomorphia Rexterm | `92798873` | [Scripts/c92798873.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c92798873.lua) | 1 |
-| Bait Doll | `7165085` | [Scripts/c7165085.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c7165085.lua) | 1 |
-| Hope for Escape | `80036543` | [Scripts/c80036543.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c80036543.lua) | 1 |
+| Union Activation | `38527680` | [Scripts/c38527680.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c38527680.lua) | 2 |
+| Quick Summon | `10086952` | [Scripts/c10086952.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c10086952.lua) | 2 |
+| Dinomorphia Rexterm | `92798873` | [Scripts/c92798873.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c92798873.lua) | 1 |
+| Bait Doll | `7165085` | [Scripts/c7165085.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c7165085.lua) | 1 |
+| Hope for Escape | `80036543` | [Scripts/c80036543.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c80036543.lua) | 1 |
 
 ## Script Examples
 
 ### Union Activation (`38527680`)
 
-Source: [Scripts/c38527680.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c38527680.lua)
+Source: [Scripts/c38527680.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c38527680.lua)
 
 ```lua
 	if c:IsHasEffect(EFFECT_LIMIT_SUMMON_PROC,c:GetControler()) then
@@ -53,7 +53,7 @@ Source: [Scripts/c38527680.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/
 
 ### Quick Summon (`10086952`)
 
-Source: [Scripts/c10086952.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c10086952.lua)
+Source: [Scripts/c10086952.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c10086952.lua)
 
 ```lua
 	if c:IsHasEffect(EFFECT_LIMIT_SUMMON_PROC,c:GetControler()) then
@@ -65,7 +65,7 @@ Source: [Scripts/c10086952.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/
 
 ### Dinomorphia Rexterm (`92798873`)
 
-Source: [Scripts/c92798873.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c92798873.lua)
+Source: [Scripts/c92798873.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c92798873.lua)
 
 ```lua
 		local ce={Duel.IsPlayerAffectedByEffect(tp,EFFECT_LPCOST_CHANGE)}

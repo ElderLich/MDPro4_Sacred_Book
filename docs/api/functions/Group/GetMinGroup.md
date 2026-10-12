@@ -63,35 +63,35 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| TiSolfachord Beautia | `54387923` | [Scripts/c54387923.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c54387923.lua) | 1 |
-| Vanquish Soul Hollie Sue | `93156774` | [Scripts/c93156774.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c93156774.lua) | 2 |
-| Vanquish Soul Dr. Mad Love | `29280200` | [Scripts/c29280200.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c29280200.lua) | 2 |
-| Uradora of Fate | `27753563` | [Scripts/c27753563.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c27753563.lua) | 1 |
-| Mayakashi Mayhem | `41867019` | [Scripts/c41867019.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c41867019.lua) | 1 |
-| Wrecker Panda | `28139785` | [Scripts/c28139785.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c28139785.lua) | 1 |
-| Chain Summon | `90812044` | [Scripts/c90812044.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c90812044.lua) | 1 |
-| Mad Hacker | `86993168` | [Scripts/c86993168.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c86993168.lua) | 1 |
-| Clashing Souls | `57496978` | [Scripts/c57496978.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c57496978.lua) | 1 |
-| Ninjitsu Art of Super-Transformation | `90200789` | [Scripts/c90200789.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c90200789.lua) | 2 |
-| Unibird | `21296383` | [Scripts/c21296383.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c21296383.lua) | 1 |
-| Card of Sacrifice | `88513608` | [Scripts/c88513608.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c88513608.lua) | 1 |
-| Queen Angel of Roses | `96470883` | [Scripts/c96470883.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c96470883.lua) | 2 |
-| Chthonian Blast | `18271561` | [Scripts/c18271561.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c18271561.lua) | 2 |
-| Unbreakable Spirit | `88494120` | [Scripts/c88494120.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c88494120.lua) | 2 |
-| The Great Noodle Inversion | `67906797` | [Scripts/c67906797.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c67906797.lua) | 1 |
-| Fire Prison | `269510` | [Scripts/c269510.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c269510.lua) | 1 |
-| Burst Breath | `80163754` | [Scripts/c80163754.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c80163754.lua) | 2 |
-| Super Junior Confrontation | `29590905` | [Scripts/c29590905.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c29590905.lua) | 2 |
-| Zubaba Buster | `57036718` | [Scripts/c57036718.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c57036718.lua) | 2 |
-| Utopia Buster | `30341772` | [Scripts/c30341772.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c30341772.lua) | 2 |
-| Goblin Circus | `18658572` | [Scripts/c18658572.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c18658572.lua) | 1 |
-| Fissure | `66788016` | [Scripts/c66788016.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c66788016.lua) | 2 |
+| TiSolfachord Beautia | `54387923` | [Scripts/c54387923.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c54387923.lua) | 1 |
+| Vanquish Soul Hollie Sue | `93156774` | [Scripts/c93156774.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c93156774.lua) | 2 |
+| Vanquish Soul Dr. Mad Love | `29280200` | [Scripts/c29280200.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c29280200.lua) | 2 |
+| Uradora of Fate | `27753563` | [Scripts/c27753563.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c27753563.lua) | 1 |
+| Mayakashi Mayhem | `41867019` | [Scripts/c41867019.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c41867019.lua) | 1 |
+| Wrecker Panda | `28139785` | [Scripts/c28139785.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c28139785.lua) | 1 |
+| Chain Summon | `90812044` | [Scripts/c90812044.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c90812044.lua) | 1 |
+| Mad Hacker | `86993168` | [Scripts/c86993168.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c86993168.lua) | 1 |
+| Clashing Souls | `57496978` | [Scripts/c57496978.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c57496978.lua) | 1 |
+| Ninjitsu Art of Super-Transformation | `90200789` | [Scripts/c90200789.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c90200789.lua) | 2 |
+| Unibird | `21296383` | [Scripts/c21296383.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c21296383.lua) | 1 |
+| Card of Sacrifice | `88513608` | [Scripts/c88513608.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c88513608.lua) | 1 |
+| Queen Angel of Roses | `96470883` | [Scripts/c96470883.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c96470883.lua) | 2 |
+| Chthonian Blast | `18271561` | [Scripts/c18271561.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c18271561.lua) | 2 |
+| Unbreakable Spirit | `88494120` | [Scripts/c88494120.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c88494120.lua) | 2 |
+| The Great Noodle Inversion | `67906797` | [Scripts/c67906797.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c67906797.lua) | 1 |
+| Fire Prison | `269510` | [Scripts/c269510.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c269510.lua) | 1 |
+| Burst Breath | `80163754` | [Scripts/c80163754.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c80163754.lua) | 2 |
+| Super Junior Confrontation | `29590905` | [Scripts/c29590905.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c29590905.lua) | 2 |
+| Zubaba Buster | `57036718` | [Scripts/c57036718.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c57036718.lua) | 2 |
+| Utopia Buster | `30341772` | [Scripts/c30341772.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c30341772.lua) | 2 |
+| Goblin Circus | `18658572` | [Scripts/c18658572.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c18658572.lua) | 1 |
+| Fissure | `66788016` | [Scripts/c66788016.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c66788016.lua) | 2 |
 
 ## Script Examples
 
 ### TiSolfachord Beautia (`54387923`)
 
-Source: [Scripts/c54387923.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c54387923.lua)
+Source: [Scripts/c54387923.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c54387923.lua)
 
 ```lua
 	local g=Duel.GetFieldGroup(tp,LOCATION_PZONE,0)
@@ -103,7 +103,7 @@ end
 
 ### Vanquish Soul Hollie Sue (`93156774`)
 
-Source: [Scripts/c93156774.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c93156774.lua)
+Source: [Scripts/c93156774.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c93156774.lua)
 
 ```lua
 		local g=Duel.GetMatchingGroup(s.ctfilter,tp,0,LOCATION_MZONE,nil)
@@ -115,7 +115,7 @@ Source: [Scripts/c93156774.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/
 
 ### Vanquish Soul Dr. Mad Love (`29280200`)
 
-Source: [Scripts/c29280200.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c29280200.lua)
+Source: [Scripts/c29280200.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c29280200.lua)
 
 ```lua
 function c29280200.rthtg(e,tp,eg,ep,ev,re,r,rp,chk)

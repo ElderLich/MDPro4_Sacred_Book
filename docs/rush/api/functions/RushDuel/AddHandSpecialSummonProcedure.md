@@ -75,37 +75,37 @@ Generated from the local `Rush/Scripts/` folder and `rush_cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| [Chaos Emperor Dragon - Envoy of the End](/examples/rush-cards/120305001) | `120305001` | [Rush/Scripts/c120305001.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120305001.lua) | 1 |
-| [Brassdes of the Wicked Wheels](/examples/rush-cards/120304033) | `120304033` | [Rush/Scripts/c120304033.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120304033.lua) | 1 |
-| [Player #C39: Home Run Smasher V](/examples/rush-cards/120305028) | `120305028` | [Rush/Scripts/c120305028.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120305028.lua) | 1 |
-| [The Black Witch Facing the Temple](/examples/rush-cards/120309048) | `120309048` | [Rush/Scripts/c120309048.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120309048.lua) | 1 |
-| [Jinzo the Machine Menace](/examples/rush-cards/120257028) | `120257028` | [Rush/Scripts/c120257028.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120257028.lua) | 1 |
-| Qadi of the Monumenthes | `120300009` | [Rush/Scripts/c120300009.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120300009.lua) | 1 |
-| Sparkhearts Anesh | `120298022` | [Rush/Scripts/c120298022.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120298022.lua) | 1 |
-| The Flame Dragon Haunting the Temple | `120309047` | [Rush/Scripts/c120309047.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120309047.lua) | 1 |
-| Excutie Lumière | `120231031` | [Rush/Scripts/c120231031.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120231031.lua) | 1 |
-| Guardian Eatos | `120290065` | [Rush/Scripts/c120290065.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120290065.lua) | 1 |
-| Battletested Curse of Dragon | `120249031` | [Rush/Scripts/c120249031.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120249031.lua) | 1 |
-| Red-Eyes Darkness Metal Dragon | `120294000` | [Rush/Scripts/c120294000.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120294000.lua) | 1 |
-| Blue-Eyes Vision Dragon | `120252004` | [Rush/Scripts/c120252004.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120252004.lua) | 1 |
-| Launcher Catapult Turtle | `120249030` | [Rush/Scripts/c120249030.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120249030.lua) | 1 |
-| Cyber Processor | `120244021` | [Rush/Scripts/c120244021.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120244021.lua) | 1 |
-| Coredrasil the Spirit Tree Bunrei | `120306018` | [Rush/Scripts/c120306018.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120306018.lua) | 1 |
-| Wroughtwyvern | `120263011` | [Rush/Scripts/c120263011.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120263011.lua) | 1 |
-| Pitch-Dark Eradicator Sorcerer | `120309008` | [Rush/Scripts/c120309008.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120309008.lua) | 1 |
-| Lightning Volteagle | `120246001` | [Rush/Scripts/c120246001.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120246001.lua) | 1 |
-| Lightning Voltkite | `120246003` | [Rush/Scripts/c120246003.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120246003.lua) | 1 |
-| Cross Lostream Melutine | `120309036` | [Rush/Scripts/c120309036.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120309036.lua) | 1 |
-| Executie Flame | `120235019` | [Rush/Scripts/c120235019.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120235019.lua) | 1 |
-| Deity of Seven Treasures - Beidai | `120261042` | [Rush/Scripts/c120261042.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120261042.lua) | 1 |
-| Deity of Seven Treasures - Bika | `120283037` | [Rush/Scripts/c120283037.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120283037.lua) | 1 |
+| [Chaos Emperor Dragon - Envoy of the End](/examples/rush-cards/120305001) | `120305001` | [Rush/Scripts/c120305001.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120305001.lua) | 1 |
+| [Brassdes of the Wicked Wheels](/examples/rush-cards/120304033) | `120304033` | [Rush/Scripts/c120304033.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120304033.lua) | 1 |
+| [Player #C39: Home Run Smasher V](/examples/rush-cards/120305028) | `120305028` | [Rush/Scripts/c120305028.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120305028.lua) | 1 |
+| [The Black Witch Facing the Temple](/examples/rush-cards/120309048) | `120309048` | [Rush/Scripts/c120309048.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120309048.lua) | 1 |
+| [Jinzo the Machine Menace](/examples/rush-cards/120257028) | `120257028` | [Rush/Scripts/c120257028.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120257028.lua) | 1 |
+| Qadi of the Monumenthes | `120300009` | [Rush/Scripts/c120300009.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120300009.lua) | 1 |
+| Sparkhearts Anesh | `120298022` | [Rush/Scripts/c120298022.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120298022.lua) | 1 |
+| The Flame Dragon Haunting the Temple | `120309047` | [Rush/Scripts/c120309047.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120309047.lua) | 1 |
+| Excutie Lumière | `120231031` | [Rush/Scripts/c120231031.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120231031.lua) | 1 |
+| Guardian Eatos | `120290065` | [Rush/Scripts/c120290065.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120290065.lua) | 1 |
+| Battletested Curse of Dragon | `120249031` | [Rush/Scripts/c120249031.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120249031.lua) | 1 |
+| Red-Eyes Darkness Metal Dragon | `120294000` | [Rush/Scripts/c120294000.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120294000.lua) | 1 |
+| Blue-Eyes Vision Dragon | `120252004` | [Rush/Scripts/c120252004.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120252004.lua) | 1 |
+| Launcher Catapult Turtle | `120249030` | [Rush/Scripts/c120249030.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120249030.lua) | 1 |
+| Cyber Processor | `120244021` | [Rush/Scripts/c120244021.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120244021.lua) | 1 |
+| Coredrasil the Spirit Tree Bunrei | `120306018` | [Rush/Scripts/c120306018.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120306018.lua) | 1 |
+| Wroughtwyvern | `120263011` | [Rush/Scripts/c120263011.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120263011.lua) | 1 |
+| Pitch-Dark Eradicator Sorcerer | `120309008` | [Rush/Scripts/c120309008.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120309008.lua) | 1 |
+| Lightning Volteagle | `120246001` | [Rush/Scripts/c120246001.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120246001.lua) | 1 |
+| Lightning Voltkite | `120246003` | [Rush/Scripts/c120246003.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120246003.lua) | 1 |
+| Cross Lostream Melutine | `120309036` | [Rush/Scripts/c120309036.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120309036.lua) | 1 |
+| Executie Flame | `120235019` | [Rush/Scripts/c120235019.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120235019.lua) | 1 |
+| Deity of Seven Treasures - Beidai | `120261042` | [Rush/Scripts/c120261042.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120261042.lua) | 1 |
+| Deity of Seven Treasures - Bika | `120283037` | [Rush/Scripts/c120283037.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120283037.lua) | 1 |
 | ...and 14 more |  |  |  |
 
 ## Script Examples
 
 ### Chaos Emperor Dragon - Envoy of the End (`120305001`)
 
-Source: [Rush/Scripts/c120305001.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120305001.lua)
+Source: [Rush/Scripts/c120305001.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120305001.lua)
 
 ```lua
 function cm.initial_effect(c)
@@ -117,7 +117,7 @@ function cm.initial_effect(c)
 
 ### Brassdes of the Wicked Wheels (`120304033`)
 
-Source: [Rush/Scripts/c120304033.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120304033.lua)
+Source: [Rush/Scripts/c120304033.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120304033.lua)
 
 ```lua
 	RD.AddCodeList(c,list)
@@ -129,7 +129,7 @@ Source: [Rush/Scripts/c120304033.lua](https://github.com/ElderLich/MDPro3_Sacred
 
 ### Player #C39: Home Run Smasher V (`120305028`)
 
-Source: [Rush/Scripts/c120305028.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120305028.lua)
+Source: [Rush/Scripts/c120305028.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120305028.lua)
 
 ```lua
 function cm.initial_effect(c)

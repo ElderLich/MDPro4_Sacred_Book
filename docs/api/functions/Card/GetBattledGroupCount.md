@@ -31,22 +31,22 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| [Ultimate Crystal Rainbow Dragon Overdrive](/examples/cards/84544192) | `84544192` | [Scripts/c84544192.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c84544192.lua) | 1 |
-| Arrow of Regulus | `60439482` | [Scripts/c60439482.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c60439482.lua) | 1 |
-| Timelord Progenitor Vorpgate | `67508932` | [Scripts/c67508932.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c67508932.lua) | 1 |
-| Gladiator Beast Tamer Editor | `30864377` | [Scripts/c30864377.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c30864377.lua) | 1 |
-| Heretical Phobos Covos | `76078185` | [Scripts/c76078185.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c76078185.lua) | 1 |
-| Archfiend Black Skull Dragon | `45349196` | [Scripts/c45349196.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c45349196.lua) | 1 |
-| Phantasm Spiral Wave | `1197847` | [Scripts/c1197847.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c1197847.lua) | 1 |
-| Frightfur Kraken | `40636712` | [Scripts/c40636712.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c40636712.lua) | 1 |
-| Hi-Five the Sky | `91677585` | [Scripts/c91677585.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c91677585.lua) | 1 |
-| Turbo Booster | `60187739` | [Scripts/c60187739.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c60187739.lua) | 1 |
+| [Ultimate Crystal Rainbow Dragon Overdrive](/examples/cards/84544192) | `84544192` | [Scripts/c84544192.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c84544192.lua) | 1 |
+| Arrow of Regulus | `60439482` | [Scripts/c60439482.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c60439482.lua) | 1 |
+| Timelord Progenitor Vorpgate | `67508932` | [Scripts/c67508932.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c67508932.lua) | 1 |
+| Gladiator Beast Tamer Editor | `30864377` | [Scripts/c30864377.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c30864377.lua) | 1 |
+| Heretical Phobos Covos | `76078185` | [Scripts/c76078185.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c76078185.lua) | 1 |
+| Archfiend Black Skull Dragon | `45349196` | [Scripts/c45349196.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c45349196.lua) | 1 |
+| Phantasm Spiral Wave | `1197847` | [Scripts/c1197847.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c1197847.lua) | 1 |
+| Frightfur Kraken | `40636712` | [Scripts/c40636712.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c40636712.lua) | 1 |
+| Hi-Five the Sky | `91677585` | [Scripts/c91677585.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c91677585.lua) | 1 |
+| Turbo Booster | `60187739` | [Scripts/c60187739.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c60187739.lua) | 1 |
 
 ## Script Examples
 
 ### Ultimate Crystal Rainbow Dragon Overdrive (`84544192`)
 
-Source: [Scripts/c84544192.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c84544192.lua)
+Source: [Scripts/c84544192.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c84544192.lua)
 
 ```lua
 function s.tdcost(e,tp,eg,ep,ev,re,r,rp,chk)
@@ -58,7 +58,7 @@ end
 
 ### Arrow of Regulus (`60439482`)
 
-Source: [Scripts/c60439482.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c60439482.lua)
+Source: [Scripts/c60439482.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c60439482.lua)
 
 ```lua
 end
@@ -70,7 +70,7 @@ function s.target(e,tp,eg,ep,ev,re,r,rp,chk)
 
 ### Timelord Progenitor Vorpgate (`67508932`)
 
-Source: [Scripts/c67508932.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c67508932.lua)
+Source: [Scripts/c67508932.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c67508932.lua)
 
 ```lua
 function c67508932.rmcond(e,tp,eg,ep,ev,re,r,rp)

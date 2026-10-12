@@ -32,16 +32,16 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| [Shooting Majestic Star Dragon](/examples/cards/40939228) | `40939228` | [Scripts/c40939228.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c40939228.lua) | 1 |
-| [W:P Fancy Ball](/examples/cards/4993187) | `4993187` | [Scripts/c4993187.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c4993187.lua) | 1 |
-| Virakam, the Divine Spirit of Artifice | `10673071` | [Scripts/c10673071.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c10673071.lua) | 1 |
-| Linguriboh | `24842059` | [Scripts/c24842059.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c24842059.lua) | 1 |
+| [Shooting Majestic Star Dragon](/examples/cards/40939228) | `40939228` | [Scripts/c40939228.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c40939228.lua) | 1 |
+| [W:P Fancy Ball](/examples/cards/4993187) | `4993187` | [Scripts/c4993187.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c4993187.lua) | 1 |
+| Virakam, the Divine Spirit of Artifice | `10673071` | [Scripts/c10673071.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c10673071.lua) | 1 |
+| Linguriboh | `24842059` | [Scripts/c24842059.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c24842059.lua) | 1 |
 
 ## Script Examples
 
 ### Shooting Majestic Star Dragon (`40939228`)
 
-Source: [Scripts/c40939228.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c40939228.lua)
+Source: [Scripts/c40939228.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c40939228.lua)
 
 ```lua
 function c40939228.negtg(e,tp,eg,ep,ev,re,r,rp,chk)
@@ -53,7 +53,7 @@ function c40939228.negtg(e,tp,eg,ep,ev,re,r,rp,chk)
 
 ### W:P Fancy Ball (`4993187`)
 
-Source: [Scripts/c4993187.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c4993187.lua)
+Source: [Scripts/c4993187.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c4993187.lua)
 
 ```lua
 end
@@ -65,7 +65,7 @@ function s.distg(e,tp,eg,ep,ev,re,r,rp,chk)
 
 ### Virakam, the Divine Spirit of Artifice (`10673071`)
 
-Source: [Scripts/c10673071.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c10673071.lua)
+Source: [Scripts/c10673071.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c10673071.lua)
 
 ```lua
 end

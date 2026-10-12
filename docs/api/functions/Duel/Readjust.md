@@ -24,22 +24,22 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Ocean Dragon Lord - Kairyu-Shin | `23931679` | [Scripts/c23931679.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c23931679.lua) | 1 |
-| Double Fusion | `10218411` | [Scripts/c10218411.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c10218411.lua) | 1 |
-| There Can Be Only One | `24207889` | [Scripts/c24207889.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c24207889.lua) | 1 |
-| Pole Position | `73578229` | [Scripts/c73578229.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c73578229.lua) | 1 |
-| Kotodama | `19406822` | [Scripts/c19406822.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c19406822.lua) | 1 |
-| Gozen Match | `53334471` | [Scripts/c53334471.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c53334471.lua) | 1 |
-| Rivalry of Warlords | `90846359` | [Scripts/c90846359.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c90846359.lua) | 1 |
-| Spatial Collapse | `20644748` | [Scripts/c20644748.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c20644748.lua) | 1 |
-| True Exodia | `37984331` | [Scripts/c37984331.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c37984331.lua) | 1 |
-| Call of Darkness | `78637313` | [Scripts/c78637313.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c78637313.lua) | 1 |
+| Ocean Dragon Lord - Kairyu-Shin | `23931679` | [Scripts/c23931679.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c23931679.lua) | 1 |
+| Double Fusion | `10218411` | [Scripts/c10218411.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c10218411.lua) | 1 |
+| There Can Be Only One | `24207889` | [Scripts/c24207889.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c24207889.lua) | 1 |
+| Pole Position | `73578229` | [Scripts/c73578229.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c73578229.lua) | 1 |
+| Kotodama | `19406822` | [Scripts/c19406822.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c19406822.lua) | 1 |
+| Gozen Match | `53334471` | [Scripts/c53334471.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c53334471.lua) | 1 |
+| Rivalry of Warlords | `90846359` | [Scripts/c90846359.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c90846359.lua) | 1 |
+| Spatial Collapse | `20644748` | [Scripts/c20644748.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c20644748.lua) | 1 |
+| True Exodia | `37984331` | [Scripts/c37984331.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c37984331.lua) | 1 |
+| Call of Darkness | `78637313` | [Scripts/c78637313.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c78637313.lua) | 1 |
 
 ## Script Examples
 
 ### Ocean Dragon Lord - Kairyu-Shin (`23931679`)
 
-Source: [Scripts/c23931679.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c23931679.lua)
+Source: [Scripts/c23931679.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c23931679.lua)
 
 ```lua
 	if g1:GetCount()>0 then
@@ -51,7 +51,7 @@ end
 
 ### Double Fusion (`10218411`)
 
-Source: [Scripts/c10218411.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c10218411.lua)
+Source: [Scripts/c10218411.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c10218411.lua)
 
 ```lua
 function s.activate(e,tp,eg,ep,ev,re,r,rp)
@@ -63,7 +63,7 @@ function s.activate(e,tp,eg,ep,ev,re,r,rp)
 
 ### There Can Be Only One (`24207889`)
 
-Source: [Scripts/c24207889.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c24207889.lua)
+Source: [Scripts/c24207889.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c24207889.lua)
 
 ```lua
 	if sg:GetCount()>0 then

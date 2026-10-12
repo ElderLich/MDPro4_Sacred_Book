@@ -46,18 +46,18 @@ Generated from the local `Rush/Scripts/` folder and `rush_cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| The Dragiastar | `120235035` | [Rush/Scripts/c120235035.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120235035.lua) | 2 |
-| Back To The Fusion | `120235047` | [Rush/Scripts/c120235047.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120235047.lua) | 2 |
-| Dragon Double-Doom | `120235060` | [Rush/Scripts/c120235060.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120235060.lua) | 1 |
-| Sea Dragon Knight | `120199032` | [Rush/Scripts/c120199032.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120199032.lua) | 1 |
-| The Copy | `120235046` | [Rush/Scripts/c120235046.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120235046.lua) | 1 |
-| Bislasher | `120235048` | [Rush/Scripts/c120235048.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120235048.lua) | 1 |
+| The Dragiastar | `120235035` | [Rush/Scripts/c120235035.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120235035.lua) | 2 |
+| Back To The Fusion | `120235047` | [Rush/Scripts/c120235047.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120235047.lua) | 2 |
+| Dragon Double-Doom | `120235060` | [Rush/Scripts/c120235060.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120235060.lua) | 1 |
+| Sea Dragon Knight | `120199032` | [Rush/Scripts/c120199032.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120199032.lua) | 1 |
+| The Copy | `120235046` | [Rush/Scripts/c120235046.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120235046.lua) | 1 |
+| Bislasher | `120235048` | [Rush/Scripts/c120235048.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120235048.lua) | 1 |
 
 ## Script Examples
 
 ### The Dragiastar (`120235035`)
 
-Source: [Rush/Scripts/c120235035.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120235035.lua)
+Source: [Rush/Scripts/c120235035.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120235035.lua)
 
 ```lua
 end
@@ -69,7 +69,7 @@ function cm.check(g)
 
 ### Back To The Fusion (`120235047`)
 
-Source: [Rush/Scripts/c120235047.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120235047.lua)
+Source: [Rush/Scripts/c120235047.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120235047.lua)
 
 ```lua
 end
@@ -81,7 +81,7 @@ function cm.check(g)
 
 ### Dragon Double-Doom (`120235060`)
 
-Source: [Rush/Scripts/c120235060.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120235060.lua)
+Source: [Rush/Scripts/c120235060.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120235060.lua)
 
 ```lua
 end

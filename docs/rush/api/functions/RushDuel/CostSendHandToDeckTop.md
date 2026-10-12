@@ -54,13 +54,13 @@ Generated from the local `Rush/Scripts/` folder and `rush_cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Cyber Search Dragon | `120109022` | [Rush/Scripts/c120109022.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120109022.lua) | 1 |
+| Cyber Search Dragon | `120109022` | [Rush/Scripts/c120109022.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120109022.lua) | 1 |
 
 ## Script Examples
 
 ### Cyber Search Dragon (`120109022`)
 
-Source: [Rush/Scripts/c120109022.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120109022.lua)
+Source: [Rush/Scripts/c120109022.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120109022.lua)
 
 ```lua
 	return c:IsCode(list[1]) and RD.IsCanBeSpecialSummoned(c,e,tp,POS_FACEUP)

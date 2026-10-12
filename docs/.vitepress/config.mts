@@ -15,9 +15,9 @@ function renderSearchMarkdown(src: string, env: any, md: any) {
 }
 
 export default defineConfig({
-  title: 'MDPro3 Sacred Book',
-  description: 'MDPro3/YGOPro Lua card scripting lessons, examples, and API reference.',
-  base: '/MDPro3_Sacred_Book/',
+  title: 'MDPro4 Sacred Book',
+  description: 'MDPro4/YGOPro Lua card scripting lessons, examples, and API reference.',
+  base: '/MDPro4_Sacred_Book/',
   cleanUrls: true,
   head: analyticsToken
     ? [
@@ -265,10 +265,10 @@ export default defineConfig({
       },
     },
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/ElderLich/MDPro3_Sacred_Book' },
+      { icon: 'github', link: 'https://github.com/ElderLich/MDPro4_Sacred_Book' },
     ],
     footer: {
-      message: '<a href="/MDPro3_Sacred_Book/privacy">Privacy & analytics</a>',
+      message: '<a href="/MDPro4_Sacred_Book/privacy">Privacy & analytics</a>',
     },
   },
 });

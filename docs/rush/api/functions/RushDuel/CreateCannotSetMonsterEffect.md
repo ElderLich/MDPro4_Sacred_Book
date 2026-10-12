@@ -72,15 +72,15 @@ Generated from the local `Rush/Scripts/` folder and `rush_cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| [Devil Foolish](/examples/rush-cards/120244026) | `120244026` | [Rush/Scripts/c120244026.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120244026.lua) | 1 |
-| Super Electromagnetic Maximum | `120239024` | [Rush/Scripts/c120239024.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120239024.lua) | 1 |
-| Tiger Roll the Sushi Fairy | `120151041` | [Rush/Scripts/c120151041.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120151041.lua) | 1 |
+| [Devil Foolish](/examples/rush-cards/120244026) | `120244026` | [Rush/Scripts/c120244026.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120244026.lua) | 1 |
+| Super Electromagnetic Maximum | `120239024` | [Rush/Scripts/c120239024.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120239024.lua) | 1 |
+| Tiger Roll the Sushi Fairy | `120151041` | [Rush/Scripts/c120151041.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120151041.lua) | 1 |
 
 ## Script Examples
 
 ### Devil Foolish (`120244026`)
 
-Source: [Rush/Scripts/c120244026.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120244026.lua)
+Source: [Rush/Scripts/c120244026.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120244026.lua)
 
 ```lua
 	if Duel.GetFlagEffect(tp,m)~=0 then return end
@@ -92,7 +92,7 @@ end
 
 ### Super Electromagnetic Maximum (`120239024`)
 
-Source: [Rush/Scripts/c120239024.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120239024.lua)
+Source: [Rush/Scripts/c120239024.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120239024.lua)
 
 ```lua
 		if RD.SendToHandAndExists(g,e,tp,REASON_EFFECT) and Duel.GetFlagEffect(tp,m)==0 then
@@ -104,7 +104,7 @@ Source: [Rush/Scripts/c120239024.lua](https://github.com/ElderLich/MDPro3_Sacred
 
 ### Tiger Roll the Sushi Fairy (`120151041`)
 
-Source: [Rush/Scripts/c120151041.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120151041.lua)
+Source: [Rush/Scripts/c120151041.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120151041.lua)
 
 ```lua
 		if RD.SendToHandAndExists(g,e,tp,REASON_EFFECT) and Duel.GetFlagEffect(tp,m)==0 then

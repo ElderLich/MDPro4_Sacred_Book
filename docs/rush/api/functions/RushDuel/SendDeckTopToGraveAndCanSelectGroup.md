@@ -65,14 +65,14 @@ Generated from the local `Rush/Scripts/` folder and `rush_cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Reminiscence of the Epic Tale | `120272054` | [Rush/Scripts/c120272054.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120272054.lua) | 1 |
-| OuTerverSe Jumble Recovery | `120290040` | [Rush/Scripts/c120290040.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120290040.lua) | 1 |
+| Reminiscence of the Epic Tale | `120272054` | [Rush/Scripts/c120272054.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120272054.lua) | 1 |
+| OuTerverSe Jumble Recovery | `120290040` | [Rush/Scripts/c120290040.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120290040.lua) | 1 |
 
 ## Script Examples
 
 ### Reminiscence of the Epic Tale (`120272054`)
 
-Source: [Rush/Scripts/c120272054.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120272054.lua)
+Source: [Rush/Scripts/c120272054.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120272054.lua)
 
 ```lua
 end
@@ -84,7 +84,7 @@ function cm.activate(e,tp,eg,ep,ev,re,r,rp)
 
 ### OuTerverSe Jumble Recovery (`120290040`)
 
-Source: [Rush/Scripts/c120290040.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120290040.lua)
+Source: [Rush/Scripts/c120290040.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120290040.lua)
 
 ```lua
 end

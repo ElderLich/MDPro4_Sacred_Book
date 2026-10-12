@@ -55,15 +55,15 @@ Generated from the local `Rush/Scripts/` folder and `rush_cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Sacred Tower in Collapse | `120290064` | [Rush/Scripts/c120290064.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120290064.lua) | 1 |
-| Certain Death Promotion | `120272055` | [Rush/Scripts/c120272055.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120272055.lua) | 1 |
-| Monumenthes Festival -The Isyria Seance- | `120300046` | [Rush/Scripts/c120300046.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120300046.lua) | 1 |
+| Sacred Tower in Collapse | `120290064` | [Rush/Scripts/c120290064.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120290064.lua) | 1 |
+| Certain Death Promotion | `120272055` | [Rush/Scripts/c120272055.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120272055.lua) | 1 |
+| Monumenthes Festival -The Isyria Seance- | `120300046` | [Rush/Scripts/c120300046.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120300046.lua) | 1 |
 
 ## Script Examples
 
 ### Sacred Tower in Collapse (`120290064`)
 
-Source: [Rush/Scripts/c120290064.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120290064.lua)
+Source: [Rush/Scripts/c120290064.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120290064.lua)
 
 ```lua
 	return eg:IsExists(cm.confilter,1,nil,1-tp)
@@ -75,7 +75,7 @@ function cm.target(e,tp,eg,ep,ev,re,r,rp,chk)
 
 ### Certain Death Promotion (`120272055`)
 
-Source: [Rush/Scripts/c120272055.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120272055.lua)
+Source: [Rush/Scripts/c120272055.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120272055.lua)
 
 ```lua
 	return g:GetClassCount(Card.GetLocation)==g:GetCount()
@@ -87,7 +87,7 @@ function cm.target(e,tp,eg,ep,ev,re,r,rp,chk)
 
 ### Monumenthes Festival -The Isyria Seance- (`120300046`)
 
-Source: [Rush/Scripts/c120300046.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120300046.lua)
+Source: [Rush/Scripts/c120300046.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120300046.lua)
 
 ```lua
 	return g:GetClassCount(Card.GetCode)==g:GetCount()

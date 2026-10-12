@@ -63,19 +63,19 @@ Generated from the local `Rush/Scripts/` folder and `rush_cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| [Moonforce Sheila](/examples/rush-cards/120300013) | `120300013` | [Rush/Scripts/c120300013.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120300013.lua) | 1 |
-| Hydrangea the Shadow Flower Tea Master | `120304029` | [Rush/Scripts/c120304029.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120304029.lua) | 1 |
-| Absolute Lord of D. | `120252005` | [Rush/Scripts/c120252005.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120252005.lua) | 1 |
-| Power Capsule Red | `120294056` | [Rush/Scripts/c120294056.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120294056.lua) | 1 |
-| Yorishiro of the Lion | `120294027` | [Rush/Scripts/c120294027.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120294027.lua) | 1 |
-| Star Protector Calling | `120306046` | [Rush/Scripts/c120306046.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120306046.lua) | 1 |
-| Encounter with the Sacred Tree | `120306049` | [Rush/Scripts/c120306049.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120306049.lua) | 1 |
+| [Moonforce Sheila](/examples/rush-cards/120300013) | `120300013` | [Rush/Scripts/c120300013.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120300013.lua) | 1 |
+| Hydrangea the Shadow Flower Tea Master | `120304029` | [Rush/Scripts/c120304029.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120304029.lua) | 1 |
+| Absolute Lord of D. | `120252005` | [Rush/Scripts/c120252005.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120252005.lua) | 1 |
+| Power Capsule Red | `120294056` | [Rush/Scripts/c120294056.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120294056.lua) | 1 |
+| Yorishiro of the Lion | `120294027` | [Rush/Scripts/c120294027.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120294027.lua) | 1 |
+| Star Protector Calling | `120306046` | [Rush/Scripts/c120306046.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120306046.lua) | 1 |
+| Encounter with the Sacred Tree | `120306049` | [Rush/Scripts/c120306049.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120306049.lua) | 1 |
 
 ## Script Examples
 
 ### Moonforce Sheila (`120300013`)
 
-Source: [Rush/Scripts/c120300013.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120300013.lua)
+Source: [Rush/Scripts/c120300013.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120300013.lua)
 
 ```lua
 function cm.operation(e,tp,eg,ep,ev,re,r,rp)
@@ -87,7 +87,7 @@ function cm.operation(e,tp,eg,ep,ev,re,r,rp)
 
 ### Hydrangea the Shadow Flower Tea Master (`120304029`)
 
-Source: [Rush/Scripts/c120304029.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120304029.lua)
+Source: [Rush/Scripts/c120304029.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120304029.lua)
 
 ```lua
 function cm.operation(e,tp,eg,ep,ev,re,r,rp)
@@ -99,7 +99,7 @@ function cm.operation(e,tp,eg,ep,ev,re,r,rp)
 
 ### Absolute Lord of D. (`120252005`)
 
-Source: [Rush/Scripts/c120252005.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120252005.lua)
+Source: [Rush/Scripts/c120252005.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120252005.lua)
 
 ```lua
 function cm.operation(e,tp,eg,ep,ev,re,r,rp)

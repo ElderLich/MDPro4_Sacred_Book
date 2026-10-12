@@ -16,11 +16,11 @@ before adapting an OCG/TCG script.
 | `Rush/Scripts/c<ID>.lua` | The imported behavior of an individual Rush card. |
 | `Rush/Utilities/RD*.lua` | Shared requirements, actions, rules, and summon procedures. |
 | `Card`, `Effect`, `Group`, `Duel` | The underlying engine operations used by those helpers. |
-| MDPro3's Rush mode and bootstrap | Loading and initializing the Rush environment for a duel. |
+| MDPro4's Rush mode and bootstrap | Loading and initializing the Rush environment for a duel. |
 
 In the imported upstream `special.lua`, the `RD*.lua` files load first,
 `RD = RushDuel` supplies the short alias, and `Auxiliary.PreloadUds()` calls
-`RD.Init()`. MDPro3 packages these through its own Rush bootstrap in
+`RD.Init()`. MDPro4 packages these through its own Rush bootstrap in
 `Data/rush_scripts.zip`. Its local host selects Rush mode and installs the
 session hook. A card's `initial_effect` should register that card's effects;
 it should not call `RD.Init()` again.
@@ -160,4 +160,4 @@ and follow its source before adapting a larger script.
 This lesson follows the imported `Rush/Utilities/special.lua`, `RDRule.lua`,
 `RDCost.lua`, `RDTarget.lua`, and `RDCondition.lua`, plus
 `Rush/Scripts/c120105006.lua` and `c120101001.lua`. The game wiring was checked
-against MDPro3's `RushDuelScripts.cs` and `Card.IsRushDuelCard()`.
+against MDPro4's `RushDuelScripts.cs` and `Card.IsRushDuelCard()`.

@@ -32,37 +32,37 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| [Ultra Polymerization](/examples/cards/76647978) | `76647978` | [Scripts/c76647978.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c76647978.lua) | 1 |
-| Ostinato | `9113513` | [Scripts/c9113513.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c9113513.lua) | 1 |
-| Hi-Speedroid Cork Shooter | `23361526` | [Scripts/c23361526.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c23361526.lua) | 1 |
-| Astrazma Urania | `18738846` | [Scripts/c18738846.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c18738846.lua) | 1 |
-| Loris, Lady of Lament | `50699850` | [Scripts/c50699850.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c50699850.lua) | 1 |
-| Meklord Emperor Granel | `4545683` | [Scripts/c4545683.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c4545683.lua) | 1 |
-| Meklord Emperor Skiel | `31930787` | [Scripts/c31930787.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c31930787.lua) | 1 |
-| Meklord Emperor Wisel | `68140974` | [Scripts/c68140974.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c68140974.lua) | 1 |
-| Borrelguard Dragon | `68987122` | [Scripts/c68987122.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c68987122.lua) | 1 |
-| Recovery Sorcerer | `76232522` | [Scripts/c76232522.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c76232522.lua) | 1 |
-| THE Star Ham | `15123983` | [Scripts/c15123983.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c15123983.lua) | 1 |
-| Guoglim, Spear of the Ghoti | `2405631` | [Scripts/c2405631.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c2405631.lua) | 1 |
-| Ascension Sky Dragon | `37910722` | [Scripts/c37910722.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c37910722.lua) | 1 |
-| Gigathunder Giclops | `17241941` | [Scripts/c17241941.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c17241941.lua) | 1 |
-| T.G. Recipro Dragonfly | `62560742` | [Scripts/c62560742.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c62560742.lua) | 1 |
-| Scrap Orthros | `64550682` | [Scripts/c64550682.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c64550682.lua) | 1 |
-| Speedroid Dominobutterfly | `28151978` | [Scripts/c28151978.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c28151978.lua) | 1 |
-| Kuribohrn | `78355370` | [Scripts/c78355370.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c78355370.lua) | 1 |
-| Seed of Flame | `38041940` | [Scripts/c38041940.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c38041940.lua) | 1 |
-| De-Synchro | `32441317` | [Scripts/c32441317.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c32441317.lua) | 1 |
-| Blink Out | `28279365` | [Scripts/c28279365.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c28279365.lua) | 1 |
-| Scrap Shark | `69155991` | [Scripts/c69155991.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c69155991.lua) | 1 |
-| Fusion Recycling Plant | `22829942` | [Scripts/c22829942.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c22829942.lua) | 1 |
-| De-Fusion | `95286165` | [Scripts/c95286165.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c95286165.lua) | 1 |
+| [Ultra Polymerization](/examples/cards/76647978) | `76647978` | [Scripts/c76647978.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c76647978.lua) | 1 |
+| Ostinato | `9113513` | [Scripts/c9113513.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c9113513.lua) | 1 |
+| Hi-Speedroid Cork Shooter | `23361526` | [Scripts/c23361526.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c23361526.lua) | 1 |
+| Astrazma Urania | `18738846` | [Scripts/c18738846.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c18738846.lua) | 1 |
+| Loris, Lady of Lament | `50699850` | [Scripts/c50699850.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c50699850.lua) | 1 |
+| Meklord Emperor Granel | `4545683` | [Scripts/c4545683.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c4545683.lua) | 1 |
+| Meklord Emperor Skiel | `31930787` | [Scripts/c31930787.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c31930787.lua) | 1 |
+| Meklord Emperor Wisel | `68140974` | [Scripts/c68140974.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c68140974.lua) | 1 |
+| Borrelguard Dragon | `68987122` | [Scripts/c68987122.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c68987122.lua) | 1 |
+| Recovery Sorcerer | `76232522` | [Scripts/c76232522.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c76232522.lua) | 1 |
+| THE Star Ham | `15123983` | [Scripts/c15123983.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c15123983.lua) | 1 |
+| Guoglim, Spear of the Ghoti | `2405631` | [Scripts/c2405631.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c2405631.lua) | 1 |
+| Ascension Sky Dragon | `37910722` | [Scripts/c37910722.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c37910722.lua) | 1 |
+| Gigathunder Giclops | `17241941` | [Scripts/c17241941.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c17241941.lua) | 1 |
+| T.G. Recipro Dragonfly | `62560742` | [Scripts/c62560742.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c62560742.lua) | 1 |
+| Scrap Orthros | `64550682` | [Scripts/c64550682.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c64550682.lua) | 1 |
+| Speedroid Dominobutterfly | `28151978` | [Scripts/c28151978.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c28151978.lua) | 1 |
+| Kuribohrn | `78355370` | [Scripts/c78355370.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c78355370.lua) | 1 |
+| Seed of Flame | `38041940` | [Scripts/c38041940.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c38041940.lua) | 1 |
+| De-Synchro | `32441317` | [Scripts/c32441317.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c32441317.lua) | 1 |
+| Blink Out | `28279365` | [Scripts/c28279365.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c28279365.lua) | 1 |
+| Scrap Shark | `69155991` | [Scripts/c69155991.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c69155991.lua) | 1 |
+| Fusion Recycling Plant | `22829942` | [Scripts/c22829942.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c22829942.lua) | 1 |
+| De-Fusion | `95286165` | [Scripts/c95286165.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c95286165.lua) | 1 |
 | ...and 22 more |  |  |  |
 
 ## Script Examples
 
 ### Ultra Polymerization (`76647978`)
 
-Source: [Scripts/c76647978.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c76647978.lua)
+Source: [Scripts/c76647978.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c76647978.lua)
 
 ```lua
 function c76647978.mgfilter(c,e,tp,fusc,mg)
@@ -74,7 +74,7 @@ function c76647978.mgfilter(c,e,tp,fusc,mg)
 
 ### Ostinato (`9113513`)
 
-Source: [Scripts/c9113513.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c9113513.lua)
+Source: [Scripts/c9113513.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c9113513.lua)
 
 ```lua
 function c9113513.mgfilter(c,e,tp,fusc,mg)
@@ -86,7 +86,7 @@ function c9113513.mgfilter(c,e,tp,fusc,mg)
 
 ### Hi-Speedroid Cork Shooter (`23361526`)
 
-Source: [Scripts/c23361526.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c23361526.lua)
+Source: [Scripts/c23361526.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c23361526.lua)
 
 ```lua
 function c23361526.spfilter(c,e,tp,sync)

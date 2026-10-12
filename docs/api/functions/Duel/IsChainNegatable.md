@@ -9,7 +9,7 @@ Duel.IsChainNegatable(int chainc) -> bool
 ## Description
 
 Compatibility check for whether chainc's activation can be negated.
-In this MDPro3 core binding, the function currently returns true for any chain count.
+In this MDPro4 core binding, the function currently returns true for any chain count.
 Local scripts still call it in negation conditions so the script expresses the intended activation-legality check.
 Use it with Duel.NegateActivation, not as a substitute for effect-negation checks such as Duel.IsChainDisablable.
 
@@ -21,7 +21,7 @@ Use this in activation-negation conditions to express that the responding effect
 return Duel.IsChainNegatable(ev)
 ```
 
-In the current MDPro3 core binding this function returns true for any chain count, but local scripts still use it as the activation-negation legality marker. Use `Duel.IsChainDisablable` when the operation is effect negation rather than activation negation.
+In the current MDPro4 core binding this function returns true for any chain count, but local scripts still use it as the activation-negation legality marker. Use `Duel.IsChainDisablable` when the operation is effect negation rather than activation negation.
 
 ## Related Functions
 
@@ -61,37 +61,37 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| [Enneacraft - Archa.TAIL](/examples/cards/81237046) | `81237046` | [Scripts/c81237046.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c81237046.lua) | 1 |
-| [Enneacraft - Atil.SPIA](/examples/cards/71801447) | `71801447` | [Scripts/c71801447.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c71801447.lua) | 2 |
-| [Shooting Majestic Star Dragon](/examples/cards/40939228) | `40939228` | [Scripts/c40939228.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c40939228.lua) | 1 |
-| Red-Eyes Slash Dragon | `21140872` | [Scripts/c21140872.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c21140872.lua) | 1 |
-| A-to-Z-Dragon Buster Cannon | `65172015` | [Scripts/c65172015.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c65172015.lua) | 1 |
-| Frightfur March | `74416026` | [Scripts/c74416026.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c74416026.lua) | 1 |
-| Dragon Master Magia | `12381100` | [Scripts/c12381100.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c12381100.lua) | 1 |
-| Ursarctic Grand Chariot | `80086070` | [Scripts/c80086070.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c80086070.lua) | 1 |
-| Endymion, the Mighty Master of Magic | `3611830` | [Scripts/c3611830.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c3611830.lua) | 1 |
-| Arms of Genex Return Zero | `61775475` | [Scripts/c61775475.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c61775475.lua) | 1 |
-| Emperor Charles the Great | `97864322` | [Scripts/c97864322.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c97864322.lua) | 1 |
-| Toadally Awesome | `90809975` | [Scripts/c90809975.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c90809975.lua) | 1 |
-| All-Eyes Phantom Dragon | `70335319` | [Scripts/c70335319.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c70335319.lua) | 1 |
-| Drytron Meteonis DA Draconids | `56863746` | [Scripts/c56863746.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c56863746.lua) | 1 |
-| Machina Ruinforce | `46033517` | [Scripts/c46033517.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c46033517.lua) | 1 |
-| Loki, Lord of the Aesir | `67098114` | [Scripts/c67098114.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c67098114.lua) | 1 |
-| Fire King Avatar Arvata | `18621798` | [Scripts/c18621798.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c18621798.lua) | 1 |
-| Immortal Phoenix Gearfried | `22091647` | [Scripts/c22091647.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c22091647.lua) | 1 |
-| PSY-Framegear Gamma | `38814750` | [Scripts/c38814750.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c38814750.lua) | 1 |
-| PSY-Framegear Delta | `74203495` | [Scripts/c74203495.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c74203495.lua) | 1 |
-| PSY-Framegear Epsilon | `1697104` | [Scripts/c1697104.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c1697104.lua) | 1 |
-| Red-Eyes Dark Dragoon | `37818794` | [Scripts/c37818794.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c37818794.lua) | 1 |
-| Whisker Blitzclique | `85523502` | [Scripts/c85523502.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c85523502.lua) | 1 |
-| Eclipse, Dragon Ruler of Catastrophes | `30350202` | [Scripts/c30350202.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c30350202.lua) | 1 |
+| [Enneacraft - Archa.TAIL](/examples/cards/81237046) | `81237046` | [Scripts/c81237046.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c81237046.lua) | 1 |
+| [Enneacraft - Atil.SPIA](/examples/cards/71801447) | `71801447` | [Scripts/c71801447.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c71801447.lua) | 2 |
+| [Shooting Majestic Star Dragon](/examples/cards/40939228) | `40939228` | [Scripts/c40939228.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c40939228.lua) | 1 |
+| Red-Eyes Slash Dragon | `21140872` | [Scripts/c21140872.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c21140872.lua) | 1 |
+| A-to-Z-Dragon Buster Cannon | `65172015` | [Scripts/c65172015.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c65172015.lua) | 1 |
+| Frightfur March | `74416026` | [Scripts/c74416026.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c74416026.lua) | 1 |
+| Dragon Master Magia | `12381100` | [Scripts/c12381100.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c12381100.lua) | 1 |
+| Ursarctic Grand Chariot | `80086070` | [Scripts/c80086070.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c80086070.lua) | 1 |
+| Endymion, the Mighty Master of Magic | `3611830` | [Scripts/c3611830.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c3611830.lua) | 1 |
+| Arms of Genex Return Zero | `61775475` | [Scripts/c61775475.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c61775475.lua) | 1 |
+| Emperor Charles the Great | `97864322` | [Scripts/c97864322.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c97864322.lua) | 1 |
+| Toadally Awesome | `90809975` | [Scripts/c90809975.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c90809975.lua) | 1 |
+| All-Eyes Phantom Dragon | `70335319` | [Scripts/c70335319.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c70335319.lua) | 1 |
+| Drytron Meteonis DA Draconids | `56863746` | [Scripts/c56863746.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c56863746.lua) | 1 |
+| Machina Ruinforce | `46033517` | [Scripts/c46033517.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c46033517.lua) | 1 |
+| Loki, Lord of the Aesir | `67098114` | [Scripts/c67098114.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c67098114.lua) | 1 |
+| Fire King Avatar Arvata | `18621798` | [Scripts/c18621798.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c18621798.lua) | 1 |
+| Immortal Phoenix Gearfried | `22091647` | [Scripts/c22091647.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c22091647.lua) | 1 |
+| PSY-Framegear Gamma | `38814750` | [Scripts/c38814750.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c38814750.lua) | 1 |
+| PSY-Framegear Delta | `74203495` | [Scripts/c74203495.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c74203495.lua) | 1 |
+| PSY-Framegear Epsilon | `1697104` | [Scripts/c1697104.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c1697104.lua) | 1 |
+| Red-Eyes Dark Dragoon | `37818794` | [Scripts/c37818794.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c37818794.lua) | 1 |
+| Whisker Blitzclique | `85523502` | [Scripts/c85523502.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c85523502.lua) | 1 |
+| Eclipse, Dragon Ruler of Catastrophes | `30350202` | [Scripts/c30350202.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c30350202.lua) | 1 |
 | ...and 361 more |  |  |  |
 
 ## Script Examples
 
 ### Enneacraft - Archa.TAIL (`81237046`)
 
-Source: [Scripts/c81237046.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c81237046.lua)
+Source: [Scripts/c81237046.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c81237046.lua)
 
 ```lua
 end
@@ -103,7 +103,7 @@ function s.indcon(e,tp,eg,ep,ev,re,r,rp)
 
 ### Enneacraft - Atil.SPIA (`71801447`)
 
-Source: [Scripts/c71801447.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c71801447.lua)
+Source: [Scripts/c71801447.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c71801447.lua)
 
 ```lua
 	for i=1,ev do
@@ -115,7 +115,7 @@ Source: [Scripts/c71801447.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/
 
 ### Shooting Majestic Star Dragon (`40939228`)
 
-Source: [Scripts/c40939228.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c40939228.lua)
+Source: [Scripts/c40939228.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c40939228.lua)
 
 ```lua
 end

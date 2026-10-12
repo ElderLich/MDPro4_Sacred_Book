@@ -50,37 +50,37 @@ Generated from the local `Rush/Scripts/` folder and `rush_cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Dark Matter Transcend Dragon | `120272044` | [Rush/Scripts/c120272044.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120272044.lua) | 1 |
-| Celeb Rose Influencers | `120257044` | [Rush/Scripts/c120257044.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120257044.lua) | 1 |
-| Illusion Strike Dragon Miragias | `120145025` | [Rush/Scripts/c120145025.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120145025.lua) | 1 |
-| Meet and Greed | `120208044` | [Rush/Scripts/c120208044.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120208044.lua) | 1 |
-| Mega Jointech Fortrex \[L\] | `120249003` | [Rush/Scripts/c120249003.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120249003.lua) | 1 |
-| Dual Space Yggdrago | `120260008` | [Rush/Scripts/c120260008.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120260008.lua) | 2 |
-| Sacrificial Summon | `120217094` | [Rush/Scripts/c120217094.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120217094.lua) | 1 |
-| Nullstrike Dragon Zerogias | `120180001` | [Rush/Scripts/c120180001.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120180001.lua) | 1 |
-| Celeb Rose Luxury Magicians | `120244042` | [Rush/Scripts/c120244042.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120244042.lua) | 1 |
-| Cross Lostream Melutine | `120309036` | [Rush/Scripts/c120309036.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120309036.lua) | 1 |
-| Blue-Fang Concurrent Burst Dragon | `120109046` | [Rush/Scripts/c120109046.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120109046.lua) | 1 |
-| Mega Multistrike Dragon Dragias Burst \[L\] | `120210001` | [Rush/Scripts/c120210001.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120210001.lua) | 1 |
-| Void Strike Dragon Zerogaigias | `120211001` | [Rush/Scripts/c120211001.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120211001.lua) | 1 |
-| Twin Edge Phantom Dragon | `120261030` | [Rush/Scripts/c120261030.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120261030.lua) | 1 |
-| Sevensgias the Magical Dragon Knight | `120208037` | [Rush/Scripts/c120208037.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120208037.lua) | 1 |
-| Grand Legendary Saber | `120271041` | [Rush/Scripts/c120271041.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120271041.lua) | 1 |
-| Solid Strike Dragon Metagiastar F | `120217004` | [Rush/Scripts/c120217004.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120217004.lua) | 1 |
-| Ever-Grace Princess Mari | `120287015` | [Rush/Scripts/c120287015.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120287015.lua) | 1 |
-| Steel Strike Dragon Metagias | `120183017` | [Rush/Scripts/c120183017.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120183017.lua) | 1 |
-| Hyperstrike Dragon Dragiastar F | `120196022` | [Rush/Scripts/c120196022.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120196022.lua) | 1 |
-| Elemental HERO Sky Neos | `120272066` | [Rush/Scripts/c120272066.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120272066.lua) | 1 |
-| Polygon Butterfly | `120249033` | [Rush/Scripts/c120249033.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120249033.lua) | 1 |
-| Transam Jelai | `120223011` | [Rush/Scripts/c120223011.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120223011.lua) | 1 |
-| Gilford the Rising | `120235028` | [Rush/Scripts/c120235028.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120235028.lua) | 1 |
+| Dark Matter Transcend Dragon | `120272044` | [Rush/Scripts/c120272044.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120272044.lua) | 1 |
+| Celeb Rose Influencers | `120257044` | [Rush/Scripts/c120257044.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120257044.lua) | 1 |
+| Illusion Strike Dragon Miragias | `120145025` | [Rush/Scripts/c120145025.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120145025.lua) | 1 |
+| Meet and Greed | `120208044` | [Rush/Scripts/c120208044.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120208044.lua) | 1 |
+| Mega Jointech Fortrex \[L\] | `120249003` | [Rush/Scripts/c120249003.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120249003.lua) | 1 |
+| Dual Space Yggdrago | `120260008` | [Rush/Scripts/c120260008.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120260008.lua) | 2 |
+| Sacrificial Summon | `120217094` | [Rush/Scripts/c120217094.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120217094.lua) | 1 |
+| Nullstrike Dragon Zerogias | `120180001` | [Rush/Scripts/c120180001.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120180001.lua) | 1 |
+| Celeb Rose Luxury Magicians | `120244042` | [Rush/Scripts/c120244042.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120244042.lua) | 1 |
+| Cross Lostream Melutine | `120309036` | [Rush/Scripts/c120309036.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120309036.lua) | 1 |
+| Blue-Fang Concurrent Burst Dragon | `120109046` | [Rush/Scripts/c120109046.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120109046.lua) | 1 |
+| Mega Multistrike Dragon Dragias Burst \[L\] | `120210001` | [Rush/Scripts/c120210001.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120210001.lua) | 1 |
+| Void Strike Dragon Zerogaigias | `120211001` | [Rush/Scripts/c120211001.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120211001.lua) | 1 |
+| Twin Edge Phantom Dragon | `120261030` | [Rush/Scripts/c120261030.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120261030.lua) | 1 |
+| Sevensgias the Magical Dragon Knight | `120208037` | [Rush/Scripts/c120208037.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120208037.lua) | 1 |
+| Grand Legendary Saber | `120271041` | [Rush/Scripts/c120271041.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120271041.lua) | 1 |
+| Solid Strike Dragon Metagiastar F | `120217004` | [Rush/Scripts/c120217004.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120217004.lua) | 1 |
+| Ever-Grace Princess Mari | `120287015` | [Rush/Scripts/c120287015.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120287015.lua) | 1 |
+| Steel Strike Dragon Metagias | `120183017` | [Rush/Scripts/c120183017.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120183017.lua) | 1 |
+| Hyperstrike Dragon Dragiastar F | `120196022` | [Rush/Scripts/c120196022.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120196022.lua) | 1 |
+| Elemental HERO Sky Neos | `120272066` | [Rush/Scripts/c120272066.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120272066.lua) | 1 |
+| Polygon Butterfly | `120249033` | [Rush/Scripts/c120249033.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120249033.lua) | 1 |
+| Transam Jelai | `120223011` | [Rush/Scripts/c120223011.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120223011.lua) | 1 |
+| Gilford the Rising | `120235028` | [Rush/Scripts/c120235028.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120235028.lua) | 1 |
 | ...and 6 more |  |  |  |
 
 ## Script Examples
 
 ### Dark Matter Transcend Dragon (`120272044`)
 
-Source: [Rush/Scripts/c120272044.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120272044.lua)
+Source: [Rush/Scripts/c120272044.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120272044.lua)
 
 ```lua
 	local c=e:GetHandler()
@@ -92,7 +92,7 @@ Source: [Rush/Scripts/c120272044.lua](https://github.com/ElderLich/MDPro3_Sacred
 
 ### Celeb Rose Influencers (`120257044`)
 
-Source: [Rush/Scripts/c120257044.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120257044.lua)
+Source: [Rush/Scripts/c120257044.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120257044.lua)
 
 ```lua
 			if c:GetEquipCount()~=0 then
@@ -104,7 +104,7 @@ Source: [Rush/Scripts/c120257044.lua](https://github.com/ElderLich/MDPro3_Sacred
 
 ### Illusion Strike Dragon Miragias (`120145025`)
 
-Source: [Rush/Scripts/c120145025.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120145025.lua)
+Source: [Rush/Scripts/c120145025.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120145025.lua)
 
 ```lua
 			e1:SetReset(RESET_EVENT+RESETS_STANDARD+RESET_PHASE+PHASE_END)

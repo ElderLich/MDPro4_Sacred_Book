@@ -55,29 +55,29 @@ Generated from the local `Rush/Scripts/` folder and `rush_cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| The Trinity Dragiastar | `120109031` | [Rush/Scripts/c120109031.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120109031.lua) | 1 |
-| The Dragiastar | `120235035` | [Rush/Scripts/c120235035.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120235035.lua) | 1 |
-| Gias x Gias | `120246032` | [Rush/Scripts/c120246032.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120246032.lua) | 1 |
-| Lightning Volteagle | `120246001` | [Rush/Scripts/c120246001.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120246001.lua) | 1 |
-| Purple-Eyes Star Cat | `120235014` | [Rush/Scripts/c120235014.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120235014.lua) | 1 |
-| Cross Lostream Melutine | `120309036` | [Rush/Scripts/c120309036.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120309036.lua) | 1 |
-| Madrhea Aquila | `120244030` | [Rush/Scripts/c120244030.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120244030.lua) | 1 |
-| Double Chill Dragons | `120235034` | [Rush/Scripts/c120235034.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120235034.lua) | 1 |
-| Steel Steed Martin Vainari | `120238016` | [Rush/Scripts/c120238016.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120238016.lua) | 1 |
-| Ghost Vicious | `120228033` | [Rush/Scripts/c120228033.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120228033.lua) | 1 |
-| Hyperstrike Dragon Dragiastar F | `120196022` | [Rush/Scripts/c120196022.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120196022.lua) | 1 |
-| Multistrike Dragon Dragias | `120110001` | [Rush/Scripts/c120110001.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120110001.lua) | 1 |
-| Vice Jacker | `120170025` | [Rush/Scripts/c120170025.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120170025.lua) | 1 |
-| Digracheon the Skysavior Radiaknight | `120301036` | [Rush/Scripts/c120301036.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120301036.lua) | 1 |
-| Abad the Negahell Emperor | `120290100` | [Rush/Scripts/c120290100.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120290100.lua) | 1 |
-| Hydra Viper | `120109047` | [Rush/Scripts/c120109047.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120109047.lua) | 1 |
-| Twin Edge Dragon | `120110006` | [Rush/Scripts/c120110006.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120110006.lua) | 1 |
+| The Trinity Dragiastar | `120109031` | [Rush/Scripts/c120109031.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120109031.lua) | 1 |
+| The Dragiastar | `120235035` | [Rush/Scripts/c120235035.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120235035.lua) | 1 |
+| Gias x Gias | `120246032` | [Rush/Scripts/c120246032.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120246032.lua) | 1 |
+| Lightning Volteagle | `120246001` | [Rush/Scripts/c120246001.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120246001.lua) | 1 |
+| Purple-Eyes Star Cat | `120235014` | [Rush/Scripts/c120235014.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120235014.lua) | 1 |
+| Cross Lostream Melutine | `120309036` | [Rush/Scripts/c120309036.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120309036.lua) | 1 |
+| Madrhea Aquila | `120244030` | [Rush/Scripts/c120244030.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120244030.lua) | 1 |
+| Double Chill Dragons | `120235034` | [Rush/Scripts/c120235034.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120235034.lua) | 1 |
+| Steel Steed Martin Vainari | `120238016` | [Rush/Scripts/c120238016.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120238016.lua) | 1 |
+| Ghost Vicious | `120228033` | [Rush/Scripts/c120228033.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120228033.lua) | 1 |
+| Hyperstrike Dragon Dragiastar F | `120196022` | [Rush/Scripts/c120196022.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120196022.lua) | 1 |
+| Multistrike Dragon Dragias | `120110001` | [Rush/Scripts/c120110001.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120110001.lua) | 1 |
+| Vice Jacker | `120170025` | [Rush/Scripts/c120170025.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120170025.lua) | 1 |
+| Digracheon the Skysavior Radiaknight | `120301036` | [Rush/Scripts/c120301036.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120301036.lua) | 1 |
+| Abad the Negahell Emperor | `120290100` | [Rush/Scripts/c120290100.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120290100.lua) | 1 |
+| Hydra Viper | `120109047` | [Rush/Scripts/c120109047.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120109047.lua) | 1 |
+| Twin Edge Dragon | `120110006` | [Rush/Scripts/c120110006.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120110006.lua) | 1 |
 
 ## Script Examples
 
 ### The Trinity Dragiastar (`120109031`)
 
-Source: [Rush/Scripts/c120109031.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120109031.lua)
+Source: [Rush/Scripts/c120109031.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120109031.lua)
 
 ```lua
 --Attack Thrice
@@ -89,7 +89,7 @@ end
 
 ### The Dragiastar (`120235035`)
 
-Source: [Rush/Scripts/c120235035.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120235035.lua)
+Source: [Rush/Scripts/c120235035.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120235035.lua)
 
 ```lua
 --Attack Twice
@@ -101,7 +101,7 @@ function cm.target1(e,tp,eg,ep,ev,re,r,rp,chk)
 
 ### Gias x Gias (`120246032`)
 
-Source: [Rush/Scripts/c120246032.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120246032.lua)
+Source: [Rush/Scripts/c120246032.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120246032.lua)
 
 ```lua
 end

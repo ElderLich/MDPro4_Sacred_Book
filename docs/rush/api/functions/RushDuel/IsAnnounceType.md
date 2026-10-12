@@ -46,16 +46,16 @@ Generated from the local `Rush/Scripts/` folder and `rush_cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Reporter Wars Scoopies \[L\] | `120304007` | [Rush/Scripts/c120304007.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120304007.lua) | 1 |
-| High-Speed Machine ENG | `120304012` | [Rush/Scripts/c120304012.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120304012.lua) | 1 |
-| Happy Journal | `120304048` | [Rush/Scripts/c120304048.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120304048.lua) | 1 |
-| Reporter Lilim | `120304011` | [Rush/Scripts/c120304011.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120304011.lua) | 1 |
+| Reporter Wars Scoopies \[L\] | `120304007` | [Rush/Scripts/c120304007.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120304007.lua) | 1 |
+| High-Speed Machine ENG | `120304012` | [Rush/Scripts/c120304012.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120304012.lua) | 1 |
+| Happy Journal | `120304048` | [Rush/Scripts/c120304048.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120304048.lua) | 1 |
+| Reporter Lilim | `120304011` | [Rush/Scripts/c120304011.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120304011.lua) | 1 |
 
 ## Script Examples
 
 ### Reporter Wars Scoopies [L] (`120304007`)
 
-Source: [Rush/Scripts/c120304007.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120304007.lua)
+Source: [Rush/Scripts/c120304007.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120304007.lua)
 
 ```lua
 	Duel.ConfirmDecktop(1-tp,1)
@@ -67,7 +67,7 @@ Source: [Rush/Scripts/c120304007.lua](https://github.com/ElderLich/MDPro3_Sacred
 
 ### High-Speed Machine ENG (`120304012`)
 
-Source: [Rush/Scripts/c120304012.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120304012.lua)
+Source: [Rush/Scripts/c120304012.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120304012.lua)
 
 ```lua
 	Duel.ConfirmDecktop(1-tp,1)
@@ -79,7 +79,7 @@ Source: [Rush/Scripts/c120304012.lua](https://github.com/ElderLich/MDPro3_Sacred
 
 ### Happy Journal (`120304048`)
 
-Source: [Rush/Scripts/c120304048.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120304048.lua)
+Source: [Rush/Scripts/c120304048.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120304048.lua)
 
 ```lua
 	if Duel.GetFieldGroupCount(tp,0,LOCATION_DECK)<2 then return end

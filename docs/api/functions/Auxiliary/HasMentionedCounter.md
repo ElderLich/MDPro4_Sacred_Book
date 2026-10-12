@@ -32,13 +32,13 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Spell Power Attainment | `39123673` | [Scripts/c39123673.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c39123673.lua) | 2 |
+| Spell Power Attainment | `39123673` | [Scripts/c39123673.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c39123673.lua) | 2 |
 
 ## Script Examples
 
 ### Spell Power Attainment (`39123673`)
 
-Source: [Scripts/c39123673.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c39123673.lua)
+Source: [Scripts/c39123673.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c39123673.lua)
 
 ```lua
 	[0x1]=true,

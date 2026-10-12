@@ -46,13 +46,13 @@ Generated from the local `Rush/Scripts/` folder and `rush_cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Stardom Light | `120184003` | [Rush/Scripts/c120184003.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120184003.lua) | 1 |
+| Stardom Light | `120184003` | [Rush/Scripts/c120184003.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120184003.lua) | 1 |
 
 ## Script Examples
 
 ### Stardom Light (`120184003`)
 
-Source: [Rush/Scripts/c120184003.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120184003.lua)
+Source: [Rush/Scripts/c120184003.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120184003.lua)
 
 ```lua
 cm.cost=RD.CostSendMZoneToGrave(cm.costfilter,1,1,false,nil,nil,function(g)

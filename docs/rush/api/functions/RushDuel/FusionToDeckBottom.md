@@ -50,16 +50,16 @@ Generated from the local `Rush/Scripts/` folder and `rush_cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Slay the Star Protector's Gunslinger | `120306010` | [Rush/Scripts/c120306010.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120306010.lua) | 1 |
-| Y-Trial Dragon | `120305009` | [Rush/Scripts/c120305009.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120305009.lua) | 1 |
-| Z-Trial Tank | `120305010` | [Rush/Scripts/c120305010.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120305010.lua) | 1 |
-| Miracle Fusion | `120263031` | [Rush/Scripts/c120263031.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120263031.lua) | 1 |
+| Slay the Star Protector's Gunslinger | `120306010` | [Rush/Scripts/c120306010.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120306010.lua) | 1 |
+| Y-Trial Dragon | `120305009` | [Rush/Scripts/c120305009.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120305009.lua) | 1 |
+| Z-Trial Tank | `120305010` | [Rush/Scripts/c120305010.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120305010.lua) | 1 |
+| Miracle Fusion | `120263031` | [Rush/Scripts/c120263031.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120263031.lua) | 1 |
 
 ## Script Examples
 
 ### Slay the Star Protector's Gunslinger (`120306010`)
 
-Source: [Rush/Scripts/c120306010.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120306010.lua)
+Source: [Rush/Scripts/c120306010.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120306010.lua)
 
 ```lua
 	if RD.SendDeckTopToGraveAndExists(tp,1,cm.filter,1,nil)
@@ -71,7 +71,7 @@ end
 
 ### Y-Trial Dragon (`120305009`)
 
-Source: [Rush/Scripts/c120305009.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120305009.lua)
+Source: [Rush/Scripts/c120305009.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120305009.lua)
 
 ```lua
 	if c:IsFaceup() and c:IsRelateToEffect(e) then
@@ -83,7 +83,7 @@ end
 
 ### Z-Trial Tank (`120305010`)
 
-Source: [Rush/Scripts/c120305010.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120305010.lua)
+Source: [Rush/Scripts/c120305010.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120305010.lua)
 
 ```lua
 	if c:IsFaceup() and c:IsRelateToEffect(e) then

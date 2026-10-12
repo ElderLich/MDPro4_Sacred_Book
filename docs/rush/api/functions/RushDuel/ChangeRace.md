@@ -49,37 +49,37 @@ Generated from the local `Rush/Scripts/` folder and `rush_cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| OuTerverSe Direct Driver | `120109056` | [Rush/Scripts/c120109056.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120109056.lua) | 1 |
-| OuTerverSe Burst Oblivion | `120290008` | [Rush/Scripts/c120290008.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120290008.lua) | 1 |
-| OuTerverSe Wish of Angeleva | `120293061` | [Rush/Scripts/c120293061.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120293061.lua) | 1 |
-| OuTerverSe Wish of Devilgear | `120293062` | [Rush/Scripts/c120293062.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120293062.lua) | 1 |
-| OuTerverSe Byugyuwazzo | `120290006` | [Rush/Scripts/c120290006.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120290006.lua) | 1 |
-| OuTerverSe Toxic Blob | `120290028` | [Rush/Scripts/c120290028.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120290028.lua) | 1 |
-| Delirium Shewel | `120274058` | [Rush/Scripts/c120274058.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120274058.lua) | 1 |
-| OuTerverSe Bug Fungus | `120290002` | [Rush/Scripts/c120290002.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120290002.lua) | 1 |
-| Wish of OuTerverSe the World-Shattering Emperor \[L\] | `120293058` | [Rush/Scripts/c120293058.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120293058.lua) | 1 |
-| OuTerverSe Mother Fungus | `120293063` | [Rush/Scripts/c120293063.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120293063.lua) | 1 |
-| OuTerverSe Sylphy Seyfert | `120290007` | [Rush/Scripts/c120290007.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120290007.lua) | 1 |
-| Delirium Drone | `120274059` | [Rush/Scripts/c120274059.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120274059.lua) | 1 |
-| OuTerverSe Rainpale | `120290004` | [Rush/Scripts/c120290004.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120290004.lua) | 1 |
-| Delirium Polynea | `120277033` | [Rush/Scripts/c120277033.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120277033.lua) | 1 |
-| Delirium Mariquita | `120274057` | [Rush/Scripts/c120274057.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120274057.lua) | 1 |
-| OuTerverSe Anubistar | `120290003` | [Rush/Scripts/c120290003.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120290003.lua) | 1 |
-| OuTerverSe Acid Blob | `120290001` | [Rush/Scripts/c120290001.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120290001.lua) | 1 |
-| Evil Bowler | `120271027` | [Rush/Scripts/c120271027.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120271027.lua) | 2 |
-| OuTerverSe Needle Maker | `120290005` | [Rush/Scripts/c120290005.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120290005.lua) | 1 |
-| OuTerverSe Endless Doom Oblivion | `120290029` | [Rush/Scripts/c120290029.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120290029.lua) | 1 |
-| Accel Wonder Flare | `120186010` | [Rush/Scripts/c120186010.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120186010.lua) | 1 |
-| Bio Mechmantis | `120208030` | [Rush/Scripts/c120208030.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120208030.lua) | 1 |
-| Delirium Teega | `120300025` | [Rush/Scripts/c120300025.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120300025.lua) | 1 |
-| Delirium Papillon | `120222035` | [Rush/Scripts/c120222035.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120222035.lua) | 1 |
+| OuTerverSe Direct Driver | `120109056` | [Rush/Scripts/c120109056.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120109056.lua) | 1 |
+| OuTerverSe Burst Oblivion | `120290008` | [Rush/Scripts/c120290008.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120290008.lua) | 1 |
+| OuTerverSe Wish of Angeleva | `120293061` | [Rush/Scripts/c120293061.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120293061.lua) | 1 |
+| OuTerverSe Wish of Devilgear | `120293062` | [Rush/Scripts/c120293062.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120293062.lua) | 1 |
+| OuTerverSe Byugyuwazzo | `120290006` | [Rush/Scripts/c120290006.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120290006.lua) | 1 |
+| OuTerverSe Toxic Blob | `120290028` | [Rush/Scripts/c120290028.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120290028.lua) | 1 |
+| Delirium Shewel | `120274058` | [Rush/Scripts/c120274058.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120274058.lua) | 1 |
+| OuTerverSe Bug Fungus | `120290002` | [Rush/Scripts/c120290002.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120290002.lua) | 1 |
+| Wish of OuTerverSe the World-Shattering Emperor \[L\] | `120293058` | [Rush/Scripts/c120293058.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120293058.lua) | 1 |
+| OuTerverSe Mother Fungus | `120293063` | [Rush/Scripts/c120293063.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120293063.lua) | 1 |
+| OuTerverSe Sylphy Seyfert | `120290007` | [Rush/Scripts/c120290007.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120290007.lua) | 1 |
+| Delirium Drone | `120274059` | [Rush/Scripts/c120274059.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120274059.lua) | 1 |
+| OuTerverSe Rainpale | `120290004` | [Rush/Scripts/c120290004.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120290004.lua) | 1 |
+| Delirium Polynea | `120277033` | [Rush/Scripts/c120277033.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120277033.lua) | 1 |
+| Delirium Mariquita | `120274057` | [Rush/Scripts/c120274057.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120274057.lua) | 1 |
+| OuTerverSe Anubistar | `120290003` | [Rush/Scripts/c120290003.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120290003.lua) | 1 |
+| OuTerverSe Acid Blob | `120290001` | [Rush/Scripts/c120290001.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120290001.lua) | 1 |
+| Evil Bowler | `120271027` | [Rush/Scripts/c120271027.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120271027.lua) | 2 |
+| OuTerverSe Needle Maker | `120290005` | [Rush/Scripts/c120290005.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120290005.lua) | 1 |
+| OuTerverSe Endless Doom Oblivion | `120290029` | [Rush/Scripts/c120290029.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120290029.lua) | 1 |
+| Accel Wonder Flare | `120186010` | [Rush/Scripts/c120186010.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120186010.lua) | 1 |
+| Bio Mechmantis | `120208030` | [Rush/Scripts/c120208030.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120208030.lua) | 1 |
+| Delirium Teega | `120300025` | [Rush/Scripts/c120300025.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120300025.lua) | 1 |
+| Delirium Papillon | `120222035` | [Rush/Scripts/c120222035.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120222035.lua) | 1 |
 | ...and 2 more |  |  |  |
 
 ## Script Examples
 
 ### OuTerverSe Direct Driver (`120109056`)
 
-Source: [Rush/Scripts/c120109056.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120109056.lua)
+Source: [Rush/Scripts/c120109056.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120109056.lua)
 
 ```lua
 	local c=e:GetHandler()
@@ -91,7 +91,7 @@ Source: [Rush/Scripts/c120109056.lua](https://github.com/ElderLich/MDPro3_Sacred
 
 ### OuTerverSe Burst Oblivion (`120290008`)
 
-Source: [Rush/Scripts/c120290008.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120290008.lua)
+Source: [Rush/Scripts/c120290008.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120290008.lua)
 
 ```lua
 	local c=e:GetHandler()
@@ -103,7 +103,7 @@ Source: [Rush/Scripts/c120290008.lua](https://github.com/ElderLich/MDPro3_Sacred
 
 ### OuTerverSe Wish of Angeleva (`120293061`)
 
-Source: [Rush/Scripts/c120293061.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120293061.lua)
+Source: [Rush/Scripts/c120293061.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120293061.lua)
 
 ```lua
 			and Duel.SelectEffectYesNo(tp,c,aux.Stringid(m,1)) then

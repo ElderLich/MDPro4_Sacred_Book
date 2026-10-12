@@ -32,14 +32,14 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Miracle Synchro Fusion | `36484016` | [Scripts/c36484016.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c36484016.lua) | 1 |
-| Scrap-Iron Signal | `50947142` | [Scripts/c50947142.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c50947142.lua) | 1 |
+| Miracle Synchro Fusion | `36484016` | [Scripts/c36484016.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c36484016.lua) | 1 |
+| Scrap-Iron Signal | `50947142` | [Scripts/c50947142.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c50947142.lua) | 1 |
 
 ## Script Examples
 
 ### Miracle Synchro Fusion (`36484016`)
 
-Source: [Scripts/c36484016.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c36484016.lua)
+Source: [Scripts/c36484016.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c36484016.lua)
 
 ```lua
 end
@@ -51,7 +51,7 @@ function c36484016.filter2(c,e,tp,m,f,chkf)
 
 ### Scrap-Iron Signal (`50947142`)
 
-Source: [Scripts/c50947142.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c50947142.lua)
+Source: [Scripts/c50947142.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c50947142.lua)
 
 ```lua
 end

@@ -45,18 +45,18 @@ Generated from the local `Rush/Scripts/` folder and `rush_cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Lightning Braver | `120213018` | [Rush/Scripts/c120213018.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120213018.lua) | 1 |
-| Painful Choice | `120109062` | [Rush/Scripts/c120109062.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120109062.lua) | 1 |
-| Sword &amp; Shield | `120155052` | [Rush/Scripts/c120155052.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120155052.lua) | 4 |
-| Smashing Ground | `120203017` | [Rush/Scripts/c120203017.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120203017.lua) | 1 |
-| Fire Golem | `120120019` | [Rush/Scripts/c120120019.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120120019.lua) | 1 |
-| Shield &amp; Sword | `120140009` | [Rush/Scripts/c120140009.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120140009.lua) | 1 |
+| Lightning Braver | `120213018` | [Rush/Scripts/c120213018.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120213018.lua) | 1 |
+| Painful Choice | `120109062` | [Rush/Scripts/c120109062.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120109062.lua) | 1 |
+| Sword &amp; Shield | `120155052` | [Rush/Scripts/c120155052.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120155052.lua) | 4 |
+| Smashing Ground | `120203017` | [Rush/Scripts/c120203017.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120203017.lua) | 1 |
+| Fire Golem | `120120019` | [Rush/Scripts/c120120019.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120120019.lua) | 1 |
+| Shield &amp; Sword | `120140009` | [Rush/Scripts/c120140009.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120140009.lua) | 1 |
 
 ## Script Examples
 
 ### Lightning Braver (`120213018`)
 
-Source: [Rush/Scripts/c120213018.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120213018.lua)
+Source: [Rush/Scripts/c120213018.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120213018.lua)
 
 ```lua
 end
@@ -68,7 +68,7 @@ cm.cost=RD.CostSendGraveToDeck(cm.costfilter,3,3)
 
 ### Painful Choice (`120109062`)
 
-Source: [Rush/Scripts/c120109062.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120109062.lua)
+Source: [Rush/Scripts/c120109062.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120109062.lua)
 
 ```lua
 --Activate
@@ -80,7 +80,7 @@ function cm.target(e,tp,eg,ep,ev,re,r,rp,chk)
 
 ### Sword & Shield (`120155052`)
 
-Source: [Rush/Scripts/c120155052.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120155052.lua)
+Source: [Rush/Scripts/c120155052.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120155052.lua)
 
 ```lua
 	local tc=Duel.GetAttacker()

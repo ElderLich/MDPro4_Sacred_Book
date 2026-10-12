@@ -32,16 +32,16 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Apple Magician Girl | `56132807` | [Scripts/c56132807.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c56132807.lua) | 1 |
-| Chocolate Magician Girl | `7198399` | [Scripts/c7198399.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c7198399.lua) | 1 |
-| Mutant Mindmaster | `11508758` | [Scripts/c11508758.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c11508758.lua) | 1 |
-| Ultimate Tyranno | `15894048` | [Scripts/c15894048.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c15894048.lua) | 1 |
+| Apple Magician Girl | `56132807` | [Scripts/c56132807.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c56132807.lua) | 1 |
+| Chocolate Magician Girl | `7198399` | [Scripts/c7198399.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c7198399.lua) | 1 |
+| Mutant Mindmaster | `11508758` | [Scripts/c11508758.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c11508758.lua) | 1 |
+| Ultimate Tyranno | `15894048` | [Scripts/c15894048.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c15894048.lua) | 1 |
 
 ## Script Examples
 
 ### Apple Magician Girl (`56132807`)
 
-Source: [Scripts/c56132807.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c56132807.lua)
+Source: [Scripts/c56132807.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c56132807.lua)
 
 ```lua
 	if tc and Duel.SpecialSummon(tc,0,tp,tp,false,false,POS_FACEUP)~=0 then
@@ -53,7 +53,7 @@ Source: [Scripts/c56132807.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/
 
 ### Chocolate Magician Girl (`7198399`)
 
-Source: [Scripts/c7198399.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c7198399.lua)
+Source: [Scripts/c7198399.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c7198399.lua)
 
 ```lua
 	if tc:IsRelateToEffect(e) and Duel.SpecialSummon(tc,0,tp,tp,false,false,POS_FACEUP)>0 then
@@ -65,7 +65,7 @@ Source: [Scripts/c7198399.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/b
 
 ### Mutant Mindmaster (`11508758`)
 
-Source: [Scripts/c11508758.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c11508758.lua)
+Source: [Scripts/c11508758.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c11508758.lua)
 
 ```lua
 			tc:RegisterEffect(e1)

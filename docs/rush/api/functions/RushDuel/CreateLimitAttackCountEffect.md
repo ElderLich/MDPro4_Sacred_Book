@@ -75,16 +75,16 @@ Generated from the local `Rush/Scripts/` folder and `rush_cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Qadi of the Monumenthes | `120300009` | [Rush/Scripts/c120300009.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120300009.lua) | 1 |
-| OuTerverSe Direct Driver | `120109056` | [Rush/Scripts/c120109056.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120109056.lua) | 1 |
-| Harpie Lady 3 &amp; 1 | `120285044` | [Rush/Scripts/c120285044.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120285044.lua) | 1 |
-| SW - Asura Bat | `120305032` | [Rush/Scripts/c120305032.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120305032.lua) | 1 |
+| Qadi of the Monumenthes | `120300009` | [Rush/Scripts/c120300009.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120300009.lua) | 1 |
+| OuTerverSe Direct Driver | `120109056` | [Rush/Scripts/c120109056.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120109056.lua) | 1 |
+| Harpie Lady 3 &amp; 1 | `120285044` | [Rush/Scripts/c120285044.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120285044.lua) | 1 |
+| SW - Asura Bat | `120305032` | [Rush/Scripts/c120305032.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120305032.lua) | 1 |
 
 ## Script Examples
 
 ### Qadi of the Monumenthes (`120300009`)
 
-Source: [Rush/Scripts/c120300009.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120300009.lua)
+Source: [Rush/Scripts/c120300009.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120300009.lua)
 
 ```lua
 end
@@ -96,7 +96,7 @@ function cm.operation(e,tp,eg,ep,ev,re,r,rp)
 
 ### OuTerverSe Direct Driver (`120109056`)
 
-Source: [Rush/Scripts/c120109056.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120109056.lua)
+Source: [Rush/Scripts/c120109056.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120109056.lua)
 
 ```lua
 					RD.AttachDirectAttack(e,tc,aux.Stringid(m,3),RESET_EVENT+RESETS_STANDARD+RESET_PHASE+PHASE_END)
@@ -108,7 +108,7 @@ Source: [Rush/Scripts/c120109056.lua](https://github.com/ElderLich/MDPro3_Sacred
 
 ### Harpie Lady 3 & 1 (`120285044`)
 
-Source: [Rush/Scripts/c120285044.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120285044.lua)
+Source: [Rush/Scripts/c120285044.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120285044.lua)
 
 ```lua
 	end

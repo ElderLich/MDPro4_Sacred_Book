@@ -34,19 +34,19 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Reeshaddoll Wendikuruhu | `8852158` | [Scripts/c8852158.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c8852158.lua) | 1 |
-| El Shaddoll Shekhinaga | `74822425` | [Scripts/c74822425.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c74822425.lua) | 1 |
-| El Shaddoll Construct | `20366274` | [Scripts/c20366274.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c20366274.lua) | 1 |
-| El Shaddoll Grysta | `48424886` | [Scripts/c48424886.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c48424886.lua) | 1 |
-| El Shaddoll Wendigo | `74009824` | [Scripts/c74009824.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c74009824.lua) | 1 |
-| El Shaddoll Winda | `94977269` | [Scripts/c94977269.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c94977269.lua) | 1 |
-| El Shaddoll Anoyatyllis | `19261966` | [Scripts/c19261966.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c19261966.lua) | 1 |
+| Reeshaddoll Wendikuruhu | `8852158` | [Scripts/c8852158.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c8852158.lua) | 1 |
+| El Shaddoll Shekhinaga | `74822425` | [Scripts/c74822425.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c74822425.lua) | 1 |
+| El Shaddoll Construct | `20366274` | [Scripts/c20366274.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c20366274.lua) | 1 |
+| El Shaddoll Grysta | `48424886` | [Scripts/c48424886.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c48424886.lua) | 1 |
+| El Shaddoll Wendigo | `74009824` | [Scripts/c74009824.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c74009824.lua) | 1 |
+| El Shaddoll Winda | `94977269` | [Scripts/c94977269.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c94977269.lua) | 1 |
+| El Shaddoll Anoyatyllis | `19261966` | [Scripts/c19261966.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c19261966.lua) | 1 |
 
 ## Script Examples
 
 ### Reeshaddoll Wendikuruhu (`8852158`)
 
-Source: [Scripts/c8852158.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c8852158.lua)
+Source: [Scripts/c8852158.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c8852158.lua)
 
 ```lua
 	c:EnableReviveLimit()
@@ -58,7 +58,7 @@ Source: [Scripts/c8852158.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/b
 
 ### El Shaddoll Shekhinaga (`74822425`)
 
-Source: [Scripts/c74822425.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c74822425.lua)
+Source: [Scripts/c74822425.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c74822425.lua)
 
 ```lua
 	--fusion material
@@ -70,7 +70,7 @@ Source: [Scripts/c74822425.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/
 
 ### El Shaddoll Construct (`20366274`)
 
-Source: [Scripts/c20366274.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c20366274.lua)
+Source: [Scripts/c20366274.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c20366274.lua)
 
 ```lua
 	--fusion material

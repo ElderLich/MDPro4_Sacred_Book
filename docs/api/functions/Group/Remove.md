@@ -30,20 +30,20 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Cubic Rebirth | `71442223` | [Scripts/c71442223.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c71442223.lua) | 1 |
-| Forbidden Arts of the Gishki | `28429121` | [Scripts/c28429121.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c28429121.lua) | 2 |
-| Set Rotation | `73468603` | [Scripts/c73468603.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c73468603.lua) | 1 |
-| Gozen Match | `53334471` | [Scripts/c53334471.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c53334471.lua) | 2 |
-| Rivalry of Warlords | `90846359` | [Scripts/c90846359.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c90846359.lua) | 2 |
-| Treaty on Uniform Nomenclature | `13685271` | [Scripts/c13685271.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c13685271.lua) | 1 |
-| Battle of the Elements | `60530944` | [Scripts/c60530944.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c60530944.lua) | 2 |
-| Destructive Daruma Karma Cannon | `30748475` | [Scripts/c30748475.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c30748475.lua) | 1 |
+| Cubic Rebirth | `71442223` | [Scripts/c71442223.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c71442223.lua) | 1 |
+| Forbidden Arts of the Gishki | `28429121` | [Scripts/c28429121.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c28429121.lua) | 2 |
+| Set Rotation | `73468603` | [Scripts/c73468603.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c73468603.lua) | 1 |
+| Gozen Match | `53334471` | [Scripts/c53334471.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c53334471.lua) | 2 |
+| Rivalry of Warlords | `90846359` | [Scripts/c90846359.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c90846359.lua) | 2 |
+| Treaty on Uniform Nomenclature | `13685271` | [Scripts/c13685271.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c13685271.lua) | 1 |
+| Battle of the Elements | `60530944` | [Scripts/c60530944.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c60530944.lua) | 2 |
+| Destructive Daruma Karma Cannon | `30748475` | [Scripts/c30748475.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c30748475.lua) | 1 |
 
 ## Script Examples
 
 ### Cubic Rebirth (`71442223`)
 
-Source: [Scripts/c71442223.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c71442223.lua)
+Source: [Scripts/c71442223.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c71442223.lua)
 
 ```lua
 				Duel.Hint(HINT_SELECTMSG,1-tp,HINTMSG_SPSUMMON)
@@ -55,7 +55,7 @@ Source: [Scripts/c71442223.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/
 
 ### Forbidden Arts of the Gishki (`28429121`)
 
-Source: [Scripts/c28429121.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c28429121.lua)
+Source: [Scripts/c28429121.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c28429121.lua)
 
 ```lua
 	if chk==0 then
@@ -67,7 +67,7 @@ Source: [Scripts/c28429121.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/
 
 ### Set Rotation (`73468603`)
 
-Source: [Scripts/c73468603.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c73468603.lua)
+Source: [Scripts/c73468603.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c73468603.lua)
 
 ```lua
 	Duel.Hint(HINT_SELECTMSG,tp,aux.Stringid(73468603,0))

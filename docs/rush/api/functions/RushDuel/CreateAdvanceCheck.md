@@ -71,23 +71,23 @@ Generated from the local `Rush/Scripts/` folder and `rush_cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Royal Rebel's Heavy Metal | `120130031` | [Rush/Scripts/c120130031.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120130031.lua) | 1 |
-| Royal Rebel's Extreme | `120306006` | [Rush/Scripts/c120306006.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120306006.lua) | 1 |
-| Super Galaxy King Lord of Galactica | `120254038` | [Rush/Scripts/c120254038.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120254038.lua) | 1 |
-| Royal Rebel's Doom Metal | `120170024` | [Rush/Scripts/c120170024.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120170024.lua) | 1 |
-| Jointech Hero | `120249008` | [Rush/Scripts/c120249008.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120249008.lua) | 1 |
-| Secret Guardian Miscalculate | `120257023` | [Rush/Scripts/c120257023.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120257023.lua) | 1 |
-| Royal Rebel's Progrock | `120254017` | [Rush/Scripts/c120254017.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120254017.lua) | 1 |
-| Contact Dark Matter Wyvern | `120264003` | [Rush/Scripts/c120264003.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120264003.lua) | 1 |
-| Royal Rebel's Hard Rock | `120203012` | [Rush/Scripts/c120203012.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120203012.lua) | 1 |
-| Royal Rebel's Growl | `120140016` | [Rush/Scripts/c120140016.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120140016.lua) | 1 |
-| Royal Rebel's Invasion | `120140015` | [Rush/Scripts/c120140015.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120140015.lua) | 1 |
+| Royal Rebel's Heavy Metal | `120130031` | [Rush/Scripts/c120130031.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120130031.lua) | 1 |
+| Royal Rebel's Extreme | `120306006` | [Rush/Scripts/c120306006.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120306006.lua) | 1 |
+| Super Galaxy King Lord of Galactica | `120254038` | [Rush/Scripts/c120254038.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120254038.lua) | 1 |
+| Royal Rebel's Doom Metal | `120170024` | [Rush/Scripts/c120170024.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120170024.lua) | 1 |
+| Jointech Hero | `120249008` | [Rush/Scripts/c120249008.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120249008.lua) | 1 |
+| Secret Guardian Miscalculate | `120257023` | [Rush/Scripts/c120257023.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120257023.lua) | 1 |
+| Royal Rebel's Progrock | `120254017` | [Rush/Scripts/c120254017.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120254017.lua) | 1 |
+| Contact Dark Matter Wyvern | `120264003` | [Rush/Scripts/c120264003.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120264003.lua) | 1 |
+| Royal Rebel's Hard Rock | `120203012` | [Rush/Scripts/c120203012.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120203012.lua) | 1 |
+| Royal Rebel's Growl | `120140016` | [Rush/Scripts/c120140016.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120140016.lua) | 1 |
+| Royal Rebel's Invasion | `120140015` | [Rush/Scripts/c120140015.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120140015.lua) | 1 |
 
 ## Script Examples
 
 ### Royal Rebel's Heavy Metal (`120130031`)
 
-Source: [Rush/Scripts/c120130031.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120130031.lua)
+Source: [Rush/Scripts/c120130031.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120130031.lua)
 
 ```lua
 function cm.initial_effect(c)
@@ -99,7 +99,7 @@ function cm.initial_effect(c)
 
 ### Royal Rebel's Extreme (`120306006`)
 
-Source: [Rush/Scripts/c120306006.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120306006.lua)
+Source: [Rush/Scripts/c120306006.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120306006.lua)
 
 ```lua
 function cm.initial_effect(c)
@@ -111,7 +111,7 @@ function cm.initial_effect(c)
 
 ### Super Galaxy King Lord of Galactica (`120254038`)
 
-Source: [Rush/Scripts/c120254038.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120254038.lua)
+Source: [Rush/Scripts/c120254038.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120254038.lua)
 
 ```lua
 	RD.AddMaximumProcedure(c,4000,list[1],list[2])

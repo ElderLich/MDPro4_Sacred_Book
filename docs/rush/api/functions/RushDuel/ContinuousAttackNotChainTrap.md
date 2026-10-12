@@ -51,20 +51,20 @@ Generated from the local `Rush/Scripts/` folder and `rush_cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Ancient Gear Megaton Golem | `120283030` | [Rush/Scripts/c120283030.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120283030.lua) | 1 |
-| Ancient Gear Powered Soldier | `120271006` | [Rush/Scripts/c120271006.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120271006.lua) | 1 |
-| Abyssal Dragon Lord Abyss Poseidra | `120239014` | [Rush/Scripts/c120239014.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120239014.lua) | 1 |
-| Ancient Gear Gadjiltron Baena | `120272019` | [Rush/Scripts/c120272019.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120272019.lua) | 1 |
-| Ancient Gear Tyranno | `120271005` | [Rush/Scripts/c120271005.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120271005.lua) | 1 |
-| Ancient Gear Golem | `120271004` | [Rush/Scripts/c120271004.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120271004.lua) | 1 |
-| Ancient Gear Beast | `120271007` | [Rush/Scripts/c120271007.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120271007.lua) | 1 |
-| Ancient Gear Soldier | `120271008` | [Rush/Scripts/c120271008.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120271008.lua) | 1 |
+| Ancient Gear Megaton Golem | `120283030` | [Rush/Scripts/c120283030.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120283030.lua) | 1 |
+| Ancient Gear Powered Soldier | `120271006` | [Rush/Scripts/c120271006.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120271006.lua) | 1 |
+| Abyssal Dragon Lord Abyss Poseidra | `120239014` | [Rush/Scripts/c120239014.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120239014.lua) | 1 |
+| Ancient Gear Gadjiltron Baena | `120272019` | [Rush/Scripts/c120272019.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120272019.lua) | 1 |
+| Ancient Gear Tyranno | `120271005` | [Rush/Scripts/c120271005.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120271005.lua) | 1 |
+| Ancient Gear Golem | `120271004` | [Rush/Scripts/c120271004.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120271004.lua) | 1 |
+| Ancient Gear Beast | `120271007` | [Rush/Scripts/c120271007.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120271007.lua) | 1 |
+| Ancient Gear Soldier | `120271008` | [Rush/Scripts/c120271008.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120271008.lua) | 1 |
 
 ## Script Examples
 
 ### Ancient Gear Megaton Golem (`120283030`)
 
-Source: [Rush/Scripts/c120283030.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120283030.lua)
+Source: [Rush/Scripts/c120283030.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120283030.lua)
 
 ```lua
 	RD.CreateFusionSummonFlag(c,20283030)
@@ -76,7 +76,7 @@ Source: [Rush/Scripts/c120283030.lua](https://github.com/ElderLich/MDPro3_Sacred
 
 ### Ancient Gear Powered Soldier (`120271006`)
 
-Source: [Rush/Scripts/c120271006.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120271006.lua)
+Source: [Rush/Scripts/c120271006.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120271006.lua)
 
 ```lua
 	c:RegisterEffect(e1)
@@ -88,7 +88,7 @@ Source: [Rush/Scripts/c120271006.lua](https://github.com/ElderLich/MDPro3_Sacred
 
 ### Abyssal Dragon Lord Abyss Poseidra (`120239014`)
 
-Source: [Rush/Scripts/c120239014.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120239014.lua)
+Source: [Rush/Scripts/c120239014.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120239014.lua)
 
 ```lua
 	RD.AddMaximumProcedure(c,4000,list[1],list[2])

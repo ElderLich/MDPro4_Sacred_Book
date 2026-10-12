@@ -62,17 +62,17 @@ Generated from the local `Rush/Scripts/` folder and `rush_cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| [The Eye of Timaeus](/examples/rush-cards/120285065) | `120285065` | [Rush/Scripts/c120285065.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120285065.lua) | 1 |
-| Evil Bowler | `120271027` | [Rush/Scripts/c120271027.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120271027.lua) | 1 |
-| Mässig Anglurr | `120304037` | [Rush/Scripts/c120304037.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120304037.lua) | 1 |
-| Voidvelg Stork | `120300001` | [Rush/Scripts/c120300001.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120300001.lua) | 1 |
-| Speed Trooper | `120301061` | [Rush/Scripts/c120301061.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120301061.lua) | 1 |
+| [The Eye of Timaeus](/examples/rush-cards/120285065) | `120285065` | [Rush/Scripts/c120285065.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120285065.lua) | 1 |
+| Evil Bowler | `120271027` | [Rush/Scripts/c120271027.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120271027.lua) | 1 |
+| Mässig Anglurr | `120304037` | [Rush/Scripts/c120304037.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120304037.lua) | 1 |
+| Voidvelg Stork | `120300001` | [Rush/Scripts/c120300001.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120300001.lua) | 1 |
+| Speed Trooper | `120301061` | [Rush/Scripts/c120301061.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120301061.lua) | 1 |
 
 ## Script Examples
 
 ### The Eye of Timaeus (`120285065`)
 
-Source: [Rush/Scripts/c120285065.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120285065.lua)
+Source: [Rush/Scripts/c120285065.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120285065.lua)
 
 ```lua
 	local mat2=mat:Filter(Card.IsCode,nil,list[3])
@@ -84,7 +84,7 @@ Source: [Rush/Scripts/c120285065.lua](https://github.com/ElderLich/MDPro3_Sacred
 
 ### Evil Bowler (`120271027`)
 
-Source: [Rush/Scripts/c120271027.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120271027.lua)
+Source: [Rush/Scripts/c120271027.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120271027.lua)
 
 ```lua
 		local b1=RD.IsCanChangeRace(tc,RACE_FIEND)
@@ -96,7 +96,7 @@ Source: [Rush/Scripts/c120271027.lua](https://github.com/ElderLich/MDPro3_Sacred
 
 ### Mässig Anglurr (`120304037`)
 
-Source: [Rush/Scripts/c120304037.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120304037.lua)
+Source: [Rush/Scripts/c120304037.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120304037.lua)
 
 ```lua
 end

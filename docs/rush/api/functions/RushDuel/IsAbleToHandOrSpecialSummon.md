@@ -48,18 +48,18 @@ Generated from the local `Rush/Scripts/` folder and `rush_cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Bone Spine Whip | `120277064` | [Rush/Scripts/c120277064.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120277064.lua) | 1 |
-| Hydro Blaster Mini Bluefin | `120253017` | [Rush/Scripts/c120253017.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120253017.lua) | 1 |
-| Geefor the Defiant Soul | `120298006` | [Rush/Scripts/c120298006.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120298006.lua) | 1 |
-| Hack for the Intel | `120290059` | [Rush/Scripts/c120290059.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120290059.lua) | 1 |
-| Blaze Fiend Overlord Luciless | `120254036` | [Rush/Scripts/c120254036.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120254036.lua) | 1 |
-| Wooly Wonderland Fluffy | `120293018` | [Rush/Scripts/c120293018.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120293018.lua) | 1 |
+| Bone Spine Whip | `120277064` | [Rush/Scripts/c120277064.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120277064.lua) | 1 |
+| Hydro Blaster Mini Bluefin | `120253017` | [Rush/Scripts/c120253017.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120253017.lua) | 1 |
+| Geefor the Defiant Soul | `120298006` | [Rush/Scripts/c120298006.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120298006.lua) | 1 |
+| Hack for the Intel | `120290059` | [Rush/Scripts/c120290059.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120290059.lua) | 1 |
+| Blaze Fiend Overlord Luciless | `120254036` | [Rush/Scripts/c120254036.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120254036.lua) | 1 |
+| Wooly Wonderland Fluffy | `120293018` | [Rush/Scripts/c120293018.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120293018.lua) | 1 |
 
 ## Script Examples
 
 ### Bone Spine Whip (`120277064`)
 
-Source: [Rush/Scripts/c120277064.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120277064.lua)
+Source: [Rush/Scripts/c120277064.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120277064.lua)
 
 ```lua
 function cm.filter(c,e,tp)
@@ -71,7 +71,7 @@ function cm.exfilter(c)
 
 ### Hydro Blaster Mini Bluefin (`120253017`)
 
-Source: [Rush/Scripts/c120253017.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120253017.lua)
+Source: [Rush/Scripts/c120253017.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120253017.lua)
 
 ```lua
 end
@@ -83,7 +83,7 @@ cm.cost=RD.CostSendDeckTopToGrave(1)
 
 ### Geefor the Defiant Soul (`120298006`)
 
-Source: [Rush/Scripts/c120298006.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120298006.lua)
+Source: [Rush/Scripts/c120298006.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120298006.lua)
 
 ```lua
 function cm.exfilter(c,e,tp)

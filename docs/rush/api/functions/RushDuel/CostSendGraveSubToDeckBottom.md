@@ -54,22 +54,22 @@ Generated from the local `Rush/Scripts/` folder and `rush_cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Vortex Chaos Shooter | `120277006` | [Rush/Scripts/c120277006.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120277006.lua) | 1 |
-| Yoctron | `120150017` | [Rush/Scripts/c120150017.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120150017.lua) | 1 |
-| Hybridrive Screwdriver | `120261006` | [Rush/Scripts/c120261006.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120261006.lua) | 1 |
-| Icezark the Unequaled | `120170022` | [Rush/Scripts/c120170022.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120170022.lua) | 1 |
-| Cybernetic Overflow | `120278037` | [Rush/Scripts/c120278037.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120278037.lua) | 1 |
-| Over Rush Volcano | `120301076` | [Rush/Scripts/c120301076.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120301076.lua) | 1 |
-| Scarechair Scale | `120151026` | [Rush/Scripts/c120151026.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120151026.lua) | 1 |
-| Galactic Chaos Enforcer | `120277005` | [Rush/Scripts/c120277005.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120277005.lua) | 1 |
-| JAM:P Start! | `120170040` | [Rush/Scripts/c120170040.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120170040.lua) | 1 |
-| Hybridrive Restruct | `120261053` | [Rush/Scripts/c120261053.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120261053.lua) | 1 |
+| Vortex Chaos Shooter | `120277006` | [Rush/Scripts/c120277006.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120277006.lua) | 1 |
+| Yoctron | `120150017` | [Rush/Scripts/c120150017.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120150017.lua) | 1 |
+| Hybridrive Screwdriver | `120261006` | [Rush/Scripts/c120261006.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120261006.lua) | 1 |
+| Icezark the Unequaled | `120170022` | [Rush/Scripts/c120170022.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120170022.lua) | 1 |
+| Cybernetic Overflow | `120278037` | [Rush/Scripts/c120278037.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120278037.lua) | 1 |
+| Over Rush Volcano | `120301076` | [Rush/Scripts/c120301076.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120301076.lua) | 1 |
+| Scarechair Scale | `120151026` | [Rush/Scripts/c120151026.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120151026.lua) | 1 |
+| Galactic Chaos Enforcer | `120277005` | [Rush/Scripts/c120277005.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120277005.lua) | 1 |
+| JAM:P Start! | `120170040` | [Rush/Scripts/c120170040.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120170040.lua) | 1 |
+| Hybridrive Restruct | `120261053` | [Rush/Scripts/c120261053.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120261053.lua) | 1 |
 
 ## Script Examples
 
 ### Vortex Chaos Shooter (`120277006`)
 
-Source: [Rush/Scripts/c120277006.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120277006.lua)
+Source: [Rush/Scripts/c120277006.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120277006.lua)
 
 ```lua
 		or (tc2:IsRace(RACE_GALAXY) and tc1:IsCode(list[1]))
@@ -81,7 +81,7 @@ function cm.target(e,tp,eg,ep,ev,re,r,rp,chk)
 
 ### Yoctron (`120150017`)
 
-Source: [Rush/Scripts/c120150017.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120150017.lua)
+Source: [Rush/Scripts/c120150017.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120150017.lua)
 
 ```lua
 	return c:IsCode(list[1],list[2],list[3]) and c:IsAbleToDeckOrExtraAsCost()
@@ -93,7 +93,7 @@ function cm.target(e,tp,eg,ep,ev,re,r,rp,chk)
 
 ### Hybridrive Screwdriver (`120261006`)
 
-Source: [Rush/Scripts/c120261006.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120261006.lua)
+Source: [Rush/Scripts/c120261006.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120261006.lua)
 
 ```lua
 	return g:FilterCount(Card.IsRace,nil,RACE_DRAGON)==2 and g:FilterCount(Card.IsRace,nil,RACE_MACHINE)==2

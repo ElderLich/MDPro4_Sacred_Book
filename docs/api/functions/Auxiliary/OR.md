@@ -31,13 +31,13 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Dominus Spiral | `42091632` | [Scripts/c42091632.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c42091632.lua) | 2 |
+| Dominus Spiral | `42091632` | [Scripts/c42091632.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c42091632.lua) | 2 |
 
 ## Script Examples
 
 ### Dominus Spiral (`42091632`)
 
-Source: [Scripts/c42091632.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c42091632.lua)
+Source: [Scripts/c42091632.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c42091632.lua)
 
 ```lua
 	if chkc then return chkc:IsLocation(LOCATION_MZONE) and chkc:IsControler(1-tp) and (chkc:IsAbleToHand() or chkc:IsAbleToExtra()) end

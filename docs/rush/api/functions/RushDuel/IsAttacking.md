@@ -46,19 +46,19 @@ Generated from the local `Rush/Scripts/` folder and `rush_cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Lostream Polka | `120309040` | [Rush/Scripts/c120309040.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120309040.lua) | 1 |
-| Lovely Blessing | `120260051` | [Rush/Scripts/c120260051.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120260051.lua) | 1 |
-| Evasive Chaos Ninsect Labyrinth Spider | `120277013` | [Rush/Scripts/c120277013.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120277013.lua) | 1 |
-| Fiery Arms - Fretberge | `120228051` | [Rush/Scripts/c120228051.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120228051.lua) | 1 |
-| Command Knight | `120109065` | [Rush/Scripts/c120109065.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120109065.lua) | 1 |
-| Raging Waves | `120253055` | [Rush/Scripts/c120253055.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120253055.lua) | 1 |
-| Magician's Valkyria | `120229002` | [Rush/Scripts/c120229002.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120229002.lua) | 1 |
+| Lostream Polka | `120309040` | [Rush/Scripts/c120309040.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120309040.lua) | 1 |
+| Lovely Blessing | `120260051` | [Rush/Scripts/c120260051.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120260051.lua) | 1 |
+| Evasive Chaos Ninsect Labyrinth Spider | `120277013` | [Rush/Scripts/c120277013.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120277013.lua) | 1 |
+| Fiery Arms - Fretberge | `120228051` | [Rush/Scripts/c120228051.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120228051.lua) | 1 |
+| Command Knight | `120109065` | [Rush/Scripts/c120109065.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120109065.lua) | 1 |
+| Raging Waves | `120253055` | [Rush/Scripts/c120253055.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120253055.lua) | 1 |
+| Magician's Valkyria | `120229002` | [Rush/Scripts/c120229002.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120229002.lua) | 1 |
 
 ## Script Examples
 
 ### Lostream Polka (`120309040`)
 
-Source: [Rush/Scripts/c120309040.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120309040.lua)
+Source: [Rush/Scripts/c120309040.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120309040.lua)
 
 ```lua
 function cm.atkcon(e)
@@ -70,7 +70,7 @@ end
 
 ### Lovely Blessing (`120260051`)
 
-Source: [Rush/Scripts/c120260051.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120260051.lua)
+Source: [Rush/Scripts/c120260051.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120260051.lua)
 
 ```lua
 function cm.atkcon(e)
@@ -82,7 +82,7 @@ function cm.atktg(e,c)
 
 ### Evasive Chaos Ninsect Labyrinth Spider (`120277013`)
 
-Source: [Rush/Scripts/c120277013.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120277013.lua)
+Source: [Rush/Scripts/c120277013.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120277013.lua)
 
 ```lua
 function cm.condition(e)

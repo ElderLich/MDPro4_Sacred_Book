@@ -3,7 +3,7 @@
 LP-changing effects are usually simple at the call site, but they still need
 the same activation and resolution discipline as card-moving effects.
 
-MDPro3/YGOPro exposes the core actions as:
+MDPro4/YGOPro exposes the core actions as:
 
 ```lua
 Duel.Damage(player,value,reason,is_step)

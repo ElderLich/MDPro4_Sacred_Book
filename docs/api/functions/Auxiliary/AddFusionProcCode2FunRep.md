@@ -34,13 +34,13 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Infernoid Tierra | `82734805` | [Scripts/c82734805.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c82734805.lua) | 1 |
+| Infernoid Tierra | `82734805` | [Scripts/c82734805.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c82734805.lua) | 1 |
 
 ## Script Examples
 
 ### Infernoid Tierra (`82734805`)
 
-Source: [Scripts/c82734805.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c82734805.lua)
+Source: [Scripts/c82734805.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c82734805.lua)
 
 ```lua
 	--fusion material

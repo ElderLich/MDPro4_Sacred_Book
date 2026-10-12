@@ -53,13 +53,13 @@ Generated from the local `Rush/Scripts/` folder and `rush_cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Insurrection Dragon | `120155016` | [Rush/Scripts/c120155016.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120155016.lua) | 1 |
+| Insurrection Dragon | `120155016` | [Rush/Scripts/c120155016.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120155016.lua) | 1 |
 
 ## Script Examples
 
 ### Insurrection Dragon (`120155016`)
 
-Source: [Rush/Scripts/c120155016.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120155016.lua)
+Source: [Rush/Scripts/c120155016.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120155016.lua)
 
 ```lua
 		local atk=Duel.GetFieldGroupCount(tp,LOCATION_MZONE,LOCATION_MZONE)*700

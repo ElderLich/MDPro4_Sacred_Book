@@ -62,37 +62,37 @@ Generated from the local `Rush/Scripts/` folder and `rush_cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| [Soleil, the Fairy of Skysavior](/examples/rush-cards/120235020) | `120235020` | [Rush/Scripts/c120235020.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120235020.lua) | 1 |
-| Abysslayer Quintiamat | `120257021` | [Rush/Scripts/c120257021.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120257021.lua) | 1 |
-| Rurigra the Eternal | `120285028` | [Rush/Scripts/c120285028.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120285028.lua) | 1 |
-| Cornetlass the Music Princess | `120287066` | [Rush/Scripts/c120287066.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120287066.lua) | 1 |
-| Rising HERO Argent | `120263010` | [Rush/Scripts/c120263010.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120263010.lua) | 1 |
-| Lostream Record | `120309044` | [Rush/Scripts/c120309044.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120309044.lua) | 1 |
-| Lovely Ange | `120272026` | [Rush/Scripts/c120272026.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120272026.lua) | 1 |
-| Voidvelg Whiterider | `120109060` | [Rush/Scripts/c120109060.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120109060.lua) | 1 |
-| Hybridrive Orbuster | `120264007` | [Rush/Scripts/c120264007.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120264007.lua) | 1 |
-| Memory of Sunlit | `120300051` | [Rush/Scripts/c120300051.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120300051.lua) | 1 |
-| Scissor Hercules | `120298038` | [Rush/Scripts/c120298038.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120298038.lua) | 1 |
-| Summoner Monk | `120307009` | [Rush/Scripts/c120307009.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120307009.lua) | 1 |
-| Fist the Star Protector's Roaring Gauntlet | `120306011` | [Rush/Scripts/c120306011.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120306011.lua) | 1 |
-| Leave it to the Sparkhearts! | `120298021` | [Rush/Scripts/c120298021.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120298021.lua) | 1 |
-| Weaksauce Brassdes | `120304066` | [Rush/Scripts/c120304066.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120304066.lua) | 1 |
-| Imaginary Arc Actor | `120271037` | [Rush/Scripts/c120271037.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120271037.lua) | 1 |
-| Kibatsu the Cutting Edge Deity | `120246052` | [Rush/Scripts/c120246052.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120246052.lua) | 1 |
-| Encounter of the Stars | `120305025` | [Rush/Scripts/c120305025.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120305025.lua) | 1 |
-| Dice Key Mekuru | `120261010` | [Rush/Scripts/c120261010.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120261010.lua) | 1 |
-| Dark Magician's Curtain | `120238012` | [Rush/Scripts/c120238012.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120238012.lua) | 1 |
-| Meteor Drake | `120253028` | [Rush/Scripts/c120253028.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120253028.lua) | 1 |
-| Necromaid Order | `120294051` | [Rush/Scripts/c120294051.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120294051.lua) | 1 |
-| Evasive Chaos Ninjutsu Art of Goshinichu | `120277054` | [Rush/Scripts/c120277054.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120277054.lua) | 1 |
-| Mercissus the Planetairy | `120293053` | [Rush/Scripts/c120293053.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120293053.lua) | 1 |
+| [Soleil, the Fairy of Skysavior](/examples/rush-cards/120235020) | `120235020` | [Rush/Scripts/c120235020.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120235020.lua) | 1 |
+| Abysslayer Quintiamat | `120257021` | [Rush/Scripts/c120257021.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120257021.lua) | 1 |
+| Rurigra the Eternal | `120285028` | [Rush/Scripts/c120285028.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120285028.lua) | 1 |
+| Cornetlass the Music Princess | `120287066` | [Rush/Scripts/c120287066.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120287066.lua) | 1 |
+| Rising HERO Argent | `120263010` | [Rush/Scripts/c120263010.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120263010.lua) | 1 |
+| Lostream Record | `120309044` | [Rush/Scripts/c120309044.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120309044.lua) | 1 |
+| Lovely Ange | `120272026` | [Rush/Scripts/c120272026.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120272026.lua) | 1 |
+| Voidvelg Whiterider | `120109060` | [Rush/Scripts/c120109060.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120109060.lua) | 1 |
+| Hybridrive Orbuster | `120264007` | [Rush/Scripts/c120264007.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120264007.lua) | 1 |
+| Memory of Sunlit | `120300051` | [Rush/Scripts/c120300051.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120300051.lua) | 1 |
+| Scissor Hercules | `120298038` | [Rush/Scripts/c120298038.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120298038.lua) | 1 |
+| Summoner Monk | `120307009` | [Rush/Scripts/c120307009.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120307009.lua) | 1 |
+| Fist the Star Protector's Roaring Gauntlet | `120306011` | [Rush/Scripts/c120306011.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120306011.lua) | 1 |
+| Leave it to the Sparkhearts! | `120298021` | [Rush/Scripts/c120298021.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120298021.lua) | 1 |
+| Weaksauce Brassdes | `120304066` | [Rush/Scripts/c120304066.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120304066.lua) | 1 |
+| Imaginary Arc Actor | `120271037` | [Rush/Scripts/c120271037.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120271037.lua) | 1 |
+| Kibatsu the Cutting Edge Deity | `120246052` | [Rush/Scripts/c120246052.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120246052.lua) | 1 |
+| Encounter of the Stars | `120305025` | [Rush/Scripts/c120305025.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120305025.lua) | 1 |
+| Dice Key Mekuru | `120261010` | [Rush/Scripts/c120261010.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120261010.lua) | 1 |
+| Dark Magician's Curtain | `120238012` | [Rush/Scripts/c120238012.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120238012.lua) | 1 |
+| Meteor Drake | `120253028` | [Rush/Scripts/c120253028.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120253028.lua) | 1 |
+| Necromaid Order | `120294051` | [Rush/Scripts/c120294051.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120294051.lua) | 1 |
+| Evasive Chaos Ninjutsu Art of Goshinichu | `120277054` | [Rush/Scripts/c120277054.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120277054.lua) | 1 |
+| Mercissus the Planetairy | `120293053` | [Rush/Scripts/c120293053.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120293053.lua) | 1 |
 | ...and 27 more |  |  |  |
 
 ## Script Examples
 
 ### Soleil, the Fairy of Skysavior (`120235020`)
 
-Source: [Rush/Scripts/c120235020.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120235020.lua)
+Source: [Rush/Scripts/c120235020.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120235020.lua)
 
 ```lua
 		if Duel.GetFieldGroupCount(tp,LOCATION_DECK,0)<4 then return end
@@ -104,7 +104,7 @@ Source: [Rush/Scripts/c120235020.lua](https://github.com/ElderLich/MDPro3_Sacred
 
 ### Abysslayer Quintiamat (`120257021`)
 
-Source: [Rush/Scripts/c120257021.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120257021.lua)
+Source: [Rush/Scripts/c120257021.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120257021.lua)
 
 ```lua
 function cm.operation(e,tp,eg,ep,ev,re,r,rp)
@@ -116,7 +116,7 @@ function cm.operation(e,tp,eg,ep,ev,re,r,rp)
 
 ### Rurigra the Eternal (`120285028`)
 
-Source: [Rush/Scripts/c120285028.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120285028.lua)
+Source: [Rush/Scripts/c120285028.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120285028.lua)
 
 ```lua
 		if RD.SendToDeckBottom(g,e,tp,REASON_EFFECT)~=0

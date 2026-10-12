@@ -1,8 +1,8 @@
-# MDPro3 Sacred Book
+# MDPro4 Sacred Book
 
 <div class="home-console">
   <section class="home-console-main">
-    <p class="home-kicker">MDPro3 / YGOPro / Rush Duel scripting</p>
+    <p class="home-kicker">MDPro4 / YGOPro / Rush Duel scripting</p>
     <h2>Start with one card. Learn the engine around it.</h2>
     <p>Follow the guided curve for a first card. When you already know the engine, jump straight to an exact API call or search every local script for a proven pattern.</p>
     <div class="home-actions">
@@ -37,7 +37,7 @@ c:RegisterEffect(e1)</code></pre>
   <a class="home-choice" href="api/">
     <small>Exact calls</small>
     <strong>API</strong>
-    <span>Generated functions and constants from the local MDPro3/YGOPro data.</span>
+    <span>Generated functions and constants from the local MDPro4/YGOPro data.</span>
   </a>
   <a class="home-choice" href="examples/">
     <small>Real cards</small>
@@ -111,6 +111,6 @@ activation-flow and debugging stages.
   </div>
   <div>
     <strong>Upstream YGOPro projects</strong>
-    <p>MDPro3 builds on the YGOPro ecosystem, including <a href="https://github.com/Fluorohydride/ygopro">Fluorohydride/ygopro</a>, <a href="https://github.com/Fluorohydride/ygopro-core">Fluorohydride/ygopro-core</a>, and <a href="https://github.com/Fluorohydride/ygopro-scripts">Fluorohydride/ygopro-scripts</a>.</p>
+    <p>MDPro4 builds on the YGOPro ecosystem, including <a href="https://github.com/Fluorohydride/ygopro">Fluorohydride/ygopro</a>, <a href="https://github.com/Fluorohydride/ygopro-core">Fluorohydride/ygopro-core</a>, and <a href="https://github.com/Fluorohydride/ygopro-scripts">Fluorohydride/ygopro-scripts</a>.</p>
   </div>
 </div>

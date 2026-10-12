@@ -50,18 +50,18 @@ Generated from the local `Rush/Scripts/` folder and `rush_cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Beast Gear King Convoy Liogon | `120145031` | [Rush/Scripts/c120145031.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120145031.lua) | 1 |
-| Executie Flame | `120235019` | [Rush/Scripts/c120235019.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120235019.lua) | 1 |
-| Voidvelg Transi | `120109018` | [Rush/Scripts/c120109018.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120109018.lua) | 1 |
-| Player #39: Home Run Hitter | `120199028` | [Rush/Scripts/c120199028.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120199028.lua) | 1 |
-| Gingangel, the Deluxe Sushi Fairy | `120155030` | [Rush/Scripts/c120155030.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120155030.lua) | 1 |
-| Galactica Rising Oblivion | `120304038` | [Rush/Scripts/c120304038.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120304038.lua) | 1 |
+| Beast Gear King Convoy Liogon | `120145031` | [Rush/Scripts/c120145031.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120145031.lua) | 1 |
+| Executie Flame | `120235019` | [Rush/Scripts/c120235019.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120235019.lua) | 1 |
+| Voidvelg Transi | `120109018` | [Rush/Scripts/c120109018.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120109018.lua) | 1 |
+| Player #39: Home Run Hitter | `120199028` | [Rush/Scripts/c120199028.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120199028.lua) | 1 |
+| Gingangel, the Deluxe Sushi Fairy | `120155030` | [Rush/Scripts/c120155030.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120155030.lua) | 1 |
+| Galactica Rising Oblivion | `120304038` | [Rush/Scripts/c120304038.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120304038.lua) | 1 |
 
 ## Script Examples
 
 ### Beast Gear King Convoy Liogon (`120145031`)
 
-Source: [Rush/Scripts/c120145031.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120145031.lua)
+Source: [Rush/Scripts/c120145031.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120145031.lua)
 
 ```lua
 	end
@@ -73,7 +73,7 @@ function cm.atlimit(e,c)
 
 ### Executie Flame (`120235019`)
 
-Source: [Rush/Scripts/c120235019.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120235019.lua)
+Source: [Rush/Scripts/c120235019.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120235019.lua)
 
 ```lua
 	end
@@ -84,7 +84,7 @@ end
 
 ### Voidvelg Transi (`120109018`)
 
-Source: [Rush/Scripts/c120109018.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120109018.lua)
+Source: [Rush/Scripts/c120109018.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120109018.lua)
 
 ```lua
 	end

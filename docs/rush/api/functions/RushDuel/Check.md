@@ -43,21 +43,21 @@ Generated from the local `Rush/Scripts/` folder and `rush_cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| [Analyze Phlogiston](/examples/rush-cards/120226001) | `120226001` | [Rush/Scripts/c120226001.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120226001.lua) | 1 |
-| [Animagica Majesty](/examples/rush-cards/120277063) | `120277063` | [Rush/Scripts/c120277063.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120277063.lua) | 1 |
-| Finalize Phoenix | `120231046` | [Rush/Scripts/c120231046.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120231046.lua) | 1 |
-| Cyber Tactical Dragon | `120244044` | [Rush/Scripts/c120244044.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120244044.lua) | 1 |
-| Fusion Cancel | `120253066` | [Rush/Scripts/c120253066.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120253066.lua) | 1 |
-| Explosive Destructor Wyrm Dangerous Bakhamut | `120247038` | [Rush/Scripts/c120247038.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120247038.lua) | 1 |
-| Tail Swipe | `120277059` | [Rush/Scripts/c120277059.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120277059.lua) | 1 |
-| Destructurtle Meteor | `120205054` | [Rush/Scripts/c120205054.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120205054.lua) | 1 |
-| Blades of Divine Wind | `120130042` | [Rush/Scripts/c120130042.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120130042.lua) | 1 |
+| [Analyze Phlogiston](/examples/rush-cards/120226001) | `120226001` | [Rush/Scripts/c120226001.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120226001.lua) | 1 |
+| [Animagica Majesty](/examples/rush-cards/120277063) | `120277063` | [Rush/Scripts/c120277063.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120277063.lua) | 1 |
+| Finalize Phoenix | `120231046` | [Rush/Scripts/c120231046.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120231046.lua) | 1 |
+| Cyber Tactical Dragon | `120244044` | [Rush/Scripts/c120244044.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120244044.lua) | 1 |
+| Fusion Cancel | `120253066` | [Rush/Scripts/c120253066.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120253066.lua) | 1 |
+| Explosive Destructor Wyrm Dangerous Bakhamut | `120247038` | [Rush/Scripts/c120247038.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120247038.lua) | 1 |
+| Tail Swipe | `120277059` | [Rush/Scripts/c120277059.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120277059.lua) | 1 |
+| Destructurtle Meteor | `120205054` | [Rush/Scripts/c120205054.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120205054.lua) | 1 |
+| Blades of Divine Wind | `120130042` | [Rush/Scripts/c120130042.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120130042.lua) | 1 |
 
 ## Script Examples
 
 ### Analyze Phlogiston (`120226001`)
 
-Source: [Rush/Scripts/c120226001.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120226001.lua)
+Source: [Rush/Scripts/c120226001.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120226001.lua)
 
 ```lua
 	local g=Duel.GetMatchingGroup(cm.desfilter,tp,0,LOCATION_MZONE,nil)
@@ -69,7 +69,7 @@ Source: [Rush/Scripts/c120226001.lua](https://github.com/ElderLich/MDPro3_Sacred
 
 ### Animagica Majesty (`120277063`)
 
-Source: [Rush/Scripts/c120277063.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120277063.lua)
+Source: [Rush/Scripts/c120277063.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120277063.lua)
 
 ```lua
 function cm.activate(e,tp,eg,ep,ev,re,r,rp)
@@ -81,7 +81,7 @@ function cm.activate(e,tp,eg,ep,ev,re,r,rp)
 
 ### Finalize Phoenix (`120231046`)
 
-Source: [Rush/Scripts/c120231046.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120231046.lua)
+Source: [Rush/Scripts/c120231046.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120231046.lua)
 
 ```lua
 	local g=Duel.GetMatchingGroup(Card.IsFaceup,tp,0,LOCATION_MZONE,nil)

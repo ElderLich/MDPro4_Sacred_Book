@@ -39,15 +39,15 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Cycle of the World | `32828635` | [Scripts/c32828635.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c32828635.lua) | 1 |
-| Turning of the World | `95612049` | [Scripts/c95612049.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c95612049.lua) | 1 |
-| Shinobird's Calling | `73055622` | [Scripts/c73055622.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c73055622.lua) | 1 |
+| Cycle of the World | `32828635` | [Scripts/c32828635.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c32828635.lua) | 1 |
+| Turning of the World | `95612049` | [Scripts/c95612049.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c95612049.lua) | 1 |
+| Shinobird's Calling | `73055622` | [Scripts/c73055622.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c73055622.lua) | 1 |
 
 ## Script Examples
 
 ### Cycle of the World (`32828635`)
 
-Source: [Scripts/c32828635.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c32828635.lua)
+Source: [Scripts/c32828635.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c32828635.lua)
 
 ```lua
 function c32828635.initial_effect(c)
@@ -59,7 +59,7 @@ function c32828635.initial_effect(c)
 
 ### Turning of the World (`95612049`)
 
-Source: [Scripts/c95612049.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c95612049.lua)
+Source: [Scripts/c95612049.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c95612049.lua)
 
 ```lua
 function c95612049.initial_effect(c)
@@ -71,7 +71,7 @@ function c95612049.initial_effect(c)
 
 ### Shinobird's Calling (`73055622`)
 
-Source: [Scripts/c73055622.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c73055622.lua)
+Source: [Scripts/c73055622.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c73055622.lua)
 
 ```lua
 --霊魂の降神

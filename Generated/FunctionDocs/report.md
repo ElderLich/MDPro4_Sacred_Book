@@ -122,7 +122,7 @@ Examples changed constant values:
 ## Category Findings
 
 - DataEditorX English categories: 36
-- MDPro3 English category labels: 32
+- MDPro4 English category labels: 32
 - Category mismatches: 0
 
 ## Added Function Examples

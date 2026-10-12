@@ -46,22 +46,22 @@ Generated from the local `Rush/Scripts/` folder and `rush_cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Surtr the Brilliant Magical Sword | `120306100` | [Rush/Scripts/c120306100.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120306100.lua) | 1 |
-| Supreme Dog Ropero | `120239022` | [Rush/Scripts/c120239022.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120239022.lua) | 1 |
-| Ancient Gear Supplier | `120271010` | [Rush/Scripts/c120271010.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120271010.lua) | 1 |
-| Striping Wyvern | `120253005` | [Rush/Scripts/c120253005.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120253005.lua) | 1 |
-| Trombow the Music Princess of Melodic Crown | `120260071` | [Rush/Scripts/c120260071.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120260071.lua) | 1 |
-| Summoner Monk | `120307009` | [Rush/Scripts/c120307009.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120307009.lua) | 1 |
-| Chaoswordrider | `120293033` | [Rush/Scripts/c120293033.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120293033.lua) | 1 |
-| Chaos Material | `120293034` | [Rush/Scripts/c120293034.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120293034.lua) | 1 |
-| Destructor Soldier Helmet | `120247043` | [Rush/Scripts/c120247043.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120247043.lua) | 1 |
-| Worker Warrior - Multitasking Manager | `120304028` | [Rush/Scripts/c120304028.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120304028.lua) | 1 |
+| Surtr the Brilliant Magical Sword | `120306100` | [Rush/Scripts/c120306100.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120306100.lua) | 1 |
+| Supreme Dog Ropero | `120239022` | [Rush/Scripts/c120239022.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120239022.lua) | 1 |
+| Ancient Gear Supplier | `120271010` | [Rush/Scripts/c120271010.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120271010.lua) | 1 |
+| Striping Wyvern | `120253005` | [Rush/Scripts/c120253005.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120253005.lua) | 1 |
+| Trombow the Music Princess of Melodic Crown | `120260071` | [Rush/Scripts/c120260071.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120260071.lua) | 1 |
+| Summoner Monk | `120307009` | [Rush/Scripts/c120307009.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120307009.lua) | 1 |
+| Chaoswordrider | `120293033` | [Rush/Scripts/c120293033.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120293033.lua) | 1 |
+| Chaos Material | `120293034` | [Rush/Scripts/c120293034.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120293034.lua) | 1 |
+| Destructor Soldier Helmet | `120247043` | [Rush/Scripts/c120247043.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120247043.lua) | 1 |
+| Worker Warrior - Multitasking Manager | `120304028` | [Rush/Scripts/c120304028.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120304028.lua) | 1 |
 
 ## Script Examples
 
 ### Surtr the Brilliant Magical Sword (`120306100`)
 
-Source: [Rush/Scripts/c120306100.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120306100.lua)
+Source: [Rush/Scripts/c120306100.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120306100.lua)
 
 ```lua
 cm.cost1=RD.CostPayLP(500)
@@ -73,7 +73,7 @@ function cm.target(e,tp,eg,ep,ev,re,r,rp,chk)
 
 ### Supreme Dog Ropero (`120239022`)
 
-Source: [Rush/Scripts/c120239022.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120239022.lua)
+Source: [Rush/Scripts/c120239022.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120239022.lua)
 
 ```lua
 cm.cost1=RD.CostPayLP(500)
@@ -85,7 +85,7 @@ function cm.operation(e,tp,eg,ep,ev,re,r,rp)
 
 ### Ancient Gear Supplier (`120271010`)
 
-Source: [Rush/Scripts/c120271010.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120271010.lua)
+Source: [Rush/Scripts/c120271010.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120271010.lua)
 
 ```lua
 end)

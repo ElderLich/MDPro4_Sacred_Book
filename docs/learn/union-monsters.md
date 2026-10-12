@@ -1,7 +1,7 @@
 # Union Monsters
 
 Union Monsters are monsters that can become Equip Cards and later return to the
-Monster Zone. In local MDPro3/YGOPro scripts, modern Union behavior is centered
+Monster Zone. In local MDPro4/YGOPro scripts, modern Union behavior is centered
 on [`aux.EnableUnionAttribute`](/api/functions/Auxiliary/EnableUnionAttribute)
 and [`aux.SetUnionState`](/api/functions/Auxiliary/SetUnionState).
 

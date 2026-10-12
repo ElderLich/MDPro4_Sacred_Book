@@ -49,25 +49,25 @@ Generated from the local `Rush/Scripts/` folder and `rush_cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Etraynze the Shadow Flower Ninja | `120170029` | [Rush/Scripts/c120170029.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120170029.lua) | 1 |
-| Black Luster Soljersey - Envoy of the Drying | `120228017` | [Rush/Scripts/c120228017.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120228017.lua) | 1 |
-| Dark Matter Requiem Omega | `120264040` | [Rush/Scripts/c120264040.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120264040.lua) | 1 |
-| Beast Gear King Convoy Liogon | `120145031` | [Rush/Scripts/c120145031.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120145031.lua) | 1 |
-| Ever-Grace Princess Mai | `120287014` | [Rush/Scripts/c120287014.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120287014.lua) | 1 |
-| Blue-Fang Concurrent Burst Dragon | `120109046` | [Rush/Scripts/c120109046.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120109046.lua) | 1 |
-| Transam Power Linac | `120260058` | [Rush/Scripts/c120260058.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120260058.lua) | 1 |
-| Shock Dragon | `120130021` | [Rush/Scripts/c120130021.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120130021.lua) | 1 |
-| Supreme Skystream Magnum Overlord \[R\] | `120151003` | [Rush/Scripts/c120151003.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120151003.lua) | 1 |
-| Dankus, the Knight of Skysavior | `120235025` | [Rush/Scripts/c120235025.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120235025.lua) | 1 |
-| Reprinter | `120199049` | [Rush/Scripts/c120199049.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120199049.lua) | 1 |
-| Music Princess's Breath | `120155045` | [Rush/Scripts/c120155045.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120155045.lua) | 1 |
-| Dual Coratlus | `120225008` | [Rush/Scripts/c120225008.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120225008.lua) | 1 |
+| Etraynze the Shadow Flower Ninja | `120170029` | [Rush/Scripts/c120170029.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120170029.lua) | 1 |
+| Black Luster Soljersey - Envoy of the Drying | `120228017` | [Rush/Scripts/c120228017.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120228017.lua) | 1 |
+| Dark Matter Requiem Omega | `120264040` | [Rush/Scripts/c120264040.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120264040.lua) | 1 |
+| Beast Gear King Convoy Liogon | `120145031` | [Rush/Scripts/c120145031.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120145031.lua) | 1 |
+| Ever-Grace Princess Mai | `120287014` | [Rush/Scripts/c120287014.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120287014.lua) | 1 |
+| Blue-Fang Concurrent Burst Dragon | `120109046` | [Rush/Scripts/c120109046.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120109046.lua) | 1 |
+| Transam Power Linac | `120260058` | [Rush/Scripts/c120260058.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120260058.lua) | 1 |
+| Shock Dragon | `120130021` | [Rush/Scripts/c120130021.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120130021.lua) | 1 |
+| Supreme Skystream Magnum Overlord \[R\] | `120151003` | [Rush/Scripts/c120151003.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120151003.lua) | 1 |
+| Dankus, the Knight of Skysavior | `120235025` | [Rush/Scripts/c120235025.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120235025.lua) | 1 |
+| Reprinter | `120199049` | [Rush/Scripts/c120199049.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120199049.lua) | 1 |
+| Music Princess's Breath | `120155045` | [Rush/Scripts/c120155045.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120155045.lua) | 1 |
+| Dual Coratlus | `120225008` | [Rush/Scripts/c120225008.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120225008.lua) | 1 |
 
 ## Script Examples
 
 ### Etraynze the Shadow Flower Ninja (`120170029`)
 
-Source: [Rush/Scripts/c120170029.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120170029.lua)
+Source: [Rush/Scripts/c120170029.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120170029.lua)
 
 ```lua
 			RD.AttachEndPhase(e,tc,tp,m,cm.tdop,aux.Stringid(m,1))
@@ -79,7 +79,7 @@ Source: [Rush/Scripts/c120170029.lua](https://github.com/ElderLich/MDPro3_Sacred
 
 ### Black Luster Soljersey - Envoy of the Drying (`120228017`)
 
-Source: [Rush/Scripts/c120228017.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120228017.lua)
+Source: [Rush/Scripts/c120228017.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120228017.lua)
 
 ```lua
 		local c=e:GetHandler()
@@ -91,7 +91,7 @@ Source: [Rush/Scripts/c120228017.lua](https://github.com/ElderLich/MDPro3_Sacred
 
 ### Dark Matter Requiem Omega (`120264040`)
 
-Source: [Rush/Scripts/c120264040.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120264040.lua)
+Source: [Rush/Scripts/c120264040.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120264040.lua)
 
 ```lua
 	if c:IsFaceup() and c:IsRelateToEffect(e) then

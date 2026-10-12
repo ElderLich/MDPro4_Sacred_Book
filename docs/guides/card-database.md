@@ -27,7 +27,7 @@ card's text is paired with the appropriate implementation. Use
 
 ## Rush Card Data And Runtime Rules
 
-| Field or setting | Role in the local MDPro3 implementation |
+| Field or setting | Role in the local MDPro4 implementation |
 | --- | --- |
 | Card ID | `Card.IsRushDuelCard()` recognizes `120000000 <= id < 130000000`. Preserve real imported IDs. |
 | `datas.ot` / editor rule or pool | Availability metadata. The imported English Rush database currently uses `4`; do not rewrite it wholesale to `0x100`. |

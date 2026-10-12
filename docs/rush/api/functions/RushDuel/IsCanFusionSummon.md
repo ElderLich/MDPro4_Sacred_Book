@@ -54,14 +54,14 @@ Generated from the local `Rush/Scripts/` folder and `rush_cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Void Dust Fusion | `120277052` | [Rush/Scripts/c120277052.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120277052.lua) | 1 |
-| Darkness Dwarf | `120253003` | [Rush/Scripts/c120253003.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120253003.lua) | 1 |
+| Void Dust Fusion | `120277052` | [Rush/Scripts/c120277052.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120277052.lua) | 1 |
+| Darkness Dwarf | `120253003` | [Rush/Scripts/c120253003.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120253003.lua) | 1 |
 
 ## Script Examples
 
 ### Void Dust Fusion (`120277052`)
 
-Source: [Rush/Scripts/c120277052.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120277052.lua)
+Source: [Rush/Scripts/c120277052.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120277052.lua)
 
 ```lua
 	return c:IsAttribute(ATTRIBUTE_DARK) and c:IsRace(RACE_GALAXY) and c:IsType(TYPE_NORMAL)
@@ -73,7 +73,7 @@ function cm.matfilter(c)
 
 ### Darkness Dwarf (`120253003`)
 
-Source: [Rush/Scripts/c120253003.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120253003.lua)
+Source: [Rush/Scripts/c120253003.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120253003.lua)
 
 ```lua
 function cm.costfilter(c,e,tp)

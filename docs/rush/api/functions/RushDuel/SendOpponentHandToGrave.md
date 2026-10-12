@@ -68,19 +68,19 @@ Generated from the local `Rush/Scripts/` folder and `rush_cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Amusi Annoyance | `120249063` | [Rush/Scripts/c120249063.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120249063.lua) | 1 |
-| Void Intercept | `120227028` | [Rush/Scripts/c120227028.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120227028.lua) | 1 |
-| Frightening Fan Mail | `120217080` | [Rush/Scripts/c120217080.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120217080.lua) | 1 |
-| Thestalos the Firestorm Monarch | `120248001` | [Rush/Scripts/c120248001.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120248001.lua) | 1 |
-| Royal Rebel's Shout | `120140018` | [Rush/Scripts/c120140018.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120140018.lua) | 1 |
-| Traditional Tax | `120235063` | [Rush/Scripts/c120235063.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120235063.lua) | 1 |
-| Handsray Destleo | `120109012` | [Rush/Scripts/c120109012.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120109012.lua) | 1 |
+| Amusi Annoyance | `120249063` | [Rush/Scripts/c120249063.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120249063.lua) | 1 |
+| Void Intercept | `120227028` | [Rush/Scripts/c120227028.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120227028.lua) | 1 |
+| Frightening Fan Mail | `120217080` | [Rush/Scripts/c120217080.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120217080.lua) | 1 |
+| Thestalos the Firestorm Monarch | `120248001` | [Rush/Scripts/c120248001.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120248001.lua) | 1 |
+| Royal Rebel's Shout | `120140018` | [Rush/Scripts/c120140018.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120140018.lua) | 1 |
+| Traditional Tax | `120235063` | [Rush/Scripts/c120235063.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120235063.lua) | 1 |
+| Handsray Destleo | `120109012` | [Rush/Scripts/c120109012.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120109012.lua) | 1 |
 
 ## Script Examples
 
 ### Amusi Annoyance (`120249063`)
 
-Source: [Rush/Scripts/c120249063.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120249063.lua)
+Source: [Rush/Scripts/c120249063.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120249063.lua)
 
 ```lua
 	local ct=Duel.GetFieldGroupCount(tp,0,LOCATION_HAND)
@@ -92,7 +92,7 @@ end
 
 ### Void Intercept (`120227028`)
 
-Source: [Rush/Scripts/c120227028.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120227028.lua)
+Source: [Rush/Scripts/c120227028.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120227028.lua)
 
 ```lua
 end
@@ -104,7 +104,7 @@ function cm.activate(e,tp,eg,ep,ev,re,r,rp)
 
 ### Frightening Fan Mail (`120217080`)
 
-Source: [Rush/Scripts/c120217080.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120217080.lua)
+Source: [Rush/Scripts/c120217080.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120217080.lua)
 
 ```lua
 function cm.activate(e,tp,eg,ep,ev,re,r,rp)

@@ -31,16 +31,16 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Tiki Soul | `49514333` | [Scripts/c49514333.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c49514333.lua) | 1 |
-| Old Mind | `54239282` | [Scripts/c54239282.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c54239282.lua) | 1 |
-| Storm Caller | `15935204` | [Scripts/c15935204.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c15935204.lua) | 1 |
-| Evigishki Merrowgeist | `76372778` | [Scripts/c76372778.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c76372778.lua) | 1 |
+| Tiki Soul | `49514333` | [Scripts/c49514333.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c49514333.lua) | 1 |
+| Old Mind | `54239282` | [Scripts/c54239282.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c54239282.lua) | 1 |
+| Storm Caller | `15935204` | [Scripts/c15935204.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c15935204.lua) | 1 |
+| Evigishki Merrowgeist | `76372778` | [Scripts/c76372778.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c76372778.lua) | 1 |
 
 ## Script Examples
 
 ### Tiki Soul (`49514333`)
 
-Source: [Scripts/c49514333.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c49514333.lua)
+Source: [Scripts/c49514333.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c49514333.lua)
 
 ```lua
 end
@@ -52,7 +52,7 @@ end
 
 ### Old Mind (`54239282`)
 
-Source: [Scripts/c54239282.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c54239282.lua)
+Source: [Scripts/c54239282.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c54239282.lua)
 
 ```lua
 	local g=Duel.GetMatchingGroup(c54239282.filter,tp,LOCATION_HAND,0,nil,type)
@@ -64,7 +64,7 @@ Source: [Scripts/c54239282.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/
 
 ### Storm Caller (`15935204`)
 
-Source: [Scripts/c15935204.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c15935204.lua)
+Source: [Scripts/c15935204.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c15935204.lua)
 
 ```lua
 	return c:IsStatus(STATUS_BATTLE_DESTROYED) and not c:IsType(TYPE_TOKEN)

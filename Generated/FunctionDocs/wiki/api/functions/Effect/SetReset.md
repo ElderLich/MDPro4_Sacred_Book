@@ -29,7 +29,7 @@ Phase resets take an optional count:
 e1:SetReset(RESET_PHASE+PHASE_END,2)
 ```
 
-If the count is omitted or 0, MDPro3 stores 1. If a phase reset does not specify `RESET_SELF_TURN` or `RESET_OPPO_TURN`, the core adds both turn flags.
+If the count is omitted or 0, MDPro4 stores 1. If a phase reset does not specify `RESET_SELF_TURN` or `RESET_OPPO_TURN`, the core adds both turn flags.
 
 ## Related Functions
 

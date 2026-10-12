@@ -61,21 +61,21 @@ Generated from the local `Rush/Scripts/` folder and `rush_cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| [Rescue Rabbit](/examples/rush-cards/120109057) | `120109057` | [Rush/Scripts/c120109057.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120109057.lua) | 1 |
-| [Star Cat Destronya](/examples/rush-cards/120235037) | `120235037` | [Rush/Scripts/c120235037.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120235037.lua) | 1 |
-| Finalize Phoenix | `120231046` | [Rush/Scripts/c120231046.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120231046.lua) | 1 |
-| The Dragiastar | `120235035` | [Rush/Scripts/c120235035.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120235035.lua) | 1 |
-| Evil Star Beacon | `120155041` | [Rush/Scripts/c120155041.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120155041.lua) | 1 |
-| Valkyrion the Unity Warrior | `120260025` | [Rush/Scripts/c120260025.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120260025.lua) | 1 |
-| Hero Descent | `120264056` | [Rush/Scripts/c120264056.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120264056.lua) | 1 |
-| Major Audition | `120246071` | [Rush/Scripts/c120246071.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120246071.lua) | 1 |
-| Stone of the Dark Magicians | `120246083` | [Rush/Scripts/c120246083.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120246083.lua) | 1 |
+| [Rescue Rabbit](/examples/rush-cards/120109057) | `120109057` | [Rush/Scripts/c120109057.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120109057.lua) | 1 |
+| [Star Cat Destronya](/examples/rush-cards/120235037) | `120235037` | [Rush/Scripts/c120235037.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120235037.lua) | 1 |
+| Finalize Phoenix | `120231046` | [Rush/Scripts/c120231046.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120231046.lua) | 1 |
+| The Dragiastar | `120235035` | [Rush/Scripts/c120235035.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120235035.lua) | 1 |
+| Evil Star Beacon | `120155041` | [Rush/Scripts/c120155041.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120155041.lua) | 1 |
+| Valkyrion the Unity Warrior | `120260025` | [Rush/Scripts/c120260025.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120260025.lua) | 1 |
+| Hero Descent | `120264056` | [Rush/Scripts/c120264056.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120264056.lua) | 1 |
+| Major Audition | `120246071` | [Rush/Scripts/c120246071.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120246071.lua) | 1 |
+| Stone of the Dark Magicians | `120246083` | [Rush/Scripts/c120246083.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120246083.lua) | 1 |
 
 ## Script Examples
 
 ### Rescue Rabbit (`120109057`)
 
-Source: [Rush/Scripts/c120109057.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120109057.lua)
+Source: [Rush/Scripts/c120109057.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120109057.lua)
 
 ```lua
 end
@@ -87,7 +87,7 @@ function cm.operation(e,tp,eg,ep,ev,re,r,rp)
 
 ### Star Cat Destronya (`120235037`)
 
-Source: [Rush/Scripts/c120235037.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120235037.lua)
+Source: [Rush/Scripts/c120235037.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120235037.lua)
 
 ```lua
 end
@@ -99,7 +99,7 @@ function cm.operation(e,tp,eg,ep,ev,re,r,rp)
 
 ### Finalize Phoenix (`120231046`)
 
-Source: [Rush/Scripts/c120231046.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120231046.lua)
+Source: [Rush/Scripts/c120231046.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120231046.lua)
 
 ```lua
 	local lv=g:GetSum(Card.GetLevel,nil)

@@ -306,7 +306,7 @@ gone.
 `SetCountLimit` belongs on the effect object, but the correct arguments come
 from card text.
 
-| Card text shape | Common MDPro3/YGOPro shape |
+| Card text shape | Common MDPro4/YGOPro shape |
 | --- | --- |
 | "Once per turn..." on one local effect | `e:SetCountLimit(1)` |
 | "You can only use this effect of [card] once per turn" | `e:SetCountLimit(1,id)` |

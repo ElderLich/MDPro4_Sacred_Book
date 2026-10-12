@@ -31,13 +31,13 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Argostars - Giantslaying | `30964246` | [Scripts/c30964246.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c30964246.lua) | 1 |
+| Argostars - Giantslaying | `30964246` | [Scripts/c30964246.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c30964246.lua) | 1 |
 
 ## Script Examples
 
 ### Argostars - Giantslaying (`30964246`)
 
-Source: [Scripts/c30964246.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c30964246.lua)
+Source: [Scripts/c30964246.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c30964246.lua)
 
 ```lua
 	return c:IsAllTypes(TYPE_CONTINUOUS|TYPE_TRAP) and c:IsFaceup() and

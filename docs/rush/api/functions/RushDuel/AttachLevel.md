@@ -49,37 +49,37 @@ Generated from the local `Rush/Scripts/` folder and `rush_cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| [Preferlyre](/examples/rush-cards/120283046) | `120283046` | [Rush/Scripts/c120283046.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120283046.lua) | 1 |
-| Pholus the Star Knight | `120203020` | [Rush/Scripts/c120203020.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120203020.lua) | 1 |
-| Ice Age Pounder | `120304027` | [Rush/Scripts/c120304027.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120304027.lua) | 2 |
-| Fiarma the Ally Spark | `120298025` | [Rush/Scripts/c120298025.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120298025.lua) | 1 |
-| Peit the Ally Spark | `120298024` | [Rush/Scripts/c120298024.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120298024.lua) | 1 |
-| Condurglar the Assisting Anthem | `120293064` | [Rush/Scripts/c120293064.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120293064.lua) | 1 |
-| Tribute Kaiser | `120260073` | [Rush/Scripts/c120260073.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120260073.lua) | 1 |
-| Royal Rebel's Great Mixer | `120306004` | [Rush/Scripts/c120306004.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120306004.lua) | 1 |
-| Transam Assault Linac | `120272035` | [Rush/Scripts/c120272035.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120272035.lua) | 1 |
-| Hungry Special Coupon | `120300055` | [Rush/Scripts/c120300055.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120300055.lua) | 1 |
-| Dedicated Gaia The Fierce Knight | `120293032` | [Rush/Scripts/c120293032.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120293032.lua) | 1 |
-| Kyoshee of the Forbidden Fist | `120297005` | [Rush/Scripts/c120297005.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120297005.lua) | 1 |
-| Drahe the Wyrm Vassal | `120291004` | [Rush/Scripts/c120291004.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120291004.lua) | 1 |
-| Fusionic Tribevern | `120261036` | [Rush/Scripts/c120261036.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120261036.lua) | 1 |
-| Dragonic Scout | `120246028` | [Rush/Scripts/c120246028.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120246028.lua) | 1 |
-| Chaos Material | `120293034` | [Rush/Scripts/c120293034.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120293034.lua) | 1 |
-| Soen the Molten Martial Machine | `120304036` | [Rush/Scripts/c120304036.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120304036.lua) | 1 |
-| Delirium Polynea | `120277033` | [Rush/Scripts/c120277033.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120277033.lua) | 1 |
-| Jointech Prime Rex | `120109041` | [Rush/Scripts/c120109041.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120109041.lua) | 1 |
-| Executie Mates | `120283050` | [Rush/Scripts/c120283050.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120283050.lua) | 1 |
-| Royal Wisdom Guards | `120261031` | [Rush/Scripts/c120261031.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120261031.lua) | 1 |
-| Archfiend Shaman | `120277020` | [Rush/Scripts/c120277020.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120277020.lua) | 1 |
-| Glacies the Snowmeister of Sacred Splendor | `120253034` | [Rush/Scripts/c120253034.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120253034.lua) | 1 |
-| Transam Linac Overwrite | `120245001` | [Rush/Scripts/c120245001.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120245001.lua) | 1 |
+| [Preferlyre](/examples/rush-cards/120283046) | `120283046` | [Rush/Scripts/c120283046.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120283046.lua) | 1 |
+| Pholus the Star Knight | `120203020` | [Rush/Scripts/c120203020.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120203020.lua) | 1 |
+| Ice Age Pounder | `120304027` | [Rush/Scripts/c120304027.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120304027.lua) | 2 |
+| Fiarma the Ally Spark | `120298025` | [Rush/Scripts/c120298025.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120298025.lua) | 1 |
+| Peit the Ally Spark | `120298024` | [Rush/Scripts/c120298024.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120298024.lua) | 1 |
+| Condurglar the Assisting Anthem | `120293064` | [Rush/Scripts/c120293064.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120293064.lua) | 1 |
+| Tribute Kaiser | `120260073` | [Rush/Scripts/c120260073.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120260073.lua) | 1 |
+| Royal Rebel's Great Mixer | `120306004` | [Rush/Scripts/c120306004.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120306004.lua) | 1 |
+| Transam Assault Linac | `120272035` | [Rush/Scripts/c120272035.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120272035.lua) | 1 |
+| Hungry Special Coupon | `120300055` | [Rush/Scripts/c120300055.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120300055.lua) | 1 |
+| Dedicated Gaia The Fierce Knight | `120293032` | [Rush/Scripts/c120293032.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120293032.lua) | 1 |
+| Kyoshee of the Forbidden Fist | `120297005` | [Rush/Scripts/c120297005.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120297005.lua) | 1 |
+| Drahe the Wyrm Vassal | `120291004` | [Rush/Scripts/c120291004.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120291004.lua) | 1 |
+| Fusionic Tribevern | `120261036` | [Rush/Scripts/c120261036.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120261036.lua) | 1 |
+| Dragonic Scout | `120246028` | [Rush/Scripts/c120246028.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120246028.lua) | 1 |
+| Chaos Material | `120293034` | [Rush/Scripts/c120293034.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120293034.lua) | 1 |
+| Soen the Molten Martial Machine | `120304036` | [Rush/Scripts/c120304036.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120304036.lua) | 1 |
+| Delirium Polynea | `120277033` | [Rush/Scripts/c120277033.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120277033.lua) | 1 |
+| Jointech Prime Rex | `120109041` | [Rush/Scripts/c120109041.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120109041.lua) | 1 |
+| Executie Mates | `120283050` | [Rush/Scripts/c120283050.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120283050.lua) | 1 |
+| Royal Wisdom Guards | `120261031` | [Rush/Scripts/c120261031.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120261031.lua) | 1 |
+| Archfiend Shaman | `120277020` | [Rush/Scripts/c120277020.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120277020.lua) | 1 |
+| Glacies the Snowmeister of Sacred Splendor | `120253034` | [Rush/Scripts/c120253034.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120253034.lua) | 1 |
+| Transam Linac Overwrite | `120245001` | [Rush/Scripts/c120245001.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120245001.lua) | 1 |
 | ...and 20 more |  |  |  |
 
 ## Script Examples
 
 ### Preferlyre (`120283046`)
 
-Source: [Rush/Scripts/c120283046.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120283046.lua)
+Source: [Rush/Scripts/c120283046.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120283046.lua)
 
 ```lua
 		if c:IsFaceup() and c:IsRelateToEffect(e) then
@@ -91,7 +91,7 @@ Source: [Rush/Scripts/c120283046.lua](https://github.com/ElderLich/MDPro3_Sacred
 
 ### Pholus the Star Knight (`120203020`)
 
-Source: [Rush/Scripts/c120203020.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120203020.lua)
+Source: [Rush/Scripts/c120203020.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120203020.lua)
 
 ```lua
 			Duel.BreakEffect()
@@ -103,7 +103,7 @@ Source: [Rush/Scripts/c120203020.lua](https://github.com/ElderLich/MDPro3_Sacred
 
 ### Ice Age Pounder (`120304027`)
 
-Source: [Rush/Scripts/c120304027.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120304027.lua)
+Source: [Rush/Scripts/c120304027.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120304027.lua)
 
 ```lua
 		local g=Duel.GetOperatedGroup()

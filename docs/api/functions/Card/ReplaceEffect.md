@@ -35,14 +35,14 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Arcana Call | `99189322` | [Scripts/c99189322.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c99189322.lua) | 1 |
-| Red Supremacy | `50584941` | [Scripts/c50584941.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c50584941.lua) | 1 |
+| Arcana Call | `99189322` | [Scripts/c99189322.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c99189322.lua) | 1 |
+| Red Supremacy | `50584941` | [Scripts/c50584941.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c50584941.lua) | 1 |
 
 ## Script Examples
 
 ### Arcana Call (`99189322`)
 
-Source: [Scripts/c99189322.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c99189322.lua)
+Source: [Scripts/c99189322.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c99189322.lua)
 
 ```lua
 	if Duel.Remove(regc,POS_FACEUP,REASON_EFFECT)==0 or not regc:IsLocation(LOCATION_REMOVED) then return end
@@ -54,7 +54,7 @@ Source: [Scripts/c99189322.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/
 
 ### Red Supremacy (`50584941`)
 
-Source: [Scripts/c50584941.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c50584941.lua)
+Source: [Scripts/c50584941.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c50584941.lua)
 
 ```lua
 		e1:SetReset(RESET_EVENT+RESETS_STANDARD)

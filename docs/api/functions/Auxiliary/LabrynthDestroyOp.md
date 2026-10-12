@@ -29,15 +29,15 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Welcome Labrynth | `5380979` | [Scripts/c5380979.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c5380979.lua) | 1 |
-| Big Welcome Labrynth | `92714517` | [Scripts/c92714517.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c92714517.lua) | 1 |
-| Farewelcome Labrynth | `32785578` | [Scripts/c32785578.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c32785578.lua) | 1 |
+| Welcome Labrynth | `5380979` | [Scripts/c5380979.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c5380979.lua) | 1 |
+| Big Welcome Labrynth | `92714517` | [Scripts/c92714517.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c92714517.lua) | 1 |
+| Farewelcome Labrynth | `32785578` | [Scripts/c32785578.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c32785578.lua) | 1 |
 
 ## Script Examples
 
 ### Welcome Labrynth (`5380979`)
 
-Source: [Scripts/c5380979.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c5380979.lua)
+Source: [Scripts/c5380979.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c5380979.lua)
 
 ```lua
 		end
@@ -49,7 +49,7 @@ Source: [Scripts/c5380979.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/b
 
 ### Big Welcome Labrynth (`92714517`)
 
-Source: [Scripts/c92714517.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c92714517.lua)
+Source: [Scripts/c92714517.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c92714517.lua)
 
 ```lua
 		end
@@ -61,7 +61,7 @@ function s.checkfilter(c)
 
 ### Farewelcome Labrynth (`32785578`)
 
-Source: [Scripts/c32785578.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c32785578.lua)
+Source: [Scripts/c32785578.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c32785578.lua)
 
 ```lua
 		end

@@ -46,15 +46,15 @@ Generated from the local `Rush/Scripts/` folder and `rush_cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Galactica Dejavu | `120244003` | [Rush/Scripts/c120244003.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120244003.lua) | 1 |
-| Gingangel, the Deluxe Sushi Fairy | `120155030` | [Rush/Scripts/c120155030.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120155030.lua) | 1 |
-| Buffered Slime | `120235064` | [Rush/Scripts/c120235064.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120235064.lua) | 1 |
+| Galactica Dejavu | `120244003` | [Rush/Scripts/c120244003.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120244003.lua) | 1 |
+| Gingangel, the Deluxe Sushi Fairy | `120155030` | [Rush/Scripts/c120155030.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120155030.lua) | 1 |
+| Buffered Slime | `120235064` | [Rush/Scripts/c120235064.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120235064.lua) | 1 |
 
 ## Script Examples
 
 ### Galactica Dejavu (`120244003`)
 
-Source: [Rush/Scripts/c120244003.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120244003.lua)
+Source: [Rush/Scripts/c120244003.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120244003.lua)
 
 ```lua
 end
@@ -66,7 +66,7 @@ cm.cost=RD.CostSendSelfToGrave()
 
 ### Gingangel, the Deluxe Sushi Fairy (`120155030`)
 
-Source: [Rush/Scripts/c120155030.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120155030.lua)
+Source: [Rush/Scripts/c120155030.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120155030.lua)
 
 ```lua
 end
@@ -78,7 +78,7 @@ cm.cost=RD.CostSendHandToGrave(Card.IsAbleToGraveAsCost,2,2)
 
 ### Buffered Slime (`120235064`)
 
-Source: [Rush/Scripts/c120235064.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120235064.lua)
+Source: [Rush/Scripts/c120235064.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120235064.lua)
 
 ```lua
 	if Duel.DiscardDeck(tp,1,REASON_EFFECT)==0 then return end

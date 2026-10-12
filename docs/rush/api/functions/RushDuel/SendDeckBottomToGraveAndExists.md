@@ -54,14 +54,14 @@ Generated from the local `Rush/Scripts/` folder and `rush_cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Iris the Rare Shadow Flower | `120228018` | [Rush/Scripts/c120228018.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120228018.lua) | 1 |
-| Necromaid Carriage | `120294018` | [Rush/Scripts/c120294018.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120294018.lua) | 1 |
+| Iris the Rare Shadow Flower | `120228018` | [Rush/Scripts/c120228018.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120228018.lua) | 1 |
+| Necromaid Carriage | `120294018` | [Rush/Scripts/c120294018.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120294018.lua) | 1 |
 
 ## Script Examples
 
 ### Iris the Rare Shadow Flower (`120228018`)
 
-Source: [Rush/Scripts/c120228018.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120228018.lua)
+Source: [Rush/Scripts/c120228018.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120228018.lua)
 
 ```lua
 		if not Duel.IsPlayerCanDiscardDeck(tp,1) then return end
@@ -73,7 +73,7 @@ Source: [Rush/Scripts/c120228018.lua](https://github.com/ElderLich/MDPro3_Sacred
 
 ### Necromaid Carriage (`120294018`)
 
-Source: [Rush/Scripts/c120294018.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120294018.lua)
+Source: [Rush/Scripts/c120294018.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120294018.lua)
 
 ```lua
 end

@@ -34,17 +34,17 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| [Salamandra with Chain](/examples/cards/62091148) | `62091148` | [Scripts/c62091148.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c62091148.lua) | 1 |
-| R.B. Lambda Blade | `17188206` | [Scripts/c17188206.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c17188206.lua) | 1 |
-| Instant Fusion | `1845204` | [Scripts/c1845204.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c1845204.lua) | 1 |
-| Ritual Foregone | `65450690` | [Scripts/c65450690.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c65450690.lua) | 1 |
-| Onslaught of the Fire Kings | `22993208` | [Scripts/c22993208.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c22993208.lua) | 1 |
+| [Salamandra with Chain](/examples/cards/62091148) | `62091148` | [Scripts/c62091148.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c62091148.lua) | 1 |
+| R.B. Lambda Blade | `17188206` | [Scripts/c17188206.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c17188206.lua) | 1 |
+| Instant Fusion | `1845204` | [Scripts/c1845204.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c1845204.lua) | 1 |
+| Ritual Foregone | `65450690` | [Scripts/c65450690.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c65450690.lua) | 1 |
+| Onslaught of the Fire Kings | `22993208` | [Scripts/c22993208.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c22993208.lua) | 1 |
 
 ## Script Examples
 
 ### Salamandra with Chain (`62091148`)
 
-Source: [Scripts/c62091148.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c62091148.lua)
+Source: [Scripts/c62091148.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c62091148.lua)
 
 ```lua
 		e2:SetLabelObject(tc)
@@ -56,7 +56,7 @@ Source: [Scripts/c62091148.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/
 
 ### R.B. Lambda Blade (`17188206`)
 
-Source: [Scripts/c17188206.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c17188206.lua)
+Source: [Scripts/c17188206.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c17188206.lua)
 
 ```lua
 		e1:SetLabelObject(tc)
@@ -68,7 +68,7 @@ Source: [Scripts/c17188206.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/
 
 ### Instant Fusion (`1845204`)
 
-Source: [Scripts/c1845204.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c1845204.lua)
+Source: [Scripts/c1845204.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c1845204.lua)
 
 ```lua
 		e2:SetLabelObject(tc)

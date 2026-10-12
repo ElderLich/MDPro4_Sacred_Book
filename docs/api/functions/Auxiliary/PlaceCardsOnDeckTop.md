@@ -33,14 +33,14 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Dimension Conjurer | `77683371` | [Scripts/c77683371.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c77683371.lua) | 1 |
-| Sylvan Charity | `82016179` | [Scripts/c82016179.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c82016179.lua) | 2 |
+| Dimension Conjurer | `77683371` | [Scripts/c77683371.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c77683371.lua) | 1 |
+| Sylvan Charity | `82016179` | [Scripts/c82016179.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c82016179.lua) | 2 |
 
 ## Script Examples
 
 ### Dimension Conjurer (`77683371`)
 
-Source: [Scripts/c77683371.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c77683371.lua)
+Source: [Scripts/c77683371.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c77683371.lua)
 
 ```lua
 		Duel.Hint(HINT_SELECTMSG,p,HINTMSG_TODECK)
@@ -52,7 +52,7 @@ end
 
 ### Sylvan Charity (`82016179`)
 
-Source: [Scripts/c82016179.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c82016179.lua)
+Source: [Scripts/c82016179.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c82016179.lua)
 
 ```lua
 			sg1:Merge(sg2)

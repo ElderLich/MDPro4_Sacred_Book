@@ -46,13 +46,13 @@ Generated from the local `Rush/Scripts/` folder and `rush_cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Executie Emergency! | `120231040` | [Rush/Scripts/c120231040.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120231040.lua) | 1 |
+| Executie Emergency! | `120231040` | [Rush/Scripts/c120231040.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120231040.lua) | 1 |
 
 ## Script Examples
 
 ### Executie Emergency! (`120231040`)
 
-Source: [Rush/Scripts/c120231040.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120231040.lua)
+Source: [Rush/Scripts/c120231040.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120231040.lua)
 
 ```lua
 --Activate

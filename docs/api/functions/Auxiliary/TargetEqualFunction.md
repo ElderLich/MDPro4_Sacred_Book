@@ -33,14 +33,14 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| [Goyo Emperor](/examples/cards/59255742) | `59255742` | [Scripts/c59255742.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c59255742.lua) | 1 |
-| Owner's Seal | `9720537` | [Scripts/c9720537.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c9720537.lua) | 1 |
+| [Goyo Emperor](/examples/cards/59255742) | `59255742` | [Scripts/c59255742.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c59255742.lua) | 1 |
+| Owner's Seal | `9720537` | [Scripts/c9720537.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c9720537.lua) | 1 |
 
 ## Script Examples
 
 ### Goyo Emperor (`59255742`)
 
-Source: [Scripts/c59255742.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c59255742.lua)
+Source: [Scripts/c59255742.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c59255742.lua)
 
 ```lua
 	e1:SetProperty(EFFECT_FLAG_SET_AVAILABLE)
@@ -52,7 +52,7 @@ Source: [Scripts/c59255742.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/
 
 ### Owner's Seal (`9720537`)
 
-Source: [Scripts/c9720537.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c9720537.lua)
+Source: [Scripts/c9720537.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c9720537.lua)
 
 ```lua
 	e1:SetProperty(EFFECT_FLAG_SET_AVAILABLE)

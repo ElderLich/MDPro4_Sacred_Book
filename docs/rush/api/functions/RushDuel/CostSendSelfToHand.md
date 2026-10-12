@@ -47,13 +47,13 @@ Generated from the local `Rush/Scripts/` folder and `rush_cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Star Replacer | `120244022` | [Rush/Scripts/c120244022.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120244022.lua) | 1 |
+| Star Replacer | `120244022` | [Rush/Scripts/c120244022.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120244022.lua) | 1 |
 
 ## Script Examples
 
 ### Star Replacer (`120244022`)
 
-Source: [Rush/Scripts/c120244022.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120244022.lua)
+Source: [Rush/Scripts/c120244022.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120244022.lua)
 
 ```lua
 	return Duel.GetFieldGroupCount(tp,LOCATION_MZONE,0)<=1

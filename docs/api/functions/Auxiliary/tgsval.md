@@ -39,14 +39,14 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Magical Mid-Breaker Field | `71650854` | [Scripts/c71650854.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c71650854.lua) | 1 |
-| Defense Zone | `59687381` | [Scripts/c59687381.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c59687381.lua) | 1 |
+| Magical Mid-Breaker Field | `71650854` | [Scripts/c71650854.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c71650854.lua) | 1 |
+| Defense Zone | `59687381` | [Scripts/c59687381.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c59687381.lua) | 1 |
 
 ## Script Examples
 
 ### Magical Mid-Breaker Field (`71650854`)
 
-Source: [Scripts/c71650854.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c71650854.lua)
+Source: [Scripts/c71650854.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c71650854.lua)
 
 ```lua
 	local e4=e2:Clone()
@@ -58,7 +58,7 @@ Source: [Scripts/c71650854.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/
 
 ### Defense Zone (`59687381`)
 
-Source: [Scripts/c59687381.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c59687381.lua)
+Source: [Scripts/c59687381.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c59687381.lua)
 
 ```lua
 	local e3=e1:Clone()

@@ -34,18 +34,18 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Cynet Circuit | `82886276` | [Scripts/c82886276.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c82886276.lua) | 8 |
-| Firewall eXceed Dragon | `21065189` | [Scripts/c21065189.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c21065189.lua) | 8 |
-| Centerfrog | `47346782` | [Scripts/c47346782.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c47346782.lua) | 2 |
-| Procession of the Tea Jar | `12612470` | [Scripts/c12612470.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c12612470.lua) | 2 |
-| Knightmare Corruptor Iblee | `10158145` | [Scripts/c10158145.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c10158145.lua) | 2 |
-| Yajiro Invader | `10852583` | [Scripts/c10852583.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c10852583.lua) | 2 |
+| Cynet Circuit | `82886276` | [Scripts/c82886276.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c82886276.lua) | 8 |
+| Firewall eXceed Dragon | `21065189` | [Scripts/c21065189.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c21065189.lua) | 8 |
+| Centerfrog | `47346782` | [Scripts/c47346782.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c47346782.lua) | 2 |
+| Procession of the Tea Jar | `12612470` | [Scripts/c12612470.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c12612470.lua) | 2 |
+| Knightmare Corruptor Iblee | `10158145` | [Scripts/c10158145.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c10158145.lua) | 2 |
+| Yajiro Invader | `10852583` | [Scripts/c10852583.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c10852583.lua) | 2 |
 
 ## Script Examples
 
 ### Cynet Circuit (`82886276`)
 
-Source: [Scripts/c82886276.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c82886276.lua)
+Source: [Scripts/c82886276.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c82886276.lua)
 
 ```lua
 function s.get_zone(c,seq)
@@ -57,7 +57,7 @@ function s.get_zone(c,seq)
 
 ### Firewall eXceed Dragon (`21065189`)
 
-Source: [Scripts/c21065189.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c21065189.lua)
+Source: [Scripts/c21065189.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c21065189.lua)
 
 ```lua
 function c21065189.get_zone(c,seq)
@@ -69,7 +69,7 @@ function c21065189.get_zone(c,seq)
 
 ### Centerfrog (`47346782`)
 
-Source: [Scripts/c47346782.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c47346782.lua)
+Source: [Scripts/c47346782.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c47346782.lua)
 
 ```lua
 		or (seq<4 and Duel.CheckLocation(1-tp,LOCATION_MZONE,seq+1)) then

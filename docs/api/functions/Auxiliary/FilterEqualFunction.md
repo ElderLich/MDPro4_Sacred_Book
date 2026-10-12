@@ -33,14 +33,14 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Starry Dragon's Cycle | `6278008` | [Scripts/c6278008.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c6278008.lua) | 2 |
-| Sextet Summon | `99162753` | [Scripts/c99162753.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c99162753.lua) | 1 |
+| Starry Dragon's Cycle | `6278008` | [Scripts/c6278008.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c6278008.lua) | 2 |
+| Sextet Summon | `99162753` | [Scripts/c99162753.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c99162753.lua) | 1 |
 
 ## Script Examples
 
 ### Starry Dragon's Cycle (`6278008`)
 
-Source: [Scripts/c6278008.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c6278008.lua)
+Source: [Scripts/c6278008.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c6278008.lua)
 
 ```lua
 	local f=aux.FALSE
@@ -52,7 +52,7 @@ Source: [Scripts/c6278008.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/b
 
 ### Sextet Summon (`99162753`)
 
-Source: [Scripts/c99162753.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c99162753.lua)
+Source: [Scripts/c99162753.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c99162753.lua)
 
 ```lua
 end

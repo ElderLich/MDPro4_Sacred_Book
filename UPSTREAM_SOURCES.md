@@ -38,7 +38,7 @@ Both filename sets and every file's blob ID match upstream. The Rush snapshot al
 
 Older raw hashes below used Windows working-copy line endings. The current verifier reads Git blobs directly, so unchanged helpers/defines can have different raw hashes while their Git blob IDs remain unchanged.
 
-Both databases were refreshed from `D:\Programs\GitHub\MDPro3_Data\Data\locales\en-US` and passed SQLite integrity checks. Database counts can exceed script counts because alternate artwork and cards without standalone effects share scripts.
+Both databases were refreshed from `D:\Programs\GitHub\MDPro4_Data\Data\locales\en-US` and passed SQLite integrity checks. Database counts can exceed script counts because alternate artwork and cards without standalone effects share scripts.
 
 | Destination | Rows | SHA-256 |
 | --- | ---: | --- |

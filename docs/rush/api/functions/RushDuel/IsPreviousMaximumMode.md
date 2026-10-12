@@ -39,14 +39,14 @@ Generated from the local `Rush/Scripts/` folder and `rush_cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Time Machine | `120272058` | [Rush/Scripts/c120272058.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120272058.lua) | 1 |
-| Altar of the Twin Blaze Fiends | `120287036` | [Rush/Scripts/c120287036.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120287036.lua) | 1 |
+| Time Machine | `120272058` | [Rush/Scripts/c120272058.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120272058.lua) | 1 |
+| Altar of the Twin Blaze Fiends | `120287036` | [Rush/Scripts/c120287036.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120287036.lua) | 1 |
 
 ## Script Examples
 
 ### Time Machine (`120272058`)
 
-Source: [Rush/Scripts/c120272058.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120272058.lua)
+Source: [Rush/Scripts/c120272058.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120272058.lua)
 
 ```lua
 		and tc:IsCanBeSpecialSummoned(e,0,tp,false,false,tc:GetPreviousPosition(),tc:GetPreviousControler()) end
@@ -58,7 +58,7 @@ Source: [Rush/Scripts/c120272058.lua](https://github.com/ElderLich/MDPro3_Sacred
 
 ### Altar of the Twin Blaze Fiends (`120287036`)
 
-Source: [Rush/Scripts/c120287036.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120287036.lua)
+Source: [Rush/Scripts/c120287036.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120287036.lua)
 
 ```lua
 end

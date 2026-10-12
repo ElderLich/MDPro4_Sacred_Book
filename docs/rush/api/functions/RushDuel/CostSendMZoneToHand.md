@@ -54,16 +54,16 @@ Generated from the local `Rush/Scripts/` folder and `rush_cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| CAN - Melo:D | `120203010` | [Rush/Scripts/c120203010.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120203010.lua) | 1 |
-| Jointech Spike Centipede | `120249007` | [Rush/Scripts/c120249007.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120249007.lua) | 1 |
-| Harpie Cielo | `120102003` | [Rush/Scripts/c120102003.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120102003.lua) | 1 |
-| Giant Tiger Strike | `120247037` | [Rush/Scripts/c120247037.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120247037.lua) | 1 |
+| CAN - Melo:D | `120203010` | [Rush/Scripts/c120203010.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120203010.lua) | 1 |
+| Jointech Spike Centipede | `120249007` | [Rush/Scripts/c120249007.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120249007.lua) | 1 |
+| Harpie Cielo | `120102003` | [Rush/Scripts/c120102003.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120102003.lua) | 1 |
+| Giant Tiger Strike | `120247037` | [Rush/Scripts/c120247037.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120247037.lua) | 1 |
 
 ## Script Examples
 
 ### CAN - Melo:D (`120203010`)
 
-Source: [Rush/Scripts/c120203010.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120203010.lua)
+Source: [Rush/Scripts/c120203010.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120203010.lua)
 
 ```lua
 	return c:IsType(TYPE_NORMAL) and c:IsLevel(1) and c:IsRace(RACE_PSYCHO) and c:IsAbleToHand()
@@ -75,7 +75,7 @@ function cm.target(e,tp,eg,ep,ev,re,r,rp,chk)
 
 ### Jointech Spike Centipede (`120249007`)
 
-Source: [Rush/Scripts/c120249007.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120249007.lua)
+Source: [Rush/Scripts/c120249007.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120249007.lua)
 
 ```lua
 		and c:IsRace(RACE_MACHINE) and RD.IsAbleToHandOrExtraAsCost(c)
@@ -87,7 +87,7 @@ function cm.target(e,tp,eg,ep,ev,re,r,rp,chk)
 
 ### Harpie Cielo (`120102003`)
 
-Source: [Rush/Scripts/c120102003.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120102003.lua)
+Source: [Rush/Scripts/c120102003.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120102003.lua)
 
 ```lua
 	return c:IsCode(list[3]) and c:IsAbleToHand()

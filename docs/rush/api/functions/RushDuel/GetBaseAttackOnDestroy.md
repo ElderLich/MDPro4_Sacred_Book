@@ -51,14 +51,14 @@ Generated from the local `Rush/Scripts/` folder and `rush_cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Elemental HERO Shining Flare Wingman | `120264000` | [Rush/Scripts/c120264000.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120264000.lua) | 1 |
-| Elemental HERO Flame Wingman | `120263001` | [Rush/Scripts/c120263001.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120263001.lua) | 1 |
+| Elemental HERO Shining Flare Wingman | `120264000` | [Rush/Scripts/c120264000.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120264000.lua) | 1 |
+| Elemental HERO Flame Wingman | `120263001` | [Rush/Scripts/c120263001.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120263001.lua) | 1 |
 
 ## Script Examples
 
 ### Elemental HERO Shining Flare Wingman (`120264000`)
 
-Source: [Rush/Scripts/c120264000.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120264000.lua)
+Source: [Rush/Scripts/c120264000.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120264000.lua)
 
 ```lua
 function cm.damop(e,tp,eg,ep,ev,re,r,rp,tc)
@@ -70,7 +70,7 @@ function cm.damop(e,tp,eg,ep,ev,re,r,rp,tc)
 
 ### Elemental HERO Flame Wingman (`120263001`)
 
-Source: [Rush/Scripts/c120263001.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120263001.lua)
+Source: [Rush/Scripts/c120263001.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120263001.lua)
 
 ```lua
 function cm.damop(e,tp,eg,ep,ev,re,r,rp,tc)

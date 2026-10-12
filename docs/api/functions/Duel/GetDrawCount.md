@@ -31,15 +31,15 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Gravekeeper's Trap | `98715423` | [Scripts/c98715423.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c98715423.lua) | 1 |
-| Zexal Field | `95856586` | [Scripts/c95856586.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c95856586.lua) | 1 |
-| Skull Flame | `99899504` | [Scripts/c99899504.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c99899504.lua) | 1 |
+| Gravekeeper's Trap | `98715423` | [Scripts/c98715423.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c98715423.lua) | 1 |
+| Zexal Field | `95856586` | [Scripts/c95856586.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c95856586.lua) | 1 |
+| Skull Flame | `99899504` | [Scripts/c99899504.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c99899504.lua) | 1 |
 
 ## Script Examples
 
 ### Gravekeeper's Trap (`98715423`)
 
-Source: [Scripts/c98715423.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c98715423.lua)
+Source: [Scripts/c98715423.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c98715423.lua)
 
 ```lua
 function c98715423.cfcon(e,tp,eg,ep,ev,re,r,rp)
@@ -51,7 +51,7 @@ function c98715423.cftg(e,tp,eg,ep,ev,re,r,rp,chk)
 
 ### Zexal Field (`95856586`)
 
-Source: [Scripts/c95856586.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c95856586.lua)
+Source: [Scripts/c95856586.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c95856586.lua)
 
 ```lua
 function c95856586.tdcon(e,tp,eg,ep,ev,re,r,rp)
@@ -63,7 +63,7 @@ function c95856586.tdfilter(c)
 
 ### Skull Flame (`99899504`)
 
-Source: [Scripts/c99899504.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c99899504.lua)
+Source: [Scripts/c99899504.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c99899504.lua)
 
 ```lua
 	if chkc then return chkc:IsControler(tp) and chkc:IsLocation(LOCATION_GRAVE) and c99899504.thfilter(chkc) end

@@ -37,15 +37,15 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Zero Extra Link | `60162470` | [Scripts/c60162470.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c60162470.lua) | 1 |
-| V-LAN Hydra | `13536606` | [Scripts/c13536606.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c13536606.lua) | 1 |
-| Akashic Magician | `28776350` | [Scripts/c28776350.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c28776350.lua) | 2 |
+| Zero Extra Link | `60162470` | [Scripts/c60162470.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c60162470.lua) | 1 |
+| V-LAN Hydra | `13536606` | [Scripts/c13536606.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c13536606.lua) | 1 |
+| Akashic Magician | `28776350` | [Scripts/c28776350.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c28776350.lua) | 2 |
 
 ## Script Examples
 
 ### Zero Extra Link (`60162470`)
 
-Source: [Scripts/c60162470.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c60162470.lua)
+Source: [Scripts/c60162470.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c60162470.lua)
 
 ```lua
 	local lg=Duel.GetMatchingGroup(c60162470.lkfilter,tp,LOCATION_MZONE,LOCATION_MZONE,nil)
@@ -57,7 +57,7 @@ Source: [Scripts/c60162470.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/
 
 ### V-LAN Hydra (`13536606`)
 
-Source: [Scripts/c13536606.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c13536606.lua)
+Source: [Scripts/c13536606.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c13536606.lua)
 
 ```lua
 function c13536606.tktg(e,tp,eg,ep,ev,re,r,rp,chk,chkc)
@@ -69,7 +69,7 @@ function c13536606.tktg(e,tp,eg,ep,ev,re,r,rp,chk,chkc)
 
 ### Akashic Magician (`28776350`)
 
-Source: [Scripts/c28776350.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c28776350.lua)
+Source: [Scripts/c28776350.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c28776350.lua)
 
 ```lua
 	if chk==0 then

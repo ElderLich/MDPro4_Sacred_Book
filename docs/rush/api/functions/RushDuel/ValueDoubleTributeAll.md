@@ -50,16 +50,16 @@ Generated from the local `Rush/Scripts/` folder and `rush_cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Bikuribot | `120109043` | [Rush/Scripts/c120109043.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120109043.lua) | 1 |
-| Furtunate Cat | `120246016` | [Rush/Scripts/c120246016.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120246016.lua) | 1 |
-| Excutie Power Up! | `120208052` | [Rush/Scripts/c120208052.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120208052.lua) | 1 |
-| Beast Swords - Tiger Sabre | `120228058` | [Rush/Scripts/c120228058.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120228058.lua) | 1 |
+| Bikuribot | `120109043` | [Rush/Scripts/c120109043.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120109043.lua) | 1 |
+| Furtunate Cat | `120246016` | [Rush/Scripts/c120246016.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120246016.lua) | 1 |
+| Excutie Power Up! | `120208052` | [Rush/Scripts/c120208052.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120208052.lua) | 1 |
+| Beast Swords - Tiger Sabre | `120228058` | [Rush/Scripts/c120228058.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120228058.lua) | 1 |
 
 ## Script Examples
 
 ### Bikuribot (`120109043`)
 
-Source: [Rush/Scripts/c120109043.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120109043.lua)
+Source: [Rush/Scripts/c120109043.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120109043.lua)
 
 ```lua
 end
@@ -71,7 +71,7 @@ function cm.spfilter(c,e,tp)
 
 ### Furtunate Cat (`120246016`)
 
-Source: [Rush/Scripts/c120246016.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120246016.lua)
+Source: [Rush/Scripts/c120246016.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120246016.lua)
 
 ```lua
 end
@@ -83,7 +83,7 @@ function cm.spfilter(c,e,tp)
 
 ### Excutie Power Up! (`120208052`)
 
-Source: [Rush/Scripts/c120208052.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120208052.lua)
+Source: [Rush/Scripts/c120208052.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120208052.lua)
 
 ```lua
 end

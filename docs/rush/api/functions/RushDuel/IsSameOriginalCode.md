@@ -46,16 +46,16 @@ Generated from the local `Rush/Scripts/` folder and `rush_cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Hysteric Eyes | `120304063` | [Rush/Scripts/c120304063.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120304063.lua) | 2 |
-| Eria the Water Spiritualist | `120301010` | [Rush/Scripts/c120301010.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120301010.lua) | 1 |
-| Hybridrive Screwdriver | `120261006` | [Rush/Scripts/c120261006.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120261006.lua) | 1 |
-| Lore Leimey | `120294037` | [Rush/Scripts/c120294037.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120294037.lua) | 1 |
+| Hysteric Eyes | `120304063` | [Rush/Scripts/c120304063.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120304063.lua) | 2 |
+| Eria the Water Spiritualist | `120301010` | [Rush/Scripts/c120301010.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120301010.lua) | 1 |
+| Hybridrive Screwdriver | `120261006` | [Rush/Scripts/c120261006.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120261006.lua) | 1 |
+| Lore Leimey | `120294037` | [Rush/Scripts/c120294037.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120294037.lua) | 1 |
 
 ## Script Examples
 
 ### Hysteric Eyes (`120304063`)
 
-Source: [Rush/Scripts/c120304063.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120304063.lua)
+Source: [Rush/Scripts/c120304063.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120304063.lua)
 
 ```lua
 				local tc1,tc2=sg:GetFirst(),sg:GetNext()
@@ -67,7 +67,7 @@ Source: [Rush/Scripts/c120304063.lua](https://github.com/ElderLich/MDPro3_Sacred
 
 ### Eria the Water Spiritualist (`120301010`)
 
-Source: [Rush/Scripts/c120301010.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120301010.lua)
+Source: [Rush/Scripts/c120301010.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120301010.lua)
 
 ```lua
 		local tc=g:GetFirst()
@@ -79,7 +79,7 @@ Source: [Rush/Scripts/c120301010.lua](https://github.com/ElderLich/MDPro3_Sacred
 
 ### Hybridrive Screwdriver (`120261006`)
 
-Source: [Rush/Scripts/c120261006.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120261006.lua)
+Source: [Rush/Scripts/c120261006.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120261006.lua)
 
 ```lua
 			local tc=Duel.GetOperatedGroup():GetFirst()

@@ -28,15 +28,15 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Trickstar Light Stage | `35371948` | [Scripts/c35371948.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c35371948.lua) | 1 |
-| Trickstar Light Arena | `63492244` | [Scripts/c63492244.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c63492244.lua) | 1 |
-| Goblin Freefall Squad | `85123771` | [Scripts/c85123771.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c85123771.lua) | 1 |
+| Trickstar Light Stage | `35371948` | [Scripts/c35371948.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c35371948.lua) | 1 |
+| Trickstar Light Arena | `63492244` | [Scripts/c63492244.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c63492244.lua) | 1 |
+| Goblin Freefall Squad | `85123771` | [Scripts/c85123771.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c85123771.lua) | 1 |
 
 ## Script Examples
 
 ### Trickstar Light Stage (`35371948`)
 
-Source: [Scripts/c35371948.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c35371948.lua)
+Source: [Scripts/c35371948.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c35371948.lua)
 
 ```lua
 	local c=e:GetHandler()
@@ -48,7 +48,7 @@ Source: [Scripts/c35371948.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/
 
 ### Trickstar Light Arena (`63492244`)
 
-Source: [Scripts/c63492244.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c63492244.lua)
+Source: [Scripts/c63492244.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c63492244.lua)
 
 ```lua
 	local c=e:GetHandler()
@@ -60,7 +60,7 @@ Source: [Scripts/c63492244.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/
 
 ### Goblin Freefall Squad (`85123771`)
 
-Source: [Scripts/c85123771.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c85123771.lua)
+Source: [Scripts/c85123771.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c85123771.lua)
 
 ```lua
 	local c=e:GetHandler()

@@ -34,17 +34,17 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Nibiru, the Primal Being | `27204311` | [Scripts/c27204311.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c27204311.lua) | 1 |
-| Vendread Reunion | `2266498` | [Scripts/c2266498.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c2266498.lua) | 1 |
-| Ame no Habakiri no Mitsurugi | `13332685` | [Scripts/c13332685.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c13332685.lua) | 1 |
-| Mitsurugi Sacred Boundary | `12210097` | [Scripts/c12210097.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c12210097.lua) | 1 |
-| EMERGENCY! | `61292243` | [Scripts/c61292243.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c61292243.lua) | 1 |
+| Nibiru, the Primal Being | `27204311` | [Scripts/c27204311.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c27204311.lua) | 1 |
+| Vendread Reunion | `2266498` | [Scripts/c2266498.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c2266498.lua) | 1 |
+| Ame no Habakiri no Mitsurugi | `13332685` | [Scripts/c13332685.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c13332685.lua) | 1 |
+| Mitsurugi Sacred Boundary | `12210097` | [Scripts/c12210097.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c12210097.lua) | 1 |
+| EMERGENCY! | `61292243` | [Scripts/c61292243.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c61292243.lua) | 1 |
 
 ## Script Examples
 
 ### Nibiru, the Primal Being (`27204311`)
 
-Source: [Scripts/c27204311.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c27204311.lua)
+Source: [Scripts/c27204311.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c27204311.lua)
 
 ```lua
 	local g=Duel.GetMatchingGroup(Card.IsFaceup,tp,LOCATION_MZONE,LOCATION_MZONE,nil)
@@ -56,7 +56,7 @@ Source: [Scripts/c27204311.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/
 
 ### Vendread Reunion (`2266498`)
 
-Source: [Scripts/c2266498.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c2266498.lua)
+Source: [Scripts/c2266498.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c2266498.lua)
 
 ```lua
 end
@@ -68,7 +68,7 @@ end
 
 ### Ame no Habakiri no Mitsurugi (`13332685`)
 
-Source: [Scripts/c13332685.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c13332685.lua)
+Source: [Scripts/c13332685.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c13332685.lua)
 
 ```lua
 function s.sptg(e,tp,eg,ep,ev,re,r,rp,chk)

@@ -62,18 +62,18 @@ Generated from the local `Rush/Scripts/` folder and `rush_cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Dragonic Force | `120246034` | [Rush/Scripts/c120246034.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120246034.lua) | 1 |
-| Yurushima Warrior | `120140004` | [Rush/Scripts/c120140004.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120140004.lua) | 1 |
-| CAN - Sp:D | `120217029` | [Rush/Scripts/c120217029.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120217029.lua) | 1 |
-| Neutron Blast | `120283038` | [Rush/Scripts/c120283038.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120283038.lua) | 1 |
-| Jointech Tosceratops | `120224001` | [Rush/Scripts/c120224001.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120224001.lua) | 1 |
-| Harpie Lady 2 | `120247005` | [Rush/Scripts/c120247005.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120247005.lua) | 1 |
+| Dragonic Force | `120246034` | [Rush/Scripts/c120246034.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120246034.lua) | 1 |
+| Yurushima Warrior | `120140004` | [Rush/Scripts/c120140004.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120140004.lua) | 1 |
+| CAN - Sp:D | `120217029` | [Rush/Scripts/c120217029.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120217029.lua) | 1 |
+| Neutron Blast | `120283038` | [Rush/Scripts/c120283038.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120283038.lua) | 1 |
+| Jointech Tosceratops | `120224001` | [Rush/Scripts/c120224001.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120224001.lua) | 1 |
+| Harpie Lady 2 | `120247005` | [Rush/Scripts/c120247005.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120247005.lua) | 1 |
 
 ## Script Examples
 
 ### Dragonic Force (`120246034`)
 
-Source: [Rush/Scripts/c120246034.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120246034.lua)
+Source: [Rush/Scripts/c120246034.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120246034.lua)
 
 ```lua
 		local tc=g:GetFirst()
@@ -85,7 +85,7 @@ Source: [Rush/Scripts/c120246034.lua](https://github.com/ElderLich/MDPro3_Sacred
 
 ### Yurushima Warrior (`120140004`)
 
-Source: [Rush/Scripts/c120140004.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120140004.lua)
+Source: [Rush/Scripts/c120140004.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120140004.lua)
 
 ```lua
 function cm.operation(e,tp,eg,ep,ev,re,r,rp)
@@ -97,7 +97,7 @@ end
 
 ### CAN - Sp:D (`120217029`)
 
-Source: [Rush/Scripts/c120217029.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120217029.lua)
+Source: [Rush/Scripts/c120217029.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120217029.lua)
 
 ```lua
 		local tc=g:GetFirst()

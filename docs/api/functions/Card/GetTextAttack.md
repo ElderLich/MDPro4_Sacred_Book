@@ -32,37 +32,37 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| [Destratification Dino Stratiae](/examples/cards/3841104) | `3841104` | [Scripts/c3841104.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c3841104.lua) | 1 |
-| Duel Link Dragon, the Duel Dragon | `60025883` | [Scripts/c60025883.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c60025883.lua) | 1 |
-| Meklord Astro Mekanikle | `63468625` | [Scripts/c63468625.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c63468625.lua) | 2 |
-| Spirit Poacher | `85150300` | [Scripts/c85150300.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c85150300.lua) | 1 |
-| Raidraptor - Rising Rebellion Falcon | `71222868` | [Scripts/c71222868.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c71222868.lua) | 2 |
-| Super Armored Robot Armed Black Iron "C" | `77754169` | [Scripts/c77754169.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c77754169.lua) | 2 |
-| Cynet Backdoor | `43839002` | [Scripts/c43839002.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c43839002.lua) | 4 |
-| Allure Queen LV5 | `23756165` | [Scripts/c23756165.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c23756165.lua) | 1 |
-| Tragic Twin Twined Jewels | `81143465` | [Scripts/c81143465.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c81143465.lua) | 2 |
-| Meklord Astro Dragon Triskelion | `4837861` | [Scripts/c4837861.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c4837861.lua) | 1 |
-| Meklord Emperor Granel | `4545683` | [Scripts/c4545683.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c4545683.lua) | 1 |
-| CXyz Gimmick Puppet Fanatix Machinix | `3685372` | [Scripts/c3685372.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c3685372.lua) | 2 |
-| Crossmind Archfiend | `52644170` | [Scripts/c52644170.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c52644170.lua) | 2 |
-| Blaze Cannon | `4059313` | [Scripts/c4059313.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c4059313.lua) | 2 |
-| Maiden of Blue Tears | `99176254` | [Scripts/c99176254.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c99176254.lua) | 2 |
-| Meklord Emperor Skiel | `31930787` | [Scripts/c31930787.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c31930787.lua) | 1 |
-| Nightmare-Eyes Restrict | `30138615` | [Scripts/c30138615.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c30138615.lua) | 2 |
-| Ebon Sun | `96029570` | [Scripts/c96029570.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c96029570.lua) | 1 |
-| Crystal Clear Wing Synchro Dragon | `59765225` | [Scripts/c59765225.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c59765225.lua) | 1 |
-| Meklord Emperor Wisel | `68140974` | [Scripts/c68140974.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c68140974.lua) | 1 |
-| Gizmek Okami, the Dreaded Deluge Dragon | `43218406` | [Scripts/c43218406.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c43218406.lua) | 1 |
-| Zenet Per Akh | `72278590` | [Scripts/c72278590.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c72278590.lua) | 1 |
-| Nibiru, the Primal Being | `27204311` | [Scripts/c27204311.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c27204311.lua) | 2 |
-| Loud Cloud the Storm Serpent | `61465001` | [Scripts/c61465001.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c61465001.lua) | 1 |
+| [Destratification Dino Stratiae](/examples/cards/3841104) | `3841104` | [Scripts/c3841104.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c3841104.lua) | 1 |
+| Duel Link Dragon, the Duel Dragon | `60025883` | [Scripts/c60025883.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c60025883.lua) | 1 |
+| Meklord Astro Mekanikle | `63468625` | [Scripts/c63468625.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c63468625.lua) | 2 |
+| Spirit Poacher | `85150300` | [Scripts/c85150300.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c85150300.lua) | 1 |
+| Raidraptor - Rising Rebellion Falcon | `71222868` | [Scripts/c71222868.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c71222868.lua) | 2 |
+| Super Armored Robot Armed Black Iron "C" | `77754169` | [Scripts/c77754169.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c77754169.lua) | 2 |
+| Cynet Backdoor | `43839002` | [Scripts/c43839002.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c43839002.lua) | 4 |
+| Allure Queen LV5 | `23756165` | [Scripts/c23756165.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c23756165.lua) | 1 |
+| Tragic Twin Twined Jewels | `81143465` | [Scripts/c81143465.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c81143465.lua) | 2 |
+| Meklord Astro Dragon Triskelion | `4837861` | [Scripts/c4837861.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c4837861.lua) | 1 |
+| Meklord Emperor Granel | `4545683` | [Scripts/c4545683.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c4545683.lua) | 1 |
+| CXyz Gimmick Puppet Fanatix Machinix | `3685372` | [Scripts/c3685372.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c3685372.lua) | 2 |
+| Crossmind Archfiend | `52644170` | [Scripts/c52644170.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c52644170.lua) | 2 |
+| Blaze Cannon | `4059313` | [Scripts/c4059313.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c4059313.lua) | 2 |
+| Maiden of Blue Tears | `99176254` | [Scripts/c99176254.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c99176254.lua) | 2 |
+| Meklord Emperor Skiel | `31930787` | [Scripts/c31930787.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c31930787.lua) | 1 |
+| Nightmare-Eyes Restrict | `30138615` | [Scripts/c30138615.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c30138615.lua) | 2 |
+| Ebon Sun | `96029570` | [Scripts/c96029570.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c96029570.lua) | 1 |
+| Crystal Clear Wing Synchro Dragon | `59765225` | [Scripts/c59765225.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c59765225.lua) | 1 |
+| Meklord Emperor Wisel | `68140974` | [Scripts/c68140974.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c68140974.lua) | 1 |
+| Gizmek Okami, the Dreaded Deluge Dragon | `43218406` | [Scripts/c43218406.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c43218406.lua) | 1 |
+| Zenet Per Akh | `72278590` | [Scripts/c72278590.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c72278590.lua) | 1 |
+| Nibiru, the Primal Being | `27204311` | [Scripts/c27204311.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c27204311.lua) | 2 |
+| Loud Cloud the Storm Serpent | `61465001` | [Scripts/c61465001.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c61465001.lua) | 1 |
 | ...and 85 more |  |  |  |
 
 ## Script Examples
 
 ### Destratification Dino Stratiae (`3841104`)
 
-Source: [Scripts/c3841104.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c3841104.lua)
+Source: [Scripts/c3841104.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c3841104.lua)
 
 ```lua
 	for tc in aux.Next(g) do
@@ -74,7 +74,7 @@ Source: [Scripts/c3841104.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/b
 
 ### Duel Link Dragon, the Duel Dragon (`60025883`)
 
-Source: [Scripts/c60025883.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c60025883.lua)
+Source: [Scripts/c60025883.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c60025883.lua)
 
 ```lua
 	local zone=bit.band(c:GetLinkedZone(tp),0x1f)
@@ -86,7 +86,7 @@ Source: [Scripts/c60025883.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/
 
 ### Meklord Astro Mekanikle (`63468625`)
 
-Source: [Scripts/c63468625.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c63468625.lua)
+Source: [Scripts/c63468625.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c63468625.lua)
 
 ```lua
 	local tc=Duel.GetFirstTarget()

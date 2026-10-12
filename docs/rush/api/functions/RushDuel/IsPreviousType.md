@@ -46,23 +46,23 @@ Generated from the local `Rush/Scripts/` folder and `rush_cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| [Revenge MAX](/examples/rush-cards/120228065) | `120228065` | [Rush/Scripts/c120228065.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120228065.lua) | 1 |
-| [Star Protector Recapture](/examples/rush-cards/120306063) | `120306063` | [Rush/Scripts/c120306063.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120306063.lua) | 1 |
-| Alchemicalize Salamandra | `120235032` | [Rush/Scripts/c120235032.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120235032.lua) | 1 |
-| Resurrection of the Blaze Fiends | `120231017` | [Rush/Scripts/c120231017.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120231017.lua) | 1 |
-| Archfiend's Revival | `120170062` | [Rush/Scripts/c120170062.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120170062.lua) | 1 |
-| Counter Back | `120203031` | [Rush/Scripts/c120203031.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120203031.lua) | 1 |
-| Faulty Fire | `120145060` | [Rush/Scripts/c120145060.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120145060.lua) | 1 |
-| Driving Snow | `120130050` | [Rush/Scripts/c120130050.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120130050.lua) | 1 |
-| Gust | `120120048` | [Rush/Scripts/c120120048.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120120048.lua) | 1 |
-| Brutal Retribution | `120120049` | [Rush/Scripts/c120120049.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120120049.lua) | 1 |
-| Hunting Strawberries | `120208064` | [Rush/Scripts/c120208064.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120208064.lua) | 1 |
+| [Revenge MAX](/examples/rush-cards/120228065) | `120228065` | [Rush/Scripts/c120228065.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120228065.lua) | 1 |
+| [Star Protector Recapture](/examples/rush-cards/120306063) | `120306063` | [Rush/Scripts/c120306063.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120306063.lua) | 1 |
+| Alchemicalize Salamandra | `120235032` | [Rush/Scripts/c120235032.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120235032.lua) | 1 |
+| Resurrection of the Blaze Fiends | `120231017` | [Rush/Scripts/c120231017.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120231017.lua) | 1 |
+| Archfiend's Revival | `120170062` | [Rush/Scripts/c120170062.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120170062.lua) | 1 |
+| Counter Back | `120203031` | [Rush/Scripts/c120203031.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120203031.lua) | 1 |
+| Faulty Fire | `120145060` | [Rush/Scripts/c120145060.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120145060.lua) | 1 |
+| Driving Snow | `120130050` | [Rush/Scripts/c120130050.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120130050.lua) | 1 |
+| Gust | `120120048` | [Rush/Scripts/c120120048.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120120048.lua) | 1 |
+| Brutal Retribution | `120120049` | [Rush/Scripts/c120120049.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120120049.lua) | 1 |
+| Hunting Strawberries | `120208064` | [Rush/Scripts/c120208064.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120208064.lua) | 1 |
 
 ## Script Examples
 
 ### Revenge MAX (`120228065`)
 
-Source: [Rush/Scripts/c120228065.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120228065.lua)
+Source: [Rush/Scripts/c120228065.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120228065.lua)
 
 ```lua
 	RD.SelectAndDoAction(HINTMSG_DESTROY,cm.filter,tp,LOCATION_ONFIELD,0,1,1,aux.ExceptThisCard(e),function(g)
@@ -74,7 +74,7 @@ Source: [Rush/Scripts/c120228065.lua](https://github.com/ElderLich/MDPro3_Sacred
 
 ### Star Protector Recapture (`120306063`)
 
-Source: [Rush/Scripts/c120306063.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120306063.lua)
+Source: [Rush/Scripts/c120306063.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120306063.lua)
 
 ```lua
 end
@@ -86,7 +86,7 @@ function cm.spfilter(c,e,tp)
 
 ### Alchemicalize Salamandra (`120235032`)
 
-Source: [Rush/Scripts/c120235032.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120235032.lua)
+Source: [Rush/Scripts/c120235032.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120235032.lua)
 
 ```lua
 end

@@ -44,24 +44,24 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Forbidden Ritual Art | `12157563` | [Scripts/c12157563.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c12157563.lua) | 1 |
-| Recette de Personnel (Staff Recipe) | `40551410` | [Scripts/c40551410.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c40551410.lua) | 1 |
-| Majesty of the White Dragons | `43219114` | [Scripts/c43219114.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c43219114.lua) | 1 |
-| Gishki Aquamirror | `46159582` | [Scripts/c46159582.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c46159582.lua) | 1 |
-| Nekroz Mirror | `14735698` | [Scripts/c14735698.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c14735698.lua) | 1 |
-| Nekroz Cycle | `97211663` | [Scripts/c97211663.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c97211663.lua) | 1 |
-| Zefrasaber, Swordmaster of the Nekroz | `84388461` | [Scripts/c84388461.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c84388461.lua) | 1 |
-| Chaos Form | `21082832` | [Scripts/c21082832.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c21082832.lua) | 1 |
-| Earth Chant | `59820352` | [Scripts/c59820352.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c59820352.lua) | 1 |
-| Sprite's Blessing | `37626500` | [Scripts/c37626500.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c37626500.lua) | 1 |
-| Breath of Acclamation | `44221928` | [Scripts/c44221928.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c44221928.lua) | 1 |
-| Contract with the Abyss | `69035382` | [Scripts/c69035382.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c69035382.lua) | 1 |
+| Forbidden Ritual Art | `12157563` | [Scripts/c12157563.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c12157563.lua) | 1 |
+| Recette de Personnel (Staff Recipe) | `40551410` | [Scripts/c40551410.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c40551410.lua) | 1 |
+| Majesty of the White Dragons | `43219114` | [Scripts/c43219114.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c43219114.lua) | 1 |
+| Gishki Aquamirror | `46159582` | [Scripts/c46159582.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c46159582.lua) | 1 |
+| Nekroz Mirror | `14735698` | [Scripts/c14735698.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c14735698.lua) | 1 |
+| Nekroz Cycle | `97211663` | [Scripts/c97211663.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c97211663.lua) | 1 |
+| Zefrasaber, Swordmaster of the Nekroz | `84388461` | [Scripts/c84388461.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c84388461.lua) | 1 |
+| Chaos Form | `21082832` | [Scripts/c21082832.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c21082832.lua) | 1 |
+| Earth Chant | `59820352` | [Scripts/c59820352.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c59820352.lua) | 1 |
+| Sprite's Blessing | `37626500` | [Scripts/c37626500.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c37626500.lua) | 1 |
+| Breath of Acclamation | `44221928` | [Scripts/c44221928.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c44221928.lua) | 1 |
+| Contract with the Abyss | `69035382` | [Scripts/c69035382.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c69035382.lua) | 1 |
 
 ## Script Examples
 
 ### Forbidden Ritual Art (`12157563`)
 
-Source: [Scripts/c12157563.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c12157563.lua)
+Source: [Scripts/c12157563.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c12157563.lua)
 
 ```lua
 function s.initial_effect(c)
@@ -73,7 +73,7 @@ function s.initial_effect(c)
 
 ### Recette de Personnel (Staff Recipe) (`40551410`)
 
-Source: [Scripts/c40551410.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c40551410.lua)
+Source: [Scripts/c40551410.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c40551410.lua)
 
 ```lua
 	c:RegisterEffect(e2)
@@ -85,7 +85,7 @@ Source: [Scripts/c40551410.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/
 
 ### Majesty of the White Dragons (`43219114`)
 
-Source: [Scripts/c43219114.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c43219114.lua)
+Source: [Scripts/c43219114.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c43219114.lua)
 
 ```lua
 	c:RegisterEffect(e1)

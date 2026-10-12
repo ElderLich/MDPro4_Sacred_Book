@@ -86,15 +86,15 @@ Generated from the local `Rush/Scripts/` folder and `rush_cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Isyria, Deity of the Monumenthes | `120300037` | [Rush/Scripts/c120300037.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120300037.lua) | 1 |
-| Animagica Double Saber | `120277030` | [Rush/Scripts/c120277030.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120277030.lua) | 1 |
-| Harpie Lady 2 &amp; 3 | `120279003` | [Rush/Scripts/c120279003.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120279003.lua) | 1 |
+| Isyria, Deity of the Monumenthes | `120300037` | [Rush/Scripts/c120300037.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120300037.lua) | 1 |
+| Animagica Double Saber | `120277030` | [Rush/Scripts/c120277030.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120277030.lua) | 1 |
+| Harpie Lady 2 &amp; 3 | `120279003` | [Rush/Scripts/c120279003.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120279003.lua) | 1 |
 
 ## Script Examples
 
 ### Isyria, Deity of the Monumenthes (`120300037`)
 
-Source: [Rush/Scripts/c120300037.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120300037.lua)
+Source: [Rush/Scripts/c120300037.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120300037.lua)
 
 ```lua
 	c:RegisterEffect(e2)
@@ -106,7 +106,7 @@ Source: [Rush/Scripts/c120300037.lua](https://github.com/ElderLich/MDPro3_Sacred
 
 ### Animagica Double Saber (`120277030`)
 
-Source: [Rush/Scripts/c120277030.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120277030.lua)
+Source: [Rush/Scripts/c120277030.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120277030.lua)
 
 ```lua
 function cm.initial_effect(c)
@@ -118,7 +118,7 @@ function cm.initial_effect(c)
 
 ### Harpie Lady 2 & 3 (`120279003`)
 
-Source: [Rush/Scripts/c120279003.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120279003.lua)
+Source: [Rush/Scripts/c120279003.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120279003.lua)
 
 ```lua
 	RD.EnableContactFusion(c,aux.Stringid(m,0))

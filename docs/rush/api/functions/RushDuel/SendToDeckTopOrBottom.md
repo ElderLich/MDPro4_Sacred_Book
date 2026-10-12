@@ -56,17 +56,17 @@ Generated from the local `Rush/Scripts/` folder and `rush_cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| [Spice Cross Secret Recipe](/examples/rush-cards/120261060) | `120261060` | [Rush/Scripts/c120261060.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120261060.lua) | 1 |
-| Piercing Dragon Bunker Strike | `120130022` | [Rush/Scripts/c120130022.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120130022.lua) | 1 |
-| Cybersepice Nutmeg | `120261018` | [Rush/Scripts/c120261018.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120261018.lua) | 1 |
-| Psyquip da Capo | `120264052` | [Rush/Scripts/c120264052.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120264052.lua) | 1 |
-| Spice Cross Mix | `120261055` | [Rush/Scripts/c120261055.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120261055.lua) | 1 |
+| [Spice Cross Secret Recipe](/examples/rush-cards/120261060) | `120261060` | [Rush/Scripts/c120261060.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120261060.lua) | 1 |
+| Piercing Dragon Bunker Strike | `120130022` | [Rush/Scripts/c120130022.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120130022.lua) | 1 |
+| Cybersepice Nutmeg | `120261018` | [Rush/Scripts/c120261018.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120261018.lua) | 1 |
+| Psyquip da Capo | `120264052` | [Rush/Scripts/c120264052.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120264052.lua) | 1 |
+| Spice Cross Mix | `120261055` | [Rush/Scripts/c120261055.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120261055.lua) | 1 |
 
 ## Script Examples
 
 ### Spice Cross Secret Recipe (`120261060`)
 
-Source: [Rush/Scripts/c120261060.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120261060.lua)
+Source: [Rush/Scripts/c120261060.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120261060.lua)
 
 ```lua
 			RD.CanSelectAndDoAction(aux.Stringid(m,1),HINTMSG_TODECK,aux.NecroValleyFilter(Card.IsAbleToDeck),tp,0,LOCATION_GRAVE,1,1,nil,function(g)
@@ -78,7 +78,7 @@ Source: [Rush/Scripts/c120261060.lua](https://github.com/ElderLich/MDPro3_Sacred
 
 ### Piercing Dragon Bunker Strike (`120130022`)
 
-Source: [Rush/Scripts/c120130022.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120130022.lua)
+Source: [Rush/Scripts/c120130022.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120130022.lua)
 
 ```lua
 	RD.SelectAndDoAction(HINTMSG_TODECK,Card.IsAbleToDeck,p,LOCATION_HAND,0,ct,ct,nil,function(g)
@@ -90,7 +90,7 @@ end
 
 ### Cybersepice Nutmeg (`120261018`)
 
-Source: [Rush/Scripts/c120261018.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120261018.lua)
+Source: [Rush/Scripts/c120261018.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120261018.lua)
 
 ```lua
 	RD.CanSelectAndDoAction(aux.Stringid(m,2),HINTMSG_TODECK,filter,tp,LOCATION_GRAVE,LOCATION_GRAVE,1,1,nil,function(g)

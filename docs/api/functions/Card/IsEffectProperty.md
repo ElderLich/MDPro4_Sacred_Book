@@ -32,24 +32,24 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Argostars - Giantslaying | `30964246` | [Scripts/c30964246.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c30964246.lua) | 1 |
-| Arcana Force EX - The Chaos Ruler | `12686296` | [Scripts/c12686296.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c12686296.lua) | 1 |
-| Desperado Barrel Dragon | `76728962` | [Scripts/c76728962.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c76728962.lua) | 1 |
-| Armor Wizard Pazoo | `56779694` | [Scripts/c56779694.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c56779694.lua) | 1 |
-| Heosvarog the Mechanical Dawn | `8963089` | [Scripts/c8963089.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c8963089.lua) | 1 |
-| Goddess of the Two Sides | `50915474` | [Scripts/c50915474.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c50915474.lua) | 1 |
-| Candelato, the Beast of Light | `8315896` | [Scripts/c8315896.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c8315896.lua) | 1 |
-| Arcana Force XIX - The Sun | `39761418` | [Scripts/c39761418.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c39761418.lua) | 2 |
-| Arcana Spread | `76302448` | [Scripts/c76302448.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c76302448.lua) | 2 |
-| Arcana Reading | `11819473` | [Scripts/c11819473.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c11819473.lua) | 1 |
-| Dimension Dice | `47292920` | [Scripts/c47292920.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c47292920.lua) | 2 |
-| Diced Dice | `93078761` | [Scripts/c93078761.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c93078761.lua) | 1 |
+| Argostars - Giantslaying | `30964246` | [Scripts/c30964246.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c30964246.lua) | 1 |
+| Arcana Force EX - The Chaos Ruler | `12686296` | [Scripts/c12686296.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c12686296.lua) | 1 |
+| Desperado Barrel Dragon | `76728962` | [Scripts/c76728962.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c76728962.lua) | 1 |
+| Armor Wizard Pazoo | `56779694` | [Scripts/c56779694.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c56779694.lua) | 1 |
+| Heosvarog the Mechanical Dawn | `8963089` | [Scripts/c8963089.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c8963089.lua) | 1 |
+| Goddess of the Two Sides | `50915474` | [Scripts/c50915474.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c50915474.lua) | 1 |
+| Candelato, the Beast of Light | `8315896` | [Scripts/c8315896.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c8315896.lua) | 1 |
+| Arcana Force XIX - The Sun | `39761418` | [Scripts/c39761418.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c39761418.lua) | 2 |
+| Arcana Spread | `76302448` | [Scripts/c76302448.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c76302448.lua) | 2 |
+| Arcana Reading | `11819473` | [Scripts/c11819473.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c11819473.lua) | 1 |
+| Dimension Dice | `47292920` | [Scripts/c47292920.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c47292920.lua) | 2 |
+| Diced Dice | `93078761` | [Scripts/c93078761.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c93078761.lua) | 1 |
 
 ## Script Examples
 
 ### Argostars - Giantslaying (`30964246`)
 
-Source: [Scripts/c30964246.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c30964246.lua)
+Source: [Scripts/c30964246.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c30964246.lua)
 
 ```lua
 	return c:IsAllTypes(TYPE_CONTINUOUS|TYPE_TRAP) and c:IsFaceup() and
@@ -61,7 +61,7 @@ Source: [Scripts/c30964246.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/
 
 ### Arcana Force EX - The Chaos Ruler (`12686296`)
 
-Source: [Scripts/c12686296.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c12686296.lua)
+Source: [Scripts/c12686296.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c12686296.lua)
 
 ```lua
 end
@@ -73,7 +73,7 @@ function s.coinop(e,tp,eg,ep,ev,re,r,rp)
 
 ### Desperado Barrel Dragon (`76728962`)
 
-Source: [Scripts/c76728962.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c76728962.lua)
+Source: [Scripts/c76728962.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c76728962.lua)
 
 ```lua
 end

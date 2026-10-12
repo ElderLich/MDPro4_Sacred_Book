@@ -47,13 +47,13 @@ Generated from the local `Rush/Scripts/` folder and `rush_cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Green-Eyes Star Cat | `120235015` | [Rush/Scripts/c120235015.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120235015.lua) | 1 |
+| Green-Eyes Star Cat | `120235015` | [Rush/Scripts/c120235015.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120235015.lua) | 1 |
 
 ## Script Examples
 
 ### Green-Eyes Star Cat (`120235015`)
 
-Source: [Rush/Scripts/c120235015.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120235015.lua)
+Source: [Rush/Scripts/c120235015.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120235015.lua)
 
 ```lua
 end

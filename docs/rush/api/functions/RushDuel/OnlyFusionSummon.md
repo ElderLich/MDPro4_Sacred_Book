@@ -56,22 +56,22 @@ Generated from the local `Rush/Scripts/` folder and `rush_cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Elemental HERO Heliosphere | `120283029` | [Rush/Scripts/c120283029.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120283029.lua) | 1 |
-| Elemental HERO Thunder Giant | `120263003` | [Rush/Scripts/c120263003.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120263003.lua) | 1 |
-| Elemental HERO Plasma Vice | `120300066` | [Rush/Scripts/c120300066.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120300066.lua) | 1 |
-| Elemental HERO Burst Wingman | `120263002` | [Rush/Scripts/c120263002.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120263002.lua) | 1 |
-| Elemental HERO Mariner | `120272047` | [Rush/Scripts/c120272047.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120272047.lua) | 1 |
-| Elemental HERO Voltic Wingman | `120277065` | [Rush/Scripts/c120277065.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120277065.lua) | 1 |
-| Elemental HERO Shining Flare Wingman | `120264000` | [Rush/Scripts/c120264000.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120264000.lua) | 1 |
-| Five-Headed Dragon | `120238001` | [Rush/Scripts/c120238001.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120238001.lua) | 1 |
-| Elemental HERO Flame Wingman | `120263001` | [Rush/Scripts/c120263001.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120263001.lua) | 1 |
-| Elemental HERO Mudballman | `120109042` | [Rush/Scripts/c120109042.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120109042.lua) | 1 |
+| Elemental HERO Heliosphere | `120283029` | [Rush/Scripts/c120283029.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120283029.lua) | 1 |
+| Elemental HERO Thunder Giant | `120263003` | [Rush/Scripts/c120263003.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120263003.lua) | 1 |
+| Elemental HERO Plasma Vice | `120300066` | [Rush/Scripts/c120300066.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120300066.lua) | 1 |
+| Elemental HERO Burst Wingman | `120263002` | [Rush/Scripts/c120263002.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120263002.lua) | 1 |
+| Elemental HERO Mariner | `120272047` | [Rush/Scripts/c120272047.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120272047.lua) | 1 |
+| Elemental HERO Voltic Wingman | `120277065` | [Rush/Scripts/c120277065.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120277065.lua) | 1 |
+| Elemental HERO Shining Flare Wingman | `120264000` | [Rush/Scripts/c120264000.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120264000.lua) | 1 |
+| Five-Headed Dragon | `120238001` | [Rush/Scripts/c120238001.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120238001.lua) | 1 |
+| Elemental HERO Flame Wingman | `120263001` | [Rush/Scripts/c120263001.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120263001.lua) | 1 |
+| Elemental HERO Mudballman | `120109042` | [Rush/Scripts/c120109042.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120109042.lua) | 1 |
 
 ## Script Examples
 
 ### Elemental HERO Heliosphere (`120283029`)
 
-Source: [Rush/Scripts/c120283029.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120283029.lua)
+Source: [Rush/Scripts/c120283029.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120283029.lua)
 
 ```lua
 	RD.AddFusionProcedure(c,list[1],list[2],list[3])
@@ -83,7 +83,7 @@ Source: [Rush/Scripts/c120283029.lua](https://github.com/ElderLich/MDPro3_Sacred
 
 ### Elemental HERO Thunder Giant (`120263003`)
 
-Source: [Rush/Scripts/c120263003.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120263003.lua)
+Source: [Rush/Scripts/c120263003.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120263003.lua)
 
 ```lua
 	RD.AddFusionProcedure(c,list[1],list[2])
@@ -95,7 +95,7 @@ Source: [Rush/Scripts/c120263003.lua](https://github.com/ElderLich/MDPro3_Sacred
 
 ### Elemental HERO Plasma Vice (`120300066`)
 
-Source: [Rush/Scripts/c120300066.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120300066.lua)
+Source: [Rush/Scripts/c120300066.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120300066.lua)
 
 ```lua
 	RD.AddFusionProcedure(c,list[1],list[2])

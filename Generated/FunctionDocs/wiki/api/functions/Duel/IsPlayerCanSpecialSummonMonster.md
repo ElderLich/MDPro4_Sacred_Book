@@ -9,7 +9,7 @@ Duel.IsPlayerCanSpecialSummonMonster(int player, int code, [int|nil setcode], [i
 ## Description
 
 Checks whether player can Special Summon a virtual monster with the supplied card data.
-Optional arguments override the loaded card data, then pos, target_player, and sumtype describe how and where the monster would be Summoned. This MDPro3 binding does not read a zone argument.
+Optional arguments override the loaded card data, then pos, target_player, and sumtype describe how and where the monster would be Summoned. This MDPro4 binding does not read a zone argument.
 
 ## Parameters
 

@@ -38,21 +38,21 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Union Activation | `38527680` | [Scripts/c38527680.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c38527680.lua) | 2 |
-| Quick Summon | `10086952` | [Scripts/c10086952.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c10086952.lua) | 2 |
-| Condemned Darklord | `35306215` | [Scripts/c35306215.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c35306215.lua) | 1 |
-| Leo Wizard the Dark Fiend | `55423549` | [Scripts/c55423549.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c55423549.lua) | 1 |
-| Floowandereeze and the Unexplored Winds | `55521751` | [Scripts/c55521751.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c55521751.lua) | 1 |
-| Mausoleum of the Emperor | `80921533` | [Scripts/c80921533.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c80921533.lua) | 3 |
-| Tribute Burial | `80230510` | [Scripts/c80230510.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c80230510.lua) | 1 |
-| Ancient Gear Castle | `92001300` | [Scripts/c92001300.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c92001300.lua) | 1 |
-| Kaiser Colosseum | `35059553` | [Scripts/c35059553.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c35059553.lua) | 1 |
+| Union Activation | `38527680` | [Scripts/c38527680.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c38527680.lua) | 2 |
+| Quick Summon | `10086952` | [Scripts/c10086952.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c10086952.lua) | 2 |
+| Condemned Darklord | `35306215` | [Scripts/c35306215.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c35306215.lua) | 1 |
+| Leo Wizard the Dark Fiend | `55423549` | [Scripts/c55423549.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c55423549.lua) | 1 |
+| Floowandereeze and the Unexplored Winds | `55521751` | [Scripts/c55521751.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c55521751.lua) | 1 |
+| Mausoleum of the Emperor | `80921533` | [Scripts/c80921533.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c80921533.lua) | 3 |
+| Tribute Burial | `80230510` | [Scripts/c80230510.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c80230510.lua) | 1 |
+| Ancient Gear Castle | `92001300` | [Scripts/c92001300.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c92001300.lua) | 1 |
+| Kaiser Colosseum | `35059553` | [Scripts/c35059553.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c35059553.lua) | 1 |
 
 ## Script Examples
 
 ### Union Activation (`38527680`)
 
-Source: [Scripts/c38527680.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c38527680.lua)
+Source: [Scripts/c38527680.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c38527680.lua)
 
 ```lua
 end
@@ -64,7 +64,7 @@ end
 
 ### Quick Summon (`10086952`)
 
-Source: [Scripts/c10086952.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c10086952.lua)
+Source: [Scripts/c10086952.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c10086952.lua)
 
 ```lua
 end
@@ -76,7 +76,7 @@ function s.thfilter2(c,e,tp)
 
 ### Condemned Darklord (`35306215`)
 
-Source: [Scripts/c35306215.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c35306215.lua)
+Source: [Scripts/c35306215.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c35306215.lua)
 
 ```lua
 end

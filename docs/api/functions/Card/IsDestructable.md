@@ -33,37 +33,37 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| [Astrograph Sorcerer, the Starfrost Magician](/examples/cards/48171151) | `48171151` | [Scripts/c48171151.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c48171151.lua) | 1 |
-| [Camelot, Realm of Noble Knights and Noble Arms](/examples/cards/15635751) | `15635751` | [Scripts/c15635751.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c15635751.lua) | 1 |
-| Heavy Interlock | `20071842` | [Scripts/c20071842.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c20071842.lua) | 1 |
-| Sleepy Scapegoats | `3129527` | [Scripts/c3129527.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c3129527.lua) | 1 |
-| Sea Lancer | `22842214` | [Scripts/c22842214.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c22842214.lua) | 1 |
-| Dual Avatar Feet - Armored Un-Gyo | `7631534` | [Scripts/c7631534.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c7631534.lua) | 1 |
-| Unchained Firelord of Yama | `94014327` | [Scripts/c94014327.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c94014327.lua) | 1 |
-| Rapid Trigger | `67526112` | [Scripts/c67526112.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c67526112.lua) | 1 |
-| Odd-Eyes Pendulum Dragon, Four Heavenly Dragons | `75787708` | [Scripts/c75787708.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c75787708.lua) | 1 |
-| Lost World | `17228908` | [Scripts/c17228908.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c17228908.lua) | 1 |
-| Fire King Sanctuary | `65305978` | [Scripts/c65305978.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c65305978.lua) | 1 |
-| Salamandra Fusion | `9102835` | [Scripts/c9102835.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c9102835.lua) | 1 |
-| Odd-Eyes Lancer Dragon | `83347294` | [Scripts/c83347294.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c83347294.lua) | 1 |
-| Harpie Conductor | `85696777` | [Scripts/c85696777.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c85696777.lua) | 1 |
-| Mythical Beast Master Cerberus | `53842431` | [Scripts/c53842431.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c53842431.lua) | 1 |
-| Mythical Beast Medusa | `54965929` | [Scripts/c54965929.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c54965929.lua) | 1 |
-| Mythical Beast Garuda | `28570310` | [Scripts/c28570310.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c28570310.lua) | 1 |
-| Rokket Barrage | `53481938` | [Scripts/c53481938.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c53481938.lua) | 1 |
-| Underground Arachnid | `63465535` | [Scripts/c63465535.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c63465535.lua) | 1 |
-| Empire of Endymion | `34041788` | [Scripts/c34041788.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c34041788.lua) | 1 |
-| Garbage Golem | `28968609` | [Scripts/c28968609.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c28968609.lua) | 1 |
-| Abyss Actor - Sassy Rookie | `51028231` | [Scripts/c51028231.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c51028231.lua) | 1 |
-| Hollowrokket Dragon | `51548207` | [Scripts/c51548207.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c51548207.lua) | 1 |
-| ReSolfachord Dreamia | `92610868` | [Scripts/c92610868.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c92610868.lua) | 1 |
+| [Astrograph Sorcerer, the Starfrost Magician](/examples/cards/48171151) | `48171151` | [Scripts/c48171151.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c48171151.lua) | 1 |
+| [Camelot, Realm of Noble Knights and Noble Arms](/examples/cards/15635751) | `15635751` | [Scripts/c15635751.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c15635751.lua) | 1 |
+| Heavy Interlock | `20071842` | [Scripts/c20071842.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c20071842.lua) | 1 |
+| Sleepy Scapegoats | `3129527` | [Scripts/c3129527.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c3129527.lua) | 1 |
+| Sea Lancer | `22842214` | [Scripts/c22842214.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c22842214.lua) | 1 |
+| Dual Avatar Feet - Armored Un-Gyo | `7631534` | [Scripts/c7631534.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c7631534.lua) | 1 |
+| Unchained Firelord of Yama | `94014327` | [Scripts/c94014327.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c94014327.lua) | 1 |
+| Rapid Trigger | `67526112` | [Scripts/c67526112.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c67526112.lua) | 1 |
+| Odd-Eyes Pendulum Dragon, Four Heavenly Dragons | `75787708` | [Scripts/c75787708.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c75787708.lua) | 1 |
+| Lost World | `17228908` | [Scripts/c17228908.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c17228908.lua) | 1 |
+| Fire King Sanctuary | `65305978` | [Scripts/c65305978.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c65305978.lua) | 1 |
+| Salamandra Fusion | `9102835` | [Scripts/c9102835.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c9102835.lua) | 1 |
+| Odd-Eyes Lancer Dragon | `83347294` | [Scripts/c83347294.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c83347294.lua) | 1 |
+| Harpie Conductor | `85696777` | [Scripts/c85696777.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c85696777.lua) | 1 |
+| Mythical Beast Master Cerberus | `53842431` | [Scripts/c53842431.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c53842431.lua) | 1 |
+| Mythical Beast Medusa | `54965929` | [Scripts/c54965929.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c54965929.lua) | 1 |
+| Mythical Beast Garuda | `28570310` | [Scripts/c28570310.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c28570310.lua) | 1 |
+| Rokket Barrage | `53481938` | [Scripts/c53481938.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c53481938.lua) | 1 |
+| Underground Arachnid | `63465535` | [Scripts/c63465535.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c63465535.lua) | 1 |
+| Empire of Endymion | `34041788` | [Scripts/c34041788.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c34041788.lua) | 1 |
+| Garbage Golem | `28968609` | [Scripts/c28968609.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c28968609.lua) | 1 |
+| Abyss Actor - Sassy Rookie | `51028231` | [Scripts/c51028231.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c51028231.lua) | 1 |
+| Hollowrokket Dragon | `51548207` | [Scripts/c51548207.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c51548207.lua) | 1 |
+| ReSolfachord Dreamia | `92610868` | [Scripts/c92610868.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c92610868.lua) | 1 |
 | ...and 65 more |  |  |  |
 
 ## Script Examples
 
 ### Astrograph Sorcerer, the Starfrost Magician (`48171151`)
 
-Source: [Scripts/c48171151.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c48171151.lua)
+Source: [Scripts/c48171151.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c48171151.lua)
 
 ```lua
 function s.ptg(e,tp,eg,ep,ev,re,r,rp,chk)
@@ -75,7 +75,7 @@ function s.ptg(e,tp,eg,ep,ev,re,r,rp,chk)
 
 ### Camelot, Realm of Noble Knights and Noble Arms (`15635751`)
 
-Source: [Scripts/c15635751.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c15635751.lua)
+Source: [Scripts/c15635751.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c15635751.lua)
 
 ```lua
 end
@@ -87,7 +87,7 @@ function s.reptg(e,tp,eg,ep,ev,re,r,rp,chk)
 
 ### Heavy Interlock (`20071842`)
 
-Source: [Scripts/c20071842.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c20071842.lua)
+Source: [Scripts/c20071842.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c20071842.lua)
 
 ```lua
 end

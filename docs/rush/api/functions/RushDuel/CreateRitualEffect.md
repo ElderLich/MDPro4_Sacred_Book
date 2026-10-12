@@ -68,37 +68,37 @@ Generated from the local `Rush/Scripts/` folder and `rush_cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| [Ceremonial Gate](/examples/rush-cards/120280031) | `120280031` | [Rush/Scripts/c120280031.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120280031.lua) | 1 |
-| [Black Magic Ritual](/examples/rush-cards/120280030) | `120280030` | [Rush/Scripts/c120280030.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120280030.lua) | 1 |
-| Jeweled Tusk Ritual | `120290056` | [Rush/Scripts/c120290056.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120290056.lua) | 1 |
-| Skullrise Squall | `120298011` | [Rush/Scripts/c120298011.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120298011.lua) | 1 |
-| Dimension Pair Link L | `120309030` | [Rush/Scripts/c120309030.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120309030.lua) | 1 |
-| Dimension Pair Link R | `120309031` | [Rush/Scripts/c120309031.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120309031.lua) | 1 |
-| Healthy's High! | `120306051` | [Rush/Scripts/c120306051.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120306051.lua) | 1 |
-| I'm Having Trouble with My Fields Being Destroyed! | `120298028` | [Rush/Scripts/c120298028.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120298028.lua) | 1 |
-| I Need Holy Water to Ward Off Evil Spirits! | `120298029` | [Rush/Scripts/c120298029.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120298029.lua) | 1 |
-| Endless Partner | `120300050` | [Rush/Scripts/c120300050.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120300050.lua) | 1 |
-| Monumenthes Festival -The Isyria Seance- | `120300046` | [Rush/Scripts/c120300046.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120300046.lua) | 1 |
-| Ninjitsu Art of Ultimate Transformation | `120306056` | [Rush/Scripts/c120306056.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120306056.lua) | 1 |
-| Plasmatic Model Another Play | `120301070` | [Rush/Scripts/c120301070.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120301070.lua) | 1 |
-| Skullrise Violent | `120298012` | [Rush/Scripts/c120298012.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120298012.lua) | 1 |
-| Plasmatic Model Another Docking | `120290051` | [Rush/Scripts/c120290051.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120290051.lua) | 1 |
-| Beastly Mirror Calling | `120304057` | [Rush/Scripts/c120304057.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120304057.lua) | 1 |
-| Altar of the Twin Blaze Fiends | `120287036` | [Rush/Scripts/c120287036.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120287036.lua) | 1 |
-| Plasmatic Model Play | `120285058` | [Rush/Scripts/c120285058.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120285058.lua) | 1 |
-| Necromaid Resize | `120294050` | [Rush/Scripts/c120294050.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120294050.lua) | 1 |
-| Plasmatic Model Docking | `120285057` | [Rush/Scripts/c120285057.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120285057.lua) | 1 |
-| Healthy Mind Speedy Buzzer Battle! | `120306052` | [Rush/Scripts/c120306052.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120306052.lua) | 1 |
-| Bluefin Oath | `120287085` | [Rush/Scripts/c120287085.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120287085.lua) | 1 |
-| Legend Possessed | `120293068` | [Rush/Scripts/c120293068.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120293068.lua) | 1 |
-| War-Lion Assault | `120294058` | [Rush/Scripts/c120294058.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120294058.lua) | 1 |
+| [Ceremonial Gate](/examples/rush-cards/120280031) | `120280031` | [Rush/Scripts/c120280031.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120280031.lua) | 1 |
+| [Black Magic Ritual](/examples/rush-cards/120280030) | `120280030` | [Rush/Scripts/c120280030.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120280030.lua) | 1 |
+| Jeweled Tusk Ritual | `120290056` | [Rush/Scripts/c120290056.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120290056.lua) | 1 |
+| Skullrise Squall | `120298011` | [Rush/Scripts/c120298011.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120298011.lua) | 1 |
+| Dimension Pair Link L | `120309030` | [Rush/Scripts/c120309030.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120309030.lua) | 1 |
+| Dimension Pair Link R | `120309031` | [Rush/Scripts/c120309031.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120309031.lua) | 1 |
+| Healthy's High! | `120306051` | [Rush/Scripts/c120306051.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120306051.lua) | 1 |
+| I'm Having Trouble with My Fields Being Destroyed! | `120298028` | [Rush/Scripts/c120298028.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120298028.lua) | 1 |
+| I Need Holy Water to Ward Off Evil Spirits! | `120298029` | [Rush/Scripts/c120298029.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120298029.lua) | 1 |
+| Endless Partner | `120300050` | [Rush/Scripts/c120300050.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120300050.lua) | 1 |
+| Monumenthes Festival -The Isyria Seance- | `120300046` | [Rush/Scripts/c120300046.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120300046.lua) | 1 |
+| Ninjitsu Art of Ultimate Transformation | `120306056` | [Rush/Scripts/c120306056.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120306056.lua) | 1 |
+| Plasmatic Model Another Play | `120301070` | [Rush/Scripts/c120301070.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120301070.lua) | 1 |
+| Skullrise Violent | `120298012` | [Rush/Scripts/c120298012.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120298012.lua) | 1 |
+| Plasmatic Model Another Docking | `120290051` | [Rush/Scripts/c120290051.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120290051.lua) | 1 |
+| Beastly Mirror Calling | `120304057` | [Rush/Scripts/c120304057.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120304057.lua) | 1 |
+| Altar of the Twin Blaze Fiends | `120287036` | [Rush/Scripts/c120287036.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120287036.lua) | 1 |
+| Plasmatic Model Play | `120285058` | [Rush/Scripts/c120285058.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120285058.lua) | 1 |
+| Necromaid Resize | `120294050` | [Rush/Scripts/c120294050.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120294050.lua) | 1 |
+| Plasmatic Model Docking | `120285057` | [Rush/Scripts/c120285057.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120285057.lua) | 1 |
+| Healthy Mind Speedy Buzzer Battle! | `120306052` | [Rush/Scripts/c120306052.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120306052.lua) | 1 |
+| Bluefin Oath | `120287085` | [Rush/Scripts/c120287085.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120287085.lua) | 1 |
+| Legend Possessed | `120293068` | [Rush/Scripts/c120293068.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120293068.lua) | 1 |
+| War-Lion Assault | `120294058` | [Rush/Scripts/c120294058.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120294058.lua) | 1 |
 | ...and 17 more |  |  |  |
 
 ## Script Examples
 
 ### Ceremonial Gate (`120280031`)
 
-Source: [Rush/Scripts/c120280031.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120280031.lua)
+Source: [Rush/Scripts/c120280031.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120280031.lua)
 
 ```lua
 	RD.AddCodeList(c,list)
@@ -110,7 +110,7 @@ Source: [Rush/Scripts/c120280031.lua](https://github.com/ElderLich/MDPro3_Sacred
 
 ### Black Magic Ritual (`120280030`)
 
-Source: [Rush/Scripts/c120280030.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120280030.lua)
+Source: [Rush/Scripts/c120280030.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120280030.lua)
 
 ```lua
 	RD.AddCodeList(c,list)
@@ -122,7 +122,7 @@ Source: [Rush/Scripts/c120280030.lua](https://github.com/ElderLich/MDPro3_Sacred
 
 ### Jeweled Tusk Ritual (`120290056`)
 
-Source: [Rush/Scripts/c120290056.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120290056.lua)
+Source: [Rush/Scripts/c120290056.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120290056.lua)
 
 ```lua
 	Duel.AddCustomActivityCounter(m,ACTIVITY_SPSUMMON,cm.ctfilter)

@@ -19,7 +19,7 @@ Trap Zone right now:
 if Duel.GetLocationCount(tp,LOCATION_MZONE)<=0 then return end
 ```
 
-The MDPro3/YGOPro core returns two values: the count and the usable zone mask.
+The MDPro4/YGOPro core returns two values: the count and the usable zone mask.
 Most scripts only store the first value:
 
 ```lua

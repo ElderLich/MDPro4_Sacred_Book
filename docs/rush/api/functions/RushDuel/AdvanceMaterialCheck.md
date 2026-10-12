@@ -53,17 +53,17 @@ Generated from the local `Rush/Scripts/` folder and `rush_cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Transam Prime Armor Nova | `120257008` | [Rush/Scripts/c120257008.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120257008.lua) | 1 |
-| God Maju Garzett | `120261043` | [Rush/Scripts/c120261043.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120261043.lua) | 1 |
-| Volcalize Ifrit | `120272004` | [Rush/Scripts/c120272004.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120272004.lua) | 1 |
-| Maju Garzett | `120238004` | [Rush/Scripts/c120238004.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120238004.lua) | 1 |
-| Great Maju Garzett | `120238019` | [Rush/Scripts/c120238019.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120238019.lua) | 1 |
+| Transam Prime Armor Nova | `120257008` | [Rush/Scripts/c120257008.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120257008.lua) | 1 |
+| God Maju Garzett | `120261043` | [Rush/Scripts/c120261043.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120261043.lua) | 1 |
+| Volcalize Ifrit | `120272004` | [Rush/Scripts/c120272004.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120272004.lua) | 1 |
+| Maju Garzett | `120238004` | [Rush/Scripts/c120238004.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120238004.lua) | 1 |
+| Great Maju Garzett | `120238019` | [Rush/Scripts/c120238019.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120238019.lua) | 1 |
 
 ## Script Examples
 
 ### Transam Prime Armor Nova (`120257008`)
 
-Source: [Rush/Scripts/c120257008.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120257008.lua)
+Source: [Rush/Scripts/c120257008.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120257008.lua)
 
 ```lua
 	c:RegisterEffect(e2)
@@ -75,7 +75,7 @@ Source: [Rush/Scripts/c120257008.lua](https://github.com/ElderLich/MDPro3_Sacred
 
 ### God Maju Garzett (`120261043`)
 
-Source: [Rush/Scripts/c120261043.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120261043.lua)
+Source: [Rush/Scripts/c120261043.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120261043.lua)
 
 ```lua
 	c:RegisterEffect(e2)
@@ -87,7 +87,7 @@ Source: [Rush/Scripts/c120261043.lua](https://github.com/ElderLich/MDPro3_Sacred
 
 ### Volcalize Ifrit (`120272004`)
 
-Source: [Rush/Scripts/c120272004.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120272004.lua)
+Source: [Rush/Scripts/c120272004.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120272004.lua)
 
 ```lua
 	c:RegisterEffect(e1)

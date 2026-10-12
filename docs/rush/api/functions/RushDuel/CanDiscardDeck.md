@@ -72,21 +72,21 @@ Generated from the local `Rush/Scripts/` folder and `rush_cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Sea Star Trooper | `120199022` | [Rush/Scripts/c120199022.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120199022.lua) | 1 |
-| Psychicomposition | `120246069` | [Rush/Scripts/c120246069.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120246069.lua) | 1 |
-| Cocoon King Beetle | `120277039` | [Rush/Scripts/c120277039.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120277039.lua) | 1 |
-| Flash Voltchick | `120246005` | [Rush/Scripts/c120246005.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120246005.lua) | 1 |
-| Baron Wight | `120271057` | [Rush/Scripts/c120271057.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120271057.lua) | 1 |
-| Dragons Boost Fusion | `120244049` | [Rush/Scripts/c120244049.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120244049.lua) | 1 |
-| Endless Partner | `120300050` | [Rush/Scripts/c120300050.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120300050.lua) | 1 |
-| Psychic Burial | `120160004` | [Rush/Scripts/c120160004.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120160004.lua) | 1 |
-| Root of Despair | `120301033` | [Rush/Scripts/c120301033.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120301033.lua) | 1 |
+| Sea Star Trooper | `120199022` | [Rush/Scripts/c120199022.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120199022.lua) | 1 |
+| Psychicomposition | `120246069` | [Rush/Scripts/c120246069.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120246069.lua) | 1 |
+| Cocoon King Beetle | `120277039` | [Rush/Scripts/c120277039.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120277039.lua) | 1 |
+| Flash Voltchick | `120246005` | [Rush/Scripts/c120246005.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120246005.lua) | 1 |
+| Baron Wight | `120271057` | [Rush/Scripts/c120271057.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120271057.lua) | 1 |
+| Dragons Boost Fusion | `120244049` | [Rush/Scripts/c120244049.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120244049.lua) | 1 |
+| Endless Partner | `120300050` | [Rush/Scripts/c120300050.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120300050.lua) | 1 |
+| Psychic Burial | `120160004` | [Rush/Scripts/c120160004.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120160004.lua) | 1 |
+| Root of Despair | `120301033` | [Rush/Scripts/c120301033.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120301033.lua) | 1 |
 
 ## Script Examples
 
 ### Sea Star Trooper (`120199022`)
 
-Source: [Rush/Scripts/c120199022.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120199022.lua)
+Source: [Rush/Scripts/c120199022.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120199022.lua)
 
 ```lua
 	RD.SelectAndDoAction(HINTMSG_TODECK,aux.NecroValleyFilter(cm.tdfilter),tp,0,LOCATION_GRAVE,1,1,nil,function(g)
@@ -98,7 +98,7 @@ Source: [Rush/Scripts/c120199022.lua](https://github.com/ElderLich/MDPro3_Sacred
 
 ### Psychicomposition (`120246069`)
 
-Source: [Rush/Scripts/c120246069.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120246069.lua)
+Source: [Rush/Scripts/c120246069.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120246069.lua)
 
 ```lua
 	RD.SelectAndDoAction(HINTMSG_ATOHAND,aux.NecroValleyFilter(cm.filter),tp,LOCATION_GRAVE,0,1,1,nil,function(g)
@@ -110,7 +110,7 @@ Source: [Rush/Scripts/c120246069.lua](https://github.com/ElderLich/MDPro3_Sacred
 
 ### Cocoon King Beetle (`120277039`)
 
-Source: [Rush/Scripts/c120277039.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120277039.lua)
+Source: [Rush/Scripts/c120277039.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120277039.lua)
 
 ```lua
 function cm.operation(e,tp,eg,ep,ev,re,r,rp)

@@ -31,15 +31,15 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Drytron Meteonis Quadrantids | `95209656` | [Scripts/c95209656.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c95209656.lua) | 3 |
-| Drytron Nova | `94187078` | [Scripts/c94187078.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c94187078.lua) | 3 |
-| Drytron Gamma Eltanin | `60037599` | [Scripts/c60037599.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c60037599.lua) | 3 |
+| Drytron Meteonis Quadrantids | `95209656` | [Scripts/c95209656.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c95209656.lua) | 3 |
+| Drytron Nova | `94187078` | [Scripts/c94187078.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c94187078.lua) | 3 |
+| Drytron Gamma Eltanin | `60037599` | [Scripts/c60037599.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c60037599.lua) | 3 |
 
 ## Script Examples
 
 ### Drytron Meteonis Quadrantids (`95209656`)
 
-Source: [Scripts/c95209656.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c95209656.lua)
+Source: [Scripts/c95209656.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c95209656.lua)
 
 ```lua
 function c95209656.spfilter(c,e,tp)
@@ -51,7 +51,7 @@ function c95209656.fselect(g)
 
 ### Drytron Nova (`94187078`)
 
-Source: [Scripts/c94187078.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c94187078.lua)
+Source: [Scripts/c94187078.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c94187078.lua)
 
 ```lua
 end
@@ -63,7 +63,7 @@ function c94187078.target(e,tp,eg,ep,ev,re,r,rp,chk)
 
 ### Drytron Gamma Eltanin (`60037599`)
 
-Source: [Scripts/c60037599.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c60037599.lua)
+Source: [Scripts/c60037599.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c60037599.lua)
 
 ```lua
 end

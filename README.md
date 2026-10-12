@@ -1,6 +1,6 @@
-# MDPro3 Sacred Book
+# MDPro4 Sacred Book
 
-Documentation and data-generation tools for MDPro3/YGOPro Lua card scripting.
+Documentation and data-generation tools for MDPro4/YGOPro Lua card scripting.
 
 This repository builds a VitePress site with beginner lessons, scripting guides,
 generated API/reference pages, and card-script examples generated from
@@ -58,7 +58,7 @@ To enable it:
 
 1. Create a free Cloudflare account and open **Web Analytics → Add a site**.
    In **Set up hostname**, enter `elderlich.github.io` exactly: no `https://`,
-   slash, or `/MDPro3_Sacred_Book/` path. Select the message box that appears
+   slash, or `/MDPro4_Sacred_Book/` path. Select the message box that appears
    beneath the field, choose **Done**, then copy the site's beacon token. This
    does not require moving the site or changing its DNS.
 2. In this GitHub repository, open **Settings → Secrets and variables →

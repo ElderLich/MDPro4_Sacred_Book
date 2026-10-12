@@ -31,13 +31,13 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Bingo Card | `99505609` | [Scripts/c99505609.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c99505609.lua) | 1 |
+| Bingo Card | `99505609` | [Scripts/c99505609.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c99505609.lua) | 1 |
 
 ## Script Examples
 
 ### Bingo Card (`99505609`)
 
-Source: [Scripts/c99505609.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c99505609.lua)
+Source: [Scripts/c99505609.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c99505609.lua)
 
 ```lua
 		return c:GetColumnGroupCount()==4

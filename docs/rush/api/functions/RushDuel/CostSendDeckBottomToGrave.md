@@ -58,14 +58,14 @@ Generated from the local `Rush/Scripts/` folder and `rush_cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Neo Plandish | `120228035` | [Rush/Scripts/c120228035.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120228035.lua) | 1 |
-| Attrac Charm Midi | `120309056` | [Rush/Scripts/c120309056.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120309056.lua) | 1 |
+| Neo Plandish | `120228035` | [Rush/Scripts/c120228035.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120228035.lua) | 1 |
+| Attrac Charm Midi | `120309056` | [Rush/Scripts/c120309056.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120309056.lua) | 1 |
 
 ## Script Examples
 
 ### Neo Plandish (`120228035`)
 
-Source: [Rush/Scripts/c120228035.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120228035.lua)
+Source: [Rush/Scripts/c120228035.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120228035.lua)
 
 ```lua
 	return RD.IsCanAttachEffectIndes(e:GetHandler(),tp,cm.indval)
@@ -77,7 +77,7 @@ end)
 
 ### Attrac Charm Midi (`120309056`)
 
-Source: [Rush/Scripts/c120309056.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120309056.lua)
+Source: [Rush/Scripts/c120309056.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120309056.lua)
 
 ```lua
 end

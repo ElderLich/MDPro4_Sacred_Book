@@ -46,14 +46,14 @@ Generated from the local `Rush/Scripts/` folder and `rush_cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Yurushima Warrior | `120140004` | [Rush/Scripts/c120140004.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120140004.lua) | 1 |
-| Neutron Blast | `120283038` | [Rush/Scripts/c120283038.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120283038.lua) | 1 |
+| Yurushima Warrior | `120140004` | [Rush/Scripts/c120140004.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120140004.lua) | 1 |
+| Neutron Blast | `120283038` | [Rush/Scripts/c120283038.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120283038.lua) | 1 |
 
 ## Script Examples
 
 ### Yurushima Warrior (`120140004`)
 
-Source: [Rush/Scripts/c120140004.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120140004.lua)
+Source: [Rush/Scripts/c120140004.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120140004.lua)
 
 ```lua
 end
@@ -65,7 +65,7 @@ function cm.condition(e,tp,eg,ep,ev,re,r,rp)
 
 ### Neutron Blast (`120283038`)
 
-Source: [Rush/Scripts/c120283038.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120283038.lua)
+Source: [Rush/Scripts/c120283038.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120283038.lua)
 
 ```lua
 function cm.filter(c)

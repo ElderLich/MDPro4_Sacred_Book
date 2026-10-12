@@ -57,18 +57,18 @@ Generated from the local `Rush/Scripts/` folder and `rush_cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| [YXZ-Cannon Dragon](/examples/rush-cards/120305004) | `120305004` | [Rush/Scripts/c120305004.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120305004.lua) | 1 |
-| XYZ-Dragon Cannon | `120305003` | [Rush/Scripts/c120305003.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120305003.lua) | 1 |
-| XZ-Tank Cannon | `120305006` | [Rush/Scripts/c120305006.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120305006.lua) | 1 |
-| YZ-Tank Dragon | `120305007` | [Rush/Scripts/c120305007.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120305007.lua) | 1 |
-| XY-Dragon Cannon | `120305005` | [Rush/Scripts/c120305005.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120305005.lua) | 1 |
-| Soitsu and Doitsu | `120306040` | [Rush/Scripts/c120306040.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120306040.lua) | 1 |
+| [YXZ-Cannon Dragon](/examples/rush-cards/120305004) | `120305004` | [Rush/Scripts/c120305004.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120305004.lua) | 1 |
+| XYZ-Dragon Cannon | `120305003` | [Rush/Scripts/c120305003.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120305003.lua) | 1 |
+| XZ-Tank Cannon | `120305006` | [Rush/Scripts/c120305006.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120305006.lua) | 1 |
+| YZ-Tank Dragon | `120305007` | [Rush/Scripts/c120305007.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120305007.lua) | 1 |
+| XY-Dragon Cannon | `120305005` | [Rush/Scripts/c120305005.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120305005.lua) | 1 |
+| Soitsu and Doitsu | `120306040` | [Rush/Scripts/c120306040.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120306040.lua) | 1 |
 
 ## Script Examples
 
 ### YXZ-Cannon Dragon (`120305004`)
 
-Source: [Rush/Scripts/c120305004.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120305004.lua)
+Source: [Rush/Scripts/c120305004.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120305004.lua)
 
 ```lua
 	RD.SetFusionMaterial(c,{list[1],list[2],list[3]},3,3)
@@ -80,7 +80,7 @@ Source: [Rush/Scripts/c120305004.lua](https://github.com/ElderLich/MDPro3_Sacred
 
 ### XYZ-Dragon Cannon (`120305003`)
 
-Source: [Rush/Scripts/c120305003.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120305003.lua)
+Source: [Rush/Scripts/c120305003.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120305003.lua)
 
 ```lua
 	RD.SetFusionMaterial(c,{list[1],list[2],list[3]},3,3)
@@ -92,7 +92,7 @@ Source: [Rush/Scripts/c120305003.lua](https://github.com/ElderLich/MDPro3_Sacred
 
 ### XZ-Tank Cannon (`120305006`)
 
-Source: [Rush/Scripts/c120305006.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120305006.lua)
+Source: [Rush/Scripts/c120305006.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120305006.lua)
 
 ```lua
 	RD.AddFusionProcedure(c,list[1],list[2])

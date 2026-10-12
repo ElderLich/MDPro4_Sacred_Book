@@ -198,8 +198,8 @@ The local `libduel.cpp` binding `duel_get_operated_group` copies
 `core.operated_set`; the operation bindings and the scripts below establish
 the result-checking patterns.
 
-- [Xyz Universe source](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c11109820.lua): require two actual GY arrivals.
-- [EN Shuffle source](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c10186633.lua): accept a Deck or Extra Deck return before drawing.
-- [Five-Headed Link Dragon source](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c10669138.lua): count five actually banished cards to decide an upkeep failure branch.
+- [Xyz Universe source](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c11109820.lua): require two actual GY arrivals.
+- [EN Shuffle source](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c10186633.lua): accept a Deck or Extra Deck return before drawing.
+- [Five-Headed Link Dragon source](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c10669138.lua): count five actually banished cards to decide an upkeep failure branch.
 - [Tokens and Summon choices](/learn/tokens-and-summon-choices): boolean step results and batch completion.
 - [Chain timing and activation windows](/learn/chain-timing-and-activation-windows): events and resolution timing.

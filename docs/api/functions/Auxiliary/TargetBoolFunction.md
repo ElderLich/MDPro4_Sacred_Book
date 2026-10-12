@@ -33,37 +33,37 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| [Resurgam Xyz](/examples/cards/49082032) | `49082032` | [Scripts/c49082032.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c49082032.lua) | 1 |
-| Sea Stealth Attack | `19089195` | [Scripts/c19089195.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c19089195.lua) | 1 |
-| Miscellaneousaurus | `38572779` | [Scripts/c38572779.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c38572779.lua) | 1 |
-| Dual Avatar Invitation | `87669904` | [Scripts/c87669904.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c87669904.lua) | 1 |
-| Number 4: Stealth Kragen | `67557908` | [Scripts/c67557908.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c67557908.lua) | 1 |
-| Traptrix Atypus | `48183890` | [Scripts/c48183890.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c48183890.lua) | 1 |
-| Weaver of Fairy Tails | `78021082` | [Scripts/c78021082.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c78021082.lua) | 1 |
-| Mementomictlan | `43338320` | [Scripts/c43338320.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c43338320.lua) | 1 |
-| Egyptian God Slime | `42166000` | [Scripts/c42166000.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c42166000.lua) | 1 |
-| Joyous Melffys | `53054164` | [Scripts/c53054164.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c53054164.lua) | 1 |
-| Mind Scan | `34298391` | [Scripts/c34298391.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c34298391.lua) | 1 |
-| Synchro Fellowship | `43834302` | [Scripts/c43834302.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c43834302.lua) | 1 |
-| The Glitter of Raise Moon | `9362643` | [Scripts/c9362643.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c9362643.lua) | 1 |
-| Qliphort Disk | `64496451` | [Scripts/c64496451.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c64496451.lua) | 1 |
-| Red-Eyes Retro Dragon | `53485634` | [Scripts/c53485634.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c53485634.lua) | 1 |
-| Salamangreat Burst Gryphon | `10140443` | [Scripts/c10140443.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c10140443.lua) | 1 |
-| Legendary Lord Six Samurai - Enishi | `70634245` | [Scripts/c70634245.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c70634245.lua) | 1 |
-| Raise Moon Wings Rapi | `47828069` | [Scripts/c47828069.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c47828069.lua) | 1 |
-| The Bystial Alba Los | `69120785` | [Scripts/c69120785.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c69120785.lua) | 1 |
-| Blue-Eyes Toon Ultimate Dragon | `71808988` | [Scripts/c71808988.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c71808988.lua) | 1 |
-| DoomZ Destruction | `80320877` | [Scripts/c80320877.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c80320877.lua) | 1 |
-| D/D/D Super Doom King Dark Armageddon | `18897163` | [Scripts/c18897163.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c18897163.lua) | 1 |
-| Concours de Cuisine (Culinary Confrontation) | `14283055` | [Scripts/c14283055.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c14283055.lua) | 1 |
-| Tri-Brigade Nervall | `14816857` | [Scripts/c14816857.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c14816857.lua) | 1 |
+| [Resurgam Xyz](/examples/cards/49082032) | `49082032` | [Scripts/c49082032.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c49082032.lua) | 1 |
+| Sea Stealth Attack | `19089195` | [Scripts/c19089195.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c19089195.lua) | 1 |
+| Miscellaneousaurus | `38572779` | [Scripts/c38572779.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c38572779.lua) | 1 |
+| Dual Avatar Invitation | `87669904` | [Scripts/c87669904.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c87669904.lua) | 1 |
+| Number 4: Stealth Kragen | `67557908` | [Scripts/c67557908.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c67557908.lua) | 1 |
+| Traptrix Atypus | `48183890` | [Scripts/c48183890.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c48183890.lua) | 1 |
+| Weaver of Fairy Tails | `78021082` | [Scripts/c78021082.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c78021082.lua) | 1 |
+| Mementomictlan | `43338320` | [Scripts/c43338320.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c43338320.lua) | 1 |
+| Egyptian God Slime | `42166000` | [Scripts/c42166000.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c42166000.lua) | 1 |
+| Joyous Melffys | `53054164` | [Scripts/c53054164.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c53054164.lua) | 1 |
+| Mind Scan | `34298391` | [Scripts/c34298391.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c34298391.lua) | 1 |
+| Synchro Fellowship | `43834302` | [Scripts/c43834302.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c43834302.lua) | 1 |
+| The Glitter of Raise Moon | `9362643` | [Scripts/c9362643.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c9362643.lua) | 1 |
+| Qliphort Disk | `64496451` | [Scripts/c64496451.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c64496451.lua) | 1 |
+| Red-Eyes Retro Dragon | `53485634` | [Scripts/c53485634.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c53485634.lua) | 1 |
+| Salamangreat Burst Gryphon | `10140443` | [Scripts/c10140443.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c10140443.lua) | 1 |
+| Legendary Lord Six Samurai - Enishi | `70634245` | [Scripts/c70634245.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c70634245.lua) | 1 |
+| Raise Moon Wings Rapi | `47828069` | [Scripts/c47828069.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c47828069.lua) | 1 |
+| The Bystial Alba Los | `69120785` | [Scripts/c69120785.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c69120785.lua) | 1 |
+| Blue-Eyes Toon Ultimate Dragon | `71808988` | [Scripts/c71808988.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c71808988.lua) | 1 |
+| DoomZ Destruction | `80320877` | [Scripts/c80320877.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c80320877.lua) | 1 |
+| D/D/D Super Doom King Dark Armageddon | `18897163` | [Scripts/c18897163.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c18897163.lua) | 1 |
+| Concours de Cuisine (Culinary Confrontation) | `14283055` | [Scripts/c14283055.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c14283055.lua) | 1 |
+| Tri-Brigade Nervall | `14816857` | [Scripts/c14816857.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c14816857.lua) | 1 |
 | ...and 403 more |  |  |  |
 
 ## Script Examples
 
 ### Resurgam Xyz (`49082032`)
 
-Source: [Scripts/c49082032.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c49082032.lua)
+Source: [Scripts/c49082032.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c49082032.lua)
 
 ```lua
 	e2:SetRange(LOCATION_SZONE)
@@ -75,7 +75,7 @@ Source: [Scripts/c49082032.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/
 
 ### Sea Stealth Attack (`19089195`)
 
-Source: [Scripts/c19089195.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c19089195.lua)
+Source: [Scripts/c19089195.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c19089195.lua)
 
 ```lua
 	e1:SetCode(EFFECT_INDESTRUCTABLE_EFFECT)
@@ -87,7 +87,7 @@ Source: [Scripts/c19089195.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/
 
 ### Miscellaneousaurus (`38572779`)
 
-Source: [Scripts/c38572779.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c38572779.lua)
+Source: [Scripts/c38572779.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c38572779.lua)
 
 ```lua
 	e1:SetCode(EFFECT_IMMUNE_EFFECT)

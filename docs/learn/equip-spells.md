@@ -5,12 +5,12 @@ Equip scripting has two sides:
 1. The card must become equipped to a monster.
 2. The Equip Card registers effects that apply while it remains equipped.
 
-MDPro3/YGOPro exposes the equip action through `Duel.Equip`. Local utility
+MDPro4/YGOPro exposes the equip action through `Duel.Equip`. Local utility
 scripts also provide `Auxiliary.AddEquipSpellEffect`, which builds the common
 Equip Spell activation effect and `EFFECT_EQUIP_LIMIT` for you.
 
 Some outside examples use helper names that do not exist in this local script
-set. In MDPro3, the standard Equip Spell helper is
+set. In MDPro4, the standard Equip Spell helper is
 `Auxiliary.AddEquipSpellEffect`, and many cards still write the activation,
 equip limit, and operation by hand when the card has extra state to manage.
 
@@ -383,7 +383,7 @@ generic template.
 | `c11913700.lua` | Uses `GetPreviousEquipTarget` for a lost-target trigger after the Equip Card leaves the field. |
 
 When you see an equip helper name that is not in the local API, use this table
-as the starting point. The MDPro3 scripts above show the behavior that exists
+as the starting point. The MDPro4 scripts above show the behavior that exists
 in this repository.
 
 ## Common Pitfalls

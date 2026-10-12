@@ -22,7 +22,7 @@ scripts.
 
 Local constant files also define `EFFECT_TRIPLE_TRIBUTE`, but it is marked
 `N/A` in `constant.lua` and is commented out in the local core header. The
-verified MDPro3/YGOPro path for "treated as 3 Tributes" is a custom Summon
+verified MDPro4/YGOPro path for "treated as 3 Tributes" is a custom Summon
 procedure, not a generic triple-Tribute effect code.
 
 ## The Core Model

@@ -32,32 +32,32 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Lost World | `17228908` | [Scripts/c17228908.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c17228908.lua) | 1 |
-| Mecha Phantom Beast Coltwing | `94973028` | [Scripts/c94973028.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c94973028.lua) | 1 |
-| Mecha Phantom Beast Harrliard | `20368763` | [Scripts/c20368763.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c20368763.lua) | 1 |
-| Mecha Phantom Beast Hamstrat | `66200210` | [Scripts/c66200210.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c66200210.lua) | 1 |
-| Mecha Phantom Beast Blackfalcon | `4417407` | [Scripts/c4417407.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c4417407.lua) | 1 |
-| Mecha Phantom Beast Dracossack | `22110647` | [Scripts/c22110647.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c22110647.lua) | 1 |
-| Mecha Phantom Beast Megaraptor | `31533704` | [Scripts/c31533704.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c31533704.lua) | 1 |
-| Pacifis, the Phantasm City | `2819435` | [Scripts/c2819435.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c2819435.lua) | 1 |
-| Mecha Phantom Beast Sabre Hawk | `15335853` | [Scripts/c15335853.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c15335853.lua) | 1 |
-| Mecha Phantom Beast Kalgriffin | `41329458` | [Scripts/c41329458.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c41329458.lua) | 1 |
-| Mecha Phantom Beast Stealthray | `30811116` | [Scripts/c30811116.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c30811116.lua) | 1 |
-| Mecha Phantom Beast Raiten | `44026393` | [Scripts/c44026393.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c44026393.lua) | 1 |
-| Mecha Phantom Beast Tetherwolf | `67922702` | [Scripts/c67922702.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c67922702.lua) | 1 |
-| Mecha Phantom Beast Warbluran | `31480215` | [Scripts/c31480215.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c31480215.lua) | 1 |
-| White Aura Bihamut | `89907227` | [Scripts/c89907227.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c89907227.lua) | 1 |
-| Mecha Phantom Beast Aerosguin | `16943770` | [Scripts/c16943770.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c16943770.lua) | 1 |
-| Mecha Phantom Beast O-Lion | `72291078` | [Scripts/c72291078.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c72291078.lua) | 1 |
-| Generaider Boss Loot | `1942635` | [Scripts/c1942635.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c1942635.lua) | 1 |
-| Mecha Phantom Beast Blue Impala | `67489919` | [Scripts/c67489919.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c67489919.lua) | 1 |
-| Mecha Phantom Beast Turtletracer | `76902476` | [Scripts/c76902476.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c76902476.lua) | 1 |
+| Lost World | `17228908` | [Scripts/c17228908.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c17228908.lua) | 1 |
+| Mecha Phantom Beast Coltwing | `94973028` | [Scripts/c94973028.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c94973028.lua) | 1 |
+| Mecha Phantom Beast Harrliard | `20368763` | [Scripts/c20368763.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c20368763.lua) | 1 |
+| Mecha Phantom Beast Hamstrat | `66200210` | [Scripts/c66200210.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c66200210.lua) | 1 |
+| Mecha Phantom Beast Blackfalcon | `4417407` | [Scripts/c4417407.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c4417407.lua) | 1 |
+| Mecha Phantom Beast Dracossack | `22110647` | [Scripts/c22110647.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c22110647.lua) | 1 |
+| Mecha Phantom Beast Megaraptor | `31533704` | [Scripts/c31533704.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c31533704.lua) | 1 |
+| Pacifis, the Phantasm City | `2819435` | [Scripts/c2819435.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c2819435.lua) | 1 |
+| Mecha Phantom Beast Sabre Hawk | `15335853` | [Scripts/c15335853.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c15335853.lua) | 1 |
+| Mecha Phantom Beast Kalgriffin | `41329458` | [Scripts/c41329458.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c41329458.lua) | 1 |
+| Mecha Phantom Beast Stealthray | `30811116` | [Scripts/c30811116.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c30811116.lua) | 1 |
+| Mecha Phantom Beast Raiten | `44026393` | [Scripts/c44026393.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c44026393.lua) | 1 |
+| Mecha Phantom Beast Tetherwolf | `67922702` | [Scripts/c67922702.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c67922702.lua) | 1 |
+| Mecha Phantom Beast Warbluran | `31480215` | [Scripts/c31480215.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c31480215.lua) | 1 |
+| White Aura Bihamut | `89907227` | [Scripts/c89907227.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c89907227.lua) | 1 |
+| Mecha Phantom Beast Aerosguin | `16943770` | [Scripts/c16943770.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c16943770.lua) | 1 |
+| Mecha Phantom Beast O-Lion | `72291078` | [Scripts/c72291078.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c72291078.lua) | 1 |
+| Generaider Boss Loot | `1942635` | [Scripts/c1942635.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c1942635.lua) | 1 |
+| Mecha Phantom Beast Blue Impala | `67489919` | [Scripts/c67489919.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c67489919.lua) | 1 |
+| Mecha Phantom Beast Turtletracer | `76902476` | [Scripts/c76902476.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c76902476.lua) | 1 |
 
 ## Script Examples
 
 ### Lost World (`17228908`)
 
-Source: [Scripts/c17228908.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c17228908.lua)
+Source: [Scripts/c17228908.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c17228908.lua)
 
 ```lua
 function c17228908.tgcon(e)
@@ -69,7 +69,7 @@ function c17228908.tglimit(e,c)
 
 ### Mecha Phantom Beast Coltwing (`94973028`)
 
-Source: [Scripts/c94973028.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c94973028.lua)
+Source: [Scripts/c94973028.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c94973028.lua)
 
 ```lua
 	e2:SetRange(LOCATION_MZONE)
@@ -81,7 +81,7 @@ Source: [Scripts/c94973028.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/
 
 ### Mecha Phantom Beast Harrliard (`20368763`)
 
-Source: [Scripts/c20368763.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c20368763.lua)
+Source: [Scripts/c20368763.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c20368763.lua)
 
 ```lua
 	e2:SetRange(LOCATION_MZONE)

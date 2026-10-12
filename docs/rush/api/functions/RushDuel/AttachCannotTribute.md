@@ -50,18 +50,18 @@ Generated from the local `Rush/Scripts/` folder and `rush_cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| [Necromaid Trickment](/examples/rush-cards/120294063) | `120294063` | [Rush/Scripts/c120294063.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120294063.lua) | 1 |
-| Gaigust the Defiant Soul | `120264031` | [Rush/Scripts/c120264031.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120264031.lua) | 1 |
-| King's Authority | `120254088` | [Rush/Scripts/c120254088.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120254088.lua) | 1 |
-| Stumbling Rock | `120264060` | [Rush/Scripts/c120264060.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120264060.lua) | 1 |
-| Mind Control | `120280029` | [Rush/Scripts/c120280029.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120280029.lua) | 1 |
-| Mystery Handcuffs | `120186032` | [Rush/Scripts/c120186032.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120186032.lua) | 1 |
+| [Necromaid Trickment](/examples/rush-cards/120294063) | `120294063` | [Rush/Scripts/c120294063.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120294063.lua) | 1 |
+| Gaigust the Defiant Soul | `120264031` | [Rush/Scripts/c120264031.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120264031.lua) | 1 |
+| King's Authority | `120254088` | [Rush/Scripts/c120254088.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120254088.lua) | 1 |
+| Stumbling Rock | `120264060` | [Rush/Scripts/c120264060.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120264060.lua) | 1 |
+| Mind Control | `120280029` | [Rush/Scripts/c120280029.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120280029.lua) | 1 |
+| Mystery Handcuffs | `120186032` | [Rush/Scripts/c120186032.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120186032.lua) | 1 |
 
 ## Script Examples
 
 ### Necromaid Trickment (`120294063`)
 
-Source: [Rush/Scripts/c120294063.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120294063.lua)
+Source: [Rush/Scripts/c120294063.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120294063.lua)
 
 ```lua
 		RD.ChangePosition(g,e,tp,REASON_EFFECT,POS_FACEUP_DEFENSE)
@@ -73,7 +73,7 @@ Source: [Rush/Scripts/c120294063.lua](https://github.com/ElderLich/MDPro3_Sacred
 
 ### Gaigust the Defiant Soul (`120264031`)
 
-Source: [Rush/Scripts/c120264031.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120264031.lua)
+Source: [Rush/Scripts/c120264031.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120264031.lua)
 
 ```lua
 	local c=e:GetHandler()
@@ -85,7 +85,7 @@ Source: [Rush/Scripts/c120264031.lua](https://github.com/ElderLich/MDPro3_Sacred
 
 ### King's Authority (`120254088`)
 
-Source: [Rush/Scripts/c120254088.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120254088.lua)
+Source: [Rush/Scripts/c120254088.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120254088.lua)
 
 ```lua
 				return e:GetHandlerPlayer()~=tp

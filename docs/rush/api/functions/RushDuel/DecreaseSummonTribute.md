@@ -57,14 +57,14 @@ Generated from the local `Rush/Scripts/` folder and `rush_cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Ancient Gear Powered Soldier | `120271006` | [Rush/Scripts/c120271006.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120271006.lua) | 1 |
-| Ancient Gear Tyranno | `120271005` | [Rush/Scripts/c120271005.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120271005.lua) | 1 |
+| Ancient Gear Powered Soldier | `120271006` | [Rush/Scripts/c120271006.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120271006.lua) | 1 |
+| Ancient Gear Tyranno | `120271005` | [Rush/Scripts/c120271005.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120271005.lua) | 1 |
 
 ## Script Examples
 
 ### Ancient Gear Powered Soldier (`120271006`)
 
-Source: [Rush/Scripts/c120271006.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120271006.lua)
+Source: [Rush/Scripts/c120271006.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120271006.lua)
 
 ```lua
 	RD.AddCodeList(c,list)
@@ -76,7 +76,7 @@ Source: [Rush/Scripts/c120271006.lua](https://github.com/ElderLich/MDPro3_Sacred
 
 ### Ancient Gear Tyranno (`120271005`)
 
-Source: [Rush/Scripts/c120271005.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120271005.lua)
+Source: [Rush/Scripts/c120271005.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120271005.lua)
 
 ```lua
 function cm.initial_effect(c)

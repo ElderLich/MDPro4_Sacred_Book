@@ -69,13 +69,13 @@ Generated from the local `Rush/Scripts/` folder and `rush_cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Dice Key Mix | `120272007` | [Rush/Scripts/c120272007.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120272007.lua) | 1 |
+| Dice Key Mix | `120272007` | [Rush/Scripts/c120272007.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120272007.lua) | 1 |
 
 ## Script Examples
 
 ### Dice Key Mix (`120272007`)
 
-Source: [Rush/Scripts/c120272007.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120272007.lua)
+Source: [Rush/Scripts/c120272007.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120272007.lua)
 
 ```lua
 		end)

@@ -32,14 +32,14 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Silent Wolf Calupo | `15947754` | [Scripts/c15947754.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c15947754.lua) | 1 |
-| Absolute King Back Jack | `60990740` | [Scripts/c60990740.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c60990740.lua) | 1 |
+| Silent Wolf Calupo | `15947754` | [Scripts/c15947754.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c15947754.lua) | 1 |
+| Absolute King Back Jack | `60990740` | [Scripts/c60990740.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c60990740.lua) | 1 |
 
 ## Script Examples
 
 ### Silent Wolf Calupo (`15947754`)
 
-Source: [Scripts/c15947754.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c15947754.lua)
+Source: [Scripts/c15947754.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c15947754.lua)
 
 ```lua
 	local tc=Duel.GetDecktopGroup(tp,1):GetFirst()
@@ -51,7 +51,7 @@ Source: [Scripts/c15947754.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/
 
 ### Absolute King Back Jack (`60990740`)
 
-Source: [Scripts/c60990740.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c60990740.lua)
+Source: [Scripts/c60990740.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c60990740.lua)
 
 ```lua
 	if chk==0 then return Duel.IsPlayerCanDiscardDeck(tp,1)

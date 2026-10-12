@@ -68,16 +68,16 @@ Generated from the local `Rush/Scripts/` folder and `rush_cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Royal Rebel's Extreme | `120306006` | [Rush/Scripts/c120306006.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120306006.lua) | 1 |
-| Tribute Impact | `120244046` | [Rush/Scripts/c120244046.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120244046.lua) | 1 |
-| The Monarchs Stormforth | `120291022` | [Rush/Scripts/c120291022.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120291022.lua) | 1 |
-| Offering to the Archfiend | `120277055` | [Rush/Scripts/c120277055.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120277055.lua) | 1 |
+| Royal Rebel's Extreme | `120306006` | [Rush/Scripts/c120306006.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120306006.lua) | 1 |
+| Tribute Impact | `120244046` | [Rush/Scripts/c120244046.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120244046.lua) | 1 |
+| The Monarchs Stormforth | `120291022` | [Rush/Scripts/c120291022.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120291022.lua) | 1 |
+| Offering to the Archfiend | `120277055` | [Rush/Scripts/c120277055.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120277055.lua) | 1 |
 
 ## Script Examples
 
 ### Royal Rebel's Extreme (`120306006`)
 
-Source: [Rush/Scripts/c120306006.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120306006.lua)
+Source: [Rush/Scripts/c120306006.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120306006.lua)
 
 ```lua
 	local filter=RD.Filter(cm.filter,tp)
@@ -89,7 +89,7 @@ Source: [Rush/Scripts/c120306006.lua](https://github.com/ElderLich/MDPro3_Sacred
 
 ### Tribute Impact (`120244046`)
 
-Source: [Rush/Scripts/c120244046.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120244046.lua)
+Source: [Rush/Scripts/c120244046.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120244046.lua)
 
 ```lua
 		local mg=g:SelectWithSumEqual(tp,Card.GetLevel,tc:GetLevel(),1,g:GetCount())
@@ -101,7 +101,7 @@ Source: [Rush/Scripts/c120244046.lua](https://github.com/ElderLich/MDPro3_Sacred
 
 ### The Monarchs Stormforth (`120291022`)
 
-Source: [Rush/Scripts/c120291022.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120291022.lua)
+Source: [Rush/Scripts/c120291022.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120291022.lua)
 
 ```lua
 	local filter=RD.Filter(cm.filter,tp)

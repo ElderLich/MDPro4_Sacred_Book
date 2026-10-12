@@ -32,37 +32,37 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Unchained Firelord of Yama | `94014327` | [Scripts/c94014327.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c94014327.lua) | 1 |
-| Cubic Mandala | `8837932` | [Scripts/c8837932.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c8837932.lua) | 1 |
-| Xyz Double Back | `57836546` | [Scripts/c57836546.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c57836546.lua) | 1 |
-| Diabrocken the Ominous Specter | `6083904` | [Scripts/c6083904.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c6083904.lua) | 1 |
-| Borrelguard Dragon | `68987122` | [Scripts/c68987122.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c68987122.lua) | 1 |
-| Laundry Trap | `79371769` | [Scripts/c79371769.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c79371769.lua) | 1 |
-| Vampire Scarlet Scourge | `79523365` | [Scripts/c79523365.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c79523365.lua) | 1 |
-| Vampire Red Baron | `6917479` | [Scripts/c6917479.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c6917479.lua) | 1 |
-| Recovery Sorcerer | `76232522` | [Scripts/c76232522.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c76232522.lua) | 1 |
-| Vampire Fraulein | `6039967` | [Scripts/c6039967.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c6039967.lua) | 1 |
-| D/D/D Wave King Caesar | `3758046` | [Scripts/c3758046.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c3758046.lua) | 1 |
-| Fire Phoenix @Ignister | `24882256` | [Scripts/c24882256.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c24882256.lua) | 1 |
-| Officiating Reverie | `49828011` | [Scripts/c49828011.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c49828011.lua) | 1 |
-| Arkbrave Dragon | `33282498` | [Scripts/c33282498.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c33282498.lua) | 1 |
-| Number 92: Heart-eartH Dragon | `97403510` | [Scripts/c97403510.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c97403510.lua) | 1 |
-| Vampire Grimson | `33438666` | [Scripts/c33438666.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c33438666.lua) | 1 |
-| Kuribohrn | `78355370` | [Scripts/c78355370.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c78355370.lua) | 1 |
-| Dark Nephthys | `38107923` | [Scripts/c38107923.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c38107923.lua) | 1 |
-| Ixeep, Omen of the Ghoti | `3137279` | [Scripts/c3137279.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c3137279.lua) | 1 |
-| Battle of Sleeping Spirits | `46570372` | [Scripts/c46570372.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c46570372.lua) | 1 |
-| Number iC1000: Numerounius Numerounia | `15862758` | [Scripts/c15862758.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c15862758.lua) | 1 |
-| Fusion Recycling Plant | `22829942` | [Scripts/c22829942.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c22829942.lua) | 1 |
-| D.D. Telepon | `51701885` | [Scripts/c51701885.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c51701885.lua) | 1 |
-| High Tide on Fire Island | `32542011` | [Scripts/c32542011.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c32542011.lua) | 1 |
+| Unchained Firelord of Yama | `94014327` | [Scripts/c94014327.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c94014327.lua) | 1 |
+| Cubic Mandala | `8837932` | [Scripts/c8837932.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c8837932.lua) | 1 |
+| Xyz Double Back | `57836546` | [Scripts/c57836546.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c57836546.lua) | 1 |
+| Diabrocken the Ominous Specter | `6083904` | [Scripts/c6083904.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c6083904.lua) | 1 |
+| Borrelguard Dragon | `68987122` | [Scripts/c68987122.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c68987122.lua) | 1 |
+| Laundry Trap | `79371769` | [Scripts/c79371769.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c79371769.lua) | 1 |
+| Vampire Scarlet Scourge | `79523365` | [Scripts/c79523365.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c79523365.lua) | 1 |
+| Vampire Red Baron | `6917479` | [Scripts/c6917479.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c6917479.lua) | 1 |
+| Recovery Sorcerer | `76232522` | [Scripts/c76232522.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c76232522.lua) | 1 |
+| Vampire Fraulein | `6039967` | [Scripts/c6039967.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c6039967.lua) | 1 |
+| D/D/D Wave King Caesar | `3758046` | [Scripts/c3758046.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c3758046.lua) | 1 |
+| Fire Phoenix @Ignister | `24882256` | [Scripts/c24882256.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c24882256.lua) | 1 |
+| Officiating Reverie | `49828011` | [Scripts/c49828011.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c49828011.lua) | 1 |
+| Arkbrave Dragon | `33282498` | [Scripts/c33282498.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c33282498.lua) | 1 |
+| Number 92: Heart-eartH Dragon | `97403510` | [Scripts/c97403510.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c97403510.lua) | 1 |
+| Vampire Grimson | `33438666` | [Scripts/c33438666.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c33438666.lua) | 1 |
+| Kuribohrn | `78355370` | [Scripts/c78355370.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c78355370.lua) | 1 |
+| Dark Nephthys | `38107923` | [Scripts/c38107923.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c38107923.lua) | 1 |
+| Ixeep, Omen of the Ghoti | `3137279` | [Scripts/c3137279.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c3137279.lua) | 1 |
+| Battle of Sleeping Spirits | `46570372` | [Scripts/c46570372.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c46570372.lua) | 1 |
+| Number iC1000: Numerounius Numerounia | `15862758` | [Scripts/c15862758.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c15862758.lua) | 1 |
+| Fusion Recycling Plant | `22829942` | [Scripts/c22829942.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c22829942.lua) | 1 |
+| D.D. Telepon | `51701885` | [Scripts/c51701885.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c51701885.lua) | 1 |
+| High Tide on Fire Island | `32542011` | [Scripts/c32542011.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c32542011.lua) | 1 |
 | ...and 27 more |  |  |  |
 
 ## Script Examples
 
 ### Unchained Firelord of Yama (`94014327`)
 
-Source: [Scripts/c94014327.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c94014327.lua)
+Source: [Scripts/c94014327.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c94014327.lua)
 
 ```lua
 end
@@ -74,7 +74,7 @@ function s.sptg(e,tp,eg,ep,ev,re,r,rp,chk,chkc)
 
 ### Cubic Mandala (`8837932`)
 
-Source: [Scripts/c8837932.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c8837932.lua)
+Source: [Scripts/c8837932.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c8837932.lua)
 
 ```lua
 end
@@ -86,7 +86,7 @@ end
 
 ### Xyz Double Back (`57836546`)
 
-Source: [Scripts/c57836546.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c57836546.lua)
+Source: [Scripts/c57836546.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c57836546.lua)
 
 ```lua
 function c57836546.filter1(c,e,tp,turn)

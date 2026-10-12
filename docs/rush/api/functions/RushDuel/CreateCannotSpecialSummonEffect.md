@@ -62,22 +62,22 @@ Generated from the local `Rush/Scripts/` folder and `rush_cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| [Pot of Duality](/examples/rush-cards/120271002) | `120271002` | [Rush/Scripts/c120271002.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120271002.lua) | 1 |
-| Jointech Nesstrydar Tank | `120257017` | [Rush/Scripts/c120257017.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120257017.lua) | 1 |
-| X-Trial Cannon | `120305008` | [Rush/Scripts/c120305008.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120305008.lua) | 1 |
-| Star Replacer | `120244022` | [Rush/Scripts/c120244022.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120244022.lua) | 1 |
-| Skysavior Aspiration | `120301051` | [Rush/Scripts/c120301051.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120301051.lua) | 1 |
-| Koi of Winter Wonder | `120246047` | [Rush/Scripts/c120246047.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120246047.lua) | 1 |
-| Thunderbeetle Storm | `120150034` | [Rush/Scripts/c120150034.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120150034.lua) | 1 |
-| Cyber Variation | `120278028` | [Rush/Scripts/c120278028.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120278028.lua) | 1 |
-| Tiger Roll the Sushi Fairy | `120151041` | [Rush/Scripts/c120151041.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120151041.lua) | 1 |
-| The Monarchs Stormforth | `120291022` | [Rush/Scripts/c120291022.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120291022.lua) | 1 |
+| [Pot of Duality](/examples/rush-cards/120271002) | `120271002` | [Rush/Scripts/c120271002.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120271002.lua) | 1 |
+| Jointech Nesstrydar Tank | `120257017` | [Rush/Scripts/c120257017.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120257017.lua) | 1 |
+| X-Trial Cannon | `120305008` | [Rush/Scripts/c120305008.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120305008.lua) | 1 |
+| Star Replacer | `120244022` | [Rush/Scripts/c120244022.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120244022.lua) | 1 |
+| Skysavior Aspiration | `120301051` | [Rush/Scripts/c120301051.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120301051.lua) | 1 |
+| Koi of Winter Wonder | `120246047` | [Rush/Scripts/c120246047.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120246047.lua) | 1 |
+| Thunderbeetle Storm | `120150034` | [Rush/Scripts/c120150034.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120150034.lua) | 1 |
+| Cyber Variation | `120278028` | [Rush/Scripts/c120278028.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120278028.lua) | 1 |
+| Tiger Roll the Sushi Fairy | `120151041` | [Rush/Scripts/c120151041.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120151041.lua) | 1 |
+| The Monarchs Stormforth | `120291022` | [Rush/Scripts/c120291022.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120291022.lua) | 1 |
 
 ## Script Examples
 
 ### Pot of Duality (`120271002`)
 
-Source: [Rush/Scripts/c120271002.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120271002.lua)
+Source: [Rush/Scripts/c120271002.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120271002.lua)
 
 ```lua
 	Duel.ShuffleDeck(p)
@@ -89,7 +89,7 @@ Source: [Rush/Scripts/c120271002.lua](https://github.com/ElderLich/MDPro3_Sacred
 
 ### Jointech Nesstrydar Tank (`120257017`)
 
-Source: [Rush/Scripts/c120257017.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120257017.lua)
+Source: [Rush/Scripts/c120257017.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120257017.lua)
 
 ```lua
 	RD.SelectAndSpecialSummon(aux.NecroValleyFilter(cm.spfilter),tp,LOCATION_GRAVE,0,1,1,nil,e,POS_FACEUP)
@@ -101,7 +101,7 @@ Source: [Rush/Scripts/c120257017.lua](https://github.com/ElderLich/MDPro3_Sacred
 
 ### X-Trial Cannon (`120305008`)
 
-Source: [Rush/Scripts/c120305008.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120305008.lua)
+Source: [Rush/Scripts/c120305008.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120305008.lua)
 
 ```lua
 	end

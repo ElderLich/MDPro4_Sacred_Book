@@ -39,14 +39,14 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Super Vehicroid - Stealth Union | `3897065` | [Scripts/c3897065.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c3897065.lua) | 1 |
-| Elemental HERO Electrum | `29343734` | [Scripts/c29343734.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c29343734.lua) | 1 |
+| Super Vehicroid - Stealth Union | `3897065` | [Scripts/c3897065.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c3897065.lua) | 1 |
+| Elemental HERO Electrum | `29343734` | [Scripts/c29343734.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c29343734.lua) | 1 |
 
 ## Script Examples
 
 ### Super Vehicroid - Stealth Union (`3897065`)
 
-Source: [Scripts/c3897065.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c3897065.lua)
+Source: [Scripts/c3897065.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c3897065.lua)
 
 ```lua
 	--fusion material
@@ -58,7 +58,7 @@ Source: [Scripts/c3897065.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/b
 
 ### Elemental HERO Electrum (`29343734`)
 
-Source: [Scripts/c29343734.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c29343734.lua)
+Source: [Scripts/c29343734.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c29343734.lua)
 
 ```lua
 	--fusion material

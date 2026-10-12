@@ -59,18 +59,18 @@ Generated from the local `Rush/Scripts/` folder and `rush_cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Moonforce Piyopi | `120300011` | [Rush/Scripts/c120300011.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120300011.lua) | 1 |
-| The Lauan Adventurers Are Go!! | `120306050` | [Rush/Scripts/c120306050.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120306050.lua) | 1 |
-| Luna Moonforce Mochi | `120300039` | [Rush/Scripts/c120300039.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120300039.lua) | 1 |
-| Solciere, the Radiant Skysavior | `120235038` | [Rush/Scripts/c120235038.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120235038.lua) | 1 |
-| Sanmarth the Skysavior Bright Brilliance | `120301043` | [Rush/Scripts/c120301043.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120301043.lua) | 1 |
-| The Very Kind Human | `120309052` | [Rush/Scripts/c120309052.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120309052.lua) | 1 |
+| Moonforce Piyopi | `120300011` | [Rush/Scripts/c120300011.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120300011.lua) | 1 |
+| The Lauan Adventurers Are Go!! | `120306050` | [Rush/Scripts/c120306050.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120306050.lua) | 1 |
+| Luna Moonforce Mochi | `120300039` | [Rush/Scripts/c120300039.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120300039.lua) | 1 |
+| Solciere, the Radiant Skysavior | `120235038` | [Rush/Scripts/c120235038.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120235038.lua) | 1 |
+| Sanmarth the Skysavior Bright Brilliance | `120301043` | [Rush/Scripts/c120301043.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120301043.lua) | 1 |
+| The Very Kind Human | `120309052` | [Rush/Scripts/c120309052.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120309052.lua) | 1 |
 
 ## Script Examples
 
 ### Moonforce Piyopi (`120300011`)
 
-Source: [Rush/Scripts/c120300011.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120300011.lua)
+Source: [Rush/Scripts/c120300011.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120300011.lua)
 
 ```lua
 	end
@@ -82,7 +82,7 @@ function cm.target(e,tp,eg,ep,ev,re,r,rp,chk)
 
 ### The Lauan Adventurers Are Go!! (`120306050`)
 
-Source: [Rush/Scripts/c120306050.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120306050.lua)
+Source: [Rush/Scripts/c120306050.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120306050.lua)
 
 ```lua
 		and RD.CheckUnionEquip(e,tc,c)
@@ -94,7 +94,7 @@ function cm.target(e,tp,eg,ep,ev,re,r,rp,chk)
 
 ### Luna Moonforce Mochi (`120300039`)
 
-Source: [Rush/Scripts/c120300039.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120300039.lua)
+Source: [Rush/Scripts/c120300039.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120300039.lua)
 
 ```lua
 	return c:IsType(TYPE_SPELL+TYPE_TRAP)

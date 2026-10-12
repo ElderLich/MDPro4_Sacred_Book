@@ -31,14 +31,14 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| [D/D Count Surveyor](/examples/cards/5997110) | `5997110` | [Scripts/c5997110.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c5997110.lua) | 1 |
-| Ecole de Zone | `60514625` | [Scripts/c60514625.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c60514625.lua) | 1 |
+| [D/D Count Surveyor](/examples/cards/5997110) | `5997110` | [Scripts/c5997110.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c5997110.lua) | 1 |
+| Ecole de Zone | `60514625` | [Scripts/c60514625.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c60514625.lua) | 1 |
 
 ## Script Examples
 
 ### D/D Count Surveyor (`5997110`)
 
-Source: [Scripts/c5997110.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c5997110.lua)
+Source: [Scripts/c5997110.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c5997110.lua)
 
 ```lua
 			local rg=Duel.GetOperatedGroup()
@@ -50,7 +50,7 @@ Source: [Scripts/c5997110.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/b
 
 ### Ecole de Zone (`60514625`)
 
-Source: [Scripts/c60514625.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c60514625.lua)
+Source: [Scripts/c60514625.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c60514625.lua)
 
 ```lua
 		and Duel.IsPlayerCanSpecialSummonMonster(p,60514626,0,TYPES_TOKEN_MONSTER,-2,-2,1,RACE_SPELLCASTER,ATTRIBUTE_DARK) then

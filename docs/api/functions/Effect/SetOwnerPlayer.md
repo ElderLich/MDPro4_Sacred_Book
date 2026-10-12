@@ -29,37 +29,37 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| [Accel Synchro Stardust Dragon](/examples/cards/30983281) | `30983281` | [Scripts/c30983281.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c30983281.lua) | 2 |
-| Fallen Paradise of the Sacred Beasts | `65861210` | [Scripts/c65861210.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c65861210.lua) | 1 |
-| Thunder Dragonlord | `5206415` | [Scripts/c5206415.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c5206415.lua) | 1 |
-| Raviel, Lord of Phantasms - Shimmering Scraper | `28651380` | [Scripts/c28651380.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c28651380.lua) | 1 |
-| Deep Sea Prima Donna | `50793215` | [Scripts/c50793215.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c50793215.lua) | 1 |
-| Mystical Elf - White Lightning | `15613529` | [Scripts/c15613529.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c15613529.lua) | 1 |
-| Marincess Bubble Ring | `19712214` | [Scripts/c19712214.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c19712214.lua) | 1 |
-| Marincess Snow | `80627281` | [Scripts/c80627281.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c80627281.lua) | 1 |
-| The Breaking Ruin God | `85182315` | [Scripts/c85182315.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c85182315.lua) | 1 |
-| Gagaga Head | `67120578` | [Scripts/c67120578.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c67120578.lua) | 1 |
-| Armed Dragon Thunderbolt | `57605303` | [Scripts/c57605303.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c57605303.lua) | 1 |
-| Phantasm Spiral Assault | `97795930` | [Scripts/c97795930.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c97795930.lua) | 1 |
-| Noctovision Dragon | `70333910` | [Scripts/c70333910.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c70333910.lua) | 1 |
-| Aiwass, the Magistus Spell Spirit | `35877582` | [Scripts/c35877582.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c35877582.lua) | 1 |
-| Dimension Fusion Destruction | `89190953` | [Scripts/c89190953.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c89190953.lua) | 1 |
-| Future Drive | `12508268` | [Scripts/c12508268.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c12508268.lua) | 1 |
-| Meklord Deflection | `66594927` | [Scripts/c66594927.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c66594927.lua) | 1 |
-| Battlin' Boxer King Dempsey | `46804536` | [Scripts/c46804536.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c46804536.lua) | 1 |
-| Gagaku-P.U.N.K. Crash Beat | `17691568` | [Scripts/c17691568.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c17691568.lua) | 2 |
-| Gouki Iron Claw | `71555408` | [Scripts/c71555408.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c71555408.lua) | 1 |
-| Silent Sword Slash | `18563744` | [Scripts/c18563744.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c18563744.lua) | 1 |
-| Attack of the Cornered Rat | `84389640` | [Scripts/c84389640.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c84389640.lua) | 1 |
-| Decode Destruction | `33062423` | [Scripts/c33062423.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c33062423.lua) | 1 |
-| Marincess Wave | `52945066` | [Scripts/c52945066.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c52945066.lua) | 1 |
+| [Accel Synchro Stardust Dragon](/examples/cards/30983281) | `30983281` | [Scripts/c30983281.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c30983281.lua) | 2 |
+| Fallen Paradise of the Sacred Beasts | `65861210` | [Scripts/c65861210.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c65861210.lua) | 1 |
+| Thunder Dragonlord | `5206415` | [Scripts/c5206415.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c5206415.lua) | 1 |
+| Raviel, Lord of Phantasms - Shimmering Scraper | `28651380` | [Scripts/c28651380.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c28651380.lua) | 1 |
+| Deep Sea Prima Donna | `50793215` | [Scripts/c50793215.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c50793215.lua) | 1 |
+| Mystical Elf - White Lightning | `15613529` | [Scripts/c15613529.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c15613529.lua) | 1 |
+| Marincess Bubble Ring | `19712214` | [Scripts/c19712214.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c19712214.lua) | 1 |
+| Marincess Snow | `80627281` | [Scripts/c80627281.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c80627281.lua) | 1 |
+| The Breaking Ruin God | `85182315` | [Scripts/c85182315.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c85182315.lua) | 1 |
+| Gagaga Head | `67120578` | [Scripts/c67120578.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c67120578.lua) | 1 |
+| Armed Dragon Thunderbolt | `57605303` | [Scripts/c57605303.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c57605303.lua) | 1 |
+| Phantasm Spiral Assault | `97795930` | [Scripts/c97795930.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c97795930.lua) | 1 |
+| Noctovision Dragon | `70333910` | [Scripts/c70333910.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c70333910.lua) | 1 |
+| Aiwass, the Magistus Spell Spirit | `35877582` | [Scripts/c35877582.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c35877582.lua) | 1 |
+| Dimension Fusion Destruction | `89190953` | [Scripts/c89190953.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c89190953.lua) | 1 |
+| Future Drive | `12508268` | [Scripts/c12508268.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c12508268.lua) | 1 |
+| Meklord Deflection | `66594927` | [Scripts/c66594927.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c66594927.lua) | 1 |
+| Battlin' Boxer King Dempsey | `46804536` | [Scripts/c46804536.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c46804536.lua) | 1 |
+| Gagaku-P.U.N.K. Crash Beat | `17691568` | [Scripts/c17691568.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c17691568.lua) | 2 |
+| Gouki Iron Claw | `71555408` | [Scripts/c71555408.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c71555408.lua) | 1 |
+| Silent Sword Slash | `18563744` | [Scripts/c18563744.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c18563744.lua) | 1 |
+| Attack of the Cornered Rat | `84389640` | [Scripts/c84389640.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c84389640.lua) | 1 |
+| Decode Destruction | `33062423` | [Scripts/c33062423.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c33062423.lua) | 1 |
+| Marincess Wave | `52945066` | [Scripts/c52945066.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c52945066.lua) | 1 |
 | ...and 28 more |  |  |  |
 
 ## Script Examples
 
 ### Accel Synchro Stardust Dragon (`30983281`)
 
-Source: [Scripts/c30983281.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c30983281.lua)
+Source: [Scripts/c30983281.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c30983281.lua)
 
 ```lua
 			e1:SetValue(c30983281.immval)
@@ -71,7 +71,7 @@ Source: [Scripts/c30983281.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/
 
 ### Fallen Paradise of the Sacred Beasts (`65861210`)
 
-Source: [Scripts/c65861210.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c65861210.lua)
+Source: [Scripts/c65861210.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c65861210.lua)
 
 ```lua
 				e1:SetReset(RESET_EVENT+RESETS_STANDARD)
@@ -83,7 +83,7 @@ Source: [Scripts/c65861210.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/
 
 ### Thunder Dragonlord (`5206415`)
 
-Source: [Scripts/c5206415.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c5206415.lua)
+Source: [Scripts/c5206415.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c5206415.lua)
 
 ```lua
 		e1:SetValue(c5206415.tgoval)

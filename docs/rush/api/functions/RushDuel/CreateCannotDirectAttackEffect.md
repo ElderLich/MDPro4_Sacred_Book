@@ -60,16 +60,16 @@ Generated from the local `Rush/Scripts/` folder and `rush_cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Joining Chairs | `120151028` | [Rush/Scripts/c120151028.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120151028.lua) | 1 |
-| King's Reward | `120140024` | [Rush/Scripts/c120140024.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120140024.lua) | 1 |
-| Astrobio Drake | `120235026` | [Rush/Scripts/c120235026.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120235026.lua) | 1 |
-| Royal Rebel's Rocker | `120140017` | [Rush/Scripts/c120140017.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120140017.lua) | 1 |
+| Joining Chairs | `120151028` | [Rush/Scripts/c120151028.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120151028.lua) | 1 |
+| King's Reward | `120140024` | [Rush/Scripts/c120140024.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120140024.lua) | 1 |
+| Astrobio Drake | `120235026` | [Rush/Scripts/c120235026.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120235026.lua) | 1 |
+| Royal Rebel's Rocker | `120140017` | [Rush/Scripts/c120140017.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120140017.lua) | 1 |
 
 ## Script Examples
 
 ### Joining Chairs (`120151028`)
 
-Source: [Rush/Scripts/c120151028.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120151028.lua)
+Source: [Rush/Scripts/c120151028.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120151028.lua)
 
 ```lua
 		if RD.ChangePosition(g,e,tp,REASON_EFFECT,POS_FACEUP_DEFENSE)~=0 and Duel.GetFlagEffect(tp,m)==0 then
@@ -81,7 +81,7 @@ Source: [Rush/Scripts/c120151028.lua](https://github.com/ElderLich/MDPro3_Sacred
 
 ### King's Reward (`120140024`)
 
-Source: [Rush/Scripts/c120140024.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120140024.lua)
+Source: [Rush/Scripts/c120140024.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120140024.lua)
 
 ```lua
 	if Duel.GetFlagEffect(tp,m)~=0 then return end
@@ -93,7 +93,7 @@ end
 
 ### Astrobio Drake (`120235026`)
 
-Source: [Rush/Scripts/c120235026.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120235026.lua)
+Source: [Rush/Scripts/c120235026.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120235026.lua)
 
 ```lua
 	if Duel.GetFlagEffect(tp,m)~=0 then return end

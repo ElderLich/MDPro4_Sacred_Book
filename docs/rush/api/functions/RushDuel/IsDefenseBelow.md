@@ -46,24 +46,24 @@ Generated from the local `Rush/Scripts/` folder and `rush_cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Soul Flip | `120301055` | [Rush/Scripts/c120301055.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120301055.lua) | 1 |
-| Mezame the Ringing Alarm | `120199015` | [Rush/Scripts/c120199015.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120199015.lua) | 1 |
-| Healthie Sati | `120306024` | [Rush/Scripts/c120306024.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120306024.lua) | 1 |
-| Seyanen the Blazing Conqueror | `120246050` | [Rush/Scripts/c120246050.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120246050.lua) | 1 |
-| Ancient Arise Dragon | `120145024` | [Rush/Scripts/c120145024.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120145024.lua) | 1 |
-| Jointech Stegosilos | `120231044` | [Rush/Scripts/c120231044.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120231044.lua) | 1 |
-| Makiu, the Magical Mist | `120205058` | [Rush/Scripts/c120205058.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120205058.lua) | 1 |
-| Yokai Tiger Orient Strike | `120222057` | [Rush/Scripts/c120222057.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120222057.lua) | 1 |
-| Animagica Leader | `120260074` | [Rush/Scripts/c120260074.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120260074.lua) | 1 |
-| Speed Major | `120301057` | [Rush/Scripts/c120301057.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120301057.lua) | 1 |
-| Mormolith | `120285027` | [Rush/Scripts/c120285027.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120285027.lua) | 1 |
-| Magical Sevens Fusion | `120285050` | [Rush/Scripts/c120285050.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120285050.lua) | 1 |
+| Soul Flip | `120301055` | [Rush/Scripts/c120301055.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120301055.lua) | 1 |
+| Mezame the Ringing Alarm | `120199015` | [Rush/Scripts/c120199015.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120199015.lua) | 1 |
+| Healthie Sati | `120306024` | [Rush/Scripts/c120306024.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120306024.lua) | 1 |
+| Seyanen the Blazing Conqueror | `120246050` | [Rush/Scripts/c120246050.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120246050.lua) | 1 |
+| Ancient Arise Dragon | `120145024` | [Rush/Scripts/c120145024.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120145024.lua) | 1 |
+| Jointech Stegosilos | `120231044` | [Rush/Scripts/c120231044.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120231044.lua) | 1 |
+| Makiu, the Magical Mist | `120205058` | [Rush/Scripts/c120205058.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120205058.lua) | 1 |
+| Yokai Tiger Orient Strike | `120222057` | [Rush/Scripts/c120222057.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120222057.lua) | 1 |
+| Animagica Leader | `120260074` | [Rush/Scripts/c120260074.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120260074.lua) | 1 |
+| Speed Major | `120301057` | [Rush/Scripts/c120301057.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120301057.lua) | 1 |
+| Mormolith | `120285027` | [Rush/Scripts/c120285027.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120285027.lua) | 1 |
+| Magical Sevens Fusion | `120285050` | [Rush/Scripts/c120285050.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120285050.lua) | 1 |
 
 ## Script Examples
 
 ### Soul Flip (`120301055`)
 
-Source: [Rush/Scripts/c120301055.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120301055.lua)
+Source: [Rush/Scripts/c120301055.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120301055.lua)
 
 ```lua
 --Activate
@@ -75,7 +75,7 @@ function cm.exfilter(c)
 
 ### Mezame the Ringing Alarm (`120199015`)
 
-Source: [Rush/Scripts/c120199015.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120199015.lua)
+Source: [Rush/Scripts/c120199015.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120199015.lua)
 
 ```lua
 end
@@ -86,7 +86,7 @@ end
 
 ### Healthie Sati (`120306024`)
 
-Source: [Rush/Scripts/c120306024.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120306024.lua)
+Source: [Rush/Scripts/c120306024.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120306024.lua)
 
 ```lua
 --Special Summon

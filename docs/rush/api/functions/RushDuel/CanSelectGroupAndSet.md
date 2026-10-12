@@ -59,14 +59,14 @@ Generated from the local `Rush/Scripts/` folder and `rush_cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Sparkhearts Girl | `120145014` | [Rush/Scripts/c120145014.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120145014.lua) | 1 |
-| Extra Meat the Special Noodle Ninja | `120199038` | [Rush/Scripts/c120199038.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120199038.lua) | 1 |
+| Sparkhearts Girl | `120145014` | [Rush/Scripts/c120145014.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120145014.lua) | 1 |
+| Extra Meat the Special Noodle Ninja | `120199038` | [Rush/Scripts/c120199038.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120199038.lua) | 1 |
 
 ## Script Examples
 
 ### Sparkhearts Girl (`120145014`)
 
-Source: [Rush/Scripts/c120145014.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120145014.lua)
+Source: [Rush/Scripts/c120145014.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120145014.lua)
 
 ```lua
 	RD.SelectAndDoAction(aux.Stringid(m,1),Card.IsFaceup,tp,0,LOCATION_MZONE,1,1,nil,function(g)
@@ -78,7 +78,7 @@ end
 
 ### Extra Meat the Special Noodle Ninja (`120199038`)
 
-Source: [Rush/Scripts/c120199038.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120199038.lua)
+Source: [Rush/Scripts/c120199038.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120199038.lua)
 
 ```lua
 function cm.operation(e,tp,eg,ep,ev,re,r,rp)

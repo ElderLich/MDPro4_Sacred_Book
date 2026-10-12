@@ -63,14 +63,14 @@ Generated from the local `Rush/Scripts/` folder and `rush_cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| The Player Returning Alive | `120305036` | [Rush/Scripts/c120305036.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120305036.lua) | 1 |
-| Pliage's Clustering Stars | `120305024` | [Rush/Scripts/c120305024.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120305024.lua) | 1 |
+| The Player Returning Alive | `120305036` | [Rush/Scripts/c120305036.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120305036.lua) | 1 |
+| Pliage's Clustering Stars | `120305024` | [Rush/Scripts/c120305024.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120305024.lua) | 1 |
 
 ## Script Examples
 
 ### The Player Returning Alive (`120305036`)
 
-Source: [Rush/Scripts/c120305036.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120305036.lua)
+Source: [Rush/Scripts/c120305036.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120305036.lua)
 
 ```lua
 end
@@ -82,7 +82,7 @@ function cm.activate(e,tp,eg,ep,ev,re,r,rp)
 
 ### Pliage's Clustering Stars (`120305024`)
 
-Source: [Rush/Scripts/c120305024.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120305024.lua)
+Source: [Rush/Scripts/c120305024.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120305024.lua)
 
 ```lua
 end

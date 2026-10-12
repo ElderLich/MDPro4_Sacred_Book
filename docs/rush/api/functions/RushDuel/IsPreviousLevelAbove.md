@@ -46,15 +46,15 @@ Generated from the local `Rush/Scripts/` folder and `rush_cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Dark Ruler Sword Swipe | `120188030` | [Rush/Scripts/c120188030.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120188030.lua) | 1 |
-| Archfiend's Revival | `120170062` | [Rush/Scripts/c120170062.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120170062.lua) | 1 |
-| Constructor Resurrection | `120151033` | [Rush/Scripts/c120151033.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120151033.lua) | 1 |
+| Dark Ruler Sword Swipe | `120188030` | [Rush/Scripts/c120188030.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120188030.lua) | 1 |
+| Archfiend's Revival | `120170062` | [Rush/Scripts/c120170062.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120170062.lua) | 1 |
+| Constructor Resurrection | `120151033` | [Rush/Scripts/c120151033.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120151033.lua) | 1 |
 
 ## Script Examples
 
 ### Dark Ruler Sword Swipe (`120188030`)
 
-Source: [Rush/Scripts/c120188030.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120188030.lua)
+Source: [Rush/Scripts/c120188030.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120188030.lua)
 
 ```lua
 --Activate
@@ -66,7 +66,7 @@ function cm.confilter(c,tp,re,rp)
 
 ### Archfiend's Revival (`120170062`)
 
-Source: [Rush/Scripts/c120170062.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120170062.lua)
+Source: [Rush/Scripts/c120170062.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120170062.lua)
 
 ```lua
 function cm.confilter(c,tp)
@@ -78,7 +78,7 @@ end
 
 ### Constructor Resurrection (`120151033`)
 
-Source: [Rush/Scripts/c120151033.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120151033.lua)
+Source: [Rush/Scripts/c120151033.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120151033.lua)
 
 ```lua
 	return RD.IsPreviousControler(c,tp) and c==Duel.GetAttackTarget()

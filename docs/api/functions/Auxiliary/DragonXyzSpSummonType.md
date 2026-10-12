@@ -31,16 +31,16 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Number 46: Dragluon | `2978414` | [Scripts/c2978414.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c2978414.lua) | 3 |
-| Queen Dragun Djinn | `90726340` | [Scripts/c90726340.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c90726340.lua) | 3 |
-| Galaxy Stealth Dragon | `54358015` | [Scripts/c54358015.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c54358015.lua) | 3 |
-| Hieratic Dragon King of Atum | `27337596` | [Scripts/c27337596.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c27337596.lua) | 3 |
+| Number 46: Dragluon | `2978414` | [Scripts/c2978414.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c2978414.lua) | 3 |
+| Queen Dragun Djinn | `90726340` | [Scripts/c90726340.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c90726340.lua) | 3 |
+| Galaxy Stealth Dragon | `54358015` | [Scripts/c54358015.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c54358015.lua) | 3 |
+| Hieratic Dragon King of Atum | `27337596` | [Scripts/c27337596.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c27337596.lua) | 3 |
 
 ## Script Examples
 
 ### Number 46: Dragluon (`2978414`)
 
-Source: [Scripts/c2978414.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c2978414.lua)
+Source: [Scripts/c2978414.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c2978414.lua)
 
 ```lua
 end
@@ -52,7 +52,7 @@ function c2978414.sptg(e,tp,eg,ep,ev,re,r,rp,chk)
 
 ### Queen Dragun Djinn (`90726340`)
 
-Source: [Scripts/c90726340.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c90726340.lua)
+Source: [Scripts/c90726340.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c90726340.lua)
 
 ```lua
 end
@@ -64,7 +64,7 @@ function c90726340.sptg(e,tp,eg,ep,ev,re,r,rp,chk,chkc)
 
 ### Galaxy Stealth Dragon (`54358015`)
 
-Source: [Scripts/c54358015.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c54358015.lua)
+Source: [Scripts/c54358015.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c54358015.lua)
 
 ```lua
 end

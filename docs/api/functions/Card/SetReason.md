@@ -28,13 +28,13 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Future Fusion | `77565204` | [Scripts/c77565204.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c77565204.lua) | 1 |
+| Future Fusion | `77565204` | [Scripts/c77565204.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c77565204.lua) | 1 |
 
 ## Script Examples
 
 ### Future Fusion (`77565204`)
 
-Source: [Scripts/c77565204.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c77565204.lua)
+Source: [Scripts/c77565204.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c77565204.lua)
 
 ```lua
 	for mc in aux.Next(mat) do

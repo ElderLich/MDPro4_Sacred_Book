@@ -32,16 +32,16 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Allure Queen LV5 | `23756165` | [Scripts/c23756165.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c23756165.lua) | 3 |
-| Allure Queen LV3 | `87257460` | [Scripts/c87257460.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c87257460.lua) | 3 |
-| Allure Palace | `31322640` | [Scripts/c31322640.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c31322640.lua) | 1 |
-| Allure Queen LV7 | `50140163` | [Scripts/c50140163.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c50140163.lua) | 2 |
+| Allure Queen LV5 | `23756165` | [Scripts/c23756165.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c23756165.lua) | 3 |
+| Allure Queen LV3 | `87257460` | [Scripts/c87257460.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c87257460.lua) | 3 |
+| Allure Palace | `31322640` | [Scripts/c31322640.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c31322640.lua) | 1 |
+| Allure Queen LV7 | `50140163` | [Scripts/c50140163.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c50140163.lua) | 2 |
 
 ## Script Examples
 
 ### Allure Queen LV5 (`23756165`)
 
-Source: [Scripts/c23756165.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c23756165.lua)
+Source: [Scripts/c23756165.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c23756165.lua)
 
 ```lua
 function c23756165.eqcon1(e,tp,eg,ep,ev,re,r,rp)
@@ -53,7 +53,7 @@ function c23756165.eqcon2(e,tp,eg,ep,ev,re,r,rp)
 
 ### Allure Queen LV3 (`87257460`)
 
-Source: [Scripts/c87257460.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c87257460.lua)
+Source: [Scripts/c87257460.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c87257460.lua)
 
 ```lua
 function c87257460.eqcon1(e,tp,eg,ep,ev,re,r,rp)
@@ -65,7 +65,7 @@ function c87257460.eqcon2(e,tp,eg,ep,ev,re,r,rp)
 
 ### Allure Palace (`31322640`)
 
-Source: [Scripts/c31322640.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c31322640.lua)
+Source: [Scripts/c31322640.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c31322640.lua)
 
 ```lua
 function s.spcost(e,tp,eg,ep,ev,re,r,rp,chk)

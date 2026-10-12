@@ -51,14 +51,14 @@ Generated from the local `Rush/Scripts/` folder and `rush_cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Brassdes of the Diabolic Duds | `120301073` | [Rush/Scripts/c120301073.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120301073.lua) | 1 |
-| The Disciple of Sacred Silence | `120306066` | [Rush/Scripts/c120306066.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120306066.lua) | 1 |
+| Brassdes of the Diabolic Duds | `120301073` | [Rush/Scripts/c120301073.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120301073.lua) | 1 |
+| The Disciple of Sacred Silence | `120306066` | [Rush/Scripts/c120306066.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120306066.lua) | 1 |
 
 ## Script Examples
 
 ### Brassdes of the Diabolic Duds (`120301073`)
 
-Source: [Rush/Scripts/c120301073.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120301073.lua)
+Source: [Rush/Scripts/c120301073.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120301073.lua)
 
 ```lua
 			local tc=g:GetFirst()
@@ -70,7 +70,7 @@ Source: [Rush/Scripts/c120301073.lua](https://github.com/ElderLich/MDPro3_Sacred
 
 ### The Disciple of Sacred Silence (`120306066`)
 
-Source: [Rush/Scripts/c120306066.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120306066.lua)
+Source: [Rush/Scripts/c120306066.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120306066.lua)
 
 ```lua
 	local c=e:GetHandler()

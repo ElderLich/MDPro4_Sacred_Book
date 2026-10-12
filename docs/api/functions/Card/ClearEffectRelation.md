@@ -27,13 +27,13 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Magical Hats | `81210420` | [Scripts/c81210420.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c81210420.lua) | 1 |
+| Magical Hats | `81210420` | [Scripts/c81210420.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c81210420.lua) | 1 |
 
 ## Script Examples
 
 ### Magical Hats (`81210420`)
 
-Source: [Scripts/c81210420.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c81210420.lua)
+Source: [Scripts/c81210420.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c81210420.lua)
 
 ```lua
 	if tc:IsFaceup() then

@@ -54,14 +54,14 @@ Generated from the local `Rush/Scripts/` folder and `rush_cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Ciela, the Knight of Skysavior | `120235024` | [Rush/Scripts/c120235024.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120235024.lua) | 1 |
-| Dankus, the Knight of Skysavior | `120235025` | [Rush/Scripts/c120235025.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120235025.lua) | 1 |
+| Ciela, the Knight of Skysavior | `120235024` | [Rush/Scripts/c120235024.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120235024.lua) | 1 |
+| Dankus, the Knight of Skysavior | `120235025` | [Rush/Scripts/c120235025.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120235025.lua) | 1 |
 
 ## Script Examples
 
 ### Ciela, the Knight of Skysavior (`120235024`)
 
-Source: [Rush/Scripts/c120235024.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120235024.lua)
+Source: [Rush/Scripts/c120235024.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120235024.lua)
 
 ```lua
 	return g:GetClassCount(Card.GetLinkCode)==g:GetCount()
@@ -73,7 +73,7 @@ function cm.target(e,tp,eg,ep,ev,re,r,rp,chk)
 
 ### Dankus, the Knight of Skysavior (`120235025`)
 
-Source: [Rush/Scripts/c120235025.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120235025.lua)
+Source: [Rush/Scripts/c120235025.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120235025.lua)
 
 ```lua
 	return g:GetClassCount(Card.GetLinkCode)==g:GetCount()

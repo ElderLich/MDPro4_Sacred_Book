@@ -55,19 +55,19 @@ Generated from the local `Rush/Scripts/` folder and `rush_cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Conduction Alchemicalizer Suirai | `120254042` | [Rush/Scripts/c120254042.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120254042.lua) | 1 |
-| Destructor Wyrm Bakhamut | `120247040` | [Rush/Scripts/c120247040.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120247040.lua) | 1 |
-| Secret Alteration | `120257053` | [Rush/Scripts/c120257053.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120257053.lua) | 1 |
-| Fire Wrath | `120205052` | [Rush/Scripts/c120205052.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120205052.lua) | 1 |
-| Pair Production | `120150018` | [Rush/Scripts/c120150018.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120150018.lua) | 1 |
-| Jest of the Cosmos Princess | `120261058` | [Rush/Scripts/c120261058.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120261058.lua) | 1 |
-| Dosodon | `120199033` | [Rush/Scripts/c120199033.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120199033.lua) | 1 |
+| Conduction Alchemicalizer Suirai | `120254042` | [Rush/Scripts/c120254042.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120254042.lua) | 1 |
+| Destructor Wyrm Bakhamut | `120247040` | [Rush/Scripts/c120247040.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120247040.lua) | 1 |
+| Secret Alteration | `120257053` | [Rush/Scripts/c120257053.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120257053.lua) | 1 |
+| Fire Wrath | `120205052` | [Rush/Scripts/c120205052.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120205052.lua) | 1 |
+| Pair Production | `120150018` | [Rush/Scripts/c120150018.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120150018.lua) | 1 |
+| Jest of the Cosmos Princess | `120261058` | [Rush/Scripts/c120261058.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120261058.lua) | 1 |
+| Dosodon | `120199033` | [Rush/Scripts/c120199033.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120199033.lua) | 1 |
 
 ## Script Examples
 
 ### Conduction Alchemicalizer Suirai (`120254042`)
 
-Source: [Rush/Scripts/c120254042.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120254042.lua)
+Source: [Rush/Scripts/c120254042.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120254042.lua)
 
 ```lua
 	return g:IsExists(cm.costfilter,1,nil)
@@ -79,7 +79,7 @@ cm.cost=RD.CostSendHandSubToGrave(Card.IsAbleToGraveAsCost,cm.check,1,3,function
 
 ### Destructor Wyrm Bakhamut (`120247040`)
 
-Source: [Rush/Scripts/c120247040.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120247040.lua)
+Source: [Rush/Scripts/c120247040.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120247040.lua)
 
 ```lua
 	return Duel.GetFieldGroupCount(tp,LOCATION_FZONE,LOCATION_FZONE)>0
@@ -91,7 +91,7 @@ function cm.target(e,tp,eg,ep,ev,re,r,rp,chk)
 
 ### Secret Alteration (`120257053`)
 
-Source: [Rush/Scripts/c120257053.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120257053.lua)
+Source: [Rush/Scripts/c120257053.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120257053.lua)
 
 ```lua
 	return g:IsExists(cm.costfilter,2,nil)

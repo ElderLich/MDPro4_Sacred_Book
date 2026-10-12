@@ -1,6 +1,6 @@
-# MDPro3 Sacred Book
+# MDPro4 Sacred Book
 
-Core-specific Lua scripting reference for MDPro3/YGOPro card scripts.
+Core-specific Lua scripting reference for MDPro4/YGOPro card scripts.
 
 ## Reference
 

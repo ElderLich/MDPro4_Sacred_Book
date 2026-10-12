@@ -31,15 +31,15 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Guardragon Pisty | `13143275` | [Scripts/c13143275.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c13143275.lua) | 2 |
-| Guardragon Agarpain | `59537380` | [Scripts/c59537380.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c59537380.lua) | 2 |
-| Guardragon Elpy | `86148577` | [Scripts/c86148577.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c86148577.lua) | 2 |
+| Guardragon Pisty | `13143275` | [Scripts/c13143275.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c13143275.lua) | 2 |
+| Guardragon Agarpain | `59537380` | [Scripts/c59537380.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c59537380.lua) | 2 |
+| Guardragon Elpy | `86148577` | [Scripts/c86148577.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c86148577.lua) | 2 |
 
 ## Script Examples
 
 ### Guardragon Pisty (`13143275`)
 
-Source: [Scripts/c13143275.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c13143275.lua)
+Source: [Scripts/c13143275.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c13143275.lua)
 
 ```lua
 end
@@ -51,7 +51,7 @@ function c13143275.sptg(e,tp,eg,ep,ev,re,r,rp,chk,chkc)
 
 ### Guardragon Agarpain (`59537380`)
 
-Source: [Scripts/c59537380.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c59537380.lua)
+Source: [Scripts/c59537380.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c59537380.lua)
 
 ```lua
 end
@@ -63,7 +63,7 @@ function c59537380.sptg(e,tp,eg,ep,ev,re,r,rp,chk)
 
 ### Guardragon Elpy (`86148577`)
 
-Source: [Scripts/c86148577.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c86148577.lua)
+Source: [Scripts/c86148577.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c86148577.lua)
 
 ```lua
 end

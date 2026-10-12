@@ -39,16 +39,16 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Rilliona, the Wondrous Magistus Witch Wardrobe | `74689476` | [Scripts/c74689476.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c74689476.lua) | 1 |
-| Eclipse Twins | `45852939` | [Scripts/c45852939.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c45852939.lua) | 1 |
-| Gigantic Spright | `54498517` | [Scripts/c54498517.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c54498517.lua) | 1 |
-| Virtual World Dragon - Longlong | `61641818` | [Scripts/c61641818.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c61641818.lua) | 1 |
+| Rilliona, the Wondrous Magistus Witch Wardrobe | `74689476` | [Scripts/c74689476.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c74689476.lua) | 1 |
+| Eclipse Twins | `45852939` | [Scripts/c45852939.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c45852939.lua) | 1 |
+| Gigantic Spright | `54498517` | [Scripts/c54498517.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c54498517.lua) | 1 |
+| Virtual World Dragon - Longlong | `61641818` | [Scripts/c61641818.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c61641818.lua) | 1 |
 
 ## Script Examples
 
 ### Rilliona, the Wondrous Magistus Witch Wardrobe (`74689476`)
 
-Source: [Scripts/c74689476.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c74689476.lua)
+Source: [Scripts/c74689476.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c74689476.lua)
 
 ```lua
 end
@@ -60,7 +60,7 @@ function c74689476.xyzcheck(g)
 
 ### Eclipse Twins (`45852939`)
 
-Source: [Scripts/c45852939.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c45852939.lua)
+Source: [Scripts/c45852939.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c45852939.lua)
 
 ```lua
 end
@@ -72,7 +72,7 @@ function s.xatkcon(e,tp,eg,ep,ev,re,r,rp)
 
 ### Gigantic Spright (`54498517`)
 
-Source: [Scripts/c54498517.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c54498517.lua)
+Source: [Scripts/c54498517.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c54498517.lua)
 
 ```lua
 end

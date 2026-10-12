@@ -54,20 +54,20 @@ Generated from the local `Rush/Scripts/` folder and `rush_cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Tamabot King Golem | `120285039` | [Rush/Scripts/c120285039.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120285039.lua) | 1 |
-| JAM:P Check! | `120228054` | [Rush/Scripts/c120228054.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120228054.lua) | 1 |
-| Chemical Cure Purple | `120196030` | [Rush/Scripts/c120196030.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120196030.lua) | 1 |
-| Absurd Void Hole | `120260021` | [Rush/Scripts/c120260021.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120260021.lua) | 1 |
-| Cosmic Sucker | `120294021` | [Rush/Scripts/c120294021.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120294021.lua) | 1 |
-| Dream Drummer | `120189012` | [Rush/Scripts/c120189012.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120189012.lua) | 1 |
-| Helpful Items | `120306054` | [Rush/Scripts/c120306054.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120306054.lua) | 1 |
-| Psypickupper | `120199014` | [Rush/Scripts/c120199014.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120199014.lua) | 1 |
+| Tamabot King Golem | `120285039` | [Rush/Scripts/c120285039.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120285039.lua) | 1 |
+| JAM:P Check! | `120228054` | [Rush/Scripts/c120228054.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120228054.lua) | 1 |
+| Chemical Cure Purple | `120196030` | [Rush/Scripts/c120196030.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120196030.lua) | 1 |
+| Absurd Void Hole | `120260021` | [Rush/Scripts/c120260021.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120260021.lua) | 1 |
+| Cosmic Sucker | `120294021` | [Rush/Scripts/c120294021.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120294021.lua) | 1 |
+| Dream Drummer | `120189012` | [Rush/Scripts/c120189012.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120189012.lua) | 1 |
+| Helpful Items | `120306054` | [Rush/Scripts/c120306054.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120306054.lua) | 1 |
+| Psypickupper | `120199014` | [Rush/Scripts/c120199014.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120199014.lua) | 1 |
 
 ## Script Examples
 
 ### Tamabot King Golem (`120285039`)
 
-Source: [Rush/Scripts/c120285039.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120285039.lua)
+Source: [Rush/Scripts/c120285039.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120285039.lua)
 
 ```lua
 		local c=e:GetHandler()
@@ -79,7 +79,7 @@ Source: [Rush/Scripts/c120285039.lua](https://github.com/ElderLich/MDPro3_Sacred
 
 ### JAM:P Check! (`120228054`)
 
-Source: [Rush/Scripts/c120228054.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120228054.lua)
+Source: [Rush/Scripts/c120228054.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120228054.lua)
 
 ```lua
 			if Duel.Destroy(sg,REASON_EFFECT)~=0
@@ -91,7 +91,7 @@ Source: [Rush/Scripts/c120228054.lua](https://github.com/ElderLich/MDPro3_Sacred
 
 ### Chemical Cure Purple (`120196030`)
 
-Source: [Rush/Scripts/c120196030.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120196030.lua)
+Source: [Rush/Scripts/c120196030.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120196030.lua)
 
 ```lua
 function cm.operation(e,tp,eg,ep,ev,re,r,rp)

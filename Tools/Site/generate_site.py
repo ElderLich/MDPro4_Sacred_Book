@@ -260,7 +260,7 @@ def code_block(text: str) -> str:
 
 
 def github_script_url(script_path: str) -> str:
-    return f"https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/{script_path}"
+    return f"https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/{script_path}"
 
 
 def call_patterns(name: str) -> list[re.Pattern[str]]:
@@ -463,7 +463,7 @@ def write_api_overview() -> None:
     # contains only the standard reference and has no Rush or learning pages.
     write_text(DOCS_DIR / "api" / "index.md", """# API
 
-Choose the reference for the scripting layer you need. These pages follow this project's MDPro3/YGOPro core and helper sources; available functions can differ between simulators.
+Choose the reference for the scripting layer you need. These pages follow this project's MDPro4/YGOPro core and helper sources; available functions can differ between simulators.
 
 ## Choose a Reference
 

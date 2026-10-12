@@ -58,17 +58,17 @@ Generated from the local `Rush/Scripts/` folder and `rush_cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| Secret Service Shine Guard | `120183023` | [Rush/Scripts/c120183023.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120183023.lua) | 1 |
-| Worker Warrior - Sinister CEO | `120183024` | [Rush/Scripts/c120183024.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120183024.lua) | 1 |
-| Alpha the Magnet Cavalry | `120260026` | [Rush/Scripts/c120260026.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120260026.lua) | 1 |
-| Fiend's Mirage | `120304031` | [Rush/Scripts/c120304031.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120304031.lua) | 1 |
-| Bat of the Twin Blaze Fiends | `120290025` | [Rush/Scripts/c120290025.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120290025.lua) | 1 |
+| Secret Service Shine Guard | `120183023` | [Rush/Scripts/c120183023.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120183023.lua) | 1 |
+| Worker Warrior - Sinister CEO | `120183024` | [Rush/Scripts/c120183024.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120183024.lua) | 1 |
+| Alpha the Magnet Cavalry | `120260026` | [Rush/Scripts/c120260026.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120260026.lua) | 1 |
+| Fiend's Mirage | `120304031` | [Rush/Scripts/c120304031.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120304031.lua) | 1 |
+| Bat of the Twin Blaze Fiends | `120290025` | [Rush/Scripts/c120290025.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120290025.lua) | 1 |
 
 ## Script Examples
 
 ### Secret Service Shine Guard (`120183023`)
 
-Source: [Rush/Scripts/c120183023.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120183023.lua)
+Source: [Rush/Scripts/c120183023.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120183023.lua)
 
 ```lua
 end
@@ -80,7 +80,7 @@ function cm.operation(e,tp,eg,ep,ev,re,r,rp)
 
 ### Worker Warrior - Sinister CEO (`120183024`)
 
-Source: [Rush/Scripts/c120183024.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120183024.lua)
+Source: [Rush/Scripts/c120183024.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120183024.lua)
 
 ```lua
 end
@@ -91,7 +91,7 @@ end
 
 ### Alpha the Magnet Cavalry (`120260026`)
 
-Source: [Rush/Scripts/c120260026.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Rush/Scripts/c120260026.lua)
+Source: [Rush/Scripts/c120260026.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Rush/Scripts/c120260026.lua)
 
 ```lua
 end

@@ -32,26 +32,26 @@ Generated from the local `Scripts/` folder and `cards.cdb`.
 
 | Card | ID | Script | Detected Calls |
 | --- | ---: | --- | ---: |
-| [W:P Fancy Ball](/examples/cards/4993187) | `4993187` | [Scripts/c4993187.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c4993187.lua) | 2 |
-| Borrelshroud Dragon | `66452432` | [Scripts/c66452432.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c66452432.lua) | 1 |
-| Marincess Wonder Heart | `94207108` | [Scripts/c94207108.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c94207108.lua) | 1 |
-| Quadborrel Dragon | `29296344` | [Scripts/c29296344.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c29296344.lua) | 1 |
-| V-LAN Hydra | `13536606` | [Scripts/c13536606.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c13536606.lua) | 1 |
-| Amphibious Swarmship Amblowhale | `20665527` | [Scripts/c20665527.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c20665527.lua) | 2 |
-| Decode Talker Heatsoul | `61245672` | [Scripts/c61245672.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c61245672.lua) | 1 |
-| Triple Burst Dragon | `49725936` | [Scripts/c49725936.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c49725936.lua) | 1 |
-| Transcode Talker | `46947713` | [Scripts/c46947713.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c46947713.lua) | 1 |
-| Sunseed Shadow | `30013902` | [Scripts/c30013902.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c30013902.lua) | 1 |
-| Protectcode Talker | `58036229` | [Scripts/c58036229.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c58036229.lua) | 1 |
-| Primite Dragon Nether Berzelius | `26462013` | [Scripts/c26462013.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c26462013.lua) | 1 |
-| Miniborrel Dragon | `73341839` | [Scripts/c73341839.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c73341839.lua) | 1 |
-| Trickstar Foxglove Witch | `86750474` | [Scripts/c86750474.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c86750474.lua) | 1 |
+| [W:P Fancy Ball](/examples/cards/4993187) | `4993187` | [Scripts/c4993187.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c4993187.lua) | 2 |
+| Borrelshroud Dragon | `66452432` | [Scripts/c66452432.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c66452432.lua) | 1 |
+| Marincess Wonder Heart | `94207108` | [Scripts/c94207108.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c94207108.lua) | 1 |
+| Quadborrel Dragon | `29296344` | [Scripts/c29296344.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c29296344.lua) | 1 |
+| V-LAN Hydra | `13536606` | [Scripts/c13536606.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c13536606.lua) | 1 |
+| Amphibious Swarmship Amblowhale | `20665527` | [Scripts/c20665527.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c20665527.lua) | 2 |
+| Decode Talker Heatsoul | `61245672` | [Scripts/c61245672.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c61245672.lua) | 1 |
+| Triple Burst Dragon | `49725936` | [Scripts/c49725936.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c49725936.lua) | 1 |
+| Transcode Talker | `46947713` | [Scripts/c46947713.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c46947713.lua) | 1 |
+| Sunseed Shadow | `30013902` | [Scripts/c30013902.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c30013902.lua) | 1 |
+| Protectcode Talker | `58036229` | [Scripts/c58036229.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c58036229.lua) | 1 |
+| Primite Dragon Nether Berzelius | `26462013` | [Scripts/c26462013.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c26462013.lua) | 1 |
+| Miniborrel Dragon | `73341839` | [Scripts/c73341839.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c73341839.lua) | 1 |
+| Trickstar Foxglove Witch | `86750474` | [Scripts/c86750474.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c86750474.lua) | 1 |
 
 ## Script Examples
 
 ### W:P Fancy Ball (`4993187`)
 
-Source: [Scripts/c4993187.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c4993187.lua)
+Source: [Scripts/c4993187.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c4993187.lua)
 
 ```lua
 end
@@ -63,7 +63,7 @@ function s.lktg(e,tp,eg,ep,ev,re,r,rp,chk)
 
 ### Borrelshroud Dragon (`66452432`)
 
-Source: [Scripts/c66452432.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c66452432.lua)
+Source: [Scripts/c66452432.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c66452432.lua)
 
 ```lua
 end
@@ -75,7 +75,7 @@ end
 
 ### Marincess Wonder Heart (`94207108`)
 
-Source: [Scripts/c94207108.lua](https://github.com/ElderLich/MDPro3_Sacred_Book/blob/main/Scripts/c94207108.lua)
+Source: [Scripts/c94207108.lua](https://github.com/ElderLich/MDPro4_Sacred_Book/blob/main/Scripts/c94207108.lua)
 
 ```lua
 end

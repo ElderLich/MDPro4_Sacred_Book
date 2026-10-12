@@ -56,7 +56,7 @@ end
 ```
 
 Use [`Card.IsCanChangePosition`](/api/functions/Card/IsCanChangePosition) for
-general effect-driven position changes. In this MDPro3/YGOPro core, that
+general effect-driven position changes. In this MDPro4/YGOPro core, that
 helper returns false for Link Monsters.
 
 ## Duel.ChangePosition Argument Order
