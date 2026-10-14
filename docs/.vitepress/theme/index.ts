@@ -1,6 +1,6 @@
 import DefaultTheme from 'vitepress/theme';
 import type { Theme } from 'vitepress';
-import { onMounted, onUnmounted } from 'vue';
+import { defineAsyncComponent, onMounted, onUnmounted } from 'vue';
 import ScriptExplorer from './components/ScriptExplorer.vue';
 import './custom.css';
 
@@ -44,5 +44,6 @@ export default {
   },
   enhanceApp({ app }) {
     app.component('ScriptExplorer', ScriptExplorer);
+    app.component('CardExplorer', defineAsyncComponent(() => import('./components/CardExplorer.vue')));
   },
 } satisfies Theme;

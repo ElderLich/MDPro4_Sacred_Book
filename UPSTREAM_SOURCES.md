@@ -6,6 +6,34 @@ at site-build time. Refreshes should preserve the upstream files byte-for-byte;
 Sacred Book-specific explanations belong in `Tools/FunctionDocs/` or the site
 generator rather than in the vendored files.
 
+## Card Explorer locale import (2026-10-14)
+
+Card Explorer imports both `cards.cdb` and `rush_cards.cdb` from every supplied
+`MDPro4_Data/Data/locales/<locale>` directory: German, English, Spanish, French,
+Italian, Japanese, Korean, Portuguese, Thai, Simplified Chinese, and Traditional
+Chinese. Localized static catalogs are checked in under `docs/public/data/cards/`
+so site deployment does not require that external checkout. The manifest records
+per-database row counts and SHA-256 hashes; archetype-name snapshots record their
+source as well. Cards without standalone scripts are included.
+
+The English root `cards.cdb` was recopied byte-for-byte from the supplied source
+(SHA-256 `1f4a9afbec2133fd9c051fb53e940aaeb9d5603af74a29dc7dae62ef630086c8`).
+Its `datas` and `texts` rows are identical to the previous snapshot; only the
+SQLite file bytes differ. The Rush root database is unchanged.
+
+Refresh the localized catalogs explicitly with:
+
+```powershell
+python Tools/Site/generate_card_catalog.py --locales-dir D:\Programs\GitHub\MDPro4_Data\Data\locales
+```
+
+Normal site generation refreshes English from the checked-in databases and
+preserves the imported other-language catalogs. It does not silently replace
+missing translations: the supplied Simplified Chinese Standard database has
+15,018 cards and Traditional Chinese has 14,779, versus 15,019 in the other
+Standard databases. Every Rush database has 4,076 cards. Some source text is
+untranslated, including the supplied Thai Rush database's English text.
+
 ## Current snapshot (2026-10-11)
 
 These are the newest commits in the supplied local repositories; this refresh

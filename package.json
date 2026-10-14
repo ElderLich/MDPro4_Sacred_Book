@@ -6,7 +6,7 @@
     "reference:generate": "python Tools/FunctionDocs/generate_function_docs.py",
     "reference:test": "python -m unittest Tools.FunctionDocs.test_rush_function_docs",
     "site:generate": "python Tools/Site/generate_site.py",
-    "site:test": "python -m unittest Tools.Site.test_generate_site",
+    "site:test": "python -m unittest Tools.Site.test_generate_site Tools.Site.test_card_catalog",
     "links:check": "python Tools/Site/validate_markdown_links.py",
     "docs:generate": "npm run reference:generate && npm run site:generate",
     "docs:dev": "npm run docs:generate && vitepress dev docs",

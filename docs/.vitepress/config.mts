@@ -38,7 +38,13 @@ export default defineConfig({
       { text: 'Rush Duel', link: '/learn/rush-duel' },
       { text: 'API', link: '/api/' },
       { text: 'Examples', link: '/examples/' },
-      { text: 'Script Explorer', link: '/tools/script-explorer' },
+      {
+        text: 'Tools',
+        items: [
+          { text: 'Script Explorer', link: '/tools/script-explorer' },
+          { text: 'Card Explorer', link: '/tools/card-explorer' },
+        ],
+      },
     ],
     sidebar: {
       '/learn/': [
@@ -193,6 +199,7 @@ export default defineConfig({
           text: 'Tools',
           items: [
             { text: 'Script Explorer', link: '/tools/script-explorer' },
+            { text: 'Card Explorer', link: '/tools/card-explorer' },
           ],
         },
       ],

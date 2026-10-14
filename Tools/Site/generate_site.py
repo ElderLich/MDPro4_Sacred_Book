@@ -10,6 +10,11 @@ import sqlite3
 from dataclasses import dataclass
 from pathlib import Path
 
+if __package__:
+    from .generate_card_catalog import write_card_catalogs
+else:
+    from generate_card_catalog import write_card_catalogs
+
 
 WORKSPACE = Path(__file__).resolve().parents[2]
 DOCS_DIR = WORKSPACE / "docs"
@@ -736,6 +741,7 @@ def write_navigation(featured: list[dict[str, object]]) -> None:
 
 
 def main() -> int:
+    write_card_catalogs()
     sync_api_reference()
     examples, featured = write_examples()
     featured_ids = {int(item["id"]) for item in featured}
