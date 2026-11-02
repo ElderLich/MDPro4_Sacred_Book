@@ -66,17 +66,3 @@ site receives Cloudflare's cookie-free analytics beacon; traffic totals and
 page reports remain in the Cloudflare account that owns the analytics site.
 Local previews and builds without a token do not load the beacon.
 
-To enable it:
-
-1. Create a free Cloudflare account and open **Web Analytics → Add a site**.
-   In **Set up hostname**, enter `elderlich.github.io` exactly: no `https://`,
-   slash, or `/MDPro4_Sacred_Book/` path. Select the message box that appears
-   beneath the field, choose **Done**, then copy the site's beacon token. This
-   does not require moving the site or changing its DNS.
-2. In this GitHub repository, open **Settings → Secrets and variables →
-   Actions**, create a repository secret named
-   `CLOUDFLARE_WEB_ANALYTICS_TOKEN`, and paste the token.
-3. Rerun the **Deploy Sacred Book to GitHub Pages** workflow.
-
-Keep the Cloudflare account private. The beacon token identifies which
-analytics site receives events, but it does not provide dashboard access.
